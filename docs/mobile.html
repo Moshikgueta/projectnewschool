@@ -2294,7 +2294,19 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
 </sc-if>
 <button type="submit" style="height:52px;font:600 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-accent);border:none;border-radius:13px;cursor:pointer" style-hover="background:var(--color-accent-700)">התחברות</button>
 </form>
-<button onClick="{{ demoTeacher }}" style="margin-top:14px;height:46px;font:600 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);background:transparent;border:1px solid #2A323C;border-radius:13px;cursor:pointer" style-hover="color:#fff;border-color:var(--color-neutral-800)">כניסה מהירה — יותם ברוך · מורה</button>
+<div style="margin-top:20px;display:flex;flex-direction:column;gap:9px">
+<span style="font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;letter-spacing:.1em;color:var(--color-neutral-600)">כניסה מהירה לדמו</span>
+<sc-for list="{{ demoUsers }}" as="u" hint-placeholder-count="3">
+<button onClick="{{ u.pick }}" style="display:flex;align-items:center;gap:11px;width:100%;padding:10px 12px;text-align:right;background:transparent;border:1px solid #2A323C;border-radius:13px;cursor:pointer" style-hover="border-color:var(--color-neutral-700)">
+<span style="width:34px;height:34px;flex:none;border-radius:11px;background:{{ u.chipBg }};color:#fff;display:grid;place-items:center;font:700 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ u.initials }}</span>
+<span style="display:flex;flex-direction:column;gap:1px;min-width:0">
+<span style="font:600 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff">{{ u.name }}</span>
+<span style="font:400 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ u.label }}</span>
+</span>
+<span style="margin-inline-start:auto;flex:none;font:500 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ u.hintColor }}">{{ u.hint }}</span>
+</button>
+</sc-for>
+</div>
 <p style="margin-top:18px;font:400 11.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">בגרסה האמיתית הכניסה דרך חשבון Google של בית הספר.</p>
 </div>
 </sc-if>
@@ -2634,6 +2646,8 @@ class Component extends DCLogic {
     { user: 'pedago', pass: 'ns2026', role: 'מנהל פדגוגי', name: 'מושיק גואטה', initials: 'מ״ג', label: 'מנהל פדגוגי' }
   ];
 
+  PHONE_ONLY_TEACHER = 'האפליקציה בטלפון מיועדת למורים. חשבונות משרד והנהלה עובדים בדסקטופ.';
+
   LANG_COLORS = {
     'אנגלית': '#1f6f93', 'ספרדית': '#b4870c', 'איטלקית': '#2e7d5b', 'צרפתית': '#6b4a9e',
     'גרמנית': '#a5231f', 'ערבית': '#2b7d7d', 'רוסית': '#aa0b56', 'יפנית': '#8e2b7e',
@@ -2717,7 +2731,15 @@ class Component extends DCLogic {
     const u = this.USERS.find(x => x.user === String(d.user || '').trim().toLowerCase() && x.pass === d.pass);
     if (!u) { this.setState({ loginError: 'שם משתמש או סיסמה שגויים' }); return; }
     /* The phone app is the teacher's tool. Office and pedagogical roles work on desktop. */
-    if (u.role !== 'מורה') { this.setState({ loginError: 'האפליקציה בטלפון מיועדת למורים. חשבונות משרד והנהלה עובדים בדסקטופ.' }); return; }
+    if (u.role !== 'מורה') { this.setState({ loginError: this.PHONE_ONLY_TEACHER }); return; }
+    this.signIn(u);
+  };
+  /* Quick demo entry, one row per staff account. It goes through the same rule as
+     the form rather than around it: tapping an office or management account shows
+     why the phone app does not open for it, which is the behaviour those roles are
+     there to demonstrate. */
+  demoPick = (u) => {
+    if (u.role !== 'מורה') { this.setState({ loginError: this.PHONE_ONLY_TEACHER }); return; }
     this.signIn(u);
   };
   signIn(u) {
@@ -2968,7 +2990,18 @@ class Component extends DCLogic {
     return {
       isSignedIn: !!sess, isLocked: !sess,
       login: this.login, logout: this.logout,
-      demoTeacher: () => this.signIn(this.USERS[0]),
+      demoUsers: this.USERS.map(u => {
+        const onPhone = u.role === 'מורה';
+        return {
+          initials: u.initials, name: u.name, label: u.label,
+          /* The account that opens the phone app is marked in the accent; the
+             desktop-only ones stay neutral, so which is which reads at a glance. */
+          chipBg: onPhone ? '#0088b0' : '#444141',
+          hint: onPhone ? 'כניסה' : 'דסקטופ בלבד',
+          hintColor: onPhone ? '#0088b0' : '#7d7979',
+          pick: () => this.demoPick(u)
+        };
+      }),
       loginError: s.loginError, hasLoginError: !!s.loginError,
       userName: sess ? sess.name : '', userInitials: sess ? sess.initials : '', roleLabel: sess ? sess.label : '',
       screenTitle: titles[s.view], screenSub: subs[s.view],
