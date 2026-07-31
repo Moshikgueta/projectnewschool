@@ -429,7 +429,6 @@ class Component extends DCLogic {
     { user: 'pedago', pass: 'ns2026', role: 'מנהל פדגוגי', name: 'מושיק גואטה', initials: 'מ״ג', label: 'מנהל פדגוגי' }
   ];
 
-  PHONE_ONLY_TEACHER = 'האפליקציה בטלפון מיועדת למורים. חשבונות משרד והנהלה עובדים בדסקטופ.';
 
   LANG_COLORS = {
     'אנגלית': '#1f6f93', 'ספרדית': '#b4870c', 'איטלקית': '#2e7d5b', 'צרפתית': '#6b4a9e',
@@ -513,18 +512,11 @@ class Component extends DCLogic {
     const d = Object.fromEntries(new FormData(e.target).entries());
     const u = this.USERS.find(x => x.user === String(d.user || '').trim().toLowerCase() && x.pass === d.pass);
     if (!u) { this.setState({ loginError: 'שם משתמש או סיסמה שגויים' }); return; }
-    /* The phone app is the teacher's tool. Office and pedagogical roles work on desktop. */
-    if (u.role !== 'מורה') { this.setState({ loginError: this.PHONE_ONLY_TEACHER }); return; }
     this.signIn(u);
   };
-  /* Quick demo entry, one row per staff account. It goes through the same rule as
-     the form rather than around it: tapping an office or management account shows
-     why the phone app does not open for it, which is the behaviour those roles are
-     there to demonstrate. */
-  demoPick = (u) => {
-    if (u.role !== 'מורה') { this.setState({ loginError: this.PHONE_ONLY_TEACHER }); return; }
-    this.signIn(u);
-  };
+  /* Quick demo entry, one row per staff account. Every role opens the app so the
+     phone view can be shown from each of their seats. */
+  demoPick = (u) => this.signIn(u);
   signIn(u) {
     const sess = { user: u.user, role: u.role, name: u.name, initials: u.initials, label: u.label, teacherName: u.teacherName || '' };
     this.setState({ session: sess, loginError: '', view: 'today' });
@@ -679,10 +671,18 @@ class Component extends DCLogic {
     const dayCount = (i) => this.SLOTS.filter(x => x.d === i).length;
     const daySlots = this.SLOTS.filter(x => x.d === s.day);
 
-    const titles = { today: 'השיעורים שלי', students: 'התלמידים שלי', groups: 'קבוצות', feedback: 'פידבק' };
+    /* Every role opens the phone app. The screens are a teaching workspace, and
+       office and management accounts are looking at a teacher's — so the copy
+       says whose it is instead of calling it theirs. */
+    const ownWorkspace = !sess || sess.role === 'מורה';
+    const titles = {
+      today: ownWorkspace ? 'השיעורים שלי' : 'השיעורים של ' + me,
+      students: ownWorkspace ? 'התלמידים שלי' : 'התלמידים של ' + me,
+      groups: 'קבוצות', feedback: 'פידבק'
+    };
     const subs = {
       today: s.day === this.TODAY_IDX ? 'יום ' + this.DAYS[s.day] + ' · 30 ביולי' : 'יום ' + this.DAYS[s.day],
-      students: mine.length + ' תלמידים בתיק',
+      students: mine.length + (ownWorkspace ? ' תלמידים בתיק' : ' תלמידים בתיק של ' + me),
       groups: myGroups.length + ' קבוצות פעילות',
       feedback: 'על תלמיד, על חומר, או מה שחסר'
     };
@@ -773,18 +773,11 @@ class Component extends DCLogic {
     return {
       isSignedIn: !!sess, isLocked: !sess,
       login: this.login, logout: this.logout,
-      demoUsers: this.USERS.map(u => {
-        const onPhone = u.role === 'מורה';
-        return {
-          initials: u.initials, name: u.name, label: u.label,
-          /* The account that opens the phone app is marked in the accent; the
-             desktop-only ones stay neutral, so which is which reads at a glance. */
-          chipBg: onPhone ? '#0088b0' : '#444141',
-          hint: onPhone ? 'כניסה' : 'דסקטופ בלבד',
-          hintColor: onPhone ? '#0088b0' : '#7d7979',
-          pick: () => this.demoPick(u)
-        };
-      }),
+      demoUsers: this.USERS.map(u => ({
+        initials: u.initials, name: u.name, label: u.label,
+        chipBg: '#0088b0', hint: 'כניסה', hintColor: '#0088b0',
+        pick: () => this.demoPick(u)
+      })),
       loginError: s.loginError, hasLoginError: !!s.loginError,
       userName: sess ? sess.name : '', userInitials: sess ? sess.initials : '', roleLabel: sess ? sess.label : '',
       screenTitle: titles[s.view], screenSub: subs[s.view],
