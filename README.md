@@ -11,6 +11,8 @@ students, digital notebooks (מחברות דיגיטליות) and lesson materia
 | `Teacher Mobile.dc.html` | The phone view of the same system |
 | `support.js` | The `dc` runtime both pages load (`<script src="./support.js">`) — generated, do not hand-edit |
 | `_ds/broadsheet-…/` | The **Broadsheet** design system bundle — `styles.css` tokens, `_ds_bundle.js`, `_ds_manifest.json`, lint config and `readme.md`. Reference only; the pages don't link it (see [Design](#design)) |
+| `vendor/` | React 18.3.1 and ReactDOM 18.3.1 UMD builds, vendored so the standalone build is offline and deterministic |
+| `scripts/build-standalone.js` | Bundles each page into one self-contained file in `dist/` |
 | `uploads/` | Source documents the content was derived from (course and notebook lists) |
 | `.thumbnail` | WebP preview image |
 
@@ -25,10 +27,27 @@ python3 -m http.server 8000
 
 then open <http://localhost:8000/Teacher%20Dashboard%20v2.dc.html>.
 
-`support.js` bootstraps itself by fetching React 18.3.1, ReactDOM 18.3.1 and
-`@babel/standalone` 7.29.0 from unpkg at runtime (with SRI), so the browser needs internet
-access — behind a network that blocks unpkg the page stays blank and the console shows
-`[dc] failed to load React or boot`.
+`support.js` bootstraps itself by fetching React 18.3.1 and ReactDOM 18.3.1 from unpkg at
+runtime (with SRI), so the browser needs internet access — behind a network that blocks
+unpkg the page stays blank and the console shows `[dc] failed to load React or boot`.
+
+### Self-contained build
+
+```sh
+node scripts/build-standalone.js
+```
+
+writes `dist/dashboard.html` and `dist/mobile.html` — each one file, no server and no
+network. They can be opened straight from disk, emailed, or dropped on any static host.
+
+The build inlines the two React UMD bundles from `vendor/` ahead of `support.js`, which
+makes the runtime skip its CDN fetch (`loadReactUmd` returns early when `window.React` and
+`window.ReactDOM` already exist). `@babel/standalone` is deliberately left out: the runtime
+only loads it for `x-import`ed JSX modules, which these pages don't use — confirmed by
+loading them in a browser with the Babel request blocked.
+
+The only thing a built page still reaches for is Google Fonts. Offline it falls back to
+`Segoe UI` / `system-ui`; everything else renders and works.
 
 Both pages open on a login screen and ship demo accounts — `yotam / ns2026` (מורה),
 `office / ns2026` (אדמין), `pedago / ns2026` (מנהל פדגוגי), `noa / ns2026` (מנהלת קבלה),
