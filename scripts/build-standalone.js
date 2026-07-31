@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Build fully self-contained copies of the dashboard pages into dist/.
+ * Build fully self-contained copies of the dashboard pages into docs/.
  *
  * The source pages load `./support.js`, which in turn fetches React and ReactDOM
  * from unpkg at runtime — so they need a web server AND internet access. The
@@ -19,7 +19,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const DIST = path.join(ROOT, 'dist');
+const DIST = path.join(ROOT, 'docs');
 
 const PAGES = [
   ['Teacher Dashboard v2.dc.html', 'dashboard.html'],
@@ -76,4 +76,4 @@ for (const [srcName, outName] of PAGES) {
   console.log(`${outName.padEnd(16)} ${kb(html.length)} -> ${kb(out.length)}`);
 }
 
-console.log(`\nWrote ${PAGES.length} self-contained pages to dist/ — no server or network needed.`);
+console.log(`\nWrote ${PAGES.length} self-contained pages to docs/ — no server or network needed.`);

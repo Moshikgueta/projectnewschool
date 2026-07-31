@@ -37,7 +37,7 @@ unpkg the page stays blank and the console shows `[dc] failed to load React or b
 node scripts/build-standalone.js
 ```
 
-writes `dist/dashboard.html` and `dist/mobile.html` — each one file, no server and no
+writes `docs/dashboard.html` and `docs/mobile.html` — each one file, no server and no
 network. They can be opened straight from disk, emailed, or dropped on any static host.
 
 The build inlines the two React UMD bundles from `vendor/` ahead of `support.js`, which
@@ -48,6 +48,19 @@ loading them in a browser with the Babel request blocked.
 
 The only thing a built page still reaches for is Google Fonts. Offline it falls back to
 `Segoe UI` / `system-ui`; everything else renders and works.
+
+## The site
+
+`docs/` is the published site — GitHub Pages serves it from the `main` branch. It holds the
+hand-written landing page (`docs/index.html`, which links the two views and lists the demo
+logins) plus the two built pages, so the whole thing is static with no build step on
+GitHub's side. `docs/dashboard.html` and `docs/mobile.html` are generated — rebuild them
+with the command above rather than editing them; `docs/index.html` is a source file.
+
+Enabling it, once per repository: **Settings → Pages → Source: Deploy from a branch →
+`main` / `/docs`**. Pages on a private repository needs a paid GitHub plan; on the free
+plan the repository has to be public, which also puts the prototype and its demo logins on
+the open web.
 
 Both pages open on a login screen and ship demo accounts — `yotam / ns2026` (מורה),
 `office / ns2026` (אדמין), `pedago / ns2026` (מנהל פדגוגי), `noa / ns2026` (מנהלת קבלה),
