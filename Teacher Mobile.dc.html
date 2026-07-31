@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: #0F1318; font-family: Assistant, sans-serif; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4, h5, h6 { font-family: Heebo, sans-serif; font-weight: 700; margin: 0; letter-spacing: -0.01em; color: #12161C; }
+  p { margin: 0; }
+  a { color: #2F6FED; text-decoration: none; }
+  a:hover { color: #1B4CC4; }
+  input, select, textarea, button { font-family: Assistant, sans-serif; }
+  input, select, textarea { font-size: 16px; }
+  ::selection { background: #D6E4FF; }
+  @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @keyframes sheet { from { transform: translateY(100%); } to { transform: none; } }
+</style>
+</helmet>
+
+<div dir="rtl" style="width:390px;height:844px;margin:0 auto;position:relative;overflow:hidden;background:#F4F5F8;display:flex;flex-direction:column;font:400 15px Assistant,sans-serif;color:#12161C">
+
+<sc-if value="{{ isLocked }}">
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:28px 22px;background:#0F1318">
+<div style="display:flex;align-items:center;gap:10px">
+<span style="width:38px;height:38px;border-radius:12px;background:#2F6FED;display:grid;place-items:center;font:800 16px Heebo,sans-serif;color:#fff">NS</span>
+<div style="line-height:1.15">
+<div style="font:700 17px Heebo,sans-serif;color:#fff">חדר המורים</div>
+<div style="font:400 12.5px Assistant,sans-serif;color:#7C8797">New School</div>
+</div>
+</div>
+<h1 style="margin-top:26px;font-size:29px;line-height:1.2;color:#fff">כל מה שצריך לשיעור, בטלפון.</h1>
+<p style="margin-top:12px;font:400 14.5px/1.65 Assistant,sans-serif;color:#98A2B0">השיעורים של היום, נוכחות, מחברות ופידבק. הכל חסוי ומיועד לצוות בית הספר.</p>
+
+<form onSubmit="{{ login }}" style="margin-top:26px;display:flex;flex-direction:column;gap:12px">
+<input name="user" autoComplete="username" placeholder="שם משתמש" style="height:50px;padding:0 15px;font:400 16px Assistant,sans-serif;color:#fff;background:#1B2129;border:1px solid #2A323C;border-radius:13px;outline:none" style-focus="border-color:#2F6FED">
+<input name="pass" type="password" autoComplete="current-password" placeholder="סיסמה" style="height:50px;padding:0 15px;font:400 16px Assistant,sans-serif;color:#fff;background:#1B2129;border:1px solid #2A323C;border-radius:13px;outline:none" style-focus="border-color:#2F6FED">
+<sc-if value="{{ hasLoginError }}">
+<div style="display:flex;align-items:center;gap:8px;background:#2A1A19;border-radius:11px;padding:11px 13px;font:500 13.5px Assistant,sans-serif;color:#F0A9A2"><span style="width:7px;height:7px;border-radius:50%;background:#D9463F;flex:none"></span>{{ loginError }}</div>
+</sc-if>
+<button type="submit" style="height:52px;font:600 16px Assistant,sans-serif;color:#fff;background:#2F6FED;border:none;border-radius:13px;cursor:pointer" style-hover="background:#1B4CC4">התחברות</button>
+</form>
+<button onClick="{{ demoTeacher }}" style="margin-top:14px;height:46px;font:600 14px Assistant,sans-serif;color:#98A2B0;background:transparent;border:1px solid #2A323C;border-radius:13px;cursor:pointer" style-hover="color:#fff;border-color:#4A5563">כניסה מהירה — יותם ברוך · מורה</button>
+<p style="margin-top:18px;font:400 11.5px/1.5 Assistant,sans-serif;color:#5F6975">בגרסה האמיתית הכניסה דרך חשבון Google של בית הספר.</p>
+</div>
+</sc-if>
+
+<sc-if value="{{ isSignedIn }}" hint-placeholder-val="{{ true }}">
+
+<header style="flex:none;background:#12161C;padding:16px 18px 18px">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+<div style="display:flex;align-items:center;gap:10px">
+<span style="width:34px;height:34px;border-radius:11px;background:#232A33;color:#fff;display:grid;place-items:center;font:700 12px Heebo,sans-serif">{{ userInitials }}</span>
+<div style="line-height:1.2">
+<div style="font:700 15px Heebo,sans-serif;color:#fff">{{ userName }}</div>
+<div style="font:400 12px Assistant,sans-serif;color:#7C8797">{{ roleLabel }}</div>
+</div>
+</div>
+<button onClick="{{ logout }}" title="יציאה" style="width:34px;height:34px;display:grid;place-items:center;color:#7C8797;background:#1B2129;border:none;border-radius:10px;cursor:pointer" style-hover="background:#232A33;color:#fff">
+<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 20H6V4h8"/><path d="M11 12h9M17 8.5l3.5 3.5L17 15.5"/></svg>
+</button>
+</div>
+<h1 style="margin-top:14px;font-size:22px;color:#fff">{{ screenTitle }}</h1>
+<p style="margin-top:4px;font:400 13px Assistant,sans-serif;color:#7C8797">{{ screenSub }}</p>
+</header>
+
+<main style="flex:1;overflow-y:auto;padding:16px 16px 22px">
+
+<sc-if value="{{ isToday }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;gap:6px">
+<sc-for list="{{ dayChips }}" as="d" hint-placeholder-count="6">
+<button onClick="{{ d.pick }}" style="flex:1;min-width:0;height:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;background:{{ d.bg }};color:{{ d.fg }};border:1px solid {{ d.border }};border-radius:14px;cursor:pointer">
+<span style="font:600 12px Assistant,sans-serif">{{ d.short }}</span>
+<span style="font:700 13px Heebo,sans-serif">{{ d.count }}</span>
+</button>
+</sc-for>
+</div>
+
+<sc-if value="{{ noLessons }}">
+<div style="margin-top:16px;background:#fff;border:1px solid #E8EAEF;border-radius:16px;padding:22px 18px;text-align:center">
+<p style="font:400 14.5px/1.6 Assistant,sans-serif;color:#8A929E">אין שיעורים ביום הזה.</p>
+</div>
+</sc-if>
+
+<div style="display:flex;flex-direction:column;gap:11px;margin-top:14px">
+<sc-for list="{{ lessons }}" as="l" hint-placeholder-count="3">
+<div style="background:#fff;border:1px solid #E8EAEF;border-radius:16px;padding:15px 16px;box-shadow:0 1px 2px rgba(16,24,40,.04)">
+<div style="display:flex;align-items:flex-start;gap:12px">
+<div style="flex:none;text-align:center;min-width:52px">
+<div style="font:700 18px Heebo,sans-serif;font-variant-numeric:tabular-nums;color:{{ l.timeColor }}">{{ l.h }}</div>
+<div style="font:400 11px Assistant,sans-serif;color:#9AA3AF;margin-top:1px">{{ l.dur }}</div>
+</div>
+<div style="flex:1;min-width:0">
+<div style="font:700 16px Heebo,sans-serif;line-height:1.25">{{ l.label }}</div>
+<div style="display:flex;align-items:center;gap:6px;margin-top:6px;flex-wrap:wrap">
+<span style="display:inline-flex;align-items:center;gap:5px;height:23px;padding:0 9px;border-radius:999px;font:600 11.5px Assistant,sans-serif;background:{{ l.bg }};color:{{ l.fg }};white-space:nowrap"><span style="width:6px;height:6px;border-radius:50%;background:{{ l.color }}"></span>{{ l.meta }}</span>
+</div>
+</div>
+</div>
+<div style="display:flex;gap:7px;margin-top:13px">
+<sc-if value="{{ l.hasLink }}">
+<a href="{{ l.link }}" target="_blank" rel="noopener" style="flex:1;height:46px;display:inline-flex;align-items:center;justify-content:center;font:600 14.5px Assistant,sans-serif;color:#fff;background:#2F6FED;border-radius:12px" style-hover="background:#1B4CC4;color:#fff">הצטרף לזום</a>
+</sc-if>
+<a href="{{ l.nbUrl }}" target="_blank" rel="noopener" style="flex:1;height:46px;display:inline-flex;align-items:center;justify-content:center;font:600 14.5px Assistant,sans-serif;color:#28303A;background:#F1F3F6;border-radius:12px" style-hover="background:#EBEDF1;color:#12161C">מחברת</a>
+<button onClick="{{ l.act }}" style="flex:1;height:46px;font:600 14.5px Assistant,sans-serif;color:#fff;background:#12161C;border:none;border-radius:12px;cursor:pointer" style-hover="background:#2F6FED">{{ l.actLabel }}</button>
+</div>
+</div>
+</sc-for>
+</div>
+</sc-if>
+
+<sc-if value="{{ isStudents }}">
+<input value="{{ query }}" onChange="{{ onQuery }}" placeholder="חיפוש תלמיד" style="width:100%;height:46px;padding:0 14px;font:400 15px Assistant,sans-serif;background:#fff;border:1px solid #E4E7EC;border-radius:13px;outline:none" style-focus="border-color:#2F6FED">
+<div style="display:flex;flex-direction:column;gap:9px;margin-top:13px">
+<sc-for list="{{ studentRows }}" as="s" hint-placeholder-count="5">
+<button onClick="{{ s.open }}" style="display:flex;align-items:center;gap:12px;text-align:right;background:#fff;border:1px solid #E8EAEF;border-radius:15px;padding:13px 14px;cursor:pointer;box-shadow:0 1px 2px rgba(16,24,40,.04)" style-hover="border-color:#B8CBF7">
+<span style="width:40px;height:40px;flex:none;border-radius:13px;background:{{ s.bg }};color:{{ s.fg }};display:grid;place-items:center;font:700 13px Heebo,sans-serif">{{ s.initials }}</span>
+<span style="flex:1;min-width:0">
+<span style="display:block;font:700 15.5px Heebo,sans-serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ s.name }}</span>
+<span style="display:block;font:400 12.5px Assistant,sans-serif;color:#8A929E;margin-top:2px">{{ s.sub }}</span>
+</span>
+<span style="flex:none;display:inline-flex;align-items:center;height:24px;padding:0 9px;border-radius:999px;font:700 12px Heebo,sans-serif;background:{{ s.remBg }};color:{{ s.remFg }};white-space:nowrap">{{ s.rem }}</span>
+</button>
+</sc-for>
+</div>
+<sc-if value="{{ noStudents }}">
+<p style="margin-top:20px;font:400 14px Assistant,sans-serif;color:#8A929E;text-align:center">לא נמצא תלמיד בשם הזה.</p>
+</sc-if>
+</sc-if>
+
+<sc-if value="{{ isGroups }}">
+<div style="display:flex;gap:7px;overflow-x:auto;padding-bottom:4px">
+<sc-for list="{{ groupChips }}" as="g" hint-placeholder-count="2">
+<button onClick="{{ g.pick }}" style="flex:none;height:38px;padding:0 14px;font:600 13.5px Assistant,sans-serif;color:{{ g.fg }};background:{{ g.bg }};border:1px solid {{ g.border }};border-radius:12px;cursor:pointer;white-space:nowrap">{{ g.name }}</button>
+</sc-for>
+</div>
+
+<div style="display:flex;align-items:center;gap:7px;margin-top:13px;overflow-x:auto;padding-bottom:4px">
+<span style="flex:none;font:600 12px Assistant,sans-serif;color:#8A929E">מפגש</span>
+<sc-for list="{{ group.sessions }}" as="ss" hint-placeholder-count="4">
+<button onClick="{{ ss.pick }}" style="flex:none;height:34px;padding:0 13px;font:600 13px Heebo,sans-serif;font-variant-numeric:tabular-nums;color:{{ ss.fg }};background:{{ ss.bg }};border:1px solid {{ ss.border }};border-radius:10px;cursor:pointer">{{ ss.label }}</button>
+</sc-for>
+</div>
+
+<div style="display:flex;gap:7px;margin-top:12px">
+<sc-for list="{{ group.stats }}" as="st" hint-placeholder-count="3">
+<div style="flex:1;background:#fff;border:1px solid #E8EAEF;border-radius:13px;padding:10px 11px">
+<div style="font:600 11px Assistant,sans-serif;color:#8A929E">{{ st.k }}</div>
+<div style="font:700 18px Heebo,sans-serif;margin-top:3px;color:{{ st.color }}">{{ st.v }}</div>
+</div>
+</sc-for>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:10px;margin-top:13px">
+<sc-for list="{{ group.rows }}" as="r" hint-placeholder-count="6">
+<div style="background:#fff;border:1px solid #E8EAEF;border-radius:15px;padding:13px 14px;box-shadow:0 1px 2px rgba(16,24,40,.04)">
+<div style="display:flex;align-items:center;gap:10px">
+<span style="width:34px;height:34px;flex:none;border-radius:11px;background:{{ r.bg }};color:{{ r.fg }};display:grid;place-items:center;font:700 12px Heebo,sans-serif">{{ r.initials }}</span>
+<span style="flex:1;min-width:0;font:700 15px Heebo,sans-serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ r.name }}</span>
+<sc-if value="{{ r.notified }}">
+<span style="flex:none;width:8px;height:8px;border-radius:50%;background:#7C4DEE"></span>
+</sc-if>
+</div>
+<div style="display:flex;gap:6px;margin-top:11px">
+<sc-for list="{{ r.marks }}" as="mk" hint-placeholder-count="3">
+<button onClick="{{ mk.set }}" style="flex:1;height:44px;font:600 14px Assistant,sans-serif;color:{{ mk.fg }};background:{{ mk.bg }};border:none;border-radius:12px;cursor:pointer;white-space:nowrap">{{ mk.label }}</button>
+</sc-for>
+</div>
+<select value="{{ r.rec }}" onChange="{{ r.onRec }}" style="width:100%;height:42px;margin-top:8px;padding:0 11px;font:600 13.5px Assistant,sans-serif;color:{{ r.recFg }};background:{{ r.recBg }};border:1px solid #E4E7EC;border-radius:11px;cursor:pointer"><sc-for list="{{ recOptions }}" as="o" hint-placeholder-count="3"><option value="{{ o }}">{{ o }}</option></sc-for></select>
+<input value="{{ r.note }}" onChange="{{ r.onNote }}" placeholder="הערה פדגוגית" style="width:100%;height:42px;margin-top:8px;padding:0 12px;font:400 14px Assistant,sans-serif;background:#F7F8FA;border:1px solid #E4E7EC;border-radius:11px;outline:none" style-focus="background:#fff;border-color:#2F6FED">
+</div>
+</sc-for>
+</div>
+<p style="margin-top:13px;font:400 11.5px/1.5 Assistant,sans-serif;color:#9AA3AF">סימון "מוכן לרמה הבאה" או "לא מתאים לרמה" שולח התראה למשרד מיד.</p>
+</sc-if>
+
+<sc-if value="{{ isFeedback }}">
+<form onSubmit="{{ submitFeedback }}" style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;background:#EBEDF1;border-radius:13px;padding:3px;gap:3px">
+<button type="button" onClick="{{ setFbStudent }}" style="flex:1;height:40px;border:none;border-radius:11px;cursor:pointer;font:600 13.5px Assistant,sans-serif;color:{{ fbKindFg.student }};background:{{ fbKindBg.student }}">תלמיד</button>
+<button type="button" onClick="{{ setFbMaterial }}" style="flex:1;height:40px;border:none;border-radius:11px;cursor:pointer;font:600 13.5px Assistant,sans-serif;color:{{ fbKindFg.material }};background:{{ fbKindBg.material }}">חומר</button>
+<button type="button" onClick="{{ setFbGap }}" style="flex:1;height:40px;border:none;border-radius:11px;cursor:pointer;font:600 13.5px Assistant,sans-serif;color:{{ fbKindFg.gap }};background:{{ fbKindBg.gap }}">חסר</button>
+</div>
+<input type="hidden" name="kind" value="{{ fbKind }}">
+
+<sc-if value="{{ fbNeedsLang }}">
+<div style="display:flex;gap:9px">
+<select name="lang" style="flex:1;height:46px;padding:0 12px;font:400 15px Assistant,sans-serif;background:#fff;border:1px solid #E4E7EC;border-radius:12px;cursor:pointer"><sc-for list="{{ fbLangs }}" as="o" hint-placeholder-count="4"><option value="{{ o }}">{{ o }}</option></sc-for></select>
+<select name="level" style="flex:none;width:118px;height:46px;padding:0 12px;font:400 15px Assistant,sans-serif;background:#fff;border:1px solid #E4E7EC;border-radius:12px;cursor:pointer"><sc-for list="{{ fbLevels }}" as="o" hint-placeholder-count="3"><option value="{{ o }}">{{ o }}</option></sc-for></select>
+</div>
+</sc-if>
+
+<select name="subject" style="width:100%;height:46px;padding:0 12px;font:400 15px Assistant,sans-serif;background:#fff;border:1px solid #E4E7EC;border-radius:12px;cursor:pointer"><sc-for list="{{ fbSubjects }}" as="o" hint-placeholder-count="4"><option value="{{ o }}">{{ o }}</option></sc-for></select>
+
+<sc-if value="{{ fbHasVerdict }}" hint-placeholder-val="{{ true }}">
+<select name="verdict" style="width:100%;height:46px;padding:0 12px;font:400 15px Assistant,sans-serif;background:#fff;border:1px solid #E4E7EC;border-radius:12px;cursor:pointer"><sc-for list="{{ fbVerdicts }}" as="o" hint-placeholder-count="3"><option value="{{ o }}">{{ o }}</option></sc-for></select>
+</sc-if>
+
+<textarea name="text" placeholder="{{ fbPlaceholder }}" style="width:100%;min-height:120px;padding:12px 13px;font:400 15px/1.6 Assistant,sans-serif;background:#fff;border:1px solid #E4E7EC;border-radius:13px;outline:none;resize:vertical" style-focus="border-color:#2F6FED"></textarea>
+<button type="submit" style="height:52px;font:600 16px Assistant,sans-serif;color:#fff;background:#12161C;border:none;border-radius:13px;cursor:pointer" style-hover="background:#2F6FED">שלח</button>
+</form>
+
+<h5 style="font-size:13.5px;margin-top:24px">מה שלחתי</h5>
+<sc-if value="{{ noFeedback }}">
+<p style="margin-top:9px;font:400 13.5px Assistant,sans-serif;color:#8A929E">עוד לא שלחת פידבק.</p>
+</sc-if>
+<div style="display:flex;flex-direction:column;gap:9px;margin-top:11px">
+<sc-for list="{{ fbRows }}" as="fb" hint-placeholder-count="2">
+<div style="background:#fff;border:1px solid #E8EAEF;border-radius:14px;padding:12px 13px">
+<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+<span style="display:inline-flex;align-items:center;height:22px;padding:0 9px;border-radius:999px;font:600 11.5px Assistant,sans-serif;background:{{ fb.kindBg }};color:{{ fb.kindFg }};white-space:nowrap">{{ fb.kind }}</span>
+<span style="font:600 14px Assistant,sans-serif">{{ fb.subject }}</span>
+<span style="margin-inline-start:auto;font:400 11.5px Assistant,sans-serif;color:#9AA3AF">{{ fb.when }}</span>
+</div>
+<p style="margin-top:7px;font:400 13.5px/1.6 Assistant,sans-serif;color:#28303A">{{ fb.text }}</p>
+</div>
+</sc-for>
+</div>
+</sc-if>
+
+</main>
+
+<nav style="flex:none;background:#12161C;padding:8px 10px 14px;display:grid;grid-template-columns:repeat(4,1fr);gap:4px">
+<button onClick="{{ go.today }}" style="height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:{{ tabBg.today }};border:none;border-radius:13px;cursor:pointer;color:{{ tabFg.today }}">
+<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v14H4z"/><path d="M4 10h16M9 4v3M15 4v3"/></svg>
+<span style="font:600 11px Assistant,sans-serif">היום</span>
+</button>
+<button onClick="{{ go.students }}" style="height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:{{ tabBg.students }};border:none;border-radius:13px;cursor:pointer;color:{{ tabFg.students }}">
+<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 19c0-3.1 2.9-5 6.5-5s6.5 1.9 6.5 5"/></svg>
+<span style="font:600 11px Assistant,sans-serif">תלמידים</span>
+</button>
+<button onClick="{{ go.groups }}" style="height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:{{ tabBg.groups }};border:none;border-radius:13px;cursor:pointer;color:{{ tabFg.groups }}">
+<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="2.6"/><circle cx="16" cy="8" r="2.6"/><path d="M3 18c0-2.6 2.2-4.2 5-4.2s5 1.6 5 4.2"/><path d="M13.5 18c0-2.6 1.6-4.2 4-4.2s3.5 1.6 3.5 4.2"/></svg>
+<span style="font:600 11px Assistant,sans-serif">קבוצות</span>
+</button>
+<button onClick="{{ go.feedback }}" style="height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:{{ tabBg.feedback }};border:none;border-radius:13px;cursor:pointer;color:{{ tabFg.feedback }}">
+<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4H4v12h4v4l4-4h8z"/><path d="M8 10h8M8 13h5"/></svg>
+<span style="font:600 11px Assistant,sans-serif">פידבק</span>
+</button>
+</nav>
+</sc-if>
+
+<sc-if value="{{ showStudent }}">
+<div style="position:absolute;inset:0;z-index:30;background:rgba(15,19,24,.45);display:flex;align-items:flex-end">
+<div style="width:100%;max-height:88%;overflow-y:auto;background:#F4F5F8;border-radius:22px 22px 0 0;animation:sheet .24s ease both">
+<div style="position:sticky;top:0;background:#fff;border-radius:22px 22px 0 0;padding:16px 18px 14px;border-bottom:1px solid #EEF0F4">
+<div style="display:flex;align-items:flex-start;gap:12px">
+<span style="width:44px;height:44px;flex:none;border-radius:14px;background:{{ sel.bg }};color:{{ sel.fg }};display:grid;place-items:center;font:700 14px Heebo,sans-serif">{{ sel.initials }}</span>
+<div style="flex:1;min-width:0">
+<h2 style="font-size:20px;line-height:1.2">{{ sel.name }}</h2>
+<p style="margin-top:4px;font:400 13px Assistant,sans-serif;color:#8A929E">{{ sel.sub }}</p>
+</div>
+<button onClick="{{ closeSheet }}" style="width:32px;height:32px;flex:none;font:400 17px Assistant,sans-serif;color:#5C6672;background:#F1F3F6;border:none;border-radius:10px;cursor:pointer" style-hover="background:#EBEDF1;color:#12161C">✕</button>
+</div>
+</div>
+
+<div style="padding:15px 16px 24px;display:flex;flex-direction:column;gap:12px">
+<div style="background:#fff;border:1px solid #E8EAEF;border-radius:16px;padding:15px 16px">
+<div style="display:flex;align-items:baseline;justify-content:space-between">
+<h5 style="font-size:13.5px">מאזן שיעורים</h5>
+<span style="font:700 17px Heebo,sans-serif;color:{{ sel.remColor }}">{{ sel.remLine }}</span>
+</div>
+<div style="height:7px;border-radius:5px;background:#EEF0F4;overflow:hidden;margin-top:11px"><div style="height:7px;border-radius:5px;background:{{ sel.barColor }};width:{{ sel.barWidth }}"></div></div>
+<div style="display:flex;gap:16px;margin-top:11px;font:400 13px Assistant,sans-serif;color:#5C6672">
+<span>התקיימו <strong style="font-weight:700;color:#12161C">{{ sel.present }}</strong></span>
+<span>בוטלו <strong style="font-weight:700;color:#12161C">{{ sel.cancelled }}</strong></span>
+<span>נעדר <strong style="font-weight:700;color:{{ sel.missedColor }}">{{ sel.missed }}</strong></span>
+</div>
+<sc-if value="{{ sel.lowBalance }}">
+<div style="display:flex;align-items:center;gap:9px;margin-top:12px;background:#FDEEEC;border-radius:11px;padding:10px 12px;font:500 13px Assistant,sans-serif;color:#9E2B22"><span style="width:7px;height:7px;border-radius:50%;background:#D9463F;flex:none"></span>{{ sel.lowLine }}</div>
+</sc-if>
+</div>
+
+<div style="display:flex;gap:8px">
+<button onClick="{{ openLesson }}" style="flex:1;height:50px;font:600 15px Assistant,sans-serif;color:#fff;background:#12161C;border:none;border-radius:13px;cursor:pointer" style-hover="background:#2F6FED">רשום שיעור</button>
+<a href="{{ sel.nbUrl }}" target="_blank" rel="noopener" style="flex:1;height:50px;display:inline-flex;align-items:center;justify-content:center;font:600 15px Assistant,sans-serif;color:#28303A;background:#fff;border:1px solid #DFE3EA;border-radius:13px" style-hover="background:#F7F8FA;color:#12161C">מחברת ↗</a>
+</div>
+
+<div style="background:#fff;border:1px solid #E8EAEF;border-radius:16px;padding:15px 16px">
+<h5 style="font-size:13.5px">מה נלמד</h5>
+<p style="margin-top:8px;font:400 14px/1.6 Assistant,sans-serif;color:#28303A">{{ sel.notes }}</p>
+<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:11px">
+<sc-for list="{{ sel.covered }}" as="c" hint-placeholder-count="3"><span style="display:inline-flex;align-items:center;height:25px;padding:0 10px;border-radius:999px;font:500 12.5px Assistant,sans-serif;background:#F1F3F6;color:#39424F;white-space:nowrap">{{ c }}</span></sc-for>
+</div>
+</div>
+
+<div style="background:#fff;border:1px solid #E8EAEF;border-radius:16px;padding:15px 16px">
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+<h5 style="font-size:13.5px">יומן השיעורים</h5>
+<span style="font:400 12px Assistant,sans-serif;color:#8A929E">{{ sel.logCount }}</span>
+</div>
+<sc-if value="{{ sel.noLog }}">
+<p style="margin-top:9px;font:400 13.5px/1.55 Assistant,sans-serif;color:#8A929E">עוד לא תועד שיעור.</p>
+</sc-if>
+<div style="display:flex;flex-direction:column;gap:9px;margin-top:11px">
+<sc-for list="{{ sel.log }}" as="l" hint-placeholder-count="2">
+<div style="background:#F7F8FA;border-radius:12px;padding:11px 12px">
+<div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap">
+<span style="font:700 13.5px Heebo,sans-serif;font-variant-numeric:tabular-nums">{{ l.date }}</span>
+<span style="display:inline-flex;align-items:center;height:21px;padding:0 8px;border-radius:999px;font:600 11px Assistant,sans-serif;background:{{ l.bg }};color:{{ l.fg }};white-space:nowrap">{{ l.status }}</span>
+<button onClick="{{ l.remove }}" title="מחק" style="margin-inline-start:auto;width:26px;height:26px;font:400 13px Assistant,sans-serif;color:#9AA3AF;background:transparent;border:none;border-radius:7px;cursor:pointer" style-hover="background:#FDECEA;color:#A8281E">✕</button>
+</div>
+<sc-if value="{{ l.hasCovered }}"><p style="margin-top:6px;font:400 13px/1.55 Assistant,sans-serif;color:#28303A">{{ l.covered }}</p></sc-if>
+<sc-if value="{{ l.hasHw }}"><p style="margin-top:3px;font:400 12.5px Assistant,sans-serif;color:#8A929E">שיעורי בית: {{ l.hw }}</p></sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ showLesson }}">
+<div style="position:absolute;inset:0;z-index:40;background:rgba(15,19,24,.5);display:flex;align-items:flex-end">
+<form onSubmit="{{ submitLesson }}" style="width:100%;max-height:92%;overflow-y:auto;background:#fff;border-radius:22px 22px 0 0;padding:20px 18px 26px;animation:sheet .24s ease both;display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px">
+<div>
+<h3 style="font-size:19px">רישום שיעור</h3>
+<p style="margin-top:4px;font:400 13.5px Assistant,sans-serif;color:#8A929E">{{ lessonFor }}</p>
+</div>
+<button type="button" onClick="{{ closeLesson }}" style="width:32px;height:32px;flex:none;font:400 17px Assistant,sans-serif;color:#5C6672;background:#F1F3F6;border:none;border-radius:10px;cursor:pointer" style-hover="background:#EBEDF1;color:#12161C">✕</button>
+</div>
+
+<input name="date" type="date" style="width:100%;height:48px;padding:0 13px;font:400 15px Assistant,sans-serif;background:#F7F8FA;border:1px solid #E4E7EC;border-radius:12px;outline:none" style-focus="background:#fff;border-color:#2F6FED">
+<div style="display:flex;flex-direction:column;gap:7px">
+<sc-for list="{{ lessonStateOpts }}" as="o" hint-placeholder-count="3">
+<button type="button" onClick="{{ o.pick }}" style="display:flex;align-items:center;gap:11px;text-align:right;height:50px;padding:0 14px;background:{{ o.bg }};border:1px solid {{ o.border }};border-radius:13px;cursor:pointer">
+<span style="width:20px;height:20px;flex:none;border-radius:50%;border:2px solid {{ o.dotBorder }};background:{{ o.dot }}"></span>
+<span style="flex:1;font:600 14.5px Assistant,sans-serif;color:{{ o.fg }}">{{ o.label }}</span>
+<span style="font:400 11.5px Assistant,sans-serif;color:#8A929E;white-space:nowrap">{{ o.burn }}</span>
+</button>
+</sc-for>
+</div>
+<input type="hidden" name="status" value="{{ lessonState }}">
+
+<textarea name="covered" placeholder="מה כוסה בשיעור" style="width:100%;min-height:88px;padding:11px 13px;font:400 15px/1.6 Assistant,sans-serif;background:#F7F8FA;border:1px solid #E4E7EC;border-radius:12px;outline:none;resize:vertical" style-focus="background:#fff;border-color:#2F6FED"></textarea>
+<input name="stopped" placeholder="איפה נעצרנו" style="width:100%;height:48px;padding:0 13px;font:400 15px Assistant,sans-serif;background:#F7F8FA;border:1px solid #E4E7EC;border-radius:12px;outline:none" style-focus="background:#fff;border-color:#2F6FED">
+<input name="hw" placeholder="שיעורי בית" style="width:100%;height:48px;padding:0 13px;font:400 15px Assistant,sans-serif;background:#F7F8FA;border:1px solid #E4E7EC;border-radius:12px;outline:none" style-focus="background:#fff;border-color:#2F6FED">
+<button type="submit" style="height:52px;font:600 16px Assistant,sans-serif;color:#fff;background:#12161C;border:none;border-radius:13px;cursor:pointer" style-hover="background:#2F6FED">שמור שיעור</button>
+<p style="font:400 11.5px/1.5 Assistant,sans-serif;color:#9AA3AF">שיעור שהתקיים או היעדרות ללא ביטול מנכים שיעור מהחבילה. בשני שיעורים או פחות יוצאת התראה למשרד.</p>
+</form>
+</div>
+</sc-if>
+
+<sc-if value="{{ hasToast }}">
+<div style="position:absolute;bottom:88px;right:16px;left:16px;z-index:50;background:#12161C;color:#fff;border-radius:13px;padding:13px 15px;font:500 13.5px/1.5 Assistant,sans-serif;box-shadow:0 12px 30px -12px rgba(15,19,24,.6);animation:rise .2s ease both">{{ toast }}</div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:390,&quot;height&quot;:844}}">
+/* Mobile companion to the desktop dashboard. Shares the same localStorage keys, so a
+   lesson recorded on the phone shows up on the desktop and vice versa. */
+class Component extends DCLogic {
+  LS_S = 'ns.students.v1';
+  LS_SESSION = 'ns.session.v1';
+  LS_LOG = 'ns.lessonlog.v1';
+  LS_GRP = 'ns.groups.v1';
+  LS_CAL = 'ns.calendar.v1';
+  LS_FB = 'ns.feedback.v1';
+  LS_NOTIF = 'ns.notif.v1';
+
+  ME = 'יותם ברוך';
+  DAYS = ['ראשון', 'שני', 'שלישי', 'רביעי', 'חמישי', 'שישי'];
+  SHORT = ['א׳', 'ב׳', 'ג׳', 'ד׳', 'ה׳', 'ו׳'];
+  TODAY_IDX = 4;
+
+  LESSON_STATES = ['השיעור התקיים', 'בוטל בהתראה מוקדמת', 'היעדרות ללא ביטול'];
+  ATT = ['נוכח', 'איחור', 'נעדר'];
+  RECS = ['בקצב הרמה', 'מוכן לרמה הבאה', 'לא מתאים לרמה'];
+  CYCLE_LEVELS = ['רמה 1', 'רמה 2', 'רמה 3'];
+  GAP_KINDS = ['תרגול דקדוק', 'חומר האזנה', 'חומר דיבור', 'חומר קריאה', 'משחק או חימום', 'מבחן ובחני ביניים', 'שיעורי בית'];
+  FB_VERDICTS = ['עובד מעולה', 'עובד עם התאמות', 'בעייתי'];
+  FB_STUDENT_VERDICTS = ['מתקדם מעל הצפוי', 'בקצב', 'זקוק לתשומת לב'];
+
+  USERS = [
+    { user: 'yotam', pass: 'ns2026', role: 'מורה', name: 'יותם ברוך', initials: 'י״ב', teacherName: 'יותם ברוך', label: 'מורה לאנגלית' },
+    { user: 'office', pass: 'ns2026', role: 'אדמין', name: 'אלון', initials: 'אל', label: 'אדמין · משרד' },
+    { user: 'pedago', pass: 'ns2026', role: 'מנהל פדגוגי', name: 'מושיק גואטה', initials: 'מ״ג', label: 'מנהל פדגוגי' }
+  ];
+
+  LANG_COLORS = {
+    'אנגלית': '#2F6FED', 'ספרדית': '#E08A00', 'איטלקית': '#17A34A', 'צרפתית': '#7C4DEE',
+    'גרמנית': '#DB4B3F', 'ערבית': '#0EA5A5', 'רוסית': '#DC3A72', 'יפנית': '#C2359C',
+    'יוונית': '#0F8FBF', 'פורטוגזית': '#2E9E6B'
+  };
+
+  SLOTS = [
+    { d: 1, h: '17:00', label: 'נועה כהן', meta: 'אנגלית B2 · פרטי', lang: 'אנגלית', sid: 's1' },
+    { d: 1, h: '19:00', label: 'Conversational English', meta: 'קבוצה · 6 תלמידים', lang: 'אנגלית', gid: 'g2' },
+    { d: 2, h: '10:00', label: 'English Foundations', meta: 'קבוצה · 8 תלמידים', lang: 'אנגלית', gid: 'g1' },
+    { d: 3, h: '17:00', label: 'נועה כהן', meta: 'אנגלית B2 · פרטי', lang: 'אנגלית', sid: 's1' },
+    { d: 4, h: '10:00', label: 'English Foundations', meta: 'קבוצה · 8 תלמידים', lang: 'אנגלית', gid: 'g1' },
+    { d: 4, h: '16:30', label: 'תמר בן-דוד', meta: 'אנגלית A2 · פרטי', lang: 'אנגלית', sid: 's7' }
+  ];
+
+  SEED_GROUPS = [
+    {
+      id: 'g1', name: 'English Foundations', lang: 'אנגלית', level: 'A2', cycle: 'רמה 1',
+      teacher: 'יותם ברוך', nb: 'Digital notebook 2026 - English Foundations',
+      sessions: ['16.7', '23.7', '30.7', '6.8'],
+      members: ['תמר בן-דוד', 'אירנה גורביץ', 'סאלי חדאד', 'מרק ליפשיץ', 'ורד אשכנזי', 'ג׳ורג׳ טנוס', 'נטע בר', 'איגור סבצ׳וק']
+    },
+    {
+      id: 'g2', name: 'Conversational English', lang: 'אנגלית', level: 'B2', cycle: 'רמה 2',
+      teacher: 'יותם ברוך', nb: 'Conversational English- Digital Notebook',
+      sessions: ['13.7', '20.7', '27.7', '3.8'],
+      members: ['נועה כהן', 'אלון מזרחי', 'דנה שלו', 'יובל אדרי', 'רותם קפלן', 'סמיר עודה']
+    }
+  ];
+
+  SEED_STUDENTS = [
+    { id: 's1', name: 'נועה כהן', lang: 'אנגלית', level: 'B2', course: 'Conversational English', teacher: 'יותם ברוך', status: 'פעיל', ctype: 'פרטי', mode: 'אונליין', purchased: 20, used: 14, present: 13, cancelled: 1, missed: 0, next: '4.8', notes: 'מתקדמת יפה בזמנים מורכבים. צריכה יותר ביטחון בדיבור ספונטני מול קבוצה.', covered: ['Present perfect', 'Past continuous', 'Small talk', 'Job interview'] },
+    { id: 's7', name: 'תמר בן-דוד', lang: 'אנגלית', level: 'A2', course: 'English Foundations', teacher: 'יותם ברוך', status: 'פעיל', ctype: 'פרטי', mode: 'פרונטלי', purchased: 12, used: 9, present: 8, cancelled: 1, missed: 0, next: '6.8', notes: 'התקדמות טובה באוצר מילים בסיסי. מתקשה בהאזנה בקצב טבעי.', covered: ['To be', 'Daily routine', 'Numbers'] },
+    { id: 's12', name: 'אלון מזרחי', lang: 'אנגלית', level: 'B2', course: 'Conversational English', teacher: 'יותם ברוך', status: 'פעיל', ctype: 'קבוצה', mode: 'אונליין', purchased: 16, used: 14, present: 12, cancelled: 1, missed: 1, next: '3.8', notes: 'שולט בשיחה, צריך לדייק אוצר מילים מקצועי.', covered: ['Negotiation', 'Idioms', 'Email writing'] },
+    { id: 's13', name: 'דנה שלו', lang: 'אנגלית', level: 'B2', course: 'Conversational English', teacher: 'יותם ברוך', status: 'פעיל', ctype: 'קבוצה', mode: 'אונליין', purchased: 16, used: 7, present: 7, cancelled: 0, missed: 0, next: '3.8', notes: 'חזקה בכתיבה, שקטה מדי בשיעור. כדאי לשבץ אותה ראשונה בתרגילי זוגות.', covered: ['Reported speech', 'Conditionals'] },
+    { id: 's14', name: 'ורד אשכנזי', lang: 'אנגלית', level: 'A2', course: 'English Foundations', teacher: 'יותם ברוך', status: 'פעיל', ctype: 'קבוצה', mode: 'פרונטלי', purchased: 12, used: 4, present: 4, cancelled: 0, missed: 0, next: '6.8', notes: 'התחילה מאפס וממש מתקדמת. מוכנה לחומר קשה יותר.', covered: ['Alphabet', 'Greetings', 'Family'] }
+  ];
+
+  state = {
+    view: 'today', day: 4, session: null, loginError: '', toast: '',
+    students: null, logs: null, groupData: null, cal: null, feedback: null, notifs: null,
+    sel: null, sheet: null, grpSel: null, grpSession: null,
+    query: '', fbKind: 'תלמיד', lessonState: 'השיעור התקיים'
+  };
+
+  componentDidMount() {
+    const read = (k) => { try { const x = localStorage.getItem(k); return x ? JSON.parse(x) : null; } catch (e) { return null; } };
+    this.setState({
+      /* A desktop session for a non-teacher role does not carry into the phone app. */
+      session: (() => { const x = read(this.LS_SESSION); return x && x.role === 'מורה' ? x : null; })(),
+      students: read(this.LS_S), logs: read(this.LS_LOG),
+      groupData: read(this.LS_GRP), cal: read(this.LS_CAL), feedback: read(this.LS_FB), notifs: read(this.LS_NOTIF)
+    });
+  }
+  save(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  flash(msg) {
+    this.setState({ toast: msg });
+    clearTimeout(this._t);
+    this._t = setTimeout(() => this.setState({ toast: '' }), 2600);
+  }
+
+  langColor(l) {
+    if (this.LANG_COLORS[l]) return this.LANG_COLORS[l];
+    let h = 0;
+    for (let i = 0; i < (l || '').length; i++) h = (h * 31 + l.charCodeAt(i)) % 360;
+    return 'oklch(0.58 0.15 ' + h + ')';
+  }
+  langTint(l) { return 'color-mix(in srgb, ' + this.langColor(l) + ' 11%, #ffffff)'; }
+  langInk(l) { return 'color-mix(in srgb, ' + this.langColor(l) + ' 80%, #14181F)'; }
+  initials(n) { return (n || '').split(' ').filter(Boolean).slice(0, 2).map(w => w[0]).join(''); }
+  driveUrl(q) { return 'https://drive.google.com/drive/search?q=' + encodeURIComponent(q); }
+
+  students() { return this.state.students || this.SEED_STUDENTS; }
+  mine() { return this.students().filter(x => x.teacher === this.meName()); }
+  remaining(s) { return Math.max(0, (Number(s.purchased) || 0) - (Number(s.used) || 0)); }
+  meName() { const s = this.state.session; return (s && s.teacherName) || this.ME; }
+
+  login = (e) => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    const u = this.USERS.find(x => x.user === String(d.user || '').trim().toLowerCase() && x.pass === d.pass);
+    if (!u) { this.setState({ loginError: 'שם משתמש או סיסמה שגויים' }); return; }
+    /* The phone app is the teacher's tool. Office and pedagogical roles work on desktop. */
+    if (u.role !== 'מורה') { this.setState({ loginError: 'האפליקציה בטלפון מיועדת למורים. חשבונות משרד והנהלה עובדים בדסקטופ.' }); return; }
+    this.signIn(u);
+  };
+  signIn(u) {
+    const sess = { user: u.user, role: u.role, name: u.name, initials: u.initials, label: u.label, teacherName: u.teacherName || '' };
+    this.setState({ session: sess, loginError: '', view: 'today' });
+    this.save(this.LS_SESSION, sess);
+  }
+  logout = () => {
+    try { localStorage.removeItem(this.LS_SESSION); } catch (e) {}
+    this.setState({ session: null, view: 'today', sel: null, sheet: null });
+  };
+
+  patchStudent(id, patch) {
+    const next = this.students().map(x => x.id === id ? Object.assign({}, x, patch) : x);
+    this.setState({ students: next });
+    this.save(this.LS_S, next);
+  }
+  logs() { return this.state.logs || {}; }
+  logsOf(id) { return this.logs()[id] || []; }
+  submitLesson = (e) => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    const id = this.state.sel;
+    const st = this.students().find(x => x.id === id);
+    if (!st) return;
+    const entry = {
+      id: 'l' + Date.now(),
+      date: d.date ? d.date.split('-').reverse().slice(0, 2).join('.') : new Date().toLocaleDateString('he-IL'),
+      status: this.state.lessonState, covered: (d.covered || '').trim(),
+      hw: (d.hw || '').trim(), stopped: (d.stopped || '').trim(), by: this.meName()
+    };
+    const logs = Object.assign({}, this.logs());
+    logs[id] = [entry].concat(this.logsOf(id));
+    this.setState({ logs, sheet: 'student' });
+    this.save(this.LS_LOG, logs);
+
+    const burns = entry.status !== 'בוטל בהתראה מוקדמת';
+    const patch = { last: entry.date };
+    if (entry.status === 'השיעור התקיים') patch.present = (Number(st.present) || 0) + 1;
+    if (entry.status === 'בוטל בהתראה מוקדמת') patch.cancelled = (Number(st.cancelled) || 0) + 1;
+    if (entry.status === 'היעדרות ללא ביטול') patch.missed = (Number(st.missed) || 0) + 1;
+    if (burns) patch.used = Math.min(Number(st.purchased) || 0, (Number(st.used) || 0) + 1);
+    this.patchStudent(id, patch);
+
+    const rem = Math.max(0, (Number(st.purchased) || 0) - (patch.used != null ? patch.used : Number(st.used) || 0));
+    this.flash(burns ? 'השיעור נרשם · נוצל שיעור מהחבילה' : 'הביטול נרשם · לא נוצל שיעור');
+    if (burns && rem <= 2) this.raisePkgAlert(st, rem);
+  };
+  deleteLesson(sid, lid) {
+    const st = this.students().find(x => x.id === sid);
+    const entry = this.logsOf(sid).find(l => l.id === lid);
+    const logs = Object.assign({}, this.logs());
+    logs[sid] = this.logsOf(sid).filter(l => l.id !== lid);
+    this.setState({ logs });
+    this.save(this.LS_LOG, logs);
+    if (st && entry) {
+      const patch = {};
+      if (entry.status === 'השיעור התקיים') patch.present = Math.max(0, (Number(st.present) || 0) - 1);
+      if (entry.status === 'בוטל בהתראה מוקדמת') patch.cancelled = Math.max(0, (Number(st.cancelled) || 0) - 1);
+      if (entry.status === 'היעדרות ללא ביטול') patch.missed = Math.max(0, (Number(st.missed) || 0) - 1);
+      if (entry.status !== 'בוטל בהתראה מוקדמת') patch.used = Math.max(0, (Number(st.used) || 0) - 1);
+      this.patchStudent(sid, patch);
+    }
+    this.flash('הרשומה נמחקה והמאזן עודכן בחזרה');
+  }
+
+  notifs() { return this.state.notifs || []; }
+  saveNotifs(next) { this.setState({ notifs: next }); this.save(this.LS_NOTIF, next); }
+  raisePkgAlert(st, rem) {
+    if (this.notifs().find(n => n.kind === 'חבילה' && n.student === st.name && n.status === 'חדש')) return;
+    this.saveNotifs([{
+      id: 'n' + Date.now(), kind: 'חבילה', student: st.name,
+      rec: rem === 0 ? 'החבילה נגמרה' : 'נותרו ' + rem + ' שיעורים',
+      group: st.course, lang: st.lang, level: st.level, by: this.meName(), status: 'חדש',
+      when: new Date().toLocaleDateString('he-IL'),
+      note: 'החבילה נגמרת — צריך לדבר על חידוש לפני השיעור הבא.'
+    }].concat(this.notifs()));
+    this.flash('נשלחה התראה למשרד: החבילה של ' + st.name + ' נגמרת');
+  }
+
+  /* ---- group attendance ---- */
+  groupData() { return this.state.groupData || { att: {}, notes: {} }; }
+  writeGroups(patch) {
+    const next = Object.assign({}, this.groupData(), patch);
+    this.setState({ groupData: next });
+    clearTimeout(this._g);
+    this._g = setTimeout(() => this.save(this.LS_GRP, next), 250);
+  }
+  attOf(gid, date, m) { return ((this.groupData().att[gid] || {})[date] || {})[m] || ''; }
+  setAtt(gid, date, m, val) {
+    const att = Object.assign({}, this.groupData().att);
+    const byGroup = Object.assign({}, att[gid] || {});
+    const bySession = Object.assign({}, byGroup[date] || {});
+    bySession[m] = bySession[m] === val ? '' : val;
+    byGroup[date] = bySession; att[gid] = byGroup;
+    this.writeGroups({ att });
+  }
+  noteOf(gid, m) {
+    const n = (this.groupData().notes[gid] || {})[m] || {};
+    return { rec: n.rec || 'בקצב הרמה', text: n.text || '' };
+  }
+  setNote(gid, m, patch) {
+    const notes = Object.assign({}, this.groupData().notes);
+    const byGroup = Object.assign({}, notes[gid] || {});
+    byGroup[m] = Object.assign({}, this.noteOf(gid, m), patch);
+    notes[gid] = byGroup;
+    this.writeGroups({ notes });
+    if (patch.rec) {
+      const g = this.SEED_GROUPS.find(x => x.id === gid);
+      if (g) this.syncNotif(g, m, patch.rec);
+    }
+  }
+  syncNotif(g, m, rec) {
+    const open = this.notifs().find(n => n.gid === g.id && n.student === m && n.status === 'חדש');
+    const wanted = rec === 'מוכן לרמה הבאה' || rec === 'לא מתאים לרמה';
+    if (!wanted) { if (open) this.saveNotifs(this.notifs().filter(n => n.id !== open.id)); return; }
+    if (open && open.rec === rec) return;
+    const rest = open ? this.notifs().filter(n => n.id !== open.id) : this.notifs();
+    this.saveNotifs([{
+      id: 'n' + Date.now(), kind: 'רמה', gid: g.id, group: g.name, student: m, rec,
+      lang: g.lang, level: g.cycle, by: this.meName(), status: 'חדש',
+      when: new Date().toLocaleDateString('he-IL'), note: this.noteOf(g.id, m).text
+    }].concat(rest));
+    this.flash('נשלחה התראה למשרד על ' + m);
+  }
+
+  /* ---- feedback ---- */
+  feedback() { return this.state.feedback || []; }
+  submitFeedback = (e) => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    if (!d.text || !d.text.trim()) { this.flash('כדאי לכתוב משפט אחד לפחות'); return; }
+    const next = [{
+      id: 'f' + Date.now(), kind: d.kind, subject: d.subject || '', verdict: d.verdict || '',
+      lang: d.lang || '', level: d.level || '', text: d.text.trim(),
+      by: this.meName(), when: new Date().toLocaleDateString('he-IL')
+    }].concat(this.feedback());
+    this.setState({ feedback: next });
+    this.save(this.LS_FB, next);
+    e.target.reset();
+    this.flash('הפידבק נשלח למנהל הפדגוגי');
+  };
+
+  view(v) { return (e) => { if (e) e.preventDefault(); this.setState({ view: v, sel: null, sheet: null }); }; }
+
+  renderVals() {
+    const s = this.state;
+    const sess = s.session;
+    const me = this.meName();
+    const mine = this.mine();
+    const cal = s.cal || { links: {} };
+    const myGroups = this.SEED_GROUPS.filter(g => g.teacher === me);
+
+    const dayCount = (i) => this.SLOTS.filter(x => x.d === i).length;
+    const daySlots = this.SLOTS.filter(x => x.d === s.day);
+
+    const titles = { today: 'השיעורים שלי', students: 'התלמידים שלי', groups: 'קבוצות', feedback: 'פידבק' };
+    const subs = {
+      today: s.day === this.TODAY_IDX ? 'יום ' + this.DAYS[s.day] + ' · 30 ביולי' : 'יום ' + this.DAYS[s.day],
+      students: mine.length + ' תלמידים בתיק',
+      groups: myGroups.length + ' קבוצות פעילות',
+      feedback: 'על תלמיד, על חומר, או מה שחסר'
+    };
+
+    /* selected student for the sheet */
+    const cur = mine.concat(this.students()).find(x => x.id === s.sel);
+    let sel = null;
+    if (cur) {
+      const rem = this.remaining(cur);
+      const pct = cur.purchased ? Math.round((cur.used / cur.purchased) * 100) : 0;
+      sel = {
+        name: cur.name, initials: this.initials(cur.name),
+        bg: this.langTint(cur.lang), fg: this.langInk(cur.lang),
+        sub: cur.lang + ' ' + cur.level + ' · ' + cur.ctype + ' · ' + cur.mode,
+        remLine: rem + ' מתוך ' + cur.purchased, remColor: rem <= 3 ? '#A8281E' : '#12161C',
+        barWidth: pct + '%', barColor: rem <= 3 ? '#D9463F' : '#2F6FED',
+        present: cur.present, cancelled: cur.cancelled, missed: cur.missed,
+        missedColor: cur.missed > 0 ? '#A8281E' : '#12161C',
+        lowBalance: rem <= 3,
+        lowLine: rem === 0 ? 'החבילה נגמרה — אין שיעורים נותרים' : 'נותרו ' + rem + ' שיעורים — צריך לחדש',
+        notes: cur.notes, covered: cur.covered || [],
+        nbUrl: this.driveUrl(cur.name + ' מחברת'),
+        log: this.logsOf(cur.id).map(l => {
+          const held = l.status === 'השיעור התקיים';
+          const noShow = l.status === 'היעדרות ללא ביטול';
+          return {
+            date: l.date, status: l.status, covered: l.covered, hw: l.hw,
+            hasCovered: !!l.covered, hasHw: !!l.hw,
+            bg: held ? '#E6F5EE' : noShow ? '#FDECEA' : '#FCF2DC',
+            fg: held ? '#0B6B41' : noShow ? '#A8281E' : '#8A5300',
+            remove: () => this.deleteLesson(cur.id, l.id)
+          };
+        }),
+        noLog: this.logsOf(cur.id).length === 0,
+        logCount: this.logsOf(cur.id).length + ' מתועדים'
+      };
+    }
+
+    const q = s.query.trim();
+    const filtered = q ? mine.filter(x => x.name.indexOf(q) > -1) : mine;
+
+    const gsel = myGroups.find(g => g.id === s.grpSel) || myGroups[0];
+    let group = null;
+    if (gsel) {
+      const date = s.grpSession || gsel.sessions[gsel.sessions.length - 1];
+      const present = gsel.members.filter(m => this.attOf(gsel.id, date, m) === 'נוכח').length;
+      const late = gsel.members.filter(m => this.attOf(gsel.id, date, m) === 'איחור').length;
+      const absent = gsel.members.filter(m => this.attOf(gsel.id, date, m) === 'נעדר').length;
+      group = {
+        sessions: gsel.sessions.map(d => ({
+          label: d, bg: d === date ? '#12161C' : '#ffffff', fg: d === date ? '#ffffff' : '#5C6672',
+          border: d === date ? '#12161C' : '#E4E7EC',
+          pick: () => this.setState({ grpSel: gsel.id, grpSession: d })
+        })),
+        stats: [
+          { k: 'נוכחים', v: String(present), color: '#0B6B41' },
+          { k: 'איחורים', v: String(late), color: '#8A5300' },
+          { k: 'נעדרים', v: String(absent), color: '#A8281E' }
+        ],
+        rows: gsel.members.map(m => {
+          const curAtt = this.attOf(gsel.id, date, m);
+          const n = this.noteOf(gsel.id, m);
+          return {
+            name: m, initials: this.initials(m),
+            bg: this.langTint(gsel.lang), fg: this.langInk(gsel.lang),
+            notified: !!this.notifs().find(x => x.gid === gsel.id && x.student === m && x.status === 'חדש'),
+            marks: this.ATT.map(a => ({
+              label: a,
+              bg: curAtt === a ? (a === 'נוכח' ? '#0F9D6E' : a === 'איחור' ? '#E8A317' : '#D9463F') : '#F1F3F6',
+              fg: curAtt === a ? '#ffffff' : '#5C6672',
+              set: () => this.setAtt(gsel.id, date, m, a)
+            })),
+            rec: n.rec,
+            recBg: n.rec === 'מוכן לרמה הבאה' ? '#E6F5EE' : n.rec === 'לא מתאים לרמה' ? '#FDECEA' : '#F7F8FA',
+            recFg: n.rec === 'מוכן לרמה הבאה' ? '#0B6B41' : n.rec === 'לא מתאים לרמה' ? '#A8281E' : '#39424F',
+            onRec: (e) => this.setNote(gsel.id, m, { rec: e.target.value }),
+            note: n.text,
+            onNote: (e) => this.setNote(gsel.id, m, { text: e.target.value })
+          };
+        })
+      };
+    }
+
+    const fbIsStudent = s.fbKind === 'תלמיד';
+    const fbIsGap = s.fbKind === 'בקשת חומר';
+    const tabs = ['today', 'students', 'groups', 'feedback'];
+
+    return {
+      isSignedIn: !!sess, isLocked: !sess,
+      login: this.login, logout: this.logout,
+      demoTeacher: () => this.signIn(this.USERS[0]),
+      loginError: s.loginError, hasLoginError: !!s.loginError,
+      userName: sess ? sess.name : '', userInitials: sess ? sess.initials : '', roleLabel: sess ? sess.label : '',
+      screenTitle: titles[s.view], screenSub: subs[s.view],
+      toast: s.toast, hasToast: !!s.toast,
+
+      isToday: s.view === 'today', isStudents: s.view === 'students',
+      isGroups: s.view === 'groups', isFeedback: s.view === 'feedback',
+      go: { today: this.view('today'), students: this.view('students'), groups: this.view('groups'), feedback: this.view('feedback') },
+      tabBg: tabs.reduce((o, k) => { o[k] = s.view === k ? '#232A33' : 'transparent'; return o; }, {}),
+      tabFg: tabs.reduce((o, k) => { o[k] = s.view === k ? '#ffffff' : '#7C8797'; return o; }, {}),
+
+      dayChips: this.DAYS.map((d, i) => ({
+        short: this.SHORT[i], count: String(dayCount(i)),
+        bg: i === s.day ? '#12161C' : '#ffffff', fg: i === s.day ? '#ffffff' : '#5C6672',
+        border: i === s.day ? '#12161C' : '#E4E7EC',
+        pick: () => this.setState({ day: i })
+      })),
+      lessons: daySlots.map(x => {
+        const link = (cal.links || {})[x.d + '-' + x.h] || '';
+        const st = x.sid ? this.students().find(y => y.id === x.sid) : null;
+        return {
+          h: x.h, dur: '60 דק׳', label: x.label, meta: x.meta,
+          color: this.langColor(x.lang), bg: this.langTint(x.lang), fg: this.langInk(x.lang),
+          timeColor: s.day === this.TODAY_IDX ? '#2F6FED' : '#12161C',
+          hasLink: !!link, link,
+          nbUrl: this.driveUrl(x.gid ? (this.SEED_GROUPS.find(g => g.id === x.gid) || {}).nb || x.label : x.label + ' מחברת'),
+          actLabel: x.gid ? 'נוכחות' : 'רשום',
+          act: x.gid
+            ? () => this.setState({ view: 'groups', grpSel: x.gid, grpSession: null })
+            : () => this.setState({ sel: x.sid, sheet: 'lesson', lessonState: 'השיעור התקיים' })
+        };
+      }),
+      noLessons: daySlots.length === 0,
+
+      query: s.query, onQuery: (e) => this.setState({ query: e.target.value }),
+      studentRows: filtered.map(x => {
+        const rem = this.remaining(x);
+        return {
+          name: x.name, initials: this.initials(x.name),
+          bg: this.langTint(x.lang), fg: this.langInk(x.lang),
+          sub: x.lang + ' ' + x.level + ' · ' + x.ctype,
+          rem: rem + ' נותרו',
+          remBg: rem <= 3 ? '#FDECEA' : '#F1F3F6', remFg: rem <= 3 ? '#A8281E' : '#39424F',
+          open: () => this.setState({ sel: x.id, sheet: 'student' })
+        };
+      }),
+      noStudents: filtered.length === 0,
+
+      sel, showStudent: s.sheet === 'student' && !!sel,
+      closeSheet: () => this.setState({ sheet: null, sel: null }),
+      openLesson: () => this.setState({ sheet: 'lesson', lessonState: 'השיעור התקיים' }),
+      showLesson: s.sheet === 'lesson' && !!sel,
+      closeLesson: () => this.setState({ sheet: 'student' }),
+      lessonFor: sel ? sel.name : '',
+      lessonState: s.lessonState,
+      lessonStateOpts: this.LESSON_STATES.map(o => {
+        const on = o === s.lessonState;
+        return {
+          label: o, burn: o === 'בוטל בהתראה מוקדמת' ? 'לא מנוכה' : 'מנוכה מהחבילה',
+          bg: on ? '#F2F6FF' : '#F7F8FA', border: on ? '#2F6FED' : '#E4E7EC',
+          fg: on ? '#1B4CC4' : '#28303A',
+          dot: on ? '#2F6FED' : 'transparent', dotBorder: on ? '#2F6FED' : '#C9CFD9',
+          pick: () => this.setState({ lessonState: o })
+        };
+      }),
+      submitLesson: this.submitLesson,
+
+      groupChips: myGroups.map(g => {
+        const on = gsel && g.id === gsel.id;
+        return {
+          name: g.name,
+          bg: on ? this.langTint(g.lang) : '#ffffff', fg: on ? this.langInk(g.lang) : '#5C6672',
+          border: on ? this.langColor(g.lang) : '#E4E7EC',
+          pick: () => this.setState({ grpSel: g.id, grpSession: null })
+        };
+      }),
+      group, recOptions: this.RECS,
+
+      fbKind: s.fbKind,
+      fbNeedsLang: !fbIsStudent, fbHasVerdict: !fbIsGap,
+      setFbStudent: () => this.setState({ fbKind: 'תלמיד' }),
+      setFbMaterial: () => this.setState({ fbKind: 'חומר' }),
+      setFbGap: () => this.setState({ fbKind: 'בקשת חומר' }),
+      fbKindBg: {
+        student: fbIsStudent ? '#ffffff' : 'transparent',
+        material: s.fbKind === 'חומר' ? '#ffffff' : 'transparent',
+        gap: fbIsGap ? '#ffffff' : 'transparent'
+      },
+      fbKindFg: {
+        student: fbIsStudent ? '#12161C' : '#5C6672',
+        material: s.fbKind === 'חומר' ? '#12161C' : '#5C6672',
+        gap: fbIsGap ? '#12161C' : '#5C6672'
+      },
+      fbLangs: Array.from(new Set(mine.map(x => x.lang))),
+      fbLevels: this.CYCLE_LEVELS,
+      fbVerdicts: fbIsStudent ? this.FB_STUDENT_VERDICTS : this.FB_VERDICTS,
+      fbSubjects: fbIsStudent ? mine.map(x => x.name) : fbIsGap ? this.GAP_KINDS : Array.from(new Set(mine.map(x => x.course))),
+      fbPlaceholder: fbIsGap
+        ? 'מה חסר לי בסייקל ולמה'
+        : fbIsStudent ? 'מה קרה בשיעור' : 'איך החומר עבד בכיתה',
+      submitFeedback: this.submitFeedback,
+      fbRows: this.feedback().filter(x => x.by === me).map(x => ({
+        kind: x.kind, subject: x.subject, text: x.text, when: x.when,
+        kindBg: x.kind === 'תלמיד' ? '#E7EEFD' : x.kind === 'בקשת חומר' ? '#FCF2DC' : '#F4E8FB',
+        kindFg: x.kind === 'תלמיד' ? '#1B4CC4' : x.kind === 'בקשת חומר' ? '#8A5300' : '#7A2FA8'
+      })),
+      noFeedback: this.feedback().filter(x => x.by === me).length === 0
+    };
+  }
+}
+</script>
+</body>
+</html>
