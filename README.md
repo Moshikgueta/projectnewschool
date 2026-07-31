@@ -47,7 +47,17 @@ only loads it for `x-import`ed JSX modules, which these pages don't use — conf
 loading them in a browser with the Babel request blocked.
 
 The only thing a built page still reaches for is Google Fonts. Offline it falls back to
-`Segoe UI` / `system-ui`; everything else renders and works.
+Georgia; everything else renders and works.
+
+**Inlining has to escape HTML-looking tokens**, and getting this wrong fails in a way that
+only shows up when the page is served. `support.js` mentions `<x-dc`, `</x-dc>` and
+`<sc-raw-*>` in its own regexes, strings and comments. Inlined verbatim those land in the
+document text — and the runtime re-fetches the page over HTTP and re-parses it, so it finds
+the stray markers and tries to create an element named `sc-raw-*`, which throws and renders
+a blank page. Under `file://` the re-fetch fails and the runtime falls back to the live DOM,
+so the page looks perfect locally and is broken the moment it is hosted. The build escapes
+the `<` of those tokens (and of `<script`) to `\x3c`, which leaves every value identical.
+**Verify built pages over http, not file://** — that is the condition that matters.
 
 ## The site
 
@@ -69,16 +79,38 @@ shown deliberately on the login screen; there is no backend.
 
 ## Design
 
-The two dashboard pages carry their styles inline: **Heebo** for headings and **Assistant**
-for body text (both from Google Fonts), a light `#F4F5F8` ground, near-black `#12161C` text
-and a dark navy sidebar. The whole UI is RTL.
+The site follows **Broadsheet** — the design system in `_ds/broadsheet-…/`. Newsprint set
+for the web: a `#f3f2f2` paper ground with `#201e1d` ink, cyan `#0088b0` as the interactive
+accent and magenta `#d6006c` as the rarer second spot colour, hierarchy carried by the
+serif scale and by space rather than by rules and boxes. The guide, the full token set and
+the component list are in `_ds/broadsheet-…/readme.md`.
 
-The `_ds/broadsheet-…/` bundle is a **separate design system that these pages do not
-currently use** — "Broadsheet", newsprint set for the web: Source Serif 4 on paper white
-with cyan `#0088b0` and magenta `#d6006c` as spot colour. Neither page links its
-`styles.css` or references its `var(--color-*)` tokens, so it is carried here as reference
-material rather than as the dashboard's live styling. Its guidance, token set and component
-list are in `_ds/broadsheet-…/readme.md`.
+**Typography.** Broadsheet specifies Source Serif 4, which carries no Hebrew glyphs — on a
+Hebrew RTL interface it would silently fall back to a system sans on nearly every string.
+So the stack is `'Source Serif 4','Frank Ruhl Libre',Georgia,serif`: Latin sets in the
+system's own face and Hebrew falls through to a Hebrew serif of the same newsprint
+character. Per-character fallback does the routing, so each script gets a serif.
+
+**Colour.** The pages carry no stylesheet to retheme — the look lived in ~1,600 inline
+`style` attributes plus a few hundred values in the page script, so those were rewritten
+onto `var(--color-*)` tokens declared at the top of each page. A hex is mapped by the
+property it sits in: dark values as `background` become surfaces, the same values as
+`color` become text.
+
+Two deliberate departures from the guide, both because this is an operated interface rather
+than a document:
+
+- **The rail stays dark.** Broadsheet shows no dark surfaces, but the navigation rail and
+  the sign-in panel need to separate from the working area. They take the system's deepest
+  ink neutral, so they read as an ink panel on newsprint with knockout type — print
+  language — instead of navy UI chrome.
+- **Semantic and categorical colour sit outside the accents.** Pass/fail/warning states and
+  the 26-language palette are information, not brand, so they keep distinct hues; every one
+  is retuned to the same muted press-ink register so they sit inside the palette.
+
+The landing page (`docs/index.html`) commits to the single light theme on purpose — a
+newsprint system has no dark register to invert into — and uses the one rule pair the
+system does print: the front-page thick–thin around a dateline rail.
 
 ## Conventions
 

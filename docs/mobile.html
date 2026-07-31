@@ -346,9 +346,9 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
     };
   }
   function parseDcText(src) {
-    const openMatch = /<x-dc(?:\s[^>]*)?>/.exec(src);
+    const openMatch = /\x3cx-dc(?:\s[^>]*)?>/.exec(src);
     if (!openMatch) return null;
-    const close = src.lastIndexOf("</x-dc>");
+    const close = src.lastIndexOf("\x3c/x-dc>");
     if (close === -1 || close < openMatch.index) return null;
     const template = src.slice(openMatch.index + openMatch[0].length, close);
     const doc = new DOMParser().parseFromString(src, "text/html");
@@ -684,8 +684,8 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
       IMPORT_SELF_CLOSE_RE,
       (_, t, a) => "<" + t + a + "></" + t + ">"
     );
-    html = html.replace(/<helmet(\s|>)/gi, "<sc-helmet$1");
-    html = html.replace(/<\/helmet\s*>/gi, "</sc-helmet>");
+    html = html.replace(/<helmet(\s|>)/gi, "\x3csc-helmet$1");
+    html = html.replace(/<\/helmet\s*>/gi, "\x3c/sc-helmet>");
     html = encodeCamelAttrs(html);
     for (const [real, alias] of Object.entries(RAW_WRAP)) {
       html = html.replace(
@@ -1977,7 +1977,7 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
           console.error(
             '[dc-runtime] sibling fetch for "' + name + '":',
             url,
-            "has no <x-dc> block \u2014 not a Design Component."
+            "has no \x3cx-dc> block \u2014 not a Design Component."
           );
           return;
         }
@@ -2193,7 +2193,7 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
        *  The host editor parses this into its own template DOM so it can map a
        *  rendered node (carrying the same `data-dc-tpl`) back to the source
        *  node that emitted it. Returns the encoded form (`sc-camel-*` attrs,
-       *  `<sc-raw-*>`/`<sc-helmet>` tags); the editor decodes on serialize. */
+       *  `\x3csc-raw-*>`/`\x3csc-helmet>` tags); the editor decodes on serialize. */
       __dcAnnotatedTemplate: (name) => runtime.annotatedTemplate(name),
       /** Editor bridge — the *original* (decoded) template source. */
       __dcTemplateSource: (name) => runtime.templateSource(name),
@@ -2229,13 +2229,42 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; }
-  body { margin: 0; background: #0F1318; font-family: Assistant, sans-serif; -webkit-font-smoothing: antialiased; }
-  h1, h2, h3, h4, h5, h6 { font-family: Heebo, sans-serif; font-weight: 700; margin: 0; letter-spacing: -0.01em; color: #12161C; }
+  
+:root{
+  /* Broadsheet — tokens from _ds/broadsheet-e115fdd5.../styles.css. Colours in
+     this file come from these variables; see readme.md in that folder. */
+  --color-bg:#f3f2f2; --color-surface:#eae9e9; --color-paper:#ffffff;
+  --color-text:#201e1d;
+  --color-accent:#0088b0; --color-accent-2:#d6006c;
+  --color-divider:color-mix(in srgb, #201e1d 16%, transparent);
+
+  --color-neutral-100:#f8f4f4; --color-neutral-200:#eae7e7; --color-neutral-300:#d7d3d3;
+  --color-neutral-400:#bab6b6; --color-neutral-500:#9b9797; --color-neutral-600:#7d7979;
+  --color-neutral-700:#605d5d; --color-neutral-800:#444141; --color-neutral-900:#2d2b2b;
+
+  --color-accent-100:#e9f8ff; --color-accent-200:#cbeeff; --color-accent-300:#99e0ff;
+  --color-accent-500:#38a6cf; --color-accent-600:#1186ac; --color-accent-700:#006786;
+  --color-accent-800:#004961;
+
+  --color-accent-2-100:#fff1f4; --color-accent-2-200:#ffdee6;
+  --color-accent-2-600:#d82071; --color-accent-2-700:#aa0b56;
+
+  --color-process-yellow:#edbb00;
+
+  /* Semantic roles the system has no token for. Kept distinct from the accents
+     (per the guide, semantic colour is not the accent) and tuned to the same
+     muted press-ink register so they sit in the palette rather than shouting. */
+  --color-positive:#2e7d5b; --color-positive-ink:#1a5740; --color-positive-tint:#e4efe9;
+  --color-critical:#a5231f; --color-critical-mid:#c4453f; --color-critical-tint:#f7e7e5;
+  --color-warning:#b4870c; --color-warning-ink:#7a5a06; --color-warning-tint:#fbf1d4;
+}
+*, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: var(--color-neutral-900); font-family: 'Source Serif 4','Frank Ruhl Libre',Georgia,serif; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4, h5, h6 { font-family: 'Source Serif 4','Frank Ruhl Libre',Georgia,serif; font-weight: 700; margin: 0; letter-spacing: -0.01em; color: var(--color-text); }
   p { margin: 0; }
-  a { color: #2F6FED; text-decoration: none; }
-  a:hover { color: #1B4CC4; }
-  input, select, textarea, button { font-family: Assistant, sans-serif; }
+  a { color: var(--color-accent); text-decoration: none; }
+  a:hover { color: var(--color-accent-700); }
+  input, select, textarea, button { font-family: 'Source Serif 4','Frank Ruhl Libre',Georgia,serif; }
   input, select, textarea { font-size: 16px; }
   ::selection { background: #D6E4FF; }
   @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
@@ -2243,50 +2272,50 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
 </style>
 </helmet>
 
-<div dir="rtl" style="width:390px;height:844px;margin:0 auto;position:relative;overflow:hidden;background:#F4F5F8;display:flex;flex-direction:column;font:400 15px Assistant,sans-serif;color:#12161C">
+<div dir="rtl" style="width:390px;height:844px;margin:0 auto;position:relative;overflow:hidden;background:var(--color-bg);display:flex;flex-direction:column;font:400 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text)">
 
 <sc-if value="{{ isLocked }}">
-<div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:28px 22px;background:#0F1318">
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:28px 22px;background:var(--color-neutral-900)">
 <div style="display:flex;align-items:center;gap:10px">
-<span style="width:38px;height:38px;border-radius:12px;background:#2F6FED;display:grid;place-items:center;font:800 16px Heebo,sans-serif;color:#fff">NS</span>
+<span style="width:38px;height:38px;border-radius:12px;background:var(--color-accent);display:grid;place-items:center;font:800 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff">NS</span>
 <div style="line-height:1.15">
-<div style="font:700 17px Heebo,sans-serif;color:#fff">חדר המורים</div>
-<div style="font:400 12.5px Assistant,sans-serif;color:#7C8797">New School</div>
+<div style="font:700 17px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff">חדר המורים</div>
+<div style="font:400 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">New School</div>
 </div>
 </div>
 <h1 style="margin-top:26px;font-size:29px;line-height:1.2;color:#fff">כל מה שצריך לשיעור, בטלפון.</h1>
-<p style="margin-top:12px;font:400 14.5px/1.65 Assistant,sans-serif;color:#98A2B0">השיעורים של היום, נוכחות, מחברות ופידבק. הכל חסוי ומיועד לצוות בית הספר.</p>
+<p style="margin-top:12px;font:400 14.5px/1.65 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500)">השיעורים של היום, נוכחות, מחברות ופידבק. הכל חסוי ומיועד לצוות בית הספר.</p>
 
 <form onSubmit="{{ login }}" style="margin-top:26px;display:flex;flex-direction:column;gap:12px">
-<input name="user" autoComplete="username" placeholder="שם משתמש" style="height:50px;padding:0 15px;font:400 16px Assistant,sans-serif;color:#fff;background:#1B2129;border:1px solid #2A323C;border-radius:13px;outline:none" style-focus="border-color:#2F6FED">
-<input name="pass" type="password" autoComplete="current-password" placeholder="סיסמה" style="height:50px;padding:0 15px;font:400 16px Assistant,sans-serif;color:#fff;background:#1B2129;border:1px solid #2A323C;border-radius:13px;outline:none" style-focus="border-color:#2F6FED">
+<input name="user" autoComplete="username" placeholder="שם משתמש" style="height:50px;padding:0 15px;font:400 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:1px solid #2A323C;border-radius:13px;outline:none" style-focus="border-color:var(--color-accent)">
+<input name="pass" type="password" autoComplete="current-password" placeholder="סיסמה" style="height:50px;padding:0 15px;font:400 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:1px solid #2A323C;border-radius:13px;outline:none" style-focus="border-color:var(--color-accent)">
 <sc-if value="{{ hasLoginError }}">
-<div style="display:flex;align-items:center;gap:8px;background:#2A1A19;border-radius:11px;padding:11px 13px;font:500 13.5px Assistant,sans-serif;color:#F0A9A2"><span style="width:7px;height:7px;border-radius:50%;background:#D9463F;flex:none"></span>{{ loginError }}</div>
+<div style="display:flex;align-items:center;gap:8px;background:#2A1A19;border-radius:11px;padding:11px 13px;font:500 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#F0A9A2"><span style="width:7px;height:7px;border-radius:50%;background:var(--color-critical-mid);flex:none"></span>{{ loginError }}</div>
 </sc-if>
-<button type="submit" style="height:52px;font:600 16px Assistant,sans-serif;color:#fff;background:#2F6FED;border:none;border-radius:13px;cursor:pointer" style-hover="background:#1B4CC4">התחברות</button>
+<button type="submit" style="height:52px;font:600 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-accent);border:none;border-radius:13px;cursor:pointer" style-hover="background:var(--color-accent-700)">התחברות</button>
 </form>
-<button onClick="{{ demoTeacher }}" style="margin-top:14px;height:46px;font:600 14px Assistant,sans-serif;color:#98A2B0;background:transparent;border:1px solid #2A323C;border-radius:13px;cursor:pointer" style-hover="color:#fff;border-color:#4A5563">כניסה מהירה — יותם ברוך · מורה</button>
-<p style="margin-top:18px;font:400 11.5px/1.5 Assistant,sans-serif;color:#5F6975">בגרסה האמיתית הכניסה דרך חשבון Google של בית הספר.</p>
+<button onClick="{{ demoTeacher }}" style="margin-top:14px;height:46px;font:600 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);background:transparent;border:1px solid #2A323C;border-radius:13px;cursor:pointer" style-hover="color:#fff;border-color:var(--color-neutral-800)">כניסה מהירה — יותם ברוך · מורה</button>
+<p style="margin-top:18px;font:400 11.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">בגרסה האמיתית הכניסה דרך חשבון Google של בית הספר.</p>
 </div>
 </sc-if>
 
 <sc-if value="{{ isSignedIn }}" hint-placeholder-val="{{ true }}">
 
-<header style="flex:none;background:#12161C;padding:16px 18px 18px">
+<header style="flex:none;background:var(--color-neutral-900);padding:16px 18px 18px">
 <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
 <div style="display:flex;align-items:center;gap:10px">
-<span style="width:34px;height:34px;border-radius:11px;background:#232A33;color:#fff;display:grid;place-items:center;font:700 12px Heebo,sans-serif">{{ userInitials }}</span>
+<span style="width:34px;height:34px;border-radius:11px;background:var(--color-neutral-800);color:#fff;display:grid;place-items:center;font:700 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ userInitials }}</span>
 <div style="line-height:1.2">
-<div style="font:700 15px Heebo,sans-serif;color:#fff">{{ userName }}</div>
-<div style="font:400 12px Assistant,sans-serif;color:#7C8797">{{ roleLabel }}</div>
+<div style="font:700 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff">{{ userName }}</div>
+<div style="font:400 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ roleLabel }}</div>
 </div>
 </div>
-<button onClick="{{ logout }}" title="יציאה" style="width:34px;height:34px;display:grid;place-items:center;color:#7C8797;background:#1B2129;border:none;border-radius:10px;cursor:pointer" style-hover="background:#232A33;color:#fff">
+<button onClick="{{ logout }}" title="יציאה" style="width:34px;height:34px;display:grid;place-items:center;color:var(--color-neutral-600);background:var(--color-neutral-900);border:none;border-radius:10px;cursor:pointer" style-hover="background:var(--color-neutral-800);color:#fff">
 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 20H6V4h8"/><path d="M11 12h9M17 8.5l3.5 3.5L17 15.5"/></svg>
 </button>
 </div>
 <h1 style="margin-top:14px;font-size:22px;color:#fff">{{ screenTitle }}</h1>
-<p style="margin-top:4px;font:400 13px Assistant,sans-serif;color:#7C8797">{{ screenSub }}</p>
+<p style="margin-top:4px;font:400 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ screenSub }}</p>
 </header>
 
 <main style="flex:1;overflow-y:auto;padding:16px 16px 22px">
@@ -2295,39 +2324,39 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
 <div style="display:flex;gap:6px">
 <sc-for list="{{ dayChips }}" as="d" hint-placeholder-count="6">
 <button onClick="{{ d.pick }}" style="flex:1;min-width:0;height:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;background:{{ d.bg }};color:{{ d.fg }};border:1px solid {{ d.border }};border-radius:14px;cursor:pointer">
-<span style="font:600 12px Assistant,sans-serif">{{ d.short }}</span>
-<span style="font:700 13px Heebo,sans-serif">{{ d.count }}</span>
+<span style="font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ d.short }}</span>
+<span style="font:700 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ d.count }}</span>
 </button>
 </sc-for>
 </div>
 
 <sc-if value="{{ noLessons }}">
-<div style="margin-top:16px;background:#fff;border:1px solid #E8EAEF;border-radius:16px;padding:22px 18px;text-align:center">
-<p style="font:400 14.5px/1.6 Assistant,sans-serif;color:#8A929E">אין שיעורים ביום הזה.</p>
+<div style="margin-top:16px;background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;padding:22px 18px;text-align:center">
+<p style="font:400 14.5px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">אין שיעורים ביום הזה.</p>
 </div>
 </sc-if>
 
 <div style="display:flex;flex-direction:column;gap:11px;margin-top:14px">
 <sc-for list="{{ lessons }}" as="l" hint-placeholder-count="3">
-<div style="background:#fff;border:1px solid #E8EAEF;border-radius:16px;padding:15px 16px;box-shadow:0 1px 2px rgba(16,24,40,.04)">
+<div style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;padding:15px 16px;box-shadow:0 1px 2px rgba(16,24,40,.04)">
 <div style="display:flex;align-items:flex-start;gap:12px">
 <div style="flex:none;text-align:center;min-width:52px">
-<div style="font:700 18px Heebo,sans-serif;font-variant-numeric:tabular-nums;color:{{ l.timeColor }}">{{ l.h }}</div>
-<div style="font:400 11px Assistant,sans-serif;color:#9AA3AF;margin-top:1px">{{ l.dur }}</div>
+<div style="font:700 18px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;font-variant-numeric:tabular-nums;color:{{ l.timeColor }}">{{ l.h }}</div>
+<div style="font:400 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);margin-top:1px">{{ l.dur }}</div>
 </div>
 <div style="flex:1;min-width:0">
-<div style="font:700 16px Heebo,sans-serif;line-height:1.25">{{ l.label }}</div>
+<div style="font:700 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;line-height:1.25">{{ l.label }}</div>
 <div style="display:flex;align-items:center;gap:6px;margin-top:6px;flex-wrap:wrap">
-<span style="display:inline-flex;align-items:center;gap:5px;height:23px;padding:0 9px;border-radius:999px;font:600 11.5px Assistant,sans-serif;background:{{ l.bg }};color:{{ l.fg }};white-space:nowrap"><span style="width:6px;height:6px;border-radius:50%;background:{{ l.color }}"></span>{{ l.meta }}</span>
+<span style="display:inline-flex;align-items:center;gap:5px;height:23px;padding:0 9px;border-radius:999px;font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:{{ l.bg }};color:{{ l.fg }};white-space:nowrap"><span style="width:6px;height:6px;border-radius:50%;background:{{ l.color }}"></span>{{ l.meta }}</span>
 </div>
 </div>
 </div>
 <div style="display:flex;gap:7px;margin-top:13px">
 <sc-if value="{{ l.hasLink }}">
-<a href="{{ l.link }}" target="_blank" rel="noopener" style="flex:1;height:46px;display:inline-flex;align-items:center;justify-content:center;font:600 14.5px Assistant,sans-serif;color:#fff;background:#2F6FED;border-radius:12px" style-hover="background:#1B4CC4;color:#fff">הצטרף לזום</a>
+<a href="{{ l.link }}" target="_blank" rel="noopener" style="flex:1;height:46px;display:inline-flex;align-items:center;justify-content:center;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-accent);border-radius:12px" style-hover="background:var(--color-accent-700);color:#fff">הצטרף לזום</a>
 </sc-if>
-<a href="{{ l.nbUrl }}" target="_blank" rel="noopener" style="flex:1;height:46px;display:inline-flex;align-items:center;justify-content:center;font:600 14.5px Assistant,sans-serif;color:#28303A;background:#F1F3F6;border-radius:12px" style-hover="background:#EBEDF1;color:#12161C">מחברת</a>
-<button onClick="{{ l.act }}" style="flex:1;height:46px;font:600 14.5px Assistant,sans-serif;color:#fff;background:#12161C;border:none;border-radius:12px;cursor:pointer" style-hover="background:#2F6FED">{{ l.actLabel }}</button>
+<a href="{{ l.nbUrl }}" target="_blank" rel="noopener" style="flex:1;height:46px;display:inline-flex;align-items:center;justify-content:center;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-800);background:var(--color-neutral-200);border-radius:12px" style-hover="background:var(--color-neutral-200);color:var(--color-text)">מחברת</a>
+<button onClick="{{ l.act }}" style="flex:1;height:46px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:12px;cursor:pointer" style-hover="background:var(--color-accent)">{{ l.actLabel }}</button>
 </div>
 </div>
 </sc-for>
@@ -2335,109 +2364,109 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
 </sc-if>
 
 <sc-if value="{{ isStudents }}">
-<input value="{{ query }}" onChange="{{ onQuery }}" placeholder="חיפוש תלמיד" style="width:100%;height:46px;padding:0 14px;font:400 15px Assistant,sans-serif;background:#fff;border:1px solid #E4E7EC;border-radius:13px;outline:none" style-focus="border-color:#2F6FED">
+<input value="{{ query }}" onChange="{{ onQuery }}" placeholder="חיפוש תלמיד" style="width:100%;height:46px;padding:0 14px;font:400 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-paper);border:1px solid var(--color-neutral-300);border-radius:13px;outline:none" style-focus="border-color:var(--color-accent)">
 <div style="display:flex;flex-direction:column;gap:9px;margin-top:13px">
 <sc-for list="{{ studentRows }}" as="s" hint-placeholder-count="5">
-<button onClick="{{ s.open }}" style="display:flex;align-items:center;gap:12px;text-align:right;background:#fff;border:1px solid #E8EAEF;border-radius:15px;padding:13px 14px;cursor:pointer;box-shadow:0 1px 2px rgba(16,24,40,.04)" style-hover="border-color:#B8CBF7">
-<span style="width:40px;height:40px;flex:none;border-radius:13px;background:{{ s.bg }};color:{{ s.fg }};display:grid;place-items:center;font:700 13px Heebo,sans-serif">{{ s.initials }}</span>
+<button onClick="{{ s.open }}" style="display:flex;align-items:center;gap:12px;text-align:right;background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:15px;padding:13px 14px;cursor:pointer;box-shadow:0 1px 2px rgba(16,24,40,.04)" style-hover="border-color:var(--color-accent-300)">
+<span style="width:40px;height:40px;flex:none;border-radius:13px;background:{{ s.bg }};color:{{ s.fg }};display:grid;place-items:center;font:700 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ s.initials }}</span>
 <span style="flex:1;min-width:0">
-<span style="display:block;font:700 15.5px Heebo,sans-serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ s.name }}</span>
-<span style="display:block;font:400 12.5px Assistant,sans-serif;color:#8A929E;margin-top:2px">{{ s.sub }}</span>
+<span style="display:block;font:700 15.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ s.name }}</span>
+<span style="display:block;font:400 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600);margin-top:2px">{{ s.sub }}</span>
 </span>
-<span style="flex:none;display:inline-flex;align-items:center;height:24px;padding:0 9px;border-radius:999px;font:700 12px Heebo,sans-serif;background:{{ s.remBg }};color:{{ s.remFg }};white-space:nowrap">{{ s.rem }}</span>
+<span style="flex:none;display:inline-flex;align-items:center;height:24px;padding:0 9px;border-radius:999px;font:700 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:{{ s.remBg }};color:{{ s.remFg }};white-space:nowrap">{{ s.rem }}</span>
 </button>
 </sc-for>
 </div>
 <sc-if value="{{ noStudents }}">
-<p style="margin-top:20px;font:400 14px Assistant,sans-serif;color:#8A929E;text-align:center">לא נמצא תלמיד בשם הזה.</p>
+<p style="margin-top:20px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600);text-align:center">לא נמצא תלמיד בשם הזה.</p>
 </sc-if>
 </sc-if>
 
 <sc-if value="{{ isGroups }}">
 <div style="display:flex;gap:7px;overflow-x:auto;padding-bottom:4px">
 <sc-for list="{{ groupChips }}" as="g" hint-placeholder-count="2">
-<button onClick="{{ g.pick }}" style="flex:none;height:38px;padding:0 14px;font:600 13.5px Assistant,sans-serif;color:{{ g.fg }};background:{{ g.bg }};border:1px solid {{ g.border }};border-radius:12px;cursor:pointer;white-space:nowrap">{{ g.name }}</button>
+<button onClick="{{ g.pick }}" style="flex:none;height:38px;padding:0 14px;font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ g.fg }};background:{{ g.bg }};border:1px solid {{ g.border }};border-radius:12px;cursor:pointer;white-space:nowrap">{{ g.name }}</button>
 </sc-for>
 </div>
 
 <div style="display:flex;align-items:center;gap:7px;margin-top:13px;overflow-x:auto;padding-bottom:4px">
-<span style="flex:none;font:600 12px Assistant,sans-serif;color:#8A929E">מפגש</span>
+<span style="flex:none;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">מפגש</span>
 <sc-for list="{{ group.sessions }}" as="ss" hint-placeholder-count="4">
-<button onClick="{{ ss.pick }}" style="flex:none;height:34px;padding:0 13px;font:600 13px Heebo,sans-serif;font-variant-numeric:tabular-nums;color:{{ ss.fg }};background:{{ ss.bg }};border:1px solid {{ ss.border }};border-radius:10px;cursor:pointer">{{ ss.label }}</button>
+<button onClick="{{ ss.pick }}" style="flex:none;height:34px;padding:0 13px;font:600 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;font-variant-numeric:tabular-nums;color:{{ ss.fg }};background:{{ ss.bg }};border:1px solid {{ ss.border }};border-radius:10px;cursor:pointer">{{ ss.label }}</button>
 </sc-for>
 </div>
 
 <div style="display:flex;gap:7px;margin-top:12px">
 <sc-for list="{{ group.stats }}" as="st" hint-placeholder-count="3">
-<div style="flex:1;background:#fff;border:1px solid #E8EAEF;border-radius:13px;padding:10px 11px">
-<div style="font:600 11px Assistant,sans-serif;color:#8A929E">{{ st.k }}</div>
-<div style="font:700 18px Heebo,sans-serif;margin-top:3px;color:{{ st.color }}">{{ st.v }}</div>
+<div style="flex:1;background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:13px;padding:10px 11px">
+<div style="font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ st.k }}</div>
+<div style="font:700 18px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;margin-top:3px;color:{{ st.color }}">{{ st.v }}</div>
 </div>
 </sc-for>
 </div>
 
 <div style="display:flex;flex-direction:column;gap:10px;margin-top:13px">
 <sc-for list="{{ group.rows }}" as="r" hint-placeholder-count="6">
-<div style="background:#fff;border:1px solid #E8EAEF;border-radius:15px;padding:13px 14px;box-shadow:0 1px 2px rgba(16,24,40,.04)">
+<div style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:15px;padding:13px 14px;box-shadow:0 1px 2px rgba(16,24,40,.04)">
 <div style="display:flex;align-items:center;gap:10px">
-<span style="width:34px;height:34px;flex:none;border-radius:11px;background:{{ r.bg }};color:{{ r.fg }};display:grid;place-items:center;font:700 12px Heebo,sans-serif">{{ r.initials }}</span>
-<span style="flex:1;min-width:0;font:700 15px Heebo,sans-serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ r.name }}</span>
+<span style="width:34px;height:34px;flex:none;border-radius:11px;background:{{ r.bg }};color:{{ r.fg }};display:grid;place-items:center;font:700 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ r.initials }}</span>
+<span style="flex:1;min-width:0;font:700 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ r.name }}</span>
 <sc-if value="{{ r.notified }}">
-<span style="flex:none;width:8px;height:8px;border-radius:50%;background:#7C4DEE"></span>
+<span style="flex:none;width:8px;height:8px;border-radius:50%;background:var(--color-accent-2)"></span>
 </sc-if>
 </div>
 <div style="display:flex;gap:6px;margin-top:11px">
 <sc-for list="{{ r.marks }}" as="mk" hint-placeholder-count="3">
-<button onClick="{{ mk.set }}" style="flex:1;height:44px;font:600 14px Assistant,sans-serif;color:{{ mk.fg }};background:{{ mk.bg }};border:none;border-radius:12px;cursor:pointer;white-space:nowrap">{{ mk.label }}</button>
+<button onClick="{{ mk.set }}" style="flex:1;height:44px;font:600 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ mk.fg }};background:{{ mk.bg }};border:none;border-radius:12px;cursor:pointer;white-space:nowrap">{{ mk.label }}</button>
 </sc-for>
 </div>
-<select value="{{ r.rec }}" onChange="{{ r.onRec }}" style="width:100%;height:42px;margin-top:8px;padding:0 11px;font:600 13.5px Assistant,sans-serif;color:{{ r.recFg }};background:{{ r.recBg }};border:1px solid #E4E7EC;border-radius:11px;cursor:pointer"><sc-for list="{{ recOptions }}" as="o" hint-placeholder-count="3"><option value="{{ o }}">{{ o }}</option></sc-for></select>
-<input value="{{ r.note }}" onChange="{{ r.onNote }}" placeholder="הערה פדגוגית" style="width:100%;height:42px;margin-top:8px;padding:0 12px;font:400 14px Assistant,sans-serif;background:#F7F8FA;border:1px solid #E4E7EC;border-radius:11px;outline:none" style-focus="background:#fff;border-color:#2F6FED">
+<select value="{{ r.rec }}" onChange="{{ r.onRec }}" style="width:100%;height:42px;margin-top:8px;padding:0 11px;font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ r.recFg }};background:{{ r.recBg }};border:1px solid var(--color-neutral-300);border-radius:11px;cursor:pointer"><sc-for list="{{ recOptions }}" as="o" hint-placeholder-count="3"><option value="{{ o }}">{{ o }}</option></sc-for></select>
+<input value="{{ r.note }}" onChange="{{ r.onNote }}" placeholder="הערה פדגוגית" style="width:100%;height:42px;margin-top:8px;padding:0 12px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:11px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
 </div>
 </sc-for>
 </div>
-<p style="margin-top:13px;font:400 11.5px/1.5 Assistant,sans-serif;color:#9AA3AF">סימון "מוכן לרמה הבאה" או "לא מתאים לרמה" שולח התראה למשרד מיד.</p>
+<p style="margin-top:13px;font:400 11.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500)">סימון "מוכן לרמה הבאה" או "לא מתאים לרמה" שולח התראה למשרד מיד.</p>
 </sc-if>
 
 <sc-if value="{{ isFeedback }}">
 <form onSubmit="{{ submitFeedback }}" style="display:flex;flex-direction:column;gap:12px">
-<div style="display:flex;background:#EBEDF1;border-radius:13px;padding:3px;gap:3px">
-<button type="button" onClick="{{ setFbStudent }}" style="flex:1;height:40px;border:none;border-radius:11px;cursor:pointer;font:600 13.5px Assistant,sans-serif;color:{{ fbKindFg.student }};background:{{ fbKindBg.student }}">תלמיד</button>
-<button type="button" onClick="{{ setFbMaterial }}" style="flex:1;height:40px;border:none;border-radius:11px;cursor:pointer;font:600 13.5px Assistant,sans-serif;color:{{ fbKindFg.material }};background:{{ fbKindBg.material }}">חומר</button>
-<button type="button" onClick="{{ setFbGap }}" style="flex:1;height:40px;border:none;border-radius:11px;cursor:pointer;font:600 13.5px Assistant,sans-serif;color:{{ fbKindFg.gap }};background:{{ fbKindBg.gap }}">חסר</button>
+<div style="display:flex;background:var(--color-neutral-200);border-radius:13px;padding:3px;gap:3px">
+<button type="button" onClick="{{ setFbStudent }}" style="flex:1;height:40px;border:none;border-radius:11px;cursor:pointer;font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ fbKindFg.student }};background:{{ fbKindBg.student }}">תלמיד</button>
+<button type="button" onClick="{{ setFbMaterial }}" style="flex:1;height:40px;border:none;border-radius:11px;cursor:pointer;font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ fbKindFg.material }};background:{{ fbKindBg.material }}">חומר</button>
+<button type="button" onClick="{{ setFbGap }}" style="flex:1;height:40px;border:none;border-radius:11px;cursor:pointer;font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ fbKindFg.gap }};background:{{ fbKindBg.gap }}">חסר</button>
 </div>
 <input type="hidden" name="kind" value="{{ fbKind }}">
 
 <sc-if value="{{ fbNeedsLang }}">
 <div style="display:flex;gap:9px">
-<select name="lang" style="flex:1;height:46px;padding:0 12px;font:400 15px Assistant,sans-serif;background:#fff;border:1px solid #E4E7EC;border-radius:12px;cursor:pointer"><sc-for list="{{ fbLangs }}" as="o" hint-placeholder-count="4"><option value="{{ o }}">{{ o }}</option></sc-for></select>
-<select name="level" style="flex:none;width:118px;height:46px;padding:0 12px;font:400 15px Assistant,sans-serif;background:#fff;border:1px solid #E4E7EC;border-radius:12px;cursor:pointer"><sc-for list="{{ fbLevels }}" as="o" hint-placeholder-count="3"><option value="{{ o }}">{{ o }}</option></sc-for></select>
+<select name="lang" style="flex:1;height:46px;padding:0 12px;font:400 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-paper);border:1px solid var(--color-neutral-300);border-radius:12px;cursor:pointer"><sc-for list="{{ fbLangs }}" as="o" hint-placeholder-count="4"><option value="{{ o }}">{{ o }}</option></sc-for></select>
+<select name="level" style="flex:none;width:118px;height:46px;padding:0 12px;font:400 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-paper);border:1px solid var(--color-neutral-300);border-radius:12px;cursor:pointer"><sc-for list="{{ fbLevels }}" as="o" hint-placeholder-count="3"><option value="{{ o }}">{{ o }}</option></sc-for></select>
 </div>
 </sc-if>
 
-<select name="subject" style="width:100%;height:46px;padding:0 12px;font:400 15px Assistant,sans-serif;background:#fff;border:1px solid #E4E7EC;border-radius:12px;cursor:pointer"><sc-for list="{{ fbSubjects }}" as="o" hint-placeholder-count="4"><option value="{{ o }}">{{ o }}</option></sc-for></select>
+<select name="subject" style="width:100%;height:46px;padding:0 12px;font:400 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-paper);border:1px solid var(--color-neutral-300);border-radius:12px;cursor:pointer"><sc-for list="{{ fbSubjects }}" as="o" hint-placeholder-count="4"><option value="{{ o }}">{{ o }}</option></sc-for></select>
 
 <sc-if value="{{ fbHasVerdict }}" hint-placeholder-val="{{ true }}">
-<select name="verdict" style="width:100%;height:46px;padding:0 12px;font:400 15px Assistant,sans-serif;background:#fff;border:1px solid #E4E7EC;border-radius:12px;cursor:pointer"><sc-for list="{{ fbVerdicts }}" as="o" hint-placeholder-count="3"><option value="{{ o }}">{{ o }}</option></sc-for></select>
+<select name="verdict" style="width:100%;height:46px;padding:0 12px;font:400 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-paper);border:1px solid var(--color-neutral-300);border-radius:12px;cursor:pointer"><sc-for list="{{ fbVerdicts }}" as="o" hint-placeholder-count="3"><option value="{{ o }}">{{ o }}</option></sc-for></select>
 </sc-if>
 
-<textarea name="text" placeholder="{{ fbPlaceholder }}" style="width:100%;min-height:120px;padding:12px 13px;font:400 15px/1.6 Assistant,sans-serif;background:#fff;border:1px solid #E4E7EC;border-radius:13px;outline:none;resize:vertical" style-focus="border-color:#2F6FED"></textarea>
-<button type="submit" style="height:52px;font:600 16px Assistant,sans-serif;color:#fff;background:#12161C;border:none;border-radius:13px;cursor:pointer" style-hover="background:#2F6FED">שלח</button>
+<textarea name="text" placeholder="{{ fbPlaceholder }}" style="width:100%;min-height:120px;padding:12px 13px;font:400 15px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-paper);border:1px solid var(--color-neutral-300);border-radius:13px;outline:none;resize:vertical" style-focus="border-color:var(--color-accent)"></textarea>
+<button type="submit" style="height:52px;font:600 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:13px;cursor:pointer" style-hover="background:var(--color-accent)">שלח</button>
 </form>
 
 <h5 style="font-size:13.5px;margin-top:24px">מה שלחתי</h5>
 <sc-if value="{{ noFeedback }}">
-<p style="margin-top:9px;font:400 13.5px Assistant,sans-serif;color:#8A929E">עוד לא שלחת פידבק.</p>
+<p style="margin-top:9px;font:400 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">עוד לא שלחת פידבק.</p>
 </sc-if>
 <div style="display:flex;flex-direction:column;gap:9px;margin-top:11px">
 <sc-for list="{{ fbRows }}" as="fb" hint-placeholder-count="2">
-<div style="background:#fff;border:1px solid #E8EAEF;border-radius:14px;padding:12px 13px">
+<div style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:14px;padding:12px 13px">
 <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
-<span style="display:inline-flex;align-items:center;height:22px;padding:0 9px;border-radius:999px;font:600 11.5px Assistant,sans-serif;background:{{ fb.kindBg }};color:{{ fb.kindFg }};white-space:nowrap">{{ fb.kind }}</span>
-<span style="font:600 14px Assistant,sans-serif">{{ fb.subject }}</span>
-<span style="margin-inline-start:auto;font:400 11.5px Assistant,sans-serif;color:#9AA3AF">{{ fb.when }}</span>
+<span style="display:inline-flex;align-items:center;height:22px;padding:0 9px;border-radius:999px;font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:{{ fb.kindBg }};color:{{ fb.kindFg }};white-space:nowrap">{{ fb.kind }}</span>
+<span style="font:600 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ fb.subject }}</span>
+<span style="margin-inline-start:auto;font:400 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500)">{{ fb.when }}</span>
 </div>
-<p style="margin-top:7px;font:400 13.5px/1.6 Assistant,sans-serif;color:#28303A">{{ fb.text }}</p>
+<p style="margin-top:7px;font:400 13.5px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-800)">{{ fb.text }}</p>
 </div>
 </sc-for>
 </div>
@@ -2445,88 +2474,88 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
 
 </main>
 
-<nav style="flex:none;background:#12161C;padding:8px 10px 14px;display:grid;grid-template-columns:repeat(4,1fr);gap:4px">
+<nav style="flex:none;background:var(--color-neutral-900);padding:8px 10px 14px;display:grid;grid-template-columns:repeat(4,1fr);gap:4px">
 <button onClick="{{ go.today }}" style="height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:{{ tabBg.today }};border:none;border-radius:13px;cursor:pointer;color:{{ tabFg.today }}">
 <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v14H4z"/><path d="M4 10h16M9 4v3M15 4v3"/></svg>
-<span style="font:600 11px Assistant,sans-serif">היום</span>
+<span style="font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">היום</span>
 </button>
 <button onClick="{{ go.students }}" style="height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:{{ tabBg.students }};border:none;border-radius:13px;cursor:pointer;color:{{ tabFg.students }}">
 <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 19c0-3.1 2.9-5 6.5-5s6.5 1.9 6.5 5"/></svg>
-<span style="font:600 11px Assistant,sans-serif">תלמידים</span>
+<span style="font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">תלמידים</span>
 </button>
 <button onClick="{{ go.groups }}" style="height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:{{ tabBg.groups }};border:none;border-radius:13px;cursor:pointer;color:{{ tabFg.groups }}">
 <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="2.6"/><circle cx="16" cy="8" r="2.6"/><path d="M3 18c0-2.6 2.2-4.2 5-4.2s5 1.6 5 4.2"/><path d="M13.5 18c0-2.6 1.6-4.2 4-4.2s3.5 1.6 3.5 4.2"/></svg>
-<span style="font:600 11px Assistant,sans-serif">קבוצות</span>
+<span style="font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">קבוצות</span>
 </button>
 <button onClick="{{ go.feedback }}" style="height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:{{ tabBg.feedback }};border:none;border-radius:13px;cursor:pointer;color:{{ tabFg.feedback }}">
 <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4H4v12h4v4l4-4h8z"/><path d="M8 10h8M8 13h5"/></svg>
-<span style="font:600 11px Assistant,sans-serif">פידבק</span>
+<span style="font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">פידבק</span>
 </button>
 </nav>
 </sc-if>
 
 <sc-if value="{{ showStudent }}">
 <div style="position:absolute;inset:0;z-index:30;background:rgba(15,19,24,.45);display:flex;align-items:flex-end">
-<div style="width:100%;max-height:88%;overflow-y:auto;background:#F4F5F8;border-radius:22px 22px 0 0;animation:sheet .24s ease both">
-<div style="position:sticky;top:0;background:#fff;border-radius:22px 22px 0 0;padding:16px 18px 14px;border-bottom:1px solid #EEF0F4">
+<div style="width:100%;max-height:88%;overflow-y:auto;background:var(--color-bg);border-radius:22px 22px 0 0;animation:sheet .24s ease both">
+<div style="position:sticky;top:0;background:var(--color-paper);border-radius:22px 22px 0 0;padding:16px 18px 14px;border-bottom:1px solid var(--color-neutral-200)">
 <div style="display:flex;align-items:flex-start;gap:12px">
-<span style="width:44px;height:44px;flex:none;border-radius:14px;background:{{ sel.bg }};color:{{ sel.fg }};display:grid;place-items:center;font:700 14px Heebo,sans-serif">{{ sel.initials }}</span>
+<span style="width:44px;height:44px;flex:none;border-radius:14px;background:{{ sel.bg }};color:{{ sel.fg }};display:grid;place-items:center;font:700 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ sel.initials }}</span>
 <div style="flex:1;min-width:0">
 <h2 style="font-size:20px;line-height:1.2">{{ sel.name }}</h2>
-<p style="margin-top:4px;font:400 13px Assistant,sans-serif;color:#8A929E">{{ sel.sub }}</p>
+<p style="margin-top:4px;font:400 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ sel.sub }}</p>
 </div>
-<button onClick="{{ closeSheet }}" style="width:32px;height:32px;flex:none;font:400 17px Assistant,sans-serif;color:#5C6672;background:#F1F3F6;border:none;border-radius:10px;cursor:pointer" style-hover="background:#EBEDF1;color:#12161C">✕</button>
+<button onClick="{{ closeSheet }}" style="width:32px;height:32px;flex:none;font:400 17px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);background:var(--color-neutral-200);border:none;border-radius:10px;cursor:pointer" style-hover="background:var(--color-neutral-200);color:var(--color-text)">✕</button>
 </div>
 </div>
 
 <div style="padding:15px 16px 24px;display:flex;flex-direction:column;gap:12px">
-<div style="background:#fff;border:1px solid #E8EAEF;border-radius:16px;padding:15px 16px">
+<div style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;padding:15px 16px">
 <div style="display:flex;align-items:baseline;justify-content:space-between">
 <h5 style="font-size:13.5px">מאזן שיעורים</h5>
-<span style="font:700 17px Heebo,sans-serif;color:{{ sel.remColor }}">{{ sel.remLine }}</span>
+<span style="font:700 17px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ sel.remColor }}">{{ sel.remLine }}</span>
 </div>
-<div style="height:7px;border-radius:5px;background:#EEF0F4;overflow:hidden;margin-top:11px"><div style="height:7px;border-radius:5px;background:{{ sel.barColor }};width:{{ sel.barWidth }}"></div></div>
-<div style="display:flex;gap:16px;margin-top:11px;font:400 13px Assistant,sans-serif;color:#5C6672">
-<span>התקיימו <strong style="font-weight:700;color:#12161C">{{ sel.present }}</strong></span>
-<span>בוטלו <strong style="font-weight:700;color:#12161C">{{ sel.cancelled }}</strong></span>
+<div style="height:7px;border-radius:5px;background:var(--color-neutral-200);overflow:hidden;margin-top:11px"><div style="height:7px;border-radius:5px;background:{{ sel.barColor }};width:{{ sel.barWidth }}"></div></div>
+<div style="display:flex;gap:16px;margin-top:11px;font:400 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">
+<span>התקיימו <strong style="font-weight:700;color:var(--color-text)">{{ sel.present }}</strong></span>
+<span>בוטלו <strong style="font-weight:700;color:var(--color-text)">{{ sel.cancelled }}</strong></span>
 <span>נעדר <strong style="font-weight:700;color:{{ sel.missedColor }}">{{ sel.missed }}</strong></span>
 </div>
 <sc-if value="{{ sel.lowBalance }}">
-<div style="display:flex;align-items:center;gap:9px;margin-top:12px;background:#FDEEEC;border-radius:11px;padding:10px 12px;font:500 13px Assistant,sans-serif;color:#9E2B22"><span style="width:7px;height:7px;border-radius:50%;background:#D9463F;flex:none"></span>{{ sel.lowLine }}</div>
+<div style="display:flex;align-items:center;gap:9px;margin-top:12px;background:#FDEEEC;border-radius:11px;padding:10px 12px;font:500 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-critical)"><span style="width:7px;height:7px;border-radius:50%;background:var(--color-critical-mid);flex:none"></span>{{ sel.lowLine }}</div>
 </sc-if>
 </div>
 
 <div style="display:flex;gap:8px">
-<button onClick="{{ openLesson }}" style="flex:1;height:50px;font:600 15px Assistant,sans-serif;color:#fff;background:#12161C;border:none;border-radius:13px;cursor:pointer" style-hover="background:#2F6FED">רשום שיעור</button>
-<a href="{{ sel.nbUrl }}" target="_blank" rel="noopener" style="flex:1;height:50px;display:inline-flex;align-items:center;justify-content:center;font:600 15px Assistant,sans-serif;color:#28303A;background:#fff;border:1px solid #DFE3EA;border-radius:13px" style-hover="background:#F7F8FA;color:#12161C">מחברת ↗</a>
+<button onClick="{{ openLesson }}" style="flex:1;height:50px;font:600 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:13px;cursor:pointer" style-hover="background:var(--color-accent)">רשום שיעור</button>
+<a href="{{ sel.nbUrl }}" target="_blank" rel="noopener" style="flex:1;height:50px;display:inline-flex;align-items:center;justify-content:center;font:600 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-800);background:var(--color-paper);border:1px solid var(--color-neutral-300);border-radius:13px" style-hover="background:var(--color-neutral-100);color:var(--color-text)">מחברת ↗</a>
 </div>
 
-<div style="background:#fff;border:1px solid #E8EAEF;border-radius:16px;padding:15px 16px">
+<div style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;padding:15px 16px">
 <h5 style="font-size:13.5px">מה נלמד</h5>
-<p style="margin-top:8px;font:400 14px/1.6 Assistant,sans-serif;color:#28303A">{{ sel.notes }}</p>
+<p style="margin-top:8px;font:400 14px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-800)">{{ sel.notes }}</p>
 <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:11px">
-<sc-for list="{{ sel.covered }}" as="c" hint-placeholder-count="3"><span style="display:inline-flex;align-items:center;height:25px;padding:0 10px;border-radius:999px;font:500 12.5px Assistant,sans-serif;background:#F1F3F6;color:#39424F;white-space:nowrap">{{ c }}</span></sc-for>
+<sc-for list="{{ sel.covered }}" as="c" hint-placeholder-count="3"><span style="display:inline-flex;align-items:center;height:25px;padding:0 10px;border-radius:999px;font:500 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-200);color:var(--color-neutral-800);white-space:nowrap">{{ c }}</span></sc-for>
 </div>
 </div>
 
-<div style="background:#fff;border:1px solid #E8EAEF;border-radius:16px;padding:15px 16px">
+<div style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;padding:15px 16px">
 <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
 <h5 style="font-size:13.5px">יומן השיעורים</h5>
-<span style="font:400 12px Assistant,sans-serif;color:#8A929E">{{ sel.logCount }}</span>
+<span style="font:400 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ sel.logCount }}</span>
 </div>
 <sc-if value="{{ sel.noLog }}">
-<p style="margin-top:9px;font:400 13.5px/1.55 Assistant,sans-serif;color:#8A929E">עוד לא תועד שיעור.</p>
+<p style="margin-top:9px;font:400 13.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">עוד לא תועד שיעור.</p>
 </sc-if>
 <div style="display:flex;flex-direction:column;gap:9px;margin-top:11px">
 <sc-for list="{{ sel.log }}" as="l" hint-placeholder-count="2">
-<div style="background:#F7F8FA;border-radius:12px;padding:11px 12px">
+<div style="background:var(--color-neutral-100);border-radius:12px;padding:11px 12px">
 <div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap">
-<span style="font:700 13.5px Heebo,sans-serif;font-variant-numeric:tabular-nums">{{ l.date }}</span>
-<span style="display:inline-flex;align-items:center;height:21px;padding:0 8px;border-radius:999px;font:600 11px Assistant,sans-serif;background:{{ l.bg }};color:{{ l.fg }};white-space:nowrap">{{ l.status }}</span>
-<button onClick="{{ l.remove }}" title="מחק" style="margin-inline-start:auto;width:26px;height:26px;font:400 13px Assistant,sans-serif;color:#9AA3AF;background:transparent;border:none;border-radius:7px;cursor:pointer" style-hover="background:#FDECEA;color:#A8281E">✕</button>
+<span style="font:700 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;font-variant-numeric:tabular-nums">{{ l.date }}</span>
+<span style="display:inline-flex;align-items:center;height:21px;padding:0 8px;border-radius:999px;font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:{{ l.bg }};color:{{ l.fg }};white-space:nowrap">{{ l.status }}</span>
+<button onClick="{{ l.remove }}" title="מחק" style="margin-inline-start:auto;width:26px;height:26px;font:400 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);background:transparent;border:none;border-radius:7px;cursor:pointer" style-hover="background:var(--color-critical-tint);color:var(--color-critical)">✕</button>
 </div>
-<sc-if value="{{ l.hasCovered }}"><p style="margin-top:6px;font:400 13px/1.55 Assistant,sans-serif;color:#28303A">{{ l.covered }}</p></sc-if>
-<sc-if value="{{ l.hasHw }}"><p style="margin-top:3px;font:400 12.5px Assistant,sans-serif;color:#8A929E">שיעורי בית: {{ l.hw }}</p></sc-if>
+<sc-if value="{{ l.hasCovered }}"><p style="margin-top:6px;font:400 13px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-800)">{{ l.covered }}</p></sc-if>
+<sc-if value="{{ l.hasHw }}"><p style="margin-top:3px;font:400 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">שיעורי בית: {{ l.hw }}</p></sc-if>
 </div>
 </sc-for>
 </div>
@@ -2538,38 +2567,38 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
 
 <sc-if value="{{ showLesson }}">
 <div style="position:absolute;inset:0;z-index:40;background:rgba(15,19,24,.5);display:flex;align-items:flex-end">
-<form onSubmit="{{ submitLesson }}" style="width:100%;max-height:92%;overflow-y:auto;background:#fff;border-radius:22px 22px 0 0;padding:20px 18px 26px;animation:sheet .24s ease both;display:flex;flex-direction:column;gap:12px">
+<form onSubmit="{{ submitLesson }}" style="width:100%;max-height:92%;overflow-y:auto;background:var(--color-paper);border-radius:22px 22px 0 0;padding:20px 18px 26px;animation:sheet .24s ease both;display:flex;flex-direction:column;gap:12px">
 <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px">
 <div>
 <h3 style="font-size:19px">רישום שיעור</h3>
-<p style="margin-top:4px;font:400 13.5px Assistant,sans-serif;color:#8A929E">{{ lessonFor }}</p>
+<p style="margin-top:4px;font:400 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ lessonFor }}</p>
 </div>
-<button type="button" onClick="{{ closeLesson }}" style="width:32px;height:32px;flex:none;font:400 17px Assistant,sans-serif;color:#5C6672;background:#F1F3F6;border:none;border-radius:10px;cursor:pointer" style-hover="background:#EBEDF1;color:#12161C">✕</button>
+<button type="button" onClick="{{ closeLesson }}" style="width:32px;height:32px;flex:none;font:400 17px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);background:var(--color-neutral-200);border:none;border-radius:10px;cursor:pointer" style-hover="background:var(--color-neutral-200);color:var(--color-text)">✕</button>
 </div>
 
-<input name="date" type="date" style="width:100%;height:48px;padding:0 13px;font:400 15px Assistant,sans-serif;background:#F7F8FA;border:1px solid #E4E7EC;border-radius:12px;outline:none" style-focus="background:#fff;border-color:#2F6FED">
+<input name="date" type="date" style="width:100%;height:48px;padding:0 13px;font:400 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:12px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
 <div style="display:flex;flex-direction:column;gap:7px">
 <sc-for list="{{ lessonStateOpts }}" as="o" hint-placeholder-count="3">
 <button type="button" onClick="{{ o.pick }}" style="display:flex;align-items:center;gap:11px;text-align:right;height:50px;padding:0 14px;background:{{ o.bg }};border:1px solid {{ o.border }};border-radius:13px;cursor:pointer">
 <span style="width:20px;height:20px;flex:none;border-radius:50%;border:2px solid {{ o.dotBorder }};background:{{ o.dot }}"></span>
-<span style="flex:1;font:600 14.5px Assistant,sans-serif;color:{{ o.fg }}">{{ o.label }}</span>
-<span style="font:400 11.5px Assistant,sans-serif;color:#8A929E;white-space:nowrap">{{ o.burn }}</span>
+<span style="flex:1;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ o.fg }}">{{ o.label }}</span>
+<span style="font:400 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600);white-space:nowrap">{{ o.burn }}</span>
 </button>
 </sc-for>
 </div>
 <input type="hidden" name="status" value="{{ lessonState }}">
 
-<textarea name="covered" placeholder="מה כוסה בשיעור" style="width:100%;min-height:88px;padding:11px 13px;font:400 15px/1.6 Assistant,sans-serif;background:#F7F8FA;border:1px solid #E4E7EC;border-radius:12px;outline:none;resize:vertical" style-focus="background:#fff;border-color:#2F6FED"></textarea>
-<input name="stopped" placeholder="איפה נעצרנו" style="width:100%;height:48px;padding:0 13px;font:400 15px Assistant,sans-serif;background:#F7F8FA;border:1px solid #E4E7EC;border-radius:12px;outline:none" style-focus="background:#fff;border-color:#2F6FED">
-<input name="hw" placeholder="שיעורי בית" style="width:100%;height:48px;padding:0 13px;font:400 15px Assistant,sans-serif;background:#F7F8FA;border:1px solid #E4E7EC;border-radius:12px;outline:none" style-focus="background:#fff;border-color:#2F6FED">
-<button type="submit" style="height:52px;font:600 16px Assistant,sans-serif;color:#fff;background:#12161C;border:none;border-radius:13px;cursor:pointer" style-hover="background:#2F6FED">שמור שיעור</button>
-<p style="font:400 11.5px/1.5 Assistant,sans-serif;color:#9AA3AF">שיעור שהתקיים או היעדרות ללא ביטול מנכים שיעור מהחבילה. בשני שיעורים או פחות יוצאת התראה למשרד.</p>
+<textarea name="covered" placeholder="מה כוסה בשיעור" style="width:100%;min-height:88px;padding:11px 13px;font:400 15px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:12px;outline:none;resize:vertical" style-focus="background:var(--color-paper);border-color:var(--color-accent)"></textarea>
+<input name="stopped" placeholder="איפה נעצרנו" style="width:100%;height:48px;padding:0 13px;font:400 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:12px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+<input name="hw" placeholder="שיעורי בית" style="width:100%;height:48px;padding:0 13px;font:400 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:12px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+<button type="submit" style="height:52px;font:600 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:13px;cursor:pointer" style-hover="background:var(--color-accent)">שמור שיעור</button>
+<p style="font:400 11.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500)">שיעור שהתקיים או היעדרות ללא ביטול מנכים שיעור מהחבילה. בשני שיעורים או פחות יוצאת התראה למשרד.</p>
 </form>
 </div>
 </sc-if>
 
 <sc-if value="{{ hasToast }}">
-<div style="position:absolute;bottom:88px;right:16px;left:16px;z-index:50;background:#12161C;color:#fff;border-radius:13px;padding:13px 15px;font:500 13.5px/1.5 Assistant,sans-serif;box-shadow:0 12px 30px -12px rgba(15,19,24,.6);animation:rise .2s ease both">{{ toast }}</div>
+<div style="position:absolute;bottom:88px;right:16px;left:16px;z-index:50;background:var(--color-neutral-900);color:#fff;border-radius:13px;padding:13px 15px;font:500 13.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;box-shadow:0 12px 30px -12px rgba(15,19,24,.6);animation:rise .2s ease both">{{ toast }}</div>
 </sc-if>
 
 </div>
@@ -2606,8 +2635,8 @@ class Component extends DCLogic {
   ];
 
   LANG_COLORS = {
-    'אנגלית': '#2F6FED', 'ספרדית': '#E08A00', 'איטלקית': '#17A34A', 'צרפתית': '#7C4DEE',
-    'גרמנית': '#DB4B3F', 'ערבית': '#0EA5A5', 'רוסית': '#DC3A72', 'יפנית': '#C2359C',
+    'אנגלית': '#1f6f93', 'ספרדית': '#b4870c', 'איטלקית': '#2e7d5b', 'צרפתית': '#6b4a9e',
+    'גרמנית': '#a5231f', 'ערבית': '#2b7d7d', 'רוסית': '#aa0b56', 'יפנית': '#8e2b7e',
     'יוונית': '#0F8FBF', 'פורטוגזית': '#2E9E6B'
   };
 
@@ -2863,10 +2892,10 @@ class Component extends DCLogic {
         name: cur.name, initials: this.initials(cur.name),
         bg: this.langTint(cur.lang), fg: this.langInk(cur.lang),
         sub: cur.lang + ' ' + cur.level + ' · ' + cur.ctype + ' · ' + cur.mode,
-        remLine: rem + ' מתוך ' + cur.purchased, remColor: rem <= 3 ? '#A8281E' : '#12161C',
-        barWidth: pct + '%', barColor: rem <= 3 ? '#D9463F' : '#2F6FED',
+        remLine: rem + ' מתוך ' + cur.purchased, remColor: rem <= 3 ? '#a5231f' : '#201e1d',
+        barWidth: pct + '%', barColor: rem <= 3 ? '#c4453f' : '#0088b0',
         present: cur.present, cancelled: cur.cancelled, missed: cur.missed,
-        missedColor: cur.missed > 0 ? '#A8281E' : '#12161C',
+        missedColor: cur.missed > 0 ? '#a5231f' : '#201e1d',
         lowBalance: rem <= 3,
         lowLine: rem === 0 ? 'החבילה נגמרה — אין שיעורים נותרים' : 'נותרו ' + rem + ' שיעורים — צריך לחדש',
         notes: cur.notes, covered: cur.covered || [],
@@ -2877,8 +2906,8 @@ class Component extends DCLogic {
           return {
             date: l.date, status: l.status, covered: l.covered, hw: l.hw,
             hasCovered: !!l.covered, hasHw: !!l.hw,
-            bg: held ? '#E6F5EE' : noShow ? '#FDECEA' : '#FCF2DC',
-            fg: held ? '#0B6B41' : noShow ? '#A8281E' : '#8A5300',
+            bg: held ? '#e4efe9' : noShow ? '#f7e7e5' : '#fbf1d4',
+            fg: held ? '#1a5740' : noShow ? '#a5231f' : '#7a5a06',
             remove: () => this.deleteLesson(cur.id, l.id)
           };
         }),
@@ -2899,14 +2928,14 @@ class Component extends DCLogic {
       const absent = gsel.members.filter(m => this.attOf(gsel.id, date, m) === 'נעדר').length;
       group = {
         sessions: gsel.sessions.map(d => ({
-          label: d, bg: d === date ? '#12161C' : '#ffffff', fg: d === date ? '#ffffff' : '#5C6672',
-          border: d === date ? '#12161C' : '#E4E7EC',
+          label: d, bg: d === date ? '#201e1d' : '#ffffff', fg: d === date ? '#ffffff' : '#605d5d',
+          border: d === date ? '#201e1d' : '#d7d3d3',
           pick: () => this.setState({ grpSel: gsel.id, grpSession: d })
         })),
         stats: [
-          { k: 'נוכחים', v: String(present), color: '#0B6B41' },
-          { k: 'איחורים', v: String(late), color: '#8A5300' },
-          { k: 'נעדרים', v: String(absent), color: '#A8281E' }
+          { k: 'נוכחים', v: String(present), color: '#1a5740' },
+          { k: 'איחורים', v: String(late), color: '#7a5a06' },
+          { k: 'נעדרים', v: String(absent), color: '#a5231f' }
         ],
         rows: gsel.members.map(m => {
           const curAtt = this.attOf(gsel.id, date, m);
@@ -2917,13 +2946,13 @@ class Component extends DCLogic {
             notified: !!this.notifs().find(x => x.gid === gsel.id && x.student === m && x.status === 'חדש'),
             marks: this.ATT.map(a => ({
               label: a,
-              bg: curAtt === a ? (a === 'נוכח' ? '#0F9D6E' : a === 'איחור' ? '#E8A317' : '#D9463F') : '#F1F3F6',
-              fg: curAtt === a ? '#ffffff' : '#5C6672',
+              bg: curAtt === a ? (a === 'נוכח' ? '#2e7d5b' : a === 'איחור' ? '#b4870c' : '#c4453f') : '#eae7e7',
+              fg: curAtt === a ? '#ffffff' : '#605d5d',
               set: () => this.setAtt(gsel.id, date, m, a)
             })),
             rec: n.rec,
-            recBg: n.rec === 'מוכן לרמה הבאה' ? '#E6F5EE' : n.rec === 'לא מתאים לרמה' ? '#FDECEA' : '#F7F8FA',
-            recFg: n.rec === 'מוכן לרמה הבאה' ? '#0B6B41' : n.rec === 'לא מתאים לרמה' ? '#A8281E' : '#39424F',
+            recBg: n.rec === 'מוכן לרמה הבאה' ? '#e4efe9' : n.rec === 'לא מתאים לרמה' ? '#f7e7e5' : '#f8f4f4',
+            recFg: n.rec === 'מוכן לרמה הבאה' ? '#1a5740' : n.rec === 'לא מתאים לרמה' ? '#a5231f' : '#444141',
             onRec: (e) => this.setNote(gsel.id, m, { rec: e.target.value }),
             note: n.text,
             onNote: (e) => this.setNote(gsel.id, m, { text: e.target.value })
@@ -2948,13 +2977,13 @@ class Component extends DCLogic {
       isToday: s.view === 'today', isStudents: s.view === 'students',
       isGroups: s.view === 'groups', isFeedback: s.view === 'feedback',
       go: { today: this.view('today'), students: this.view('students'), groups: this.view('groups'), feedback: this.view('feedback') },
-      tabBg: tabs.reduce((o, k) => { o[k] = s.view === k ? '#232A33' : 'transparent'; return o; }, {}),
-      tabFg: tabs.reduce((o, k) => { o[k] = s.view === k ? '#ffffff' : '#7C8797'; return o; }, {}),
+      tabBg: tabs.reduce((o, k) => { o[k] = s.view === k ? '#2d2b2b' : 'transparent'; return o; }, {}),
+      tabFg: tabs.reduce((o, k) => { o[k] = s.view === k ? '#ffffff' : '#7d7979'; return o; }, {}),
 
       dayChips: this.DAYS.map((d, i) => ({
         short: this.SHORT[i], count: String(dayCount(i)),
-        bg: i === s.day ? '#12161C' : '#ffffff', fg: i === s.day ? '#ffffff' : '#5C6672',
-        border: i === s.day ? '#12161C' : '#E4E7EC',
+        bg: i === s.day ? '#201e1d' : '#ffffff', fg: i === s.day ? '#ffffff' : '#605d5d',
+        border: i === s.day ? '#201e1d' : '#d7d3d3',
         pick: () => this.setState({ day: i })
       })),
       lessons: daySlots.map(x => {
@@ -2963,7 +2992,7 @@ class Component extends DCLogic {
         return {
           h: x.h, dur: '60 דק׳', label: x.label, meta: x.meta,
           color: this.langColor(x.lang), bg: this.langTint(x.lang), fg: this.langInk(x.lang),
-          timeColor: s.day === this.TODAY_IDX ? '#2F6FED' : '#12161C',
+          timeColor: s.day === this.TODAY_IDX ? '#0088b0' : '#201e1d',
           hasLink: !!link, link,
           nbUrl: this.driveUrl(x.gid ? (this.SEED_GROUPS.find(g => g.id === x.gid) || {}).nb || x.label : x.label + ' מחברת'),
           actLabel: x.gid ? 'נוכחות' : 'רשום',
@@ -2982,7 +3011,7 @@ class Component extends DCLogic {
           bg: this.langTint(x.lang), fg: this.langInk(x.lang),
           sub: x.lang + ' ' + x.level + ' · ' + x.ctype,
           rem: rem + ' נותרו',
-          remBg: rem <= 3 ? '#FDECEA' : '#F1F3F6', remFg: rem <= 3 ? '#A8281E' : '#39424F',
+          remBg: rem <= 3 ? '#f7e7e5' : '#eae7e7', remFg: rem <= 3 ? '#a5231f' : '#444141',
           open: () => this.setState({ sel: x.id, sheet: 'student' })
         };
       }),
@@ -2999,9 +3028,9 @@ class Component extends DCLogic {
         const on = o === s.lessonState;
         return {
           label: o, burn: o === 'בוטל בהתראה מוקדמת' ? 'לא מנוכה' : 'מנוכה מהחבילה',
-          bg: on ? '#F2F6FF' : '#F7F8FA', border: on ? '#2F6FED' : '#E4E7EC',
-          fg: on ? '#1B4CC4' : '#28303A',
-          dot: on ? '#2F6FED' : 'transparent', dotBorder: on ? '#2F6FED' : '#C9CFD9',
+          bg: on ? '#e9f8ff' : '#f8f4f4', border: on ? '#0088b0' : '#d7d3d3',
+          fg: on ? '#006786' : '#444141',
+          dot: on ? '#0088b0' : 'transparent', dotBorder: on ? '#0088b0' : '#bab6b6',
           pick: () => this.setState({ lessonState: o })
         };
       }),
@@ -3011,8 +3040,8 @@ class Component extends DCLogic {
         const on = gsel && g.id === gsel.id;
         return {
           name: g.name,
-          bg: on ? this.langTint(g.lang) : '#ffffff', fg: on ? this.langInk(g.lang) : '#5C6672',
-          border: on ? this.langColor(g.lang) : '#E4E7EC',
+          bg: on ? this.langTint(g.lang) : '#ffffff', fg: on ? this.langInk(g.lang) : '#605d5d',
+          border: on ? this.langColor(g.lang) : '#d7d3d3',
           pick: () => this.setState({ grpSel: g.id, grpSession: null })
         };
       }),
@@ -3029,9 +3058,9 @@ class Component extends DCLogic {
         gap: fbIsGap ? '#ffffff' : 'transparent'
       },
       fbKindFg: {
-        student: fbIsStudent ? '#12161C' : '#5C6672',
-        material: s.fbKind === 'חומר' ? '#12161C' : '#5C6672',
-        gap: fbIsGap ? '#12161C' : '#5C6672'
+        student: fbIsStudent ? '#201e1d' : '#605d5d',
+        material: s.fbKind === 'חומר' ? '#201e1d' : '#605d5d',
+        gap: fbIsGap ? '#201e1d' : '#605d5d'
       },
       fbLangs: Array.from(new Set(mine.map(x => x.lang))),
       fbLevels: this.CYCLE_LEVELS,
@@ -3043,8 +3072,8 @@ class Component extends DCLogic {
       submitFeedback: this.submitFeedback,
       fbRows: this.feedback().filter(x => x.by === me).map(x => ({
         kind: x.kind, subject: x.subject, text: x.text, when: x.when,
-        kindBg: x.kind === 'תלמיד' ? '#E7EEFD' : x.kind === 'בקשת חומר' ? '#FCF2DC' : '#F4E8FB',
-        kindFg: x.kind === 'תלמיד' ? '#1B4CC4' : x.kind === 'בקשת חומר' ? '#8A5300' : '#7A2FA8'
+        kindBg: x.kind === 'תלמיד' ? '#e9f8ff' : x.kind === 'בקשת חומר' ? '#fbf1d4' : '#fff1f4',
+        kindFg: x.kind === 'תלמיד' ? '#006786' : x.kind === 'בקשת חומר' ? '#7a5a06' : '#aa0b56'
       })),
       noFeedback: this.feedback().filter(x => x.by === me).length === 0
     };

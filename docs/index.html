@@ -6,120 +6,139 @@
 <title>חדר המורים · New School</title>
 <meta name="description" content="לוח בקרה למורה — תלמידים, מחברות דיגיטליות, שיעורים וחומרי לימוד.">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&family=Heebo:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
 <style>
-/* Tokens taken from the dashboard itself so the site and the app read as one product. */
+/* Broadsheet — tokens from _ds/broadsheet-e115fdd5.../styles.css.
+   Single theme on purpose: this system is newsprint and shows no dark surfaces,
+   so it commits to paper rather than inverting into a dark mode it has no
+   register for. Latin sets in Source Serif 4; Hebrew falls through to Frank Ruhl
+   Libre, since Source Serif 4 carries no Hebrew glyphs. */
 :root{
-  --ink:#12161C; --muted:#5C6672; --faint:#8A929E;
-  --ground:#F4F5F8; --surface:#ffffff; --hairline:#E4E7EC; --sunken:#F1F3F6;
-  --accent:#2F6FED; --accent-ink:#ffffff; --rail:#12161C;
-  --shadow:0 1px 2px rgba(18,22,28,.05), 0 8px 24px rgba(18,22,28,.06);
-}
-@media (prefers-color-scheme:dark){
-  :root{
-    --ink:#EEF1F5; --muted:#A2ABB8; --faint:#7C8595;
-    --ground:#12161C; --surface:#1A1F27; --hairline:#2B323C; --sunken:#212832;
-    --accent:#6E9BFF; --accent-ink:#0E1218; --rail:#000000;
-    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
-  }
+  --color-bg:#f3f2f2; --color-surface:#eae9e9; --color-text:#201e1d;
+  --color-accent:#0088b0; --color-accent-2:#d6006c;
+  --color-divider:color-mix(in srgb, #201e1d 16%, transparent);
+  --color-neutral-500:#9b9797; --color-neutral-600:#7d7979; --color-neutral-700:#605d5d;
+  --color-accent-700:#006786;
+  --font-serif:"Source Serif 4","Frank Ruhl Libre",Georgia,serif;
+  --space-2:10px; --space-4:20px; --space-6:30px; --space-8:40px;
 }
 *{box-sizing:border-box}
 body{
-  margin:0; background:var(--ground); color:var(--ink);
-  font-family:Assistant,"Segoe UI",system-ui,sans-serif;
-  -webkit-font-smoothing:antialiased; line-height:1.6;
+  margin:0; background:var(--color-bg); color:var(--color-text);
+  font-family:var(--font-serif); font-size:1.0625rem; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3{font-family:Heebo,Assistant,sans-serif; margin:0; font-weight:800; letter-spacing:-.022em; text-wrap:balance}
-a{color:inherit}
-.wrap{max-width:56rem; margin:0 auto; padding:clamp(2rem,6vw,4.5rem) clamp(1.1rem,4vw,2rem) 4rem}
+.sheet{max-width:52rem; margin:0 auto; padding:clamp(2rem,6vw,4rem) clamp(1.15rem,5vw,2.5rem) 5rem}
 
-/* Masthead — the same mark the app shows in its sidebar. */
-.mast{display:flex; align-items:center; gap:.75rem; margin-bottom:clamp(2.2rem,6vw,3.5rem)}
-.mark{
-  width:2.75rem; height:2.75rem; border-radius:.75rem; background:var(--rail); color:#fff;
-  display:grid; place-items:center; font-family:Heebo,sans-serif; font-weight:800; font-size:1rem; flex:none;
+/* Front-page furniture: the thick–thin rule pair around the dateline rail is the
+   one place this system prints rules. Everything else is separated by space. */
+.masthead{display:flex; align-items:baseline; justify-content:space-between; gap:var(--space-4); flex-wrap:wrap}
+.masthead .title{font-weight:800; font-size:clamp(1.35rem,3.4vw,1.7rem); letter-spacing:-.01em}
+.masthead .org{color:var(--color-neutral-600); font-size:.95rem}
+.rule-thick{border:0; border-top:3px solid var(--color-text); margin:var(--space-2) 0 0}
+.rule-thin{border:0; border-top:1px solid var(--color-text); margin:3px 0 0}
+.dateline{
+  display:flex; justify-content:space-between; gap:var(--space-4); flex-wrap:wrap;
+  padding:6px 0 0; font-size:.8rem; letter-spacing:.08em; color:var(--color-neutral-700);
 }
-.mast .name{font-family:Heebo,sans-serif; font-weight:700; font-size:1.05rem; line-height:1.25}
-.mast .sub{color:var(--faint); font-size:.85rem}
 
-h1{font-size:clamp(1.8rem,5vw,2.6rem); line-height:1.18}
-.lede{color:var(--muted); font-size:clamp(1rem,2.4vw,1.15rem); margin:.9rem 0 0; max-width:38rem}
-
-.views{display:grid; grid-template-columns:repeat(auto-fit,minmax(16rem,1fr)); gap:1rem; margin-top:clamp(2rem,5vw,3rem)}
-.view{
-  display:flex; flex-direction:column; gap:.4rem; padding:1.4rem 1.5rem;
-  background:var(--surface); border:1px solid var(--hairline); border-radius:.9rem;
-  text-decoration:none; box-shadow:var(--shadow);
-  transition:border-color .15s ease, transform .15s ease;
+h1{
+  font-weight:600; font-size:clamp(2rem,6.5vw,3.4rem); line-height:1.1;
+  letter-spacing:-.02em; margin:clamp(2.5rem,7vw,4rem) 0 0; text-wrap:balance; max-width:20ch;
 }
-.view:hover{border-color:var(--accent); transform:translateY(-2px)}
-.view:active{transform:translateY(0)}
-.view:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
-.view .kicker{font-size:.8rem; color:var(--faint); letter-spacing:.06em}
-.view .title{font-family:Heebo,sans-serif; font-weight:700; font-size:1.25rem}
-.view .desc{color:var(--muted); font-size:.95rem}
-.view .go{margin-top:.6rem; color:var(--accent); font-weight:600; font-size:.9rem}
-
-h2{font-size:1.15rem; margin:clamp(2.5rem,6vw,3.5rem) 0 .5rem}
-.note{color:var(--muted); font-size:.95rem; margin:0 0 1rem; max-width:42rem}
-
-.accounts{width:100%; border-collapse:collapse; font-size:.95rem; background:var(--surface);
-  border:1px solid var(--hairline); border-radius:.75rem; overflow:hidden}
-.accounts th{
-  text-align:right; font-family:Heebo,sans-serif; font-weight:600; font-size:.8rem; color:var(--faint);
-  padding:.7rem 1rem; background:var(--sunken); border-bottom:1px solid var(--hairline);
+.standfirst{
+  margin:var(--space-6) 0 0; max-width:44ch; font-size:clamp(1.05rem,2.2vw,1.2rem);
+  color:var(--color-neutral-700);
 }
-.accounts td{padding:.7rem 1rem; border-bottom:1px solid var(--hairline)}
-.accounts tr:last-child td{border-bottom:0}
-.accounts code{
-  font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.85rem; direction:ltr;
-  display:inline-block; background:var(--sunken); padding:.15rem .45rem; border-radius:.35rem;
-}
-.scroll{overflow-x:auto; -webkit-overflow-scrolling:touch}
+.standfirst em{font-style:italic; color:var(--color-text)}
 
-footer{margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--hairline); color:var(--faint); font-size:.85rem}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* Entries are set as type, not boxed — hierarchy from scale and space. */
+.entries{margin:clamp(2.5rem,7vw,4rem) 0 0; display:flex; flex-direction:column; gap:var(--space-8)}
+.entry{display:block; text-decoration:none; color:inherit; max-width:42ch}
+.entry .kicker{
+  display:block; font-size:.78rem; letter-spacing:.14em; color:var(--color-accent-700);
+  text-transform:uppercase;
+}
+.entry .name{
+  display:block; margin-top:6px; font-size:clamp(1.4rem,3.4vw,1.9rem); font-weight:600;
+  line-height:1.2; text-decoration:underline; text-decoration-thickness:1px;
+  text-underline-offset:6px; text-decoration-color:var(--color-divider);
+}
+.entry .blurb{display:block; margin-top:var(--space-2); color:var(--color-neutral-700); font-size:1rem}
+.entry:hover .name{color:var(--color-accent); text-decoration-color:var(--color-accent)}
+.entry:active .name{color:var(--color-accent-700)}
+.entry:focus-visible{outline:2px solid var(--color-accent); outline-offset:4px}
+
+h2{
+  font-weight:600; font-size:1.25rem; margin:clamp(3rem,8vw,4.5rem) 0 0;
+}
+.note{margin:var(--space-2) 0 0; max-width:46ch; color:var(--color-neutral-700); font-size:.98rem}
+
+.scroll{overflow-x:auto; margin-top:var(--space-6)}
+table{border-collapse:collapse; width:100%; font-size:.98rem}
+caption{text-align:right; font-size:.78rem; letter-spacing:.12em; color:var(--color-neutral-600);
+        padding-bottom:6px; text-transform:uppercase}
+th{
+  text-align:right; font-weight:600; font-size:.82rem; letter-spacing:.06em;
+  color:var(--color-neutral-700); padding:0 var(--space-4) 8px 0;
+  border-bottom:1px solid var(--color-text);
+}
+th:last-child,td:last-child{padding-left:0}
+td{padding:10px var(--space-4) 10px 0; border-bottom:1px solid var(--color-divider);
+   font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:0}
+td code{font-family:var(--font-serif); direction:ltr; display:inline-block; color:var(--color-accent-700)}
+
+footer{margin-top:clamp(3rem,8vw,5rem); color:var(--color-neutral-600); font-size:.85rem}
+footer .mark{color:var(--color-accent-2)}
+::selection{background:color-mix(in srgb, var(--color-accent) 22%, transparent)}
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="sheet">
 
-  <header class="mast">
-    <div class="mark">NS</div>
-    <div>
-      <div class="name">חדר המורים</div>
-      <div class="sub">New School · 26 שפות</div>
+  <header>
+    <div class="masthead">
+      <div class="title">חדר המורים</div>
+      <div class="org">New School · 26 שפות</div>
+    </div>
+    <hr class="rule-thick">
+    <hr class="rule-thin">
+    <div class="dateline">
+      <span>מערכת פנימית</span>
+      <span>אב־טיפוס</span>
     </div>
   </header>
 
   <h1>המקום אחד שבו כל מה שצריך לשיעור נמצא.</h1>
-  <p class="lede">
+
+  <p class="standfirst">
     מחברות דיגיטליות, תלמידים, קבוצות וחומרי לימוד — לפי ההרשאה שלך.
-    מורה רואה את התלמידים שלה; המשרד וההנהלה הפדגוגית רואים את בית הספר.
+    <em>מורה רואה את התלמידים שלה; המשרד וההנהלה הפדגוגית רואים את בית הספר.</em>
   </p>
 
-  <div class="views">
-    <a class="view" href="dashboard.html">
+  <nav class="entries">
+    <a class="entry" href="dashboard.html">
       <span class="kicker">מחשב</span>
-      <span class="title">לוח בקרה</span>
-      <span class="desc">התצוגה המלאה — תלמידים, מחברות, יומן שבועי, בונה מערך שיעור ופידבק.</span>
-      <span class="go">כניסה ←</span>
+      <span class="name">לוח בקרה</span>
+      <span class="blurb">התצוגה המלאה — תלמידים, מחברות, יומן שבועי, בונה מערך שיעור ופידבק.</span>
     </a>
-    <a class="view" href="mobile.html">
+    <a class="entry" href="mobile.html">
       <span class="kicker">טלפון</span>
-      <span class="title">תצוגת מובייל</span>
-      <span class="desc">השיעורים של היום, נוכחות, מחברות ופידבק — בדרך לכיתה.</span>
-      <span class="go">כניסה ←</span>
+      <span class="name">תצוגת מובייל</span>
+      <span class="blurb">השיעורים של היום, נוכחות, מחברות ופידבק — בדרך לכיתה.</span>
     </a>
-  </div>
+  </nav>
 
   <h2>כניסה לדמו</h2>
   <p class="note">
-    זהו אב-טיפוס: הנתונים מוטמעים בעמוד עצמו ואין מאחוריו שרת. הסיסמאות מוצגות בכוונה,
-    כדי שאפשר יהיה להתרשם מכל התצוגות. אין כאן פרטי תלמידים אמיתיים.
+    הנתונים מוטמעים בעמוד עצמו ואין מאחוריו שרת. הסיסמאות מוצגות בכוונה, כדי שאפשר
+    יהיה להתרשם מכל התצוגות. אין כאן פרטי תלמידים אמיתיים.
   </p>
+
   <div class="scroll">
-    <table class="accounts">
+    <table>
+      <caption>חמישה תפקידים</caption>
       <thead>
         <tr><th>תפקיד</th><th>שם משתמש</th><th>סיסמה</th></tr>
       </thead>
@@ -133,7 +152,7 @@ footer{margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--hairline
     </table>
   </div>
 
-  <footer>New School · מערכת פנימית · אב-טיפוס</footer>
+  <footer>New School <span class="mark">·</span> חדר המורים</footer>
 
 </div>
 </body>

@@ -35,20 +35,30 @@ const PAGES = [
  * parser into the double-escaped state where the following `</script>` no longer
  * closes the element — the rest of the bundle then renders as visible text.
  *
- * `\x3c` is the JS escape for `<`, so the string values are unchanged. It is only
- * valid inside a string or template literal, so the escaped source is parsed
- * before being emitted — if a future bundle carries `<script` outside a string,
- * the build fails here instead of shipping a broken page.
+ * The dc markers matter just as much. support.js mentions `<x-dc`, `</x-dc>` and
+ * `<sc-raw-*>` in its own regexes, strings and comments. Inlined verbatim, those
+ * land in the document text — and the runtime re-fetches the page over HTTP and
+ * re-parses it, so it finds the stray markers and tries to create an element
+ * named `sc-raw-*`, which throws and renders nothing. It only shows up when the
+ * page is served over http(s): under file:// the re-fetch fails and the runtime
+ * falls back to the live DOM, so the bug hides from local testing.
+ *
+ * `\x3c` is the JS escape for `<`, so every value stays identical — in a string,
+ * in a regex literal, or in a comment. Only these specific HTML-looking tokens
+ * are escaped; escaping every `<` would corrupt less-than comparisons. The
+ * escaped source is parsed before being emitted, so a token appearing somewhere
+ * that breaks fails the build instead of shipping a broken page.
  */
+const HTML_TOKENS = /<(\/?script|\/?x-dc|\/?sc-raw|\/?sc-helmet|\/?sc-camel|!--)/gi;
+
 function inlineScript(file) {
   const name = path.basename(file);
   const escaped = fs.readFileSync(file, 'utf8')
-    .replace(/<script/gi, '\\x3cscript')
-    .replace(/<\/script/gi, '\\x3c/script');
+    .replace(HTML_TOKENS, (_, tok) => '\\x3c' + tok);
   try {
     new Function(escaped);
   } catch (err) {
-    throw new Error(`${name}: escaping script tags produced invalid JS (${err.message}) — a <script sequence appears outside a string literal`);
+    throw new Error(`${name}: escaping HTML-looking tokens produced invalid JS (${err.message}) — one of them appears outside a string, regex or comment`);
   }
   return `<script>\n${escaped}\n</script>`;
 }
