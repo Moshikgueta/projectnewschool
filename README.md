@@ -10,7 +10,7 @@ students, digital notebooks (מחברות דיגיטליות) and lesson materia
 | `Teacher Dashboard v2.dc.html` | The full desktop dashboard — login, greeting, students list, digital notebooks, lesson materials |
 | `Teacher Mobile.dc.html` | The phone view of the same system |
 | `support.js` | The `dc` runtime both pages load (`<script src="./support.js">`) — generated, do not hand-edit |
-| `_ds/broadsheet-…/` | The **Broadsheet** design system the project is built against: `styles.css` tokens, `_ds_bundle.js`, `_ds_manifest.json`, lint config and `readme.md` |
+| `_ds/broadsheet-…/` | The **Broadsheet** design system bundle — `styles.css` tokens, `_ds_bundle.js`, `_ds_manifest.json`, lint config and `readme.md`. Reference only; the pages don't link it (see [Design](#design)) |
 | `uploads/` | Source documents the content was derived from (course and notebook lists) |
 | `.thumbnail` | WebP preview image |
 
@@ -25,16 +25,28 @@ python3 -m http.server 8000
 
 then open <http://localhost:8000/Teacher%20Dashboard%20v2.dc.html>.
 
-## Design system
+`support.js` bootstraps itself by fetching React 18.3.1, ReactDOM 18.3.1 and
+`@babel/standalone` 7.29.0 from unpkg at runtime (with SRI), so the browser needs internet
+access — behind a network that blocks unpkg the page stays blank and the console shows
+`[dc] failed to load React or boot`.
 
-The look follows **Broadsheet** — newsprint set for the web: Source Serif 4 on paper white,
-cyan `#0088b0` and magenta `#d6006c` used small and deliberately as spot colour, hierarchy
-from the serif scale and negative space rather than boxes and dividers. The full guidance,
-the token set and the component list live in `_ds/broadsheet-…/readme.md`; take colours,
-fonts, spacing and radii from the `var(--color-*)` / `--font-*` / `--space-*` / `--radius-*`
-variables in `styles.css` rather than hard-coding values.
+Both pages open on a login screen and ship demo accounts — `yotam / ns2026` (מורה),
+`office / ns2026` (אדמין), `pedago / ns2026` (מנהל פדגוגי), `noa / ns2026` (מנהלת קבלה),
+`noa.cohen / ns2026` (תלמידה). These are prototype credentials against in-page demo data,
+shown deliberately on the login screen; there is no backend.
 
-The dashboard pages themselves load Heebo and Assistant from Google Fonts for the Hebrew UI.
+## Design
+
+The two dashboard pages carry their styles inline: **Heebo** for headings and **Assistant**
+for body text (both from Google Fonts), a light `#F4F5F8` ground, near-black `#12161C` text
+and a dark navy sidebar. The whole UI is RTL.
+
+The `_ds/broadsheet-…/` bundle is a **separate design system that these pages do not
+currently use** — "Broadsheet", newsprint set for the web: Source Serif 4 on paper white
+with cyan `#0088b0` and magenta `#d6006c` as spot colour. Neither page links its
+`styles.css` or references its `var(--color-*)` tokens, so it is carried here as reference
+material rather than as the dashboard's live styling. Its guidance, token set and component
+list are in `_ds/broadsheet-…/readme.md`.
 
 ## Conventions
 
