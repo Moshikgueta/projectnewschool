@@ -17,8 +17,7 @@ students, digital notebooks (מחברות דיגיטליות) and lesson materia
 | `.thumbnail` | WebP preview image |
 | `functions/` | Server side: `_shared.js` (PBKDF2, email), `_staff.js` (sessions, guards), `api/staff/*` (the endpoints) |
 | `src/worker.js` | Cloudflare Worker entry — routes `/api/staff/*`, serves `docs/` for everything else |
-| `schema.sql` | D1 schema: `staff_users`, `staff_sessions`, `staff_reset_tokens` — the source of truth |
-| `schema-console.sql` | Generated, comment-free copy for the D1 web console (`npm run schema:console`) |
+| `schema.sql` | D1 schema: `staff_users`, `staff_sessions`, `staff_reset_tokens`. Kept comment-free so the D1 web console accepts it — the column notes live in [Schema notes](#schema-notes) |
 | `scripts/e2e.mjs` | 60 end-to-end checks against a local Worker and D1 (`npm test`) |
 | `scripts/create-admin.mjs` | Writes a staff account straight into D1 (`npm run admin`) — the way in, and the way back in |
 | `wrangler.toml` | Worker + D1 config |
@@ -112,20 +111,15 @@ repo once, and every push builds and ships. **B** is a one-off from a terminal.
 2. **Put that ID in `wrangler.toml`** (`database_id = "…"`) and commit. The value
    committed today is a deliberate non-id — a plausible-looking placeholder would deploy
    happily and bind to nothing.
-3. **Apply the schema.** Open the new database → Console → paste the contents of
-   **`schema-console.sql`** → run.
+3. **Apply the schema.** Open the new database → **Console** → paste the whole of
+   `schema.sql` → Run. If the console refuses the lot, run the six statements one at a
+   time — they are separated by blank lines and each ends in `;`.
 
-   Use that file, not `schema.sql`: the D1 web console trips over SQL comments, and
-   `schema.sql` is full of them (some in Hebrew). `schema-console.sql` is the same six
-   statements with the comments stripped — verified to build a structurally identical
-   database. If the console still refuses the lot, run the six blocks one at a time;
-   they are separated by blank lines and each ends in `;`.
-
-   With the CLI it does not matter which: `npx wrangler d1 execute teacher-room
-   --file=schema.sql --remote`.
-
-   `schema.sql` stays the source of truth. After changing it, run `npm run schema:console`
-   to regenerate the console copy.
+   `schema.sql` carries **no SQL comments** for exactly this reason: the D1 web console
+   trips over them. Keep it that way, and put explanatory notes in
+   [Schema notes](#schema-notes) below instead. With the CLI it would not matter —
+   `npx wrangler d1 execute teacher-room --file=schema.sql --remote` — but the console is
+   the route most people take.
 4. **Connect the repo.** Workers & Pages → Create → Workers → Import a repository →
    `projectnewschool`. Set:
    - Build command: `npm run build`
@@ -154,6 +148,35 @@ Sign in at `https://<your-worker>.workers.dev/dashboard`, or at your own domain
 (Worker → Settings → Domains & Routes → Add → Custom domain). The invite links the users
 screen generates point at whatever origin you signed in on, so set the custom domain
 *before* sending invites if you want them to carry it.
+
+## Schema notes
+
+`schema.sql` is deliberately bare so the D1 console will swallow it. What the columns
+mean lives here.
+
+**`staff_users`**
+
+| column | meaning |
+| --- | --- |
+| `username` | optional short handle (`yotam`). Login accepts this **or** the email |
+| `pass_hash` | `pbkdf2$<iterations>$<saltHex>$<hashHex>` — see `functions/_shared.js` |
+| `role` | מורה · מנהל פדגוגי · אדמין · מנהלת קבלה · תלמיד |
+| `active` | `0` = disabled, or a self-signup still awaiting an admin |
+| `must_change` | `1` after an admin issues a temporary password |
+| `screens` | JSON array of screen keys. `NULL` = every screen the role allows |
+| `student_id` | links a תלמיד account to its student record |
+| `failed_attempts` · `locked_until` | the 8-strikes / 15-minute login throttle |
+
+**`staff_sessions`** — server-side sessions rather than a stateless signed cookie, so an
+admin who disables or deletes an account can kill its live sessions. Only the SHA-256 of
+the cookie value is stored, so a dump of this table cannot be replayed as a login.
+
+**`staff_reset_tokens`** — same hashing, single use. One hour for a password reset, a
+week for an invite.
+
+**Next**, per `MIGRATION-FROM-TAZMAN.md`: teachers · students · availability · lessons ·
+groups · group_members · packages · attendance · reminders. Those are what turn this from
+"logins work" into a booking system.
 
 ## Accounts and auth
 
