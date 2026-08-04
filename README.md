@@ -114,7 +114,7 @@ convenience, the API is the boundary.
 | `POST /api/staff/auth/reset-complete` | with token | `{token, pass}` — drops every session for that account |
 | `GET/POST /api/staff/users` | admin | list · create with a temporary password |
 | `PATCH/DELETE /api/staff/users/:id` | admin | edit · delete |
-| `POST /api/staff/users/:id/reset` | admin | mint a reset link to relay by hand |
+| `POST /api/staff/users/:id/reset` | admin | mint a link to relay by hand — `{invite:true}` for a 7-day invite, otherwise a 1-hour reset |
 | `POST /api/staff/bootstrap` | once | the first admin |
 
 ### The first admin
@@ -150,6 +150,27 @@ npx wrangler secret delete STAFF_BOOTSTRAP_TOKEN
 
 The endpoint answers 409 forever once any account exists, so a forgotten secret is not a
 standing door — delete it anyway.
+
+### Inviting people, and giving them different access
+
+Creating an account on the users screen copies a **ready-to-send invite message** —
+name, role, the address they sign in with, and a one-time link. Paste it into WhatsApp
+and you are done. The recipient opens the link, chooses their own password, and signs in;
+no temporary password is ever shown or has to travel beside the link. Invites last a
+week; the **איפוס סיסמה** button on the same row mints the one-hour version for someone
+who is already set up and locked out. Minting a new link burns the previous one.
+
+Permissions are the chips on each account row. They apply to **every** role, not only
+מורה — switch a screen off and it disappears from that person's menu on their next load.
+An account with no list set sees everything its role allows, which is the default.
+
+Two things the server refuses, both to stop the office locking itself out: you cannot
+narrow, demote, disable or delete **your own** account, and you cannot do it to the last
+active admin.
+
+The admin-only screens (users, settings, teachers, admissions) are governed by role
+rather than by the chips — otherwise narrowing an account's screens could bar it from the
+screen where permissions are handed out.
 
 ### Email
 

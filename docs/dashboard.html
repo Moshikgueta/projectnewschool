@@ -3869,7 +3869,8 @@ table{border-collapse:collapse;width:100%}
 <select value="{{ a.role }}" onChange="{{ a.onRole }}" style="flex:none;height:30px;padding:0 9px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ a.roleFg }};background:{{ a.roleBg }};border:none;border-radius:999px;cursor:pointer"><sc-for list="{{ roleOpts }}" as="o" hint-placeholder-count="3"><option value="{{ o }}">{{ o }}</option></sc-for></select>
 <button onClick="{{ a.toggleActive }}" style="flex:none;height:30px;padding:0 11px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:{{ a.activeBg }};color:{{ a.activeFg }};border:none;border-radius:999px;cursor:pointer;white-space:nowrap" style-hover="filter:brightness(.96)">{{ a.activeLabel }}</button>
 <button onClick="{{ a.copyCreds }}" title="העתק שם משתמש ומייל" style="flex:none;height:30px;padding:0 11px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);background:transparent;border:1px solid var(--color-neutral-300);border-radius:999px;cursor:pointer;white-space:nowrap" style-hover="background:var(--color-neutral-100);color:var(--color-text)">העתק פרטים</button>
-<button onClick="{{ a.resetLink }}" title="צור קישור לבחירת סיסמה — תקף לשעה" style="flex:none;height:30px;padding:0 11px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);background:transparent;border:1px solid var(--color-neutral-300);border-radius:999px;cursor:pointer;white-space:nowrap" style-hover="background:var(--color-neutral-100);color:var(--color-text)">קישור איפוס</button>
+<button onClick="{{ a.invite }}" title="קישור הזמנה לשליחה — תקף שבוע, לשימוש חד־פעמי" style="flex:none;height:30px;padding:0 11px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-accent-800);background:var(--color-accent-100);border:1px solid var(--color-accent-300);border-radius:999px;cursor:pointer;white-space:nowrap" style-hover="background:var(--color-accent-200)">קישור הזמנה</button>
+<button onClick="{{ a.resetLink }}" title="קישור לאיפוס סיסמה — תקף לשעה" style="flex:none;height:30px;padding:0 11px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);background:transparent;border:1px solid var(--color-neutral-300);border-radius:999px;cursor:pointer;white-space:nowrap" style-hover="background:var(--color-neutral-100);color:var(--color-text)">איפוס סיסמה</button>
 <button onClick="{{ a.remove }}" title="מחק חשבון" style="flex:none;width:28px;height:28px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);background:transparent;border:none;border-radius:8px;cursor:pointer" style-hover="background:var(--color-critical-tint);color:var(--color-critical)">✕</button>
 </div>
 
@@ -3890,7 +3891,7 @@ table{border-collapse:collapse;width:100%}
 <span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">מה מופיע לו בתפריט</span>
 <span style="font:400 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ a.screensLine }}</span>
 </div>
-<sc-if value="{{ a.isTeacher }}" hint-placeholder-val="{{ true }}">
+<sc-if value="{{ a.canEditScreens }}" hint-placeholder-val="{{ true }}">
 <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px">
 <sc-for list="{{ a.chips }}" as="c" hint-placeholder-count="9">
 <button onClick="{{ c.toggle }}" style="display:inline-flex;align-items:center;height:28px;padding:0 11px;border-radius:999px;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:{{ c.bg }};color:{{ c.fg }};border:none;cursor:pointer;white-space:nowrap" style-hover="filter:brightness(.94)">{{ c.label }}</button>
@@ -4844,11 +4845,34 @@ class Component extends DCLogic {
     });
   }
 
-  accountResetLink(id) {
-    this.api('/api/staff/users/' + id + '/reset', { method: 'POST' }).then(r => {
+  /* One link to send. The recipient clicks it and chooses their own password,
+     so no temporary password ever has to travel over WhatsApp beside it. */
+  accountResetLink(id, invite) {
+    this.api('/api/staff/users/' + id + '/reset', {
+      method: 'POST', body: { invite: !!invite }
+    }).then(r => {
       if (!r.ok) { this.flash(r.error || 'לא הצלחנו ליצור קישור'); return; }
-      this.copy(r.link, 'קישור איפוס הועתק — תקף לשעה אחת, לשימוש חד־פעמי');
+      if (!invite) {
+        this.copy(r.link, 'קישור איפוס הועתק — תקף לשעה, לשימוש חד־פעמי');
+        return;
+      }
+      this.copy(this.inviteMessage(r), 'הודעת ההזמנה הועתקה — אפשר להדביק ולשלוח');
     });
+  }
+
+  inviteMessage(r) {
+    return [
+      'הוזמנת לחדר המורים של New School.',
+      '',
+      'שם: ' + r.name,
+      'תפקיד: ' + r.role,
+      'כניסה: ' + r.email,
+      '',
+      'לבחירת סיסמה והתחברות:',
+      r.link,
+      '',
+      'הקישור תקף ל־' + Math.round(r.expiresInHours / 24) + ' ימים ולשימוש אחד בלבד.'
+    ].join('\n');
   }
 
   toggleScreen(id, key) {
@@ -4877,12 +4901,11 @@ class Component extends DCLogic {
       if (!r.ok) { this.flash(r.error || 'יצירת החשבון נכשלה'); return; }
       form.reset();
       this.setState({ accounts: [r.user].concat(this.accounts()) });
-      /* The only moment this password is readable. Put it on the clipboard
-         so the admin can hand it over before it is gone for good. */
-      this.copy(
-        'כניסה לחדר המורים של New School\nשם משתמש: ' + r.user.user +
-        '\nסיסמה זמנית: ' + r.tempPassword + '\nמייל: ' + r.user.email,
-        'החשבון נוצר — פרטי הכניסה הועתקו. הסיסמה הזמנית לא תוצג שוב.');
+      /* Mint the invite immediately and put the whole message on the
+         clipboard: one paste into WhatsApp and the account is handed over.
+         The generated temporary password is never shown — the recipient sets
+         their own through the link, so it never travels anywhere. */
+      this.accountResetLink(r.user.id, true);
     });
   };
 
@@ -5903,11 +5926,20 @@ class Component extends DCLogic {
     const isAdmissions = role === 'מנהלת קבלה';
     const sview = s.sview || this.props.studentsView || 'טבלה';
     const ADMIN_VIEWS = ['teachers', 'settings', 'develop', 'users', 'admissions', 'tasks'];
-    /* Per-account screen permissions, set by the office on the users screen. */
+    /* Per-account screen permissions, set by the office on the users screen.
+       Honoured for EVERY role, not only מורה: the office needs to narrow a
+       מנהלת קבלה or a מנהל פדגוגי too, and binding the list to one role left
+       the permission chips doing nothing for everyone else.
+
+       Only the keys in SCREEN_KEYS are governed this way. The admin-only views
+       stay governed by role alone — otherwise narrowing an account's screens
+       would also bar it from the users screen, which is where permissions get
+       handed out in the first place. */
     const allowed = (sess && sess.screens) || this.allScreens();
-    const canSee = (k) => !isTeacher || allowed.indexOf(k) > -1;
+    const gated = this.allScreens();
+    const canSee = (k) => gated.indexOf(k) < 0 || allowed.indexOf(k) > -1;
     let view = isTeacher && ADMIN_VIEWS.indexOf(s.view) > -1 ? 'dashboard' : s.view;
-    if (isTeacher && view !== 'profile' && !canSee(view)) view = canSee('dashboard') ? 'dashboard' : allowed[0] || 'dashboard';
+    if (view !== 'profile' && !canSee(view)) view = canSee('dashboard') ? 'dashboard' : allowed[0] || 'dashboard';
     const all = this.students();
     /* Role scope: a teacher's every list is her own students. The admin sees the school. */
     const me = this.meName();
@@ -6455,7 +6487,7 @@ class Component extends DCLogic {
       can: this.allScreens().reduce((o, k) => { o[k] = canSee(k); return o; }, {}),
 
       /* ---- Accounts and permissions ---- */
-      accountRows: this.accounts().map(a => {
+      accountRows: (() => { const meId = (s.session && s.session.id) || ''; return this.accounts().map(a => {
         const scr = a.screens || this.allScreens();
         const isT = a.role === 'מורה';
         return {
@@ -6472,7 +6504,13 @@ class Component extends DCLogic {
           roleBg: isT ? '#e9f8ff' : a.role === 'אדמין' ? '#eae7e7' : '#fff1f4',
           roleFg: isT ? '#006786' : a.role === 'אדמין' ? '#444141' : '#aa0b56',
           isTeacher: isT,
-          screensLine: isT ? scr.length + ' מסכים מתוך ' + this.allScreens().length : 'גישה מלאה לפי התפקיד',
+          /* Permissions apply to every role now. The signed-in admin's own row
+             is shown but not editable — same rule as role and active. */
+          canEditScreens: a.id !== meId,
+          isSelfRow: a.id === meId,
+          screensLine: a.screens
+            ? scr.length + ' מסכים מתוך ' + this.allScreens().length
+            : 'כל המסכים (' + this.allScreens().length + ')',
           chips: this.SCREEN_KEYS.map(sk => {
             const on = scr.indexOf(sk.key) > -1;
             return {
@@ -6495,9 +6533,10 @@ class Component extends DCLogic {
             '\nכתובת: ' + window.location.origin + window.location.pathname,
             'פרטי הכניסה של ' + a.name + ' הועתקו (בלי סיסמה — היא לא ניתנת לשחזור)'),
           resetLink: () => this.accountResetLink(a.id),
-          remove: () => this.deleteAccount(a.id)
+          remove: () => this.deleteAccount(a.id),
+          invite: () => this.accountResetLink(a.id, true)
         };
-      }),
+      }); })(),
       accountCount: this.accounts().length + ' חשבונות · ' + this.accounts().filter(a => a.active !== false).length + ' פעילים',
       roleOpts: this.ROLE_OPTS,
       screenOpts: this.SCREEN_KEYS.map(x => x.label),

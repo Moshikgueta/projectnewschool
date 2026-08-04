@@ -9,7 +9,7 @@
 import { json } from '../../_shared.js';
 import {
   requireAdmin, readJson, packPassword, initialsOf, publicUser, validRole,
-  validEmail, endAllSessions, issueResetToken, resetLink, MIN_PASS
+  validEmail, endAllSessions, issueResetToken, resetLink, MIN_PASS, INVITE_TTL
 } from '../../_staff.js';
 
 async function load(env, id) {
@@ -49,6 +49,12 @@ export async function onRequestPatch({ request, env, params }) {
     set('role', String(b.role));
   }
   if (b.screens !== undefined) {
+    /* Same principle as the role and active guards below: you may hand out
+       permissions, but you may not take your own away and lock yourself out
+       of the screen that hands them out. */
+    if (target.id === guard.user.id) {
+      return json({ ok: false, error: 'אי אפשר לשנות את ההרשאות של החשבון שאיתו התחברת.' }, 400);
+    }
     set('screens', Array.isArray(b.screens) ? JSON.stringify(b.screens) : null);
   }
   if (b.sid !== undefined) set('student_id', String(b.sid).trim() || null);
@@ -130,8 +136,13 @@ export async function onRequestDelete({ request, env, params }) {
 }
 
 /* POST /api/staff/users/:id/reset — the manual-relay path from
-   DATABASE-HANDOFF.md. Behind the admin guard precisely because it hands
-   back a live token; the public reset-request endpoint never does. */
+   DATABASE-HANDOFF.md, and the invite link for a brand-new account. Behind
+   the admin guard precisely because it hands back a live token; the public
+   reset-request endpoint never does.
+
+   {invite:true} widens the window from an hour to a week — an invite has to
+   survive being read the next morning, a reset does not. Single-use either
+   way, and minting a new one burns the previous. */
 export async function onRequestPost({ request, env, params }) {
   const guard = await requireAdmin(request, env);
   if (guard.res) return guard.res;
@@ -139,6 +150,13 @@ export async function onRequestPost({ request, env, params }) {
   const target = await load(env, params.id);
   if (!target) return json({ ok: false, error: 'החשבון לא נמצא.' }, 404);
 
-  const token = await issueResetToken(env, target.id);
-  return json({ ok: true, link: resetLink(request, token), email: target.email, name: target.name });
+  const b = await readJson(request);
+  const invite = !!(b && b.invite);
+  const token = await issueResetToken(env, target.id, invite ? INVITE_TTL : undefined);
+  return json({
+    ok: true, invite,
+    link: resetLink(request, token),
+    expiresInHours: invite ? INVITE_TTL / 3600000 : 1,
+    email: target.email, name: target.name, role: target.role
+  });
 }

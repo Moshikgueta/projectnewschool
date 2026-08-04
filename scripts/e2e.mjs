@@ -145,12 +145,45 @@ async function waitFor(url, tries = 60) {
     ok('teacher cannot edit anyone', (await call('/api/staff/users/' + teacherId, {
       method: 'PATCH', cookie: teacher, body: { role: 'אדמין' } })).status === 403);
 
+    console.log('\nInvites and permissions');
+    /* On a dedicated account: the invite flow sets a new password, and the
+       teacher account is still needed further down with its original one. */
+    r = await call('/api/staff/users', {
+      method: 'POST', cookie: admin,
+      body: { name: 'נועה קבלה', user: 'noa', email: 'noa@newschool.co.il', role: 'מנהלת קבלה' } });
+    const noaId = r.body.user && r.body.user.id;
+    ok('non-teacher account created', r.status === 201 && !!noaId);
+
+    let inv = await call('/api/staff/users/' + noaId + '/reset', {
+      method: 'POST', cookie: admin, body: { invite: true } });
+    ok('admin mints an invite link', inv.body.ok === true && !!inv.body.link && inv.body.invite === true);
+    ok('invite lasts a week, not an hour', inv.body.expiresInHours === 168, String(inv.body.expiresInHours));
+    ok('invite carries what the message needs', !!inv.body.name && !!inv.body.email && !!inv.body.role);
+    const invToken = new URL(inv.body.link).searchParams.get('reset');
+    ok('the invite link sets a password', (await call('/api/staff/auth/reset-complete', {
+      method: 'POST', body: { token: invToken, pass: 'chosen-by-them' } })).body.ok === true);
+    ok('and that password works', (await call('/api/staff/auth/login', {
+      method: 'POST', body: { user: 'noa', pass: 'chosen-by-them' } })).body.ok === true);
+    ok('a plain reset is still one hour',
+      (await call('/api/staff/users/' + noaId + '/reset', { method: 'POST', cookie: admin }))
+        .body.expiresInHours === 1);
+
+    r = await call('/api/staff/users/' + noaId, {
+      method: 'PATCH', cookie: admin, body: { screens: ['dashboard', 'students'] } });
+    ok('permissions narrow for a non-teacher role too', r.body.ok === true && r.body.user.screens.length === 2);
+    r = await call('/api/staff/users/' + noaId, { method: 'PATCH', cookie: admin, body: { screens: null } });
+    ok('and reset back to every screen', r.body.ok === true && r.body.user.screens === null);
+    ok('a non-admin cannot mint an invite', (await call('/api/staff/users/' + noaId + '/reset', {
+      method: 'POST', cookie: teacher, body: { invite: true } })).status === 403);
+
     console.log('\nLockout guards');
     const me = (await call('/api/staff/auth/me', { cookie: admin })).body.user;
     ok('admin cannot disable their own account', (await call('/api/staff/users/' + me.id, {
       method: 'PATCH', cookie: admin, body: { active: false } })).status === 400);
     ok('admin cannot delete their own account', (await call('/api/staff/users/' + me.id, {
       method: 'DELETE', cookie: admin })).status === 400);
+    ok('admin cannot narrow their own permissions', (await call('/api/staff/users/' + me.id, {
+      method: 'PATCH', cookie: admin, body: { screens: ['dashboard'] } })).status === 400);
 
     console.log('\nRevocation');
     r = await call('/api/staff/users/' + teacherId, { method: 'PATCH', cookie: admin, body: { active: false } });

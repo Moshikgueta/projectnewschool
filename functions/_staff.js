@@ -110,18 +110,22 @@ export async function endAllSessions(env, userId) {
 
 /* ── password reset ────────────────────────────────────────────────────── */
 
-/* Mints a one-hour single-use token and returns the RAW value — the caller
-   decides where it may go (an email, or an admin's screen for manual relay).
-   Any earlier unused token for the user is burned, so the newest link is the
-   only live one. */
-export async function issueResetToken(env, userId) {
+/* Mints a single-use token and returns the RAW value — the caller decides
+   where it may go (an email, or an admin's screen for manual relay). Any
+   earlier unused token for the user is burned, so the newest link is the only
+   live one.
+
+   An invite gets a week rather than an hour: a password reset is something
+   you asked for thirty seconds ago, an invite is something that has to
+   survive a WhatsApp message read the next morning. */
+export async function issueResetToken(env, userId, ttl = RESET_TTL_MS) {
   const token = randomToken();
   const now = Date.now();
   await env.DB.prepare('UPDATE staff_reset_tokens SET used=1 WHERE user_id=? AND used=0')
     .bind(userId).run();
   await env.DB.prepare(
     'INSERT INTO staff_reset_tokens (token_hash, user_id, expires_at, used, created_at) VALUES (?,?,?,0,?)'
-  ).bind(await tokenHash(token), userId, now + RESET_TTL_MS, now).run();
+  ).bind(await tokenHash(token), userId, now + ttl, now).run();
   await env.DB.prepare('DELETE FROM staff_reset_tokens WHERE expires_at < ?').bind(now).run();
   return token;
 }
@@ -230,3 +234,4 @@ export async function readJson(request) {
 }
 
 export const RESET_TTL = RESET_TTL_MS;
+export const INVITE_TTL = 7 * 24 * 3600000;
