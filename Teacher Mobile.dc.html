@@ -69,28 +69,34 @@
 <h1 style="margin-top:26px;font-size:29px;line-height:1.2;color:#fff">כל מה שצריך לשיעור, בטלפון.</h1>
 <p style="margin-top:12px;font:400 14.5px/1.65 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500)">השיעורים של היום, נוכחות, מחברות ופידבק. הכל חסוי ומיועד לצוות בית הספר.</p>
 
+<sc-if value="{{ isAuthLogin }}" hint-placeholder-val="{{ true }}">
 <form onSubmit="{{ login }}" style="margin-top:26px;display:flex;flex-direction:column;gap:12px">
-<input name="user" autoComplete="username" placeholder="שם משתמש" style="height:50px;padding:0 15px;font:400 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:1px solid #2A323C;border-radius:13px;outline:none" style-focus="border-color:var(--color-accent)">
+<input name="user" autoComplete="username" placeholder="שם משתמש או אימייל" style="height:50px;padding:0 15px;font:400 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:1px solid #2A323C;border-radius:13px;outline:none" style-focus="border-color:var(--color-accent)">
 <input name="pass" type="password" autoComplete="current-password" placeholder="סיסמה" style="height:50px;padding:0 15px;font:400 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:1px solid #2A323C;border-radius:13px;outline:none" style-focus="border-color:var(--color-accent)">
 <sc-if value="{{ hasLoginError }}">
 <div style="display:flex;align-items:center;gap:8px;background:#2A1A19;border-radius:11px;padding:11px 13px;font:500 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#F0A9A2"><span style="width:7px;height:7px;border-radius:50%;background:var(--color-critical-mid);flex:none"></span>{{ loginError }}</div>
 </sc-if>
 <button type="submit" style="height:52px;font:600 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-accent);border:none;border-radius:13px;cursor:pointer" style-hover="background:var(--color-accent-700)">התחברות</button>
 </form>
-<div style="margin-top:20px;display:flex;flex-direction:column;gap:9px">
-<span style="font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;letter-spacing:.1em;color:var(--color-neutral-600)">כניסה מהירה לדמו</span>
-<sc-for list="{{ demoUsers }}" as="u" hint-placeholder-count="3">
-<button onClick="{{ u.pick }}" style="display:flex;align-items:center;gap:11px;width:100%;padding:10px 12px;text-align:right;background:transparent;border:1px solid #2A323C;border-radius:13px;cursor:pointer" style-hover="border-color:var(--color-neutral-700)">
-<span style="width:34px;height:34px;flex:none;border-radius:11px;background:{{ u.chipBg }};color:#fff;display:grid;place-items:center;font:700 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ u.initials }}</span>
-<span style="display:flex;flex-direction:column;gap:1px;min-width:0">
-<span style="font:600 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff">{{ u.name }}</span>
-<span style="font:400 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ u.label }}</span>
-</span>
-<span style="margin-inline-start:auto;flex:none;font:500 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ u.hintColor }}">{{ u.hint }}</span>
-</button>
-</sc-for>
-</div>
-<p style="margin-top:18px;font:400 11.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">בגרסה האמיתית הכניסה דרך חשבון Google של בית הספר.</p>
+<button onClick="{{ goForgot }}" style="margin-top:16px;font:600 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-accent-300);background:transparent;border:none;cursor:pointer;text-align:center">שכחתי סיסמה</button>
+</sc-if>
+
+<sc-if value="{{ isAuthForgot }}">
+<form onSubmit="{{ forgotSubmit }}" style="margin-top:26px;display:flex;flex-direction:column;gap:12px">
+<p style="font:400 13.5px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500)">נשלח קישור לבחירת סיסמה חדשה לאימייל שרשום על החשבון. הקישור תקף לשעה אחת.</p>
+<input name="user" autoComplete="username" placeholder="שם משתמש או אימייל" style="height:50px;padding:0 15px;font:400 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:1px solid #2A323C;border-radius:13px;outline:none" style-focus="border-color:var(--color-accent)">
+<sc-if value="{{ hasForgotError }}">
+<div style="display:flex;align-items:center;gap:8px;background:#2A1A19;border-radius:11px;padding:11px 13px;font:500 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#F0A9A2"><span style="width:7px;height:7px;border-radius:50%;background:var(--color-critical-mid);flex:none"></span>{{ forgotError }}</div>
+</sc-if>
+<sc-if value="{{ hasForgotNote }}">
+<div style="display:flex;align-items:flex-start;gap:8px;background:#16241D;border-radius:11px;padding:11px 13px;font:500 13.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#8FCBAE"><span style="width:7px;height:7px;margin-top:6px;border-radius:50%;background:var(--color-positive);flex:none"></span>{{ forgotNote }}</div>
+</sc-if>
+<button type="submit" style="height:52px;font:600 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-accent);border:none;border-radius:13px;cursor:pointer" style-hover="background:var(--color-accent-700)">שליחת קישור</button>
+</form>
+<button onClick="{{ goLogin }}" style="margin-top:16px;font:600 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-accent-300);background:transparent;border:none;cursor:pointer;text-align:center">חזרה לכניסה</button>
+</sc-if>
+
+<p style="margin-top:18px;font:400 11.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">חשבונות נפתחים על ידי משרד בית הספר. הכניסה נבדקת בשרת — התפקיד וההרשאות לא נקבעים במכשיר.</p>
 </div>
 </sc-if>
 
@@ -267,9 +273,65 @@
 </div>
 </sc-if>
 
+<sc-if value="{{ isTasks }}">
+<form onSubmit="{{ addTask }}" style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;padding:15px 16px;display:flex;flex-direction:column;gap:10px">
+<h5 style="font-size:13.5px">משימה חדשה למושיק</h5>
+<input name="title" placeholder="כותרת" style="height:46px;padding:0 13px;font:400 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:11px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+<select name="priority" style="height:46px;padding:0 13px;font:400 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-paper);border:1px solid var(--color-neutral-300);border-radius:11px;cursor:pointer">
+<option value="רגיל">דחיפות רגילה</option>
+<option value="דחוף">דחוף</option>
+</select>
+<textarea name="note" placeholder="פרטים" style="min-height:72px;padding:10px 13px;font:400 14px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:11px;outline:none;resize:vertical" style-focus="background:var(--color-paper);border-color:var(--color-accent)"></textarea>
+<button type="submit" style="height:46px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:12px;cursor:pointer" style-hover="background:var(--color-accent)">שלח משימה</button>
+</form>
+
+<div style="margin-top:14px;display:flex;align-items:baseline;justify-content:space-between">
+<h5 style="font-size:13.5px;color:var(--color-text)">פתוחות</h5>
+<span style="font:400 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ openTasksCount }}</span>
+</div>
+<sc-if value="{{ noOpenTasks }}">
+<p style="margin-top:10px;font:400 13.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">אין משימות פתוחות.</p>
+</sc-if>
+<div style="display:flex;flex-direction:column;gap:9px;margin-top:10px">
+<sc-for list="{{ openTaskRows }}" as="t" hint-placeholder-count="2">
+<div style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:14px;padding:12px 14px">
+<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+<span style="display:inline-flex;align-items:center;height:21px;padding:0 8px;border-radius:999px;font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:{{ t.prBg }};color:{{ t.prFg }}">{{ t.priority }}</span>
+<span style="font:700 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ t.title }}</span>
+</div>
+<sc-if value="{{ t.hasNote }}">
+<p style="margin-top:6px;font:400 13px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">{{ t.note }}</p>
+</sc-if>
+<div style="display:flex;align-items:center;justify-content:space-between;margin-top:9px">
+<span style="font:400 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500)">{{ t.by }} · {{ t.when }}</span>
+<div style="display:flex;gap:6px">
+<button onClick="{{ t.toggle }}" style="height:32px;padding:0 12px;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-positive-ink);background:var(--color-positive-tint);border:none;border-radius:9px;cursor:pointer">✓ בוצע</button>
+<button onClick="{{ t.remove }}" style="width:32px;height:32px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600);background:var(--color-neutral-100);border:none;border-radius:9px;cursor:pointer">✕</button>
+</div>
+</div>
+</div>
+</sc-for>
+</div>
+
+<div style="margin-top:18px;display:flex;align-items:baseline;justify-content:space-between">
+<h5 style="font-size:13.5px;color:var(--color-text)">בוצעו</h5>
+</div>
+<sc-if value="{{ noDoneTasks }}">
+<p style="margin-top:10px;font:400 13.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">משימות שהושלמו יופיעו כאן.</p>
+</sc-if>
+<div style="display:flex;flex-direction:column;gap:7px;margin-top:10px">
+<sc-for list="{{ doneTaskRows }}" as="t" hint-placeholder-count="2">
+<div style="display:flex;align-items:center;gap:8px;padding:9px 12px;background:var(--color-neutral-100);border-radius:11px">
+<span style="flex:1;color:var(--color-neutral-600);text-decoration:line-through;font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ t.title }}</span>
+<button onClick="{{ t.toggle }}" style="width:28px;height:28px;font:400 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);background:transparent;border:none;border-radius:8px;cursor:pointer">↺</button>
+</div>
+</sc-for>
+</div>
+</sc-if>
+
 </main>
 
-<nav style="flex:none;background:var(--color-neutral-900);padding:8px 10px 14px;display:grid;grid-template-columns:repeat(4,1fr);gap:4px">
+<nav style="flex:none;background:var(--color-neutral-900);padding:8px 10px 14px;display:grid;grid-template-columns:{{ navCols }};gap:4px">
 <button onClick="{{ go.today }}" style="height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:{{ tabBg.today }};border:none;border-radius:13px;cursor:pointer;color:{{ tabFg.today }}">
 <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v14H4z"/><path d="M4 10h16M9 4v3M15 4v3"/></svg>
 <span style="font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">היום</span>
@@ -286,6 +348,12 @@
 <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4H4v12h4v4l4-4h8z"/><path d="M8 10h8M8 13h5"/></svg>
 <span style="font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">פידבק</span>
 </button>
+<sc-if value="{{ showTasksTab }}">
+<button onClick="{{ go.tasks }}" style="height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:{{ tabBg.tasks }};border:none;border-radius:13px;cursor:pointer;color:{{ tabFg.tasks }}">
+<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="4.5" width="15" height="15" rx="3"/><path d="M8.5 12.5l2.2 2.2 4.8-5"/></svg>
+<span style="font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">משימות</span>
+</button>
+</sc-if>
 </nav>
 </sc-if>
 
@@ -423,11 +491,7 @@ class Component extends DCLogic {
   FB_VERDICTS = ['עובד מעולה', 'עובד עם התאמות', 'בעייתי'];
   FB_STUDENT_VERDICTS = ['מתקדם מעל הצפוי', 'בקצב', 'זקוק לתשומת לב'];
 
-  USERS = [
-    { user: 'yotam', pass: 'ns2026', role: 'מורה', name: 'יותם ברוך', initials: 'י״ב', teacherName: 'יותם ברוך', label: 'מורה לאנגלית' },
-    { user: 'office', pass: 'ns2026', role: 'אדמין', name: 'אלון', initials: 'אל', label: 'אדמין · משרד' },
-    { user: 'pedago', pass: 'ns2026', role: 'מנהל פדגוגי', name: 'מושיק גואטה', initials: 'מ״ג', label: 'מנהל פדגוגי' }
-  ];
+  /* No hardcoded users: /api/staff/auth/* is the only way in. */
 
 
   LANG_COLORS = {
@@ -470,6 +534,7 @@ class Component extends DCLogic {
 
   state = {
     view: 'today', day: 4, session: null, loginError: '', toast: '',
+    authMode: 'login', authBusy: false, forgotError: '', forgotNote: '',
     students: null, logs: null, groupData: null, cal: null, feedback: null, notifs: null,
     sel: null, sheet: null, grpSel: null, grpSession: null,
     query: '', fbKind: 'תלמיד', lessonState: 'השיעור התקיים'
@@ -478,11 +543,29 @@ class Component extends DCLogic {
   componentDidMount() {
     const read = (k) => { try { const x = localStorage.getItem(k); return x ? JSON.parse(x) : null; } catch (e) { return null; } };
     this.setState({
-      /* A desktop session for a non-teacher role does not carry into the phone app. */
-      session: (() => { const x = read(this.LS_SESSION); return x && x.role === 'מורה' ? x : null; })(),
+      /* Cached only, so the shell can paint before /api/staff/auth/me answers.
+         A student account does not open the phone app at all. */
+      session: (() => { const x = read(this.LS_SESSION); return x && x.role !== 'תלמיד' ? x : null; })(),
+      tasks: read(this.LS_TASKS),
       students: read(this.LS_S), logs: read(this.LS_LOG),
       groupData: read(this.LS_GRP), cal: read(this.LS_CAL), feedback: read(this.LS_FB), notifs: read(this.LS_NOTIF)
     });
+    this.api('/api/staff/auth/me').then(r => {
+      if (r.ok && r.user && r.user.role !== 'תלמיד') { this.signIn(r.user); return; }
+      try { localStorage.removeItem(this.LS_SESSION); } catch (e) {}
+      this.setState({ session: null });
+    });
+  }
+
+  api(path, opts) {
+    const o = Object.assign({ credentials: 'same-origin', headers: {} }, opts);
+    if (o.body !== undefined && typeof o.body !== 'string') {
+      o.headers = Object.assign({ 'Content-Type': 'application/json' }, o.headers);
+      o.body = JSON.stringify(o.body);
+    }
+    return fetch(path, o)
+      .then(r => r.json().then(j => Object.assign({ status: r.status }, j)))
+      .catch(() => ({ ok: false, status: 0, error: 'אין חיבור לשרת. נסו שוב.' }));
   }
   save(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
   flash(msg) {
@@ -490,6 +573,31 @@ class Component extends DCLogic {
     clearTimeout(this._t);
     this._t = setTimeout(() => this.setState({ toast: '' }), 2600);
   }
+
+  LS_TASKS = 'ns.tasks.v1';
+  SEED_TASKS = [
+    { id: 'tk1', title: 'לאשר את מחברת הרמה החדשה ברוסית', note: 'הגיעה מהמורה — מחכה לאישור לפני שהיא נכנסת למחזור הבא.', by: 'אלון', priority: 'רגיל', status: 'פתוח', when: '28.7' },
+    { id: 'tk2', title: 'שיחת אינטייק שדורשת שיבוץ רמה', note: 'מועמד עם רקע חזק בספרדית — צריך ראיון שיבוץ לפני שנציע קבוצה.', by: 'נועה', priority: 'דחוף', status: 'פתוח', when: '1.8' }
+  ];
+  tasks() { return this.state.tasks || this.SEED_TASKS; }
+  saveTasks(next) { this.setState({ tasks: next }); this.save(this.LS_TASKS, next); }
+  addTask = (e) => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    const title = String(d.title || '').trim();
+    if (!title) { this.flash('צריך כותרת למשימה'); return; }
+    this.saveTasks([{
+      id: 'tk' + Date.now(), title, note: String(d.note || '').trim(),
+      by: (this.state.session && this.state.session.name) || this.meName(), priority: d.priority || 'רגיל', status: 'פתוח',
+      when: new Date().toLocaleDateString('he-IL').slice(0, 5)
+    }].concat(this.tasks()));
+    e.target.reset();
+    this.flash('המשימה נשלחה למושיק');
+  };
+  toggleTask(id) {
+    this.saveTasks(this.tasks().map(t => t.id === id ? Object.assign({}, t, { status: t.status === 'פתוח' ? 'בוצע' : 'פתוח' }) : t));
+  }
+  deleteTask(id) { this.saveTasks(this.tasks().filter(t => t.id !== id)); this.flash('המשימה הוסרה'); }
 
   langColor(l) {
     if (this.LANG_COLORS[l]) return this.LANG_COLORS[l];
@@ -509,22 +617,55 @@ class Component extends DCLogic {
 
   login = (e) => {
     e.preventDefault();
+    if (this.state.authBusy) return;
     const d = Object.fromEntries(new FormData(e.target).entries());
-    const u = this.USERS.find(x => x.user === String(d.user || '').trim().toLowerCase() && x.pass === d.pass);
-    if (!u) { this.setState({ loginError: 'שם משתמש או סיסמה שגויים' }); return; }
-    this.signIn(u);
+    this.setState({ authBusy: true, loginError: '' });
+    this.api('/api/staff/auth/login', {
+      method: 'POST',
+      body: { user: String(d.user || '').trim(), pass: String(d.pass || '') }
+    }).then(r => {
+      this.setState({ authBusy: false });
+      if (!r.ok) { this.setState({ loginError: r.error || 'שם משתמש או סיסמה שגויים' }); return; }
+      if (r.user.role === 'תלמיד') {
+        /* The phone app is the staff view; a student login has nothing here. */
+        this.api('/api/staff/auth/logout', { method: 'POST' });
+        this.setState({ loginError: 'האפליקציה הזו מיועדת לצוות בית הספר.' });
+        return;
+      }
+      this.signIn(r.user);
+    });
   };
-  /* Quick demo entry, one row per staff account. Every role opens the app so the
-     phone view can be shown from each of their seats. */
-  demoPick = (u) => this.signIn(u);
+
+  goLogin = () => this.setState({ authMode: 'login', loginError: '', forgotError: '', forgotNote: '' });
+  goForgot = () => this.setState({ authMode: 'forgot', forgotError: '', forgotNote: '' });
+
+  forgotSubmit = (e) => {
+    e.preventDefault();
+    if (this.state.authBusy) return;
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    const handle = String(d.user || '').trim().toLowerCase();
+    if (!handle) { this.setState({ forgotError: 'צריך שם משתמש או אימייל' }); return; }
+    this.setState({ authBusy: true, forgotError: '', forgotNote: '' });
+    this.api('/api/staff/auth/reset-request', { method: 'POST', body: { user: handle } }).then(r => {
+      this.setState({ authBusy: false });
+      if (!r.ok) { this.setState({ forgotError: r.error || 'הבקשה נכשלה' }); return; }
+      this.setState({
+        forgotNote: r.sent
+          ? 'אם קיים חשבון עם הפרטים האלה — נשלח אליו עכשיו קישור לבחירת סיסמה חדשה, תקף לשעה.'
+          : 'שליחת המיילים עוד לא מחוברת. פנו למשרד בית הספר — שם אפשר להפיק קישור איפוס ידנית.'
+      });
+    });
+  };
+
   signIn(u) {
-    const sess = { user: u.user, role: u.role, name: u.name, initials: u.initials, label: u.label, teacherName: u.teacherName || '' };
-    this.setState({ session: sess, loginError: '', view: 'today' });
-    this.save(this.LS_SESSION, sess);
+    this.setState({ session: u, loginError: '', authMode: 'login', view: 'today' });
+    this.save(this.LS_SESSION, u);
   }
+
   logout = () => {
+    this.api('/api/staff/auth/logout', { method: 'POST' });
     try { localStorage.removeItem(this.LS_SESSION); } catch (e) {}
-    this.setState({ session: null, view: 'today', sel: null, sheet: null });
+    this.setState({ session: null, view: 'today', sel: null, sheet: null, authMode: 'login' });
   };
 
   patchStudent(id, patch) {
@@ -675,16 +816,22 @@ class Component extends DCLogic {
        office and management accounts are looking at a teacher's — so the copy
        says whose it is instead of calling it theirs. */
     const ownWorkspace = !sess || sess.role === 'מורה';
+    const role = sess && sess.role;
+    const isPedago = role === 'מנהל פדגוגי';
+    const isOffice = role === 'אדמין';
+    const isAdmissions = role === 'מנהלת קבלה';
+    const showTasksTab = isPedago || isOffice || isAdmissions;
     const titles = {
       today: ownWorkspace ? 'השיעורים שלי' : 'השיעורים של ' + me,
       students: ownWorkspace ? 'התלמידים שלי' : 'התלמידים של ' + me,
-      groups: 'קבוצות', feedback: 'פידבק'
+      groups: 'קבוצות', feedback: 'פידבק', tasks: isPedago ? 'המשימות שלי' : 'משימות למושיק'
     };
     const subs = {
       today: s.day === this.TODAY_IDX ? 'יום ' + this.DAYS[s.day] + ' · 30 ביולי' : 'יום ' + this.DAYS[s.day],
       students: mine.length + (ownWorkspace ? ' תלמידים בתיק' : ' תלמידים בתיק של ' + me),
       groups: myGroups.length + ' קבוצות פעילות',
-      feedback: 'על תלמיד, על חומר, או מה שחסר'
+      feedback: 'על תלמיד, על חומר, או מה שחסר',
+      tasks: isPedago ? 'מה שהמשרד והקבלה שלחו אליך' : 'שלחו למשיק הפדגוגי'
     };
 
     /* selected student for the sheet */
@@ -768,24 +915,37 @@ class Component extends DCLogic {
 
     const fbIsStudent = s.fbKind === 'תלמיד';
     const fbIsGap = s.fbKind === 'בקשת חומר';
-    const tabs = ['today', 'students', 'groups', 'feedback'];
+    const tabs = showTasksTab ? ['today', 'students', 'groups', 'feedback', 'tasks'] : ['today', 'students', 'groups', 'feedback'];
 
     return {
-      isSignedIn: !!sess, isLocked: !sess,
+      isSignedIn: !!sess, isLocked: !sess, showTasksTab,
       login: this.login, logout: this.logout,
-      demoUsers: this.USERS.map(u => ({
-        initials: u.initials, name: u.name, label: u.label,
-        chipBg: '#0088b0', hint: 'כניסה', hintColor: '#0088b0',
-        pick: () => this.demoPick(u)
-      })),
+      goLogin: this.goLogin, goForgot: this.goForgot, forgotSubmit: this.forgotSubmit,
+      isAuthLogin: (s.authMode || 'login') === 'login',
+      isAuthForgot: s.authMode === 'forgot',
+      forgotError: s.forgotError, hasForgotError: !!s.forgotError,
+      forgotNote: s.forgotNote, hasForgotNote: !!s.forgotNote,
       loginError: s.loginError, hasLoginError: !!s.loginError,
       userName: sess ? sess.name : '', userInitials: sess ? sess.initials : '', roleLabel: sess ? sess.label : '',
       screenTitle: titles[s.view], screenSub: subs[s.view],
+      addTask: this.addTask,
+      myName: (sess && sess.name) || this.meName(),
+      openTaskRows: this.tasks().filter(t => t.status === 'פתוח').map(t => ({
+        id: t.id, title: t.title, note: t.note, hasNote: !!t.note, by: t.by, when: t.when,
+        priority: t.priority, prBg: t.priority === 'דחוף' ? 'var(--color-critical-tint)' : 'var(--color-neutral-200)',
+        prFg: t.priority === 'דחוף' ? 'var(--color-critical)' : 'var(--color-neutral-800)',
+        toggle: () => this.toggleTask(t.id), remove: () => this.deleteTask(t.id)
+      })),
+      doneTaskRows: this.tasks().filter(t => t.status === 'בוצע').map(t => ({ id: t.id, title: t.title, by: t.by, toggle: () => this.toggleTask(t.id) })),
+      openTasksCount: this.tasks().filter(t => t.status === 'פתוח').length,
+      noOpenTasks: this.tasks().filter(t => t.status === 'פתוח').length === 0,
+      noDoneTasks: this.tasks().filter(t => t.status === 'בוצע').length === 0,
       toast: s.toast, hasToast: !!s.toast,
 
       isToday: s.view === 'today', isStudents: s.view === 'students',
-      isGroups: s.view === 'groups', isFeedback: s.view === 'feedback',
-      go: { today: this.view('today'), students: this.view('students'), groups: this.view('groups'), feedback: this.view('feedback') },
+      isGroups: s.view === 'groups', isFeedback: s.view === 'feedback', isTasks: s.view === 'tasks',
+      go: { today: this.view('today'), students: this.view('students'), groups: this.view('groups'), feedback: this.view('feedback'), tasks: this.view('tasks') },
+      navCols: 'repeat(' + tabs.length + ',1fr)',
       tabBg: tabs.reduce((o, k) => { o[k] = s.view === k ? '#2d2b2b' : 'transparent'; return o; }, {}),
       tabFg: tabs.reduce((o, k) => { o[k] = s.view === k ? '#ffffff' : '#7d7979'; return o; }, {}),
 

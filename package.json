@@ -1,0 +1,15 @@
+{
+  "name": "projectnewschool",
+  "private": true,
+  "description": "חדר המורים · New School — staff dashboard (static pages + Cloudflare Worker/D1 auth)",
+  "scripts": {
+    "build": "node scripts/build-standalone.js",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "schema": "wrangler d1 execute teacher-room --local --file=schema.sql",
+    "test": "npm run build && node scripts/e2e.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.116.0"
+  }
+}

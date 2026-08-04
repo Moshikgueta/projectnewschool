@@ -15,6 +15,11 @@ students, digital notebooks (מחברות דיגיטליות) and lesson materia
 | `scripts/build-standalone.js` | Bundles each page into one self-contained file in `dist/` |
 | `uploads/` | Source documents the content was derived from (course and notebook lists) |
 | `.thumbnail` | WebP preview image |
+| `functions/` | Server side: `_shared.js` (PBKDF2, email), `_staff.js` (sessions, guards), `api/staff/*` (the endpoints) |
+| `src/worker.js` | Cloudflare Worker entry — routes `/api/staff/*`, serves `docs/` for everything else |
+| `schema.sql` | D1 schema: `staff_users`, `staff_sessions`, `staff_reset_tokens` |
+| `scripts/e2e.mjs` | 60 end-to-end checks against a local Worker and D1 (`npm test`) |
+| `wrangler.toml` | Worker + D1 config |
 
 ## Running it
 
@@ -30,6 +35,18 @@ then open <http://localhost:8000/Teacher%20Dashboard%20v2.dc.html>.
 `support.js` bootstraps itself by fetching React 18.3.1 and ReactDOM 18.3.1 from unpkg at
 runtime (with SRI), so the browser needs internet access — behind a network that blocks
 unpkg the page stays blank and the console shows `[dc] failed to load React or boot`.
+
+### With the backend
+
+```sh
+npm install
+npm run schema      # apply schema.sql to the local D1
+npm run dev         # build + wrangler dev, on http://localhost:8787
+npm test            # build + the 60-check end-to-end suite
+```
+
+`npm run dev` serves `docs/` and the API from one origin, which is what the session
+cookie needs. Create the first admin with the bootstrap endpoint below.
 
 ### Self-contained build
 
@@ -72,10 +89,73 @@ Enabling it, once per repository: **Settings → Pages → Source: Deploy from a
 plan the repository has to be public, which also puts the prototype and its demo logins on
 the open web.
 
-Both pages open on a login screen and ship demo accounts — `yotam / ns2026` (מורה),
-`office / ns2026` (אדמין), `pedago / ns2026` (מנהל פדגוגי), `noa / ns2026` (מנהלת קבלה),
-`noa.cohen / ns2026` (תלמידה). These are prototype credentials against in-page demo data,
-shown deliberately on the login screen; there is no backend.
+Both pages open on a login screen. **The demo accounts are gone** — login now goes to
+`POST /api/staff/auth/login` and is checked against D1, so the printed `ns2026` passwords
+that used to sit on the login screen were removed with them. See [Accounts and auth](#accounts-and-auth).
+
+That makes the GitHub Pages copy a **look-only** deployment: the pages render, but no
+login can succeed there, because Pages serves static files and has no API. The same
+`docs/` build served by the Worker is the working system. Student and lesson data is
+still in-page demo data — only accounts moved server-side so far.
+
+## Accounts and auth
+
+Accounts live in D1 and every rule is enforced in the Worker — the UI hiding a screen is a
+convenience, the API is the boundary.
+
+| endpoint | who | what |
+| --- | --- | --- |
+| `POST /api/staff/auth/login` | anyone | `{user, pass}` — username or email |
+| `POST /api/staff/auth/logout` | signed in | deletes the session row, not just the cookie |
+| `GET /api/staff/auth/me` | anyone | the source of truth for identity; called on every page load |
+| `POST /api/staff/auth/signup` | anyone | self-signup — created **disabled**, pending an admin |
+| `POST /api/staff/auth/reset-request` | anyone | mails a link. Never returns a token |
+| `POST /api/staff/auth/reset-complete` | with token | `{token, pass}` — drops every session for that account |
+| `GET/POST /api/staff/users` | admin | list · create with a temporary password |
+| `PATCH/DELETE /api/staff/users/:id` | admin | edit · delete |
+| `POST /api/staff/users/:id/reset` | admin | mint a reset link to relay by hand |
+| `POST /api/staff/bootstrap` | once | the first admin |
+
+### The first admin
+
+Every account is made by an admin — except the first. Once, then delete the secret:
+
+```sh
+npx wrangler secret put STAFF_BOOTSTRAP_TOKEN        # any random value
+curl -X POST https://<domain>/api/staff/bootstrap \
+  -H 'content-type: application/json' \
+  -d '{"token":"<same value>","name":"אלון","user":"office",
+       "email":"office@newschool.co.il","pass":"<strong password>"}'
+npx wrangler secret delete STAFF_BOOTSTRAP_TOKEN
+```
+
+The endpoint answers 409 forever once any account exists, so a forgotten secret is not a
+standing door — delete it anyway.
+
+### Email
+
+`RESEND_API_KEY` + `EMAIL_FROM` as secrets. Without them nothing breaks: "forgot password"
+tells the user to contact the office, and the admin mints a link from the users screen.
+
+### Decisions worth knowing
+
+- **PBKDF2** (100k iterations, per-account salt), lifted verbatim from the Spanish course
+  project where it already runs in production, rather than rewritten.
+- **Sessions are database rows, not signed cookies.** Disabling or deleting an account
+  kills its live sessions immediately instead of at the next login — the difference that
+  matters on a shared staffroom machine.
+- **Session and reset tokens are stored hashed** (SHA-256): a dump of either table cannot
+  be replayed as a login.
+- **`reset-request` never returns the token.** That endpoint is unauthenticated, so
+  echoing it back would be account takeover for anyone who can guess an address. Manual
+  relay lives behind the admin guard at `POST /api/staff/users/:id/reset`.
+- **Self-signup creates a disabled account**, or a stranger could mint themselves a מורה
+  login and read student records.
+- **8 failed attempts lock the account for 15 minutes.**
+- **The last active admin cannot be demoted, disabled or deleted** — nor can you do any of
+  those to the account you are signed in with.
+- Wrong password and unknown username return the identical message, so the API cannot be
+  used to confirm which school addresses exist.
 
 ## Design
 
@@ -117,3 +197,46 @@ system does print: the front-page thick–thin around a dateline rail.
 - `support.js` is generated from `dc-runtime` — rebuild it there, never edit it here.
 - Templates use the `sc-if` / `sc-for` control elements inside `<x-dc>`; props and script
   live in the `data-props` script block at the bottom of each page.
+- **Keep the tags balanced, and check it.** See below — one missing `</div>` cost the
+  whole desktop app, silently.
+
+### One missing `</div>` blanked the entire desktop app
+
+Worth writing down, because the symptom pointed nowhere near the cause. After signing in,
+the desktop went **blank**: the login screen disappeared, the app never appeared, no
+exception was thrown, the console was clean, and `renderVals()` returned
+`showStaffApp: true` the whole time. Signing in as a student worked fine.
+
+The cause was one missing `</div>` in the login block. The HTML spec says an end tag for
+an unknown element — `</sc-if>` — that meets an open `<div>` on the stack is **ignored**
+outright. So `<sc-if value="{{ isLocked }}">` never closed, and the entire staff app that
+follows it got parsed *inside* it. The moment you signed in and `isLocked` went false, the
+staff app went with it. The student view survived only because it sits further down,
+outside the broken nesting.
+
+Two `</div>` strays remain at the end of the staff block; unmatched end tags are discarded
+by the parser and change nothing. The lesson is that a file can look completely fine and
+be broken in its nesting, so before blaming the runtime, check the balance:
+
+```sh
+python3 - <<'EOF'
+import io
+from html.parser import HTMLParser
+VOID={'br','img','input','hr','meta','link','source','area','base','col','embed','param','track','wbr'}
+class P(HTMLParser):
+    def __init__(self): super().__init__(convert_charrefs=True); self.stack=[]; self.bad=[]
+    def handle_starttag(self,t,a):
+        if t not in VOID: self.stack.append((t,self.getpos()))
+    def handle_endtag(self,t):
+        if t in VOID: return
+        if not self.stack: self.bad.append('stray </%s> line %d'%(t,self.getpos()[0])); return
+        if self.stack[-1][0]!=t:
+            self.bad.append('<%s> line %d closed by </%s> line %d'%(self.stack[-1][0],self.stack[-1][1][0],t,self.getpos()[0]))
+            for i in range(len(self.stack)-1,-1,-1):
+                if self.stack[i][0]==t: del self.stack[i:]; break
+        else: self.stack.pop()
+p=P(); p.feed(io.open('Teacher Dashboard v2.dc.html',encoding='utf-8').read())
+print('unclosed:', [t for t,_ in p.stack] or 'none')
+print('mismatched:', p.bad or 'none')
+EOF
+```

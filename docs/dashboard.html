@@ -2295,11 +2295,14 @@ table{border-collapse:collapse;width:100%}
 </div>
 
 <div style="background:var(--color-bg);display:flex;align-items:center;justify-content:center;padding:40px 32px">
-<form onSubmit="{{ login }}" style="width:min(400px,100%);background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:20px;padding:26px;box-shadow:0 18px 50px -24px rgba(15,19,24,.28);animation:rise .25s ease both">
-<h2 style="font-size:24px;line-height:1.15">כניסה לחשבון</h2>
-<p style="margin-top:7px;font:400 13.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">שם המשתמש והסיסמה נמסרים על ידי המשרד. אין הרשמה עצמית.</p>
+<div style="width:min(400px,100%);background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:20px;padding:26px;box-shadow:0 18px 50px -24px rgba(15,19,24,.28);animation:rise .25s ease both">
 
-<label style="display:flex;flex-direction:column;gap:6px;margin-top:20px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">שם משתמש</span>
+<sc-if value="{{ isAuthLogin }}" hint-placeholder-val="{{ true }}">
+<form onSubmit="{{ login }}">
+<h2 style="font-size:24px;line-height:1.15">כניסה לחשבון</h2>
+<p style="margin-top:7px;font:400 13.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">חשבון קיים מהמשרד, או חשבון שיצרת בעצמך בהרשמה.</p>
+
+<label style="display:flex;flex-direction:column;gap:6px;margin-top:20px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">שם משתמש או אימייל</span>
 <input name="user" autoComplete="username" placeholder="yotam" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
 </label>
 <label style="display:flex;flex-direction:column;gap:6px;margin-top:13px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">סיסמה</span>
@@ -2312,35 +2315,92 @@ table{border-collapse:collapse;width:100%}
 
 <button type="submit" style="width:100%;height:44px;margin-top:18px;font:600 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:11px;cursor:pointer" style-hover="background:var(--color-accent)">התחברות</button>
 
+<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px">
+<a href="#" onClick="{{ goSignup }}" style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">אין לך חשבון? הרשמה</a>
+<a href="#" onClick="{{ goForgot }}" style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">שכחת סיסמה?</a>
+</div>
+</form>
+
 <div style="display:flex;align-items:center;gap:10px;margin-top:22px">
 <span style="height:1px;flex:1;background:var(--color-neutral-200)"></span>
-<span style="font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);letter-spacing:.06em">כניסה מהירה לדמו</span>
+<span style="font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);letter-spacing:.06em">אין לך חשבון?</span>
 <span style="height:1px;flex:1;background:var(--color-neutral-200)"></span>
 </div>
-<div style="display:flex;flex-direction:column;gap:7px;margin-top:13px">
-<button type="button" onClick="{{ demoTeacher }}" style="display:flex;align-items:center;gap:10px;text-align:right;padding:10px 12px;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:11px;cursor:pointer" style-hover="background:var(--color-accent-100);border-color:var(--color-accent-300)">
-<span style="width:28px;height:28px;flex:none;border-radius:9px;background:var(--color-accent-100);color:var(--color-accent-700);display:grid;place-items:center;font:700 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">י״ב</span>
-<span style="line-height:1.3"><span style="display:block;font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">יותם ברוך · מורה</span><span style="display:block;font:400 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">yotam / ns2026</span></span>
-</button>
-<button type="button" onClick="{{ demoOffice }}" style="display:flex;align-items:center;gap:10px;text-align:right;padding:10px 12px;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:11px;cursor:pointer" style-hover="background:var(--color-accent-100);border-color:var(--color-accent-300)">
-<span style="width:28px;height:28px;flex:none;border-radius:9px;background:var(--color-neutral-200);color:var(--color-neutral-800);display:grid;place-items:center;font:700 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">אל</span>
-<span style="line-height:1.3"><span style="display:block;font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">אלון · אדמין</span><span style="display:block;font:400 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">office / ns2026</span></span>
-</button>
-<button type="button" onClick="{{ demoPedago }}" style="display:flex;align-items:center;gap:10px;text-align:right;padding:10px 12px;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:11px;cursor:pointer" style-hover="background:var(--color-accent-100);border-color:var(--color-accent-300)">
-<span style="width:28px;height:28px;flex:none;border-radius:9px;background:var(--color-accent-2-100);color:var(--color-accent-2-700);display:grid;place-items:center;font:700 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">מ״ג</span>
-<span style="line-height:1.3"><span style="display:block;font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">מושיק גואטה · מנהל פדגוגי</span><span style="display:block;font:400 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">pedago / ns2026</span></span>
-</button>
-<button type="button" onClick="{{ demoAdmit }}" style="display:flex;align-items:center;gap:10px;text-align:right;padding:10px 12px;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:11px;cursor:pointer" style-hover="background:var(--color-accent-100);border-color:var(--color-accent-300)">
-<span style="width:28px;height:28px;flex:none;border-radius:9px;background:var(--color-warning-tint);color:var(--color-warning-ink);display:grid;place-items:center;font:700 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">נ</span>
-<span style="line-height:1.3"><span style="display:block;font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">נועה · מנהלת קבלה</span><span style="display:block;font:400 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">noa / ns2026</span></span>
-</button>
-<button type="button" onClick="{{ demoStudent }}" style="display:flex;align-items:center;gap:10px;text-align:right;padding:10px 12px;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:11px;cursor:pointer" style-hover="background:var(--color-accent-100);border-color:var(--color-accent-300)">
-<span style="width:28px;height:28px;flex:none;border-radius:9px;background:var(--color-accent-100);color:var(--color-accent-700);display:grid;place-items:center;font:700 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">נ״כ</span>
-<span style="line-height:1.3"><span style="display:block;font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">נועה כהן · תלמידה</span><span style="display:block;font:400 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">noa.cohen / ns2026</span></span>
-</button>
+<p style="margin-top:13px;font:400 12.5px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">חשבונות נפתחים על ידי משרד בית הספר. אם נפתח לך חשבון וקיבלת סיסמה זמנית — אפשר להיכנס איתה ולהחליף אותה דרך "שכחת סיסמה?".</p>
+</sc-if>
+
+<sc-if value="{{ isAuthSignup }}">
+<form onSubmit="{{ signup }}">
+<h2 style="font-size:24px;line-height:1.15">יצירת חשבון</h2>
+<p style="margin-top:7px;font:400 13.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">נרשמים עם אימייל וסיסמה שתבחר/י בעצמך. החשבון נפתח לאחר אישור של משרד בית הספר.</p>
+
+<label style="display:flex;flex-direction:column;gap:6px;margin-top:20px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">שם מלא</span>
+<input name="name" autoComplete="name" placeholder="השם שלך" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+<div style="display:flex;background:var(--color-neutral-200);border-radius:11px;padding:3px;gap:3px;margin-top:13px">
+<button type="button" onClick="{{ setSignupTeacher }}" style="flex:1;height:32px;border:none;border-radius:8px;cursor:pointer;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ signupRoleFg.teacher }};background:{{ signupRoleBg.teacher }}">מורה</button>
+<button type="button" onClick="{{ setSignupStudent }}" style="flex:1;height:32px;border:none;border-radius:8px;cursor:pointer;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ signupRoleFg.student }};background:{{ signupRoleBg.student }}">תלמיד/ה</button>
 </div>
-<p style="margin-top:16px;font:400 11.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500)">בפרוטוטייפ הסיסמאות גלויות לצורך הדגמה. בגרסה האמיתית הכניסה תהיה דרך חשבון Google של בית הספר, וההרשאה תיאכף בצד השרת.</p>
+<input type="hidden" name="role" value="{{ signupRole }}">
+<label style="display:flex;flex-direction:column;gap:6px;margin-top:13px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">אימייל</span>
+<input name="email" type="email" autoComplete="email" placeholder="name@example.com" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+<label style="display:flex;flex-direction:column;gap:6px;margin-top:13px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">סיסמה</span>
+<input name="pass" type="password" autoComplete="new-password" placeholder="לפחות 6 תווים" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+<label style="display:flex;flex-direction:column;gap:6px;margin-top:13px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">אימות סיסמה</span>
+<input name="pass2" type="password" autoComplete="new-password" placeholder="שוב, לוודא שתאמת" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+
+<sc-if value="{{ hasSignupError }}">
+<div style="display:flex;align-items:center;gap:9px;margin-top:13px;background:var(--color-critical-tint);border-radius:10px;padding:10px 12px;font:500 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-critical)"><span style="width:7px;height:7px;border-radius:50%;background:var(--color-critical-mid);flex:none"></span>{{ signupError }}</div>
+</sc-if>
+<sc-if value="{{ hasSignupNote }}">
+<div style="display:flex;align-items:flex-start;gap:9px;margin-top:13px;background:var(--color-positive-tint);border-radius:10px;padding:10px 12px;font:500 13px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-positive-ink)"><span style="width:7px;height:7px;margin-top:6px;border-radius:50%;background:var(--color-positive);flex:none"></span>{{ signupNote }}</div>
+</sc-if>
+
+<button type="submit" style="width:100%;height:44px;margin-top:18px;font:600 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:11px;cursor:pointer" style-hover="background:var(--color-accent)">יצירת חשבון</button>
+<a href="#" onClick="{{ goLogin }}" style="display:block;margin-top:14px;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">כבר יש לך חשבון? כניסה</a>
 </form>
+</sc-if>
+
+<sc-if value="{{ isAuthForgot }}">
+<form onSubmit="{{ forgotSubmit }}">
+<h2 style="font-size:24px;line-height:1.15">שחזור סיסמה</h2>
+<p style="margin-top:7px;font:400 13.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">נשלח קישור לבחירת סיסמה חדשה לאימייל שרשום על החשבון. הקישור תקף לשעה אחת.</p>
+<label style="display:flex;flex-direction:column;gap:6px;margin-top:20px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">שם משתמש או אימייל</span>
+<input name="user" autoComplete="username" placeholder="yotam" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+<sc-if value="{{ hasForgotError }}">
+<div style="display:flex;align-items:center;gap:9px;margin-top:13px;background:var(--color-critical-tint);border-radius:10px;padding:10px 12px;font:500 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-critical)"><span style="width:7px;height:7px;border-radius:50%;background:var(--color-critical-mid);flex:none"></span>{{ forgotError }}</div>
+</sc-if>
+<sc-if value="{{ hasForgotNote }}">
+<div style="display:flex;align-items:flex-start;gap:9px;margin-top:13px;background:var(--color-positive-tint);border-radius:10px;padding:10px 12px;font:500 13px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-positive-ink)"><span style="width:7px;height:7px;margin-top:6px;border-radius:50%;background:var(--color-positive);flex:none"></span>{{ forgotNote }}</div>
+</sc-if>
+<button type="submit" style="width:100%;height:44px;margin-top:18px;font:600 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:11px;cursor:pointer" style-hover="background:var(--color-accent)">שליחת קישור</button>
+<a href="#" onClick="{{ goLogin }}" style="display:block;margin-top:14px;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">חזרה לכניסה</a>
+</form>
+</sc-if>
+
+<sc-if value="{{ isAuthReset }}">
+<form onSubmit="{{ resetSubmit }}">
+<h2 style="font-size:24px;line-height:1.15">בחירת סיסמה חדשה</h2>
+<p style="margin-top:7px;font:400 13.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ resetIntro }}</p>
+<label style="display:flex;flex-direction:column;gap:6px;margin-top:20px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">סיסמה חדשה</span>
+<input name="pass" type="password" autoComplete="new-password" placeholder="לפחות 6 תווים" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+<label style="display:flex;flex-direction:column;gap:6px;margin-top:13px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">אימות סיסמה</span>
+<input name="pass2" type="password" autoComplete="new-password" placeholder="שוב, לוודא שתאמת" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+<sc-if value="{{ hasResetError }}">
+<div style="display:flex;align-items:center;gap:9px;margin-top:13px;background:var(--color-critical-tint);border-radius:10px;padding:10px 12px;font:500 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-critical)"><span style="width:7px;height:7px;border-radius:50%;background:var(--color-critical-mid);flex:none"></span>{{ resetError }}</div>
+</sc-if>
+<button type="submit" style="width:100%;height:44px;margin-top:18px;font:600 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:11px;cursor:pointer" style-hover="background:var(--color-accent)">שמירת סיסמה חדשה</button>
+<a href="#" onClick="{{ goLogin }}" style="display:block;margin-top:14px;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">חזרה לכניסה</a>
+</form>
+</sc-if>
+
+</div>
 </div>
 </div>
 </sc-if>
@@ -2386,6 +2446,10 @@ table{border-collapse:collapse;width:100%}
 <a href="#" onClick="{{ go.planner }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navColor.planner }};background:{{ navBg.planner }}" style-hover="background:var(--color-neutral-900);color:#fff">
 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 13.6 8 18 9.6 13.6 11.2 12 15.6 10.4 11.2 6 9.6 10.4 8z"/><path d="M18 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg>בונה מערך שיעור</a>
 </sc-if>
+<sc-if value="{{ can.syllabus }}" hint-placeholder-val="{{ true }}">
+<a href="#" onClick="{{ go.syllabus }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navColor.syllabus }};background:{{ navBg.syllabus }}" style-hover="background:var(--color-neutral-900);color:#fff">
+<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v16H6z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>בונה סילבוס</a>
+</sc-if>
 <sc-if value="{{ isTeacherRole }}">
 <a href="#" onClick="{{ go.feedback }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navColor.feedback }};background:{{ navBg.feedback }}" style-hover="background:var(--color-neutral-900);color:#fff">
 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4H4v12h4v4l4-4h8z"/><path d="M8 10h8M8 13h5"/></svg>פידבק שלי</a>
@@ -2402,6 +2466,8 @@ table{border-collapse:collapse;width:100%}
 <a href="#" onClick="{{ go.admissions }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navColor.admissions }};background:{{ navBg.admissions }}" style-hover="background:var(--color-neutral-900);color:#fff">
 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.5v10"/><path d="M8.5 11 12 14.5 15.5 11"/><path d="M4.5 16v3.5h15V16"/></svg>קבלה ורישום</a>
 </sc-if>
+<a href="#" onClick="{{ go.tasks }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navColor.tasks }};background:{{ navBg.tasks }}" style-hover="background:var(--color-neutral-900);color:#fff">
+<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="4.5" width="15" height="15" rx="3"/><path d="M8.5 12.5l2.2 2.2 4.8-5"/></svg>משימות למושיק<sc-if value="{{ hasOpenTasks }}"><span style="margin-inline-start:auto;display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:var(--color-critical);color:#fff;font:700 10.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ openTasksCount }}</span></sc-if></a>
 <a href="#" onClick="{{ go.teachers }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navColor.teachers }};background:{{ navBg.teachers }}" style-hover="background:var(--color-neutral-900);color:#fff">
 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="10" r="2.6"/><path d="M6.5 18.5c1-2.4 3-3.4 5.5-3.4s4.5 1 5.5 3.4"/></svg>מורים</a>
 <sc-if value="{{ showStaffNav }}" hint-placeholder-val="{{ true }}">
@@ -3241,6 +3307,122 @@ table{border-collapse:collapse;width:100%}
 </section>
 </sc-if>
 
+<sc-if value="{{ isSyllabus }}">
+<section data-screen-label="בונה סילבוס" style="animation:rise .25s ease both">
+<h1 style="font-size:30px;line-height:1.1">{{ sylTitle }}</h1>
+<p style="margin-top:6px;font:400 14.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);max-width:78ch">{{ sylSubtitle }}</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px;margin-top:20px;align-items:start">
+
+<div style="display:flex;flex-direction:column;gap:14px">
+<sc-if value="{{ showSylForm }}">
+<form onSubmit="{{ addSyllabus }}" style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;padding:18px;box-shadow:0 1px 2px rgba(16,24,40,.04);display:flex;flex-direction:column;gap:12px">
+<h5 style="font-size:13.5px">סילבוס חדש</h5>
+<label style="display:flex;flex-direction:column;gap:5px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">שם הסילבוס</span>
+<input name="title" placeholder="לדוגמה: מסלול B1 — סמסטר סתיו" style="height:38px;padding:0 11px;font:400 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:9px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+<div style="display:flex;background:var(--color-neutral-200);border-radius:11px;padding:3px;gap:3px">
+<button type="button" onClick="{{ setSylKindStudent }}" style="flex:1;height:32px;border:none;border-radius:8px;cursor:pointer;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ sylKindFg.student }};background:{{ sylKindBg.student }}">תלמיד/ה</button>
+<button type="button" onClick="{{ setSylKindGroup }}" style="flex:1;height:32px;border:none;border-radius:8px;cursor:pointer;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ sylKindFg.group }};background:{{ sylKindBg.group }}">קבוצה</button>
+</div>
+<input type="hidden" name="kind" value="{{ sylKind }}">
+<sc-if value="{{ sylIsStudent }}" hint-placeholder-val="{{ true }}">
+<sc-if value="{{ sylNoStudentOpts }}">
+<p style="font:400 12.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">עוד אין לך תלמידים משויכים במערכת — אפשר לשייך תלמיד במסך "תלמידים", או לבחור "קבוצה" למעלה.</p>
+</sc-if>
+<sc-if value="{{ sylStudentOpts.length }}" hint-placeholder-val="{{ true }}">
+<label style="display:flex;flex-direction:column;gap:5px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">תלמיד/ה</span>
+<select name="targetId" style="height:38px;padding:0 11px;font:400 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-paper);border:1px solid var(--color-neutral-300);border-radius:9px;cursor:pointer"><sc-for list="{{ sylStudentOpts }}" as="o" hint-placeholder-count="4"><option value="{{ o.id }}">{{ o.name }}</option></sc-for></select>
+</label>
+</sc-if>
+</sc-if>
+<sc-if value="{{ sylIsGroup }}">
+<sc-if value="{{ sylNoGroupOpts }}">
+<p style="font:400 12.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">עוד אין לך קבוצות משויכות במערכת.</p>
+</sc-if>
+<sc-if value="{{ sylGroupOpts.length }}" hint-placeholder-val="{{ true }}">
+<label style="display:flex;flex-direction:column;gap:5px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">קבוצה</span>
+<select name="targetId" style="height:38px;padding:0 11px;font:400 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-paper);border:1px solid var(--color-neutral-300);border-radius:9px;cursor:pointer"><sc-for list="{{ sylGroupOpts }}" as="o" hint-placeholder-count="3"><option value="{{ o.id }}">{{ o.name }}</option></sc-for></select>
+</label>
+</sc-if>
+</sc-if>
+<label style="display:flex;flex-direction:column;gap:5px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">להתחיל מתבנית מחברת (רשות)</span>
+<select name="templateUrl" style="height:38px;padding:0 11px;font:400 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-paper);border:1px solid var(--color-neutral-300);border-radius:9px;cursor:pointer">
+<option value="">בלי תבנית — מתחילים מדף חלק</option>
+<sc-for list="{{ sylTemplateOpts }}" as="o" hint-placeholder-count="4"><option value="{{ o.url }}">{{ o.label }}</option></sc-for>
+</select>
+</label>
+<button type="submit" style="height:40px;font:600 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:10px;cursor:pointer" style-hover="background:var(--color-accent)">צור סילבוס</button>
+</form>
+</sc-if>
+
+<div style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;padding:18px;box-shadow:0 1px 2px rgba(16,24,40,.04)">
+<h5 style="font-size:13.5px">הסילבוסים</h5>
+<sc-if value="{{ noSyllabi }}">
+<p style="margin-top:10px;font:400 13.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">עוד אין סילבוסים. הראשון שתבנה יופיע כאן.</p>
+</sc-if>
+<div style="display:flex;flex-direction:column;gap:9px;margin-top:12px">
+<sc-for list="{{ sylRows }}" as="r" hint-placeholder-count="3">
+<button onClick="{{ r.open }}" style="display:flex;flex-direction:column;gap:4px;text-align:right;padding:11px 13px;background:{{ r.selBg }};border:1px solid {{ r.selBorder }};border-radius:12px;cursor:pointer">
+<span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+<span style="font:700 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ r.title }}</span>
+<span style="margin-inline-start:auto;font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500)">{{ r.sessionCount }} מפגשים</span>
+</span>
+<span style="font:400 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ r.targetName }} · {{ r.lang }} {{ r.level }} · {{ r.owner }}</span>
+</button>
+</sc-for>
+</div>
+</div>
+</div>
+
+<sc-if value="{{ hasSelectedSyl }}" hint-placeholder-val="{{ true }}">
+<div style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;padding:18px;box-shadow:0 1px 2px rgba(16,24,40,.04)">
+<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">
+<div>
+<h5 style="font-size:15px">{{ selectedSyl.title }}</h5>
+<p style="margin-top:4px;font:400 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ selectedSyl.targetName }} · {{ selectedSyl.lang }} {{ selectedSyl.level }} · נבנה ע"י {{ selectedSyl.owner }}</p>
+</div>
+<div style="display:flex;gap:6px">
+<button onClick="{{ selectedSyl.copyAiPrompt }}" style="height:34px;padding:0 13px;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:9px;cursor:pointer;white-space:nowrap" style-hover="background:var(--color-accent)">AI: הצע המשך</button>
+<sc-if value="{{ selectedSyl.canEdit }}">
+<button onClick="{{ selectedSyl.remove }}" title="מחק סילבוס" style="width:34px;height:34px;font:400 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600);background:var(--color-neutral-100);border:none;border-radius:9px;cursor:pointer" style-hover="background:var(--color-critical-tint);color:var(--color-critical)">✕</button>
+</sc-if>
+</div>
+</div>
+
+<sc-if value="{{ selectedSyl.noSessions }}">
+<p style="margin-top:14px;font:400 13.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">עוד אין מפגשים בסילבוס הזה. הוסיפו את הראשון למטה, או השתמשו ב-AI כדי לקבל הצעה מלאה.</p>
+</sc-if>
+<div style="display:flex;flex-direction:column;gap:9px;margin-top:14px">
+<sc-for list="{{ selectedSyl.sessions }}" as="sess" hint-placeholder-count="3">
+<div style="display:flex;gap:10px;align-items:flex-start;background:var(--color-neutral-100);border-radius:12px;padding:11px 13px">
+<span style="flex:none;width:22px;height:22px;border-radius:50%;background:var(--color-neutral-900);color:#fff;display:grid;place-items:center;font:700 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ sess.n }}</span>
+<div style="flex:1;min-width:0">
+<span style="display:block;font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ sess.title }}</span>
+<sc-if value="{{ sess.hasNotes }}"><span style="display:block;margin-top:3px;font:400 12.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">{{ sess.notes }}</span></sc-if>
+</div>
+<sc-if value="{{ selectedSyl.canEdit }}">
+<button onClick="{{ sess.remove }}" title="הסר" style="flex:none;width:24px;height:24px;font:400 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);background:transparent;border:none;border-radius:7px;cursor:pointer" style-hover="background:var(--color-critical-tint);color:var(--color-critical)">✕</button>
+</sc-if>
+</div>
+</sc-for>
+</div>
+
+<sc-if value="{{ selectedSyl.canEdit }}">
+<form onSubmit="{{ selectedSyl.addSession }}" style="display:flex;flex-direction:column;gap:8px;margin-top:16px;padding-top:16px;border-top:1px solid var(--color-neutral-200)">
+<span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">להוסיף מפגש</span>
+<input name="title" placeholder="כותרת המפגש" style="height:38px;padding:0 11px;font:400 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:9px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+<input name="notes" placeholder="הערה קצרה (רשות)" style="height:38px;padding:0 11px;font:400 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:9px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+<button type="submit" style="height:36px;font:600 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-800);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:9px;cursor:pointer" style-hover="background:var(--color-accent-100);border-color:var(--color-accent-300);color:var(--color-accent-700)">הוסף מפגש</button>
+</form>
+</sc-if>
+</div>
+</sc-if>
+
+</div>
+</section>
+</sc-if>
+
 <sc-if value="{{ isGroups }}">
 <section data-screen-label="שיעורים קבוצתיים" style="animation:rise .25s ease both">
 <h1 style="font-size:30px;line-height:1.1">שיעורים קבוצתיים</h1>
@@ -3632,7 +3814,7 @@ table{border-collapse:collapse;width:100%}
 <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap">
 <div>
 <h1 style="font-size:30px;line-height:1.1">משתמשים והרשאות</h1>
-<p style="margin-top:6px;font:400 14.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);max-width:78ch">מי נכנס למערכת, עם איזה שם משתמש וסיסמה, ואילו מסכים הוא רואה. כיבוי מסך אצל מורה מסתיר אותו מהתפריט שלה מיד.</p>
+<p style="margin-top:6px;font:400 14.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);max-width:78ch">מי נכנס למערכת, עם איזה שם משתמש, ואילו מסכים הוא רואה. כיבוי מסך אצל מורה מסתיר אותו מהתפריט שלה מיד. הסיסמאות שמורות מוצפנות ואי אפשר לראות אותן — אפשר לקבוע חדשה או לשלוח קישור איפוס.</p>
 </div>
 <span style="font:600 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600);white-space:nowrap">{{ accountCount }}</span>
 </div>
@@ -3686,7 +3868,8 @@ table{border-collapse:collapse;width:100%}
 <input value="{{ a.name }}" onChange="{{ a.onName }}" style="flex:1;min-width:150px;height:36px;padding:0 10px;font:700 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:transparent;border:1px solid transparent;border-radius:9px;outline:none" style-hover="background:var(--color-neutral-200)" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
 <select value="{{ a.role }}" onChange="{{ a.onRole }}" style="flex:none;height:30px;padding:0 9px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ a.roleFg }};background:{{ a.roleBg }};border:none;border-radius:999px;cursor:pointer"><sc-for list="{{ roleOpts }}" as="o" hint-placeholder-count="3"><option value="{{ o }}">{{ o }}</option></sc-for></select>
 <button onClick="{{ a.toggleActive }}" style="flex:none;height:30px;padding:0 11px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:{{ a.activeBg }};color:{{ a.activeFg }};border:none;border-radius:999px;cursor:pointer;white-space:nowrap" style-hover="filter:brightness(.96)">{{ a.activeLabel }}</button>
-<button onClick="{{ a.copyCreds }}" title="העתק פרטי כניסה" style="flex:none;height:30px;padding:0 11px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);background:transparent;border:1px solid var(--color-neutral-300);border-radius:999px;cursor:pointer;white-space:nowrap" style-hover="background:var(--color-neutral-100);color:var(--color-text)">העתק פרטים</button>
+<button onClick="{{ a.copyCreds }}" title="העתק שם משתמש ומייל" style="flex:none;height:30px;padding:0 11px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);background:transparent;border:1px solid var(--color-neutral-300);border-radius:999px;cursor:pointer;white-space:nowrap" style-hover="background:var(--color-neutral-100);color:var(--color-text)">העתק פרטים</button>
+<button onClick="{{ a.resetLink }}" title="צור קישור לבחירת סיסמה — תקף לשעה" style="flex:none;height:30px;padding:0 11px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);background:transparent;border:1px solid var(--color-neutral-300);border-radius:999px;cursor:pointer;white-space:nowrap" style-hover="background:var(--color-neutral-100);color:var(--color-text)">קישור איפוס</button>
 <button onClick="{{ a.remove }}" title="מחק חשבון" style="flex:none;width:28px;height:28px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);background:transparent;border:none;border-radius:8px;cursor:pointer" style-hover="background:var(--color-critical-tint);color:var(--color-critical)">✕</button>
 </div>
 
@@ -3694,8 +3877,8 @@ table{border-collapse:collapse;width:100%}
 <label style="display:flex;flex-direction:column;gap:4px"><span style="font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">שם משתמש</span>
 <input value="{{ a.user }}" onChange="{{ a.onUser }}" style="height:36px;padding:0 10px;font:500 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:9px;outline:none;direction:ltr;text-align:left" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
 </label>
-<label style="display:flex;flex-direction:column;gap:4px"><span style="font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">סיסמה</span>
-<input value="{{ a.pass }}" onChange="{{ a.onPass }}" style="height:36px;padding:0 10px;font:500 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:9px;outline:none;direction:ltr;text-align:left" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+<label style="display:flex;flex-direction:column;gap:4px"><span style="font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">סיסמה חדשה</span>
+<input value="{{ a.passDraft }}" onChange="{{ a.onPass }}" onBlur="{{ a.savePass }}" type="password" autoComplete="new-password" placeholder="לקביעת סיסמה חדשה" style="height:36px;padding:0 10px;font:500 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:9px;outline:none;direction:ltr;text-align:left" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
 </label>
 <label style="display:flex;flex-direction:column;gap:4px"><span style="font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">מייל</span>
 <input value="{{ a.email }}" onChange="{{ a.onEmail }}" style="height:36px;padding:0 10px;font:500 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:9px;outline:none;direction:ltr;text-align:left" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
@@ -3905,6 +4088,88 @@ table{border-collapse:collapse;width:100%}
 </section>
 </sc-if>
 
+<sc-if value="{{ isTasks }}">
+<section data-screen-label="משימות למושיק" style="animation:rise .25s ease both">
+<h1 style="font-size:30px;line-height:1.1">{{ tasksTitle }}</h1>
+<p style="margin-top:6px;font:400 14.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);max-width:74ch">{{ tasksSubtitle }}</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px;margin-top:20px;align-items:start">
+
+<form onSubmit="{{ addTask }}" style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;padding:18px;box-shadow:0 1px 2px rgba(16,24,40,.04);display:flex;flex-direction:column;gap:13px">
+<h5 style="font-size:13.5px">{{ taskFormLabel }}</h5>
+<label style="display:flex;flex-direction:column;gap:5px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">כותרת</span>
+<input name="title" placeholder="לדוגמה: לאשר את חומרי הרמה החדשה" style="height:38px;padding:0 12px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-200);border-radius:9px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 128px;gap:9px">
+<label style="display:flex;flex-direction:column;gap:5px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">מי שולח</span>
+<input value="{{ myName }}" disabled style="height:38px;padding:0 12px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-200);color:var(--color-neutral-600);border:1px solid var(--color-neutral-200);border-radius:9px">
+</label>
+<label style="display:flex;flex-direction:column;gap:5px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">דחיפות</span>
+<select name="priority" style="height:38px;padding:0 12px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:9px;cursor:pointer">
+<option value="רגיל">רגיל</option>
+<option value="דחוף">דחוף</option>
+</select>
+</label>
+</div>
+<label style="display:flex;flex-direction:column;gap:5px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">פרטים</span>
+<textarea name="note" placeholder="פירוט קצר של מה שצריך" style="min-height:88px;padding:10px 12px;font:400 13.5px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-200);border-radius:10px;outline:none;resize:vertical" style-focus="background:var(--color-paper);border-color:var(--color-accent)"></textarea>
+</label>
+<button type="submit" style="height:40px;font:600 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:10px;cursor:pointer" style-hover="background:var(--color-accent)">{{ taskSubmitLabel }}</button>
+</form>
+
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;padding:18px;box-shadow:0 1px 2px rgba(16,24,40,.04)">
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px">
+<h5 style="font-size:13.5px">פתוחות</h5>
+<span style="font:400 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ openTasksCount }}</span>
+</div>
+<sc-if value="{{ noOpenTasks }}">
+<p style="margin-top:12px;font:400 13.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">אין משימות פתוחות כרגע.</p>
+</sc-if>
+<div style="display:flex;flex-direction:column;gap:11px;margin-top:13px">
+<sc-for list="{{ openTaskRows }}" as="t" hint-placeholder-count="2">
+<div style="background:var(--color-neutral-100);border-radius:12px;padding:13px 14px">
+<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+<span style="display:inline-flex;align-items:center;height:22px;padding:0 9px;border-radius:999px;font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:{{ t.prBg }};color:{{ t.prFg }}">{{ t.priority }}</span>
+<span style="font:600 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ t.title }}</span>
+<span style="margin-inline-start:auto;display:flex;align-items:center;gap:8px">
+<span style="font:400 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500)">{{ t.by }} · {{ t.when }}</span>
+<button onClick="{{ t.toggle }}" title="סמן כבוצע" style="width:26px;height:26px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-positive-ink);background:transparent;border:none;border-radius:7px;cursor:pointer" style-hover="background:var(--color-positive-tint)">✓</button>
+<button onClick="{{ t.remove }}" title="מחק" style="width:26px;height:26px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);background:transparent;border:none;border-radius:7px;cursor:pointer" style-hover="background:var(--color-critical-tint);color:var(--color-critical)">✕</button>
+</span>
+</div>
+<sc-if value="{{ t.hasNote }}">
+<p style="margin-top:8px;font:400 13.5px/1.65 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);max-width:70ch;text-wrap:pretty">{{ t.note }}</p>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;padding:18px;box-shadow:0 1px 2px rgba(16,24,40,.04)">
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px">
+<h5 style="font-size:13.5px">בוצעו</h5>
+<span style="font:400 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ doneTasksCount }}</span>
+</div>
+<sc-if value="{{ noDoneTasks }}">
+<p style="margin-top:12px;font:400 13.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">משימות שהושלמו יופיעו כאן.</p>
+</sc-if>
+<div style="display:flex;flex-direction:column;gap:9px;margin-top:13px">
+<sc-for list="{{ doneTaskRows }}" as="t" hint-placeholder-count="2">
+<div style="display:flex;align-items:center;gap:8px;padding:9px 12px;background:var(--color-neutral-100);border-radius:10px">
+<span style="color:var(--color-neutral-600);text-decoration:line-through;font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;flex:1">{{ t.title }}</span>
+<span style="font:400 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500)">{{ t.by }}</span>
+<button onClick="{{ t.toggle }}" title="פתח מחדש" style="width:24px;height:24px;font:400 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);background:transparent;border:none;border-radius:7px;cursor:pointer" style-hover="background:var(--color-neutral-200)">↺</button>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+</sc-if>
+
 <sc-if value="{{ isSettings }}">
 <section data-screen-label="הגדרות והרשאות" style="animation:rise .25s ease both">
 <h1 style="font-size:30px;line-height:1.1">הגדרות והרשאות</h1>
@@ -4045,6 +4310,9 @@ table{border-collapse:collapse;width:100%}
 <button type="submit" style="height:40px;padding:0 18px;font:600 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:10px;cursor:pointer;white-space:nowrap" style-hover="background:var(--color-accent)">הוסף לספרייה</button>
 </div>
 </form>
+</div>
+</sc-if>
+
 </div>
 </sc-if>
 
@@ -4338,11 +4606,11 @@ class Component extends DCLogic {
   /* The signed-in teacher. In the real build this comes from the login, not a constant —
      it is what scopes every list when the role is מורה. */
   ME = 'יותם ברוך';
-  LS_SESSION = 'ns.session.v1';
 
-  /* Demo accounts. In the real build these are Google Workspace logins and the role
-     comes from the server — never from the browser. */
-  LS_ACC = 'ns.accounts.v1';
+  /* A cache of the last session, so the shell can paint before
+     /api/staff/auth/me answers. NOT the source of truth — see the auth
+     block further down, and componentDidMount. */
+  LS_SESSION = 'ns.session.v1';
 
   SCREEN_KEYS = [
     { key: 'dashboard', label: 'לוח בקרה' },
@@ -4352,24 +4620,15 @@ class Component extends DCLogic {
     { key: 'materials', label: 'חומרי לימוד' },
     { key: 'calendar', label: 'יומן שבועי' },
     { key: 'planner', label: 'בונה מערך שיעור' },
+    { key: 'syllabus', label: 'בונה סילבוס' },
     { key: 'feedback', label: 'פידבק' },
     { key: 'guides', label: 'חומר הדרכה' }
   ];
   ROLE_OPTS = ['מורה', 'אדמין', 'מנהל פדגוגי', 'מנהלת קבלה', 'תלמיד'];
   allScreens() { return this.SCREEN_KEYS.map(x => x.key); }
 
-  /* The account list the office actually administers. Roles and visible screens live here. */
-  SEED_ACCOUNTS = [
-    { id: 'u1', name: 'יותם ברוך', user: 'yotam', pass: 'ns2026', email: 'yotam@newschool.co.il', role: 'מורה', active: true, screens: ['dashboard', 'students', 'notebooks', 'groups', 'materials', 'calendar', 'planner', 'feedback', 'guides'] },
-    { id: 'u2', name: 'אלון', user: 'office', pass: 'ns2026', email: 'office@newschool.co.il', role: 'אדמין', active: true, screens: null },
-    { id: 'u3', name: 'מושיק גואטה', user: 'pedago', pass: 'ns2026', email: 'moshik@newschool.co.il', role: 'מנהל פדגוגי', active: true, screens: null },
-    { id: 'u8', name: 'נועה', user: 'noa', pass: 'ns2026', email: 'noa@newschool.co.il', role: 'מנהלת קבלה', active: true, screens: null },
-    { id: 'u9', name: 'נועה כהן', user: 'noa.cohen', pass: 'ns2026', email: 'noa.cohen@gmail.com', role: 'תלמיד', sid: 's1', active: true, screens: null },
-    { id: 'u4', name: 'זואי', user: 'zoe', pass: 'ns5514', email: 'zoe@newschool.co.il', role: 'מורה', active: true, screens: ['dashboard', 'students', 'notebooks', 'groups', 'calendar', 'feedback', 'guides'] },
-    { id: 'u5', name: 'לינה אררם', user: 'lina', pass: 'ns8032', email: 'lina@newschool.co.il', role: 'מורה', active: true, screens: ['dashboard', 'students', 'notebooks', 'groups', 'materials', 'calendar', 'planner', 'feedback', 'guides'] },
-    { id: 'u6', name: 'מירקו רוסי', user: 'mirko', pass: 'ns2290', email: 'mirko@newschool.co.il', role: 'מורה', active: true, screens: ['dashboard', 'students', 'notebooks', 'calendar', 'feedback'] },
-    { id: 'u7', name: 'מוטי בן אהרון', user: 'moti', pass: 'ns7741', email: 'moti@newschool.co.il', role: 'מורה', active: false, screens: ['dashboard', 'students', 'notebooks', 'calendar', 'feedback'] }
-  ];
+  /* No seeded accounts: the account list is whatever /api/staff/users returns.
+     The first admin is created once via POST /api/staff/bootstrap. */
 
   LS_LEADS = 'ns.leads.v1';
   LS_HW = 'ns.homework.v1';
@@ -4504,11 +4763,94 @@ class Component extends DCLogic {
   };
   deleteLead(id) { this.saveLeads(this.leads().filter(l => l.id !== id)); this.flash('הפנייה הוסרה'); }
 
-  accounts() { return this.state.accounts || this.SEED_ACCOUNTS; }
-  saveAccounts(next) { this.setState({ accounts: next }); this.save(this.LS_ACC, next); }
-  patchAccount(id, patch) {
-    this.saveAccounts(this.accounts().map(a => a.id === id ? Object.assign({}, a, patch) : a));
+  /* ─── Accounts & auth · server-backed ────────────────────────────────────
+     Everything below talks to /api/staff/* (Cloudflare Worker + D1). The old
+     hardcoded USERS array and the localStorage session are gone: the browser
+     no longer decides who anyone is, or what role they hold.
+
+     localStorage keeps ONE job here — a short-lived cache of the last known
+     session, so the shell can paint before /api/staff/auth/me answers. The
+     server's answer always wins, including when it says "nobody". */
+
+  api(path, opts) {
+    const o = Object.assign({ credentials: 'same-origin', headers: {} }, opts);
+    if (o.body !== undefined && typeof o.body !== 'string') {
+      o.headers = Object.assign({ 'Content-Type': 'application/json' }, o.headers);
+      o.body = JSON.stringify(o.body);
+    }
+    return fetch(path, o)
+      .then(r => r.json().then(j => Object.assign({ status: r.status }, j)))
+      .catch(() => ({ ok: false, status: 0, error: 'אין חיבור לשרת. נסו שוב.' }));
   }
+
+  /* ── the account list (admin panel) ── */
+
+  accounts() { return this.state.accounts || []; }
+
+  loadAccounts() {
+    return this.api('/api/staff/users').then(r => {
+      if (r.ok) this.setState({ accounts: r.users });
+      return r;
+    });
+  }
+
+  mergeAccount(user) {
+    if (!user) return;
+    this.setState({ accounts: this.accounts().map(a => a.id === user.id ? user : a) });
+  }
+
+  /* The panel edits inline, on every keystroke. Update locally at once so the
+     field stays responsive, then send one merged PATCH after the typing
+     stops — a request per character would be both slow and a write storm. */
+  _patchQueue = {};
+  _patchTimers = {};
+  patchAccount(id, patch) {
+    this.setState({
+      accounts: this.accounts().map(a => a.id === id ? Object.assign({}, a, patch) : a)
+    });
+    this._patchQueue[id] = Object.assign(this._patchQueue[id] || {}, patch);
+    clearTimeout(this._patchTimers[id]);
+    this._patchTimers[id] = setTimeout(() => this.flushAccount(id), 600);
+  }
+
+  flushAccount(id) {
+    const patch = this._patchQueue[id];
+    if (!patch) return Promise.resolve();
+    delete this._patchQueue[id];
+    return this.api('/api/staff/users/' + id, { method: 'PATCH', body: patch }).then(r => {
+      if (r.ok) { this.mergeAccount(r.user); return r; }
+      /* The server refused — reload so the screen stops showing a change
+         that did not happen. */
+      this.flash(r.error || 'השמירה נכשלה');
+      return this.loadAccounts();
+    });
+  }
+
+  setPassDraft(id, pass) {
+    this.setState({ passDrafts: Object.assign({}, this.state.passDrafts, { [id]: pass }) });
+  }
+
+  /* Sent straight through on blur — never through the debounce queue, and
+     the draft is cleared afterwards so it does not linger in the DOM. */
+  commitPassword(id) {
+    const pass = (this.state.passDrafts || {})[id] || '';
+    if (!pass) return;
+    if (pass.length < 6) { this.flash('הסיסמה צריכה להיות לפחות 6 תווים'); return; }
+    this.setPassDraft(id, '');
+    this.api('/api/staff/users/' + id, { method: 'PATCH', body: { pass } }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'השמירה נכשלה'); return; }
+      this.mergeAccount(r.user);
+      this.flash('הסיסמה עודכנה — החיבורים הפתוחים של החשבון נותקו');
+    });
+  }
+
+  accountResetLink(id) {
+    this.api('/api/staff/users/' + id + '/reset', { method: 'POST' }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא הצלחנו ליצור קישור'); return; }
+      this.copy(r.link, 'קישור איפוס הועתק — תקף לשעה אחת, לשימוש חד־פעמי');
+    });
+  }
+
   toggleScreen(id, key) {
     const a = this.accounts().find(x => x.id === id);
     if (!a) return;
@@ -4516,62 +4858,190 @@ class Component extends DCLogic {
     const next = cur.indexOf(key) > -1 ? cur.filter(k => k !== key) : cur.concat(key);
     this.patchAccount(id, { screens: next });
   }
+
   addAccount = (e) => {
     e.preventDefault();
-    const d = Object.fromEntries(new FormData(e.target).entries());
+    const form = e.target;
+    const d = Object.fromEntries(new FormData(form).entries());
     const name = String(d.name || '').trim(), user = String(d.user || '').trim().toLowerCase();
     if (!name || !user) { this.flash('צריך שם ושם משתמש'); return; }
-    if (this.accounts().some(a => a.user === user)) { this.flash('שם המשתמש הזה כבר קיים'); return; }
-    this.saveAccounts([{
-      id: 'u' + Date.now(), name, user,
-      pass: String(d.pass || '').trim() || 'ns' + Math.floor(1000 + Math.random() * 8999),
-      email: String(d.email || '').trim() || user + '@newschool.co.il',
-      role: d.role || 'מורה', active: true,
-      screens: ['dashboard', 'students', 'notebooks', 'groups', 'calendar', 'feedback', 'guides']
-    }].concat(this.accounts()));
-    e.target.reset();
-    this.flash('החשבון נוצר — אפשר להעביר את הפרטים למורה');
+    this.api('/api/staff/users', {
+      method: 'POST',
+      body: {
+        name, user,
+        email: String(d.email || '').trim(),
+        pass: String(d.pass || '').trim(),
+        role: d.role || 'מורה'
+      }
+    }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'יצירת החשבון נכשלה'); return; }
+      form.reset();
+      this.setState({ accounts: [r.user].concat(this.accounts()) });
+      /* The only moment this password is readable. Put it on the clipboard
+         so the admin can hand it over before it is gone for good. */
+      this.copy(
+        'כניסה לחדר המורים של New School\nשם משתמש: ' + r.user.user +
+        '\nסיסמה זמנית: ' + r.tempPassword + '\nמייל: ' + r.user.email,
+        'החשבון נוצר — פרטי הכניסה הועתקו. הסיסמה הזמנית לא תוצג שוב.');
+    });
   };
+
   deleteAccount(id) {
-    this.saveAccounts(this.accounts().filter(a => a.id !== id));
-    this.flash('החשבון נמחק');
+    this.api('/api/staff/users/' + id, { method: 'DELETE' }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'המחיקה נכשלה'); return; }
+      this.setState({ accounts: this.accounts().filter(a => a.id !== id) });
+      this.flash('החשבון נמחק');
+    });
   }
 
-  USERS = [
-    { user: 'yotam', pass: 'ns2026', role: 'מורה', name: 'יותם ברוך', initials: 'י״ב', teacherName: 'יותם ברוך', label: 'מורה לאנגלית' },
-    { user: 'office', pass: 'ns2026', role: 'אדמין', name: 'אלון', initials: 'אל', label: 'אדמין · משרד' },
-    { user: 'pedago', pass: 'ns2026', role: 'מנהל פדגוגי', name: 'מושיק גואטה', initials: 'מ״ג', label: 'מנהל פדגוגי' }
-  ];
+  /* ── session ── */
 
   session() { return this.state.session; }
   meName() { const s = this.session(); return (s && s.teacherName) || this.ME; }
+
   login = (e) => {
     e.preventDefault();
+    if (this.state.authBusy) return;
     const d = Object.fromEntries(new FormData(e.target).entries());
-    const a = this.accounts().find(x => x.user === String(d.user || '').trim().toLowerCase() && x.pass === d.pass);
-    if (!a) { this.setState({ loginError: 'שם משתמש או סיסמה שגויים' }); return; }
-    if (a.active === false) { this.setState({ loginError: 'החשבון הושבת. לפנות למשרד בית הספר.' }); return; }
-    this.startSession(a);
+    this.setState({ authBusy: true, loginError: '' });
+    this.api('/api/staff/auth/login', {
+      method: 'POST',
+      body: { user: String(d.user || '').trim(), pass: String(d.pass || '') }
+    }).then(r => {
+      this.setState({ authBusy: false });
+      if (!r.ok) { this.setState({ loginError: r.error || 'שם משתמש או סיסמה שגויים' }); return; }
+      this.startSession(r.user);
+      if (r.user.mustChange) {
+        this.flash('נכנסת עם סיסמה זמנית — כדאי להחליף אותה דרך "שכחת סיסמה?"');
+      }
+    });
   };
-  quickLogin(user) {
-    const a = this.accounts().find(x => x.user === user);
-    if (a) this.startSession(a);
+
+  goLogin = () => this.setState({
+    authMode: 'login', loginError: '', signupError: '', signupNote: '',
+    forgotError: '', forgotNote: '', resetError: '', resetToken: null
+  });
+  goSignup = () => this.setState({ authMode: 'signup', signupError: '', signupNote: '' });
+  goForgot = () => this.setState({ authMode: 'forgot', forgotError: '', forgotNote: '' });
+
+  signup = (e) => {
+    e.preventDefault();
+    if (this.state.authBusy) return;
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    const name = String(d.name || '').trim();
+    const email = String(d.email || '').trim().toLowerCase();
+    const pass = String(d.pass || ''), pass2 = String(d.pass2 || '');
+    /* Cheap checks stay client-side for the instant feedback; the server
+       repeats every one of them, because this is the side that can be
+       skipped. */
+    if (!name || !email) { this.setState({ signupError: 'צריך שם ואימייל' }); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { this.setState({ signupError: 'האימייל לא תקין' }); return; }
+    if (pass.length < 6) { this.setState({ signupError: 'הסיסמה צריכה להיות לפחות 6 תווים' }); return; }
+    if (pass !== pass2) { this.setState({ signupError: 'הסיסמאות לא תואמות' }); return; }
+
+    this.setState({ authBusy: true, signupError: '', signupNote: '' });
+    this.api('/api/staff/auth/signup', {
+      method: 'POST',
+      body: { name, email, pass, role: this.state.signupRole === 'תלמיד' ? 'תלמיד' : 'מורה' }
+    }).then(r => {
+      this.setState({ authBusy: false });
+      if (!r.ok) { this.setState({ signupError: r.error || 'ההרשמה נכשלה' }); return; }
+      /* No session: a self-opened account is inactive until the office
+         approves it, so there is nothing to log into yet. */
+      this.setState({ signupNote: 'החשבון נפתח וממתין לאישור משרד בית הספר. נעדכן אותך כשהוא ייפתח.' });
+    });
+  };
+
+  forgotSubmit = (e) => {
+    e.preventDefault();
+    if (this.state.authBusy) return;
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    const handle = String(d.user || '').trim().toLowerCase();
+    if (!handle) { this.setState({ forgotError: 'צריך שם משתמש או אימייל' }); return; }
+    this.setState({ authBusy: true, forgotError: '', forgotNote: '' });
+    this.api('/api/staff/auth/reset-request', { method: 'POST', body: { user: handle } }).then(r => {
+      this.setState({ authBusy: false });
+      if (!r.ok) { this.setState({ forgotError: r.error || 'הבקשה נכשלה' }); return; }
+      /* Deliberately the same message whether or not the account exists. */
+      this.setState({
+        forgotNote: r.sent
+          ? 'אם קיים חשבון עם הפרטים האלה — נשלח אליו עכשיו קישור לבחירת סיסמה חדשה, תקף לשעה.'
+          : 'שליחת המיילים עוד לא מחוברת. פנו למשרד בית הספר — שם אפשר להפיק קישור איפוס ידנית.'
+      });
+    });
+  };
+
+  resetSubmit = (e) => {
+    e.preventDefault();
+    if (this.state.authBusy) return;
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    const pass = String(d.pass || ''), pass2 = String(d.pass2 || '');
+    if (pass.length < 6) { this.setState({ resetError: 'הסיסמה צריכה להיות לפחות 6 תווים' }); return; }
+    if (pass !== pass2) { this.setState({ resetError: 'הסיסמאות לא תואמות' }); return; }
+    this.setState({ authBusy: true, resetError: '' });
+    this.api('/api/staff/auth/reset-complete', {
+      method: 'POST', body: { token: this.state.resetToken, pass }
+    }).then(r => {
+      this.setState({ authBusy: false });
+      if (!r.ok) { this.setState({ resetError: r.error || 'האיפוס נכשל' }); return; }
+      this.clearResetParam();
+      this.setState({ authMode: 'login', resetToken: null, resetError: '', loginError: '' });
+      this.flash('הסיסמה עודכנה — אפשר להתחבר');
+    });
+  };
+
+  /* Drop ?reset=… so the token does not survive in history or a shared URL. */
+  clearResetParam() {
+    try {
+      const u = new URL(window.location.href);
+      if (!u.searchParams.has('reset')) return;
+      u.searchParams.delete('reset');
+      window.history.replaceState({}, '', u.pathname + u.search + u.hash);
+    } catch (e) {}
   }
-  startSession(a) {
-    const sess = {
-      user: a.user, role: a.role, name: a.name, initials: this.initials(a.name),
-      label: a.role === 'מורה' ? 'מורה · תיק אישי' : a.role === 'אדמין' ? 'אדמין · משרד' : a.role === 'מנהלת קבלה' ? 'קבלה ורישום' : a.role === 'תלמיד' ? 'תלמיד/ה' : 'מנהל פדגוגי',
-      teacherName: a.role === 'מורה' ? a.name : '',
-      sid: a.sid || '',
-      screens: a.screens || null
-    };
-    this.setState({ session: sess, loginError: '', view: 'dashboard', selected: null, role: null });
-    this.save(this.LS_SESSION, sess);
+
+  startSession(user) {
+    this.setState({
+      session: user, loginError: '', authBusy: false,
+      view: 'dashboard', selected: null, role: null
+    });
+    this.save(this.LS_SESSION, user);
+    if (user.role === 'אדמין') this.loadAccounts();
   }
+
   logout = () => {
+    this.api('/api/staff/auth/logout', { method: 'POST' });
     try { localStorage.removeItem(this.LS_SESSION); } catch (e) {}
-    this.setState({ session: null, view: 'dashboard', selected: null, modal: null, role: null, devSel: null, grpSel: null });
+    this.setState({
+      session: null, accounts: null, view: 'dashboard', selected: null,
+      modal: null, role: null, devSel: null, grpSel: null, authMode: 'login'
+    });
   };
+
+  LS_TASKS = 'ns.tasks.v1';
+  SEED_TASKS = [
+    { id: 'tk1', title: 'לאשר את מחברת הרמה החדשה ברוסית', note: 'הגיעה מהמורה — מחכה לאישור לפני שהיא נכנסת למחזור הבא.', by: 'אלון', priority: 'רגיל', status: 'פתוח', when: '28.7' },
+    { id: 'tk2', title: 'שיחת אינטייק שדורשת שיבוץ רמה', note: 'מועמד עם רקע חזק בספרדית — צריך ראיון שיבוץ לפני שנציע קבוצה.', by: 'נועה', priority: 'דחוף', status: 'פתוח', when: '1.8' }
+  ];
+  tasks() { return this.state.tasks || this.SEED_TASKS; }
+  saveTasks(next) { this.setState({ tasks: next }); this.save(this.LS_TASKS, next); }
+  addTask = (e) => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    const title = String(d.title || '').trim();
+    if (!title) { this.flash('צריך כותרת למשימה'); return; }
+    this.saveTasks([{
+      id: 'tk' + Date.now(), title, note: String(d.note || '').trim(),
+      by: (this.session() && this.session().name) || this.meName(), priority: d.priority || 'רגיל', status: 'פתוח',
+      when: new Date().toLocaleDateString('he-IL').slice(0, 5)
+    }].concat(this.tasks()));
+    e.target.reset();
+    this.flash('המשימה נשלחה למושיק');
+  };
+  toggleTask(id) {
+    this.saveTasks(this.tasks().map(t => t.id === id ? Object.assign({}, t, { status: t.status === 'פתוח' ? 'בוצע' : 'פתוח' }) : t));
+  }
+  deleteTask(id) { this.saveTasks(this.tasks().filter(t => t.id !== id)); this.flash('המשימה הוסרה'); }
 
   LS_DEV = 'ns.devel.v1';
   LS_FB = 'ns.feedback.v1';
@@ -4985,6 +5455,72 @@ class Component extends DCLogic {
 
   LS_GUIDES = 'ns.guides.v1';
   LS_LOG = 'ns.lessonlog.v1';
+  LS_SYL = 'ns.syllabi.v1';
+
+  syllabi() { return this.state.syllabi || []; }
+  saveSyllabi(next) { this.setState({ syllabi: next }); this.save(this.LS_SYL, next); }
+  addSyllabus = (e) => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    const title = String(d.title || '').trim();
+    if (!title) { this.flash('צריך שם לסילבוס'); return; }
+    if (!d.targetId) { this.flash('צריך לבחור תלמיד או קבוצה'); return; }
+    let targetName = '', lang = '', level = '';
+    if (d.kind === 'קבוצה') {
+      const g = this.SEED_GROUPS.find(x => x.id === d.targetId);
+      if (g) { targetName = g.name; lang = g.lang; level = g.level; }
+    } else {
+      const st = this.students().find(x => x.id === d.targetId);
+      if (st) { targetName = st.name; lang = st.lang; level = st.level; }
+    }
+    let sessions = [];
+    if (d.templateUrl) {
+      const tpl = this.NOTEBOOKS.find(x => x.url === d.templateUrl);
+      if (tpl) sessions = [{ id: 's' + Date.now(), title: 'שיעור 1 — פתיחה לפי ' + tpl.title, notes: 'התחלה מהמבנה של ' + tpl.title + ' (' + tpl.url + ')' }];
+    }
+    const newId = 'syl' + Date.now();
+    this.saveSyllabi([{
+      id: newId, owner: this.meName(), title, kind: d.kind || 'תלמיד',
+      targetId: d.targetId, targetName, lang, level, sessions, createdAt: new Date().toLocaleDateString('he-IL')
+    }].concat(this.syllabi()));
+    this.setState({ sylSel: newId });
+    e.target.reset();
+    this.flash('הסילבוס נוצר');
+  };
+  deleteSyllabus(id) {
+    this.saveSyllabi(this.syllabi().filter(x => x.id !== id));
+    this.setState({ sylSel: null });
+    this.flash('הסילבוס נמחק');
+  }
+  addSylSession = (sylId) => (e) => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    const title = String(d.title || '').trim();
+    if (!title) { this.flash('צריך כותרת למפגש'); return; }
+    this.saveSyllabi(this.syllabi().map(s => s.id === sylId
+      ? Object.assign({}, s, { sessions: s.sessions.concat({ id: 'ss' + Date.now(), title, notes: String(d.notes || '').trim() }) })
+      : s));
+    e.target.reset();
+  };
+  removeSylSession(sylId, sessId) {
+    this.saveSyllabi(this.syllabi().map(s => s.id === sylId
+      ? Object.assign({}, s, { sessions: s.sessions.filter(x => x.id !== sessId) })
+      : s));
+  }
+  buildSylPrompt(syl) {
+    const L = [];
+    L.push('אני מורה ל' + (syl.lang || 'שפה') + ' בבית ספר לשפות בישראל, ברמת ' + (syl.level || '') + '.');
+    L.push('אני בונה סילבוס בשם "' + syl.title + '" עבור ' + (syl.kind === 'קבוצה' ? 'קבוצה' : 'תלמיד/ה פרטי/ת') + ' בשם ' + (syl.targetName || '') + '.');
+    if (syl.sessions.length) {
+      L.push('המפגשים שכבר תכננתי:');
+      syl.sessions.forEach((s, i) => L.push((i + 1) + '. ' + s.title + (s.notes ? ' — ' + s.notes : '')));
+      L.push('הצע לי את המשך הסילבוס: עוד 6-8 מפגשים ברצף הגיוני, כל אחד עם כותרת קצרה ומטרה לימודית אחת.');
+    } else {
+      L.push('הצע לי מבנה סילבוס מלא: 8-10 מפגשים ברצף הגיוני מתקדם בהדרגה, כל אחד עם כותרת קצרה ומטרה לימודית אחת.');
+    }
+    L.push('התאם את הרמה למסגרת של בית ספר לשפות, לא אקדמית.');
+    return L.join('\n');
+  }
 
   /* A cancellation with notice does not burn a lesson; a no-show does. */
   LESSON_STATES = ['השיעור התקיים', 'בוטל בהתראה מוקדמת', 'היעדרות ללא ביטול'];
@@ -5163,14 +5699,16 @@ class Component extends DCLogic {
 
   state = {
     view: 'dashboard', selected: null, modal: null, attach: null, toast: '',
-    role: null, sview: null,
+    role: null, sview: null, sylSel: null, sylKind: 'תלמיד',
     q: '', lang: '', level: '', teacher: '', ctype: '', status: '',
     mq: '', mlang: '', mlevel: '', mtopic: '', mkind: '', mfile: '',
     nq: '', nlang: '', tq: '', tlang: '',
     students: null, materials: null, teachers: null, checked: [],
     devel: null, feedback: null, devSel: null, fbKind: 'תלמיד',
     groupData: null, grpSel: null, grpSession: null, notifs: null,
-    session: null, loginError: '',
+    session: null, loginError: '', authBusy: false, authMode: 'login',
+    signupError: '', signupNote: '', forgotError: '', forgotNote: '',
+    resetError: '', resetToken: null, passDrafts: {},
     cal: null, linkKey: null, calMine: true, gen: null,
     guides: null, logs: null, logFor: null, accounts: null, leads: null,
     hw: null, qa: null, sfiles: null, stuTab: 'progress'
@@ -5188,17 +5726,48 @@ class Component extends DCLogic {
         feedback: fb ? JSON.parse(fb) : null,
         groupData: g ? JSON.parse(g) : null,
         notifs: (() => { const n = localStorage.getItem(this.LS_NOTIF); return n ? JSON.parse(n) : null; })(),
+        tasks: (() => { const x = localStorage.getItem(this.LS_TASKS); return x ? JSON.parse(x) : null; })(),
         session: (() => { const x = localStorage.getItem(this.LS_SESSION); return x ? JSON.parse(x) : null; })(),
         cal: (() => { const x = localStorage.getItem(this.LS_CAL); return x ? JSON.parse(x) : null; })(),
         guides: (() => { const x = localStorage.getItem(this.LS_GUIDES); return x ? JSON.parse(x) : null; })(),
         logs: (() => { const x = localStorage.getItem(this.LS_LOG); return x ? JSON.parse(x) : null; })(),
-        accounts: (() => { const x = localStorage.getItem(this.LS_ACC); return x ? JSON.parse(x) : null; })(),
+        syllabi: (() => { const x = localStorage.getItem(this.LS_SYL); return x ? JSON.parse(x) : null; })(),
         leads: (() => { const x = localStorage.getItem(this.LS_LEADS); return x ? JSON.parse(x) : null; })(),
         hw: (() => { const x = localStorage.getItem(this.LS_HW); return x ? JSON.parse(x) : null; })(),
         qa: (() => { const x = localStorage.getItem(this.LS_QA); return x ? JSON.parse(x) : null; })(),
         sfiles: (() => { const x = localStorage.getItem(this.LS_SFILES); return x ? JSON.parse(x) : null; })()
       });
     } catch (e) { /* private mode — run on seeds only */ }
+    this.restoreSession();
+  }
+
+  /* The session is server-authoritative. The cached copy is painted first so
+     a signed-in user does not flash the login screen on every reload, and is
+     then confirmed — or thrown away — by /api/staff/auth/me. */
+  restoreSession() {
+    let cached = null;
+    try {
+      const x = localStorage.getItem(this.LS_SESSION);
+      if (x) cached = JSON.parse(x);
+    } catch (e) {}
+    if (cached) this.setState({ session: cached });
+
+    /* A reset link lands here as ?reset=<token>; that screen must win over
+       any cached session, since the whole point is "I cannot get in". */
+    let token = null;
+    try { token = new URL(window.location.href).searchParams.get('reset'); } catch (e) {}
+    if (token) this.setState({ session: null, authMode: 'reset', resetToken: token });
+
+    this.api('/api/staff/auth/me').then(r => {
+      if (r.ok && r.user) {
+        if (!token) this.startSession(r.user);
+        return;
+      }
+      /* No live session — drop the cache rather than keep showing a shell
+         whose API calls will all come back 401. */
+      try { localStorage.removeItem(this.LS_SESSION); } catch (e) {}
+      this.setState({ session: null });
+    });
   }
   save(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {} }
   students() { return this.state.students || this.SEED_STUDENTS; }
@@ -5316,9 +5885,9 @@ class Component extends DCLogic {
   resetDemo = () => {
     try {
       localStorage.removeItem(this.LS_S); localStorage.removeItem(this.LS_M); localStorage.removeItem(this.LS_T);
-      localStorage.removeItem(this.LS_DEV); localStorage.removeItem(this.LS_FB); localStorage.removeItem(this.LS_GRP); localStorage.removeItem(this.LS_NOTIF); localStorage.removeItem(this.LS_CAL); localStorage.removeItem(this.LS_GUIDES); localStorage.removeItem(this.LS_LOG); localStorage.removeItem(this.LS_ACC); localStorage.removeItem(this.LS_LEADS); localStorage.removeItem(this.LS_HW); localStorage.removeItem(this.LS_QA); localStorage.removeItem(this.LS_SFILES);
+      localStorage.removeItem(this.LS_DEV); localStorage.removeItem(this.LS_FB); localStorage.removeItem(this.LS_GRP); localStorage.removeItem(this.LS_NOTIF); localStorage.removeItem(this.LS_CAL); localStorage.removeItem(this.LS_GUIDES); localStorage.removeItem(this.LS_LOG); localStorage.removeItem(this.LS_LEADS); localStorage.removeItem(this.LS_HW); localStorage.removeItem(this.LS_QA); localStorage.removeItem(this.LS_SFILES);
     } catch (e) {}
-    this.setState({ students: null, materials: null, teachers: null, devel: null, feedback: null, groupData: null, notifs: null, cal: null, guides: null, logs: null, accounts: null, leads: null, hw: null, qa: null, sfiles: null });
+    this.setState({ students: null, materials: null, teachers: null, devel: null, feedback: null, groupData: null, notifs: null, cal: null, guides: null, logs: null, leads: null, hw: null, qa: null, sfiles: null });
     this.flash('הנתונים אופסו לנתוני הדמו');
   };
 
@@ -5333,7 +5902,7 @@ class Component extends DCLogic {
     const isOffice = role === 'אדמין';
     const isAdmissions = role === 'מנהלת קבלה';
     const sview = s.sview || this.props.studentsView || 'טבלה';
-    const ADMIN_VIEWS = ['teachers', 'settings', 'develop', 'users', 'admissions'];
+    const ADMIN_VIEWS = ['teachers', 'settings', 'develop', 'users', 'admissions', 'tasks'];
     /* Per-account screen permissions, set by the office on the users screen. */
     const allowed = (sess && sess.screens) || this.allScreens();
     const canSee = (k) => !isTeacher || allowed.indexOf(k) > -1;
@@ -5628,7 +6197,7 @@ class Component extends DCLogic {
     }
 
     const set = (k) => (e) => this.setState({ [k]: e.target.value });
-    const navKeys = ['dashboard', 'students', 'groups', 'notebooks', 'materials', 'calendar', 'planner', 'teachers', 'develop', 'feedback', 'guides', 'users', 'admissions', 'settings'];
+    const navKeys = ['dashboard', 'students', 'groups', 'notebooks', 'materials', 'calendar', 'planner', 'syllabus', 'teachers', 'develop', 'feedback', 'guides', 'users', 'admissions', 'settings', 'tasks'];
     const isOn = (k) => view === k || (k === 'students' && view === 'profile');
 
     return {
@@ -5641,13 +6210,26 @@ class Component extends DCLogic {
       userInitials: sess ? sess.initials : 'אל',
       roleLabel: sess ? sess.label : 'אדמין · גישה מלאה',
       isSignedIn: !!sess, isLocked: !sess,
+      authMode: s.authMode || 'login',
+      isAuthLogin: (s.authMode || 'login') === 'login', isAuthSignup: s.authMode === 'signup',
+      isAuthForgot: s.authMode === 'forgot', isAuthReset: s.authMode === 'reset',
+      goLogin: this.goLogin, goSignup: this.goSignup, goForgot: this.goForgot,
+      signup: this.signup, forgotSubmit: this.forgotSubmit, resetSubmit: this.resetSubmit,
+      signupRole: s.signupRole || 'מורה',
+      setSignupTeacher: () => this.setState({ signupRole: 'מורה' }),
+      setSignupStudent: () => this.setState({ signupRole: 'תלמיד' }),
+      signupRoleFg: { teacher: (s.signupRole || 'מורה') === 'מורה' ? '#fff' : 'var(--color-neutral-800)', student: s.signupRole === 'תלמיד' ? '#fff' : 'var(--color-neutral-800)' },
+      signupRoleBg: { teacher: (s.signupRole || 'מורה') === 'מורה' ? 'var(--color-neutral-900)' : 'transparent', student: s.signupRole === 'תלמיד' ? 'var(--color-neutral-900)' : 'transparent' },
+      signupError: s.signupError, hasSignupError: !!s.signupError,
+      signupNote: s.signupNote, hasSignupNote: !!s.signupNote,
+      forgotError: s.forgotError, hasForgotError: !!s.forgotError,
+      forgotNote: s.forgotNote, hasForgotNote: !!s.forgotNote,
+      resetError: s.resetError, hasResetError: !!s.resetError,
+      /* The token identifies the account server-side; the browser is not
+         told whose it is until the new password is accepted. */
+      resetIntro: 'הקישור אומת. בחר/י סיסמה חדשה — לפחות 6 תווים.',
       loginError: s.loginError, hasLoginError: !!s.loginError,
       login: this.login, logout: this.logout,
-      demoTeacher: () => this.quickLogin('yotam'),
-      demoOffice: () => this.quickLogin('office'),
-      demoPedago: () => this.quickLogin('pedago'),
-      demoAdmit: () => this.quickLogin('noa'),
-      demoStudent: () => this.quickLogin('noa.cohen'),
       setTeacher: () => this.setState({ role: 'מורה', view: 'dashboard', selected: null }),
       setAdmin: () => this.setState({ role: 'אדמין', view: 'dashboard', selected: null }),
       roleBg: { teacher: isTeacher ? '#0088b0' : 'transparent', admin: isAdmin ? '#0088b0' : 'transparent' },
@@ -5663,9 +6245,10 @@ class Component extends DCLogic {
       go: {
         dashboard: this.view('dashboard'), students: this.view('students'), notebooks: this.view('notebooks'),
         materials: this.view('materials'), calendar: this.view('calendar'), teachers: this.view('teachers'),
+        syllabus: this.view('syllabus'),
         settings: this.view('settings'), develop: this.view('develop'), feedback: this.view('feedback'),
         groups: this.view('groups'), guides: this.view('guides'), planner: this.view('planner'),
-        users: this.view('users'), admissions: this.view('admissions')
+        users: this.view('users'), admissions: this.view('admissions'), tasks: this.view('tasks')
       },
       navColor: navKeys.reduce((o, k) => { o[k] = isOn(k) ? '#ffffff' : '#9b9797'; return o; }, {}),
       navBg: navKeys.reduce((o, k) => { o[k] = isOn(k) ? '#2d2b2b' : 'transparent'; return o; }, {}),
@@ -5675,6 +6258,30 @@ class Component extends DCLogic {
       isCalendar: view === 'calendar', isDevelop: view === 'develop', isFeedback: view === 'feedback',
       isGroups: view === 'groups', isGuides: view === 'guides', isUsers: view === 'users',
       isAdmit: view === 'admissions', isAdmissions, isOfficeRole: isOffice,
+
+      isTasks: view === 'tasks',
+      tasksTitle: isPedago ? 'המשימות שלי' : 'משימות למושיק',
+      tasksSubtitle: isPedago
+        ? 'כל מה שהמשרד והקבלה מעבירים אליך — אפשר לסמן כבוצע או להוסיף משימה לעצמך.'
+        : 'שלחו למושיק הפדגוגי בקשה או תזכורת — הוא יראה את המשימה ויסמן כשהיא טופלה.',
+      taskFormLabel: isPedago ? 'תזכורת לעצמי' : 'משימה חדשה למושיק',
+      taskSubmitLabel: isPedago ? 'הוסף תזכורת' : 'שלח משימה',
+      myName: (this.session() && this.session().name) || this.meName(),
+      addTask: this.addTask,
+      openTaskRows: this.tasks().filter(t => t.status === 'פתוח').map(t => ({
+        id: t.id, title: t.title, note: t.note, hasNote: !!t.note, by: t.by, when: t.when,
+        priority: t.priority, prBg: t.priority === 'דחוף' ? 'var(--color-critical-tint)' : 'var(--color-neutral-200)',
+        prFg: t.priority === 'דחוף' ? 'var(--color-critical)' : 'var(--color-neutral-800)',
+        toggle: () => this.toggleTask(t.id), remove: () => this.deleteTask(t.id)
+      })),
+      doneTaskRows: this.tasks().filter(t => t.status === 'בוצע').map(t => ({
+        id: t.id, title: t.title, by: t.by, toggle: () => this.toggleTask(t.id)
+      })),
+      openTasksCount: this.tasks().filter(t => t.status === 'פתוח').length,
+      doneTasksCount: this.tasks().filter(t => t.status === 'בוצע').length,
+      noOpenTasks: this.tasks().filter(t => t.status === 'פתוח').length === 0,
+      noDoneTasks: this.tasks().filter(t => t.status === 'בוצע').length === 0,
+      hasOpenTasks: (isPedago || isOffice || isAdmissions) && this.tasks().filter(t => t.status === 'פתוח').length > 0,
 
       /* ---- Student portal ---- */
       isStudentRole: role === 'תלמיד',
@@ -5852,7 +6459,10 @@ class Component extends DCLogic {
         const scr = a.screens || this.allScreens();
         const isT = a.role === 'מורה';
         return {
-          name: a.name, user: a.user, pass: a.pass, email: a.email, role: a.role,
+          name: a.name, user: a.user, email: a.email, role: a.role,
+          /* Write-only: the stored password is a hash, so there is nothing
+             to show here — only a new value to send. */
+          passDraft: (s.passDrafts && s.passDrafts[a.id]) || '',
           initials: this.initials(a.name),
           active: a.active !== false,
           activeLabel: a.active !== false ? 'פעיל' : 'מושבת',
@@ -5873,13 +6483,18 @@ class Component extends DCLogic {
           }),
           onName: (e) => this.patchAccount(a.id, { name: e.target.value }),
           onUser: (e) => this.patchAccount(a.id, { user: e.target.value.trim().toLowerCase() }),
-          onPass: (e) => this.patchAccount(a.id, { pass: e.target.value }),
+          /* Typed into a draft and only sent on blur — onChange fires per
+             keystroke, and "abc" is not an attempt to set a 3-char password. */
+          onPass: (e) => this.setPassDraft(a.id, e.target.value),
+          savePass: () => this.commitPassword(a.id),
           onEmail: (e) => this.patchAccount(a.id, { email: e.target.value.trim() }),
           onRole: (e) => this.patchAccount(a.id, { role: e.target.value }),
           toggleActive: () => this.patchAccount(a.id, { active: a.active === false }),
           copyCreds: () => this.copy(
-            'כניסה לחדר המורים של New School\nשם משתמש: ' + a.user + '\nסיסמה: ' + a.pass + '\nמייל: ' + a.email,
-            'פרטי הכניסה של ' + a.name + ' הועתקו'),
+            'כניסה לחדר המורים של New School\nשם משתמש: ' + a.user + '\nמייל: ' + a.email +
+            '\nכתובת: ' + window.location.origin + window.location.pathname,
+            'פרטי הכניסה של ' + a.name + ' הועתקו (בלי סיסמה — היא לא ניתנת לשחזור)'),
+          resetLink: () => this.accountResetLink(a.id),
           remove: () => this.deleteAccount(a.id)
         };
       }),
@@ -5892,7 +6507,7 @@ class Component extends DCLogic {
         .slice(0, 40)
         .map(t => t.name),
       noPending: roster.filter(t => t.status === 'פעיל' && !this.accounts().some(a => a.name === t.name)).length === 0,
-      pendingCount: roster.filter(t => t.status === 'פעיל' && !this.accounts().some(a => a.name === t.name)).length + ' מורים פעילים בלי חשבון', isPlanner: view === 'planner',
+      pendingCount: roster.filter(t => t.status === 'פעיל' && !this.accounts().some(a => a.name === t.name)).length + ' מורים פעילים בלי חשבון', isPlanner: view === 'planner', isSyllabus: view === 'syllabus',
       /* Admin-only screens: gated here too, so switching role off an admin screen can't leave it open. */
       isTeachers: view === 'teachers', isSettings: view === 'settings',
 
@@ -5933,6 +6548,56 @@ class Component extends DCLogic {
           })
         })
       })),
+
+      /* ---- Syllabus builder: flexible session list per student or group, visible to all like the materials library ---- */
+      sylTitle: isTeacher ? 'בונה סילבוס' : 'סילבוסים של המורים',
+      sylSubtitle: isTeacher
+        ? 'בונים סילבוס לתלמיד/ה או לקבוצה, מוסיפים מפגשים בקצב שלכם, ואפשר להיעזר ב-AI כדי להשלים המשך. אפשר גם להתחיל מתבנית של מחברת קיימת.'
+        : 'הסילבוסים שהמורים בונים לתלמידים ולקבוצות שלהם — לצפייה בלבד.',
+      showSylForm: isTeacher,
+      sylKind: s.sylKind || 'תלמיד',
+      setSylKindStudent: () => this.setState({ sylKind: 'תלמיד' }),
+      setSylKindGroup: () => this.setState({ sylKind: 'קבוצה' }),
+      sylKindFg: { student: (s.sylKind || 'תלמיד') === 'תלמיד' ? '#fff' : 'var(--color-neutral-800)', group: s.sylKind === 'קבוצה' ? '#fff' : 'var(--color-neutral-800)' },
+      sylKindBg: { student: (s.sylKind || 'תלמיד') === 'תלמיד' ? 'var(--color-neutral-900)' : 'transparent', group: s.sylKind === 'קבוצה' ? 'var(--color-neutral-900)' : 'transparent' },
+      sylIsStudent: (s.sylKind || 'תלמיד') === 'תלמיד', sylIsGroup: s.sylKind === 'קבוצה',
+      sylStudentOpts: (isTeacher ? all.filter(x => x.teacher === me) : []).map(x => ({ id: x.id, name: x.name })),
+      sylGroupOpts: (isTeacher ? this.SEED_GROUPS.filter(g => g.teacher === me) : []).map(g => ({ id: g.id, name: g.name })),
+      sylNoStudentOpts: isTeacher && all.filter(x => x.teacher === me).length === 0,
+      sylNoGroupOpts: isTeacher && this.SEED_GROUPS.filter(g => g.teacher === me).length === 0,
+      sylTemplateOpts: this.NOTEBOOKS.map(n => ({ url: n.url, label: n.title + ' · ' + n.lang })),
+      addSyllabus: this.addSyllabus,
+      sylRows: this.syllabi().filter(x => isTeacher ? x.owner === me : true).map(x => ({
+        id: x.id, title: x.title, targetName: x.targetName, kind: x.kind, lang: x.lang, level: x.level,
+        owner: x.owner, sessionCount: x.sessions.length,
+        isMine: x.owner === me,
+        open: () => this.setState({ sylSel: x.id }),
+        selBg: s.sylSel === x.id ? 'var(--color-accent-100)' : 'var(--color-paper)',
+        selBorder: s.sylSel === x.id ? 'var(--color-accent-300)' : 'var(--color-neutral-200)'
+      })),
+      noSyllabi: this.syllabi().filter(x => isTeacher ? x.owner === me : true).length === 0,
+      selectedSyl: (() => {
+        const list2 = this.syllabi().filter(x => isTeacher ? x.owner === me : true);
+        const syl = list2.find(x => x.id === s.sylSel) || list2[0];
+        if (!syl) return null;
+        const canEdit = syl.owner === me;
+        return {
+          id: syl.id, title: syl.title, targetName: syl.targetName, kind: syl.kind, lang: syl.lang, level: syl.level,
+          owner: syl.owner, canEdit,
+          sessions: syl.sessions.map((sess, i) => ({
+            id: sess.id, n: i + 1, title: sess.title, notes: sess.notes, hasNotes: !!sess.notes,
+            remove: () => this.removeSylSession(syl.id, sess.id)
+          })),
+          noSessions: syl.sessions.length === 0,
+          addSession: this.addSylSession(syl.id),
+          copyAiPrompt: () => this.copy(this.buildSylPrompt(syl), 'הפרומפט הועתק — אפשר להדביק ב-ChatGPT ולקבל המשך לסילבוס'),
+          remove: () => this.deleteSyllabus(syl.id)
+        };
+      })(),
+      hasSelectedSyl: (() => {
+        const list2 = this.syllabi().filter(x => isTeacher ? x.owner === me : true);
+        return !!(list2.find(x => x.id === s.sylSel) || list2[0]);
+      })(),
 
       weekDays: this.DAYS, weekRows,
       calConnected: cal.connected, calDisconnected: !cal.connected,
