@@ -7,7 +7,8 @@
     "dev": "npm run build && wrangler dev",
     "deploy": "npm run build && wrangler deploy",
     "schema": "wrangler d1 execute teacher-room --local --file=schema.sql",
-    "test": "npm run build && node scripts/e2e.mjs"
+    "test": "npm run build && node scripts/e2e.mjs",
+    "admin": "node scripts/create-admin.mjs"
   },
   "devDependencies": {
     "wrangler": "^4.116.0"

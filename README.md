@@ -19,6 +19,7 @@ students, digital notebooks (מחברות דיגיטליות) and lesson materia
 | `src/worker.js` | Cloudflare Worker entry — routes `/api/staff/*`, serves `docs/` for everything else |
 | `schema.sql` | D1 schema: `staff_users`, `staff_sessions`, `staff_reset_tokens` |
 | `scripts/e2e.mjs` | 60 end-to-end checks against a local Worker and D1 (`npm test`) |
+| `scripts/create-admin.mjs` | Writes a staff account straight into D1 (`npm run admin`) — the way in, and the way back in |
 | `wrangler.toml` | Worker + D1 config |
 
 ## Running it
@@ -118,7 +119,25 @@ convenience, the API is the boundary.
 
 ### The first admin
 
-Every account is made by an admin — except the first. Once, then delete the secret:
+Whoever has wrangler access to the database can write an account straight into it —
+already a higher level of trust than any HTTP endpoint could grant, so there is no token
+to arrange:
+
+```sh
+npm run admin -- --email office@newschool.co.il --pass "<strong password>" \
+                 --name "אלון מנהל" --user office            # local D1
+npm run admin -- --email … --pass … --name … --remote        # the deployed D1
+```
+
+Login then accepts either the email or the `--user` handle. Re-running with an email that
+already exists **resets that account's password and re-enables it** — the way back in if
+you lock yourself out. `--role` takes any of אדמין · מנהל פדגוגי · מורה · מנהלת קבלה ·
+תלמיד and defaults to אדמין.
+
+### The first admin, over HTTP
+
+When wrangler access isn't at hand — someone else operates Cloudflare, say — the same
+thing can be done through the API. Once, then delete the secret:
 
 ```sh
 npx wrangler secret put STAFF_BOOTSTRAP_TOKEN        # any random value
