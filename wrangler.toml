@@ -1,0 +1,25 @@
+# Cloudflare Workers config for חדר המורים.
+#
+# Assets come from docs/ — the self-contained pages that
+# `npm run build` (scripts/build-standalone.js) generates from the two
+# .dc.html sources. Two reasons: those copies inline React so the app boots
+# with no CDN round-trip, and serving docs/ instead of the repo root keeps
+# uploads/, functions/ and src/ off the public web.
+#
+# docs/ is also what GitHub Pages serves, so the same build works both ways —
+# on Pages without a backend (login cannot succeed), on the Worker with one.
+
+name = "teacher-room"
+main = "src/worker.js"
+compatibility_date = "2026-07-01"
+
+[assets]
+directory = "./docs"
+binding = "ASSETS"
+run_worker_first = true
+
+# Fill in after: npx wrangler d1 create teacher-room
+[[d1_databases]]
+binding = "DB"
+database_name = "teacher-room"
+database_id = "00000000-0000-0000-0000-000000000000"
