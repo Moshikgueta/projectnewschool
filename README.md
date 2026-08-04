@@ -99,6 +99,50 @@ login can succeed there, because Pages serves static files and has no API. The s
 `docs/` build served by the Worker is the working system. Student and lesson data is
 still in-page demo data — only accounts moved server-side so far.
 
+## Connecting it to Cloudflare
+
+Two routes. **A** mirrors how the Spanish course project already deploys — connect the
+repo once, and every push builds and ships. **B** is a one-off from a terminal.
+
+### A · Git-connected Worker (dashboard, no CLI)
+
+1. **Create the database.** Dashboard → Storage & Databases → D1 → Create.
+   Name it `teacher-room`. Copy the **Database ID**.
+2. **Put that ID in `wrangler.toml`** (`database_id = "…"`) and commit. The value
+   committed today is a deliberate non-id — a plausible-looking placeholder would deploy
+   happily and bind to nothing.
+3. **Apply the schema.** Open the new database → Console → paste the contents of
+   `schema.sql` → run. (Or `npx wrangler d1 execute teacher-room --file=schema.sql
+   --remote` if you have the CLI.)
+4. **Connect the repo.** Workers & Pages → Create → Workers → Import a repository →
+   `projectnewschool`. Set:
+   - Build command: `npm run build`
+   - Deploy command: `npx wrangler deploy`
+   - Branch: whichever you want live (`main` after merging).
+
+   The build step matters: `docs/` is committed, but a stale `docs/` would ship the
+   previous version of the pages. Building on every deploy keeps them in step.
+5. **Create the first admin** — see below. Without the CLI, use the bootstrap endpoint:
+   Worker → Settings → Variables and Secrets → add `STAFF_BOOTSTRAP_TOKEN` (any random
+   value), call the endpoint once, then delete the secret again.
+
+### B · From a terminal
+
+```sh
+npx wrangler login
+npx wrangler d1 create teacher-room          # copy the id into wrangler.toml
+npx wrangler d1 execute teacher-room --file=schema.sql --remote
+npm run deploy
+npm run admin -- --email you@newschool.co.il --pass "…" --name "…" --user office --remote
+```
+
+### After either route
+
+Sign in at `https://<your-worker>.workers.dev/dashboard`, or at your own domain
+(Worker → Settings → Domains & Routes → Add → Custom domain). The invite links the users
+screen generates point at whatever origin you signed in on, so set the custom domain
+*before* sending invites if you want them to carry it.
+
 ## Accounts and auth
 
 Accounts live in D1 and every rule is enforced in the Worker — the UI hiding a screen is a

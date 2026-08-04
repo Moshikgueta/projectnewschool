@@ -18,8 +18,11 @@ directory = "./docs"
 binding = "ASSETS"
 run_worker_first = true
 
-# Fill in after: npx wrangler d1 create teacher-room
+# ⚠ REPLACE database_id before deploying — `npx wrangler d1 create teacher-room`
+# prints it, or copy it from the dashboard (Storage & Databases → D1).
+# The placeholder below is deliberately not a valid id: a plausible-looking
+# one would deploy happily and bind to nothing.
 [[d1_databases]]
 binding = "DB"
 database_name = "teacher-room"
-database_id = "00000000-0000-0000-0000-000000000000"
+database_id = "PUT-YOUR-D1-DATABASE-ID-HERE"
