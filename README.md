@@ -17,7 +17,8 @@ students, digital notebooks (מחברות דיגיטליות) and lesson materia
 | `.thumbnail` | WebP preview image |
 | `functions/` | Server side: `_shared.js` (PBKDF2, email), `_staff.js` (sessions, guards), `api/staff/*` (the endpoints) |
 | `src/worker.js` | Cloudflare Worker entry — routes `/api/staff/*`, serves `docs/` for everything else |
-| `schema.sql` | D1 schema: `staff_users`, `staff_sessions`, `staff_reset_tokens` |
+| `schema.sql` | D1 schema: `staff_users`, `staff_sessions`, `staff_reset_tokens` — the source of truth |
+| `schema-console.sql` | Generated, comment-free copy for the D1 web console (`npm run schema:console`) |
 | `scripts/e2e.mjs` | 60 end-to-end checks against a local Worker and D1 (`npm test`) |
 | `scripts/create-admin.mjs` | Writes a staff account straight into D1 (`npm run admin`) — the way in, and the way back in |
 | `wrangler.toml` | Worker + D1 config |
@@ -112,8 +113,19 @@ repo once, and every push builds and ships. **B** is a one-off from a terminal.
    committed today is a deliberate non-id — a plausible-looking placeholder would deploy
    happily and bind to nothing.
 3. **Apply the schema.** Open the new database → Console → paste the contents of
-   `schema.sql` → run. (Or `npx wrangler d1 execute teacher-room --file=schema.sql
-   --remote` if you have the CLI.)
+   **`schema-console.sql`** → run.
+
+   Use that file, not `schema.sql`: the D1 web console trips over SQL comments, and
+   `schema.sql` is full of them (some in Hebrew). `schema-console.sql` is the same six
+   statements with the comments stripped — verified to build a structurally identical
+   database. If the console still refuses the lot, run the six blocks one at a time;
+   they are separated by blank lines and each ends in `;`.
+
+   With the CLI it does not matter which: `npx wrangler d1 execute teacher-room
+   --file=schema.sql --remote`.
+
+   `schema.sql` stays the source of truth. After changing it, run `npm run schema:console`
+   to regenerate the console copy.
 4. **Connect the repo.** Workers & Pages → Create → Workers → Import a repository →
    `projectnewschool`. Set:
    - Build command: `npm run build`
