@@ -1,7 +1,7 @@
 /* Worker entry — runs before static assets on every request
    (run_worker_first in wrangler.toml). Routes /api/staff/*, sends the bare
    domain to the dashboard, and lets everything else fall through to the
-   static assets in public/.
+   static assets in docs/.
 
    There is no asset-level gate here, and that is deliberate: the dashboard
    HTML *is* the login screen, so it has to be reachable while signed out.

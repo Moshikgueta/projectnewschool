@@ -12,7 +12,7 @@ students, digital notebooks (מחברות דיגיטליות) and lesson materia
 | `support.js` | The `dc` runtime both pages load (`<script src="./support.js">`) — generated, do not hand-edit |
 | `_ds/broadsheet-…/` | The **Broadsheet** design system bundle — `styles.css` tokens, `_ds_bundle.js`, `_ds_manifest.json`, lint config and `readme.md`. Reference only; the pages don't link it (see [Design](#design)) |
 | `vendor/` | React 18.3.1 and ReactDOM 18.3.1 UMD builds, vendored so the standalone build is offline and deterministic |
-| `scripts/build-standalone.js` | Bundles each page into one self-contained file in `dist/` |
+| `scripts/build-standalone.js` | Bundles each page into one self-contained file in `docs/` |
 | `uploads/` | Source documents the content was derived from (course and notebook lists) |
 | `.thumbnail` | WebP preview image |
 | `functions/` | Server side: `_shared.js` (PBKDF2, email), `_staff.js` (sessions, guards), `api/staff/*` (the endpoints) |
@@ -79,19 +79,26 @@ the `<` of those tokens (and of `<script`) to `\x3c`, which leaves every value i
 ## The site
 
 `docs/` is the published site — GitHub Pages serves it from the `main` branch. It holds the
-hand-written landing page (`docs/index.html`, which links the two views and lists the demo
-logins) plus the two built pages, so the whole thing is static with no build step on
+hand-written landing page (`docs/index.html`, which links the two views and names the five
+roles) plus the two built pages, so the whole thing is static with no build step on
 GitHub's side. `docs/dashboard.html` and `docs/mobile.html` are generated — rebuild them
 with the command above rather than editing them; `docs/index.html` is a source file.
 
 Enabling it, once per repository: **Settings → Pages → Source: Deploy from a branch →
 `main` / `/docs`**. Pages on a private repository needs a paid GitHub plan; on the free
-plan the repository has to be public, which also puts the prototype and its demo logins on
-the open web.
+plan the repository has to be public, which also puts the prototype on the open web.
 
 Both pages open on a login screen. **The demo accounts are gone** — login now goes to
 `POST /api/staff/auth/login` and is checked against D1, so the printed `ns2026` passwords
 that used to sit on the login screen were removed with them. See [Accounts and auth](#accounts-and-auth).
+
+The landing page kept a table of those five usernames and that password for one release
+after the accounts themselves went — a stale copy telling visitors to sign in with
+credentials that no longer existed, on a public page, against usernames that are real
+(`office` is the one the bootstrap example uses). It now states the rule instead: accounts
+come from an admin or from self-signup awaiting approval, and Pages is look-only. **Nothing
+under `docs/` should print a working credential** — the landing page is hand-written, so
+no build step will catch it.
 
 That makes the GitHub Pages copy a **look-only** deployment: the pages render, but no
 login can succeed there, because Pages serves static files and has no API. The same
