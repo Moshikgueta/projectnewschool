@@ -87,7 +87,6 @@ th:last-child,td:last-child{padding-left:0}
 td{padding:10px var(--space-4) 10px 0; border-bottom:1px solid var(--color-divider);
    font-variant-numeric:tabular-nums}
 tr:last-child td{border-bottom:0}
-td code{font-family:var(--font-serif); direction:ltr; display:inline-block; color:var(--color-accent-700)}
 
 footer{margin-top:clamp(3rem,8vw,5rem); color:var(--color-neutral-600); font-size:.85rem}
 footer .mark{color:var(--color-accent-2)}
@@ -130,27 +129,37 @@ footer .mark{color:var(--color-accent-2)}
     </a>
   </nav>
 
-  <h2>כניסה לדמו</h2>
+  <h2>כניסה</h2>
   <p class="note">
-    הנתונים מוטמעים בעמוד עצמו ואין מאחוריו שרת. הסיסמאות מוצגות בכוונה, כדי שאפשר
-    יהיה להתרשם מכל התצוגות. אין כאן פרטי תלמידים אמיתיים.
+    החשבונות יושבים בבסיס הנתונים והכניסה נבדקת בשרת, ולכן אין כאן חשבונות דמו ואין
+    סיסמאות מודפסות. אדמין פותח חשבון ומוסר סיסמה זמנית; אפשר גם להירשם ממסך הכניסה,
+    והחשבון ממתין לאישור.
+  </p>
+  <p class="note">
+    בעותק הזה, המתפרסם ב־GitHub Pages, אין שרת מאחורי העמודים: הם נטענים ונראים כמו שהם,
+    אבל שום כניסה לא תצליח. המערכת הפעילה היא בדיוק אותם קבצים, מוגשים מה־Worker.
   </p>
 
   <div class="scroll">
     <table>
       <caption>חמישה תפקידים</caption>
       <thead>
-        <tr><th>תפקיד</th><th>שם משתמש</th><th>סיסמה</th></tr>
+        <tr><th>תפקיד</th><th>התווית במערכת</th></tr>
       </thead>
       <tbody>
-        <tr><td>מורה</td><td><code>yotam</code></td><td><code>ns2026</code></td></tr>
-        <tr><td>אדמין</td><td><code>office</code></td><td><code>ns2026</code></td></tr>
-        <tr><td>מנהל פדגוגי</td><td><code>pedago</code></td><td><code>ns2026</code></td></tr>
-        <tr><td>מנהלת קבלה</td><td><code>noa</code></td><td><code>ns2026</code></td></tr>
-        <tr><td>תלמידה</td><td><code>noa.cohen</code></td><td><code>ns2026</code></td></tr>
+        <tr><td>מורה</td><td>מורה · תיק אישי</td></tr>
+        <tr><td>אדמין</td><td>אדמין · משרד</td></tr>
+        <tr><td>מנהל פדגוגי</td><td>מנהל פדגוגי</td></tr>
+        <tr><td>מנהלת קבלה</td><td>קבלה ורישום</td></tr>
+        <tr><td>תלמיד/ה</td><td>תלמיד/ה</td></tr>
       </tbody>
     </table>
   </div>
+
+  <p class="note">
+    ניהול החשבונות — פתיחה, עריכה, השבתה ואיפוס סיסמה — פתוח לאדמין בלבד. המסכים שכל
+    חשבון רואה נקבעים לו בנפרד, ולא לפי התפקיד.
+  </p>
 
   <footer>New School <span class="mark">·</span> חדר המורים</footer>
 
