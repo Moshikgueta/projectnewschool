@@ -9,6 +9,7 @@
    the session itself. */
 
 import * as login from '../functions/api/staff/auth/login.js';
+import * as code from '../functions/api/staff/auth/code.js';
 import * as logout from '../functions/api/staff/auth/logout.js';
 import * as me from '../functions/api/staff/auth/me.js';
 import * as signup from '../functions/api/staff/auth/signup.js';
@@ -20,6 +21,7 @@ import * as bootstrap from '../functions/api/staff/bootstrap.js';
 
 const ROUTES = {
   'POST /api/staff/auth/login': login.onRequestPost,
+  'POST /api/staff/auth/code': code.onRequestPost,
   'POST /api/staff/auth/logout': logout.onRequestPost,
   'GET /api/staff/auth/me': me.onRequestGet,
   'POST /api/staff/auth/signup': signup.onRequestPost,
@@ -30,15 +32,18 @@ const ROUTES = {
   'POST /api/staff/bootstrap': bootstrap.onRequestPost
 };
 
-/* /api/staff/users/<id> and /api/staff/users/<id>/reset — the one route shape
-   with a variable in it, so it is matched rather than looked up. */
-const USER_RE = /^\/api\/staff\/users\/([A-Za-z0-9_-]{1,64})(\/reset)?$/;
+/* /api/staff/users/<id>, …/reset and …/code — the one route shape with a
+   variable in it, so it is matched rather than looked up. */
+const USER_RE = /^\/api\/staff\/users\/([A-Za-z0-9_-]{1,64})(\/reset|\/code)?$/;
 
 function userRoute(method, path) {
   const m = USER_RE.exec(path);
   if (!m) return null;
   const [, id, sub] = m;
-  if (sub) return method === 'POST' ? { fn: user.onRequestPost, id } : null;
+  if (sub) {
+    if (method !== 'POST') return null;
+    return { fn: sub === '/code' ? user.onRequestPostCode : user.onRequestPost, id };
+  }
   if (method === 'PATCH') return { fn: user.onRequestPatch, id };
   if (method === 'DELETE') return { fn: user.onRequestDelete, id };
   return null;

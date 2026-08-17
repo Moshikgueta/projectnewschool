@@ -12,6 +12,7 @@ import { rmSync, existsSync, renameSync } from 'node:fs';
 const PORT = 8973;
 const B = `http://127.0.0.1:${PORT}`;
 const BOOT = 'e2e-bootstrap-token';
+const PEPPER = 'e2e-student-code-pepper';
 
 let passed = 0, failed = 0;
 const ok = (name, cond, extra = '') => {
@@ -65,7 +66,8 @@ async function waitFor(url, tries = 60) {
   if (seed.status !== 0) { console.error('schema seed failed:', seed.stderr.slice(0, 400)); process.exit(1); }
 
   const dev = spawn('npx', ['wrangler', 'dev', '--port', String(PORT),
-    '--var', `STAFF_BOOTSTRAP_TOKEN:${BOOT}`
+    '--var', `STAFF_BOOTSTRAP_TOKEN:${BOOT}`,
+    '--var', `STUDENT_CODE_PEPPER:${PEPPER}`
   ], { stdio: ['ignore', 'pipe', 'pipe'] });
   dev.stdout.on('data', () => { }); dev.stderr.on('data', () => { });
 
@@ -204,6 +206,69 @@ async function waitFor(url, tries = 60) {
     ok('self-signed account is inactive', listed && listed.active === false);
     ok('duplicate signup refused', (await call('/api/staff/auth/signup', {
       method: 'POST', body: { name: 'שוב', email: 'candidate@example.com', pass: 'candidate-pass' } })).status === 409);
+
+    console.log('\nStudent codes');
+    r = await call('/api/staff/users', {
+      method: 'POST', cookie: admin,
+      body: { name: 'נועה כהן', user: 'noa.cohen', role: 'תלמיד', sid: 's1' }
+    });
+    const studentId = r.body.user && r.body.user.id;
+    const code1 = r.body.code;
+    ok('student created with a code, not a password',
+      r.status === 201 && !!code1 && !r.body.tempPassword, JSON.stringify(r.body));
+    ok('the code is grouped for reading aloud', /^[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(code1 || ''), code1);
+    ok('no I/L/O/0/1 in the alphabet', !/[ILO01]/.test(code1 || ''), code1);
+    ok('the account list shows a live code', (await call('/api/staff/users', { cookie: admin }))
+      .body.users.find(u => u.id === studentId).codeAt > 0);
+
+    ok('a student cannot use the password door', (await call('/api/staff/auth/login', {
+      method: 'POST', body: { user: 'noa.cohen', pass: 'anything-at-all' } })).status === 401);
+    ok('a wrong code is refused', (await call('/api/staff/auth/code', {
+      method: 'POST', body: { code: 'ZZZZ-ZZZZ' } })).status === 401);
+
+    /* Lower case, spaces and the wrong dash are all how a real person retypes
+       something off a printed slip. */
+    r = await call('/api/staff/auth/code', { method: 'POST', body: { code: ' ' + code1.toLowerCase().replace('-', ' ') + ' ' } });
+    const student = r.cookie;
+    ok('the code signs the student in, however they retype it', r.body.ok === true && !!student, JSON.stringify(r.body));
+    ok('code entry sets the same HttpOnly session cookie', /HttpOnly/i.test(r.rawCookie));
+    r = await call('/api/staff/auth/me', { cookie: student });
+    ok('the session is the student', r.body.ok === true && r.body.user.role === 'תלמיד' && r.body.user.sid === 's1');
+    ok('a student is not an admin', (await call('/api/staff/users', { cookie: student })).status === 403);
+    /* While the student session is still live — the rotation below ends it,
+       and a dead session answers 401, which would pass this for the wrong
+       reason. 403 is the assertion that the ROLE was refused. */
+    ok('a student cannot issue their own code', (await call('/api/staff/users/' + studentId + '/code',
+      { method: 'POST', cookie: student })).status === 403);
+
+    r = await call('/api/staff/users/' + studentId + '/code', { method: 'POST', cookie: teacher2 });
+    const code2 = r.body.code;
+    ok('a teacher can issue a code', r.status === 201 && !!code2 && code2 !== code1, JSON.stringify(r.body));
+    ok('issuing needs a session at all', (await call('/api/staff/users/' + studentId + '/code',
+      { method: 'POST' })).status === 401);
+    ok('a code only exists for a student account', (await call('/api/staff/users/' + teacherId + '/code',
+      { method: 'POST', cookie: admin })).status === 400);
+
+    ok('the replaced code stops working', (await call('/api/staff/auth/code', {
+      method: 'POST', body: { code: code1 } })).status === 401);
+    ok('rotating kills the session opened with the old code',
+      (await call('/api/staff/auth/me', { cookie: student })).body.ok === false);
+    ok('the new code works', (await call('/api/staff/auth/code', {
+      method: 'POST', body: { code: code2 } })).body.ok === true);
+
+    await call('/api/staff/users/' + studentId, { method: 'PATCH', cookie: admin, body: { active: false } });
+    ok('a disabled student cannot walk in with a live code', (await call('/api/staff/auth/code', {
+      method: 'POST', body: { code: code2 } })).status === 401);
+    await call('/api/staff/users/' + studentId, { method: 'PATCH', cookie: admin, body: { active: true } });
+
+    /* Last in this section on purpose: the limit is keyed on the caller, and
+       `wrangler dev` sends no CF-Connecting-IP, so every request here shares
+       one bucket. Tripping it earlier would 429 the checks above. */
+    for (let i = 0; i < 10; i++) {
+      await call('/api/staff/auth/code', { method: 'POST', body: { code: 'AAAA-BBB' + (i % 8 + 2) } });
+    }
+    r = await call('/api/staff/auth/code', { method: 'POST', body: { code: code2 } });
+    ok('guessing codes locks the door, right code included', r.status === 429, String(r.status));
 
     console.log('\nThrottle');
     for (let i = 0; i < 8; i++) {

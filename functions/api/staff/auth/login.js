@@ -5,7 +5,7 @@
 import { json } from '../../../_shared.js';
 import {
   readJson, findByHandle, checkPassword, startSession, sessionCookie,
-  publicUser, lockedOut, noteFailure, noteSuccess
+  publicUser, lockedOut, noteFailure, noteSuccess, STUDENT_ROLE
 } from '../../../_staff.js';
 
 export async function onRequestPost({ request, env }) {
@@ -21,6 +21,11 @@ export async function onRequestPost({ request, env }) {
   const wrong = { ok: false, error: 'שם משתמש או סיסמה שגויים' };
 
   if (!u) return json(wrong, 401);
+  /* Students have exactly one door, and it is /auth/code. Refusing before the
+     password is even checked keeps a student account off this endpoint
+     entirely — otherwise an attacker could run failures against a student row
+     and, via noteFailure, lock the student out of the code that does work. */
+  if (u.role === STUDENT_ROLE) return json(wrong, 401);
   if (lockedOut(u)) {
     return json({ ok: false, error: 'יותר מדי ניסיונות. נסו שוב בעוד רבע שעה.' }, 429);
   }
