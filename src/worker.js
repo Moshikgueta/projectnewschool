@@ -18,6 +18,10 @@ import * as resetComplete from '../functions/api/staff/auth/reset-complete.js';
 import * as users from '../functions/api/staff/users.js';
 import * as user from '../functions/api/staff/user.js';
 import * as bootstrap from '../functions/api/staff/bootstrap.js';
+import * as rooms from '../functions/api/staff/rooms.js';
+import * as room from '../functions/api/staff/room.js';
+import * as bookings from '../functions/api/staff/bookings.js';
+import * as booking from '../functions/api/staff/booking.js';
 
 const ROUTES = {
   'POST /api/staff/auth/login': login.onRequestPost,
@@ -29,7 +33,12 @@ const ROUTES = {
   'POST /api/staff/auth/reset-complete': resetComplete.onRequestPost,
   'GET /api/staff/users': users.onRequestGet,
   'POST /api/staff/users': users.onRequestPost,
-  'POST /api/staff/bootstrap': bootstrap.onRequestPost
+  'POST /api/staff/bootstrap': bootstrap.onRequestPost,
+  'GET /api/staff/bootstrap': bootstrap.onRequestGet,
+  'GET /api/staff/rooms': rooms.onRequestGet,
+  'POST /api/staff/rooms': rooms.onRequestPost,
+  'GET /api/staff/bookings': bookings.onRequestGet,
+  'POST /api/staff/bookings': bookings.onRequestPost
 };
 
 /* /api/staff/users/<id>, …/reset and …/code — the one route shape with a
@@ -49,6 +58,21 @@ function userRoute(method, path) {
   return null;
 }
 
+/* Rooms and bookings share the collection/:id shape, and PATCH+DELETE on both,
+   so one matcher covers them rather than two near-identical ones. */
+const ITEM_RE = /^\/api\/staff\/(rooms|bookings)\/([A-Za-z0-9_-]{1,64})$/;
+const ITEM_HANDLERS = {
+  rooms: { PATCH: room.onRequestPatch, DELETE: room.onRequestDelete },
+  bookings: { PATCH: booking.onRequestPatch, DELETE: booking.onRequestDelete }
+};
+
+function itemRoute(method, path) {
+  const m = ITEM_RE.exec(path);
+  if (!m) return null;
+  const fn = ITEM_HANDLERS[m[1]][method];
+  return fn ? { fn, id: m[2] } : null;
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -57,7 +81,7 @@ export default {
     const handler = ROUTES[request.method + ' ' + path];
     if (handler) return handler({ request, env });
 
-    const byId = userRoute(request.method, path);
+    const byId = userRoute(request.method, path) || itemRoute(request.method, path);
     if (byId) return byId.fn({ request, env, params: { id: byId.id } });
 
     if (path.startsWith('/api/')) {

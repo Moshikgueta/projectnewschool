@@ -71,6 +71,45 @@ CREATE TABLE IF NOT EXISTS code_attempts (
   n INTEGER NOT NULL
 );
 
+-- ── rooms and the weekly timetable ───────────────────────────────────────
+-- The first school data to live server-side rather than in the page. Until
+-- now a group carried its room as free text ('כיתה 2 · פרונטלי'), which reads
+-- fine and answers nothing: you cannot ask a string whether it is free on
+-- Tuesday at ten.
+CREATE TABLE IF NOT EXISTS rooms (
+  id TEXT PRIMARY KEY,
+  name TEXT NOT NULL UNIQUE,     -- 'כיתה 2'
+  capacity INTEGER NOT NULL DEFAULT 0,   -- 0 = unstated
+  kit TEXT NOT NULL DEFAULT '',  -- projector, whiteboard, floor — free text on purpose
+  active INTEGER NOT NULL DEFAULT 1,
+  sort_order INTEGER NOT NULL DEFAULT 0,
+  created_at INTEGER NOT NULL
+);
+
+-- One row per recurring weekly slot, which is the shape a language school's
+-- timetable actually has: the same class in the same room every Tuesday.
+--
+-- Times are minutes from midnight (600 = 10:00), not 'HH:MM'. Overlap is then
+-- integer comparison — start < other.end AND end > other.start — instead of
+-- string parsing on every check, and the double-booking guard is one WHERE
+-- clause rather than a loop. The UI formats them back for display.
+--
+-- weekday is 0=Sunday … 6=Saturday, matching JS getDay() and the Israeli week.
+CREATE TABLE IF NOT EXISTS room_bookings (
+  id TEXT PRIMARY KEY,
+  room_id TEXT NOT NULL REFERENCES rooms(id),
+  title TEXT NOT NULL,           -- 'English Foundations'
+  teacher TEXT NOT NULL DEFAULT '',
+  weekday INTEGER NOT NULL,
+  start_min INTEGER NOT NULL,
+  end_min INTEGER NOT NULL,
+  note TEXT NOT NULL DEFAULT '',
+  created_by TEXT,
+  created_at INTEGER NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_bookings_room_day ON room_bookings(room_id, weekday);
+
 -- Next up, per MIGRATION-FROM-TAZMAN.md: teachers · students · availability ·
 -- lessons · groups · group_members · packages · attendance · reminders.
 -- Those tables are what turn this from "logins work" into a booking system.
