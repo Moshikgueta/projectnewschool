@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ניהול משתמשים · New School</title>
+<meta name="description" content="מי נכנס למערכת ובאיזה תפקיד.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Broadsheet — אותם טוקנים של index.html. */
+:root{
+  --color-bg:#f3f2f2; --color-surface:#eae9e9; --color-text:#201e1d;
+  --color-accent:#0088b0; --color-accent-2:#d6006c;
+  --color-divider:color-mix(in srgb, #201e1d 16%, transparent);
+  --color-neutral-500:#9b9797; --color-neutral-600:#7d7979; --color-neutral-700:#605d5d;
+  --color-accent-700:#006786;
+  --font-serif:"Source Serif 4","Frank Ruhl Libre",Georgia,serif;
+  --space-2:10px; --space-4:20px; --space-6:30px; --space-8:40px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--color-bg); color:var(--color-text);
+  font-family:var(--font-serif); font-size:1.0625rem; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.sheet{max-width:52rem; margin:0 auto; padding:clamp(2rem,6vw,4rem) clamp(1.15rem,5vw,2.5rem) 5rem}
+
+.masthead{display:flex; align-items:baseline; justify-content:space-between; gap:var(--space-4); flex-wrap:wrap}
+.masthead .title{font-weight:800; font-size:clamp(1.35rem,3.4vw,1.7rem); letter-spacing:-.01em}
+.masthead .org{color:var(--color-neutral-600); font-size:.95rem}
+.rule-thick{border:0; border-top:3px solid var(--color-text); margin:var(--space-2) 0 0}
+.rule-thin{border:0; border-top:1px solid var(--color-text); margin:3px 0 0}
+.dateline{
+  display:flex; justify-content:space-between; gap:var(--space-4); flex-wrap:wrap;
+  padding:6px 0 0; font-size:.8rem; letter-spacing:.08em; color:var(--color-neutral-700);
+}
+
+h1{
+  font-weight:600; font-size:clamp(2rem,6.5vw,3.4rem); line-height:1.1;
+  letter-spacing:-.02em; margin:clamp(2.5rem,7vw,4rem) 0 0; text-wrap:balance; max-width:20ch;
+}
+.standfirst{margin:var(--space-6) 0 0; max-width:44ch; font-size:clamp(1.05rem,2.2vw,1.2rem); color:var(--color-neutral-700)}
+.standfirst em{font-style:italic; color:var(--color-text)}
+h2{font-weight:600; font-size:1.25rem; margin:clamp(3rem,8vw,4.5rem) 0 0}
+.note{margin:var(--space-2) 0 0; max-width:48ch; color:var(--color-neutral-700); font-size:.98rem}
+
+/* טפסים כשורות דפוס: קו תחתון בלבד, בלי קופסאות */
+.field{margin-top:var(--space-6); max-width:26rem}
+.field label{display:block; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-700)}
+input, select{
+  width:100%; margin-top:6px; padding:7px 0 8px;
+  font-family:var(--font-serif); font-size:1.05rem; color:var(--color-text);
+  background:transparent; border:0; border-bottom:1px solid var(--color-text); border-radius:0;
+}
+select{padding-inline-end:4px}
+input:focus, select:focus{outline:none; border-bottom-color:var(--color-accent); border-bottom-width:2px; padding-bottom:7px}
+input[dir="ltr"]{direction:ltr; text-align:right}
+
+.formgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(11rem,1fr)); gap:var(--space-4) var(--space-6); margin-top:var(--space-6)}
+.formgrid .field{margin-top:0; max-width:none}
+
+.btn{
+  margin-top:var(--space-6); display:inline-block;
+  font-family:var(--font-serif); font-size:.85rem; font-weight:600;
+  letter-spacing:.12em; text-transform:uppercase;
+  padding:11px 26px; border:1px solid var(--color-text); border-radius:0;
+  background:var(--color-text); color:var(--color-bg); cursor:pointer;
+}
+.btn.quiet{background:transparent; color:var(--color-text)}
+.btn:hover{background:var(--color-accent-700); border-color:var(--color-accent-700); color:var(--color-bg)}
+.btn:focus-visible{outline:2px solid var(--color-accent); outline-offset:3px}
+
+.textbtn{
+  background:none; border:0; padding:0; cursor:pointer; font-family:var(--font-serif);
+  font-size:.92rem; color:var(--color-accent-700); text-decoration:underline;
+  text-underline-offset:4px; text-decoration-color:var(--color-divider);
+}
+.textbtn:hover{color:var(--color-accent); text-decoration-color:var(--color-accent)}
+.textbtn.warn{color:var(--color-accent-2)}
+.textbtn:focus-visible{outline:2px solid var(--color-accent); outline-offset:3px}
+.textbtn[disabled]{color:var(--color-neutral-500); text-decoration:none; cursor:default}
+
+.err{margin:var(--space-4) 0 0; min-height:1.5em; color:var(--color-accent-2); font-size:.98rem; max-width:44ch}
+
+/* טבלת המשתמשים */
+.scroll{overflow-x:auto; margin-top:var(--space-6)}
+table{border-collapse:collapse; width:100%; font-size:.98rem}
+caption{text-align:right; font-size:.78rem; letter-spacing:.12em; color:var(--color-neutral-600); padding-bottom:6px; text-transform:uppercase}
+th{
+  text-align:right; font-weight:600; font-size:.82rem; letter-spacing:.06em;
+  color:var(--color-neutral-700); padding:0 var(--space-4) 8px 0;
+  border-bottom:1px solid var(--color-text); white-space:nowrap;
+}
+th:last-child, td:last-child{padding-left:0}
+td{padding:12px var(--space-4) 12px 0; border-bottom:1px solid var(--color-divider); vertical-align:top; font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:0}
+td.who .nm{font-weight:600}
+td.who .can{display:block; margin-top:3px; font-size:.86rem; color:var(--color-neutral-600)}
+td .mail{direction:ltr; display:inline-block; color:var(--color-accent-700)}
+td .keycode{direction:ltr; display:inline-block; letter-spacing:.1em; color:var(--color-accent-700)}
+td select{margin-top:0; min-width:9.5rem; font-size:.95rem}
+td .acts{display:flex; gap:var(--space-4); white-space:nowrap}
+
+.topline{display:flex; justify-content:space-between; align-items:baseline; gap:var(--space-4); flex-wrap:wrap; margin-top:clamp(3rem,8vw,4.5rem)}
+.topline h2{margin:0}
+.topline .count{font-size:.85rem; letter-spacing:.08em; color:var(--color-neutral-600)}
+
+.saveline{margin-top:var(--space-8); display:flex; gap:var(--space-6); flex-wrap:wrap; align-items:center}
+
+.toast{
+  position:fixed; inset-block-end:0; inset-inline-start:0; inset-inline-end:0;
+  background:var(--color-text); color:var(--color-bg);
+  padding:13px 20px; font-size:.95rem; text-align:center;
+  transform:translateY(100%); transition:transform .18s ease;
+}
+.toast.show{transform:translateY(0)}
+
+footer{margin-top:clamp(3rem,8vw,5rem); color:var(--color-neutral-600); font-size:.85rem}
+footer .mark{color:var(--color-accent-2)}
+::selection{background:color-mix(in srgb, var(--color-accent) 22%, transparent)}
+[hidden]{display:none !important}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header>
+    <div class="masthead">
+      <div class="title">ניהול משתמשים</div>
+      <div class="org">New School · 26 שפות</div>
+    </div>
+    <hr class="rule-thick">
+    <hr class="rule-thin">
+    <div class="dateline">
+      <span>אדמין</span>
+      <span>מצב הדגמה</span>
+    </div>
+  </header>
+
+  <!-- ====== כניסה ====== -->
+  <div id="gateView">
+    <h1>כניסה.</h1>
+    <p class="standfirst">אפשר להיכנס עם המייל או עם שם המשתמש.</p>
+
+    <div class="field">
+      <label for="gUser">מייל או שם משתמש</label>
+      <input id="gUser" type="text" dir="ltr" autocomplete="username">
+    </div>
+    <div class="field">
+      <label for="gPass">סיסמה</label>
+      <input id="gPass" type="password" autocomplete="current-password">
+    </div>
+
+    <button class="btn" id="loginBtn">כניסה</button>
+    <p class="err" id="gateErr"></p>
+
+    <p class="note">
+      כניסת אדמין להדגמה: <code>office</code> · <code>ns2026</code><br>
+      כניסת מורה להדגמה: <code>yotam</code> · <code>ns2026</code><br>
+      תלמידים לא נכנסים כאן. הם נכנסים בקוד אישי דרך <a href="student.html">כניסת תלמידים</a>.
+    </p>
+  </div>
+
+  <!-- ====== מסך האדמין ====== -->
+  <div id="adminView" hidden>
+    <h1>מי נכנס, ובאיזה תפקיד.</h1>
+    <p class="standfirst">
+      התפקיד קובע מה כל אחד רואה. <em>תלמידים מקבלים קוד אישי במקום סיסמה.</em>
+    </p>
+
+    <h2>הוספת משתמש</h2>
+    <div class="formgrid">
+      <div class="field">
+        <label for="fName">שם</label>
+        <input id="fName" type="text" placeholder="יותם לוי">
+      </div>
+      <div class="field">
+        <label for="fMail">כתובת מייל</label>
+        <input id="fMail" type="email" dir="ltr" placeholder="name@example.com">
+      </div>
+      <div class="field">
+        <label for="fPass">סיסמה</label>
+        <input id="fPass" type="text" dir="ltr" placeholder="ns2026">
+      </div>
+      <div class="field">
+        <label for="fRole">תפקיד</label>
+        <select id="fRole"></select>
+      </div>
+    </div>
+    <button class="btn" id="addBtn">הוספה</button>
+    <p class="err" id="formErr"></p>
+
+    <div class="topline">
+      <h2>משתמשים</h2>
+      <span class="count" id="count"></span>
+    </div>
+
+    <div class="scroll" id="listWrap"></div>
+
+    <h2>שמירה</h2>
+    <p class="note">
+      השינויים נשמרים בדפדפן הזה בלבד. כדי שהרשימה תופיע גם במחשבים אחרים,
+      הורד את users.json והעלה אותו לתיקיית docs במאגר.
+    </p>
+    <div class="saveline">
+      <button class="btn quiet" id="downloadBtn">הורדת users.json</button>
+      <button class="textbtn" id="copyBtn">העתקת הרשימה</button>
+      <button class="textbtn warn" id="resetBtn">איפוס לברירת מחדל</button>
+      <button class="textbtn" id="logout1">יציאה</button>
+    </div>
+  </div>
+
+  <!-- ====== מסך למי שאינו מנהל ====== -->
+  <div id="userView" hidden>
+    <h1 id="uTitle"></h1>
+    <p class="standfirst" id="uRole"></p>
+    <p class="note" id="uCan"></p>
+    <p class="note">ניהול המשתמשים פתוח לאדמין ולמנהל הפדגוגי בלבד.</p>
+    <p class="note"><button class="textbtn" id="logout2">יציאה</button></p>
+  </div>
+
+  <footer>New School <span class="mark">·</span> חדר המורים</footer>
+
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* =========================================================
+   ניהול משתמשים · הדגמה
+   ========================================================= */
+const ROLES = {
+  teacher:  { label: "מורה",         can: "רואה את התלמידים והכיתות שלה" },
+  pedago:   { label: "מנהל פדגוגי",  can: "רואה את כל בית הספר ואת דוחות ההוראה" },
+  office:   { label: "אדמין / משרד", can: "רואה הכל ומנהל משתמשים" },
+  reception:{ label: "מנהלת קבלה",   can: "רואה תלמידים, רישום ותשלומים" },
+  student:  { label: "תלמיד",        can: "רואה רק את המחברות והשיעורים שלו" }
+};
+const MANAGERS = ["office", "pedago"];
+const STORAGE_KEY = "ns_users_demo_v1";
+
+const DEFAULT_USERS = [
+  { id:"u1", name:"המשרד",    username:"office",    email:"office@newschool.demo",    password:"ns2026", role:"office"    },
+  { id:"u2", name:"יותם לוי", username:"yotam",     email:"yotam@newschool.demo",     password:"ns2026", role:"teacher"   },
+  { id:"u3", name:"רונית",    username:"pedago",    email:"pedago@newschool.demo",    password:"ns2026", role:"pedago"    },
+  { id:"u4", name:"נועה",     username:"noa",       email:"noa@newschool.demo",       password:"ns2026", role:"reception" },
+  { id:"u5", name:"נועה כהן", username:"noa.cohen", email:"noa.cohen@newschool.demo", password:"ns2026", role:"student", code:"K7M4XQ" }
+];
+
+/* קוד כניסה לתלמיד. בלי תווים שמתבלבלים ביניהם בהכתבה בעל פה. */
+function genCode() {
+  const chars = "ABCDEFGHJKMNPQRSTUVWXYZ23456789";
+  const rand = new Uint32Array(6);
+  crypto.getRandomValues(rand);
+  let out = "";
+  for (let i = 0; i < 6; i++) out += chars[rand[i] % chars.length];
+  return out;
+}
+
+let users = [];
+let me = null;
+const $ = (id) => document.getElementById(id);
+
+/* ---------- שמירה וטעינה ---------- */
+function save() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(users)); } catch (e) {}
+}
+
+async function loadUsers() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    const local = raw ? JSON.parse(raw) : null;
+    if (Array.isArray(local) && local.length) return local;
+  } catch (e) {}
+  try {
+    const res = await fetch("./users.json", { cache: "no-store" });
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data) && data.length) return data;
+    }
+  } catch (e) {}
+  return DEFAULT_USERS.map(u => ({ ...u }));
+}
+
+function newId() { return "u" + Date.now().toString(36); }
+
+/* ---------- כניסה ---------- */
+function login() {
+  const id = $("gUser").value.trim().toLowerCase();
+  const pass = $("gPass").value;
+  const err = $("gateErr");
+  err.textContent = "";
+
+  const found = users.find(u =>
+    (u.email || "").toLowerCase() === id || (u.username || "").toLowerCase() === id
+  );
+
+  if (!found || found.password !== pass) {
+    err.textContent = "שם משתמש או סיסמה לא נכונים.";
+    $("gPass").select();
+    return;
+  }
+  if (found.role === "student") {
+    err.textContent = "תלמידים נכנסים בקוד אישי, בעמוד כניסת תלמידים.";
+    return;
+  }
+
+  me = found;
+  $("gPass").value = "";
+  $("gateView").hidden = true;
+
+  if (MANAGERS.includes(me.role)) {
+    $("adminView").hidden = false;
+    render();
+  } else {
+    $("uTitle").textContent = "שלום " + me.name + ".";
+    $("uRole").textContent = "התפקיד שלך: " + ROLES[me.role].label + ".";
+    $("uCan").textContent = ROLES[me.role].can + ".";
+    $("userView").hidden = false;
+  }
+}
+
+function logout() {
+  me = null;
+  $("adminView").hidden = true;
+  $("userView").hidden = true;
+  $("gateView").hidden = false;
+  $("gUser").focus();
+}
+
+/* ---------- הטבלה ---------- */
+function roleSelect(value) {
+  const sel = document.createElement("select");
+  Object.entries(ROLES).forEach(([key, cfg]) => {
+    const opt = document.createElement("option");
+    opt.value = key;
+    opt.textContent = cfg.label;
+    if (key === value) opt.selected = true;
+    sel.appendChild(opt);
+  });
+  return sel;
+}
+
+function render() {
+  const wrap = $("listWrap");
+  wrap.textContent = "";
+  $("count").textContent = users.length ? users.length + " רשומים" : "";
+
+  if (!users.length) {
+    const p = document.createElement("p");
+    p.className = "note";
+    p.textContent = "אין עדיין משתמשים. הוסף את הראשון למעלה.";
+    wrap.appendChild(p);
+    return;
+  }
+
+  const table = document.createElement("table");
+  const cap = document.createElement("caption");
+  cap.textContent = "תפקיד קובע הרשאה";
+  table.appendChild(cap);
+
+  const thead = document.createElement("thead");
+  const htr = document.createElement("tr");
+  ["שם", "מייל", "כניסה", "תפקיד", ""].forEach(t => {
+    const th = document.createElement("th");
+    th.textContent = t;
+    htr.appendChild(th);
+  });
+  thead.appendChild(htr);
+  table.appendChild(thead);
+
+  const tbody = document.createElement("tbody");
+
+  users.forEach((u, i) => {
+    const tr = document.createElement("tr");
+
+    /* שם + מה הוא רואה */
+    const tdWho = document.createElement("td");
+    tdWho.className = "who";
+    const nm = document.createElement("span");
+    nm.className = "nm";
+    nm.textContent = u.name + (u.id === me.id ? " (אתה)" : "");
+    const can = document.createElement("span");
+    can.className = "can";
+    can.textContent = (ROLES[u.role] || {}).can || "תפקיד לא מוגדר";
+    tdWho.append(nm, can);
+
+    /* מייל */
+    const tdMail = document.createElement("td");
+    const mail = document.createElement("span");
+    mail.className = "mail";
+    mail.textContent = u.email;
+    tdMail.appendChild(mail);
+
+    /* כניסה: קוד לתלמיד, שם משתמש לשאר */
+    const tdKey = document.createElement("td");
+    const key = document.createElement("span");
+    if (u.role === "student") {
+      key.className = "keycode";
+      key.textContent = u.code || "לא הוגדר";
+    } else {
+      key.className = "mail";
+      key.textContent = u.username || "—";
+    }
+    tdKey.appendChild(key);
+
+    /* תפקיד */
+    const tdRole = document.createElement("td");
+    const sel = roleSelect(u.role);
+    sel.setAttribute("aria-label", "תפקיד של " + u.name);
+    sel.addEventListener("change", () => {
+      if (u.id === me.id && !MANAGERS.includes(sel.value)) {
+        toast("אי אפשר להוריד לעצמך את הרשאת הניהול");
+        sel.value = u.role;
+        return;
+      }
+      users[i].role = sel.value;
+      if (sel.value === "student" && !users[i].code) users[i].code = genCode();
+      save();
+      render();
+      toast("התפקיד עודכן");
+    });
+    tdRole.appendChild(sel);
+
+    /* פעולות */
+    const tdActs = document.createElement("td");
+    const acts = document.createElement("div");
+    acts.className = "acts";
+
+    const key2 = document.createElement("button");
+    key2.className = "textbtn";
+    key2.textContent = u.role === "student" ? "קוד חדש" : "סיסמה חדשה";
+    key2.addEventListener("click", () => {
+      if (u.role === "student") {
+        if (!confirm("להנפיק קוד חדש ל" + u.name + "? הקוד הישן יפסיק לעבוד.")) return;
+        users[i].code = genCode();
+        save();
+        render();
+        toast("הקוד החדש: " + users[i].code);
+        return;
+      }
+      const next = prompt("סיסמה חדשה עבור " + u.name, "ns2026");
+      if (next === null) return;
+      if (next.length < 4) { toast("הסיסמה קצרה מדי"); return; }
+      users[i].password = next;
+      save();
+      toast("הסיסמה עודכנה");
+    });
+
+    const del = document.createElement("button");
+    del.className = "textbtn warn";
+    del.textContent = "הסרה";
+    del.disabled = u.id === me.id;
+    del.addEventListener("click", () => {
+      if (!confirm("להסיר את " + u.name + "?")) return;
+      users.splice(i, 1);
+      save();
+      render();
+      toast("המשתמש הוסר");
+    });
+
+    acts.append(key2, del);
+    tdActs.appendChild(acts);
+
+    tr.append(tdWho, tdMail, tdKey, tdRole, tdActs);
+    tbody.appendChild(tr);
+  });
+
+  table.appendChild(tbody);
+  wrap.appendChild(table);
+}
+
+/* ---------- הוספה ---------- */
+function addUser() {
+  const name = $("fName").value.trim();
+  const email = $("fMail").value.trim().toLowerCase();
+  const password = $("fPass").value || "ns2026";
+  const role = $("fRole").value;
+  const err = $("formErr");
+  err.textContent = "";
+
+  if (!name) { err.textContent = "חסר שם."; $("fName").focus(); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+    err.textContent = "כתובת המייל לא תקינה."; $("fMail").focus(); return;
+  }
+  if (users.some(u => (u.email || "").toLowerCase() === email)) {
+    err.textContent = "הכתובת כבר קיימת ברשימה."; $("fMail").focus(); return;
+  }
+
+  const fresh = { id:newId(), name, username:email.split("@")[0], email, password, role };
+  if (role === "student") fresh.code = genCode();
+  users.push(fresh);
+  save();
+  render();
+
+  $("fName").value = ""; $("fMail").value = ""; $("fPass").value = "";
+  $("fName").focus();
+  toast(fresh.code ? "נוסף. קוד הכניסה שלו: " + fresh.code : "המשתמש נוסף");
+}
+
+/* ---------- ייצוא ---------- */
+function download() {
+  const blob = new Blob([JSON.stringify(users, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = "users.json"; a.click();
+  URL.revokeObjectURL(url);
+}
+
+async function copyList() {
+  try {
+    await navigator.clipboard.writeText(JSON.stringify(users, null, 2));
+    toast("הרשימה הועתקה");
+  } catch (e) {
+    toast("ההעתקה נחסמה. השתמש בהורדת הקובץ.");
+  }
+}
+
+function resetAll() {
+  if (!confirm("לאפס את הרשימה למשתמשי ההדגמה?")) return;
+  users = DEFAULT_USERS.map(u => ({ ...u }));
+  save();
+  render();
+  toast("הרשימה אופסה");
+}
+
+/* ---------- הודעות ---------- */
+let toastTimer;
+function toast(msg) {
+  const t = $("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove("show"), 2600);
+}
+
+/* ---------- אתחול ---------- */
+(async function init() {
+  const sel = $("fRole");
+  Object.entries(ROLES).forEach(([key, cfg]) => {
+    const opt = document.createElement("option");
+    opt.value = key;
+    opt.textContent = cfg.label;
+    sel.appendChild(opt);
+  });
+  sel.value = "teacher";
+
+  users = await loadUsers();
+
+  $("loginBtn").addEventListener("click", login);
+  $("gPass").addEventListener("keydown", e => { if (e.key === "Enter") login(); });
+  $("gUser").addEventListener("keydown", e => { if (e.key === "Enter") $("gPass").focus(); });
+  $("logout1").addEventListener("click", logout);
+  $("logout2").addEventListener("click", logout);
+  $("addBtn").addEventListener("click", addUser);
+  $("fPass").addEventListener("keydown", e => { if (e.key === "Enter") addUser(); });
+  $("downloadBtn").addEventListener("click", download);
+  $("copyBtn").addEventListener("click", copyList);
+  $("resetBtn").addEventListener("click", resetAll);
+
+  $("gUser").focus();
+})();
+</script>
+</body>
+</html>

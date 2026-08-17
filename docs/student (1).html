@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>כניסת תלמידים · New School</title>
+<meta name="description" content="כניסה אישית לתלמידים עם קוד שקיבלת מהמורה.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Broadsheet — אותם טוקנים של index.html. אין כאן קופסאות ואין פינות מעוגלות:
+   ההיררכיה נבנית מגודל טיפוגרפי ומרווח, והקו היחיד שהמערכת מדפיסה הוא זוג
+   הקווים עבה־דק מתחת לשם המערכת. */
+:root{
+  --color-bg:#f3f2f2; --color-surface:#eae9e9; --color-text:#201e1d;
+  --color-accent:#0088b0; --color-accent-2:#d6006c;
+  --color-divider:color-mix(in srgb, #201e1d 16%, transparent);
+  --color-neutral-500:#9b9797; --color-neutral-600:#7d7979; --color-neutral-700:#605d5d;
+  --color-accent-700:#006786;
+  --font-serif:"Source Serif 4","Frank Ruhl Libre",Georgia,serif;
+  --space-2:10px; --space-4:20px; --space-6:30px; --space-8:40px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--color-bg); color:var(--color-text);
+  font-family:var(--font-serif); font-size:1.0625rem; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.sheet{max-width:52rem; margin:0 auto; padding:clamp(2rem,6vw,4rem) clamp(1.15rem,5vw,2.5rem) 5rem}
+
+.masthead{display:flex; align-items:baseline; justify-content:space-between; gap:var(--space-4); flex-wrap:wrap}
+.masthead .title{font-weight:800; font-size:clamp(1.35rem,3.4vw,1.7rem); letter-spacing:-.01em}
+.masthead .org{color:var(--color-neutral-600); font-size:.95rem}
+.rule-thick{border:0; border-top:3px solid var(--color-text); margin:var(--space-2) 0 0}
+.rule-thin{border:0; border-top:1px solid var(--color-text); margin:3px 0 0}
+.dateline{
+  display:flex; justify-content:space-between; gap:var(--space-4); flex-wrap:wrap;
+  padding:6px 0 0; font-size:.8rem; letter-spacing:.08em; color:var(--color-neutral-700);
+}
+
+h1{
+  font-weight:600; font-size:clamp(2rem,6.5vw,3.4rem); line-height:1.1;
+  letter-spacing:-.02em; margin:clamp(2.5rem,7vw,4rem) 0 0; text-wrap:balance; max-width:20ch;
+}
+.standfirst{margin:var(--space-6) 0 0; max-width:44ch; font-size:clamp(1.05rem,2.2vw,1.2rem); color:var(--color-neutral-700)}
+.standfirst em{font-style:italic; color:var(--color-text)}
+h2{font-weight:600; font-size:1.25rem; margin:clamp(3rem,8vw,4.5rem) 0 0}
+.note{margin:var(--space-2) 0 0; max-width:46ch; color:var(--color-neutral-700); font-size:.98rem}
+
+/* שדה הקוד: מוגדר כשורת דפוס, לא כתיבה בתוך קופסה. */
+.codefield{margin:clamp(2rem,5vw,2.8rem) 0 0; max-width:22rem}
+.codefield label{
+  display:block; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--color-accent-700);
+}
+#code{
+  width:100%; margin-top:var(--space-2); padding:8px 0 10px;
+  font-family:var(--font-serif); font-size:clamp(2rem,7vw,2.6rem); font-weight:600;
+  letter-spacing:.22em; text-indent:.22em; text-align:center; direction:ltr;
+  text-transform:uppercase; font-variant-numeric:tabular-nums;
+  background:transparent; color:var(--color-text);
+  border:0; border-bottom:1px solid var(--color-text); border-radius:0;
+}
+#code:focus{outline:none; border-bottom-color:var(--color-accent); border-bottom-width:2px; padding-bottom:9px}
+#code::placeholder{color:var(--color-neutral-500); letter-spacing:.2em}
+
+.btn{
+  margin-top:var(--space-6); display:inline-block;
+  font-family:var(--font-serif); font-size:.85rem; font-weight:600;
+  letter-spacing:.12em; text-transform:uppercase;
+  padding:11px 26px; border:1px solid var(--color-text); border-radius:0;
+  background:var(--color-text); color:var(--color-bg); cursor:pointer;
+}
+.btn:hover{background:var(--color-accent-700); border-color:var(--color-accent-700)}
+.btn:focus-visible{outline:2px solid var(--color-accent); outline-offset:3px}
+
+.err{margin:var(--space-4) 0 0; min-height:1.5em; color:var(--color-accent-2); font-size:.98rem; max-width:40ch}
+
+.aside{margin:clamp(2.5rem,7vw,3.5rem) 0 0; font-size:.95rem; color:var(--color-neutral-700)}
+.textbtn{
+  background:none; border:0; padding:0; cursor:pointer; font-family:var(--font-serif);
+  font-size:.95rem; color:var(--color-accent-700); text-decoration:underline;
+  text-underline-offset:4px; text-decoration-color:var(--color-divider);
+}
+.textbtn:hover{color:var(--color-accent); text-decoration-color:var(--color-accent)}
+.textbtn:focus-visible{outline:2px solid var(--color-accent); outline-offset:3px}
+
+/* בית התלמיד: אותה תבנית entries של עמוד הבית. */
+.entries{margin:clamp(2.5rem,7vw,4rem) 0 0; display:flex; flex-direction:column; gap:var(--space-8)}
+.entry{display:block; text-decoration:none; color:inherit; max-width:42ch}
+.entry .kicker{display:block; font-size:.78rem; letter-spacing:.14em; color:var(--color-accent-700); text-transform:uppercase}
+.entry .name{
+  display:block; margin-top:6px; font-size:clamp(1.4rem,3.4vw,1.9rem); font-weight:600;
+  line-height:1.2; text-decoration:underline; text-decoration-thickness:1px;
+  text-underline-offset:6px; text-decoration-color:var(--color-divider);
+}
+.entry .blurb{display:block; margin-top:var(--space-2); color:var(--color-neutral-700); font-size:1rem}
+.entry.soon .name{color:var(--color-neutral-600); text-decoration-style:dotted}
+
+.codeback{margin:clamp(2.5rem,7vw,3.5rem) 0 0; font-size:.98rem; color:var(--color-neutral-700); max-width:46ch}
+.codeback strong{
+  color:var(--color-accent-700); direction:ltr; display:inline-block;
+  letter-spacing:.12em; font-variant-numeric:tabular-nums;
+}
+
+footer{margin-top:clamp(3rem,8vw,5rem); color:var(--color-neutral-600); font-size:.85rem}
+footer .mark{color:var(--color-accent-2)}
+::selection{background:color-mix(in srgb, var(--color-accent) 22%, transparent)}
+[hidden]{display:none !important}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header>
+    <div class="masthead">
+      <div class="title">כניסת תלמידים</div>
+      <div class="org">New School · 26 שפות</div>
+    </div>
+    <hr class="rule-thick">
+    <hr class="rule-thin">
+    <div class="dateline">
+      <span>כניסה אישית</span>
+      <span>אב־טיפוס</span>
+    </div>
+  </header>
+
+  <!-- ====== כניסה ====== -->
+  <div id="loginView">
+    <h1>הקוד שלך פותח את הכל.</h1>
+
+    <p class="standfirst">
+      בלי מייל ובלי סיסמה. <em>קוד אחד שקיבלת מהמורה, וזהו.</em>
+    </p>
+
+    <div class="codefield">
+      <label for="code">הקוד האישי</label>
+      <input id="code" type="text" inputmode="latin" autocomplete="off"
+             spellcheck="false" maxlength="7" placeholder="ABC123" dir="ltr">
+    </div>
+
+    <button class="btn" id="enterBtn">כניסה</button>
+    <p class="err" id="err"></p>
+
+    <p class="aside">
+      שכחת את הקוד? בקש מהמורה קוד חדש.
+      <br>
+      רוצה רק להתרשם? <button class="textbtn" id="demoBtn">כניסה עם תלמידה לדוגמה</button>
+    </p>
+  </div>
+
+  <!-- ====== בית התלמיד ====== -->
+  <div id="homeView" hidden>
+    <h1 id="hello"></h1>
+    <p class="standfirst" id="subline"></p>
+
+    <nav class="entries">
+      <a class="entry soon" href="#" id="tile1">
+        <span class="kicker">המחברת</span>
+        <span class="name">המחברת שלי</span>
+        <span class="blurb">כל מה שעשינו בשיעורים, לפי תאריך, במקום אחד.</span>
+      </a>
+      <a class="entry soon" href="#" id="tile2">
+        <span class="kicker">תרגול</span>
+        <span class="name">שיעורי בית</span>
+        <span class="blurb">מה צריך להכין לשיעור הבא, ומה כבר הגשת.</span>
+      </a>
+      <a class="entry soon" href="#" id="tile3">
+        <span class="kicker">יומן</span>
+        <span class="name">השיעורים שלי</span>
+        <span class="blurb">מתי השיעור הבא, עם מי, ובאיזו קבוצה.</span>
+      </a>
+    </nav>
+
+    <p class="codeback">
+      הקוד שלך: <strong id="myCode"></strong> · שמור אותו, זה מה שמכניס אותך בפעם הבאה.
+      <br>
+      <button class="textbtn" id="outBtn">יציאה</button>
+    </p>
+  </div>
+
+  <footer>New School <span class="mark">·</span> חדר המורים</footer>
+
+</div>
+
+<script>
+/* =========================================================
+   כניסת תלמידים בקוד אישי.
+   קורא את אותה רשימת משתמשים של מסך ניהול המשתמשים.
+   ========================================================= */
+const STORAGE_KEY = "ns_users_demo_v1";
+const DEMO_CODE = "K7M4XQ";
+
+const DEFAULT_USERS = [
+  { id:"u1", name:"המשרד",    username:"office",    email:"office@newschool.demo",    password:"ns2026", role:"office"    },
+  { id:"u2", name:"יותם לוי", username:"yotam",     email:"yotam@newschool.demo",     password:"ns2026", role:"teacher"   },
+  { id:"u3", name:"רונית",    username:"pedago",    email:"pedago@newschool.demo",    password:"ns2026", role:"pedago"    },
+  { id:"u4", name:"נועה",     username:"noa",       email:"noa@newschool.demo",       password:"ns2026", role:"reception" },
+  { id:"u5", name:"נועה כהן", username:"noa.cohen", email:"noa.cohen@newschool.demo", password:"ns2026", role:"student", code: DEMO_CODE }
+];
+
+const $ = (id) => document.getElementById(id);
+let users = [];
+
+/* אותיות וספרות באנגלית גדולה בלבד */
+function clean(str) {
+  return String(str || "").toUpperCase().replace(/[^A-Z0-9]/g, "");
+}
+
+async function loadUsers() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    const local = raw ? JSON.parse(raw) : null;
+    if (Array.isArray(local) && local.length) return local;
+  } catch (e) {}
+  try {
+    const res = await fetch("./users.json", { cache: "no-store" });
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data) && data.length) return data;
+    }
+  } catch (e) {}
+  return DEFAULT_USERS;
+}
+
+function enter() {
+  const typed = clean($("code").value);
+  const err = $("err");
+  err.textContent = "";
+
+  if (!typed) { err.textContent = "צריך להקליד קוד."; $("code").focus(); return; }
+
+  const student = users.find(u => u.role === "student" && clean(u.code) === typed);
+  if (!student) {
+    err.textContent = "הקוד לא מזוהה. בדוק שוב, או בקש קוד חדש מהמורה.";
+    $("code").select();
+    return;
+  }
+  openHome(student);
+}
+
+function openHome(student) {
+  $("loginView").hidden = true;
+  $("homeView").hidden = false;
+  $("hello").textContent = "שלום " + student.name + ".";
+  $("subline").textContent = "טוב לראות אותך. הנה מה שמחכה לך.";
+  $("myCode").textContent = clean(student.code);
+  $("outBtn").focus();
+}
+
+function leave() {
+  $("homeView").hidden = true;
+  $("loginView").hidden = false;
+  $("code").value = "";
+  $("err").textContent = "";
+  $("code").focus();
+}
+
+(async function init() {
+  users = await loadUsers();
+
+  $("code").addEventListener("input", (e) => {
+    const pos = e.target.selectionStart;
+    e.target.value = clean(e.target.value);
+    e.target.setSelectionRange(pos, pos);
+  });
+  $("code").addEventListener("keydown", (e) => { if (e.key === "Enter") enter(); });
+
+  $("enterBtn").addEventListener("click", enter);
+  $("outBtn").addEventListener("click", leave);
+  $("demoBtn").addEventListener("click", () => {
+    const anyStudent = users.find(u => u.role === "student" && u.code);
+    $("code").value = anyStudent ? clean(anyStudent.code) : DEMO_CODE;
+    enter();
+  });
+
+  /* הכרטיסיות עדיין לא מחוברות לתוכן אמיתי */
+  ["tile1","tile2","tile3"].forEach(id => {
+    $(id).addEventListener("click", (e) => {
+      e.preventDefault();
+      $("err").textContent = "";
+    });
+  });
+
+  $("code").focus();
+})();
+</script>
+</body>
+</html>
