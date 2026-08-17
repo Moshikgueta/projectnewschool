@@ -2,14 +2,17 @@
      PATCH               → name · username · email · role · active · screens · sid · pass
      DELETE              → remove the account and its sessions/tokens
      POST  …/:id/reset   → mint a reset link for manual relay (no email service)
+     POST  …/:id/code    → issue a student's entry code (teachers may too)
 
-   All admin-only. The id comes from the path; src/worker.js parses it and
-   passes it in as `params.id`, Pages-Functions style. */
+   Admin-only except the last. The id comes from the path; src/worker.js
+   parses it and passes it in as `params.id`, Pages-Functions style. */
 
 import { json } from '../../_shared.js';
 import {
-  requireAdmin, readJson, packPassword, initialsOf, publicUser, validRole,
-  validEmail, endAllSessions, issueResetToken, resetLink, MIN_PASS
+  requireAdmin, requireCodeIssuer, readJson, packPassword, initialsOf, publicUser,
+  validRole, validEmail, endAllSessions, issueResetToken, resetLink,
+  issueStudentCode, revokeStudentCode, formatCode, codeConfigured,
+  STUDENT_ROLE, MIN_PASS
 } from '../../_staff.js';
 
 async function load(env, id) {
@@ -102,6 +105,14 @@ export async function onRequestPatch({ request, env, params }) {
     await endAllSessions(env, target.id);
   }
 
+  /* Someone who is no longer a student has no business holding a student's
+     entry code. /auth/code re-checks the role anyway, so this is belt and
+     braces — but it also stops a stale row from lingering under the UNIQUE
+     index and blocking a later re-issue. */
+  if (b.role !== undefined && target.role === STUDENT_ROLE && String(b.role) !== STUDENT_ROLE) {
+    await revokeStudentCode(env, target.id);
+  }
+
   return json({ ok: true, user: publicUser(await load(env, target.id)) });
 }
 
@@ -125,8 +136,44 @@ export async function onRequestDelete({ request, env, params }) {
 
   await env.DB.prepare('DELETE FROM staff_sessions WHERE user_id=?').bind(target.id).run();
   await env.DB.prepare('DELETE FROM staff_reset_tokens WHERE user_id=?').bind(target.id).run();
+  await revokeStudentCode(env, target.id);
   await env.DB.prepare('DELETE FROM staff_users WHERE id=?').bind(target.id).run();
   return json({ ok: true });
+}
+
+/* POST /api/staff/users/:id/code — issue (or re-issue) a student's entry code.
+
+   Open to teachers as well as admins, because the code is handed over in
+   class: routing it through the office is how it ends up never handed over.
+   A teacher already sees this student's work, so nothing is exposed that
+   was not already visible.
+
+   Like the temporary password and the reset link, the raw code is returned
+   exactly once. It is stored as a peppered hash, so nothing can recover it
+   afterwards — losing it means issuing another. */
+export async function onRequestPostCode({ request, env, params }) {
+  const guard = await requireCodeIssuer(request, env);
+  if (guard.res) return guard.res;
+
+  if (!codeConfigured(env)) {
+    return json({ ok: false, error: 'כניסה בקוד לא מוגדרת בשרת (חסר STUDENT_CODE_PEPPER).' }, 503);
+  }
+
+  const target = await load(env, params.id);
+  if (!target) return json({ ok: false, error: 'החשבון לא נמצא.' }, 404);
+  if (target.role !== STUDENT_ROLE) {
+    return json({ ok: false, error: 'קוד כניסה קיים רק לחשבון של תלמיד/ה.' }, 400);
+  }
+  if (!target.active) {
+    return json({ ok: false, error: 'החשבון מושבת — צריך להפעיל אותו לפני הנפקת קוד.' }, 400);
+  }
+
+  const code = await issueStudentCode(env, target.id, guard.user.id);
+  /* The previous code stopped working the moment this one was written, so
+     any session opened with it has to go too. */
+  await endAllSessions(env, target.id);
+
+  return json({ ok: true, code: formatCode(code), name: target.name }, 201);
 }
 
 /* POST /api/staff/users/:id/reset — the manual-relay path from

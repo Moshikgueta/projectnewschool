@@ -21,7 +21,11 @@ export async function onRequestPost({ request, env }) {
   const name = String(b.name || '').trim();
   const email = String(b.email || '').trim().toLowerCase();
   const pass = String(b.pass || '');
-  const role = b.role === 'תלמיד' ? 'תלמיד' : 'מורה';   /* only these two are self-selectable */
+  /* Always מורה. Students do not sign themselves up any more: their way in is
+     a code the teacher issues, so a self-opened 'תלמיד' account would be an
+     account with no door — inactive, passworded, and unreachable by
+     /auth/code, sitting in the admin list looking like something to approve. */
+  const role = 'מורה';
 
   if (!name || !email) return json({ ok: false, error: 'צריך שם ואימייל' }, 400);
   if (!validEmail(email)) return json({ ok: false, error: 'האימייל לא תקין' }, 400);
@@ -39,7 +43,7 @@ export async function onRequestPost({ request, env }) {
      VALUES (?,?,NULL,?,?,?,?,0,0,?,NULL,0,0,?)`
   ).bind(
     randomId(), email, await packPassword(pass), role, name, initialsOf(name),
-    role === 'מורה' ? JSON.stringify(TEACHER_SCREENS) : null,
+    JSON.stringify(TEACHER_SCREENS),
     Date.now()
   ).run();
 
