@@ -9,7 +9,10 @@
 # docs/ is also what GitHub Pages serves, so the same build works both ways —
 # on Pages without a backend (login cannot succeed), on the Worker with one.
 
-name = "teacher-room"
+# Must match the Worker that Cloudflare Workers Builds deploys into, which is
+# named after the repository. When they disagree the build warns, overrides
+# this value with the CI one, and opens a pull request to "fix" the config.
+name = "projectnewschool"
 main = "src/worker.js"
 compatibility_date = "2026-07-01"
 

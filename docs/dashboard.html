@@ -2321,12 +2321,39 @@ table{border-collapse:collapse;width:100%}
 </div>
 </form>
 
+<div style="display:flex;align-items:center;gap:10px;margin-top:20px">
+<span style="height:1px;flex:1;background:var(--color-neutral-200)"></span>
+<span style="font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);letter-spacing:.06em">תלמיד/ה?</span>
+<span style="height:1px;flex:1;background:var(--color-neutral-200)"></span>
+</div>
+<button type="button" onClick="{{ goCode }}" style="width:100%;height:42px;margin-top:12px;font:600 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:transparent;border:1px solid var(--color-neutral-300);border-radius:11px;cursor:pointer" style-hover="background:var(--color-neutral-100);border-color:var(--color-text)">כניסה עם קוד אישי</button>
+
 <div style="display:flex;align-items:center;gap:10px;margin-top:22px">
 <span style="height:1px;flex:1;background:var(--color-neutral-200)"></span>
 <span style="font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);letter-spacing:.06em">אין לך חשבון?</span>
 <span style="height:1px;flex:1;background:var(--color-neutral-200)"></span>
 </div>
 <p style="margin-top:13px;font:400 12.5px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">חשבונות נפתחים על ידי משרד בית הספר. אם נפתח לך חשבון וקיבלת סיסמה זמנית — אפשר להיכנס איתה ולהחליף אותה דרך "שכחת סיסמה?".</p>
+</sc-if>
+
+<sc-if value="{{ isAuthCode }}">
+<form onSubmit="{{ codeLogin }}">
+<h2 style="font-size:24px;line-height:1.15">כניסה עם קוד אישי</h2>
+<p style="margin-top:7px;font:400 13.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">הקלידו את הקוד שקיבלתם מהמורה. אין צורך במייל ובסיסמה.</p>
+
+<label style="display:flex;flex-direction:column;gap:6px;margin-top:20px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">הקוד שלי</span>
+<input name="code" autoComplete="one-time-code" autoCapitalize="characters" autoCorrect="off" spellCheck="false" placeholder="K7M4-XQ9P" maxLength="20" style="height:52px;padding:0 13px;font:600 22px ui-monospace,'Source Serif 4',Georgia,monospace;letter-spacing:.16em;text-align:center;direction:ltr;text-transform:uppercase;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+
+<sc-if value="{{ hasCodeError }}">
+<div style="display:flex;align-items:center;gap:9px;margin-top:13px;background:var(--color-critical-tint);border-radius:10px;padding:10px 12px;font:500 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-critical)"><span style="width:7px;height:7px;border-radius:50%;background:var(--color-critical-mid);flex:none"></span>{{ codeError }}</div>
+</sc-if>
+
+<button type="submit" style="width:100%;height:44px;margin-top:18px;font:600 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:11px;cursor:pointer" style-hover="background:var(--color-accent)">כניסה</button>
+
+<p style="margin-top:14px;font:400 12.5px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">אבד לכם הקוד? בקשו מהמורה קוד חדש — הקוד הישן מפסיק לעבוד באותו רגע.</p>
+<a href="#" onClick="{{ goLogin }}" style="display:inline-block;margin-top:12px;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">אני מהצוות — כניסה עם סיסמה</a>
+</form>
 </sc-if>
 
 <sc-if value="{{ isAuthSignup }}">
@@ -2337,11 +2364,7 @@ table{border-collapse:collapse;width:100%}
 <label style="display:flex;flex-direction:column;gap:6px;margin-top:20px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">שם מלא</span>
 <input name="name" autoComplete="name" placeholder="השם שלך" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
 </label>
-<div style="display:flex;background:var(--color-neutral-200);border-radius:11px;padding:3px;gap:3px;margin-top:13px">
-<button type="button" onClick="{{ setSignupTeacher }}" style="flex:1;height:32px;border:none;border-radius:8px;cursor:pointer;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ signupRoleFg.teacher }};background:{{ signupRoleBg.teacher }}">מורה</button>
-<button type="button" onClick="{{ setSignupStudent }}" style="flex:1;height:32px;border:none;border-radius:8px;cursor:pointer;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ signupRoleFg.student }};background:{{ signupRoleBg.student }}">תלמיד/ה</button>
-</div>
-<input type="hidden" name="role" value="{{ signupRole }}">
+<p style="margin-top:13px;font:400 12.5px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">המסך הזה מיועד לצוות. תלמידים לא נרשמים כאן — הכניסה שלהם היא בקוד אישי שהמורה מוסרת בשיעור.</p>
 <label style="display:flex;flex-direction:column;gap:6px;margin-top:13px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">אימייל</span>
 <input name="email" type="email" autoComplete="email" placeholder="name@example.com" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
 </label>
@@ -3869,7 +3892,12 @@ table{border-collapse:collapse;width:100%}
 <select value="{{ a.role }}" onChange="{{ a.onRole }}" style="flex:none;height:30px;padding:0 9px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ a.roleFg }};background:{{ a.roleBg }};border:none;border-radius:999px;cursor:pointer"><sc-for list="{{ roleOpts }}" as="o" hint-placeholder-count="3"><option value="{{ o }}">{{ o }}</option></sc-for></select>
 <button onClick="{{ a.toggleActive }}" style="flex:none;height:30px;padding:0 11px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:{{ a.activeBg }};color:{{ a.activeFg }};border:none;border-radius:999px;cursor:pointer;white-space:nowrap" style-hover="filter:brightness(.96)">{{ a.activeLabel }}</button>
 <button onClick="{{ a.copyCreds }}" title="העתק שם משתמש ומייל" style="flex:none;height:30px;padding:0 11px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);background:transparent;border:1px solid var(--color-neutral-300);border-radius:999px;cursor:pointer;white-space:nowrap" style-hover="background:var(--color-neutral-100);color:var(--color-text)">העתק פרטים</button>
+<sc-if value="{{ a.isStaff }}" hint-placeholder-val="{{ true }}">
 <button onClick="{{ a.resetLink }}" title="צור קישור לבחירת סיסמה — תקף לשעה" style="flex:none;height:30px;padding:0 11px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);background:transparent;border:1px solid var(--color-neutral-300);border-radius:999px;cursor:pointer;white-space:nowrap" style-hover="background:var(--color-neutral-100);color:var(--color-text)">קישור איפוס</button>
+</sc-if>
+<sc-if value="{{ a.isStudent }}">
+<button onClick="{{ a.issueCode }}" title="{{ a.codeTitle }}" style="flex:none;height:30px;padding:0 11px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);background:transparent;border:1px solid var(--color-neutral-300);border-radius:999px;cursor:pointer;white-space:nowrap" style-hover="background:var(--color-neutral-100);color:var(--color-text)">{{ a.codeLabel }}</button>
+</sc-if>
 <button onClick="{{ a.remove }}" title="מחק חשבון" style="flex:none;width:28px;height:28px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);background:transparent;border:none;border-radius:8px;cursor:pointer" style-hover="background:var(--color-critical-tint);color:var(--color-critical)">✕</button>
 </div>
 
@@ -3877,9 +3905,16 @@ table{border-collapse:collapse;width:100%}
 <label style="display:flex;flex-direction:column;gap:4px"><span style="font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">שם משתמש</span>
 <input value="{{ a.user }}" onChange="{{ a.onUser }}" style="height:36px;padding:0 10px;font:500 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:9px;outline:none;direction:ltr;text-align:left" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
 </label>
+<sc-if value="{{ a.isStaff }}" hint-placeholder-val="{{ true }}">
 <label style="display:flex;flex-direction:column;gap:4px"><span style="font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">סיסמה חדשה</span>
 <input value="{{ a.passDraft }}" onChange="{{ a.onPass }}" onBlur="{{ a.savePass }}" type="password" autoComplete="new-password" placeholder="לקביעת סיסמה חדשה" style="height:36px;padding:0 10px;font:500 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:9px;outline:none;direction:ltr;text-align:left" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
 </label>
+</sc-if>
+<sc-if value="{{ a.isStudent }}">
+<label style="display:flex;flex-direction:column;gap:4px"><span style="font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">קוד כניסה</span>
+<div style="height:36px;display:flex;align-items:center;padding:0 10px;font:500 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:9px">{{ a.codeState }}</div>
+</label>
+</sc-if>
 <label style="display:flex;flex-direction:column;gap:4px"><span style="font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">מייל</span>
 <input value="{{ a.email }}" onChange="{{ a.onEmail }}" style="height:36px;padding:0 10px;font:500 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:9px;outline:none;direction:ltr;text-align:left" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
 </label>
@@ -3901,7 +3936,7 @@ table{border-collapse:collapse;width:100%}
 </div>
 </sc-for>
 
-<p style="font:400 12px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);max-width:78ch">בפרוטוטייפ החשבונות נשמרים בדפדפן והאכיפה היא בממשק. בגרסה האמיתית הכניסה תהיה דרך חשבון Google של בית הספר, והרשאות יאוכפו בצד השרת — סיסמאות לא נשמרות בטקסט גלוי.</p>
+<p style="font:400 12px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);max-width:78ch">החשבונות נשמרים בבסיס הנתונים של בית הספר וההרשאות נאכפות בשרת — הסתרת מסך בממשק היא נוחות, לא מחסום. סיסמאות נשמרות מוצפנות ואינן ניתנות לשחזור, ולכן אפשר רק לקבוע סיסמה חדשה. תלמידים נכנסים בקוד אישי במקום בסיסמה.</p>
 </div>
 
 </div>
@@ -4851,6 +4886,22 @@ class Component extends DCLogic {
     });
   }
 
+  /* The one moment the code is readable. It is stored hashed, so there is no
+     screen anywhere that can show it again — hence straight to the clipboard,
+     phrased as something to hand over rather than a value to note down. */
+  issueStudentCode(id) {
+    const a = this.accounts().find(x => x.id === id);
+    if (a && a.codeAt && !confirm('הנפקת קוד חדש מבטלת את הקוד הקודם מיד. להמשיך?')) return;
+    this.api('/api/staff/users/' + id + '/code', { method: 'POST' }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא הצלחנו להנפיק קוד'); return; }
+      this.mergeAccount(Object.assign({}, a, { codeAt: Date.now() }));
+      this.copy(
+        'כניסה למערכת של New School\nהקוד האישי של ' + r.name + ': ' + r.code +
+        '\nנכנסים דרך מסך הכניסה, בכפתור "כניסה עם קוד אישי". אין צורך במייל ובסיסמה.',
+        'הקוד הועתק — ' + r.code + '. הוא לא יוצג שוב.');
+    });
+  }
+
   toggleScreen(id, key) {
     const a = this.accounts().find(x => x.id === id);
     if (!a) return;
@@ -4877,12 +4928,20 @@ class Component extends DCLogic {
       if (!r.ok) { this.flash(r.error || 'יצירת החשבון נכשלה'); return; }
       form.reset();
       this.setState({ accounts: [r.user].concat(this.accounts()) });
-      /* The only moment this password is readable. Put it on the clipboard
-         so the admin can hand it over before it is gone for good. */
-      this.copy(
-        'כניסה לחדר המורים של New School\nשם משתמש: ' + r.user.user +
-        '\nסיסמה זמנית: ' + r.tempPassword + '\nמייל: ' + r.user.email,
-        'החשבון נוצר — פרטי הכניסה הועתקו. הסיסמה הזמנית לא תוצג שוב.');
+      /* The only moment the new credential is readable, whichever kind it is.
+         Straight to the clipboard so it can be handed over before it is gone
+         for good — a student gets a code, everyone else a temporary password. */
+      if (r.code) {
+        this.copy(
+          'כניסה למערכת של New School\nהקוד האישי של ' + r.user.name + ': ' + r.code +
+          '\nנכנסים דרך מסך הכניסה, בכפתור "כניסה עם קוד אישי". אין צורך במייל ובסיסמה.',
+          'התלמיד/ה נוסף/ה — הקוד ' + r.code + ' הועתק. הוא לא יוצג שוב.');
+      } else {
+        this.copy(
+          'כניסה לחדר המורים של New School\nשם משתמש: ' + r.user.user +
+          '\nסיסמה זמנית: ' + r.tempPassword + '\nמייל: ' + r.user.email,
+          'החשבון נוצר — פרטי הכניסה הועתקו. הסיסמה הזמנית לא תוצג שוב.');
+      }
     });
   };
 
@@ -4919,8 +4978,26 @@ class Component extends DCLogic {
 
   goLogin = () => this.setState({
     authMode: 'login', loginError: '', signupError: '', signupNote: '',
-    forgotError: '', forgotNote: '', resetError: '', resetToken: null
+    forgotError: '', forgotNote: '', resetError: '', resetToken: null, codeError: ''
   });
+  goCode = () => this.setState({ authMode: 'code', codeError: '', loginError: '' });
+
+  /* The student door. One field, and the server does the normalising — what
+     gets typed off a printed slip is lower case as often as not, with the
+     dash in the wrong place or missing entirely. */
+  codeLogin = (e) => {
+    e.preventDefault();
+    if (this.state.authBusy) return;
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    const code = String(d.code || '').trim();
+    if (!code) { this.setState({ codeError: 'צריך להקליד את הקוד' }); return; }
+    this.setState({ authBusy: true, codeError: '' });
+    this.api('/api/staff/auth/code', { method: 'POST', body: { code } }).then(r => {
+      this.setState({ authBusy: false });
+      if (!r.ok) { this.setState({ codeError: r.error || 'הקוד לא מזוהה' }); return; }
+      this.startSession(r.user);
+    });
+  };
   goSignup = () => this.setState({ authMode: 'signup', signupError: '', signupNote: '' });
   goForgot = () => this.setState({ authMode: 'forgot', forgotError: '', forgotNote: '' });
 
@@ -4942,7 +5019,7 @@ class Component extends DCLogic {
     this.setState({ authBusy: true, signupError: '', signupNote: '' });
     this.api('/api/staff/auth/signup', {
       method: 'POST',
-      body: { name, email, pass, role: this.state.signupRole === 'תלמיד' ? 'תלמיד' : 'מורה' }
+      body: { name, email, pass }
     }).then(r => {
       this.setState({ authBusy: false });
       if (!r.ok) { this.setState({ signupError: r.error || 'ההרשמה נכשלה' }); return; }
@@ -5706,7 +5783,7 @@ class Component extends DCLogic {
     students: null, materials: null, teachers: null, checked: [],
     devel: null, feedback: null, devSel: null, fbKind: 'תלמיד',
     groupData: null, grpSel: null, grpSession: null, notifs: null,
-    session: null, loginError: '', authBusy: false, authMode: 'login',
+    session: null, loginError: '', codeError: '', authBusy: false, authMode: 'login',
     signupError: '', signupNote: '', forgotError: '', forgotNote: '',
     resetError: '', resetToken: null, passDrafts: {},
     cal: null, linkKey: null, calMine: true, gen: null,
@@ -6213,13 +6290,10 @@ class Component extends DCLogic {
       authMode: s.authMode || 'login',
       isAuthLogin: (s.authMode || 'login') === 'login', isAuthSignup: s.authMode === 'signup',
       isAuthForgot: s.authMode === 'forgot', isAuthReset: s.authMode === 'reset',
+      isAuthCode: s.authMode === 'code',
       goLogin: this.goLogin, goSignup: this.goSignup, goForgot: this.goForgot,
+      goCode: this.goCode, codeLogin: this.codeLogin,
       signup: this.signup, forgotSubmit: this.forgotSubmit, resetSubmit: this.resetSubmit,
-      signupRole: s.signupRole || 'מורה',
-      setSignupTeacher: () => this.setState({ signupRole: 'מורה' }),
-      setSignupStudent: () => this.setState({ signupRole: 'תלמיד' }),
-      signupRoleFg: { teacher: (s.signupRole || 'מורה') === 'מורה' ? '#fff' : 'var(--color-neutral-800)', student: s.signupRole === 'תלמיד' ? '#fff' : 'var(--color-neutral-800)' },
-      signupRoleBg: { teacher: (s.signupRole || 'מורה') === 'מורה' ? 'var(--color-neutral-900)' : 'transparent', student: s.signupRole === 'תלמיד' ? 'var(--color-neutral-900)' : 'transparent' },
       signupError: s.signupError, hasSignupError: !!s.signupError,
       signupNote: s.signupNote, hasSignupNote: !!s.signupNote,
       forgotError: s.forgotError, hasForgotError: !!s.forgotError,
@@ -6229,6 +6303,7 @@ class Component extends DCLogic {
          told whose it is until the new password is accepted. */
       resetIntro: 'הקישור אומת. בחר/י סיסמה חדשה — לפחות 6 תווים.',
       loginError: s.loginError, hasLoginError: !!s.loginError,
+      codeError: s.codeError, hasCodeError: !!s.codeError,
       login: this.login, logout: this.logout,
       setTeacher: () => this.setState({ role: 'מורה', view: 'dashboard', selected: null }),
       setAdmin: () => this.setState({ role: 'אדמין', view: 'dashboard', selected: null }),
@@ -6472,6 +6547,15 @@ class Component extends DCLogic {
           roleBg: isT ? '#e9f8ff' : a.role === 'אדמין' ? '#eae7e7' : '#fff1f4',
           roleFg: isT ? '#006786' : a.role === 'אדמין' ? '#444141' : '#aa0b56',
           isTeacher: isT,
+          /* A student has a code and no usable password; everyone else is the
+             other way round. The two panels are mutually exclusive. */
+          isStudent: a.role === 'תלמיד', isStaff: a.role !== 'תלמיד',
+          codeState: a.codeAt ? 'קוד פעיל' : 'לא הונפק קוד',
+          codeLabel: a.codeAt ? 'קוד חדש' : 'הנפקת קוד',
+          codeTitle: a.codeAt
+            ? 'הנפקת קוד חדש — הקוד הקודם מפסיק לעבוד מיד'
+            : 'הנפקת קוד כניסה אישי לתלמיד/ה',
+          issueCode: () => this.issueStudentCode(a.id),
           screensLine: isT ? scr.length + ' מסכים מתוך ' + this.allScreens().length : 'גישה מלאה לפי התפקיד',
           chips: this.SCREEN_KEYS.map(sk => {
             const on = scr.indexOf(sk.key) > -1;
