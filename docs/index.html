@@ -74,21 +74,6 @@ h2{
 }
 .note{margin:var(--space-2) 0 0; max-width:46ch; color:var(--color-neutral-700); font-size:.98rem}
 
-.scroll{overflow-x:auto; margin-top:var(--space-6)}
-table{border-collapse:collapse; width:100%; font-size:.98rem}
-caption{text-align:right; font-size:.78rem; letter-spacing:.12em; color:var(--color-neutral-600);
-        padding-bottom:6px; text-transform:uppercase}
-th{
-  text-align:right; font-weight:600; font-size:.82rem; letter-spacing:.06em;
-  color:var(--color-neutral-700); padding:0 var(--space-4) 8px 0;
-  border-bottom:1px solid var(--color-text);
-}
-th:last-child,td:last-child{padding-left:0}
-td{padding:10px var(--space-4) 10px 0; border-bottom:1px solid var(--color-divider);
-   font-variant-numeric:tabular-nums}
-tr:last-child td{border-bottom:0}
-td code{font-family:var(--font-serif); direction:ltr; display:inline-block; color:var(--color-accent-700)}
-
 footer{margin-top:clamp(3rem,8vw,5rem); color:var(--color-neutral-600); font-size:.85rem}
 footer .mark{color:var(--color-accent-2)}
 ::selection{background:color-mix(in srgb, var(--color-accent) 22%, transparent)}
@@ -130,27 +115,17 @@ footer .mark{color:var(--color-accent-2)}
     </a>
   </nav>
 
-  <h2>כניסה לדמו</h2>
+  <h2>כניסה</h2>
   <p class="note">
-    הנתונים מוטמעים בעמוד עצמו ואין מאחוריו שרת. הסיסמאות מוצגות בכוונה, כדי שאפשר
-    יהיה להתרשם מכל התצוגות. אין כאן פרטי תלמידים אמיתיים.
+    הכניסה היא עם חשבון אישי — שם משתמש או אימייל וסיסמה. את החשבונות פותח משרד
+    בית הספר, ואין הרשמה עצמית פתוחה. שכחתם סיסמה? יש קישור במסך הכניסה, ואפשר
+    גם לפנות למשרד.
   </p>
-
-  <div class="scroll">
-    <table>
-      <caption>חמישה תפקידים</caption>
-      <thead>
-        <tr><th>תפקיד</th><th>שם משתמש</th><th>סיסמה</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>מורה</td><td><code>yotam</code></td><td><code>ns2026</code></td></tr>
-        <tr><td>אדמין</td><td><code>office</code></td><td><code>ns2026</code></td></tr>
-        <tr><td>מנהל פדגוגי</td><td><code>pedago</code></td><td><code>ns2026</code></td></tr>
-        <tr><td>מנהלת קבלה</td><td><code>noa</code></td><td><code>ns2026</code></td></tr>
-        <tr><td>תלמידה</td><td><code>noa.cohen</code></td><td><code>ns2026</code></td></tr>
-      </tbody>
-    </table>
-  </div>
+  <p class="note">
+    שימו לב: הכניסה עובדת רק בכתובת שמוגשת מהשרת של בית הספר. העותק שמתפרסם
+    ב-GitHub Pages הוא קבצים סטטיים בלבד, בלי צד שרת — המסכים ייראו כרגיל, אבל
+    שום התחברות לא תצליח שם.
+  </p>
 
   <footer>New School <span class="mark">·</span> חדר המורים</footer>
 
