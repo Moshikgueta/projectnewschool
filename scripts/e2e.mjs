@@ -81,8 +81,14 @@ async function waitFor(url, tries = 60) {
 
   try {
     console.log('\nBootstrap');
+    /* The login screen asks this before drawing itself: an empty school gets
+       the setup form, a set-up one gets the ordinary sign-in. */
+    ok('an empty school reports it needs setting up',
+      (await call('/api/staff/bootstrap')).body.needsSetup === true);
     let r = await call('/api/staff/bootstrap', { method: 'POST', body: { token: 'wrong', name: 'x', email: 'x@y.co', pass: 'secret1' } });
     ok('wrong bootstrap token refused', r.status === 403);
+    ok('a refused attempt does not open the school',
+      (await call('/api/staff/bootstrap')).body.needsSetup === true);
     r = await call('/api/staff/bootstrap', {
       method: 'POST',
       body: { token: BOOT, name: 'אלון', user: 'office', email: 'office@newschool.co.il', pass: 'admin-pass-1' }
@@ -92,6 +98,12 @@ async function waitFor(url, tries = 60) {
       method: 'POST', body: { token: BOOT, name: 'שני', email: 'two@newschool.co.il', pass: 'admin-pass-2' }
     });
     ok('bootstrap closes after the first account', r.status === 409);
+    ok('and the setup form stops being offered',
+      (await call('/api/staff/bootstrap')).body.needsSetup === false);
+    /* The probe is public, so it must carry nothing but the flag. */
+    ok('the probe leaks no account data', !/email|pass|name|user/i.test(
+      JSON.stringify((await call('/api/staff/bootstrap')).body)),
+      JSON.stringify((await call('/api/staff/bootstrap')).body));
 
     console.log('\nLogin');
     ok('no session → me says no', (await call('/api/staff/auth/me')).body.ok === false);

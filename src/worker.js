@@ -29,7 +29,8 @@ const ROUTES = {
   'POST /api/staff/auth/reset-complete': resetComplete.onRequestPost,
   'GET /api/staff/users': users.onRequestGet,
   'POST /api/staff/users': users.onRequestPost,
-  'POST /api/staff/bootstrap': bootstrap.onRequestPost
+  'POST /api/staff/bootstrap': bootstrap.onRequestPost,
+  'GET /api/staff/bootstrap': bootstrap.onRequestGet
 };
 
 /* /api/staff/users/<id>, …/reset and …/code — the one route shape with a

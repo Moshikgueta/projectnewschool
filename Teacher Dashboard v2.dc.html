@@ -119,6 +119,48 @@ table{border-collapse:collapse;width:100%}
 <p style="margin-top:13px;font:400 12.5px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">חשבונות נפתחים על ידי משרד בית הספר. אם נפתח לך חשבון וקיבלת סיסמה זמנית — אפשר להיכנס איתה ולהחליף אותה דרך "שכחת סיסמה?".</p>
 </sc-if>
 
+<sc-if value="{{ isAuthSetup }}">
+<form onSubmit="{{ setupSubmit }}">
+<h2 style="font-size:24px;line-height:1.15">הקמת המערכת</h2>
+<p style="margin-top:7px;font:400 13.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">עדיין אין אף חשבון במערכת. המסך הזה פותח את חשבון המנהל הראשון, ונעלם מעצמו ברגע שהוא נוצר. משם כל שאר החשבונות נפתחים מתוך המערכת.</p>
+
+<label style="display:flex;flex-direction:column;gap:6px;margin-top:20px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">שם מלא</span>
+<input name="name" autoComplete="name" placeholder="מושיק" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+<label style="display:flex;flex-direction:column;gap:6px;margin-top:13px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">שם משתמש לכניסה</span>
+<input name="user" autoComplete="username" placeholder="moshik" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none;direction:ltr;text-align:left" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+<label style="display:flex;flex-direction:column;gap:6px;margin-top:13px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">אימייל</span>
+<input name="email" type="email" autoComplete="email" placeholder="name@example.com" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none;direction:ltr;text-align:left" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+
+<div style="margin-top:16px;padding:13px 14px;background:var(--color-neutral-100);border-radius:11px">
+<label style="display:flex;flex-direction:column;gap:6px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">סיסמת ההתקנה</span>
+<input name="token" type="password" autoComplete="off" placeholder="הערך של STAFF_BOOTSTRAP_TOKEN" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-paper);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none;direction:ltr;text-align:left" style-focus="border-color:var(--color-accent)">
+</label>
+<p style="margin-top:8px;font:400 11.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">הערך שהוגדר בהגדרות השרת תחת השם <span style="direction:ltr;display:inline-block">STAFF_BOOTSTRAP_TOKEN</span>. הוא מוודא שרק מי שיש לו גישה לשרת יכול לפתוח את החשבון הראשון.</p>
+</div>
+
+<label style="display:flex;flex-direction:column;gap:6px;margin-top:13px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">סיסמה שתבחר/י לחשבון</span>
+<input name="pass" type="password" autoComplete="new-password" placeholder="לפחות 6 תווים" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+<label style="display:flex;flex-direction:column;gap:6px;margin-top:13px"><span style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)">שוב, לוודא</span>
+<input name="pass2" type="password" autoComplete="new-password" placeholder="אותה סיסמה" style="height:42px;padding:0 13px;font:400 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</label>
+
+<sc-if value="{{ hasSetupError }}">
+<div style="display:flex;align-items:center;gap:9px;margin-top:13px;background:var(--color-critical-tint);border-radius:10px;padding:10px 12px;font:500 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-critical)"><span style="width:7px;height:7px;border-radius:50%;background:var(--color-critical-mid);flex:none"></span>{{ setupError }}</div>
+</sc-if>
+<sc-if value="{{ hasSetupNote }}">
+<div style="display:flex;align-items:center;gap:9px;margin-top:13px;background:#e4efe9;border-radius:10px;padding:10px 12px;font:500 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#1a5740"><span style="width:7px;height:7px;border-radius:50%;background:#1a5740;flex:none"></span>{{ setupNote }}</div>
+</sc-if>
+
+<button type="submit" style="width:100%;height:44px;margin-top:18px;font:600 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:11px;cursor:pointer" style-hover="background:var(--color-accent)">פתיחת חשבון המנהל</button>
+
+<p style="margin-top:14px;font:400 12px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">אחרי שהחשבון נפתח כדאי למחוק את סיסמת ההתקנה מהגדרות השרת. המסך הזה ממילא לא יופיע שוב.</p>
+</form>
+</sc-if>
+
 <sc-if value="{{ isAuthCode }}">
 <form onSubmit="{{ codeLogin }}">
 <h2 style="font-size:24px;line-height:1.15">כניסה עם קוד אישי</h2>
@@ -2765,6 +2807,59 @@ class Component extends DCLogic {
   });
   goCode = () => this.setState({ authMode: 'code', codeError: '', loginError: '' });
 
+  /* First-run setup. The same POST the command line would send, behind a form
+     — the school's owner is not a terminal user, and "open a browser console
+     and paste this" is where a first-time setup actually fails.
+
+     No new privilege: the endpoint's two locks are unchanged and both live on
+     the server — the setup secret must match, and staff_users must be empty.
+     The form only decides whether to offer the screen. */
+  setupSubmit = (e) => {
+    e.preventDefault();
+    if (this.state.authBusy) return;
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    const name = String(d.name || '').trim();
+    const email = String(d.email || '').trim().toLowerCase();
+    const user = String(d.user || '').trim().toLowerCase();
+    const token = String(d.token || '').trim();
+    const pass = String(d.pass || ''), pass2 = String(d.pass2 || '');
+
+    if (!name) { this.setState({ setupError: 'צריך שם מלא' }); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { this.setState({ setupError: 'האימייל לא תקין' }); return; }
+    if (!token) { this.setState({ setupError: 'צריך את סיסמת ההתקנה מהגדרות השרת' }); return; }
+    if (pass.length < 6) { this.setState({ setupError: 'הסיסמה צריכה להיות לפחות 6 תווים' }); return; }
+    if (pass !== pass2) { this.setState({ setupError: 'הסיסמאות לא תואמות' }); return; }
+
+    this.setState({ authBusy: true, setupError: '', setupNote: '' });
+    this.api('/api/staff/bootstrap', {
+      method: 'POST', body: { token, name, user, email, pass }
+    }).then(r => {
+      this.setState({ authBusy: false });
+      if (!r.ok) {
+        /* The server's own messages here are English and aimed at whoever ran
+           the command by hand; translate the three that a person filling in
+           this form can actually act on. */
+        const msg = r.error === 'bootstrap token mismatch'
+            ? 'סיסמת ההתקנה לא נכונה. אפשר לבדוק אותה בהגדרות השרת.'
+          : r.error === 'bootstrap disabled'
+            ? 'סיסמת ההתקנה לא מוגדרת בשרת. צריך להגדיר אותה ולפרוס מחדש.'
+          : r.error === 'staff accounts already exist'
+            ? 'כבר קיים חשבון במערכת — אפשר פשוט להתחבר.'
+          : (r.error || 'ההקמה נכשלה');
+        this.setState({ setupError: msg });
+        return;
+      }
+      /* Deliberately not signed in: bootstrap sets no cookie, and going
+         through the login screen once proves the password works while the
+         person who chose it is still sitting there. */
+      this.setState({
+        authMode: 'login', setupError: '', loginError: '',
+        setupNote: '', needsSetup: false
+      });
+      this.flash('החשבון נפתח — אפשר להתחבר עם השם והסיסמה שבחרת');
+    });
+  };
+
   /* The student door. One field, and the server does the normalising — what
      gets typed off a printed slip is lower case as often as not, with the
      dash in the wrong place or missing entirely. */
@@ -3566,7 +3661,8 @@ class Component extends DCLogic {
     students: null, materials: null, teachers: null, checked: [],
     devel: null, feedback: null, devSel: null, fbKind: 'תלמיד',
     groupData: null, grpSel: null, grpSession: null, notifs: null,
-    session: null, loginError: '', codeError: '', authBusy: false, authMode: 'login',
+    session: null, loginError: '', codeError: '', setupError: '', setupNote: '',
+    authBusy: false, authMode: 'login',
     signupError: '', signupNote: '', forgotError: '', forgotNote: '',
     resetError: '', resetToken: null, passDrafts: {},
     cal: null, linkKey: null, calMine: true, gen: null,
@@ -3627,6 +3723,15 @@ class Component extends DCLogic {
          whose API calls will all come back 401. */
       try { localStorage.removeItem(this.LS_SESSION); } catch (e) {}
       this.setState({ session: null });
+
+      /* Only now, and only when nothing else already owns the screen: a reset
+         link or a half-finished sign-in must not be replaced by a setup form.
+         An empty school answers needsSetup and gets the form instead of a
+         login nobody can pass. */
+      if (token) return;
+      this.api('/api/staff/bootstrap').then(b => {
+        if (b.needsSetup && !this.state.session) this.setState({ authMode: 'setup' });
+      });
     });
   }
   save(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {} }
@@ -4073,9 +4178,9 @@ class Component extends DCLogic {
       authMode: s.authMode || 'login',
       isAuthLogin: (s.authMode || 'login') === 'login', isAuthSignup: s.authMode === 'signup',
       isAuthForgot: s.authMode === 'forgot', isAuthReset: s.authMode === 'reset',
-      isAuthCode: s.authMode === 'code',
+      isAuthCode: s.authMode === 'code', isAuthSetup: s.authMode === 'setup',
       goLogin: this.goLogin, goSignup: this.goSignup, goForgot: this.goForgot,
-      goCode: this.goCode, codeLogin: this.codeLogin,
+      goCode: this.goCode, codeLogin: this.codeLogin, setupSubmit: this.setupSubmit,
       signup: this.signup, forgotSubmit: this.forgotSubmit, resetSubmit: this.resetSubmit,
       signupError: s.signupError, hasSignupError: !!s.signupError,
       signupNote: s.signupNote, hasSignupNote: !!s.signupNote,
@@ -4087,6 +4192,8 @@ class Component extends DCLogic {
       resetIntro: 'הקישור אומת. בחר/י סיסמה חדשה — לפחות 6 תווים.',
       loginError: s.loginError, hasLoginError: !!s.loginError,
       codeError: s.codeError, hasCodeError: !!s.codeError,
+      setupError: s.setupError, hasSetupError: !!s.setupError,
+      setupNote: s.setupNote, hasSetupNote: !!s.setupNote,
       login: this.login, logout: this.logout,
       setTeacher: () => this.setState({ role: 'מורה', view: 'dashboard', selected: null }),
       setAdmin: () => this.setState({ role: 'אדמין', view: 'dashboard', selected: null }),

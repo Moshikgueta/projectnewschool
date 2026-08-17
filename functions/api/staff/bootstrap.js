@@ -13,6 +13,18 @@ import {
   validEmail, MIN_PASS
 } from '../../_staff.js';
 
+/* GET /api/staff/bootstrap — may a first admin still be created here?
+
+   The login screen asks on mount, so it can show a setup form instead of a
+   sign-in form that nobody can satisfy yet. Answering anonymous callers gives
+   away only "this school has not been set up", which is already evident from
+   the fact that no credential works — and POST still demands the secret, so
+   knowing the answer buys nothing. */
+export async function onRequestGet({ env }) {
+  const open = !!env.STAFF_BOOTSTRAP_TOKEN && !(await staffCount(env));
+  return json({ ok: true, needsSetup: open });
+}
+
 export async function onRequestPost({ request, env }) {
   if (!env.STAFF_BOOTSTRAP_TOKEN) {
     return json({ ok: false, error: 'bootstrap disabled' }, 404);
