@@ -290,6 +290,10 @@ table{border-collapse:collapse;width:100%}
 <a href="#" onClick="{{ go.calendar }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navColor.calendar }};background:{{ navBg.calendar }}" style-hover="background:var(--color-neutral-900);color:#fff">
 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v14H4z"/><path d="M4 10h16M9 4v3M15 4v3"/></svg>יומן שבועי</a>
 </sc-if>
+<sc-if value="{{ can.rooms }}" hint-placeholder-val="{{ true }}">
+<a href="#" onClick="{{ go.rooms }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navColor.rooms }};background:{{ navBg.rooms }}" style-hover="background:var(--color-neutral-900);color:#fff">
+<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V5.5L12 3l8 2.5V20"/><path d="M4 20h16M9 20v-5h6v5"/></svg>כיתות ושיבוץ</a>
+</sc-if>
 <sc-if value="{{ can.planner }}" hint-placeholder-val="{{ true }}">
 <a href="#" onClick="{{ go.planner }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navColor.planner }};background:{{ navBg.planner }}" style-hover="background:var(--color-neutral-900);color:#fff">
 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 13.6 8 18 9.6 13.6 11.2 12 15.6 10.4 11.2 6 9.6 10.4 8z"/><path d="M18 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg>בונה מערך שיעור</a>
@@ -1768,6 +1772,118 @@ table{border-collapse:collapse;width:100%}
 </section>
 </sc-if>
 
+<sc-if value="{{ isRooms }}">
+<section data-screen-label="כיתות ושיבוץ" style="animation:rise .25s ease both">
+<h1 style="font-size:30px;line-height:1.1">כיתות ושיבוץ</h1>
+<p style="margin-top:6px;font:400 14.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);max-width:78ch">התמונה השבועית של הבניין — שורה לכל כיתה, עמודה לכל יום. {{ roomsScope }}</p>
+
+<div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:16px">
+<span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;border-radius:999px;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-200);color:var(--color-neutral-700)">{{ roomCount }}</span>
+<span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;border-radius:999px;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:#e9f8ff;color:#006786">{{ bookingCount }}</span>
+</div>
+
+<sc-if value="{{ noRooms }}">
+<div style="margin-top:20px;padding:22px;background:var(--color-neutral-100);border:1px dashed var(--color-neutral-300);border-radius:14px;font:400 14px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);max-width:60ch">עוד לא הוגדרו כיתות. מוסיפים את חדרי הבניין בטופס למטה — שם, וכמה תלמידים נכנסים — ואז אפשר לשבץ אליהם שיעורים.</div>
+</sc-if>
+
+<div style="overflow-x:auto;margin-top:18px">
+<div style="min-width:900px">
+<div style="display:grid;grid-template-columns:190px repeat(6,minmax(120px,1fr));gap:8px;margin-bottom:8px">
+<div></div>
+<sc-for list="{{ dayHeads }}" as="d" hint-placeholder-count="6">
+<div style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600);text-align:center;padding-bottom:4px;border-bottom:1px solid var(--color-neutral-200)">{{ d }}</div>
+</sc-for>
+</div>
+
+<sc-for list="{{ grid }}" as="r" hint-placeholder-count="4">
+<div style="display:grid;grid-template-columns:190px repeat(6,minmax(120px,1fr));gap:8px;margin-bottom:8px;align-items:stretch">
+
+<div style="background:{{ r.rowBg }};border:1px solid var(--color-neutral-200);border-radius:12px;padding:12px 13px">
+<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+<span style="font:700 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ r.name }}</span>
+<span style="height:22px;display:inline-flex;align-items:center;padding:0 9px;border-radius:999px;font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:{{ r.stateBg }};color:{{ r.stateFg }}">{{ r.stateLabel }}</span>
+</div>
+<div style="margin-top:5px;font:400 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ r.capLine }}</div>
+<sc-if value="{{ r.kit }}">
+<div style="margin-top:3px;font:400 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ r.kit }}</div>
+</sc-if>
+<sc-if value="{{ canBook }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;gap:6px;margin-top:9px">
+<button onClick="{{ r.toggle }}" style="height:26px;padding:0 10px;font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);background:transparent;border:1px solid var(--color-neutral-300);border-radius:999px;cursor:pointer" style-hover="background:var(--color-neutral-100)">{{ r.toggleLabel }}</button>
+<button onClick="{{ r.remove }}" title="מחיקת החדר" style="width:26px;height:26px;font:400 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500);background:transparent;border:none;border-radius:8px;cursor:pointer" style-hover="background:var(--color-critical-tint);color:var(--color-critical)">✕</button>
+</div>
+</sc-if>
+</div>
+
+<sc-for list="{{ r.days }}" as="d" hint-placeholder-count="6">
+<div style="background:{{ d.cellBg }};border:1px solid var(--color-neutral-200);border-radius:12px;padding:8px;display:flex;flex-direction:column;gap:6px;min-height:64px">
+<sc-if value="{{ d.free }}">
+<div style="margin:auto;font:400 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-500)">פנוי</div>
+</sc-if>
+<sc-for list="{{ d.slots }}" as="b" hint-placeholder-count="1">
+<div style="background:#e9f8ff;border:1px solid #DCE8FF;border-radius:9px;padding:7px 8px">
+<div style="font:700 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#006786;direction:ltr;text-align:right">{{ b.time }}</div>
+<div style="margin-top:2px;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;line-height:1.3">{{ b.title }}</div>
+<sc-if value="{{ b.teacher }}">
+<div style="margin-top:1px;font:400 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">{{ b.teacher }}</div>
+</sc-if>
+<sc-if value="{{ canBook }}" hint-placeholder-val="{{ true }}">
+<button onClick="{{ b.remove }}" style="margin-top:5px;height:22px;padding:0 8px;font:600 11px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600);background:transparent;border:1px solid var(--color-neutral-300);border-radius:999px;cursor:pointer" style-hover="background:var(--color-critical-tint);color:var(--color-critical);border-color:var(--color-critical-tint)">ביטול</button>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</sc-for>
+
+</div>
+</sc-for>
+</div>
+</div>
+
+<sc-if value="{{ canBook }}" hint-placeholder-val="{{ true }}">
+<div style="display:grid;grid-template-columns:minmax(300px,1fr) minmax(300px,1.2fr);gap:16px;margin-top:24px;align-items:start">
+
+<div style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;padding:18px">
+<h2 style="font-size:18px;line-height:1.2">הוספת כיתה</h2>
+<p style="margin-top:5px;font:400 12.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">חדר פיזי בבניין. מספר המקומות משמש כדי לדעת אם קבוצה נכנסת.</p>
+<form onSubmit="{{ addRoom }}" style="margin-top:14px;display:flex;flex-direction:column;gap:10px">
+<input name="name" placeholder="שם הכיתה — למשל: כיתה 2" style="height:40px;padding:0 12px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+<input name="capacity" type="number" min="0" placeholder="כמה מקומות (אפשר להשאיר ריק)" style="height:40px;padding:0 12px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+<input name="kit" placeholder="מה יש בחדר — מקרן, לוח, קומה" style="height:40px;padding:0 12px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+<button type="submit" style="height:42px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:11px;cursor:pointer" style-hover="background:var(--color-accent)">הוספת כיתה</button>
+</form>
+</div>
+
+<div style="background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;padding:18px">
+<h2 style="font-size:18px;line-height:1.2">שיבוץ שיעור</h2>
+<p style="margin-top:5px;font:400 12.5px/1.55 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)">שיבוץ שבועי קבוע — אותו שיעור, אותו חדר, בכל שבוע. אם החדר תפוס, המערכת תגיד מי תופס אותו במקום לשבץ כפול.</p>
+<form onSubmit="{{ addBooking }}" style="margin-top:14px;display:flex;flex-direction:column;gap:10px">
+<select name="roomId" style="height:40px;padding:0 12px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px">
+<sc-for list="{{ roomOpts }}" as="o" hint-placeholder-count="3">
+<option value="{{ o.id }}">{{ o.name }}</option>
+</sc-for>
+</select>
+<input name="title" placeholder="שם השיעור — למשל: English Foundations" style="height:40px;padding:0 12px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+<input name="teacher" placeholder="מורה (לא חובה)" style="height:40px;padding:0 12px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+<div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px">
+<select name="day" style="height:40px;padding:0 10px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px">
+<sc-for list="{{ dayOpts }}" as="o" hint-placeholder-count="6">
+<option value="{{ o.value }}">{{ o.label }}</option>
+</sc-for>
+</select>
+<input name="from" placeholder="10:00" style="height:40px;padding:0 10px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none;direction:ltr;text-align:center" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+<input name="to" placeholder="11:30" style="height:40px;padding:0 10px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:10px;outline:none;direction:ltr;text-align:center" style-focus="background:var(--color-paper);border-color:var(--color-accent)">
+</div>
+<button type="submit" style="height:42px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff;background:var(--color-neutral-900);border:none;border-radius:11px;cursor:pointer" style-hover="background:var(--color-accent)">שיבוץ</button>
+</form>
+</div>
+
+</div>
+</sc-if>
+
+</section>
+</sc-if>
+
 <sc-if value="{{ isGuides }}">
 <section data-screen-label="חומר הדרכה" style="animation:rise .25s ease both">
 <h1 style="font-size:30px;line-height:1.1">חומר הדרכה למורים</h1>
@@ -2479,6 +2595,7 @@ class Component extends DCLogic {
     { key: 'groups', label: 'שיעורים קבוצתיים' },
     { key: 'materials', label: 'חומרי לימוד' },
     { key: 'calendar', label: 'יומן שבועי' },
+    { key: 'rooms', label: 'כיתות ושיבוץ' },
     { key: 'planner', label: 'בונה מערך שיעור' },
     { key: 'syllabus', label: 'בונה סילבוס' },
     { key: 'feedback', label: 'פידבק' },
@@ -2775,6 +2892,150 @@ class Component extends DCLogic {
       if (!r.ok) { this.flash(r.error || 'המחיקה נכשלה'); return; }
       this.setState({ accounts: this.accounts().filter(a => a.id !== id) });
       this.flash('החשבון נמחק');
+    });
+  }
+
+  /* ─── Rooms and the weekly timetable · server-backed ─────────────────────
+     The first school data that is not seeded into the page. Rooms and their
+     bookings come from D1, and the double-booking check runs there — the grid
+     below only draws what the server already agreed to. */
+
+  DAY_NAMES = ['ראשון', 'שני', 'שלישי', 'רביעי', 'חמישי', 'שישי', 'שבת'];
+
+  rooms() { return this.state.rooms || []; }
+  bookings() { return this.state.bookings || []; }
+
+  goRooms = (e) => {
+    if (e && e.preventDefault) e.preventDefault();
+    this.setState({ view: 'rooms', selected: null });
+    this.loadRooms();
+  };
+
+  /* Both lists together: a booking without its room is a row with no home,
+     and the grid cannot draw either one alone. */
+  loadRooms() {
+    return Promise.all([
+      this.api('/api/staff/rooms'),
+      this.api('/api/staff/bookings')
+    ]).then(([r, b]) => {
+      const next = {};
+      if (r.ok) next.rooms = r.rooms;
+      if (b.ok) next.bookings = b.bookings;
+      if (!r.ok && r.error) this.flash(r.error);
+      this.setState(next);
+    });
+  }
+
+  addRoom = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const d = Object.fromEntries(new FormData(form).entries());
+    const name = String(d.name || '').trim();
+    if (!name) { this.flash('צריך שם לחדר'); return; }
+    this.api('/api/staff/rooms', {
+      method: 'POST', body: { name, capacity: d.capacity, kit: d.kit }
+    }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא הצלחנו להוסיף חדר'); return; }
+      form.reset();
+      this.setState({ rooms: this.rooms().concat(r.room) });
+      this.flash('החדר נוסף');
+    });
+  };
+
+  toggleRoom(id) {
+    const room = this.rooms().find(x => x.id === id);
+    if (!room) return;
+    this.api('/api/staff/rooms/' + id, { method: 'PATCH', body: { active: !room.active } }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'העדכון נכשל'); return; }
+      this.setState({ rooms: this.rooms().map(x => x.id === id ? r.room : x) });
+    });
+  }
+
+  removeRoom(id) {
+    const room = this.rooms().find(x => x.id === id);
+    if (!room) return;
+    if (!confirm('למחוק את ' + room.name + '?')) return;
+    this.api('/api/staff/rooms/' + id, { method: 'DELETE' }).then(r => {
+      /* The server refuses to delete a room that still has lessons in it, and
+         says how many. Surfacing that verbatim is the whole answer — the next
+         move (empty it, or just close it) is the office's call. */
+      if (!r.ok) { this.flash(r.error || 'המחיקה נכשלה'); return; }
+      this.setState({ rooms: this.rooms().filter(x => x.id !== id) });
+      this.flash('החדר נמחק');
+    });
+  }
+
+  addBooking = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const d = Object.fromEntries(new FormData(form).entries());
+    if (!d.roomId) { this.flash('צריך לבחור חדר'); return; }
+    if (!String(d.title || '').trim()) { this.flash('צריך שם לשיעור'); return; }
+    this.api('/api/staff/bookings', {
+      method: 'POST',
+      body: {
+        roomId: d.roomId, title: d.title, teacher: d.teacher,
+        day: parseInt(d.day, 10), from: d.from, to: d.to
+      }
+    }).then(r => {
+      /* A clash comes back as an error naming the lesson in the way, so it
+         reads as an answer rather than a rejection. */
+      if (!r.ok) { this.flash(r.error || 'השיבוץ נכשל'); return; }
+      this.setState({ bookings: this.bookings().concat(r.booking) });
+      this.flash('שובץ: ' + r.booking.title + ' · ' + r.booking.room);
+    });
+  };
+
+  removeBooking(id) {
+    const b = this.bookings().find(x => x.id === id);
+    if (!b) return;
+    if (!confirm('לבטל את ' + b.title + ' ביום ' + b.dayName + ' ב-' + b.from + '?')) return;
+    this.api('/api/staff/bookings/' + id, { method: 'DELETE' }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'הביטול נכשל'); return; }
+      this.setState({ bookings: this.bookings().filter(x => x.id !== id) });
+      this.flash('השיבוץ בוטל');
+    });
+  }
+
+  /* One row per room, one cell per weekday — the picture the office asked for.
+     Sunday to Friday only: Saturday is storable, so a one-off intensive is not
+     lost, but it is not worth a seventh column every week. */
+  roomGrid() {
+    const byRoom = {};
+    for (const b of this.bookings()) {
+      (byRoom[b.roomId] = byRoom[b.roomId] || []).push(b);
+    }
+    return this.rooms().map(room => {
+      const mine = byRoom[room.id] || [];
+      return {
+        id: room.id, name: room.name,
+        capLine: room.capacity ? room.capacity + ' מקומות' : 'לא הוגדר',
+        kit: room.kit,
+        active: room.active,
+        rowBg: room.active ? 'var(--color-paper)' : '#f8f4f4',
+        stateLabel: room.active ? 'פעיל' : 'מושבת',
+        stateBg: room.active ? '#e4efe9' : '#eae7e7',
+        stateFg: room.active ? '#1a5740' : '#7d7979',
+        toggleLabel: room.active ? 'השבתה' : 'הפעלה',
+        toggle: () => this.toggleRoom(room.id),
+        remove: () => this.removeRoom(room.id),
+        used: mine.length,
+        days: this.DAY_NAMES.slice(0, 6).map((dayName, day) => {
+          const slots = mine.filter(b => b.day === day).sort((a, b2) => a.start - b2.start);
+          return {
+            day, dayName,
+            free: slots.length === 0,
+            /* A free cell recedes; a booked one is paper. The eye should find
+               the gaps, since finding a gap is what the screen is for. */
+            cellBg: slots.length ? 'var(--color-paper)' : 'var(--color-neutral-100)',
+            slots: slots.map(b => ({
+              id: b.id, title: b.title, teacher: b.teacher,
+              time: b.from + '–' + b.to,
+              remove: () => this.removeBooking(b.id)
+            }))
+          };
+        })
+      };
     });
   }
 
@@ -4162,7 +4423,7 @@ class Component extends DCLogic {
     }
 
     const set = (k) => (e) => this.setState({ [k]: e.target.value });
-    const navKeys = ['dashboard', 'students', 'groups', 'notebooks', 'materials', 'calendar', 'planner', 'syllabus', 'teachers', 'develop', 'feedback', 'guides', 'users', 'admissions', 'settings', 'tasks'];
+    const navKeys = ['dashboard', 'students', 'groups', 'notebooks', 'materials', 'calendar', 'rooms', 'planner', 'syllabus', 'teachers', 'develop', 'feedback', 'guides', 'users', 'admissions', 'settings', 'tasks'];
     const isOn = (k) => view === k || (k === 'students' && view === 'profile');
 
     return {
@@ -4210,6 +4471,7 @@ class Component extends DCLogic {
       go: {
         dashboard: this.view('dashboard'), students: this.view('students'), notebooks: this.view('notebooks'),
         materials: this.view('materials'), calendar: this.view('calendar'), teachers: this.view('teachers'),
+        rooms: this.goRooms,
         syllabus: this.view('syllabus'),
         settings: this.view('settings'), develop: this.view('develop'), feedback: this.view('feedback'),
         groups: this.view('groups'), guides: this.view('guides'), planner: this.view('planner'),
@@ -4222,6 +4484,22 @@ class Component extends DCLogic {
       isNotebooks: view === 'notebooks', isMaterials: view === 'materials',
       isCalendar: view === 'calendar', isDevelop: view === 'develop', isFeedback: view === 'feedback',
       isGroups: view === 'groups', isGuides: view === 'guides', isUsers: view === 'users',
+      isRooms: view === 'rooms',
+      /* Reading the timetable is open to every signed-in user — a teacher who
+         cannot see which room they are in is the problem this screen solves.
+         Changing it belongs to the desk that owns the building's schedule. */
+      canBook: sess && (sess.role === 'אדמין' || sess.role === 'מנהלת קבלה'),
+      roomsScope: sess && (sess.role === 'אדמין' || sess.role === 'מנהלת קבלה')
+        ? 'שיבוץ, הוספת כיתות וביטול — מהמסך הזה.'
+        : 'לצפייה בלבד. שינויים נעשים במשרד בית הספר.',
+      roomCount: this.rooms().length + ' כיתות',
+      bookingCount: this.bookings().length + ' שיבוצים שבועיים',
+      noRooms: this.rooms().length === 0,
+      dayHeads: this.DAY_NAMES.slice(0, 6),
+      dayOpts: this.DAY_NAMES.slice(0, 6).map((label, value) => ({ value, label })),
+      roomOpts: this.rooms().filter(r => r.active).map(r => ({ id: r.id, name: r.name })),
+      grid: this.roomGrid(),
+      addRoom: this.addRoom, addBooking: this.addBooking,
       isAdmit: view === 'admissions', isAdmissions, isOfficeRole: isOffice,
 
       isTasks: view === 'tasks',

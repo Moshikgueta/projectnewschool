@@ -282,6 +282,98 @@ async function waitFor(url, tries = 60) {
     r = await call('/api/staff/auth/code', { method: 'POST', body: { code: code2 } });
     ok('guessing codes locks the door, right code included', r.status === 429, String(r.status));
 
+    console.log('\nRooms');
+    r = await call('/api/staff/rooms', { method: 'POST', cookie: admin, body: { name: 'כיתה 2', capacity: 12, kit: 'מקרן' } });
+    const roomA = r.body.room && r.body.room.id;
+    ok('room created', r.status === 201 && !!roomA && r.body.room.capacity === 12);
+    r = await call('/api/staff/rooms', { method: 'POST', cookie: admin, body: { name: 'כיתה 4' } });
+    const roomB = r.body.room && r.body.room.id;
+    ok('a room with no stated capacity is still allowed', r.status === 201 && r.body.room.capacity === 0);
+    ok('duplicate room name refused', (await call('/api/staff/rooms', {
+      method: 'POST', cookie: admin, body: { name: 'כיתה 2' } })).status === 409);
+    ok('a teacher may read the room list', (await call('/api/staff/rooms', { cookie: teacher2 })).body.rooms.length === 2);
+    ok('a teacher may not create rooms', (await call('/api/staff/rooms', {
+      method: 'POST', cookie: teacher2, body: { name: 'כיתה 9' } })).status === 403);
+    ok('the room list needs a session', (await call('/api/staff/rooms')).status === 401);
+
+    console.log('\nBookings');
+    /* Tuesday 10:00–11:30 in כיתה 2. Everything below is measured against it. */
+    r = await call('/api/staff/bookings', {
+      method: 'POST', cookie: admin,
+      body: { roomId: roomA, title: 'English Foundations', teacher: 'יותם ברוך', day: 2, from: '10:00', to: '11:30' }
+    });
+    const bookA = r.body.booking && r.body.booking.id;
+    ok('booking created', r.status === 201 && !!bookA, JSON.stringify(r.body));
+    ok('times come back both as numbers and as text',
+      r.body.booking.start === 600 && r.body.booking.from === '10:00' && r.body.booking.mins === 90);
+
+    ok('a lesson that starts inside another is refused', (await call('/api/staff/bookings', {
+      method: 'POST', cookie: admin,
+      body: { roomId: roomA, title: 'שני', day: 2, from: '11:00', to: '12:00' } })).status === 409);
+    ok('a lesson that swallows another is refused', (await call('/api/staff/bookings', {
+      method: 'POST', cookie: admin,
+      body: { roomId: roomA, title: 'שני', day: 2, from: '09:00', to: '13:00' } })).status === 409);
+    r = await call('/api/staff/bookings', {
+      method: 'POST', cookie: admin, body: { roomId: roomA, title: 'שני', day: 2, from: '10:30', to: '11:00' } });
+    ok('a lesson entirely inside another is refused', r.status === 409);
+    ok('the refusal names what is in the way', /English Foundations/.test(r.body.error || ''), r.body.error);
+
+    /* The boundary that must NOT clash: back-to-back lessons are the normal
+       case, and refusing them would make the room unusable. */
+    r = await call('/api/staff/bookings', {
+      method: 'POST', cookie: admin, body: { roomId: roomA, title: 'צמוד אחרי', day: 2, from: '11:30', to: '12:30' } });
+    const bookB = r.body.booking && r.body.booking.id;
+    ok('back-to-back lessons are allowed', r.status === 201, JSON.stringify(r.body));
+    ok('the same hour in a different room is allowed', (await call('/api/staff/bookings', {
+      method: 'POST', cookie: admin,
+      body: { roomId: roomB, title: 'מקביל', day: 2, from: '10:00', to: '11:30' } })).status === 201);
+    ok('the same hour on a different day is allowed', (await call('/api/staff/bookings', {
+      method: 'POST', cookie: admin,
+      body: { roomId: roomA, title: 'יום אחר', day: 3, from: '10:00', to: '11:30' } })).status === 201);
+
+    ok('end before start refused', (await call('/api/staff/bookings', {
+      method: 'POST', cookie: admin,
+      body: { roomId: roomA, title: 'הפוך', day: 4, from: '12:00', to: '11:00' } })).status === 400);
+    ok('a time that is not a time refused', (await call('/api/staff/bookings', {
+      method: 'POST', cookie: admin,
+      body: { roomId: roomA, title: 'שטות', day: 4, from: 'בבוקר', to: '11:00' } })).status === 400);
+    ok('the middle of the night refused', (await call('/api/staff/bookings', {
+      method: 'POST', cookie: admin,
+      body: { roomId: roomA, title: 'לילה', day: 4, from: '03:00', to: '04:00' } })).status === 400);
+    /* Typed off a printed timetable, '10.30' and '1030' are the same intent. */
+    ok('a dotted time is understood', (await call('/api/staff/bookings', {
+      method: 'POST', cookie: admin,
+      body: { roomId: roomB, title: 'נקודה', day: 4, from: '10.30', to: '1200' } })).status === 201);
+
+    ok('a teacher may read the timetable', (await call('/api/staff/bookings', { cookie: teacher2 })).body.bookings.length > 0);
+    ok('a teacher may not book', (await call('/api/staff/bookings', {
+      method: 'POST', cookie: teacher2,
+      body: { roomId: roomA, title: 'שלי', day: 5, from: '10:00', to: '11:00' } })).status === 403);
+
+    console.log('\nMoving a booking');
+    ok('moving onto a taken slot is refused', (await call('/api/staff/bookings/' + bookB, {
+      method: 'PATCH', cookie: admin, body: { from: '10:00', to: '11:00' } })).status === 409);
+    /* The self-collision trap: nudging a booking must not clash with the row
+       being nudged. */
+    r = await call('/api/staff/bookings/' + bookA, { method: 'PATCH', cookie: admin, body: { to: '11:15' } });
+    ok('shortening a booking does not clash with itself', r.body.ok === true && r.body.booking.to === '11:15', JSON.stringify(r.body));
+    r = await call('/api/staff/bookings/' + bookA, { method: 'PATCH', cookie: admin, body: { roomId: roomB, day: 6, from: '09:00', to: '10:00' } });
+    ok('a booking can move room, day and hour at once',
+      r.body.ok === true && r.body.booking.roomId === roomB && r.body.booking.day === 6);
+    ok('retitling alone does not re-check the slot',
+      (await call('/api/staff/bookings/' + bookA, { method: 'PATCH', cookie: admin, body: { title: 'שם חדש' } })).body.ok === true);
+
+    console.log('\nDeleting a room');
+    ok('a room with a timetable is not deleted', (await call('/api/staff/rooms/' + roomA, {
+      method: 'DELETE', cookie: admin })).status === 409);
+    r = await call('/api/staff/rooms', { method: 'POST', cookie: admin, body: { name: 'מחסן' } });
+    ok('an empty room deletes', (await call('/api/staff/rooms/' + r.body.room.id, {
+      method: 'DELETE', cookie: admin })).body.ok === true);
+    ok('closing a room keeps its bookings', (await call('/api/staff/rooms/' + roomA, {
+      method: 'PATCH', cookie: admin, body: { active: false } })).body.room.active === false);
+    ok('a closed room still shows its timetable',
+      (await call('/api/staff/bookings', { cookie: admin })).body.bookings.some(x => x.roomId === roomA));
+
     console.log('\nThrottle');
     for (let i = 0; i < 8; i++) {
       await call('/api/staff/auth/login', { method: 'POST', body: { user: 'yotam', pass: 'guess' + i } });
