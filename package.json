@@ -1,15 +1,25 @@
 {
   "name": "projectnewschool",
   "private": true,
-  "description": "חדר המורים · New School — staff dashboard (static pages + Cloudflare Worker/D1 auth)",
+  "description": "New School Cycles — practice platform and staff room (Cloudflare Worker + D1)",
   "scripts": {
-    "build": "node scripts/build-standalone.js",
+    "build": "node scripts/build-standalone.js && node scripts/build-learn.mjs",
     "dev": "npm run build && wrangler dev",
     "deploy": "npm run build && wrangler deploy",
     "schema": "wrangler d1 execute teacher-room --local --file=schema.sql",
-    "test": "npm run build && node scripts/e2e.mjs"
+    "content": "python3 scripts/extract-spanish.py && node scripts/build-seed.mjs",
+    "seed:content": "node scripts/build-seed.mjs && wrangler d1 execute teacher-room --local --file=seed/content.sql",
+    "seed:demo": "node scripts/seed-demo.mjs && wrangler d1 execute teacher-room --local --file=seed/demo.sql",
+    "demo": "npm run build && npm run schema && npm run seed:content && npm run seed:demo && wrangler dev",
+    "test": "npm run build && node scripts/test-grade.mjs && node scripts/e2e.mjs && node scripts/e2e-learn.mjs",
+    "test:grade": "node scripts/test-grade.mjs",
+    "test:learn": "npm run build && node scripts/e2e-learn.mjs"
   },
   "devDependencies": {
+    "esbuild": "^0.25.12",
     "wrangler": "^4.116.0"
+  },
+  "dependencies": {
+    "preact": "^10.29.8"
   }
 }

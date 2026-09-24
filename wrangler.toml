@@ -28,3 +28,10 @@ run_worker_first = true
 binding = "DB"
 database_name = "teacher-room"
 database_id = "586d4fad-7b90-4a24-a825-96f6ef728273"
+
+# New School Cycles — protected audio (optional). No recordings exist in the
+# supplied course, so this is off. To enable uploads and streaming, create a
+# bucket (`npx wrangler r2 bucket create cycles-media`) and uncomment:
+# [[r2_buckets]]
+# binding = "MEDIA"
+# bucket_name = "cycles-media"
