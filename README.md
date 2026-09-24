@@ -1,4 +1,225 @@
-# Teacher Dashboard
+# New School Cycles · חדר המורים
+
+This repository holds two applications on one Cloudflare Worker and one D1 database:
+
+- **New School Cycles** (`/learn/`), the practice platform for New School students. It is documented directly below.
+- **חדר המורים** (`/dashboard`, `/mobile`), the staff room. It is documented from [Staff room](#staff-room--חדר-המורים) on.
+
+Both use the same accounts, sessions and roles.
+
+---
+
+# New School Cycles
+
+Students practise their course content, get immediate feedback, review mistakes and follow their own
+progress. The interface is Hebrew and RTL, and learning content is shown in the target language. Each
+student sees only the languages and levels they are enrolled in. The platform follows the school's
+non-chronological cycles method. Topics carry names, never lesson numbers. Any published topic in an
+enrolled level can be opened at any time, and nothing unlocks anything else.
+
+## Quick start (local demonstration)
+
+```sh
+npm install
+npm run demo          # build → schema → Spanish content → demo accounts → wrangler dev
+```
+
+Open <http://localhost:8787/learn/>. The demo accounts exist **only in the local D1**. Their pepper is
+written to `.dev.vars`, and the app shows a "local demo" banner. They are not a production setup.
+
+| Who | Sign in with | Sees |
+| --- | --- | --- |
+| Student, Level 1 | code `DEMA-ESAA` | Spanish Level 1 |
+| Student, Level 2 | code `DEMA-ESBB` | Spanish Level 2 |
+| Student, Levels 1 + 2 | code `DEMA-ESCC` | both, with a course switcher |
+| Admin | `demo-admin` / `demo-admin-2026` | everything |
+| Pedagogical manager | `demo-pedagogy` / `demo-pedagogy-2026` | all content and students |
+| Office (admissions) | `demo-office` / `demo-office-2026` | students, codes, enrollments |
+| Teacher (Spanish Level 1) | `demo-teacher` / `demo-teacher-2026` | Level 1 only |
+
+## Tests
+
+```sh
+npm test              # build + grading unit tests + staff-room suite + Cycles suite
+npm run test:grade    # answer-checking rules only (no server)
+npm run test:learn    # the Cycles end-to-end suite only
+```
+
+`scripts/e2e-learn.mjs` starts its own `wrangler dev` on a separate local database
+(`.wrangler/e2e-learn`), so it never touches your development data. If Playwright is installed, it
+ends with browser checks.
+
+## Production setup
+
+1. **Database.** Apply the schema, then load the content. Both scripts are idempotent, and the content
+   seed uses `INSERT OR IGNORE`, so re-running it never overwrites edits staff have made in the admin area:
+   ```sh
+   npx wrangler d1 execute teacher-room --remote --file=schema.sql
+   npx wrangler d1 execute teacher-room --remote --file=seed/content.sql
+   ```
+   **Never** apply `seed/demo.sql` remotely. It is git-ignored and is only produced by `npm run seed:demo`.
+2. **Secrets** (Worker → Settings → Variables and Secrets). Names are listed in `.env.example`; values
+   never go in the repository or the frontend:
+
+   | Name | Required | Purpose |
+   | --- | --- | --- |
+   | `STUDENT_CODE_PEPPER` | yes | Makes student entry codes work. Long and random; changing it invalidates every code |
+   | `STAFF_BOOTSTRAP_TOKEN` | once | Creates the first admin, then delete it (see [The first admin](#the-first-admin)) |
+   | `RESEND_API_KEY`, `EMAIL_FROM` | optional | Password-reset email for staff |
+   | `DEMO_MODE` | **no** | Local demo banner only. Leave unset in production |
+
+3. **Optional audio storage.** Uncomment the `MEDIA` R2 binding in `wrangler.toml` (see the comment there).
+4. `npm run deploy`.
+
+## How access is enforced
+
+The browser is never trusted. Every student request goes through `functions/learn/_core.js`:
+
+- `levelAccess` returns content only when **all three** hold: the student has an *active* enrollment in the
+  level, the level is *published*, and its language is *published*. Topics and activities must also be
+  published. This check runs in SQL on every request. The same friendly "outside your enrollment" answer
+  comes back for a changed URL, a guessed ID or a hand-written API call.
+- Answer keys stay in `exercises.key_json`. They are graded on the server and never sent before an answer.
+  A model answer is shown after a correct answer, after two misses in a row, or when the student asks
+  (the request is recorded).
+- `docs/learn/app.js` is interface only. The build contains no course text, and the test suite checks this.
+- Students cannot reach any `/api/manage/*` endpoint. Enrollments, roles and content change only there.
+- Every student-record query is filtered by the session's own user ID.
+- Writes must be JSON from the same origin (CSRF guard in `functions/learn/router.js`). The app is served
+  with a strict Content-Security-Policy, and protected responses are `no-store`.
+- Staff permissions are enforced per request:
+
+| Role | Content | Publish · Challenge Mode on/off | Students & codes | Enrollments | Reports & practice suggestions |
+| --- | --- | --- | --- | --- | --- |
+| אדמין | all | yes | all | yes | all |
+| מנהל פדגוגי | all | yes | all | yes | all |
+| מנהלת קבלה | — | — | all | yes | — |
+| מורה | assigned levels (edit, add drafts, preview) | no | students of assigned levels (codes only) | no | assigned levels |
+
+Admins assign teachers to levels under **מורים ורמות**.
+
+## Content model
+
+`language → level → cycle (topic group) → topic → activity`. Each language has its own levels,
+groups, topics, activities, vocabulary, audio, enrollments and progress. Nothing assumes that languages
+share a curriculum or a number of levels. The interface is shared, so adding a language, level, topic or
+activity is data entry in the admin area, not code.
+
+The Spanish course comes from the supplied ZIP (`content/source/spanish-practice/`). Re-extract with
+`npm run content`, which needs Python 3 with `beautifulsoup4`:
+
+| | Topics | Activities | Glossary |
+| --- | --- | --- | --- |
+| Level 1 (A1) | 19 | 304 | 1,034 |
+| Level 2 (A2) | 21 | 357 | 491 |
+| Level 3 (B1) | 20 + 6 mixed-review sets | 419 | 610 |
+
+Where the platform had to add or adapt something, it is marked:
+
+- **Topic groups are a proposal.** The workbook has none. Each group's description says so, and staff can
+  rename, regroup or delete them.
+- **Level 2/3 objectives are composed** from the topic title and its stated grammar focus, because the
+  workbook states none. They are flagged "נוסחה אוטומטית" in the editor for staff review.
+- **Level 2/3 have no grammar explanations in the workbook.** The page shows the stated grammar focus.
+  It also shows the corrected sentences of the topic's own error-correction activity, labelled as such,
+  and says plainly that no explanation exists.
+- **Workbook references to page numbers and unit numbers were reworded.** For example "the unit" became
+  "the topic", and "check the key at the back" became "check the feedback". The Level 3 review stations
+  were titled "unidades 01–04". They are now named after the topics they cover.
+- **Accepted alternatives come only from the answer key's own notation**: `a / b`, `o/a`, `(גם: …)`. Hebrew
+  notes in the key are shown as feedback. The key allows dropping a Spanish subject pronoun, so the
+  transformation and translation activities accept answers with or without it.
+
+## Answer checking (`functions/learn/grade.js`)
+
+Case, extra spaces and sentence punctuation (including `¿ ¡`, Arabic `، ؛ ؟`, Greek `;`) are always
+ignored. Everything else can be configured per language (admin → הגדרות שפה), then per activity, then per
+item:
+
+- **Accents / diacritics.** `strict` is the default: `esta`/`está` and `hablo`/`habló` are different words. The
+  answer is marked "almost", with feedback naming the words to check. `lenient` accepts the answer with a
+  note showing the correct form; the Spanish vocabulary-recall and matching activities use it.
+- **Arabic.** Harakat and tatweel are ignored by default. Hamza on alef stays significant unless set to lenient.
+- **German.** `ß`/`ss` and capitalization can each be made significant or not. **Greek** tonos is strict by default.
+- **Optional leading words** (for example subject pronouns), and a **content match** for reading questions.
+  Content match marks an answer right if it contains every content word of the model answer that is not
+  already in the question. "En Madrid" is right for "¿Dónde vive Lucía?".
+- **Feedback names the problem without giving the answer away**: unexpected words, the number of missing
+  words, word order only, accents only, a spelling that is close.
+- **"My answer is also right"** sends the answer to the teacher. If accepted, it joins the key for everyone.
+- **Open writing and speaking are not auto-assessed.** The student writes or speaks, then gets the
+  workbook's model and criteria (and the level rubric) and self-rates. That is recorded as self-assessment.
+
+## Progress: three separate numbers
+
+- **Completion**: an activity counts once every item has been answered (or the open task self-reviewed).
+  A topic is *practised* at 75% of its activities.
+- **Accuracy**: share of items answered right the first time.
+- **Evidence of learning**: items answered right on a *later day* than first seen, without having
+  revealed the answer that day.
+
+XP is separate from all three and never counts towards them.
+
+## Staff guide
+
+**Enroll a student.** Go to *תלמידים והרשמה*. *תלמיד/ה חדש/ה* creates the account and shows an entry
+code once. Hand the code over; *קוד חדש* replaces it. *הרשמה לרמה* adds a level, and a student can hold
+several levels and languages. *סיום הרשמה* withdraws access at once and keeps all history. The
+student's progress page shows every level they have had, with ended enrollments labelled.
+
+**Add a language's first course.** The seven languages already exist. Spanish is published; English,
+German, Italian, French, Arabic and Greek are Draft.
+1. *קורסים ותוכן → רמה חדשה*. The number is the enrollment level, and the new level starts as Draft.
+2. *הגדרות שפה*: content direction (Arabic is RTL), on-screen special characters, answer-checking defaults.
+3. In the level, add topic groups and topics. Titles describe the topic, and a title like "שיעור 3" is refused.
+4. In a topic, fill in the objective, the two main skills, a short explanation, examples and vocabulary
+   (`word = meaning` per line), then add activities with *פעילות חדשה*. Every activity type has a form,
+   and a raw JSON mode is available. The server validates every activity before saving.
+
+**Preview and publish.** *תצוגה מקדימה כתלמיד* shows the topic exactly as a student will see it,
+drafts included. Answers can be checked there and are not recorded. Publishing goes bottom-up: publish a topic (it needs
+at least one activity), then the level (it needs a published topic), then the language (it needs a published
+level). Students see nothing until all three are published. *החזרה לטיוטה* at any layer hides it again,
+immediately and for API requests too. Teachers can edit, add and preview content in their own levels; publishing is for the
+pedagogical manager and admins.
+
+**Teaching tools.** In each level: *התקדמות התלמידים* shows each student and each topic, with completion,
+accuracy and evidence kept separate, plus the items most often answered wrongly. *הצעות תרגול* sends a
+set of topics to one student or the whole level, as suggestions with no order. *תשובות חלופיות* holds
+students' proposed alternative answers. *מצב אתגר* switches the optional game layer on or off for the level.
+
+## What is not included (honest list)
+
+- **No audio.** The supplied course contains no recordings, so there is no listening activity and no audio
+  control anywhere. Media storage and a protected streaming endpoint are built (R2 binding `MEDIA`, off by
+  default), and an activity with `audio` shows a real player or says the recording is missing.
+- **Grammar explanations for Levels 2–3** and **teacher-reviewed objectives** are missing from the
+  source (see above).
+- **No automatic assessment of free writing or speaking.** Self-review against a model is used instead.
+- **Student accounts sign in by entry code only** (the existing staff-room design). There is no email
+  login or password for students.
+- **Hebrew is the only interface language.** Interface strings live apart from content in
+  `learn-src/i18n.js`, ready for another language.
+- **Google Fonts** is fetched at runtime. Offline, the system fonts are used.
+- **Production still needs** the secrets above, the remote schema and content load, real student
+  accounts and enrollments, and teacher↔level assignments. None of these can be done from the repository.
+
+## Layout
+
+| Path | What |
+| --- | --- |
+| `content/source/spanish-practice/` | the supplied ZIP, unchanged (not served) |
+| `content/spanish/level-*.json` | extracted course (generated by `scripts/extract-spanish.py`) |
+| `seed/content.sql` | idempotent D1 seed (generated by `scripts/build-seed.mjs`) |
+| `functions/learn/` | platform API: `_core` (access), `grade`, `stats`, `student`, `manage`, `router` |
+| `learn-src/` | Preact app source; `npm run build` bundles it into `docs/learn/` |
+| `scripts/seed-demo.mjs` | local demo accounts |
+| `scripts/e2e-learn.mjs`, `scripts/test-grade.mjs` | tests |
+
+---
+
+# Staff room · חדר המורים
+
 
 לוח מחוונים למורה — desktop and mobile views for a language-school teaching system:
 students, digital notebooks (מחברות דיגיטליות) and lesson materials, in Hebrew RTL.

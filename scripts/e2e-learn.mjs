@@ -346,6 +346,8 @@ async function suite() {
   ok('cross-origin write refused', cross.status === 403);
   ok('protected responses are not cacheable', (await call('/api/learn/levels/es-1/topics', { cookie: S1 })).headers.get('cache-control').includes('no-store'));
   ok('unknown media refused', (await call('/api/learn/media/nope', { cookie: S1 })).status === 403);
+  const shell = await call('/learn/');
+  ok('app page served with a strict Content-Security-Policy', shell.status === 200 && /frame-ancestors 'none'/.test(shell.headers.get('content-security-policy') || ''));
   const bundle = (await call('/learn/app.js')).text;
   ok('app bundle contains no course content or keys', bundle.length > 1000 && !bundle.includes('Charla informal') && !bundle.includes('Me gustan los libros') && !bundle.includes('Yo trabajo en una escuela'));
   for (const p of ['/content/spanish/level-1.json', '/seed/content.sql', '/learn-src/main.jsx', '/content/source/spanish-practice/dist/practice/level-1/', '/functions/learn/grade.js']) {

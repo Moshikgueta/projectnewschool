@@ -106,6 +106,33 @@ export default {
        serves index.html at '/', and it 307s any '*.html' request to the
        extensionless form — so rewriting '/' to '/index.html' bounces the
        browser straight back to '/', forever. */
-    return env.ASSETS.fetch(request);
+    if (url.pathname === '/learn') return Response.redirect(url.origin + '/learn/', 301);
+    const res = await env.ASSETS.fetch(request);
+    return url.pathname.startsWith('/learn/') ? withAppHeaders(res) : res;
   }
 };
+
+/* The practice app is one page that talks only to this origin. A strict
+   policy costs it nothing and closes script injection and framing. Google
+   Fonts is the one outside host it uses. */
+const APP_CSP = [
+  "default-src 'self'",
+  "script-src 'self'",
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+  "font-src https://fonts.gstatic.com",
+  "img-src 'self' data:",
+  "media-src 'self'",
+  "connect-src 'self'",
+  "frame-ancestors 'none'",
+  "base-uri 'self'",
+  "form-action 'self'"
+].join('; ');
+
+function withAppHeaders(res) {
+  const r = new Response(res.body, res);
+  r.headers.set('Content-Security-Policy', APP_CSP);
+  r.headers.set('X-Content-Type-Options', 'nosniff');
+  r.headers.set('Referrer-Policy', 'no-referrer');
+  r.headers.set('X-Frame-Options', 'DENY');
+  return r;
+}

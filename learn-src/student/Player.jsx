@@ -6,14 +6,14 @@ import { T, TL, baseOf } from '../text.jsx';
 
 const RIGHT = s => s === 'correct' || s === 'accepted_accent';
 
-export function PlayerPage({ topicId, exId }) {
+export function PlayerPage({ topicId, exId, me }) {
   const q = useApi(`/api/learn/topics/${topicId}`, [topicId]);
   return (
     <View q={q}>{d => {
       const ex = d.exercises.find(e => e.id === exId);
       if (!ex) return <div class="alert error">{t.notFound}</div>;
       return (
-        <Activity key={ex.id} ex={ex} level={d.level} topic={d.topic}
+        <Activity key={ex.id} ex={ex} level={d.level} topic={d.topic} showXp={!!(me && me.prefs.gamification && d.level.challenge_enabled)}
           endpoints={{
             check: `/api/learn/exercises/${ex.id}/check`, self: `/api/learn/exercises/${ex.id}/self`,
             state: `/api/learn/exercises/${ex.id}/state`, flag: `/api/learn/exercises/${ex.id}/flag`, save: true
@@ -27,7 +27,7 @@ export function PlayerPage({ topicId, exId }) {
 
 /* ── the activity frame ─────────────────────────────────────────────── */
 
-export function Activity({ ex, level, topic, endpoints, crumbs, back, levelHref, preview }) {
+export function Activity({ ex, level, topic, endpoints, crumbs, back, levelHref, preview, showXp }) {
   const lang = level.lang.id, dir = level.lang.dir;
   ensureFont(lang);
   useTitle(ex.title);
@@ -51,7 +51,7 @@ export function Activity({ ex, level, topic, endpoints, crumbs, back, levelHref,
         {ex.instructions && <div class="instructions"><T text={ex.instructions} lang={lang} dir={dir} /></div>}
       </div>
       {ex.body.audio && <Audio id={ex.body.audio} preview={preview} />}
-      <Comp ex={ex} level={level} topic={topic} endpoints={endpoints} lang={lang} dir={dir} preview={preview} back={back} />
+      <Comp ex={ex} level={level} topic={topic} endpoints={endpoints} lang={lang} dir={dir} preview={preview} back={back} showXp={showXp} />
       <div class="row" style={{ marginTop: 18 }}>
         <a class="btn ghost" href={back}>{t.otherActivity}</a>
         {levelHref && !preview && <a class="btn ghost" href={`${levelHref}/topics`}>{t.exploreOther}</a>}
@@ -173,14 +173,14 @@ function Feedback({ r, lang, dir, onReveal, onFlag, flagged, canFlag, busy }) {
   );
 }
 
-function Completion({ summary, xp, total, onRetryAll, back }) {
+function Completion({ summary, xp, total, onRetryAll, back, showXp }) {
   if (!summary || !summary.completed) return null;
   const all = summary.score === total;
   return (
     <div class="complete" role="status" tabIndex={-1}>
-      <h2 style={{ margin: 0 }}>✓ {t.completeTitle}</h2>
+      <h2 style={{ margin: 0 }}>{all ? `✓ ${t.completeTitle}` : t.answeredAll}</h2>
       <p style={{ margin: '6px 0' }}>{all ? t.completeAll : t.completeSome(summary.score, total)}</p>
-      {xp > 0 && <p class="small" style={{ margin: 0 }}>{t.xpGained(xp)}</p>}
+      {showXp && xp > 0 && <p class="small" style={{ margin: 0 }}>{t.xpGained(xp)}</p>}
       <div class="row" style={{ marginTop: 10 }}>
         <a class="btn primary" href={back}>{t.otherActivity}</a>
         <button class="btn ghost" onClick={onRetryAll}>{t.retryAll}</button>
@@ -218,7 +218,7 @@ function useCharInsert(values, setValue) {
 
 /* ── item-based activities (gap, recall, choice, bank, typed, reading…) ─ */
 
-function ItemsActivity({ ex, level, endpoints, lang, dir, preview, back }) {
+function ItemsActivity({ ex, level, endpoints, lang, dir, preview, back, showXp }) {
   const A = useActivityState(ex, endpoints, preview);
   const items = ex.body.items || [];
   const [confirmEmpty, setConfirmEmpty] = useState(false);
@@ -315,7 +315,7 @@ function ItemsActivity({ ex, level, endpoints, lang, dir, preview, back }) {
           <button class="btn small ghost" onClick={() => { setConfirmEmpty(false); const el = document.querySelector(`[data-idx="${empty[0]}"]`); el && el.focus(); }}>{t.fillFirst}</button>
         </div>
       )}
-      <Completion summary={A.summary} xp={A.xp} total={items.length} onRetryAll={A.resetAll} back={back} />
+      <Completion summary={A.summary} xp={A.xp} total={items.length} onRetryAll={A.resetAll} back={back} showXp={showXp} />
       <div class="player-actions">
         {pendingIdx.length > 0 && (
           <button class="btn primary" onClick={() => check()} disabled={A.busy} aria-busy={A.busy}>
@@ -411,7 +411,7 @@ function Tokens({ i, it, A, lang, dir }) {
 
 /* ── matching: a select per row is the accessible way to match ──────── */
 
-function MatchActivity({ ex, endpoints, lang, dir, preview, back }) {
+function MatchActivity({ ex, endpoints, lang, dir, preview, back, showXp }) {
   const A = useActivityState(ex, endpoints, preview);
   const { left, right } = ex.body;
   const pending = left.map((_, i) => i).filter(i => !(A.results[i] && RIGHT(A.results[i].status)));
@@ -447,7 +447,7 @@ function MatchActivity({ ex, endpoints, lang, dir, preview, back }) {
       </div>
       {A.err && <div class="alert error" role="alert">{A.err}</div>}
       {warn && <div class="alert warn" role="alert">{t.emptyWarn(pending.filter(i => !A.values[i]).length)} <button class="btn small secondary" onClick={() => check(true)}>{t.checkAnyway}</button></div>}
-      <Completion summary={A.summary} xp={A.xp} total={left.length} onRetryAll={A.resetAll} back={back} />
+      <Completion summary={A.summary} xp={A.xp} total={left.length} onRetryAll={A.resetAll} back={back} showXp={showXp} />
       <div class="player-actions">
         {pending.length > 0 && <button class="btn primary" disabled={A.busy} onClick={() => check()}>{A.busy ? t.checking : t.check}</button>}
         <SaveIndicator s={A.saveState} onRetry={() => A.persist()} />
@@ -458,7 +458,7 @@ function MatchActivity({ ex, endpoints, lang, dir, preview, back }) {
 
 /* ── ordering a dialogue or a sequence ──────────────────────────────── */
 
-function OrderActivity({ ex, endpoints, lang, dir, preview, back }) {
+function OrderActivity({ ex, endpoints, lang, dir, preview, back, showXp }) {
   const A = useActivityState(ex, endpoints, preview);
   const lines = ex.body.lines;
   const order = Array.isArray(A.values[0]) && A.values[0].length === lines.length ? A.values[0] : lines.map(l => l.id);
@@ -494,7 +494,7 @@ function OrderActivity({ ex, endpoints, lang, dir, preview, back }) {
       </ol>
       <Feedback r={r} lang={lang} dir={dir} busy={A.busy} onReveal={() => A.submit({}, [0])} />
       {A.err && <div class="alert error" role="alert">{A.err}</div>}
-      <Completion summary={A.summary} xp={A.xp} total={1} onRetryAll={A.resetAll} back={back} />
+      <Completion summary={A.summary} xp={A.xp} total={1} onRetryAll={A.resetAll} back={back} showXp={showXp} />
       <div class="player-actions">
         {!locked && <button class="btn primary" disabled={A.busy} onClick={() => A.submit({ 0: order })}>{A.busy ? t.checking : r ? t.checkAgain : t.check}</button>}
         <SaveIndicator s={A.saveState} onRetry={() => A.persist()} />
@@ -505,7 +505,7 @@ function OrderActivity({ ex, endpoints, lang, dir, preview, back }) {
 
 /* ── open writing / speaking: model answer and self-review ──────────── */
 
-function OpenActivity({ ex, level, endpoints, lang, dir, preview, back }) {
+function OpenActivity({ ex, level, endpoints, lang, dir, preview, back, showXp }) {
   const init = ex.state || {};
   const [text, setText] = useState(init.text || '');
   const [model, setModel] = useState(init.model || null);
@@ -584,7 +584,7 @@ function OpenActivity({ ex, level, endpoints, lang, dir, preview, back }) {
                   <button key={k} class="btn ghost" aria-pressed={rating === k} disabled={busy} onClick={() => send(k)}>{v}</button>
                 ))}
               </div>
-              {rating && <p class="small" role="status" style={{ marginTop: 8 }}>✓ {t.rated}{xp ? ` ${t.xpGained(xp)}` : ''}</p>}
+              {rating && <p class="small" role="status" style={{ marginTop: 8 }}>✓ {t.rated}{showXp && xp ? ` ${t.xpGained(xp)}` : ''}</p>}
               {rating && <a class="btn secondary" style={{ marginTop: 8 }} href={back}>{t.otherActivity}</a>}
             </>
           )}

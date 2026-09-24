@@ -172,6 +172,7 @@ export const HE = {
   },
   resultMark: { correct: '✓', accepted_accent: '✓', almost: '≈', incorrect: '✗', empty: '–', revealed: '👁' },
   completeTitle: 'הפעילות הושלמה',
+  answeredAll: 'כל הסעיפים נענו',
   completeAll: 'כל הסעיפים נכונים.',
   completeSome: (a, b) => `${a} מתוך ${b} סעיפים נכונים כרגע. אפשר לתקן את השאר עכשיו או לחזור אליהם בחזרה.`,
   xpGained: n => `+${n} נקודות תרגול`,
