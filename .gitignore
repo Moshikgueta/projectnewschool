@@ -1,0 +1,38 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js / build
+.next/
+out/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# env — never commit real values (.env.example is the only committed env file)
+.env
+.env*.local
+.env.*
+!.env.example
+
+# Supabase local state
+supabase/.branches/
+supabase/.temp/
+
+# tests
+coverage/
+playwright-report/
+test-results/
+
+# content media is uploaded to Storage, not committed
+content/**/media/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Vercel
+.vercel
