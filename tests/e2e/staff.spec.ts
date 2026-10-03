@@ -76,11 +76,13 @@ test.describe('MFA-protected roles', () => {
 
     await page.goto(link!);
     await expect(page).toHaveURL(/\/account\/set-password/);
-    await page.getByLabel('New password').fill('a-fresh-long-password-42');
-    await page.getByLabel('Repeat the password').fill('a-fresh-long-password-42');
-    await page.getByRole('button', { name: 'Save password' }).click();
+    // A new account starts in Hebrew, the school's default interface language.
+    await page.getByLabel('סיסמה חדשה').fill('a-fresh-long-password-42');
+    await page.getByLabel('הקלדת הסיסמה שוב').fill('a-fresh-long-password-42');
+    await page.getByRole('button', { name: 'שמירת הסיסמה' }).click();
     await expect(page).toHaveURL(/\/learn$/);
-    await expect(page.getByText('No courses yet')).toBeVisible();
+    await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
+    await expect(page.getByText('עדיין אין קורסים')).toBeVisible();
   });
 });
 

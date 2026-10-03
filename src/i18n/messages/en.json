@@ -1,0 +1,227 @@
+{
+  "common": {
+    "appName": "New School",
+    "signOut": "Sign out",
+    "skipToContent": "Skip to content",
+    "goHome": "Go to your home page",
+    "soon": "Coming soon",
+    "loading": "Loading…",
+    "languageLabel": "Interface language",
+    "languages": { "he": "עברית", "en": "English" },
+    "alert": { "info": "Note", "success": "Done", "warning": "Warning", "error": "Error" },
+    "mainNav": "Main",
+    "accountMenu": "Account"
+  },
+  "areas": {
+    "learn": "Student",
+    "teach": "Teacher",
+    "manage": "Pedagogical management",
+    "admin": "Administration"
+  },
+  "errors": {
+    "notFoundTitle": "Page not found",
+    "notFoundBody": "This page does not exist, or you do not have access to it.",
+    "errorTitle": "Something went wrong",
+    "errorBody": "The page could not be loaded. Try again in a moment.",
+    "tryAgain": "Try again"
+  },
+  "auth": {
+    "signIn": {
+      "title": "Sign in",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "forgot": "Forgot your password?",
+      "failed": "The email or password is incorrect.",
+      "rateLimited": "Too many attempts. Wait a few minutes and try again.",
+      "linkExpired": "That link has expired or was already used. Ask for a new one."
+    },
+    "forgot": {
+      "title": "Reset your password",
+      "intro": "We will email you a link to choose a new password.",
+      "email": "Email",
+      "submit": "Send reset link",
+      "sent": "If an account exists for that address, a reset link is on its way. It works once and expires in one hour.",
+      "invalidEmail": "Enter a valid email address.",
+      "back": "Back to sign in"
+    },
+    "setPassword": {
+      "title": "Choose a password",
+      "for": "For {email}",
+      "password": "New password",
+      "hint": "At least 10 characters. A short sentence is easy to remember and hard to guess.",
+      "confirm": "Repeat the password",
+      "submit": "Save password",
+      "tooShort": "Use at least 10 characters.",
+      "tooLong": "Use at most 200 characters.",
+      "mismatch": "The two passwords do not match.",
+      "weak": "That password is too common or too weak. Choose a longer, less predictable one.",
+      "same": "Choose a password you have not used for this account before.",
+      "failed": "The password could not be changed. Open the link from the email again."
+    },
+    "mfa": {
+      "title": "Two-step verification",
+      "verifyIntro": "Enter the 6-digit code from your authenticator app.",
+      "enrollIntro": "Your role needs a second step at sign-in. Set up an authenticator app (for example Google Authenticator, Microsoft Authenticator or 1Password).",
+      "code": "6-digit code",
+      "verify": "Verify",
+      "setUp": "Set up authenticator app",
+      "stepOne": "Open your authenticator app and add a new account.",
+      "stepTwo": "Scan this code, or type the setup key below.",
+      "stepThree": "Enter the 6-digit code the app shows.",
+      "qrAlt": "QR code for your authenticator app",
+      "setupKey": "Setup key:",
+      "codeFormat": "Enter the 6-digit code from your authenticator app.",
+      "codeFailed": "That code did not work. Check the time on your phone and try again.",
+      "startAgain": "Start the setup again.",
+      "startFailed": "Could not start the setup. Try again."
+    },
+    "noAccess": {
+      "title": "Your account is not set up yet",
+      "body": "You are signed in, but no course or role has been assigned to this account. Please contact the school office."
+    }
+  },
+  "learn": {
+    "nav": {
+      "home": "Home",
+      "notebook": "Notebook",
+      "workbook": "Workbook",
+      "practice": "Practice",
+      "vocabulary": "Vocabulary"
+    },
+    "dashboard": {
+      "metaTitle": "Home",
+      "greeting": {
+        "morning": "Good morning, {name}",
+        "afternoon": "Good afternoon, {name}",
+        "evening": "Good evening, {name}",
+        "night": "Good evening, {name}"
+      },
+      "courseLine": "{language} · {level}",
+      "courseSwitcher": "Course",
+      "continueCta": "Continue learning",
+      "continueTitle": "Continue where you left off",
+      "continueActivity": "Activity",
+      "continueSection": "Notebook",
+      "nothingToContinue": "Nothing in progress. Pick something from your course below.",
+      "myCourse": "My course",
+      "cards": {
+        "notebook": "Class notebook",
+        "notebookBody": "What you study in class, cycle by cycle.",
+        "workbook": "Workbook",
+        "workbookBody": "Practice on your own, at your pace.",
+        "practice": "Practice",
+        "practiceBody": "Short activities for what you are learning now.",
+        "vocabulary": "Vocabulary",
+        "vocabularyBody": "Words from your active cycles.",
+        "homework": "Homework",
+        "homeworkBody": "What your teacher has assigned.",
+        "review": "Review",
+        "reviewBody": "Come back to earlier topics."
+      },
+      "counts": {
+        "sections": "{count, plural, one {# section} other {# sections}}",
+        "activities": "{count, plural, one {# activity} other {# activities}}",
+        "words": "{count, plural, one {# word} other {# words}}",
+        "homework": "{count, plural, =0 {Nothing due} one {# to do} other {# to do}}",
+        "review": "{count, plural, =0 {Nothing to review yet} one {# review activity} other {# review activities}}"
+      },
+      "recommended": "Recommended for you",
+      "recommendedEmpty": "You are all caught up. New suggestions appear as you study.",
+      "rec": {
+        "assignment": "Assigned by your teacher",
+        "unfinished": "Finish what you started",
+        "due": "Due {date}"
+      },
+      "recent": "Recent activity",
+      "recentEmpty": "Your recent study will appear here.",
+      "events": {
+        "activity_completed": "Completed: {title}",
+        "activity_started": "Started: {title}",
+        "answer_submitted": "Practised: {title}",
+        "section_opened": "Opened: {title}",
+        "section_completed": "Finished reading: {title}",
+        "vocab_reviewed": "Reviewed vocabulary",
+        "assignment_completed": "Finished homework: {title}",
+        "login": "Signed in"
+      },
+      "progress": "Progress",
+      "activitiesCompleted": "Activities completed",
+      "practiceWeek": "Days practised in the last 7 days",
+      "practiceWeekValue": "{days} of {goal}",
+      "cycleProgress": "Current cycle",
+      "cycleProgressValue": "{percent}%",
+      "noActiveCycle": "No active cycle yet",
+      "noCourses": "No courses yet",
+      "noCoursesBody": "When the school enrolls you in a group, your course appears here."
+    },
+    "soon": {
+      "title": "Coming soon",
+      "notebook": "Your interactive class notebook arrives in the next update.",
+      "workbook": "Your workbook arrives in an upcoming update.",
+      "practice": "Practice activities arrive in an upcoming update.",
+      "vocabulary": "Vocabulary review arrives in an upcoming update."
+    },
+    "attempt": {
+      "completed": "Completed",
+      "inProgress": "In progress",
+      "started": "Started {date}"
+    }
+  },
+  "teach": {
+    "nav": { "groups": "My groups" },
+    "groups": {
+      "title": "My groups",
+      "subtitle": "The groups you teach.",
+      "empty": "No groups yet",
+      "emptyBody": "A pedagogical manager assigns teachers to groups.",
+      "students": "{count, plural, one {# student} other {# students}}",
+      "unpublished": "Course not published yet"
+    },
+    "group": {
+      "students": "Students",
+      "empty": "No students in this group yet",
+      "status": {
+        "active": "Active",
+        "paused": "Paused",
+        "completed": "Completed",
+        "withdrawn": "Withdrawn"
+      }
+    }
+  },
+  "manage": {
+    "nav": { "overview": "Overview" },
+    "title": "Pedagogical management",
+    "subtitle": "Courses, cycles, groups and enrollments.",
+    "comingTitle": "Management screens are on the way",
+    "comingBody": "Groups and enrollments come first, for the pilot. The full content editor comes later."
+  },
+  "admin": {
+    "nav": { "accounts": "Accounts" },
+    "title": "Accounts",
+    "subtitle": "Invite people and see who has which role.",
+    "inviteTitle": "Invite someone",
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "send": "Send invitation",
+    "sent": "Invitation sent to {email}.",
+    "allAccounts": "All accounts ({count})",
+    "colName": "Name",
+    "colRoles": "Roles",
+    "colCreated": "Created",
+    "roles": {
+      "student": "Student",
+      "teacher": "Teacher",
+      "pedagogical_manager": "Pedagogical manager",
+      "admin": "Admin"
+    },
+    "errors": {
+      "invalidEmail": "Enter a valid email address.",
+      "nameRequired": "Enter a name.",
+      "exists": "An account with that email already exists.",
+      "sendFailed": "The invitation could not be sent.",
+      "roleFailed": "The role could not be assigned, so the invitation was withdrawn."
+    }
+  }
+}

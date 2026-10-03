@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useActionState } from 'react';
 import { setPassword, type FormState } from '@/server/actions/auth';
 import { Alert } from '@/ui/Alert';
@@ -9,6 +10,7 @@ import { TextField } from '@/ui/TextField';
 const initial: FormState = { status: 'idle' };
 
 export function SetPasswordForm() {
+  const t = useTranslations('auth.setPassword');
   const [state, action, pending] = useActionState(setPassword, initial);
   return (
     <form action={action} className="flex flex-col gap-4" noValidate>
@@ -17,8 +19,9 @@ export function SetPasswordForm() {
         id="password"
         name="password"
         type="password"
-        label="New password"
-        hint="At least 10 characters. A short sentence is easy to remember and hard to guess."
+        dir="ltr"
+        label={t('password')}
+        hint={t('hint')}
         autoComplete="new-password"
         minLength={10}
         required
@@ -27,12 +30,13 @@ export function SetPasswordForm() {
         id="confirm"
         name="confirm"
         type="password"
-        label="Repeat the password"
+        dir="ltr"
+        label={t('confirm')}
         autoComplete="new-password"
         required
       />
       <Button type="submit" loading={pending}>
-        Save password
+        {t('submit')}
       </Button>
     </form>
   );

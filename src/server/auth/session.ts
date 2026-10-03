@@ -16,6 +16,8 @@ export type SessionUser = {
   aal: AssuranceLevel;
   roles: Role[];
   displayName: string;
+  uiLocale: string | null;
+  timezone: string;
 };
 
 /**
@@ -32,7 +34,11 @@ export const getSessionUser = cache(async (): Promise<SessionUser | null> => {
   const { claims } = data;
   const [{ data: roleRows }, { data: profile }] = await Promise.all([
     supabase.from('user_roles').select('role').eq('user_id', claims.sub),
-    supabase.from('profiles').select('display_name').eq('id', claims.sub).maybeSingle(),
+    supabase
+      .from('profiles')
+      .select('display_name, ui_locale, timezone')
+      .eq('id', claims.sub)
+      .maybeSingle(),
   ]);
 
   return {
@@ -41,6 +47,8 @@ export const getSessionUser = cache(async (): Promise<SessionUser | null> => {
     aal: claims.aal === 'aal2' ? 'aal2' : 'aal1',
     roles: (roleRows ?? []).map((r) => r.role).filter(isRole),
     displayName: profile?.display_name ?? '',
+    uiLocale: profile?.ui_locale ?? null,
+    timezone: profile?.timezone ?? 'Asia/Jerusalem',
   };
 });
 

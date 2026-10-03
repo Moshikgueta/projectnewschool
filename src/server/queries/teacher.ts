@@ -1,4 +1,5 @@
 import 'server-only';
+import type { Database } from '@/server/db.types';
 import { createSupabaseServerClient } from '@/server/supabase/server';
 
 export type TaughtGroup = {
@@ -34,7 +35,11 @@ export type GroupDetail = {
   id: string;
   name: string;
   courseTitle: string | null;
-  students: { id: string; displayName: string; status: string }[];
+  students: {
+    id: string;
+    displayName: string;
+    status: Database['public']['Enums']['enrollment_status'];
+  }[];
 };
 
 /**

@@ -1,0 +1,227 @@
+{
+  "common": {
+    "appName": "New School",
+    "signOut": "התנתקות",
+    "skipToContent": "דילוג לתוכן",
+    "goHome": "חזרה לדף הבית",
+    "soon": "בקרוב",
+    "loading": "טוען…",
+    "languageLabel": "שפת הממשק",
+    "languages": { "he": "עברית", "en": "English" },
+    "alert": { "info": "הערה", "success": "בוצע", "warning": "אזהרה", "error": "שגיאה" },
+    "mainNav": "ניווט ראשי",
+    "accountMenu": "חשבון"
+  },
+  "areas": {
+    "learn": "תלמיד",
+    "teach": "מורה",
+    "manage": "ניהול פדגוגי",
+    "admin": "ניהול מערכת"
+  },
+  "errors": {
+    "notFoundTitle": "הדף לא נמצא",
+    "notFoundBody": "הדף הזה לא קיים, או שאין לך גישה אליו.",
+    "errorTitle": "משהו השתבש",
+    "errorBody": "לא הצלחנו לטעון את הדף. נסו שוב בעוד רגע.",
+    "tryAgain": "ניסיון נוסף"
+  },
+  "auth": {
+    "signIn": {
+      "title": "כניסה",
+      "email": "דוא״ל",
+      "password": "סיסמה",
+      "submit": "כניסה",
+      "forgot": "שכחת את הסיסמה?",
+      "failed": "הדוא״ל או הסיסמה שגויים.",
+      "rateLimited": "יותר מדי ניסיונות. המתינו כמה דקות ונסו שוב.",
+      "linkExpired": "הקישור פג תוקף או שכבר נעשה בו שימוש. בקשו קישור חדש."
+    },
+    "forgot": {
+      "title": "איפוס סיסמה",
+      "intro": "נשלח לך בדוא״ל קישור לבחירת סיסמה חדשה.",
+      "email": "דוא״ל",
+      "submit": "שליחת קישור לאיפוס",
+      "sent": "אם קיים חשבון עם הכתובת הזו, קישור לאיפוס בדרך. הקישור עובד פעם אחת ותקף לשעה.",
+      "invalidEmail": "הזינו כתובת דוא״ל תקינה.",
+      "back": "חזרה לכניסה"
+    },
+    "setPassword": {
+      "title": "בחירת סיסמה",
+      "for": "עבור {email}",
+      "password": "סיסמה חדשה",
+      "hint": "לפחות 10 תווים. משפט קצר קל לזכור וקשה לנחש.",
+      "confirm": "הקלדת הסיסמה שוב",
+      "submit": "שמירת הסיסמה",
+      "tooShort": "השתמשו בלפחות 10 תווים.",
+      "tooLong": "השתמשו בעד 200 תווים.",
+      "mismatch": "שתי הסיסמאות אינן זהות.",
+      "weak": "הסיסמה נפוצה או חלשה מדי. בחרו סיסמה ארוכה יותר וקשה יותר לניחוש.",
+      "same": "בחרו סיסמה שלא השתמשתם בה בעבר בחשבון הזה.",
+      "failed": "לא הצלחנו לשנות את הסיסמה. פתחו שוב את הקישור מהדוא״ל."
+    },
+    "mfa": {
+      "title": "אימות דו־שלבי",
+      "verifyIntro": "הזינו את הקוד בן 6 הספרות מאפליקציית האימות.",
+      "enrollIntro": "התפקיד שלך דורש שלב נוסף בכניסה. הגדירו אפליקציית אימות (למשל Google Authenticator,‏ Microsoft Authenticator או 1Password).",
+      "code": "קוד בן 6 ספרות",
+      "verify": "אימות",
+      "setUp": "הגדרת אפליקציית אימות",
+      "stepOne": "פתחו את אפליקציית האימות והוסיפו חשבון חדש.",
+      "stepTwo": "סרקו את הקוד, או הקלידו את מפתח ההגדרה שלמטה.",
+      "stepThree": "הזינו את הקוד בן 6 הספרות שמופיע באפליקציה.",
+      "qrAlt": "קוד QR לאפליקציית האימות",
+      "setupKey": "מפתח הגדרה:",
+      "codeFormat": "הזינו את הקוד בן 6 הספרות מאפליקציית האימות.",
+      "codeFailed": "הקוד לא התקבל. בדקו שהשעה בטלפון נכונה ונסו שוב.",
+      "startAgain": "התחילו את ההגדרה מחדש.",
+      "startFailed": "לא הצלחנו להתחיל את ההגדרה. נסו שוב."
+    },
+    "noAccess": {
+      "title": "החשבון שלך עדיין לא מוגדר",
+      "body": "נכנסת למערכת, אבל עדיין לא שויכו לחשבון קורס או תפקיד. פנו למזכירות בית הספר."
+    }
+  },
+  "learn": {
+    "nav": {
+      "home": "בית",
+      "notebook": "מחברת",
+      "workbook": "חוברת עבודה",
+      "practice": "תרגול",
+      "vocabulary": "אוצר מילים"
+    },
+    "dashboard": {
+      "metaTitle": "בית",
+      "greeting": {
+        "morning": "בוקר טוב, {name}",
+        "afternoon": "צהריים טובים, {name}",
+        "evening": "ערב טוב, {name}",
+        "night": "ערב טוב, {name}"
+      },
+      "courseLine": "{language} · {level}",
+      "courseSwitcher": "קורס",
+      "continueCta": "המשך ללמוד",
+      "continueTitle": "המשך מאיפה שעצרת",
+      "continueActivity": "פעילות",
+      "continueSection": "מחברת",
+      "nothingToContinue": "אין כרגע משהו פתוח. בחרו משהו מהקורס שלמטה.",
+      "myCourse": "הקורס שלי",
+      "cards": {
+        "notebook": "מחברת השיעור",
+        "notebookBody": "מה שלומדים בשיעור, מחזור אחרי מחזור.",
+        "workbook": "חוברת עבודה",
+        "workbookBody": "תרגול עצמאי, בקצב שלך.",
+        "practice": "תרגול",
+        "practiceBody": "פעילויות קצרות למה שלומדים עכשיו.",
+        "vocabulary": "אוצר מילים",
+        "vocabularyBody": "מילים מהמחזורים הפעילים.",
+        "homework": "שיעורי בית",
+        "homeworkBody": "מה שהמורה הטיל/ה.",
+        "review": "חזרה",
+        "reviewBody": "חוזרים לנושאים קודמים."
+      },
+      "counts": {
+        "sections": "{count, plural, one {פרק אחד} other {# פרקים}}",
+        "activities": "{count, plural, one {פעילות אחת} other {# פעילויות}}",
+        "words": "{count, plural, one {מילה אחת} other {# מילים}}",
+        "homework": "{count, plural, =0 {אין משימות פתוחות} one {משימה אחת} other {# משימות}}",
+        "review": "{count, plural, =0 {עדיין אין חזרה} one {פעילות חזרה אחת} other {# פעילויות חזרה}}"
+      },
+      "recommended": "מומלץ בשבילך",
+      "recommendedEmpty": "הכול מעודכן. הצעות חדשות יופיעו ככל שתלמדו.",
+      "rec": {
+        "assignment": "המורה הטיל/ה",
+        "unfinished": "להשלים את מה שהתחלת",
+        "due": "עד {date}"
+      },
+      "recent": "פעילות אחרונה",
+      "recentEmpty": "הלמידה האחרונה שלך תופיע כאן.",
+      "events": {
+        "activity_completed": "הושלם: {title}",
+        "activity_started": "התחלת: {title}",
+        "answer_submitted": "תרגלת: {title}",
+        "section_opened": "פתחת: {title}",
+        "section_completed": "סיימת לקרוא: {title}",
+        "vocab_reviewed": "חזרת על אוצר מילים",
+        "assignment_completed": "הוגשו שיעורי בית: {title}",
+        "login": "כניסה למערכת"
+      },
+      "progress": "התקדמות",
+      "activitiesCompleted": "פעילויות שהושלמו",
+      "practiceWeek": "ימי תרגול ב־7 הימים האחרונים",
+      "practiceWeekValue": "{days} מתוך {goal}",
+      "cycleProgress": "המחזור הנוכחי",
+      "cycleProgressValue": "{percent}%",
+      "noActiveCycle": "עדיין אין מחזור פעיל",
+      "noCourses": "עדיין אין קורסים",
+      "noCoursesBody": "כשבית הספר ירשום אותך לקבוצה, הקורס יופיע כאן."
+    },
+    "soon": {
+      "title": "בקרוב",
+      "notebook": "מחברת השיעור האינטראקטיבית תגיע בעדכון הקרוב.",
+      "workbook": "חוברת העבודה תגיע באחד העדכונים הקרובים.",
+      "practice": "פעילויות התרגול יגיעו באחד העדכונים הקרובים.",
+      "vocabulary": "החזרה על אוצר מילים תגיע באחד העדכונים הקרובים."
+    },
+    "attempt": {
+      "completed": "הושלם",
+      "inProgress": "בתהליך",
+      "started": "התחלת ב־{date}"
+    }
+  },
+  "teach": {
+    "nav": { "groups": "הקבוצות שלי" },
+    "groups": {
+      "title": "הקבוצות שלי",
+      "subtitle": "הקבוצות שבהן את/ה מלמד/ת.",
+      "empty": "עדיין אין קבוצות",
+      "emptyBody": "מנהל/ת פדגוגי/ת משייך/ת מורים לקבוצות.",
+      "students": "{count, plural, one {תלמיד/ה אחד/ת} other {# תלמידים}}",
+      "unpublished": "הקורס עדיין לא פורסם"
+    },
+    "group": {
+      "students": "תלמידים",
+      "empty": "עדיין אין תלמידים בקבוצה",
+      "status": {
+        "active": "פעיל/ה",
+        "paused": "בהקפאה",
+        "completed": "סיים/ה",
+        "withdrawn": "עזב/ה"
+      }
+    }
+  },
+  "manage": {
+    "nav": { "overview": "סקירה" },
+    "title": "ניהול פדגוגי",
+    "subtitle": "קורסים, מחזורים, קבוצות ורישום.",
+    "comingTitle": "מסכי הניהול בדרך",
+    "comingBody": "קודם קבוצות ורישום, בשביל הפיילוט. עורך התוכן המלא יגיע בהמשך."
+  },
+  "admin": {
+    "nav": { "accounts": "חשבונות" },
+    "title": "חשבונות",
+    "subtitle": "הזמנת אנשים וצפייה בתפקידים.",
+    "inviteTitle": "הזמנת משתמש/ת",
+    "name": "שם",
+    "email": "דוא״ל",
+    "role": "תפקיד",
+    "send": "שליחת הזמנה",
+    "sent": "ההזמנה נשלחה אל {email}.",
+    "allAccounts": "כל החשבונות ({count})",
+    "colName": "שם",
+    "colRoles": "תפקידים",
+    "colCreated": "נוצר",
+    "roles": {
+      "student": "תלמיד/ה",
+      "teacher": "מורה",
+      "pedagogical_manager": "מנהל/ת פדגוגי/ת",
+      "admin": "אדמין"
+    },
+    "errors": {
+      "invalidEmail": "הזינו כתובת דוא״ל תקינה.",
+      "nameRequired": "הזינו שם.",
+      "exists": "כבר קיים חשבון עם הדוא״ל הזה.",
+      "sendFailed": "לא הצלחנו לשלוח את ההזמנה.",
+      "roleFailed": "לא הצלחנו לשייך את התפקיד, ולכן ההזמנה בוטלה."
+    }
+  }
+}

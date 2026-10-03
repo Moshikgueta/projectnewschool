@@ -94,7 +94,9 @@ insert into public.book_sections (id, book_id, course_id, cycle_id, position, ti
   ('60000000-0000-4000-8000-000000000003', '50000000-0000-4000-8000-000000000003', '30000000-0000-4000-8000-000000000002',
    '40000000-0000-4000-8000-000000000003', 1, 'Bonjour !', '[]', 'during_class', 'published'),
   ('60000000-0000-4000-8000-000000000004', '50000000-0000-4000-8000-000000000004', '30000000-0000-4000-8000-000000000003',
-   '40000000-0000-4000-8000-000000000004', 1, 'En la ciudad', '[]', 'during_class', 'published');
+   '40000000-0000-4000-8000-000000000004', 1, 'En la ciudad', '[]', 'during_class', 'published'),
+  ('60000000-0000-4000-8000-000000000005', '50000000-0000-4000-8000-000000000002', '30000000-0000-4000-8000-000000000001',
+   '40000000-0000-4000-8000-000000000001', 1, 'Práctica: presentarse', '[]', 'after_class', 'published');
 
 insert into public.section_teacher_notes (section_id, course_id, blocks) values
   ('60000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001',
@@ -108,14 +110,18 @@ insert into public.activities (id, course_id, cycle_id, slug, title, phase, scor
   ('70000000-0000-4000-8000-000000000003', '30000000-0000-4000-8000-000000000002', '40000000-0000-4000-8000-000000000003',
    'salutations', 'Salutations', 'after_class', 'practice', 5, 'published'),
   ('70000000-0000-4000-8000-000000000004', '30000000-0000-4000-8000-000000000003', '40000000-0000-4000-8000-000000000004',
-   'direcciones', 'Directions', 'after_class', 'practice', 5, 'published');
+   'direcciones', 'Directions', 'after_class', 'practice', 5, 'published'),
+  ('70000000-0000-4000-8000-000000000005', '30000000-0000-4000-8000-000000000001', '40000000-0000-4000-8000-000000000001',
+   'antes-de-clase', 'Before class: five greetings', 'before_class', 'none', 3, 'published');
 
 insert into public.activity_items (id, activity_id, course_id, position, type, prompt, data) values
   ('80000000-0000-4000-8000-000000000001', '70000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001', 1,
    'multipleChoice', '[{"id":"p1","type":"text","text":"¿Cómo te llamas?","lang":"es"}]',
    '{"options":[{"id":"o1","text":"Me llamo Ana."},{"id":"o2","text":"Tengo diez años."}]}'),
   ('80000000-0000-4000-8000-000000000003', '70000000-0000-4000-8000-000000000003', '30000000-0000-4000-8000-000000000002', 1,
-   'trueFalse', '[{"id":"p1","type":"text","text":"« Bonjour » se dit le matin.","lang":"fr"}]', '{}');
+   'trueFalse', '[{"id":"p1","type":"text","text":"« Bonjour » se dit le matin.","lang":"fr"}]', '{}'),
+  ('80000000-0000-4000-8000-000000000005', '70000000-0000-4000-8000-000000000005', '30000000-0000-4000-8000-000000000001', 1,
+   'reflection', '[{"id":"p1","type":"text","text":"¿Cómo saludas a tu profesor?","lang":"es"}]', '{}');
 
 insert into public.activity_item_keys (item_id, course_id, answer, feedback) values
   ('80000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001', '{"optionIds":["o1"]}',

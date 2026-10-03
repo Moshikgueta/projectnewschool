@@ -1,8 +1,10 @@
 import { redirect } from 'next/navigation';
+import { getTranslations } from 'next-intl/server';
 import { homeAreaFor } from '@/domain/auth/access';
-import { getSessionUser } from '@/server/auth/session';
 import { signOut } from '@/server/actions/auth';
-import { Logo } from '@/ui/Logo';
+import { setInterfaceLanguage } from '@/server/actions/preferences';
+import { getSessionUser } from '@/server/auth/session';
+import { AuthFrame } from '@/ui/AuthFrame';
 
 export default async function Home() {
   const user = await getSessionUser();
@@ -11,19 +13,18 @@ export default async function Home() {
   const area = homeAreaFor(user.roles);
   if (area) redirect(`/${area}`);
 
+  const t = await getTranslations();
   return (
-    <main className="mx-auto flex min-h-dvh max-w-md flex-col justify-center gap-4 px-4">
-      <Logo />
-      <h1 className="text-xl font-semibold">Your account is not set up yet</h1>
-      <p className="text-fg-secondary">
-        You are signed in, but no course or role has been assigned to this account. Please contact
-        the school office.
-      </p>
-      <form action={signOut}>
-        <button type="submit" className="font-medium text-primary hover:underline">
-          Sign out
-        </button>
-      </form>
-    </main>
+    <AuthFrame languageAction={setInterfaceLanguage}>
+      <div className="flex flex-col gap-3">
+        <h1 className="text-xl font-semibold">{t('auth.noAccess.title')}</h1>
+        <p className="text-fg-secondary">{t('auth.noAccess.body')}</p>
+        <form action={signOut}>
+          <button type="submit" className="min-h-11 font-medium text-primary hover:underline">
+            {t('common.signOut')}
+          </button>
+        </form>
+      </div>
+    </AuthFrame>
   );
 }

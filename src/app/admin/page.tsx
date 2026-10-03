@@ -1,47 +1,43 @@
 import type { Metadata } from 'next';
+import { getFormatter, getTranslations } from 'next-intl/server';
 import { requireArea } from '@/server/auth/session';
 import { listAccounts } from '@/server/queries/admin';
-import { PageTitle } from '@/ui/AppShell';
+import { PageTitle, Section } from '@/ui/Page';
 import { InviteForm } from './InviteForm';
 
-export const metadata: Metadata = { title: 'Accounts' };
-
-const ROLE_LABELS: Record<string, string> = {
-  student: 'Student',
-  teacher: 'Teacher',
-  pedagogical_manager: 'Pedagogical manager',
-  admin: 'Admin',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return { title: (await getTranslations('admin'))('title') };
+}
 
 export default async function AdminHome() {
-  await requireArea('admin');
-  const accounts = await listAccounts();
+  const user = await requireArea('admin');
+  const [accounts, t, format] = await Promise.all([
+    listAccounts(),
+    getTranslations('admin'),
+    getFormatter(),
+  ]);
 
   return (
-    <>
-      <PageTitle subtitle="Invite people and see who has which role.">Accounts</PageTitle>
-      <section aria-labelledby="invite-heading" className="mb-10 max-w-md">
-        <h2 id="invite-heading" className="mb-3 text-lg font-semibold">
-          Invite someone
-        </h2>
-        <InviteForm />
-      </section>
-      <section aria-labelledby="accounts-heading">
-        <h2 id="accounts-heading" className="mb-3 text-lg font-semibold">
-          All accounts ({accounts.length})
-        </h2>
+    <div className="flex flex-col gap-10">
+      <PageTitle subtitle={t('subtitle')}>{t('title')}</PageTitle>
+      <div className="max-w-md">
+        <Section id="invite-heading" title={t('inviteTitle')}>
+          <InviteForm />
+        </Section>
+      </div>
+      <Section id="accounts-heading" title={t('allAccounts', { count: accounts.length })}>
         <div className="overflow-x-auto rounded-lg border border-border bg-surface">
-          <table className="w-full text-start text-[0.9375rem]">
+          <table className="w-full text-[0.9375rem]">
             <thead className="bg-surface-secondary text-sm text-muted">
               <tr>
                 <th scope="col" className="px-4 py-2 text-start font-medium">
-                  Name
+                  {t('colName')}
                 </th>
                 <th scope="col" className="px-4 py-2 text-start font-medium">
-                  Roles
+                  {t('colRoles')}
                 </th>
                 <th scope="col" className="px-4 py-2 text-start font-medium">
-                  Created
+                  {t('colCreated')}
                 </th>
               </tr>
             </thead>
@@ -50,17 +46,20 @@ export default async function AdminHome() {
                 <tr key={a.id}>
                   <td className="px-4 py-2">{a.displayName}</td>
                   <td className="px-4 py-2">
-                    {a.roles.map((r) => ROLE_LABELS[r] ?? r).join(', ') || '—'}
+                    {a.roles.map((r) => t(`roles.${r}`)).join(', ') || '—'}
                   </td>
                   <td className="px-4 py-2 tabular-nums">
-                    {new Date(a.createdAt).toLocaleDateString('en-GB')}
+                    {format.dateTime(new Date(a.createdAt), {
+                      dateStyle: 'medium',
+                      timeZone: user.timezone,
+                    })}
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-      </section>
-    </>
+      </Section>
+    </div>
   );
 }

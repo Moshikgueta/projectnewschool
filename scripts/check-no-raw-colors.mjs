@@ -26,6 +26,8 @@ for (const file of walk(SRC)) {
   readFileSync(file, 'utf8')
     .split('\n')
     .forEach((line, i) => {
+      // Comments may talk about "right-to-left"; only code is checked.
+      if (/^\s*(\/\/|\/?\*)/.test(line)) return;
       if (COLOR.test(line))
         problems.push(`${relative(ROOT, file)}:${i + 1}  raw colour: ${line.trim()}`);
       if (/\.tsx$/.test(file) && PHYSICAL.test(line))

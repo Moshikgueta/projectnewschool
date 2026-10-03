@@ -1,13 +1,18 @@
-import type { ButtonHTMLAttributes } from 'react';
+import type { Route } from 'next';
+import Link from 'next/link';
+import type { ButtonHTMLAttributes, ReactNode } from 'react';
 
 type Variant = 'primary' | 'secondary' | 'tertiary';
+
+const BASE =
+  'inline-flex min-h-11 items-center justify-center gap-2 rounded-md px-5 text-[0.9375rem] font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50 aria-disabled:cursor-not-allowed aria-disabled:opacity-50';
 
 const VARIANTS: Record<Variant, string> = {
   primary:
     'bg-primary text-on-brand hover:bg-primary-hover active:bg-primary-active disabled:hover:bg-primary',
   secondary:
-    'bg-primary-light text-primary border border-primary hover:bg-surface-secondary active:bg-border',
-  tertiary: 'text-primary underline-offset-4 hover:underline px-0',
+    'border border-primary bg-primary-light text-primary hover:bg-surface-secondary active:bg-border',
+  tertiary: 'px-0 text-primary underline-offset-4 hover:underline',
 };
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -29,7 +34,7 @@ export function Button({
       {...rest}
       disabled={disabled || loading}
       aria-busy={loading || undefined}
-      className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-md px-5 text-[0.9375rem] font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50 ${VARIANTS[variant]} ${className}`}
+      className={`${BASE} ${VARIANTS[variant]} ${className}`}
     >
       {loading ? (
         <span
@@ -39,5 +44,24 @@ export function Button({
       ) : null}
       {children}
     </button>
+  );
+}
+
+/** A link that looks like a button (navigation, not an action). */
+export function ButtonLink({
+  href,
+  variant = 'primary',
+  className = '',
+  children,
+}: {
+  href: Route;
+  variant?: Variant;
+  className?: string;
+  children: ReactNode;
+}) {
+  return (
+    <Link href={href} className={`${BASE} ${VARIANTS[variant]} ${className}`}>
+      {children}
+    </Link>
   );
 }

@@ -19,5 +19,7 @@ export default async function globalSetup() {
     for (const factor of factors?.factors ?? []) {
       await admin.auth.admin.mfa.deleteFactor({ userId: user.id, id: factor.id });
     }
+    // Fixture accounts browse in English; tests that need Hebrew switch to it.
+    await admin.from('profiles').update({ ui_locale: 'en' }).eq('id', user.id);
   }
 }

@@ -1,77 +1,86 @@
-import Link from 'next/link';
-import type { Route } from 'next';
+import { getTranslations } from 'next-intl/server';
 import type { ReactNode } from 'react';
+import { Suspense } from 'react';
+import { Avatar } from './Card';
+import { LanguageSwitcher } from './LanguageSwitcher';
 import { Logo } from './Logo';
-
-type NavItem = { href: Route; label: string };
+import { NavLinks, type NavItem } from './NavLinks';
 
 type Props = {
   areaLabel: string;
   userName: string;
   nav: NavItem[];
   signOutAction: () => Promise<void>;
+  languageAction: (formData: FormData) => Promise<void>;
+  /** Extra controls in the top bar, e.g. the student's course switcher. */
+  toolbar?: ReactNode;
   children: ReactNode;
 };
 
 /**
- * Phase 1 shell shared by every signed-in area. Phase 2 replaces it with the
- * full design-system shell (side rail on desktop, bottom tab bar on mobile).
+ * The one shell for every signed-in area: side rail on desktop, bottom tab
+ * bar on phones, top bar with account controls. Logical properties only, so
+ * the whole layout mirrors in right-to-left languages.
  */
-export function AppShell({ areaLabel, userName, nav, signOutAction, children }: Props) {
+export async function AppShell({
+  areaLabel,
+  userName,
+  nav,
+  signOutAction,
+  languageAction,
+  toolbar,
+  children,
+}: Props) {
+  const t = await getTranslations('common');
   return (
-    <div className="min-h-dvh">
+    <div className="min-h-dvh md:flex">
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:start-4 focus:top-4 focus:rounded-md focus:bg-surface focus:px-4 focus:py-2"
+        className="sr-only focus:not-sr-only focus:fixed focus:start-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-surface focus:px-4 focus:py-2"
       >
-        Skip to content
+        {t('skipToContent')}
       </a>
-      <header className="border-b border-border bg-surface">
-        <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3">
+
+      <aside className="sticky top-0 hidden h-dvh w-60 shrink-0 flex-col gap-8 border-e border-border bg-surface px-4 py-6 md:flex">
+        <div className="flex flex-col gap-1 px-3">
           <Logo />
           <span className="text-sm text-muted">{areaLabel}</span>
-          <nav aria-label="Main" className="flex flex-wrap gap-4">
-            {nav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-[0.9375rem] text-fg-secondary hover:text-fg"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-          <div className="ms-auto flex items-center gap-4">
-            <span className="text-sm text-fg-secondary">{userName}</span>
-            <form action={signOutAction}>
-              <button type="submit" className="text-sm font-medium text-primary hover:underline">
-                Sign out
-              </button>
-            </form>
-          </div>
         </div>
-      </header>
-      <main id="main" className="mx-auto max-w-5xl px-4 py-8">
-        {children}
-      </main>
-    </div>
-  );
-}
+        <NavLinks items={nav} variant="rail" label={t('mainNav')} />
+      </aside>
 
-export function PageTitle({ children, subtitle }: { children: ReactNode; subtitle?: ReactNode }) {
-  return (
-    <div className="mb-6 flex flex-col gap-1">
-      <h1 className="text-2xl font-semibold tracking-tight text-fg text-balance">{children}</h1>
-      {subtitle ? <p className="text-fg-secondary">{subtitle}</p> : null}
-    </div>
-  );
-}
+      <div className="min-w-0 flex-1">
+        <header className="sticky top-0 z-30 border-b border-border bg-surface">
+          <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-2">
+            <div className="md:hidden">
+              <Logo />
+            </div>
+            {toolbar}
+            <div className="ms-auto flex items-center gap-2">
+              <Suspense>
+                <LanguageSwitcher action={languageAction} />
+              </Suspense>
+              <span className="hidden items-center gap-2 sm:inline-flex">
+                <Avatar name={userName} />
+                <span className="text-sm text-fg-secondary">{userName}</span>
+              </span>
+              <form action={signOutAction}>
+                <button
+                  type="submit"
+                  className="min-h-11 rounded-md px-2 text-sm font-medium text-primary hover:underline"
+                >
+                  {t('signOut')}
+                </button>
+              </form>
+            </div>
+          </div>
+        </header>
+        <main id="main" className="mx-auto max-w-5xl px-4 pt-8 pb-28 md:pb-12">
+          {children}
+        </main>
+      </div>
 
-export function EmptyState({ title, children }: { title: string; children?: ReactNode }) {
-  return (
-    <div className="rounded-lg border border-dashed border-border-strong bg-surface px-6 py-10 text-center">
-      <p className="font-medium text-fg">{title}</p>
-      {children ? <div className="mt-1 text-[0.9375rem] text-muted">{children}</div> : null}
+      <NavLinks items={nav} variant="bar" label={t('mainNav')} />
     </div>
   );
 }

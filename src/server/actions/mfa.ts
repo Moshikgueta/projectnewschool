@@ -2,6 +2,7 @@
 
 import type { Route } from 'next';
 import { redirect } from 'next/navigation';
+import { getTranslations } from 'next-intl/server';
 import { z } from 'zod';
 import { safeNextPath } from '@/domain/auth/access';
 import { requireUser } from '@/server/auth/session';
@@ -29,7 +30,9 @@ export async function startTotpEnrollment(): Promise<EnrollState> {
     factorType: 'totp',
     friendlyName: `Authenticator ${new Date().toISOString().slice(0, 10)}`,
   });
-  if (error || !data) return { status: 'error', message: 'Could not start the setup. Try again.' };
+  if (error || !data) {
+    return { status: 'error', message: (await getTranslations('auth.mfa'))('startFailed') };
+  }
   return {
     status: 'enrolling',
     factorId: data.id,
@@ -38,40 +41,37 @@ export async function startTotpEnrollment(): Promise<EnrollState> {
   };
 }
 
-const verifySchema = z.object({
-  factorId: z.uuid(),
-  code: z.string().regex(/^\d{6}$/, 'Enter the 6-digit code from your authenticator app.'),
-  next: z.string().max(500).optional(),
-});
-
 /** Verify a TOTP code; on success the session is upgraded to aal2. */
 export async function verifyTotp(_prev: VerifyState, formData: FormData): Promise<VerifyState> {
   await requireUser();
-  const parsed = verifySchema.safeParse({
-    factorId: formData.get('factorId'),
-    code: String(formData.get('code') ?? '').replace(/\s/g, ''),
-    next: formData.get('next') ?? undefined,
-  });
+  const t = await getTranslations('auth.mfa');
+  const parsed = z
+    .object({
+      factorId: z.uuid(),
+      code: z.string().regex(/^\d{6}$/, t('codeFormat')),
+      next: z.string().max(500).optional(),
+    })
+    .safeParse({
+      factorId: formData.get('factorId'),
+      code: String(formData.get('code') ?? '').replace(/\s/g, ''),
+      next: formData.get('next') ?? undefined,
+    });
   if (!parsed.success) {
-    return { status: 'error', message: parsed.error.issues[0]?.message ?? 'Check the code.' };
+    return { status: 'error', message: parsed.error.issues[0]?.message ?? t('codeFormat') };
   }
 
   const supabase = await createSupabaseServerClient();
   // The factor must belong to the signed-in user; Supabase checks this too.
   const { data: factors } = await supabase.auth.mfa.listFactors();
   if (!factors?.all.some((f) => f.id === parsed.data.factorId)) {
-    return { status: 'error', message: 'Start the setup again.' };
+    return { status: 'error', message: t('startAgain') };
   }
 
   const { error } = await supabase.auth.mfa.challengeAndVerify({
     factorId: parsed.data.factorId,
     code: parsed.data.code,
   });
-  if (error)
-    return {
-      status: 'error',
-      message: 'That code did not work. Check the time on your phone and try again.',
-    };
+  if (error) return { status: 'error', message: t('codeFailed') };
 
   redirect(safeNextPath(parsed.data.next, '/') as Route); // same-site paths only
 }

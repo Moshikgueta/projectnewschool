@@ -1,6 +1,7 @@
 # Architecture
 
-> Status: **Accepted** (2026-10-03, when Phase 1 was started). Phase 1 is implemented locally.
+> Status: **Accepted** (2026-10-03, when Phase 1 was started). Phases 1 and 2 (except official
+> brand values) are implemented locally.
 > Last updated: 2026-10-03.
 
 ## 1. What we are building
@@ -149,25 +150,28 @@ Vercel-specific APIs, so moving to Cloudflare later is an adapter change.
 Each entry: decision · reason · consequence. ADR-001…012 were accepted when Phase 1 started
 (2026-10-03); ADR-013…017 record decisions made while building Phase 1.
 
-| #       | Decision                                                                                                                                                      | Status   |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| ADR-001 | Next.js App Router + strict TypeScript, server-first rendering                                                                                                | Accepted |
-| ADR-002 | Supabase (Postgres, Auth, Storage) as the platform; RLS on every table                                                                                        | Accepted |
-| ADR-003 | Vercel Pro hosting, Frankfurt; Cloudflare for DNS                                                                                                             | Accepted |
-| ADR-004 | Learning platform does **not** use the staff dashboard's D1 database                                                                                          | Accepted |
-| ADR-005 | Content stored as Zod-validated, versioned JSON blocks rendered by a component registry; authored in-repo files until the CMS exists                          | Accepted |
-| ADR-006 | Grading runs on the server in TypeScript; answer keys never reach the browser; students have no direct write access to graded tables                          | Accepted |
-| ADR-007 | Authorization reads roles from tables via `SECURITY DEFINER` helper functions, not JWT claims, so revoking a role takes effect immediately                    | Accepted |
-| ADR-008 | Access to a course comes from **one** source: an active enrollment in a group of that course (private students = a group of one)                              | Accepted |
-| ADR-009 | UI locale (interface language) and content language/direction are independent; direction is set per block                                                     | Accepted |
-| ADR-010 | Recommendations are rule-based, computed on request behind a provider interface; only dismissals and actions are stored                                       | Accepted |
-| ADR-011 | Single repository, single Next.js app (no monorepo tooling until a second deployable exists)                                                                  | Accepted |
-| ADR-012 | No third-party analytics or tracking scripts; educational analytics come from our own event table                                                             | Accepted |
-| ADR-013 | The session cookie is `HttpOnly`; the browser never calls Supabase directly. All reads and writes go through the server                                       | Accepted |
-| ADR-014 | Content-Security-Policy uses a per-request nonce (`src/proxy.ts`), so every page renders dynamically                                                          | Accepted |
-| ADR-015 | Pedagogical-manager and admin powers require an MFA-verified session (`aal2`), enforced in the database policies, not only in the UI                          | Accepted |
-| ADR-016 | Tooling pins: TypeScript 6.0 (typescript-eslint does not support 7 yet) and ESLint 9 (eslint-plugin-react is not ESLint 10-ready). Revisit when they catch up | Accepted |
-| ADR-017 | Phase 1 screens are English/LTR only; interface translations and RTL arrive with the design system in Phase 2                                                 | Accepted |
+| #       | Decision                                                                                                                                                                                                                                                                        | Status                |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| ADR-001 | Next.js App Router + strict TypeScript, server-first rendering                                                                                                                                                                                                                  | Accepted              |
+| ADR-002 | Supabase (Postgres, Auth, Storage) as the platform; RLS on every table                                                                                                                                                                                                          | Accepted              |
+| ADR-003 | Vercel Pro hosting, Frankfurt; Cloudflare for DNS                                                                                                                                                                                                                               | Accepted              |
+| ADR-004 | Learning platform does **not** use the staff dashboard's D1 database                                                                                                                                                                                                            | Accepted              |
+| ADR-005 | Content stored as Zod-validated, versioned JSON blocks rendered by a component registry; authored in-repo files until the CMS exists                                                                                                                                            | Accepted              |
+| ADR-006 | Grading runs on the server in TypeScript; answer keys never reach the browser; students have no direct write access to graded tables                                                                                                                                            | Accepted              |
+| ADR-007 | Authorization reads roles from tables via `SECURITY DEFINER` helper functions, not JWT claims, so revoking a role takes effect immediately                                                                                                                                      | Accepted              |
+| ADR-008 | Access to a course comes from **one** source: an active enrollment in a group of that course (private students = a group of one)                                                                                                                                                | Accepted              |
+| ADR-009 | UI locale (interface language) and content language/direction are independent; direction is set per block                                                                                                                                                                       | Accepted              |
+| ADR-010 | Recommendations are rule-based, computed on request behind a provider interface; only dismissals and actions are stored                                                                                                                                                         | Accepted              |
+| ADR-011 | Single repository, single Next.js app (no monorepo tooling until a second deployable exists)                                                                                                                                                                                    | Accepted              |
+| ADR-012 | No third-party analytics or tracking scripts; educational analytics come from our own event table                                                                                                                                                                               | Accepted              |
+| ADR-013 | The session cookie is `HttpOnly`; the browser never calls Supabase directly. All reads and writes go through the server                                                                                                                                                         | Accepted              |
+| ADR-014 | Content-Security-Policy uses a per-request nonce (`src/proxy.ts`), so every page renders dynamically                                                                                                                                                                            | Accepted              |
+| ADR-015 | Pedagogical-manager and admin powers require an MFA-verified session (`aal2`), enforced in the database policies, not only in the UI                                                                                                                                            | Accepted              |
+| ADR-016 | Tooling pins: TypeScript 6.0 (typescript-eslint does not support 7 yet) and ESLint 9 (eslint-plugin-react is not ESLint 10-ready). Revisit when they catch up                                                                                                                   | Accepted              |
+| ADR-017 | Phase 1 screens were English/LTR only                                                                                                                                                                                                                                           | Superseded by ADR-018 |
+| ADR-018 | Interface language without locale URLs: the profile's `ui_locale` (signed in), else a cookie, else `Accept-Language`, else Hebrew. Hebrew and English at launch; `dir` follows the interface language; message keys are typed and both languages must have the same keys (test) | Accepted              |
+| ADR-019 | Course language names come from `Intl.DisplayNames` in the interface language, not from translated database rows; content inside UI sentences is isolated with Unicode isolates or `dir`/`<bdi>`                                                                                | Accepted              |
+| ADR-020 | One shell for every area (desktop side rail, mobile bottom tab bar); components built on React Aria where behaviour is non-trivial (dialog, tabs); one icon set (Phosphor)                                                                                                      | Accepted              |
 
 ADR-006 in more detail, because it's the least obvious: if exercises were checked in the
 browser, every answer key would be downloadable, and a student could write

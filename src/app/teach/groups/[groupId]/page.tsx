@@ -1,11 +1,10 @@
-import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { getTranslations } from 'next-intl/server';
 import { z } from 'zod';
 import { requireArea } from '@/server/auth/session';
 import { getGroup } from '@/server/queries/teacher';
-import { EmptyState, PageTitle } from '@/ui/AppShell';
-
-export const metadata: Metadata = { title: 'Group' };
+import { Avatar, Badge } from '@/ui/Card';
+import { EmptyState, PageTitle, Section } from '@/ui/Page';
 
 export default async function GroupPage({ params }: { params: Promise<{ groupId: string }> }) {
   await requireArea('teach');
@@ -17,25 +16,29 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
   const group = await getGroup(id.data);
   if (!group) notFound();
 
+  const [t, tg] = await Promise.all([
+    getTranslations('teach.group'),
+    getTranslations('teach.groups'),
+  ]);
   return (
     <>
-      <PageTitle subtitle={group.courseTitle ?? 'Course not published yet'}>{group.name}</PageTitle>
+      <PageTitle subtitle={group.courseTitle ?? tg('unpublished')}>{group.name}</PageTitle>
       {group.students.length === 0 ? (
-        <EmptyState title="No students in this group yet" />
+        <EmptyState title={t('empty')} />
       ) : (
-        <section aria-labelledby="students-heading">
-          <h2 id="students-heading" className="mb-3 text-lg font-semibold">
-            Students
-          </h2>
+        <Section id="students-heading" title={t('students')}>
           <ul className="divide-y divide-border rounded-lg border border-border bg-surface">
             {group.students.map((s) => (
-              <li key={s.id} className="flex items-center justify-between px-4 py-3">
-                <span>{s.displayName}</span>
-                <span className="text-sm text-muted">{s.status}</span>
+              <li key={s.id} className="flex items-center gap-3 px-4 py-3">
+                <Avatar name={s.displayName} />
+                <span className="flex-1">{s.displayName}</span>
+                <Badge tone={s.status === 'active' ? 'success' : 'neutral'}>
+                  {t(`status.${s.status}`)}
+                </Badge>
               </li>
             ))}
           </ul>
-        </section>
+        </Section>
       )}
     </>
   );

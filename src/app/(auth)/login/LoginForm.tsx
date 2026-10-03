@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useActionState } from 'react';
 import { signIn, type FormState } from '@/server/actions/auth';
 import { Alert } from '@/ui/Alert';
@@ -9,6 +10,7 @@ import { TextField } from '@/ui/TextField';
 const initial: FormState = { status: 'idle' };
 
 export function LoginForm({ next }: { next: string }) {
+  const t = useTranslations('auth.signIn');
   const [state, action, pending] = useActionState(signIn, initial);
   return (
     <form action={action} className="flex flex-col gap-4" noValidate>
@@ -18,7 +20,8 @@ export function LoginForm({ next }: { next: string }) {
         id="email"
         name="email"
         type="email"
-        label="Email"
+        dir="ltr"
+        label={t('email')}
         autoComplete="username"
         required
       />
@@ -26,12 +29,13 @@ export function LoginForm({ next }: { next: string }) {
         id="password"
         name="password"
         type="password"
-        label="Password"
+        dir="ltr"
+        label={t('password')}
         autoComplete="current-password"
         required
       />
       <Button type="submit" loading={pending}>
-        Sign in
+        {t('submit')}
       </Button>
     </form>
   );

@@ -1,5 +1,8 @@
 import type { Metadata, Viewport } from 'next';
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale } from 'next-intl/server';
 import type { ReactNode } from 'react';
+import { directionOf } from '@/domain/i18n/locales';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -15,12 +18,15 @@ export const viewport: Viewport = { width: 'device-width', initialScale: 1 };
 // nonce, which the policy blocks.
 export const dynamic = 'force-dynamic';
 
-// UI language and direction become per-user in Phase 2 (next-intl, he + en).
-// Content direction is set per block, independently (ADR-009).
-export default function RootLayout({ children }: { children: ReactNode }) {
+// The interface language and direction follow the user (src/i18n/request.ts).
+// Course content sets its own language and direction per block (ADR-009).
+export default async function RootLayout({ children }: { children: ReactNode }) {
+  const locale = await getLocale();
   return (
-    <html lang="en" dir="ltr">
-      <body>{children}</body>
+    <html lang={locale} dir={directionOf(locale)}>
+      <body>
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      </body>
     </html>
   );
 }

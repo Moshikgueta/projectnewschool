@@ -1,11 +1,7 @@
 import type { ReactNode } from 'react';
-import { Logo } from '@/ui/Logo';
+import { setInterfaceLanguage } from '@/server/actions/preferences';
+import { AuthFrame } from '@/ui/AuthFrame';
 
 export default function AuthLayout({ children }: { children: ReactNode }) {
-  return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-sm flex-col justify-center gap-8 px-4 py-10">
-      <Logo />
-      {children}
-    </main>
-  );
+  return <AuthFrame languageAction={setInterfaceLanguage}>{children}</AuthFrame>;
 }

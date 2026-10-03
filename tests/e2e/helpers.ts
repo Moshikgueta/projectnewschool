@@ -6,6 +6,7 @@ export const PASSWORD = 'Local-dev-password-1'; // supabase/seed.sql — local o
 export const USERS = {
   studentA: 'student.a@example.com',
   studentB: 'student.b@example.com',
+  studentC: 'student.c@example.com',
   teacherX: 'teacher.x@example.com',
   teacherY: 'teacher.y@example.com',
   manager: 'manager@example.com',

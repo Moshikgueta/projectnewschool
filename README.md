@@ -6,9 +6,9 @@ recommendations and progress. It connects **before → during → after class** 
 school's **Cycles** methodology, and gives teachers and pedagogical managers the tools
 to run it.
 
-> **Status: Phase 1 (foundations) implemented locally.** Sign-in, roles, the database with
-> Row Level Security, and the student/teacher/manager/admin areas exist with minimal
-> screens; course content, notebook and workbook come in later phases
+> **Status: Phases 1–2 implemented locally.** Sign-in, roles, the database with Row Level
+> Security, a Hebrew/English (RTL-ready) interface, the design-system components and the
+> student dashboard on real data. Notebook, workbook and exercises come in later phases
 > ([ROADMAP.md](docs/ROADMAP.md)). Brand colours and logo are **placeholders** until the
 > official files arrive ([brand/README.md](brand/README.md)).
 >

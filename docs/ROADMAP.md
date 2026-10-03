@@ -1,6 +1,7 @@
 # Roadmap
 
-> Status: **Phase 1 implemented locally (2026-10-03); its exit is reached once CI runs green
+> Status: **Phases 1 and 2 implemented locally (2026-10-03).** Phase 2 waits only for the
+> official brand values. Phase 1's exit is reached once CI runs green
 > on GitHub.** Phase 0 ownership items are still open. Phases don't start until the previous
 > phase's exit criteria are met. In particular, **Phase 2 doesn't start until authentication and
 > authorization (Phase 1) are proven by tests.**
@@ -64,7 +65,21 @@ Planned scope:
 - **Exit:** every authorization test in SECURITY.md §3 passes in CI; a student
   can log in and see _only_ an empty "my courses" list for their enrollment.
 
-### Phase 2 — Student dashboard and design system
+### Phase 2 — Student dashboard and design system _(implemented locally, brand values pending)_
+
+Status 2026-10-03:
+
+- [x] Hebrew + English interface, right-to-left layout, language switch saved on the profile
+- [x] One app shell for every area: desktop side rail, mobile bottom tab bar, skip link
+- [x] Components: buttons (3 variants, all states), fields, cards, badges, language chip, avatar, progress bar, stats, alerts, empty/error/loading states, dialog and tabs (React Aria), Phosphor icons
+- [x] `/design-system` reference page (local/preview; staging/production only for managers and admins with MFA)
+- [x] Student dashboard on real data: greeting in the student's time zone, continue where you left off, My Course cards with counts, course switcher, recommendations (rules: teacher assignments, unfinished work), recent activity, calm progress (activities completed, days practised against a weekly goal of 3, current cycle)
+- [x] Placeholder pages for notebook, workbook, practice and vocabulary
+- [x] Tests: 34 unit, 61 pgTAP, 10 API, 21 end-to-end (incl. Hebrew/RTL, axe in both directions, phone layout)
+- [ ] Official brand values in `src/ui/tokens.css` and the official logo in `<Logo />` (blocked on brand files)
+- [ ] Minimal manager screens for groups and enrollment (needed before the pilot)
+
+Planned scope:
 
 - Design-system tokens from official brand values, core components, `/design-system`.
 - App shell (desktop rail, mobile bottom bar), RTL/LTR, he + en UI messages.

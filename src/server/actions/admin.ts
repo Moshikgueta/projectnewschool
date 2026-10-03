@@ -1,6 +1,7 @@
 'use server';
 
 import { revalidatePath } from 'next/cache';
+import { getTranslations } from 'next-intl/server';
 import { z } from 'zod';
 import { ROLES } from '@/domain/auth/access';
 import { requireArea } from '@/server/auth/session';
@@ -11,15 +12,6 @@ import { createSupabaseServerClient } from '@/server/supabase/server';
 export type InviteState =
   { status: 'idle' } | { status: 'error'; message: string } | { status: 'invited'; email: string };
 
-const inviteSchema = z.object({
-  email: z
-    .email('Enter a valid email address.')
-    .max(254)
-    .transform((v) => v.trim().toLowerCase()),
-  displayName: z.string().trim().min(1, 'Enter a name.').max(120),
-  role: z.enum(ROLES),
-});
-
 /**
  * Invite a person and give them one role. Only an MFA-verified admin may do
  * this: the area guard checks first, and the role grant is written with the
@@ -28,13 +20,22 @@ const inviteSchema = z.object({
  */
 export async function inviteUser(_prev: InviteState, formData: FormData): Promise<InviteState> {
   const admin = await requireArea('admin');
+  const t = await getTranslations('admin.errors');
+  const inviteSchema = z.object({
+    email: z
+      .email(t('invalidEmail'))
+      .max(254)
+      .transform((v) => v.trim().toLowerCase()),
+    displayName: z.string().trim().min(1, t('nameRequired')).max(120),
+    role: z.enum(ROLES),
+  });
   const parsed = inviteSchema.safeParse({
     email: formData.get('email'),
     displayName: formData.get('displayName'),
     role: formData.get('role'),
   });
   if (!parsed.success) {
-    return { status: 'error', message: parsed.error.issues[0]?.message ?? 'Check the form.' };
+    return { status: 'error', message: parsed.error.issues[0]?.message ?? t('sendFailed') };
   }
   const { email, displayName, role } = parsed.data;
 
@@ -49,10 +50,7 @@ export async function inviteUser(_prev: InviteState, formData: FormData): Promis
   if (inviteError || !invited.user) {
     return {
       status: 'error',
-      message:
-        inviteError?.code === 'email_exists'
-          ? 'An account with that email already exists.'
-          : 'The invitation could not be sent.',
+      message: inviteError?.code === 'email_exists' ? t('exists') : t('sendFailed'),
     };
   }
 
@@ -65,7 +63,7 @@ export async function inviteUser(_prev: InviteState, formData: FormData): Promis
     await privileged.auth.admin.deleteUser(invited.user.id);
     return {
       status: 'error',
-      message: 'The role could not be assigned, so the invitation was withdrawn.',
+      message: t('roleFailed'),
     };
   }
 

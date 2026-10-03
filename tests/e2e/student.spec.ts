@@ -8,18 +8,19 @@ test.describe('student journey', () => {
   }) => {
     await signIn(page, USERS.studentA);
     await expect(page).toHaveURL(/\/learn$/);
-    await expect(page.getByRole('heading', { name: 'My courses' })).toBeVisible();
-
-    const courses = page.getByRole('list', { name: 'Courses' });
-    await expect(courses.getByRole('heading', { name: 'Español básico (fixture)' })).toBeVisible();
-    // Enrolled in a draft course and not enrolled in French: neither appears.
-    await expect(courses.getByRole('listitem')).toHaveCount(1);
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText(
+      /^Good (morning|afternoon|evening), Daniel$/,
+    );
+    await expect(page.getByText('Spanish Level 1 · Tuesday (group X)')).toBeVisible();
+    // Enrolled in a draft course and not enrolled in French: neither appears,
+    // so there is no course switcher either.
+    await expect(page.getByRole('combobox', { name: 'Course' })).toHaveCount(0);
     await expect(page.getByText('Español nivel 2')).toHaveCount(0);
     await expect(page.getByText('Français')).toHaveCount(0);
 
     // Session survives a reload ("student returns").
     await page.reload();
-    await expect(page.getByRole('heading', { name: 'My courses' })).toBeVisible();
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('Daniel');
 
     await signOut(page);
     await page.goto('/learn');

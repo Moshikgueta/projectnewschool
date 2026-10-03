@@ -1,6 +1,7 @@
 # New School design system
 
-> Status: **Brand audit complete; brand tokens BLOCKED on official assets.**
+> Status: **Components, shell, RTL and the `/design-system` page are implemented (Phase 2);
+> brand token VALUES are still BLOCKED on official assets.**
 > Rule for this project: the platform must _be_ New School, not be inspired by it.
 > No colour, logo treatment or typeface is invented here. Where the official value isn't
 > available yet, this document says **TBD** and names exactly what is missing.
