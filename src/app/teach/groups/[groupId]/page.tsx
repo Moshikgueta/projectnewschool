@@ -1,9 +1,11 @@
+import type { Route } from 'next';
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { z } from 'zod';
 import { requireArea } from '@/server/auth/session';
+import { listGroupNotebook } from '@/server/queries/notebook';
 import { getGroup } from '@/server/queries/teacher';
-import { Avatar, Badge } from '@/ui/Card';
+import { Avatar, Badge, CardLink } from '@/ui/Card';
 import { EmptyState, PageTitle, Section } from '@/ui/Page';
 
 export default async function GroupPage({ params }: { params: Promise<{ groupId: string }> }) {
@@ -16,9 +18,11 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
   const group = await getGroup(id.data);
   if (!group) notFound();
 
-  const [t, tg] = await Promise.all([
+  const [t, tg, tn, notebook] = await Promise.all([
     getTranslations('teach.group'),
     getTranslations('teach.groups'),
+    getTranslations('notebook'),
+    listGroupNotebook(group.courseId, group.id),
   ]);
   return (
     <>
@@ -40,6 +44,30 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
           </ul>
         </Section>
       )}
+      {notebook.length > 0 ? (
+        <div className="mt-8 flex flex-col gap-6">
+          {notebook.map((cycle, i) => (
+            <Section
+              key={cycle.cycle}
+              id={`notebook-${i}`}
+              title={`${tn('teacher.notebook')}: ${cycle.cycle}`}
+              action={
+                cycle.active ? <Badge tone="brand">{tn('list.activeCycle')}</Badge> : undefined
+              }
+            >
+              <ul className="grid gap-3 sm:grid-cols-2">
+                {cycle.sections.map((s) => (
+                  <li key={s.id}>
+                    <CardLink href={`/teach/groups/${group.id}/notebook/${s.id}` as Route}>
+                      <span className="font-medium text-fg">{s.title}</span>
+                    </CardLink>
+                  </li>
+                ))}
+              </ul>
+            </Section>
+          ))}
+        </div>
+      ) : null}
     </>
   );
 }

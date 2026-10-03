@@ -81,6 +81,7 @@ Enums: `content_status` = `draft | in_review | published | archived`;
 | `attempts`                | id, user_id, activity_id, **course_id**, assignment_id, attempt_no, status (`in_progress`/`submitted`), state jsonb (resume position, drafts), score, max_score, started_at, updated_at, submitted_at | "Continue where you left off". `course_id` is denormalised so RLS checks don't need joins.                                                                                                                                                                |
 | `responses`               | id, attempt_id, item_id, answer jsonb, is_correct, score, feedback_code, try_no, created_at                                                                                                           | **Append-only**: every check is a row, which is what makes "common errors" analysis possible.                                                                                                                                                             |
 | `section_progress`        | user_id, book_section_id, status, last_block_id, updated_at, completed_at                                                                                                                             | Notebook/workbook reading position.                                                                                                                                                                                                                       |
+| `block_responses`         | user_id, section_id, **course_id**, block_id, item_index, answer (≤ 2000), updated_at                                                                                                                 | Optional, ungraded in-class answers in the notebook (decision C2). Own-row writes (ADR-023).                                                                                                                                                              |
 | `vocab_review_state`      | user_id, vocabulary_item_id, box (Leitner 1–5), due_at, last_reviewed_at, correct_streak, lapses                                                                                                      | Spaced review scheduling.                                                                                                                                                                                                                                 |
 | `learning_events`         | id bigint, user_id, type, occurred_at, course_id, cycle_id, activity_id, section_id, payload jsonb                                                                                                    | Append-only history: `activity_started`, `activity_completed`, `answer_submitted`, `section_completed`, `vocab_reviewed`, `assignment_completed`, `login`. Source for progress, weekly activity, streaks and analytics. Partition by month once it grows. |
 | `recommendation_feedback` | user_id, rec_key, action (`dismissed`/`opened`/`completed`), at                                                                                                                                       | Recommendations themselves are computed, not stored (ADR-010).                                                                                                                                                                                            |
@@ -138,24 +139,26 @@ Helper functions (`SECURITY DEFINER`, `STABLE`, `search_path = ''`), called as
 
 Policies (read = `SELECT`; writes are listed separately):
 
-| Table                                                        | Student                                         | Teacher                                      | Ped. manager            | Admin              |
-| ------------------------------------------------------------ | ----------------------------------------------- | -------------------------------------------- | ----------------------- | ------------------ |
-| profiles                                                     | own row; display name of their groups' teachers | students in their groups                     | all                     | all (account mgmt) |
-| user_roles                                                   | own                                             | —                                            | read                    | read/write         |
-| catalog tables                                               | `published` + `can_view_course`                 | `published` + `can_view_course`              | all incl. drafts, write | —                  |
-| section_teacher_notes                                        | **none**                                        | `can_view_course`                            | all, write              | —                  |
-| activity_item_keys                                           | **none**                                        | `can_view_course`                            | all, write              | —                  |
-| groups / enrollments / group_cycles                          | own groups                                      | groups they teach; may update `group_cycles` | all, write              | read               |
-| assignments                                                  | targeted at them                                | their groups, write                          | all                     | —                  |
-| attempts / responses / section_progress / vocab_review_state | **own rows** (read only)                        | `teaches_student_in_course` (read)           | read                    | —                  |
-| learning_events                                              | own (read)                                      | `teaches_student_in_course` (read)           | read                    | —                  |
-| audit_log                                                    | —                                               | —                                            | —                       | read               |
+| Table                                     | Student                                         | Teacher                                      | Ped. manager            | Admin              |
+| ----------------------------------------- | ----------------------------------------------- | -------------------------------------------- | ----------------------- | ------------------ |
+| profiles                                  | own row; display name of their groups' teachers | students in their groups                     | all                     | all (account mgmt) |
+| user_roles                                | own                                             | —                                            | read                    | read/write         |
+| catalog tables                            | `published` + `can_view_course`                 | `published` + `can_view_course`              | all incl. drafts, write | —                  |
+| section_teacher_notes                     | **none**                                        | `can_view_course`                            | all, write              | —                  |
+| activity_item_keys                        | **none**                                        | `can_view_course`                            | all, write              | —                  |
+| groups / enrollments / group_cycles       | own groups                                      | groups they teach; may update `group_cycles` | all, write              | read               |
+| assignments                               | targeted at them                                | their groups, write                          | all                     | —                  |
+| attempts / responses / vocab_review_state | **own rows** (read only)                        | `teaches_student_in_course` (read)           | read                    | —                  |
+| block_responses / section_progress        | **own rows** (read, own-row write, ADR-023)     | `teaches_student_in_course` (read)           | read                    | —                  |
+| learning_events                           | own (read)                                      | `teaches_student_in_course` (read)           | read                    | —                  |
+| audit_log                                 | —                                               | —                                            | —                       | read               |
 
 Learner-record **writes** happen only through Server Actions using the privileged module
 (ADR-006): there is no `INSERT/UPDATE` policy for `authenticated` on graded tables.
-Low-risk, ungraded state (`section_progress`, `attempts.state` drafts) may get narrow
-own-row `INSERT/UPDATE` policies if that proves simpler. That decision is made in
-Phase 4 and recorded as an ADR.
+Low-risk, ungraded state has narrow own-row policies instead (ADR-023):
+`block_responses` (insert, update of `answer` only, delete) and `section_progress`
+(insert, update of `status`, `last_block_id` and `completed_at`), each limited to
+sections the student can read. `attempts.state` drafts are decided in Phase 4.
 
 Note the admin column: **admin is not a superset of everything.** Admin manages accounts
 and settings; seeing student learning data requires the pedagogical role (a person can

@@ -9,14 +9,17 @@ export function CourseSwitcher({
   courses,
   current,
   submitLabel,
+  action = '/learn',
 }: {
   label: string;
   courses: { id: string; title: string }[];
   current: string;
   submitLabel: string;
+  /** The page that shows the chosen course. */
+  action?: string;
 }) {
   return (
-    <form method="get" action="/learn" className="flex items-center gap-2">
+    <form method="get" action={action} className="flex items-center gap-2">
       <label htmlFor="course" className="text-sm text-muted">
         {label}
       </label>

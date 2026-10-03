@@ -27,13 +27,13 @@ select is(
 
 select is(
   (select array_agg(t order by t)
-   from unnest(array['attempts', 'responses', 'section_progress', 'vocab_review_state',
+   from unnest(array['attempts', 'responses', 'vocab_review_state',
                      'learning_events', 'recommendation_feedback', 'audit_log']) as t
    where has_table_privilege('authenticated', format('public.%I', t), 'INSERT')
       or has_table_privilege('authenticated', format('public.%I', t), 'UPDATE')
       or has_table_privilege('authenticated', format('public.%I', t), 'DELETE')),
   null,
-  'signed-in users cannot write learner records or the audit log directly'
+  'signed-in users cannot write graded learner records or the audit log directly (reading position and in-class answers are own-row writes, tested in 04)'
 );
 
 select ok(

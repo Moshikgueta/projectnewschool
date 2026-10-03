@@ -87,8 +87,26 @@ insert into public.books (id, course_id, kind, title) values
 insert into public.book_sections (id, book_id, course_id, cycle_id, position, title, blocks, phase, status) values
   ('60000000-0000-4000-8000-000000000001', '50000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001',
    '40000000-0000-4000-8000-000000000001', 1, '¡Hola!',
-   '[{"id":"b1","type":"heading","level":2,"text":"¡Hola! ¿Cómo te llamas?","lang":"es"},
-     {"id":"b2","type":"text","text":"בפרק הזה נלמד להציג את עצמנו.","lang":"he"}]', 'during_class', 'published'),
+   $json$[
+     {"id":"b1","type":"heading","level":2,"text":"¡Hola! ¿Cómo te llamas?","lang":"es"},
+     {"id":"b2","type":"text","text":"בפרק הזה נלמד **להציג את עצמנו** ולשאול אחרים לשמם.","lang":"he"},
+     {"id":"skills","type":"cycleOverview","lang":"he","skills":[
+       {"name":"להציג את עצמי","description":"לומר שם, גיל ומאיפה אני."},
+       {"name":"לשאול שאלות","description":"לשאול מישהו לשמו."}]},
+     {"id":"dialogue","type":"dialogue","lang":"es","lines":[
+       {"speaker":"Ana","text":"¡Hola! Me llamo Ana. ¿Cómo te llamas?"},
+       {"speaker":"Leo","text":"Me llamo Leo. ¡Mucho gusto!"}]},
+     {"id":"vocab","type":"vocabulary","lang":"es","glossLang":"he","title":"Palabras","items":[
+       {"term":"hola","gloss":"שלום"},{"term":"me llamo","gloss":"קוראים לי"},{"term":"mucho gusto","gloss":"נעים מאוד"}],
+       "link":"https://quizlet.com/"},
+     {"id":"tip","type":"callout","tone":"culture","lang":"he","title":"תרבות","text":"בספרד נוהגים לתת **שתי נשיקות** על הלחיים כשנפגשים."},
+     {"id":"frame","type":"sentenceFrame","lang":"es","prompt":"Preséntate.","frame":"Me llamo ___ y soy de ___.","example":"Me llamo Ana y soy de Haifa."},
+     {"id":"questions","type":"discussionQuestions","lang":"es","items":[
+       {"question":"¿Cómo te llamas?","frame":"Me llamo ___."},
+       {"question":"¿De dónde eres?","frame":"Soy de ___."}]},
+     {"id":"tutor","type":"aiTutorPrompt","lang":"es","title":"Practica con Mori","message":"Hola Mori. Quiero practicar cómo presentarme en español, nivel 1."},
+     {"id":"reflect","type":"reflection","lang":"he","prompt":"מה היה הכי קל בשיעור הזה?"}
+   ]$json$, 'during_class', 'published'),
   ('60000000-0000-4000-8000-000000000002', '50000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001',
    '40000000-0000-4000-8000-000000000002', 1, 'La comida (draft)', '[]', 'during_class', 'draft'),
   ('60000000-0000-4000-8000-000000000003', '50000000-0000-4000-8000-000000000003', '30000000-0000-4000-8000-000000000002',
@@ -100,7 +118,11 @@ insert into public.book_sections (id, book_id, course_id, cycle_id, position, ti
 
 insert into public.section_teacher_notes (section_id, course_id, blocks) values
   ('60000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001',
-   '[{"id":"t1","type":"teacherTip","text":"Start with a name circle before opening the notebook."}]');
+   $json$[
+     {"id":"t0","anchor":null,"text":"Start with a name circle before opening the notebook.","minutes":5},
+     {"id":"t1","anchor":"dialogue","text":"Read the dialogue twice, then have pairs swap names."},
+     {"id":"t2","anchor":"questions","text":"Model one answer aloud before pairs ask each other.","minutes":10}
+   ]$json$);
 
 insert into public.activities (id, course_id, cycle_id, slug, title, phase, scoring_mode, est_minutes, status) values
   ('70000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001', '40000000-0000-4000-8000-000000000001',
@@ -191,6 +213,11 @@ insert into public.responses (attempt_id, user_id, course_id, item_id, answer, i
 insert into public.section_progress (user_id, book_section_id, course_id, status, last_block_id) values
   ('00000000-0000-4000-8000-0000000000a1', '60000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001', 'in_progress', 'b2'),
   ('00000000-0000-4000-8000-0000000000a2', '60000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001', 'completed', 'b2');
+
+-- Student B answered one in-class question (visible to teacher X, not to classmates).
+insert into public.block_responses (user_id, section_id, course_id, block_id, item_index, answer) values
+  ('00000000-0000-4000-8000-0000000000a2', '60000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001',
+   'questions', 0, 'Me llamo Bea.');
 
 insert into public.vocab_review_state (user_id, vocabulary_item_id, course_id, box) values
   ('00000000-0000-4000-8000-0000000000a1', '92000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001', 2),

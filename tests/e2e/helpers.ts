@@ -21,6 +21,12 @@ export const IDS = {
   attemptOfB: 'c0000000-0000-4000-8000-000000000002',
   groupX: 'a0000000-0000-4000-8000-000000000001',
   groupY: 'a0000000-0000-4000-8000-000000000002',
+  /** Spanish L1, published, group X's active cycle. */
+  sectionHola: '60000000-0000-4000-8000-000000000001',
+  /** Spanish L1, draft. */
+  sectionDraft: '60000000-0000-4000-8000-000000000002',
+  /** French L1, published. */
+  sectionBonjour: '60000000-0000-4000-8000-000000000003',
 } as const;
 
 export async function signIn(page: Page, email: string, password = PASSWORD) {

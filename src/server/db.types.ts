@@ -217,15 +217,40 @@ isOneToOne: false
                   Relationships: [
                     
                   ]
-                },"book_sections": {
+                },"block_responses": {
                   Row: {
-                    "blocks": NonNullable<Json>,"book_id": string,"course_id": string,"created_at": string,"cycle_id": string,"id": string,"phase": Database["public"]['Enums']["learning_phase"] | null,"position": number,"schema_version": number,"status": Database["public"]['Enums']["content_status"],"title": string,"updated_at": string
+                    "answer": string,"block_id": string,"course_id": string,"item_index": number,"section_id": string,"updated_at": string,"user_id": string
                   }
                   Insert: {
-                    "blocks"?: NonNullable<Json>,"book_id": string,"course_id": string,"created_at"?: string,"cycle_id": string,"id"?: string,"phase"?: Database["public"]['Enums']["learning_phase"] | null,"position"?: number,"schema_version"?: number,"status"?: Database["public"]['Enums']["content_status"],"title": string,"updated_at"?: string
+                    "answer": string,"block_id": string,"course_id": string,"item_index"?: number,"section_id": string,"updated_at"?: string,"user_id": string
                   }
                   Update: {
-                    "blocks"?: NonNullable<Json>,"book_id"?: string,"course_id"?: string,"created_at"?: string,"cycle_id"?: string,"id"?: string,"phase"?: Database["public"]['Enums']["learning_phase"] | null,"position"?: number,"schema_version"?: number,"status"?: Database["public"]['Enums']["content_status"],"title"?: string,"updated_at"?: string
+                    "answer"?: string,"block_id"?: string,"course_id"?: string,"item_index"?: number,"section_id"?: string,"updated_at"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "block_responses_section_id_course_id_fkey"
+      columns: ["section_id","course_id"]
+isOneToOne: false
+      referencedRelation: "book_sections"
+      referencedColumns: ["id","course_id"]
+    },{
+      foreignKeyName: "block_responses_user_id_fkey"
+      columns: ["user_id"]
+isOneToOne: false
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"book_sections": {
+                  Row: {
+                    "blocks": NonNullable<Json>,"book_id": string,"course_id": string,"created_at": string,"cycle_id": string,"id": string,"phase": Database["public"]['Enums']["learning_phase"] | null,"position": number,"schema_version": number,"slug": string | null,"status": Database["public"]['Enums']["content_status"],"title": string,"updated_at": string
+                  }
+                  Insert: {
+                    "blocks"?: NonNullable<Json>,"book_id": string,"course_id": string,"created_at"?: string,"cycle_id": string,"id"?: string,"phase"?: Database["public"]['Enums']["learning_phase"] | null,"position"?: number,"schema_version"?: number,"slug"?: string | null,"status"?: Database["public"]['Enums']["content_status"],"title": string,"updated_at"?: string
+                  }
+                  Update: {
+                    "blocks"?: NonNullable<Json>,"book_id"?: string,"course_id"?: string,"created_at"?: string,"cycle_id"?: string,"id"?: string,"phase"?: Database["public"]['Enums']["learning_phase"] | null,"position"?: number,"schema_version"?: number,"slug"?: string | null,"status"?: Database["public"]['Enums']["content_status"],"title"?: string,"updated_at"?: string
                   }
                   Relationships: [
                     {
@@ -263,13 +288,13 @@ isOneToOne: false
                   ]
                 },"courses": {
                   Row: {
-                    "created_at": string,"description": string,"id": string,"instruction_locale": string,"level_id": string,"published_at": string | null,"slug": string,"status": Database["public"]['Enums']["content_status"],"title": string,"updated_at": string
+                    "ai_tutor_url": string | null,"created_at": string,"description": string,"id": string,"instruction_locale": string,"level_id": string,"published_at": string | null,"slug": string,"status": Database["public"]['Enums']["content_status"],"title": string,"updated_at": string
                   }
                   Insert: {
-                    "created_at"?: string,"description"?: string,"id"?: string,"instruction_locale"?: string,"level_id": string,"published_at"?: string | null,"slug": string,"status"?: Database["public"]['Enums']["content_status"],"title": string,"updated_at"?: string
+                    "ai_tutor_url"?: string | null,"created_at"?: string,"description"?: string,"id"?: string,"instruction_locale"?: string,"level_id": string,"published_at"?: string | null,"slug": string,"status"?: Database["public"]['Enums']["content_status"],"title": string,"updated_at"?: string
                   }
                   Update: {
-                    "created_at"?: string,"description"?: string,"id"?: string,"instruction_locale"?: string,"level_id"?: string,"published_at"?: string | null,"slug"?: string,"status"?: Database["public"]['Enums']["content_status"],"title"?: string,"updated_at"?: string
+                    "ai_tutor_url"?: string | null,"created_at"?: string,"description"?: string,"id"?: string,"instruction_locale"?: string,"level_id"?: string,"published_at"?: string | null,"slug"?: string,"status"?: Database["public"]['Enums']["content_status"],"title"?: string,"updated_at"?: string
                   }
                   Relationships: [
                     {
@@ -715,13 +740,13 @@ isOneToOne: false
                   ]
                 },"vocabulary_sets": {
                   Row: {
-                    "course_id": string,"created_at": string,"cycle_id": string,"id": string,"status": Database["public"]['Enums']["content_status"],"title": string
+                    "course_id": string,"created_at": string,"cycle_id": string,"id": string,"slug": string | null,"status": Database["public"]['Enums']["content_status"],"title": string
                   }
                   Insert: {
-                    "course_id": string,"created_at"?: string,"cycle_id": string,"id"?: string,"status"?: Database["public"]['Enums']["content_status"],"title": string
+                    "course_id": string,"created_at"?: string,"cycle_id": string,"id"?: string,"slug"?: string | null,"status"?: Database["public"]['Enums']["content_status"],"title": string
                   }
                   Update: {
-                    "course_id"?: string,"created_at"?: string,"cycle_id"?: string,"id"?: string,"status"?: Database["public"]['Enums']["content_status"],"title"?: string
+                    "course_id"?: string,"created_at"?: string,"cycle_id"?: string,"id"?: string,"slug"?: string | null,"status"?: Database["public"]['Enums']["content_status"],"title"?: string
                   }
                   Relationships: [
                     {

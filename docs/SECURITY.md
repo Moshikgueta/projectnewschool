@@ -112,7 +112,12 @@ branch protection (needs the GitHub organization); storage policies (Phase 3);
   cookies are `SameSite=Lax`; any custom Route Handler that mutates checks origin
   explicitly.
 - ☐ **IDOR:** ids are UUIDs (not enumerable), but security never relies on that. Every
-  lookup goes through RLS with the caller's session.
+  lookup goes through RLS with the caller's session. Covered by tests: pgTAP proves
+  that a student can't read or write another student's attempts, notebook answers or
+  progress, and E2E proves that pages for other students' records, other courses'
+  sections, drafts and other groups return the same 404 as a missing page.
+  Server Actions take ids only as references that RLS re-checks; the acting user
+  always comes from the verified session, never from the form.
 
 ### HTTP security headers — Phase 1
 

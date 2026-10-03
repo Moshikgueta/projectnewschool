@@ -18,6 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 function continueHref(item: ContinueItem | null): Route {
   if (item?.kind === 'activity') return `/learn/attempts/${item.attemptId}` as Route;
+  if (item?.kind === 'section') return `/learn/notebook/${item.sectionId}` as Route;
   return '/learn/notebook';
 }
 

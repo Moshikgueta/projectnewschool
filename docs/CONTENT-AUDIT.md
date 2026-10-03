@@ -120,14 +120,14 @@ The pipeline in CONTENT-MODEL.md §6.3 stands, with three refinements:
 3. Export from Google Docs as **DOCX or HTML** (keeps tables and images) rather than the
    text representation used for this audit.
 
-## 5. Decisions needed
+## 5. Decisions (answered 2026-10-03)
 
-| #   | Question                                                                                                                                  | Why it matters                                                                                               |
-| --- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| C1  | **What is Mori** (a custom GPT? another product?), who owns it, and should the platform link to it, embed it, or replace it later?        | Homework in every cycle depends on it; privacy review needed if students' conversations go to a third party. |
-| C2  | In class, should **students type their answers** into the platform (saved per student), or does the teacher keep using the shared screen? | Decides whether "answer slots" become interactive student inputs or teacher notes.                           |
-| C3  | Do we adopt the **shared cycle catalogue** across languages (ADR-021)?                                                                    | Data model change before content import.                                                                     |
-| C4  | Pilot course: Spanish L1 (template is clean, matches the model) — **pending ownership** (§6).                                             |                                                                                                              |
+| #   | Question                                           | Decision                                                                                                                                                                                                                                   |
+| --- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| C1  | What to do with **Mori** (the AI chat tutor)       | **Link out.** The platform shows each homework prompt with a copy button and an "Open Mori" link (one link per course, `courses.ai_tutor_url`). No student data passes through the platform. The Mori link itself is still to be supplied. |
+| C2  | Should students type answers in class?             | **Optional.** Students may type answers into sentence frames on their own device; answers are saved privately and visible to their own teacher. The shared screen keeps working.                                                           |
+| C3  | Shared cycle catalogue across languages (ADR-021)? | **No.** Cycles stay per course. ADR-021 is recorded as rejected.                                                                                                                                                                           |
+| C4  | Pilot course                                       | **English Foundations (L1), owned by New School.** Its files should still move to a school-owned Google account (§6).                                                                                                                      |
 
 ## 6. Ownership warning
 

@@ -5,14 +5,14 @@ import type { ButtonHTMLAttributes, ReactNode } from 'react';
 type Variant = 'primary' | 'secondary' | 'tertiary';
 
 const BASE =
-  'inline-flex min-h-11 items-center justify-center gap-2 rounded-md px-5 text-[0.9375rem] font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50 aria-disabled:cursor-not-allowed aria-disabled:opacity-50';
+  'inline-flex min-h-11 items-center justify-center gap-2 rounded-md text-[0.9375rem] font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50 aria-disabled:cursor-not-allowed aria-disabled:opacity-50';
 
 const VARIANTS: Record<Variant, string> = {
   primary:
-    'bg-primary text-on-brand hover:bg-primary-hover active:bg-primary-active disabled:hover:bg-primary',
+    'px-5 bg-primary text-on-brand hover:bg-primary-hover active:bg-primary-active disabled:hover:bg-primary',
   secondary:
-    'border border-primary bg-primary-light text-primary hover:bg-surface-secondary active:bg-border',
-  tertiary: 'px-0 text-primary underline-offset-4 hover:underline',
+    'px-5 border border-primary bg-primary-light text-primary hover:bg-surface-secondary active:bg-border',
+  tertiary: 'text-primary underline-offset-4 hover:underline',
 };
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & {

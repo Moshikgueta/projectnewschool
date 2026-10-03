@@ -34,6 +34,7 @@ export async function listTaughtGroups(teacherId: string): Promise<TaughtGroup[]
 export type GroupDetail = {
   id: string;
   name: string;
+  courseId: string;
   courseTitle: string | null;
   students: {
     id: string;
@@ -51,7 +52,7 @@ export async function getGroup(groupId: string): Promise<GroupDetail | null> {
   const { data, error } = await supabase
     .from('groups')
     .select(
-      'id, name, course:courses ( title ), enrollments ( status, student:profiles ( id, display_name ) )',
+      'id, name, course_id, course:courses ( title ), enrollments ( status, student:profiles ( id, display_name ) )',
     )
     .eq('id', groupId)
     .maybeSingle();
@@ -61,6 +62,7 @@ export async function getGroup(groupId: string): Promise<GroupDetail | null> {
   return {
     id: data.id,
     name: data.name,
+    courseId: data.course_id,
     courseTitle: data.course?.title ?? null,
     students: data.enrollments.flatMap((e) =>
       e.student

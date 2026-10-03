@@ -33,4 +33,16 @@ export default async function globalSetup() {
     await admin.from('enrollments').delete().in('group_id', ids);
     await admin.from('groups').delete().in('id', ids);
   }
+
+  // Notebook state written by earlier runs: student A's answers, and student
+  // C's reading of the French section (seed has none of either).
+  const A = '00000000-0000-4000-8000-0000000000a1';
+  const C = '00000000-0000-4000-8000-0000000000a3';
+  await admin.from('block_responses').delete().eq('user_id', A);
+  await admin.from('section_progress').delete().eq('user_id', C);
+  await admin
+    .from('learning_events')
+    .delete()
+    .eq('user_id', C)
+    .in('type', ['section_opened', 'section_completed']);
 }

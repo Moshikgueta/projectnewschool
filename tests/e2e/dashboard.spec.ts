@@ -83,12 +83,12 @@ test.describe('student dashboard', () => {
     await signIn(page, USERS.studentA);
     await page
       .getByRole('navigation', { name: 'Main' })
-      .getByRole('link', { name: 'Notebook' })
+      .getByRole('link', { name: 'Workbook' })
       .click();
-    await expect(page).toHaveURL(/\/learn\/notebook$/);
+    await expect(page).toHaveURL(/\/learn\/workbook$/);
     await expect(page.getByText('Coming soon')).toBeVisible();
     await expect(
-      page.getByRole('navigation', { name: 'Main' }).getByRole('link', { name: 'Notebook' }),
+      page.getByRole('navigation', { name: 'Main' }).getByRole('link', { name: 'Workbook' }),
     ).toHaveAttribute('aria-current', 'page');
   });
 });
