@@ -1,7 +1,7 @@
 # Architecture
 
-> Status: **Proposed — awaiting approval** (Phase 0). Nothing here is implemented yet.
-> Last updated: 2026-10-02.
+> Status: **Accepted** (2026-10-03, when Phase 1 was started). Phase 1 is implemented locally.
+> Last updated: 2026-10-03.
 
 ## 1. What we are building
 
@@ -57,23 +57,23 @@ Key properties:
 The preferred stack was evaluated against: security, maintainability, performance, low
 operational complexity, cost, hireability of future developers, and scalability.
 
-| Layer | Preferred | Recommendation | Why |
-|---|---|---|---|
-| Framework | Next.js + TS + App Router | **Keep** | Largest hiring pool, RSC keeps JS small, Server Actions give built-in CSRF origin checks. Pin the current stable major at scaffold time; `strict` TypeScript. |
-| UI styling | Tailwind | **Keep — Tailwind v4 driven by our own token layer** | Tokens live in one CSS file (`@theme`); components never contain raw hex values. See [DESIGN-SYSTEM.md](DESIGN-SYSTEM.md). |
-| Accessible primitives | — | **Add React Aria Components** (owned/styled by us) | Best-in-class keyboard, screen-reader, **RTL** and touch handling — including accessible drag-and-drop — which our exercises need. Unstyled, so it doesn't import someone else's look. (Radix is the fallback if the Phase 1 spike disagrees.) |
-| Database | PostgreSQL | **Keep** | Relational data (courses → cycles → activities, groups, enrollments) and RLS. |
-| Platform | Supabase | **Keep** | Postgres + Auth + Storage + RLS in one managed service; it's still plain Postgres, so we can leave. |
-| Auth | Supabase Auth | **Keep** | Invites, password reset, MFA (TOTP), leaked-password protection, session refresh rotation. |
-| Data access | — | **supabase-js + generated types; no ORM in request paths** | An ORM connecting as a privileged DB role silently bypasses RLS. Using the user's session keeps RLS in force on every read. |
-| Validation | — | **Zod** at every boundary | Server Action inputs, content blocks, env vars. |
-| i18n | — | **next-intl** | UI strings; UI locale is independent of content language/direction. |
-| Hosting | Vercel or Cloudflare | **Vercel (Pro, New School team)** — Cloudflare kept for DNS | See §5. |
-| Tests | — | **Vitest + Testing Library, pgTAP, Playwright + axe** | Unit/component, database/RLS, end-to-end + accessibility. |
-| Errors | — | **Sentry** (PII scrubbing on, no session replay) | Production visibility without invasive tracking. |
-| Email | — | **Resend via Supabase custom SMTP**, on a New School domain | Supabase's built-in mailer is rate-limited and not meant for production. The existing staff tools already use Resend. |
+| Layer                 | Preferred                 | Recommendation                                              | Why                                                                                                                                                                                                                                            |
+| --------------------- | ------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Framework             | Next.js + TS + App Router | **Keep**                                                    | Largest hiring pool, RSC keeps JS small, Server Actions give built-in CSRF origin checks. Pin the current stable major at scaffold time; `strict` TypeScript.                                                                                  |
+| UI styling            | Tailwind                  | **Keep — Tailwind v4 driven by our own token layer**        | Tokens live in one CSS file (`@theme`); components never contain raw hex values. See [DESIGN-SYSTEM.md](DESIGN-SYSTEM.md).                                                                                                                     |
+| Accessible primitives | —                         | **Add React Aria Components** (owned/styled by us)          | Best-in-class keyboard, screen-reader, **RTL** and touch handling — including accessible drag-and-drop — which our exercises need. Unstyled, so it doesn't import someone else's look. (Radix is the fallback if the Phase 1 spike disagrees.) |
+| Database              | PostgreSQL                | **Keep**                                                    | Relational data (courses → cycles → activities, groups, enrollments) and RLS.                                                                                                                                                                  |
+| Platform              | Supabase                  | **Keep**                                                    | Postgres + Auth + Storage + RLS in one managed service; it's still plain Postgres, so we can leave.                                                                                                                                            |
+| Auth                  | Supabase Auth             | **Keep**                                                    | Invites, password reset, MFA (TOTP), leaked-password protection, session refresh rotation.                                                                                                                                                     |
+| Data access           | —                         | **supabase-js + generated types; no ORM in request paths**  | An ORM connecting as a privileged DB role silently bypasses RLS. Using the user's session keeps RLS in force on every read.                                                                                                                    |
+| Validation            | —                         | **Zod** at every boundary                                   | Server Action inputs, content blocks, env vars.                                                                                                                                                                                                |
+| i18n                  | —                         | **next-intl**                                               | UI strings; UI locale is independent of content language/direction.                                                                                                                                                                            |
+| Hosting               | Vercel or Cloudflare      | **Vercel (Pro, New School team)** — Cloudflare kept for DNS | See §5.                                                                                                                                                                                                                                        |
+| Tests                 | —                         | **Vitest + Testing Library, pgTAP, Playwright + axe**       | Unit/component, database/RLS, end-to-end + accessibility.                                                                                                                                                                                      |
+| Errors                | —                         | **Sentry** (PII scrubbing on, no session replay)            | Production visibility without invasive tracking.                                                                                                                                                                                               |
+| Email                 | —                         | **Resend via Supabase custom SMTP**, on a New School domain | Supabase's built-in mailer is rate-limited and not meant for production. The existing staff tools already use Resend.                                                                                                                          |
 
-### What I recommend *changing* from the current state
+### What I recommend _changing_ from the current state
 
 The existing staff dashboard (`Moshikgueta/projectnewschool`) runs on **Cloudflare
 Workers + D1 (SQLite)** with hand-written auth. That was the right call for a prototype,
@@ -114,14 +114,14 @@ Rules (enforced by ESLint `no-restricted-imports` where possible):
 
 ## 5. Hosting decision: Vercel vs Cloudflare
 
-| | Vercel Pro | Cloudflare Workers (OpenNext adapter) |
-|---|---|---|
-| Next.js compatibility | Native, first-party | Very good via adapter; occasional gaps after Next.js releases |
-| Preview per PR | Built in | Possible, more setup |
-| Ops complexity | Lowest | Moderate (adapter, bundle-size limits, Node-compat flags) |
-| Cost (pilot) | ~$20 / deploying seat / month | ~$5 / month |
-| Team familiarity | New | Already used for staff tools |
-| Commercial use | Requires Pro (Hobby is non-commercial only) | Allowed on paid Workers plan |
+|                       | Vercel Pro                                  | Cloudflare Workers (OpenNext adapter)                         |
+| --------------------- | ------------------------------------------- | ------------------------------------------------------------- |
+| Next.js compatibility | Native, first-party                         | Very good via adapter; occasional gaps after Next.js releases |
+| Preview per PR        | Built in                                    | Possible, more setup                                          |
+| Ops complexity        | Lowest                                      | Moderate (adapter, bundle-size limits, Node-compat flags)     |
+| Cost (pilot)          | ~$20 / deploying seat / month               | ~$5 / month                                                   |
+| Team familiarity      | New                                         | Already used for staff tools                                  |
+| Commercial use        | Requires Pro (Hobby is non-commercial only) | Allowed on paid Workers plan                                  |
 
 **Recommendation: Vercel Pro under a New School team**, functions pinned to the Frankfurt
 region next to the Supabase database. The extra ~$15–35/month buys the lowest
@@ -138,30 +138,36 @@ Vercel-specific APIs, so moving to Cloudflare later is an adapter change.
 
 ## 7. Relationship to existing New School systems
 
-| System | Today | Plan |
-|---|---|---|
+| System                                                          | Today                                          | Plan                                                                                                                                                          |
+| --------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Staff dashboard (חדר המורים) — rooms, timetable, staff accounts | Cloudflare Worker + D1, personal repo (public) | Keeps running. Its UX research and security decisions feed this platform. Long term, scheduling/operations become a module on the same Postgres and identity. |
-| Spanish course site with paid buyer accounts (PayPlus) | Cloudflare + D1, personal repo | Out of MVP scope. Later: a paid purchase creates an enrollment here. |
-| 18 digital notebooks (Google Docs) | Google Drive | Pilot course converted to structured content; see [CONTENT-MODEL.md](CONTENT-MODEL.md#migration). |
+| Spanish course site with paid buyer accounts (PayPlus)          | Cloudflare + D1, personal repo                 | Out of MVP scope. Later: a paid purchase creates an enrollment here.                                                                                          |
+| 18 digital notebooks (Google Docs)                              | Google Drive                                   | Pilot course converted to structured content; see [CONTENT-MODEL.md](CONTENT-MODEL.md#migration).                                                             |
 
 ## 8. Architecture decision records (ADR log)
 
-Each entry: decision · reason · consequence. Status is *Proposed* until approved.
+Each entry: decision · reason · consequence. ADR-001…012 were accepted when Phase 1 started
+(2026-10-03); ADR-013…017 record decisions made while building Phase 1.
 
-| # | Decision | Status |
-|---|---|---|
-| ADR-001 | Next.js App Router + strict TypeScript, server-first rendering | Proposed |
-| ADR-002 | Supabase (Postgres, Auth, Storage) as the platform; RLS on every table | Proposed |
-| ADR-003 | Vercel Pro hosting, Frankfurt; Cloudflare for DNS | Proposed |
-| ADR-004 | Learning platform does **not** use the staff dashboard's D1 database | Proposed |
-| ADR-005 | Content stored as Zod-validated, versioned JSON blocks rendered by a component registry; authored in-repo files until the CMS exists | Proposed |
-| ADR-006 | Grading runs on the server in TypeScript; answer keys never reach the browser; students have no direct write access to graded tables | Proposed |
-| ADR-007 | Authorization reads roles from tables via `SECURITY DEFINER` helper functions, not JWT claims, so revoking a role takes effect immediately | Proposed |
-| ADR-008 | Access to a course comes from **one** source: an active enrollment in a group of that course (private students = a group of one) | Proposed |
-| ADR-009 | UI locale (interface language) and content language/direction are independent; direction is set per block | Proposed |
-| ADR-010 | Recommendations are rule-based, computed on request behind a provider interface; only dismissals and actions are stored | Proposed |
-| ADR-011 | Single repository, single Next.js app (no monorepo tooling until a second deployable exists) | Proposed |
-| ADR-012 | No third-party analytics or tracking scripts; educational analytics come from our own event table | Proposed |
+| #       | Decision                                                                                                                                                      | Status   |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| ADR-001 | Next.js App Router + strict TypeScript, server-first rendering                                                                                                | Accepted |
+| ADR-002 | Supabase (Postgres, Auth, Storage) as the platform; RLS on every table                                                                                        | Accepted |
+| ADR-003 | Vercel Pro hosting, Frankfurt; Cloudflare for DNS                                                                                                             | Accepted |
+| ADR-004 | Learning platform does **not** use the staff dashboard's D1 database                                                                                          | Accepted |
+| ADR-005 | Content stored as Zod-validated, versioned JSON blocks rendered by a component registry; authored in-repo files until the CMS exists                          | Accepted |
+| ADR-006 | Grading runs on the server in TypeScript; answer keys never reach the browser; students have no direct write access to graded tables                          | Accepted |
+| ADR-007 | Authorization reads roles from tables via `SECURITY DEFINER` helper functions, not JWT claims, so revoking a role takes effect immediately                    | Accepted |
+| ADR-008 | Access to a course comes from **one** source: an active enrollment in a group of that course (private students = a group of one)                              | Accepted |
+| ADR-009 | UI locale (interface language) and content language/direction are independent; direction is set per block                                                     | Accepted |
+| ADR-010 | Recommendations are rule-based, computed on request behind a provider interface; only dismissals and actions are stored                                       | Accepted |
+| ADR-011 | Single repository, single Next.js app (no monorepo tooling until a second deployable exists)                                                                  | Accepted |
+| ADR-012 | No third-party analytics or tracking scripts; educational analytics come from our own event table                                                             | Accepted |
+| ADR-013 | The session cookie is `HttpOnly`; the browser never calls Supabase directly. All reads and writes go through the server                                       | Accepted |
+| ADR-014 | Content-Security-Policy uses a per-request nonce (`src/proxy.ts`), so every page renders dynamically                                                          | Accepted |
+| ADR-015 | Pedagogical-manager and admin powers require an MFA-verified session (`aal2`), enforced in the database policies, not only in the UI                          | Accepted |
+| ADR-016 | Tooling pins: TypeScript 6.0 (typescript-eslint does not support 7 yet) and ESLint 9 (eslint-plugin-react is not ESLint 10-ready). Revisit when they catch up | Accepted |
+| ADR-017 | Phase 1 screens are English/LTR only; interface translations and RTL arrive with the design system in Phase 2                                                 | Accepted |
 
 ADR-006 in more detail, because it's the least obvious: if exercises were checked in the
 browser, every answer key would be downloadable, and a student could write
@@ -173,12 +179,12 @@ immediate feedback.
 
 ## 9. Performance budget (initial targets)
 
-| Metric | Target |
-|---|---|
-| Dashboard server response (p75, in region) | < 300 ms |
-| LCP on mid-range mobile, 4G | < 2.5 s |
-| First-load JS for student routes | < 150 kB gzipped |
-| Exercise check round trip | < 250 ms p75 |
+| Metric                                     | Target           |
+| ------------------------------------------ | ---------------- |
+| Dashboard server response (p75, in region) | < 300 ms         |
+| LCP on mid-range mobile, 4G                | < 2.5 s          |
+| First-load JS for student routes           | < 150 kB gzipped |
+| Exercise check round trip                  | < 250 ms p75     |
 
 Techniques: RSC by default; client components only for interactivity; `next/image`;
 audio `preload="none"`; route-level `loading.tsx`; indexes for every RLS predicate; one

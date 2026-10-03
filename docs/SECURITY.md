@@ -1,7 +1,7 @@
 # Security and privacy
 
-> Status: **Proposed — awaiting approval.** Controls marked ☐ are to be implemented in
-> the phase shown; none are implemented yet.
+> Status: **Phase 1 controls implemented locally** — see §0. Controls marked ☐ below are
+> the full design; §0 says which are in place.
 
 The platform holds personal and educational data about students, some of whom may be
 minors. The non-negotiable rule:
@@ -10,21 +10,56 @@ minors. The non-negotiable rule:
 > not through the UI, not by editing a URL, and not by calling the API or database
 > directly with their own token.**
 
+## 0. Phase 1 implementation status (2026-10-03)
+
+**In place and covered by automated tests:**
+invite-only accounts (public sign-up refused); 10-character minimum password; TOTP MFA,
+with manager and admin powers requiring `aal2` in the database; password reset and invites
+through one-time links verified on the server (`/auth/confirm`); HttpOnly, `SameSite=Lax`
+session cookie; identity from the verified JWT; sign-out; route guards on every area
+layout, page and server action (`requireArea`); RLS enabled and forced on every table
+with default deny; secret key confined to `src/server/privileged`; roles read from
+tables; Zod validation of every action input and of the environment; no RPC surface;
+no raw-HTML rendering (lint rule); same-site checks on server actions; 404 for
+other people's records (IDOR); nonce-based CSP, HSTS, `nosniff`, `X-Frame-Options`,
+`Permissions-Policy`, no `X-Powered-By`; open-redirect protection on `next`; identical
+error for wrong password and unknown account; append-only audit log; last-admin
+protection; `.env.example` only, with `.env*.local` ignored; dependency audit, Dependabot
+and CODEOWNERS for sensitive paths.
+
+**Known limit, by design:** pages verify the access token locally (fast, signature
+checked), so after sign-out or deactivation an already-issued access token keeps working
+until it expires (≤ 1 hour); the refresh token is revoked at once. Removing a role takes
+effect immediately because roles are read from the database on every request. Sensitive
+actions that must see revocation instantly should call `auth.getUser()` (round trip to
+Supabase Auth) rather than rely on the token alone.
+
+**Test evidence:** 61 pgTAP database checks, 10 API-level attack tests with a real
+student token, 16 end-to-end tests (including axe accessibility checks and the full
+invite → email → set-password flow), and 12 unit tests. Opening up a single policy
+on purpose makes 7 tests fail (checked).
+
+**Still to do:** custom SMTP on the school domain and leaked-password protection
+(hosted-project settings); Vercel WAF rate limits; Sentry with PII scrubbing; CodeQL;
+branch protection (needs the GitHub organization); storage policies (Phase 3);
+"download my data" and retention jobs (Phase 10); external review (Phase 10).
+
 ## 1. Threat model
 
-| Actor | Example | Primary controls |
-|---|---|---|
-| Curious student | Changes `/learn/attempts/<id>` to a classmate's id; calls the Supabase REST API with their own JWT | RLS on every table; ids taken from the session, never from input; tests that try exactly this |
-| Student gaming scores | Reads answer keys from network traffic; posts `is_correct: true` | Keys never sent to the browser; server-side grading; no direct write policy on graded tables |
-| Teacher overreach | Views a student in a group they don't teach | `teaches_student_in_course` policies; tests with an "unrelated teacher" fixture |
-| Compromised staff account | Phished admin password | MFA (TOTP) required for admin and pedagogical manager; audit log; session revocation |
-| External attacker | Credential stuffing, XSS, CSRF, injection | Rate limits, leaked-password check, CSP, origin checks, parameterised queries |
-| Insider / ex-staff | Leaves school with access | Role removal is immediate (ADR-007); deactivation revokes sessions; ≥2 org owners |
-| Supply chain | Malicious npm update | Lockfile, Dependabot, minimal dependencies, CI audit |
+| Actor                     | Example                                                                                            | Primary controls                                                                              |
+| ------------------------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Curious student           | Changes `/learn/attempts/<id>` to a classmate's id; calls the Supabase REST API with their own JWT | RLS on every table; ids taken from the session, never from input; tests that try exactly this |
+| Student gaming scores     | Reads answer keys from network traffic; posts `is_correct: true`                                   | Keys never sent to the browser; server-side grading; no direct write policy on graded tables  |
+| Teacher overreach         | Views a student in a group they don't teach                                                        | `teaches_student_in_course` policies; tests with an "unrelated teacher" fixture               |
+| Compromised staff account | Phished admin password                                                                             | MFA (TOTP) required for admin and pedagogical manager; audit log; session revocation          |
+| External attacker         | Credential stuffing, XSS, CSRF, injection                                                          | Rate limits, leaked-password check, CSP, origin checks, parameterised queries                 |
+| Insider / ex-staff        | Leaves school with access                                                                          | Role removal is immediate (ADR-007); deactivation revokes sessions; ≥2 org owners             |
+| Supply chain              | Malicious npm update                                                                               | Lockfile, Dependabot, minimal dependencies, CI audit                                          |
 
 ## 2. Controls
 
 ### Authentication — Phase 1
+
 - ☐ Supabase Auth, **invite-only**: public sign-up disabled. Admin invites staff; admin
   or pedagogical manager invites students.
 - ☐ Passwords: minimum 10 characters, leaked-password protection (HaveIBeenPwned)
@@ -36,10 +71,11 @@ minors. The non-negotiable rule:
 - ☐ Custom SMTP on a New School domain with SPF, DKIM and DMARC, so reset and invite
   emails arrive and can't be spoofed.
 - ☐ Student "entry codes" (in the staff prototype) are **not** carried over as a
-  permanent credential. If wanted, a code becomes a one-time *claim* link that leads to
+  permanent credential. If wanted, a code becomes a one-time _claim_ link that leads to
   setting a password. See [ROADMAP.md decisions](ROADMAP.md#decisions-needed-before-phase-1).
 
 ### Sessions — Phase 1
+
 - ☐ `@supabase/ssr` cookie sessions: `HttpOnly`, `Secure`, `SameSite=Lax`. The browser
   never needs the token because it never calls Supabase directly (server-first).
 - ☐ On the server, identity comes from `auth.getUser()` / verified JWT claims, **never**
@@ -51,6 +87,7 @@ minors. The non-negotiable rule:
   sessions.
 
 ### Authorization — Phase 1
+
 - ☐ Layer 1: every route group (`/learn`, `/teach`, `/manage`, `/admin`) has a server
   layout guard (`requireRole`). Every Server Action re-checks — layouts alone are not
   a security boundary in Next.js.
@@ -61,6 +98,7 @@ minors. The non-negotiable rule:
 - ☐ Roles are read from tables at request time, so removing a role works immediately.
 
 ### Input, output and injection — Phases 1–4
+
 - ☐ Zod schemas validate every Server Action input, every content document and the
   environment at boot.
 - ☐ **SQL injection:** all queries are parameterised through supabase-js/PostgREST or
@@ -77,21 +115,24 @@ minors. The non-negotiable rule:
   lookup goes through RLS with the caller's session.
 
 ### HTTP security headers — Phase 1
+
 - ☐ Content-Security-Policy with per-request nonces: `default-src 'self'`; scripts by
   nonce; `img-src`/`media-src` self + Supabase Storage host; `frame-ancestors 'none'`;
   `object-src 'none'`; `base-uri 'none'`.
 - ☐ `Strict-Transport-Security` (2 years, preload once stable), `X-Content-Type-Options:
-  nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Policy`
+nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Policy`
   (microphone only where speaking activities need it, later).
 - ☐ Fonts self-hosted via `next/font` — no requests to Google from students' browsers.
 
 ### Rate limiting — Phases 1 & 4
+
 - ☐ Auth endpoints: Supabase Auth's built-in limits (tightened), plus CAPTCHA
   (Cloudflare Turnstile) on login/reset if abuse appears.
 - ☐ App: Vercel WAF rate-limit rules on login/reset paths; per-user limit on answer
   submissions (e.g. 60/min) enforced in the grading action.
 
 ### Storage — Phase 3
+
 - ☐ Buckets are **private**. Paths are `courses/<course_id>/…`; the server issues
   short-lived signed URLs (≤ 1 h) only after `can_view_course`. Avatars are in a separate
   bucket with own-folder policies.
@@ -99,11 +140,13 @@ minors. The non-negotiable rule:
   rejected or sanitised (SVG can carry script).
 
 ### Audit logging — Phase 1 (schema), Phase 8 (UI)
+
 - ☐ `audit_log` records role grants and revocations, account creation and deactivation,
   enrollments, group/teacher assignment, publish/unpublish, and data exports and
   deletions. It is insert-only, and admins can read it but not change it.
 
 ### Secrets — Phase 0
+
 - ☐ No secret in Git, ever. `.env.example` lists names only. `.env*.local` is git-ignored.
 - ☐ Secrets are stored in Vercel environment variables (per environment) and GitHub
   Actions secrets. Production and staging keys are different.
@@ -112,6 +155,7 @@ minors. The non-negotiable rule:
   key); CI fails if a known secret name gets that prefix.
 
 ### Dependencies and CI — Phase 0/1
+
 - ☐ Lockfile committed; `pnpm install --frozen-lockfile` in CI; Dependabot weekly;
   `pnpm audit --prod` gate on high/critical vulnerabilities.
 - ☐ CodeQL (or equivalent) on pull requests.
@@ -125,13 +169,14 @@ manager, admin, anonymous).
 
 **Database level (pgTAP, `supabase test db`)** — the most important layer, because it's
 what an attacker holding a real student token can reach:
+
 - Student A selects `attempts`/`responses`/`section_progress`/`learning_events` → only
   A's rows; selecting by B's ids returns 0 rows.
 - Student A cannot insert or update `responses`, `attempts.score` or `enrollments`.
 - Student cannot select `activity_item_keys` or `section_teacher_notes`.
 - Student cannot see unpublished content, or content of a course they aren't enrolled in.
 - Teacher Y cannot see group X, its students, or their attempts.
-- Teacher X cannot see X's students' attempts in a *different* course.
+- Teacher X cannot see X's students' attempts in a _different_ course.
 - Anonymous role sees nothing.
 - `audit_log` cannot be updated or deleted by any app role.
 
@@ -140,6 +185,7 @@ student A's JWT and the public key, attempting B's rows. This replicates the "ma
 the API call" attack exactly.
 
 **Application level (Playwright)**
+
 - Student opening `/teach`, `/manage`, `/admin` → redirected/403.
 - Teacher Y opening `/teach/groups/<X>` → 404 (not found, not "forbidden", to avoid
   confirming existence).
@@ -159,15 +205,16 @@ legal advice.
 
 ### What we collect
 
-| Data | Why | Where |
-|---|---|---|
-| Email | Login, password reset | `auth.users` (separate from profile) |
-| Display name, optional avatar | Shown to student and teacher | `profiles` |
-| Interface language, timezone | UI, "practice this week" | `profiles` |
-| Enrollment and group membership | Course access | `enrollments` |
-| Answers, attempts, progress, events | The learning service itself | learner tables |
+| Data                                | Why                          | Where                                |
+| ----------------------------------- | ---------------------------- | ------------------------------------ |
+| Email                               | Login, password reset        | `auth.users` (separate from profile) |
+| Display name, optional avatar       | Shown to student and teacher | `profiles`                           |
+| Interface language, timezone        | UI, "practice this week"     | `profiles`                           |
+| Enrollment and group membership     | Course access                | `enrollments`                        |
+| Answers, attempts, progress, events | The learning service itself  | learner tables                       |
 
 ### What we deliberately do **not** collect in this platform
+
 National ID, phone, address, birth date, payment data, health or other special
 categories, device fingerprints, precise location, third-party advertising or analytics
 identifiers. Phone numbers and billing belong to the school's operations system, not the
@@ -178,6 +225,7 @@ learning platform.
 > decision needed before Phase 1.
 
 ### Principles in the design
+
 - Authentication data (`auth` schema) is separate from the educational profile.
 - Analytics shown to teachers are about their own groups only. School-wide analytics
   are aggregated, with small-group suppression (n < 5) when shown outside the teaching

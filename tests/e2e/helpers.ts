@@ -1,0 +1,51 @@
+import { createHmac } from 'node:crypto';
+import { expect, type Page } from '@playwright/test';
+
+export const PASSWORD = 'Local-dev-password-1'; // supabase/seed.sql — local only
+
+export const USERS = {
+  studentA: 'student.a@example.com',
+  studentB: 'student.b@example.com',
+  teacherX: 'teacher.x@example.com',
+  teacherY: 'teacher.y@example.com',
+  manager: 'manager@example.com',
+  admin: 'admin@example.com',
+} as const;
+
+export const IDS = {
+  attemptOfA: 'c0000000-0000-4000-8000-000000000001',
+  attemptOfB: 'c0000000-0000-4000-8000-000000000002',
+  groupX: 'a0000000-0000-4000-8000-000000000001',
+  groupY: 'a0000000-0000-4000-8000-000000000002',
+} as const;
+
+export async function signIn(page: Page, email: string, password = PASSWORD) {
+  await page.goto('/login');
+  await page.getByLabel('Email').fill(email);
+  await page.getByLabel('Password').fill(password);
+  await page.getByRole('button', { name: 'Sign in' }).click();
+  await expect(page).not.toHaveURL(/\/login/);
+}
+
+export async function signOut(page: Page) {
+  await page.getByRole('button', { name: 'Sign out' }).click();
+  await expect(page).toHaveURL(/\/login/);
+}
+
+/** RFC 6238 TOTP (SHA-1, 6 digits, 30 s) — what an authenticator app computes. */
+export function totp(base32Secret: string, now = Date.now()): string {
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
+  let bits = '';
+  for (const ch of base32Secret.replace(/=+$/, '').toUpperCase()) {
+    const v = alphabet.indexOf(ch);
+    if (v < 0) continue;
+    bits += v.toString(2).padStart(5, '0');
+  }
+  const key = Buffer.from(bits.match(/.{8}/g)!.map((b) => parseInt(b, 2)));
+  const counter = Buffer.alloc(8);
+  counter.writeBigUInt64BE(BigInt(Math.floor(now / 30_000)));
+  const hmac = createHmac('sha1', key).update(counter).digest();
+  const offset = hmac[hmac.length - 1]! & 0xf;
+  const code = (hmac.readUInt32BE(offset) & 0x7fffffff) % 1_000_000;
+  return code.toString().padStart(6, '0');
+}

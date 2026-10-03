@@ -1,7 +1,7 @@
 # New School design system
 
 > Status: **Brand audit complete; brand tokens BLOCKED on official assets.**
-> Rule for this project: the platform must *be* New School, not be inspired by it.
+> Rule for this project: the platform must _be_ New School, not be inspired by it.
 > No colour, logo treatment or typeface is invented here. Where the official value isn't
 > available yet, this document says **TBD** and names exactly what is missing.
 
@@ -11,13 +11,13 @@
 
 ### 1.1 What was inspected
 
-| Source | Result |
-|---|---|
+| Source                                                                                                                                                                  | Result                                                                                                                                               |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Repository `Moshikgueta/projectnewschool` — every file, including the 468 kB desktop dashboard, the mobile view, the generated `docs/` pages and the `.thumbnail` image | **No logo file of any kind** (no SVG/PNG/JPG/WebP/ICO/AI/EPS/PDF, no embedded `data:image`). The thumbnail is a dashboard screenshot without a logo. |
-| Logo image supplied by the school in the planning conversation | Inspected visually (details below). It wasn't supplied as a file, so it isn't in any repository yet and its exact pixel values couldn't be sampled. |
-| New School website (`newschool.co.il`, the domain used in staff emails) | **Not inspected.** The build environment's network policy blocks the host. |
-| The 18 digital notebooks (Google Docs, listed in the staff prototype) | **Not inspected.** They're in Google Drive, not in the repository. |
-| Presentations or brand guidelines | None found. |
+| Logo image supplied by the school in the planning conversation                                                                                                          | Inspected visually (details below). It wasn't supplied as a file, so it isn't in any repository yet and its exact pixel values couldn't be sampled.  |
+| New School website (`newschool.co.il`, the domain used in staff emails)                                                                                                 | **Not inspected.** The build environment's network policy blocks the host.                                                                           |
+| The 18 digital notebooks (Google Docs, listed in the staff prototype)                                                                                                   | **Not inspected.** They're in Google Drive, not in the repository.                                                                                   |
+| Presentations or brand guidelines                                                                                                                                       | None found.                                                                                                                                          |
 
 ### 1.2 The logo (as observed)
 
@@ -27,40 +27,40 @@
 - **Background:** a diagonal **teal-to-blue gradient** filling the square.
 - **Variants observed:** only this one: white linework on the gradient square.
 
-| Variant | Found? |
-|---|---|
-| Vector master (SVG / AI / EPS / PDF) | ❌ needed |
-| Horizontal lockup (for desktop navigation, email headers) | ❌ needed |
-| Compact mark / square (mobile header, favicon, app icon) | ✅ the observed square *may* be this; needs a high-resolution or vector source |
-| White linework on **transparent** background (to place on brand surfaces) | ❌ needed |
-| Dark linework for **light** backgrounds | ❌ needed. We will **not** recolour the logo ourselves to create one. |
+| Variant                                                                   | Found?                                                                         |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Vector master (SVG / AI / EPS / PDF)                                      | ❌ needed                                                                      |
+| Horizontal lockup (for desktop navigation, email headers)                 | ❌ needed                                                                      |
+| Compact mark / square (mobile header, favicon, app icon)                  | ✅ the observed square _may_ be this; needs a high-resolution or vector source |
+| White linework on **transparent** background (to place on brand surfaces) | ❌ needed                                                                      |
+| Dark linework for **light** backgrounds                                   | ❌ needed. We will **not** recolour the logo ourselves to create one.          |
 
 Open question: **is the gradient square part of the logo itself, or a background it was
 exported on?** The answer decides whether the logo always appears as a tile.
 
 ### 1.3 Colours found in existing material — and the inconsistency
 
-| Source | Colours | Assessment |
-|---|---|---|
-| Logo (observed) | teal → blue gradient; white | **The only authentic brand signal.** Exact HEX/RGB unknown until sampled from a source file. |
+| Source                                                             | Colours                                                                                                                                                                                       | Assessment                                                                                                                                                                                                                                                                       |
+| ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Logo (observed)                                                    | teal → blue gradient; white                                                                                                                                                                   | **The only authentic brand signal.** Exact HEX/RGB unknown until sampled from a source file.                                                                                                                                                                                     |
 | Staff prototype (Teacher Dashboard v2 / Mobile, `docs/index.html`) | paper `#F3F2F2`, ink `#201E1D`, cyan `#0088B0` (ramp `#E9F8FF`…`#0A303E`), magenta `#D6006C`, process yellow `#EDBB00`; functional: positive `#2E7D5B`, warning `#B4870C`, critical `#A5231F` | These come from **"Broadsheet"**, a third-party newsprint-style design system the prototype was themed with, not from New School's identity. The cyan is in the same family as the logo's teal but is **not verified** to match it. Magenta and yellow don't appear in the logo. |
-| Root `index.html` redirect page | `#2F6FED`, `#F4F5F8`, `#12161C`, `#6E9BFF` | Generic defaults, unrelated to the brand. |
-| Staff prototype "26-language palette" | a distinct hue per language | **Conflicts with the brand rule** (no rainbow per language). Not carried over. |
+| Root `index.html` redirect page                                    | `#2F6FED`, `#F4F5F8`, `#12161C`, `#6E9BFF`                                                                                                                                                    | Generic defaults, unrelated to the brand.                                                                                                                                                                                                                                        |
+| Staff prototype "26-language palette"                              | a distinct hue per language                                                                                                                                                                   | **Conflicts with the brand rule** (no rainbow per language). Not carried over.                                                                                                                                                                                                   |
 
 **Recommendation:** treat the logo's colours as canonical. Once a source file exists,
 sample the gradient's endpoints, record them below, and choose **one canonical primary**
 (normally the deeper, more legible end of the gradient, because it must pass contrast as
 a button fill and as text). Broadsheet's palette isn't adopted. Its calm, muted
-*functional* colours may be reused as starting candidates only if they pass the harmony
+_functional_ colours may be reused as starting candidates only if they pass the harmony
 and contrast checks against the real primary.
 
 ### 1.4 Typography found
 
-| Source | Typeface | Assessment |
-|---|---|---|
-| Logo lettering | Bold display face (unidentified) | Logos are usually lettered or set in a licensed face. Ask the designer. |
-| Staff prototype | Source Serif 4 + Frank Ruhl Libre (Hebrew) | Broadsheet's choice, not New School's. |
-| Notebooks | unknown (Google Docs) | Needs inspection. |
+| Source          | Typeface                                   | Assessment                                                              |
+| --------------- | ------------------------------------------ | ----------------------------------------------------------------------- |
+| Logo lettering  | Bold display face (unidentified)           | Logos are usually lettered or set in a licensed face. Ask the designer. |
+| Staff prototype | Source Serif 4 + Frank Ruhl Libre (Hebrew) | Broadsheet's choice, not New School's.                                  |
+| Notebooks       | unknown (Google Docs)                      | Needs inspection.                                                       |
 
 **No official New School typeface is documented.** See §4 for the proposed choice.
 
@@ -75,9 +75,12 @@ and contrast checks against the real primary.
 4. One or two digital notebooks exported as PDF/DOCX, to match their visual language.
 5. Font name and licence, if the school uses one.
 
-Until these arrive, UI work in later phases uses the **token names** below with clearly
-marked placeholder values in a single file, so swapping in the official values is a
-one-file change. Placeholders are never committed to production.
+Until these arrive, UI work uses the **token names** below with clearly marked placeholder
+values in a single file, `src/ui/tokens.css` (Phase 1: deliberately neutral greys, so
+nobody mistakes them for the brand). Swapping in the official values is a one-file
+change. `pnpm check:tokens` fails the build if a colour appears anywhere else. The
+`<Logo />` component shows the school name as plain text until the official SVG
+arrives. Placeholders must not reach production.
 
 ---
 
@@ -98,34 +101,35 @@ Tokens live in one file: `src/ui/tokens.css`.
 
 ### 3.2 Semantic tokens
 
-| Token | Maps to | Value |
-|---|---|---|
-| `--color-brand-primary` | canonical logo colour (deep end) | **TBD — from logo source** |
-| `--color-brand-primary-hover` | primary ramp, one step darker | derived |
-| `--color-brand-primary-active` | two steps darker | derived |
-| `--color-brand-primary-light` | primary ramp 50–100 (tinted fills, selected rows) | derived |
-| `--color-brand-secondary` | second logo gradient colour (light end) | **TBD — from logo source** |
-| `--color-brand-secondary-hover` / `-light` | secondary ramp | derived |
-| `--color-brand-accent` | used sparingly: highlights, progress, focus ring | **TBD** — logo gradient endpoint or white-on-brand; never a new hue |
-| `--color-on-brand` | text/icons on brand fills | white (as in logo), contrast-checked |
-| `--color-background` | app background | neutral, faintly tinted toward primary — derived |
-| `--color-surface` | cards, notebook pages | white |
-| `--color-surface-secondary` | inset areas, table headers | neutral ramp |
-| `--color-text-primary` | body text | near-black neutral — derived |
-| `--color-text-secondary` | supporting text | neutral ramp, ≥ 4.5:1 |
-| `--color-text-muted` | captions, metadata | neutral ramp, ≥ 4.5:1 on surface |
-| `--color-border` | hairlines, input borders | neutral ramp, ≥ 3:1 for inputs |
-| `--color-focus-ring` | keyboard focus | brand primary, ≥ 3:1 against adjacent colours |
-| `--color-success` / `-light` / `-ink` | correct answer, completed | functional, harmonised |
-| `--color-warning` / `-light` / `-ink` | due soon, almost right | functional, harmonised |
-| `--color-error` / `-light` / `-ink` | incorrect, validation error | functional, harmonised |
-| `--color-info` / `-light` / `-ink` | tips, neutral notices | derived from the **brand** primary ramp, not a new blue |
+| Token                                      | Maps to                                           | Value                                                               |
+| ------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------------- |
+| `--color-brand-primary`                    | canonical logo colour (deep end)                  | **TBD — from logo source**                                          |
+| `--color-brand-primary-hover`              | primary ramp, one step darker                     | derived                                                             |
+| `--color-brand-primary-active`             | two steps darker                                  | derived                                                             |
+| `--color-brand-primary-light`              | primary ramp 50–100 (tinted fills, selected rows) | derived                                                             |
+| `--color-brand-secondary`                  | second logo gradient colour (light end)           | **TBD — from logo source**                                          |
+| `--color-brand-secondary-hover` / `-light` | secondary ramp                                    | derived                                                             |
+| `--color-brand-accent`                     | used sparingly: highlights, progress, focus ring  | **TBD** — logo gradient endpoint or white-on-brand; never a new hue |
+| `--color-on-brand`                         | text/icons on brand fills                         | white (as in logo), contrast-checked                                |
+| `--color-background`                       | app background                                    | neutral, faintly tinted toward primary — derived                    |
+| `--color-surface`                          | cards, notebook pages                             | white                                                               |
+| `--color-surface-secondary`                | inset areas, table headers                        | neutral ramp                                                        |
+| `--color-text-primary`                     | body text                                         | near-black neutral — derived                                        |
+| `--color-text-secondary`                   | supporting text                                   | neutral ramp, ≥ 4.5:1                                               |
+| `--color-text-muted`                       | captions, metadata                                | neutral ramp, ≥ 4.5:1 on surface                                    |
+| `--color-border`                           | hairlines, input borders                          | neutral ramp, ≥ 3:1 for inputs                                      |
+| `--color-focus-ring`                       | keyboard focus                                    | brand primary, ≥ 3:1 against adjacent colours                       |
+| `--color-success` / `-light` / `-ink`      | correct answer, completed                         | functional, harmonised                                              |
+| `--color-warning` / `-light` / `-ink`      | due soon, almost right                            | functional, harmonised                                              |
+| `--color-error` / `-light` / `-ink`        | incorrect, validation error                       | functional, harmonised                                              |
+| `--color-info` / `-light` / `-ink`         | tips, neutral notices                             | derived from the **brand** primary ramp, not a new blue             |
 
 **Functional colours:** muted, same lightness/chroma register as the brand; validated
 for WCAG 2.2 contrast (text ≥ 4.5:1, UI ≥ 3:1). Colour is never the only signal: every
 feedback state also has an icon and text ("Correct", "Not quite").
 
 ### 3.3 Canonicalisation procedure (when the logo file arrives)
+
 1. Sample the gradient endpoints from the vector source (not a screenshot) and record
    HEX + RGB here.
 2. Compare with the website and notebooks; list any variants; recommend one canonical
@@ -153,16 +157,16 @@ Arabic; Latin and Greek in the base family). Reasons:
 If New School has an official typeface with a web licence, it replaces Plex here and in
 `tokens.css`. Nothing else changes.
 
-| Role | Token | Size / line-height (mobile → desktop) | Weight |
-|---|---|---|---|
-| Display (welcome) | `--text-display` | 32/38 → 44/52 | 600 |
-| Page title | `--text-title` | 26/32 → 32/40 | 600 |
-| Section heading | `--text-heading` | 20/28 → 24/32 | 600 |
-| Sub-heading | `--text-subheading` | 17/24 → 18/26 | 600 |
-| Body / notebook reading | `--text-body` | 17/28 (both) | 400 |
-| Exercise instruction | `--text-instruction` | 17/26 | 500 |
-| UI label / button | `--text-label` | 15/20 | 500 |
-| Caption / metadata | `--text-caption` | 13/18 | 400 |
+| Role                    | Token                | Size / line-height (mobile → desktop) | Weight |
+| ----------------------- | -------------------- | ------------------------------------- | ------ |
+| Display (welcome)       | `--text-display`     | 32/38 → 44/52                         | 600    |
+| Page title              | `--text-title`       | 26/32 → 32/40                         | 600    |
+| Section heading         | `--text-heading`     | 20/28 → 24/32                         | 600    |
+| Sub-heading             | `--text-subheading`  | 17/24 → 18/26                         | 600    |
+| Body / notebook reading | `--text-body`        | 17/28 (both)                          | 400    |
+| Exercise instruction    | `--text-instruction` | 17/26                                 | 500    |
+| UI label / button       | `--text-label`       | 15/20                                 | 500    |
+| Caption / metadata      | `--text-caption`     | 13/18                                 | 400    |
 
 Body text is 17 px rather than 16 because Hebrew and Arabic need the extra size to
 match Latin readability. Reading measure is capped at ~68ch.
@@ -181,15 +185,15 @@ match Latin readability. Reading measure is capped at ~68ch.
 - The logo is rendered by a single `<Logo variant="horizontal|mark" />` component. No
   page imports logo files directly.
 
-| Place | Variant |
-|---|---|
-| Login / auth screens | full logo, prominent, on a brand panel or neutral background (per available variant) |
-| Desktop navigation | horizontal lockup *(needed)*; until it exists, the square mark plus the text "New School" set in the UI font. This is **not** a redraw of the logo. |
-| Mobile header | square mark |
-| Student / teacher / admin dashboards | in navigation (consistent position, top start) |
-| Loading and empty states | mark, small, static (respecting reduced motion) |
-| Auth emails (Supabase templates) | hosted PNG export of the official logo |
-| Favicon / app icon / PWA | square mark |
+| Place                                | Variant                                                                                                                                             |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Login / auth screens                 | full logo, prominent, on a brand panel or neutral background (per available variant)                                                                |
+| Desktop navigation                   | horizontal lockup _(needed)_; until it exists, the square mark plus the text "New School" set in the UI font. This is **not** a redraw of the logo. |
+| Mobile header                        | square mark                                                                                                                                         |
+| Student / teacher / admin dashboards | in navigation (consistent position, top start)                                                                                                      |
+| Loading and empty states             | mark, small, static (respecting reduced motion)                                                                                                     |
+| Auth emails (Supabase templates)     | hosted PNG export of the official logo                                                                                                              |
+| Favicon / app icon / PWA             | square mark                                                                                                                                         |
 
 ---
 
@@ -206,9 +210,11 @@ match Latin readability. Reading measure is capped at ~68ch.
   stock illustrations, mascots or confetti.
 
 ### Course and language differentiation
+
 No per-language colour schemes. A course is identified by:
+
 1. its **language code chip** (`ES`, `DE`, `AR`) in brand-neutral styling,
-2. an optional **subtle tint** from the *brand* ramp (e.g. primary-50 vs secondary-50),
+2. an optional **subtle tint** from the _brand_ ramp (e.g. primary-50 vs secondary-50),
 3. an icon or small accent marker.
 
 Spanish never turns red and yellow; German never turns black, red and gold.
@@ -221,11 +227,11 @@ Built on React Aria Components (behaviour and accessibility), styled only with t
 
 **Buttons:** exactly three variants, used everywhere.
 
-| Variant | Use | Look |
-|---|---|---|
-| Primary | Continue · Start practice · Open workbook · Submit answer | brand-primary fill, on-brand text |
-| Secondary | Review · View vocabulary · Open notebook | brand-primary-light fill or primary outline, primary text |
-| Tertiary / link | See all · Back · Skip for now | text only, primary colour, underline on hover |
+| Variant         | Use                                                       | Look                                                      |
+| --------------- | --------------------------------------------------------- | --------------------------------------------------------- |
+| Primary         | Continue · Start practice · Open workbook · Submit answer | brand-primary fill, on-brand text                         |
+| Secondary       | Review · View vocabulary · Open notebook                  | brand-primary-light fill or primary outline, primary text |
+| Tertiary / link | See all · Back · Skip for now                             | text only, primary colour, underline on hover             |
 
 States for every variant: default, hover, focus-visible (2 px focus ring + offset),
 active/pressed, disabled (opacity + `aria-disabled`, still focusable when it explains
