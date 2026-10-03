@@ -219,7 +219,8 @@ Docs. Then transfer the repository into the New School organization.
 - [ ] Architecture approved (ADR-001…012)
 - [ ] Decisions D1–D15 answered
 - [ ] Official logo files, brand colours and typeface in `brand/`; colour canonicalisation done
-- [ ] Content audit of 2–3 notebooks; block catalogue confirmed
+- [x] Content audit of 2–3 notebooks; block catalogue confirmed (v1.1, [CONTENT-AUDIT.md](CONTENT-AUDIT.md); decisions C1–C4 open)
+- [ ] Notebook files moved to a New School-owned Google Workspace / shared drive (today owned by a personal account)
 - [ ] Pilot course chosen and content ownership confirmed; pilot groups identified
 
 **Technical spikes (time-boxed, throwaway)**

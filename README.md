@@ -27,6 +27,7 @@ to run it.
 | [docs/SECURITY.md](docs/SECURITY.md)               | Threat model, controls, security tests, privacy                            |
 | [docs/DESIGN-SYSTEM.md](docs/DESIGN-SYSTEM.md)     | New School brand audit, tokens, typography, components, RTL, accessibility |
 | [docs/CONTENT-MODEL.md](docs/CONTENT-MODEL.md)     | Cycles model, block documents, exercises, migration of existing materials  |
+| [docs/CONTENT-AUDIT.md](docs/CONTENT-AUDIT.md)     | What the existing notebooks contain and what that changes                  |
 | [docs/ROADMAP.md](docs/ROADMAP.md)                 | MVP, phases, decisions needed, Phase 0 checklist, TODO                     |
 | [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)           | GitHub org setup, environments, CI/CD, env vars, backups, costs            |
 

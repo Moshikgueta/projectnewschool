@@ -105,6 +105,20 @@ Rules:
 - Teacher-only material is stored in `section_teacher_notes`, never inside `blocks`.
 - `schemaVersion` lets content be migrated by script when a block changes shape.
 
+### Teacher view and student view (added after the content audit)
+
+New School's notebooks are **live lesson plans** (see [CONTENT-AUDIT.md](CONTENT-AUDIT.md)).
+Every notebook section therefore renders in two views of the same material:
+
+- **Student view:** the section's `blocks`: prompts, sentence frames, examples, rules,
+  vocabulary, homework.
+- **Teacher view:** the same blocks **plus** teacher notes: timings, stages, grouping
+  (pairs, breakout rooms), recommended activity pairs, instructions.
+
+Teacher notes stay in `section_teacher_notes` (never sent to students). Each note carries
+`anchor: <block id>`, so the teacher view can place it right after the student block it
+belongs to without the two ever being stored together.
+
 ### Block catalogue (v1 proposal)
 
 | Block                  | React component           | Notes                                                  |
@@ -128,6 +142,10 @@ Rules:
 | `callout`              | `<Callout/>`              | info/warning variants from functional tokens           |
 
 `teacherTip` exists as a block type **only** inside `section_teacher_notes`.
+
+**Added in v1.1 by the content audit** (details in CONTENT-AUDIT.md §3): `cycleOverview`,
+`sentenceFrame`, `discussionQuestions`, `classActivity`, `wordBank`, `ruleSummary`,
+`aiTutorPrompt`, `externalLink` (allow-listed hosts only).
 
 Each block = one Zod schema + one component + one entry in the registry. An unknown or
 invalid block renders a safe "content unavailable" placeholder in production and fails
