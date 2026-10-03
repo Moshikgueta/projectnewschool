@@ -1,0 +1,346 @@
+# Cycle "Family", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: family
+title: Family
+goal: Talk about your family, using possessives, dates and numbers.
+position: 2
+status: in_review
+
+review:
+  - >-
+    Summary rule 2 in the source says the possessive word changes with the thing
+    owned, not with the owner. In English it is the other way round (his/her follow
+    the owner). The rule is rewritten here; please confirm the wording.
+  - >-
+    The family tree worksheet (Activity 2) is an Adobe Acrobat link, which is not on
+    the link allow-list. It needs to move into the course's own media, or the host
+    needs approval. Until then the teacher shares it on screen (see the teacher note).
+  - >-
+    Small corrections: "My mothers name" → "My mother's name"; "Hannas house" →
+    "Hanna's house"; "My family and me travel" → "My family and I travel"; "Sam cooks
+    great" → "Sam is a great cook"; Cousin "בן דודה" → "בן דוד / בת דודה". The repeated
+    lines in the "Family trip" Mori message were removed.
+  - Activity times given as ranges (15–20 minutes) are recorded as 20 minutes.
+  - >-
+    Numbers are three to a card in the vocabulary ("One two three"), as in Quizlet.
+    Keep them that way, or one number per card?
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: family-class
+    title: 'Class: Family'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Family
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Possessives
+            description: '*my, your, his, her, our, their*'
+          - name: Dates and numbers
+            description: Birthdays, months and ordinal numbers (1st, 2nd, 3rd…)
+      - id: quizlet
+        type: externalLink
+        label: Family words on Quizlet
+        url: https://quizlet.com/il/919800288/basic-english-family-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I spend / do not spend a lot of time with my family.
+        example: I am Dana. I do not spend a lot of time with my family.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Name your family members and their names.
+            frame: |-
+              My father / mother. His / Her name is ___.
+              My brother / sister. His / Her name is ___.
+              My cousins. Their names are ___.
+          - question: What do you like to do with your family?
+            frame: I like to ___ with my ___.
+          - question: Who do you talk to a lot in your family? Why?
+            frame: I talk to my ___ a lot, because ___.
+          - question: When and where do you meet with your family?
+            frame: I meet with my family in / on / at ___ in / on / at ___.
+          - question: Name 3 things you like about someone in your family.
+            frame: I like that my ___ is ___, ___ and ___.
+          - question: Who do you live with?
+            frame: I live alone. / I live with my ___, ___ and ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Before or after?'
+        skills: [Dates and numbers, Possessives]
+        minutes: 20
+        steps:
+          - Listen to your teacher's example.
+          - Say the birthday of someone in your family. Use the right possessive word.
+          - The next student says if their date is **before** or **after**, and gives the date.
+        example: |-
+          *My mother's name is Dvora. Her birthday is on February 9th.*
+          *My sister's birthday is after! Her birthday is on March 26th.*
+          *My brother's birthday is before! His birthday is on March 13th.*
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: My family tree'
+        skills: [Possessives]
+        minutes: 20
+        steps:
+          - Open the family tree your teacher shares.
+          - Complete the family tree and the sentences below (10 minutes). Use *my, his, her, their*.
+          - Share your family tree with the group.
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Complete the sentences
+        items:
+          - question: This is me! My name is ___. I am ___ years old.
+          - question: This is my ___. His / Her name is ___. He / She is ___ years old.
+          - question: This is my ___. His / Her name is ___. He / She is ___ years old.
+          - question: These are my ___. Their names are ___. They are ___ years old.
+      - id: act3
+        type: classActivity
+        title: "Activity 3: Let's plan a family trip!"
+        skills: [Dates and numbers]
+        minutes: 20
+        steps:
+          - Complete the trip plan below (10 minutes).
+          - Share your trip schedule with the group.
+        example: |-
+          **Destination:** Paris, France
+          **Travellers:** Me, my mom, my dad and my brother
+          On **July the fifth**, we take the plane to **Paris**.
+          On **July the sixth**, we **visit the Eiffel Tower and eat lunch at a French café**.
+          On **July the seventh**, we **visit the Louvre Museum and take a boat tour on the Seine**.
+          On **July the eighth**, we go back home :)
+      - id: act3-plan
+        type: discussionQuestions
+        title: Family trip
+        items:
+          - question: 'Destination: ___'
+          - question: 'Travellers: Me, my ___, my ___ and my ___'
+          - question: On ___ we take the plane / bus to ___.
+          - question: On ___ we ___.
+          - question: On ___ we ___.
+          - question: On ___ we go back home :)
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Your favorite thing about…'
+        skills: [Possessives]
+        minutes: 20
+        steps:
+          - Work in pairs.
+          - Interview your partner with the two questions below (10 minutes).
+          - Share 1–2 nice things about your partner's family with the group.
+        example: "*Tom says his favorite thing about his dad is his cooking. His dad's favorite thing about Tom is his drawings!*"
+      - id: act4-questions
+        type: discussionQuestions
+        items:
+          - question: What is your favorite thing about your father / mother / brother / sister, and why?
+            frame: My favorite thing about him / her is his / her ___. / … is that ___.
+          - question: What is his / her favorite thing about you?
+            frame: His / Her favorite thing about me is my ___. / … is that ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Possessives** (Activities 2 and 4) and **Dates and
+          numbers** (Activities 1 and 3). Recommended combinations: Activities 2 and 3,
+          or Activities 1 and 4.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Give your own example first, then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Model the sentence first: "My mother's name is Dvora. Her birthday is on
+          February 9th." Every student must say the date and the correct possessive.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Share the family tree worksheet on screen (the original Acrobat link is in the
+          old notebook; it is not yet in the platform). Half of the group shares their
+          tree; the other half shares in Activity 3.
+      - id: n-act3
+        anchor: act3
+        text: The half of the group that did not share in Activity 2 shares their trip schedule.
+      - id: n-act4
+        anchor: act4
+        text: Pairs have 10 minutes to ask and answer, then each pair shares with the group.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: family-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-possessives
+        type: ruleSummary
+        skill: Possessives
+        rules:
+          - text: 'In English, the possessive word comes **before** the thing: **my** mom (in Hebrew: אמא **שלי**).'
+          - text: 'The word depends on **who owns** the thing: Sam → **his** father, Hanna → **her** mother.'
+            examples:
+              - Sam is a great cook. **His** father is a great cook too.
+              - I love to go to Hanna's house. **Her** mother makes the best lasagna.
+          - text: Choose the word from the table.
+      - id: possessives-table
+        type: table
+        caption: Possessive words
+        header: [Word, Example]
+        rows:
+          - [My, My brother is very tall.]
+          - [Our, Our parents love Italian food.]
+          - [Your (one person), Your sister is very kind.]
+          - [Your (more than one), Your grandparents live in Italy.]
+          - [His, Sam is a great cook. His father is a great cook too.]
+          - [Her, I love to go to Hanna's house. Her mother makes the best lasagna.]
+          - [Their, John and Susan live in Japan. Their cousins visit them every year.]
+      - id: rules-dates
+        type: ruleSummary
+        skill: Numbers and dates
+        rules:
+          - text: In American English, write the month before the day.
+            examples: ['July 4, 2024 (not 4 July 2024)']
+          - text: Use *st*, *nd*, *rd* or *th* for ordinal numbers.
+            examples: [January 1st, February 2nd, March 3rd, April 4th]
+          - text: Say *on* before dates and *in* before months and years.
+            examples: [I was born on March 5th., I was born in March 1998.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: family-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy this message and send it. Mori will ask you questions; answer every one.
+      - id: mori-family
+        type: aiTutorPrompt
+        title: Talk about your family
+        message: >-
+          Hi Mori! I want to talk about my family. Can you ask me questions about my
+          family using the skills Possessives and Dates & Numbers? Use only present
+          simple, and please correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-trip
+        type: aiTutorPrompt
+        title: Family trip
+        intro: Fill in the blanks, then send the message to Mori.
+        message: |-
+          Hi Mori! I am planning a family trip and I want to share it with you:
+          My family and I travel to ___ on ___ (date).
+          On ___ (date), we ___ (activity).
+          On ___ (date), we ___ (activity).
+          On ___ (date), we ___ (activity).
+          On ___ (date), we come back home!
+          Please ask me questions about my trip.
+      - id: mori-routine
+        type: aiTutorPrompt
+        title: Family routine
+        intro: Fill in the blanks, then send the message to Mori.
+        message: |-
+          Hey Mori! This is my family routine:
+          On Mondays, my mother ___.
+          On Tuesdays, my father ___.
+          On Wednesdays, my brother ___.
+          On Thursdays, I ___.
+          On Fridays, my sister ___.
+          On Saturdays, we ___.
+          On Sundays, ___.
+          Please ask me questions about my family routine.
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: family-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Family words
+        glossLang: he
+        link: https://quizlet.com/il/919800288/basic-english-family-flash-cards/
+        items: &family-words
+          - { term: One two three, gloss: אחד שתיים שלוש }
+          - { term: Four five six, gloss: ארבע חמש שש }
+          - { term: Seven eight nine, gloss: שבע שמונה תשע }
+          - { term: Ten, gloss: עשר }
+          - { term: Family, gloss: משפחה }
+          - { term: Father, gloss: אבא }
+          - { term: Mother, gloss: אמא }
+          - { term: Brother, gloss: אח }
+          - { term: Sister, gloss: אחות }
+          - { term: Cousin, gloss: בן דוד / בת דודה }
+          - { term: Favorite, gloss: אהוב }
+          - { term: Holiday, gloss: חג }
+          - { term: Celebrate, gloss: לחגוג }
+          - { term: Date, gloss: תאריך }
+          - { term: Month, gloss: חודש }
+          - { term: Eat, gloss: לאכול }
+          - { term: Travel, gloss: לנסוע }
+          - { term: Plane, gloss: מטוס }
+          - { term: Bus, gloss: אוטובוס }
+          - { term: Destination, gloss: יעד }
+          - { term: Schedule, gloss: לוח זמנים }
+          - { term: Visit, gloss: לבקר }
+          - { term: Museum, gloss: מוזיאון }
+          - { term: Trip, gloss: טיול }
+          - { term: Home, gloss: בית }
+          - { term: Person, gloss: אדם }
+          - { term: Me, gloss: אני }
+          - { term: His, gloss: שלו }
+          - { term: Her, gloss: שלה }
+          - { term: Brother-in-law, gloss: גיס }
+          - { term: Father-in-law, gloss: חם }
+          - { term: Mother-in-law, gloss: חמה }
+          - { term: Sister-in-law, gloss: גיסה }
+          - { term: Nephew, gloss: אחיין }
+
+vocabulary:
+  - slug: family
+    title: Family
+    items: *family-words

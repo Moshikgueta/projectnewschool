@@ -247,6 +247,35 @@ course is signed off by a teacher.
 5. **Validate and import** to staging; teacher reviews it on real devices (mobile too).
 6. **Sign off and freeze** the Google Doc as archived (to avoid two diverging sources).
 
+### 6.4 Content files and tooling (implemented in Phase 3)
+
+Course source lives in `content/<course-slug>/`:
+
+- `course.yaml`: slug, title, language, level, instruction language, status, book titles.
+- One file per cycle (`02-family.yaml`): slug, title, goal, position, status, a
+  `review` list of open questions for the reviewing teacher, `sections` (each with
+  `slug`, `book`, `phase`, `blocks` and `teacherNotes`) and `vocabulary` sets.
+
+Schemas: `src/content/files.ts` (files) and `src/content/schema.ts` (blocks). Unknown
+fields are errors, so a typo never disappears silently. Cross-checks: teacher-note
+anchors must be block ids of the same section; slugs, cycle positions and vocabulary
+terms are unique; every cycle names a defined course; links must be on the allow-list.
+
+- `pnpm content:validate`: run in CI. Invalid content fails the build (a unit test
+  also validates `content/`).
+- `pnpm content:import`: validates, then upserts by slug (language → level → course →
+  books → cycle → sections → teacher notes → vocabulary). Running it twice changes
+  nothing. Sections are never deleted (student answers hang off them); a section
+  missing from the file is reported. Words removed from a vocabulary set are removed.
+  It runs against the local database by default. Staging needs `APP_ENV=staging` and
+  `--confirm=<supabase host>`. Production is always refused: content reaches
+  production through review in the CMS (Phase 8).
+
+First conversion: **English Foundations 1 · Family** (`content/en-foundations-1/`),
+status `in_review`, with 6 open review questions. One of them is a factual error in
+the source: rule 2 of the possessives summary says the word follows the thing owned,
+which is wrong for English.
+
 The pilot measures the hours per cycle of conversion. That number sets the realistic
 schedule for the other 17 notebooks, and it's the biggest unknown in the project.
 

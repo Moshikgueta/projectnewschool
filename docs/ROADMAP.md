@@ -100,8 +100,10 @@ Status 2026-10-03:
 - [x] Student pages: `/learn/notebook` (cycles, active first, status per section) and `/learn/notebook/[sectionId]` (answers, mark as finished). Opening a section starts reading progress and records a learning event
 - [x] Teacher pages: the group page lists notebook sections; `/teach/groups/[groupId]/notebook/[sectionId]` shows notes and that group's answers only
 - [x] Database: `block_responses` and `section_progress` are own-row writes under RLS (ADR-023); a student can clear their own answer; the AI tutor link on courses must be https
-- [x] Tests: 45 unit, 82 pgTAP, 29 end-to-end (including teacher notes never reaching student HTML, and 404s across courses, groups and drafts)
-- [ ] Content tooling (`content:validate`, `content:import`) and the draft English Foundations "Family" cycle
+- [x] Tests: 52 unit, 82 pgTAP, 29 end-to-end (including teacher notes never reaching student HTML, and 404s across courses, groups and drafts)
+- [x] Content tooling: `content:validate` (in CI) and `content:import` (idempotent upserts by slug; local by default, staging with confirmation, never production)
+- [x] First conversion: English Foundations 1 · "Family" (4 sections, 8 teacher notes, 34 words), status `in_review` with 6 questions for the reviewing teacher
+- [ ] Teacher review of the "Family" draft, then publish it for the pilot group
 - [ ] Media blocks (audio, images) via signed URLs, once the media pipeline exists
 - [ ] Mori link per course (waiting on the link from the school)
 

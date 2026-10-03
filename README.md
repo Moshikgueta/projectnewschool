@@ -100,6 +100,8 @@ Secrets live in Vercel and GitHub Actions secrets only.
 | `pnpm test:db`                            | Database and RLS tests (pgTAP via `supabase test db`) |
 | `pnpm test:api`                           | API-level authorization tests (needs local Supabase)  |
 | `pnpm check:tokens`                       | No raw colours, no left/right utilities (brand + RTL) |
+| `pnpm content:validate`                   | Check every file in `content/` (also runs in CI)      |
+| `pnpm content:import`                     | Upsert `content/` into the local database by slug     |
 | `pnpm test:e2e`                           | End-to-end and accessibility tests (Playwright + axe) |
 | `pnpm build`                              | Production build                                      |
 | `pnpm exec supabase migration new <name>` | Create a database migration                           |

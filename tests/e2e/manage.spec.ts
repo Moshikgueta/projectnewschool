@@ -12,7 +12,16 @@ test('a manager sets up a group and the enrolled student sees the course', async
 
   // Overview lists every course, drafts included.
   const courses = page.getByRole('region', { name: 'Courses' });
-  await expect(courses.getByRole('row')).toHaveCount(4); // header + 3 courses
+  // (Imported content, e.g. in CI, may add more courses than the fixtures.)
+  for (const title of [
+    'Español básico (fixture)',
+    'Français niveau 1 (fixture)',
+    'Español nivel 2 (draft fixture)',
+  ]) {
+    await expect(
+      courses.getByRole('row', { name: new RegExp(title.replace(/[()]/g, '\\$&')) }),
+    ).toHaveCount(1);
+  }
   await expect(courses).toContainText('Draft');
 
   await page
