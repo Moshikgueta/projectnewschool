@@ -1,13 +1,5 @@
-import { expect, test, type Page } from '@playwright/test';
-import { IDS, USERS, signIn, totp } from './helpers';
-
-async function enrollMfa(page: Page) {
-  await expect(page).toHaveURL(/\/account\/mfa/);
-  await page.getByRole('button', { name: 'Set up authenticator app' }).click();
-  const secret = (await page.locator('code').innerText()).trim();
-  await page.getByLabel('6-digit code').fill(totp(secret));
-  await page.getByRole('button', { name: 'Verify' }).click();
-}
+import { expect, test } from '@playwright/test';
+import { IDS, USERS, passMfa, signIn } from './helpers';
 
 test.describe('teachers', () => {
   test('teacher X sees their groups and students', async ({ page }) => {
@@ -39,7 +31,7 @@ test.describe('MFA-protected roles', () => {
   test('a pedagogical manager must complete two-step verification first', async ({ page }) => {
     await signIn(page, USERS.manager);
     await expect(page).toHaveURL(/\/account\/mfa\?next=\/manage/);
-    await enrollMfa(page);
+    await passMfa(page, USERS.manager);
     await expect(page).toHaveURL(/\/manage$/);
     await expect(page.getByRole('heading', { name: 'Pedagogical management' })).toBeVisible();
   });
@@ -49,7 +41,7 @@ test.describe('MFA-protected roles', () => {
     request,
   }) => {
     await signIn(page, USERS.admin);
-    await enrollMfa(page);
+    await passMfa(page, USERS.admin);
     await expect(page).toHaveURL(/\/admin$/);
     await expect(page.getByRole('heading', { name: /All accounts/ })).toBeVisible();
 

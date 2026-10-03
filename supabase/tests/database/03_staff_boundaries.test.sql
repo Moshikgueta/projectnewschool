@@ -3,7 +3,7 @@
 -- the last-admin rule hold. Fixtures: supabase/seed.sql.
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(27);
+select plan(32);
 
 create function pg_temp.scalar_as(p_email text, p_sql text, p_aal text default 'aal1')
 returns bigint language plpgsql as $$
@@ -101,6 +101,22 @@ select is(
 select is(
   pg_temp.try_as(:M, $$insert into public.user_roles (user_id, role) values ('00000000-0000-4000-8000-0000000000a3', 'teacher')$$, 'aal2'),
   '42501', 'managers cannot grant roles (admin only)');
+
+select is(
+  pg_temp.try_as(:M, $$insert into public.groups (id, course_id, name) values ('a0000000-0000-4000-8000-0000000000f1', '30000000-0000-4000-8000-000000000001', 'New group')$$, 'aal1'),
+  '42501', 'manager without MFA cannot create a group');
+select is(
+  pg_temp.try_as(:M, $$insert into public.groups (id, course_id, name) values ('a0000000-0000-4000-8000-0000000000f1', '30000000-0000-4000-8000-000000000001', 'New group')$$, 'aal2'),
+  'ok', 'manager with MFA can create a group');
+select is(
+  pg_temp.try_as(:M, $$insert into public.group_teachers (group_id, teacher_id) values ('a0000000-0000-4000-8000-0000000000f1', '00000000-0000-4000-8000-0000000000b2')$$, 'aal2'),
+  'ok', 'manager with MFA can assign a teacher');
+select is(
+  pg_temp.try_as(:M, $$insert into public.enrollments (group_id, student_id) values ('a0000000-0000-4000-8000-0000000000f1', '00000000-0000-4000-8000-0000000000a3')$$, 'aal2'),
+  'ok', 'manager with MFA can enroll a student');
+select is(
+  pg_temp.try_as(:M, $$insert into public.enrollments (group_id, student_id) values ('a0000000-0000-4000-8000-0000000000f1', '00000000-0000-4000-8000-0000000000b1')$$, 'aal2'),
+  '23514', 'only student accounts can be enrolled');
 
 -- ── admin: accounts, not learning data ──────────────────────────────────────
 select is(pg_temp.scalar_as(:ADM, 'select count(*) from public.audit_log', 'aal1'), 0::bigint,

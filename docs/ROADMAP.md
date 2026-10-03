@@ -75,9 +75,10 @@ Status 2026-10-03:
 - [x] `/design-system` reference page (local/preview; staging/production only for managers and admins with MFA)
 - [x] Student dashboard on real data: greeting in the student's time zone, continue where you left off, My Course cards with counts, course switcher, recommendations (rules: teacher assignments, unfinished work), recent activity, calm progress (activities completed, days practised against a weekly goal of 3, current cycle)
 - [x] Placeholder pages for notebook, workbook, practice and vocabulary
-- [x] Tests: 34 unit, 61 pgTAP, 10 API, 21 end-to-end (incl. Hebrew/RTL, axe in both directions, phone layout)
+- [x] Tests: 34 unit, 66 pgTAP, 10 API, 23 end-to-end (incl. Hebrew/RTL, axe in both directions, phone layout, the full manager flow)
 - [ ] Official brand values in `src/ui/tokens.css` and the official logo in `<Logo />` (blocked on brand files)
-- [ ] Minimal manager screens for groups and enrollment (needed before the pilot)
+- [x] Manager screens for the pilot: course overview (drafts included), groups (create, edit status and schedule), assign/remove teachers, enroll/re-enroll students and change enrollment status, set each group's cycle states. All writes use the manager's own MFA-verified session, so RLS enforces them
+- [ ] Manager can invite students directly (today: admin invites, manager enrolls)
 
 Planned scope:
 

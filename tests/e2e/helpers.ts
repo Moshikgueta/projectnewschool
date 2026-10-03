@@ -1,4 +1,7 @@
 import { createHmac } from 'node:crypto';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { expect, type Page } from '@playwright/test';
 
 export const PASSWORD = 'Local-dev-password-1'; // supabase/seed.sql — local only
@@ -49,4 +52,32 @@ export function totp(base32Secret: string, now = Date.now()): string {
   const offset = hmac[hmac.length - 1]! & 0xf;
   const code = (hmac.readUInt32BE(offset) & 0x7fffffff) % 1_000_000;
   return code.toString().padStart(6, '0');
+}
+
+/** Authenticator secrets enrolled during this run, shared between test files. */
+export const MFA_SECRETS_FILE = join(tmpdir(), 'newschool-e2e-mfa-secrets.json');
+
+function readSecrets(): Record<string, string> {
+  return existsSync(MFA_SECRETS_FILE) ? JSON.parse(readFileSync(MFA_SECRETS_FILE, 'utf8')) : {};
+}
+
+/**
+ * Complete two-step verification on /account/mfa, enrolling an authenticator
+ * on first use in this run and verifying with it afterwards.
+ */
+export async function passMfa(page: Page, email: string) {
+  await expect(page).toHaveURL(/\/account\/mfa/);
+  const secrets = readSecrets();
+  const setUp = page.getByRole('button', { name: 'Set up authenticator app' });
+  if (await setUp.isVisible()) {
+    await setUp.click();
+    const secret = (await page.locator('code').innerText()).trim();
+    writeFileSync(MFA_SECRETS_FILE, JSON.stringify({ ...secrets, [email]: secret }));
+    await page.getByLabel('6-digit code').fill(totp(secret));
+  } else {
+    const secret = secrets[email];
+    if (!secret) throw new Error(`No authenticator secret recorded for ${email} in this run`);
+    await page.getByLabel('6-digit code').fill(totp(secret));
+  }
+  await page.getByRole('button', { name: 'Verify' }).click();
 }

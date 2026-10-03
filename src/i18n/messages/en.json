@@ -7,8 +7,16 @@
     "soon": "Coming soon",
     "loading": "Loading…",
     "languageLabel": "Interface language",
-    "languages": { "he": "עברית", "en": "English" },
-    "alert": { "info": "Note", "success": "Done", "warning": "Warning", "error": "Error" },
+    "languages": {
+      "he": "עברית",
+      "en": "English"
+    },
+    "alert": {
+      "info": "Note",
+      "success": "Done",
+      "warning": "Warning",
+      "error": "Error"
+    },
     "mainNav": "Main",
     "accountMenu": "Account"
   },
@@ -169,7 +177,9 @@
     }
   },
   "teach": {
-    "nav": { "groups": "My groups" },
+    "nav": {
+      "groups": "My groups"
+    },
     "groups": {
       "title": "My groups",
       "subtitle": "The groups you teach.",
@@ -190,14 +200,100 @@
     }
   },
   "manage": {
-    "nav": { "overview": "Overview" },
+    "nav": {
+      "overview": "Overview",
+      "groups": "Groups"
+    },
     "title": "Pedagogical management",
-    "subtitle": "Courses, cycles, groups and enrollments.",
-    "comingTitle": "Management screens are on the way",
-    "comingBody": "Groups and enrollments come first, for the pilot. The full content editor comes later."
+    "subtitle": "Courses, groups, teachers and enrollment.",
+    "courses": {
+      "title": "Courses",
+      "colCourse": "Course",
+      "colLevel": "Level",
+      "colStatus": "Status",
+      "colGroups": "Groups",
+      "status": {
+        "draft": "Draft",
+        "in_review": "In review",
+        "published": "Published",
+        "archived": "Archived"
+      },
+      "contentNote": "Courses and cycles are created from content files for now; the content editor comes later."
+    },
+    "groups": {
+      "title": "Groups",
+      "subtitle": "Each group studies one course with one or more teachers.",
+      "new": "New group",
+      "course": "Course",
+      "name": "Group name",
+      "schedule": "Schedule note",
+      "scheduleHint": "For example: Tuesdays 18:00, room 2.",
+      "startsOn": "Start date",
+      "create": "Create group",
+      "empty": "No groups yet",
+      "emptyBody": "Create the first group for a course.",
+      "colGroup": "Group",
+      "colCourse": "Course",
+      "colTeachers": "Teachers",
+      "colStudents": "Students",
+      "colStatus": "Status",
+      "noTeacher": "No teacher yet",
+      "status": {
+        "planned": "Planned",
+        "active": "Active",
+        "finished": "Finished",
+        "archived": "Archived"
+      }
+    },
+    "group": {
+      "back": "All groups",
+      "details": "Details",
+      "status": "Status",
+      "save": "Save changes",
+      "saved": "Saved.",
+      "teachers": "Teachers",
+      "noTeachers": "No teacher assigned yet.",
+      "teacher": "Teacher",
+      "addTeacher": "Assign teacher",
+      "remove": "Remove",
+      "removeLabel": "Remove {name}",
+      "students": "Students",
+      "noStudents": "No students enrolled yet.",
+      "student": "Student",
+      "enroll": "Enroll",
+      "noCandidates": "Every student account is already active in this group. New students are invited from the admin area.",
+      "enrollmentStatus": "Enrollment status for {name}",
+      "update": "Update",
+      "enrollment": {
+        "active": "Active",
+        "paused": "Paused",
+        "completed": "Completed",
+        "withdrawn": "Withdrawn"
+      },
+      "cycles": "Cycles",
+      "cyclesHint": "Students see the active cycles of their group first. Unpublished cycles stay hidden from students.",
+      "noCycles": "This course has no cycles yet.",
+      "cycleState": "State of {title}",
+      "unpublished": "Not published",
+      "state": {
+        "none": "Not started",
+        "upcoming": "Upcoming",
+        "active": "Active",
+        "completed": "Completed"
+      }
+    },
+    "errors": {
+      "invalid": "Check the form and try again.",
+      "duplicate": "That is already set.",
+      "wrongRole": "That person does not have the right role for this.",
+      "notAllowed": "You do not have permission for this change.",
+      "failed": "The change could not be saved."
+    }
   },
   "admin": {
-    "nav": { "accounts": "Accounts" },
+    "nav": {
+      "accounts": "Accounts"
+    },
     "title": "Accounts",
     "subtitle": "Invite people and see who has which role.",
     "inviteTitle": "Invite someone",

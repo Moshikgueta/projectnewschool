@@ -1,4 +1,6 @@
+import { rmSync } from 'node:fs';
 import { createClient } from '@supabase/supabase-js';
+import { MFA_SECRETS_FILE } from './helpers';
 
 // Remove MFA factors left on seed staff accounts by an earlier run, so the MFA
 // enrollment test always starts from "not set up". Local/CI databases only.
@@ -21,5 +23,14 @@ export default async function globalSetup() {
     }
     // Fixture accounts browse in English; tests that need Hebrew switch to it.
     await admin.from('profiles').update({ ui_locale: 'en' }).eq('id', user.id);
+  }
+  rmSync(MFA_SECRETS_FILE, { force: true });
+
+  // Groups created by earlier runs of the management tests.
+  const { data: groups } = await admin.from('groups').select('id').like('name', 'E2E %');
+  const ids = (groups ?? []).map((g) => g.id);
+  if (ids.length) {
+    await admin.from('enrollments').delete().in('group_id', ids);
+    await admin.from('groups').delete().in('id', ids);
   }
 }

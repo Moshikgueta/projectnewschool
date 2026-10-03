@@ -34,9 +34,9 @@ effect immediately because roles are read from the database on every request. Se
 actions that must see revocation instantly should call `auth.getUser()` (round trip to
 Supabase Auth) rather than rely on the token alone.
 
-**Test evidence:** 61 pgTAP database checks, 10 API-level attack tests with a real
-student token, 16 end-to-end tests (including axe accessibility checks and the full
-invite → email → set-password flow), and 12 unit tests. Opening up a single policy
+**Test evidence:** 66 pgTAP database checks, 10 API-level attack tests with a real
+student token, 23 end-to-end tests (including axe accessibility checks and the full
+invite → email → set-password flow and the manager group-setup flow), and 34 unit tests. Opening up a single policy
 on purpose makes 7 tests fail (checked).
 
 **Still to do:** custom SMTP on the school domain and leaked-password protection

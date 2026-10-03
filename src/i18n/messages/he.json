@@ -7,8 +7,16 @@
     "soon": "בקרוב",
     "loading": "טוען…",
     "languageLabel": "שפת הממשק",
-    "languages": { "he": "עברית", "en": "English" },
-    "alert": { "info": "הערה", "success": "בוצע", "warning": "אזהרה", "error": "שגיאה" },
+    "languages": {
+      "he": "עברית",
+      "en": "English"
+    },
+    "alert": {
+      "info": "הערה",
+      "success": "בוצע",
+      "warning": "אזהרה",
+      "error": "שגיאה"
+    },
     "mainNav": "ניווט ראשי",
     "accountMenu": "חשבון"
   },
@@ -169,7 +177,9 @@
     }
   },
   "teach": {
-    "nav": { "groups": "הקבוצות שלי" },
+    "nav": {
+      "groups": "הקבוצות שלי"
+    },
     "groups": {
       "title": "הקבוצות שלי",
       "subtitle": "הקבוצות שבהן את/ה מלמד/ת.",
@@ -190,14 +200,100 @@
     }
   },
   "manage": {
-    "nav": { "overview": "סקירה" },
+    "nav": {
+      "overview": "סקירה",
+      "groups": "קבוצות"
+    },
     "title": "ניהול פדגוגי",
-    "subtitle": "קורסים, מחזורים, קבוצות ורישום.",
-    "comingTitle": "מסכי הניהול בדרך",
-    "comingBody": "קודם קבוצות ורישום, בשביל הפיילוט. עורך התוכן המלא יגיע בהמשך."
+    "subtitle": "קורסים, קבוצות, מורים ורישום.",
+    "courses": {
+      "title": "קורסים",
+      "colCourse": "קורס",
+      "colLevel": "רמה",
+      "colStatus": "סטטוס",
+      "colGroups": "קבוצות",
+      "status": {
+        "draft": "טיוטה",
+        "in_review": "בבדיקה",
+        "published": "פורסם",
+        "archived": "בארכיון"
+      },
+      "contentNote": "בשלב זה קורסים ומחזורים נוצרים מקובצי תוכן; עורך התוכן יגיע בהמשך."
+    },
+    "groups": {
+      "title": "קבוצות",
+      "subtitle": "כל קבוצה לומדת קורס אחד עם מורה אחד או יותר.",
+      "new": "קבוצה חדשה",
+      "course": "קורס",
+      "name": "שם הקבוצה",
+      "schedule": "הערת מערכת שעות",
+      "scheduleHint": "למשל: ימי שלישי 18:00, כיתה 2.",
+      "startsOn": "תאריך התחלה",
+      "create": "יצירת קבוצה",
+      "empty": "עדיין אין קבוצות",
+      "emptyBody": "צרו את הקבוצה הראשונה לקורס.",
+      "colGroup": "קבוצה",
+      "colCourse": "קורס",
+      "colTeachers": "מורים",
+      "colStudents": "תלמידים",
+      "colStatus": "סטטוס",
+      "noTeacher": "עדיין אין מורה",
+      "status": {
+        "planned": "מתוכננת",
+        "active": "פעילה",
+        "finished": "הסתיימה",
+        "archived": "בארכיון"
+      }
+    },
+    "group": {
+      "back": "כל הקבוצות",
+      "details": "פרטים",
+      "status": "סטטוס",
+      "save": "שמירת שינויים",
+      "saved": "נשמר.",
+      "teachers": "מורים",
+      "noTeachers": "עדיין לא שויך מורה.",
+      "teacher": "מורה",
+      "addTeacher": "שיוך מורה",
+      "remove": "הסרה",
+      "removeLabel": "הסרת {name}",
+      "students": "תלמידים",
+      "noStudents": "עדיין אין תלמידים רשומים.",
+      "student": "תלמיד/ה",
+      "enroll": "רישום",
+      "noCandidates": "כל חשבונות התלמידים כבר פעילים בקבוצה. תלמידים חדשים מוזמנים מאזור הניהול.",
+      "enrollmentStatus": "סטטוס הרישום של {name}",
+      "update": "עדכון",
+      "enrollment": {
+        "active": "פעיל/ה",
+        "paused": "בהקפאה",
+        "completed": "סיים/ה",
+        "withdrawn": "עזב/ה"
+      },
+      "cycles": "מחזורים",
+      "cyclesHint": "התלמידים רואים קודם את המחזורים הפעילים של הקבוצה. מחזורים שלא פורסמו נשארים מוסתרים מהתלמידים.",
+      "noCycles": "לקורס הזה עדיין אין מחזורים.",
+      "cycleState": "מצב {title}",
+      "unpublished": "לא פורסם",
+      "state": {
+        "none": "לא התחיל",
+        "upcoming": "בקרוב",
+        "active": "פעיל",
+        "completed": "הושלם"
+      }
+    },
+    "errors": {
+      "invalid": "בדקו את הטופס ונסו שוב.",
+      "duplicate": "זה כבר מוגדר.",
+      "wrongRole": "לאדם הזה אין את התפקיד המתאים.",
+      "notAllowed": "אין לך הרשאה לשינוי הזה.",
+      "failed": "לא הצלחנו לשמור את השינוי."
+    }
   },
   "admin": {
-    "nav": { "accounts": "חשבונות" },
+    "nav": {
+      "accounts": "חשבונות"
+    },
     "title": "חשבונות",
     "subtitle": "הזמנת אנשים וצפייה בתפקידים.",
     "inviteTitle": "הזמנת משתמש/ת",

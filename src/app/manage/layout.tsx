@@ -14,7 +14,10 @@ export default async function ManageLayout({ children }: { children: ReactNode }
       userName={user.displayName}
       signOutAction={signOut}
       languageAction={setInterfaceLanguage}
-      nav={[{ href: '/manage', label: t('manage.nav.overview'), icon: 'settings' }]}
+      nav={[
+        { href: '/manage', label: t('manage.nav.overview'), icon: 'settings' },
+        { href: '/manage/groups', label: t('manage.nav.groups'), icon: 'groups' },
+      ]}
     >
       {children}
     </AppShell>
