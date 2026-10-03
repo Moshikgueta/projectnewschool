@@ -158,7 +158,15 @@ Learner-record **writes** happen only through Server Actions using the privilege
 Low-risk, ungraded state has narrow own-row policies instead (ADR-023):
 `block_responses` (insert, update of `answer` only, delete) and `section_progress`
 (insert, update of `status`, `last_block_id` and `completed_at`), each limited to
-sections the student can read. `attempts.state` drafts are decided in Phase 4.
+sections the student can read.
+
+Exercises (Phase 4, migration `…0900_exercises`): `attempts`, `responses` and
+`vocab_review_state` stay read-only for students; Server Actions write them with the
+privileged client after checking access with the student's own session (ADR-006).
+`attempts.state` holds the player state (per item: status, tries, the student's own
+latest answer, first-try score), never keys. A partial unique index allows one open
+(`in_progress`) attempt per student and activity. `activity_items.slug` gives items a
+stable identity for imports.
 
 Note the admin column: **admin is not a superset of everything.** Admin manages accounts
 and settings; seeing student learning data requires the pedagogical role (a person can

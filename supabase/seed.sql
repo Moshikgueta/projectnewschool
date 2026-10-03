@@ -114,7 +114,11 @@ insert into public.book_sections (id, book_id, course_id, cycle_id, position, ti
   ('60000000-0000-4000-8000-000000000004', '50000000-0000-4000-8000-000000000004', '30000000-0000-4000-8000-000000000003',
    '40000000-0000-4000-8000-000000000004', 1, 'En la ciudad', '[]', 'during_class', 'published'),
   ('60000000-0000-4000-8000-000000000005', '50000000-0000-4000-8000-000000000002', '30000000-0000-4000-8000-000000000001',
-   '40000000-0000-4000-8000-000000000001', 1, 'Práctica: presentarse', '[]', 'after_class', 'published');
+   '40000000-0000-4000-8000-000000000001', 1, 'Práctica: presentarse',
+   $json$[
+     {"id":"intro","type":"text","text":"Practise on your own. You can try each question again."},
+     {"id":"ex","type":"activity","activityId":"70000000-0000-4000-8000-000000000006"}
+   ]$json$, 'after_class', 'published');
 
 insert into public.section_teacher_notes (section_id, course_id, blocks) values
   ('60000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001',
@@ -134,7 +138,9 @@ insert into public.activities (id, course_id, cycle_id, slug, title, phase, scor
   ('70000000-0000-4000-8000-000000000004', '30000000-0000-4000-8000-000000000003', '40000000-0000-4000-8000-000000000004',
    'direcciones', 'Directions', 'after_class', 'practice', 5, 'published'),
   ('70000000-0000-4000-8000-000000000005', '30000000-0000-4000-8000-000000000001', '40000000-0000-4000-8000-000000000001',
-   'antes-de-clase', 'Before class: five greetings', 'before_class', 'none', 3, 'published');
+   'antes-de-clase', 'Before class: five greetings', 'before_class', 'none', 3, 'published'),
+  ('70000000-0000-4000-8000-000000000006', '30000000-0000-4000-8000-000000000001', '40000000-0000-4000-8000-000000000001',
+   'saludos-completo', 'Greetings: every exercise type', 'after_class', 'practice', 8, 'published');
 
 insert into public.activity_items (id, activity_id, course_id, position, type, prompt, data) values
   ('80000000-0000-4000-8000-000000000001', '70000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001', 1,
@@ -144,6 +150,36 @@ insert into public.activity_items (id, activity_id, course_id, position, type, p
    'trueFalse', '[{"id":"p1","type":"text","text":"« Bonjour » se dit le matin.","lang":"fr"}]', '{}'),
   ('80000000-0000-4000-8000-000000000005', '70000000-0000-4000-8000-000000000005', '30000000-0000-4000-8000-000000000001', 1,
    'reflection', '[{"id":"p1","type":"text","text":"¿Cómo saludas a tu profesor?","lang":"es"}]', '{}');
+
+-- One item of every type (the player's E2E fixture). The public data carries
+-- no answers: the right-hand column and the tokens are stored shuffled, and
+-- their ids are numbered in display order so the ids don't pair up either.
+insert into public.activity_items (id, activity_id, course_id, position, slug, type, prompt, data) values
+  ('80000000-0000-4000-8000-000000000061', '70000000-0000-4000-8000-000000000006', '30000000-0000-4000-8000-000000000001', 1, 'nombre',
+   'multipleChoice', '[{"id":"p","type":"text","text":"¿Cómo te llamas?","lang":"es"}]',
+   '{"options":[{"id":"o1","text":"Me llamo Ana."},{"id":"o2","text":"Tengo diez años."},{"id":"o3","text":"Soy de Haifa."}]}'),
+  ('80000000-0000-4000-8000-000000000062', '70000000-0000-4000-8000-000000000006', '30000000-0000-4000-8000-000000000001', 2, 'buenos-dias',
+   'trueFalse', '[{"id":"p","type":"text","text":"«Buenos días» se dice por la mañana.","lang":"es"}]', '{}'),
+  ('80000000-0000-4000-8000-000000000063', '70000000-0000-4000-8000-000000000006', '30000000-0000-4000-8000-000000000001', 3, 'completa',
+   'fillBlank', '[{"id":"p","type":"text","text":"Complete the sentences."}]',
+   '{"text":"Me ___ Ana. ___, ¡hasta mañana!","wordBank":["llamo","Adiós"]}'),
+  ('80000000-0000-4000-8000-000000000064', '70000000-0000-4000-8000-000000000006', '30000000-0000-4000-8000-000000000001', 4, 'parejas',
+   'matching', '[{"id":"p","type":"text","text":"Match the words with their meaning."}]',
+   '{"left":[{"id":"l1","text":"hola"},{"id":"l2","text":"adiós"},{"id":"l3","text":"gracias"}],"right":[{"id":"r1","text":"thank you"},{"id":"r2","text":"hello"},{"id":"r3","text":"goodbye"}]}'),
+  ('80000000-0000-4000-8000-000000000065', '70000000-0000-4000-8000-000000000006', '30000000-0000-4000-8000-000000000001', 5, 'ordena',
+   'reorderSentence', '[{"id":"p","type":"text","text":"Put the words in order."}]',
+   '{"tokens":[{"id":"t1","text":"Ana."},{"id":"t2","text":"Me"},{"id":"t3","text":"llamo"}]}'),
+  ('80000000-0000-4000-8000-000000000066', '70000000-0000-4000-8000-000000000006', '30000000-0000-4000-8000-000000000001', 6, 'saludo',
+   'shortAnswer', '[{"id":"p","type":"text","text":"¿Cómo saludas a tu profesor?","lang":"es"}]', '{"maxLength":300}');
+
+insert into public.activity_item_keys (item_id, course_id, answer, feedback) values
+  ('80000000-0000-4000-8000-000000000061', '30000000-0000-4000-8000-000000000001', '{"optionIds":["o1"]}',
+   '{"o2":"That says how old you are.","o3":"That says where you are from."}'),
+  ('80000000-0000-4000-8000-000000000062', '30000000-0000-4000-8000-000000000001', '{"value":true}', '{}'),
+  ('80000000-0000-4000-8000-000000000063', '30000000-0000-4000-8000-000000000001',
+   '{"blanks":[{"accept":["llamo"]},{"accept":["Adiós","Chao"]}],"accents":"lenient"}', '{"incorrect":"Look at the word bank."}'),
+  ('80000000-0000-4000-8000-000000000064', '30000000-0000-4000-8000-000000000001', '{"pairs":{"l1":"r2","l2":"r3","l3":"r1"}}', '{}'),
+  ('80000000-0000-4000-8000-000000000065', '30000000-0000-4000-8000-000000000001', '{"accept":["Me llamo Ana."]}', '{}');
 
 insert into public.activity_item_keys (item_id, course_id, answer, feedback) values
   ('80000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001', '{"optionIds":["o1"]}',

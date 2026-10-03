@@ -45,4 +45,23 @@ export default async function globalSetup() {
     .delete()
     .eq('user_id', C)
     .in('type', ['section_opened', 'section_completed']);
+
+  // Exercise attempts made by earlier runs on the every-type fixture (responses cascade).
+  const ACTIVITY = '70000000-0000-4000-8000-000000000006';
+  await admin.from('attempts').delete().eq('activity_id', ACTIVITY);
+  await admin.from('learning_events').delete().eq('activity_id', ACTIVITY);
+  // Student A's visit to the workbook section that embeds it.
+  const PRACTICA = '60000000-0000-4000-8000-000000000005';
+  await admin.from('section_progress').delete().eq('user_id', A).eq('book_section_id', PRACTICA);
+  await admin.from('learning_events').delete().eq('user_id', A).eq('section_id', PRACTICA);
+
+  // Student A's flashcards, back to the seed: "hola" due now, "adiós" never seen.
+  await admin.from('vocab_review_state').delete().eq('user_id', A);
+  await admin.from('vocab_review_state').insert({
+    user_id: A,
+    vocabulary_item_id: '92000000-0000-4000-8000-000000000001',
+    course_id: '30000000-0000-4000-8000-000000000001',
+    box: 2,
+  });
+  await admin.from('learning_events').delete().eq('user_id', A).eq('type', 'vocab_reviewed');
 }

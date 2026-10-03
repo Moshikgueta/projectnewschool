@@ -4,6 +4,7 @@
 // Supabase REST API directly, bypassing the app entirely.
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
+import { checkItem, ITEM_TYPES, type ItemType } from '@/content/items';
 import type { Database } from '@/server/db.types';
 
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? 'http://127.0.0.1:54321';
@@ -91,6 +92,43 @@ describe('a student holding their own token, calling the API directly', () => {
     // `app` is not an API-exposed schema; `public` has no functions.
     const { error } = await a.rpc('has_role' as never, { p_role: 'admin' } as never);
     expect(error).not.toBeNull();
+  });
+});
+
+describe('exercises, as a student reads them through the API', () => {
+  it('carry no answers: no keys, and data that does not give the answer away by order or ids', async () => {
+    const a = await signedIn('student.a@example.com');
+    const { data: items, error } = await a
+      .from('activity_items')
+      .select('id, type, data, keys:activity_item_keys ( answer )');
+    expect(error).toBeNull();
+    expect(items?.length).toBeGreaterThan(5);
+    await a.auth.signOut();
+
+    // The keys, read with the service role only to check against.
+    const secret = process.env.SUPABASE_SECRET_KEY ?? '';
+    expect(secret, 'SUPABASE_SECRET_KEY must be set').not.toBe('');
+    const admin = createClient<Database>(url, secret, { auth: { persistSession: false } });
+    const { data: keys } = await admin
+      .from('activity_item_keys')
+      .select('item_id, answer')
+      .in(
+        'item_id',
+        items!.map((i) => i.id),
+      );
+    const keyOf = new Map(keys!.map((k) => [k.item_id, k.answer]));
+
+    for (const item of items!) {
+      // The embedded key table comes back empty for a student.
+      expect(item.keys, item.id).toEqual([]);
+      const keyText = JSON.stringify(keyOf.get(item.id) ?? null);
+      expect(JSON.stringify(item.data)).not.toContain(keyText);
+      if (ITEM_TYPES.includes(item.type as ItemType) && keyOf.has(item.id)) {
+        expect(checkItem(item.type as ItemType, item.data, keyOf.get(item.id)), item.id).toEqual(
+          [],
+        );
+      }
+    }
   });
 });
 

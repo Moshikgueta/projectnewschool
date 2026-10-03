@@ -63,13 +63,13 @@ isOneToOne: false
                   ]
                 },"activity_items": {
                   Row: {
-                    "activity_id": string,"course_id": string,"created_at": string,"data": NonNullable<Json>,"id": string,"points": number,"position": number,"prompt": NonNullable<Json>,"type": string
+                    "activity_id": string,"course_id": string,"created_at": string,"data": NonNullable<Json>,"id": string,"points": number,"position": number,"prompt": NonNullable<Json>,"slug": string | null,"type": string
                   }
                   Insert: {
-                    "activity_id": string,"course_id": string,"created_at"?: string,"data"?: NonNullable<Json>,"id"?: string,"points"?: number,"position"?: number,"prompt"?: NonNullable<Json>,"type": string
+                    "activity_id": string,"course_id": string,"created_at"?: string,"data"?: NonNullable<Json>,"id"?: string,"points"?: number,"position"?: number,"prompt"?: NonNullable<Json>,"slug"?: string | null,"type": string
                   }
                   Update: {
-                    "activity_id"?: string,"course_id"?: string,"created_at"?: string,"data"?: NonNullable<Json>,"id"?: string,"points"?: number,"position"?: number,"prompt"?: NonNullable<Json>,"type"?: string
+                    "activity_id"?: string,"course_id"?: string,"created_at"?: string,"data"?: NonNullable<Json>,"id"?: string,"points"?: number,"position"?: number,"prompt"?: NonNullable<Json>,"slug"?: string | null,"type"?: string
                   }
                   Relationships: [
                     {

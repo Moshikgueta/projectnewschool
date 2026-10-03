@@ -162,18 +162,6 @@
       "noActiveCycle": "No active cycle yet",
       "noCourses": "No courses yet",
       "noCoursesBody": "When the school enrolls you in a group, your course appears here."
-    },
-    "soon": {
-      "title": "Coming soon",
-      "notebook": "Your interactive class notebook arrives in the next update.",
-      "workbook": "Your workbook arrives in an upcoming update.",
-      "practice": "Practice activities arrive in an upcoming update.",
-      "vocabulary": "Vocabulary review arrives in an upcoming update."
-    },
-    "attempt": {
-      "completed": "Completed",
-      "inProgress": "In progress",
-      "started": "Started {date}"
     }
   },
   "teach": {
@@ -351,10 +339,7 @@
     "studentAnswers": "Student answers ({count})",
     "noAnswers": "No answers yet.",
     "list": {
-      "title": "Notebook",
-      "subtitle": "Your class notebook, cycle by cycle.",
       "activeCycle": "Active now",
-      "empty": "No notebook sections yet",
       "emptyBody": "Your teacher will open the first cycle soon.",
       "status": {
         "not_started": "Not started",
@@ -363,7 +348,6 @@
       }
     },
     "section": {
-      "back": "All notebook sections",
       "finish": "Mark as finished",
       "finished": "Finished",
       "cycle": "Cycle: {title}"
@@ -374,6 +358,122 @@
       "back": "Back to the group",
       "studentView": "What students see",
       "notesHint": "Teacher notes and student answers are visible only to teachers."
+    },
+    "books": {
+      "notebook": {
+        "title": "Notebook",
+        "subtitle": "Your class notebook, cycle by cycle.",
+        "empty": "No notebook sections yet",
+        "back": "All notebook sections"
+      },
+      "workbook": {
+        "title": "Workbook",
+        "subtitle": "Practise on your own, at your pace.",
+        "empty": "No workbook sections yet",
+        "back": "All workbook sections"
+      }
     }
+  },
+  "activity": {
+    "metaTitle": "Activity",
+    "start": "Start",
+    "resume": "Continue",
+    "again": "Practise again",
+    "minutes": "{minutes} min",
+    "questions": "{count, plural, one {# question} other {# questions}}",
+    "scoring": {
+      "practice": "Practice: try each question as many times as you need.",
+      "scored": "Scored: one try per question. You see your results at the end.",
+      "none": "Not scored: just for practice."
+    },
+    "earlier": "Your earlier tries",
+    "earlierLine": "{date} · {result}",
+    "resultPractice": "finished",
+    "resultScored": "{score} of {max}",
+    "questionOf": "Question {current} of {total}",
+    "progressLabel": "Activity progress",
+    "check": "Check",
+    "saveAnswer": "Save answer",
+    "next": "Next",
+    "previous": "Previous",
+    "finish": "Finish",
+    "finishHint": "{answered} of {total} answered.",
+    "correct": "Correct!",
+    "incorrect": "Not quite. Try again.",
+    "saved": "Saved.",
+    "savedScored": "Saved. You will see your results at the end.",
+    "accent": "Correct! Check the accent.",
+    "accentStrict": "Almost: check the accent.",
+    "answerIs": "The answer:",
+    "true": "True",
+    "false": "False",
+    "chooseOne": "Choose one answer.",
+    "chooseAll": "Choose every correct answer.",
+    "blank": "Blank {n}",
+    "wordBank": "Word bank",
+    "choose": "Choose…",
+    "matchFor": "Match for “{word}”",
+    "yourSentence": "Your sentence",
+    "words": "Words",
+    "emptySentence": "Tap the words in order.",
+    "removeWord": "Remove “{word}”",
+    "addWord": "Add “{word}”",
+    "clear": "Start again",
+    "yourAnswer": "Your answer",
+    "locked": "You already answered this question.",
+    "closed": "This activity is finished.",
+    "error": "Something went wrong. Try again.",
+    "invalid": "Answer every part first.",
+    "unavailable": "This question cannot be shown.",
+    "results": {
+      "title": "Well done, you finished!",
+      "practiceSummary": "{correct} of {total} right on the first try.",
+      "scoredSummary": "Your score: {score} of {max}",
+      "item": "Question {n}",
+      "status": {
+        "correct": "Right",
+        "incorrect": "Not yet",
+        "saved": "Saved",
+        "skipped": "Skipped"
+      },
+      "back": "Back to practice"
+    },
+    "practice": {
+      "title": "Practice",
+      "subtitle": "Short activities for what you are learning now.",
+      "homework": "Homework",
+      "due": "Due {date}",
+      "activeCycle": "Active now",
+      "empty": "No activities yet",
+      "emptyBody": "Activities appear here when your teacher opens a cycle.",
+      "status": {
+        "not_started": "Not started",
+        "in_progress": "In progress",
+        "completed": "Done"
+      }
+    },
+    "block": {
+      "open": "Open the exercise",
+      "teacher": "Students do this exercise on their own."
+    },
+    "tooFast": "Too many answers at once. Wait a moment, then try again."
+  },
+  "vocabulary": {
+    "title": "Vocabulary",
+    "subtitle": "Words from your course, reviewed a little every day.",
+    "summary": "{total, plural, one {# word} other {# words}} · {strong} well known",
+    "progress": "Review progress",
+    "cardOf": "Card {current} of {total}",
+    "show": "Show the meaning",
+    "knewIt": "I knew it",
+    "notYet": "Not yet",
+    "done": "All done for now!",
+    "doneSummary": "You knew {knew} of {total}. Words you did not know yet come back soon.",
+    "nothingDue": "Nothing to review right now.",
+    "nextDue": "Next review: {date}",
+    "empty": "No words yet",
+    "emptyBody": "Words appear here when your teacher opens a cycle.",
+    "failed": "Could not save. Try again.",
+    "how": "Look at the word, try to remember the meaning, then check. Be honest: words you are not sure of come back sooner."
   }
 }

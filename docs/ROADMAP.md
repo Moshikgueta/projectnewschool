@@ -115,7 +115,24 @@ Planned scope:
 - **Exit:** pilot notebook cycles render correctly on mobile and desktop, in both
   directions; invalid content fails CI.
 
-### Phase 4 — Interactive workbook engine
+### Phase 4 — Interactive workbook engine _(implemented locally)_
+
+Status 2026-10-03:
+
+- [x] Seven item types: multiple choice (single and multiple answers), true/false, fill in the blanks (with word bank), matching, reorder the sentence, short answer, reflection
+- [x] Server-side grading (ADR-006): the browser sends an answer, a Server Action checks access with the student's own session, reads the key with the privileged client, grades with `domain/grading` and stores the response. Keys never reach the browser
+- [x] Answer normalisation: spacing, capitals, ¿ ¡, final punctuation, curly quotes, niqqud and harakat are ignored; accents are strict or lenient per item (lenient accepts and reminds)
+- [x] Practice mode: immediate feedback, per-option feedback, retry, the answer shown after two wrong tries; scored mode: one try per item, results at the end. The first try decides the score (ADR-025)
+- [x] Autosave and resume: every check is saved; the player reopens at the first question that still needs a right answer; one open attempt per activity
+- [x] Pages: `/learn/practice` (homework first, then by cycle), `/learn/activities/[id]` (intro, earlier tries), `/learn/attempts/[id]` (player and results), `/learn/workbook` and its sections, with exercises embedded as cards
+- [x] Vocabulary flashcards with Leitner boxes (1, 3, 7, 14 days; "not yet" returns in 10 minutes); reviewing counts as practice
+- [x] Rate limit: 60 checked answers per student per minute
+- [x] Content files: exercises in a short authoring form, compiled at import into public data plus a server-only key, shuffled and numbered so neither order nor ids reveal the answer (ADR-024); draft "Family" exercises (Possessives; Dates and numbers) for teacher review
+- [x] Tests: 77 unit, 90 pgTAP, 11 API (including "no stored exercise gives its answer away"), 34 end-to-end (every item type; log out and in, progress remains; a rewritten request cannot answer in another student's attempt)
+- [ ] Teacher view of results and common mistakes (Phase 7)
+- [ ] Audio items (listening), once the media pipeline exists
+
+Planned scope:
 
 - Exercise engine and the six MVP item types; server-side grading; attempts and
   responses; autosave and resume; immediate feedback; vocabulary flashcards with

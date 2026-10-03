@@ -1,3 +1,5 @@
+import type { Route } from 'next';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import type { ReactNode } from 'react';
 import { directionOf } from '@/domain/i18n/locales';
@@ -22,6 +24,8 @@ export type NotebookViewProps = {
   notes?: TeacherNote[];
   groupAnswers?: Record<string, GroupAnswer[]>;
   aiTutorUrl: string | null;
+  /** Titles of exercises referenced by `activity` blocks that the viewer can see. */
+  activities?: Record<string, { title: string; minutes: number | null }>;
 };
 
 const CARD = 'rounded-lg border border-border bg-surface p-5';
@@ -529,13 +533,50 @@ function BlockView({ block, ...props }: { block: Block } & NotebookViewProps) {
           ) : null}
         </Wrap>
       );
-    case 'activity':
-      return (
-        <p className="rounded-md bg-surface-secondary px-4 py-3 text-sm text-muted">
-          {t('exerciseSoon')}
-        </p>
-      );
+    case 'activity': {
+      const activity = props.activities?.[block.activityId];
+      if (!activity) {
+        return (
+          <p className="rounded-md bg-surface-secondary px-4 py-3 text-sm text-muted">
+            {t('exerciseSoon')}
+          </p>
+        );
+      }
+      return <ActivityCard id={block.activityId} view={props.view} {...activity} />;
+    }
   }
+}
+
+function ActivityCard({
+  id,
+  title,
+  minutes,
+  view,
+}: {
+  id: string;
+  title: string;
+  minutes: number | null;
+  view: 'student' | 'teacher';
+}) {
+  const t = useTranslations('activity');
+  return (
+    <div className={`${CARD} flex flex-wrap items-center justify-between gap-3 border-primary`}>
+      <div>
+        <p className="font-semibold text-fg">{title}</p>
+        <p className="text-sm text-muted">
+          {view === 'teacher' ? t('block.teacher') : minutes ? t('minutes', { minutes }) : null}
+        </p>
+      </div>
+      {view === 'student' ? (
+        <Link
+          href={`/learn/activities/${id}` as Route}
+          className="inline-flex min-h-11 items-center rounded-md bg-primary px-5 text-[0.9375rem] font-medium text-on-brand hover:bg-primary-hover"
+        >
+          {t('block.open')}
+        </Link>
+      ) : null}
+    </div>
+  );
 }
 
 function WordList({ words, title }: { words: string[]; title: string }) {

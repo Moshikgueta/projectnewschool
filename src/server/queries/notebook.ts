@@ -11,6 +11,7 @@ import { createSupabaseServerClient } from '@/server/supabase/server';
 import { listMyCourses, type MyCourse } from './student';
 
 type ProgressStatus = Database['public']['Enums']['progress_status'];
+export type BookKind = Database['public']['Enums']['book_kind'];
 
 export type NotebookCycle = {
   id: string;
@@ -27,6 +28,7 @@ export type NotebookCycle = {
 export async function getStudentNotebook(
   user: SessionUser,
   requestedCourseId: string | undefined,
+  kind: BookKind = 'notebook',
 ): Promise<{ courses: MyCourse[]; course: MyCourse | null; cycles: NotebookCycle[] }> {
   const courses = await listMyCourses(user.id);
   const course = courses.find((c) => c.courseId === requestedCourseId) ?? courses[0] ?? null;
@@ -53,7 +55,7 @@ export async function getStudentNotebook(
 
   const state = new Map((groupCycles.data ?? []).map((g) => [g.cycle_id, g.state]));
   const status = new Map((progress.data ?? []).map((p) => [p.book_section_id, p.status]));
-  const notebookSections = (sections.data ?? []).filter((s) => s.book?.kind === 'notebook');
+  const notebookSections = (sections.data ?? []).filter((s) => s.book?.kind === kind);
 
   const result = (cycles.data ?? [])
     .map((c) => ({
@@ -76,6 +78,7 @@ export type SectionData = {
   id: string;
   title: string;
   courseId: string;
+  kind: BookKind;
   cycleTitle: string;
   courseLang: string;
   aiTutorUrl: string | null;
@@ -87,7 +90,7 @@ async function loadSection(sectionId: string): Promise<SectionData | null> {
   const { data, error } = await supabase
     .from('book_sections')
     .select(
-      'id, title, blocks, course_id, cycle:cycles ( title ), book:books ( course:courses ( ai_tutor_url, level:levels ( language:languages ( code ) ) ) )',
+      'id, title, blocks, course_id, cycle:cycles ( title ), book:books ( kind, course:courses ( ai_tutor_url, level:levels ( language:languages ( code ) ) ) )',
     )
     .eq('id', sectionId)
     .maybeSingle();
@@ -97,6 +100,7 @@ async function loadSection(sectionId: string): Promise<SectionData | null> {
     id: data.id,
     title: data.title,
     courseId: data.course_id,
+    kind: data.book?.kind ?? 'notebook',
     cycleTitle: data.cycle?.title ?? '',
     courseLang: data.book?.course?.level?.language?.code ?? 'en',
     aiTutorUrl: data.book?.course?.ai_tutor_url ?? null,

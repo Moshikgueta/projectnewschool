@@ -25,9 +25,10 @@ test.describe('student dashboard', () => {
 
     const progress = page.getByRole('region', { name: 'Progress' });
     await expect(progress).toContainText('Activities completed1');
+    // One of the cycle's three published activities is done.
     await expect(progress.getByRole('progressbar', { name: /Current cycle/ })).toHaveAttribute(
       'aria-valuenow',
-      '50',
+      '33',
     );
 
     await expect(page.getByRole('region', { name: 'Recent activity' })).toContainText(
@@ -77,19 +78,6 @@ test.describe('student dashboard', () => {
 
     await page.getByRole('button', { name: 'שפת הממשק: English' }).click();
     await expect(page.locator('html')).toHaveAttribute('dir', 'ltr');
-  });
-
-  test('sections not built yet say so instead of breaking', async ({ page }) => {
-    await signIn(page, USERS.studentA);
-    await page
-      .getByRole('navigation', { name: 'Main' })
-      .getByRole('link', { name: 'Workbook' })
-      .click();
-    await expect(page).toHaveURL(/\/learn\/workbook$/);
-    await expect(page.getByText('Coming soon')).toBeVisible();
-    await expect(
-      page.getByRole('navigation', { name: 'Main' }).getByRole('link', { name: 'Workbook' }),
-    ).toHaveAttribute('aria-current', 'page');
   });
 });
 

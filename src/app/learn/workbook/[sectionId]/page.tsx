@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
-import { BookListPage } from '../BookPages';
+import { BookSectionPage } from '../../BookPages';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('notebook.books.workbook');
   return { title: t('title') };
 }
 
-export default async function WorkbookPage({
-  searchParams,
+export default async function WorkbookSectionPage({
+  params,
 }: {
-  searchParams: Promise<{ course?: string }>;
+  params: Promise<{ sectionId: string }>;
 }) {
-  return <BookListPage kind="workbook" requestedCourse={(await searchParams).course} />;
+  return <BookSectionPage kind="workbook" sectionId={(await params).sectionId} />;
 }

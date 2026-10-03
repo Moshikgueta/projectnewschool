@@ -13,8 +13,14 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 import { parseDocument } from 'yaml';
+import {
+  activityPlaceholder,
+  compileItem,
+  type AuthoredActivity,
+} from '../src/content/activities-file';
 import { validateContent, type CourseFile, type CycleFile } from '../src/content/files';
-import type { Database } from '../src/server/db.types';
+import type { Block } from '../src/content/schema';
+import type { Database, Json } from '../src/server/db.types';
 
 type Client = SupabaseClient<Database>;
 
@@ -122,6 +128,102 @@ async function importCourse(db: Client, c: CourseFile): Promise<string> {
   return course.id;
 }
 
+async function importActivity(
+  db: Client,
+  courseId: string,
+  cycleId: string,
+  status: CycleFile['status'],
+  a: AuthoredActivity,
+): Promise<string> {
+  const activity = await must(
+    `activity ${a.slug}`,
+    db
+      .from('activities')
+      .upsert(
+        {
+          course_id: courseId,
+          cycle_id: cycleId,
+          slug: a.slug,
+          title: a.title,
+          phase: a.phase,
+          scoring_mode: a.scoring,
+          est_minutes: a.minutes ?? null,
+          instructions: a.instructions,
+          status,
+        },
+        { onConflict: 'course_id,slug' },
+      )
+      .select('id')
+      .single(),
+  );
+
+  for (const [position, authored] of a.items.entries()) {
+    const item = compileItem(a.slug, authored);
+    const row = await must(
+      `item ${a.slug}/${item.slug}`,
+      db
+        .from('activity_items')
+        .upsert(
+          {
+            activity_id: activity.id,
+            course_id: courseId,
+            slug: item.slug,
+            position: position + 1,
+            type: item.type,
+            prompt: item.prompt,
+            data: item.data as NonNullable<Json>,
+            points: item.points,
+          },
+          { onConflict: 'activity_id,slug' },
+        )
+        .select('id')
+        .single(),
+    );
+    // The key lives in its own table, which students cannot read (ADR-006).
+    if (item.key) {
+      await must(
+        `key ${a.slug}/${item.slug}`,
+        db
+          .from('activity_item_keys')
+          .upsert(
+            {
+              item_id: row.id,
+              course_id: courseId,
+              answer: item.key as NonNullable<Json>,
+              feedback: item.feedback,
+            },
+            { onConflict: 'item_id' },
+          )
+          .select('item_id')
+          .single(),
+      );
+    } else {
+      await db.from('activity_item_keys').delete().eq('item_id', row.id);
+    }
+  }
+
+  // Items removed from the file: delete them unless students already answered them.
+  const keep = new Set(a.items.map((i) => i.id));
+  const existing = await must(
+    'items',
+    db.from('activity_items').select('id, slug').eq('activity_id', activity.id),
+  );
+  for (const old of existing.filter((i) => i.slug && !keep.has(i.slug))) {
+    const { count } = await db
+      .from('responses')
+      .select('id', { count: 'exact', head: true })
+      .eq('item_id', old.id);
+    if (count) {
+      console.warn(
+        `  ! item "${a.slug}/${old.slug}" was removed from the file but has answers; kept`,
+      );
+    } else {
+      await db.from('activity_items').delete().eq('id', old.id);
+    }
+  }
+  return activity.id;
+}
+
 async function importCycle(
   db: Client,
   courseId: string,
@@ -147,6 +249,19 @@ async function importCycle(
   );
   const books = await must('books', db.from('books').select('id, kind').eq('course_id', courseId));
 
+  // Exercises first, so sections can point at their real ids.
+  const realIds = new Map<string, string>();
+  for (const a of c.activities) {
+    realIds.set(
+      activityPlaceholder(a.slug),
+      await importActivity(db, courseId, cycle.id, c.status, a),
+    );
+  }
+  const withRealIds = (blocks: Block[]): Block[] =>
+    blocks.map((b) =>
+      b.type === 'activity' ? { ...b, activityId: realIds.get(b.activityId) ?? b.activityId } : b,
+    );
+
   for (const [position, s] of c.sections.entries()) {
     const book = books.find((b) => b.kind === s.book);
     if (!book)
@@ -163,7 +278,7 @@ async function importCycle(
             slug: s.slug,
             position: position + 1,
             title: s.title,
-            blocks: s.blocks,
+            blocks: withRealIds(s.blocks),
             phase: s.phase,
             status: s.status ?? c.status,
           },
@@ -297,7 +412,9 @@ async function main() {
       .filter((c) => c.course === course.slug)
       .sort((a, b) => a.position - b.position)) {
       await importCycle(db, courseId, cycle);
-      console.log(`  → cycle ${cycle.slug} (${cycle.sections.length} sections, ${cycle.status})`);
+      console.log(
+        `  → cycle ${cycle.slug} (${cycle.sections.length} sections, ${cycle.activities.length} activities, ${cycle.status})`,
+      );
     }
   }
   console.log(`✓ imported into ${url}`);

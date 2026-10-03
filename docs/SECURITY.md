@@ -133,8 +133,9 @@ nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Polic
 
 - ☐ Auth endpoints: Supabase Auth's built-in limits (tightened), plus CAPTCHA
   (Cloudflare Turnstile) on login/reset if abuse appears.
-- ☐ App: Vercel WAF rate-limit rules on login/reset paths; per-user limit on answer
-  submissions (e.g. 60/min) enforced in the grading action.
+- ☐ App: Vercel WAF rate-limit rules on login/reset paths.
+- ☑ Per-user limit on answer submissions: 60 checked answers per minute, enforced in
+  the grading action (Phase 4).
 
 ### Storage — Phase 3
 
@@ -197,6 +198,14 @@ the API call" attack exactly.
 - Anonymous visitor opening any `/learn` URL → login.
 - Student A pasting B's attempt URL → 404.
 - Answer key absent from page HTML and network responses (asserted).
+- Student B's answer request rewritten in flight to carry student A's attempt id →
+  refused, and nothing is written to A's attempt (checked in the database).
+
+**Answer keys (Phase 4)** — beyond "students can't read `activity_item_keys`": the
+public part of an exercise must not give the answer away either. An API test signs in
+as a student, reads every exercise they can see, and checks each one against its key
+(no key text in the data; options, matches and words not in answer order; ids not
+aligned with the answer). The content tooling refuses such items at import (ADR-024).
 
 Before production launch (Phase 10): an external or independent review of RLS policies,
 an OWASP ASVS Level 2 checklist pass, and a dependency/secret scan.

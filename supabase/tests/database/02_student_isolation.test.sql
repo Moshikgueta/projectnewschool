@@ -87,7 +87,7 @@ select is(pg_temp.scalar_as(:A, $$select count(*) from public.cycles where statu
   'student A sees no draft cycle and no cycle from another or unpublished course');
 select is(pg_temp.scalar_as(:A, 'select count(*) from public.book_sections'), 2::bigint,
   'student A sees only the published sections of their course (one notebook, one workbook)');
-select is(pg_temp.scalar_as(:A, 'select count(*) from public.activities'), 2::bigint,
+select is(pg_temp.scalar_as(:A, 'select count(*) from public.activities'), 3::bigint,
   'student A sees only the published activities of their course (not the draft, not other courses)');
 select is(pg_temp.scalar_as(:A, $$select count(*) from public.activity_items where course_id <> '30000000-0000-4000-8000-000000000001'$$), 0::bigint,
   'student A sees no exercise items from other courses');

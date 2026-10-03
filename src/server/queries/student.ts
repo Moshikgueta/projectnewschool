@@ -49,33 +49,3 @@ export async function listMyCourses(userId: string): Promise<MyCourse[]> {
     ];
   });
 }
-
-export type AttemptSummary = {
-  id: string;
-  status: 'in_progress' | 'submitted';
-  activityTitle: string;
-  startedAt: string;
-  submittedAt: string | null;
-};
-
-/**
- * One attempt, if the caller may see it. Returns null for someone else's
- * attempt — the page turns that into a 404 (no hint that it exists).
- */
-export async function getAttempt(attemptId: string): Promise<AttemptSummary | null> {
-  const supabase = await createSupabaseServerClient();
-  const { data, error } = await supabase
-    .from('attempts')
-    .select('id, status, started_at, submitted_at, activity:activities ( title )')
-    .eq('id', attemptId)
-    .maybeSingle();
-  if (error) throw new Error(`Could not load attempt: ${error.message}`);
-  if (!data) return null;
-  return {
-    id: data.id,
-    status: data.status,
-    activityTitle: data.activity?.title ?? '',
-    startedAt: data.started_at,
-    submittedAt: data.submitted_at,
-  };
-}

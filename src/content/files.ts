@@ -4,6 +4,7 @@
 // unit tests. Everything is keyed by slugs so imports are idempotent.
 
 import { z } from 'zod';
+import { activityPlaceholder, authoredActivitySchema, checkActivity } from './activities-file';
 import { sectionDocumentSchema, teacherNotesSchema } from './schema';
 
 const slug = z
@@ -66,74 +67,144 @@ const vocabularySetSchema = z.strictObject({
     .max(500),
 });
 
-export const cycleFileSchema = z
-  .strictObject({
-    /** Slug of the course this cycle belongs to (its course.yaml). */
-    course: slug,
-    slug,
-    title: z.string().min(1).max(160),
-    goal: z.string().max(500).default(''),
-    position: z.number().int().min(0),
-    status: status.default('draft'),
-    /** Open questions for the reviewing teacher; never shown to students. */
-    review: z.array(z.string().min(1).max(1000)).default([]),
-    sections: z.array(sectionSchema).min(1).max(50),
-    vocabulary: z.array(vocabularySetSchema).max(20).default([]),
-  })
-  .superRefine((cycle, ctx) => {
-    const seen = new Set<string>();
-    cycle.sections.forEach((section, i) => {
-      const key = `${section.book}/${section.slug}`;
-      if (seen.has(key))
-        ctx.addIssue({
-          code: 'custom',
-          message: `Duplicate section "${key}"`,
-          path: ['sections', i, 'slug'],
-        });
-      seen.add(key);
+/** Replace `{ type: activity, activity: <slug> }` with a placeholder id the import resolves. */
+function resolveActivityRefs(raw: unknown): unknown {
+  if (!raw || typeof raw !== 'object' || !('sections' in raw) || !Array.isArray(raw.sections))
+    return raw;
+  return {
+    ...raw,
+    sections: raw.sections.map((section: unknown) => {
+      if (
+        !section ||
+        typeof section !== 'object' ||
+        !('blocks' in section) ||
+        !Array.isArray(section.blocks)
+      )
+        return section;
+      return {
+        ...section,
+        blocks: section.blocks.map((block: unknown) => {
+          if (
+            block &&
+            typeof block === 'object' &&
+            'type' in block &&
+            block.type === 'activity' &&
+            'activity' in block &&
+            typeof block.activity === 'string'
+          ) {
+            const { activity, ...rest } = block as { activity: string } & Record<string, unknown>;
+            return { ...rest, activityId: activityPlaceholder(activity) };
+          }
+          return block;
+        }),
+      };
+    }),
+  };
+}
 
-      const ids = new Set(section.blocks.map((b) => b.id));
-      const noteIds = new Set<string>();
-      section.teacherNotes.forEach((note, j) => {
-        const path = ['sections', i, 'teacherNotes', j];
-        if (note.anchor !== null && !ids.has(note.anchor))
+export const cycleFileSchema = z.preprocess(
+  resolveActivityRefs,
+  z
+    .strictObject({
+      /** Slug of the course this cycle belongs to (its course.yaml). */
+      course: slug,
+      slug,
+      title: z.string().min(1).max(160),
+      goal: z.string().max(500).default(''),
+      position: z.number().int().min(0),
+      status: status.default('draft'),
+      /** Open questions for the reviewing teacher; never shown to students. */
+      review: z.array(z.string().min(1).max(1000)).default([]),
+      sections: z.array(sectionSchema).min(1).max(50),
+      vocabulary: z.array(vocabularySetSchema).max(20).default([]),
+      /** Exercises of this cycle; workbook sections embed them by slug. */
+      activities: z.array(authoredActivitySchema).max(30).default([]),
+    })
+    .superRefine((cycle, ctx) => {
+      const placeholders = new Set(cycle.activities.map((a) => activityPlaceholder(a.slug)));
+      const activitySlugs = new Set<string>();
+      cycle.activities.forEach((activity, i) => {
+        if (activitySlugs.has(activity.slug))
           ctx.addIssue({
             code: 'custom',
-            message: `Note anchor "${note.anchor}" is not a block id`,
-            path: [...path, 'anchor'],
+            message: `Duplicate activity "${activity.slug}"`,
+            path: ['activities', i, 'slug'],
           });
-        if (noteIds.has(note.id) || ids.has(note.id))
+        activitySlugs.add(activity.slug);
+        for (const problem of checkActivity(activity)) {
+          const [where, ...message] = problem.split(': ');
           ctx.addIssue({
             code: 'custom',
-            message: `Duplicate id "${note.id}"`,
-            path: [...path, 'id'],
+            message: message.join(': '),
+            path: ['activities', i, ...(where ?? '').split('.')],
           });
-        noteIds.add(note.id);
+        }
       });
-    });
+      cycle.sections.forEach((section, i) =>
+        section.blocks.forEach((block, j) => {
+          if (block.type === 'activity' && !placeholders.has(block.activityId))
+            ctx.addIssue({
+              code: 'custom',
+              message: 'Use `activity: <slug>` with the slug of an activity in this file',
+              path: ['sections', i, 'blocks', j],
+            });
+        }),
+      );
 
-    const sets = new Set<string>();
-    cycle.vocabulary.forEach((set, i) => {
-      if (sets.has(set.slug))
-        ctx.addIssue({
-          code: 'custom',
-          message: `Duplicate vocabulary set "${set.slug}"`,
-          path: ['vocabulary', i, 'slug'],
-        });
-      sets.add(set.slug);
-      const terms = new Set<string>();
-      set.items.forEach((item, j) => {
-        const key = item.term.toLowerCase();
-        if (terms.has(key))
+      const seen = new Set<string>();
+      cycle.sections.forEach((section, i) => {
+        const key = `${section.book}/${section.slug}`;
+        if (seen.has(key))
           ctx.addIssue({
             code: 'custom',
-            message: `Duplicate term "${item.term}"`,
-            path: ['vocabulary', i, 'items', j, 'term'],
+            message: `Duplicate section "${key}"`,
+            path: ['sections', i, 'slug'],
           });
-        terms.add(key);
+        seen.add(key);
+
+        const ids = new Set(section.blocks.map((b) => b.id));
+        const noteIds = new Set<string>();
+        section.teacherNotes.forEach((note, j) => {
+          const path = ['sections', i, 'teacherNotes', j];
+          if (note.anchor !== null && !ids.has(note.anchor))
+            ctx.addIssue({
+              code: 'custom',
+              message: `Note anchor "${note.anchor}" is not a block id`,
+              path: [...path, 'anchor'],
+            });
+          if (noteIds.has(note.id) || ids.has(note.id))
+            ctx.addIssue({
+              code: 'custom',
+              message: `Duplicate id "${note.id}"`,
+              path: [...path, 'id'],
+            });
+          noteIds.add(note.id);
+        });
       });
-    });
-  });
+
+      const sets = new Set<string>();
+      cycle.vocabulary.forEach((set, i) => {
+        if (sets.has(set.slug))
+          ctx.addIssue({
+            code: 'custom',
+            message: `Duplicate vocabulary set "${set.slug}"`,
+            path: ['vocabulary', i, 'slug'],
+          });
+        sets.add(set.slug);
+        const terms = new Set<string>();
+        set.items.forEach((item, j) => {
+          const key = item.term.toLowerCase();
+          if (terms.has(key))
+            ctx.addIssue({
+              code: 'custom',
+              message: `Duplicate term "${item.term}"`,
+              path: ['vocabulary', i, 'items', j, 'term'],
+            });
+          terms.add(key);
+        });
+      });
+    }),
+);
 export type CycleFile = z.infer<typeof cycleFileSchema>;
 
 export type ContentProblem = { file: string; path: string; message: string };

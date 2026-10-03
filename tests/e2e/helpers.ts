@@ -3,6 +3,7 @@ import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { expect, type Page } from '@playwright/test';
+import { createClient } from '@supabase/supabase-js';
 
 export const PASSWORD = 'Local-dev-password-1'; // supabase/seed.sql — local only
 
@@ -27,7 +28,23 @@ export const IDS = {
   sectionDraft: '60000000-0000-4000-8000-000000000002',
   /** French L1, published. */
   sectionBonjour: '60000000-0000-4000-8000-000000000003',
+  /** Spanish L1 workbook section that embeds the every-type exercise. */
+  sectionPractica: '60000000-0000-4000-8000-000000000005',
+  /** Spanish L1 exercise with one item of every type. */
+  activityAllTypes: '70000000-0000-4000-8000-000000000006',
+  studentA: '00000000-0000-4000-8000-0000000000a1',
+  studentB: '00000000-0000-4000-8000-0000000000a2',
 } as const;
+
+/** Service-role client for test setup and for checking what was stored. Local only. */
+export function adminClient() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? '';
+  if (!/^http:\/\/(127\.0\.0\.1|localhost)/.test(url))
+    throw new Error(`Not a local database: ${url}`);
+  return createClient(url, process.env.SUPABASE_SECRET_KEY ?? '', {
+    auth: { persistSession: false },
+  });
+}
 
 export async function signIn(page: Page, email: string, password = PASSWORD) {
   await page.goto('/login');

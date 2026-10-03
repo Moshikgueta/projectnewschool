@@ -169,6 +169,33 @@ activity  (title, instructions, phase, scoring_mode, skills[], est_minutes)
 | `shortAnswer` / `reflection`                                                                          | ✅       | textarea                                              | ❌ saved (teacher review later) |
 | `categorize`, `dragDrop`, `listeningComprehension`, `readingComprehension`, `writeSentence`, `memory` | Phase 4+ | —                                                     | mostly ✅                       |
 
+**Authoring form** (content files, `src/content/activities-file.ts`). Authors write
+each item the way a teacher thinks of it, and the import compiles it into public data,
+a server-only key and feedback:
+
+```yaml
+activities:
+  - slug: family-possessives
+    title: 'Possessives: my, his, her, their'
+    minutes: 8
+    items:
+      - id: his-father
+        type: multipleChoice
+        prompt: Sam is a great cook. ___ father is a great cook too.
+        options:
+          - { text: His, correct: true }
+          - { text: Her, feedback: '*Her* is for a woman or a girl.' }
+      - { id: word-order, type: trueFalse, prompt: '…', answer: true }
+      - { id: her-their, type: fillBlank, prompt: '…', text: 'This is ___ …', blanks: [[Her]] }
+      - { id: pronouns, type: matching, prompt: '…', pairs: [[I, my], [he, his]] }
+      - { id: brother, type: reorderSentence, prompt: '…', sentence: My brother's name is Tom. }
+      - { id: birthday, type: shortAnswer, prompt: When is your birthday? }
+```
+
+Workbook sections embed an exercise by slug: `{ id: ex, type: activity, activity:
+family-possessives }`. Options, matches and sentence words are shuffled at import and
+numbered in display order (ADR-024), so the stored data never gives the answer away.
+
 **Answer normalisation** (`domain/grading/normalize.ts`), configurable per item:
 Unicode NFC, trim, collapse spaces, case-fold, ignore ¿¡ and final punctuation, accept
 listed alternatives, and an accent policy (`strict` | `lenient`). Lenient accepts the
@@ -272,7 +299,8 @@ terms are unique; every cycle names a defined course; links must be on the allow
   production through review in the CMS (Phase 8).
 
 First conversion: **English Foundations 1 · Family** (`content/en-foundations-1/`),
-status `in_review`, with 6 open review questions. One of them is a factual error in
+status `in_review`, with 7 open review questions, plus two draft workbook exercises
+written from the cycle's skills (the source has none). One question is a factual error in
 the source: rule 2 of the possessives summary says the word follows the thing owned,
 which is wrong for English.
 

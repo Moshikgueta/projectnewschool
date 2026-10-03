@@ -29,6 +29,10 @@ review:
   - >-
     The "Answer of student 1/2/3" lines are replaced by the optional answer boxes
     (decision C2): students may type, and the teacher sees the group's answers.
+  - >-
+    The two workbook exercises ("Possessives" and "Dates and numbers") are NEW: the
+    original notebook has no self-study exercises. They were written from the cycle's
+    two skills and its vocabulary; please check level, wording and answers.
 
 sections:
   # ── in class ─────────────────────────────────────────────────────────────
@@ -294,6 +298,22 @@ sections:
           On Sundays, ___.
           Please ask me questions about my family routine.
 
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: family-practice
+    book: workbook
+    title: 'Practice: Family'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-possessives
+        type: activity
+        activity: family-possessives
+      - id: ex-dates
+        type: activity
+        activity: family-dates
+
   # ── vocabulary ───────────────────────────────────────────────────────────
   - slug: family-vocabulary
     title: Vocabulary
@@ -344,3 +364,85 @@ vocabulary:
   - slug: family
     title: Family
     items: *family-words
+
+activities:
+  - slug: family-possessives
+    title: 'Possessives: my, his, her, their'
+    minutes: 8
+    items:
+      - id: his-father
+        type: multipleChoice
+        prompt: Sam is a great cook. ___ father is a great cook too.
+        options:
+          - { text: His, correct: true }
+          - { text: Her, feedback: '*Her* is for a woman or a girl. Sam is a boy.' }
+          - { text: Their, feedback: '*Their* is for more than one person.' }
+      - id: their-cousins
+        type: multipleChoice
+        prompt: John and Susan live in Japan. ___ cousins visit them every year.
+        options:
+          - { text: His }
+          - { text: Her }
+          - { text: Their, correct: true }
+      - id: word-order
+        type: trueFalse
+        prompt: 'In English, the possessive word comes before the thing: *my mother*.'
+        answer: true
+      - id: her-their
+        type: fillBlank
+        prompt: Complete with *her* or *their*.
+        text: This is my sister. ___ name is Maya. These are my parents. ___ names are Dan and Rina.
+        blanks: [[Her], [Their]]
+        wordBank: [Her, Their]
+      - id: pronouns
+        type: matching
+        prompt: Match each person with the possessive word.
+        pairs:
+          - [I, my]
+          - [he, his]
+          - [she, her]
+          - [we, our]
+          - [they, their]
+      - id: brother-name
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: My brother's name is Tom.
+
+  - slug: family-dates
+    title: Dates and numbers
+    minutes: 8
+    items:
+      - id: born-on
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: I was born on March 5th., correct: true }
+          - {
+              text: I was born in March 5th.,
+              feedback: 'Use *on* before a date and *in* before a month or a year.',
+            }
+          - { text: I was born at March 5th. }
+      - id: on-in
+        type: fillBlank
+        prompt: Complete with *on* or *in*.
+        text: My birthday is ___ July 4th. I was born ___ 1998.
+        blanks: [[on], [in]]
+      - id: ordinals
+        type: matching
+        prompt: Match the numbers.
+        pairs:
+          - ['1', 1st]
+          - ['2', 2nd]
+          - ['3', 3rd]
+          - ['4', 4th]
+      - id: month-first
+        type: trueFalse
+        prompt: 'In American English, you write the month before the day: *July 4, 2024*.'
+        answer: true
+      - id: trip
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: We travel to Paris on July 5th.
+      - id: my-birthday
+        type: shortAnswer
+        prompt: When is your birthday? Write one sentence.
