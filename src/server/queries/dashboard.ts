@@ -1,7 +1,7 @@
 import 'server-only';
 import { practiceDaysInLastWeek, WEEKLY_PRACTICE_GOAL } from '@/domain/learning/time';
 import { cycleProgress } from '@/domain/learning/progress';
-import { recommend, type Recommendation } from '@/domain/recommendations/rules';
+import { rulesV1, type Recommendation } from '@/domain/recommendations/rules';
 import type { SessionUser } from '@/server/auth/session';
 import type { Database } from '@/server/db.types';
 import { createSupabaseServerClient } from '@/server/supabase/server';
@@ -38,6 +38,9 @@ export type StudentDashboard = {
     cycle: { title: string; percent: number } | null;
   };
 };
+
+/** Days a suggestion stays hidden after "Not now". */
+export const SNOOZE_DAYS = 7;
 
 const EMPTY_COUNTS: StudentDashboard['counts'] = {
   notebookSections: 0,
@@ -95,12 +98,19 @@ export async function getStudentDashboard(
     activeCycles,
     feedback,
     finishedSections,
+    nextClass,
+    skills,
+    firstTries,
+    wordsDue,
   ] = await Promise.all([
     supabase
       .from('book_sections')
       .select('id, cycle_id, book:books ( kind )')
       .eq('course_id', courseId),
-    supabase.from('activities').select('id, title, phase, cycle_id').eq('course_id', courseId),
+    supabase
+      .from('activities')
+      .select('id, title, phase, cycle_id, activity_skills ( skill_id )')
+      .eq('course_id', courseId),
     supabase
       .from('vocabulary_items')
       .select('id', { count: 'exact', head: true })
@@ -108,13 +118,13 @@ export async function getStudentDashboard(
     supabase
       .from('assignments')
       .select(
-        'id, activity_id, due_at, activity:activities ( title ), section:book_sections ( title ), vocabulary:vocabulary_sets ( title )',
+        'id, activity_id, due_at, activity:activities ( title ), section:book_sections ( id, title, book:books ( kind ) ), vocabulary:vocabulary_sets ( title )',
       )
       .eq('course_id', courseId)
       .lte('available_from', now.toISOString()),
     supabase
       .from('attempts')
-      .select('id, activity_id, status, updated_at, activity:activities ( title )')
+      .select('id, activity_id, status, updated_at, submitted_at, activity:activities ( title )')
       .eq('user_id', user.id)
       .eq('course_id', courseId)
       .order('updated_at', { ascending: false }),
@@ -139,19 +149,43 @@ export async function getStudentDashboard(
       .select('cycle_id, cycle:cycles ( title )')
       .eq('group_id', course.groupId)
       .eq('state', 'active')
-      .order('position')
-      .limit(1),
+      .order('position'),
+    // "Not now" snoozes a suggestion for a week.
     supabase
       .from('recommendation_feedback')
       .select('rec_key')
       .eq('user_id', user.id)
-      .eq('action', 'dismissed'),
+      .eq('action', 'dismissed')
+      .gte('at', new Date(now.getTime() - SNOOZE_DAYS * 86_400_000).toISOString()),
     supabase
       .from('section_progress')
       .select('book_section_id')
       .eq('user_id', user.id)
       .eq('course_id', courseId)
       .eq('status', 'completed'),
+    supabase
+      .from('group_sessions')
+      .select('starts_at')
+      .eq('group_id', course.groupId)
+      .gt('starts_at', now.toISOString())
+      .order('starts_at')
+      .limit(1),
+    supabase.from('skills').select('id, label'),
+    supabase
+      .from('responses')
+      .select('is_correct, created_at, item:activity_items ( activity_id )')
+      .eq('user_id', user.id)
+      .eq('course_id', courseId)
+      .eq('try_no', 1)
+      .not('is_correct', 'is', null)
+      .order('created_at', { ascending: false })
+      .limit(500),
+    supabase
+      .from('vocab_review_state')
+      .select('vocabulary_item_id', { count: 'exact', head: true })
+      .eq('user_id', user.id)
+      .eq('course_id', courseId)
+      .lte('due_at', now.toISOString()),
   ]);
 
   if (sections.error) fail('notebook', sections.error);
@@ -163,6 +197,9 @@ export async function getStudentDashboard(
   if (events.error) fail('recent activity', events.error);
   if (activeCycles.error) fail('active cycle', activeCycles.error);
   if (feedback.error) fail('recommendation feedback', feedback.error);
+  for (const r of [nextClass, skills, firstTries, wordsDue]) {
+    if (r.error) fail('recommendations', r.error);
+  }
 
   const completedActivityIds = new Set(
     attempts.data.filter((a) => a.status === 'submitted').map((a) => a.activity_id),
@@ -173,6 +210,7 @@ export async function getStudentDashboard(
     .map((a) => ({
       assignmentId: a.id,
       activityId: a.activity_id,
+      section: a.section?.book ? { id: a.section.id, book: a.section.book.kind } : null,
       title: a.activity?.title ?? a.section?.title ?? a.vocabulary?.title ?? '',
       dueAt: a.due_at,
     }));
@@ -204,6 +242,14 @@ export async function getStudentDashboard(
   }
 
   const activeCycle = activeCycles.data[0];
+  const activeCycleIds = new Set(activeCycles.data.map((c) => c.cycle_id));
+  // When each activity was last completed.
+  const completedAt = new Map<string, string>();
+  for (const a of attempts.data) {
+    if (a.status !== 'submitted' || !a.submitted_at) continue;
+    const seen = completedAt.get(a.activity_id);
+    if (!seen || a.submitted_at > seen) completedAt.set(a.activity_id, a.submitted_at);
+  }
   // Same rule as the progress page (domain/learning/progress.ts).
   const cycle: StudentDashboard['progress']['cycle'] = activeCycle
     ? (cycleProgress({
@@ -239,11 +285,29 @@ export async function getStudentDashboard(
       words: words.count ?? 0,
       homework: openAssignments.length,
     },
-    recommendations: recommend({
+    recommendations: rulesV1.recommend({
       now,
+      courseId,
       openAssignments,
       unfinishedAttempts: unfinished,
       dismissedKeys: new Set(feedback.data.map((f) => f.rec_key)),
+      nextClassAt: nextClass.data?.[0]?.starts_at ?? null,
+      activities: activities.data.map((a) => ({
+        id: a.id,
+        title: a.title,
+        phase: a.phase,
+        activeCycle: activeCycleIds.has(a.cycle_id),
+        skillIds: a.activity_skills.map((k) => k.skill_id),
+      })),
+      completedAt,
+      firstTries: (firstTries.data ?? []).flatMap((r) =>
+        r.item
+          ? [{ activityId: r.item.activity_id, correct: !!r.is_correct, at: r.created_at }]
+          : [],
+      ),
+      skills: skills.data ?? [],
+      wordsDue: wordsDue.count ?? 0,
+      lastPracticeAt: events.data[0]?.occurred_at ?? null,
     }),
     recent: events.data.slice(0, 5).map((e) => ({
       type: e.type,

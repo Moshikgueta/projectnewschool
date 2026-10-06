@@ -18,9 +18,19 @@ test.describe('student dashboard', () => {
     await expect(course.getByRole('link', { name: /Class notebook/ })).toContainText('1 section');
     await expect(course.getByRole('link', { name: /Vocabulary/ })).toContainText('2 words');
 
-    // Student A finished the assigned activity: nothing open.
-    await expect(page.getByRole('region', { name: 'Recommended for you' })).toContainText(
-      'You are all caught up',
+    // Worked out by hand from seed.sql (Phase 6): the assignment is done and the
+    // vocabulary suggestion is snoozed. Group X has a class in two days and the
+    // before-class activity is not done (priority 80 − 2 = 78); "Numbers" has
+    // 1 of 3 first tries right, below 70% (50 − 3 = 47), and the only activity
+    // with that skill is the one done longest ago.
+    const recs = page.getByRole('region', { name: 'Recommended for you' }).getByRole('listitem');
+    await expect(recs).toHaveCount(2);
+    await expect(recs.nth(0)).toContainText('Before your next class');
+    await expect(recs.nth(0).getByRole('link')).toHaveText('Before class: five greetings');
+    await expect(recs.nth(1)).toContainText(/Practise \u2068?Numbers\u2069? again/);
+    await expect(recs.nth(1).getByRole('link')).toHaveAttribute(
+      'href',
+      '/learn/activities/70000000-0000-4000-8000-000000000007',
     );
 
     const progress = page.getByRole('region', { name: 'Progress' });
@@ -90,12 +100,33 @@ test.describe('student dashboard', () => {
     expect(results.violations).toEqual([]);
   });
 
+  test('"Not now" hides a suggestion, and it stays hidden', async ({ page }) => {
+    await signIn(page, USERS.studentA);
+    const recs = page.getByRole('region', { name: 'Recommended for you' }).getByRole('listitem');
+    await expect(recs).toHaveCount(2);
+    await page.getByRole('button', { name: 'Not now: Numbers 1–10' }).click();
+    await expect(recs).toHaveCount(1);
+    await page.reload();
+    await expect(recs).toHaveCount(1);
+    await expect(recs.first()).toContainText('Before class: five greetings');
+  });
+
   test('recommends the open assignment and switches between courses', async ({ page }) => {
     await signIn(page, USERS.studentB);
 
-    const recs = page.getByRole('region', { name: 'Recommended for you' });
-    await expect(recs).toContainText('Assigned by your teacher');
-    await expect(recs).toContainText('Greetings practice');
+    // By hand: the assignment (due in 3 days, 97) goes to B's open attempt and
+    // is listed once, although it is also unfinished; then the before-class
+    // activity (78); then one vocabulary word due (40.5). Assignments cannot be snoozed.
+    const recs = page.getByRole('region', { name: 'Recommended for you' }).getByRole('listitem');
+    await expect(recs).toHaveCount(3);
+    await expect(recs.nth(0)).toContainText('Assigned by your teacher');
+    await expect(recs.nth(0).getByRole('link')).toHaveAttribute(
+      'href',
+      '/learn/attempts/c0000000-0000-4000-8000-000000000002',
+    );
+    await expect(recs.nth(0).getByRole('button')).toHaveCount(0);
+    await expect(recs.nth(1).getByRole('link')).toHaveText('Before class: five greetings');
+    await expect(recs.nth(2).getByRole('link')).toHaveText('Review 1 word');
     await expect(page.getByRole('region', { name: 'Continue where you left off' })).toContainText(
       'Greetings practice',
     );

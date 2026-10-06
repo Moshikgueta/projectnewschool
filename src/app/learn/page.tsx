@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { getFormatter, getLocale, getTranslations } from 'next-intl/server';
 import { isolate, languageName } from '@/domain/i18n/text';
 import { partOfDay } from '@/domain/learning/time';
+import type { Target } from '@/domain/recommendations/rules';
+import { dismissRecommendation } from '@/server/actions/recommendations';
 import { requireArea } from '@/server/auth/session';
 import { getStudentDashboard, type ContinueItem } from '@/server/queries/dashboard';
 import { ButtonLink } from '@/ui/Button';
@@ -15,6 +17,19 @@ import { ProgressBar, Stat } from '@/ui/Progress';
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('learn.dashboard');
   return { title: t('metaTitle') };
+}
+
+function recHref(target: Target, courseId: string): Route {
+  switch (target.type) {
+    case 'attempt':
+      return `/learn/attempts/${target.id}` as Route;
+    case 'activity':
+      return `/learn/activities/${target.id}` as Route;
+    case 'section':
+      return `/learn/${target.book}/${target.id}` as Route;
+    case 'vocabulary':
+      return `/learn/vocabulary?course=${courseId}` as Route;
+  }
 }
 
 function continueHref(item: ContinueItem | null): Route {
@@ -177,31 +192,57 @@ export default async function StudentHome({
               <ul className="flex flex-col gap-3">
                 {data.recommendations.map((rec) => (
                   <li key={rec.key}>
-                    <CardLink
-                      href={
-                        rec.attemptId
-                          ? (`/learn/attempts/${rec.attemptId}` as Route)
-                          : '/learn/practice'
-                      }
-                    >
+                    <Card className="flex flex-col gap-2">
                       <span className="flex flex-wrap items-center gap-2">
                         <Badge tone={rec.kind === 'assignment' ? 'brand' : 'neutral'}>
-                          {rec.kind === 'assignment' ? t('rec.assignment') : t('rec.unfinished')}
+                          {rec.kind === 'weakSkill'
+                            ? t('rec.weakSkill', { skill: isolate(rec.detail.skill ?? '') })
+                            : t(`rec.${rec.kind}`)}
                         </Badge>
-                        {rec.dueAt ? (
+                        {rec.kind === 'beforeClass' && rec.detail.classAt ? (
+                          <span className="text-sm text-muted">
+                            {t('rec.classOn', { date: date(rec.detail.classAt) })}
+                          </span>
+                        ) : rec.dueAt ? (
                           <span className="text-sm text-muted">
                             {t('rec.due', { date: date(rec.dueAt) })}
                           </span>
                         ) : null}
                       </span>
-                      <span
-                        className="mt-2 block font-semibold"
-                        lang={course.languageCode}
-                        dir={course.direction}
+                      <Link
+                        href={recHref(rec.target, course.courseId)}
+                        className="font-semibold text-fg underline-offset-4 hover:text-primary hover:underline"
+                        lang={rec.title ? course.languageCode : undefined}
+                        dir={rec.title ? course.direction : undefined}
                       >
-                        {rec.title}
-                      </span>
-                    </CardLink>
+                        {rec.kind === 'vocabulary' || !rec.title
+                          ? t('rec.vocabularyTitle', { count: rec.detail.words ?? 0 })
+                          : rec.title}
+                      </Link>
+                      {rec.kind === 'comeBack' ? (
+                        <p className="text-sm text-fg-secondary">
+                          {t('rec.comeBackDetail', { days: rec.detail.days ?? 0 })}
+                        </p>
+                      ) : rec.kind === 'spacedReview' ? (
+                        <p className="text-sm text-fg-secondary">
+                          {t('rec.spacedDetail', { days: rec.detail.days ?? 0 })}
+                        </p>
+                      ) : null}
+                      {rec.kind !== 'assignment' ? (
+                        <form action={dismissRecommendation} className="self-end">
+                          <input type="hidden" name="key" value={rec.key} />
+                          <button
+                            type="submit"
+                            aria-label={t('rec.notNowFor', {
+                              title: rec.title || t('rec.vocabulary'),
+                            })}
+                            className="min-h-11 px-2 text-sm font-medium text-muted underline-offset-4 hover:text-fg hover:underline"
+                          >
+                            {t('rec.notNow')}
+                          </button>
+                        </form>
+                      ) : null}
+                    </Card>
                   </li>
                 ))}
               </ul>

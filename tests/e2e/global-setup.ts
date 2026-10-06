@@ -64,4 +64,12 @@ export default async function globalSetup() {
     box: 2,
   });
   await admin.from('learning_events').delete().eq('user_id', A).eq('type', 'vocab_reviewed');
+
+  // Student A's "Not now" choices, back to the seed (only vocabulary snoozed).
+  await admin.from('recommendation_feedback').delete().eq('user_id', A);
+  await admin.from('recommendation_feedback').insert({
+    user_id: A,
+    rec_key: 'vocab-review:30000000-0000-4000-8000-000000000001',
+    action: 'dismissed',
+  });
 }

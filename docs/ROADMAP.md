@@ -158,7 +158,18 @@ Planned scope:
   week"; topics to revisit (skills with low accuracy).
 - **Exit:** metrics match a hand-computed fixture.
 
-### Phase 6 — Recommendations
+### Phase 6 — Recommendations _(implemented locally)_
+
+Status 2026-10-06:
+
+- [x] `RecommendationProvider` interface with the rule engine v1 (`rulesV1`, `domain/recommendations/rules.ts`): all seven rules below, each a pure function with its own unit tests
+- [x] Engine: one suggestion per place to go (an unfinished assigned activity is listed once, as the assignment), ranked by priority, at most 5
+- [x] Dashboard cards link to the right place (the open attempt, the activity, a section, vocabulary) and say why ("Before your next class", "Practise Numbers again", "Review 3 words")
+- [x] "Not now" snoozes a suggestion for 7 days (stored as feedback by a Server Action; teacher assignments cannot be snoozed)
+- [x] Seed: group X has a class in two days; end-to-end tests check the exact suggestions for students A and B, worked out by hand, and that "Not now" persists
+- [ ] Record "opened" and "completed" feedback to measure which suggestions help (with the analytics work, Phase 9)
+
+Planned scope:
 
 - `RecommendationProvider` interface; rule engine v1 (below); dismiss/act feedback.
 - **Exit:** each rule has unit tests; dashboard shows at most 3–5 ranked items.
@@ -205,7 +216,10 @@ This is the true critical path: code can be ready before content is.
 | 7        | Completed after-class item ~3 days ago                                   | spaced `review` activity                     |
 
 Each rule returns candidates with a score and reason; the engine dedupes, ranks and caps
-the list. Rules are pure functions of a learner snapshot, so a smarter provider can
+the list. Implemented thresholds: "before class" within 3 days; weak skill below 70% over
+the last 10 first tries (at least 3); inactivity 4+ days; spaced review 3–7 days after an
+after-class activity. (The progress page's "topics to revisit" is stricter, below 60%:
+the dashboard nudges early, the progress page reports.) Rules are pure functions of a learner snapshot, so a smarter provider can
 replace or blend with them later without touching the UI.
 
 ## Gamification stance

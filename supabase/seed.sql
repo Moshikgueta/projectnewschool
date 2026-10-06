@@ -300,6 +300,11 @@ insert into public.learning_events (user_id, type, course_id, activity_id) value
   ('00000000-0000-4000-8000-0000000000a2', 'activity_started', '30000000-0000-4000-8000-000000000001', '70000000-0000-4000-8000-000000000001'),
   ('00000000-0000-4000-8000-0000000000a2', 'activity_completed', '30000000-0000-4000-8000-000000000002', '70000000-0000-4000-8000-000000000003');
 
+-- Student A snoozed the vocabulary suggestion ("Not now"); B only opened it.
 insert into public.recommendation_feedback (user_id, rec_key, action) values
-  ('00000000-0000-4000-8000-0000000000a1', 'vocab-review:91000000-0000-4000-8000-000000000001', 'dismissed'),
-  ('00000000-0000-4000-8000-0000000000a2', 'vocab-review:91000000-0000-4000-8000-000000000001', 'opened');
+  ('00000000-0000-4000-8000-0000000000a1', 'vocab-review:30000000-0000-4000-8000-000000000001', 'dismissed'),
+  ('00000000-0000-4000-8000-0000000000a2', 'vocab-review:30000000-0000-4000-8000-000000000001', 'opened');
+
+-- Group X's next class is in two days ("before class" suggestions).
+insert into public.group_sessions (group_id, starts_at, cycle_id) values
+  ('a0000000-0000-4000-8000-000000000001', now() + interval '2 days', '40000000-0000-4000-8000-000000000001');
