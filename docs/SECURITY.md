@@ -198,6 +198,9 @@ the API call" attack exactly.
 - Anonymous visitor opening any `/learn` URL → login.
 - Student A pasting B's attempt URL → 404.
 - Answer key absent from page HTML and network responses (asserted).
+- Teacher Y opening group X's page or its activities' teacher view → 404; teacher X
+  opening an activity of a course they don't teach through their own group → 404;
+  a student opening any teacher view → 404.
 - Student B's answer request rewritten in flight to carry student A's attempt id →
   refused, and nothing is written to A's attempt (checked in the database).
 

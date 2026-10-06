@@ -53,3 +53,37 @@ export function practiceDaysInLastWeek(
 
 /** Default weekly practice goal (ROADMAP.md, "Gamification stance"). */
 export const WEEKLY_PRACTICE_GOAL = 3;
+
+/** Minutes the zone is ahead of UTC at an instant (Jerusalem in summer: 180). */
+function zoneOffsetMinutes(at: Date, timeZone: string): number {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone,
+    hourCycle: 'h23',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+  }).formatToParts(at);
+  const n = (type: string) => Number(parts.find((p) => p.type === type)?.value);
+  const asUtc = Date.UTC(n('year'), n('month') - 1, n('day'), n('hour'), n('minute'), n('second'));
+  return Math.round((asUtc - Math.floor(at.getTime() / 1000) * 1000) / 60_000);
+}
+
+/**
+ * The instant at which a wall-clock time ("2026-10-08T18:00", as typed into a
+ * date/time field) happens in a time zone, across daylight-saving changes.
+ * Null for malformed input.
+ */
+export function zonedTimeToUtc(local: string, timeZone: string): Date | null {
+  const m = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})$/.exec(local);
+  if (!m) return null;
+  const [, y, mo, d, h, mi] = m.map(Number) as [number, number, number, number, number, number];
+  const guess = Date.UTC(y, mo - 1, d, h, mi);
+  if (Number.isNaN(guess)) return null;
+  let result = guess - zoneOffsetMinutes(new Date(guess), timeZone) * 60_000;
+  // Re-check at the result: the offset can differ when a DST change falls in between.
+  result = guess - zoneOffsetMinutes(new Date(result), timeZone) * 60_000;
+  return new Date(result);
+}

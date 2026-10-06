@@ -207,3 +207,50 @@ export function shuffledFor<T>(
   }
   return [...list].reverse();
 }
+
+/**
+ * A stored answer in words, for teachers ("Tengo diez años.", "llamo / adios").
+ * True/false answers come back as `truth` so the page can translate them.
+ */
+export function describeAnswer(
+  item: PublicItem,
+  raw: unknown,
+): { text: string } | { truth: boolean } | null {
+  const answer = parseAnswer(item.type, raw);
+  if (!answer) return null;
+  switch (item.type) {
+    case 'multipleChoice': {
+      const ids = (answer as ItemAnswer<'multipleChoice'>).optionIds;
+      return {
+        text: item.data.options
+          .filter((o) => ids.includes(o.id))
+          .map((o) => o.text)
+          .join(' + '),
+      };
+    }
+    case 'trueFalse':
+      return { truth: (answer as ItemAnswer<'trueFalse'>).value };
+    case 'fillBlank':
+      return { text: (answer as ItemAnswer<'fillBlank'>).blanks.join(' / ') };
+    case 'matching': {
+      const pairs = (answer as ItemAnswer<'matching'>).pairs;
+      const right = new Map(item.data.right.map((r) => [r.id, r.text]));
+      return {
+        text: item.data.left
+          .map((l) => `${l.text} → ${right.get(pairs[l.id] ?? '') ?? '?'}`)
+          .join(', '),
+      };
+    }
+    case 'reorderSentence': {
+      const tokens = new Map(item.data.tokens.map((t) => [t.id, t.text]));
+      return {
+        text: (answer as ItemAnswer<'reorderSentence'>).tokenIds
+          .map((id) => tokens.get(id) ?? '')
+          .join(' '),
+      };
+    }
+    case 'shortAnswer':
+    case 'reflection':
+      return { text: (answer as ItemAnswer<'shortAnswer'>).text };
+  }
+}

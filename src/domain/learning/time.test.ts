@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { localDay, partOfDay, practiceDaysInLastWeek } from './time';
+import { localDay, partOfDay, practiceDaysInLastWeek, zonedTimeToUtc } from './time';
 
 const TZ = 'Asia/Jerusalem';
 
@@ -43,5 +43,25 @@ describe('practiceDaysInLastWeek', () => {
     // 22:30 UTC on Sep 26 is 01:30 on Sep 27 in Jerusalem: inside the window.
     expect(localDay(new Date('2026-09-26T22:30:00Z'), TZ)).toBe('2026-09-27');
     expect(practiceDaysInLastWeek(['2026-09-26T22:30:00Z'], now, TZ)).toBe(1);
+  });
+});
+
+describe('zonedTimeToUtc', () => {
+  it('turns a wall-clock time into the right instant, in summer and in winter', () => {
+    // Israel: UTC+3 until the last Sunday of October 2026, then UTC+2.
+    expect(zonedTimeToUtc('2026-10-08T18:00', 'Asia/Jerusalem')?.toISOString()).toBe(
+      '2026-10-08T15:00:00.000Z',
+    );
+    expect(zonedTimeToUtc('2026-12-01T18:00', 'Asia/Jerusalem')?.toISOString()).toBe(
+      '2026-12-01T16:00:00.000Z',
+    );
+    expect(zonedTimeToUtc('2026-10-08T23:59', 'America/New_York')?.toISOString()).toBe(
+      '2026-10-09T03:59:00.000Z',
+    );
+  });
+
+  it('rejects malformed input', () => {
+    expect(zonedTimeToUtc('8/10/2026 18:00', 'Asia/Jerusalem')).toBeNull();
+    expect(zonedTimeToUtc('', 'Asia/Jerusalem')).toBeNull();
   });
 });

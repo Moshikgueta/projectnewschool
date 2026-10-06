@@ -218,7 +218,7 @@ function FeedbackView({
               : t('incorrect')}
         </p>
         {r.feedback.map((f) => (
-          <p key={f} className="text-fg-secondary">
+          <p key={f} className="text-fg-secondary" dir="auto">
             {f}
           </p>
         ))}

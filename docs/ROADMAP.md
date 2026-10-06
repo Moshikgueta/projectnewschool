@@ -174,7 +174,19 @@ Planned scope:
 - `RecommendationProvider` interface; rule engine v1 (below); dismiss/act feedback.
 - **Exit:** each rule has unit tests; dashboard shows at most 3–5 ranked items.
 
-### Phase 7 — Teacher dashboard
+### Phase 7 — Teacher dashboard _(implemented locally; pilot use pending)_
+
+Status 2026-10-06:
+
+- [x] Group page: students (last active, active-cycle completion, first-try accuracy with a minimum of 3 answers), homework with "x of y done", common difficulties (questions most of the group got wrong on the first try, at least 3 students, with the most common wrong answer), activities of the active cycle, notebook, recent activity
+- [x] Teacher actions, all written with the teacher's own session (RLS decides again): set the active cycle (the previous one is marked completed), schedule and cancel classes (in the teacher's time zone), give homework with an optional due date and note, remove homework
+- [x] Teacher version of an activity: every question with its answer, feedback, and how this group did on the first try
+- [x] Pure, unit-tested insights (`domain/teaching/insights.ts`); seed student D in group X so "common difficulties" has a real sample
+- [x] Tests: 16 pgTAP teacher-authorization tests (own groups only, no homework in another teacher's name, homework only from the group's course, students cannot give homework or schedule classes, no reading of other courses' answers or keys); end-to-end: the group page matches hand-computed numbers, homework reaches the student and can be removed, classes and the active cycle, the teacher activity view, and 404s across groups, courses and roles
+- [ ] Pilot teachers use it for two weeks (exit criterion; needs the school)
+- [ ] Per-student page and homework for selected students (the database supports it; no screen yet)
+
+Planned scope:
 
 - My groups, group detail (students, active cycle, assignments, recent activity,
   completion, common difficulties), set active cycle, assign activity with a due date,

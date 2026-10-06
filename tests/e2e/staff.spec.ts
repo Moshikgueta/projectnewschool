@@ -7,8 +7,9 @@ test.describe('teachers', () => {
     await expect(page).toHaveURL(/\/teach$/);
     await page.getByRole('link', { name: /group X/ }).click();
     await expect(page.getByRole('heading', { name: /group X/ })).toBeVisible();
-    await expect(page.getByText('Daniel (student A)')).toBeVisible();
-    await expect(page.getByText('Maya (student B)')).toBeVisible();
+    const students = page.getByRole('region', { name: 'Students' });
+    await expect(students.getByRole('rowheader', { name: /Daniel \(student A\)/ })).toBeVisible();
+    await expect(students.getByRole('rowheader', { name: /Maya \(student B\)/ })).toBeVisible();
   });
 
   test('teacher Y cannot open group X (404, same as a missing group)', async ({ page }) => {

@@ -65,6 +65,25 @@ export default async function globalSetup() {
   });
   await admin.from('learning_events').delete().eq('user_id', A).eq('type', 'vocab_reviewed');
 
+  // Group X as seeded: one homework, one class in two days, cycle 1 active.
+  const GX = 'a0000000-0000-4000-8000-000000000001';
+  await admin
+    .from('assignments')
+    .delete()
+    .eq('group_id', GX)
+    .neq('id', 'b0000000-0000-4000-8000-000000000001');
+  await admin.from('group_sessions').delete().eq('group_id', GX);
+  await admin.from('group_sessions').insert({
+    group_id: GX,
+    starts_at: new Date(Date.now() + 2 * 86_400_000).toISOString(),
+    cycle_id: '40000000-0000-4000-8000-000000000001',
+  });
+  await admin
+    .from('group_cycles')
+    .update({ state: 'active' })
+    .eq('group_id', GX)
+    .eq('cycle_id', '40000000-0000-4000-8000-000000000001');
+
   // Student A's "Not now" choices, back to the seed (only vocabulary snoozed).
   await admin.from('recommendation_feedback').delete().eq('user_id', A);
   await admin.from('recommendation_feedback').insert({

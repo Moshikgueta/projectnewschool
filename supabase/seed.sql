@@ -8,6 +8,7 @@
 --   student A  student.a@example.com   Spanish L1 (group X) + Spanish L2 (group W, draft course)
 --   student B  student.b@example.com   Spanish L1 (group X) + French L1 (group Y)
 --   student C  student.c@example.com   French L1 (group Y)
+--   student D  student.d@example.com   Spanish L1 (group X)
 --   teacher X  teacher.x@example.com   teaches groups X and W
 --   teacher Y  teacher.y@example.com   teaches group Y
 --   manager    manager@example.com     pedagogical manager (needs MFA for manager powers)
@@ -19,6 +20,7 @@ with people (id, email, display_name) as (
     ('00000000-0000-4000-8000-0000000000a1'::uuid, 'student.a@example.com', 'Daniel (student A)'),
     ('00000000-0000-4000-8000-0000000000a2'::uuid, 'student.b@example.com', 'Maya (student B)'),
     ('00000000-0000-4000-8000-0000000000a3'::uuid, 'student.c@example.com', 'Noam (student C)'),
+    ('00000000-0000-4000-8000-0000000000a4'::uuid, 'student.d@example.com', 'Lior (student D)'),
     ('00000000-0000-4000-8000-0000000000b1'::uuid, 'teacher.x@example.com', 'Teacher X'),
     ('00000000-0000-4000-8000-0000000000b2'::uuid, 'teacher.y@example.com', 'Teacher Y'),
     ('00000000-0000-4000-8000-0000000000c1'::uuid, 'manager@example.com', 'Pedagogical manager'),
@@ -49,6 +51,7 @@ insert into public.user_roles (user_id, role) values
   ('00000000-0000-4000-8000-0000000000a1', 'student'),
   ('00000000-0000-4000-8000-0000000000a2', 'student'),
   ('00000000-0000-4000-8000-0000000000a3', 'student'),
+  ('00000000-0000-4000-8000-0000000000a4', 'student'),
   ('00000000-0000-4000-8000-0000000000b1', 'teacher'),
   ('00000000-0000-4000-8000-0000000000b2', 'teacher'),
   ('00000000-0000-4000-8000-0000000000c1', 'pedagogical_manager'),
@@ -233,6 +236,7 @@ insert into public.enrollments (group_id, student_id) values
   ('a0000000-0000-4000-8000-000000000001', '00000000-0000-4000-8000-0000000000a2'),
   ('a0000000-0000-4000-8000-000000000002', '00000000-0000-4000-8000-0000000000a2'),
   ('a0000000-0000-4000-8000-000000000002', '00000000-0000-4000-8000-0000000000a3'),
+  ('a0000000-0000-4000-8000-000000000001', '00000000-0000-4000-8000-0000000000a4'),
   ('a0000000-0000-4000-8000-000000000003', '00000000-0000-4000-8000-0000000000a1');
 
 insert into public.group_cycles (group_id, cycle_id, course_id, state, position, activated_at) values
@@ -255,6 +259,17 @@ insert into public.attempts (id, user_id, activity_id, course_id, assignment_id,
    '30000000-0000-4000-8000-000000000002', 'b0000000-0000-4000-8000-000000000002', 'submitted', 0, 1, now()),
   ('c0000000-0000-4000-8000-000000000004', '00000000-0000-4000-8000-0000000000a3', '70000000-0000-4000-8000-000000000003',
    '30000000-0000-4000-8000-000000000002', 'b0000000-0000-4000-8000-000000000002', 'submitted', 1, 1, now());
+
+-- Student D did the homework too, and chose the same wrong answer as student B
+-- first (teacher view: "common difficulties").
+insert into public.attempts (id, user_id, activity_id, course_id, assignment_id, status, score, max_score, submitted_at) values
+  ('c0000000-0000-4000-8000-000000000006', '00000000-0000-4000-8000-0000000000a4', '70000000-0000-4000-8000-000000000001',
+   '30000000-0000-4000-8000-000000000001', 'b0000000-0000-4000-8000-000000000001', 'submitted', 0, 1, now());
+insert into public.responses (attempt_id, user_id, course_id, item_id, answer, is_correct, score, try_no) values
+  ('c0000000-0000-4000-8000-000000000006', '00000000-0000-4000-8000-0000000000a4', '30000000-0000-4000-8000-000000000001',
+   '80000000-0000-4000-8000-000000000001', '{"optionIds":["o2"]}', false, 0, 1),
+  ('c0000000-0000-4000-8000-000000000006', '00000000-0000-4000-8000-0000000000a4', '30000000-0000-4000-8000-000000000001',
+   '80000000-0000-4000-8000-000000000001', '{"optionIds":["o1"]}', true, 1, 2);
 
 -- Student A finished "Numbers 1–10" two days ago: 1 of 3 right on the first try.
 insert into public.attempts (id, user_id, activity_id, course_id, status, score, max_score, started_at, updated_at, submitted_at) values
@@ -297,6 +312,7 @@ insert into public.learning_events (user_id, type, course_id, activity_id, occur
   ('00000000-0000-4000-8000-0000000000a1', 'activity_completed', '30000000-0000-4000-8000-000000000001', '70000000-0000-4000-8000-000000000007', now() - interval '2 days');
 insert into public.learning_events (user_id, type, course_id, activity_id) values
   ('00000000-0000-4000-8000-0000000000a1', 'activity_completed', '30000000-0000-4000-8000-000000000001', '70000000-0000-4000-8000-000000000001'),
+  ('00000000-0000-4000-8000-0000000000a4', 'activity_completed', '30000000-0000-4000-8000-000000000001', '70000000-0000-4000-8000-000000000001'),
   ('00000000-0000-4000-8000-0000000000a2', 'activity_started', '30000000-0000-4000-8000-000000000001', '70000000-0000-4000-8000-000000000001'),
   ('00000000-0000-4000-8000-0000000000a2', 'activity_completed', '30000000-0000-4000-8000-000000000002', '70000000-0000-4000-8000-000000000003');
 
