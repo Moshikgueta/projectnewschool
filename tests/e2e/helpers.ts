@@ -12,6 +12,7 @@ export const USERS = {
   studentB: 'student.b@example.com',
   studentC: 'student.c@example.com',
   studentD: 'student.d@example.com',
+  office: 'office@example.com',
   teacherX: 'teacher.x@example.com',
   teacherY: 'teacher.y@example.com',
   manager: 'manager@example.com',

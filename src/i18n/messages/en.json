@@ -24,7 +24,8 @@
     "learn": "Student",
     "teach": "Teacher",
     "manage": "Pedagogical management",
-    "admin": "Administration"
+    "admin": "Administration",
+    "office": "School office"
   },
   "errors": {
     "notFoundTitle": "Page not found",
@@ -178,7 +179,8 @@
   },
   "teach": {
     "nav": {
-      "groups": "My groups"
+      "groups": "My groups",
+      "timetable": "Timetable"
     },
     "groups": {
       "title": "My groups",
@@ -369,7 +371,8 @@
       "student": "Student",
       "teacher": "Teacher",
       "pedagogical_manager": "Pedagogical manager",
-      "admin": "Admin"
+      "admin": "Admin",
+      "office": "Office"
     },
     "errors": {
       "invalidEmail": "Enter a valid email address.",
@@ -577,5 +580,63 @@
     "reviewWords": "Review words",
     "noCourses": "No courses yet",
     "empty": "Your progress appears here as you study."
+  },
+  "office": {
+    "nav": {
+      "timetable": "Timetable",
+      "rooms": "Rooms"
+    },
+    "timetable": {
+      "title": "Weekly timetable",
+      "subtitle": "Rooms and lessons, week by week.",
+      "readOnly": "Only the school office changes the timetable.",
+      "room": "Room",
+      "add": "Book a room",
+      "lessonTitle": "Lesson",
+      "group": "Group (optional)",
+      "teacher": "Teacher (optional)",
+      "none": "None",
+      "day": "Day",
+      "from": "From",
+      "to": "To",
+      "note": "Note (optional)",
+      "bookButton": "Book",
+      "removeLabel": "Remove {title}, {day} {from}",
+      "remove": "Remove",
+      "empty": "No rooms yet. Add the school's rooms first.",
+      "mine": "Your lessons are marked."
+    },
+    "rooms": {
+      "title": "Rooms",
+      "subtitle": "The school's classrooms.",
+      "name": "Name",
+      "capacity": "Capacity (0 = not stated)",
+      "kit": "Equipment",
+      "active": "In use",
+      "inactive": "Not in use",
+      "sortOrder": "Order",
+      "add": "Add a room",
+      "save": "Save",
+      "remove": "Remove",
+      "removeLabel": "Remove room {name}",
+      "seats": "{count, plural, =0 {Capacity not stated} one {# seat} other {# seats}}",
+      "empty": "No rooms yet.",
+      "edit": "Edit"
+    },
+    "errors": {
+      "invalid": "Check the form and try again.",
+      "weekday": "Choose a day.",
+      "time": "Enter the times as HH:MM.",
+      "order": "The lesson must end after it starts.",
+      "hours": "Lessons are between 07:00 and 23:00.",
+      "tooShort": "A lesson is at least 15 minutes.",
+      "tooLong": "A lesson is at most 6 hours.",
+      "clash": "{room} is taken on {day}, {from}–{to}: {title}.",
+      "duplicate": "A room with this name already exists.",
+      "roomInUse": "This room still has lessons. Move or remove them first.",
+      "notAllowed": "Only the school office can change this.",
+      "failed": "Could not save. Try again.",
+      "saved": "Saved."
+    }
   }
 }

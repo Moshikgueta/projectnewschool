@@ -16,7 +16,7 @@ const adminMfa: AccessSubject = { roles: ['admin'], aal: 'aal2' };
 
 describe('decideAccess', () => {
   it('sends signed-out visitors to sign in for every area', () => {
-    for (const area of ['learn', 'teach', 'manage', 'admin'] as const) {
+    for (const area of ['learn', 'teach', 'manage', 'office', 'admin'] as const) {
       expect(decideAccess(null, area)).toBe('sign-in');
     }
   });
@@ -38,6 +38,13 @@ describe('decideAccess', () => {
     expect(decideAccess(managerMfa, 'manage')).toBe('allow');
     expect(decideAccess(adminMfa, 'admin')).toBe('allow');
     expect(decideAccess({ roles: ['admin'], aal: 'aal1' }, 'admin')).toBe('needs-mfa');
+  });
+
+  it('requires MFA for the office area, and only the office role opens it', () => {
+    expect(decideAccess({ roles: ['office'], aal: 'aal1' }, 'office')).toBe('needs-mfa');
+    expect(decideAccess({ roles: ['office'], aal: 'aal2' }, 'office')).toBe('allow');
+    expect(decideAccess(teacher, 'office')).toBe('not-found');
+    expect(decideAccess(adminMfa, 'office')).toBe('not-found');
   });
 
   it('does not let MFA stand in for a missing role', () => {

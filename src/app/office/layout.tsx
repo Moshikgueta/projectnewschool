@@ -5,18 +5,18 @@ import { setInterfaceLanguage } from '@/server/actions/preferences';
 import { requireArea } from '@/server/auth/session';
 import { AppShell } from '@/ui/AppShell';
 
-export default async function TeachLayout({ children }: { children: ReactNode }) {
-  const user = await requireArea('teach');
+export default async function OfficeLayout({ children }: { children: ReactNode }) {
+  const user = await requireArea('office');
   const t = await getTranslations();
   return (
     <AppShell
-      areaLabel={t('areas.teach')}
+      areaLabel={t('areas.office')}
       userName={user.displayName}
       signOutAction={signOut}
       languageAction={setInterfaceLanguage}
       nav={[
-        { href: '/teach', label: t('teach.nav.groups'), icon: 'groups' },
-        { href: '/teach/timetable', label: t('teach.nav.timetable'), icon: 'timetable' },
+        { href: '/office', label: t('office.nav.timetable'), icon: 'timetable' },
+        { href: '/office/rooms', label: t('office.nav.rooms'), icon: 'rooms' },
       ]}
     >
       {children}

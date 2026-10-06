@@ -13,6 +13,7 @@
 --   teacher Y  teacher.y@example.com   teaches group Y
 --   manager    manager@example.com     pedagogical manager (needs MFA for manager powers)
 --   admin      admin@example.com       admin (needs MFA for admin powers)
+--   office     office@example.com      school office: rooms and timetable (needs MFA)
 
 -- ── accounts ────────────────────────────────────────────────────────────────
 with people (id, email, display_name) as (
@@ -24,7 +25,8 @@ with people (id, email, display_name) as (
     ('00000000-0000-4000-8000-0000000000b1'::uuid, 'teacher.x@example.com', 'Teacher X'),
     ('00000000-0000-4000-8000-0000000000b2'::uuid, 'teacher.y@example.com', 'Teacher Y'),
     ('00000000-0000-4000-8000-0000000000c1'::uuid, 'manager@example.com', 'Pedagogical manager'),
-    ('00000000-0000-4000-8000-0000000000d1'::uuid, 'admin@example.com', 'Office admin')
+    ('00000000-0000-4000-8000-0000000000d1'::uuid, 'admin@example.com', 'Office admin'),
+    ('00000000-0000-4000-8000-0000000000e1'::uuid, 'office@example.com', 'School office (Rina)')
 ),
 new_users as (
   insert into auth.users (
@@ -55,7 +57,8 @@ insert into public.user_roles (user_id, role) values
   ('00000000-0000-4000-8000-0000000000b1', 'teacher'),
   ('00000000-0000-4000-8000-0000000000b2', 'teacher'),
   ('00000000-0000-4000-8000-0000000000c1', 'pedagogical_manager'),
-  ('00000000-0000-4000-8000-0000000000d1', 'admin');
+  ('00000000-0000-4000-8000-0000000000d1', 'admin'),
+  ('00000000-0000-4000-8000-0000000000e1', 'office');
 
 -- ── catalog ─────────────────────────────────────────────────────────────────
 insert into public.languages (id, code, name, direction) values
@@ -324,3 +327,20 @@ insert into public.recommendation_feedback (user_id, rec_key, action) values
 -- Group X's next class is in two days ("before class" suggestions).
 insert into public.group_sessions (group_id, starts_at, cycle_id) values
   ('a0000000-0000-4000-8000-000000000001', now() + interval '2 days', '40000000-0000-4000-8000-000000000001');
+
+-- ── rooms and the weekly timetable (from the staff room) ───────────────────
+insert into public.rooms (id, name, capacity, kit, sort_order) values
+  ('e0000000-0000-4000-8000-000000000001', 'Room 1', 12, 'Projector, whiteboard', 1),
+  ('e0000000-0000-4000-8000-000000000002', 'Room 2', 8, 'Whiteboard', 2),
+  ('e0000000-0000-4000-8000-000000000003', 'Zoom room', 0, 'Camera, headset', 3);
+
+-- weekday 0 = Sunday; times in minutes from midnight (1080 = 18:00).
+insert into public.room_bookings (id, room_id, title, group_id, teacher_id, weekday, start_min, end_min, note, created_by) values
+  ('e1000000-0000-4000-8000-000000000001', 'e0000000-0000-4000-8000-000000000001', 'Spanish Level 1 (group X)',
+   'a0000000-0000-4000-8000-000000000001', '00000000-0000-4000-8000-0000000000b1', 2, 1080, 1170, '',
+   '00000000-0000-4000-8000-0000000000e1'),
+  ('e1000000-0000-4000-8000-000000000002', 'e0000000-0000-4000-8000-000000000002', 'French Level 1 (group Y)',
+   'a0000000-0000-4000-8000-000000000002', '00000000-0000-4000-8000-0000000000b2', 4, 1140, 1230, '',
+   '00000000-0000-4000-8000-0000000000e1'),
+  ('e1000000-0000-4000-8000-000000000003', 'e0000000-0000-4000-8000-000000000001', 'English Foundations',
+   null, null, 0, 600, 690, 'Teacher to confirm', '00000000-0000-4000-8000-0000000000e1');

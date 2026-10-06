@@ -3,7 +3,7 @@
 // layer decides what to *show* (and where to send people), not what data
 // they may read.
 
-export const ROLES = ['student', 'teacher', 'pedagogical_manager', 'admin'] as const;
+export const ROLES = ['student', 'teacher', 'pedagogical_manager', 'office', 'admin'] as const;
 export type Role = (typeof ROLES)[number];
 
 export type AssuranceLevel = 'aal1' | 'aal2';
@@ -12,6 +12,7 @@ export const AREAS = {
   learn: { role: 'student', requiresMfa: false },
   teach: { role: 'teacher', requiresMfa: false },
   manage: { role: 'pedagogical_manager', requiresMfa: true },
+  office: { role: 'office', requiresMfa: true },
   admin: { role: 'admin', requiresMfa: true },
 } as const satisfies Record<string, { role: Role; requiresMfa: boolean }>;
 
@@ -43,7 +44,7 @@ export function decideAccess(subject: AccessSubject | null, area: Area): AccessD
 
 // Where someone lands after signing in. Daily-use areas come first: a teacher
 // who is also a pedagogical manager starts in their groups.
-const HOME_PRIORITY: readonly Area[] = ['teach', 'learn', 'manage', 'admin'];
+const HOME_PRIORITY: readonly Area[] = ['teach', 'learn', 'office', 'manage', 'admin'];
 
 export function homeAreaFor(roles: readonly Role[]): Area | null {
   return HOME_PRIORITY.find((area) => roles.includes(AREAS[area].role)) ?? null;

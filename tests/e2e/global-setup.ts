@@ -84,6 +84,10 @@ export default async function globalSetup() {
     .eq('group_id', GX)
     .eq('cycle_id', '40000000-0000-4000-8000-000000000001');
 
+  // Rooms and lessons added by the office tests (the seed's ids start e0…/e1…).
+  await admin.from('room_bookings').delete().not('id', 'like', 'e1000000-%');
+  await admin.from('rooms').delete().not('id', 'like', 'e0000000-%');
+
   // Student A's "Not now" choices, back to the seed (only vocabulary snoozed).
   await admin.from('recommendation_feedback').delete().eq('user_id', A);
   await admin.from('recommendation_feedback').insert({

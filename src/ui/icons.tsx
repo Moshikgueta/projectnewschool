@@ -5,9 +5,11 @@
 import {
   ArrowRight,
   BookOpen,
+  CalendarBlank,
   Cards,
   ChalkboardTeacher,
   ClipboardText,
+  Door,
   Gear,
   House,
   NotePencil,
@@ -25,6 +27,8 @@ export const ICONS = {
   teach: ChalkboardTeacher,
   settings: Gear,
   language: Translate,
+  timetable: CalendarBlank,
+  rooms: Door,
 } as const;
 
 export type IconName = keyof typeof ICONS;
