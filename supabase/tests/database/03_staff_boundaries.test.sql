@@ -47,13 +47,13 @@ select is(pg_temp.scalar_as(:TX, 'select count(*) from public.groups'), 2::bigin
   'teacher X sees only the two groups they teach');
 select is(pg_temp.scalar_as(:TX, $$select count(*) from public.groups where id = 'a0000000-0000-4000-8000-000000000002'$$), 0::bigint,
   'teacher X cannot see group Y');
-select is(pg_temp.scalar_as(:TX, 'select count(*) from public.attempts'), 2::bigint,
-  'teacher X sees the Spanish attempts of students A and B');
+select is(pg_temp.scalar_as(:TX, 'select count(*) from public.attempts'), 3::bigint,
+  'teacher X sees the Spanish attempts of students A (two) and B');
 select is(pg_temp.scalar_as(:TX, $$select count(*) from public.attempts where id = 'c0000000-0000-4000-8000-000000000003'$$), 0::bigint,
   'teacher X cannot see student B''s attempt in a different course (French)');
 select is(pg_temp.scalar_as(:TX, $$select count(*) from public.profiles where id = '00000000-0000-4000-8000-0000000000a3'$$), 0::bigint,
   'teacher X cannot see a student who is not in their groups');
-select is(pg_temp.scalar_as(:TX, 'select count(*) from public.activity_item_keys'), 6::bigint,
+select is(pg_temp.scalar_as(:TX, 'select count(*) from public.activity_item_keys'), 9::bigint,
   'teacher X reads answer keys of the course they teach only');
 select is(pg_temp.scalar_as(:TX, 'select count(*) from public.section_teacher_notes'), 1::bigint,
   'teacher X reads teacher notes of the course they teach');
@@ -94,7 +94,7 @@ select is(
 -- (Fixture courses only: imported content may add more.)
 select is(pg_temp.scalar_as(:M, $$select count(*) from public.courses where id::text like '30000000-%'$$, 'aal2'), 3::bigint,
   'manager with MFA sees every course, including drafts');
-select is(pg_temp.scalar_as(:M, 'select count(*) from public.attempts', 'aal2'), 4::bigint,
+select is(pg_temp.scalar_as(:M, 'select count(*) from public.attempts', 'aal2'), 5::bigint,
   'manager with MFA sees learner work across the school');
 select is(
   pg_temp.try_as(:M, $$insert into public.cycles (course_id, slug, title) values ('30000000-0000-4000-8000-000000000001', 'viajar', 'Travel')$$, 'aal2'),

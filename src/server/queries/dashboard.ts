@@ -1,5 +1,6 @@
 import 'server-only';
 import { practiceDaysInLastWeek, WEEKLY_PRACTICE_GOAL } from '@/domain/learning/time';
+import { cycleProgress } from '@/domain/learning/progress';
 import { recommend, type Recommendation } from '@/domain/recommendations/rules';
 import type { SessionUser } from '@/server/auth/session';
 import type { Database } from '@/server/db.types';
@@ -93,8 +94,12 @@ export async function getStudentDashboard(
     events,
     activeCycles,
     feedback,
+    finishedSections,
   ] = await Promise.all([
-    supabase.from('book_sections').select('id, book:books ( kind )').eq('course_id', courseId),
+    supabase
+      .from('book_sections')
+      .select('id, cycle_id, book:books ( kind )')
+      .eq('course_id', courseId),
     supabase.from('activities').select('id, title, phase, cycle_id').eq('course_id', courseId),
     supabase
       .from('vocabulary_items')
@@ -141,6 +146,12 @@ export async function getStudentDashboard(
       .select('rec_key')
       .eq('user_id', user.id)
       .eq('action', 'dismissed'),
+    supabase
+      .from('section_progress')
+      .select('book_section_id')
+      .eq('user_id', user.id)
+      .eq('course_id', courseId)
+      .eq('status', 'completed'),
   ]);
 
   if (sections.error) fail('notebook', sections.error);
@@ -193,15 +204,28 @@ export async function getStudentDashboard(
   }
 
   const activeCycle = activeCycles.data[0];
-  let cycle: StudentDashboard['progress']['cycle'] = null;
-  if (activeCycle) {
-    const inCycle = activities.data.filter((a) => a.cycle_id === activeCycle.cycle_id);
-    const done = inCycle.filter((a) => completedActivityIds.has(a.id)).length;
-    cycle = {
-      title: activeCycle.cycle?.title ?? '',
-      percent: inCycle.length ? Math.round((done / inCycle.length) * 100) : 0,
-    };
-  }
+  // Same rule as the progress page (domain/learning/progress.ts).
+  const cycle: StudentDashboard['progress']['cycle'] = activeCycle
+    ? (cycleProgress({
+        cycles: [
+          {
+            id: activeCycle.cycle_id,
+            title: activeCycle.cycle?.title ?? '',
+            position: 0,
+            active: true,
+          },
+        ],
+        activities: activities.data.map((a) => ({
+          id: a.id,
+          cycleId: a.cycle_id,
+          title: a.title,
+          skillIds: [],
+        })),
+        sections: sections.data.map((x) => ({ id: x.id, cycleId: x.cycle_id })),
+        completedActivityIds,
+        completedSectionIds: new Set((finishedSections.data ?? []).map((f) => f.book_section_id)),
+      }).map((c) => ({ title: c.title, percent: c.percent }))[0] ?? null)
+    : null;
 
   return {
     courses,

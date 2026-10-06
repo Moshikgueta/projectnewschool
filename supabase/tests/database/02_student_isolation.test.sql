@@ -49,8 +49,8 @@ $$;
 \set A '''student.a@example.com'''
 
 -- ── reading other students' learner data ────────────────────────────────────
-select is(pg_temp.scalar_as(:A, 'select count(*) from public.attempts'), 1::bigint,
-  'student A sees exactly one attempt (their own)');
+select is(pg_temp.scalar_as(:A, 'select count(*) from public.attempts'), 2::bigint,
+  'student A sees exactly their own two attempts');
 select is(pg_temp.scalar_as(:A, $$select count(*) from public.attempts where id = 'c0000000-0000-4000-8000-000000000002'$$), 0::bigint,
   'student A cannot read student B''s attempt even by its id');
 select is(pg_temp.scalar_as(:A, 'select count(*) from public.attempts where user_id <> ''00000000-0000-4000-8000-0000000000a1''::uuid'), 0::bigint,
@@ -87,7 +87,7 @@ select is(pg_temp.scalar_as(:A, $$select count(*) from public.cycles where statu
   'student A sees no draft cycle and no cycle from another or unpublished course');
 select is(pg_temp.scalar_as(:A, 'select count(*) from public.book_sections'), 2::bigint,
   'student A sees only the published sections of their course (one notebook, one workbook)');
-select is(pg_temp.scalar_as(:A, 'select count(*) from public.activities'), 3::bigint,
+select is(pg_temp.scalar_as(:A, 'select count(*) from public.activities'), 4::bigint,
   'student A sees only the published activities of their course (not the draft, not other courses)');
 select is(pg_temp.scalar_as(:A, $$select count(*) from public.activity_items where course_id <> '30000000-0000-4000-8000-000000000001'$$), 0::bigint,
   'student A sees no exercise items from other courses');

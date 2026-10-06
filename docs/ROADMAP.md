@@ -140,7 +140,19 @@ Planned scope:
 - **Exit:** critical E2E flow passes (complete activity → log out → log in → progress
   remains); answer keys provably absent from the client.
 
-### Phase 5 — Progress tracking
+### Phase 5 — Progress tracking _(implemented locally)_
+
+Status 2026-10-06:
+
+- [x] Progress read model in pure TypeScript (`domain/learning/progress.ts`, ADR-026): practice week, cycle progress, skill accuracy, topics to revisit, strong skills
+- [x] `/learn/progress`: this week (7-day strip in the student's time zone against the 3-day goal), topics to revisit with links to the activities that practise them, cycles with completion bars, skills, vocabulary well known
+- [x] The dashboard's "current cycle" bar uses the same rule (activities and sections), and links to the progress page
+- [x] Learning events already recorded by every action (sections opened/finished, activities started/completed, homework completed, vocabulary reviewed) feed "practice this week"
+- [x] Exit criterion: the metrics match hand-computed fixtures, in a unit test (worked out in comments) and end to end against `seed.sql` (student A: 2 of 3 days, cycle 33%, revisit "Numbers" at 1 of 3)
+- [ ] Milestone badges ("Completed cycle 3") and a teacher view of the same numbers (Phases 7 and 9)
+- [ ] Stored aggregates if computing on request gets slow (measure first)
+
+Planned scope:
 
 - `learning_events` pipeline; progress read models; cycle progress; "practice this
   week"; topics to revisit (skills with low accuracy).

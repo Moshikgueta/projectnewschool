@@ -24,8 +24,9 @@ test.describe('student dashboard', () => {
     );
 
     const progress = page.getByRole('region', { name: 'Progress' });
-    await expect(progress).toContainText('Activities completed1');
-    // One of the cycle's three published activities is done.
+    // Greetings practice (today) and Numbers 1–10 (two days ago).
+    await expect(progress).toContainText('Activities completed2');
+    // Cycle 1: 2 of 4 activities done, 0 of 2 sections finished → 2 / 6 = 33%.
     await expect(progress.getByRole('progressbar', { name: /Current cycle/ })).toHaveAttribute(
       'aria-valuenow',
       '33',
@@ -34,6 +35,59 @@ test.describe('student dashboard', () => {
     await expect(page.getByRole('region', { name: 'Recent activity' })).toContainText(
       /Completed: \u2068?Greetings practice/,
     );
+  });
+
+  // Phase 5 exit criterion: the progress page shows the numbers worked out by
+  // hand from supabase/seed.sql for student A.
+  test('the progress page matches the hand-computed fixture', async ({ page }) => {
+    await signIn(page, USERS.studentA);
+    await page.getByRole('link', { name: 'See my progress' }).click();
+    await expect(page).toHaveURL(/\/learn\/progress\?course=30000000-0000-4000-8000-000000000001$/);
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('My progress');
+
+    // Learning events today and two days ago → 2 of the 3-day weekly goal.
+    const week = page.getByRole('region', { name: 'This week' });
+    await expect(week).toContainText('2 of 3 days');
+    await expect(week.getByText(/: practised$/)).toHaveCount(2);
+    await expect(week.getByText(/: no practice$/)).toHaveCount(5);
+
+    // Introducing yourself: activities 2 of 4 (Greetings practice, Numbers 1–10),
+    // sections 0 of 2 (¡Hola! is in progress, the workbook section untouched) → 33%.
+    const cycles = page.getByRole('region', { name: 'Cycles' });
+    await expect(cycles.getByRole('listitem')).toHaveCount(1);
+    await expect(cycles).toContainText('Active now');
+    await expect(cycles).toContainText('33% · 2 of 4 activities · 0 of 2 sections');
+    await expect(
+      cycles.getByRole('progressbar', { name: 'Progress in Introducing yourself' }),
+    ).toHaveAttribute('aria-valuenow', '33');
+
+    // Numbers 1–10: first tries wrong, right, wrong → 1 of 3 = 33% < 60% → revisit.
+    const revisit = page.getByRole('region', { name: 'Topics to revisit' });
+    await expect(revisit).toContainText('Numbers');
+    await expect(revisit).toContainText('1 of 3 right on the first try');
+    await expect(revisit.getByRole('link', { name: 'Practise: Numbers 1–10' })).toHaveAttribute(
+      'href',
+      '/learn/activities/70000000-0000-4000-8000-000000000007',
+    );
+
+    // Greetings: a single first-try answer is too few to judge.
+    const skills = page.getByRole('region', { name: 'Skills' });
+    await expect(skills).toContainText('Greetings vocabulary');
+    await expect(skills).toContainText('Too early to tell: 1 answer so far');
+    await expect(skills.getByRole('progressbar', { name: 'Numbers' })).toHaveAttribute(
+      'aria-valuenow',
+      '33',
+    );
+
+    // Vocabulary: "hola" in box 2, "adiós" never reviewed → none well known yet.
+    await expect(page.getByRole('region', { name: 'Vocabulary' })).toContainText(
+      '0 of 2 words well known',
+    );
+
+    const results = await new AxeBuilder({ page })
+      .withTags(['wcag2a', 'wcag2aa', 'wcag21aa'])
+      .analyze();
+    expect(results.violations).toEqual([]);
   });
 
   test('recommends the open assignment and switches between courses', async ({ page }) => {

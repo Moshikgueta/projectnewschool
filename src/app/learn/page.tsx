@@ -1,4 +1,5 @@
 import type { Metadata, Route } from 'next';
+import Link from 'next/link';
 import { getFormatter, getLocale, getTranslations } from 'next-intl/server';
 import { isolate, languageName } from '@/domain/i18n/text';
 import { partOfDay } from '@/domain/learning/time';
@@ -209,7 +210,18 @@ export default async function StudentHome({
         </div>
 
         <aside className="flex min-w-0 flex-col gap-10">
-          <Section id="progress-heading" title={t('progress')}>
+          <Section
+            id="progress-heading"
+            title={t('progress')}
+            action={
+              <Link
+                href={`/learn/progress?course=${course.courseId}` as Route}
+                className="text-[0.9375rem] font-medium text-primary underline-offset-4 hover:underline"
+              >
+                {t('seeProgress')}
+              </Link>
+            }
+          >
             <Card>
               <dl className="flex flex-col gap-6">
                 <Stat label={t('activitiesCompleted')} value={progress.activitiesCompleted} />

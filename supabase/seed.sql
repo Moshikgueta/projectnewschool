@@ -140,7 +140,9 @@ insert into public.activities (id, course_id, cycle_id, slug, title, phase, scor
   ('70000000-0000-4000-8000-000000000005', '30000000-0000-4000-8000-000000000001', '40000000-0000-4000-8000-000000000001',
    'antes-de-clase', 'Before class: five greetings', 'before_class', 'none', 3, 'published'),
   ('70000000-0000-4000-8000-000000000006', '30000000-0000-4000-8000-000000000001', '40000000-0000-4000-8000-000000000001',
-   'saludos-completo', 'Greetings: every exercise type', 'after_class', 'practice', 8, 'published');
+   'saludos-completo', 'Greetings: every exercise type', 'after_class', 'practice', 8, 'published'),
+  ('70000000-0000-4000-8000-000000000007', '30000000-0000-4000-8000-000000000001', '40000000-0000-4000-8000-000000000001',
+   'numeros', 'Numbers 1–10', 'after_class', 'practice', 5, 'published');
 
 insert into public.activity_items (id, activity_id, course_id, position, type, prompt, data) values
   ('80000000-0000-4000-8000-000000000001', '70000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001', 1,
@@ -187,9 +189,27 @@ insert into public.activity_item_keys (item_id, course_id, answer, feedback) val
   ('80000000-0000-4000-8000-000000000003', '30000000-0000-4000-8000-000000000002', '{"value":true}', '{}');
 
 insert into public.skills (id, code, label) values
-  ('90000000-0000-4000-8000-000000000001', 'vocab.greetings', 'Greetings vocabulary');
+  ('90000000-0000-4000-8000-000000000001', 'vocab.greetings', 'Greetings vocabulary'),
+  ('90000000-0000-4000-8000-000000000002', 'vocab.numbers', 'Numbers');
 insert into public.activity_skills (activity_id, skill_id) values
-  ('70000000-0000-4000-8000-000000000001', '90000000-0000-4000-8000-000000000001');
+  ('70000000-0000-4000-8000-000000000001', '90000000-0000-4000-8000-000000000001'),
+  ('70000000-0000-4000-8000-000000000007', '90000000-0000-4000-8000-000000000002');
+
+-- Progress fixture (Phase 5): "Numbers 1–10", which student A found hard.
+insert into public.activity_items (id, activity_id, course_id, position, slug, type, prompt, data) values
+  ('80000000-0000-4000-8000-000000000071', '70000000-0000-4000-8000-000000000007', '30000000-0000-4000-8000-000000000001', 1, 'dos-mas-tres',
+   'multipleChoice', '[{"id":"p","type":"text","text":"Dos más tres son…","lang":"es"}]',
+   '{"options":[{"id":"o1","text":"seis"},{"id":"o2","text":"cinco"},{"id":"o3","text":"cuatro"}]}'),
+  ('80000000-0000-4000-8000-000000000072', '70000000-0000-4000-8000-000000000007', '30000000-0000-4000-8000-000000000001', 2, 'siete',
+   'multipleChoice', '[{"id":"p","type":"text","text":"7"}]',
+   '{"options":[{"id":"o1","text":"siete"},{"id":"o2","text":"setenta"},{"id":"o3","text":"seis"}]}'),
+  ('80000000-0000-4000-8000-000000000073', '70000000-0000-4000-8000-000000000007', '30000000-0000-4000-8000-000000000001', 3, 'diez',
+   'multipleChoice', '[{"id":"p","type":"text","text":"10"}]',
+   '{"options":[{"id":"o1","text":"doce"},{"id":"o2","text":"dos"},{"id":"o3","text":"diez"}]}');
+insert into public.activity_item_keys (item_id, course_id, answer, feedback) values
+  ('80000000-0000-4000-8000-000000000071', '30000000-0000-4000-8000-000000000001', '{"optionIds":["o2"]}', '{}'),
+  ('80000000-0000-4000-8000-000000000072', '30000000-0000-4000-8000-000000000001', '{"optionIds":["o1"]}', '{}'),
+  ('80000000-0000-4000-8000-000000000073', '30000000-0000-4000-8000-000000000001', '{"optionIds":["o3"]}', '{}');
 
 insert into public.vocabulary_sets (id, course_id, cycle_id, title, status) values
   ('91000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001', '40000000-0000-4000-8000-000000000001', 'Saludos', 'published');
@@ -236,6 +256,20 @@ insert into public.attempts (id, user_id, activity_id, course_id, assignment_id,
   ('c0000000-0000-4000-8000-000000000004', '00000000-0000-4000-8000-0000000000a3', '70000000-0000-4000-8000-000000000003',
    '30000000-0000-4000-8000-000000000002', 'b0000000-0000-4000-8000-000000000002', 'submitted', 1, 1, now());
 
+-- Student A finished "Numbers 1–10" two days ago: 1 of 3 right on the first try.
+insert into public.attempts (id, user_id, activity_id, course_id, status, score, max_score, started_at, updated_at, submitted_at) values
+  ('c0000000-0000-4000-8000-000000000005', '00000000-0000-4000-8000-0000000000a1', '70000000-0000-4000-8000-000000000007',
+   '30000000-0000-4000-8000-000000000001', 'submitted', 1, 3, now() - interval '2 days', now() - interval '2 days', now() - interval '2 days');
+insert into public.responses (attempt_id, user_id, course_id, item_id, answer, is_correct, score, try_no, created_at) values
+  ('c0000000-0000-4000-8000-000000000005', '00000000-0000-4000-8000-0000000000a1', '30000000-0000-4000-8000-000000000001',
+   '80000000-0000-4000-8000-000000000071', '{"optionIds":["o1"]}', false, 0, 1, now() - interval '2 days'),
+  ('c0000000-0000-4000-8000-000000000005', '00000000-0000-4000-8000-0000000000a1', '30000000-0000-4000-8000-000000000001',
+   '80000000-0000-4000-8000-000000000071', '{"optionIds":["o2"]}', true, 1, 2, now() - interval '2 days'),
+  ('c0000000-0000-4000-8000-000000000005', '00000000-0000-4000-8000-0000000000a1', '30000000-0000-4000-8000-000000000001',
+   '80000000-0000-4000-8000-000000000072', '{"optionIds":["o1"]}', true, 1, 1, now() - interval '2 days'),
+  ('c0000000-0000-4000-8000-000000000005', '00000000-0000-4000-8000-0000000000a1', '30000000-0000-4000-8000-000000000001',
+   '80000000-0000-4000-8000-000000000073', '{"optionIds":["o1"]}', false, 0, 1, now() - interval '2 days');
+
 insert into public.responses (attempt_id, user_id, course_id, item_id, answer, is_correct, score) values
   ('c0000000-0000-4000-8000-000000000001', '00000000-0000-4000-8000-0000000000a1', '30000000-0000-4000-8000-000000000001',
    '80000000-0000-4000-8000-000000000001', '{"optionIds":["o1"]}', true, 1),
@@ -259,6 +293,8 @@ insert into public.vocab_review_state (user_id, vocabulary_item_id, course_id, b
   ('00000000-0000-4000-8000-0000000000a1', '92000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001', 2),
   ('00000000-0000-4000-8000-0000000000a2', '92000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001', 1);
 
+insert into public.learning_events (user_id, type, course_id, activity_id, occurred_at) values
+  ('00000000-0000-4000-8000-0000000000a1', 'activity_completed', '30000000-0000-4000-8000-000000000001', '70000000-0000-4000-8000-000000000007', now() - interval '2 days');
 insert into public.learning_events (user_id, type, course_id, activity_id) values
   ('00000000-0000-4000-8000-0000000000a1', 'activity_completed', '30000000-0000-4000-8000-000000000001', '70000000-0000-4000-8000-000000000001'),
   ('00000000-0000-4000-8000-0000000000a2', 'activity_started', '30000000-0000-4000-8000-000000000001', '70000000-0000-4000-8000-000000000001'),
