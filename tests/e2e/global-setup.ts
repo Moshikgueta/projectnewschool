@@ -16,6 +16,11 @@ export default async function globalSetup() {
   const admin = createClient(url, secret, { auth: { persistSession: false } });
   const { data } = await admin.auth.admin.listUsers({ perPage: 200 });
   for (const user of data?.users ?? []) {
+    // Accounts left by an interrupted staff-room import test.
+    if (user.email?.endsWith('@staffroom.example.com')) {
+      await admin.auth.admin.deleteUser(user.id);
+      continue;
+    }
     if (!user.email?.endsWith('@example.com')) continue;
     const { data: factors } = await admin.auth.admin.mfa.listFactors({ userId: user.id });
     for (const factor of factors?.factors ?? []) {

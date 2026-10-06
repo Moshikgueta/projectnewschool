@@ -1,6 +1,6 @@
 # Uniting the staff room (חדר המורים) with the learning platform
 
-Status: **in progress** · decided 2026-10-06 · stages A and B implemented locally (ADR-029, ADR-030)
+Status: **in progress** · decided 2026-10-06 · stages A and B and the import script implemented locally (ADR-029, ADR-030)
 
 ## Decisions
 
@@ -76,19 +76,46 @@ Stages: **A** rooms and timetable · **B** student codes · **C** attendance and
 
 ## Moving the data (D1 → Supabase)
 
-A script (`scripts/import-staff-room.ts`) reads a `wrangler d1 export` and imports:
+`scripts/staff-room-import.ts` reads an export of the staff room's D1 database and
+imports it. It reads accounts, entry codes, rooms and bookings, and never reads password
+hashes, sessions or reset tokens.
 
-- **Staff accounts.** Each becomes a Supabase user with the mapped role. Passwords
-  cannot be carried over (D1 stores PBKDF2; Supabase cannot import it), so each person
-  gets an invitation email to set a new password. Disabled accounts are not imported.
-- **Students with codes.** If the platform uses the same pepper (`STUDENT_CODE_PEPPER`)
-  and the same scheme (SHA-256 of `pepper + "$" + code`), the stored hashes are copied as
-  they are and **every student keeps their code**.
-- **Rooms and bookings** as they are. A booking's teacher was free text in D1. It is
-  matched to a teacher by name where exactly one matches; otherwise the name is kept in
-  the booking's note for the office to fix.
+```bash
+# 1. Export (someone with access to the Cloudflare account). The file holds personal
+#    data: keep it out of Git (export/ and *.d1-export.sql are ignored) and delete it
+#    after the cut-over.
+npx wrangler d1 export teacher-room --remote --output=export/teacher-room.d1-export.sql
 
-The script has a dry run that only reports what it would do.
+# 2. Dry run: prints what would be created and what needs a person to look at.
+pnpm staff-room:import export/teacher-room.d1-export.sql
+
+# 3. Import. No email is sent: staff accounts are created without an invitation.
+pnpm staff-room:import export/teacher-room.d1-export.sql --apply
+
+# 4. At the cut-over: run again with invitations. Staff who have never signed in get an
+#    email to set their password; everything already imported is left as it is.
+pnpm staff-room:import export/teacher-room.d1-export.sql --apply --send-invites
+```
+
+Staging and production need `APP_ENV=staging|production` and `--confirm=<Supabase host>`.
+Running it again is safe: what is already there counts as unchanged, and nothing is
+deleted or overwritten.
+
+What it does (rules in `src/domain/migration/staff-room.ts`, unit tested):
+
+| Staff room                                                    | Platform                                                                                                                                                                                                                      |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Account, role מורה / מנהל פדגוגי / אדמין / מנהלת קבלה / תלמיד | Account with role teacher / pedagogical_manager / admin / office / student. Matched by email: an existing account gains the role, **unless that would move it across the student/staff line** (reported for an admin instead) |
+| Disabled or awaiting approval; unknown role                   | Not imported, reported                                                                                                                                                                                                        |
+| Password                                                      | Not carried over (PBKDF2 can't be imported): staff set a new one from the invitation; students use their code                                                                                                                 |
+| Entry code                                                    | The hash is copied for **students only**, so the code keeps working when `STUDENT_CODE_PEPPER` is the Worker's value. A newer platform code wins                                                                              |
+| Room                                                          | Matched by name, otherwise created                                                                                                                                                                                            |
+| Booking                                                       | Created unless it would clash (reported). The free-text teacher is matched by name to exactly one platform teacher; otherwise the name goes into the note as "Teacher: …" and is reported                                     |
+| Screen lists, sessions, reset tokens                          | Not imported                                                                                                                                                                                                                  |
+
+Tested with a made-up export (`tests/fixtures/staff-room-export.sql`): an API-level test
+imports it into the local database, checks every row, and runs it again to show nothing
+changes; an end-to-end test signs in with a code imported from the staff room.
 
 ## Cut-over
 

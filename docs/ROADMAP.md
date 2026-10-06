@@ -193,7 +193,7 @@ Planned scope:
   teacher version of activities (keys + notes).
 - **Exit:** teacher authorization tests pass; pilot teachers use it for two weeks.
 
-### Staff room merge _(stages A and B implemented locally)_
+### Staff room merge _(stages A and B and the import implemented locally)_
 
 Decided 2026-10-06: the staff room (חדר המורים) becomes part of this platform. Plan and
 stages: [STAFF-ROOM-MERGE.md](STAFF-ROOM-MERGE.md).
@@ -205,7 +205,9 @@ stages: [STAFF-ROOM-MERGE.md](STAFF-ROOM-MERGE.md).
       sign in at `/login/code`, same hashing as the staff room so codes carry over,
       throttled wrong codes, never for staff accounts (ADR-030); 12 pgTAP tests, API
       test, 6 end-to-end tests including a forged request
-- [ ] D1 → Supabase import script (staff invitations, codes, rooms, bookings), dry run first
+- [x] D1 → Supabase import script (`pnpm staff-room:import`): dry run by default, no emails
+      unless `--send-invites`, idempotent; unit, API and end-to-end tests on a made-up export
+- [ ] Run it on a copy of the real D1 export (needs the export from the Cloudflare account)
 - [ ] C attendance and teacher "today" · D students, packages, office home (Tazman) ·
       E staff tools · F admissions and teacher development (privacy review first)
 - [ ] Cut-over: the domain points here, the Worker shows "we have moved", D1 read-only

@@ -1,5 +1,7 @@
 import { createHash } from 'node:crypto';
 import { expect, test, type Page } from '@playwright/test';
+import { planImport } from '../../src/domain/migration/staff-room';
+import { applyPlan, loadExisting, readDump } from '../../scripts/staff-room-import';
 import { adminClient, IDS, signIn, signOut, USERS } from './helpers';
 
 // Student entry codes (merged from the staff room): a teacher hands out a
@@ -153,5 +155,37 @@ test.describe('student entry codes', () => {
       'Too many wrong codes. Wait 15 minutes and try again.',
     );
     await expect(page).toHaveURL(/\/login\/code$/);
+  });
+
+  test('a code from the staff room still works after the import', async ({ page }) => {
+    // The staff room stored SHA-256(pepper + "$" + code); with the same pepper
+    // the copied hash signs the student in here.
+    const pepper = process.env.STUDENT_CODE_PEPPER ?? '';
+    const hash = createHash('sha256').update(`${pepper}$KQ7M2ZXR`).digest('hex');
+    const email = 'sr.code@staffroom.example.com';
+    const dump = readDump(`
+      CREATE TABLE staff_users (id TEXT PRIMARY KEY, email TEXT, role TEXT, name TEXT,
+        active INTEGER, created_at INTEGER);
+      CREATE TABLE student_codes (code_hash TEXT PRIMARY KEY, user_id TEXT, issued_by TEXT,
+        created_at INTEGER);
+      INSERT INTO "staff_users" VALUES('s1','${email}','תלמיד','Yoav (staff room)',1,0);
+      INSERT INTO "student_codes" VALUES('${hash}','s1',NULL,0);`);
+    const admin = adminClient();
+    const { existing, info } = await loadExisting(admin as never);
+    const result = await applyPlan(admin as never, planImport(dump, existing), info, {
+      sendInvites: false,
+      siteUrl: 'http://localhost:3000',
+    });
+    expect(result.failed).toEqual([]);
+
+    try {
+      await signInWithCode(page, 'kq7m-2zxr');
+      await expect(page).toHaveURL(/\/learn$/);
+      await expect(page.getByText('Yoav (staff room)').first()).toBeVisible();
+    } finally {
+      const { data } = await admin.auth.admin.listUsers({ perPage: 1000 });
+      const user = data.users.find((u) => u.email === email);
+      if (user) await admin.auth.admin.deleteUser(user.id);
+    }
   });
 });
