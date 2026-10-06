@@ -1,6 +1,6 @@
 # Uniting the staff room (חדר המורים) with the learning platform
 
-Status: **in progress** · decided 2026-10-06 · stages A and B and the import script implemented locally (ADR-029, ADR-030)
+Status: **in progress** · decided 2026-10-06 · stages A, B and C and the import script implemented locally (ADR-029, ADR-030, ADR-031)
 
 ## Decisions
 
@@ -55,6 +55,23 @@ From an inventory of `Teacher Dashboard v2.dc.html`, `Teacher Mobile.dc.html`,
 Stages: **A** rooms and timetable · **B** student codes · **C** attendance and teacher
 "today" · **D** students, packages and the office (the Tazman replacement,
 `MIGRATION-FROM-TAZMAN.md`) · **E** staff tools · **F** admissions and teacher development.
+
+## Attendance and the teacher's day (stage C)
+
+- **Teacher home is now "Today"** (`/teach`): today's classes in the teacher's time zone,
+  each with its room from the weekly timetable and how many students are marked;
+  earlier classes from the last two weeks still missing attendance; homework due in the
+  coming week with how many have done it; then the groups.
+- **Attendance** (`/teach/groups/<group>/classes/<class>`): present, late, absent or
+  excused, and an optional note, for each active or paused student. It opens 30 minutes
+  before the class. Students left unmarked stay unmarked. The database checks the
+  teacher, the time and the student again (ADR-031).
+- **Group page:** past classes with how many are marked, and each student's attendance
+  ("3 of 4"; excused absences don't count).
+- **Records stay:** attendance is never deleted, and a class that has started can't be
+  cancelled (once attendance exists, the database refuses).
+- Not yet: level-fit notes, a student-facing attendance view, attendance in the office's
+  lesson log (stage D, with packages).
 
 ## Student entry codes (stage B)
 

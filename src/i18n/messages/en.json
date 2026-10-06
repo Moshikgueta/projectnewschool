@@ -191,7 +191,7 @@
   },
   "teach": {
     "nav": {
-      "groups": "My groups",
+      "groups": "Today",
       "timetable": "Timetable"
     },
     "groups": {
@@ -200,7 +200,8 @@
       "empty": "No groups yet",
       "emptyBody": "A pedagogical manager assigns teachers to groups.",
       "students": "{count, plural, one {# student} other {# students}}",
-      "unpublished": "Course not published yet"
+      "unpublished": "Course not published yet",
+      "doneCount": "{done} of {total} done"
     },
     "group": {
       "students": "Students",
@@ -257,14 +258,24 @@
       "newCode": "New code",
       "newCodeLabel": "New code for {name}",
       "codeIssued": "Code for {name}:",
-      "codeOnce": "Give it to them now: it won’t be shown again, and their previous code no longer works."
+      "codeOnce": "Give it to them now: it won’t be shown again, and their previous code no longer works.",
+      "pastClasses": "Past classes",
+      "noPastClasses": "No classes yet.",
+      "attendanceCol": "Attendance",
+      "attendanceRate": "{attended} of {counted}",
+      "attendanceNone": "Not taken yet",
+      "markedCount": "{marked} of {total} marked",
+      "attendanceLink": "Attendance",
+      "attendanceFor": "Attendance for {date}"
     },
     "forms": {
       "saved": "Saved.",
       "invalid": "Check the form and try again.",
       "notAllowed": "You can only change your own groups.",
       "failed": "Could not save. Try again.",
-      "past": "Choose a date or time in the future."
+      "past": "Choose a date or time in the future.",
+      "notStarted": "Attendance opens 30 minutes before the class starts.",
+      "nobodyMarked": "Mark at least one student."
     },
     "activity": {
       "back": "Back to the group",
@@ -275,6 +286,39 @@
       "noResult": "No answers from this group yet.",
       "notGraded": "Not graded automatically: students' answers are saved.",
       "question": "Question {n}"
+    },
+    "today": {
+      "title": "Today",
+      "classes": "Today’s classes",
+      "noClasses": "No classes today.",
+      "room": "Room: {room}",
+      "marked": "Attendance: {marked} of {total}",
+      "take": "Take attendance",
+      "takeFor": "Take attendance: {group}, {date}",
+      "toTake": "Attendance to take",
+      "toTakeHint": "Earlier classes from the last two weeks with students not marked yet.",
+      "toTakeEmpty": "All caught up.",
+      "homework": "Homework due this week",
+      "homeworkEmpty": "Nothing due in the next 7 days.",
+      "homeworkLine": "{group} · due {date}",
+      "groups": "My groups"
+    },
+    "attendance": {
+      "title": "Attendance",
+      "notOpen": "Attendance opens 30 minutes before the class starts.",
+      "status": {
+        "present": "Present",
+        "late": "Late",
+        "absent": "Absent",
+        "excused": "Excused"
+      },
+      "note": "Note (optional)",
+      "noteFor": "Note for {name}",
+      "save": "Save attendance",
+      "paused": "Paused",
+      "empty": "No students to mark.",
+      "back": "Back to the group",
+      "hint": "Students you leave unmarked stay unmarked. Excused absences don’t count against attendance."
     }
   },
   "manage": {

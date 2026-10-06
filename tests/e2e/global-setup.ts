@@ -81,12 +81,49 @@ export default async function globalSetup() {
     .delete()
     .eq('group_id', GX)
     .neq('id', 'b0000000-0000-4000-8000-000000000001');
+  // Classes as seeded: in two days; two days ago (attendance: A present,
+  // B late, D absent); nine days ago (attendance not taken).
+  const { data: classes } = await admin.from('group_sessions').select('id').eq('group_id', GX);
+  const classIds = (classes ?? []).map((c) => c.id);
+  if (classIds.length) await admin.from('attendance').delete().in('session_id', classIds);
   await admin.from('group_sessions').delete().eq('group_id', GX);
-  await admin.from('group_sessions').insert({
-    group_id: GX,
-    starts_at: new Date(Date.now() + 2 * 86_400_000).toISOString(),
-    cycle_id: '40000000-0000-4000-8000-000000000001',
-  });
+  const day = 86_400_000;
+  const cycle1 = '40000000-0000-4000-8000-000000000001';
+  await admin.from('group_sessions').insert([
+    {
+      id: 'f0000000-0000-4000-8000-000000000001',
+      group_id: GX,
+      cycle_id: cycle1,
+      starts_at: new Date(Date.now() + 2 * day).toISOString(),
+    },
+    {
+      id: 'f0000000-0000-4000-8000-000000000002',
+      group_id: GX,
+      cycle_id: cycle1,
+      starts_at: new Date(Date.now() - 2 * day).toISOString(),
+    },
+    {
+      id: 'f0000000-0000-4000-8000-000000000003',
+      group_id: GX,
+      cycle_id: cycle1,
+      starts_at: new Date(Date.now() - 9 * day).toISOString(),
+    },
+  ]);
+  const TX = '00000000-0000-4000-8000-0000000000b1';
+  await admin.from('attendance').insert(
+    (
+      [
+        ['00000000-0000-4000-8000-0000000000a1', 'present'],
+        ['00000000-0000-4000-8000-0000000000a2', 'late'],
+        ['00000000-0000-4000-8000-0000000000a4', 'absent'],
+      ] as const
+    ).map(([student, status]) => ({
+      session_id: 'f0000000-0000-4000-8000-000000000002',
+      student_id: student,
+      status,
+      marked_by: TX,
+    })),
+  );
   await admin
     .from('group_cycles')
     .update({ state: 'active' })

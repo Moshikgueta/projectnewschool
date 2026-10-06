@@ -15,7 +15,10 @@ test.describe('teacher area', () => {
   // Worked out by hand from seed.sql for group X (students A, B, D).
   test('group overview: students, homework, common difficulties, next class', async ({ page }) => {
     await signIn(page, USERS.teacherX);
-    await page.getByRole('link', { name: /Spanish Level 1/ }).click();
+    await page
+      .getByRole('region', { name: 'My groups' })
+      .getByRole('link', { name: /Spanish Level 1/ })
+      .click();
     await expect(page).toHaveURL(`/teach/groups/${IDS.groupX}`);
 
     // Active cycle "Introducing yourself" has 4 activities.

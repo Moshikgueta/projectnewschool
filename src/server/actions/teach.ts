@@ -8,6 +8,8 @@ import { zonedTimeToUtc } from '@/domain/learning/time';
 import type { ManageState } from '@/server/actions/manage';
 import { requireArea } from '@/server/auth/session';
 import { formatCode } from '@/domain/auth/codes';
+import { ATTENDANCE_STATUSES } from '@/domain/teaching/attendance';
+import { getClassAttendance } from '@/server/queries/attendance';
 import { issueCode, isStudentOnly } from '@/server/privileged/student-codes';
 import { createSupabaseServerClient } from '@/server/supabase/server';
 
@@ -114,11 +116,14 @@ export async function cancelClass(formData: FormData): Promise<void> {
   const sessionId = uuid.safeParse(formData.get('sessionId'));
   if (!groupId.success || !sessionId.success) return;
   const supabase = await createSupabaseServerClient();
+  // Only classes still to come: one that has started is part of the record
+  // (and once attendance is taken, the database refuses to remove it).
   await supabase
     .from('group_sessions')
     .delete()
     .eq('id', sessionId.data)
-    .eq('group_id', groupId.data);
+    .eq('group_id', groupId.data)
+    .gt('starts_at', new Date().toISOString());
   revalidatePath(`/teach/groups/${groupId.data}` as Route);
 }
 
@@ -219,4 +224,55 @@ export async function issueStudentCode(_prev: CodeState, formData: FormData): Pr
 
   const code = await issueCode(parsed.data.studentId, user.id);
   return { status: 'ok', code: formatCode(code) };
+}
+
+/**
+ * Save the attendance of one class. The students come from the database (the
+ * group's active and paused students), never from the form; a student left
+ * unmarked stays unmarked. Written with the teacher's own session, so the
+ * database checks again that they teach the group and that the class has
+ * started (or starts within 30 minutes).
+ */
+export async function saveAttendance(_prev: ManageState, formData: FormData): Promise<ManageState> {
+  const user = await requireArea('teach');
+  const t = await getTranslations('teach.forms');
+  const ids = z
+    .object({ groupId: uuid, sessionId: uuid })
+    .safeParse({ groupId: formData.get('groupId'), sessionId: formData.get('sessionId') });
+  if (!ids.success) return message('invalid');
+
+  const cls = await getClassAttendance(user.id, ids.data.groupId, ids.data.sessionId);
+  if (!cls) return message('notAllowed');
+  if (!cls.open) return { status: 'error', message: t('notStarted') };
+
+  const status = z.enum(ATTENDANCE_STATUSES);
+  const rows = [];
+  for (const student of cls.students) {
+    const raw = formData.get(`status-${student.id}`);
+    if (raw === null || raw === '') continue;
+    const parsed = status.safeParse(raw);
+    const note = z
+      .string()
+      .trim()
+      .max(300)
+      .safeParse(formData.get(`note-${student.id}`) ?? '');
+    if (!parsed.success || !note.success) return message('invalid');
+    rows.push({
+      session_id: cls.sessionId,
+      student_id: student.id,
+      status: parsed.data,
+      note: note.data,
+      marked_by: user.id,
+    });
+  }
+  if (rows.length === 0) return { status: 'error', message: t('nobodyMarked') };
+
+  const supabase = await createSupabaseServerClient();
+  const { error } = await supabase
+    .from('attendance')
+    .upsert(rows, { onConflict: 'session_id,student_id' });
+  if (error) return message(error.code === '42501' ? 'notAllowed' : 'failed');
+  revalidatePath(`/teach/groups/${cls.groupId}` as Route, 'layout');
+  revalidatePath('/teach');
+  return message('saved');
 }

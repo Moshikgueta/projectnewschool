@@ -134,7 +134,7 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
               <EmptyState title={t('empty')} />
             ) : (
               <div className="overflow-x-auto rounded-lg border border-border bg-surface">
-                <table className="w-full min-w-[44rem] text-start text-[0.9375rem]">
+                <table className="w-full min-w-[52rem] text-start text-[0.9375rem]">
                   <thead className="bg-surface-secondary text-sm text-muted">
                     <tr>
                       <th scope="col" className="px-4 py-2 text-start font-medium">
@@ -148,6 +148,9 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
                       </th>
                       <th scope="col" className="px-4 py-2 text-start font-medium">
                         {t('accuracyCol')}
+                      </th>
+                      <th scope="col" className="px-4 py-2 text-start font-medium">
+                        {t('attendanceCol')}
                       </th>
                       <th scope="col" className="px-4 py-2 text-start font-medium">
                         {t('codeCol')}
@@ -176,6 +179,9 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
                           {s.accuracy === null
                             ? t('tooFew')
                             : t('accuracy', { percent: Math.round(s.accuracy * 100) })}
+                        </td>
+                        <td className="px-4 py-3 tabular-nums">
+                          {s.attendance ? t('attendanceRate', s.attendance) : t('attendanceNone')}
                         </td>
                         <td className="px-4 py-3">
                           <StudentCodeForm groupId={group.id} studentId={s.id} name={s.name} />
@@ -305,6 +311,34 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
                 </ul>
               )}
               <ClassForm groupId={group.id} />
+            </Card>
+          </Section>
+
+          <Section id="past-classes-heading" title={t('pastClasses')}>
+            <Card>
+              {group.pastClasses.length === 0 ? (
+                <p className="text-fg-secondary">{t('noPastClasses')}</p>
+              ) : (
+                <ul className="flex flex-col divide-y divide-border">
+                  {group.pastClasses.map((c) => (
+                    <li key={c.id} className="flex items-center justify-between gap-3 py-2">
+                      <div>
+                        <p className="tabular-nums">{when(c.startsAt, true)}</p>
+                        <p className="text-sm text-muted">
+                          {t('markedCount', { marked: c.marked, total: c.students })}
+                        </p>
+                      </div>
+                      <Link
+                        href={`/teach/groups/${group.id}/classes/${c.id}` as Route}
+                        className={LINK}
+                        aria-label={t('attendanceFor', { date: when(c.startsAt, true) })}
+                      >
+                        {t('attendanceLink')}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </Card>
           </Section>
 

@@ -324,9 +324,17 @@ insert into public.recommendation_feedback (user_id, rec_key, action) values
   ('00000000-0000-4000-8000-0000000000a1', 'vocab-review:30000000-0000-4000-8000-000000000001', 'dismissed'),
   ('00000000-0000-4000-8000-0000000000a2', 'vocab-review:30000000-0000-4000-8000-000000000001', 'opened');
 
--- Group X's next class is in two days ("before class" suggestions).
-insert into public.group_sessions (group_id, starts_at, cycle_id) values
-  ('a0000000-0000-4000-8000-000000000001', now() + interval '2 days', '40000000-0000-4000-8000-000000000001');
+-- Group X's next class is in two days ("before class" suggestions). Two
+-- earlier classes: two days ago, with attendance taken (A present, B late,
+-- D absent), and nine days ago, attendance not taken yet.
+insert into public.group_sessions (id, group_id, starts_at, cycle_id) values
+  ('f0000000-0000-4000-8000-000000000001', 'a0000000-0000-4000-8000-000000000001', now() + interval '2 days', '40000000-0000-4000-8000-000000000001'),
+  ('f0000000-0000-4000-8000-000000000002', 'a0000000-0000-4000-8000-000000000001', now() - interval '2 days', '40000000-0000-4000-8000-000000000001'),
+  ('f0000000-0000-4000-8000-000000000003', 'a0000000-0000-4000-8000-000000000001', now() - interval '9 days', '40000000-0000-4000-8000-000000000001');
+insert into public.attendance (session_id, student_id, status, marked_by) values
+  ('f0000000-0000-4000-8000-000000000002', '00000000-0000-4000-8000-0000000000a1', 'present', '00000000-0000-4000-8000-0000000000b1'),
+  ('f0000000-0000-4000-8000-000000000002', '00000000-0000-4000-8000-0000000000a2', 'late', '00000000-0000-4000-8000-0000000000b1'),
+  ('f0000000-0000-4000-8000-000000000002', '00000000-0000-4000-8000-0000000000a4', 'absent', '00000000-0000-4000-8000-0000000000b1');
 
 -- ── rooms and the weekly timetable (from the staff room) ───────────────────
 insert into public.rooms (id, name, capacity, kit, sort_order) values

@@ -9,6 +9,7 @@ import {
   type StudentSummary,
 } from '@/domain/teaching/insights';
 import { solutionOf, type Solution } from '@/domain/grading/solution';
+import { attendanceByStudent } from '@/domain/teaching/attendance';
 import type { Database } from '@/server/db.types';
 import { createSupabaseServerClient } from '@/server/supabase/server';
 import { getActivity, type ActivityDetail } from './activities';
@@ -26,9 +27,13 @@ export type GroupOverview = {
   students: (StudentSummary & {
     name: string;
     status: Database['public']['Enums']['enrollment_status'];
+    /** Classes attended out of classes that count (excused left out); null before any mark. */
+    attendance: { attended: number; counted: number } | null;
   })[];
   cycles: { id: string; title: string; state: CycleState | null }[];
   upcomingClasses: { id: string; startsAt: string }[];
+  /** Classes that have started, latest first, with how many students are marked. */
+  pastClasses: { id: string; startsAt: string; marked: number; students: number }[];
   activities: { id: string; title: string; cycleId: string; phase: string }[];
   assignments: {
     id: string;
@@ -100,6 +105,8 @@ export async function getGroupOverview(
     sections,
     tries,
     events,
+    pastSessions,
+    marks,
   ] = await Promise.all([
     supabase
       .from('cycles')
@@ -160,6 +167,17 @@ export async function getGroupOverview(
       .in('user_id', ids)
       .order('occurred_at', { ascending: false })
       .limit(200),
+    supabase
+      .from('group_sessions')
+      .select('id, starts_at')
+      .eq('group_id', groupId)
+      .lt('starts_at', now.toISOString())
+      .order('starts_at', { ascending: false })
+      .limit(6),
+    supabase
+      .from('attendance')
+      .select('session_id, student_id, status, session:group_sessions!inner ( group_id )')
+      .eq('session.group_id', groupId),
   ]);
   for (const [what, r] of Object.entries({
     cycles,
@@ -171,6 +189,8 @@ export async function getGroupOverview(
     sections,
     tries,
     events,
+    pastSessions,
+    marks,
   })) {
     if (r.error) fail(what, r.error);
   }
@@ -202,6 +222,12 @@ export async function getGroupOverview(
     events: events.data!.map((e) => ({ userId: e.user_id, at: e.occurred_at })),
   });
   const nameOf = new Map(enrolled.map((s) => [s.id, s.name]));
+  const markable = enrolled
+    .filter((s) => s.status === 'active' || s.status === 'paused')
+    .map((s) => s.id);
+  const rates = attendanceByStudent(
+    marks.data!.map((m) => ({ studentId: m.student_id, status: m.status })),
+  );
 
   const progress = assignmentProgress(
     assignments.data!.map((a) => ({
@@ -235,9 +261,17 @@ export async function getGroupOverview(
       ...s,
       name: nameOf.get(s.id) ?? '',
       status: enrolled.find((e) => e.id === s.id)?.status ?? 'active',
+      attendance: rates.get(s.id) ?? null,
     })),
     cycles: cycles.data!.map((c) => ({ id: c.id, title: c.title, state: state.get(c.id) ?? null })),
     upcomingClasses: sessions.data!.map((s) => ({ id: s.id, startsAt: s.starts_at })),
+    pastClasses: pastSessions.data!.map((s) => ({
+      id: s.id,
+      startsAt: s.starts_at,
+      marked: marks.data!.filter((m) => m.session_id === s.id && markable.includes(m.student_id))
+        .length,
+      students: markable.length,
+    })),
     activities: activities.data!.map((a) => ({
       id: a.id,
       title: a.title,

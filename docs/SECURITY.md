@@ -232,13 +232,15 @@ legal advice.
 
 ### What we collect
 
-| Data                                | Why                          | Where                                |
-| ----------------------------------- | ---------------------------- | ------------------------------------ |
-| Email                               | Login, password reset        | `auth.users` (separate from profile) |
-| Display name, optional avatar       | Shown to student and teacher | `profiles`                           |
-| Interface language, timezone        | UI, "practice this week"     | `profiles`                           |
-| Enrollment and group membership     | Course access                | `enrollments`                        |
-| Answers, attempts, progress, events | The learning service itself  | learner tables                       |
+| Data                                 | Why                                                        | Where                                                                 |
+| ------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------------------------- |
+| Email                                | Login, password reset                                      | `auth.users` (separate from profile)                                  |
+| Display name, optional avatar        | Shown to student and teacher                               | `profiles`                                                            |
+| Interface language, timezone         | UI, "practice this week"                                   | `profiles`                                                            |
+| Enrollment and group membership      | Course access                                              | `enrollments`                                                         |
+| Answers, attempts, progress, events  | The learning service itself                                | learner tables                                                        |
+| Attendance per class, teacher's note | Teaching; the student sees their own; the manager reads it | `attendance` (marks are never deleted; covered by the retention rule) |
+| Entry-code hash (students)           | Sign-in without email                                      | `student_codes` (no user access at all)                               |
 
 ### What we deliberately do **not** collect in this platform
 
