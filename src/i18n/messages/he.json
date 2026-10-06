@@ -801,5 +801,168 @@
       "packageNone": "לא מחבילה",
       "bookButton": "קביעה"
     }
+  },
+  "staff": {
+    "nav": {
+      "tools": "כלים לצוות",
+      "feedback": "פידבק",
+      "tasks": "משימות",
+      "resources": "חומר הדרכה"
+    },
+    "messages": {
+      "saved": "נשמר.",
+      "sent": "נשלח.",
+      "invalid": "בדקו את הטופס ונסו שוב.",
+      "notAllowed": "אין לך הרשאה לפעולה הזו.",
+      "failed": "השמירה לא הצליחה. נסו שוב."
+    },
+    "tools": {
+      "title": "כלים לצוות",
+      "subtitle": "מערכי שיעור, פידבק, חומר הדרכה ומשימות.",
+      "lessonPlan": "בונה מערך שיעור",
+      "lessonPlanBody": "בונה פרומפט למערך שיעור של 60 דקות להעתקה לעוזר ה-AI שלך.",
+      "feedback": "פידבק",
+      "feedbackBody": "לספר למנהל הפדגוגי על תלמיד/ה, על חומר או על מה שחסר.",
+      "resources": "חומר הדרכה",
+      "resourcesBody": "מדריכים וחומרים מהמנהל הפדגוגי.",
+      "tasks": "משימות",
+      "tasksBody": "לשלוח משימה למנהל הפדגוגי ולעקוב אחריה."
+    },
+    "plan": {
+      "title": "בונה מערך שיעור",
+      "subtitle": "ממלאים את פרטי השיעור ומעתיקים את הפרומפט לעוזר ה-AI שאתם עובדים איתו. שום דבר לא נשלח ולא נשמר כאן.",
+      "fromGroup": "טעינה מקבוצה קיימת",
+      "language": "שפה",
+      "cycle": "רמת סייקל",
+      "cycleOption": "רמה {n}",
+      "cefr": "CEFR",
+      "mode": "מסגרת",
+      "modes": {
+        "group": "קבוצה",
+        "private": "שיעור פרטי"
+      },
+      "size": "מספר תלמידים",
+      "topic": "נושא השיעור",
+      "topicPlaceholder": "Present Perfect · אוצר מילים: ראיון עבודה",
+      "focus": "דגש עיקרי",
+      "focuses": {
+        "grammar": "דקדוק",
+        "vocabulary": "אוצר מילים",
+        "speaking": "דיבור ושיחה",
+        "listening": "האזנה",
+        "reading": "קריאה",
+        "writing": "כתיבה",
+        "review": "חזרה לפני מבחן"
+      },
+      "last": "מה כוסה בשיעור הקודם",
+      "materials": "חומרים שיש לי",
+      "notes": "הערות והתאמות",
+      "extras": "מה עוד לבקש",
+      "extrasOptions": {
+        "check": "שאלות לבדיקת הבנה",
+        "homework": "שיעורי בית",
+        "variations": "ווריאציות לרמות"
+      },
+      "prompt": "הפרומפט",
+      "promptHint": "מתעדכן בזמן אמת.",
+      "copy": "העתקת הפרומפט",
+      "copied": "הפרומפט הועתק. אפשר להדביק בעוזר ה-AI.",
+      "copyFailed": "ההעתקה לא הצליחה. סמנו את הטקסט והעתיקו.",
+      "reset": "איפוס",
+      "after": "אחרי שקיבלתם את המערך, כדאי להדביק אותו במחברת הדיגיטלית של הקורס."
+    },
+    "feedback": {
+      "title": "פידבק",
+      "subtitle": "נשלח למנהל הפדגוגי. התלמידים אף פעם לא רואים אותו.",
+      "kindLegend": "על מה",
+      "kinds": {
+        "student": "תלמיד/ה",
+        "material": "חומר קיים",
+        "missing_material": "חומר חסר"
+      },
+      "student": "תלמיד/ה",
+      "noStudents": "עדיין אין לך תלמידים.",
+      "verdict": "איך זה הולך?",
+      "verdicts": {
+        "ahead": "מתקדם/ת מעל הצפוי",
+        "on_track": "בקצב",
+        "needs_attention": "זקוק/ה לתשומת לב",
+        "works_well": "עובד מעולה",
+        "works_with_changes": "עובד עם התאמות",
+        "problematic": "בעייתי"
+      },
+      "subject": "חומר (שם או קישור)",
+      "gap": "מה חסר",
+      "gaps": {
+        "grammar_practice": "תרגול דקדוק",
+        "listening": "חומר האזנה",
+        "speaking": "חומר דיבור",
+        "reading": "חומר קריאה",
+        "game_warmup": "משחק או חימום",
+        "tests": "מבחנים ובחנים",
+        "homework": "שיעורי בית"
+      },
+      "language": "שפה (לא חובה)",
+      "anyLanguage": "לא ספציפי",
+      "level": "רמה (לא חובה)",
+      "anyLevel": "לא ספציפי",
+      "levelOption": "רמה {n}",
+      "body": "פירוט",
+      "send": "שליחת פידבק",
+      "mine": "מה ששלחתי",
+      "empty": "עדיין אין.",
+      "withdraw": "משיכה",
+      "withdrawLabel": "משיכת הפידבק מ-{date}",
+      "handled": "טופל על ידי המנהל",
+      "open": "עוד לא טופל",
+      "from": "מאת {name}",
+      "about": "על {name}",
+      "manageTitle": "פידבק מהמורים",
+      "manageSubtitle": "התלמידים לא רואים את זה. סמנו מה שטיפלתם בו.",
+      "missing": "חומרים חסרים בשיעורים הקבוצתיים",
+      "missingHint": "מה שהמורים ביקשו, לפי שפה ורמה.",
+      "missingEmpty": "אין בקשות.",
+      "count": "{count, plural, one {בקשה אחת} other {# בקשות}}",
+      "all": "כל הפידבק",
+      "markHandled": "סימון כטופל",
+      "markHandledLabel": "סימון הפידבק מ{name} מ-{date} כטופל"
+    },
+    "resources": {
+      "title": "חומר הדרכה",
+      "subtitle": "חומרים למורים חדשים ולמורים בצוות. רק הצוות רואה את זה.",
+      "open": "פתיחה",
+      "openLabel": "פתיחת {title} (בכרטיסייה חדשה)",
+      "empty": "עדיין אין קישורים.",
+      "add": "הוספת קישור",
+      "titleField": "שם או כותרת",
+      "url": "קישור (https://…)",
+      "description": "תיאור קצר (לא חובה)",
+      "addButton": "הוספת קישור",
+      "remove": "הסרה",
+      "removeLabel": "הסרת {title}"
+    },
+    "tasks": {
+      "title": "משימות",
+      "subtitle": "משימות למנהל הפדגוגי, ומה קרה איתן.",
+      "managerSubtitle": "משימות שקיבלת ותזכורות לעצמך.",
+      "new": "משימה חדשה",
+      "titleField": "משימה",
+      "note": "פירוט (לא חובה)",
+      "urgent": "דחוף",
+      "to": "עבור",
+      "myself": "אני (תזכורת)",
+      "send": "שליחת משימה",
+      "open": "פתוחות ({count})",
+      "done": "בוצעו ({count})",
+      "empty": "אין כאן כלום.",
+      "fromTo": "{from} ← {to}",
+      "markDone": "בוצע",
+      "markDoneLabel": "סימון כבוצע: {title}",
+      "reopen": "פתיחה מחדש",
+      "reopenLabel": "פתיחה מחדש: {title}",
+      "remove": "הסרה",
+      "removeLabel": "הסרה: {title}",
+      "noManager": "עדיין אין מנהל פדגוגי לשלוח אליו משימות."
+    }
   }
 }

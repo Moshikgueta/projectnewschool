@@ -13,7 +13,25 @@ export default async function globalSetup() {
     throw new Error(`Refusing to run E2E setup against a non-local database: ${url}`);
   }
 
-  const admin = createClient(url, secret, { auth: { persistSession: false } });
+  // Every database request here must succeed: a reset that fails quietly
+  // leaves data from an earlier run behind, and some later test breaks in a
+  // way that has nothing to do with it.
+  const admin = createClient(url, secret, {
+    auth: { persistSession: false },
+    global: {
+      fetch: async (input, init) => {
+        const res = await fetch(input, init);
+        if (!res.ok && String(input).includes('/rest/v1/')) {
+          throw new Error(
+            `E2E setup: ${init?.method ?? 'GET'} ${String(input)} → ${res.status} ${await res.clone().text()}`,
+          );
+        }
+        return res;
+      },
+    },
+  });
+  const seedIds = (prefix: string, n: number) =>
+    `(${Array.from({ length: n }, (_, i) => `${prefix}-0000-4000-8000-${String(i + 1).padStart(12, '0')}`).join(',')})`;
   const { data } = await admin.auth.admin.listUsers({ perPage: 200 });
   for (const user of data?.users ?? []) {
     // Accounts left by an interrupted staff-room import test.
@@ -217,9 +235,20 @@ export default async function globalSetup() {
       lesson(7, B, TYID, P2, -7, 45, 'done'),
     ]);
 
+  // Staff tools (stage E) as seeded: added feedback, links and tasks removed,
+  // the seed's feedback unhandled and its task open again.
+  await admin.from('staff_feedback').delete().not('id', 'in', seedIds('d3000000', 2));
+  await admin
+    .from('staff_feedback')
+    .update({ handled_at: null, handled_by: null })
+    .not('handled_at', 'is', null);
+  await admin.from('staff_resources').delete().not('id', 'in', seedIds('d2000000', 3));
+  await admin.from('staff_tasks').delete().not('id', 'in', seedIds('d4000000', 1));
+  await admin.from('staff_tasks').update({ status: 'open', done_at: null }).eq('status', 'done');
+
   // Rooms and lessons added by the office tests (the seed's ids start e0…/e1…).
-  await admin.from('room_bookings').delete().not('id', 'like', 'e1000000-%');
-  await admin.from('rooms').delete().not('id', 'like', 'e0000000-%');
+  await admin.from('room_bookings').delete().not('id', 'in', seedIds('e1000000', 3));
+  await admin.from('rooms').delete().not('id', 'in', seedIds('e0000000', 3));
 
   // Student A's "Not now" choices, back to the seed (only vocabulary snoozed).
   await admin.from('recommendation_feedback').delete().eq('user_id', A);

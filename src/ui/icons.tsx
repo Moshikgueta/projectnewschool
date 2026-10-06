@@ -4,15 +4,19 @@
 // set stays consistent. Directional icons flip in right-to-left layouts.
 import {
   ArrowRight,
+  BookBookmark,
   BookOpen,
   CalendarBlank,
   Cards,
   ChalkboardTeacher,
+  ChatCircleText,
   ClipboardText,
   Door,
   Gear,
   House,
+  ListChecks,
   NotePencil,
+  Toolbox,
   Translate,
   UsersThree,
 } from '@phosphor-icons/react';
@@ -29,6 +33,10 @@ export const ICONS = {
   language: Translate,
   timetable: CalendarBlank,
   rooms: Door,
+  tools: Toolbox,
+  feedback: ChatCircleText,
+  tasks: ListChecks,
+  resources: BookBookmark,
 } as const;
 
 export type IconName = keyof typeof ICONS;

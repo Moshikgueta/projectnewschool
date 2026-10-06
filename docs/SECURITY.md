@@ -242,17 +242,18 @@ legal advice.
 
 ### What we collect
 
-| Data                                                   | Why                                                        | Where                                                                                                |
-| ------------------------------------------------------ | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Email                                                  | Login, password reset                                      | `auth.users` (separate from profile)                                                                 |
-| Display name, optional avatar                          | Shown to student and teacher                               | `profiles`                                                                                           |
-| Interface language, timezone                           | UI, "practice this week"                                   | `profiles`                                                                                           |
-| Enrollment and group membership                        | Course access                                              | `enrollments`                                                                                        |
-| Answers, attempts, progress, events                    | The learning service itself                                | learner tables                                                                                       |
-| Attendance per class, teacher's note                   | Teaching; the student sees their own; the manager reads it | `attendance` (marks are never deleted; covered by the retention rule)                                |
-| Entry-code hash (students)                             | Sign-in without email                                      | `student_codes` (no user access at all)                                                              |
-| Phone, contact email, office note (students)           | The office reaches the student                             | `student_records` (office/admin with MFA, manager reads, the student sees their own; never teachers) |
-| Packages: lessons, price, paid or not; private lessons | Running private lessons (Tazman replacement)               | `lesson_packages`, `private_lessons` (audited; teachers see only their own lessons)                  |
+| Data                                                   | Why                                                        | Where                                                                                                                      |
+| ------------------------------------------------------ | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Email                                                  | Login, password reset                                      | `auth.users` (separate from profile)                                                                                       |
+| Display name, optional avatar                          | Shown to student and teacher                               | `profiles`                                                                                                                 |
+| Interface language, timezone                           | UI, "practice this week"                                   | `profiles`                                                                                                                 |
+| Enrollment and group membership                        | Course access                                              | `enrollments`                                                                                                              |
+| Answers, attempts, progress, events                    | The learning service itself                                | learner tables                                                                                                             |
+| Attendance per class, teacher's note                   | Teaching; the student sees their own; the manager reads it | `attendance` (marks are never deleted; covered by the retention rule)                                                      |
+| Entry-code hash (students)                             | Sign-in without email                                      | `student_codes` (no user access at all)                                                                                    |
+| Phone, contact email, office note (students)           | The office reaches the student                             | `student_records` (office/admin with MFA, manager reads, the student sees their own; never teachers)                       |
+| Packages: lessons, price, paid or not; private lessons | Running private lessons (Tazman replacement)               | `lesson_packages`, `private_lessons` (audited; teachers see only their own lessons)                                        |
+| Teachers' feedback about a student (verdict and notes) | The pedagogical manager follows up                         | `staff_feedback` (author and manager only, never the student; included in a data-access request; not edited after sending) |
 
 ### What we deliberately do **not** collect in this platform
 

@@ -1,6 +1,6 @@
 # Uniting the staff room (חדר המורים) with the learning platform
 
-Status: **in progress** · decided 2026-10-06 · stages A–D and the import script implemented locally (ADR-029 to ADR-032)
+Status: **in progress** · decided 2026-10-06 · stages A–E and the import script implemented locally (ADR-029 to ADR-033)
 
 ## Decisions
 
@@ -43,11 +43,11 @@ From an inventory of `Teacher Dashboard v2.dc.html`, `Teacher Mobile.dc.html`,
 | Payments                                         | flag only          | PayPlus integration from the Spanish course project, behind the office area                             | D+      |
 | מחברות דיגיטליות (notebook links)                | demo (Google Docs) | platform notebooks (exist); Google Docs links until each cycle is converted                             | exists  |
 | חומרי לימוד (materials)                          | demo               | media library in the CMS                                                                                | 8 / E   |
-| בונה מערך שיעור (lesson-plan prompt)             | local              | teacher tool, same prompt builder, no AI call from the server                                           | **E**   |
+| בונה מערך שיעור (lesson-plan prompt)             | local              | teacher tool, same prompt builder, no AI call from the server                                           | **E** ✓ |
 | בונה סילבוס                                      | local              | cycles per course in the CMS                                                                            | 8       |
-| פידבק (student, material, missing material)      | local              | `feedback` table; managers see it                                                                       | **E**   |
-| חומר הדרכה (training links)                      | local              | staff resources page                                                                                    | **E**   |
-| משימות (tasks)                                   | demo               | staff tasks                                                                                             | **E**   |
+| פידבק (student, material, missing material)      | local              | `feedback` table; managers see it                                                                       | **E** ✓ |
+| חומר הדרכה (training links)                      | local              | staff resources page                                                                                    | **E** ✓ |
+| משימות (tasks)                                   | demo               | staff tasks                                                                                             | **E** ✓ |
 | קבלה ורישום (admissions, leads)                  | demo               | leads pipeline in the office area. **Personal data of prospects: privacy review first**                 | **F**   |
 | פיתוח מורים (teacher development)                | demo               | HR records. **Sensitive: separate access rules, review first**                                          | **F**   |
 | מורים (roster, 77 teachers)                      | demo               | teacher profiles + languages taught                                                                     | D       |
@@ -55,6 +55,26 @@ From an inventory of `Teacher Dashboard v2.dc.html`, `Teacher Mobile.dc.html`,
 Stages: **A** rooms and timetable · **B** student codes · **C** attendance and teacher
 "today" · **D** students, packages and the office (the Tazman replacement,
 `MIGRATION-FROM-TAZMAN.md`) · **E** staff tools · **F** admissions and teacher development.
+
+## Staff tools (stage E)
+
+In the staff room these lived in each browser's localStorage, so nobody else ever saw
+them. Now they are shared, with rules (ADR-033).
+
+- **Lesson-plan builder** (`/teach/tools/lesson-plan`): the staff room's form and its
+  Hebrew prompt, word for word. "Start from a group" fills in the language, level, size
+  and notebook. Copy and paste into any AI assistant. Nothing is sent or stored.
+- **Feedback** (`/teach/tools/feedback`): about a student (only one you teach), an existing
+  material, or missing material, to the pedagogical manager. Teachers see what they sent
+  and can withdraw it. The manager (`/manage/feedback`) sees everything, the missing
+  material grouped by language and level, and marks items handled. Students never see it.
+- **Training** (`/teach/tools/resources`; kept at `/manage/resources`): https links only,
+  opened in a new tab without access to the platform page.
+- **Tasks** (`/teach/tools/tasks`, `/office/tasks`, `/manage/tasks`): "tasks for the
+  manager" as in the staff room, now with the recipient chosen from the pedagogical
+  managers; urgent or normal; only the recipient marks them done. The manager's own
+  tasks double as reminders.
+- Not ported: the syllabus builder (cycles per course belong to the CMS, Phase 8).
 
 ## The office: students, packages and private lessons (stage D)
 

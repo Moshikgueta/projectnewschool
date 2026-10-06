@@ -223,3 +223,29 @@ describe('the office’s records, through the API', () => {
     await x.auth.signOut();
   });
 });
+
+describe('staff tools, through the API', () => {
+  it('a student reads no staff feedback, training links or tasks, and cannot write them', async () => {
+    const a = await signedIn('student.a@example.com');
+    expect((await a.from('staff_feedback').select('id')).data).toEqual([]);
+    expect((await a.from('staff_resources').select('id')).data).toEqual([]);
+    expect((await a.from('staff_tasks').select('id')).data).toEqual([]);
+    expect((await a.from('task_assignees').select('id')).data).toEqual([]);
+    const write = await a
+      .from('staff_feedback')
+      .insert({ kind: 'material', subject: 'x', verdict: 'problematic', body: 'x' });
+    expect(write.error?.code).toBe('42501');
+    await a.auth.signOut();
+  });
+
+  it('a teacher reads only their own feedback and tasks', async () => {
+    const y = await signedIn('teacher.y@example.com');
+    const feedback = await y.from('staff_feedback').select('author_id');
+    expect(
+      feedback.data!.every((f) => f.author_id === '00000000-0000-4000-8000-0000000000b2'),
+    ).toBe(true);
+    expect((await y.from('staff_tasks').select('id')).data).toEqual([]);
+    expect((await y.from('staff_resources').select('id')).data!.length).toBeGreaterThan(0);
+    await y.auth.signOut();
+  });
+});

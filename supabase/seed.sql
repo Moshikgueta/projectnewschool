@@ -381,3 +381,21 @@ insert into public.private_lessons (id, student_id, teacher_id, package_id, star
    'd0000000-0000-4000-8000-000000000002', now() - interval '14 days', now() - interval '14 days' + interval '45 minutes', 'done', null, '00000000-0000-4000-8000-0000000000e1'),
   ('d1000000-0000-4000-8000-000000000007', '00000000-0000-4000-8000-0000000000a2', '00000000-0000-4000-8000-0000000000b2',
    'd0000000-0000-4000-8000-000000000002', now() - interval '7 days', now() - interval '7 days' + interval '45 minutes', 'done', null, '00000000-0000-4000-8000-0000000000e1');
+
+-- ── staff tools (stage E) ─────────────────────────────────────────────────
+-- Training links from the staff room's training-meeting list; one piece of
+-- feedback from teacher X about student D; one task for the manager from
+-- teacher X.
+insert into public.staff_resources (id, title, url, description, created_by) values
+  ('d2000000-0000-4000-8000-000000000001', 'מדריך המורה — שיטת הסייקלים של New School', 'https://drive.google.com/drive/search?q=%D7%9E%D7%93%D7%A8%D7%99%D7%9A', 'חובה לפני פגישה 1', '00000000-0000-4000-8000-0000000000c1'),
+  ('d2000000-0000-4000-8000-000000000002', 'איך עובדים עם המחברת הדיגיטלית', 'https://drive.google.com/drive/search?q=%D7%9E%D7%97%D7%91%D7%A8%D7%AA', 'פגישה 1', '00000000-0000-4000-8000-0000000000c1'),
+  ('d2000000-0000-4000-8000-000000000003', 'הערכת רמה לפי CEFR — סרגל אחיד', 'https://drive.google.com/drive/search?q=CEFR', 'פגישה 2', '00000000-0000-4000-8000-0000000000c1');
+insert into public.staff_feedback (id, author_id, kind, student_id, verdict, body) values
+  ('d3000000-0000-4000-8000-000000000001', '00000000-0000-4000-8000-0000000000b1', 'student',
+   '00000000-0000-4000-8000-0000000000a4', 'needs_attention', 'Missed two classes and is behind on the cycle.');
+insert into public.staff_feedback (id, author_id, kind, subject, language_code, level, body) values
+  ('d3000000-0000-4000-8000-000000000002', '00000000-0000-4000-8000-0000000000b2', 'missing_material',
+   'listening', 'fr', 1, 'Nothing for listening practice at level 1.');
+insert into public.staff_tasks (id, title, priority, created_by, assignee_id) values
+  ('d4000000-0000-4000-8000-000000000001', 'Approve the new Russian level notebook', 'normal',
+   '00000000-0000-4000-8000-0000000000b1', '00000000-0000-4000-8000-0000000000c1');

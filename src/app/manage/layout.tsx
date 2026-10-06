@@ -17,6 +17,9 @@ export default async function ManageLayout({ children }: { children: ReactNode }
       nav={[
         { href: '/manage', label: t('manage.nav.overview'), icon: 'settings' },
         { href: '/manage/groups', label: t('manage.nav.groups'), icon: 'groups' },
+        { href: '/manage/feedback', label: t('staff.nav.feedback'), icon: 'feedback' },
+        { href: '/manage/tasks', label: t('staff.nav.tasks'), icon: 'tasks' },
+        { href: '/manage/resources', label: t('staff.nav.resources'), icon: 'resources' },
       ]}
     >
       {children}

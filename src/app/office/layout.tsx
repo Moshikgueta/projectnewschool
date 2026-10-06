@@ -19,6 +19,7 @@ export default async function OfficeLayout({ children }: { children: ReactNode }
         { href: '/office/students', label: t('office.nav.students'), icon: 'groups' },
         { href: '/office/timetable', label: t('office.nav.timetable'), icon: 'timetable' },
         { href: '/office/rooms', label: t('office.nav.rooms'), icon: 'rooms' },
+        { href: '/office/tasks', label: t('staff.nav.tasks'), icon: 'tasks' },
       ]}
     >
       {children}

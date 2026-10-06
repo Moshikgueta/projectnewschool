@@ -118,4 +118,6 @@ export async function passMfa(page: Page, email: string) {
     }),
   );
   await page.getByRole('button', { name: 'Verify' }).click();
+  // Done only once the page has moved on (the area it was going to).
+  await expect(page).not.toHaveURL(/\/account\/mfa/);
 }

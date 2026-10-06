@@ -193,7 +193,7 @@ Planned scope:
   teacher version of activities (keys + notes).
 - **Exit:** teacher authorization tests pass; pilot teachers use it for two weeks.
 
-### Staff room merge _(stages A–D and the import implemented locally)_
+### Staff room merge _(stages A–E and the import implemented locally)_
 
 Decided 2026-10-06: the staff room (חדר המורים) becomes part of this platform. Plan and
 stages: [STAFF-ROOM-MERGE.md](STAFF-ROOM-MERGE.md).
@@ -218,7 +218,11 @@ stages: [STAFF-ROOM-MERGE.md](STAFF-ROOM-MERGE.md).
       rule, teachers' private lessons on "Today" (ADR-032); 26 pgTAP tests, API tests,
       end-to-end tests including a code sign-in by a student the office registered
 - [ ] Tazman part 2: self-booking and teachers' working hours; reminders; reports; PayPlus
-- [ ] E staff tools · F admissions and teacher development (privacy review first)
+- [x] **E. Staff tools:** lesson-plan prompt builder (no AI call, nothing stored),
+      feedback to the pedagogical manager, training links, tasks for the manager
+      (ADR-033); 25 pgTAP tests, API tests, end-to-end tests including a forged
+      feedback about another teacher's student
+- [ ] F admissions and teacher development (privacy review first)
 - [ ] Cut-over: the domain points here, the Worker shows "we have moved", D1 read-only
       for 30 days, then archived and deleted
 
