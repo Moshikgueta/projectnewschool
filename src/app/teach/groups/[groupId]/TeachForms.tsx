@@ -1,8 +1,16 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { useActionState } from 'react';
 import { ActionForm } from '@/app/manage/ActionForm';
-import { assignActivity, scheduleClass, setActiveCycle } from '@/server/actions/teach';
+import {
+  assignActivity,
+  issueStudentCode,
+  scheduleClass,
+  setActiveCycle,
+  type CodeState,
+} from '@/server/actions/teach';
+import { Alert } from '@/ui/Alert';
 import { Button } from '@/ui/Button';
 import { SelectField } from '@/ui/SelectField';
 import { TextField } from '@/ui/TextField';
@@ -88,5 +96,48 @@ export function AssignForm({
         </>
       )}
     </ActionForm>
+  );
+}
+
+const noCode: CodeState = { status: 'idle' };
+
+/**
+ * "New code" for one student. The code appears here once, right after it is
+ * made; it is never stored or shown anywhere else.
+ */
+export function StudentCodeForm({
+  groupId,
+  studentId,
+  name,
+}: {
+  groupId: string;
+  studentId: string;
+  name: string;
+}) {
+  const t = useTranslations('teach.group');
+  const [state, action, pending] = useActionState(issueStudentCode, noCode);
+  return (
+    <form action={action} className="flex flex-col items-start gap-2" noValidate>
+      <input type="hidden" name="groupId" value={groupId} />
+      <input type="hidden" name="studentId" value={studentId} />
+      <Button
+        type="submit"
+        variant="secondary"
+        loading={pending}
+        aria-label={t('newCodeLabel', { name })}
+      >
+        {t('newCode')}
+      </Button>
+      {state.status === 'error' ? <Alert tone="error">{state.message}</Alert> : null}
+      {state.status === 'ok' ? (
+        <Alert tone="success">
+          <span className="block">{t('codeIssued', { name })}</span>
+          <span dir="ltr" className="block font-mono text-lg font-semibold tracking-widest">
+            {state.code}
+          </span>
+          <span className="block text-sm">{t('codeOnce')}</span>
+        </Alert>
+      ) : null}
+    </form>
   );
 }

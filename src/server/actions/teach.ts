@@ -7,6 +7,8 @@ import { z } from 'zod';
 import { zonedTimeToUtc } from '@/domain/learning/time';
 import type { ManageState } from '@/server/actions/manage';
 import { requireArea } from '@/server/auth/session';
+import { formatCode } from '@/domain/auth/codes';
+import { issueCode, isStudentOnly } from '@/server/privileged/student-codes';
 import { createSupabaseServerClient } from '@/server/supabase/server';
 
 // A teacher running their own groups: active cycle, class times, homework.
@@ -181,4 +183,40 @@ export async function removeAssignment(formData: FormData): Promise<void> {
     .eq('id', assignmentId.data)
     .eq('group_id', groupId.data);
   revalidatePath(`/teach/groups/${groupId.data}` as Route);
+}
+
+export type CodeState =
+  { status: 'idle' } | { status: 'error'; message: string } | { status: 'ok'; code: string };
+
+/**
+ * A new entry code for a student in a group the caller teaches. The old code
+ * stops working. The code is returned once, to be handed to the student, and
+ * only its hash is kept.
+ */
+export async function issueStudentCode(_prev: CodeState, formData: FormData): Promise<CodeState> {
+  const user = await requireArea('teach');
+  const t = await getTranslations('teach.forms');
+  const parsed = z
+    .object({ groupId: uuid, studentId: uuid })
+    .safeParse({ groupId: formData.get('groupId'), studentId: formData.get('studentId') });
+  if (!parsed.success) return { status: 'error', message: t('invalid') };
+
+  // Checked with the teacher's own session: the group must be one they teach
+  // themselves (not merely one a manager can see), and the student enrolled
+  // in it (active or paused). Anything else gets the same answer.
+  const supabase = await createSupabaseServerClient();
+  const { data: enrolment } = await supabase
+    .from('enrollments')
+    .select('student_id, groups!inner ( group_teachers!inner ( teacher_id ) )')
+    .eq('group_id', parsed.data.groupId)
+    .eq('student_id', parsed.data.studentId)
+    .in('status', ['active', 'paused'])
+    .eq('groups.group_teachers.teacher_id', user.id)
+    .maybeSingle();
+  if (!enrolment || !(await isStudentOnly(parsed.data.studentId))) {
+    return { status: 'error', message: t('notAllowed') };
+  }
+
+  const code = await issueCode(parsed.data.studentId, user.id);
+  return { status: 'ok', code: formatCode(code) };
 }

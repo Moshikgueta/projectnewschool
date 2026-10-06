@@ -158,3 +158,25 @@ describe('an anonymous visitor', () => {
     expect(error?.code).toBe('signup_disabled');
   });
 });
+
+describe('student entry codes, through the API', () => {
+  it('cannot be read, planted or reset by a visitor, a student or a teacher', async () => {
+    const callers = [
+      ['visitor', client()],
+      ['student', await signedIn('student.a@example.com')],
+      ['teacher', await signedIn('teacher.x@example.com')],
+    ] as const;
+    for (const [who, c] of callers) {
+      const codes = await c.from('student_codes').select('*');
+      expect(codes.data, who).toBeNull();
+      expect(codes.error?.code, who).toBe('42501');
+      const planted = await c
+        .from('student_codes')
+        .insert({ user_id: IDS.studentB, code_hash: 'ab'.repeat(32) });
+      expect(planted.error?.code, who).toBe('42501');
+      const reset = await c.from('code_attempts').delete().neq('scope', '');
+      expect(reset.error?.code, who).toBe('42501');
+      await c.auth.signOut();
+    }
+  });
+});

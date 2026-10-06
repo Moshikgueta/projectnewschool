@@ -63,6 +63,8 @@ jobs:
             echo "NEXT_PUBLIC_SUPABASE_URL=$(echo "$STATUS" | jq -r .API_URL)"
             echo "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=$(echo "$STATUS" | jq -r .PUBLISHABLE_KEY)"
             echo "SUPABASE_SECRET_KEY=$(echo "$STATUS" | jq -r .SECRET_KEY)"
+            # A throwaway pepper per run: the tests issue their own codes.
+            echo "STUDENT_CODE_PEPPER=$(openssl rand -hex 32)"
           } >> "$GITHUB_ENV"
 
       - name: Generated database types are up to date

@@ -310,6 +310,19 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
+                },"code_attempts": {
+                  Row: {
+                    "n": number,"scope": string,"window_start": string
+                  }
+                  Insert: {
+                    "n"?: number,"scope": string,"window_start": string
+                  }
+                  Update: {
+                    "n"?: number,"scope"?: string,"window_start"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
                 },"courses": {
                   Row: {
                     "ai_tutor_url": string | null,"created_at": string,"description": string,"id": string,"instruction_locale": string,"level_id": string,"published_at": string | null,"slug": string,"status": Database["public"]['Enums']["content_status"],"title": string,"updated_at": string
@@ -778,6 +791,43 @@ isOneToOne: false
                   }
                   Relationships: [
                     
+                  ]
+                },"student_codes": {
+                  Row: {
+                    "code_hash": string,"created_at": string,"issued_by": string | null,"user_id": string
+                  }
+                  Insert: {
+                    "code_hash": string,"created_at"?: string,"issued_by"?: string | null,"user_id": string
+                  }
+                  Update: {
+                    "code_hash"?: string,"created_at"?: string,"issued_by"?: string | null,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "student_codes_issued_by_fkey"
+      columns: ["issued_by"]
+isOneToOne: false
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "student_codes_issued_by_fkey"
+      columns: ["issued_by"]
+isOneToOne: false
+      referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "student_codes_user_id_fkey"
+      columns: ["user_id"]
+isOneToOne: true
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "student_codes_user_id_fkey"
+      columns: ["user_id"]
+isOneToOne: true
+      referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    }
                   ]
                 },"user_roles": {
                   Row: {

@@ -26,6 +26,10 @@ export default async function globalSetup() {
   }
   rmSync(MFA_SECRETS_FILE, { force: true });
 
+  // Entry codes and wrong-code counts from earlier runs (seed has none).
+  await admin.from('code_attempts').delete().neq('scope', '');
+  await admin.from('student_codes').delete().neq('code_hash', '');
+
   // Groups created by earlier runs of the management tests.
   const { data: groups } = await admin.from('groups').select('id').like('name', 'E2E %');
   const ids = (groups ?? []).map((g) => g.id);

@@ -1,11 +1,19 @@
 'use server';
 
 import type { Route } from 'next';
+import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { z } from 'zod';
 import { safeNextPath } from '@/domain/auth/access';
 import { getEnv } from '@/server/env';
+import {
+  codeEntryThrottled,
+  findStudentByCode,
+  isStudentOnly,
+  recordCodeMiss,
+  signInTokenFor,
+} from '@/server/privileged/student-codes';
 import { createSupabaseServerClient } from '@/server/supabase/server';
 
 export type FormState =
@@ -46,6 +54,51 @@ export async function signIn(_prev: FormState, formData: FormData): Promise<Form
 
   // safeNextPath only lets same-site paths through (no open redirect).
   redirect(safeNextPath(parsed.data.next, '/') as Route);
+}
+
+/**
+ * The caller's address, for the wrong-code throttle. On the hosting platform
+ * the first x-forwarded-for entry is set by its edge, not by the browser.
+ * Locally everyone shares one bucket, which only makes the throttle stricter.
+ */
+async function callerAddress(): Promise<string> {
+  const h = await headers();
+  return h.get('x-forwarded-for')?.split(',')[0]?.trim() || h.get('x-real-ip') || 'unknown';
+}
+
+/**
+ * Sign in with a student entry code (moved from the staff room). The code
+ * finds the student; the server then mints a one-time token for that account
+ * and exchanges it for a normal session, so from here on the student is
+ * signed in exactly as if they had used a password, with the same RLS.
+ */
+export async function signInWithCode(_prev: FormState, formData: FormData): Promise<FormState> {
+  const t = await getTranslations('auth.code');
+  // One message for every way a code can be wrong, so the form says nothing
+  // about which codes or accounts exist.
+  const failed: FormState = { status: 'error', message: t('failed') };
+  const input = z.string().max(40).safeParse(formData.get('code'));
+
+  const caller = await callerAddress();
+  if (await codeEntryThrottled(caller)) return { status: 'error', message: t('rateLimited') };
+
+  const studentId = input.success ? await findStudentByCode(input.data) : null;
+  if (!studentId) {
+    await recordCodeMiss(caller);
+    return failed;
+  }
+  // A code opens a student account and nothing more (staff use a password
+  // and MFA); a code left on an account that has since gained a staff role
+  // does not work.
+  if (!(await isStudentOnly(studentId))) return failed;
+  const tokenHash = await signInTokenFor(studentId);
+  if (!tokenHash) return failed;
+
+  const supabase = await createSupabaseServerClient();
+  await supabase.auth.signOut({ scope: 'local' });
+  const { error } = await supabase.auth.verifyOtp({ type: 'magiclink', token_hash: tokenHash });
+  if (error) return failed;
+  redirect('/learn');
 }
 
 export async function signOut(): Promise<void> {

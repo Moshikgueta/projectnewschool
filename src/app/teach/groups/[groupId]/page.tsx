@@ -10,7 +10,7 @@ import { getGroupOverview } from '@/server/queries/teaching';
 import { Avatar, Badge, Card, CardLink } from '@/ui/Card';
 import { EmptyState, PageTitle, Section } from '@/ui/Page';
 import { ProgressBar } from '@/ui/Progress';
-import { ActiveCycleForm, AssignForm, ClassForm } from './TeachForms';
+import { ActiveCycleForm, AssignForm, ClassForm, StudentCodeForm } from './TeachForms';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getTranslations('teach.groups'))('title') };
@@ -134,7 +134,7 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
               <EmptyState title={t('empty')} />
             ) : (
               <div className="overflow-x-auto rounded-lg border border-border bg-surface">
-                <table className="w-full min-w-[34rem] text-start text-[0.9375rem]">
+                <table className="w-full min-w-[44rem] text-start text-[0.9375rem]">
                   <thead className="bg-surface-secondary text-sm text-muted">
                     <tr>
                       <th scope="col" className="px-4 py-2 text-start font-medium">
@@ -148,6 +148,9 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
                       </th>
                       <th scope="col" className="px-4 py-2 text-start font-medium">
                         {t('accuracyCol')}
+                      </th>
+                      <th scope="col" className="px-4 py-2 text-start font-medium">
+                        {t('codeCol')}
                       </th>
                     </tr>
                   </thead>
@@ -173,6 +176,9 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
                           {s.accuracy === null
                             ? t('tooFew')
                             : t('accuracy', { percent: Math.round(s.accuracy * 100) })}
+                        </td>
+                        <td className="px-4 py-3">
+                          <StudentCodeForm groupId={group.id} studentId={s.id} name={s.name} />
                         </td>
                       </tr>
                     ))}

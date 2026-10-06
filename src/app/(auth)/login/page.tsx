@@ -29,6 +29,12 @@ export default async function LoginPage({
       >
         {t('forgot')}
       </Link>
+      <p className="border-t border-border pt-6 text-[0.9375rem] text-muted">
+        {t('student')}{' '}
+        <Link href="/login/code" className="font-medium text-primary hover:underline">
+          {t('withCode')}
+        </Link>
+      </p>
     </div>
   );
 }

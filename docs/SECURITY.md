@@ -70,9 +70,16 @@ branch protection (needs the GitHub organization); storage policies (Phase 3);
   whether an email exists.
 - ☐ Custom SMTP on a New School domain with SPF, DKIM and DMARC, so reset and invite
   emails arrive and can't be spoofed.
-- ☐ Student "entry codes" (in the staff prototype) are **not** carried over as a
-  permanent credential. If wanted, a code becomes a one-time _claim_ link that leads to
-  setting a password. See [ROADMAP.md decisions](ROADMAP.md#decisions-needed-before-phase-1).
+- ☑ Student **entry codes** (from the staff room, ADR-030), students only. A teacher
+  issues a code for a student in a group they teach; it is shown once, and only
+  SHA-256(pepper + "$" + code) is stored, with the pepper a server secret
+  (`STUDENT_CODE_PEPPER`), so a leaked table can't be guessed offline. The tables have no
+  grants for any user session (pgTAP and API tests). A new code replaces the old one. A
+  code never opens an account with any staff role. Every failure gets the same message.
+  The code space is about 8.5 × 10¹¹; with the throttle below, guessing any one of 1,000
+  students' codes takes centuries. Trade-off accepted from the staff room: a flood of
+  wrong codes can pause code sign-in for everyone for 15 minutes (password sign-in is
+  unaffected).
 
 ### Sessions — Phase 1
 
@@ -134,6 +141,9 @@ nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Polic
 - ☐ Auth endpoints: Supabase Auth's built-in limits (tightened), plus CAPTCHA
   (Cloudflare Turnstile) on login/reset if abuse appears.
 - ☐ App: Vercel WAF rate-limit rules on login/reset paths.
+- ☑ Wrong entry codes: 10 per caller address and 100 overall per 15 minutes (only misses
+  count, so a class on one school network is never locked out). The caller address is
+  the hosting edge's `x-forwarded-for`; the overall cap holds even if it is spoofed.
 - ☑ Per-user limit on answer submissions: 60 checked answers per minute, enforced in
   the grading action (Phase 4).
 

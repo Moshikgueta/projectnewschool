@@ -193,6 +193,24 @@ Planned scope:
   teacher version of activities (keys + notes).
 - **Exit:** teacher authorization tests pass; pilot teachers use it for two weeks.
 
+### Staff room merge _(stages A and B implemented locally)_
+
+Decided 2026-10-06: the staff room (חדר המורים) becomes part of this platform. Plan and
+stages: [STAFF-ROOM-MERGE.md](STAFF-ROOM-MERGE.md).
+
+- [x] **A. Rooms and timetable:** `office` role with MFA, office area (rooms, weekly
+      timetable, clash messages), read-only timetable for teachers (ADR-029); 14 pgTAP
+      tests, end-to-end tests
+- [x] **B. Student entry codes:** teachers issue codes for their own students, students
+      sign in at `/login/code`, same hashing as the staff room so codes carry over,
+      throttled wrong codes, never for staff accounts (ADR-030); 12 pgTAP tests, API
+      test, 6 end-to-end tests including a forged request
+- [ ] D1 → Supabase import script (staff invitations, codes, rooms, bookings), dry run first
+- [ ] C attendance and teacher "today" · D students, packages, office home (Tazman) ·
+      E staff tools · F admissions and teacher development (privacy review first)
+- [ ] Cut-over: the domain points here, the Worker shows "we have moved", D1 read-only
+      for 30 days, then archived and deleted
+
 ### Phase 8 — Pedagogical CMS
 
 - Forms for language/level/course/cycle; block editor; activity editor; media upload;
@@ -245,23 +263,23 @@ Cycle 3"). Calm visuals, no confetti storms, nothing childish.
 
 ## Decisions needed before Phase 1
 
-| #   | Decision                                                                                       | Recommendation                                                                        |
-| --- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| D1  | GitHub organization name, and the **second owner** (a person, with their own account)          | `newschool-il` (or `new-school-israel`); repo `newschool-learning-platform`           |
-| D2  | Which legal entity and email own the vendor accounts (GitHub, Vercel, Supabase, domain, email) | a role mailbox such as `tech@newschool.co.il`, billed to the school                   |
-| D3  | Hosting                                                                                        | Vercel Pro (see ARCHITECTURE.md §5)                                                   |
-| D4  | Data region                                                                                    | Frankfurt                                                                             |
-| D5  | Pilot course and content ownership                                                             | **Decided 2026-10-03: English Foundations (L1), owned by New School**                 |
-| D6  | Interface languages at launch                                                                  | Hebrew + English (add Portuguese if Brazilian students are in scope)                  |
-| D7  | Are any students under 18?                                                                     | Determines consent flow and data fields                                               |
-| D8  | Student login                                                                                  | email + password (with optional magic link); entry codes only as one-time claim links |
-| D9  | What happens to the existing public repo `projectnewschool`                                    | see "Urgent" below                                                                    |
-| D10 | Relationship to the staff/operations dashboard (rooms, timetable, Tazman replacement)          | Keep separate for now; learning platform first; converge on shared identity later     |
-| D11 | Show scores to students?                                                                       | Only for `scored` activities; practice shows feedback, not grades                     |
-| D12 | Retention periods                                                                              | see SECURITY.md §4 proposal                                                           |
-| D13 | Domain                                                                                         | e.g. `learn.newschool.co.il`                                                          |
-| D14 | Who may publish content                                                                        | pedagogical managers; teachers propose                                                |
-| D15 | Official brand assets and typeface                                                             | see DESIGN-SYSTEM.md §2                                                               |
+| #   | Decision                                                                                       | Recommendation                                                                                                                             |
+| --- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| D1  | GitHub organization name, and the **second owner** (a person, with their own account)          | `newschool-il` (or `new-school-israel`); repo `newschool-learning-platform`                                                                |
+| D2  | Which legal entity and email own the vendor accounts (GitHub, Vercel, Supabase, domain, email) | a role mailbox such as `tech@newschool.co.il`, billed to the school                                                                        |
+| D3  | Hosting                                                                                        | Vercel Pro (see ARCHITECTURE.md §5)                                                                                                        |
+| D4  | Data region                                                                                    | Frankfurt                                                                                                                                  |
+| D5  | Pilot course and content ownership                                                             | **Decided 2026-10-03: English Foundations (L1), owned by New School**                                                                      |
+| D6  | Interface languages at launch                                                                  | Hebrew + English (add Portuguese if Brazilian students are in scope)                                                                       |
+| D7  | Are any students under 18?                                                                     | Determines consent flow and data fields                                                                                                    |
+| D8  | Student login                                                                                  | email + password (with optional magic link). **Changed 2026-10-06 with the staff-room merge:** entry codes also sign students in (ADR-030) |
+| D9  | What happens to the existing public repo `projectnewschool`                                    | see "Urgent" below                                                                                                                         |
+| D10 | Relationship to the staff/operations dashboard (rooms, timetable, Tazman replacement)          | **Decided 2026-10-06: one app on this platform** (ADR-029, STAFF-ROOM-MERGE.md)                                                            |
+| D11 | Show scores to students?                                                                       | Only for `scored` activities; practice shows feedback, not grades                                                                          |
+| D12 | Retention periods                                                                              | see SECURITY.md §4 proposal                                                                                                                |
+| D13 | Domain                                                                                         | e.g. `learn.newschool.co.il`                                                                                                               |
+| D14 | Who may publish content                                                                        | pedagogical managers; teachers propose                                                                                                     |
+| D15 | Official brand assets and typeface                                                             | see DESIGN-SYSTEM.md §2                                                                                                                    |
 
 ### ⚠️ Urgent, independent of this project
 
