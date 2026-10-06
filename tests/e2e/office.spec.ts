@@ -9,7 +9,12 @@ test('the office runs rooms and the weekly timetable; the database refuses doubl
 }) => {
   await signIn(page, USERS.office);
   await passMfa(page, USERS.office);
-  await expect(page).toHaveURL(/\/office$/);
+  await expect(page).toHaveURL(/^[^?]*\/office$/); // not /account/mfa?next=/office
+  await page
+    .getByRole('navigation', { name: 'Main' })
+    .getByRole('link', { name: 'Timetable' })
+    .click();
+  await expect(page).toHaveURL(/\/office\/timetable$/);
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Weekly timetable');
 
   // Seed: Room 1 on Tuesday 18:00–19:30 (group X), Room 2 on Thursday, Room 1 on Sunday.
@@ -99,7 +104,13 @@ test('teachers see the timetable read-only; students and teachers cannot open th
   await page.context().clearCookies();
 
   await signIn(page, USERS.studentA);
-  for (const path of ['/office', '/office/rooms', '/teach/timetable']) {
+  for (const path of [
+    '/office',
+    '/office/rooms',
+    '/office/timetable',
+    '/office/students',
+    '/teach/timetable',
+  ]) {
     expect((await page.goto(path))?.status(), path).toBe(404);
   }
 });

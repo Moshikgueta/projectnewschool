@@ -126,6 +126,12 @@ isOneToOne: false
       foreignKeyName: "assignment_recipients_student_id_fkey"
       columns: ["student_id"]
 isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "assignment_recipients_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
       referencedRelation: "profiles"
       referencedColumns: ["id"]
     },{
@@ -153,6 +159,12 @@ isOneToOne: false
 isOneToOne: false
       referencedRelation: "activities"
       referencedColumns: ["id","course_id"]
+    },{
+      foreignKeyName: "assignments_assigned_by_fkey"
+      columns: ["assigned_by"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
     },{
       foreignKeyName: "assignments_assigned_by_fkey"
       columns: ["assigned_by"]
@@ -212,6 +224,12 @@ isOneToOne: false
       foreignKeyName: "attempts_user_id_fkey"
       columns: ["user_id"]
 isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "attempts_user_id_fkey"
+      columns: ["user_id"]
+isOneToOne: false
       referencedRelation: "profiles"
       referencedColumns: ["id"]
     },{
@@ -237,6 +255,12 @@ isOneToOne: false
       foreignKeyName: "attendance_marked_by_fkey"
       columns: ["marked_by"]
 isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "attendance_marked_by_fkey"
+      columns: ["marked_by"]
+isOneToOne: false
       referencedRelation: "profiles"
       referencedColumns: ["id"]
     },{
@@ -250,6 +274,12 @@ isOneToOne: false
       columns: ["session_id"]
 isOneToOne: false
       referencedRelation: "group_sessions"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "attendance_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
+      referencedRelation: "office_students"
       referencedColumns: ["id"]
     },{
       foreignKeyName: "attendance_student_id_fkey"
@@ -295,6 +325,12 @@ isOneToOne: false
 isOneToOne: false
       referencedRelation: "book_sections"
       referencedColumns: ["id","course_id"]
+    },{
+      foreignKeyName: "block_responses_user_id_fkey"
+      columns: ["user_id"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
     },{
       foreignKeyName: "block_responses_user_id_fkey"
       columns: ["user_id"]
@@ -425,6 +461,12 @@ isOneToOne: false
       foreignKeyName: "enrollments_student_id_fkey"
       columns: ["student_id"]
 isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "enrollments_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
       referencedRelation: "profiles"
       referencedColumns: ["id"]
     },{
@@ -501,6 +543,12 @@ isOneToOne: false
       columns: ["group_id"]
 isOneToOne: false
       referencedRelation: "groups"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "group_teachers_teacher_id_fkey"
+      columns: ["teacher_id"]
+isOneToOne: false
+      referencedRelation: "office_students"
       referencedColumns: ["id"]
     },{
       foreignKeyName: "group_teachers_teacher_id_fkey"
@@ -587,11 +635,66 @@ isOneToOne: false
       foreignKeyName: "learning_events_user_id_fkey"
       columns: ["user_id"]
 isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "learning_events_user_id_fkey"
+      columns: ["user_id"]
+isOneToOne: false
       referencedRelation: "profiles"
       referencedColumns: ["id"]
     },{
       foreignKeyName: "learning_events_user_id_fkey"
       columns: ["user_id"]
+isOneToOne: false
+      referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"lesson_packages": {
+                  Row: {
+                    "created_at": string,"created_by": string | null,"expires_on": string | null,"id": string,"lessons": number,"minutes_per_lesson": number,"note": string,"paid_at": string | null,"price": number | null,"starts_on": string,"student_id": string
+                  }
+                  Insert: {
+                    "created_at"?: string,"created_by"?: string | null,"expires_on"?: string | null,"id"?: string,"lessons": number,"minutes_per_lesson"?: number,"note"?: string,"paid_at"?: string | null,"price"?: number | null,"starts_on"?: string,"student_id": string
+                  }
+                  Update: {
+                    "created_at"?: string,"created_by"?: string | null,"expires_on"?: string | null,"id"?: string,"lessons"?: number,"minutes_per_lesson"?: number,"note"?: string,"paid_at"?: string | null,"price"?: number | null,"starts_on"?: string,"student_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "lesson_packages_created_by_fkey"
+      columns: ["created_by"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "lesson_packages_created_by_fkey"
+      columns: ["created_by"]
+isOneToOne: false
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "lesson_packages_created_by_fkey"
+      columns: ["created_by"]
+isOneToOne: false
+      referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "lesson_packages_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "lesson_packages_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "lesson_packages_student_id_fkey"
+      columns: ["student_id"]
 isOneToOne: false
       referencedRelation: "teacher_choices"
       referencedColumns: ["id"]
@@ -637,11 +740,96 @@ isOneToOne: false
       foreignKeyName: "media_assets_created_by_fkey"
       columns: ["created_by"]
 isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "media_assets_created_by_fkey"
+      columns: ["created_by"]
+isOneToOne: false
       referencedRelation: "profiles"
       referencedColumns: ["id"]
     },{
       foreignKeyName: "media_assets_created_by_fkey"
       columns: ["created_by"]
+isOneToOne: false
+      referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"private_lessons": {
+                  Row: {
+                    "cancelled_at": string | null,"created_at": string,"created_by": string | null,"ends_at": string,"id": string,"note": string,"package_id": string | null,"starts_at": string,"status": Database["public"]['Enums']["private_lesson_status"],"student_id": string,"teacher_id": string,"updated_at": string
+                  }
+                  Insert: {
+                    "cancelled_at"?: string | null,"created_at"?: string,"created_by"?: string | null,"ends_at": string,"id"?: string,"note"?: string,"package_id"?: string | null,"starts_at": string,"status"?: Database["public"]['Enums']["private_lesson_status"],"student_id": string,"teacher_id": string,"updated_at"?: string
+                  }
+                  Update: {
+                    "cancelled_at"?: string | null,"created_at"?: string,"created_by"?: string | null,"ends_at"?: string,"id"?: string,"note"?: string,"package_id"?: string | null,"starts_at"?: string,"status"?: Database["public"]['Enums']["private_lesson_status"],"student_id"?: string,"teacher_id"?: string,"updated_at"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "private_lessons_created_by_fkey"
+      columns: ["created_by"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "private_lessons_created_by_fkey"
+      columns: ["created_by"]
+isOneToOne: false
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "private_lessons_created_by_fkey"
+      columns: ["created_by"]
+isOneToOne: false
+      referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "private_lessons_package_id_student_id_fkey"
+      columns: ["package_id","student_id"]
+isOneToOne: false
+      referencedRelation: "lesson_packages"
+      referencedColumns: ["id","student_id"]
+    },{
+      foreignKeyName: "private_lessons_package_id_student_id_fkey"
+      columns: ["package_id","student_id"]
+isOneToOne: false
+      referencedRelation: "package_balances"
+      referencedColumns: ["package_id","student_id"]
+    },{
+      foreignKeyName: "private_lessons_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "private_lessons_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "private_lessons_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
+      referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "private_lessons_teacher_id_fkey"
+      columns: ["teacher_id"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "private_lessons_teacher_id_fkey"
+      columns: ["teacher_id"]
+isOneToOne: false
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "private_lessons_teacher_id_fkey"
+      columns: ["teacher_id"]
 isOneToOne: false
       referencedRelation: "teacher_choices"
       referencedColumns: ["id"]
@@ -672,6 +860,12 @@ isOneToOne: false
                   }
                   Relationships: [
                     {
+      foreignKeyName: "recommendation_feedback_user_id_fkey"
+      columns: ["user_id"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
       foreignKeyName: "recommendation_feedback_user_id_fkey"
       columns: ["user_id"]
 isOneToOne: false
@@ -725,6 +919,12 @@ isOneToOne: false
       foreignKeyName: "room_bookings_created_by_fkey"
       columns: ["created_by"]
 isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "room_bookings_created_by_fkey"
+      columns: ["created_by"]
+isOneToOne: false
       referencedRelation: "profiles"
       referencedColumns: ["id"]
     },{
@@ -744,6 +944,12 @@ isOneToOne: false
       columns: ["room_id"]
 isOneToOne: false
       referencedRelation: "rooms"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "room_bookings_teacher_id_fkey"
+      columns: ["teacher_id"]
+isOneToOne: false
+      referencedRelation: "office_students"
       referencedColumns: ["id"]
     },{
       foreignKeyName: "room_bookings_teacher_id_fkey"
@@ -789,6 +995,12 @@ isOneToOne: false
 isOneToOne: false
       referencedRelation: "book_sections"
       referencedColumns: ["id","course_id"]
+    },{
+      foreignKeyName: "section_progress_user_id_fkey"
+      columns: ["user_id"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
     },{
       foreignKeyName: "section_progress_user_id_fkey"
       columns: ["user_id"]
@@ -850,6 +1062,12 @@ isOneToOne: false
       foreignKeyName: "student_codes_issued_by_fkey"
       columns: ["issued_by"]
 isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "student_codes_issued_by_fkey"
+      columns: ["issued_by"]
+isOneToOne: false
       referencedRelation: "profiles"
       referencedColumns: ["id"]
     },{
@@ -862,11 +1080,48 @@ isOneToOne: false
       foreignKeyName: "student_codes_user_id_fkey"
       columns: ["user_id"]
 isOneToOne: true
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "student_codes_user_id_fkey"
+      columns: ["user_id"]
+isOneToOne: true
       referencedRelation: "profiles"
       referencedColumns: ["id"]
     },{
       foreignKeyName: "student_codes_user_id_fkey"
       columns: ["user_id"]
+isOneToOne: true
+      referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"student_records": {
+                  Row: {
+                    "contact_email": string,"created_at": string,"office_note": string,"phone": string,"student_id": string,"updated_at": string
+                  }
+                  Insert: {
+                    "contact_email"?: string,"created_at"?: string,"office_note"?: string,"phone"?: string,"student_id": string,"updated_at"?: string
+                  }
+                  Update: {
+                    "contact_email"?: string,"created_at"?: string,"office_note"?: string,"phone"?: string,"student_id"?: string,"updated_at"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "student_records_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: true
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "student_records_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: true
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "student_records_student_id_fkey"
+      columns: ["student_id"]
 isOneToOne: true
       referencedRelation: "teacher_choices"
       referencedColumns: ["id"]
@@ -887,6 +1142,12 @@ isOneToOne: true
       foreignKeyName: "user_roles_granted_by_fkey"
       columns: ["granted_by"]
 isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "user_roles_granted_by_fkey"
+      columns: ["granted_by"]
+isOneToOne: false
       referencedRelation: "profiles"
       referencedColumns: ["id"]
     },{
@@ -894,6 +1155,12 @@ isOneToOne: false
       columns: ["granted_by"]
 isOneToOne: false
       referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "user_roles_user_id_fkey"
+      columns: ["user_id"]
+isOneToOne: false
+      referencedRelation: "office_students"
       referencedColumns: ["id"]
     },{
       foreignKeyName: "user_roles_user_id_fkey"
@@ -921,6 +1188,12 @@ isOneToOne: false
                   }
                   Relationships: [
                     {
+      foreignKeyName: "vocab_review_state_user_id_fkey"
+      columns: ["user_id"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
       foreignKeyName: "vocab_review_state_user_id_fkey"
       columns: ["user_id"]
 isOneToOne: false
@@ -993,7 +1266,45 @@ isOneToOne: false
                 }
           }
           Views: {
-            "teacher_choices": {
+            "office_students": {
+                  Row: {
+                    "created_at": string | null,"display_name": string | null,"id": string | null
+                  }
+                  Insert: {
+                           "created_at"?: string | null,"display_name"?: string | null,"id"?: string | null
+                         }
+                        Update: {
+                           "created_at"?: string | null,"display_name"?: string | null,"id"?: string | null
+                         }
+                        Relationships: [
+                    
+                  ]
+                },"package_balances": {
+                  Row: {
+                    "booked": number | null,"expires_on": string | null,"lessons": number | null,"package_id": string | null,"paid_at": string | null,"price": number | null,"student_id": string | null,"used": number | null
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "lesson_packages_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "lesson_packages_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "lesson_packages_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
+      referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"teacher_choices": {
                   Row: {
                     "display_name": string | null,"id": string | null
                   }
@@ -1021,6 +1332,12 @@ isOneToOne: false
       foreignKeyName: "room_bookings_teacher_id_fkey"
       columns: ["teacher_id"]
 isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "room_bookings_teacher_id_fkey"
+      columns: ["teacher_id"]
+isOneToOne: false
       referencedRelation: "profiles"
       referencedColumns: ["id"]
     },{
@@ -1037,7 +1354,7 @@ isOneToOne: false
             [_ in never]: never
           }
           Enums: {
-            "app_role": "student"|"teacher"|"pedagogical_manager"|"admin"|"office","assignment_audience": "group"|"selected","attempt_status": "in_progress"|"submitted","attendance_status": "present"|"late"|"absent"|"excused","book_kind": "notebook"|"workbook","content_status": "draft"|"in_review"|"published"|"archived","enrollment_status": "active"|"paused"|"completed"|"withdrawn","group_cycle_state": "upcoming"|"active"|"completed","group_status": "planned"|"active"|"finished"|"archived","learning_event_type": "login"|"activity_started"|"activity_completed"|"answer_submitted"|"section_opened"|"section_completed"|"vocab_reviewed"|"assignment_completed","learning_phase": "before_class"|"during_class"|"after_class"|"review"|"optional","progress_status": "not_started"|"in_progress"|"completed","scoring_mode": "none"|"practice"|"scored","teacher_role": "lead"|"assistant","text_direction": "ltr"|"rtl"
+            "app_role": "student"|"teacher"|"pedagogical_manager"|"admin"|"office","assignment_audience": "group"|"selected","attempt_status": "in_progress"|"submitted","attendance_status": "present"|"late"|"absent"|"excused","book_kind": "notebook"|"workbook","content_status": "draft"|"in_review"|"published"|"archived","enrollment_status": "active"|"paused"|"completed"|"withdrawn","group_cycle_state": "upcoming"|"active"|"completed","group_status": "planned"|"active"|"finished"|"archived","learning_event_type": "login"|"activity_started"|"activity_completed"|"answer_submitted"|"section_opened"|"section_completed"|"vocab_reviewed"|"assignment_completed","learning_phase": "before_class"|"during_class"|"after_class"|"review"|"optional","private_lesson_status": "scheduled"|"done"|"cancelled_early"|"cancelled_late"|"no_show","progress_status": "not_started"|"in_progress"|"completed","scoring_mode": "none"|"practice"|"scored","teacher_role": "lead"|"assistant","text_direction": "ltr"|"rtl"
           }
           CompositeTypes: {
             [_ in never]: never
@@ -1157,7 +1474,7 @@ export const Constants = {
           }
         },"public": {
           Enums: {
-            "app_role": ["student", "teacher", "pedagogical_manager", "admin", "office"],"assignment_audience": ["group", "selected"],"attempt_status": ["in_progress", "submitted"],"attendance_status": ["present", "late", "absent", "excused"],"book_kind": ["notebook", "workbook"],"content_status": ["draft", "in_review", "published", "archived"],"enrollment_status": ["active", "paused", "completed", "withdrawn"],"group_cycle_state": ["upcoming", "active", "completed"],"group_status": ["planned", "active", "finished", "archived"],"learning_event_type": ["login", "activity_started", "activity_completed", "answer_submitted", "section_opened", "section_completed", "vocab_reviewed", "assignment_completed"],"learning_phase": ["before_class", "during_class", "after_class", "review", "optional"],"progress_status": ["not_started", "in_progress", "completed"],"scoring_mode": ["none", "practice", "scored"],"teacher_role": ["lead", "assistant"],"text_direction": ["ltr", "rtl"]
+            "app_role": ["student", "teacher", "pedagogical_manager", "admin", "office"],"assignment_audience": ["group", "selected"],"attempt_status": ["in_progress", "submitted"],"attendance_status": ["present", "late", "absent", "excused"],"book_kind": ["notebook", "workbook"],"content_status": ["draft", "in_review", "published", "archived"],"enrollment_status": ["active", "paused", "completed", "withdrawn"],"group_cycle_state": ["upcoming", "active", "completed"],"group_status": ["planned", "active", "finished", "archived"],"learning_event_type": ["login", "activity_started", "activity_completed", "answer_submitted", "section_opened", "section_completed", "vocab_reviewed", "assignment_completed"],"learning_phase": ["before_class", "during_class", "after_class", "review", "optional"],"private_lesson_status": ["scheduled", "done", "cancelled_early", "cancelled_late", "no_show"],"progress_status": ["not_started", "in_progress", "completed"],"scoring_mode": ["none", "practice", "scored"],"teacher_role": ["lead", "assistant"],"text_direction": ["ltr", "rtl"]
           }
         }
 } as const

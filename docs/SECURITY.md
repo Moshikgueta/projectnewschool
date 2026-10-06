@@ -136,6 +136,16 @@ nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Polic
   (microphone only where speaking activities need it, later).
 - ☐ Fonts self-hosted via `next/font` — no requests to Google from students' browsers.
 
+### Office accounts — stage D
+
+- ☑ The office (MFA) can register a student. The account is created with the secret key,
+  only ever with the student role, after the office's own MFA-verified session is
+  checked (`requireArea('office')`); everything else the office writes goes through its
+  own session and RLS. A student registered without an email gets an unreachable
+  placeholder address (`…@students.newschool.invalid`) and signs in with an entry code.
+- ☑ No guardian or parent details are collected until the minors question (ROADMAP D7) is
+  answered.
+
 ### Rate limiting — Phases 1 & 4
 
 - ☐ Auth endpoints: Supabase Auth's built-in limits (tightened), plus CAPTCHA
@@ -232,15 +242,17 @@ legal advice.
 
 ### What we collect
 
-| Data                                 | Why                                                        | Where                                                                 |
-| ------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------------------------- |
-| Email                                | Login, password reset                                      | `auth.users` (separate from profile)                                  |
-| Display name, optional avatar        | Shown to student and teacher                               | `profiles`                                                            |
-| Interface language, timezone         | UI, "practice this week"                                   | `profiles`                                                            |
-| Enrollment and group membership      | Course access                                              | `enrollments`                                                         |
-| Answers, attempts, progress, events  | The learning service itself                                | learner tables                                                        |
-| Attendance per class, teacher's note | Teaching; the student sees their own; the manager reads it | `attendance` (marks are never deleted; covered by the retention rule) |
-| Entry-code hash (students)           | Sign-in without email                                      | `student_codes` (no user access at all)                               |
+| Data                                                   | Why                                                        | Where                                                                                                |
+| ------------------------------------------------------ | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Email                                                  | Login, password reset                                      | `auth.users` (separate from profile)                                                                 |
+| Display name, optional avatar                          | Shown to student and teacher                               | `profiles`                                                                                           |
+| Interface language, timezone                           | UI, "practice this week"                                   | `profiles`                                                                                           |
+| Enrollment and group membership                        | Course access                                              | `enrollments`                                                                                        |
+| Answers, attempts, progress, events                    | The learning service itself                                | learner tables                                                                                       |
+| Attendance per class, teacher's note                   | Teaching; the student sees their own; the manager reads it | `attendance` (marks are never deleted; covered by the retention rule)                                |
+| Entry-code hash (students)                             | Sign-in without email                                      | `student_codes` (no user access at all)                                                              |
+| Phone, contact email, office note (students)           | The office reaches the student                             | `student_records` (office/admin with MFA, manager reads, the student sees their own; never teachers) |
+| Packages: lessons, price, paid or not; private lessons | Running private lessons (Tazman replacement)               | `lesson_packages`, `private_lessons` (audited; teachers see only their own lessons)                  |
 
 ### What we deliberately do **not** collect in this platform
 

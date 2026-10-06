@@ -301,7 +301,8 @@
       "homework": "שיעורי בית להגשה השבוע",
       "homeworkEmpty": "אין הגשות בשבוע הקרוב.",
       "homeworkLine": "{group} · להגשה עד {date}",
-      "groups": "הקבוצות שלי"
+      "groups": "הקבוצות שלי",
+      "privateLessons": "שיעורים פרטיים היום"
     },
     "attendance": {
       "title": "נוכחות",
@@ -644,6 +645,8 @@
   },
   "office": {
     "nav": {
+      "today": "היום",
+      "students": "תלמידים",
       "timetable": "מערכת שעות",
       "rooms": "כיתות"
     },
@@ -698,6 +701,105 @@
       "notAllowed": "רק משרד בית הספר יכול לשנות את זה.",
       "failed": "השמירה נכשלה. כדאי לנסות שוב.",
       "saved": "נשמר."
+    },
+    "records": {
+      "saved": "נשמר.",
+      "invalid": "בדקו את הטופס ונסו שוב.",
+      "notAllowed": "רק המזכירות יכולה לשנות את זה.",
+      "failed": "השמירה לא הצליחה. נסו שוב.",
+      "emailExists": "כבר קיים חשבון עם הדוא״ל הזה.",
+      "teacherBusy": "למורה כבר יש שיעור בזמן הזה.",
+      "studentBusy": "לתלמיד/ה כבר יש שיעור בזמן הזה.",
+      "noPackage": "אין חבילה עם שיעור פנוי בתאריך הזה. הוסיפו חבילה, או קבעו בלי חבילה.",
+      "notStarted": "אפשר לסמן שיעור כהתקיים או כהחמצה רק אחרי שהתחיל."
+    },
+    "home": {
+      "title": "היום",
+      "lessons": "שיעורים פרטיים היום",
+      "noLessons": "אין שיעורים פרטיים היום.",
+      "lessonLine": "{student} עם {teacher}",
+      "followUp": "חבילות למעקב",
+      "followUpHint": "חבילות שעומדות להיגמר, שפג תוקפן בשבועיים הקרובים או שלא שולמו.",
+      "followUpEmpty": "אין מה לבדוק."
+    },
+    "students": {
+      "title": "תלמידים",
+      "subtitle": "פרטי קשר, חבילות ושיעורים פרטיים.",
+      "search": "חיפוש לפי שם",
+      "searchButton": "חיפוש",
+      "nameCol": "שם",
+      "phoneCol": "טלפון",
+      "leftCol": "שיעורים שנותרו",
+      "attention": "דורש טיפול",
+      "empty": "לא נמצאו תלמידים.",
+      "add": "הוספת תלמיד/ה",
+      "name": "שם מלא",
+      "loginEmail": "דוא״ל לכניסה (לא חובה)",
+      "loginEmailHint": "השאירו ריק אם התלמיד/ה ייכנסו עם קוד כניסה.",
+      "phone": "טלפון (לא חובה)",
+      "contactEmail": "דוא״ל ליצירת קשר (לא חובה)",
+      "create": "הוספה"
+    },
+    "student": {
+      "back": "כל התלמידים",
+      "contact": "פרטי קשר",
+      "phone": "טלפון",
+      "contactEmail": "דוא״ל ליצירת קשר",
+      "officeNote": "הערת מזכירות (התלמיד/ה רואים את הרשומה שלהם)",
+      "save": "שמירה",
+      "code": "קוד כניסה",
+      "codeHint": "קוד חדש מחליף את הקודם. הוא מוצג פעם אחת.",
+      "packages": "חבילות",
+      "noPackages": "עדיין אין חבילות.",
+      "packageLine": "{lessons} שיעורים של {minutes} דקות",
+      "balance": "{used} נוצלו · {booked} קבועים · {left} נותרו",
+      "validity": "מ-{from}",
+      "validityUntil": "מ-{from} עד {until}",
+      "price": "מחיר: {price}",
+      "paid": "שולם",
+      "unpaid": "לא שולם",
+      "markPaid": "סימון כשולם",
+      "markPaidLabel": "סימון החבילה מ-{date} כשולמה",
+      "alert": {
+        "low": "עומדת להיגמר",
+        "expiring": "פג תוקף בקרוב",
+        "expired": "פג תוקף",
+        "finished": "נוצלה",
+        "unpaid": "לא שולם"
+      },
+      "addPackage": "הוספת חבילה",
+      "lessons": "מספר שיעורים",
+      "minutes": "דקות לשיעור",
+      "startsOn": "תחילת החבילה",
+      "expiresOn": "תוקף עד (לא חובה)",
+      "priceField": "מחיר ב-₪ (לא חובה)",
+      "paidNow": "שולם עכשיו",
+      "note": "הערה (לא חובה)",
+      "addPackageButton": "הוספת חבילה",
+      "lessonsTitle": "שיעורים פרטיים",
+      "noLessons": "עדיין אין שיעורים פרטיים.",
+      "lessonWith": "עם {teacher}",
+      "noPackageUsed": "לא מחבילה",
+      "status": {
+        "scheduled": "נקבע",
+        "done": "התקיים",
+        "cancelled_early": "בוטל בזמן",
+        "cancelled_late": "ביטול מאוחר (נספר)",
+        "no_show": "לא הגיע/ה (נספר)"
+      },
+      "statusLabel": "סטטוס השיעור ב-{date}",
+      "setStatus": "עדכון",
+      "cancel": "ביטול",
+      "cancelLabel": "ביטול השיעור ב-{date}",
+      "cancelHint": "ביטול פחות מ-24 שעות לפני השיעור נספר מהחבילה.",
+      "book": "קביעת שיעור פרטי",
+      "teacher": "מורה",
+      "startsAt": "תאריך ושעה",
+      "duration": "משך בדקות",
+      "package": "חבילה",
+      "packageAuto": "מחבילה (זו שתוקפה נגמר ראשון)",
+      "packageNone": "לא מחבילה",
+      "bookButton": "קביעה"
     }
   }
 }

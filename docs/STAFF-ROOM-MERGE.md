@@ -1,6 +1,6 @@
 # Uniting the staff room (חדר המורים) with the learning platform
 
-Status: **in progress** · decided 2026-10-06 · stages A, B and C and the import script implemented locally (ADR-029, ADR-030, ADR-031)
+Status: **in progress** · decided 2026-10-06 · stages A–D and the import script implemented locally (ADR-029 to ADR-032)
 
 ## Decisions
 
@@ -35,11 +35,11 @@ From an inventory of `Teacher Dashboard v2.dc.html`, `Teacher Mobile.dc.html`,
 | כיתות ושיבוץ (rooms, weekly timetable)           | D1                 | `rooms`, `room_bookings` (overlaps refused by the database), office area, read-only timetable for staff | **A** ✓ |
 | Student entry codes                              | D1                 | code sign-in into a normal Supabase session; same hashing scheme so existing codes keep working         | **B** ✓ |
 | Student portal                                   | demo               | `/learn` (notebook, workbook, practice, vocabulary, progress)                                           | exists  |
-| תלמידים / פרופיל (students, profile)             | demo               | teacher: group pages (exist) + per-student page; office: student records with contact details           | **D**   |
+| תלמידים / פרופיל (students, profile)             | demo               | teacher: group pages (exist) + per-student page; office: student records with contact details           | **D** ✓ |
 | שיעורים קבוצתיים (groups, attendance, level fit) | demo               | groups exist; **attendance per class** (`group_sessions`) and level-fit notes                           | **C**   |
 | לוח בקרה (dashboard KPIs, today's lessons)       | demo               | teacher home "today" (sessions, homework to check); office home (packages ending, open payments)        | C / D   |
 | יומן שבועי (calendar)                            | demo               | the timetable (A) + `group_sessions`; per-teacher view; Zoom link per class                             | A / C   |
-| Private lessons: balance, packages, lesson log   | demo               | **packages and lesson log** (purchased / used, late-cancel rule, low-balance alert)                     | **D**   |
+| Private lessons: balance, packages, lesson log   | demo               | **packages and lesson log** (purchased / used, late-cancel rule, low-balance alert)                     | **D** ✓ |
 | Payments                                         | flag only          | PayPlus integration from the Spanish course project, behind the office area                             | D+      |
 | מחברות דיגיטליות (notebook links)                | demo (Google Docs) | platform notebooks (exist); Google Docs links until each cycle is converted                             | exists  |
 | חומרי לימוד (materials)                          | demo               | media library in the CMS                                                                                | 8 / E   |
@@ -55,6 +55,30 @@ From an inventory of `Teacher Dashboard v2.dc.html`, `Teacher Mobile.dc.html`,
 Stages: **A** rooms and timetable · **B** student codes · **C** attendance and teacher
 "today" · **D** students, packages and the office (the Tazman replacement,
 `MIGRATION-FROM-TAZMAN.md`) · **E** staff tools · **F** admissions and teacher development.
+
+## The office: students, packages and private lessons (stage D)
+
+The Tazman replacement, first part (`MIGRATION-FROM-TAZMAN.md` in the staff room, steps 1
+and 3).
+
+- **Office home** (`/office`): today's private lessons; packages to follow up (one lesson
+  or fewer left to book, expiring within 14 days, or not paid). The timetable moved to
+  `/office/timetable`.
+- **Students** (`/office/students`): search, lessons left, "needs attention"; add a
+  student (no email needed: they sign in with an entry code).
+- **A student's page:** contact details and office note; entry code; packages (lessons,
+  length, validity, price, paid or not, used · booked · left) with "mark as paid"; private
+  lessons: book (teacher, time, length; drawn from the package expiring first), cancel
+  (less than 24 hours before counts as late and is charged), mark held or missed once
+  started.
+- **Rules in the database:** a teacher or a student can't be in two lessons at once; a
+  lesson can't use another student's package; only teachers teach and only students
+  attend; balances are counted, never stored; packages and lessons are audited.
+- **Teachers** see today's private lessons on their "Today" page, read-only. No contact
+  details, packages or prices.
+- **Not yet:** self-booking by students and teachers' working hours (Tazman step 2),
+  reminders (step 4), reports and teacher pay (step 5), PayPlus payments (D+), a student
+  view of their packages, guardians (waits for D7).
 
 ## Attendance and the teacher's day (stage C)
 

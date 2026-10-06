@@ -301,7 +301,8 @@
       "homework": "Homework due this week",
       "homeworkEmpty": "Nothing due in the next 7 days.",
       "homeworkLine": "{group} · due {date}",
-      "groups": "My groups"
+      "groups": "My groups",
+      "privateLessons": "Private lessons today"
     },
     "attendance": {
       "title": "Attendance",
@@ -644,6 +645,8 @@
   },
   "office": {
     "nav": {
+      "today": "Today",
+      "students": "Students",
       "timetable": "Timetable",
       "rooms": "Rooms"
     },
@@ -698,6 +701,105 @@
       "notAllowed": "Only the school office can change this.",
       "failed": "Could not save. Try again.",
       "saved": "Saved."
+    },
+    "records": {
+      "saved": "Saved.",
+      "invalid": "Check the form and try again.",
+      "notAllowed": "Only the school office can change this.",
+      "failed": "Could not save. Try again.",
+      "emailExists": "An account with this email already exists.",
+      "teacherBusy": "The teacher already has a lesson at that time.",
+      "studentBusy": "The student already has a lesson at that time.",
+      "noPackage": "No package with a lesson left covers that date. Add a package, or book without one.",
+      "notStarted": "A lesson can be marked held or missed only once it has started."
+    },
+    "home": {
+      "title": "Today",
+      "lessons": "Private lessons today",
+      "noLessons": "No private lessons today.",
+      "lessonLine": "{student} with {teacher}",
+      "followUp": "Packages to follow up",
+      "followUpHint": "Running low, expiring within two weeks, or not paid.",
+      "followUpEmpty": "Nothing to follow up."
+    },
+    "students": {
+      "title": "Students",
+      "subtitle": "Contact details, packages and private lessons.",
+      "search": "Search by name",
+      "searchButton": "Search",
+      "nameCol": "Name",
+      "phoneCol": "Phone",
+      "leftCol": "Lessons left",
+      "attention": "Needs attention",
+      "empty": "No students found.",
+      "add": "Add a student",
+      "name": "Full name",
+      "loginEmail": "Email for signing in (optional)",
+      "loginEmailHint": "Leave empty if the student will sign in with an entry code.",
+      "phone": "Phone (optional)",
+      "contactEmail": "Contact email (optional)",
+      "create": "Add student"
+    },
+    "student": {
+      "back": "All students",
+      "contact": "Contact details",
+      "phone": "Phone",
+      "contactEmail": "Contact email",
+      "officeNote": "Office note (students can see their own record)",
+      "save": "Save",
+      "code": "Entry code",
+      "codeHint": "A new code replaces the old one. It is shown once.",
+      "packages": "Packages",
+      "noPackages": "No packages yet.",
+      "packageLine": "{lessons} lessons of {minutes} minutes",
+      "balance": "{used} used · {booked} booked · {left} left",
+      "validity": "From {from}",
+      "validityUntil": "From {from} until {until}",
+      "price": "Price: {price}",
+      "paid": "Paid",
+      "unpaid": "Not paid",
+      "markPaid": "Mark as paid",
+      "markPaidLabel": "Mark the package from {date} as paid",
+      "alert": {
+        "low": "Running low",
+        "expiring": "Expires soon",
+        "expired": "Expired",
+        "finished": "Used up",
+        "unpaid": "Not paid"
+      },
+      "addPackage": "Add a package",
+      "lessons": "Number of lessons",
+      "minutes": "Minutes per lesson",
+      "startsOn": "Starts on",
+      "expiresOn": "Expires on (optional)",
+      "priceField": "Price in ₪ (optional)",
+      "paidNow": "Paid now",
+      "note": "Note (optional)",
+      "addPackageButton": "Add package",
+      "lessonsTitle": "Private lessons",
+      "noLessons": "No private lessons yet.",
+      "lessonWith": "with {teacher}",
+      "noPackageUsed": "Not from a package",
+      "status": {
+        "scheduled": "Scheduled",
+        "done": "Held",
+        "cancelled_early": "Cancelled in time",
+        "cancelled_late": "Cancelled late (charged)",
+        "no_show": "Missed (charged)"
+      },
+      "statusLabel": "Status of the lesson on {date}",
+      "setStatus": "Update",
+      "cancel": "Cancel",
+      "cancelLabel": "Cancel the lesson on {date}",
+      "cancelHint": "Cancelling less than 24 hours before the lesson counts against the package.",
+      "book": "Book a private lesson",
+      "teacher": "Teacher",
+      "startsAt": "Date and time",
+      "duration": "Length in minutes",
+      "package": "Package",
+      "packageAuto": "From a package (the one expiring first)",
+      "packageNone": "Not from a package",
+      "bookButton": "Book"
     }
   }
 }

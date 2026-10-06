@@ -130,6 +130,93 @@ export default async function globalSetup() {
     .eq('group_id', GX)
     .eq('cycle_id', '40000000-0000-4000-8000-000000000001');
 
+  // The office's records as seeded (stage D): students added by the tests
+  // are removed, the seed's contact details, packages and lessons restored.
+  for (const user of data?.users ?? []) {
+    if (user.email?.endsWith('@students.newschool.invalid') || user.email?.startsWith('e2e.')) {
+      await admin.from('private_lessons').delete().eq('student_id', user.id);
+      await admin.from('lesson_packages').delete().eq('student_id', user.id);
+      await admin.auth.admin.deleteUser(user.id);
+    }
+  }
+  await admin.from('private_lessons').delete().neq('id', '00000000-0000-0000-0000-000000000000');
+  await admin.from('lesson_packages').delete().neq('id', '00000000-0000-0000-0000-000000000000');
+  await admin.from('student_records').upsert([
+    { student_id: A, phone: '050-1234567', contact_email: '', office_note: 'Prefers evenings' },
+    {
+      student_id: '00000000-0000-4000-8000-0000000000a2',
+      phone: '052-7654321',
+      contact_email: 'maya.family@example.com',
+      office_note: '',
+    },
+  ]);
+  const OFFICE = '00000000-0000-4000-8000-0000000000e1';
+  const dayMs = 86_400_000;
+  const at = (days: number) => new Date(Date.now() + days * dayMs);
+  const dateOnly = (days: number) => at(days).toISOString().slice(0, 10);
+  await admin.from('lesson_packages').insert([
+    {
+      id: 'd0000000-0000-4000-8000-000000000001',
+      student_id: A,
+      lessons: 10,
+      minutes_per_lesson: 60,
+      starts_on: dateOnly(-30),
+      expires_on: dateOnly(120),
+      price: 1800,
+      paid_at: at(-30).toISOString(),
+      created_by: OFFICE,
+    },
+    {
+      id: 'd0000000-0000-4000-8000-000000000002',
+      student_id: '00000000-0000-4000-8000-0000000000a2',
+      lessons: 5,
+      minutes_per_lesson: 45,
+      starts_on: dateOnly(-60),
+      expires_on: dateOnly(10),
+      price: 950,
+      paid_at: null,
+      created_by: OFFICE,
+    },
+  ]);
+  const lesson = (
+    n: number,
+    student: string,
+    teacher: string,
+    pkg: string,
+    days: number,
+    minutes: number,
+    status: 'done' | 'scheduled' | 'cancelled_late',
+  ) => ({
+    id: `d1000000-0000-4000-8000-00000000000${n}`,
+    student_id: student,
+    teacher_id: teacher,
+    package_id: pkg,
+    starts_at: at(days).toISOString(),
+    ends_at: new Date(at(days).getTime() + minutes * 60_000).toISOString(),
+    status,
+    cancelled_at:
+      status === 'cancelled_late'
+        ? new Date(at(days).getTime() - 2 * 3_600_000).toISOString()
+        : null,
+    created_by: OFFICE,
+  });
+  const B = '00000000-0000-4000-8000-0000000000a2';
+  const TXID = '00000000-0000-4000-8000-0000000000b1';
+  const TYID = '00000000-0000-4000-8000-0000000000b2';
+  const P1 = 'd0000000-0000-4000-8000-000000000001';
+  const P2 = 'd0000000-0000-4000-8000-000000000002';
+  await admin
+    .from('private_lessons')
+    .insert([
+      lesson(1, A, TXID, P1, -7, 60, 'done'),
+      lesson(2, A, TXID, P1, -3, 60, 'cancelled_late'),
+      lesson(3, A, TXID, P1, 3, 60, 'scheduled'),
+      lesson(4, B, TYID, P2, -28, 45, 'done'),
+      lesson(5, B, TYID, P2, -21, 45, 'done'),
+      lesson(6, B, TYID, P2, -14, 45, 'done'),
+      lesson(7, B, TYID, P2, -7, 45, 'done'),
+    ]);
+
   // Rooms and lessons added by the office tests (the seed's ids start e0…/e1…).
   await admin.from('room_bookings').delete().not('id', 'like', 'e1000000-%');
   await admin.from('rooms').delete().not('id', 'like', 'e0000000-%');

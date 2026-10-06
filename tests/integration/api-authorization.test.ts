@@ -180,3 +180,46 @@ describe('student entry codes, through the API', () => {
     }
   });
 });
+
+describe('the office’s records, through the API', () => {
+  it('a student gets only their own contact details, packages and lessons', async () => {
+    const a = await signedIn('student.a@example.com');
+    for (const [table, column] of [
+      ['student_records', 'student_id'],
+      ['lesson_packages', 'student_id'],
+      ['private_lessons', 'student_id'],
+    ] as const) {
+      const mine = await a.from(table).select(column);
+      expect(mine.error, table).toBeNull();
+      expect(
+        (mine.data as Record<string, string>[]).every((r) => r[column] === IDS.studentA),
+        table,
+      ).toBe(true);
+      const theirs = await a.from(table).select(column).eq(column, IDS.studentB);
+      expect(theirs.data, table).toEqual([]);
+    }
+    const balances = await a.from('package_balances').select('student_id');
+    expect(balances.data!.map((r) => r.student_id)).toEqual([IDS.studentA]);
+    expect(
+      (await a.from('package_balances').select('student_id').eq('student_id', IDS.studentB)).data,
+    ).toEqual([]);
+    const write = await a.from('lesson_packages').insert({ student_id: IDS.studentA, lessons: 50 });
+    expect(write.error?.code).toBe('42501');
+    const list = await a.from('office_students').select('id');
+    expect(list.data).toEqual([]);
+    await a.auth.signOut();
+  });
+
+  it('a teacher gets no contact details, packages or prices, and only their own lessons', async () => {
+    const x = await signedIn('teacher.x@example.com');
+    expect((await x.from('student_records').select('phone')).data).toEqual([]);
+    expect((await x.from('lesson_packages').select('price')).data).toEqual([]);
+    expect((await x.from('package_balances').select('used')).data).toEqual([]);
+    const lessons = await x.from('private_lessons').select('teacher_id');
+    expect(lessons.data!.length).toBeGreaterThan(0);
+    expect(
+      lessons.data!.every((l) => l.teacher_id === '00000000-0000-4000-8000-0000000000b1'),
+    ).toBe(true);
+    await x.auth.signOut();
+  });
+});

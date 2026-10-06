@@ -1,6 +1,7 @@
 import 'server-only';
 import {
   isAttendanceOpen,
+  localDay,
   teacherDay,
   TO_TAKE_WINDOW_MS,
   type AttendanceStatus,
@@ -96,6 +97,8 @@ export type DayClass = {
 
 export type TeacherDay = {
   today: DayClass[];
+  /** Today's private lessons (not cancelled), read-only: the office books and updates them. */
+  privateLessons: { id: string; studentName: string; startsAt: string; endsAt: string }[];
   toTake: DayClass[];
   homework: {
     id: string;
@@ -214,6 +217,27 @@ export async function getTeacherDay(
   });
   const day = teacherDay(classes, now, timeZone);
 
+  const { data: lessons, error: lessonsError } = await supabase
+    .from('private_lessons')
+    .select(
+      'id, starts_at, ends_at, student:profiles!private_lessons_student_id_fkey ( display_name )',
+    )
+    .eq('teacher_id', teacherId)
+    .not('status', 'in', '(cancelled_early,cancelled_late)')
+    .gte('starts_at', new Date(now.getTime() - 86_400_000).toISOString())
+    .lte('starts_at', new Date(now.getTime() + 86_400_000).toISOString())
+    .order('starts_at');
+  if (lessonsError) throw new Error(`Could not load private lessons: ${lessonsError.message}`);
+  const today = localDay(now, timeZone);
+  const privateLessons = lessons
+    .filter((l) => localDay(new Date(l.starts_at), timeZone) === today)
+    .map((l) => ({
+      id: l.id,
+      studentName: l.student?.display_name ?? '',
+      startsAt: l.starts_at,
+      endsAt: l.ends_at,
+    }));
+
   // Homework due soon: who has done it, as on the group page.
   const due = assignments.data!;
   const recipientsOf = (a: (typeof due)[number]) =>
@@ -264,6 +288,7 @@ export async function getTeacherDay(
 
   return {
     ...day,
+    privateLessons,
     homework: due.map((a, i) => ({
       id: a.id,
       groupId: a.group_id,

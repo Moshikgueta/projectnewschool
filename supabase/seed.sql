@@ -352,3 +352,32 @@ insert into public.room_bookings (id, room_id, title, group_id, teacher_id, week
    '00000000-0000-4000-8000-0000000000e1'),
   ('e1000000-0000-4000-8000-000000000003', 'e0000000-0000-4000-8000-000000000001', 'English Foundations',
    null, null, 0, 600, 690, 'Teacher to confirm', '00000000-0000-4000-8000-0000000000e1');
+
+-- ── the office: contact details, packages, private lessons (stage D) ──────
+-- Student A: 10-lesson package, paid; with teacher X: done a week ago,
+-- cancelled late three days ago (counts), booked in three days → 2 used,
+-- 1 booked, 7 left. Student B: 5-lesson package, not paid, expires in 10
+-- days; with teacher Y: four done → 1 left (running low).
+insert into public.student_records (student_id, phone, contact_email, office_note) values
+  ('00000000-0000-4000-8000-0000000000a1', '050-1234567', '', 'Prefers evenings'),
+  ('00000000-0000-4000-8000-0000000000a2', '052-7654321', 'maya.family@example.com', '');
+insert into public.lesson_packages (id, student_id, lessons, minutes_per_lesson, starts_on, expires_on, price, paid_at, created_by) values
+  ('d0000000-0000-4000-8000-000000000001', '00000000-0000-4000-8000-0000000000a1', 10, 60,
+   current_date - 30, current_date + 120, 1800, now() - interval '30 days', '00000000-0000-4000-8000-0000000000e1'),
+  ('d0000000-0000-4000-8000-000000000002', '00000000-0000-4000-8000-0000000000a2', 5, 45,
+   current_date - 60, current_date + 10, 950, null, '00000000-0000-4000-8000-0000000000e1');
+insert into public.private_lessons (id, student_id, teacher_id, package_id, starts_at, ends_at, status, cancelled_at, created_by) values
+  ('d1000000-0000-4000-8000-000000000001', '00000000-0000-4000-8000-0000000000a1', '00000000-0000-4000-8000-0000000000b1',
+   'd0000000-0000-4000-8000-000000000001', now() - interval '7 days', now() - interval '7 days' + interval '1 hour', 'done', null, '00000000-0000-4000-8000-0000000000e1'),
+  ('d1000000-0000-4000-8000-000000000002', '00000000-0000-4000-8000-0000000000a1', '00000000-0000-4000-8000-0000000000b1',
+   'd0000000-0000-4000-8000-000000000001', now() - interval '3 days', now() - interval '3 days' + interval '1 hour', 'cancelled_late', now() - interval '3 days' - interval '2 hours', '00000000-0000-4000-8000-0000000000e1'),
+  ('d1000000-0000-4000-8000-000000000003', '00000000-0000-4000-8000-0000000000a1', '00000000-0000-4000-8000-0000000000b1',
+   'd0000000-0000-4000-8000-000000000001', now() + interval '3 days', now() + interval '3 days' + interval '1 hour', 'scheduled', null, '00000000-0000-4000-8000-0000000000e1'),
+  ('d1000000-0000-4000-8000-000000000004', '00000000-0000-4000-8000-0000000000a2', '00000000-0000-4000-8000-0000000000b2',
+   'd0000000-0000-4000-8000-000000000002', now() - interval '28 days', now() - interval '28 days' + interval '45 minutes', 'done', null, '00000000-0000-4000-8000-0000000000e1'),
+  ('d1000000-0000-4000-8000-000000000005', '00000000-0000-4000-8000-0000000000a2', '00000000-0000-4000-8000-0000000000b2',
+   'd0000000-0000-4000-8000-000000000002', now() - interval '21 days', now() - interval '21 days' + interval '45 minutes', 'done', null, '00000000-0000-4000-8000-0000000000e1'),
+  ('d1000000-0000-4000-8000-000000000006', '00000000-0000-4000-8000-0000000000a2', '00000000-0000-4000-8000-0000000000b2',
+   'd0000000-0000-4000-8000-000000000002', now() - interval '14 days', now() - interval '14 days' + interval '45 minutes', 'done', null, '00000000-0000-4000-8000-0000000000e1'),
+  ('d1000000-0000-4000-8000-000000000007', '00000000-0000-4000-8000-0000000000a2', '00000000-0000-4000-8000-0000000000b2',
+   'd0000000-0000-4000-8000-000000000002', now() - interval '7 days', now() - interval '7 days' + interval '45 minutes', 'done', null, '00000000-0000-4000-8000-0000000000e1');

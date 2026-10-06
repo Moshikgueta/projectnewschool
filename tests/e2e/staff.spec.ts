@@ -5,7 +5,10 @@ test.describe('teachers', () => {
   test('teacher X sees their groups and students', async ({ page }) => {
     await signIn(page, USERS.teacherX);
     await expect(page).toHaveURL(/\/teach$/);
-    await page.getByRole('link', { name: /group X/ }).click();
+    await page
+      .getByRole('region', { name: 'My groups' })
+      .getByRole('link', { name: /group X/ })
+      .click();
     await expect(page.getByRole('heading', { name: /group X/ })).toBeVisible();
     const students = page.getByRole('region', { name: 'Students' });
     await expect(students.getByRole('rowheader', { name: /Daniel \(student A\)/ })).toBeVisible();

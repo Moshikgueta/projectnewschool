@@ -193,7 +193,7 @@ Planned scope:
   teacher version of activities (keys + notes).
 - **Exit:** teacher authorization tests pass; pilot teachers use it for two weeks.
 
-### Staff room merge _(stages A–C and the import implemented locally)_
+### Staff room merge _(stages A–D and the import implemented locally)_
 
 Decided 2026-10-06: the staff room (חדר המורים) becomes part of this platform. Plan and
 stages: [STAFF-ROOM-MERGE.md](STAFF-ROOM-MERGE.md).
@@ -212,8 +212,13 @@ stages: [STAFF-ROOM-MERGE.md](STAFF-ROOM-MERGE.md).
       group's teachers only, never deleted), teacher home with today's classes and rooms,
       attendance still to take and homework due this week, attendance on the group page
       (ADR-031); 17 pgTAP tests, 5 end-to-end tests including forged requests
-- [ ] D students, packages, office home (Tazman) ·
-      E staff tools · F admissions and teacher development (privacy review first)
+- [x] **D. Students, packages and private lessons (Tazman, part 1):** office home, student
+      list and search, register a student (entry code, no email needed), contact details,
+      packages with balances counted from lessons, private lessons with the 24-hour late
+      rule, teachers' private lessons on "Today" (ADR-032); 26 pgTAP tests, API tests,
+      end-to-end tests including a code sign-in by a student the office registered
+- [ ] Tazman part 2: self-booking and teachers' working hours; reminders; reports; PayPlus
+- [ ] E staff tools · F admissions and teacher development (privacy review first)
 - [ ] Cut-over: the domain points here, the Worker shows "we have moved", D1 read-only
       for 30 days, then archived and deleted
 

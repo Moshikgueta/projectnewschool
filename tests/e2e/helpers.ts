@@ -94,6 +94,8 @@ export async function passMfa(page: Page, email: string) {
   await expect(page).toHaveURL(/\/account\/mfa/);
   const secrets = readSecrets();
   const setUp = page.getByRole('button', { name: 'Set up authenticator app' });
+  // Wait for the page to show one or the other before deciding.
+  await expect(setUp.or(page.getByLabel('6-digit code'))).toBeVisible();
   if (await setUp.isVisible()) {
     await setUp.click();
     const secret = (await page.locator('code').innerText()).trim();
@@ -102,7 +104,18 @@ export async function passMfa(page: Page, email: string) {
   } else {
     const secret = secrets[email];
     if (!secret) throw new Error(`No authenticator secret recorded for ${email} in this run`);
+    // A code is accepted once: if this account already used the current
+    // 30-second code in this run, wait for the next one.
+    const used = Number(secrets[`${email}#step`] ?? -1);
+    while (Math.floor(Date.now() / 30_000) <= used) await page.waitForTimeout(1_000);
     await page.getByLabel('6-digit code').fill(totp(secret));
   }
+  writeFileSync(
+    MFA_SECRETS_FILE,
+    JSON.stringify({
+      ...readSecrets(),
+      [`${email}#step`]: String(Math.floor(Date.now() / 30_000)),
+    }),
+  );
   await page.getByRole('button', { name: 'Verify' }).click();
 }

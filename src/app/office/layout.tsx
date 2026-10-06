@@ -15,7 +15,9 @@ export default async function OfficeLayout({ children }: { children: ReactNode }
       signOutAction={signOut}
       languageAction={setInterfaceLanguage}
       nav={[
-        { href: '/office', label: t('office.nav.timetable'), icon: 'timetable' },
+        { href: '/office', label: t('office.nav.today'), icon: 'home' },
+        { href: '/office/students', label: t('office.nav.students'), icon: 'groups' },
+        { href: '/office/timetable', label: t('office.nav.timetable'), icon: 'timetable' },
         { href: '/office/rooms', label: t('office.nav.rooms'), icon: 'rooms' },
       ]}
     >

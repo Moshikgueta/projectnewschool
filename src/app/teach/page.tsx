@@ -89,6 +89,23 @@ export default async function TeachHome() {
           )}
         </Section>
 
+        {day.privateLessons.length ? (
+          <Section id="private-today-heading" title={t('privateLessons')}>
+            <Card>
+              <ul className="flex flex-col divide-y divide-border">
+                {day.privateLessons.map((l) => (
+                  <li key={l.id} className="flex items-center justify-between gap-3 py-2">
+                    <span className="font-semibold tabular-nums">
+                      {time(l.startsAt)}–{time(l.endsAt)}
+                    </span>
+                    <bdi>{l.studentName}</bdi>
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          </Section>
+        ) : null}
+
         <Section id="to-take-heading" title={t('toTake')}>
           <Card className="flex flex-col gap-3">
             <p className="text-sm text-muted">{t('toTakeHint')}</p>
