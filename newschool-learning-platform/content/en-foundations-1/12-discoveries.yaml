@@ -1,0 +1,556 @@
+# Cycle "Discoveries", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: discoveries
+title: Discoveries
+goal: Say what animals and people do with actions in the present, and say where things are with prepositions.
+position: 12
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Actions in the present" and "Prepositions") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The overview says actions are practised in Activity 2 or 3 and prepositions in
+    Activity 1 or 3, but the activity titles mark Activities 2 and 4 as ACTIONS and
+    Activities 1 and 3 as PREPOSITIONS. The plan note follows the activity titles.
+    Please confirm.
+  - >-
+    Images are missing from the notebook export: the USA map (Activity 1), the
+    picture of wild animals (Activity 2) and the brain picture (Activity 4). Teacher
+    notes say to prepare and share them; they need to be added to the course media.
+  - >-
+    Activity 4 presents "left brain / right brain" as psychology science. This is a
+    popular idea rather than established science; the teacher note calls it "a
+    popular idea". Please decide whether to keep the framing.
+  - >-
+    Activity 4 answer frames "I am creative when I ___ / I am logical when I ___" did
+    not answer the questions "What do you do when you are creative / logical?"; they
+    are now "When I am creative, I ___" and "When I am logical, I ___". The garbled
+    emoji characters were removed. The pair time ("4 minutes approx") is in the
+    teacher note.
+  - >-
+    Small corrections: warm-up "Is this country close or far from Israel?" → "Is this
+    country near or far from Israel?"; "It lives at the ___" → "It lives in the ___";
+    "What does it do everyday? / Everyday, it ___" → "every day"; summary "Giraffes
+    eat leaves and Lions eat meat" → "lions"; the Activity 2 verb list "To walk, To
+    climb…" is written as a word bank (walk, climb, eat, smile, fly) and the examples
+    end with a full stop.
+  - >-
+    Summary, actions rule 1: the notebook says "I / you / they"; *we* was added. The
+    example "The mathematician studies numbers" uses *study → studies*; a short note
+    on this spelling was added to rule 2.
+  - >-
+    Mori extra Activity 1 message "Hey Mori! Send me a country/animal and I will tell
+    you where it is. You will correct me if I'm right or wrong" → "Hi Mori! Give me a
+    country or an animal and I will tell you where it is. Please tell me if I am
+    right or wrong." The closing quotation mark missing from the Activity 2 message
+    was added. The notebook has no tips for this cycle; the standard tips callout
+    from the other cycles was added.
+  - >-
+    Activity 3 uses body parts that are not in the vocabulary (face, feet, mouth,
+    nose); consider adding them. "Below – מתחת" is kept; "מתחת ל" may be clearer.
+  - >-
+    The notebook gives no activity times for this cycle, so none are recorded.
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: discoveries-class
+    title: 'Class: Discoveries'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Discoveries
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Actions in the present
+            description: Sentences with actions in the present (*The elephant walks.*)
+          - name: Prepositions
+            description: '*above, below, next to, near, far from, in, on, at*'
+      - id: quizlet
+        type: externalLink
+        label: Discoveries on Quizlet
+        url: https://quizlet.com/il/865384900/basic-english-discoveries-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I like to learn new things about ___.
+        example: I am Dana. I like to learn new things about politics.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What is your favorite country? Why?
+            frame: My favorite country is ___ because ___.
+          - question: Is this country near or far from Israel?
+            frame: This country is near Israel. / This country is far from Israel.
+          - question: What can you do in this country?
+            frame: You can ___.
+          - question: What is your favorite animal? Why?
+            frame: My favorite animal is the ___ because ___.
+          - question: Where does your favorite animal live?
+            frame: It lives in the ___.
+          - question: What does it do every day?
+            frame: Every day, it ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Where is this state?'
+        skills: [Prepositions]
+        steps:
+          - Review the prepositions with your teacher.
+          - Look at the map of the USA. Your teacher gives you a state. Say where it is.
+          - 'Your teacher asks: *Is ___ near or far from ___?* Answer, then ask the next student the same question with two other states.'
+        wordBank: [above, below, next to, near, far from]
+      - id: act1-frames
+        type: discussionQuestions
+        items:
+          - question: Where is your state?
+            frame: ___ is above ___, below ___ and next to ___.
+          - question: Is ___ near or far from ___?
+            frame: ___ is near ___. / ___ is far from ___.
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: What do the animals do?'
+        skills: [Actions in the present]
+        steps:
+          - Look at the picture of wild animals.
+          - What do you see in the picture? Say one thing.
+          - Choose one animal and say what it does.
+        example: |-
+          *The elephant walks.*
+          *The giraffe eats.*
+          *The leopard climbs.*
+          *The monkey climbs.*
+          *The bird flies.*
+        wordBank: [walk, climb, eat, smile, fly]
+      - id: act2-frames
+        type: discussionQuestions
+        items:
+          - question: What do you see in the picture?
+            frame: I see a / an ___.
+          - question: Choose one animal. What does it do?
+            frame: The ___ ___.
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Guess it!'
+        skills: [Prepositions]
+        steps:
+          - Think of a part of your body. Write it in your notebook.
+          - The other students ask you questions about it, one by one. Answer *yes* or *no*.
+          - The students guess the body part.
+        example: |-
+          Student A thinks of *hand*.
+          B: *Is this body part on your face?* A: *No, it's not on my face.*
+          C: *Is this body part close to your feet?* A: *No, it's not close to my feet.*
+          D: *Do you use this body part to speak?* A: *No, I don't use it to speak.*
+          B: *Do you use this body part to write?* A: *Yes, I do!*
+          C: *Is it your hand?* A: *Yes! That's right!*
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Right or left?'
+        skills: [Actions in the present]
+        steps:
+          - Look at the brain picture your teacher shows.
+          - Work in pairs. Student A asks Student B the two questions below, then B asks A.
+          - Tell the group what your partner answered. Use *he* or *she*.
+        example: |-
+          A: *What do you do when you are creative?*
+          B: *When I am creative, I draw and imagine new things.*
+          *Yosi draws and imagines new things when he is creative.*
+          *Dana counts and solves problems when she is logical.*
+      - id: act4-brain
+        type: table
+        caption: Verbs for the right side and the left side of the brain
+        header: [Right side (creative), Left side (logical)]
+        rows:
+          - [draw, count]
+          - [sing, read]
+          - [dance, solve]
+          - [imagine, plan]
+          - [create, organize]
+          - [play, study]
+          - [write, think]
+      - id: act4-questions
+        type: discussionQuestions
+        items:
+          - question: What do you **do** when you are creative?
+            frame: When I am creative, I ___.
+          - question: What do you **do** when you are logical?
+            frame: When I am logical, I ___.
+          - question: What does your partner do when he / she is creative?
+            frame: ___ ___ when he / she is creative.
+          - question: What does your partner do when he / she is logical?
+            frame: ___ ___ when he / she is logical.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Actions in the present** (Activities 2 and 4) and
+          **Prepositions** (Activities 1 and 3). The warm-up questions practise both.
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first, then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Review the prepositions with their translation (above – מעל ל, below – מתחת,
+          next to – ליד, near – קרוב ל, far from – רחוק מ). Share a map of the USA (it is
+          not in the exported notebook) and give each student a state. When everyone has
+          spoken, ask Student 1 if one state is near or far from another; Student 1 then
+          asks Student 2 with two different states, and so on until everyone has taken
+          part.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          The picture of wild animals is not in the exported notebook: prepare a picture
+          with several animals (elephant, giraffe, leopard, monkey, bird) and share it on
+          screen.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Students B, C and D take turns asking questions; together they guess the body
+          part. Whoever guesses can choose the next body part.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Explain that, according to a popular idea, the right side of the brain is
+          creative and the left side is logical, and show a picture of the brain (it is
+          not in the exported notebook). Pairs have about 4 minutes; adjust to the group.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: discoveries-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-actions
+        type: ruleSummary
+        skill: Actions in the present
+        rules:
+          - text: '**Who does the action + the verb.** With *I, you, we, they*, the verb does not change.'
+            examples:
+              - I study science.
+              - You work at the laboratory.
+              - Giraffes eat leaves and lions eat meat.
+          - text: With *he* and *she*, add **s** to the end of the verb (*study* → *studies*).
+            examples:
+              - The mathematician **studies** numbers.
+              - The scientist **looks** at the stars.
+          - text: Do **not** write *am, is, are* when you have a verb. Write the person and the verb.
+            examples: ['Right: *I study biology.*', 'Wrong: *I am study biology.*']
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: Prepositions
+        rules:
+          - text: '*In*, *on* and *at* are for places. **In** = inside a place. **On** = on a surface. **At** = a specific point or place.'
+            examples:
+              - The scientist is **in** the research lab with the animals.
+              - The scientist places the sample **on** the microscope.
+              - The animals are **at** the animal care center.
+          - text: '*Above* and *below* are for up and down. **Above** = higher than another thing. **Below** = lower than another thing.'
+            examples:
+              - The birdcages are **above** the animal pens.
+              - The rabbit is **below** the shelf in its cage.
+          - text: '*Next to*, *near* and *far from* are for distance. **Next to** = very close, beside. **Near** = close, but not right beside. **Far from** = far away.'
+            examples:
+              - The scientists work **next to** the animal observation room.
+              - The lab is **near** the animal enclosure.
+              - The research facility is **far from** the animal hospital.
+      - id: prepositions-table
+        type: table
+        caption: Prepositions
+        header: [English, Hebrew]
+        rows:
+          - [above, מעל ל]
+          - [below, מתחת]
+          - [next to, ליד]
+          - [near, קרוב ל]
+          - [far from, רחוק מ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: discoveries-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy this message and send it. Mori will ask you questions; answer every one.
+      - id: mori-main
+        type: aiTutorPrompt
+        title: Animals and countries
+        message: >-
+          Hi Mori, I want to talk about animals and countries. Can you ask me questions
+          using basic prepositions and actions in the present?
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-where
+        type: aiTutorPrompt
+        title: Where is this place or animal?
+        intro: >-
+          Mori gives you a country or an animal, and you say where it is with a
+          preposition. Examples: *Thailand is far from Israel.* *The zebra lives near the
+          river.* *The USA is next to Canada.*
+        message: >-
+          Hi Mori! Give me a country or an animal and I will tell you where it is. Please
+          tell me if I am right or wrong.
+      - id: mori-animals
+        type: aiTutorPrompt
+        title: What does the animal do?
+        intro: >-
+          Mori asks you about different animals. Say what each animal does with verbs
+          like *walk, climb, eat, fly, run*. Examples: *The giraffe eats leaves.* *The
+          monkey climbs the tree.* *The bird flies.* *The elephant walks.*
+        message: Hey Mori! Now ask me questions about animals. What do they do?
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: discoveries-practice
+    book: workbook
+    title: 'Practice: Discoveries'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-actions
+        type: activity
+        activity: discoveries-actions
+      - id: ex-prepositions
+        type: activity
+        activity: discoveries-prepositions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: discoveries-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Discoveries words
+        glossLang: he
+        link: https://quizlet.com/il/865384900/basic-english-discoveries-flash-cards/
+        items: &discoveries-words
+          - { term: Animal, gloss: חיה }
+          - { term: Elephant, gloss: פיל }
+          - { term: Giraffe, gloss: ג'ירפה }
+          - { term: Leopard, gloss: נמר }
+          - { term: Monkey, gloss: קוף }
+          - { term: Bird, gloss: ציפור }
+          - { term: Climb, gloss: לטפס }
+          - { term: Walk, gloss: ללכת }
+          - { term: Eat, gloss: לאכול }
+          - { term: Fly, gloss: לעוף }
+          - { term: Smile, gloss: לחייך }
+          - { term: Draw, gloss: לצייר }
+          - { term: Sing, gloss: לשיר }
+          - { term: Dance, gloss: לרקוד }
+          - { term: Imagine, gloss: לדמיין }
+          - { term: Create, gloss: ליצור }
+          - { term: Write, gloss: לכתוב }
+          - { term: Count, gloss: לספור }
+          - { term: Read, gloss: לקרוא }
+          - { term: Solve, gloss: לפתור }
+          - { term: Plan, gloss: לתכנן }
+          - { term: Organize, gloss: לארגן }
+          - { term: Study, gloss: ללמוד }
+          - { term: Think, gloss: לחשוב }
+          - { term: Above, gloss: מעל ל }
+          - { term: Below, gloss: מתחת }
+          - { term: Near, gloss: קרוב ל }
+          - { term: Next to, gloss: ליד }
+          - { term: Far from, gloss: רחוק מ }
+          - { term: Body part, gloss: חלק גוף }
+          - { term: Head, gloss: ראש }
+          - { term: Hand, gloss: יד }
+          - { term: Leg, gloss: רגל }
+          - { term: Eye, gloss: עין }
+          - { term: Ear, gloss: אוזן }
+
+vocabulary:
+  - slug: discoveries
+    title: Discoveries
+    items: *discoveries-words
+
+activities:
+  - slug: discoveries-actions
+    title: Actions in the present
+    minutes: 8
+    items:
+      - id: elephant-walks
+        type: multipleChoice
+        prompt: The elephant ___.
+        options:
+          - { text: walks, correct: true }
+          - {
+              text: walk,
+              feedback: '*The elephant* is one animal (*it*). Like *he* and *she*, add **s**: *walks*.',
+            }
+          - {
+              text: is walk,
+              feedback: 'Do not write *am, is, are* when you have a verb: *The elephant walks.*',
+            }
+      - id: giraffe-monkey
+        type: fillBlank
+        prompt: Write the verb in the present.
+        text: The giraffe ___ (eat) leaves. The monkey ___ (climb) the tree.
+        blanks: [[eats], [climbs]]
+      - id: study-science
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: I study science., correct: true }
+          - {
+              text: I am study science.,
+              feedback: 'Do not write *am, is, are* when you have a verb. Write the person and the verb: *I study science.*',
+            }
+          - {
+              text: I studies science.,
+              feedback: 'With *I*, the verb does not change: *I study science.*',
+            }
+      - id: lions-eat
+        type: trueFalse
+        prompt: '*Lions eats meat.* is a correct sentence.'
+        answer: false
+        feedback:
+          correct: 'Right! *Lions* is *they*, so there is no *s*: *Lions eat meat.*'
+          incorrect: '*Lions* is *they*, so the verb has no *s*: *Lions eat meat.*'
+      - id: he-she-forms
+        type: matching
+        prompt: Match each verb with its form for *he / she*.
+        pairs:
+          - [walk, walks]
+          - [climb, climbs]
+          - [eat, eats]
+          - [draw, draws]
+          - [think, thinks]
+      - id: yosi-dana
+        type: fillBlank
+        prompt: Write the verb in the present.
+        text: Yosi ___ (draw) when he is creative. Dana ___ (count) when she is logical.
+        blanks: [[draws], [counts]]
+      - id: giraffes-eat
+        type: multipleChoice
+        prompt: Giraffes ___ leaves.
+        options:
+          - { text: eat, correct: true }
+          - {
+              text: eats,
+              feedback: '*Giraffes* is more than one (*they*). With *they*, the verb does not change: *eat*.',
+            }
+          - {
+              text: are eat,
+              feedback: 'Do not write *am, is, are* when you have a verb: *Giraffes eat leaves.*',
+            }
+      - id: scientist-stars
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: The scientist looks at the stars.
+
+  - slug: discoveries-prepositions
+    title: 'Prepositions: where is it?'
+    minutes: 8
+    items:
+      - id: japan-far
+        type: multipleChoice
+        prompt: Japan is ___ Israel.
+        options:
+          - { text: far from, correct: true }
+          - { text: near, feedback: '*Near* means close. Japan is very far away: *far from*.' }
+          - {
+              text: next to,
+              feedback: '*Next to* means very close, beside. Japan is very far away: *far from*.',
+            }
+      - id: birdcages-above
+        type: multipleChoice
+        prompt: The birdcages are higher than the animal pens. The birdcages are ___ the animal pens.
+        options:
+          - { text: above, correct: true }
+          - { text: below, feedback: '*Below* means lower. Higher than another thing is *above*.' }
+          - {
+              text: far from,
+              feedback: '*Far from* is for distance. Higher than another thing is *above*.',
+            }
+      - id: hebrew
+        type: matching
+        prompt: Match each preposition with its translation.
+        pairs:
+          - [above, מעל ל]
+          - [below, מתחת]
+          - [next to, ליד]
+          - [near, קרוב ל]
+          - [far from, רחוק מ]
+      - id: in-on
+        type: fillBlank
+        prompt: Complete with *in* or *on*.
+        text: The rabbit is ___ its cage (inside it). The sample is ___ the table (on its surface).
+        blanks: [[in], [on]]
+        wordBank: [in, on]
+      - id: near-far
+        type: trueFalse
+        prompt: '*Near* means very far away.'
+        answer: false
+        feedback:
+          correct: 'Right! *Near* means close. *Far from* means far away.'
+          incorrect: '*Near* means close, but not right beside. *Far from* means far away.'
+      - id: above-higher
+        type: trueFalse
+        prompt: '*Above* means higher than another thing.'
+        answer: true
+        feedback:
+          correct: 'Right! *The birdcages are above the animal pens.*'
+          incorrect: '*Above* means higher than another thing. *Below* means lower.'
+      - id: nose-mouth
+        type: multipleChoice
+        prompt: Your nose is ___ your mouth.
+        options:
+          - { text: above, correct: true }
+          - {
+              text: below,
+              feedback: 'Your nose is higher than your mouth, so it is *above* your mouth.',
+            }
+          - { text: far from, feedback: 'Your nose is close to your mouth, and higher: *above*.' }
+      - id: thailand
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: Thailand is far from Israel.

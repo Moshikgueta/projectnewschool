@@ -1,0 +1,563 @@
+# Cycle "Arts and crafts", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: arts-and-crafts
+title: Arts and crafts
+goal: Talk about art, using describing sentences and actions in the present.
+position: 13
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Actions in the present" and "Describing sentences")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Images are missing from the notebook export: the shapes and colors for the
+    warm-up questions and Activity 1's example drawing. The teacher notes say to
+    prepare them; they need to be added to the course media.
+  - >-
+    Activity 2 is called "The messy room", but it is a guessing game about art
+    objects. The title is kept; please decide whether to rename it (for example,
+    "Guess the art object").
+  - >-
+    Activity 4: "I don't like the picture where the people sit in the diner because
+    it's cute" (a reason for liking, not for not liking) → "…because it is dark."
+    Please confirm.
+  - >-
+    Activity 1: the place words "up / bottom" are written as "top / bottom" in the
+    sentence frames; "Draw a square on the bottom of the page" → "at the bottom of the
+    page"; "Draw a small square in the big square" → "inside the big square". The
+    vocabulary keeps "up – למעלה".
+  - >-
+    Small corrections: warm-up "making ceramics" → "make ceramics", "graphic design"
+    → "do graphic design"; "What is the color of this ___?" → "What color is this
+    ___?"; "Lesson twist" (a note for the teacher) was moved to the teacher note.
+  - >-
+    Summary, actions rule 1: the notebook says "I / you / they"; *we* was added.
+    Describing rule 1 ("They give information about the state or qualities of
+    something, not actions") was simplified for A1.
+  - >-
+    The Quizlet link's tracking parameter (funnelUUID) was removed. The two Google
+    Docs links ("Bank of pictures") are kept as activity resources; the "?tab=t.0"
+    and "/u/0" parts were removed. Please check they are shared with students.
+  - >-
+    Vocabulary: "dark – חשוך" → "כהה / חשוך" (in art, *dark* colors are כהה); terms
+    start with a capital letter as in the other cycles.
+  - >-
+    The notebook gives no activity times for this cycle (only Activity 1's 1 + 2
+    minutes per turn, kept in the steps), so none are recorded.
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: arts-and-crafts-class
+    title: 'Class: Arts and crafts'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Arts and crafts
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Describing sentences
+            description: Describe things with *am, is, are* (*The painting is colorful.*)
+          - name: Actions in the present
+            description: Sentences with actions in the present (*She paints.*)
+      - id: quizlet
+        type: externalLink
+        label: Arts and crafts on Quizlet
+        url: https://quizlet.com/il/858627231/basic-english-arts-crafts-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I like to ___ and I'm good / bad at it.
+        example: I am Dana. I like to sing and I'm good at it.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What do you like to do with your hands?
+            frame: I like to ___ with my hands. (do graphic design, garden, make ceramics, build, fix household appliances, make sculptures, paint, draw, play an instrument)
+          - question: What is the shape of this object?
+            frame: This is a ___. (line, square, rectangle, circle, triangle)
+          - question: What color is this ___?
+            frame: This is ___.
+          - question: Do you like to look at art or listen to art? Why?
+            frame: I like to ___ because ___.
+          - question: Do you think art is important? Why?
+            frame: Yes, art is important because ___. / No, art is not important because ___.
+          - question: Who is your favorite artist? Why?
+            frame: My favorite artist is ___ because ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Draw my picture!'
+        skills: [Actions in the present]
+        steps:
+          - Work in pairs (Student A and Student B).
+          - Student A has **1 minute** to draw a simple picture with lines, squares, circles and triangles only.
+          - Student A has **2 minutes** to tell Student B how to draw the same picture. Use the sentences below.
+          - Show the group the two drawings. The pair with the most similar drawings wins.
+          - Switch roles and play again.
+        example: |-
+          *Draw a square at the bottom of the page.*
+          *Draw a triangle above the square.*
+          *Draw a small square inside the big square.*
+        wordBank:
+          [
+            line,
+            square,
+            circle,
+            triangle,
+            top,
+            bottom,
+            above,
+            below,
+            on the left,
+            on the right,
+            inside,
+          ]
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Tell your partner what to draw
+        items:
+          - question: Draw a ___ at the top / bottom / in the middle, on the left / right of the page.
+          - question: Draw a ___ above / below / on the left of / on the right of / inside the ___.
+          - question: Draw a ___ above / below / on the left of / on the right of / inside the ___.
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: The messy room'
+        skills: [Describing sentences]
+        steps:
+          - Secretly choose an **art object** (for example, a paintbrush or a guitar).
+          - The other students ask **yes / no questions** with adjectives to guess the object.
+        example: |-
+          *Is it big? Is it small? Is it long? Is it colorful?*
+          *Is it modern? Is it old? Is it heavy? Is it bright?*
+          *Do you use it to draw? Do you listen to it?*
+        wordBank:
+          [
+            paintbrush,
+            canvas,
+            guitar,
+            microphone,
+            pencil,
+            easel,
+            statue,
+            notebook,
+            camera,
+            drum,
+            piano,
+            mask,
+            ballet shoes,
+          ]
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Describe the pictures with a friend'
+        skills: [Describing sentences]
+        steps:
+          - Work in pairs. Open the bank of pictures (6 famous paintings).
+          - Choose at least **one adjective** for each painting. You can use an adjective more than once.
+          - Say or write **why** you chose it. Use the sentences below.
+        wordBank: [beautiful, colorful, interesting, simple, modern, old, big, small, dark, bright]
+        resource:
+          label: Bank of pictures
+          url: https://docs.google.com/document/d/1h7Ed4JkQXAAB4xyA79eT4xcNApD99Al6mEhBb-VyC6w/edit
+      - id: act3-sentences
+        type: discussionQuestions
+        items:
+          - question: Picture number ___ is ___ because ___.
+          - question: The ___ in the picture is ___ because ___.
+          - question: The ___ in the picture are ___ because ___.
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: I like the one that…'
+        skills: [Actions in the present]
+        steps:
+          - Work in pairs. Open the bank of pictures (4–6 pictures).
+          - Choose a picture. Say if you **like** or **don't like** it, and say **why**.
+          - Your partner does the same with the same picture or another one. Continue until you talk about all the pictures.
+          - Choose one or two sentences to share with the class.
+        example: |-
+          *I like the picture where the girls dance because it's funny and pretty.*
+          *I don't like the picture where the people sit in the diner because it is dark.*
+        resource:
+          label: Bank of pictures
+          url: https://docs.google.com/document/d/1_rQhfxzTPC2Eq5nNxDtSR1fI1x5iTrNf9ZSKE4xXAcI/edit
+      - id: act4-verbs
+        type: table
+        caption: What do the people in the paintings do?
+        header: [Painting, Sentences]
+        rows:
+          - [
+              Ballet Rehearsal (Edgar Degas),
+              The ballerinas practice ballet. They dance in the studio.,
+            ]
+          - [
+              The Harvesters (Pieter Bruegel the Elder),
+              The farmers work in the field. They cut wheat.,
+            ]
+          - [The Card Players (Paul Cézanne), The men play cards. They sit at the table.]
+          - [Nighthawks (Edward Hopper), The people sit in the diner. A man drinks coffee.]
+      - id: act4-sentences
+        type: discussionQuestions
+        items:
+          - question: Which picture do you like? Why?
+            frame: I like the picture where ___ because ___.
+          - question: Which picture don't you like? Why?
+            frame: I don't like the picture where ___ because ___.
+          - question: Share with the class.
+            frame: We like / don't like the picture with the ___ because ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Describing sentences** (Activities 2 and 3) and
+          **Actions in the present** (Activities 1 and 4). The warm-up questions practise
+          both.
+      - id: n-intro
+        anchor: intro
+        text: >-
+          Lesson twist: each student also says if they are good or bad at the activity.
+          Give your own example first, then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Ask each student at least two questions. For the shape question, show shapes
+          (line, square, rectangle, circle, triangle); for the color question, show an
+          object of a specific color from your space. The pictures are not in the
+          exported notebook.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Before the activity, review: line, square, circle, triangle, top, bottom, above,
+          below, on the left, on the right, inside. Draw an example on screen (the
+          notebook's example drawing is a house: a square with a triangle above it and a
+          small square inside).
+      - id: n-act2
+        anchor: act2
+        text: Students can play as a whole group or in pairs or small groups.
+      - id: n-act4
+        anchor: act4
+        text: The table of paintings gives verbs if students need them; the verbs are also on Quizlet.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: arts-and-crafts-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-actions
+        type: ruleSummary
+        skill: Actions in the present
+        rules:
+          - text: '**Who does the action + the verb.** With *I, you, we, they*, the verb does not change.'
+            examples: [I paint., You dance., They sing.]
+          - text: With *he* and *she*, add **s** to the end of the verb.
+            examples:
+              - He / She paint**s**.
+              - He / She dance**s**.
+          - text: Do **not** write *am, is, are* when you have a verb. Write the person and the verb.
+            examples: ['Right: *I eat pizza at home.*', 'Wrong: *I am eat pizza at home.*']
+      - id: rules-describing
+        type: ruleSummary
+        skill: Describing sentences
+        rules:
+          - text: We use these sentences to **describe** things, people, places or situations. They have no action.
+          - text: 'Use the verb *to be* (*am, is, are*): **person or thing + am / is / are + adjective or noun**.'
+            examples:
+              - She is happy.
+              - The cat is black.
+              - The paintings are interesting.
+          - text: 'For a negative sentence, add **not** after *am, is, are*.'
+            examples:
+              - The sky is not blue.
+              - She is not tired.
+      - id: be-table
+        type: table
+        caption: The verb to be
+        header: [Person, To be, Example]
+        rows:
+          - [I, am, I am happy.]
+          - ['he, she, it', is, The cat is black.]
+          - ['you, we, they', are, The paintings are interesting.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: arts-and-crafts-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: >-
+          Open the chat with Mori, copy this message and send it. Mori will ask you
+          questions like *What kind of arts or crafts do you like? What do you make when
+          you do crafts? Do you use scissors and glue? Describe your favorite art
+          project.* Answer every question in the present simple, and try to describe your
+          actions and objects.
+      - id: mori-main
+        type: aiTutorPrompt
+        title: Arts and crafts
+        message: >-
+          Hi Mori! I want to have small talk conversations. Can you ask me small talk
+          questions about Arts and Crafts using the skills describing sentences and
+          actions in present simple? Please correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-guess-craft
+        type: aiTutorPrompt
+        title: Guess the craft
+        intro: >-
+          Give Mori hints with actions in the present simple and describing sentences.
+          For example: *I cut colorful paper. I use glue to stick pieces together. It is a
+          decoration.* When Mori guesses, send: **Now it's your turn! Think about an art or
+          craft project and I will guess what it is.**
+        message: >-
+          Hey Mori! Let's play a game. I think about an art or craft project and you need
+          to guess what it is.
+      - id: mori-what-doing
+        type: aiTutorPrompt
+        title: What am I doing?
+        intro: >-
+          After this message, write a sentence like: *I cut paper with scissors
+          carefully.* *I paint pictures with bright colors.* *I fold the paper to make
+          shapes.* Mori guesses the action (*Are you cutting paper? Are you painting?*).
+          Then send: **Now it's your turn! Describe something you do in arts and crafts,
+          and I will guess what it is.**
+        message: >-
+          Hey Mori! Let's play a game. I describe something I usually do in arts and
+          crafts. You need to guess what I am doing. I will use present simple and
+          describing sentences.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: arts-and-crafts-practice
+    book: workbook
+    title: 'Practice: Arts and crafts'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-describing
+        type: activity
+        activity: arts-and-crafts-describing
+      - id: ex-actions
+        type: activity
+        activity: arts-and-crafts-actions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: arts-and-crafts-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Arts and crafts words
+        glossLang: he
+        link: https://quizlet.com/il/858627231/basic-english-arts-crafts-flash-cards/
+        items: &arts-and-crafts-words
+          - { term: To dance, gloss: לרקוד }
+          - { term: To play, gloss: לשחק }
+          - { term: To sit, gloss: לשבת }
+          - { term: To drink, gloss: לשתות }
+          - { term: To work, gloss: לעבוד }
+          - { term: Square, gloss: ריבוע }
+          - { term: Circle, gloss: מעגל }
+          - { term: Triangle, gloss: משולש }
+          - { term: Line, gloss: קו }
+          - { term: Above, gloss: מעל }
+          - { term: Below, gloss: מתחת }
+          - { term: Inside, gloss: בתוך }
+          - { term: Left, gloss: שמאל }
+          - { term: Right, gloss: ימין }
+          - { term: Bottom, gloss: תחתית }
+          - { term: Up, gloss: למעלה }
+          - { term: Down, gloss: למטה }
+          - { term: Colorful, gloss: צבעוני }
+          - { term: Interesting, gloss: מעניין }
+          - { term: Simple, gloss: פשוט }
+          - { term: Beautiful, gloss: יפה }
+          - { term: Modern, gloss: מודרני }
+          - { term: Old, gloss: ישן }
+          - { term: Big, gloss: גדול }
+          - { term: Small, gloss: קטן }
+          - { term: Dark, gloss: כהה / חשוך }
+          - { term: Bright, gloss: בהיר }
+          - { term: Picture, gloss: תמונה }
+          - { term: Painting, gloss: ציור }
+          - { term: Artist, gloss: אמן }
+
+vocabulary:
+  - slug: arts-and-crafts
+    title: Arts and crafts
+    items: *arts-and-crafts-words
+
+activities:
+  - slug: arts-and-crafts-describing
+    title: 'Describing sentences: am, is, are'
+    minutes: 8
+    items:
+      - id: paintings-are
+        type: multipleChoice
+        prompt: The paintings ___ interesting.
+        options:
+          - { text: are, correct: true }
+          - {
+              text: is,
+              feedback: '*The paintings* is more than one (*they*). With *they*, use *are*.',
+            }
+          - { text: am, feedback: '*Am* is only for *I*. *The paintings* (they) → *are*.' }
+      - id: cat-is
+        type: multipleChoice
+        prompt: The cat ___ black.
+        options:
+          - { text: is, correct: true }
+          - { text: are, feedback: '*The cat* is one animal (*it*). With *he, she, it*, use *is*.' }
+          - { text: am, feedback: '*Am* is only for *I*. *The cat* (it) → *is*.' }
+      - id: i-you
+        type: fillBlank
+        prompt: Complete with *am*, *is* or *are*.
+        text: I ___ happy. You ___ tired.
+        blanks: [[am], [are]]
+        wordBank: [am, is, are]
+      - id: not-tired
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: She is not tired., correct: true }
+          - {
+              text: She not is tired.,
+              feedback: 'Add *not* **after** *am, is, are*: *She is not tired.*',
+            }
+          - {
+              text: She not tired.,
+              feedback: 'A describing sentence needs *am, is, are*: *She is not tired.*',
+            }
+      - id: no-action
+        type: trueFalse
+        prompt: 'A describing sentence uses *am, is, are*: *The sky is blue.*'
+        answer: true
+        feedback:
+          correct: 'Right! Person or thing + *am / is / are* + adjective: *The sky is blue.*'
+          incorrect: 'Describing sentences use the verb *to be* (*am, is, are*): *The sky is blue.*'
+      - id: picture-not-old
+        type: fillBlank
+        prompt: Make the sentence negative. *The picture is old.* → The picture ___ old.
+        text: The picture ___ old.
+        blanks: [[is not, isn't]]
+      - id: adjectives
+        type: matching
+        prompt: Match each adjective with its translation.
+        pairs:
+          - [colorful, צבעוני]
+          - [interesting, מעניין]
+          - [simple, פשוט]
+          - [modern, מודרני]
+          - [bright, בהיר]
+      - id: painting-colorful
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: The painting is colorful.
+
+  - slug: arts-and-crafts-actions
+    title: Actions in the present
+    minutes: 8
+    items:
+      - id: she-paints
+        type: multipleChoice
+        prompt: She ___ pictures.
+        options:
+          - { text: paints, correct: true }
+          - { text: paint, feedback: 'With *he* and *she*, add **s** to the verb: *She paints.*' }
+          - {
+              text: is paint,
+              feedback: 'Do not write *am, is, are* when you have a verb: *She paints.*',
+            }
+      - id: pizza
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: I eat pizza at home., correct: true }
+          - {
+              text: I am eat pizza at home.,
+              feedback: 'Do not write *am, is, are* when you have a verb. Write the person and the verb: *I eat pizza at home.*',
+            }
+          - {
+              text: I eats pizza at home.,
+              feedback: 'With *I*, the verb does not change: *I eat pizza at home.*',
+            }
+      - id: farmers-man
+        type: fillBlank
+        prompt: Write the verb in the present.
+        text: The farmers ___ (work) in the field. A man ___ (drink) coffee.
+        blanks: [[work], [drinks]]
+      - id: he-she-forms
+        type: matching
+        prompt: Match each verb with its form for *he / she*.
+        pairs:
+          - [paint, paints]
+          - [sing, sings]
+          - [sit, sits]
+          - [play, plays]
+          - [work, works]
+      - id: they-sing
+        type: trueFalse
+        prompt: '*They sings.* is a correct sentence.'
+        answer: false
+        feedback:
+          correct: 'Right! With *they*, the verb does not change: *They sing.*'
+          incorrect: 'Add *s* only with *he* and *she*. With *they*, the verb does not change: *They sing.*'
+      - id: card-players
+        type: fillBlank
+        prompt: Write the verb in the present.
+        text: The men ___ (play) cards. They ___ (sit) at the table.
+        blanks: [[play], [sit]]
+      - id: he-plays
+        type: multipleChoice
+        prompt: He ___ the guitar.
+        options:
+          - { text: plays, correct: true }
+          - { text: play, feedback: 'With *he* and *she*, add **s** to the verb: *He plays.*' }
+          - {
+              text: is play,
+              feedback: 'Do not write *am, is, are* when you have a verb: *He plays the guitar.*',
+            }
+      - id: ballerinas
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: The ballerinas dance in the studio.
