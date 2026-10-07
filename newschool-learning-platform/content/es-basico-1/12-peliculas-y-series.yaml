@@ -1,0 +1,544 @@
+# Cycle "Películas y series", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: peliculas-y-series
+title: Películas y series
+goal: Hablar de películas y series formando preguntas y usando preposiciones.
+position: 12
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Formar preguntas" and "Preposiciones") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The notebook's cycle heading is "TV y Películas"; the cycle uses the title
+    "Películas y series" from the cycle list.
+  - >-
+    Introduction and warm-up mixed "mirar" and "ver" ("Me gusta mirar ___" but the
+    example says "Me gusta ver…"); all frames now use "ver".
+  - >-
+    Activity 1 (Jeopardy), sentence 3 "Le gusta esta película porque es divertida"
+    did not match its teacher answer "¿Por qué te gusta esta película?"; changed to
+    "Me gusta esta película porque es divertida".
+  - >-
+    The Mori opening message said "Quiero practicar inglés"; changed to "español".
+  - >-
+    Activity 2: "voy al cine" is now explained as *a + el = al* in the prepositions
+    table. The notebook uses *en la mañana / en la noche* for parts of the day
+    (common in Latin America), while other activities use *por la noche*; both were
+    kept as written, and the exercises avoid parts of the day. Please confirm.
+  - >-
+    Activity 3 said "una persona famosa que hable el idioma que estamos
+    practicando"; now "que hable español".
+  - >-
+    The summary heading "Ejercicios" (it lists example questions) is now
+    "Ejemplos".
+  - >-
+    The correct questions for Activity 1 are teacher-only in the notebook; they are
+    in the teacher note, not in the student view.
+  - >-
+    Vocabulary: the vowel points (niqqud) were removed from "שַׂחְקָן" and
+    "שַׂחְקָנִית" to match the other glosses. Please confirm.
+  - >-
+    The notebook gives no times for this cycle's warm-up, activities or summary, so
+    none are recorded (the introduction note keeps the usual 10 minutes).
+  - >-
+    The "Respuesta del estudiante 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: peliculas-y-series-clase
+    title: 'Clase: Películas y series'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Películas y series
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Formar preguntas
+            description: 'Preguntas abiertas y cerradas con *qué, cuál, quién, dónde, cuándo, por qué*'
+          - name: Preposiciones
+            description: '*en, a, con, sobre* para hablar de tiempo y lugar (en enero, a las 8, en el cine)'
+      - id: quizlet
+        type: externalLink
+        label: Películas y series en Quizlet
+        url: https://quizlet.com/il/854815389/basic-spanish-moviestv-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Me gusta ver ___ (películas / series / programas de televisión).
+        example: Soy Dana. Me gusta ver programas de televisión.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Qué películas te gustan? ¿Por qué?
+            frame: Me gustan las películas de ___ porque ___.
+          - question: ¿Cuál es tu película favorita?
+            frame: Mi película favorita es ___.
+          - question: ¿Dónde te gusta ver películas?
+            frame: Me gusta ver películas en ___ (el cine / casa / mi sofá / la tele).
+          - question: ¿Con quién te gusta ver películas o series?
+            frame: Me gusta ver películas con ___.
+          - question: ¿Qué tipo de películas te gustan? (acción, comedia, drama, terror, animación…)
+            frame: Me gustan las películas de ___.
+          - question: ¿Qué te gusta más, las películas o las series?
+            frame: Me gustan más las películas / las series, porque ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: ¿Cuál es la pregunta?'
+        skills: [Formar preguntas]
+        steps:
+          - Lee la respuesta.
+          - Escribe o di la pregunta para esa respuesta. Usa *qué, cuál, quién, dónde, cuándo, por qué*.
+        example: '*Mi película favorita es Coco.* → *¿Cuál es tu película favorita?*'
+      - id: act1-answers
+        type: discussionQuestions
+        title: Respuestas
+        items:
+          - question: Me gusta la película *Coco*.
+            frame: ¿___?
+          - question: Mi serie favorita es *La casa de papel*.
+            frame: ¿___?
+          - question: Me gusta esta película porque es divertida.
+            frame: ¿___?
+          - question: Veo películas en el cine.
+            frame: ¿___?
+          - question: Me gusta ver televisión por la noche.
+            frame: ¿___?
+          - question: Mi actriz favorita es Salma Hayek.
+            frame: ¿___?
+          - question: Me gustan las películas de acción.
+            frame: ¿___?
+          - question: Prefiero las comedias románticas.
+            frame: ¿___?
+          - question: La película dura dos horas.
+            frame: ¿___?
+          - question: El mejor actor es Antonio Banderas.
+            frame: ¿___?
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Entrevista sobre tu película favorita'
+        skills: [Preposiciones]
+        steps:
+          - Escucha la explicación de tu profesor sobre *en* y *a* (mira la tabla).
+          - Trabajen en parejas.
+          - Entrevista a tu pareja sobre su película favorita con las preguntas de abajo.
+      - id: act2-table
+        type: table
+        caption: '*En* y *a*: tiempo y lugar'
+        header: [Preposición, Uso, Ejemplos]
+        rows:
+          - [
+              En (tiempo),
+              'Meses, años, estaciones, partes del día',
+              'en enero, en 2023, en verano, en la mañana, en la noche',
+            ]
+          - [A (tiempo), Horas, 'a las 5, a las 10 de la noche']
+          - [En (lugar), Lugares y espacios, 'en la ciudad, en el cine, en la sala de estar']
+          - [A (lugar), Dirección o destino (a + el = al), 'voy al cine, voy a la casa de mi amigo']
+      - id: act2-interview
+        type: discussionQuestions
+        title: Entrevista
+        items:
+          - question: ¿En qué año pasa la película?
+            frame: La película pasa en ___ (en 2020, en 1995…).
+          - question: ¿A qué hora ves la película?
+            frame: Veo la película a las ___ (a las 8, a las 10…).
+          - question: ¿Dónde pasa la película?
+            frame: La película pasa en ___ (en la ciudad, en el campo…).
+          - question: ¿En qué ciudad o país pasa la película?
+            frame: La película pasa en ___ (en México, en España…).
+          - question: ¿En qué mes pasa la película?
+            frame: La película pasa en ___ (en enero, en julio…).
+          - question: ¿Qué hay en la casa del personaje principal?
+            frame: En la casa del personaje principal hay ___.
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: 21 preguntas'
+        skills: [Formar preguntas]
+        steps:
+          - Un estudiante piensa en una persona famosa que habla español. No dice el nombre.
+          - El grupo hace preguntas cerradas, que solo se responden con *sí* o *no*.
+          - ¡Adivinen quién es la persona!
+        example: |-
+          *¿Eres un hombre?*
+          *¿Eres actor / actriz / director?*
+          *¿Eres de Israel / Estados Unidos / España?*
+          *¿Vives en la ciudad?*
+          *¿Eres cantante?*
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Tabú de películas y series'
+        skills: [Preposiciones]
+        steps:
+          - Tu profesor te da el nombre de una película o serie. ¡No digas el título!
+          - Tienes 1 minuto para describirla con frases simples y al menos 2 preposiciones (*en, con, sobre, a*).
+          - Los demás intentan adivinar. Si aciertan, ganas 1 punto. ¡Punto extra si usas bien las preposiciones!
+        example: '*Es una película. Es sobre un pez pequeño. Vive en el mar con su padre. Va a muchos lugares. Es divertida. ¿Puedes adivinar?* → **Buscando a Nemo**'
+      - id: act4-template
+        type: sentenceFrame
+        prompt: Plantilla para describir
+        frame: |-
+          Es una película / serie.
+          Es sobre ___.
+          Vive en ___.
+          Está con ___.
+          Va a ___.
+          Es ___ (divertida, triste…).
+          ¿Puedes adivinar?
+        answerable: false
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Formar preguntas** (preguntas de
+          calentamiento, Actividades 1 y 3) y **Preposiciones** (Actividades 2 y 4).
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Da tu propio ejemplo primero ("Me gusta ver programas de televisión") y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Preguntas correctas (no compartir con los estudiantes): 1. ¿Cuál es tu película
+          favorita? / ¿Qué películas te gustan? 2. ¿Cuál es tu serie favorita? / ¿Qué
+          series te gustan? 3. ¿Por qué te gusta esta película? 4. ¿Dónde te gusta ver
+          películas? 5. ¿Cuándo te gusta ver televisión? 6. ¿Quién es tu actriz
+          favorita? 7. ¿Qué tipo de películas te gustan? 8. ¿Qué tipo de películas
+          prefieres? 9. ¿Cuánto tiempo dura la película? 10. ¿Quién es el mejor actor
+          para ti?
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Explica primero cuándo se usan *en* y *a* para el tiempo y el lugar, con los
+          ejemplos de la tabla. Después divide al grupo en parejas para la entrevista.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Prepara una lista de películas y series conocidas y da un título a cada
+          estudiante en privado (por ejemplo, en un mensaje del chat).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: peliculas-y-series-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-questions
+        type: ruleSummary
+        skill: Formar preguntas
+        rules:
+          - text: Practicamos preguntas abiertas y cerradas (de *sí* o *no*).
+            examples: [¿Vives en la ciudad?, ¿Eres actor?]
+          - text: 'Usamos palabras interrogativas: *qué, cuál, quién, dónde, cuándo, por qué*.'
+            examples:
+              [¿Cuál es tu película favorita?, ¿Dónde pasa la película?, ¿A qué hora ves la serie?]
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: Preposiciones de lugar y tiempo
+        rules:
+          - text: 'Tiempo: *en* (meses, años, estaciones, partes del día) y *a* (horas).'
+            examples: [en enero, en 2023, a las 5]
+          - text: 'Lugar: *en* (lugares, ciudades, países), *a* (destino), *con* (compañía), *sobre* (tema).'
+            examples:
+              [
+                Vive en una ciudad.,
+                Va a la escuela.,
+                Está con su familia.,
+                Es una película sobre un pez.,
+              ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: peliculas-y-series-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas y corregirá tus respuestas.
+      - id: mori-peliculas
+        type: aiTutorPrompt
+        title: Televisión y películas
+        message: >-
+          ¡Hola, Mori! Quiero practicar español. ¿Puedes hacerme preguntas sobre
+          televisión y películas? Usa solo el presente simple y corrige mis errores, por
+          favor.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo, pero con la oración en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Práctica adicional
+      - id: mori-escena
+        type: aiTutorPrompt
+        title: ¿Dónde está la escena?
+        intro: Envía este mensaje a Mori.
+        message: >-
+          ¡Hola, Mori! Hagamos una actividad. Voy a describir una escena de una película
+          o serie usando preposiciones. Tú tienes que adivinar dónde ocurre la escena.
+      - id: mori-escena-next
+        type: text
+        text: |-
+          **Ejemplo:** *Hay una mesa en el centro de la sala. Los personajes están sentados en las sillas. Un hombre se esconde debajo de la mesa.* (Mori adivina: *¿En un restaurante?*)
+          **Luego escribe:** «Ahora te toca. Describe una escena y yo adivinaré dónde está.»
+      - id: mori-preguntas
+        type: aiTutorPrompt
+        title: Creador de preguntas de películas
+        intro: Envía este mensaje a Mori.
+        message: >-
+          ¡Hola, Mori! Juguemos a un juego. Te diré una frase sobre una película o una
+          serie, y tú tienes que crear una pregunta usando una palabra interrogativa
+          (quién, qué, dónde, cuándo).
+      - id: mori-preguntas-next
+        type: text
+        text: |-
+          **Ejemplo:** *La niña corre detrás del autobús.* (Mori escribe la pregunta: *¿Quién corre detrás del autobús?*)
+          **Luego escribe:** «Ahora te toca. Escribe una oración y yo crearé una pregunta.»
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: peliculas-y-series-practica
+    book: workbook
+    title: 'Práctica: Películas y series'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-preguntas
+        type: activity
+        activity: peliculas-y-series-preguntas
+      - id: ex-preposiciones
+        type: activity
+        activity: peliculas-y-series-preposiciones
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: peliculas-y-series-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de películas y series
+        glossLang: he
+        link: https://quizlet.com/il/854815389/basic-spanish-moviestv-flash-cards/
+        items: &peliculas-y-series-words
+          - { term: Película, gloss: סרט }
+          - { term: Serie (de televisión), gloss: סדרת טלוויזיה }
+          - { term: Programa, gloss: תוכנית }
+          - { term: Episodio, gloss: פרק }
+          - { term: Pantalla, gloss: מסך }
+          - { term: Actor, gloss: שחקן }
+          - { term: Actriz, gloss: שחקנית }
+          - { term: Personaje, gloss: דמות }
+          - { term: Escena, gloss: סצנה }
+          - { term: Ciudad, gloss: עיר }
+          - { term: País, gloss: מדינה }
+          - { term: Casa, gloss: בית }
+          - { term: Escuela, gloss: בית ספר }
+          - { term: Playa, gloss: חוף ים }
+          - { term: Parque, gloss: פארק }
+          - { term: Cine, gloss: קולנוע }
+          - { term: Noche, gloss: לילה }
+          - { term: Tarde, gloss: ערב / אחר הצהריים }
+          - { term: Mañana, gloss: בוקר }
+          - { term: Invierno, gloss: חורף }
+          - { term: Verano, gloss: קיץ }
+          - { term: Ver, gloss: לראות }
+          - { term: Vivir, gloss: לגור / לחיות }
+          - { term: Estar, gloss: להיות }
+          - { term: Ir, gloss: ללכת / לנסוע }
+          - { term: Trabajar, gloss: לעבוד }
+          - { term: Estudiar, gloss: ללמוד }
+          - { term: Gustar, gloss: לאהוב / למצוא חן }
+          - { term: Preferir, gloss: להעדיף }
+          - { term: Divertido/a, gloss: מצחיק / מהנה }
+          - { term: Interesante, gloss: מעניין }
+          - { term: Emocionante, gloss: מרגש }
+          - { term: Triste, gloss: עצוב }
+          - { term: Bonito/a, gloss: יפה }
+          - { term: En, gloss: ב... }
+          - { term: A, gloss: אל / ל... }
+          - { term: Con, gloss: עם }
+          - { term: Sobre, gloss: על }
+
+vocabulary:
+  - slug: peliculas-y-series
+    title: Películas y series
+    items: *peliculas-y-series-words
+
+activities:
+  - slug: peliculas-y-series-preguntas
+    title: 'Formar preguntas: qué, cuál, quién, dónde, cuándo, por qué'
+    minutes: 8
+    items:
+      - id: donde-ves
+        type: multipleChoice
+        prompt: 'Respuesta: *Veo películas en el cine.* ¿Cuál es la pregunta?'
+        options:
+          - { text: ¿Dónde ves películas?, correct: true }
+          - {
+              text: ¿Cuándo ves películas?,
+              feedback: '*Cuándo* pregunta por el tiempo. *En el cine* es un lugar: usa *dónde*.',
+            }
+          - {
+              text: ¿Quién ve películas?,
+              feedback: '*Quién* pregunta por una persona. *En el cine* es un lugar: usa *dónde*.',
+            }
+      - id: quien-actriz
+        type: multipleChoice
+        prompt: 'Respuesta: *Mi actriz favorita es Salma Hayek.* ¿Cuál es la pregunta?'
+        options:
+          - { text: ¿Quién es tu actriz favorita?, correct: true }
+          - {
+              text: ¿Dónde es tu actriz favorita?,
+              feedback: '*Dónde* pregunta por un lugar. Salma Hayek es una persona: usa *quién*.',
+            }
+          - {
+              text: ¿Por qué es tu actriz favorita?,
+              feedback: '*Por qué* pregunta por una razón. La respuesta es una persona: usa *quién*.',
+            }
+      - id: pregunta-cerrada
+        type: multipleChoice
+        prompt: ¿Qué pregunta es cerrada (se responde con *sí* o *no*)?
+        options:
+          - { text: ¿Eres actor?, correct: true }
+          - {
+              text: ¿Dónde vives?,
+              feedback: 'Es una pregunta abierta: la respuesta es un lugar, no *sí* o *no*.',
+            }
+          - {
+              text: ¿Qué películas te gustan?,
+              feedback: 'Es una pregunta abierta: la respuesta es un tipo de película, no *sí* o *no*.',
+            }
+      - id: cerrada-ciudad
+        type: trueFalse
+        prompt: '*¿Vives en la ciudad?* es una pregunta cerrada: se responde con *sí* o *no*.'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *Sí, vivo en la ciudad.* / *No, no vivo en la ciudad.*
+          incorrect: 'La respuesta puede ser solo *sí* o *no*: es una pregunta cerrada.'
+      - id: por-que
+        type: fillBlank
+        prompt: Completa la pregunta con una palabra interrogativa.
+        text: ¿___ te gusta esta película? — Porque es divertida.
+        blanks: [[Por qué]]
+      - id: cuando
+        type: fillBlank
+        prompt: Completa la pregunta con una palabra interrogativa.
+        text: ¿___ ves la serie? — Por la noche.
+        blanks: [[Cuándo]]
+      - id: interrogativas
+        type: matching
+        prompt: Une cada palabra con su traducción.
+        pairs:
+          - [qué, מה]
+          - [quién, מי]
+          - [dónde, איפה]
+          - [cuándo, מתי]
+          - [por qué, למה]
+      - id: ordena-favorita
+        type: reorderSentence
+        prompt: Ordena las palabras para formar una pregunta.
+        sentence: ¿Cuál es tu película favorita?
+
+  - slug: peliculas-y-series-preposiciones
+    title: 'Preposiciones: en, a, con, sobre'
+    minutes: 8
+    items:
+      - id: a-las-ocho
+        type: multipleChoice
+        prompt: Veo la película ___ las ocho.
+        options:
+          - { text: a, correct: true }
+          - { text: en, feedback: 'Con las horas usamos *a*: *a las ocho*.' }
+          - {
+              text: con,
+              feedback: '*Con* es para la compañía (con quién). Con las horas usamos *a*.',
+            }
+      - id: en-1995
+        type: multipleChoice
+        prompt: La película pasa ___ 1995.
+        options:
+          - { text: en, correct: true }
+          - { text: a, feedback: '*A* es para las horas. Con los años usamos *en*: *en 1995*.' }
+          - { text: sobre, feedback: '*Sobre* es para el tema. Con los años usamos *en*.' }
+      - id: sobre-pez
+        type: multipleChoice
+        prompt: Es una película ___ un pez pequeño.
+        options:
+          - { text: sobre, correct: true }
+          - { text: con, feedback: '*Con* es para la compañía. Para el tema usamos *sobre*.' }
+          - {
+              text: a,
+              feedback: '*A* es para las horas o el destino. Para el tema usamos *sobre*.',
+            }
+      - id: en-las-5
+        type: trueFalse
+        prompt: 'Para decir una hora, decimos *en las 5*.'
+        answer: false
+        feedback:
+          correct: '¡Correcto! Con las horas usamos *a*: *a las 5*.'
+          incorrect: 'Con las horas usamos *a*: *a las 5*. *En* es para meses, años y lugares.'
+      - id: nemo
+        type: fillBlank
+        prompt: Completa con una preposición.
+        text: Nemo vive ___ el mar ___ su padre.
+        blanks: [[en, bajo], [con]]
+        wordBank: [en, a, con, sobre]
+      - id: casa-amigo
+        type: fillBlank
+        prompt: Completa con una preposición.
+        text: Voy ___ la casa de mi amigo.
+        blanks: [[a, hacia]]
+        wordBank: [en, a, con, sobre]
+      - id: usos
+        type: matching
+        prompt: Une cada preposición con su uso.
+        pairs:
+          - [en, 'meses, años y lugares']
+          - [a, horas y destino]
+          - [con, compañía (con quién)]
+          - [sobre, tema (de qué trata)]
+      - id: ordena-familia
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Está con su familia en la ciudad.
+        alsoAccept: [Está en la ciudad con su familia.]
