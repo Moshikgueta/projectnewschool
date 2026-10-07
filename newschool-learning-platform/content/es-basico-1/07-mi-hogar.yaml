@@ -1,0 +1,586 @@
+# Cycle "Mi hogar", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: mi-hogar
+title: Mi hogar
+goal: Describir tu casa con hay, ser y estar, y hablar de lo que haces en ella con verbos en presente.
+position: 7
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Describir: hay, ser y estar" and "Verbos en
+    presente") are NEW: the notebook has no self-study exercises. They were written
+    from the cycle's two skills, its summary rules and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    The notebook gives no "Practicado con" plan, no recommended combinations and no
+    activity times. The plan note maps the skills from the activity labels
+    (DESCRIBIR: Activities 1–3; ACCIONES: Activities 3–4). Please confirm.
+  - >-
+    The warm-up questions had no answer frames; frames were added. Frames were also
+    added for Activities 1, 2 and 4 so students can type their sentences.
+  - >-
+    Introduction: the frame says "Vivo cerca de ___" but the example said "Mi casa
+    está cerca de New School"; the example now follows the frame ("Vivo cerca de
+    New School").
+  - >-
+    Activity 1 word lists: "heladera" (Argentina) → "nevera / heladera";
+    "Verde" → "verde"; "pacífico" (calque of "peaceful") → "tranquilo". The
+    example asked "¿Hay estufa?" (not in the lists) → "¿Hay un horno?". A teacher
+    note reminds about adjective agreement (the lists give the masculine form).
+  - >-
+    Activity 2: "¿Cómo es tu salón?" → "¿Cómo es tu sala de estar?" (the word
+    taught in the vocabulary). The "CASAS" Google Doc is kept as the activity
+    resource.
+  - >-
+    Activity 3: "Banco de plazas" → "Banco de lugares". Example corrected for
+    agreement with "la sala de estar": "es muy moderno, bonito y cómodo… está
+    ordenado" → "Es muy moderna, bonita y cómoda… está ordenada"; capital letter
+    and commas fixed.
+  - >-
+    Summary skill 1: the skill name "Describir oraciones" → "Describir (hay, ser y
+    estar)". A short rule for "no hay" was added (the skill name includes "hay / no
+    hay" but the summary had no example); please confirm.
+  - >-
+    Summary skill 2: the conjugation examples are shown as a table (limpiar,
+    vender, vivir) plus a few example sentences; "vosotros" is not in the notebook
+    and was not added.
+  - >-
+    Mori: "Mori, pregúntame frases con verbos en presente" → "pídeme frases…".
+    Mori's sample questions "en la mañana / en la tarde / en la noche" → "por la
+    mañana / por la tarde / por la noche" (the form taught in the course). The
+    "Nota final" is the tips callout.
+  - >-
+    Vocabulary: "Casa – בית פיזי" → "בית (המבנה)"; "Hogar – בית רגשי" → "בית (במובן
+    הרגשי)"; "Baño – אמבטיה" → "חדר אמבטיה / שירותים" (אמבטיה is "bañera");
+    "Garaje – חנייה" → "מוסך / חניה". Please confirm.
+  - >-
+    Links: the Quizlet link lost its tracking parameter (funnelUUID).
+  - >-
+    The "Respuesta del estudiante" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: mi-hogar-clase
+    title: 'Clase: Mi hogar'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Mi hogar
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Describir (hay, ser y estar)
+            description: '*Hay una mesa. La cocina es grande. La cocina está limpia.*'
+          - name: Verbos en presente
+            description: 'Verbos en *-ar, -er, -ir*: *limpio, vendo, vivo*'
+      - id: quizlet
+        type: externalLink
+        label: Mi hogar en Quizlet
+        url: https://quizlet.com/il/1025125959/my-home-basic-spanish-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Vivo cerca de ___.
+        example: Soy Dana. Vivo cerca de New School.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Cuál es tu habitación favorita de la casa? ¿Por qué?
+            frame: Mi habitación favorita es ___ porque ___.
+          - question: ¿Qué haces en esa habitación?
+            frame: En ___ yo ___.
+          - question: ¿Cuántas habitaciones hay en tu casa?
+            frame: En mi casa hay ___ habitaciones.
+          - question: ¿Prefieres trabajar desde casa o en la oficina? ¿Por qué?
+            frame: Prefiero trabajar ___ porque ___.
+          - question: ¿Qué tienes en tu mesa de noche?
+            frame: En mi mesa de noche tengo ___.
+          - question: ¿Con quién vives?
+            frame: Vivo solo / sola. / Vivo con ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Adivina el lugar'
+        skills: ['Describir (hay, ser y estar)']
+        steps:
+          - Escucha a tu profesor. Repasa los lugares de la casa, sus cosas y sus adjetivos (tabla de abajo).
+          - Piensa en un lugar de la casa. ¡No lo digas!
+          - Tus compañeros te hacen preguntas y adivinan el lugar.
+        example: |-
+          —¿Hay un horno?
+          —¿Hay un lavabo?
+          —¿Está desordenado?
+          —Sí.
+          —¿Es la cocina?
+          —¡Sí!
+      - id: places-table
+        type: table
+        caption: Lugares de la casa
+        header: [Lugar, Cosas, Adjetivos]
+        rows:
+          - [
+              Cocina,
+              'nevera / heladera, horno, fregadero, mesa, sillas, alacena, platos, microondas, licuadora',
+              'cálido, limpio, luminoso, espacioso, ordenado, desordenado',
+            ]
+          - [
+              Sala de estar,
+              'sofá, sillón, mesa, televisión',
+              'acogedor, cómodo, relajante, elegante, moderno, espacioso, ordenado, tranquilo',
+            ]
+          - [
+              Dormitorio,
+              'cama, mesa de noche, lámpara, armario, espejo, manta, almohada',
+              'tranquilo, pequeño, grande, ordenado, desordenado, privado, cómodo',
+            ]
+          - [
+              Baño,
+              'inodoro, lavabo, ducha, bañera, espejo, toalla, jabón, cepillo de dientes',
+              'pequeño, limpio, frío, mojado, brillante, privado, fresco',
+            ]
+          - [
+              Comedor,
+              'mesa, sillas, platos, vasos, velas, servilletas, armario',
+              'elegante, formal, espacioso, luminoso, limpio, acogedor, organizado, amplio',
+            ]
+          - [
+              Jardín / Patio trasero,
+              'hierba, flores, árboles, valla, columpio, banco, barbacoa',
+              'verde, fresco, soleado, colorido, tranquilo, hermoso, espacioso, relajante',
+            ]
+      - id: act1-questions
+        type: discussionQuestions
+        title: Pregunta para adivinar
+        items:
+          - question: Pregunta por las cosas.
+            frame: ¿Hay un / una ___?
+          - question: Pregunta cómo es el lugar.
+            frame: ¿Este lugar es ___?
+          - question: Pregunta cómo está el lugar.
+            frame: ¿Este lugar está ___?
+          - question: ¡Adivina!
+            frame: ¿Es ___?
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Visito a un viejo amigo'
+        skills: ['Describir (hay, ser y estar)']
+        steps:
+          - Trabajen en parejas.
+          - Recibes la imagen de una casa muy original. ¡Desde ahora, es tu casa!
+          - Tu pareja te visita y te hace preguntas sobre tu casa. Responde. Después, cambien.
+        resource:
+          label: Casas
+          url: https://docs.google.com/document/d/1oJE_SEP70sB5-RxfDzYr1x137dnUMzAB0qogy7Vuv2w/edit?tab=t.0
+      - id: act2-questions
+        type: discussionQuestions
+        items:
+          - question: ¿Cómo es tu sala de estar?
+            frame: Mi sala de estar es ___ y ___.
+          - question: ¿Tu cocina es grande o pequeña? ¿Está ordenada o desordenada?
+            frame: Mi cocina es ___. Está ___.
+          - question: ¿Cómo es tu dormitorio? ¿Es cómodo?
+            frame: Mi dormitorio es ___.
+          - question: ¿Tienes alguna habitación especial en tu casa?
+            frame: Sí, en mi casa hay ___. / No, no hay ___.
+          - question: ¿Tu casa es moderna o antigua?
+            frame: Mi casa es ___.
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Debate por la mejor habitación'
+        skills: ['Describir (hay, ser y estar)', Verbos en presente]
+        steps:
+          - Trabajen en grupos. Tu profesor da a cada grupo un lugar de la casa.
+          - Expliquen por qué su lugar es el mejor de la casa. Usen las frases de abajo.
+        wordBank: [Cocina, Sala de estar, Baño, Jardín]
+        example: |-
+          *La sala de estar es el mejor lugar de la casa.*
+          *Hay un **sofá**, una **televisión** y **almohadas de colores**.*
+          *Es muy **moderna**, **bonita** y **cómoda**. Siempre **está ordenada**.*
+          *Allí puedes **relajarte**, **ver películas** y **leer libros**.*
+      - id: act3-frames
+        type: discussionQuestions
+        title: Nuestros argumentos
+        items:
+          - question: ___ es el mejor lugar de la casa.
+          - question: Hay un ___, un ___ y algunos ___.
+            frame: (cosas)
+          - question: Es muy ___, ___ y ___.
+            frame: (adjetivos)
+          - question: Allí puedes ___, ___ y ___.
+            frame: (verbos)
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Adivina la rutina'
+        skills: [Verbos en presente]
+        steps:
+          - Escribe tu rutina, desde que te despiertas hasta que sales de casa.
+          - Tu profesor envía tu rutina a otro estudiante.
+          - Lee la rutina que recibes, descríbela en tercera persona y adivina de quién es.
+        example: |-
+          *Se despierta a las 7. Se cepilla los dientes y desayuna café. Hace la cama y sale de casa a las 8.*
+          *Creo que es la rutina de Tom.*
+      - id: act4-routine
+        type: discussionQuestions
+        title: Mi rutina por la mañana
+        items:
+          - question: Me despierto a las ___.
+          - question: Me levanto y ___.
+          - question: Desayuno ___.
+          - question: Salgo de casa a las ___.
+          - question: Describe la rutina que recibes.
+            frame: Él / Ella se despierta a las ___. ___. Creo que es la rutina de ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Describir (hay, ser y estar)** (Actividades
+          1, 2 y 3) y **Verbos en presente** (Actividades 3 y 4). El cuaderno no da
+          combinaciones recomendadas ni tiempos: elige 2 o 3 actividades.
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: >-
+          Muy breve: 2 oraciones por estudiante, no más de 30 segundos por persona
+          (también el profesor). Si ya se conocen, pasen directamente a las preguntas.
+          Da tu propio ejemplo primero.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Repasa los lugares de la casa, sus cosas y sus adjetivos con ejemplos. Elige
+          3 lugares para explicar. Los adjetivos están en masculino: recuerda la
+          concordancia (*la cocina está limpia*, *el baño es pequeño*).
+      - id: n-act2
+        anchor: act2
+        text: 'Da a cada estudiante una imagen diferente del documento «Casas». Es un juego de rol: uno visita al otro y pregunta por su casa.'
+      - id: n-act3
+        anchor: act3
+        text: Da a cada grupo un lugar del banco (cocina, sala de estar, baño, jardín).
+      - id: n-act4
+        anchor: act4
+        text: >-
+          En Zoom, los estudiantes te escriben su rutina por chat privado (en clase
+          presencial, en un papel); también la puedes ver aquí, en sus respuestas.
+          Envía cada rutina a otro estudiante, que la describe en tercera persona y
+          adivina de quién es.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: mi-hogar-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-describe
+        type: ruleSummary
+        skill: Describir (hay, ser y estar)
+        rules:
+          - text: 'Usamos **hay** para decir que algo existe o qué cosas hay en un lugar. **Hay** es igual en singular y en plural.'
+            examples:
+              - Hay una mesa en la cocina.
+              - Hay dos sillas en la sala de estar.
+              - Hay una gran ventana en la habitación y hermosas cortinas.
+          - text: 'Para decir que algo no existe: **no hay**.'
+            examples: [No hay televisión en el dormitorio.]
+          - text: 'Los adjetivos describen cómo es algo. Usamos **ser** para características permanentes y **estar** para características temporales, el lugar o el estado.'
+            examples:
+              - La mesa **es** grande. · La mesa **está** limpia.
+              - La cocina **es** amplia y luminosa. · La cocina **está** limpia y ordenada.
+              - Mi casa **está** cerca de una panadería.
+          - text: Después de describir un lugar, puedes añadir un verbo para decir qué se puede hacer allí.
+            examples: [El dormitorio es tranquilo y cómodo. Puedes dormir y relajarte allí.]
+      - id: rules-present
+        type: ruleSummary
+        skill: Verbos en presente
+        rules:
+          - text: Usamos el presente para acciones de ahora, hechos y hábitos. También para planes y metas.
+            examples: [Yo limpio todos los días.]
+          - text: 'Hay tres grupos de verbos según la terminación: **-ar**, **-er**, **-ir**. Cada grupo tiene sus formas (mira la tabla).'
+            examples:
+              - Yo limpio la casa cada semana.
+              - Tú vendes productos por internet.
+              - Ella vive cerca del parque.
+              - Nosotros limpiamos el baño.
+              - Ustedes venden electrodomésticos.
+              - Ellos viven en el campo.
+          - text: 'Después de **quiero**, **necesito** y **puedo**, el verbo va en **infinitivo**.'
+            examples:
+              [
+                Yo quiero limpiar la casa.,
+                Yo necesito organizar los armarios.,
+                Tú puedes lavar los platos.,
+              ]
+      - id: present-table
+        type: table
+        caption: Verbos en presente
+        header: [Persona, '-ar: limpiar', '-er: vender', '-ir: vivir']
+        rows:
+          - [yo, limpio, vendo, vivo]
+          - [tú, limpias, vendes, vives]
+          - [él / ella, limpia, vende, vive]
+          - [nosotros / nosotras, limpiamos, vendemos, vivimos]
+          - [ustedes, limpian, venden, viven]
+          - [ellos / ellas, limpian, venden, viven]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: mi-hogar-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia cada mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-verbos
+        type: aiTutorPrompt
+        title: 'Parte 1: Verbos en presente'
+        intro: 'Mori te pide frases con verbos como *vivir, cocinar, limpiar, trabajar* y *estudiar*, y corrige la conjugación.'
+        message: Mori, pídeme frases con verbos en presente sobre mi casa y corrige mis errores.
+      - id: mori-habitacion
+        type: aiTutorPrompt
+        title: 'Parte 2: Oraciones descriptivas'
+        intro: 'Mori te pregunta: ¿Cuál es tu habitación favorita? ¿Qué hay en esa habitación? ¿Cómo es (con *ser*)? ¿Cómo está (con *estar*)?'
+        message: Mori, hazme preguntas para describir mi habitación favorita y corrige mis errores.
+      - id: mori-visita
+        type: aiTutorPrompt
+        title: 'Parte 3: Juego de rol: visita a la casa'
+        intro: 'Mori empieza: «Hola, gracias por invitarme. ¿Cómo es tu casa?» Después pregunta por tu cocina, tu sala de estar y tu dormitorio.'
+        message: 'Mori, haz conmigo un juego de rol: tú eres mi invitado y yo describo mi casa. Corrige mis errores.'
+      - id: mori-rutina
+        type: aiTutorPrompt
+        title: 'Parte 4: Mini rutina en casa'
+        intro: 'Mori pregunta paso a paso: ¿A qué hora te despiertas? ¿Qué haces por la mañana? ¿Qué haces por la tarde en tu casa? ¿Qué haces por la noche? ¿Dónde vives?'
+        message: Mori, pregúntame sobre mi rutina diaria en casa y corrige mis errores.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejo
+        text: |-
+          Empieza siempre con **«Mori, pregúntame…»** y termina con **«…y corrige mis errores.»**
+          Así la práctica es activa, guiada y con corrección inmediata.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: mi-hogar-practica
+    book: workbook
+    title: 'Práctica: Mi hogar'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-describir
+        type: activity
+        activity: mi-hogar-describir
+      - id: ex-verbos
+        type: activity
+        activity: mi-hogar-verbos
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: mi-hogar-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la casa
+        glossLang: he
+        link: https://quizlet.com/il/1025125959/my-home-basic-spanish-flash-cards/
+        items: &mi-hogar-words
+          - { term: Habitación, gloss: חדר }
+          - { term: Casa, gloss: בית (המבנה) }
+          - { term: Hogar, gloss: בית (במובן הרגשי) }
+          - { term: Cocina, gloss: מטבח }
+          - { term: Sala de estar, gloss: סלון }
+          - { term: Dormitorio, gloss: חדר שינה }
+          - { term: Baño, gloss: חדר אמבטיה / שירותים }
+          - { term: Comedor, gloss: חדר אוכל }
+          - { term: Cuarto de lavado, gloss: חדר כביסה }
+          - { term: Garaje, gloss: מוסך / חניה }
+          - { term: Jardín / Patio trasero, gloss: גן / חצר אחורית }
+          - { term: Sofá, gloss: ספה }
+          - { term: Sillón, gloss: כורסה }
+          - { term: Mesa, gloss: שולחן }
+          - { term: Televisión, gloss: טלוויזיה }
+          - { term: Cama, gloss: מיטה }
+          - { term: Mesa de noche, gloss: שידת לילה }
+          - { term: Lámpara, gloss: מנורה }
+          - { term: Armario, gloss: ארון }
+          - { term: Espejo, gloss: מראה }
+          - { term: Manta, gloss: שמיכה }
+          - { term: Almohada, gloss: כרית }
+          - { term: Inodoro, gloss: אסלה }
+          - { term: Lavabo, gloss: כיור }
+          - { term: Ducha, gloss: מקלחת }
+          - { term: Bañera, gloss: אמבטיה }
+          - { term: Platos, gloss: צלחות }
+          - { term: Vaso, gloss: כוס }
+          - { term: Velas, gloss: נרות }
+          - { term: Servilletas, gloss: מפיות }
+          - { term: Horno, gloss: תנור }
+          - { term: Me levanto, gloss: אני קם }
+          - { term: Me cepillo los dientes, gloss: אני מצחצח שיניים }
+          - { term: Desayuno, gloss: אני אוכל ארוחת בוקר }
+          - { term: Hago la cama, gloss: אני מסדר את המיטה }
+
+vocabulary:
+  - slug: mi-hogar
+    title: Mi hogar
+    items: *mi-hogar-words
+
+activities:
+  - slug: mi-hogar-describir
+    title: 'Describir: hay, ser y estar'
+    minutes: 8
+    items:
+      - id: hay-sillas
+        type: multipleChoice
+        prompt: ___ dos sillas en la sala de estar.
+        options:
+          - { text: Hay, correct: true }
+          - { text: Es, feedback: 'Para decir que algo existe en un lugar usamos *hay*.' }
+          - {
+              text: Está,
+              feedback: '*Estar* es para el estado o el lugar de una cosa. Para decir que algo existe usamos *hay*.',
+            }
+      - id: esta-limpia
+        type: multipleChoice
+        prompt: Hoy la cocina ___ limpia.
+        options:
+          - { text: está, correct: true }
+          - { text: es, feedback: '*Limpia* hoy es un estado temporal: usamos *estar*.' }
+          - { text: hay, feedback: '*Hay* dice que algo existe; no describe cómo está.' }
+      - id: es-grande
+        type: multipleChoice
+        prompt: La mesa ___ grande.
+        options:
+          - { text: es, correct: true }
+          - { text: está, feedback: '*Grande* es una característica permanente: usamos *ser*.' }
+          - {
+              text: hay,
+              feedback: '*Hay* dice que algo existe; para describir la mesa usamos *ser*.',
+            }
+      - id: hay-plural
+        type: trueFalse
+        prompt: 'Usamos *hay* en singular y en plural: *Hay una mesa. Hay dos sillas.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *Hay* no cambia.
+          incorrect: '*Hay* es igual en singular y en plural: *hay una mesa*, *hay dos sillas*.'
+      - id: esta-cerca
+        type: fillBlank
+        prompt: Completa con *es* o *está*.
+        text: Mi casa ___ cerca de una panadería.
+        blanks: [[está]]
+        wordBank: [es, está]
+      - id: hay-no-hay
+        type: fillBlank
+        prompt: Completa con *hay* o *no hay*.
+        text: 'En el baño ___ una ducha, pero ___ bañera: ¡solo tenemos ducha!'
+        blanks: [[hay], [no hay]]
+        wordBank: [hay, no hay]
+      - id: lugares
+        type: matching
+        prompt: Une cada lugar con una cosa que hay allí.
+        pairs:
+          - [cocina, horno]
+          - [dormitorio, cama]
+          - [baño, ducha]
+          - [sala de estar, sofá]
+          - [jardín, flores]
+      - id: ordena-dormitorio
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: El dormitorio es tranquilo y cómodo
+        alsoAccept: [El dormitorio es cómodo y tranquilo]
+
+  - slug: mi-hogar-verbos
+    title: 'Verbos en presente: -ar, -er, -ir'
+    minutes: 8
+    items:
+      - id: vivimos
+        type: multipleChoice
+        prompt: Nosotros ___ en el centro.
+        options:
+          - { text: vivimos, correct: true }
+          - { text: vivo, feedback: '*Vivo* es para *yo*. Con *nosotros*: *vivimos*.' }
+          - {
+              text: viven,
+              feedback: '*Viven* es para *ellos* o *ustedes*. Con *nosotros*: *vivimos*.',
+            }
+      - id: limpias
+        type: multipleChoice
+        prompt: Tú ___ la cocina todos los días.
+        options:
+          - { text: limpias, correct: true }
+          - { text: limpia, feedback: '*Limpia* es para *él / ella*. Con *tú*: *limpias*.' }
+          - { text: limpio, feedback: '*Limpio* es para *yo*. Con *tú*: *limpias*.' }
+      - id: vendo-vive
+        type: fillBlank
+        prompt: Escribe el verbo en presente.
+        text: Yo ___ (vender) muebles usados. Ella ___ (vivir) cerca del parque.
+        blanks: [[vendo], [vive]]
+      - id: limpian
+        type: fillBlank
+        prompt: Escribe el verbo en presente.
+        text: Ellos ___ (limpiar) el jardín.
+        blanks: [[limpian]]
+      - id: vivir
+        type: matching
+        prompt: 'Une cada persona con la forma de *vivir*.'
+        pairs:
+          - [yo, vivo]
+          - [tú, vives]
+          - [él / ella, vive]
+          - [nosotros, vivimos]
+          - [ellos / ellas, viven]
+      - id: quiero-limpiar
+        type: multipleChoice
+        prompt: Yo quiero ___ la casa.
+        options:
+          - { text: limpiar, correct: true }
+          - {
+              text: limpio,
+              feedback: 'Después de *quiero* el verbo va en infinitivo: *quiero limpiar*.',
+            }
+          - {
+              text: limpia,
+              feedback: 'Después de *quiero* el verbo va en infinitivo: *quiero limpiar*.',
+            }
+      - id: necesito
+        type: trueFalse
+        prompt: 'Después de *necesito*, el verbo va en infinitivo: *Yo necesito organizar los armarios.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *Quiero, necesito, puedo* + infinitivo.
+          incorrect: 'Con *quiero*, *necesito* y *puedo*, el verbo que sigue va en infinitivo: *necesito organizar*.'
+      - id: ordena-platos
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Tú puedes lavar los platos.
