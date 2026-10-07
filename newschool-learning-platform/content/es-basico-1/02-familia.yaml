@@ -224,12 +224,21 @@ sections:
         rows:
           - [Mi / Mis, Mi hermano se llama Carlos. Mis padres viven en Bogotá.]
           - [Tu / Tus, 'Tu hermana, María, es muy amable. Tus abuelos viven en México.']
-          - [Su / Sus (de él), Sam cocina muy bien. Su padre es un gran cocinero. Sus hermanos son muy cariñosos.]
+          - [
+              Su / Sus (de él),
+              Sam cocina muy bien. Su padre es un gran cocinero. Sus hermanos son muy cariñosos.,
+            ]
           - [Su / Sus (de ella), Me encanta ir a casa de Hanna. Su madre hace la mejor lasaña.]
           - [Su / Sus (de ellos / ellas), Juan y Susana viven en Argentina. Su casa es grande.]
           - [Su / Sus (de ustedes), Ustedes visitan a sus tíos todos los años.]
-          - [Nuestro / Nuestra / Nuestros / Nuestras, Nuestro padre es médico. Nuestra madre cocina muy bien.]
-          - [Vuestro / Vuestra / Vuestros / Vuestras, Vuestro abuelo vive en España. Vuestras tías vienen a la fiesta.]
+          - [
+              Nuestro / Nuestra / Nuestros / Nuestras,
+              Nuestro padre es médico. Nuestra madre cocina muy bien.,
+            ]
+          - [
+              Vuestro / Vuestra / Vuestros / Vuestras,
+              Vuestro abuelo vive en España. Vuestras tías vienen a la fiesta.,
+            ]
       - id: rules-dates
         type: ruleSummary
         skill: Números y fechas
@@ -237,7 +246,11 @@ sections:
           - text: Se escribe primero el día y después el mes.
             examples: [4 de julio de 2024]
           - text: Aprende bien los números del uno al diez; los demás se forman con ellos.
-            examples: ['uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez', 'once, doce, trece… dieciséis, diecisiete']
+            examples:
+              [
+                'uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez',
+                'once, doce, trece… dieciséis, diecisiete',
+              ]
           - text: Usa **el** antes del día y **en** antes de los meses y los años.
             examples: [Nací **el** cinco de marzo., Nací **en** marzo de 1998.]
     teacherNotes:
@@ -437,8 +450,14 @@ activities:
         prompt: ¿Qué oración es correcta?
         options:
           - { text: Nací el cinco de marzo., correct: true }
-          - { text: Nací en cinco de marzo., feedback: 'Usa *el* antes del día y *en* antes del mes o del año.' }
-          - { text: Nací el marzo cinco., feedback: 'Primero el día, después el mes: *el cinco de marzo*.' }
+          - {
+              text: Nací en cinco de marzo.,
+              feedback: 'Usa *el* antes del día y *en* antes del mes o del año.',
+            }
+          - {
+              text: Nací el marzo cinco.,
+              feedback: 'Primero el día, después el mes: *el cinco de marzo*.',
+            }
       - id: el-en
         type: fillBlank
         prompt: Completa con *el* o *en*.
