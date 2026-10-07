@@ -5,7 +5,9 @@ import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { z } from 'zod';
+import { parseActivityYaml, STARTER_ITEM } from '@/content/activity-editor';
 import { parseSectionYaml, type EditorProblem } from '@/content/editor';
+import { loadActivitySource, planActivityItems } from '@/server/content/activity-writer';
 import type { ManageState } from '@/server/actions/manage';
 import { requireArea } from '@/server/auth/session';
 import { createSupabaseServerClient } from '@/server/supabase/server';
@@ -422,4 +424,179 @@ export async function setActivityStatus(formData: FormData): Promise<void> {
     .select('cycle_id')
     .maybeSingle();
   if (data) revalidatePath(`/manage/content/cycles/${data.cycle_id}` as Route);
+}
+
+const scoring = z.enum(['none', 'practice', 'scored']);
+
+/** A new exercise in a cycle (a draft with one starter question), opened in the editor. */
+export async function createActivity(_prev: ManageState, formData: FormData): Promise<ManageState> {
+  await requireArea('manage');
+  const parsed = z
+    .object({ cycleId: uuid, slug, title: z.string().trim().min(1).max(200) })
+    .safeParse({
+      cycleId: formData.get('cycleId'),
+      slug: formData.get('slug'),
+      title: formData.get('title'),
+    });
+  if (!parsed.success) return say('invalid');
+  const supabase = await createSupabaseServerClient();
+  const { data: cycle } = await supabase
+    .from('cycles')
+    .select('id, course_id')
+    .eq('id', parsed.data.cycleId)
+    .maybeSingle();
+  if (!cycle) return say('notAllowed');
+  const { data: activity, error } = await supabase
+    .from('activities')
+    .insert({
+      course_id: cycle.course_id,
+      cycle_id: cycle.id,
+      slug: parsed.data.slug,
+      title: parsed.data.title,
+    })
+    .select('id')
+    .single();
+  if (error) return fromError(error);
+  const plan = await planActivityItems(
+    supabase,
+    {
+      activityId: activity.id,
+      courseId: cycle.course_id,
+      activitySlug: parsed.data.slug,
+      items: [STARTER_ITEM],
+      instructions: [],
+      previous: null,
+    },
+    true,
+  );
+  await plan.write();
+  revalidatePath(`/manage/content/cycles/${cycle.id}` as Route);
+  redirect(`/manage/content/activities/${activity.id}` as Route);
+}
+
+export async function saveActivityMeta(
+  _prev: ManageState,
+  formData: FormData,
+): Promise<ManageState> {
+  await requireArea('manage');
+  const parsed = z
+    .object({
+      activityId: uuid,
+      title: z.string().trim().min(1).max(200),
+      phase,
+      scoring,
+      minutes: z.union([z.literal(''), z.coerce.number().int().min(1).max(240)]),
+      status,
+    })
+    .safeParse({
+      activityId: formData.get('activityId'),
+      title: formData.get('title'),
+      phase: formData.get('phase'),
+      scoring: formData.get('scoring'),
+      minutes: formData.get('minutes') ?? '',
+      status: formData.get('status'),
+    });
+  if (!parsed.success) return say('invalid');
+  const v = parsed.data;
+  const supabase = await createSupabaseServerClient();
+  const { data, error } = await supabase
+    .from('activities')
+    .update({
+      title: v.title,
+      phase: v.phase,
+      scoring_mode: v.scoring,
+      est_minutes: v.minutes === '' ? null : v.minutes,
+      status: v.status,
+    })
+    .eq('id', v.activityId)
+    .select('cycle_id')
+    .maybeSingle();
+  if (!error && !data) return say('notAllowed');
+  revalidatePath(`/manage/content/activities/${v.activityId}` as Route);
+  if (data) revalidatePath(`/manage/content/cycles/${data.cycle_id}` as Route);
+  return fromError(error);
+}
+
+/**
+ * Save an exercise's instructions and items from the editor's YAML. Checked
+ * here with the import's rules; refused if someone saved it meanwhile, or if
+ * it would change the options or answers of an item students have answered
+ * (nothing is written then).
+ */
+export async function saveActivityContent(
+  _prev: EditorState,
+  formData: FormData,
+): Promise<EditorState> {
+  await requireArea('manage');
+  const t = await getTranslations('cms.messages');
+  const parsed = z
+    .object({
+      activityId: uuid,
+      updatedAt: z.string().min(1).max(64),
+      yaml: z.string().max(300_000),
+    })
+    .safeParse({
+      activityId: formData.get('activityId'),
+      updatedAt: formData.get('updatedAt'),
+      yaml: formData.get('yaml'),
+    });
+  if (!parsed.success) return { status: 'error', message: t('invalid') };
+
+  const supabase = await createSupabaseServerClient();
+  const { data: activity } = await supabase
+    .from('activities')
+    .select('id, slug, course_id, updated_at')
+    .eq('id', parsed.data.activityId)
+    .maybeSingle();
+  if (!activity) return { status: 'error', message: t('notAllowed') };
+  if (new Date(activity.updated_at).getTime() !== new Date(parsed.data.updatedAt).getTime()) {
+    return { status: 'error', message: t('conflict') };
+  }
+
+  const doc = parseActivityYaml(parsed.data.yaml, activity.slug);
+  if (!doc.ok) return { status: 'error', message: t('problems'), problems: doc.problems };
+
+  const previous = await loadActivitySource(supabase, activity.id);
+  const plan = await planActivityItems(
+    supabase,
+    {
+      activityId: activity.id,
+      courseId: activity.course_id,
+      activitySlug: activity.slug,
+      items: doc.doc.items,
+      instructions: doc.doc.instructions,
+      previous: previous.source.items,
+    },
+    true,
+  );
+  if (plan.problems.length) {
+    return {
+      status: 'error',
+      message: t('problems'),
+      problems: plan.problems.map((p) => ({
+        path: p.item,
+        message: t(p.code, { count: p.count }),
+      })),
+    };
+  }
+
+  // Compare-and-set on updated_at, then the items.
+  const { data: claimed, error } = await supabase
+    .from('activities')
+    .update({ instructions: doc.doc.instructions })
+    .eq('id', activity.id)
+    .eq('updated_at', activity.updated_at)
+    .select('id')
+    .maybeSingle();
+  if (error) return { status: 'error', message: t('failed') };
+  if (!claimed) return { status: 'error', message: t('conflict') };
+  try {
+    await plan.write();
+  } catch {
+    return { status: 'error', message: t('failed') };
+  }
+  revalidatePath(`/manage/content/activities/${activity.id}` as Route);
+  revalidatePath('/learn', 'layout');
+  revalidatePath('/teach', 'layout');
+  return { status: 'ok', message: t('saved') };
 }

@@ -246,8 +246,16 @@ _editor_, not a new model.
   courses from files, but leaves alone any page edited in the platform, with a warning,
   unless run with `--overwrite-app-edits`. A course moves to the editor for good once its
   files stop being imported.
-- **Next:** the activity (exercise) editor, media upload, a review step where teachers propose and the manager approves, and the page
-  history view (the history is already in the audit log).
+- **Exercises:** a cycle's page lists its exercises; each opens an editor (ADR-036) for
+  its details and status, and its questions in the files' exercise format (`instructions:`
+  and `items:`), checked as they change, with a preview of each question and its right
+  answer. "Add an exercise" starts a draft with one example question. A question that
+  students have answered keeps its options and answers (rewording it, changing its points
+  or feedback, or listing its options in another order is fine); to change what it
+  accepts, add a new question. Questions no one has answered can be changed or removed.
+- **Next:** a form editor for exercise questions, media upload, a review step where
+  teachers propose and the manager approves, and the page history view (the history is
+  already in the audit log).
 
 ## 6. Migration of existing New School materials <a id="migration"></a>
 

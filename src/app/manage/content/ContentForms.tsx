@@ -3,8 +3,10 @@
 import { useTranslations } from 'next-intl';
 import { ActionForm } from '@/app/manage/ActionForm';
 import {
+  createActivity,
   createCycle,
   createSection,
+  saveActivityMeta,
   saveCourse,
   saveCycle,
   saveSectionMeta,
@@ -277,6 +279,109 @@ export function SectionMetaForm({
           <StatusField id="section-status" value={status} />
           <Button type="submit" variant="secondary" loading={pending} className="self-start">
             {t('saveDetails')}
+          </Button>
+        </>
+      )}
+    </ActionForm>
+  );
+}
+
+const SCORING = ['none', 'practice', 'scored'] as const;
+
+export function ActivityMetaForm({
+  activityId,
+  title,
+  phase,
+  scoring,
+  minutes,
+  status,
+}: {
+  activityId: string;
+  title: string;
+  phase: (typeof PHASES)[number];
+  scoring: (typeof SCORING)[number];
+  minutes: number | null;
+  status: Status;
+}) {
+  const t = useTranslations('cms.activity');
+  const tc = useTranslations('cms');
+  return (
+    <ActionForm
+      action={saveActivityMeta}
+      hidden={{ activityId }}
+      className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+    >
+      {(pending) => (
+        <>
+          <TextField
+            id="activity-title"
+            dir="auto"
+            name="title"
+            label={t('title')}
+            defaultValue={title}
+            required
+            maxLength={200}
+          />
+          <SelectField
+            id="activity-phase"
+            name="phase"
+            label={tc('section.phase')}
+            defaultValue={phase}
+            options={PHASES.map((p) => ({ value: p, label: tc(`phase.${p}`) }))}
+          />
+          <SelectField
+            id="activity-scoring"
+            name="scoring"
+            label={t('scoring')}
+            defaultValue={scoring}
+            options={SCORING.map((s) => ({ value: s, label: t(`scoringOptions.${s}`) }))}
+          />
+          <TextField
+            id="activity-minutes"
+            name="minutes"
+            type="number"
+            min={1}
+            max={240}
+            label={t('minutes')}
+            defaultValue={minutes ?? ''}
+          />
+          <StatusField id="activity-status" value={status} />
+          <Button type="submit" variant="secondary" loading={pending} className="self-start">
+            {tc('section.saveDetails')}
+          </Button>
+        </>
+      )}
+    </ActionForm>
+  );
+}
+
+export function NewActivityForm({ cycleId }: { cycleId: string }) {
+  const t = useTranslations('cms.activity');
+  const tc = useTranslations('cms.course');
+  return (
+    <ActionForm action={createActivity} hidden={{ cycleId }} className="grid gap-4 sm:grid-cols-2">
+      {(pending) => (
+        <>
+          <TextField
+            id="activity-new-title"
+            dir="auto"
+            name="title"
+            label={t('title')}
+            required
+            maxLength={200}
+          />
+          <TextField
+            id="activity-new-slug"
+            name="slug"
+            dir="ltr"
+            label={tc('slug')}
+            hint={tc('slugHint')}
+            required
+            pattern="[a-z0-9]+(-[a-z0-9]+)*"
+            maxLength={80}
+          />
+          <Button type="submit" loading={pending} className="self-start">
+            {t('add')}
           </Button>
         </>
       )}

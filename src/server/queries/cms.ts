@@ -1,5 +1,7 @@
 import 'server-only';
+import { activityToYaml } from '@/content/activity-editor';
 import { sectionToYaml } from '@/content/editor';
+import { loadActivitySource } from '@/server/content/activity-writer';
 import type { Database } from '@/server/db.types';
 import { createSupabaseServerClient } from '@/server/supabase/server';
 
@@ -193,5 +195,63 @@ export async function getSectionForEdit(sectionId: string): Promise<SectionForEd
       new Map(list.map((a) => [a.id, a.slug])),
     ),
     activities: list,
+  };
+}
+
+export type ActivityForEdit = {
+  id: string;
+  slug: string;
+  title: string;
+  phase: Phase;
+  scoring: Database['public']['Enums']['scoring_mode'];
+  minutes: number | null;
+  status: Status;
+  updatedAt: string;
+  cycleId: string;
+  cycleTitle: string;
+  courseTitle: string;
+  courseLang: string;
+  yaml: string;
+  /** Rebuilt from the stored items (no saved source yet): options in stored order. */
+  fromStored: boolean;
+  /** Answers from students, by item slug. */
+  answered: Record<string, number>;
+};
+
+export async function getActivityForEdit(activityId: string): Promise<ActivityForEdit | null> {
+  const supabase = await createSupabaseServerClient();
+  const { data: a, error } = await supabase
+    .from('activities')
+    .select(
+      'id, slug, title, phase, scoring_mode, est_minutes, status, updated_at, course_id, cycle_id, cycle:cycles ( title )',
+    )
+    .eq('id', activityId)
+    .maybeSingle();
+  if (error) fail('the exercise', error);
+  if (!a) return null;
+  const [course, loaded] = await Promise.all([
+    supabase
+      .from('courses')
+      .select('title, level:levels ( language:languages ( code ) )')
+      .eq('id', a.course_id)
+      .single(),
+    loadActivitySource(supabase, a.id),
+  ]);
+  return {
+    id: a.id,
+    slug: a.slug,
+    title: a.title,
+    phase: a.phase,
+    scoring: a.scoring_mode,
+    minutes: a.est_minutes,
+    status: a.status,
+    updatedAt: a.updated_at,
+    cycleId: a.cycle_id,
+    cycleTitle: a.cycle?.title ?? '',
+    courseTitle: course.data?.title ?? '',
+    courseLang: course.data?.level?.language?.code ?? 'en',
+    yaml: activityToYaml(loaded.source),
+    fromStored: loaded.fromStored,
+    answered: Object.fromEntries(loaded.answered),
   };
 }

@@ -117,7 +117,11 @@ test('the manager edits a page; students see it; a stale save is refused', async
 test('teachers and students cannot open the editor', async ({ page }) => {
   for (const who of [USERS.teacherX, USERS.studentA]) {
     await signIn(page, who);
-    for (const path of [`/manage/content/${COURSE}`, `/manage/content/sections/${HOLA}`]) {
+    for (const path of [
+      `/manage/content/${COURSE}`,
+      `/manage/content/sections/${HOLA}`,
+      `/manage/content/activities/${IDS.activityAllTypes}`,
+    ]) {
       expect((await page.goto(path))?.status(), `${who} ${path}`).toBe(404);
     }
     await page.context().clearCookies();

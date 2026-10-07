@@ -1019,7 +1019,9 @@
       "failed": "Could not save. Try again.",
       "slugTaken": "That short name is already used here. Choose another.",
       "conflict": "Someone saved this page after you opened it. Copy your changes, reload the page and apply them again.",
-      "problems": "Fix the problems below, then save."
+      "problems": "Fix the problems below, then save.",
+      "answeredChanged": "{count, plural, one {a student has answered it} other {students have answered it # times}}, so its options and answers can’t change. Add a new question instead.",
+      "answeredRemoved": "{count, plural, one {a student has answered it} other {students have answered it # times}}, so it can’t be removed."
     },
     "course": {
       "metaTitle": "Course content",
@@ -1048,11 +1050,12 @@
       "phase": "When",
       "openEditor": "Edit {title}",
       "activities": "Activities",
-      "activitiesHint": "Exercises are still written in content files and imported; their status is set here.",
+      "activitiesHint": "Open an exercise to edit its questions, or add a new one.",
       "noActivities": "No activities in this cycle.",
       "activityStatusLabel": "Status of {title}",
       "setStatus": "Update",
-      "setStatusLabel": "Update the status of {title}"
+      "setStatusLabel": "Update the status of {title}",
+      "addActivity": "Add an exercise"
     },
     "section": {
       "metaTitle": "Edit page",
@@ -1179,6 +1182,41 @@
       "reflection": "Reflection",
       "activity": "Exercise",
       "unknown": "Unknown block"
+    },
+    "activity": {
+      "metaTitle": "Edit exercise",
+      "title": "Title",
+      "scoring": "Scoring",
+      "scoringOptions": {
+        "none": "Not scored",
+        "practice": "Practice (feedback, no grade)",
+        "scored": "Scored"
+      },
+      "minutes": "Minutes (optional)",
+      "add": "Add exercise",
+      "questions": "Questions",
+      "editorLabel": "Questions (YAML)",
+      "hint": "The content files’ exercise format: each item has an id, a type and its answers. Checked as you type.",
+      "preview": "Preview with answers",
+      "question": "Question {n}",
+      "answeredBy": "{count, plural, one {answered once} other {answered # times}}",
+      "answer": "Answer: {answer}",
+      "openAnswer": "Open answer: the teacher reads it.",
+      "true": "True",
+      "false": "False",
+      "publishedWarning": "This exercise is published: saving changes what students see right away.",
+      "answeredNote": "{count, plural, one {One question has} other {# questions have}} answers from students: their options and answers are locked; their wording, feedback and points can still change. To change the answers, add a new question.",
+      "fromStored": "This exercise was written before sources were kept, so options appear in their stored order. Saving keeps the questions you don’t change exactly as they are.",
+      "types": {
+        "multipleChoice": "Multiple choice",
+        "trueFalse": "True or false",
+        "fillBlank": "Fill in the blanks",
+        "matching": "Matching",
+        "reorderSentence": "Word order",
+        "flashcards": "Flashcards",
+        "shortAnswer": "Short answer",
+        "reflection": "Reflection"
+      }
     }
   }
 }

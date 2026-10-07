@@ -63,13 +63,13 @@ isOneToOne: false
                   ]
                 },"activity_items": {
                   Row: {
-                    "activity_id": string,"course_id": string,"created_at": string,"data": NonNullable<Json>,"id": string,"points": number,"position": number,"prompt": NonNullable<Json>,"slug": string | null,"type": string
+                    "activity_id": string,"course_id": string,"created_at": string,"data": NonNullable<Json>,"id": string,"points": number,"position": number,"prompt": NonNullable<Json>,"slug": string,"type": string
                   }
                   Insert: {
-                    "activity_id": string,"course_id": string,"created_at"?: string,"data"?: NonNullable<Json>,"id"?: string,"points"?: number,"position"?: number,"prompt"?: NonNullable<Json>,"slug"?: string | null,"type": string
+                    "activity_id": string,"course_id": string,"created_at"?: string,"data"?: NonNullable<Json>,"id"?: string,"points"?: number,"position"?: number,"prompt"?: NonNullable<Json>,"slug": string,"type": string
                   }
                   Update: {
-                    "activity_id"?: string,"course_id"?: string,"created_at"?: string,"data"?: NonNullable<Json>,"id"?: string,"points"?: number,"position"?: number,"prompt"?: NonNullable<Json>,"slug"?: string | null,"type"?: string
+                    "activity_id"?: string,"course_id"?: string,"created_at"?: string,"data"?: NonNullable<Json>,"id"?: string,"points"?: number,"position"?: number,"prompt"?: NonNullable<Json>,"slug"?: string,"type"?: string
                   }
                   Relationships: [
                     {
@@ -103,6 +103,25 @@ isOneToOne: false
 isOneToOne: false
       referencedRelation: "skills"
       referencedColumns: ["id"]
+    }
+                  ]
+                },"activity_sources": {
+                  Row: {
+                    "activity_id": string,"course_id": string,"source": NonNullable<Json>,"updated_at": string
+                  }
+                  Insert: {
+                    "activity_id": string,"course_id": string,"source": NonNullable<Json>,"updated_at"?: string
+                  }
+                  Update: {
+                    "activity_id"?: string,"course_id"?: string,"source"?: NonNullable<Json>,"updated_at"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "activity_sources_activity_id_course_id_fkey"
+      columns: ["activity_id","course_id"]
+isOneToOne: false
+      referencedRelation: "activities"
+      referencedColumns: ["id","course_id"]
     }
                   ]
                 },"assignment_recipients": {

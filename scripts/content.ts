@@ -15,14 +15,11 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 import { parseDocument } from 'yaml';
-import {
-  activityPlaceholder,
-  compileItem,
-  type AuthoredActivity,
-} from '../src/content/activities-file';
+import { activityPlaceholder, type AuthoredActivity } from '../src/content/activities-file';
 import { validateContent, type CourseFile, type CycleFile } from '../src/content/files';
 import type { Block } from '../src/content/schema';
-import type { Database, Json } from '../src/server/db.types';
+import { planActivityItems, type ActivitySource } from '../src/server/content/activity-writer';
+import type { Database } from '../src/server/db.types';
 
 type Client = SupabaseClient<Database>;
 
@@ -159,70 +156,27 @@ async function importActivity(
       .single(),
   );
 
-  for (const [position, authored] of a.items.entries()) {
-    const item = compileItem(a.slug, authored);
-    const row = await must(
-      `item ${a.slug}/${item.slug}`,
-      db
-        .from('activity_items')
-        .upsert(
-          {
-            activity_id: activity.id,
-            course_id: courseId,
-            slug: item.slug,
-            position: position + 1,
-            type: item.type,
-            prompt: item.prompt,
-            data: item.data as NonNullable<Json>,
-            points: item.points,
-          },
-          { onConflict: 'activity_id,slug' },
-        )
-        .select('id')
-        .single(),
-    );
-    // The key lives in its own table, which students cannot read (ADR-006).
-    if (item.key) {
-      await must(
-        `key ${a.slug}/${item.slug}`,
-        db
-          .from('activity_item_keys')
-          .upsert(
-            {
-              item_id: row.id,
-              course_id: courseId,
-              answer: item.key as NonNullable<Json>,
-              feedback: item.feedback,
-            },
-            { onConflict: 'item_id' },
-          )
-          .select('item_id')
-          .single(),
-      );
-    } else {
-      await db.from('activity_item_keys').delete().eq('item_id', row.id);
-    }
-  }
-
-  // Items removed from the file: delete them unless students already answered them.
-  const keep = new Set(a.items.map((i) => i.id));
-  const existing = await must(
-    'items',
-    db.from('activity_items').select('id, slug').eq('activity_id', activity.id),
+  // Items, keys and the source, by the same rules as the content editor:
+  // unchanged items are not rewritten, answered items keep their answers.
+  const { data: prior } = await db
+    .from('activity_sources')
+    .select('source')
+    .eq('activity_id', activity.id)
+    .maybeSingle();
+  const plan = await planActivityItems(
+    db,
+    {
+      activityId: activity.id,
+      courseId,
+      activitySlug: a.slug,
+      items: a.items,
+      instructions: a.instructions,
+      previous: (prior?.source as ActivitySource | undefined)?.items ?? null,
+    },
+    false,
   );
-  for (const old of existing.filter((i) => i.slug && !keep.has(i.slug))) {
-    const { count } = await db
-      .from('responses')
-      .select('id', { count: 'exact', head: true })
-      .eq('item_id', old.id);
-    if (count) {
-      console.warn(
-        `  ! item "${a.slug}/${old.slug}" was removed from the file but has answers; kept`,
-      );
-    } else {
-      await db.from('activity_items').delete().eq('id', old.id);
-    }
-  }
+  for (const warning of plan.warnings) console.warn(`  ! ${a.slug}: ${warning}`);
+  await plan.write();
   return activity.id;
 }
 

@@ -249,6 +249,15 @@ export default async function globalSetup() {
   // Pages added by the content-editor tests.
   await admin.from('book_sections').delete().like('slug', 'e2e-%');
 
+  // Exercises added by the exercise-editor tests, and "Numbers 1–10" as seeded.
+  await admin.from('activities').delete().like('slug', 'e2e-%');
+  const NUMBERS = '70000000-0000-4000-8000-000000000007';
+  await admin.from('activity_sources').delete().eq('activity_id', NUMBERS);
+  await admin
+    .from('activity_items')
+    .update({ prompt: [{ id: 'p', type: 'text', text: 'Dos más tres son…', lang: 'es' }] })
+    .eq('id', '80000000-0000-4000-8000-000000000071');
+
   // Rooms and lessons added by the office tests (the seed's ids start e0…/e1…).
   await admin.from('room_bookings').delete().not('id', 'in', seedIds('e1000000', 3));
   await admin.from('rooms').delete().not('id', 'in', seedIds('e0000000', 3));

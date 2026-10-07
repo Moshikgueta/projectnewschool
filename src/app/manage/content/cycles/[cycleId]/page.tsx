@@ -9,7 +9,7 @@ import { getContentCycle } from '@/server/queries/cms';
 import { Badge, Card } from '@/ui/Card';
 import { ButtonLink } from '@/ui/Button';
 import { PageTitle, Section } from '@/ui/Page';
-import { CycleForm, NewSectionForm } from '../../ContentForms';
+import { CycleForm, NewActivityForm, NewSectionForm } from '../../ContentForms';
 import { MoveButtons } from '../../MoveButtons';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -106,9 +106,13 @@ export default async function ContentCyclePage({
                   {cycle.activities.map((a) => (
                     <li key={a.id} className="flex flex-wrap items-end justify-between gap-2 py-2">
                       <span className="flex flex-col">
-                        <bdi dir="auto" className="font-medium">
-                          {a.title}
-                        </bdi>
+                        <Link
+                          href={`/manage/content/activities/${a.id}` as Route}
+                          className={LINK}
+                          aria-label={t('openEditor', { title: a.title })}
+                        >
+                          <bdi dir="auto">{a.title}</bdi>
+                        </Link>
                         <code dir="ltr" className="text-sm text-muted">
                           {a.slug}
                         </code>
@@ -143,6 +147,10 @@ export default async function ContentCyclePage({
                   ))}
                 </ul>
               )}
+            </Card>
+            <Card>
+              <h3 className="mb-3 font-semibold">{t('addActivity')}</h3>
+              <NewActivityForm cycleId={cycle.id} />
             </Card>
           </Section>
         </div>

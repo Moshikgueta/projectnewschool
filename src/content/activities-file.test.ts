@@ -1,9 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import {
   activityPlaceholder,
+  authoredItemSchema,
   authoredActivitySchema,
   checkActivity,
   compileItem,
+  feedbackForStored,
+  sameAnswers,
+  type AuthoredItem,
 } from './activities-file';
 import { cycleFileSchema } from './files';
 
@@ -108,5 +112,118 @@ describe('authored exercises', () => {
     });
     const bad = cycleFileSchema.safeParse(cycle('nope'));
     expect(bad.error?.issues[0]?.path).toEqual(['sections', 0, 'blocks', 0]);
+  });
+});
+
+describe('decompiling stored items', () => {
+  it('gives back an item that compiles to exactly what is stored, for every type', async () => {
+    const { readFileSync } = await import('node:fs');
+    const { parseDocument } = await import('yaml');
+    const { canonical, decompileItem } = await import('./activities-file');
+    const raw = parseDocument(
+      readFileSync('content/en-foundations-1/02-family.yaml', 'utf8'),
+    ).toJS() as {
+      activities: unknown[];
+    };
+    const activities = raw.activities.map((a) => authoredActivitySchema.parse(a));
+    let types = new Set<string>();
+    for (const activity of activities) {
+      for (const item of activity.items) {
+        const stored = compileItem(activity.slug, item);
+        const back = decompileItem({ ...stored, key: stored.key, feedback: stored.feedback });
+        expect(back, `${activity.slug}/${item.id}`).not.toBeNull();
+        // Stored again from the decompiled form: the same prompt and the same right
+        // answers. Shuffled types get new option ids (which is why the editor never
+        // rewrites an unchanged item), so for those the answers are compared by text.
+        const again = compileItem(activity.slug, back!);
+        expect(canonical(again.prompt), item.id).toBe(canonical(stored.prompt));
+        expect(canonical(rightAnswers(again)), item.id).toBe(canonical(rightAnswers(stored)));
+        types = new Set([...types, item.type]);
+      }
+    }
+    expect(types.size).toBeGreaterThanOrEqual(4);
+  });
+
+  it('compares values the way jsonb stores them (key order does not matter)', async () => {
+    const { canonical } = await import('./activities-file');
+    expect(canonical({ b: 1, a: [{ d: 2, c: 3 }] })).toBe(canonical({ a: [{ c: 3, d: 2 }], b: 1 }));
+  });
+});
+
+/** The right answers of a compiled item, by text (independent of option ids). */
+function rightAnswers(item: ReturnType<typeof compileItem>): unknown {
+  const data = item.data as Record<string, { id: string; text: string }[]>;
+  const key = (item.key ?? {}) as Record<string, unknown>;
+  switch (item.type) {
+    case 'multipleChoice':
+      return data
+        .options!.filter((o) => (key.optionIds as string[]).includes(o.id))
+        .map((o) => o.text)
+        .sort();
+    case 'matching': {
+      const right = new Map(data.right!.map((r) => [r.id, r.text]));
+      return data.left!.map((l) => [
+        l.text,
+        right.get((key.pairs as Record<string, string>)[l.id]!),
+      ]);
+    }
+    case 'reorderSentence':
+      return [key.accept, data.tokens!.map((t) => t.text).sort()];
+    default:
+      return [item.data, item.key];
+  }
+}
+
+describe('answered items', () => {
+  type Mc = Extract<AuthoredItem, { type: 'multipleChoice' }>;
+  const mc = authoredItemSchema.parse({
+    id: 'q',
+    type: 'multipleChoice',
+    prompt: 'Dos más tres son…',
+    options: [{ text: 'seis' }, { text: 'cinco', correct: true }, { text: 'cuatro' }],
+  }) as Mc;
+
+  it('count as the same when only wording, order, points or feedback change', () => {
+    const reworded = {
+      ...mc,
+      prompt: '¿Cuánto es dos más tres?',
+      points: 2,
+      feedback: { correct: '¡Muy bien!' },
+      options: [...mc.options].reverse(),
+    };
+    expect(sameAnswers(mc, reworded)).toBe(true);
+  });
+
+  it('count as different when an option or the right answer changes', () => {
+    const otherOption = {
+      ...mc,
+      options: mc.options.map((o, i) => (i === 0 ? { ...o, text: 'siete' } : o)),
+    };
+    const otherAnswer = {
+      ...mc,
+      options: mc.options.map((o) => ({ ...o, correct: o.text === 'seis' })),
+    };
+    expect(sameAnswers(mc, otherOption)).toBe(false);
+    expect(sameAnswers(mc, otherAnswer)).toBe(false);
+    expect(sameAnswers(mc, { ...mc, type: 'trueFalse', answer: true } as never)).toBe(false);
+  });
+
+  it('keep option feedback on the stored option ids, matched by text', () => {
+    const withFeedback = {
+      ...mc,
+      feedback: { incorrect: 'Cuenta otra vez.' },
+      options: mc.options.map((o) => (o.text === 'seis' ? { ...o, feedback: 'Uno de más.' } : o)),
+    };
+    const stored = {
+      options: [
+        { id: 'o1', text: 'cuatro' },
+        { id: 'o2', text: 'seis' },
+        { id: 'o3', text: 'cinco' },
+      ],
+    };
+    expect(feedbackForStored(withFeedback, stored)).toEqual({
+      incorrect: 'Cuenta otra vez.',
+      o2: 'Uno de más.',
+    });
   });
 });

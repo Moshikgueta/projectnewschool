@@ -249,3 +249,42 @@ describe('staff tools, through the API', () => {
     await y.auth.signOut();
   });
 });
+
+describe('exercise editing, through the API', () => {
+  const NUMBERS = '70000000-0000-4000-8000-000000000007';
+  const ANSWERED = '80000000-0000-4000-8000-000000000071';
+
+  for (const email of ['student.a@example.com', 'teacher.x@example.com']) {
+    it(`${email.split('@')[0]} reads no exercise sources and cannot write items or keys`, async () => {
+      const c = await signedIn(email);
+      expect((await c.from('activity_sources').select('activity_id')).data).toEqual([]);
+      const source = await c
+        .from('activity_sources')
+        .insert({ activity_id: NUMBERS, course_id: IDS.courseSpanish, source: {} });
+      expect(source.error?.code).toBe('42501');
+      const item = await c.from('activity_items').insert({
+        activity_id: NUMBERS,
+        course_id: IDS.courseSpanish,
+        position: 9,
+        slug: 'planted',
+        type: 'trueFalse',
+        prompt: [],
+        data: {},
+      });
+      expect(item.error?.code).toBe('42501');
+      const changed = await c
+        .from('activity_items')
+        .update({ data: { options: [] } })
+        .eq('id', ANSWERED)
+        .select('id');
+      expect(changed.data ?? []).toEqual([]);
+      const key = await c
+        .from('activity_item_keys')
+        .update({ answer: { optionIds: ['o1'] } })
+        .eq('item_id', ANSWERED)
+        .select('item_id');
+      expect(key.data ?? []).toEqual([]);
+      await c.auth.signOut();
+    });
+  }
+});

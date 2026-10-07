@@ -212,3 +212,147 @@ export function activityPlaceholder(activitySlug: string): string {
   for (const ch of activitySlug) h = ((h ^ BigInt(ch.charCodeAt(0))) * 16777619n) & 0xffffffffffffn;
   return `00000000-0000-4000-8000-${h.toString(16).padStart(12, '0')}`;
 }
+
+/** JSON with object keys sorted, for comparing values that went through jsonb. */
+export function canonical(value: unknown): string {
+  return JSON.stringify(value, (_key, v: unknown) =>
+    v && typeof v === 'object' && !Array.isArray(v)
+      ? Object.fromEntries(
+          Object.entries(v as Record<string, unknown>).sort(([a], [b]) => a.localeCompare(b)),
+        )
+      : v,
+  );
+}
+
+/**
+ * A stored item back in the authored form, for exercises that have no saved
+ * source (written before sources were kept). Options come back in their
+ * stored (shuffled) order; the right answers are marked from the key.
+ */
+export function decompileItem(row: {
+  slug: string;
+  type: string;
+  prompt: unknown;
+  data: unknown;
+  points: number;
+  key: unknown;
+  feedback: unknown;
+}): AuthoredItem | null {
+  const data = (row.data ?? {}) as Record<string, unknown>;
+  const key = (row.key ?? {}) as Record<string, unknown>;
+  const fb = (row.feedback ?? {}) as Record<string, string>;
+  const blocks = Array.isArray(row.prompt) ? (row.prompt as Block[]) : [];
+  const only = blocks.length === 1 ? blocks[0] : undefined;
+  const prompt =
+    only && only.type === 'text' && only.id === 'prompt'
+      ? { prompt: only.text, ...(only.lang ? { lang: only.lang } : {}) }
+      : { prompt: blocks };
+  const feedback = {
+    ...(fb.correct ? { correct: fb.correct } : {}),
+    ...(fb.incorrect ? { incorrect: fb.incorrect } : {}),
+  };
+  const base = { id: row.slug, ...prompt, points: row.points, feedback };
+  let item: unknown;
+  switch (row.type) {
+    case 'multipleChoice': {
+      const right = new Set((key.optionIds as string[] | undefined) ?? []);
+      item = {
+        ...base,
+        type: 'multipleChoice',
+        options: ((data.options as { id: string; text: string }[] | undefined) ?? []).map((o) => ({
+          text: o.text,
+          correct: right.has(o.id),
+          ...(fb[o.id] ? { feedback: fb[o.id] } : {}),
+        })),
+      };
+      break;
+    }
+    case 'trueFalse':
+      item = { ...base, type: 'trueFalse', answer: key.value === true };
+      break;
+    case 'fillBlank':
+      item = {
+        ...base,
+        type: 'fillBlank',
+        text: data.text,
+        blanks: ((key.blanks as { accept: string[] }[] | undefined) ?? []).map((b) => b.accept),
+        ...(data.wordBank ? { wordBank: data.wordBank } : {}),
+        accents: key.accents ?? 'lenient',
+      };
+      break;
+    case 'matching': {
+      const right = new Map(
+        ((data.right as { id: string; text: string }[]) ?? []).map((r) => [r.id, r.text]),
+      );
+      const pairs = (key.pairs as Record<string, string> | undefined) ?? {};
+      item = {
+        ...base,
+        type: 'matching',
+        pairs: ((data.left as { id: string; text: string }[]) ?? []).map((l) => [
+          l.text,
+          right.get(pairs[l.id] ?? '') ?? '',
+        ]),
+      };
+      break;
+    }
+    case 'reorderSentence': {
+      const accept = (key.accept as string[] | undefined) ?? [];
+      item = {
+        ...base,
+        type: 'reorderSentence',
+        sentence: accept[0] ?? '',
+        alsoAccept: accept.slice(1),
+      };
+      break;
+    }
+    case 'shortAnswer':
+    case 'reflection':
+      item = { ...base, type: row.type, maxLength: data.maxLength };
+      break;
+    default:
+      return null;
+  }
+  const parsed = authoredItemSchema.safeParse(item);
+  return parsed.success ? parsed.data : null;
+}
+
+/**
+ * What an item asks and accepts, without its wording: the type, the options
+ * or pairs (in any order) with which are right, the accepted answers. Two
+ * items with the same answer shape grade every response the same way.
+ */
+function answerShape(item: AuthoredItem): unknown {
+  const shape: Record<string, unknown> = { ...item };
+  for (const wording of ['id', 'prompt', 'lang', 'points', 'feedback']) delete shape[wording];
+  if (item.type === 'multipleChoice')
+    shape.options = item.options
+      .map((o) => ({ text: o.text, correct: o.correct }))
+      .sort((a, b) => a.text.localeCompare(b.text));
+  if (item.type === 'matching')
+    shape.pairs = [...item.pairs].sort((a, b) => a[0].localeCompare(b[0]));
+  return shape;
+}
+
+/** Whether two versions of an item accept exactly the same answers. */
+export function sameAnswers(a: AuthoredItem, b: AuthoredItem): boolean {
+  return canonical(answerShape(a)) === canonical(answerShape(b));
+}
+
+/**
+ * An item's feedback in terms of the option ids already stored, for an
+ * answered item whose wording changes but whose options stay (and keep their
+ * ids). Option feedback is matched by the option's text.
+ */
+export function feedbackForStored(item: AuthoredItem, storedData: unknown): Record<string, string> {
+  const out: Record<string, string> = {};
+  if (item.feedback.correct) out.correct = item.feedback.correct;
+  if (item.feedback.incorrect) out.incorrect = item.feedback.incorrect;
+  if (item.type === 'multipleChoice') {
+    const stored = (storedData as { options?: { id: string; text: string }[] }).options ?? [];
+    for (const o of item.options) {
+      const id = stored.find((s) => s.text === o.text)?.id;
+      if (id && o.feedback) out[id] = o.feedback;
+    }
+  }
+  return out;
+}
