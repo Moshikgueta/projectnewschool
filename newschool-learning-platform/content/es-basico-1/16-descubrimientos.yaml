@@ -1,0 +1,579 @@
+# Cycle "Descubrimientos", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: descubrimientos
+title: Descubrimientos
+goal: Describir acciones en presente y decir dónde está algo con preposiciones.
+position: 16
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Acciones en presente" and "Preposiciones") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The overview says skill 1 (acciones) is practised in Activities 2 and 3, but the
+    activity titles mark Activities 2 and 4 as ACCIONES and Activities 1 and 3 as
+    PREPOSICIONES. The plan note follows the activity titles (acciones: 2 and 4;
+    preposiciones: 1 and 3). Please confirm.
+  - >-
+    Activity 2's verb list was a literal translation ("Para escalar", "Para comer",
+    "Para volar", "Sonreir"); it is now "caminar, trepar, comer, sonreír, volar",
+    matching the examples and the vocabulary.
+  - >-
+    Activity 4: the answer frames "Me siento creativo cuando ___ / Soy lógico cuando
+    ___" did not answer the questions "¿Qué haces cuando…?"; they are now "Cuando me
+    siento creativo / creativa, yo ___" and "Cuando soy lógico / lógica, yo ___".
+    The verb "Plan" → "Planificar". The garbled emoji characters were removed.
+  - >-
+    Activity 4 presents "left brain / right brain" as psychology science. This is a
+    popular idea rather than established science; the teacher note calls it "una
+    idea popular". Please decide whether to keep the framing.
+  - >-
+    Images are missing from the notebook export: the animal picture (Activity 2), the
+    body-parts handout (Activity 3) and the brain picture (Activity 4). Teacher notes
+    say to prepare or share them; they need to be added to the course media.
+  - >-
+    Activity 3 (body parts) listed the model questions twice; the repeat was removed.
+    Its stage times (2 + 1 + 5 + 3–4 minutes) are recorded as 12 minutes. The other
+    activities have no time in the notebook, so none is given.
+  - >-
+    Mori extra Activity 1 message "¡Oye, Mori! Envíame un país/animal y te diré dónde
+    está. Me corregirás si tengo razón o no." is rewritten in the present tense (A1)
+    and with correct wording: "¡Hola, Mori! Dime un país o un animal y yo te digo
+    dónde está. Por favor, dime si mi respuesta es correcta." The notebook has no
+    tips for this cycle; the standard tips callout from the other cycles was added.
+  - >-
+    The Quizlet link's tracking parameter (funnelUUID) was removed.
+  - >-
+    Vocabulary: "Encima de" → "Arriba de / encima de" (the activity and the summary
+    use "arriba de"). The vocabulary has "Pierna" (leg), but Activity 3 uses "pie"
+    (foot), "boca", "nariz" — these are not in the vocabulary; consider adding them.
+  - >-
+    The summary's third part ("Preguntas y respuestas simples") is kept as a third
+    rule block, although it is not one of the cycle's two skills.
+  - >-
+    The "Respuesta del estudiante 1/2/3" lines are replaced by the optional answer
+    boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: descubrimientos-clase
+    title: 'Clase: Descubrimientos'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Descubrimientos
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Acciones en presente
+            description: Crear oraciones en presente con acciones (*El elefante camina.*)
+          - name: Preposiciones
+            description: '*arriba de, debajo de, al lado de, cerca de, lejos de*'
+      - id: quizlet
+        type: externalLink
+        label: Descubrimientos en Quizlet
+        url: https://quizlet.com/br/1058767411/espanol-basico-descubrimientos-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Me gusta aprender cosas nuevas sobre ___.
+        example: Soy Dana. Me gusta aprender cosas nuevas sobre política.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Cuál es tu país favorito? ¿Por qué?
+            frame: Mi país favorito es ___ porque ___.
+          - question: ¿Este país está cerca o lejos de Israel?
+            frame: Este país está cerca de / lejos de Israel.
+          - question: ¿Qué puedes hacer en ese país?
+            frame: Puedes ___, ___ y ___.
+          - question: ¿Cuál es tu animal favorito? ¿Por qué?
+            frame: Mi animal favorito es el / la ___ porque ___.
+          - question: ¿Dónde vive tu animal favorito?
+            frame: Vive en el / la ___.
+          - question: ¿Qué hace todos los días?
+            frame: Todos los días, ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: ¿Dónde está este país?'
+        skills: [Preposiciones]
+        steps:
+          - Repasa con tu profesor las preposiciones del banco de palabras.
+          - Tu profesor te da un país. Describe dónde está.
+          - 'Tu profesor pregunta: *¿El país ___ está cerca o lejos de ___?* Responde y haz la misma pregunta al siguiente estudiante, con otros dos países.'
+        wordBank: [arriba de, debajo de, al lado de, cerca de, lejos de]
+      - id: act1-frames
+        type: discussionQuestions
+        items:
+          - question: ¿Dónde está tu país?
+            frame: ___ está arriba de ___, debajo de ___ y al lado de ___.
+          - question: ¿El país ___ está cerca o lejos de ___?
+            frame: ___ está cerca de / lejos de ___.
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: ¿Qué hacen los animales?'
+        skills: [Acciones en presente]
+        steps:
+          - Mira la imagen de animales que muestra tu profesor.
+          - ¿Qué ves en la imagen? Di una cosa.
+          - Elige un animal y di qué hace.
+        example: |-
+          *El elefante camina.*
+          *La jirafa come.*
+          *El leopardo trepa.*
+          *El mono trepa.*
+          *El pájaro vuela.*
+        wordBank: [caminar, trepar, comer, sonreír, volar]
+      - id: act2-frames
+        type: discussionQuestions
+        items:
+          - question: ¿Qué ves en la imagen?
+            frame: Veo un / una ___.
+          - question: Elige un animal. ¿Qué hace?
+            frame: El / La ___ ___.
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: ¡Adivina!'
+        skills: [Preposiciones]
+        minutes: 12
+        steps:
+          - Mira la lista de partes del cuerpo (cabeza, mano, pie, boca, nariz, ojo, oreja).
+          - Un estudiante piensa en secreto en una parte del cuerpo. Es el **alumno misterioso**.
+          - Los demás hacen preguntas, uno por uno. El alumno misterioso responde *sí* o *no*.
+          - 'Para adivinar, pregunta: *¿Es la mano? ¿Es el pie?* Quien acierta es el nuevo alumno misterioso.'
+        example: |-
+          *¿Está en tu cara?*
+          *¿Está cerca de tus pies?*
+          *¿Usas esta parte para hablar?*
+          *¿Usas esta parte para ver?*
+          *¿Usas esta parte para caminar?*
+          *¿Usas esta parte para escribir?*
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: ¿Derecha o izquierda?'
+        skills: [Acciones en presente]
+        steps:
+          - Mira la imagen del cerebro que muestra tu profesor.
+          - Trabajen en parejas. El estudiante A pregunta al estudiante B, y después B pregunta a A (unos 4 minutos).
+          - Comparte con el grupo lo que respondió tu compañero. Usa la tercera persona.
+        example: |-
+          A: *¿Qué haces cuando te sientes creativo?*
+          B: *Cuando me siento creativo, dibujo e imagino cosas nuevas.*
+          *Yosi dibuja e imagina cosas nuevas cuando se siente creativo.*
+          *Dana cuenta y resuelve problemas cuando es lógica.*
+      - id: act4-brain
+        type: table
+        caption: Verbos para el lado derecho y el lado izquierdo
+        header: [Lado derecho (creativo), Lado izquierdo (lógico)]
+        rows:
+          - [dibujar, contar]
+          - [cantar, leer]
+          - [bailar, resolver]
+          - [imaginar, planificar]
+          - [crear, organizar]
+          - [jugar, estudiar]
+          - [escribir, pensar]
+      - id: act4-questions
+        type: discussionQuestions
+        items:
+          - question: ¿Qué **haces** cuando te sientes creativo / creativa?
+            frame: Cuando me siento creativo / creativa, yo ___.
+          - question: ¿Qué **haces** cuando eres lógico / lógica?
+            frame: Cuando soy lógico / lógica, yo ___.
+          - question: ¿Qué hace tu compañero cuando se siente creativo / creativa?
+            frame: ___ ___ cuando se siente creativo / creativa.
+          - question: ¿Qué hace tu compañero cuando es lógico / lógica?
+            frame: ___ ___ cuando es lógico / lógica.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Acciones en presente** (Actividades 2 y 4) y
+          **Preposiciones** (Actividades 1 y 3). Las preguntas de calentamiento practican
+          las dos.
+      - id: n-intro
+        anchor: intro
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Repasa las preposiciones con su traducción (arriba de – מעל ל, debajo de –
+          מתחת, al lado de – ליד, cerca de – קרוב ל, lejos de – רחוק מ). Da un país a cada
+          estudiante. Cuando todos hablaron, pregunta al alumno 1 si un país está cerca o
+          lejos de otro; él hace la misma pregunta al alumno 2 con otros dos países, y
+          así hasta que pasan todos.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          La imagen de animales no está en el cuaderno exportado: prepara una imagen con
+          varios animales (elefante, jirafa, leopardo, mono, pájaro) y compártela en
+          pantalla.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Preparación (2 min): reparte una lista corta con dibujos de partes del cuerpo y
+          escribe en la pizarra las preguntas modelo. Alumno misterioso (1 min),
+          preguntas guiadas (5 min), adivinar (3–4 min).
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Explica que, según una idea popular, el lado derecho del cerebro es creativo y
+          el izquierdo es lógico, y muestra una imagen del cerebro (no está en el
+          cuaderno exportado). Ajusta el tiempo de las parejas al grupo (unos 4 minutos).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: descubrimientos-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-present
+        type: ruleSummary
+        skill: Acciones en presente
+        rules:
+          - text: Usamos el presente simple para hablar de lo que pasa **ahora** o de lo que ocurre **siempre** (hábitos).
+          - text: '**Estructura:** sujeto + verbo + complemento.'
+            examples:
+              - Yo camino al parque.
+              - Ella canta en la clase.
+              - Nosotros estudiamos español.
+          - text: 'Los verbos cambian según la persona (*yo, tú, él / ella, nosotros…*).'
+            examples:
+              - Yo camino. · El elefante camina.
+      - id: animals-table
+        type: table
+        caption: Verbos que practicamos con animales
+        header: [Verbo, Ejemplo]
+        rows:
+          - [caminar, El elefante camina.]
+          - [comer, La jirafa come.]
+          - [volar, El pájaro vuela.]
+          - [trepar, El mono trepa.]
+          - [sonreír, El niño sonríe.]
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: Preposiciones
+        rules:
+          - text: Las preposiciones de lugar sirven para **decir dónde está algo**.
+          - text: Usamos estas palabras en preguntas y respuestas.
+            examples:
+              - ¿Este país está cerca de Israel? → Sí, está cerca.
+              - ¿Está tu boca en la cara? → Sí, está en la cara.
+      - id: prepositions-table
+        type: table
+        caption: Las preposiciones de lugar
+        header: [Preposición, Ejemplo]
+        rows:
+          - [Arriba de, El avión está arriba de la ciudad.]
+          - [Debajo de, El perro está debajo de la mesa.]
+          - [Al lado de, Israel está al lado de Jordania.]
+          - [Cerca de, Egipto está cerca de Israel.]
+          - [Lejos de, Japón está lejos de Israel.]
+      - id: rules-questions
+        type: ruleSummary
+        skill: Preguntas y respuestas
+        rules:
+          - text: Usamos las palabras interrogativas para obtener información.
+            examples:
+              - '**Qué:** ¿Qué hace la jirafa? → La jirafa come.'
+              - '**Dónde:** ¿Dónde vive el león? → Vive en África.'
+              - '**Quién:** ¿Quién canta? → Shakira canta.'
+              - '**Cuándo:** ¿Cuándo caminas? → Camino en la mañana.'
+      - id: conclusion
+        type: callout
+        tone: info
+        title: En conclusión
+        text: |-
+          Aprendimos a usar el presente simple para acciones (con animales, personas y rutinas).
+          Aprendimos a usar preposiciones para ubicar lugares y partes del cuerpo.
+          Practicamos preguntar y responder con frases cortas y claras.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: descubrimientos-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-main
+        type: aiTutorPrompt
+        title: Animales y países
+        message: >-
+          Hola Mori, quiero hablar sobre animales y países. ¿Puedes hacerme preguntas
+          usando preposiciones y acciones básicas en presente?
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Práctica adicional
+      - id: mori-donde
+        type: aiTutorPrompt
+        title: ¿Dónde está este lugar o animal?
+        intro: >-
+          Mori te da un país o un animal, y tú dices dónde está con una preposición.
+          Ejemplos: *Tailandia está lejos de Israel.* *La cebra vive cerca del río.*
+          *Estados Unidos está al lado de Canadá.*
+        message: >-
+          ¡Hola, Mori! Dime un país o un animal y yo te digo dónde está. Por favor, dime
+          si mi respuesta es correcta.
+      - id: mori-animales
+        type: aiTutorPrompt
+        title: ¿Qué hace el animal?
+        intro: >-
+          Mori te pregunta sobre diferentes animales. Di qué hace cada animal con verbos
+          como *caminar, trepar, comer, volar, correr*. Ejemplos: *La jirafa come hojas.*
+          *El mono sube al árbol.* *El pájaro vuela.* *El elefante camina.*
+        message: ¡Hola, Mori! Ahora hazme preguntas sobre los animales. ¿Qué hacen?
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: descubrimientos-practica
+    book: workbook
+    title: 'Práctica: Descubrimientos'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-acciones
+        type: activity
+        activity: descubrimientos-acciones
+      - id: ex-preposiciones
+        type: activity
+        activity: descubrimientos-preposiciones
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: descubrimientos-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de los descubrimientos
+        glossLang: he
+        link: https://quizlet.com/br/1058767411/espanol-basico-descubrimientos-flash-cards/
+        items: &descubrimientos-words
+          - { term: Animal, gloss: חיה }
+          - { term: Elefante, gloss: פיל }
+          - { term: Jirafa, gloss: ג'ירפה }
+          - { term: Leopardo, gloss: נמר }
+          - { term: Mono, gloss: קוף }
+          - { term: Pájaro, gloss: ציפור }
+          - { term: Trepar, gloss: לטפס }
+          - { term: Caminar, gloss: ללכת }
+          - { term: Comer, gloss: לאכול }
+          - { term: Volar, gloss: לעוף }
+          - { term: Sonreír, gloss: לחייך }
+          - { term: Dibujar, gloss: לצייר }
+          - { term: Cantar, gloss: לשיר }
+          - { term: Bailar, gloss: לרקוד }
+          - { term: Imaginar, gloss: לדמיין }
+          - { term: Crear, gloss: ליצור }
+          - { term: Escribir, gloss: לכתוב }
+          - { term: Contar, gloss: לספור }
+          - { term: Leer, gloss: לקרוא }
+          - { term: Resolver, gloss: לפתור }
+          - { term: Planificar, gloss: לתכנן }
+          - { term: Organizar, gloss: לארגן }
+          - { term: Estudiar, gloss: ללמוד }
+          - { term: Pensar, gloss: לחשוב }
+          - { term: Arriba de / encima de, gloss: מעל ל }
+          - { term: Debajo de, gloss: מתחת }
+          - { term: Cerca de, gloss: קרוב ל }
+          - { term: Al lado de, gloss: ליד }
+          - { term: Lejos de, gloss: רחוק מ }
+          - { term: Parte del cuerpo, gloss: חלק גוף }
+          - { term: Cabeza, gloss: ראש }
+          - { term: Mano, gloss: יד }
+          - { term: Pierna, gloss: רגל }
+          - { term: Ojo, gloss: עין }
+          - { term: Oreja, gloss: אוזן }
+
+vocabulary:
+  - slug: descubrimientos
+    title: Descubrimientos
+    items: *descubrimientos-words
+
+activities:
+  - slug: descubrimientos-acciones
+    title: Acciones en presente
+    minutes: 8
+    items:
+      - id: pajaro-vuela
+        type: multipleChoice
+        prompt: El pájaro ___.
+        options:
+          - { text: vuela, correct: true }
+          - {
+              text: volar,
+              feedback: '*Volar* es el infinitivo. Con *el pájaro* (él), el verbo cambia: *vuela*.',
+            }
+          - {
+              text: vuelan,
+              feedback: '*Vuelan* es para muchos (ellos). *El pájaro* es uno: *vuela*.',
+            }
+      - id: animales
+        type: fillBlank
+        prompt: Escribe el verbo en presente.
+        text: El elefante ___ (caminar). La jirafa ___ (comer). El mono ___ (trepar).
+        blanks: [[camina], [come], [trepa]]
+      - id: une-verbos
+        type: matching
+        prompt: Une cada verbo con su forma para *él / ella*.
+        pairs:
+          - [caminar, camina]
+          - [comer, come]
+          - [volar, vuela]
+          - [trepar, trepa]
+          - [sonreír, sonríe]
+      - id: cambian-persona
+        type: trueFalse
+        prompt: 'En español, los verbos cambian según la persona: *yo camino*, *ella camina*.'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *Yo camino*, *tú caminas*, *él camina*…
+          incorrect: 'Los verbos sí cambian según la persona: *yo camino*, *ella camina*.'
+      - id: nosotros-estudiamos
+        type: multipleChoice
+        prompt: Nosotros ___ español.
+        options:
+          - { text: estudiamos, correct: true }
+          - {
+              text: estudia,
+              feedback: '*Estudia* es para *él* o *ella*. Con *nosotros*: *estudiamos*.',
+            }
+          - { text: estudio, feedback: '*Estudio* es para *yo*. Con *nosotros*: *estudiamos*.' }
+      - id: que-hace-jirafa
+        type: multipleChoice
+        prompt: ¿Qué hace la jirafa?
+        options:
+          - { text: La jirafa come., correct: true }
+          - {
+              text: La jirafa comer.,
+              feedback: '*Comer* es el infinitivo. Con *la jirafa* (ella): *come*.',
+            }
+          - {
+              text: La jirafa comes.,
+              feedback: '*Comes* es para *tú*. Con *la jirafa* (ella): *come*.',
+            }
+      - id: creativo-logico
+        type: fillBlank
+        prompt: Escribe el verbo en presente.
+        text: Cuando me siento creativa, yo ___ (dibujar) cosas nuevas. Dana ___ (contar) y ___ (resolver) problemas cuando es lógica.
+        blanks: [[dibujo], [cuenta], [resuelve]]
+      - id: ordena-clase
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Ella canta en la clase.
+
+  - slug: descubrimientos-preposiciones
+    title: Preposiciones de lugar
+    minutes: 8
+    items:
+      - id: japon-lejos
+        type: multipleChoice
+        prompt: Japón está ___ Israel.
+        options:
+          - { text: lejos de, correct: true }
+          - { text: cerca de, feedback: 'Japón está muy lejos de Israel: *lejos de*.' }
+          - {
+              text: al lado de,
+              feedback: '*Al lado de* es muy cerca, sin nada entre los dos. Japón está *lejos de* Israel.',
+            }
+      - id: contrario
+        type: multipleChoice
+        prompt: ¿Cuál es lo contrario de *cerca de*?
+        options:
+          - { text: lejos de, correct: true }
+          - {
+              text: al lado de,
+              feedback: '*Al lado de* también es cerca. Lo contrario es *lejos de*.',
+            }
+          - {
+              text: debajo de,
+              feedback: '*Debajo de* es lo contrario de *arriba de*. Lo contrario de *cerca de* es *lejos de*.',
+            }
+      - id: une-hebreo
+        type: matching
+        prompt: Une cada preposición con su traducción.
+        pairs:
+          - [arriba de, מעל ל]
+          - [debajo de, מתחת]
+          - [al lado de, ליד]
+          - [cerca de, קרוב ל]
+          - [lejos de, רחוק מ]
+      - id: egipto-japon
+        type: fillBlank
+        prompt: Completa con *cerca*, *al lado* o *lejos*.
+        text: Egipto está ___ de Israel. Japón está ___ de Israel.
+        blanks: [[cerca, al lado], [lejos]]
+        wordBank: [cerca, al lado, lejos]
+      - id: cabeza-pies
+        type: trueFalse
+        prompt: La cabeza está arriba de los pies.
+        answer: true
+        feedback:
+          correct: ¡Correcto! La cabeza está arriba; los pies están abajo.
+          incorrect: 'La cabeza está **arriba de** los pies, y los pies están **debajo de** la cabeza.'
+      - id: perro-mesa
+        type: multipleChoice
+        prompt: El perro no está arriba de la mesa. Está ___ la mesa.
+        options:
+          - { text: debajo de, correct: true }
+          - {
+              text: arriba de,
+              feedback: 'El perro **no** está arriba. Lo contrario de *arriba de* es *debajo de*.',
+            }
+          - {
+              text: encima de,
+              feedback: '*Encima de* es lo mismo que *arriba de*. El perro está *debajo de* la mesa.',
+            }
+      - id: boca-cara
+        type: multipleChoice
+        prompt: ¿Está tu boca en la cara?
+        options:
+          - { text: 'Sí, está en la cara.', correct: true }
+          - { text: 'Sí, están en la cara.', feedback: '*La boca* es una: usa *está*, no *están*.' }
+          - { text: 'No, está en la mano.', feedback: 'La boca está en la cara, no en la mano.' }
+      - id: ordena-avion
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: El avión está arriba de la ciudad.
