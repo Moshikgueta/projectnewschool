@@ -1,0 +1,531 @@
+# Cycle "Viajes", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: viajes
+title: Viajes
+goal: Hacer y responder preguntas sobre viajes y dar direcciones.
+position: 9
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Preguntas" and "Direcciones") are NEW: the notebook
+    has no self-study exercises. They were written from the cycle's two skills, its
+    summary rules and its vocabulary. Please check level, wording and every right
+    answer before students see them.
+  - >-
+    Summary, skill 1: the source's "basic structure" (question word + verb + subject
+    + main verb) is the English pattern and does not fit Spanish. It is rewritten as
+    "question word + verb (+ subject) + the rest". Two short rules were added that
+    the workbook uses: questions open with ¿ and close with ?, and question words
+    carry an accent (qué, dónde, cuándo…). The negative example "¿Qué no tiene tu
+    país para turistas?" was replaced by "¿No viajas en verano?". Please confirm.
+  - >-
+    Corrections: Activity 2 "¿Dónde es el mejor lugar para hospedarse en [destino]?"
+    → "¿Dónde es mejor hospedarse en ___?"; "Practica adicional" → "Práctica
+    adicional"; "Ahora tú escribe una frase" → "Ahora tú escribes una frase".
+  - >-
+    Activity 4 has the same title as Activity 3 ("Agencia de viajes") but is a
+    rotating-pairs activity; it is renamed "Compañero de viaje". Please confirm.
+  - >-
+    Warm-up questions 4–6 have no sentence frames in the source; simple frames were
+    added ("En vacaciones visito ___", "Cuando viajo, me gusta ___", "Cuando viajo,
+    me gusta comer ___").
+  - >-
+    The two Mori "Práctica adicional" activities had only instructions and examples,
+    not a message to send. A message was written for each from those instructions.
+  - >-
+    Unsure: in Activity 1, the answer "Mi maleta" to "¿Qué empacas para un viaje?"
+    is a little odd (you pack things into your suitcase). It is kept as in the
+    source. The plan says skill 2 (Direcciones) is practised in Activities 3, 4 and 5,
+    but Activities 4 and 5 are mostly questions; the plan is kept as in the source.
+  - >-
+    Vocabulary: "Agencia" (סוכנות נסיעות) is written "Agencia de viajes". The Quizlet
+    link is kept without its tracking parameters. The source gives no activity times,
+    so no minutes are recorded. The "Respuesta del estudiante 1/2/3" lines are
+    replaced by the optional answer boxes (decision C2).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: viajes-clase
+    title: 'Clase: Viajes'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Viajes
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Hacer y responder preguntas
+            description: '*Qué, dónde, cuándo, quién, cuál, por qué, cómo*'
+          - name: Dar direcciones
+            description: '*Sigue recto, gira a la izquierda, camina dos cuadras*'
+      - id: quizlet
+        type: externalLink
+        label: Viajes en Quizlet
+        url: https://quizlet.com/br/1064751034/viajes-actualizado-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Yo soy ___. Quiero viajar a ___.
+        example: Yo soy Dana. Quiero viajar a México.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿A dónde te gusta viajar? ¿Por qué?
+            frame: Me gusta viajar a ___ porque ___.
+          - question: ¿Prefieres un destino cálido o frío? ¿Por qué?
+            frame: Prefiero un destino ___ porque ___.
+          - question: ¿Prefieres viajar solo / sola o con gente? ¿Por qué?
+            frame: Prefiero ___ porque ___.
+          - question: ¿Qué lugares visitas en vacaciones?
+            frame: En vacaciones visito ___.
+          - question: ¿Qué actividades te gusta hacer cuando viajas?
+            frame: Cuando viajo, me gusta ___.
+          - question: ¿Qué te gusta comer cuando viajas?
+            frame: Cuando viajo, me gusta comer ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Adivina la pregunta'
+        skills: [Hacer y responder preguntas]
+        steps:
+          - Lee la respuesta.
+          - Di cuál es la pregunta.
+        example: |-
+          *Respuesta: En julio.*
+          *➤ Pregunta: ¿Cuándo vas de vacaciones?*
+      - id: act1-answers
+        type: discussionQuestions
+        title: ¿Cuál es la pregunta?
+        items:
+          - question: 'Respuesta: *A la playa.*'
+            frame: ¿___?
+          - question: 'Respuesta: *Mi maleta.*'
+            frame: ¿___?
+          - question: 'Respuesta: *Con mis amigos.*'
+            frame: ¿___?
+          - question: 'Respuesta: *Porque me gusta explorar.*'
+            frame: ¿___?
+          - question: 'Respuesta: *En avión.*'
+            frame: ¿___?
+          - question: 'Respuesta: *París.*'
+            frame: ¿___?
+          - question: 'Respuesta: *Una cámara.*'
+            frame: ¿___?
+          - question: 'Respuesta: *En un hotel.*'
+            frame: ¿___?
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Investigación'
+        skills: [Hacer y responder preguntas]
+        steps:
+          - Trabajen en parejas.
+          - Elijan un destino que no visitaron e investiguen en internet.
+          - Respondan a las preguntas de abajo.
+          - Compartan su investigación con la clase.
+      - id: act2-questions
+        type: discussionQuestions
+        title: Nuestro destino
+        items:
+          - question: ¿**Cuál** es la comida más popular en ___?
+          - question: ¿**Dónde** es mejor hospedarse en ___?
+          - question: ¿**Cuándo** es la mejor época del año para visitar ___?
+          - question: ¿**Qué** atracciones no debo perderme en ___?
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3 (opcional): Agencia de viajes'
+        skills: [Hacer y responder preguntas, Dar direcciones]
+        steps:
+          - 'En parejas: un estudiante es el viajero y el otro es el agente de viajes.'
+          - El viajero hace las preguntas de abajo.
+          - El agente responde con ideas creativas. Usa frases de direcciones.
+          - Cambien de rol.
+          - Compartan sus experiencias con el grupo.
+      - id: act3-questions
+        type: discussionQuestions
+        items:
+          - question: ¿Adónde debo ir?
+          - question: ¿Qué puedo comer allí?
+          - question: ¿Qué debo empacar?
+          - question: ¿Cómo llego a la playa?
+            frame: Sigue recto ___ cuadras y gira a la ___. La playa está ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Compañero de viaje'
+        skills: [Hacer y responder preguntas, Dar direcciones]
+        steps:
+          - Trabajen en parejas. Cada uno hace las preguntas de abajo.
+          - Después de 3 minutos, tu profesor cambia las parejas. Repitan las preguntas.
+          - Cambien de pareja otra vez.
+          - 'Con todo el grupo: di qué tienes en común con tus compañeros y, si quieres, elige a tu «compañero de viaje».'
+      - id: act4-questions
+        type: discussionQuestions
+        items:
+          - question: ¿Adónde quieres viajar?
+            frame: Quiero viajar a ___.
+          - question: ¿Qué empacas?
+            frame: Empaco ___.
+          - question: ¿Qué comes cuando viajas?
+            frame: Cuando viajo, como ___.
+          - question: ¿Vas con familia o con amigos?
+            frame: Voy con ___.
+      - id: act5
+        type: classActivity
+        title: 'Actividad 5: La ruleta viajera'
+        skills: [Hacer y responder preguntas]
+        steps:
+          - Gira la ruleta y responde la pregunta.
+          - 'Si te toca un espacio vacío, inventa una pregunta nueva para otro estudiante: *¿Qué música escuchas cuando viajas?*'
+        resource:
+          label: La ruleta viajera
+          url: https://wheelofnames.com/4hy-8ac
+      - id: act5-questions
+        type: discussionQuestions
+        title: Preguntas de la ruleta
+        items:
+          - question: ¿Adónde quieres viajar?
+          - question: ¿Con quién viajas normalmente?
+          - question: ¿Qué empacas en tu maleta?
+          - question: ¿Qué te gusta comer cuando viajas?
+          - question: ¿Qué transporte usas cuando viajas?
+          - question: ¿Prefieres un destino cálido o frío?
+          - question: ¿Qué lugares visitas en vacaciones?
+          - question: ¿Dónde duermes cuando viajas?
+          - question: ¿Qué haces en la playa?
+          - question: ¿Qué haces en la ciudad?
+          - question: ¿Qué actividad te gusta hacer en vacaciones?
+          - question: ¿Qué souvenir compras cuando viajas?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Hacer y responder preguntas** (preguntas de
+          calentamiento, Actividades 1 y 2) y **Dar direcciones** (vocabulario de
+          ubicación, preguntas de direcciones, Actividades 3, 4 y 5). La Actividad 3 es
+          opcional.
+      - id: n-intro
+        anchor: intro
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Las preguntas esperadas: A la playa → ¿Adónde vas en verano? · Mi maleta →
+          ¿Qué empacas para un viaje? · Con mis amigos → ¿Con quién viajas? · Porque me
+          gusta explorar → ¿Por qué viajas? · En avión → ¿Cómo viajas a otro país? ·
+          París → ¿Adónde quieres ir? · Una cámara → ¿Qué llevas en un viaje? · En un
+          hotel → ¿Dónde duermes cuando viajas? Acepta otras preguntas correctas.
+      - id: n-act4
+        anchor: act4
+        text: Cambia las parejas cada 3 minutos (por ejemplo, con Breakout Rooms). Al final, cada estudiante comparte en plenario.
+      - id: n-act5
+        anchor: act5
+        text: Comparte la ruleta en pantalla y gírala para cada estudiante.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: viajes-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-preguntas
+        type: ruleSummary
+        skill: Hacer y responder preguntas
+        rules:
+          - text: 'Las palabras interrogativas más comunes llevan tilde: *qué, dónde, cuándo, quién, cuál, por qué, cómo*.'
+          - text: 'Estructura básica: palabra interrogativa + verbo (+ sujeto) + el resto. La pregunta empieza con **¿** y termina con **?**.'
+            examples:
+              - ¿Qué haces en vacaciones?
+              - ¿Dónde duermes cuando viajas?
+          - text: 'Preguntas negativas: agrega **no** antes del verbo, o usa **¿Acaso no…?**'
+            examples:
+              - ¿No viajas en verano?
+              - ¿Acaso no hay un festival famoso cada año?
+      - id: rules-direcciones
+        type: ruleSummary
+        skill: Dar direcciones
+        rules:
+          - text: Usa frases cortas y claras.
+            examples: [Sigue recto., Gira a la izquierda., Camina dos cuadras.]
+          - text: Usa palabras de ubicación.
+            examples: [Al lado de…, Frente a…, A la derecha / a la izquierda.]
+          - text: Da instrucciones paso a paso.
+            examples:
+              - Sigue recto dos cuadras.
+              - Gira a la derecha en el semáforo.
+              - Pasa la panadería, el museo está a la izquierda.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: viajes-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-viajes
+        type: aiTutorPrompt
+        title: Hablar de viajes
+        message: >-
+          Hola Mori, quiero practicar español. ¿Puedes hacerme preguntas sobre viajes
+          usando las habilidades de direcciones y preguntas en presente simple? Corrige
+          mis errores, por favor.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes algo? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Práctica adicional
+      - id: mori-direcciones
+        type: aiTutorPrompt
+        title: Pedir direcciones
+        intro: >-
+          Tú preguntas y Mori da las direcciones (por ejemplo: *Sigue recto, gira a la
+          izquierda, está al lado del banco.*). Después, Mori pregunta y tú respondes.
+        message: >-
+          ¡Hola Mori! Quiero practicar direcciones. Yo te pregunto cómo llegar a un lugar
+          y tú me das las direcciones. Después, tú me preguntas y yo respondo. Corrige
+          mis errores, por favor. ¿Cómo llego a la estación de tren?
+      - id: mori-preguntas
+        type: aiTutorPrompt
+        title: Hacer preguntas sobre viajes
+        intro: >-
+          Tú escribes una frase y Mori hace la pregunta (por ejemplo: *Viajo en avión.*
+          → *¿Cómo viajas?*). Después, Mori escribe una frase y tú haces la pregunta.
+        message: >-
+          ¡Hola Mori! Quiero practicar preguntas sobre viajes. Yo escribo una frase y tú
+          haces una pregunta para esa respuesta. Después, tú escribes una frase y yo hago
+          la pregunta. Corrige mis errores, por favor. Mi primera frase: Viajo en avión.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: viajes-practica
+    book: workbook
+    title: 'Práctica: Viajes'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-preguntas
+        type: activity
+        activity: viajes-preguntas
+      - id: ex-direcciones
+        type: activity
+        activity: viajes-direcciones
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: viajes-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de viajes
+        glossLang: he
+        link: https://quizlet.com/br/1064751034/viajes-actualizado-flash-cards/
+        items: &viajes-words
+          - { term: Viajar, gloss: לטייל }
+          - { term: Viaje, gloss: טיול }
+          - { term: Vacaciones, gloss: חופשה }
+          - { term: Destino, gloss: יעד }
+          - { term: Lugares, gloss: מקומות }
+          - { term: Actividades, gloss: פעילויות }
+          - { term: Comer, gloss: לאכול }
+          - { term: Maleta, gloss: מזוודה }
+          - { term: Transporte, gloss: תחבורה }
+          - { term: Playa, gloss: חוף }
+          - { term: Ciudad, gloss: עיר }
+          - { term: Hotel, gloss: מלון }
+          - { term: Souvenir, gloss: מזכרת }
+          - { term: Cámara, gloss: מצלמה }
+          - { term: Avión, gloss: מטוס }
+          - { term: Familia, gloss: משפחה }
+          - { term: Amigos, gloss: חברים }
+          - { term: Preguntas, gloss: שאלות }
+          - { term: Respuestas, gloss: תשובות }
+          - { term: Agencia de viajes, gloss: סוכנות נסיעות }
+          - { term: Direcciones, gloss: הוראות דרך }
+          - { term: Izquierda, gloss: שמאלה }
+          - { term: Derecha, gloss: ימינה }
+          - { term: Recto, gloss: ישר }
+          - { term: Cuadras, gloss: בלוקים }
+          - { term: Mapa, gloss: מפה }
+          - { term: Estación, gloss: תחנה }
+          - { term: Banco, gloss: בנק }
+          - { term: Museo, gloss: מוזיאון }
+          - { term: Restaurante, gloss: מסעדה }
+          - { term: Explorar, gloss: לחקור }
+          - { term: Empacar, gloss: לארוז }
+          - { term: Dormir, gloss: לישון }
+          - { term: Clima, gloss: מזג אוויר }
+          - { term: Cálido, gloss: חם }
+          - { term: Frío, gloss: קר }
+          - { term: Beber, gloss: לשתות }
+          - { term: Música, gloss: מוזיקה }
+          - { term: Preguntar, gloss: לשאול }
+          - { term: Responder, gloss: לענות }
+
+vocabulary:
+  - slug: viajes
+    title: Viajes
+    items: *viajes-words
+
+activities:
+  - slug: viajes-preguntas
+    title: 'Preguntas: qué, dónde, cuándo, cómo'
+    minutes: 8
+    items:
+      - id: une-respuestas
+        type: matching
+        prompt: Une cada pregunta con su respuesta.
+        pairs:
+          - [¿Cuándo vas de vacaciones?, En julio.]
+          - [¿Adónde vas en verano?, A la playa.]
+          - [¿Con quién viajas?, Con mis amigos.]
+          - [¿Cómo viajas a otro país?, En avión.]
+          - [¿Dónde duermes cuando viajas?, En un hotel.]
+      - id: por-que
+        type: multipleChoice
+        prompt: 'Respuesta: *Porque me gusta explorar.* ¿Cuál es la pregunta?'
+        options:
+          - { text: ¿Por qué viajas?, correct: true }
+          - {
+              text: ¿Cuándo viajas?,
+              feedback: '*Cuándo* pregunta por el tiempo: *En julio.* Para *Porque…* la pregunta es *¿Por qué…?*',
+            }
+          - {
+              text: ¿Con quién viajas?,
+              feedback: '*Con quién* pregunta por personas: *Con mis amigos.* Para *Porque…* la pregunta es *¿Por qué…?*',
+            }
+      - id: donde-quien
+        type: fillBlank
+        prompt: Completa la pregunta.
+        text: ¿___ duermes cuando viajas? — En un hotel. ¿Con ___ viajas? — Con mis amigos.
+        blanks: [[Dónde], [quién]]
+      - id: pregunta-correcta
+        type: multipleChoice
+        prompt: ¿Qué pregunta está bien escrita?
+        options:
+          - { text: ¿Cuándo vas de vacaciones?, correct: true }
+          - {
+              text: ¿Vas cuándo de vacaciones?,
+              feedback: 'La palabra interrogativa va primero, y después el verbo: *¿Cuándo vas…?*',
+            }
+          - { text: ¿Cuando vas de vacaciones?, feedback: 'En una pregunta, *cuándo* lleva tilde.' }
+      - id: signos
+        type: trueFalse
+        prompt: 'En español, una pregunta empieza con *¿* y termina con *?*.'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *¿Qué haces en vacaciones?*
+          incorrect: 'En español escribimos los dos signos: *¿Qué haces en vacaciones?*'
+      - id: acaso-no
+        type: fillBlank
+        prompt: Completa la pregunta negativa.
+        text: ¿Acaso ___ hay un festival famoso cada año?
+        blanks: [[no]]
+      - id: ordena-comer
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: ¿Qué te gusta comer cuando viajas?
+      - id: tu-pregunta
+        type: shortAnswer
+        prompt: 'Escribe una pregunta para esta respuesta: *En avión.*'
+
+  - slug: viajes-direcciones
+    title: 'Direcciones: sigue recto, gira a la izquierda'
+    minutes: 8
+    items:
+      - id: une-ubicacion
+        type: matching
+        prompt: Une cada expresión con su traducción.
+        pairs:
+          - [al lado de, ליד]
+          - [frente a, מול]
+          - [a la derecha, ימינה]
+          - [a la izquierda, שמאלה]
+          - [recto, ישר]
+      - id: llego-playa
+        type: multipleChoice
+        prompt: —¿Cómo llego a la playa? ¿Qué respuesta da direcciones?
+        options:
+          - { text: Sigue recto dos cuadras y gira a la izquierda., correct: true }
+          - {
+              text: Me gusta la playa.,
+              feedback: 'Esta frase no dice cómo llegar. Usa frases como *sigue recto* o *gira a la izquierda*.',
+            }
+          - {
+              text: En julio.,
+              feedback: 'Esta respuesta dice cuándo, no cómo llegar. Usa frases como *sigue recto* o *gira a la izquierda*.',
+            }
+      - id: sigue-gira
+        type: fillBlank
+        prompt: Completa con *Sigue* o *Gira*.
+        text: ___ recto dos cuadras. ___ a la derecha en el semáforo.
+        blanks: [[Sigue, Camina, Ve], [Gira, Dobla]]
+        wordBank: [Sigue, Gira]
+      - id: derecha-izquierda
+        type: fillBlank
+        prompt: Completa con la palabra en español.
+        text: Gira a la ___ (ימינה). El museo está a la ___ (שמאלה).
+        blanks: [[derecha], [izquierda]]
+      - id: frases-cortas
+        type: trueFalse
+        prompt: 'Para dar direcciones, es mejor usar frases cortas y claras: *Sigue recto. Gira a la izquierda.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! Frases cortas y paso a paso.
+          incorrect: 'Las direcciones son más claras con frases cortas y paso a paso: *Sigue recto. Gira a la izquierda.*'
+      - id: frente-al
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: El museo está frente al parque., correct: true }
+          - {
+              text: El museo está frente a el parque.,
+              feedback: 'Decimos *al* (a + el): *frente al parque*.',
+            }
+          - {
+              text: El museo está frente la parque.,
+              feedback: '*Parque* es masculino y necesitamos *a*: *frente al parque*.',
+            }
+      - id: ordena-panaderia
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Pasa la panadería, el museo está a la izquierda.
+      - id: ordena-camina
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Camina dos cuadras y gira a la derecha.

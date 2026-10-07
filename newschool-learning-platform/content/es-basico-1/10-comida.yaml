@@ -1,0 +1,527 @@
+# Cycle "Comida", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: comida
+title: Comida
+goal: Hablar de comida con verbos en presente y posesivos.
+position: 10
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Verbos en presente" and "Posesivos") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary, verbs: the source explains only -ar and -er verbs. Two short additions
+    were made because Activity 1 uses these verbs: -ir verbs (abrir → abro, abres)
+    and the irregular forms poner → pongo and cerrar → cierro. Rule 3 ("¡Es simple! Y
+    con práctica lo logras" followed by a broken emoji character) is kept as an
+    encouraging line without the emoji. Please confirm.
+  - >-
+    Summary, possessives rule 2 ("Una oración posesiva = Elemento posesivo + De quién
+    es") was unclear. It is rewritten as "possessive + noun; mi, tu, su do not change
+    for masculine/feminine, and take -s in the plural; nuestro/vuestro also change
+    for feminine". Please confirm.
+  - >-
+    Possessives table (shown after the introduction round and again in the summary
+    in the source; kept once, in the summary): the row labelled "Vuestros" had the
+    example "vuestras comidas" and is relabelled "Vuestras"; "Mi hermana es muy
+    despistada Su leche está ácida" → "Mi hermana es muy despistada. Su leche está
+    agria."; "Tus invitados a la boda son: Tu familia…" → "Tus invitados a la boda son
+    tu familia…"; "Sus frutas favoritas son: Banana, naranja y manzana" → "Sus frutas
+    favoritas son la banana, la naranja y la manzana"; "Mi hermana ordena unas papas
+    fritas" → "Mi hermana pide unas papas fritas"; missing commas and full stops
+    added.
+  - >-
+    Other corrections: "sandwich" → "sándwich"; Activity 3 "usando: mi, nuestro, tu,
+    su, ella, su" → "usando mi, nuestro, tu, su"; Activity 3 example title "Tu lista
+    de invitados" → "Mi lista de invitados" (it is the teacher's list); Activity 2
+    "Entonces tu comes" → "Entonces tú comes", "Pagan en efectivo…?" → "¿Pagan en
+    efectivo…?", the "¡Sí!" before the main-course orders was removed, and the
+    Hebrew "רוצים להזמין?" after "¿Quieren ordenar?" was moved to the vocabulary
+    (Ordenar). Mori messages "Mori, pregúntame frases con verbos…/con posesivos" →
+    "Mori, pídeme frases con verbos…" and "Mori, hazme preguntas con posesivos…".
+  - >-
+    The plan in the source refers to warm-up questions 6 and 7, but the notebook
+    has only 5 warm-up questions. The teacher note lists the skills without
+    question numbers. Please check whether questions are missing.
+  - >-
+    The restaurant menu for Activity 2 is not linked in the notebook. The teacher
+    shares it on screen (see the teacher note); it should move into the course's own
+    media.
+  - >-
+    Vocabulary: "Tarjeta" (כרטיס אשראי) is written "Tarjeta de crédito". The Quizlet
+    link is kept without its "?new" parameter. The source gives no activity times,
+    so no minutes are recorded. The "Respuesta de alumno 1/2/3" lines are replaced
+    by the optional answer boxes (decision C2).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: comida-clase
+    title: 'Clase: Comida'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Comida
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Verbos en presente
+            description: 'Los verbos con *yo* y *tú*: *yo como, tú comes; yo cocino, tú cocinas*'
+          - name: Posesivos
+            description: '*mi, tu, su, nuestro, vuestro* y sus plurales'
+      - id: quizlet
+        type: externalLink
+        label: Comida en Quizlet
+        url: https://quizlet.com/856050542/basic-spanish-food-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Mi comida favorita es la / el ___ (pizza, hamburguesa, lasaña…).
+        example: Soy Dana. Mi comida favorita es el chocolate.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Qué te gusta comer?
+            frame: Me gusta comer ___ porque ___.
+          - question: ¿Qué cocinas?
+            frame: Yo cocino ___.
+          - question: ¿Cuál es tu restaurante favorito?
+            frame: Mi restaurante favorito es ___.
+          - question: ¿Cuál es el sabor de tu comida favorita?
+            frame: Mi comida favorita es ___. Es salada / dulce / amarga.
+          - question: ¿Cuál es tu ingrediente favorito para cocinar?
+            frame: Mi ingrediente favorito para cocinar es ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Tu sándwich favorito'
+        skills: [Verbos en presente, Posesivos]
+        steps:
+          - Busca en internet los ingredientes de tu sándwich favorito en español (no más de 5 ingredientes).
+          - 'Explica a la clase cómo haces tu sándwich. Usa el verbo en infinitivo (*cortar el pan*) o con *yo* (*corto el pan*).'
+        example: |-
+          *1. Cortar el pan por la mitad. 2. Agregar queso y tomate. 3. Cerrar el sándwich.*
+          *1. Corto el pan por la mitad. 2. Agrego queso y tomate. 3. Cierro el sándwich.*
+      - id: act1-verbs
+        type: table
+        caption: Verbos para tu sándwich
+        header: [Infinitivo, Yo, Hebreo]
+        rows:
+          - [Cortar, Yo corto, לחתוך]
+          - [Abrir, Yo abro, לפתוח]
+          - [Cerrar, Yo cierro, לסגור]
+          - [Untar, Yo unto, למרוח]
+          - [Poner, Yo pongo, לשים]
+          - [Agregar, Yo agrego, להוסיף]
+      - id: act1-sandwich
+        type: discussionQuestions
+        title: Este es mi sándwich favorito
+        items:
+          - question: 'El nombre de mi sándwich es: ___'
+          - question: 'Los ingredientes de mi sándwich son: ___'
+          - question: 'Paso 1: ___'
+          - question: 'Paso 2: ___'
+          - question: 'Paso 3: ___'
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: ¿Salimos a comer?'
+        skills: [Verbos en presente]
+        steps:
+          - Mira el menú de un restaurante de comida latinoamericana que comparte tu profesor.
+          - Entre todos, piensen un nombre divertido para el restaurante.
+          - Un estudiante es el camarero; los otros son los clientes.
+          - El camarero anota lo que pide cada cliente y lo repite.
+          - Sigan el diálogo de abajo.
+      - id: act2-dialogue
+        type: dialogue
+        lines:
+          - {
+              speaker: Camarero,
+              text: '¡Buenos días / Buenas tardes / Buenas noches! Bienvenidos a ___. ¿Quieren ordenar?',
+            }
+          - { speaker: Cliente 1, text: '¡Sí! De entrada, yo como ___ y bebo ___.' }
+          - { speaker: Cliente 2, text: De entrada, yo como ___ y bebo ___. }
+          - { speaker: Camarero, text: Entonces tú bebes ___ y de entrada comes ___. }
+          - { speaker: Camarero, text: ¿Cómo está la comida? ¿Cómo está la bebida? }
+          - {
+              speaker: Cliente 1,
+              text: El / La ___ está muy rico / rica / frío / seco. La bebida está muy fresca / rica.,
+            }
+          - { speaker: Camarero, text: ¿Qué quieren comer de plato principal? }
+          - { speaker: Cliente 1, text: De plato principal, yo como ___. }
+          - { speaker: Cliente 2, text: De plato principal, yo como ___. }
+          - { speaker: Camarero, text: Entonces tú comes ___ y tú comes ___. }
+          - { speaker: Camarero, text: ¿Pagan en efectivo o con tarjeta de crédito? }
+          - { speaker: Cliente 1, text: Yo pago en efectivo. }
+          - { speaker: Cliente 2, text: Yo pago con tarjeta de crédito. }
+          - { speaker: Camarero, text: ¡Muchas gracias por venir! ¡Vuelvan pronto! }
+          - { speaker: Clientes, text: ¡Muchas gracias! ¡Su comida es deliciosa! }
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Los invitados a tu boda y quién come qué'
+        skills: [Posesivos, Verbos en presente]
+        steps:
+          - Escucha la lista de invitados de tu profesor. Fíjate en *mi, nuestro, tu, su*.
+          - Escribe tu lista de invitados.
+          - 'Tu profesor dice qué come y qué bebe alguien de su familia, y te pregunta a ti.'
+          - Repite lo que dijo la persona anterior, di qué come y qué bebe alguien de tu familia, y pregunta al siguiente estudiante.
+        example: |-
+          **Mi lista de invitados a la boda:** 1. Mi esposo / esposa. 2. Nuestros amigos del trabajo. 3. Su mejor amiga (la mejor amiga de mi esposo / esposa). 4. Sus socios (los socios de mi esposo / esposa).
+          *Profesor: Mi madre come pescado y bebe vino blanco. Alumno 1, ¿qué come y qué bebe tu madre?*
+          *Alumno 1: Tu madre come pescado y bebe vino blanco. Mi madre come pizza y bebe cerveza. Alumno 2, ¿qué come y qué bebe tu hermano?*
+          *Alumno 2: Tu madre come pizza y bebe cerveza. Mi hermano come hamburguesa y bebe agua.*
+      - id: act3-list
+        type: discussionQuestions
+        title: Mi lista de invitados
+        items:
+          - question: 'Mi ___'
+          - question: 'Nuestros ___'
+          - question: 'Su ___'
+          - question: 'Sus ___'
+          - question: Mi ___ come ___ y bebe ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Verbos en presente** (ronda de introducción,
+          preguntas de calentamiento, Actividad 1 o Actividad 2) y **Posesivos** (ronda de
+          introducción, preguntas de calentamiento, Actividad 1 o Actividad 3). La
+          Actividad 1 sirve para las dos habilidades.
+      - id: n-intro
+        anchor: intro
+        text: >-
+          Da tu propio ejemplo primero y después pregunta a cada estudiante. Puedes
+          mostrar la tabla de posesivos del resumen.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Lo importante es que el alumno diga los verbos en infinitivo y así reconozca
+          los que terminan en -ar, -er o -ir, o que use los verbos en primera persona
+          (yo).
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Comparte en pantalla el menú del restaurante (el menú no está en el cuaderno
+          ni en la plataforma). El camarero debe anotar lo que pide cada cliente y
+          repetirlo para cada uno («Entonces tú bebes… y comes…»).
+      - id: n-act3
+        anchor: act3
+        text: Empieza con tu lista de invitados y tu ejemplo («Mi madre come pescado y bebe vino blanco»). Cada alumno repite lo que dijo el anterior con *tu* y después habla de su familia con *mi*.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: comida-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-verbos
+        type: ruleSummary
+        skill: Verbos en presente
+        rules:
+          - text: 'Con **yo**: borra *-ar / -er / -ir* y agrega **-o**.'
+            examples: [comer → yo com**o**, cocinar → yo cocin**o**, abrir → yo abr**o**]
+          - text: 'Con **tú**: borra *-ar* y agrega **-as**; borra *-er / -ir* y agrega **-es**.'
+            examples: [cocinar → tú cocin**as**, comer → tú com**es**, abrir → tú abr**es**]
+          - text: 'Algunos verbos cambian con *yo*.'
+            examples: [poner → yo **pongo**, cerrar → yo **cierro**]
+          - text: 'No escribas *soy, es, son* si tienes un verbo. Escribe la persona y el verbo.'
+            examples: [Yo como pizza en mi casa. (No «yo soy como pizza en mi casa».)]
+          - text: ¡Es simple! Con práctica, lo logras.
+      - id: rules-posesivos
+        type: ruleSummary
+        skill: Posesivos
+        rules:
+          - text: 'Primero el posesivo y después la cosa: **mi** comida, no «comida mi» (en hebreo: האוכל **שלי**).'
+          - text: '*Mi, tu, su* son iguales con masculino y femenino; con el plural son *mis, tus, sus*. *Nuestro* y *vuestro* también cambian con el femenino: *nuestra, vuestra*.'
+            examples: [Mi amigo · Mi amiga · Mis amigas, Nuestro restaurante · Nuestra panadería]
+          - text: Elige la palabra de la tabla.
+      - id: possessives-table
+        type: table
+        caption: Los posesivos
+        header: [Posesivo, Ejemplo]
+        rows:
+          - [Mi, Mi **comida** favorita es la pizza.]
+          - [Mis, Mis **amigas** comen en el restaurante.]
+          - [Tu, Tu **comida** favorita es el sushi.]
+          - [Tus, 'Tus **invitados** a la boda son tu familia, tus amigos y tus colegas.']
+          - [Nuestro, Mi esposo y yo tenemos un restaurante. Nuestro **restaurante** es muy grande.]
+          - [Nuestra, Mi esposa y yo tenemos una panadería. Nuestra **panadería** es bonita.]
+          - [Nuestros, Mi esposo y yo tenemos un restaurante. Nuestros **ñoquis** son deliciosos.]
+          - [
+              Nuestras,
+              Mi esposa y yo tenemos una panadería. Nuestras **magdalenas** son deliciosas.,
+            ]
+          - [Su (שלה), Mi hermana es muy despistada. Su **leche** está agria.]
+          - [
+              Sus (שלה),
+              'Mi hermana pide unas papas fritas, pero sus **papas fritas** no están listas.',
+            ]
+          - [Su (שלו), A mi padre le encanta el chocolate. Su **chocolate** favorito es el blanco.]
+          - [
+              Sus (שלו),
+              'Mi hermano come saludable. Sus **frutas** favoritas son la banana, la naranja y la manzana.',
+            ]
+          - [Su (שלכם / שלכן), 'Hermanos, ¿cuál es su **restaurante** favorito?']
+          - [Sus (שלכם / שלכן), 'Amigas, ¿cuáles son sus **comidas** favoritas?']
+          - [Vuestro, '¿Cuál es vuestro **restaurante** favorito?']
+          - [Vuestras, 'Amigas, ¿cuáles son vuestras **comidas** favoritas?']
+          - [Su (שלהם / שלהן), ¡Mis amigos se casan! Su **boda** es el próximo año.]
+          - [
+              Sus (שלהם / שלהן),
+              Mis amigos no son buenos cocineros. Sus **pastelitos** no son buenos.,
+            ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: comida-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia un mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-verbos
+        type: aiTutorPrompt
+        title: 'Parte 1: Verbos en presente'
+        intro: Mori te pide frases con verbos como *cortar*, *poner* y *beber*, una por una, y corrige el verbo si no está bien conjugado.
+        message: Mori, pídeme frases con verbos de comida en YO y corrige mis errores.
+      - id: mori-posesivos
+        type: aiTutorPrompt
+        title: 'Parte 2: Posesivos'
+        intro: 'Mori te hace preguntas como *¿Cuál es tu comida favorita?* o *¿Cuál es la comida favorita de tu hermano?*, y corrige si usas mal *mi / tu / su / nuestro*.'
+        message: Mori, hazme preguntas con posesivos y corrige mis errores.
+      - id: mori-restaurante
+        type: aiTutorPrompt
+        title: 'Parte 3: Role-play en el restaurante'
+        intro: 'Mori empieza: *¡Buenas tardes! ¿Qué quieres ordenar?* Tú respondes, y Mori confirma tu pedido y corrige el vocabulario y los verbos.'
+        message: Mori, haz conmigo un role-play de restaurante. Tú eres el camarero y yo soy el cliente. Corrige mis errores.
+      - id: mori-diario
+        type: aiTutorPrompt
+        title: 'Parte 4: Mini diario de comida'
+        intro: Mori te pregunta qué comes en el desayuno, en el almuerzo y en la cena, y cuál es tu comida favorita y la de tu familia.
+        message: Mori, hazme preguntas para mi diario de comida y corrige mis errores.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          Siempre empieza con **«Mori, pregúntame…»** o **«Mori, hazme preguntas…»** y termina con **«…y corrige mis errores.»**
+          Así la práctica es activa y Mori te corrige al momento.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: comida-practica
+    book: workbook
+    title: 'Práctica: Comida'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-verbos
+        type: activity
+        activity: comida-verbos
+      - id: ex-posesivos
+        type: activity
+        activity: comida-posesivos
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: comida-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la comida
+        glossLang: he
+        link: https://quizlet.com/856050542/basic-spanish-food-flash-cards/
+        items: &comida-words
+          - { term: Comer, gloss: לאכול }
+          - { term: Beber, gloss: לשתות }
+          - { term: Cocinar, gloss: לבשל }
+          - { term: Cortar, gloss: לחתוך }
+          - { term: Abrir, gloss: לפתוח }
+          - { term: Cerrar, gloss: לסגור }
+          - { term: Untar, gloss: למרוח }
+          - { term: Poner, gloss: לשים }
+          - { term: Agregar, gloss: להוסיף }
+          - { term: Restaurante, gloss: מסעדה }
+          - { term: Camarero, gloss: מלצר }
+          - { term: Cliente, gloss: לקוח }
+          - { term: Ordenar, gloss: להזמין }
+          - { term: Pagar, gloss: לשלם }
+          - { term: Efectivo, gloss: מזומן }
+          - { term: Tarjeta de crédito, gloss: כרטיס אשראי }
+          - { term: Entrada, gloss: מנה ראשונה }
+          - { term: Plato, gloss: צלחת / מנה }
+          - { term: Ingrediente, gloss: מרכיב }
+          - { term: Sándwich, gloss: סנדוויץ׳ }
+          - { term: Pizza, gloss: פיצה }
+          - { term: Hamburguesa, gloss: המבורגר }
+          - { term: Ensalada, gloss: סלט }
+          - { term: Pan, gloss: לחם }
+          - { term: Queso, gloss: גבינה }
+          - { term: Tomate, gloss: עגבנייה }
+          - { term: Agua, gloss: מים }
+          - { term: Vino, gloss: יין }
+          - { term: Cerveza, gloss: בירה }
+          - { term: Chocolate, gloss: שוקולד }
+          - { term: Fruta, gloss: פרי }
+          - { term: Banana, gloss: בננה }
+          - { term: Naranja, gloss: תפוז }
+          - { term: Manzana, gloss: תפוח }
+          - { term: Mi, gloss: שלי }
+          - { term: Tu, gloss: שלך }
+          - { term: Nuestro, gloss: שלנו }
+          - { term: Su, gloss: שלו / שלה / שלהם }
+
+vocabulary:
+  - slug: comida
+    title: Comida
+    items: *comida-words
+
+activities:
+  - slug: comida-verbos
+    title: 'Verbos en presente: yo y tú'
+    minutes: 8
+    items:
+      - id: yo-como
+        type: multipleChoice
+        prompt: Yo ___ pizza en mi casa.
+        options:
+          - { text: como, correct: true }
+          - { text: soy como, feedback: 'No uses *soy* si tienes un verbo: *Yo como pizza.*' }
+          - {
+              text: comes,
+              feedback: '*Comes* es para *tú*. Con *yo*, el verbo termina en *-o*: *como*.',
+            }
+      - id: cocino-cocinas
+        type: fillBlank
+        prompt: Completa con el verbo *cocinar*.
+        text: Yo ___ pasta. Tú ___ pescado.
+        blanks: [[cocino], [cocinas]]
+      - id: sandwich
+        type: fillBlank
+        prompt: Completa con el verbo en *yo*.
+        text: Yo ___ (cortar) el pan por la mitad. Yo ___ (agregar) queso y tomate.
+        blanks: [[corto], [agrego]]
+      - id: infinitivo-yo
+        type: matching
+        prompt: Une cada verbo con su forma en *yo*.
+        pairs:
+          - [cortar, corto]
+          - [abrir, abro]
+          - [cerrar, cierro]
+          - [poner, pongo]
+          - [untar, unto]
+      - id: soy-como
+        type: trueFalse
+        prompt: 'La frase *Yo soy como pizza.* es correcta.'
+        answer: false
+        feedback:
+          correct: ¡Correcto! Decimos *Yo como pizza.*
+          incorrect: 'No escribas *soy* si tienes un verbo. Decimos *Yo como pizza.*'
+      - id: tu-bebes
+        type: multipleChoice
+        prompt: ¿Qué ___ tú?
+        options:
+          - { text: bebes, correct: true }
+          - {
+              text: bebo,
+              feedback: '*Bebo* es para *yo*. Con *tú*, el verbo en *-er* termina en *-es*: *bebes*.',
+            }
+          - { text: beber, feedback: '*Beber* es el infinitivo. Con *tú* decimos *bebes*.' }
+      - id: camarero
+        type: fillBlank
+        prompt: 'El camarero repite el pedido. Completa con *beber* y *comer* para *tú*.'
+        text: Entonces tú ___ agua y ___ pizza.
+        blanks: [[bebes], [comes]]
+      - id: ordena-pago
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Yo pago con tarjeta de crédito.
+
+  - slug: comida-posesivos
+    title: 'Posesivos: mi, tu, su, nuestro'
+    minutes: 8
+    items:
+      - id: mis-amigas
+        type: multipleChoice
+        prompt: Yo tengo dos amigas. ___ amigas comen en el restaurante.
+        options:
+          - { text: Mis, correct: true }
+          - { text: Mi, feedback: '*Amigas* es plural: usa *mis*.' }
+          - { text: Tus, feedback: '*Tus* es de *tú*. Son las amigas de *yo*: *mis amigas*.' }
+      - id: nuestro-restaurante
+        type: multipleChoice
+        prompt: Mi esposo y yo tenemos un restaurante. ___ restaurante es muy grande.
+        options:
+          - { text: Nuestro, correct: true }
+          - { text: Nuestra, feedback: '*Restaurante* es masculino: usa *nuestro*.' }
+          - { text: Nuestros, feedback: '*Restaurante* es singular: usa *nuestro*.' }
+      - id: nuestras-magdalenas
+        type: multipleChoice
+        prompt: Mi esposa y yo tenemos una panadería. ___ magdalenas son deliciosas.
+        options:
+          - { text: Nuestras, correct: true }
+          - { text: Nuestros, feedback: '*Magdalenas* es femenino: usa *nuestras*.' }
+          - { text: Nuestra, feedback: '*Magdalenas* es plural: usa *nuestras*.' }
+      - id: su-sus
+        type: fillBlank
+        prompt: Completa con *su* o *sus*.
+        text: A mi padre le encanta el chocolate. ___ chocolate favorito es el blanco. Mi hermano come saludable. ___ frutas favoritas son la banana y la manzana.
+        blanks: [[Su], [Sus]]
+        wordBank: [Su, Sus]
+      - id: comida-mi
+        type: trueFalse
+        prompt: 'En español decimos *comida mi*, como en hebreo (האוכל שלי).'
+        answer: false
+        feedback:
+          correct: ¡Correcto! Primero el posesivo y después la cosa.
+          incorrect: 'En español, primero va el posesivo: *mi comida*.'
+      - id: une-posesivos
+        type: matching
+        prompt: Une cada persona con su posesivo.
+        pairs:
+          - [yo, mi comida]
+          - [tú, tu comida]
+          - [mi esposo y yo, nuestro restaurante]
+          - [vosotros, vuestro restaurante]
+          - [mis amigos, su boda]
+      - id: hermanos
+        type: fillBlank
+        prompt: Completa con un posesivo.
+        text: Hermanos, ¿cuál es ___ restaurante favorito?
+        blanks: [[su, vuestro]]
+      - id: ordena-pizza
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Mi comida favorita es la pizza.

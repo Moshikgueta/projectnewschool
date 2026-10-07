@@ -1,0 +1,553 @@
+# Cycle "Servicios esenciales", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: servicios-esenciales
+title: Servicios esenciales
+goal: Pedir y dar direcciones en la ciudad con preposiciones de lugar.
+position: 8
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Direcciones" and "Preposiciones") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary, preposiciones rule 3: the examples "al lado **del** parque (de + el =
+    del)" and "al lado **de la** escuela" were added, because the workbook uses
+    them. The source rule only says to use the right article. Please confirm.
+  - >-
+    Corrections: "Nombre 3" → "Nombra 3"; "el supermercado más cerca de tu casa" →
+    "el supermercado más cercano a tu casa" (warm-up question and frame); "la parada
+    del autobús" → "la parada de autobús"; Activity
+    2 "Tienes que caminar ___ cuadras, girar a la izquierda, una cuadra y luego a la
+    derecha" → "…, girar a la izquierda, caminar una cuadra y luego girar a la
+    derecha"; "¿Qué/cuál ___ me recomiendas?" → "¿Qué ___ me recomiendas?"; the
+    summary heading "La primera regla…" → "La primera habilidad…".
+  - >-
+    The source's skill line only says "Direcciones y preposiciones"; the two skills
+    are taken as (1) Direcciones and (2) Preposiciones. The source gives no
+    activity-to-skill plan or recommended combinations; the plan in the teacher note
+    follows the skill named in each activity title (Activities 1–2 direcciones,
+    3–4 preposiciones, 5 both).
+  - >-
+    The city map used in Activities 1 and 4 is not linked in the notebook. The
+    teacher shares it on screen (see the teacher notes); it should move into the
+    course's own media.
+  - >-
+    The source gives no times except Activity 5 (10–15 minutes, recorded as 15), so
+    the other activities have no minutes.
+  - >-
+    Vocabulary glosses changed: "Delante de" מלפני → לפני; "Dirección" כיוון →
+    כיוון / כתובת (in Spanish it also means "address"). The Quizlet link is kept
+    without its "?new" parameter.
+  - >-
+    The Mori homework "Actividad 1" sentences are put into one message with blanks
+    (as in other cycles). The "Respuesta del estudiante 1/2/3" lines are replaced by
+    the optional answer boxes (decision C2).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: servicios-esenciales-clase
+    title: 'Clase: Servicios esenciales'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Servicios esenciales
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Direcciones
+            description: 'Pedir y dar direcciones: *camina derecho, gira a la izquierda*; *ser* y *estar*'
+          - name: Preposiciones
+            description: '*al lado de, entre, enfrente de, delante de, detrás de*; *hay* y *está*'
+      - id: quizlet
+        type: externalLink
+        label: Servicios esenciales en Quizlet
+        url: https://quizlet.com/il/998281436/esencial-services-basic-spanish-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Vivo cerca de / lejos de New School.
+        example: Soy Dana. Vivo cerca de New School.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Qué lugares hay al lado de tu casa?
+            frame: El / La ___ está al lado de mi casa. / Al lado de mi casa hay un / una ___.
+          - question: ¿Cómo llegas a ___ desde tu casa?
+            frame: Llego a ___ en ___ (transporte).
+          - question: ¿Qué lugares importantes hay en tu ciudad? Nombra 3.
+            frame: |-
+              Hay un ___, un ___ y un ___.
+              El / La ___ está en ___, el / la ___ está en ___ y el / la ___ está en ___.
+          - question: ¿Cómo vas de tu casa a la parada de autobús?
+            frame: Salgo de mi casa, doblo a la ___ y camino derecho ___ cuadras. La parada de autobús está ___.
+          - question: ¿Dónde está el supermercado más cercano a tu casa?
+            frame: El supermercado más cercano a mi casa está al lado de / enfrente de ___.
+          - question: ¿Cómo llegas allí?
+            frame: Camino derecho ___ y luego doblo a la ___. El supermercado está ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Mapa de la ciudad'
+        skills: [Direcciones]
+        steps:
+          - Mira el mapa de la ciudad con tu profesor y nombra los lugares.
+          - Escucha cómo pedir y dar direcciones.
+          - 'En parejas: el estudiante A pide direcciones para llegar a un lugar del mapa. El estudiante B da las direcciones.'
+          - Después de algunas rondas, cambien de rol.
+          - Hablen en grupo sobre lo que fue difícil.
+        example: |-
+          *Estudiante A: ¿Cómo llego a la biblioteca?*
+          *Estudiante B: Caminas derecho y luego giras a la izquierda. La biblioteca **está** al lado del parque.*
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Centro de información turística'
+        skills: [Direcciones]
+        steps:
+          - Cada estudiante es un centro de información turística.
+          - El estudiante 1 pregunta al estudiante 2 qué lugar le recomienda y cómo llegar.
+          - El estudiante 2 responde. Después, el estudiante que preguntó responde al siguiente estudiante.
+      - id: act2-dialogue
+        type: discussionQuestions
+        title: Pregunta y responde
+        items:
+          - question: ¿Qué ___ (supermercado, biblioteca, museo) me recomiendas?
+            frame: Te recomiendo ir al / a la ___ (nombre).
+          - question: ¿Cómo llego hasta allí?
+            frame: Llegas en autobús / a pie. Tienes que caminar ___ cuadras, girar a la izquierda, caminar una cuadra y luego girar a la derecha.
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Un lugar importante de mi ciudad'
+        skills: [Preposiciones]
+        steps:
+          - Elige un lugar de tu ciudad.
+          - 'Describe dónde está. Usa las preposiciones: *en, al lado de, entre, delante de*.'
+          - Comparte tu lugar con el grupo.
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Completa las oraciones
+        items:
+          - question: El lugar que elijo es el / la ___. Es un lugar importante porque ___.
+          - question: Está **en** ___.
+          - question: Está **al lado de** ___.
+          - question: Está **entre** el / la ___ y el / la ___.
+          - question: Está **delante de** ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Adivina el lugar'
+        skills: [Preposiciones]
+        steps:
+          - Un estudiante elige un lugar o un objeto del mapa de la ciudad.
+          - Los otros estudiantes hacen preguntas de sí o no con preposiciones para adivinar el lugar.
+          - El estudiante que adivina elige un lugar nuevo.
+        example: |-
+          *(El estudiante eligió la escuela.)*
+          *¿Este lugar está al lado del teatro? — No.*
+          *¿Este lugar está frente al parque? — ¡Sí!*
+          *¿Este lugar es la escuela? — ¡Sí!*
+      - id: act5
+        type: classActivity
+        title: 'Actividad 5: Mi barrio y mis servicios esenciales'
+        skills: [Direcciones, Preposiciones]
+        minutes: 15
+        steps:
+          - Trabajen en parejas o tríos (Breakout Rooms).
+          - 'El estudiante A pregunta y el estudiante B responde. Usen frases cortas, solo en presente.'
+          - Cada estudiante hace 5 o 6 preguntas de abajo. Después cambien de rol.
+          - 'Al final, di una frase sobre tu compañero al grupo: *En la ciudad de ___ hay un hospital cerca de su casa.*'
+        example: |-
+          *¿Hay un supermercado cerca de tu casa?*
+          *Sí, hay un supermercado al lado de mi casa.*
+        wordBank:
+          - Hay un / una…
+          - Está al lado de…
+          - Está enfrente de…
+          - Está entre… y…
+          - Salgo de mi casa, camino derecho y giro a la izquierda.
+          - Voy a pie. / Voy en autobús.
+      - id: act5-questions
+        type: discussionQuestions
+        items:
+          - question: ¿Qué servicios esenciales hay cerca de tu casa?
+            frame: Cerca de mi casa hay un / una ___.
+          - question: ¿Hay un supermercado o una farmacia cerca?
+            frame: Sí, hay un / una ___ al lado de / enfrente de ___. / No, no hay.
+          - question: ¿Dónde está el hospital más cercano?
+            frame: El hospital más cercano está en ___.
+          - question: ¿La parada de autobús está cerca o lejos?
+            frame: La parada de autobús está cerca / lejos.
+          - question: ¿Dónde está el supermercado?
+            frame: El supermercado está al lado de / enfrente de / entre ___.
+          - question: ¿Qué hay enfrente de tu casa?
+            frame: Enfrente de mi casa hay ___.
+          - question: ¿Qué lugar está al lado de tu trabajo o escuela?
+            frame: Al lado de mi trabajo / escuela está ___.
+          - question: ¿Cómo llegas al supermercado desde tu casa?
+            frame: Salgo de mi casa, camino ___ y giro a la ___.
+          - question: ¿Vas a pie o en autobús?
+            frame: Voy a pie. / Voy en autobús.
+          - question: 'Di dos acciones: *Salgo de mi casa y…*'
+            frame: Salgo de mi casa y ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Direcciones** (Actividades 1 y 2) y
+          **Preposiciones** (Actividades 3 y 4). La Actividad 5 practica las dos.
+      - id: n-intro
+        anchor: intro
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Repasa con los alumnos las preposiciones de dirección. Comparte en pantalla el
+          mapa de la ciudad (el mapa no está en el cuaderno ni en la plataforma) e
+          identifiquen juntos los lugares. Enseña cómo pedir y dar direcciones con el
+          ejemplo. Divide a los estudiantes en parejas; cada pareja usa el mapa. Al
+          final, reúne a la clase, aclara los malentendidos y refuerza el uso correcto
+          de las preposiciones.
+      - id: n-act2
+        anchor: act2
+        text: Modela el diálogo con un estudiante. Después, cada estudiante que pregunta responde al siguiente, hasta que todos participen.
+      - id: n-act4
+        anchor: act4
+        text: Usa el mismo mapa de la ciudad de la Actividad 1.
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Explica y modela en plenario (2 minutos): «Van a trabajar en Breakout Rooms.
+          Uno pregunta y el otro responde. Usen frases cortas, solo presente. Después
+          cambian de rol.» Pon las frases modelo en el slide o en el chat. Cierre en
+          plenario (3–5 minutos): cada alumno dice una frase sobre su compañero.
+          Corrige solo lo esencial.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: servicios-esenciales-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-direcciones
+        type: ruleSummary
+        skill: Direcciones
+        rules:
+          - text: '**Ser** para describir características permanentes o definiciones.'
+            examples:
+              - La electricidad **es** un servicio esencial.
+              - El agua potable **es** importante para todos.
+              - Los hospitales **son** necesarios.
+          - text: '**Estar** para estados o lugares.'
+            examples:
+              - El servicio de internet **está** lento hoy.
+              - La ambulancia **está** cerca del hospital.
+              - Los médicos **están** en la sala de emergencias.
+          - text: 'Usa palabras simples: *derecho, girar, caminar, está en*.'
+            examples: [Caminas derecho y luego giras a la izquierda.]
+          - text: 'Menciona lugares cerca: explica dónde está algo con puntos de referencia.'
+            examples: [al lado de la tienda, frente al parque]
+      - id: rules-preposiciones
+        type: ruleSummary
+        skill: Preposiciones
+        rules:
+          - text: 'Para decir dónde está un lugar, usa *al lado de* (ליד), *entre* (בין) y *frente a* (מול).'
+          - text: '**Está en** es para algo específico. **Hay un / una** es para algo nuevo o no específico.'
+            examples:
+              - La pelota de mi amigo **está en** el parque.
+              - '**Hay un** perro en el parque.'
+          - text: 'Usa siempre el artículo correcto antes del lugar: *el / la* o *un / una*, según si es masculino o femenino.'
+            examples:
+              - al lado **de la** escuela
+              - al lado **del** parque (de + el = del)
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: servicios-esenciales-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a cada una.
+      - id: mori-servicios
+        type: aiTutorPrompt
+        title: Servicios esenciales
+        message: >-
+          ¡Hola Mori! Quiero practicar español. ¿Puedes hacerme preguntas sobre
+          servicios esenciales usando direcciones y preposiciones? Usa solo presente
+          simple y corrige mis errores, por favor.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Hazme más preguntas, por favor!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Práctica adicional
+      - id: mori-lugar
+        type: aiTutorPrompt
+        title: Un lugar esencial en mi ciudad
+        intro: Completa los espacios y envía el mensaje a Mori. En la segunda frase, usa una preposición (al lado de, frente a, entre…).
+        message: |-
+          Hola Mori. Te cuento sobre un servicio esencial en mi ciudad. Tú me haces preguntas con preposiciones y direcciones.
+          En mi ciudad, hay un / una ___.
+          Está ___.
+          Muchas personas van allí para ___.
+          Yo voy allí cuando ___.
+          Me gusta este lugar porque ___.
+      - id: mori-adivina
+        type: aiTutorPrompt
+        title: ¡Adivina el servicio!
+        intro: >-
+          Envía este mensaje a Mori y dale pistas sobre un servicio esencial. Por
+          ejemplo: *Está al lado del supermercado. Las personas van cuando están
+          enfermas. Hay doctores y camas.* Mori te hará preguntas (¿Está cerca de tu
+          casa? ¿Quién trabaja allí?) y al final intentará adivinar. ¡Después tú adivinas
+          uno que él describa!
+        message: >-
+          ¡Hola Mori! Quiero jugar. Te doy pistas sobre un servicio esencial y tú
+          adivinas cuál es. Hazme preguntas usando preposiciones y direcciones. Corrige
+          mis errores, por favor.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: servicios-esenciales-practica
+    book: workbook
+    title: 'Práctica: Servicios esenciales'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-direcciones
+        type: activity
+        activity: servicios-esenciales-direcciones
+      - id: ex-preposiciones
+        type: activity
+        activity: servicios-esenciales-preposiciones
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: servicios-esenciales-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la ciudad
+        glossLang: he
+        link: https://quizlet.com/il/998281436/esencial-services-basic-spanish-flash-cards/
+        items: &servicios-esenciales-words
+          - { term: Casa, gloss: בית }
+          - { term: Lugar, gloss: מקום }
+          - { term: Ciudad, gloss: עיר }
+          - { term: Supermercado, gloss: סופרמרקט }
+          - { term: Biblioteca, gloss: ספרייה }
+          - { term: Museo, gloss: מוזיאון }
+          - { term: Parque, gloss: פארק }
+          - { term: Escuela, gloss: בית ספר }
+          - { term: Teatro, gloss: תיאטרון }
+          - { term: Banco, gloss: בנק }
+          - { term: Parada de autobús, gloss: תחנת אוטובוס }
+          - { term: Calle, gloss: רחוב }
+          - { term: Cuadra, gloss: בלוק }
+          - { term: Esquina, gloss: פינה }
+          - { term: Izquierda, gloss: שמאלה }
+          - { term: Derecha, gloss: ימינה }
+          - { term: Delante de, gloss: לפני }
+          - { term: Detrás de, gloss: מאחורי }
+          - { term: Al lado de, gloss: ליד }
+          - { term: Entre, gloss: בין }
+          - { term: Enfrente de, gloss: ממול }
+          - { term: Transporte, gloss: תחבורה }
+          - { term: Autobús, gloss: אוטובוס }
+          - { term: A pie, gloss: ברגל }
+          - { term: Girar, gloss: לפנות }
+          - { term: Caminar, gloss: ללכת }
+          - { term: Salgo, gloss: אני יוצא }
+          - { term: Dirección, gloss: כיוון / כתובת }
+          - { term: Importante, gloss: חשוב }
+          - { term: Recomendar, gloss: להמליץ }
+
+vocabulary:
+  - slug: servicios-esenciales
+    title: Servicios esenciales
+    items: *servicios-esenciales-words
+
+activities:
+  - slug: servicios-esenciales-direcciones
+    title: 'Direcciones: ser, estar y dar direcciones'
+    minutes: 8
+    items:
+      - id: farmacia-esta
+        type: multipleChoice
+        prompt: La farmacia ___ al lado del banco.
+        options:
+          - { text: está, correct: true }
+          - {
+              text: es,
+              feedback: 'Para decir dónde está un lugar, usa *estar*: *la farmacia está…*',
+            }
+          - {
+              text: hay,
+              feedback: 'Con un lugar específico (*la farmacia*) usa *está*. *Hay* es para algo no específico: *hay una farmacia*.',
+            }
+      - id: agua-es
+        type: multipleChoice
+        prompt: El agua potable ___ importante para todos.
+        options:
+          - { text: es, correct: true }
+          - {
+              text: está,
+              feedback: 'Para una característica permanente usa *ser*: *es importante*.',
+            }
+          - { text: son, feedback: '*El agua* es singular: usa *es*.' }
+      - id: ser-estar
+        type: fillBlank
+        prompt: Completa con *son* o *están*.
+        text: Los hospitales ___ necesarios. Los médicos ___ en la sala de emergencias.
+        blanks: [[son], [están]]
+        wordBank: [son, están]
+      - id: estar-lugar
+        type: trueFalse
+        prompt: 'Para decir dónde está un lugar, usamos *estar*: *La ambulancia está cerca del hospital.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *Estar* es para lugares y estados.
+          incorrect: '*Estar* es para lugares y estados: *La ambulancia está cerca del hospital.*'
+      - id: palabras
+        type: matching
+        prompt: Une cada palabra con su traducción.
+        pairs:
+          - [izquierda, שמאלה]
+          - [derecha, ימינה]
+          - [caminar, ללכת]
+          - [girar, לפנות]
+          - [a pie, ברגל]
+      - id: sales-casa
+        type: fillBlank
+        prompt: 'Completa las direcciones. Usa la forma de *tú*: *caminas*, *giras*.'
+        text: Sales de tu casa, ___ derecho dos cuadras y ___ a la izquierda.
+        blanks: [[caminas, sigues], [giras, doblas]]
+        wordBank: [caminas, giras]
+      - id: como-llego
+        type: multipleChoice
+        prompt: —¿Cómo llego a la biblioteca? ¿Qué respuesta da direcciones?
+        options:
+          - { text: Caminas derecho y luego giras a la izquierda., correct: true }
+          - {
+              text: La biblioteca es grande.,
+              feedback: 'Esta frase describe la biblioteca, pero no dice cómo llegar. Usa *caminar*, *girar*, *derecho*.',
+            }
+          - {
+              text: Voy a la biblioteca los lunes.,
+              feedback: 'Esta frase dice cuándo vas, no cómo llegar. Usa *caminar*, *girar*, *derecho*.',
+            }
+      - id: ordena-direcciones
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Caminas derecho y luego giras a la izquierda.
+
+  - slug: servicios-esenciales-preposiciones
+    title: 'Preposiciones: al lado de, entre, frente a'
+    minutes: 8
+    items:
+      - id: hay-perro
+        type: multipleChoice
+        prompt: ___ un perro en el parque.
+        options:
+          - { text: Hay, correct: true }
+          - { text: Está, feedback: 'Para algo nuevo o no específico (*un perro*) usa *hay*.' }
+          - {
+              text: Es,
+              feedback: '*Es* describe una característica. Para algo nuevo o no específico usa *hay*.',
+            }
+      - id: pelota-esta
+        type: fillBlank
+        prompt: Completa con *hay* o *está*.
+        text: La pelota de mi amigo ___ en el parque.
+        blanks: [[está]]
+        wordBank: [hay, está]
+      - id: hay-hospital
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: En mi ciudad hay un hospital., correct: true }
+          - {
+              text: En mi ciudad está un hospital.,
+              feedback: 'Con *un hospital* (no específico) usa *hay*.',
+            }
+          - {
+              text: En mi ciudad hay el hospital.,
+              feedback: 'Después de *hay* usa *un / una*: *hay un hospital*.',
+            }
+      - id: preposiciones
+        type: matching
+        prompt: Une cada preposición con su traducción.
+        pairs:
+          - [al lado de, ליד]
+          - [entre, בין]
+          - [frente a, מול]
+          - [detrás de, מאחורי]
+          - [en, ב]
+      - id: de-la-escuela
+        type: multipleChoice
+        prompt: El banco está al lado ___ escuela.
+        options:
+          - { text: de la, correct: true }
+          - {
+              text: del,
+              feedback: '*Escuela* es femenino: *de la escuela*. *Del* (de + el) es para palabras masculinas: *del parque*.',
+            }
+          - {
+              text: de el,
+              feedback: '*Escuela* es femenino: *de la escuela*. Y nunca decimos *de el*: decimos *del*.',
+            }
+      - id: del-de-la
+        type: fillBlank
+        prompt: Completa con *del* o *de la*.
+        text: La parada de autobús está enfrente ___ parque. El museo está al lado ___ biblioteca.
+        blanks: [[del], [de la]]
+        wordBank: [del, de la]
+      - id: hay-especifico
+        type: trueFalse
+        prompt: '*Hay* es para algo específico: *Hay la pelota de mi amigo en el parque.*'
+        answer: false
+        feedback:
+          correct: ¡Correcto! Para algo específico usamos *está*.
+          incorrect: 'Para algo específico usamos *está*: *La pelota de mi amigo está en el parque.* *Hay* es para algo nuevo o no específico.'
+      - id: ordena-entre
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: La farmacia está entre el banco y el teatro.
+        alsoAccept:
+          - La farmacia está entre el teatro y el banco.
