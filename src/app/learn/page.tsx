@@ -61,6 +61,7 @@ export default async function StudentHome({
       <>
         <PageTitle>{greeting}</PageTitle>
         <EmptyState title={t('noCourses')}>{t('noCoursesBody')}</EmptyState>
+        <LessonsLink />
       </>
     );
   }
@@ -251,6 +252,7 @@ export default async function StudentHome({
         </div>
 
         <aside className="flex min-w-0 flex-col gap-10">
+          <LessonsLink />
           <Section
             id="progress-heading"
             title={t('progress')}
@@ -331,5 +333,21 @@ export default async function StudentHome({
         </aside>
       </div>
     </div>
+  );
+}
+
+/** "My lessons": attendance, packages and private lessons (also for private-only students). */
+async function LessonsLink() {
+  const t = await getTranslations('learn.lessons');
+  return (
+    <CardLink href="/learn/lessons">
+      <span className="flex items-center justify-between gap-3">
+        <span>
+          <span className="block text-lg font-semibold">{t('link')}</span>
+          <span className="block text-[0.9375rem] text-fg-secondary">{t('linkBody')}</span>
+        </span>
+        <ForwardArrow className="size-5 shrink-0 text-primary" />
+      </span>
+    </CardLink>
   );
 }

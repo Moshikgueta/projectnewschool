@@ -52,6 +52,9 @@ From an inventory of `Teacher Dashboard v2.dc.html`, `Teacher Mobile.dc.html`,
 | פיתוח מורים (teacher development)                | demo               | HR records. **Sensitive: separate access rules, review first**                                          | **F**   |
 | מורים (roster, 77 teachers)                      | demo               | teacher profiles + languages taught                                                                     | D       |
 
+Stage F's privacy review, with recommendations and the decisions it needs:
+[STAGE-F-PRIVACY-REVIEW.md](STAGE-F-PRIVACY-REVIEW.md).
+
 Stages: **A** rooms and timetable · **B** student codes · **C** attendance and teacher
 "today" · **D** students, packages and the office (the Tazman replacement,
 `MIGRATION-FROM-TAZMAN.md`) · **E** staff tools · **F** admissions and teacher development.
@@ -97,8 +100,8 @@ and 3).
 - **Teachers** see today's private lessons on their "Today" page, read-only. No contact
   details, packages or prices.
 - **Not yet:** self-booking by students and teachers' working hours (Tazman step 2),
-  reminders (step 4), reports and teacher pay (step 5), PayPlus payments (D+), a student
-  view of their packages, guardians (waits for D7).
+  reminders (step 4), reports and teacher pay (step 5), PayPlus payments (D+), guardians
+  (waits for D7). Students see their packages and lessons under "My lessons".
 
 ## Attendance and the teacher's day (stage C)
 
@@ -114,8 +117,9 @@ and 3).
   ("3 of 4"; excused absences don't count).
 - **Records stay:** attendance is never deleted, and a class that has started can't be
   cancelled (once attendance exists, the database refuses).
-- Not yet: level-fit notes, a student-facing attendance view, attendance in the office's
-  lesson log (stage D, with packages).
+- Students see their own attendance under "My lessons" (`/learn/lessons`), with their
+  packages and private lessons.
+- Not yet: level-fit notes.
 
 ## Student entry codes (stage B)
 

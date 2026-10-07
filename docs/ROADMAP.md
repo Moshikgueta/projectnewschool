@@ -222,7 +222,11 @@ stages: [STAFF-ROOM-MERGE.md](STAFF-ROOM-MERGE.md).
       feedback to the pedagogical manager, training links, tasks for the manager
       (ADR-033); 25 pgTAP tests, API tests, end-to-end tests including a forged
       feedback about another teacher's student
-- [ ] F admissions and teacher development (privacy review first)
+- [x] Students see their own attendance, packages and private lessons ("My lessons",
+      `/learn/lessons`), also students with private lessons only
+- [ ] F admissions and teacher development: privacy review written
+      ([STAGE-F-PRIVACY-REVIEW.md](STAGE-F-PRIVACY-REVIEW.md)); waits for the school's six
+      decisions
 - [ ] Cut-over: the domain points here, the Worker shows "we have moved", D1 read-only
       for 30 days, then archived and deleted
 
