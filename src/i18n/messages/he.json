@@ -367,7 +367,7 @@
         "published": "פורסם",
         "archived": "בארכיון"
       },
-      "contentNote": "בשלב זה קורסים ומחזורים נוצרים מקובצי תוכן; עורך התוכן יגיע בהמשך."
+      "contentNote": "פתחו קורס כדי לערוך את הסייקלים והדפים שלו. קורסים חדשים עדיין נוצרים מקובצי תוכן."
     },
     "groups": {
       "title": "קבוצות",
@@ -989,6 +989,89 @@
       "remove": "הסרה",
       "removeLabel": "הסרה: {title}",
       "noManager": "עדיין אין מנהל פדגוגי לשלוח אליו משימות."
+    }
+  },
+  "cms": {
+    "statusLabel": "סטטוס",
+    "status": {
+      "draft": "טיוטה",
+      "in_review": "בבדיקה",
+      "published": "פורסם",
+      "archived": "בארכיון"
+    },
+    "phase": {
+      "before_class": "לפני השיעור",
+      "during_class": "בשיעור",
+      "after_class": "אחרי השיעור",
+      "review": "חזרה",
+      "optional": "רשות"
+    },
+    "books": {
+      "notebook": "מחברת",
+      "workbook": "חוברת עבודה"
+    },
+    "moveUp": "העברת {title} למעלה",
+    "moveDown": "העברת {title} למטה",
+    "messages": {
+      "saved": "נשמר.",
+      "invalid": "בדקו את הטופס ונסו שוב.",
+      "notAllowed": "רק המנהל הפדגוגי יכול לשנות תוכן.",
+      "failed": "השמירה לא הצליחה. נסו שוב.",
+      "slugTaken": "השם הקצר הזה כבר בשימוש כאן. בחרו שם אחר.",
+      "conflict": "מישהו שמר את הדף אחרי שפתחתם אותו. העתיקו את השינויים, טענו את הדף מחדש והחילו אותם שוב.",
+      "problems": "תקנו את הבעיות שלמטה ואז שמרו."
+    },
+    "course": {
+      "metaTitle": "תוכן הקורס",
+      "back": "כל הקורסים",
+      "details": "פרטי הקורס",
+      "title": "כותרת",
+      "description": "תיאור",
+      "save": "שמירה",
+      "cycles": "סייקלים",
+      "noCycles": "עדיין אין סייקלים.",
+      "addCycle": "הוספת סייקל",
+      "cycleTitle": "שם הסייקל",
+      "slug": "שם קצר",
+      "slugHint": "לקישורים ולייבוא: אותיות לטיניות קטנות, ספרות ומקפים.",
+      "goal": "מטרה תקשורתית (לא חובה)",
+      "edit": "עריכת תוכן"
+    },
+    "cycle": {
+      "metaTitle": "תוכן הסייקל",
+      "backToCourse": "חזרה אל {course}",
+      "details": "פרטי הסייקל",
+      "noSections": "עדיין אין דפים.",
+      "addSection": "הוספת דף",
+      "sectionTitle": "כותרת הדף",
+      "book": "ספר",
+      "phase": "מתי",
+      "openEditor": "עריכת {title}",
+      "activities": "פעילויות",
+      "activitiesHint": "התרגילים עדיין נכתבים בקובצי תוכן ומיובאים; את הסטטוס שלהם קובעים כאן.",
+      "noActivities": "אין פעילויות בסייקל הזה.",
+      "activityStatusLabel": "הסטטוס של {title}",
+      "setStatus": "עדכון",
+      "setStatusLabel": "עדכון הסטטוס של {title}"
+    },
+    "section": {
+      "metaTitle": "עריכת דף",
+      "backToCycle": "חזרה אל {cycle}",
+      "details": "פרטים",
+      "title": "כותרת",
+      "phase": "מתי",
+      "saveDetails": "שמירת הפרטים",
+      "content": "תוכן",
+      "contentHint": "בלוקים ב-YAML, באותו מבנה כמו קובצי התוכן. נבדק ומוצג תוך כדי הקלדה.",
+      "publishedWarning": "הדף הזה פורסם: שמירה משנה מיד את מה שהתלמידים רואים. כדי לעבוד עליו קודם, העבירו אותו לטיוטה.",
+      "editorLabel": "תוכן הדף (YAML)",
+      "problemsTitle": "בעיות",
+      "valid": "אין בעיות.",
+      "save": "שמירת התוכן",
+      "preview": "תצוגה מקדימה",
+      "studentView": "תצוגת תלמיד",
+      "teacherView": "תצוגת מורה",
+      "previewEmpty": "עדיין אין מה להציג."
     }
   }
 }

@@ -246,6 +246,9 @@ export default async function globalSetup() {
   await admin.from('staff_tasks').delete().not('id', 'in', seedIds('d4000000', 1));
   await admin.from('staff_tasks').update({ status: 'open', done_at: null }).eq('status', 'done');
 
+  // Pages added by the content-editor tests.
+  await admin.from('book_sections').delete().like('slug', 'e2e-%');
+
   // Rooms and lessons added by the office tests (the seed's ids start e0…/e1…).
   await admin.from('room_bookings').delete().not('id', 'in', seedIds('e1000000', 3));
   await admin.from('rooms').delete().not('id', 'in', seedIds('e0000000', 3));

@@ -66,10 +66,13 @@ function TeacherNotes({ notes }: { notes: TeacherNote[] | undefined }) {
   const t = useTranslations('notebook');
   if (!notes?.length) return null;
   return (
-    <aside aria-label={t('teacherNote')} className="flex flex-col gap-2">
+    // Notes, not landmarks: a page can have many, and a repeated landmark
+    // name makes screen-reader navigation ambiguous.
+    <div className="flex flex-col gap-2">
       {notes.map((note) => (
         <div
           key={note.id}
+          role="note"
           className="rounded-md border border-dashed border-warning bg-warning-light px-4 py-3 text-[0.9375rem] text-warning-ink"
         >
           <span className="font-semibold">{t('teacherNote')}</span>
@@ -79,7 +82,7 @@ function TeacherNotes({ notes }: { notes: TeacherNote[] | undefined }) {
           </p>
         </div>
       ))}
-    </aside>
+    </div>
   );
 }
 

@@ -230,7 +230,24 @@ stages: [STAFF-ROOM-MERGE.md](STAFF-ROOM-MERGE.md).
 - [ ] Cut-over: the domain points here, the Worker shows "we have moved", D1 read-only
       for 30 days, then archived and deleted
 
-### Phase 8 — Pedagogical CMS
+### Phase 8 — Pedagogical CMS _(first part implemented locally)_
+
+Status 2026-10-07:
+
+- [x] Pedagogical managers (MFA) edit courses, cycles and pages with their own session
+      (RLS write policies; nothing deleted, archived instead); every change audited
+- [x] Page editor: YAML in the content files' block format, checked as you type with the
+      same schemas, live student/teacher preview, no overwrite of a newer save (ADR-034)
+- [x] Cycle and page order, statuses (draft, in review, published, archived), new cycles
+      and pages; activity status
+- [x] `content:import` leaves pages edited in the platform alone (`--overwrite-app-edits`)
+- [x] Tests: 14 pgTAP, 4 unit (including a round trip of every page of the Family cycle),
+      2 end-to-end (edit, preview, save, a stale save refused, a draft page hidden from
+      students, no access for teachers and students)
+- [ ] Form-based editing per block type; activity editor; media upload; teacher
+      proposals with manager approval; page history view
+
+Planned scope:
 
 - Forms for language/level/course/cycle; block editor; activity editor; media upload;
   draft → review → publish; audit trail; group and enrollment management UI expanded.

@@ -383,13 +383,13 @@ isOneToOne: false
                   ]
                 },"book_sections": {
                   Row: {
-                    "blocks": NonNullable<Json>,"book_id": string,"course_id": string,"created_at": string,"cycle_id": string,"id": string,"phase": Database["public"]['Enums']["learning_phase"] | null,"position": number,"schema_version": number,"slug": string | null,"status": Database["public"]['Enums']["content_status"],"title": string,"updated_at": string
+                    "blocks": NonNullable<Json>,"book_id": string,"course_id": string,"created_at": string,"cycle_id": string,"edited_in_app_at": string | null,"id": string,"phase": Database["public"]['Enums']["learning_phase"] | null,"position": number,"schema_version": number,"slug": string | null,"status": Database["public"]['Enums']["content_status"],"title": string,"updated_at": string
                   }
                   Insert: {
-                    "blocks"?: NonNullable<Json>,"book_id": string,"course_id": string,"created_at"?: string,"cycle_id": string,"id"?: string,"phase"?: Database["public"]['Enums']["learning_phase"] | null,"position"?: number,"schema_version"?: number,"slug"?: string | null,"status"?: Database["public"]['Enums']["content_status"],"title": string,"updated_at"?: string
+                    "blocks"?: NonNullable<Json>,"book_id": string,"course_id": string,"created_at"?: string,"cycle_id": string,"edited_in_app_at"?: string | null,"id"?: string,"phase"?: Database["public"]['Enums']["learning_phase"] | null,"position"?: number,"schema_version"?: number,"slug"?: string | null,"status"?: Database["public"]['Enums']["content_status"],"title": string,"updated_at"?: string
                   }
                   Update: {
-                    "blocks"?: NonNullable<Json>,"book_id"?: string,"course_id"?: string,"created_at"?: string,"cycle_id"?: string,"id"?: string,"phase"?: Database["public"]['Enums']["learning_phase"] | null,"position"?: number,"schema_version"?: number,"slug"?: string | null,"status"?: Database["public"]['Enums']["content_status"],"title"?: string,"updated_at"?: string
+                    "blocks"?: NonNullable<Json>,"book_id"?: string,"course_id"?: string,"created_at"?: string,"cycle_id"?: string,"edited_in_app_at"?: string | null,"id"?: string,"phase"?: Database["public"]['Enums']["learning_phase"] | null,"position"?: number,"schema_version"?: number,"slug"?: string | null,"status"?: Database["public"]['Enums']["content_status"],"title"?: string,"updated_at"?: string
                   }
                   Relationships: [
                     {

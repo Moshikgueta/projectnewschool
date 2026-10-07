@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import type { Metadata, Route } from 'next';
+import Link from 'next/link';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { languageName } from '@/domain/i18n/text';
 import { requireArea } from '@/server/auth/session';
@@ -45,7 +46,12 @@ export default async function ManageHome() {
               {courses.map((c) => (
                 <tr key={c.id}>
                   <td className="px-4 py-3 font-medium" lang={c.languageCode}>
-                    {c.title}
+                    <Link
+                      href={`/manage/content/${c.id}` as Route}
+                      className="text-primary underline-offset-4 hover:underline"
+                    >
+                      {c.title}
+                    </Link>
                   </td>
                   <td className="px-4 py-3">
                     <span className="inline-flex flex-wrap items-center gap-2">

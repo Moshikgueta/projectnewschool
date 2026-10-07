@@ -2,6 +2,8 @@
 //
 //   pnpm content:validate [dir]   check every content/**/*.yaml file; exit 1 on problems
 //   pnpm content:import  [dir]    validate, then upsert into the database by slug
+//                                 (sections edited in the platform are skipped unless
+//                                 --overwrite-app-edits is passed)
 //
 // Import runs against the local database by default. A staging import needs
 // APP_ENV=staging and --confirm=<host of NEXT_PUBLIC_SUPABASE_URL>. It always
@@ -266,6 +268,20 @@ async function importCycle(
     const book = books.find((b) => b.kind === s.book);
     if (!book)
       throw new Error(`Section ${s.slug}: the course has no ${s.book} book in course.yaml`);
+    // Sections edited in the platform's content editor are not overwritten
+    // from files unless asked: the file may be older than the edit.
+    const { data: existing } = await db
+      .from('book_sections')
+      .select('edited_in_app_at')
+      .eq('book_id', book.id)
+      .eq('slug', s.slug)
+      .maybeSingle();
+    if (existing?.edited_in_app_at && !process.argv.includes('--overwrite-app-edits')) {
+      console.warn(
+        `! ${c.slug}/${s.slug}: edited in the platform on ${existing.edited_in_app_at}; left as it is (pass --overwrite-app-edits to replace it).`,
+      );
+      continue;
+    }
     const section = await must(
       `section ${s.slug}`,
       db
@@ -281,6 +297,8 @@ async function importCycle(
             blocks: withRealIds(s.blocks),
             phase: s.phase,
             status: s.status ?? c.status,
+            // The file is the source again.
+            edited_in_app_at: null,
           },
           { onConflict: 'book_id,slug' },
         )

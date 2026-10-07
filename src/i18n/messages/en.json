@@ -367,7 +367,7 @@
         "published": "Published",
         "archived": "Archived"
       },
-      "contentNote": "Courses and cycles are created from content files for now; the content editor comes later."
+      "contentNote": "Open a course to edit its cycles and pages. New courses still come from content files."
     },
     "groups": {
       "title": "Groups",
@@ -989,6 +989,89 @@
       "remove": "Remove",
       "removeLabel": "Remove: {title}",
       "noManager": "There is no pedagogical manager to send tasks to yet."
+    }
+  },
+  "cms": {
+    "statusLabel": "Status",
+    "status": {
+      "draft": "Draft",
+      "in_review": "In review",
+      "published": "Published",
+      "archived": "Archived"
+    },
+    "phase": {
+      "before_class": "Before class",
+      "during_class": "In class",
+      "after_class": "After class",
+      "review": "Review",
+      "optional": "Optional"
+    },
+    "books": {
+      "notebook": "Notebook",
+      "workbook": "Workbook"
+    },
+    "moveUp": "Move {title} up",
+    "moveDown": "Move {title} down",
+    "messages": {
+      "saved": "Saved.",
+      "invalid": "Check the form and try again.",
+      "notAllowed": "Only the pedagogical manager can change content.",
+      "failed": "Could not save. Try again.",
+      "slugTaken": "That short name is already used here. Choose another.",
+      "conflict": "Someone saved this page after you opened it. Copy your changes, reload the page and apply them again.",
+      "problems": "Fix the problems below, then save."
+    },
+    "course": {
+      "metaTitle": "Course content",
+      "back": "All courses",
+      "details": "Course details",
+      "title": "Title",
+      "description": "Description",
+      "save": "Save",
+      "cycles": "Cycles",
+      "noCycles": "No cycles yet.",
+      "addCycle": "Add a cycle",
+      "cycleTitle": "Cycle title",
+      "slug": "Short name",
+      "slugHint": "For links and imports: lowercase letters, digits and dashes.",
+      "goal": "Communicative goal (optional)",
+      "edit": "Edit content"
+    },
+    "cycle": {
+      "metaTitle": "Cycle content",
+      "backToCourse": "Back to {course}",
+      "details": "Cycle details",
+      "noSections": "No pages yet.",
+      "addSection": "Add a page",
+      "sectionTitle": "Page title",
+      "book": "Book",
+      "phase": "When",
+      "openEditor": "Edit {title}",
+      "activities": "Activities",
+      "activitiesHint": "Exercises are still written in content files and imported; their status is set here.",
+      "noActivities": "No activities in this cycle.",
+      "activityStatusLabel": "Status of {title}",
+      "setStatus": "Update",
+      "setStatusLabel": "Update the status of {title}"
+    },
+    "section": {
+      "metaTitle": "Edit page",
+      "backToCycle": "Back to {cycle}",
+      "details": "Details",
+      "title": "Title",
+      "phase": "When",
+      "saveDetails": "Save details",
+      "content": "Content",
+      "contentHint": "Blocks in YAML, the same format as the content files. Checked and previewed as you type.",
+      "publishedWarning": "This page is published: saving changes what students see right away. To work on it first, set its status to draft.",
+      "editorLabel": "Page content (YAML)",
+      "problemsTitle": "Problems",
+      "valid": "No problems.",
+      "save": "Save content",
+      "preview": "Preview",
+      "studentView": "Student view",
+      "teacherView": "Teacher view",
+      "previewEmpty": "Nothing to show yet."
     }
   }
 }
