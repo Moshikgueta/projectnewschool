@@ -27,7 +27,8 @@
     "staff-room:import": "node --disable-warning=ExperimentalWarning --import tsx scripts/staff-room-import.ts",
     "db:start": "supabase start",
     "db:reset": "supabase db reset",
-    "db:types": "supabase gen types typescript --local > src/server/db.types.ts.tmp && mv src/server/db.types.ts.tmp src/server/db.types.ts || (rm -f src/server/db.types.ts.tmp; exit 1)"
+    "db:types": "supabase gen types typescript --local > src/server/db.types.ts.tmp && mv src/server/db.types.ts.tmp src/server/db.types.ts || (rm -f src/server/db.types.ts.tmp; exit 1)",
+    "content:review-sheet": "tsx scripts/review-sheet.ts"
   },
   "dependencies": {
     "@phosphor-icons/react": "2.1.10",
