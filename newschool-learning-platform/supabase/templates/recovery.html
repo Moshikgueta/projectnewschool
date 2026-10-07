@@ -1,0 +1,14 @@
+<!-- Password reset email. See invite.html. -->
+<h2>New School</h2>
+<p>Someone asked to reset the password for your New School account.</p>
+<p>
+  <a
+    href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=recovery&next=/account/set-password"
+  >
+    Choose a new password
+  </a>
+</p>
+<p>
+  The link works once and expires in one hour. If you did not ask for this, ignore this email — your
+  password has not changed.
+</p>
