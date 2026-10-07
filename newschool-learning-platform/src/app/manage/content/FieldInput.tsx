@@ -58,9 +58,9 @@ export function FieldInput({
   const tf = useTranslations('cms.form');
   const id = `${idBase}-${field.key}`;
   const optional = 'optional' in field && field.optional;
-  const label = optional
-    ? t('optional', { field: t(field.key as 'text') })
-    : t(field.key as 'text');
+  const name = (field.label ?? field.key) as 'text';
+  const label = optional ? t('optional', { field: t(name) }) : t(name);
+  const hint = field.hint ? tf(field.hint as 'rowsHint') : undefined;
   const str = typeof value === 'string' ? value : '';
 
   switch (field.kind) {
@@ -138,11 +138,11 @@ export function FieldInput({
         <label className="flex min-h-11 items-center gap-2 text-[0.9375rem]">
           <input
             type="checkbox"
-            checked={value !== false}
+            checked={value === undefined ? (field.initial ?? true) : value !== false}
             onChange={(e) => onChange(e.target.checked)}
             className="size-5 accent-primary"
           />
-          {t(field.key as 'answerable')}
+          {t(name)}
         </label>
       );
     case 'activity':
@@ -172,7 +172,7 @@ export function FieldInput({
         <LinesInput
           id={id}
           label={label}
-          hint={tf('onePerLine')}
+          hint={hint ?? tf('onePerLine')}
           value={value}
           onChange={onChange}
           optional={!!optional}
@@ -190,7 +190,13 @@ export function FieldInput({
       );
     case 'rows':
       return (
-        <RowsInput id={id} label={label} hint={tf('rowsHint')} value={value} onChange={onChange} />
+        <RowsInput
+          id={id}
+          label={label}
+          hint={hint ?? tf('rowsHint')}
+          value={value}
+          onChange={onChange}
+        />
       );
     case 'group': {
       const present = !!value && typeof value === 'object';
@@ -204,7 +210,7 @@ export function FieldInput({
               onChange={(e) => onChange(e.target.checked ? record(field.fields) : undefined)}
               className="size-5 accent-primary"
             />
-            {tf('include', { field: t(field.key as 'resource') })}
+            {tf('include', { field: t(name as 'resource') })}
           </label>
           {present
             ? field.fields.map((f) => (

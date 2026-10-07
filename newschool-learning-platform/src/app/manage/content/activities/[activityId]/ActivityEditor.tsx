@@ -3,21 +3,29 @@
 import { useTranslations } from 'next-intl';
 import { useActionState, useDeferredValue, useMemo, useState } from 'react';
 import { compileItem } from '@/content/activities-file';
-import { parseActivityYaml } from '@/content/activity-editor';
+import {
+  activityDocToYaml,
+  checkActivityDoc,
+  parseActivityYaml,
+  yamlToActivityDoc,
+  type ActivityFormDoc,
+} from '@/content/activity-editor';
 import { NotebookView } from '@/content/render/NotebookView';
 import { solutionOf } from '@/domain/grading/solution';
 import { saveActivityContent, type EditorState } from '@/server/actions/cms';
 import { Alert } from '@/ui/Alert';
 import { Button } from '@/ui/Button';
 import { Badge } from '@/ui/Card';
+import { ItemListEditor } from './ItemListEditor';
 
 const initial: EditorState = { status: 'idle' };
 
 /**
- * An exercise's items in YAML (the content files' authored form), checked
- * as they are typed, with a preview of each question and its right answer.
- * Items students have answered are marked: their options and answers are
- * locked (the server and the database refuse such changes).
+ * An exercise's questions, two ways: a form per question, or the YAML of the
+ * content files. Both edit the same document; it is checked as it changes,
+ * with a preview of each question and its right answer. Questions students
+ * have answered are marked: their options and answers are locked (the server
+ * and the database refuse such changes).
  */
 export function ActivityEditor({
   activityId,
@@ -36,39 +44,96 @@ export function ActivityEditor({
 }) {
   const t = useTranslations('cms.activity');
   const ts = useTranslations('cms.section');
+  const tf = useTranslations('cms.form');
+  const [mode, setMode] = useState<'form' | 'yaml'>('form');
+  const [doc, setDoc] = useState<ActivityFormDoc>(
+    () => yamlToActivityDoc(yaml) ?? { instructions: [], items: [] },
+  );
   const [text, setText] = useState(yaml);
+  const [switchProblem, setSwitchProblem] = useState(false);
   const [state, action, pending] = useActionState(saveActivityContent, initial);
-  const deferred = useDeferredValue(text);
-  const result = useMemo(() => parseActivityYaml(deferred, activitySlug), [deferred, activitySlug]);
+  const deferredText = useDeferredValue(text);
+  const deferredDoc = useDeferredValue(doc);
+  const result = useMemo(
+    () =>
+      mode === 'yaml'
+        ? parseActivityYaml(deferredText, activitySlug)
+        : checkActivityDoc(deferredDoc, activitySlug),
+    [mode, deferredText, deferredDoc, activitySlug],
+  );
   const problems = result.ok
     ? state.status === 'error'
       ? (state.problems ?? [])
       : []
     : result.problems;
+  // The server names refused questions by id; the form shows them on their card.
+  const formProblems = problems.map((p) => {
+    const index = doc.items.findIndex((item) => item.id === p.path);
+    return index >= 0 ? { ...p, path: `items[${index}]` } : p;
+  });
+  const saved = mode === 'yaml' ? text : activityDocToYaml(doc);
+
+  function switchTo(next: 'form' | 'yaml') {
+    if (next === mode) return;
+    if (next === 'yaml') {
+      setText(activityDocToYaml(doc));
+    } else {
+      const parsed = yamlToActivityDoc(text);
+      if (!parsed) {
+        setSwitchProblem(true);
+        return;
+      }
+      setDoc(parsed);
+    }
+    setSwitchProblem(false);
+    setMode(next);
+  }
 
   return (
     <div className="grid gap-8 xl:grid-cols-2">
-      <form action={action} className="flex min-w-0 flex-col gap-3" noValidate>
+      <form action={action} className="flex min-w-0 flex-col gap-4" noValidate>
         <input type="hidden" name="activityId" value={activityId} />
         <input type="hidden" name="updatedAt" value={updatedAt} />
-        <label htmlFor="activity-yaml" className="font-semibold">
-          {t('editorLabel')}
-        </label>
-        <p id="activity-yaml-hint" className="text-sm text-muted">
-          {t('hint')}
-        </p>
-        <textarea
-          id="activity-yaml"
-          name="yaml"
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          dir="ltr"
-          spellCheck={false}
-          rows={28}
-          aria-describedby="activity-yaml-hint activity-yaml-problems"
-          aria-invalid={!result.ok}
-          className="rounded-md border border-border-strong bg-surface p-3 font-mono text-sm leading-relaxed text-fg aria-invalid:border-error"
-        />
+        <input type="hidden" name="yaml" value={saved} />
+
+        <div role="group" aria-label={tf('modeLabel')} className="flex gap-2">
+          {(['form', 'yaml'] as const).map((m) => (
+            <Button
+              key={m}
+              type="button"
+              variant={mode === m ? 'primary' : 'secondary'}
+              aria-pressed={mode === m}
+              onClick={() => switchTo(m)}
+            >
+              {tf(m === 'form' ? 'modeForm' : 'modeYaml')}
+            </Button>
+          ))}
+        </div>
+        {switchProblem ? <Alert tone="error">{tf('cannotSwitch')}</Alert> : null}
+
+        {mode === 'form' ? (
+          <ItemListEditor doc={doc} onChange={setDoc} problems={formProblems} answered={answered} />
+        ) : (
+          <>
+            <label htmlFor="activity-yaml" className="font-semibold">
+              {t('editorLabel')}
+            </label>
+            <p id="activity-yaml-hint" className="text-sm text-muted">
+              {t('hint')}
+            </p>
+            <textarea
+              id="activity-yaml"
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+              dir="ltr"
+              spellCheck={false}
+              rows={28}
+              aria-describedby="activity-yaml-hint activity-yaml-problems"
+              aria-invalid={!result.ok}
+              className="rounded-md border border-border-strong bg-surface p-3 font-mono text-sm leading-relaxed text-fg aria-invalid:border-error"
+            />
+          </>
+        )}
         <div id="activity-yaml-problems" aria-live="polite">
           {problems.length ? (
             <div className="rounded-md border border-error/30 bg-error-light p-3 text-error-ink">

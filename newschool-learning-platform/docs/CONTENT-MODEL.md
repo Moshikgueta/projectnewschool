@@ -253,7 +253,9 @@ _editor_, not a new model.
   students have answered keeps its options and answers (rewording it, changing its points
   or feedback, or listing its options in another order is fine); to change what it
   accepts, add a new question. Questions no one has answered can be changed or removed.
-- **Next:** a form editor for exercise questions, media upload, a review step where
+- **Exercise forms:** the exercise editor opens as a form, one card per question with
+  the fields of its type (ADR-037); the YAML view stays one click away.
+- **Next:** media upload, a review step where
   teachers propose and the manager approves, and the page history view (the history is
   already in the audit log).
 

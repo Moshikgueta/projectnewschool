@@ -252,8 +252,10 @@ Status 2026-10-07:
       (editor, shared writer and database triggers), their wording can change;
       `content:import` follows the same rules; 15 pgTAP, 8 unit, 2 API and 2 end-to-end
       tests
-- [ ] Form editor for exercise questions; media upload; teacher proposals with manager
-      approval; page history view
+- [x] Form editor for exercise questions (ADR-037): a form per question type, add,
+      duplicate, reorder and remove questions, answered questions locked; YAML view kept;
+      5 unit tests, 1 more end-to-end test
+- [ ] Media upload; teacher proposals with manager approval; page history view
 
 Planned scope:
 

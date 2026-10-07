@@ -41,6 +41,12 @@ test('answered questions keep their answers; their wording can change', async ({
     await expect(preview.getByText('answered', { exact: false })).toHaveCount(3);
     await expect(preview.getByText('Answer: cinco')).toBeVisible();
 
+    // In the form, an answered question says it is locked and cannot be removed.
+    await expect(page.getByRole('button', { name: 'Remove question 1' })).toBeDisabled();
+    await page.getByRole('button', { name: /^Question 1/ }).click();
+    await expect(page.getByText('its options and answers can’t change')).toBeVisible();
+
+    await page.getByRole('button', { name: 'YAML', exact: true }).click();
     const editor = page.getByLabel('Questions (YAML)');
     const yaml = await editor.inputValue();
     expect(yaml).toContain('dos-mas-tres');
@@ -120,6 +126,7 @@ test('the manager adds an exercise, writes questions and sees their answers', as
     await expect(page).toHaveURL(/\/manage\/content\/activities\/[0-9a-f-]{36}$/);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('E2E: greetings check');
 
+    await page.getByRole('button', { name: 'YAML', exact: true }).click();
     const editor = page.getByLabel('Questions (YAML)');
     const yaml = await editor.inputValue();
     expect(yaml).toContain('question-1');
@@ -156,6 +163,7 @@ test('the manager adds an exercise, writes questions and sees their answers', as
 
     // Removing a question no one has answered removes it.
     await page.reload();
+    await page.getByRole('button', { name: 'YAML', exact: true }).click();
     await editor.fill(yaml);
     await page.getByRole('button', { name: 'Save content' }).click();
     await expect(page.getByRole('status').filter({ hasText: 'Saved.' })).toBeVisible();
@@ -164,6 +172,63 @@ test('the manager adds an exercise, writes questions and sees their answers', as
       .select('id', { count: 'exact', head: true })
       .eq('activity_id', activity!.id);
     expect(count).toBe(1);
+  } finally {
+    await admin.from('activities').delete().like('slug', 'e2e-%');
+  }
+});
+
+test('the manager writes questions with the form, and switches to YAML', async ({ page }) => {
+  test.setTimeout(120_000);
+  const admin = adminClient();
+  try {
+    await signIn(page, USERS.manager);
+    await passMfa(page, USERS.manager);
+    await page.goto(`/manage/content/cycles/${CYCLE}`);
+    await page.locator('#activity-new-title').fill('E2E: form check');
+    await page.locator('#activity-new-slug').fill('e2e-form-check');
+    await page.getByRole('button', { name: 'Add exercise' }).click();
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('E2E: form check');
+
+    // The example question, rewritten in its form.
+    await page.getByRole('button', { name: /^Question 1/ }).click();
+    await page.locator('#question-1-prompt').fill('¿Cómo te llamas?');
+    await page.locator('#question-1-options-0-text').fill('Me llamo Ana.');
+    await page.locator('#question-1-options-1-text').fill('Tengo diez años.');
+
+    // A true-or-false question added from the list of types.
+    await page.getByLabel('Question type').selectOption({ label: 'True or false' });
+    await page.getByRole('button', { name: 'Add question' }).click();
+    await page.locator('#question-2-prompt').fill('«Buenas noches» se dice por la mañana.');
+    await expect(page.locator('#activity-yaml-problems')).toContainText('No problems.');
+    await page.locator('#question-2-form').getByLabel('The statement is true').uncheck();
+
+    const preview = page.getByRole('region', { name: 'Preview with answers' });
+    await expect(preview.getByText('Answer: Me llamo Ana.')).toBeVisible();
+    await expect(preview.getByText('Answer: False')).toBeVisible();
+    expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+
+    // A question left without a prompt is pointed out on its card; saving waits.
+    await page.getByRole('button', { name: 'Add question' }).click();
+    await expect(page.getByRole('button', { name: /^Question 3.*1 problem/ })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Save content' })).toBeDisabled();
+    await page.getByRole('button', { name: 'Remove question 3' }).click();
+
+    await page.getByRole('button', { name: 'Save content' }).click();
+    await expect(page.getByRole('status').filter({ hasText: 'Saved.' })).toBeVisible();
+    const { data: activity } = await admin
+      .from('activities')
+      .select('id, items:activity_items ( slug, type )')
+      .eq('slug', 'e2e-form-check')
+      .single();
+    expect(
+      [...activity!.items].sort((a, b) => a.slug.localeCompare(b.slug)).map((i) => i.type),
+    ).toEqual(['multipleChoice', 'trueFalse']);
+
+    // The YAML view shows the same document.
+    await page.getByRole('button', { name: 'YAML', exact: true }).click();
+    const yaml = await page.getByLabel('Questions (YAML)').inputValue();
+    expect(yaml).toContain('Me llamo Ana.');
+    expect(yaml).toContain('answer: false');
   } finally {
     await admin.from('activities').delete().like('slug', 'e2e-%');
   }

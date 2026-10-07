@@ -62,6 +62,17 @@ export function parseActivityYaml(
       problems: [{ path: '', message: 'YAML aliases (*name) are not allowed.' }],
     };
   }
+  return checkActivityDoc(raw, activitySlug);
+}
+
+/**
+ * Check an exercise document as the form editor holds it (plain values, as
+ * parsed from YAML): the same schemas and checks as the YAML.
+ */
+export function checkActivityDoc(
+  raw: unknown,
+  activitySlug: string,
+): { ok: true; doc: ActivityDocument } | { ok: false; problems: EditorProblem[] } {
   const result = documentSchema.safeParse(raw);
   if (!result.success) {
     return {
@@ -83,6 +94,35 @@ export function parseActivityYaml(
   });
   if (problems.length) return { ok: false, problems };
   return { ok: true, doc: result.data };
+}
+
+/** The form editor's document: what the YAML holds, before any checks. */
+export type ActivityFormDoc = { instructions: unknown[]; items: Record<string, unknown>[] };
+
+/** YAML to the form editor's document, or null when the YAML is not readable as one. */
+export function yamlToActivityDoc(text: string): ActivityFormDoc | null {
+  if (text.length > MAX) return null;
+  const parsed = parseDocument(text, { uniqueKeys: true });
+  if (parsed.errors.length || !isMap(parsed.contents)) return null;
+  try {
+    const raw = parsed.toJS({ maxAliasCount: 0 }) as Record<string, unknown>;
+    const items = Array.isArray(raw.items) ? raw.items : [];
+    if (!items.every((i) => i && typeof i === 'object' && !Array.isArray(i))) return null;
+    return {
+      instructions: Array.isArray(raw.instructions) ? raw.instructions : [],
+      items: items as Record<string, unknown>[],
+    };
+  } catch {
+    return null;
+  }
+}
+
+/** The form editor's document as YAML (what is saved). */
+export function activityDocToYaml(doc: ActivityFormDoc): string {
+  return stringify(doc.instructions.length ? doc : { items: doc.items }, {
+    lineWidth: 100,
+    aliasDuplicateObjects: false,
+  });
 }
 
 /** A first item for a new exercise, to be rewritten by its author. */

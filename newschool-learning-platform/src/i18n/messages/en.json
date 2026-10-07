@@ -1114,7 +1114,9 @@
       "fmtBold": "bold",
       "fmtItalic": "italic",
       "fmtLink": "link text",
-      "fmtBlank": "a blank to fill in"
+      "fmtBlank": "a blank to fill in",
+      "blanksHint": "One line per blank, in order; other accepted answers on the same line, separated by |.",
+      "pairsHint": "One pair per line: left | right."
     },
     "fields": {
       "optional": "{field} (optional)",
@@ -1159,8 +1161,26 @@
         "tip": "Tip",
         "culture": "Culture",
         "info": "Information",
-        "warning": "Warning"
-      }
+        "warning": "Warning",
+        "lenient": "Accents don’t matter",
+        "strict": "Accents must be right"
+      },
+      "points": "Points",
+      "feedback": "feedback",
+      "feedbackCorrect": "Feedback when right",
+      "feedbackIncorrect": "Feedback when wrong",
+      "promptLang": "Language of the question (code, e.g. es, he)",
+      "optionText": "Option",
+      "optionCorrect": "This is a right answer",
+      "optionFeedback": "Feedback for this option",
+      "statementTrue": "The statement is true",
+      "blankText": "Sentence (___ for each blank)",
+      "blanks": "Accepted answers",
+      "accents": "Accents",
+      "pairs": "Pairs",
+      "sentence": "The sentence, in the right order",
+      "alsoAccept": "Other correct orders",
+      "maxLength": "Longest answer (characters)"
     },
     "blockTypes": {
       "heading": "Heading",
@@ -1216,7 +1236,19 @@
         "flashcards": "Flashcards",
         "shortAnswer": "Short answer",
         "reflection": "Reflection"
-      }
+      },
+      "instructionsInYaml": "This exercise has instructions above its questions: edit them in the YAML view.",
+      "unknownType": "Unknown type",
+      "moveUp": "Move question {n} up",
+      "moveDown": "Move question {n} down",
+      "duplicateLabel": "Duplicate question {n}",
+      "removeLabel": "Remove question {n}",
+      "cannotRemoveAnswered": "Students have answered this question, so it can’t be removed.",
+      "lockedNote": "{count, plural, one {A student has answered this question} other {Students have answered this question # times}}: its options and answers can’t change (saving would be refused). Its wording, points and feedback can.",
+      "promptInYaml": "This question’s prompt has several parts (blocks): edit it in the YAML view.",
+      "questionId": "Question id (keeps its answers linked):",
+      "questionType": "Question type",
+      "addQuestion": "Add question"
     }
   }
 }

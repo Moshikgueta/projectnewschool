@@ -6,7 +6,7 @@ import { BLOCK_FIELDS, BLOCK_TYPES, blockSummary, newBlock } from '@/content/blo
 import type { EditorProblem } from '@/content/editor';
 import type { BlockType } from '@/content/schema';
 import { Badge } from '@/ui/Card';
-import { FieldInput, setKey } from './FieldInput';
+import { FieldInput, setKey } from '../../FieldInput';
 
 type Rec = Record<string, unknown>;
 export type EditorDoc = { blocks: Rec[]; teacherNotes: Rec[] };

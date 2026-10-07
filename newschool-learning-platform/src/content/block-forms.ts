@@ -8,29 +8,37 @@ import type { BlockType } from './schema';
 
 export type FieldSpec =
   /** One line of text. */
-  | { key: string; kind: 'line'; optional?: boolean }
-  /** Formatted text (**bold**, *italic*, links, ____), several lines. */
-  | { key: string; kind: 'text'; optional?: boolean }
-  /** Plain text, several lines (copied as it is, e.g. a message for the AI tutor). */
-  | { key: string; kind: 'plain' }
-  | { key: string; kind: 'choice'; options: readonly (string | number)[] }
-  | { key: string; kind: 'number'; min: number; max: number; optional: true }
-  | { key: string; kind: 'boolean' }
-  /** A language code (e.g. "es", "he"). */
-  | { key: string; kind: 'lang'; optional: true }
-  | { key: string; kind: 'url'; optional?: boolean }
-  /** A list of short texts, one per line. */
-  | { key: string; kind: 'lines'; optional?: boolean }
-  /** One row of cells, separated by " | ". */
-  | { key: string; kind: 'cells'; optional: true }
-  /** Table rows: one row per line, cells separated by " | ". */
-  | { key: string; kind: 'rows' }
-  /** A list of small records (each with its own fields). */
-  | { key: string; kind: 'list'; fields: FieldSpec[] }
-  /** An optional record (e.g. a resource: label + link). */
-  | { key: string; kind: 'group'; fields: FieldSpec[]; optional: true }
-  /** An exercise of this course, by slug. */
-  | { key: string; kind: 'activity' };
+  (
+    | { key: string; kind: 'line'; optional?: boolean }
+    /** Formatted text (**bold**, *italic*, links, ____), several lines. */
+    | { key: string; kind: 'text'; optional?: boolean }
+    /** Plain text, several lines (copied as it is, e.g. a message for the AI tutor). */
+    | { key: string; kind: 'plain' }
+    | { key: string; kind: 'choice'; options: readonly (string | number)[] }
+    | { key: string; kind: 'number'; min: number; max: number; optional: true }
+    /** A checkbox; `initial` is its value in a new record (default: checked). */
+    | { key: string; kind: 'boolean'; initial?: boolean }
+    /** A language code (e.g. "es", "he"). */
+    | { key: string; kind: 'lang'; optional: true }
+    | { key: string; kind: 'url'; optional?: boolean }
+    /** A list of short texts, one per line. */
+    | { key: string; kind: 'lines'; optional?: boolean }
+    /** One row of cells, separated by " | ". */
+    | { key: string; kind: 'cells'; optional: true }
+    /** Table rows: one row per line, cells separated by " | ". */
+    | { key: string; kind: 'rows' }
+    /** A list of small records (each with its own fields). */
+    | { key: string; kind: 'list'; fields: FieldSpec[] }
+    /** An optional record (e.g. a resource: label + link). */
+    | { key: string; kind: 'group'; fields: FieldSpec[]; optional: true }
+    /** An exercise of this course, by slug. */
+    | { key: string; kind: 'activity' }
+  ) & {
+    /** The message key of the field's label (`cms.fields`), when not its key. */
+    label?: string;
+    /** The message key of a hint shown under the label (`cms.form`), where the kind has one. */
+    hint?: string;
+  };
 
 export const BLOCK_FIELDS: Record<BlockType, FieldSpec[]> = {
   heading: [
@@ -168,7 +176,7 @@ function initial(field: FieldSpec): unknown {
     case 'choice':
       return field.options[0];
     case 'boolean':
-      return true;
+      return field.initial ?? true;
     case 'lines':
       return [];
     case 'rows':
