@@ -1,0 +1,496 @@
+# Cycle "Routine", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: routine
+title: Routine
+goal: Talk about your daily routine, using numbers, days of the week and the present simple.
+position: 5
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Numbers and days of the week" and "Verbs in the
+    present simple") are NEW: the notebook has no self-study exercises. They were
+    written from the cycle's two skills, its summary rules and its vocabulary.
+    Please check level, wording and every right answer before students see them.
+  - >-
+    Skill names: the general information says "Numbers & Dates and verbs in the
+    present simple"; the summary says "Numbers and days of the week" and "Verbs in
+    the present". The summary names are used ("Verbs in the present simple"). The
+    notebook gives no "Practiced with" plan, no recommended combinations and no
+    activity or warm-up times; the teacher note suggests choosing 2–3 of the 5
+    activities. Activities 4 and 5 had no skill label; both skills are given.
+    Please confirm.
+  - >-
+    The warm-up questions had no answer frames in the notebook; frames were added.
+    Frames were also added for Activities 1, 3 and 5 so students can type their
+    sentences.
+  - >-
+    Activity 2: "gets an applause" → "gets a round of applause". Activity 3 title
+    "Guess whos this routine" → "Guess whose routine it is!"; its Stage 4 (read the
+    routine to the class) comes before Stage 3 (the others guess), so the steps
+    were put in that order.
+  - >-
+    Summary skill 1, rule 3: "use numbers naturally in your sentences (e.g., I wake
+    up at 7)" now also says *at* before times, as in the example. Skill 2: "8pm" →
+    "8 p.m.". A small present simple table (wake up / wakes up / don't / doesn't /
+    do / does) was added from the three rules; please confirm.
+  - >-
+    Mori: the notebook has no tips (more questions / explain in Hebrew); the
+    standard tips callout of the other cycles was added. Extra activities 1 and 2
+    start with "Hi Mori!" and are written as requests to Mori.
+  - >-
+    Vocabulary: kept as in the notebook. Numbers stay three to a card
+    ("One-Two-Three"), as in the Family cycle. "Saturday" is glossed "שבת / יום
+    שבת"; please confirm.
+  - >-
+    Links: the Quizlet link lost its "?new" parameter. The "Answer of student 1/2/3"
+    lines are replaced by the optional answer boxes (decision C2): students may
+    type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: routine-class
+    title: 'Class: Routine'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Routine
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Numbers and days of the week
+            description: 'Times and days: *I wake up at 7. On Mondays I study English.*'
+          - name: Verbs in the present simple
+            description: "*I work, she works*; *don't / doesn't*; questions with *do / does*"
+      - id: quizlet
+        type: externalLink
+        label: Routine words on Quizlet
+        url: https://quizlet.com/il/1060775764/basic-english-routine-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I study English ___ times a week, on ___.
+        example: I am Dana. I study English two times a week, on Mondays and Thursdays.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What time do you wake up?
+            frame: I wake up at ___.
+          - question: What do you eat for breakfast?
+            frame: I eat ___ for breakfast.
+          - question: What do you do every Tuesday?
+            frame: Every Tuesday, I ___.
+          - question: What do you do in the morning?
+            frame: In the morning, I ___.
+          - question: What do you do in the evening?
+            frame: In the evening, I ___.
+          - question: What time do you go to sleep?
+            frame: I go to sleep at ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: A perfect happy day, for me and for him / her!'
+        skills: [Verbs in the present simple, Numbers and days of the week]
+        steps:
+          - Work in pairs. Choose a day of the week.
+          - Write a perfect, happy schedule for yourself with **I**. Write at least five activities and their times.
+          - Share your schedule with your partner and say why each activity makes you happy. Listen and take notes about your partner's favorite activities.
+          - Write a new perfect, happy schedule for your partner with **he / she**. Use the same activities or add new ones your partner might like.
+          - Read your partner's new schedule out loud. Your partner says if they agree, or wants to add or change something.
+        example: |-
+          *I wake up at 8 a.m. and I eat pancakes for breakfast.*
+          *He wakes up at 8 a.m. and he eats pancakes for breakfast.*
+      - id: act1-day
+        type: discussionQuestions
+        title: My perfect day
+        items:
+          - question: On ___ (day), I wake up at ___.
+          - question: At ___, I ___.
+          - question: At ___, I ___.
+          - question: At ___, I ___.
+          - question: At ___, I go to sleep.
+          - question: My partner's perfect day
+            frame: On ___, he / she wakes up at ___. At ___, he / she ___.
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: What time is it?'
+        skills: [Numbers and days of the week, Verbs in the present simple]
+        steps:
+          - Think of an activity you do every day and the exact time you do it. Keep the time a secret.
+          - Say what you do, but not the time. Then ask the group, *What time is it?*
+          - The others guess the time. Answer *yes* or *no* until someone guesses right.
+          - The student who guesses right gets a round of applause. Then it is the next student's turn.
+        example: |-
+          **A:** *I eat dinner with my family. What time is it?*
+          **B:** *Is it at 7 p.m.?*
+          **A:** *No!*
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Guess whose routine it is!'
+        skills: [Verbs in the present simple, Numbers and days of the week]
+        steps:
+          - Write a short daily routine about someone you know (a family member, a friend or a famous person). Use **he / she**.
+          - At the end, write three options for who it could be.
+          - Read your routine and the three options to the group.
+          - The others guess who it is. The first student to guess right gets a point or a round of applause.
+        example: |-
+          *She wakes up at 6 a.m. and goes to the gym.*
+          *a) my mom, b) my sister, c) my best friend*
+      - id: act3-routine
+        type: discussionQuestions
+        title: Whose routine is it?
+        items:
+          - question: He / She wakes up at ___ and ___.
+          - question: At ___, he / she ___.
+          - question: In the evening, he / she ___.
+          - question: 'Who is it? a) ___ b) ___ c) ___'
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: What a coincidence!'
+        skills: [Verbs in the present simple, Numbers and days of the week]
+        steps:
+          - One student says one thing they do every day and when they do it.
+          - If you do the same thing at the same time, say *What a coincidence!* and take the turn. Say another activity and time from your routine.
+          - Continue until every student speaks at least once.
+        example: |-
+          **A:** *I have lunch at 1 p.m.*
+          **B:** *What a coincidence! I have lunch at 1 p.m. too. I watch TV at 4 p.m.*
+      - id: act5
+        type: classActivity
+        title: 'Activity 5: How different or similar are our routines?'
+        skills: [Verbs in the present simple, Numbers and days of the week]
+        steps:
+          - Work in pairs. Ask each other about your daily routines. Answer with **I**.
+          - As you listen, say how your routines are similar or different. Use **he / she** for your partner.
+          - Make a short list of things you have in common and things that are different.
+          - Share your list with the group.
+        example: |-
+          **A:** *What time do you wake up?*
+          **B:** *I wake up at 7 a.m.*
+          *She wakes up at 7 a.m., but I wake up at 6 a.m.*
+      - id: act5-list
+        type: discussionQuestions
+        title: Similar or different?
+        items:
+          - question: 'In common:'
+            frame: We both ___.
+          - question: 'Different:'
+            frame: He / She ___, but I ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Numbers and days of the week** and **Verbs in the
+          present simple**. The notebook gives no recommended combinations or times:
+          choose 2 or 3 activities (for example Activity 1 or 5 for *I* and *he / she*,
+          and Activity 2 or 4 for times).
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: >-
+          Keep it very short: 2 sentences per student, no more than 30 seconds each
+          (teacher too). If you all know each other already, go straight to the
+          warm-up questions.
+      - id: n-warmup
+        anchor: warmup
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Make sure students change the verb in the second schedule: *I wake up* →
+          *he wakes up*, *I eat* → *she eats*.
+      - id: n-act3
+        anchor: act3
+        text: Check that every sentence uses the third person (*she wakes up*, *he goes*).
+      - id: n-act5
+        anchor: act5
+        text: When pairs share, they use the first person (*I wake up*) and the third person (*she wakes up*).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: routine-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Numbers and days of the week
+        rules:
+          - text: Say numbers out loud and use them in real examples (your age, your phone number, the time) to remember them better.
+          - text: Connect the days of the week to things you do on those days.
+            examples: [Monday — school starts., Saturday — I relax.]
+          - text: Say **on** before days and **at** before times.
+            examples: [I study English **on** Monday., I wake up **at** 7.]
+      - id: rules-present
+        type: ruleSummary
+        skill: Verbs in the present simple
+        rules:
+          - text: 'With *I, you, we* and *they*, use the verb as it is (the base form).'
+            examples: [I study every day., They go for a run every morning.]
+          - text: 'With *he, she* and *it*, add **-s** or **-es** to the verb.'
+            examples: [She watches movies at 8 p.m., He reads books every evening.]
+          - text: 'Use **do** (with *he, she, it*: **does**) for negatives and questions.'
+            examples: ["I don't study English on Sundays.", Does he go to the park every afternoon?]
+      - id: present-table
+        type: table
+        caption: 'Present simple: wake up'
+        header: [Person, Positive, Negative, Question]
+        rows:
+          - [I / you / we / they, I wake up at 7., "I don't wake up at 7.", Do you wake up at 7?]
+          - [he / she / it, She wakes up at 7., "She doesn't wake up at 7.", Does she wake up at 7?]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: routine-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy this message and send it. Mori will ask you questions; answer every one.
+      - id: mori-routine
+        type: aiTutorPrompt
+        title: My daily routine
+        message: >-
+          Hi Mori! I want to practice talking about daily routines. Can you ask me
+          questions using the skills Numbers and Present Simple? Please use only the
+          present simple tense, and correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-time
+        type: aiTutorPrompt
+        title: What time?
+        intro: Send this message to Mori.
+        message: >-
+          Hi Mori! Please say daily routine sentences with a missing number or time
+          (for example, "I eat lunch at ___ o'clock"). I will fill in the blank with a
+          number and say the full sentence in the present simple. Please correct me if
+          I make mistakes.
+      - id: mori-day
+        type: aiTutorPrompt
+        title: A typical day
+        intro: Send this message to Mori.
+        message: >-
+          Hi Mori! I will tell you about a typical day using numbers and the present
+          simple (for example, "I wake up at 7 a.m. and I eat breakfast at 8"). Please
+          ask me follow-up questions to keep the conversation going and help me
+          improve.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: routine-practice
+    book: workbook
+    title: 'Practice: Routine'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-numbers
+        type: activity
+        activity: routine-numbers
+      - id: ex-verbs
+        type: activity
+        activity: routine-verbs
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: routine-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Routine words
+        glossLang: he
+        link: https://quizlet.com/il/1060775764/basic-english-routine-flash-cards/
+        items: &routine-words
+          - { term: To wake up, gloss: להתעורר }
+          - { term: To get up, gloss: לקום }
+          - { term: To eat, gloss: לאכול }
+          - { term: To drink, gloss: לשתות }
+          - { term: To go, gloss: ללכת }
+          - { term: To come, gloss: לבוא }
+          - { term: To have breakfast, gloss: לאכול ארוחת בוקר }
+          - { term: To have lunch, gloss: לאכול ארוחת צהריים }
+          - { term: To have dinner, gloss: לאכול ארוחת ערב }
+          - { term: To study, gloss: ללמוד }
+          - { term: To work, gloss: לעבוד }
+          - { term: To play, gloss: לשחק }
+          - { term: To watch TV, gloss: לצפות בטלוויזיה }
+          - { term: To read, gloss: לקרוא }
+          - { term: To sleep, gloss: לישון }
+          - { term: Monday, gloss: יום שני }
+          - { term: Tuesday, gloss: יום שלישי }
+          - { term: Wednesday, gloss: יום רביעי }
+          - { term: Thursday, gloss: יום חמישי }
+          - { term: Friday, gloss: יום שישי }
+          - { term: Saturday, gloss: שבת / יום שבת }
+          - { term: Sunday, gloss: יום ראשון }
+          - { term: One-Two-Three, gloss: אחת-שתיים-שלוש }
+          - { term: Four-Five-Six, gloss: ארבע-חמש-שש }
+          - { term: Seven-Eight-Nine, gloss: שבע-שמונה-תשע }
+          - { term: Ten, gloss: עשר }
+          - { term: To brush teeth, gloss: לצחצח שיניים }
+          - { term: To make the bed, gloss: לסדר את המיטה }
+          - { term: To do homework, gloss: להכין שיעורים }
+          - { term: To meet friends, gloss: להיפגש עם חברים }
+
+vocabulary:
+  - slug: routine
+    title: Routine
+    items: *routine-words
+
+activities:
+  - slug: routine-numbers
+    title: Numbers and days of the week
+    minutes: 8
+    items:
+      - id: on-monday
+        type: multipleChoice
+        prompt: I have English class ___ Monday.
+        options:
+          - { text: on, correct: true }
+          - { text: in, feedback: 'Say *on* before days: *on Monday*.' }
+          - {
+              text: at,
+              feedback: 'Use *at* before times (*at 7*). Before days, say *on*: *on Monday*.',
+            }
+      - id: at-seven
+        type: multipleChoice
+        prompt: I wake up ___ 7 o'clock.
+        options:
+          - { text: at, correct: true }
+          - {
+              text: on,
+              feedback: 'Use *on* before days (*on Monday*). Before times, say *at*: *at 7*.',
+            }
+          - { text: in, feedback: 'Before times, say *at*: *I wake up at 7*.' }
+      - id: wednesday
+        type: fillBlank
+        prompt: Complete the days of the week.
+        text: Monday, Tuesday, ___, Thursday, Friday.
+        blanks: [[Wednesday]]
+      - id: tomorrow
+        type: multipleChoice
+        prompt: Today is Friday. Tomorrow is ___.
+        options:
+          - { text: Saturday, correct: true }
+          - { text: Thursday, feedback: 'Thursday is the day **before** Friday.' }
+          - { text: Sunday, feedback: 'Sunday is two days after Friday.' }
+      - id: days-hebrew
+        type: matching
+        prompt: Match each day with its name in Hebrew.
+        pairs:
+          - [Sunday, יום ראשון]
+          - [Monday, יום שני]
+          - [Tuesday, יום שלישי]
+          - [Thursday, יום חמישי]
+          - [Friday, יום שישי]
+      - id: seven-ten
+        type: fillBlank
+        prompt: Write the numbers in words.
+        text: I wake up at ___ (7) and I go to sleep at ___ (10).
+        blanks: [[seven], [ten]]
+      - id: in-monday
+        type: trueFalse
+        prompt: '*I study English in Monday* is correct.'
+        answer: false
+        feedback:
+          correct: 'Right! Before days, say *on*: *I study English on Monday*.'
+          incorrect: 'Before days, say *on*, not *in*: *I study English on Monday*.'
+      - id: order-mondays
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: I study English on Mondays.
+
+  - slug: routine-verbs
+    title: Verbs in the present simple
+    minutes: 8
+    items:
+      - id: she-watches
+        type: multipleChoice
+        prompt: She ___ movies at 8 p.m.
+        options:
+          - { text: watches, correct: true }
+          - { text: watch, feedback: 'With *he, she, it*, add -s or -es: *she watches*.' }
+          - { text: watchs, feedback: 'After *-ch*, add **-es**: *watch* → *watches*.' }
+      - id: they-go
+        type: multipleChoice
+        prompt: They ___ for a run every morning.
+        options:
+          - { text: go, correct: true }
+          - { text: goes, feedback: 'With *I, you, we, they*, use the verb as it is: *they go*.' }
+          - { text: going, feedback: 'In the present simple, say *they go*.' }
+      - id: he-reads
+        type: fillBlank
+        prompt: Write the verb in the right form.
+        text: He ___ (read) books every evening.
+        blanks: [[reads]]
+      - id: dont-doesnt
+        type: fillBlank
+        prompt: "Complete with *don't* or *doesn't*."
+        text: I ___ study English on Sundays. My father ___ work on Saturdays.
+        blanks: [["don't", do not], ["doesn't", does not]]
+        wordBank: ["don't", "doesn't"]
+      - id: does-he
+        type: multipleChoice
+        prompt: ___ he go to the park every afternoon?
+        options:
+          - { text: Does, correct: true }
+          - { text: Do, feedback: 'With *he, she, it*, ask with **does**: *Does he go…?*' }
+          - {
+              text: Is,
+              feedback: 'Questions with a verb like *go* start with *do* or *does*: *Does he go…?*',
+            }
+      - id: i-studies
+        type: trueFalse
+        prompt: 'With *I*, we add -s to the verb: *I studies every day*.'
+        answer: false
+        feedback:
+          correct: 'Right! With *I, you, we, they*, use the verb as it is: *I study every day*.'
+          incorrect: 'With *I*, use the verb as it is: *I study every day*. Add -s only with *he, she, it*.'
+      - id: he-she-form
+        type: matching
+        prompt: Match each verb with its form for *he / she*.
+        pairs:
+          - [watch, watches]
+          - [go, goes]
+          - [read, reads]
+          - [play, plays]
+          - [sleep, sleeps]
+      - id: order-doesnt
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: My father doesn't work on Sundays.

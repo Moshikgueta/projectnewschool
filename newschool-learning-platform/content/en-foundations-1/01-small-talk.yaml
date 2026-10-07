@@ -1,0 +1,536 @@
+# Cycle "Small Talk", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: small-talk
+title: Small Talk
+goal: Make small talk by asking questions and using descriptive sentences.
+position: 1
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Making questions" and "Descriptive sentences") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The warm-up questions in the notebook have no sentence frames. Simple frames were
+    added (e.g. "I work at / in ___.", "My favorite place is ___ because ___.").
+    Please check them.
+  - >-
+    Activity 2: "He/she lives at ___" → "He / She lives in ___"; "tell a fact they
+    listened about his partner" → "tell the group one fact they heard from their
+    partner".
+  - >-
+    Activity 3 (Jeopardy): "How many times do you study English a week?" → "How many
+    times a week do you study English?"; "What do you like to do?" → "What do you like
+    to do in your free time?" (to match the answer); "study Chemistry" → "study
+    chemistry". The answer key is in the teacher note; students only see the answers
+    and write the questions.
+  - >-
+    Summary, Making questions: some examples are not present simple ("Where are you
+    working now?", "How did you meet your best friend?", "Why did you move here?").
+    They are kept as in the notebook; please decide if they fit level 1. One line was
+    added to rule 2 for questions with am / is / are ("Where are you from?"), because
+    "How are you?" and "Where are you from?" do not follow the do-structure.
+  - >-
+    Homework: "Open the school chatbot" → "Open the chat with Mori"; "using the skills
+    Making questions and describing sentences" → "… Making questions and Descriptive
+    sentences"; "Now is your turn!" → "Now it's your turn!".
+  - >-
+    Vocabulary: Hebrew glosses with a slash were written with spaces and both forms in
+    full ("נשוי / נשואה", "רווק / רווקה", "חבר / חברה"). No other gloss was changed.
+  - >-
+    The notebook gives no time for the introduction round and no recommended
+    combination of activities. The teacher note suggests one activity per skill.
+  - Activity and summary times are recorded as in the notebook (20 and 15 minutes).
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: small-talk-class
+    title: 'Class: Small Talk'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Small Talk
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Making questions
+            description: Question words (*what, where, when, why, how*) and questions with *do*
+          - name: Descriptive sentences
+            description: '*am / is / are*, adjectives, and *have / has*'
+      - id: quizlet
+        type: externalLink
+        label: Small talk words on Quizlet
+        url: https://quizlet.com/il/880394848/basic-english-small-talk-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I like ___. / I like to ___.
+        example: I am Dana. I like books. / I like to read.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What's your ___'s name? (friend / mother / partner…)
+            frame: My ___'s name is ___.
+          - question: Where do you work?
+            frame: I work at / in ___.
+          - question: What do you like to do in your free time?
+            frame: In my free time, I like to ___.
+          - question: What do you do every day?
+            frame: Every day, I ___.
+          - question: What is your favorite place? Why?
+            frame: My favorite place is ___ because ___.
+          - question: Where do you live?
+            frame: I live in ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: First meeting (real-life simulation)'
+        skills: [Making questions]
+        minutes: 20
+        steps:
+          - Listen to your teacher explain the questions below.
+          - Work in pairs. Choose **five** questions and ask each other.
+          - Say three things about your partner. Use *he* or *she*.
+        example: |-
+          *Yosi is married, and he has two children. He likes dogs.*
+          *Dana likes to dance. She has three sisters and one brother. She likes hockey.*
+      - id: act1-questions
+        type: discussionQuestions
+        title: Question bank
+        items:
+          - question: My name is ___. What is your name?
+          - question: Where do you live?
+          - question: Where do you work?
+          - question: Are you married?
+          - question: Do you have children?
+          - question: Do you have siblings (brothers or sisters)?
+          - question: Do you like animals? Which animals?
+          - question: Do you like sports? Which sports?
+          - question: What do you like to do?
+          - question: When do you study English?
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: Who is he / she?'
+        skills: [Descriptive sentences]
+        minutes: 20
+        steps:
+          - Choose a person who is important to you. Complete the sentences below about him or her.
+          - Work in pairs. Ask your partner questions about their person (*Who is he / she? What's his / her name?*…).
+          - Switch roles.
+          - Back in the group, tell one fact you heard from your partner.
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Complete the sentences
+        items:
+          - question: This is my ___.
+          - question: His / Her name is ___.
+          - question: He / She lives in ___.
+          - question: He / She works in / at ___.
+          - question: He / She likes to ___.
+          - question: He / She is married / single / in a relationship.
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Jeopardy'
+        skills: [Making questions]
+        minutes: 20
+        steps:
+          - Your teacher reads an answer. Say the right **question** for it.
+          - A right question gets one point. When you are wrong, the next student continues.
+          - After everyone has a turn, your teacher says who wins and explains how to build questions.
+      - id: act3-answers
+        type: discussionQuestions
+        title: Here is the answer. What is the question?
+        items:
+          - question: My name is Yossi.
+            frame: ___?
+          - question: I am from France.
+            frame: ___?
+          - question: I enjoy traveling abroad because I love trying new foods and discovering new places.
+            frame: ___?
+          - question: I live in Tel Aviv.
+            frame: ___?
+          - question: I work at New School and study chemistry at the university.
+            frame: ___?
+          - question: I study English twice a week.
+            frame: ___?
+          - question: I like to go to the beach or read a book in my free time.
+            frame: ___?
+          - question: I have two brothers and one sister.
+            frame: ___?
+          - question: My favorite food is pizza.
+            frame: ___?
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Guess who?'
+        skills: [Descriptive sentences, Making questions]
+        minutes: 20
+        steps:
+          - Student A chooses a person for student B (a famous person, a character or someone in the class). Student B does not know who it is.
+          - Student C gives a small hint with *you are…*.
+          - Student B asks yes/no questions (*Am I…? Do I…?*) and guesses who they are.
+        example: |-
+          Student A chooses *Miley Cyrus* for student B.
+          **Student C (hint):** *You are from the U.S.*
+          **Student B:** *Am I a woman?* – Yes.
+          **Student B:** *Am I famous?* – Yes.
+          **Student B:** *Do I sing?* – Yes.
+          **Student B:** *Do I dance?* – Yes.
+          **Student B:** *Am I Miley Cyrus?* – Yes!
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Making questions** (Activities 1 and 3) and
+          **Descriptive sentences** (Activities 2 and 4). The notebook gives no
+          recommended combination; choose one activity for each skill to fit the
+          lesson time.
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first ("I am ___. I like books. / I like to read."), then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 15
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Explain every question in the bank before you divide the group into pairs. At
+          the end, each student says three things about their partner in the third
+          person (he / she).
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Read the answers one by one. The first student starts and gets one point for
+          each right question; when they are wrong, the next student continues. Answer
+          key: 1. What is your name? 2. Where are you from? 3. Why do you like to travel
+          abroad? 4. Where do you live? 5. What do you do? / What do you do for a
+          living? 6. How many times a week do you study English? 7. What do you like to
+          do in your free time? 8. How many siblings do you have? 9. What is your
+          favorite food?
+      - id: n-act4
+        anchor: act4
+        text: Make sure every student gets a turn to guess and to give a hint with *you are*.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: small-talk-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-questions
+        type: ruleSummary
+        skill: Making questions
+        rules:
+          - text: We use question words to ask for specific information, not just *yes* or *no*.
+            examples: [Where are you from?, How are you?]
+          - text: 'The structure is usually: **question word + auxiliary verb + subject + main verb**.'
+            examples:
+              - What do you like to do on weekends?
+              - Where are you working now?
+              - How did you meet your best friend?
+              - 'With *am / is / are*: question word + *am / is / are* + subject. Where are you from?'
+          - text: Choose the question word from the table.
+      - id: question-words
+        type: table
+        caption: The main question words
+        header: [Question word, Use, Example]
+        rows:
+          - [What, To ask about things, What do you do?]
+          - [Where, To ask about places, Where do you live?]
+          - [When, To ask about time, When is your birthday?]
+          - [Why, To ask about reasons, Why did you move here?]
+          - [How, To ask about ways or feelings, How are you today?]
+      - id: rules-descriptive
+        type: ruleSummary
+        skill: Descriptive sentences
+        rules:
+          - text: Use *am*, *is* or *are* to describe. These words help us say what someone or something is like.
+            examples: [I am happy., She is nice., They are tired.]
+          - text: Use adjectives to give more information. Adjectives are words like *happy*, *short*, *funny*, *blue*. They tell us more about people or things.
+            examples: [He is tall., The dog is big and brown.]
+          - text: Use *have* or *has* to talk about what people have. We use *have / has* for things someone owns or things they are born with (like family or eye color).
+            examples: [I have a cat., She has two brothers.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 15
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: small-talk-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy this message and send it. Mori will ask you questions; answer every one.
+      - id: mori-small-talk
+        type: aiTutorPrompt
+        title: Small talk
+        message: >-
+          Hi Mori! I want to have small talk conversations. Can you ask me small talk
+          questions using the skills Making questions and Descriptive sentences? Use only
+          present simple, and please correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-guess
+        type: aiTutorPrompt
+        title: Guess the person
+        intro: Think about someone in your family, then send this message to Mori.
+        message: Hey Mori! Let's play a game. I think about someone in my family and you need to guess who it is.
+      - id: mori-guess-turn
+        type: aiTutorPrompt
+        intro: After Mori guesses, send this message.
+        message: Now it's your turn! Think about someone and I need to guess who it is. It can be a famous person.
+      - id: mori-truths
+        type: aiTutorPrompt
+        title: Two truths and a lie
+        intro: Send this message to Mori. Then write 3 sentences about yourself; two are true and one is not true.
+        message: Hey Mori! Let's play Two Truths and a Lie. I will tell you 3 things about myself. You need to guess which one is not true.
+      - id: truths-example
+        type: examples
+        items:
+          - text: I have a brother.
+          - text: I live in Jerusalem.
+          - text: I am a doctor.
+      - id: mori-truths-turn
+        type: aiTutorPrompt
+        intro: Mori tries to guess the lie. After that, send this message.
+        message: Now it's your turn! Tell me 2 truths and 1 lie.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: small-talk-practice
+    book: workbook
+    title: 'Practice: Small Talk'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-questions
+        type: activity
+        activity: small-talk-questions
+      - id: ex-descriptive
+        type: activity
+        activity: small-talk-descriptive
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: small-talk-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Small talk words
+        glossLang: he
+        link: https://quizlet.com/il/880394848/basic-english-small-talk-flash-cards/
+        items: &small-talk-words
+          - { term: To live, gloss: לגור }
+          - { term: To work, gloss: לעבוד }
+          - { term: To like, gloss: לאהוב }
+          - { term: To do, gloss: לעשות }
+          - { term: To be, gloss: להיות }
+          - { term: To have, gloss: להיות בעלים של / יש }
+          - { term: To read, gloss: לקרוא }
+          - { term: To dance, gloss: לרקוד }
+          - { term: To travel, gloss: לטייל }
+          - { term: To go (to the beach), gloss: ללכת (לים) }
+          - { term: To study, gloss: ללמוד }
+          - { term: To ask, gloss: לשאול }
+          - { term: To talk, gloss: לדבר }
+          - { term: To say, gloss: לומר }
+          - { term: To guess, gloss: לנחש }
+          - { term: Name, gloss: שם }
+          - { term: Married, gloss: נשוי / נשואה }
+          - { term: Single, gloss: רווק / רווקה }
+          - { term: In a relationship, gloss: בזוגיות }
+          - { term: Children, gloss: ילדים }
+          - { term: Siblings, gloss: אחים ואחיות }
+          - { term: Brother, gloss: אח }
+          - { term: Sister, gloss: אחות }
+          - { term: Friend, gloss: חבר / חברה }
+          - { term: Person, gloss: אדם }
+          - { term: Place, gloss: מקום }
+          - { term: Hobby, gloss: תחביב }
+          - { term: Sport, gloss: ספורט }
+          - { term: Animals, gloss: חיות }
+          - { term: Free time, gloss: זמן פנוי }
+          - { term: Every day, gloss: כל יום }
+          - { term: Where, gloss: איפה }
+          - { term: What, gloss: מה }
+          - { term: When, gloss: מתי }
+          - { term: Why, gloss: למה }
+          - { term: How, gloss: איך }
+
+vocabulary:
+  - slug: small-talk
+    title: Small Talk
+    items: *small-talk-words
+
+activities:
+  - slug: small-talk-questions
+    title: 'Making questions: what, where, when, why, how'
+    minutes: 8
+    items:
+      - id: where-live
+        type: multipleChoice
+        prompt: ___ do you live?
+        options:
+          - { text: Where, correct: true }
+          - { text: What, feedback: '*What* asks about things. To ask about a place, use *where*.' }
+          - { text: When, feedback: '*When* asks about time. To ask about a place, use *where*.' }
+      - id: when-birthday
+        type: multipleChoice
+        prompt: ___ is your birthday?
+        options:
+          - { text: When, correct: true }
+          - {
+              text: Where,
+              feedback: '*Where* asks about places. A birthday is a time: use *when*.',
+            }
+          - { text: Why, feedback: '*Why* asks about reasons. A birthday is a time: use *when*.' }
+      - id: question-words
+        type: matching
+        prompt: Match each question word with what it asks about.
+        pairs:
+          - [What, things]
+          - [Where, places]
+          - [When, time]
+          - [Why, reasons]
+          - [How, ways or feelings]
+      - id: specific-info
+        type: trueFalse
+        prompt: We use question words to ask for specific information, not just *yes* or *no*.
+        answer: true
+        feedback:
+          correct: 'Right! *Where do you live?* — *I live in Tel Aviv.*'
+          incorrect: 'Question words ask for specific information: *Where do you live?* — *I live in Tel Aviv.*'
+      - id: add-do
+        type: fillBlank
+        prompt: Complete the questions with *do* or *are*.
+        text: Where ___ you work? Where ___ you from? What ___ you like to do?
+        blanks: [[do], [are], [do]]
+        wordBank: [do, are]
+      - id: correct-question
+        type: multipleChoice
+        prompt: Which question is correct?
+        options:
+          - { text: Where do you work?, correct: true }
+          - {
+              text: Where you work?,
+              feedback: 'Remember the structure: question word + *do* + subject + verb. *Where do you work?*',
+            }
+          - {
+              text: Where do you works?,
+              feedback: 'After *do you*, the verb has no *s*: *Where do you work?*',
+            }
+      - id: from-france
+        type: multipleChoice
+        prompt: 'The answer is: *I am from France.* What is the question?'
+        options:
+          - { text: Where are you from?, correct: true }
+          - { text: What are you from?, feedback: 'France is a place: use *where*.' }
+          - {
+              text: When are you from?,
+              feedback: '*When* asks about time. France is a place: use *where*.',
+            }
+      - id: order-what
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: What do you like to do?
+
+  - slug: small-talk-descriptive
+    title: 'Descriptive sentences: am, is, are, have, has'
+    minutes: 8
+    items:
+      - id: she-is
+        type: multipleChoice
+        prompt: She ___ nice.
+        options:
+          - { text: is, correct: true }
+          - { text: am, feedback: 'Use *am* only with *I*: *I am happy.* With *she*, use *is*.' }
+          - { text: are, feedback: 'Use *are* with *you, we, they*. With *she*, use *is*.' }
+      - id: am-is-are
+        type: fillBlank
+        prompt: Complete with *am*, *is* or *are*.
+        text: I ___ happy. He ___ tall. They ___ tired.
+        blanks: [[am], [is], [are]]
+        wordBank: [am, is, are]
+      - id: she-has
+        type: multipleChoice
+        prompt: She ___ two brothers.
+        options:
+          - { text: has, correct: true }
+          - { text: have, feedback: 'With *he* or *she*, use *has*: *She has two brothers.*' }
+          - {
+              text: is,
+              feedback: 'To talk about what people have (like family), use *have / has*.',
+            }
+      - id: have-has
+        type: fillBlank
+        prompt: Complete with *have* or *has*.
+        text: I ___ a cat. My sister ___ a dog.
+        blanks: [[have], [has]]
+        wordBank: [have, has]
+      - id: adjectives
+        type: trueFalse
+        prompt: '*Happy*, *short*, *funny* and *blue* are adjectives.'
+        answer: true
+        feedback:
+          correct: Right! Adjectives tell us more about people or things.
+          incorrect: These words are adjectives. They tell us more about people or things.
+      - id: match-verb
+        type: matching
+        prompt: Match each sentence with the missing word.
+        pairs:
+          - [I ___ happy., am]
+          - [She ___ nice., is]
+          - [They ___ tired., are]
+          - [He ___ two brothers., has]
+          - [We ___ a cat., have]
+      - id: correct-sentence
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: I am happy., correct: true }
+          - { text: I happy., feedback: 'To describe, use *am / is / are*: *I am happy.*' }
+          - { text: I is happy., feedback: 'With *I*, use *am*: *I am happy.*' }
+      - id: order-brothers
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: She has two brothers.

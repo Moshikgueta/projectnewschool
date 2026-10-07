@@ -1,0 +1,518 @@
+# Cycle "Friendship", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: friendship
+title: Friendship
+goal: Talk about your friends, using descriptive sentences and verbs in the present.
+position: 15
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Descriptive sentences" and "Verbs in the present")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    The source gives no times for the introduction, the warm-up, the activities or
+    the summary, so only the 10 minutes of Activity 4 (writing the plan) are recorded.
+  - >-
+    The tracking parameter (?funnelUUID=…) was removed from the Quizlet link. The
+    Quizlet set is called "basic-english-valentines": please check it is the right
+    set for Friendship.
+  - >-
+    Activity 1: the title and the answer structure say *boss*, but Stage 2 says
+    *spouse (wife / husband)*. This version uses *boss* everywhere. The vocabulary
+    keeps *Spouse*; if you prefer spouse, change the activity. "And I choose to name 3
+    to be my enemy" → "I choose ___ to be my enemy"; "friend" → "friend for life" (as
+    in the title). The bank of famous people is in a teacher note.
+  - >-
+    Activity 2: the steps and the example were shortened (the example repeated the
+    stages); the conversation is shown as a dialogue. "My partner friend" → "my
+    partner's friend"; "My partner's friend is medium height" → "… is of medium
+    height" (as in the dialogue).
+  - >-
+    Activity 3: "How much do you know your friend?" → "How well do you know your
+    friend?"; "What is your friend's work? How many times a week does he/she work?" →
+    "What is your friend's job? How many days a week does he / she work?". Answer
+    frames and an example (new, not in the source) were added: "Maya's friend is a
+    teacher. She works five days a week…".
+  - 'Activity 4: "A perfect friends day" → "A perfect day with friends".'
+  - >-
+    Warm-up: "I see my friends on the ___ at the ___" → "I see my friends on ___ at
+    the ___." (e.g. on Fridays at the park).
+  - >-
+    Homework: "Open the school chatbot" → "Open the chat with Mori"; "Now is your
+    turn!" → "Now it's your turn!" (twice).
+  - >-
+    Vocabulary glosses changed: Friend "חבר" → "חבר / חברה"; Kind "טוב" → "טוב לב";
+    To trust "לבטוח" → "לסמוך על". Please confirm.
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: friendship-class
+    title: 'Class: Friendship'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Friendship
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Descriptive sentences
+            description: '*is, are* + a describing word: *My friend is kind. Are your friends funny?*'
+          - name: Verbs in the present
+            description: "*I visit, she visits, I don't forget, she doesn't forget*"
+      - id: quizlet
+        type: externalLink
+        label: Friendship words on Quizlet
+        url: https://quizlet.com/il/886289185/basic-english-valentines-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. My friend is ___. We like to ___ together.
+        example: I am Dana. My friend is Shahar. We like to sing together.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: When do you see your friends?
+            frame: I see my friends on ___ at the ___.
+          - question: 'Pick one of your friends: what are three things you love about this person?'
+            frame: I love that ___ (name) is ___, ___ and ___.
+          - question: Why is your friend important to you?
+            frame: He / She is important to me because he / she is ___.
+          - question: Do you think friendships are important? Why?
+            frame: |-
+              Yes, I think friendships are important because ___.
+              No, I think friendships are not important because ___.
+          - question: How do you feel when you are with your friends?
+            frame: I feel ___ because ___.
+          - question: What do you do for your friends?
+            frame: I ___ for my friends.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Choose your boss, your friend for life and your enemy'
+        skills: [Descriptive sentences]
+        steps:
+          - Your teacher shows three famous people. Do you know who they are?
+          - Choose one person to be your **boss**, one to be your **friend for life** and one to be your **enemy**.
+          - Say why. Use the sentences below.
+      - id: act1-sentences
+        type: discussionQuestions
+        title: My choices
+        items:
+          - question: I choose ___ to be my boss because he / she is ___.
+          - question: I choose ___ to be my friend for life because he / she is ___.
+          - question: I choose ___ to be my enemy because he / she is ___.
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: Is your friend…?'
+        skills: [Descriptive sentences]
+        steps:
+          - Work in pairs. Each student chooses a friend.
+          - Ask your partner yes / no questions about their friend. Use adjectives (*tall, funny, shy, smart…*).
+          - Describe your partner's friend to the group.
+      - id: act2-example
+        type: dialogue
+        lines:
+          - { speaker: Student A, text: Is your friend tall? }
+          - { speaker: Student B, text: 'Yes, she is tall.' }
+          - { speaker: Student A, text: Is she funny? }
+          - { speaker: Student B, text: 'Yes, she is very funny.' }
+          - { speaker: Student A, text: Is she shy? }
+          - { speaker: Student B, text: 'No, she is not shy. She is friendly.' }
+          - { speaker: Student B, text: Is your friend short? }
+          - { speaker: Student A, text: 'No, he is of medium height.' }
+          - { speaker: Student B, text: Is he loud? }
+          - { speaker: Student A, text: 'No, he is quiet.' }
+          - { speaker: Student B, text: Is he smart? }
+          - { speaker: Student A, text: 'Yes, he is very smart.' }
+      - id: act2-describe
+        type: examples
+        items:
+          - text: "**Student A:** My partner's friend is tall, funny and friendly. She is not shy."
+          - text: "**Student B:** My partner's friend is of medium height, quiet and very smart. He is not loud."
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: How well do you know your friend?'
+        skills: [Verbs in the present]
+        steps:
+          - Work in pairs. Each student picks a friend.
+          - Student A asks Student B the questions below. Then switch roles.
+          - Tell the group about your partner's friend. Use *he / she* and remember the *-s*.
+        example: "*Maya's friend is a teacher. She works five days a week. She likes to dance. She doesn't like to cook.*"
+      - id: act3-questions
+        type: discussionQuestions
+        items:
+          - question: What is your friend's job? How many days a week does he / she work?
+            frame: My friend is a ___. He / She works ___ days a week.
+          - question: What does your friend like to do?
+            frame: He / She likes to ___.
+          - question: What does your friend not like to do?
+            frame: He / She doesn't like to ___.
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: A perfect day with friends'
+        skills: [Verbs in the present]
+        minutes: 10
+        steps:
+          - Plan a perfect day with your friends. Complete the plan below (10 minutes).
+          - Share your perfect day with the group.
+        example: |-
+          **Where?** At the beach.
+          **When?** On Saturday.
+          On this perfect day, we:
+          1. **wake up** early and **meet** at the bus station.
+          2. **buy** snacks and drinks for the day.
+          3. **go** to the beach and **swim** in the sea.
+          4. **play** volleyball and **listen** to music.
+          5. **eat** lunch together and **talk** about fun memories.
+          6. **watch** the sunset and **take** pictures before we go home.
+      - id: act4-plan
+        type: discussionQuestions
+        title: Perfect day with friends!
+        items:
+          - question: 'Where? ___'
+          - question: 'When? ___'
+          - question: On this perfect day, we ___.
+          - question: We ___.
+          - question: We ___.
+          - question: We ___.
+          - question: We ___.
+          - question: We ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Descriptive sentences** (warm-up questions,
+          Activities 1 and 2) and **Verbs in the present** (Activities 3 and 4).
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first ("My friend is Shahar. We like to sing together."), then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Write the names of 3 famous people and the answer structure where everyone can
+          see them. Make sure the students know all three people; if possible, choose
+          people connected to English. Bank of famous people: Taylor Swift, Leonardo
+          DiCaprio, Beyoncé, Ed Sheeran, Ariana Grande, Christopher Nolan, Gal Gadot,
+          Netta Barzilai, Lior Raz.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Example: Student A chooses a friend named Daniel, Student B a friend named
+          Maya. They ask each other questions (dialogue below), then describe the
+          partner's friend from the answers.
+      - id: n-act3
+        anchor: act3
+        text: When the pairs share, check that they speak in the third person (*he works, she likes*).
+      - id: n-act4
+        anchor: act4
+        minutes: 10
+        text: Give the students 10 minutes to write their plan, then each student shares their day.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: friendship-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-descriptive
+        type: ruleSummary
+        skill: Descriptive sentences
+        rules:
+          - text: 'One person or thing: subject + **is** + adjective or noun.'
+            examples: [My best friend is kind and supportive.]
+          - text: 'More than one: subject + **are** + adjective or noun.'
+            examples: [My friends are always helpful and funny.]
+          - text: 'Negative: subject + **is / are** + **not** + adjective or noun. Question: **Is / Are** + subject + adjective or noun?'
+            examples:
+              - My friend is not rude.
+              - My friends are not selfish.
+              - Is your friend always honest?
+              - Are your friends generous?
+      - id: rules-verbs
+        type: ruleSummary
+        skill: Verbs in the present
+        rules:
+          - text: 'For *I, you, we, they*, use the base form of the verb (the verb without *to*).'
+            examples:
+              - I visit my friend every weekend.
+              - They talk to each other every day.
+          - text: 'For *he, she, it*, add **-s** or **-es** to the verb.'
+            examples:
+              - She always helps me with my homework.
+              - He invites me to his parties.
+          - text: >-
+              Negative: **do not (don't)** after *I, you, we, they*, and **does not
+              (doesn't)** after *he, she, it*. Then the base form of the verb.
+            examples:
+              - I don't argue with my best friend.
+              - She doesn't forget my birthday.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: friendship-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy this message and send it. Mori will ask you questions; answer every one.
+      - id: mori-friendship
+        type: aiTutorPrompt
+        title: Talk about friendship
+        message: >-
+          Hi Mori! I want to practice English. Can you ask me questions about Friendship
+          using the skills of descriptive sentences and sentences with actions? Please
+          use only the present simple, and correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-best-friend
+        type: aiTutorPrompt
+        title: My best friend
+        intro: >-
+          Send this message to Mori and describe your best friend. For example: *She
+          has long hair and big eyes. She always listens to me. We go to the park
+          together and eat lunch at school.* Then write: **Now it's your turn! Describe
+          your best friend, and I will tell you if you are good friends.**
+        message: >-
+          Hi Mori! Let's do an activity. I will describe my best friend using
+          descriptive sentences and actions. You tell me if you think we are good
+          friends.
+      - id: mori-good-friends
+        type: aiTutorPrompt
+        title: What do good friends do?
+        intro: >-
+          Send this message to Mori and write 3 sentences. For example: *1. A good friend
+          helps you. 2. A good friend laughs at you when you are sad. 3. A good friend
+          plays with you.* (Mori guesses number 2.) Then write: **Now it's your turn!
+          Write 3 things that friends do. I will guess which one is not true.**
+        message: >-
+          Hey Mori! Let's play a game. I will write 3 things that friends do. One is not
+          true. You have to guess which one is not something a good friend does.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: friendship-practice
+    book: workbook
+    title: 'Practice: Friendship'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-descriptive
+        type: activity
+        activity: friendship-descriptive
+      - id: ex-verbs
+        type: activity
+        activity: friendship-verbs
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: friendship-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Friendship words
+        glossLang: he
+        link: https://quizlet.com/il/886289185/basic-english-valentines-flash-cards/
+        items: &friendship-words
+          - { term: Friend, gloss: חבר / חברה }
+          - { term: Best friend, gloss: חבר הכי טוב }
+          - { term: Spouse, gloss: בן זוג / בת זוג }
+          - { term: Enemy, gloss: אויב }
+          - { term: To love, gloss: לאהוב }
+          - { term: To help, gloss: לעזור }
+          - { term: To talk, gloss: לדבר }
+          - { term: To listen, gloss: להקשיב }
+          - { term: To share, gloss: לשתף }
+          - { term: To support, gloss: לתמוך }
+          - { term: To trust, gloss: לסמוך על }
+          - { term: To forgive, gloss: לסלוח }
+          - { term: Confused, gloss: מבולבל }
+          - { term: Sad, gloss: עצוב }
+          - { term: Funny, gloss: מצחיק }
+          - { term: Generous, gloss: נדיב }
+          - { term: Kind, gloss: טוב לב }
+          - { term: Party, gloss: מסיבה }
+          - { term: Memory, gloss: זיכרון }
+          - { term: Secret, gloss: סוד }
+          - { term: Birthday, gloss: יום הולדת }
+          - { term: Loyal, gloss: נאמן }
+          - { term: Gossip, gloss: רכילות }
+          - { term: Argument, gloss: ויכוח }
+          - { term: To celebrate, gloss: לחגוג }
+          - { term: Invitation, gloss: הזמנה }
+          - { term: Jealous, gloss: מקנא }
+          - { term: To apologize, gloss: להתנצל }
+          - { term: To play, gloss: לשחק }
+          - { term: To visit, gloss: לבקר }
+
+vocabulary:
+  - slug: friendship
+    title: Friendship
+    items: *friendship-words
+
+activities:
+  - slug: friendship-descriptive
+    title: 'Descriptive sentences: is, are'
+    minutes: 8
+    items:
+      - id: friend-is
+        type: multipleChoice
+        prompt: My best friend ___ kind and supportive.
+        options:
+          - { text: is, correct: true }
+          - { text: are, feedback: '*My best friend* is one person: use *is*.' }
+          - { text: am, feedback: '*am* is only for *I*: *I am kind*.' }
+      - id: friends-are
+        type: multipleChoice
+        prompt: My friends ___ always helpful and funny.
+        options:
+          - { text: are, correct: true }
+          - { text: is, feedback: '*My friends* is more than one person: use *are*.' }
+      - id: question-order
+        type: multipleChoice
+        prompt: Which question is correct?
+        options:
+          - { text: Is your friend honest?, correct: true }
+          - {
+              text: Your friend is honest?,
+              feedback: 'In a question, *is / are* comes first: *Is your friend honest?*',
+            }
+          - { text: Are your friend honest?, feedback: '*Your friend* is one person: use *is*.' }
+      - id: not-selfish
+        type: trueFalse
+        prompt: '*My friends are not selfish.* is a correct negative sentence.'
+        answer: true
+        feedback:
+          correct: 'Right! *are* + *not* + adjective.'
+          incorrect: 'It is correct: subject + *are* + *not* + adjective.'
+      - id: is-are
+        type: fillBlank
+        prompt: Complete with *is* or *are*.
+        text: Maya ___ funny. Her brothers ___ generous.
+        blanks: [[is], [are]]
+        wordBank: [is, are]
+      - id: negatives
+        type: fillBlank
+        prompt: 'Complete with a negative: *is not* or *are not*.'
+        text: My friend ___ rude. My friends ___ jealous.
+        blanks: [[is not, isn't], [are not, aren't]]
+      - id: adjectives
+        type: matching
+        prompt: Match each word with its meaning in Hebrew.
+        pairs:
+          - [funny, מצחיק]
+          - [generous, נדיב]
+          - [loyal, נאמן]
+          - [sad, עצוב]
+          - [jealous, מקנא]
+      - id: are-generous
+        type: reorderSentence
+        prompt: Put the words in order to make a question.
+        sentence: Are your friends generous?
+
+  - slug: friendship-verbs
+    title: 'Verbs in the present: I help, she helps'
+    minutes: 8
+    items:
+      - id: she-helps
+        type: multipleChoice
+        prompt: She always ___ me with my homework.
+        options:
+          - { text: helps, correct: true }
+          - { text: help, feedback: 'With *he, she, it*, add *-s*: *she helps*.' }
+          - { text: is help, feedback: 'Do not write *is* before a verb: *she helps*.' }
+      - id: they-talk
+        type: multipleChoice
+        prompt: They ___ to each other every day.
+        options:
+          - { text: talk, correct: true }
+          - {
+              text: talks,
+              feedback: 'Add *-s* only for *he, she, it*. With *they*, use the base form: *they talk*.',
+            }
+      - id: doesnt-forget
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: She doesn't forget my birthday., correct: true }
+          - {
+              text: She don't forget my birthday.,
+              feedback: "With *he, she, it*, use *doesn't*: *She doesn't forget*.",
+            }
+          - {
+              text: She doesn't forgets my birthday.,
+              feedback: "After *doesn't*, use the base form of the verb (no *-s*): *doesn't forget*.",
+            }
+      - id: base-form
+        type: trueFalse
+        prompt: 'With *I, you, we, they*, we use the base form of the verb: *I visit my friend every weekend.*'
+        answer: true
+        feedback:
+          correct: Right! No *-s* with *I, you, we, they*.
+          incorrect: 'With *I, you, we, they*, the verb has no *-s*: *I visit*.'
+      - id: he-invite
+        type: trueFalse
+        prompt: '*He invite me to his parties.* is a correct sentence.'
+        answer: false
+        feedback:
+          correct: 'Right! With *he*, add *-s*: *He invites me to his parties.*'
+          incorrect: 'With *he*, add *-s*. The correct sentence is: *He invites me to his parties.*'
+      - id: visit-invites
+        type: fillBlank
+        prompt: Complete with the verb in brackets.
+        text: I ___ (visit) my friend every weekend. He ___ (invite) me to his parties.
+        blanks: [[visit], [invites]]
+      - id: dont-doesnt
+        type: fillBlank
+        prompt: Complete with *don't* or *doesn't*.
+        text: I ___ argue with my best friend. She ___ forget my birthday.
+        blanks: [["don't", do not], ["doesn't", does not]]
+        wordBank: ["don't", "doesn't"]
+      - id: eat-lunch
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: We eat lunch together.

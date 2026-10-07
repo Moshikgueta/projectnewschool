@@ -1,0 +1,543 @@
+# Cycle "My home", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: my-home
+title: My home
+goal: Describe your home with there is / there are and adjectives, and talk about what you do there in the present simple.
+position: 9
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Describing your home" and "Actions in the present")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    The notebook gives no "Practiced with" plan and no recommended combinations. The
+    plan note maps the skills from the activity labels (DESCRIBING: Activities 1–3;
+    ACTIONS: Activities 3–4). The introduction round has no time; it is not given one.
+  - >-
+    The warm-up questions had no answer frames; frames were added. Frames were also
+    added for Activities 1, 2 and 4 so students can type their sentences.
+  - >-
+    Warm-up: "With whom do you live?" → "Who do you live with?"; "What do you have on
+    your night table?" → "What is on your nightstand?" (the word used in Activity 1),
+    with a there is / there are frame; "How many rooms does your house have?" gets
+    the frame "There are ___ rooms in my house."
+  - >-
+    Activity 3: "They can use this chart to make their argue" → "Use the frames below
+    to make your argument"; "the best place for the house" → "the best place in the
+    house".
+  - >-
+    Summary, Actions: a small table (I / you / we / they *clean*; he / she / it
+    *cleans*) was added to show rules 1 and 2 together. The Activity 1 word lists are
+    shown as a table; the broken emoji characters (encoding errors) were removed.
+  - >-
+    Vocabulary: "House – בית פיזי" → "בית (המבנה)"; "Home – בית רגשי" → "בית (במובן
+    הרגשי)". Please confirm.
+  - >-
+    Links: the Quizlet link lost its tracking parameter (?new). The "Houses" Google
+    Doc is kept as the Activity 2 resource.
+  - Activity and summary times given as ranges (15–20 minutes) are recorded as 20 minutes.
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: my-home-class
+    title: 'Class: My home'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: My home
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Describing sentences
+            description: '*There is / there are* and adjectives: *There is a big, cozy sofa.*'
+          - name: Actions in the present
+            description: 'Present simple: *I clean, she washes, do / does*'
+      - id: quizlet
+        type: externalLink
+        label: My home on Quizlet
+        url: https://quizlet.com/il/1025120408/my-home-basic-english-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I live in an apartment / a house.
+        example: I am Dana. I live in an apartment.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What is your favorite room in the house? Why?
+            frame: My favorite room is the ___ because ___.
+          - question: What do you do in that room?
+            frame: In the ___, I ___ and ___.
+          - question: How many rooms does your house have?
+            frame: There are ___ rooms in my house.
+          - question: Do you prefer to work from home or in the office? Why?
+            frame: I prefer to work from home / in the office because ___.
+          - question: What is on your nightstand?
+            frame: On my nightstand, there is a ___ and there are some ___.
+          - question: Who do you live with?
+            frame: I live alone. / I live with my ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Guess the place'
+        skills: [Describing sentences]
+        minutes: 20
+        steps:
+          - Listen to your teacher. Look at the places of the house, their things and their adjectives (table below).
+          - Think of a place in the house. Don't say it!
+          - The other students ask you questions and guess the place.
+        example: |-
+          —Is there a stove?
+          —Is there a sink?
+          —Is it warm?
+          —Yes.
+          —Is it the kitchen?
+          —Yes!
+      - id: places-table
+        type: table
+        caption: Places in the house
+        header: [Place, Things, Adjectives]
+        rows:
+          - [
+              Kitchen,
+              'fridge, oven, sink, table, chairs, stove, cupboard, dishes, microwave, blender',
+              'warm, clean, bright, spacious, organized, messy, noisy, busy',
+            ]
+          - [
+              Living room,
+              'sofa, armchair, coffee table, TV, bookshelf, rug, lamp, curtains',
+              'cozy, comfortable, relaxing, stylish, modern, spacious, tidy, quiet',
+            ]
+          - [
+              Bedroom,
+              'bed, nightstand, lamp, wardrobe, mirror, blanket, pillow, dresser',
+              'quiet, soft, peaceful, dark, small, messy, private, comfortable',
+            ]
+          - [
+              Bathroom,
+              'toilet, sink, shower, bathtub, mirror, towel, soap, toothbrush',
+              'small, clean, cold, wet, shiny, bright, private, fresh',
+            ]
+          - [
+              Dining room,
+              'dining table, chairs, plates, glasses, candles, napkins, cabinet',
+              'elegant, formal, spacious, bright, clean, welcoming, organized, large',
+            ]
+          - [
+              Garden / Backyard,
+              'grass, flowers, trees, fence, swing, bench, BBQ',
+              'green, fresh, sunny, colorful, peaceful, beautiful, spacious, relaxing',
+            ]
+      - id: act1-questions
+        type: discussionQuestions
+        title: Ask to guess
+        items:
+          - question: Ask about the things.
+            frame: Is there a ___? / Are there ___?
+          - question: Ask what the place is like.
+            frame: Is this place ___? / Is it ___?
+          - question: Guess!
+            frame: Is it the ___?
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: Visiting an old friend'
+        skills: [Describing sentences]
+        minutes: 20
+        steps:
+          - Work in pairs.
+          - You get a picture of a very unusual house. From now on, this is your house!
+          - Your partner visits you and asks questions about your house. Answer. Then change roles.
+        resource:
+          label: Houses
+          url: https://docs.google.com/document/d/1oJE_SEP70sB5-RxfDzYr1x137dnUMzAB0qogy7Vuv2w/edit?tab=t.0
+      - id: act2-questions
+        type: discussionQuestions
+        items:
+          - question: What does your living room look like? Can you describe it?
+            frame: My living room is ___ and ___. There is a ___.
+          - question: Is there a big kitchen in your house? What can I find there?
+            frame: Yes, there is a ___ kitchen. There is a ___ and there are some ___.
+          - question: What's your bedroom like? Is it comfortable?
+            frame: My bedroom is ___. There is a ___.
+          - question: Do you have any strange or special rooms in your house?
+            frame: Yes, there is a ___. / No, there isn't.
+          - question: Is your house modern or old-fashioned? What makes it unique?
+            frame: My house is ___. It is unique because ___.
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: The best room debate'
+        skills: [Describing sentences, Actions in the present]
+        minutes: 20
+        steps:
+          - Work in groups. Your teacher gives each group a place in the house.
+          - Explain why your place is the best place in the house. Use the frames below to make your argument.
+        wordBank: [Kitchen, Living room, Bathroom, Garden]
+        example: |-
+          *The **living room** is the best place in the house.*
+          *There is a **comfortable sofa**, a **TV**, and there are some **colorful pillows**.*
+          *It is very **cozy**, **modern** and **tidy**.*
+          *There, you can **relax**, **watch movies** and **read books**.*
+      - id: act3-frames
+        type: discussionQuestions
+        title: Our argument
+        items:
+          - question: The ___ is the best place in the house.
+          - question: There is a ___, a ___ and there are some ___.
+            frame: (things)
+          - question: It is very ___, ___ and ___.
+            frame: (adjectives)
+          - question: There, you can ___, ___ and ___.
+            frame: (verbs)
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Guess whose routine this is'
+        skills: [Actions in the present]
+        minutes: 20
+        steps:
+          - Write your morning routine, from the moment you wake up to the moment you leave the house.
+          - Your teacher sends your routine to another student.
+          - Read the routine you get. Say what he or she does (*He wakes up… She eats…*) and guess whose routine it is.
+        example: |-
+          *She wakes up at 7. She brushes her teeth and eats breakfast. She makes the bed and leaves the house at 8.*
+          *I think this is Tom's routine.*
+      - id: act4-routine
+        type: discussionQuestions
+        title: My morning routine
+        items:
+          - question: I wake up at ___.
+          - question: I ___ and ___.
+          - question: I eat ___ for breakfast.
+          - question: I leave the house at ___.
+          - question: Describe the routine you get.
+            frame: He / She wakes up at ___. He / She ___. I think this is ___'s routine.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Describing sentences** (Activities 1, 2 and 3) and
+          **Actions in the present** (Activities 3 and 4). The notebook gives no
+          recommended combinations: choose 2 or 3 activities.
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first, then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Go through the places of the house, their things and adjectives, with
+          examples. Choose 3 places to present. Then each student thinks of a place and
+          the others ask questions to guess it.
+      - id: n-act2
+        anchor: act2
+        text: 'Give each student a different picture from the "Houses" document. It is a role play: one student visits the other and asks about their house.'
+      - id: n-act3
+        anchor: act3
+        text: Give each group one place from the bank (kitchen, living room, bathroom, garden).
+      - id: n-act4
+        anchor: act4
+        text: >-
+          On Zoom, students write their routine to you in a private chat (in class, on
+          paper); you can also see it here, in their answers. Send each routine to
+          another student, who describes it in the third person and guesses whose it is.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: my-home-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-describing
+        type: ruleSummary
+        skill: Describing sentences
+        rules:
+          - text: 'We use **there is** (one thing) and **there are** (more than one thing) to say that something exists, or to describe what is in a place.'
+            examples:
+              - There is a table in the kitchen.
+              - There are two chairs in the living room.
+              - There is a big window in the room, and there are beautiful curtains.
+          - text: 'Adjectives describe nouns: how something looks, feels, tastes, sounds or smells. They go **before** the noun. Use them to give more details.'
+            examples:
+              - A small table. A comfortable sofa.
+              - The living room has a big, cozy, modern sofa.
+              - There's a bright, spacious kitchen where you can cook amazing meals.
+          - text: After you describe a room or a thing, add a verb to say what you **can do** there.
+            examples: [The bedroom is quiet and comfortable. You can sleep and relax there.]
+      - id: rules-actions
+        type: ruleSummary
+        skill: Actions in the present
+        rules:
+          - text: 'With **I, you, we** and **they**, use the verb as it is (the base form).'
+            examples:
+              [I clean the living room every Saturday., They cook dinner together in the kitchen.]
+          - text: 'With **he, she** and **it**, add **-s** or **-es** to the verb.'
+            examples:
+              - She washes the dishes after lunch.
+              - He vacuums the carpet on Sundays.
+              - It looks tidy after cleaning.
+          - text: 'Use **do** (or **does** with he, she, it) for negatives and questions.'
+            examples:
+              - I don't make my bed in the morning.
+              - Does she sweep the floor every day?
+              - They don't water the plants on weekends.
+      - id: present-table
+        type: table
+        caption: Actions in the present
+        header: [Person, Verb, Negative, Question]
+        rows:
+          - [I / you / we / they, clean, don't clean, Do you clean?]
+          - [he / she / it, cleans, doesn't clean, Does she clean?]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: my-home-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy this message and send it. Mori will ask you questions; answer every one.
+      - id: mori-home
+        type: aiTutorPrompt
+        title: Talk about your home
+        intro: 'Mori will ask you questions like: *Where do you live? What do you do at home? Do you clean your room? Describe your living room.* Answer in the present simple, and try to describe or explain your actions.'
+        message: >-
+          Hi Mori! I want to have small talk conversations. Can you ask me small talk
+          questions about Home using the skills describing sentences and actions in
+          present simple? Please correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-guess-room
+        type: aiTutorPrompt
+        title: Guess the room
+        intro: "Send this message to Mori. Then give Mori hints with actions in the present simple, for example: *I sleep here. I have a bed and a closet.* When Mori guesses, send: **Now it's your turn! Think about a room and I will guess.**"
+        message: "Hey Mori! Let's play a game. I think about a room in my house and you need to guess what it is."
+      - id: mori-what-doing
+        type: aiTutorPrompt
+        title: What am I doing? (Home edition)
+        intro: "Send this message to Mori. Then write a sentence like *I open the fridge and take out food.*, *I sit on the sofa and watch TV.* or *I wash the dishes in the sink.* When Mori guesses, send: **Now it's your turn! Describe something you do at home and I will guess what it is.**"
+        message: "Hey Mori! Let's play a game. I describe something I usually do at home. You need to guess what I am doing. I will use the present simple."
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: my-home-practice
+    book: workbook
+    title: 'Practice: My home'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-describing
+        type: activity
+        activity: my-home-describing
+      - id: ex-actions
+        type: activity
+        activity: my-home-actions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: my-home-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Home words
+        glossLang: he
+        link: https://quizlet.com/il/1025120408/my-home-basic-english-flash-cards/
+        items: &my-home-words
+          - { term: House, gloss: בית (המבנה) }
+          - { term: Home, gloss: בית (במובן הרגשי) }
+          - { term: Room, gloss: חדר }
+          - { term: Kitchen, gloss: מטבח }
+          - { term: Living room, gloss: סלון }
+          - { term: Bedroom, gloss: חדר שינה }
+          - { term: Bathroom, gloss: חדר אמבטיה }
+          - { term: Dining room, gloss: חדר אוכל }
+          - { term: Laundry room, gloss: חדר כביסה }
+          - { term: Garage, gloss: מוסך }
+          - { term: Garden / Backyard, gloss: גינה / חצר }
+          - { term: Fridge, gloss: מקרר }
+          - { term: Oven, gloss: תנור }
+          - { term: Sink, gloss: כיור }
+          - { term: Sofa, gloss: ספה }
+          - { term: Bed, gloss: מיטה }
+          - { term: Table, gloss: שולחן }
+          - { term: Chair, gloss: כיסא }
+          - { term: Lamp, gloss: מנורה }
+          - { term: Mirror, gloss: מראה }
+          - { term: Shower, gloss: מקלחת }
+          - { term: Toilet, gloss: שירותים }
+          - { term: Towel, gloss: מגבת }
+          - { term: Comfortable, gloss: נוח }
+          - { term: Spacious, gloss: מרווח }
+          - { term: Modern, gloss: מודרני }
+          - { term: Cozy, gloss: נעים }
+          - { term: Bright, gloss: מואר }
+          - { term: Clean, gloss: נקי }
+          - { term: To brush my teeth, gloss: לצחצח שיניים }
+          - { term: To eat breakfast, gloss: לאכול ארוחת בוקר }
+          - { term: To get dressed, gloss: להתלבש }
+          - { term: To make the bed, gloss: לסדר את המיטה }
+
+vocabulary:
+  - slug: my-home
+    title: My home
+    items: *my-home-words
+
+activities:
+  - slug: my-home-describing
+    title: 'Describing your home: there is, there are, adjectives'
+    minutes: 8
+    items:
+      - id: there-is-table
+        type: multipleChoice
+        prompt: ___ a table in the kitchen.
+        options:
+          - { text: There is, correct: true }
+          - {
+              text: There are,
+              feedback: '*There are* is for more than one thing. *A table* is one thing: *there is*.',
+            }
+          - { text: It is, feedback: 'To say that something is in a place, use *there is*.' }
+      - id: there-are-chairs
+        type: multipleChoice
+        prompt: ___ two chairs in the living room.
+        options:
+          - { text: There are, correct: true }
+          - {
+              text: There is,
+              feedback: '*There is* is for one thing. *Two chairs* is more than one: *there are*.',
+            }
+          - { text: They are, feedback: 'To say that things are in a place, use *there are*.' }
+      - id: bed-lamps
+        type: fillBlank
+        prompt: Complete with *there is* or *there are*.
+        text: In my bedroom, ___ a big bed and ___ two lamps.
+        blanks: [[there is, there's], [there are]]
+      - id: adjective-before
+        type: trueFalse
+        prompt: 'Adjectives go before the noun: *a comfortable sofa*.'
+        answer: true
+        feedback:
+          correct: 'Right! *A small table, a cozy room, a comfortable sofa.*'
+          incorrect: 'In English, the adjective goes before the noun: *a comfortable sofa*.'
+      - id: cozy-room
+        type: multipleChoice
+        prompt: Which is correct?
+        options:
+          - { text: a cozy room, correct: true }
+          - { text: a room cozy, feedback: 'The adjective goes before the noun: *a cozy room*.' }
+      - id: you-can
+        type: fillBlank
+        prompt: Complete with one word.
+        text: The bedroom is quiet and comfortable. You ___ sleep and relax there.
+        blanks: [[can]]
+      - id: rooms-things
+        type: matching
+        prompt: Match each room with a thing you find there.
+        pairs:
+          - [Kitchen, fridge]
+          - [Bathroom, shower]
+          - [Bedroom, bed]
+          - [Living room, sofa]
+          - [Garden, flowers]
+      - id: small-table
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: There is a small table.
+
+  - slug: my-home-actions
+    title: 'Actions in the present: I clean, she washes'
+    minutes: 8
+    items:
+      - id: she-washes
+        type: multipleChoice
+        prompt: She ___ the dishes after lunch.
+        options:
+          - { text: washes, correct: true }
+          - { text: wash, feedback: 'With *he, she, it*, add **-s** or **-es**: *she washes*.' }
+          - { text: washs, feedback: 'After *sh*, add **-es**: *wash → washes*.' }
+      - id: they-cook
+        type: multipleChoice
+        prompt: They ___ dinner together in the kitchen.
+        options:
+          - { text: cook, correct: true }
+          - { text: cooks, feedback: 'With *they*, use the verb as it is: *they cook*.' }
+          - { text: are cook, feedback: 'Do not write *are* with a verb: *they cook*.' }
+      - id: clean-vacuums
+        type: fillBlank
+        prompt: Write the verb in the right form.
+        text: I ___ (clean) the living room every Saturday. He ___ (vacuum) the carpet on Sundays.
+        blanks: [[clean], [vacuums]]
+      - id: does-she
+        type: multipleChoice
+        prompt: ___ she sweep the floor every day?
+        options:
+          - { text: Does, correct: true }
+          - { text: Do, feedback: 'With *he, she, it*, use *does* in questions: *Does she…?*' }
+          - { text: Is, feedback: 'Questions with a verb use *do / does*: *Does she sweep…?*' }
+      - id: dont-make
+        type: fillBlank
+        prompt: Make the sentence negative. Use *do*.
+        text: I ___ make my bed in the morning.
+        blanks: [[don't, do not]]
+      - id: es-rule
+        type: trueFalse
+        prompt: 'With *I*, *you*, *we* and *they*, we add **-s** to the verb: *They cleans.*'
+        answer: false
+        feedback:
+          correct: 'Right! With *I, you, we, they*, use the verb as it is: *They clean.*'
+          incorrect: 'Only *he, she, it* add **-s**. With *they*, use the verb as it is: *They clean.*'
+      - id: he-dont
+        type: trueFalse
+        prompt: "*He don't water the plants.* is a correct sentence."
+        answer: false
+        feedback:
+          correct: "Right! With *he, she, it*, use *does*: *He doesn't water the plants.*"
+          incorrect: "With *he, she, it*, use *does*, not *do*: *He doesn't water the plants.*"
+      - id: brushes-teeth
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: She brushes her teeth.

@@ -1,0 +1,554 @@
+# Cycle "Traveling", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: traveling
+title: Traveling
+goal: Talk about travel, building questions and giving directions.
+position: 19
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Building questions" and "Directions") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary, questions rule 3 said: "For a negative question, doesn't comes after the
+    subject". In the examples it comes BEFORE the subject (What **doesn't** your
+    country have…?). The rule is rewritten as "*don't / doesn't* comes before the
+    subject". Please confirm.
+  - >-
+    The skill plan in the source is incomplete: skill 1 ("Asking and answering
+    questions") is practiced with the warm-up and Activity 1 or Activity 2; skill 2
+    ("Directions") lists only the warm-up questions, with an empty line. The plan in
+    the teacher note follows the activity titles: Activities 1, 2 and 4 for
+    questions, Activity 3 (optional) for questions and directions, Activity 5 (the
+    wheel) for both. The skills are named as in the summary: "Building questions"
+    and "Directions". Please confirm.
+  - >-
+    The source file ends in the middle of the vocabulary table: the last row is
+    "to walk | ל…". Its gloss is completed as "ללכת (ברגל)"; any rows after it are
+    missing. Please check against the Quizlet set.
+  - >-
+    Activity 5: the wheel link (wheelofnames.com) is kept. The questions on the
+    wheel are not in the notebook, so there are no answer boxes for it.
+  - >-
+    Warm-up questions 4–6 have no sentence frames in the source; simple frames were
+    added ("On holidays, I visit ___." "When I travel, I like to ___." "When I
+    travel, I like to eat ___."). Please confirm.
+  - >-
+    Corrections: Activity 2 had two "Stage 2" (renumbered); "[destination]" →
+    "___"; Activity 4 "each student will speak with a different one than before" →
+    "each student talks with a new partner"; "Depending on the group's identity" →
+    "If the group likes" (teacher note); "Rule 1️" / "Rule 2️" stray symbols removed.
+  - >-
+    Vocabulary glosses changed: "directions" הכוונות → הוראות הגעה / כיוונים;
+    "landmark" אתר נוף → ציון דרך / אתר מפורסם; "holiday" חג → חג / חופשה; "to
+    stay" להישאר → להישאר / ללון. The Quizlet link is kept without its "?new"
+    parameter.
+  - >-
+    The source gives no activity times (only 3-minute rounds in Activity 4), so the
+    activities have no minutes.
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: traveling-class
+    title: 'Class: Traveling'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Traveling
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Building questions
+            description: 'Ask and answer questions with *what, where, when, who, which, why*'
+          - name: Directions
+            description: 'Short, clear steps: *Go straight. Turn left at the bank. It is next to the café.*'
+      - id: quizlet
+        type: externalLink
+        label: Traveling words on Quizlet
+        url: https://quizlet.com/il/855797669/basic-english-traveling-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I want to travel to ___.
+        example: I am Dana. I want to travel to London.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Where do you like to travel? Why?
+            frame: I like to travel to ___ because ___.
+          - question: Do you prefer a warm or a cold destination? Why?
+            frame: I prefer a ___ destination because ___.
+          - question: Do you prefer traveling solo or with people? Why?
+            frame: I prefer ___ because ___.
+          - question: What places do you visit on holidays?
+            frame: On holidays, I visit ___.
+          - question: What activities do you like to do when you travel?
+            frame: When I travel, I like to ___.
+          - question: What do you like to eat when you travel?
+            frame: When I travel, I like to eat ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Guess the question'
+        skills: [Building questions]
+        steps:
+          - Read each answer below.
+          - Say the question for the answer. Start with a question word.
+        example: |-
+          **Answer:** *In July.*
+          **Question:** *When do you go on vacation?*
+      - id: act1-answers
+        type: discussionQuestions
+        title: Write the question for each answer
+        items:
+          - question: To the beach.
+          - question: My suitcase.
+          - question: With my friends.
+          - question: Because I love to explore.
+          - question: By plane.
+          - question: Paris.
+          - question: A camera.
+          - question: In a hotel.
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: Research'
+        skills: [Building questions]
+        steps:
+          - Work in pairs.
+          - Choose a destination you have not visited. Look for information about it.
+          - Answer the questions below.
+          - Share your research with the group.
+      - id: act2-questions
+        type: discussionQuestions
+        title: Our destination
+        items:
+          - question: '**What** is the most popular food in ___?'
+          - question: '**Where** is the best place to stay in ___?'
+          - question: '**When** is the best time of year to visit ___?'
+          - question: '**Which** attractions should I not miss when I visit ___?'
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Travel agency (optional)'
+        skills: [Building questions, Directions]
+        steps:
+          - Work in pairs. One student is a **traveler**, the other is a **travel agent**.
+          - The traveler asks the questions below.
+          - The travel agent answers with creative ideas. Use direction words when you can.
+          - Switch roles.
+          - Share your experience with the group.
+      - id: act3-questions
+        type: discussionQuestions
+        title: The traveler's questions
+        items:
+          - question: Where should I go?
+          - question: What can I eat there?
+          - question: What should I pack?
+          - question: How do I get to the beach?
+            frame: Go straight for ___ blocks, then turn ___. The beach is next to / across from the ___.
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Speed dating: find your travel buddy!'
+        skills: [Building questions]
+        steps:
+          - Work in pairs. Ask your partner the questions below.
+          - After 3 minutes, your teacher changes the pairs. Ask your new partner the same questions.
+          - Change pairs one more time and ask again.
+          - Back in the group, say what you have in common with each partner. Who is your travel buddy?
+      - id: act4-questions
+        type: discussionQuestions
+        title: Speed dating questions
+        answerable: false
+        items:
+          - question: Where do you want to travel?
+          - question: What do you pack?
+          - question: What do you eat when you travel?
+          - question: Do you go with family or friends?
+      - id: act5
+        type: classActivity
+        title: 'Activity 5: The traveling wheel'
+        skills: [Building questions, Directions]
+        steps:
+          - Spin the wheel and answer the question.
+          - If you get the empty space, ask another student a new question.
+        resource:
+          label: The traveling wheel
+          url: https://wheelofnames.com/qq3-xkt
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Building questions** (warm-up, Activity 1 or
+          Activity 2, and Activity 4) and **Directions** (Activity 3, optional).
+          Activity 5 practices both.
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first, then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Answer key: To the beach → Where do you go in summer? · My suitcase → What
+          do you pack for a trip? · With my friends → Who do you travel with? ·
+          Because I love to explore → Why do you travel? · By plane → How do you travel
+          to another country? · Paris → Where do you want to go? · A camera → What do
+          you take on a trip? · In a hotel → Where do you sleep when you travel? Other
+          correct questions are fine too.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Use breakout rooms of two. After 3 minutes, shuffle the rooms so each
+          student talks with a new partner; do this twice. If the group likes, each
+          student also announces who their travel buddy is.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: traveling-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-questions
+        type: ruleSummary
+        skill: Building questions
+        rules:
+          - text: 'The most common question words are *what, where, when, who, which* and *why*. See the table.'
+          - text: 'Structure: **question word + do / does + subject + main verb**.'
+            examples: [What do travelers like to do in your country?, Where does this tour start?]
+          - text: "In a negative question, **don't / doesn't** comes **before** the subject."
+            examples:
+              - "What doesn't your country have for tourists?"
+              - "Doesn't this place have a famous festival every year?"
+      - id: questions-table
+        type: table
+        caption: Question words
+        header: [Word, Question, Answer]
+        rows:
+          - [
+              What,
+              What is the best time to visit your country?,
+              The best time to visit my country is in spring.,
+            ]
+          - [
+              Where,
+              Where can I find the best local food in your country?,
+              You can find the best local food in the old town market.,
+            ]
+          - [
+              When,
+              When is the holiday season in your country?,
+              The holiday season is in December and January.,
+            ]
+          - [
+              Who,
+              Who are some famous people from your country?,
+              Some famous people from my country are ___ and ___.,
+            ]
+          - [
+              Which,
+              Which landmarks should I visit in your country?,
+              You should visit the old castle and the national museum.,
+            ]
+          - [
+              Why,
+              Why do people love traveling to your country?,
+              People love it because of the beautiful beaches and friendly people.,
+            ]
+      - id: rules-directions
+        type: ruleSummary
+        skill: Directions
+        rules:
+          - text: Use short and clear sentences, so directions are easy to understand.
+            examples: [Go straight., Turn left at the bank., Walk two blocks.]
+          - text: Use location words to help the listener.
+            examples:
+              - '**Next to:** The café is next to the bookstore.'
+              - '**Across from:** The park is across from the school.'
+              - '**On your right / left:** The supermarket is on your right.'
+          - text: Give directions in order, step by step.
+            examples:
+              - Go straight for two blocks.
+              - Turn right at the traffic light.
+              - Walk past the bakery, and the museum is on your left.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: traveling-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy this message and send it. Mori will ask you questions; answer every one.
+      - id: mori-traveling
+        type: aiTutorPrompt
+        title: Talk about traveling
+        message: >-
+          Hi Mori! I want to practice English. Can you ask me questions about traveling
+          using the skills directions and making questions in present simple? Please
+          correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-directions
+        type: aiTutorPrompt
+        title: Ask for directions
+        intro: >-
+          Send this message to Mori. Then ask Mori how to get to a place, for example:
+          *How do I get to the train station?* (Mori answers: *Go straight, turn left,
+          and it's next to the bank.*) After that, write: **Now it's your turn! Ask me
+          how to get somewhere, and I will give you directions.**
+        message: >-
+          Hi Mori! Let's practice. I will ask you how to get somewhere, and you give me
+          directions using prepositions.
+      - id: mori-questions
+        type: aiTutorPrompt
+        title: Make questions about travel
+        intro: >-
+          Send this message to Mori. Then write a sentence about travel, for example:
+          *I travel by plane.* (Mori writes: *How do you travel?*) After that, write:
+          **Now it's your turn! Write a sentence, and I will ask you a question.**
+        message: >-
+          Hey Mori! Let's do an activity. I will write a sentence about travel, and you
+          ask me a question about it.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: traveling-practice
+    book: workbook
+    title: 'Practice: Traveling'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-questions
+        type: activity
+        activity: traveling-questions
+      - id: ex-directions
+        type: activity
+        activity: traveling-directions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: traveling-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Traveling words
+        glossLang: he
+        link: https://quizlet.com/il/855797669/basic-english-traveling-flash-cards/
+        items: &traveling-words
+          - { term: trip, gloss: טיול }
+          - { term: question, gloss: שאלה }
+          - { term: answer (noun), gloss: תשובה }
+          - { term: destination, gloss: יעד }
+          - { term: vacation, gloss: חופשה }
+          - { term: place, gloss: מקום }
+          - { term: season, gloss: עונה }
+          - { term: popular, gloss: פופולרי }
+          - { term: food, gloss: אוכל }
+          - { term: to stay, gloss: להישאר / ללון }
+          - { term: attraction, gloss: אטרקציה }
+          - { term: holiday, gloss: חג / חופשה }
+          - { term: famous, gloss: מפורסם }
+          - { term: people, gloss: אנשים }
+          - { term: landmark, gloss: ציון דרך / אתר מפורסם }
+          - { term: directions, gloss: הוראות הגעה / כיוונים }
+          - { term: left, gloss: שמאל }
+          - { term: right, gloss: ימין }
+          - { term: straight, gloss: ישר }
+          - { term: to turn, gloss: לפנות }
+          - { term: block, gloss: בלוק }
+          - { term: next to, gloss: ליד }
+          - { term: across from, gloss: מול }
+          - { term: near, gloss: קרוב ל }
+          - { term: far, gloss: רחוק מ }
+          - { term: to go, gloss: ללכת }
+          - { term: to walk, gloss: ללכת (ברגל) }
+
+vocabulary:
+  - slug: traveling
+    title: Traveling
+    items: *traveling-words
+
+activities:
+  - slug: traveling-questions
+    title: 'Building questions: what, where, when, who, why'
+    minutes: 8
+    items:
+      - id: when-vacation
+        type: multipleChoice
+        prompt: '___ do you go on vacation? — In July.'
+        options:
+          - { text: When, correct: true }
+          - {
+              text: Where,
+              feedback: '*Where* asks about a place. *In July* is a time: use *when*.',
+            }
+          - { text: Who, feedback: '*Who* asks about a person. *In July* is a time: use *when*.' }
+      - id: who-travel
+        type: multipleChoice
+        prompt: '___ do you travel with? — With my friends.'
+        options:
+          - { text: Who, correct: true }
+          - {
+              text: What,
+              feedback: '*What* asks about a thing. *My friends* are people: use *who*.',
+            }
+          - {
+              text: Why,
+              feedback: '*Why* asks for a reason (answer: *because…*). *My friends* are people: use *who*.',
+            }
+      - id: do-does
+        type: fillBlank
+        prompt: Complete with *do* or *does*.
+        text: Where ___ this tour start? What ___ travelers like to do here?
+        blanks: [[does], [do]]
+        wordBank: [do, does]
+      - id: answer-word
+        type: matching
+        prompt: Match each answer with its question word.
+        pairs:
+          - [In a hotel., Where]
+          - [In July., When]
+          - [Because I love to explore., Why]
+          - [By plane., How]
+          - [With my friends., Who]
+      - id: order-where
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: Where do you want to go?
+      - id: negative
+        type: multipleChoice
+        prompt: Which question is correct?
+        options:
+          - { text: "What doesn't your country have for tourists?", correct: true }
+          - {
+              text: "What your country doesn't have for tourists?",
+              feedback: "In a question, *doesn't* comes **before** the subject: What **doesn't** your country have…?",
+            }
+          - {
+              text: "What don't your country have for tourists?",
+              feedback: "*Your country* is *it*: use *doesn't*, not *don't*.",
+            }
+      - id: structure
+        type: trueFalse
+        prompt: 'A question is built like this: question word + *do / does* + subject + main verb. *Where does this tour start?*'
+        answer: true
+        feedback:
+          correct: 'Right! *Where* + *does* + *this tour* + *start*.'
+          incorrect: 'This is the right structure: *Where* + *does* + *this tour* + *start*?'
+      - id: my-question
+        type: shortAnswer
+        prompt: You are at a travel agency. Write one question for the travel agent. Use *what, where, when* or *why*.
+
+  - slug: traveling-directions
+    title: 'Directions: go straight, turn left'
+    minutes: 8
+    items:
+      - id: short-clear
+        type: multipleChoice
+        prompt: Which direction is short and clear?
+        options:
+          - { text: Turn left at the bank., correct: true }
+          - {
+              text: 'Maybe you can turn to the left side, I think, when you see the bank.',
+              feedback: 'Directions should be short and clear: *Turn left at the bank.*',
+            }
+      - id: words-hebrew
+        type: matching
+        prompt: Match the words with the Hebrew.
+        pairs:
+          - [left, שמאל]
+          - [right, ימין]
+          - [straight, ישר]
+          - [next to, ליד]
+          - [across from, מול]
+      - id: from-to
+        type: fillBlank
+        prompt: Complete with *from* or *to*.
+        text: The park is across ___ the school. The café is next ___ the bookstore.
+        blanks: [[from], [to]]
+        wordBank: [from, to]
+      - id: go-straight
+        type: multipleChoice
+        prompt: ___ straight for two blocks.
+        options:
+          - { text: Go, correct: true }
+          - {
+              text: Turn,
+              feedback: 'We *turn* left or right. To continue without turning, say *Go straight*.',
+            }
+          - {
+              text: Next,
+              feedback: '*Next to* shows where a place is. For the way, say *Go straight*.',
+            }
+      - id: order-turn
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: Turn right at the traffic light.
+      - id: step-by-step
+        type: trueFalse
+        prompt: We give directions in order, step by step.
+        answer: true
+        feedback:
+          correct: 'Right! First *Go straight for two blocks*, then *Turn right at the traffic light*.'
+          incorrect: 'Directions go in order, step by step: first *Go straight*, then *Turn right*.'
+      - id: left-right
+        type: fillBlank
+        prompt: Complete with *left* or *right*. The Hebrew helps you.
+        text: Turn ___ (שמאלה) at the bank. The museum is on your ___ (ימין).
+        blanks: [[left], [right]]
+        wordBank: [left, right]
+      - id: train-station
+        type: multipleChoice
+        prompt: 'A tourist asks: *How do I get to the train station?* Which answer gives directions?'
+        options:
+          - { text: "Go straight, turn left, and it's next to the bank.", correct: true }
+          - {
+              text: "It's a big train station.",
+              feedback: 'This describes the station. Directions say where to go: *Go straight, turn left…*',
+            }
+          - {
+              text: 'Yes, it is near.',
+              feedback: '*How do I get to…?* is not a yes / no question. Give the steps: *Go straight, turn left…*',
+            }

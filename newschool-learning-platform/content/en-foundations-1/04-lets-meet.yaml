@@ -1,0 +1,539 @@
+# Cycle "Let's meet!", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: lets-meet
+title: Let's meet!
+goal: Set up a meeting, using days of the week, numbers and basic prepositions.
+position: 4
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Days of the week and numbers" and "Basic
+    prepositions") are NEW: the notebook has no self-study exercises. They were written
+    from the cycle's two skills, its summary rules and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    The "My Day" worksheet (Activity 2) is an Adobe Acrobat link, which is not on the
+    link allow-list. It needs to move into the course's own media, or the host needs
+    approval. Until then the sentences and the word bank are in the activity, and the
+    teacher shares the worksheet on screen (see the teacher note).
+  - >-
+    Corrections: "wake-up" → "wake up" and "work-out" → "work out" (verbs); warm-up 3
+    frame "I study English ___ times a week" → "___ days a week" (to match the
+    question); warm-up 4 frame "My birthday is ___" → "My birthday is on ___";
+    Activity 4 example "Yoga class on Monday" → "yoga class on Mondays"; the summary
+    heading "In or At (for Time)" → "In, at or on (time)" (the rule also has *on*).
+  - >-
+    Summary: the birthday example "My birthday is on the 12th of March." is kept; the
+    form used in the Family cycle ("on March 12th") was added next to it so both are
+    shown. A table of the three prepositions (time and place) was added from the
+    summary examples.
+  - >-
+    Homework: "small questions" → "short questions"; "Prepositions on time and place"
+    → "Prepositions of time and place"; the "When does it close" message was
+    rewritten ("at what time do they open, at what time do they close and when do I
+    go to those places" → "what time they open, what time they close and when I go
+    there"); "Open the school chatbot" → "Open the chat with Mori".
+  - >-
+    Vocabulary: "To shop" was "לקנות"; it is now "לעשות קניות" (shopping, not one
+    purchase). No other gloss was changed.
+  - >-
+    Activity 4 has no time in the notebook, so no minutes are given. Other activity
+    times given as ranges (15–20 minutes) are recorded as 20 minutes.
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: lets-meet-class
+    title: "Class: Let's meet!"
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Let's meet!
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Days of the week and numbers
+            description: Days, times and dates (*on Monday, at 3 PM, the 12th of March*)
+          - name: Basic prepositions
+            description: '*in, on, at* for time and place'
+      - id: quizlet
+        type: externalLink
+        label: "Let's meet words on Quizlet"
+        url: https://quizlet.com/il/876190432/basic-english-lets-meet-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. During the week I wake up in the morning / at noon, and on Saturdays I wake up in the morning / at noon.
+        example: I am Dana. During the week I wake up in the morning, and on Saturdays I wake up at noon.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What is your favorite day of the week? Why?
+            frame: My favorite day of the week is ___ because ___.
+          - question: Which day of the week do you not like? Why?
+            frame: I don't like ___ because ___.
+          - question: How many days a week do you study English? Which ones?
+            frame: I study English ___ days a week. I study on ___, ___ and ___.
+          - question: When is your birthday?
+            frame: My birthday is on ___.
+          - question: What is your favorite month of the year? Why?
+            frame: My favorite month of the year is ___ because ___.
+          - question: Where do you meet your friends?
+            frame: I meet my friends in / on / at ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: "Activity 1: Let's meet!"
+        skills: [Days of the week and numbers, Basic prepositions]
+        minutes: 20
+        steps:
+          - 'Carousel: you have 2 minutes to set a meeting with a partner. Use the sentences below.'
+          - When you agree on a meeting, change partners.
+          - Tell the group when and where you meet each partner.
+        example: |-
+          **Student 1:** Hi! Can you meet this Friday at 3 PM at the library?
+          **Student 2:** No, but can you meet this Saturday at 4 PM at the café?
+          **Student 1:** Yes! See you on Saturday at 4 PM at the café.
+          **Student 2:** Great! See you then!
+      - id: act1-frames
+        type: discussionQuestions
+        title: Set a meeting
+        items:
+          - question: Hi! Can you meet this / next ___ (day) at ___ (time) in / on / at ___ (place)?
+          - question: Yes! / No, but can you meet this ___ at ___ in / on / at ___?
+          - question: See you on ___ at ___ in / on / at ___.
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: My day'
+        skills: [Basic prepositions]
+        minutes: 20
+        steps:
+          - Listen to your teacher's example for "the morning".
+          - Choose a preposition and an action from the word bank and complete the sentence. Say it; your teacher writes it.
+          - Do the same for "the day" or "noon" (you choose) and for "midnight".
+        example: |-
+          I **wake up** **in** the morning.
+          I **work** **at** noon.
+          I **read emails** **at** midnight.
+        wordBank:
+          - in
+          - on
+          - at
+          - during
+          - wake up
+          - work
+          - study
+          - eat
+          - drive
+          - read emails
+          - meet friends
+          - have fun
+          - work out
+      - id: act2-sentences
+        type: discussionQuestions
+        title: My day
+        items:
+          - question: I ___ ___ the morning.
+          - question: I ___ ___ the day. / I ___ ___ noon.
+          - question: I ___ ___ midnight.
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: My perfect week'
+        skills: [Days of the week and numbers, Basic prepositions]
+        minutes: 20
+        steps:
+          - Imagine your perfect week, or write about your real week.
+          - Write three things you do on each day. Use the verb bank.
+          - Read your week to the group.
+        wordBank:
+          - wake up
+          - go
+          - study
+          - eat
+          - play
+          - watch
+          - meet
+          - exercise
+          - listen
+          - read
+          - cook
+          - work
+          - sleep
+          - clean
+          - shop
+        example: |-
+          **On Sundays I** wake up late, watch movies and eat dinner with my family.
+          **On Mondays I** go to school, study English and exercise in the evening.
+          **On Tuesdays I** read a book, meet my friends and cook dinner.
+          **On Wednesdays I** listen to music, work on my homework and sleep early.
+          **On Thursdays I** clean my room, go shopping and eat lunch at a restaurant.
+          **On Fridays I** play soccer, watch TV and go out with my friends.
+          **On Saturdays I** relax at home, visit my grandparents and go for a walk.
+      - id: act3-week
+        type: discussionQuestions
+        title: My perfect week
+        items:
+          - question: On Sundays I ___, ___ and ___.
+          - question: On Mondays I ___, ___ and ___.
+          - question: On Tuesdays I ___, ___ and ___.
+          - question: On Wednesdays I ___, ___ and ___.
+          - question: On Thursdays I ___, ___ and ___.
+          - question: On Fridays I ___, ___ and ___.
+          - question: On Saturdays I ___, ___ and ___.
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Who do you meet every week?'
+        skills: [Days of the week and numbers, Basic prepositions]
+        steps:
+          - Your teacher says a day of the week.
+          - Say who you meet on that day and why.
+        example: |-
+          **Teacher:** Monday!
+          **Student 1:** I meet my friend Anna because I go to yoga class on Mondays.
+          **Student 2:** I meet my parents because we have dinner together on Mondays.
+          **Teacher:** Tuesday!
+          **Student 1:** I meet my students because I teach history on Tuesdays.
+          **Student 2:** I meet my friend because we have lunch together on Tuesdays.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Days of the week and numbers** (warm-up questions,
+          Activities 1 and 3) and **Basic prepositions** (warm-up questions, Activities 2
+          and 3). Activity 4 practises both. Recommended combinations: Activities 1 and
+          2, or Activities 1 and 3.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Give your own example first, then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: 'Keep time: 2 minutes per meeting, then students change partners (carousel). At the end, each student says when and where they meet the others.'
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Share the "My Day" worksheet on screen (the original Acrobat link is in the old
+          notebook; it is not yet in the platform). Fill it in together: give your own
+          example for each sentence first, then each student says theirs and you write
+          it. You can use the example or other words from the word bank.
+      - id: n-act3
+        anchor: act3
+        text: Less creative students can write their real week instead of a perfect one.
+      - id: n-act4
+        anchor: act4
+        text: Make sure every student says at least one sentence.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: lets-meet-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-days
+        type: ruleSummary
+        skill: Days of the week and numbers
+        rules:
+          - text: 'The days of the week: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday.'
+          - text: For dates, use ordinal numbers with *st*, *nd*, *rd* or *th*. After *3rd*, most numbers just use *th*.
+            examples: [1st (first), 2nd (second), 3rd (third), 4th (fourth), '5th, 6th, 7th…']
+          - text: 'Friendly advice: practise by writing your birthday in the correct format.'
+            examples: [My birthday is on the 12th of March., My birthday is on March 12th.]
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: Basic prepositions
+        rules:
+          - text: '*In*, *at* or *on* for **time**.'
+            examples:
+              - "Let's meet **in** July for summer vacation. (*in* → a long period: a month)"
+              - "Let's meet **in** the evening after work. (*in* → a long period: a part of the day)"
+              - "Let's meet **at** 3 PM for coffee. (*at* → an exact time)"
+              - "Let's meet **at** noon for lunch. (*at* → a specific moment of the day)"
+              - "Let's meet **on** Monday to plan our trip. (*on* → a specific day)"
+              - "Let's meet **on** Christmas Eve for a celebration. (*on* → a specific day or event)"
+          - text: '*In*, *at* or *on* for **place**.'
+            examples:
+              - "Let's meet **in** the park for a picnic. (*in* → a big area)"
+              - "Let's meet **in** the library to study. (*in* → a large place)"
+              - "Let's meet **at** the entrance of the mall. (*at* → an exact location)"
+              - "Let's meet **at** the restaurant for dinner. (*at* → a specific place)"
+              - "Let's meet **on** the rooftop for a sunset view. (*on* → the surface of a place)"
+              - "Let's meet **on** the balcony to talk. (*on* → the surface of a place)"
+          - text: 'Friendly advice: use **in** for big areas or long periods (in the park, in summer). Use **at** for exact places or specific times (at 6 PM, at the bus stop). Use **on** for days or surfaces (on Friday, on the table).'
+      - id: prepositions-table
+        type: table
+        caption: In, at, on
+        header: [Preposition, Time, Place]
+        rows:
+          - [in, 'in July, in the evening, in summer', 'in the park, in the library']
+          - [
+              at,
+              'at 3 PM, at noon, at 6 PM',
+              'at the entrance of the mall, at the restaurant, at the bus stop',
+            ]
+          - [
+              on,
+              'on Monday, on Friday, on Christmas Eve',
+              'on the rooftop, on the balcony, on the table',
+            ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: lets-meet-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy this message and send it. Mori will ask you questions; answer every one.
+      - id: mori-meeting
+        type: aiTutorPrompt
+        title: Schedule a meeting
+        message: >-
+          Hi Mori! I want to schedule a meeting. Can you ask me short questions using the
+          skills Dates and numbers, Days of the week and Prepositions of time and place?
+          Please use only present simple, and please correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-week
+        type: aiTutorPrompt
+        title: My week
+        intro: Send this message to Mori. Answer in full sentences in the present simple, with actions, days and prepositions of time and place.
+        message: Hi Mori! I want to tell you about my week. Can you ask me about my routine every day?
+      - id: mori-open-close
+        type: aiTutorPrompt
+        title: When does it open and when does it close?
+        intro: Send this message to Mori.
+        message: |-
+          Hi Mori! Please ask me about different places in the city: what time they open, what time they close and when I go there.
+          Places: bank, supermarket, café, gym, mall.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: lets-meet-practice
+    book: workbook
+    title: "Practice: Let's meet!"
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-days
+        type: activity
+        activity: lets-meet-days-numbers
+      - id: ex-prepositions
+        type: activity
+        activity: lets-meet-prepositions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: lets-meet-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: "Let's meet words"
+        glossLang: he
+        link: https://quizlet.com/il/876190432/basic-english-lets-meet-flash-cards/
+        items: &lets-meet-words
+          - { term: To wake up, gloss: להתעורר }
+          - { term: To go, gloss: ללכת }
+          - { term: To study, gloss: ללמוד }
+          - { term: To eat, gloss: לאכול }
+          - { term: To play, gloss: לשחק }
+          - { term: To watch, gloss: לצפות }
+          - { term: To meet, gloss: לפגוש }
+          - { term: To exercise, gloss: להתאמן }
+          - { term: To listen, gloss: להאזין }
+          - { term: To read, gloss: לקרוא }
+          - { term: To cook, gloss: לבשל }
+          - { term: To work, gloss: לעבוד }
+          - { term: To sleep, gloss: לישון }
+          - { term: To clean, gloss: לנקות }
+          - { term: To shop, gloss: לעשות קניות }
+          - { term: Morning, gloss: בוקר }
+          - { term: Noon, gloss: צהריים }
+          - { term: Midnight, gloss: חצות }
+          - { term: During, gloss: במהלך }
+          - { term: Date, gloss: תאריך }
+          - { term: Day, gloss: יום }
+          - { term: Month, gloss: חודש }
+          - { term: Birthday, gloss: יום הולדת }
+          - { term: Favorite, gloss: אהוב }
+          - { term: Week, gloss: שבוע }
+          - { term: To meet friends, gloss: לפגוש חברים }
+
+vocabulary:
+  - slug: lets-meet
+    title: "Let's meet!"
+    items: *lets-meet-words
+
+activities:
+  - slug: lets-meet-days-numbers
+    title: Days of the week and numbers
+    minutes: 8
+    items:
+      - id: after-tuesday
+        type: multipleChoice
+        prompt: Which day comes right after Tuesday?
+        options:
+          - { text: Wednesday, correct: true }
+          - {
+              text: Monday,
+              feedback: 'Monday comes **before** Tuesday: Monday, Tuesday, Wednesday.',
+            }
+          - {
+              text: Thursday,
+              feedback: 'Thursday comes after Wednesday: Tuesday, Wednesday, Thursday.',
+            }
+      - id: missing-days
+        type: fillBlank
+        prompt: Write the missing days.
+        text: Sunday, Monday, ___, Wednesday, ___, Friday, Saturday
+        blanks: [[Tuesday], [Thursday]]
+      - id: right-order
+        type: multipleChoice
+        prompt: Which days are in the right order?
+        options:
+          - { text: 'Thursday, Friday, Saturday', correct: true }
+          - { text: 'Friday, Thursday, Saturday', feedback: 'Thursday comes before Friday.' }
+          - { text: 'Thursday, Saturday, Friday', feedback: 'Friday comes before Saturday.' }
+      - id: ordinal-words
+        type: matching
+        prompt: Match the numbers with the words.
+        pairs:
+          - [1st, first]
+          - [2nd, second]
+          - [3rd, third]
+          - [4th, fourth]
+      - id: twelfth
+        type: multipleChoice
+        prompt: My birthday is on the 12___ of March.
+        options:
+          - { text: th, correct: true }
+          - { text: nd, feedback: 'After 3rd, most numbers use *th*: *12th*.' }
+          - {
+              text: rd,
+              feedback: 'Use *rd* for 3 (*3rd*). After 3rd, most numbers use *th*: *12th*.',
+            }
+      - id: endings
+        type: fillBlank
+        prompt: Write *st*, *nd*, *rd* or *th*.
+        text: January 1___, February 2___, March 3___, April 4___
+        blanks: [[st, 1st], [nd, 2nd], [rd, 3rd], [th, 4th]]
+      - id: after-third
+        type: trueFalse
+        prompt: 'After 3rd, most numbers just use *th*: 5th, 6th, 7th.'
+        answer: true
+        feedback:
+          correct: Right! 4th, 5th, 6th, 7th…
+          incorrect: 'After 3rd, most numbers use *th*: 4th, 5th, 6th, 7th…'
+      - id: order-birthday
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: My birthday is on the 12th of March.
+
+  - slug: lets-meet-prepositions
+    title: 'Basic prepositions: in, on, at'
+    minutes: 8
+    items:
+      - id: at-time
+        type: multipleChoice
+        prompt: "Let's meet ___ 3 PM for coffee."
+        options:
+          - { text: at, correct: true }
+          - {
+              text: in,
+              feedback: 'Use *in* for long periods (*in July*). For an exact time, use *at*.',
+            }
+          - { text: on, feedback: 'Use *on* for days (*on Monday*). For an exact time, use *at*.' }
+      - id: on-day
+        type: multipleChoice
+        prompt: "Let's meet ___ Monday."
+        options:
+          - { text: on, correct: true }
+          - { text: in, feedback: 'Use *in* for long periods (*in July*). For a day, use *on*.' }
+          - { text: at, feedback: 'Use *at* for an exact time (*at 3 PM*). For a day, use *on*.' }
+      - id: in-month
+        type: multipleChoice
+        prompt: "Let's meet ___ July for summer vacation."
+        options:
+          - { text: in, correct: true }
+          - {
+              text: on,
+              feedback: 'Use *on* for days (*on Friday*). A month is a long period: use *in*.',
+            }
+          - {
+              text: at,
+              feedback: 'Use *at* for an exact time (*at 6 PM*). A month is a long period: use *in*.',
+            }
+      - id: my-day
+        type: fillBlank
+        prompt: Complete with *in* or *at*.
+        text: I wake up ___ the morning. I work ___ noon.
+        blanks: [[in], [at]]
+        wordBank: [in, at]
+      - id: why-preposition
+        type: matching
+        prompt: Match each example with the rule.
+        pairs:
+          - [in July, a long period]
+          - [in the park, a big area]
+          - [at 3 PM, an exact time]
+          - [on Monday, a specific day]
+          - [on the balcony, the surface of a place]
+      - id: at-july
+        type: trueFalse
+        prompt: "*Let's meet at July.* is correct."
+        answer: false
+        feedback:
+          correct: "Right! A month is a long period: *Let's meet in July.*"
+          incorrect: "Use *in* for long periods like months: *Let's meet in July.*"
+      - id: mall
+        type: fillBlank
+        prompt: Complete with one preposition.
+        text: "Let's meet ___ the entrance of the mall ___ 6 PM."
+        blanks: [[at], [at]]
+      - id: order-morning
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: I wake up in the morning.

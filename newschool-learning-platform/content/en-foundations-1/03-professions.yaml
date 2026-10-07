@@ -1,0 +1,549 @@
+# Cycle "Professions", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: professions
+title: Professions
+goal: Talk about jobs, using actions in the present and numbers.
+position: 3
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Actions in present" and "Numbers") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The plan in the notebook does not match the activities: it says Numbers is
+    practised with Activities 2 or 4 and Actions in present with Activities 1 or 3,
+    but Activity 3 (budget) is a numbers activity and Activity 4 practises both
+    skills. It also names a "Preparation activity" that does not exist (probably the
+    introduction round). The teacher note now says: Actions in present → warm-up
+    questions 1–3 and Activity 1; Numbers → warm-up questions 4–6 and Activities 2 and
+    3; Activity 4 → both. Please confirm.
+  - >-
+    The Numbers rules in the summary were incomplete and partly wrong: "30-90 add" had
+    no ending (written here as "add *-ty*"), and "two hundreds or three thousands" is
+    wrong (it is "two hundred, three thousand"). The three rules were rewritten and a
+    small table of numbers (one, thirteen, thirty…) was added. Please check.
+  - >-
+    Activity 3 says to buy "from the same items as above and with the prices of the
+    items", but the notebook has no list of items or prices. The teacher needs to give
+    them (see the teacher note), or they need to be added to the cycle.
+  - >-
+    Corrections: Activity 4 profession card "Bakery → Chef" → "Bakery → Baker";
+    Activity 3 "the first 3 month" → "the first 3 months" and the frame is written
+    "In month 1, I spend $___ on ___…"; Mori game "Now is your turn, Mori! … I guess
+    which one is it" → "Now it's your turn, Mori! … I will guess which one it is";
+    Mori interview message reworded ("we will make a simulation" → "let's do a role
+    play"); main Mori message "Open the school chatbot" → "Open the chat with Mori".
+  - >-
+    Vocabulary: "To serve" was "לשרת"; for a waiter "להגיש" is the usual meaning, so
+    the gloss is "להגיש / לשרת". "To paint" is "לצבוע / לצייר" (a painter can paint
+    walls or pictures). "Police Officer" → "Police officer". Please confirm.
+  - >-
+    The optional twist in Activity 4 mentions Zoom breakout rooms; it is kept in the
+    teacher note only.
+  - Activity times given as ranges (15–20 minutes) are recorded as 20 minutes.
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: professions-class
+    title: 'Class: Professions'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Professions
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Actions in present
+            description: 'Verbs in the present simple: *I teach*, *she teaches*'
+          - name: Numbers
+            description: Numbers for work, hours and money (forty, nine hundred…)
+      - id: quizlet
+        type: externalLink
+        label: Professions words on Quizlet
+        url: https://quizlet.com/il/1053510334/basic-english-professions-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I'm a ___ (profession).
+        example: I am Dana. I'm a teacher.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What do you do at work? Say three things.
+            frame: At work I ___, ___ and ___.
+          - question: Where do you work?
+            frame: I work at / in ___.
+          - question: What do you like about your job?
+            frame: I like that ___. / I like to ___.
+          - question: What don't you like about your job?
+            frame: I don't like that ___. / I don't like to ___.
+          - question: How many hours do you work every week?
+            frame: I work ___ hours per week.
+          - question: What do you do after work?
+            frame: After work I ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: 21 questions'
+        skills: [Actions in present]
+        minutes: 20
+        steps:
+          - One student secretly chooses a job.
+          - The group takes turns asking yes/no questions with verbs (*Do you work with…? Do you drive…?*).
+          - You have 21 questions to guess the job.
+        example: |-
+          **Secret job:** *pilot* (only the chosen student knows!)
+          **Student A:** *Do you work with a computer?* – No.
+          **Student B:** *Do you work with people?* – Yes.
+          **Student C:** *Do you drive a car?* – No.
+          **Student D:** *Do you wear a uniform?* – Yes.
+          **Student E:** *Do you travel to other countries?* – Yes.
+          … until someone guesses: *Are you a pilot?* – Yes!
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: My business'
+        skills: [Numbers]
+        minutes: 20
+        steps:
+          - Imagine you open a business. Complete the sentences below.
+          - Present your business to the group.
+        example: |-
+          *My business is a music school. I need 3 music teachers, 1 receptionist and 1 cleaner.*
+          *There are 3 teachers. They teach music. There is 1 receptionist. She helps students.*
+      - id: act2-business
+        type: discussionQuestions
+        title: My business
+        items:
+          - question: My business is ___.
+          - question: We sell / do ___.
+          - question: I need ___ ___, ___ ___ and ___ ___ (number + profession).
+          - question: There are ___ workers.
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: My business budget'
+        skills: [Numbers]
+        minutes: 20
+        steps:
+          - You have a budget of $900 to start a new business.
+          - Decide what to buy and how much to spend in each of the first 3 months.
+          - Present your budget plan to the group.
+      - id: act3-budget
+        type: discussionQuestions
+        title: My budget plan
+        items:
+          - question: In month 1, I spend $___ on ___, $___ on ___ and $___ on ___.
+          - question: In month 2, I spend $___ on ___, $___ on ___ and $___ on ___.
+          - question: In month 3, I spend $___ on ___, $___ on ___ and $___ on ___.
+          - question: In 3 months, I spend $___.
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Job interview'
+        skills: [Numbers, Actions in present]
+        minutes: 20
+        steps:
+          - 'Work in pairs. Student A is the interviewer; student B is the employee and gets a profession card from the teacher.'
+          - Student A asks questions from the lists below.
+          - Switch roles, swap profession cards and do it again.
+        example: |-
+          **A:** How many people work with you?
+          **B:** Twenty people.
+          **A:** And how many hours do you work per week?
+          **B:** I work forty hours a week.
+      - id: act4-numbers
+        type: discussionQuestions
+        title: Interview questions with numbers
+        items:
+          - question: How many people work with you?
+          - question: How many hours do you work each week?
+          - question: How many days do you work per week?
+          - question: How many customers do you see per day?
+          - question: How many breaks do you have?
+          - question: What time do you start work?
+      - id: act4-actions
+        type: discussionQuestions
+        title: Interview questions with actions in present
+        items:
+          - question: What do you do in your job?
+          - question: What are your main responsibilities?
+          - question: Why do you want this job?
+          - question: What do you like about this profession?
+          - question: What do you usually do on a normal workday?
+          - question: Do you work well in a team?
+          - question: Do you follow instructions easily?
+          - question: Do you arrive on time?
+          - question: Do you take breaks during the day?
+          - question: How do you handle stress at work?
+          - question: Do you work inside or outside?
+          - question: Do you talk to customers?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Actions in present** (warm-up questions 1–3 and
+          Activity 1) and **Numbers** (warm-up questions 4–6 and Activities 2 and 3).
+          Activity 4 practises both. Choose one activity for each skill, or Activity 4.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: 'The twist of this lesson: everyone says their profession. Give your own example first ("I''m a teacher."), then go around the group.'
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: The student who chooses the job only answers *yes* or *no*. The group has 21 questions in total.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          The notebook says students buy items "from the same items as above, with their
+          prices", but no list is given. Prepare a short list of items with prices
+          (e.g. computer, desk, rent, ads) and share it before Stage 2.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Prepare profession cards with a workplace and a job, e.g. School → Teacher,
+          Hospital → Doctor, Restaurant → Waiter, Construction site → Engineer, Bakery →
+          Baker. Optional twist: after two rounds, students change partners (in person)
+          or rotate in breakout rooms (online).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: professions-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-actions
+        type: ruleSummary
+        skill: Actions in present
+        rules:
+          - text: 'For *I*, *you*, *we* and *they*: who does the action + the verb.'
+            examples:
+              - I **teach** math at a local school.
+              - You **design** buildings for modern cities.
+              - They **write** articles for a science magazine.
+          - text: For *he* and *she* (or one person's name), add **-s** (or **-es**) to the verb.
+            examples:
+              - He **fixes** cars at his workshop.
+              - She **treats** patients at the hospital.
+              - David **cooks** meals in a restaurant.
+          - text: Do **not** use *am, is, are* when you have a verb.
+            examples:
+              - 'Correct: I **manage** a team at a marketing agency.'
+              - 'Correct: She **paints** portraits for her clients.'
+              - 'Wrong: I **am manage** a team at a marketing agency.'
+              - 'Wrong: She **is paints** portraits for her clients.'
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Numbers
+        rules:
+          - text: Learn the numbers 1–10 well. Many other numbers are built from them with small changes.
+            examples: [six → sixteen → sixty, seven → seventeen → seventy]
+          - text: 'For 30–90, add **-ty**: thirty, forty, fifty, sixty, seventy, eighty, ninety (and 20 is *twenty*).'
+            examples: [I work forty hours a week.]
+          - text: 'For hundreds and thousands, say the number + *hundred* or *thousand*, with **no -s**.'
+            examples: [two hundred, three thousand, 'My budget is $900: nine hundred dollars.']
+      - id: numbers-table
+        type: table
+        caption: Numbers
+        header: [1–10, 13–19 (+teen), 30–90 (+ty)]
+        rows:
+          - [three, thirteen, thirty]
+          - [four, fourteen, forty]
+          - [five, fifteen, fifty]
+          - [six, sixteen, sixty]
+          - [seven, seventeen, seventy]
+          - [eight, eighteen, eighty]
+          - [nine, nineteen, ninety]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Go through both skills with the group and ask for one new example for each rule. Point out the spelling *forty* (no *u*).
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: professions-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy this message and send it. Mori will ask you questions; answer every one.
+      - id: mori-professions
+        type: aiTutorPrompt
+        title: Talk about professions
+        message: >-
+          Hi Mori! I want to talk about professions. Can you ask me questions using the
+          skills Actions in present and Numbers? Please use only present simple, and
+          correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-guess
+        type: aiTutorPrompt
+        title: Guess the profession (Who am I?)
+        intro: Think about a profession, then send this message to Mori. Give Mori clues with verbs.
+        message: Hey Mori! I want to study English with a game. I think of a profession, and you guess which one it is.
+      - id: guess-example
+        type: examples
+        items:
+          - text: I wear a uniform.
+          - text: I drive a big red truck.
+          - text: I put out fires.
+          - text: Who am I? → A firefighter!
+      - id: mori-guess-turn
+        type: aiTutorPrompt
+        intro: Now it's your turn to guess! Send this message.
+        message: Now it's your turn, Mori! Think about a profession, and I will guess which one it is.
+      - id: mori-interview
+        type: aiTutorPrompt
+        title: Job interview
+        intro: You are the **boss** of a company. Mori wants a job, and you interview Mori! Start with this message.
+        message: Hi Mori! I am learning through games. Let's do a role play. I am interviewing people today. What job do you want?
+      - id: interview-questions
+        type: examples
+        items:
+          - text: Why do you want this job?
+          - text: What experience do you have?
+          - text: What do you do in this job?
+          - text: How many hours can you work?
+          - text: Do you like working in a team?
+          - text: Where do you want to work?
+      - id: interview-end
+        type: text
+        text: 'Ask 3–4 questions from the list (or your own). After Mori answers, decide: do you give Mori the job or not? Tell Mori why!'
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: professions-practice
+    book: workbook
+    title: 'Practice: Professions'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-actions
+        type: activity
+        activity: professions-actions
+      - id: ex-numbers
+        type: activity
+        activity: professions-numbers
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: professions-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Professions words
+        glossLang: he
+        link: https://quizlet.com/il/1053510334/basic-english-professions-flash-cards/
+        items: &professions-words
+          - { term: To teach, gloss: ללמד }
+          - { term: To write, gloss: לכתוב }
+          - { term: To fix, gloss: לתקן }
+          - { term: To paint, gloss: לצבוע / לצייר }
+          - { term: To sell, gloss: למכור }
+          - { term: To cook, gloss: לבשל }
+          - { term: To help, gloss: לעזור }
+          - { term: To serve, gloss: להגיש / לשרת }
+          - { term: Teacher, gloss: מורה }
+          - { term: Doctor, gloss: רופא / רופאה }
+          - { term: Engineer, gloss: מהנדס / מהנדסת }
+          - { term: Police officer, gloss: שוטר / שוטרת }
+          - { term: Painter, gloss: צייר / ציירת }
+          - { term: Cashier, gloss: קופאי / קופאית }
+          - { term: Journalist, gloss: עיתונאי / עיתונאית }
+          - { term: Waiter, gloss: מלצר / מלצרית }
+          - { term: Workplace, gloss: מקום עבודה }
+          - { term: Business, gloss: עסק }
+          - { term: Bakery, gloss: מאפייה }
+          - { term: Hospital, gloss: בית חולים }
+          - { term: School, gloss: בית ספר }
+          - { term: Restaurant, gloss: מסעדה }
+          - { term: Salary, gloss: משכורת }
+          - { term: Budget, gloss: תקציב }
+          - { term: Expenses, gloss: הוצאות }
+          - { term: Rent, gloss: שכר דירה }
+          - { term: Savings, gloss: חסכונות }
+          - { term: Workers, gloss: עובדים }
+          - { term: Hours, gloss: שעות }
+
+vocabulary:
+  - slug: professions
+    title: Professions
+    items: *professions-words
+
+activities:
+  - slug: professions-actions
+    title: 'Actions in present: I teach, she teaches'
+    minutes: 8
+    items:
+      - id: he-fixes
+        type: multipleChoice
+        prompt: He ___ cars at his workshop.
+        options:
+          - { text: fixes, correct: true }
+          - {
+              text: fix,
+              feedback: 'With *he* or *she*, add *-s* or *-es* to the verb: *he fixes*.',
+            }
+          - { text: is fix, feedback: 'Do not use *am, is, are* when you have a verb: *he fixes*.' }
+      - id: i-teach
+        type: multipleChoice
+        prompt: I ___ math at a local school.
+        options:
+          - { text: teach, correct: true }
+          - { text: teaches, feedback: 'With *I*, the verb has no *-s*: *I teach*.' }
+          - {
+              text: am teach,
+              feedback: 'Do not use *am, is, are* when you have a verb: *I teach*.',
+            }
+      - id: add-s
+        type: fillBlank
+        prompt: Write the verb in the right form.
+        text: She ___ (treat) patients at the hospital. They ___ (write) articles for a magazine.
+        blanks: [[treats], [write]]
+      - id: no-am
+        type: trueFalse
+        prompt: '*I am manage a team.* is a correct sentence.'
+        answer: false
+        feedback:
+          correct: 'Right! Do not use *am* with a verb: *I manage a team.*'
+          incorrect: 'Do not use *am, is, are* when you have a verb. The correct sentence is *I manage a team.*'
+      - id: who-does-what
+        type: matching
+        prompt: Match each profession with what the person does.
+        pairs:
+          - [A teacher, teaches students.]
+          - [A doctor, treats patients.]
+          - [A waiter, serves food.]
+          - [A journalist, writes articles.]
+          - [A painter, paints pictures.]
+      - id: work-works
+        type: fillBlank
+        prompt: Complete with *work* or *works*.
+        text: I ___ in a hospital. My brother ___ in a bakery.
+        blanks: [[work], [works]]
+        wordBank: [work, works]
+      - id: correct-sentence
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: She paints portraits for her clients., correct: true }
+          - {
+              text: She is paints portraits for her clients.,
+              feedback: 'Do not use *is* when you have a verb: *She paints*.',
+            }
+          - {
+              text: She paint portraits for her clients.,
+              feedback: 'With *she*, add *-s* to the verb: *She paints*.',
+            }
+      - id: order-david
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: David cooks meals in a restaurant.
+
+  - slug: professions-numbers
+    title: Numbers
+    minutes: 8
+    items:
+      - id: match-numbers
+        type: matching
+        prompt: Match the numbers.
+        pairs:
+          - ['13', thirteen]
+          - ['30', thirty]
+          - ['40', forty]
+          - ['50', fifty]
+          - ['90', ninety]
+      - id: forty
+        type: multipleChoice
+        prompt: How do you write 40?
+        options:
+          - { text: forty, correct: true }
+          - { text: fourty, feedback: 'Careful with the spelling: *four*, but *forty* (no *u*).' }
+          - { text: fourteen, feedback: '*Fourteen* is 14. For 40, add *-ty*: *forty*.' }
+      - id: nine-hundred
+        type: multipleChoice
+        prompt: 'How do you say $900?'
+        options:
+          - { text: nine hundred dollars, correct: true }
+          - {
+              text: nine hundreds dollars,
+              feedback: 'Say the number + *hundred*, with no *-s*: *nine hundred*.',
+            }
+          - {
+              text: ninety hundred dollars,
+              feedback: '*Ninety* is 90. For 900, say *nine hundred*.',
+            }
+      - id: no-s
+        type: trueFalse
+        prompt: '*three thousands* is correct.'
+        answer: false
+        feedback:
+          correct: 'Right! *Thousand* has no *-s* after a number: *three thousand*.'
+          incorrect: 'After a number, *hundred* and *thousand* have no *-s*: *three thousand*.'
+      - id: ty
+        type: fillBlank
+        prompt: Complete the pattern.
+        text: six → sixteen → sixty. seven → seventeen → ___. eight → eighteen → ___.
+        blanks: [[seventy], [eighty]]
+      - id: in-words
+        type: fillBlank
+        prompt: Write the numbers in words.
+        text: I work ___ (40) hours a week. I need ___ (3) music teachers.
+        blanks: [[forty], [three]]
+      - id: how-many-hours
+        type: multipleChoice
+        prompt: How many hours do you work per week?
+        options:
+          - { text: I work forty hours a week., correct: true }
+          - {
+              text: I work forty hour a week.,
+              feedback: 'More than one hour: *hours*. *I work forty hours a week.*',
+            }
+          - {
+              text: I am work forty hours a week.,
+              feedback: 'Do not use *am* when you have a verb: *I work*.',
+            }
+      - id: order-teachers
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: I need three music teachers.
