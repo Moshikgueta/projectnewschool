@@ -236,15 +236,17 @@ _editor_, not a new model.
 
 - **Now:** `/manage` → a course → its cycles (order, status, new cycles) → a cycle's
   notebook and workbook pages (order, status, new pages; activities' status) → a page's
-  editor. The page is YAML in the same block format as the files (`blocks:` and
-  `teacherNotes:`; `activity: <slug>` for exercises), checked as it is typed, with a
-  student and teacher preview. Statuses: draft, in review, published, archived.
+  editor. The editor opens as a form: one card per block (add, duplicate, reorder,
+  remove), fields drawn from each type's description (ADR-035), teacher notes anchored by
+  choosing their block. The same page can be switched to YAML, the files' block format
+  (`blocks:` and `teacherNotes:`; `activity: <slug>` for exercises). Either way it is
+  checked as it changes, with a student and teacher preview. Statuses: draft, in review,
+  published, archived.
 - **Files and the editor together:** `pnpm content:import` still creates and updates
   courses from files, but leaves alone any page edited in the platform, with a warning,
   unless run with `--overwrite-app-edits`. A course moves to the editor for good once its
   files stop being imported.
-- **Next:** form-based editing per block type, the activity (exercise) editor, media
-  upload, a review step where teachers propose and the manager approves, and the page
+- **Next:** the activity (exercise) editor, media upload, a review step where teachers propose and the manager approves, and the page
   history view (the history is already in the audit log).
 
 ## 6. Migration of existing New School materials <a id="migration"></a>

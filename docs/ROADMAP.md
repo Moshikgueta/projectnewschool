@@ -230,7 +230,7 @@ stages: [STAFF-ROOM-MERGE.md](STAFF-ROOM-MERGE.md).
 - [ ] Cut-over: the domain points here, the Worker shows "we have moved", D1 read-only
       for 30 days, then archived and deleted
 
-### Phase 8 — Pedagogical CMS _(first part implemented locally)_
+### Phase 8 — Pedagogical CMS _(page editing implemented locally)_
 
 Status 2026-10-07:
 
@@ -244,8 +244,11 @@ Status 2026-10-07:
 - [x] Tests: 14 pgTAP, 4 unit (including a round trip of every page of the Family cycle),
       2 end-to-end (edit, preview, save, a stale save refused, a draft page hidden from
       students, no access for teachers and students)
-- [ ] Form-based editing per block type; activity editor; media upload; teacher
-      proposals with manager approval; page history view
+- [x] Form-based editing per block type (ADR-035): add, duplicate, reorder and remove
+      blocks, lists inside blocks, teacher notes anchored by choosing the block; the YAML
+      view stays one click away; 5 unit tests, 2 more end-to-end tests
+- [ ] Activity editor; media upload; teacher proposals with manager approval; page
+      history view
 
 Planned scope:
 

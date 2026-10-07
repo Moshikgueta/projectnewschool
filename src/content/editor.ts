@@ -46,6 +46,33 @@ export function sectionToYaml(
   });
 }
 
+/** The editor's document ({ blocks, teacherNotes }, activities by slug) as YAML. */
+export function docToYaml(doc: { blocks: unknown[]; teacherNotes?: unknown[] }): string {
+  return stringify(
+    doc.teacherNotes?.length
+      ? { blocks: doc.blocks, teacherNotes: doc.teacherNotes }
+      : { blocks: doc.blocks },
+    { lineWidth: 100, aliasDuplicateObjects: false },
+  );
+}
+
+/** YAML to the editor's document, without checking blocks (null if it is not YAML or not a page). */
+export function yamlToDoc(text: string): { blocks: unknown[]; teacherNotes: unknown[] } | null {
+  if (text.length > MAX_SECTION_YAML) return null;
+  const doc = parseDocument(text, { uniqueKeys: true });
+  if (doc.errors.length) return null;
+  try {
+    const raw = doc.toJS({ maxAliasCount: 0 }) as Record<string, unknown> | null;
+    if (!raw || !Array.isArray(raw.blocks)) return null;
+    return {
+      blocks: raw.blocks,
+      teacherNotes: Array.isArray(raw.teacherNotes) ? raw.teacherNotes : [],
+    };
+  } catch {
+    return null;
+  }
+}
+
 function pathOf(path: PropertyKey[]): string {
   return path
     .map((p, i) => (typeof p === 'number' ? `[${p}]` : `${i ? '.' : ''}${String(p)}`))
@@ -90,6 +117,24 @@ export function parseSectionYaml(
     return {
       ok: false,
       problems: [{ path: '', message: 'YAML aliases (*name) are not allowed.' }],
+    };
+  }
+  return checkSectionDoc(raw, activityIdBySlug);
+}
+
+/**
+ * The page in the editor's own shape ({ blocks, teacherNotes }, activities
+ * by slug), however it was edited (YAML or the form editor): activity slugs
+ * resolved, every block and note checked, anchors and ids cross-checked.
+ */
+export function checkSectionDoc(
+  raw: Record<string, unknown>,
+  activityIdBySlug: ReadonlyMap<string, string>,
+): ParsedSection {
+  if (!Array.isArray(raw.blocks)) {
+    return {
+      ok: false,
+      problems: [{ path: 'blocks', message: 'Start with `blocks:` and a list of blocks.' }],
     };
   }
   const problems: EditorProblem[] = [];
