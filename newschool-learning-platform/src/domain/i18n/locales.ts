@@ -5,7 +5,19 @@ export const LOCALES = ['he', 'en'] as const;
 export type Locale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: Locale = 'he';
 
-const RTL: ReadonlySet<string> = new Set(['he', 'ar', 'fa', 'ur', 'yi']);
+const RTL: ReadonlySet<string> = new Set([
+  'he',
+  'ar',
+  'fa',
+  'ur',
+  'yi',
+  'apc',
+  'ajp',
+  'arz',
+  'acm',
+]);
+/** Scripts written right to left; a script subtag ("apc-Hebr", "ar-Latn") decides over the language. */
+const RTL_SCRIPTS: ReadonlySet<string> = new Set(['hebr', 'arab', 'syrc', 'thaa']);
 
 export function isLocale(value: unknown): value is Locale {
   return typeof value === 'string' && (LOCALES as readonly string[]).includes(value);
@@ -13,7 +25,10 @@ export function isLocale(value: unknown): value is Locale {
 
 /** Text direction of a language tag ("he", "ar-EG", "en-GB" …). */
 export function directionOf(tag: string): 'ltr' | 'rtl' {
-  return RTL.has(tag.toLowerCase().split('-')[0] ?? '') ? 'rtl' : 'ltr';
+  const [language = '', ...rest] = tag.toLowerCase().split('-');
+  const script = rest.find((part) => /^[a-z]{4}$/.test(part));
+  if (script) return RTL_SCRIPTS.has(script) ? 'rtl' : 'ltr';
+  return RTL.has(language) ? 'rtl' : 'ltr';
 }
 
 /**

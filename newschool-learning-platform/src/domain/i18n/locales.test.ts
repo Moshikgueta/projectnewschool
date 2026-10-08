@@ -10,6 +10,13 @@ describe('directionOf', () => {
     expect(directionOf('es')).toBe('ltr');
     expect(directionOf('el')).toBe('ltr');
   });
+
+  it('follows the script when the tag names one (spoken Arabic in Hebrew letters, Arabic in Latin letters)', () => {
+    expect(directionOf('apc-Hebr')).toBe('rtl');
+    expect(directionOf('apc')).toBe('rtl');
+    expect(directionOf('ar-Latn')).toBe('ltr');
+    expect(directionOf('en-Hebr')).toBe('rtl');
+  });
 });
 
 describe('resolveLocale', () => {
