@@ -1,0 +1,533 @@
+# Cycle "Les professions", converted from the French digital notebook
+# ("Cahier digital 2026 – français niveau 1", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: les-professions
+title: Les professions
+goal: Parler des professions avec les actions au présent et les nombres.
+position: 3
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Les actions au présent" and "Les nombres") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Activity 3 (budget) example: the three months add up to 350 € + 260 € + 280 € =
+    890 €, not 840 € as written in the notebook. The total is corrected to 890 €.
+  - >-
+    Summary, numbers rule 3: "Être doué en calcul" was removed; the rule now explains
+    how 70, 80 and 90 are built (soixante-dix = 60 + 10, quatre-vingts = 4 × 20,
+    quatre-vingt-dix = 4 × 20 + 10). A small table of the tens was added. "A apprendre
+    par coeur" → "À apprendre par cœur". The -ER and -IR conjugations are shown as a
+    table.
+  - >-
+    Skill mapping in the notebook: actions au présent = Activity 1 OR 3, nombres =
+    Activity 2 OR 4. But Activity 3 (budget) is labelled "nombres" and Activity 4
+    (interview) "présent et nombres". The activity tags follow the activity titles
+    (présent: 1 and 4; nombres: 2, 3 and 4); the teacher note keeps the notebook's
+    wording. Please check whether "Activity 1 or 4" / "Activity 2 or 3" was meant.
+  - >-
+    Activity 2: "Enumérer" → "Énumérer". Activity 2 has a stray space in its title
+    ("Activité 2 :ouvrir"), fixed.
+  - >-
+    The Quizlet link had tracking parameters (?i=…&x=…); they were removed.
+  - >-
+    Vocabulary: "servir – לשרת" → "להגיש / לשרת" (a waiter serves food);
+    "entreprise – עסק" → "חברה / עסק". Please confirm.
+  - >-
+    The notebook gives no times, so no minutes are set. Warm-up question 6 had no
+    answer lines in the notebook; it gets an answer box like the others.
+  - >-
+    The "Réponse de l'élève 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: les-professions-classe
+    title: 'Classe : Les professions'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Les professions
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Les actions au présent
+            description: 'Les verbes en *-er* et en *-ir* au présent ; *vouloir, pouvoir, devoir* + infinitif'
+          - name: Les nombres
+            description: De 1 à 100, et 1000
+      - id: quizlet
+        type: externalLink
+        label: Les professions sur Quizlet
+        url: https://quizlet.com/il/1072640602/basic-french-2025-les-professions-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Je suis ___ (profession).
+        example: Je m’appelle Lévanah. Je suis professeure de français.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Que fais-tu au travail ? (3 actions différentes)
+            frame: Au travail, je ___, ___ et ___.
+          - question: Où travailles-tu ?
+            frame: Je travaille dans / à ___.
+          - question: Qu’est-ce que tu aimes dans ton travail ?
+            frame: J’aime ___.
+          - question: Qu’est-ce que tu n’aimes pas dans ton travail ?
+            frame: Je n’aime pas ___.
+          - question: Combien d’heures travailles-tu par semaine ?
+            frame: Je travaille ___ heures par semaine.
+          - question: Que fais-tu après le travail ?
+            frame: Après le travail, je ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : 21 questions'
+        skills: [Les actions au présent]
+        steps:
+          - Un élève choisit secrètement un métier.
+          - Le reste du groupe pose **des questions fermées (oui / non)** pour deviner le métier, avec un maximum de **21 questions**.
+        example: |-
+          **Métier secret :** pilote (seul l’élève le sait)
+          Élève A : *Tu travailles avec un ordinateur ?* — Non.
+          Élève B : *Tu travailles avec des gens ?* — Oui.
+          Élève C : *Tu conduis une voiture ?* — Non.
+          Élève D : *Tu portes un uniforme ?* — Oui.
+          Élève E : *Tu voyages dans d’autres pays ?* — Oui.
+          *Es-tu pilote ?* — Oui !
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Ouvrir une entreprise'
+        skills: [Les nombres]
+        steps:
+          - Imagine que tu ouvres une entreprise. Donne un nom à ton entreprise.
+          - Choisis ce que tu vends ou le service que tu proposes.
+          - Énumère **3 professions** nécessaires dans ton entreprise et le **nombre d’employés**.
+          - Présente ton entreprise à la classe.
+        example: |-
+          *Mon entreprise est une école de musique. J’ai besoin de **3 professeurs de musique**, d’**une secrétaire** et d’**une personne pour le ménage**.*
+          *Dans mon entreprise, trois professeurs enseignent la musique, une secrétaire aide les étudiants et une personne fait le ménage le soir.*
+      - id: act2-plan
+        type: discussionQuestions
+        title: Mon entreprise
+        items:
+          - question: 'Le nom de mon entreprise : ___'
+          - question: Mon entreprise vend / propose ___.
+          - question: J’ai besoin de ___ (nombre) ___ (profession), de ___ et de ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Mon budget'
+        skills: [Les nombres]
+        steps:
+          - Ton professeur te donne **un budget de 900 €** pour démarrer une entreprise.
+          - Décide **combien tu dépenses chaque mois** pendant 3 mois, et pour quoi.
+          - Présente ton budget.
+        example: |-
+          Au **mois 1** (le premier mois), je dépense 200 € pour le loyer, 100 € pour le matériel et 50 € pour la publicité.
+          Au **mois 2** (le deuxième mois), je dépense 150 € pour le loyer, 80 € pour le matériel et 30 € pour la publicité.
+          Au **mois 3** (le troisième mois), je dépense 180 € pour le loyer, 60 € pour le matériel et 40 € pour la publicité.
+          **Total sur 3 mois : 890 €.**
+      - id: act3-budget
+        type: discussionQuestions
+        title: Mon budget
+        items:
+          - question: Au mois 1, je dépense ___ € pour ___, ___ € pour ___ et ___ € pour ___.
+          - question: Au mois 2, je dépense ___ € pour ___, ___ € pour ___ et ___ € pour ___.
+          - question: Au mois 3, je dépense ___ € pour ___, ___ € pour ___ et ___ € pour ___.
+          - question: 'Total sur 3 mois : ___ €.'
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Entretien d’embauche'
+        skills: [Les actions au présent, Les nombres]
+        steps:
+          - Travaillez en binômes. L’élève A est l’intervieweur (le chef d’entreprise) ; l’élève B est le candidat.
+          - Le professeur donne une **carte métier** à l’élève B (voir le tableau).
+          - L’élève A pose des questions de la liste ci-dessous ; l’élève B répond.
+          - Changez de rôle et de carte métier.
+      - id: act4-cards
+        type: table
+        caption: Cartes métier
+        header: [Lieu de travail, Métier]
+        rows:
+          - [École, Professeur]
+          - [Hôpital, Médecin]
+          - [Restaurant, Serveur]
+          - [Chantier, Ingénieur]
+          - [Boulangerie, Boulanger]
+      - id: act4-numbers
+        type: discussionQuestions
+        title: Questions avec les nombres
+        items:
+          - question: Combien de personnes travaillent avec toi ?
+          - question: Combien d’heures travailles-tu par semaine ?
+          - question: Combien de jours par semaine travailles-tu ?
+          - question: Combien de clients sers-tu chaque jour ?
+          - question: Combien de pauses as-tu ?
+          - question: À quelle heure commences-tu à travailler ?
+      - id: act4-present
+        type: discussionQuestions
+        title: Questions avec des actions au présent
+        items:
+          - question: Que fais-tu dans ton travail ?
+          - question: Quelles sont tes principales responsabilités ?
+          - question: Pourquoi veux-tu ce travail ?
+          - question: Qu’est-ce que tu aimes dans ce métier ?
+          - question: Sais-tu bien travailler en équipe ?
+          - question: Arrives-tu à l’heure ?
+          - question: Prends-tu des pauses pendant la journée ?
+          - question: Parles-tu avec les clients ?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **Les actions au présent** (activité 1 ou 3)
+          et **Les nombres** (activité 2 ou 4), selon le cahier. Attention : l’activité 3
+          (budget) travaille surtout les nombres, et l’activité 4 travaille les deux
+          compétences.
+      - id: n-intro
+        anchor: intro
+        text: >-
+          Donne d’abord ton propre exemple, puis interroge chaque élève. Rappel : pas
+          d’article devant une profession après *être* (Je suis professeure).
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: Seul l’élève qui choisit le métier le connaît. Les autres posent uniquement des questions fermées (oui / non), 21 au maximum.
+      - id: n-act3
+        anchor: act3
+        text: Donne aux élèves le budget de 900 €. Vérifiez ensemble que le total ne dépasse pas le budget.
+      - id: n-act4
+        anchor: act4
+        text: Prépare les cartes métier avant le cours. Après le premier entretien, les élèves changent de rôle et de carte.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: les-professions-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-present
+        type: ruleSummary
+        skill: Les actions au présent
+        rules:
+          - text: 'On utilise le présent pour parler :'
+            examples:
+              - d’actions qui se passent maintenant
+              - d’habitudes
+              - de faits ou de vérités générales
+              - 'parfois de projets futurs (futur proche : *aller* au présent + verbe à l’infinitif)'
+          - text: 'Exemple :'
+            examples: [Je travaille dans un hôpital.]
+          - text: >-
+              Les verbes se divisent en trois groupes : **1er groupe : -ER** (*travailler*),
+              **2e groupe : -IR type finir** (*finir*) et **3e groupe : verbes irréguliers**
+              (*prendre, venir, être, avoir*), à apprendre par cœur. Attention : tous les
+              verbes en -IR ne sont pas du 2e groupe.
+          - text: Avec **vouloir**, **pouvoir** ou **devoir**, le verbe suivant reste **à l’infinitif**.
+            examples:
+              [Je veux cuisiner., Je peux aider mes collègues., Je dois préparer un rapport.]
+      - id: present-table
+        type: table
+        caption: Le présent des verbes en -ER et en -IR
+        header: [Personne, Travailler (1er groupe), Finir (2e groupe)]
+        rows:
+          - [je, je travaill**e**, je fin**is**]
+          - [tu, tu travaill**es**, tu fin**is**]
+          - [il / elle, il / elle travaill**e**, il / elle fin**it**]
+          - [nous, nous travaill**ons**, nous fin**issons**]
+          - [vous, vous travaill**ez**, vous fin**issez**]
+          - [ils / elles, ils / elles travaill**ent**, ils / elles fin**issent**]
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Les nombres
+        rules:
+          - text: Apprends les nombres de 1 à 20 correctement et par cœur.
+          - text: 'Apprends les dizaines : 30, 40, 50, 60.'
+            examples: [trente, quarante, cinquante, soixante]
+          - text: >-
+              Apprends les combinaisons 70, 80, 90 : *soixante-dix* (60 + 10),
+              *quatre-vingts* (4 × 20), *quatre-vingt-dix* (4 × 20 + 10). Puis 100 (*cent*)
+              et 1000 (*mille*).
+      - id: numbers-table
+        type: table
+        caption: Les dizaines
+        header: [Nombre, En lettres]
+        rows:
+          - ['20', vingt]
+          - ['30', trente]
+          - ['40', quarante]
+          - ['50', cinquante]
+          - ['60', soixante]
+          - ['70', soixante-dix]
+          - ['80', quatre-vingts]
+          - ['90', quatre-vingt-dix]
+          - ['100', cent]
+          - ['1000', mille]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: les-professions-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie ce message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-professions
+        type: aiTutorPrompt
+        title: Parler des professions
+        message: >-
+          Bonjour Mori. Je veux parler des professions. Peux-tu me poser des questions en
+          utilisant les compétences « actions au présent » et « nombres » ? Utilise
+          uniquement le présent et corrige mes erreurs, s’il te plaît.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **Pose-moi encore des questions, s’il te plaît !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-devine
+        type: aiTutorPrompt
+        title: Devine la profession
+        intro: >-
+          Pense à un métier et envoie ce message à Mori. Ensuite, donne des indices, par
+          exemple : Je travaille avec des animaux. J’utilise un stéthoscope. J’aide les
+          chiens et les chats. Qui suis-je ? (→ Vétérinaire.)
+        message: >-
+          Bonjour Mori. Je veux jouer à un jeu. Je pense à une profession et tu dois
+          deviner laquelle.
+      - id: mori-entretien
+        type: aiTutorPrompt
+        title: Entretien d’embauche
+        intro: Envoie ce message à Mori. Ensuite, pose-lui 3 ou 4 questions de la liste vue en classe.
+        message: >-
+          Bonjour Mori. Je veux jouer à un jeu. Aujourd’hui, je suis le chef d’entreprise
+          et tu cherches un travail dans mon entreprise. Quel travail cherches-tu ?
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: les-professions-pratique
+    book: workbook
+    title: 'Pratique : Les professions'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-present
+        type: activity
+        activity: les-professions-present
+      - id: ex-nombres
+        type: activity
+        activity: les-professions-nombres
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: les-professions-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots des professions
+        glossLang: he
+        link: https://quizlet.com/il/1072640602/basic-french-2025-les-professions-flash-cards/
+        items: &les-professions-words
+          - { term: enseigner, gloss: ללמד }
+          - { term: écrire, gloss: לכתוב }
+          - { term: réparer / corriger, gloss: לתקן }
+          - { term: dessiner / peindre, gloss: לצייר }
+          - { term: vendre, gloss: למכור }
+          - { term: cuisiner, gloss: לבשל }
+          - { term: aider, gloss: לעזור }
+          - { term: servir, gloss: להגיש / לשרת }
+          - { term: professeur, gloss: מורה }
+          - { term: médecin, gloss: רופא / רופאה }
+          - { term: ingénieur, gloss: מהנדס / מהנדסת }
+          - { term: policier / policière, gloss: שוטר / שוטרת }
+          - { term: peintre, gloss: צייר / ציירת }
+          - { term: caissier / caissière, gloss: קופאי / קופאית }
+          - { term: journaliste, gloss: עיתונאי / עיתונאית }
+          - { term: serveur / serveuse, gloss: מלצר / מלצרית }
+          - { term: lieu de travail, gloss: מקום עבודה }
+          - { term: entreprise, gloss: חברה / עסק }
+          - { term: boulangerie, gloss: מאפייה }
+          - { term: hôpital, gloss: בית חולים }
+          - { term: école, gloss: בית ספר }
+          - { term: restaurant, gloss: מסעדה }
+          - { term: chantier, gloss: אתר בנייה }
+          - { term: salaire, gloss: משכורת }
+          - { term: budget, gloss: תקציב }
+          - { term: dépenses, gloss: הוצאות }
+          - { term: loyer, gloss: שכר דירה }
+          - { term: économies, gloss: חסכונות }
+          - { term: employés, gloss: עובדים }
+          - { term: heures, gloss: שעות }
+
+vocabulary:
+  - slug: les-professions
+    title: Les professions
+    items: *les-professions-words
+
+activities:
+  - slug: les-professions-present
+    title: Les actions au présent
+    minutes: 8
+    items:
+      - id: nous-travaillons
+        type: multipleChoice
+        prompt: Nous ___ dans un hôpital.
+        options:
+          - { text: travaillons, correct: true }
+          - {
+              text: travaillez,
+              feedback: '*-ez* va avec *vous*. Avec *nous*, la terminaison est *-ons*.',
+            }
+          - {
+              text: travaille,
+              feedback: '*-e* va avec *je* ou *il / elle*. Avec *nous* : *travaillons*.',
+            }
+      - id: ils-finissent
+        type: multipleChoice
+        prompt: Ils ___ le travail à 17 heures.
+        options:
+          - { text: finissent, correct: true }
+          - {
+              text: finit,
+              feedback: '*Finit* va avec *il / elle*. Avec *ils*, on dit *finissent*.',
+            }
+          - {
+              text: finissons,
+              feedback: '*Finissons* va avec *nous*. Avec *ils*, on dit *finissent*.',
+            }
+      - id: travaille-travailles
+        type: fillBlank
+        prompt: Conjugue le verbe *travailler* au présent.
+        text: Je ___ dans une école. Tu ___ avec des enfants.
+        blanks: [[travaille], [travailles]]
+      - id: terminaisons-er
+        type: matching
+        prompt: Associe chaque personne à la forme du verbe *travailler*.
+        pairs:
+          - [je, travaille]
+          - [tu, travailles]
+          - [nous, travaillons]
+          - [vous, travaillez]
+          - [ils / elles, travaillent]
+      - id: veux-cuisiner
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Je veux cuisiner., correct: true }
+          - {
+              text: Je veux cuisine.,
+              feedback: 'Après *vouloir*, le verbe reste à l’infinitif : *cuisiner*.',
+            }
+          - {
+              text: Je veux je cuisine.,
+              feedback: 'Après *vouloir*, on met directement l’infinitif : Je veux *cuisiner*.',
+            }
+      - id: pouvoir-infinitif
+        type: trueFalse
+        prompt: 'Après *pouvoir*, le verbe reste à l’infinitif : Je peux aider mes collègues.'
+        answer: true
+        feedback:
+          correct: Oui ! *Vouloir, pouvoir, devoir* + infinitif.
+          incorrect: 'Avec *vouloir, pouvoir, devoir*, le verbe suivant reste à l’infinitif : Je peux *aider*.'
+      - id: finit-finissons
+        type: fillBlank
+        prompt: Conjugue le verbe *finir* au présent.
+        text: Elle ___ son rapport. Nous ___ à midi.
+        blanks: [[finit], [finissons]]
+      - id: ordre-rapport
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Je dois préparer un rapport.
+
+  - slug: les-professions-nombres
+    title: Les nombres
+    minutes: 8
+    items:
+      - id: dizaines
+        type: matching
+        prompt: Associe les nombres.
+        pairs:
+          - ['30', trente]
+          - ['40', quarante]
+          - ['50', cinquante]
+          - ['60', soixante]
+          - ['100', cent]
+      - id: soixante-dix
+        type: multipleChoice
+        prompt: Comment dit-on 70 ?
+        options:
+          - { text: soixante-dix, correct: true }
+          - { text: sept-dix, feedback: '70 = 60 + 10 : on dit *soixante-dix*.' }
+          - { text: dix-sept, feedback: '*Dix-sept*, c’est 17. 70 = 60 + 10 : *soixante-dix*.' }
+      - id: quatre-vingts
+        type: multipleChoice
+        prompt: Comment dit-on 80 ?
+        options:
+          - { text: quatre-vingts, correct: true }
+          - { text: huit-dix, feedback: '80 = 4 × 20 : on dit *quatre-vingts*.' }
+          - { text: quatre-vingt-dix, feedback: '*Quatre-vingt-dix*, c’est 90 (4 × 20 + 10).' }
+      - id: quarante-heures
+        type: fillBlank
+        prompt: Écris le nombre en lettres.
+        text: 'Je travaille 40 heures par semaine : ___ heures.'
+        blanks: [[quarante]]
+      - id: vingt-employes
+        type: fillBlank
+        prompt: Écris le nombre en lettres.
+        text: Dans mon entreprise, il y a ___ (20) employés.
+        blanks: [[vingt]]
+      - id: quatre-vingt-dix
+        type: trueFalse
+        prompt: 90 se dit « quatre-vingt-dix ».
+        answer: true
+        feedback:
+          correct: Oui ! 90 = 4 × 20 + 10.
+          incorrect: 90 = 4 × 20 + 10 = *quatre-vingt-dix*.
+      - id: addition
+        type: multipleChoice
+        prompt: 30 € + 20 € = ?
+        options:
+          - { text: cinquante euros, correct: true }
+          - { text: quarante euros, feedback: '*Quarante*, c’est 40. 30 + 20 = 50 : *cinquante*.' }
+          - { text: soixante euros, feedback: '*Soixante*, c’est 60. 30 + 20 = 50 : *cinquante*.' }
+      - id: ordre-heures
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Je travaille quarante heures par semaine.

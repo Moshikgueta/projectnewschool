@@ -1,0 +1,559 @@
+# Cycle "Rencontrons-nous", converted from the French digital notebook
+# ("Cahier digital 2026 – français niveau 1", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: rencontrons-nous
+title: Rencontrons-nous
+goal: Organiser une rencontre avec les jours, les dates, les nombres et les prépositions de base.
+position: 4
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Les jours, les dates et les nombres" and "Les
+    prépositions de base") are NEW: the notebook has no self-study exercises. They were
+    written from the cycle's two skills, its summary rules and its vocabulary. Please
+    check level, wording and every right answer before students see them.
+  - >-
+    Summary: a rule "à + le = au" (au café, au parc) was ADDED to the prepositions,
+    because the activities use "au café / au parc" and one exercise item checks it.
+    Please confirm or remove (then also remove the item "au-parc").
+  - >-
+    Activity 1: "Non, mais je peux te rencontrer … au café ?" is a statement, so the
+    question mark was removed (also in the frame). "Chaque étudiant dit quand et où il
+    rencontrera…" (future) → "rencontre" (the course uses the present).
+  - >-
+    Activity 2, step 3: the situation said the friends meet "demain" but the dialogue
+    is about "lundi"; it now says "lundi" and the dialogue ends "À lundi !". The
+    third-person example said "L'élève A ne peut pas rencontrer l'élève B lundi matin
+    parce qu'il travaille", but in the dialogue it is B who works; it is corrected to
+    "L'élève B ne peut pas… parce qu'il travaille" and "Les élèves A et B se
+    retrouvent au parc lundi à trois heures."
+  - >-
+    Activity 3: title typo "( (" fixed; example "je vais me promener" → "je me
+    promène" (present, a weekly habit). Activity 4: "l'Histoire" → "l'histoire".
+  - >-
+    Mori: "le présent simple" (an English calque) → "le présent". Extra activity 1:
+    "comment s'est passée ma semaine" (past tense) → "te raconter ma semaine"; the
+    line "Réponds avec des phrases complètes…" is an instruction to the student and is
+    shown as the intro, not inside the message.
+  - >-
+    The Quizlet link had tracking parameters (?i=…&x=…); they were removed.
+  - >-
+    Vocabulary: "après-midi – צהריים" → "אחר הצהריים" (צהריים is "midi").
+    "se réveiller – להתעורר" was ADDED, because the introduction round and
+    activities use it. Please confirm.
+  - >-
+    The notebook gives no times, so no minutes are set. Skill mapping is from the
+    notebook (jours et nombres: activities 1 and 3; prépositions: activities 2 and 3);
+    Activity 4 reviews both.
+  - >-
+    The "Réponse de l'élève 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: rencontrons-nous-classe
+    title: 'Classe : Rencontrons-nous'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Rencontrons-nous
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Les jours, les dates et les nombres
+            description: '*le lundi*, *le premier mai*, *en mars*, les nombres de 1 à 31'
+          - name: Les prépositions de base
+            description: '*à, en, de, avec* : Je vais **à** l’école. Nous voyageons **en** train.'
+      - id: quizlet
+        type: externalLink
+        label: Rencontrons-nous sur Quizlet
+        url: https://quizlet.com/il/1073001466/basic-french-2025-rencontrons-nous-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Pendant la semaine, je me réveille tôt / tard et le samedi, je me réveille tôt / tard.
+        example: Je m’appelle Lévanah. Pendant la semaine, je me réveille tôt et le samedi, je me réveille tard.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quel est ton jour préféré de la semaine ? Pourquoi ?
+            frame: Mon jour préféré de la semaine est le ___, parce que ___.
+          - question: Quel jour de la semaine tu n’aimes pas ? Pourquoi ?
+            frame: Je n’aime pas le ___, parce que ___.
+          - question: Combien de jours par semaine étudies-tu le français ? Quels jours ?
+            frame: J’étudie le français ___ fois par semaine. J’étudie le ___, le ___ et le ___.
+          - question: Quand est ton anniversaire ?
+            frame: Mon anniversaire est le ___.
+          - question: Quel est ton mois préféré de l’année ? Pourquoi ?
+            frame: Mon mois préféré de l’année est ___, parce que ___.
+          - question: Où rencontres-tu tes amis ?
+            frame: Je rencontre mes amis à ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Organiser une rencontre'
+        skills: ['Les jours, les dates et les nombres']
+        steps:
+          - Tu as **2 minutes** pour fixer une rencontre avec un / une camarade. Utilise le modèle ci-dessous.
+          - Quand le temps est fini, change de partenaire et recommence.
+          - À la fin, dis **quand et où** tu rencontres chaque camarade.
+        example: |-
+          **A :** Bonjour ! Peux-tu me rencontrer ce vendredi à 15 h à la bibliothèque ?
+          **B :** Non, mais je peux te rencontrer ce samedi à 16 h au café.
+          **A :** Oui ! On se voit samedi à 16 h au café.
+          **B :** Super ! À samedi !
+      - id: act1-frames
+        type: discussionQuestions
+        title: Modèle de conversation
+        items:
+          - question: 'Étudiant 1 : invite ton / ta camarade.'
+            frame: Bonjour ! Peux-tu me rencontrer ce ___ / ___ prochain (jour de la semaine) à ___ (heure) à ___ (lieu) ?
+          - question: 'Étudiant 2 : réponds.'
+            frame: Oui ! / Non, mais je peux te rencontrer ___ (autre jour) à ___ (autre heure) à ___ (lieu).
+          - question: 'Étudiant 1 : accepte.'
+            frame: D’accord ! À bientôt.
+          - question: Quand et où tu rencontres ton / ta camarade ?
+            frame: Je rencontre ___ le ___ à ___ à ___.
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Organiser une rencontre selon ma journée'
+        skills: [Les prépositions de base]
+        steps:
+          - Écoute ton professeur présenter la banque de mots.
+          - 'En binômes : présente ta journée avec le modèle (le matin, à midi, le soir). Ton / Ta camarade écoute et pose au moins une question.'
+          - Jouez le dialogue modèle en binômes pour fixer un rendez-vous, puis changez de partenaire.
+          - En groupe, racontez ce qui a été dit, à la **3e personne du singulier** (il / elle).
+        wordBank:
+          - se réveiller
+          - travailler
+          - étudier
+          - manger
+          - conduire
+          - lire ses e-mails
+          - sortir avec des amis
+          - s’amuser
+          - faire du sport
+          - pendant
+          - sur
+          - à
+          - à midi
+        example: |-
+          *Le matin, je me réveille tôt et je lis mes e-mails.*
+          *À midi, je déjeune avec mes amis.*
+          *Le soir, je fais du sport et je regarde une série.*
+      - id: act2-day
+        type: discussionQuestions
+        title: Ma journée
+        items:
+          - question: Le matin, je ___.
+          - question: À midi, je ___.
+          - question: Le soir, je ___.
+          - question: Pose une question à ton / ta camarade.
+            frame: Tu te réveilles à quelle heure ? / Où est-ce que tu manges à midi ? / Tu fais du sport dans une salle ou dehors ?
+      - id: act2-situation
+        type: text
+        text: '**Dialogue modèle.** Deux amis veulent se voir lundi. Ils disent quand ils sont libres et se mettent d’accord.'
+      - id: act2-dialogue
+        type: dialogue
+        lines:
+          - { speaker: Élève A, text: Salut ! Tu es libre lundi matin ? }
+          - { speaker: Élève B, text: Non, lundi matin je travaille. Et toi, à midi ? }
+          - {
+              speaker: Élève A,
+              text: 'À midi, je déjeune avec ma famille. Mais l’après-midi, je suis libre.',
+            }
+          - { speaker: Élève B, text: Super, on se retrouve au parc à trois heures ! }
+          - { speaker: Élève A, text: 'D’accord, à lundi !' }
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Ma semaine idéale'
+        skills: ['Les jours, les dates et les nombres', Les prépositions de base]
+        steps:
+          - Imagine **ta semaine idéale**, ou décris **ta semaine réelle**.
+          - Écris **3 actions par jour**. Utilise la banque de verbes.
+          - Présente ta semaine au groupe.
+        wordBank:
+          - se réveiller
+          - aller
+          - étudier
+          - manger
+          - jouer
+          - regarder
+          - rencontrer
+          - écouter
+          - lire
+          - cuisiner
+          - travailler
+          - dormir
+          - nettoyer
+          - faire des courses
+        example: |-
+          *Le dimanche, je me réveille tard, je regarde un film et je déjeune avec ma famille.*
+          *Le lundi, je vais à l’école, j’étudie le français et le soir, je fais du sport.*
+          *Le mardi, je lis un livre, je rencontre mes amis et je prépare le dîner.*
+          *Le mercredi, j’écoute de la musique, je fais mes devoirs et je me couche tôt.*
+          *Le jeudi, je range ma chambre, je fais des courses et je déjeune au restaurant.*
+          *Le vendredi, je joue au football, je regarde la télévision et je sors avec mes amis.*
+          *Le samedi, je me repose, je rends visite à mes grands-parents et je me promène.*
+      - id: act3-week
+        type: discussionQuestions
+        title: Ma semaine idéale
+        items:
+          - question: Le dimanche, je ___, je ___ et je ___.
+          - question: Le lundi, je ___, je ___ et je ___.
+          - question: Le mardi, je ___, je ___ et je ___.
+          - question: Le mercredi, je ___, je ___ et je ___.
+          - question: Le jeudi, je ___, je ___ et je ___.
+          - question: Le vendredi, je ___, je ___ et je ___.
+          - question: Le samedi, je ___, je ___ et je ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Qui vois-tu chaque semaine ?'
+        skills: ['Les jours, les dates et les nombres', Les prépositions de base]
+        steps:
+          - Ton professeur dit un jour de la semaine.
+          - Dis qui tu rencontres ce jour-là et pourquoi.
+        example: |-
+          **Professeur :** Lundi !
+          **Étudiant 1 :** Je rencontre mon amie Anna, parce que nous faisons du yoga ensemble le lundi.
+          **Étudiant 2 :** Je rencontre mes parents, parce que nous dînons ensemble le lundi.
+          **Professeur :** Mardi !
+          **Étudiant 1 :** Je rencontre mes étudiants, parce que j’enseigne l’histoire le mardi.
+          **Étudiant 2 :** Je rencontre mon ami, parce que nous déjeunons ensemble le mardi.
+      - id: act4-frame
+        type: discussionQuestions
+        items:
+          - question: Qui rencontres-tu et pourquoi ?
+            frame: Je rencontre ___, parce que ___ le ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **Les jours, les dates et les nombres**
+          (activités 1 et 3) et **Les prépositions de base** (activités 2 et 3).
+          L’activité 4 révise les deux compétences.
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Carrousel : chaque binôme a 2 minutes pour fixer la rencontre, puis les élèves
+          changent de partenaire. À la fin, chaque élève dit quand et où il rencontre
+          l’autre.
+      - id: n-act2
+        anchor: act2
+        text: |-
+          Objectifs : utiliser le vocabulaire du quotidien et les prépositions de base, décrire sa journée à l’oral, poser des questions pour organiser une rencontre, pratiquer la compréhension et l’interaction entre pairs.
+          Écris le dialogue modèle au tableau et joue-le avec un élève. Pour le retour collectif (3e personne), par exemple : « L’élève B ne peut pas rencontrer l’élève A lundi matin parce qu’il travaille. Les élèves A et B se retrouvent au parc lundi à trois heures. »
+      - id: n-act3
+        anchor: act3
+        text: Les élèves peuvent imaginer leur semaine idéale ou décrire leur semaine réelle. Chaque jour a 3 actions.
+      - id: n-act4
+        anchor: act4
+        text: Dis les jours de la semaine un par un. Chaque élève complète la phrase au moins une fois.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: rencontrons-nous-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-days
+        type: ruleSummary
+        skill: Les jours, les dates et les nombres
+        rules:
+          - text: Pour dire la date, il faut connaître les nombres **de 1 à 31**.
+          - text: On met **le** avant le nombre quand on dit la date.
+            examples:
+              ['Aujourd’hui, c’est **le** 5 septembre.', Mon anniversaire est **le** 21 mars.]
+          - text: 'Attention : pour le premier jour du mois, on dit **le premier** et pas « le un ».'
+            examples: [C’est **le premier** mai.]
+          - text: 'Attention : **le** devant un jour de la semaine veut dire « tous les… ».'
+            examples: ['Le lundi, je fais du yoga. (= tous les lundis)']
+          - text: On met **en** devant le nom du mois ou l’année.
+            examples: [Je suis né(e) **en** mars., Je suis né(e) **en** 2010.]
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: Les prépositions de base
+        rules:
+          - text: Choisis la préposition dans le tableau.
+          - text: '**à** + **le** = **au**.'
+            examples: [On se retrouve **au** parc., Je déjeune **au** restaurant.]
+      - id: prepositions-table
+        type: table
+        caption: Les prépositions de base
+        header: [Préposition, Utilisation, Exemple]
+        rows:
+          - [à, 'Direction, destination, heure', Je vais **à** l’école. / Le cours est **à** 9 h.]
+          - [en, 'Lieu, moyen de transport', Je suis **en** France. / Nous voyageons **en** train.]
+          - [de, 'Origine, possession', Je suis **de** Paris. / C’est le livre **de** Marie.]
+          - [
+              avec,
+              'Compagnie, outil',
+              Je pars **avec** mon amie. / Je coupe la viande **avec** un couteau.,
+            ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: rencontrons-nous-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie ce message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-rencontre
+        type: aiTutorPrompt
+        title: Organiser une rencontre
+        message: >-
+          Bonjour Mori ! Je veux organiser une rencontre. Peux-tu me poser des questions
+          sur les dates, les jours de la semaine et les prépositions de temps et de lieu ?
+          Utilise seulement le présent et corrige mes erreurs, s’il te plaît.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **Pose-moi encore des questions, s’il te plaît !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais en gardant la phrase en français ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Activités interactives
+      - id: mori-semaine
+        type: aiTutorPrompt
+        title: Ma semaine
+        intro: Envoie ce message à Mori. Réponds avec des phrases complètes, au présent, avec les jours et les prépositions de temps et de lieu.
+        message: >-
+          Bonjour Mori ! Je veux te raconter ma semaine. Peux-tu me poser des questions
+          sur ma routine quotidienne ?
+      - id: mori-horaires
+        type: aiTutorPrompt
+        title: Horaires d’ouverture et de fermeture
+        message: >-
+          Bonjour Mori ! Pose-moi des questions sur les horaires d’ouverture et de
+          fermeture de différents lieux de la ville : la banque, le supermarché, le café,
+          la salle de sport et le centre commercial.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: rencontrons-nous-pratique
+    book: workbook
+    title: 'Pratique : Rencontrons-nous'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-jours
+        type: activity
+        activity: rencontrons-nous-jours
+      - id: ex-prepositions
+        type: activity
+        activity: rencontrons-nous-prepositions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: rencontrons-nous-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la rencontre
+        glossLang: he
+        link: https://quizlet.com/il/1073001466/basic-french-2025-rencontrons-nous-flash-cards/
+        items: &rencontrons-nous-words
+          - { term: se réveiller, gloss: להתעורר }
+          - { term: se lever, gloss: לקום }
+          - { term: aller, gloss: ללכת }
+          - { term: étudier / apprendre, gloss: ללמוד }
+          - { term: manger, gloss: לאכול }
+          - { term: jouer, gloss: לשחק }
+          - { term: voir, gloss: לראות }
+          - { term: attendre, gloss: לחכות }
+          - { term: rencontrer, gloss: לפגוש }
+          - { term: s’entraîner, gloss: להתאמן }
+          - { term: écouter, gloss: להקשיב }
+          - { term: lire, gloss: לקרוא }
+          - { term: cuisiner, gloss: לבשל }
+          - { term: travailler, gloss: לעבוד }
+          - { term: dormir, gloss: לישון }
+          - { term: nettoyer, gloss: לנקות }
+          - { term: acheter, gloss: לקנות }
+          - { term: matin, gloss: בוקר }
+          - { term: après-midi, gloss: אחר הצהריים }
+          - { term: minuit, gloss: חצות }
+          - { term: pendant, gloss: במהלך }
+          - { term: date, gloss: תאריך }
+          - { term: jour, gloss: יום }
+          - { term: mois, gloss: חודש }
+          - { term: anniversaire, gloss: יום הולדת }
+          - { term: préféré / favori, gloss: אהוב }
+          - { term: semaine, gloss: שבוע }
+          - { term: voir ses amis, gloss: להיפגש עם חברים }
+
+vocabulary:
+  - slug: rencontrons-nous
+    title: Rencontrons-nous
+    items: *rencontrons-nous-words
+
+activities:
+  - slug: rencontrons-nous-jours
+    title: Les jours, les dates et les nombres
+    minutes: 8
+    items:
+      - id: le-premier
+        type: multipleChoice
+        prompt: Aujourd’hui, c’est ___ mai. (1er)
+        options:
+          - { text: le premier, correct: true }
+          - {
+              text: le un,
+              feedback: 'Pour le premier jour du mois, on dit *le premier*, pas « le un ».',
+            }
+          - { text: en premier, feedback: 'Devant une date, on met *le* : *le premier mai*.' }
+      - id: le-en
+        type: fillBlank
+        prompt: Complète avec *le* ou *en*.
+        text: Mon anniversaire est ___ 21 mars. Je suis né ___ 2010.
+        blanks: [[le], [en]]
+        wordBank: [le, en]
+      - id: le-lundi
+        type: trueFalse
+        prompt: '« Le lundi, je fais du yoga » veut dire : je fais du yoga tous les lundis.'
+        answer: true
+        feedback:
+          correct: Oui ! *Le* devant un jour de la semaine = tous les…
+          incorrect: '*Le* devant un jour de la semaine veut dire « tous les… » : le lundi = tous les lundis.'
+      - id: nombres-31
+        type: matching
+        prompt: Associe les nombres.
+        pairs:
+          - ['13', treize]
+          - ['21', vingt et un]
+          - ['25', vingt-cinq]
+          - ['30', trente]
+          - ['31', trente et un]
+      - id: apres-mardi
+        type: multipleChoice
+        prompt: Quel jour vient après mardi ?
+        options:
+          - { text: mercredi, correct: true }
+          - {
+              text: jeudi,
+              feedback: 'Lundi, mardi, mercredi, jeudi : après mardi, c’est *mercredi*.',
+            }
+          - { text: lundi, feedback: '*Lundi* vient avant mardi. Après mardi, c’est *mercredi*.' }
+      - id: jours-semaine
+        type: fillBlank
+        prompt: Complète les jours de la semaine.
+        text: lundi, mardi, ___, jeudi, vendredi, samedi, ___
+        blanks: [[mercredi], [dimanche]]
+      - id: ordre-premier-mai
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Mon anniversaire est le premier mai.
+      - id: le-samedi
+        type: multipleChoice
+        prompt: Je fais du sport ___ samedi. (= tous les samedis)
+        options:
+          - { text: le, correct: true }
+          - {
+              text: en,
+              feedback: '*En* va devant un mois ou une année. Devant un jour : *le samedi*.',
+            }
+          - { text: à, feedback: 'Pour dire « tous les samedis », on met *le* : *le samedi*.' }
+
+  - slug: rencontrons-nous-prepositions
+    title: 'Les prépositions de base : à, en, de, avec'
+    minutes: 8
+    items:
+      - id: a-ecole
+        type: multipleChoice
+        prompt: Je vais ___ l’école.
+        options:
+          - { text: à, correct: true }
+          - {
+              text: en,
+              feedback: '*En* est pour un pays ou un moyen de transport. Pour une destination : *à l’école*.',
+            }
+          - {
+              text: avec,
+              feedback: '*Avec* est pour la compagnie ou un outil. Pour une destination : *à*.',
+            }
+      - id: en-train
+        type: multipleChoice
+        prompt: Nous voyageons ___ train.
+        options:
+          - { text: en, correct: true }
+          - { text: à, feedback: 'Pour un moyen de transport, on utilise *en* : *en train*.' }
+          - {
+              text: de,
+              feedback: '*De* est pour l’origine ou la possession. Transport : *en train*.',
+            }
+      - id: livre-de
+        type: multipleChoice
+        prompt: C’est le livre ___ Marie.
+        options:
+          - { text: de, correct: true }
+          - { text: en, feedback: 'Pour la possession, on utilise *de* : le livre *de* Marie.' }
+          - { text: avec, feedback: '*Avec* est pour la compagnie ou un outil. Possession : *de*.' }
+      - id: a-avec
+        type: fillBlank
+        prompt: Complète avec la bonne préposition.
+        text: Le cours est ___ 9 h. Je coupe la viande ___ un couteau.
+        blanks: [[à], [avec]]
+        wordBank: [à, en, de, avec]
+      - id: utilisations
+        type: matching
+        prompt: Associe chaque préposition à son utilisation.
+        pairs:
+          - [à, 'direction, destination, heure']
+          - [en, 'lieu, moyen de transport']
+          - [de, 'origine, possession']
+          - [avec, 'compagnie, outil']
+      - id: heure-a
+        type: trueFalse
+        prompt: 'Pour dire l’heure, on utilise *à* : Le cours est à 9 h.'
+        answer: true
+        feedback:
+          correct: Oui ! *À* sert pour la direction, la destination et l’heure.
+          incorrect: '*À* sert aussi pour l’heure : à 9 h, à midi.'
+      - id: au-parc
+        type: fillBlank
+        prompt: Complète avec *à*, *au* ou *en*.
+        text: On se retrouve ___ parc ___ trois heures.
+        blanks: [[au], [à]]
+        wordBank: [à, au, en]
+      - id: ordre-cours
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Le cours de français est à neuf heures.

@@ -1,0 +1,529 @@
+# Cycle "La famille", converted from the French digital notebook
+# ("Cahier digital 2026 – français niveau 1", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: la-famille
+title: La famille
+goal: Parler de sa famille avec les adjectifs possessifs, les dates et les nombres.
+position: 2
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Les adjectifs possessifs" and "Les dates et les
+    nombres") are NEW: the notebook has no self-study exercises. They were written from
+    the cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Summary, dates rule 3: "On utilise la préposition le devant le jour" is reworded
+    ("le" is an article, not a preposition): "On met **le** devant la date et **en**
+    devant le mois ou l'année". The examples now read "Je suis né(e) le 5 mars / en
+    mars 1998". The numbers 1–20 are shown as a table.
+  - >-
+    Activity 2: "mon/ma/mes, son/sa/ses, notre/notre/nos" → "notre/nos". The family
+    tree worksheet is an Adobe Acrobat link (acrobat.adobe.com), which is not on the
+    link allow-list; it is left out. Until it moves into the course's own media, the
+    teacher shares it on screen (see the teacher note).
+  - >-
+    Activity 4: the frame "Ce que préfère chez lui" (missing "je") → "Ce que je préfère
+    chez lui"; "Ce que j'aime le plus chez elle" is written as "Ce que je préfère chez
+    elle" like the other frames.
+  - >-
+    Activity 3: the trip table (Destination / Participants / Programme) is given as
+    answer boxes; the Paris programme is the example.
+  - >-
+    The Quizlet link had tracking parameters (?i=…&x=…); they were removed.
+  - >-
+    Vocabulary: "soeur" → "sœur", "belle-soeur" → "belle-sœur"; "beau-père – חמיו"
+    ("his father-in-law") → "חם"; "voyager – לטייל" → "לטייל / לנסוע". Note that
+    beau-père / belle-mère also mean stepfather / stepmother. Please confirm.
+  - >-
+    The notebook gives no times, so no minutes are set. Skill mapping and recommended
+    combinations are from the notebook (possession: activities 2 and 4; dates and
+    numbers: activities 1 and 3; combinations 2 + 3 or 1 + 4).
+  - >-
+    The "Réponse de l'élève 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: la-famille-classe
+    title: 'Classe : La famille'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: La famille
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Les adjectifs possessifs
+            description: '*mon, ma, mes, ton, ta, tes, son, sa, ses, notre, nos, votre, vos, leur, leurs*'
+          - name: Les dates et les nombres
+            description: Les nombres de 1 à 20 et les dates (le 9 février)
+      - id: quizlet
+        type: externalLink
+        label: La famille sur Quizlet
+        url: https://quizlet.com/il/1072629862/basic-french-2025-la-famille-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Je passe / Je ne passe pas beaucoup de temps avec ma famille.
+        example: Je m’appelle Lévanah. Je passe beaucoup de temps avec ma famille.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Présente les membres de ta famille et dis leur prénom.
+            frame: |-
+              Mon père. Il s’appelle ___.
+              Ma mère. Elle s’appelle ___.
+              Mon frère. Il s’appelle ___.
+              Ma sœur. Elle s’appelle ___.
+              Mes cousins. Ils s’appellent ___.
+          - question: Qu’est-ce que tu aimes faire avec ta famille ?
+            frame: J’aime ___ avec mon / ma ___.
+          - question: Avec qui parles-tu beaucoup dans ta famille ? Pourquoi ?
+            frame: Je parle beaucoup avec mon / ma ___, parce que ___.
+          - question: Quand et où tu vois ta famille ?
+            frame: Je vois ma famille ___ (jour / date) à ___ (lieu).
+          - question: Dis trois choses que tu aimes chez un membre de ta famille.
+            frame: Mon / Ma ___ est ___, ___ et ___.
+          - question: Avec qui tu habites ?
+            frame: J’habite seul(e). / J’habite avec mon / ma ___, ___ et ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Avant et après'
+        skills: [Les dates et les nombres, Les adjectifs possessifs]
+        steps:
+          - Écoute l’exemple de ton professeur.
+          - Dis l’anniversaire de quelqu’un de ta famille. Utilise le bon possessif (*mon, ma, mes, son, sa, ses*…).
+          - L’élève suivant dit si son anniversaire est **avant** ou **après**, et dit la date.
+        example: |-
+          *Ma mère s’appelle Dvora. Son anniversaire est le 9 février.*
+          Élève A : *L’anniversaire de ma sœur est après ! Son anniversaire est le 26 mars.*
+          Élève B : *L’anniversaire de mon frère est avant ! Son anniversaire est le 13 mars.*
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Mon arbre généalogique'
+        skills: [Les adjectifs possessifs]
+        steps:
+          - Ouvre le modèle d’arbre généalogique que partage ton professeur.
+          - Complète l’arbre et les phrases ci-dessous avec *mon / ma / mes, son / sa / ses, notre / nos*…
+          - La moitié du groupe présente son arbre généalogique à la classe.
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Complète les phrases
+        items:
+          - question: C’est moi. Je m’appelle ___. J’ai ___ ans.
+          - question: C’est mon père. Il s’appelle ___. Il a ___ ans.
+          - question: C’est ma mère. Elle s’appelle ___. Elle a ___ ans.
+          - question: Ce sont mes frères et sœurs. Ils s’appellent ___. Ils ont ___ ans.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Planifions un voyage en famille'
+        skills: [Les dates et les nombres]
+        steps:
+          - Complète le programme d’un **voyage en famille** ci-dessous.
+          - Présente rapidement ton programme.
+          - Les élèves qui n’ont pas présenté à l’activité 2 présentent maintenant leur voyage.
+        example: |-
+          **Destination :** Paris
+          **Participants :** moi, ma mère, mon père et mon frère
+          Le **5 juillet**, nous prenons l’avion pour Paris.
+          Le **6 juillet**, nous visitons la tour Eiffel et nous déjeunons dans un café.
+          Le **7 juillet**, nous visitons le Louvre et nous faisons une promenade en bateau.
+          Le **8 juillet**, nous rentrons à la maison.
+      - id: act3-plan
+        type: discussionQuestions
+        title: Voyage en famille
+        items:
+          - question: 'Destination : ___'
+          - question: 'Participants : moi, mon / ma ___, mon / ma ___'
+          - question: Le ___, nous prenons l’avion / le bus pour ___.
+          - question: Le ___, nous ___.
+          - question: Le ___, nous ___.
+          - question: Le ___, nous rentrons à la maison.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Ce que je préfère…'
+        skills: [Les adjectifs possessifs]
+        steps:
+          - Travaillez en paires.
+          - Pose les questions ci-dessous à ton / ta partenaire et réponds à ses questions.
+          - Chaque paire partage **1 ou 2 réponses** avec le groupe.
+        example: '*Tom dit que ce qu’il préfère chez son père, c’est sa cuisine. Son père aime beaucoup les dessins de Tom !*'
+      - id: act4-questions
+        type: discussionQuestions
+        items:
+          - question: Qu’est-ce que tu préfères chez ton père ? Pourquoi ?
+            frame: Ce que je préfère chez lui, c’est son / sa ___.
+          - question: Qu’est-ce que tu préfères chez ta mère ? Pourquoi ?
+            frame: Ce que je préfère chez elle, c’est son / sa ___.
+          - question: Qu’est-ce que tu préfères chez ton frère ou ta sœur ?
+            frame: Ce que je préfère chez lui / elle, c’est son / sa ___.
+          - question: Qu’est-ce que tu préfères chez ton / ta meilleur(e) ami(e) ?
+            frame: Ce que je préfère chez lui / elle, c’est son / sa ___.
+          - question: Qu’est-ce que ton père ou ta mère préfère chez toi ?
+            frame: Ce qu’il / elle préfère chez moi, c’est mon / ma ___.
+          - question: Qu’est-ce que toi, tu préfères chez toi ?
+            frame: Ce que je préfère chez moi, c’est mon / ma ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **Les adjectifs possessifs** (activités 2 et
+          4) et **Les dates et les nombres** (activités 1 et 3). Combinaisons
+          recommandées : activités 2 et 3, ou activités 1 et 4.
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Donne d’abord l’exemple : « Ma mère s’appelle Dvora. Son anniversaire est le 9
+          février. » Chaque élève doit dire **la date correctement** et utiliser le
+          **possessif approprié** (mon, ma, mes, son, sa, ses…).
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Envoie le modèle d’arbre généalogique ou projette-le à l’écran (le lien Adobe
+          Acrobat est dans l’ancien cahier ; il n’est pas encore sur la plateforme). La
+          moitié du groupe présente son arbre ; l’autre moitié présente à l’activité 3.
+      - id: n-act3
+        anchor: act3
+        text: Les élèves qui n’ont pas présenté leur arbre à l’activité 2 présentent leur programme de voyage.
+      - id: n-act4
+        anchor: act4
+        text: Les paires posent les questions et répondent ; ensuite chaque paire partage 1 ou 2 réponses avec le groupe.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: la-famille-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-possessives
+        type: ruleSummary
+        skill: Les adjectifs possessifs
+        rules:
+          - text: En français, le possessif **vient toujours avant le nom**.
+            examples: [Mon père · Ma mère]
+          - text: Le possessif **s’accorde avec le nom qui le suit**, et non avec la personne qui possède.
+            examples:
+              [Mon frère (masculin singulier), Ma sœur (féminin singulier), Mes cousins (pluriel)]
+          - text: On utilise **mon**, **ton**, **son** devant un mot féminin qui commence par une voyelle ou un *h muet*.
+            examples: [mon amie · ton histoire · son habitude]
+      - id: possessives-table
+        type: table
+        caption: Les adjectifs possessifs
+        header: [Singulier masculin, Singulier féminin, Pluriel]
+        rows:
+          - [mon, ma, mes]
+          - [ton, ta, tes]
+          - [son, sa, ses]
+          - [notre, notre, nos]
+          - [votre, votre, vos]
+          - [leur, leur, leurs]
+      - id: rules-dates
+        type: ruleSummary
+        skill: Les dates et les nombres
+        rules:
+          - text: En français, on dit le **jour** puis le **mois**.
+            examples: [Le 4 juillet 2024]
+          - text: Apprends par cœur les nombres de 1 à 20 pour construire les autres (voir le tableau).
+          - text: On met **le** devant la date et **en** devant le mois ou l’année.
+            examples: [Je suis né(e) **le** 5 mars., Je suis né(e) **en** mars 1998.]
+      - id: numbers-table
+        type: table
+        caption: Les nombres de 1 à 20
+        header: [Nombre, En lettres, Nombre, En lettres]
+        rows:
+          - ['1', un, '11', onze]
+          - ['2', deux, '12', douze]
+          - ['3', trois, '13', treize]
+          - ['4', quatre, '14', quatorze]
+          - ['5', cinq, '15', quinze]
+          - ['6', six, '16', seize]
+          - ['7', sept, '17', dix-sept]
+          - ['8', huit, '18', dix-huit]
+          - ['9', neuf, '19', dix-neuf]
+          - ['10', dix, '20', vingt]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: la-famille-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie ce message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-famille
+        type: aiTutorPrompt
+        title: Parler de ma famille
+        message: >-
+          Bonjour Mori ! Je veux parler de ma famille. Peux-tu me poser des questions en
+          utilisant les adjectifs possessifs, les dates et les nombres ? Utilise seulement
+          le présent et corrige mes erreurs, s’il te plaît.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-voyage
+        type: aiTutorPrompt
+        title: Voyage en famille
+        intro: Complète les blancs et envoie le message à Mori.
+        message: |-
+          Bonjour Mori ! Je prépare un voyage en famille et je veux te le raconter :
+          Ma famille et moi allons à ___ le ___ (date).
+          Le ___ (date), nous ___ (activité).
+          Le ___ (date), nous ___ (activité).
+          Le ___ (date), nous ___ (activité).
+          Le ___ (date), nous rentrons à la maison !
+          Pose-moi des questions sur mon voyage, s’il te plaît.
+      - id: mori-routine
+        type: aiTutorPrompt
+        title: La routine familiale
+        intro: Complète les blancs et envoie le message à Mori.
+        message: |-
+          Bonjour Mori ! Voici la routine de ma famille :
+          Le lundi, ma mère ___.
+          Le mardi, mon père ___.
+          Le mercredi, mon frère ___.
+          Le jeudi, moi, je ___.
+          Le vendredi, ma sœur ___.
+          Le samedi, nous ___.
+          Le dimanche, nous ___.
+          Pose-moi des questions sur ma routine familiale, s’il te plaît.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: la-famille-pratique
+    book: workbook
+    title: 'Pratique : La famille'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-possessifs
+        type: activity
+        activity: la-famille-possessifs
+      - id: ex-dates
+        type: activity
+        activity: la-famille-dates
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: la-famille-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la famille
+        glossLang: he
+        link: https://quizlet.com/il/1072629862/basic-french-2025-la-famille-flash-cards/
+        items: &la-famille-words
+          - { term: un, gloss: אחד }
+          - { term: deux, gloss: שתיים }
+          - { term: trois, gloss: שלוש }
+          - { term: quatre, gloss: ארבע }
+          - { term: cinq, gloss: חמש }
+          - { term: six, gloss: שש }
+          - { term: sept, gloss: שבע }
+          - { term: huit, gloss: שמונה }
+          - { term: neuf, gloss: תשע }
+          - { term: dix, gloss: עשר }
+          - { term: famille, gloss: משפחה }
+          - { term: père, gloss: אבא }
+          - { term: mère, gloss: אמא }
+          - { term: frère, gloss: אח }
+          - { term: sœur, gloss: אחות }
+          - { term: cousin, gloss: בן דוד }
+          - { term: préféré / favori, gloss: אהוב }
+          - { term: fête, gloss: חג }
+          - { term: fêter / célébrer, gloss: לחגוג }
+          - { term: date, gloss: תאריך }
+          - { term: mois, gloss: חודש }
+          - { term: manger, gloss: לאכול }
+          - { term: voyager, gloss: לטייל / לנסוע }
+          - { term: avion, gloss: מטוס }
+          - { term: bus, gloss: אוטובוס }
+          - { term: destination, gloss: יעד }
+          - { term: emploi du temps, gloss: לוח זמנים }
+          - { term: visite, gloss: ביקור }
+          - { term: musée, gloss: מוזיאון }
+          - { term: voyage, gloss: נסיעה }
+          - { term: maison, gloss: בית }
+          - { term: personne, gloss: אדם }
+          - { term: je, gloss: אני }
+          - { term: son / sa / ses, gloss: שלו / שלה }
+          - { term: ça, gloss: זה }
+          - { term: beau-frère, gloss: גיס }
+          - { term: beau-père, gloss: חם }
+          - { term: belle-mère, gloss: חמות }
+          - { term: belle-sœur, gloss: גיסה }
+          - { term: neveu, gloss: אחיין }
+          - { term: nièce, gloss: אחיינית }
+
+vocabulary:
+  - slug: la-famille
+    title: La famille
+    items: *la-famille-words
+
+activities:
+  - slug: la-famille-possessifs
+    title: 'Les adjectifs possessifs : mon, ma, mes…'
+    minutes: 8
+    items:
+      - id: mon-frere
+        type: multipleChoice
+        prompt: ___ frère s’appelle Paul.
+        options:
+          - { text: Mon, correct: true }
+          - { text: Ma, feedback: '*Frère* est masculin : on dit *mon*.' }
+          - {
+              text: Mes,
+              feedback: '*Frère* est singulier : on dit *mon*. *Mes* est pour le pluriel.',
+            }
+      - id: ma-soeur
+        type: multipleChoice
+        prompt: C’est ___ sœur.
+        options:
+          - { text: ma, correct: true }
+          - {
+              text: mon,
+              feedback: '*Sœur* est féminin et commence par une consonne : on dit *ma*.',
+            }
+          - { text: mes, feedback: '*Sœur* est singulier : on dit *ma*.' }
+      - id: mon-amie
+        type: multipleChoice
+        prompt: ___ amie habite à Paris.
+        options:
+          - { text: Mon, correct: true }
+          - {
+              text: Ma,
+              feedback: '*Amie* est féminin, mais commence par une voyelle : on dit *mon amie*.',
+            }
+          - { text: Mes, feedback: '*Amie* est singulier : on ne dit pas *mes*.' }
+      - id: accord-nom
+        type: trueFalse
+        prompt: Le possessif s’accorde avec la personne qui possède.
+        answer: false
+        feedback:
+          correct: 'Bravo ! Le possessif s’accorde avec le nom qui suit : Paul et *sa* mère.'
+          incorrect: 'Le possessif s’accorde avec le nom qui le suit, pas avec la personne : Paul et *sa* mère.'
+      - id: sa-mere
+        type: multipleChoice
+        prompt: Paul aime beaucoup ___ mère.
+        options:
+          - { text: sa, correct: true }
+          - {
+              text: son,
+              feedback: 'Le possessif s’accorde avec *mère* (féminin), pas avec Paul : *sa mère*.',
+            }
+          - { text: ses, feedback: '*Mère* est singulier : on dit *sa*.' }
+      - id: complete-possessifs
+        type: fillBlank
+        prompt: Complète avec le possessif de la personne entre parenthèses.
+        text: (je) Ce sont ___ cousins. (nous) ___ maison est grande. (tu) C’est ___ histoire préférée ?
+        blanks: [[mes], [notre], [ton]]
+      - id: singulier-pluriel
+        type: matching
+        prompt: Associe chaque possessif singulier à son pluriel.
+        pairs:
+          - [mon, mes]
+          - [ton, tes]
+          - [son, ses]
+          - [notre, nos]
+          - [leur, leurs]
+      - id: ordre-dvora
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Ma mère s’appelle Dvora.
+
+  - slug: la-famille-dates
+    title: Les dates et les nombres
+    minutes: 8
+    items:
+      - id: ne-le
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Je suis né le 5 mars., correct: true }
+          - {
+              text: Je suis né en 5 mars.,
+              feedback: 'Devant une date, on met *le* : le 5 mars. *En* va devant le mois ou l’année.',
+            }
+          - { text: Je suis né le mars 5., feedback: 'On dit le jour puis le mois : le 5 mars.' }
+      - id: le-en
+        type: fillBlank
+        prompt: Complète avec *le* ou *en*.
+        text: Mon anniversaire est ___ 4 juillet. Je suis né ___ 1998.
+        blanks: [[le], [en]]
+        wordBank: [le, en]
+      - id: nombres
+        type: matching
+        prompt: Associe les nombres.
+        pairs:
+          - ['11', onze]
+          - ['12', douze]
+          - ['15', quinze]
+          - ['17', dix-sept]
+          - ['20', vingt]
+      - id: jour-mois
+        type: trueFalse
+        prompt: 'En français, on dit le mois puis le jour : juillet 4.'
+        answer: false
+        feedback:
+          correct: 'Bravo ! On dit le jour puis le mois : le 4 juillet.'
+          incorrect: 'En français, on dit le jour puis le mois : le 4 juillet.'
+      - id: ordre-avion
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Le 5 juillet, nous prenons l’avion.
+      - id: seize
+        type: fillBlank
+        prompt: Écris le nombre en lettres.
+        text: 'Mon frère a 16 ans : il a ___ ans.'
+        blanks: [[seize]]
+      - id: quatorze-dix-neuf
+        type: fillBlank
+        prompt: Écris les nombres en lettres.
+        text: Ma sœur a ___ (14) ans et mon cousin a ___ (19) ans.
+        blanks: [[quatorze], [dix-neuf]]
+      - id: mon-anniversaire
+        type: shortAnswer
+        prompt: Quand est ton anniversaire ? Écris une phrase.
