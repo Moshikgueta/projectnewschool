@@ -1,0 +1,563 @@
+# Cycle "Chismes", converted from the Spanish level 2 (conversational) digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-2
+slug: chismes
+title: Chismes
+goal: Contar chismes con el pretérito indefinido y comparar con más, menos y tan… como.
+position: 14
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Pretérito indefinido" and "Comparaciones") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Skill names: the notebook says "Pasado simple"; the skill is named "Pretérito
+    indefinido" (as in the Voluntariado cycle) with "pasado simple" in its
+    description.
+  - >-
+    Plan mismatch: the plan names "actividad 2: bingo Chit chat", but Activity 2 in
+    the notebook is "Entrevista de chismes" (no bingo). The plan is written with the
+    activity titles that exist. Activity 5 ("Historias mezcladas") is not in the plan;
+    it is kept as an extra activity for both skills. The plan asks for 6 warm-up
+    questions (3 per skill) but the notebook has 1 general + 6 + 6; all are kept and
+    the teacher chooses.
+  - >-
+    Activity 1: "El profesor muestra la foto": the notebook has no photo. The teacher
+    must bring an image (see the teacher note).
+  - >-
+    Summary, Pretérito indefinido: "Verbos regulares: terminan en -ar, -er, -ir" was
+    rewritten with the actual endings (-é, -aste, -ó… / -í, -iste, -ió…), and
+    "Verbos irregulares: cambian la raíz" as "tienen formas especiales, sin tilde"
+    (fui, tuve, dije), since ser/ir change completely, not only the root.
+  - >-
+    Summary, Comparaciones: the superlative rule "el/la/los/las + más + adjetivo" is
+    completed with the noun and "de" (el chisme más gracioso de todos). A rule was
+    added for "mejor / peor" (no "más bueno / más malo"), which the cycle uses
+    (questions "fue peor que…", vocabulary "mejor, peor"), and for "verbo + más /
+    menos que" (sufren más que…). Please confirm.
+  - >-
+    Corrections: "Informacion" → "Información"; "Pergunta general" (Portuguese) →
+    "Pregunta general"; broken numbering and stray asterisks in the warm-up and
+    activities were fixed; the stray "ð" character (broken emoji) before the
+    celebrity examples was removed.
+  - >-
+    Homework: the five "Escribe para Mori" parts are turned into full Mori messages
+    (with the questions from the notebook inside the message). Part 5 ("Pide al
+    final: Escribe 3 frases…") was reworded so Mori asks the student to write the
+    sentences. Please confirm.
+  - >-
+    Left out: the English footer "Send your homework to the New School bot…" with the
+    WhatsApp phone number (platform-specific, not course material).
+  - >-
+    Vocabulary: "Redes – רשתות" and "Sociales – חברתיות" were joined as "Redes
+    sociales – רשתות חברתיות". "Simple – פשוט" is kept. The Quizlet link is kept as
+    in the source (its slug has the typo "chsimes", which is part of the real URL).
+    The "Respuesta de alumno" lines are replaced by the optional answer boxes
+    (decision C2). The source gives no activity times, so no minutes are recorded.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: chismes-clase
+    title: 'Clase: Chismes'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Chismes
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Pretérito indefinido
+            description: 'El pasado simple, para contar hechos terminados: *escuché, hablé, fue, dijo*'
+          - name: Comparaciones
+            description: '*más… que, menos… que, tan… como, el más…, mejor, peor*'
+      - id: quizlet
+        type: externalLink
+        label: Chismes en Quizlet
+        url: https://quizlet.com/il/865367283/conversational-spanish-chsimes-actualizado-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Me gusta / No me gusta charlar sobre otras personas.
+        example: Soy Dana. No me gusta charlar sobre otras personas.
+      - id: intro-compare
+        type: sentenceFrame
+        prompt: Ahora compárate con tus compañeros.
+        frame: Yo soy más / menos chismoso (chismosa) que ___.
+        example: Yo soy más chismoso que Pedro. Ana es menos chismosa que yo.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de preparación
+      - id: warmup-general
+        type: discussionQuestions
+        title: Pregunta general
+        items:
+          - question: ¿Por qué piensas que a la gente le gusta contar chismes?
+            frame: Porque es más divertido que hablar de cosas serias. / Porque es más fácil que hablar de uno mismo.
+      - id: warmup-pasado
+        type: discussionQuestions
+        title: Pretérito indefinido
+        items:
+          - question: ¿Qué fue lo último que escuchaste de un amigo?
+            frame: Escuché que mi amigo fue a ___.
+          - question: ¿Con quién hablaste ayer y sobre qué?
+            frame: Hablé con ___ sobre ___.
+          - question: ¿Qué chisme escuchaste en la escuela o en el trabajo la semana pasada?
+            frame: Escuché que un compañero ___.
+          - question: ¿De qué hablaste con tu familia el fin de semana pasado?
+            frame: Hablé con mi familia sobre una fiesta / un viaje / la escuela.
+          - question: ¿Qué fue lo último que viste en las redes sociales sobre alguien?
+            frame: Vi que mi amigo publicó ___.
+          - question: ¿Alguna vez escuchaste un chisme falso? ¿Cuál fue?
+            frame: Sí, escuché que ___, pero no era verdad.
+      - id: warmup-comparaciones
+        type: discussionQuestions
+        title: Comparaciones
+        items:
+          - question: ¿Es mejor hablar de amigos o de famosos?
+            frame: Es mejor hablar de ___ porque ___.
+          - question: ¿Quién es la persona más chismosa de tu familia?
+            frame: La persona más chismosa es mi ___, porque ___.
+          - question: ¿Los chismes son más divertidos o más peligrosos?
+            frame: Son más ___ porque ___.
+          - question: ¿Quién es más chismoso, tú o tu mejor amigo?
+            frame: Yo soy más / menos chismoso (chismosa) que ___.
+          - question: '¿Quién sufre más con los chismes: los adolescentes o los adultos?'
+            frame: Los ___ sufren más que los ___ porque ___.
+          - question: '¿Qué duele más: un chisme sobre tu vida personal o sobre tu trabajo?'
+            frame: Un chisme sobre mi ___ duele más que ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: ¿Qué pasó allí?'
+        skills: [Pretérito indefinido]
+        steps:
+          - Mira la foto que muestra tu profesor.
+          - En grupos, inventen qué pasó en la imagen. Usen el pretérito indefinido.
+          - Cada grupo cuenta su historia. Los demás votan la historia más creíble.
+          - '¿Qué hizo esta historia más interesante o más realista que las otras?'
+        example: '*Él salió con su amiga, pero luego se pelearon.*'
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Entrevista de chismes'
+        skills: [Pretérito indefinido, Comparaciones]
+        steps:
+          - Trabajen en parejas. Un alumno es el entrevistador y el otro, el entrevistado.
+          - El entrevistador hace las preguntas de abajo. Después cambian los roles.
+          - Presenta al grupo un resumen de lo que aprendiste de tu compañero.
+        example: >-
+          *Mi compañero escuchó que su amigo cambió de trabajo la semana pasada. Él piensa
+          que los chismes falsos son más peligrosos que los verdaderos.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Preguntas de la entrevista
+        items:
+          - question: ¿Qué fue lo último que escuchaste de un amigo?
+            frame: Escuché que mi amigo ___.
+          - question: ¿Cuál fue el chisme más divertido que escuchaste la semana pasada?
+            frame: Escuché que ___, y fue más divertido que ___.
+          - question: ¿Quién fue la última persona que te contó un secreto?
+            frame: Mi primo me contó que ___.
+          - question: ¿Quién es más chismoso en tu familia, tú o tu hermano / hermana?
+            frame: Mi hermano es más chismoso que yo.
+          - question: ¿Qué chisme escuchaste en la escuela o en el trabajo que fue peor que los demás?
+            frame: El chisme sobre ___ fue peor que ___.
+          - question: ¿Es más peligroso un chisme falso o un chisme verdadero?
+            frame: Un chisme falso es más peligroso porque ___.
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: ¡Elige quién viene a cenar!'
+        skills: [Comparaciones]
+        steps:
+          - Tu profesor reparte tarjetas con parejas de personajes famosos (cantantes, actores, políticos, deportistas).
+          - Elige **3 invitados** y escribe tus razones con comparaciones.
+          - En parejas, comparen sus elecciones y reaccionen con comparativos o superlativos.
+          - En grupos de 3–4, organicen una cena con **solo 3 invitados**. Discutan, negocien y justifiquen su decisión con comparaciones.
+        example: |-
+          *Mi primera opción es Shakira porque es más simpática que Carlos Santana.*
+          *Prefiero a Nadal porque es menos problemático que Maradona.*
+          *Mi invitado es más divertido que el tuyo.*
+          *Maradona no, porque es más conflictivo que Nadal.*
+      - id: act3-pairs
+        type: table
+        caption: Ejemplos de parejas de personajes famosos
+        rows:
+          - [Julio Iglesias, Enrique Iglesias]
+          - [Penélope Cruz, Salma Hayek]
+          - [Rafael Nadal, Maradona]
+          - [Shakira, Carlos Santana]
+      - id: act3-reasons
+        type: discussionQuestions
+        title: Mis 3 invitados
+        items:
+          - question: Mi primera opción es ___ porque es más ___ que ___.
+          - question: Prefiero a ___ porque es menos ___ que ___.
+          - question: Elijo a ___ porque es mejor ___ que ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Yo nunca nunca'
+        skills: [Pretérito indefinido]
+        steps:
+          - Tu profesor dice una frase de *Yo nunca nunca* sobre chismes.
+          - Si tú sí lo hiciste, levanta la mano y cuenta cuándo, con quién o por qué.
+          - 'El grupo compara las experiencias: *La historia de Ana fue más graciosa que la de Juan.*'
+        example: |-
+          *Nunca conté un secreto de un amigo.*
+          *Nunca inventé un chisme en la escuela.*
+      - id: act5
+        type: classActivity
+        title: 'Actividad 5: Historias mezcladas'
+        skills: [Pretérito indefinido, Comparaciones]
+        steps:
+          - Tu profesor reparte tarjetas con fragmentos de frases.
+          - Une 2–3 tarjetas para crear un chisme completo.
+          - Comparte tu chisme con el grupo.
+        wordBank: [Ayer escuché que…, …fue más divertido que…, …salió con…, …la semana pasada en…]
+        example: '*Ayer escuché que mi amiga salió con un actor famoso. ¡Fue más divertido que la boda de mi primo!*'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Pretérito indefinido** y **Comparaciones**.
+          Haz 6 preguntas de preparación (3 por habilidad). Para el pretérito indefinido,
+          elige la Actividad 1 (¿Qué pasó allí?) o la Actividad 4 (Yo nunca nunca). Para
+          las comparaciones, elige la Actividad 2 (Entrevista de chismes) o la Actividad 3
+          (¡Elige quién viene a cenar!). La Actividad 5 es extra. Al final, haz el resumen
+          de las dos habilidades y da la tarea.
+      - id: n-intro
+        anchor: intro
+        text: Modela primero las dos frases. Después de responder, los alumnos se comparan con otro compañero.
+      - id: n-warmup
+        anchor: warmup-general
+        text: Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          El cuaderno no incluye la foto: trae una imagen con una situación abierta (por
+          ejemplo, dos personas discutiendo en un café) y compártela en pantalla.
+      - id: n-act2
+        anchor: act2
+        text: Reparte la hoja de la entrevista (o usa las preguntas de abajo). Cada alumno entrevista a un compañero.
+      - id: n-act3
+        anchor: act3
+        text: Prepara las tarjetas con parejas de personajes famosos; puedes usar los ejemplos de la tabla.
+      - id: n-act5
+        anchor: act5
+        text: Prepara tarjetas con fragmentos de frases como los del banco de palabras.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: chismes-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-pasado
+        type: ruleSummary
+        skill: Pretérito indefinido
+        rules:
+          - text: 'Usamos el pretérito indefinido (pasado simple) para **acciones terminadas** en un momento concreto. Solo cambia el verbo, no toda la frase.'
+            examples: [Yo hablo con mi amigo. → Ayer hablé con mi amigo.]
+          - text: 'Usa **marcadores de tiempo** para dejar claro que es pasado: *ayer, anoche, la semana pasada, el año pasado*.'
+            examples: [Escuché un chisme ayer., Hablé con mi familia el fin de semana pasado.]
+          - text: 'Verbos regulares: **-ar** → -é, -aste, -ó, -amos, -aron; **-er** e **-ir** → -í, -iste, -ió, -imos, -ieron.'
+            examples:
+              - 'hablar → hablé, hablaste, habló'
+              - 'comer → comí, comiste, comió'
+              - 'vivir → viví, viviste, vivió'
+          - text: 'Verbos irregulares: tienen formas especiales (sin tilde). *Ser* e *ir* comparten las formas.'
+            examples:
+              - 'ir / ser → fui, fuiste, fue'
+              - 'tener → tuve, tuviste, tuvo'
+              - 'decir → dije, dijiste, dijo'
+              - Vi que mi amigo publicó fotos en las redes sociales.
+      - id: rules-comparaciones
+        type: ruleSummary
+        skill: Comparaciones
+        rules:
+          - text: '**Superioridad**: más + adjetivo + que.'
+            examples:
+              [Ana es más chismosa que Pedro., El chisme de ayer fue más divertido que el de hoy.]
+          - text: '**Inferioridad**: menos + adjetivo + que.'
+            examples:
+              [Yo soy menos chismoso que mi hermano., Mi historia fue menos graciosa que la tuya.]
+          - text: '**Igualdad**: tan + adjetivo + como.'
+            examples: [Los chismes en la escuela son tan comunes como en el trabajo.]
+          - text: '**Superlativo**: el / la / los / las (+ sustantivo) + más + adjetivo (+ de).'
+            examples:
+              [Shakira es la más interesante de la lista., Ese fue el chisme más gracioso de todos.]
+          - text: 'Formas especiales: **mejor** (no *más bueno*) y **peor** (no *más malo*). Con un verbo: verbo + más / menos + que.'
+            examples:
+              - Es mejor hablar de amigos que de famosos.
+              - El chisme sobre mi jefe fue peor que los demás.
+              - Los adolescentes sufren más con los chismes que los adultos.
+      - id: final
+        type: callout
+        tone: info
+        title: Resumen final
+        text: |-
+          **Pretérito indefinido**: usa verbos en pasado + expresiones de tiempo para contar hechos terminados.
+          **Comparaciones**: usa *más / menos… que* y *tan… como* para comparar, y *el / la más…* para los superlativos.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: chismes-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia cada mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-pasado
+        type: aiTutorPrompt
+        title: 'Parte 1: Pretérito indefinido'
+        message: |-
+          ¡Hola Mori! Quiero practicar el pretérito indefinido. Hazme estas preguntas en orden. Espera mi respuesta y luego haz una pregunta corta para pedir más detalles.
+          1. ¿Qué fue lo último que escuchaste de un amigo? (Después: ¿Cuándo lo escuchaste?)
+          2. ¿Con quién hablaste ayer y sobre qué? (Después: ¿Dónde estabas?)
+          3. ¿Qué chisme escuchaste en la escuela o en el trabajo la semana pasada? (Después: ¿Fue verdad o fue falso?)
+          Corrige mis errores, por favor.
+      - id: mori-comparaciones
+        type: aiTutorPrompt
+        title: 'Parte 2: Comparaciones'
+        message: |-
+          ¡Hola Mori! Ahora hazme estas preguntas de comparaciones. Corrige mi respuesta si no uso más / menos… que, tan… como o el más.
+          1. ¿Es mejor hablar de amigos o de famosos?
+          2. ¿Quién es más chismoso, tú o tu mejor amigo?
+          3. ¿Los chismes son más divertidos o más peligrosos?
+          4. ¿Quién es la persona más chismosa de tu familia?
+      - id: mori-nunca
+        type: aiTutorPrompt
+        title: 'Parte 3: Mini juego «Yo nunca nunca»'
+        message: >-
+          ¡Hola Mori! Hazme tres preguntas del juego «Yo nunca nunca» sobre chismes, por
+          ejemplo: ¿Alguna vez contaste un secreto de un amigo? Espera mi respuesta y luego
+          dime: «Cuéntame más detalles». Corrige mis errores, por favor.
+      - id: mori-escritura
+        type: aiTutorPrompt
+        title: 'Parte 4: Producción escrita guiada'
+        message: |-
+          ¡Hola Mori! Hazme estas dos preguntas y pídeme escribir la respuesta en 2–3 frases completas. Corrige mis errores, por favor.
+          1. ¿Qué chisme escuchaste el mes pasado que fue interesante?
+          2. ¿Quién es más chismoso en tu vida y por qué?
+      - id: mori-cierre
+        type: aiTutorPrompt
+        title: 'Parte 5: Cierre'
+        message: >-
+          ¡Hola Mori! Para repasar lo que aprendí hoy, pídeme escribir 3 frases en
+          pretérito indefinido y 2 comparaciones sobre chismes. Después, corrige los errores
+          en mis frases.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: chismes-practica
+    book: workbook
+    title: 'Práctica: Chismes'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-pasado
+        type: activity
+        activity: chismes-pasado
+      - id: ex-comparaciones
+        type: activity
+        activity: chismes-comparaciones
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: chismes-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de los chismes
+        glossLang: he
+        link: https://quizlet.com/il/865367283/conversational-spanish-chsimes-actualizado-flash-cards/
+        items: &chismes-words
+          - { term: Chisme, gloss: רכילות }
+          - { term: Chismoso, gloss: רכלן }
+          - { term: Pasado, gloss: עבר }
+          - { term: Simple, gloss: פשוט }
+          - { term: Comparaciones, gloss: השוואות }
+          - { term: Comparación, gloss: השוואה }
+          - { term: Más, gloss: יותר }
+          - { term: Menos, gloss: פחות }
+          - { term: Mejor, gloss: טוב יותר }
+          - { term: Peor, gloss: גרוע יותר }
+          - { term: Falso, gloss: שקרי }
+          - { term: Verdadero, gloss: אמיתי }
+          - { term: Secreto, gloss: סוד }
+          - { term: Historia, gloss: סיפור }
+          - { term: Divertido, gloss: מצחיק / מהנה }
+          - { term: Peligroso, gloss: מסוכן }
+          - { term: Gracioso, gloss: מצחיק }
+          - { term: Interesante, gloss: מעניין }
+          - { term: Famoso, gloss: מפורסם }
+          - { term: Celebridad, gloss: סלבריטאי }
+          - { term: Amigo, gloss: חבר }
+          - { term: Familia, gloss: משפחה }
+          - { term: Trabajo, gloss: עבודה }
+          - { term: Escuela, gloss: בית ספר }
+          - { term: Redes sociales, gloss: רשתות חברתיות }
+          - { term: Entrevista, gloss: ראיון }
+          - { term: Imagen, gloss: תמונה }
+          - { term: Cena, gloss: ארוחת ערב }
+          - { term: Invitado, gloss: אורח }
+          - { term: Grupo, gloss: קבוצה }
+          - { term: Pareja, gloss: זוג }
+          - { term: Votar, gloss: להצביע }
+          - { term: Inventar, gloss: להמציא }
+          - { term: Escuchar, gloss: לשמוע }
+          - { term: Contar, gloss: לספר }
+
+vocabulary:
+  - slug: chismes
+    title: Chismes
+    items: *chismes-words
+
+activities:
+  - slug: chismes-pasado
+    title: 'Pretérito indefinido: escuché, hablé, fue'
+    minutes: 8
+    items:
+      - id: ayer-hable
+        type: multipleChoice
+        prompt: Ayer ___ con mi amigo.
+        options:
+          - { text: hablé, correct: true }
+          - { text: hablo, feedback: '*Hablo* es presente. *Ayer* marca el pasado: *hablé*.' }
+          - { text: habló, feedback: '*Habló* es para él o ella. Para *yo*: *hablé*.' }
+      - id: escuche
+        type: fillBlank
+        prompt: Completa con el verbo *escuchar* (yo) en pretérito indefinido.
+        text: La semana pasada ___ un chisme sobre mi vecino.
+        blanks: [[escuché, yo escuché]]
+      - id: une-yo
+        type: matching
+        prompt: Une cada verbo con su forma para *yo* en pretérito indefinido.
+        pairs:
+          - [hablar, hablé]
+          - [comer, comí]
+          - [vivir, viví]
+          - [ir, fui]
+          - [tener, tuve]
+      - id: marcadores
+        type: trueFalse
+        prompt: '*Ayer, anoche, la semana pasada* y *el año pasado* son marcadores de tiempo del pasado.'
+        answer: true
+        feedback:
+          correct: ¡Correcto! Dejan claro que la acción terminó en el pasado.
+          incorrect: 'Son marcadores de pasado: *Ayer escuché un chisme.*'
+      - id: conto
+        type: fillBlank
+        prompt: Completa con el verbo *contar* en pretérito indefinido.
+        text: Ayer mi primo me ___ un secreto.
+        blanks: [[contó]]
+      - id: publico
+        type: multipleChoice
+        prompt: Anoche mi amigo ___ fotos de sus vacaciones.
+        options:
+          - { text: publicó, correct: true }
+          - {
+              text: publiqué,
+              feedback: '*Publiqué* es para *yo*. Para *mi amigo* (él): *publicó*.',
+            }
+          - {
+              text: publica,
+              feedback: '*Publica* es presente. *Anoche* marca el pasado: *publicó*.',
+            }
+      - id: dijo
+        type: fillBlank
+        prompt: Completa con el verbo *decir* en pretérito indefinido.
+        text: ¿Qué te ___ tu hermana ayer?
+        blanks: [[dijo]]
+      - id: ordena-companero
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Escuché que un compañero cambió de trabajo.
+
+  - slug: chismes-comparaciones
+    title: 'Comparaciones: más, menos, tan… como'
+    minutes: 8
+    items:
+      - id: mas-que
+        type: multipleChoice
+        prompt: Ana es ___ chismosa que Pedro.
+        options:
+          - { text: más, correct: true }
+          - {
+              text: tan,
+              feedback: '*Tan* va con *como*: *tan chismosa como*. Con *que* usa *más* o *menos*.',
+            }
+          - { text: muy, feedback: '*Muy* no compara. Para comparar con *que*: *más* o *menos*.' }
+      - id: tan-como
+        type: fillBlank
+        prompt: Completa la comparación de igualdad.
+        text: Los chismes en la escuela son tan comunes ___ en el trabajo.
+        blanks: [[como]]
+      - id: peor
+        type: multipleChoice
+        prompt: Un chisme sobre mi vida personal es ___ un chisme sobre mi trabajo.
+        options:
+          - { text: peor que, correct: true }
+          - { text: más peor que, feedback: '*Peor* ya significa «más malo»: no digas *más peor*.' }
+          - { text: peor como, feedback: 'Para comparar con *peor* usamos *que*: *peor que*.' }
+      - id: igualdad
+        type: trueFalse
+        prompt: 'Para la igualdad usamos *tan + adjetivo + que*.'
+        answer: false
+        feedback:
+          correct: '¡Correcto! La igualdad es *tan + adjetivo + como*.'
+          incorrect: 'La igualdad es *tan + adjetivo + como*: *tan comunes como*.'
+      - id: superlativo
+        type: fillBlank
+        prompt: Completa el superlativo.
+        text: Ese fue el chisme ___ gracioso de todos.
+        blanks: [[más]]
+      - id: une-tipos
+        type: matching
+        prompt: Une cada estructura con su tipo de comparación.
+        pairs:
+          - [más… que, superioridad]
+          - [menos… que, inferioridad]
+          - [tan… como, igualdad]
+          - [el / la más…, superlativo]
+      - id: menos
+        type: fillBlank
+        prompt: 'Completa con *más* o *menos*.'
+        text: 'Mi hermano cuenta muchos chismes; yo, pocos. Yo soy ___ chismoso que mi hermano.'
+        blanks: [[menos]]
+        wordBank: [más, menos]
+      - id: ordena-falso
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Un chisme falso es más peligroso que uno verdadero.
