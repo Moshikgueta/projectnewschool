@@ -1,0 +1,706 @@
+# Cycle "Mi vida en pasado", converted from the Spanish level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-2
+slug: mi-vida-en-pasado
+title: Mi vida en pasado
+goal: Hacer y responder preguntas en pasado y contar en 1ª, 2ª y 3ª persona.
+position: 2
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Preguntas en pasado" and "Yo, tú, él") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules, the activity examples and its vocabulary. Please
+    check level, wording and every right answer before students see them.
+  - >-
+    The source names two objectives, not two skills: "oraciones y preguntas en
+    pasado" and "1ª, 2ª y 3ª persona". They are used as the cycle's two skills.
+  - >-
+    Summary, grammar: as in cycle 1, the notebook writes "pretérito indefinido /
+    perfecto" as one tense and gives only indefinido examples. The summary now says
+    "pretérito indefinido" for these finished actions, with one line on the
+    pretérito perfecto (he comido) for life experiences without a specific time.
+    Persons tables (indefinido, imperfecto) were added from the forms in the
+    activities. Please confirm.
+  - >-
+    The summary part "Habilidades aprendidas en la clase - Para el profe" is a
+    teacher note. The teacher explanation at the end of the homework ("Explication
+    para el profesor/a", corrected to "Explicación") is a teacher-facing summary of
+    the two levels and is left out of the student page (it says nothing new).
+  - >-
+    Corrections: "¿Dónde fuiste?" → "¿Adónde fuiste?" (beginners' conclusion of
+    Activity 3); Activity 4 "¿Dónde viajaste la primera vez?" → "¿Adónde viajaste por
+    primera vez?" (also in the teacher's model); "¿Qué comiste una vez que recuerdes
+    bien?" → "¿Qué comida especial comiste una vez y todavía recuerdas?"; Activity 2
+    "¿Qué deporte jugaste el fin de semana pasado?" → "¿A qué jugaste el fin de semana
+    pasado?" (jugar a); Mori "Yo voy a responder y corrígeme si me equivoco" → "Voy a
+    responder. Corrígeme si me equivoco"; Mori message 2 "Escucha mis frases" → "Lee
+    mis frases" (it is a written chat); stray characters "ð¹" were removed.
+  - >-
+    The warm-up questions have no sentence frames in the source; simple frames were
+    added. The Mori homework is almost the same as in cycle 1 ("Experiencias
+    pasadas"); it is kept here because each cycle is used on its own. Mori
+    intermediate message 2 is changed to "2 en indefinido y 3 en imperfecto" to match
+    its example, as in cycle 1.
+  - >-
+    Vocabulary: "Fui / Fuiste / Fue (ir)" was glossed "נסעתי / נסעת / נסע"; it is now
+    "הלכתי / הלכת / הלך (נסעתי)". "Me mudé / Te mudaste / Se mudó" is glossed
+    "עברתי דירה / עברת דירה / עבר דירה". The source's category column (lugar,
+    marcador temporal…) is left out. Please confirm.
+  - >-
+    The Quizlet link is kept without its tracking parameters (?i=…&x=…). The
+    "Respuesta de alumno" lines are replaced by the optional answer boxes (decision
+    C2).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: mi-vida-en-pasado-clase
+    title: 'Clase: Mi vida en pasado'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Mi vida en pasado
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Oraciones y preguntas en pasado
+            description: '*Ayer comí pasta. ¿Qué comiste ayer?*'
+          - name: 1ª, 2ª y 3ª persona
+            description: '*Yo fui · ¿Adónde fuiste? · Él fue*'
+      - id: quizlet
+        type: externalLink
+        label: Mi vida en pasado en Quizlet
+        url: https://quizlet.com/br/1069751182/clase-mi-vida-en-pasado-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro-basic
+        type: sentenceFrame
+        prompt: '**Nivel iniciante:** di tu nombre y una acción simple de ayer (*comí, fui, vi, hablé*).'
+        frame: Soy ___. Ayer ___.
+        example: Yo soy Marta. Ayer comí pizza en mi casa.
+      - id: intro-inter
+        type: sentenceFrame
+        prompt: '**Nivel intermedio:** di tu nombre y un recuerdo o un hábito de tu infancia (*jugaba, vivía, escuchaba*).'
+        frame: Soy ___. Cuando era niño / niña, ___.
+        example: Yo soy Marta. Cuando era niña, jugaba al fútbol todos los días.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup-basic-title
+        type: heading
+        level: 4
+        text: 'Opción A: grupos iniciantes'
+      - id: warmup-basic
+        type: discussionQuestions
+        items:
+          - question: ¿Qué hiciste ayer por la tarde?
+            frame: Ayer por la tarde ___.
+          - question: ¿Qué comiste en tu última comida?
+            frame: En mi última comida comí ___.
+          - question: ¿Qué viste en la última película o serie?
+            frame: En la última película vi ___.
+          - question: ¿Qué hiciste el fin de semana pasado?
+            frame: El fin de semana pasado ___.
+          - question: ¿Con quién hablaste ayer?
+            frame: Ayer hablé con ___.
+          - question: ¿Qué compraste la última vez en una tienda?
+            frame: La última vez compré ___.
+      - id: warmup-inter-title
+        type: heading
+        level: 4
+        text: 'Opción B: grupos intermedios'
+      - id: warmup-inter
+        type: discussionQuestions
+        items:
+          - question: ¿Qué hacías normalmente los domingos cuando eras niño / niña?
+            frame: Cuando era niño / niña, los domingos normalmente ___.
+          - question: ¿Qué música escuchabas cuando tenías 10 años?
+            frame: Cuando tenía 10 años, escuchaba ___.
+          - question: ¿Cómo era tu escuela?
+            frame: Mi escuela era ___.
+          - question: ¿Cuál fue tu último viaje? ¿A dónde fuiste?
+            frame: Mi último viaje fue a ___. Fui con ___.
+          - question: ¿Qué fue lo más divertido que hiciste el mes pasado?
+            frame: Lo más divertido que hice el mes pasado fue ___.
+          - question: ¿Cómo era tu barrio cuando eras pequeño / pequeña?
+            frame: Mi barrio era ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Entrevista personal'
+        skills: [Oraciones y preguntas en pasado, '1ª, 2ª y 3ª persona']
+        minutes: 15
+        steps:
+          - 'En parejas: el alumno A hace 3 o 4 preguntas de la lista. El alumno B responde en primera persona (yo).'
+          - Cambien de rol.
+          - En el grupo, cada alumno presenta cosas de su compañero en tercera persona (él / ella).
+      - id: act1-basic
+        type: discussionQuestions
+        title: 'Opción A: grupos iniciantes'
+        items:
+          - question: ¿Dónde naciste?
+          - question: ¿Dónde creciste?
+          - question: ¿Qué comiste ayer?
+          - question: ¿Qué viste la semana pasada?
+          - question: ¿Qué hiciste el fin de semana pasado?
+      - id: act1-basic-example
+        type: callout
+        tone: info
+        title: 'Opción A: ejemplo de reporte'
+        text: |-
+          *Mi compañero nació en Haifa y ayer comió pasta.*
+          **1ª persona:** *Yo nací, yo fui, yo comí…*
+          **2ª persona:** *¿Dónde naciste? ¿Qué comiste?*
+          **3ª persona:** *Él nació, ella comió…*
+      - id: act1-inter
+        type: discussionQuestions
+        title: 'Opción B: grupos intermedios'
+        items:
+          - question: ¿Cuál fue tu viaje favorito?
+          - question: ¿Qué fue lo más divertido que hiciste el mes pasado?
+          - question: ¿Qué fue lo último que compraste?
+          - question: ¿Qué hacías en tu tiempo libre cuando eras niño / niña?
+          - question: ¿Qué música escuchabas cuando eras joven?
+          - question: ¿Cómo era tu escuela?
+          - question: ¿Dónde vivías antes?
+          - question: ¿Cómo era tu mejor amigo / amiga de la infancia?
+      - id: act1-inter-example
+        type: callout
+        tone: info
+        title: 'Opción B: ejemplo de entrevista y reporte'
+        text: |-
+          *A: ¿Qué hacías en tu tiempo libre cuando eras niño?*
+          *B: Jugaba al fútbol y veía dibujos animados.*
+          Reporte (4–5 frases, en tercera persona): *Mi compañero nació en Haifa, su viaje favorito fue a Italia y cuando era niño jugaba al fútbol todos los días.*
+          **1ª persona:** *Yo viajé, yo estudié, cuando era niño jugaba…*
+          **2ª persona:** *¿Qué hiciste? ¿Qué hacías cuando…?*
+          **3ª persona:** *Él viajó, ella jugaba, él siempre escuchaba música.*
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: ¿Cuál es la pregunta?'
+        skills: [Oraciones y preguntas en pasado]
+        minutes: 10
+        steps:
+          - Lee la oración en pasado.
+          - Inventa la pregunta que corresponde.
+          - Tus compañeros proponen otras preguntas para la misma respuesta.
+        example: |-
+          *Ayer desayuné pan con café.*
+          *→ ¿Qué desayunaste ayer?*
+          *→ ¿Cuándo desayunaste pan con café?*
+      - id: act2-basic
+        type: discussionQuestions
+        title: 'Nivel básico: acciones cotidianas'
+        items:
+          - question: Ayer desayuné pan con café.
+            frame: ¿___?
+          - question: El sábado fui al supermercado.
+            frame: ¿___?
+          - question: La semana pasada vi una película en casa.
+            frame: ¿___?
+          - question: El fin de semana pasado cociné pasta.
+            frame: ¿___?
+          - question: Ayer hablé con mi mejor amigo.
+            frame: ¿___?
+      - id: act2-inter
+        type: discussionQuestions
+        title: 'Nivel intermedio: experiencias recientes'
+        items:
+          - question: El mes pasado compré un celular nuevo.
+            frame: ¿___?
+          - question: Hace tres días visité a mis abuelos.
+            frame: ¿___?
+          - question: En mis vacaciones viajé a España.
+            frame: ¿___?
+          - question: El fin de semana pasado jugué al fútbol con mis amigos.
+            frame: ¿___?
+          - question: El año pasado empecé un curso de inglés.
+            frame: ¿___?
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Diario de ayer'
+        skills: [Oraciones y preguntas en pasado, '1ª, 2ª y 3ª persona']
+        minutes: 20
+        steps:
+          - Escribe frases sobre lo que hiciste ayer (5 minutos).
+          - 'En parejas: intercambien sus diarios. Tu compañero te hace preguntas sobre cada frase (10 minutos).'
+          - Presenta a tu compañero al grupo, en tercera persona (5 minutos).
+      - id: act3-basic
+        type: callout
+        tone: info
+        title: 'Opción A: grupos iniciantes'
+        text: |-
+          Escribe **3 o 4 frases muy simples**: *Ayer desayuné café. Estudié español por la tarde. Fui al supermercado.*
+          Tu compañero hace **1 pregunta** por cada frase: *Fui al supermercado. → ¿Qué compraste?* · *Vi una serie. → ¿Qué serie viste?*
+          Presenta **2 frases** sobre tu compañero: *Mi compañero desayunó café y fue al supermercado.*
+          **1ª persona:** *Yo desayuné, yo estudié, yo fui…* · **2ª persona:** *¿Qué desayunaste? ¿Adónde fuiste?* · **3ª persona:** *Él desayunó, ella estudió, él fue…*
+      - id: act3-inter
+        type: callout
+        tone: info
+        title: 'Opción B: grupos intermedios'
+        text: |-
+          Escribe **5 o 6 frases más completas**, con marcadores de tiempo (*ayer, anoche, el fin de semana pasado, hace dos días*): *Ayer por la tarde fui al gimnasio. Hace dos días cené con mis amigos. El fin de semana pasado estudié para un examen.*
+          Tu compañero hace **mínimo 2 preguntas** por cada frase: *Fui al supermercado. → ¿Qué compraste? ¿Con quién fuiste?* · *Vi una serie. → ¿Qué serie viste? ¿Te gustó?*
+          Presenta un **mini-reporte de 4 o 5 frases**: *Mi compañero fue al gimnasio, cenó con sus amigos y el fin de semana pasado estudió para un examen.*
+          Para más riqueza, añade descripciones con imperfecto: *Cuando era niño, siempre cenaba con mi familia. Antes vivía en otra ciudad, pero ayer fui a visitar a mis abuelos.*
+      - id: act3-diary
+        type: discussionQuestions
+        title: Mi diario de ayer
+        items:
+          - question: Ayer ___.
+          - question: Por la mañana ___.
+          - question: Por la tarde ___.
+          - question: Anoche ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Cuando era niño…'
+        skills: [Oraciones y preguntas en pasado, '1ª, 2ª y 3ª persona']
+        minutes: 15
+        steps:
+          - Escucha el ejemplo de tu profesor.
+          - En parejas, pregunten y respondan.
+          - Tu compañero reacciona con una pregunta de seguimiento.
+          - Comparte con el grupo, en tercera persona, lo que dijo tu compañero.
+      - id: act4-basic
+        type: discussionQuestions
+        title: 'Opción A: iniciantes (pretérito indefinido)'
+        items:
+          - question: ¿Adónde viajaste por primera vez?
+            frame: La primera vez viajé a ___.
+          - question: ¿Qué comida especial comiste una vez y todavía recuerdas?
+            frame: Una vez comí ___.
+          - question: ¿Cuál fue tu primera película en el cine?
+            frame: Mi primera película en el cine fue ___.
+          - question: ¿Qué hiciste en tus últimas vacaciones de niño / niña?
+            frame: En mis últimas vacaciones de niño / niña ___.
+      - id: act4-inter
+        type: discussionQuestions
+        title: 'Opción B: intermedios (imperfecto)'
+        items:
+          - question: ¿Qué hacías en tu tiempo libre cuando eras niño / niña?
+          - question: ¿Qué música escuchabas de pequeño / pequeña?
+          - question: ¿Cómo era tu escuela?
+          - question: ¿Cómo era tu barrio?
+          - question: ¿Qué solías hacer con tu familia los fines de semana?
+      - id: act4-examples
+        type: callout
+        tone: info
+        title: Ejemplos de reporte
+        text: |-
+          **Iniciantes:** *Mi compañero viajó por primera vez a Jerusalén y su primera película fue Toy Story.*
+          **Intermedios:** preguntas de seguimiento como *¿Dónde jugabas? ¿Con quién escuchabas música?* · *Mi compañera jugaba al baloncesto, vivía en un barrio con muchos parques y siempre escuchaba música en la radio.*
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Clase de 90 minutos. Objetivos: practicar oraciones y preguntas en pasado
+          (pretérito indefinido; pretérito perfecto con grupos intermedios) y reforzar el
+          uso de la 1ª, 2ª y 3ª persona. Casi todas las partes tienen una opción para
+          grupos iniciantes y otra para grupos intermedios: elige la de tu grupo.
+      - id: n-intro
+        anchor: intro-title
+        text: Da tu propio ejemplo primero (*Yo soy Marta. Ayer comí pizza en mi casa.*) y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup-title
+        text: 'Preguntas rápidas: con grupos iniciantes, solo indefinido; con grupos intermedios, indefinido + imperfecto. Haz al menos dos preguntas a cada estudiante.'
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Grupos iniciantes: 3–4 preguntas simples y un reporte de 2 cosas del compañero.
+          Grupos intermedios: preguntas de experiencias (indefinido) y de hábitos o
+          contexto (imperfecto), y un mini-reporte biográfico de 4–5 frases que mezcle los
+          dos tiempos.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Entrega a cada alumno una oración (o proyéctala). Sigue hasta que todos
+          participen. Variaciones: **juego rápido** en parejas (uno lee la respuesta y el
+          otro inventa la pregunta lo más rápido posible); **competencia en grupo** (gana
+          el grupo que inventa más preguntas diferentes en 1 minuto); **reporte final**
+          (algunos alumnos leen sus preguntas en voz alta). Preguntas esperadas: ¿Qué
+          desayunaste ayer? · ¿A dónde fuiste el sábado? · ¿Qué viste la semana pasada? ·
+          ¿Qué cocinaste el fin de semana pasado? · ¿Con quién hablaste ayer? · ¿Qué
+          compraste el mes pasado? · ¿A quién visitaste hace tres días? · ¿A dónde
+          viajaste en tus vacaciones? · ¿A qué jugaste el fin de semana pasado? · ¿Qué
+          curso empezaste el año pasado? Acepta otras preguntas correctas.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Preparación individual: 5 minutos. Trabajo en parejas: 10 minutos. Reporte al
+          grupo: 5 minutos (con grupos intermedios puede llegar a 7).
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Modela primero: «¿Adónde viajaste por primera vez? Yo viajé a Tel Aviv. ¿Y tú?».
+          Objetivo: conversación fluida sobre la infancia, con indefinido (recuerdos
+          puntuales) e imperfecto (hábitos y descripciones), en 1ª, 2ª y 3ª persona.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: mi-vida-en-pasado-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: basic-title
+        type: heading
+        level: 3
+        text: Nivel iniciante
+      - id: rules-indefinido
+        type: ruleSummary
+        skill: Oraciones y preguntas en pasado
+        rules:
+          - text: 'Usa el **pretérito indefinido** para contar acciones puntuales y terminadas, y para responder *qué hiciste, qué comiste, adónde fuiste*.'
+            examples:
+              - Ayer comí pizza. → acción puntual, ya terminada.
+              - El sábado fui al cine. → día específico, acción cerrada.
+              - La semana pasada vi una película. → hecho con marcador de tiempo.
+          - text: 'Lleva un **marcador de tiempo** claro:'
+            examples: ['ayer, la semana pasada, el fin de semana pasado, hace dos días']
+          - text: '**Regla práctica:** usa el indefinido cuando hablas de algo que pasó una vez, en un momento concreto, y que ya terminó. Para experiencias de la vida sin momento concreto (*nunca, alguna vez*) también se usa el pretérito perfecto: *Nunca he viajado a España.*'
+      - id: rules-personas
+        type: ruleSummary
+        skill: 1ª, 2ª y 3ª persona
+        rules:
+          - text: 'Cambia de persona según con quién hablas: yo cuento, a ti te pregunto, de él / ella informo.'
+            examples:
+              - '1ª persona (yo): Yo comí pizza.'
+              - '2ª persona (pregunta): ¿Qué comiste ayer?'
+              - '3ª persona (reporte): Él comió pizza ayer.'
+      - id: indefinido-table
+        type: table
+        caption: Pretérito indefinido
+        header: [Persona, comer, ir, hablar, hacer]
+        rows:
+          - [Yo, comí, fui, hablé, hice]
+          - [Tú, comiste, fuiste, hablaste, hiciste]
+          - [Él / Ella, comió, fue, habló, hizo]
+      - id: inter-title
+        type: heading
+        level: 3
+        text: Nivel intermedio
+      - id: rules-inter
+        type: ruleSummary
+        skill: Indefinido + imperfecto
+        rules:
+          - text: '**Pretérito indefinido**: hechos concretos.'
+            examples:
+              [
+                El año pasado **viajé** a Italia.,
+                Hace dos días **cené** con mis amigos.,
+                Ayer **estudié** para un examen.,
+              ]
+          - text: '**Pretérito imperfecto**: hábitos y descripciones.'
+            examples:
+              - Cuando era niño, siempre **jugaba** al fútbol.
+              - Mi barrio **era** muy tranquilo.
+              - En la escuela siempre **teníamos** clases de música.
+          - text: 'En una narración, combina los dos: el indefinido cuenta qué pasó y el imperfecto describe la situación.'
+            examples:
+              [
+                El verano pasado **viajé** a la playa. El mar **estaba** muy tranquilo y **hacía** calor.,
+              ]
+          - text: 'Preguntas frecuentes:'
+            examples:
+              - ¿Qué **hiciste** el mes pasado? (indefinido)
+              - ¿Qué **hacías** cuando eras niño? (imperfecto)
+              - ¿Cómo **era** tu escuela? (imperfecto)
+          - text: 'Reporta en tercera persona con frases más largas.'
+            examples: [Mi compañero jugaba al fútbol y viajaba mucho con su familia.]
+      - id: imperfecto-table
+        type: table
+        caption: Pretérito imperfecto
+        header: [Persona, jugar, tener, ser]
+        rows:
+          - [Yo, jugaba, tenía, era]
+          - [Tú, jugabas, tenías, eras]
+          - [Él / Ella, jugaba, tenía, era]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: >-
+          En general, los alumnos aprendieron a: 1) hablar de experiencias pasadas con
+          verbos comunes (*fui, comí, vi, hablé, estudié, viajé*); 2) formular preguntas
+          en pasado para interactuar; 3) cambiar de primera persona (*Yo fui*) a segunda
+          (*¿Adónde fuiste?*) y a tercera (*Él fue*); 4) usar marcadores de tiempo (*ayer,
+          el fin de semana pasado, hace dos días, cuando era niño*); 5) con grupos
+          intermedios, diferenciar acciones puntuales (indefinido) y hábitos o
+          descripciones (imperfecto). Pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: mi-vida-en-pasado-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia un mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: basic-title
+        type: heading
+        level: 3
+        text: Nivel iniciante
+      - id: basic-goal
+        type: text
+        text: 'Frases simples, preguntas cortas y foco en el pretérito indefinido.'
+      - id: mori-basic-1
+        type: aiTutorPrompt
+        title: 'Mensaje 1: Preguntas y respuestas'
+        message: Hola Mori, quiero practicar el pasado. Hazme 5 preguntas fáciles como ¿Qué hiciste ayer? o ¿Qué comiste? Voy a responder. Corrígeme si me equivoco.
+      - id: mori-basic-2
+        type: aiTutorPrompt
+        title: 'Mensaje 2: Mini-diario'
+        intro: 'Después, escribe 4 frases. Ejemplo: *Ayer fui al supermercado. Anoche vi una serie. El fin de semana pasado cociné pizza. Hablé con mi amigo por teléfono.*'
+        message: Hola Mori, te voy a contar 4 cosas que hice ayer. Lee mis frases y dime si están correctas. Después, hazme una pregunta más sobre cada frase.
+      - id: mori-basic-3
+        type: aiTutorPrompt
+        title: 'Mensaje 3: Reporte en tercera persona'
+        intro: 'Después, escribe tus frases. Ejemplo: *Mi hermana estudió para un examen. Ella comió ensalada. Vio una película.*'
+        message: Hola Mori, te voy a contar en tercera persona qué hizo ayer una persona de mi familia. Por favor, dime si está correcto y hazme una pregunta más sobre esa persona.
+      - id: inter-title
+        type: heading
+        level: 3
+        text: Nivel intermedio
+      - id: inter-goal
+        type: text
+        text: 'Narración más rica: combina el indefinido y el imperfecto, con preguntas de seguimiento.'
+      - id: mori-inter-1
+        type: aiTutorPrompt
+        title: 'Mensaje 1: Entrevista'
+        intro: 'Ejemplo: Mori: *¿Cuál fue tu viaje favorito?* Tú: *Mi viaje favorito fue a Italia.* Mori: *Muy bien. ¿Con quién viajaste a Italia?*'
+        message: Hola Mori, hazme 5 preguntas en pasado, 3 con el pretérito indefinido y 2 con el imperfecto. Después de cada respuesta, corrígeme y hazme una pregunta de seguimiento.
+      - id: mori-inter-2
+        type: aiTutorPrompt
+        title: 'Mensaje 2: Mini-biografía'
+        intro: 'Después, escribe tus 5 frases. Ejemplo: *Cuando era niño vivía en una ciudad pequeña. Siempre jugaba con mis amigos en la calle. En 2005 viajé a Madrid con mi familia. El viaje fue divertido. Mi escuela era grande.*'
+        message: Hola Mori, quiero escribir una mini-biografía de mi infancia. Te voy a contar 5 frases, 2 en pretérito indefinido y 3 en imperfecto. Por favor, corrige mis errores y después hazme una pregunta más sobre mi infancia.
+      - id: mori-inter-3
+        type: aiTutorPrompt
+        title: 'Mensaje 3: Diario detallado'
+        intro: 'Después, escribe tus frases. Ejemplo: *El sábado fui a la playa. Hacía mucho calor. El domingo cené con mi familia. La comida estaba deliciosa.*'
+        message: Hola Mori, te voy a contar lo que hice la semana pasada en 6 frases. Para cada frase voy a añadir un detalle en imperfecto. Corrígeme si me equivoco y hazme una pregunta sobre una de mis frases.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: mi-vida-en-pasado-practica
+    book: workbook
+    title: 'Práctica: Mi vida en pasado'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-preguntas
+        type: activity
+        activity: mi-vida-en-pasado-preguntas
+      - id: ex-personas
+        type: activity
+        activity: mi-vida-en-pasado-personas
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: mi-vida-en-pasado-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de mi vida en pasado
+        glossLang: he
+        link: https://quizlet.com/br/1069751182/clase-mi-vida-en-pasado-flash-cards/
+        items: &mi-vida-en-pasado-words
+          - { term: Fui / Fuiste / Fue (ir), gloss: הלכתי / הלכת / הלך (נסעתי) }
+          - { term: Comí / Comiste / Comió (comer), gloss: אכלתי / אכלת / אכל }
+          - { term: Bebí / Bebiste / Bebió (beber), gloss: שתיתי / שתית / שתה }
+          - { term: Vi / Viste / Vio (ver), gloss: ראיתי / ראית / ראה }
+          - { term: Hablé / Hablaste / Habló (hablar), gloss: דיברתי / דיברת / דיבר }
+          - { term: Estudié / Estudiaste / Estudió (estudiar), gloss: למדתי / למדת / למד }
+          - { term: Trabajé / Trabajaste / Trabajó (trabajar), gloss: עבדתי / עבדת / עבד }
+          - { term: Jugué / Jugaste / Jugó (jugar), gloss: שיחקתי / שיחקת / שיחק }
+          - { term: Escuché / Escuchaste / Escuchó (escuchar), gloss: הקשבתי / הקשבת / הקשיב }
+          - { term: Leí / Leíste / Leyó (leer), gloss: קראתי / קראת / קרא }
+          - { term: Hice / Hiciste / Hizo (hacer), gloss: עשיתי / עשית / עשה }
+          - { term: Conocí / Conociste / Conoció (conocer), gloss: הכרתי / הכרת / הכיר }
+          - { term: Cociné / Cocinaste / Cocinó (cocinar), gloss: בישלתי / בישלת / בישל }
+          - { term: Compré / Compraste / Compró (comprar), gloss: קניתי / קנית / קנה }
+          - { term: Olvidé / Olvidaste / Olvidó (olvidar), gloss: שכחתי / שכחת / שכח }
+          - {
+              term: Me mudé / Te mudaste / Se mudó (mudarse),
+              gloss: עברתי דירה / עברת דירה / עבר דירה,
+            }
+          - { term: Organicé / Organizaste / Organizó (organizar), gloss: ארגנתי / ארגנת / ארגן }
+          - { term: Perdí / Perdiste / Perdió (perder), gloss: איבדתי / איבדת / איבד }
+          - { term: Estuve / Estuviste / Estuvo (estar), gloss: הייתי / היית / היה }
+          - { term: Fui / Fuiste / Fue (ser), gloss: הייתי / היית / היה }
+          - { term: Ayer, gloss: אתמול }
+          - { term: Anoche, gloss: אתמול בלילה }
+          - { term: El fin de semana pasado, gloss: בסוף השבוע שעבר }
+          - { term: La semana pasada, gloss: בשבוע שעבר }
+          - { term: Hace dos días, gloss: לפני יומיים }
+          - { term: El año pasado, gloss: בשנה שעברה }
+          - { term: Cuando era niño, gloss: כשהייתי ילד }
+          - { term: Supermercado, gloss: סופרמרקט }
+          - { term: Restaurante, gloss: מסעדה }
+          - { term: Cine, gloss: קולנוע }
+          - { term: Playa, gloss: חוף ים }
+          - { term: Vacaciones, gloss: חופשה }
+          - { term: Película, gloss: סרט }
+          - { term: Cumpleaños, gloss: יום הולדת }
+
+vocabulary:
+  - slug: mi-vida-en-pasado
+    title: Mi vida en pasado
+    items: *mi-vida-en-pasado-words
+
+activities:
+  - slug: mi-vida-en-pasado-preguntas
+    title: 'Preguntas en pasado: ¿Qué desayunaste?'
+    minutes: 8
+    items:
+      - id: desayunaste
+        type: multipleChoice
+        prompt: 'Respuesta: *Ayer desayuné pan con café.* ¿Cuál es la pregunta?'
+        options:
+          - { text: ¿Qué desayunaste ayer?, correct: true }
+          - {
+              text: ¿Qué desayunas ayer?,
+              feedback: '*Desayunas* es presente. Con *ayer* usamos el pasado: *¿Qué desayunaste?*',
+            }
+          - {
+              text: ¿Con quién desayunaste ayer?,
+              feedback: 'La respuesta no dice con quién, dice qué: *pan con café*. Pregunta con *qué*.',
+            }
+      - id: une-preguntas
+        type: matching
+        prompt: Une cada respuesta con su pregunta.
+        pairs:
+          - [Ayer hablé con mi mejor amigo., ¿Con quién hablaste ayer?]
+          - [Hace tres días visité a mis abuelos., ¿A quién visitaste hace tres días?]
+          - [El mes pasado compré un celular nuevo., ¿Qué compraste el mes pasado?]
+          - [En mis vacaciones viajé a España., ¿Adónde viajaste en tus vacaciones?]
+          - [El fin de semana pasado cociné pasta., ¿Qué cocinaste el fin de semana pasado?]
+      - id: viste-semana
+        type: fillBlank
+        prompt: Completa la pregunta con el verbo en pasado.
+        text: La semana pasada vi una película. → ¿Qué ___ la semana pasada?
+        blanks: [[viste]]
+      - id: empezaste
+        type: fillBlank
+        prompt: Completa la pregunta con el verbo *empezar* en pasado.
+        text: El año pasado empecé un curso de inglés. → ¿Qué curso ___ el año pasado?
+        blanks: [[empezaste]]
+      - id: hacias
+        type: multipleChoice
+        prompt: Quieres preguntar por un hábito de la infancia. ¿Qué pregunta usas?
+        options:
+          - { text: ¿Qué hacías cuando eras niño?, correct: true }
+          - {
+              text: ¿Qué hiciste cuando eras niño?,
+              feedback: 'Para hábitos y descripciones del pasado usamos el imperfecto: *¿Qué hacías?*',
+            }
+          - {
+              text: ¿Qué haces cuando eras niño?,
+              feedback: '*Haces* es presente. Para un hábito del pasado usamos *hacías*.',
+            }
+      - id: como-era
+        type: trueFalse
+        prompt: 'Para preguntar cómo era tu escuela, usamos el imperfecto: *¿Cómo era tu escuela?*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! Las descripciones del pasado van en imperfecto.
+          incorrect: 'Las descripciones del pasado van en imperfecto: *¿Cómo era tu escuela?*'
+      - id: hiciste-mes
+        type: fillBlank
+        prompt: Completa la pregunta con el verbo *hacer* en pasado (indefinido).
+        text: ¿Qué ___ el mes pasado? — Viajé a Italia.
+        blanks: [[hiciste]]
+      - id: ordena-naciste
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: ¿Dónde naciste y dónde creciste?
+
+  - slug: mi-vida-en-pasado-personas
+    title: 'Yo, tú, él: comí, comiste, comió'
+    minutes: 8
+    items:
+      - id: une-personas
+        type: matching
+        prompt: Une cada persona y verbo con su forma en pasado.
+        pairs:
+          - [yo (ir), fui]
+          - [tú (comer), comiste]
+          - [él (hacer), hizo]
+          - [yo (hablar), hablé]
+          - [ella (ver), vio]
+      - id: companero-nacio
+        type: multipleChoice
+        prompt: 'Tu compañero dice: *Nací en Haifa.* Lo cuentas al grupo: Mi compañero ___ en Haifa.'
+        options:
+          - { text: nació, correct: true }
+          - { text: nací, feedback: '*Nací* es para *yo*. Para tu compañero (él) usamos *nació*.' }
+          - {
+              text: naciste,
+              feedback: '*Naciste* es para *tú*. Para tu compañero (él) usamos *nació*.',
+            }
+      - id: hizo
+        type: multipleChoice
+        prompt: ¿Qué hizo tu hermana ayer? — Mi hermana ___ una película.
+        options:
+          - { text: vio, correct: true }
+          - { text: vi, feedback: '*Vi* es para *yo*. Para *ella* usamos *vio*.' }
+          - {
+              text: veía,
+              feedback: 'Es una acción de ayer, puntual y terminada: usamos el indefinido, *vio*.',
+            }
+      - id: desayuno-fue
+        type: fillBlank
+        prompt: 'Tu compañero dice: *Desayuné café y fui al supermercado.* Completa el reporte.'
+        text: Mi compañero ___ café y ___ al supermercado.
+        blanks: [[desayunó], [fue]]
+      - id: tercera
+        type: trueFalse
+        prompt: '*Él comió pizza ayer* está en tercera persona.'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *Él comió* = tercera persona. *Yo comí* = primera, *¿Tú comiste?* = segunda.
+          incorrect: '*Él / ella* es la tercera persona: *él comió*.'
+      - id: jugaba-ella
+        type: multipleChoice
+        prompt: Cuando era niña, mi compañera siempre ___ al baloncesto.
+        options:
+          - { text: jugaba, correct: true }
+          - {
+              text: jugó,
+              feedback: '*Siempre* y *cuando era niña* hablan de un hábito: usamos el imperfecto, *jugaba*.',
+            }
+          - { text: jugabas, feedback: '*Jugabas* es para *tú*. Para *ella* usamos *jugaba*.' }
+      - id: hice-hiciste
+        type: fillBlank
+        prompt: Completa con el verbo *hacer* en pasado.
+        text: —¿Qué ___ tú el sábado? —Yo ___ una pizza. Y mi hermano ___ un pastel.
+        blanks: [[hiciste], [hice], [hizo]]
+        wordBank: [hice, hiciste, hizo]
+      - id: ordena-reporte
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Mi compañero fue al cine y vio una película.
