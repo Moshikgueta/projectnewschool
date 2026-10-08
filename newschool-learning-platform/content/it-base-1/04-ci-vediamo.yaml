@@ -1,0 +1,533 @@
+# Cycle "Ci vediamo?", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: ci-vediamo
+title: Ci vediamo?
+goal: Fissare un incontro con i giorni della settimana, i numeri e le preposizioni di base.
+position: 4
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Giorni della settimana e numeri" and "Preposizioni
+    di base") are NEW: the notebook has no self-study exercises. They were written from
+    the cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Summary, skill 1, rule 3: "Per parlare di un singolo giorno si usa l'articolo
+    (senza il)" contradicts itself → "…non si usa l'articolo". Rule 1 example "I lunedì
+    studio molto" → "Tutti i lunedì studio molto". Added: all days are masculine except
+    "la domenica".
+  - >-
+    Summary, dates: "Sono nato in marzo 1998" (copied from the Spanish "en marzo de
+    1998") is wrong in Italian → "nel 1998" / "a marzo" (il + day, a / in + month, nel
+    + year), as in the Famiglia cycle. Please confirm.
+  - >-
+    Summary, skill 2, rule 3: "Di/Da → origine o possesso" mixes two prepositions
+    (Spanish "de"). Split into: di = origin with essere (Sono di Roma) and possession
+    (Il libro è di Anna); da = where you come from (Vengo da Tel Aviv). The
+    explanation "a: orario" also gets "alle 9" (a + le). Please confirm.
+  - >-
+    Spanish words left in by mistake: warm-up "Studio spagnolo ___ volte" → "Studio
+    italiano ___ giorni alla settimana. Studio il / la ___…"; Activity 3 example "studio
+    spagnolo" → "studio italiano"; Mori tip "con la frase in inglese" → "in italiano".
+    Mori: "Usa solo il presente semplice" → "Usa solo il presente".
+  - >-
+    Activity 1 frame "Puoi incontrarmi questo ___ alle ___ a ___?" → "Ci vediamo ___
+    alle ___ a / in ___?" (the same as the example). Activity 2: the two word banks
+    were merged into one ("su" is in the second only and is not used, so it was left
+    out). Activity 3 example: "e esco" → "ed esco"; Activity 4: "insegno Storia" →
+    "storia".
+  - >-
+    Plan: the notebook recommends Activities 1 + 2 or 1 + 3; 1 + 3 both practise
+    skill 1 (Activity 3 practises both skills by its title). Kept as in the notebook.
+    Activity 4 has no time in the notebook; it is kept without minutes.
+  - The Quizlet link is kept without the tracking parameter "?new".
+  - Activity times given as ranges (15–20 minutes) are recorded as 20 minutes; the introduction round (5–10 minutes) as 10.
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: ci-vediamo-classe
+    title: 'In classe: Ci vediamo?'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ci vediamo?
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Giorni della settimana e numeri
+            description: '*lunedì / il lunedì*, i numeri e le date'
+          - name: Preposizioni di base
+            description: '*a, in, di, da, con*: Vado **a** scuola. Sono **in** città.'
+      - id: quizlet
+        type: externalLink
+        label: Ci vediamo? su Quizlet
+        url: https://quizlet.com/br/1068043150/italiano-basico-ci-vediamo-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazioni
+      - id: intro
+        type: sentenceFrame
+        frame: Io sono ___. Durante la settimana mi sveglio ___ (la mattina / a mezzogiorno) e il sabato mi sveglio ___.
+        example: Io sono Laura. Durante la settimana mi sveglio la mattina e il sabato mi sveglio a mezzogiorno.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Qual è il tuo giorno preferito della settimana? Perché?
+            frame: Il mio giorno preferito della settimana è ___ perché ___.
+          - question: Qual è il giorno della settimana che non ti piace? Perché?
+            frame: Non mi piace il / la ___ perché ___.
+          - question: Quanti giorni alla settimana studi italiano? Quali?
+            frame: Studio italiano ___ giorni alla settimana. Studio il / la ___, il / la ___ e il / la ___.
+          - question: Quand'è il tuo compleanno?
+            frame: Il mio compleanno è il ___.
+          - question: Qual è il tuo mese preferito dell'anno? Perché?
+            frame: Il mio mese preferito dell'anno è ___ perché ___.
+          - question: Dove incontri i tuoi amici?
+            frame: Incontro i miei amici a / in ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Incontriamoci!'
+        skills: [Giorni della settimana e numeri]
+        minutes: 20
+        steps:
+          - Hai 2 minuti per fissare un incontro con un compagno o una compagna. Usa il modello qui sotto.
+          - Poi cambia compagno e fissa un altro incontro.
+          - Alla fine di' alla classe quando e dove incontri i tuoi compagni.
+        example: |-
+          A: *Ciao! Ci vediamo venerdì alle 15:00 in biblioteca?*
+          B: *No, ma sabato alle 16:00 in mensa?*
+          A: *Sì! Ci vediamo sabato alle 16:00 in mensa.*
+      - id: act1-frames
+        type: discussionQuestions
+        title: Il modello
+        items:
+          - question: 'Studente A: Ciao! Ci vediamo ___ alle ___ a / in ___?'
+          - question: 'Studente B: Sì! / No, ma possiamo vederci ___ alle ___ a / in ___.'
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: La mia giornata'
+        skills: [Preposizioni di base]
+        minutes: 20
+        steps:
+          - Ascolta l'esempio dell'insegnante.
+          - Scrivi le tue frasi per la mattina, il mezzogiorno e la sera. Usa le parole della lista.
+          - Leggi le tue frasi alla classe.
+        wordBank:
+          [
+            in,
+            a,
+            durante,
+            svegliarsi,
+            lavorare,
+            studiare,
+            mangiare,
+            guidare,
+            leggere le e-mail,
+            incontrare gli amici,
+            divertirsi,
+            fare esercizio,
+          ]
+        example: |-
+          *Mi sveglio presto la mattina e leggo le mie e-mail.*
+          *A mezzogiorno studio e mangio con i miei amici.*
+          *La sera faccio esercizio fisico e mi diverto a guardare una serie.*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: La mia giornata
+        items:
+          - question: Io ___ la mattina.
+          - question: Io ___ a mezzogiorno.
+          - question: Io ___ la sera.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: La mia settimana perfetta'
+        skills: [Giorni della settimana e numeri, Preposizioni di base]
+        minutes: 20
+        steps:
+          - Immagina la tua settimana perfetta (o, se preferisci, descrivi la tua settimana vera).
+          - Scrivi **3 azioni per ogni giorno** della settimana. Usa i verbi della lista.
+          - Racconta la tua settimana alla classe.
+        wordBank:
+          [
+            svegliarsi,
+            andare,
+            studiare,
+            mangiare,
+            giocare,
+            aspettare,
+            incontrare,
+            fare esercizio,
+            ascoltare,
+            leggere,
+            cucinare,
+            lavorare,
+            dormire,
+            pulire,
+            fare shopping,
+          ]
+        example: |-
+          *La domenica mi sveglio tardi, guardo film e ceno con la mia famiglia.*
+          *Il lunedì vado a scuola, studio italiano e la sera faccio ginnastica.*
+          *Il martedì leggo un libro, esco con i miei amici e preparo la cena.*
+          *Il mercoledì ascolto musica, faccio i compiti e vado a letto presto.*
+          *Il giovedì pulisco la mia stanza, vado a fare la spesa e pranzo al ristorante.*
+          *Il venerdì gioco a calcio, guardo la TV ed esco con i miei amici.*
+          *Il sabato mi rilasso a casa, vado a trovare i miei nonni e faccio una passeggiata.*
+      - id: act3-week
+        type: discussionQuestions
+        title: La mia settimana
+        items:
+          - question: La domenica io ___, ___ e ___.
+          - question: Il lunedì io ___, ___ e ___.
+          - question: Il martedì io ___, ___ e ___.
+          - question: Il mercoledì io ___, ___ e ___.
+          - question: Il giovedì io ___, ___ e ___.
+          - question: Il venerdì io ___, ___ e ___.
+          - question: Il sabato io ___, ___ e ___.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Chi incontri ogni settimana?'
+        skills: [Giorni della settimana e numeri, Preposizioni di base]
+        steps:
+          - L'insegnante dice un giorno della settimana.
+          - Ogni studente dice **chi incontra quel giorno** e **perché**.
+        example: |-
+          **Insegnante:** Lunedì!
+          **Studente 1:** Incontro la mia amica Anna perché il lunedì vado a lezione di yoga.
+          **Studente 2:** Incontro i miei genitori perché ceniamo insieme il lunedì.
+          **Insegnante:** Martedì!
+          **Studente 1:** Incontro i miei studenti perché insegno storia il martedì.
+          **Studente 2:** Incontro il mio amico perché pranziamo insieme il martedì.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Giorni della settimana e numeri** (domande +
+          Attività 1 e 3) e **Preposizioni di base** (domande + Attività 2 e 4).
+          Combinazioni consigliate: Attività 1 e 2 oppure Attività 1 e 3.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Fai prima il tuo esempio e poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: Giostra degli incontri. Ogni studente ha 2 minuti con un compagno, poi cambia. Alla fine ognuno dice alla classe quando e dove si incontrerà.
+      - id: n-act2
+        anchor: act2
+        text: Fai prima tu un esempio, per esempio «La mattina mi sveglio presto e leggo le e-mail».
+      - id: n-act4
+        anchor: act4
+        text: È molto importante che ogni studente partecipi con almeno una frase.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: ci-vediamo-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-days
+        type: ruleSummary
+        skill: Giorni della settimana e numeri
+        rules:
+          - text: Da lunedì a venerdì i giorni non cambiano al plurale. Tutti i giorni sono maschili, tranne *la domenica*.
+            examples: [Lunedì vado a scuola., Tutti i lunedì studio molto.]
+          - text: Sabato e domenica invece cambiano al plurale.
+            examples: [sabato → sabati, domenica → domeniche]
+          - text: "Per parlare di un solo giorno **non** si usa l'articolo."
+            examples: [Lunedì vado a scuola., Sabato mi riposo.]
+          - text: "Per parlare di un'abitudine (ogni settimana) si usa l'articolo **il** (**la** con domenica)."
+            examples:
+              [Il lunedì vado a scuola., Il sabato mi riposo., La domenica mi sveglio tardi.]
+          - text: 'Impara bene i numeri da 1 a 10: servono per formare tutte le date del mese.'
+            examples:
+              [
+                'uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci → undici, dodici, tredici…',
+              ]
+          - text: Con le date usiamo **il** davanti al giorno, **a** o **in** con i mesi e **nel** con gli anni.
+            examples: [Il mio compleanno è il 5 marzo., Sono nato a marzo., Sono nato nel 1998.]
+      - id: days-table
+        type: table
+        caption: Un giorno o ogni settimana?
+        header: [Un solo giorno, Ogni settimana (abitudine)]
+        rows:
+          - [Lunedì vado a scuola., Il lunedì vado a scuola.]
+          - [Sabato mi riposo., Il sabato mi riposo.]
+          - [Domenica vedo i nonni., La domenica vedo i nonni.]
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: Preposizioni di base
+        rules:
+          - text: '**A** → direzione, destinazione o orario (*alle* = a + le).'
+            examples: [Vado a scuola., La lezione è alle 9.]
+          - text: '**In** → un luogo o un mezzo di trasporto.'
+            examples: [Sono in città., Viaggio in treno.]
+          - text: '**Di** → origine (con *essere*) o possesso. **Da** → da dove vieni.'
+            examples: [Io sono di Roma., Il libro è di Anna., Vengo da Tel Aviv.]
+          - text: '**Con** → compagnia o strumento.'
+            examples: [Vado con un amico., Taglio la carne con un coltello.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con la classe e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: ci-vediamo-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia questo messaggio e invialo. Mori ti farà delle domande e risponderà alle tue.
+      - id: mori-appuntamento
+        type: aiTutorPrompt
+        title: Fissare un appuntamento
+        message: >-
+          Ciao Mori! Vorrei fissare un appuntamento. Puoi farmi delle domande usando date e
+          numeri, giorni della settimana e preposizioni di tempo e di luogo? Per favore, usa
+          solo il presente e correggi i miei errori.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi continuare? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Attività extra con Mori
+      - id: mori-settimana
+        type: aiTutorPrompt
+        title: La mia settimana
+        intro: >-
+          Invia questo messaggio a Mori. Rispondi sempre con frasi complete: usa il
+          presente, le azioni, i giorni della settimana e le preposizioni di tempo e di
+          luogo.
+        message: Ciao Mori! Voglio raccontarti la mia settimana. Fammi delle domande sulla mia routine.
+      - id: mori-orari
+        type: aiTutorPrompt
+        title: Quando apre e quando chiude?
+        intro: 'Invia questo messaggio a Mori. Luoghi da usare: la banca, il supermercato, la mensa, la palestra, il centro commerciale.'
+        message: Ciao Mori! Fammi domande sui posti della città, a che ora aprono, a che ora chiudono e quando posso andarci.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: ci-vediamo-pratica
+    book: workbook
+    title: 'Pratica: Ci vediamo?'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-giorni
+        type: activity
+        activity: ci-vediamo-giorni
+      - id: ex-preposizioni
+        type: activity
+        activity: ci-vediamo-preposizioni
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: ci-vediamo-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole di Ci vediamo?
+        glossLang: he
+        link: https://quizlet.com/br/1068043150/italiano-basico-ci-vediamo-flash-cards/
+        items: &ci-vediamo-words
+          - { term: giorno, gloss: יום }
+          - { term: settimana, gloss: שבוע }
+          - { term: mese, gloss: חודש }
+          - { term: anno, gloss: שנה }
+          - { term: data, gloss: תאריך }
+          - { term: lunedì, gloss: יום שני }
+          - { term: martedì, gloss: יום שלישי }
+          - { term: mercoledì, gloss: יום רביעי }
+          - { term: giovedì, gloss: יום חמישי }
+          - { term: venerdì, gloss: יום שישי }
+          - { term: sabato, gloss: שבת }
+          - { term: domenica, gloss: יום ראשון }
+          - { term: mattina, gloss: בוקר }
+          - { term: mezzogiorno, gloss: צהריים }
+          - { term: sera, gloss: ערב }
+          - { term: notte, gloss: לילה }
+          - { term: oggi, gloss: היום }
+          - { term: domani, gloss: מחר }
+          - { term: compleanno, gloss: יום הולדת }
+          - { term: vacanza, gloss: חופשה }
+          - { term: scuola, gloss: בית ספר }
+          - { term: casa, gloss: בית }
+          - { term: banca, gloss: בנק }
+          - { term: supermercato, gloss: סופרמרקט }
+          - { term: palestra, gloss: חדר כושר }
+          - { term: centro commerciale, gloss: קניון }
+          - { term: amico, gloss: חבר }
+          - { term: famiglia, gloss: משפחה }
+          - { term: studiare, gloss: ללמוד }
+          - { term: mangiare, gloss: לאכול }
+          - { term: giocare, gloss: לשחק }
+          - { term: lavorare, gloss: לעבוד }
+          - { term: dormire, gloss: לישון }
+          - { term: leggere, gloss: לקרוא }
+          - { term: andare, gloss: ללכת }
+          - { term: incontrare, gloss: לפגוש }
+
+vocabulary:
+  - slug: ci-vediamo
+    title: Ci vediamo?
+    items: *ci-vediamo-words
+
+activities:
+  - slug: ci-vediamo-giorni
+    title: Giorni della settimana e numeri
+    minutes: 8
+    items:
+      - id: abitudine
+        type: multipleChoice
+        prompt: Quale frase parla di un'abitudine (ogni settimana)?
+        options:
+          - { text: Il sabato mi riposo., correct: true }
+          - {
+              text: Sabato mi riposo.,
+              feedback: "Senza articolo parliamo di un solo sabato. Per un'abitudine usiamo *il*: *Il sabato mi riposo.*",
+            }
+      - id: dopo-martedi
+        type: multipleChoice
+        prompt: Che giorno viene dopo martedì?
+        options:
+          - { text: mercoledì, correct: true }
+          - { text: lunedì, feedback: '*Lunedì* viene prima di martedì.' }
+          - { text: giovedì, feedback: '*Giovedì* viene dopo mercoledì.' }
+      - id: plurale-domenica
+        type: trueFalse
+        prompt: Il plurale di *domenica* è *domeniche*.
+        answer: true
+        feedback:
+          correct: Giusto! Domenica → domeniche.
+          incorrect: Sabato e domenica cambiano al plurale. Domenica → domeniche.
+      - id: lunedi-invariabile
+        type: trueFalse
+        prompt: '*Lunedì*, *martedì* e *venerdì* hanno la stessa forma al singolare e al plurale.'
+        answer: true
+        feedback:
+          correct: Giusto! Da lunedì a venerdì i giorni non cambiano al plurale.
+          incorrect: 'Da lunedì a venerdì i giorni non cambiano al plurale: *un lunedì*, *tutti i lunedì*.'
+      - id: plurale-sabato
+        type: fillBlank
+        prompt: Scrivi il plurale.
+        text: Il plurale di *sabato* è ___.
+        blanks: [[sabati]]
+      - id: numeri
+        type: matching
+        prompt: Unisci i numeri.
+        pairs:
+          - ['1', uno]
+          - ['4', quattro]
+          - ['6', sei]
+          - ['8', otto]
+          - ['10', dieci]
+      - id: date
+        type: fillBlank
+        prompt: Completa con *il* o *nel*.
+        text: Il mio compleanno è ___ 5 marzo. Sono nata ___ 1998.
+        blanks: [[il], [nel]]
+        wordBank: [il, nel]
+      - id: ordina-lunedi
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Il lunedì vado a scuola.
+
+  - slug: ci-vediamo-preposizioni
+    title: 'Preposizioni di base: a, in, di, da, con'
+    minutes: 8
+    items:
+      - id: a-scuola
+        type: multipleChoice
+        prompt: Vado ___ scuola.
+        options:
+          - { text: a, correct: true }
+          - {
+              text: di,
+              feedback: "*Di* è per l'origine o il possesso. Per la destinazione usa *a*: *Vado a scuola.*",
+            }
+          - {
+              text: con,
+              feedback: '*Con* è per la compagnia o lo strumento. Per la destinazione usa *a*.',
+            }
+      - id: in-treno
+        type: multipleChoice
+        prompt: Viaggio ___ treno.
+        options:
+          - { text: in, correct: true }
+          - { text: a, feedback: 'Per un mezzo di trasporto usiamo *in*: *Viaggio in treno.*' }
+          - { text: di, feedback: 'Per un mezzo di trasporto usiamo *in*: *Viaggio in treno.*' }
+      - id: di-anna
+        type: multipleChoice
+        prompt: Il libro è ___ Anna.
+        options:
+          - { text: di, correct: true }
+          - { text: con, feedback: 'Per il possesso usiamo *di*: *Il libro è di Anna.*' }
+          - { text: in, feedback: '*In* è per un luogo. Per il possesso usiamo *di*.' }
+      - id: completa
+        type: fillBlank
+        prompt: Completa con *alle*, *in* o *con*.
+        text: La lezione è ___ 9. Sono ___ città. Vado al cinema ___ un amico.
+        blanks: [[alle], [in], [con]]
+        wordBank: [alle, in, con]
+      - id: unisci-uso
+        type: matching
+        prompt: Unisci ogni preposizione al suo uso.
+        pairs:
+          - [a, direzione o orario]
+          - [in, luogo o mezzo di trasporto]
+          - [di, origine o possesso]
+          - [da, da dove vieni]
+          - [con, compagnia o strumento]
+      - id: orario
+        type: trueFalse
+        prompt: "Per l'orario usiamo *a*: *alle 9*, *alle 16:00*."
+        answer: true
+        feedback:
+          correct: Giusto! *Alle* = *a* + *le*.
+          incorrect: "Per l'orario usiamo *a*: *La lezione è alle 9.*"
+      - id: trasporto
+        type: trueFalse
+        prompt: 'Per un mezzo di trasporto usiamo *di*: *Viaggio di treno.*'
+        answer: false
+        feedback:
+          correct: 'Giusto! Diciamo *Viaggio in treno.*'
+          incorrect: 'Per un mezzo di trasporto usiamo *in*: *Viaggio in treno.*'
+      - id: ordina-treno
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Mia sorella viaggia in treno.

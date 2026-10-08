@@ -1,0 +1,560 @@
+# Cycle "Due chiacchiere", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: due-chiacchiere
+title: Due chiacchiere
+goal: Fare due chiacchiere con domande e risposte e frasi descrittive con essere e stare.
+position: 1
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Domande e risposte" and "Frasi descrittive") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary, verb "stare": the notebook copies the Spanish rule ("stare for temporary
+    states, emotions and location", example "Sto stanco"). This is wrong in Italian:
+    temporary states and location use essere ("Sono stanco", "Sono a casa"). The rule
+    is rewritten: stare is for how you feel / your health ("Come stai? Sto bene") and
+    for "stay" ("Oggi sto a casa"). Examples changed: "Sto stanco" → "Sto bene";
+    "Loro stanno in spiaggia" → "Oggi loro stanno a casa". Please confirm.
+  - >-
+    Summary, verb "essere": the notebook has two versions; the first conjugation list
+    is broken ("Lui/Lei/Tu sei", "Loro/Tu sei", "Sei" twice). Only the correct one is
+    kept, as a table with positive and negative forms (io sono / io non sono…).
+  - >-
+    Summary, question rule: "Parola interrogativa + verbo + soggetto" is kept but
+    explained for Italian: the subject is often left out (Dove lavori?) and, when it is
+    there, it usually comes after the verb (Come sta tua madre?).
+  - >-
+    Question-word table: "Quando – per chiedere informazioni sul meteo" (a
+    mistranslation of "time") → "sul tempo (giorno, ora)"; the example "Cosa fa per
+    vivere?" (formal, a calque of "what do you do for a living") → "Cosa fai nella
+    vita?". Heading "Riassumo della lezione" → "Riepilogo della lezione".
+  - >-
+    Activity 1 question bank: "Sei sposato?" → "Sei sposato / sposata?". Activity 2:
+    "È sposato/celibe/nubile/in una relazione" ("in una relazione" is a calque) →
+    "È sposato / sposata, single o fidanzato / fidanzata."; "Lavora in ___" → "Lavora
+    a / in ___"; the frame "Questo è mio ___" also gets "Questa è mia ___".
+  - >-
+    Activity 3: the answer "Studio inglese due volte a settimana" → "Studio
+    italiano…" (this is an Italian course). Expected questions are capitalised and the
+    free-time question is "Cosa ti piace fare nel tempo libero?". The answers and the
+    expected questions are in a teacher note only, so students do not see them before
+    the game. "Quanti fratelli hai?" is accepted for "Ho due fratelli e una sorella"
+    (fratelli can include sisters), next to "Quanti fratelli e sorelle hai?".
+  - >-
+    Activity 4: the clue "Sei dell'Argentina" (not idiomatic) → "Sei argentino".
+    The questions are with "sono" (first person), as in the example.
+  - >-
+    Mori: "usando le abilità? Domande e frasi descrittive." → "usando le abilità
+    «Domande e risposte» e «Frasi descrittive»". The tip "Se spiega in inglese" is
+    rewritten without "in inglese". The broken formatting of the game "Due verità e
+    una bugia" was cleaned up. For "Indovina la persona" ("Poi scambiare i ruoli") a
+    second message to send later was added ("Ora tocca a te!…").
+  - >-
+    Skill mapping (not stated in the notebook): Domande e risposte = Activities 1
+    and 3, Frasi descrittive = Activities 2 and 4, taken from the activity titles. The
+    notebook gives no recommended combination and no time for the introduction round.
+  - >-
+    The warm-up questions have no sentence frames in the notebook. Simple frames were
+    added (e.g. "Mi chiamo ___.", "Vivo a ___."). Please check or remove them.
+  - >-
+    Vocabulary: "chiamarsi – להיקרא / לקרוא בשם" → "להיקרא" (לקרוא בשם is "to call
+    someone by name"). Please confirm.
+  - The Quizlet link is kept without the tracking parameter "?new".
+  - Activity times given as ranges (15–20 minutes) are recorded as 20 minutes.
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: due-chiacchiere-classe
+    title: 'In classe: Due chiacchiere'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Due chiacchiere
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Domande e risposte
+            description: 'Le parole interrogative: *cosa, dove, quando, perché, come*'
+          - name: Frasi descrittive
+            description: Descrivere con *essere* e *stare* (forma positiva e negativa)
+      - id: quizlet
+        type: externalLink
+        label: Due chiacchiere su Quizlet
+        url: https://quizlet.com/br/1067269570/due-chiacchiere-conversazione-informale-updated-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazioni
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Mi piace ___ (fare qualcosa). / Mi piacciono ___ (delle cose).
+        example: Sono Dana. Mi piacciono i libri. / Mi piace leggere.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Come ti chiami?
+            frame: Mi chiamo ___.
+          - question: Dove lavori?
+            frame: Lavoro a / in ___.
+          - question: Cosa ti piace fare nel tuo tempo libero?
+            frame: Nel tempo libero mi piace ___.
+          - question: Cosa fai ogni giorno?
+            frame: Ogni giorno ___.
+          - question: Qual è il tuo posto preferito? Perché?
+            frame: Il mio posto preferito è ___, perché ___.
+          - question: Dove vivi / abiti?
+            frame: Vivo / Abito a ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Simulazione di vita reale: il primo incontro'
+        skills: [Domande e risposte]
+        minutes: 20
+        steps:
+          - Ascolta la spiegazione delle domande della lista.
+          - Lavorate in coppia. Ogni coppia sceglie cinque domande dalla lista.
+          - Fai le domande al tuo compagno / alla tua compagna e rispondi alle sue domande.
+          - Di' tre cose sul tuo compagno / sulla tua compagna, in terza persona.
+        example: |-
+          *Yossi è sposato, ha due figli. Gli piacciono i cani.*
+          *A Dana piace ballare. Ha tre sorelle e un fratello. Le piace l'hockey.*
+      - id: act1-questions
+        type: discussionQuestions
+        title: Lista delle domande
+        items:
+          - question: Mi chiamo ___. Come ti chiami?
+          - question: Dove vivi?
+          - question: Dove lavori?
+          - question: Sei sposato / sposata?
+          - question: Hai figli?
+          - question: Hai fratelli o sorelle?
+          - question: Ti piacciono gli animali? Quali animali?
+          - question: Ti piacciono gli sport? Quali?
+          - question: Cosa ti piace fare?
+          - question: Quando studi italiano?
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Chi è lui / lei?'
+        skills: [Frasi descrittive]
+        minutes: 20
+        steps:
+          - Scegli una persona importante per te e completa le frasi qui sotto.
+          - Lavorate in coppia.
+          - Lo studente A fa domande allo studente B sulla persona scelta.
+          - Poi cambiate ruolo.
+          - Tutti insieme, ognuno racconta una cosa che ha sentito sulla persona del compagno.
+        example: |-
+          *Chi è?*
+          *Come si chiama?*
+          *Dove vive?*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Completa le frasi
+        items:
+          - question: Questo è mio ___. / Questa è mia ___.
+          - question: Si chiama ___.
+          - question: Vive a ___.
+          - question: Lavora a / in ___.
+          - question: Gli / Le piace ___.
+          - question: È sposato / sposata, single o fidanzato / fidanzata.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Indovina la domanda'
+        skills: [Domande e risposte]
+        minutes: 20
+        steps:
+          - Ascolta la risposta che legge l'insegnante.
+          - Di' la domanda giusta per quella risposta. Ogni domanda giusta vale un punto.
+          - Se qualcuno sbaglia, prova un altro studente.
+          - Alla fine contiamo i punti e ripassiamo insieme le regole per fare le domande.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Indovina chi!'
+        skills: [Frasi descrittive]
+        minutes: 20
+        steps:
+          - Uno studente sceglie un personaggio per un altro studente (una persona famosa o qualcuno della classe).
+          - Un altro studente dà un piccolo indizio con *sei*.
+          - Lo studente fa domande sì / no con *sono* e indovina chi è.
+        example: |-
+          Lo studente A sceglie Lionel Messi per lo studente B.
+          Studente C (indizio): *Sei argentino.*
+          Studente B: *Sono un uomo?* — Sì.
+          *Sono famoso?* — Sì.
+          *Gioco a calcio?* — Sì.
+          *Gioco nella nazionale del mio paese?* — Sì.
+          *Sono Lionel Messi?* — Sì!
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Domande e risposte** (Attività 1 e 3) e **Frasi
+          descrittive** (Attività 2 e 4).
+      - id: n-intro
+        anchor: intro
+        text: Fai prima il tuo esempio e poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 15
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: Spiega il significato di ogni domanda della lista prima di dividere la classe in coppie. Ogni coppia sceglie cinque domande.
+      - id: n-act2
+        anchor: act2
+        text: Alla fine, in plenaria, ogni studente racconta un fatto sentito sulla persona scelta dal compagno.
+      - id: n-act3
+        anchor: act3
+        text: |-
+          Leggi ogni risposta; gli studenti dicono la domanda giusta (un punto per ogni domanda giusta). Alla fine conta i punti e spiega le regole delle domande.
+          1. Mi chiamo Yossi. → Come ti chiami?
+          2. Vengo dalla Francia. → Da dove vieni?
+          3. Mi piace viaggiare all'estero perché mi piace provare nuovi cibi e vedere nuovi posti. → Perché ti piace viaggiare all'estero?
+          4. Io vivo a Tel Aviv. → Dove vivi? (1 punto)
+          5. Lavoro alla New School. → Dove lavori? (1 punto)
+          6. Studio italiano due volte a settimana. → Quante volte a settimana studi italiano?
+          7. Nel tempo libero mi piace andare in spiaggia o leggere un libro. → Cosa ti piace fare nel tempo libero?
+          8. Ho due fratelli e una sorella. → Quanti fratelli hai? / Quanti fratelli e sorelle hai?
+          9. Il mio cibo preferito è la pizza. → Qual è il tuo cibo preferito?
+      - id: n-act4
+        anchor: act4
+        text: L'indizio usa sempre *sei* (Sei argentino); le domande usano *sono* (Sono famoso?).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: due-chiacchiere-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-questions
+        type: ruleSummary
+        skill: Domande e risposte
+        rules:
+          - text: Usiamo le parole interrogative per chiedere informazioni precise, non solo «sì» o «no».
+            examples: [Di dove sei?, Come stai?, Che cosa ti piace fare nel fine settimana?]
+          - text: "**Parola interrogativa + verbo.** Il soggetto spesso non si dice; se c'è, di solito va dopo il verbo."
+            examples: [Dove lavori?, Come sta tua madre?]
+          - text: Scegli la parola interrogativa dalla tabella.
+      - id: questions-table
+        type: table
+        caption: Le parole interrogative
+        header: [Parola interrogativa, Uso, Esempio]
+        rows:
+          - [Cosa, Per chiedere informazioni sulle cose, Cosa fai nella vita?]
+          - [Dove, Per chiedere informazioni sui luoghi, Dove vivi?]
+          - [
+              Quando,
+              'Per chiedere informazioni sul tempo (giorno, ora)',
+              Quand'è il tuo compleanno?,
+            ]
+          - [Perché, Per chiedere le ragioni, Perché ti sei trasferito qui?]
+          - [Come, Per chiedere informazioni sul modo o sui sentimenti, Come stai oggi?]
+      - id: rules-descriptive
+        type: ruleSummary
+        skill: Frasi descrittive
+        rules:
+          - text: Usiamo **essere** per descrivere persone, animali, luoghi o cose, e anche per dire come siamo adesso o dove siamo.
+            examples:
+              [Io sono felice., Lei è simpatica., Loro non sono alti., Sono stanco., Sono a casa.]
+          - text: 'Usiamo **stare** per dire come ci sentiamo o come va la salute (*Come stai? Sto bene.*) e per dire «rimanere» (*Oggi sto a casa.*).'
+            examples: [Sto bene., Oggi loro stanno a casa., Noi non stiamo male.]
+          - text: 'Per la forma negativa mettiamo **non** prima del verbo: *io non sono*, *tu non stai*.'
+      - id: essere-table
+        type: table
+        caption: Il verbo essere
+        header: [Persona, Forma positiva, Forma negativa]
+        rows:
+          - [Io, sono, non sono]
+          - [Tu, sei, non sei]
+          - [Lui / Lei, è, non è]
+          - [Noi, siamo, non siamo]
+          - [Voi, siete, non siete]
+          - [Loro, sono, non sono]
+      - id: stare-table
+        type: table
+        caption: Il verbo stare
+        header: [Persona, Forma positiva, Forma negativa]
+        rows:
+          - [Io, sto, non sto]
+          - [Tu, stai, non stai]
+          - [Lui / Lei, sta, non sta]
+          - [Noi, stiamo, non stiamo]
+          - [Voi, state, non state]
+          - [Loro, stanno, non stanno]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 15
+        text: Ripassa le due abilità con la classe e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: due-chiacchiere-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia questo messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-chiacchiere
+        type: aiTutorPrompt
+        title: Due chiacchiere
+        message: >-
+          Ciao Mori! Voglio fare due chiacchiere. Puoi farmi domande informali usando le
+          abilità «Domande e risposte» e «Frasi descrittive»? Usa solo il presente e
+          correggi i miei errori, per favore.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Fammi altre domande, per favore!**
+          Non capisci una spiegazione? Scrivi: **Puoi spiegarmelo in ebraico ma con la frase in italiano?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratica aggiuntiva
+      - id: mori-indovina
+        type: aiTutorPrompt
+        title: Indovina la persona
+        intro: Invia questo messaggio a Mori. Pensa a una persona della tua famiglia e rispondi alle sue domande.
+        message: Ciao Mori! Giochiamo. Penso a qualcuno della mia famiglia e tu devi indovinare chi è.
+      - id: mori-indovina-2
+        type: aiTutorPrompt
+        title: 'Indovina la persona: ora indovini tu'
+        intro: Quando Mori indovina, invia questo messaggio.
+        message: Ora tocca a te! Pensa a qualcuno e io devo indovinare chi è. Può essere una persona famosa.
+      - id: mori-verita
+        type: aiTutorPrompt
+        title: Due verità e una bugia
+        intro: >-
+          Invia questo messaggio a Mori. Poi scrivi tre frasi su di te: due sono vere e
+          una è falsa (per esempio: *Ho un fratello. Vivo a Gerusalemme. Sono medico.*).
+          Mori prova a indovinare la bugia!
+        message: >-
+          Ciao Mori! Giochiamo a «Due verità e una bugia». Ti dico tre cose su di me. Devi
+          indovinare quale non è vera.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: due-chiacchiere-pratica
+    book: workbook
+    title: 'Pratica: Due chiacchiere'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-domande
+        type: activity
+        activity: due-chiacchiere-domande
+      - id: ex-descrittive
+        type: activity
+        activity: due-chiacchiere-descrittive
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: due-chiacchiere-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole di Due chiacchiere
+        glossLang: he
+        link: https://quizlet.com/br/1067269570/due-chiacchiere-conversazione-informale-updated-flash-cards/
+        items: &due-chiacchiere-words
+          - { term: essere, gloss: להיות }
+          - { term: stare, gloss: להיות / להרגיש }
+          - { term: avere, gloss: להיות ל- }
+          - { term: vivere, gloss: לחיות }
+          - { term: abitare, gloss: לגור }
+          - { term: lavorare, gloss: לעבוד }
+          - { term: studiare, gloss: ללמוד }
+          - { term: leggere, gloss: לקרוא }
+          - { term: ballare, gloss: לרקוד }
+          - { term: viaggiare, gloss: לטייל / לנסוע }
+          - { term: andare, gloss: ללכת }
+          - { term: fare, gloss: לעשות }
+          - { term: chiamarsi, gloss: להיקרא }
+          - { term: parlare, gloss: לדבר }
+          - { term: chiedere, gloss: לשאול }
+          - { term: nome, gloss: שם }
+          - { term: amico / amica, gloss: חבר / חברה }
+          - { term: madre, gloss: אמא }
+          - { term: padre, gloss: אבא }
+          - { term: fratello, gloss: אח }
+          - { term: sorella, gloss: אחות }
+          - { term: famiglia, gloss: משפחה }
+          - { term: persona, gloss: אדם }
+          - { term: casa, gloss: בית }
+          - { term: città, gloss: עיר }
+          - { term: scuola, gloss: בית ספר }
+          - { term: lavoro, gloss: עבודה }
+          - { term: cibo, gloss: אוכל }
+          - { term: sport, gloss: ספורט }
+          - { term: animali, gloss: בעלי חיים }
+          - { term: tempo libero, gloss: זמן פנוי }
+          - { term: giorno, gloss: יום }
+          - { term: oggi, gloss: היום }
+          - { term: dove, gloss: איפה }
+          - { term: perché, gloss: למה }
+
+vocabulary:
+  - slug: due-chiacchiere
+    title: Due chiacchiere
+    items: *due-chiacchiere-words
+
+activities:
+  - slug: due-chiacchiere-domande
+    title: 'Domande e risposte: cosa, dove, quando, perché, come'
+    minutes: 8
+    items:
+      - id: vivo-a
+        type: multipleChoice
+        prompt: '*Vivo a Tel Aviv.* Qual è la domanda?'
+        options:
+          - { text: Dove vivi?, correct: true }
+          - {
+              text: Quando vivi?,
+              feedback: '*Quando* chiede il tempo (giorno, ora). Tel Aviv è un luogo: usa *dove*.',
+            }
+          - {
+              text: Cosa vivi?,
+              feedback: '*Cosa* chiede le cose. Tel Aviv è un luogo: usa *dove*.',
+            }
+      - id: vengo-da
+        type: multipleChoice
+        prompt: '*Vengo dalla Francia.* Qual è la domanda?'
+        options:
+          - { text: Da dove vieni?, correct: true }
+          - {
+              text: Dove vivi?,
+              feedback: 'A *Dove vivi?* rispondiamo *Vivo a…*. *Vengo da…* risponde a *Da dove vieni?*',
+            }
+          - {
+              text: Come vieni?,
+              feedback: "*Come* chiede il modo o i sentimenti. Per l'origine usa *Da dove vieni?*",
+            }
+      - id: come-stai
+        type: multipleChoice
+        prompt: ___ stai oggi? — Sto bene, grazie.
+        options:
+          - { text: Come, correct: true }
+          - { text: Dove, feedback: '*Bene* non è un luogo. Per i sentimenti usa *come*.' }
+          - {
+              text: Perché,
+              feedback: 'La risposta non è una ragione. Per i sentimenti usa *come*.',
+            }
+      - id: parole-uso
+        type: matching
+        prompt: Unisci ogni parola interrogativa al suo uso.
+        pairs:
+          - [Cosa, le cose]
+          - [Dove, i luoghi]
+          - [Quando, 'il tempo (giorno, ora)']
+          - [Perché, le ragioni]
+          - [Come, il modo o i sentimenti]
+      - id: si-no
+        type: trueFalse
+        prompt: Usiamo le parole interrogative per domande con la risposta solo «sì» o «no».
+        answer: false
+        feedback:
+          correct: 'Giusto! Le parole interrogative chiedono informazioni: *Dove vivi? — A Tel Aviv.*'
+          incorrect: 'Le parole interrogative chiedono informazioni, non solo «sì» o «no»: *Dove vivi? — A Tel Aviv.*'
+      - id: cosa-dove
+        type: fillBlank
+        prompt: Completa con la parola interrogativa giusta.
+        text: ___ ti piace fare? — Mi piace ballare. ___ lavori? — Lavoro alla New School.
+        blanks: [[Cosa, Che cosa, Che], [Dove]]
+        wordBank: [Cosa, Dove, Quando]
+      - id: perche
+        type: fillBlank
+        prompt: Completa la domanda.
+        text: ___ ti piace viaggiare? — Perché mi piace vedere nuovi posti.
+        blanks: [[Perché]]
+      - id: ordina-domanda
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Qual è il tuo cibo preferito?
+
+  - slug: due-chiacchiere-descrittive
+    title: 'Frasi descrittive: essere e stare'
+    minutes: 8
+    items:
+      - id: io-sono
+        type: multipleChoice
+        prompt: Io ___ felice.
+        options:
+          - { text: sono, correct: true }
+          - { text: sei, feedback: '*Sei* è per *tu*. Con *io* il verbo è *sono*.' }
+          - { text: è, feedback: '*È* è per *lui / lei*. Con *io* il verbo è *sono*.' }
+      - id: loro-sono
+        type: multipleChoice
+        prompt: Loro non ___ alti.
+        options:
+          - { text: sono, correct: true }
+          - { text: siamo, feedback: '*Siamo* è per *noi*. Con *loro* usa *sono*.' }
+          - { text: siete, feedback: '*Siete* è per *voi*. Con *loro* usa *sono*.' }
+      - id: sto-bene
+        type: multipleChoice
+        prompt: Come stai? — ___ bene, grazie.
+        options:
+          - { text: Sto, correct: true }
+          - {
+              text: Sono,
+              feedback: 'Per dire come ti senti, rispondi con *stare*: *Come stai? — Sto bene.*',
+            }
+          - { text: Sta, feedback: '*Sta* è per *lui / lei*. Con *io* usa *sto*.' }
+      - id: completa-essere
+        type: fillBlank
+        prompt: Completa con il verbo *essere*.
+        text: Tu ___ simpatico. Lei ___ gentile. Noi ___ di Tel Aviv.
+        blanks: [[sei], [è, "e'"], [siamo]]
+      - id: completa-stare
+        type: fillBlank
+        prompt: Completa con il verbo *stare*.
+        text: Io ___ bene. Voi come ___? Loro non ___ male.
+        blanks: [[sto], [state], [stanno]]
+      - id: unisci-essere
+        type: matching
+        prompt: Unisci ogni persona alla forma del verbo *essere*.
+        pairs:
+          - [io, sono]
+          - [tu, sei]
+          - [lui / lei, è]
+          - [noi, siamo]
+          - [voi, siete]
+      - id: negativa
+        type: trueFalse
+        prompt: 'Per la forma negativa mettiamo *non* prima del verbo: *Loro non sono alti.*'
+        answer: true
+        feedback:
+          correct: Giusto! *Non* va prima del verbo.
+          incorrect: '*Non* va prima del verbo: *Loro non sono alti*, *Noi non stiamo male*.'
+      - id: ordina-sorella
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Mia sorella non è stanca.
