@@ -151,6 +151,8 @@ small { display: block; color: var(--muted); font-size: 0.875rem; }
 .index { display: flex; flex-wrap: wrap; gap: 6px 10px; padding: 0; list-style: none; }
 .index a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--line); }
 .index a.checked::after { content: " ✓"; color: var(--ok); }
+/* Right-to-left courses lay out their cycles right to left; the page frame stays English. */
+.cycles { display: flex; flex-direction: column; gap: 32px; }
 .cycle { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; min-width: 0; }
 .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.75rem; color: var(--muted); margin: 0; }
 .goal { color: var(--muted); margin: 4px 0 8px; }
@@ -174,7 +176,7 @@ mark { background: var(--hl); color: var(--ink); padding: 0 4px; border-radius: 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 `;
 
-function page(courseTitle: string, cycles: CycleFile[]): string {
+function page(courseTitle: string, cycles: CycleFile[], dir: 'ltr' | 'rtl'): string {
   const total = cycles.reduce(
     (n, c) => n + c.activities.reduce((m, a) => m + a.items.length, 0),
     0,
@@ -197,7 +199,7 @@ function page(courseTitle: string, cycles: CycleFile[]): string {
       )
       .join('')}</ul></nav>
   </header>
-  ${cycles.map(cycleHtml).join('\n')}
+  <div dir="${dir}" class="cycles">${cycles.map(cycleHtml).join('\n')}</div>
 </main>
 <script>
 (() => {
@@ -238,7 +240,7 @@ function main() {
     process.exit(1);
   }
   const own = cycles.filter((c) => c.course === courseSlug).sort((a, b) => a.position - b.position);
-  writeFileSync(out, page(course.title, own));
+  writeFileSync(out, page(course.title, own, course.language.direction));
   console.log(`✓ ${own.length} cycle(s) → ${out}`);
 }
 
