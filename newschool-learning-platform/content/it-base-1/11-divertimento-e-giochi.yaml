@@ -1,0 +1,579 @@
+# Cycle "Divertimento e giochi", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: divertimento-e-giochi
+title: Divertimento e giochi
+goal: Parlare di giochi e attività con frasi al presente e aggettivi possessivi.
+position: 11
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Frasi al presente" and "Possessivi") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary rule "in italiano non si usano am, is, are come in inglese" was translated
+    from the English notebook. Rewritten as an Italian rule: the verb ending changes
+    with the person, the subject pronoun can be left out, and *sono* is never put
+    before another verb (the ✅/❌ example *Guardo la TV / Io sono guardo la TV* is
+    kept). A table of regular present verbs (guardare, leggere, dormire) was added
+    so the exercises have a rule to point to. Please confirm.
+  - >-
+    Possessive rules: the notebook only says the possessive goes before the noun. For
+    Italian the summary now adds that it normally takes the article (*il mio gioco,
+    la nostra casa*), that it agrees with the noun and not with the owner (*la sua
+    macchina* for a man too), that *loro* never changes and always has the article,
+    and that singular family nouns have no article (*mio fratello, tua madre*).
+    Please confirm the wording.
+  - >-
+    Corrections in the activities: Activity 2 example *Il mio è castano / Il tuo è
+    corto / Il suo è lungo* (for *capelli*, which is plural) → *I miei sono castani /
+    I tuoi sono corti / I suoi sono lunghi*; Activity 1 *Dì ai tuoi compagni* → *Di'
+    ai tuoi compagni*; Activity 5 *Nostro amico suona la chitarra* → *Il nostro amico
+    suona la chitarra*; Activity 4 *Ana* → *Anna*.
+  - >-
+    Summary table: the row label "Nostro" for *La nostra casa* is now "Nostra"; *Il
+    tuo gioco preferito è Simon Says* → *… è Simon dice*; *La sua attività preferita è
+    Mario Bros.* → *La sua attività preferita è giocare a Mario Bros.*
+  - >-
+    Spanish words left in the notebook were fixed: the heading "Actividad 5 … POSESIVOS"
+    → "Attività 5: Gioco di memoria" (possessivi).
+  - >-
+    Activity 4 (Due verità, una bugia) had Fase 2, Fase 3 and the example list twice,
+    with small differences (*Il tuo cane / Il suo cane*, *David / Davide*). Merged into
+    one list.
+  - >-
+    Warm-up: "Preferisci praticare sport o giochi da tavolo?" → "Preferisci fare sport
+    o giocare ai giochi da tavolo?"; the frame for question 1 ("Mi piace") was
+    completed as "La mattina mi piace ___."
+  - >-
+    Mori: "presente semplice" → "presente"; the tip "Me lo puoi spiegare in ebraico ma
+    con la frase in inglese?" → "… con la frase in italiano?" (and "se Mori ti spiega
+    qualcosa in inglese" → "in italiano").
+  - >-
+    Vocabulary: "Compagno" → "Compagno di classe" (gloss חבר לכיתה; *compagno* alone
+    also means partner); "Videogiochi" משחקי מחשב → משחקי וידאו; "Battere" → "Battere
+    (le mani)" למחוא (כפיים) / להכות; "Loro" שלהם → שלהם / שלהן. Please confirm.
+  - >-
+    Links: the Quizlet link lost its tracking parameter (funnelUUID); the memory game
+    (Google Slides, a .pptx file) is kept as the resource of Activity 5, without the
+    usp/ouid parameters.
+  - >-
+    The general information says Possessivi is practised with Activities 2 or 4;
+    Activity 5 (memory game) is also a possessives activity and is listed in the plan
+    note. The notebook gives no times for this cycle, so none are recorded (the
+    introduction note keeps the usual 10 minutes).
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes: students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: divertimento-e-giochi-classe
+    title: 'Classe: Divertimento e giochi'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Divertimento e giochi
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Frasi al presente
+            description: 'Azioni al presente: *io gioco, tu leggi, lei guarda un film*'
+          - name: Possessivi
+            description: '*mio, tuo, suo, nostro, loro* (il mio gioco preferito)'
+      - id: quizlet
+        type: externalLink
+        label: Divertimento e giochi su Quizlet
+        url: https://quizlet.com/br/1068056139/italiano-basico-divertimento-e-giochi-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Turno introduttivo
+      - id: intro
+        type: sentenceFrame
+        frame: Io sono ___. La mia attività preferita durante la settimana è ___.
+        example: Io sono Dana. La mia attività preferita durante la settimana è il corso di yoga.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Cosa ti piace fare la mattina?
+            frame: La mattina mi piace ___.
+          - question: Cosa ti piace fare la sera / la notte?
+            frame: La sera mi piace ___.
+          - question: Preferisci fare sport o giocare ai giochi da tavolo? Perché?
+            frame: Preferisco ___ perché ___.
+          - question: Cosa fa tuo fratello, tua sorella o un amico per divertirsi?
+            frame: Mio fratello / Mia sorella / Il mio amico ___. (*Mio fratello gioca a calcio. La mia amica guarda film.*)
+          - question: Cosa fai a casa quando piove?
+            frame: Quando piove, resto a casa e ___ con ___.
+          - question: Con chi giochi di solito? A cosa giocate?
+            frame: Gioco con ___. Giochiamo a ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Simon dice'
+        skills: [Frasi al presente, Possessivi]
+        steps:
+          - Ascolta l'insegnante. Fai l'azione solo se dice "Simon dice" e se la frase è per te.
+          - 'Attenzione ai possessivi: *Alza la tua mano* è per te; *Alza la mia mano* no.'
+          - Poi leggi tu una frase e di' ai tuoi compagni cosa fare.
+        example: |-
+          *Simon dice: "Alza la tua mano destra."*
+          *Simon dice: "Alza la mia mano destra."*
+          *Simon dice: "Batti le mani."*
+          *Simon dice: "Batti i piedi per terra."*
+          *Simon dice: "Toccati il naso."*
+          *Simon dice: "Muovi i tuoi capelli."*
+          *Simon dice: "Chiudi i tuoi occhi."*
+          *Simon dice: "Di' ai tuoi compagni di classe cosa fare."*
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Indovina il concetto'
+        skills: [Possessivi]
+        steps:
+          - Pensa a un concetto della lista (per esempio, *capelli*). Non dirlo!
+          - Dai degli indizi con i possessivi.
+          - Gli altri studenti ascoltano e cercano di indovinare il concetto.
+        example: '*I miei sono castani. I tuoi sono corti. I suoi sono lunghi.* → **capelli**'
+        wordBank:
+          - capelli
+          - occhi
+          - vestiti
+          - scarpe
+          - borsa
+          - casa
+          - macchina
+          - telefono
+          - famiglia
+          - animale domestico
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Scriviamo una storia insieme'
+        skills: [Frasi al presente]
+        steps:
+          - L'insegnante dice la prima frase.
+          - Ogni studente aggiunge una frase al presente per continuare la storia.
+        example: |-
+          *Insegnante: È una giornata piovosa e io…*
+          *Studente 1: Non mi piace.*
+          *Studente 2: Vado al supermercato e io…*
+          *Studente 3: Mi bagno.*
+          *FINE.*
+      - id: act3-starters
+        type: discussionQuestions
+        title: Prime frasi
+        answerable: false
+        items:
+          - question: È una giornata piovosa e io…
+          - question: Gioco a Monopoli con…
+          - question: Pulisco la mia casa in un giorno di pioggia…
+          - question: Non mi piacciono i giorni di pioggia e io…
+          - question: Guardo la televisione e…
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Due verità, una bugia'
+        skills: [Possessivi]
+        steps:
+          - Di' 3 frasi con i possessivi. Due sono vere e una è falsa.
+          - 'Gli altri studenti indovinano: "Qual è la bugia?"'
+          - Rivela la risposta.
+        example: |-
+          *Mia sorella si chiama Anna.*
+          *La nostra casa è blu.*
+          *Il suo animale preferito è la giraffa.*
+      - id: act4-examples
+        type: discussionQuestions
+        title: Esempi utili
+        answerable: false
+        items:
+          - question: Lo sport preferito di mio fratello è il calcio.
+          - question: Il tuo cane dorme sul letto.
+          - question: La tua scuola è a Londra.
+          - question: Il suo cibo preferito è la pasta.
+          - question: Il suo telefono è rosa.
+          - question: Il nome del nostro insegnante è Davide.
+      - id: act5
+        type: classActivity
+        title: 'Attività 5: Gioco di memoria'
+        skills: [Possessivi, Frasi al presente]
+        steps:
+          - L'insegnante condivide lo schermo con le carte. Ogni carta ha un numero.
+          - Scegli due numeri (per esempio, "Voglio la 3 e la 12").
+          - L'insegnante gira le carte. Dietro c'è un possessivo (*mio, tuo, suo, nostro, loro*) o un sostantivo (*fratello, cane, amico, famiglia, macchina, casa, professore…*).
+          - Se le due carte formano una coppia logica (possessivo + sostantivo), di' una frase completa al presente.
+          - Se non formano una coppia, le carte si coprono di nuovo e il turno passa al prossimo studente.
+        example: |-
+          *Mio fratello → Mio fratello vive a Roma.*
+          *Tua madre → Tua madre cucina molto bene.*
+          *Suo padre → Suo padre lavora in un ospedale.*
+          *Nostro amico → Il nostro amico suona la chitarra.*
+          *I loro gatti → I loro gatti dormono sul divano.*
+        resource:
+          label: Gioco di memoria (carte)
+          url: https://docs.google.com/presentation/d/1UFR3JGLZoH5frd5aX5AuKkDyrbvT3vta/edit?rtpof=true&sd=true
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Frasi al presente** (domande di riscaldamento,
+          Attività 1 e 3) e **Possessivi** (Attività 2, 4 e 5; anche l'Attività 1 usa i
+          possessivi). Scegli l'Attività 1 o la 3 per il presente, e la 2, la 4 o la 5
+          per i possessivi.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Dai prima il tuo esempio ("La mia attività preferita durante la settimana è il corso di yoga") e poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui appaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Dai le istruzioni con frasi con i possessivi. Gli studenti fanno l'azione solo
+          se dici "Simon dice" e se la frase riguarda loro (*la tua mano* sì, *la mia
+          mano* no). Alla fine gli studenti possono leggere e dire le frasi a turno.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Ricorda agli studenti che il possessivo concorda con il concetto: *i miei
+          capelli* → *I miei sono castani*; *la mia borsa* → *La mia è nera*.
+      - id: n-act4
+        anchor: act4
+        text: Ogni studente dice tre frasi; il gruppo indovina la bugia e poi lo studente rivela la risposta.
+      - id: n-act5
+        anchor: act5
+        text: Condividi lo schermo con la presentazione e "gira" le carte che sceglie ogni studente.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: divertimento-e-giochi-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Oggi abbiamo imparato
+      - id: rules-present
+        type: ruleSummary
+        skill: Frasi al presente
+        rules:
+          - text: "La frase è formata da: **chi fa l'azione + il verbo** (+ il resto)."
+            examples: [Io leggo un libro., Tu bevi il tè., Lui / Lei ascolta la musica.]
+          - text: La fine del verbo cambia secondo la persona.
+            examples: [Io guardo., Tu guardi., Lei guarda.]
+          - text: "Il verbo dice già chi fa l'azione: *io, tu, lui, lei* si possono togliere."
+            examples: [Gioco a tennis. (= Io gioco a tennis.)]
+          - text: Non si mette *sono* prima di un altro verbo.
+            examples: ['✅ Guardo la TV.', '❌ Io sono guardo la TV.']
+      - id: present-table
+        type: table
+        caption: Verbi regolari al presente
+        header: [Persona, '-are: guardare', '-ere: leggere', '-ire: dormire']
+        rows:
+          - [io, guardo, leggo, dormo]
+          - [tu, guardi, leggi, dormi]
+          - [lui / lei, guarda, legge, dorme]
+          - [noi, guardiamo, leggiamo, dormiamo]
+          - [voi, guardate, leggete, dormite]
+          - [loro, guardano, leggono, dormono]
+      - id: rules-possessives
+        type: ruleSummary
+        skill: Possessivi
+        rules:
+          - text: "Il possessivo va **prima** del sostantivo e di solito ha l'articolo: *il mio gioco*, *la nostra casa*."
+          - text: Il possessivo concorda con la **cosa** (maschile o femminile, singolare o plurale), non con la persona.
+            examples:
+              - il mio gioco · la mia casa
+              - i miei giochi · le mie scarpe
+              - Marco ha una macchina. **La sua** macchina è rossa.
+          - text: "*Loro* non cambia mai e ha sempre l'articolo."
+            examples: [il loro cane, i loro giochi]
+          - text: "Con un parente al singolare non si usa l'articolo: *mio fratello*, *tua madre*, *suo padre*."
+            examples: [Mio fratello gioca a calcio., I miei fratelli giocano a calcio.]
+      - id: possessives-table
+        type: table
+        caption: I possessivi
+        header: [Possessivo, Frase di esempio]
+        rows:
+          - [Mio / Mia / Miei / Mie, Il mio gioco preferito è il Monopoli.]
+          - [Tuo / Tua / Tuoi / Tue, Il tuo gioco preferito è Simon dice.]
+          - [Suo (cosa maschile), Il suo gioco preferito è il domino.]
+          - [Sua (cosa femminile), La sua attività preferita è giocare a Mario Bros.]
+          - [Nostro / Nostra / Nostri / Nostre, La nostra casa è grande.]
+          - [Loro, I loro giochi sono belli.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: divertimento-e-giochi-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia questo messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-giochi
+        type: aiTutorPrompt
+        title: Divertimento e giochi
+        message: >-
+          Ciao Mori! Vorrei fare delle brevi conversazioni. Puoi farmi delle domande su
+          "Divertimento e giochi" usando i possessivi e le azioni al presente? Correggi
+          i miei errori.
+      - id: mori-questions
+        type: text
+        text: |-
+          Rispondi sempre al **presente** e cerca di usare i **possessivi** (*mio, tuo, suo, nostro, loro*). Mori può chiederti:
+          Qual è il tuo gioco preferito? · Giochi con i tuoi amici? · Cosa fa tuo fratello o tua sorella per divertirsi? · Qual è l'attività preferita del tuo amico?
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Fammi altre domande, per favore!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Esercizi aggiuntivi
+      - id: mori-indovina
+        type: aiTutorPrompt
+        title: Indovina il gioco
+        intro: Invia questo messaggio a Mori.
+        message: Ehi Mori! Giochiamo. Io penso a un gioco e tu devi indovinare qual è.
+      - id: mori-indovina-next
+        type: text
+        text: |-
+          Dai indizi con il presente e i possessivi. **Esempio:** *È il mio gioco preferito. Ci gioco sul telefono. A mio fratello non piace.*
+          Quando Mori indovina, scrivi: «Ora tocca a te. Pensa a un gioco e io lo indovinerò.»
+      - id: mori-chi
+        type: aiTutorPrompt
+        title: Chi lo fa?
+        intro: Invia questo messaggio a Mori.
+        message: >-
+          Ciao Mori! Giochiamo. Ti racconto una cosa che qualcuno della mia famiglia fa
+          per divertirsi. Devi indovinare chi è. Userò i possessivi e il presente.
+      - id: mori-chi-next
+        type: text
+        text: |-
+          **Esempi di indizi:** *Gioca a tennis ogni sabato. È la figlia di mio padre.* · *Dopo la scuola gioca ai videogiochi. È il figlio dei miei genitori.* · *Guarda film con la sua migliore amica. La sua stanza è piena di poster.*
+          Mori indovina, per esempio: *È tua sorella?*
+          Poi scrivi: «Ora tocca a te. Dimmi cosa fa per divertirsi qualcuno della tua famiglia e io indovinerò chi è.»
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: divertimento-e-giochi-pratica
+    book: workbook
+    title: 'Pratica: Divertimento e giochi'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati con le due abilità del ciclo. Ogni risposta si corregge subito, e puoi riprovare.
+      - id: ex-presente
+        type: activity
+        activity: divertimento-e-giochi-presente
+      - id: ex-possessivi
+        type: activity
+        activity: divertimento-e-giochi-possessivi
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: divertimento-e-giochi-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Parole di divertimento e giochi
+        glossLang: he
+        link: https://quizlet.com/br/1068056139/italiano-basico-divertimento-e-giochi-flash-cards/
+        items: &divertimento-e-giochi-words
+          - { term: Fratello, gloss: אח }
+          - { term: Sorella, gloss: אחות }
+          - { term: Madre, gloss: אמא }
+          - { term: Padre, gloss: אבא }
+          - { term: Amico, gloss: חבר }
+          - { term: Amici, gloss: חברים }
+          - { term: Famiglia, gloss: משפחה }
+          - { term: Compagno di classe, gloss: חבר לכיתה }
+          - { term: Gioco, gloss: משחק }
+          - { term: Giochi da tavolo, gloss: משחקי קופסה }
+          - { term: Monopoli, gloss: מונופול }
+          - { term: Carte, gloss: קלפים }
+          - { term: Scacchi, gloss: שחמט }
+          - { term: Sport, gloss: ספורט }
+          - { term: Tennis, gloss: טניס }
+          - { term: Calcio, gloss: כדורגל }
+          - { term: Videogiochi, gloss: משחקי וידאו }
+          - { term: Televisione, gloss: טלוויזיה }
+          - { term: Film, gloss: סרט }
+          - { term: Attività, gloss: פעילות }
+          - { term: Giocare, gloss: לשחק }
+          - { term: Guardare, gloss: להסתכל / לצפות }
+          - { term: Andare, gloss: ללכת }
+          - { term: Fare, gloss: לעשות }
+          - { term: Correre, gloss: לרוץ }
+          - { term: Saltare, gloss: לקפוץ }
+          - { term: Muovere, gloss: להזיז }
+          - { term: Chiudere, gloss: לסגור }
+          - { term: Alzare, gloss: להרים }
+          - { term: Battere (le mani), gloss: למחוא (כפיים) / להכות }
+          - { term: Mio / Mia, gloss: שלי }
+          - { term: Tuo / Tua, gloss: שלך }
+          - { term: Suo / Sua, gloss: שלו / שלה }
+          - { term: Nostro / Nostra, gloss: שלנו }
+          - { term: Loro, gloss: שלהם / שלהן }
+          - { term: Casa, gloss: בית }
+          - { term: Macchina, gloss: מכונית }
+          - { term: Cane, gloss: כלב }
+          - { term: Gatto, gloss: חתול }
+          - { term: Professore, gloss: מורה }
+
+vocabulary:
+  - slug: divertimento-e-giochi
+    title: Divertimento e giochi
+    items: *divertimento-e-giochi-words
+
+activities:
+  - slug: divertimento-e-giochi-presente
+    title: 'Frasi al presente: azioni'
+    minutes: 8
+    items:
+      - id: lei-ascolta
+        type: multipleChoice
+        prompt: Lei ___ la musica. (ascoltare)
+        options:
+          - { text: ascolta, correct: true }
+          - { text: ascolto, feedback: '*Ascolto* è per *io*. Con *lei* usa *ascolta*.' }
+          - { text: ascolti, feedback: '*Ascolti* è per *tu*. Con *lei* usa *ascolta*.' }
+      - id: guardo-tv
+        type: multipleChoice
+        prompt: Quale frase è corretta?
+        options:
+          - { text: Guardo la TV., correct: true }
+          - {
+              text: Io sono guardo la TV.,
+              feedback: 'Non si mette *sono* prima di un altro verbo: *Guardo la TV.*',
+            }
+          - {
+              text: Io guarda la TV.,
+              feedback: '*Guarda* è per *lui / lei*. Con *io* usa *guardo*.',
+            }
+      - id: noi-giochiamo
+        type: multipleChoice
+        prompt: Noi ___ a carte.
+        options:
+          - { text: giochiamo, correct: true }
+          - { text: giocano, feedback: '*Giocano* è per *loro*. Con *noi* usa *giochiamo*.' }
+          - { text: giochi, feedback: '*Giochi* è per *tu*. Con *noi* usa *giochiamo*.' }
+      - id: leggo-bevi
+        type: fillBlank
+        prompt: Completa con il verbo al presente.
+        text: Io ___ (leggere) un libro e tu ___ (bere) il tè.
+        blanks: [[leggo], [bevi]]
+      - id: fratello-gioca
+        type: fillBlank
+        prompt: Completa con il verbo al presente.
+        text: Mio fratello ___ (giocare) a calcio.
+        blanks: [[gioca]]
+      - id: senza-io
+        type: trueFalse
+        prompt: "In italiano posso dire *Gioco a tennis* senza *io*: il verbo dice già chi fa l'azione."
+        answer: true
+        feedback:
+          correct: Giusto! *Gioco* è sempre *io*.
+          incorrect: 'Il verbo dice già la persona: *gioco* = *io gioco*. *Io* si può togliere.'
+      - id: guardare
+        type: matching
+        prompt: Unisci ogni persona al verbo *guardare*.
+        pairs:
+          - [io, guardo]
+          - [tu, guardi]
+          - [lui / lei, guarda]
+          - [noi, guardiamo]
+          - [loro, guardano]
+      - id: ordina-film
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Mia sorella guarda un film.
+
+  - slug: divertimento-e-giochi-possessivi
+    title: 'Possessivi: mio, tuo, suo, nostro, loro'
+    minutes: 8
+    items:
+      - id: la-nostra-casa
+        type: multipleChoice
+        prompt: ___ casa è grande. (di noi)
+        options:
+          - { text: La nostra, correct: true }
+          - { text: Il nostro, feedback: '*Casa* è femminile: usa *la nostra*.' }
+          - { text: Nostra, feedback: "Con una cosa serve l'articolo: *la nostra casa*." }
+      - id: mio-fratello
+        type: multipleChoice
+        prompt: Quale frase è corretta?
+        options:
+          - { text: Mio fratello gioca a calcio., correct: true }
+          - {
+              text: Il mio fratello gioca a calcio.,
+              feedback: "Con un parente al singolare non si usa l'articolo: *mio fratello*.",
+            }
+          - { text: Mia fratello gioca a calcio., feedback: '*Fratello* è maschile: usa *mio*.' }
+      - id: la-sua-macchina
+        type: multipleChoice
+        prompt: Marco ha una macchina. ___ macchina è rossa.
+        options:
+          - { text: La sua, correct: true }
+          - {
+              text: Il suo,
+              feedback: '*Macchina* è femminile: usa *la sua*, anche se Marco è un uomo.',
+            }
+          - { text: La loro, feedback: 'Marco è una persona sola: usa *la sua*.' }
+      - id: i-loro-gatti
+        type: multipleChoice
+        prompt: Anna e Luca hanno due gatti. ___ gatti dormono sul divano.
+        options:
+          - { text: I loro, correct: true }
+          - { text: I suoi, feedback: 'I gatti sono di due persone (Anna e Luca): usa *i loro*.' }
+          - { text: Loro, feedback: "*Loro* ha sempre l'articolo: *i loro gatti*." }
+      - id: suo-sua
+        type: trueFalse
+        prompt: '*Suo* e *sua* cambiano secondo la persona: *suo* per un uomo, *sua* per una donna.'
+        answer: false
+        feedback:
+          correct: 'Giusto! Cambiano secondo la cosa: *il suo gioco*, *la sua casa*.'
+          incorrect: 'Cambiano secondo la cosa, non la persona: *la sua macchina* (di Marco o di Anna).'
+      - id: mio-mie
+        type: fillBlank
+        prompt: Completa con *mio*, *mia*, *miei* o *mie*.
+        text: Il ___ gioco preferito è il Monopoli. Le ___ amiche giocano a tennis.
+        blanks: [[mio], [mie]]
+        wordBank: [mio, mia, miei, mie]
+      - id: articolo-possessivo
+        type: matching
+        prompt: Unisci ogni sostantivo all'articolo e al possessivo giusti.
+        pairs:
+          - [gioco, il mio]
+          - [casa, la mia]
+          - [giochi, i miei]
+          - [scarpe, le mie]
+      - id: ordina-chitarra
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Il nostro amico suona la chitarra.

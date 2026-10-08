@@ -1,0 +1,573 @@
+# Cycle "Obiettivi e progetti", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: obiettivi-e-progetti
+title: Obiettivi e progetti
+goal: Parlare dei tuoi obiettivi con i verbi al presente, le date e i numeri.
+position: 7
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Verbi al presente" and "Date e numeri") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Introduction: "Voglio iniziarne una nuova [carriera…]" is not correct Italian
+    ("iniziarne" = "to start one of them"); it is now "Voglio iniziare una nuova ___
+    (carriera / storia d'amore / amicizia / vita)".
+  - >-
+    Warm-up question 3 "Cosa stai facendo… Io sto ___" uses the present continuous;
+    the cycle teaches the simple present, so it is now "Cosa fai per raggiungere il
+    tuo obiettivo? Per raggiungere il mio obiettivo, io ___." Frames were added to
+    question 2 and the "A. B. C." list became one frame.
+  - >-
+    Activity 1 asks for 10 steps but the notebook lists 9 lines, the last in the past
+    ("ci sono riuscito"). There are now 10 lines; the last is in the present
+    ("Il ___, raggiungo il mio obiettivo!"). "Ma:" (stray word) → "Modello". The
+    10 steps are "passi" (not "passaggi").
+  - >-
+    Activity 2: "il suo l'obiettivo" → "il suo obiettivo"; goal bank "Leggere altri
+    libri" → "Leggere più libri"; "Essere più organizzato" → "organizzato /
+    organizzata".
+  - >-
+    Activity 3 example: the verb cards were conjugated ("Inizia, lavora, impara,
+    aiuta, finisci") → infinitives (iniziare, lavorare, imparare, aiutare, finire);
+    the step headings "Lavoro", "Aiutante", "Fine" → the card verbs. The example
+    plan mixed future and continuous ("lavorerà", "sta aiutando", "completerà",
+    "avvia"); it is now all in the present, with the card verbs (inizia, lavora,
+    impara, aiuta, finisce). "il 1 marzo" → "il primo marzo" (the cycle's own rule).
+    The year 2024 is in the past; changed to 2027. The dates (1, 5, 10, 15, 20) do
+    not match the number cards received (3, 5, 7, 9, 10) and September is not used;
+    kept as in the notebook. Please confirm or align them.
+  - >-
+    Activity 4: mismatched quotation marks ("Sì! »") fixed; "Il verbo È [verbo]?" →
+    "Il verbo è ___?".
+  - >-
+    Summary, present tense: the rule "Come usarlo" was empty. A table of the regular
+    present (studiare, leggere, sentire) was added, with one example per rule. The
+    negative (non before the verb) and question (same word order, rising voice)
+    rules are correct for Italian and were kept. "presente semplice" → "presente".
+  - >-
+    Summary, dates: rule 2 was an empty heading followed by a numbers table titled "I
+    Numeri 10-". Rule 2 is now "the other days use the plain number (il due maggio,
+    il 15 giugno)", and the table is "I numeri da 0 a 2000". "Ventitre" →
+    "ventitré". Please confirm.
+  - >-
+    Homework: the notebook has two written exercises instead of Mori messages
+    (numbered "Esercizio 1" and "Esercizio 3"; there is no Esercizio 2). They are
+    kept as "Esercizio 1" and "Esercizio 2". One Mori message and the standard tips
+    were ADDED so the cycle matches the others; please confirm or remove.
+  - >-
+    Vocabulary: "Perché, בגלל / למה" → "למה / כי" (*perché* means "why" and
+    "because"; בגלל is "because of"). Please confirm.
+  - >-
+    Links: the Quizlet link lost its tracking parameter ("funnelUUID"); the Activity 3
+    cards are a Google Docs link (allowed, "?usp=sharing" removed). Online, each
+    student makes a copy; in person, the teacher prints the cards (teacher note).
+  - >-
+    The notebook gives no times and no recommended combinations; the plan note
+    pairs the activities by skill (DATE: 1 and 3; VERBI: 2 and 4).
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: obiettivi-e-progetti-classe
+    title: 'Classe: Obiettivi e progetti'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Obiettivi e progetti
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Verbi al presente
+            description: 'Abitudini, routine e verità generali: *studio, lavori, impara*; *non* + verbo; le domande'
+          - name: Date e numeri
+            description: '*Il primo marzo, il 15 giugno*; i numeri da 0 a 2000'
+      - id: quizlet
+        type: externalLink
+        label: Obiettivi e progetti su Quizlet
+        url: https://quizlet.com/il/1008392159/goals-and-projects-basic-italian-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazione
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Voglio iniziare una nuova ___ (carriera / storia d'amore / amicizia / vita).
+        example: Mi chiamo Mario. Voglio iniziare una nuova carriera.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Hai un obiettivo? Qual è il tuo obiettivo?
+            frame: Il mio obiettivo è ___ entro il ___ (data).
+          - question: Quanti obiettivi hai per questo mese / quest'anno? Quali sono?
+            frame: Per quest'anno ho ___ obiettivi. Sono ___, ___ e ___.
+          - question: Cosa fai per raggiungere il tuo obiettivo?
+            frame: Per raggiungere il mio obiettivo, io ___.
+          - question: Come ti senti riguardo ai tuoi progressi?
+            frame: Mi sento ___ riguardo ai miei progressi.
+          - question: Perché questo obiettivo è importante per te?
+            frame: Questo obiettivo è importante per me perché ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Il mio nuovo obiettivo'
+        skills: [Date e numeri]
+        steps:
+          - Scrivi un elenco di **10 passi** per raggiungere il tuo obiettivo. Ogni passo ha una data di inizio.
+          - Condividi il tuo elenco con tutta la classe.
+        example: '*Il primo febbraio, io studio italiano per 30 minuti.*'
+      - id: act1-steps
+        type: discussionQuestions
+        title: I miei 10 passi
+        items:
+          - question: 1. Il ___ (data), io ___ per ___ minuti / ore / giorni / settimane.
+          - question: 2. Il ___ (data), io ___ per ___ minuti / ore / giorni / settimane.
+          - question: 3. Il ___ (data), io ___ per ___ minuti / ore / giorni / settimane.
+          - question: 4. Il ___ (data), io ___ per ___ minuti / ore / giorni / settimane.
+          - question: 5. Il ___ (data), io ___ per ___ minuti / ore / giorni / settimane.
+          - question: 6. Il ___ (data), io ___ per ___ minuti / ore / giorni / settimane.
+          - question: 7. Il ___ (data), io ___ per ___ minuti / ore / giorni / settimane.
+          - question: 8. Il ___ (data), io ___ per ___ minuti / ore / giorni / settimane.
+          - question: 9. Il ___ (data), io ___ per ___ minuti / ore / giorni / settimane.
+          - question: 10. Il ___ (data), raggiungo il mio obiettivo!
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Due cervelli funzionano meglio di uno!'
+        skills: [Verbi al presente]
+        steps:
+          - Lavora in gruppo.
+          - Lo studente 1 dice allo studente 2 il suo obiettivo per quest'anno. Puoi sceglierlo dalla lista.
+          - Lo studente 2 dice allo studente 1 cosa può fare per raggiungere il suo obiettivo. Dai **almeno 3 consigli**.
+          - Poi vi scambiate i ruoli.
+        wordBank:
+          - Parlare italiano fluentemente.
+          - Ottenere voti migliori a scuola.
+          - Fare nuove amicizie.
+          - Risparmiare denaro per qualcosa di speciale.
+          - Imparare un nuovo hobby (dipingere, ballare o suonare uno strumento).
+          - Mangiare più sano e fare attività fisica regolarmente.
+          - Essere più organizzato / organizzata con il mio tempo.
+          - Leggere più libri.
+          - Viaggiare in un posto nuovo.
+          - Migliorare le mie capacità di scrittura.
+          - Trovare un lavoro part-time.
+          - Trascorrere più tempo con la famiglia.
+          - Imparare a cucinare.
+          - Ridurre lo stress e rilassarmi di più.
+          - Aiutare qualcuno nel bisogno.
+        example: |-
+          **Studente 1:** Il mio obiettivo è parlare italiano fluentemente.
+          **Studente 2:** Puoi ___, ___ e ___.
+      - id: act2-frames
+        type: discussionQuestions
+        items:
+          - question: Il mio obiettivo è ___.
+          - question: Puoi ___, ___ e ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Le carte obiettivo del mio amico'
+        skills: [Date e numeri]
+        steps:
+          - 'Ricevi le carte: **5 verbi** (iniziare, lavorare, aiutare, imparare, finire), **10 numeri** (da 1 a 10) e **12 mesi** (da gennaio a dicembre).'
+          - Il tuo compagno ti dà **5 parole chiave**.
+          - Con le carte prepara un piano di obiettivi per un altro studente. Parla in **terza persona**.
+          - Scrivi **5 frasi**.
+        resource:
+          label: Le carte
+          url: https://docs.google.com/document/d/1o0s92Vn1agUri3iGlu1WSODIDklLtnP8Pcdkywga07w/edit
+        example: |-
+          **Verbi:** iniziare, lavorare, imparare, aiutare, finire
+          **Numeri:** 3, 5, 7, 9, 10
+          **Mesi:** marzo, aprile, giugno, settembre, dicembre
+          **Parole chiave del compagno:** inglese, computer, ore, insegnante, certificato
+          1. **Iniziare:** *Rachel inizia il progetto il primo marzo 2027.*
+          2. **Lavorare:** *Rachel lavora 3 ore al giorno dal 5 marzo 2027.*
+          3. **Imparare:** *Rachel impara l'inglese e il computer con il suo insegnante dal 10 aprile 2027.*
+          4. **Aiutare:** *Dal 15 giugno 2027 l'insegnante aiuta Rachel a studiare per un certificato.*
+          5. **Finire:** *Rachel finisce il progetto il 20 dicembre 2027.*
+      - id: act3-plan
+        type: discussionQuestions
+        title: Il piano di obiettivi
+        items:
+          - question: 'Iniziare: ___ inizia ___ il ___.'
+          - question: 'Lavorare: ___ lavora ___ dal ___.'
+          - question: 'Imparare: ___ impara ___ dal ___.'
+          - question: 'Aiutare: Dal ___, ___ aiuta ___ a ___.'
+          - question: 'Finire: ___ finisce ___ il ___.'
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Lo fai quando…?'
+        skills: [Verbi al presente]
+        steps:
+          - Uno studente sceglie un **verbo segreto** dalla lista e non lo dice al gruppo.
+          - Gli altri fanno **domande sì / no** per indovinare il verbo. Lo studente risponde solo «Sì» o «No».
+          - 'Quando il gruppo pensa di sapere il verbo, chiede: *Il verbo è ___?*'
+          - Se indovinano, lo studente dice «Sì!» e il giro è finito. Altrimenti, continuano a fare domande.
+          - Nel giro successivo, un altro studente sceglie un verbo segreto.
+        wordBank: [studiare, esercitarsi, lavorare, riposare, imparare]
+        example: |-
+          *(Il verbo segreto è «studiare».)*
+          **Studente 2:** Lo fai al lavoro?
+          **Studente 1:** No.
+          **Studente 3:** Lo fai a scuola?
+          **Studente 1:** Sì.
+          **Studente 2:** Il verbo è studiare?
+          **Studente 1:** Sì! Hai indovinato!
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Verbi al presente** (Attività 2 e 4) e **Date e
+          numeri** (Attività 1 e 3). Il quaderno non dà combinazioni né tempi: per
+          esempio, scegli l'Attività 1 o 3 e l'Attività 2 o 4.
+      - id: n-intro
+        anchor: intro
+        text: 'Dai prima il tuo esempio: «Mi chiamo Mario. Voglio iniziare una nuova carriera.» Poi chiedi a ogni studente.'
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui appaiono sotto ogni domanda.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          **Importante:** online, ogni studente deve fare una copia del documento delle
+          carte; in presenza, l'insegnante stampa le carte.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Scrivi alla lavagna i 5 verbi (studiare, esercitarsi, lavorare, riposare,
+          imparare) o dai l'elenco a ogni gruppo.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: obiettivi-e-progetti-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-presente
+        type: ruleSummary
+        skill: Verbi al presente
+        rules:
+          - text: Usiamo il **presente** per abitudini, routine e verità generali, cioè cose che succedono regolarmente o che sono sempre vere.
+            examples: [Studio italiano ogni giorno., Lei lavora in un ufficio.]
+          - text: '**Forma negativa:** mettiamo **non** prima del verbo.'
+            examples: [Non lavoro il sabato., Marco non legge molto.]
+          - text: "**Domanda:** l'ordine delle parole è lo stesso della frase affermativa. Quando parliamo, la voce sale alla fine; quando scriviamo, mettiamo il punto interrogativo."
+            examples: [Studi italiano? ↗, Lavorate il lunedì? ↗]
+      - id: presente-table
+        type: table
+        caption: Il presente dei verbi regolari
+        header: [Persona, Studiare, Leggere, Sentire]
+        rows:
+          - [io, studio, leggo, sento]
+          - [tu, studi, leggi, senti]
+          - [lui / lei, studia, legge, sente]
+          - [noi, studiamo, leggiamo, sentiamo]
+          - [voi, studiate, leggete, sentite]
+          - [loro, studiano, leggono, sentono]
+      - id: rules-date
+        type: ruleSummary
+        skill: Date e numeri
+        rules:
+          - text: Il **primo** giorno del mese è speciale. Usiamo la forma ordinale **primo**.
+            examples: [Il primo maggio., Rachel inizia il progetto il primo marzo.]
+          - text: 'Per gli altri giorni usiamo il numero normale: **il** + numero + mese + anno.'
+            examples: [Il due maggio., Il 15 giugno 2027.]
+      - id: numeri-table
+        type: table
+        caption: I numeri da 0 a 2000
+        header: ['#', Numero, '#', Numero, '#', Numero, '#', Numero]
+        rows:
+          - ['0', zero, '10', dieci, '20', venti, '30', trenta]
+          - ['1', uno, '11', undici, '21', ventuno, '40', quaranta]
+          - ['2', due, '12', dodici, '22', ventidue, '50', cinquanta]
+          - ['3', tre, '13', tredici, '23', ventitré, '60', sessanta]
+          - ['4', quattro, '14', quattordici, '24', ventiquattro, '70', settanta]
+          - ['5', cinque, '15', quindici, '25', venticinque, '80', ottanta]
+          - ['6', sei, '16', sedici, '26', ventisei, '90', novanta]
+          - ['7', sette, '17', diciassette, '27', ventisette, '100', cento]
+          - ['8', otto, '18', diciotto, '28', ventotto, '1000', mille]
+          - ['9', nove, '19', diciannove, '29', ventinove, '2000', duemila]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: obiettivi-e-progetti-compiti
+    title: Compiti a casa
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti a casa
+      - id: how
+        type: text
+        text: Completa tutti gli esercizi. Usa il presente nelle tue risposte e scrivi frasi complete.
+      - id: ex1-title
+        type: heading
+        level: 3
+        text: 'Esercizio 1: Domande e risposte'
+      - id: ex1
+        type: discussionQuestions
+        items:
+          - question: Cosa fai nel tempo libero?
+            frame: Nel tempo libero ___.
+          - question: Dove trovi ispirazione per i tuoi progetti?
+            frame: Trovo ispirazione ___.
+          - question: Quando ti senti più produttivo / produttiva durante la giornata?
+            frame: Mi sento più produttivo / produttiva ___.
+      - id: ex2-title
+        type: heading
+        level: 3
+        text: 'Esercizio 2: Comprensione scritta'
+      - id: ex2-intro
+        type: text
+        text: Leggi il testo e rispondi alle domande.
+      - id: ex2-text
+        type: text
+        text: >-
+          L'obiettivo di John è migliorare la sua salute. Ha intenzione di fare attività
+          fisica ogni giorno e di mangiare sano. Al mattino si allena in palestra e a
+          pranzo e a cena segue una dieta sana. John parla ogni mese con il suo
+          nutrizionista dei suoi progressi. Il suo obiettivo è importante per lui perché
+          vuole sentirsi bene ed essere più attivo. Spera di raggiungere il suo obiettivo
+          entro la fine dell'anno.
+      - id: ex2
+        type: discussionQuestions
+        items:
+          - question: Qual è l'obiettivo di John?
+          - question: Quando si allena?
+          - question: A chi racconta John i suoi progressi?
+          - question: Perché il suo obiettivo è importante per lui?
+          - question: Quando spera John di raggiungere il suo obiettivo?
+      - id: mori-title
+        type: heading
+        level: 3
+        text: Pratica con Mori
+      - id: mori-obiettivo
+        type: aiTutorPrompt
+        title: Il mio nuovo obiettivo
+        intro: Apri la chat con Mori, copia questo messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+        message: >-
+          Ciao Mori! Ho un nuovo obiettivo. Puoi farmi delle domande sul mio obiettivo
+          usando le abilità "Verbi al presente" e "Date e numeri"? Usa solo il presente e,
+          per favore, correggi i miei errori.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, chiedimi di più!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico, ma con la frase in italiano?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: obiettivi-e-progetti-pratica
+    book: workbook
+    title: 'Pratica: Obiettivi e progetti'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratica le due abilità del ciclo. Ogni risposta si corregge subito, e puoi riprovare.
+      - id: ex-verbi
+        type: activity
+        activity: obiettivi-e-progetti-verbi
+      - id: ex-date
+        type: activity
+        activity: obiettivi-e-progetti-date
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: obiettivi-e-progetti-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Parole degli obiettivi e dei progetti
+        glossLang: he
+        link: https://quizlet.com/il/1008392159/goals-and-projects-basic-italian-flash-cards/
+        items: &obiettivi-e-progetti-words
+          - { term: Obiettivo, gloss: מטרה }
+          - { term: Progetto, gloss: פרויקט }
+          - { term: Importante, gloss: חשוב }
+          - { term: Nuovo, gloss: חדש }
+          - { term: Carriera, gloss: קריירה }
+          - { term: Amicizia, gloss: חברות }
+          - { term: Vita, gloss: חיים }
+          - { term: Anno, gloss: שנה }
+          - { term: Mese, gloss: חודש }
+          - { term: Giorno, gloss: יום }
+          - { term: Data, gloss: תאריך }
+          - { term: Numero, gloss: מספר }
+          - { term: Passo, gloss: צעד }
+          - { term: Tempo, gloss: זמן }
+          - { term: Ore, gloss: שעות }
+          - { term: Settimana, gloss: שבוע }
+          - { term: Organizzato, gloss: מאורגן }
+          - { term: Progresso, gloss: התקדמות }
+          - { term: Sentire, gloss: להרגיש }
+          - { term: Perché, gloss: למה / כי }
+          - { term: Iniziare, gloss: להתחיל }
+          - { term: Lavorare, gloss: לעבוד }
+          - { term: Aiutare, gloss: לעזור }
+          - { term: Imparare, gloss: ללמוד }
+          - { term: Finire, gloss: לסיים }
+          - { term: Studiare, gloss: ללמוד (באופן אקדמי) }
+          - { term: Esercitarsi, gloss: להתאמן }
+          - { term: Riposare, gloss: לנוח }
+          - { term: Parlare, gloss: לדבר }
+          - { term: Leggere, gloss: לקרוא }
+          - { term: Uno, gloss: אחד }
+          - { term: Cinque, gloss: חמש }
+          - { term: Dieci, gloss: עשר }
+          - { term: Gennaio, gloss: ינואר }
+
+vocabulary:
+  - slug: obiettivi-e-progetti
+    title: Obiettivi e progetti
+    items: *obiettivi-e-progetti-words
+
+activities:
+  - slug: obiettivi-e-progetti-verbi
+    title: Verbi al presente
+    minutes: 8
+    items:
+      - id: io-studio
+        type: multipleChoice
+        prompt: Io ___ italiano ogni giorno.
+        options:
+          - { text: studio, correct: true }
+          - { text: studia, feedback: '*Studia* è per *lui / lei*. Con *io*: *studio*.' }
+          - { text: studiamo, feedback: '*Studiamo* è per *noi*. Con *io*: *studio*.' }
+      - id: lei-lavora
+        type: multipleChoice
+        prompt: Lei ___ in un ufficio.
+        options:
+          - { text: lavora, correct: true }
+          - { text: lavoro, feedback: '*Lavoro* è per *io*. Con *lei*: *lavora*.' }
+          - { text: lavorano, feedback: '*Lavorano* è per *loro*. Con *lei*: *lavora*.' }
+      - id: noi-voi
+        type: fillBlank
+        prompt: Scrivi il verbo al presente.
+        text: Noi ___ (imparare) a cucinare. Voi ___ (leggere) molti libri?
+        blanks: [[impariamo], [leggete]]
+      - id: studiare-persone
+        type: matching
+        prompt: Unisci ogni persona alla forma di *studiare*.
+        pairs:
+          - [io, studio]
+          - [tu, studi]
+          - [lui / lei, studia]
+          - [noi, studiamo]
+          - [loro, studiano]
+      - id: negativa
+        type: multipleChoice
+        prompt: Quale frase negativa è giusta?
+        options:
+          - { text: Non lavoro il sabato., correct: true }
+          - { text: Lavoro non il sabato., feedback: '*Non* va **prima** del verbo: *Non lavoro*.' }
+          - {
+              text: No lavoro il sabato.,
+              feedback: 'Prima del verbo usiamo *non*, non *no*: *Non lavoro*.',
+            }
+      - id: domanda-ordine
+        type: trueFalse
+        prompt: 'In italiano una domanda può avere lo stesso ordine delle parole di una frase affermativa: *Studi italiano?*'
+        answer: true
+        feedback:
+          correct: Giusto! Cambia solo la voce, che sale alla fine (e il punto interrogativo quando scriviamo).
+          incorrect: "L'ordine non cambia: *Studi italiano.* → *Studi italiano?* Cambia solo la voce, che sale alla fine."
+      - id: parli-parlo
+        type: fillBlank
+        prompt: Scrivi il verbo *parlare* al presente.
+        text: Tu ___ italiano? Sì, ___ italiano.
+        blanks: [[parli], [parlo, io parlo]]
+      - id: ordina-rachel
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Rachel lavora tre ore al giorno.
+
+  - slug: obiettivi-e-progetti-date
+    title: Date e numeri
+    minutes: 8
+    items:
+      - id: primo-maggio
+        type: multipleChoice
+        prompt: La festa è ___ maggio.
+        options:
+          - { text: il primo, correct: true }
+          - {
+              text: l'uno,
+              feedback: 'Per il primo giorno del mese usiamo **primo**: *il primo maggio*.',
+            }
+          - {
+              text: il uno,
+              feedback: 'Per il primo giorno del mese usiamo **primo**: *il primo maggio*.',
+            }
+      - id: primo-due
+        type: trueFalse
+        prompt: Diciamo *il primo gennaio*, ma *il due gennaio*.
+        answer: true
+        feedback:
+          correct: Giusto! Solo il primo giorno usa la forma ordinale *primo*.
+          incorrect: 'Solo il primo giorno del mese usa *primo*. Gli altri usano il numero normale: *il due gennaio*.'
+      - id: il-data
+        type: multipleChoice
+        prompt: Rachel finisce il progetto ___ 20 dicembre.
+        options:
+          - { text: il, correct: true }
+          - { text: in, feedback: 'Prima di una data usiamo **il**: *il 20 dicembre*.' }
+          - { text: a, feedback: 'Prima di una data usiamo **il**: *il 20 dicembre*.' }
+      - id: tredici-diciotto
+        type: fillBlank
+        prompt: Scrivi i numeri in parole.
+        text: Inizio il ___ (13) aprile e finisco il ___ (18) aprile.
+        blanks: [[tredici], [diciotto]]
+      - id: ventitre
+        type: multipleChoice
+        prompt: Come si scrive 23?
+        options:
+          - { text: ventitré, correct: true }
+          - {
+              text: ventitre,
+              feedback: "Quando *tre* è alla fine di un numero lungo prende l'accento: *ventitré*.",
+            }
+          - { text: treventi, feedback: "Prima la decina, poi l'unità: *ventitré*." }
+      - id: mesi-ebraico
+        type: matching
+        prompt: Unisci ogni mese al suo nome in ebraico.
+        pairs:
+          - [gennaio, ינואר]
+          - [marzo, מרץ]
+          - [giugno, יוני]
+          - [settembre, ספטמבר]
+          - [dicembre, דצמבר]
+      - id: cento-mille
+        type: fillBlank
+        prompt: Scrivi i numeri in parole.
+        text: 100 = ___. 1000 = ___.
+        blanks: [[cento], [mille]]
+      - id: ordina-primo
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Rachel inizia il progetto il primo marzo.

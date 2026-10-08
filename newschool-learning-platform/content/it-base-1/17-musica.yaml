@@ -1,0 +1,617 @@
+# Cycle "Musica", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: musica
+title: Musica
+goal: Parlare di musica con le domande e i verbi al presente.
+position: 17
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Costruire domande" and "Verbi al presente") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Activity 2 is Gianni Rodari's poem "Dopo la pioggia", which is still under
+    copyright. The poem text is NOT copied into the platform: the teacher shows it
+    from the old notebook (or a book) with the verses out of order. Only the steps,
+    the answer boxes and the list of verbs per stanza (teacher note) are kept. Please
+    check the verb key.
+  - >-
+    Activity 4 ("E penso a te", Lucio Battisti) is a gap-fill of the song lyrics. The
+    lyrics are NOT copied (copyright); the YouTube link is kept without its tracking
+    parameter and only the verb bank is kept. The notebook's solution line does not
+    match the 16 gaps: it lists 17 words, "andiamo" does not seem to be in the song,
+    "è" appears twice and "sei" only once (the song seems to have "sei" twice), and
+    the words are not in gap order. The word bank keeps the notebook's words (without
+    the duplicate "è"); please check it against the song before class.
+  - >-
+    Activity 1: the YouTube link is kept without its "?si=" tracking parameter. We
+    could not verify from here that it is "Gioca Jouer"; please check.
+  - >-
+    Summary, questions: the notebook's structure "Parola interrogativa + Soggetto +
+    Verbo + Dettagli" is a literal translation of the English rule. In Italian the
+    subject pronoun is usually left out, and a subject noun normally comes after the
+    verb (Quando inizia il concerto?). It is rewritten as "parola interrogativa +
+    verbo + (soggetto) + dettagli". Please confirm.
+  - >-
+    Summary, present tense: the -are / -ere / -ire table (suonare, leggere, sentire)
+    is kept as a person-by-person table. The "mi piace" rule listed "gli piace (a
+    lui)" but not "a lei": "le piace (a lei)" was added.
+  - >-
+    Homework: the notebook's homework is written work, not a Mori conversation, so
+    the "Compiti" section has two answer boxes and no Mori prompt or tips (as in the
+    Spanish course). The example for the question task ("Qual è la tua canzone
+    preferita?") did not use the requested words cosa / dove / quando; it is replaced
+    by "Dove ascolti la musica?".
+  - >-
+    Corrections: "Actividad 5: Intrevista musicale" → "Attività 5: Intervista
+    musicale" (Spanish word and typo); "Parte 2 – Domande- per il insegiante" → "per
+    l'insegnante"; warm-up frame "Ascolto la musica di (parte della giornata)" →
+    "Ascolto la musica di mattina / di pomeriggio / di sera"; "si stan" note removed
+    with the lyrics.
+  - >-
+    Activity 3 answer key: "Chi è il tuo cantante preferito?" → "Chi è la tua cantante
+    preferita?" (the answer is Laura Pausini); "Dove vai a sentire i concerti?" (for
+    "Vado spesso ai concerti di musica pop") → "A quali concerti vai spesso?". Please
+    confirm.
+  - >-
+    Vocabulary: "per godere" → "Godere"; "Studio" (glossed ללמוד, "to study") →
+    "Studiare"; the duplicate "Vivere" is removed; "Gridare" is glossed "לצעוק" (was
+    "לצרוח", to scream). The partial niqqud in the glosses is removed so all glosses
+    look the same. Please confirm.
+  - >-
+    Times: the introduction round (at most 5 minutes) and Activity 5 (2 + 8 + 5 = 15
+    minutes) are recorded. The other activities have no time in the notebook.
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: musica-classe
+    title: 'Classe: Musica'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Musica
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Costruire domande
+            description: 'Le parole interrogative *quale, dove, quando, chi*'
+          - name: Verbi al presente
+            description: 'I verbi in *-are, -ere, -ire* al presente (*suono, leggo, sento*)'
+      - id: quizlet
+        type: externalLink
+        label: Musica su Quizlet
+        url: https://quizlet.com/il/1010497695/basic-italian-music-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Turno di presentazione
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Ascolto musica ogni giorno / ___ volte a settimana.
+        example: Sono Mario. Ascolto musica ogni giorno.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Qual è la tua canzone preferita?
+            frame: La mia canzone preferita è ___.
+          - question: Dove ascolti la musica?
+            frame: Ascolto musica ___.
+          - question: Quando ascolti la musica?
+            frame: Ascolto la musica di mattina / di pomeriggio / di sera.
+          - question: La musica è importante per te? Perché?
+            frame: Sì, la musica è importante per me perché ___. / No, la musica non è importante per me perché ___.
+          - question: Cosa fai quando ascolti la tua canzone preferita?
+            frame: Io ___ (ballo, canto, penso, cucino) quando ascolto ___.
+          - question: Preferisci ascoltare musica o podcast? Perché?
+            frame: Preferisco ascoltare ___ perché ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Facciamo domande alla canzone'
+        skills: [Costruire domande]
+        steps:
+          - Ascolta la canzone «Gioca Jouer» (o un'altra canzone scelta dall'insegnante).
+          - Guarda il video.
+          - Rispondi alle domande qui sotto.
+        resource:
+          label: «Gioca Jouer» (YouTube)
+          url: https://youtu.be/wGvUNaZwoy8
+      - id: act1-questions
+        type: discussionQuestions
+        title: Domande sulla canzone
+        items:
+          - question: Quali verbi all'infinito ci sono nella canzone? (Trova i verbi.)
+          - question: Puoi creare una frase con due verbi all'infinito?
+            frame: Mi piace ___ e ___.
+          - question: Perché ti piace (o non ti piace) questa canzone?
+            frame: Mi piace / Non mi piace questa canzone perché ___.
+          - question: Perché questa canzone è utile per imparare l'italiano?
+            frame: Questa canzone è utile perché ___.
+          - question: Qual è la tua parte preferita della canzone?
+            frame: La mia parte preferita è ___.
+          - question: Qual è la parola più importante nella canzone?
+            frame: La parola più importante è ___.
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Riscriviamo una poesia!'
+        skills: [Verbi al presente]
+        steps:
+          - L'insegnante mostra la poesia «Dopo la pioggia» di Gianni Rodari. Le strofe sono in disordine.
+          - Metti le strofe in ordine.
+          - Scrivi i verbi che trovi in ogni strofa.
+      - id: act2-verbs
+        type: discussionQuestions
+        title: I verbi di ogni strofa
+        items:
+          - question: 'Strofa 1: ___'
+          - question: 'Strofa 2: ___'
+          - question: 'Strofa 3: ___'
+          - question: 'Strofa 4: ___'
+          - question: 'Strofa 5: ___'
+          - question: 'Strofa 6: ___'
+          - question: 'Strofa 7: ___'
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Indovina la domanda'
+        skills: [Costruire domande]
+        steps:
+          - 'Scrivi 3 affermazioni sui tuoi gusti musicali: dove ascolti la musica, quale genere ami…'
+          - Leggi un'affermazione. I compagni scrivono la domanda giusta.
+          - Pratica anche con le affermazioni qui sotto.
+        example: |-
+          *Mi piace ascoltare la musica nel parco.*
+          Domanda: *Dove ti piace ascoltare la musica?*
+      - id: act3-mine
+        type: discussionQuestions
+        title: Le mie affermazioni
+        items:
+          - question: 'Affermazione 1: ___'
+          - question: 'Affermazione 2: ___'
+          - question: 'Affermazione 3: ___'
+      - id: act3-statements
+        type: discussionQuestions
+        title: Qual è la domanda?
+        items:
+          - question: Mi piace ascoltare la musica nel parco.
+            frame: ___?
+          - question: Amo la musica rock.
+            frame: ___?
+          - question: Ascolto la musica ogni mattina.
+            frame: ___?
+          - question: Mi piace cantare le canzoni italiane.
+            frame: ___?
+          - question: Preferisco ascoltare la musica con gli amici.
+            frame: ___?
+          - question: Non mi piace la musica classica.
+            frame: ___?
+          - question: Suono la chitarra nel mio tempo libero.
+            frame: ___?
+          - question: Ascolto la musica con le cuffie a casa.
+            frame: ___?
+          - question: Mi piace ballare con la musica latina.
+            frame: ___?
+          - question: La mia cantante preferita è Laura Pausini.
+            frame: ___?
+          - question: Vado spesso ai concerti di musica pop.
+            frame: ___?
+          - question: Studio meglio con la musica jazz in sottofondo.
+            frame: ___?
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: E penso a te…'
+        skills: [Verbi al presente]
+        steps:
+          - Ascolta la canzone «E penso a te» di Lucio Battisti (1972).
+          - L'insegnante mostra il testo con alcuni verbi nascosti.
+          - Completa gli spazi con il verbo giusto della lista.
+        wordBank:
+          [
+            lavoro,
+            penso,
+            torno,
+            telefono,
+            sorrido,
+            stai,
+            sei,
+            so,
+            fai,
+            è,
+            sperano,
+            accompagno,
+            sono,
+            chiudo,
+            dormo,
+            andiamo,
+          ]
+        resource:
+          label: «E penso a te», Lucio Battisti (YouTube)
+          url: https://youtu.be/QPPDFCjBvLM
+      - id: act5
+        type: classActivity
+        title: 'Attività 5: Intervista musicale'
+        skills: [Costruire domande, Verbi al presente]
+        minutes: 15
+        steps:
+          - Leggi le domande qui sotto (2 minuti).
+          - Lavorate in coppia. Fai le domande al tuo compagno ad alta voce e scrivi le sue risposte (8 minuti).
+          - Condividi con il gruppo **un'informazione interessante** sul tuo compagno (5 minuti).
+        example: |-
+          A: *Quale strumento ti piace di più?*
+          B: *Mi piace la chitarra.*
+          *Lei ascolta la musica su Spotify.* / *Lui non condivide la musica con gli amici.*
+      - id: act5-questions
+        type: discussionQuestions
+        title: Intervista
+        items:
+          - question: Quale strumento ti piace di più?
+            frame: Mi piace di più ___.
+          - question: Con quale applicazione ascolti la musica?
+            frame: Ascolto la musica con ___.
+          - question: Con quale frequenza ascolti la musica?
+            frame: Ascolto la musica ogni giorno. / Ascolto la musica ___ volte a settimana.
+          - question: Che tipo di musica non ti piace?
+            frame: Non mi piace la musica ___.
+          - question: Cosa fai a un concerto?
+            frame: A un concerto, io ___.
+          - question: Chi canta bene nella tua famiglia?
+            frame: Mio / Mia ___ canta bene.
+          - question: Condividi la musica con i tuoi amici?
+            frame: Sì, condivido la musica con i miei amici. / No, non condivido la musica con i miei amici.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Costruire domande** (Attività 1 e 3) e **Verbi al
+          presente** (Attività 2 e 4). L'Attività 5 pratica tutte e due.
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: >-
+          Siate molto brevi: 2 frasi per studente, non più di 30 secondi per studente e
+          insegnante. Se vi conoscete già, passate subito alle domande di riscaldamento.
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui appaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Condividi la canzone «Gioca Jouer» (o un'altra canzone a scelta) e il video. Poi
+          gli studenti rispondono alle domande.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          La poesia non è copiata nella piattaforma (diritti d'autore): mostrala sullo
+          schermo dal quaderno precedente, con le strofe in disordine. Ordine giusto e
+          verbi: 1. «Dopo la pioggia…»: viene, brilla · 2. «È come un ponte…»: è, passa ·
+          3. «È bello guardare…»: è, guardare · 4. «Però lo si vede…»: vede, è · 5. «Non
+          sarebbe più conveniente…»: sarebbe, fare · 6. «Un arcobaleno senza
+          tempesta…»: sarebbe · 7. «Sarebbe una festa…»: sarebbe, fare.
+      - id: n-act3
+        anchor: act3-statements
+        text: >-
+          Risposte: Dove ti piace ascoltare la musica? · Quale genere di musica ti piace?
+          · Quando ascolti la musica? · Che tipo di canzoni ti piace cantare? · Con chi
+          preferisci ascoltare la musica? · Quale genere di musica non ti piace? · Quale
+          strumento suoni? · Come ascolti la musica a casa? · Con quale musica ti piace
+          ballare? · Chi è la tua cantante preferita? · A quali concerti vai spesso? ·
+          Con quale musica studi meglio? Accetta altre domande corrette.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Il testo con gli spazi vuoti è nel quaderno precedente; non è copiato nella
+          piattaforma (diritti d'autore). Mostralo sullo schermo con 16 verbi nascosti.
+          Controlla la soluzione con la canzone: la lista del quaderno non è
+          nell'ordine degli spazi, e «andiamo» forse non c'è nella canzone.
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Puoi distribuire un foglio o mostrare le domande sullo schermo. Scrivi alla
+          lavagna le risposte ripetute per vedere cosa è più comune nella classe (per
+          esempio: quanti preferiscono la chitarra? Quanti usano YouTube?).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: musica-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Che cosa abbiamo imparato oggi
+      - id: rules-questions
+        type: ruleSummary
+        skill: Costruire domande
+        rules:
+          - text: Usiamo le parole interrogative per chiedere informazioni precise, come ragioni, luoghi o orari.
+          - text: >-
+              Comincia con la parola interrogativa (*cosa, chi, dove, quando, perché, come,
+              quanto, quale*), poi metti il verbo e aggiungi i dettagli. **Parola
+              interrogativa + verbo + (soggetto) + dettagli.** Di solito non diciamo il
+              pronome (*tu, lui…*): la forma del verbo basta.
+            examples:
+              - Dove ascolti la musica?
+              - Quando inizia il concerto?
+          - text: 'Le 4 parole chiave della domanda: **quale, dove, quando, chi**.'
+      - id: questions-table
+        type: table
+        caption: Le parole interrogative
+        header: [Parola, Domanda, Risposta]
+        rows:
+          - [Quale, Quale musica ascolti?, Ascolto il rock.]
+          - [Dove, Dove suoni la chitarra?, Suono la chitarra a casa.]
+          - [Quando, Quando inizia il concerto?, Il concerto inizia tra due ore.]
+          - [Chi, Chi è il tuo cantante preferito?, Il mio cantante preferito è Bruno Mars.]
+      - id: rules-present
+        type: ruleSummary
+        skill: Verbi al presente
+        rules:
+          - text: Usiamo il presente per parlare di azioni che accadono adesso, di fatti o di abitudini. Il presente si usa anche per parlare di piani o obiettivi.
+            examples: [Io **suono** la chitarra., Lui **canta** bene.]
+          - text: 'I verbi si dividono in tre gruppi secondo la desinenza: **-are**, **-ere**, **-ire**. Ogni gruppo ha le sue forme (guarda la tabella).'
+          - text: >-
+              *Mi piace* si usa con un nome singolare o con un verbo all'infinito; *mi
+              piacciono* con un nome plurale. Il pronome cambia secondo la persona.
+            examples:
+              - Mi piace il caffè. / Mi piace cantare. / Mi piacciono i libri.
+              - mi piace (a me), ti piace (a te), gli piace (a lui), le piace (a lei), ci piace (a noi), vi piace (a voi), gli piace (a loro)
+      - id: present-table
+        type: table
+        caption: Verbi al presente
+        header: [Persona, suonare (-are), leggere (-ere), sentire (-ire)]
+        rows:
+          - [io, suono, leggo, sento]
+          - [tu, suoni, leggi, senti]
+          - [lui / lei, suona, legge, sente]
+          - [noi, suoniamo, leggiamo, sentiamo]
+          - [voi, suonate, leggete, sentite]
+          - [loro, suonano, leggono, sentono]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: musica-compiti
+    title: Compiti
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti
+      - id: hw-questions
+        type: reflection
+        prompt: >-
+          **Domande:** scrivi 3 domande sulla musica. Usa le parole *cosa*, *dove* e
+          *quando*. Esempio: *Dove ascolti la musica?*
+      - id: hw-present
+        type: reflection
+        prompt: >-
+          **Verbi al presente:** scrivi 5 frasi sulle tue abitudini musicali di ogni
+          giorno. Usa verbi come *suonare, ascoltare, cantare*. Esempio: *Ascolto musica
+          ogni sera.*
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: musica-pratica
+    book: workbook
+    title: 'Pratica: Musica'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratica le due abilità del ciclo. Ogni risposta viene corretta subito, e puoi riprovare.
+      - id: ex-domande
+        type: activity
+        activity: musica-domande
+      - id: ex-verbi
+        type: activity
+        activity: musica-verbi
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: musica-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole della musica
+        glossLang: he
+        link: https://quizlet.com/il/1010497695/basic-italian-music-flash-cards/
+        items: &musica-words
+          - { term: Musica, gloss: מוזיקה }
+          - { term: Cuore, gloss: לב }
+          - { term: Ritmo, gloss: קצב }
+          - { term: Viaggio, gloss: מסע }
+          - { term: Vivere, gloss: לחיות }
+          - { term: Godere, gloss: ליהנות }
+          - { term: Dimenticare, gloss: לשכוח }
+          - { term: Pulire, gloss: לנקות }
+          - { term: Pioggia, gloss: גשם }
+          - { term: Vincere, gloss: לנצח }
+          - { term: Soffrire, gloss: לסבול }
+          - { term: Ridere, gloss: לצחוק }
+          - { term: Capire, gloss: להבין }
+          - { term: Trovare, gloss: למצוא }
+          - { term: Gridare, gloss: לצעוק }
+          - { term: Canzone, gloss: שיר }
+          - { term: Chiedere, gloss: לשאול }
+          - { term: Indovinare, gloss: לנחש }
+          - { term: Poesia, gloss: שירה }
+          - { term: Ballare, gloss: לרקוד }
+          - { term: Cantare, gloss: לשיר }
+          - { term: Studiare, gloss: ללמוד }
+          - { term: Parlare, gloss: לדבר }
+          - { term: Mangiare, gloss: לאכול }
+          - { term: Bere, gloss: לשתות }
+
+vocabulary:
+  - slug: musica
+    title: Musica
+    items: *musica-words
+
+activities:
+  - slug: musica-domande
+    title: 'Costruire domande: quale, dove, quando, chi'
+    minutes: 8
+    items:
+      - id: dove-ascolti
+        type: multipleChoice
+        prompt: ___ ascolti la musica? —Ascolto la musica a casa.
+        options:
+          - { text: Dove, correct: true }
+          - {
+              text: Quando,
+              feedback: '*Quando* chiede il tempo. La risposta dice un luogo (*a casa*): usa *dove*.',
+            }
+          - {
+              text: Chi,
+              feedback: '*Chi* chiede una persona. La risposta dice un luogo (*a casa*): usa *dove*.',
+            }
+      - id: chi-cantante
+        type: multipleChoice
+        prompt: ___ è il tuo cantante preferito? —Il mio cantante preferito è Bruno Mars.
+        options:
+          - { text: Chi, correct: true }
+          - { text: Dove, feedback: '*Dove* chiede un luogo. Bruno Mars è una persona: usa *chi*.' }
+          - {
+              text: Quando,
+              feedback: '*Quando* chiede il tempo. Bruno Mars è una persona: usa *chi*.',
+            }
+      - id: completa-parole
+        type: fillBlank
+        prompt: Completa con *quando* o *quale*.
+        text: ___ inizia il concerto? —Il concerto inizia tra due ore. ___ musica ascolti? —Ascolto il rock.
+        blanks: [[Quando, quando], [Quale, quale, Che, che]]
+        wordBank: [Quando, Quale]
+      - id: senza-tu
+        type: trueFalse
+        prompt: 'In italiano possiamo dire *Dove ascolti la musica?* senza il pronome *tu*.'
+        answer: true
+        feedback:
+          correct: Giusto! La forma del verbo (*ascolti*) dice già la persona.
+          incorrect: 'Di solito non diciamo il pronome: *ascolti* è già la forma di *tu*.'
+      - id: unisci-risposte
+        type: matching
+        prompt: Unisci ogni domanda alla sua risposta.
+        pairs:
+          - [Quale musica ascolti?, Ascolto il rock.]
+          - [Dove suoni la chitarra?, Suono la chitarra a casa.]
+          - [Quando inizia il concerto?, Il concerto inizia tra due ore.]
+          - [Chi è il tuo cantante preferito?, Il mio cantante preferito è Bruno Mars.]
+      - id: quando-mattina
+        type: multipleChoice
+        prompt: 'Risposta: *Ascolto la musica ogni mattina.* Qual è la domanda?'
+        options:
+          - { text: Quando ascolti la musica?, correct: true }
+          - {
+              text: Dove ascolti la musica?,
+              feedback: '*Ogni mattina* è un tempo, non un luogo: usa *quando*.',
+            }
+          - {
+              text: Chi ascolta la musica?,
+              feedback: '*Chi* chiede una persona. *Ogni mattina* è un tempo: usa *quando*.',
+            }
+      - id: ordina-chitarra
+        type: reorderSentence
+        prompt: Metti le parole in ordine per fare una domanda.
+        sentence: Dove suoni la chitarra?
+      - id: quale-strumento
+        type: multipleChoice
+        prompt: ___ strumento suoni? —Suono la chitarra.
+        options:
+          - { text: Quale, correct: true }
+          - {
+              text: Chi,
+              feedback: '*Chi* chiede una persona. Qui chiediamo una cosa (uno strumento): usa *quale*.',
+            }
+          - {
+              text: Dove,
+              feedback: '*Dove* chiede un luogo. Qui chiediamo una cosa (uno strumento): usa *quale*.',
+            }
+
+  - slug: musica-verbi
+    title: Verbi al presente
+    minutes: 8
+    items:
+      - id: io-suono
+        type: multipleChoice
+        prompt: Io ___ la chitarra.
+        options:
+          - { text: suono, correct: true }
+          - {
+              text: suoni,
+              feedback: '*Suoni* è per *tu*. Con *io* il verbo finisce in *-o*: *suono*.',
+            }
+          - {
+              text: suona,
+              feedback: '*Suona* è per *lui* o *lei*. Con *io* il verbo finisce in *-o*: *suono*.',
+            }
+      - id: completa-presente
+        type: fillBlank
+        prompt: Scrivi il verbo al presente.
+        text: Tu ___ (leggere) un libro. Noi ___ (sentire) la musica. Loro ___ (suonare) il piano.
+        blanks: [[leggi], [sentiamo], [suonano]]
+      - id: unisci-sentire
+        type: matching
+        prompt: Unisci ogni persona alla forma di *sentire*.
+        pairs:
+          - [io, sento]
+          - [tu, senti]
+          - [lui / lei, sente]
+          - [noi, sentiamo]
+          - [loro, sentono]
+      - id: lui-canta
+        type: multipleChoice
+        prompt: Lui ___ bene.
+        options:
+          - { text: canta, correct: true }
+          - {
+              text: canto,
+              feedback: '*Canto* è per *io*. Con *lui* un verbo in *-are* finisce in *-a*: *canta*.',
+            }
+          - {
+              text: cantano,
+              feedback: '*Cantano* è per *loro*. Con *lui* un verbo in *-are* finisce in *-a*: *canta*.',
+            }
+      - id: piacciono-libri
+        type: multipleChoice
+        prompt: Mi ___ i libri.
+        options:
+          - { text: piacciono, correct: true }
+          - {
+              text: piace,
+              feedback: '*I libri* è plurale: usa *mi piacciono*. *Mi piace* è per una cosa sola o un verbo.',
+            }
+      - id: piace-cantare
+        type: trueFalse
+        prompt: 'Questa frase è corretta: *Mi piace cantare.*'
+        answer: true
+        feedback:
+          correct: Giusto! *Mi piace* va con un verbo all'infinito (*cantare*).
+          incorrect: "*Mi piace* si usa anche con un verbo all'infinito: *Mi piace cantare.*"
+      - id: si-mi-piace
+        type: fillBlank
+        prompt: Completa la risposta.
+        text: —A te piace il jazz? —Sì, ___ ___ il jazz.
+        blanks: [[mi], [piace]]
+      - id: ordina-canta
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Lui canta molto bene.

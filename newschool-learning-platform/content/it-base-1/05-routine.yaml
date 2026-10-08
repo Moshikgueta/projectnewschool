@@ -1,0 +1,609 @@
+# Cycle "Routine", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: routine
+title: Routine
+goal: Parlare della tua giornata con numeri, giorni della settimana e verbi riflessivi.
+position: 5
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Verbi riflessivi e avverbi" and "Numeri, giorni e orari")
+    are NEW: the notebook has no self-study exercises. They were
+    written from the cycle's skills, its summary rules and its vocabulary. Please
+    check level, wording and every right answer before students see them.
+  - >-
+    Title: the notebook heading says "Rutina" (Spanish). The Italian "Routine" is
+    used (the notebook's second heading also says "Routine").
+  - >-
+    Skills: the general information lists three ("Numeri e date", "Verbi riflessivi",
+    "Preposizioni"), and the summary has four parts (numbers and days, reflexive
+    verbs, prepositions, frequency adverbs). As in the other courses, they are
+    grouped into two skills: "Numeri, giorni e orari" and "Verbi riflessivi e
+    preposizioni" (with frequency adverbs). Please confirm. The notebook gives no
+    recommended combinations or activity times; the plan note suggests 2–3 of the 5
+    activities.
+  - >-
+    Summary, frequency adverbs: the notebook says they go "before the verb (except
+    with essere)", a rule translated from English. In Italian *sempre, spesso, mai*
+    normally go AFTER the verb (Faccio sempre colazione; Non mangiamo mai carne, with
+    *non* before the verb); *a volte, di solito, ogni giorno* usually start or end the
+    sentence. The rule was rewritten; please confirm.
+  - >-
+    Summary, reflexive verbs: the paraphrases "Io mi sveglio da solo", "Si fa il
+    bagno → Lui/lei si lava da solo/a" were dropped (unclear / mismatched); the rule
+    keeps "mi sveglio, ti lavi, si lava" and the contrast "Io lavo la macchina / Io
+    mi lavo". A conjugation table of *svegliarsi* (mi, ti, si, ci, vi, si) was added.
+  - >-
+    Summary, prepositions: "alle cinque" is explained as *a + le*; "all'una" and "È
+    l'una" were added as examples, since students meet "Verso l'una pranzo" in
+    Activity 2. Please confirm.
+  - >-
+    Spanish left in the notebook: "La ruleta" → "La ruota"; "Studio spagnolo alle 3"
+    → "Studio italiano alle 3"; "Lunedì ho lezione di spagnolo" → "di italiano".
+    There were two "Attività 3"; the activities are numbered 1–5.
+  - >-
+    Activity 4 "Non ho mai…": in Italian "Non ho mai…" is the past ("I have never"),
+    but the notebook asks for the present. The game is renamed "Io non… mai!" and
+    uses present sentences (Non bevo mai caffè). The answer "Sì, certo! Bevo caffè
+    tutti i giorni" → "Io sì! Bevo caffè tutti i giorni."
+  - >-
+    Small fixes: introduction "il/nei giorni ___" → "il ___ e il ___"; warm-up "Cosa
+    fai di notte? La notte ___" → "Di notte ___"; the last warm-up question had no
+    frame ("Vado a dormire alle ___" added); "Lavoro in coppie o in trii" → "in
+    coppia o in gruppi di tre"; Mori "Pranzo a ___", "Ceni a ___" → "alle ___";
+    vocabulary "Vado a lavoro" → "Vado al lavoro"; "Alle ___, ב־___" (broken
+    formatting) fixed.
+  - >-
+    Mori: the opening message named the skills "Giorni della settimana" and "Verbi
+    riflessivi"; it now names this cycle's two skills. "presente semplice" → "il
+    presente" (the Italian name of the tense). The notebook has no tips (more
+    questions / explain in Hebrew); the standard tips callout was added.
+  - >-
+    Links: the Quizlet link lost its "?new" parameter; the wheel of names link
+    (wheelofnames.com) is kept as the Activity 2 resource.
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: routine-classe
+    title: 'Classe: Routine'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Routine
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Numeri, giorni e orari
+            description: "L'ora e i giorni: *Mi sveglio alle 7. Il lunedì studio italiano.*"
+          - name: Verbi riflessivi e preposizioni
+            description: '*mi, ti, si* + verbo; *sono le* e *alle*; *sempre, a volte, mai*'
+      - id: quizlet
+        type: externalLink
+        label: Routine su Quizlet
+        url: https://quizlet.com/br/1068072457/routine-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazione
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Studio italiano ___ volte a settimana, il ___ e il ___.
+        example: Sono Dana. Studio italiano due volte a settimana, il lunedì e il giovedì.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: A che ora ti svegli?
+            frame: Mi sveglio alle ___.
+          - question: Ti lavi i denti prima o dopo colazione?
+            frame: Mi lavo i denti prima / dopo colazione.
+          - question: Cosa fai ogni martedì?
+            frame: Ogni martedì ___.
+          - question: Cosa fai la mattina?
+            frame: La mattina ___.
+          - question: Cosa fai di notte?
+            frame: Di notte ___.
+          - question: A che ora vai a dormire?
+            frame: Vado a dormire alle ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Una giornata felice, per me e per lui / lei!'
+        skills: ['Numeri, giorni e orari', Verbi riflessivi e preposizioni]
+        steps:
+          - Scrivi **5 frasi brevi** sulla tua giornata, con i numeri e i verbi riflessivi.
+          - In coppia, leggi la tua routine al compagno. Insieme preparate un **elenco di somiglianze e differenze**.
+          - Ogni coppia presenta al gruppo **2–3 confronti** in terza persona.
+        example: |-
+          *Mi sveglio alle 7. Mi lavo i denti. Faccio colazione alle 8. Vado a scuola alle 9. Vado a letto alle 11.*
+          *Lei si sveglia alle 6, ma io mi sveglio alle 7.*
+          *Io faccio colazione alle 8, ma lui fa colazione alle 9.*
+          *Noi andiamo a dormire alla stessa ora, alle 11.*
+      - id: act1-day
+        type: discussionQuestions
+        title: La mia giornata
+        items:
+          - question: Mi sveglio alle ___.
+          - question: Faccio colazione alle ___.
+          - question: Vado a ___ alle ___.
+          - question: Il pomeriggio ___.
+          - question: Vado a letto alle ___.
+          - question: Com'è diversa la giornata del tuo compagno?
+            frame: Lui / Lei si ___ alle ___, ma io mi ___ alle ___.
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: La ruota della routine'
+        skills: ['Numeri, giorni e orari']
+        steps:
+          - Ripeti in coro le frasi modello dell'insegnante.
+          - 'Uno studente fa girare la ruota. Ci sono 4 categorie: **mattina**, **pomeriggio**, **sera** e **fine settimana**.'
+          - 'In base alla categoria, inventa **una frase con azione + numero / orario**.'
+        resource:
+          label: La ruota della routine
+          url: https://wheelofnames.com/m2u-ret
+        example: |-
+          **Mattina:** *Mi alzo alle 8.*
+          **Pomeriggio:** *Studio italiano alle 3.*
+          **Sera:** *Ceno alle 8.*
+          **Fine settimana:** *Domenica alle 10 gioco a calcio.*
+      - id: act2-frames
+        type: discussionQuestions
+        title: La tua frase
+        items:
+          - question: 'Mattina: La mattina ___ alle ___.'
+          - question: 'Pomeriggio: Il pomeriggio ___ alle ___.'
+          - question: 'Sera: La sera ___ alle ___.'
+          - question: 'Fine settimana: Sabato / Domenica ___ alle ___.'
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Le mie abitudini'
+        skills: [Verbi riflessivi e preposizioni]
+        steps:
+          - In coppia o in gruppi di tre, fai domande e rispondi con gli **avverbi di frequenza**.
+          - Rispondi con frasi complete.
+          - Ogni gruppo sceglie **1 cosa in comune e 1 differenza** da presentare alla classe.
+        wordBank: [sempre, mai, a volte, di solito, ogni giorno]
+        example: |-
+          *A colazione bevo sempre il caffè. A volte vado al cinema.*
+          *Facciamo sempre colazione a casa, ma non studiamo mai la mattina.*
+          *Lei a volte fa esercizio, io mai.*
+      - id: act3-questions
+        type: discussionQuestions
+        items:
+          - question: Cosa fai sempre la mattina?
+            frame: La mattina ___ sempre ___.
+          - question: Cosa non fai mai a scuola / all'università / al lavoro?
+            frame: Non ___ mai ___.
+          - question: Cosa fai a volte durante il fine settimana?
+            frame: A volte ___.
+          - question: Cosa mangi di solito a colazione?
+            frame: Di solito mangio ___.
+          - question: Quale attività fai ogni giorno?
+            frame: Ogni giorno ___.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Io non… mai!'
+        skills: [Verbi riflessivi e preposizioni]
+        steps:
+          - Alza **3 dita**.
+          - Uno studente dice una frase al presente con **non… mai** (*Non bevo mai caffè.*).
+          - Se tu **invece lo fai**, abbassa un dito e rispondi in forma affermativa.
+          - Il turno passa allo studente successivo.
+          - Vince l'ultima persona che ha ancora almeno un dito alzato.
+        example: |-
+          **A:** *Non bevo mai caffè.*
+          **B:** *Io sì! Bevo caffè tutti i giorni.*
+      - id: act4-frames
+        type: discussionQuestions
+        items:
+          - question: Non ___ mai ___.
+          - question: Io sì! Io ___.
+      - id: act5
+        type: classActivity
+        title: 'Attività 5: Quanto sono diverse o simili le nostre routine?'
+        skills: ['Numeri, giorni e orari', Verbi riflessivi e preposizioni]
+        steps:
+          - In coppia, fatevi a turno domande sulla vostra routine. Rispondi in **prima persona**.
+          - Poi confronta le due routine in **terza persona**.
+          - 'Preparate un breve elenco: **in comune** (attività simili) e **diverso** (attività differenti).'
+          - Ogni coppia presenta alla classe 1–2 cose in comune e 1–2 differenze.
+        example: |-
+          **A:** A che ora ti svegli?
+          **B:** Mi sveglio alle 7 del mattino.
+          **A:** Ah, io mi sveglio alle 6 del mattino.
+          *Lei si sveglia alle 7 del mattino, ma io mi sveglio alle 6.*
+          **In comune:** Facciamo colazione con un caffè. Andiamo a scuola la mattina.
+          **Diverso:** Lei si sveglia alle 8, io mi sveglio alle 6. Lui cena alle 7, io alle 9.
+      - id: act5-questions
+        type: discussionQuestions
+        items:
+          - question: A che ora ti svegli?
+            frame: Mi sveglio alle ___.
+          - question: Cosa mangi di solito a colazione?
+            frame: Di solito mangio ___.
+          - question: A che ora vai a lavorare / a studiare?
+            frame: Vado a ___ alle ___.
+          - question: Cosa fai il pomeriggio?
+            frame: Il pomeriggio ___.
+          - question: A che ora vai a letto?
+            frame: Vado a letto alle ___.
+      - id: act5-list
+        type: discussionQuestions
+        title: Somiglianze e differenze
+        items:
+          - question: 'In comune:'
+            frame: Tutti e due ___. / Tutte e due ___.
+          - question: 'Diverso:'
+            frame: Lui / Lei ___, ma io ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Numeri, giorni e orari** e **Verbi riflessivi
+          e preposizioni** (con gli avverbi di frequenza). Il quaderno non dà
+          combinazioni né tempi: scegli 2 o 3 attività (per esempio la 1 o la 2 per i
+          numeri, e la 3 o la 4 per i verbi e gli avverbi).
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: Dai prima il tuo esempio e poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui appaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          L'obiettivo è confrontare e praticare la terza persona (*lei si sveglia*, *lui
+          fa colazione*). Ogni studente scrive 5 frasi brevi, poi lavora in coppia.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Usa la ruota digitale oppure disegna una ruota alla lavagna con 4 categorie
+          (mattina, pomeriggio, sera, fine settimana). Prima del gioco scrivi alla
+          lavagna alcune frasi modello e falle ripetere in coro (struttura + pronuncia):
+          «Mi sveglio alle 7.» «Verso l'una pranzo.» «Sabato vado al cinema.» «Vado a
+          dormire alle 11.»
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Scrivi alla lavagna gli avverbi (sempre, mai, a volte, di solito, ogni
+          giorno) e dai esempi in prima persona. Online, usa le stanze separate
+          (breakout rooms) per le coppie o i gruppi di tre. Risposte attese: Mi alzo
+          sempre alle 7. Non studio mai di notte. A volte gioco a calcio con i miei
+          amici. Di solito faccio colazione con pane e formaggio. Ogni giorno ascolto
+          musica.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Mostra prima come si costruisce una frase negativa con **non… mai**: «Non
+          bevo mai caffè.» «Non guardo mai la TV la mattina.» «Non vado mai a scuola a
+          piedi.» Esempi pronti: Non faccio mai colazione alle 7. Non bevo mai il tè.
+          Non ascolto mai musica in macchina. Non studio mai di notte. Non parlo mai al
+          telefono la mattina. Non gioco mai a calcio. Non vado mai al supermercato.
+          Non guardo mai le serie in televisione.
+      - id: n-act5
+        anchor: act5
+        text: Quando presentano, gli studenti usano la prima persona (*io mi sveglio*) e la terza (*lei si sveglia*).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: routine-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Numeri, giorni e orari
+        rules:
+          - text: '**Ripeti i numeri ad alta voce** e usali in esempi concreti (età, numero di telefono, orario).'
+            examples: [Ho 25 anni., Sono le tre.]
+          - text: '**Collega i giorni alle tue attività** per ricordarli meglio.'
+            examples: [Lunedì ho lezione di italiano., Sabato mi rilasso.]
+          - text: '**Usa immagini o colori** per associare i giorni e i numeri.'
+            examples: [Mercoledì è verde perché vado al parco.]
+      - id: rules-reflexive
+        type: ruleSummary
+        skill: Verbi riflessivi e preposizioni
+        rules:
+          - text: "Un **verbo riflessivo** indica che la persona fa l'azione su sé stessa. Usiamo il pronome riflessivo prima del verbo: *mi, ti, si, ci, vi, si*."
+            examples: ['**Mi sveglio** alle 7.', '**Ti lavi** le mani.', 'Lui **si lava**.']
+          - text: 'Differenza con un verbo normale:'
+            examples:
+              [
+                'Verbo normale: *Io lavo la macchina* (la macchina non sono io).',
+                'Verbo riflessivo: *Io mi lavo* (lo faccio su di me).',
+              ]
+          - text: "**Sono le…** dice l'ora di adesso. **Alle…** (*a + le*) dice quando succede qualcosa. Con l'una: *È l'una*, *all'una*."
+            examples: [Sono le tre., La lezione è alle cinque., Verso l'una pranzo.]
+          - text: 'Usiamo **a** anche con alcuni verbi.'
+            examples: [Gioco **a** calcio., Vado **a** scuola., Invito **a** cena un amico.]
+          - text: >-
+              Gli avverbi di frequenza **sempre, spesso, mai** vanno di solito **dopo il
+              verbo**. Con **mai** mettiamo **non** prima del verbo. **A volte, di
+              solito, ogni giorno** vanno spesso all'inizio o alla fine della frase.
+            examples:
+              - Faccio **sempre** colazione alle 8.
+              - Leggi **spesso** il pomeriggio.
+              - '**A volte** gioco a calcio.'
+              - '**Non** mangiamo **mai** carne.'
+              - Lei è **sempre** puntuale.
+      - id: reflexive-table
+        type: table
+        caption: 'Svegliarsi: mi, ti, si…'
+        header: [Persona, Svegliarsi]
+        rows:
+          - [io, mi sveglio]
+          - [tu, ti svegli]
+          - [lui / lei, si sveglia]
+          - [noi, ci svegliamo]
+          - [voi, vi svegliate]
+          - [loro, si svegliano]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: routine-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia questo messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-routine
+        type: aiTutorPrompt
+        title: La mia routine
+        message: >-
+          Ciao Mori! Voglio esercitarmi a parlare della routine quotidiana. Puoi farmi
+          delle domande usando le abilità "Numeri, giorni e orari" e "Verbi riflessivi e
+          preposizioni"? Usa solo il presente.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, chiedimi di più!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico, ma con la frase in italiano?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratica in più
+      - id: mori-orario
+        type: aiTutorPrompt
+        title: Completa la routine
+        intro: 'Invia questo messaggio a Mori. Esempio: Mori scrive *Ceni alle ___.* e tu rispondi *Ceno alle 8.*'
+        message: >-
+          Ciao Mori! Scrivi frasi di routine quotidiana senza il numero o l'orario (per
+          esempio: "Pranzo alle ___"). Io riempio lo spazio vuoto con un numero e dico la
+          frase completa al presente. Correggimi se faccio errori.
+      - id: mori-giornata
+        type: aiTutorPrompt
+        title: Racconta la tua giornata
+        intro: 'Invia questo messaggio a Mori. Per esempio: *Mi sveglio alle 7, mi lavo i denti e vado a scuola alle 9.*'
+        message: >-
+          Ciao Mori! Ti racconto una mia giornata tipo, con numeri e verbi riflessivi
+          (per esempio: "Mi sveglio alle 7 del mattino e faccio colazione alle 8").
+          Fammi altre domande per continuare la conversazione e aiutami a migliorare.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: routine-pratica
+    book: workbook
+    title: 'Pratica: Routine'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratica le due abilità del ciclo. Ogni risposta si corregge subito, e puoi riprovare.
+      - id: ex-orari
+        type: activity
+        activity: routine-orari
+      - id: ex-riflessivi
+        type: activity
+        activity: routine-riflessivi
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: routine-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Parole della routine
+        glossLang: he
+        link: https://quizlet.com/br/1068072457/routine-flash-cards/
+        items: &routine-words
+          - { term: Lunedì, gloss: יום שני }
+          - { term: Martedì, gloss: יום שלישי }
+          - { term: Mercoledì, gloss: יום רביעי }
+          - { term: Giovedì, gloss: יום חמישי }
+          - { term: Venerdì, gloss: יום שישי }
+          - { term: Sabato, gloss: שבת }
+          - { term: Domenica, gloss: יום ראשון }
+          - { term: Mattina, gloss: בוקר }
+          - { term: Pomeriggio, gloss: אחר הצהריים }
+          - { term: Sera, gloss: ערב }
+          - { term: Notte, gloss: לילה }
+          - { term: Giorno, gloss: יום }
+          - { term: Settimana, gloss: שבוע }
+          - { term: Sempre, gloss: תמיד }
+          - { term: Mai, gloss: אף פעם }
+          - { term: A volte, gloss: לפעמים }
+          - { term: Di solito, gloss: בדרך כלל }
+          - { term: Ogni giorno, gloss: כל יום }
+          - { term: Mi sveglio, gloss: אני מתעורר }
+          - { term: Mi alzo, gloss: אני קם }
+          - { term: Mi lavo i denti, gloss: אני מצחצח שיניים }
+          - { term: Mi vesto, gloss: אני מתלבש }
+          - { term: Mi pettino, gloss: אני מסתרק }
+          - { term: Mi addormento, gloss: אני נרדם }
+          - { term: Mi rilasso, gloss: אני נרגע }
+          - { term: Faccio colazione, gloss: אני אוכל ארוחת בוקר }
+          - { term: Pranzo, gloss: אני אוכל ארוחת צהריים }
+          - { term: Ceno, gloss: אני אוכל ארוחת ערב }
+          - { term: Vado a scuola, gloss: אני הולך לבית ספר }
+          - { term: Vado al lavoro, gloss: אני הולך לעבודה }
+          - { term: Torno a casa, gloss: אני חוזר הביתה }
+          - { term: Studio, gloss: אני לומד }
+          - { term: Leggo, gloss: אני קורא }
+          - { term: Guardo la TV, gloss: אני צופה בטלוויזיה }
+          - { term: Gioco, gloss: אני משחק }
+          - { term: Sono le ___, gloss: השעה ___ }
+          - { term: Alle ___, gloss: בשעה ___ }
+          - { term: A casa, gloss: בבית }
+
+vocabulary:
+  - slug: routine
+    title: Routine
+    items: *routine-words
+
+activities:
+  - slug: routine-orari
+    title: Numeri, giorni e orari
+    minutes: 8
+    items:
+      - id: sette-undici
+        type: fillBlank
+        prompt: Scrivi i numeri in parole.
+        text: Mi sveglio alle ___ (7) e vado a letto alle ___ (11).
+        blanks: [[sette], [undici]]
+      - id: domani-martedi
+        type: multipleChoice
+        prompt: Oggi è lunedì. Domani è ___.
+        options:
+          - { text: martedì, correct: true }
+          - { text: domenica, feedback: 'La domenica è il giorno **prima** del lunedì.' }
+          - { text: mercoledì, feedback: 'Il mercoledì è due giorni dopo il lunedì.' }
+      - id: mercoledi
+        type: fillBlank
+        prompt: Completa i giorni della settimana.
+        text: Lunedì, martedì, ___, giovedì, venerdì.
+        blanks: [[mercoledì]]
+      - id: giorni-ebraico
+        type: matching
+        prompt: Unisci ogni giorno al suo nome in ebraico.
+        pairs:
+          - [lunedì, יום שני]
+          - [mercoledì, יום רביעי]
+          - [venerdì, יום שישי]
+          - [sabato, שבת]
+          - [domenica, יום ראשון]
+      - id: sono-le
+        type: multipleChoice
+        prompt: Che ore sono? — ___ le tre.
+        options:
+          - { text: Sono, correct: true }
+          - {
+              text: Alle,
+              feedback: "*Alle* dice quando succede qualcosa (*la lezione è alle tre*). Per l'ora di adesso: *sono le tre*.",
+            }
+          - {
+              text: È,
+              feedback: "Con le tre diciamo *sono le tre*. *È* solo con l'una: *è l'una*.",
+            }
+      - id: alle-cinque
+        type: fillBlank
+        prompt: Completa con *sono le* o *alle*.
+        text: Adesso ___ due. La lezione è ___ cinque.
+        blanks: [[sono le], [alle]]
+        wordBank: [sono le, alle]
+      - id: gioco-a
+        type: multipleChoice
+        prompt: Il sabato gioco ___ calcio.
+        options:
+          - { text: a, correct: true }
+          - { text: in, feedback: 'Con *giocare* usiamo **a**: *gioco a calcio*.' }
+          - { text: di, feedback: 'Con *giocare* usiamo **a**: *gioco a calcio*.' }
+      - id: settimana
+        type: trueFalse
+        prompt: 'La settimana ha sette giorni: lunedì, martedì, mercoledì, giovedì, venerdì, sabato e domenica.'
+        answer: true
+        feedback:
+          correct: Giusto! Sette giorni.
+          incorrect: 'Conta: lunedì, martedì, mercoledì, giovedì, venerdì, sabato e domenica. Sono 7.'
+
+  - slug: routine-riflessivi
+    title: Verbi riflessivi e avverbi
+    minutes: 8
+    items:
+      - id: mi-sveglio
+        type: multipleChoice
+        prompt: Io ___ sveglio alle sette.
+        options:
+          - { text: mi, correct: true }
+          - { text: ti, feedback: '*Ti* è per *tu*: *tu ti svegli*. Con *io* usiamo *mi*.' }
+          - {
+              text: si,
+              feedback: '*Si* è per *lui / lei*: *lei si sveglia*. Con *io* usiamo *mi*.',
+            }
+      - id: si-lava
+        type: multipleChoice
+        prompt: Lei ___ lava i denti dopo colazione.
+        options:
+          - { text: si, correct: true }
+          - { text: mi, feedback: '*Mi* è per *io*. Con *lei* usiamo *si*.' }
+          - { text: ti, feedback: '*Ti* è per *tu*. Con *lei* usiamo *si*.' }
+      - id: ti-ci
+        type: fillBlank
+        prompt: Completa con il pronome riflessivo.
+        text: Tu ___ alzi alle otto. Noi ___ svegliamo alle sei.
+        blanks: [[ti], [ci]]
+      - id: pronomi
+        type: matching
+        prompt: Unisci ogni persona al suo pronome riflessivo.
+        pairs:
+          - [io, mi]
+          - [tu, ti]
+          - [lui / lei, si]
+          - [noi, ci]
+          - [voi, vi]
+      - id: lavo-macchina
+        type: trueFalse
+        prompt: '*Io lavo la macchina* è un verbo riflessivo.'
+        answer: false
+        feedback:
+          correct: 'Giusto! La macchina non sono io: è un verbo normale. Riflessivo: *Io mi lavo*.'
+          incorrect: 'La macchina non sono io, quindi è un verbo normale. Un verbo riflessivo è *Io mi lavo*.'
+      - id: non-mai
+        type: multipleChoice
+        prompt: Quale frase è giusta?
+        options:
+          - { text: Non mangiamo mai carne., correct: true }
+          - {
+              text: Mangiamo mai carne.,
+              feedback: 'Con *mai* serve **non** prima del verbo: *Non mangiamo mai carne*.',
+            }
+          - {
+              text: Non mai mangiamo carne.,
+              feedback: '*Mai* va dopo il verbo: *Non mangiamo mai carne*.',
+            }
+      - id: non-mai-studio
+        type: fillBlank
+        prompt: Completa con *non* e *mai*.
+        text: Io ___ studio ___ di notte.
+        blanks: [[non], [mai]]
+      - id: ordina-sveglia
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Lei si sveglia alle sei.

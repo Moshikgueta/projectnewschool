@@ -1,0 +1,556 @@
+# Cycle "Viaggi", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: viaggi
+title: Viaggi
+goal: Fare domande sui viaggi, rispondere e dare indicazioni.
+position: 19
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Domande" and "Indicazioni") are NEW: the notebook
+    has no self-study exercises. They were written from the cycle's two skills, its
+    summary rules and its vocabulary. Please check level, wording and every right
+    answer before students see them.
+  - >-
+    The source file ends in the middle of the vocabulary: the last word is cut off
+    ("Sou…", probably "Souvenir"). It is left out; any words after it are missing.
+    Please check against the Quizlet set.
+  - >-
+    Summary, skill 1: the source's "Struttura di base: parola interrogativa + verbo +
+    soggetto + verbo principale" is the English pattern (do-support) and does not fit
+    Italian. It is rewritten as "parola interrogativa + verbo (+ soggetto) + il
+    resto", with a note that Italian has no helper verb like "do". Please confirm.
+  - >-
+    Mori message: "Vorrei esercitarmi con lo spagnolo" → "con l'italiano", and "Puoi
+    spiegarmelo in ebraico ma con la frase in spagnolo?" → "in italiano" (Spanish
+    left in by mistake). "presente semplice e le tecniche di comunicazione orale" →
+    "il presente". Broken emoji characters ("ð") were removed. The two "Pratica
+    aggiuntiva" activities had only instructions and examples; a message to send was
+    written for each from them.
+  - >-
+    Activity 4 has the same title as Activity 3 ("Agenzia di viaggi - Domande e
+    indicazioni") but is a rotating-pairs interview; it is renamed "Il compagno di
+    viaggio ideale". The plan says Activities 3 and 4 practise skill 2, but Activity 4
+    only has questions, so it is tagged with skill 1. Please confirm.
+  - >-
+    Activity 5: "La roulette itinerante" → "La roulette dei viaggi". The notebook has
+    two wheel links (4hy-8ac in the step, 79c-ttg below it) without saying how they
+    differ; both are kept. Please keep only the right one.
+  - >-
+    Warm-up questions 4–6 have no sentence frames in the source; simple frames were
+    added ("In vacanza visito ___", "Quando viaggio, mi piace ___", "Quando viaggio,
+    mi piace mangiare ___"). Activity 2's "[destinazione]" is written "___".
+  - >-
+    The Quizlet link is kept without its tracking parameter (?new). The notebook
+    gives no activity times, so none are recorded. The "Risposta dello studente
+    1/2/3" lines are replaced by the optional answer boxes (decision C2).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: viaggi-classe
+    title: 'Classe: Viaggi'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Viaggi
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Fare domande e rispondere
+            description: '*Cosa, dove, quando, chi, quale, perché, come*'
+          - name: Dare e comprendere indicazioni
+            description: '*Vai dritto, gira a sinistra, cammina per due isolati*'
+      - id: quizlet
+        type: externalLink
+        label: Viaggi su Quizlet
+        url: https://quizlet.com/br/1068041307/italiano-basico-viaggi-atualizato-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Turno di presentazione
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Voglio viaggiare a / in ___.
+        example: Sono Mario. Voglio viaggiare a Parigi.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Dove ti piace viaggiare? Perché?
+            frame: Mi piace viaggiare a / in ___ perché ___.
+          - question: Preferisci una destinazione calda o fredda? Perché?
+            frame: Preferisco una destinazione ___ perché ___.
+          - question: Preferisci viaggiare da solo o in compagnia? Perché?
+            frame: Preferisco viaggiare ___ perché ___.
+          - question: Quali posti visiti in vacanza?
+            frame: In vacanza visito ___.
+          - question: Quali attività ti piace fare quando viaggi?
+            frame: Quando viaggio, mi piace ___.
+          - question: Cosa ti piace mangiare quando viaggi?
+            frame: Quando viaggio, mi piace mangiare ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Indovina la domanda'
+        skills: [Fare domande e rispondere]
+        steps:
+          - Leggi la risposta.
+          - Di' qual è la domanda.
+        example: |-
+          *Vado in vacanza a luglio.*
+          ➤ Domanda: *Quando vai in vacanza?*
+      - id: act1-answers
+        type: discussionQuestions
+        title: Qual è la domanda?
+        items:
+          - question: Vado al mare.
+            frame: ___?
+          - question: Metto i vestiti nella valigia.
+            frame: ___?
+          - question: Viaggio con i miei amici.
+            frame: ___?
+          - question: Viaggio perché mi piace esplorare.
+            frame: ___?
+          - question: Viaggio in aereo.
+            frame: ___?
+          - question: Voglio andare a Parigi.
+            frame: ___?
+          - question: Porto una macchina fotografica.
+            frame: ___?
+          - question: Dormo in un hotel.
+            frame: ___?
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Ricerca'
+        skills: [Fare domande e rispondere]
+        steps:
+          - Lavorate in coppia.
+          - Scegliete una città o un paese nuovo (dove non siete mai stati).
+          - Cercate su internet le risposte alle domande qui sotto.
+          - Presentate la destinazione alla classe.
+        example: '*Andiamo a Parigi. Il cibo tipico è… Si può dormire in… Il periodo migliore è… Possiamo visitare…*'
+      - id: act2-questions
+        type: discussionQuestions
+        title: La nostra destinazione
+        items:
+          - question: Qual è il cibo tipico di ___?
+            frame: Il cibo tipico è ___.
+          - question: Dove si può dormire? (hotel, ostello, casa)
+            frame: Si può dormire in ___.
+          - question: Quando è meglio visitare ___? (estate, inverno…)
+            frame: Il periodo migliore è ___.
+          - question: Cosa si può visitare? (monumenti, musei, luoghi famosi)
+            frame: Possiamo visitare ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Agenzia di viaggi'
+        skills: [Fare domande e rispondere, Dare e comprendere indicazioni]
+        steps:
+          - "In coppia: uno studente è il **viaggiatore**, l'altro è l'**agente di viaggi**."
+          - Il viaggiatore fa le domande qui sotto.
+          - L'agente risponde con idee creative, con frasi semplici e indicazioni.
+          - Scambiatevi i ruoli.
+          - Ogni coppia racconta alla classe la sua esperienza.
+      - id: act3-questions
+        type: discussionQuestions
+        items:
+          - question: Dove posso andare in vacanza?
+            frame: Puoi andare a / in ___.
+          - question: Cosa posso mangiare lì?
+            frame: Puoi mangiare ___.
+          - question: Cosa devo mettere in valigia?
+            frame: Devi mettere in valigia ___.
+          - question: Come arrivo alla spiaggia?
+            frame: Vai dritto per ___ isolati e gira a ___. La spiaggia è ___.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Il compagno di viaggio ideale'
+        skills: [Fare domande e rispondere]
+        steps:
+          - Lavorate in coppia. Fate al compagno le domande qui sotto.
+          - Dopo 3 minuti, l'insegnante cambia le coppie. Fate le stesse domande al nuovo compagno.
+          - Cambiate compagno ancora una volta e continuate con le domande.
+          - "Con tutto il gruppo: di' che cosa hai in comune con i compagni e, se vuoi, scegli il tuo «compagno di viaggio ideale»."
+      - id: act4-questions
+        type: discussionQuestions
+        items:
+          - question: Dove vuoi viaggiare?
+            frame: Voglio viaggiare a / in ___.
+          - question: Cosa metti in valigia?
+            frame: In valigia metto ___.
+          - question: Cosa mangi quando viaggi?
+            frame: Quando viaggio, mangio ___.
+          - question: Parti con la famiglia o con gli amici?
+            frame: Parto con ___.
+      - id: act5
+        type: classActivity
+        title: 'Attività 5: La roulette dei viaggi'
+        skills: [Fare domande e rispondere]
+        steps:
+          - Gira la ruota e rispondi alla domanda che esce.
+          - 'Se esce uno spazio vuoto, inventa una nuova domanda per un compagno. Per esempio: *Che musica ascolti quando viaggi? Che bevanda bevi in vacanza?*'
+        resource:
+          label: La roulette dei viaggi (Wheel of Names)
+          url: https://wheelofnames.com/4hy-8ac
+      - id: act5-wheel2
+        type: externalLink
+        label: La roulette dei viaggi, seconda ruota (Wheel of Names)
+        url: https://wheelofnames.com/79c-ttg
+      - id: act5-questions
+        type: discussionQuestions
+        title: Le domande della roulette
+        items:
+          - question: Dove vuoi viaggiare?
+          - question: Con chi viaggi di solito?
+          - question: Cosa metti in valigia?
+          - question: Cosa ti piace mangiare quando viaggi?
+          - question: Che mezzo di trasporto usi quando viaggi?
+          - question: Preferisci una destinazione calda o fredda?
+          - question: Quali posti visiti in vacanza?
+          - question: Dove dormi quando viaggi?
+          - question: Cosa fai in spiaggia?
+          - question: Cosa fai in città?
+          - question: Quale attività ti piace fare in vacanza?
+          - question: Che souvenir compri quando viaggi?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Fare domande e rispondere** (domande di
+          riscaldamento, Attività 1 e 2) e **Dare e comprendere indicazioni** (Attività 3
+          e 4, secondo il quaderno; l'Attività 4 però pratica soprattutto le domande).
+          Anche l'Attività 5 pratica le domande.
+      - id: n-intro
+        anchor: intro
+        text: Dai prima il tuo esempio e poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui appaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1-answers
+        text: >-
+          Domande attese: Vado al mare → Dove vai d'estate? · Metto i vestiti nella
+          valigia → Cosa metti in valigia per un viaggio? · Viaggio con i miei amici → Con
+          chi viaggi? · Viaggio perché mi piace esplorare → Perché viaggi? · Viaggio in
+          aereo → Come viaggi in un altro Paese? · Voglio andare a Parigi → Dove vuoi
+          andare? · Porto una macchina fotografica → Cosa porti con te in viaggio? · Dormo
+          in un hotel → Dove dormi quando viaggi? Accetta altre domande corrette.
+      - id: n-act4
+        anchor: act4
+        text: Cambia le coppie ogni 3 minuti (per esempio con le Breakout Rooms). Alla fine ogni studente condivide in plenaria.
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Condividi la ruota sullo schermo e girala per ogni studente. Il quaderno ha due
+          ruote (4hy-8ac e 79c-ttg): controlla quale usare.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: viaggi-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Che cosa abbiamo imparato oggi
+      - id: rules-domande
+        type: ruleSummary
+        skill: Fare domande e rispondere
+        rules:
+          - text: 'Le parole interrogative più comuni: **cosa, dove, quando, chi, quale, perché, come**.'
+          - text: >-
+              Struttura di base: **parola interrogativa + verbo (+ soggetto) + il resto**.
+              In italiano non c'è un verbo «aiutante» come *do* in inglese, e di solito
+              non diciamo il pronome (*tu, lui…*).
+            examples:
+              - Cosa fai in vacanza?
+              - Dove dormi quando viaggi?
+              - Quando parti?
+              - Chi viaggia con te?
+          - text: 'Per fare una domanda negativa, aggiungi **non** prima del verbo.'
+            examples:
+              - Cosa non ha il tuo Paese per i turisti?
+              - Non c'è un festival famoso ogni anno?
+      - id: rules-indicazioni
+        type: ruleSummary
+        skill: Dare e comprendere indicazioni
+        rules:
+          - text: Usa frasi brevi e chiare.
+            examples: [Vai dritto., Gira a sinistra., Cammina per due isolati.]
+          - text: Usa le parole di posizione.
+            examples: [accanto a…, di fronte a…, a destra / a sinistra]
+          - text: Dai istruzioni dettagliate, passo dopo passo.
+            examples:
+              - Prosegui dritto per due isolati.
+              - Al semaforo gira a destra.
+              - Dopo il panificio, il museo è sulla sinistra.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: viaggi-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia questo messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-viaggi
+        type: aiTutorPrompt
+        title: Parlare di viaggi
+        message: >-
+          Ciao Mori! Vorrei esercitarmi con l'italiano. Puoi farmi domande sui viaggi
+          usando il presente? Per favore, correggi i miei errori.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, chiedimi di più!**
+          Non capisci qualcosa? Scrivi: **Puoi spiegarmelo in ebraico ma con la frase in italiano?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratica aggiuntiva
+      - id: mori-indicazioni
+        type: aiTutorPrompt
+        title: Chiedere indicazioni stradali
+        intro: >-
+          Tu fai una domanda e Mori ti dà le indicazioni (per esempio: *Come faccio ad
+          arrivare alla stazione ferroviaria?* → *Prosegui dritto, gira a sinistra, la
+          stazione è accanto alla banca.*). Poi Mori chiede e tu rispondi.
+        message: >-
+          Ciao Mori! Voglio esercitarmi con le indicazioni stradali. Io ti chiedo come
+          arrivare a un posto e tu mi dai le indicazioni con frasi semplici. Poi chiedimelo
+          tu e io ti risponderò. Per favore, correggi i miei errori.
+      - id: mori-domande
+        type: aiTutorPrompt
+        title: Fare domande sui viaggi
+        intro: >-
+          Tu scrivi una frase e Mori fa la domanda giusta (per esempio: *Viaggio in
+          aereo.* → *Come viaggi?*; *Vado a Madrid in estate.* → *Quando vai a Madrid?*).
+          Poi Mori scrive una frase e tu fai la domanda.
+        message: >-
+          Ciao Mori! Voglio esercitarmi con le domande sui viaggi. Io scrivo una frase e tu
+          fai la domanda giusta. Poi scrivi tu una frase e io ti farò la domanda. Per
+          favore, correggi i miei errori.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: viaggi-pratica
+    book: workbook
+    title: 'Pratica: Viaggi'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratica le due abilità del ciclo. Ogni risposta viene corretta subito, e puoi riprovare.
+      - id: ex-domande
+        type: activity
+        activity: viaggi-domande
+      - id: ex-indicazioni
+        type: activity
+        activity: viaggi-indicazioni
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: viaggi-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole dei viaggi
+        glossLang: he
+        link: https://quizlet.com/br/1068041307/italiano-basico-viaggi-atualizato-flash-cards/
+        items: &viaggi-words
+          - { term: Viaggio, gloss: טיול }
+          - { term: Vacanza, gloss: חופשה }
+          - { term: Destinazione, gloss: יעד }
+          - { term: Città, gloss: עיר }
+          - { term: Paese, gloss: מדינה }
+          - { term: Spiaggia, gloss: חוף }
+          - { term: Montagna, gloss: הר }
+          - { term: Hotel, gloss: מלון }
+          - { term: Ostello, gloss: אכסניה }
+          - { term: Stazione, gloss: תחנה }
+          - { term: Aeroporto, gloss: שדה תעופה }
+          - { term: Biglietto, gloss: כרטיס }
+          - { term: Valigia, gloss: מזוודה }
+          - { term: Passaporto, gloss: דרכון }
+          - { term: Aereo, gloss: מטוס }
+          - { term: Treno, gloss: רכבת }
+          - { term: Autobus, gloss: אוטובוס }
+          - { term: Macchina, gloss: מכונית }
+          - { term: Taxi, gloss: מונית }
+          - { term: Bicicletta, gloss: אופניים }
+          - { term: Mappa, gloss: מפה }
+          - { term: Strada, gloss: רחוב / דרך }
+          - { term: Piazza, gloss: כיכר }
+          - { term: Banca, gloss: בנק }
+          - { term: Ristorante, gloss: מסעדה }
+          - { term: Museo, gloss: מוזיאון }
+
+vocabulary:
+  - slug: viaggi
+    title: Viaggi
+    items: *viaggi-words
+
+activities:
+  - slug: viaggi-domande
+    title: 'Domande: dove, quando, con chi, perché'
+    minutes: 8
+    items:
+      - id: quando-vacanza
+        type: multipleChoice
+        prompt: ___ vai in vacanza? —Vado in vacanza a luglio.
+        options:
+          - { text: Quando, correct: true }
+          - { text: Dove, feedback: '*Dove* chiede un luogo. *A luglio* è un tempo: usa *quando*.' }
+          - {
+              text: Perché,
+              feedback: '*Perché* chiede una ragione. *A luglio* è un tempo: usa *quando*.',
+            }
+      - id: con-chi
+        type: multipleChoice
+        prompt: ___ viaggi? —Viaggio con i miei amici.
+        options:
+          - { text: Con chi, correct: true }
+          - {
+              text: Chi,
+              feedback: 'La risposta è *con i miei amici*: anche la domanda ha *con*. *Con chi viaggi?*',
+            }
+          - {
+              text: Dove,
+              feedback: '*Dove* chiede un luogo. La risposta dice delle persone: *Con chi viaggi?*',
+            }
+      - id: completa-dove-perche
+        type: fillBlank
+        prompt: Completa con *dove* o *perché*.
+        text: ___ dormi quando viaggi? —In un hotel. ___ viaggi? —Perché mi piace esplorare.
+        blanks: [[Dove, dove], [Perché, perché]]
+        wordBank: [Dove, Perché]
+      - id: unisci-risposte
+        type: matching
+        prompt: Unisci ogni domanda alla sua risposta.
+        pairs:
+          - [Come viaggi?, Viaggio in aereo.]
+          - [Dove vuoi andare?, Voglio andare a Parigi.]
+          - [Cosa porti con te in viaggio?, Porto una macchina fotografica.]
+          - [Chi viaggia con te?, Mia sorella.]
+      - id: non-domanda
+        type: trueFalse
+        prompt: "Per fare una domanda negativa aggiungiamo *non* prima del verbo: *Non c'è un festival famoso ogni anno?*"
+        answer: true
+        feedback:
+          correct: Giusto! *Non* va prima del verbo.
+          incorrect: "È giusto: *non* va prima del verbo (*Non c'è…?*)."
+      - id: senza-do
+        type: multipleChoice
+        prompt: Quale domanda è corretta?
+        options:
+          - { text: Dove dormi quando viaggi?, correct: true }
+          - {
+              text: Dove fai dormi quando viaggi?,
+              feedback: "In italiano non c'è un verbo «aiutante» come *do* in inglese: *Dove dormi?*",
+            }
+          - {
+              text: Dove dormire quando viaggi?,
+              feedback: 'Il verbo cambia secondo la persona. Con *tu*: *Dove dormi?*',
+            }
+      - id: ordina-valigia
+        type: reorderSentence
+        prompt: Metti le parole in ordine per fare una domanda.
+        sentence: Cosa metti in valigia?
+      - id: mia-domanda
+        type: shortAnswer
+        prompt: Scrivi una domanda per un compagno sul suo viaggio. Usa *dove*, *quando* o *come*.
+
+  - slug: viaggi-indicazioni
+    title: 'Indicazioni: vai dritto, gira a sinistra'
+    minutes: 8
+    items:
+      - id: gira-sinistra
+        type: multipleChoice
+        prompt: 'Il museo è a sinistra. Che cosa dici?'
+        options:
+          - { text: Gira a sinistra., correct: true }
+          - {
+              text: Gira a destra.,
+              feedback: '*Destra* è il contrario di *sinistra*. Il museo è a sinistra: *Gira a sinistra*.',
+            }
+          - {
+              text: Vai dritto.,
+              feedback: '*Vai dritto* vuol dire non cambiare direzione. Il museo è a sinistra: *Gira a sinistra*.',
+            }
+      - id: completa-isolati
+        type: fillBlank
+        prompt: Completa le indicazioni.
+        text: Prosegui ___ per due isolati. Al semaforo gira a ___.
+        blanks: [[dritto, diritto], [destra, sinistra]]
+      - id: unisci-posizione
+        type: matching
+        prompt: Unisci ogni espressione al suo significato in ebraico.
+        pairs:
+          - [accanto a, ליד]
+          - [di fronte a, מול]
+          - [a destra, ימינה]
+          - [a sinistra, שמאלה]
+          - [Vai dritto, לך ישר]
+      - id: sulla-sinistra
+        type: trueFalse
+        prompt: '*Il museo è sulla sinistra* vuol dire che il museo è a destra.'
+        answer: false
+        feedback:
+          correct: Giusto! *Sulla sinistra* vuol dire a sinistra.
+          incorrect: '*Sulla sinistra* vuol dire a sinistra, non a destra.'
+      - id: per-isolati
+        type: multipleChoice
+        prompt: Cammina ___ due isolati.
+        options:
+          - { text: per, correct: true }
+          - {
+              text: a,
+              feedback: 'Per dire quanta strada fare usiamo *per*: *Cammina per due isolati*.',
+            }
+          - {
+              text: di,
+              feedback: 'Per dire quanta strada fare usiamo *per*: *Cammina per due isolati*.',
+            }
+      - id: accanto-alla
+        type: multipleChoice
+        prompt: La stazione è ___ banca.
+        options:
+          - { text: accanto alla, correct: true }
+          - {
+              text: accanto la,
+              feedback: 'Diciamo *accanto a*: *a* + *la* = *alla*. *Accanto alla banca*.',
+            }
+          - {
+              text: accanto a la,
+              feedback: '*A* + *la* diventa una parola sola: *alla*. *Accanto alla banca*.',
+            }
+      - id: ordina-semaforo
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Al semaforo gira a destra.
+      - id: di-fronte
+        type: fillBlank
+        prompt: Completa con la parola che manca.
+        text: Vai dritto. Il museo è ___ fronte alla stazione.
+        blanks: [[di]]
