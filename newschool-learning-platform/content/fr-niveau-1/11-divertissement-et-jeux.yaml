@@ -1,0 +1,568 @@
+# Cycle "Divertissement et jeux", converted from the French digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: divertissement-et-jeux
+title: Divertissement et jeux
+goal: Parler de tes jeux et de tes loisirs avec des verbes au présent et les adjectifs possessifs.
+position: 11
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Actions au présent" and "Les adjectifs possessifs")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    The overview lists only Activities 1–4, but the notebook has a fifth activity
+    (memory game, possession). It is kept. Skills mapping used here: actions au
+    présent = Activities 1 and 3; possession = Activities 2, 4 and 5.
+  - >-
+    Activity 2 ("Devine le mot") uses possessive PRONOUNS in its clues ("Les miens
+    sont blonds, les tiens…, les siens…"), but the cycle's skill and summary are
+    possessive ADJECTIVES (mon, ton, son…). The clues are rewritten with adjectives
+    (« Mes … sont blonds. ») and the word list now has articles (les cheveux, la
+    maison…) so students can choose mon / ma / mes. Please confirm.
+  - >-
+    Activity 1: "frappe des pieds par terre" → "tape des pieds". Activity 3: "Étudiant
+    1/2/3" → "Élève 1/2/3", as everywhere else in the notebook.
+  - >-
+    Activity 5: the memory-game slides (Google Slides link) are kept as the activity
+    resource; the sharing parameters (usp, ouid, rtpof, sd) were removed from the link.
+  - >-
+    Summary, present tense: "Le verbe s'accorde différemment en fonction du sujet" is
+    simplified to "Le verbe change selon le sujet". The rule about no auxiliary is
+    rewritten for Hebrew speakers: one word in French, je joue = אני משחק (not « je
+    suis joue »).
+  - >-
+    Summary, possessives: "la possession se fait au masculin" (before a feminine noun
+    starting with a vowel) is rewritten as a precise rule: mon, ton, son instead of
+    ma, ta, sa before a vowel or a mute h (mon amie, ton avocate, son histoire). A
+    rule was ADDED: son / sa / ses mean both "his" and "her" (שלו / שלה): the choice
+    depends on the noun, not on the owner. Please confirm.
+  - >-
+    Mori: the "Questions possibles" list is shown as a short text under the first
+    message. The tips callout (ask for more questions, explanation in Hebrew) is not
+    in this cycle's notebook; it was copied from the other cycles. Remove it if you
+    prefer.
+  - >-
+    Vocabulary: "jouer" appeared twice (לשחק and לשחק/לנגן); it is kept once as
+    "לשחק / לנגן". "soulever" is replaced by "lever" (the activity says « lève ta main
+    »). "soeur" → "sœur". "votre, vos – שלכם/ן" → "שלכם / שלכן"; "leur, leurs –
+    שלהם/ן" → "שלהם / שלהן".
+  - >-
+    The "Réponse de l'élève 1/2/3" lines are replaced by the optional answer boxes:
+    students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: divertissement-et-jeux-classe
+    title: 'Classe : Divertissement et jeux'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Divertissement et jeux
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Actions au présent
+            description: Les verbes en *-er*, *-ir* et *-re* au présent (je joue, nous finissons, ils vendent)
+          - name: La possession
+            description: Les adjectifs possessifs *mon, ton, son, notre, votre, leur* et leurs formes
+      - id: quizlet
+        type: externalLink
+        label: Divertissement et jeux sur Quizlet
+        url: https://quizlet.com/il/1074287744/basic-french-2025-divertissement-et-jeux-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d'introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m'appelle ___. Mon activité préférée pendant la semaine est ___.
+        example: Je m'appelle Lévanah. Mon activité préférée pendant la semaine est mon cours de yoga.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d'échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Qu'est-ce que tu aimes faire le matin ?
+            frame: Le matin, j'aime ___.
+          - question: Qu'est-ce que tu aimes faire l'après-midi ou le soir ?
+            frame: L'après-midi / Le soir, j'aime ___.
+          - question: Que fait ton frère, ta sœur ou ton ami(e) pour s'amuser ?
+            frame: Mon frère joue au football. / Ma copine regarde des films.
+          - question: Que fais-tu à la maison quand il pleut ?
+            frame: Quand il pleut, je reste à la maison et je ___ avec ___.
+          - question: Quel est ton jeu préféré ? Pourquoi ?
+            frame: Mon jeu préféré est ___. Je l'aime parce que ___.
+          - question: Avec qui joues-tu généralement ? À quoi jouez-vous ?
+            frame: Je joue avec ___. Nous jouons à ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Jacques a dit'
+        skills: [Actions au présent]
+        steps:
+          - Le professeur donne des consignes avec des verbes et des adjectifs possessifs.
+          - Obéis seulement si la phrase commence par **« Jacques a dit »**.
+          - 'Variante : chaque élève lit et dit une consigne à son tour.'
+        example: |-
+          Jacques a dit : *lève ta main droite.*
+          Jacques a dit : *touche ton nez.*
+          Jacques a dit : *ferme les yeux.*
+          Jacques a dit : *tape des pieds par terre.*
+          Jacques a dit : *dis à ton camarade ce qu'il doit faire.*
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Devine le mot'
+        skills: [La possession]
+        steps:
+          - Pense à un mot de la liste (par exemple *les cheveux*). Ne le dis pas !
+          - Donne des indices avec des adjectifs possessifs. Remplace le mot par « … ».
+          - Les autres élèves devinent le mot.
+        example: |-
+          *Mes … sont blonds.*
+          *Tes … sont courts.*
+          *Ses … sont longs.*
+          → *les cheveux !*
+        wordBank:
+          - les cheveux
+          - les yeux
+          - les vêtements
+          - les chaussures
+          - le sac
+          - la maison
+          - la voiture
+          - le téléphone
+          - la famille
+          - l'animal de compagnie
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Écrivons une histoire ensemble'
+        skills: [Actions au présent]
+        steps:
+          - Le professeur dit la première phrase.
+          - Chaque élève ajoute une phrase au présent pour continuer l'histoire.
+        example: |-
+          Professeur : *C'est un jour de pluie et je…*
+          Élève 1 : *Je n'aime pas ça.*
+          Élève 2 : *Je vais au supermarché et je…*
+          Élève 3 : *Je rentre mouillé.*
+          Fin.
+      - id: act3-starts
+        type: discussionQuestions
+        title: Idées de premières phrases
+        items:
+          - question: C'est un jour de pluie et je…
+          - question: Je joue au Monopoly avec…
+          - question: Il pleut et je nettoie ma maison quand soudain…
+          - question: Je n'aime pas les jours de pluie et je…
+          - question: Je regarde la télévision et…
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Deux vérités, un mensonge'
+        skills: [La possession]
+        steps:
+          - Dis **3 phrases** avec des adjectifs possessifs, **2 vraies** et **1 fausse**.
+          - Les autres devinent quelle phrase est fausse.
+        example: |-
+          1. *Le prénom de ma sœur est Anna.*
+          2. *Notre maison est bleue.*
+          3. *Son animal préféré est la girafe.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Mes trois phrases
+        items:
+          - question: 'Phrase 1 : ___'
+          - question: 'Phrase 2 : ___'
+          - question: 'Phrase 3 : ___'
+      - id: act5
+        type: classActivity
+        title: 'Activité 5 : Jeu de mémoire'
+        skills: [La possession, Actions au présent]
+        steps:
+          - Le professeur partage son écran avec les cartes numérotées.
+          - 'Choisis **deux numéros**. Exemple : « Je choisis la carte 3 et la carte 12. »'
+          - Le professeur retourne les cartes. Derrière, il y a un adjectif possessif (*mon, ton, son, notre, votre, leur…*) ou un nom (*frère, chien, ami, maison, voiture, professeur…*).
+          - Si la paire va ensemble (*mon + frère*), fais une phrase complète au présent.
+          - Si la paire ne va pas ensemble, le professeur retourne les cartes et c'est au tour de l'élève suivant.
+        example: |-
+          *Mon frère → Mon frère habite à Paris.*
+          *Ta mère → Ta mère cuisine très bien.*
+          *Son père → Son père travaille dans un hôpital.*
+          *Notre ami → Notre ami joue de la guitare.*
+        resource:
+          label: Jeu de mémoire (diaporama)
+          url: https://docs.google.com/presentation/d/1X59Bx5YW2BClscOK6Xh_hv93xt6gaNiV/edit
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **actions au présent** (Activités 1 et 3) et
+          **la possession** (Activités 2, 4 et 5). Choisissez une activité pour chaque
+          compétence, par exemple les Activités 1 et 2, ou 3 et 4.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Donnez votre propre exemple d'abord, puis interrogez chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Posez au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Donnez des consignes avec et sans « Jacques a dit ». Un élève qui obéit sans «
+          Jacques a dit » donne la consigne suivante. Faites remarquer la forme du verbe
+          (*lève, touche, ferme*) et l'adjectif possessif (*ta main, ton nez*).
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Faites attention au choix de l'adjectif : *mes cheveux*, *ma maison*, *mon
+          téléphone*, *mon animal de compagnie*. Le mot secret peut être pris dans la
+          liste ou choisi librement.
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Ouvrez le diaporama du jeu de mémoire avant le cours et partagez votre écran.
+          Chaque carte a un numéro sur la face visible et un mot sur la face cachée.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: divertissement-et-jeux-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd'hui
+      - id: rules-present
+        type: ruleSummary
+        skill: Actions au présent
+        rules:
+          - text: 'Structure de base : **sujet + verbe (présent) + complément**.'
+            examples: [Je lis un livre., Elle joue au tennis.]
+          - text: 'Le verbe change selon le sujet.'
+            examples: [Je marche · Nous marchons · Ils marchent]
+          - text: 'Au présent, le verbe est **un seul mot**, sans auxiliaire : *je joue* = אני משחק (pas « je suis joue »).'
+          - text: Les verbes irréguliers (*lire, faire, aller…*) sont à apprendre par cœur.
+      - id: verbs-table
+        type: table
+        caption: Les verbes réguliers au présent
+        header: [Sujet, parler (-er), finir (-ir), vendre (-re)]
+        rows:
+          - [je, parle, finis, vends]
+          - [tu, parles, finis, vends]
+          - [il / elle, parle, finit, vend]
+          - [nous, parlons, finissons, vendons]
+          - [vous, parlez, finissez, vendez]
+          - [ils / elles, parlent, finissent, vendent]
+      - id: rules-possessives
+        type: ruleSummary
+        skill: Les adjectifs possessifs
+        rules:
+          - text: "L'adjectif possessif vient **avant** le nom. Il s'accorde en genre et en nombre avec **le nom qui le suit**, pas avec la personne qui possède."
+            examples: [Mon frère, Notre maison, Leurs amis]
+          - text: '*Son, sa, ses* veulent dire « שלו » **et** « שלה ». On choisit selon le nom : *sa mère* = האמא שלו / האמא שלה.'
+            examples: [Paul aime sa mère., Anna aime son frère.]
+          - text: 'Devant un nom féminin qui commence par une voyelle (ou un h muet), on utilise *mon, ton, son* (pas *ma, ta, sa*).'
+            examples: [Mon amie, Ton avocate, Son histoire]
+      - id: possessives-table
+        type: table
+        caption: Les adjectifs possessifs
+        header: [Personne, Masculin singulier, Féminin singulier, Pluriel]
+        rows:
+          - [je, mon, ma, mes]
+          - [tu, ton, ta, tes]
+          - [il / elle, son, sa, ses]
+          - [nous, notre, notre, nos]
+          - [vous, votre, votre, vos]
+          - [ils / elles, leur, leur, leurs]
+      - id: possessives-examples
+        type: examples
+        items:
+          - text: Mon jeu préféré est le Monopoly.
+          - text: Notre maison est grande.
+          - text: Ta mère fait du yoga.
+          - text: Son frère joue de la guitare.
+          - text: Leurs chiens sont mignons.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Révisez les deux compétences avec le groupe et demandez un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: divertissement-et-jeux-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie ce message et envoie-le. Mori va te poser des questions ; réponds à toutes les questions.
+      - id: mori-start
+        type: aiTutorPrompt
+        title: Les jeux et les loisirs
+        message: >-
+          Bonjour Mori ! Je veux avoir des conversations courtes. Pose-moi des questions
+          sur les jeux et les loisirs en utilisant le présent et les adjectifs
+          possessifs. Corrige mes erreurs, s'il te plaît.
+      - id: mori-questions
+        type: text
+        text: |-
+          Mori peut te demander par exemple : *Quel est ton jeu préféré ? Joues-tu avec tes amis ? Que fait ton frère ou ta sœur pour s'amuser ? Quelle est l'activité préférée de ton ami(e) ?*
+          Exemple de réponse : *Mon jeu préféré est le Monopoly. Je joue avec mes amis tous les dimanches.*
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S'il te plaît, pose-moi plus de questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m'expliquer en hébreu mais en gardant la phrase en français, s'il te plaît ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-jeu
+        type: aiTutorPrompt
+        title: Devine le jeu
+        intro: "Envoie ce message à Mori, puis donne des indices. Par exemple : « C'est mon jeu préféré. J'y joue sur mon téléphone. Mon frère ne l'aime pas. »"
+        message: Bonjour Mori ! Je pense à un jeu et tu dois deviner lequel.
+      - id: mori-qui
+        type: aiTutorPrompt
+        title: Qui le fait ?
+        intro: >-
+          Envoie ce message à Mori, puis décris ce que fait un membre de ta famille. Par
+          exemple : *Elle joue au tennis tous les samedis. C'est la fille de mes parents.*
+          → ma sœur. *Il joue à l'ordinateur après l'école. C'est le fils de mes parents.*
+          → mon frère.
+        message: Bonjour Mori ! Je vais te dire ce qu'un membre de ma famille fait pour s'amuser. Tu dois deviner qui c'est.
+      - id: mori-tour
+        type: aiTutorPrompt
+        title: À ton tour, Mori
+        intro: Quand Mori a deviné, envoie ce message.
+        message: Maintenant, c'est ton tour. Donne-moi un exemple et je devinerai.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: divertissement-et-jeux-pratique
+    book: workbook
+    title: 'Pratique : Divertissement et jeux'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux essayer encore une fois.
+      - id: ex-present
+        type: activity
+        activity: divertissement-et-jeux-present
+      - id: ex-possessifs
+        type: activity
+        activity: divertissement-et-jeux-possessifs
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: divertissement-et-jeux-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Divertissement et jeux
+        glossLang: he
+        link: https://quizlet.com/il/1074287744/basic-french-2025-divertissement-et-jeux-flash-cards/
+        items: &divertissement-words
+          - { term: jouer, gloss: לשחק / לנגן }
+          - { term: lire, gloss: לקרוא }
+          - { term: voir, gloss: לראות }
+          - { term: courir, gloss: לרוץ }
+          - { term: dire, gloss: לומר }
+          - { term: lever, gloss: להרים }
+          - { term: applaudir, gloss: למחוא כפיים }
+          - { term: fermer, gloss: לסגור }
+          - { term: jeu, gloss: משחק }
+          - { term: sport, gloss: ספורט }
+          - { term: télévision, gloss: טלוויזיה }
+          - { term: ordinateur, gloss: מחשב }
+          - { term: téléphone, gloss: טלפון }
+          - { term: 'mon, ma, mes', gloss: שלי }
+          - { term: 'ton, ta, tes', gloss: שלך }
+          - { term: 'son, sa, ses', gloss: שלו / שלה }
+          - { term: 'notre, nos', gloss: שלנו }
+          - { term: 'votre, vos', gloss: שלכם / שלכן }
+          - { term: 'leur, leurs', gloss: שלהם / שלהן }
+          - { term: frère, gloss: אח }
+          - { term: sœur, gloss: אחות }
+          - { term: ami, gloss: חבר }
+          - { term: amie, gloss: חברה }
+          - { term: amis, gloss: חברים }
+          - { term: père, gloss: אבא }
+          - { term: mère, gloss: אמא }
+          - { term: famille, gloss: משפחה }
+          - { term: enfants, gloss: ילדים }
+          - { term: professeur, gloss: מורה }
+          - { term: maison, gloss: בית }
+          - { term: voiture, gloss: מכונית }
+          - { term: chien, gloss: כלב }
+          - { term: chat, gloss: חתול }
+
+vocabulary:
+  - slug: divertissement-et-jeux
+    title: Divertissement et jeux
+    items: *divertissement-words
+
+activities:
+  - slug: divertissement-et-jeux-present
+    title: Actions au présent
+    minutes: 8
+    items:
+      - id: elle-joue
+        type: multipleChoice
+        prompt: Elle ___ au tennis.
+        options:
+          - { text: joue, correct: true }
+          - {
+              text: joues,
+              feedback: '*Joues* est pour *tu* : tu joues. Avec *elle*, on dit *elle joue*.',
+            }
+          - {
+              text: jouent,
+              feedback: '*Jouent* est pour *ils / elles* (plusieurs personnes). Avec *elle*, on dit *elle joue*.',
+            }
+      - id: nous-parlons
+        type: multipleChoice
+        prompt: Nous ___ français en classe.
+        options:
+          - { text: parlons, correct: true }
+          - {
+              text: parlez,
+              feedback: '*Parlez* est pour *vous*. Avec *nous*, le verbe finit en *-ons* : nous parlons.',
+            }
+          - {
+              text: parle,
+              feedback: '*Parle* est pour *je* ou *il / elle*. Avec *nous*, on dit *nous parlons*.',
+            }
+      - id: samedi
+        type: fillBlank
+        prompt: Complète avec le verbe au présent.
+        text: Le samedi, je ___ (jouer) au football et mes amis ___ (regarder) le match.
+        blanks: [[joue], [regardent]]
+      - id: parler
+        type: matching
+        prompt: Associe chaque sujet à la bonne forme du verbe *parler*.
+        pairs:
+          - [je, parle]
+          - [tu, parles]
+          - [nous, parlons]
+          - [vous, parlez]
+          - [ils, parlent]
+      - id: sans-auxiliaire
+        type: trueFalse
+        prompt: Pour dire « אני משחק », on dit « je suis joue ».
+        answer: false
+        feedback:
+          correct: Bravo ! Au présent, le verbe est un seul mot, sans auxiliaire.
+          incorrect: 'Au présent, le verbe est un seul mot : on dit *je joue*.'
+      - id: finir-vendre
+        type: fillBlank
+        prompt: Complète avec le verbe au présent.
+        text: Le film ___ (finir) à neuf heures. Mes parents ___ (vendre) leur voiture.
+        blanks: [[finit], [vendent]]
+      - id: ordre-copine
+        type: reorderSentence
+        prompt: Remets les mots dans l'ordre.
+        sentence: Ma copine regarde des films.
+      - id: mes-amis
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Mes amis jouent au Monopoly., correct: true }
+          - {
+              text: Mes amis joue au Monopoly.,
+              feedback: '*Mes amis* = *ils* : le verbe finit en *-ent* (ils jouent).',
+            }
+          - {
+              text: Mes amis jouons au Monopoly.,
+              feedback: '*Jouons* est pour *nous*. *Mes amis* = *ils* : ils jouent.',
+            }
+
+  - slug: divertissement-et-jeux-possessifs
+    title: Les adjectifs possessifs
+    minutes: 8
+    items:
+      - id: mon-telephone
+        type: multipleChoice
+        prompt: C'est ___ téléphone. (à moi)
+        options:
+          - { text: mon, correct: true }
+          - { text: ma, feedback: '*Téléphone* est masculin : on dit *mon téléphone*.' }
+          - {
+              text: mes,
+              feedback: '*Mes* est pour un nom au pluriel. *Téléphone* est singulier : *mon*.',
+            }
+      - id: notre-maison
+        type: multipleChoice
+        prompt: ___ maison est grande. (à nous)
+        options:
+          - { text: Notre, correct: true }
+          - {
+              text: Nos,
+              feedback: '*Nos* est pour un nom au pluriel. *Maison* est singulier : *notre maison*.',
+            }
+          - { text: Leur, feedback: '*Leur* est pour *ils / elles*. Pour *nous*, on dit *notre*.' }
+      - id: sa-soeur
+        type: multipleChoice
+        prompt: Paul aime ___ sœur.
+        options:
+          - { text: sa, correct: true }
+          - {
+              text: son,
+              feedback: 'On choisit selon le nom, pas selon Paul : *sœur* est féminin, donc *sa sœur*.',
+            }
+          - {
+              text: ses,
+              feedback: '*Ses* est pour un nom au pluriel. *Sœur* est singulier : *sa sœur*.',
+            }
+      - id: mon-amie
+        type: trueFalse
+        prompt: On dit « mon amie » (pas « ma amie »), parce que *amie* commence par une voyelle.
+        answer: true
+        feedback:
+          correct: 'Oui ! Devant une voyelle, on utilise *mon, ton, son* : mon amie, ton avocate.'
+          incorrect: 'Devant un nom féminin qui commence par une voyelle, on utilise *mon* : mon amie.'
+      - id: paul-mere
+        type: trueFalse
+        prompt: Dans « Paul aime sa mère », on utilise *sa* parce que Paul est un garçon.
+        answer: false
+        feedback:
+          correct: 'Exact ! On utilise *sa* parce que *mère* est féminin, pas à cause de Paul.'
+          incorrect: "L'adjectif possessif s'accorde avec le nom qui suit : *mère* est féminin, donc *sa*."
+      - id: completer
+        type: fillBlank
+        prompt: Complète avec l'adjectif possessif de la personne entre parenthèses.
+        text: Tu aimes ___ (tu) jeu préféré ? Ils aiment ___ (ils) chiens. Nous aimons ___ (nous) professeur.
+        blanks: [[ton], [leurs], [notre]]
+      - id: pluriel
+        type: matching
+        prompt: 'Associe chaque personne à son adjectif possessif devant un nom au pluriel (… amis).'
+        pairs:
+          - [je, mes]
+          - [tu, tes]
+          - [il / elle, ses]
+          - [nous, nos]
+          - [ils / elles, leurs]
+      - id: ordre-frere
+        type: reorderSentence
+        prompt: Remets les mots dans l'ordre.
+        sentence: Son frère joue de la guitare.

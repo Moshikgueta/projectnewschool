@@ -1,0 +1,671 @@
+# Cycle "Musique", converted from the French digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: musique
+title: Musique
+goal: Parler de musique en posant des questions et avec les verbes au présent.
+position: 17
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Poser des questions" and "Les verbes au présent")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Song lyrics are NOT copied into the platform (copyright). Activity 1 ("La vie en
+    rose", Edith Piaf) keeps the YouTube link and the questions about the song, but
+    not the printed lyrics; the teacher plays the song and shows the lyrics from the
+    old notebook. Activity 4 ("Comme d'habitude") keeps only the verb bank; the
+    gap-fill lyrics stay in the old notebook. The YouTube links are kept without
+    their tracking parameters (list, start_radio, ab_channel).
+  - >-
+    Activity 4: the link label said "Claude Français"; corrected to "Claude
+    François". The video is on a fan channel (MalabarMerlin), not an official one:
+    please replace it with an official video or the Genius page if possible. In the
+    verb bank "j'ai x2" is written "ai (x2)", because the gaps already show "J'".
+  - >-
+    Activity 3 title "devine la questions" → "devine la question". "Les chanteurs
+    gagnent beaucoup d'argent" got its missing full stop; "1 er groupe" → "1er
+    groupe".
+  - >-
+    Summary, questions: the notebook lists "5 main question words" including "est-ce
+    que", right after saying that question-word questions cannot be answered with
+    oui/non. "Est-ce que" is now a separate rule: it makes a yes/no question. The two
+    structures are labelled "oral / courant" (Où tu écoutes…?) and "plus soutenu"
+    (Où écoutes-tu…?). Please confirm.
+  - >-
+    Summary, present tense: a short warning was added that not every verb in -ir is
+    in the 2nd group (sortir, dormir are learnt by heart), because the cycle uses
+    "je sors". The -er / -ir endings are shown as a table. Please confirm.
+  - >-
+    Mori homework: the first message asked Mori to work on "les mots interrogatifs
+    et les prépositions"; prepositions are not a skill of this cycle (it looks copied
+    from another cycle), so it now says "les mots interrogatifs et les verbes au
+    présent". The extra activity "Où se passe la scène ?" still practises
+    prepositions; it is kept as it is. Please decide whether to keep it.
+  - >-
+    Vocabulary: "silence" was glossed "שתיקה" (keeping quiet); it is now "שקט".
+    "concert" קונצרט → "קונצרט / הופעה". Please confirm.
+  - >-
+    The notebook gives no times except Activity 5 (2 minutes to prepare, 5 minutes
+    to present); those are kept in the steps. It gives no recommended activity
+    combinations; the plan note lists which activities practise each skill.
+  - >-
+    The "Réponse de l'élève 1/2/3" lines are replaced by the optional answer boxes:
+    students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: musique-classe
+    title: 'Classe : Musique'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Musique
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Poser des questions
+            description: '*quel / quelle, où, quand, qui* et *est-ce que*'
+          - name: Les verbes au présent
+            description: Les verbes en *-er* et en *-ir* au présent (*je parle, je finis*), *vouloir, pouvoir, devoir* + infinitif
+      - id: quizlet
+        type: externalLink
+        label: Musique sur Quizlet
+        url: https://quizlet.com/il/1076518427/basic-french-2025-musique-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. J’écoute de la musique tous les jours / ___ fois par semaine.
+        example: Je m’appelle Lévanah. J’écoute de la musique tous les jours.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quelle est ta chanson préférée ?
+            frame: Ma chanson préférée est ___.
+          - question: Où écoutes-tu de la musique ?
+            frame: 'J’écoute de la musique dans / à / sur ___. (Exemple : dans ma chambre, sur mon téléphone, à la maison)'
+          - question: Quand écoutes-tu de la musique ?
+            frame: J’écoute de la musique le matin / l’après-midi / le soir.
+          - question: La musique est-elle importante pour toi ? Pourquoi ?
+            frame: Oui, la musique est importante pour moi parce que ___. / Non, la musique n’est pas importante pour moi parce que ___.
+          - question: Que fais-tu quand tu écoutes ta chanson préférée ?
+            frame: Je ___ (danse, chante, pense, cuisine) quand j’écoute ___ (nom de la chanson).
+          - question: Tu préfères écouter de la musique ou des podcasts ? Pourquoi ?
+            frame: Je préfère écouter ___ parce que ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Découvrir une chanson, « La vie en rose »'
+        skills: [Poser des questions]
+        steps:
+          - Écoute la chanson « La vie en rose » d’Edith Piaf.
+          - Ton professeur explique le sens des paroles jusqu’au premier refrain.
+          - Réponds aux questions ci-dessous. Cherche les réponses dans la chanson.
+        resource:
+          label: « La vie en rose », Edith Piaf (YouTube)
+          url: https://www.youtube.com/watch?v=-0KvBnIvTFs
+      - id: act1-questions
+        type: discussionQuestions
+        title: Questions sur la chanson
+        items:
+          - question: Comment se sent la chanteuse ?
+          - question: Que fait l’homme avec ses yeux ?
+          - question: Où se perd le rire ?
+          - question: Que voit-elle quand il lui parle tout bas ?
+          - question: Quels mots l’homme lui dit-il ?
+          - question: Où l’homme est-il entré ?
+          - question: Qu’est-ce qu’elle sent dans son cœur ?
+          - question: Que promet l’homme pour la vie ?
+          - question: Quand sent-elle son cœur battre ?
+          - question: Qu’est-ce que l’homme a juré ?
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Écrivons un poème ensemble'
+        skills: [Les verbes au présent]
+        steps:
+          - Lis le poème. Les vers sont mélangés.
+          - Remets les vers dans le bon ordre.
+          - Trouve les **verbes** dans chaque vers.
+        example: |-
+          Je danse et je chante avec mes amis.
+          Le silence remplit la salle.
+          La musique s’arrête doucement.
+          Le concert commence enfin.
+          La batterie résonne fort.
+          Je ferme les yeux et j’écoute la mélodie.
+          La chanteuse sourit au public.
+          Les lumières s’allument sur la scène.
+          Tout le monde applaudit très fort.
+          La guitare joue une belle chanson.
+      - id: act2-verbs
+        type: discussionQuestions
+        title: Le poème dans le bon ordre
+        items:
+          - question: 'Vers 1 : ___ (verbe : ___)'
+          - question: 'Vers 2 : ___ (verbe : ___)'
+          - question: 'Vers 3 : ___ (verbe : ___)'
+          - question: 'Vers 4 : ___ (verbe : ___)'
+          - question: 'Vers 5 : ___ (verbe : ___)'
+          - question: 'Vers 6 : ___ (verbe : ___)'
+          - question: 'Vers 7 : ___ (verbes : ___)'
+          - question: 'Vers 8 : ___ (verbes : ___)'
+          - question: 'Vers 9 : ___ (verbe : ___)'
+          - question: 'Vers 10 : ___ (verbe : ___)'
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Devine la question'
+        skills: [Poser des questions]
+        steps:
+          - Écris **3 affirmations** sur tes habitudes musicales.
+          - Lis une affirmation. Tes camarades devinent la question.
+          - Entraîne-toi aussi avec les affirmations ci-dessous.
+        example: |-
+          Affirmation : *J’aime écouter de la musique dans le parc.*
+          Question : *Où aimes-tu écouter de la musique ?*
+      - id: act3-mine
+        type: discussionQuestions
+        title: Mes affirmations
+        items:
+          - question: 'Affirmation 1 : ___'
+          - question: 'Affirmation 2 : ___'
+          - question: 'Affirmation 3 : ___'
+      - id: act3-statements
+        type: discussionQuestions
+        title: Quelle est la question ?
+        items:
+          - question: J’utilise Spotify pour écouter de la musique.
+            frame: ___ ?
+          - question: J’écoute de la musique trois fois par semaine.
+            frame: ___ ?
+          - question: J’aime danser sur de la musique latine.
+            frame: ___ ?
+          - question: Je vais à des concerts dans ma ville.
+            frame: ___ ?
+          - question: Je partage de la musique avec mes amis.
+            frame: ___ ?
+          - question: Mon groupe préféré est Indochine.
+            frame: ___ ?
+          - question: J’écoute de la musique sur mon téléphone.
+            frame: ___ ?
+          - question: Mon instrument préféré est la guitare.
+            frame: ___ ?
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Complète la chanson'
+        skills: [Les verbes au présent]
+        steps:
+          - Écoute la chanson « Comme d’habitude » de Claude François.
+          - Ton professeur montre les paroles avec des verbes cachés.
+          - Complète les blancs avec le bon verbe de la liste. Certains verbes reviennent plusieurs fois.
+        wordBank:
+          [
+            est,
+            caresse,
+            vais (x4),
+            quitte,
+            m’habille,
+            bois,
+            tournes,
+            sors,
+            relève,
+            remonte,
+            suis,
+            bouscule,
+            me lève,
+            ai (x2),
+            réveilles,
+          ]
+        resource:
+          label: « Comme d’habitude », Claude François (YouTube)
+          url: https://www.youtube.com/watch?v=kJl2ICLpj00
+      - id: act5
+        type: classActivity
+        title: 'Activité 5 : L’interview musicale'
+        skills: [Poser des questions, Les verbes au présent]
+        steps:
+          - Lis les questions ci-dessous (2 minutes).
+          - Travaillez en binômes. Pose les questions à ton partenaire **à l’oral** et note ses réponses.
+          - Partage avec le groupe **une information** sur ton partenaire (5 minutes).
+        example: |-
+          A : *Quel est ton instrument préféré ?*
+          B : *J’aime la guitare.*
+          *Elle écoute de la musique sur Spotify.* / *Il ne partage pas sa musique avec ses amis.*
+      - id: act5-questions
+        type: discussionQuestions
+        title: Interview
+        items:
+          - question: Quel est ton instrument préféré ?
+            frame: Mon instrument préféré est ___.
+          - question: Quelle application utilises-tu pour écouter de la musique ?
+            frame: J’utilise ___.
+          - question: À quelle fréquence écoutes-tu de la musique ?
+            frame: J’écoute de la musique ___ fois par semaine. / J’écoute de la musique tous les jours.
+          - question: Quel style de musique n’aimes-tu pas ?
+            frame: Je n’aime pas ___.
+          - question: Que fais-tu pendant un concert ?
+            frame: Pendant un concert, je ___.
+          - question: Qui chante bien dans ta famille ?
+            frame: Mon / Ma ___ chante bien.
+          - question: Partages-tu de la musique avec tes amis ?
+            frame: Oui, je partage de la musique avec mes amis. / Non, je ne partage pas de musique avec mes amis.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **Poser des questions** (Activités 1 et 3) et
+          **Les verbes au présent** (Activités 2 et 4). L’Activité 5 pratique les deux.
+      - id: n-intro
+        anchor: intro
+        text: Donne ton exemple d’abord, puis demande à chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Fais écouter la chanson et explique le sens des paroles jusqu’au premier
+          refrain. Les paroles ne sont pas copiées dans la plateforme (droits d’auteur) :
+          montre-les à l’écran depuis l’ancien cahier. Les élèves associent ensuite les
+          questions aux réponses qui se trouvent dans la chanson.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Solution : 1. Le silence remplit la salle. 2. Les lumières s’allument sur la
+          scène. 3. Le concert commence enfin. 4. La batterie résonne fort. 5. La guitare
+          joue une belle chanson. 6. La chanteuse sourit au public. 7. Je ferme les yeux
+          et j’écoute la mélodie. 8. Je danse et je chante avec mes amis. 9. La musique
+          s’arrête doucement. 10. Tout le monde applaudit très fort.
+      - id: n-act3
+        anchor: act3-statements
+        text: >-
+          Réponses : Quelle application utilises-tu pour écouter de la musique ? · À
+          quelle fréquence écoutes-tu de la musique ? · Sur quelle musique aimes-tu
+          danser ? · Où vas-tu à des concerts ? · Partages-tu de la musique avec tes
+          amis ? · Quel est ton groupe préféré ? · Comment écoutes-tu de la musique ?
+          (radio, téléphone, ordinateur…) · Quel est ton instrument préféré ?
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Les paroles avec les blancs sont dans l’ancien cahier ; elles ne sont pas
+          copiées dans la plateforme (droits d’auteur). Montre-les à l’écran avec les
+          verbes cachés. Le nombre entre parenthèses indique combien de fois le verbe
+          revient.
+      - id: n-act5
+        anchor: act5
+        text: Tu peux noter au tableau les réponses les plus courantes.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: musique-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-questions
+        type: ruleSummary
+        skill: Poser des questions
+        rules:
+          - text: >-
+              On utilise les mots interrogatifs pour demander une information précise :
+              un lieu, un moment, une raison… On ne peut pas répondre à ces questions par
+              « oui » ou « non ».
+          - text: >-
+              Deux structures : **mot interrogatif + sujet + verbe + détails** (à l’oral,
+              langage courant) ou **mot interrogatif + verbe + sujet + détails** (langage
+              plus soutenu).
+            examples:
+              - Où tu écoutes de la musique ?
+              - Où écoutes-tu de la musique ?
+          - text: 'Les 4 mots interrogatifs principaux : **quel / quelle, où, quand, qui**.'
+          - text: '**Est-ce que** + sujet + verbe fait une question fermée : on répond par « oui » ou « non ».'
+            examples:
+              - Est-ce que tu aimes ce chanteur ? → Oui, j’aime ce chanteur.
+      - id: questions-table
+        type: table
+        caption: Les mots interrogatifs
+        header: [Mot, Question, Réponse]
+        rows:
+          - [Quel / Quelle, Quelle musique aimes-tu ?, J’aime le rock.]
+          - [Où, Où joues-tu de la guitare ?, Je joue de la guitare à la maison.]
+          - [Quand, Quand commence le concert ?, Le concert commence dans deux heures.]
+          - [Qui, Qui est ton chanteur préféré ?, Mon chanteur préféré est Stromae.]
+      - id: rules-present
+        type: ruleSummary
+        skill: Les verbes au présent
+        rules:
+          - text: 'On utilise le présent pour parler d’actions qui se passent maintenant, pour exprimer des habitudes et pour parler de faits généraux.'
+            examples:
+              - Je joue de la guitare tous les jours.
+              - Tu chantes dans la chorale de l’école.
+              - Les chanteurs gagnent beaucoup d’argent.
+          - text: >-
+              Les verbes se divisent en trois groupes : **1er groupe : -er** (parler,
+              aimer, jouer…), **2e groupe : -ir** (finir, choisir, grandir…) et **3e
+              groupe : verbes à apprendre par cœur** (faire, aller, venir, attendre,
+              lire…). Attention : certains verbes en -ir sont du 3e groupe (sortir, dormir).
+          - text: 'Pour le 1er et le 2e groupe, on enlève **-er** ou **-ir** et on ajoute la terminaison (regarde le tableau).'
+          - text: 'Avec **vouloir, pouvoir, devoir** (je veux, je peux, je dois), le deuxième verbe reste à l’**infinitif**.'
+            examples:
+              - Je veux apprendre à jouer du piano.
+              - Je peux chanter tous les jours.
+              - Tu veux composer des chansons.
+              - Elle doit pratiquer la guitare.
+          - text: >-
+              Les verbes de sentiment (**aimer, adorer, préférer, détester**) sont suivis
+              d’un verbe à l’infinitif ou d’un nom avec un article défini (**le, la,
+              les**).
+            examples:
+              - J’aime le rock.
+              - J’aime chanter.
+              - J’aime les chansons françaises.
+      - id: present-table
+        type: table
+        caption: Le présent des verbes en -er et en -ir
+        header: [Sujet, parler (-er), finir (-ir)]
+        rows:
+          - [je, je parl**e**, je fin**is**]
+          - [tu, tu parl**es**, tu fin**is**]
+          - [il / elle / on, il parl**e**, il fin**it**]
+          - [nous, nous parl**ons**, nous fin**issons**]
+          - [vous, vous parl**ez**, vous fin**issez**]
+          - [ils / elles, ils parl**ent**, ils fin**issent**]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: musique-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie ce message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-musique
+        type: aiTutorPrompt
+        title: Parler de musique
+        message: >-
+          Bonjour Mori ! Je veux pratiquer le français. Peux-tu me poser des questions
+          sur la musique ? Utilise les questions pour travailler les mots interrogatifs et
+          les verbes au présent. S’il te plaît, utilise seulement le présent et corrige
+          mes erreurs.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu as fini et tu veux plus de questions ? Envoie : **Peux-tu me poser plus de questions, s’il te plaît ?**
+          Tu ne comprends pas une explication en français ? Envoie : **Peux-tu me l’expliquer en hébreu mais en gardant la phrase en français ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-scene
+        type: aiTutorPrompt
+        title: Où se passe la scène ?
+        intro: >-
+          Envoie ce message à Mori, puis décris ta scène. Exemple : Il y a une scène avec
+          un chanteur. Le public est devant la scène. Les lumières sont au-dessus des
+          chanteurs. (Mori devine : Sur une scène de concert ?) Ensuite, écris : *À ton
+          tour maintenant ! Décris une scène et je devinerai où elle se passe.*
+        message: >-
+          Bonjour Mori ! Faisons une activité. Je vais décrire une scène d’une chanson,
+          d’un film ou d’une série en utilisant des prépositions. Devine où se passe la
+          scène.
+      - id: mori-questions
+        type: aiTutorPrompt
+        title: Crée des questions sur la musique
+        intro: >-
+          Envoie ce message à Mori, puis écris une phrase. Exemple : Je chante dans la
+          chorale de l’école. (Mori écrit : Où chantes-tu ? / Qui chante dans la
+          chorale ?) Ensuite, écris : *À ton tour ! Écris une phrase et je poserai une
+          question.*
+        message: >-
+          Salut Mori ! Jouons à un jeu. Je vais dire une phrase sur la musique, et toi tu
+          dois poser une question avec un mot interrogatif comme qui, quoi, où, quand.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: musique-pratique
+    book: workbook
+    title: 'Pratique : Musique'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-questions
+        type: activity
+        activity: musique-questions
+      - id: ex-verbes
+        type: activity
+        activity: musique-verbes
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: musique-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la musique
+        glossLang: he
+        link: https://quizlet.com/il/1076518427/basic-french-2025-musique-flash-cards/
+        items: &musique-words
+          - { term: chanson, gloss: שיר }
+          - { term: musique, gloss: מוזיקה }
+          - { term: écouter, gloss: להקשיב }
+          - { term: chanteur, gloss: זמר }
+          - { term: chanteuse, gloss: זמרת }
+          - { term: paroles, gloss: מילים }
+          - { term: mélodie, gloss: מנגינה }
+          - { term: rythme, gloss: קצב }
+          - { term: instrument, gloss: כלי נגינה }
+          - { term: guitare, gloss: גיטרה }
+          - { term: batterie, gloss: תופים }
+          - { term: piano, gloss: פסנתר }
+          - { term: concert, gloss: קונצרט / הופעה }
+          - { term: public, gloss: קהל }
+          - { term: scène, gloss: במה }
+          - { term: voix, gloss: קול }
+          - { term: écouter sur, gloss: להאזין ב… }
+          - { term: préférer, gloss: להעדיף }
+          - { term: aimer, gloss: לאהוב }
+          - { term: danser, gloss: לרקוד }
+          - { term: chanter, gloss: לשיר }
+          - { term: jouer (d’un instrument), gloss: לנגן }
+          - { term: partager, gloss: לשתף }
+          - { term: groupe, gloss: להקה }
+          - { term: style de musique, gloss: סוג מוזיקה }
+          - { term: quotidien, gloss: יומיומי }
+          - { term: habituel, gloss: רגיל }
+          - { term: application, gloss: אפליקציה }
+          - { term: téléphone, gloss: טלפון }
+          - { term: ordinateur, gloss: מחשב }
+          - { term: applaudir, gloss: למחוא כפיים }
+          - { term: silence, gloss: שקט }
+          - { term: applaudissements, gloss: מחיאות כפיים }
+          - { term: émotion, gloss: רגש }
+          - { term: cœur, gloss: לב }
+
+vocabulary:
+  - slug: musique
+    title: Musique
+    items: *musique-words
+
+activities:
+  - slug: musique-questions
+    title: 'Poser des questions : quel, où, quand, qui'
+    minutes: 8
+    items:
+      - id: ou-ecoutes
+        type: multipleChoice
+        prompt: '___ écoutes-tu de la musique ? — À la maison.'
+        options:
+          - { text: Où, correct: true }
+          - {
+              text: Quand,
+              feedback: '*Quand* demande un moment. La réponse est un lieu (*à la maison*) : utilise *où*.',
+            }
+          - {
+              text: Qui,
+              feedback: '*Qui* demande une personne. La réponse est un lieu (*à la maison*) : utilise *où*.',
+            }
+      - id: qui-chante
+        type: multipleChoice
+        prompt: '___ chante bien dans ta famille ? — Ma sœur.'
+        options:
+          - { text: Qui, correct: true }
+          - {
+              text: Où,
+              feedback: '*Où* demande un lieu. La réponse est une personne (*ma sœur*) : utilise *qui*.',
+            }
+          - {
+              text: Quand,
+              feedback: '*Quand* demande un moment. La réponse est une personne (*ma sœur*) : utilise *qui*.',
+            }
+      - id: quelle-musique
+        type: multipleChoice
+        prompt: '___ musique aimes-tu ? — J’aime le rock.'
+        options:
+          - { text: Quelle, correct: true }
+          - { text: Quel, feedback: '*Musique* est féminin (*la musique*) : utilise *quelle*.' }
+          - {
+              text: Qui,
+              feedback: '*Qui* demande une personne. Ici on demande une chose (*la musique*) : utilise *quelle*.',
+            }
+      - id: quand-ou
+        type: fillBlank
+        prompt: Complète avec *quand* ou *où*.
+        text: '___ commence le concert ? — Dans deux heures. ___ joues-tu de la guitare ? — À la maison.'
+        blanks: [[Quand, quand], [Où, où]]
+        wordBank: [Quand, Où]
+      - id: oui-non
+        type: trueFalse
+        prompt: 'On peut répondre « oui » ou « non » à une question avec *où*, *quand* ou *qui*.'
+        answer: false
+        feedback:
+          correct: 'Bravo ! Avec *où, quand, qui*, on demande une information précise : *Où écoutes-tu de la musique ? — À la maison.*'
+          incorrect: 'Avec *où, quand, qui*, on demande une information précise, pas « oui » ou « non ». Pour une question oui / non, on utilise *est-ce que*.'
+      - id: associe
+        type: matching
+        prompt: Associe chaque question à sa réponse.
+        pairs:
+          - [Quelle musique aimes-tu ?, J’aime le rock.]
+          - [Où joues-tu de la guitare ?, Je joue de la guitare à la maison.]
+          - [Quand commence le concert ?, Le concert commence dans deux heures.]
+          - [Qui est ton chanteur préféré ?, Mon chanteur préféré est Stromae.]
+          - [Est-ce que tu aimes ce chanteur ?, 'Oui, j’aime ce chanteur.']
+      - id: quelle-question
+        type: multipleChoice
+        prompt: 'Réponse : *J’écoute de la musique le soir.* Quelle est la question ?'
+        options:
+          - { text: Quand écoutes-tu de la musique ?, correct: true }
+          - {
+              text: Où écoutes-tu de la musique ?,
+              feedback: '*Le soir* est un moment, pas un lieu : utilise *quand*.',
+            }
+          - {
+              text: Qui écoute de la musique ?,
+              feedback: '*Qui* demande une personne. *Le soir* est un moment : utilise *quand*.',
+            }
+      - id: ordonne-question
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre pour faire une question.
+        sentence: Où écoutes-tu de la musique ?
+
+  - slug: musique-verbes
+    title: Les verbes au présent
+    minutes: 8
+    items:
+      - id: nous-jouons
+        type: multipleChoice
+        prompt: Nous ___ de la guitare.
+        options:
+          - { text: jouons, correct: true }
+          - {
+              text: jouez,
+              feedback: '*Jouez* va avec *vous*. Avec *nous*, la terminaison est *-ons* : *nous jouons*.',
+            }
+          - {
+              text: jouent,
+              feedback: '*Jouent* va avec *ils / elles*. Avec *nous*, la terminaison est *-ons* : *nous jouons*.',
+            }
+      - id: complete-er-ir
+        type: fillBlank
+        prompt: Écris le verbe au présent.
+        text: Tu ___ (chanter) dans la chorale. Ils ___ (aimer) le rock. Vous ___ (finir) la chanson.
+        blanks: [[chantes], [aiment], [finissez]]
+      - id: finir
+        type: matching
+        prompt: Associe chaque sujet à la bonne forme de *finir*.
+        pairs:
+          - [je, finis]
+          - [il / elle, finit]
+          - [nous, finissons]
+          - [vous, finissez]
+          - [ils / elles, finissent]
+      - id: veux-jouer
+        type: multipleChoice
+        prompt: Je veux ___ du piano.
+        options:
+          - { text: jouer, correct: true }
+          - {
+              text: joue,
+              feedback: 'Après *je veux*, le deuxième verbe reste à l’infinitif : *je veux jouer*.',
+            }
+          - {
+              text: joues,
+              feedback: 'Après *je veux*, le deuxième verbe reste à l’infinitif : *je veux jouer*.',
+            }
+      - id: doit-pratiquer
+        type: trueFalse
+        prompt: 'Cette phrase est correcte : *Elle doit pratique la guitare.*'
+        answer: false
+        feedback:
+          correct: 'Bravo ! Après *doit*, le verbe reste à l’infinitif : *Elle doit pratiquer la guitare.*'
+          incorrect: 'Après *doit*, le verbe reste à l’infinitif : *Elle doit pratiquer la guitare.*'
+      - id: aime-le
+        type: multipleChoice
+        prompt: J’aime ___ rock.
+        options:
+          - { text: le, correct: true }
+          - {
+              text: du,
+              feedback: 'Après *aimer*, on utilise l’article défini *le, la, les* : *J’aime le rock.*',
+            }
+          - {
+              text: un,
+              feedback: 'Après *aimer*, on utilise l’article défini *le, la, les* : *J’aime le rock.*',
+            }
+      - id: parle-choisissent
+        type: fillBlank
+        prompt: Écris le verbe au présent.
+        text: Je ___ (parler) français. Elles ___ (choisir) une chanson.
+        blanks: [[parle], [choisissent]]
+      - id: ordonne-chanson
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Nous chantons une belle chanson.

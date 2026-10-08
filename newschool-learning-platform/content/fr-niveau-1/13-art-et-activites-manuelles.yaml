@@ -1,0 +1,620 @@
+# Cycle "Art et activités manuelles", converted from the French digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: art-et-activites-manuelles
+title: Art et activités manuelles
+goal: Décrire des œuvres et des objets avec être + adjectif, et parler de tes activités artistiques au présent.
+position: 13
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Phrases descriptives" and "Actions au présent") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Activity 2 was titled "la chambre en désordre (description)", but its content is
+    a guessing game with art objects: it is renamed "Devine l'objet d'art". Activity
+    1's objective mentions "prépositions de lieu" although it is listed under actions
+    au présent; it is kept as an action activity (students give instructions with
+    *dessine*). Activity 5 ("Parlons d'art", likes and preferences) is not in the
+    overview; it is kept under actions au présent.
+  - >-
+    Activity 3 says "10 adjectifs" but lists 9; "coloré" (from Activity 2) was added
+    to make 10. The image bank (Google Docs) is kept as the activity resource; "?tab=t.0"
+    was removed from the link.
+  - >-
+    Introduction: "je suis doué(e)/mauvais(e) dans cette activité" → "je suis doué(e)
+    / je ne suis pas doué(e) dans cette activité" (more natural). Warm-up 7: "Mona
+    artiste préféré" → "Mon artiste préféré(e)". Activity 1 model "Dessine un ___" →
+    "Dessine un / une ___" (une ligne). Activity 4 "Chaque paire" → "Chaque binôme".
+    Activity 5 "Pratiquer - j'aime…" → "Pratiquer j'aime…".
+  - >-
+    Summary: "Phrases avec des actions au présent (verbes réguliers)" gave "Je peins"
+    as an example, but peindre is irregular. The rule now says verbs in -er (dessiner,
+    chanter) plus peindre to learn by heart, with a table of dessiner and peindre.
+    ADDED: the conjugation of être, adjective agreement (-e, -s), the negative
+    ne… pas, "parce que → parce qu' before a vowel", and a rule for instructions to
+    a friend (dessine, without -s), which Activity 1 and the summary example use.
+    Please confirm.
+  - >-
+    Mori: the notebook announces "2 activités interactives" but gives only one
+    ("Devine l'activité manuelle"). Only that one is included. The tips (more
+    questions, explanation in Hebrew) are in the callout.
+  - >-
+    Warm-up 2 and 3 (shape of an object, colours in a picture) and Activities 2 and 4
+    need images or object cards the teacher shows; the notebook has no link for them
+    (see the teacher notes).
+  - >-
+    Vocabulary glosses changed: "à gauche – שמאלה" → "משמאל / שמאלה"; "à droite –
+    ימינה" → "מימין / ימינה". The rest is as in the notebook.
+  - >-
+    The "Réponse de l'élève 1/2/3" lines are replaced by the optional answer boxes:
+    students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: art-et-activites-manuelles-classe
+    title: 'Classe : Art et activités manuelles'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Art et activités manuelles
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Phrases descriptives
+            description: 'être + adjectif : *Ce tableau est beau. Les couleurs sont brillantes.*'
+          - name: Actions au présent
+            description: "*Je dessine, tu peins, ils chantent* ; j'aime / je préfère + verbe"
+      - id: quizlet
+        type: externalLink
+        label: Art et activités manuelles sur Quizlet
+        url: https://quizlet.com/il/1076065866/basic-french-2025-art-et-activites-manuelles-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d'introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m'appelle ___. J'aime ___ et je suis doué(e) / je ne suis pas doué(e) dans cette activité.
+        example: Je m'appelle Marie. J'aime chanter et je suis douée dans cette activité.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d'échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Qu'est-ce que tu aimes faire avec tes mains ? (dessiner, peindre, bricoler = réparer des choses à la maison, coudre, jardiner, jouer d'un instrument)
+            frame: J'aime ___.
+          - question: Quelle est la forme de cet objet ?
+            frame: Cet objet est ___.
+          - question: Quelles sont les couleurs sur cette image ?
+            frame: Cette image est ___ et ___.
+          - question: As-tu des peintures chez toi ? Où ?
+            frame: Oui, j'ai des peintures chez moi, dans ___. / Non, je n'ai pas de peintures chez moi.
+          - question: Complète la phrase.
+            frame: J'aime l'art parce que ___.
+          - question: Quelle forme d'art préfères-tu ? (la peinture, la musique, la danse…)
+            frame: Je préfère ___ parce que ___. (Je préfère la danse parce que j'aime bouger.)
+          - question: Qui est ton artiste préféré ? Pourquoi ?
+            frame: Mon artiste préféré(e) est ___ parce que ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Dessine mon image'
+        skills: [Actions au présent]
+        steps:
+          - Révisez le vocabulaire de la liste (formes et positions).
+          - "Travaillez en binômes (A et B). L'élève A a **1 minute** pour dessiner une image simple, avec seulement des cercles, des carrés, des triangles et des lignes."
+          - Ensuite, l'élève A a **2 minutes** pour expliquer à l'élève B comment la dessiner.
+          - Chaque binôme compare les deux dessins. Le binôme qui a les dessins les plus similaires gagne.
+          - On recommence en échangeant les rôles.
+        example: |-
+          *Dessine un carré en bas de la page.*
+          *Dessine un triangle au-dessus du carré.*
+          *Dessine un petit carré à l'intérieur du grand carré.*
+        wordBank:
+          - une ligne
+          - un carré
+          - un cercle
+          - un triangle
+          - en haut
+          - en bas
+          - au milieu
+          - à gauche
+          - à droite
+          - au-dessus
+          - en dessous
+          - à l'intérieur
+      - id: act1-frames
+        type: discussionQuestions
+        title: Modèles de phrases
+        answerable: false
+        items:
+          - question: Dessine un / une ___ en haut / en bas / au milieu de la page.
+          - question: Dessine un / une ___ à gauche / à droite du ___.
+          - question: Dessine un / une ___ à l'intérieur du ___.
+      - id: act2
+        type: classActivity
+        title: "Activité 2 : Devine l'objet d'art"
+        skills: [Phrases descriptives]
+        steps:
+          - Le professeur montre des images ou des cartes d'objets liés à l'art et révise le vocabulaire.
+          - Choisis un objet en secret ou pioche une carte.
+          - Les autres élèves posent des questions fermées pour deviner l'objet. Réponds seulement **oui** ou **non**.
+        example: |-
+          *Est-ce grand ? Est-ce petit ? Est-ce lourd ? Est-ce moderne ? Est-ce brillant ?*
+          *L'utilises-tu pour peindre ou dessiner ? L'utilises-tu pour écouter ?*
+        wordBank:
+          - pinceau
+          - toile
+          - guitare
+          - micro
+          - crayon
+          - chevalet
+          - statue
+          - carnet
+          - appareil photo
+          - tambour
+          - piano
+          - masque
+          - chaussons de danse
+          - grand
+          - petit
+          - long
+          - coloré
+          - vieux
+          - neuf
+          - lourd
+          - brillant
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Décris les images avec ton partenaire'
+        skills: [Phrases descriptives]
+        steps:
+          - Chaque binôme reçoit **6 peintures célèbres** et **10 adjectifs**.
+          - Pour chaque peinture, choisissez au moins **un adjectif** et expliquez votre choix.
+          - Écrivez ou dites **des phrases complètes**.
+        example: |-
+          *L'image numéro ___ est ___ parce que ___.*
+          *L'objet dans l'image est ___ parce que ___.*
+          *Les objets dans l'image sont ___ parce que ___.*
+        wordBank:
+          - beau
+          - intéressant
+          - simple
+          - moderne
+          - vieux
+          - grand
+          - petit
+          - sombre
+          - brillant
+          - coloré
+        resource:
+          label: Banque d'images
+          url: https://docs.google.com/document/d/1h7Ed4JkQXAAB4xyA79eT4xcNApD99Al6mEhBb-VyC6w/edit
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Nos phrases
+        items:
+          - question: L'image numéro ___ est ___ parce que ___.
+          - question: L'objet dans l'image est ___ parce que ___.
+          - question: Les objets dans l'image sont ___ parce que ___.
+      - id: act4
+        type: classActivity
+        title: "Activité 4 : J'aime l'image où…"
+        skills: [Actions au présent]
+        steps:
+          - Chaque binôme reçoit **4 à 6 images**.
+          - L'élève A choisit une image, dit s'il l'aime ou pas et explique pourquoi.
+          - L'élève B fait la même chose avec la même image ou une autre.
+          - Chaque binôme partage **une ou deux phrases** avec le groupe.
+        example: |-
+          *J'aime la photo où les filles dansent parce qu'elle est amusante et jolie.*
+          *Je n'aime pas la photo où les gens sont assis dans la salle à manger parce qu'elle est sombre.*
+      - id: act4-share
+        type: discussionQuestions
+        title: Partage avec la classe
+        items:
+          - question: Nous aimons la photo avec… parce que…
+          - question: Nous n'aimons pas la photo qui montre… parce que…
+      - id: act5
+        type: classActivity
+        title: "Activité 5 : Parlons d'art"
+        skills: [Actions au présent]
+        steps:
+          - Travaillez en binômes. L'élève A pose les questions ci-dessous, l'élève B répond.
+          - Puis échangez les rôles.
+          - Chaque binôme partage **une chose intéressante** sur son partenaire.
+        example: |-
+          *Pierre aime la couleur bleue pour peindre.*
+          *Marie préfère dessiner des animaux.*
+      - id: act5-questions
+        type: discussionQuestions
+        items:
+          - question: Aimes-tu peindre ? Qu'est-ce que tu aimes peindre ?
+            frame: Oui, j'aime ___. / Non, je n'aime pas ___.
+          - question: Préfères-tu dessiner ou peindre ? Pourquoi ?
+            frame: Je préfère ___ parce que ___.
+          - question: Quelles couleurs aimes-tu utiliser pour créer ?
+            frame: J'aime la couleur ___.
+          - question: Tu préfères visiter des musées ou aller à des concerts ? Pourquoi ?
+            frame: Je préfère ___ parce que ___.
+          - question: Qui est ton artiste préféré ? Pourquoi ?
+            frame: Mon artiste préféré(e) est ___ parce que ___.
+          - question: Quel art n'aimes-tu pas ? Pourquoi ?
+            frame: Je n'aime pas ___ parce que ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **phrases descriptives au présent** (Activités
+          2 et 3) et **actions au présent** (Activités 1, 4 et 5). Choisissez une
+          activité pour chaque compétence, par exemple les Activités 2 et 1, ou 3 et 4.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Donnez votre propre exemple d'abord, puis interrogez chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: >-
+          Posez au moins deux questions à chaque élève. Pour les questions 2 et 3,
+          montrez des objets et une image en couleurs (le cahier n'a pas de lien).
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Révisez les formes et les positions avant de commencer. Faites remarquer la
+          consigne à un ami : *dessine* (sans -s).
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Préparez des images ou des cartes d'objets liés à l'art (pinceau, guitare,
+          carnet, appareil photo…) et écrivez les adjectifs utiles au tableau.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Ouvrez la banque d'images et donnez 6 peintures célèbres à chaque binôme.
+          Rappelez l'accord : *Les objets sont colorés.*
+      - id: n-act4
+        anchor: act4
+        text: Préparez 4 à 6 images (des gens qui dansent, qui mangent, qui peignent…) pour chaque binôme ; le cahier n'a pas de lien.
+      - id: n-act5
+        anchor: act5
+        text: Écrivez les questions au tableau ou sur des cartes.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: art-et-activites-manuelles-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd'hui
+      - id: rules-description
+        type: ruleSummary
+        skill: Phrases descriptives (être + adjectif)
+        rules:
+          - text: "Pour décrire des formes, des couleurs, des objets, des personnes ou des œuvres d'art : **sujet + être + adjectif**."
+            examples:
+              [Ce tableau est beau., L'image est intéressante., Les couleurs sont brillantes.]
+          - text: "L'adjectif s'accorde avec le nom : **+ e** au féminin, **+ s** au pluriel."
+            examples:
+              [
+                Le tableau est coloré.,
+                L'image est colorée.,
+                Les tableaux sont colorés.,
+                Les images sont colorées.,
+              ]
+          - text: "Forme négative : **ne (n') + être + pas**."
+            examples: [Ce tableau n'est pas moderne.]
+          - text: "Pour dire qu'une chose existe : **il y a**. Pour dire ce que tu possèdes : **avoir** (j'ai)."
+            examples: ['Dans ce musée, il y a de grandes sculptures.', J'ai des pinceaux chez moi.]
+      - id: etre-table
+        type: table
+        caption: Le verbe être au présent
+        header: [Sujet, être]
+        rows:
+          - [je, suis]
+          - [tu, es]
+          - [il / elle, est]
+          - [nous, sommes]
+          - [vous, êtes]
+          - [ils / elles, sont]
+      - id: rules-actions
+        type: ruleSummary
+        skill: Actions au présent
+        rules:
+          - text: 'Pour parler des activités artistiques et manuelles : **sujet + verbe + complément**.'
+            examples: [Je peins un tableau., Tu dessines une ligne., Ils chantent une chanson.]
+          - text: 'Les verbes en **-er** (dessiner, chanter, danser) sont réguliers. *Peindre* est irrégulier : apprends-le par cœur.'
+          - text: "Goûts et préférences : **aimer / préférer / ne pas aimer** + un nom ou + un verbe à l'infinitif."
+            examples:
+              [
+                J'aime peindre avec mes mains.,
+                Je n'aime pas la sculpture.,
+                Je préfère dessiner des animaux.,
+              ]
+          - text: "Pour expliquer pourquoi : **parce que** (*parce qu'* devant une voyelle)."
+            examples:
+              [
+                J'aime cette peinture parce qu'elle est colorée.,
+                Je n'aime pas cette photo parce qu'elle est sombre.,
+              ]
+          - text: 'Pour donner une consigne à un ami : le verbe en *-er* avec *tu*, mais sans *tu* et sans *-s*.'
+            examples:
+              [Dessine un cercle en haut de la page., Dessine un triangle à l'intérieur du carré.]
+      - id: verbs-table
+        type: table
+        caption: Dessiner et peindre au présent
+        header: [Sujet, dessiner, peindre]
+        rows:
+          - [je, dessine, peins]
+          - [tu, dessines, peins]
+          - [il / elle, dessine, peint]
+          - [nous, dessinons, peignons]
+          - [vous, dessinez, peignez]
+          - [ils / elles, dessinent, peignent]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Révisez les deux compétences avec le groupe et demandez un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: art-et-activites-manuelles-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie ce message et envoie-le. Mori va te poser des questions ; réponds à toutes les questions.
+      - id: mori-start
+        type: aiTutorPrompt
+        title: Les activités manuelles
+        message: >-
+          Salut Mori ! J'aimerais discuter un peu. Peux-tu me poser des questions sur les
+          activités manuelles en utilisant des phrases descriptives et des actions au
+          présent ? S'il te plaît, corrige mes erreurs.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S'il te plaît, pose-moi plus de questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m'expliquer en hébreu mais en gardant la phrase en français, s'il te plaît ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-devine
+        type: aiTutorPrompt
+        title: Devine l'activité manuelle
+        intro: 'Envoie ce message à Mori, puis donne des indices avec des phrases au présent et des descriptions. Par exemple : *Je découpe du papier coloré.*'
+        message: Hé, Mori ! Jouons à un jeu. Je pense à un projet artistique ou une activité manuelle, et tu dois deviner de quoi il s'agit.
+      - id: mori-tour
+        type: aiTutorPrompt
+        title: À ton tour, Mori
+        intro: Quand Mori a trouvé la bonne réponse, envoie ce message.
+        message: À toi maintenant ! Pense à un projet artistique ou une activité manuelle, et moi je devinerai lequel c'est.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: art-et-activites-manuelles-pratique
+    book: workbook
+    title: 'Pratique : Art et activités manuelles'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux essayer encore une fois.
+      - id: ex-description
+        type: activity
+        activity: art-et-activites-manuelles-description
+      - id: ex-actions
+        type: activity
+        activity: art-et-activites-manuelles-actions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: art-et-activites-manuelles-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Art et activités manuelles
+        glossLang: he
+        link: https://quizlet.com/il/1076065866/basic-french-2025-art-et-activites-manuelles-flash-cards/
+        items: &art-words
+          - { term: ligne, gloss: קו }
+          - { term: carré, gloss: ריבוע }
+          - { term: cercle, gloss: עיגול }
+          - { term: triangle, gloss: משולש }
+          - { term: peinture, gloss: ציור }
+          - { term: tableau, gloss: תמונה / ציור }
+          - { term: pinceau, gloss: מברשת }
+          - { term: crayon, gloss: עיפרון }
+          - { term: guitare, gloss: גיטרה }
+          - { term: appareil photo, gloss: מצלמה }
+          - { term: bleu, gloss: כחול }
+          - { term: rouge, gloss: אדום }
+          - { term: jaune, gloss: צהוב }
+          - { term: vert, gloss: ירוק }
+          - { term: noir, gloss: שחור }
+          - { term: blanc, gloss: לבן }
+          - { term: brillant, gloss: מבריק }
+          - { term: sombre, gloss: כהה }
+          - { term: dessiner, gloss: לצייר }
+          - { term: peindre, gloss: לצבוע / לצייר }
+          - { term: chanter, gloss: לשיר }
+          - { term: danser, gloss: לרקוד }
+          - { term: jouer (de la musique), gloss: לנגן }
+          - { term: faire, gloss: לעשות }
+          - { term: regarder, gloss: להסתכל }
+          - { term: visiter, gloss: לבקר }
+          - { term: j'ai, gloss: יש לי }
+          - { term: il y a, gloss: יש }
+          - { term: aimer, gloss: לאהוב }
+          - { term: beau, gloss: יפה }
+          - { term: intéressant, gloss: מעניין }
+          - { term: grand, gloss: גדול }
+          - { term: petit, gloss: קטן }
+          - { term: amusant, gloss: כיף / מצחיק }
+          - { term: important, gloss: חשוב }
+          - { term: en haut, gloss: למעלה }
+          - { term: en bas, gloss: למטה }
+          - { term: à gauche, gloss: משמאל / שמאלה }
+          - { term: à droite, gloss: מימין / ימינה }
+          - { term: à l'intérieur, gloss: בפנים }
+
+vocabulary:
+  - slug: art-et-activites-manuelles
+    title: Art et activités manuelles
+    items: *art-words
+
+activities:
+  - slug: art-et-activites-manuelles-description
+    title: Phrases descriptives
+    minutes: 8
+    items:
+      - id: tableau-est
+        type: multipleChoice
+        prompt: Ce tableau ___ beau.
+        options:
+          - { text: est, correct: true }
+          - { text: es, feedback: '*Es* est pour *tu* : tu es. *Ce tableau* = *il* : il est.' }
+          - {
+              text: sont,
+              feedback: '*Sont* est pour *ils / elles* (pluriel). *Ce tableau* est singulier : *est*.',
+            }
+      - id: couleurs
+        type: multipleChoice
+        prompt: Les couleurs sont ___.
+        options:
+          - { text: brillantes, correct: true }
+          - {
+              text: brillant,
+              feedback: '*Couleurs* est féminin et pluriel : on ajoute *-e* et *-s* (brillantes).',
+            }
+          - {
+              text: brillants,
+              feedback: '*Couleurs* est féminin : on ajoute *-e* avant le *-s* (brillantes).',
+            }
+      - id: il-y-a
+        type: multipleChoice
+        prompt: Dans ce musée, ___ de grandes sculptures.
+        options:
+          - { text: il y a, correct: true }
+          - { text: il est, feedback: "Pour dire qu'une chose existe, on utilise *il y a*." }
+          - {
+              text: j'ai,
+              feedback: "*J'ai* veut dire que je possède une chose. Pour dire qu'une chose existe dans un lieu : *il y a*.",
+            }
+      - id: image-feminin
+        type: trueFalse
+        prompt: On écrit « L'image est intéressante » avec un *-e*, parce que *image* est un nom féminin.
+        answer: true
+        feedback:
+          correct: "Bravo ! L'adjectif s'accorde avec le nom : l'image est intéressante."
+          incorrect: "*Image* est féminin, donc l'adjectif prend un *-e* : intéressante."
+      - id: etre
+        type: matching
+        prompt: Associe chaque sujet à la bonne forme du verbe *être*.
+        pairs:
+          - [je, suis]
+          - [tu, es]
+          - [nous, sommes]
+          - [vous, êtes]
+          - [ils, sont]
+      - id: negatif
+        type: fillBlank
+        prompt: 'Écris la phrase à la forme négative : « Ce tableau est moderne. »'
+        text: Ce tableau ___ moderne.
+        blanks: [["n'est pas"]]
+      - id: parce-que
+        type: fillBlank
+        prompt: Complète avec *parce que* ou *parce qu'*.
+        text: J'aime cette peinture ___ elle est colorée.
+        blanks: [["parce qu'", car]]
+      - id: ordre-tableau
+        type: reorderSentence
+        prompt: Remets les mots dans l'ordre.
+        sentence: Ce tableau n'est pas moderne.
+
+  - slug: art-et-activites-manuelles-actions
+    title: Actions au présent
+    minutes: 8
+    items:
+      - id: tu-dessines
+        type: multipleChoice
+        prompt: Tu ___ une ligne.
+        options:
+          - { text: dessines, correct: true }
+          - {
+              text: dessine,
+              feedback: 'Avec *tu*, le verbe en *-er* finit en *-es* : tu dessines.',
+            }
+          - { text: dessinez, feedback: '*Dessinez* est pour *vous*. Avec *tu* : tu dessines.' }
+      - id: ils-chantent
+        type: multipleChoice
+        prompt: Ils ___ une chanson.
+        options:
+          - { text: chantent, correct: true }
+          - { text: chante, feedback: 'Avec *ils*, le verbe finit en *-ent* : ils chantent.' }
+          - { text: chantons, feedback: '*Chantons* est pour *nous*. Avec *ils* : ils chantent.' }
+      - id: marie
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Marie préfère dessiner des animaux., correct: true }
+          - {
+              text: Marie préfère dessine des animaux.,
+              feedback: "Après *préférer*, le deuxième verbe est à l'infinitif : dessiner.",
+            }
+          - {
+              text: Marie préfères dessiner des animaux.,
+              feedback: '*Préfères* est pour *tu*. Avec *Marie* (elle) : elle préfère.',
+            }
+      - id: peindre-danser
+        type: fillBlank
+        prompt: Complète avec le verbe au présent.
+        text: Je ___ (peindre) un tableau. Nous ___ (danser) le samedi.
+        blanks: [[peins], [dansons]]
+      - id: consigne
+        type: fillBlank
+        prompt: 'Donne une consigne à un ami avec le verbe *dessiner*.'
+        text: ___ un cercle en haut de la page.
+        blanks: [[Dessine]]
+      - id: aimer-infinitif
+        type: trueFalse
+        prompt: "Dans « J'aime peindre », le deuxième verbe est à l'infinitif."
+        answer: true
+        feedback:
+          correct: "Exact ! Après *aimer* ou *préférer*, le verbe est à l'infinitif : j'aime peindre."
+          incorrect: "Après *aimer*, le deuxième verbe reste à l'infinitif : j'aime peindre, je préfère dessiner."
+      - id: verbes
+        type: matching
+        prompt: Associe chaque verbe à sa traduction.
+        pairs:
+          - [dessiner, לצייר]
+          - [chanter, לשיר]
+          - [danser, לרקוד]
+          - [visiter, לבקר]
+          - [regarder, להסתכל]
+      - id: ordre-animaux
+        type: reorderSentence
+        prompt: Remets les mots dans l'ordre.
+        sentence: Je préfère dessiner des animaux.

@@ -1,0 +1,519 @@
+# Cycle "Services essentiels", converted from the French digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: services-essentiels
+title: Services essentiels
+goal: Demander et donner des directions dans la ville avec les prépositions de lieu.
+position: 18
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Les directions" and "Les prépositions") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary, prepositions rule 1 said "Apprenez les différentes prépositions :" with
+    an empty list. It is filled from the cycle's vocabulary and introduction (devant,
+    derrière, à côté de, entre, en face de, près de, loin de). Rule 2 (c'est / il y
+    a) had examples but no explanation; a one-line explanation was added. Rule 3
+    (articles) got a short table de + le = du, de + la, de + l', de + les = des.
+    Please confirm.
+  - >-
+    Activity 4 example: the student chose "l'école", but the last question was "Ce
+    lieu est-il le musée ? – Oui". It now reads "Ce lieu est-il l'école ? – Oui".
+  - >-
+    Corrections: warm-up frame "(à côté / en face de)" → "(à côté de / en face de)";
+    Activity 2 "Quel/le ___" → "Quel / Quelle ___"; summary "centre ville" →
+    "centre-ville"; "Trois règles de  base" (double space) fixed; the summary's
+    Hebrew word "ציווי" after "l'impératif" is kept in brackets as a gloss.
+  - >-
+    The city map used in Activities 1 and 4 is not linked in the notebook. The
+    teacher shares it on screen (see the teacher notes); it should move into the
+    course's own media.
+  - >-
+    Vocabulary glosses changed: "Bloc" (בלוק) is not used in French for a city
+    block; the term is now "Pâté de maisons" (בלוק של בניינים). "Devant" מלפני →
+    לפני; "Je sors" אני יוצא → אני יוצא/ת. The Quizlet link is kept without its
+    tracking parameters (?i=…&x=…). Please confirm.
+  - >-
+    The source gives no times and no recommended activity combinations; the plan in
+    the teacher note follows the skill named in each activity title (Activities 1–2
+    directions, 3–4 prépositions). The Mori "Activité 1" lines are put into one
+    message with blanks.
+  - >-
+    The "Réponse de l'élève 1/2/3" lines are replaced by the optional answer boxes:
+    students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: services-essentiels-classe
+    title: 'Classe : Services essentiels'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Services essentiels
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Les directions
+            description: '*Tournez à droite, continuez tout droit, marchez 10 minutes*'
+          - name: Les prépositions
+            description: '*devant, derrière, à côté de, entre, en face de*'
+      - id: quizlet
+        type: externalLink
+        label: Services essentiels sur Quizlet
+        url: https://quizlet.com/il/1076526767/basic-french-2025-services-essentiels-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. J’habite loin de / près de New School.
+        example: Je m’appelle Lévanah. J’habite loin de New School.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quels lieux se trouvent à côté de chez toi ?
+            frame: Le / La ___ est à côté de chez moi. / À côté de chez moi, il y a un / une ___.
+          - question: Comment arrives-tu à ___ depuis chez toi ?
+            frame: J’arrive à ___ en ___ (transport).
+          - question: Quels sont les trois lieux importants dans ta ville ?
+            frame: Il y a un ___, un ___ et un ___. / Il y a le / la ___ à ___, le / la ___ à ___ et le / la ___ à ___.
+          - question: Comment vas-tu de chez toi à l’arrêt de bus ?
+            frame: 'Exemple : Je sors de chez moi, je tourne à droite et je marche tout droit sur 100 mètres. L’arrêt de bus est en face du parc.'
+          - question: Où se trouve le supermarché le plus proche de chez toi ?
+            frame: Le supermarché le plus proche de chez moi est ___ (à côté de / en face de) ___.
+          - question: Comment y arrives-tu ?
+            frame: 'Exemple : Je marche tout droit sur 50 mètres puis je tourne à gauche. Le supermarché est à côté de la banque.'
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Le plan de la ville'
+        skills: [Les directions]
+        steps:
+          - Révise les prépositions de direction avec ton professeur. Regarde le plan de la ville et trouve les lieux ensemble.
+          - Apprends à demander et à donner des directions (regarde l’exemple).
+          - Travaillez en binômes avec le plan. L’élève A demande comment aller à un lieu précis. L’élève B donne les directions avec les prépositions.
+          - Après quelques tours, changez de rôle.
+          - Discussion en groupe sur les difficultés.
+        example: |-
+          Élève A : « Comment aller à la bibliothèque ? »
+          Élève B : « Tu marches tout droit puis tu tournes à droite. La bibliothèque est à côté de l’école. »
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : L’office du tourisme'
+        skills: [Les directions]
+        steps:
+          - Chaque élève a son propre office du tourisme.
+          - L’élève 1 pose les questions ci-dessous à l’élève 2, qui répond.
+          - Ensuite, l’élève suivant pose une question.
+      - id: act2-dialogue
+        type: discussionQuestions
+        title: Demande et réponds
+        items:
+          - question: Quel / Quelle ___ (supermarché, bibliothèque, musée) me recommandes-tu ?
+            frame: Je te recommande le / la ___ (nom).
+          - question: Comment y aller ?
+            frame: Tu peux y aller en bus / à pied. Il faut marcher ___ mètres, tourner à gauche, puis à droite.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Parler d’un lieu important'
+        skills: [Les prépositions]
+        steps:
+          - Choisis un lieu dans ta ville.
+          - 'Décris où il se trouve avec les prépositions : **en, à côté de, entre, devant**.'
+          - Complète les phrases ci-dessous et partage avec le groupe.
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Complète les phrases
+        items:
+          - question: Le lieu que je choisis est ___.
+          - question: C’est un lieu important parce que ___.
+          - question: Il se situe ___.
+          - question: Il est à côté de ___.
+          - question: Il est entre ___ et ___.
+          - question: Il est devant ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Devine le lieu'
+        skills: [Les prépositions]
+        steps:
+          - Un élève choisit un lieu ou un objet sur le plan.
+          - Les autres devinent avec des questions **oui / non**, en utilisant les prépositions.
+          - L’élève qui a deviné choisit un nouveau lieu.
+        example: |-
+          (L’élève a choisi l’école.)
+          « Ce lieu est-il à côté du cinéma ? » – Non.
+          « Ce lieu est-il en face du parc ? » – Oui.
+          « Ce lieu est-il l’école ? » – Oui !
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **Les directions** (Activités 1 et 2) et
+          **Les prépositions** (Activités 3 et 4).
+      - id: n-intro
+        anchor: intro
+        text: Donne ton exemple d’abord, puis demande à chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Le plan de la ville n’est pas encore dans la plateforme : partage-le à l’écran
+          (ou donne une copie à chaque binôme). Commence par réviser les prépositions de
+          direction et par identifier les lieux du plan. Termine par une discussion de
+          groupe pour clarifier les difficultés et renforcer l’usage correct des
+          prépositions.
+      - id: n-act4
+        anchor: act4
+        text: Utilise le même plan de la ville que dans l’Activité 1.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: services-essentiels-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-directions
+        type: ruleSummary
+        skill: Les directions
+        rules:
+          - text: On utilise les verbes **se trouver** et **être** pour dire où se trouve un lieu et pour le décrire.
+            examples:
+              - La bibliothèque se trouve dans le centre-ville. Elle est entre le supermarché et le restaurant.
+          - text: >-
+              Utilisez des phrases simples pour donner des directions. Le plus souvent, on
+              emploie l’impératif (ציווי).
+            examples:
+              - Continuez tout droit.
+              - Tournez à droite.
+              - Marchez 10 minutes.
+              - Prenez à gauche.
+          - text: Mentionnez des lieux à proximité et servez-vous-en comme points de repère.
+            examples:
+              - à côté du magasin
+              - devant le parc
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: Les prépositions
+        rules:
+          - text: Apprenez les différentes prépositions (regardez le tableau).
+          - text: >-
+              Faites la différence entre **c’est** et **il y a**. On utilise *c’est* pour
+              dire où est un lieu ou pour le décrire ; on utilise *il y a* + un / une pour
+              dire qu’une chose existe à un endroit.
+            examples:
+              - C’est dans le deuxième arrondissement de Paris.
+              - Il y a un arrêt de bus juste en face.
+          - text: >-
+              Utilisez le bon article, en faisant attention au masculin, au féminin et au
+              pluriel. **de + le = du**, **de + les = des** ; *de la* et *de l’* ne
+              changent pas.
+            examples:
+              - Je suis devant **l’**hôpital.
+              - Le métro est en face **de la** bibliothèque.
+              - C’est à côté **du** restaurant.
+      - id: prepositions-table
+        type: table
+        caption: Les prépositions de lieu
+        header: [Préposition, Hébreu, Exemple]
+        rows:
+          - [devant, לפני, Je suis devant l’hôpital.]
+          - [derrière, מאחורי, Le parc est derrière l’école.]
+          - [à côté de, ליד, C’est à côté du restaurant.]
+          - [entre, בין, La banque est entre le musée et le parc.]
+          - [en face de, ממול, Le métro est en face de la bibliothèque.]
+          - [près de / loin de, קרוב ל / רחוק מ, J’habite près de New School.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: services-essentiels-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie ce message et envoie-le. Mori va te poser des questions ; réponds à chaque question.
+      - id: mori-services
+        type: aiTutorPrompt
+        title: Les services essentiels
+        message: >-
+          Bonjour Mori ! Je veux pratiquer le français. Peux-tu me poser des questions
+          sur les services essentiels en utilisant des directions et des prépositions ?
+          Utilise seulement le présent et corrige mes erreurs.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **Pose-moi plus de questions, s’il te plaît !**
+          Tu ne comprends pas une explication en français ? Envoie : **Peux-tu me l’expliquer en hébreu mais avec la phrase en français ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-lieu
+        type: aiTutorPrompt
+        title: Parler d’un lieu essentiel
+        intro: Complète les blancs et envoie le message à Mori.
+        message: |-
+          Bonjour Mori. Je te parle d’un service essentiel dans ma ville. Pose-moi des questions avec des prépositions et des directions.
+          Dans ma ville, il y a un / une ___.
+          Il se trouve ___ (à côté de, devant, entre…).
+          Beaucoup de gens y vont pour ___.
+          J’y vais quand ___.
+          J’aime ce lieu parce que ___.
+      - id: mori-devine
+        type: aiTutorPrompt
+        title: Devine le service
+        intro: >-
+          Envoie ce message à Mori, puis donne tes indices. Exemple : Il est à côté du
+          supermarché. Les gens y vont quand ils sont malades. Il y a des médecins et
+          des lits. Mori pose des questions (Est-il près de chez toi ? Y vas-tu
+          souvent ?) et devine ton lieu ; ensuite, tu devines le sien.
+        message: >-
+          Bonjour Mori ! Jouons. Je donne des indices sur un service essentiel et tu
+          devines lequel. Pose-moi des questions avec des prépositions et des
+          directions. Corrige mes erreurs, s’il te plaît.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: services-essentiels-pratique
+    book: workbook
+    title: 'Pratique : Services essentiels'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-directions
+        type: activity
+        activity: services-essentiels-directions
+      - id: ex-prepositions
+        type: activity
+        activity: services-essentiels-prepositions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: services-essentiels-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la ville
+        glossLang: he
+        link: https://quizlet.com/il/1076526767/basic-french-2025-services-essentiels-flash-cards/
+        items: &services-essentiels-words
+          - { term: Maison, gloss: בית }
+          - { term: Lieu, gloss: מקום }
+          - { term: Ville, gloss: עיר }
+          - { term: Supermarché, gloss: סופרמרקט }
+          - { term: Bibliothèque, gloss: ספרייה }
+          - { term: Musée, gloss: מוזיאון }
+          - { term: Parc, gloss: פארק }
+          - { term: École, gloss: בית ספר }
+          - { term: Théâtre, gloss: תיאטרון }
+          - { term: Banque, gloss: בנק }
+          - { term: Arrêt de bus, gloss: תחנת אוטובוס }
+          - { term: Rue, gloss: רחוב }
+          - { term: Pâté de maisons, gloss: בלוק של בניינים }
+          - { term: Coin, gloss: פינה }
+          - { term: Gauche, gloss: שמאלה }
+          - { term: Droite, gloss: ימינה }
+          - { term: Devant, gloss: לפני }
+          - { term: Derrière, gloss: מאחורי }
+          - { term: À côté de, gloss: ליד }
+          - { term: Entre, gloss: בין }
+          - { term: En face de, gloss: ממול }
+          - { term: Transport, gloss: תחבורה }
+          - { term: Bus, gloss: אוטובוס }
+          - { term: À pied, gloss: ברגל }
+          - { term: Tourner, gloss: לפנות }
+          - { term: Marcher, gloss: ללכת }
+          - { term: Je sors, gloss: אני יוצא/ת }
+          - { term: Direction, gloss: כיוון }
+          - { term: Important, gloss: חשוב }
+          - { term: Recommander, gloss: להמליץ }
+
+vocabulary:
+  - slug: services-essentiels
+    title: Services essentiels
+    items: *services-essentiels-words
+
+activities:
+  - slug: services-essentiels-directions
+    title: 'Les directions : tournez, continuez, se trouver'
+    minutes: 8
+    items:
+      - id: tournez
+        type: multipleChoice
+        prompt: 'Tu parles à une personne que tu ne connais pas : « Pour aller à la banque, ___ à gauche. »'
+        options:
+          - { text: tournez, correct: true }
+          - {
+              text: tourne,
+              feedback: '*Tourne* est pour un ami (*tu*). Avec une personne qu’on ne connaît pas, on dit *tournez* (*vous*).',
+            }
+          - {
+              text: tourner,
+              feedback: '*Tourner* est l’infinitif. Pour donner une direction, on utilise l’impératif : *tournez*.',
+            }
+      - id: mots-directions
+        type: matching
+        prompt: Associe chaque mot à sa traduction.
+        pairs:
+          - [tout droit, ישר]
+          - [à gauche, שמאלה]
+          - [à droite, ימינה]
+          - [à pied, ברגל]
+          - [l’arrêt de bus, תחנת אוטובוס]
+      - id: se-trouve
+        type: fillBlank
+        prompt: Complète avec *trouve* ou *est*.
+        text: La bibliothèque se ___ dans le centre-ville. Elle ___ entre le supermarché et le restaurant.
+        blanks: [[trouve], [est, se trouve]]
+        wordBank: [trouve, est]
+      - id: allez
+        type: trueFalse
+        prompt: 'Pour donner une direction à une personne qu’on ne connaît pas, on dit : *Allez tout droit.*'
+        answer: true
+        feedback:
+          correct: 'Bravo ! Avec une personne qu’on ne connaît pas, on utilise *vous* : *Allez tout droit.*'
+          incorrect: 'C’est vrai : avec une personne qu’on ne connaît pas, on utilise l’impératif avec *vous* : *Allez tout droit.*'
+      - id: comment-aller
+        type: multipleChoice
+        prompt: '« Comment aller à la bibliothèque ? » Quelle est la bonne réponse ?'
+        options:
+          - { text: Tu marches tout droit puis tu tournes à droite., correct: true }
+          - {
+              text: 'Oui, je vais à la bibliothèque.',
+              feedback: 'La question *comment* demande le chemin, pas « oui » ou « non ». Donne des directions : *tu marches tout droit…*',
+            }
+          - {
+              text: La bibliothèque est grande.,
+              feedback: 'Cette phrase décrit la bibliothèque. La question demande le chemin : *tu marches tout droit, tu tournes à droite…*',
+            }
+      - id: imperatif
+        type: fillBlank
+        prompt: 'Écris le verbe à l’impératif avec *vous*.'
+        text: ___ (continuer) tout droit, puis ___ (prendre) à gauche.
+        blanks: [[Continuez, continuez], [prenez, Prenez]]
+      - id: puis
+        type: multipleChoice
+        prompt: Tu marches 100 mètres, ___ tu tournes à droite.
+        options:
+          - { text: puis, correct: true }
+          - {
+              text: entre,
+              feedback: '*Entre* est une préposition de lieu (*entre la banque et le parc*). Pour dire l’étape suivante, on utilise *puis*.',
+            }
+          - {
+              text: devant,
+              feedback: '*Devant* est une préposition de lieu (*devant le parc*). Pour dire l’étape suivante, on utilise *puis*.',
+            }
+      - id: ordonne-direction
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Tournez à droite après la banque.
+
+  - slug: services-essentiels-prepositions
+    title: 'Les prépositions : devant, entre, à côté de, en face de'
+    minutes: 8
+    items:
+      - id: entre
+        type: multipleChoice
+        prompt: La banque est ___ l’école et le parc.
+        options:
+          - { text: entre, correct: true }
+          - {
+              text: devant,
+              feedback: 'Il y a deux lieux (*l’école* et *le parc*) : on utilise *entre … et …*.',
+            }
+          - {
+              text: à côté de,
+              feedback: 'Il y a deux lieux (*l’école* et *le parc*) : on utilise *entre … et …*.',
+            }
+      - id: de-la
+        type: multipleChoice
+        prompt: Le métro est en face ___ bibliothèque.
+        options:
+          - { text: de la, correct: true }
+          - {
+              text: du,
+              feedback: '*Bibliothèque* est féminin (*la bibliothèque*) : on dit *de la*. *Du* (= de + le) est pour le masculin.',
+            }
+          - {
+              text: de le,
+              feedback: 'On ne dit pas *de le* : de + le = *du*. Mais *bibliothèque* est féminin : *de la bibliothèque*.',
+            }
+      - id: du-l
+        type: fillBlank
+        prompt: Complète avec *du* ou *l’*.
+        text: C’est à côté ___ restaurant. Je suis devant ___hôpital.
+        blanks: [[du], [l’, "l'"]]
+        wordBank: [du, l’]
+      - id: cest-musee
+        type: multipleChoice
+        prompt: 'Le musée ? ___ dans le centre-ville.'
+        options:
+          - { text: C’est, correct: true }
+          - {
+              text: Il y a,
+              feedback: 'On parle d’un lieu connu (*le musée*) et on dit où il est : *C’est dans le centre-ville.*',
+            }
+      - id: il-y-a
+        type: trueFalse
+        prompt: 'Pour dire qu’une chose existe à un endroit, on utilise *il y a* : *Il y a un arrêt de bus juste en face.*'
+        answer: true
+        feedback:
+          correct: Bravo ! *Il y a* + un / une dit qu’une chose existe à un endroit.
+          incorrect: 'C’est vrai : *il y a* + un / une dit qu’une chose existe à un endroit.'
+      - id: prepositions-hebreu
+        type: matching
+        prompt: Associe chaque préposition à sa traduction.
+        pairs:
+          - [devant, לפני]
+          - [derrière, מאחורי]
+          - [à côté de, ליד]
+          - [entre, בין]
+          - [en face de, ממול]
+      - id: de-l-ecole
+        type: multipleChoice
+        prompt: Le parc est à côté ___ école.
+        options:
+          - { text: de l’, correct: true }
+          - { text: de la, feedback: 'Devant une voyelle, *la* devient *l’* : *de l’école*.' }
+          - {
+              text: du,
+              feedback: '*École* est féminin, et commence par une voyelle : *de l’école*.',
+            }
+      - id: supermarche
+        type: fillBlank
+        prompt: Complète avec *du* ou *de la*.
+        text: Le supermarché est à côté ___ banque et en face ___ musée.
+        blanks: [[de la], [du]]
+        wordBank: [du, de la]

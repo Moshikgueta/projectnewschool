@@ -1,0 +1,577 @@
+# Cycle "Routine", converted from the French digital notebook
+# ("Cahier digital 2026 – français niveau 1", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: routine
+title: Routine
+goal: Raconter sa journée avec l’heure, les jours et les verbes pronominaux.
+position: 5
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("L’heure et les jours" and "Verbes pronominaux") are
+    NEW: the notebook has no self-study exercises. They were written from the
+    cycle's summary rules, examples and vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The notebook names two skills (numbers and dates; reflexive verbs and
+    prepositions) but its summary has four parts (numbers and dates, reflexive
+    verbs, prepositions with the time, frequency adverbs). The cycle overview keeps
+    the two skills; the summary keeps all four parts.
+  - >-
+    Summary, reflexive verbs: added a rule that me / te / se become m’ / t’ / s’
+    before a vowel (je m’habille, il s’endort), since the vocabulary has
+    s’habiller and s’endormir, and a conjugation table of "se réveiller". One
+    workbook item (je m’habille) uses this rule. Please confirm.
+  - >-
+    Summary, frequency adverbs: the rule "the adverb goes after the verb" now adds
+    that "jamais" needs "ne … jamais" (with "de" after it: je ne bois jamais de
+    café), and that "généralement" and "tous les jours" can also go at the start or
+    the end of the sentence, as in the activity examples.
+  - >-
+    Corrections: "J’invite à déjeuner" → "Je t’invite à déjeuner"; "répondent par
+    l’affirmatif" → "répondent à l’affirmative"; the broken character after
+    "mercredi = vert" (an emoji lost in the export) was removed; "au présent simple"
+    (an English calque) → "au présent" in the first Mori message.
+  - >-
+    Mori: the notebook has no tips for this cycle; the tips callout reuses the
+    wording of the "Objectifs et projets" cycle. Messages 2 and 3 start with "Salut
+    Mori !" so they can be sent on their own.
+  - >-
+    Vocabulary: "se laver" is glossed "להתרחץ / לשטוף את עצמו" (was "לשטוף (את
+    עצמו)"); "le soir – בערב" was added because the warm-up and activities use it;
+    "à quelle heure … ?" is written "À quelle heure… ?" with the gloss "באיזו שעה?".
+    Please confirm.
+  - >-
+    No activity times are given in the notebook for this cycle, so none are
+    recorded. The introduction rule (two sentences, 30 seconds each) is a teacher
+    note.
+  - >-
+    The "Réponse de l’élève 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers. The
+    "Date / Participants" header lines were left out.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: routine-classe
+    title: 'Classe : Routine'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Routine
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Nombres et dates
+            description: L’heure (à 7 h), les jours de la semaine et les nombres
+          - name: Verbes pronominaux et prépositions
+            description: '*je me lève, tu te couches*, et *à* avec l’heure et les lieux'
+      - id: quizlet
+        type: externalLink
+        label: Routine sur Quizlet
+        url: https://quizlet.com/il/1073010763/basic-french-2025-routine-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. J’étudie le français ___ fois par semaine, le ___ (jours de la semaine).
+        example: Je m’appelle Dana. J’étudie le français deux fois par semaine, le lundi et le jeudi.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: À quelle heure tu te réveilles ?
+            frame: Je me réveille à ___ h.
+          - question: Tu te brosses les dents avant ou après le petit-déjeuner ?
+            frame: Je me brosse les dents avant / après le petit-déjeuner.
+          - question: Que fais-tu le mardi ?
+            frame: Le mardi, je ___.
+          - question: Que fais-tu le matin ?
+            frame: Le matin, je ___.
+          - question: Que fais-tu le soir ?
+            frame: Le soir, je ___.
+          - question: À quelle heure tu te couches ?
+            frame: Je me couche à ___ h.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : une bonne journée, pour moi, pour lui, pour elle'
+        skills: [Verbes pronominaux et prépositions, Nombres et dates]
+        steps:
+          - Écris **5 phrases sur ta journée**.
+          - En binômes, présentez votre routine et faites une **liste des points communs et des différences**.
+          - Chaque binôme présente au groupe à la **troisième personne** (il / elle).
+        example: |-
+          *Je me réveille à 7 h. Je me brosse les dents. Je prends mon petit-déjeuner à 8 h. Je vais à l’école à 9 h. Je me couche à 22 h.*
+          *Elle se réveille à 6 h, mais moi, je me réveille à 7 h.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Ma journée en 5 phrases
+        items:
+          - question: Je me réveille à ___ h.
+          - question: Je ___ à ___ h.
+          - question: Je ___ à ___ h.
+          - question: Je ___ à ___ h.
+          - question: Je me couche à ___ h.
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : la roue de la routine'
+        skills: [Nombres et dates, Verbes pronominaux et prépositions]
+        steps:
+          - 'La roue a 4 parties : **matin**, **après-midi**, **soir** et **week-end**.'
+          - Répète en chœur les phrases du professeur.
+          - Fais tourner la roue.
+          - Invente une phrase avec **une action + une heure** pour la partie de la journée.
+        example: |-
+          Matin → *Je me lève à 8 h.*
+          Après-midi → *J’étudie le français à 15 h.*
+          Soir → *Je dîne à 20 h.*
+          Week-end → *Le dimanche, je joue au foot à 10 h.*
+        resource:
+          label: La roue de la routine
+          url: https://wheelofnames.com/y68-f3e
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : mes habitudes et ma routine'
+        skills: [Adverbes de fréquence]
+        steps:
+          - Lis les adverbes de fréquence.
+          - En binômes ou en petits groupes, pose une question et réponds avec un adverbe de fréquence. Réponds avec une phrase complète.
+          - Chaque groupe partage **1 point commun et 1 différence** avec la classe.
+        wordBank: [toujours, jamais, parfois, généralement, tous les jours]
+        example: |-
+          *Je prends **toujours** un café au petit-déjeuner.*
+          *Je vais **parfois** au cinéma.*
+          *Nous **prenons toujours** le petit-déjeuner à la maison, mais **nous ne travaillons jamais** le matin.*
+          *Elle **fait parfois** du sport, mais moi, **je n’en fais jamais**.*
+      - id: act3-questions
+        type: discussionQuestions
+        items:
+          - question: Que fais-tu **toujours** le matin ?
+            frame: Je ___ toujours ___.
+          - question: Que **ne fais-tu jamais** à l’école / au travail ?
+            frame: Je ne ___ jamais ___.
+          - question: Que fais-tu **parfois** le week-end ?
+            frame: Je ___ parfois ___.
+          - question: Que manges-tu **généralement** au petit-déjeuner ?
+            frame: Généralement, je prends ___.
+          - question: Quelle activité fais-tu **tous les jours** ?
+            frame: Tous les jours, je ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : jamais jamais'
+        skills: [Adverbes de fréquence]
+        steps:
+          - Écoute les exemples du professeur.
+          - Lève **3 doigts**.
+          - Un étudiant dit une phrase avec *« Je ne … jamais »*.
+          - 'Si tu fais cette action, baisse un doigt et réponds à l’affirmative : *Moi, si ! Je bois du café tous les jours.*'
+          - Le dernier étudiant qui a encore des doigts levés gagne !
+        example: |-
+          *Je ne bois jamais de café.*
+          *Je ne regarde jamais la télé le matin.*
+          *Je ne vais jamais à l’école en voiture.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Mes phrases « jamais »
+        items:
+          - question: Je ne ___ jamais ___.
+          - question: Je ne ___ jamais ___.
+          - question: Je ne ___ jamais ___.
+      - id: act5
+        type: classActivity
+        title: 'Activité 5 : comparons nos routines'
+        skills: [Verbes pronominaux et prépositions, Nombres et dates]
+        steps:
+          - En binômes, posez-vous des questions sur votre routine. Répondez à la **première personne**.
+          - Quand tu écoutes, compare à la **troisième personne**.
+          - Chaque binôme partage **une courte liste** de points communs et de différences.
+        example: |-
+          *— À quelle heure tu te réveilles ? — Je me réveille à 7 h.*
+          *Elle se réveille à 7 h, mais moi, je me réveille à 6 h.*
+          **Points communs :** *Nous prenons tous les deux du café au petit-déjeuner. Nous allons à l’école en bus le matin.*
+          **Différences :** *Elle se réveille à 8 h, moi à 6 h. Il dîne à 19 h, moi à 21 h.*
+      - id: act5-list
+        type: discussionQuestions
+        title: Notre liste
+        items:
+          - question: 'Point commun : Nous ___ tous les deux ___.'
+          - question: 'Point commun : Nous ___.'
+          - question: 'Différence : Il / Elle ___ à ___ h, moi à ___ h.'
+          - question: 'Différence : Il / Elle ___, mais moi, je ___.'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Compétences du cycle : **nombres et dates** (l’heure, les jours) et **verbes
+          pronominaux et prépositions**. Les activités 3 et 4 pratiquent aussi les
+          adverbes de fréquence (voir le résumé).
+      - id: n-intro
+        anchor: intro
+        text: >-
+          Chaque étudiant se présente très rapidement : deux phrases maximum, pas plus de
+          30 secondes par personne. Si les participants se connaissent déjà, passez
+          directement aux questions d’échauffement.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          But : pratiquer les verbes pronominaux et comparer la première et la troisième
+          personne (*je me réveille* / *elle se réveille*).
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Préparation : dessinez une roue au tableau (ou utilisez la roue numérique) en 4
+          parties : matin, après-midi, soir, week-end. Écrivez des phrases simples au
+          tableau et faites-les répéter en chœur : *Je me réveille à 7 h. Je déjeune à 13
+          h. Je vais au cinéma samedi. Je dors à 23 h.*
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Écrivez les adverbes au tableau. Réponses attendues (phrases complètes) : *Je me
+          lève toujours à 7 h. Je ne travaille jamais le dimanche. Je joue parfois au
+          football avec mes amis. Généralement, je prends du pain et du fromage.*
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Autres phrases possibles : *Je ne prends jamais mon petit-déjeuner à 7 h. Je ne
+          bois jamais de thé. Je n’écoute jamais de musique en voiture. Je n’étudie
+          jamais le soir. Je ne téléphone jamais le matin. Je ne vais jamais au
+          supermarché.*
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: routine-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Nombres et dates
+        rules:
+          - text: Répète les nombres à voix haute et utilise-les dans des exemples réels (âge, numéro de téléphone, heure…).
+          - text: Associe chaque jour de la semaine à une activité.
+            examples: [Lundi – cours de français, Samedi – repos]
+          - text: Utilise des **couleurs ou des formes** pour mémoriser.
+            examples: ['Mercredi = vert, parce que les enfants vont au parc.']
+      - id: rules-reflexive
+        type: ruleSummary
+        skill: Verbes pronominaux
+        rules:
+          - text: Un **verbe pronominal** décrit une action que l’on fait **sur soi-même**.
+            examples:
+              - Je **me** lève – Tu **te** laves – Il / Elle **se** couche
+              - Nous **nous** réveillons – Vous **vous** brossez les dents – Ils / Elles **se** lèvent
+          - text: 'Comparez :'
+            examples:
+              - 'Verbe non pronominal → *Je lave la voiture.* (la voiture ≠ moi)'
+              - 'Verbe pronominal → *Je me lave.* (l’action est sur moi-même)'
+          - text: Devant une voyelle ou un h muet, *me*, *te*, *se* deviennent *m’*, *t’*, *s’*.
+            examples: [Je **m’**habille., Il **s’**endort.]
+      - id: reflexive-table
+        type: table
+        caption: Se réveiller au présent
+        header: [Pronom, Se réveiller]
+        rows:
+          - [je, me réveille]
+          - [tu, te réveilles]
+          - [il / elle, se réveille]
+          - [nous, nous réveillons]
+          - [vous, vous réveillez]
+          - [ils / elles, se réveillent]
+      - id: rules-time
+        type: ruleSummary
+        skill: 'Prépositions : l’heure et « à »'
+        rules:
+          - text: 'Pour dire l’heure actuelle : **il est** + heure.'
+            examples: [Il est trois heures.]
+          - text: 'Pour dire à quelle heure une action se passe : **à** + heure.'
+            examples: [Je mange **à** huit heures., Le cours est **à** dix heures.]
+          - text: 'Autres exemples avec la préposition **à** :'
+            examples: [Je joue **à** la balle., Je vais **à** l’école., Je t’invite **à** déjeuner.]
+      - id: rules-frequency
+        type: ruleSummary
+        skill: Adverbes de fréquence
+        rules:
+          - text: En français, l’adverbe se place **après le verbe**.
+            examples:
+              - '**Toujours** → *Je prends toujours du café.*'
+              - '**Souvent** → *Tu lis souvent le soir.*'
+              - '**Parfois** → *Il joue parfois au football.*'
+          - text: 'Avec **jamais** : *ne* + verbe + *jamais*. Après *jamais*, on dit *de* (pas *du*, *de la*).'
+            examples: [Nous ne mangeons jamais de viande., Je ne bois jamais de café.]
+          - text: '*Généralement* et *tous les jours* peuvent aussi aller au début ou à la fin de la phrase.'
+            examples:
+              ['Généralement, je prends du pain et du fromage.', Je bois du café tous les jours.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Revoyez les règles avec le groupe et demandez un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: routine-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes les questions.
+      - id: mori-questions
+        type: aiTutorPrompt
+        title: Pratique des questions
+        message: >-
+          Salut Mori ! Je veux pratiquer en parlant de ma routine quotidienne. Pose-moi
+          des questions en utilisant les jours de la semaine et les verbes pronominaux,
+          uniquement au présent.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Écris : **Pose-moi plus de questions, s’il te plaît !**
+          Tu ne comprends pas une explication ? Écris : **Peux-tu m’expliquer en hébreu mais avec la phrase en français ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-completer
+        type: aiTutorPrompt
+        title: Compléter les phrases
+        message: >-
+          Salut Mori ! Donne-moi des phrases de routine quotidienne sans la date ou
+          l’heure (exemple : « Je déjeune à ___ »). Je complète la phrase avec les
+          nombres appropriés. Corrige-moi si je fais une erreur.
+      - id: mori-journee
+        type: aiTutorPrompt
+        title: Décrire une journée typique
+        message: >-
+          Salut Mori ! Je te raconte une journée typique avec des nombres et des verbes
+          pronominaux (exemple : « Je me réveille à 7 h et je prends mon petit-déjeuner
+          à 8 h »). Pose-moi des questions supplémentaires pour continuer la
+          conversation et m’aider à m’améliorer.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: routine-pratique
+    book: workbook
+    title: 'Pratique : Routine'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux essayer encore.
+      - id: ex-heures
+        type: activity
+        activity: routine-heures
+      - id: ex-pronominaux
+        type: activity
+        activity: routine-pronominaux
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: routine-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la routine
+        glossLang: he
+        link: https://quizlet.com/il/1073010763/basic-french-2025-routine-flash-cards/
+        items: &routine-words
+          - { term: se réveiller, gloss: להתעורר }
+          - { term: se lever, gloss: לקום }
+          - { term: se brosser (les dents / les cheveux), gloss: לצחצח (שיניים / שיער) }
+          - { term: se laver, gloss: להתרחץ / לשטוף את עצמו }
+          - { term: se doucher, gloss: להתקלח }
+          - { term: s’habiller, gloss: להתלבש }
+          - { term: se coucher, gloss: ללכת לישון }
+          - { term: s’endormir, gloss: להירדם }
+          - { term: étudier, gloss: ללמוד }
+          - { term: travailler, gloss: לעבוד }
+          - { term: manger / déjeuner, gloss: לאכול / לאכול צהריים }
+          - { term: prendre son petit-déjeuner, gloss: לאכול ארוחת בוקר }
+          - { term: dîner, gloss: לאכול ארוחת ערב }
+          - { term: se reposer, gloss: לנוח }
+          - { term: jouer, gloss: לשחק }
+          - { term: regarder (la télé / une série), gloss: לראות (טלוויזיה / סדרות) }
+          - { term: le matin, gloss: בבוקר }
+          - { term: l’après-midi, gloss: אחרי הצהריים }
+          - { term: le soir, gloss: בערב }
+          - { term: la nuit, gloss: בלילה }
+          - { term: le week-end / la fin de semaine, gloss: בסוף השבוע }
+          - { term: tous les jours, gloss: כל יום }
+          - { term: lundi, gloss: יום שני }
+          - { term: mardi, gloss: יום שלישי }
+          - { term: mercredi, gloss: יום רביעי }
+          - { term: jeudi, gloss: יום חמישי }
+          - { term: vendredi, gloss: יום שישי }
+          - { term: samedi, gloss: שבת }
+          - { term: dimanche, gloss: יום ראשון }
+          - { term: À quelle heure… ?, gloss: באיזו שעה? }
+
+vocabulary:
+  - slug: routine
+    title: Routine
+    items: *routine-words
+
+activities:
+  - slug: routine-heures
+    title: L’heure et les jours
+    minutes: 8
+    items:
+      - id: a-sept-heures
+        type: multipleChoice
+        prompt: Je me lève ___ sept heures.
+        options:
+          - { text: à, correct: true }
+          - { text: en, feedback: 'Pour dire à quelle heure on fait une action : *à* + heure.' }
+          - {
+              text: il est,
+              feedback: '*Il est* sert à dire l’heure actuelle. Pour une action : *à* + heure.',
+            }
+      - id: heure-actuelle
+        type: multipleChoice
+        prompt: Quelle phrase dit l’heure actuelle ?
+        options:
+          - { text: Il est trois heures., correct: true }
+          - {
+              text: Il est à trois heures.,
+              feedback: 'Pour l’heure actuelle, on dit *il est* + heure, sans *à*.',
+            }
+          - {
+              text: Je suis trois heures.,
+              feedback: 'Pour l’heure actuelle, on dit *il est* + heure.',
+            }
+      - id: manger-a
+        type: trueFalse
+        prompt: 'On dit « Je mange à huit heures » pour dire à quelle heure on mange.'
+        answer: true
+        feedback:
+          correct: 'Oui ! Pour une action : *à* + heure.'
+          incorrect: 'C’est correct : pour dire à quelle heure une action se passe, on utilise *à* + heure.'
+      - id: completer-a
+        type: fillBlank
+        prompt: Complète avec la bonne préposition.
+        text: Je mange ___ huit heures et je vais ___ l’école.
+        blanks: [[à], [à]]
+      - id: nombres
+        type: fillBlank
+        prompt: Écris le nombre en lettres.
+        text: Je me réveille à 7 h, à ___ heures. Je prends mon petit-déjeuner à 8 h, à ___ heures.
+        blanks: [[sept], [huit]]
+      - id: nombres-paires
+        type: matching
+        prompt: Associe chaque nombre à son mot.
+        pairs:
+          - ['6', six]
+          - ['9', neuf]
+          - ['10', dix]
+          - ['13', treize]
+          - ['20', vingt]
+      - id: jours
+        type: matching
+        prompt: Associe chaque jour à sa traduction en hébreu.
+        pairs:
+          - [lundi, יום שני]
+          - [mercredi, יום רביעי]
+          - [vendredi, יום שישי]
+          - [samedi, שבת]
+          - [dimanche, יום ראשון]
+      - id: ordre-dimanche
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Le dimanche, je joue au foot à 10 h.
+
+  - slug: routine-pronominaux
+    title: Les verbes pronominaux
+    minutes: 8
+    items:
+      - id: je-me
+        type: multipleChoice
+        prompt: Je ___ réveille à 7 h.
+        options:
+          - { text: me, correct: true }
+          - {
+              text: se,
+              feedback: 'Avec *je*, on dit *me* : je me réveille. *Se* est pour il / elle / ils / elles.',
+            }
+          - { text: te, feedback: '*Te* est pour *tu* : tu te réveilles. Avec *je*, on dit *me*.' }
+      - id: nous-nous
+        type: multipleChoice
+        prompt: Nous ___ levons à 6 h.
+        options:
+          - { text: nous, correct: true }
+          - { text: se, feedback: 'Avec *nous*, le pronom est *nous* : nous nous levons.' }
+          - {
+              text: vous,
+              feedback: '*Vous* est pour *vous* : vous vous levez. Avec *nous*, on dit *nous*.',
+            }
+      - id: te-se
+        type: fillBlank
+        prompt: Complète avec *te* ou *se*.
+        text: Tu ___ brosses les dents. Elle ___ couche à 22 h.
+        blanks: [[te], [se]]
+        wordBank: [te, se]
+      - id: m-habille
+        type: multipleChoice
+        prompt: Je ___ habille.
+        options:
+          - { text: m’, correct: true }
+          - {
+              text: me,
+              feedback: 'Devant une voyelle ou un h muet, *me* devient *m’* : je m’habille.',
+            }
+          - {
+              text: s’,
+              feedback: '*S’* est pour il / elle : il s’habille. Avec *je*, on dit *m’*.',
+            }
+      - id: lave-voiture
+        type: trueFalse
+        prompt: '« Je lave la voiture » : ici, *laver* est un verbe pronominal.'
+        answer: false
+        feedback:
+          correct: 'Exact ! La voiture ≠ moi. Le verbe pronominal, c’est *Je me lave.*'
+          incorrect: 'Non : l’action est sur la voiture, pas sur moi. Le verbe pronominal, c’est *Je me lave.*'
+      - id: se-lever
+        type: matching
+        prompt: Associe chaque pronom à la bonne forme de *se lever*.
+        pairs:
+          - [je, me lève]
+          - [tu, te lèves]
+          - [il / elle, se lève]
+          - [nous, nous levons]
+          - [vous, vous levez]
+      - id: jamais
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Je ne bois jamais de café., correct: true }
+          - {
+              text: Je bois jamais de café.,
+              feedback: 'Avec *jamais*, il faut *ne* avant le verbe : je **ne** bois jamais.',
+            }
+          - {
+              text: Je ne jamais bois de café.,
+              feedback: '*Jamais* se place après le verbe : je ne bois jamais.',
+            }
+      - id: ordre-toujours
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Elle se réveille toujours à 6 h.

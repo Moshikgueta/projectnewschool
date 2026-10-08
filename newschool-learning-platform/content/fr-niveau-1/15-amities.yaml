@@ -1,0 +1,601 @@
+# Cycle "Amitiés", converted from the French digital notebook
+# ("Cahier digital 2026 – français niveau 1"; docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: amities
+title: Amitiés
+goal: Décrire tes amis et parler de vos activités avec les phrases descriptives et les verbes au présent.
+position: 15
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Phrases descriptives" and "Verbes au présent") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The source gives no activity times, except "10 minutes" to fill in the plan in
+    Activity 4 (kept in the steps). No minutes are recorded.
+  - >-
+    Summary, present tense: "2e groupe : -ir → finir, choisir, grandir" is completed:
+    only -ir verbs with "-issons" (nous finissons) are in the 2nd group; other -ir
+    verbs (sortir, dormir, partir) are in the 3rd group. "Sortir" is in this cycle's
+    vocabulary, so this matters. "1 er groupe" → "1er groupe"; "par coeur" → "par
+    cœur". The negation rule now says "ne → n' devant une voyelle".
+  - >-
+    "Présent simple" (an English-style term) → "présent" in the activity goals and in
+    the Mori message.
+  - >-
+    Activity 1, famous people: "Christine Lagarde – femme politique et directrice du
+    FMI" is out of date; changed to "présidente de la Banque centrale européenne".
+    Please check the whole list is still current.
+  - >-
+    Small corrections: "maginaire" → "imaginaire"; "élève" and "étudiant" were mixed:
+    "élève" is used everywhere. In Activity 4 and the Mori example the subject "nous" is
+    repeated after "et" ("Nous allons à la plage et nous nageons"), to match the rule
+    "le pronom sujet est obligatoire". Activity 5 oral example "Mon ami et moi faisons
+    du sport…, lui ne regarde pas de films" → "Mon ami et moi, nous faisons du sport…,
+    mais il ne regarde pas de films".
+  - >-
+    Summary example "Mon ami n'est pas gros." was replaced by "Mon ami n'est pas
+    bruyant." (a word from the vocabulary, and kinder). Please confirm.
+  - >-
+    Activity 5: the "Tableau" list in the source (Comme moi / Contrairement à moi +
+    six examples) is shown as a two-column table.
+  - >-
+    Vocabulary: "Écouter de la musique – להאזין למוזיק" → "להאזין למוזיקה". Other rows
+    are kept as in the source.
+  - >-
+    The "Réponse de l'élève / de l'étudiant 1/2/3" lines are replaced by the optional
+    answer boxes: students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: amities-classe
+    title: 'Classe : Amitiés'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Amitiés
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Phrases descriptives
+            description: 'Sujet + *être* + adjectif : *Mon ami est drôle. Mes amis sont gentils.*'
+          - name: Verbes au présent
+            description: '*je parle, nous jouons, ils finissent* : les verbes en -er et en -ir'
+      - id: quizlet
+        type: externalLink
+        label: Amitiés sur Quizlet
+        url: https://quizlet.com/il/1076079886/basic-french-2025-amities-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Mon / Ma meilleur(e) ami(e) s’appelle ___. Nous aimons ___ ensemble.
+        example: Je m’appelle Lévanah. Ma meilleure amie s’appelle Léa. Nous aimons bavarder ensemble.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quand vois-tu tes amis ?
+            frame: Je vois mes amis le ___ à ___.
+          - question: Choisis un ami et cite trois de ses qualités.
+            frame: Mon ami(e) est ___, ___ et ___.
+          - question: Pourquoi ton ami(e) est-il / elle important(e) pour toi ?
+            frame: Il / Elle est important(e) pour moi parce qu’il / elle est ___.
+          - question: Selon toi, l’amitié est-elle une chose importante ? Pourquoi ?
+            frame: |-
+              Oui, je pense que l’amitié est importante parce que ___.
+              Non, je pense que l’amitié n’est pas importante parce que ___.
+          - question: Comment te sens-tu quand tu es avec tes amis ?
+            frame: Je me sens ___ parce que ___.
+          - question: Que fais-tu pour tes amis ?
+            frame: Je ___ pour mes amis.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Mon ami idéal'
+        skills: [Phrases descriptives]
+        steps:
+          - Ton professeur présente un groupe de trois personnes célèbres.
+          - 'Choisis : un ami pour voyager, un ami pour faire du sport, un ami pour travailler sur un projet.'
+          - Explique ton choix avec les phrases ci-dessous.
+        example: '*Je choisis Omar Sy pour voyager parce qu’il est drôle et sympathique.*'
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Complète les phrases
+        items:
+          - question: Je choisis ___ pour voyager parce qu’il / elle est ___ et ___.
+          - question: Je choisis ___ pour faire du sport parce qu’il / elle est ___.
+          - question: Je choisis ___ pour travailler sur un projet parce qu’il / elle est ___.
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Décris ton ami'
+        skills: [Phrases descriptives]
+        steps:
+          - Travaillez en binômes. Choisis un ami réel ou imaginaire, avec un nom.
+          - L’élève A pose des questions ouvertes à l’élève B sur son ami.
+          - '**Règle :** ne réponds pas par « oui » ou « non » ; donne des réponses complètes.'
+          - Présente à la classe l’ami de ton camarade, à la 3ᵉ personne.
+        example: |-
+          *Mon amie est grande, elle a les cheveux longs et elle est très sympathique.*
+          *Il est drôle mais parfois un peu bruyant.*
+          *L’amie de mon camarade est grande et très sympathique. Elle aime danser et aide toujours ses amis.*
+          *L’ami de ma camarade est calme et studieux. Il n’est pas timide et adore jouer au football.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Questions ouvertes
+        items:
+          - question: Comment est ton ami physiquement ?
+          - question: Quelle est sa personnalité ?
+          - question: Quelles sont ses qualités ?
+          - question: Que fait-il quand il est avec ses amis ?
+          - question: En quoi est-il différent de toi ?
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Connais-tu vraiment ton ami ?'
+        skills: [Verbes au présent]
+        steps:
+          - Travaillez en binômes. Pense à un ami réel ou inventé.
+          - Pose des questions à ton camarade sur son ami et note les réponses.
+          - Changez de rôle et recommencez.
+          - Présente à la classe l’ami de ton camarade, à la 3ᵉ personne.
+        example: '*L’ami de Laura s’appelle Diego. Il travaille dans un restaurant. Il aime écouter de la musique et jouer au football.*'
+        wordBank:
+          - travailler
+          - étudier
+          - commencer
+          - finir
+          - faire du sport
+          - jouer
+          - sortir
+          - lire
+          - regarder des films
+          - écouter de la musique
+          - les jours de la semaine (lundi, mardi, mercredi…)
+          - les heures
+          - toujours
+          - généralement
+          - parfois
+          - jamais
+      - id: act3-questions
+        type: discussionQuestions
+        title: Questions sur ton ami
+        items:
+          - question: Où travaille ton ami(e) ?
+          - question: Combien de jours par semaine travaille-t-il / elle ?
+          - question: À quelle heure commence-t-il / elle et finit-il / elle son travail ?
+          - question: Que fait-il / elle pendant son temps libre ?
+          - question: Que n’aime-t-il / elle pas faire ?
+          - question: Pratique-t-il / elle un sport ? Lequel ?
+          - question: Avec qui passe-t-il / elle du temps le week-end ?
+          - question: Que fait-il / elle normalement le matin ?
+          - question: Que fait-il / elle normalement le soir ?
+          - question: A-t-il / elle une habitude particulière ?
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Une journée parfaite entre amis'
+        skills: [Verbes au présent]
+        steps:
+          - Planifie une journée parfaite avec tes amis. Complète le modèle ci-dessous (10 minutes).
+          - Partage ta journée avec la classe.
+        example: |-
+          **Où ?** À la plage.
+          **Quand ?** Le samedi.
+          Pendant cette journée parfaite :
+          1. Nous nous levons tôt et nous nous rencontrons à la gare.
+          2. Nous achetons de la nourriture et des boissons.
+          3. Nous allons à la plage et nous nageons.
+          4. Nous jouons au volley et nous écoutons de la musique.
+          5. Nous déjeunons ensemble et nous parlons de souvenirs amusants.
+          6. Nous regardons le coucher de soleil et nous prenons des photos avant de rentrer.
+      - id: act4-plan
+        type: discussionQuestions
+        title: Une journée parfaite avec mon ami
+        items:
+          - question: Où ? ___
+          - question: Quand ? ___
+          - question: 'Pendant cette journée parfaite, nous… 1. ___'
+          - question: 2. ___
+          - question: 3. ___
+          - question: 4. ___
+          - question: 5. ___
+          - question: 6. ___
+      - id: act5
+        type: classActivity
+        title: 'Activité 5 : Mon ami et moi – ressemblances et différences'
+        skills: [Verbes au présent]
+        steps:
+          - Pense à un ami réel.
+          - Travaille avec un camarade. Pose-lui les questions ci-dessous sur son ami.
+          - Note dans le tableau ce qui est comme toi et ce qui est différent de toi.
+          - Partage 2 ou 3 phrases avec la classe.
+        example: |-
+          *Mon ami et moi, nous faisons du sport le week-end, mais contrairement à moi, il ne regarde pas de films.*
+          *Nous aimons tous les deux la pizza, mais il écoute de la musique classique et moi de la pop.*
+      - id: act5-questions
+        type: discussionQuestions
+        title: Questions sur son ami
+        items:
+          - question: Quels sports aime-t-il ?
+          - question: Quelle musique écoute-t-il ?
+          - question: Quels plats aime-t-il ?
+          - question: Que fait-il avec ses amis ?
+          - question: Quels films ou séries regarde-t-il ?
+          - question: Que fait-il normalement le matin ?
+          - question: Que fait-il le week-end ?
+          - question: Où passe-t-il du temps avec ses amis ?
+          - question: Avec qui passe-t-il le plus de temps ?
+          - question: Quels lieux visite-t-il avec ses amis ?
+      - id: act5-table
+        type: table
+        caption: 'Exemple : comme moi et contrairement à moi'
+        header: [Comme moi, Contrairement à moi]
+        rows:
+          - [Il aime la pizza., Il n’aime pas le cinéma.]
+          - [Il écoute de la pop., Il écoute de la musique classique.]
+          - [Il fait du sport le samedi., Il ne fait pas de sport.]
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **Phrases descriptives** (Activités 1 et 2)
+          et **Verbes au présent** (Activités 3 et 4). L’Activité 5 est une activité
+          supplémentaire pour pratiquer le présent à la 3ᵉ personne.
+      - id: n-intro
+        anchor: intro
+        text: Donne ton propre exemple d’abord, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: |-
+          Présente un groupe de trois personnes célèbres de cette liste ; les élèves choisissent et expliquent avec les phrases.
+          Zinedine Zidane – footballeur français célèbre
+          Jean Dujardin – acteur français (Oscar pour *The Artist*)
+          Brigitte Macron – Première dame de France
+          Jacques Chirac – ancien président de la France
+          Marion Cotillard – actrice française connue internationalement
+          Paul Pogba – footballeur français
+          Christine Lagarde – femme politique, présidente de la Banque centrale européenne
+          David Guetta – DJ et producteur de musique français
+          Kylian Mbappé – jeune footballeur français très célèbre
+          Omar Sy – acteur français (*Intouchables*, *Lupin*)
+      - id: n-act3
+        anchor: act3
+        text: 'Objectif : pratiquer le présent pour parler des actions et de la routine d’un ami.'
+      - id: n-act4
+        anchor: act4
+        text: Explique que les élèves doivent planifier une journée parfaite avec leurs amis. Ils ont 10 minutes pour compléter le modèle ; ensuite, chaque élève partage sa journée.
+      - id: n-act5
+        anchor: act5
+        text: 'Objectif : pratiquer le présent à la 3ᵉ personne pour comparer les goûts, les routines et les expériences des amis.'
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: amities-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-descriptives
+        type: ruleSummary
+        skill: Phrases descriptives
+        rules:
+          - text: '3ᵉ personne du singulier : **sujet singulier + est + adjectif / nom**.'
+            examples: [Mon meilleur ami est gentil et compréhensif.]
+          - text: '3ᵉ personne du pluriel : **sujet pluriel + sont + adjectif / nom**. L’adjectif prend un **s** au pluriel.'
+            examples: [Mes amis sont toujours serviables et drôles.]
+          - text: 'Négation : **sujet + n’est pas / ne sont pas + adjectif / nom**.'
+            examples: [Mon ami n’est pas grossier., Mes amis ne sont pas grossiers.]
+          - text: 'Question : **Est-ce que + sujet + est / sont + adjectif / nom ?**'
+            examples: [Est-ce que ton ami est sympa ?, Est-ce que tes amis sont sympas ?]
+      - id: rules-present
+        type: ruleSummary
+        skill: Verbes au présent
+        rules:
+          - text: 'Les verbes français se divisent en trois groupes.'
+            examples:
+              [
+                '**1er groupe : verbes en -er** → parler, aimer, jouer…',
+                '**2e groupe : verbes en -ir avec « nous …issons »** → finir, choisir, grandir…',
+                '**3e groupe : les autres verbes, à apprendre par cœur** → faire, aller, venir, sortir, attendre, lire…',
+              ]
+          - text: 'Verbes en **-er** (les plus courants) : -e, -es, -e, -ons, -ez, -ent.'
+          - text: 'Verbes du 2e groupe en **-ir** : -is, -is, -it, -issons, -issez, -issent.'
+          - text: 'La négation est double : **ne + verbe conjugué + pas**. Devant une voyelle, **ne** devient **n’**.'
+            examples: [Je ne suis pas bavard., Mon ami n’est pas bruyant.]
+          - text: 'Le pronom sujet (**je, tu, il / elle / on, nous, vous, ils / elles**) est obligatoire avant le verbe. Attention à la terminaison du verbe !'
+            examples: [Je joue avec mon ami., Nous jouons ensemble.]
+      - id: present-table
+        type: table
+        caption: Verbes au présent
+        header: [Sujet, parler (-er), finir (-ir)]
+        rows:
+          - [je, je parle, je finis]
+          - [tu, tu parles, tu finis]
+          - [il / elle / on, il parle, il finit]
+          - [nous, nous parlons, nous finissons]
+          - [vous, vous parlez, vous finissez]
+          - [ils / elles, ils parlent, ils finissent]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: amities-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie ce message et envoie-le. Mori va te poser des questions et attendre tes réponses.
+      - id: mori-amitie
+        type: aiTutorPrompt
+        title: Parler de l’amitié
+        message: >-
+          Bonjour Mori ! Je veux pratiquer le français. Peux-tu me poser des questions
+          sur l’amitié en utilisant des phrases descriptives et des phrases avec actions ?
+          Merci de n’utiliser que le présent et de corriger mes erreurs.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu as terminé et tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi plus de questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu me l’expliquer en hébreu mais avec la phrase en français ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-meilleur-ami
+        type: aiTutorPrompt
+        title: Mon meilleur ami
+        intro: >-
+          Envoie ce message à Mori, puis décris ton meilleur ami. Par exemple : *Il / Elle
+          a les cheveux longs et les yeux bleus. Il / Elle m’écoute toujours. Nous allons
+          ensemble au parc et nous déjeunons à l’école.*
+        message: Bonjour Mori ! Faisons une activité. Je vais décrire mon meilleur ami avec des phrases descriptives et des actions. Dis-moi si tu penses que nous sommes de bons amis.
+      - id: mori-meilleur-ami-tour
+        type: aiTutorPrompt
+        title: 'Mon meilleur ami : à toi, Mori !'
+        intro: Ensuite, envoie ce message.
+        message: À toi de jouer ! Décris ton meilleur ami et je te dirai si vous êtes de bons amis.
+      - id: mori-bons-amis
+        type: aiTutorPrompt
+        title: Que font les bons amis ?
+        intro: >-
+          Envoie ce message à Mori, puis écris tes trois phrases. Par exemple : *1. Un bon
+          ami t’aide. 2. Un bon ami se moque de toi quand tu es triste. 3. Un bon ami joue
+          avec toi.* (Mori devine : numéro 2.)
+        message: Hé, Mori ! Jouons à un jeu. Je vais écrire trois choses que font les amis. Une seule n’est pas vraie. Tu dois deviner laquelle n’est pas quelque chose qu’un bon ami ferait.
+      - id: mori-bons-amis-tour
+        type: aiTutorPrompt
+        title: 'Que font les bons amis ? À toi, Mori !'
+        intro: Ensuite, envoie ce message.
+        message: À toi de jouer ! Écris trois choses que font les amis. Je devinerai laquelle n’est pas vraie.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: amities-pratique
+    book: workbook
+    title: 'Pratique : Amitiés'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-descriptives
+        type: activity
+        activity: amities-descriptives
+      - id: ex-present
+        type: activity
+        activity: amities-present
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: amities-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de l’amitié
+        glossLang: he
+        link: https://quizlet.com/il/1076079886/basic-french-2025-amities-flash-cards/
+        items: &amities-words
+          - { term: Ami, gloss: חבר }
+          - { term: Meilleur ami, gloss: חבר הכי טוב }
+          - { term: Amitié, gloss: חברות }
+          - { term: Voyager, gloss: לטייל }
+          - { term: Faire du sport, gloss: לעשות ספורט }
+          - { term: Travailler, gloss: לעבוד }
+          - { term: Projet, gloss: פרויקט }
+          - { term: Personnalité, gloss: אופי }
+          - { term: Grand, gloss: 'גדול, גבוה' }
+          - { term: Petit, gloss: 'נמוך, קטן' }
+          - { term: Sympathique, gloss: נחמד }
+          - { term: Drôle, gloss: מצחיק }
+          - { term: Travailleur, gloss: חרוץ }
+          - { term: Créatif, gloss: יצירתי }
+          - { term: Intelligent, gloss: חכם }
+          - { term: Calme, gloss: רגוע }
+          - { term: Bruyant, gloss: רועש }
+          - { term: Jouer, gloss: לשחק }
+          - { term: Cuisiner, gloss: לבשל }
+          - { term: Lire, gloss: לקרוא }
+          - { term: Regarder des films, gloss: לראות סרטים }
+          - { term: Écouter de la musique, gloss: להאזין למוזיקה }
+          - { term: Danser, gloss: לרקוד }
+          - { term: Manger, gloss: לאכול }
+          - { term: Boire, gloss: לשתות }
+          - { term: Sortir, gloss: לצאת }
+          - { term: Aider, gloss: לעזור }
+          - { term: Partager, gloss: לשתף }
+          - { term: Faire confiance, gloss: לסמוך }
+          - { term: Célébrer, gloss: לחגוג }
+          - { term: Inviter, gloss: להזמין }
+          - { term: Loyal, gloss: נאמן }
+          - { term: Souvenir, gloss: זיכרון }
+          - { term: Secret, gloss: סוד }
+          - { term: Potins, gloss: רכילות }
+
+vocabulary:
+  - slug: amities
+    title: Amitiés
+    items: *amities-words
+
+activities:
+  - slug: amities-descriptives
+    title: 'Phrases descriptives : est / sont + adjectif'
+    minutes: 8
+    items:
+      - id: ami-est
+        type: multipleChoice
+        prompt: Mon meilleur ami ___ gentil.
+        options:
+          - { text: est, correct: true }
+          - { text: sont, feedback: '*Mon meilleur ami* est singulier : on dit *est*.' }
+          - { text: es, feedback: '*Es* va avec *tu*. Avec *il* ou *mon ami*, on dit *est*.' }
+      - id: amis-sont
+        type: multipleChoice
+        prompt: Mes amis ___ drôles.
+        options:
+          - { text: sont, correct: true }
+          - { text: est, feedback: '*Mes amis* est pluriel : on dit *sont*.' }
+          - {
+              text: sommes,
+              feedback: '*Sommes* va avec *nous*. Avec *mes amis* (ils), on dit *sont*.',
+            }
+      - id: grossiers
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Mes amis ne sont pas grossiers., correct: true }
+          - {
+              text: Mes amis ne sont pas grossier.,
+              feedback: 'Le sujet est pluriel : l’adjectif prend un *s* : *grossiers*.',
+            }
+          - {
+              text: Mes amis n’est pas grossiers.,
+              feedback: '*Mes amis* est pluriel : on dit *ne sont pas*.',
+            }
+      - id: negation
+        type: fillBlank
+        prompt: Complète à la forme négative.
+        text: Mon ami ___ pas timide. Mes amis ___ ___ pas bruyants.
+        blanks: [[n’est], [ne], [sont]]
+      - id: est-ce-que
+        type: trueFalse
+        prompt: 'Pour poser une question, on peut dire : *Est-ce que ton ami est sympa ?*'
+        answer: true
+        feedback:
+          correct: 'Bravo ! *Est-ce que* + sujet + *est* + adjectif + *?*'
+          incorrect: 'C’est correct : *Est-ce que* + sujet + *est* + adjectif. *Est-ce que ton ami est sympa ?*'
+      - id: question-sont
+        type: multipleChoice
+        prompt: Est-ce que tes amis ___ sympas ?
+        options:
+          - { text: sont, correct: true }
+          - { text: est, feedback: '*Tes amis* est pluriel : on dit *sont*.' }
+          - { text: es, feedback: '*Es* va avec *tu*. Avec *tes amis* (ils), on dit *sont*.' }
+      - id: associe-accord
+        type: matching
+        prompt: Associe chaque sujet à la bonne fin. Regarde bien le masculin ou le féminin, le singulier ou le pluriel.
+        pairs:
+          - [Mon ami, est calme et studieux.]
+          - [Mon amie, est grande et sympathique.]
+          - [Mes amis, sont travailleurs.]
+          - [Mes amies, sont créatives.]
+      - id: ordonne-ami
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Mon meilleur ami est gentil et drôle.
+        alsoAccept: [Mon meilleur ami est drôle et gentil]
+
+  - slug: amities-present
+    title: 'Verbes au présent : -er et -ir'
+    minutes: 8
+    items:
+      - id: nous-jouons
+        type: multipleChoice
+        prompt: Nous ___ au football le samedi.
+        options:
+          - { text: jouons, correct: true }
+          - {
+              text: jouez,
+              feedback: '*-ez* va avec *vous*. Avec *nous*, la terminaison est *-ons* : *nous jouons*.',
+            }
+          - {
+              text: jouent,
+              feedback: '*-ent* va avec *ils / elles*. Avec *nous*, on dit *nous jouons*.',
+            }
+      - id: tu-finis
+        type: multipleChoice
+        prompt: Tu ___ ton travail à 17 heures.
+        options:
+          - { text: finis, correct: true }
+          - { text: finit, feedback: '*Finit* va avec *il / elle*. Avec *tu*, on dit *tu finis*.' }
+          - { text: finissez, feedback: '*Finissez* va avec *vous*. Avec *tu*, on dit *tu finis*.' }
+      - id: associe-parler
+        type: matching
+        prompt: Associe chaque sujet au verbe *parler*.
+        pairs:
+          - [je, parle]
+          - [tu, parles]
+          - [nous, parlons]
+          - [vous, parlez]
+          - [ils / elles, parlent]
+      - id: choisir-aimer
+        type: fillBlank
+        prompt: Complète avec le verbe au présent.
+        text: Ils ___ (choisir) un film. Elle ___ (aimer) la pizza.
+        blanks: [[choisissent], [aime]]
+      - id: pronom-obligatoire
+        type: trueFalse
+        prompt: 'En français, on peut dire *Joue avec mon ami.* sans pronom sujet pour dire « je joue ».'
+        answer: false
+        feedback:
+          correct: 'Exact ! Le pronom sujet est obligatoire : *Je joue avec mon ami.*'
+          incorrect: 'En français, le pronom sujet est obligatoire : *Je joue avec mon ami.*'
+      - id: ne-pas-sport
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Il ne fait pas de sport., correct: true }
+          - {
+              text: Il fait pas de sport.,
+              feedback: 'La négation est double : *ne* + verbe + *pas*.',
+            }
+          - {
+              text: Il ne fait de sport pas.,
+              feedback: '*Pas* va juste après le verbe : *Il ne fait pas de sport.*',
+            }
+      - id: finir-travailler
+        type: fillBlank
+        prompt: Complète avec le verbe au présent.
+        text: Vous ___ (finir) le projet ensemble. Mon ami ___ (travailler) dans un restaurant.
+        blanks: [[finissez], [travaille]]
+      - id: ordonne-laura
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: L’ami de Laura travaille dans un restaurant.

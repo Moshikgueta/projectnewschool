@@ -1,0 +1,561 @@
+# Cycle "Objectifs et projets", converted from the French digital notebook
+# ("Cahier digital 2026 – français niveau 1", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: objectifs-et-projets
+title: Objectifs et projets
+goal: Parler de ses objectifs avec les verbes au présent, les dates et les nombres.
+position: 7
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Les verbes au présent" and "Les dates et les
+    nombres") are NEW: the notebook has no self-study exercises. They were written
+    from the cycle's summary rules, examples and vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Summary, -er verbs: the conjugation of "étudier" started with "Je étudie"; it
+    is "J’étudie" (je → j’ before a vowel). The elision rule was added to the
+    summary, and one workbook item tests it.
+  - >-
+    Summary, dates: added "le 1er (premier)" for the first day of the month, since
+    the Activity 3 example uses "le 1er mars". "par coeur" → "par cœur" (twice).
+  - >-
+    Activity 3 example: "Finir : Rachel termine son projet" → "Rachel finit son
+    projet", to use the verb on the card. The example cards (numbers 3, 5, 7, 9, 10)
+    do not match the numbers in the written plan (1, 3, 5, 10, 15, 20); this was
+    left as in the notebook. "Etape 1" → "Étape 1".
+  - >-
+    Activity 3 card link (Google Doc) and the Quizlet link were kept without their
+    "?tab=…" / "?i=…&x=…" parts.
+  - >-
+    Mori: the "Décrire ton objectif" sentences were turned into one message to send
+    (with a greeting and "Pose-moi des questions, s’il te plaît." at the end).
+  - >-
+    Vocabulary: the notebook table is Hebrew → French; it is stored French → Hebrew
+    like the other cycles. "aide" (noun) is glossed "עזרה"; the verb "aider" used
+    in Activity 3 is not in the list. Please confirm.
+  - >-
+    No activity times are given in the notebook for this cycle, so none are
+    recorded.
+  - >-
+    The "Réponse de l’élève 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers. The
+    "Date / Participants" header lines were left out.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: objectifs-et-projets-classe
+    title: 'Classe : Objectifs et projets'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Objectifs et projets
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Verbes au présent
+            description: 'Les verbes en -er, -ir et -re, et *je veux / je peux / j’ai besoin de* + infinitif'
+          - name: Dates et nombres
+            description: Les nombres et les dates (*le 15 août*, *en août*, *en 1999*)
+      - id: quizlet
+        type: externalLink
+        label: Objectifs et projets sur Quizlet
+        url: https://quizlet.com/il/1073040429/basic-french-2025-objectifs-et-projets-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Je veux commencer une nouvelle ___ (carrière / amitié / passion / vie / activité).
+        example: Je m’appelle Lévanah. Je veux commencer une nouvelle activité.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: As-tu un objectif ? Quel est-il ?
+            frame: Mon objectif est de ___ avant le ___ (date).
+          - question: Combien d’objectifs as-tu pour ce mois / cette année ? Quels sont-ils ?
+            frame: |-
+              Pour cette année, j’ai ___ objectifs. Les voici :
+              A. ___
+              B. ___
+              C. ___
+          - question: Que fais-tu pour atteindre ton objectif / tes objectifs ?
+            frame: Je ___ pour atteindre mon objectif / mes objectifs.
+          - question: Comment te sens-tu par rapport à tes progrès ?
+            frame: Je me sens ___ par rapport à mes progrès.
+          - question: Pourquoi cet objectif est-il important pour toi ?
+            frame: Cet objectif est important pour moi parce que ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : mon nouvel objectif'
+        skills: [Dates et nombres]
+        steps:
+          - Écris une liste de **10 étapes** pour atteindre ton objectif. Chaque étape a une **date de début**.
+          - Présente ta liste de 10 étapes au groupe.
+        example: |-
+          *Le 3 mars, je vais écouter un podcast en français pendant 20 minutes.*
+          *Le 10 mars, je vais parler avec un ami francophone pendant une heure.*
+          *Le 1er juin, j’ai réussi !*
+      - id: act1-plan
+        type: discussionQuestions
+        title: Mon plan en 10 étapes
+        items:
+          - question: 'Objectif : ___'
+          - question: 'Étape 1 : Le ___ (date), je vais ___ pendant ___ minutes / heures / jours / semaines.'
+          - question: 'Étape 2 : Le ___ (date), je vais ___ pendant ___ minutes / heures / jours / semaines.'
+          - question: 'Étape 3 : Le ___ (date), je vais ___ pendant ___ minutes / heures / jours / semaines.'
+          - question: 'Étape 4 : Le ___ (date), je vais ___ pendant ___ minutes / heures / jours / semaines.'
+          - question: 'Étape 5 : Le ___ (date), je vais ___ pendant ___ minutes / heures / jours / semaines.'
+          - question: 'Étape 6 : Le ___ (date), je vais ___ pendant ___ minutes / heures / jours / semaines.'
+          - question: 'Étape 7 : Le ___ (date), je vais ___ pendant ___ minutes / heures / jours / semaines.'
+          - question: 'Étape 8 : Le ___ (date), je vais ___ pendant ___ minutes / heures / jours / semaines.'
+          - question: 'Étape 9 : Le ___ (date), je vais ___ pendant ___ minutes / heures / jours / semaines.'
+          - question: 'Étape 10 : Le ___ (date), je vais ___ pendant ___ minutes / heures / jours / semaines.'
+          - question: '**Le ___ (date), j’ai réussi !**'
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : deux cerveaux valent mieux qu’un'
+        skills: [Verbes au présent]
+        steps:
+          - Mettez-vous par deux.
+          - L’étudiant 1 explique son objectif pour cette année.
+          - L’étudiant 2 donne au moins **3 conseils** pour l’aider à atteindre son objectif.
+          - Puis inversez les rôles.
+        wordBank:
+          - Parler français.
+          - Obtenir de meilleures notes à l’école.
+          - Se faire de nouveaux amis.
+          - Économiser de l’argent.
+          - Apprendre quelque chose de nouveau / commencer un nouveau hobby.
+          - Manger plus sainement et faire du sport.
+          - Être plus organisé et mieux gérer son temps.
+          - Lire plus de livres.
+        example: |-
+          **Étudiant 1 :** *Mon objectif est de parler français pour mon voyage en France.*
+          **Étudiant 2 :** *Tu peux **écouter des podcasts**, **regarder des films en français** et **parler avec des francophones**.*
+      - id: act2-advice
+        type: discussionQuestions
+        title: Mes conseils
+        items:
+          - question: 'Conseil 1 : Tu peux ___.'
+          - question: 'Conseil 2 : Tu peux ___.'
+          - question: 'Conseil 3 : Tu peux ___.'
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : les cartes d’objectifs'
+        skills: [Dates et nombres, Verbes au présent]
+        steps:
+          - 'Tu reçois des cartes : **5 cartes de verbes** (commencer, travailler, aider, apprendre, finir), **10 cartes de nombres** (de 1 à 10), **12 cartes de mois** (de janvier à décembre) et **5 mots-clés** donnés par ton partenaire.'
+          - Avec les cartes, écris un **plan en 5 phrases** pour l’objectif d’un camarade.
+          - Utilise la **troisième personne du singulier** (il / elle).
+        example: |-
+          **Cartes reçues :** commencer, travailler, apprendre, aider, finir · 3, 5, 7, 9, 10 · mars, avril, juin, septembre, décembre · anglais, ordinateur, heures, professeur, certificat
+          **Commencer :** *Rachel commence son projet le 1er mars 2024.*
+          **Travailler :** *Rachel travaille 3 heures chaque jour à partir du 5 mars 2024.*
+          **Apprendre :** *Rachel apprend l’anglais et l’informatique avec son professeur le 10 avril 2024.*
+          **Aider :** *Le professeur aide Rachel à préparer son certificat à partir du 15 juin 2024.*
+          **Finir :** *Rachel finit son projet le 20 décembre 2024.*
+        resource:
+          label: Les cartes
+          url: https://docs.google.com/document/d/1UExJ7lA4rIX37T-FdHRiBsAowzExIfOBb30adf78tik/edit
+      - id: act3-plan
+        type: discussionQuestions
+        title: Le plan de mon camarade
+        items:
+          - question: '**Commencer :** ___ commence ___ le ___.'
+          - question: '**Travailler :** ___ travaille ___.'
+          - question: '**Apprendre :** ___ apprend ___.'
+          - question: '**Aider :** ___ aide ___.'
+          - question: '**Finir :** ___ finit ___ le ___.'
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : devine le verbe'
+        skills: [Verbes au présent]
+        steps:
+          - 'But du jeu : deviner un verbe secret avec des questions fermées (oui / non).'
+          - Un étudiant choisit un **verbe secret** dans la liste, mais ne le dit pas au groupe.
+          - Le groupe pose des questions fermées. L’étudiant répond seulement **« oui »** ou **« non »**.
+          - 'Quand le groupe pense avoir trouvé, il demande : « Est-ce que c’est **[verbe]** ? »'
+          - Si c’est correct, l’étudiant dit **« Oui ! »**. Sinon, le jeu continue.
+        wordBank: [étudier, faire du sport, travailler, se reposer, apprendre]
+        example: |-
+          *Verbe secret : étudier*
+          **Étudiant 2 :** *Est-ce que tu fais cela au travail ?* → **Étudiant 1 :** *Non.*
+          **Étudiant 3 :** *Est-ce que tu fais cela à l’école ?* → **Étudiant 1 :** *Oui.*
+          **Étudiant 2 :** *Est-ce que c’est « étudier » ?* → **Étudiant 1 :** *Oui ! Tu as trouvé !*
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Compétences du cycle : **verbes au présent** (activités 2 et 4) et **dates et
+          nombres** (activités 1 et 3).
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Distribuez les cartes (lien « Les cartes ») : chaque étudiant reçoit 5 verbes,
+          10 nombres et 12 mois, et son partenaire lui donne 5 mots-clés.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Préparez une liste de 5 verbes liés aux objectifs (par exemple : étudier, faire
+          du sport, travailler, se reposer, apprendre).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: objectifs-et-projets-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris
+      - id: rules-present
+        type: ruleSummary
+        skill: Les verbes au présent
+        rules:
+          - text: 'On utilise le présent pour parler d’actions qui se passent **maintenant**, pour décrire des **habitudes** ou des **vérités générales**, et pour parler de **plans ou d’objectifs**.'
+            examples:
+              - J’étudie tous les jours.
+              - Tu étudies pour l’examen.
+              - Il étudie à la bibliothèque.
+              - Nous étudions ensemble.
+              - Vous étudiez à l’université.
+              - Ils étudient pour mieux comprendre.
+          - text: 'Les verbes réguliers ont des terminaisons régulières (voir le tableau) : **-er** (1er groupe, *étudier*) et **-ir** (2e groupe, *finir*). Attention : certains verbes en -ir sont du 3e groupe (*partir*, *venir*…).'
+          - text: 'Les verbes du **3e groupe** sont à apprendre par cœur (exemple : *vendre*).'
+          - text: Devant une voyelle ou un h muet, *je* devient **j’**.
+            examples: [J’étudie., J’habite à Paris.]
+          - text: 'Après **je veux / je peux / j’ai besoin de**, le deuxième verbe reste à l’**infinitif**.'
+            examples:
+              - Je veux **étudier** pour mon examen.
+              - Je peux **pratiquer** mon français tous les jours.
+              - Tu veux **voyager** cet été.
+              - Il a besoin de **finir** son travail rapidement.
+              - Nous voulons **commencer** le cours demain.
+      - id: present-table
+        type: table
+        caption: Le présent des verbes réguliers et de *vendre*
+        header: [Pronom, Étudier (-er), Finir (-ir), Vendre (3e groupe)]
+        rows:
+          - [je / j’, j’étudi**e**, je fin**is**, je **vends**]
+          - [tu, étudi**es**, fin**is**, '**vends**']
+          - [il / elle, étudi**e**, fin**it**, '**vend**']
+          - [nous, étudi**ons**, fin**issons**, '**vendons**']
+          - [vous, étudi**ez**, fin**issez**, '**vendez**']
+          - [ils / elles, étudi**ent**, fin**issent**, '**vendent**']
+      - id: rules-dates
+        type: ruleSummary
+        skill: Les dates et les nombres
+        rules:
+          - text: Apprends les nombres **jusqu’à 20** par cœur (voir le tableau).
+          - text: 'Connais bien les dizaines : 30 = trente, 40 = quarante, 50 = cinquante, 60 = soixante, 70 = soixante-dix, 80 = quatre-vingts, 90 = quatre-vingt-dix.'
+          - text: 'Pour une date précise : **le** + jour + mois + année.'
+            examples: [le 15 août 1999]
+          - text: 'Pour le premier jour du mois, on dit **le 1er** (premier).'
+            examples: [le 1er mars]
+          - text: 'Avec un mois ou une année seulement : **en** + mois, **en** + année.'
+            examples: [en août, en 1999]
+      - id: numbers-table
+        type: table
+        caption: Les nombres de 1 à 20
+        header: [Nombre, En lettres, Nombre, En lettres]
+        rows:
+          - ['1', un, '11', onze]
+          - ['2', deux, '12', douze]
+          - ['3', trois, '13', treize]
+          - ['4', quatre, '14', quatorze]
+          - ['5', cinq, '15', quinze]
+          - ['6', six, '16', seize]
+          - ['7', sept, '17', dix-sept]
+          - ['8', huit, '18', dix-huit]
+          - ['9', neuf, '19', dix-neuf]
+          - ['10', dix, '20', vingt]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Revoyez les règles avec le groupe et demandez un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: objectifs-et-projets-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: 'Objectif : pratiquer avec un partenaire virtuel. Ouvre le chat avec Mori, copie le message et envoie-le. Réponds à toutes les questions de Mori.'
+      - id: mori-objectif
+        type: aiTutorPrompt
+        title: Mon nouvel objectif
+        message: >-
+          Salut Mori ! J’ai un nouvel objectif. Peux-tu me poser des questions sur mon
+          objectif en utilisant le présent, les dates et les nombres ? Corrige mes
+          erreurs, s’il te plaît.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Écris : **Pose-moi plus de questions, s’il te plaît !**
+          Mori explique quelque chose en français et tu ne comprends pas ? Écris : **Peux-tu m’expliquer en hébreu mais avec la phrase en français ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-decrire
+        type: aiTutorPrompt
+        title: Décrire ton objectif à Mori
+        intro: Complète les phrases et envoie le message à Mori.
+        message: |-
+          Salut Mori ! Voici mon objectif :
+          Mon objectif est de ___.
+          Je veux commencer le ___.
+          Pour atteindre mon objectif, je ___.
+          Cet objectif est important pour moi parce que ___.
+          Pose-moi des questions, s’il te plaît.
+      - id: mori-devine
+        type: aiTutorPrompt
+        title: Devine mon objectif
+        intro: Mori te posera des questions pour deviner ton objectif.
+        message: >-
+          Salut Mori ! Je veux jouer à un jeu. Je vais te donner des indices sur mon
+          objectif et tu dois deviner ce que c’est. Pose-moi des questions avec des
+          actions, des dates et des nombres au présent. Corrige mes erreurs, s’il te
+          plaît.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: objectifs-et-projets-pratique
+    book: workbook
+    title: 'Pratique : Objectifs et projets'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux essayer encore.
+      - id: ex-verbes
+        type: activity
+        activity: objectifs-et-projets-verbes
+      - id: ex-dates
+        type: activity
+        activity: objectifs-et-projets-dates
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: objectifs-et-projets-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots des objectifs et des projets
+        glossLang: he
+        link: https://quizlet.com/il/1073040429/basic-french-2025-objectifs-et-projets-flash-cards/
+        items: &objectifs-et-projets-words
+          - { term: objectif, gloss: מטרה }
+          - { term: commencer, gloss: להתחיל }
+          - { term: planifier, gloss: לתכנן }
+          - { term: travailler, gloss: לעבוד }
+          - { term: aide, gloss: עזרה }
+          - { term: temps, gloss: זמן }
+          - { term: semaine, gloss: שבוע }
+          - { term: jour, gloss: יום }
+          - { term: mois, gloss: חודש }
+          - { term: terminer / finir, gloss: לסיים }
+          - { term: étudier / apprendre, gloss: ללמוד }
+          - { term: pratiquer, gloss: לתרגל }
+          - { term: parler, gloss: לדבר }
+          - { term: important, gloss: חשוב }
+          - { term: progrès, gloss: התקדמות }
+          - { term: idée, gloss: רעיון }
+          - { term: janvier, gloss: ינואר }
+          - { term: février, gloss: פברואר }
+          - { term: mars, gloss: מרץ }
+          - { term: avril, gloss: אפריל }
+          - { term: mai, gloss: מאי }
+          - { term: juin, gloss: יוני }
+          - { term: juillet, gloss: יולי }
+          - { term: août, gloss: אוגוסט }
+          - { term: septembre, gloss: ספטמבר }
+          - { term: octobre, gloss: אוקטובר }
+          - { term: novembre, gloss: נובמבר }
+          - { term: décembre, gloss: דצמבר }
+          - { term: lundi, gloss: יום שני }
+          - { term: mardi, gloss: יום שלישי }
+          - { term: mercredi, gloss: יום רביעי }
+          - { term: jeudi, gloss: יום חמישי }
+          - { term: vendredi, gloss: יום שישי }
+          - { term: samedi, gloss: שבת }
+          - { term: dimanche, gloss: יום ראשון }
+          - { term: un, gloss: אחד }
+          - { term: deux, gloss: שתיים }
+          - { term: trois, gloss: שלוש }
+          - { term: quatre, gloss: ארבע }
+          - { term: cinq, gloss: חמש }
+          - { term: six, gloss: שש }
+          - { term: sept, gloss: שבע }
+          - { term: huit, gloss: שמונה }
+          - { term: neuf, gloss: תשע }
+          - { term: dix, gloss: עשר }
+
+vocabulary:
+  - slug: objectifs-et-projets
+    title: Objectifs et projets
+    items: *objectifs-et-projets-words
+
+activities:
+  - slug: objectifs-et-projets-verbes
+    title: Les verbes au présent
+    minutes: 8
+    items:
+      - id: nous-etudions
+        type: multipleChoice
+        prompt: Nous ___ ensemble.
+        options:
+          - { text: étudions, correct: true }
+          - {
+              text: étudiez,
+              feedback: '*-ez* est pour *vous* : vous étudiez. Avec *nous* : **-ons**.',
+            }
+          - {
+              text: étudient,
+              feedback: '*-ent* est pour *ils / elles* : ils étudient. Avec *nous* : **-ons**.',
+            }
+      - id: tu-finis
+        type: multipleChoice
+        prompt: Tu ___ ton travail.
+        options:
+          - { text: finis, correct: true }
+          - { text: finit, feedback: '*Finit* est pour *il / elle*. Avec *tu* : tu fin**is**.' }
+          - { text: finissez, feedback: '*Finissez* est pour *vous*. Avec *tu* : tu fin**is**.' }
+      - id: j-etudie
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: J’étudie tous les jours., correct: true }
+          - {
+              text: Je étudie tous les jours.,
+              feedback: 'Devant une voyelle, *je* devient *j’* : j’étudie.',
+            }
+          - {
+              text: J’étudies tous les jours.,
+              feedback: 'Avec *je*, la terminaison est *-e* : j’étudie. *-es* est pour *tu*.',
+            }
+      - id: vendre
+        type: fillBlank
+        prompt: Conjugue le verbe *vendre* au présent.
+        text: Ils ___ des vêtements. Vous ___ des chaussures.
+        blanks: [[vendent], [vendez]]
+      - id: finir-paires
+        type: matching
+        prompt: Associe chaque pronom à la bonne forme de *finir*.
+        pairs:
+          - [il / elle, finit]
+          - [nous, finissons]
+          - [vous, finissez]
+          - [ils / elles, finissent]
+      - id: veux-infinitif
+        type: multipleChoice
+        prompt: Je veux ___ pour mon examen.
+        options:
+          - { text: étudier, correct: true }
+          - {
+              text: étudie,
+              feedback: 'Après *je veux*, le deuxième verbe reste à l’infinitif : je veux étudier.',
+            }
+          - {
+              text: étudies,
+              feedback: 'Après *je veux*, le deuxième verbe reste à l’infinitif : je veux étudier.',
+            }
+      - id: besoin-de
+        type: trueFalse
+        prompt: '« Il a besoin de finir son travail. » : après *avoir besoin de*, le verbe reste à l’infinitif.'
+        answer: true
+        feedback:
+          correct: 'Oui ! *Finir* est à l’infinitif.'
+          incorrect: 'C’est correct : après *je veux / je peux / j’ai besoin de*, le deuxième verbe reste à l’infinitif.'
+      - id: ordre-commencer
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Nous voulons commencer le cours demain.
+
+  - slug: objectifs-et-projets-dates
+    title: Les dates et les nombres
+    minutes: 8
+    items:
+      - id: le-date
+        type: multipleChoice
+        prompt: Rachel commence son projet ___ 1er mars.
+        options:
+          - { text: le, correct: true }
+          - {
+              text: en,
+              feedback: 'Pour une date précise (jour + mois), on dit *le* : le 1er mars. *En* est pour un mois ou une année seulement.',
+            }
+          - { text: à, feedback: 'Pour une date, on dit *le* + jour + mois : le 1er mars.' }
+      - id: en-mois-annee
+        type: fillBlank
+        prompt: Complète avec *le* ou *en*.
+        text: Je finis mon projet ___ décembre. Rachel commence ___ 2024. Mon examen est ___ 15 août.
+        blanks: [[en], [en], [le]]
+        wordBank: [le, en]
+      - id: ordre-date
+        type: multipleChoice
+        prompt: Quelle date est correcte ?
+        options:
+          - { text: le 15 août 1999, correct: true }
+          - { text: le août 15 1999, feedback: 'D’abord le jour, puis le mois : le 15 août 1999.' }
+          - {
+              text: en 15 août 1999,
+              feedback: 'Pour une date précise, on dit *le* : le 15 août 1999.',
+            }
+      - id: en-aout
+        type: trueFalse
+        prompt: On dit « en août » et « en 1999 ».
+        answer: true
+        feedback:
+          correct: 'Oui ! **En** + mois, **en** + année.'
+          incorrect: 'C’est correct : on dit *en* + mois (en août) et *en* + année (en 1999).'
+      - id: mois
+        type: matching
+        prompt: Associe chaque mois à sa traduction en hébreu.
+        pairs:
+          - [janvier, ינואר]
+          - [mars, מרץ]
+          - [juin, יוני]
+          - [août, אוגוסט]
+          - [décembre, דצמבר]
+      - id: nombres
+        type: fillBlank
+        prompt: Écris le nombre en lettres.
+        text: '12 : ___ · 14 : ___ · 19 : ___'
+        blanks: [[douze], [quatorze], [dix-neuf, dix neuf]]
+      - id: soixante-dix
+        type: multipleChoice
+        prompt: Comment dit-on 70 ?
+        options:
+          - { text: soixante-dix, correct: true }
+          - {
+              text: soixante-sept,
+              feedback: '*Soixante-sept*, c’est 67 (60 + 7). 70 = 60 + 10 : soixante-dix.',
+            }
+          - { text: sept-dix, feedback: 'En français, 70 = 60 + 10 : soixante-dix.' }
+      - id: ordre-rachel
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Rachel travaille trois heures chaque jour.

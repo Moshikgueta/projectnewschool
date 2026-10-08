@@ -1,0 +1,539 @@
+# Cycle "La météo", converted from the French niveau 1 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: la-meteo
+title: La météo
+goal: Décrire le temps qu’il fait et dire la température avec les nombres.
+position: 10
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("La description" and "Les nombres") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's summary
+    rules, examples and vocabulary. Please check level, wording and every right
+    answer before students see them. The notebook writes 21 as "vingt-et-un" (1990
+    spelling); the exercises show that form, and the fill-in blanks also accept "vingt
+    et un".
+  - >-
+    Activity 1 (le bulletin météo): the weather-forecast picture students receive is
+    not in the exported notebook. The teacher shares it on screen until it is added
+    to the course's media (see the teacher note). A short example answer was added.
+  - >-
+    Corrections: "méditéranéen" → "méditerranéen"; "A la prochaine" → "À la
+    prochaine"; "Wow !" → "Waouh !"; mixed quotation marks in the Activity 3 script
+    were removed. Activity 4 mixed "Mon lieu idéal" and "Mon endroit idéal"; it now
+    says "lieu" in the frames. Activity 2 frame "C’est en ___ (pays)" → "C’est en /
+    au ___ (pays)", since some countries take *au* (au Canada).
+  - >-
+    Mori homework: the example "À Paris, il fait nuageux et 20 degrés" → "À Paris, le
+    ciel est nuageux et il fait 20 degrés". "Décrire le temps qu’il fera…" (future)
+    → "Décris le temps dans ta ville pour les 5 prochains jours", since the cycle
+    uses only the present. Activity 2 ("Ma semaine météo") had no message for Mori;
+    one was written. Please check.
+  - >-
+    Summary, numbers: the examples of each rule were expanded (trente, quarante,
+    cinquante, soixante; 51 and 61 with *et*; 71 = soixante-et-onze also takes *et*).
+    The *il y a* rule now says "dans le ciel" only ("ou dans l’air" removed).
+    Please confirm.
+  - >-
+    Added for students (not in the notebook): sentence frames for the warm-up
+    questions.
+  - >-
+    Vocabulary: "se promener – טיול רגל" → "לטייל ברגל"; "bon – נעים" is shown as
+    "bon (il fait bon)"; the trailing space after "dimanche" was removed.
+  - >-
+    The Quizlet link lost its tracking parameters. No activity times are given in
+    the notebook, so none are recorded.
+  - >-
+    The "Réponse de l’élève 1/2/3" lines are replaced by the optional answer boxes:
+    students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: la-meteo-classe
+    title: 'En classe : La météo'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: La météo
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: La description
+            description: '*Il fait*, *il y a*, *c’est* et la place de l’adjectif'
+          - name: Les nombres
+            description: Les nombres de 0 à 99 pour dire la température
+      - id: quizlet
+        type: externalLink
+        label: La météo sur Quizlet
+        url: https://quizlet.com/il/1074278667/basic-french-2025-la-meteo-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. J’aime les journées ensoleillées / pluvieuses parce que ___.
+        example: Je m’appelle Lévanah. J’aime les journées ensoleillées parce que j’aime me promener.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Tu préfères quand il fait chaud ou quand il fait froid ? Pourquoi ?
+            frame: Je préfère quand il fait ___ parce que ___.
+          - question: Quel temps fait-il aujourd’hui à ___ ? Quelle est la température là-bas ?
+            frame: Aujourd’hui, à ___, il fait ___. Il fait ___ degrés.
+          - question: Tu préfères les activités en intérieur ou en extérieur ? Pourquoi ?
+            frame: Je préfère les activités en ___ parce que ___.
+          - question: Que fais-tu quand il fait froid ?
+            frame: Quand il fait froid, je ___.
+          - question: Que fais-tu quand il fait chaud ?
+            frame: Quand il fait chaud, je ___.
+          - question: Quelle est ta saison préférée ? Pourquoi ?
+            frame: Ma saison préférée est ___ parce que ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : le bulletin météo'
+        skills: [Les nombres]
+        steps:
+          - Regarde le bulletin météo que partage ton professeur.
+          - 'Le professeur pose une question : « Quel temps fait-il lundi ? »'
+          - Après ta réponse, pose la même question à un ou une camarade, pour un autre jour.
+        example: '— Quel temps fait-il lundi ? — Lundi, il fait beau. Il fait vingt-cinq degrés.'
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : tant de villes, tant de climats'
+        skills: [La description, Les nombres]
+        steps:
+          - Choisis une ville dans un pays francophone et complète les phrases ci-dessous.
+          - Présente ta ville au groupe.
+        example: |-
+          *La ville que je choisis est Marseille.*
+          *C’est en France.*
+          *J’aime cette ville car il y a de belles plages et un climat méditerranéen.*
+          *À Marseille, il fait généralement beau.*
+          *La température maximale est de 30 degrés.*
+          *La température minimale est de 17 degrés.*
+          *Ce temps est idéal pour aller à la plage et se promener.*
+      - id: act2-city
+        type: discussionQuestions
+        title: Ma ville
+        items:
+          - question: La ville que je choisis est ___ (ville).
+          - question: C’est en / au ___ (pays).
+          - question: J’aime / Je n’aime pas cette ville parce que ___.
+          - question: À ___, il fait généralement chaud / froid.
+          - question: La température maximale est de ___ (nombre) degrés.
+          - question: La température minimale est de ___ (nombre) degrés.
+          - question: Ce temps est idéal pour ___ (verbe à l’infinitif).
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : simulation télé – Météo dans le monde'
+        skills: [La description, Les nombres]
+        steps:
+          - Un élève est **le présentateur** ; les autres sont **les journalistes**, chacun dans une ville différente.
+          - Le présentateur ouvre l’émission et appelle un journaliste.
+          - Le journaliste répond, puis le présentateur réagit.
+          - Un autre élève parle comme journaliste dans une nouvelle ville. Le présentateur répond à chaque journaliste.
+          - Le présentateur termine l’émission.
+      - id: act3-script
+        type: dialogue
+        lines:
+          - speaker: Présentateur
+            text: Bonjour à tous ! Bienvenue à *Météo dans le monde*. Je suis ___ (nom), en direct du studio. Regardons ensemble la météo dans différents pays. Tout d’abord, allons à ___ (ville). Notre journaliste ___ (nom) est sur place. ___ (nom), quel temps fait-il ?
+          - speaker: Journaliste
+            text: Bonjour de ___ (ville) ! Aujourd’hui, le temps est ___ (ensoleillé / pluvieux / froid / nuageux / chaud). La température maximale est de ___ (nombre) degrés. La température minimale est de ___ (nombre) degrés. C’est une journée parfaite pour ___ (aller au parc, manger une glace, regarder un film…).
+          - speaker: Présentateur
+            text: Waouh ! Il fait ___ (froid / chaud / très beau) ! Merci, ___ (nom du journaliste). Maintenant, nous allons dans une autre ville.
+          - speaker: Présentateur
+            text: C’est tout pour aujourd’hui dans *Météo dans le monde*. Profitez du beau temps. À la prochaine !
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : mon lieu idéal'
+        skills: [La description]
+        steps:
+          - C’est le moment de rêver un peu ! Complète les phrases ci-dessous.
+          - Présente ton lieu idéal au groupe.
+        example: |-
+          *Mon lieu idéal se trouve à la montagne.*
+          *Il fait frais là-bas.*
+          *Les journées sont souvent nuageuses et parfois ensoleillées.*
+          *Cet endroit est en extérieur.*
+          *Il y a un grand lac, un chalet douillet et une belle forêt.*
+          *Mon chien m’accompagne dans mon lieu idéal tous les week-ends.*
+      - id: act4-place
+        type: discussionQuestions
+        title: Mon lieu idéal
+        items:
+          - question: Mon lieu idéal se trouve ___.
+          - question: Il fait ___ là-bas (chaud / froid / frais / bon).
+          - question: Les journées sont ___ (ensoleillées / pluvieuses / nuageuses).
+          - question: C’est ___ (en extérieur / en intérieur).
+          - question: Il y a un ___, un ___ et un ___.
+          - question: Mon / Ma ___ m’accompagne dans mon lieu idéal tous les ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **la description** (Activités 2, 3 et 4) et
+          **les nombres** (Activités 1, 2 et 3).
+      - id: n-intro
+        anchor: intro
+        text: Donne ton propre exemple d’abord, puis demande à chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Partage à l’écran l’image du bulletin météo de la semaine (jours, temps et
+          températures). L’image du cahier n’est pas encore sur la plateforme. Commence
+          par « Quel temps fait-il lundi ? » ; l’élève qui répond pose la question
+          suivante à un camarade, pour un autre jour.
+      - id: n-act2
+        anchor: act2
+        text: Laisse quelques minutes pour choisir la ville et compléter les phrases, puis chaque élève présente sa ville.
+      - id: n-act3
+        anchor: act3
+        text: Change de journaliste à chaque ville pour que tout le monde parle.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: la-meteo-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Résumé de la leçon
+      - id: rules-description
+        type: ruleSummary
+        skill: La description
+        rules:
+          - text: >-
+              **Il fait** : en français, on utilise souvent le verbe *faire* pour parler
+              du temps qu’il fait et de la température. Attention : ici, *il* ne désigne
+              pas une personne.
+            examples: [Il fait beau., Il fait chaud., Il fait froid., Il fait 20 degrés.]
+          - text: 'Attention aux verbes comme *pleuvoir* ou *neiger* : on dit **il pleut**, **il neige**.'
+          - text: '**Il y a** : pour parler de quelque chose qui existe, qui est présent dans le ciel. On l’utilise souvent avec des choses concrètes (soleil, pluie, brouillard…).'
+            examples: [Il y a du soleil., Il y a des nuages., Il y a du vent.]
+          - text: '**C’est** : pour décrire le temps comme avec un adjectif, ou pour donner une opinion.'
+            examples: [C’est une belle journée., C’est une journée ensoleillée.]
+          - text: 'En général, l’adjectif se place **après** le nom. Les couleurs sont toujours **après** le nom.'
+            examples:
+              [
+                Un ciel **bleu**.,
+                Une journée **ensoleillée**.,
+                Un temps **orageux**.,
+                Un vent **fort**.,
+              ]
+          - text: 'Certains adjectifs courts ou très courants se placent **avant** le nom : *beau, mauvais, bon, petit, grand, nouveau, vieux…*'
+            examples:
+              [
+                Un **beau** soleil.,
+                Un **mauvais** temps.,
+                Une **petite** pluie.,
+                Un **grand** froid.,
+              ]
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Les nombres
+        rules:
+          - text: Apprends par cœur les nombres de 0 à 20.
+            examples:
+              - 'zéro, un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix'
+              - 'onze, douze, treize, quatorze, quinze, seize, dix-sept, dix-huit, dix-neuf, vingt'
+          - text: 'De 30 à 60, les dizaines se terminent par **-ente** ou **-ante**.'
+            examples: ['30 trente · 40 quarante · 50 cinquante · 60 soixante']
+          - text: 'On ajoute le mot **et** avant *un* (21, 31, 41, 51, 61) et dans 71 (soixante-et-onze), **sauf** pour 81 et 91.'
+            examples:
+              - 21 = vingt-et-un · 31 = trente-et-un · 41 = quarante-et-un
+              - 71 = soixante-et-onze
+              - 81 = quatre-vingt-un · 91 = quatre-vingt-onze
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: >-
+          Révise les deux compétences avec le groupe et demande un nouvel exemple pour
+          chaque règle. Les deux orthographes « vingt-et-un » et « vingt et un » sont
+          correctes.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: la-meteo-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie ce message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-meteo
+        type: aiTutorPrompt
+        title: Parler de la météo
+        message: >-
+          Bonjour Mori ! Je veux parler de la météo. Peux-tu me poser des questions
+          simples sur le climat en utilisant les nombres et des phrases descriptives ?
+          Utilise seulement le présent et corrige mes erreurs, s’il te plaît.
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Activités interactives
+      - id: mori-monde
+        type: aiTutorPrompt
+        title: 'Activité 1 : la météo autour du monde'
+        intro: Raconte à Mori le temps qu’il fait aujourd’hui dans trois villes ou pays. Donne la température et décris le temps.
+        message: |-
+          Bonjour Mori ! Voici la météo aujourd’hui dans trois villes :
+          À ___, ___. La température est de ___ degrés.
+          À ___, ___. La température est de ___ degrés.
+          À ___, ___. La température est de ___ degrés.
+          Corrige mes erreurs, s’il te plaît. Ensuite, peux-tu me dire quel temps il fait aujourd’hui dans trois lieux différents ? Utilise des nombres et des phrases complètes.
+      - id: example-monde
+        type: callout
+        tone: tip
+        title: Exemple
+        text: |-
+          *À Tel-Aviv, il fait beau. La température est de 30 degrés.*
+          *À Paris, le ciel est nuageux et il fait 20 degrés.*
+          *À New York, il pleut beaucoup en juillet.*
+      - id: mori-semaine
+        type: aiTutorPrompt
+        title: 'Activité 2 : ma semaine météo'
+        intro: Décris le temps dans ta ville pour les 5 prochains jours. Utilise les jours de la semaine et la température.
+        message: |-
+          Bonjour Mori ! Voici la météo de ma semaine à ___ :
+          Lundi, ___. Il fait ___ degrés.
+          Mardi, ___. Il fait ___ degrés.
+          Mercredi, ___. Il fait ___ degrés.
+          Jeudi, ___. Il fait ___ degrés.
+          Vendredi, ___. Il fait ___ degrés.
+          Corrige mes erreurs, s’il te plaît, et pose-moi des questions sur ma semaine.
+      - id: example-semaine
+        type: callout
+        tone: tip
+        title: Exemple
+        text: |-
+          *Lundi, il fait chaud. Il fait 34 degrés.*
+          *Mardi, il y a du vent et il fait froid. Il fait 18 degrés.*
+          *Mercredi, le ciel est nuageux. Il fait 25 degrés.*
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: la-meteo-pratique
+    book: workbook
+    title: 'Pratique : La météo'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux essayer encore.
+      - id: ex-description
+        type: activity
+        activity: la-meteo-description
+      - id: ex-nombres
+        type: activity
+        activity: la-meteo-nombres
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: la-meteo-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la météo
+        glossLang: he
+        link: https://quizlet.com/il/1074278667/basic-french-2025-la-meteo-flash-cards/
+        items: &la-meteo-words
+          - { term: ensoleillé, gloss: שמשי }
+          - { term: pluvieux, gloss: גשום }
+          - { term: nuageux, gloss: מעונן }
+          - { term: froid, gloss: קר }
+          - { term: chaud, gloss: חם }
+          - { term: frais, gloss: קריר }
+          - { term: bon (il fait bon), gloss: נעים }
+          - { term: météo, gloss: מזג אוויר }
+          - { term: température, gloss: טמפרטורה }
+          - { term: maximum, gloss: מקסימום }
+          - { term: minimum, gloss: מינימום }
+          - { term: ville, gloss: עיר }
+          - { term: pays, gloss: ארץ / מדינה }
+          - { term: saison, gloss: עונה }
+          - { term: été, gloss: קיץ }
+          - { term: hiver, gloss: חורף }
+          - { term: printemps, gloss: אביב }
+          - { term: automne, gloss: סתיו }
+          - { term: aller au parc, gloss: ללכת לפארק }
+          - { term: manger une glace, gloss: לאכול גלידה }
+          - { term: regarder un film, gloss: לראות סרט }
+          - { term: faire du toboggan, gloss: להתגלש }
+          - { term: nager, gloss: לשחות }
+          - { term: se promener, gloss: לטייל ברגל }
+          - { term: plage, gloss: חוף ים }
+          - { term: montagne, gloss: הר }
+          - { term: lundi, gloss: יום שני }
+          - { term: mardi, gloss: יום שלישי }
+          - { term: mercredi, gloss: יום רביעי }
+          - { term: jeudi, gloss: יום חמישי }
+          - { term: vendredi, gloss: יום שישי }
+          - { term: samedi, gloss: שבת }
+          - { term: dimanche, gloss: יום ראשון }
+
+vocabulary:
+  - slug: la-meteo
+    title: La météo
+    items: *la-meteo-words
+
+activities:
+  - slug: la-meteo-description
+    title: La description
+    minutes: 8
+    items:
+      - id: il-fait-chaud
+        type: multipleChoice
+        prompt: Aujourd’hui, ___ chaud.
+        options:
+          - { text: il fait, correct: true }
+          - {
+              text: il est,
+              feedback: 'Pour la météo, on utilise le verbe *faire* : il fait chaud.',
+            }
+          - {
+              text: il y a,
+              feedback: '*Il y a* va avec une chose (du soleil, des nuages). Avec *chaud* : il fait chaud.',
+            }
+      - id: il-y-a-nuages
+        type: multipleChoice
+        prompt: ___ des nuages.
+        options:
+          - { text: Il y a, correct: true }
+          - {
+              text: Il fait,
+              feedback: 'Avec une chose concrète dans le ciel (nuages, soleil, vent), on utilise *il y a*.',
+            }
+          - {
+              text: C’est,
+              feedback: '*C’est* va avec un adjectif ou une opinion. Avec *des nuages* : il y a.',
+            }
+      - id: il-personne
+        type: trueFalse
+        prompt: 'Dans *il pleut*, le pronom *il* désigne une personne.'
+        answer: false
+        feedback:
+          correct: Bravo ! Pour la météo, *il* ne désigne pas une personne.
+          incorrect: 'Pour la météo (*il pleut, il fait beau*), *il* ne désigne pas une personne.'
+      - id: cest-fait
+        type: fillBlank
+        prompt: Complète avec *c’est* ou *fait*.
+        text: ___ une journée ensoleillée. Il ___ 25 degrés.
+        blanks: [[c’est, c'est], [fait]]
+        wordBank: [c’est, fait]
+      - id: place-adjectif
+        type: multipleChoice
+        prompt: Quelle expression est correcte ?
+        options:
+          - { text: Un beau soleil, correct: true }
+          - {
+              text: Un soleil beau,
+              feedback: '*Beau* est court et très courant : il se place avant le nom.',
+            }
+          - {
+              text: Une ensoleillée journée,
+              feedback: '*Ensoleillée* se place après le nom : une journée ensoleillée.',
+            }
+      - id: temps-journee
+        type: matching
+        prompt: Associe chaque phrase à la bonne description.
+        pairs:
+          - [Il y a du soleil., C’est une journée ensoleillée.]
+          - [Il pleut., C’est une journée pluvieuse.]
+          - [Il y a des nuages., C’est une journée nuageuse.]
+          - [Il fait froid et il neige., C’est l’hiver.]
+      - id: ordre-marseille
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Il fait beau à Marseille.
+      - id: pleuvoir-neiger
+        type: fillBlank
+        prompt: Complète avec le verbe entre parenthèses au présent.
+        text: À Paris, il ___ (pleuvoir). À la montagne, il ___ (neiger).
+        blanks: [[pleut], [neige]]
+
+  - slug: la-meteo-nombres
+    title: Les nombres
+    minutes: 8
+    items:
+      - id: dizaines
+        type: matching
+        prompt: Associe chaque nombre à son nom.
+        pairs:
+          - ['21', vingt-et-un]
+          - ['31', trente-et-un]
+          - ['40', quarante]
+          - ['50', cinquante]
+          - ['60', soixante]
+      - id: quatre-vingt-un
+        type: multipleChoice
+        prompt: Comment écrit-on 81 ?
+        options:
+          - { text: quatre-vingt-un, correct: true }
+          - {
+              text: quatre-vingt-et-un,
+              feedback: 'On ajoute *et* avant *un*, **sauf** pour 81 : quatre-vingt-un.',
+            }
+          - {
+              text: quatre-vingt-onze,
+              feedback: '*Quatre-vingt-onze*, c’est 91 (80 + 11). 81 = quatre-vingt-un.',
+            }
+      - id: quatre-vingt-onze
+        type: multipleChoice
+        prompt: Comment écrit-on 91 ?
+        options:
+          - { text: quatre-vingt-onze, correct: true }
+          - { text: quatre-vingt-et-onze, feedback: 'Pas de *et* pour 91 : quatre-vingt-onze.' }
+          - { text: quatre-vingt-dix-un, feedback: '91 = 80 + 11 : quatre-vingt-onze.' }
+      - id: trente-et-un
+        type: trueFalse
+        prompt: 'Pour 31, on ajoute le mot *et* : *trente-et-un*.'
+        answer: true
+        feedback:
+          correct: 'Bravo ! 21, 31, 41, 51 et 61 prennent *et*.'
+          incorrect: 'On ajoute *et* avant *un* : trente-et-un (31).'
+      - id: temperatures
+        type: fillBlank
+        prompt: Écris les nombres en lettres.
+        text: La température maximale est de ___ degrés (30). La température minimale est de ___ degrés (17).
+        blanks: [[trente], [dix-sept]]
+      - id: vingt-et-un
+        type: fillBlank
+        prompt: Écris le nombre en lettres.
+        text: Aujourd’hui, il fait ___ degrés (21).
+        blanks: [[vingt-et-un, vingt et un]]
+      - id: cinquante
+        type: multipleChoice
+        prompt: Comment écrit-on 50 ?
+        options:
+          - { text: cinquante, correct: true }
+          - {
+              text: cinquente,
+              feedback: '40, 50 et 60 se terminent par *-ante* : quarante, cinquante, soixante. Seul 30 se termine par *-ente* : trente.',
+            }
+          - { text: cinqante, feedback: 'Attention à l’orthographe : cinquante, avec *qu*.' }
+      - id: ordre-degres
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Il fait vingt degrés à Paris.

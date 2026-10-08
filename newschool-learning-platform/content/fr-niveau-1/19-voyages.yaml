@@ -1,0 +1,580 @@
+# Cycle "Voyages", converted from the French digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: voyages
+title: Voyages
+goal: Parler de voyages en posant des questions et en donnant des directions.
+position: 19
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Poser des questions" and "Donner des directions")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Corrections: "Préféres-tu" → "Préfères-tu" (warm-up questions 2 and 3); the
+    introduction frame "Je veux partir [destination]" → "Je veux partir à / en ___";
+    Activity 1 "Des vêtements ." → "Des vêtements."; "Faire sa valise / emballer":
+    "emballer" means to wrap, not to pack a suitcase, so the term is now "Faire sa
+    valise".
+  - >-
+    Warm-up questions 4–6 had no answer frame; simple frames were added ("Pendant
+    les vacances, je visite ___." etc.). Please confirm.
+  - >-
+    The roulette link (Activity 5) is only the wheelofnames.com home page, not a
+    ready wheel. The teacher enters the roulette questions (see the teacher note);
+    please replace it with a saved wheel link.
+  - >-
+    The notebook says the questions skill is practised in Activity 1 or 2 and the
+    directions skill in Activity 3 or 4. Activity 4 has no directions in its steps
+    (only questions); the plan note says so. Please confirm or add a directions step.
+  - >-
+    Vocabulary glosses changed: "Voyager" לטייל → לנסוע / לטייל; "Voyage" טיול →
+    נסיעה / טיול; "Agence" → "Agence de voyages" (the gloss was already סוכנות
+    נסיעות); "Climat" מזג אוויר → אקלים (weather is "le temps" / "la météo").
+    The Quizlet link is kept without its tracking parameters (?i=…&x=…).
+  - >-
+    The Mori "Pratique supplémentaire" activities had no message to send; each is
+    written as a short message to Mori built from the notebook's instructions.
+  - >-
+    The source gives no activity times, so none is given. The "Réponse de l'élève
+    1/2/3" lines are replaced by the optional answer boxes: students may type, and
+    the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: voyages-classe
+    title: 'Classe : Voyages'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Voyages
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Poser des questions et y répondre
+            description: '*Qu’est-ce que, quel / quelle, où, quand, qui, pourquoi, comment, combien*'
+          - name: Donner des directions
+            description: '*Va / Allez tout droit, tourne / tournez à gauche, à côté de, en face de*'
+      - id: quizlet
+        type: externalLink
+        label: Voyages sur Quizlet
+        url: https://quizlet.com/il/1076531838/basic-french-2025-voyages-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Je veux partir à / en ___.
+        example: Je m’appelle Lévanah. Je veux partir à New York.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Où aimes-tu voyager ? Pourquoi ?
+            frame: J’aime voyager à / en / au ___ parce que ___.
+          - question: Préfères-tu une destination chaude ou froide ? Pourquoi ?
+            frame: Je préfère une destination ___ parce que ___.
+          - question: Préfères-tu voyager seul(e) ou avec des gens ? Pourquoi ?
+            frame: Je préfère ___ parce que ___.
+          - question: Quels lieux visites-tu pendant les vacances ?
+            frame: Pendant les vacances, je visite ___.
+          - question: Quelles activités aimes-tu faire quand tu voyages ?
+            frame: Quand je voyage, j’aime ___.
+          - question: Qu’aimes-tu manger quand tu voyages ?
+            frame: Quand je voyage, j’aime manger ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Devine la question'
+        skills: [Poser des questions et y répondre]
+        steps:
+          - Lis la réponse.
+          - Devine la question qui correspond.
+        example: |-
+          *Réponse : En juillet.*
+          *→ Question : Quand pars-tu en vacances ?*
+      - id: act1-answers
+        type: discussionQuestions
+        title: Quelle est la question ?
+        items:
+          - question: 'Réponse : *À la plage.*'
+            frame: ___ ?
+          - question: 'Réponse : *Des vêtements.*'
+            frame: ___ ?
+          - question: 'Réponse : *Avec mes amis.*'
+            frame: ___ ?
+          - question: 'Réponse : *Parce que j’aime découvrir le monde.*'
+            frame: ___ ?
+          - question: 'Réponse : *En avion.*'
+            frame: ___ ?
+          - question: 'Réponse : *Paris.*'
+            frame: ___ ?
+          - question: 'Réponse : *Un appareil photo.*'
+            frame: ___ ?
+          - question: 'Réponse : *Dans un hôtel.*'
+            frame: ___ ?
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : L’enquête'
+        skills: [Poser des questions et y répondre]
+        steps:
+          - Travaillez en binômes.
+          - Choisissez une **destination où vous n’êtes jamais allés** et faites une petite recherche.
+          - Répondez aux questions ci-dessous.
+          - Présentez vos résultats à la classe.
+      - id: act2-questions
+        type: discussionQuestions
+        title: Notre destination
+        items:
+          - question: Quelle est la nourriture la plus populaire à ___ ?
+          - question: Où est le meilleur endroit pour se loger à ___ ?
+          - question: Quelle est la meilleure période de l’année pour visiter ___ ?
+          - question: Quelles attractions ne faut-il pas manquer à ___ ?
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 (optionnelle) : L’agence de voyages'
+        skills: [Poser des questions et y répondre, Donner des directions]
+        steps:
+          - Travaillez en binômes. Un élève est le voyageur, l’autre est l’agent de voyages.
+          - Le voyageur pose les questions ci-dessous.
+          - L’agent répond avec des idées créatives et des phrases de **directions**.
+          - Échangez les rôles, puis partagez vos expériences avec le groupe.
+      - id: act3-questions
+        type: discussionQuestions
+        title: Les questions du voyageur
+        items:
+          - question: Où dois-je aller ?
+          - question: Que puis-je manger là-bas ?
+          - question: Que dois-je emporter ?
+          - question: Comment puis-je aller à la plage ?
+            frame: Allez tout droit, puis tournez à ___. La plage est à côté de ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Mon compagnon de voyage'
+        skills: [Poser des questions et y répondre]
+        steps:
+          - Travaillez en binômes. Pose les questions ci-dessous à ton partenaire et réponds à ses questions.
+          - Après 3 minutes, ton professeur change les binômes. On recommence.
+          - En classe entière, partage ce que tu as en commun avec tes camarades et, si possible, choisis ton « compagnon de voyage idéal ».
+      - id: act4-questions
+        type: discussionQuestions
+        title: Questions
+        items:
+          - question: Où veux-tu partir ?
+            frame: Je veux partir à / en ___.
+          - question: Que mets-tu dans ta valise ?
+            frame: Dans ma valise, je mets ___.
+          - question: Que manges-tu quand tu voyages ?
+            frame: Quand je voyage, je mange ___.
+          - question: Voyages-tu en famille ou avec des amis ?
+            frame: Je voyage ___.
+      - id: act5
+        type: classActivity
+        title: 'Activité 5 : La roulette voyageuse'
+        skills: [Poser des questions et y répondre]
+        steps:
+          - Tourne la roulette et réponds à la question.
+          - Si tu tombes sur un espace vide, **invente une question** pour un autre élève.
+        example: |-
+          Exemples de questions inventées :
+          *Quelle musique écoutes-tu quand tu voyages ?*
+          *Quelle boisson achètes-tu en vacances ?*
+        resource:
+          label: La roulette voyageuse
+          url: https://wheelofnames.com/
+      - id: act5-questions
+        type: discussionQuestions
+        title: Questions de la roulette
+        items:
+          - question: Où veux-tu partir ?
+          - question: Avec qui voyages-tu généralement ?
+          - question: Que mets-tu dans ta valise ?
+          - question: Que manges-tu quand tu voyages ?
+          - question: Quel moyen de transport utilises-tu quand tu voyages ?
+          - question: Préfères-tu une destination chaude ou froide ?
+          - question: Quels lieux visites-tu pendant les vacances ?
+          - question: Où dors-tu quand tu voyages ?
+          - question: Que fais-tu à la plage ?
+          - question: Que fais-tu en ville ?
+          - question: Quelle activité aimes-tu faire pendant les vacances ?
+          - question: Quel souvenir achètes-tu quand tu voyages ?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **Poser des questions et y répondre**
+          (Activité 1 ou 2) et **Donner des directions** (Activité 3 ou 4). L’Activité 3
+          est optionnelle. Attention : l’Activité 4 ne contient que des questions ; pour
+          les directions, demande aux élèves d’expliquer aussi le chemin vers un lieu
+          de leur destination. L’Activité 5 est une révision des questions.
+      - id: n-intro
+        anchor: intro
+        text: Donne ton exemple d’abord, puis demande à chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1-answers
+        text: >-
+          Réponses : À la plage → Où vas-tu en été ? · Des vêtements → Que mets-tu dans
+          ta valise pour un voyage ? · Avec mes amis → Avec qui voyages-tu ? · Parce que
+          j’aime découvrir le monde → Pourquoi voyages-tu ? · En avion → Comment
+          voyages-tu pour aller dans un autre pays ? · Paris → Où veux-tu aller ? · Un
+          appareil photo → Qu’emportes-tu quand tu voyages ? · Dans un hôtel → Où
+          dors-tu quand tu voyages ?
+      - id: n-act4
+        anchor: act4
+        text: Change les binômes toutes les 3 minutes, deux fois.
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Le lien ouvre la page d’accueil de Wheel of Names : entre les questions de la
+          roulette (et un ou deux espaces vides) avant le cours, puis partage la roue à
+          l’écran et fais-la tourner pour chaque élève.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: voyages-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-questions
+        type: ruleSummary
+        skill: Poser des questions et y répondre
+        rules:
+          - text: 'Les mots interrogatifs les plus courants : **qu’est-ce que, quel / quelle, où, quand, qui, est-ce que, pourquoi, comment, combien**.'
+          - text: 'Structure : **mot interrogatif + sujet + verbe**.'
+            examples:
+              - Qu’est-ce que tu fais pendant les vacances ?
+          - text: 'Structure : **mot interrogatif + verbe + sujet** (langage plus soutenu).'
+            examples:
+              - Où dors-tu quand tu voyages ?
+          - text: 'Questions négatives : ajoute **ne + verbe + pas** (*ne* devient *n’* devant une voyelle).'
+            examples:
+              - Qu’est-ce que tu n’aimes pas faire en vacances ?
+      - id: rules-directions
+        type: ruleSummary
+        skill: Donner des directions
+        rules:
+          - text: Utilise des phrases courtes et claires.
+            examples:
+              - Va tout droit.
+              - Tourne à gauche.
+              - Marche 100 mètres.
+          - text: 'Attention : en français, quand on ne connaît pas la personne, on utilise le vouvoiement (**vous**).'
+            examples:
+              - Allez tout droit.
+              - Tournez à gauche.
+              - Marchez 100 mètres.
+          - text: Utilise des repères.
+            examples:
+              - À côté de…
+              - En face de…
+              - À droite / à gauche.
+          - text: Donne des instructions claires, étape par étape.
+            examples:
+              - D’abord, tournez à gauche.
+              - Ensuite, continuez tout droit.
+      - id: directions-table
+        type: table
+        caption: Tu ou vous ?
+        header: [Avec un ami (tu), Avec une personne qu’on ne connaît pas (vous)]
+        rows:
+          - [Va tout droit., Allez tout droit.]
+          - [Tourne à gauche., Tournez à gauche.]
+          - [Marche 100 mètres., Marchez 100 mètres.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: voyages-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie ce message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-voyages
+        type: aiTutorPrompt
+        title: Parler de voyages
+        message: >-
+          Bonjour Mori, je veux pratiquer le français. Peux-tu me poser des questions sur
+          les voyages en utilisant les compétences de directions et de questions au
+          présent ? Corrige mes erreurs, s’il te plaît.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi plus de questions !**
+          Tu ne comprends pas quelque chose ? Envoie : **Peux-tu me l’expliquer en hébreu mais avec la phrase en français ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-chemin
+        type: aiTutorPrompt
+        title: Demander son chemin
+        intro: >-
+          Envoie ce message à Mori. Mori donne les directions (exemple : Va tout droit,
+          tourne à gauche, c’est à côté de la banque.). Ensuite, écris : *Maintenant,
+          pose-moi une question et je répondrai.*
+        message: >-
+          Bonjour Mori ! Je pose une question et tu me donnes les directions. Comment
+          vais-je à la gare ?
+      - id: mori-questions
+        type: aiTutorPrompt
+        title: Poser des questions sur les voyages
+        intro: >-
+          Envoie ce message à Mori. Mori pose une question sur ta phrase (exemple : Je
+          voyage en avion. → Comment voyages-tu ?). Ensuite, écris une nouvelle phrase.
+        message: >-
+          Bonjour Mori ! J’écris une phrase sur les voyages et tu poses une question avec
+          un mot interrogatif. Voici ma phrase : Je voyage en avion.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: voyages-pratique
+    book: workbook
+    title: 'Pratique : Voyages'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-questions
+        type: activity
+        activity: voyages-questions
+      - id: ex-directions
+        type: activity
+        activity: voyages-directions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: voyages-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots du voyage
+        glossLang: he
+        link: https://quizlet.com/il/1076531838/basic-french-2025-voyages-flash-cards/
+        items: &voyages-words
+          - { term: Voyager, gloss: לנסוע / לטייל }
+          - { term: Voyage, gloss: נסיעה / טיול }
+          - { term: Vacances, gloss: חופשה }
+          - { term: Destination, gloss: יעד }
+          - { term: Lieux, gloss: מקומות }
+          - { term: Activités, gloss: פעילויות }
+          - { term: Manger, gloss: לאכול }
+          - { term: Valise, gloss: מזוודה }
+          - { term: Transport, gloss: תחבורה }
+          - { term: Plage, gloss: חוף }
+          - { term: Ville, gloss: עיר }
+          - { term: Hôtel, gloss: מלון }
+          - { term: Souvenir, gloss: מזכרת }
+          - { term: Appareil photo, gloss: מצלמה }
+          - { term: Avion, gloss: מטוס }
+          - { term: Famille, gloss: משפחה }
+          - { term: Amis, gloss: חברים }
+          - { term: Questions, gloss: שאלות }
+          - { term: Réponses, gloss: תשובות }
+          - { term: Agence de voyages, gloss: סוכנות נסיעות }
+          - { term: Directions, gloss: הוראות דרך }
+          - { term: Gauche, gloss: שמאלה }
+          - { term: Droite, gloss: ימינה }
+          - { term: Tout droit, gloss: ישר }
+          - { term: Rue, gloss: רחוב }
+          - { term: Carte / plan, gloss: מפה }
+          - { term: Gare, gloss: תחנת רכבת }
+          - { term: Banque, gloss: בנק }
+          - { term: Musée, gloss: מוזיאון }
+          - { term: Restaurant, gloss: מסעדה }
+          - { term: Découvrir, gloss: לגלות }
+          - { term: Faire sa valise, gloss: לארוז }
+          - { term: Dormir, gloss: לישון }
+          - { term: Climat, gloss: אקלים }
+          - { term: Chaud, gloss: חם }
+          - { term: Froid, gloss: קר }
+          - { term: Boire, gloss: לשתות }
+          - { term: Musique, gloss: מוזיקה }
+          - { term: Poser une question, gloss: לשאול שאלה }
+
+vocabulary:
+  - slug: voyages
+    title: Voyages
+    items: *voyages-words
+
+activities:
+  - slug: voyages-questions
+    title: 'Poser des questions : où, quand, comment, pourquoi'
+    minutes: 8
+    items:
+      - id: quand-pars
+        type: multipleChoice
+        prompt: '___ pars-tu en vacances ? — En juillet.'
+        options:
+          - { text: Quand, correct: true }
+          - {
+              text: Où,
+              feedback: '*Où* demande un lieu. *En juillet* est un moment : utilise *quand*.',
+            }
+          - {
+              text: Qui,
+              feedback: '*Qui* demande une personne. *En juillet* est un moment : utilise *quand*.',
+            }
+      - id: avec-qui
+        type: multipleChoice
+        prompt: '___ voyages-tu ? — Avec mes amis.'
+        options:
+          - { text: Avec qui, correct: true }
+          - {
+              text: Où,
+              feedback: '*Où* demande un lieu. *Avec mes amis* parle de personnes : utilise *avec qui*.',
+            }
+          - {
+              text: Pourquoi,
+              feedback: '*Pourquoi* demande une raison (réponse : *parce que…*). Ici on parle de personnes : *avec qui*.',
+            }
+      - id: pourquoi
+        type: multipleChoice
+        prompt: 'Réponse : *Parce que j’aime découvrir le monde.* Quelle est la question ?'
+        options:
+          - { text: Pourquoi voyages-tu ?, correct: true }
+          - {
+              text: Comment voyages-tu ?,
+              feedback: '*Comment* demande la manière (*en avion*). Une réponse avec *parce que* répond à *pourquoi*.',
+            }
+          - {
+              text: Quand voyages-tu ?,
+              feedback: '*Quand* demande un moment. Une réponse avec *parce que* répond à *pourquoi*.',
+            }
+      - id: comment-ou
+        type: fillBlank
+        prompt: Complète avec *comment* ou *où*.
+        text: '___ voyages-tu ? — En avion. ___ dors-tu ? — Dans un hôtel.'
+        blanks: [[Comment, comment], [Où, où]]
+        wordBank: [Comment, Où]
+      - id: associe
+        type: matching
+        prompt: Associe chaque question à sa réponse.
+        pairs:
+          - [Quand pars-tu en vacances ?, En juillet.]
+          - [Où vas-tu en été ?, À la plage.]
+          - [Qu’emportes-tu quand tu voyages ?, Un appareil photo.]
+          - [Avec qui voyages-tu ?, Avec mes amis.]
+          - [Comment voyages-tu ?, En avion.]
+      - id: negative-vf
+        type: trueFalse
+        prompt: 'Cette question négative est correcte : *Qu’est-ce que tu n’aimes pas faire en vacances ?*'
+        answer: true
+        feedback:
+          correct: 'Bravo ! On met *ne* (*n’* devant une voyelle) avant le verbe et *pas* après : *tu n’aimes pas*.'
+          incorrect: 'Elle est correcte : *ne* (*n’* devant une voyelle) + verbe + *pas* : *tu n’aimes pas*.'
+      - id: negative
+        type: multipleChoice
+        prompt: Qu’est-ce que tu ___ faire en vacances ?
+        options:
+          - { text: n’aimes pas, correct: true }
+          - {
+              text: ne aimes pas,
+              feedback: 'Devant une voyelle, *ne* devient *n’* : *tu n’aimes pas*.',
+            }
+          - {
+              text: pas aimes,
+              feedback: 'La négation a deux mots autour du verbe : *ne* (*n’*) + verbe + *pas* : *tu n’aimes pas*.',
+            }
+      - id: ordonne-question
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre pour faire une question.
+        sentence: Où dors-tu quand tu voyages ?
+
+  - slug: voyages-directions
+    title: 'Donner des directions : tu ou vous ?'
+    minutes: 8
+    items:
+      - id: va-ami
+        type: multipleChoice
+        prompt: 'Tu parles à ton ami : « ___ tout droit. »'
+        options:
+          - { text: Va, correct: true }
+          - {
+              text: Allez,
+              feedback: '*Allez* est pour une personne qu’on ne connaît pas (*vous*). Avec un ami, on dit *va*.',
+            }
+          - {
+              text: Aller,
+              feedback: '*Aller* est l’infinitif. Pour donner une direction à un ami, on dit *va*.',
+            }
+      - id: tournez-inconnu
+        type: multipleChoice
+        prompt: 'Tu parles à une personne que tu ne connais pas : « ___ à gauche. »'
+        options:
+          - { text: Tournez, correct: true }
+          - {
+              text: Tourne,
+              feedback: '*Tourne* est pour un ami (*tu*). Avec une personne qu’on ne connaît pas, on dit *tournez*.',
+            }
+          - {
+              text: Tourner,
+              feedback: '*Tourner* est l’infinitif. Avec une personne qu’on ne connaît pas, on dit *tournez*.',
+            }
+      - id: tu-vous
+        type: matching
+        prompt: Associe la forme avec *tu* à la forme avec *vous*.
+        pairs:
+          - [Va, Allez]
+          - [Tourne, Tournez]
+          - [Marche, Marchez]
+          - [Continue, Continuez]
+      - id: etapes
+        type: fillBlank
+        prompt: Complète avec *d’abord* et *ensuite*.
+        text: ___, tournez à gauche. ___, continuez tout droit.
+        blanks: [[D’abord, "D'abord", d’abord, "d'abord"], [Ensuite, ensuite]]
+        wordBank: [D’abord, Ensuite]
+      - id: marchez-vf
+        type: trueFalse
+        prompt: '*Marchez 100 mètres* est une phrase pour une personne qu’on ne connaît pas.'
+        answer: true
+        feedback:
+          correct: 'Bravo ! *Marchez* va avec *vous* : on l’utilise avec une personne qu’on ne connaît pas.'
+          incorrect: 'C’est vrai : *marchez* va avec *vous*. Avec un ami, on dit *marche*.'
+      - id: en-face-de
+        type: multipleChoice
+        prompt: Que veut dire *en face de* ?
+        options:
+          - { text: ממול, correct: true }
+          - { text: ליד, feedback: '*ליד* se dit *à côté de*. *En face de* veut dire ממול.' }
+          - { text: מאחורי, feedback: '*מאחורי* se dit *derrière*. *En face de* veut dire ממול.' }
+      - id: en-face-du
+        type: fillBlank
+        prompt: Complète avec *du* ou *de la*.
+        text: La gare est en face ___ musée. Le restaurant est à côté ___ banque.
+        blanks: [[du], [de la]]
+        wordBank: [du, de la]
+      - id: ordonne-directions
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Allez tout droit et tournez à droite.

@@ -1,0 +1,621 @@
+# Cycle "Comment se relaxer", converted from the French digital notebook
+# ("Cahier digital 2026 – français niveau 1"; docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: comment-se-relaxer
+title: Comment se relaxer
+goal: Parler de la détente avec les verbes pronominaux et les phrases descriptives.
+position: 14
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Verbes pronominaux" and "Phrases descriptives") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - The source gives no activity times for this cycle, so no times are recorded.
+  - >-
+    The plan says Activities 1 and 3 practise the pronominal verbs, but they use
+    ordinary present-tense actions (je vois, j'entends, je mange; "Que fais-tu
+    quand…?"); only the warm-up and "je me sens" use pronominal verbs. Activities 1, 3
+    and 6 are tagged "Verbes pronominaux / actions". Please confirm.
+  - >-
+    Summary, pronominal verbs: a rule was ADDED on elision (me, te, se → m', t', s'
+    before a vowel or a mute h), because the source examples use it (je m'étire, tu
+    t'assieds, il s'allonge) without explaining it. The note "il faut également
+    conjuguer le pronom se" is rewritten as "le pronom change avec le sujet".
+  - >-
+    Summary, descriptive sentences: the negation rule "Ajoutez ne … pas avant et après
+    le verbe conjugué" is kept and completed with "ne → n' devant une voyelle" (l'eau
+    n'est pas froide). A short rule on the agreement of the adjective (douce / douces)
+    was added from the source examples.
+  - >-
+    Small corrections: "A quel moment" → "À quel moment"; "la présent à la classe" →
+    "la présente à la classe"; the warm-up question 4 frame "Je me relaxe ___ (le matin
+    / le soir)" → "Je me relaxe le matin / le soir."; the Hebrew words "חמשת החושים" in
+    the Activity 1 title were removed (the word "sens" is in the vocabulary).
+  - >-
+    Activity 2: the list "… quand tu étudies le français ?" etc. is written out as full
+    questions "Comment te sens-tu quand…?". A frame "Je me sens ___ parce que ___." was
+    added.
+  - >-
+    Activity 5: the Wheel of Names link in the source is the site's home page
+    (https://wheelofnames.com/), not a prepared wheel. It is kept as the activity's
+    resource; the teacher still has to create the wheel with the situations listed.
+  - >-
+    Mori, extra activity 1: "Décrivons une routine relaxante et devine ce que je fais"
+    (mixed "we" and "you") → "Je décris une routine relaxante et tu devines ce que je
+    fais." The two "Ensuite, Mori décrit… et tu devines" steps are written as second
+    messages to send ("À toi !").
+  - >-
+    Vocabulary: kept as in the source (Hebrew with niqqud). "sens" is glossed with the
+    plural "חוּשִׁים" (the French word is the same in the singular and plural).
+  - >-
+    The "Réponse de l'élève 1/2/3" lines are replaced by the optional answer boxes:
+    students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: comment-se-relaxer-classe
+    title: 'Classe : Comment se relaxer'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Comment se relaxer
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Verbes pronominaux
+            description: '*je me relaxe, tu te relaxes, il se relaxe, nous nous relaxons…*'
+          - name: Phrases descriptives
+            description: 'Sujet + *être* + adjectif : *La musique est relaxante. Les lumières sont douces.*'
+      - id: quizlet
+        type: externalLink
+        label: Se relaxer sur Quizlet
+        url: https://quizlet.com/il/1076073051/basic-french-2025-se-relaxer-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Je me relaxe avec ___.
+        example: Je m’appelle Lévanah. Je me relaxe avec un livre.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quand te sens-tu relaxé(e) ?
+            frame: Je me sens relaxé(e) quand ___.
+          - question: Quand te sens-tu stressé(e) ?
+            frame: Je me sens stressé(e) quand ___.
+          - question: Que fais-tu pour te relaxer ?
+            frame: Je ___ pour me détendre. Je le fais ___ fois par semaine.
+          - question: À quel moment de la journée te relaxes-tu ? Le matin ou le soir ?
+            frame: Je me relaxe le matin / le soir.
+          - question: Préfères-tu te relaxer à la maison ou dans la nature ? Pourquoi ?
+            frame: Je préfère ___ parce que ___.
+          - question: Que fais-tu quand tu ne peux pas dormir ?
+            frame: 'Je ___. Le / La ___ est ___. (Exemple : Je bois une tisane. La tisane est relaxante.)'
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Parler des 5 sens'
+        skills: [Verbes pronominaux / actions]
+        steps:
+          - Révise le vocabulaire des cinq sens avec ton professeur.
+          - Ton professeur donne deux exemples pour chaque sens.
+          - Ensuite, chaque élève partage à son tour deux exemples.
+        example: |-
+          *Je vois un livre. Je vois une fenêtre.*
+          *J’entends de la musique. Je touche ma main.*
+          *Je sens l’odeur du café. Je mange une pomme.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Complète les phrases
+        items:
+          - question: Je vois ___ et ___.
+          - question: J’entends ___ et ___.
+          - question: Je touche ___ et ___.
+          - question: Je sens ___ et ___.
+          - question: Je mange ___ et ___.
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Comment te sens-tu quand… ?'
+        skills: [Phrases descriptives]
+        steps:
+          - Travaillez en binômes.
+          - Pose les questions ci-dessous à ton partenaire.
+          - Chaque binôme partage certaines réponses avec la classe.
+      - id: act2-questions
+        type: discussionQuestions
+        items:
+          - question: Comment te sens-tu quand tu te réveilles tôt ? Pourquoi ?
+            frame: Je me sens ___ parce que ___.
+          - question: Comment te sens-tu quand tu étudies le français ? Pourquoi ?
+            frame: Je me sens ___ parce que ___.
+          - question: Comment te sens-tu quand tu manges ton plat préféré ?
+            frame: Je me sens ___.
+          - question: Comment te sens-tu quand tu vois ton meilleur ami / ta meilleure amie ?
+            frame: Je me sens ___.
+          - question: Comment te sens-tu quand tu regardes un film drôle ?
+            frame: Je me sens ___.
+          - question: Comment te sens-tu quand tu as un examen ?
+            frame: Je me sens ___.
+          - question: Comment te sens-tu quand tu joues à un jeu ?
+            frame: Je me sens ___.
+          - question: Comment te sens-tu quand tu as faim ?
+            frame: Je me sens ___.
+          - question: Comment te sens-tu quand tu reçois un cadeau ?
+            frame: Je me sens ___.
+          - question: Comment te sens-tu quand tu es à la maison ?
+            frame: Je me sens ___.
+          - question: Comment te sens-tu quand tu écoutes de la musique ?
+            frame: Je me sens ___.
+          - question: Comment te sens-tu quand tu vas à la plage ?
+            frame: Je me sens ___.
+          - question: Comment te sens-tu quand tu parles français ?
+            frame: Je me sens ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Que fais-tu quand… ?'
+        skills: [Verbes pronominaux / actions]
+        steps:
+          - Travaillez en binômes. Pose les questions ci-dessous à ton partenaire.
+          - Note les réponses de ton partenaire.
+          - Partage avec la classe une phrase sur ton partenaire, à la troisième personne.
+        example: |-
+          *Maya mange du chocolat quand elle a faim.*
+          *Daniel écoute de la musique quand il se sent stressé.*
+          *Tomer promène son chien quand il va au parc.*
+      - id: act3-questions
+        type: discussionQuestions
+        items:
+          - question: Que fais-tu quand tu veux dormir mais tu es au travail ?
+            frame: Quand je veux dormir au travail, je ___.
+          - question: Que fais-tu quand tu te sens stressé(e) ?
+            frame: Quand je me sens stressé(e), je ___.
+          - question: Que fais-tu quand tu as faim ? Qu’est-ce que tu manges ?
+            frame: Quand j’ai faim, je mange ___.
+          - question: Que fais-tu quand tu veux te déconnecter ?
+            frame: Quand je veux me déconnecter, je ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Décris un lieu relaxant et fais-le deviner'
+        skills: [Phrases descriptives]
+        steps:
+          - Pense à un lieu relaxant. Décris trois choses que tu vois ou que tu fais dans ce lieu.
+          - Les autres élèves essaient de deviner de quel lieu il s’agit.
+          - Dis la réponse.
+          - La première personne qui devine juste décrit le lieu suivant.
+        example: |-
+          *Il y a de l’eau. Je mange une glace. Je porte un maillot de bain.*
+          *— La plage !*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Mon lieu relaxant
+        items:
+          - question: Il y a ___.
+          - question: Je ___.
+          - question: Je porte / Je vois ___.
+          - question: Quel est ce lieu ? Je pense que c’est ___.
+      - id: act5
+        type: classActivity
+        title: 'Activité 5 : La roue des émotions'
+        skills: [Phrases descriptives]
+        steps:
+          - Ton professeur fait tourner la roue et choisit un élève.
+          - Dis comment tu te sens dans cette situation, et pourquoi.
+          - '**Règle :** chaque élève donne une réponse **différente**.'
+        wordBank:
+          [
+            Se réveiller tôt,
+            Manger une pizza,
+            Écouter de la musique,
+            Aller à la plage,
+            Recevoir un cadeau,
+            Avoir un examen,
+            Regarder un film drôle,
+            Parler français,
+            Jouer à un jeu,
+            Rester à la maison un dimanche,
+          ]
+        example: |-
+          Situation : *avoir un examen*
+          *Je me sens nerveux parce que je dois beaucoup étudier.*
+          *Je me sens fatigué parce que je n’ai pas bien dormi.*
+        resource:
+          label: Roue des émotions (Wheel of Names)
+          url: https://wheelofnames.com/
+      - id: act5-sentences
+        type: discussionQuestions
+        title: Complète la phrase
+        items:
+          - question: Je me sens ___ parce que ___.
+      - id: act6
+        type: classActivity
+        title: 'Activité 6 : Mon week-end relaxant'
+        skills: [Verbes pronominaux / actions]
+        steps:
+          - Écris 3 phrases sur ce que tu fais pendant un week-end relaxant.
+          - 'Travaillez en binômes. Demande à ton partenaire : *Que fais-tu pendant un week-end relaxant ?*'
+          - Présente à la classe une phrase de ton partenaire.
+        example: |-
+          A : *Que fais-tu pendant un week-end relaxant ?*
+          B : *Je marche dans le parc et j’écoute de la musique.*
+          A : *Super ! La musique est relaxante.*
+          *Maria boit du café et regarde un film. Pierre se repose à la maison parce qu’il est fatigué.*
+      - id: act6-sentences
+        type: discussionQuestions
+        title: Mon week-end relaxant
+        items:
+          - question: Je ___. (Je dors beaucoup.)
+          - question: Je ___. (Je bois du thé.)
+          - question: J’écoute / Je regarde ___. (J’écoute de la musique calme.)
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **Verbes pronominaux** (questions
+          d’échauffement et Activité 1 ou 3) et **Phrases descriptives** (Activité 2 ou
+          4). Les Activités 5 et 6 sont des activités supplémentaires.
+      - id: n-intro
+        anchor: intro
+        text: Donne ton propre exemple d’abord, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Révise le vocabulaire des cinq sens (voir, entendre, toucher, sentir, goûter /
+          manger). Donne deux exemples pour un sens ; ensuite, chaque élève donne ses deux
+          exemples. Travaille un sens à la fois.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Si l’élève répond « je mange », il doit préciser quoi. À la fin, chaque élève
+          partage une phrase sur son partenaire à la troisième personne.
+      - id: n-act4
+        anchor: act4
+        text: La première personne qui devine juste passe à la description suivante.
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Prépare la roue avant le cours sur Wheel of Names (le lien ouvre le site, pas
+          une roue prête) avec les dix situations de la liste, puis présente-la à la
+          classe. Fais tourner la roue et choisis un élève.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: comment-se-relaxer-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-pronominaux
+        type: ruleSummary
+        skill: Verbes pronominaux
+        rules:
+          - text: 'On utilise un verbe pronominal quand **le sujet fait l’action sur lui-même**. À l’infinitif, ces verbes commencent par **se** : se relaxer, se détendre, se sentir, se reposer.'
+          - text: 'Le pronom **change avec le sujet** : me, te, se, nous, vous, se.'
+            examples:
+              [
+                Je **me** relaxe,
+                Tu **te** relaxes,
+                Il / Elle **se** relaxe,
+                Nous **nous** relaxons,
+                Vous **vous** relaxez,
+                Ils / Elles **se** relaxent,
+              ]
+          - text: 'Devant une voyelle ou un h muet, **me, te, se** deviennent **m’, t’, s’**.'
+            examples: [Je **m’**étire., Tu **t’**assieds., Il **s’**allonge.]
+          - text: Exemples dans une routine relaxante.
+            examples:
+              [
+                Je **m’étire** avant de dormir.,
+                Tu **t’assieds** dans une position confortable.,
+                Il **s’allonge** dans le hamac.,
+                Nous **nous concentrons** sur notre respiration.,
+                Ils **se baignent** dans l’eau chaude.,
+              ]
+      - id: rules-descriptives
+        type: ruleSummary
+        skill: Phrases descriptives
+        rules:
+          - text: 'On utilise les phrases descriptives pour décrire un lieu, une personne ou une situation, et pour donner des informations sur l’état ou l’apparence.'
+            examples: [L’ambiance est calme., La musique est relaxante., Les lumières sont douces.]
+          - text: 'Structure : **sujet + verbe être + adjectif ou nom**. Au singulier : **est** ; au pluriel : **sont**.'
+            examples:
+              [L’arôme est agréable., La pièce est silencieuse., Les serviettes sont douces.]
+          - text: 'L’adjectif s’accorde avec le sujet : féminin (+ **e**), pluriel (+ **s**).'
+            examples:
+              [
+                Le thé est chaud. · La tisane est chaude.,
+                La lumière est douce. · Les lumières sont douces.,
+              ]
+          - text: 'Négation : **ne** avant le verbe conjugué et **pas** après. Devant une voyelle, **ne** devient **n’**.'
+            examples:
+              [
+                L’eau **n’est pas** froide.,
+                La musique **n’est pas** forte.,
+                Les murs **ne sont pas** sombres.,
+              ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: comment-se-relaxer-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie ce message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-relaxer
+        type: aiTutorPrompt
+        title: Parler de la détente
+        message: >-
+          Bonjour Mori ! Je veux pratiquer mon français. Peux-tu me poser des questions
+          sur la détente en utilisant des phrases descriptives et des verbes pronominaux
+          au présent ? Merci de corriger mes erreurs.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi plus de questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu mais avec la phrase en français ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-routine
+        type: aiTutorPrompt
+        title: Une routine relaxante
+        intro: >-
+          Envoie ce message à Mori, puis décris une routine relaxante. Par exemple : *Je
+          m’assieds dans un fauteuil confortable. Je bois du thé. Je lis un livre.
+          J’écoute de la musique calme.* (Mori devine : *Tu te détends à la maison.*)
+        message: Bonjour Mori ! Faisons une activité. Je décris une routine relaxante et tu devines ce que je fais.
+      - id: mori-routine-tour
+        type: aiTutorPrompt
+        title: 'Une routine relaxante : à toi, Mori !'
+        intro: Ensuite, envoie ce message.
+        message: À toi ! Décris une routine relaxante et je devine ce que tu fais.
+      - id: mori-lieu
+        type: aiTutorPrompt
+        title: Mon lieu de détente
+        intro: >-
+          Envoie ce message à Mori, puis décris ton lieu. Par exemple : *Il y a un grand
+          arbre. Je m’assieds dessous et j’écris dans mon carnet. J’entends des oiseaux et
+          je vois des fleurs.*
+        message: Bonjour Mori ! Je vais décrire mon lieu préféré pour me détendre, et tu dois l’imaginer.
+      - id: mori-lieu-tour
+        type: aiTutorPrompt
+        title: 'Mon lieu de détente : à toi, Mori !'
+        intro: Ensuite, envoie ce message.
+        message: À toi ! Décris ton lieu préféré pour te détendre et je devine où c’est.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: comment-se-relaxer-pratique
+    book: workbook
+    title: 'Pratique : Comment se relaxer'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-pronominaux
+        type: activity
+        activity: comment-se-relaxer-pronominaux
+      - id: ex-descriptives
+        type: activity
+        activity: comment-se-relaxer-descriptives
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: comment-se-relaxer-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la détente
+        glossLang: he
+        link: https://quizlet.com/il/1076073051/basic-french-2025-se-relaxer-flash-cards/
+        items: &relaxer-words
+          - { term: détendu(e), gloss: רָגוּעַ / רְגוּעָה }
+          - { term: stressé(e), gloss: לָחוּץ / לְחוּצָה }
+          - { term: fatigué(e), gloss: עָיֵף / עֲיֵפָה }
+          - { term: affamé(e), gloss: רָעֵב / רְעֵבָה }
+          - { term: heureux(se), gloss: שָׂמֵחַ / שְׂמֵחָה }
+          - { term: fâché(e), gloss: כּוֹעֵס / כּוֹעֶסֶת }
+          - { term: énergique, gloss: אֲנֶרְגֶטִי / אֲנֶרְגֶטִית }
+          - { term: calme, gloss: שָׁקֵט / שְׁקֵטָה }
+          - { term: confortable, gloss: נוֹחַ / נוֹחָה }
+          - { term: nerveux(se), gloss: עַצְבָּנִי / עַצְבָּנִית }
+          - { term: sentir (je me sens), gloss: לְהַרְגִּישׁ }
+          - { term: dormir, gloss: לִישׁוֹן }
+          - { term: manger, gloss: לֶאֱכוֹל }
+          - { term: boire, gloss: לִשְׁתּוֹת }
+          - { term: écouter, gloss: לְהַקְשִׁיב }
+          - { term: voir / regarder, gloss: לִרְאוֹת }
+          - { term: marcher, gloss: לָלֶכֶת }
+          - { term: toucher, gloss: לָגַעַת }
+          - { term: sentir (odorat), gloss: לְהָרִיחַ }
+          - { term: se reposer, gloss: לָנוּחַ }
+          - { term: musique, gloss: מוּזִיקָה }
+          - { term: thé, gloss: תֵּה }
+          - { term: café, gloss: קָפֶה }
+          - { term: chocolat, gloss: שׁוֹקוֹלָד }
+          - { term: film, gloss: סֶרֶט }
+          - { term: livre, gloss: סֵפֶר }
+          - { term: parc, gloss: פָּארְק }
+          - { term: plage, gloss: חוֹף }
+          - { term: maison, gloss: בַּיִת }
+          - { term: cadeau, gloss: מַתָּנָה }
+          - { term: examen, gloss: מִבְחָן }
+          - { term: jeu, gloss: מִשְׂחָק }
+          - { term: dimanche, gloss: רִאשׁוֹן (יוֹם) }
+          - { term: sens, gloss: חוּשִׁים }
+          - { term: corps, gloss: גּוּף }
+          - { term: environnement, gloss: סְבִיבָה }
+          - { term: méditation, gloss: מֶדִיטַצְיָה }
+          - { term: eau, gloss: מַיִם }
+          - { term: chaise, gloss: כִּסֵּא }
+          - { term: lit, gloss: מִטָּה }
+
+vocabulary:
+  - slug: comment-se-relaxer
+    title: Comment se relaxer
+    items: *relaxer-words
+
+activities:
+  - slug: comment-se-relaxer-pronominaux
+    title: 'Verbes pronominaux : me, te, se, nous, vous'
+    minutes: 8
+    items:
+      - id: je-me
+        type: multipleChoice
+        prompt: Je ___ relaxe avec un livre.
+        options:
+          - { text: me, correct: true }
+          - { text: te, feedback: '*Te* va avec *tu*. Avec *je*, on dit *me* : *je me relaxe*.' }
+          - { text: se, feedback: '*Se* va avec *il, elle, ils, elles*. Avec *je*, on dit *me*.' }
+      - id: nous-nous
+        type: multipleChoice
+        prompt: Nous ___ concentrons sur notre respiration.
+        options:
+          - { text: nous, correct: true }
+          - {
+              text: se,
+              feedback: '*Se* va avec *il, elle, ils, elles*. Avec *nous*, le pronom est aussi *nous*.',
+            }
+          - {
+              text: vous,
+              feedback: '*Vous* va avec le sujet *vous*. Avec *nous*, on dit *nous nous concentrons*.',
+            }
+      - id: une-relaxer
+        type: matching
+        prompt: Associe chaque sujet au verbe *se relaxer*.
+        pairs:
+          - [je, me relaxe]
+          - [tu, te relaxes]
+          - [nous, nous relaxons]
+          - [vous, vous relaxez]
+          - [ils / elles, se relaxent]
+      - id: tu-te-ils-se
+        type: fillBlank
+        prompt: Complète avec le bon pronom.
+        text: Tu ___ relaxes à la maison. Ils ___ reposent dans le parc.
+        blanks: [[te], [se]]
+        wordBank: [me, te, se, nous, vous]
+      - id: elision
+        type: multipleChoice
+        prompt: Je ___ étire avant de dormir.
+        options:
+          - { text: m’, correct: true }
+          - { text: me, feedback: 'Devant une voyelle, *me* devient *m’* : *je m’étire*.' }
+          - {
+              text: s’,
+              feedback: '*S’* va avec *il, elle, ils, elles*. Avec *je*, on dit *m’* : *je m’étire*.',
+            }
+      - id: pronom-change
+        type: trueFalse
+        prompt: 'Dans un verbe pronominal, le pronom change avec le sujet : *je me relaxe, tu te relaxes, il se relaxe*.'
+        answer: true
+        feedback:
+          correct: Bravo ! Le pronom (me, te, se, nous, vous) va avec le sujet.
+          incorrect: 'Le pronom change avec le sujet : *je me*, *tu te*, *il se*, *nous nous*, *vous vous*, *ils se*.'
+      - id: nous-reposons
+        type: fillBlank
+        prompt: Complète avec le verbe *se reposer* au présent.
+        text: Nous ___ ___ à la maison.
+        blanks: [[nous], [reposons]]
+      - id: ordonne-livre
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Je me relaxe avec un livre.
+
+  - slug: comment-se-relaxer-descriptives
+    title: 'Phrases descriptives : sujet + être + adjectif'
+    minutes: 8
+    items:
+      - id: musique-est
+        type: multipleChoice
+        prompt: La musique ___ relaxante.
+        options:
+          - { text: est, correct: true }
+          - { text: sont, feedback: '*La musique* est singulier : on dit *est*.' }
+          - { text: es, feedback: '*Es* va avec *tu*. Pour une chose au singulier, on dit *est*.' }
+      - id: lumieres-sont
+        type: multipleChoice
+        prompt: Les lumières ___ douces.
+        options:
+          - { text: sont, correct: true }
+          - { text: est, feedback: '*Les lumières* est pluriel : on dit *sont*.' }
+          - {
+              text: sommes,
+              feedback: '*Sommes* va avec *nous*. Pour plusieurs choses, on dit *sont*.',
+            }
+      - id: est-sont
+        type: fillBlank
+        prompt: Complète avec *est* ou *sont*.
+        text: L’arôme ___ agréable. Les serviettes ___ douces.
+        blanks: [[est], [sont]]
+        wordBank: [est, sont]
+      - id: eau-negation
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: L’eau n’est pas froide., correct: true }
+          - {
+              text: L’eau ne est pas froide.,
+              feedback: 'Devant une voyelle, *ne* devient *n’* : *n’est pas*.',
+            }
+          - {
+              text: L’eau est ne pas froide.,
+              feedback: '*Ne* va avant le verbe et *pas* après : *n’est pas*.',
+            }
+      - id: ne-pas-apres
+        type: trueFalse
+        prompt: 'Pour la négation, on met *ne … pas* après le verbe : *La musique est ne pas forte.*'
+        answer: false
+        feedback:
+          correct: 'Exact ! *Ne* va avant le verbe et *pas* après : *La musique n’est pas forte.*'
+          incorrect: '*Ne* va avant le verbe et *pas* après : *La musique n’est pas forte.*'
+      - id: murs-negation
+        type: fillBlank
+        prompt: 'Écris la phrase à la forme négative : *Les murs sont sombres.*'
+        text: Les murs ___ sont ___ sombres.
+        blanks: [[ne], [pas]]
+      - id: associe-accord
+        type: matching
+        prompt: Associe chaque sujet à la bonne fin. Regarde bien le masculin ou le féminin, le singulier ou le pluriel.
+        pairs:
+          - [Le café, est chaud.]
+          - [La pièce, est silencieuse.]
+          - [Les murs, sont blancs.]
+          - [Les serviettes, sont douces.]
+      - id: ordonne-musique
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: La musique n’est pas forte.

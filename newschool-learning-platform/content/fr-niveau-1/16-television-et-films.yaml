@@ -1,0 +1,565 @@
+# Cycle "Télévision et films", converted from the French digital notebook
+# ("Cahier digital 2026 – français niveau 1"; docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: television-et-films
+title: Télévision et films
+goal: Parler de films et de séries en posant des questions et en utilisant les prépositions.
+position: 16
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Poser des questions" and "Les prépositions") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and every
+    right answer before students see them.
+  - The source gives no activity times for this cycle, so no times are recorded.
+  - >-
+    Prepositions (Activity 2 explanation and summary, merged into the summary): "En →
+    moments de la journée (en matinée, en soirée)" was replaced by "le matin, le soir,
+    l'après-midi (sans préposition)", which is what students say at A1 and what the
+    warm-up uses. "Au printemps" was added as the exception to "en + saison". The
+    rule for "à" now shows the forms au / à la / à l' / aux and "au Canada, aux
+    États-Unis" (the source only says "attention au masculin, féminin, pluriel,
+    voyelle"). A rule for "dans" (dans la maison, dans la mer) was ADDED because
+    Activity 2 question 6, Activity 4 and the vocabulary use it. Please confirm.
+  - >-
+    Activity 2 example "je vais à la maison de mon ami" (unidiomatic) → "je vais à la
+    plage".
+  - >-
+    Summary, question words: the source list "qui, que, quoi, où, quand, pourquoi,
+    combien" did not include "quel / quelle" or "comment", which the class uses (Quel
+    est ton film préféré ? Comment te sens-tu… in earlier cycles). They were added.
+  - >-
+    Warm-up: the source gives a frame only for question 3. Frames were ADDED for the
+    other four questions.
+  - >-
+    Activity 1 (Jeopardy): the answer → question pairs are in a teacher note (answer
+    key); students see only the answers and write the question.
+  - >-
+    Mori extra activities: the source describes the two games but gives no message to
+    send. Messages were written for them ("Faisons une activité…") plus a second "À
+    toi !" message for each, as in the other cycles.
+  - >-
+    Vocabulary: "divertissant – מצחיק / מהנה" → "מהנה / משעשע" ("divertissant" means
+    entertaining, not funny). Other rows are kept as in the source.
+  - >-
+    The "Réponse de l'élève 1/2/3" lines are replaced by the optional answer boxes:
+    students may type, and the teacher sees the group's answers.
+  - >-
+    Workbook: the word-order item is a question ("Quel est ton film préféré ?"); with
+    French spacing the "?" is its own word piece, which the student puts last.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: television-et-films-classe
+    title: 'Classe : Télévision et films'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Télévision et films
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Poser des questions
+            description: '*Quel est ton film préféré ? Où aimes-tu regarder des films ? Est-ce que tu aimes ce film ?*'
+          - name: Les prépositions
+            description: '*en, à, avec, sur, dans* : en France, à 8 h, avec mes amis, un film sur les animaux'
+      - id: quizlet
+        type: externalLink
+        label: Télévision et films sur Quizlet
+        url: https://quizlet.com/il/1076504512/basic-french-2025-television-et-films-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. J’aime regarder des ___ (films / séries).
+        example: Je m’appelle Lévanah. J’aime regarder des séries.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Cite des films que tu aimes. Pourquoi aimes-tu ces films ?
+            frame: J’aime ___ et ___ parce que ___.
+          - question: Quel est ton film préféré ?
+            frame: Mon film préféré est ___.
+          - question: Où aimes-tu regarder des films ?
+            frame: J’aime regarder des films au cinéma / à la maison / sur l’ordinateur.
+          - question: Avec qui aimes-tu regarder des films ou des séries ?
+            frame: J’aime regarder des films avec ___.
+          - question: Quel type de films aimes-tu ? (action, comédie…)
+            frame: J’aime les films d’action / les comédies / ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Jeu « Jeopardy »'
+        skills: [Poser des questions]
+        steps:
+          - Lis la réponse.
+          - Trouve la question qui correspond à la réponse.
+        example: |-
+          *J’aime le film Ratatouille.* → **Quel est ton film préféré ?**
+          *Ma série préférée est Lupin.* → **Quelle est ta série préférée ?**
+      - id: act1-questions
+        type: discussionQuestions
+        title: Trouve la question
+        items:
+          - question: J’aime ce film parce qu’il est drôle.
+            frame: ___ ?
+          - question: Je regarde des films au cinéma.
+            frame: ___ ?
+          - question: J’aime regarder la télévision le soir.
+            frame: ___ ?
+          - question: Mon actrice préférée est Marion Cotillard.
+            frame: ___ ?
+          - question: J’aime les films d’action.
+            frame: ___ ?
+          - question: Je préfère les comédies romantiques.
+            frame: ___ ?
+          - question: Le film dure deux heures.
+            frame: ___ ?
+          - question: Le meilleur acteur est Omar Sy.
+            frame: ___ ?
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Interview – mon film ou ma série préféré(e)'
+        skills: [Les prépositions]
+        steps:
+          - Révise les prépositions de temps et de lieu avec ton professeur (voir le résumé).
+          - Travaillez en binômes. Posez-vous les questions ci-dessous sur votre film ou votre série préféré(e).
+      - id: act2-questions
+        type: discussionQuestions
+        items:
+          - question: En quelle année se passe le film ?
+            frame: Le film se passe en ___. (en 2020, en 1995…)
+          - question: À quelle heure regardes-tu le film ?
+            frame: Je regarde le film à ___. (à 8 h, à 10 h…)
+          - question: Où se passe le film ?
+            frame: Le film se passe ___. (en ville, à la campagne…)
+          - question: Dans quel pays ou dans quelle ville se passe le film ?
+            frame: Le film se passe en / à ___. (en Espagne, en France, à Paris…)
+          - question: En quel mois se passe l’histoire ?
+            frame: L’histoire se passe en ___. (en juillet, en décembre…)
+          - question: Qu’y a-t-il dans la maison du personnage principal ?
+            frame: Dans la maison, il y a ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Le jeu des 21 questions'
+        skills: [Poser des questions]
+        steps:
+          - Pense à une personne célèbre (acteur, chanteur, réalisateur…). Ne dis pas son nom.
+          - Les autres posent des questions **fermées** (réponse « oui » ou « non ») pour deviner.
+          - Réponds seulement « oui » ou « non ».
+        example: |-
+          *Es-tu un homme ?*
+          *Es-tu un acteur / une actrice / un réalisateur ?*
+          *Es-tu français ?*
+          *Vis-tu à Paris ?*
+          *Es-tu chanteur ?*
+      - id: act3-questions
+        type: discussionQuestions
+        title: Mes questions fermées
+        items:
+          - question: Es-tu ___ ?
+          - question: Vis-tu ___ ?
+          - question: Est-ce que tu ___ ?
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Jeu du tabou'
+        skills: [Les prépositions]
+        steps:
+          - Ton professeur te donne le nom d’un film ou d’une série.
+          - Tu as 1 minute pour le décrire avec au moins deux prépositions, sans dire le titre.
+          - Les autres doivent deviner le titre.
+          - 'Points : 1 point si la réponse est correcte, +1 point si tu utilises bien les prépositions.'
+        example: |-
+          *C’est un film. C’est sur un petit poisson. Il vit dans la mer avec son père. Il va dans plusieurs endroits. C’est très drôle.*
+          → *Le Monde de Nemo*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Décris ton film ou ta série
+        items:
+          - question: C’est un film / une série.
+          - question: C’est sur ___.
+          - question: Ça se passe en ville / à la campagne / ___.
+          - question: Il / Elle vit avec ___.
+          - question: Il / Elle va à ___.
+          - question: C’est drôle / triste / passionnant.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **Poser des questions** (Activité 1 ou 3) et
+          **Les prépositions** (Activité 2 ou 4).
+      - id: n-intro
+        anchor: intro
+        text: Donne ton propre exemple d’abord, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: |-
+          Corrigé :
+          J’aime ce film parce qu’il est drôle. → Pourquoi aimes-tu ce film ?
+          Je regarde des films au cinéma. → Où aimes-tu regarder des films ?
+          J’aime regarder la télévision le soir. → Quand aimes-tu regarder la télévision ?
+          Mon actrice préférée est Marion Cotillard. → Qui est ton actrice préférée ?
+          J’aime les films d’action. → Quel type de films aimes-tu ?
+          Je préfère les comédies romantiques. → Quel type de films préfères-tu ?
+          Le film dure deux heures. → Combien de temps dure le film ?
+          Le meilleur acteur est Omar Sy. → Qui est le meilleur acteur pour toi ?
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Explique d’abord les prépositions de temps (en, à) et de lieu (en, à, avec,
+          sur, dans) avec le résumé, puis les élèves s’interviewent par deux.
+      - id: n-act4
+        anchor: act4
+        text: Prépare un titre de film ou de série pour chaque élève (des films connus du groupe).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: television-et-films-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-questions
+        type: ruleSummary
+        skill: Poser des questions
+        rules:
+          - text: 'Il y a des questions **ouvertes** (avec un mot interrogatif) et des questions **fermées** (réponse : oui ou non).'
+            examples: [Où se passe l’histoire ?, Es-tu français ?]
+          - text: 'Mots interrogatifs : **qui, que, quoi, où, quand, pourquoi, comment, combien, quel / quelle**.'
+            examples:
+              [
+                Quel est ton film préféré ?,
+                Quelle est ta série préférée ?,
+                À quelle heure regardes-tu la série ?,
+              ]
+          - text: 'Il y a plusieurs façons de poser la même question, selon le niveau de langage.'
+            examples: [Est-ce que tu aimes ce film ?, Tu aimes ce film ?, Aimes-tu ce film ?]
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: Les prépositions de temps et de lieu
+        rules:
+          - text: '**En** : mois, années, saisons, et pays féminins (qui se terminent souvent par *e*) ou qui commencent par une voyelle.'
+            examples: [en janvier, en 2023, en été, en hiver, en France, en Israël, en ville]
+          - text: 'Attention : **au** printemps ; et **le matin, le soir, l’après-midi** sans préposition.'
+            examples: [Je regarde la télévision le soir.]
+          - text: '**À** : heures précises, villes, destinations et positions. **À + le = au**, **à + les = aux**.'
+            examples:
+              [
+                à 5 h,
+                à 10 h du soir,
+                Je suis à Paris.,
+                Je vais au cinéma.,
+                Je vais à la plage.,
+                au Canada,
+                aux États-Unis,
+              ]
+          - text: '**Avec** : en compagnie de quelqu’un.'
+            examples: [Je regarde un film avec mes amis.]
+          - text: '**Sur** : « au sujet de », ou pour un écran ou une plateforme.'
+            examples:
+              [
+                C’est un film sur les animaux.,
+                Je regarde une série sur mon ordinateur.,
+                sur Netflix,
+              ]
+          - text: '**Dans** : à l’intérieur d’un lieu.'
+            examples: [dans la maison, Il vit dans la mer.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: television-et-films-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie ce message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-tele
+        type: aiTutorPrompt
+        title: Parler de télévision et de films
+        message: >-
+          Bonjour Mori ! Je veux pratiquer le français. Peux-tu me poser des questions
+          sur la télévision et les films ? Utilise seulement le présent et corrige mes
+          erreurs, s’il te plaît.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux continuer ? Envoie : **Pose-moi encore des questions, s’il te plaît.**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu mais en gardant la phrase en français ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-scene
+        type: aiTutorPrompt
+        title: Où est la scène ?
+        intro: >-
+          Envoie ce message à Mori, puis décris une scène d’un film ou d’une série avec
+          des prépositions. Par exemple : *Il y a une table **au centre** de la pièce. Les
+          personnages sont assis **sur** des chaises. Un homme se cache **sous** la
+          table.* (Mori devine : *Dans un restaurant ?*)
+        message: Bonjour Mori ! Faisons une activité. Je décris une scène d’un film ou d’une série avec des prépositions et tu devines où se passe la scène.
+      - id: mori-scene-tour
+        type: aiTutorPrompt
+        title: 'Où est la scène ? À toi, Mori !'
+        intro: Ensuite, envoie ce message.
+        message: À toi ! Décris une scène d’un film ou d’une série et je devine où elle se passe.
+      - id: mori-question
+        type: aiTutorPrompt
+        title: Créer une question
+        intro: >-
+          Envoie ce message à Mori, puis écris une phrase sur un film ou une série. Par
+          exemple : *La fille court derrière le bus.* (Mori : *Qui court derrière le
+          bus ?*)
+        message: Bonjour Mori ! Faisons une activité. J’écris une phrase sur un film ou une série et tu transformes ma phrase en question.
+      - id: mori-question-tour
+        type: aiTutorPrompt
+        title: 'Créer une question : à toi, Mori !'
+        intro: Ensuite, envoie ce message.
+        message: À toi ! Écris une phrase sur un film ou une série et j’invente une question.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: television-et-films-pratique
+    book: workbook
+    title: 'Pratique : Télévision et films'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-questions
+        type: activity
+        activity: television-et-films-questions
+      - id: ex-prepositions
+        type: activity
+        activity: television-et-films-prepositions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: television-et-films-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la télévision et des films
+        glossLang: he
+        link: https://quizlet.com/il/1076504512/basic-french-2025-television-et-films-flash-cards/
+        items: &television-words
+          - { term: film, gloss: סרט }
+          - { term: série (télé), gloss: סדרת טלוויזיה }
+          - { term: programme, gloss: תוכנית }
+          - { term: épisode, gloss: פרק }
+          - { term: écran, gloss: מסך }
+          - { term: acteur, gloss: שַׂחְקָן }
+          - { term: actrice, gloss: שַׂחְקָנִית }
+          - { term: personnage, gloss: דמות }
+          - { term: scène, gloss: סצנה }
+          - { term: ville, gloss: עיר }
+          - { term: pays, gloss: מדינה }
+          - { term: maison, gloss: בית }
+          - { term: école, gloss: בית ספר }
+          - { term: plage, gloss: חוף ים }
+          - { term: parc, gloss: פארק }
+          - { term: cinéma, gloss: קולנוע }
+          - { term: nuit, gloss: לילה }
+          - { term: soir, gloss: ערב }
+          - { term: après-midi, gloss: אחר הצהריים }
+          - { term: matin, gloss: בוקר }
+          - { term: hiver, gloss: חורף }
+          - { term: été, gloss: קיץ }
+          - { term: voir, gloss: לראות }
+          - { term: habiter / vivre, gloss: לגור / לחיות }
+          - { term: être, gloss: להיות }
+          - { term: aller, gloss: ללכת / לנסוע }
+          - { term: travailler, gloss: לעבוד }
+          - { term: étudier, gloss: ללמוד }
+          - { term: aimer, gloss: לאהוב }
+          - { term: préférer, gloss: להעדיף }
+          - { term: divertissant, gloss: מהנה / משעשע }
+          - { term: intéressant, gloss: מעניין }
+          - { term: émouvant, gloss: מרגש }
+          - { term: triste, gloss: עצוב }
+          - { term: beau / belle, gloss: יפה }
+          - { term: en / dans / à, gloss: ב... }
+          - { term: à, gloss: אל / ל... }
+          - { term: avec, gloss: עם }
+          - { term: sur, gloss: על }
+
+vocabulary:
+  - slug: television-et-films
+    title: Télévision et films
+    items: *television-words
+
+activities:
+  - slug: television-et-films-questions
+    title: Poser des questions
+    minutes: 8
+    items:
+      - id: quelle-serie
+        type: multipleChoice
+        prompt: 'Réponse : *Ma série préférée est Lupin.* Quelle est la question ?'
+        options:
+          - { text: Quelle est ta série préférée ?, correct: true }
+          - {
+              text: Quel est ta série préférée ?,
+              feedback: '*Série* est féminin : on dit *quelle* et *ta* : *Quelle est ta série préférée ?*',
+            }
+          - {
+              text: Où est ta série préférée ?,
+              feedback: '*Où* demande un lieu. Pour choisir une série, on dit *quelle* : *Quelle est ta série préférée ?*',
+            }
+      - id: mots-interrogatifs
+        type: matching
+        prompt: Associe chaque réponse au bon mot interrogatif.
+        pairs:
+          - [Au cinéma., Où ?]
+          - [Le soir., Quand ?]
+          - [Parce qu’il est drôle., Pourquoi ?]
+          - [Omar Sy., Qui ?]
+          - [Le film dure deux heures., Combien de temps ?]
+      - id: pourquoi
+        type: fillBlank
+        prompt: 'Complète la question. Réponse : *Parce qu’il est drôle.*'
+        text: ___ aimes-tu ce film ?
+        blanks: [[Pourquoi]]
+      - id: quelle-heure
+        type: fillBlank
+        prompt: 'Complète la question. Réponse : *À 20 heures.*'
+        text: À ___ heure regardes-tu la série ?
+        blanks: [[quelle]]
+      - id: trois-facons
+        type: trueFalse
+        prompt: '*Est-ce que tu aimes ce film ?*, *Tu aimes ce film ?* et *Aimes-tu ce film ?* sont trois façons correctes de poser la même question.'
+        answer: true
+        feedback:
+          correct: Bravo ! Les trois questions sont correctes ; *Aimes-tu… ?* est plus formel.
+          incorrect: Les trois questions sont correctes. Elles changent seulement selon le niveau de langage.
+      - id: question-fermee
+        type: multipleChoice
+        prompt: 'Quelle question est une question fermée (réponse : oui ou non) ?'
+        options:
+          - { text: Es-tu français ?, correct: true }
+          - { text: Où vis-tu ?, feedback: '*Où* demande un lieu : c’est une question ouverte.' }
+          - {
+              text: Qui est ton acteur préféré ?,
+              feedback: '*Qui* demande une personne : c’est une question ouverte.',
+            }
+      - id: inversion
+        type: multipleChoice
+        prompt: 'Transforme *Tu aimes les comédies.* en question avec l’inversion (verbe + sujet).'
+        options:
+          - { text: Aimes-tu les comédies ?, correct: true }
+          - {
+              text: Aime-tu les comédies ?,
+              feedback: 'Le verbe garde sa terminaison : *tu aimes* → *aimes-tu*.',
+            }
+          - {
+              text: Est-ce que aimes-tu les comédies ?,
+              feedback: 'Avec *est-ce que*, on garde l’ordre normal : *Est-ce que tu aimes les comédies ?*',
+            }
+      - id: ordonne-film
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre pour faire une question.
+        sentence: Quel est ton film préféré ?
+
+  - slug: television-et-films-prepositions
+    title: 'Les prépositions : en, à, avec, sur'
+    minutes: 8
+    items:
+      - id: avec-amis
+        type: multipleChoice
+        prompt: Je regarde un film ___ mes amis.
+        options:
+          - { text: avec, correct: true }
+          - {
+              text: sur,
+              feedback: '*Sur* veut dire « au sujet de ». Pour dire « en compagnie de », on dit *avec*.',
+            }
+          - {
+              text: en,
+              feedback: '*En* va avec les mois, les années, les pays… Pour les personnes, on dit *avec*.',
+            }
+      - id: a-heure
+        type: multipleChoice
+        prompt: Le film commence ___ 20 heures.
+        options:
+          - { text: à, correct: true }
+          - {
+              text: en,
+              feedback: '*En* va avec les mois et les années. Pour une heure précise, on dit *à*.',
+            }
+          - { text: sur, feedback: 'Pour une heure précise, on dit *à* : *à 20 heures*.' }
+      - id: en-france
+        type: multipleChoice
+        prompt: Le film se passe ___ France.
+        options:
+          - { text: en, correct: true }
+          - {
+              text: à,
+              feedback: '*À* va avec les villes (à Paris). Pour un pays féminin, on dit *en*.',
+            }
+          - {
+              text: au,
+              feedback: '*Au* va avec les pays masculins (au Canada). *La France* est féminin : *en France*.',
+            }
+      - id: paris-cinema
+        type: fillBlank
+        prompt: Complète avec *à* ou *au*.
+        text: Il vit ___ Paris. Nous allons ___ cinéma.
+        blanks: [[à], [au]]
+        wordBank: [à, au]
+      - id: sur
+        type: fillBlank
+        prompt: Complète avec la bonne préposition.
+        text: C’est un film ___ les animaux. Je regarde une série ___ mon ordinateur.
+        blanks: [[sur], [sur]]
+        wordBank: [sur, avec, en]
+      - id: a-janvier
+        type: trueFalse
+        prompt: On dit *à janvier* et *à 2023*.
+        answer: false
+        feedback:
+          correct: 'Exact ! Avec les mois et les années, on dit *en* : *en janvier*, *en 2023*.'
+          incorrect: 'Avec les mois et les années, on dit *en* : *en janvier*, *en 2023*.'
+      - id: questions-reponses
+        type: matching
+        prompt: Associe chaque question à sa réponse.
+        pairs:
+          - [En quelle année se passe le film ?, En 1995.]
+          - [À quelle heure regardes-tu le film ?, À 20 heures.]
+          - [Avec qui regardes-tu le film ?, Avec mes amis.]
+          - [Dans quel pays se passe le film ?, En Espagne.]
+          - [C’est un film sur quoi ?, Sur les animaux.]
+      - id: ordonne-amis
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Je regarde un film avec mes amis.
