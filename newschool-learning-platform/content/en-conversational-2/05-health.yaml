@@ -1,0 +1,559 @@
+# Cycle "Health", converted from the Conversational English (level 2) digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-conversational-2
+slug: health
+title: Health
+goal: Talk about past health problems in the past simple and give advice with modal verbs.
+position: 5
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Past simple" and "Modal verbs") are NEW: the notebook
+    has no self-study exercises. They were written from the cycle's summary rules, the
+    activity examples and its vocabulary. Please check level, wording and every right
+    answer before students see them.
+  - >-
+    Skills: the notebook header says "Past" and "Modal Verbs (should, must)", with
+    broken formatting. The class and summary also use could, may, might, have to,
+    you'd better and need to, so the skills are named "Past simple" and "Modal verbs
+    for advice".
+  - >-
+    Summary, modal verbs: rule 2 says modal verbs don't change for he / she / it. This
+    is true for should, could, must, may, might and you'd better, but **have to**
+    does change (*he has to*). A note was added to the rule. "Have to" and "you'd
+    better" are called "expressions", not modal verbs, as in the source.
+  - >-
+    Summary, past simple: rule 2 "use the second form" now says "the past form (the
+    second form in the verb table)"; rule 3 now adds "and the base verb after did"
+    (*Did you go…? I didn't feel well.*).
+  - >-
+    Corrections: Introduction "(teachers name)" → "(teacher's name)"; Activity 4 "On
+    Frida,y" → "On Friday,"; Activity 4 "This week, you will think about small
+    healthy things you did" → "Think about small healthy things you did last week";
+    the stage numbers in Activities 2 and 4 were repeated or missing (1, 2, 3, 2, 4 and
+    1, 2, 4) and are renumbered.
+  - >-
+    Activity 1: the questions "Why do you have it?" / "What do you do at home?" and the
+    example answer "I drink cold water every day" are in the present simple, and the
+    cycle practises the past. They are kept (they are correct English); a teacher note
+    suggests also asking "When did it start?" and "What did you do?". Please confirm.
+  - >-
+    Vocabulary glosses changed: "Could יכול" → "יכול / אפשר" (in advice, "You could…" =
+    אפשר); "May אולי" → "ייתכן / מותר"; "Might אולי (אפשרות)" → "אולי / ייתכן";
+    "Take care תשמור על עצמך" → "שמור / שמרי על עצמך". Please confirm.
+  - >-
+    Activity 3 has 10 scenarios; the teacher shows them on a card or slide, or says
+    them aloud. They are listed in the class section so students can see them.
+  - >-
+    A table of the modal verbs and expressions (word, use, example) was added to the
+    summary, built from the class examples; the "must = very strong / have to =
+    strong" labels are a simplification. Please check.
+  - >-
+    The Quizlet link is kept without its "?new" parameter. The "Answer of student
+    1/2/3" lines are replaced by the optional answer boxes. The source gives no
+    activity times, so none were added.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: health-class
+    title: 'Class: Health'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Health
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Past simple
+            description: Talking about what happened (*I fell, I ate, I felt; Did you…? I didn't…*)
+          - name: Modal verbs for advice
+            description: "*should, could, must, may, might* and *have to, you'd better*"
+      - id: quizlet
+        type: externalLink
+        label: Health words on Quizlet
+        url: https://quizlet.com/il/1058986766/conversational-english-health-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. A healthy habit I have is ___.
+        example: I am Dana. I go to sleep early every night.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: How do you take care of your health?
+            frame: I take care of my health by ___.
+          - question: When was the last time you went to the doctor?
+            frame: The last time I went to the doctor was ___. I went because ___.
+          - question: 'What is more important to you: healthy food or exercise? Why?'
+            frame: ___ is more important to me because ___.
+          - question: Do you exercise? What kind? How many times a week?
+            frame: I ___ (activity) ___ times a week.
+          - question: What advice would you give to someone who wants to have a healthier lifestyle?
+            frame: You should ___. / You'd better ___.
+          - question: What do you do when you feel sick?
+            frame: When I feel sick, I ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: "Activity 1: Doctor's appointment — the waiting room"
+        skills: [Modal verbs for advice, Past simple]
+        steps:
+          - You are in a doctor's waiting room. Think of a simple health problem (a cold, a sore throat, a headache, back pain).
+          - "One student says: *I'm here because I have ___.*"
+          - 'The others ask simple questions: *Why do you have it? When did it start? What do you do at home?*'
+          - The others give simple advice (see the list below) and good wishes (*I hope you feel better soon! Take care!*).
+          - 'When you finish, ask another student: *And you? Why are you here?* Continue until everyone has spoken.'
+        example: |-
+          **Student A:** *Hi, I'm here because I have a sore throat.*
+          **Student B:** *Why do you have a sore throat?*
+          **Student A:** *I drink cold water every day.*
+          **Student B:** *You should drink warm tea.*
+          **Student C:** *You can eat soup too.*
+          **Student A:** *Thank you! That is a good idea.*
+          **Student B:** *I hope you feel better soon!*
+          **Student C:** *Take care!*
+      - id: act1-advice
+        type: callout
+        tone: info
+        title: Simple advice
+        text: |-
+          *You can sleep more.* · *You should take some medicine.* · *You could try some herbal tea.*
+          *You'd better drink lots of water.* · *You shouldn't stay up too late.* · *You don't have to go out if you feel bad.*
+          *You could do some light exercise.* · *You might want to turn off your phone at night.* · *You'd better stay at home today.*
+          *You may feel better if you take a short walk.* · *You have to take your medicine every day.*
+          Or any other advice you want to give!
+      - id: act1-sentences
+        type: discussionQuestions
+        title: In the waiting room
+        items:
+          - question: "I'm here because I have ___."
+          - question: 'Advice for a classmate:'
+            frame: You should ___. / You could ___. / You'd better ___.
+      - id: act2
+        type: classActivity
+        title: "Activity 2: Doctor's appointment — with the doctor"
+        skills: [Past simple, Modal verbs for advice]
+        steps:
+          - Work in pairs. One student is the doctor, the other is the patient.
+          - Think of a small accident or problem that happened in the past (*I fell yesterday and hurt my knee. / I ate bad food last night. / I played football and twisted my ankle.*).
+          - 'The patient explains what happened: *Hello, doctor. Yesterday I fell at home and hurt my arm.*'
+          - 'The doctor asks questions in the past simple: *When did you fall? How did you fall? Did you feel pain immediately? Did you do anything for it? Did you rest?*'
+          - 'The patient answers with details: *I fell yesterday afternoon. I slipped on the stairs. Yes, it hurt a lot. I put ice on it, but it still hurts.*'
+          - 'The doctor gives advice with *should, could, need to* (*You should rest your arm. You could put ice on it again. You need to see a specialist if it still hurts tomorrow.*) and finishes politely: *I hope you feel better soon. / Take care and come back if you need more help.*'
+          - Switch roles and use a different accident or problem.
+        example: |-
+          **Patient:** *Hello, doctor. Last night I ate bad chicken and felt very sick.*
+          **Doctor:** *Oh, when did you eat the chicken?*
+          **Patient:** *I ate it at dinner, around 8 p.m.*
+          **Doctor:** *How did you feel after?*
+          **Patient:** *I felt sick and had a stomachache. I drank water, but it didn't help.*
+          **Doctor:** *Did you take any medicine?*
+          **Patient:** *No, I didn't.*
+          **Doctor:** *You should drink more water and eat light food today. You could rest and stay home. If you feel worse, you need to go to the hospital.*
+          **Patient:** *Thank you, doctor!*
+          **Doctor:** *Take care and get well soon!*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Helpful questions
+        answerable: false
+        items:
+          - question: When did it happen?
+          - question: How did it happen?
+          - question: What did you do after?
+          - question: Did you take any medicine?
+          - question: Did you go to the hospital?
+      - id: act2-sentences
+        type: discussionQuestions
+        title: My accident
+        items:
+          - question: 'Patient: Hello, doctor. ___ (yesterday / last night / last week) I ___.'
+          - question: 'Doctor: You should ___. You could ___.'
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Friendly advice'
+        skills: [Modal verbs for advice]
+        steps:
+          - Your teacher shows or reads a situation about health.
+          - Give one piece of friendly advice for the situation.
+          - Explain *why* it is good advice. You can work in pairs.
+        wordBank: [You should…, Maybe you can…, It's good because…]
+        example: |-
+          *Your friend doesn't sleep well at night.*
+          *You could read a book before bed. It's good because you feel relaxed.*
+      - id: act3-scenarios
+        type: discussionQuestions
+        title: Situations
+        items:
+          - question: Your friend eats too much fast food.
+            frame: You should ___. It's good because ___.
+          - question: Your friend never drinks water.
+          - question: Your friend doesn't sleep well at night.
+          - question: Your friend feels very stressed every day.
+          - question: Your friend sits at a desk all day and doesn't move much.
+          - question: Your friend has a headache every morning.
+          - question: Your friend watches TV until very late.
+          - question: Your friend never exercises.
+          - question: Your friend eats too much sugar every day.
+          - question: Your friend is always on their phone at night in bed.
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: My healthy past week'
+        skills: [Past simple]
+        steps:
+          - 'Think about small healthy things you did last week for your body **and** your mind. Health is not only food or exercise: it is also small things, like resting, talking to a friend or setting a boundary.'
+          - Write **one healthy action** for each day of the week.
+          - Share one or two sentences with the class. Say if it helped your **body**, your **mind**, or both.
+        example: |-
+          *On Monday, I said no to extra work. I felt calm because I had time for myself.*
+          *On Friday, I went for a walk with Yosi and Dana. I felt happy because I saw my friends.*
+      - id: act4-week
+        type: discussionQuestions
+        title: My healthy week
+        items:
+          - question: On Sunday I ___. I felt ___ because ___.
+          - question: On Monday I ___. I felt ___ because ___.
+          - question: On Tuesday I ___. I felt ___ because ___.
+          - question: On Wednesday I ___. I felt ___ because ___.
+          - question: On Thursday I ___. I felt ___ because ___.
+          - question: On Friday I ___. I felt ___ because ___.
+          - question: On Saturday I ___. I felt ___ because ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Past simple** (warm-up questions, Activities 2 and 4)
+          and **Modal verbs for advice** (Activities 1, 2 and 3). Activity 2 practises
+          both. The notebook gives no times for the activities.
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first (your name and one healthy habit), then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Students sit in a circle (in person) or stay as they are (online). The example
+          questions are in the present simple; to practise the past, also ask *When did
+          it start? What did you do?*
+      - id: n-act2
+        anchor: act2
+        text: Write the helpful questions on the board before the pairs start.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Write the useful phrases on the board. Show each situation on a card or slide,
+          or say it aloud. Each student gives one piece of advice and explains why.
+      - id: n-act4
+        anchor: act4
+        text: Sharing is optional. Students can share one or two sentences.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: health-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-past
+        type: ruleSummary
+        skill: Past simple
+        rules:
+          - text: We use the **past simple** for actions or events that **started and finished in the past**.
+            examples: [I walked to school yesterday., She ate lunch an hour ago.]
+          - text: 'For **regular verbs**, add **-ed** to the base verb.'
+            examples: [walk → walked, rest → rested]
+          - text: 'For **irregular verbs**, use the **past form** (the second form in the verb table).'
+            examples: [go → went, eat → ate, feel → felt]
+          - text: "For **questions and negatives**, use **did / didn't** + the **base verb**."
+            examples: [Did you go to the doctor?, I didn't feel well.]
+      - id: rules-modals
+        type: ruleSummary
+        skill: Modal verbs for advice
+        rules:
+          - text: >-
+              We use **modal verbs** (*should, could, must, may, might*) to **give
+              advice**, make suggestions, and say what is necessary or possible. For
+              **strong advice**, we also use **have to** and **you'd better**.
+            examples:
+              - You should sleep.
+              - You must take your medicine.
+              - You have to see a doctor.
+              - You'd better stay home today.
+          - text: "Modal verbs **don't change** for he / she / it: no **-s**. (But *have to* changes: *he **has** to*.)"
+            examples: [She should drink tea., He must rest., He has to rest.]
+          - text: 'Use the **base verb** after the modal verb: no *to*.'
+            examples:
+              - You should rest. (not *should to rest*)
+              - You'd better stay home. (not *You'd better to stay home*)
+      - id: modals-table
+        type: table
+        caption: Modal verbs and expressions
+        header: [Word, Use, Example]
+        rows:
+          - [should, advice, You should drink warm tea.]
+          - [could, a suggestion, You could try some herbal tea.]
+          - [must, necessary (very strong), You must take your medicine.]
+          - [have to, necessary (strong), You have to take your medicine every day.]
+          - [you'd better, strong advice, You'd better stay at home today.]
+          - [may / might, possible, You may feel better if you take a short walk.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: health-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy a message and send it. Mori will ask you questions; answer every one.
+      - id: mori-main
+        type: aiTutorPrompt
+        title: Healthy habits
+        message: Hi Mori! I want to talk about healthy habits. Can you ask me questions using the skills Past simple and Modal verbs? Please correct my mistakes.
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Two interactive activities
+      - id: mori-detective
+        type: aiTutorPrompt
+        title: 'Activity 1: Healthy habit detective'
+        message: "Let's play Healthy Habit Detective. Think of an old habit, and I will ask questions in the past simple to guess it. Then I will think of one for you to guess."
+      - id: mori-roleplay
+        type: aiTutorPrompt
+        title: 'Activity 2: Health advice role-play'
+        message: "Let's do a Health Advice Roleplay. Pretend you have a problem, and I will give you advice using modal verbs (should, could, must, may, might, have to, you'd better)."
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: health-practice
+    book: workbook
+    title: 'Practice: Health'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked at once, and you can try again.
+      - id: ex-past
+        type: activity
+        activity: health-past
+      - id: ex-modals
+        type: activity
+        activity: health-modals
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: health-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Health words
+        glossLang: he
+        link: https://quizlet.com/il/1058986766/conversational-english-health-flash-cards/
+        items: &health-words
+          - { term: Health, gloss: בריאות }
+          - { term: Healthy, gloss: בריא }
+          - { term: Habit, gloss: הרגל }
+          - { term: Doctor, gloss: רופא }
+          - { term: Appointment, gloss: תור }
+          - { term: Hospital, gloss: בית חולים }
+          - { term: Medicine, gloss: תרופה }
+          - { term: Pain, gloss: כאב }
+          - { term: Sore throat, gloss: כאב גרון }
+          - { term: Cold (illness), gloss: הצטננות }
+          - { term: Headache, gloss: כאב ראש }
+          - { term: Back pain, gloss: כאב גב }
+          - { term: To sleep, gloss: לישון }
+          - { term: To rest, gloss: לנוח }
+          - { term: To drink, gloss: לשתות }
+          - { term: To eat, gloss: לאכול }
+          - { term: To exercise, gloss: להתעמל }
+          - { term: To feel, gloss: להרגיש }
+          - { term: To ask, gloss: לשאול }
+          - { term: To answer, gloss: לענות }
+          - { term: Should, gloss: כדאי }
+          - { term: Must, gloss: חייב }
+          - { term: Have to, gloss: צריך }
+          - { term: Could, gloss: יכול / אפשר }
+          - { term: May, gloss: ייתכן / מותר }
+          - { term: Might, gloss: אולי / ייתכן }
+          - { term: "You'd better", gloss: עדיף ש... }
+          - { term: Take care, gloss: שמור / שמרי על עצמך }
+          - { term: Get well soon, gloss: החלמה מהירה }
+          - { term: Advice, gloss: עצה }
+
+vocabulary:
+  - slug: health
+    title: Health
+    items: *health-words
+
+activities:
+  - slug: health-past
+    title: 'Past simple: I fell, I felt, Did you…?'
+    minutes: 8
+    items:
+      - id: fell
+        type: multipleChoice
+        prompt: Yesterday I ___ at home and hurt my knee.
+        options:
+          - { text: fell, correct: true }
+          - { text: falled, feedback: '*Fall* is an irregular verb. The past form is *fell*.' }
+          - {
+              text: fall,
+              feedback: '*Fall* is present. With *yesterday*, use the past simple: *fell*.',
+            }
+      - id: ate-felt
+        type: fillBlank
+        prompt: Complete with the past simple of *eat* and *feel*.
+        text: Last night I ___ bad chicken and ___ very sick.
+        blanks: [[ate], [felt]]
+      - id: irregular
+        type: matching
+        prompt: Match each verb with its past simple form.
+        pairs:
+          - [go, went]
+          - [eat, ate]
+          - [feel, felt]
+          - [drink, drank]
+          - [have, had]
+      - id: rested
+        type: trueFalse
+        prompt: 'For regular verbs, add *-ed*: *rest → rested*.'
+        answer: true
+        feedback:
+          correct: 'Right! *walk → walked, rest → rested*.'
+          incorrect: 'Regular verbs add *-ed*: *rest → rested*.'
+      - id: did-take
+        type: multipleChoice
+        prompt: ___ you take any medicine yesterday?
+        options:
+          - { text: Did, correct: true }
+          - {
+              text: Do,
+              feedback: 'With *yesterday*, the question is in the past: *Did you take…?*',
+            }
+          - {
+              text: Were,
+              feedback: 'With a verb like *take*, make the question with *did*: *Did you take…?*',
+            }
+      - id: didnt-feel
+        type: fillBlank
+        prompt: Complete with the negative of *feel* in the past simple.
+        text: I ___ well yesterday, so I stayed at home.
+        blanks: [[didn't feel, did not feel]]
+      - id: did-go
+        type: multipleChoice
+        prompt: Which question is correct?
+        options:
+          - { text: Did you go to the hospital?, correct: true }
+          - {
+              text: Did you went to the hospital?,
+              feedback: 'After *did*, use the base verb: *Did you go…?*',
+            }
+          - {
+              text: Went you to the hospital?,
+              feedback: 'Questions in the past simple start with *did*: *Did you go…?*',
+            }
+      - id: order-slipped
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: I slipped on the stairs.
+
+  - slug: health-modals
+    title: 'Modal verbs: should, could, must, have to'
+    minutes: 8
+    items:
+      - id: should-drink
+        type: multipleChoice
+        prompt: You should ___ warm tea.
+        options:
+          - { text: drink, correct: true }
+          - {
+              text: to drink,
+              feedback: 'After a modal verb, use the base verb with no *to*: *should drink*.',
+            }
+          - { text: drinks, feedback: 'After a modal verb, the verb has no *-s*: *should drink*.' }
+      - id: she-should
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: She should drink tea., correct: true }
+          - {
+              text: She shoulds drink tea.,
+              feedback: "Modal verbs don't change for he / she / it: *she should*.",
+            }
+          - {
+              text: She should to drink tea.,
+              feedback: 'Use the base verb after *should*, with no *to*.',
+            }
+      - id: better-stay
+        type: fillBlank
+        prompt: Complete with the right form of *stay*.
+        text: You'd better ___ at home today, and you shouldn't ___ up too late.
+        blanks: [[stay], [stay]]
+      - id: better-to
+        type: trueFalse
+        prompt: "*You'd better to stay home.* This sentence is correct."
+        answer: false
+        feedback:
+          correct: "Right! The correct sentence is *You'd better stay home* (no *to*)."
+          incorrect: "After *you'd better*, use the base verb with no *to*: *You'd better stay home*."
+      - id: problem-advice
+        type: matching
+        prompt: Match each problem with the best advice.
+        pairs:
+          - [I never drink water., "You'd better drink lots of water."]
+          - [I hurt my arm., You should rest your arm.]
+          - [I'm always on my phone in bed., You might want to turn off your phone at night.]
+          - [I never exercise., You could do some light exercise.]
+      - id: no-s
+        type: trueFalse
+        prompt: "Modal verbs like *should* and *must* don't add *-s* for he / she / it."
+        answer: true
+        feedback:
+          correct: 'Right! *He must rest. She should drink tea.*'
+          incorrect: 'Modal verbs never change: *he must*, *she should* (not *musts, shoulds*).'
+      - id: has-to
+        type: multipleChoice
+        prompt: He ___ take his medicine every day.
+        options:
+          - { text: has to, correct: true }
+          - { text: have to, feedback: '*Have to* changes for he / she / it: *he has to*.' }
+          - {
+              text: musts,
+              feedback: '*Must* never takes *-s*. You can say *he must* or *he has to*.',
+            }
+      - id: order-water
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: You should drink more water.
