@@ -1,0 +1,549 @@
+# Cycle "TV e film", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: tv-e-film
+title: TV e film
+goal: Parlare di film e serie TV facendo domande e usando le preposizioni.
+position: 16
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Fare domande" and "Preposizioni") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - The source gives no activity times for this cycle, so no times are recorded.
+  - >-
+    Skill 1 is called "Edifici e domande" in the plan ("edifici" = buildings, a
+    mistranslation of "building questions"); the summary calls it "Fare domande",
+    which is used everywhere.
+  - >-
+    The preposition rules (summary and Activity 2, step 1) were rewritten; they were
+    copied from English in/at/to. Wrong in the source: "in" with parts of the day
+    ("la mattina" and "di notte" take no "in"); "nel 2023" is listed under "in"
+    without saying it is in + il; "a → destinazione" (in Italian "a" goes with cities,
+    for both living and going: "vivo a Roma", "vado a Roma"; "in" with countries and
+    regions: "vivo in Italia"). The new rules: in + mesi e stagioni, nel + anni, alle
+    + ore, la mattina / la sera / di notte; a + città (and a casa, a scuola, al
+    cinema), in + paesi, luoghi generici e stanze; con = compagnia; su = argomento.
+    Please confirm.
+  - >-
+    Activity 2: "Nel 2020, nl 1995" → "Nel 2020, nel 1995"; "Nel soggiorno, in
+    cucina, nel giardino" → "In soggiorno, in cucina, in giardino" (to match the rule
+    "in + stanza").
+  - >-
+    Activity 4 (Tabù): the model lines "È su…", "È con…", "È a…" are literal
+    translations of English "It's about / with / at"; they are now "È un film su…",
+    "È un film con…", "È ambientato a… / in…", "Il personaggio principale vive a… /
+    in…".
+  - >-
+    Activity 1 (Jeopardy): the teacher-only questions ("Per gli insegnanti - non
+    condividono con gli studenti") are in a teacher note, not on the student page.
+  - >-
+    Activity 3: "una persona famosa che parla la lingua che stiamo praticando" → "che
+    parla italiano".
+  - >-
+    Introduction: the stray "Colpo di scena:" (a literal translation of "Twist:") was
+    removed. Warm-up: frames were added to questions 1, 2, 4 and 5 (the source has a
+    frame only for question 3, "Mi piace guardare (in/su) ___", now "Mi piace
+    guardare i film ___ (al cinema, a casa, su Netflix…)").
+  - >-
+    Mori: English left in by mistake: "Voglio esercitarmi con l'inglese" → "con
+    l'italiano"; "con la frase in inglese" → "con la frase in italiano"; "Se Mori ti
+    spiega qualcosa in inglese" → "Se non capisci una spiegazione". "Utilizza domande
+    e preposizioni che stimolino le competenze" → "Usa domande e preposizioni";
+    "Mori ti farà e ti risponderà alle domande" → "Mori ti farà delle domande".
+    Extra activity 2: "Ti racconterò una battuta" → "Ti scriverò una frase";
+    "pronome interrogativo" → "parola interrogativa".
+  - >-
+    Vocabulary: "Piacere, לאהוב" → "למצוא חן / לאהוב" (mi piace = מוצא חן בעיניי).
+    Please confirm.
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: tv-e-film-classe
+    title: 'Classe: TV e film'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: TV e film
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Fare domande
+            description: 'Domande aperte e chiuse con *cosa, quale, chi, dove, quando, perché*'
+          - name: Preposizioni
+            description: 'Tempo e luogo: *in gennaio, nel 2023, alle 5; a Roma, in Italia; con, su*'
+      - id: quizlet
+        type: externalLink
+        label: TV e film su Quizlet
+        url: https://quizlet.com/br/1068035292/italiano-basico-tv-e-film-atualizato-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Turno introduttivo
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Mi piace guardare ___ (film o programmi televisivi).
+        example: Sono Dana. Mi piace guardare i programmi televisivi.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quali film ti piacciono? Perché?
+            frame: Mi piacciono i film ___ perché ___.
+          - question: Qual è il tuo film preferito?
+            frame: Il mio film preferito è ___.
+          - question: Dove ti piace guardare i film?
+            frame: Mi piace guardare i film ___ (al cinema, a casa, su Netflix…).
+          - question: Con chi ti piace guardare film o serie TV?
+            frame: Mi piace guardare film o serie TV con ___.
+          - question: Che tipo di film ti piacciono? (azione, commedia, ecc.)
+            frame: Mi piacciono ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Jeopardy, film e TV italiani'
+        skills: [Fare domande]
+        steps:
+          - Leggi le risposte qui sotto.
+          - Per ogni risposta, trova la domanda giusta.
+        example: '*Il mio regista preferito è Federico Fellini.* → *Chi è il tuo regista preferito?*'
+      - id: act1-answers
+        type: discussionQuestions
+        title: Le risposte. Qual è la domanda?
+        items:
+          - question: Mi piace il film **La vita è bella**.
+          - question: La mia serie preferita è **Gomorra**.
+          - question: Mi piacciono i film di **Roberto Benigni**.
+          - question: Il mio attore preferito è **Marcello Mastroianni**.
+          - question: La mia attrice preferita è **Sophia Loren**.
+          - question: Guardo i film italiani su **Netflix**.
+          - question: Preferisco le commedie di **Checco Zalone**.
+          - question: Il mio regista preferito è **Federico Fellini**.
+          - question: Il film **Il postino** dura circa due ore.
+          - question: La mia serie italiana preferita è **Suburra**.
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Intervista sul film preferito'
+        skills: [Preposizioni]
+        steps:
+          - "L'insegnante spiega le preposizioni di **tempo** e di **luogo** (vedi il riepilogo)."
+          - Lavorate in coppia.
+          - Intervista il tuo compagno sul suo **film preferito** con le domande qui sotto.
+        example: |-
+          **Tempo:** *in gennaio, in estate, nel 2023, alle 5, alle 10 di sera, la mattina, di notte*
+          **Luogo:** *a Roma, in Italia, in città, in campagna, in montagna, in soggiorno, al cinema*
+      - id: act2-questions
+        type: discussionQuestions
+        items:
+          - question: In che anno è ambientato il film?
+            frame: Nel ___. (Nel 2020, nel 1995…)
+          - question: A che ora guardi il film?
+            frame: Alle ___. (Alle 8, alle 10…)
+          - question: Dove è ambientato il film?
+            frame: In ___. (In città, in campagna, in montagna…)
+          - question: In quale città o in quale paese è ambientato il film?
+            frame: A ___ / In ___. (A Roma, in Italia, a Madrid, in Spagna…)
+          - question: In che mese è ambientato il film?
+            frame: In ___. (In gennaio, in luglio, in dicembre…)
+          - question: Che cosa succede nella casa del personaggio principale?
+            frame: In ___, ___. (In soggiorno, in cucina, in giardino…)
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: 21 domande, indovina il personaggio'
+        skills: [Fare domande]
+        steps:
+          - Uno studente pensa a una persona famosa che parla italiano. Non dice il nome ad alta voce.
+          - 'Gli altri studenti, a turno, fanno domande chiuse (a cui si risponde solo con **sì** o **no**).'
+          - Lo studente risponde solo con **sì** o **no**. Chi indovina il personaggio?
+        example: |-
+          *Sei un uomo? Sei un attore / un'attrice / un regista? Sei uno sportivo? Sei un cantante?*
+          *Vieni dall'Italia / dalla Spagna / dagli Stati Uniti? Vivi in una grande città?*
+          *Sei ancora vivo? Hai vinto un premio famoso? Lavori in televisione? Sei un politico?*
+      - id: act3-questions
+        type: discussionQuestions
+        title: Le mie domande
+        items:
+          - question: Sei ___?
+          - question: Vivi ___?
+          - question: Lavori ___?
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Tabù nei film e nelle serie TV'
+        skills: [Preposizioni]
+        steps:
+          - L'insegnante dà a ogni studente il titolo di un film o di una serie.
+          - Hai **1 minuto** per descriverlo con frasi semplici e almeno **2 preposizioni**.
+          - Gli altri studenti cercano di indovinare. Se indovinano, vincono **1 punto**; **+1 punto** se le preposizioni sono usate correttamente.
+          - 'Alla fine chiedi: **Riesci a indovinare?**'
+      - id: act4-model
+        type: discussionQuestions
+        title: Modello per descrivere
+        items:
+          - question: È un film / È una serie.
+          - question: È un film **su** ___.
+          - question: È un film **con** ___.
+          - question: È ambientato **a** ___ / **in** ___.
+          - question: Il personaggio principale vive **a** ___ / **in** ___.
+          - question: È ___ (divertente, triste, emozionante, pauroso…).
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Fare domande** (vocabolario, domande e Attività
+          1 e 3) e **Preposizioni** (vocabolario, domande e Attività 2 e 4).
+      - id: n-intro
+        anchor: intro
+        text: Dai prima il tuo esempio, poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Domande (solo per l'insegnante, da non condividere): 1. Qual è il tuo film
+          italiano preferito? / Quali film ti piacciono? 2. Qual è la tua serie italiana
+          preferita? 3. Quali film italiani ti piacciono? 4. Chi è il tuo attore italiano
+          preferito? 5. Chi è la tua attrice italiana preferita? 6. Dove guardi i film
+          italiani? 7. Che tipo di commedie italiane preferisci? 8. Chi è il tuo regista
+          italiano preferito? 9. Quanto dura il film *Il postino*? 10. Quale serie
+          italiana ti piace di più?
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Spiega quando usare **in** e **a** per il tempo e per il luogo, con gli esempi
+          del riepilogo, prima di dividere gli studenti in coppie.
+      - id: n-act4
+        anchor: act4
+        text: Prepara i titoli di film e serie in anticipo. Dai 1 punto per ogni titolo indovinato e 1 punto extra per le preposizioni corrette.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: tv-e-film-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-questions
+        type: ruleSummary
+        skill: Fare domande
+        rules:
+          - text: 'Ci esercitiamo a fare domande **aperte** (con una parola interrogativa) e **chiuse** (la risposta è *sì* o *no*).'
+            examples: [Dove guardi i film?, Sei un attore?]
+          - text: 'Le parole interrogative principali: **cosa, quale (qual), chi, dove, quando, perché**.'
+            examples:
+              [
+                Qual è il tuo film preferito?,
+                Dove è ambientato il film?,
+                A che ora guardi la serie?,
+                Chi è il tuo attore preferito?,
+              ]
+      - id: rules-time
+        type: ruleSummary
+        skill: Preposizioni di tempo
+        rules:
+          - text: '**in** + mesi e stagioni.'
+            examples: [in gennaio, in estate]
+          - text: '**nel** (in + il) + anni.'
+            examples: [nel 2023, nel 1995]
+          - text: '**alle** (a + le) + ore.'
+            examples: [alle 5, alle 10 di sera]
+          - text: 'Con le parti del giorno di solito non usiamo *in*.'
+            examples: [la mattina, la sera, di notte]
+      - id: rules-place
+        type: ruleSummary
+        skill: Preposizioni di luogo
+        rules:
+          - text: '**a** + città (per dove vivi e per dove vai). Anche: *a casa, a scuola, al cinema*.'
+            examples: [Vive a Roma., Va a Roma., Va a scuola.]
+          - text: '**in** + paesi, luoghi generici e stanze.'
+            examples: [Vive in Italia., in città, in campagna, in montagna, in soggiorno]
+          - text: '**con** → compagnia.'
+            examples: [È con la sua famiglia.]
+          - text: '**su** → argomento o tema.'
+            examples: [un film su un viaggio, una lezione su Fellini]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: tv-e-film-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia questo messaggio e invialo. Mori ti farà delle domande e risponderà alle tue frasi.
+      - id: mori-tv-film
+        type: aiTutorPrompt
+        title: Parlare di TV e film
+        message: >-
+          Ciao Mori! Voglio esercitarmi con l'italiano. Puoi farmi domande su televisione
+          e film? Usa domande e preposizioni, per favore. Usa solo il presente semplice e
+          correggi i miei errori.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Hai finito e vuoi altre domande? Scrivi: **Per favore, chiedimi di più!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Attività interattive
+      - id: mori-scena
+        type: aiTutorPrompt
+        title: Dove si trova la scena?
+        intro: >-
+          Invia questo messaggio a Mori e descrivi una scena. Per esempio: *C'è un tavolo
+          al centro della stanza. I personaggi sono seduti sulle sedie. Un uomo si
+          nasconde sotto il tavolo.* (Mori: *In un ristorante?*)
+        message: Ciao Mori! Facciamo un'attività. Descriverò una scena di un film o di una serie TV usando le preposizioni. Indovina dove si svolge la scena.
+      - id: mori-scena-turno
+        type: aiTutorPrompt
+        title: 'Dove si trova la scena? Tocca a te!'
+        intro: Poi invia questo messaggio.
+        message: Adesso tocca a te! Descrivi una scena e io indovinerò dove si trova.
+      - id: mori-domande
+        type: aiTutorPrompt
+        title: Creatore di domande sul film
+        intro: >-
+          Invia questo messaggio a Mori e scrivi una frase. Per esempio: *La ragazza
+          corre dietro all'autobus.* (Mori: *Chi corre dietro all'autobus?*)
+        message: Ehi, Mori! Facciamo un gioco. Ti scriverò una frase su un film o una serie TV e tu farai una domanda usando una parola interrogativa (chi, cosa, dove, quando).
+      - id: mori-domande-turno
+        type: aiTutorPrompt
+        title: 'Creatore di domande: tocca a te!'
+        intro: Poi invia questo messaggio.
+        message: Adesso tocca a te! Scrivi una frase e io ti farò una domanda.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: tv-e-film-pratica
+    book: workbook
+    title: 'Pratica: TV e film'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati con le due abilità del ciclo. Ogni risposta viene corretta subito, e puoi riprovare.
+      - id: ex-domande
+        type: activity
+        activity: tv-e-film-domande
+      - id: ex-preposizioni
+        type: activity
+        activity: tv-e-film-preposizioni
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: tv-e-film-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Parole di TV e film
+        glossLang: he
+        link: https://quizlet.com/br/1068035292/italiano-basico-tv-e-film-atualizato-flash-cards/
+        items: &tv-film-words
+          - { term: Film, gloss: סרט }
+          - { term: Serie televisiva, gloss: סדרה }
+          - { term: Programma, gloss: תוכנית }
+          - { term: Episodio, gloss: פרק }
+          - { term: Schermo, gloss: מסך }
+          - { term: Attore, gloss: שחקן }
+          - { term: Attrice, gloss: שחקנית }
+          - { term: Personaggio, gloss: דמות }
+          - { term: Scena, gloss: סצנה }
+          - { term: Cinema, gloss: קולנוע }
+          - { term: Casa, gloss: בית }
+          - { term: Città, gloss: עיר }
+          - { term: Paese, gloss: מדינה }
+          - { term: Scuola, gloss: בית ספר }
+          - { term: Spiaggia, gloss: חוף }
+          - { term: Parco, gloss: פארק }
+          - { term: Mattina, gloss: בוקר }
+          - { term: Pomeriggio, gloss: אחר הצהריים }
+          - { term: Sera, gloss: ערב }
+          - { term: Notte, gloss: לילה }
+          - { term: Inverno, gloss: חורף }
+          - { term: Estate, gloss: קיץ }
+          - { term: Vedere, gloss: לראות }
+          - { term: Vivere, gloss: לחיות }
+          - { term: Essere, gloss: להיות }
+          - { term: Andare, gloss: ללכת }
+          - { term: Lavorare, gloss: לעבוד }
+          - { term: Studiare, gloss: ללמוד }
+          - { term: Piacere, gloss: למצוא חן / לאהוב }
+          - { term: Preferire, gloss: להעדיף }
+          - { term: Divertente, gloss: מצחיק }
+          - { term: Interessante, gloss: מעניין }
+          - { term: Emozionante, gloss: מרגש }
+          - { term: Triste, gloss: עצוב }
+          - { term: Bellissimo, gloss: יפהפה }
+
+vocabulary:
+  - slug: tv-e-film
+    title: TV e film
+    items: *tv-film-words
+
+activities:
+  - slug: tv-e-film-domande
+    title: 'Fare domande: chi, dove, quale, quando'
+    minutes: 8
+    items:
+      - id: qual-film
+        type: multipleChoice
+        prompt: ___ è il tuo film preferito?
+        options:
+          - { text: Qual, correct: true }
+          - { text: Chi, feedback: '*Chi* è per le persone. Per scegliere un film usa *qual*.' }
+          - { text: Dove, feedback: '*Dove* è per i luoghi. Per scegliere un film usa *qual*.' }
+      - id: dove-netflix
+        type: multipleChoice
+        prompt: '___ guardi i film italiani? — Su Netflix.'
+        options:
+          - { text: Dove, correct: true }
+          - {
+              text: Quando,
+              feedback: '*Quando* chiede il tempo (la sera, alle 8). Qui la risposta è un luogo: usa *dove*.',
+            }
+          - {
+              text: Chi,
+              feedback: '*Chi* chiede una persona. Qui la risposta è un luogo: usa *dove*.',
+            }
+      - id: chi-attore
+        type: multipleChoice
+        prompt: '___ è il tuo attore preferito? — Marcello Mastroianni.'
+        options:
+          - { text: Chi, correct: true }
+          - { text: Cosa, feedback: '*Cosa* chiede una cosa. Per una persona usa *chi*.' }
+          - { text: Dove, feedback: '*Dove* chiede un luogo. Per una persona usa *chi*.' }
+      - id: abbina-domande
+        type: matching
+        prompt: Abbina ogni parola interrogativa a una risposta possibile.
+        pairs:
+          - [Chi?, Sophia Loren.]
+          - [Dove?, A Roma.]
+          - [Quando?, Alle 8 di sera.]
+          - [Perché?, Perché è divertente.]
+          - [Cosa?, Un film.]
+      - id: chi-dove
+        type: fillBlank
+        prompt: Completa con *chi* o *dove*.
+        text: '___ è il tuo regista preferito? — Federico Fellini. ___ è ambientato il film? — A Roma.'
+        blanks: [[Chi, chi], [Dove, dove]]
+        wordBank: [Chi, Dove]
+      - id: domanda-chiusa
+        type: trueFalse
+        prompt: '*Sei un attore?* è una domanda chiusa: la risposta è solo *sì* o *no*.'
+        answer: true
+        feedback:
+          correct: Giusto! Le domande chiuse non hanno una parola interrogativa.
+          incorrect: 'A *Sei un attore?* rispondiamo solo *sì* o *no*: è una domanda chiusa.'
+      - id: domanda-roma
+        type: multipleChoice
+        prompt: 'Risposta: *Il film è ambientato a Roma.* Qual è la domanda giusta?'
+        options:
+          - { text: Dove è ambientato il film?, correct: true }
+          - {
+              text: Quando è ambientato il film?,
+              feedback: '*Quando* chiede il tempo. *A Roma* è un luogo: usa *dove*.',
+            }
+          - {
+              text: Chi è ambientato il film?,
+              feedback: '*Chi* chiede una persona. *A Roma* è un luogo: usa *dove*.',
+            }
+      - id: ordina-film
+        type: reorderSentence
+        prompt: Metti le parole in ordine per fare una domanda.
+        sentence: Qual è il tuo film preferito?
+
+  - slug: tv-e-film-preposizioni
+    title: 'Preposizioni: in, a, con, su'
+    minutes: 8
+    items:
+      - id: a-roma
+        type: multipleChoice
+        prompt: Il film è ambientato ___ Roma.
+        options:
+          - { text: a, correct: true }
+          - {
+              text: in,
+              feedback: 'Con le città usiamo *a*: *a Roma*. *In* è per i paesi: *in Italia*.',
+            }
+          - {
+              text: su,
+              feedback: "*Su* è per l'argomento (*un film su un viaggio*). Con le città usiamo *a*.",
+            }
+      - id: in-italia
+        type: multipleChoice
+        prompt: Il personaggio principale vive ___ Italia.
+        options:
+          - { text: in, correct: true }
+          - {
+              text: a,
+              feedback: '*A* è per le città (*a Roma*). Con i paesi usiamo *in*: *in Italia*.',
+            }
+          - { text: con, feedback: '*Con* è per la compagnia. Con i paesi usiamo *in*.' }
+      - id: alle-otto
+        type: fillBlank
+        prompt: Completa con la preposizione giusta.
+        text: Guardo il film ___ 8 di sera.
+        blanks: [[alle]]
+      - id: nel-in
+        type: fillBlank
+        prompt: Completa con *nel* o *in*.
+        text: Il film è ambientato ___ 1995, ___ estate.
+        blanks: [[nel], [in]]
+        wordBank: [nel, in]
+      - id: abbina-preposizioni
+        type: matching
+        prompt: Abbina ogni espressione a quello che indica.
+        pairs:
+          - [alle 5, un'ora]
+          - [in gennaio, un mese]
+          - [nel 2023, un anno]
+          - [a Roma, una città]
+          - [in Italia, un paese]
+      - id: film-su
+        type: multipleChoice
+        prompt: È un film ___ un viaggio.
+        options:
+          - { text: su, correct: true }
+          - {
+              text: con,
+              feedback: "*Con* è per la compagnia (*con la sua famiglia*). Per l'argomento usiamo *su*.",
+            }
+          - { text: a, feedback: "*A* è per le città e le ore. Per l'argomento usiamo *su*." }
+      - id: con-famiglia
+        type: trueFalse
+        prompt: 'Usiamo *con* per la compagnia: *Guardo il film con la mia famiglia.*'
+        answer: true
+        feedback:
+          correct: Giusto! *Con* indica le persone che sono con te.
+          incorrect: 'La frase è corretta: *con* indica la compagnia.'
+      - id: ordina-italia
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Il film è ambientato in Italia.

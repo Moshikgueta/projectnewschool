@@ -1,0 +1,624 @@
+# Cycle "Come rilassarsi", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: come-rilassarsi
+title: Come rilassarsi
+goal: Parlare di come ti rilassi con i verbi riflessivi e le frasi descrittive.
+position: 14
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Verbi riflessivi" and "Frasi descrittive") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - The source gives no activity times for this cycle, so no times are recorded.
+  - >-
+    The plan says Activities 1 and 3 practise reflexive verbs, but they (and
+    Activity 6, all marked "AZIONI") use ordinary present-tense actions (vedo, sento,
+    mangio; "Cosa fai quando…?"). They are tagged "Verbi riflessivi / azioni", and the
+    summary's third part on present-tense verbs is kept. Please confirm.
+  - >-
+    Summary part 3 was rewritten. The source's "-ire" example was "io mangio, tu
+    mangi…" (mangiare is an -are verb): it is now "io dormo, tu dormi, lui/lei dorme…".
+    Each verb group now also has the voi form, and the -are and -ere examples are
+    ascoltare and leggere.
+  - >-
+    Summary part 3 also said "Non usiamo essere con un altro verbo" with "Sbagliato:
+    Sto guardando la televisione". That is a rule copied from English (no "be" +
+    -ing): "Sto guardando la televisione" is correct Italian (stare + gerundio). The
+    rule is rewritten as "per le azioni di tutti i giorni usiamo il presente
+    semplice", with the wrong example "Sono guardo la televisione". Please confirm.
+  - >-
+    Introduction: the stray "Colpo di scena:" (a literal translation of "Twist:") was
+    removed; the frame is "Sono ___. Mi rilasso con ___."
+  - >-
+    Warm-up: questions and frames were cleaned of broken formatting; "Mi sento
+    rilassato" → "rilassato / rilassata" (and "stressato / stressata"); the garbled
+    emoji after "Il tè è rilassante" was removed; question 6 gets the frame "Io ___.
+    Il / La ___ è ___." with the source example.
+  - >-
+    Activity 1: "Sento musica" → "Sento la musica"; "Sento odore di caffè" → "Sento
+    l'odore del caffè"; a frame list was added from the "Strutture da praticare".
+  - >-
+    Activity 2: Spanish left in by mistake: "Come ti senti quando studi spagnolo?" →
+    "studi italiano?". Also "quando hai le prove (esami)?" → "quando hai un esame?";
+    "quando giochi a un gioco?" → "quando giochi?"; "vai in italia" → "vai in Italia".
+    A frame "Mi sento ___ perché ___" was added.
+  - >-
+    Activity 5: Spanish left in by mistake: "Parlare spagnolo" → "Parlare italiano".
+    The garbled emoji was removed. The Wheel of Names link is kept as the activity's
+    resource. Activity 4: "Fase 2/3/4" are now steps.
+  - >-
+    Mori: "Apri il chatbot della scuola" → "Apri la chat con Mori". In extra activity 1,
+    Mori's guess "Ti stai rilassando a casa!" → "Ti rilassi a casa!", to match "usa
+    solo il presente semplice".
+  - >-
+    Vocabulary: "Nervoso, לחוץ" → "עצבני / לחוץ"; the adjectives are given in the
+    masculine form, as in the source. Please confirm.
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: come-rilassarsi-classe
+    title: 'Classe: Come rilassarsi'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Come rilassarsi
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Verbi riflessivi
+            description: '*mi rilasso, ti rilassi, si rilassa, ci rilassiamo, vi rilassate, si rilassano*'
+          - name: Frasi descrittive
+            description: 'Soggetto + *essere* + aggettivo: *La musica è rilassante. Le luci sono soffuse.*'
+      - id: quizlet
+        type: externalLink
+        label: Come rilassarsi su Quizlet
+        url: https://quizlet.com/br/1068065379/come-rilassarsi-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Turno introduttivo
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Mi rilasso con ___.
+        example: Sono Dana. Mi rilasso con Netflix.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di preparazione
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quando ti senti rilassato / rilassata?
+            frame: Mi sento rilassato / rilassata quando ___.
+          - question: Quando ti senti stressato / stressata?
+            frame: Mi sento stressato / stressata quando ___.
+          - question: Cosa fai per rilassarti?
+            frame: Io ___ per rilassarmi. Lo faccio ___ volte a settimana.
+          - question: Quando ti rilassi? Al mattino o alla sera?
+            frame: Mi rilasso al mattino / alla sera.
+          - question: Preferisci rilassarti a casa o nella natura? Perché?
+            frame: Preferisco rilassarmi ___ perché ___.
+          - question: Cosa fai quando non riesci a dormire?
+            frame: 'Io ___. Il / La ___ è ___. (Esempio: Bevo tè alla camomilla. Il tè è rilassante.)'
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Parla dei tuoi sensi'
+        skills: [Verbi riflessivi / azioni]
+        steps:
+          - Ripassa con l'insegnante il vocabolario dei cinque sensi (vista, udito, tatto, olfatto, gusto).
+          - L'insegnante dà esempi per ogni senso.
+          - Ogni studente dice due esempi personali.
+        example: |-
+          **Vedo** un libro. **Vedo** una finestra.
+          **Sento** la musica. **Tocco** la mia mano.
+          **Sento l'odore** del caffè. **Mangio** una mela.
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Completa le frasi
+        items:
+          - question: Vedo ___ e ___.
+          - question: Sento ___ e ___.
+          - question: Tocco ___ e ___.
+          - question: Sento l'odore di ___ e di ___.
+          - question: Mangio ___ e ___.
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Come ti senti quando…?'
+        skills: [Frasi descrittive]
+        steps:
+          - Lavorate in coppia.
+          - Intervista il tuo compagno con le domande qui sotto.
+          - 'Presenta alla classe una o due risposte del tuo compagno, usando la **terza persona**.'
+        example: |-
+          *Luca si sente felice quando mangia il suo cibo preferito.*
+          *Sara si sente rilassata quando ascolta musica.*
+      - id: act2-questions
+        type: discussionQuestions
+        items:
+          - question: Come ti senti quando ti svegli presto? Perché?
+            frame: Mi sento ___ perché ___.
+          - question: Come ti senti quando studi italiano? Perché?
+            frame: Mi sento ___ perché ___.
+          - question: Come ti senti quando mangi il tuo cibo preferito?
+            frame: Mi sento ___.
+          - question: Come ti senti quando vedi il tuo migliore amico / la tua migliore amica?
+            frame: Mi sento ___.
+          - question: Come ti senti quando guardi un film divertente?
+            frame: Mi sento ___.
+          - question: Come ti senti quando hai un esame?
+            frame: Mi sento ___.
+          - question: Come ti senti quando giochi?
+            frame: Mi sento ___.
+          - question: Come ti senti quando hai fame?
+            frame: Mi sento ___.
+          - question: Come ti senti quando ricevi un regalo?
+            frame: Mi sento ___.
+          - question: Come ti senti quando sei a casa?
+            frame: Mi sento ___.
+          - question: Come ti senti quando ascolti musica?
+            frame: Mi sento ___.
+          - question: Come ti senti quando vai in Italia?
+            frame: Mi sento ___.
+          - question: Come ti senti quando parli italiano?
+            frame: Mi sento ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Cosa fai quando…?'
+        skills: [Verbi riflessivi / azioni]
+        steps:
+          - Lavorate in coppia.
+          - 'Intervista il tuo compagno: *Cosa fai quando…?* Scrivi le sue risposte.'
+          - 'Condividi con la classe una risposta del tuo compagno, usando la **terza persona**.'
+        example: |-
+          *Maya mangia cioccolato quando ha fame.*
+          *Daniel ascolta musica quando si sente stressato.*
+          *Tomer porta a spasso il suo cane quando vuole rilassarsi.*
+      - id: act3-questions
+        type: discussionQuestions
+        items:
+          - question: Cosa fai quando vuoi dormire ma sei al lavoro?
+            frame: Quando voglio dormire al lavoro, io ___.
+          - question: Cosa fai quando ti senti stressato / stressata?
+            frame: Quando mi sento stressato / stressata, io ___.
+          - question: Cosa fai quando hai fame? Cosa mangi?
+            frame: Quando ho fame, mangio ___.
+          - question: Cosa fai quando vuoi disconnetterti o rilassarti?
+            frame: Quando voglio rilassarmi, io ___.
+      - id: act4
+        type: classActivity
+        title: "Attività 4: Descrivi un luogo rilassante e indovina che cos'è"
+        skills: [Frasi descrittive]
+        steps:
+          - Pensa a un luogo rilassante. Descrivi 3 cose di quel luogo, al presente e con frasi semplici.
+          - Gli altri studenti scrivono o dicono quale luogo pensano che sia.
+          - "Di' la risposta (*Era la spiaggia!*). Tutti hanno indovinato la stessa cosa? Chi ci è arrivato?"
+          - La prima persona che indovina descrive il prossimo luogo.
+        example: |-
+          *C'è **acqua**. Mangio il **gelato** lì. Uso un **costume da bagno**.*
+          *— La spiaggia!*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Il mio luogo rilassante
+        items:
+          - question: C'è ___.
+          - question: ___ lì.
+          - question: Uso ___.
+          - question: Che luogo è? Penso che sia ___.
+      - id: act5
+        type: classActivity
+        title: 'Attività 5: La roulette delle emozioni'
+        skills: [Frasi descrittive]
+        steps:
+          - L'insegnante gira la ruota e sceglie una situazione e uno studente.
+          - "Di' come ti senti in quella situazione e perché: *Mi sento + emozione + perché + motivo.*"
+          - '**Regola importante:** ogni studente dà una risposta **diversa** da quelle già dette dai compagni.'
+        wordBank:
+          [
+            svegliarsi presto,
+            mangiare la pizza,
+            ascoltare la musica,
+            andare in spiaggia,
+            ricevere un regalo,
+            avere un esame,
+            guardare un film divertente,
+            parlare italiano,
+            giocare una partita,
+            essere a casa la domenica,
+          ]
+        example: |-
+          Situazione: *Ho un esame.*
+          *Mi sento nervoso perché studio molto. / Mi sento stanco perché non dormo bene.*
+          *Mi sento felice perché mangio la pizza. / Mi sento rilassato perché sono a casa.*
+        resource:
+          label: La roulette delle emozioni
+          url: https://wheelofnames.com/jy3-2d3
+      - id: act5-sentences
+        type: discussionQuestions
+        title: Completa la frase
+        items:
+          - question: Mi sento ___ perché ___.
+      - id: act6
+        type: classActivity
+        title: 'Attività 6: Il mio weekend di relax'
+        skills: [Verbi riflessivi / azioni]
+        steps:
+          - Scrivi 3 frasi su cosa fai durante un fine settimana rilassante.
+          - 'Lavorate in coppia. Chiedi al tuo compagno: *Cosa fai durante un weekend di relax?*'
+          - Ogni coppia presenta alla classe una frase del compagno, usando la terza persona.
+        example: |-
+          A: *Cosa fai durante un weekend di relax?*
+          B: *Cammino nel parco e ascolto musica.*
+          A: *Fantastico! La musica è rilassante.*
+          *Maria beve un caffè e guarda un film. Pedro si riposa a casa perché è stanco.*
+      - id: act6-sentences
+        type: discussionQuestions
+        title: Il mio weekend di relax
+        items:
+          - question: Io ___. (Dormo molto.)
+          - question: Io ___. (Bevo il tè.)
+          - question: Io ___. (Ascolto musica calma.)
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Verbi riflessivi** (domande e Attività 1 e 3) e
+          **Frasi descrittive** (domande e Attività 2 e 4). Le Attività 5 e 6 sono
+          attività extra.
+      - id: n-intro
+        anchor: intro
+        text: Dai prima il tuo esempio, poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Presenta esempi per ogni senso (vista, udito, tatto, olfatto, gusto); poi ogni
+          studente dice due esempi personali. Lavora un senso alla volta.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Dividi gli studenti in coppie. Alla fine ogni studente condivide con la classe
+          una risposta del compagno, alla terza persona.
+      - id: n-act4
+        anchor: act4
+        text: La prima persona che indovina correttamente descrive il luogo successivo.
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Prepara la ruota digitale (Wheel of Names) con le situazioni, oppure usa carte
+          con le situazioni scritte sopra. Gira la ruota e scegli uno studente.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: come-rilassarsi-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-reflexive
+        type: ruleSummary
+        skill: Verbi riflessivi
+        rules:
+          - text: 'I verbi riflessivi si usano con i **pronomi riflessivi**, che cambiano a seconda della persona.'
+            examples:
+              [
+                Io **mi rilasso**,
+                Tu **ti rilassi**,
+                Lui / Lei **si rilassa**,
+                Noi **ci rilassiamo**,
+                Voi **vi rilassate**,
+                Loro **si rilassano**,
+              ]
+          - text: "Si usano quando **l'azione ricade sullo stesso soggetto** che la compie. Per il relax, descrivono le attività che facciamo per noi stessi."
+          - text: Esempi di routine di rilassamento.
+            examples:
+              [
+                Io **mi allungo** prima di dormire.,
+                Tu **ti siedi** in una posizione comoda.,
+                Lui **si rilassa** sull'amaca.,
+                Noi **ci concentriamo** sulla respirazione.,
+                Loro **si fanno** un bagno caldo.,
+              ]
+      - id: rules-descriptive
+        type: ruleSummary
+        skill: Frasi descrittive
+        rules:
+          - text: 'Usiamo le frasi descrittive per descrivere cose, persone, luoghi o situazioni: non indicano azioni, ma caratteristiche o condizioni.'
+            examples: [L'atmosfera è calma., La musica è rilassante., Le luci sono soffuse.]
+          - text: 'Al presente usiamo il verbo **essere**: **soggetto + essere + aggettivo o sostantivo**.'
+            examples: [L'aroma è gradevole., La stanza è silenziosa., Gli asciugamani sono morbidi.]
+          - text: 'Per la forma negativa basta aggiungere **non** prima del verbo *essere*.'
+            examples:
+              [
+                L'acqua **non è** fredda.,
+                La musica **non è** ad alto volume.,
+                Le pareti **non sono** scure.,
+              ]
+          - text: "Attenzione al plurale: con un soggetto plurale usiamo **sono**, e anche l'aggettivo va al plurale."
+            examples:
+              [I cuscini sono comodi., Le lampade non sono luminose., I suoni sono naturali.]
+      - id: rules-actions
+        type: ruleSummary
+        skill: Verbi al presente (azioni)
+        rules:
+          - text: Soggetto + verbo al presente.
+            examples: [Io leggo un libro., Tu ascolti musica., Loro guardano un film.]
+          - text: 'La fine del verbo cambia con la persona.'
+            examples:
+              [
+                '**-are**: io ascolto, tu ascolti, lui / lei ascolta, noi ascoltiamo, voi ascoltate, loro ascoltano',
+                '**-ere**: io leggo, tu leggi, lui / lei legge, noi leggiamo, voi leggete, loro leggono',
+                '**-ire**: io dormo, tu dormi, lui / lei dorme, noi dormiamo, voi dormite, loro dormono',
+              ]
+          - text: 'Per le azioni di tutti i giorni usiamo il presente semplice, senza *essere* davanti al verbo.'
+            examples:
+              ['Corretto: *Guardo la televisione.*', 'Sbagliato: *Sono guardo la televisione.*']
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: come-rilassarsi-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia questo messaggio e invialo. Mori ti farà delle domande; rispondi sempre in italiano.
+      - id: mori-rilassarsi
+        type: aiTutorPrompt
+        title: Parlare di come ti rilassi
+        message: >-
+          Ciao Mori! Vorrei esercitarmi con l'italiano. Puoi farmi delle domande sul
+          rilassamento usando frasi descrittive e verbi riflessivi? Per favore, usa solo
+          il presente semplice e correggi i miei errori.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Hai finito e vuoi continuare? Scrivi: **Per favore, chiedimi di più!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Esercizi aggiuntivi
+      - id: mori-routine
+        type: aiTutorPrompt
+        title: Routine rilassanti
+        intro: >-
+          Invia questo messaggio a Mori e descrivi una routine rilassante. Per esempio:
+          *Mi siedo su una poltrona morbida. Bevo tè. Leggo un libro. Ascolto musica
+          rilassante.* (Mori: *Ti rilassi a casa!*)
+        message: Ciao Mori! Facciamo un'attività. Ti descriverò una routine rilassante e tu devi indovinare cosa sto facendo.
+      - id: mori-routine-turno
+        type: aiTutorPrompt
+        title: 'Routine rilassanti: tocca a te!'
+        intro: Poi invia questo messaggio.
+        message: Adesso tocca a te! Descrivi una routine rilassante e io la indovinerò.
+      - id: mori-luogo
+        type: aiTutorPrompt
+        title: Il mio luogo di relax
+        intro: >-
+          Invia questo messaggio a Mori e descrivi il tuo luogo. Per esempio: *C'è un
+          grande albero. Mi siedo sotto e scrivo sul mio quaderno. Sento gli uccelli e
+          vedo i fiori.*
+        message: Ciao, Mori! Proviamo qualcosa di nuovo. Ti descriverò il mio posto preferito per rilassarmi. Prova a immaginarlo.
+      - id: mori-luogo-turno
+        type: aiTutorPrompt
+        title: 'Il mio luogo di relax: tocca a te!'
+        intro: Poi invia questo messaggio.
+        message: Adesso tocca a te! Descrivi il luogo in cui ti rilassi e io lo immaginerò.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: come-rilassarsi-pratica
+    book: workbook
+    title: 'Pratica: Come rilassarsi'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati con le due abilità del ciclo. Ogni risposta viene corretta subito, e puoi riprovare.
+      - id: ex-riflessivi
+        type: activity
+        activity: come-rilassarsi-riflessivi
+      - id: ex-descrittive
+        type: activity
+        activity: come-rilassarsi-descrittive
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: come-rilassarsi-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Parole per rilassarsi
+        glossLang: he
+        link: https://quizlet.com/br/1068065379/come-rilassarsi-flash-cards/
+        items: &rilassarsi-words
+          - { term: Mi rilasso, gloss: אני נרגע }
+          - { term: Ti rilassi, gloss: אתה נרגע }
+          - { term: Si rilassa, gloss: הוא / היא נרגע / נרגעת }
+          - { term: Ci rilassiamo, gloss: אנחנו נרגעים }
+          - { term: Vi rilassate, gloss: אתם נרגעים }
+          - { term: Si rilassano, gloss: הם נרגעים }
+          - { term: Dormo, gloss: אני ישן }
+          - { term: Bevo, gloss: אני שותה }
+          - { term: Leggo, gloss: אני קורא }
+          - { term: Ascolto, gloss: אני מקשיב }
+          - { term: Scrivo, gloss: אני כותב }
+          - { term: Cammino, gloss: אני הולך }
+          - { term: Mangio, gloss: אני אוכל }
+          - { term: Poltrona, gloss: כורסה }
+          - { term: Letto, gloss: מיטה }
+          - { term: Amaca, gloss: ערסל }
+          - { term: Stanza, gloss: חדר }
+          - { term: Albero, gloss: עץ }
+          - { term: Fiori, gloss: פרחים }
+          - { term: Musica, gloss: מוזיקה }
+          - { term: Libro, gloss: ספר }
+          - { term: Tè, gloss: תה }
+          - { term: Caffè, gloss: קפה }
+          - { term: Acqua, gloss: מים }
+          - { term: Calmo, gloss: רגוע }
+          - { term: Rilassante, gloss: מרגיע }
+          - { term: Stanco, gloss: עייף }
+          - { term: Nervoso, gloss: עצבני / לחוץ }
+          - { term: Felice, gloss: שמח }
+          - { term: Triste, gloss: עצוב }
+          - { term: Rumoroso, gloss: רועש }
+          - { term: Silenzioso, gloss: שקט }
+          - { term: Morbido, gloss: רך }
+          - { term: Comodo, gloss: נוח }
+          - { term: Caldo, gloss: חם }
+          - { term: Freddo, gloss: קר }
+
+vocabulary:
+  - slug: come-rilassarsi
+    title: Come rilassarsi
+    items: *rilassarsi-words
+
+activities:
+  - slug: come-rilassarsi-riflessivi
+    title: 'Verbi riflessivi: mi, ti, si, ci, vi'
+    minutes: 8
+    items:
+      - id: io-mi
+        type: multipleChoice
+        prompt: Io ___ rilasso con la musica.
+        options:
+          - { text: mi, correct: true }
+          - { text: ti, feedback: '*Ti* è per *tu*. Con *io* usa *mi*: *io mi rilasso*.' }
+          - { text: si, feedback: '*Si* è per *lui / lei / loro*. Con *io* usa *mi*.' }
+      - id: noi-ci
+        type: multipleChoice
+        prompt: Noi ___ concentriamo sulla respirazione.
+        options:
+          - { text: ci, correct: true }
+          - { text: si, feedback: '*Si* è per *lui / lei / loro*. Con *noi* usa *ci*.' }
+          - { text: vi, feedback: '*Vi* è per *voi*. Con *noi* usa *ci*.' }
+      - id: abbina-rilassarsi
+        type: matching
+        prompt: Abbina ogni persona al verbo *rilassarsi*.
+        pairs:
+          - [io, mi rilasso]
+          - [tu, ti rilassi]
+          - [lui / lei, si rilassa]
+          - [noi, ci rilassiamo]
+          - [voi, vi rilassate]
+      - id: tu-ti-loro-si
+        type: fillBlank
+        prompt: Completa con il pronome giusto (*mi, ti, si, ci, vi*).
+        text: Tu ___ siedi in una posizione comoda. Loro ___ rilassano sull'amaca.
+        blanks: [[ti], [si]]
+      - id: voi-vi-rilassate
+        type: fillBlank
+        prompt: Completa con il verbo *rilassarsi* al presente.
+        text: Voi ___ ___ a casa la domenica.
+        blanks: [[vi], [rilassate]]
+      - id: loro-ci
+        type: trueFalse
+        prompt: 'Con *loro* usiamo il pronome *ci*: *Loro ci rilassano.*'
+        answer: false
+        feedback:
+          correct: 'Giusto! Con *loro* usiamo *si*: *Loro si rilassano.*'
+          incorrect: '*Ci* è per *noi*. Con *loro* usiamo *si*: *Loro si rilassano.*'
+      - id: tu-ti-rilassi
+        type: multipleChoice
+        prompt: Quale frase è corretta?
+        options:
+          - { text: Tu ti rilassi la sera., correct: true }
+          - {
+              text: Tu si rilassi la sera.,
+              feedback: 'Con *tu* il pronome è *ti*: *tu ti rilassi*.',
+            }
+          - {
+              text: Tu ti rilassa la sera.,
+              feedback: 'Con *tu* il verbo finisce in *-i*: *ti rilassi*.',
+            }
+      - id: ordina-musica
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Io mi rilasso con la musica.
+
+  - slug: come-rilassarsi-descrittive
+    title: 'Frasi descrittive: essere + aggettivo'
+    minutes: 8
+    items:
+      - id: la-musica-e
+        type: multipleChoice
+        prompt: La musica ___ rilassante.
+        options:
+          - { text: è, correct: true }
+          - { text: sono, feedback: '*La musica* è singolare: usa *è*.' }
+          - { text: sei, feedback: '*Sei* è per *tu*. Per una cosa usa *è*.' }
+      - id: le-luci-sono
+        type: multipleChoice
+        prompt: Le luci ___ soffuse.
+        options:
+          - { text: sono, correct: true }
+          - { text: è, feedback: '*Le luci* è plurale: usa *sono*.' }
+          - { text: siamo, feedback: '*Siamo* è per *noi*. Per più cose usa *sono*.' }
+      - id: e-sono
+        type: fillBlank
+        prompt: Completa con *è* o *sono*.
+        text: L'aroma ___ gradevole. Gli asciugamani ___ morbidi.
+        blanks: [[è], [sono]]
+        wordBank: [è, sono]
+      - id: cuscini-comodi
+        type: multipleChoice
+        prompt: I cuscini sono ___.
+        options:
+          - { text: comodi, correct: true }
+          - {
+              text: comodo,
+              feedback: "*I cuscini* è plurale: anche l'aggettivo va al plurale, *comodi*.",
+            }
+          - { text: comode, feedback: '*Cuscini* è maschile: usa *comodi*.' }
+      - id: non-dopo
+        type: trueFalse
+        prompt: 'Per la forma negativa mettiamo *non* dopo il verbo: *La musica è non calma.*'
+        answer: false
+        feedback:
+          correct: 'Giusto! *Non* va prima del verbo: *La musica non è calma.*'
+          incorrect: '*Non* va prima del verbo *essere*: *La musica non è calma.*'
+      - id: acqua-negativo
+        type: fillBlank
+        prompt: "Scrivi la frase alla forma negativa: *L'acqua è fredda.*"
+        text: L'acqua ___ fredda.
+        blanks: [[non è]]
+      - id: abbina-descrizioni
+        type: matching
+        prompt: Abbina ogni soggetto alla fine giusta. Guarda se è maschile o femminile, singolare o plurale.
+        pairs:
+          - [Il tè, è caldo.]
+          - [La stanza, è silenziosa.]
+          - [I cuscini, sono comodi.]
+          - [Le pareti, non sono scure.]
+      - id: ordina-stanza
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: La stanza non è rumorosa.

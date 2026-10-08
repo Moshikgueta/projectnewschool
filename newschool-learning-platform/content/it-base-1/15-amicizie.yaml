@@ -1,0 +1,595 @@
+# Cycle "Amicizie", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: amicizie
+title: Amicizie
+goal: Parlare dei tuoi amici con frasi descrittive e verbi al presente.
+position: 15
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Frasi descrittive" and "Verbi al presente") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The source gives no activity times for this cycle (only "10 minuti" for the
+    planning step of Activity 4, kept in the step), so no times are recorded.
+  - >-
+    Summary, verbs rule 2 said "Lui/Lei: il verbo cambia un po'", a rule copied from
+    English (add -s for he/she). In Italian the ending changes for every person. It
+    is rewritten with the full present of giocare and a reminder that lui / lei ends
+    in -a (-are) or -e (-ere, -ire). Please confirm.
+  - >-
+    Summary, "Domanda: Metto è o il verbo all'inizio" is also copied from English
+    (inversion). In Italian a yes/no question keeps the same word order and changes
+    only the intonation (and the question mark): "Il tuo amico è simpatico?". The
+    rule is rewritten. Please confirm.
+  - >-
+    Mori: English left in by mistake: "Voglio esercitarmi con l'inglese" →
+    "con l'italiano"; "con la frase in inglese" → "con la frase in italiano".
+  - >-
+    Introduction example: "Il mio migliore amico è Giulia" → "La mia migliore amica è
+    Giulia"; the frame is "Il mio amico / La mia amica è ___".
+  - >-
+    Warm-up 1: the frame "Vedo i miei amici su ___ al ___" (copied from English "on
+    ___ at ___") → "Vedo i miei amici il ___ (giorno) al / alla ___ (luogo)".
+    Questions were renumbered (the source had several "1.").
+  - >-
+    Activity 1: the example "Ho scelto Buffon per fare sport" names someone who is
+    not in the list; it is now "Ho scelto Valentino Rossi…". Item 9 "Cristiano
+    Ronaldo" (not Italian, no description) was left out of the list. Please confirm,
+    or add Gianluigi Buffon to the list instead.
+  - >-
+    Activity 3: the steps "Invertite i ruoli e ripetete" and "Presenta alla classe…"
+    appeared twice; they are kept once.
+  - >-
+    Activity 5 ("Io e il mio amico: simili e diversi") is kept as an extra activity
+    (it was not numbered as an activity in the source heading). Its table is a table
+    block.
+  - >-
+    Vocabulary: "Divertente, מצחיק" → "מצחיק / כיפי"; "Compagno" keeps both glosses
+    "בן זוג / חבר לכיתה". Please confirm.
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: amicizie-classe
+    title: 'Classe: Amicizie'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Amicizie
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Frasi descrittive
+            description: 'Descrivere una persona: *Il mio amico è simpatico. Le mie amiche sono tranquille.*'
+          - name: Verbi al presente
+            description: 'Cosa facciamo ogni giorno: *io gioco, tu studi, lui / lei guarda, noi leggiamo, loro ascoltano*'
+      - id: quizlet
+        type: externalLink
+        label: Amicizie su Quizlet
+        url: https://quizlet.com/br/1068038287/italiano-basico-amicizia-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Turno introduttivo
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Il mio amico / La mia amica è ___. Ci piace ___ insieme.
+        example: Sono Laura. La mia migliore amica è Giulia. Ci piace mangiare la pizza insieme.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quando vedi i tuoi amici?
+            frame: Vedo i miei amici il ___ (giorno) al / alla ___ (luogo).
+          - question: 'Scegli un amico: quali sono le tre cose che ti piacciono di questa persona?'
+            frame: Mi piace che ___ sia ___, ___ e ___.
+          - question: Perché il tuo amico è importante per te?
+            frame: È importante per me perché è ___.
+          - question: Pensi che le amicizie siano importanti? Perché?
+            frame: |-
+              Sì, penso che le amicizie siano importanti perché ___.
+              No, penso che le amicizie non siano importanti perché ___.
+          - question: Come ti senti quando sei con i tuoi amici?
+            frame: Mi sento ___ perché ___.
+          - question: Cosa fai con i tuoi amici?
+            frame: Io ___ con i miei amici.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Chi sarebbe il tuo amico ideale?'
+        skills: [Frasi descrittive]
+        steps:
+          - L'insegnante presenta un gruppo di 3 personaggi famosi.
+          - 'Scegli: un amico con cui viaggiare, un amico con cui fare sport e un amico con cui lavorare a un progetto.'
+          - Spiega perché, con un aggettivo.
+        wordBank:
+          [
+            Roberto Benigni – attore e regista (La vita è bella),
+            Sophia Loren – attrice e icona del cinema,
+            Andrea Bocelli – tenore e cantante lirico,
+            Laura Pausini – cantante pop,
+            Monica Bellucci – attrice famosa anche a Hollywood,
+            Federico Fellini – regista,
+            Giorgio Armani – stilista di moda,
+            Valentino Rossi – pilota di MotoGP,
+          ]
+        example: |-
+          *Ho scelto di viaggiare con Laura Pausini perché è **simpatica**.*
+          *Ho scelto Valentino Rossi per fare sport perché è **sportivo**.*
+          *Ho scelto Benigni per lavorare a un progetto perché è **creativo**.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Il mio amico ideale
+        items:
+          - question: Ho scelto di viaggiare con ___ perché è ___.
+          - question: Ho scelto ___ per fare sport perché è ___.
+          - question: Ho scelto ___ per lavorare a un progetto perché è ___.
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Il tuo amico è…'
+        skills: [Frasi descrittive]
+        steps:
+          - Lavorate in coppia. Ognuno pensa a un amico reale (o inventato) e gli dà un nome.
+          - Lo studente A fa allo studente B domande aperte sul suo amico.
+          - '**Regola:** non puoi rispondere solo con *sì* o *no*. Devi dire frasi complete.'
+          - Dopo l'intervista, presenta alla classe l'amico del tuo compagno, usando la terza persona.
+        example: |-
+          *Il mio amico è alto, ha i capelli lunghi ed è molto amichevole.*
+          *È divertente, ma a volte è un po' rumoroso.*
+          *L'amica della mia compagna di classe è alta e molto amichevole. Le piace ballare e aiuta sempre le sue amiche.*
+          *L'amico del mio compagno di classe è tranquillo e studioso. Non è timido e ama giocare a calcio.*
+      - id: act2-questions
+        type: discussionQuestions
+        items:
+          - question: Che aspetto fisico ha il tuo amico?
+            frame: Il mio amico / La mia amica è ___ e ha ___.
+          - question: Com'è la sua personalità?
+            frame: È ___ e ___.
+          - question: Quali qualità ha il tuo amico?
+            frame: È ___. Non è ___.
+          - question: Cosa fa il tuo amico quando è con i suoi amici?
+            frame: Quando è con i suoi amici, ___.
+          - question: In cosa è diverso da te?
+            frame: Lui / Lei è ___, ma io sono ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Quanto conosci bene il tuo amico?'
+        skills: [Verbi al presente]
+        steps:
+          - Lavorate in coppia. Ognuno pensa a un amico reale o immaginario.
+          - Fai domande al tuo compagno sul suo amico e scrivi le risposte.
+          - Invertite i ruoli e ripetete.
+          - Alla fine, presentate alla classe l'amico del vostro compagno usando la **terza persona**.
+        wordBank:
+          [
+            lavorare,
+            studiare,
+            iniziare,
+            finire,
+            fare sport,
+            giocare,
+            uscire,
+            leggere,
+            guardare film,
+            ascoltare musica,
+            sempre,
+            di solito,
+            a volte,
+            mai,
+          ]
+        example: "*L'amico di Laura si chiama Diego. Lavora in un ristorante. Gli piace ascoltare musica e giocare a calcio.*"
+      - id: act3-questions
+        type: discussionQuestions
+        items:
+          - question: Dove lavora il tuo amico?
+          - question: Quanti giorni alla settimana lavora?
+          - question: A che ora inizia e a che ora finisce il lavoro?
+          - question: Cosa gli piace fare nel tempo libero?
+          - question: Cosa non gli piace fare?
+          - question: Pratica sport? Quali?
+          - question: Con chi passa il tempo durante il fine settimana?
+          - question: Cosa fa di solito la mattina?
+          - question: Cosa fa di solito la sera?
+          - question: Ha delle abitudini particolari?
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Una giornata perfetta con gli amici'
+        skills: [Verbi al presente]
+        steps:
+          - Pianifica una **giornata perfetta con i tuoi amici** e completa la tabella qui sotto (10 minuti).
+          - Racconta alla classe la tua giornata perfetta, usando il presente semplice.
+        example: |-
+          **Dove?** Al mare. **Quando?** Domenica.
+          In questo giorno perfetto, noi:
+          1. Ci incontriamo alla stazione degli autobus.
+          2. Compriamo cibo e bevande.
+          3. Andiamo in spiaggia e nuotiamo.
+          4. Giochiamo a pallavolo e ascoltiamo musica.
+          5. Pranziamo insieme e parliamo dei nostri ricordi.
+          6. Guardiamo il tramonto e facciamo foto prima di tornare a casa.
+      - id: act4-plan
+        type: discussionQuestions
+        title: Una giornata perfetta con gli amici!
+        items:
+          - question: Dove? ___
+          - question: Quando? ___
+          - question: 'In questo giorno perfetto, noi: 1. ___'
+          - question: 2. ___
+          - question: 3. ___
+          - question: 4. ___
+          - question: 5. ___
+          - question: 6. ___
+      - id: act5
+        type: classActivity
+        title: 'Attività 5: Io e il mio amico, simili e diversi'
+        skills: [Verbi al presente]
+        steps:
+          - Pensa a un amico vero (oppure inventato).
+          - Lavora con un compagno. Fai al tuo compagno le domande qui sotto sul suo amico.
+          - Scrivi le risposte nella tabella **Proprio come me / Diverso da me**.
+          - 'Presenta alla classe 2–3 frasi. Usa *ma, e, anche, invece*.'
+        example: |-
+          *Io e il mio amico facciamo sport nei fine settimana, ma lui non guarda film, mentre io sì.*
+          *A entrambi piace la pizza, ma lui ascolta musica classica e io musica pop.*
+      - id: act5-questions
+        type: discussionQuestions
+        items:
+          - question: Quali sport gli piacciono?
+          - question: Che musica ascolta?
+          - question: Quali cibi gli piacciono?
+          - question: Cosa gli piace fare con gli amici?
+          - question: Quali film o serie guarda?
+          - question: Cosa fa di solito la mattina?
+          - question: Cosa fa di solito nei fine settimana?
+          - question: Dove passa di solito il tempo con gli amici?
+          - question: Con chi trascorre la maggior parte del tempo?
+          - question: Quali posti visita con gli amici?
+      - id: act5-table
+        type: table
+        caption: 'Esempio: proprio come me o diverso da me?'
+        header: [Proprio come me, Diverso da me]
+        rows:
+          - [Gli piace la pizza., Non gli piace il cinema.]
+          - [Ascolta musica pop., Ascolta musica classica.]
+          - [Fa sport il sabato., Non fa sport.]
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Frasi descrittive** (domande e Attività 1 e 2) e
+          **Verbi al presente** (domande e Attività 3 e 4). L'Attività 5 è un'attività
+          extra (terza persona singolare; connettivi *ma, e, anche, invece*).
+      - id: n-intro
+        anchor: intro
+        text: Dai prima il tuo esempio, poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Scegli 3 personaggi dalla lista e presentali al gruppo; ogni studente sceglie
+          un amico per ogni situazione e spiega perché con un aggettivo.
+      - id: n-act4
+        anchor: act4
+        text: Gli studenti hanno 10 minuti per completare la tabella; poi ognuno racconta la sua giornata al presente.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: amicizie-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-descriptive
+        type: ruleSummary
+        skill: 'Frasi descrittive: come descrivere una persona'
+        rules:
+          - text: '**Singolare** (una persona): soggetto + **è** + aggettivo.'
+            examples: [Il mio amico è simpatico., La mia amica è alta.]
+          - text: "**Plurale** (più persone): soggetto + **sono** + aggettivo. Anche l'aggettivo va al plurale."
+            examples: [I miei amici sono gentili., Le mie amiche sono tranquille.]
+          - text: 'Forma negativa: **non** prima di *è* / *sono*.'
+            examples: [Il mio amico non è noioso.]
+          - text: "Domanda: l'ordine delle parole non cambia; cambia l'intonazione e scriviamo il punto interrogativo."
+            examples: [Il tuo amico è simpatico?]
+      - id: rules-verbs
+        type: ruleSummary
+        skill: 'Verbi al presente: cosa facciamo ogni giorno'
+        rules:
+          - text: Per le azioni di ogni giorno usiamo il verbo al presente.
+            examples: [Io gioco a calcio., Noi studiamo insieme.]
+          - text: 'La fine del verbo cambia con ogni persona. Con **lui / lei** il verbo finisce in **-a** (verbi in -are) o in **-e** (verbi in -ere e -ire).'
+            examples:
+              [
+                'io gioco, tu giochi, lui / lei gioca, noi giochiamo, voi giocate, loro giocano',
+                Lui lavora in un bar.,
+                Lei guarda la TV.,
+                Lei legge un libro.,
+              ]
+          - text: 'Forma negativa: **non** davanti al verbo.'
+            examples: [Io non lavoro la domenica., Il mio amico non gioca a calcio.]
+      - id: summary-table
+        type: table
+        caption: In poche parole
+        rows:
+          - [Descrivere, Il mio amico è simpatico. I miei amici sono divertenti.]
+          - [Azioni, 'Io gioco, tu studi, lui / lei guarda, noi leggiamo, loro ascoltano.']
+          - [Negativo, 'Aggiungo *non* prima del verbo: Non è noioso. Non gioca a calcio.']
+          - [
+              Domanda,
+              'Stesso ordine, con il punto interrogativo: Il tuo amico è simpatico? Lavora oggi?',
+            ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: amicizie-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia questo messaggio e invialo. Mori ti farà delle domande e risponderà alle tue frasi.
+      - id: mori-amicizia
+        type: aiTutorPrompt
+        title: Parlare dell'amicizia
+        message: >-
+          Ciao Mori! Voglio esercitarmi con l'italiano. Puoi farmi domande sull'amicizia?
+          Usa frasi descrittive e frasi d'azione, per favore. Usa solo il presente
+          semplice e correggi i miei errori.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, chiedimi di più!**
+          Non capisci? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Attività interattive
+      - id: mori-migliore-amico
+        type: aiTutorPrompt
+        title: Il mio migliore amico
+        intro: >-
+          Invia questo messaggio a Mori e descrivi la tua migliore amica o il tuo
+          migliore amico. Per esempio: *Ha i capelli lunghi e gli occhi grandi. Mi
+          ascolta sempre. Andiamo al parco insieme e pranziamo a scuola.*
+        message: Ciao Mori! Facciamo un'attività. Descriverò la mia migliore amica con frasi e azioni. Dimmi se pensi che siamo buone amiche.
+      - id: mori-migliore-amico-turno
+        type: aiTutorPrompt
+        title: 'Il mio migliore amico: tocca a te!'
+        intro: Poi invia questo messaggio.
+        message: Adesso tocca a te! Descrivi il tuo migliore amico e ti dirò se sei un buon amico.
+      - id: mori-buoni-amici
+        type: aiTutorPrompt
+        title: Cosa fanno i buoni amici?
+        intro: >-
+          Invia questo messaggio a Mori e scrivi tre frasi. Per esempio: *1. Un buon
+          amico ti aiuta. 2. Un buon amico ride di te quando sei triste. 3. Un buon amico
+          gioca con te.* (Mori: *La numero 2 non è vera.*)
+        message: Ehi, Mori! Facciamo un gioco. Scriverò tre cose che fanno i buoni amici. Una non è vera. Tu devi indovinare quale non è vera.
+      - id: mori-buoni-amici-turno
+        type: aiTutorPrompt
+        title: 'Cosa fanno i buoni amici? Tocca a te!'
+        intro: Poi invia questo messaggio.
+        message: Ora tocca a te! Scrivi tre cose che fanno i tuoi amici. Io indovinerò quale non è vera.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: amicizie-pratica
+    book: workbook
+    title: 'Pratica: Amicizie'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati con le due abilità del ciclo. Ogni risposta viene corretta subito, e puoi riprovare.
+      - id: ex-descrittive
+        type: activity
+        activity: amicizie-descrittive
+      - id: ex-presente
+        type: activity
+        activity: amicizie-presente
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: amicizie-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Parole dell'amicizia
+        glossLang: he
+        link: https://quizlet.com/br/1068038287/italiano-basico-amicizia-flash-cards/
+        items: &amicizie-words
+          - { term: Amico, gloss: חבר }
+          - { term: Amica, gloss: חברה }
+          - { term: Migliore amico, gloss: חבר הכי טוב }
+          - { term: Amicizia, gloss: חברות }
+          - { term: Compagno, gloss: בן זוג / חבר לכיתה }
+          - { term: Persona, gloss: אדם }
+          - { term: Gruppo, gloss: קבוצה }
+          - { term: Classe, gloss: כיתה }
+          - { term: Simpatico, gloss: נחמד }
+          - { term: Gentile, gloss: אדיב }
+          - { term: Tranquillo, gloss: רגוע }
+          - { term: Rumoroso, gloss: רועש }
+          - { term: Divertente, gloss: מצחיק / כיפי }
+          - { term: Onesto, gloss: כן / ישר }
+          - { term: Leale, gloss: נאמן }
+          - { term: Intelligente, gloss: חכם }
+          - { term: Giocare, gloss: לשחק }
+          - { term: Parlare, gloss: לדבר }
+          - { term: Ridere, gloss: לצחוק }
+          - { term: Aiutare, gloss: לעזור }
+          - { term: Condividere, gloss: לשתף }
+          - { term: Festeggiare, gloss: לחגוג }
+          - { term: Mangiare, gloss: לאכול }
+          - { term: Bere, gloss: לשתות }
+          - { term: Studiare, gloss: ללמוד }
+          - { term: Lavorare, gloss: לעבוד }
+          - { term: Leggere, gloss: לקרוא }
+          - { term: Guardare film, gloss: לראות סרטים }
+          - { term: Ascoltare musica, gloss: להקשיב למוזיקה }
+          - { term: Ballare, gloss: לרקוד }
+          - { term: Uscire, gloss: לצאת }
+          - { term: Camminare, gloss: ללכת / לטייל }
+          - { term: Sempre, gloss: תמיד }
+          - { term: Di solito, gloss: בדרך כלל }
+          - { term: A volte, gloss: לפעמים }
+          - { term: Mai, gloss: אף פעם }
+
+vocabulary:
+  - slug: amicizie
+    title: Amicizie
+    items: *amicizie-words
+
+activities:
+  - slug: amicizie-descrittive
+    title: 'Frasi descrittive: è / sono + aggettivo'
+    minutes: 8
+    items:
+      - id: amico-e
+        type: multipleChoice
+        prompt: Il mio amico ___ simpatico.
+        options:
+          - { text: è, correct: true }
+          - { text: sono, feedback: '*Il mio amico* è una persona: usa *è*.' }
+          - { text: sei, feedback: '*Sei* è per *tu*. Per *il mio amico* usa *è*.' }
+      - id: amici-simpatici
+        type: multipleChoice
+        prompt: I miei amici sono ___.
+        options:
+          - { text: simpatici, correct: true }
+          - {
+              text: simpatico,
+              feedback: "*I miei amici* è plurale: anche l'aggettivo va al plurale, *simpatici*.",
+            }
+          - { text: simpatiche, feedback: '*Amici* è maschile: usa *simpatici*.' }
+      - id: amica-alta
+        type: multipleChoice
+        prompt: La mia amica è ___.
+        options:
+          - { text: alta, correct: true }
+          - { text: alto, feedback: '*La mia amica* è femminile: usa *alta*.' }
+          - { text: alte, feedback: '*La mia amica* è singolare: usa *alta*.' }
+      - id: e-sono
+        type: fillBlank
+        prompt: Completa con *è* o *sono*.
+        text: La mia amica ___ tranquilla. Le mie amiche ___ divertenti.
+        blanks: [[è], [sono]]
+        wordBank: [è, sono]
+      - id: non-prima
+        type: trueFalse
+        prompt: 'Nella forma negativa, *non* va prima del verbo: *Il mio amico non è noioso.*'
+        answer: true
+        feedback:
+          correct: Giusto! *Non* va sempre prima di *è* o *sono*.
+          incorrect: 'La frase è corretta: *non* va prima del verbo, *non è noioso*.'
+      - id: amico-negativo
+        type: fillBlank
+        prompt: 'Scrivi la frase alla forma negativa: *Il mio amico è rumoroso.*'
+        text: Il mio amico ___ rumoroso.
+        blanks: [[non è]]
+      - id: abbina-persone
+        type: matching
+        prompt: Abbina ogni soggetto alla fine giusta. Guarda se è maschile o femminile, singolare o plurale.
+        pairs:
+          - [Il mio amico, è simpatico.]
+          - [La mia amica, è alta.]
+          - [I miei amici, sono simpatici.]
+          - [Le mie amiche, sono tranquille.]
+      - id: ordina-domanda
+        type: reorderSentence
+        prompt: Metti le parole in ordine per fare una domanda.
+        sentence: Il tuo amico è simpatico?
+
+  - slug: amicizie-presente
+    title: 'Verbi al presente: cosa facciamo ogni giorno'
+    minutes: 8
+    items:
+      - id: lui-lavora
+        type: multipleChoice
+        prompt: Lui ___ in un bar.
+        options:
+          - { text: lavora, correct: true }
+          - { text: lavoro, feedback: '*Lavoro* è per *io*. Con *lui* usa *lavora*.' }
+          - { text: lavorano, feedback: '*Lavorano* è per *loro*. Con *lui* usa *lavora*.' }
+      - id: noi-studiamo
+        type: multipleChoice
+        prompt: Noi ___ insieme.
+        options:
+          - { text: studiamo, correct: true }
+          - {
+              text: studia,
+              feedback: '*Studia* è per *lui / lei*. Con *noi* il verbo finisce in *-iamo*.',
+            }
+          - { text: studiate, feedback: '*Studiate* è per *voi*. Con *noi* usa *studiamo*.' }
+      - id: abbina-verbi
+        type: matching
+        prompt: Abbina ogni persona al verbo giusto.
+        pairs:
+          - [io, gioco]
+          - [tu, studi]
+          - [lui / lei, guarda]
+          - [noi, leggiamo]
+          - [loro, ascoltano]
+      - id: lavora-ascoltano
+        type: fillBlank
+        prompt: Completa con il verbo al presente.
+        text: Il mio amico ___ (lavorare) in un ristorante. Le mie amiche ___ (ascoltare) musica pop.
+        blanks: [[lavora], [ascoltano]]
+      - id: non-dopo
+        type: trueFalse
+        prompt: 'Questa frase è corretta: *Io lavoro non la domenica.*'
+        answer: false
+        feedback:
+          correct: 'Giusto! *Non* va davanti al verbo: *Io non lavoro la domenica.*'
+          incorrect: '*Non* va davanti al verbo: *Io non lavoro la domenica.*'
+      - id: gioca-negativo
+        type: fillBlank
+        prompt: 'Scrivi la frase alla forma negativa: *Il mio amico gioca a calcio.*'
+        text: Il mio amico ___ a calcio.
+        blanks: [[non gioca]]
+      - id: lei-guarda
+        type: multipleChoice
+        prompt: Quale frase è corretta?
+        options:
+          - { text: Lei guarda la TV., correct: true }
+          - {
+              text: Lei guardo la TV.,
+              feedback: '*Guardo* è per *io*. Con *lei* il verbo finisce in *-a*: *guarda*.',
+            }
+          - {
+              text: Lei guardano la TV.,
+              feedback: '*Guardano* è per *loro*. Con *lei* usa *guarda*.',
+            }
+      - id: ordina-diego
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Diego lavora in un ristorante.
