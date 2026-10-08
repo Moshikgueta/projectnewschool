@@ -1,0 +1,624 @@
+# Cycle "Volunteering", converted from the Conversational English level 2 digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-conversational-2
+slug: volunteering
+title: Volunteering
+goal: Talk about helping others with the past simple and "used to".
+position: 7
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Past simple" and "Used to") are NEW: the notebook has
+    no self-study exercises. They were written from the cycle's summary rules, the
+    activity and homework sentences and the vocabulary. Please check level, wording
+    and every right answer before students see them.
+  - >-
+    The homework in the source is a set of written exercises (Parts 1–4) that
+    students "submit to ChatGPT". It is turned into Mori messages here: each part
+    (questions, negatives, questions, used to, correct the mistakes, writing, reading)
+    is one message with the same sentences, so Mori checks the answers.
+  - >-
+    Homework Part 2B ("Each sentence has one mistake"): sentence 4 "They didn't use to
+    share their skills with the community" is already correct. The instruction now
+    says four sentences have a mistake and one is correct. Please confirm, or replace
+    sentence 4 with a wrong one.
+  - >-
+    Homework Part 2A, sentence 10 "Did you need assistance when you first started
+    volunteering?" describes one moment, not a habit, so "used to" does not fit. It
+    was changed to "Did you need assistance every time you volunteered?" Please
+    confirm.
+  - >-
+    Corrections: introduction example "I baked chalot for the chayalim" → "I baked
+    challah for the soldiers", "a school with kids with special needs" → "a school
+    for children with special needs"; Activity 1 sentence 6 "because they did care"
+    → "because they cared", "an act of heart" → "an act of the heart", and the blank
+    for "is" now takes the past ("was") like the other blanks; Activity 2 "the most
+    random volunteering they did on their lives" → "in their lives", "Everyday, we
+    used to" → "Every day, we used to"; Activity 3 title "Story\videos Time" → "Story
+    and video time"; reading question 1 "What did the author used to do" → "What did
+    the author use to do"; summary heading "Semi-modal verbs" → "Used to" (the only
+    semi-modal taught); stray Markdown ("### What about questions and negatives? **…")
+    removed from the summary.
+  - >-
+    Activity 1 answer key (teacher note, added): came, made, needed, gave, made,
+    helped, was. Please check.
+  - >-
+    Homework Part 2A, sentence 4 "Did you act in kindness campaigns" → "Did you take
+    part in kindness campaigns" ("act in" means to perform in a play). Part 1A
+    question 2 was shortened ("Can you describe how you helped them?" → "How did you
+    help them?").
+  - >-
+    Vocabulary glosses changed: "Volunteer → התנדבות" (that is "volunteering") →
+    "מתנדב / להתנדב"; "To need → להצטרך" → "להיות צריך / להזדקק"; "Kindness → חסד" →
+    "חסד / טוב לב"; "Skills → יכולות" → "כישורים / מיומנויות"; "To share → לשתף" →
+    "לשתף / לחלוק"; "Act → פעולה" → "מעשה / פעולה" (as in "act of kindness"). Please
+    confirm.
+  - >-
+    Links: the Quizlet set, the two YouTube videos (Activity 3) and the TED talk
+    (YouTube) are kept. The source asks the teacher to search YouTube for a short
+    video "in your language"; that stays in a teacher note.
+  - >-
+    The source gives no recommended activity combinations and no times for the
+    introduction, warm-up or Activities 1 and 3. Activity 4 "10/15 minutes" is
+    recorded as 15. Frames were added to the warm-up questions (the source has none).
+    The "Student 1/2/3" lines are replaced by the answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: volunteering-class
+    title: 'Class: Volunteering'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Volunteering and helping others
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Past simple
+            description: "*I helped, I gave, I made. Did you help? I didn't help.*"
+          - name: Used to
+            description: "*I used to volunteer every Saturday.* (but I don't anymore)"
+      - id: quizlet
+        type: externalLink
+        label: Volunteering words on Quizlet
+        url: https://quizlet.com/il/981740367/volunteering-conversational-english-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: 'I am ___. This is what I did for others: ___. / This is what I used to do for others: ___.'
+        example: 'I am Flor. This is what I did for others: I baked challah for the soldiers. Also, I used to go to a school for children with special needs to spend Shabbat with them.'
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Did you help anyone recently? What did you do?
+            frame: Yes, I helped ___. I ___. / No, I didn't help anyone recently.
+          - question: Have you ever volunteered? Where and when?
+            frame: Yes, I volunteered at ___ in ___. / No, I never volunteered, but ___.
+          - question: Who was the last person you supported or took care of? How did you help them?
+            frame: The last person I helped was my ___. I ___.
+          - question: Can you tell us about a moment when someone helped you? What happened?
+            frame: Once, ___ helped me. I ___ and he / she ___.
+          - question: Were you more helpful or less helpful when you were younger? Why?
+            frame: I was more / less helpful when I was younger, because ___.
+          - question: Did you use to volunteer regularly anywhere when you were younger?
+            frame: Yes, I used to volunteer at ___. / No, I didn't use to volunteer.
+          - question: Did you use to think volunteering was easy or difficult? What changed?
+            frame: I used to think volunteering was ___. Now I think ___.
+          - question: Was there a group of people you used to help often? Who were they?
+            frame: I used to help ___ often. They were ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Volunteering race'
+        skills: [Past simple]
+        steps:
+          - Read the sentences below.
+          - Complete each sentence with a word from the word bank. Change the word to the past simple.
+          - Be fast! The first student with all the right answers wins.
+        wordBank: [come, make (×2), give, help, need, is]
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Complete with the past simple
+        items:
+          - question: Many volunteers ___ together to support those in need.
+          - question: We all ___ a difference by sharing our skills.
+          - question: People in our town ___ our care.
+          - question: When we ___ to others, we felt good inside.
+          - question: We ___ our community a better place by volunteering.
+          - question: When the war started, volunteers ___ without expecting anything in return, because they cared. Helping people in need ___ an act of the heart.
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: I used to be a great volunteer!'
+        skills: [Used to, Past simple]
+        steps:
+          - Work in pairs. Be creative!
+          - Invent the most random volunteering you did in your life (a fake one, of course).
+          - Answer the questions below together.
+          - Present your organization to the group.
+      - id: act2-questions
+        type: discussionQuestions
+        title: Our organization
+        items:
+          - question: What was the name of the organization?
+            frame: The name of the organization was ___.
+          - question: What did this organization use to do?
+            frame: This organization used to ___.
+          - question: What was your role in this organization? What did you use to do?
+            frame: Our role in this organization was to ___. Every day, we used to ___.
+          - question: Why did this organization close its doors?
+            frame: This organization closed its doors because ___.
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Story and video time'
+        skills: [Past simple]
+        steps:
+          - Watch a short video about a volunteer who helps someone in need.
+          - Talk about the video with the group.
+        resource:
+          label: 'Video: volunteering'
+          url: https://www.youtube.com/watch?v=udew8siWdx0
+      - id: act3-video2
+        type: externalLink
+        label: 'Another video: volunteering'
+        url: https://www.youtube.com/watch?v=pKRmcj1mJwQ
+      - id: act3-questions
+        type: discussionQuestions
+        items:
+          - question: What did the volunteer do to help?
+            frame: The volunteer ___.
+          - question: Why is it valuable to help others in the community?
+            frame: It is valuable because ___.
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Volunteering debate'
+        skills: [Past simple]
+        steps:
+          - 'The situation: the local government wants all high school and university students to volunteer for at least 50 hours before they graduate. Some people say it builds character and gives back to society. Others say students are already busy with studies and personal responsibilities.'
+          - The class splits into two groups, for and against.
+          - Each group prepares its arguments (15 minutes).
+          - Each group presents its side (5 minutes). Your main argument must be based on experiences, so use the past simple.
+          - Each group answers the other group (3 minutes).
+          - The judge (the teacher) chooses a winner.
+          - Talk as a class about which side had the best arguments and how past experiences changed your opinions.
+        example: '*When I was in high school, I volunteered at a hospital. I learned a lot, and I made new friends.*'
+      - id: act4-question
+        type: discussionQuestions
+        items:
+          - question: Should students be required to volunteer as part of their education?
+            frame: I think yes / no, because when I was ___, I ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Past simple** (Activities 1, 3 and 4) and **Used to**
+          (Activity 2 and the last warm-up questions). The source gives no recommended
+          combinations; choose two activities that cover both skills (for example 1 and
+          2, or 2 and 4).
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first. Each student says their name and one thing they did, or used to do, for others.
+      - id: n-warmup
+        anchor: warmup
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Answer key: 1 came, 2 made, 3 needed, 4 gave, 5 made, 6 helped / was. Point out
+          the irregular forms (came, made, gave, was) and the regular ones (needed,
+          helped).
+      - id: n-act2
+        anchor: act2
+        minutes: 10
+        text: >-
+          Pairs have 10 minutes to invent their organization and answer the four
+          questions. Check that they use *used to* + base verb (*used to help*, not *used
+          to helped*).
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Use one of the two videos, or search YouTube for a short video (3 minutes or
+          less) about a volunteer helping someone. Choose a simple, engaging story, then
+          lead the discussion with basic vocabulary.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Preparation: 15 minutes. Presentation: 5 minutes per group. Answer: 3 minutes
+          per group. You are the judge. End with a short class reflection.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: volunteering-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-past
+        type: ruleSummary
+        skill: Past simple
+        rules:
+          - text: 'Use the past simple for actions that **happened and finished** at a specific time in the past.'
+            examples: ['I **visited** London last year.']
+          - text: '**Regular verbs:** add **-ed** to the base form of the verb.'
+            examples: ['She **walked** to school.', 'We **helped** our neighbors.']
+          - text: '**Irregular verbs** do not follow the -ed rule. You learn them when you speak and practise.'
+            examples:
+              ['He **went** to the store. (go → went)', 'They **ate** lunch at noon. (eat → ate)']
+          - text: '**Questions:** *Did* + subject + base verb.'
+            examples: ['**Did** you **eat** lunch?']
+          - text: "**Negatives:** subject + *did not (didn't)* + base verb."
+            examples: ["I **didn't go** to the party."]
+      - id: verbs-table
+        type: table
+        caption: Verbs from this cycle
+        header: [Base form, Past simple]
+        rows:
+          - [help, helped]
+          - [need, needed]
+          - [share, shared]
+          - [come, came]
+          - [make, made]
+          - [give, gave]
+          - [is / are, was / were]
+      - id: rules-used-to
+        type: ruleSummary
+        skill: Used to
+        rules:
+          - text: "*Used to* describes habits or states that happened regularly in the past but **don't happen anymore**. Subject + *used to* + base verb."
+            examples: ["I **used to play** soccer every weekend. (but I don't anymore)"]
+          - text: '**Negative:** subject + *did not (didn''t)* + *use to* + base verb. There is no "d" at the end of *use*.'
+            examples: ["He **didn't use to enjoy** running, but now he trains for marathons."]
+          - text: '**Questions:** *Did* + subject + *use to* + base verb. Drop the "d" from *used*.'
+            examples: ['**Did** you **use to watch** cartoons as a kid?']
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: volunteering-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy a message and send it. Write your answers in the chat, and Mori will check them.
+      - id: past-title
+        type: heading
+        level: 3
+        text: 'Part 1: Past simple'
+      - id: mori-questions
+        type: aiTutorPrompt
+        title: 'A. Answer the questions'
+        message: |-
+          Hi Mori! I want to practise the past simple. Please ask me these questions one at a time, and correct my mistakes:
+          1. Did you volunteer at any organization last year?
+          2. Who did you help in the past? How did you help them?
+          3. When was the last time you shared your skills with others? What did you share?
+          4. Did you make a contribution to a community event? What was it?
+          5. Can you think of a time when you acted to support a cause or community? What did you do?
+          6. When was the last time you supported a friend or family member? How did you support them?
+          7. Have you ever needed help from others? What kind of help did you need?
+          8. Did you care for someone in need in the past? How did you help them?
+      - id: mori-negatives
+        type: aiTutorPrompt
+        title: 'B. Negative sentences'
+        intro: Write the five sentences in the negative form of the past simple, then send the message with your answers.
+        message: |-
+          Hi Mori! I rewrote these sentences in the negative form of the past simple. Please check my answers:
+          1. We gave our time to the local community. → ___
+          2. They shared their skills with the organization. → ___
+          3. She helped organize a charity event. → ___
+          4. I contributed to the non-profit organization. → ___
+          5. The act of kindness had a big impact. → ___
+      - id: mori-past-questions
+        type: aiTutorPrompt
+        title: 'C. Questions'
+        intro: Turn the five sentences into past simple questions, then send the message with your answers.
+        message: |-
+          Hi Mori! I turned these sentences into past simple questions. Please check my answers:
+          1. She volunteered at a non-profit organization. → ___
+          2. They made a contribution to the local charity. → ___
+          3. He gave assistance to people in need. → ___
+          4. We supported the community through our work. → ___
+          5. I helped with organizing a fundraising event. → ___
+      - id: used-to-title
+        type: heading
+        level: 3
+        text: 'Part 2: Used to'
+      - id: mori-used-to
+        type: aiTutorPrompt
+        title: 'A. Rewrite with "used to"'
+        intro: 'Rewrite each sentence with *used to*. Example: *I volunteered at a local shelter every weekend.* → *I used to volunteer at a local shelter every weekend.*'
+        message: |-
+          Hi Mori! I rewrote these sentences with "used to". Please check my answers:
+          1. She gave support to charities in her town. → ___
+          2. They helped organize food drives in the past. → ___
+          3. We shared our skills with other communities. → ___
+          4. Did you take part in kindness campaigns when you were younger? → ___
+          5. I volunteered to help organize events for the community. → ___
+          6. They took part in charity runs every year. → ___
+          7. He worked at a non-profit organization for many years. → ___
+          8. We made donations to the local food bank regularly. → ___
+          9. She cared for animals at the shelter every weekend. → ___
+          10. Did you need assistance every time you volunteered? → ___
+      - id: mori-mistakes
+        type: aiTutorPrompt
+        title: 'B. Correct the mistakes'
+        intro: Four sentences have one mistake and one sentence is correct. Correct the mistakes, then send the message.
+        message: |-
+          Hi Mori! Four of these sentences had one mistake, and one was correct. Here are my corrections. Please check them:
+          1. He didn't used to contribute to charities. → ___
+          2. Did she used to helps people in need? → ___
+          3. I use to give my time to non-profit organizations. → ___
+          4. They didn't use to share their skills with the community. → ___
+          5. She used to organizes assistance programs. → ___
+      - id: writing-title
+        type: heading
+        level: 3
+        text: 'Part 3: Writing'
+      - id: mori-writing
+        type: aiTutorPrompt
+        title: My volunteering experience
+        intro: 'Write 6–8 sentences about a volunteering experience, or what volunteering meant to you in the past. Use the past simple and *used to*. Write about: the volunteer work you did, how you helped the community, the skills you used or learned, and the impact of your actions.'
+        message: |-
+          Hi Mori! Here is my paragraph about volunteering. I used the past simple and "used to". Please correct my mistakes and ask me one question about my experience:
+          ___
+      - id: reading-title
+        type: heading
+        level: 3
+        text: "Part 4: It's reading time!"
+      - id: reading
+        type: text
+        text: |-
+          Volunteering is an important part of many communities around the world. People who volunteer give their time and skills to support non-profit organizations, helping those in need. I used to volunteer at a local shelter every Saturday, where I helped care for animals and organized donation drives. Through my work, I was able to contribute to the community and make a positive impact. The shelter relied on volunteers like me to share our kindness and dedication. Many people who needed assistance received support because of the contributions made by volunteers.
+
+          Over time, I realized how much volunteering shaped my life. Not only did it give me the opportunity to act with kindness, but it also helped me develop new skills. I used to think that volunteering was only about helping others, but I learned that it also benefits the volunteers themselves. The skills I gained from volunteering, such as communication, teamwork and problem-solving, have had a lasting impact on my personal and professional life.
+      - id: mori-reading
+        type: aiTutorPrompt
+        title: Reading questions
+        intro: Read the text above and answer the questions, then send the message with your answers.
+        message: |-
+          Hi Mori! I read a text about a person who used to volunteer at an animal shelter every Saturday. Here are my answers to the questions. Please correct my English:
+          1. What did the author use to do every Saturday? ___
+          2. How did the shelter benefit from volunteers? ___
+          3. What new skills did the author develop through volunteering? ___
+          4. What is one way volunteering helps both the community and the volunteers themselves? ___
+          5. Did the author think volunteering was only about helping others? Explain. ___
+          6. What is the main message of the text? ___
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Additional materials
+      - id: ted
+        type: externalLink
+        label: TED talk about volunteering
+        url: https://www.youtube.com/watch?v=LVaLaKSvF8w
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: volunteering-practice
+    book: workbook
+    title: 'Practice: Volunteering'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked right away, and you can try again.
+      - id: ex-past-simple
+        type: activity
+        activity: volunteering-past-simple
+      - id: ex-used-to
+        type: activity
+        activity: volunteering-used-to
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: volunteering-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Volunteering words
+        glossLang: he
+        link: https://quizlet.com/il/981740367/volunteering-conversational-english-flash-cards/
+        items: &volunteering-words
+          - { term: Volunteer, gloss: מתנדב / להתנדב }
+          - { term: To help, gloss: לעזור }
+          - { term: Community, gloss: קהילה }
+          - { term: People, gloss: אנשים }
+          - { term: To give, gloss: לתת }
+          - { term: Time, gloss: זמן }
+          - { term: Support, gloss: תמיכה }
+          - { term: Kindness, gloss: חסד / טוב לב }
+          - { term: To share, gloss: לשתף / לחלוק }
+          - { term: Caring, gloss: אכפתיות }
+          - { term: Local, gloss: מקומי }
+          - { term: To need, gloss: להיות צריך / להזדקק }
+          - { term: Act, gloss: מעשה / פעולה }
+          - { term: Assistance, gloss: סיוע }
+          - { term: Impact, gloss: השפעה }
+          - { term: Charity, gloss: צדקה }
+          - { term: Contribution, gloss: תרומה }
+          - { term: To come, gloss: לבוא }
+          - { term: To make, gloss: לעשות }
+          - { term: Non-profit organization, gloss: ארגון ללא מטרות רווח }
+          - { term: Skills, gloss: כישורים / מיומנויות }
+
+vocabulary:
+  - slug: volunteering
+    title: Volunteering
+    items: *volunteering-words
+
+activities:
+  - slug: volunteering-past-simple
+    title: 'Past simple: helped, gave, made'
+    minutes: 8
+    items:
+      - id: volunteered
+        type: multipleChoice
+        prompt: Last year, I ___ at a local shelter.
+        options:
+          - { text: volunteered, correct: true }
+          - {
+              text: volunteer,
+              feedback: '*Volunteer* is the present. With *last year*, use the past simple: add *-ed*.',
+            }
+          - {
+              text: volunteers,
+              feedback: '*Volunteers* is the present (he / she). With *last year*, use the past simple: *volunteered*.',
+            }
+      - id: came-made
+        type: fillBlank
+        prompt: Write the past simple of *come* and *make*.
+        text: Many volunteers ___ together to support those in need. We all ___ a difference.
+        blanks: [[came], [made]]
+      - id: irregular
+        type: matching
+        prompt: Match each verb with its past simple form.
+        pairs:
+          - [give, gave]
+          - [help, helped]
+          - [make, made]
+          - [need, needed]
+          - [go, went]
+      - id: did-you-help
+        type: multipleChoice
+        prompt: Which question is correct?
+        options:
+          - { text: Did you help your neighbors?, correct: true }
+          - {
+              text: Did you helped your neighbors?,
+              feedback: 'After *did*, use the base form of the verb: *Did you help…?*',
+            }
+          - {
+              text: You helped your neighbors did?,
+              feedback: 'A past simple question starts with *Did* + subject + base verb.',
+            }
+      - id: didnt-give
+        type: fillBlank
+        prompt: 'Make the sentence negative: *We gave our time to the community.*'
+        text: We ___ our time to the community.
+        blanks: [["didn't give", did not give]]
+      - id: base-after-did
+        type: trueFalse
+        prompt: "After *did* or *didn't*, the verb is in the base form: *I didn't go to the party.*"
+        answer: true
+        feedback:
+          correct: Right! *did / didn't* + base verb (*go*, *help*, *eat*).
+          incorrect: "It is true: *did* already shows the past, so the verb stays in the base form: *I didn't go*."
+      - id: walked
+        type: multipleChoice
+        prompt: Yesterday, she ___ to the shelter.
+        options:
+          - { text: walked, correct: true }
+          - {
+              text: walks,
+              feedback: '*Walks* is the present. With *yesterday*, use the past simple: *walked*.',
+            }
+          - {
+              text: did walked,
+              feedback: "In a positive sentence, don't use *did*. Just add *-ed*: *She walked*.",
+            }
+      - id: helped-neighbor
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: I helped my neighbor last week.
+
+  - slug: volunteering-used-to
+    title: 'Used to: past habits'
+    minutes: 8
+    items:
+      - id: used-to-play
+        type: multipleChoice
+        prompt: I ___ play soccer every weekend, but I don't anymore.
+        options:
+          - { text: used to, correct: true }
+          - {
+              text: use to,
+              feedback: 'In a positive sentence, write *used to* (with *d*): *I used to play*.',
+            }
+          - {
+              text: uses to,
+              feedback: '*Used to* is the same for all people: *I / he / they used to play*.',
+            }
+      - id: didnt-use-to
+        type: multipleChoice
+        prompt: He ___ enjoy running, but now he trains for marathons.
+        options:
+          - { text: "didn't use to", correct: true }
+          - {
+              text: "didn't used to",
+              feedback: "After *didn't*, there is no *d*: *didn't use to*.",
+            }
+          - {
+              text: not used to,
+              feedback: "The negative needs *didn't*: *He didn't use to enjoy running*.",
+            }
+      - id: did-you-use-to
+        type: fillBlank
+        prompt: Complete the question.
+        text: ___ you use to watch cartoons as a kid?
+        blanks: [[Did]]
+      - id: still-happens
+        type: trueFalse
+        prompt: '*Used to* is for habits in the past that still happen now.'
+        answer: false
+        feedback:
+          correct: Right! *Used to* is for past habits that **don't** happen anymore.
+          incorrect: "Not quite. *I used to play soccer* means I played in the past, but I don't play anymore."
+      - id: rewrite-used-to
+        type: fillBlank
+        prompt: 'Rewrite with *used to*: *I volunteered at a shelter every weekend.*'
+        text: I ___ volunteer at a shelter every weekend.
+        blanks: [[used to]]
+      - id: correct-sentence
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: She used to organize assistance programs., correct: true }
+          - {
+              text: She used to organizes assistance programs.,
+              feedback: 'After *used to*, use the base form: *organize*, not *organizes*.',
+            }
+          - {
+              text: She use to organize assistance programs.,
+              feedback: 'In a positive sentence, write *used to* (with *d*).',
+            }
+      - id: forms
+        type: matching
+        prompt: Match each sentence with its form.
+        pairs:
+          - [I used to help at a shelter., Positive (past habit)]
+          - ["I didn't use to help at a shelter.", Negative (past habit)]
+          - [Did you use to help at a shelter?, Question (past habit)]
+          - [I help at a shelter now., Present simple (now)]
+      - id: cared-animals
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: She used to care for animals.
