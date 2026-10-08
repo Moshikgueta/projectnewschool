@@ -1,0 +1,555 @@
+# Cycle "La mia casa", converted from the Italian digital notebook
+# ("Quaderno Digitale 2026 – Italiano Base", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: la-mia-casa
+title: La mia casa
+goal: Descrivere la casa con c'è e ci sono e parlare della routine con i verbi al presente.
+position: 9
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Descrizioni" and "Verbi al presente") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary, present tense: the notebook gives *pulire* as the example of the -are
+    verbs. *Pulire* is an -ire verb (with -isc-: pulisco, pulisci…). The -are example
+    is now *lavare* (lavo, lavi, lava…), and *pulire* is shown with the -ire verbs
+    next to *dormire*. Please confirm.
+  - >-
+    Summary, "Avere o essere?": the notebook says "Essere + aggettivo" and "Avere +
+    aggettivo". *Avere* is followed by a noun, not an adjective. Rewritten as
+    "essere + aggettivo (La cucina è grande)" and "avere + nome (La mia casa ha un
+    giardino)". A rule on adjective agreement was added, because the notebook's
+    adjective lists had agreement mistakes (see below).
+  - >-
+    Summary, reflexive verbs: the notebook table was broken (it gave the
+    non-reflexive forms lavo, conosco, vesto without the pronouns). It is rebuilt as
+    mi lavo, ti lavi, si lava… for *lavarsi*, *conoscersi* and *vestirsi*. The
+    notebook says "3 regole" but has 4; the number was dropped. "devoo" → "devo".
+  - >-
+    Activity 1 adjectives: "Camera da letto" is feminine, so "silenzioso, piccolo,
+    ordinato…" → "silenziosa, piccola, ordinata…"; Sala da pranzo: "pulitoa" →
+    "pulita", "organizzato, spazioso" → "organizzata" (the duplicate "spaziosa" was
+    removed); Giardino: "Verde" → "verde". The question frame "C'è/Ci sono un ___?" is
+    split into "C'è un ___?" and "Ci sono ___?". The broken emoji before each room
+    were removed.
+  - >-
+    Activity 1 link (italianoperstranieri.loescher.it, "Le stanze della casa") is not
+    on the link allow-list and was left out; it is mentioned in a teacher note.
+  - >-
+    Small corrections: "Visita ad un vecchio amico" → "Visita a un vecchio amico";
+    "domande sulla tua casa" → "domande sulla sua casa"; Activity 3 example
+    punctuation and capitals fixed ("un televisore e dei cuscini colorati", "È molto
+    moderno", "guardare film e leggere libri"); homework example "il mio soggiorno"
+    capitalised. The Google Docs link "CASE" has its "?tab=t.0" parameter removed.
+  - >-
+    Activity 4 has no example in the notebook; a short third-person example and a
+    routine frame were added for students. Please check.
+  - >-
+    The homework has no Mori message in the notebook: the two writing tasks are kept
+    as answer boxes, without a Mori prompt.
+  - >-
+    Vocabulary: "Mi alzo (maschile) / (femminile)" and "Mi lavo i denti (maschile) /
+    (femminile)" are merged into one card each ("אני קם / קמה"); "Faccio il letto" →
+    "אני מסדר / מסדרת את המיטה"; "Garage" "חניון" (a car park) → "מוסך / חניה". The
+    card "Camera" (חדר) is kept, but in everyday Italian *camera* usually means
+    bedroom and *stanza* means room. The activity uses *lavandino* and the
+    vocabulary *lavabo*; both are kept.
+  - >-
+    The notebook gives no activity times, except "no more than 5 minutes" for the
+    introduction, which is kept as a 5-minute teacher note.
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes: students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: la-mia-casa-classe
+    title: 'Classe: La mia casa'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: La mia casa
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Descrizioni
+            description: "*c'è / ci sono*, *non c'è / non ci sono* e gli aggettivi per la casa"
+          - name: Verbi al presente
+            description: Il presente indicativo per la routine a casa (*pulisco, mi alzo, faccio il letto*)
+      - id: quizlet
+        type: externalLink
+        label: La mia casa su Quizlet
+        url: https://quizlet.com/it/1045721702/la-mia-casa-italiano-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Presentazione
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Vivo vicino a ___.
+        example: Sono Marta. Casa mia è vicino a New School.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Qual è la tua stanza preferita? Perché?
+            frame: La mia stanza preferita è ___ perché ___.
+          - question: Cosa fai in quella stanza?
+            frame: In quella stanza io ___.
+          - question: Quante stanze ci sono nella tua casa?
+            frame: Nella mia casa ci sono ___ stanze.
+          - question: Preferisci lavorare da casa o lavorare in ufficio? Perché?
+            frame: Preferisco lavorare da casa / in ufficio perché ___.
+          - question: Cos'hai sul comodino?
+            frame: Sul comodino ho ___.
+          - question: Con chi vivi?
+            frame: Vivo da solo / da sola. / Vivo con ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Indovina il luogo'
+        skills: [Descrizioni]
+        steps:
+          - L'insegnante presenta 3 stanze della casa, con i mobili, gli elettrodomestici e gli aggettivi per descriverle (tabella qui sotto).
+          - Ogni studente pensa a un posto della casa.
+          - Gli altri fanno domande per indovinare il posto.
+        example: |-
+          *C'è un fornello?* – Sì.
+          *C'è un lavandino?* – Sì.
+          *È disordinato?* – Sì.
+          *È la cucina?* – Sì!
+      - id: act1-rooms
+        type: table
+        caption: I luoghi della casa con gli aggettivi
+        header: [Luogo, Elementi, Aggettivi]
+        rows:
+          - [
+              Cucina,
+              'frigorifero, forno, lavello, tavolo, sedie, armadio, lavastoviglie, microonde, frullatore',
+              'calda, pulita, luminosa, spaziosa, ordinata, disordinata',
+            ]
+          - [
+              Soggiorno,
+              'divano, poltrona, tavolo, televisione',
+              'accogliente, confortevole, rilassante, elegante, moderno, spazioso, ordinato, silenzioso',
+            ]
+          - [
+              Camera da letto,
+              'letto, comodino, lampada, armadio, specchio, coperta, cuscino',
+              'silenziosa, piccola, grande, ordinata, disordinata, privata, confortevole',
+            ]
+          - [
+              Bagno,
+              'WC, lavandino, doccia, vasca da bagno, specchio, asciugamano, sapone, spazzolino da denti',
+              'piccolo, pulito, freddo, umido, luminoso, privato, fresco',
+            ]
+          - [
+              Sala da pranzo,
+              'tavolo, sedie, piatti, bicchieri, candele, tovaglioli, credenza',
+              'elegante, formale, spaziosa, luminosa, pulita, accogliente, organizzata',
+            ]
+          - [
+              Giardino / Cortile,
+              'erba, fiori, alberi, recinzione, altalena, panchina, barbecue',
+              'verde, fresco, soleggiato, colorato, tranquillo, bello, spazioso, rilassante',
+            ]
+      - id: act1-questions
+        type: discussionQuestions
+        title: Domande per indovinare
+        answerable: false
+        items:
+          - question: C'è un ___?
+          - question: Ci sono ___?
+          - question: Questo posto è ___?
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Visita a un vecchio amico'
+        skills: [Descrizioni]
+        steps:
+          - Lavorate in coppia.
+          - Ogni studente riceve l'immagine di una casa eccentrica. Da adesso, questa è la sua casa!
+          - 'Fate una simulazione: il primo studente fa domande al secondo sulla sua casa, poi cambiate.'
+        resource:
+          label: Case
+          url: https://docs.google.com/document/d/1oJE_SEP70sB5-RxfDzYr1x137dnUMzAB0qogy7Vuv2w/edit
+      - id: act2-questions
+        type: discussionQuestions
+        title: Domande che puoi usare
+        items:
+          - question: Com'è il tuo soggiorno?
+            frame: Il mio soggiorno è ___. C'è / Ci sono ___.
+          - question: La tua cucina è grande o piccola? È ordinata o disordinata?
+            frame: La mia cucina è ___ e ___.
+          - question: Com'è la tua camera da letto? È comoda?
+            frame: La mia camera da letto è ___.
+          - question: Hai una stanza speciale nella tua casa?
+            frame: Sì, ho ___. / No, non ho una stanza speciale.
+          - question: La tua casa è moderna o antica?
+            frame: La mia casa è ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Dibattito per la stanza migliore'
+        skills: [Descrizioni]
+        steps:
+          - Lavorate in coppia.
+          - L'insegnante dà a ogni coppia una stanza della casa.
+          - Spiegate perché la vostra stanza è il posto migliore della casa. Usate le frasi qui sotto.
+        wordBank: [Cucina, Soggiorno, Bagno, Giardino]
+        example: |-
+          Il soggiorno **è** il posto migliore della casa.
+          C'è un **divano**, un **televisore** e dei cuscini **colorati**.
+          È molto **moderno**, **bellissimo** e sempre **ordinato**.
+          Lì puoi **rilassarti**, **guardare film** e **leggere libri**.
+      - id: act3-frame
+        type: discussionQuestions
+        title: La nostra stanza
+        items:
+          - question: ___ è il posto migliore della casa.
+          - question: C'è un ___, un ___ e alcuni ___. (aggiungi gli elementi)
+          - question: È molto ___, ___ e ___. (aggiungi gli aggettivi)
+          - question: Lì puoi ___, ___ e ___. (aggiungi i verbi)
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Indovina la routine'
+        skills: [Verbi al presente]
+        steps:
+          - Scrivi la tua routine, dal momento in cui ti svegli fino a quando esci di casa.
+          - L'insegnante manda la tua routine a un altro studente.
+          - Lo studente descrive la routine in terza persona (*lui / lei…*) e indovina di chi è.
+        example: '*Si sveglia alle sette. Si lava i denti e fa colazione. Beve un caffè. Esce di casa alle otto. È la routine di Dana?*'
+      - id: act4-routine
+        type: discussionQuestions
+        title: La mia routine
+        items:
+          - question: Mi sveglio alle ___.
+          - question: Poi mi alzo e ___.
+          - question: A colazione mangio ___ e bevo ___.
+          - question: Esco di casa alle ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Descrizioni** con *c'è / ci sono* e gli
+          aggettivi (Attività 1, 2 e 3) e **Verbi al presente** (Attività 4).
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: >-
+          Molto breve: 2 frasi per studente, non più di 30 secondi per studente e per
+          l'insegnante. Se vi conoscete già, passate subito alle domande di
+          riscaldamento. Dai prima il tuo esempio.
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Scegli 3 stanze e passa in rassegna i luoghi, i mobili, gli elettrodomestici e
+          gli aggettivi, con esempi. Il quaderno rimanda anche all'articolo «Le stanze
+          della casa» di italianoperstranieri.loescher.it: il sito non è nella lista dei
+          link permessi, quindi mostralo tu sullo schermo se vuoi usarlo.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Il documento «Case» contiene le immagini delle case: dai a ogni studente della
+          coppia un'immagine diversa.
+      - id: n-act3
+        anchor: act3
+        text: Dai a ogni coppia una stanza della banca (cucina, soggiorno, bagno, giardino).
+      - id: n-act4
+        anchor: act4
+        text: Raccogli le routine scritte e mandale (in privato) a un altro studente.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: la-mia-casa-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-describe
+        type: ruleSummary
+        skill: Descrizioni
+        rules:
+          - text: Usiamo **c'è** con un nome singolare e **ci sono** con un nome plurale.
+            examples:
+              - C'è un tavolo in cucina.
+              - Ci sono due sedie in soggiorno.
+              - C'è una grande finestra nella stanza e ci sono bellissime tende.
+          - text: Per dire che una cosa non c'è, usiamo **non** prima di *c'è* / *ci sono*.
+            examples: [Non c'è un garage., Non ci sono sedie in cucina.]
+          - text: 'Per descrivere usiamo **essere + aggettivo**.'
+            examples: [La cucina è grande., Il soggiorno è luminoso.]
+          - text: "Usiamo **avere + nome** per dire cosa c'è in una casa o in una stanza."
+            examples: [La mia casa ha un giardino., Il bagno ha una doccia.]
+          - text: L'aggettivo cambia con il genere e il numero del nome.
+            examples:
+              [il soggiorno ordinato / la camera ordinata, i bagni piccoli / le cucine piccole]
+      - id: rules-present
+        type: ruleSummary
+        skill: Verbi al presente
+        rules:
+          - text: Usiamo il presente per parlare di azioni che accadono adesso, di fatti e di abitudini.
+            examples: [Pulisco ogni giorno.]
+          - text: "I verbi si dividono in tre gruppi (coniugazioni) secondo la desinenza dell'infinito: **-are**, **-ere**, **-ire**. Ogni gruppo ha le sue forme (tabella qui sotto)."
+          - text: 'Alcuni verbi in -ire, come *pulire*, aggiungono **-isc-** (tranne con noi e voi).'
+            examples:
+              [Pulisco la casa ogni settimana., Puliamo il bagno., Loro puliscono il giardino.]
+          - text: Dopo **volere**, **dovere** e **potere** il verbo resta sempre all'infinito.
+            examples: [Voglio pulire la casa., Devo organizzare gli armadi., Puoi lavare i piatti.]
+          - text: "Nei **verbi riflessivi** il soggetto e l'oggetto sono la stessa persona. Usiamo *mi, ti, si, ci, vi, si* prima del verbo."
+            examples: [Mi alzo., Mi lavo i denti., Ti vesti.]
+      - id: present-table
+        type: table
+        caption: Il presente indicativo
+        header: [Persona, '-are: lavare', '-ere: vendere', '-ire: dormire', '-ire (-isc-): pulire']
+        rows:
+          - [io, lavo, vendo, dormo, pulisco]
+          - [tu, lavi, vendi, dormi, pulisci]
+          - [lui / lei, lava, vende, dorme, pulisce]
+          - [noi, laviamo, vendiamo, dormiamo, puliamo]
+          - [voi, lavate, vendete, dormite, pulite]
+          - [loro, lavano, vendono, dormono, puliscono]
+      - id: present-examples
+        type: examples
+        items:
+          - text: (io) Lavo i piatti ogni sera.
+          - text: (tu) Vendi prodotti online.
+          - text: (lui) Vende servizi di giardinaggio.
+          - text: (voi) Vendete quadri decorativi.
+          - text: (io) Dormo in un piccolo appartamento.
+          - text: (loro) Dormono in campagna.
+          - text: (tu) Pulisci la cucina ogni giorno.
+          - text: (voi) Pulite la stanza.
+      - id: reflexive-table
+        type: table
+        caption: I verbi riflessivi
+        header: [Persona, Lavarsi, Conoscersi, Vestirsi]
+        rows:
+          - [io, mi lavo, mi conosco, mi vesto]
+          - [tu, ti lavi, ti conosci, ti vesti]
+          - [lui / lei, si lava, si conosce, si veste]
+          - [noi, ci laviamo, ci conosciamo, ci vestiamo]
+          - [voi, vi lavate, vi conoscete, vi vestite]
+          - [loro, si lavano, si conoscono, si vestono]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: la-mia-casa-compiti
+    title: Compiti
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti
+      - id: hw-routine
+        type: reflection
+        prompt: '**Verbi al presente:** scrivi la tua routine quotidiana a casa con **5 verbi**.'
+      - id: hw-room
+        type: reflection
+        prompt: >-
+          **Frasi descrittive:** descrivi la stanza preferita della tua casa con **almeno 3
+          aggettivi**. Per esempio: *Il mio soggiorno è grande e luminoso. C'è un divano
+          comodo e un grande televisore. È pulito e ordinato.*
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: la-mia-casa-pratica
+    book: workbook
+    title: 'Pratica: La mia casa'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratica le due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-descrizioni
+        type: activity
+        activity: la-mia-casa-descrizioni
+      - id: ex-verbi
+        type: activity
+        activity: la-mia-casa-verbi
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: la-mia-casa-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole della casa
+        glossLang: he
+        link: https://quizlet.com/it/1045721702/la-mia-casa-italiano-flash-cards/
+        items: &la-mia-casa-words
+          - { term: Camera, gloss: חדר }
+          - { term: Casa, gloss: בית }
+          - { term: Cucina, gloss: מטבח }
+          - { term: Soggiorno, gloss: סלון }
+          - { term: Camera da letto, gloss: חדר שינה }
+          - { term: Bagno, gloss: חדר אמבטיה }
+          - { term: Sala da pranzo, gloss: חדר אוכל }
+          - { term: Lavanderia, gloss: חדר כביסה }
+          - { term: Garage, gloss: מוסך / חניה }
+          - { term: Giardino / Cortile, gloss: גינה / חצר }
+          - { term: Divano, gloss: ספה }
+          - { term: Poltrona, gloss: כורסה }
+          - { term: Tavolo, gloss: שולחן }
+          - { term: Televisione, gloss: טלוויזיה }
+          - { term: Letto, gloss: מיטה }
+          - { term: Comodino, gloss: שידת לילה }
+          - { term: Lampada, gloss: מנורה }
+          - { term: Credenza, gloss: שידה }
+          - { term: Specchio, gloss: מראה }
+          - { term: Cuscino, gloss: כרית }
+          - { term: WC, gloss: שירותים }
+          - { term: Lavabo, gloss: כיור }
+          - { term: Vasca, gloss: אמבטיה }
+          - { term: Piatti, gloss: צלחות }
+          - { term: Vaso, gloss: אגרטל }
+          - { term: Candele, gloss: נרות }
+          - { term: Tovaglioli, gloss: מפיות }
+          - { term: Forno, gloss: תנור }
+          - { term: Mi alzo, gloss: אני קם / קמה }
+          - { term: Mi lavo i denti, gloss: אני מצחצח / מצחצחת שיניים }
+          - { term: Colazione, gloss: ארוחת בוקר }
+          - { term: Faccio il letto, gloss: אני מסדר / מסדרת את המיטה }
+          - { term: Dimenticare, gloss: לשכוח }
+
+vocabulary:
+  - slug: la-mia-casa
+    title: La mia casa
+    items: *la-mia-casa-words
+
+activities:
+  - slug: la-mia-casa-descrizioni
+    title: "Descrizioni: c'è, ci sono"
+    minutes: 8
+    items:
+      - id: c-e-tavolo
+        type: multipleChoice
+        prompt: ___ un tavolo in cucina.
+        options:
+          - { text: "C'è", correct: true }
+          - { text: Ci sono, feedback: "*Tavolo* è singolare: usiamo *c'è*." }
+      - id: ci-sono-sedie
+        type: multipleChoice
+        prompt: ___ due sedie in soggiorno.
+        options:
+          - { text: Ci sono, correct: true }
+          - { text: "C'è", feedback: '*Sedie* è plurale: usiamo *ci sono*.' }
+      - id: bagno
+        type: fillBlank
+        prompt: "Completa con *c'è* o *ci sono*."
+        text: Nel bagno ___ uno specchio e ___ due asciugamani.
+        blanks: [["c'è"], [ci sono]]
+        wordBank: ["c'è", ci sono]
+      - id: casa-ha
+        type: multipleChoice
+        prompt: La mia casa ___ un giardino.
+        options:
+          - { text: ha, correct: true }
+          - {
+              text: è,
+              feedback: 'Dopo il verbo viene un nome (*un giardino*): usiamo *avere* → *ha*.',
+            }
+      - id: essere-aggettivo
+        type: trueFalse
+        prompt: 'Per descrivere usiamo *essere* + aggettivo: *La cucina è luminosa.*'
+        answer: true
+        feedback:
+          correct: Giusto! *È* + aggettivo (*luminosa*).
+          incorrect: 'Per descrivere usiamo *essere* + aggettivo: *La cucina è luminosa.*'
+      - id: camera-piccola
+        type: multipleChoice
+        prompt: La camera da letto è ___.
+        options:
+          - { text: piccola, correct: true }
+          - { text: piccolo, feedback: '*Camera* è femminile: diciamo *piccola*.' }
+          - { text: piccole, feedback: '*Camera* è singolare: diciamo *piccola*.' }
+      - id: stanze-elementi
+        type: matching
+        prompt: Unisci ogni stanza a una cosa che c'è dentro.
+        pairs:
+          - [Cucina, forno]
+          - [Camera da letto, letto]
+          - [Bagno, doccia]
+          - [Soggiorno, divano]
+          - [Giardino, altalena]
+      - id: ordina-divano
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: C'è un divano in soggiorno.
+
+  - slug: la-mia-casa-verbi
+    title: 'Verbi al presente: pulisco, dormo, mi alzo'
+    minutes: 8
+    items:
+      - id: io-pulisco
+        type: multipleChoice
+        prompt: Io ___ la casa ogni settimana.
+        options:
+          - { text: pulisco, correct: true }
+          - { text: pulo, feedback: '*Pulire* aggiunge *-isc-*: io *pulisco*.' }
+          - { text: pulisce, feedback: '*Pulisce* è per lui / lei. Con *io* diciamo *pulisco*.' }
+      - id: voglio-pulire
+        type: multipleChoice
+        prompt: Voglio ___ la casa.
+        options:
+          - { text: pulire, correct: true }
+          - {
+              text: pulisco,
+              feedback: "Dopo *voglio* il verbo resta all'infinito: *voglio pulire*.",
+            }
+      - id: devo-infinito
+        type: trueFalse
+        prompt: "Dopo *devo* il verbo resta all'infinito: *Devo organizzare gli armadi.*"
+        answer: true
+        feedback:
+          correct: Giusto! Dopo *voglio*, *devo* e *posso* usiamo l'infinito.
+          incorrect: "Dopo *devo* usiamo l'infinito: *Devo organizzare gli armadi.*"
+      - id: tu-vendi
+        type: fillBlank
+        prompt: Completa con il verbo *vendere* al presente.
+        text: Tu ___ prodotti online.
+        blanks: [[vendi]]
+      - id: noi-dormiamo
+        type: fillBlank
+        prompt: Completa con il verbo *dormire* al presente.
+        text: Noi ___ in un piccolo appartamento.
+        blanks: [[dormiamo]]
+      - id: loro-dormono
+        type: fillBlank
+        prompt: Completa con il verbo *dormire* al presente.
+        text: Loro ___ in campagna.
+        blanks: [[dormono]]
+      - id: lavarsi
+        type: matching
+        prompt: Unisci la persona alla forma di *lavarsi*.
+        pairs:
+          - [io, mi lavo]
+          - [tu, ti lavi]
+          - [lui / lei, si lava]
+          - [noi, ci laviamo]
+          - [voi, vi lavate]
+      - id: ordina-routine
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Mi alzo e faccio il letto.
