@@ -1,0 +1,659 @@
+# Cycle "Movies & TV: present and past", converted from the Conversational English
+# level 2 digital notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see
+# `review` below. Blocks without `lang` are in the course language (English).
+course: en-conversational-2
+slug: movies-and-tv-past
+title: 'Movies & TV: present and past'
+goal: Tell what happened in movies and shows with the past simple and used to, and give opinions with because.
+position: 14
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Past simple and used to" and "Opinions") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules, the activity examples and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Skills: the source lists three broad aims (past, present and future tenses in
+    stories; storytelling and opinions with comparisons; fluency through media). The
+    cycle's grammar summary and activities practise the past simple, used to, the
+    present simple for retelling a story (Activity 4) and opinions with because. The
+    two skills are now "Telling a story: past and present" and "Opinions and
+    reasons". Future forms are not practised in this cycle (they are in "Movies & TV:
+    present and future"), so they were left out of the skill list.
+  - >-
+    Summary, grammar: added the negative and question of used to (I didn't use to…,
+    Did you use to…?), which the Mori message 2 uses; a short rule for the present
+    simple in Activity 4 ("In our version, Jack survives"); and the comparative forms
+    good → better, bad → worse, funny → funnier. The example "They were surprised
+    when Rachel arrived" was under the past simple rule; it is correct (was / were is
+    the past simple of be) and is kept there. "It was the most interesting movie I've
+    seen recently" (present perfect) is kept as an example of the superlative.
+  - >-
+    The past continuous is marked in the source as an optional B1 extension. It is
+    kept in the class (a callout in Activity 2), the summary (under "B1 extension")
+    and the homework, but it is not in the workbook.
+  - >-
+    Corrections: Activity 1 "Did the story end how you expected?" → "Did the story end
+    the way you expected?"; Activity 1 report "The story was colorful and smart" →
+    "The movie was colorful and smart"; Activity 4 "In the real ending of Coco, Miguel
+    returned to his family and remembered his grandmother" → "Miguel returned to his
+    family and sang to his great-grandmother, Mamá Coco" (in the film she is his
+    great-grandmother and she is the one who remembers); "The best movie I ever saw"
+    is kept (American English; British English says "I've ever seen"). Broken
+    emoji characters in the class votes were removed. Vocabulary terms were
+    capitalised as in the rest of the course ("Plot Twist" → "Plot twist", "Camera
+    Angle" → "Camera angle", "Expression (facial expression)" → "Facial expression").
+  - >-
+    Activity 2 uses a clip from Friends, season 1, episode 1 ("The One Where Monica
+    Gets a Roommate"), scene time 00:00–01:40 as given in the source: Rachel arrives at
+    Central Perk in a wedding dress. The notebook has no link to the clip. Please add
+    an allowed link (e.g. YouTube) or keep it as a teacher note, and check the scene
+    time: in the episode Rachel arrives a few minutes after the start. The model
+    retell simplifies why Rachel left her wedding ("she didn't love the guy").
+  - >-
+    Times given as ranges are recorded as the upper value: Activity 1 pair interview
+    7–10 → 10 (activity 22 minutes), Activity 2 15–22 → 22, Activity 3 12–15 → 15
+    (inner steps 3–4 → 4), Activity 4 12–18 → 18. Activities 2 and 4 have no step
+    times in the source.
+  - >-
+    The vocabulary is quite advanced for A2 (cinematography, symbolism, framing,
+    character development); the list is kept as in the source. Gloss changes:
+    "Performance, ביצוע (של שחקן)" → "משחק / ביצוע (של שחקן)". The Quizlet link is
+    kept without its "?new" parameter. The "Date / Participants" header and the
+    "Student 1/2/3" lines are replaced by the optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: movies-and-tv-past-class
+    title: 'Class: Movies & TV (present and past)'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: 'Movies & TV: present and past'
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: 'Telling a story: past and present'
+            description: 'Past simple (*I watched, she cried*), *used to* (*I used to watch Toy Story*) and the present simple to retell a story (*Jack survives*)'
+          - name: Opinions and reasons
+            description: '*I think… / I liked it because… / The best movie I ever saw was…*'
+      - id: quizlet
+        type: externalLink
+        label: Movies & TV (present and past) on Quizlet
+        url: https://quizlet.com/br/1106292524/conversationa-english-movies-tv-present-past-updated-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I'm ___. When I was a child, my favorite movie was ___, and now my favorite show is ___.
+        example: Hi, I'm Marta. When I was a child, my favorite movie was *The Lion King*. Now my favorite show is *The Crown*.
+      - id: intro-followup
+        type: discussionQuestions
+        title: Follow-up questions
+        items:
+          - question: Why did you like it?
+            frame: I liked it because ___.
+          - question: Who was your favorite character?
+            frame: My favorite character was ___.
+          - question: Do you still like it today?
+            frame: Yes, I still like it. / No, I used to like it, but now ___.
+      - id: intro-grammar
+        type: callout
+        tone: info
+        title: Used to, past simple, present simple
+        text: |-
+          *I used to watch Toy Story a lot when I was little.* (a habit in the past)
+          *Now I watch Friends almost every week.* (a habit now)
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What movie did you watch many times when you were a child?
+            frame: When I was a child, I watched ___ many times. / I used to watch ___.
+          - question: What was the first movie you saw in a cinema?
+            frame: The first movie I saw in a cinema was ___.
+          - question: What was the last series you watched?
+            frame: The last series I watched was ___.
+          - question: Who did you watch it with?
+            frame: I watched it with ___.
+          - question: Did you go to the cinema last month? What did you see?
+            frame: Yes, I saw ___. / No, I didn't.
+          - question: What TV show did you love as a teenager?
+            frame: As a teenager, I loved ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: My last movie or show'
+        skills: ['Telling a story: past and present', Opinions and reasons]
+        minutes: 22
+        steps:
+          - Write five sentences about the last movie or show you watched (below).
+          - 'In pairs, ask and answer: *What was your favorite scene? Who was your favorite character? Did the story end the way you expected?*'
+          - 'Use full sentences and connectors: *then, after that, finally*.'
+          - "Tell the group about your partner's movie: *My partner watched Barbie with her friends. The movie was colorful and smart. She liked it a lot.*"
+        example: |-
+          *The last movie I saw was Inside Out 2.*
+          *I watched it at home with my sister.*
+          *It was funny and emotional.*
+          *The story was about growing up.*
+          *I liked it because it was touching.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: My last movie or show
+        items:
+          - question: What did you watch?
+            frame: The last movie / show I watched was ___.
+          - question: Where did you watch it?
+            frame: I watched it at home / in the cinema / on ___.
+          - question: Who did you watch it with?
+            frame: I watched it with ___.
+          - question: What happened in the story?
+            frame: The story was about ___.
+          - question: Did you like it? Why / Why not?
+            frame: I liked it / I didn't like it because ___.
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: Scene analysis with Friends'
+        skills: ['Telling a story: past and present', Opinions and reasons]
+        minutes: 22
+        steps:
+          - 'Listen to your teacher: *In this scene, Rachel has just left her wedding. Watch how the group reacts.*'
+          - "Watch the scene twice. First, just watch. Second, focus on **what happened**. Don't write yet."
+          - 'Retell the scene in the past simple with *First, Then, After that, Finally* (below). Share in pairs, then with the group.'
+          - Answer the questions about the scene in full sentences (below).
+          - 'Give your opinion. Ask your partner short follow-up questions: *Really? Why? Tell me more.*'
+        example: "*Rachel arrived at the café in her wedding dress. She was crying. The group was surprised. She said she left her wedding because she didn't love the guy.*"
+      - id: act2-retell
+        type: discussionQuestions
+        title: Retell the scene
+        items:
+          - question: First, ___.
+          - question: Then, ___.
+          - question: After that, ___.
+          - question: Finally, ___.
+      - id: act2-questions
+        type: discussionQuestions
+        title: Questions about the scene
+        items:
+          - question: Who arrived at the café?
+          - question: What was she wearing?
+          - question: How did the group react?
+          - question: Why did Rachel run away from her wedding?
+            frame: She came to the café because she didn't want to marry her fiancé.
+      - id: act2-opinion
+        type: discussionQuestions
+        title: Your opinion
+        items:
+          - question: What did you think of the scene?
+            frame: I think the scene was ___ because ___.
+          - question: What was your favorite moment?
+            frame: My favorite moment was when ___.
+          - question: Would you do the same as Rachel?
+            frame: I would / would not do the same as Rachel because ___.
+      - id: act2-b1
+        type: callout
+        tone: info
+        title: B1 extension (stronger groups), past continuous
+        text: |-
+          *Rachel **was crying** when she arrived.*
+          Say one sentence like this: *I **was studying** when I saw this scene. / They **were drinking** coffee when Rachel came in.*
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Best or worst movie ever'
+        skills: ['Telling a story: past and present', Opinions and reasons]
+        minutes: 15
+        steps:
+          - 'Write 3 simple sentences about one movie (below). Only 3 sentences: no story, no details.'
+          - 'Read your 3 sentences to a partner. Your partner asks only one question: *Why?* Speak slowly and keep your answers short.'
+          - "Say one sentence about your partner to the group: *My partner liked Barbie because it was funny. My partner didn't like Dune because it was too long.*"
+        example: |-
+          *The best movie I ever saw was Avatar.*
+          *I watched it in the cinema.*
+          *I liked it because it was beautiful.*
+      - id: act3-sentences
+        type: discussionQuestions
+        title: My 3 sentences
+        items:
+          - question: The best / worst movie I ever saw was ___.
+          - question: I watched it (at home / in the cinema / with ___).
+          - question: I liked it / didn't like it because ___.
+      - id: act3-b1
+        type: callout
+        tone: info
+        title: B1 extension (stronger groups)
+        text: 'Add one comparative sentence: *My partner thinks this movie is better than the original version.*'
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Rewrite the ending'
+        skills: ['Telling a story: past and present', Opinions and reasons]
+        minutes: 18
+        steps:
+          - 'In groups of 3–4, choose a movie everyone knows: *Titanic, The Lion King, Harry Potter, Frozen, Avatar, Coco, Toy Story*.'
+          - 'Describe the original ending in the **past simple**, in 1–2 sentences only: *In the original ending of Titanic, the ship sank and Jack died.*'
+          - 'Write a new ending in the **present simple**, as if you are watching it now. No future forms. Use the frames in the table below.'
+          - 'Present: *In the original ending, ___ happened. In our version, ___ happens. Then ___. In the end, ___.* (45–90 seconds per group)'
+          - 'Vote with your hands: most creative ending, funniest ending, best storytelling.'
+        example: |-
+          *In the original ending of Frozen, Anna saved Elsa.*
+          *In our version of Frozen, Elsa doesn't run away. She stays with Anna and learns to control her powers.*
+      - id: act4-frames
+        type: table
+        caption: Sentence frames for the new ending
+        header: [Function, Sentence frame]
+        rows:
+          - [Start the change, 'In our version, ___ is alive / stays / decides to…']
+          - [Add an action, Then ___ goes / runs / returns / continues…]
+          - [Add an emotion, He / She feels ___ and ___.]
+          - [The ending, 'In the end, ___ stays / stays with / chooses to…']
+      - id: act4-examples
+        type: examples
+        items:
+          - text: In the real ending of Coco, Miguel returned to his family and sang to his great-grandmother, Mamá Coco.
+          - text: In our version of Titanic, Jack survives. He climbs on the door and Rose helps him. They stay together and return home.
+          - text: In our Toy Story ending, Woody decides to stay with Buzz. They become best friends and help Andy together.
+      - id: act4-ending
+        type: discussionQuestions
+        title: Our ending
+        items:
+          - question: 'Original ending (past): In the original ending, ___.'
+          - question: 'New ending (present): In our version, ___. Then ___. In the end, ___.'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Telling a story: past and present** (past simple,
+          used to, and the present simple in Activity 4) and **Opinions and reasons**
+          (I think… / because…). Every activity practises both. Choose 2–3 activities
+          depending on time.
+      - id: n-intro
+        anchor: intro
+        text: >-
+          Give your own example first. Ask the follow-up questions orally. Target
+          grammar: used to / past simple / present simple (I used to watch Toy Story a
+          lot when I was little. Now I watch Friends almost every week.).
+      - id: n-warmup
+        anchor: warmup
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        minutes: 22
+        text: >-
+          Individual writing: 7 minutes. Pair interview: 10 minutes. Presentation: 5
+          minutes (each student presents their partner's movie). Encourage full
+          sentences and natural connectors (then, after that, finally).
+      - id: n-act2
+        anchor: act2
+        minutes: 22
+        text: >-
+          Clip: *Friends*, season 1, episode 1, "The One Where Monica Gets a Roommate",
+          the scene at Central Perk where Rachel arrives in a wedding dress (00:00–01:40
+          in the source; check the time in your copy). The link is not yet in the
+          platform: play it from your own source. Clear emotions and visual context make
+          it easy to follow, so no vocabulary pre-teaching or character explanation is
+          needed. Model the retell first, short and simple. Model answer style for the
+          questions: "She came to the café because she didn't want to marry her
+          fiancé." Use the past continuous extension only with strong groups.
+      - id: n-act3
+        anchor: act3
+        minutes: 15
+        text: >-
+          Model one short example first. Writing: 4 minutes. Pair share: 5 minutes.
+          Group share: 4 minutes, one sentence each, no long presentations. Remind
+          students to speak slowly and keep answers short.
+      - id: n-act4
+        anchor: act4
+        minutes: 18
+        text: >-
+          If needed, give 2–3 movie options to avoid a long decision. Keep the original
+          ending very short (no detailed retelling). The new ending should feel fun, not
+          "correct": encourage creative, emotional and funny ideas. Write the sentence
+          frames on the board. Students vote by raising hands; no scoring needed.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: movies-and-tv-past-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-past
+        type: ruleSummary
+        skill: 'Telling a story: past and present'
+        rules:
+          - text: 'The **past simple** is for finished events and experiences, for movies we already watched and for what happened in a scene.'
+            examples:
+              [
+                I watched Avatar last weekend.,
+                She cried in the scene.,
+                They were surprised when Rachel arrived.,
+              ]
+          - text: 'Many movie verbs are irregular.'
+            examples: [see → saw, go → went, come → came, leave → left, sink → sank]
+          - text: '**Used to** + base verb is for past habits that are **not true anymore**: your childhood or teenage watching habits.'
+            examples: [I used to watch SpongeBob every morning., He used to like horror movies.]
+          - text: "Negative and question: **didn't use to**, **Did you use to…?**"
+            examples: [I didn't use to like cartoons., Did you use to watch TV in the morning?]
+          - text: 'The **present simple** can retell a story as if we are watching it now (Activity 4).'
+            examples: ['In our version of Titanic, Jack survives.', Elsa stays with Anna.]
+      - id: rules-opinions
+        type: ruleSummary
+        skill: Opinions and reasons
+        rules:
+          - text: 'Give your opinion with **I think…** and always add a reason with **because**.'
+            examples:
+              [
+                I liked the movie because it was funny.,
+                I didn't like the ending because it was sad.,
+                I think the scene was exciting because everybody was surprised.,
+              ]
+          - text: 'Comparatives compare **two** things: adjective + *-er* or *more* + adjective + **than**. *good* → *better*, *bad* → *worse*.'
+            examples:
+              [This movie was better than the last one., Our ending is funnier than the original.]
+          - text: 'Superlatives choose the best of **three or more**: *the best, the worst, the most…*'
+            examples:
+              [
+                The best movie I ever saw was Avatar.,
+                It was the most interesting movie I've seen recently.,
+              ]
+      - id: b1-title
+        type: heading
+        level: 3
+        text: B1 extension
+      - id: rules-continuous
+        type: ruleSummary
+        skill: Past continuous
+        rules:
+          - text: '**was / were** + verb-*ing*: an action that was happening at a moment in the past, or a background action around the main action.'
+            examples:
+              [
+                Rachel was crying when she arrived.,
+                They were drinking coffee in the café.,
+                I was watching Netflix when my friend called me.,
+              ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule. Use the B1 extension only with strong groups.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: movies-and-tv-past-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: step1-title
+        type: heading
+        level: 3
+        text: 'Step 1: Write (very short)'
+      - id: step1-how
+        type: text
+        text: Write your answers before you talk to Mori.
+      - id: write-past
+        type: discussionQuestions
+        title: 'A) Past simple: your last movie or show (4–6 short sentences)'
+        items:
+          - question: What did you watch?
+            frame: I watched ___. (*I watched Encanto.*)
+          - question: Where did you watch it? Who did you watch it with?
+            frame: I watched it ___ with ___. (*I watched it at home with my sister.*)
+          - question: Did you like it? Why / Why not?
+            frame: I liked it / didn't like it because ___. (*I liked it because it was emotional.*)
+      - id: write-used-to
+        type: discussionQuestions
+        title: 'B) Used to: childhood movies (1–2 short sentences)'
+        items:
+          - question: What did you use to watch when you were a child?
+            frame: I used to watch ___ when I was a child. (*I used to watch Toy Story when I was a child. I used to love Buzz Lightyear.*)
+      - id: write-continuous
+        type: discussionQuestions
+        title: 'C) B1 extension: past continuous + past simple (1 sentence)'
+        items:
+          - question: I was ___ing when ___.
+            frame: I was watching Netflix when my friend called me.
+      - id: step2-title
+        type: heading
+        level: 3
+        text: 'Step 2: Talk to Mori'
+      - id: step2-how
+        type: text
+        text: Open the chat with Mori and send these messages one at a time. Answer with the sentences you wrote.
+      - id: mori-past
+        type: aiTutorPrompt
+        title: 'Message 1: Past simple'
+        message: Mori, ask me about the last movie I watched. Correct my past tense if needed.
+      - id: mori-used-to
+        type: aiTutorPrompt
+        title: 'Message 2: Used to'
+        intro: "Mori will help you say *I used to watch…* and *I didn't use to…*"
+        message: Mori, ask me what shows or movies I used to watch as a child. Correct me gently.
+      - id: mori-continuous
+        type: aiTutorPrompt
+        title: 'Message 3: Past continuous + past simple (B1 extension)'
+        intro: 'Example: *I was eating popcorn when the movie started.*'
+        message: Mori, ask me to make one sentence with "I was ___ing when ___ happened." Correct my grammar.
+      - id: mori-opinion
+        type: aiTutorPrompt
+        title: 'Message 4: Opinions'
+        intro: 'Mori may ask: *Why did you like it? What was your favorite scene?*'
+        message: Mori, ask me to give my opinion about the movie using "because". Correct my sentence structure.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: movies-and-tv-past-practice
+    book: workbook
+    title: 'Practice: Movies & TV (present and past)'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked right away, and you can try again.
+      - id: ex-story
+        type: activity
+        activity: movies-and-tv-past-story
+      - id: ex-opinions
+        type: activity
+        activity: movies-and-tv-past-opinions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: movies-and-tv-past-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Movies & TV words
+        glossLang: he
+        link: https://quizlet.com/br/1106292524/conversationa-english-movies-tv-present-past-updated-flash-cards/
+        items: &movies-and-tv-past-words
+          - { term: Episode, gloss: פרק }
+          - { term: Character, gloss: דמות }
+          - { term: Actor, gloss: שחקן }
+          - { term: Actress, gloss: שחקנית }
+          - { term: Director, gloss: במאי }
+          - { term: Plot, gloss: עלילה }
+          - { term: Genre, gloss: ז'אנר }
+          - { term: Storyline, gloss: קו עלילה }
+          - { term: Dialogue, gloss: דיאלוג }
+          - { term: Setting, gloss: מקום ההתרחשות }
+          - { term: Performance, gloss: משחק / ביצוע (של שחקן) }
+          - { term: Facial expression, gloss: הבעת פנים }
+          - { term: Tone (of a scene), gloss: טון / אווירה }
+          - { term: Mood, gloss: מצב רוח / אווירה }
+          - { term: Conflict, gloss: קונפליקט }
+          - { term: Motivation, gloss: מניע }
+          - { term: Theme, gloss: נושא מרכזי }
+          - { term: Climax, gloss: שיא העלילה }
+          - { term: Ending, gloss: סוף העלילה }
+          - { term: Plot twist, gloss: תפנית בעלילה }
+          - { term: Flashback, gloss: הבזק לעבר }
+          - { term: Narrator, gloss: מספר / קריין }
+          - { term: Voice-over, gloss: קריינות }
+          - { term: Costume, gloss: תלבושת }
+          - { term: Makeup, gloss: איפור }
+          - { term: Cinematography, gloss: צילום קולנועי }
+          - { term: Camera angle, gloss: זווית צילום }
+          - { term: Framing (scene composition), gloss: קומפוזיציה של הסצנה }
+          - { term: Character development, gloss: התפתחות דמות }
+          - { term: Audience, gloss: קהל }
+          - { term: Reaction, gloss: תגובה }
+          - { term: Symbolism, gloss: סמליות }
+
+vocabulary:
+  - slug: movies-and-tv-past
+    title: 'Movies & TV: present and past'
+    items: *movies-and-tv-past-words
+
+activities:
+  - slug: movies-and-tv-past-story
+    title: 'Telling a story: I watched, I used to watch, Jack survives'
+    minutes: 8
+    items:
+      - id: watched
+        type: multipleChoice
+        prompt: Last weekend I ___ *Avatar* at the cinema.
+        options:
+          - { text: watched, correct: true }
+          - {
+              text: watch,
+              feedback: '*Watch* is present. With *last weekend* we use the past simple: *watched*.',
+            }
+          - {
+              text: used to watch,
+              feedback: '*Used to* is for a habit (many times). *Last weekend* is one time: *watched*.',
+            }
+      - id: used-to
+        type: multipleChoice
+        prompt: When I was a child, I ___ watch *SpongeBob* every morning.
+        options:
+          - { text: used to, correct: true }
+          - {
+              text: use to,
+              feedback: 'In a positive sentence, write *used to*: *I used to watch…*',
+            }
+          - { text: using to, feedback: 'The form is *used to* + base verb: *I used to watch…*' }
+      - id: saw-went
+        type: fillBlank
+        prompt: Complete with the past simple of *see* and *go*.
+        text: The last movie I ___ was *Inside Out 2*. I ___ to the cinema with my sister.
+        blanks: [[saw], [went]]
+      - id: irregular
+        type: matching
+        prompt: Match each verb with its past simple form.
+        pairs:
+          - [see, saw]
+          - [go, went]
+          - [come, came]
+          - [leave, left]
+          - [sink, sank]
+      - id: didnt-use-to
+        type: fillBlank
+        prompt: Complete with the negative of *used to*.
+        text: I ___ like horror movies, but now I love them.
+        blanks: [[didn't use to, did not use to, didn’t use to]]
+      - id: used-to-rule
+        type: trueFalse
+        prompt: 'We use *used to* for past habits that are not true anymore: *I used to watch Toy Story a lot.*'
+        answer: true
+        feedback:
+          correct: 'Right! *I used to watch Toy Story a lot* = I watched it many times, but not now.'
+          incorrect: '*Used to* is for past habits that are not true now: *I used to watch Toy Story a lot.*'
+      - id: new-ending
+        type: fillBlank
+        prompt: 'Write the new ending in the present simple. Use *climb* and *help*.'
+        text: In our version of *Titanic*, Jack survives. He ___ on the door and Rose ___ him.
+        blanks: [[climbs], [helps]]
+      - id: order-who
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: Who did you watch it with?
+
+  - slug: movies-and-tv-past-opinions
+    title: 'Opinions: I think… because…'
+    minutes: 8
+    items:
+      - id: because
+        type: multipleChoice
+        prompt: I didn't like the ending ___ it was sad.
+        options:
+          - { text: because, correct: true }
+          - { text: but, feedback: '*But* shows a contrast. To give a reason, use *because*.' }
+          - {
+              text: so,
+              feedback: '*So* gives a result, not a reason. To give a reason, use *because*.',
+            }
+      - id: was-funny
+        type: fillBlank
+        prompt: Complete with the past simple of *be*.
+        text: I liked *Barbie* because it ___ funny. The scenes ___ very colorful.
+        blanks: [[was], [were]]
+      - id: best
+        type: multipleChoice
+        prompt: The ___ movie I ever saw was *Avatar*.
+        options:
+          - { text: best, correct: true }
+          - {
+              text: better,
+              feedback: '*Better* compares two things (*better than*). For one movie of all, use *the best*.',
+            }
+          - { text: good, feedback: 'We choose one movie of all the movies: *the best movie*.' }
+      - id: comparatives
+        type: matching
+        prompt: Match each adjective with its comparative form.
+        pairs:
+          - [good, better]
+          - [bad, worse]
+          - [funny, funnier]
+          - [happy, happier]
+          - [interesting, more interesting]
+      - id: better-than
+        type: fillBlank
+        prompt: Complete with the comparative of *good*.
+        text: This movie was ___ than the last one.
+        blanks: [[better]]
+      - id: superlative-two
+        type: trueFalse
+        prompt: 'We use the superlative (*the best, the most interesting*) when we compare only two things.'
+        answer: false
+        feedback:
+          correct: 'Right! For two things, use the comparative: *better than, more interesting than*.'
+          incorrect: 'For two things, use the comparative (*better than*). The superlative (*the best*) is for three or more.'
+      - id: partner-liked
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: My partner liked Barbie because it was funny., correct: true }
+          - {
+              text: My partner like Barbie because it was funny.,
+              feedback: 'In the past simple, add *-d*: *liked*.',
+            }
+          - {
+              text: My partner liked Barbie because was funny.,
+              feedback: 'After *because*, the sentence needs a subject: *because it was funny*.',
+            }
+      - id: order-think
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: I think the scene was funny.

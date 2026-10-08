@@ -1,0 +1,624 @@
+# Cycle "Social Media: the past", converted from the Conversational English level 2
+# digital notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-conversational-2
+slug: social-media-past
+title: 'Social media: the past'
+goal: Talk about past social media experiences in the past simple and compare apps with more, less and the most.
+position: 13
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Past simple" and "Comparisons") are NEW: the notebook
+    has no self-study exercises. They were written from the cycle's two skills, its
+    summary rules, the activity examples and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    The source lists three skills (past simple, comparisons, past simple questions).
+    The platform shows two per cycle, so past simple questions are part of the
+    "Past simple" skill (statements, negatives and questions). The summary and the
+    workbook keep the question rules.
+  - >-
+    Summary, grammar: added short rules that the activities and the workbook use:
+    negatives with didn't + base verb (I didn't like an advertisement), questions with
+    did + base verb (not "Did you posted?"), the -ed spelling of regular verbs
+    (like → liked, stop → stopped), comparatives of short adjectives (-er, funny →
+    funnier, big → bigger), good → better / bad → worse, and fewer (things we count,
+    fewer likes) vs less. "The least" had no example in the summary; one was added.
+    "go → went" and "see → saw" were added to the irregular list because the teacher
+    notes mention them.
+  - >-
+    Corrections: introduction model "The last time I posted photos of my vacation" →
+    "The last thing I posted was photos of my vacation"; warm-up 7 model "I talked
+    more to my best friend" → "I talked to my best friend the most" (the question asks
+    about the most); warm-up 5 "Which social media did you use more last year? And
+    less?" → "Which social media app did you use more last year? Which one did you use
+    less?"; Activity 4 "Social media were less safe than before" → "Social media was
+    less safe than before" (both are used; the singular is more common today);
+    Activity 3 "Which app did you use most" → "Which app did you use the most";
+    homework "Ask me as if I am a famous influencer" → "Imagine I am a famous
+    influencer and interview me". Stray formatting characters and repeated asterisks
+    were removed.
+  - >-
+    Times given as ranges are recorded as the upper value: Activity 2 15–18 → 18,
+    Activity 3 18–22 → 22, Activity 4 20–25 → 25, Activity 5 10–12 → 12, and the
+    inner step times the same way (in the teacher notes). Activity 1 is 15 minutes as
+    in the source. The class is 90 minutes; the plan says to choose 2–3 activities.
+  - >-
+    Left out: the line "Students submit homework to New School Bot for automatic
+    feedback / If needed → WhatsApp: 050-762-6695" (a support contact, not course
+    content; the homework now goes to Mori on the platform). Please confirm. The
+    "Date / Participants" header and the "Student 1/2/3" lines are replaced by the
+    optional answer boxes.
+  - >-
+    The homework's four parts (lists of "Ask me…" requests) are rewritten as one
+    message per part that the student sends to Mori.
+  - >-
+    Vocabulary: "Social media, רשת חברתית" → "רשתות חברתיות" (social media means all
+    the networks); "Follower, עוקב" → "עוקב / עוקבת". The Quizlet link is kept without
+    its "?new" parameter.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: social-media-past-class
+    title: 'Class: Social media (the past)'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: 'Social media: the past'
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Past simple
+            description: "Real social media experiences, negatives and questions: *I posted, I saw, I didn't like, What did you post?*"
+          - name: Comparisons
+            description: '*more / less… than, the most, the least*'
+      - id: quizlet
+        type: externalLink
+        label: Social media (past) on Quizlet
+        url: https://quizlet.com/it/1098771610/social-media-past-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        prompt: Say two sentences in the past simple.
+        frame: I'm ___. Yesterday I used ___. The last thing I posted was ___.
+        example: I'm Marta. Yesterday I used Instagram. The last thing I posted was photos of my vacation.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What social media app did you use yesterday? Why?
+            frame: Yesterday I used ___ because ___. (*Yesterday I used WhatsApp because I talked to my family.*)
+          - question: What was the last photo or video you posted?
+            frame: The last photo I posted was of ___. (*The last photo I posted was of my dog.*)
+          - question: What music did you listen to on YouTube or Spotify last week?
+            frame: Last week I listened to ___ on ___. (*Last week I listened to pop music on Spotify.*)
+          - question: What was the most interesting post you saw? Where?
+            frame: I saw ___ on ___, and it was ___. (*I saw a cooking recipe on TikTok, and it was very useful.*)
+          - question: Which social media app did you use more last year? Which one did you use less?
+            frame: Last year I used ___ more than ___. (*Last year I used Instagram more than Facebook.*)
+          - question: Did you have a funny or strange experience on social media?
+            frame: Yes, ___. / No, I didn't. (*Yes, a friend tagged me in a very funny meme.*)
+          - question: Who did you talk to the most on WhatsApp last month?
+            frame: I talked to ___ the most. (*I talked to my best friend the most.*)
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: My social media yesterday'
+        skills: [Past simple, Comparisons]
+        minutes: 15
+        steps:
+          - 'Write four complete sentences in the past simple about your social media yesterday (below).'
+          - 'In pairs, ask each other at least 3 questions: *What did you post? What did you watch? Who did you talk to? Which app was more interesting for you? Did you have fun? Why / Why not?*'
+          - 'Answer in full sentences, not one word. Use a comparison at least once: *TikTok was more fun than YouTube.*'
+          - 'Tell the class one sentence about your partner: *My partner used Instagram yesterday. She watched funny videos on TikTok.*'
+        example: |-
+          *Yesterday I used Instagram.*
+          *I watched cooking videos.*
+          *I liked a post about recipes.*
+          *I didn't like an advertisement.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: My four sentences
+        items:
+          - question: What social media did you use?
+            frame: Yesterday I used ___.
+          - question: What did you post or watch?
+            frame: I posted ___. / I watched ___.
+          - question: What did you like the most?
+            frame: I liked ___.
+          - question: What didn't you like?
+            frame: I didn't like ___.
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: My digital timeline'
+        skills: [Past simple, Comparisons]
+        minutes: 18
+        steps:
+          - 'Draw a line on paper. Mark three important social media moments from last year (or the last few months): when you opened an account, posted something important, got many likes or comments, or when something surprising happened online.'
+          - Write one past simple sentence for each moment (below).
+          - 'In pairs, show your timelines and make at least two comparisons: *My first post was more popular than yours. You got fewer likes than me. I used Instagram more than you. Your video was the most interesting.*'
+          - 'Ask: *Which moment was the most exciting? Which app was more useful for you? Did you delete anything you posted? Why?*'
+          - 'Tell the class one interesting detail about your partner: *Daniel opened his TikTok account in June and posted a very funny video.*'
+        example: |-
+          *In January, I opened my TikTok account.*
+          *In March, I posted my first video.*
+          *In August, I got one hundred likes.*
+        wordBank: [posted, watched, shared, got, followed, opened]
+      - id: act2-timeline
+        type: discussionQuestions
+        title: My timeline
+        items:
+          - question: In ___ (month), I ___.
+          - question: In ___ (month), I ___.
+          - question: In ___ (month), I ___.
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Interview, memories from social media'
+        skills: [Past simple, Comparisons]
+        minutes: 22
+        steps:
+          - 'Work in pairs. Student A is a **journalist**. Student B is an **influencer** (yourself or a famous person).'
+          - The journalist chooses at least 4 questions from the list below, asks them and writes down the answers.
+          - 'Answer in complete sentences. Ask follow-up questions: *Why? When? Who? Where?*'
+          - Switch roles and use new questions from the list.
+          - 'Tell the class one surprising thing about your partner: *Emma used TikTok more than Instagram last year.*'
+        example: |-
+          *Today you are a famous influencer! Tell us about your past on social media!*
+          *My most viewed post was a funny video of my dog.*
+          *I used TikTok more than Instagram because it was more fun.*
+      - id: act3-questions
+        type: discussionQuestions
+        title: Questions for the journalist
+        items:
+          - question: What was your most viewed post last year?
+            frame: My most viewed post was ___. (*My most viewed post was a funny video of my dog.*)
+          - question: What did people write in the best comment you received?
+            frame: 'People wrote: "___" (*People wrote: "You are amazing!"*)'
+          - question: Who was the first famous person you followed?
+            frame: I followed ___. (*I followed a singer called Dua Lipa.*)
+          - question: What did you do when you got many likes?
+            frame: I ___. (*I celebrated and posted a new photo.*)
+          - question: Which app did you use the most last year? Why?
+            frame: I used ___ more than ___ because ___. (*I used TikTok more than Instagram because it was more fun.*)
+          - question: Did you have a funny or strange moment online? What happened?
+            frame: Yes, ___. (*Yes, last month someone hacked my account!*)
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Debate, did social media help or hurt us?'
+        skills: [Past simple, Comparisons]
+        minutes: 25
+        steps:
+          - 'Topic: *Last year, did social media help more or cause more problems?* Group A: social media helped more. Group B: social media caused more problems.'
+          - Each group writes three or four past simple sentences that support its opinion. Every student writes at least one sentence to read in the debate.
+          - 'Use comparisons: *Instagram was more popular than Facebook. TikTok was less useful for studying than YouTube.*'
+          - Group A reads one sentence. Group B answers with a different sentence. Continue until all the sentences are shared.
+          - 'Useful expressions: *I disagree because… This was more important than… That problem was bigger than…*'
+          - 'Vote: best arguments, most comparisons, most convincing group.'
+        example: |-
+          *A: Last year, social media helped students learn faster.*
+          *B: Students spent more time online than with friends.*
+      - id: act4-examples
+        type: table
+        caption: Ideas for the debate
+        header: [Group A (positive), Group B (negative)]
+        rows:
+          - [
+              'Last year, social media helped families communicate.',
+              People spent more time online and less time with their family.,
+            ]
+          - [
+              People learned English on YouTube more than at school.,
+              Social media was less safe than before.,
+            ]
+          - [
+              Social media made studying easier for many students.,
+              Many teenagers felt more stressed because of their phones.,
+            ]
+      - id: act4-sentences
+        type: discussionQuestions
+        title: My group's sentences
+        items:
+          - question: Last year, social media ___.
+          - question: People ___ more / less ___ than ___.
+          - question: ___ was more / less ___ than ___.
+      - id: act5
+        type: classActivity
+        title: 'Activity 5: True or false?'
+        skills: [Past simple, Comparisons]
+        minutes: 12
+        steps:
+          - "Write two short sentences about your past social media experiences: one is true and one is false. Don't say which one is true."
+          - Read both sentences to the group. The group guesses which one is true.
+          - 'Comment with comparisons: *The first one was more realistic than the second. The second one was less believable than the first. The funniest sentence was the true one!*'
+        example: |-
+          *Last year I uploaded a video that got one thousand views.*
+          *Two years ago, I deleted all my photos on Instagram.*
+      - id: act5-sentences
+        type: discussionQuestions
+        title: My two sentences
+        items:
+          - question: Sentence 1 (Last year I… / Two days ago I… / When I was in high school, I… / I once posted…)
+          - question: Sentence 2
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Past simple** (statements, negatives and questions)
+          and **Comparisons**. Every activity practises both. The class is 90 minutes:
+          choose 2–3 activities depending on time.
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first. Correct gently and repeat the correct forms.
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Students answer in complete past simple sentences, in pairs, then share with
+          the group. Monitor accuracy and vocabulary. Answers typed here are visible to
+          you below each question.
+      - id: n-act1
+        anchor: act1
+        minutes: 15
+        text: >-
+          Individual writing: 5 minutes. Pair interview: 6 minutes. Reporting to the
+          class: 4 minutes. Write the model and the useful questions on the board.
+          Encourage short, simple past verbs (watched, liked, posted, used), help with
+          vocabulary and spelling, and highlight irregular forms when they appear (saw,
+          got, went, did). In the report, check he / she, the -ed endings and clear
+          subject + verb.
+      - id: n-act2
+        anchor: act2
+        minutes: 18
+        text: >-
+          Timeline: 8 minutes. Pair comparison: 7 minutes. Class share: 3 minutes (a few
+          volunteers). Encourage correct irregular forms (got, saw, did). In the share,
+          highlight he / she, the pronunciation of -ed and the comparison forms.
+      - id: n-act3
+        anchor: act3
+        minutes: 22
+        text: >-
+          Set up roles: 2 minutes. Interview: 12 minutes. Switch roles: 5 minutes. Class
+          share: 3 minutes. Make sure both students speak the same amount. Monitor
+          accuracy and give prompts if needed.
+      - id: n-act4
+        anchor: act4
+        minutes: 25
+        text: >-
+          Divide the class (2 minutes) and write the topic on the board. Group
+          brainstorm: 10 minutes. Debate: 8 minutes. Class vote: 4 minutes. Write the
+          useful expressions on the board. If time remains: mini-debate in pairs, each
+          student argues the opposite opinion for two minutes.
+      - id: n-act5
+        anchor: act5
+        minutes: 12
+        text: Do it in open class or in small groups. Write the sentence starters and the comparison phrases on the board.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: social-media-past-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-past
+        type: ruleSummary
+        skill: Past simple
+        rules:
+          - text: 'We use the **past simple** for finished actions and experiences.'
+            examples:
+              - Yesterday I used WhatsApp.
+              - Last year I created a new account.
+              - I posted a photo and got many likes.
+          - text: 'Regular verbs add **-ed** (or **-d** after *e*). Some verbs double the last letter.'
+            examples: [post → posted, watch → watched, use → used, like → liked, stop → stopped]
+          - text: 'Irregular verbs have their own past form.'
+            examples: [see → saw, have → had, do → did, get → got, go → went]
+          - text: "Negative: **didn't** + base verb (not *didn't liked*)."
+            examples: [I didn't like an advertisement., She didn't post anything yesterday.]
+          - text: 'Questions: (question word) + **did** + subject + base verb.'
+            examples:
+              [
+                What did you post yesterday?,
+                Which app did you use the most last year?,
+                Did you have fun?,
+              ]
+          - text: 'Past time expressions:'
+            examples:
+              [
+                yesterday / last week / two days ago / last year / in 2023,
+                Yesterday I posted a story and saw a funny meme.,
+              ]
+      - id: rules-comparisons
+        type: ruleSummary
+        skill: Comparisons
+        rules:
+          - text: 'Two things: **more / less** + adjective + **than**.'
+            examples: [TikTok was more fun than Instagram., Facebook was less active than Snapchat.]
+          - text: 'Short adjectives add **-er** + **than**. *good* → *better*, *bad* → *worse*.'
+            examples:
+              [
+                fast → faster,
+                big → bigger,
+                funny → funnier,
+                That problem was bigger than the other one.,
+              ]
+          - text: 'With verbs: verb + **more / less** + **than**.'
+            examples: [I used Instagram more than Facebook.]
+          - text: "With things we can count (likes, comments), use **fewer**; with things we can't count (time), use **less**."
+            examples: [You got fewer likes than me., People spent less time with their family.]
+          - text: 'Three or more things: **the most / the least** + adjective.'
+            examples:
+              [
+                Instagram was the most popular network last year.,
+                Facebook was the least active app for my friends.,
+              ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 10
+        text: >-
+          Go through both skills with the group and ask for one new example for each
+          rule. Give delayed error correction from your notes.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: social-media-past-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy each message and send it. Mori will ask you questions; answer every one.
+      - id: mori-past
+        type: aiTutorPrompt
+        title: 'Part 1: Past experiences'
+        message: >-
+          Hi Mori! I want to practise the past simple. Please ask me what social media
+          I used yesterday and why, what I posted last, and about a funny experience I
+          had online. Ask me one question at a time and correct my mistakes.
+      - id: mori-comparisons
+        type: aiTutorPrompt
+        title: 'Part 2: Comparisons'
+        message: >-
+          Hi Mori! I want to practise comparisons. Please ask me to compare two apps
+          using "more… than" or "less… than", and ask me which app was the most useful
+          for me last year. Correct my mistakes.
+      - id: mori-narrative
+        type: aiTutorPrompt
+        title: 'Part 3: Short story'
+        message: >-
+          Hi Mori! Please ask me to write 5 sentences about my social media yesterday.
+          Then correct my mistakes.
+      - id: mori-influencer
+        type: aiTutorPrompt
+        title: 'Part 4: Creative'
+        message: |-
+          Hi Mori! Imagine I am a famous influencer and interview me. Please ask me:
+          What was your most popular post last year?
+          What did you do when you got many likes?
+          Then ask me more questions and correct my past simple.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: social-media-past-practice
+    book: workbook
+    title: 'Practice: Social media (the past)'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked right away, and you can try again.
+      - id: ex-past
+        type: activity
+        activity: social-media-past-past-simple
+      - id: ex-comparisons
+        type: activity
+        activity: social-media-past-comparisons
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: social-media-past-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Social media words
+        glossLang: he
+        link: https://quizlet.com/it/1098771610/social-media-past-flash-cards/
+        items: &social-media-past-words
+          - { term: Social media, gloss: רשתות חברתיות }
+          - { term: Platform, gloss: פלטפורמה }
+          - { term: Account, gloss: חשבון }
+          - { term: Profile, gloss: פרופיל }
+          - { term: Post, gloss: פוסט }
+          - { term: Comment, gloss: תגובה }
+          - { term: Video, gloss: סרטון }
+          - { term: Photo, gloss: תמונה }
+          - { term: Story, gloss: סטורי }
+          - { term: Like, gloss: לייק }
+          - { term: Follower, gloss: עוקב / עוקבת }
+          - { term: Share, gloss: לשתף }
+          - { term: Upload, gloss: להעלות }
+          - { term: Download, gloss: להוריד }
+          - { term: Connect, gloss: להתחבר }
+          - { term: Communicate, gloss: לתקשר }
+          - { term: Watch, gloss: לצפות }
+          - { term: Write, gloss: לכתוב }
+          - { term: Compare, gloss: להשוות }
+          - { term: More / Less, gloss: יותר / פחות }
+          - { term: The most / The least, gloss: הכי / הכי פחות }
+          - { term: Past, gloss: עבר }
+          - { term: Experience, gloss: חוויה }
+          - { term: Funny, gloss: מצחיק }
+          - { term: Interesting, gloss: מעניין }
+          - { term: Popular, gloss: פופולרי }
+          - { term: Safe, gloss: בטוח }
+          - { term: Fast, gloss: מהיר }
+          - { term: Addictive, gloss: ממכר }
+          - { term: Problem, gloss: בעיה }
+          - { term: Solution, gloss: פתרון }
+          - { term: Last week, gloss: בשבוע שעבר }
+
+vocabulary:
+  - slug: social-media-past
+    title: 'Social media: the past'
+    items: *social-media-past-words
+
+activities:
+  - slug: social-media-past-past-simple
+    title: 'Past simple: I posted, I saw, What did you post?'
+    minutes: 8
+    items:
+      - id: used
+        type: multipleChoice
+        prompt: Yesterday I ___ Instagram.
+        options:
+          - { text: used, correct: true }
+          - {
+              text: use,
+              feedback: '*Use* is present. With *yesterday* we use the past simple: *used*.',
+            }
+          - {
+              text: using,
+              feedback: 'We need a past verb after *I*: *Yesterday I used Instagram.*',
+            }
+      - id: saw-got
+        type: fillBlank
+        prompt: Complete with the past simple of *see* and *get*.
+        text: Yesterday I ___ a funny meme. Last week my video ___ one hundred likes.
+        blanks: [[saw], [got]]
+      - id: irregular
+        type: matching
+        prompt: Match each verb with its past simple form.
+        pairs:
+          - [see, saw]
+          - [have, had]
+          - [do, did]
+          - [get, got]
+          - [post, posted]
+      - id: question-did
+        type: multipleChoice
+        prompt: Which question is correct?
+        options:
+          - { text: What did you post yesterday?, correct: true }
+          - {
+              text: What did you posted yesterday?,
+              feedback: 'After *did*, use the base verb: *What did you post?*',
+            }
+          - {
+              text: What you posted yesterday?,
+              feedback: 'Past simple questions need *did*: *What did you post?*',
+            }
+      - id: didnt-like
+        type: fillBlank
+        prompt: Make the sentence negative.
+        text: I liked the post about recipes, but I ___ like the advertisement.
+        blanks: [[didn't, did not, didn’t]]
+      - id: did-watched
+        type: trueFalse
+        prompt: '*Did you watched the video?* is a correct question.'
+        answer: false
+        feedback:
+          correct: 'Right! After *did*, use the base verb: *Did you watch the video?*'
+          incorrect: 'After *did*, use the base verb, not the -ed form: *Did you watch the video?*'
+      - id: did-fun
+        type: fillBlank
+        prompt: Complete the question.
+        text: ___ you have fun on TikTok yesterday? — Yes, I did.
+        blanks: [[Did]]
+      - id: order-post
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: What did you post on Instagram?
+
+  - slug: social-media-past-comparisons
+    title: 'Comparisons: more, less, the most'
+    minutes: 8
+    items:
+      - id: more-fun
+        type: multipleChoice
+        prompt: TikTok was ___ fun than YouTube.
+        options:
+          - { text: more, correct: true }
+          - {
+              text: most,
+              feedback: 'For two things we use *more… than*. *The most* is for three or more things.',
+            }
+          - { text: much, feedback: 'To compare two things, use *more… than*: *more fun than*.' }
+      - id: the-most
+        type: multipleChoice
+        prompt: Instagram was ___ popular network last year.
+        options:
+          - { text: the most, correct: true }
+          - {
+              text: more,
+              feedback: 'There is no *than* here, and we choose one from many: *the most popular*.',
+            }
+          - { text: most, feedback: 'Use *the* before *most*: *the most popular network*.' }
+      - id: less-popular
+        type: fillBlank
+        prompt: Complete with *more* or *less*.
+        text: My friends didn't use Facebook a lot. Facebook was ___ popular than Instagram.
+        blanks: [[less]]
+        wordBank: [more, less]
+      - id: than
+        type: trueFalse
+        prompt: 'We use *than* after *more* or *less* when we compare two things: *more interesting than*.'
+        answer: true
+        feedback:
+          correct: 'Right! *My first post was more popular than yours.*'
+          incorrect: 'We do use *than* to compare two things: *My first post was more popular than yours.*'
+      - id: forms
+        type: matching
+        prompt: Match each adjective with its comparative form.
+        pairs:
+          - [funny, funnier]
+          - [big, bigger]
+          - [good, better]
+          - [bad, worse]
+          - [interesting, more interesting]
+      - id: bigger
+        type: fillBlank
+        prompt: Complete with the comparative of *big*.
+        text: That problem was ___ than the other one.
+        blanks: [[bigger]]
+      - id: fewer-likes
+        type: multipleChoice
+        prompt: You got ___ likes than me.
+        options:
+          - { text: fewer, correct: true }
+          - {
+              text: less,
+              feedback: 'We can count likes (one like, two likes), so we use *fewer*: *fewer likes*.',
+            }
+          - {
+              text: the least,
+              feedback: 'With *than* we compare two people: *fewer likes than me*.',
+            }
+      - id: order-more
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: I used Instagram more than Facebook.

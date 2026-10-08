@@ -1,0 +1,622 @@
+# Cycle "Movies & TV: present and future", converted from the Conversational English
+# level 2 digital notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see
+# `review` below. Blocks without `lang` are in the course language (English).
+course: en-conversational-2
+slug: movies-and-tv-future
+title: 'Movies & TV: present and future'
+goal: Talk about your movie habits and preferences in the present simple and about plans and predictions with going to and will.
+position: 15
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Present simple: habits and preferences" and "Future:
+    going to and will") are NEW: the notebook has no self-study exercises. They were
+    written from the cycle's two skills, its summary rules, the activity examples and
+    its vocabulary. Please check level, wording and every right answer before
+    students see them.
+  - >-
+    Skills: the source lists four (present simple for habits and preferences; going
+    to / will; opinion language; comparisons as an optional B1 upgrade). The platform
+    shows two per cycle: "Present simple and opinions" (habits, preferences, I prefer…
+    because…) and "Future: going to and will". Comparisons stay as B1 extension
+    callouts in the class, the summary and the homework, but are not in the workbook.
+  - >-
+    Summary, grammar: added the forms that the workbook uses: present simple he / she
+    + -s, don't / doesn't + base verb, questions with do / does; going to = am / is /
+    are + going to + base verb; will / 'll / won't + base verb. The summary heading
+    "When We Use Each Grammar Structure" is now "What we learned today", as in the
+    other cycles. The example "I'm thirsty." → "I will bring you water." is now "A:
+    I'm thirsty. B: I'll bring you some water." (the contraction is more natural for
+    a decision in the moment).
+  - >-
+    Corrections: warm-up 5 "What snacks will you eat during your next movie night?" is
+    kept (will and going to are both correct here); Activity 1 example "We'll bring
+    snacks" is kept. Homework "Watching movies at the cinema is better than watching
+    at home" → "Watching movies at the cinema is better than watching them at home";
+    summary heading "5)Comparatives" spacing fixed. Broken emoji characters in
+    Activity 4 were removed. Vocabulary: "Adaptation, עיבוד (מספר/ספר לסרט)" →
+    "עיבוד (של ספר לסרט)" (the Hebrew was garbled); "Score (Original Music)" →
+    "Score (original music)"; "Character Development" → "Character development",
+    "Visual Effects" → "Visual effects".
+  - >-
+    Activity 2 suggests the trailers of Wish, Elemental, Coco or Inside Out 2, and the
+    homework asks students to choose a trailer on YouTube. The notebook has no links.
+    The teacher plays the trailer from their own source (teacher note); please add
+    allowed links (YouTube) if you want them in the platform.
+  - >-
+    Times: Activity 1 is 20 minutes (5 + 10 + 5, as in the source); Activity 4 12–18 →
+    18. Activities 2 and 3 have no times in the source. The homework writing goal
+    "5–8 sentences" is kept as written.
+  - >-
+    Activity 4 (Rewrite the ending) appears in the "Movies & TV: present and past"
+    cycle too, there with the past simple and the present simple; here it uses the
+    present simple and going to / will, so it is kept in both cycles.
+  - >-
+    The Quizlet link is kept without its tracking parameters (?i=…&x=…). The "Date /
+    Participants" header and the "Student 1/2/3" lines are replaced by the optional
+    answer boxes. The homework's "Your 3 predictions" and "Your 2 sentences" blank
+    lines are answer boxes too.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: movies-and-tv-future-class
+    title: 'Class: Movies & TV (present and future)'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: 'Movies & TV: present and future'
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Present simple and opinions
+            description: 'Habits and preferences: *I usually watch…, She likes…, I prefer… because…*'
+          - name: 'Future: going to and will'
+            description: "Plans (*I'm going to watch Dune*) and predictions (*I think it will be amazing*)"
+      - id: quizlet
+        type: externalLink
+        label: Movies & TV (present and future) on Quizlet
+        url: https://quizlet.com/br/1106284757/conversationa-english-movies-tv-present-future-updated-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I'm ___. **Now**, my favorite movie / show is ___. **Next week**, I'm **going to** watch ___.
+        example: Hi, I'm Marta. Now, my favorite show is *The Crown*. Next week, I'm going to watch *Dune 2* at the cinema.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What kind of movies do you usually watch?
+            frame: I usually watch ___.
+          - question: What movie are you going to watch this week?
+            frame: This week I'm going to watch ___.
+          - question: Are you going to the cinema soon? Which movie will you see?
+            frame: Yes, I'm going to see ___. / No, I'm not.
+          - question: Who are you going to watch your next movie with?
+            frame: I'm going to watch it with ___.
+          - question: What snacks will you eat during your next movie night?
+            frame: I'll eat ___. / I'm going to eat ___.
+          - question: Will you watch a movie in another language? Which one?
+            frame: Yes, I'll watch ___. / No, I won't.
+          - question: What genre will you choose next (comedy, horror, drama…)?
+            frame: Next, I'll choose ___.
+      - id: warmup-b1
+        type: discussionQuestions
+        title: 'B1 extension: compare'
+        items:
+          - question: Do you prefer watching movies at home or at the cinema? Why?
+            frame: I prefer watching movies at ___ because it's ___er / more ___ than ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Plan your perfect movie night'
+        skills: ['Future: going to and will', Present simple and opinions]
+        minutes: 20
+        steps:
+          - 'Brainstorm as a group: *If you could plan a perfect movie night, what would it be like?*'
+          - Plan your movie night together. Answer the questions below.
+          - Present your plan to the class.
+        example: "*On Friday night, we're going to watch Harry Potter at our friend's house. We'll bring snacks and wear pajamas. After the movie, we're going to play trivia about the story.*"
+      - id: act1-plan
+        type: discussionQuestions
+        title: Our movie night
+        items:
+          - question: What are you going to watch?
+            frame: We're going to watch ___.
+          - question: Where and when?
+            frame: We're going to watch it at ___ on ___.
+          - question: Who will be there?
+            frame: ___ will be there.
+          - question: What will you eat and drink?
+            frame: We'll eat ___ and drink ___.
+          - question: What will people wear?
+            frame: People will wear ___.
+          - question: What music will you play before or after?
+            frame: We'll play ___.
+          - question: How will you decorate?
+            frame: We'll decorate with ___.
+      - id: act1-b1
+        type: callout
+        tone: info
+        title: B1 extension (stronger groups)
+        text: 'Compare the plans: *Group A will eat more snacks than Group B. Group C will have the most creative theme.*'
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: Trailer predictions'
+        skills: ['Future: going to and will']
+        steps:
+          - Watch the trailer your teacher shows (*Wish*, *Elemental*, *Coco* or *Inside Out 2*).
+          - Answer the prediction questions below with *going to* or *will*.
+          - Write a short "prediction story" in 3 sentences.
+        example: |-
+          *The girl is going to discover a magic world.*
+          *She'll learn something important about her family.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Prediction questions
+        items:
+          - question: What is the movie about?
+            frame: The movie is about ___.
+          - question: What will happen to the main character?
+            frame: The main character is going to / will ___.
+          - question: What do you think the ending will be like?
+            frame: I think the ending will be ___.
+          - question: Will the movie be funny, sad or dramatic?
+            frame: I think it will be ___ because ___.
+      - id: act2-story
+        type: discussionQuestions
+        title: My prediction story
+        items:
+          - question: Prediction 1
+          - question: Prediction 2
+          - question: Prediction 3
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Invent a new movie'
+        skills: ['Future: going to and will']
+        steps:
+          - 'In groups, invent a movie: the title, the genre, the main characters, the main events and the ending (below).'
+          - Present your movie with *will* and *going to*.
+          - 'Vote: *Best Title, Most Creative Story, Most Likely to Win an Oscar*.'
+        example: "*Our movie is called Time Loop. It's going to be a science fiction movie. The hero will travel to the past to fix his mistakes.*"
+      - id: act3-movie
+        type: discussionQuestions
+        title: Our movie
+        items:
+          - question: 'Title:'
+            frame: Our movie is called ___.
+          - question: 'Genre:'
+            frame: It's going to be a ___ movie.
+          - question: 'Main characters:'
+          - question: 'Main events:'
+            frame: The hero will ___.
+          - question: 'Ending:'
+            frame: In the end, ___ will ___.
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Rewrite the ending'
+        skills: [Present simple and opinions, 'Future: going to and will']
+        minutes: 18
+        steps:
+          - 'In groups of 3–4, choose one movie or series everyone knows: *Titanic, Harry Potter, Frozen, Coco, Avatar, The Lion King, Toy Story, La La Land, Encanto, The Little Mermaid, a Marvel movie, a Pixar film*.'
+          - 'Describe the original ending in the **present simple**, in 1–2 sentences only: *In the real ending, the ship sinks and Jack dies.*'
+          - 'Invent a new ending with **going to / will**. Use the frames in the table below.'
+          - 'Read it aloud (45–90 seconds per group): *In the real ending, ___. In our version, ___ is going to / will ___. Then ___ will ___.*'
+          - 'Vote with your hands: most creative, funniest, most likely to become a real movie.'
+        example: |-
+          *In the original story, Elsa is afraid of her powers and runs away.*
+          *In our Frozen rewrite, Elsa is going to become a pop star and Anna will manage her world tour.*
+      - id: act4-frames
+        type: table
+        caption: Sentence frames for the new ending
+        header: [Function, Sentence frame]
+        rows:
+          - [Change the action, 'In our version, ___ is going to…']
+          - [Add a surprise, 'Suddenly, ___ will…']
+          - [Describe the future, 'After that, they are going to…']
+          - [Final consequence, 'In the end, ___ will…']
+      - id: act4-examples
+        type: examples
+        items:
+          - text: In the movie, the toys return home safely.
+          - text: In our version of Titanic, Jack is going to find a door big enough for two. They will move to Italy and open a sailing school.
+          - text: In our Harry Potter ending, Voldemort will retire and open a vegan café.
+      - id: act4-ending
+        type: discussionQuestions
+        title: Our ending
+        items:
+          - question: 'Original ending (present simple): In the real ending, ___.'
+          - question: 'New ending (going to / will): In our version, ___. Then ___.'
+      - id: act4-b1
+        type: callout
+        tone: info
+        title: B1 extension (stronger groups)
+        text: 'Add one sentence with a comparative or an opinion: *Our ending is happier than the original. This ending is more realistic. This version is more dramatic.*'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Present simple and opinions** (warm-up, Activity 4)
+          and **Future: going to and will** (Activities 1–4). Comparisons are an
+          optional B1 upgrade. Choose 2–3 activities depending on time.
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first, then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          These questions practise the present simple and going to / will. Ask each
+          student at least two questions. Answers typed here are visible to you below
+          each question. Use the B1 question only with stronger groups.
+      - id: n-act1
+        anchor: act1
+        minutes: 20
+        text: Group brainstorm 5 minutes, group plan 10 minutes, presentation 5 minutes.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Choose one trailer (Wish, Elemental, Coco or Inside Out 2) and play it from
+          your own source; the notebook has no link. Students then answer the questions
+          and write 3 predictions.
+      - id: n-act3
+        anchor: act3
+        text: Groups present their movie, then the class votes for the three prizes.
+      - id: n-act4
+        anchor: act4
+        minutes: 18
+        text: >-
+          If needed, give 3 suggestions to avoid a long decision. Keep the original
+          ending very short (do not retell the movie). Write the frames on the board.
+          Encourage fun, creative and weird ideas: this is where students laugh and
+          relax. Students vote by raising hands; no need to score points.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: movies-and-tv-future-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-present
+        type: ruleSummary
+        skill: Present simple and opinions
+        rules:
+          - text: 'We use the **present simple** for things that are true in general, for **habits** and routines, and for **preferences**: your life now, not one moment.'
+            examples:
+              [
+                I usually watch movies at home.,
+                She likes action movies.,
+                We don't watch horror films.,
+              ]
+          - text: "With *he / she / it*, add **-s**. Negative: **don't / doesn't** + base verb. Questions: **Do / Does** + subject + base verb."
+            examples:
+              [
+                He watches comedies.,
+                She doesn't like horror movies.,
+                Do you usually watch movies at home?,
+              ]
+          - text: 'Give your opinion with **I think / I like / I prefer…** and explain why with **because**.'
+            examples:
+              [I prefer animated movies because they are relaxing., I think this show is funny.]
+      - id: rules-future
+        type: ruleSummary
+        skill: 'Future: going to and will'
+        rules:
+          - text: '**going to** (am / is / are + going to + base verb): the plan already exists, we have already decided, or it is arranged.'
+            examples:
+              [
+                We're going to watch Dune on Friday. (the plan exists),
+                I'm going to invite my friends. (decision already made),
+              ]
+          - text: "**will** (will / 'll + base verb; negative **won't**): a **prediction** (we guess), a decision **in the moment**, a **promise** or an **offer**."
+            examples:
+              [
+                I think the movie will be amazing. (prediction),
+                "A: I'm thirsty. B: I'll bring you some water. (decision now)",
+                I will call you later. (promise),
+              ]
+          - text: '**Practical rule:** decided or arranged? Use *going to*. Guessing, or deciding now? Use *will*.'
+      - id: b1-title
+        type: heading
+        level: 3
+        text: B1 extension
+      - id: rules-comparisons
+        type: ruleSummary
+        skill: Comparatives and superlatives
+        rules:
+          - text: 'Comparatives compare **two** things: adjective + *-er* or *more* + adjective + **than**. *good* → *better*.'
+            examples:
+              [
+                Spider-Man is better than Batman.,
+                Action movies are more exciting than documentaries.,
+              ]
+          - text: 'Superlatives compare **three or more** things: *the best, the most…*'
+            examples: [This is the most interesting movie in the series.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule. Use the B1 extension only with stronger groups.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: movies-and-tv-future-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: part1-title
+        type: heading
+        level: 3
+        text: 'Part 1: Writing (5–8 sentences)'
+      - id: part1-how
+        type: text
+        text: Write about your movie and TV preferences **now** and your **future plans**. Use the sentence frames.
+      - id: write-present
+        type: discussionQuestions
+        title: 'Present: your habits and preferences'
+        items:
+          - question: Now, I usually watch ___.
+          - question: I like ___ because ___.
+          - question: I prefer watching movies at (home / the cinema) because ___.
+      - id: write-future
+        type: discussionQuestions
+        title: 'Future: your plans'
+        items:
+          - question: This week, I am going to watch ___.
+          - question: I am going to watch it with ___.
+          - question: We are going to eat / drink ___ during the movie.
+          - question: I think the movie will be ___ (funny / sad / exciting / boring) because ___.
+      - id: part2-title
+        type: heading
+        level: 3
+        text: 'Part 2: Speaking practice with Mori'
+      - id: part2-how
+        type: text
+        text: Open the chat with Mori and send these messages one at a time. Mori will ask you questions; answer every one.
+      - id: mori-present
+        type: aiTutorPrompt
+        title: 'Message 1: Now'
+        message: Mori, ask me about the movies and TV shows I like now. Correct my mistakes.
+      - id: mori-future
+        type: aiTutorPrompt
+        title: 'Message 2: Future plans'
+        message: Mori, ask me about my plans to watch something in the future. Correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: part3-title
+        type: heading
+        level: 3
+        text: 'Part 3: Trailer predictions'
+      - id: part3-how
+        type: text
+        text: 'Choose one movie trailer on YouTube (any movie you like). Write 3 predictions with *going to* or *will*. Example: *The main character is going to find a new friend. She will learn something important about herself. The movie is going to have a happy ending.*'
+      - id: part3-predictions
+        type: discussionQuestions
+        title: My 3 predictions
+        items:
+          - question: Prediction 1
+          - question: Prediction 2
+          - question: Prediction 3
+      - id: part4-title
+        type: heading
+        level: 3
+        text: 'Part 4: B1 challenge (optional), comparisons'
+      - id: part4-how
+        type: text
+        text: 'Write 2 comparative sentences. Examples: *Action movies are **more exciting** than documentaries. Watching movies at the cinema is **better than** watching them at home.*'
+      - id: part4-sentences
+        type: discussionQuestions
+        title: My 2 sentences
+        items:
+          - question: Sentence 1
+          - question: Sentence 2
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: movies-and-tv-future-practice
+    book: workbook
+    title: 'Practice: Movies & TV (present and future)'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked right away, and you can try again.
+      - id: ex-present
+        type: activity
+        activity: movies-and-tv-future-present
+      - id: ex-future
+        type: activity
+        activity: movies-and-tv-future-future
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: movies-and-tv-future-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Movies & TV words
+        glossLang: he
+        link: https://quizlet.com/br/1106284757/conversationa-english-movies-tv-present-future-updated-flash-cards/
+        items: &movies-and-tv-future-words
+          - { term: Plot, gloss: עלילה }
+          - { term: Genre, gloss: ז'אנר }
+          - { term: Character development, gloss: התפתחות דמויות }
+          - { term: Conflict, gloss: קונפליקט / עימות }
+          - { term: Climax, gloss: שיא העלילה }
+          - { term: Resolution, gloss: פתרון / סיום העלילה }
+          - { term: Setting, gloss: זמן ומקום }
+          - { term: Theme, gloss: נושא מרכזי / מסר }
+          - { term: Subtitles, gloss: כתוביות }
+          - { term: Dubbed, gloss: מדובב }
+          - { term: Review, gloss: ביקורת }
+          - { term: Recommendation, gloss: המלצה }
+          - { term: Spoiler, gloss: ספוילר / חשיפת סוף }
+          - { term: Trailer, gloss: קדימון }
+          - { term: Screenplay, gloss: תסריט }
+          - { term: Director, gloss: במאי / במאית }
+          - { term: Cast, gloss: צוות השחקנים }
+          - { term: Soundtrack, gloss: פסקול }
+          - { term: Score (original music), gloss: מוזיקה מקורית לסרט }
+          - { term: Scene, gloss: סצנה / קטע }
+          - { term: Episode, gloss: פרק }
+          - { term: Season, gloss: עונה (בסדרה) }
+          - { term: Sequel, gloss: סרט המשך }
+          - { term: Prequel, gloss: סרט שמתרחש לפני הסיפור המקורי }
+          - { term: Live-action, gloss: לייב אקשן (לא מצויר) }
+          - { term: Adaptation, gloss: עיבוד (של ספר לסרט) }
+          - { term: Visual effects, gloss: אפקטים חזותיים }
+          - { term: Cinematography, gloss: צילום קולנועי / סגנון צילום }
+          - { term: Pacing, gloss: קצב הסיפור }
+          - { term: Audience, gloss: קהל / צופים }
+          - { term: Critic, gloss: מבקר סרטים }
+          - { term: Rating, gloss: דירוג / ציון הסרט }
+
+vocabulary:
+  - slug: movies-and-tv-future
+    title: 'Movies & TV: present and future'
+    items: *movies-and-tv-future-words
+
+activities:
+  - slug: movies-and-tv-future-present
+    title: 'Present simple: I usually watch, she likes, I prefer…'
+    minutes: 8
+    items:
+      - id: likes
+        type: multipleChoice
+        prompt: My sister ___ action movies.
+        options:
+          - { text: likes, correct: true }
+          - { text: like, feedback: 'With *he / she / it* (my sister = she), add *-s*: *likes*.' }
+          - {
+              text: liking,
+              feedback: 'In the present simple, use *likes* (not the -ing form): *She likes action movies.*',
+            }
+      - id: dont-watch
+        type: fillBlank
+        prompt: Make the sentence negative.
+        text: We ___ watch horror films. They are too scary.
+        blanks: [[don't, do not, don’t]]
+      - id: usually-watch
+        type: multipleChoice
+        prompt: I usually ___ movies at home.
+        options:
+          - { text: watch, correct: true }
+          - {
+              text: watches,
+              feedback: "With *I*, don't add *-s*: *I watch*. Only *he / she / it* add *-es*: *she watches*.",
+            }
+          - {
+              text: am watch,
+              feedback: 'The present simple has no *am*: *I usually watch movies at home.*',
+            }
+      - id: do-question
+        type: fillBlank
+        prompt: Complete the question.
+        text: ___ you usually watch movies at home or at the cinema? — At home.
+        blanks: [[Do]]
+      - id: habits-rule
+        type: trueFalse
+        prompt: 'We use the present simple for habits and routines: *I usually watch movies at home.*'
+        answer: true
+        feedback:
+          correct: 'Right! Habits, routines and preferences use the present simple.'
+          incorrect: 'Habits and routines use the present simple: *I usually watch movies at home.*'
+      - id: answers
+        type: matching
+        prompt: Match each question with its answer.
+        pairs:
+          - [What kind of movies do you usually watch?, I usually watch comedies.]
+          - [Does your brother like horror movies?, "No, he doesn't."]
+          - [Who do you watch movies with?, I watch movies with my friends.]
+          - [Where do you prefer to watch movies?, I prefer the cinema.]
+      - id: prefer-because
+        type: multipleChoice
+        prompt: I prefer animated movies ___ they are relaxing.
+        options:
+          - { text: because, correct: true }
+          - { text: but, feedback: '*But* shows a contrast. To give a reason, use *because*.' }
+          - { text: and, feedback: 'To explain *why* you prefer something, use *because*.' }
+      - id: order-doesnt
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: She doesn't like horror movies.
+
+  - slug: movies-and-tv-future-future
+    title: 'Future: going to and will'
+    minutes: 8
+    items:
+      - id: are-going-to
+        type: multipleChoice
+        prompt: On Friday night, we ___ watch *Harry Potter* at our friend's house.
+        options:
+          - { text: are going to, correct: true }
+          - { text: going to, feedback: "Don't forget *am / is / are*: *we are going to watch*." }
+          - {
+              text: are go to,
+              feedback: 'The form is *are going to* + base verb: *we are going to watch*.',
+            }
+      - id: im-going-to
+        type: fillBlank
+        prompt: 'I have already decided. Complete with *I* + *going to*.'
+        text: ___ invite my friends to my movie night.
+        blanks: [[I'm going to, I am going to, I’m going to]]
+      - id: offer
+        type: multipleChoice
+        prompt: "A: I'm thirsty. B: Wait, I ___ bring you some water!"
+        options:
+          - { text: "'ll", correct: true }
+          - {
+              text: "'m going to",
+              feedback: "B decides now, in the moment. For a decision in the moment or an offer, use *will* (*'ll*).",
+            }
+          - { text: bring, feedback: "B decides now and offers help: *I'll bring you some water.*" }
+      - id: plan-rule
+        type: trueFalse
+        prompt: "We use *going to* when the plan already exists: *We're going to watch Dune on Friday.*"
+        answer: true
+        feedback:
+          correct: 'Right! A plan or a decision already made: *going to*.'
+          incorrect: "When the plan already exists, we use *going to*: *We're going to watch Dune on Friday.*"
+      - id: wont
+        type: fillBlank
+        prompt: Complete with the negative of *will*.
+        text: The movie is three hours long and very slow. I think the children ___ like it.
+        blanks: [[won't, will not, won’t]]
+      - id: uses
+        type: matching
+        prompt: Match each use with an example.
+        pairs:
+          - [a plan (already decided), We're going to watch Dune on Friday.]
+          - [a prediction, I think the movie will be amazing.]
+          - [a promise, I will call you later.]
+          - [a decision now, I'm thirsty. I'll get some water.]
+      - id: questions
+        type: fillBlank
+        prompt: Complete the questions with *are* or *will*.
+        text: What ___ you going to watch this week? Who ___ be at your movie night?
+        blanks: [[are], [will]]
+        wordBank: [are, will]
+      - id: order-will
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: She will learn something important.
