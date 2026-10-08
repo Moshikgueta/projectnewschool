@@ -1,0 +1,556 @@
+# Cycle "Familie", converted from the German Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: familie
+title: Familie
+goal: Über deine Familie sprechen, mit Possessivpronomen, Daten und Zahlen.
+position: 2
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Possessivpronomen" and "Daten und Zahlen") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary and its vocabulary. Please check level, wording and every
+    right answer before students see them.
+  - >-
+    Summary rule 2 (Possessivpronomen) was translated from the English/Spanish
+    notebook: "the possessive changes with the thing owned, not with the owner".
+    That is wrong for German: the word (mein, dein, sein, ihr, unser) depends on the
+    owner, and the ending (mein / meine) on the thing (masculine/neuter or
+    feminine/plural). The rule is rewritten in German and in the Hebrew text block;
+    please confirm.
+  - >-
+    Summary rule 3 (dates) said "im" goes before a month or a year. "im 1998" is not
+    correct German: the rule now says "im" + month (im März), and a year stands
+    alone or with "im Jahr" (1998 / im Jahr 1998). Rule 2 now also says that 1.–19.
+    take -te (erste, dritte, siebte are irregular) and from 20. on -ste, and that a
+    written ordinal has a full stop (5. März).
+  - >-
+    The summary is written in Hebrew in the notebook. The rules are given in simple
+    German (ruleSummary) and the Hebrew explanations are kept as Hebrew text blocks
+    (lang he). The Hebrew translations of the table examples were moved to an
+    "examples" block with glosses. Please check the Hebrew.
+  - >-
+    Possessive table: "Ich gehe gern zu Hannas Haus" → "Ich gehe gern zu Hanna nach
+    Hause"; "Sam kocht großartig" → "Sam kocht sehr gut"; the last row "Ihre" is now
+    "ihr / ihre (von mehreren Personen)", and "unser / unsere" moved after "ihr".
+  - >-
+    Activity 1 example "Mein Bruder hatte heute Geburtstag!" did not fit the
+    before/after game; it is now "Mein Bruder hat davor Geburtstag! Sein Geburtstag
+    ist am 13. März." and "Meine Schwester hat nach mir Geburtstag!" → "Meine
+    Schwester hat danach Geburtstag!".
+  - >-
+    Activity 4: "Was ist deine Lieblingssache an deinem Vater?" (literal translation
+    of "favorite thing") → "Was magst du am meisten an deinem Vater …?", with frames
+    and example rewritten the same way ("Tom mag an seinem Vater am meisten sein
+    Essen. Sein Vater mag an Tom am meisten seine Zeichnungen!").
+  - >-
+    Warm-up frames: "Ich mag mein/meine ___, weil er …" → "Ich mag meinen / meine
+    ___, weil er / sie …" (accusative); "an deinem/r" → "an deinem / deiner"; "mit
+    meinem ___" → "mit meinem / meiner ___". Activity 3: "Reisende: Ich, mein ___" →
+    "mein / meine ___"; the phases were numbered 1 and 3 (no 2).
+  - >-
+    The Mori section had no general starting message or tips; the tips callout was
+    added from the course pattern. The English headings of the vocabulary list
+    ("verbs used in class tasks" …) were dropped.
+  - >-
+    Vocabulary: nouns carry their article (die Familie, der Vater …, das Kind / die
+    Kinder). Glosses changed: "mein – שלי (ז)" → "שלי (זכר / ניטרלי)"; "meine – שלי
+    (נ)" → "שלי (נקבה / רבים)"; "ihr – שלה" → "שלה / שלהם"; "leben – לחיות" → "לחיות /
+    לגור"; "im – ב־ (לשנה/חודש)" → "ב־ (לפני חודש)". Please confirm.
+  - >-
+    The family tree worksheet: the notebook only says the teacher shows an example
+    tree or shares a link (no link given). Please add one on an allowed host if you
+    have it.
+  - The Quizlet link lost its tracking parameter (?new).
+  - Activity times given as ranges (15–20 minutes) are recorded as 20 minutes; the introduction (5–10) as 10.
+  - >-
+    The "Antwort Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: familie-unterricht
+    title: 'Unterricht: Familie'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Familie
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Possessivpronomen
+            description: '*mein, dein, sein, ihr, unser* und ihre Formen mit -e'
+          - name: Daten und Zahlen
+            description: Geburtstage und Daten (am 9. Februar, im März)
+      - id: quizlet
+        type: externalLink
+        label: Familie auf Quizlet
+        url: https://quizlet.com/br/1110971693/%D7%9E%D7%A9%D7%A4%D7%97%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Ich verbringe / verbringe nicht viel Zeit mit meiner Familie.
+        example: Ich bin Anna. Ich verbringe nicht viel Zeit mit meiner Familie.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Nenne deine Familienmitglieder und ihre Namen.
+            frame: |-
+              Mein Vater heißt ___. Meine Mutter heißt ___.
+              Mein Bruder / Meine Schwester heißt ___.
+              Meine Cousins heißen ___.
+          - question: Was machst du gern mit deiner Familie?
+            frame: Ich ___ gern mit meinem / meiner ___.
+          - question: Mit wem in deiner Familie sprichst du viel? Warum?
+            frame: Ich rede viel mit meinem / meiner ___, weil ___.
+          - question: Wann und wo triffst du deine Familie?
+            frame: Ich treffe meine Familie am ___ in ___.
+          - question: Nenne 3 Dinge, die du an deinem / deiner ___ (Familienmitglied) magst.
+            frame: Ich mag meinen / meine ___, weil er / sie ___, ___ und ___ ist.
+          - question: Mit wem lebst du?
+            frame: Ich lebe allein. / Ich lebe mit meinem / meiner ___, ___ und ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Vorher – nachher!'
+        skills: [Daten und Zahlen, Possessivpronomen]
+        minutes: 20
+        steps:
+          - Hör das Beispiel von deiner Lehrkraft.
+          - Sag den Geburtstag von jemandem aus deiner Familie. Benutze das richtige Possessivpronomen.
+          - Der nächste Schüler / die nächste Schülerin sagt, ob sein / ihr Datum **davor** oder **danach** ist, und sagt das Datum.
+        example: |-
+          *Meine Mutter heißt Dvora. Sie hat am 9. Februar Geburtstag.*
+          *Meine Schwester hat danach Geburtstag! Ihr Geburtstag ist am 26. März.*
+          *Mein Bruder hat davor Geburtstag! Sein Geburtstag ist am 13. März.*
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Mein Stammbaum'
+        skills: [Possessivpronomen]
+        minutes: 20
+        steps:
+          - Schau dir den Beispiel-Stammbaum von deiner Lehrkraft an.
+          - Zeichne deinen Stammbaum und vervollständige die Sätze unten.
+          - Zeig deinen Stammbaum der Gruppe.
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Vervollständige die Sätze
+        items:
+          - question: Das bin ich! Mein Name ist ___. Ich bin ___ Jahre alt.
+          - question: Das ist mein ___. Sein Name ist ___. Er ist ___ Jahre alt.
+          - question: Das ist meine ___. Ihr Name ist ___. Sie ist ___ Jahre alt.
+          - question: Das sind meine ___. Ihre Namen sind ___. Sie sind ___ Jahre alt.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Einen Familienausflug planen'
+        skills: [Daten und Zahlen]
+        minutes: 20
+        steps:
+          - Füll den Plan für den Ausflug unten aus.
+          - Zeig deinen Zeitplan der Gruppe.
+        example: |-
+          **Ziel:** Paris, Frankreich
+          **Reisende:** Ich, meine Mutter, mein Vater, mein Bruder
+          Am **5. Juli** fliegen wir nach **Paris**.
+          Am **6. Juli** besuchen wir **den Eiffelturm**.
+          Am **7. Juli** machen wir **eine Bootsfahrt auf der Seine**.
+          Am **8. Juli** fahren wir nach Hause.
+      - id: act3-plan
+        type: discussionQuestions
+        title: Familienausflug
+        items:
+          - question: 'Ziel: ___'
+          - question: 'Reisende: Ich, mein / meine ___, mein / meine ___, mein / meine ___'
+          - question: Am ___ fliegen wir nach ___.
+          - question: Am ___ besuchen wir ___.
+          - question: Am ___ machen wir ___.
+          - question: Am ___ fahren wir nach Hause.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Über die Familie sprechen'
+        skills: [Possessivpronomen]
+        minutes: 20
+        steps:
+          - Arbeitet zu zweit.
+          - Stell deinem Partner / deiner Partnerin die Fragen unten (10 Minuten).
+          - Jedes Paar erzählt der Gruppe 1–2 schöne Dinge über die Familie von seinem Partner / seiner Partnerin.
+        example: '*Tom mag an seinem Vater am meisten sein Essen. Sein Vater mag an Tom am meisten seine Zeichnungen!*'
+      - id: act4-questions
+        type: discussionQuestions
+        items:
+          - question: Was magst du am meisten an deinem Vater / deiner Mutter / deinem Bruder / deiner Schwester? Warum?
+            frame: Ich mag an ihm / ihr am meisten sein / seine / ihr / ihre ___. / … dass er / sie ___.
+          - question: Was mag er / sie am meisten an dir?
+            frame: Er / Sie mag an mir am meisten mein / meine ___. / … dass ich ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Possessivpronomen** (Aktivitäten 2 und
+          4) und **Daten und Zahlen** (Aktivitäten 1 und 3). Empfohlene Kombinationen:
+          Aktivitäten 2 und 3 oder Aktivitäten 1 und 4.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Gib zuerst dein eigenes Beispiel, dann ist jeder Schüler dran.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Stell jedem Schüler mindestens zwei Fragen. Die Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Gib zuerst das Beispiel: «Meine Mutter heißt Dvora. Sie hat am 9. Februar
+          Geburtstag.» Ziel: Die Schüler nennen die **Daten** und die
+          **Possessivpronomen** richtig (am neunten Februar, sein / ihr Geburtstag).
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Zeig einen Beispiel-Stammbaum auf dem Bildschirm oder teile einen Link. Die
+          Hälfte der Gruppe präsentiert ihren Stammbaum; die andere Hälfte präsentiert in
+          Aktivität 3.
+      - id: n-act3
+        anchor: act3
+        text: Die Hälfte der Gruppe, die in Aktivität 2 nicht präsentiert hat, präsentiert ihren Reiseplan.
+      - id: n-act4
+        anchor: act4
+        text: Die Paare haben 10 Minuten für Fragen und Antworten; dann erzählt jedes Paar der Gruppe.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: familie-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-possessive
+        type: ruleSummary
+        skill: Possessivpronomen
+        rules:
+          - text: 'Mit Possessivpronomen sagen wir, wem etwas gehört: mein, dein, sein, ihr, unser.'
+          - text: 'Im Deutschen steht das Possessivpronomen **vor** dem Nomen: **meine** Mutter (auf Hebräisch: אמא **שלי**).'
+          - text: >-
+              Das Wort hängt von der **Person** ab, der etwas gehört (ich → mein, er → sein,
+              sie → ihr). Die Endung hängt vom **Nomen** ab: *mein* vor *der*- und
+              *das*-Wörtern, *meine* vor *die*-Wörtern und im Plural.
+            examples:
+              [
+                mein Bruder · meine Schwester · meine Eltern,
+                sein Vater · seine Mutter,
+                ihr Vater · ihre Mutter,
+              ]
+      - id: possessive-he
+        type: text
+        lang: he
+        text: >-
+          אנחנו משתמשים בכינויי שייכות כדי לומר למי שייך משהו: שלי, שלך, שלו, שלה, שלנו.
+          בשונה מהעברית, בגרמנית קודם אומרים את מילת השייכות ורק אחר כך את הדבר עצמו.
+          המילה עצמה נקבעת לפי הבעלים (mein – שלי, sein – שלו, ihr – שלה), והסיומת -e
+          נקבעת לפי הדבר: meine לפני מילה ממין נקבה (die) או ברבים.
+      - id: possessive-table
+        type: table
+        caption: Possessivpronomen
+        header: [Person, Possessivpronomen, Beispiel]
+        rows:
+          - [ich, mein / meine, Mein Bruder ist sehr groß.]
+          - [du, dein / deine, Deine Schwester ist sehr nett. Deine Großeltern leben in Italien.]
+          - [er, sein / seine, Sam kocht sehr gut. Sein Vater ist auch ein großartiger Koch.]
+          - [
+              sie (eine Frau),
+              ihr / ihre,
+              Ich gehe gern zu Hanna nach Hause. Ihre Mutter macht die beste Lasagne.,
+            ]
+          - [wir, unser / unsere, Unsere Eltern lieben italienisches Essen.]
+          - [
+              sie (mehrere Personen),
+              ihr / ihre,
+              John und Susan leben in Japan. Ihre Cousins besuchen sie jedes Jahr.,
+            ]
+      - id: possessive-examples
+        type: examples
+        items:
+          - { text: Mein Bruder ist sehr groß., gloss: האח שלי גבוה מאוד }
+          - { text: Deine Schwester ist sehr nett., gloss: האחות שלך נחמדה מאוד }
+          - { text: Deine Großeltern leben in Italien., gloss: הסבים שלך גרים באיטליה }
+          - { text: Sein Vater ist auch ein großartiger Koch., gloss: גם אבא שלו מבשל מצוין }
+          - { text: Ihre Mutter macht die beste Lasagne., gloss: אמא שלה מכינה את הלזניה הכי טובה }
+          - {
+              text: Unsere Eltern lieben italienisches Essen.,
+              gloss: ההורים שלנו אוהבים אוכל איטלקי,
+            }
+          - {
+              text: Ihre Cousins besuchen sie jedes Jahr.,
+              gloss: בני הדודים שלהם מבקרים אותם כל שנה,
+            }
+      - id: rules-dates
+        type: ruleSummary
+        skill: Daten und Zahlen
+        rules:
+          - text: 'Im Deutschen schreiben wir zuerst den Tag, dann den Monat, dann das Jahr. Nach der Zahl steht ein Punkt.'
+            examples: [4. Juli 2024 (nicht Juli 4 2024)]
+          - text: 'Für Daten benutzen wir Ordnungszahlen: bis 19 mit **-te**, ab 20 mit **-ste**. *erste*, *dritte* und *siebte* sind unregelmäßig.'
+            examples:
+              [
+                der erste Januar,
+                der zweite Februar,
+                der dritte März,
+                der vierte April,
+                der zwanzigste Mai,
+              ]
+          - text: '**am** steht vor einem genauen Datum, **im** vor einem Monat. Ein Jahr steht allein.'
+            examples:
+              [Ich bin **am** 5. März geboren., Ich bin **im** März geboren., Ich bin 1998 geboren.]
+      - id: dates-he
+        type: text
+        lang: he
+        text: >-
+          בגרמנית כותבים יום, חודש ושנה, ואחרי המספר יש נקודה: 4. Juli 2024. כשאומרים
+          תאריך משתמשים במספר סודר עם הסיומת ‎-te (עד 19) או ‎-ste (מ־20). am – לפני
+          תאריך מדויק (נולדתי ב־5 במרץ); im – לפני חודש (נולדתי במרץ); שנה באה לבד: 1998.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Wiederhole die zwei Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: familie-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori. Füll die Lücken aus, kopiere die Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-ausflug
+        type: aiTutorPrompt
+        title: Familienausflug!
+        message: |-
+          Hallo Mori! Ich plane einen Familienausflug und möchte ihn mit dir teilen:
+          Meine Familie und ich fahren am ___ (Datum) nach ___.
+          Am ___ (Datum) machen wir ___ (Aktivität).
+          Am ___ (Datum) machen wir ___ (Aktivität).
+          Am ___ (Datum) machen wir ___ (Aktivität).
+          Am ___ (Datum) kommen wir wieder nach Hause!
+          Bitte stell mir Fragen zu meinem Ausflug.
+      - id: mori-alltag
+        type: aiTutorPrompt
+        title: Familienalltag
+        message: |-
+          Hallo Mori! Das ist mein Familienalltag:
+          Am Montag ___ meine Mutter.
+          Am Dienstag ___ mein Vater.
+          Am Mittwoch ___ mein Bruder.
+          Am Donnerstag ___ ich.
+          Am Freitag ___ meine Schwester.
+          Am Samstag ___ wir.
+          Am Sonntag ___.
+          Bitte stell mir Fragen zu meinem Familienalltag.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: familie-uebung
+    book: workbook
+    title: 'Übung: Familie'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-possessiv
+        type: activity
+        activity: familie-possessiv
+      - id: ex-daten
+        type: activity
+        activity: familie-daten
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: familie-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für die Familie
+        glossLang: he
+        link: https://quizlet.com/br/1110971693/%D7%9E%D7%A9%D7%A4%D7%97%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &familie-words
+          - { term: die Familie, gloss: משפחה }
+          - { term: der Vater, gloss: אבא }
+          - { term: die Mutter, gloss: אמא }
+          - { term: der Bruder, gloss: אח }
+          - { term: die Schwester, gloss: אחות }
+          - { term: der Cousin, gloss: בן דוד }
+          - { term: die Cousine, gloss: בת דודה }
+          - { term: das Kind / die Kinder, gloss: ילד / ילדים }
+          - { term: der Freund, gloss: חבר }
+          - { term: mein, gloss: שלי (זכר / ניטרלי) }
+          - { term: meine, gloss: שלי (נקבה / רבים) }
+          - { term: sein, gloss: שלו }
+          - { term: ihr, gloss: שלה / שלהם }
+          - { term: leben, gloss: לחיות / לגור }
+          - { term: sprechen, gloss: לדבר }
+          - { term: treffen, gloss: לפגוש }
+          - { term: machen, gloss: לעשות }
+          - { term: besuchen, gloss: לבקר }
+          - { term: reisen, gloss: לטייל }
+          - { term: fliegen, gloss: לטוס }
+          - { term: fahren, gloss: לנסוע }
+          - { term: das Datum, gloss: תאריך }
+          - { term: der Monat, gloss: חודש }
+          - { term: am, gloss: ב־ (לפני תאריך) }
+          - { term: im, gloss: ב־ (לפני חודש) }
+          - { term: der Zeitplan, gloss: לוח זמנים }
+          - { term: der Name, gloss: שם }
+          - { term: … Jahre alt, gloss: בן / בת … }
+          - { term: weil, gloss: כי }
+          - { term: der Ort, gloss: מקום }
+          - { term: das Ziel, gloss: יעד }
+          - { term: das Haus, gloss: בית }
+
+vocabulary:
+  - slug: familie
+    title: Familie
+    items: *familie-words
+
+activities:
+  - slug: familie-possessiv
+    title: 'Possessivpronomen: mein, dein, sein, ihr, unser'
+    minutes: 8
+    items:
+      - id: meine-mutter
+        type: multipleChoice
+        prompt: Das ist ___ Mutter. (ich)
+        options:
+          - { text: meine, correct: true }
+          - { text: mein, feedback: '*Mutter* ist ein *die*-Wort: wir sagen *meine Mutter*.' }
+          - { text: deine, feedback: '*deine* gehört zu *du*. Für *ich* sagen wir *mein / meine*.' }
+      - id: sein-vater
+        type: multipleChoice
+        prompt: Sam kocht sehr gut. ___ Vater ist auch ein großartiger Koch.
+        options:
+          - { text: Sein, correct: true }
+          - { text: Ihr, feedback: 'Sam ist ein Mann (er): wir sagen *sein*.' }
+          - { text: Seine, feedback: '*Vater* ist ein *der*-Wort: wir sagen *sein Vater*.' }
+      - id: ihre-mutter
+        type: multipleChoice
+        prompt: Hanna wohnt in Berlin. ___ Mutter macht die beste Lasagne.
+        options:
+          - { text: Ihre, correct: true }
+          - { text: Seine, feedback: 'Hanna ist eine Frau (sie): wir sagen *ihr / ihre*.' }
+          - { text: Ihr, feedback: '*Mutter* ist ein *die*-Wort: wir sagen *ihre Mutter*.' }
+      - id: vor-nomen
+        type: trueFalse
+        prompt: 'Im Deutschen steht das Possessivpronomen vor dem Nomen: *meine Mutter*.'
+        answer: true
+        feedback:
+          correct: Richtig! Zuerst *meine*, dann *Mutter*.
+          incorrect: 'Anders als im Hebräischen steht das Possessivpronomen vor dem Nomen: *meine Mutter*.'
+      - id: anna-sein
+        type: trueFalse
+        prompt: 'Der Satz *Anna und sein Bruder wohnen in Berlin.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Anna ist eine Frau: *Anna und ihr Bruder*.'
+          incorrect: 'Das Wort hängt von der Person ab. Anna ist eine Frau (sie): *ihr Bruder*.'
+      - id: mein-meine
+        type: fillBlank
+        prompt: Ergänze *mein* oder *meine*.
+        text: Das ist ___ Bruder. Das sind ___ Eltern.
+        blanks: [[mein], [meine]]
+        wordBank: [mein, meine]
+      - id: person-possessiv
+        type: matching
+        prompt: Welches Possessivpronomen passt zu welcher Person?
+        pairs:
+          - [ich, mein / meine]
+          - [du, dein / deine]
+          - [er, sein / seine]
+          - [sie (eine Frau), ihr / ihre]
+          - [wir, unser / unsere]
+      - id: ordne-bruder
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Mein Bruder ist sehr groß.
+
+  - slug: familie-daten
+    title: Daten und Zahlen
+    minutes: 8
+    items:
+      - id: am-maerz
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Ich bin am 5. März geboren., correct: true }
+          - {
+              text: Ich bin im 5. März geboren.,
+              feedback: 'Vor einem genauen Datum steht *am*: *am 5. März*.',
+            }
+          - { text: Ich bin am März geboren., feedback: 'Vor einem Monat steht *im*: *im März*.' }
+      - id: am-im
+        type: fillBlank
+        prompt: Ergänze *am* oder *im*.
+        text: Mein Geburtstag ist ___ 4. Juli. Ich bin ___ Juli geboren.
+        blanks: [[am], [im]]
+        wordBank: [am, im]
+      - id: ordnungszahlen
+        type: matching
+        prompt: Welche Ordnungszahl passt?
+        pairs:
+          - ['1.', erste]
+          - ['2.', zweite]
+          - ['3.', dritte]
+          - ['4.', vierte]
+          - ['5.', fünfte]
+      - id: tag-zuerst
+        type: trueFalse
+        prompt: 'Im Deutschen schreiben wir zuerst den Tag, dann den Monat: *4. Juli 2024*.'
+        answer: true
+        feedback:
+          correct: Richtig! Tag, Monat, Jahr.
+          incorrect: 'Zuerst kommt der Tag, dann der Monat: *4. Juli 2024*.'
+      - id: der-erste
+        type: multipleChoice
+        prompt: Heute ist der ___ Januar. (1.)
+        options:
+          - { text: erste, correct: true }
+          - { text: einste, feedback: '*1.* ist unregelmäßig: *der erste Januar*.' }
+          - { text: eins, feedback: 'Für Daten benutzen wir Ordnungszahlen: *der erste Januar*.' }
+      - id: der-dritte
+        type: fillBlank
+        prompt: Schreib die Ordnungszahl als Wort.
+        text: Heute ist der ___ März. (3.)
+        blanks: [[dritte]]
+      - id: ordne-paris
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Am 5. Juli fliegen wir nach Paris.
+      - id: mein-geburtstag
+        type: shortAnswer
+        prompt: Wann hast du Geburtstag? Schreib einen Satz mit *am*.

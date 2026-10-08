@@ -1,0 +1,566 @@
+# Cycle "Mein Zuhause", converted from the German Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: mein-zuhause
+title: Mein Zuhause
+goal: Dein Zuhause beschreiben, mit „es gibt“ und Verben im Präsens.
+position: 7
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Es gibt" and "Verben im Präsens") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and every
+    right answer before students see them.
+  - >-
+    Skill names: "Beschreibende Sätze (es gibt)" → "Beschreibende Sätze: es gibt";
+    "Handlungen im Präsens" → "Verben im Präsens" (as in the summary).
+  - >-
+    The summary is written in Hebrew in the notebook. The rules are given here as short
+    German ruleSummary blocks; the notebook's Hebrew "סיכום קצר לתלמיד" is kept as a
+    Hebrew (lang he) text block. Please check the German wording.
+  - >-
+    "Es gibt" rule: ADDED that es gibt takes the accusative, so der → einen (es gibt
+    einen Tisch), while ein / eine stay the same. All the notebook's examples already
+    use einen; the exercises test it.
+  - >-
+    Adjective rule: "the adjective always comes before the noun" is not true in German
+    (Das Wohnzimmer ist gemütlich). Rewritten: before the noun the adjective has an
+    ending (ein kleiner Tisch, ein bequemes Sofa); after sein it has none (Es ist
+    gemütlich), as Activity 3 uses it.
+  - >-
+    Too-hard examples were simplified: "Es gibt eine helle, geräumige Küche, in der man
+    leckere Mahlzeiten kochen kann" → "Es gibt eine helle, große Küche"; "Dort kann man
+    schlafen und sich ausruhen" → "Dort schlafe und lese ich"; "Es sieht nach dem Putzen
+    sauber aus" was left out.
+  - >-
+    Verb rule "er/sie/es always takes -t" is kept, with the vowel change added
+    (waschen → wäscht, schlafen → schläft, lesen → liest), since the notebook's own
+    example is "Sie wäscht das Geschirr".
+  - >-
+    Negation: "Ich mache morgens nicht das Bett" → "Ich mache morgens das Bett nicht".
+    The notebook names kein without an example; added: "Im Schlafzimmer gibt es keinen
+    Tisch." Please check.
+  - >-
+    Small corrections: Activity 1 "Mit es sagen wir, was im Raum ist" → "Mit *es gibt*
+    sagen wir, was im Raum ist"; Activity 2 "Gibt's…?" → "Gibt es…?".
+  - >-
+    The warm-up questions had no sentence frames in the notebook; frames were ADDED.
+    "Wie viele Zimmer gibt es?" → "Wie viele Zimmer gibt es in deiner Wohnung / deinem
+    Haus?".
+  - >-
+    Activities 1 and 4 need pictures of rooms (kitchen, living room, bedroom, bathroom,
+    a person in bed, in the bathroom…). The notebook has no pictures or links; the
+    teacher brings or shares them.
+  - >-
+    Mori messages were in English in the notebook; they are translated into German
+    (like the Spanish and English courses, which write them in the course language).
+  - >-
+    Vocabulary: nouns now have their article (das Haus, die Wohnung…); "Badezimmer –
+    אמבטיה" → "חדר אמבטיה"; "haben – יש" → "haben – יש ל־ (יש לי)"; "gemütlich – נעים" →
+    "נעים / ביתי". Please confirm.
+  - The Quizlet link lost its tracking parameter (?new).
+  - Activity times given as ranges (15–20 minutes) are recorded as 20 minutes.
+  - >-
+    The "Antwort (von) Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: mein-zuhause-unterricht
+    title: 'Unterricht: Mein Zuhause'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Mein Zuhause
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: 'Beschreibende Sätze: es gibt'
+            description: '*Das ist die Küche. Es gibt einen Tisch. Es ist gemütlich.*'
+          - name: Verben im Präsens
+            description: '*Ich koche in der Küche. Er schläft im Schlafzimmer.*'
+      - id: quizlet
+        type: externalLink
+        label: Mein Zuhause auf Quizlet
+        url: https://quizlet.com/br/1113976625/%D7%94%D7%91%D7%99%D7%AA-%D7%A9%D7%9C%D7%99-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Ich wohne in einer Wohnung / in einem Haus.
+        example: Ich bin Anna. Ich wohne in einer Wohnung.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Wohnst du in einer Wohnung oder in einem Haus?
+            frame: Ich wohne in einer Wohnung / in einem Haus.
+          - question: Wie viele Zimmer gibt es in deiner Wohnung / deinem Haus?
+            frame: Es gibt ___ Zimmer.
+          - question: Was ist dein Lieblingszimmer?
+            frame: Mein Lieblingszimmer ist ___.
+          - question: Arbeitest du lieber von zu Hause oder im Büro? Warum?
+            frame: Ich arbeite lieber ___, weil ___.
+          - question: Was hast du auf deinem Nachttisch?
+            frame: Auf meinem Nachttisch habe ich ___.
+          - question: Mit wem wohnst du?
+            frame: Ich wohne mit ___. / Ich wohne allein.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Räume zeigen und benennen'
+        skills: ['Beschreibende Sätze: es gibt']
+        minutes: 10
+        steps:
+          - Dein Lehrer zeigt Bilder von Räumen und sagt, was es ist. Hör nur zu.
+          - Sprich mit der ganzen Klasse nach.
+          - 'Dein Lehrer sagt, was es im Raum gibt. Mit *es gibt* sagen wir, was im Raum ist.'
+          - Dein Lehrer zeigt dir ein Bild. Sag, welcher Raum es ist und was es dort gibt.
+          - Sag zwei Sätze zusammen.
+        example: |-
+          *Das ist die Küche.*
+          *Es gibt einen Tisch.*
+          *Es gibt einen Kühlschrank.*
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Errate den Raum'
+        skills: ['Beschreibende Sätze: es gibt']
+        minutes: 10
+        steps:
+          - Ein Schüler denkt leise an einen Raum (zum Beispiel das Schlafzimmer).
+          - Die anderen stellen Ja/Nein-Fragen. Der Schüler antwortet nur *Ja* oder *Nein*.
+          - 'Ein Schüler rät: *Ist es das Schlafzimmer?*'
+          - Wer richtig rät, denkt an den nächsten Raum.
+        example: |-
+          *Gibt es ein Bett?* – *Ja.*
+          *Gibt es einen Kühlschrank?* – *Nein.*
+          *Ist es groß?* – *Nein.*
+          *Ist es das Schlafzimmer?* – *Ja!*
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Mein Lieblingszimmer'
+        skills: ['Beschreibende Sätze: es gibt']
+        minutes: 10
+        steps:
+          - Hör das Beispiel deines Lehrers.
+          - Bereite deine 3 Sätze 2 Minuten lang leise vor (unten).
+          - Sag deine 3 Sätze laut.
+        example: |-
+          *Mein Lieblingszimmer ist das Wohnzimmer.*
+          *Es gibt ein Sofa und einen Tisch.*
+          *Es ist gemütlich.*
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Mein Lieblingszimmer
+        items:
+          - question: Mein Lieblingszimmer ist ___.
+          - question: Es gibt ___ und ___.
+          - question: Es ist ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Was mache ich dort?'
+        skills: [Verben im Präsens]
+        minutes: 10
+        steps:
+          - 'Dein Lehrer zeigt ein Bild und fragt: *Was macht er?*'
+          - Sprich den Satz mit der ganzen Klasse nach.
+          - Dein Lehrer zeigt neue Bilder. Sag, was die Person macht und wo.
+          - Sag einen eigenen Satz ohne Bild.
+        example: |-
+          *Ich koche in der Küche.*
+          *Ich schlafe im Schlafzimmer.*
+          *Ich dusche im Badezimmer.*
+          *Ich sehe im Wohnzimmer fern.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Was mache ich dort?
+        items:
+          - question: Ich ___ in der Küche.
+          - question: Ich ___ im Wohnzimmer.
+          - question: Ich ___ im Schlafzimmer.
+      - id: act5
+        type: classActivity
+        title: 'Aktivität 5: Kleine Routine'
+        skills: [Verben im Präsens]
+        minutes: 10
+        steps:
+          - Hör das Beispiel deines Lehrers.
+          - Sag 2–3 Sätze über dich.
+          - 'Wenn du willst: Beschreib eine Person mit *er* oder *sie*. Die Klasse rät: *Ist es dein Vater? Ist es dein Bruder?*'
+          - Sag deine Sätze noch einmal.
+        example: |-
+          *Ich stehe auf. Ich frühstücke. Ich gehe ins Wohnzimmer.*
+          *Er steht auf. Er frühstückt. Er geht ins Wohnzimmer.*
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fähigkeiten in diesem Zyklus: **Beschreibende Sätze mit es gibt**
+          (Aktivitäten 1, 2 und 3) und **Verben im Präsens** (Aktivitäten 4 und 5).
+      - id: n-intro
+        anchor: intro
+        text: Gib zuerst dein eigenes Beispiel und frag dann jeden Schüler.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Stelle jedem Schüler mindestens zwei Fragen. Die getippten Antworten siehst du unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Du brauchst Bilder von Räumen (Küche, Wohnzimmer, Schlafzimmer, Badezimmer); sie
+          sind noch nicht auf der Plattform. Schritt 1: Sag „Das ist die Küche. Das ist das
+          Wohnzimmer.“ Schritt 2: Chor. Schritt 3: „Es gibt einen Tisch. Es gibt einen
+          Kühlschrank.“ Erkläre nicht grammatisch, nur funktional. Schritt 4: Jeder Schüler
+          ein Bild. Schritt 5: Jeder Schüler sagt zwei Sätze zusammen.
+      - id: n-act2
+        anchor: act2
+        text: Der denkende Schüler antwortet nur mit Ja oder Nein.
+      - id: n-act3
+        anchor: act3
+        text: Sag die Beispielsätze langsam und schreib die Struktur sichtbar an die Tafel. Wenn nötig, hilf beim Wortschatz oder beim Artikel.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Bilder: eine Person in der Küche, im Bett, im Badezimmer, im Wohnzimmer. Modelliere
+          „Ich koche in der Küche.“, dann Chor, dann sagen die Schüler nacheinander einen Satz
+          zu jedem Bild. Zum Schluss freie Sätze, z. B. „Ich esse in der Küche. Ich lese im
+          Wohnzimmer.“
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Keine Korrektur im Fluss, nur sanfte Modellierung. Phase 3 (3. Person) nur, wenn
+          die Gruppe sicher ist. Zum Abschluss wiederholen 2–3 Schüler ihre Sätze noch
+          einmal sauber.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: mein-zuhause-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Das haben wir heute gelernt
+      - id: rules-es-gibt
+        type: ruleSummary
+        skill: 'Beschreibende Sätze: es gibt'
+        rules:
+          - text: Mit **es gibt** sagen wir, dass etwas an einem Ort ist. *Es gibt* bleibt im Singular und im Plural gleich.
+            examples:
+              - Es gibt einen Tisch in der Küche.
+              - Es gibt zwei Stühle im Wohnzimmer.
+              - Es gibt ein großes Fenster im Zimmer und es gibt schöne Vorhänge.
+          - text: 'Nach *es gibt*: **der** → **einen**. *Ein* (das) und *eine* (die) bleiben gleich.'
+            examples:
+              - der Tisch → Es gibt **einen** Tisch.
+              - das Bett → Es gibt **ein** Bett.
+              - die Dusche → Es gibt **eine** Dusche.
+          - text: '**Adjektive** beschreiben ein Nomen. Vor dem Nomen haben sie eine Endung, nach *sein* keine.'
+            examples:
+              - ein kleiner Tisch, ein bequemes Sofa, eine helle, große Küche
+              - Das Wohnzimmer ist gemütlich.
+          - text: 'Zuerst beschreiben, dann sagen, was man dort macht.'
+            examples: [Das Schlafzimmer ist ruhig und gemütlich. Dort schlafe und lese ich.]
+      - id: rules-verbs
+        type: ruleSummary
+        skill: Verben im Präsens
+        rules:
+          - text: Das Verb hat für jede Person eine eigene Form.
+            examples:
+              - Ich putze das Wohnzimmer jeden Samstag.
+              - Wir kochen zusammen in der Küche.
+          - text: 'Bei **er / sie / es** endet das Verb auf **-t**. Manche Verben ändern auch den Vokal.'
+            examples:
+              - Er saugt sonntags den Teppich.
+              - waschen → Sie wäscht das Geschirr.
+              - schlafen → Er schläft im Schlafzimmer.
+          - text: 'Ja/Nein-Fragen: Das Verb steht an **Position 1**.'
+            examples: [Du machst das Bett. → **Machst** du jeden Tag das Bett?]
+          - text: 'Verneinung: **nicht** verneint ein Verb, **kein** steht vor einem Nomen.'
+            examples:
+              - Ich mache morgens das Bett **nicht**.
+              - Sie putzt den Boden **nicht** jeden Tag.
+              - Im Schlafzimmer gibt es **keinen** Tisch.
+      - id: verbs-table
+        type: table
+        caption: 'Verben im Präsens: kochen, schlafen'
+        header: [Person, kochen, schlafen]
+        rows:
+          - [ich, koche, schlafe]
+          - [du, kochst, schläfst]
+          - [er / sie / es, kocht, schläft]
+          - [wir, kochen, schlafen]
+          - [ihr, kocht, schlaft]
+          - [sie / Sie, kochen, schlafen]
+      - id: summary-he
+        type: text
+        lang: he
+        text: |-
+          **סיכום קצר לתלמיד**
+          „Es gibt“ – כדי להגיד שיש משהו
+          שם תואר לפני שם עצם מקבל סיומת: ein kleiner Tisch
+          מוסיפים פועל כדי להגיד מה עושים
+          er / sie / es → הפועל נגמר ב־t
+          שאלה → הפועל ראשון
+          שלילה → nicht / kein
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Wiederhole die beiden Fähigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: mein-zuhause-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle im Präsens und versuche, zu beschreiben oder zu erklären, was du machst.
+      - id: mori-zuhause
+        type: aiTutorPrompt
+        title: Über dein Zuhause sprechen
+        intro: 'Mori fragt dich zum Beispiel: *Wo wohnst du? Was machst du zu Hause? Putzt du dein Zimmer? Beschreib dein Wohnzimmer.*'
+        message: >-
+          Hallo Mori! Ich möchte Small Talk üben. Kannst du mir Fragen über mein Zuhause
+          mit den Fähigkeiten beschreibende Sätze (es gibt) und Verben im Präsens stellen?
+          Bitte korrigiere meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Möchtest du mehr Fragen? Schick: **Bitte frag mich mehr!**
+          Verstehst du eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra-Übung
+      - id: mori-raum
+        type: aiTutorPrompt
+        title: Errate das Zimmer
+        intro: >-
+          Gib Mori Tipps im Präsens, zum Beispiel: *Ich schlafe hier. Es gibt ein Bett und
+          einen Schrank.* Wenn Mori richtig rät, schreib: *Jetzt bist du dran! Denk an ein
+          Zimmer und ich rate.*
+        message: Hallo Mori! Lass uns ein Spiel spielen. Ich denke an ein Zimmer in meinem Haus, und du musst raten, welches Zimmer es ist.
+      - id: mori-was-mache-ich
+        type: aiTutorPrompt
+        title: Was mache ich? (zu Hause)
+        intro: >-
+          Schreib dann einen Satz, zum Beispiel: *Ich öffne den Kühlschrank und nehme Essen
+          heraus. / Ich sitze auf dem Sofa und sehe fern. / Ich wasche das Geschirr im
+          Spülbecken.* Mori rät: *Kochst du? Siehst du fern?* Wenn Mori richtig rät, schreib:
+          *Jetzt bist du dran! Beschreib etwas, das du zu Hause machst, und ich rate.*
+        message: >-
+          Hallo Mori! Lass uns ein Spiel spielen. Ich beschreibe etwas, das ich normalerweise
+          zu Hause mache, und du musst raten, was ich mache. Ich benutze das Präsens.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: mein-zuhause-uebung
+    book: workbook
+    title: 'Übung: Mein Zuhause'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fähigkeiten des Zyklus allein. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-es-gibt
+        type: activity
+        activity: mein-zuhause-es-gibt
+      - id: ex-verben
+        type: activity
+        activity: mein-zuhause-verben
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: mein-zuhause-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für das Zuhause
+        glossLang: he
+        link: https://quizlet.com/br/1113976625/%D7%94%D7%91%D7%99%D7%AA-%D7%A9%D7%9C%D7%99-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &mein-zuhause-words
+          - { term: das Haus, gloss: בית }
+          - { term: die Wohnung, gloss: דירה }
+          - { term: das Zimmer, gloss: חדר }
+          - { term: die Küche, gloss: מטבח }
+          - { term: das Wohnzimmer, gloss: סלון }
+          - { term: das Schlafzimmer, gloss: חדר שינה }
+          - { term: das Badezimmer, gloss: חדר אמבטיה }
+          - { term: der Tisch, gloss: שולחן }
+          - { term: der Stuhl, gloss: כיסא }
+          - { term: das Sofa, gloss: ספה }
+          - { term: das Bett, gloss: מיטה }
+          - { term: der Kühlschrank, gloss: מקרר }
+          - { term: die Dusche, gloss: מקלחת }
+          - { term: die Toilette, gloss: שירותים }
+          - { term: es gibt, gloss: יש }
+          - { term: das ist, gloss: זה }
+          - { term: wohnen, gloss: לגור }
+          - { term: haben, gloss: יש ל־ (יש לי) }
+          - { term: kochen, gloss: לבשל }
+          - { term: schlafen, gloss: לישון }
+          - { term: duschen, gloss: להתקלח }
+          - { term: essen, gloss: לאכול }
+          - { term: fernsehen, gloss: לראות טלוויזיה }
+          - { term: lesen, gloss: לקרוא }
+          - { term: aufstehen, gloss: לקום }
+          - { term: frühstücken, gloss: לאכול ארוחת בוקר }
+          - { term: groß, gloss: גדול }
+          - { term: klein, gloss: קטן }
+          - { term: sauber, gloss: נקי }
+          - { term: gemütlich, gloss: נעים / ביתי }
+
+vocabulary:
+  - slug: mein-zuhause
+    title: Mein Zuhause
+    items: *mein-zuhause-words
+
+activities:
+  - slug: mein-zuhause-es-gibt
+    title: 'Beschreibende Sätze: es gibt'
+    minutes: 8
+    items:
+      - id: einen-tisch
+        type: multipleChoice
+        prompt: Es gibt ___ Tisch in der Küche.
+        options:
+          - { text: einen, correct: true }
+          - { text: ein, feedback: '*der Tisch* → nach *es gibt*: *einen Tisch*.' }
+          - { text: eine, feedback: '*Tisch* ist maskulin (*der Tisch*): *Es gibt einen Tisch.*' }
+      - id: ein-eine-einen
+        type: fillBlank
+        prompt: 'Ergänze mit *ein*, *eine* oder *einen*. (das Bett, die Dusche, der Stuhl)'
+        text: Es gibt ___ Bett, ___ Dusche und ___ Stuhl.
+        blanks: [[ein], [eine], [einen]]
+        wordBank: [ein, eine, einen]
+      - id: plural-gleich
+        type: trueFalse
+        prompt: '*Es gibt* bleibt im Plural gleich: *Es gibt zwei Stühle im Wohnzimmer.*'
+        answer: true
+        feedback:
+          correct: 'Richtig! *Es gibt einen Stuhl. Es gibt zwei Stühle.*'
+          incorrect: '*Es gibt* ändert sich nicht: *Es gibt einen Stuhl. Es gibt zwei Stühle.*'
+      - id: raeume
+        type: matching
+        prompt: Was gibt es in welchem Raum? Verbinde.
+        pairs:
+          - [die Küche, der Kühlschrank]
+          - [das Schlafzimmer, das Bett]
+          - [das Badezimmer, die Dusche]
+          - [das Wohnzimmer, das Sofa]
+      - id: das-ist
+        type: fillBlank
+        prompt: Ergänze den Artikel.
+        text: Das ist ___ Küche. Das ist ___ Wohnzimmer.
+        blanks: [[die], [das]]
+        wordBank: [der, die, das]
+      - id: gemuetlich
+        type: multipleChoice
+        prompt: Das Wohnzimmer ist ___.
+        options:
+          - { text: gemütlich, correct: true }
+          - {
+              text: gemütliches,
+              feedback: 'Nach *ist* hat das Adjektiv keine Endung: *Das Wohnzimmer ist gemütlich.*',
+            }
+          - {
+              text: gemütlicher,
+              feedback: 'Nach *ist* hat das Adjektiv keine Endung: *Das Wohnzimmer ist gemütlich.*',
+            }
+      - id: gibt-es-position
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: In der Küche gibt es einen Kühlschrank., correct: true }
+          - {
+              text: In der Küche es gibt einen Kühlschrank.,
+              feedback: 'Das Verb steht an Position 2: *In der Küche **gibt** es…*',
+            }
+          - {
+              text: Es gibt ein Kühlschrank in der Küche.,
+              feedback: '*der Kühlschrank* → *Es gibt einen Kühlschrank.*',
+            }
+      - id: ordne-bett
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einer Frage.
+        sentence: Gibt es ein Bett?
+
+  - slug: mein-zuhause-verben
+    title: 'Verben im Präsens: zu Hause'
+    minutes: 8
+    items:
+      - id: ich-koche
+        type: multipleChoice
+        prompt: Ich ___ in der Küche.
+        options:
+          - { text: koche, correct: true }
+          - { text: kocht, feedback: '*kocht* ist für *er / sie / es*. Bei *ich*: *ich koche*.' }
+          - {
+              text: kochen,
+              feedback: '*kochen* ist für *wir* oder *sie* (Plural). Bei *ich*: *ich koche*.',
+            }
+      - id: er-schlaeft
+        type: multipleChoice
+        prompt: Er ___ im Schlafzimmer.
+        options:
+          - { text: schläft, correct: true }
+          - { text: schlaft, feedback: '*schlafen* ändert den Vokal: *er schläft*.' }
+          - { text: schlafe, feedback: '*schlafe* ist für *ich*. Bei *er*: *er schläft*.' }
+      - id: putzen-kochen
+        type: fillBlank
+        prompt: Ergänze *putzen* und *kochen* im Präsens.
+        text: Sie ___ das Wohnzimmer jeden Samstag. Wir ___ zusammen in der Küche.
+        blanks: [[putzt], [kochen]]
+        wordBank: [putzt, kochen]
+      - id: frage-position-eins
+        type: trueFalse
+        prompt: 'In einer Ja/Nein-Frage steht das Verb an Position 1: *Machst du jeden Tag das Bett?*'
+        answer: true
+        feedback:
+          correct: Richtig! *Du machst das Bett.* → *Machst du das Bett?*
+          incorrect: 'Doch: In der Frage steht das Verb zuerst: *Machst du das Bett?*'
+      - id: wo-machst-du-das
+        type: matching
+        prompt: Wo machst du das? Verbinde.
+        pairs:
+          - [Ich koche, in der Küche.]
+          - [Ich schlafe, im Schlafzimmer.]
+          - [Ich dusche, im Badezimmer.]
+          - [Ich sehe fern, im Wohnzimmer.]
+      - id: keine-dusche
+        type: multipleChoice
+        prompt: Im Badezimmer gibt es ___ Dusche.
+        options:
+          - { text: keine, correct: true }
+          - { text: nicht, feedback: 'Vor einem Nomen verneint man mit *kein*: *keine Dusche*.' }
+          - { text: kein, feedback: '*die Dusche* → *keine Dusche*.' }
+      - id: fernsehen
+        type: fillBlank
+        prompt: Ergänze das Verb *fernsehen*.
+        text: Er ___ im Wohnzimmer ___.
+        blanks: [[sieht], [fern]]
+      - id: ordne-kochen
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einer Frage.
+        sentence: Kochst du in der Küche?

@@ -1,0 +1,595 @@
+# Cycle "Wetter", converted from the German Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: wetter
+title: Wetter
+goal: Das Wetter beschreiben, mit beschreibenden Sätzen, Zahlen und Grad.
+position: 10
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Das Wetter beschreiben" and "Zahlen und Grad") are
+    NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    The lesson summary is written in Hebrew in the notebook. It is given here as
+    short German rules (ruleSummary) with Hebrew glosses in the examples, plus one
+    Hebrew text block (lang he) per skill.
+  - >-
+    Summary corrections. (1) Rule 3 ("when there are two verbs, the second goes to
+    the end") used "Ich gehe nach Hause" as an example, which has only one verb; the
+    rule keeps "Ich gehe schwimmen" and explains *nach Hause* separately. (2) Numbers
+    rule 3 said "11–19 are exceptions, just memorise them"; only 11 and 12 are
+    irregular, 13–19 are built with *-zehn* (with the short forms *sechzehn,
+    siebzehn*). (3) The example "Es sind 60 Grad" (not a real air temperature) is
+    replaced with "Es sind 40 Grad". Please confirm.
+  - >-
+    Temperature: the notebook says "Es ist 20 Grad" is wrong and "Es sind 20 Grad"
+    is right. *Es sind 20 Grad* is the standard form and is the one taught and
+    tested; *Es ist 20 Grad* and *Es hat 20 Grad* are also heard in everyday speech,
+    so the exercises do not mark them as false.
+  - >-
+    Vocabulary: "das Grad" → "der Grad" (the temperature degree is masculine); "Es
+    sind – יש / הם" → "זה (לטמפרטורה: Es sind 20 Grad)"; "haben – יש / להחזיק" →
+    "שיש ל־ / להחזיק"; "es gibt – יש" added (rule 1 of the summary). Section
+    headings' broken emoji removed.
+  - >-
+    Small German fixes: "Magst du warm oder kalt? → Ich mag ___" → "Magst du es
+    lieber warm oder kalt? → Ich mag es ___"; "Ein Ort mit Wetter beschreiben" →
+    "Einen Ort mit Wetter beschreiben"; "Mein perfekter Ort beschreiben" → "Mein
+    perfekter Ort"; "In Paris ist es bewölkt und 20 Grad" → "In Paris ist es bewölkt.
+    Es sind 20 Grad."; the Mori instructions and prompts use *du* throughout ("Senden
+    Sie", "Können Sie" → "Sende", "Kannst du"); the second Mori prompt was a question
+    to the student and is rewritten as a message to Mori.
+  - >-
+    The skill tag in capitals in the Activity 1 title ("ZAHLEN") is moved to the
+    activity's skills list. Activity 2's "Bundesstaat oder Stadt" (from the US
+    example Arizona) → "Ort oder Stadt".
+  - >-
+    Activity times: Activity 2 = 15 minutes; Activity 3 (15–20) = 20; Activities 1
+    and 4 have no time in the notebook. Intro round = 5 minutes, as in the notebook.
+  - >-
+    The "Antwort von Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+  - The Quizlet link's tracking parameter (?new) was removed.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: wetter-unterricht
+    title: 'Unterricht: Wetter'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Wetter
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Beschreibende Sätze
+            description: '*Es ist warm. Es gibt Regen. Ich gehe schwimmen.*'
+          - name: Zahlen und Grad
+            description: 'Zahlen bis 99 und die Temperatur: *Es sind 20 Grad.*'
+      - id: quizlet
+        type: externalLink
+        label: Das Wetter auf Quizlet
+        url: https://quizlet.com/1114246461/%D7%9E%D7%96%D7%92-%D7%90%D7%95%D7%95%D7%99%D7%A8-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Ich mag ___ Tage.
+        example: Ich bin Daniel. Ich mag sonnige Tage.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Magst du es lieber warm oder kalt?
+            frame: Ich mag es ___.
+          - question: Wie ist das Wetter heute?
+            frame: Es ist ___.
+          - question: Bist du lieber drinnen oder draußen?
+            frame: Ich bin lieber ___.
+          - question: Was machst du bei kaltem Wetter?
+            frame: Ich ___.
+          - question: Was machst du bei warmem Wetter?
+            frame: Ich ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Der Wetterbericht'
+        skills: [Zahlen und Grad, Beschreibende Sätze]
+        steps:
+          - Schau die Tabelle an und hör das Modell von deinem Lehrer / deiner Lehrerin.
+          - 'Die Klasse antwortet zusammen: *Wie ist das Wetter am Mittwoch?*'
+          - 'Arbeitet zu zweit. Schüler A fragt: *Wie ist das Wetter am Dienstag?* Schüler B antwortet. Dann wechselt ihr.'
+          - Sag einen Satz vor der Klasse (freiwillig).
+        example: |-
+          *Am Montag sind es 20 Grad. Es ist warm.*
+          *Am Dienstag sind es 28 Grad. Es ist heiß.*
+          *Am Mittwoch sind es 15 Grad. Es ist kalt.*
+      - id: act1-table
+        type: table
+        caption: Das Wetter diese Woche
+        header: [Montag, Dienstag, Mittwoch, Donnerstag, Freitag]
+        rows:
+          - [20°, 28°, 15°, 32°, 10°]
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Einen Ort mit Wetter beschreiben'
+        skills: [Beschreibende Sätze, Zahlen und Grad]
+        minutes: 15
+        steps:
+          - Hör das Beispiel von deinem Lehrer / deiner Lehrerin.
+          - Wähl einen Ort oder eine Stadt und schreib 4 einfache Sätze (Vorlage unten).
+          - 'Arbeitet zu zweit: Schüler A liest seine 4 Sätze vor, Schüler B hört zu. Dann wechselt ihr.'
+          - Lies deine Sätze der Gruppe vor (freiwillig).
+        example: |-
+          *Mein Ort ist **Arizona**.*
+          *Es ist **heiß**.*
+          *Es sind **45 Grad**.*
+          *Ich gehe **schwimmen**.*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Mein Ort
+        items:
+          - question: Mein Ort ist ___.
+          - question: Es ist ___.
+          - question: Es sind ___ Grad.
+          - question: Ich gehe ___.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: TV-Wetterbericht'
+        skills: [Beschreibende Sätze, Zahlen und Grad]
+        minutes: 20
+        steps:
+          - 'Die Klasse entscheidet zusammen: den Namen der Sendung, 3–4 Städte, 1 Studio-Reporter und 2–3 Feld-Reporter.'
+          - Hör das Modell. Dein Lehrer / deine Lehrerin liest beide Rollen langsam vor.
+          - Schreib deine Sätze (2–3 Minuten). Feld-Reporter schreiben 4 Sätze, der Studio-Reporter schreibt 2 Sätze.
+          - 'Die Sendung beginnt! Der Studio-Reporter beendet sie: *Danke! Das war das Wetter. Tschüss!*'
+        example: |-
+          **Studio:** *Guten Morgen! Willkommen bei ___! Wie ist das Wetter in ___?*
+          **Reporter:** *Hallo aus ___. Es ist ___. Es sind ___ Grad. Ich gehe ___.*
+          **Studio:** *Danke! Wie ist das Wetter in ___?*
+      - id: act3-reporter
+        type: discussionQuestions
+        title: Feld-Reporter
+        items:
+          - question: Hallo aus ___.
+          - question: Es ist ___.
+          - question: Es sind ___ Grad.
+          - question: Ich gehe ___.
+      - id: act3-studio
+        type: discussionQuestions
+        title: Studio-Reporter
+        items:
+          - question: Willkommen bei ___!
+          - question: Wie ist das Wetter in ___?
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Mein perfekter Ort'
+        skills: [Beschreibende Sätze]
+        steps:
+          - Hör das Beispiel von deinem Lehrer / deiner Lehrerin.
+          - Füll die Vorlage unten aus.
+          - 'Arbeitet zu zweit: Schüler A liest, Schüler B hört zu. Dann wechselt ihr.'
+          - Lies deine Sätze der Gruppe vor (freiwillig).
+        example: |-
+          *Mein perfekter Ort ist **der Strand**.*
+          *Es ist **warm**. Es ist **sonnig**.*
+          *Der Ort ist **draußen**.*
+          *Es gibt **Wasser** und **Sonne**.*
+          *Mein **Hund** kommt mit mir.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Mein perfekter Ort
+        items:
+          - question: Mein perfekter Ort ist ___.
+          - question: Es ist ___.
+          - question: Es ist ___ (sonnig / regnerisch / bewölkt).
+          - question: Der Ort ist ___ (drinnen / draußen).
+          - question: Es gibt ___ und ___.
+          - question: Mein ___ kommt mit mir.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fähigkeiten in diesem Zyklus: **Beschreibende Sätze** (*Es ist / Es gibt /
+          Ich gehe + Verb*) und **Zahlen und Grad**. Alle vier Aktivitäten üben beide
+          Fähigkeiten; Aktivität 1 übt besonders die Zahlen, Aktivität 4 besonders die
+          Beschreibung.
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: Schreib das Modell an die Tafel, gib dein Beispiel und lass die Schüler nacheinander sprechen.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Stell jedem Schüler mindestens zwei Fragen. Die geschriebenen Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Ziel: Temperatur sagen + Wetter beschreiben. Zeig die Tabelle und sag laut und
+          langsam: «Am Montag sind es 20 Grad. Es ist warm. Am Dienstag sind es 28 Grad. Es
+          ist heiß.» Die Schüler hören nur zu. Dann fragst du: «Wie ist das Wetter am
+          Mittwoch?» – die Klasse antwortet zusammen: «Am Mittwoch sind es 15 Grad. Es ist
+          kalt.» Danach Paararbeit und 2–3 Sätze vor der Klasse, z. B. «Am Freitag sind es
+          10 Grad. Es ist kalt.»
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Ziel: Ort + Temperatur + Gefühl + Aktivität. Schreib das sehr einfache Beispiel
+          an die Tafel und lies es langsam vor. 2–3 Schüler präsentieren am Ende.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Ziel: Wetter beschreiben + Zahlen sagen + vor der Gruppe sprechen. Hilf beim
+          Einteilen der Rollen. Schreib das Modell (Studio und Reporter) an die Tafel und
+          lies beide Rollen langsam vor. Ablauf: Studio-Reporter → Feld-Reporter 1 →
+          Studio-Reporter («Danke! Wie ist das Wetter in ___?») → Feld-Reporter 2 / 3 →
+          Abschluss.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Ziel: einen Ort beschreiben + Wetter + einfache Sätze im Präsens. Schreib nur
+          einfache Sätze an die Tafel und lies langsam vor. 2–3 Schüler lesen am Ende ihre
+          Sätze vor.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: wetter-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-beschreiben
+        type: ruleSummary
+        skill: Beschreibende Sätze
+        rules:
+          - text: '**Es gibt** + Nomen sagt, **was** da ist. *Es gibt* ist gleich für Singular und Plural.'
+            examples:
+              - Es gibt Sonne. (יש שמש)
+              - Es gibt Regen. (יש גשם)
+              - Es gibt Wolken und Wind. (יש עננים ורוח)
+          - text: '**Es ist** + Adjektiv sagt, **wie** das Wetter ist. Das ist die wichtigste Regel für das Wetter.'
+            examples:
+              - Es ist warm. (חמים)
+              - Es ist kalt. (קר)
+              - Es ist sonnig. (שמשי)
+              - Es ist regnerisch. (גשום)
+          - text: 'Nach der Beschreibung sagen wir, was wir machen: **Ich gehe + Verb**. Das zweite Verb steht am Ende.'
+            examples:
+              - Es ist warm. Ich gehe schwimmen. (חם. אני הולך לשחות.)
+              - 'Es ist kalt. Ich gehe nach Hause. (קר. אני הולך הביתה.) – Hier gibt es nur ein Verb: *nach Hause* ist der Ort.'
+      - id: he-beschreiben
+        type: text
+        lang: he
+        text: >-
+          **תיאור מזג אוויר:** **Es gibt** = יש – אומר מה קיים (שמש, גשם, עננים), בלי שינוי בין
+          יחיד לרבים. **Es ist** + תואר – אומר איך מזג האוויר (warm, kalt, sonnig). אחר כך
+          מוסיפים מה עושים: **Ich gehe** + פעולה. כשיש שני פעלים, הפועל השני מגיע בסוף:
+          Ich gehe **schwimmen**. (ב־Ich gehe nach Hause יש רק פועל אחד; nach Hause הוא
+          המקום.)
+      - id: rules-zahlen
+        type: ruleSummary
+        skill: Zahlen und Grad
+        rules:
+          - text: 'Zahlen von 21 bis 99: zuerst die Einer, dann **und**, dann die Zehner.'
+            examples: [21 = einundzwanzig, 35 = fünfunddreißig, 98 = achtundneunzig]
+          - text: 'Die Zehner enden auf **-zig**, aber 30 = drei**ßig**:'
+            examples: ['20 zwanzig, 30 dreißig, 40 vierzig, 50 fünfzig']
+          - text: '11 und 12 muss man lernen: **elf**, **zwölf**. 13–19 enden auf **-zehn**.'
+            examples: ['13 dreizehn, 15 fünfzehn, 16 sechzehn, 17 siebzehn, 19 neunzehn']
+          - text: 'Die Temperatur: **Es sind + Zahl + Grad**.'
+            examples: [Es sind 20 Grad., Es sind 35 Grad., Es sind 40 Grad.]
+      - id: he-zahlen
+        type: text
+        lang: he
+        text: >-
+          **מספרים וטמפרטורה:** במספרים 21–99 אומרים קודם את היחידות ואחר כך את העשרות
+          (21 = ein-und-zwanzig) – ההיגיון הפוך מעברית, ולכן זה מבלבל בהתחלה. את 11 ו־12
+          צריך לזכור; 13–19 נגמרים ב־-zehn. לטמפרטורה אומרים תמיד **Es sind** + מספר +
+          **Grad**.
+      - id: can-do
+        type: callout
+        tone: tip
+        title: Am Ende der Stunde kann ich …
+        text: |-
+          das Wetter beschreiben,
+          die Temperatur mit Zahlen sagen,
+          **Es ist** und **Es gibt** richtig benutzen,
+          nach der Beschreibung eine Aktion sagen,
+          kurze und klare Sätze bilden.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Wiederhole die zwei Fähigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: wetter-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und sende sie. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-wetter
+        type: aiTutorPrompt
+        title: Über das Wetter sprechen
+        message: >-
+          Hallo Mori! Ich möchte über das Wetter reden. Kannst du mir Smalltalk-Fragen zum
+          Wetter stellen und dabei Zahlen und beschreibende Sätze verwenden? Verwende nur
+          das Präsens und korrigiere bitte meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Willst du mehr Fragen? Sende: **Bitte frag mich mehr!**
+          Verstehst du eine Erklärung nicht? Sende: **Kannst du es auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Mehr Übung
+      - id: mori-welt
+        type: aiTutorPrompt
+        title: Wetter auf der ganzen Welt
+        intro: >-
+          Erzähl Mori vom Wetter heute in drei verschiedenen Ländern oder Städten. Benutze
+          Zahlen (Temperatur, Tage oder Daten) und beschreibende Sätze im Präsens.
+        message: >-
+          Hallo Mori! Ich erzähle dir vom Wetter heute an drei Orten. Danach erzählst du
+          mir vom Wetter an drei Orten. Benutze Zahlen und ganze Sätze und korrigiere bitte
+          meine Fehler.
+      - id: mori-welt-beispiele
+        type: examples
+        items:
+          - { text: In Tel Aviv ist es sonnig. Es sind 30 Grad. }
+          - { text: In Paris ist es bewölkt. Es sind 20 Grad. }
+          - { text: In New York regnet es im Juli viel. }
+      - id: mori-woche
+        type: aiTutorPrompt
+        title: Meine Woche im Wetter
+        intro: >-
+          Beschreib das Wetter in deiner Stadt für die nächsten fünf Tage. Benutze
+          Wochentage, Zahlen (Grad) und Wetterwörter im Präsens.
+        message: >-
+          Hallo Mori! Frag mich: Wie ist das Wetter diese Woche in deiner Stadt? Ich
+          erzähle dir von Montag bis Freitag. Bitte korrigiere meine Fehler.
+      - id: mori-woche-beispiele
+        type: examples
+        items:
+          - { text: Am Montag ist es heiß. Es sind 34 Grad. }
+          - { text: Am Dienstag ist es windig und kalt. Es sind 18 Grad. }
+          - { text: Am Mittwoch ist es bewölkt. Es sind 25 Grad. }
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: wetter-uebung
+    book: workbook
+    title: 'Übung: Wetter'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fähigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-beschreiben
+        type: activity
+        activity: wetter-beschreiben
+      - id: ex-zahlen
+        type: activity
+        activity: wetter-zahlen
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: wetter-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter zum Wetter
+        glossLang: he
+        link: https://quizlet.com/1114246461/%D7%9E%D7%96%D7%92-%D7%90%D7%95%D7%95%D7%99%D7%A8-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &wetter-words
+          - { term: das Wetter, gloss: מזג האוויר }
+          - { term: sonnig, gloss: שמשי }
+          - { term: regnerisch, gloss: גשום }
+          - { term: bewölkt, gloss: מעונן }
+          - { term: warm, gloss: חמים }
+          - { term: kalt, gloss: קר }
+          - { term: heiß, gloss: חם }
+          - { term: der Wind, gloss: הרוח }
+          - { term: der Regen, gloss: הגשם }
+          - { term: die Sonne, gloss: השמש }
+          - { term: die Wolken, gloss: העננים }
+          - { term: die Temperatur, gloss: טמפרטורה }
+          - { term: der Grad, gloss: מעלה }
+          - { term: es ist, gloss: זה (תיאור מצב) }
+          - { term: es sind, gloss: 'זה (לטמפרטורה: Es sind 20 Grad)' }
+          - { term: es gibt, gloss: יש }
+          - { term: zwanzig (20), gloss: עשרים }
+          - { term: dreißig (30), gloss: שלושים }
+          - { term: der Ort, gloss: מקום }
+          - { term: die Stadt, gloss: עיר }
+          - { term: drinnen, gloss: בפנים }
+          - { term: draußen, gloss: בחוץ }
+          - { term: der Strand, gloss: חוף }
+          - { term: die Berge, gloss: הרים }
+          - { term: gehen, gloss: ללכת }
+          - { term: schwimmen, gloss: לשחות }
+          - { term: lesen, gloss: לקרוא }
+          - { term: kommen, gloss: לבוא }
+          - { term: sein, gloss: להיות }
+          - { term: haben, gloss: שיש ל־ / להחזיק }
+          - { term: ich mag, gloss: אני אוהב }
+          - { term: perfekt, gloss: מושלם }
+          - { term: gern(e), gloss: בשמחה / אוהב לעשות }
+          - { term: der Reporter, gloss: כתב }
+          - { term: Willkommen!, gloss: ברוכים הבאים! }
+
+vocabulary:
+  - slug: wetter
+    title: Wetter
+    items: *wetter-words
+
+activities:
+  - slug: wetter-beschreiben
+    title: 'Das Wetter beschreiben: Es ist, es gibt'
+    minutes: 8
+    items:
+      - id: es-ist-warm
+        type: multipleChoice
+        prompt: Es ___ warm.
+        options:
+          - { text: ist, correct: true }
+          - {
+              text: gibt,
+              feedback: '*Es gibt* steht vor einem Nomen (*Es gibt Regen*). Vor einem Adjektiv sagt man *Es ist*.',
+            }
+          - {
+              text: sind,
+              feedback: '*Es sind* ist für die Temperatur (*Es sind 20 Grad*). Vor einem Adjektiv sagt man *Es ist*.',
+            }
+      - id: es-gibt-regen
+        type: multipleChoice
+        prompt: Es gibt ___.
+        options:
+          - { text: Regen, correct: true }
+          - {
+              text: regnerisch,
+              feedback: '*regnerisch* ist ein Adjektiv: *Es ist regnerisch.* Nach *Es gibt* kommt ein Nomen.',
+            }
+          - {
+              text: kalt,
+              feedback: '*kalt* ist ein Adjektiv: *Es ist kalt.* Nach *Es gibt* kommt ein Nomen.',
+            }
+      - id: ist-gibt
+        type: fillBlank
+        prompt: Ergänze *ist* oder *gibt*.
+        text: Es ___ sonnig. Es ___ Wolken und Wind.
+        blanks: [[ist], [gibt]]
+        wordBank: [ist, gibt]
+      - id: gibt-plural
+        type: trueFalse
+        prompt: '*Es gibt* ist gleich für Singular und Plural: *Es gibt Regen. Es gibt Wolken.*'
+        answer: true
+        feedback:
+          correct: Richtig! *Es gibt* ändert sich nicht.
+          incorrect: '*Es gibt* ändert sich nicht: *Es gibt Regen.* und *Es gibt Wolken.*'
+      - id: wetterwoerter
+        type: matching
+        prompt: Verbinde das Wort mit der Übersetzung.
+        pairs:
+          - [sonnig, שמשי]
+          - [regnerisch, גשום]
+          - [bewölkt, מעונן]
+          - [kalt, קר]
+          - [heiß, חם]
+      - id: gehe-schwimmen
+        type: multipleChoice
+        prompt: Es ist warm. Welcher Satz ist richtig?
+        options:
+          - { text: Ich gehe schwimmen., correct: true }
+          - {
+              text: Ich schwimmen gehe.,
+              feedback: 'Das erste Verb (*gehe*) steht an Position 2, das zweite Verb (*schwimmen*) am Ende.',
+            }
+          - {
+              text: Ich gehe schwimme.,
+              feedback: 'Das zweite Verb bleibt im Infinitiv: *Ich gehe schwimmen.*',
+            }
+      - id: ordne-montag
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Am Montag gehe ich schwimmen.
+      - id: bewoelkt-regen
+        type: fillBlank
+        prompt: Ergänze die Wörter auf Deutsch.
+        text: Es ist ___ (מעונן), und es gibt ___ (גשם).
+        blanks: [[bewölkt, bewoelkt], [Regen]]
+
+  - slug: wetter-zahlen
+    title: 'Zahlen und Grad: Es sind 20 Grad'
+    minutes: 8
+    items:
+      - id: es-sind-grad
+        type: multipleChoice
+        prompt: Am Montag ___ es 20 Grad.
+        options:
+          - { text: sind, correct: true }
+          - {
+              text: gibt,
+              feedback: 'Für die Temperatur sagt man *Es sind + Zahl + Grad*: *Am Montag sind es 20 Grad.*',
+            }
+          - {
+              text: bin,
+              feedback: '*bin* ist für *ich*. Für die Temperatur: *Am Montag sind es 20 Grad.*',
+            }
+      - id: in-worten
+        type: fillBlank
+        prompt: Schreib die Zahlen in Wörtern.
+        text: 21 = ___ · 35 = ___
+        blanks:
+          [[einundzwanzig], [fünfunddreißig, fuenfunddreissig, fünfunddreissig, fuenfunddreißig]]
+      - id: zehner
+        type: matching
+        prompt: Verbinde die Zahlen.
+        pairs:
+          - ['12', zwölf]
+          - ['20', zwanzig]
+          - ['30', dreißig]
+          - ['40', vierzig]
+          - ['50', fünfzig]
+      - id: einer-zuerst
+        type: trueFalse
+        prompt: 'In *achtundneunzig* (98) sagt man zuerst die Einer (8) und dann die Zehner (90).'
+        answer: true
+        feedback:
+          correct: Richtig! Zuerst *acht*, dann *und*, dann *neunzig*.
+          incorrect: 'Bei 21–99 kommen zuerst die Einer: *acht-und-neunzig*.'
+      - id: dreizehn
+        type: multipleChoice
+        prompt: Wie sagt man 13?
+        options:
+          - { text: dreizehn, correct: true }
+          - { text: zehndrei, feedback: '13–19 enden auf *-zehn*: zuerst *drei*, dann *zehn*.' }
+          - { text: dreißig, feedback: '*dreißig* ist 30. 13 = *dreizehn*.' }
+      - id: ordne-freitag
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Am Freitag sind es 10 Grad.
+      - id: fuenfzehn
+        type: fillBlank
+        prompt: Schreib die Zahl in Wörtern.
+        text: Am Mittwoch sind es ___ (15) Grad.
+        blanks: [[fünfzehn, fuenfzehn]]
+      - id: achtundzwanzig
+        type: multipleChoice
+        prompt: 'Dienstag: 28°. Welcher Satz ist richtig?'
+        options:
+          - { text: Am Dienstag sind es achtundzwanzig Grad., correct: true }
+          - {
+              text: Am Dienstag sind es zwanzigacht Grad.,
+              feedback: 'Zuerst die Einer, dann *und*, dann die Zehner: *acht-und-zwanzig*.',
+            }
+          - {
+              text: Am Dienstag sind es achtzwanzig Grad.,
+              feedback: 'Zwischen den Einern und den Zehnern steht *und*: *achtundzwanzig*.',
+            }

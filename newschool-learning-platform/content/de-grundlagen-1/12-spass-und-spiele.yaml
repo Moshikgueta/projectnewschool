@@ -1,0 +1,570 @@
+# Cycle "Spaß und Spiele", converted from the German digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: spass-und-spiele
+title: Spaß und Spiele
+goal: Über Spiele und Hobbys sprechen, mit Sätzen im Präsens und mit mein, dein, sein, ihr.
+position: 12
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Handlungen im Präsens" and "Possessivartikel") are
+    NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    The summary is written in Hebrew in the notebook. The rules are now short German
+    ruleSummary blocks, and each skill keeps a Hebrew explanation as a `lang: he`
+    text block. Please check the Hebrew wording.
+  - >-
+    Präsens summary, rule 2 said "with ER / SIE add -t; only er / sie change the
+    verb". This is translated from the English rule (add -s) and is wrong for German:
+    every person has its own ending (ich spiele, du spielst, er / sie spielt, wir /
+    sie spielen). Rewritten with the endings.
+  - >-
+    Präsens summary, rule 3 said "do not use am / is / are in German". It refers to
+    English. Rewritten: in the present you need only one verb (Ich sehe fern, not
+    "Ich bin sehen fern").
+  - >-
+    Possessive summary, rule 3 (table): the row "ihre – Ihre Spiele sind gut – their
+    games" mixed two things. *ihr* means both "her" and "their", and an *-e* is added
+    before die-words and plurals (meine Schwester, ihre Spiele). The table now shows
+    mein / meine, dein / deine, sein / seine, ihr / ihre, unser / unsere.
+  - >-
+    The skill is called "Possessivpronomen" in the Mori homework and "Possessiv
+    Sätze" in the overview; it is now "Possessivartikel (mein, dein, sein, ihr)", the
+    usual A1 name for words before a noun. Please confirm.
+  - >-
+    Warm-up: "Was machst du morgens / abends gern? → Ich mag ___" now has an action
+    frame for the Präsens skill ("Morgens ___ ich gern."); "Spielst du lieber Sport
+    oder Spiele?" → "Machst du lieber Sport oder spielst du lieber Spiele?" (one does
+    not "spielen" Sport).
+  - >-
+    Activity 2 ("Erraten Sie das Konzept POSSESSIVES") is now "Was ist es?". Its
+    model uses meins / deins / seins, which only fit das-words (das Auto, das Handy).
+    The teacher note adds meine (die Tasche) and meiner (der Schuh), and the student
+    frame is "Ist es dein / deine ___?". Please check this is not too much for A1.
+  - >-
+    Activity 3 title "Schreiben Sie gemeinsam eine Geschichte" is now "Wir erzählen
+    eine Geschichte" (students are addressed with du). Activities 1–3 have no time in
+    the notebook, so none is recorded.
+  - >-
+    The Mori homework mixed du and Sie and had broken German ("Smalltalk-Fragen
+    stellen über Spaß und Spiele die Fähigkeiten nutzen Possessivpronomen Und
+    Aktionen im Präsens"). It is rewritten in the du form, with stray quotation
+    marks removed. "Ich denke über ein Spiel nach" → "Ich denke an ein Spiel". The
+    tip "explain it in Hebrew but with the sentence in English" now says "auf
+    Deutsch".
+  - >-
+    Vocabulary: "Sport" → "der Sport"; "das Lieblingsspiel – המשחק האהוב" → "משחק
+    אהוב"; "spielen" (written above the list, not as a heading) is included.
+  - >-
+    The "Antwort Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: spass-und-spiele-unterricht
+    title: 'Unterricht: Spaß und Spiele'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Spaß und Spiele
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Handlungen im Präsens
+            description: Sagen, was du machst (Ich spiele Monopoly. Er hört Musik.)
+          - name: Possessivartikel
+            description: '*mein, dein, sein, ihr, unser* (Mein Lieblingsspiel ist Monopoly.)'
+      - id: quizlet
+        type: externalLink
+        label: Spaß und Spiele auf Quizlet
+        url: https://quizlet.com/1114255536/%D7%9E%D7%A9%D7%97%D7%A7%D7%99%D7%9D-%D7%95%D7%9B%D7%99%D7%A3-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Meine Lieblingsbeschäftigung ist ___.
+        example: Ich bin Daniel. Meine Lieblingsbeschäftigung ist Yoga.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Was machst du morgens gern?
+            frame: Morgens ___ ich gern. (Morgens lese ich gern.)
+          - question: Was machst du abends gern?
+            frame: Abends ___ ich gern. (Abends sehe ich gern fern.)
+          - question: Machst du lieber Sport oder spielst du lieber Spiele?
+            frame: Ich mache lieber Sport. / Ich spiele lieber Spiele.
+          - question: Was ist dein Lieblingsspiel?
+            frame: Mein Lieblingsspiel ist ___.
+          - question: Was ist die Lieblingssendung deiner Mutter / deines Bruders?
+            frame: Ihre / Seine Lieblingssendung ist ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Simon sagt'
+        skills: [Handlungen im Präsens]
+        steps:
+          - Mach **nur** mit, wenn dein Lehrer „Simon sagt" sagt!
+          - Dein Lehrer macht alles vor, die Klasse macht es nach.
+          - 'Dann bist du dran: Sag der Klasse, was sie machen soll.'
+        example: |-
+          *Simon sagt: Heb deine Hand.*
+          *Simon sagt: Berühre deine Nase.*
+          *Simon sagt: Klatsch in die Hände.*
+          *Simon sagt: Stampf mit den Füßen.*
+          *Simon sagt: Mach die Augen zu.*
+          *Simon sagt: Spring.*
+          *Simon sagt: Dreh dich.*
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Was ist es?'
+        skills: [Possessivartikel]
+        steps:
+          - Hör das Beispiel von deinem Lehrer.
+          - Denk an ein Objekt (zum Beispiel das Haar, die Tasche, der Schuh, das Telefon, das Haustier).
+          - 'Gib 2–3 Hinweise: *Meins ist schwarz. Deins ist klein.*'
+          - 'Die Klasse rät: *Ist es dein / deine ___?*'
+        example: |-
+          *Meins ist blau. Deins ist klein. Seins ist alt.*
+          *Ist es dein Auto?* – *Ja!*
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Wir erzählen eine Geschichte'
+        skills: [Handlungen im Präsens]
+        steps:
+          - Dein Lehrer sagt den ersten Satz.
+          - Wähl einen Satz aus den Optionen.
+          - Sagt die Geschichte im Kreis, ein Satz pro Schüler.
+          - 'Neue Runde (optional): *Ich bin zu Hause und ich …* oder *Ich spiele ein Spiel und ich …*'
+        example: |-
+          *Lehrer: Es ist ein regnerischer Tag und ich sehe fern.*
+          *Schüler 1: Ich spiele Monopoly.*
+          *Schüler 2: Ich gehe in den Supermarkt.*
+          *Schüler 3: Ich werde nass.*
+          *Das Ende.*
+        wordBank:
+          - Ich spiele Monopoly.
+          - Ich gehe in den Supermarkt.
+          - Ich trinke Tee.
+          - Ich bleibe zu Hause.
+      - id: act3-story
+        type: discussionQuestions
+        title: Meine Geschichte
+        items:
+          - question: Es ist ein regnerischer Tag und ich ___.
+          - question: Ich bin zu Hause und ich ___.
+          - question: Ich spiele ein Spiel und ich ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Zwei Wahrheiten, eine Lüge'
+        skills: [Possessivartikel]
+        minutes: 15
+        steps:
+          - Sag 3 einfache Sätze mit *mein, dein, sein, ihr* oder *unser*. 2 sind wahr, 1 ist die Lüge.
+          - 'Die Klasse fragt: *Welcher Satz ist die Lüge?*'
+          - 'Du sagst: *Die Lüge ist Satz Nummer ___.*'
+        example: |-
+          *Meine Schwester heißt Anna.*
+          *Unser Haus ist blau.*
+          *Sein Hund ist groß.*
+        wordBank:
+          - Der Lieblingssport meines Bruders ist Fußball.
+          - Ihr Hund schläft im Bett.
+          - Ihre Schule ist in London.
+          - Sein Lieblingsessen ist Pasta.
+          - Ihr Telefon ist rosa.
+          - Unser Lehrer heißt David.
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Meine drei Sätze
+        items:
+          - question: 'Satz 1: ___'
+          - question: 'Satz 2: ___'
+          - question: 'Satz 3: ___'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fähigkeiten in diesem Zyklus: **Handlungen im Präsens** (Vorstellungsrunde,
+          Aufwärmfragen, Aktivität 1 oder 3) und **Possessivartikel** (Quizlet zur
+          Vorbereitung, Aufwärmfragen, Aktivität 2 oder 4). Wähle für jede Fähigkeit eine
+          Aktivität.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Schreib das Modell an die Tafel, gib dein eigenes Beispiel und frag dann jeden Schüler.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Stell jedem Schüler mindestens zwei Fragen. Die geschriebenen Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Schreib die Beispiele an die Tafel und mach alles vor; die Klasse macht es nach.
+          Wer etwas macht, ohne dass du „Simon sagt" gesagt hast, ist raus. Dann
+          übernehmen die Schüler.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Modell: „Meins ist blau. Deins ist klein. Seins ist alt." Lösung: das Auto.
+          *Meins / deins / seins* passt zu das-Wörtern (das Auto, das Handy, das Haar,
+          das Haustier). Bei die-Wörtern sagt man *meine* (die Tasche: „Meine ist
+          schwarz."), bei der-Wörtern *meiner* (der Schuh). Wer richtig rät, ist dran.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Schreib den Startsatz und 3–4 Optionen an die Tafel. Jeder Schüler wählt einen
+          Satz und sagt ihn im Kreis.
+      - id: n-act4
+        anchor: act4
+        text: Schreib das Modell an die Tafel. Die Beispielsätze sind eine Hilfe für Schüler, die keine Idee haben.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: spass-und-spiele-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Das haben wir heute gelernt
+      - id: rules-praesens
+        type: ruleSummary
+        skill: Handlungen im Präsens
+        rules:
+          - text: 'Zuerst das Subjekt, dann das Verb. Das Verb hat eine Endung.'
+            examples:
+              - Ich lese ein Buch. (nicht *Ich ein Buch lesen*)
+              - Du trinkst Tee. (nicht *Du trinke Tee*)
+          - text: 'Die Endung passt zur Person: ich **-e**, du **-st**, er / sie / es **-t**, wir / sie **-en**.'
+            examples:
+              - ich spiele, du spielst, er / sie spielt, wir / sie spielen
+              - Er hört Musik.
+              - Sie kocht Suppe.
+          - text: Im Präsens brauchst du nur **ein** Verb, ohne *bin* oder *ist*.
+            examples:
+              - Ich sehe fern. (nicht *Ich bin sehen fern*)
+      - id: praesens-he
+        type: text
+        lang: he
+        text: >-
+          **בעברית:** בגרמנית אומרים קודם את הנושא ואחר כך את הפועל: *Ich lese ein Buch*
+          (אני קורא ספר). לכל גוף יש סיומת משלו: *ich spiele, du spielst, er / sie
+          spielt, wir spielen*. בהווה יש רק פועל אחד: *Ich sehe fern* (אני רואה
+          טלוויזיה), בלי *bin* או *ist*.
+      - id: rules-possessiv
+        type: ruleSummary
+        skill: Possessivartikel
+        rules:
+          - text: 'Der Possessivartikel steht **vor** dem Nomen (anders als im Hebräischen).'
+            examples: [mein Lieblingsspiel (nicht *Lieblingsspiel mein*)]
+          - text: 'Ein Possessivsatz sagt, wem etwas gehört: Besitzer + Ding.'
+            examples: [Mein Spiel ist Monopoly., Sein Hund ist groß., Ihre Tasche ist blau.]
+          - text: 'Vor die-Wörtern und im Plural kommt ein **-e** dazu: mein**e** Schwester, ihr**e** Spiele.'
+      - id: possessiv-table
+        type: table
+        caption: Die Possessivartikel
+        header: [Person, Possessivartikel, Beispiel]
+        rows:
+          - [ich, mein / meine, Mein Lieblingsspiel ist Monopoly.]
+          - [du, dein / deine, Dein Lieblingsspiel ist Simon sagt.]
+          - [er, sein / seine, Sein Lieblingsspiel ist Domino.]
+          - [sie (eine Frau), ihr / ihre, Ihr Lieblingsspiel ist Super Mario.]
+          - [wir, unser / unsere, Unser Lieblingsplatz ist zu Hause.]
+          - [sie (Plural), ihr / ihre, Ihre Spiele sind gut.]
+      - id: possessiv-he
+        type: text
+        lang: he
+        text: >-
+          **בעברית:** בגרמנית מילת השייכות באה **לפני** שם העצם, הפוך מעברית: *mein
+          Spiel* (המשחק שלי). *mein* = שלי, *dein* = שלך, *sein* = שלו, *ihr* = שלה או
+          שלהם, *unser* = שלנו. לפני מילה עם *die* או ברבים מוסיפים *-e*: *meine
+          Schwester* (אחותי), *ihre Spiele* (המשחקים שלה / שלהם).
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Wiederhole die zwei Fähigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: spass-und-spiele-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-smalltalk
+        type: aiTutorPrompt
+        title: Smalltalk über Spaß und Spiele
+        intro: >-
+          Mori fragt zum Beispiel: Was ist dein Lieblingsspiel? Spielst du mit deinen
+          Freunden? Was macht dein Bruder oder deine Schwester zum Spaß? Was ist die
+          Lieblingsbeschäftigung deines Freundes? Antworte im Präsens und benutze *mein,
+          dein, sein, ihr, unser*.
+        message: >-
+          Hallo Mori! Ich möchte Smalltalk machen. Kannst du mir Fragen über Spaß und
+          Spiele stellen und dabei die Fähigkeiten „Possessivartikel" und „Handlungen im
+          Präsens" benutzen? Bitte korrigiere meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte frag mich mehr!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Zusätzliche Übungen
+      - id: mori-spiel
+        type: aiTutorPrompt
+        title: Rate das Spiel
+        intro: >-
+          Schick diese Nachricht an Mori. Gib Mori dann Hinweise im Präsens und mit
+          Possessivartikeln, zum Beispiel: „Das ist mein Lieblingsspiel. Ich spiele es
+          auf meinem Handy. Mein Bruder mag es nicht." Wenn Mori geraten hat, schick:
+          **Jetzt bist du dran! Denk an ein Spiel, dann rate ich, welches es ist.**
+        message: Hallo Mori! Lass uns ein Spiel spielen. Ich denke an ein Spiel, und du musst raten, welches es ist.
+      - id: mori-wer
+        type: aiTutorPrompt
+        title: Wer macht das?
+        intro: >-
+          Schick diese Nachricht an Mori. Schreib dann einen Satz wie: „Sie spielt jeden
+          Samstag Tennis. Sie ist die Tochter meines Vaters." oder „Er spielt nach der
+          Schule Computerspiele. Er ist der Sohn meiner Eltern." Mori rät, zum Beispiel:
+          „Ist es deine Schwester?" Dann schick: **Jetzt bist du dran! Erzähl mir, was
+          jemand in deiner Familie zum Spaß macht, und ich rate, wer es ist.**
+        message: >-
+          Hallo Mori! Lass uns ein Spiel spielen. Ich erzähle dir, was jemand in meiner
+          Familie zum Spaß macht. Du musst raten, wer es ist. Ich benutze
+          Possessivartikel und das Präsens.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: spass-und-spiele-uebung
+    book: workbook
+    title: 'Übung: Spaß und Spiele'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fähigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-praesens
+        type: activity
+        activity: spass-und-spiele-praesens
+      - id: ex-possessiv
+        type: activity
+        activity: spass-und-spiele-possessiv
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: spass-und-spiele-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für Spaß und Spiele
+        glossLang: he
+        link: https://quizlet.com/1114255536/%D7%9E%D7%A9%D7%97%D7%A7%D7%99%D7%9D-%D7%95%D7%9B%D7%99%D7%A3-flash-cards/
+        items: &spass-und-spiele-words
+          - { term: spielen, gloss: לשחק }
+          - { term: lesen, gloss: לקרוא }
+          - { term: sehen, gloss: לראות }
+          - { term: gehen, gloss: ללכת }
+          - { term: trinken, gloss: לשתות }
+          - { term: hören, gloss: לשמוע }
+          - { term: kochen, gloss: לבשל }
+          - { term: springen, gloss: לקפוץ }
+          - { term: drehen, gloss: להסתובב }
+          - { term: machen, gloss: לעשות }
+          - { term: das Spiel, gloss: משחק }
+          - { term: das Handy, gloss: טלפון נייד }
+          - { term: der Hund, gloss: כלב }
+          - { term: die Tasche, gloss: תיק }
+          - { term: der Schuh, gloss: נעל }
+          - { term: das Haustier, gloss: חיית מחמד }
+          - { term: die Mutter, gloss: אמא }
+          - { term: der Bruder, gloss: אח }
+          - { term: die Schwester, gloss: אחות }
+          - { term: die Familie, gloss: משפחה }
+          - { term: mein, gloss: שלי }
+          - { term: dein, gloss: שלך }
+          - { term: sein, gloss: שלו }
+          - { term: ihr, gloss: שלה }
+          - { term: unser, gloss: שלנו }
+          - { term: die Lieblingsbeschäftigung, gloss: פעילות אהובה }
+          - { term: das Lieblingsspiel, gloss: משחק אהוב }
+          - { term: die Lieblingssendung, gloss: תוכנית אהובה }
+          - { term: fernsehen, gloss: לראות טלוויזיה }
+          - { term: zu Hause, gloss: בבית }
+          - { term: der Morgen, gloss: בוקר }
+          - { term: der Abend, gloss: ערב }
+          - { term: der Sport, gloss: ספורט }
+          - { term: die Spiele, gloss: משחקים (ברבים) }
+          - { term: die Lüge, gloss: שקר }
+          - { term: die Wahrheit, gloss: אמת }
+
+vocabulary:
+  - slug: spass-und-spiele
+    title: Spaß und Spiele
+    items: *spass-und-spiele-words
+
+activities:
+  - slug: spass-und-spiele-praesens
+    title: 'Handlungen im Präsens: ich spiele, du spielst, er spielt'
+    minutes: 8
+    items:
+      - id: er-hoert
+        type: multipleChoice
+        prompt: Er ___ Musik.
+        options:
+          - { text: hört, correct: true }
+          - {
+              text: höre,
+              feedback: '*höre* passt zu *ich*. Mit *er* endet das Verb auf *-t*: *er hört*.',
+            }
+          - {
+              text: hören,
+              feedback: '*hören* passt zu *wir* oder *sie* (Plural). Mit *er* sagt man *hört*.',
+            }
+      - id: du-trinkst
+        type: multipleChoice
+        prompt: Du ___ Tee.
+        options:
+          - { text: trinkst, correct: true }
+          - {
+              text: trinke,
+              feedback: '*trinke* passt zu *ich*. Mit *du* endet das Verb auf *-st*.',
+            }
+          - {
+              text: trinkt,
+              feedback: '*trinkt* passt zu *er / sie / es*. Mit *du* endet das Verb auf *-st*.',
+            }
+      - id: richtiger-satz
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Ich lese ein Buch., correct: true }
+          - {
+              text: Ich ein Buch lesen.,
+              feedback: 'Zuerst das Subjekt, dann das Verb mit Endung: *Ich lese ein Buch.*',
+            }
+          - {
+              text: Ich bin lese ein Buch.,
+              feedback: 'Im Präsens brauchst du nur ein Verb, ohne *bin*: *Ich lese ein Buch.*',
+            }
+      - id: endungen
+        type: matching
+        prompt: Verbinde die Person mit der richtigen Form von *spielen*.
+        pairs:
+          - [ich, spiele]
+          - [du, spielst]
+          - [er / sie / es, spielt]
+          - [wir, spielen]
+      - id: spielen-kochen
+        type: fillBlank
+        prompt: Ergänze das Verb in der richtigen Form.
+        text: Ich ___ (spielen) Monopoly. Sie ___ (kochen) Suppe, und er ___ (hören) Musik.
+        blanks: [[spiele], [kocht], [hört]]
+      - id: gehen-trinken
+        type: fillBlank
+        prompt: Ergänze das Verb in der richtigen Form.
+        text: Du ___ (gehen) in den Supermarkt. Wir ___ (trinken) Tee.
+        blanks: [[gehst], [trinken]]
+      - id: nur-ein-verb
+        type: trueFalse
+        prompt: 'Im Präsens sagt man: *Ich bin sehe fern.*'
+        answer: false
+        feedback:
+          correct: Richtig! Man sagt nur *Ich sehe fern.*, ohne *bin*.
+          incorrect: 'Im Präsens brauchst du nur ein Verb: *Ich sehe fern.*'
+      - id: ordne-regen
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Es ist ein regnerischer Tag und ich sehe fern.
+
+  - slug: spass-und-spiele-possessiv
+    title: 'Possessivartikel: mein, dein, sein, ihr, unser'
+    minutes: 8
+    items:
+      - id: sein-hund
+        type: multipleChoice
+        prompt: Das ist Tom. ___ Hund ist groß.
+        options:
+          - { text: Sein, correct: true }
+          - {
+              text: Ihr,
+              feedback: 'Tom ist ein Mann: *sein* (שלו). *ihr* ist für eine Frau (שלה).',
+            }
+          - { text: Mein, feedback: '*mein* ist für *ich*. Hier sprechen wir über Tom: *sein*.' }
+      - id: ihr-spiel
+        type: multipleChoice
+        prompt: Das ist Anna. ___ Lieblingsspiel ist Super Mario.
+        options:
+          - { text: Ihr, correct: true }
+          - { text: Sein, feedback: 'Anna ist eine Frau: *ihr* (שלה).' }
+          - {
+              text: Ihre,
+              feedback: '*das Lieblingsspiel* ist ein das-Wort: kein *-e*. Man sagt *Ihr Lieblingsspiel*.',
+            }
+      - id: mein-spiel
+        type: multipleChoice
+        prompt: 'Wie sagt man auf Deutsch *המשחק שלי*?'
+        options:
+          - { text: mein Spiel, correct: true }
+          - {
+              text: Spiel mein,
+              feedback: 'Der Possessivartikel steht vor dem Nomen: *mein Spiel*.',
+            }
+          - { text: dein Spiel, feedback: '*dein Spiel* ist *המשחק שלך*.' }
+      - id: vor-dem-nomen
+        type: trueFalse
+        prompt: 'Im Deutschen steht *mein* nach dem Nomen, wie im Hebräischen: *Lieblingsspiel mein*.'
+        answer: false
+        feedback:
+          correct: 'Richtig! *mein* steht vor dem Nomen: *mein Lieblingsspiel*.'
+          incorrect: 'Im Deutschen steht *mein* vor dem Nomen: *mein Lieblingsspiel*.'
+      - id: bedeutung
+        type: matching
+        prompt: Verbinde jedes Wort mit der Übersetzung.
+        pairs:
+          - [mein, שלי]
+          - [dein, שלך]
+          - [sein, שלו]
+          - [ihr, שלה]
+          - [unser, שלנו]
+      - id: meine-schwester
+        type: fillBlank
+        prompt: Ergänze mit *mein* oder *meine*.
+        text: Ich habe eine Schwester. ___ Schwester heißt Anna. ___ Hund heißt Max.
+        blanks: [[Meine], [Mein]]
+        wordBank: [mein, meine]
+      - id: unser-lehrer
+        type: fillBlank
+        prompt: Ergänze mit *unser* oder *sein*.
+        text: Wir haben einen Lehrer. ___ Lehrer heißt David. Tom hat ein Lieblingsessen. ___ Lieblingsessen ist Pasta.
+        blanks: [[Unser], [Sein]]
+        wordBank: [unser, sein]
+      - id: ordne-hund
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Sein Hund ist groß.

@@ -1,0 +1,576 @@
+# Cycle "Wie entspanne ich mich?", converted from the German Foundations digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: wie-entspanne-ich-mich
+title: Wie entspanne ich mich?
+goal: Mit Ich-Sätzen sagen, was ich mache, und mit „sein“ beschreiben, wie ich mich fühle.
+position: 16
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Ich-Sätze mit Aktionen" and "Beschreibende Sätze mit
+    sein") are NEW: the notebook has no self-study exercises. They were written from
+    the cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Summary, skill 1: the notebook says (in Hebrew) "Er / Sie + Verb + t" but its
+    examples are "er schläft" and "er isst", which do not follow that rule. The rule
+    now says: most verbs get -t (sie hört, er trinkt), some verbs change (schlafen → er
+    schläft, essen → er isst). Please confirm.
+  - >-
+    The summary is written in Hebrew in the notebook. The Hebrew explanations are kept
+    as `lang: he` text blocks (lightly shortened); the rules themselves are given as
+    short German ruleSummary blocks with the notebook's examples and Hebrew glosses.
+  - >-
+    The notebook has no Mori message in this cycle; its homework is four short
+    writing tasks (in Hebrew). These are now German writing prompts in the homework
+    section. A standard Mori message and the usual tips were ADDED, following the
+    other cycles; please confirm or remove.
+  - >-
+    Homework bonus: "Ich möchte nächste Woche zum / zur ___ gehen (Park, Strand, Café,
+    Kino)" gives wrong forms for Café and Kino; it is now "in den Park / an den Strand
+    / ins Café / ins Kino".
+  - >-
+    Warm-up: questions 4 and 5 were merged in the export and are now separate. Question
+    6 used "Sie" ("Entspannen Sie lieber …?"); it is now "Entspannst du dich lieber zu
+    Hause oder in der Natur? Warum?", with a new frame "Ich entspanne mich lieber ___,
+    weil ___." Question 5 frames now have "weil ___".
+  - >-
+    Activity 3: "Was machst du, wenn du müde bist, aber arbeitest?" is now "… aber
+    arbeiten musst?"; "wenn du keine Verbindung willst" (a literal translation) is now
+    "wenn du allein sein willst?"; the help word "ruhen" is now "sich ausruhen". The
+    report frame "Er ___, wenn er ___ ist" now also allows "hat" (the examples use
+    "wenn sie Hunger hat").
+  - >-
+    Teacher-only instructions (phases, gestures, "go round and help", the corrected
+    student example "Es hat Wasser → Ich sehe Wasser") moved to teacher notes.
+  - >-
+    Vocabulary: "entspannen" is now "sich entspannen"; "entspannt – רגוע" was ADDED (it
+    is used in every activity); nouns now have their article; "Handy" is glossed
+    "טלפון נייד"; "der Morgen / der Abend" are glossed "בוקר / ערב". Please confirm.
+  - >-
+    The notebook gives no activity times; none are recorded. The "Antwort von
+    Schüler 1/2/3" lines are replaced by the optional answer boxes (decision C2).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: wie-entspanne-ich-mich-unterricht
+    title: 'Unterricht: Wie entspanne ich mich?'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Wie entspanne ich mich?
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Ich-Sätze mit Aktionen
+            description: Ich lese. Ich höre Musik.
+          - name: Beschreibende Sätze mit „sein“
+            description: Ich bin müde. Die Musik ist ruhig.
+      - id: quizlet
+        type: externalLink
+        label: Wie entspanne ich mich? auf Quizlet
+        url: https://quizlet.com/br/1115826373/%D7%90%D7%99%D7%9A-%D7%9C%D7%94%D7%A8%D7%92%D7%A2-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich heiße ___. Ich entspanne mich mit ___.
+        example: Ich heiße Daniel. Ich entspanne mich mit Netflix.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Wann fühlst du dich entspannt?
+            frame: Ich fühle mich entspannt, wenn ich ___.
+          - question: Wann fühlst du dich gestresst?
+            frame: Ich fühle mich gestresst, wenn ich ___.
+          - question: Was machst du zur Entspannung?
+            frame: Ich ___, um mich zu entspannen.
+          - question: Wann entspannst du dich?
+            frame: Ich entspanne mich am Morgen / am Abend.
+          - question: Ist Musik gut für die Entspannung? Warum?
+            frame: Ja, Musik ist gut, weil ___. / Nein, Musik ist nicht gut, weil ___.
+          - question: Entspannst du dich lieber zu Hause oder in der Natur? Warum?
+            frame: Ich entspanne mich lieber ___, weil ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Die fünf Sinne'
+        skills: [Ich-Sätze mit Aktionen]
+        steps:
+          - Lies die Sätze an der Tafel. Wir benutzen immer **Ich + Verb**.
+          - Hör die Beispiele des Lehrers.
+          - Alle sprechen zusammen nach.
+          - Jeder sagt einen Satz mit einem Sinn.
+          - Für starke Gruppen – kombiniere zwei Sinne.
+          - 'Antworte schnell: Was hörst du? Was riechst du? Was siehst du?'
+        wordBank: [Musik, Tisch, Kaffee, Hund, Handy, Pizza, Straße, Baum]
+        example: |-
+          *Ich sehe den Bildschirm.*
+          *Ich höre Musik.*
+          *Ich rieche Kaffee.*
+          *Ich berühre den Tisch.*
+          *Ich esse ein Sandwich.*
+          *Ich sehe den Park und ich höre Musik.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Meine fünf Sinne
+        items:
+          - question: Ich sehe ___.
+          - question: Ich höre ___.
+          - question: Ich rieche ___.
+          - question: Ich berühre ___.
+          - question: Ich esse ___.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Wie fühlst du dich, wenn …?'
+        skills: [Beschreibende Sätze mit „sein“]
+        steps:
+          - Lies die Gefühle an der Tafel.
+          - Hör die Beispiele des Lehrers.
+          - 'Partnerarbeit: Einer fragt, einer antwortet. Benutze die Fragen unten.'
+          - Sag der Klasse einen Satz über deinen Partner (Er ist … / Sie ist …).
+        wordBank: [müde, glücklich, entspannt, gestresst, hungrig]
+        example: |-
+          *Wenn ich früh aufstehe, bin ich müde.*
+          *Wenn ich Musik höre, bin ich entspannt.*
+          **A:** Wie fühlst du dich, wenn du Musik hörst?
+          **B:** Ich bin entspannt.
+          *Daniel ist entspannt, wenn er Musik hört.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Wie fühlst du dich, wenn …?
+        items:
+          - question: Wie fühlst du dich, wenn du früh aufstehst?
+            frame: Ich bin ___.
+          - question: Wie fühlst du dich, wenn du lernst?
+            frame: Ich bin ___.
+          - question: Wie fühlst du dich, wenn du dein Lieblingsessen isst?
+            frame: Ich bin ___.
+          - question: Wie fühlst du dich, wenn du deinen besten Freund siehst?
+            frame: Ich bin ___.
+          - question: Wie fühlst du dich, wenn du einen Film siehst?
+            frame: Ich bin ___.
+          - question: Wie fühlst du dich, wenn du einen Test machst?
+            frame: Ich bin ___.
+          - question: Wie fühlst du dich, wenn du ein Spiel spielst?
+            frame: Ich bin ___.
+          - question: Wie fühlst du dich, wenn du Hunger hast?
+            frame: Ich bin ___.
+          - question: Wie fühlst du dich, wenn du ein Geschenk bekommst?
+            frame: Ich bin ___.
+          - question: Wie fühlst du dich, wenn du zu Hause bist?
+            frame: Ich bin ___.
+          - question: Wie fühlst du dich, wenn du Musik hörst?
+            frame: Ich bin ___.
+          - question: Wie fühlst du dich, wenn du an den Strand gehst?
+            frame: Ich bin ___.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Was machst du, wenn …?'
+        skills: [Ich-Sätze mit Aktionen]
+        steps:
+          - Lies die Struktur an der Tafel.
+          - 'Partnerarbeit: Einer fragt, einer antwortet. Benutze die Fragen unten.'
+          - Schreib 1–2 Antworten deines Partners auf.
+          - Sag der Klasse einen Satz über deinen Partner.
+        wordBank:
+          [essen, trinken, schlafen, gehen, hören, Handy ausmachen, spazieren gehen, sich ausruhen]
+        example: |-
+          *Wenn ich müde bin, schlafe ich.*
+          *Wenn ich Hunger habe, esse ich.*
+          *Wenn ich gestresst bin, höre ich Musik.*
+          *Maya isst Schokolade, wenn sie Hunger hat.*
+      - id: act3-questions
+        type: discussionQuestions
+        title: Was machst du, wenn …?
+        items:
+          - question: Was machst du, wenn du müde bist, aber arbeiten musst?
+            frame: Wenn ich müde bin, ___ ich.
+          - question: Was machst du, wenn du gestresst bist?
+            frame: Wenn ich gestresst bin, ___ ich.
+          - question: Was machst du, wenn du Hunger hast? Was isst du?
+            frame: Wenn ich Hunger habe, esse ich ___.
+          - question: Was machst du, wenn du allein sein willst? (Handy aus, Ruhe)
+            frame: Wenn ich allein sein will, ___ ich.
+          - question: Ein Satz über deinen Partner.
+            frame: Er / Sie ___, wenn er / sie ___ ist / hat.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Mein entspannender Ort'
+        skills: [Ich-Sätze mit Aktionen, Beschreibende Sätze mit „sein“]
+        steps:
+          - Denk an einen Ort, der dich entspannt.
+          - Sag drei Sätze über den Ort. Sag nicht, wie der Ort heißt!
+          - 'Die Klasse rät: Ist es der Park? Du antwortest nur mit Ja oder Nein.'
+          - Wer zuerst richtig rät, ist als Nächstes dran.
+        wordBank: [der Park, der Strand, zu Hause, das Café, das Bett, das Kino]
+        example: |-
+          *Ich sehe Wasser. Ich höre Musik. Ich esse Eis.*
+          *Ist es der Strand? – Ja!*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Mein Ort
+        items:
+          - question: Ich sehe ___.
+          - question: Es gibt ___.
+          - question: Ich höre ___.
+          - question: Ich esse / trinke ___.
+          - question: Ich bin dort ___ (ruhig / glücklich / entspannt).
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fähigkeiten in diesem Zyklus: **Ich-Sätze mit Aktionen** (Aktivitäten 1 und
+          3) und **beschreibende Sätze mit „sein“** (Aktivität 2). Aktivität 4 übt beide.
+          Niveau 1 (Grundlagen), Thema Entspannung.
+      - id: n-intro
+        anchor: intro
+        text: Schreib das Modell an die Tafel, gib zuerst dein eigenes Beispiel und frag dann jeden Schüler.
+      - id: n-warmup
+        anchor: warmup
+        text: Stell jedem Schüler mindestens zwei Fragen. Die geschriebenen Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Phase 1: Schreib groß an die Tafel: Ich sehe / höre / rieche / berühre / esse ___.
+          Erklär mit Gesten: „Wir sprechen jetzt über unsere Sinne. Wir benutzen immer: Ich +
+          Verb.“ Phase 2: ein Beispiel pro Satz, langsam; zeig, riech, hör oder berühr
+          dabei etwas. Phase 3: Chor; zeig auf einzelne Wörter an der Tafel. Phase 4: jeder
+          Schüler sagt nur einen Satz; hilf mit Wörtern aus der Wortliste. Phase 5
+          (optional, starke Gruppen): zwei Sinne kombinieren. Phase 6: schnelle Fragen, die
+          Schüler antworten nur mit „Ich höre … / Ich rieche … / Ich sehe …“.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Phase 1: „Ich bin ___.“ an die Tafel, darunter die Gefühle. Phase 2: 2–3
+          Modellbeispiele mit Mimik (müde → gähnen, glücklich → lächeln, gestresst → Stirn
+          runzeln). Phase 3: Frage- und Antwortmodell an die Tafel. Phase 4: Partnerinterview;
+          geh herum, korrigiere sanft und hilf mit Wortschatz. Phase 5: jeder Schüler sagt
+          einen Satz über den Partner („Er ist ___. / Sie ist ___.“). Phase 6: schnelle
+          Kontrolle: „Wie fühlst du dich, wenn du lernst / Hunger hast?“
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Phase 1: Struktur an die Tafel: „Wenn ich ___ bin / habe, ___ ich.“ und 2–3
+          Modellbeispiele. Phase 2–3: Partnerinterview, jeder schreibt 1–2 Antworten auf.
+          Phase 4: jeder sagt einen Satz über den Partner (Maya isst Schokolade, wenn sie
+          Hunger hat. Daniel hört Musik, wenn er gestresst ist. Tomer geht spazieren, wenn
+          er müde ist.). Korrigiere sanft die **Verbposition**: nach dem Wenn-Satz kommt das
+          Verb zuerst (Wenn ich müde bin, **schlafe** ich). Phase 5: schnelle mündliche
+          Wiederholung, kurze Antworten (Ich schlafe. Ich esse.).
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Schreib die Hilfsstrukturen an die Tafel und mach ein Modell vor (Ich sehe Wasser.
+          Ich höre Musik. Ich esse Eis. → „Was ist das?“ → „Ja! Der Strand!“). Das Spiel
+          geht weiter, bis 3–4 Schüler beschrieben haben. Typische Fehler aus der Klasse: „Es
+          hat Wasser“ → Ich sehe Wasser. „Ich esse Eiscreme dort“ → Ich esse Eis. „Ich trage
+          ein Badeanzug“ → Ich trage einen Badeanzug.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: wie-entspanne-ich-mich-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-aktionen
+        type: ruleSummary
+        skill: Ich-Sätze mit Aktionen (Präsens)
+        rules:
+          - text: '**Ich + Verb** (אני + פועל). Das Verb endet mit ich auf **-e**.'
+            examples:
+              - Ich **esse**. – אני אוכל
+              - Ich **schlafe**. – אני ישן
+              - Ich **höre** Musik. – אני שומע מוזיקה
+              - Ich **trinke** Tee. – אני שותה תה
+          - text: 'Kein **bin** vor einem Verb.'
+            examples: [❌ Ich bin esse., ✅ Ich esse.]
+          - text: 'Er / Sie: die meisten Verben enden auf **-t**. Manche Verben ändern sich.'
+            examples:
+              - Sie **hört** Musik. – היא שומעת מוזיקה
+              - Er **trinkt** Tee. – הוא שותה תה
+              - schlafen → Er **schläft**. – הוא ישן
+              - essen → Er **isst** Pizza. – הוא אוכל פיצה
+      - id: aktionen-he
+        type: text
+        lang: he
+        text: >-
+          במשפט עם פעולה משתמשים במבנה **Ich + Verb** (אני + פועל). בניגוד לאנגלית, בגרמנית
+          לא מוסיפים פועל "להיות" לפני פעולה: לא אומרים *Ich bin esse*, אלא *Ich esse*.
+          כשמדברים על הוא / היא, הפועל מקבל בדרך כלל **t** בסוף (*sie hört*), ויש פעלים
+          שמשתנים (*er schläft*, *er isst*).
+      - id: rules-sein
+        type: ruleSummary
+        skill: Beschreibende Sätze mit „sein“
+        rules:
+          - text: '**Ich bin + Adjektiv** – für einen Zustand oder eine Eigenschaft, nicht für eine Aktion.'
+            examples:
+              - Ich **bin müde**. – אני עייף
+              - Ich **bin glücklich**. – אני שמח
+              - Ich **bin entspannt**. – אני רגוע
+          - text: 'Für Dinge und Orte: **ist** + Adjektiv.'
+            examples: [Der Tee **ist warm**. – התה חם, Der Park **ist ruhig**. – הפארק שקט]
+          - text: '**nicht** steht nach **sein** (bin / ist).'
+            examples:
+              [Ich **bin nicht müde**. – אני לא עייף, Der Park **ist nicht laut**. – הפארק לא רועש]
+      - id: sein-he
+        type: text
+        lang: he
+        text: >-
+          משפטים עם **sein** מתארים **מצב או תכונה**, לא פעולה: עייף, רגוע, שמח, רועש,
+          שקט. המבנה: **Ich bin + תואר**. על חפצים ומקומות: **ist + תואר**. בשלילה שמים
+          **nicht** אחרי הפועל sein.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die zwei Fähigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: wie-entspanne-ich-mich-hausaufgaben
+    title: Hausaufgaben
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben
+      - id: writing
+        type: discussionQuestions
+        title: Schreib einen Satz
+        items:
+          - question: Wie fühlst du dich diese Woche? (entspannt / müde / glücklich / gestresst)
+            frame: Diese Woche bin ich ___.
+          - question: Wie entspannst du dich? (Netflix, Musik, Tee, Schlaf, Hund …)
+            frame: Ich entspanne mich mit ___.
+          - question: Was liebst du oder was hasst du? Wähle eins.
+            frame: Ich liebe ___. / Ich hasse ___.
+          - question: 'Bonus (freiwillig): Wohin möchtest du nächste Woche gehen?'
+            frame: Ich möchte nächste Woche in den Park / an den Strand / ins Café / ins Kino gehen.
+      - id: writing-example
+        type: examples
+        items:
+          - { text: Diese Woche bin ich müde. }
+          - { text: Ich entspanne mich mit Musik. }
+          - { text: Ich liebe Schokolade. }
+          - { text: Ich möchte nächste Woche in den Park gehen. }
+      - id: mori-title
+        type: heading
+        level: 3
+        text: Üben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-entspannung
+        type: aiTutorPrompt
+        title: Wie entspanne ich mich?
+        message: >-
+          Hallo Mori! Ich möchte Deutsch üben. Kannst du mir Fragen über Entspannung
+          stellen, mit Ich-Sätzen (Ich höre Musik) und beschreibenden Sätzen mit „sein“
+          (Ich bin müde)? Bitte benutze nur Präsens und korrigiere meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du willst mehr Fragen? Schick: **Bitte frag mich mehr!**
+          Du verstehst etwas nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem deutschen Satz?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: wie-entspanne-ich-mich-uebung
+    book: workbook
+    title: 'Übung: Wie entspanne ich mich?'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fähigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-aktionen
+        type: activity
+        activity: wie-entspanne-ich-mich-aktionen
+      - id: ex-sein
+        type: activity
+        activity: wie-entspanne-ich-mich-sein
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: wie-entspanne-ich-mich-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Entspannung
+        glossLang: he
+        link: https://quizlet.com/br/1115826373/%D7%90%D7%99%D7%9A-%D7%9C%D7%94%D7%A8%D7%92%D7%A2-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &entspannung-words
+          - { term: sich entspannen, gloss: להירגע }
+          - { term: entspannt, gloss: רגוע }
+          - { term: müde, gloss: עייף }
+          - { term: glücklich, gloss: שמח }
+          - { term: gestresst, gloss: לחוץ }
+          - { term: hungrig, gloss: רעב }
+          - { term: ruhig, gloss: שקט }
+          - { term: fühlen, gloss: להרגיש }
+          - { term: schlafen, gloss: לישון }
+          - { term: essen, gloss: לאכול }
+          - { term: trinken, gloss: לשתות }
+          - { term: hören, gloss: לשמוע }
+          - { term: sehen, gloss: לראות }
+          - { term: riechen, gloss: להריח }
+          - { term: berühren, gloss: לגעת }
+          - { term: gehen, gloss: ללכת }
+          - { term: die Musik, gloss: מוזיקה }
+          - { term: der Tee, gloss: תה }
+          - { term: der Film, gloss: סרט }
+          - { term: der Park, gloss: פארק }
+          - { term: der Strand, gloss: חוף }
+          - { term: zu Hause, gloss: בבית }
+          - { term: der Körper, gloss: גוף }
+          - { term: das Geschenk, gloss: מתנה }
+          - { term: der Freund / die Freundin, gloss: חבר / חברה }
+          - { term: der Kaffee, gloss: קפה }
+          - { term: die Schokolade, gloss: שוקולד }
+          - { term: das Handy, gloss: טלפון נייד }
+          - { term: lernen, gloss: ללמוד }
+          - { term: arbeiten, gloss: לעבוד }
+          - { term: spielen, gloss: לשחק }
+          - { term: der Morgen, gloss: בוקר }
+          - { term: der Abend, gloss: ערב }
+          - { term: warm, gloss: חם }
+          - { term: laut, gloss: רועש }
+          - { term: nicht, gloss: לא }
+          - { term: sein (bin / ist), gloss: להיות }
+
+vocabulary:
+  - slug: wie-entspanne-ich-mich
+    title: Wie entspanne ich mich?
+    items: *entspannung-words
+
+activities:
+  - slug: wie-entspanne-ich-mich-aktionen
+    title: 'Ich-Sätze mit Aktionen: Ich höre Musik.'
+    minutes: 8
+    items:
+      - id: ich-hoere
+        type: multipleChoice
+        prompt: Ich ___ Musik.
+        options:
+          - { text: höre, correct: true }
+          - { text: bin höre, feedback: 'Kein *bin* vor einem Verb: Ich höre Musik.' }
+          - {
+              text: hört,
+              feedback: '*hört* passt zu er / sie. Mit *ich* endet das Verb auf -e: ich höre.',
+            }
+      - id: trinke-rieche
+        type: fillBlank
+        prompt: Ergänze die Verben in Klammern.
+        text: Ich ___ Tee. (trinken) Ich ___ Kaffee. (riechen)
+        blanks: [[trinke], [rieche]]
+      - id: sinne-he
+        type: matching
+        prompt: Verbinde die Verben.
+        pairs:
+          - [sehen, לראות]
+          - [hören, לשמוע]
+          - [riechen, להריח]
+          - [berühren, לגעת]
+          - [essen, לאכול]
+      - id: bin-esse
+        type: trueFalse
+        prompt: '*Ich bin esse.* ist ein richtiger Satz.'
+        answer: false
+        feedback:
+          correct: 'Richtig! Kein *bin* vor einem Verb: Ich esse.'
+          incorrect: 'Im Deutschen sagen wir nur: Ich esse. Kein *bin* vor einem Verb.'
+      - id: er-isst
+        type: multipleChoice
+        prompt: Er ___ Pizza.
+        options:
+          - { text: isst, correct: true }
+          - { text: esst, feedback: '*essen* ändert sich mit er / sie: er isst.' }
+          - { text: esse, feedback: '*esse* passt zu *ich*. Mit er: er isst.' }
+      - id: hoert-schlaeft
+        type: fillBlank
+        prompt: Ergänze die Verben in Klammern.
+        text: Maya ___ Musik. (hören) Tom ___ viel. (schlafen)
+        blanks: [[hört, hoert], [schläft, schlaeft]]
+      - id: ordne-frage
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einer Frage.
+        sentence: Was machst du, wenn du müde bist?
+      - id: gestresst
+        type: shortAnswer
+        prompt: Was machst du, wenn du gestresst bist? Schreib einen Satz mit *ich*.
+
+  - slug: wie-entspanne-ich-mich-sein
+    title: 'Beschreibende Sätze: Ich bin müde.'
+    minutes: 8
+    items:
+      - id: ich-bin
+        type: multipleChoice
+        prompt: Ich ___ müde.
+        options:
+          - { text: bin, correct: true }
+          - { text: ist, feedback: '*ist* passt zu er / sie / es. Mit *ich*: ich bin.' }
+          - { text: bist, feedback: '*bist* passt zu *du*. Mit *ich*: ich bin.' }
+      - id: ist-bin
+        type: fillBlank
+        prompt: Ergänze mit *ist* oder *bin*.
+        text: Der Park ___ ruhig. Ich ___ entspannt.
+        blanks: [[ist], [bin]]
+        wordBank: [ist, bin]
+      - id: gefuehle-he
+        type: matching
+        prompt: Verbinde die Adjektive.
+        pairs:
+          - [müde, עייף]
+          - [glücklich, שמח]
+          - [gestresst, לחוץ]
+          - [hungrig, רעב]
+          - [laut, רועש]
+      - id: nicht-nach-sein
+        type: trueFalse
+        prompt: '*nicht* steht nach *bin* / *ist*: Ich bin nicht müde.'
+        answer: true
+        feedback:
+          correct: 'Richtig! Ich bin *nicht* müde. Der Park ist *nicht* laut.'
+          incorrect: 'Doch: *nicht* steht nach *sein*: Ich bin nicht müde.'
+      - id: tee-warm
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Der Tee ist warm., correct: true }
+          - { text: Der Tee warm., feedback: 'Der Satz braucht ein Verb: Der Tee *ist* warm.' }
+          - { text: Der Tee bin warm., feedback: '*bin* passt nur zu *ich*. Der Tee *ist* warm.' }
+      - id: nicht-muede
+        type: fillBlank
+        prompt: 'Schreib den Satz mit *nicht*: Ich bin müde. → Ich bin ___ müde.'
+        text: Ich bin ___ müde.
+        blanks: [[nicht]]
+      - id: ordne-park
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Der Park ist nicht laut.
+      - id: er-ist
+        type: multipleChoice
+        prompt: Daniel hört Musik. Er ___ entspannt.
+        options:
+          - { text: ist, correct: true }
+          - { text: bin, feedback: '*bin* passt nur zu *ich*. Mit *er*: er ist.' }
+          - { text: sind, feedback: '*sind* ist für wir / sie (viele). Mit *er*: er ist.' }

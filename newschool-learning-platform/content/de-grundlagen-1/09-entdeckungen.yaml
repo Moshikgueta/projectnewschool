@@ -1,0 +1,559 @@
+# Cycle "Entdeckungen", converted from the German Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: entdeckungen
+title: Entdeckungen
+goal: Über Länder und Tiere sprechen, mit Aktionen im Präsens und Präpositionen.
+position: 9
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Aktionen im Präsens" and "Präpositionen") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The lesson summary is written in Hebrew in the notebook. It is given here as
+    short German rules (ruleSummary) with the Hebrew translations as glosses in the
+    examples, plus one Hebrew text block (lang he) per skill.
+  - >-
+    Summary rule taken over from the English notebook: "German has no am / is / are
+    like English; not 'He is eat' but 'Er isst'". The English sentence is removed;
+    the rule now says that German needs no helper verb in the present (*Er isst*,
+    not *Er ist essen*).
+  - >-
+    "weit von Israel" (warm-up, summary, vocabulary) → "weit von Israel entfernt"
+    (or "weit weg von"), the standard form; the Mori example already used
+    "entfernt". "nah von" → "in der Nähe von". Please confirm.
+  - >-
+    Animals: *Die Giraffe isst* → *Die Giraffe frisst* (animals *fressen*, people
+    *essen*); the notebook's own Mori example already used *frisst*. *fressen* is
+    added to the vocabulary; *essen / isst* stay for people. Please confirm you want
+    *fressen* at A1, or keep *essen* in class.
+  - >-
+    Activity 1: "Wo ist dieser Staat?" → "Wo ist dieses Bundesland?" (German states
+    are *Bundesländer*). In the preposition list "unter" (not used for places on a
+    map) is replaced with "südlich von"; "nördlich von" is added (it is in the
+    example and the vocabulary).
+  - >-
+    Other fixes: "Raten Sie es!" → "Rate mal!" (the notebook uses *du* with
+    students); "Der + Tier + Verb" → "Der / Die / Das + Tier + Verb"; "Student A /
+    B" → "Schüler A / B"; the garbled heading "Deckungen" removed; Activity 4's
+    phases renumbered (there was no Phase 2).
+  - >-
+    The "Hausaufgaben mit Mori" section is in English in the notebook (instructions,
+    Mori messages and examples). It is translated into German here.
+  - >-
+    Activity 4 says creativity is in the right brain half and logic in the left.
+    This is a popular myth; it is kept only as a game frame in the teacher note,
+    not as a fact for students. Please decide whether to keep it.
+  - >-
+    Vocabulary: "geht" and "isst" are written as "er geht" and "er isst"; "weit von"
+    → "weit von … entfernt"; "fressen" added. The section headings with counts
+    ("חיות (6)") are dropped.
+  - >-
+    No activity times are given in this cycle, so none are recorded. The intro
+    round and warm-up use the usual 10 and 20 minutes.
+  - >-
+    The "Antwort von Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+  - >-
+    The pictures (map of Germany, wild animals) are not in the notebook; the
+    teacher brings them (see the teacher notes). The Quizlet link's tracking
+    parameter (?new) was removed.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: entdeckungen-unterricht
+    title: 'Unterricht: Entdeckungen'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Entdeckungen
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Aktionen im Präsens
+            description: 'Einfache Sätze mit Aktionen: *Der Vogel fliegt. Ich gehe.*'
+          - name: Präpositionen
+            description: '*in, auf, unter, neben, in der Nähe von, weit von … entfernt*'
+      - id: quizlet
+        type: externalLink
+        label: Entdeckungen auf Quizlet
+        url: https://quizlet.com/1114236897/%D7%AA%D7%92%D7%9C%D7%99%D7%95%D7%AA-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Ich lerne gerne Neues über ___.
+        example: Ich bin Daniel. Ich lerne gerne Neues über Politik.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Was ist dein Lieblingsland? Warum?
+            frame: Mein Lieblingsland ist ___, weil ___.
+          - question: Ist dieses Land in der Nähe von Israel oder weit weg?
+            frame: Dieses Land ist in der Nähe von Israel. / Dieses Land ist weit von Israel entfernt.
+          - question: Was kann man in diesem Land machen?
+            frame: Man kann dort ___.
+          - question: Was ist dein Lieblingstier? Warum?
+            frame: Mein Lieblingstier ist ___, weil ___.
+          - question: Wo lebt dein Lieblingstier?
+            frame: Es lebt im / am / in der Nähe von ___.
+          - question: Was macht es jeden Tag?
+            frame: Jeden Tag ___ es.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Wo ist dieses Bundesland?'
+        skills: [Präpositionen]
+        minutes: 20
+        steps:
+          - 'Wiederhole die Präpositionen: *neben, in der Nähe von, weit von … entfernt, nördlich von, südlich von*.'
+          - Schau die Karte von Deutschland an. Du bekommst ein Bundesland.
+          - Beschreib, wo dein Bundesland liegt.
+          - 'Arbeitet zu zweit und fragt: *Ist ___ in der Nähe von ___ oder weit von ___ entfernt?*'
+        example: |-
+          *Hamburg ist nördlich von Niedersachsen.*
+          *Hessen ist neben Thüringen.*
+        wordBank: [neben, in der Nähe von, weit von … entfernt, nördlich von, südlich von]
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Was machen die Tiere?'
+        skills: [Aktionen im Präsens]
+        minutes: 20
+        steps:
+          - Schau das Bild mit wilden Tieren an.
+          - 'Was siehst du auf dem Bild? Sag einen Satz.'
+          - 'Wähl ein Tier und sag, was es macht: **Der / Die / Das + Tier + Verb**.'
+        example: |-
+          *Der Elefant geht.*
+          *Die Giraffe frisst.*
+          *Der Leopard klettert.*
+          *Der Vogel fliegt.*
+        wordBank: [gehen, klettern, fressen, schwimmen, laufen, fliegen]
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Mein Tier
+        items:
+          - question: Auf dem Bild sehe ich ___.
+          - question: Der / Die / Das ___ (Tier) ___ (Verb).
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Rate mal!'
+        skills: [Präpositionen]
+        minutes: 20
+        steps:
+          - Denk an ein Körperteil und schreib es geheim auf.
+          - Die anderen stellen Ja-/Nein-Fragen.
+          - 'Die anderen raten: *Ist es deine Hand?*'
+        example: |-
+          *Schüler A denkt an: Hand*
+          *Ist es in deinem Gesicht?* – Nein.
+          *Ist es in der Nähe deiner Füße?* – Nein.
+          *Benutzt du es zum Schreiben?* – Ja.
+          *Ist es deine Hand?* – Ja!
+      - id: act3-questions
+        type: discussionQuestions
+        title: Fragen zum Körperteil
+        answerable: false
+        items:
+          - question: Ist es in deinem Gesicht?
+          - question: Ist es in der Nähe deiner Füße?
+          - question: Benutzt du dieses Körperteil zum Sprechen?
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Rechts oder links?'
+        skills: [Aktionen im Präsens]
+        minutes: 20
+        steps:
+          - Hör das Modell von deinem Lehrer / deiner Lehrerin.
+          - 'Arbeitet zu zweit. Frag deinen Partner: *Was machst du, wenn du kreativ bist? Was machst du, wenn du logisch bist?*'
+          - Erzähl der Gruppe von deinem Partner (er / sie).
+        example: |-
+          *Ich bin kreativ, wenn ich male.*
+          *Ich bin logisch, wenn ich plane.*
+          *Lisa ist kreativ, wenn sie malt.*
+          *Yosi ist logisch, wenn er plant.*
+        wordBank: [malen, tanzen, schreiben, zeichnen, planen, zählen, lesen, denken]
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Mein Partner
+        items:
+          - question: ___ ist kreativ, wenn er / sie ___.
+          - question: ___ ist logisch, wenn er / sie ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fähigkeiten in diesem Zyklus: **Aktionen im Präsens** (Fragen, Aktivität 2
+          oder 4) und **Präpositionen** (Fragen, Aktivität 1 oder 3). Empfehlung: eine
+          Aktivität pro Fähigkeit.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Gib zuerst dein eigenes Beispiel und frag dann jeden Schüler.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Stell jedem Schüler mindestens zwei Fragen. Die geschriebenen Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Schreib die Präpositionen an die Tafel. Zeig eine Karte von Deutschland (nicht im
+          Heft; bring sie selbst mit) und gib jedem Schüler ein Bundesland.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Zeig ein Bild mit wilden Tieren (nicht im Heft). Tiere *fressen*, Menschen
+          *essen*: *Die Giraffe frisst.* Wenn ein Schüler *Die Giraffe isst* sagt,
+          wiederhole den Satz richtig.
+      - id: n-act3
+        anchor: act3
+        text: Jeder Schüler schreibt sein Körperteil geheim auf. Die Gruppe fragt mit *in, in der Nähe von*, bis sie das Körperteil errät.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Spielidee: Kreativität = rechte Gehirnhälfte, Logik = linke Gehirnhälfte. (Das
+          ist ein Mythos; nimm es nur als Spiel.) Modell: «Ich bin kreativ, wenn ich male.
+          Ich bin logisch, wenn ich plane.» Beispiel: Schüler A: «Was machst du, wenn du
+          kreativ bist?» Schüler B: «Ich zeichne. Ich male. Ich denke viel.» Dann berichten
+          die Schüler in der 3. Person.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: entdeckungen-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-aktionen
+        type: ruleSummary
+        skill: Aktionen im Präsens
+        rules:
+          - text: 'Ein einfacher Satz: **Subjekt + Verb**.'
+            examples:
+              - Ich gehe. (אני הולך.)
+              - Der Affe klettert. (הקוף מטפס.)
+              - Die Giraffe frisst. (הג'ירפה אוכלת.)
+              - Der Vogel fliegt. (הציפור עפה.)
+          - text: 'Bei **er / sie / es** endet das Verb auf **-t**.'
+            examples:
+              [ich gehe → er geht, ich fliege → der Vogel fliegt, ich klettere → der Affe klettert]
+          - text: 'Im Präsens braucht man kein Hilfsverb: **Er isst.** (nicht: *Er ist essen.*)'
+      - id: he-aktionen
+        type: text
+        lang: he
+        text: >-
+          **בניית משפטים עם פעלים בהווה:** מבנה בסיסי: נושא + פועל. כאשר הנושא הוא הוא /
+          היא / זה (er / sie / es), הפועל תמיד נגמר ב־**t**. בגרמנית אין פועל עזר בהווה:
+          אומרים **Er isst** (הוא אוכל), בלי ist.
+      - id: rules-praepositionen
+        type: ruleSummary
+        skill: Präpositionen
+        rules:
+          - text: 'Mit Präpositionen sagen wir, **wo** etwas ist.'
+            examples:
+              - in / im – Der Bär lebt im Wald. (הדוב חי ביער.)
+              - auf – Der Vogel sitzt auf dem Baum. (הציפור יושבת על העץ.)
+              - unter – Die Maus ist unter dem Tisch. (העכבר מתחת לשולחן.)
+              - neben – Die Lampe steht neben dem Bett. (המנורה ליד המיטה.)
+              - in der Nähe von – Das Zebra lebt in der Nähe vom Fluss. (הזברה חיה ליד הנהר.)
+              - weit von … entfernt – Kanada ist weit von Israel entfernt. (קנדה רחוקה מישראל.)
+      - id: he-praepositionen
+        type: text
+        lang: he
+        text: >-
+          **מילות יחס (Präpositionen):** משתמשים בהן כדי לומר איפה משהו נמצא: in / im = בתוך
+          / ב־, auf = על, unter = מתחת, neben = ליד, in der Nähe von = קרוב ל־, weit von …
+          entfernt = רחוק מ־.
+      - id: can-do
+        type: callout
+        tone: tip
+        title: Am Ende der Stunde kann ich …
+        text: |-
+          einfache Sätze im Präsens bilden,
+          über Aktionen von Menschen und Tieren sprechen,
+          **er / sie / es** richtig benutzen,
+          mit Präpositionen sagen, wo etwas ist,
+          fragen und antworten: **Was macht …?** **Wo ist …?**
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Wiederhole die zwei Fähigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: entdeckungen-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und sende sie. Mori stellt dir Fragen; antworte mit kurzen Sätzen auf Deutsch.
+      - id: mori-tiere-laender
+        type: aiTutorPrompt
+        title: Tiere und Länder
+        message: >-
+          Hallo Mori! Ich möchte über Tiere und Länder sprechen. Kannst du mir Fragen
+          stellen, mit einfachen Präpositionen und Aktionsverben im Präsens? Bitte
+          korrigiere meine Fehler.
+      - id: mori-beispiele
+        type: examples
+        items:
+          - { text: Die Giraffe frisst Blätter., gloss: הג'ירפה אוכלת עלים. }
+          - { text: Thailand ist weit von Israel entfernt., gloss: תאילנד רחוקה מישראל. }
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Willst du mehr Fragen? Sende: **Bitte frag mich mehr!**
+          Verstehst du eine Erklärung nicht? Sende: **Kannst du es auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Mehr Übung
+      - id: mori-wo
+        type: aiTutorPrompt
+        title: Wo ist der Ort oder das Tier? (Präpositionen)
+        intro: 'Benutze Präpositionen: *in, unter, in der Nähe von, weit von … entfernt, neben*.'
+        message: >-
+          Hallo Mori! Nenn mir ein Land oder ein Tier, und ich sage, wo es ist. Bitte
+          korrigiere mich, wenn ich einen Fehler mache.
+      - id: mori-wo-beispiele
+        type: examples
+        items:
+          - { text: Das Zebra lebt in der Nähe vom Fluss., gloss: הזברה חיה ליד הנהר. }
+          - { text: Die USA liegen neben Kanada., gloss: ארצות הברית נמצאת ליד קנדה. }
+      - id: mori-was
+        type: aiTutorPrompt
+        title: Was macht das Tier? (Aktionsverben)
+        intro: 'Antworte mit Verben im Präsens: *gehen, klettern, fressen, fliegen*.'
+        message: Hallo Mori! Stell mir Fragen über Tiere. Was machen sie?
+      - id: mori-was-beispiele
+        type: examples
+        items:
+          - { text: Der Elefant geht., gloss: הפיל הולך. }
+          - { text: Der Vogel fliegt., gloss: הציפור עפה. }
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: entdeckungen-uebung
+    book: workbook
+    title: 'Übung: Entdeckungen'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fähigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-aktionen
+        type: activity
+        activity: entdeckungen-aktionen
+      - id: ex-praepositionen
+        type: activity
+        activity: entdeckungen-praepositionen
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: entdeckungen-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter zu Entdeckungen
+        glossLang: he
+        link: https://quizlet.com/1114236897/%D7%AA%D7%92%D7%9C%D7%99%D7%95%D7%AA-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &entdeckungen-words
+          - { term: das Tier, gloss: חיה }
+          - { term: der Elefant, gloss: פיל }
+          - { term: die Giraffe, gloss: ג'ירפה }
+          - { term: der Affe, gloss: קוף }
+          - { term: der Leopard, gloss: נמר }
+          - { term: der Vogel, gloss: ציפור }
+          - { term: gehen, gloss: ללכת }
+          - { term: klettern, gloss: לטפס }
+          - { term: essen, gloss: לאכול }
+          - { term: fressen, gloss: לאכול (בעלי חיים) }
+          - { term: schwimmen, gloss: לשחות }
+          - { term: laufen, gloss: לרוץ }
+          - { term: fliegen, gloss: לעוף }
+          - { term: malen, gloss: לצייר }
+          - { term: schreiben, gloss: לכתוב }
+          - { term: lesen, gloss: לקרוא }
+          - { term: denken, gloss: לחשוב }
+          - { term: in / im, gloss: בתוך / ב־ }
+          - { term: auf, gloss: על }
+          - { term: unter, gloss: מתחת }
+          - { term: neben, gloss: ליד }
+          - { term: in der Nähe von, gloss: ליד / קרוב ל־ }
+          - { term: weit von … entfernt, gloss: רחוק מ־ }
+          - { term: wo, gloss: איפה }
+          - { term: nördlich von, gloss: צפונית ל־ }
+          - { term: ich, gloss: אני }
+          - { term: er, gloss: הוא }
+          - { term: sie, gloss: היא }
+          - { term: es, gloss: זה }
+          - { term: er geht, gloss: הוא הולך }
+          - { term: er isst, gloss: הוא אוכל }
+          - { term: das Land, gloss: מדינה }
+          - { term: Israel, gloss: ישראל }
+          - { term: Deutschland, gloss: גרמניה }
+          - { term: der Wald, gloss: יער }
+          - { term: der Baum, gloss: עץ }
+          - { term: der Fluss, gloss: נהר }
+
+vocabulary:
+  - slug: entdeckungen
+    title: Entdeckungen
+    items: *entdeckungen-words
+
+activities:
+  - slug: entdeckungen-aktionen
+    title: 'Aktionen im Präsens: Der Vogel fliegt'
+    minutes: 8
+    items:
+      - id: vogel-fliegt
+        type: multipleChoice
+        prompt: Der Vogel ___.
+        options:
+          - { text: fliegt, correct: true }
+          - {
+              text: fliege,
+              feedback: '*fliege* ist für *ich*. Bei *der Vogel* (= er) sagt man *fliegt*.',
+            }
+          - {
+              text: fliegen,
+              feedback: '*fliegen* ist für *wir* und *sie* (Plural). *Der Vogel* ist er: *fliegt*.',
+            }
+      - id: affe-klettert
+        type: multipleChoice
+        prompt: Der Affe ___ auf den Baum.
+        options:
+          - { text: klettert, correct: true }
+          - {
+              text: klettere,
+              feedback: '*klettere* ist für *ich*. Bei *der Affe* (= er) endet das Verb auf *-t*.',
+            }
+          - {
+              text: klettern,
+              feedback: '*klettern* ist für *wir* und *sie* (Plural). *Der Affe* ist er: *klettert*.',
+            }
+      - id: gehe-geht
+        type: fillBlank
+        prompt: Schreib das Verb *gehen* in der richtigen Form.
+        text: Ich ___. Er ___.
+        blanks: [[gehe], [geht]]
+      - id: kein-hilfsverb
+        type: trueFalse
+        prompt: 'Auf Deutsch sagt man: *Er ist essen.* (הוא אוכל)'
+        answer: false
+        feedback:
+          correct: 'Richtig! Im Präsens braucht man kein Hilfsverb: *Er isst.*'
+          incorrect: 'Im Präsens braucht man kein Hilfsverb. Man sagt: *Er isst.*'
+      - id: verben
+        type: matching
+        prompt: Verbinde das Verb mit der Übersetzung.
+        pairs:
+          - [schwimmen, לשחות]
+          - [klettern, לטפס]
+          - [fliegen, לעוף]
+          - [laufen, לרוץ]
+          - [lesen, לקרוא]
+      - id: lisa-malt
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: 'Lisa ist kreativ, wenn sie malt.', correct: true }
+          - {
+              text: 'Lisa ist kreativ, wenn sie malen.',
+              feedback: 'Bei *sie* (= Lisa) endet das Verb auf *-t*: *sie malt*.',
+            }
+          - {
+              text: 'Lisa ist kreativ, wenn sie male.',
+              feedback: '*male* ist für *ich*. Bei *sie* (= Lisa) sagt man *malt*.',
+            }
+      - id: ordne-elefant
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Der Elefant schwimmt im Fluss.
+      - id: klettert-schwimme
+        type: fillBlank
+        prompt: Schreib die Verben in der richtigen Form.
+        text: Der Affe ___ (klettern). Ich ___ (schwimmen).
+        blanks: [[klettert], [schwimme]]
+
+  - slug: entdeckungen-praepositionen
+    title: 'Präpositionen: Wo ist das?'
+    minutes: 8
+    items:
+      - id: praepositionen
+        type: matching
+        prompt: Verbinde die Präposition mit der Übersetzung.
+        pairs:
+          - [auf, על]
+          - [unter, מתחת]
+          - [neben, ליד]
+          - [in der Nähe von, קרוב ל־]
+          - [weit von … entfernt, רחוק מ־]
+      - id: vogel-auf
+        type: multipleChoice
+        prompt: Der Vogel sitzt ___ dem Baum. (על העץ)
+        options:
+          - { text: auf, correct: true }
+          - { text: unter, feedback: '*unter* = מתחת. Der Vogel sitzt **על** העץ: *auf dem Baum*.' }
+          - { text: neben, feedback: '*neben* = ליד. Der Vogel sitzt **על** העץ: *auf dem Baum*.' }
+      - id: maus-unter
+        type: multipleChoice
+        prompt: Die Maus ist ___ dem Tisch. (מתחת לשולחן)
+        options:
+          - { text: unter, correct: true }
+          - { text: auf, feedback: '*auf* = על. מתחת = *unter*: *unter dem Tisch*.' }
+          - { text: im, feedback: '*im* = בתוך. מתחת = *unter*: *unter dem Tisch*.' }
+      - id: baer-im-wald
+        type: fillBlank
+        prompt: Ergänze die Präposition. (הדוב חי ביער.)
+        text: Der Bär lebt ___ Wald.
+        blanks: [[im, in dem]]
+      - id: kanada-weit
+        type: multipleChoice
+        prompt: Kanada ist ___ Israel entfernt.
+        options:
+          - { text: weit von, correct: true }
+          - {
+              text: neben,
+              feedback: 'Kanada ist nicht neben Israel. Mit *entfernt* sagt man *weit von … entfernt*.',
+            }
+          - { text: auf, feedback: '*auf* = על. Mit *entfernt* sagt man *weit von … entfernt*.' }
+      - id: naehe-bedeutung
+        type: trueFalse
+        prompt: '*in der Nähe von* bedeutet: קרוב ל־.'
+        answer: true
+        feedback:
+          correct: 'Richtig! *Das Zebra lebt in der Nähe vom Fluss.*'
+          incorrect: '*in der Nähe von* = קרוב ל־. Zum Beispiel: *Das Zebra lebt in der Nähe vom Fluss.*'
+      - id: ordne-lampe
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Die Lampe steht neben dem Bett.
+      - id: mein-tier
+        type: shortAnswer
+        prompt: Wo lebt dein Lieblingstier? Schreib einen Satz mit einer Präposition.

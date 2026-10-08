@@ -1,0 +1,596 @@
+# Cycle "Kunst und Handwerk", converted from the German digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: kunst-und-handwerk
+title: Kunst und Handwerk
+goal: Über Kunst sprechen, mit beschreibenden Sätzen und Handlungen im Präsens.
+position: 13
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Beschreibende Sätze" and "Handlungen im Präsens")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    The title "Kunst und Handwerk im Unterricht" is now "Kunst und Handwerk".
+  - >-
+    The summary is written in Hebrew in the notebook. The rules are now short German
+    ruleSummary blocks, and each skill keeps a Hebrew explanation as a `lang: he`
+    text block. The summary follows the order of the overview (descriptive sentences
+    first). Please check the Hebrew wording.
+  - >-
+    Präsens summary, rule 2 said "with ER / SIE add -t; only er / sie change the
+    verb". This is translated from the English rule (add -s) and is wrong for German:
+    every person has its own ending (ich male, du malst, er / sie malt, wir / sie
+    malen). Rewritten with the endings.
+  - >-
+    Präsens summary, rule 3 said "do not use am / is / are in German". It refers to
+    English. Rewritten: in the present you need only one verb (Ich esse Pizza, not
+    "Ich bin esse Pizza").
+  - >-
+    Präsens summary, rule 1 listed "Du tanzt nicht richtig ❌" as a wrong sentence.
+    It is correct German ("you don't dance properly"), so it was left out.
+  - >-
+    Warm-up: "Dies ist ein ___" for shapes → "Das ist ein / eine ___" (die Linie
+    needs *eine*); "Halten Sie Kunst für wichtig?" → "Findest du Kunst wichtig?"
+    (students are addressed with du); "Was machst du gern mit deinen Händen?" now has
+    the frame "Ich ___ gern."
+  - >-
+    Activity 1: the title "AKTIONEN IN VORGESENDET" (a broken "Präsens") was removed.
+    The board frames "Zeichne einen ___ in den ___ / ein ___ über den ___" had
+    article errors; they are now full model sentences (Zeichne unten ein Quadrat …).
+  - >-
+    Activity 2 is called "Das unordentliche Zimmer" in the notebook, but it is a
+    guessing game with art and music objects. It is now "Was ist es?". Please confirm.
+  - >-
+    Activity 3: "Die Bildnummer ___ ist …" → "Bild Nummer ___ ist …". Activities 3
+    and 4 need 4–6 pictures (paintings / photos) that are not in the exported
+    notebook; the teacher shares them on screen until they are added to the
+    course's media. No activity in this cycle has a time in the notebook.
+  - >-
+    The Mori homework mixed du and Sie and had stray quotation marks. It is rewritten
+    in the du form, and the opening message now names the cycle's skills
+    ("Beschreibende Sätze" and "Handlungen im Präsens") instead of "Sätze und
+    Handlungen im Präsens zu beschreiben". "Beschreiben Sie Ihr Lieblings
+    Kunstprojekt" → "Beschreib dein Lieblingskunstprojekt". The tip "explain it in
+    Hebrew but with the sentence in English" now says "auf Deutsch".
+  - >-
+    Vocabulary: the nouns had no article; added (das Bild, die Kunst, der Künstler,
+    der Pinsel, die Kamera, die Gitarre, die Linie, das Quadrat, der Kreis, das
+    Dreieck). "zeichnen – לשרטט" → "לצייר (בעיפרון) / לשרטט". "ist – הוא / היא" and
+    "sind – הם / הן" were wrong (they are forms of *sein*, "is / are"); glosses
+    rewritten with an example.
+  - >-
+    The "Antwort von Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: kunst-und-handwerk-unterricht
+    title: 'Unterricht: Kunst und Handwerk'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Kunst und Handwerk
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Beschreibende Sätze
+            description: Mit *sein* und Adjektiven beschreiben (Das Bild ist bunt. Die Bilder sind interessant.)
+          - name: Handlungen im Präsens
+            description: Sagen, was jemand macht (Ich male. Er tanzt.)
+      - id: quizlet
+        type: externalLink
+        label: Kunst und Handwerk auf Quizlet
+        url: https://quizlet.com/1114260099/%D7%99%D7%A6%D7%99%D7%A8%D7%94-%D7%95%D7%9E%D7%9C%D7%90%D7%9B%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Ich mag ___. Ich bin gut / schlecht darin.
+        example: Ich bin Daniel. Ich mag Malen. Ich bin gut darin.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Was machst du gern mit deinen Händen?
+            frame: Ich ___ gern. (Ich male / baue / zeichne / repariere gern.)
+          - question: Welche Form ist das?
+            frame: Das ist ein / eine ___. (ein Kreis, ein Quadrat, ein Rechteck, ein Dreieck, eine Linie)
+          - question: Welche Farbe ist das?
+            frame: Das ist blau / rot / grün / gelb / schwarz / weiß.
+          - question: Schaust du gern Kunst an?
+            frame: Ich schaue gern Kunst an. / Ich schaue nicht gern Kunst an.
+          - question: Findest du Kunst wichtig? Warum?
+            frame: Ja, Kunst ist wichtig, weil ___. / Nein, Kunst ist nicht wichtig, weil ___.
+          - question: Wer ist dein Lieblingskünstler?
+            frame: Mein Lieblingskünstler ist ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Zeichne mein Bild!'
+        skills: [Handlungen im Präsens]
+        steps:
+          - Wiederhole die Wörter mit deinem Lehrer.
+          - Arbeitet zu zweit. Schüler A zeichnet in 1 Minute ein einfaches Bild mit Quadrat, Kreis, Dreieck und Linie. Schüler B schaut **nicht** zu.
+          - Schüler A erklärt langsam (2 Minuten), was Schüler B zeichnen soll.
+          - 'Zeigt beide Bilder. Die Klasse entscheidet: Welches Paar hat die ähnlichsten Bilder?'
+          - Dann tauscht ihr die Rollen.
+        example: |-
+          *Zeichne unten ein Quadrat.*
+          *Zeichne über dem Quadrat ein Dreieck.*
+          *Zeichne in das Quadrat einen Kreis.*
+          *Zeichne links eine Linie.*
+        wordBank:
+          - die Linie
+          - das Quadrat
+          - der Kreis
+          - das Dreieck
+          - oben
+          - unten
+          - links
+          - rechts
+          - in
+          - über
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Was ist es?'
+        skills: [Beschreibende Sätze]
+        steps:
+          - Denk **heimlich** an ein Objekt aus Kunst oder Musik. Sag das Wort nicht!
+          - Die anderen Schüler stellen Ja/Nein-Fragen mit Adjektiven.
+          - Du antwortest nur mit **Ja** oder **Nein**.
+          - 'Wer glaubt, dass er es weiß, fragt: *Ist es eine Gitarre?*'
+          - Wer richtig rät, ist der nächste Spieler.
+        example: |-
+          *Ist es groß? – Nein.*
+          *Ist es lang? – Ja.*
+          *Benutzt du es zum Zeichnen? – Ja.*
+          *Ist es ein Bleistift? – Ja!*
+        wordBank:
+          - der Pinsel
+          - die Leinwand
+          - die Gitarre
+          - das Mikrofon
+          - der Bleistift
+          - die Staffelei
+          - die Statue
+          - das Notizbuch
+          - die Kamera
+          - die Trommel
+          - das Klavier
+          - die Maske
+          - die Ballettschuhe
+      - id: act2-questions
+        type: wordBank
+        words:
+          - Ist es groß?
+          - Ist es klein?
+          - Ist es lang?
+          - Ist es bunt?
+          - Ist es modern?
+          - Ist es alt?
+          - Ist es schwer?
+          - Ist es hell?
+          - Benutzt du es zum Zeichnen?
+          - Hörst du es dir an?
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Beschreibe die Bilder mit einem Freund'
+        skills: [Beschreibende Sätze]
+        steps:
+          - Arbeitet zu zweit. Ihr bekommt 6 Bilder und eine Liste mit Adjektiven.
+          - Wählt für jedes Bild mindestens 1 Adjektiv. Ihr dürft ein Adjektiv mehrmals benutzen.
+          - Bildet ganze Sätze (sprechen oder schreiben).
+          - Jedes Paar sagt 1 oder 2 Sätze laut vor der Klasse.
+        example: |-
+          *Bild Nummer 2 ist bunt, weil viele Farben da sind.*
+          *Das Haus auf dem Bild ist alt, weil es kaputt ist.*
+          *Die Menschen auf dem Bild sind glücklich, weil sie lachen.*
+        wordBank: [schön, bunt, interessant, einfach, modern, alt, groß, klein, dunkel, hell]
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Meine Sätze
+        items:
+          - question: Bild Nummer ___ ist ___, weil ___.
+          - question: Das ___ auf dem Bild ist ___, weil ___.
+          - question: Die ___ auf dem Bild sind ___, weil ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Mir gefällt das Bild …'
+        skills: [Handlungen im Präsens]
+        steps:
+          - Arbeitet zu zweit. Ihr bekommt 4–6 Bilder.
+          - 'Wähl ein Bild und sag deine Meinung: *Mir gefällt das Bild* oder *Mir gefällt das Bild nicht*. Erkläre mit einfachen Adjektiven, warum.'
+          - Dein Partner wählt das gleiche oder ein anderes Bild und sagt seine Meinung. Macht weiter, bis ihr über alle Bilder gesprochen habt.
+          - Jedes Paar sagt 1–2 Sätze laut vor der Klasse.
+        example: |-
+          *Mir gefällt das Bild, weil es schön ist.*
+          *Mir gefällt das Bild nicht, weil es dunkel ist.*
+          *Mir gefällt das Bild, weil die Leute tanzen.*
+          *Mir gefällt das Bild nicht, weil es traurig ist.*
+        wordBank:
+          - Die Ballerinas tanzen.
+          - Die Bauern arbeiten.
+          - Sie schneiden Weizen.
+          - Die Männer spielen Karten.
+          - Sie sitzen am Tisch.
+          - Ein Mann trinkt Kaffee.
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Unsere Meinung
+        items:
+          - question: Mir gefällt das Bild, weil es ___ ist.
+          - question: Mir gefällt das Bild nicht, weil es ___ ist.
+          - question: Uns gefällt das Bild mit dem ___, weil ___.
+          - question: Das Bild mit dem ___ gefällt uns nicht, weil ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fähigkeiten in diesem Zyklus: **Beschreibende Sätze** (Aufwärmfragen,
+          Aktivität 2 und 3) und **Handlungen im Präsens** (Aufwärmfragen, Aktivität 1
+          und 4).
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Schreib das Modell an die Tafel, gib dein eigenes Beispiel und frag dann jeden Schüler.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: >-
+          Stell jedem Schüler mindestens zwei Fragen. Für die Fragen zu Form und Farbe
+          zeig Formen und Farben auf dem Bildschirm oder an der Tafel.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Wiederhole zuerst den Wortschatz: Linie, Quadrat, Kreis, Dreieck; oben, unten,
+          links, rechts, in. Schreib die Modellsätze an die Tafel. Schüler A zeichnet 1
+          Minute, erklärt 2 Minuten; dann Rollen tauschen.
+      - id: n-act2
+        anchor: act2
+        text: Schreib die Modellfragen an die Tafel. Die Schüler müssen Adjektive benutzen.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Jedes Paar braucht 6 Bilder (Gemälde oder Fotos). Die Bilder sind nicht im
+          exportierten Heft: Teile sie auf dem Bildschirm.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Jedes Paar braucht 4–6 Bilder; teile sie auf dem Bildschirm. Die Verben aus
+          den Bildern (tanzen, arbeiten, schneiden, spielen, sitzen, trinken) helfen bei
+          Bedarf als Wortbank oder auf Quizlet.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: kunst-und-handwerk-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Das haben wir heute gelernt
+      - id: rules-describe
+        type: ruleSummary
+        skill: Beschreibende Sätze
+        rules:
+          - text: 'Beschreibende Sätze sagen, wie jemand oder etwas **ist** (Menschen, Dinge, Orte), nicht was er macht.'
+          - text: 'Satzbau: Subjekt + *sein* + Adjektiv oder Nomen. Einzahl: **ist**, Plural: **sind**.'
+            examples: [Sie ist glücklich., Die Katze ist schwarz., Die Bilder sind interessant.]
+          - text: 'Für „nein" steht **nicht** nach *ist / sind*.'
+            examples: [Der Himmel ist nicht blau., Sie ist nicht müde.]
+      - id: describe-he
+        type: text
+        lang: he
+        text: >-
+          **בעברית:** משפטי תיאור אומרים איך משהו נראה או מרגיש, ולא מה הוא עושה.
+          משתמשים בפועל *sein* (להיות): נושא + *ist / sind* + תואר. *ist* ליחיד, *sind*
+          לרבים: *Die Katze ist schwarz* (החתול שחור), *Die Bilder sind interessant*
+          (התמונות מעניינות). כדי להגיד "לא" מוסיפים *nicht* אחרי *ist / sind*: *Sie
+          ist nicht müde* (היא לא עייפה).
+      - id: rules-praesens
+        type: ruleSummary
+        skill: Handlungen im Präsens
+        rules:
+          - text: Zuerst das Subjekt, dann das Verb mit Endung.
+            examples: [Ich male. (nicht *Ich malen*), Du tanzt., Sie singen.]
+          - text: 'Die Endung passt zur Person: ich **-e**, du **-st**, er / sie / es **-t**, wir / sie **-en**.'
+            examples: ['ich male, du malst, er / sie malt, wir / sie malen']
+          - text: Im Präsens brauchst du nur **ein** Verb, ohne *bin* oder *ist*.
+            examples: [Ich esse Pizza zu Hause. (nicht *Ich bin esse Pizza*)]
+      - id: praesens-he
+        type: text
+        lang: he
+        text: >-
+          **בעברית:** משפטי פעולה אומרים מה מישהו עושה. קודם הנושא ואחר כך הפועל: *Ich
+          male* (אני מצייר). לכל גוף יש סיומת משלו: *ich male, du malst, er / sie malt,
+          wir malen*. בהווה יש רק פועל אחד: *Ich esse Pizza* (אני אוכל פיצה), בלי *bin*.
+      - id: can-do
+        type: callout
+        tone: info
+        title: Das kannst du jetzt
+        text: |-
+          Über Handlungen im Präsens sprechen.
+          Menschen und Dinge beschreiben, mit *sein* (*ist / sind*) und Adjektiven.
+          Positive und negative Sätze bilden (*nicht*).
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Wiederhole die zwei Fähigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: kunst-und-handwerk-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-smalltalk
+        type: aiTutorPrompt
+        title: Smalltalk über Kunst und Handwerk
+        intro: >-
+          Mori fragt zum Beispiel: Welche Art von Kunst oder Handwerk magst du? Was
+          machst du, wenn du bastelst? Benutzt du Schere und Kleber? Beschreib dein
+          Lieblingskunstprojekt. Antworte im Präsens und beschreibe die Handlungen und
+          die Dinge.
+        message: >-
+          Hallo Mori! Ich möchte Smalltalk machen. Kannst du mir Fragen über Kunst und
+          Handwerk stellen und dabei die Fähigkeiten „Beschreibende Sätze" und
+          „Handlungen im Präsens" benutzen? Bitte korrigiere meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte frag mich mehr!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Zusätzliche Übungen
+      - id: mori-projekt
+        type: aiTutorPrompt
+        title: Rate das Projekt
+        intro: >-
+          Schick diese Nachricht an Mori. Gib Mori dann Hinweise mit Handlungen im
+          Präsens und Beschreibungen, zum Beispiel: „Ich schneide buntes Papier aus. Ich
+          klebe die Stücke mit Klebstoff zusammen. Es ist eine Dekoration." Wenn Mori
+          geraten hat, schick: **Jetzt bist du dran! Denk an ein Kunst- oder
+          Bastelprojekt, dann rate ich, was es ist.**
+        message: Hallo Mori! Lass uns ein Spiel spielen. Ich denke an ein Kunst- oder Bastelprojekt, und du musst raten, was es ist.
+      - id: mori-was
+        type: aiTutorPrompt
+        title: Was mache ich?
+        intro: >-
+          Schick diese Nachricht an Mori. Schreib dann einen Satz wie: „Ich schneide das
+          Papier vorsichtig mit der Schere.", „Ich male Bilder mit leuchtenden Farben."
+          oder „Ich falte das Papier, um Formen zu machen." Mori rät, zum Beispiel:
+          „Schneidest du Papier?" Wenn Mori richtig geraten hat, schick: **Jetzt bist du
+          dran! Beschreib etwas, was du beim Basteln machst, und ich rate, was es ist.**
+        message: >-
+          Hallo Mori! Lass uns ein Spiel spielen. Ich beschreibe etwas, was ich beim
+          Basteln normalerweise mache. Du musst raten, was ich mache. Ich benutze das
+          Präsens und beschreibende Sätze.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: kunst-und-handwerk-uebung
+    book: workbook
+    title: 'Übung: Kunst und Handwerk'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fähigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-beschreiben
+        type: activity
+        activity: kunst-und-handwerk-beschreiben
+      - id: ex-praesens
+        type: activity
+        activity: kunst-und-handwerk-praesens
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: kunst-und-handwerk-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für Kunst und Handwerk
+        glossLang: he
+        link: https://quizlet.com/1114260099/%D7%99%D7%A6%D7%99%D7%A8%D7%94-%D7%95%D7%9E%D7%9C%D7%90%D7%9B%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &kunst-und-handwerk-words
+          - { term: malen, gloss: לצייר }
+          - { term: zeichnen, gloss: לצייר (בעיפרון) / לשרטט }
+          - { term: bauen, gloss: לבנות }
+          - { term: reparieren, gloss: לתקן }
+          - { term: tanzen, gloss: לרקוד }
+          - { term: arbeiten, gloss: לעבוד }
+          - { term: spielen, gloss: לשחק }
+          - { term: sitzen, gloss: לשבת }
+          - { term: trinken, gloss: לשתות }
+          - { term: das Bild, gloss: תמונה }
+          - { term: die Kunst, gloss: אומנות }
+          - { term: der Künstler, gloss: אמן }
+          - { term: der Pinsel, gloss: מכחול }
+          - { term: die Kamera, gloss: מצלמה }
+          - { term: die Gitarre, gloss: גיטרה }
+          - { term: die Linie, gloss: קו }
+          - { term: das Quadrat, gloss: ריבוע }
+          - { term: der Kreis, gloss: עיגול }
+          - { term: das Dreieck, gloss: משולש }
+          - { term: oben, gloss: למעלה }
+          - { term: unten, gloss: למטה }
+          - { term: links, gloss: שמאל }
+          - { term: rechts, gloss: ימין }
+          - { term: schön, gloss: יפה }
+          - { term: bunt, gloss: צבעוני }
+          - { term: groß, gloss: גדול }
+          - { term: klein, gloss: קטן }
+          - { term: hell, gloss: בהיר }
+          - { term: dunkel, gloss: כהה }
+          - { term: modern, gloss: מודרני }
+          - { term: alt, gloss: ישן }
+          - { term: interessant, gloss: מעניין }
+          - { term: sein, gloss: להיות }
+          - { term: ist, gloss: 'צורת sein ליחיד (Das Bild ist schön = התמונה יפה)' }
+          - { term: sind, gloss: 'צורת sein לרבים (Die Bilder sind schön = התמונות יפות)' }
+          - { term: nicht, gloss: לא }
+
+vocabulary:
+  - slug: kunst-und-handwerk
+    title: Kunst und Handwerk
+    items: *kunst-und-handwerk-words
+
+activities:
+  - slug: kunst-und-handwerk-beschreiben
+    title: 'Beschreibende Sätze: ist, sind und nicht'
+    minutes: 8
+    items:
+      - id: bilder-sind
+        type: multipleChoice
+        prompt: Die Bilder ___ interessant.
+        options:
+          - { text: sind, correct: true }
+          - { text: ist, feedback: '*Die Bilder* ist Plural: Man sagt *sind*.' }
+          - { text: bin, feedback: '*bin* passt nur zu *ich*. *Die Bilder* ist Plural: *sind*.' }
+      - id: katze-ist
+        type: multipleChoice
+        prompt: Die Katze ___ schwarz.
+        options:
+          - { text: ist, correct: true }
+          - { text: sind, feedback: '*Die Katze* ist Einzahl: Man sagt *ist*.' }
+          - { text: hat, feedback: 'Zum Beschreiben benutzt man *sein*: *Die Katze ist schwarz.*' }
+      - id: nicht-wo
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Sie ist nicht müde., correct: true }
+          - {
+              text: Sie nicht ist müde.,
+              feedback: '*nicht* steht nach *ist*: *Sie ist nicht müde.*',
+            }
+          - {
+              text: Sie ist müde nicht.,
+              feedback: '*nicht* steht nach *ist*, vor dem Adjektiv: *Sie ist nicht müde.*',
+            }
+      - id: ist-sind
+        type: fillBlank
+        prompt: Ergänze mit *ist* oder *sind*.
+        text: Das Bild ___ dunkel. Die Farben ___ hell.
+        blanks: [[ist], [sind]]
+        wordBank: [ist, sind]
+      - id: nicht
+        type: fillBlank
+        prompt: 'Sag „nein": Ergänze den Satz.'
+        text: Der Himmel ist ___ blau.
+        blanks: [[nicht]]
+      - id: beschreiben-tun
+        type: trueFalse
+        prompt: '*Die Katze ist schwarz.* ist ein beschreibender Satz: Er sagt, wie die Katze ist.'
+        answer: true
+        feedback:
+          correct: Richtig! Der Satz sagt nicht, was die Katze macht, sondern wie sie ist.
+          incorrect: 'Der Satz beschreibt die Katze (*ist* + Adjektiv). Er sagt nicht, was sie macht.'
+      - id: adjektive
+        type: matching
+        prompt: Verbinde jedes Adjektiv mit der Übersetzung.
+        pairs:
+          - [schön, יפה]
+          - [dunkel, כהה]
+          - [hell, בהיר]
+          - [groß, גדול]
+          - [alt, ישן]
+      - id: ordne-bilder
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Die Bilder sind nicht modern.
+
+  - slug: kunst-und-handwerk-praesens
+    title: 'Handlungen im Präsens: ich male, du malst, er malt'
+    minutes: 8
+    items:
+      - id: er-malt
+        type: multipleChoice
+        prompt: Er ___ ein Bild.
+        options:
+          - { text: malt, correct: true }
+          - {
+              text: male,
+              feedback: '*male* passt zu *ich*. Mit *er* endet das Verb auf *-t*: *er malt*.',
+            }
+          - {
+              text: malen,
+              feedback: '*malen* passt zu *wir* oder *sie* (Plural). Mit *er* sagt man *malt*.',
+            }
+      - id: du-tanzt
+        type: multipleChoice
+        prompt: Du ___ sehr gut.
+        options:
+          - { text: tanzt, correct: true }
+          - { text: tanze, feedback: '*tanze* passt zu *ich*. Mit *du* sagt man *tanzt*.' }
+          - {
+              text: tanzen,
+              feedback: '*tanzen* passt zu *wir* oder *sie* (Plural). Mit *du* sagt man *tanzt*.',
+            }
+      - id: richtiger-satz
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Ich esse Pizza zu Hause., correct: true }
+          - {
+              text: Ich bin esse Pizza zu Hause.,
+              feedback: 'Im Präsens brauchst du nur ein Verb, ohne *bin*: *Ich esse Pizza zu Hause.*',
+            }
+          - {
+              text: Ich essen Pizza zu Hause.,
+              feedback: 'Mit *ich* endet das Verb auf *-e*: *Ich esse Pizza zu Hause.*',
+            }
+      - id: endungen
+        type: matching
+        prompt: Verbinde die Person mit der richtigen Form von *malen*.
+        pairs:
+          - [ich, male]
+          - [du, malst]
+          - [er / sie / es, malt]
+          - [wir, malen]
+      - id: bilder-verben
+        type: fillBlank
+        prompt: Ergänze das Verb in der richtigen Form.
+        text: Ein Mann ___ (trinken) Kaffee. Die Männer ___ (spielen) Karten.
+        blanks: [[trinkt], [spielen]]
+      - id: bauen-zeichnen
+        type: fillBlank
+        prompt: Ergänze das Verb in der richtigen Form.
+        text: Du ___ (bauen) ein Haus. Wir ___ (zeichnen) einen Kreis.
+        blanks: [[baust], [zeichnen]]
+      - id: er-t
+        type: trueFalse
+        prompt: 'Mit *er / sie / es* endet das Verb auf *-t*: *Er malt. Sie tanzt.*'
+        answer: true
+        feedback:
+          correct: Richtig! *er malt, sie tanzt, es spielt*.
+          incorrect: 'Mit *er / sie / es* endet das Verb auf *-t*: *Er malt.*'
+      - id: ordne-kaffee
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Ein Mann trinkt Kaffee.
