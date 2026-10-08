@@ -1,0 +1,490 @@
+# Cycle "Familia", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: familia
+title: Familia
+goal: Hablar de tu familia con posesivos, fechas y números.
+position: 2
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Posesivos" and "Fechas y números") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The introduction frame "yo [Pasar/no pasar] mucho tiempo" is written as
+    "Paso / No paso mucho tiempo con mi familia".
+  - >-
+    The repeated lines in the Mori message "¡Viaje familiar!" were removed (the
+    first four lines appeared twice).
+  - >-
+    Vocabulary: the row "Su (es) – זה" was left out (it is not a translation of
+    "su"); "Viajar" is translated as "לנסוע / לטייל"; "Suegro" as "חם"; "Primo" as
+    "בן דוד". Please confirm.
+  - >-
+    The family tree worksheet (Activity 2) is an Adobe Acrobat link, which is not on
+    the link allow-list. Until it moves into the course's own media, the teacher
+    shares it on screen (see the teacher note).
+  - Activity times given as ranges (15–20 minutes) are recorded as 20 minutes.
+  - >-
+    The "Respuesta del estudiante 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: familia-clase
+    title: 'Clase: Familia'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Familia
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Posesivos
+            description: '*mi, tu, su, nuestro, vuestro* y sus plurales'
+          - name: Fechas y números
+            description: Los números del uno al diez y las fechas (el 9 de febrero)
+      - id: quizlet
+        type: externalLink
+        label: Familia en Quizlet
+        url: https://quizlet.com/il/919800327/basic-spanish-family-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Paso / No paso mucho tiempo con mi familia.
+        example: Soy Dana. No paso mucho tiempo con mi familia.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Nombra a los miembros de tu familia y sus nombres.
+            frame: |-
+              Mi padre / madre. Su nombre es ___.
+              Mi hermano / hermana. Su nombre es ___.
+              Mis primos. Se llaman ___.
+          - question: ¿Qué te gusta hacer con tu familia?
+            frame: Me gusta ___ con mi ___.
+          - question: ¿Con quién hablas mucho en tu familia? ¿Por qué?
+            frame: Hablo mucho con mi ___, porque ___.
+          - question: ¿Cuándo y dónde te reúnes con tu familia?
+            frame: Me reúno con mi familia en ___ los ___.
+          - question: Nombra 3 cosas que te gustan de alguien de tu familia.
+            frame: Me gusta que mi ___ es ___, ___ y ___.
+          - question: ¿Con quién vives?
+            frame: Vivo solo / sola. / Vivo con mi ___, ___ y ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: ¡Antes y después!'
+        skills: [Fechas y números, Posesivos]
+        minutes: 20
+        steps:
+          - Escucha el ejemplo de tu profesor.
+          - Di el cumpleaños de alguien de tu familia. Usa el posesivo correcto.
+          - El siguiente estudiante dice si su fecha es **antes** o **después**, y dice la fecha.
+        example: |-
+          *Mi madre se llama Dvora. Su cumpleaños es el 9 de febrero.*
+          *¡El cumpleaños de mi hermana es después! Su cumpleaños es el 26 de marzo.*
+          *¡El cumpleaños de mi hermano es antes! Su cumpleaños es el 13 de marzo.*
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Mi árbol genealógico'
+        skills: [Posesivos]
+        minutes: 20
+        steps:
+          - Abre el árbol genealógico que comparte tu profesor.
+          - Completa el árbol y las oraciones de abajo (10 minutos). Usa *mi, tu, su*.
+          - Comparte tu árbol genealógico con el grupo.
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Completa las oraciones
+        items:
+          - question: ¡Este soy yo! Mi nombre es ___. Tengo ___ años.
+          - question: Este es mi ___. Su nombre es ___. Él / Ella tiene ___ años.
+          - question: Este es mi ___. Su nombre es ___. Él / Ella tiene ___ años.
+          - question: Estos son mis ___. Sus nombres son ___. Tienen ___ años.
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: ¡Planificamos un viaje familiar!'
+        skills: [Fechas y números]
+        minutes: 20
+        steps:
+          - Completa el plan del viaje de abajo (10 minutos).
+          - Comparte tu cronograma con el grupo.
+        example: |-
+          **Destino:** París, Francia
+          **Viajeros:** Yo, mi mamá, mi papá y mi hermano.
+          El **cinco de julio**, tomamos el avión a **París**.
+          El **seis de julio**, **visitamos la Torre Eiffel y almorzamos en un café francés**.
+          El **siete de julio**, **visitamos el Museo del Louvre y hacemos un recorrido en barco por el río Sena**.
+          El **ocho de julio**, volvemos a casa :)
+      - id: act3-plan
+        type: discussionQuestions
+        title: Viaje familiar
+        items:
+          - question: 'Destino: ___'
+          - question: 'Viajeros: Yo, mi ___, mi ___ y mi ___'
+          - question: El ___ viajamos en avión / autobús / auto a ___.
+          - question: El ___ nosotros ___.
+          - question: El ___ nosotros ___.
+          - question: El ___ volvemos a casa :)
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Lo que más te gusta de…'
+        skills: [Posesivos]
+        minutes: 20
+        steps:
+          - Trabajen en parejas.
+          - Entrevista a tu pareja con las preguntas de abajo (10 minutos).
+          - Cada pareja comparte con el grupo 1–2 cosas bonitas sobre la familia de su pareja.
+        example: '*Tom dice que lo que más le gusta de su papá es su cocina. ¡Lo que más le gusta a su papá de Tom son sus dibujos!*'
+      - id: act4-questions
+        type: discussionQuestions
+        items:
+          - question: ¿Qué es lo que más te gusta de tu padre / madre / hermano / hermana, y por qué?
+            frame: Lo que más me gusta de él / ella es su ___. / … es que ___.
+          - question: ¿Qué es lo que más te gusta de tu mejor amigo / amiga?
+            frame: Lo que más me gusta de él / ella es su ___. / … es que ___.
+          - question: ¿Qué es lo que más le gusta a tu padre / madre de ti?
+            frame: Lo que más le gusta de mí es mi ___. / … es que ___.
+          - question: ¿Qué es lo que más te gusta de ti mismo / misma?
+            frame: Lo que más me gusta de mí es mi ___. / … es que ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Posesivos** (Actividades 2 y 4) y **Fechas y
+          números** (Actividades 1 y 3). Combinaciones recomendadas: Actividades 2 y 3, o
+          Actividades 1 y 4.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Modela la oración primero: «Mi madre se llama Dvora. Su cumpleaños es el 9 de
+          febrero.» Cada estudiante debe decir la fecha y el posesivo correcto.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Comparte en pantalla el árbol genealógico (el enlace de Acrobat está en el
+          cuaderno anterior; todavía no está en la plataforma). La mitad del grupo
+          comparte su árbol; la otra mitad comparte en la Actividad 3.
+      - id: n-act3
+        anchor: act3
+        text: La mitad del grupo que no compartió en la Actividad 2 comparte su cronograma de viaje.
+      - id: n-act4
+        anchor: act4
+        text: Las parejas tienen 10 minutos para preguntar y responder; después cada pareja comparte con el grupo.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: familia-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-possessives
+        type: ruleSummary
+        skill: Posesivos
+        rules:
+          - text: 'En español, el posesivo va **antes** de la cosa: **mi** mamá (en hebreo: אמא **שלי**).'
+          - text: 'El posesivo cambia según la **cosa** que viene después (masculino o femenino, singular o plural), no según quién la tiene.'
+            examples:
+              - Mi hermano · Mis hermanos
+              - Nuestro padre · Nuestra madre
+              - Nuestros hijos · Nuestras hijas
+          - text: Elige la palabra de la tabla.
+      - id: possessives-table
+        type: table
+        caption: Los posesivos
+        header: [Posesivo, Ejemplo]
+        rows:
+          - [Mi / Mis, Mi hermano se llama Carlos. Mis padres viven en Bogotá.]
+          - [Tu / Tus, 'Tu hermana, María, es muy amable. Tus abuelos viven en México.']
+          - [
+              Su / Sus (de él),
+              Sam cocina muy bien. Su padre es un gran cocinero. Sus hermanos son muy cariñosos.,
+            ]
+          - [Su / Sus (de ella), Me encanta ir a casa de Hanna. Su madre hace la mejor lasaña.]
+          - [Su / Sus (de ellos / ellas), Juan y Susana viven en Argentina. Su casa es grande.]
+          - [Su / Sus (de ustedes), Ustedes visitan a sus tíos todos los años.]
+          - [
+              Nuestro / Nuestra / Nuestros / Nuestras,
+              Nuestro padre es médico. Nuestra madre cocina muy bien.,
+            ]
+          - [
+              Vuestro / Vuestra / Vuestros / Vuestras,
+              Vuestro abuelo vive en España. Vuestras tías vienen a la fiesta.,
+            ]
+      - id: rules-dates
+        type: ruleSummary
+        skill: Números y fechas
+        rules:
+          - text: Se escribe primero el día y después el mes.
+            examples: [4 de julio de 2024]
+          - text: Aprende bien los números del uno al diez; los demás se forman con ellos.
+            examples:
+              [
+                'uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez',
+                'once, doce, trece… dieciséis, diecisiete',
+              ]
+          - text: Usa **el** antes del día y **en** antes de los meses y los años.
+            examples: [Nací **el** cinco de marzo., Nací **en** marzo de 1998.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: familia-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-familia
+        type: aiTutorPrompt
+        title: Hablar de tu familia
+        message: >-
+          ¡Hola Mori! Quiero hablar de mi familia. ¿Podrías hacerme preguntas sobre mi
+          familia usando las habilidades de Posesivos y Fechas y Números? Usa solo el
+          presente simple y, por favor, corrige mis errores.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Práctica adicional
+      - id: mori-viaje
+        type: aiTutorPrompt
+        title: ¡Viaje familiar!
+        intro: Completa los espacios y envía el mensaje a Mori.
+        message: |-
+          ¡Hola Mori! Estoy planeando un viaje familiar y quiero compartirlo contigo:
+          Mi familia y yo viajamos a ___ el ___ (fecha).
+          El ___ (fecha), nosotros ___ (actividad).
+          El ___ (fecha), ___ (actividad).
+          El ___ (fecha), ___ (actividad).
+          ¡El ___ (fecha) volvemos a casa!
+          Por favor, hazme preguntas sobre mi viaje.
+      - id: mori-rutina
+        type: aiTutorPrompt
+        title: Rutina familiar
+        intro: Completa los espacios y envía el mensaje a Mori.
+        message: |-
+          ¡Hola Mori! Esta es la rutina de mi familia:
+          Los lunes, mi madre ___.
+          Los martes, mi padre ___.
+          Los miércoles, mi hermano ___.
+          Los jueves, yo ___.
+          Los viernes, mi hermana ___.
+          Los sábados, nosotros ___.
+          Los domingos, ___.
+          Por favor, hazme preguntas sobre mi rutina familiar.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: familia-practica
+    book: workbook
+    title: 'Práctica: Familia'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-posesivos
+        type: activity
+        activity: familia-posesivos
+      - id: ex-fechas
+        type: activity
+        activity: familia-fechas
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: familia-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la familia
+        glossLang: he
+        link: https://quizlet.com/il/919800327/basic-spanish-family-flash-cards/
+        items: &familia-words
+          - { term: Uno, gloss: אחד }
+          - { term: Dos, gloss: שתיים }
+          - { term: Tres, gloss: שלוש }
+          - { term: Cuatro, gloss: ארבע }
+          - { term: Cinco, gloss: חמש }
+          - { term: Seis, gloss: שש }
+          - { term: Siete, gloss: שבע }
+          - { term: Ocho, gloss: שמונה }
+          - { term: Nueve, gloss: תשע }
+          - { term: Diez, gloss: עשר }
+          - { term: Familia, gloss: משפחה }
+          - { term: Padre, gloss: אבא }
+          - { term: Madre, gloss: אמא }
+          - { term: Hermano, gloss: אח }
+          - { term: Hermana, gloss: אחות }
+          - { term: Primo, gloss: בן דוד }
+          - { term: Favorito, gloss: אהוב }
+          - { term: Día festivo, gloss: חג }
+          - { term: Celebrar, gloss: לחגוג }
+          - { term: Fecha, gloss: תאריך }
+          - { term: Mes, gloss: חודש }
+          - { term: Comer, gloss: לאכול }
+          - { term: Viajar, gloss: לנסוע / לטייל }
+          - { term: Avión, gloss: מטוס }
+          - { term: Autobús, gloss: אוטובוס }
+          - { term: Destino, gloss: יעד }
+          - { term: Cronograma, gloss: לוח זמנים }
+          - { term: Visita, gloss: ביקור }
+          - { term: Museo, gloss: מוזיאון }
+          - { term: Viaje, gloss: נסיעה }
+          - { term: Hogar, gloss: בית }
+          - { term: Persona, gloss: אדם }
+          - { term: Yo, gloss: אני }
+          - { term: Su (de él / de ella), gloss: שלו / שלה }
+          - { term: Cuñado, gloss: גיס }
+          - { term: Cuñada, gloss: גיסה }
+          - { term: Suegro, gloss: חם }
+          - { term: Suegra, gloss: חמות }
+          - { term: Sobrino, gloss: אחיין }
+
+vocabulary:
+  - slug: familia
+    title: Familia
+    items: *familia-words
+
+activities:
+  - slug: familia-posesivos
+    title: 'Posesivos: mi, tu, su, nuestro'
+    minutes: 8
+    items:
+      - id: mis-padres
+        type: multipleChoice
+        prompt: ___ padres viven en Bogotá.
+        options:
+          - { text: Mis, correct: true }
+          - { text: Mi, feedback: '*Padres* es plural: usa *mis*.' }
+          - { text: Nuestra, feedback: '*Nuestra* es para una cosa femenina y singular.' }
+      - id: su-padre
+        type: multipleChoice
+        prompt: Sam cocina muy bien. ___ padre es un gran cocinero.
+        options:
+          - { text: Su, correct: true }
+          - { text: Sus, feedback: '*Padre* es singular: usa *su*.' }
+          - { text: Mi, feedback: 'Hablamos del padre de Sam (de él): usa *su*.' }
+      - id: nuestra-madre
+        type: multipleChoice
+        prompt: ___ madre cocina muy bien.
+        options:
+          - { text: Nuestra, correct: true }
+          - { text: Nuestro, feedback: '*Madre* es femenino: usa *nuestra*.' }
+          - { text: Nuestros, feedback: '*Madre* es singular: usa *nuestra*.' }
+      - id: cambia-cosa
+        type: trueFalse
+        prompt: 'En español, el posesivo cambia según la cosa que viene después: *mi hermano*, *mis hermanos*.'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *Mis* porque *hermanos* es plural.
+          incorrect: El posesivo cambia según la cosa (singular o plural), no según quién la tiene.
+      - id: completa-posesivos
+        type: fillBlank
+        prompt: Completa con *mi*, *mis* o *sus*.
+        text: Este es ___ hermano. Estos son ___ primos. Juan y Susana visitan a ___ tíos.
+        blanks: [[mi], [mis], [sus]]
+        wordBank: [mi, mis, sus]
+      - id: une-posesivos
+        type: matching
+        prompt: Une cada persona con su posesivo (una cosa en singular).
+        pairs:
+          - [yo, mi]
+          - [tú, tu]
+          - [él / ella, su]
+          - [nosotros, nuestro / nuestra]
+          - [vosotros, vuestro / vuestra]
+      - id: ordena-hermana
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Mi hermana se llama María.
+
+  - slug: familia-fechas
+    title: Fechas y números
+    minutes: 8
+    items:
+      - id: naci-el
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: Nací el cinco de marzo., correct: true }
+          - {
+              text: Nací en cinco de marzo.,
+              feedback: 'Usa *el* antes del día y *en* antes del mes o del año.',
+            }
+          - {
+              text: Nací el marzo cinco.,
+              feedback: 'Primero el día, después el mes: *el cinco de marzo*.',
+            }
+      - id: el-en
+        type: fillBlank
+        prompt: Completa con *el* o *en*.
+        text: Mi cumpleaños es ___ 4 de julio. Nací ___ 1998.
+        blanks: [[el], [en]]
+      - id: numeros
+        type: matching
+        prompt: Une los números.
+        pairs:
+          - ['3', tres]
+          - ['5', cinco]
+          - ['7', siete]
+          - ['9', nueve]
+          - ['10', diez]
+      - id: dia-primero
+        type: trueFalse
+        prompt: 'En español se escribe primero el día y después el mes: *4 de julio de 2024*.'
+        answer: true
+      - id: ordena-viaje
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Viajamos a París el cinco de julio.
+      - id: seis
+        type: fillBlank
+        prompt: Escribe el número en palabras.
+        text: 'Mi hermano tiene 6 años: tiene ___ años.'
+        blanks: [[seis]]
+      - id: mi-cumple
+        type: shortAnswer
+        prompt: ¿Cuándo es tu cumpleaños? Escribe una oración.

@@ -1,0 +1,555 @@
+# Cycle "Travel & Future Plans", converted from the Conversational English
+# digital notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-conversational-2
+slug: travel-and-future-plans
+title: Travel & Future Plans
+goal: Talk about travel plans with "be going to" and make predictions and quick decisions with "will".
+position: 19
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Be going to: plans" and "Will: predictions and
+    decisions") are NEW: the notebook has no self-study exercises. They were written
+    from the cycle's summary table, the future time clauses table, the activity
+    examples and the vocabulary. Please check level, wording and every right answer
+    before students see them.
+  - >-
+    The source lists four "skills practised": be going to, will, future time clauses
+    and speaking fluency. The cycle overview keeps the two main skills (be going to
+    and will); future time clauses stay as the optional class part from the source
+    and are in the summary and in the "will" exercise.
+  - >-
+    The grammar summary and the homework appear twice in the source (the second copy
+    is slightly different and is cut off at "First / The…"). Each is kept once. The
+    summary table now also lists "offers" under will, because the Activity 3 agent
+    lines are offers (I'll send you the details). Please confirm.
+  - >-
+    Homework item 3 ("Write your Travel Timeline using First / Then / After that /
+    Finally") is not a Mori message in the source. It is now a Mori message with the
+    timeline frame from Activity 4, so the student sends the timeline to Mori for
+    correction. Message 2 merges the two versions ("ask 1 follow-up question" / "ask
+    one more question").
+  - >-
+    Corrections: "What places will you visit in your dream trip?" → "on your dream
+    trip"; "What will your dream trip be?" → "What will your dream trip be like?";
+    "groups of 3-4" → "3–4"; Quick pair activity numbering fixed (the export
+    numbered every warm-up question "1.").
+  - >-
+    Vocabulary: capital letters removed from the middle of terms ("Local Cuisine" →
+    "Local cuisine", "To Explore" → "To explore", etc.). Glosses changed: "Landmarks"
+    נקודות ציון → "אתרים מפורסמים / ציוני דרך" (נקודות ציון means reference points);
+    "To pack light" → "לארוז מעט דברים". "Destination" / "Travel destination" and
+    "Accommodation" / "Accommodation options" are near-duplicates; both kept, as in
+    the source. Please confirm.
+  - >-
+    Times given as ranges are recorded as the upper value (12–15 → 15, 8–10 → 10,
+    3–6 → 6). The Quizlet link is kept without its share parameters (?i=…&x=…); the
+    Quizlet set is called "Traveling abroad". The "Student 1/2/3" answer lines are
+    replaced by the platform's answer boxes. The empty "Date / Participants" lines
+    were left out.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: travel-and-future-plans-class
+    title: 'Class: Travel & Future Plans'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Travel & Future Plans
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Be going to (plans)
+            description: "*I'm going to travel to Italy. We're going to stay in a hotel.*"
+          - name: Will (predictions and decisions)
+            description: "*I think I'll love it. It will be amazing! I'll send you the details.*"
+      - id: quizlet
+        type: externalLink
+        label: Travel and future plans on Quizlet
+        url: https://quizlet.com/br/1106261920/conversational-english-traveling-abroad-updated-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I'm going to travel to ___ and I'm going to ___.
+        example: I am Dana. I'm going to travel to Greece and I'm going to swim in the sea.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup-going-to-title
+        type: heading
+        level: 4
+        text: 'Be going to: plans'
+      - id: warmup-going-to
+        type: discussionQuestions
+        items:
+          - question: Where are you going to travel on your next vacation?
+            frame: I'm going to travel to Italy.
+          - question: Who are you going to travel with?
+            frame: I'm going to travel with my sister.
+          - question: What are you going to do on that trip?
+            frame: I'm going to visit museums and try local food.
+          - question: Where are you going to stay? (hotel / Airbnb / hostel / camping)
+            frame: I'm going to stay in a hotel near the center.
+          - question: What transportation are you going to use? (plane / train / bus / car…)
+            frame: I'm going to fly and then take a train.
+          - question: What souvenirs are you going to buy?
+            frame: I'm going to buy postcards and magnets.
+      - id: report-going-to
+        type: sentenceFrame
+        prompt: Report in the 3rd person.
+        frame: My partner is going to travel to ___. They are going to stay in ___ and they are going to ___.
+      - id: warmup-will-title
+        type: heading
+        level: 4
+        text: 'Will: predictions and dream trips'
+      - id: warmup-will
+        type: discussionQuestions
+        items:
+          - question: What places will you visit on your dream trip?
+            frame: I will visit Japan one day.
+          - question: What activities will you do there?
+            frame: I will try traditional food and explore the city.
+          - question: What will you pack in your suitcase?
+            frame: I will pack comfortable clothes and a camera.
+          - question: What will the hotel be like?
+            frame: It will be near the beach and have a pool.
+          - question: What transportation will people use in 20 years?
+            frame: We will travel in electric planes.
+          - question: What will your dream trip be like?
+            frame: It will be a trip to Japan and I will visit temples.
+      - id: report-will
+        type: sentenceFrame
+        prompt: Report in the 3rd person.
+        frame: My partner will visit ___. They will try ___ and the trip will be ___.
+      - id: clauses-title
+        type: heading
+        level: 3
+        text: 'Optional: future time clauses'
+      - id: clauses-rule
+        type: callout
+        tone: info
+        title: when / after / before
+        text: |-
+          We use **when / after / before** to talk about moments in the future.
+          **Important:** after *when / after / before*, use the **present simple**, not *will*.
+          *When I **arrive**, I'm going to take a taxi.*
+          *After I **check in**, I will go to the beach.*
+          *Before I **leave**, I'm going to pack my suitcase.*
+      - id: clauses-pairs
+        type: discussionQuestions
+        title: 'Quick pair activity: complete and say out loud'
+        items:
+          - question: When I arrive, I'm going to ___.
+          - question: After I check in, I will ___.
+          - question: Before I travel, I'm going to ___.
+      - id: clauses-report
+        type: sentenceFrame
+        prompt: "Optional: report your partner's answer."
+        frame: My partner said that when they arrive, they are going to ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: "Activity 1: Group trip planning (We're going to…)"
+        skills: [Be going to (plans)]
+        minutes: 15
+        steps:
+          - Form groups of 3–4.
+          - Invent a **shared trip**. Each student adds at least **one action**.
+          - Use the questions below.
+          - Present your trip to the class in the **we** form.
+        example: |-
+          *We're going to travel to Spain.*
+          *We're going to stay in Barcelona.*
+          *We're going to try tapas and visit museums.*
+          *We're going to buy souvenirs for our families.*
+      - id: act1-questions
+        type: discussionQuestions
+        title: Our trip
+        items:
+          - question: Where are we going to go?
+          - question: How are we going to travel?
+          - question: Where are we going to stay?
+          - question: What are we going to eat?
+          - question: What places are we going to visit?
+          - question: What are we going to buy?
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: Dream trip (I will…)'
+        skills: [Will (predictions and decisions)]
+        minutes: 15
+        steps:
+          - Write **3 sentences with *will*** (below).
+          - 'Pair up and ask follow-up questions: *What will you do first? Who will you travel with? What food will you try? What will the weather be like?*'
+          - Report your partner's dream trip in the 3rd person.
+        example: '*My partner will visit Japan and will try traditional ramen.*'
+      - id: act2-sentences
+        type: discussionQuestions
+        title: My dream trip
+        items:
+          - question: One day, I will visit ___.
+          - question: I will try ___.
+          - question: I think the trip will be ___.
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Travel agency role-play'
+        skills: [Be going to (plans), Will (predictions and decisions)]
+        minutes: 15
+        steps:
+          - "Student A is the **traveler** and talks about plans with *be going to*: *I'm going to travel to… I'm going to stay in… I'm going to visit… I'm going to eat…*"
+          - "Student B is the **travel agent** and answers with *will* (advice, predictions, offers): *That will be amazing! I think you'll love the food. I'll recommend a hotel. You'll need comfortable shoes! I'll send you the details.*"
+          - Switch roles.
+          - Report to the class.
+        example: '*My partner is going to travel to Greece and the agent said they will enjoy the beaches.*'
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Travel timeline'
+        skills: [Be going to (plans), Will (predictions and decisions)]
+        minutes: 10
+        steps:
+          - Write a **4-step itinerary** with *first, then, after that, finally*.
+          - Use *going to* for plans and *will* for a prediction.
+          - Share in pairs or as a quick presentation.
+      - id: act4-timeline
+        type: discussionQuestions
+        title: My itinerary
+        items:
+          - question: First, I'm going to ___.
+          - question: Then, I'm going to ___.
+          - question: After that, I will ___. (prediction)
+            frame: After that, I will probably be tired. / I will love the view.
+          - question: Finally, I'm going to ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **be going to** for plans (first warm-up set, Activity 1)
+          and **will** for predictions, promises, offers and quick decisions (second
+          warm-up set, Activity 2). Activities 3 and 4 contrast the two forms. Choose
+          **2 activities**. The future time clauses part is optional (6 minutes).
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: Give your own example first, then go around the group.
+      - id: n-warmup
+        anchor: warmup-title
+        text: >-
+          Ask each student at least two questions from each set, then ask some students to
+          report a partner's answers in the 3rd person. Answers typed here are visible to
+          you below each question.
+      - id: n-clauses
+        anchor: clauses-title
+        minutes: 6
+        text: Check that students use the present simple after *when / after / before* (*When I arrive*, not *When I will arrive*).
+      - id: n-act1
+        anchor: act1
+        text: 'Focus on plans already decided (*going to*). Optional class vote at the end: best trip, most relaxing, most adventurous.'
+      - id: n-act3
+        anchor: act3
+        text: The focus is meaning contrast. Plans → *be going to*; advice, predictions and offers → *will*.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: travel-and-future-plans-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: future-table
+        type: table
+        caption: be going to or will?
+        header: [Form, Meaning, Example]
+        rows:
+          - [be going to, Plans / decisions already made, I'm going to fly to Rome.]
+          - [
+              will,
+              'Predictions / promises / offers / decisions in the moment',
+              I think I'll love it there.,
+            ]
+      - id: rules-going-to
+        type: ruleSummary
+        skill: Be going to (plans)
+        rules:
+          - text: '**am / is / are + going to + base verb** for plans you already decided.'
+            examples:
+              - I'm going to travel next month.
+              - She's going to stay in a hotel near the center.
+              - We're going to try tapas and visit museums.
+          - text: 'Questions: **(question word) + am / is / are + subject + going to + base verb?**'
+            examples: [Where are you going to stay?, Who are you going to travel with?]
+      - id: rules-will
+        type: ruleSummary
+        skill: Will (predictions and decisions)
+        rules:
+          - text: "**will ('ll) + base verb** for predictions, promises, offers and decisions you make now."
+            examples:
+              - I think you'll love the food. (prediction)
+              - People will travel in electric planes. (prediction)
+              - I'll send you the details. (offer / decision now)
+          - text: 'After *will*, the verb has no *to* and no *-s*: *It will be amazing.* (not *It will to be* / *It will is*)'
+      - id: clauses-table
+        type: table
+        caption: 'Future time clauses: when / after / before + present simple'
+        header: [Time word, Form, Example]
+        rows:
+          - [When, when + present → will / going to, "When I arrive, I'm going to take a taxi."]
+          - [After, after + present → will / going to, 'After I check in, I will go to the beach.']
+          - [
+              Before,
+              before + present → will / going to,
+              "Before I leave, I'm going to pack my suitcase.",
+            ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 3
+        text: Go through the table with the group and ask for one new example for each form.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: travel-and-future-plans-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy a message and send it. Mori will ask you questions; answer every one.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Message 1: Travel plans'
+        message: Mori, I'm going to tell you 5 travel plans. Ask me questions and correct me.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Message 2: Dream trip'
+        message: Mori, I will describe my dream trip. Correct me and ask me one follow-up question.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Message 3: Travel timeline'
+        intro: Fill in the blanks, then send the message to Mori.
+        message: |-
+          Mori, this is my travel timeline. Please correct my sentences with "going to" and "will".
+          First, I'm going to ___.
+          Then, I'm going to ___.
+          After that, I will ___.
+          Finally, I'm going to ___.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: travel-and-future-plans-practice
+    book: workbook
+    title: 'Practice: Travel & Future Plans'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked right away, and you can try again.
+      - id: ex-going-to
+        type: activity
+        activity: travel-and-future-plans-going-to
+      - id: ex-will
+        type: activity
+        activity: travel-and-future-plans-will
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: travel-and-future-plans-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Travel words
+        glossLang: he
+        link: https://quizlet.com/br/1106261920/conversational-english-traveling-abroad-updated-flash-cards/
+        items: &travel-and-future-plans-words
+          - { term: Destination, gloss: יעד }
+          - { term: Itinerary, gloss: מסלול טיול }
+          - { term: Accommodation, gloss: מקום לינה }
+          - { term: Reservation, gloss: הזמנה (למלון / טיסה) }
+          - { term: Budget, gloss: תקציב }
+          - { term: Souvenirs, gloss: מזכרות }
+          - { term: Local cuisine, gloss: מטבח מקומי }
+          - { term: Landmarks, gloss: אתרים מפורסמים / ציוני דרך }
+          - { term: Scenery, gloss: נוף }
+          - { term: Cultural experience, gloss: חוויה תרבותית }
+          - { term: Adventure, gloss: הרפתקה }
+          - { term: Excursion, gloss: טיול קצר / סיור }
+          - { term: Guided tour, gloss: סיור מודרך }
+          - { term: Backpack, gloss: תיק גב }
+          - { term: Backpacking, gloss: טיול תרמילאים }
+          - { term: Carry-on luggage, gloss: תיק יד למטוס }
+          - { term: Passport control, gloss: ביקורת דרכונים }
+          - { term: Boarding pass, gloss: כרטיס עלייה למטוס }
+          - { term: Travel insurance, gloss: ביטוח נסיעות }
+          - { term: Travel destination, gloss: יעד נסיעה }
+          - { term: Accommodation options, gloss: אפשרויות לינה }
+          - { term: Sightseeing, gloss: סיור באתרי תיירות }
+          - { term: To explore, gloss: לחקור / לגלות }
+          - { term: To recommend, gloss: להמליץ }
+          - { term: To plan ahead, gloss: לתכנן מראש }
+          - { term: To book in advance, gloss: להזמין מראש }
+          - { term: To try new things, gloss: לנסות דברים חדשים }
+          - { term: To predict, gloss: לחזות / לנבא }
+          - { term: To pack light, gloss: לארוז מעט דברים }
+          - { term: To get lost, gloss: ללכת לאיבוד }
+          - { term: To explore new cultures, gloss: לחקור תרבויות חדשות }
+          - { term: To make a reservation, gloss: לעשות הזמנה }
+
+vocabulary:
+  - slug: travel-and-future-plans
+    title: Travel & Future Plans
+    items: *travel-and-future-plans-words
+
+activities:
+  - slug: travel-and-future-plans-going-to
+    title: "Be going to: I'm going to travel…"
+    minutes: 8
+    items:
+      - id: going-to-stay
+        type: multipleChoice
+        prompt: We already booked the hotel. We ___ in Barcelona.
+        options:
+          - { text: are going to stay, correct: true }
+          - {
+              text: are going to stayed,
+              feedback: 'After *going to* we use the base verb: *going to stay*.',
+            }
+          - {
+              text: going to stay,
+              feedback: 'We need *am / is / are* before *going to*: *We are going to stay.*',
+            }
+      - id: she-is-going
+        type: fillBlank
+        prompt: Complete with the right form of *be going to*.
+        text: My sister ___ visit museums in Rome.
+        blanks: [['is going to', "'s going to"]]
+      - id: i-am-going
+        type: fillBlank
+        prompt: Complete with *be going to* and the verb *buy*.
+        text: I ___ postcards and magnets.
+        blanks: [['am going to buy', "'m going to buy"]]
+      - id: questions-match
+        type: matching
+        prompt: Match each question with its answer.
+        pairs:
+          - [Where are you going to travel?, I'm going to travel to Italy.]
+          - [Who are you going to travel with?, I'm going to travel with my sister.]
+          - [Where are you going to stay?, In a hotel near the center.]
+          - [What transportation are you going to use?, I'm going to fly and then take a train.]
+          - [What souvenirs are you going to buy?, Postcards and magnets.]
+      - id: plan-tf
+        type: trueFalse
+        prompt: "We use *be going to* for plans we already decided: *I'm going to fly to Rome next month.*"
+        answer: true
+        feedback:
+          correct: Right! The plan is already made, so we use *be going to*.
+          incorrect: "*Be going to* is for plans and decisions already made: *I'm going to fly to Rome.*"
+      - id: question-form
+        type: multipleChoice
+        prompt: Which question is correct?
+        options:
+          - { text: Where are you going to stay?, correct: true }
+          - {
+              text: Where you are going to stay?,
+              feedback: 'In a question, *are* comes before *you*: *Where are you going to stay?*',
+            }
+          - {
+              text: Where are you going to staying?,
+              feedback: 'After *going to* we use the base verb: *stay*, not *staying*.',
+            }
+      - id: they-report
+        type: fillBlank
+        prompt: "Report your partner's plan with *be going to*. Your partner says: *I'm going to travel to Greece.*"
+        text: My partner ___ to travel to Greece.
+        blanks: [[is going, "'s going"]]
+      - id: order-spain
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: We are going to travel to Spain.
+
+  - slug: travel-and-future-plans-will
+    title: "Will: I think you'll love it"
+    minutes: 8
+    items:
+      - id: prediction
+        type: multipleChoice
+        prompt: Which sentence is a prediction?
+        options:
+          - { text: I think you'll love the food., correct: true }
+          - {
+              text: I'm going to fly to Rome next month.,
+              feedback: 'This is a plan already made (*going to*). A prediction often uses *I think + will*.',
+            }
+          - {
+              text: We're going to stay in Barcelona.,
+              feedback: 'This is a plan (*going to*). A prediction often uses *I think + will*.',
+            }
+      - id: will-be
+        type: multipleChoice
+        prompt: That ___ amazing!
+        options:
+          - { text: will be, correct: true }
+          - { text: will is, feedback: 'After *will* we use the base verb: *will be*.' }
+          - { text: will to be, feedback: 'After *will* there is no *to*: *will be*.' }
+      - id: offer-send
+        type: fillBlank
+        prompt: 'The travel agent decides now to help you. Complete with *will* and *send*.'
+        text: I ___ you the details.
+        blanks: [["'ll send", will send]]
+      - id: when-arrive
+        type: multipleChoice
+        prompt: When I ___, I'm going to take a taxi.
+        options:
+          - { text: arrive, correct: true }
+          - {
+              text: will arrive,
+              feedback: 'After *when / after / before* we use the present simple, not *will*: *When I arrive…*',
+            }
+          - {
+              text: am going to arrive,
+              feedback: 'After *when / after / before* we use the present simple: *When I arrive…*',
+            }
+      - id: after-check-in
+        type: trueFalse
+        prompt: '*After I will check in, I will go to the beach.* is correct.'
+        answer: false
+        feedback:
+          correct: 'Right! After *after* we use the present simple: *After I check in, I will go to the beach.*'
+          incorrect: 'After *when / after / before* we use the present simple: *After I check in, I will go to the beach.*'
+      - id: before-leave
+        type: fillBlank
+        prompt: Complete with the verb *leave*.
+        text: Before I ___, I'm going to pack my suitcase.
+        blanks: [[leave]]
+      - id: meaning-match
+        type: matching
+        prompt: Match each sentence with its meaning.
+        pairs:
+          - [I think I'll love it there., a prediction]
+          - [I'll send you the details., an offer]
+          - [I'm going to fly to Rome., a plan already made]
+          - [I promise I'll call you every day., a promise]
+      - id: order-food
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: I think you will love the food.

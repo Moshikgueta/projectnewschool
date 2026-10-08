@@ -1,0 +1,635 @@
+# Cycle "Sustentabilidad", converted from the Spanish level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-2
+slug: sustentabilidad
+title: Sustentabilidad
+goal: Hablar del medio ambiente con planes futuros y comparaciones.
+position: 17
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Planes futuros" and "Comparaciones") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and every
+    right answer before students see them.
+  - >-
+    Summary, future: the source calls "ir a + infinitivo" the "futuro simple". In
+    Spanish, "voy a + infinitivo" is the futuro perifrástico (near future, plans); the
+    futuro simple is the conjugated form (tendrá, será, habrá). The headings are
+    renamed. The ending list "-é, -ás, -á, -emos, -án" was missing the vosotros ending
+    -éis; it is added, with a NEW table (reciclar, ser, tener, haber). A rule was added
+    that "haber" has only one future form for "there will be": habrá (habrá menos
+    coches).
+  - >-
+    Summary, superlatives: "el/la/los/las + más/menos + adjetivo" leaves out the noun.
+    It is rewritten as "el / la / los / las + (sustantivo) + más / menos + adjetivo",
+    matching the examples (el país más avanzado). A short rule was added for the
+    irregular forms "mejor / peor" (bueno / malo), because Activity 2 asks which
+    product is "el mejor para el planeta". Please confirm.
+  - >-
+    Corrections: Activity 3 "¿Qué usas más: bicicleta o coche? Por que?" → "… ¿Por
+    qué?"; stray "ð" / "ð¹" characters removed in Activity 4 and 5; "A2 Bajo / A2
+    Avanzado" warm-up headings are written "Nivel básico / Nivel avanzado"; intro
+    frame "Mi nombre es ___. Reciclo / reciclo a veces / nunca reciclo." kept with
+    "A veces reciclo" as an option too.
+  - >-
+    Activity 5 reading texts: the facts are kept as in the source but please check
+    them before class (Chile's 2050 renewable goal; "cientos de autobuses eléctricos"
+    in Bogotá, which now has more than a thousand; the Sembrando Vida programme). The
+    "Cuadro de trabajo" is turned into answer boxes.
+  - >-
+    Activity 1 Etapa 1 uses quick images of pollution, recycling and renewable energy,
+    and Activity 4 a world map; the source gives no links, so the teacher brings them
+    (teacher notes).
+  - >-
+    Mori homework: the source gives five "Comando a Mori" instructions, not messages to
+    send. A message to Mori was written for each. The "Verdadero o falso" game is read
+    as Mori writing 4 sentences and the student guessing (as in the source's "Ejemplo
+    de Mori"). The "Entrega" line (send answers by document / e-mail) is kept as a
+    note.
+  - >-
+    Vocabulary: "Solar" "שמשי" → "סולארי"; "Eólica" "רוח (אנרגיה רוח)" → "של רוח
+    (אנרגיית רוח)"; "Aire" "אויר" → "אוויר"; "Tan… como" "כמו… כמו" → "באותה מידה …
+    כמו"; "Habrá" "יהיה" → "יהיה / יהיו"; "Bicicleta" "אופנים" → "אופניים" (spelling). The Quizlet link is kept without its
+    funnelUUID parameter.
+  - >-
+    Times: Activity 2 = 5 + 10 + 5 = 20 minutes; Activity 3 = 5 + 5 + 10 = 20 minutes;
+    Activity 5 "20–25 minutos" → 25. The "Respuesta de alumno 1/2/3" lines are
+    replaced by the answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: sustentabilidad-clase
+    title: 'Clase: Sustentabilidad'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Sustentabilidad
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Planes futuros
+            description: '*Voy a reciclar más* (ir a + infinitivo) · *Habrá menos coches* (futuro simple)'
+          - name: Comparaciones
+            description: '*más / menos … que, tan … como, el / la más*'
+      - id: quizlet
+        type: externalLink
+        label: Sustentabilidad en Quizlet
+        url: https://quizlet.com/il/1070716091/espanol-conversacional-sustenabilidad-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Mi nombre es ___. Reciclo. / A veces reciclo. / Nunca reciclo.
+        example: Mi nombre es Marta. Nunca reciclo.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de preparación
+      - id: warmup-basico
+        type: discussionQuestions
+        title: Nivel básico
+        items:
+          - question: ¿Qué usas para llevar tus compras del supermercado y por qué?
+            frame: Uso ___ porque ___.
+          - question: ¿Cómo llevas el agua cuando sales de casa (botella de plástico, vaso, termo…)?
+            frame: Llevo el agua en ___.
+          - question: ¿Qué haces en casa para gastar menos electricidad?
+            frame: Para gastar menos electricidad, ___.
+          - question: ¿Qué tipo de basura reciclas más y cómo lo haces?
+            frame: Reciclo más ___. ___.
+          - question: ¿Cómo prefieres moverte en tu ciudad y por qué?
+            frame: Prefiero ir en ___ porque ___.
+          - question: ¿Qué haces con las botellas o latas cuando están vacías?
+            frame: Cuando están vacías, ___.
+      - id: warmup-avanzado
+        type: discussionQuestions
+        title: Nivel avanzado
+        items:
+          - question: ¿Cómo puedes usar menos agua en tu rutina diaria?
+          - question: ¿Qué haces para mantener tu casa o tu barrio más limpio?
+          - question: ¿Qué productos compras que son mejores para el medio ambiente y por qué?
+          - question: ¿Qué haces con la ropa que ya no usas y por qué?
+          - question: En el futuro, ¿qué cambios quieres hacer en tu vida para contaminar menos?
+            frame: En el futuro voy a ___.
+          - question: ¿Qué transporte usas más en tu vida diaria y qué ventajas tiene para ti?
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: ¿Cómo vamos a salvar el planeta?'
+        skills: [Planes futuros]
+        steps:
+          - 'Mira las imágenes de tu profesor y responde: ¿Qué vamos a hacer si queremos salvar el planeta?'
+          - 'En grupos pequeños, diseñen una mini campaña ecológica con un **eslogan corto**, **3 frases en futuro** y **una frase de advertencia**.'
+          - Cada grupo presenta su campaña en 1 minuto.
+          - La clase vota cuál campaña es la más creativa / realista.
+        example: |-
+          *¡Reciclar es futuro!*
+          *Vamos a reciclar más. Vamos a usar menos plástico. No vamos a tirar basura.*
+          *Si no lo hacemos, el planeta va a sufrir.*
+      - id: act1-campaign
+        type: discussionQuestions
+        title: Nuestra campaña
+        items:
+          - question: 'Eslogan: ¡___!'
+          - question: Vamos a ___.
+          - question: Vamos a ___.
+          - question: No vamos a ___.
+          - question: Si no lo hacemos, ___ va a ___.
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: El mercado ecológico (juego de roles)'
+        skills: [Comparaciones]
+        minutes: 20
+        steps:
+          - 'La clase es un **mercado**. Cada grupo recibe un «producto»: bolsa de tela o bolsa de plástico, comida local o comida importada, bicicleta o coche.'
+          - Preparación (5 minutos). Cada grupo prepara por qué SU producto es **el mejor para el planeta**.
+          - 'Juego de roles: comprador y vendedor (10 minutos). Los compradores hacen preguntas; los vendedores responden con comparaciones.'
+          - Votación (5 minutos). ¿Qué producto fue el **más convincente**?
+        example: '*Nuestra bolsa es más ecológica que la tuya.*'
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Entrevista ecológica (parejas, rotativa)'
+        skills: [Planes futuros, Comparaciones]
+        minutes: 20
+        steps:
+          - Primera ronda (5 minutos). Recibes una tarjeta con 3 preguntas y entrevistas a tu compañero.
+          - Cambio de pareja (5 minutos). Nueva entrevista con nuevas preguntas.
+          - Última ronda (10 minutos). Presenta a tu compañero al grupo.
+        example: '*Mi compañero recicla más plástico que papel. En el futuro va a usar bicicleta.*'
+      - id: act3-questions
+        type: discussionQuestions
+        title: Preguntas de las tarjetas
+        items:
+          - question: ¿Qué haces en tu casa para usar menos agua?
+          - question: ¿Qué vas a hacer mañana para cuidar el planeta?
+            frame: Mañana voy a ___.
+          - question: ¿Qué usas más, la bicicleta o el coche? ¿Por qué?
+            frame: Uso más ___ que ___ porque ___.
+          - question: ¿Qué prefieres, ropa nueva o ropa usada?
+          - question: ¿Qué producto en tu casa contamina más?
+            frame: ___ es el producto que más contamina.
+          - question: ¿Qué reciclas más, plástico o papel?
+            frame: Reciclo más ___ que ___.
+          - question: En el futuro, ¿qué quieres cambiar en tu vida para ayudar al planeta?
+            frame: En el futuro voy a ___.
+          - question: ¿Quién en tu familia recicla más?
+            frame: Mi ___ recicla más que ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Mapa verde (comparaciones de lugares)'
+        skills: [Comparaciones]
+        steps:
+          - Mira el mapa del mundo que comparte tu profesor.
+          - Habla de dos países o ciudades que conoces y compáralos.
+          - 'Variación: «mapa de la clase». Cada estudiante dice una comparación sobre su país o ciudad.'
+        example: |-
+          *Barcelona es más limpia que Buenos Aires.*
+          *Tel Aviv es tan moderna como Madrid.*
+      - id: act5
+        type: classActivity
+        title: 'Actividad 5: ¿Qué país es más ecológico?'
+        skills: [Planes futuros, Comparaciones]
+        minutes: 25
+        steps:
+          - 'Tres grupos: Grupo 1 → **Chile** (energía solar), Grupo 2 → **Colombia** (transporte eléctrico), Grupo 3 → **México** (reforestación).'
+          - Lean el texto de su país (abajo) y respondan a las preguntas guía (12 minutos). Cada persona dice algo.
+          - Preparen **2 comparaciones** y **2 frases en futuro** sobre su país.
+          - Cada grupo presenta sus frases a la clase (10 minutos).
+          - 'Debate final (5 minutos): ¿Qué país será el más ecológico en el futuro y por qué? Voten y justifiquen.'
+        example: |-
+          *México tendrá más bosques en 2050.*
+          *Chile tiene más energía solar que Colombia.*
+      - id: text-chile
+        type: callout
+        tone: culture
+        title: 'Texto 1 – Chile: energía solar en el desierto de Atacama'
+        text: >-
+          En Chile, en el desierto de Atacama, hay grandes proyectos de **energía
+          solar**. El sol en esta zona es muy fuerte y las plantas solares producen mucha
+          electricidad limpia. Chile ya es uno de los países con más energía solar en
+          América Latina. En el futuro, **Chile tendrá más electricidad renovable que
+          muchos países vecinos**. El gobierno dice que para 2050 **la mayoría de la
+          energía será solar o eólica**.
+      - id: questions-chile
+        type: discussionQuestions
+        title: Grupo 1 – Chile
+        items:
+          - question: ¿Por qué Chile tiene tanta energía solar?
+          - question: ¿Qué va a pasar en el futuro con la electricidad en Chile?
+          - question: ¿Qué país conoces que usa menos energía solar que Chile?
+      - id: text-colombia
+        type: callout
+        tone: culture
+        title: 'Texto 2 – Colombia: transporte eléctrico en Bogotá'
+        text: >-
+          Bogotá tiene un proyecto para cambiar sus autobuses por **buses eléctricos**.
+          La ciudad quiere reducir la contaminación del aire y mejorar la salud de la
+          gente. Ahora hay cientos de autobuses eléctricos en uso. En el futuro, **Bogotá
+          será una de las ciudades con más transporte eléctrico en América Latina**. Las
+          calles estarán más limpias y **habrá menos ruido y humo**.
+      - id: questions-colombia
+        type: discussionQuestions
+        title: Grupo 2 – Colombia
+        items:
+          - question: ¿Por qué Bogotá quiere buses eléctricos?
+          - question: ¿Cómo será Bogotá en el futuro con más transporte eléctrico?
+          - question: ¿Qué ciudad conoces que tiene menos transporte limpio que Bogotá?
+      - id: text-mexico
+        type: callout
+        tone: culture
+        title: 'Texto 3 – México: reforestación en el sur del país'
+        text: >-
+          En México hay un programa grande de **reforestación** llamado *Sembrando
+          Vida*. El proyecto paga a los agricultores para plantar árboles en zonas
+          rurales. Millones de árboles nuevos ya están creciendo. En el futuro, **México
+          tendrá más bosques que hoy y la tierra será más fértil**. Este proyecto también
+          ayudará a las comunidades porque **habrá más trabajo en el campo**.
+      - id: questions-mexico
+        type: discussionQuestions
+        title: Grupo 3 – México
+        items:
+          - question: ¿Por qué México está plantando tantos árboles?
+          - question: ¿Qué va a pasar en el futuro si continúan los proyectos de reforestación?
+          - question: ¿Qué país tiene menos bosques que México?
+      - id: act5-worksheet
+        type: discussionQuestions
+        title: Cuadro de trabajo
+        items:
+          - question: 'Comparación 1: ___ tiene más / menos ___ que ___.'
+          - question: 'Comparación 2: ___ es tan ___ como ___.'
+          - question: 'Chile en el futuro: ___'
+          - question: 'Colombia en el futuro: ___'
+          - question: 'México en el futuro: ___'
+          - question: ¿Qué país será el más ecológico en el futuro y por qué?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Planes futuros** (ir a + infinitivo y futuro
+          simple: Actividades 1, 3 y 5) y **Comparaciones** (más / menos … que, tan …
+          como, el / la más: Actividades 2, 3, 4 y 5). Hay preguntas de preparación de
+          nivel básico y de nivel avanzado: elige según el grupo.
+      - id: n-intro
+        anchor: intro
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup-basico
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Etapa 1 (contexto): muestra imágenes rápidas de contaminación, reciclaje y
+          energías renovables (el cuaderno no tiene enlace; prepáralas tú) y pregunta
+          «¿Qué vamos a hacer si queremos salvar el planeta?».
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Reparte un producto a cada grupo (bolsa de tela / de plástico, comida local /
+          importada, bicicleta / coche). Dirige la votación final.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Reparte las 8 preguntas en tarjetas de 3 preguntas (por ejemplo, en el chat de
+          cada sala). Cambia las parejas después de 5 minutos.
+      - id: n-act4
+        anchor: act4
+        text: Proyecta o reparte un mapa del mundo (el cuaderno no tiene enlace).
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Formato: 3 grupos en salas (breakout rooms). División (2 min), trabajo en salas
+          (10–12 min), presentación (8–10 min), debate final (5 min). Cada grupo lee solo
+          el texto de su país.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: sustentabilidad-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-futuro
+        type: ruleSummary
+        skill: Planes futuros
+        rules:
+          - text: '**Ir a + infinitivo**: para planes e intenciones. Sujeto + *ir* (conjugado) + *a* + verbo en infinitivo.'
+            examples:
+              [
+                Voy a reciclar más botellas.,
+                Vamos a plantar árboles.,
+                Ellos van a usar bicicleta en el futuro.,
+              ]
+          - text: '**Futuro simple**: infinitivo + **-é, -ás, -á, -emos, -éis, -án**. Para predicciones, proyectos a largo plazo y promesas.'
+            examples: [México tendrá más bosques en 2050., Colombia será más limpia en el futuro.]
+          - text: '*Haber* en futuro es **habrá**, para una cosa o para muchas.'
+            examples: [Habrá menos contaminación en las ciudades., Habrá menos coches.]
+      - id: table-futuro
+        type: table
+        caption: El futuro
+        header: [Persona, ir a + infinitivo, reciclar, ser, tener]
+        rows:
+          - [yo, voy a reciclar, reciclaré, seré, tendré]
+          - [tú, vas a reciclar, reciclarás, serás, tendrás]
+          - [él / ella / usted, va a reciclar, reciclará, será, tendrá]
+          - [nosotros / nosotras, vamos a reciclar, reciclaremos, seremos, tendremos]
+          - [vosotros / vosotras, vais a reciclar, reciclaréis, seréis, tendréis]
+          - [ellos / ellas / ustedes, van a reciclar, reciclarán, serán, tendrán]
+      - id: rules-comparaciones
+        type: ruleSummary
+        skill: Comparaciones
+        rules:
+          - text: '**más … que**'
+            examples: [La bicicleta es más ecológica que el coche.]
+          - text: '**menos … que**'
+            examples: [La bolsa de tela es menos contaminante que la bolsa de plástico.]
+          - text: '**tan … como**'
+            examples: [Mi ciudad es tan ruidosa como la tuya.]
+          - text: '**Superlativo**: el / la / los / las + (sustantivo) + más / menos + adjetivo.'
+            examples:
+              - Chile es el país más avanzado en energía solar.
+              - El coche es el medio de transporte menos ecológico.
+          - text: '*Bueno* → **mejor**, *malo* → **peor** (no decimos *más bueno*).'
+            examples:
+              [
+                La bicicleta es mejor que el coche para el planeta.,
+                Nuestro producto es el mejor para el planeta.,
+              ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: sustentabilidad-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: >-
+          Practica el futuro y las comparaciones. Abre el chat con Mori, copia un mensaje
+          y envíalo. Responde a todas las preguntas de Mori.
+      - id: mori-planes
+        type: aiTutorPrompt
+        title: 1. Planes futuros (ir a + infinitivo)
+        intro: 'Escribe 3 frases con *voy a* sobre tu vida para cuidar el planeta. Ejemplo: *Voy a usar menos plástico. Voy a reciclar papel. Voy a caminar más y usar menos el coche.*'
+        message: >-
+          ¡Hola Mori! Quiero practicar ir a + infinitivo. Te escribo 3 frases con «voy a»
+          sobre lo que voy a hacer para cuidar el planeta. Corrige mis errores y hazme
+          preguntas, por favor. Mis frases son: ___
+      - id: mori-predicciones
+        type: aiTutorPrompt
+        title: 2. Predicciones (futuro simple)
+        intro: 'Haz 3 predicciones sobre el planeta en 2050. Ejemplo: *Habrá menos coches. La energía solar será más barata. El aire será más limpio.*'
+        message: >-
+          ¡Hola Mori! Quiero practicar el futuro simple. Te escribo 3 predicciones sobre
+          el planeta en 2050. Corrige mis errores, por favor. Mis predicciones son: ___
+      - id: mori-comparaciones
+        type: aiTutorPrompt
+        title: 3. Comparaciones
+        intro: 'Haz 3 comparaciones sobre productos o hábitos: una con **más … que**, una con **menos … que** y una con **tan … como**. Ejemplo: *La bicicleta es más ecológica que el coche. Una bolsa de tela es menos contaminante que una de plástico. Mi ciudad es tan grande como la tuya.*'
+        message: >-
+          ¡Hola Mori! Quiero practicar comparaciones. Te escribo 3 comparaciones sobre
+          productos o hábitos (más … que, menos … que, tan … como). Corrige mis errores,
+          por favor. Mis frases son: ___
+      - id: mori-superlativos
+        type: aiTutorPrompt
+        title: 4. Superlativos
+        intro: 'Escribe 2 frases con *el / la más* sobre el medio ambiente. Ejemplo: *Chile es el país más avanzado en energía solar. El plástico es el material más contaminante.*'
+        message: >-
+          ¡Hola Mori! Quiero practicar superlativos. Te escribo 2 frases con «el / la más»
+          sobre el medio ambiente. Corrige mis errores, por favor. Mis frases son: ___
+      - id: mori-verdadero-falso
+        type: aiTutorPrompt
+        title: 5. Juego «Verdadero o falso»
+        intro: 'Ejemplo de Mori: *Voy a reciclar mañana. Voy a comprar un coche eléctrico. Mi hermano recicla más que yo. El agua es menos importante que el plástico.*'
+        message: >-
+          ¡Hola Mori! Vamos a jugar a «Verdadero o falso». Escribe 4 frases sobre ti (2 en
+          futuro y 2 con comparaciones). Una debe ser mentira. Yo voy a adivinar cuál es.
+      - id: delivery
+        type: callout
+        tone: info
+        title: Entrega
+        text: Escribe tus respuestas en un documento o en un correo y compártelas con tu profesor o con la clase en la próxima sesión.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: sustentabilidad-practica
+    book: workbook
+    title: 'Práctica: Sustentabilidad'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-futuro
+        type: activity
+        activity: sustentabilidad-futuro
+      - id: ex-comparaciones
+        type: activity
+        activity: sustentabilidad-comparaciones
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: sustentabilidad-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la sustentabilidad
+        glossLang: he
+        link: https://quizlet.com/il/1070716091/espanol-conversacional-sustenabilidad-flash-cards/
+        items: &sustentabilidad-words
+          - { term: Planeta, gloss: כוכב לכת / פלנטה }
+          - { term: Tierra, gloss: ארץ / כדור הארץ }
+          - { term: Futuro, gloss: עתיד }
+          - { term: Energía, gloss: אנרגיה }
+          - { term: Solar, gloss: סולארי }
+          - { term: Eólica, gloss: של רוח (אנרגיית רוח) }
+          - { term: Electricidad, gloss: חשמל }
+          - { term: Contaminación, gloss: זיהום }
+          - { term: Aire, gloss: אוויר }
+          - { term: Agua, gloss: מים }
+          - { term: Basura, gloss: אשפה }
+          - { term: Plástico, gloss: פלסטיק }
+          - { term: Papel, gloss: נייר }
+          - { term: Vidrio, gloss: זכוכית }
+          - { term: Reciclaje, gloss: מחזור }
+          - { term: Bolsa, gloss: שקית / תיק }
+          - { term: Botella, gloss: בקבוק }
+          - { term: Coche, gloss: מכונית }
+          - { term: Bicicleta, gloss: אופניים }
+          - { term: Transporte, gloss: תחבורה }
+          - { term: Autobús, gloss: אוטובוס }
+          - { term: Eléctrico, gloss: חשמלי }
+          - { term: Bosque, gloss: יער }
+          - { term: Árbol, gloss: עץ }
+          - { term: Reforestación, gloss: ייעור מחדש }
+          - { term: Campaña, gloss: קמפיין / מבצע }
+          - { term: Comunidad, gloss: קהילה }
+          - { term: Ciudad, gloss: עיר }
+          - { term: Limpio, gloss: נקי }
+          - { term: Sucio, gloss: מלוכלך }
+          - { term: Ecológico, gloss: אקולוגי / ידידותי לסביבה }
+          - { term: Verde, gloss: ירוק }
+          - { term: Más … que, gloss: יותר … מ־ }
+          - { term: Menos … que, gloss: פחות … מ־ }
+          - { term: Tan … como, gloss: באותה מידה … כמו }
+          - { term: El / la más, gloss: הכי / ביותר }
+          - { term: Voy a, gloss: אני עומד ל… / אני הולך ל… }
+          - { term: Habrá, gloss: יהיה / יהיו }
+
+vocabulary:
+  - slug: sustentabilidad
+    title: Sustentabilidad
+    items: *sustentabilidad-words
+
+activities:
+  - slug: sustentabilidad-futuro
+    title: 'Planes futuros: voy a reciclar, habrá'
+    minutes: 8
+    items:
+      - id: voy-a-reciclar
+        type: multipleChoice
+        prompt: Mañana (yo) ___ reciclar más botellas.
+        options:
+          - { text: voy a, correct: true }
+          - { text: voy, feedback: 'Falta *a*: *ir a + infinitivo* (*voy a reciclar*).' }
+          - {
+              text: vamos a,
+              feedback: '*Vamos a* es para *nosotros*. Para *yo*: *voy a reciclar*.',
+            }
+      - id: van-a
+        type: fillBlank
+        prompt: Completa con el verbo *ir*.
+        text: Ellos ___ a usar bicicleta en el futuro. Nosotros ___ a plantar árboles.
+        blanks: [[van], [vamos]]
+      - id: ir-a-planes
+        type: trueFalse
+        prompt: 'Usamos *ir a + infinitivo* para planes e intenciones: *Vamos a plantar árboles.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *Ir a + infinitivo* es para planes.
+          incorrect: '*Ir a + infinitivo* sí es para planes e intenciones: *Voy a reciclar más botellas.*'
+      - id: une-futuro
+        type: matching
+        prompt: Une cada verbo con su futuro simple (él / ella).
+        pairs:
+          - [tener, tendrá]
+          - [ser, será]
+          - [haber, habrá]
+          - [usar, usará]
+          - [plantar, plantará]
+      - id: habra
+        type: fillBlank
+        prompt: Escribe *haber* en futuro simple.
+        text: En 2050 ___ menos coches y ___ menos contaminación.
+        blanks: [[habrá], [habrá]]
+      - id: sera-barata
+        type: multipleChoice
+        prompt: La energía solar ___ más barata en el futuro.
+        options:
+          - { text: será, correct: true }
+          - { text: serán, feedback: '*La energía* es singular: *será*.' }
+          - { text: va ser, feedback: 'Falta *a*: *va a ser*. O en futuro simple: *será*.' }
+      - id: plantaremos
+        type: fillBlank
+        prompt: Escribe *plantar* en futuro simple.
+        text: En el futuro, nosotros ___ más árboles.
+        blanks: [[plantaremos]]
+      - id: ordena-plastico
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: No vamos a usar plástico.
+
+  - slug: sustentabilidad-comparaciones
+    title: 'Comparaciones: más ecológico, el más contaminante'
+    minutes: 8
+    items:
+      - id: mas-ecologica
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: La bicicleta es más ecológica que el coche., correct: true }
+          - {
+              text: La bicicleta es más ecológica como el coche.,
+              feedback: 'Con *más* usamos *que*: *más ecológica que*.',
+            }
+          - {
+              text: La bicicleta es más ecológico que el coche.,
+              feedback: '*Bicicleta* es femenino: *ecológica*.',
+            }
+      - id: menos-contaminante
+        type: fillBlank
+        prompt: Completa con *menos … que*.
+        text: La bolsa de tela es ___ contaminante ___ la bolsa de plástico.
+        blanks: [[menos], [que]]
+      - id: tan-ruidosa
+        type: fillBlank
+        prompt: Completa la comparación.
+        text: Mi ciudad es tan ruidosa ___ la tuya.
+        blanks: [[como]]
+      - id: tan-limpia
+        type: multipleChoice
+        prompt: Barcelona es ___ limpia como Buenos Aires.
+        options:
+          - { text: tan, correct: true }
+          - {
+              text: más,
+              feedback: 'Con *como* usamos *tan*: *tan limpia como*. Con *más* usamos *que*.',
+            }
+          - {
+              text: menos,
+              feedback: 'Con *como* usamos *tan*: *tan limpia como*. Con *menos* usamos *que*.',
+            }
+      - id: el-menos
+        type: multipleChoice
+        prompt: El coche es ___ medio de transporte menos ecológico.
+        options:
+          - { text: el, correct: true }
+          - { text: la, feedback: '*Medio* es masculino: *el medio de transporte*.' }
+          - {
+              text: más,
+              feedback: 'El superlativo empieza con *el / la*: *el medio de transporte menos ecológico*.',
+            }
+      - id: mas-bueno
+        type: trueFalse
+        prompt: '*La bicicleta es más buena que el coche para el planeta* es la mejor forma.'
+        answer: false
+        feedback:
+          correct: '¡Correcto! Decimos *mejor*: *La bicicleta es mejor que el coche.*'
+          incorrect: '*Bueno* tiene una forma especial: *mejor*. *La bicicleta es mejor que el coche.*'
+      - id: une-estructuras
+        type: matching
+        prompt: Une cada estructura con su significado.
+        pairs:
+          - [más … que, יותר … מ־]
+          - [menos … que, פחות … מ־]
+          - [tan … como, באותה מידה … כמו]
+          - [el / la más, הכי / ביותר]
+      - id: ordena-material
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: El plástico es el material más contaminante.

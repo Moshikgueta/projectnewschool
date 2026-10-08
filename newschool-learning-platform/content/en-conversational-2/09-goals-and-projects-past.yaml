@@ -1,0 +1,580 @@
+# Cycle "Goals and projects: past", converted from the Conversational English
+# level 2 digital notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see
+# `review` below. Blocks without `lang` are in the course language (English).
+course: en-conversational-2
+slug: goals-and-projects-past
+title: 'Goals and projects: past'
+goal: Talk about past goals and achievements with the past simple and past time expressions.
+position: 9
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Past simple" and "Time expressions") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's summary
+    rules, the activity examples and the vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary: the source lists two skills but the summary covers only the past simple
+    ("The skill we learned is: Past simple"). A short rule block for skill 2 (time
+    expressions) was added from the source's "Key time expressions" list and the
+    sequence words of Activity 4 (first, then, after that, finally). Please confirm.
+  - >-
+    Activity 2 example, fact: "This is the smartphone. It was created in 1973." In
+    1973 Martin Cooper (Motorola) made the first handheld mobile phone; smartphones
+    came in the 1990s–2000s. Changed to "This is the mobile phone. It was created by
+    Martin Cooper in 1973." The last line "It helps me stay connected" → "It helped me
+    stay connected and learn", to match the template. Please confirm.
+  - >-
+    Warm-up question 1 "What have you done, till now, to get closer to your goal?"
+    mixes the present perfect and "till now" with past simple answers ("Till now, I
+    signed up…"). Changed to "What did you do to get closer to your goal?" with the
+    frame "I signed up for classes, I practiced on Quizlet…" ("practiced Quizlet" →
+    "practiced on Quizlet").
+  - >-
+    Homework, Mori message 3 ("I was ___ing when ___ happened") practises the past
+    continuous, and message 2 practises "used to"; neither is taught in this cycle
+    (used to was in the Volunteering cycle). Both are kept as in the source, marked
+    as optional. Please decide whether to keep message 3.
+  - >-
+    The written homework (short answers, writing task, reading) had blank "space for
+    students" lines; each task is now a Mori message with the same questions, and the
+    source's three optional Mori messages follow. The reading text is kept.
+  - >-
+    Vocabulary: capitals fixed ("Support System" → "Support system", "Role Model",
+    "Set a Goal", "Give Up", "Reflection Journal"); "Attempt → לנסות / לנסות לבצע" →
+    "לנסות"; "Reflection Journal → יומן תיעוד התקדמות" kept (it is a progress journal
+    here). Please confirm.
+  - >-
+    Times: Activity 3 "8–12 minutes" → 12; Activity 4 "10–15 minutes" → 15, with its
+    steps 5, 6 (4–6) and 4 (3–4) minutes. Activities 1 and 2 have 10 minutes of
+    research. The source gives no recommended activity combinations: the plan note
+    suggests some. The "Student 1/2/3" lines are replaced by the answer boxes, and the
+    Quizlet link is kept without its "?new" parameter.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: goals-and-projects-past-class
+    title: 'Class: Goals and projects (past)'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: 'Goals and projects: past'
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Past simple
+            description: "*I practiced, I studied, I made a plan. Did you achieve it? I didn't give up.*"
+          - name: Time expressions for the past
+            description: '*yesterday, last week, when I was a child, after, then, finally*'
+      - id: quizlet
+        type: externalLink
+        label: 'Goals and projects (past) on Quizlet'
+        url: https://quizlet.com/br/1106299814/conversational-english-goals-and-projects-past-updated-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        prompt: 'Say 3 short sentences: your name and goal, one thing you already did, and how you feel about your progress.'
+        frame: My name is ___. My goal is to ___. Last week, I ___. I feel ___ because ___.
+        example: My name is Dana. My goal is to speak English at work. Last week, I watched a series in English. I feel happy because I understood a lot.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What did you do to get closer to your goal?
+            frame: I signed up for classes, I practiced on Quizlet, I did my homework and I spoke with my friends in English.
+          - question: What was your last goal? Did you achieve it?
+            frame: My last goal was to ___. I achieved it. / I didn't achieve it.
+          - question: What did you do to complete your last goal?
+            frame: On ___ (day of the week), I ___. I also ___.
+          - question: How did you feel when you achieved your goal?
+            frame: I felt ___ when I achieved my goal.
+          - question: What did you do after you achieved your goal?
+            frame: I ___ after I achieved my goal.
+          - question: Where did you celebrate?
+            frame: We celebrated at ___ with ___. We ate ___. We drank ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: My role model'
+        skills: [Past simple]
+        minutes: 10
+        steps:
+          - Choose a role model (a famous person or someone you know).
+          - 'Research for 10 minutes. Find: the name, the job, and what this person did in the past that makes them inspiring.'
+          - Share with the group.
+        example: '*I chose Greta Thunberg as my role model. She started a global climate movement and spoke at the UN. I believe she is my role model because she showed courage and determination.*'
+      - id: act1-share
+        type: discussionQuestions
+        title: My role model
+        items:
+          - question: I chose ___ as my role model.
+          - question: 'This person did the following things: ___.'
+          - question: I believe they are my role model because ___.
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: What would I do without you?'
+        skills: [Past simple]
+        minutes: 10
+        steps:
+          - Choose one invention that helps you with your goal.
+          - 'Research for 10 minutes. Find: the object, the inventor, the year, how it helped society and how it helped you.'
+          - Share with the group.
+        example: '*This is the mobile phone. It was created by Martin Cooper in 1973. It helped people communicate easily. It helped me stay connected and learn.*'
+      - id: act2-share
+        type: discussionQuestions
+        title: My invention
+        items:
+          - question: This is ___.
+          - question: It was created by ___ in ___.
+          - question: It helped people to ___.
+          - question: It helped me to ___.
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Letter to my goal self'
+        skills: [Past simple]
+        minutes: 12
+        steps:
+          - Write a short letter to your "Future Me" (you, after you achieve your goal).
+          - Write what you already did to help reach that goal.
+          - Keep your sentences short. Use the past simple.
+        example: |-
+          *Dear Future Me,*
+          *I hope you feel proud and confident.*
+          *Your goal was to improve your English.*
+          *Here is what I already did to help you:*
+          *I practiced speaking every week.*
+          *I watched English videos.*
+          *I studied vocabulary on Quizlet.*
+          *I also joined conversation classes.*
+          *I didn't stop learning, even when it was hard.*
+          *I believe in you.*
+          *With love,*
+          *Your Present Self*
+      - id: act3-letter
+        type: discussionQuestions
+        title: Dear Future Me,
+        items:
+          - question: I hope you feel ___.
+          - question: Your goal was to ___.
+          - question: 'Here is what I already did to help you: I ___.'
+          - question: I ___.
+          - question: I ___.
+          - question: I also ___.
+          - question: I didn't ___.
+          - question: 'I believe in you. With love, Your Present Self'
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: My goal timeline'
+        skills: [Time expressions for the past, Past simple]
+        minutes: 15
+        steps:
+          - Choose one goal you achieved in the past (small or big).
+          - Write 4–5 short steps that show how you worked toward it. Use the time expressions below.
+          - Tell your timeline to a partner. Your partner answers with a short, supportive sentence.
+          - Share one sentence about your partner with the group.
+        example: |-
+          *First, I signed up for English classes.*
+          *Then, I practiced with Mori every week.*
+          *After that, I watched Netflix in English.*
+          *Finally, I passed my speaking test.*
+      - id: act4-timeline
+        type: discussionQuestions
+        title: My timeline
+        items:
+          - question: First, I ___.
+          - question: Then, I ___.
+          - question: After that, I ___.
+          - question: Finally, I ___.
+      - id: act4-responses
+        type: callout
+        tone: info
+        title: Short answers for your partner
+        text: |-
+          *Nice!* · *That makes sense.* · *How did you feel at the end?*
+          Share one sentence about your partner: *My partner practiced every week.* / *My partner learned step by step.* / *My partner felt proud at the end.*
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Past simple** (Activities 1, 2 and 3) and **Time
+          expressions for the past** (Activity 4 and the warm-up). The source gives no
+          recommended combinations; a good plan is one of Activities 1–3 plus Activity 4.
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first, then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: Objective - connect personal goals to real people and describe past achievements. Give the Greta Thunberg example as a model first.
+      - id: n-act2
+        anchor: act2
+        text: Objective - identify one invention that supports the student's goal and explain its impact.
+      - id: n-act3
+        anchor: act3
+        text: Skill focus - past simple and reflection. Students write individually, then a few read their letters aloud.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Individual timeline: 5 minutes (write the sentence starters on the board).
+          Pair share: 6 minutes; the partner only gives short, supportive answers, which
+          keeps the flow easy and safe. Whole-group share: 4 minutes, one sentence per
+          student about their partner.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: goals-and-projects-past-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-past
+        type: ruleSummary
+        skill: Past simple
+        rules:
+          - text: 'Use the past simple for actions that **happened and finished** in the past, for stories about things we **did**, and for events at a **specific time**.'
+            examples: [I watched a movie yesterday., She studied last night.]
+          - text: '**Regular verbs:** add **-ed** to the base form.'
+            examples: ['work → worked', 'watch → watched', 'She **worked** on her goal yesterday.']
+          - text: '**Irregular verbs** do not use -ed. They have special past forms that you must learn.'
+            examples:
+              [
+                'go → went',
+                'make → made',
+                'do → did',
+                'He **made** a plan last month.',
+                'They **did** the work yesterday.',
+              ]
+          - text: "**Important:** after *did / didn't*, the verb goes back to the **base form** (no -ed)."
+      - id: questions-table
+        type: table
+        caption: Questions and negatives
+        header: [Structure, Formula, Example]
+        rows:
+          - [Questions, Did + subject + base verb, '*Did you watch the movie?*']
+          - [Negatives, Subject + did not (didn't) + base verb, "*I didn't watch it last weekend.*"]
+      - id: rules-time
+        type: ruleSummary
+        skill: Time expressions for the past
+        rules:
+          - text: 'These words tell us **when** something happened. Use them with the past simple.'
+            examples: ['yesterday', 'last week / last month', 'when I was a child']
+          - text: 'Put the time expression at the start or at the end of the sentence.'
+            examples:
+              ['**Last week**, I practiced every day.', 'I practiced every day **last week**.']
+          - text: 'Use *first, then, after that, finally* to put the steps of a story in order.'
+            examples:
+              [
+                '**First**, I signed up for classes. **Then**, I practiced every week. **After that**, I watched videos in English. **Finally**, I passed my test.',
+              ]
+          - text: 'Use *after* and *when* to connect two actions.'
+            examples:
+              [
+                'I celebrated **after** I achieved my goal.',
+                'I felt proud **when** I achieved my goal.',
+              ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: goals-and-projects-past-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy a message, fill in the blanks and send it. Mori will check your answers.
+      - id: mori-short
+        type: aiTutorPrompt
+        title: '1. Short answers'
+        intro: Answer the three questions in full sentences, in the past simple.
+        message: |-
+          Hi Mori! I answered these questions in the past simple. Please correct my mistakes:
+          1. What did you do last weekend? I ___
+          2. Did you achieve any goals last month? (If yes: what did you do to achieve it? If no: what did you try to do?) ___
+          3. What did you do to learn English last year? I ___
+      - id: mori-writing
+        type: aiTutorPrompt
+        title: '2. My last goal'
+        intro: 'Write 5–7 sentences about your last goal and what you did to reach it. Use the past simple, and add one sentence about how you felt. Example: *My last goal was to improve my English. I studied every day and watched videos in English. I practiced speaking with my friends. I wrote new words in a notebook. I felt proud when I saw my progress.*'
+        message: |-
+          Hi Mori! Here is my paragraph about my last goal. Please correct my past simple and ask me one question about my goal:
+          ___
+      - id: reading-title
+        type: heading
+        level: 3
+        text: '3. Reading'
+      - id: reading
+        type: text
+        text: '*Last summer, I traveled to the mountains. I hiked every day and visited many lakes. I stayed in a small cabin with my friends. We cooked together and sat by the campfire at night. It was a beautiful trip.*'
+      - id: mori-reading
+        type: aiTutorPrompt
+        title: Reading questions
+        intro: Read the text above and answer the questions in the past simple, then send the message.
+        message: |-
+          Hi Mori! I read this text: "Last summer, I traveled to the mountains. I hiked every day and visited many lakes. I stayed in a small cabin with my friends. We cooked together and sat by the campfire at night. It was a beautiful trip."
+          Here are my answers in the past simple. Please check them:
+          1. Where did the person travel? ___
+          2. What did they do there? ___
+          3. Who did they stay with? ___
+          4. What did they do at night? ___
+      - id: chat-title
+        type: heading
+        level: 3
+        text: '4. Mori chat (optional, highly recommended)'
+      - id: chat-how
+        type: text
+        text: Send these messages to Mori one at a time. They help you use the class structures in a real conversation.
+      - id: mori-movie
+        type: aiTutorPrompt
+        title: 'Message 1'
+        message: Mori, ask me about the last movie I watched and correct my past tense.
+      - id: mori-child
+        type: aiTutorPrompt
+        title: 'Message 2'
+        message: Mori, ask me what movies I used to watch as a child. Correct me gently.
+      - id: mori-when
+        type: aiTutorPrompt
+        title: 'Message 3'
+        message: Mori, ask me to make one sentence with "I was ___ing when ___ happened", and correct me.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: goals-and-projects-past-practice
+    book: workbook
+    title: 'Practice: Goals and projects (past)'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked right away, and you can try again.
+      - id: ex-past-simple
+        type: activity
+        activity: goals-and-projects-past-past-simple
+      - id: ex-time
+        type: activity
+        activity: goals-and-projects-past-time-expressions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: goals-and-projects-past-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Goals and projects words
+        glossLang: he
+        link: https://quizlet.com/br/1106299814/conversational-english-goals-and-projects-past-updated-flash-cards/
+        items: &goals-and-projects-past-words
+          - { term: Achievement, gloss: הישג }
+          - { term: Progress, gloss: התקדמות }
+          - { term: Effort, gloss: מאמץ }
+          - { term: Determination, gloss: נחישות }
+          - { term: Motivation, gloss: מוטיבציה }
+          - { term: Support system, gloss: מערכת תמיכה }
+          - { term: Role model, gloss: מודל לחיקוי }
+          - { term: Inspiration, gloss: השראה }
+          - { term: Challenge, gloss: אתגר }
+          - { term: Struggle, gloss: מאבק }
+          - { term: Breakthrough, gloss: פריצת דרך }
+          - { term: Milestone, gloss: אבן דרך }
+          - { term: Deadline, gloss: מועד אחרון }
+          - { term: Consistency, gloss: עקביות }
+          - { term: Discipline, gloss: משמעת }
+          - { term: Commitment, gloss: מחויבות }
+          - { term: Improvement, gloss: שיפור }
+          - { term: Success, gloss: הצלחה }
+          - { term: Failure, gloss: כישלון }
+          - { term: Reflection, gloss: רפלקציה / התבוננות }
+          - { term: Accomplish (v.), gloss: להשיג / להצליח לבצע }
+          - { term: Attempt (v.), gloss: לנסות }
+          - { term: Overcome (v.), gloss: להתגבר }
+          - { term: Set a goal (v.), gloss: לקבוע מטרה }
+          - { term: Achieve (v.), gloss: להשיג }
+          - { term: Give up (v.), gloss: לוותר }
+          - { term: Celebrate (v.), gloss: לחגוג }
+          - { term: Plan (v.), gloss: לתכנן }
+          - { term: Encourage (v.), gloss: לעודד }
+          - { term: Influence (v.), gloss: להשפיע }
+          - { term: Prioritize (v.), gloss: לתעדף }
+          - { term: Reflection journal, gloss: יומן תיעוד התקדמות }
+
+vocabulary:
+  - slug: goals-and-projects-past
+    title: 'Goals and projects: past'
+    items: *goals-and-projects-past-words
+
+activities:
+  - slug: goals-and-projects-past-past-simple
+    title: 'Past simple: worked, made, did'
+    minutes: 8
+    items:
+      - id: base-past
+        type: matching
+        prompt: Match each verb with its past simple form.
+        pairs:
+          - [work, worked]
+          - [watch, watched]
+          - [go, went]
+          - [make, made]
+          - [do, did]
+      - id: worked
+        type: multipleChoice
+        prompt: She ___ on her goal yesterday.
+        options:
+          - { text: worked, correct: true }
+          - {
+              text: works,
+              feedback: '*Works* is the present. With *yesterday*, use the past simple: *worked*.',
+            }
+          - {
+              text: work,
+              feedback: '*Work* is the base form. With *yesterday*, add *-ed*: *worked*.',
+            }
+      - id: did-you-watch
+        type: multipleChoice
+        prompt: Which question is in the past simple?
+        options:
+          - { text: Did you watch the movie?, correct: true }
+          - {
+              text: Did you watched the movie?,
+              feedback: 'After *did*, the verb goes back to the base form: *Did you watch…?*',
+            }
+          - {
+              text: Do you watch movies?,
+              feedback: '*Do* is for the present. For the past, use *Did* + subject + base verb.',
+            }
+      - id: didnt-give-up
+        type: fillBlank
+        prompt: Make it negative with *give up*.
+        text: I ___ when it was hard.
+        blanks: [["didn't give up", did not give up]]
+      - id: no-ed
+        type: trueFalse
+        prompt: "This sentence is correct: *I didn't watched it last weekend.*"
+        answer: false
+        feedback:
+          correct: "Right! After *didn't*, use the base form: *I didn't watch it.*"
+          incorrect: "After *didn't*, the verb goes back to the base form, with no *-ed*: *I didn't watch it.*"
+      - id: made-did
+        type: fillBlank
+        prompt: Write the past simple of *make* and *do*.
+        text: He ___ a plan last month. They ___ the work yesterday.
+        blanks: [[made], [did]]
+      - id: felt
+        type: multipleChoice
+        prompt: I ___ proud when I saw my progress.
+        options:
+          - { text: felt, correct: true }
+          - {
+              text: feeled,
+              feedback: '*Feel* is an irregular verb. Its past form is *felt*, not *feeled*.',
+            }
+          - {
+              text: feel,
+              feedback: '*Feel* is the present. The sentence is about the past (*saw*), so use *felt*.',
+            }
+      - id: achieved
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: I achieved my goal last month.
+
+  - slug: goals-and-projects-past-time-expressions
+    title: 'Time expressions: yesterday, last week, then'
+    minutes: 8
+    items:
+      - id: yesterday
+        type: multipleChoice
+        prompt: I watched a movie ___.
+        options:
+          - { text: yesterday, correct: true }
+          - {
+              text: tomorrow,
+              feedback: '*Tomorrow* is the future. *Watched* is the past, so use a past time expression: *yesterday*.',
+            }
+          - {
+              text: next week,
+              feedback: '*Next week* is the future. *Watched* is the past: *yesterday*, *last week*.',
+            }
+      - id: last-night
+        type: multipleChoice
+        prompt: She studied ___ night.
+        options:
+          - { text: last, correct: true }
+          - {
+              text: next,
+              feedback: '*Next night* is not correct here: *studied* is the past. We say *last night*.',
+            }
+          - { text: yesterday, feedback: 'In English we say *last night*, not *yesterday night*.' }
+      - id: timeline
+        type: fillBlank
+        prompt: Complete the timeline with *First*, *Then* and *Finally*.
+        text: ___, I signed up for English classes. ___, I practiced with Mori every week. After that, I watched Netflix in English. ___, I passed my speaking test.
+        blanks: [[First], [Then], [Finally]]
+        wordBank: [First, Then, Finally]
+      - id: meanings
+        type: matching
+        prompt: Match each time expression with its meaning.
+        pairs:
+          - [yesterday, the day before today]
+          - [last week, the week before this week]
+          - [last month, the month before this month]
+          - [when I was a child, in the years when I was young]
+          - [finally, at the end]
+      - id: past-markers
+        type: trueFalse
+        prompt: '*Yesterday* and *last week* tell us that the action happened in the past.'
+        answer: true
+        feedback:
+          correct: Right! Use them with the past simple, for example *I practiced last week.*
+          incorrect: 'They are past time expressions: *I practiced yesterday. I studied last week.*'
+      - id: after-achieved
+        type: multipleChoice
+        prompt: ___ I achieved my goal, I celebrated with my family.
+        options:
+          - { text: After, correct: true }
+          - {
+              text: Then,
+              feedback: '*Then* starts the next step: *I achieved my goal. Then, I celebrated.* To connect two actions in one sentence, use *After*.',
+            }
+          - {
+              text: Last week,
+              feedback: '*Last week* says when, but it cannot connect two actions. Use *After*: *After I achieved my goal, I celebrated.*',
+            }
+      - id: when-child
+        type: fillBlank
+        prompt: Choose the right word.
+        text: ___ I was a child, I played football every day.
+        blanks: [[When, While]]
+        wordBank: [When, Then, Last]
+      - id: last-week-order
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: Last week, I practiced every day.

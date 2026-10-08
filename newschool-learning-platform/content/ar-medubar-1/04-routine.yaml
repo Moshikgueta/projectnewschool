@@ -1,0 +1,540 @@
+# Cycle "Daily routine", converted from the spoken Arabic level 1 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew letters);
+# Hebrew instructions carry `lang: he`.
+course: ar-medubar-1
+slug: routine
+title: שגרה יומית – רוּטִינַה יוֹמִיֶה
+goal: לספר על השגרה היומית עם מספרים, שעות וימי השבוע, ופעלים בהווה.
+position: 4
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Numbers and days" and "Present-tense verbs") are
+    NEW: the notebook has no self-study exercises. They were written only from this
+    cycle's vocabulary, summary and examples. An Arabic teacher must check every right
+    answer, every wrong option and every transliteration before students see them.
+  - >-
+    The notebook lists four skills (present verbs, numbers, days of the week, basic
+    questions and answers); its summary groups them into two ("Numbers and days",
+    "Present-tense verbs"), which are used here.
+  - >-
+    Typos fixed: "מַרָّה" and "בִּדִّي", "צַחֵّחְלִי" contained the Arabic shadda sign on
+    Hebrew letters (→ מַרָּה, בִּדִּי, צַחֵּחְלִי); "אַתְدַרַבּ" contained an Arabic dal (→
+    אַתְדַרַבּ); warm-up question 2 frame "אנו באכּול" → "אנא באכּול"; number 19
+    "תסעטוש" → "תסעטאש" (the Arabic is تسعطاش, like the other teens). Please confirm.
+  - >-
+    Activity 5, step 2: "הִי בַּתסחַא" was changed to "הִי בְּתִסחַא", following the
+    cycle's own rule (היא → בְּתִ). Please confirm.
+  - >-
+    Removed: the Arabic-script duplicates after each word in the vocabulary (the course
+    is written in Hebrew transliteration; the vocabulary card has no room for a third
+    form), the Arabic word "فراغ" repeated inside Mori message 2, and the empty last
+    heading "בַּרְנָאמְגִ'י - הלוז שלי" (no content under it).
+  - >-
+    The bold marks on the present-tense prefix inside words (בְּ**תִ**ס'חַא) were dropped;
+    the summary rule teaches the prefixes instead.
+  - >-
+    Spelling variants kept as in the notebook (teacher's call): בַּס'חא / בַּסחַא (with and
+    without geresh), בַּדְרֵוס / בַּדְרֵס / בדרוס, תְמַאנְה / תְמַאנֶה / תמַאנֵה, בִּשְתְעֶ’ל /
+    בַּשְתְרֶ’ל, ' and ’ as geresh. The exercises use the summary's spellings. Is "בַּדְרֵוס"
+    (tsere + vav) intended?
+  - >-
+    Vocabulary verbs are in the "I" form (בַּשְרַבּ = אני שותה) but glossed with the Hebrew
+    infinitive, as in the notebook. "לישון — בַּנָאם" has the Arabic انام (without b-)
+    in the notebook. Please confirm.
+  - >-
+    Activity 4: the starting sentence is about dinner at seven (אַנא בַּתעשא...) but the
+    third-person reply example is about waking up (אנא כמאן בסחא...). Kept as is.
+  - >-
+    The Hebrew translations of the follow-up questions in Activity 2 (אי סאעה؟ etc.) and
+    of the example sentences in Activity 3 were added for students; please check them.
+    The Hebrew of warm-up question 5 was completed ("בשעה שמונה, ועם מי").
+  - >-
+    The summary sentence "בערבית אין שינוי פועל בגוף שלישי כמו באנגלית או תרגומים
+    ספרותיים" was unclear and is rewritten as "the present-tense verb takes a prefix that
+    changes with the person". Please confirm.
+  - >-
+    The Mori messages are in Arabic transliteration, as in the notebook; a Hebrew line
+    above each says what it asks for.
+  - >-
+    The "תשובת תלמיד" lines are replaced by the optional answer boxes. Activities have no
+    times in the notebook, so none are given; the introduction round is 5 minutes.
+  - "The Quizlet link's tracking parameter (?new) was removed."
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: routine-class
+    title: 'שיעור: שגרה יומית'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: שגרה יומית
+      - id: skills
+        type: cycleOverview
+        lang: he
+        skills:
+          - name: מספרים וימים
+            description: מספרים, שעות (אסָּאעַה תמַאנֵה) וימי השבוע
+          - name: פעלים בהווה
+            description: אַנַא בַּ… / אִנְתַא בְּתִ… / הוּ בִּ… / הִי בְּתִ…, שלילה עם מַא ושאלות
+      - id: quizlet
+        type: externalLink
+        lang: he
+        label: שגרה בקוויזלט
+        url: https://quizlet.com/br/1119912671/%D7%A9%D7%92%D7%A8%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        lang: he
+        text: סבב היכרות
+      - id: intro
+        type: sentenceFrame
+        frame: אִסְמִי ___. אַנא בַּתעַלָּם עַרַבִּי מַרָּה / מַרְתֵין בִּלְאֻסְבּוּע.
+        example: אִסְמִי אינאס. אַנא בַּתעַלָּם אנגליזי מַרְתֵין בִּלְאוסְבּוּע.
+      - id: warmup-title
+        type: heading
+        level: 3
+        lang: he
+        text: שאלות פתיחה – שאלות קצרות בהווה
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: "אֵימְתָא / וינתא בְּתִס'חַא؟ *(מתי אתה מתעורר?)*"
+            frame: "אנא בס'חא ___."
+          - question: שוּ בְּתִאכּוֹל עִל־פְטוּר؟ *(מה אתה אוכל בבוקר?)*
+            frame: אנא באכּול / אנא בוכֶּל ___.
+          - question: "שוּ בְּתְעַמֶל יוֹם א תַּלָאתָא (ב נוס' אלאסבוע – אמצע שבוע)؟ *(מה אתה עושה ביום שלישי?)*"
+          - question: "שוּ בְּתְעַמֶל כול יום אס'ובֶּח؟ *(מה אתה עושה בבוקר?)*"
+          - question: שוּ בְּתְעַמֶל אל מַסָא אסאעה תמאנֶה – ו מע מין בתכּון؟ *(מה אתה עושה בערב בשעה שמונה, ועם מי אתה?)*
+          - question: אֵימְתָא / וינתא בְּתִנָאם؟ אי סאעה בתנאם؟ *(מתי אתה הולך לישון? באיזו שעה?)*
+      - id: activities-title
+        type: heading
+        level: 3
+        lang: he
+        text: פעילויות
+      - id: act1
+        type: classActivity
+        lang: he
+        title: 'פעילות 1: היום המושלם שלי ושלו / שלה'
+        skills: [פעלים בהווה, מספרים וימים]
+        steps:
+          - 'שלב 1 – היום המושלם שלי (אַנַא): כתבו 4–5 משפטים פשוטים לפי התבנית.'
+          - שלב 2 – שתפו את בן / בת הזוג.
+          - 'שלב 3 – עכשיו על בן / בת הזוג (הוּ / הִי): כתבו אותו דבר בגוף שלישי.'
+          - שלב 4 – קריאה ואימות.
+      - id: act1-frame-me
+        type: sentenceFrame
+        frame: אַנא ___ אסָּאעַה ___.
+        example: אַנא בס'חא אסָּאעַה תְמַאנֶה.
+      - id: act1-examples
+        type: examples
+        items:
+          - text: אַנא בס'חא אסָּאעַה תְמַאנֶה.
+            gloss: אני מתעורר בשעה שמונה.
+          - text: אַנא בַּפטר אסָּאעַה תִסְעַה.
+            gloss: אני אוכל ארוחת בוקר בשעה תשע.
+          - text: אַנא בִּשְתְעֶ’ל מן אלבית.
+            gloss: אני עובד מהבית.
+      - id: act1-frame-partner
+        type: sentenceFrame
+        frame: הוּ / הִי ___ אסָּאעַה ___.
+      - id: act2
+        type: classActivity
+        lang: he
+        title: "פעילות 2: ק'דֵיש אסָּאעַה؟"
+        skills: [מספרים וימים, פעלים בהווה]
+        steps:
+          - שלב 1 – כל תלמיד בוחר פעולה, ושאר המשתתפים שואלים שאלות כדי להרחיב את השיחה.
+          - 'שלב 2 – התלמיד אומר רק את הפעולה, למשל: *אַנא בַּתעשא* (אני אוכל ארוחת ערב). שאר התלמידים מתחילים לשאול.'
+          - שלב 3 – אחד המשתתפים מסכם את "הסיפור".
+      - id: act2-questions
+        type: examples
+        items:
+          - text: אי סאעה؟
+            gloss: באיזו שעה?
+          - text: שו בתתעשא؟
+            gloss: מה אתה אוכל בארוחת ערב?
+          - text: מע מין؟
+            gloss: עם מי?
+          - text: וין؟
+            gloss: איפה?
+          - text: בלמטעם או בלבית؟
+            gloss: במסעדה או בבית?
+          - text: לחאלכ؟
+            gloss: לבד?
+      - id: act3
+        type: classActivity
+        lang: he
+        title: 'פעילות 3: מִין הַדַא؟ – ניחוש השגרה של אדם'
+        skills: [פעלים בהווה]
+        steps:
+          - שלב 1 – כתבו כמה משפטים על אדם שאתם מכירים או על אדם מפורסם.
+          - "שלב 2 – תנו שלוש אפשרויות לזהות, למשל: אִמִּי, אֻוחְ’תִי, ס'אחְבִּי (אפשר לבחור אפשרויות אחרות)."
+          - שלב 3 – הכיתה מנחשת.
+      - id: act3-examples
+        type: examples
+        items:
+          - text: הִי בְּתִס'חַא אסָּאעַה סִתֵּה.
+            gloss: היא מתעוררת בשעה שש.
+          - text: הוּ בִּרּוֹח עַל־גִ’ים.
+            gloss: הוא הולך לחדר הכושר.
+      - id: act4
+        type: classActivity
+        lang: he
+        title: 'פעילות 4: יַא סַלָאם, זַיִּי / מֶתְלִי!'
+        skills: [פעלים בהווה, מספרים וימים]
+        steps:
+          - 'שלב 1 – תלמיד מתחיל במשפט על הפעולה שלו ובאיזו שעה.'
+          - 'שלב 2 – אם עוד תלמיד עושה אותו דבר באותה שעה, הוא אומר: *יַא סַלָאם, זיי / מֶתלי!* ומספר גם בגוף שלישי. אחר כך הוא ממשיך עם משפט חדש.'
+          - שלב 3 – כולם צריכים לדבר לפחות פעם אחת.
+      - id: act4-examples
+        type: examples
+        items:
+          - text: אַנא בַּתעשא אסאעַה סבעה אלמסא.
+            gloss: אני אוכל ארוחת ערב בשבע בערב.
+          - text: יַא סַלָאם, זיי / מֶתלי!
+            gloss: וואו, כמוני!
+          - text: הו זיי, אנא כמאן בסחא אסאעה סבעה.
+            gloss: הוא כמוני, גם אני מתעורר בשבע.
+      - id: act5
+        type: classActivity
+        lang: he
+        title: 'פעילות 5: השוואת שגרות בזוגות'
+        skills: [פעלים בהווה, מספרים וימים]
+        steps:
+          - שלב 1 – שאלות בזוגות (רק הווה, משפט פשוט).
+          - שלב 2 – השוו בגוף שלישי.
+          - שלב 3 – שתפו בכיתה.
+      - id: act5-questions
+        type: discussionQuestions
+        items:
+          - question: אֵימְתָא בְּתִס'חַא؟
+            frame: אַנא בַּס'חא אסָּאעַה ___.
+          - question: שוּ בְּתִאכּוֹל עִל־פְטוּר؟ שו בתפטר؟
+      - id: act5-compare
+        type: sentenceFrame
+        frame: הִי / הוּ ___ אסָּאעַה ___, בָּס אַנא ___ אסָּאעַה ___.
+        example: הִי בְּתִסחַא אסָּאעַה סִבְּעַה, בָּס אַנא בַּסחַא אסָּאעַה סִתֵּה.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          מיומנויות: פעלים בהווה, מספרים, ימי השבוע, שאלות ותשובות בסיסיות. דגש: שפה
+          טבעית, קצרה, בשימוש יומיומי בישראל.
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: סבב קצר מאוד – שני משפטים בלבד לכל תלמיד.
+      - id: n-warmup
+        anchor: warmup
+        text: משפט אחד, מילים פשוטות, בלי עבר ועתיד.
+      - id: n-act1
+        anchor: act1
+        text: משפטים קצרצרים, אוצר מילים בסיסי בלבד.
+      - id: n-act2
+        anchor: act2
+        text: משחק ניחוש עם שעות. עודדו את השואלים להשתמש בשאלות שבדוגמה.
+      - id: n-act4
+        anchor: act4
+        text: משחק התאמה מהיר וחיובי.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: routine-summary
+    title: סיכום
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: סיכום מיומנויות
+      - id: rules-numbers
+        type: ruleSummary
+        lang: he
+        skill: מספרים וימים
+        rules:
+          - text: חזרו על המספרים בקול רם.
+          - text: השתמשו במספרים במשפטים אמיתיים.
+            examples: [אסָּאעַה תמַאנֵה, חַ’מסֶה, תִסְעַה]
+          - text: קשרו יום לפעולה.
+            examples: [יוֹם תַּלָאתָא – אַנא בַּדְרֵוס.]
+      - id: rules-verbs
+        type: ruleSummary
+        lang: he
+        skill: פעלים בהווה
+        rules:
+          - text: הפועל בהווה מקבל אות תחילית, והיא משתנה לפי הגוף (מי עושה). ראו בטבלה.
+          - text: 'דוגמאות עם "להתעורר":'
+            examples: [אַנא בַּסחַא, אִנְתַא בְּתִסחַא, הוּ בִּסחַא, הִי בְּתִסחַא]
+          - text: 'שלילה: **מַא** + פועל. תבנית נוספת לשלילה: ־ש בסוף הפועל, בלי מַא.'
+            examples: [מַא בַּדְרֵס, בדרוסֶש, מַא בְּתִדרוס]
+          - text: 'שאלה: אותו פועל, רק הטון עולה.'
+      - id: prefixes-table
+        type: table
+        lang: he
+        caption: התחילית בהווה
+        header: [גוף, תחילית, דוגמה]
+        rows:
+          - [אני, בַּ, בַשרָבְּ]
+          - [אתה, בְּתִ, בּתֶשְרַבְּ]
+          - [את, בְּתִ, אנתי בתֶשְרַבּי]
+          - [הוא, בִּ, בֶּשְרַבְּ]
+          - [היא, בְּתִ, בתֶשְרַבְּ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: עברו על שתי המיומנויות עם הקבוצה ובקשו דוגמה חדשה לכל כלל.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: routine-homework
+    title: שיעורי בית עם מורי
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: שיעורי בית עם מורי
+      - id: how
+        type: text
+        lang: he
+        text: פתחו את הצ'אט עם מורי, העתיקו הודעה ושלחו אותה. ענו על כל השאלות של מורי.
+      - id: mori-1-title
+        type: heading
+        level: 3
+        lang: he
+        text: 'הודעה 1: מורי שואל על שעות ופעולות ומתקן אתכם'
+      - id: mori-1
+        type: aiTutorPrompt
+        message: מורי, בִּדִּי אַתְדַרַבּ עַל־רוּטִינַה יוֹמִיֶה. אִסְאַלְנִי אַסְאִלֶה עַן סַעַאת וּפְעָאלִיַאת, וּצַחֵּחְלִי אִדָא בֻּחְטָא.
+      - id: mori-2-title
+        type: heading
+        level: 3
+        lang: he
+        text: 'הודעה 2: משפטים עם מספר חסר, ואתם משלימים'
+      - id: mori-2
+        type: aiTutorPrompt
+        message: 'מורי, עְטִינִי גֻ’מַל פִיהָא רָקֶם נָאקֶס וַאַנא אַמַלָא אל־פָרארֶ’.'
+      - id: mori-3-title
+        type: heading
+        level: 3
+        lang: he
+        text: 'הודעה 3: אתם מספרים על יום רגיל, ומורי שואל'
+      - id: mori-3
+        type: aiTutorPrompt
+        message: מורי, אַנא בַּחְכִּילַכּ עַן יוֹם טִבְּיעִי. אִסְאַלְנִי כַּמָאן.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: routine-practice
+    book: workbook
+    title: 'תרגול: שגרה יומית'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        lang: he
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+      - id: ex-numbers
+        type: activity
+        activity: routine-numbers
+      - id: ex-verbs
+        type: activity
+        activity: routine-verbs
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: routine-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: פעלים, ימי השבוע ומספרים
+        glossLang: he
+        link: https://quizlet.com/br/1119912671/%D7%A9%D7%92%D7%A8%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &routine-words
+          - { term: "בּס'חַא", gloss: להתעורר }
+          - { term: "בַּק'וֹם", gloss: לקום }
+          - { term: בּאכּוֹל / בּוכֶּל, gloss: לאכול }
+          - { term: בַּשְרַבּ, gloss: לשתות }
+          - { term: ארוֹח, gloss: ללכת }
+          - { term: אַטְלָע מן אלבית, gloss: לצאת מהבית }
+          - { term: אַג’י, gloss: לבוא }
+          - { term: בַּדְרֵוס, gloss: ללמוד }
+          - { term: בַּשְתְרֶ’ל, gloss: לעבוד }
+          - { term: בַּלְעַבּ, gloss: לשחק }
+          - { term: בַּקְרַא, gloss: לקרוא }
+          - { term: בַּנָאם, gloss: לישון }
+          - { term: בַּשּוּף תַלַפְזְיוֹן, gloss: לראות טלוויזיה }
+          - { term: יוֹם אֶלאחד, gloss: יום ראשון }
+          - { term: יוֹם אתְנֵין, gloss: יום שני }
+          - { term: יוֹם תַּלָאתָא, gloss: יום שלישי }
+          - { term: יוֹם אַרְבַּעַא, gloss: יום רביעי }
+          - { term: יוֹם אל חַ’מִיס, gloss: יום חמישי }
+          - { term: יוֹם א גֻ’ומְעַה, gloss: יום שישי }
+          - { term: יוֹם אסַבְּת, gloss: יום שבת }
+          - { term: וַאחֶד, gloss: 1 – אחד }
+          - { term: תְנֵין, gloss: 2 – שתיים }
+          - { term: תַלַאתֶה, gloss: 3 – שלוש }
+          - { term: אַרְבַּעא, gloss: 4 – ארבע }
+          - { term: חַ’מְסֶה, gloss: 5 – חמש }
+          - { term: סִתֶּה, gloss: 6 – שש }
+          - { term: סַבְּעַה, gloss: 7 – שבע }
+          - { term: תְמַאנְה, gloss: 8 – שמונה }
+          - { term: תִסְעַה, gloss: 9 – תשע }
+          - { term: עַשַרַה, gloss: 10 – עשר }
+          - { term: חדאש, gloss: 11 – אחת עשרה }
+          - { term: טנאש, gloss: 12 – שתים עשרה }
+          - { term: תלתאש, gloss: 13 – שלוש עשרה }
+          - { term: ארבעטאש, gloss: 14 – ארבע עשרה }
+          - { term: "ח'מסטאש", gloss: 15 – חמש עשרה }
+          - { term: סטאש, gloss: 16 – שש עשרה }
+          - { term: סבעטאש, gloss: 17 – שבע עשרה }
+          - { term: תמנטאש, gloss: 18 – שמונה עשרה }
+          - { term: תסעטאש, gloss: 19 – תשע עשרה }
+          - { term: עשרין, gloss: 20 – עשרים }
+          - { term: ואחד ועשרין, gloss: 21 – עשרים ואחת }
+          - { term: תנין ועשרין, gloss: 22 – עשרים ושתיים }
+
+vocabulary:
+  - slug: routine
+    title: שגרה יומית
+    items: *routine-words
+
+activities:
+  - slug: routine-numbers
+    title: מספרים וימים
+    minutes: 8
+    items:
+      - id: match-numbers
+        type: matching
+        lang: he
+        prompt: התאימו כל מספר למילה בערבית.
+        pairs:
+          - ['3', תַלַאתֶה]
+          - ['5', חַ’מְסֶה]
+          - ['7', סַבְּעַה]
+          - ['9', תִסְעַה]
+          - ['10', עַשַרַה]
+      - id: match-days
+        type: matching
+        lang: he
+        prompt: התאימו כל יום בערבית ליום בעברית.
+        pairs:
+          - [יוֹם אֶלאחד, יום ראשון]
+          - [יוֹם אתְנֵין, יום שני]
+          - [יוֹם תַּלָאתָא, יום שלישי]
+          - [יוֹם אל חַ’מִיס, יום חמישי]
+          - [יוֹם אסַבְּת, יום שבת]
+      - id: tuesday
+        type: multipleChoice
+        lang: he
+        prompt: איך אומרים "יום שלישי"?
+        options:
+          - { text: יוֹם תַּלָאתָא, correct: true }
+          - { text: יוֹם אתְנֵין, feedback: יוֹם אתְנֵין הוא יום שני. }
+          - { text: יוֹם אַרְבַּעַא, feedback: יוֹם אַרְבַּעַא הוא יום רביעי. }
+      - id: wake-eight
+        type: multipleChoice
+        lang: he
+        prompt: איך אומרים "אני מתעורר בשעה שמונה"?
+        options:
+          - { text: אַנא בס'חא אסָּאעַה תְמַאנֶה, correct: true }
+          - { text: אַנא בס'חא אסָּאעַה תִסְעַה, feedback: תִסְעַה זה תשע. }
+          - { text: אַנא בס'חא אסָּאעַה סִתֶּה, feedback: סִתֶּה זה שש. }
+      - id: seven
+        type: multipleChoice
+        lang: he
+        prompt: איזה מספר זה סַבְּעַה?
+        options:
+          - { text: '7', correct: true }
+          - { text: '6', feedback: 6 זה סִתֶּה. }
+          - { text: '9', feedback: 9 זה תִסְעַה. }
+      - id: eleven
+        type: trueFalse
+        lang: he
+        prompt: חדאש זה המספר 11.
+        answer: true
+      - id: twenty
+        type: trueFalse
+        lang: he
+        prompt: עשרין זה המספר 12.
+        answer: false
+        feedback:
+          incorrect: עשרין זה 20. המספר 12 הוא טנאש.
+      - id: order-tuesday
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: ביום שלישי אני לומד.'
+        sentence: יוֹם תַּלָאתָא אַנא בַּדְרֵוס
+        alsoAccept: [אַנא בַּדְרֵוס יוֹם תַּלָאתָא]
+
+  - slug: routine-verbs
+    title: פעלים בהווה
+    minutes: 8
+    items:
+      - id: ana
+        type: multipleChoice
+        lang: he
+        prompt: 'השלימו: אַנא ___ (אני מתעורר).'
+        options:
+          - { text: בַּסחַא, correct: true }
+          - { text: בִּסחַא, feedback: 'בִּ היא התחילית של "הוא".' }
+          - { text: בְּתִסחַא, feedback: 'בְּתִ היא התחילית של "אתה" ושל "היא".' }
+      - id: hu
+        type: multipleChoice
+        lang: he
+        prompt: 'השלימו: הוּ ___ (הוא מתעורר).'
+        options:
+          - { text: בִּסחַא, correct: true }
+          - { text: בַּסחַא, feedback: 'בַּ היא התחילית של "אני".' }
+          - { text: בְּתִסחַא, feedback: 'בְּתִ היא התחילית של "אתה" ושל "היא".' }
+      - id: hi
+        type: multipleChoice
+        lang: he
+        prompt: 'השלימו: הִי ___ (היא מתעוררת).'
+        options:
+          - { text: בְּתִסחַא, correct: true }
+          - { text: בִּסחַא, feedback: 'בִּ היא התחילית של "הוא".' }
+          - { text: בַּסחַא, feedback: 'בַּ היא התחילית של "אני".' }
+      - id: match-persons
+        type: matching
+        lang: he
+        prompt: התאימו כל משפט לתרגום שלו.
+        pairs:
+          - [אַנא בַּסחַא, אני מתעורר]
+          - [אִנְתַא בְּתִסחַא, אתה מתעורר]
+          - [הוּ בִּסחַא, הוא מתעורר]
+          - [הִי בְּתִסחַא, היא מתעוררת]
+      - id: not-study
+        type: multipleChoice
+        lang: he
+        prompt: איך אומרים "אני לא לומד"?
+        options:
+          - { text: מַא בַּדְרֵס, correct: true }
+          - {
+              text: מַא בְּתִדרוס,
+              feedback: 'בְּתִ היא התחילית של "אתה" או "היא": זה "אתה לא לומד".',
+            }
+          - { text: בַּדְרֵוס, feedback: 'זה "אני לומד", בלי שלילה. לשלילה מוסיפים מַא.' }
+      - id: negation
+        type: trueFalse
+        lang: he
+        prompt: 'בשלילה בהווה שמים מַא לפני הפועל: מַא בַּדְרֵס.'
+        answer: true
+      - id: question
+        type: trueFalse
+        lang: he
+        prompt: כדי לשאול שאלה בהווה, משנים את הפועל.
+        answer: false
+        feedback:
+          incorrect: 'בשאלה הפועל נשאר אותו פועל, רק הטון עולה.'
+      - id: order-six
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: היא מתעוררת בשעה שש.'
+        sentence: הִי בְּתִס'חַא אסָּאעַה סִתֵּה

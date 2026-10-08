@@ -1,0 +1,553 @@
+# Cycle "Small Talk", converted from the German Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: small-talk
+title: Small Talk
+goal: Fragen stellen und beantworten und Personen mit einfachen Sätzen beschreiben.
+position: 1
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Fragen stellen" and "Beschreibende Sätze") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary and its vocabulary. Please check level, wording and every
+    right answer before students see them.
+  - >-
+    The summary is written in Hebrew in the notebook. The rules are given here in
+    simple German (ruleSummary) and the Hebrew explanations are kept as Hebrew text
+    blocks (lang he) under each skill. The Hebrew meanings of the question words are
+    a column of the table. Please check the Hebrew.
+  - >-
+    The Mori homework (instructions, starting message and tips) and the "Two truths
+    and a lie" activity were in English in the notebook; they are translated into
+    German. The English "Extra Practice" section, which repeated the German one, was
+    removed. "Use only the present simple" is written as "Benutze nur das Präsens".
+  - >-
+    Jeopardy answers corrected: "Ich mag reisen, weil …" → "Ich reise gern, weil …"
+    (matches the question "Warum reist du gern?"); "Ich arbeite in New School" →
+    "Ich arbeite bei New School".
+  - >-
+    Summary: "Er ist groß. – הוא גבוה" is kept; the adjective list now glosses groß
+    as "גדול / גבוה" because both meanings appear.
+  - >-
+    Vocabulary: verbs and adjectives written in lower case (Mögen → mögen, Tanzen →
+    tanzen, Reisen → reisen, Gehen → gehen, Fragen → fragen, Erraten → erraten,
+    Verheiratet → verheiratet, Ledig → ledig, Täglich → täglich, question words wie,
+    wo, was, wann, warum); nouns now carry their article (der Name, die Kinder …).
+    Glosses changed: "leben" → "לחיות / לגור", "Geschwister" → "אחים ואחיות",
+    "täglich" → "כל יום / יומי", "haben" → "יש ל…". Please confirm.
+  - >-
+    The Quizlet link lost its tracking parameter (?new).
+  - >-
+    The "Antwort Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: small-talk-unterricht
+    title: 'Unterricht: Small Talk'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Small Talk
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Fragen und Antworten
+            description: Fragen mit *wie, wo, was, wann, warum* stellen und beantworten
+          - name: Beschreibende Sätze
+            description: Personen und Dinge mit *sein*, *haben* und Adjektiven beschreiben
+      - id: quizlet
+        type: externalLink
+        label: Small Talk auf Quizlet
+        url: https://quizlet.com/br/1110970379/%D7%A9%D7%99%D7%97%D7%95%D7%AA-%D7%97%D7%95%D7%9C%D7%99%D7%9F-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Ich mag ___. / Ich mache gerne ___.
+        example: Ich bin Dana. Ich mag Bücher. / Ich lese gerne.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärm-Fragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Wie heißt du?
+            frame: Ich heiße ___.
+          - question: Wo arbeitest du?
+            frame: Ich arbeite in / bei ___.
+          - question: Was machst du gern in deiner Freizeit?
+            frame: In meiner Freizeit ___ ich gern.
+          - question: Was machst du jeden Tag?
+            frame: Jeden Tag ___ ich.
+          - question: Was ist dein Lieblingsort? Warum?
+            frame: Mein Lieblingsort ist ___, weil ___.
+          - question: Wo wohnst du?
+            frame: Ich wohne in ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Simulation – Erstes Treffen'
+        skills: [Fragen und Antworten, Beschreibende Sätze]
+        minutes: 20
+        steps:
+          - Arbeitet zu zweit.
+          - Stell deinem Partner / deiner Partnerin 5 Fragen aus der Liste.
+          - Erzähl der Gruppe 3 Sätze über deinen Partner / deine Partnerin (er / sie).
+        example: '*Lisa wohnt in Berlin. Sie ist ledig. Sie hat zwei Katzen.*'
+      - id: act1-questions
+        type: discussionQuestions
+        title: Beispiel-Fragen
+        items:
+          - question: Wie heißt du?
+            frame: Er / Sie heißt ___.
+          - question: Wo wohnst du?
+            frame: Er / Sie wohnt in ___.
+          - question: Bist du verheiratet?
+            frame: Er / Sie ist verheiratet / ledig / in einer Beziehung.
+          - question: Hast du Kinder?
+            frame: Er / Sie hat ___ Kinder. / Er / Sie hat keine Kinder.
+          - question: Was machst du gern?
+            frame: Er / Sie ___ gern.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Wer ist er / sie? – Beschreiben'
+        skills: [Beschreibende Sätze, Fragen und Antworten]
+        minutes: 20
+        steps:
+          - Wähl eine wichtige Person und vervollständige die Sätze unten.
+          - Arbeitet zu zweit. Schüler A fragt über die Person von Schüler B (*Wer ist er / sie? Wie heißt er / sie? Wo wohnt er / sie?*).
+          - Tauscht die Rollen.
+          - Sag der Gruppe eine interessante Information über die Person von deinem Partner / deiner Partnerin.
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Meine wichtige Person
+        items:
+          - question: Das ist mein / meine ___.
+          - question: Er / Sie heißt ___.
+          - question: Er / Sie wohnt in ___.
+          - question: Er / Sie arbeitet als / in ___.
+          - question: Er / Sie macht gerne ___.
+          - question: Er / Sie ist verheiratet / ledig / in einer Beziehung.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Jeopardy – Fragen bilden'
+        skills: [Fragen und Antworten]
+        minutes: 20
+        steps:
+          - Die Lehrkraft sagt eine Antwort.
+          - Du bildest die passende Frage. Für jede richtige Frage bekommst du einen Punkt.
+          - Ist die Frage falsch, ist der nächste Schüler / die nächste Schülerin dran.
+        example: '*Antwort: Ich heiße Yossi.* → **Frage: Wie heißt du?**'
+      - id: act3-answers
+        type: discussionQuestions
+        title: Welche Frage passt?
+        items:
+          - question: Ich heiße Yossi.
+            frame: ___ heißt du?
+          - question: Ich komme aus Frankreich.
+            frame: ___ kommst du?
+          - question: Ich reise gern, weil ich neues Essen probieren möchte.
+            frame: ___ reist du gern?
+          - question: Ich wohne in Tel Aviv.
+            frame: ___ wohnst du?
+          - question: Ich arbeite bei New School und studiere Chemie.
+            frame: ___ machst du beruflich?
+          - question: Ich lerne zweimal pro Woche Deutsch.
+            frame: ___ lernst du Deutsch?
+          - question: Ich habe zwei Brüder und eine Schwester.
+            frame: ___ Geschwister hast du?
+          - question: Mein Lieblingsessen ist Pizza.
+            frame: ___ ist dein Lieblingsessen?
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Wer bin ich?'
+        skills: [Fragen und Antworten, Beschreibende Sätze]
+        minutes: 20
+        steps:
+          - Ein Schüler / eine Schülerin denkt an eine bekannte Person oder an jemanden aus der Gruppe.
+          - Die anderen stellen Ja/Nein-Fragen und raten, wer die Person ist.
+        example: |-
+          *Bin ich eine Frau?* → Ja.
+          *Bin ich berühmt?* → Ja.
+          *Singe ich?* → Ja.
+          *Tanze ich?* → Ja.
+          *Bin ich Helene Fischer?* → Ja!
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Fragen und Antworten** (Aktivitäten 1, 3
+          und 4) und **Beschreibende Sätze** (Aktivitäten 1, 2 und 4).
+      - id: n-intro
+        anchor: intro
+        text: Gib zuerst dein eigenes Beispiel (*Ich bin … Ich mag Bücher. / Ich lese gerne.*), dann ist jeder Schüler dran.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 15
+        text: Stell jedem Schüler mindestens zwei Fragen. Die Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Zeig die Fragen auf dem Bildschirm oder auf Karten. Achte in Phase 3 auf die
+          3. Person: *er wohnt, sie ist, sie hat*.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Phase 1: Jeder schreibt die Sätze über seine Person. Phase 2–4: Paare fragen
+          und tauschen die Rollen. Phase 5: Zurück in der Gruppe sagt jeder eine
+          interessante Information über die Person des Partners.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Stufe 1: Sag die Antworten; der erste Schüler beginnt, und für jede richtige
+          Frage gibt es einen Punkt. Liegt er falsch, macht der Nächste weiter. Stufe 2:
+          Wenn jeder mindestens eine Runde gespielt hat, nenn den Gewinner und erkläre die
+          Regeln zum Bilden von Fragen (siehe Zusammenfassung). Lösungen: Wie heißt du? ·
+          Woher kommst du? · Warum reist du gern? · Wo wohnst du? · Was machst du
+          beruflich? · Wie oft lernst du Deutsch? · Wie viele Geschwister hast du? · Was
+          ist dein Lieblingsessen?
+      - id: n-act4
+        anchor: act4
+        text: Achte auf die Ja/Nein-Fragen mit dem Verb am Anfang (*Bin ich …? Singe ich …?*).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: small-talk-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-questions
+        type: ruleSummary
+        skill: Fragen und Antworten
+        rules:
+          - text: Mit Fragen bekommen wir Informationen. Im Deutschen gibt es W-Fragen und Ja/Nein-Fragen.
+          - text: Das Fragewort steht meistens **am Anfang** der Frage.
+            examples: [Was machst du gern?, Wo arbeitest du?]
+      - id: questions-he
+        type: text
+        lang: he
+        text: >-
+          אנחנו משתמשים בשאלות כדי לקבל מידע. בגרמנית משתמשים במילות שאלה, ולא רק
+          בשאלות של כן ולא. מילת השאלה מופיעה בדרך כלל בתחילת המשפט.
+      - id: questions-table
+        type: table
+        caption: Wichtige Fragewörter
+        header: [Fragewort, Hebräisch, Beispiel]
+        rows:
+          - [Wie, איך, Wie heißt du?]
+          - [Wo, איפה, Wo wohnst du?]
+          - [Was, מה, Was machst du gern?]
+          - [Wann, מתי, Wann lernst du Deutsch?]
+          - [Warum, למה, Warum lernst du Deutsch?]
+      - id: rules-describing
+        type: ruleSummary
+        skill: Beschreibende Sätze
+        rules:
+          - text: Wir beschreiben Personen und Dinge mit Verben, mit Adjektiven und mit dem Verb *haben*.
+          - text: 'Mit **sein** sagen wir, wie jemand ist oder wie er sich fühlt: ich **bin**, er / sie **ist**, wir **sind**.'
+            examples: [Ich bin müde., Sie ist nett., Wir sind glücklich.]
+          - text: 'Adjektive beschreiben, wie etwas aussieht oder wie es ist: groß, klein, freundlich, lustig, blau.'
+            examples: [Er ist groß., Der Hund ist klein und braun.]
+          - text: 'Mit **haben** sagen wir, was wir haben: ich **habe**, er / sie **hat**.'
+            examples: [Ich habe einen Hund., Sie hat zwei Brüder.]
+      - id: describing-he
+        type: text
+        lang: he
+        text: >-
+          הפועל sein (להיות) משמש כדי לומר איך מישהו מרגיש או איך הוא. שמות תואר מתארים
+          איך משהו נראה או איך הוא. הפועל haben (יש לי) משמש כדי לומר מה יש לנו.
+      - id: describing-examples
+        type: examples
+        items:
+          - { text: Ich bin müde., gloss: אני עייף }
+          - { text: Sie ist nett., gloss: היא נחמדה }
+          - { text: Wir sind glücklich., gloss: אנחנו שמחים }
+          - { text: Er ist groß., gloss: הוא גבוה }
+          - { text: Der Hund ist klein und braun., gloss: הכלב קטן וחום }
+          - { text: Ich habe einen Hund., gloss: יש לי כלב }
+          - { text: Sie hat zwei Brüder., gloss: יש לה שני אחים }
+      - id: remember
+        type: callout
+        tone: tip
+        title: Merksatz
+        text: '**Fragen** = wir suchen Informationen. **Beschreiben** = wir geben Informationen.'
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 15
+        text: Wiederhole die zwei Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: small-talk-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-small-talk
+        type: aiTutorPrompt
+        title: Small Talk
+        message: >-
+          Hallo Mori! Ich möchte Small Talk üben. Kannst du mir Small-Talk-Fragen stellen
+          und dabei die Fertigkeiten Fragen und Antworten und Beschreibende Sätze
+          benutzen? Benutze nur das Präsens und korrigiere bitte meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Zusätzliche Übungen
+      - id: mori-guess
+        type: aiTutorPrompt
+        title: Errate die Person
+        intro: Denk an jemanden aus deiner Familie und schick diese Nachricht an Mori.
+        message: Hey Mori! Lass uns ein Spiel spielen. Ich denke an jemanden aus meiner Familie und du musst erraten, wer es ist.
+      - id: mori-guess-turn
+        type: aiTutorPrompt
+        intro: Wenn Mori geraten hat, schick diese Nachricht.
+        message: Jetzt bist du dran! Denk an jemanden und ich muss raten, wer es ist. Es kann eine berühmte Person sein.
+      - id: mori-truths
+        type: aiTutorPrompt
+        title: Zwei Wahrheiten, eine Lüge
+        intro: Schick diese Nachricht an Mori. Dann schreib 3 Sätze über dich; zwei sind wahr, einer ist falsch.
+        message: Hey Mori! Lass uns „Zwei Wahrheiten, eine Lüge“ spielen. Ich sage dir 3 Dinge über mich. Du musst raten, was nicht stimmt.
+      - id: truths-example
+        type: examples
+        items:
+          - text: Ich habe einen Bruder.
+          - text: Ich lebe in Jerusalem.
+          - text: Ich bin Arzt.
+      - id: mori-truths-turn
+        type: aiTutorPrompt
+        intro: Mori rät, welcher Satz die Lüge ist. Danach schick diese Nachricht.
+        message: Jetzt bist du dran! Sag mir 2 Wahrheiten und 1 Lüge.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: small-talk-uebung
+    book: workbook
+    title: 'Übung: Small Talk'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-fragen
+        type: activity
+        activity: small-talk-fragen
+      - id: ex-beschreiben
+        type: activity
+        activity: small-talk-beschreiben
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: small-talk-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für Small Talk
+        glossLang: he
+        link: https://quizlet.com/br/1110970379/%D7%A9%D7%99%D7%97%D7%95%D7%AA-%D7%97%D7%95%D7%9C%D7%99%D7%9F-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &small-talk-words
+          - { term: leben, gloss: לחיות / לגור }
+          - { term: arbeiten, gloss: לעבוד }
+          - { term: mögen, gloss: לאהוב }
+          - { term: machen / tun, gloss: לעשות }
+          - { term: sein, gloss: להיות }
+          - { term: haben, gloss: יש ל… }
+          - { term: lesen, gloss: לקרוא }
+          - { term: tanzen, gloss: לרקוד }
+          - { term: reisen, gloss: לטייל }
+          - { term: gehen, gloss: ללכת }
+          - { term: lernen, gloss: ללמוד }
+          - { term: fragen, gloss: לשאול }
+          - { term: sprechen / reden, gloss: לדבר }
+          - { term: sagen, gloss: להגיד }
+          - { term: erraten, gloss: לנחש }
+          - { term: der Name, gloss: שם }
+          - { term: verheiratet, gloss: נשוי }
+          - { term: ledig, gloss: רווק }
+          - { term: in einer Beziehung, gloss: במערכת יחסים }
+          - { term: die Kinder, gloss: ילדים }
+          - { term: die Geschwister, gloss: אחים ואחיות }
+          - { term: der Bruder, gloss: אח }
+          - { term: die Schwester, gloss: אחות }
+          - { term: der Freund, gloss: חבר }
+          - { term: die Person, gloss: בן אדם }
+          - { term: der Ort, gloss: מקום }
+          - { term: das Hobby, gloss: תחביב }
+          - { term: der Sport, gloss: ספורט }
+          - { term: die Tiere, gloss: חיות }
+          - { term: die Freizeit, gloss: זמן פנוי }
+          - { term: täglich, gloss: כל יום / יומי }
+          - { term: wo, gloss: איפה }
+          - { term: was, gloss: מה }
+          - { term: wann, gloss: מתי }
+          - { term: warum, gloss: למה }
+          - { term: wie, gloss: איך }
+
+vocabulary:
+  - slug: small-talk
+    title: Small Talk
+    items: *small-talk-words
+
+activities:
+  - slug: small-talk-fragen
+    title: 'Fragen stellen: wie, wo, was, wann, warum'
+    minutes: 8
+    items:
+      - id: wo-wohnst
+        type: multipleChoice
+        prompt: '___ wohnst du? – Ich wohne in Tel Aviv.'
+        options:
+          - { text: Wo, correct: true }
+          - {
+              text: Wann,
+              feedback: 'Mit *wann* fragen wir nach der Zeit. Für den Ort fragen wir mit *wo*.',
+            }
+          - {
+              text: Warum,
+              feedback: 'Mit *warum* fragen wir nach dem Grund. Für den Ort fragen wir mit *wo*.',
+            }
+      - id: wie-heisst
+        type: multipleChoice
+        prompt: '___ heißt du? – Ich heiße Yossi.'
+        options:
+          - { text: Wie, correct: true }
+          - { text: Was, feedback: 'Nach dem Namen fragen wir mit *wie*: *Wie heißt du?*' }
+          - {
+              text: Wo,
+              feedback: 'Mit *wo* fragen wir nach dem Ort. Nach dem Namen fragen wir mit *wie*.',
+            }
+      - id: frage-antwort
+        type: matching
+        prompt: Welche Antwort passt zu welcher Frage?
+        pairs:
+          - [Wie heißt du?, Ich heiße Yossi.]
+          - [Woher kommst du?, Ich komme aus Frankreich.]
+          - [Wo wohnst du?, Ich wohne in Tel Aviv.]
+          - [Was ist dein Lieblingsessen?, Mein Lieblingsessen ist Pizza.]
+          - [Wie viele Geschwister hast du?, Ich habe zwei Brüder und eine Schwester.]
+      - id: fragewort-anfang
+        type: trueFalse
+        prompt: 'Das Fragewort steht meistens am Anfang der Frage: *Wo arbeitest du?*'
+        answer: true
+        feedback:
+          correct: Richtig! Zuerst das Fragewort, dann das Verb.
+          incorrect: 'Das Fragewort steht meistens am Anfang: *Was machst du gern?*'
+      - id: warum-lernst
+        type: fillBlank
+        prompt: Ergänze das Fragewort.
+        text: '___ lernst du Deutsch? – Weil ich in Berlin arbeiten möchte.'
+        blanks: [[Warum]]
+      - id: wann-lernst
+        type: fillBlank
+        prompt: Ergänze das Fragewort.
+        text: '___ lernst du Deutsch? – Am Montag und am Mittwoch.'
+        blanks: [[Wann]]
+      - id: richtige-frage
+        type: multipleChoice
+        prompt: 'Antwort: *Ich arbeite bei New School.* Welche Frage passt?'
+        options:
+          - { text: Wo arbeitest du?, correct: true }
+          - {
+              text: Wann arbeitest du?,
+              feedback: '*Wann* fragt nach der Zeit. Die Antwort sagt den Ort: *Wo arbeitest du?*',
+            }
+          - {
+              text: Wie heißt du?,
+              feedback: 'Diese Frage fragt nach dem Namen. Die Antwort sagt den Ort: *Wo arbeitest du?*',
+            }
+      - id: ordne-frage
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einer Frage.
+        sentence: Was machst du gern?
+
+  - slug: small-talk-beschreiben
+    title: 'Beschreibende Sätze: sein, haben, Adjektive'
+    minutes: 8
+    items:
+      - id: sie-ist
+        type: multipleChoice
+        prompt: Sie ___ nett.
+        options:
+          - { text: ist, correct: true }
+          - {
+              text: bin,
+              feedback: '*bin* passt zu *ich*: *ich bin*. Für *sie* sagen wir *sie ist*.',
+            }
+          - {
+              text: sind,
+              feedback: '*sind* passt zu *wir*: *wir sind*. Für eine Person sagen wir *sie ist*.',
+            }
+      - id: ich-habe
+        type: multipleChoice
+        prompt: Ich ___ einen Hund.
+        options:
+          - { text: habe, correct: true }
+          - { text: hat, feedback: '*hat* passt zu *er / sie*. Für *ich* sagen wir *ich habe*.' }
+          - {
+              text: bin,
+              feedback: 'Mit *sein* sagen wir, wie jemand ist. Was wir haben, sagen wir mit *haben*: *Ich habe einen Hund.*',
+            }
+      - id: wir-sind
+        type: fillBlank
+        prompt: Ergänze das Verb *sein*.
+        text: Wir ___ glücklich.
+        blanks: [[sind]]
+      - id: sie-hat
+        type: fillBlank
+        prompt: Ergänze das Verb *haben*.
+        text: Sie ___ zwei Brüder.
+        blanks: [[hat]]
+      - id: adjektive
+        type: matching
+        prompt: Welches Wort passt?
+        pairs:
+          - [groß, גדול / גבוה]
+          - [klein, קטן]
+          - [freundlich, נחמד]
+          - [lustig, מצחיק]
+          - [blau, כחול]
+      - id: bin-hund
+        type: trueFalse
+        prompt: 'Der Satz *Ich bin einen Hund.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Richtig ist: *Ich habe einen Hund.*'
+          incorrect: 'Was wir haben, sagen wir mit *haben*: *Ich habe einen Hund.*'
+      - id: bin-ist
+        type: fillBlank
+        prompt: Ergänze *bin* oder *ist*.
+        text: Ich ___ müde. Er ___ groß.
+        blanks: [[bin], [ist]]
+        wordBank: [bin, ist]
+      - id: ordne-hund
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Der Hund ist klein und braun.

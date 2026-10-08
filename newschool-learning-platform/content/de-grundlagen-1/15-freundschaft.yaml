@@ -1,0 +1,571 @@
+# Cycle "Freundschaft", converted from the German Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: freundschaft
+title: Freundschaft
+goal: Freunde mit einfachen Sätzen beschreiben und sagen, was sie im Präsens machen.
+position: 15
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Beschreibende Sätze" and "Handlungen im Präsens") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary, Präsens: the notebook says (in Hebrew) that with ich / du / wir "the verb
+    stays as it is" and that er / sie "add a t". That is not correct German (ich
+    spiele, du spielst, er spielt, wir spielen). The rule is rewritten with the
+    endings -e / -st / -t / -en, the extra e in "er arbeitet", and the irregular "er
+    isst" (essen is in the cycle's vocabulary). Please confirm.
+  - >-
+    The summary is written in Hebrew in the notebook. It is kept as two Hebrew
+    (`lang: he`) text blocks, corrected as above; the rules themselves are also given
+    as short German ruleSummary blocks with examples. The odd gloss "er ist / sie ist
+    (הוא הוא / היא היא)" is now "er ist = הוא ..., sie ist = היא ...".
+  - >-
+    Activity 1: for women the German noun is "Chefin / Freundin / Feindin" (the
+    notebook writes "Ich wähle Gal Gadot als Chef" and "Taylor Swift als Freund"). The
+    examples now use "als Chefin" and "als Freundin", and the frames give both forms.
+    The teacher's correction list "ist → sein (nicht erlaubt)" is now "sein → ist".
+  - >-
+    Activity 3: "Was arbeitet dein Freund?" is not correct German. Because the model
+    answer is "Er arbeitet im Büro", the question is now "Wo arbeitet dein Freund?";
+    "Er arbeitet 5 Tage" is now "Er arbeitet fünf Tage in der Woche".
+  - >-
+    Warm-up question 2: the frame "Ich liebe, dass ___ (Name) ___, ___ und ___ ist" is
+    not natural; it is now "Ich mag ___ (Name), weil er / sie ___, ___ und ___ ist".
+    Question 3 now also offers "Meine Freundin ist wichtig, weil sie ___ ist".
+  - >-
+    The Hebrew translations of the Mori messages were left out (students copy the
+    German message; Mori explains in Hebrew on request). "Hi Mori" is now "Hallo
+    Mori", as in the other cycles. Garbled characters ("ð") and broken headings from
+    the export were removed.
+  - >-
+    Teacher-only instructions (only 3 famous people at a time, timings, "go round and
+    correct", the correction lists) moved to teacher notes. The "Was haben wir heute
+    geschafft?" checklist from the summary was left out.
+  - >-
+    Vocabulary: nouns now have their article (der Freund, die Freundin, …); "groß" is
+    glossed "גבוה / גדול"; "freundlich" is glossed "ידידותי / חברותי". Please confirm.
+  - >-
+    Activity times given as ranges (12–15 minutes) are recorded as the higher number.
+    The "Antwort Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: freundschaft-unterricht
+    title: 'Unterricht: Freundschaft'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Freundschaft
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Beschreibende Sätze
+            description: Mein Freund ist nett. Sie ist nicht schüchtern.
+          - name: Handlungen im Präsens
+            description: Er arbeitet im Büro. Wir spielen zusammen.
+      - id: quizlet
+        type: externalLink
+        label: Freundschaft auf Quizlet
+        url: https://quizlet.com/br/1114787854/%D7%97%D7%91%D7%A8%D7%95%D7%99%D7%95%D7%AA-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich heiße ___. Ich habe einen Freund / eine Freundin. Wir ___ zusammen.
+        example: Ich heiße Daniel. Ich habe einen Freund. Wir lernen zusammen.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Wann triffst du deine Freunde?
+            frame: Ich treffe meine Freunde am ___ um ___. (am Freitag, am Abend, um 18 Uhr)
+          - question: 'Wähle einen Freund oder eine Freundin: Was magst du an dieser Person? (3 Adjektive)'
+            frame: Ich mag ___ (Name), weil er / sie ___, ___ und ___ ist.
+          - question: Warum ist dein Freund / deine Freundin wichtig?
+            frame: Mein Freund ist wichtig, weil er ___ ist. / Meine Freundin ist wichtig, weil sie ___ ist.
+          - question: Sind Freundschaften wichtig? Warum?
+            frame: |-
+              Ja, ich denke, Freundschaften sind wichtig, weil ___.
+              Nein, ich denke, Freundschaften sind nicht wichtig, weil ___.
+          - question: Wie fühlst du dich mit deinen Freunden?
+            frame: Ich fühle mich ___, weil ___.
+          - question: Was machst du für deine Freunde?
+            frame: Ich ___ für meine Freunde.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Chef, Freund fürs Leben und Feind'
+        skills: [Beschreibende Sätze]
+        minutes: 15
+        steps:
+          - Lies die 6 Adjektive an der Tafel und sprich nach.
+          - Schau die 3 bekannten Personen an. Ist sie nett oder stark?
+          - Schreib die 3 Sätze unten. Nur 1 Adjektiv pro Satz, nur aus der Liste.
+          - Lies einen Satz laut vor.
+          - 'Die Klasse antwortet: Ist das gut? Ja! / Nein!'
+        wordBank: [nett, lustig, stark, klug, ruhig, aktiv]
+        example: |-
+          *Ich wähle Gal Gadot als Chefin, weil sie stark ist.*
+          *Ich wähle Taylor Swift als Freundin, weil sie nett ist.*
+          *Ich wähle Leonardo DiCaprio als Feind, weil er ruhig ist.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Deine 3 Sätze
+        items:
+          - question: Ich wähle ___ als Chef / Chefin, weil er / sie ___ ist.
+          - question: Ich wähle ___ als Freund / Freundin, weil er / sie ___ ist.
+          - question: Ich wähle ___ als Feind / Feindin, weil er / sie ___ ist.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Ist dein Freund …?'
+        skills: [Beschreibende Sätze]
+        minutes: 12
+        steps:
+          - Lies die Wörter an der Tafel und sprich nach.
+          - Wähle eine reale Person, einen Freund oder eine Freundin.
+          - 'Partnerarbeit: A fragt, B antwortet. Dann wechseln.'
+          - Beschreibe jetzt den Freund deines Partners.
+        wordBank: [groß, klein, lustig, ruhig, freundlich, schüchtern]
+        example: |-
+          *Ist dein Freund groß? – Ja, er ist groß. / Nein, er ist klein.*
+          *Ist deine Freundin lustig? – Ja, sie ist lustig. / Nein, sie ist nicht lustig.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Frag deinen Partner
+        items:
+          - question: Ist dein Freund groß?
+            frame: Ja, er ist ___. / Nein, er ist nicht ___.
+          - question: Ist er lustig?
+            frame: Ja, er ist ___. / Nein, er ist nicht ___.
+          - question: Ist er freundlich?
+            frame: Ja, er ist ___. / Nein, er ist nicht ___.
+          - question: Beschreibe den Freund deines Partners.
+            frame: Der Freund meines Partners ist ___ und ___. Er ist nicht ___.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Wie gut kennst du deinen Freund?'
+        skills: [Handlungen im Präsens]
+        minutes: 12
+        steps:
+          - Lies die Verben an der Tafel und sprich nach.
+          - Wähle eine reale Person, einen Freund oder eine Freundin.
+          - 'Partnerarbeit: A fragt, B antwortet. Dann wechseln.'
+          - Sag einen Satz über den Freund deines Partners.
+        wordBank: [arbeiten, spielen, lernen, hören, essen]
+        example: |-
+          *Er arbeitet im Büro.*
+          *Er arbeitet fünf Tage in der Woche.*
+          *Er spielt gern.*
+          *Er spielt nicht gern Tennis.*
+      - id: act3-questions
+        type: discussionQuestions
+        title: Frag deinen Partner
+        items:
+          - question: Wo arbeitet dein Freund?
+            frame: Er arbeitet ___.
+          - question: Wie oft arbeitet er?
+            frame: Er arbeitet ___ Tage in der Woche.
+          - question: Was macht er gern?
+            frame: Er ___ gern. / Er mag ___.
+          - question: Was macht er nicht gern?
+            frame: Er ___ nicht gern. / Er mag ___ nicht.
+          - question: Sag einen Satz über den Freund deines Partners.
+            frame: Der Freund meines Partners arbeitet ___. Er mag ___. Er mag ___ nicht.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Der perfekte Tag mit Freunden'
+        skills: [Handlungen im Präsens]
+        minutes: 10
+        steps:
+          - Plane deinen perfekten Tag mit Freunden. Schreib unten (5 Minuten).
+          - Nur Präsens, nur einfache Verben.
+          - Lies 3 Sätze der Gruppe vor.
+        example: |-
+          **Wo?** Am Strand. **Wann?** Am Samstag.
+          **Wir** stehen früh auf, treffen uns, kaufen Snacks, schwimmen, spielen Volleyball und sehen den Sonnenuntergang.
+      - id: act4-plan
+        type: discussionQuestions
+        title: Mein perfekter Tag
+        items:
+          - question: Wo? ___
+          - question: Wann? ___
+          - question: Wir ___.
+          - question: Wir ___.
+          - question: Wir ___.
+          - question: Wir ___.
+          - question: Wir ___.
+          - question: Wir ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fähigkeiten in diesem Zyklus: **Beschreibende Sätze** (Aktivitäten 1 und 2)
+          und **Handlungen im Präsens** (Aktivitäten 3 und 4). Ziel: Freunde einfach
+          beschreiben, Grundverben im Präsens benutzen, einfach über Freundschaft sprechen.
+      - id: n-intro
+        anchor: intro
+        text: Schreib das Modell an die Tafel, gib zuerst dein eigenes Beispiel und frag dann jeden Schüler.
+      - id: n-warmup
+        anchor: warmup
+        text: Stell jedem Schüler mindestens zwei Fragen. Die geschriebenen Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          **Wichtig:** Für israelische A1-Schüler immer nur 3 bekannte Personen
+          gleichzeitig zeigen, nie mehr (z. B. Gal Gadot, Taylor Swift, Leonardo
+          DiCaprio). Phase 1 (3 Min.): nur die 6 Adjektive an die Tafel, laut vorsprechen,
+          alle sprechen nach. Phase 2 (2 Min.): Personen zeigen und langsam fragen: „Kennst
+          du Gal Gadot? Ist sie nett oder stark?“ Phase 3 (3 Min.): die 3 Modellsätze an
+          die Tafel, sehr langsam lesen (Ich wähle … / als Chefin … / weil sie … / ist).
+          Phase 4 (4 Min.): Schüler schreiben nur die 3 Sätze; geh herum und korrigiere
+          sofort (er → sie, sein → ist, „weil“ fehlt, Chef → Chefin). Phase 5 (3–4 Min.):
+          jeder liest nur 1 Satz vor. Phase 6 (optional, 2 Min.): die Klasse antwortet nur
+          „Ja!“ oder „Nein!“.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Tafel (2 Min.): nur die 6 Wörter, vorsprechen, alle wiederholen zusammen. Freund
+          wählen (1 Min.). Fragen modellieren (2 Min.), alle sprechen einmal nach.
+          Partnerarbeit (5 Min.) nur mit den 3 Fragen; korrigiere sofort: ❌ er groß → ✅ er
+          ist groß. Mini-Beschreibung (3 Min.): 2–3 Schüler lesen laut vor.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Tafel (2 Min.): nur die 5 Verben, vorsprechen, alle wiederholen zusammen. Freund
+          wählen (1 Min.). Fragen und Mini-Modell an die Tafel (2 Min.), alle sprechen
+          einmal nach. Partnerarbeit (5 Min.) nur mit den 4 Fragen; korrigiere sofort: ❌ er
+          arbeit → ✅ er arbeitet, ❌ er spiel → ✅ er spielt. Kurzer Bericht (3 Min.): 2–3
+          Schüler sagen je einen Satz.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Das Beispiel nur vorlesen, nicht erklären. Schüler schreiben 5 Minuten, dann
+          präsentieren 2–3 Schüler je 3 Sätze. Regeln: nur Präsens, nur einfache Verben,
+          kein Zusatztext.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: freundschaft-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: intro-he
+        type: text
+        lang: he
+        text: >-
+          היום למדנו **איך לדבר על חברים בגרמנית בצורה פשוטה**. עבדנו על שני דברים
+          עיקריים: **לתאר חברים** (איך הם) ו**לספר מה הם עושים** (פעולות בהווה).
+      - id: rules-describe
+        type: ruleSummary
+        skill: Beschreibende Sätze
+        rules:
+          - text: '**sein** (להיות): Person + **ist** + Adjektiv.'
+            examples:
+              - Mein Freund **ist** nett. – החבר שלי נחמד.
+              - Meine Freundin **ist** lustig. – החברה שלי מצחיקה.
+              - Er **ist** groß. – הוא גבוה.
+              - Sie **ist** ruhig. – היא שקטה.
+          - text: '**nicht** (לא) steht nach **ist**.'
+            examples:
+              - Er ist **nicht** schüchtern. – הוא לא ביישן.
+              - Sie ist **nicht** klein. – היא לא נמוכה.
+          - text: 'Frage: **Ist** + Person + Adjektiv?'
+            examples:
+              - Ist dein Freund nett? – האם החבר שלך נחמד?
+              - Ist deine Freundin lustig? – האם החברה שלך מצחיקה?
+      - id: describe-he
+        type: text
+        lang: he
+        text: >-
+          כדי לתאר אדם בגרמנית משתמשים בפועל **sein** (להיות): נושא + **ist** + תואר. לא
+          שוכחים את **ist**: אומרים *Er ist groß* (הוא גבוה), לא *Er groß*. גם על עצמי:
+          *Ich bin ruhig*.
+      - id: rules-praesens
+        type: ruleSummary
+        skill: Handlungen im Präsens
+        rules:
+          - text: Das Verb bekommt eine Endung. Sie passt zur Person.
+            examples:
+              - ich spiel**e** – אני משחק
+              - du spiel**st** – אתה משחק
+              - er / sie spiel**t** – הוא / היא משחק/ת
+              - wir spiel**en** – אנחנו משחקים
+          - text: 'Verben mit **t** am Ende des Stamms bekommen ein extra **e**: er arbeit**et**.'
+            examples: [Er **arbeitet** im Büro. – הוא עובד במשרד.]
+          - text: 'Manche Verben ändern sich mit er / sie: essen → er **isst**.'
+            examples: [Wir **essen** Pizza. Er **isst** Pizza.]
+          - text: '**nicht** steht nach dem Verb.'
+            examples: [Ich **spiele nicht**. – אני לא משחק., Er **arbeitet nicht**. – הוא לא עובד.]
+      - id: praesens-he
+        type: text
+        lang: he
+        text: >-
+          כדי להגיד מה אני עושה או מה החבר עושה, משתמשים בפועל בהווה. הסיומת של הפועל
+          משתנה לפי הגוף: **ich -e**, **du -st**, **er / sie -t**, **wir -en**. תמיד צריך
+          פועל במשפט, ומדברים רק בזמן הווה.
+      - id: endings-table
+        type: table
+        caption: Präsens – spielen, lernen, arbeiten
+        header: [Person, spielen, lernen, arbeiten]
+        rows:
+          - [ich, spiele, lerne, arbeite]
+          - [du, spielst, lernst, arbeitest]
+          - [er / sie, spielt, lernt, arbeitet]
+          - [wir, spielen, lernen, arbeiten]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die zwei Fähigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: freundschaft-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-freundschaft
+        type: aiTutorPrompt
+        title: Freundschaft
+        message: >-
+          Hallo Mori! Ich möchte Deutsch üben. Bitte stell mir Fragen über Freundschaft
+          mit beschreibenden Sätzen und Handlungen im Präsens. Bitte korrigiere meine
+          Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du willst mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst etwas nicht? Schick: **Kannst du mir das auf Hebräisch erklären, aber mit dem deutschen Satz?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Zusatzübungen
+      - id: mori-bester-freund
+        type: aiTutorPrompt
+        title: Mein bester Freund
+        message: >-
+          Hallo Mori! Ich beschreibe meinen besten Freund mit Adjektiven und Handlungen.
+          Du sagst mir, ob wir gute Freunde sind.
+      - id: mori-gute-freunde
+        type: aiTutorPrompt
+        title: Was machen gute Freunde?
+        message: >-
+          Hallo Mori! Ich schreibe 3 Dinge, die gute Freunde machen. Eins ist falsch. Du
+          musst raten.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: freundschaft-uebung
+    book: workbook
+    title: 'Übung: Freundschaft'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fähigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-beschreiben
+        type: activity
+        activity: freundschaft-beschreiben
+      - id: ex-praesens
+        type: activity
+        activity: freundschaft-praesens
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: freundschaft-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Freundschaft
+        glossLang: he
+        link: https://quizlet.com/br/1114787854/%D7%97%D7%91%D7%A8%D7%95%D7%99%D7%95%D7%AA-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &freundschaft-words
+          - { term: der Freund, gloss: חבר }
+          - { term: die Freundin, gloss: חברה }
+          - { term: die Freundschaft, gloss: חברות }
+          - { term: der Chef, gloss: בוס / מנהל }
+          - { term: der Feind, gloss: אויב }
+          - { term: wichtig, gloss: חשוב }
+          - { term: nett, gloss: נחמד }
+          - { term: lustig, gloss: מצחיק }
+          - { term: ruhig, gloss: שקט }
+          - { term: stark, gloss: חזק }
+          - { term: klug, gloss: חכם }
+          - { term: aktiv, gloss: פעיל }
+          - { term: freundlich, gloss: ידידותי / חברותי }
+          - { term: schüchtern, gloss: ביישן }
+          - { term: groß, gloss: גבוה / גדול }
+          - { term: klein, gloss: קטן / נמוך }
+          - { term: treffen, gloss: לפגוש }
+          - { term: spielen, gloss: לשחק }
+          - { term: lernen, gloss: ללמוד }
+          - { term: arbeiten, gloss: לעבוד }
+          - { term: hören, gloss: לשמוע / להקשיב }
+          - { term: essen, gloss: לאכול }
+          - { term: mögen, gloss: לאהוב / לחבב }
+          - { term: helfen, gloss: לעזור }
+          - { term: feiern, gloss: לחגוג }
+          - { term: sprechen, gloss: לדבר }
+          - { term: besuchen, gloss: לבקר }
+          - { term: zusammen, gloss: ביחד }
+          - { term: immer, gloss: תמיד }
+          - { term: nie, gloss: אף פעם }
+          - { term: oft, gloss: לעיתים קרובות }
+          - { term: manchmal, gloss: לפעמים }
+          - { term: weil, gloss: כי }
+          - { term: warum, gloss: למה }
+          - { term: wann, gloss: מתי }
+          - { term: wie, gloss: איך }
+
+vocabulary:
+  - slug: freundschaft
+    title: Freundschaft
+    items: *freundschaft-words
+
+activities:
+  - slug: freundschaft-beschreiben
+    title: 'Beschreibende Sätze: Er ist nett.'
+    minutes: 8
+    items:
+      - id: ist-nett
+        type: multipleChoice
+        prompt: Mein Freund ___ nett.
+        options:
+          - { text: ist, correct: true }
+          - {
+              text: bin,
+              feedback: '*bin* geht nur mit *ich*: Ich bin nett. Mein Freund *ist* nett.',
+            }
+          - {
+              text: sein,
+              feedback: '*sein* ist die Grundform. Mit er / sie / mein Freund sagen wir *ist*.',
+            }
+      - id: ist-bin
+        type: fillBlank
+        prompt: Ergänze mit *ist* oder *bin*.
+        text: Meine Freundin ___ lustig. Ich ___ ruhig.
+        blanks: [[ist], [bin]]
+        wordBank: [ist, bin]
+      - id: adjektive-he
+        type: matching
+        prompt: Verbinde die Adjektive.
+        pairs:
+          - [nett, נחמד]
+          - [lustig, מצחיק]
+          - [stark, חזק]
+          - [klug, חכם]
+          - [schüchtern, ביישן]
+      - id: er-gross
+        type: trueFalse
+        prompt: '*Er groß.* ist ein richtiger Satz.'
+        answer: false
+        feedback:
+          correct: 'Richtig! Wir brauchen immer ein Verb: Er *ist* groß.'
+          incorrect: 'Der Satz braucht ein Verb: Er *ist* groß.'
+      - id: nicht-position
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Er ist nicht schüchtern., correct: true }
+          - {
+              text: Er nicht ist schüchtern.,
+              feedback: '*nicht* steht nach *ist*: Er ist nicht schüchtern.',
+            }
+          - {
+              text: Er ist schüchtern nicht.,
+              feedback: '*nicht* steht nach *ist* und vor dem Adjektiv: Er ist nicht schüchtern.',
+            }
+      - id: ordne-frage
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einer Frage.
+        sentence: Ist dein Freund lustig?
+      - id: ja-sie
+        type: fillBlank
+        prompt: Antworte mit *er* oder *sie*.
+        text: 'Ist deine Freundin klug? – Ja, ___ ist klug.'
+        blanks: [[sie]]
+      - id: ordne-partner
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Der Freund meines Partners ist lustig.
+
+  - slug: freundschaft-praesens
+    title: 'Handlungen im Präsens: Er spielt.'
+    minutes: 8
+    items:
+      - id: er-arbeitet
+        type: multipleChoice
+        prompt: Er ___ im Büro.
+        options:
+          - { text: arbeitet, correct: true }
+          - {
+              text: arbeit,
+              feedback: 'Mit *er* braucht das Verb eine Endung: arbeiten → er *arbeitet* (mit extra e).',
+            }
+          - { text: arbeiten, feedback: '*arbeiten* passt zu *wir*. Mit *er*: er arbeitet.' }
+      - id: spiele-spielt
+        type: fillBlank
+        prompt: Ergänze das Verb *spielen*.
+        text: Ich ___ Tennis. Er ___ Fußball.
+        blanks: [[spiele], [spielt]]
+      - id: lernen-endungen
+        type: matching
+        prompt: Verbinde die Person mit dem Verb.
+        pairs:
+          - [ich, lerne]
+          - [du, lernst]
+          - [er, lernt]
+          - [wir, lernen]
+      - id: regel-t
+        type: trueFalse
+        prompt: 'Mit *er* und *sie* (eine Person) endet das Verb auf *-t*: er spielt, sie lernt.'
+        answer: true
+        feedback:
+          correct: 'Richtig! er spiel*t*, sie lern*t*.'
+          incorrect: 'Doch: mit er / sie endet das Verb auf -t: er spielt, sie lernt.'
+      - id: nicht-verb
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Ich spiele nicht., correct: true }
+          - { text: Ich nicht spiele., feedback: '*nicht* steht nach dem Verb: Ich spiele nicht.' }
+          - { text: Ich bin spiele., feedback: 'Kein *bin* vor einem Verb: Ich spiele.' }
+      - id: lernen-hoeren
+        type: fillBlank
+        prompt: Ergänze die Verben in Klammern.
+        text: Wir ___ zusammen. (lernen) Maya ___ gern Musik. (hören)
+        blanks: [[lernen], [hört, hoert]]
+      - id: ordne-gern
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einer Frage.
+        sentence: Was macht dein Freund gern?
+      - id: mit-freunden
+        type: shortAnswer
+        prompt: Was machst du mit deinen Freunden? Schreib einen Satz im Präsens.

@@ -1,0 +1,541 @@
+# Cycle "Routine", converted from the German Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: routine
+title: Routine
+goal: Über deinen Tagesablauf sprechen, mit Uhrzeiten und Verben im Präsens.
+position: 5
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Zahlen und Uhrzeiten" and "Verben im Präsens") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Skill names: "Zahlen & Zeiten" is written as "Zahlen und Uhrzeiten" (the summary
+    calls it "Zahlen und Wochentage"; it covers age, clock times and weekdays). "Verben
+    im Präsens (Präsens einfache Form)" is shortened to "Verben im Präsens": "einfache
+    Form" is a literal translation of "present simple" and has no meaning in German.
+  - >-
+    The summary is written in Hebrew in the notebook. The rules are given here as
+    short German ruleSummary blocks; the notebook's Hebrew "סיכום קצר" is kept as a
+    Hebrew (lang he) text block under the rules. Please check the German wording.
+  - >-
+    Verb rule 1 said "first the subject, then the verb" and "the verb is never at the
+    beginning (except in questions)". That is only half right: in German the verb is in
+    position 2, but position 1 can also be a time (Am Montag lerne ich Deutsch). The
+    rule is rewritten that way.
+  - >-
+    Verb rule 2 ("er/sie/es: add t") is kept, with -et after t/d (arbeitet) and the
+    vowel change (lesen → liest, essen → isst, schlafen → schläft, sehen → sieht). A
+    conjugation table (lernen) and a rule on separable verbs (aufstehen → Ich stehe um 7
+    Uhr auf) were ADDED, because the activities use aufstehen, aufwachen and fernsehen
+    all the time. Please confirm.
+  - >-
+    Negation rule: the notebook names nicht and kein without saying when to use which.
+    Added: nicht for a verb (Ich gehe nicht ins Kino), kein before a noun (Ich esse kein
+    Frühstück).
+  - >-
+    Days rule: the "wrong" example "Montag gehe ich arbeiten" was left out; it is
+    common in spoken German, so it should not be marked as wrong. The rule now just says
+    "vor einem Wochentag steht am".
+  - >-
+    Small corrections: "Ich esse um 19 Uhr Abendessen mit meiner Familie" → "Ich esse um
+    19 Uhr mit meiner Familie zu Abend"; the intro frame "Am ___." is joined to the
+    sentence before ("…pro Woche, am ___."); activity titles lost their English-style
+    tags ("Routine AKTIONEN UND ZAHLEN", "(Aktionen und Zahlen)"), which are now the
+    activities' skill labels.
+  - >-
+    Mori messages were in English in the notebook; they are translated into German
+    (like the Spanish and English courses, which write them in the course language).
+  - >-
+    Vocabulary: "stehen – עומד / נמצא" → "stehen – לעמוד"; "die Uhr / die Uhrzeit" kept
+    as one card. Weekdays have their article (der Montag…). Please confirm.
+  - The Quizlet link lost its tracking parameter (?new).
+  - Activity times are not given in the notebook for this cycle; none are recorded.
+  - >-
+    The "Antwort von Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: routine-unterricht
+    title: 'Unterricht: Routine'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Routine
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Zahlen und Uhrzeiten
+            description: Alter, Uhrzeiten (*um 7 Uhr*) und Wochentage (*am Montag*)
+          - name: Verben im Präsens
+            description: '*ich lerne, er lernt*: das Verb an Position 2, Fragen und Verneinung'
+      - id: quizlet
+        type: externalLink
+        label: Routine auf Quizlet
+        url: https://quizlet.com/il/1113962511/%D7%A9%D7%92%D7%A8%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Ich lerne Deutsch ___ Mal pro Woche, am ___.
+        example: Ich bin Anna. Ich lerne Deutsch zwei Mal pro Woche, am Montag und am Donnerstag.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Um wie viel Uhr stehst du auf?
+            frame: Ich stehe um ___ Uhr auf.
+          - question: Was isst du zum Frühstück?
+            frame: Zum Frühstück esse ich ___.
+          - question: Was machst du jeden Dienstag?
+            frame: Am Dienstag ___ ich ___.
+          - question: Was machst du am Morgen?
+            frame: Am Morgen ___ ich ___.
+          - question: Was machst du am Abend?
+            frame: Am Abend ___ ich ___.
+          - question: Um wie viel Uhr gehst du schlafen?
+            frame: Ich gehe um ___ Uhr schlafen.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Ein perfekter Tag – für mich und für ihn / sie!'
+        skills: [Zahlen und Uhrzeiten, Verben im Präsens]
+        steps:
+          - 'Arbeitet zu zweit. Wähle einen Wochentag und schreib einen perfekten Tag für dich, in der 1. Person (*ich*).'
+          - 'Schreib mindestens 5 Aktivitäten und benutze Uhrzeiten (*um 8 Uhr, um 10 Uhr*).'
+          - Lies deinen Plan deinem Partner / deiner Partnerin vor und erkläre, warum diese Aktivitäten dich glücklich machen. Dein Partner notiert die Lieblingsaktivitäten.
+          - Schreib jetzt einen perfekten Tag für deinen Partner, in der 3. Person (*er / sie*). Du kannst die gleichen Aktivitäten benutzen oder neue hinzufügen.
+          - 'Lies den neuen Plan laut vor. Dein Partner sagt: *Stimmt!* oder *Ich möchte etwas ändern.*'
+        example: |-
+          *Ich wache um 8 Uhr auf und esse Pfannkuchen zum Frühstück.*
+          *Er wacht um 8 Uhr auf und isst Pfannkuchen zum Frühstück.*
+      - id: act1-plan
+        type: discussionQuestions
+        title: Mein perfekter Tag
+        items:
+          - question: Am ___ wache ich um ___ Uhr auf.
+          - question: Um ___ Uhr ___ ich ___.
+          - question: Um ___ Uhr ___ ich ___.
+          - question: Um ___ Uhr ___ ich ___.
+          - question: Um ___ Uhr gehe ich schlafen.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Wie spät ist es?'
+        skills: [Zahlen und Uhrzeiten, Verben im Präsens]
+        steps:
+          - Denk an eine Aktivität, die du jeden Tag machst, und an die genaue Uhrzeit. Die Uhrzeit bleibt geheim.
+          - 'Sag der Klasse nur die Aktivität, ohne Uhrzeit, und frag: *Um wie viel Uhr ist das?*'
+          - 'Die anderen raten: *Ist es um 18 Uhr?* Antworte nur *Ja* oder *Nein*, bis jemand die richtige Uhrzeit sagt.'
+          - Wer richtig rät, bekommt Applaus. Dann ist der nächste Schüler dran.
+        example: |-
+          *Ich esse mit meiner Familie zu Abend. Um wie viel Uhr ist das?*
+          *Ist es um 18 Uhr?* – *Nein!*
+          *Ist es um 19 Uhr?* – *Ja!*
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Wer ist das?'
+        skills: [Verben im Präsens, Zahlen und Uhrzeiten]
+        steps:
+          - Schreib eine kurze Tagesroutine über eine Person, die du kennst (Familie, Freund oder eine berühmte Person). Benutze die 3. Person (*er / sie*).
+          - Schreib mindestens 5 Sätze mit Uhrzeiten.
+          - 'Schreib am Ende drei Optionen, zum Beispiel: a) meine Mutter, b) meine Schwester, c) meine beste Freundin.'
+          - 'Lies deine Routine und die drei Optionen laut vor. Die Klasse rät: *Ist es a), b) oder c)?*'
+        example: '*Sie steht um 6 Uhr auf. Sie geht ins Fitnessstudio. Um 8 Uhr frühstückt sie. Sie arbeitet von 9 Uhr bis 17 Uhr. Abends sieht sie fern.*'
+      - id: act3-routine
+        type: discussionQuestions
+        title: Wer ist das?
+        items:
+          - question: Er / Sie steht um ___ Uhr auf.
+          - question: Um ___ Uhr ___ er / sie ___.
+          - question: Um ___ Uhr ___ er / sie ___.
+          - question: Er / Sie arbeitet / lernt von ___ Uhr bis ___ Uhr.
+          - question: Am Abend ___ er / sie ___.
+          - question: 'a) ___ b) ___ c) ___'
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Was für ein Zufall!'
+        skills: [Zahlen und Uhrzeiten, Verben im Präsens]
+        steps:
+          - Ein Schüler beginnt und sagt eine Aktivität mit Uhrzeit in der 1. Person.
+          - 'Machst du das Gleiche zur gleichen Zeit? Dann ruf: *Was für ein Zufall!* Jetzt bist du dran: Sag eine andere Aktivität mit Uhrzeit.'
+          - Das Spiel geht weiter, bis jeder mindestens einmal gesprochen hat.
+        example: |-
+          *Ich esse um 13 Uhr zu Mittag.*
+          *Was für ein Zufall! Ich sehe um 16 Uhr fern.*
+      - id: act5
+        type: classActivity
+        title: 'Aktivität 5: Wie unterschiedlich oder ähnlich sind unsere Routinen?'
+        skills: [Verben im Präsens, Zahlen und Uhrzeiten]
+        steps:
+          - Arbeitet zu zweit. Stellt euch die Fragen unten und antwortet in der 1. Person.
+          - 'Vergleicht eure Routinen in der 3. Person: *Sie steht um 7 Uhr auf, aber ich stehe um 6 Uhr auf.*'
+          - Macht eine kurze Liste mit Gemeinsamkeiten und Unterschieden.
+          - Erzählt der Klasse von eurer Liste.
+        example: '*Wir stehen beide um 7 Uhr auf, aber sie isst Brot und ich esse Müsli.*'
+      - id: act5-questions
+        type: discussionQuestions
+        items:
+          - question: Um wie viel Uhr stehst du auf?
+            frame: Ich stehe um ___ Uhr auf. / Er / Sie steht um ___ Uhr auf, aber ich ___.
+          - question: Was isst du zum Frühstück?
+            frame: Ich esse ___. / Er / Sie isst ___, aber ich esse ___.
+          - question: Wann gehst du ins Bett?
+            frame: Ich gehe um ___ Uhr ins Bett.
+          - question: 'Gemeinsamkeiten:'
+            frame: Wir ___ beide ___.
+          - question: 'Unterschiede:'
+            frame: Er / Sie ___, aber ich ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fähigkeiten in diesem Zyklus: **Zahlen und Uhrzeiten** und **Verben im
+          Präsens**. Alle fünf Aktivitäten üben beide Fähigkeiten; wähle zwei oder drei
+          für die Stunde.
+      - id: n-intro
+        anchor: intro
+        text: Kurz und knapp, 2 Sätze pro Person, höchstens 30 Sekunden. Gib zuerst dein eigenes Beispiel.
+      - id: n-warmup
+        anchor: warmup
+        text: Stelle jedem Schüler mindestens zwei Fragen. Die getippten Antworten siehst du unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Vier Phasen: (1) perfekten Tag in der 1. Person schreiben, (2) dem Partner
+          vorlesen, (3) einen perfekten Tag für den Partner in der 3. Person schreiben, (4)
+          laut vorlesen; der Partner bestätigt oder ändert. Achte in Phase 3 auf die Endung
+          -t und auf *isst / liest / sieht*.
+      - id: n-act2
+        anchor: act2
+        text: Die Uhrzeit bleibt geheim, bis jemand richtig rät. Wer richtig geraten hat, bekommt Applaus von der ganzen Klasse.
+      - id: n-act3
+        anchor: act3
+        text: Wer zuerst richtig rät, bekommt einen Punkt oder Applaus.
+      - id: n-act4
+        anchor: act4
+        text: Wer „Was für ein Zufall!“ ruft, übernimmt das Spiel. Achte darauf, dass jeder mindestens einmal spricht.
+      - id: n-act5
+        anchor: act5
+        text: Am Ende erzählt jedes Paar der Klasse von seinen Gemeinsamkeiten und Unterschieden.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: routine-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Das haben wir heute gelernt
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Zahlen und Uhrzeiten
+        rules:
+          - text: Sag eine Zahl immer in einem ganzen Satz.
+            examples:
+              - Ich bin 25 Jahre alt.
+              - Meine Telefonnummer ist 12345.
+              - Ich wache um 7 Uhr auf.
+          - text: Vor einem Wochentag steht **am**.
+            examples:
+              - '**Am** Montag gehe ich zur Arbeit.'
+              - '**Am** Samstag entspanne ich mich.'
+          - text: 'Für die Uhrzeit sagt man **um** + Zahl + **Uhr**.'
+            examples:
+              - Ich stehe **um 6 Uhr** auf.
+              - Ich gehe **um 23 Uhr** schlafen.
+      - id: rules-verbs
+        type: ruleSummary
+        skill: Verben im Präsens
+        rules:
+          - text: Im Aussagesatz steht das Verb an **Position 2**. Auf Position 1 steht das Subjekt oder zum Beispiel eine Zeit.
+            examples:
+              - Ich **lerne** Deutsch.
+              - Wir **spielen** Fußball.
+              - Am Montag **lerne** ich Deutsch.
+              - 'Falsch: *Ich Deutsch lerne.* ✗'
+          - text: 'Bei **er / sie / es** endet das Verb auf **-t** (nach -t oder -d: **-et**).'
+            examples: [spielen → er spielt, arbeiten → sie arbeitet]
+          - text: 'Manche Verben ändern bei **du** und **er / sie / es** auch den Vokal.'
+            examples: [lesen → er liest, essen → er isst, sehen → er sieht, schlafen → er schläft]
+          - text: 'Trennbare Verben: Der erste Teil geht ans Ende.'
+            examples: [aufstehen → Ich stehe um 7 Uhr auf., fernsehen → Abends sehe ich fern.]
+          - text: 'Ja/Nein-Fragen: Das Verb steht an **Position 1**.'
+            examples: [Du gehst ins Kino. → **Gehst** du ins Kino?]
+          - text: 'Verneinung: **nicht** verneint ein Verb, **kein** steht vor einem Nomen.'
+            examples: [Ich gehe **nicht** ins Kino., Ich esse **kein** Frühstück.]
+      - id: verbs-table
+        type: table
+        caption: 'Verben im Präsens: lernen, arbeiten, lesen'
+        header: [Person, lernen, arbeiten, lesen]
+        rows:
+          - [ich, lerne, arbeite, lese]
+          - [du, lernst, arbeitest, liest]
+          - [er / sie / es, lernt, arbeitet, liest]
+          - [wir, lernen, arbeiten, lesen]
+          - [ihr, lernt, arbeitet, lest]
+          - [sie / Sie, lernen, arbeiten, lesen]
+      - id: summary-he
+        type: text
+        lang: he
+        text: |-
+          **סיכום קצר**
+          ✔ לפני ימים: **am**
+          ✔ לפני שעה: **um … Uhr**
+          ✔ הפועל תמיד במקום השני
+          ✔ בגוף שלישי (er / sie / es) – כמעט תמיד מוסיפים **t**
+          ✔ שאלות כן/לא – הפועל ראשון
+          ✔ שלילה – **nicht / kein**
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die beiden Fähigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: routine-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-routine
+        type: aiTutorPrompt
+        title: Über deinen Tagesablauf sprechen
+        message: >-
+          Hallo Mori! Ich möchte über meinen Tagesablauf sprechen. Kannst du mir Fragen
+          mit den Fähigkeiten Zahlen und Uhrzeiten und Verben im Präsens stellen? Bitte
+          benutze nur das Präsens und korrigiere meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Möchtest du mehr Fragen? Schick: **Bitte frag mich mehr!**
+          Verstehst du eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra-Übung
+      - id: mori-lueckensaetze
+        type: aiTutorPrompt
+        title: Welche Uhrzeit fehlt?
+        message: >-
+          Hallo Mori! Bitte sag Sätze über den Tagesablauf, in denen eine Zahl oder
+          Uhrzeit fehlt (zum Beispiel: Ich esse um ___ Uhr zu Mittag.). Ich ergänze die
+          Lücke mit einer Zahl und sage den ganzen Satz im Präsens. Bitte korrigiere mich,
+          wenn ich Fehler mache.
+      - id: mori-typischer-tag
+        type: aiTutorPrompt
+        title: Ein typischer Tag
+        message: >-
+          Hallo Mori! Ich erzähle dir von einem typischen Tag, mit Zahlen und Verben im
+          Präsens (zum Beispiel: Ich stehe um 7 Uhr auf und ich frühstücke um 8 Uhr.).
+          Bitte stell mir weitere Fragen, damit das Gespräch weitergeht, und hilf mir,
+          besser zu werden.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: routine-uebung
+    book: workbook
+    title: 'Übung: Routine'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fähigkeiten des Zyklus allein. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-uhrzeiten
+        type: activity
+        activity: routine-uhrzeiten
+      - id: ex-verben
+        type: activity
+        activity: routine-verben
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: routine-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für die Routine
+        glossLang: he
+        link: https://quizlet.com/il/1113962511/%D7%A9%D7%92%D7%A8%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &routine-words
+          - { term: aufstehen, gloss: לקום }
+          - { term: aufwachen, gloss: להתעורר }
+          - { term: essen, gloss: לאכול }
+          - { term: frühstücken, gloss: לאכול ארוחת בוקר }
+          - { term: arbeiten, gloss: לעבוד }
+          - { term: lernen, gloss: ללמוד }
+          - { term: spielen, gloss: לשחק }
+          - { term: fernsehen, gloss: לראות טלוויזיה }
+          - { term: lesen, gloss: לקרוא }
+          - { term: schlafen, gloss: לישון }
+          - { term: der Morgen, gloss: הבוקר }
+          - { term: der Abend, gloss: הערב }
+          - { term: der Tag, gloss: היום }
+          - { term: die Uhr / die Uhrzeit, gloss: שעה }
+          - { term: der Montag, gloss: יום שני }
+          - { term: der Dienstag, gloss: יום שלישי }
+          - { term: der Samstag, gloss: שבת }
+          - { term: um, gloss: ב־ (לפני שעה) }
+          - { term: am, gloss: ב־ (לפני יום) }
+          - { term: ich, gloss: אני }
+          - { term: du, gloss: אתה / את }
+          - { term: er, gloss: הוא }
+          - { term: sie, gloss: היא }
+          - { term: wir, gloss: אנחנו }
+          - { term: was, gloss: מה }
+          - { term: wann, gloss: מתי }
+          - { term: wie viel Uhr, gloss: באיזו שעה / כמה השעה }
+          - { term: nicht, gloss: לא }
+          - { term: kein, gloss: אין / לא (שלילה) }
+          - { term: sein, gloss: להיות }
+          - { term: gehen, gloss: ללכת }
+          - { term: sehen, gloss: לראות }
+          - { term: machen, gloss: לעשות }
+          - { term: stehen, gloss: לעמוד }
+
+vocabulary:
+  - slug: routine
+    title: Routine
+    items: *routine-words
+
+activities:
+  - slug: routine-uhrzeiten
+    title: 'Zahlen und Uhrzeiten: am, um, Uhr'
+    minutes: 8
+    items:
+      - id: um-sieben
+        type: multipleChoice
+        prompt: Ich stehe ___ 7 Uhr auf.
+        options:
+          - { text: um, correct: true }
+          - { text: am, feedback: '*am* steht vor einem Wochentag. Vor einer Uhrzeit steht *um*.' }
+          - { text: im, feedback: 'Vor einer Uhrzeit steht *um*: *um 7 Uhr*.' }
+      - id: am-montag
+        type: multipleChoice
+        prompt: ___ Montag gehe ich zur Arbeit.
+        options:
+          - { text: Am, correct: true }
+          - { text: Um, feedback: '*um* steht vor einer Uhrzeit. Vor einem Wochentag steht *am*.' }
+          - { text: Im, feedback: 'Vor einem Wochentag steht *am*: *am Montag*.' }
+      - id: am-um
+        type: fillBlank
+        prompt: Ergänze mit *am* oder *um*.
+        text: ___ Samstag spiele ich Fußball. Ich esse ___ 13 Uhr zu Mittag.
+        blanks: [[am], [um]]
+        wordBank: [am, um]
+      - id: um-uhr
+        type: trueFalse
+        prompt: 'Für die Uhrzeit sagt man *um* + Zahl + *Uhr*: *um 8 Uhr*.'
+        answer: true
+        feedback:
+          correct: Richtig! *Ich stehe um 8 Uhr auf.*
+          incorrect: 'Doch: *um* + Zahl + *Uhr*, zum Beispiel *um 8 Uhr*.'
+      - id: zahlen
+        type: matching
+        prompt: Verbinde die Zahlen mit den Wörtern.
+        pairs:
+          - ['7', sieben]
+          - ['13', dreizehn]
+          - ['19', neunzehn]
+          - ['23', dreiundzwanzig]
+          - ['25', fünfundzwanzig]
+      - id: jahre-alt
+        type: fillBlank
+        prompt: Ergänze den Satz.
+        text: Ich bin 25 Jahre ___.
+        blanks: [[alt]]
+      - id: ordne-frage
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einer Frage.
+        sentence: Um wie viel Uhr stehst du auf?
+      - id: mein-morgen
+        type: shortAnswer
+        prompt: Um wie viel Uhr stehst du am Montag auf? Schreib einen ganzen Satz.
+
+  - slug: routine-verben
+    title: 'Verben im Präsens: ich lerne, er lernt'
+    minutes: 8
+    items:
+      - id: er-arbeitet
+        type: multipleChoice
+        prompt: Er ___ von 9 Uhr bis 17 Uhr.
+        options:
+          - { text: arbeitet, correct: true }
+          - {
+              text: arbeite,
+              feedback: '*arbeite* ist für *ich*. Bei *er* endet das Verb auf -et: *er arbeitet*.',
+            }
+          - {
+              text: arbeiten,
+              feedback: '*arbeiten* ist für *wir* oder *sie* (Plural). Bei *er*: *er arbeitet*.',
+            }
+      - id: sie-liest
+        type: multipleChoice
+        prompt: Am Abend ___ sie ein Buch.
+        options:
+          - { text: liest, correct: true }
+          - { text: lest, feedback: '*lesen* ändert den Vokal: *er / sie liest*.' }
+          - { text: lese, feedback: '*lese* ist für *ich*. Bei *sie* (eine Person): *sie liest*.' }
+      - id: lernen-spielen
+        type: fillBlank
+        prompt: Ergänze die Verben *lernen* und *spielen* im Präsens.
+        text: Ich ___ Deutsch. Mein Bruder ___ Fußball.
+        blanks: [[lerne], [spielt]]
+        wordBank: [lerne, spielt]
+      - id: position-zwei
+        type: trueFalse
+        prompt: 'Dieser Satz ist richtig: *Ich Deutsch lerne.*'
+        answer: false
+        feedback:
+          correct: 'Richtig! Das Verb steht an Position 2: *Ich lerne Deutsch.*'
+          incorrect: 'Das Verb steht an Position 2: *Ich lerne Deutsch.*'
+      - id: konjugation
+        type: matching
+        prompt: Verbinde die Person mit dem Verb *lernen*.
+        pairs:
+          - [ich, lerne]
+          - [du, lernst]
+          - [er / sie / es, lernt]
+          - [wir, lernen]
+      - id: nicht-kein
+        type: multipleChoice
+        prompt: Ich gehe ___ ins Kino.
+        options:
+          - { text: nicht, correct: true }
+          - {
+              text: kein,
+              feedback: '*kein* steht vor einem Nomen (*kein Frühstück*). Ein Verb verneint man mit *nicht*.',
+            }
+          - { text: nein, feedback: '*Nein* ist eine Antwort. Im Satz verneint man mit *nicht*.' }
+      - id: aufstehen
+        type: fillBlank
+        prompt: Ergänze das Verb *aufstehen*.
+        text: Sie ___ um 6 Uhr ___.
+        blanks: [[steht], [auf]]
+      - id: ordne-frage
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einer Ja/Nein-Frage.
+        sentence: Gehst du ins Kino?

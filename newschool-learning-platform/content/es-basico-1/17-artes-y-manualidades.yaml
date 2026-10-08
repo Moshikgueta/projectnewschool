@@ -1,0 +1,602 @@
+# Cycle "Artes y manualidades", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: artes-y-manualidades
+title: Artes y manualidades
+goal: Describir obras de arte y hablar de lo que haces con las manos, con oraciones descriptivas y acciones en presente.
+position: 17
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Oraciones descriptivas" and "Acciones en presente")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    The source gives no activity times for this cycle (no minutes for the
+    introduction, warm-up, activities or summary), so no times are recorded. Please
+    add them if you want them shown.
+  - >-
+    Introduction: "Giro de la lección: Me gusta ___ y soy bueno/malo en eso" is
+    written as the frame "Soy ___. Me gusta ___ y soy bueno / buena / malo / mala en
+    eso."
+  - >-
+    Warm-up corrections: "¿Tienes pinturas en tu casa? Donde?" → "¿Dónde?"; the frame
+    "Me gusta ___ el arte porque ___" → "Me gusta / No me gusta el arte porque ___";
+    the colour examples "Este es azul, amarillo…", "Esto es verde" → "Es azul. / Es
+    verde."; the shape question now has the frame "Este es un ___. / Esta es una ___."
+    (a line is "una línea"). The source had the shape pictures as images, which did
+    not survive the export: the teacher shows objects (see the teacher note).
+  - >-
+    Activity 1: the title "ACCIONES EN PRE ENVIADO" (garbled) is now "¡Dibuja mi
+    imagen!"; the example "Dibuja un cuadrado en la parte inferior de la página" →
+    "en la parte de abajo de la página", to match the model phrases.
+  - >-
+    Activity 2 is called "La habitación desordenada", but the activity is a guessing
+    game about art objects ("¿Qué objeto es?"). The title is kept; please confirm or
+    rename it.
+  - >-
+    Activity 3: the source says "un banco de 10 adjetivos" but lists 9 (hermoso,
+    interesante, simple, moderno, viejo, grande, pequeño, oscuro, brillante); the
+    list is kept as is and the step says "banco de adjetivos". The image bank is a
+    Google Docs link and is kept as the activity's resource.
+  - >-
+    Activity 4: "Cada pareja recibe de 4–6 imágenes" → "recibe 4–6 imágenes"; the
+    example "No me gusta la foto donde la gente está sentada en el comedor porque es
+    linda" was illogical and now ends "porque es aburrida"; "Nos gusta la foto
+    que/con el…" → "Nos gusta la foto donde / con ___". The image bank (Google Docs)
+    is kept as the resource.
+  - >-
+    Activity 5 (not in the skills plan of the source) is kept as an extra activity.
+    Questions corrected: "¿Te gusta pintar? Que te gusta?" → "¿Te gusta pintar? ¿Qué
+    te gusta pintar?"; "Por que?" → "¿Por qué?"; "ir para conciertos" → "ir a
+    conciertos".
+  - >-
+    Summary: the six grammar points of "Habilidades gramaticales en el plan" are kept.
+    Points 1 and 2 are the cycle's two skills; points 3–6 (gustos, porque, hay /
+    tener, preposiciones) are grouped under "Otras estructuras de la clase".
+  - >-
+    Mori: the start message "con las habilidades para describir oraciones y acciones"
+    → "con las habilidades de oraciones descriptivas y oraciones con acciones en
+    presente simple"; the tip "con la oración en inglés" → "en español"; "Cuando Mori
+    adivine, diga" → "di". The source announces "2 actividades interactivas" but has
+    only one ("Adivina la manualidad").
+  - >-
+    Vocabulary glosses changed: "pintura" ציור → ציור / צבע (the warm-up uses
+    "pinturas" = paints); "tener" יש לי → יש ל־ / להחזיק; "gustar" אוהב → למצוא חן
+    / לאהוב. Please confirm.
+  - >-
+    The "Respuesta del estudiante 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: artes-y-manualidades-clase
+    title: 'Clase: Artes y manualidades'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Artes y manualidades
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Oraciones descriptivas en presente
+            description: '*ser* + adjetivo: *El cuadro es hermoso. Los colores son brillantes.*'
+          - name: Oraciones con acciones en presente
+            description: 'Verbos regulares en presente: *Yo pinto un cuadro. Tú dibujas una línea.*'
+      - id: quizlet
+        type: externalLink
+        label: Artes y manualidades en Quizlet
+        url: https://quizlet.com/il/858627241/basic-spanish-arts-crafts-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Me gusta ___ y soy bueno / buena / malo / mala en eso.
+        example: Soy Dana. Me gusta cantar y soy buena en eso.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Qué te gusta hacer con tus manos?
+            frame: Me gusta ___ con mis manos. (Me gusta dibujar con mis manos. / Me gusta pintar con mis manos.)
+          - question: ¿Cuál es la forma de este objeto?
+            frame: Este es un ___. / Esta es una ___. (Este es un círculo. / Esta es una línea.)
+          - question: ¿De qué color es este ___?
+            frame: Es ___. (Es azul. / Es verde. / Es rojo.)
+          - question: ¿Tienes pinturas en tu casa? ¿Dónde?
+            frame: |-
+              Sí, tengo en el / la ___. / No, no tengo.
+              Me gusta / No me gusta el arte porque ___.
+          - question: '¿Qué tipo de arte te gusta más: pintura, música, escultura o danza?'
+            frame: Me gusta más la ___ porque ___.
+          - question: ¿Quién es tu artista favorito? ¿Por qué?
+            frame: Mi artista favorito es ___ porque ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: ¡Dibuja mi imagen!'
+        skills: [Oraciones con acciones en presente]
+        steps:
+          - Repasa el vocabulario con tu profesor.
+          - Trabajen en parejas (A y B).
+          - El estudiante A tiene **1 minuto** para dibujar una imagen sencilla (solo con cuadrados, círculos, triángulos y líneas).
+          - El estudiante A tiene **2 minutos** para explicar al estudiante B cómo dibujar la misma imagen. El estudiante B dibuja.
+          - Cada pareja muestra los dos dibujos (el original y la copia). ¡Gana la pareja con el dibujo más parecido!
+          - Repitan el ejercicio con los roles cambiados.
+        wordBank:
+          [
+            línea,
+            cuadrado,
+            círculo,
+            triángulo,
+            arriba,
+            abajo,
+            encima,
+            debajo,
+            a la izquierda,
+            a la derecha,
+            dentro,
+          ]
+        example: |-
+          *Dibuja un cuadrado en la parte de abajo de la página.*
+          *Dibuja un triángulo encima del cuadrado.*
+          *Dibuja un cuadrado pequeño dentro del cuadrado grande.*
+      - id: act1-frames
+        type: discussionQuestions
+        title: Frases para dar instrucciones
+        items:
+          - question: Dibuja un ___ en la parte de arriba / de abajo / en el medio de la página.
+          - question: Dibuja un ___ a la izquierda / a la derecha del / de la ___.
+          - question: Dibuja un ___ dentro del / de la ___.
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: La habitación desordenada'
+        skills: [Oraciones descriptivas en presente]
+        steps:
+          - Mira las imágenes de objetos de arte y repasa el vocabulario con tu profesor.
+          - Elige en secreto un objeto de la lista.
+          - El grupo (o tu pareja) hace preguntas de sí / no para adivinar el objeto.
+          - Solo puedes responder **Sí** o **No**.
+        wordBank:
+          [
+            pincel,
+            lienzo,
+            guitarra,
+            micrófono,
+            lápiz,
+            caballete,
+            estatua,
+            cuaderno,
+            cámara,
+            tambor,
+            piano,
+            máscara,
+            zapatillas de ballet,
+          ]
+        example: |-
+          Adjetivos útiles: *grande, pequeño, largo, colorido, viejo, nuevo, pesado, brillante.*
+          *¿Es grande? ¿Es pequeño? ¿Es pesado? ¿Es moderno? ¿Es brillante?*
+          *¿Lo usas para pintar / dibujar? ¿Lo escuchas?*
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Describe las imágenes con un amigo'
+        skills: [Oraciones descriptivas en presente]
+        steps:
+          - Trabajen en parejas. Abran el banco de imágenes (6 pinturas famosas) y miren el banco de adjetivos.
+          - Elijan al menos **un adjetivo** para cada cuadro (pueden usar el mismo adjetivo más de una vez).
+          - Digan o escriban una oración completa que explique **por qué** eligieron ese adjetivo.
+        wordBank: [hermoso, interesante, simple, moderno, viejo, grande, pequeño, oscuro, brillante]
+        resource:
+          label: Banco de imágenes
+          url: https://docs.google.com/document/d/1h7Ed4JkQXAAB4xyA79eT4xcNApD99Al6mEhBb-VyC6w/edit?tab=t.0
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Completa las oraciones
+        items:
+          - question: La imagen número ___ es ___ porque ___.
+          - question: El ___ en la imagen es ___ porque ___.
+          - question: Los ___ en la imagen son ___ porque ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Me gusta la que…'
+        skills: [Oraciones con acciones en presente]
+        steps:
+          - Trabajen en parejas. Abran el banco de imágenes (4–6 imágenes).
+          - Un estudiante elige una imagen y dice si le gusta o no, y por qué.
+          - El otro estudiante hace lo mismo con la misma imagen o con otra. Continúen hasta hablar de todas las imágenes.
+          - Al final, cada pareja elige una o dos frases para compartir con la clase.
+        example: |-
+          *Me gusta la foto donde las chicas bailan porque es divertida y bonita.*
+          *No me gusta la foto donde la gente está sentada en el comedor porque es aburrida.*
+        resource:
+          label: Banco de imágenes
+          url: https://docs.google.com/document/u/0/d/1_rQhfxzTPC2Eq5nNxDtSR1fI1x5iTrNf9ZSKE4xXAcI/edit
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Completa las oraciones
+        items:
+          - question: Me gusta la foto donde ___ porque ___.
+          - question: No me gusta la foto donde ___ porque ___.
+          - question: Nos gusta la foto donde / con ___ porque ___.
+          - question: No nos gusta la foto donde / con ___ porque ___.
+      - id: act5
+        type: classActivity
+        title: 'Actividad 5: Hablemos de arte'
+        skills: [Oraciones con acciones en presente]
+        steps:
+          - Trabajen en parejas.
+          - El estudiante A hace las preguntas de abajo. El estudiante B responde con las frases modelo.
+          - Cambien los roles.
+          - Cada pareja comparte con el grupo una cosa interesante sobre su compañero.
+        example: |-
+          Frases modelo: *Sí, me gusta… / Prefiero… / Me gusta el color… / Mi artista favorito es… / No me gusta…*
+          *A Pedro le gusta el azul para pintar. María prefiere dibujar animales.*
+      - id: act5-questions
+        type: discussionQuestions
+        items:
+          - question: ¿Te gusta pintar? ¿Qué te gusta pintar?
+            frame: Sí, me gusta pintar ___. / No, no me gusta pintar.
+          - question: ¿Prefieres dibujar o pintar? ¿Por qué?
+            frame: Prefiero ___ porque ___.
+          - question: ¿Qué colores te gustan para hacer arte?
+            frame: Me gusta el color ___.
+          - question: ¿Te gusta más visitar museos o ir a conciertos? ¿Por qué?
+            frame: Me gusta más ___ porque ___.
+          - question: ¿Quién es tu artista favorito? ¿Por qué?
+            frame: Mi artista favorito es ___ porque ___.
+          - question: ¿Qué arte no te gusta? ¿Por qué?
+            frame: No me gusta ___ porque ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Oraciones descriptivas en presente**
+          (preguntas y Actividades 2 y 3) y **Oraciones con acciones en presente**
+          (preguntas y Actividades 1 y 4). La Actividad 5 (gustos y preferencias) es
+          una actividad extra.
+      - id: n-intro
+        anchor: intro
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Para las preguntas 2 y 3, usa objetos de tu espacio: muestra un objeto con una
+          forma (círculo, cuadrado, triángulo, rectángulo, línea) o de un color
+          específico y pregunta. Haz al menos dos preguntas a cada estudiante.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Antes de empezar, repasa con la clase: línea, cuadrado, círculo, triángulo,
+          arriba, abajo, encima, debajo, a la izquierda, a la derecha, dentro. Divide a
+          los estudiantes en parejas (A y B).
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Muestra imágenes o tarjetas de objetos de arte (pincel, guitarra, cuaderno,
+          cámara…) y repasa el vocabulario. Escribe en la pizarra los adjetivos útiles.
+          Si quieres, reparte tarjetas en lugar de dejar que elijan de la lista.
+      - id: n-act3
+        anchor: act3
+        text: Cada pareja recibe las 6 pinturas del banco de imágenes y el banco de adjetivos.
+      - id: n-act4
+        anchor: act4
+        text: Cada pareja recibe 4–6 imágenes del banco de imágenes.
+      - id: n-act5
+        anchor: act5
+        text: Escribe las preguntas modelo en la pizarra (o entrégalas en tarjetas).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: artes-y-manualidades-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-descriptive
+        type: ruleSummary
+        skill: Oraciones descriptivas en presente
+        rules:
+          - text: 'Usamos **ser + adjetivo** para describir formas, colores, objetos, personas y obras de arte.'
+            examples:
+              [
+                El cuadro **es** hermoso.,
+                La imagen **es** interesante.,
+                Los colores **son** brillantes.,
+              ]
+          - text: 'Para el negativo, ponemos **no** antes del verbo.'
+            examples: [El cuadro **no es** moderno.]
+      - id: rules-actions
+        type: ruleSummary
+        skill: Oraciones con acciones en presente
+        rules:
+          - text: 'Usamos los verbos regulares en presente para hablar de lo que hacemos con las manos, de actividades artísticas y de rutinas creativas.'
+            examples:
+              [Yo **pinto** un cuadro., Tú **dibujas** una línea., Ellos **cantan** una canción.]
+      - id: rules-more
+        type: ruleSummary
+        skill: Otras estructuras de la clase
+        rules:
+          - text: '**Me gusta / No me gusta / Prefiero**: para expresar gustos y preferencias.'
+            examples:
+              [
+                Me gusta pintar con mis manos.,
+                No me gusta la escultura.,
+                Prefiero dibujar animales.,
+              ]
+          - text: '**Porque**: para dar razones sobre gustos y opiniones.'
+            examples:
+              [Me gusta la pintura porque es colorida., No me gusta la foto porque es oscura.]
+          - text: '**Hay / no hay** y **tener**: para hablar de objetos en la casa o en el museo.'
+            examples: [Tengo pinturas en mi casa., En el museo hay esculturas grandes.]
+          - text: '**Preposiciones de lugar**: para dar instrucciones para dibujar (Actividad 1).'
+            examples:
+              [Dibuja un círculo arriba de la página., El triángulo está dentro del cuadrado.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: artes-y-manualidades-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-artes
+        type: aiTutorPrompt
+        title: Hablar de artes y manualidades
+        message: >-
+          ¡Hola Mori! Quiero charlar un rato. ¿Podrías hacerme preguntas sobre
+          manualidades con las habilidades de oraciones descriptivas y oraciones con
+          acciones en presente simple? Por favor, corrige mis errores.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Práctica adicional
+      - id: mori-adivina
+        type: aiTutorPrompt
+        title: Adivina la manualidad
+        intro: >-
+          Envía este mensaje a Mori. Después, dale pistas a Mori con acciones en
+          presente simple y descripciones. Por ejemplo: *Corto papel de colores.*
+        message: >-
+          ¡Oye, Mori! Juguemos a un juego. Pienso en un proyecto de arte o manualidad
+          y tú tienes que adivinar de qué se trata.
+      - id: mori-adivina-turno
+        type: aiTutorPrompt
+        title: 'Adivina la manualidad: ¡ahora tú!'
+        intro: Cuando Mori adivine, envía este mensaje.
+        message: ¡Ahora te toca a ti! Piensa en un proyecto de arte o manualidad y yo adivinaré cuál es.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: artes-y-manualidades-practica
+    book: workbook
+    title: 'Práctica: Artes y manualidades'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-descriptivas
+        type: activity
+        activity: artes-y-manualidades-descriptivas
+      - id: ex-acciones
+        type: activity
+        activity: artes-y-manualidades-acciones
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: artes-y-manualidades-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de artes y manualidades
+        glossLang: he
+        link: https://quizlet.com/il/858627241/basic-spanish-arts-crafts-flash-cards/
+        items: &artes-words
+          - { term: línea, gloss: קו }
+          - { term: cuadrado, gloss: ריבוע }
+          - { term: círculo, gloss: עיגול }
+          - { term: triángulo, gloss: משולש }
+          - { term: pintura, gloss: ציור / צבע }
+          - { term: cuadro, gloss: תמונה / ציור }
+          - { term: pincel, gloss: מברשת }
+          - { term: lápiz, gloss: עיפרון }
+          - { term: guitarra, gloss: גיטרה }
+          - { term: cámara, gloss: מצלמה }
+          - { term: azul, gloss: כחול }
+          - { term: rojo, gloss: אדום }
+          - { term: amarillo, gloss: צהוב }
+          - { term: verde, gloss: ירוק }
+          - { term: negro, gloss: שחור }
+          - { term: blanco, gloss: לבן }
+          - { term: brillante, gloss: מבריק }
+          - { term: oscuro, gloss: כהה }
+          - { term: dibujar, gloss: לצייר }
+          - { term: pintar, gloss: לצבוע / לצייר }
+          - { term: cantar, gloss: לשיר }
+          - { term: bailar, gloss: לרקוד }
+          - { term: tocar (música), gloss: לנגן }
+          - { term: hacer, gloss: לעשות }
+          - { term: mirar, gloss: להסתכל }
+          - { term: visitar, gloss: לבקר }
+          - { term: tener, gloss: יש ל־ / להחזיק }
+          - { term: gustar, gloss: למצוא חן / לאהוב }
+          - { term: hermoso, gloss: יפה }
+          - { term: interesante, gloss: מעניין }
+          - { term: grande, gloss: גדול }
+          - { term: pequeño, gloss: קטן }
+          - { term: divertido, gloss: כיף / מצחיק }
+          - { term: importante, gloss: חשוב }
+          - { term: arriba, gloss: למעלה }
+          - { term: abajo, gloss: למטה }
+          - { term: a la izquierda, gloss: שמאלה }
+          - { term: a la derecha, gloss: ימינה }
+          - { term: dentro, gloss: בפנים }
+
+vocabulary:
+  - slug: artes-y-manualidades
+    title: Artes y manualidades
+    items: *artes-words
+
+activities:
+  - slug: artes-y-manualidades-descriptivas
+    title: 'Oraciones descriptivas: ser + adjetivo'
+    minutes: 8
+    items:
+      - id: el-cuadro-es
+        type: multipleChoice
+        prompt: El cuadro ___ hermoso.
+        options:
+          - { text: es, correct: true }
+          - { text: son, feedback: '*El cuadro* es singular: usa *es*.' }
+          - { text: eres, feedback: '*Eres* es para *tú*. Para una cosa usa *es*.' }
+      - id: los-colores-son
+        type: multipleChoice
+        prompt: Los colores ___ brillantes.
+        options:
+          - { text: son, correct: true }
+          - { text: es, feedback: '*Los colores* es plural: usa *son*.' }
+          - { text: soy, feedback: '*Soy* es para *yo*. Para varias cosas usa *son*.' }
+      - id: es-son
+        type: fillBlank
+        prompt: Completa con *es* o *son*.
+        text: La imagen ___ interesante. Las fotos ___ oscuras.
+        blanks: [[es], [son]]
+        wordBank: [es, son]
+      - id: negativo
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: El cuadro no es moderno., correct: true }
+          - { text: El cuadro es no moderno., feedback: 'El *no* va antes del verbo: *no es*.' }
+          - {
+              text: No el cuadro es moderno.,
+              feedback: 'El *no* va justo antes del verbo: *El cuadro no es moderno*.',
+            }
+      - id: no-antes
+        type: trueFalse
+        prompt: 'Para hacer una oración negativa, ponemos *no* antes del verbo: *La foto no es oscura.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *No* va antes de *es* o *son*.
+          incorrect: 'El *no* va antes del verbo: *La foto no es oscura.*'
+      - id: une-descripciones
+        type: matching
+        prompt: Une cada sujeto con el final correcto. Mira si es masculino o femenino, singular o plural.
+        pairs:
+          - [El cuadro es, moderno.]
+          - [La foto es, oscura.]
+          - [Los cuadros son, viejos.]
+          - [Las esculturas son, pequeñas.]
+      - id: hay-esculturas
+        type: multipleChoice
+        prompt: En el museo ___ esculturas grandes.
+        options:
+          - { text: hay, correct: true }
+          - { text: es, feedback: 'Para decir que algo existe en un lugar, usa *hay*.' }
+          - {
+              text: son,
+              feedback: 'Para decir que algo existe en un lugar, usa *hay*: *En el museo hay esculturas.*',
+            }
+      - id: ordena-pintura
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Me gusta la pintura porque es colorida.
+
+  - slug: artes-y-manualidades-acciones
+    title: Acciones en presente
+    minutes: 8
+    items:
+      - id: yo-pinto
+        type: multipleChoice
+        prompt: Yo ___ un cuadro.
+        options:
+          - { text: pinto, correct: true }
+          - {
+              text: pintas,
+              feedback: '*Pintas* es para *tú*. Con *yo* el verbo termina en *-o*: *pinto*.',
+            }
+          - { text: pinta, feedback: '*Pinta* es para *él / ella*. Con *yo* usa *pinto*.' }
+      - id: ellos-cantan
+        type: multipleChoice
+        prompt: Ellos ___ una canción.
+        options:
+          - { text: cantan, correct: true }
+          - {
+              text: canta,
+              feedback: '*Canta* es para *él / ella*. Con *ellos* el verbo termina en *-an*: *cantan*.',
+            }
+          - { text: cantamos, feedback: '*Cantamos* es para *nosotros*. Con *ellos* usa *cantan*.' }
+      - id: une-dibujar
+        type: matching
+        prompt: Une cada persona con el verbo *dibujar* en presente.
+        pairs:
+          - [yo, dibujo]
+          - [tú, dibujas]
+          - [él / ella, dibuja]
+          - [nosotros, dibujamos]
+          - [ellos / ellas, dibujan]
+      - id: tu-dibujas
+        type: fillBlank
+        prompt: Escribe el verbo en presente.
+        text: Tú ___ (dibujar) una línea.
+        blanks: [[dibujas]]
+      - id: nosotros-bailamos
+        type: fillBlank
+        prompt: Escribe el verbo en presente.
+        text: Nosotros ___ (bailar) en la clase. Ella ___ (tocar) la guitarra.
+        blanks: [[bailamos], [toca]]
+      - id: me-gusta-infinitivo
+        type: trueFalse
+        prompt: 'Después de *me gusta* usamos el verbo en infinitivo: *Me gusta pintar con mis manos.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *Me gusta pintar*, *me gusta dibujar*, *me gusta cantar*.
+          incorrect: 'Después de *me gusta* el verbo no cambia: *Me gusta pintar* (no *me gusta pinto*).'
+      - id: prefiero
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: Prefiero dibujar animales., correct: true }
+          - {
+              text: Prefiero dibujo animales.,
+              feedback: 'Después de *prefiero* usamos el infinitivo: *prefiero dibujar*.',
+            }
+          - {
+              text: Prefiero dibujas animales.,
+              feedback: 'Después de *prefiero* usamos el infinitivo: *prefiero dibujar*.',
+            }
+      - id: ordena-manos
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Me gusta pintar con mis manos.

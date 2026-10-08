@@ -1,0 +1,553 @@
+# Cycle "Music", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: music
+title: Music
+goal: Talk about music, building questions and using actions in the present simple.
+position: 17
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Building questions" and "Actions in the present
+    simple") are NEW: the notebook has no self-study exercises. They were written from
+    the cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Song lyrics are NOT copied into the platform (copyright). The notebook prints the
+    lyrics of "Imagine" (John Lennon, Activity 1), "Happy" (Pharrell Williams,
+    Activity 2) and a gap-fill of "With or Without You" (U2, Activity 4). Each
+    activity now links to a YouTube search for the song (the notebook has no video
+    links, and the official URLs could not be checked from here: please replace them
+    with the official video or the Genius page). The teacher shows the lyrics from
+    the old notebook or from Genius. The Genius annotation links in the "Happy"
+    lyrics were dropped with the lyrics.
+  - >-
+    Activity 4: only the verb bank is kept (see, set, twist, wait, makes, live, reach,
+    give, want, waiting). The notebook's numbered "Options" list has 15 entries for
+    22 blanks and does not follow the order of the blanks, so it was not used as an
+    answer key; the teacher checks the answers against the original song.
+  - >-
+    Activity 1 had "Stage 1" and "Stage 3" but no "Stage 2"; the steps are
+    renumbered. The six questions about "Imagine" are kept (they are about the song;
+    no lyrics are quoted). A short answer key, in our own words, is in a teacher
+    note.
+  - >-
+    Activity 2: the notebook has no worksheet for the new verbs, so a small answer
+    box ("I change ___ to ___.") was added for students to write their new verbs.
+    Please confirm.
+  - >-
+    Corrections: "Which is your favorite song?" → "What is your favorite song?";
+    "I listen to music everyday" → "every day"; "I listen to music in (part of the
+    day)" → "in the morning / afternoon / evening"; "Podcasts" → "podcasts";
+    Activity 3: the first answer ("I like to listen to music at the park") is used as
+    the worked example, and the nine others get answer boxes; the questions are in a
+    teacher note; "Now is your turn!" → "Now it's your turn!" (Mori activities).
+  - >-
+    Summary: the Hebrew translation "איזה מוזיקה אתה אוהב?" → "איזו מוזיקה אתה
+    אוהב?" (מוזיקה is feminine). The question words and their examples are shown as
+    a table.
+  - >-
+    Vocabulary glosses changed: "to travel" לטייל → לנסוע / לטייל; "to make" לעשות →
+    לעשות / לגרום ל (as in "makes me wait"). The Quizlet link is kept without its
+    "funnelUUID" tracking parameter.
+  - >-
+    The source gives no activity times (only "no more than 5 minutes" for the
+    introduction), so the activities have no minutes, and no recommended activity
+    combination.
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: music-class
+    title: 'Class: Music'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Music
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Building questions
+            description: Question words (*what, where, when, who*) + *do / does* + subject + verb
+          - name: Actions in the present simple
+            description: "Verbs for everyday actions: *I sing, she sings, I don't play, does he dance?*"
+      - id: quizlet
+        type: externalLink
+        label: Music words on Quizlet
+        url: https://quizlet.com/il/989808579/music-basic-english-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I listen to music every day / ___ times a week.
+        example: I am Dana. I listen to music every day.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What is your favorite song?
+            frame: My favorite song is ___.
+          - question: Where do you listen to music?
+            frame: I listen to music at the ___.
+          - question: When do you listen to music?
+            frame: I listen to music in the morning / afternoon / evening. / I listen to music when I ___.
+          - question: Is music important to you? Why?
+            frame: Yes, music is important to me because ___. / No, music is not important to me because ___.
+          - question: What do you do when you listen to your favorite song?
+            frame: I ___ (dance, sing, think, cook) when I listen to ___ (song).
+          - question: Do you prefer to listen to music or podcasts? Why?
+            frame: I prefer to listen to ___ because ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: "Activity 1: Let's ask questions about the song"
+        skills: [Building questions]
+        steps:
+          - Listen to the song "Imagine" by John Lennon.
+          - Your teacher explains the meaning of the words, up to the first chorus.
+          - Answer the questions below. Find the answers in the song.
+        resource:
+          label: '"Imagine", John Lennon (YouTube)'
+          url: https://www.youtube.com/results?search_query=John+Lennon+Imagine
+      - id: act1-questions
+        type: discussionQuestions
+        title: Questions about the song
+        items:
+          - question: '**What** does the singer imagine is not real?'
+          - question: '**Why** does the singer talk about no countries?'
+          - question: '**How** does the singer want people to live?'
+          - question: '**Which** word means living without fighting?'
+          - question: '**Why** does the singer hope others will join him?'
+          - question: '**What** will happen if the world is as one?'
+      - id: act2
+        type: classActivity
+        title: "Activity 2: Because I'm happy!"
+        skills: [Actions in the present simple]
+        steps:
+          - Read the words of the song "Happy" by Pharrell Williams with your teacher.
+          - Listen and sing the song together.
+          - Change the verbs in the song to other verbs.
+          - Share your new verbs with the group.
+          - Sing the song again, each student with their new verbs.
+        resource:
+          label: '"Happy", Pharrell Williams (YouTube)'
+          url: https://www.youtube.com/results?search_query=Pharrell+Williams+Happy
+      - id: act2-verbs
+        type: discussionQuestions
+        title: My new verbs
+        items:
+          - question: Which verbs do you change?
+            frame: I change ___ to ___.
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Guess the question'
+        skills: [Building questions]
+        steps:
+          - Read each answer below.
+          - Say the question for the answer. Start with a question word.
+        example: |-
+          **Answer:** *I like to listen to music at the park.*
+          **Question:** *Where do you like to listen to music?*
+      - id: act3-answers
+        type: discussionQuestions
+        title: Write the question for each answer
+        items:
+          - question: I love pop music.
+          - question: I listen to music with my best friend.
+          - question: I always listen to music in the morning.
+          - question: I don't like heavy metal.
+          - question: I sing when I listen to music.
+          - question: I listen to music on the bus.
+          - question: I listen to music every day.
+          - question: I use my phone to listen to music.
+          - question: I feel happy when I listen to music.
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: With or without you?'
+        skills: [Actions in the present simple]
+        steps:
+          - Your teacher shows the words of the song "With or Without You" by U2, with the verbs missing.
+          - Fill in the blanks with the right verb from the word bank.
+          - Listen to the song and check your answers.
+        wordBank: [see, set, twist, wait, makes, live, reach, give, want, waiting]
+        resource:
+          label: '"With or Without You", U2 (YouTube)'
+          url: https://www.youtube.com/results?search_query=U2+With+or+Without+You
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Building questions** (Activities 1 and 3) and
+          **Actions in the present simple** (Activities 2 and 4).
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: >-
+          Keep it very short: two sentences per student, no more than 30 seconds each.
+          If you all know each other already, skip to the warm-up questions.
+      - id: n-warmup
+        anchor: warmup
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Play the song and explain the meaning of the lyrics up to the first chorus
+          (show the lyrics from the old notebook or from Genius; they are not in the
+          platform). Possible answers: 1. heaven, hell, countries and religion (there
+          are none); 2. so there is nothing to kill or die for; 3. in peace, living
+          for today; 4. peace; 5. so the world can be one; 6. people live together in
+          peace.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Show the lyrics of "Happy" (old notebook or Genius) and go through them
+          first. Students then replace the verbs (for example *clap* → *dance*, *jump*,
+          *sing*) and sing the song with their new verbs.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Answer key: 1. What kind of music do you love? 2. Who do you listen to music
+          with? 3. When do you usually listen to music? 4. What kind of music don't you
+          like? 5. What do you do when you listen to music? 6. Where do you listen to
+          music? 7. How often do you listen to music? 8. What do you use to listen to
+          music? 9. How do you feel when you listen to music?
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Show the gap-fill of the song from the old notebook (the lyrics are not in
+          the platform). Some verbs are used more than once (*give*, *see*, *wait*,
+          *live*). Play the song so students can check their answers.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: music-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-questions
+        type: ruleSummary
+        skill: Building questions
+        rules:
+          - text: >-
+              Use question words to ask for information, like reasons, places or times:
+              questions where the answer is **not** *yes* or *no*.
+          - text: 'Structure: **question word + do / does + subject + verb + details**.'
+            examples: [Where do you listen to music?]
+          - text: Learn the 4 main question words in the table.
+      - id: questions-table
+        type: table
+        caption: The main question words
+        header: [Word, Example, Hebrew]
+        rows:
+          - [What (מה), What music do you like?, איזו מוזיקה אתה אוהב?]
+          - [Where (איפה), Where do you play the guitar?, איפה אתה מנגן בגיטרה?]
+          - [When (מתי), When does the concert start?, מתי הקונצרט מתחיל?]
+          - [Who (מי), Who is your favorite singer?, מי הזמר האהוב עליך?]
+      - id: rules-present
+        type: ruleSummary
+        skill: Actions in the present simple
+        rules:
+          - text: For *I, you, we* and *they*, use the verb as it is (the base form).
+            examples: [I play the drums every day., They sing beautifully in the choir.]
+          - text: For *he, she* and *it*, add **-s** or **-es** to the verb.
+            examples: [She listens to classical music., He practices the violin every evening.]
+          - text: Use **do / does** for negatives and questions (*does* for he, she, it).
+            examples: ["I don't play the trumpet.", Does he enjoy rock concerts?]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: music-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy this message and send it. Mori will ask you questions; answer every one.
+      - id: mori-music
+        type: aiTutorPrompt
+        title: Talk about music
+        message: >-
+          Hi Mori! I want to practice English. Can you ask me questions about music
+          using the skills building questions and actions in the present simple?
+          Please correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-actions
+        type: aiTutorPrompt
+        title: Action guessing game
+        intro: >-
+          Send this message to Mori. Then describe something you do when you listen to
+          music, for example: *I move my body. I feel the rhythm. I smile.* (Mori
+          guesses: *Do you dance?*) After that, write: **Now it's your turn! Describe
+          something you do with music, and I will guess.**
+        message: >-
+          Hi Mori! Let's play a game. I describe something I do when I listen to music.
+          You guess the action.
+      - id: mori-questions
+        type: aiTutorPrompt
+        title: Make the question
+        intro: >-
+          Send this message to Mori. Then write a sentence about music, for example:
+          *I listen to music every morning.* (Mori writes: *When do you listen to
+          music?*) After that, write: **Now it's your turn! Write a sentence, and I will
+          ask you a question.**
+        message: >-
+          Hey Mori! Let's do an activity. I will write a sentence about music. You ask
+          me a question about it.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: music-practice
+    book: workbook
+    title: 'Practice: Music'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-questions
+        type: activity
+        activity: music-questions
+      - id: ex-present
+        type: activity
+        activity: music-present
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: music-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Music words
+        glossLang: he
+        link: https://quizlet.com/il/989808579/music-basic-english-flash-cards/
+        items: &music-words
+          - { term: music, gloss: מוזיקה }
+          - { term: question, gloss: שאלה }
+          - { term: student, gloss: תלמיד }
+          - { term: teacher, gloss: מורה }
+          - { term: to listen, gloss: להקשיב }
+          - { term: song, gloss: שיר }
+          - { term: to sing, gloss: לשיר }
+          - { term: favorite, gloss: אהוב }
+          - { term: important, gloss: חשוב }
+          - { term: to cook, gloss: לבשל }
+          - { term: to travel, gloss: לנסוע / לטייל }
+          - { term: example, gloss: דוגמה }
+          - { term: word, gloss: מילה }
+          - { term: answer, gloss: תשובה }
+          - { term: to write, gloss: לכתוב }
+          - { term: rhyme, gloss: חרוז }
+          - { term: melody, gloss: מנגינה }
+          - { term: pair, gloss: זוג }
+          - { term: activity, gloss: פעילות }
+          - { term: guitar, gloss: גיטרה }
+          - { term: lyrics, gloss: מילים (של שיר) }
+          - { term: concert, gloss: קונצרט }
+          - { term: rhythm, gloss: קצב }
+          - { term: beat, gloss: מקצב }
+          - { term: chorus, gloss: פזמון }
+          - { term: to play, gloss: לנגן }
+          - { term: to practice, gloss: להתאמן }
+          - { term: to share, gloss: לשתף }
+          - { term: to create, gloss: ליצור }
+          - { term: to guess, gloss: לנחש }
+          - { term: to twist, gloss: לסובב }
+          - { term: to live, gloss: לחיות }
+          - { term: to want, gloss: לרצות }
+          - { term: to give, gloss: לתת }
+          - { term: to wait, gloss: לחכות }
+          - { term: to see, gloss: לראות }
+          - { term: to make, gloss: לעשות / לגרום ל }
+          - { term: to reach, gloss: להגיע }
+          - { term: to set, gloss: להניח }
+
+vocabulary:
+  - slug: music
+    title: Music
+    items: *music-words
+
+activities:
+  - slug: music-questions
+    title: 'Building questions: what, where, when, who'
+    minutes: 8
+    items:
+      - id: when-listen
+        type: multipleChoice
+        prompt: '___ do you listen to music? — In the morning.'
+        options:
+          - { text: When, correct: true }
+          - {
+              text: Where,
+              feedback: '*Where* asks about a place. *In the morning* is a time: use *when*.',
+            }
+          - {
+              text: Who,
+              feedback: '*Who* asks about a person. *In the morning* is a time: use *when*.',
+            }
+      - id: who-singer
+        type: multipleChoice
+        prompt: '___ is your favorite singer? — Pharrell Williams.'
+        options:
+          - { text: Who, correct: true }
+          - {
+              text: Where,
+              feedback: '*Where* asks about a place. A singer is a person: use *who*.',
+            }
+          - { text: When, feedback: '*When* asks about a time. A singer is a person: use *who*.' }
+      - id: do-you
+        type: multipleChoice
+        prompt: Which question is correct?
+        options:
+          - { text: Where do you play the guitar?, correct: true }
+          - {
+              text: Where you play the guitar?,
+              feedback: 'Remember *do*: question word + **do** + subject + verb.',
+            }
+          - {
+              text: Where does you play the guitar?,
+              feedback: 'With *you*, use *do*. Use *does* only with *he, she, it*.',
+            }
+      - id: not-yes-no
+        type: trueFalse
+        prompt: We use question words (*what, where, when, who*) for questions with a *yes* or *no* answer.
+        answer: false
+        feedback:
+          correct: Right! Question words ask for information, like a place or a time.
+          incorrect: 'Question words ask for information (a place, a time, a person), not for *yes* or *no*.'
+      - id: do-does
+        type: fillBlank
+        prompt: Complete with *do* or *does*.
+        text: Where ___ you listen to music? When ___ the concert start?
+        blanks: [[do], [does]]
+        wordBank: [do, does]
+      - id: words-hebrew
+        type: matching
+        prompt: Match the question word with the Hebrew.
+        pairs:
+          - [What, מה]
+          - [Where, איפה]
+          - [When, מתי]
+          - [Who, מי]
+      - id: order-what
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: What music do you like?
+      - id: on-the-bus
+        type: multipleChoice
+        prompt: 'The answer is: *I listen to music on the bus.* What is the question?'
+        options:
+          - { text: Where do you listen to music?, correct: true }
+          - {
+              text: When do you listen to music?,
+              feedback: '*On the bus* is a place, not a time: use *where*.',
+            }
+          - {
+              text: Who do you listen to music with?,
+              feedback: '*Who* asks about a person. *On the bus* is a place: use *where*.',
+            }
+
+  - slug: music-present
+    title: Actions in the present simple
+    minutes: 8
+    items:
+      - id: she-listens
+        type: multipleChoice
+        prompt: She ___ to classical music.
+        options:
+          - { text: listens, correct: true }
+          - { text: listen, feedback: 'With *he, she, it*, add **-s**: she listen**s**.' }
+          - {
+              text: listening,
+              feedback: 'In the present simple, use the verb + **-s** with *she*: she listens.',
+            }
+      - id: they-sing
+        type: multipleChoice
+        prompt: They ___ beautifully in the choir.
+        options:
+          - { text: sing, correct: true }
+          - {
+              text: sings,
+              feedback: 'With *they*, use the verb as it is, without **-s**: they sing.',
+            }
+          - {
+              text: singing,
+              feedback: 'In the present simple, use the base form with *they*: they sing.',
+            }
+      - id: play-practices
+        type: fillBlank
+        prompt: Write the verb in the right form.
+        text: I ___ (play) the drums every day. He ___ (practice) the violin every evening.
+        blanks: [[play], [practices]]
+      - id: he-she-form
+        type: matching
+        prompt: Match each verb with its *he / she* form.
+        pairs:
+          - [listen, listens]
+          - [sing, sings]
+          - [play, plays]
+          - [watch, watches]
+          - [go, goes]
+      - id: dont-play
+        type: multipleChoice
+        prompt: I ___ play the trumpet.
+        options:
+          - { text: "don't", correct: true }
+          - {
+              text: "doesn't",
+              feedback: "Use *doesn't* only with *he, she, it*. With *I*, use *don't*.",
+            }
+          - {
+              text: not,
+              feedback: "In the present simple, the negative needs *do*: I **don't** play.",
+            }
+      - id: does-do
+        type: fillBlank
+        prompt: Complete the questions with *Do* or *Does*.
+        text: ___ he enjoy rock concerts? ___ you like pop music?
+        blanks: [[Does], [Do]]
+        wordBank: [Do, Does]
+      - id: order-sister
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: My sister sings in the car.
+      - id: s-rule
+        type: trueFalse
+        prompt: 'With *he, she* and *it*, we add **-s** or **-es** to the verb: *He sings.*'
+        answer: true
+        feedback:
+          correct: 'Right! *I sing*, but *he sings*.'
+          incorrect: 'With *he, she, it*, add **-s** or **-es**: *I sing*, but *he sings*.'

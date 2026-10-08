@@ -1,0 +1,403 @@
+# Cycle "Travel (נסיעות – סַפַרַיאת)", converted from the spoken Arabic level 1 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew
+# transliteration, apc-Hebr); Hebrew blocks carry `lang: he`.
+
+course: ar-medubar-1
+slug: travel
+title: נסיעות – סַפַרַיאת
+goal: לשאול ולענות על שאלות על נסיעות, ולתת הוראות הגעה פשוטות (כיוונים).
+position: 9
+status: in_review
+review:
+  - "The two workbook exercises are NEW: the notebook has no self-study exercises. They were written only from this cycle's vocabulary, summary and examples. An Arabic teacher must check every right answer, every wrong option and every transliteration before students see them."
+  - The notebook has no word list for this cycle (only the Quizlet set), so there is no vocabulary section. The exercises are built from the summary rules and the activity examples. Should a word list be added from the Quizlet set?
+  - 'Small corrections: "עָארֻף – סיבוב פתיחה" → "תַעָארֻף" (as in the weather cycle); "בֱּל סַפַר" → "בֶּל סַפַר"; "תבני חופשית" → "תבנית חופשית"; double vowels "בַַּחַר" → "בַּחַר"; "דֻוּ׳רִי" (summary, "straight") → "דֻעְ׳רִי", as the cycle "שירותים חיוניים" writes it (דֻע’רי). The masculine/feminine forms written "תִסָאפְרִ\י", "בְּתִכְּלִ\י" are written "תִסָאפְרִ(י)", "בְּתִכְּלִ(י)"; "בִּתְחִבּّ" etc. kept.'
+  - 'Kept as written, please check: "לַאֶנֹّ בְּחִבּّ אַכְּתשֵף אלעאלם" (Activity 1; elsewhere "לַאֶנֹّו"); "שוּ אַחְסַן וַקֶת תִזוּרִי" (summary) next to "וינתא אַחְסַן וַקֶ''ת תִזוּרִי" (Activity 2); spelling variants וֵין / וין, בַּחֶר / בַּחַר / בּחר, אוֹטֵיל / אותיל.'
+  - 'Activity 2: "[היעד]" in the research questions is written as a blank (___).'
+  - Activity 1 is a two-column table (answer, empty question column); it is turned into a list of answers with an answer box for the student's question. The teacher instructions are written for a female teacher ("קראי"); they are written here without gender.
+  - "Hebrew meanings used in the exercises that the notebook does not state, please confirm: ס'חַאבִּי = החברים שלי, כַּמֵירַה = מצלמה, לַמַּא = כאשר, רוּחִי דֻעְ׳רִי = לכי ישר, לִפְי יַמִין = פני ימינה, כִּיף בְּוַס'ל עַל־בַּחֶר = איך מגיעים לים."
+  - No Mori homework and no activity times in this cycle, so there is no homework section.
+  - 'The "תשובות תלמידים 1/2/3" lines were removed: the platform''s optional answer boxes replace them.'
+sections:
+  - slug: travel-class
+    title: 'בכיתה: נסיעות'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: סַפַרַיאת – נסיעות
+        lang: he
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: שאלות ותשובות
+            description: 'שוּ, וֵין, אֵימְתַא / וינתא, מִין, לֵיש, אַיּ: מילת שאלה + פועל בהווה'
+          - name: כיוונים
+            description: רוּחִי דֻעְ׳רִי, לִפְי יַמִין, לַחַדّ, קֻדָאם
+        lang: he
+      - id: quizlet
+        type: externalLink
+        label: נסיעות בקוויזלט
+        url: https://quizlet.com/il/1115815555/%D7%A1%D7%A4%D7%A8%D7%90%D7%AA-%D7%A0%D7%A1%D7%99%D7%A2%D7%95%D7%AA-flash-cards/
+        lang: he
+      - id: intro-title
+        type: heading
+        level: 3
+        text: תַעָארֻף – סיבוב פתיחה
+        lang: he
+      - id: intro-how
+        type: text
+        text: המורה מדגים/ה תבנית קצרה ואיטית, ואחר כך כל תלמיד אומר את שלו.
+        lang: he
+      - id: intro
+        type: sentenceFrame
+        frame: |-
+          אִסְמִי ___.
+          בִּדִّי אַסָאפֶר עַל־___.
+        example: |-
+          אִסְמִי אינאס.
+          בִּדִّי אַסָאפֶר עַל־לֻנְדַן.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: שאלות חימום
+        lang: he
+      - id: warmup-how
+        type: text
+        text: המורה שואל/ת, והתלמידים עונים בתבנית קצרה (לא שאלות כן / לא).
+        lang: he
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: לְוֵין בִּתְחִבּّ תִסָאפְרִ(י)? וּלֵיש?
+            frame: בִּחִיבּّ אַסָאפֶר עַל־___ לַאֶנֹّו ___.
+          - question: בִּתְחִבִּّי מַנטק'ה דאפיֶה וַלַא / או בָּארֵדֶה? וּלֵיש?
+            frame: בִּפַדִّל מַקַאן / מנטק'ה ___ לַאֶנֹّו ___.
+          - question: בִּתְחִבִּّי תִסָאפְרִי לְחאלֶכּ / לחאלָכְּ וַלַא מַעְ נַאס؟ לֵיש?
+            frame: בִּפַדִّל ___ לַאֶנֹّו ___.
+          - question: וין בתרוחי בל עוטלֶה؟ ומע מין?
+            frame: ___ (פארק, בּחר, מטעַם, סוק'…)
+          - question: שו בתפד'ֶל… אותיל, בַּחַר ושַׁמֶס, אַו תְּרוח תְּשׁוף עַרְד' בֶּל מסרַח?
+          - question: שוּ בְּתִכְּלִ(י) לַמַּא תִסָאפְרִ(י)؟ מטעם או אַכֶּל סריע?
+      - id: activities-title
+        type: heading
+        level: 3
+        text: פעילויות
+        lang: he
+      - id: act1
+        type: classActivity
+        title: 'פעילות 1: נחשו את השאלה'
+        skills:
+          - שאלות ותשובות
+        steps:
+          - המורה קורא/ת תשובה בקול.
+          - התלמידים שואלים שאלה שמתאימה לתשובה.
+        lang: he
+      - id: act1-answers
+        type: discussionQuestions
+        items:
+          - question: פִי שהר תלאתה
+          - question: עַל בַּחֶר
+          - question: שַנְטִתִי
+          - question: מַעְ ס'חַאבִּי / ס'אחבתי
+          - question: לַאֶנֹّ בְּחִבּّ אַכְּתשֵף אלעאלם
+          - question: בִטַיָארַה
+          - question: פראג
+          - question: כַּמֵירַה
+          - question: פִי אוֹטֵיל
+      - id: act2
+        type: classActivity
+        title: 'פעילות 2: מחקר בזוגות'
+        skills:
+          - שאלות ותשובות
+        steps:
+          - מתחלקים לזוגות.
+          - כל זוג בוחר יעד שלא ביקר בו.
+          - עונים על השאלות שלמטה.
+          - כל זוג מציג את היעד שלו.
+        lang: he
+      - id: act2-questions
+        type: discussionQuestions
+        items:
+          - question: שוּ אַכְּתַר אִכֵּל מַשְהוּר בְּ___?
+          - question: וֵין אַחְסַן מַחַל לִלְאִקַּאמֵה בְּ___?
+          - question: וינתא אַחְסַן וַקֶ'ת תִזוּרִי ___?
+          - question: שו אל אַמאכֶּן מַשְׁהורָה בְּ___؟
+      - id: act3
+        type: classActivity
+        title: 'פעילות 3: סוכנות נסיעות (רשות)'
+        skills:
+          - שאלות ותשובות
+          - כיוונים
+        steps:
+          - 'עובדים בזוגות: אחת מטיילת, והשנייה סוכנת נסיעות.'
+          - המטיילת שואלת את השאלות שלמטה.
+          - הסוכנת עונה באופן יצירתי.
+          - מחליפים תפקידים.
+          - שיתוף קצר בכיתה.
+        lang: he
+      - id: act3-questions
+        type: discussionQuestions
+        items:
+          - question: וין אסאפֶר?
+          - question: שוּ בִּר'דַר אַוכֶּל הֻנַאכּ?
+          - question: שו אוחֶ'ד מעי בל שנטה? (מה לקחת איתי במזוודה?)
+          - question: כִּיף בְּוַס'ל עַל־בַּחֶר؟
+      - id: act4
+        type: classActivity
+        title: 'פעילות 4: ספיד דייטינג – מצאו שותף/ה לנסיעה'
+        skills:
+          - שאלות ותשובות
+        steps:
+          - נפתחים חדרים בזוגות.
+          - כל זוג שואל ועונה על השאלות שלמטה.
+          - אחרי 3 דקות המורה מערבב/ת את החדרים. חוזרים על זה 3 פעמים.
+          - בסוף כל תלמיד אומר מה משותף לו ולכל שותף.
+        lang: he
+      - id: act4-questions
+        type: discussionQuestions
+        items:
+          - question: לְוֵין בִּדִّכִּי תִסָאפְרִי?
+          - question: שוּ בְּתִחְטִי בִּשַנְטֵה?
+          - question: שוּ בְּתִוכְּלִי בֶּל סַפַר?
+          - question: מַעְ מִין בְּתִסָאפְרִי?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: 'שתי מיומנויות במחזור: **שאלות ותשובות** (פעילויות 1, 2 ו־4) ו**כיוונים** (פעילות 3, רשות).'
+      - id: n-warmup
+        anchor: warmup
+        text: שאלו שאלות פתוחות, לא שאלות כן / לא. בשאלות 4–6 התבנית חופשית.
+      - id: n-act1
+        anchor: act1
+        text: 'קראו כל תשובה בקול. התלמידים מנסחים שאלה שמתאימה לה (למשל: פראג → לְוֵין בִּדִّכִּי תִסָאפְרִי?).'
+  - slug: travel-summary
+    title: סיכום השיעור
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: סיכום השיעור
+        lang: he
+      - id: rules-questions
+        type: ruleSummary
+        skill: בניית שאלות
+        rules:
+          - text: 'מילות שאלה נפוצות: שוּ (מה), וֵין (איפה), אֵימְתַא / וינתא (מתי), מִין (מי), לֵיש (למה), אַיּ (איזה / איזו).'
+            examples:
+              - שוּ אַחְסַן וַקֶת תִזוּרִי בַּלַדִכּ؟
+              - וֵין בִּקְדַר לָאקִי אַכְּל בַּלַדִכּ؟
+              - וינתא עֻטְלַתְכֹּם؟
+              - מִין מַשְהוּר מִן בַּלַדִכֹּם؟
+              - לֵיש אִל־נַאס בְּתִחִבّ תִזוּר בּלדֶּכְ؟
+          - text: 'מבנה השאלה הפשוטה: מילת שאלה + פועל בהווה + נושא.'
+            examples:
+              - וֵין בְּתִרֻוחִי בִּלְעֻטְלָה؟
+              - שוּ בְּתִעְמַלִי לַמַּא תִסָאפְרִי؟
+          - text: 'שלילה בשאלות: מוסיפים מַא לפני הפועל.'
+            examples:
+              - שוּ מַא בְּתִחְטִי בִּשַנְטֵה؟
+              - לֵיש מַא בְּתִסָאפְרִי כְּתִיר؟
+        lang: he
+      - id: rules-directions
+        type: ruleSummary
+        skill: כיוונים
+        rules:
+          - text: 'משפטים קצרים וברורים:'
+            examples:
+              - רוּחִי דֻעְ׳רִי.
+              - לִפְי יַמִין.
+              - שַארֵעֵין וּבְּתוּסַלִי.
+          - text: 'מילות מקום:'
+            examples:
+              - לַחַדّ (ליד)
+              - קֻדָאם (מול)
+              - עַל שׁמאל (משמאל)
+              - עַ(ל)־יַמִין (מימין)
+        lang: he
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: עברו עם הקבוצה על שתי המיומנויות, ובקשו שאלה חדשה לכל מילת שאלה.
+  - slug: travel-practice
+    book: workbook
+    title: 'תרגול: נסיעות'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+        lang: he
+      - id: ex-questions
+        type: activity
+        activity: travel-questions
+      - id: ex-directions
+        type: activity
+        activity: travel-directions
+activities:
+  - slug: travel-questions
+    title: 'שאלות: שוּ, וֵין, מִין, לֵיש'
+    minutes: 8
+    items:
+      - id: match-question-words
+        type: matching
+        prompt: התאימו כל מילת שאלה לפירוש שלה.
+        pairs:
+          - - שוּ
+            - מה
+          - - וֵין
+            - איפה
+          - - וינתא
+            - מתי
+          - - מִין
+            - מי
+          - - לֵיש
+            - למה
+        lang: he
+      - id: answer-prague
+        type: multipleChoice
+        prompt: 'התשובה היא: פראג. איזו שאלה מתאימה?'
+        options:
+          - text: לְוֵין בִּדִّכִּי תִסָאפְרִי?
+            correct: true
+          - text: מַעְ מִין בְּתִסָאפְרִי?
+            feedback: 'זו השאלה "עם מי את נוסעת?". פראג היא יעד: שואלים לְוֵין (לאן).'
+          - text: שוּ בְּתִחְטִי בִּשַנְטֵה?
+            feedback: 'זו השאלה "מה את שמה במזוודה?". פראג היא יעד: שואלים לְוֵין (לאן).'
+        lang: he
+      - id: answer-friends
+        type: multipleChoice
+        prompt: "התשובה היא: מַעְ ס'חַאבִּי (עם החברים שלי). איזו שאלה מתאימה?"
+        options:
+          - text: מַעְ מִין בְּתִסָאפְרִי?
+            correct: true
+          - text: לְוֵין בִּדִّכִּי תִסָאפְרִי?
+            feedback: 'זו השאלה "לאן את רוצה לנסוע?". התשובה היא אנשים: שואלים מַעְ מִין (עם מי).'
+          - text: וֵין בְּתִרֻוחִי בִּלְעֻטְלָה?
+            feedback: 'זו השאלה "לאן את הולכת בחופשה?". התשובה היא אנשים: שואלים מַעְ מִין (עם מי).'
+        lang: he
+      - id: answer-camera
+        type: multipleChoice
+        prompt: 'התשובה היא: כַּמֵירַה (מצלמה). איזו שאלה מתאימה?'
+        options:
+          - text: שוּ בְּתִחְטִי בִּשַנְטֵה?
+            correct: true
+          - text: וינתא עֻטְלַתְכֹּם?
+            feedback: 'וינתא = מתי. מצלמה היא דבר: שואלים שוּ (מה).'
+          - text: מִין מַשְהוּר מִן בַּלַדִכֹּם?
+            feedback: 'מִין = מי. מצלמה היא דבר: שואלים שוּ (מה).'
+        lang: he
+      - id: negation
+        type: trueFalse
+        prompt: 'כדי לשלול שאלה מוסיפים מַא לפני הפועל: שוּ מַא בְּתִחְטִי בִּשַנְטֵה?'
+        answer: true
+        feedback:
+          correct: נכון! מַא בא לפני הפועל.
+          incorrect: 'זה נכון: בשאלה שלילית מוסיפים מַא לפני הפועל.'
+        lang: he
+      - id: negative-question
+        type: multipleChoice
+        prompt: איזו מהשאלות היא שאלה שלילית?
+        options:
+          - text: לֵיש מַא בְּתִסָאפְרִי כְּתִיר?
+            correct: true
+          - text: וינתא עֻטְלַתְכֹּם?
+            feedback: 'אין כאן מַא לפני פועל: זו שאלה רגילה.'
+          - text: שוּ בְּתִעְמַלִי לַמַּא תִסָאפְרִי?
+            feedback: לַמַּא פירושו "כאשר", לא שלילה. בשלילה בא מַא לפני הפועל.
+        lang: he
+      - id: order-holiday
+        type: reorderSentence
+        prompt: 'סדרו את המילים לשאלה: לאן את הולכת בחופשה?'
+        sentence: וֵין בְּתִרֻוחִי בִּלְעֻטְלָה
+        lang: he
+      - id: order-travel
+        type: reorderSentence
+        prompt: 'סדרו את המילים לשאלה: מה את עושה כשאת נוסעת?'
+        sentence: שוּ בְּתִעְמַלִי לַמַּא תִסָאפְרִי
+        lang: he
+  - slug: travel-directions
+    title: כיוונים
+    minutes: 8
+    items:
+      - id: match-places
+        type: matching
+        prompt: התאימו כל מילה לפירוש שלה.
+        pairs:
+          - - לַחַדّ
+            - ליד
+          - - קֻדָאם
+            - מול
+          - - עַל שׁמאל
+            - משמאל
+          - - עַ(ל)־יַמִין
+            - מימין
+        lang: he
+      - id: go-straight
+        type: multipleChoice
+        prompt: איך אומרים לאישה "לכי ישר"?
+        options:
+          - text: רוּחִי דֻעְ׳רִי
+            correct: true
+          - text: לִפְי יַמִין
+            feedback: לִפְי יַמִין = פני ימינה.
+          - text: עַל שׁמאל
+            feedback: עַל שׁמאל = משמאל.
+        lang: he
+      - id: turn-right
+        type: multipleChoice
+        prompt: איך אומרים לאישה "פני ימינה"?
+        options:
+          - text: לִפְי יַמִין
+            correct: true
+          - text: רוּחִי דֻעְ׳רִי
+            feedback: רוּחִי דֻעְ׳רִי = לכי ישר.
+          - text: קֻדָאם
+            feedback: קֻדָאם = מול.
+        lang: he
+      - id: quddam
+        type: trueFalse
+        prompt: קֻדָאם פירושו "ליד".
+        answer: false
+        feedback:
+          correct: נכון! קֻדָאם = מול, ולַחַדّ = ליד.
+          incorrect: קֻדָאם = מול. ליד = לַחַדّ.
+        lang: he
+      - id: how-sea
+        type: multipleChoice
+        prompt: מה פירוש השאלה כִּיף בְּוַס'ל עַל־בַּחֶר?
+        options:
+          - text: איך מגיעים לים?
+            correct: true
+          - text: מה לוקחים לים?
+            feedback: כִּיף = איך, בְּוַס'ל = מגיע.
+          - text: מתי נוסעים לים?
+            feedback: כִּיף = איך (מתי = וינתא).
+        lang: he
+      - id: on-right
+        type: multipleChoice
+        prompt: איזו מילה פירושה "מימין"?
+        options:
+          - text: עַ(ל)־יַמִין
+            correct: true
+          - text: עַל שׁמאל
+            feedback: עַל שׁמאל = משמאל.
+          - text: לַחַדّ
+            feedback: לַחַדّ = ליד.
+        lang: he
+      - id: left
+        type: trueFalse
+        prompt: עַל שׁמאל פירושו "משמאל".
+        answer: true
+        feedback:
+          correct: נכון!
+          incorrect: 'זה נכון: עַל שׁמאל = משמאל.'
+        lang: he
+      - id: order-sea
+        type: reorderSentence
+        prompt: 'סדרו את המילים לשאלה: איך מגיעים לים?'
+        sentence: כִּיף בְּוַס'ל עַל־בַּחֶר
+        lang: he

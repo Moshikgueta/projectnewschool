@@ -1,0 +1,662 @@
+# Cycle "Gossip", converted from the Conversational English (level 2) digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-conversational-2
+slug: gossip
+title: Gossip
+goal: Tell stories in the past simple and compare people and things with more, less, as … as and the most.
+position: 4
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Past simple" and "Comparisons") are NEW: the notebook
+    has no self-study exercises. They were written from the cycle's summary rules,
+    the activity examples and its vocabulary. Please check level, wording and every
+    right answer before students see them.
+  - >-
+    Summary, comparisons: the notebook only teaches more / less … than, as … as and
+    the most, but the class uses "the funniest story" and "the least serious". A
+    rule for short adjectives (funny → funnier → the funniest) and "the least" was
+    added to the summary. The workbook does not test the -er / -est forms. Please
+    confirm.
+  - >-
+    Preparation question B6 ("Have you ever heard a false rumor?") and the "Never Have
+    I Ever" game ("I have never told…") use the present perfect, not the past simple.
+    They are kept as in the source; a teacher note says that students answer in the
+    past simple ("I told a secret once").
+  - >-
+    "Activity D - Who's Coming to Dinner?" is renamed "Activity 4" to follow Activities
+    1–3.
+  - >-
+    Frames (sentence starters) were added to the preparation questions to model the
+    target grammar; the source has the questions only. Please check them.
+  - >-
+    Activity 3 says students receive an interview sheet with 6–8 questions; the sheet
+    is not in the notebook. The four example questions are given as the interview
+    questions, with room for the teacher to add more. Activity 1 needs a funny or
+    mysterious picture chosen by the teacher (not in the notebook).
+  - >-
+    Left out: the empty "Date / Participants" lines; the "Level A2-B1 / Duration 90
+    minutes" header (kept in the teacher plan note); and the closing line "send your
+    homework to the New School Bot … WhatsApp 050-…" (homework is done with Mori on
+    the platform; the phone number should not appear in student content).
+  - >-
+    Vocabulary: the "Part of speech" and "Simple definition" columns of the notebook
+    table were left out (the vocabulary block has a term and a Hebrew gloss only).
+    "gossip" is glossed "רכילות / לרכל" (noun / verb) and "lie" "שקר / לשקר" as in the
+    source.
+  - >-
+    Times given as ranges are recorded as the upper value (preparation questions 10–15
+    → 15). The Quizlet link is kept without its "?new" parameter. The "Answer of
+    Student 1/2/3" lines are replaced by the optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: gossip-class
+    title: 'Class: Gossip'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Gossip
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Past simple
+            description: Talking about events and stories (*heard, told, went, saw*)
+          - name: Comparisons
+            description: '*more / less … than, as … as, the most …*'
+      - id: quizlet
+        type: externalLink
+        label: Gossip words on Quizlet
+        url: https://quizlet.com/il/1098276291/gossip-updated-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I'm ___. I like / don't like talking about other people.
+        example: I'm Sarah. I like talking about other people. / I'm James. I don't like gossiping about others.
+      - id: intro-compare
+        type: sentenceFrame
+        prompt: Now compare yourself with someone in the group.
+        frame: I'm more / less ___ than ___.
+        example: I'm more talkative than Peter. / Ana is less gossipy than me.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preparation questions
+      - id: warmup-general
+        type: discussionQuestions
+        title: 'A. General discussion'
+        items:
+          - question: Why do you think people like to gossip?
+            frame: I think people like to gossip because ___.
+          - question: Is gossip usually positive or negative? Why?
+            frame: I think gossip is usually ___ because ___.
+      - id: warmup-past
+        type: discussionQuestions
+        title: 'B. Past simple questions'
+        items:
+          - question: What was the last thing you heard about a friend?
+            frame: I heard that my friend ___.
+          - question: Who did you talk to yesterday, and what did you talk about?
+            frame: Yesterday I talked to ___. We talked about ___.
+          - question: What gossip did you hear at work or school last week?
+            frame: Last week I heard that ___.
+          - question: What did you talk about with your family last weekend?
+            frame: Last weekend we talked about ___.
+          - question: What did you see on social media about someone recently?
+            frame: I saw that ___ posted ___.
+          - question: Have you ever heard a false rumor? What happened?
+            frame: Yes. I heard that ___, but it wasn't true. / No, I haven't.
+      - id: warmup-compare
+        type: discussionQuestions
+        title: 'C. Comparisons'
+        items:
+          - question: Is it better to talk about friends or celebrities? Why?
+            frame: I think talking about ___ is more / less ___ than talking about ___.
+          - question: Who is the most talkative person in your family?
+            frame: My ___ is the most talkative person in my family.
+          - question: Who gossips more — you or your best friend?
+            frame: My best friend gossips more than me. / I gossip more than ___.
+          - question: 'Who suffers more from gossip: teenagers or adults?'
+            frame: I think ___ suffer more than ___ because ___.
+          - question: What hurts more — a rumor about your personal life or your work?
+            frame: A rumor about my ___ hurts more because ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act-past-title
+        type: heading
+        level: 4
+        text: 'Choose one "past simple" activity'
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: What happened there?'
+        skills: [Past simple]
+        minutes: 20
+        steps:
+          - Look at the picture your teacher shows.
+          - Together, find useful past simple verbs.
+          - 'In small groups (3–4 students), create a short story: Who are they? What happened before the picture? What did they do and why? Use at least **3 past simple verbs**.'
+          - Choose a storyteller. Present your story in 40–60 seconds.
+          - 'Vote for the funniest story and the most believable story.'
+        wordBank: [went, saw, argued, said, met, laughed, talked, posted, found, hid]
+        example: |-
+          *First, they went to a party.*
+          *Then they saw a famous singer.*
+          *Finally, they posted a photo and everyone talked about it.*
+      - id: act1-discuss
+        type: discussionQuestions
+        title: After the stories
+        items:
+          - question: Why was this story more interesting than the others?
+            frame: ___'s story was more interesting because ___.
+          - question: Was the gossip positive or negative?
+          - question: What details made it believable?
+          - question: 'Extra: add a comparison sentence about the stories.'
+            frame: Our story is more ___ than theirs. / My character is the most ___ person in the school.
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: Never have I ever (gossip edition)'
+        skills: [Past simple, Comparisons]
+        minutes: 20
+        steps:
+          - Listen to your teacher's sentence. It starts with *I have never…*
+          - If you **did** it, raise your hand and say what happened, in the past simple.
+          - The others ask follow-up questions (*When did it happen? Who did you tell? What happened after that?*).
+          - After 2–3 stories, compare them with comparatives and superlatives.
+          - Take a turn as the leader and say your own *I have never…* sentence.
+        wordBank: [told, heard, said, posted, found out, argued, laughed, believed, lied]
+        example: |-
+          *Teacher: I have never told a friend's secret.*
+          *Student: I did it once at school. I told a secret about my friend. She was angry.*
+          *Anna's story was more surprising than John's. John's rumor was the least serious. Maria was the most honest storyteller.*
+      - id: act2-frames
+        type: discussionQuestions
+        title: Sentence starters
+        items:
+          - question: I did it when I was ___.
+          - question: My friend was ___ (adjective).
+          - question: It was ___ but ___ (adjective, adjective).
+          - question: ___'s story was more / less ___ than ___'s story.
+      - id: act-compare-title
+        type: heading
+        level: 4
+        text: 'Choose one "comparison" activity'
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Gossip interview'
+        skills: [Comparisons, Past simple]
+        minutes: 20
+        steps:
+          - Work in pairs. Ask your partner the interview questions below and write short notes.
+          - Use the past simple, comparatives and superlatives in your answers.
+          - Tell the class about your partner in 2–3 complete sentences.
+          - Answer one question from a classmate about your report.
+        example: |-
+          *My partner heard that her coworker changed departments last week.*
+          *She thinks gossip at work is more dangerous than gossip at school.*
+      - id: act3-questions
+        type: discussionQuestions
+        title: Interview questions
+        items:
+          - question: Who gossips more in your family?
+          - question: What is the funniest rumor you heard recently?
+          - question: Is false gossip more dangerous than true gossip?
+          - question: Who is the most talkative person you know?
+      - id: act3-report
+        type: discussionQuestions
+        title: Report about your partner
+        items:
+          - question: My partner said ___.
+          - question: He / She told me that ___.
+          - question: He / She thinks ___ is more / less ___ than ___.
+      - id: act4
+        type: classActivity
+        title: "Activity 4: Who's coming to dinner?"
+        skills: [Comparisons]
+        minutes: 20
+        steps:
+          - Look at the pairs of famous people on the board. Say adjectives about them.
+          - Choose **three** celebrities to invite to dinner. Write why, with comparatives.
+          - Compare your list with a partner.
+          - In groups of 3–4, agree on **three final guests**. Use at least **one superlative**.
+          - Present your guests to the class and explain your choice.
+        wordBank:
+          [
+            fun,
+            friendly,
+            popular,
+            talented,
+            interesting,
+            controversial,
+            dramatic,
+            serious,
+            confident,
+            creative,
+          ]
+        example: |-
+          *Shakira is more fun than Adele. Messi is less controversial than Ronaldo.*
+          *My guests are more interesting than yours. Your list is less surprising than mine.*
+          *We think Shakira is the most positive celebrity.*
+      - id: act4-guests
+        type: discussionQuestions
+        title: My dinner guests
+        items:
+          - question: ___ is more ___ than ___.
+          - question: ___ is less ___ than ___.
+          - question: ___ is as ___ as ___.
+          - question: ___ is the most / the least ___.
+      - id: check-title
+        type: heading
+        level: 3
+        text: Mini practice check
+      - id: check
+        type: discussionQuestions
+        title: Write, then share with a partner
+        items:
+          - question: 'One sentence in the past simple:'
+            frame: I ___ yesterday.
+          - question: 'One comparative sentence:'
+            frame: My friend is more ___ than ___.
+          - question: 'One superlative:'
+            frame: ___ is the most ___ in my family.
+      - id: reflection
+        type: discussionQuestions
+        title: Reflection
+        answerable: false
+        items:
+          - question: Which activity helped you speak the most?
+          - question: What was difficult about today's grammar?
+          - question: What can you try next time to improve?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Level A2–B1, 90 minutes. Two skills: **Past simple** (preparation questions B,
+          and Activity 1 or 2) and **Comparisons** (preparation questions C, and Activity
+          3 or 4). Choose one past simple activity and one comparison activity (20
+          minutes each). End with the summary (10 minutes) and 3–5 delayed error
+          corrections from the language you collected during group work.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Model both sentences first, then each student says one and compares themselves with someone in the group.
+      - id: n-warmup
+        anchor: warmup-title
+        minutes: 15
+        text: >-
+          Ask each student at least two questions. Answers typed here are visible to you
+          below each question. Question B6 uses the present perfect (*Have you ever…?*):
+          accept "Yes, I have", then ask *What happened?* to get past simple answers.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Before class, choose a funny or mysterious picture (two people arguing, a group
+          whispering, a celebrity hiding from cameras) and show it on screen or printed.
+          Elicit the verbs and write them on the board, with the structures *First, they
+          went to… / Then they saw… / Finally, they…*. Students vote by raising hands or
+          on paper. Lead the follow-up questions. If groups finish early: a timeline of
+          events on the board, a role-play of the main scene, or a comparison sentence.
+          Expected output: regular and irregular past simple verbs, first / then /
+          finally, complete sentences.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Model the game with "I have never told a friend's secret." / "I have never
+          invented a rumor." The prompt uses the present perfect; students answer in the
+          past simple (*I did it once. I told…*). Put the comparison frames on the board:
+          more + adj + than, less + adj + than, the most + adj. Rotate the leader after a
+          few rounds (topics: gossip, school life, family stories, social media).
+          Variations: 1 point per confession and a bonus point for a correct past simple
+          verb or a funny detail; a "safe zone" rule (students add "It was harmless
+          gossip" to avoid sensitive content); students rank 3 stories (most believable,
+          most dramatic, funniest).
+      - id: n-act3
+        anchor: act3
+        text: >-
+          You may add questions to the interview (the notebook mentions a sheet with 6–8
+          questions, not included). Review question formation first and keep support on
+          the board. Monitor for past simple, comparatives and superlatives. Optional:
+          compare interviews (*Who has the most dramatic family? Whose story was the most
+          surprising?*) or a ranking challenge (most dramatic family, most creative story,
+          funniest opinion).
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Show 4–6 pairs of famous people (e.g. Beyoncé – Taylor Swift, Messi – Ronaldo,
+          Brad Pitt – Tom Cruise, Adele – Shakira) and write the adjectives students give
+          on the board. Optional: a class vote (most creative list, most surprising
+          choices, most logical choices), a dinner-table role-play, or a 3-minute time
+          limit for the group decision.
+      - id: n-check
+        anchor: check-title
+        text: Part of the 10-minute summary. Students write or say the three sentences and share with a partner, then answer the reflection questions (1 minute).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: gossip-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-past
+        type: ruleSummary
+        skill: Past simple
+        rules:
+          - text: We use the **past simple** for actions or events that are finished and happened at a specific time in the past.
+            examples:
+              - I heard a rumor yesterday.
+              - She went to a party last weekend.
+              - We talked about celebrities online.
+              - They saw something funny on social media.
+          - text: '**Regular verbs** → add **-ed**.'
+            examples: [talk → talked, listen → listened, watch → watched]
+          - text: '**Irregular verbs** → the verb changes. Learn them by heart.'
+            examples: [go → went, see → saw, have → had, hear → heard, tell → told]
+          - text: '**Time expressions:**'
+            examples: [yesterday / last week / last month / two days ago / in 2023]
+          - text: 'Pronunciation of **-ed**: /t/ (watched), /d/ (called), /ɪd/ (wanted).'
+      - id: rules-compare
+        type: ruleSummary
+        skill: Comparisons
+        rules:
+          - text: We use **comparatives** and **superlatives** to show differences.
+          - text: 'Compare two things: **more / less** + adjective + **than**.'
+            examples: [Gossip is more fun than news., I'm less dramatic than my friend.]
+          - text: 'Say two things are the same: **as** + adjective + **as**.'
+            examples: [Celebrity gossip is as common as school gossip.]
+          - text: 'The top of a group: **the most / the least** + adjective.'
+            examples:
+              [That was the most interesting story today., John's rumor was the least serious.]
+          - text: 'Short adjectives usually add **-er / the -est** (y → i): *funny → funnier → the funniest*.'
+            examples: [Your story was funnier than mine., That was the funniest story.]
+      - id: compare-table
+        type: table
+        caption: Comparisons
+        header: [Type, Structure, Example from class]
+        rows:
+          - [Superiority, more + adj + than, Gossip is more fun than news.]
+          - [Inferiority, less + adj + than, I'm less dramatic than my friend.]
+          - [Equality, as + adj + as, Celebrity gossip is as common as school gossip.]
+          - [Superlative, the + most + adj, That was the most interesting story today.]
+      - id: adjectives
+        type: callout
+        tone: info
+        title: Common adjectives for gossip
+        text: funny, dramatic, interesting, dangerous, serious, common, positive
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 10
+        text: Go through both skills and ask for one new example for each rule. Then do the mini practice check and 3–5 delayed error corrections.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: gossip-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy a message and send it. Mori will ask you questions; answer every one.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Part 1: Past simple practice'
+        message: |-
+          Hi Mori! Ask me these questions one by one and wait for my answer. Then ask a short follow-up question.
+          What was the last thing you heard about a friend?
+          Who did you talk to yesterday?
+          What rumor did you hear last week?
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Part 2: Comparisons practice'
+        message: |-
+          Now ask me questions using comparatives. Correct me if I forget to use more / less / as … as / the most.
+          Who is more talkative — you or your best friend?
+          Who is the most dramatic person in your family?
+          Are rumors more fun or more dangerous?
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Part 3: Mini "Never have I ever" game'
+        message: 'Ask me three gossip-related "Never have I ever" questions. After each answer, say: "Tell me more about it."'
+      - id: mori-4
+        type: aiTutorPrompt
+        title: 'Part 4: Short writing'
+        message: Ask me to write 2–3 sentences about a rumor I heard last month and about the most talkative person I know.
+      - id: mori-5
+        type: aiTutorPrompt
+        title: 'Part 5: Final review'
+        message: Ask me to write 3 sentences in the past and 2 comparisons about gossip. Please correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: gossip-practice
+    book: workbook
+    title: 'Practice: Gossip'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked at once, and you can try again.
+      - id: ex-past
+        type: activity
+        activity: gossip-past
+      - id: ex-comparisons
+        type: activity
+        activity: gossip-comparisons
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: gossip-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Gossip words
+        glossLang: he
+        link: https://quizlet.com/il/1098276291/gossip-updated-flash-cards/
+        items: &gossip-words
+          - { term: gossip, gloss: רכילות / לרכל }
+          - { term: rumor, gloss: שמועה }
+          - { term: secret, gloss: סוד }
+          - { term: story, gloss: סיפור }
+          - { term: truth, gloss: אמת }
+          - { term: lie, gloss: שקר / לשקר }
+          - { term: drama, gloss: דרמה }
+          - { term: situation, gloss: מצב }
+          - { term: conversation, gloss: שיחה }
+          - { term: argument, gloss: ויכוח }
+          - { term: relationship, gloss: מערכת יחסים }
+          - { term: attention, gloss: תשומת לב }
+          - { term: decision, gloss: החלטה }
+          - { term: opinion, gloss: דעה }
+          - { term: behavior, gloss: התנהגות }
+          - { term: personality, gloss: אישיות }
+          - { term: embarrassing, gloss: מביך }
+          - { term: believable, gloss: אמין }
+          - { term: interesting, gloss: מעניין }
+          - { term: dramatic, gloss: דרמטי }
+          - { term: surprising, gloss: מפתיע }
+          - { term: controversial, gloss: שנוי במחלוקת }
+          - { term: trustworthy, gloss: מהימן }
+          - { term: confident, gloss: בטוח בעצמו }
+          - { term: jealous, gloss: קנאי }
+          - { term: curious, gloss: סקרן }
+          - { term: spread, gloss: להפיץ }
+          - { term: exaggerate, gloss: להגזים }
+          - { term: reveal, gloss: לחשוף }
+          - { term: mention, gloss: להזכיר }
+          - { term: whisper, gloss: ללחוש }
+          - { term: discuss, gloss: לדון / לדבר על }
+          - { term: compare, gloss: להשוות }
+          - { term: notice, gloss: לשים לב }
+          - { term: pretend, gloss: להעמיד פנים }
+          - { term: influence, gloss: להשפיע }
+
+vocabulary:
+  - slug: gossip
+    title: Gossip
+    items: *gossip-words
+
+activities:
+  - slug: gossip-past
+    title: 'Past simple: heard, told, went'
+    minutes: 8
+    items:
+      - id: heard
+        type: multipleChoice
+        prompt: Yesterday I ___ a rumor about my neighbor.
+        options:
+          - { text: heard, correct: true }
+          - { text: heared, feedback: '*Hear* is an irregular verb. The past form is *heard*.' }
+          - {
+              text: hear,
+              feedback: '*Hear* is present. With *yesterday*, use the past simple: *heard*.',
+            }
+      - id: went-saw
+        type: fillBlank
+        prompt: Complete with the past simple of *go* and *see*.
+        text: Last weekend she ___ to a party and ___ her old friends.
+        blanks: [[went], [saw]]
+      - id: irregular
+        type: matching
+        prompt: Match each verb with its past simple form.
+        pairs:
+          - [go, went]
+          - [see, saw]
+          - [tell, told]
+          - [hear, heard]
+          - [have, had]
+      - id: regular-ed
+        type: trueFalse
+        prompt: 'Regular verbs add *-ed* in the past simple: *talk → talked*.'
+        answer: true
+        feedback:
+          correct: 'Right! *talk → talked, listen → listened, watch → watched*.'
+          incorrect: 'Regular verbs add *-ed*: *talk → talked*.'
+      - id: did-hear
+        type: multipleChoice
+        prompt: Which question is correct?
+        options:
+          - { text: Did you hear the news?, correct: true }
+          - {
+              text: Did you heard the news?,
+              feedback: 'After *did*, use the base verb: *Did you hear…?*',
+            }
+          - {
+              text: Do you heard the news?,
+              feedback: 'For a question in the past, use *did* + the base verb: *Did you hear…?*',
+            }
+      - id: didnt-tell
+        type: fillBlank
+        prompt: Complete with the negative of *tell* in the past simple.
+        text: Don't worry. Yesterday I ___ anyone your secret.
+        blanks: [[didn't tell, did not tell]]
+      - id: time-expression
+        type: multipleChoice
+        prompt: Which time expression goes with the past simple?
+        options:
+          - { text: two days ago, correct: true }
+          - {
+              text: tomorrow,
+              feedback: '*Tomorrow* is the future. Past expressions: *yesterday, last week, two days ago*.',
+            }
+          - {
+              text: next week,
+              feedback: '*Next week* is the future. Past expressions: *yesterday, last week, two days ago*.',
+            }
+      - id: order-talked
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: We talked about celebrities online.
+
+  - slug: gossip-comparisons
+    title: 'Comparisons: more, less, as … as, the most'
+    minutes: 8
+    items:
+      - id: more-fun
+        type: multipleChoice
+        prompt: Gossip is ___ fun than news.
+        options:
+          - { text: more, correct: true }
+          - {
+              text: most,
+              feedback: '*The most* is for the top of a group. With *than*, use *more*.',
+            }
+          - {
+              text: as,
+              feedback: '*As* goes with *as*: *as fun as*. With *than*, use *more* or *less*.',
+            }
+      - id: than-as
+        type: fillBlank
+        prompt: Complete with *than* or *as*.
+        text: I'm less dramatic ___ my friend. Celebrity gossip is as common ___ school gossip.
+        blanks: [[than], [as]]
+        wordBank: [than, as]
+      - id: the-most
+        type: multipleChoice
+        prompt: That was ___ interesting story today.
+        options:
+          - { text: the most, correct: true }
+          - { text: most, feedback: 'The superlative needs *the*: *the most interesting*.' }
+          - {
+              text: more,
+              feedback: '*More* compares two things and needs *than*. For the top of a group, use *the most*.',
+            }
+      - id: types
+        type: matching
+        prompt: Match each type with its example.
+        pairs:
+          - [Superiority (+), Gossip is more fun than news.]
+          - [Inferiority (−), I'm less dramatic than my friend.]
+          - [Equality (=), Celebrity gossip is as common as school gossip.]
+          - [Superlative, That was the most interesting story today.]
+      - id: as-as-same
+        type: trueFalse
+        prompt: '*As … as* means the two things are the same.'
+        answer: true
+        feedback:
+          correct: 'Right! *Celebrity gossip is as common as school gossip* = they are equally common.'
+          incorrect: '*As + adjective + as* means the two things are the same (equality).'
+      - id: as-than
+        type: trueFalse
+        prompt: '*Celebrity gossip is as common than school gossip.* This sentence is correct.'
+        answer: false
+        feedback:
+          correct: 'Right! The correct sentence is *as common as*.'
+          incorrect: '*As* goes with *as*: *as common as*. *Than* goes with *more* or *less*.'
+      - id: most-honest
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: Maria was the most honest storyteller., correct: true }
+          - {
+              text: Maria was most honest storyteller.,
+              feedback: 'The superlative needs *the*: *the most honest*.',
+            }
+          - {
+              text: Maria was the most honest than John.,
+              feedback: '*The most* does not take *than*. To compare two people, say *more honest than*.',
+            }
+      - id: order-talkative
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: My friend is more talkative than me.

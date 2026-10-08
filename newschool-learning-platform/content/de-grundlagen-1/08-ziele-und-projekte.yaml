@@ -1,0 +1,661 @@
+# Cycle "Ziele und Projekte", converted from the German Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: ziele-und-projekte
+title: Ziele und Projekte
+goal: Über deine Ziele sprechen, mit Verben im Präsens, Daten und Zahlen.
+position: 8
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Verben im Präsens" and "Daten und Zahlen") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The lesson summary is written in Hebrew in the notebook. It is given here as
+    short German rules (ruleSummary) plus one Hebrew text block (lang he) per skill
+    with the notebook's explanation. The months comparison table stays in Hebrew
+    (lang he).
+  - >-
+    Grammar corrections in the summary. (1) The notebook says *am* is used "with days
+    and months"; in German it is *am* + day or date (*am Montag, am 12. März*) but
+    *im* + month (*im März*). The rule now says so (the notebook's own vocabulary
+    list and activities already use *im März*). (2) Ordinal numbers: "from 4 add -te"
+    is completed with the irregular *siebte* and *achte* and with *-ste* from 20
+    (*zwanzigste*); dates are read with the ordinal (*am zwölften März*). (3) Numbers
+    "20 and up end in -zig": *dreißig* ends in *-ßig*; added as an exception. (4)
+    The er/sie/es rule now mentions *-et* after a stem in -t (*er arbeitet*).
+  - >-
+    Goal sentences fixed: "Mein Ziel ist Deutsch zu lernen" → "Mein Ziel ist,
+    Deutsch zu lernen"; "Mein Ziel ist Englisch lernen" → "Mein Ziel ist, Deutsch zu
+    lernen"; "Mein Ziel ist besser Deutsch sprechen" → "Mein Ziel ist, besser Deutsch
+    zu sprechen"; goal bank "Mehr Zeit für die Schule" → "Mehr Zeit für die Schule
+    haben".
+  - >-
+    Leftovers from the English notebook changed to German: "Fließend Englisch
+    sprechen" → "Fließend Deutsch sprechen"; "Du kannst Filme auf Englisch sehen" →
+    "Du kannst Filme auf Deutsch sehen"; English glosses "(to learn)", "(to
+    exercise)" etc. in Activity 4 removed; "(Bank of Goals)" removed.
+  - >-
+    Warm-up question "Wann ist dein Ziel? → Am ___" is not natural German; it is now
+    "Wann willst du dein Ziel erreichen? → Im ___ / Am ___". Please confirm.
+  - >-
+    Activity 3 focus "1. Person (er / sie)" (a list-numbering error) → "3. Person (er
+    / sie)". The skill tags written in capitals in the activity titles ("ZielTERMINE",
+    "VERBEN", "TERMINE") are moved to the activity's skills list.
+  - >-
+    The ten Mori prompts are in Hebrew in the notebook; they are translated here into
+    simple German (as in the other courses, the student sends the message in the
+    course language). Please check the wording.
+  - >-
+    Vocabulary: "die Minuten – דקות" → "die Minute – דקה"; "der Lehrer – המורה" →
+    "מורה"; "kein" gloss shortened. The months *März, April, Juni, September* are kept
+    with the article *der*, as in the notebook. The summary example "Ich habe kein
+    Auto." is added (the notebook gives no example for *kein*).
+  - Activity times given as ranges (15–20 minutes) are recorded as 20 minutes; the intro round (5–10) as 10.
+  - >-
+    The "Antwort Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+  - >-
+    The Quizlet link's tracking parameter (?new) was removed. The Activity 3 cards
+    (Google Doc) are linked as the activity's resource.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: ziele-und-projekte-unterricht
+    title: 'Unterricht: Ziele und Projekte'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ziele und Projekte
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Verben im Präsens
+            description: '*ich lerne, du lernst, er lernt* und die Verneinung mit *nicht*'
+          - name: Daten und Zahlen
+            description: 'Tage, Monate und Zahlen: *am Montag, im März, am 12. März*'
+      - id: quizlet
+        type: externalLink
+        label: Ziele und Projekte auf Quizlet
+        url: https://quizlet.com/1114230083/%D7%9E%D7%98%D7%A8%D7%95%D7%AA-%D7%95%D7%99%D7%A2%D7%93%D7%99%D7%9D-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Mein Ziel ist, ___.
+        example: Ich bin Anna. Mein Ziel ist, Deutsch zu lernen.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Hast du ein Ziel?
+            frame: Ja, mein Ziel ist, ___.
+          - question: Was ist dein Ziel?
+            frame: Mein Ziel ist, ___.
+          - question: Wann willst du dein Ziel erreichen?
+            frame: Im ___ (Monat). / Am ___ (Datum).
+          - question: Wie viele Tage pro Woche lernst du für dein Ziel?
+            frame: Ich lerne ___ Tage pro Woche.
+          - question: Was machst du für dein Ziel?
+            frame: Ich ___ für mein Ziel.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Meine Zieltermine'
+        skills: [Verben im Präsens, Daten und Zahlen]
+        minutes: 20
+        steps:
+          - Hör das Beispiel von deinem Lehrer / deiner Lehrerin.
+          - Schreib zwei Sätze mit der Vorlage unten.
+          - Lies einen Satz laut vor.
+        example: |-
+          *Mein Ziel ist, Deutsch zu lernen.*
+          *Am Montag lerne ich 20 Minuten.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Schreib zwei Sätze
+        items:
+          - question: Mein Ziel ist, ___.
+          - question: Am ___ lerne ich ___ Minuten.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Zwei Gehirne arbeiten besser als eines!'
+        skills: [Verben im Präsens]
+        minutes: 20
+        steps:
+          - Arbeitet zu zweit.
+          - 'Schüler 1 sagt sein Ziel für dieses Jahr: *Mein Ziel ist, besser Deutsch zu sprechen.*'
+          - Schüler 2 gibt mindestens 3 Tipps mit **Du kannst + Verb**.
+          - Dann wechselt ihr die Rollen.
+        example: |-
+          *Du kannst Filme auf Deutsch sehen.*
+          *Du kannst jeden Tag lernen.*
+          *Du kannst mit Freunden sprechen.*
+        wordBank:
+          - Fließend Deutsch sprechen
+          - Bessere Noten in der Schule bekommen
+          - Neue Freunde finden
+          - Geld für etwas Besonderes sparen
+          - 'Ein neues Hobby lernen (z. B. malen, tanzen, ein Instrument spielen)'
+          - Gesünder essen und regelmäßig Sport machen
+          - Mehr lernen
+          - Besser lernen
+          - Mehr Zeit für die Schule haben
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Die Zielkarten meines Partners'
+        skills: [Verben im Präsens, Daten und Zahlen]
+        minutes: 20
+        steps:
+          - 'Öffne die Karten: 5 Verben, 10 Zahlen, 12 Monate. Dein Partner sagt dir 5 Wörter.'
+          - Hör das Beispiel von deinem Lehrer / deiner Lehrerin.
+          - 'Schreib allein 5 Sätze über deinen Partner, nicht über dich: **Er / Sie + Verb**. Jeder Satz hat 1 Verb.'
+          - Lies 2 Sätze laut vor. Dein Partner hört zu.
+        example: |-
+          *Laura fängt im März mit Deutsch an.*
+          *Laura arbeitet 2 Stunden am Tag.*
+          *Laura lernt Deutsch im April.*
+          *Der Lehrer hilft Laura im Juni.*
+          *Laura macht die Hausaufgaben im September fertig.*
+        wordBank:
+          - anfangen
+          - arbeiten
+          - helfen
+          - lernen
+          - fertig machen
+          - Januar
+          - Februar
+          - März
+          - April
+          - Mai
+          - Juni
+          - Juli
+          - August
+          - September
+          - Oktober
+          - November
+          - Dezember
+        resource:
+          label: Karten (Google Doc)
+          url: https://docs.google.com/document/d/1z130X9ohq3eAT6aBBlzMHiEldPuOwMrp5O4i1tjY0O0/edit
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Der Ziel-Plan für meinen Partner
+        items:
+          - question: 'Er / Sie ___ (Verb) ___ (Zahl) Stunden.'
+          - question: 'Er / Sie ___ (Verb) im ___ (Monat).'
+          - question: Der Lehrer hilft ___ (Name) im ___.
+          - question: 'Er / Sie ___ im ___.'
+          - question: 'Er / Sie ___ im ___.'
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Machst du das, wenn …?'
+        skills: [Verben im Präsens]
+        minutes: 20
+        steps:
+          - 'Lies die Verben: *lernen, üben / trainieren, arbeiten, sich ausruhen, studieren*.'
+          - Ein Schüler wählt ein geheimes Verb und sagt es nicht.
+          - Die anderen stellen Ja-/Nein-Fragen. Der Schüler sagt nur **Ja** oder **Nein**.
+          - 'Die Gruppe rät: **Ist es ___?** Richtig: Die Runde ist zu Ende. Falsch: Die Gruppe fragt weiter.'
+          - Ein neuer Schüler wählt ein geheimes Verb.
+        example: |-
+          **Geheimes Verb:** *lernen*
+          *Machst du das in der Schule?* – Ja.
+          *Machst du das mit einem Lehrer?* – Ja.
+          *Ist es lernen?* – Ja!
+        wordBank: [lernen, üben, trainieren, arbeiten, sich ausruhen, studieren]
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fähigkeiten in diesem Zyklus: **Verben im Präsens** (Aktivitäten 2 und 4)
+          und **Daten und Zahlen** (Aktivitäten 1 und 3, beide üben auch das Präsens).
+          Empfehlung: eine Aktivität pro Fähigkeit, z. B. Aktivitäten 1 und 2 oder
+          Aktivitäten 3 und 4.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Gib zuerst dein eigenes Beispiel und frag dann jeden Schüler.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Stell jedem Schüler mindestens zwei Fragen. Die geschriebenen Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Fokus: Präsens + Zahlen + *am*. Schreib das Modell an die Tafel und lies es laut:
+          «Mein Ziel ist, Deutsch zu lernen. Am Montag lerne ich 20 Minuten.» Kurze
+          Kontrolle: Was ist mein Ziel? Wann lerne ich? Wie viele Minuten? Dann schreibt
+          jeder Schüler 2 Sätze und liest einen Satz vor. Korrigiere nur durch korrektes
+          Wiederholen.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Teile die Gruppe in Paare. Feste Struktur für den Tipp: **Du kannst + Verb**.
+          Die Ziel-Ideen (Wortbank) helfen Schülern ohne eigene Idee.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Ziel: Die Schüler machen einen Ziel-Plan für eine andere Person (3. Person, er /
+          sie). Karten vorbereiten (5 Min.): online kopieren die Schüler das Dokument und
+          schreiben die Karten digital; im Klassenzimmer druckst du die Karten aus oder
+          schreibst die Listen an die Tafel. Mini-Modell (2 Min.): «Maria lernt Deutsch im
+          März. Der Lehrer hilft Maria im April.» Kontrollfragen: Wer ist die Person? Was
+          macht sie? Wann? Schreiben (8–10 Min.), dann Vorlesen (5 Min.). Struktur-Hilfe
+          an der Tafel: Er / Sie + Verb + Zahl + Stunden · Er / Sie + Verb + im Monat · Der
+          Lehrer hilft + Name. Korrigiere nur durch richtiges Wiederholen, z. B. Schüler:
+          «Laura lern Deutsch im April.» – Lehrer: «Sehr gut: Laura **lernt** Deutsch im
+          April.»
+      - id: n-act4
+        anchor: act4
+        text: Schreib die Verben an die Tafel oder gib jedem Team die Liste. *üben / trainieren* heißt hier auch «Sport machen».
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: ziele-und-projekte-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-praesens
+        type: ruleSummary
+        skill: Verben im Präsens
+        rules:
+          - text: 'Das Präsens ist für Gewohnheiten und Routinen:'
+            examples: [Ich lerne jeden Tag Deutsch., Ich arbeite fünf Tage pro Woche.]
+          - text: 'Das Präsens ist auch für Fakten:'
+            examples: [Es regnet im Winter viel., Menschen arbeiten am Tag.]
+          - text: Die Endung des Verbs ändert sich mit der Person.
+            examples:
+              - ich lern**e** · du lern**st** · er / sie / es lern**t**
+              - wir lern**en** · ihr lern**t** · sie lern**en**
+          - text: 'Bei **er / sie / es** endet das Verb auf **-t**. Endet der Stamm auf -t, dann **-et**.'
+            examples: [Sie lernt Deutsch., Er arbeitet in einer Bank., Es regnet im Winter.]
+          - text: 'Verneinung: **nicht** verneint ein Verb, **kein** verneint ein Nomen.'
+            examples:
+              [
+                Ich mag Brokkoli nicht.,
+                Wir arbeiten sonntags nicht.,
+                Sie liest das Buch nicht.,
+                Ich habe kein Auto.,
+              ]
+      - id: he-praesens
+        type: text
+        lang: he
+        text: >-
+          **פעלים בהווה (Präsens):** משתמשים בהווה להרגלים ולשגרה, וגם לעובדות. בגרמנית סוף
+          הפועל משתנה לפי הגוף. ב־er / sie / es תמיד יש **-t** בסוף הפועל (Er lernt, לא
+          Er lern; Sie arbeitet, לא Sie arbeite). בשלילה לא משתמשים בפועל עזר כמו do / does
+          באנגלית: **nicht** לשלילת פועל, **kein** לשלילת שם עצם.
+      - id: rules-daten
+        type: ruleSummary
+        skill: Daten und Zahlen
+        rules:
+          - text: '**am** + Tag oder Datum, **im** + Monat.'
+            examples:
+              [
+                Am Montag lerne ich 20 Minuten.,
+                Mein Geburtstag ist am 12. März.,
+                Laura lernt Deutsch im April.,
+              ]
+          - text: 'Ordnungszahlen: der **erste**, der **zweite**, der **dritte**; ab 4 mit **-te** (der vierte, der fünfte); aber der **siebte**, der **achte**; ab 20 mit **-ste** (der zwanzigste).'
+            examples:
+              [am 1. Januar = am ersten Januar, am 21. Februar = am einundzwanzigsten Februar]
+          - text: 'Zahlen 1–12 haben eigene Wörter: eins, zwei, drei … zwölf.'
+          - text: 'Zahlen 13–19 enden auf **-zehn**:'
+            examples: ['dreizehn (13), vierzehn (14), neunzehn (19)']
+          - text: 'Die Zehner ab 20 enden auf **-zig**, aber 30 = drei**ßig**:'
+            examples: ['zwanzig (20), dreißig (30), vierzig (40)']
+      - id: he-daten
+        type: text
+        lang: he
+        text: >-
+          **תאריכים ומספרים:** עם יום או תאריך אומרים **am** (am Montag, am 12. März), ועם
+          חודש אומרים **im** (im März). את התאריך קוראים במספר סודר: am 12. März = am
+          zwölften März. ככל שהמספרים גדולים יותר הם דווקא נהיים פשוטים יותר, כי לומדים את
+          המבנה וחוזרים עליו.
+      - id: months-title
+        type: heading
+        level: 3
+        text: Die Monate
+      - id: months
+        type: table
+        lang: he
+        caption: רוב חודשי השנה בגרמנית דומים לאנגלית ולעברית – צריך ללמוד רק הגייה וכתיב.
+        header: [עברית, Deutsch, הערה]
+        rows:
+          - [ינואר, Januar, כמעט אותו דבר]
+          - [פברואר, Februar, אותו משקל]
+          - [מרץ, März, כמעט זהה]
+          - [אפריל, April, זהה]
+          - [מאי, Mai, כמו May]
+          - [יוני, Juni, כמו June]
+          - [יולי, Juli, כמו July]
+          - [אוגוסט, August, זהה]
+          - [ספטמבר, September, זהה]
+          - [אוקטובר, Oktober, זהה]
+          - [נובמבר, November, זהה]
+          - [דצמבר, Dezember, דומה]
+      - id: can-do
+        type: callout
+        tone: tip
+        title: Am Ende der Stunde kann ich …
+        text: |-
+          das Präsens benutzen und Verben richtig konjugieren (besonders **er / sie / es** + **-t**),
+          mit **nicht** verneinen,
+          Zahlen sagen,
+          Daten mit **am** sagen und Monate mit **im**.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Wiederhole die zwei Fähigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: ziele-und-projekte-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere eine Nachricht und sende sie. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-ziel
+        type: aiTutorPrompt
+        title: Ich und mein Ziel
+        message: >-
+          Hallo Mori! Stell mir Fragen über meinen Namen und mein Ziel. Ich antworte auf
+          Deutsch im Präsens. Bitte korrigiere meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Willst du mehr Fragen? Sende: **Bitte frag mich mehr!**
+          Verstehst du eine Erklärung nicht? Sende: **Kannst du es auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Mehr Übung
+      - id: mori-tage
+        type: aiTutorPrompt
+        title: Tage und Minuten planen
+        message: >-
+          Hallo Mori! Bitte hilf mir: Ich plane 3 Tage pro Woche zum Deutschlernen, mit
+          Minuten. Zum Beispiel: Am Montag lerne ich 20 Minuten.
+      - id: mori-fragen
+        type: aiTutorPrompt
+        title: Fragen und Antworten zum Ziel
+        message: |-
+          Hallo Mori! Bitte frag mich:
+          Hast du ein Ziel?
+          Was ist dein Ziel?
+          Wann lernst du?
+          Ich antworte.
+      - id: mori-person
+        type: aiTutorPrompt
+        title: Die 3. Person (er / sie)
+        message: >-
+          Hallo Mori! Gib mir den Namen einer Person. Ich schreibe 3 Sätze über die Person
+          mit er oder sie.
+      - id: mori-monate
+        type: aiTutorPrompt
+        title: Monate in Sätzen
+        message: Hallo Mori! Bitte gib mir eine Aufgabe. Ich schreibe 3 Sätze mit Monaten und Daten.
+      - id: mori-spiel
+        type: aiTutorPrompt
+        title: 'Ja-/Nein-Spiel: Verben'
+        message: >-
+          Hallo Mori! Denk an ein Verb. Ich stelle Ja-/Nein-Fragen und rate das Verb.
+      - id: mori-fehler
+        type: aiTutorPrompt
+        title: Den Fehler finden
+        message: Hallo Mori! Schreib mir einen Satz mit einem Fehler im Verb. Ich korrigiere den Satz.
+      - id: mori-woche
+        type: aiTutorPrompt
+        title: Mein Ziel für die nächste Woche
+        message: >-
+          Hallo Mori! Hilf mir, ein Ziel für die nächste Woche zu planen, auf Deutsch, mit
+          Tag und Minuten.
+      - id: mori-verben
+        type: aiTutorPrompt
+        title: Verben schnell wiederholen
+        message: Hallo Mori! Gib mir 5 Verben. Ich konjugiere sie mit ich, er und wir.
+      - id: mori-wiederholung
+        type: aiTutorPrompt
+        title: Die Stunde wiederholen
+        message: >-
+          Hallo Mori! Bitte wiederhole mit mir kurz die Stunde von heute: Verben im Präsens,
+          Daten und Zahlen. Stell mir Fragen.
+      - id: mori-bonus
+        type: aiTutorPrompt
+        title: 'Bonus: Eine Minute sprechen'
+        message: >-
+          Hallo Mori! Bitte gib mir eine Aufgabe: Ich spreche eine Minute auf Deutsch über
+          mein Ziel und meinen Plan für die Woche.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: ziele-und-projekte-uebung
+    book: workbook
+    title: 'Übung: Ziele und Projekte'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fähigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-verben
+        type: activity
+        activity: ziele-und-projekte-verben
+      - id: ex-daten
+        type: activity
+        activity: ziele-und-projekte-daten
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: ziele-und-projekte-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter zu Zielen und Projekten
+        glossLang: he
+        link: https://quizlet.com/1114230083/%D7%9E%D7%98%D7%A8%D7%95%D7%AA-%D7%95%D7%99%D7%A2%D7%93%D7%99%D7%9D-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &ziele-und-projekte-words
+          - { term: das Ziel, gloss: מטרה }
+          - { term: lernen, gloss: ללמוד }
+          - { term: anfangen, gloss: להתחיל }
+          - { term: arbeiten, gloss: לעבוד }
+          - { term: helfen, gloss: לעזור }
+          - { term: fertig machen, gloss: לסיים }
+          - { term: der Tag, gloss: יום }
+          - { term: die Woche, gloss: שבוע }
+          - { term: der Monat, gloss: חודש }
+          - { term: am, gloss: ב־ (ליום או לתאריך) }
+          - { term: im, gloss: ב־ (לחודש) }
+          - { term: der Montag, gloss: יום שני }
+          - { term: der März, gloss: מרץ }
+          - { term: der April, gloss: אפריל }
+          - { term: der Juni, gloss: יוני }
+          - { term: der September, gloss: ספטמבר }
+          - { term: eins, gloss: אחד }
+          - { term: zwei, gloss: שתיים }
+          - { term: drei, gloss: שלוש }
+          - { term: fünf, gloss: חמש }
+          - { term: zehn, gloss: עשר }
+          - { term: die Stunde, gloss: שעה }
+          - { term: die Minute, gloss: דקה }
+          - { term: ich, gloss: אני }
+          - { term: du, gloss: אתה / את }
+          - { term: er, gloss: הוא }
+          - { term: sie, gloss: היא / הם }
+          - { term: der Lehrer, gloss: מורה }
+          - { term: Deutsch, gloss: גרמנית }
+          - { term: die Schule, gloss: בית ספר }
+          - { term: die Hausaufgaben, gloss: שיעורי בית }
+          - { term: sprechen, gloss: לדבר }
+          - { term: üben, gloss: להתאמן / לתרגל }
+          - { term: sich ausruhen, gloss: לנוח }
+          - { term: nicht, gloss: לא (שלילת פועל) }
+          - { term: kein, gloss: אין / לא (שלילת שם עצם) }
+
+vocabulary:
+  - slug: ziele-und-projekte
+    title: Ziele und Projekte
+    items: *ziele-und-projekte-words
+
+activities:
+  - slug: ziele-und-projekte-verben
+    title: 'Verben im Präsens: ich lerne, er lernt'
+    minutes: 8
+    items:
+      - id: er-lernt
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Er lernt Deutsch., correct: true }
+          - {
+              text: Er lern Deutsch.,
+              feedback: 'Bei *er / sie / es* endet das Verb auf *-t*: *er lernt*.',
+            }
+          - {
+              text: Er lernen Deutsch.,
+              feedback: '*lernen* ist für *wir* und *sie* (Plural). Bei *er* sagt man *lernt*.',
+            }
+      - id: er-arbeitet
+        type: multipleChoice
+        prompt: Er ___ in einer Bank.
+        options:
+          - { text: arbeitet, correct: true }
+          - {
+              text: arbeit,
+              feedback: 'Der Stamm *arbeit-* endet auf *-t*, darum *-et*: *er arbeitet*.',
+            }
+          - { text: arbeite, feedback: '*arbeite* ist für *ich*. Bei *er* sagt man *arbeitet*.' }
+      - id: ich-du-wir
+        type: fillBlank
+        prompt: Schreib das Verb *lernen* in der richtigen Form.
+        text: Ich ___ Deutsch. Du ___ Deutsch. Wir ___ Deutsch.
+        blanks: [[lerne], [lernst], [lernen]]
+      - id: endung-t
+        type: trueFalse
+        prompt: 'Bei *er / sie / es* endet das Verb im Präsens auf *-t*: *sie lernt*.'
+        answer: true
+        feedback:
+          correct: Richtig! *er lernt, sie lernt, es regnet*.
+          incorrect: Bei *er / sie / es* steht immer *-t* am Ende des Verbs.
+      - id: formen
+        type: matching
+        prompt: Verbinde die Person mit dem Verb.
+        pairs:
+          - [ich, lerne]
+          - [du, lernst]
+          - [er, lernt]
+          - [wir, lernen]
+      - id: nicht-kein
+        type: multipleChoice
+        prompt: Wir arbeiten sonntags ___.
+        options:
+          - { text: nicht, correct: true }
+          - {
+              text: kein,
+              feedback: '*kein* steht vor einem Nomen. Ein Verb verneint man mit *nicht*.',
+            }
+          - {
+              text: keine,
+              feedback: '*keine* steht vor einem Nomen. Ein Verb verneint man mit *nicht*.',
+            }
+      - id: ordne-lernt
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Sie lernt jeden Tag Deutsch.
+      - id: laura-arbeitet
+        type: fillBlank
+        prompt: Schreib das Verb *arbeiten* in der richtigen Form.
+        text: Laura ___ 2 Stunden am Tag.
+        blanks: [[arbeitet]]
+
+  - slug: ziele-und-projekte-daten
+    title: 'Daten und Zahlen: am, im, eins, zwei'
+    minutes: 8
+    items:
+      - id: am-datum
+        type: multipleChoice
+        prompt: Mein Geburtstag ist ___ 12. März.
+        options:
+          - { text: am, correct: true }
+          - {
+              text: im,
+              feedback: '*im* steht nur vor einem Monat (*im März*). Mit Datum sagt man *am*.',
+            }
+          - { text: in, feedback: 'Mit einem Tag oder Datum sagt man *am*: *am 12. März*.' }
+      - id: im-monat
+        type: multipleChoice
+        prompt: Laura lernt Deutsch ___ April.
+        options:
+          - { text: im, correct: true }
+          - {
+              text: am,
+              feedback: '*am* steht vor einem Tag oder Datum. Vor einem Monat sagt man *im*.',
+            }
+          - { text: um, feedback: 'Vor einem Monat sagt man *im*: *im April*.' }
+      - id: zahlen
+        type: matching
+        prompt: Verbinde die Zahlen.
+        pairs:
+          - ['2', zwei]
+          - ['3', drei]
+          - ['5', fünf]
+          - ['7', sieben]
+          - ['10', zehn]
+      - id: zehn
+        type: trueFalse
+        prompt: 'Die Zahlen von 13 bis 19 enden auf *-zehn*: *dreizehn, vierzehn, neunzehn*.'
+        answer: true
+        feedback:
+          correct: Richtig! 13 = dreizehn, 19 = neunzehn.
+          incorrect: 13–19 enden auf *-zehn*, zum Beispiel *dreizehn* (13).
+      - id: in-worten
+        type: fillBlank
+        prompt: Schreib die Zahlen in Wörtern.
+        text: 13 = ___ · 20 = ___ · 30 = ___
+        blanks: [[dreizehn], [zwanzig], [dreißig, dreissig]]
+      - id: dritte
+        type: multipleChoice
+        prompt: 'Der 3. Mai: Wie sagt man das?'
+        options:
+          - { text: der dritte Mai, correct: true }
+          - { text: der dreite Mai, feedback: '*3.* ist unregelmäßig: *der dritte*.' }
+          - {
+              text: der dreiste Mai,
+              feedback: '*-ste* ist erst ab 20 (*der zwanzigste*). 3. = *der dritte*.',
+            }
+      - id: am-montag
+        type: trueFalse
+        prompt: 'Man sagt: *Im Montag lerne ich 20 Minuten.*'
+        answer: false
+        feedback:
+          correct: 'Richtig! Mit einem Tag sagt man *am*: *Am Montag lerne ich 20 Minuten.*'
+          incorrect: 'Mit einem Tag sagt man *am*, nicht *im*: *Am Montag lerne ich 20 Minuten.*'
+      - id: ordne-montag
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Am Montag lerne ich 20 Minuten.

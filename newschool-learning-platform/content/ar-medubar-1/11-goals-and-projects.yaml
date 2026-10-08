@@ -1,0 +1,557 @@
+# Cycle "מטרות ופרויקטים", converted from the spoken Arabic level 1 notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew
+# transliteration); Hebrew instructions carry `lang: he`.
+course: ar-medubar-1
+slug: goals-and-projects
+title: מטרות ופרויקטים – אַהְדָאף וּמַשָׁארִיע
+goal: לדבר על מטרה אישית עם פעלים בזמן הווה, ולהגיד מתי היא מתחילה ונגמרת בעזרת "שַׁהָר" + מספר.
+position: 11
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Present tense verbs" and "Months and numbers") are
+    NEW: the notebook has no self-correcting exercises. They were written only from
+    this cycle's summary, activities and vocabulary. An Arabic teacher must check every
+    right answer, every wrong option and every transliteration before students see
+    them. Some sentences are built from the cycle's own words (e.g. "אנא אבלש פי שַׁהָר
+    תלאתֶה", "אנא אַנְהִי פי שַׁהָר ארבַּעָה") and do not appear in the notebook as
+    such.
+  - >-
+    The Arabic subtitle of the title, "אַהְדָאף וּמַשָׁארִיע", is NEW (the notebook
+    has only the Hebrew title). Please check it or remove it.
+  - >-
+    Encoding fixes (Arabic characters typed inside Hebrew transliteration): "בדّي" →
+    "בִּדִּי"; "אבלّש" → "אבלּש"; "בדّh" → "בִּדִּי"; "בדַّכּ" / "בֶּדַّכּ" →
+    "בִּדַּכּ" / "בֶּדַּכּ"; "كل יום" → "כל יום".
+  - >-
+    Typo fixes: the introduction frame ends with the Hebrew word "חדש"; the example
+    and the vocabulary have "ג'דיד", so the frame now says "ג'דיד". In the summary and
+    the homework, هدف is written "חדף" / "חדפי" (with ח); elsewhere and in the
+    vocabulary it is "הַדַף" (with ה), so it is written with ה everywhere. "אךלַצ"
+    (final kaf in the middle of a word) → "אַח'לֶּס'" as in the verb bank. "הַדָפיי"
+    → "הַדָפי". In the negation examples, the Hebrew word "היום" → "אל־יום". In the
+    first Mori message, the Hebrew word "אני" → "אנא". Please check each one.
+  - >-
+    GRAMMAR DOUBT, not changed: the negation example "הוּ מא אשתע׳ל יום סבת" uses a
+    1st-person verb with "הוּ" (he). Please correct it (e.g. a 3rd-person form) or
+    remove it. It is not used in the exercises.
+  - >-
+    Dialect doubts, not changed (teacher's call): the summary's present tense has no
+    b- prefix ("אנא אשתע׳ל", "אנא אתעלם"), while other cycles use "בַּחֵבּ",
+    "בַּעְמַל"; "אשתע׳ל" (summary) vs "אַשְׁתְרֶ׳ל" (vocabulary) for the same verb;
+    "אמרן" (summary) vs "אַתְמַרָּן" (vocabulary); "פי אַי שהר בִּדַּכּ אבלש?"
+    (1st-person verb after בִּדַּכּ; Activity 3 has "בִּדַּכּ תְבַּלֶּש"); "תֶעְמַלְו/י";
+    "עאאֶיק'" (obstacle); "סֶנֶה א ג'דידֶה"; "נַגַחְת" (with ג, not ג'); "תְחַדֵּש" in
+    the guessing-game message (guess = تحزر?).
+  - >-
+    The summary's skill 2 says "with an ordinal number: אל־שהר אל־…", but its examples
+    ("שַׁהָר ואחָד, שַׁהָר תנין…") use cardinal numbers, and the Hebrew sentences that
+    follow have no Arabic version. Kept as is; please decide which form the course
+    teaches.
+  - >-
+    Vocabulary: the list says 32 words but has 33 because "מוהֶם – חשוב" appears
+    twice; kept once. "ח'וטָּה – תוכנית plan": the English word was removed.
+    Arabic-script words were left out (terms are in transliteration only).
+  - >-
+    The Quizlet "?new" parameter was removed. Time ranges (5–10, 15–20 minutes) are
+    rounded up. The "student answer" lines are replaced by the optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: goals-and-projects-class
+    title: 'שיעור: מטרות ופרויקטים'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: מטרות ופרויקטים
+      - id: skills
+        type: cycleOverview
+        lang: he
+        skills:
+          - name: פעלים בזמן הווה
+            description: 'אנא + פועל: אנא אתעלם, אנא אשתע׳ל, אנא **מא** אשתע׳ל'
+          - name: תאריכים ומספרים
+            description: 'באיזה חודש: שַׁהָר ואחָד, שַׁהָר תנין...'
+      - id: quizlet
+        type: externalLink
+        lang: he
+        label: מטרות ופרויקטים בקוויזלט
+        url: https://quizlet.com/br/1122961205/%D7%9E%D7%98%D7%A8%D7%95%D7%AA-%D7%95%D7%99%D7%A2%D7%93%D7%99%D7%9D-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        lang: he
+        text: סבב פתיחה
+      - id: intro
+        type: sentenceFrame
+        frame: |-
+          אנא ___.
+          בִּדִּי אבלּש הדף ג'דיד.
+        example: |-
+          אנא מחמד.
+          בִּדִּי אחקֶ'קְ הַדָף ג'דיד.
+      - id: warmup-title
+        type: heading
+        level: 3
+        lang: he
+        text: שאלות חימום
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: "שו הַדַפָכְּ / הַדַפֶכְּ לל סֶנֶה א ג'דידֶה?"
+            frame: הדָפי הו ___
+          - question: "שו אַוָּל אֶשִׁי לאזֶם תֶעְמַלְו/י עשאן תֶסַ'ל/י לֶלְהַדָף?"
+            frame: "לאזֶם אַעְמָל ___ (מַס'ארי, תַסְויק', חֶ'בְּרָה, ג'ורְאָה...)"
+          - question: "בֶּתְחֶבְּ תְכּון לַחאלָכְּ אַוְ מע מַגְ'מועָה?"
+          - question: פי מַשְרוע בֶּחַיאתַכְּ בֶּתְחֶבְּ תֶעְמַלו/י? שו הו?
+          - question: "שו אַכְּבְּר עאאֶיק' עֶנְדָכְּ?"
+            frame: "(מַס'ארי, מַכָּאן, נאס, עילֶה, ח'וף...)"
+      - id: activities-title
+        type: heading
+        level: 3
+        lang: he
+        text: פעילויות
+      - id: act1
+        type: classActivity
+        lang: he
+        title: 'פעילות 1: צעדים למען המטרה שלי'
+        skills: [פעלים בזמן הווה, תאריכים ומספרים]
+        minutes: 20
+        steps:
+          - כותבים משפטים על הצעדים שלכם למען המטרה.
+          - 'כל משפט חייב לכלול: **תאריך**, **פועל** ו**משך זמן**.'
+          - אפשר לבחור כל פועל. בנק הפעלים עוזר למי שצריך רעיונות.
+        wordBank:
+          - אַבַּלֶּש
+          - "אַשְתְרֶ'ל"
+          - אַסאעֶד
+          - "אַק'רֶּר"
+          - אַבְּנִי
+          - אַרַתֶּבְּ
+          - אַסאפֶר
+          - אַרְבָּח
+          - "אַנְהי / אַח'לֶּס'"
+          - אַטַוֶּר
+      - id: act1-frame
+        type: sentenceFrame
+        frame: אל־יום ___ אנא ___ ל ___.
+      - id: act2
+        type: classActivity
+        lang: he
+        title: 'פעילות 2: שני ראשים טובים מאחד'
+        skills: [פעלים בזמן הווה]
+        minutes: 20
+        steps:
+          - עובדים בזוגות.
+          - תלמיד 1 מציג מטרה.
+          - תלמיד 2 נותן **שלוש עצות** איך להגיע למטרה.
+          - מחליפים תפקידים.
+      - id: act2-dialogue
+        type: dialogue
+        lines:
+          - speaker: '1'
+            text: 'הַדָפי הו: אחּכּי ערבִּי מניח.'
+          - speaker: '2'
+            text: לַאזִם ___, ___ ו־___.
+      - id: act3
+        type: classActivity
+        lang: he
+        title: 'פעילות 3: המטרות של החבר שלי'
+        skills: [פעלים בזמן הווה, תאריכים ומספרים]
+        minutes: 20
+        steps:
+          - "עובדים בזוגות: תלמיד א' שואל ותלמיד ב' עונה. אחרי 3 דקות מתחלפים."
+          - 'כותבים 3 משפטים בלבד על החבר, בגוף שלישי.'
+          - 'חוזרים למליאה: כל תלמיד מקריא משפט אחד ממה שכתב.'
+      - id: act3-questions
+        type: discussionQuestions
+        title: שאלות לחבר
+        items:
+          - question: שוּ הוּ אל־הַדף?
+          - question: וינתא בֶּדַּכּ תְבַּלֶּש?
+          - question: מע מין?
+          - question: "שוּ בִּתְעַמַל עַשַאן תוּס'ל לִלהַדף?"
+      - id: act3-write
+        type: reflection
+        lang: he
+        prompt: כתבו 3 משפטים בלבד על החבר שלכם, בגוף שלישי.
+      - id: act4
+        type: classActivity
+        lang: he
+        title: 'פעילות 4: אתה עושה את זה כש...? (פעלים)'
+        skills: [פעלים בזמן הווה]
+        minutes: 15
+        steps:
+          - המורה כותב על הלוח את 5 הפעלים.
+          - המורה בוחר פועל אחד **בסוד**.
+          - הכיתה כולה שואלת שאלות כדי לנחש.
+        wordBank: [אַדְרוס, אַתֶמַרָּן, אַשְתְרֶ׳ל, אַרְתָאח, אַתְעַלָּם]
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          שתי מיומנויות במחזור: **פעלים בזמן הווה** ו**תאריכים ומספרים**. בוחרים שתי
+          פעילויות לפי מצב הכיתה.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: המורה מציג את הדגם על הלוח. כל תלמיד מציג את עצמו ואומר שהוא מתחיל מטרה חדשה.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: >-
+          המורה מציג כל שאלה ומקריא אותה בקול; התלמידים עונים לפי הדגם, קודם בעל־פה ואז
+          בכתב. מקפידים על הווה, מספרים ותאריכים.
+      - id: n-act1
+        anchor: act1
+        text: התלמידים חופשיים לבחור באיזה פועל להשתמש. בנק הפעלים הוא רק לדוגמה.
+      - id: n-act3
+        anchor: act3
+        text: בשלב המליאה המורה מתקן לפי הצורך.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: goals-and-projects-summary
+    title: סיכום השיעור
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: מה למדנו היום
+      - id: aims
+        type: text
+        lang: he
+        text: >-
+          למדנו לדבר על **מטרות**, לתאר **מה אני עושה כדי להצליח**, ולהגיד **מתי אני
+          מתחיל ומסיים**.
+      - id: rules-present
+        type: ruleSummary
+        lang: he
+        skill: פעלים בזמן הווה
+        rules:
+          - text: >-
+              בערבית מדוברת, כמו בעברית, משתמשים בזמן הווה כדי לדבר על מה שאני עושה
+              עכשיו, מה שאני עושה בדרך כלל ומה שאני מתכנן לעשות בזמן הקרוב.
+          - text: 'פשוט: **אנא + פועל**. לא צריך עבר, לא עתיד ולא הטיות מסובכות.'
+            examples:
+              - אנא **אתעלם** ערבי – אני לומד ערבית
+              - אנא **אשתע׳ל** כל יום – אני עובד כל יום
+              - אנא **אמרן** בל־בית – אני מתאמן בבית
+              - אנא **אבלש** הדף ג׳דיד – אני מתחיל מטרה חדשה
+              - "אנא **אַח'לֶּס'** אל־הדף – אני מסיים את המטרה"
+          - text: 'שלילה בהווה: כמו "אני **לא** עובד" בעברית, בערבית אומרים **מא** לפני הפועל.'
+            examples:
+              - אנא **מא** אשתע׳ל
+              - אנא **מא** אתעלם אל־יום
+              - הוּ **מא** אשתע׳ל יום סבת
+      - id: rules-months
+        type: ruleSummary
+        lang: he
+        skill: תאריכים ומספרים
+        rules:
+          - text: >-
+              כדי להגיד באיזה חודש משהו קורה, לא משתמשים בשמות החודשים אלא במבנה קבוע:
+              **שַׁהָר** + מספר.
+            examples:
+              - שַּהָר ואחָד – ינואר
+              - שַׁהָר תנין – פברואר
+              - שַׁהָר תלאתֶה – מרץ
+              - שַׁהָר ארבַּעָה – אפריל
+          - text: 'למשל: אני מתחיל את המטרה בחודש ינואר. אני לומד ערבית כל יום. אני רוצה לסיים את המטרה בחודש דצמבר.'
+      - id: can-do
+        type: callout
+        tone: tip
+        lang: he
+        title: מה אתם כבר יודעים?
+        text: |-
+          ✔️ להגיד **מה אתם עושים**
+          ✔️ להגיד **מתי זה קורה**
+          ✔️ לדבר על **מטרה אישית**
+          ✔️ לשאול מישהו אחר על **המטרה שלו**
+          ✔️ לכתוב ולדבר בגוף ראשון ובגוף שלישי
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 15
+        text: עוברים עם הכיתה על שתי המיומנויות ומבקשים מכל תלמיד משפט חדש לכל כלל.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: goals-and-projects-homework
+    title: שיעורי בית עם מורי
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: שיעורי בית עם מורי
+      - id: how
+        type: text
+        lang: he
+        text: >-
+          פתחו שיחה עם מורי, העתיקו את ההודעה ושלחו אותה. ענו על כל שאלה. הקפידו על
+          פועל בהווה ועל "שַׁהָר + מספר". מותר לטעות – מורי מתקן.
+      - id: mori-goal
+        type: aiTutorPrompt
+        lang: he
+        title: 'משימה 1: לספר למורי על המטרה שלי'
+        message: |-
+          שלום מורי!
+          אנא בִּדִּי אֻחְכּי לַכּ עַן הדפי.
+          סֻאַלְנִי עַן אל־הדף תבעִי, מַתַא אנא אֲבַּלֵּש, שוּ אנא בַּעְמַל, ופי אַי שהר.
+          בִּסְתַעְמַל רק פעלים בל־הוֵוה ואל־שהר אל־…
+          סַחֵּח לִי אם אנא אִגְלַט.
+      - id: mori-questions
+        type: examples
+        items:
+          - text: ענדַכּ הדף?
+          - text: שוּ הוּ אל־הדף?
+          - text: פי אַי שהר בִּדַּכּ אבלש?
+          - text: שוּ בִּתְעַמַל עַשַאן תוּצַל לִלהדף?
+      - id: mori-steps
+        type: aiTutorPrompt
+        lang: he
+        title: 'משימה 2: 3 צעדים למטרה שלי'
+        intro: 'השלימו וכתבו למורי 3 משפטים בלבד. בכל משפט: פועל + השַׁהָר.'
+        message: |-
+          שלום מורי! האדא תַלַת צְעֻדִי לִלהדף:
+          אנא אבלש פי אל־שהר אל־___
+          אנא אתעלם / אשתע׳ל / אמרן כל יום
+          אנא אַח'לֶּס' פי אל־שהר אל־___
+          בְּלִזְבְתַכּ סַחֵּח לִי.
+      - id: mori-game
+        type: aiTutorPrompt
+        lang: he
+        title: 'משימה 3: מורי מנחש את המטרה שלי'
+        intro: חשבו על מטרה בסוד. מורי שואל שאלות, אתם עונים רק תשובות קצרות, ומורי צריך לנחש.
+        message: |-
+          שלום מורי!
+          בִּדִּי נַלְעַב לֻעְבּה.
+          אנא מִחַדֵּד הדף פי רַאסִי,
+          ואנת בִּתְסְאַלְנִי שְוֵי שְוֵי עַנּוּ,
+          ואלַאכִּיר בִּתְחָאוּל תְחַדֵּש שוּ הוּ.
+          סֻאָלַאת פַקַט, ואנא בַּגֻול: אה / לא.
+          וּסַחֵּח לִי אם אנא אִגְלַט.
+      - id: mori-success
+        type: aiTutorPrompt
+        lang: he
+        title: 'משימה 4: משפט של הצלחה'
+        intro: בסוף האימון, שלחו למורי משפט אחד של הצלחה.
+        message: |-
+          אל־יום נַגַחְת!
+          אנא ___.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: goals-and-projects-practice
+    book: workbook
+    title: 'תרגול: מטרות ופרויקטים'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        lang: he
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+      - id: ex-verbs
+        type: activity
+        activity: goals-and-projects-verbs
+      - id: ex-months
+        type: activity
+        activity: goals-and-projects-months
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: goals-and-projects-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: words-title
+        type: heading
+        level: 2
+        lang: he
+        text: המילים המרכזיות – מטרות ופרויקטים
+      - id: words
+        type: vocabulary
+        glossLang: he
+        link: https://quizlet.com/br/1122961205/%D7%9E%D7%98%D7%A8%D7%95%D7%AA-%D7%95%D7%99%D7%A2%D7%93%D7%99%D7%9D-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &goals-words
+          - { term: הַדָף, gloss: מטרה }
+          - { term: אַהְדָאף, gloss: מטרות }
+          - { term: מַשְׁרוע, gloss: פרויקט }
+          - { term: פֶכְּרָה, gloss: רעיון }
+          - { term: תַחַדִּי, gloss: אתגר }
+          - { term: מַרְחַלֶה, gloss: שלב }
+          - { term: לאזֶם, gloss: צריך }
+          - { term: "ג'דיד", gloss: חדש }
+          - { term: מוהֶם, gloss: חשוב }
+          - { term: אַחַסֶּן, gloss: אשפר }
+          - { term: אַבָּלֶּשׁ / אַבְּדָא, gloss: אתחיל }
+          - { term: אַתְעַלָּם, gloss: לומד }
+          - { term: אַתְמַרָּן / אַתְדַרָּבְּ, gloss: להתאמן }
+          - { term: אַשְׁתְרֶ׳ל, gloss: לעבוד }
+          - { term: אַסאעֶד, gloss: לעזור }
+          - { term: אַטַוֶּר, gloss: אֶפתֵחַ }
+          - { term: אַנְהִי, gloss: לסיים }
+          - { term: "אַנְגַ'ח", gloss: להצליח }
+          - { term: "עַקֶ'ד", gloss: חוזה }
+          - { term: "אַקְ'רָא", gloss: לקרוא }
+          - { term: אַחְכִּי, gloss: לדבר }
+          - { term: "וַקֶ'ת", gloss: זמן }
+          - { term: פַתְרָה, gloss: תקופה }
+          - { term: "ח'וטָּה", gloss: תוכנית }
+          - { term: "מַסַ'ארי", gloss: כסף }
+          - { term: ראס מאל, gloss: הון }
+          - { term: מַוָארֶד, gloss: משאבים }
+          - { term: אַמָל, gloss: תקווה }
+          - { term: "ג'ורְאָה", gloss: תעוזה }
+          - { term: "ח'וף", gloss: פחד }
+          - { term: מַסְאולֶיֶּה, gloss: אחריות }
+          - { term: "אֶסְתֶתְ'מָאר", gloss: השקעה }
+
+vocabulary:
+  - slug: goals-and-projects
+    title: מטרות ופרויקטים
+    items: *goals-words
+
+activities:
+  - slug: goals-and-projects-verbs
+    title: פעלים בזמן הווה
+    minutes: 8
+    items:
+      - id: verbs
+        type: matching
+        lang: he
+        prompt: התאימו כל פועל לפירוש שלו.
+        pairs:
+          - [אַתְעַלָּם, לומד]
+          - [אַשְׁתְרֶ׳ל, עובד]
+          - [אַבָּלֶּשׁ, מתחיל]
+          - [אַנְהִי, מסיים]
+          - [אַסאעֶד, עוזר]
+      - id: not-working
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: "אני לא עובד"?'
+        options:
+          - { text: אנא מא אשתע׳ל, correct: true }
+          - { text: מא אנא אשתע׳ל, feedback: '*מא* באה מיד לפני הפועל: אנא **מא** אשתע׳ל.' }
+          - { text: אנא אשתע׳ל מא, feedback: '*מא* באה לפני הפועל, לא אחריו.' }
+      - id: negation-rule
+        type: trueFalse
+        lang: he
+        prompt: 'כדי לשלול פועל בהווה שמים *מא* לפני הפועל: אנא מא אתעלם אל־יום.'
+        answer: true
+        feedback:
+          correct: נכון! כמו "אני **לא** לומד" בעברית.
+      - id: learn-arabic
+        type: multipleChoice
+        lang: he
+        prompt: 'מה הפירוש של: *אנא אתעלם ערבי*?'
+        options:
+          - { text: אני לומד ערבית, correct: true }
+          - { text: אני מדבר ערבית, feedback: 'לדבר = *אַחְכִּי*. *אתעלם* = לומד.' }
+          - { text: אני לא לומד ערבית, feedback: 'אין כאן *מא*, אז המשפט חיובי.' }
+      - id: every-day
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: "אני עובד כל יום".'
+        sentence: אנא אשתע׳ל כל יום
+      - id: new-goal
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: "אני מתחיל מטרה חדשה"?'
+        options:
+          - { text: אנא אבלש הדף ג׳דיד, correct: true }
+          - text: "אנא אַח'לֶּס' הדף ג׳דיד"
+            feedback: "*אַח'לֶּס'* = מסיים. מתחיל = *אבלש*."
+          - text: אנא מא אבלש הדף ג׳דיד
+            feedback: '*מא* = לא. המשפט הזה אומר "אני **לא** מתחיל".'
+      - id: lazem
+        type: multipleChoice
+        lang: he
+        prompt: 'מה הפירוש של *לאזֶם*?'
+        options:
+          - { text: צריך, correct: true }
+          - { text: חשוב, feedback: 'חשוב = *מוהֶם*.' }
+          - { text: חדש, feedback: "חדש = *ג'דיד*." }
+      - id: anhi
+        type: trueFalse
+        lang: he
+        prompt: '*אַנְהִי* פירושו "להתחיל".'
+        answer: false
+        feedback:
+          correct: 'נכון! *אַנְהִי* = לסיים. להתחיל = *אַבָּלֶּשׁ*.'
+          incorrect: '*אַנְהִי* = לסיים. להתחיל = *אַבָּלֶּשׁ*.'
+
+  - slug: goals-and-projects-months
+    title: 'תאריכים ומספרים: שַׁהָר + מספר'
+    minutes: 8
+    items:
+      - id: months
+        type: matching
+        lang: he
+        prompt: התאימו כל חודש לשם שלו בעברית.
+        pairs:
+          - [שַׁהָר ואחָד, ינואר]
+          - [שַׁהָר תנין, פברואר]
+          - [שַׁהָר תלאתֶה, מרץ]
+          - [שַׁהָר ארבַּעָה, אפריל]
+      - id: start-march
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: "אני מתחיל במרץ"?'
+        options:
+          - { text: אנא אבלש פי שַׁהָר תלאתֶה, correct: true }
+          - { text: אנא אבלש פי שַׁהָר תנין, feedback: 'שַׁהָר תנין = פברואר (החודש השני).' }
+          - {
+              text: אנא אבלש פי שַׁהָר ארבַּעָה,
+              feedback: 'שַׁהָר ארבַּעָה = אפריל (החודש הרביעי).',
+            }
+      - id: al-yom
+        type: trueFalse
+        lang: he
+        prompt: '*אל־יום* פירושו "היום".'
+        answer: true
+        feedback:
+          correct: 'נכון! למשל: אנא מא אתעלם אל־יום.'
+      - id: wenta
+        type: multipleChoice
+        lang: he
+        prompt: 'מה הפירוש של: *וינתא בֶּדַּכּ תְבַּלֶּש?*'
+        options:
+          - { text: מתי אתה רוצה להתחיל?, correct: true }
+          - { text: מה המטרה שלך?, feedback: 'מה המטרה? = *שוּ הוּ אל־הַדף?*' }
+          - { text: עם מי אתה מתחיל?, feedback: 'עם מי? = *מע מין?*' }
+      - id: ma-min
+        type: multipleChoice
+        lang: he
+        prompt: 'מה הפירוש של *מע מין?*'
+        options:
+          - { text: עם מי?, correct: true }
+          - { text: מתי?, feedback: 'מתי = *וינתא*.' }
+          - { text: מה?, feedback: 'מה = *שוּ*.' }
+      - id: finish-april
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: "אני מסיים באפריל"?'
+        options:
+          - { text: אנא אַנְהִי פי שַׁהָר ארבַּעָה, correct: true }
+          - { text: אנא אבלש פי שַׁהָר ארבַּעָה, feedback: '*אבלש* = מתחיל. מסיים = *אַנְהִי*.' }
+          - { text: אנא אַנְהִי פי שַׁהָר ואחָד, feedback: 'שַׁהָר ואחָד = ינואר.' }
+      - id: start-feb
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: "אני מתחיל בפברואר".'
+        sentence: אנא אבלש פי שַׁהָר תנין
+      - id: may
+        type: trueFalse
+        lang: he
+        prompt: '*שַׁהָר ארבַּעָה* פירושו מאי.'
+        answer: false
+        feedback:
+          correct: 'נכון! *שַׁהָר ארבַּעָה* = החודש הרביעי, אפריל.'
+          incorrect: '*שַׁהָר ארבַּעָה* = החודש הרביעי, אפריל.'

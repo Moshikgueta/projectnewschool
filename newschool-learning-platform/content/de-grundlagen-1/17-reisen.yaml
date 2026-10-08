@@ -1,0 +1,626 @@
+# Cycle "Reisen", converted from the German Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: reisen
+title: Reisen
+goal: Über Reisen sprechen, einfache Fragen stellen und den Weg beschreiben.
+position: 17
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Fragen stellen" and "Wegbeschreibung") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The general information lists four goals ("Einfache Sätze mit Ich", "Fragen mit
+    Wo?", "Einfache Weganweisungen", "Reise-Grundvokabular"); the summary has two
+    skills. The cycle uses the summary's two skills: "Fragen stellen" and
+    "Wegbeschreibung". There is no skill plan in the notebook; the plan in the teacher
+    note follows the activity goals. Please confirm.
+  - >-
+    The summary is written in Hebrew. The rules are rewritten as short German rules
+    (ruleSummary), with the key explanation kept as a Hebrew `lang: he` text block for
+    each skill. The Hebrew glosses of the examples moved into the table and the
+    vocabulary list.
+  - >-
+    The summary note "there is no Do/Does as in English" is kept only in the Hebrew
+    text block; the German rule says "Fragewort + Verb + Subjekt: the verb is in
+    position 2".
+  - >-
+    Summary, directions: "Geh zwei Blocks geradeaus" is rewritten as "Geh zwei Straßen
+    geradeaus" ("Blocks" is an English way of giving directions), and "An der Ampel
+    geh nach rechts" (wrong word order) as "Geh an der Ampel nach rechts".
+  - >-
+    Warm-up question 6 "Was essen Sie gerne auf Reisen?" used *Sie*; all other
+    questions use *du*. It is written as "Was isst du gern auf Reisen?", with a new
+    frame "Auf Reisen esse ich gern ___." Warm-up question 4 had stray asterisks
+    (removed).
+  - >-
+    Activity 1: the answer "Für die Reise packe ich meinen Koffer." did not match the
+    question "Was packst du für die Reise ein?"; the question is now "Was packst du
+    für die Reise?". The answer "Ich reise, weil ich gern reise." (it repeats itself)
+    is now "Ich reise, weil ich neue Länder sehen möchte." The question list was
+    headed in English ("for the teachers, don't show it to the students"); it is now
+    a teacher note (answer key).
+  - >-
+    Activity 2: the Paris example said "Man isst Pizza." It is now "Man isst
+    Croissants." Please confirm.
+  - >-
+    Activities 3 and 5: "Du sollst deinen Koffer einpacken" / "Ich packe meinen
+    Koffer ein" (you pack things INTO a suitcase) are now "Du sollst einen Pullover
+    einpacken", "Ich soll einen Pullover einpacken" and "Ich packe eine Kamera ein".
+  - >-
+    Activity 5: the wheel link (wheelofnames.com/sta-pmn) is kept. The questions on
+    the wheel are not in the notebook. "Didaktische Hinweise für A1 Israelis" is
+    rewritten as a teacher note ("für israelische A1-Lernende").
+  - >-
+    Homework: the notebook's homework is four writing tasks plus a bonus, explained in
+    Hebrew. They are written in German as answer boxes. The notebook has no Mori
+    message for this cycle; a Mori message was ADDED in the same form as the TV and
+    music cycles ("Hi Mori! Ich möchte Deutsch üben…"). Please confirm or remove.
+  - >-
+    The Quizlet link's tracking parameter (?new) was removed. The vocabulary glosses
+    are as in the notebook.
+  - >-
+    The notebook gives no times for the activities (only 3-minute rounds in Activity
+    4, kept in the steps), so no minutes are recorded. The example "Wer reist mit
+    dir?" in the question-word table is NEW (the notebook lists *Wer?* without an
+    example).
+  - The "Antwort von Schüler 1/2/3" lines are removed (the platform has answer boxes).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: reisen-unterricht
+    title: 'Unterricht: Reisen'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Reisen
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Fragen stellen
+            description: 'W-Fragen: *Wo? Wohin? Was? Wann? Mit wem? Wie?* Das Verb steht an Position 2.'
+          - name: Wegbeschreibung
+            description: '*geradeaus, links, rechts, neben, gegenüber*: den Weg Schritt für Schritt beschreiben'
+      - id: quizlet
+        type: externalLink
+        label: Reisen auf Quizlet
+        url: https://quizlet.com/br/1115836453/%D7%98%D7%99%D7%95%D7%9C%D7%99%D7%9D-%D7%91%D7%97%D7%95%D7%9C-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich heiße ___. Ich reise nach ___.
+        example: Ich heiße Daniel. Ich reise nach Berlin.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Wohin reist du gern?
+            frame: Ich reise nach ___.
+          - question: 'Was magst du lieber: warm oder kalt? Warum?'
+            frame: Ich mag warm. / Ich mag kalt.
+          - question: Reist du lieber alleine oder mit Freunden?
+            frame: Ich reise lieber alleine. / Ich reise lieber mit Freunden.
+          - question: Was machst du im Urlaub?
+            frame: Im Urlaub esse ich. / Im Urlaub schlafe ich. / Im Urlaub gehe ich spazieren.
+          - question: Wo schläfst du im Urlaub?
+            frame: Ich schlafe im Hotel. / Ich schlafe zu Hause.
+          - question: Was isst du gern auf Reisen?
+            frame: Auf Reisen esse ich gern ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Antwort → Frage'
+        skills: [Fragen stellen]
+        steps:
+          - Du siehst nur die Antwort. Wie heißt die richtige Frage?
+          - Sag die Frage. Dann wiederholt die Klasse die Frage zusammen.
+          - Ein Schüler beantwortet die Frage noch einmal mit einem eigenen Satz.
+          - 'Zu zweit: A liest eine Antwort, B sagt die Frage. Nach 3–4 Sätzen wechselt ihr die Rollen.'
+        example: |-
+          *Im Juli fahre ich in den Urlaub.* → **Wann fährst du in den Urlaub?**
+          *Ich reise mit meinen Freunden.* → **Mit wem reist du?**
+      - id: act1-answers
+        type: discussionQuestions
+        title: Schreib die Frage zur Antwort
+        items:
+          - question: Im Juli fahre ich in den Urlaub.
+          - question: Im Sommer fahre ich an den Strand.
+          - question: Für die Reise packe ich meinen Koffer.
+          - question: Ich reise mit meinen Freunden.
+          - question: Ich reise, weil ich neue Länder sehen möchte.
+          - question: Ich reise mit dem Flugzeug in ein anderes Land.
+          - question: Ich möchte nach Paris reisen.
+          - question: Auf die Reise nehme ich eine Kamera mit.
+          - question: Auf der Reise schlafe ich in einem Hotel.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Mein Reiseziel'
+        skills: [Fragen stellen]
+        steps:
+          - Arbeitet zu zweit. Wählt ein Reiseziel, zum Beispiel Berlin, Paris, Rom, London, Tel Aviv oder New York. Ihr müsst nicht dort gewesen sein.
+          - Beantwortet die vier Fragen unten. Schreibt nur kurze Sätze, ein Satz pro Frage.
+          - Jedes Paar sagt zwei Sätze laut vor der Klasse.
+        example: |-
+          **Reiseziel: Paris**
+          Man isst Croissants.
+          Man schläft im Hotel.
+          Man reist im Sommer.
+          Man sieht den Eiffelturm.
+      - id: act2-questions
+        type: discussionQuestions
+        title: Unser Reiseziel
+        items:
+          - question: Was isst man in ___?
+            frame: Man isst ___.
+          - question: Wo schläft man in ___?
+            frame: Man schläft im ___.
+          - question: Wann reist man nach ___?
+            frame: Man reist im ___.
+          - question: Was sieht man in ___?
+            frame: Man sieht ___.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Im Reisebüro'
+        skills: [Fragen stellen, Wegbeschreibung]
+        steps:
+          - Arbeitet zu zweit. Eine Person ist der **Reisende**, eine Person ist der **Reiseberater**.
+          - Der Reisende stellt die vier Fragen unten. Der Reiseberater antwortet.
+          - Nach 3–4 Minuten wechselt ihr die Rollen.
+          - 'Sag der Klasse einen Satz aus eurem Dialog, zum Beispiel: *Ich soll nach Paris reisen.*'
+        example: |-
+          Reisender: *Wohin soll ich reisen?* – Berater: *Du sollst nach Rom reisen.*
+          Reisender: *Was kann ich dort essen?* – Berater: *Du kannst Pizza essen.*
+          Reisender: *Was soll ich einpacken?* – Berater: *Du sollst einen Pullover einpacken.*
+          Reisender: *Wie komme ich zum Strand?* – Berater: *Geradeaus. Links.*
+        wordBank: [essen, reisen, Koffer, Strand, Hotel, geradeaus, links, rechts]
+      - id: act3-dialogue
+        type: discussionQuestions
+        title: Im Reisebüro
+        items:
+          - question: Wohin soll ich reisen?
+            frame: Du sollst nach ___ reisen.
+          - question: Was kann ich dort essen?
+            frame: Du kannst ___ essen.
+          - question: Was soll ich einpacken?
+            frame: Du sollst ___ einpacken.
+          - question: Wie komme ich zum Strand?
+            frame: Geradeaus. / Links. / Rechts.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Speed-Dating – Finde deinen Reisepartner'
+        skills: [Fragen stellen]
+        steps:
+          - Arbeite mit einem Partner. Ihr habt **3 Minuten**.
+          - Stellt euch die vier Fragen unten. Antwortet mit **Ich**. Schreib ein Wort pro Antwort auf.
+          - 'Wechsel! Neuer Partner: gleiche Fragen, neue Antworten (2–3 Runden).'
+          - 'Wer hat das Gleiche wie du? Sag zwei Sätze: *Wir reisen beide nach ___.* *Wir essen beide ___.* oder *Mein Reisepartner ist ___.*'
+      - id: act4-questions
+        type: discussionQuestions
+        title: Speed-Dating-Fragen
+        items:
+          - question: Wohin möchtest du reisen?
+            frame: Ich möchte nach ___ reisen.
+          - question: Was packst du ein?
+            frame: Ich packe ___ ein.
+          - question: Was isst du auf der Reise?
+            frame: Ich esse ___.
+          - question: Reist du mit der Familie oder mit Freunden?
+            frame: Ich reise mit der Familie. / Ich reise mit Freunden.
+          - question: Wer ist dein Reisepartner?
+            frame: Wir reisen beide nach ___. / Mein Reisepartner ist ___.
+      - id: act5
+        type: classActivity
+        title: 'Aktivität 5: Das Reiserad'
+        skills: [Fragen stellen]
+        steps:
+          - Dreh das Rad und lies die Frage laut.
+          - 'Antworte laut mit einem Ich-Satz, zum Beispiel: *Ich reise nach Italien.* *Ich packe eine Kamera ein.* *Ich reise mit Freunden.*'
+          - 'Leeres Feld? Dann stellst du eine Frage an einen anderen Schüler, zum Beispiel: *Wohin reist du?* *Was packst du ein?*'
+        resource:
+          label: Das Reiserad
+          url: https://wheelofnames.com/sta-pmn
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Fragen stellen** (Aktivitäten 1, 2, 4
+          und 5) und **Wegbeschreibung** (Aktivität 3). Aktivität 3 übt beide
+          Fertigkeiten.
+      - id: n-intro
+        anchor: intro
+        text: Schreib das Modell an die Tafel, gib dein eigenes Beispiel und frag dann jeden Schüler.
+      - id: n-warmup
+        anchor: warmup
+        text: Stell jedem Schüler mindestens zwei Fragen.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Vorbereitung: Zeig zuerst nur die Antworten, die Fragen bleiben verdeckt.
+          Schreib **Antwort → Frage** an die Tafel. Mach das erste Beispiel selbst vor
+          („Im Juli fahre ich in den Urlaub." → „Wann fährst du in den Urlaub?"). Ist
+          die Frage nicht korrekt, verbessere sanft; die Klasse wiederholt die korrekte
+          Frage gemeinsam. In der Partnerarbeit hilfst du bei der Wortstellung und
+          erinnerst an: **Wann** → Zeit, **Wo / Wohin** → Ort, **Was** → Sache, **Mit
+          wem** → Person, **Warum** → Grund, **Wie** → Transport / Art und Weise. Zum
+          Schluss: 2–3 Fragen an einzelne Schüler („Und du, wohin reist du?").
+      - id: n-act1-key
+        anchor: act1-answers
+        text: >-
+          Lösungen (nur für den Lehrer): 1. Wann fährst du in den Urlaub? 2. Wohin
+          fährst du im Sommer? 3. Was packst du für die Reise? 4. Mit wem reist du? 5.
+          Warum reist du? 6. Wie reist du in ein anderes Land? 7. Wohin möchtest du
+          reisen? 8. Was nimmst du mit auf die Reise? 9. Wo schläfst du auf der Reise?
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Schreib die vier Fragen und die Antwort-Modelle groß an die Tafel. Geh herum,
+          hilf mit Wortschatz und korrigiere nur das Nötigste. Optional fragst du am
+          Ende: „Paris oder Rom?" „Hotel oder Haus?"
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Schreib **Reisender** und **Reiseberater**, die vier Fragen und die
+          Antwort-Modelle an die Tafel. Spiel den Dialog zuerst mit einem Schüler vor.
+          Geh herum, hör zu und hilf mit: essen, reisen, Koffer, Strand, Hotel,
+          geradeaus, links, rechts. Nach 3–4 Minuten: „Rollen wechseln!" Lobe und
+          korrigiere nur sanft.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Jede Runde dauert 3 Minuten. Dann: „Wechsel! Neuer Partner!" (Breakout-Räume
+          oder Plätze wechseln). Die dritte Runde ist optional, je nach Zeit. Zurück im
+          Plenum fragst du jeden Schüler: „Mit wem hast du das Gleiche? Wer ist dein
+          Reisepartner?"
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Jeder Schüler dreht das Rad, liest die Frage und antwortet laut. Bei einem
+          leeren Feld sagst du: „Du machst jetzt eine Frage." Dann: „Nächster!" Hinweise
+          für israelische A1-Lernende: nur kurze Fragen, nur Ich-Antworten, keine
+          Warum-Fragen. Wenn ein Schüler blockiert, zeig zwei Beispiel-Fragen an der
+          Tafel.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: reisen-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-questions
+        type: ruleSummary
+        skill: Fragen stellen
+        rules:
+          - text: 'Eine W-Frage beginnt mit einem **Fragewort**: *Wo? Wohin? Was? Wann? Wer? Mit wem? Wie? Warum?*'
+          - text: '**Fragewort + Verb + Subjekt + …** Das Verb steht an **Position 2**.'
+            examples:
+              - Wo wohnst du?
+              - Wo ist der Park?
+              - Wohin reist du im Urlaub?
+              - Was isst du im Urlaub?
+              - Wann reist du?
+              - Mit wem reist du?
+              - Wie kommst du zur Schule?
+          - text: '**Wo?** fragt nach dem Ort (*im Hotel*). **Wohin?** fragt nach dem Ziel (*nach Berlin*).'
+      - id: questions-table
+        type: table
+        caption: Die Fragewörter
+        header: [Fragewort, Hebräisch, Beispiel]
+        rows:
+          - [Wo?, איפה?, Wo wohnst du?]
+          - [Wohin?, לאן?, Wohin reist du im Urlaub?]
+          - [Was?, מה?, Was isst du im Urlaub?]
+          - [Wann?, מתי?, Wann reist du?]
+          - [Wer?, מי?, Wer reist mit dir?]
+          - [Mit wem?, עם מי?, Mit wem reist du?]
+          - [Wie?, איך?, Wie kommst du zur Schule?]
+          - [Warum?, למה?, Warum reist du?]
+      - id: questions-he
+        type: text
+        lang: he
+        text: 'מבנה השאלה בגרמנית: **מילת שאלה + פועל + נושא**. אין כאן Do/Does כמו באנגלית: הפועל בא במקום השני במשפט.'
+      - id: rules-directions
+        type: ruleSummary
+        skill: Wegbeschreibung
+        rules:
+          - text: 'Sprich in **kurzen, klaren Sätzen**.'
+            examples:
+              - Geradeaus.
+              - Links.
+              - Rechts.
+              - Geh geradeaus.
+              - Geh nach links.
+              - Geh nach rechts.
+          - text: 'Wo ist etwas? Benutze **neben**, **gegenüber**, **links** und **rechts**.'
+            examples:
+              - Das Café ist neben der Schule.
+              - Der Park ist gegenüber der Kirche.
+              - Der Supermarkt ist links.
+          - text: 'Beschreib den Weg **Schritt für Schritt**, in der richtigen Reihenfolge.'
+            examples:
+              - Geh zwei Straßen geradeaus. Dann nach rechts. Der Park ist links.
+              - Geh zwei Straßen geradeaus. Geh an der Ampel nach rechts. Geh an der Bäckerei vorbei, der Park ist links.
+      - id: directions-table
+        type: table
+        caption: Den Weg beschreiben
+        header: [Deutsch, Hebräisch]
+        rows:
+          - [Geh geradeaus., לך ישר.]
+          - [Geh nach links., פנה שמאלה.]
+          - [Geh nach rechts., פנה ימינה.]
+          - [Das Café ist neben der Schule., בית הקפה ליד בית הספר.]
+          - [Der Park ist gegenüber der Kirche., הפארק מול הכנסייה.]
+          - [Der Supermarkt ist links., הסופרמרקט משמאל.]
+      - id: directions-he
+        type: text
+        lang: he
+        text: 'כשנותנים כיוון, אומרים כל צעד בנפרד ולפי הסדר: קודם ישר, אחר כך ימינה או שמאלה, ואז איפה המקום נמצא.'
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die zwei Fertigkeiten mit der Klasse und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: reisen-hausaufgaben
+    title: Hausaufgaben
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben
+      - id: write-how
+        type: text
+        text: Schreib zu jeder Frage einen Satz.
+      - id: write
+        type: discussionQuestions
+        title: Meine Reise
+        items:
+          - question: Wohin reist du im Urlaub?
+            frame: Ich reise nach ___. (Beispiel *Ich reise nach Berlin.*)
+          - question: Mit wem reist du?
+            frame: Ich reise mit ___. (Beispiel *Ich reise mit Freunden.*)
+          - question: Was isst du im Urlaub?
+            frame: Ich esse ___. (Beispiel *Ich esse Pizza.*)
+          - question: Wann reist du?
+            frame: Ich reise im ___. (Sommer / Winter)
+      - id: bonus
+        type: discussionQuestions
+        title: 'Bonus (freiwillig): Schreib zwei Sätze mit Wegbeschreibung'
+        items:
+          - question: Satz 1
+            frame: Geh geradeaus. / Der Park ist rechts.
+          - question: Satz 2
+            frame: Dann nach links. / Das Café ist neben der Schule.
+      - id: mori-title
+        type: heading
+        level: 3
+        text: Mit Mori üben
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-reisen
+        type: aiTutorPrompt
+        title: Über Reisen sprechen
+        message: |-
+          Hi Mori! Ich möchte Deutsch üben.
+          Bitte stell mir Fragen über Reisen mit:
+          Wo? Wohin? Wann? Was? Mit wem?
+          Bitte nur Präsens und korrigiere meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Möchtest du mehr Fragen? Schreib: **Bitte frag mich mehr!**
+          Verstehst du eine Erklärung nicht? Schreib: **Kannst du mir das auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: reisen-uebung
+    book: workbook
+    title: 'Übung: Reisen'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-fragen
+        type: activity
+        activity: reisen-fragen
+      - id: ex-weg
+        type: activity
+        activity: reisen-wegbeschreibung
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: reisen-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter zum Thema Reisen
+        glossLang: he
+        link: https://quizlet.com/br/1115836453/%D7%98%D7%99%D7%95%D7%9C%D7%99%D7%9D-%D7%91%D7%97%D7%95%D7%9C-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &reisen-words
+          - { term: reisen, gloss: לנסוע / לטייל }
+          - { term: die Reise, gloss: נסיעה / טיול }
+          - { term: der Urlaub, gloss: חופשה }
+          - { term: das Hotel, gloss: מלון }
+          - { term: der Strand, gloss: חוף }
+          - { term: der Park, gloss: פארק }
+          - { term: die Stadt, gloss: עיר }
+          - { term: der Koffer, gloss: מזוודה }
+          - { term: packen, gloss: לארוז }
+          - { term: essen, gloss: לאכול }
+          - { term: trinken, gloss: לשתות }
+          - { term: schlafen, gloss: לישון }
+          - { term: gehen, gloss: ללכת }
+          - { term: spazieren gehen, gloss: לטייל ברגל }
+          - { term: sehen, gloss: לראות }
+          - { term: wohnen, gloss: לגור }
+          - { term: mit wem, gloss: עם מי }
+          - { term: wohin, gloss: לאן }
+          - { term: wann, gloss: מתי }
+          - { term: was, gloss: מה }
+          - { term: wo, gloss: איפה }
+          - { term: das Essen, gloss: אוכל }
+          - { term: die Familie, gloss: משפחה }
+          - { term: die Freunde, gloss: חברים }
+          - { term: der Sommer, gloss: קיץ }
+          - { term: der Winter, gloss: חורף }
+          - { term: warm, gloss: חם }
+          - { term: kalt, gloss: קר }
+          - { term: geradeaus, gloss: ישר }
+          - { term: links, gloss: שמאלה }
+          - { term: rechts, gloss: ימינה }
+          - { term: neben, gloss: ליד }
+          - { term: gegenüber, gloss: מול }
+          - { term: der Bahnhof, gloss: תחנת רכבת }
+          - { term: das Café, gloss: בית קפה }
+          - { term: der Flughafen, gloss: שדה תעופה }
+
+vocabulary:
+  - slug: reisen
+    title: Reisen
+    items: *reisen-words
+
+activities:
+  - slug: reisen-fragen
+    title: 'Fragen stellen: Wo? Wohin? Wann? Mit wem?'
+    minutes: 8
+    items:
+      - id: wohin-berlin
+        type: multipleChoice
+        prompt: '___ reist du im Urlaub? – Ich reise nach Berlin.'
+        options:
+          - { text: Wohin, correct: true }
+          - { text: Wo, feedback: '*Nach Berlin* ist ein Ziel. Für das Ziel fragst du *Wohin?*' }
+          - { text: Wann, feedback: '*Wann?* fragt nach der Zeit, zum Beispiel *im Sommer*.' }
+      - id: wo-hotel
+        type: multipleChoice
+        prompt: '___ schläfst du im Urlaub? – Im Hotel.'
+        options:
+          - { text: Wo, correct: true }
+          - {
+              text: Wohin,
+              feedback: '*Im Hotel* ist ein Ort, kein Ziel. Für den Ort fragst du *Wo?*',
+            }
+          - {
+              text: Mit wem,
+              feedback: '*Mit wem?* fragt nach einer Person, zum Beispiel *mit Freunden*.',
+            }
+      - id: verb-position
+        type: multipleChoice
+        prompt: Welche Frage ist richtig?
+        options:
+          - { text: Wann reist du?, correct: true }
+          - { text: Wann du reist?, feedback: 'Das Verb steht an Position 2: *Wann reist du?*' }
+          - {
+              text: Reist wann du?,
+              feedback: 'Zuerst das Fragewort, dann das Verb: *Wann reist du?*',
+            }
+      - id: position-zwei
+        type: trueFalse
+        prompt: 'In einer W-Frage steht das Verb an Position 2: *Wo wohnst du?*'
+        answer: true
+        feedback:
+          correct: 'Richtig! Fragewort + Verb + Subjekt: *Wo wohnst du?*'
+          incorrect: 'Das Verb steht direkt nach dem Fragewort: *Wo wohnst du?*'
+      - id: mit-wem
+        type: fillBlank
+        prompt: Schreib das Fragewort.
+        text: '___ reist du? – Ich reise mit Freunden.'
+        blanks: [[Mit wem, mit wem]]
+      - id: isst
+        type: fillBlank
+        prompt: Schreib das Verb *essen* in der richtigen Form.
+        text: Was ___ du im Urlaub?
+        blanks: [[isst]]
+      - id: frage-antwort
+        type: matching
+        prompt: Welche Antwort passt zu welcher Frage?
+        pairs:
+          - [Wann reist du?, Im Sommer.]
+          - [Wohin reist du?, Nach Berlin.]
+          - [Mit wem reist du?, Mit Freunden.]
+          - [Wo schläfst du?, Im Hotel.]
+          - [Was isst du?, Pizza.]
+      - id: ordne-urlaub
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Wohin reist du im Urlaub?
+
+  - slug: reisen-wegbeschreibung
+    title: 'Wegbeschreibung: geradeaus, links, rechts'
+    minutes: 8
+    items:
+      - id: woerter
+        type: matching
+        prompt: Was passt zusammen?
+        pairs:
+          - [geradeaus, ישר]
+          - [links, שמאלה]
+          - [rechts, ימינה]
+          - [neben, ליד]
+          - [gegenüber, מול]
+      - id: neben-schule
+        type: multipleChoice
+        prompt: 'Das Café ist ___ der Schule. (ליד)'
+        options:
+          - { text: neben, correct: true }
+          - { text: gegenüber, feedback: '*gegenüber* heißt מול. ליד heißt *neben*.' }
+          - { text: links, feedback: '*links* heißt שמאלה. ליד heißt *neben*.' }
+      - id: gegenueber-kirche
+        type: multipleChoice
+        prompt: 'Der Park ist ___ der Kirche. (מול)'
+        options:
+          - { text: gegenüber, correct: true }
+          - { text: neben, feedback: '*neben* heißt ליד. מול heißt *gegenüber*.' }
+          - { text: rechts, feedback: '*rechts* heißt ימינה. מול heißt *gegenüber*.' }
+      - id: geh-geradeaus
+        type: multipleChoice
+        prompt: 'Wie sagt man auf Deutsch: לך ישר?'
+        options:
+          - { text: Geh geradeaus., correct: true }
+          - { text: Geh nach links., feedback: '*Geh nach links* heißt פנה שמאלה.' }
+          - { text: Geh nach rechts., feedback: '*Geh nach rechts* heißt פנה ימינה.' }
+      - id: nach-links
+        type: trueFalse
+        prompt: '*Geh nach links.* heißt: פנה ימינה.'
+        answer: false
+        feedback:
+          correct: 'Richtig! *Geh nach links* heißt פנה שמאלה. פנה ימינה ist *Geh nach rechts*.'
+          incorrect: '*links* heißt שמאלה. פנה ימינה ist *Geh nach rechts*.'
+      - id: schritte
+        type: fillBlank
+        prompt: Ergänze die Wegbeschreibung.
+        text: Geh ___ (ישר). Dann nach ___ (ימינה). Der Park ist ___ (משמאל).
+        blanks: [[geradeaus], [rechts], [links]]
+        wordBank: [geradeaus, rechts, links]
+      - id: supermarkt
+        type: fillBlank
+        prompt: Schreib das Wort auf Deutsch.
+        text: Der Supermarkt ist ___. (משמאל)
+        blanks: [[links]]
+      - id: ordne-cafe
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Das Café ist neben der Schule.

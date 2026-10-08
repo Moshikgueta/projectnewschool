@@ -1,0 +1,48 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js / build
+.next/
+out/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# env — never commit real values (.env.example is the only committed env file)
+.env
+.env*.local
+.env.*
+!.env.example
+
+# Supabase local state
+supabase/.branches/
+supabase/.temp/
+
+# tests
+coverage/
+playwright-report/
+test-results/
+
+# content media is uploaded to Storage, not committed
+content/**/media/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Vercel
+.vercel
+
+# Supabase CLI local snippets
+supabase/snippets/
+
+# Staff room D1 exports hold personal data: never commit them.
+export/
+*.d1-export.sql
+
+# Written by pnpm db:types, then moved into place
+src/server/db.types.ts.tmp

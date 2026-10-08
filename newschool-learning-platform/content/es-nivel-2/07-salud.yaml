@@ -1,0 +1,589 @@
+# Cycle "Salud", converted from the Spanish nivel 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-2
+slug: salud
+title: Salud
+goal: Contar lo que pasó con el pretérito indefinido y dar consejos con deberías, puedes y tienes que.
+position: 7
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Pretérito indefinido" and "Dar consejos") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Skill names: "Pasado simple" is called "Pretérito indefinido" everywhere, and
+    "Verbos modales (debería, debe)" is called "Dar consejos (deber, poder, tener que)",
+    since Spanish has no modal-verb category like English.
+  - >-
+    Summary, skill 2 (wrong rule translated from English): "Los verbos modales no
+    cambian con él/ella, no llevan -s como en inglés" is false for Spanish: deber,
+    poder and tener que are conjugated (debo, debes, debe…). Rewritten as "conjugate
+    deber / poder / tener que for the person, then the infinitive", with a new table
+    of deber (present and conditional) and tener que. "Quizá(s)" is not a verb: it is
+    now presented as an adverb that softens advice. Please confirm.
+  - >-
+    Summary, skill 1: the rule about negatives and questions mentioned the English
+    auxiliary "did"; it is rewritten without English. "Se invierte el tono" →
+    "cambia la entonación". The irregular examples mixed persons (fui, tuvo, hice);
+    they now show yo and él/ella (fui/fue, tuve/tuvo, hice/hizo). A conjugation table
+    (caminar, comer, vivir) was added. The "Resumen de la clase" heading and the first
+    line of the summary were repeated in the source; kept once.
+  - >-
+    Corrections in activities: "¿Porque lo tienes?" → "¿Por qué lo tienes?";
+    "¿Cuando empezó?" / "¿Cuando te caíste?" → "¿Cuándo…?"; "tengo un resfrío" →
+    "tengo un resfriado" (as in the vocabulary); "¡Cuidarse!" → "¡Cuídate!";
+    "Anoche comí comida mala" → "Anoche comí comida en mal estado"; "¿Hiciste algo
+    por ello?" → "¿Hiciste algo para el dolor?"; "No, no lo hice" (calque of "No, I
+    didn't") → "No, no tomé nada"; "Debería…" (board phrase for a friend) →
+    "Deberías…"; intro "Un hábito saludable que tienes" → "Un hábito saludable que
+    tengo".
+  - >-
+    Advice phrases changed because the meaning was wrong: "No tienes que salir si te
+    sientes mal" (= you don't have to) → "No deberías salir si te sientes mal";
+    "Quizás quieras apagar tu teléfono" (calque of "you might want to") → "Quizás
+    deberías apagar tu teléfono". Activity 2 listed "debería, podría, necesidad de";
+    "necesidad de" → "debes / tienes que".
+  - >-
+    Activity 2 had its stages numbered 1, 2, 3, 2, 4 and Activity 4 had 1, 2, 4; the
+    steps are renumbered in order. "pasado simple" in Activity 2 → "pretérito
+    indefinido".
+  - >-
+    Mori: in "Detective de hábitos saludables" the roles were mixed (Mori thinks of a
+    habit, but "te haré preguntas"); rewritten so Mori thinks of a habit and the
+    student asks, then they swap. In the advice role-play the list repeated "podría"
+    and used "más le vale" (usted); now "deberías, podrías, debes, puedes, tienes que,
+    será mejor que". "Corrige mis errores" was added to both.
+  - >-
+    Vocabulary: "Puede" was glossed "אולי"; now "יכול / אפשר". "Podría" appears twice
+    in the source; now "Podría (consejo)" and "Podría (posibilidad)". "Será mejor que lo
+    hagas" → "Será mejor que…"; "Doctor" → "Doctor / médico"; "Resfriado (enfermedad)"
+    → "Resfriado"; "Tengo que" → "Tener que". Please confirm the glosses.
+  - >-
+    The Quizlet link's slug says "conversational-english-health"; please check that it
+    is the Spanish set. Its "?new" parameter was removed.
+  - >-
+    The source gives no activity times and no plan for combining activities, so no
+    minutes are recorded and the plan note only says which skill each activity
+    practises. Warm-up sentence frames were added (the source has none). The
+    "Respuesta del estudiante 1/2/3" lines are replaced by the answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: salud-clase
+    title: 'Clase: Salud'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Salud
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Pretérito indefinido
+            description: 'Acciones terminadas en el pasado: *fui, comí, me caí, tomaste*'
+          - name: Dar consejos
+            description: '*Deberías, debes, puedes, podrías, tienes que, será mejor que*'
+      - id: quizlet
+        type: externalLink
+        label: Salud en Quizlet
+        url: https://quizlet.com/il/1058986766/conversational-english-health-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Un hábito saludable que tengo es ___.
+        example: Soy Dana. Me voy a dormir temprano todas las noches.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Cómo cuidas tu salud?
+            frame: Para cuidar mi salud, ___.
+          - question: ¿Cuándo fue la última vez que fuiste al médico?
+            frame: La última vez que fui al médico fue ___.
+          - question: '¿Qué es más importante para ti: una buena alimentación o hacer ejercicio? ¿Por qué?'
+            frame: Para mí es más importante ___ porque ___.
+          - question: ¿Haces ejercicio? ¿Qué tipo de ejercicio? ¿Cuántas veces a la semana?
+            frame: Sí, hago ___ ___ veces a la semana. / No, no hago ejercicio.
+          - question: ¿Qué consejo le darías a alguien que quiere tener un estilo de vida más saludable?
+            frame: Deberías ___.
+          - question: ¿Qué haces cuando te sientes enfermo / enferma?
+            frame: Cuando me siento enfermo / enferma, ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Cita médica, la sala de espera'
+        skills: [Dar consejos]
+        steps:
+          - 'Estás en la sala de espera de un médico. Piensa en un problema de salud sencillo: un resfriado, dolor de garganta, dolor de cabeza o dolor de espalda.'
+          - 'Un estudiante dice: *Estoy aquí porque tengo ___* (por ejemplo: *tengo un resfriado*).'
+          - 'Los otros estudiantes hacen preguntas sencillas: *¿Por qué lo tienes? ¿Cuándo empezó? ¿Qué haces en casa?*'
+          - 'Los otros estudiantes dan consejos sencillos y buenos deseos (mira las frases de abajo, ¡o di otras!).'
+          - 'Cuando termina, el primer estudiante le pregunta a otro: *¿Y tú? ¿Por qué estás aquí?* Siguen así hasta que todos hablan.'
+        example: |-
+          **Estudiante A:** *Hola, estoy aquí porque tengo dolor de garganta.*
+          **Estudiante B:** *¿Por qué tienes dolor de garganta?*
+          **Estudiante A:** *Bebo agua fría todos los días.*
+          **Estudiante B:** *Quizás deberías beber té caliente.*
+          **Estudiante C:** *También puedes comer sopa.*
+          **Estudiante A:** *¡Gracias! Es una buena idea.*
+          **Estudiante B:** *¡Espero que te sientas mejor pronto!*
+          **Estudiante C:** *¡Cuídate!*
+      - id: act1-phrases
+        type: examples
+        title: Consejos y buenos deseos
+        items:
+          - text: Deberías tomar alguna medicina.
+          - text: Podrías probar alguna infusión de hierbas.
+          - text: Será mejor que bebas mucha agua.
+          - text: No deberías salir si te sientes mal.
+          - text: Quizás deberías apagar tu teléfono por la noche.
+          - text: ¡Espero que te sientas mejor pronto!
+          - text: ¡Cuídate!
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Cita médica, con el médico'
+        skills: [Pretérito indefinido, Dar consejos]
+        steps:
+          - 'Trabajen en parejas: un estudiante es el médico y el otro es el paciente.'
+          - 'Piensa en un pequeño accidente o problema del pasado: *Ayer me caí y me lastimé la rodilla. / Anoche comí comida en mal estado. / Estaba jugando al fútbol y me torcí el tobillo.*'
+          - 'El **paciente** explica lo que pasó: *Hola, doctor. Ayer me caí en casa y me lastimé el brazo.*'
+          - El **médico** hace preguntas con las frases de abajo.
+          - 'El **paciente** responde con detalles en pretérito indefinido: *Me caí ayer por la tarde. Me resbalé en las escaleras. Sí, me dolió mucho. Me puse hielo, pero todavía me duele.*'
+          - 'El **médico** da consejos con *deberías, podrías, debes, tienes que*: *Debes descansar el brazo. Podrías ponerte hielo de nuevo. Si mañana todavía te duele, debes ir a un especialista.*'
+          - 'El médico termina con una frase amable: *Espero que te sientas mejor pronto. Cuídate y vuelve si necesitas más ayuda.*'
+          - Cambien de rol y usen un problema diferente.
+        example: |-
+          **Paciente:** *Hola, doctor. Anoche comí pollo en mal estado y me sentí muy mal.*
+          **Doctor:** *Oh, ¿cuándo comiste el pollo?*
+          **Paciente:** *Lo comí en la cena, alrededor de las 8 de la noche.*
+          **Doctor:** *¿Cómo te sentiste después?*
+          **Paciente:** *Me sentí mal y me dolía el estómago. Bebí agua, pero no me ayudó.*
+          **Doctor:** *¿Tomaste algún medicamento?*
+          **Paciente:** *No, no tomé nada.*
+          **Doctor:** *Hoy deberías beber más agua y comer ligero. Podrías descansar y quedarte en casa. Si te sientes peor, debes ir al hospital.*
+          **Paciente:** *¡Gracias, doctor!*
+          **Doctor:** *¡Cuídate y mejórate pronto!*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Preguntas del médico
+        items:
+          - question: ¿Cuándo ocurrió? / ¿Cuándo te caíste?
+            frame: Ocurrió ___.
+          - question: ¿Cómo te caíste?
+            frame: Me caí ___.
+          - question: ¿Sentiste dolor inmediatamente?
+            frame: Sí, me dolió ___. / No, no me dolió.
+          - question: ¿Qué hiciste después? ¿Hiciste algo para el dolor?
+            frame: Después ___.
+          - question: ¿Tomaste algún medicamento? ¿Descansaste?
+            frame: Sí, tomé ___. / No, no tomé nada.
+          - question: ¿Fuiste al hospital?
+            frame: Sí, fui ___. / No, no fui al hospital.
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Consejos amistosos'
+        skills: [Dar consejos]
+        steps:
+          - 'Escucha la situación que lee tu profesor (opcional: en parejas).'
+          - Da un consejo amable para la situación.
+          - Explica **por qué** es un buen consejo.
+        example: '*Tu amigo no duerme bien por la noche.* → *Quizás puedas leer un libro antes de dormir. Es bueno porque te relaja.*'
+      - id: act3-scenarios
+        type: discussionQuestions
+        title: 10 situaciones
+        items:
+          - question: Tu amigo come demasiada comida rápida.
+            frame: Deberías ___. Es bueno porque ___.
+          - question: Tu amigo nunca bebe agua.
+            frame: Deberías ___. Es bueno porque ___.
+          - question: Tu amigo no duerme bien por la noche.
+            frame: Quizás puedas ___. Es bueno porque ___.
+          - question: Tu amigo se siente muy estresado todos los días.
+            frame: Quizás puedas ___. Es bueno porque ___.
+          - question: Tu amigo se sienta en un escritorio todo el día y no se mueve mucho.
+            frame: Deberías ___. Es bueno porque ___.
+          - question: Tu amigo tiene dolor de cabeza todas las mañanas.
+            frame: Tienes que ___. Es bueno porque ___.
+          - question: Tu amigo mira la televisión hasta muy tarde.
+            frame: Deberías ___. Es bueno porque ___.
+          - question: Tu amigo nunca hace ejercicio.
+            frame: Quizás puedas ___. Es bueno porque ___.
+          - question: Tu amigo come demasiado azúcar todos los días.
+            frame: Deberías ___. Es bueno porque ___.
+          - question: Tu amigo siempre está con el teléfono en la cama por la noche.
+            frame: Será mejor que ___. Es bueno porque ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Mi semana pasada saludable'
+        skills: [Pretérito indefinido]
+        steps:
+          - 'Piensa en pequeñas cosas saludables que hiciste la semana pasada para tu cuerpo **y** tu mente. La salud no es solo comer bien o hacer ejercicio: también es descansar, hablar con un amigo o decir que no.'
+          - Escribe **una acción saludable** para cada día de la semana.
+          - 'Opcional: comparte una o dos frases con la clase. Di si te ayudó al cuerpo, a la mente o a los dos.'
+        example: |-
+          *El lunes dije que no al trabajo extra. Me sentí tranquila porque tenía tiempo para mí.*
+          *El viernes salí a caminar con Yosi y Dana. Me sentí feliz porque vi a mis amigos.*
+      - id: act4-week
+        type: discussionQuestions
+        title: Mi semana pasada
+        items:
+          - question: El domingo ___. Me sentí ___ porque ___.
+          - question: El lunes ___. Me sentí ___ porque ___.
+          - question: El martes ___. Me sentí ___ porque ___.
+          - question: El miércoles ___. Me sentí ___ porque ___.
+          - question: El jueves ___. Me sentí ___ porque ___.
+          - question: El viernes ___. Me sentí ___ porque ___.
+          - question: El sábado ___. Me sentí ___ porque ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Pretérito indefinido** (Actividades 2 y 4) y
+          **Dar consejos** (Actividades 1, 2 y 3). El cuaderno no indica tiempos ni
+          combinaciones de actividades.
+      - id: n-intro
+        anchor: intro
+        text: 'Da tu propio ejemplo primero (*Soy ___. Me voy a dormir temprano todas las noches.*) y después pregunta a cada estudiante.'
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Explica la situación: *Estás en la sala de espera de un médico.* En persona, los
+          estudiantes se sientan en círculo; en línea, se quedan donde están.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Escribe en la pizarra las preguntas útiles: *¿Cuándo ocurrió? ¿Qué hiciste
+          después? ¿Tomaste algún medicamento? ¿Fuiste al hospital?* Corrige el pretérito
+          indefinido en las respuestas del paciente.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Escribe en la pizarra: *Deberías… / Quizás puedas… / Es bueno porque…* Muestra
+          cada situación en una tarjeta o diapositiva, o léela en voz alta.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: salud-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-preterito
+        type: ruleSummary
+        skill: Pretérito indefinido
+        rules:
+          - text: Usamos el pretérito indefinido para acciones que empezaron y terminaron en el pasado.
+            examples: [Ayer caminé a la escuela., Ella comió hace una hora.]
+          - text: 'Verbos regulares: quita **-ar**, **-er** o **-ir** y agrega las terminaciones del pasado.'
+            examples:
+              - '-AR: -é, -aste, -ó, -amos, -aron (caminar → caminé)'
+              - '-ER / -IR: -í, -iste, -ió, -imos, -ieron (comer → comió, vivir → vivieron)'
+          - text: 'Algunos verbos son irregulares y tienen formas especiales.'
+            examples: ['ir → fui, fue', 'tener → tuve, tuvo', 'hacer → hice, hizo']
+          - text: 'Negativo: pon **no** antes del verbo. Pregunta: usa **¿ ?** y la entonación de pregunta; el verbo no cambia.'
+            examples: [No fui al médico., No comí nada., ¿Fuiste al médico?, ¿Comiste?]
+      - id: preterito-table
+        type: table
+        caption: Pretérito indefinido de los verbos regulares
+        header: [Persona, caminar, comer, vivir]
+        rows:
+          - [yo, caminé, comí, viví]
+          - [tú, caminaste, comiste, viviste]
+          - [él / ella / usted, caminó, comió, vivió]
+          - [nosotros / nosotras, caminamos, comimos, vivimos]
+          - [ellos / ellas / ustedes, caminaron, comieron, vivieron]
+      - id: rules-consejos
+        type: ruleSummary
+        skill: Dar consejos
+        rules:
+          - text: 'Para dar consejos, sugerencias o decir lo que es necesario usamos **deber**, **poder** y **tener que**. *Deberías* y *podrías* son más suaves; *debes* y *tienes que* son más fuertes.'
+            examples:
+              [Deberías dormir más., Debes tomar el medicamento., Tienes que ver a un médico.]
+          - text: '*Deber*, *poder* y *tener que* se conjugan según la persona (yo **debo**, tú **debes**, él **debe**). Después va el verbo en **infinitivo**.'
+            examples:
+              [
+                Ella debería beber té.,
+                Él debe descansar.,
+                Deberías descansar (no *Deberías descansas*).,
+              ]
+          - text: 'Después de **será mejor que** el verbo va en subjuntivo. **Quizás** suaviza el consejo.'
+            examples:
+              - Será mejor que te quedes en casa hoy (no *que te quedas*).
+              - Quizás puedas leer un libro antes de dormir.
+      - id: consejos-table
+        type: table
+        caption: Deber y tener que
+        header: [Persona, deber (presente), deber (más suave), tener que]
+        rows:
+          - [yo, debo, debería, tengo que]
+          - [tú, debes, deberías, tienes que]
+          - [él / ella / usted, debe, debería, tiene que]
+          - [nosotros / nosotras, debemos, deberíamos, tenemos que]
+          - [ellos / ellas / ustedes, deben, deberían, tienen que]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: salud-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-salud
+        type: aiTutorPrompt
+        title: Hábitos saludables
+        message: >-
+          ¡Hola Mori! Quiero hablar sobre hábitos saludables. ¿Podrías hacerme preguntas
+          usando el pretérito indefinido y verbos para dar consejos (deberías, puedes,
+          tienes que)? Por favor, corrige mis errores.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Dos actividades interactivas
+      - id: mori-detective
+        type: aiTutorPrompt
+        title: Detective de hábitos saludables
+        intro: Mori piensa en un hábito y tú haces preguntas en pasado para adivinarlo. Después, cambian.
+        message: >-
+          ¡Hola Mori! Juguemos a «Detective de hábitos saludables». Piensa en un hábito
+          que tenías antes y yo te hago preguntas en pretérito indefinido para adivinarlo.
+          Después, yo pienso en uno y tú adivinas. Por favor, corrige mis errores.
+      - id: mori-consejos
+        type: aiTutorPrompt
+        title: Consejos de salud
+        intro: Mori tiene un problema de salud y tú le das consejos.
+        message: >-
+          ¡Hola Mori! Hagamos un juego de rol de consejos de salud. Imagina que tienes un
+          problema de salud y yo te doy consejos con deberías, podrías, debes, puedes,
+          tienes que y será mejor que. Por favor, corrige mis errores.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: salud-practica
+    book: workbook
+    title: 'Práctica: Salud'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-preterito
+        type: activity
+        activity: salud-preterito
+      - id: ex-consejos
+        type: activity
+        activity: salud-consejos
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: salud-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la salud
+        glossLang: he
+        link: https://quizlet.com/il/1058986766/conversational-english-health-flash-cards/
+        items: &salud-words
+          - { term: Salud, gloss: בריאות }
+          - { term: Saludable, gloss: בריא }
+          - { term: Hábito, gloss: הרגל }
+          - { term: Doctor / médico, gloss: רופא }
+          - { term: Cita, gloss: תור }
+          - { term: Hospital, gloss: בית חולים }
+          - { term: Medicamento, gloss: תרופה }
+          - { term: Dolor, gloss: כאב }
+          - { term: Dolor de garganta, gloss: כאב גרון }
+          - { term: Resfriado, gloss: הצטננות }
+          - { term: Dolor de cabeza, gloss: כאב ראש }
+          - { term: Dolor de espalda, gloss: כאב גב }
+          - { term: Dormir, gloss: לישון }
+          - { term: Descansar, gloss: לנוח }
+          - { term: Beber, gloss: לשתות }
+          - { term: Comer, gloss: לאכול }
+          - { term: Hacer ejercicio, gloss: לעשות ספורט }
+          - { term: Sentir, gloss: להרגיש }
+          - { term: Preguntar, gloss: לשאול }
+          - { term: Responder, gloss: לענות }
+          - { term: Debería, gloss: כדאי }
+          - { term: Debe, gloss: צריך }
+          - { term: Tener que, gloss: חייב / צריך }
+          - { term: Podría (consejo), gloss: יכול }
+          - { term: Puede, gloss: יכול / אפשר }
+          - { term: Podría (posibilidad), gloss: אולי (אפשרות) }
+          - { term: Será mejor que…, gloss: עדיף ש... }
+          - { term: Cuidarse, gloss: לשמור על עצמך }
+          - { term: Que te mejores pronto, gloss: החלמה מהירה }
+          - { term: Consejo, gloss: עצה }
+
+vocabulary:
+  - slug: salud
+    title: Salud
+    items: *salud-words
+
+activities:
+  - slug: salud-preterito
+    title: 'Pretérito indefinido: ¿qué pasó?'
+    minutes: 8
+    items:
+      - id: fui
+        type: multipleChoice
+        prompt: Ayer yo ___ al médico.
+        options:
+          - { text: fui, correct: true }
+          - { text: fue, feedback: '*Fue* es para él / ella. Para *yo* usa *fui*.' }
+          - { text: voy, feedback: '*Ayer* habla del pasado: usa el pretérito indefinido, *fui*.' }
+      - id: comi
+        type: fillBlank
+        prompt: Completa con el verbo *comer* en pretérito indefinido.
+        text: Anoche ___ pollo en mal estado.
+        blanks: [[comí, yo comí]]
+      - id: formas
+        type: matching
+        prompt: Une cada verbo con su forma en pretérito indefinido.
+        pairs:
+          - [caminar (yo), caminé]
+          - [comer (ella), comió]
+          - [vivir (ellos), vivieron]
+          - [tomar (tú), tomaste]
+          - [hacer (yo), hice]
+      - id: negativo
+        type: trueFalse
+        prompt: 'Para hacer una oración negativa en pasado, ponemos *no* antes del verbo: *No fui al médico.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *No* va antes del verbo, y el verbo no cambia.
+          incorrect: 'En español solo ponemos *no* antes del verbo: *No fui al médico. No comí nada.*'
+      - id: tomaste
+        type: multipleChoice
+        prompt: '¿___ algún medicamento? (tú)'
+        options:
+          - { text: Tomaste, correct: true }
+          - { text: Tomé, feedback: '*Tomé* es para *yo*. Para *tú* usa *tomaste*.' }
+          - { text: Tomas, feedback: '*Tomas* es presente. Para el pasado usa *tomaste*.' }
+      - id: me-cai
+        type: fillBlank
+        prompt: Completa con *caer* y *lastimar* en pretérito indefinido (yo).
+        text: Ayer me ___ en casa y me ___ el brazo.
+        blanks: [[caí], [lastimé]]
+      - id: ordena-escaleras
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Me caí en las escaleras.
+      - id: no-comio
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: Ella no comió nada., correct: true }
+          - { text: Ella no comí nada., feedback: '*Comí* es para *yo*. Para *ella* usa *comió*.' }
+          - {
+              text: Ella comió no nada.,
+              feedback: '*No* va antes del verbo: *Ella no comió nada.*',
+            }
+
+  - slug: salud-consejos
+    title: 'Dar consejos: deberías, puedes, tienes que'
+    minutes: 8
+    items:
+      - id: deberias
+        type: multipleChoice
+        prompt: 'Tu amigo tiene dolor de cabeza. Le dices: «___ descansar».'
+        options:
+          - { text: Deberías, correct: true }
+          - {
+              text: Deber,
+              feedback: 'Hay que conjugar *deber* para la persona: a tu amigo (tú) le dices *deberías*.',
+            }
+          - {
+              text: Debemos,
+              feedback: '*Debemos* es para *nosotros*. Para tu amigo (tú) usa *deberías*.',
+            }
+      - id: infinitivo
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: Deberías dormir más., correct: true }
+          - {
+              text: Deberías duermes más.,
+              feedback: 'Después de *deberías* el verbo va en infinitivo: *dormir*.',
+            }
+          - {
+              text: Deberías a dormir más.,
+              feedback: 'Con *deber* no usamos *a*: *Deberías dormir más.*',
+            }
+      - id: se-conjugan
+        type: trueFalse
+        prompt: '*Deber* no cambia con la persona: *yo debe, tú debe, él debe*.'
+        answer: false
+        feedback:
+          correct: '¡Correcto! *Deber* se conjuga: yo debo, tú debes, él debe.'
+          incorrect: 'En español *deber* se conjuga según la persona: yo debo, tú debes, él debe.'
+      - id: debe
+        type: fillBlank
+        prompt: Completa con el verbo *deber* en presente.
+        text: Él ___ descansar el brazo.
+        blanks: [[debe]]
+      - id: tienes-que
+        type: fillBlank
+        prompt: Completa con el verbo *tener* (tú).
+        text: Si mañana todavía te duele, ___ que ir al hospital.
+        blanks: [[tienes, tú tienes]]
+      - id: problema-consejo
+        type: matching
+        prompt: Une cada problema con un buen consejo.
+        pairs:
+          - [Tengo dolor de garganta., Deberías beber té caliente.]
+          - [No duermo bien por la noche., Podrías leer un libro antes de dormir.]
+          - [Como demasiada comida rápida., Deberías comer más fruta.]
+          - [Nunca bebo agua., Tienes que beber dos litros de agua al día.]
+          - [Me duele la espalda., Deberías caminar más y no estar sentado todo el día.]
+      - id: sera-mejor
+        type: multipleChoice
+        prompt: Será mejor que ___ en casa hoy.
+        options:
+          - { text: te quedes, correct: true }
+          - {
+              text: te quedas,
+              feedback: 'Después de *será mejor que* usamos el subjuntivo: *te quedes*.',
+            }
+          - {
+              text: quedarte,
+              feedback: 'Después de *será mejor que* va un verbo conjugado en subjuntivo: *te quedes*.',
+            }
+      - id: ordena-agua
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Deberías beber mucha agua.

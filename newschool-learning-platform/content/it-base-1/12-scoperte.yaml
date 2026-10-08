@@ -1,0 +1,599 @@
+# Cycle "Scoperte", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: scoperte
+title: Scoperte
+goal: Descrivere azioni al presente e dire dove si trova qualcosa con le preposizioni.
+position: 12
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Azioni al presente" and "Preposizioni di luogo") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The general information says skill 1 (azioni) is practised in Activities 2 and 3
+    and skill 2 (preposizioni) in Activities 1 and 3, but Activity 4 is marked AZIONI
+    and Activity 3 (body parts, *È sul tuo viso? È vicino ai tuoi piedi?*) practises
+    prepositions. The plan note says: azioni – Activities 2 and 4; preposizioni –
+    Activities 1 and 3. Please confirm.
+  - >-
+    Activity 3 has no heading in the notebook; it is titled "Attività 3: Indovina la
+    parte del corpo". Its stage times (2 + 1 + 5 minutes) are recorded as 8 minutes.
+    Activity 4's pair work is "about 4 minutes" (kept in the teacher note). The other
+    activities have no time in the notebook.
+  - >-
+    "Presente semplice" is an English label (present simple); in the summary and in
+    Mori it is just "presente". The summary now also says the subject pronoun can be
+    left out, and has a small table of regular verbs (camminare, scrivere, dormire).
+  - >-
+    Prepositions: the notebook does not say that *a, da, su* join the article
+    (*accanto alla Francia, vicino al fiume, sul viso*), although its examples use
+    these forms. A rule and a table of these forms were added to the summary, with the
+    note that countries take the article (*la Spagna, l'Italia*) but *Israele* does
+    not (*vicino a Israele*). The example "Israele è accanto (vicino) alla Giordania"
+    → "Israele è accanto alla Giordania". Please confirm.
+  - >-
+    Activity 1's preposition list had English glosses (*over, below, close to, far
+    from*) and "Accanto a → (vicino a / ליד)"; the teacher note gives Hebrew glosses
+    instead (from the vocabulary).
+  - >-
+    Warm-up frames: "Questo paese è ___ da Israele" → "Questo paese è vicino a /
+    lontano da Israele."; "Il mio animale preferito è il ___" → "… è il / la ___";
+    "Vive nel ___" → "Vive in ___ / nel ___ / nella ___"; the introduction frame "Mi
+    piace imparare cose nuove su ___" keeps the example "sulla politica".
+  - >-
+    Activity 4: the answer frames "Mi sento creativo quando… / Sono logico quando…" did
+    not answer "Cosa fai quando…?"; they are now "Quando mi sento creativo / creativa,
+    io ___" and "Quando sono logico / logica, io ___". In the left-brain list
+    "Raccontare" → "Spiegare" (the example says *fornisce spiegazioni*). Garbled
+    emoji characters (ð¨, ð§ ) were removed.
+  - >-
+    Activity 4 presents "left brain / right brain" as psychology science. This is a
+    popular idea rather than established science; the teacher note calls it "un'idea
+    popolare". Please decide whether to keep the framing.
+  - >-
+    Images are missing from the notebook export: the animal picture (Activity 2), the
+    body-parts handout (Activity 3) and the brain picture (Activity 4). Teacher notes
+    say to prepare and share them; they need to be added to the course media.
+  - >-
+    The summary's third part ("Domande e risposte semplici": cosa, dove, chi, quando)
+    is kept as a third rule block, although it is not one of the cycle's two skills.
+    The "Insomma" recap was left out (it repeats the rules).
+  - >-
+    Mori: the notebook has no tips for this cycle; the standard tips callout was added.
+    The Quizlet link's tracking parameter (?new) was removed.
+  - >-
+    Vocabulary: "Leopardo" is glossed נמר (as in the notebook; נמר also means tiger).
+    Activity 3 and 4 words not in the notebook vocabulary were added: Viso (פנים),
+    Risolvere (לפתור), Pensare (לחשוב), Spiegare (להסביר). Please confirm.
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes: students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: scoperte-classe
+    title: 'Classe: Scoperte'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Scoperte
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Azioni al presente
+            description: Creare frasi al presente con azioni (*L'elefante cammina.*)
+          - name: Preposizioni di luogo
+            description: '*sopra, sotto, accanto a, vicino a, lontano da*'
+      - id: quizlet
+        type: externalLink
+        label: Scoperte su Quizlet
+        url: https://quizlet.com/br/1068059438/italiano-basico-scoperte-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Turno introduttivo
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Mi piace imparare cose nuove su ___.
+        example: Sono Dana. Mi piace imparare cose nuove sulla politica.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Qual è il tuo paese preferito? Perché?
+            frame: Il mio paese preferito è ___ perché ___.
+          - question: Questo paese è vicino o lontano da Israele?
+            frame: Questo paese è vicino a / lontano da Israele.
+          - question: Cosa puoi fare in quel paese?
+            frame: Puoi ___, ___ e ___.
+          - question: Qual è il tuo animale preferito? Perché?
+            frame: Il mio animale preferito è il / la ___ perché ___.
+          - question: Dove vive il tuo animale preferito?
+            frame: Vive in ___ / nel ___ / nella ___.
+          - question: Cosa fai ogni giorno?
+            frame: Ogni giorno ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Dove si trova questo paese?'
+        skills: [Preposizioni di luogo]
+        steps:
+          - Ripassa con l'insegnante le preposizioni della lista.
+          - L'insegnante ti dà un paese. Di' dove si trova, con le preposizioni.
+          - "L'insegnante chiede: *L'Italia è vicina o lontana dalla Spagna?* Rispondi e poi fai una domanda a un compagno su altri due paesi."
+        example: |-
+          *L'Italia è sopra la Tunisia, accanto alla Francia.*
+          *Il Brasile è sotto gli Stati Uniti, lontano da Israele.*
+          *L'Italia è vicina alla Spagna.*
+        wordBank: [sopra, sotto, accanto a, vicino a, lontano da]
+      - id: act1-frames
+        type: discussionQuestions
+        items:
+          - question: Dove si trova il tuo paese?
+            frame: ___ è sopra ___, sotto ___ e accanto a ___.
+          - question: ___ è vicino o lontano da ___?
+            frame: ___ è vicino a / lontano da ___.
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Cosa fanno gli animali?'
+        skills: [Azioni al presente]
+        steps:
+          - Guarda l'immagine con gli animali che mostra l'insegnante.
+          - Cosa vedi nell'immagine? Di' il nome di un animale.
+          - Scegli un animale e di' cosa fa.
+        example: |-
+          *L'elefante cammina.*
+          *La giraffa mangia.*
+          *Il leopardo si arrampica.*
+          *La scimmia si arrampica.*
+          *L'uccello vola.*
+        wordBank: [camminare, arrampicarsi, mangiare, sorridere, volare]
+      - id: act2-frames
+        type: discussionQuestions
+        items:
+          - question: Cosa vedi nell'immagine?
+            frame: Vedo un / una ___.
+          - question: Scegli un animale. Cosa fa?
+            frame: Il / La / L' ___ ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Indovina la parte del corpo'
+        skills: [Preposizioni di luogo]
+        minutes: 8
+        steps:
+          - Guarda la lista delle parti del corpo (testa, mano, piede, bocca, naso, occhio, orecchio).
+          - Uno studente sceglie in segreto una parte del corpo. È lo **studente misterioso**.
+          - Gli altri fanno domande, uno alla volta. Lo studente misterioso risponde *sì* o *no*.
+          - Si continua finché qualcuno indovina la parte del corpo.
+        example: |-
+          *È sul tuo viso?*
+          *È vicino ai tuoi piedi?*
+          *Usi questa parte per parlare?*
+          *Usi questa parte per vedere?*
+          *Usi questa parte per camminare?*
+          *Usi questa parte per scrivere?*
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Destra o sinistra?'
+        skills: [Azioni al presente]
+        steps:
+          - Guarda l'immagine del cervello che mostra l'insegnante.
+          - Lavorate in coppia. Lo studente A fa le domande allo studente B, poi B fa le domande ad A.
+          - Racconta al gruppo la risposta del tuo compagno. Usa la terza persona.
+        example: |-
+          A: *Cosa fai quando ti senti creativo?*
+          B: *Quando mi sento creativo, disegno e immagino cose nuove.*
+          *Yosi si sente creativo quando disegna e immagina cose nuove.*
+          *Yosi è logico quando fornisce spiegazioni e risolve i problemi.*
+      - id: act4-brain
+        type: table
+        caption: Verbi utili
+        header: [Emisfero destro (creativo), Emisfero sinistro (logico)]
+        rows:
+          - [disegnare, spiegare]
+          - [cantare, calcolare]
+          - [ballare, risolvere]
+          - [immaginare, pianificare]
+          - [creare, organizzare]
+          - [giocare, studiare]
+          - [scrivere, pensare]
+      - id: act4-questions
+        type: discussionQuestions
+        items:
+          - question: Cosa **fai** quando ti senti creativo / creativa?
+            frame: Quando mi sento creativo / creativa, io ___.
+          - question: Cosa **fai** quando sei logico / logica?
+            frame: Quando sono logico / logica, io ___.
+          - question: Cosa fa il tuo compagno quando si sente creativo / creativa?
+            frame: ___ si sente creativo / creativa quando ___.
+          - question: Cosa fa il tuo compagno quando è logico / logica?
+            frame: ___ è logico / logica quando ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Azioni al presente** (Attività 2 e 4) e
+          **Preposizioni di luogo** (Attività 1 e 3). Le domande di riscaldamento
+          praticano tutte e due.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Dai prima il tuo esempio ("Mi piace imparare cose nuove sulla politica") e poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui appaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Ripassa le preposizioni con la traduzione (sopra – מעל, sotto – מתחת, accanto a –
+          ליד, vicino a – קרוב ל־, lontano da – רחוק מ־). Dai un paese diverso a ogni
+          studente. Quando tutti hanno descritto il loro paese, chiedi allo studente 1 se
+          un paese è vicino o lontano da un altro; poi lui fa la stessa domanda a un
+          compagno su altri due paesi, finché tutti hanno partecipato.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          L'immagine con gli animali non è nel quaderno esportato: prepara un'immagine
+          con diversi animali (elefante, giraffa, leopardo, scimmia, uccello) e
+          condividila sullo schermo. Ogni studente nomina un animale, poi dice cosa fa.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Preparazione (2 min): distribuisci un breve elenco con i disegni delle parti
+          del corpo e scrivi alla lavagna le domande modello. Studente misterioso (1 min),
+          domande guidate (5 min).
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Spiega che, secondo un'idea popolare, l'emisfero destro del cervello è creativo
+          e il sinistro è logico, e mostra un'immagine del cervello (non è nel quaderno
+          esportato). Le coppie lavorano circa 4 minuti, a seconda del gruppo.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: scoperte-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Oggi abbiamo imparato
+      - id: rules-present
+        type: ruleSummary
+        skill: Azioni al presente
+        rules:
+          - text: Usiamo il presente per parlare di cosa succede **adesso** e di cosa succede **sempre** (abitudini).
+          - text: '**Struttura:** soggetto + verbo + complemento.'
+            examples:
+              [Io vado a piedi al parco., Lui / Lei canta in classe., Noi studiamo italiano.]
+          - text: 'Il verbo cambia forma secondo la persona: io, tu, lui / lei, noi, voi, loro. Per questo *io, tu, lui…* si possono togliere.'
+            examples: [Canto. (= Io canto.), L'uccello vola.]
+          - text: Verbi praticati con gli animali.
+            examples:
+              - Camminare → L'elefante cammina.
+              - Mangiare → La giraffa mangia.
+              - Volare → L'uccello vola.
+              - Arrampicarsi → La scimmia si arrampica.
+              - Sorridere → Il ragazzo sorride.
+      - id: present-table
+        type: table
+        caption: Verbi regolari al presente
+        header: [Persona, '-are: camminare', '-ere: scrivere', '-ire: dormire']
+        rows:
+          - [io, cammino, scrivo, dormo]
+          - [tu, cammini, scrivi, dormi]
+          - [lui / lei, cammina, scrive, dorme]
+          - [noi, camminiamo, scriviamo, dormiamo]
+          - [voi, camminate, scrivete, dormite]
+          - [loro, camminano, scrivono, dormono]
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: Preposizioni di luogo
+        rules:
+          - text: Le preposizioni servono per **dire dove si trova qualcosa**.
+            examples:
+              - Sopra → L'aereo è sopra la città.
+              - Sotto → Il cane è sotto il tavolo.
+              - Accanto a → Israele è accanto alla Giordania.
+              - Vicino a → L'Egitto è vicino a Israele.
+              - Lontano da → Il Giappone è lontano da Israele.
+          - text: "*A*, *da* e *su* si uniscono all'articolo: a + la = **alla**, a + il = **al**, da + la = **dalla**, su + il = **sul**."
+            examples: [accanto alla Francia, vicino al fiume, lontano dalla Spagna, È sul mio viso.]
+          - text: I paesi hanno l'articolo (*la Spagna, l'Italia, il Canada*), ma *Israele* no.
+            examples: [vicino alla Spagna, vicino a Israele]
+      - id: articulated-table
+        type: table
+        caption: Preposizione + articolo
+        header: [Preposizione, il, la, "l'", i, gli]
+        rows:
+          - [a, al, alla, "all'", ai, agli]
+          - [da, dal, dalla, "dall'", dai, dagli]
+          - [su, sul, sulla, "sull'", sui, sugli]
+      - id: rules-questions
+        type: ruleSummary
+        skill: Domande e risposte semplici
+        rules:
+          - text: Usiamo le **parole interrogative** per chiedere informazioni.
+            examples:
+              - Cosa fa la giraffa? → La giraffa mangia.
+              - Dove vive il leone? → Vive in Africa.
+              - Chi canta? → Shakira canta.
+              - Quando cammini? → Cammino la mattina.
+              - Questo paese è vicino a Israele? → Sì, è vicino.
+              - La tua bocca è sul tuo viso? → Sì, è sul mio viso.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: scoperte-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia questo messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-scoperte
+        type: aiTutorPrompt
+        title: Animali e paesi
+        message: >-
+          Ciao Mori, vorrei parlare di animali e paesi. Puoi farmi delle domande usando
+          le preposizioni e azioni semplici al presente? Correggi i miei errori, per
+          favore.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Fammi altre domande, per favore!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Esercizi aggiuntivi
+      - id: mori-dove
+        type: aiTutorPrompt
+        title: Dove si trova? (Preposizioni)
+        intro: Invia questo messaggio a Mori. Mori ti dà un paese o un animale; tu dici dove si trova, con una preposizione.
+        message: Ehi, Mori! Mandami un paese o un animale e ti dirò dove si trova. Correggimi se sbaglio.
+      - id: mori-dove-next
+        type: text
+        text: '**Esempi:** *La Thailandia è lontana da Israele.* · *La zebra vive vicino al fiume.* · *Gli Stati Uniti sono accanto al Canada.*'
+      - id: mori-animali
+        type: aiTutorPrompt
+        title: Cosa fa l'animale? (Verbi al presente)
+        intro: Invia questo messaggio a Mori. Mori ti chiede di diversi animali; tu spieghi cosa fanno, con i verbi al presente.
+        message: Ehi, Mori! Ora fammi delle domande sugli animali. Cosa fanno?
+      - id: mori-animali-next
+        type: text
+        text: "**Esempi:** *La giraffa mangia le foglie.* · *La scimmia si arrampica sull'albero.* · *L'uccello vola.* · *L'elefante cammina.*"
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: scoperte-pratica
+    book: workbook
+    title: 'Pratica: Scoperte'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati con le due abilità del ciclo. Ogni risposta si corregge subito, e puoi riprovare.
+      - id: ex-azioni
+        type: activity
+        activity: scoperte-azioni
+      - id: ex-preposizioni
+        type: activity
+        activity: scoperte-preposizioni
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: scoperte-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Parole delle scoperte
+        glossLang: he
+        link: https://quizlet.com/br/1068059438/italiano-basico-scoperte-flash-cards/
+        items: &scoperte-words
+          - { term: Paese, gloss: מדינה }
+          - { term: Sopra, gloss: מעל }
+          - { term: Sotto, gloss: מתחת }
+          - { term: Accanto a, gloss: ליד }
+          - { term: Vicino a, gloss: קרוב ל־ }
+          - { term: Lontano da, gloss: רחוק מ־ }
+          - { term: Israele, gloss: ישראל }
+          - { term: Italia, gloss: איטליה }
+          - { term: Brasile, gloss: ברזיל }
+          - { term: Spagna, gloss: ספרד }
+          - { term: Elefante, gloss: פיל }
+          - { term: Giraffa, gloss: ג'ירפה }
+          - { term: Leopardo, gloss: נמר }
+          - { term: Scimmia, gloss: קוף }
+          - { term: Uccello, gloss: ציפור }
+          - { term: Zebra, gloss: זברה }
+          - { term: Leone, gloss: אריה }
+          - { term: Camminare, gloss: ללכת / לצעוד }
+          - { term: Mangiare, gloss: לאכול }
+          - { term: Volare, gloss: לעוף }
+          - { term: Arrampicarsi, gloss: לטפס }
+          - { term: Sorridere, gloss: לחייך }
+          - { term: Testa, gloss: ראש }
+          - { term: Viso, gloss: פנים }
+          - { term: Mano, gloss: יד }
+          - { term: Piede, gloss: רגל }
+          - { term: Bocca, gloss: פה }
+          - { term: Naso, gloss: אף }
+          - { term: Occhio, gloss: עין }
+          - { term: Orecchio, gloss: אוזן }
+          - { term: Disegnare, gloss: לצייר }
+          - { term: Cantare, gloss: לשיר }
+          - { term: Ballare, gloss: לרקוד }
+          - { term: Immaginare, gloss: לדמיין }
+          - { term: Creare, gloss: ליצור }
+          - { term: Giocare, gloss: לשחק }
+          - { term: Scrivere, gloss: לכתוב }
+          - { term: Spiegare, gloss: להסביר }
+          - { term: Calcolare, gloss: לחשב }
+          - { term: Risolvere, gloss: לפתור }
+          - { term: Pianificare, gloss: לתכנן }
+          - { term: Organizzare, gloss: לארגן }
+          - { term: Studiare, gloss: ללמוד }
+          - { term: Pensare, gloss: לחשוב }
+
+vocabulary:
+  - slug: scoperte
+    title: Scoperte
+    items: *scoperte-words
+
+activities:
+  - slug: scoperte-azioni
+    title: 'Azioni al presente: cosa fanno?'
+    minutes: 8
+    items:
+      - id: giraffa-mangia
+        type: multipleChoice
+        prompt: La giraffa ___ le foglie.
+        options:
+          - { text: mangia, correct: true }
+          - { text: mangio, feedback: '*Mangio* è per *io*. Con *la giraffa* (lei) usa *mangia*.' }
+          - {
+              text: mangiano,
+              feedback: '*Mangiano* è per *loro*. *La giraffa* è una: usa *mangia*.',
+            }
+      - id: uccelli-volano
+        type: multipleChoice
+        prompt: Gli uccelli ___.
+        options:
+          - { text: volano, correct: true }
+          - {
+              text: vola,
+              feedback: '*Vola* è per un uccello (lui / lei). *Gli uccelli* sono loro: *volano*.',
+            }
+          - { text: voli, feedback: '*Voli* è per *tu*. Con *gli uccelli* (loro) usa *volano*.' }
+      - id: scimmia
+        type: multipleChoice
+        prompt: Cosa fa la scimmia?
+        options:
+          - { text: La scimmia si arrampica., correct: true }
+          - {
+              text: La scimmia arrampica.,
+              feedback: 'Il verbo è *arrampicarsi*: con lui / lei si dice *si arrampica*.',
+            }
+          - {
+              text: La scimmia si arrampicano.,
+              feedback: '*Arrampicano* è per *loro*. La scimmia è una: *si arrampica*.',
+            }
+      - id: studiamo
+        type: fillBlank
+        prompt: Completa con il verbo al presente.
+        text: Noi ___ (studiare) italiano.
+        blanks: [[studiamo]]
+      - id: canto-disegni
+        type: fillBlank
+        prompt: Completa con il verbo al presente.
+        text: Io ___ (cantare) e tu ___ (disegnare).
+        blanks: [[canto], [disegni]]
+      - id: cambia-forma
+        type: trueFalse
+        prompt: 'In italiano il verbo cambia forma secondo la persona: *io canto, tu canti, lei canta*.'
+        answer: true
+        feedback:
+          correct: Giusto! Ogni persona ha la sua forma.
+          incorrect: 'Il verbo cambia: *io canto, tu canti, lei canta, noi cantiamo*.'
+      - id: camminare
+        type: matching
+        prompt: Unisci ogni persona al verbo *camminare*.
+        pairs:
+          - [io, cammino]
+          - [tu, cammini]
+          - [lui / lei, cammina]
+          - [noi, camminiamo]
+          - [loro, camminano]
+      - id: ordina-giraffa
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: La giraffa mangia le foglie.
+
+  - slug: scoperte-preposizioni
+    title: 'Preposizioni di luogo: dove si trova?'
+    minutes: 8
+    items:
+      - id: aereo-sopra
+        type: multipleChoice
+        prompt: L'aereo vola in alto, ___ la città.
+        options:
+          - { text: sopra, correct: true }
+          - { text: sotto, feedback: "L'aereo è in alto: usa *sopra*." }
+          - {
+              text: lontano,
+              feedback: "*Lontano* vuole *da* (lontano dalla città), e l'aereo è in alto: usa *sopra*.",
+            }
+      - id: giappone-lontano
+        type: multipleChoice
+        prompt: Il Giappone è ___ Israele.
+        options:
+          - { text: lontano da, correct: true }
+          - {
+              text: lontano a,
+              feedback: 'Si dice *lontano da*: *Il Giappone è lontano da Israele*.',
+            }
+          - {
+              text: vicino da,
+              feedback: 'Si dice *vicino a*, e il Giappone è molto lontano da Israele: *lontano da*.',
+            }
+      - id: accanto-alla
+        type: multipleChoice
+        prompt: Israele è accanto ___ Giordania.
+        options:
+          - { text: alla, correct: true }
+          - { text: a la, feedback: '*A* + *la* si uniscono: *alla*.' }
+          - { text: al, feedback: '*Al* è per *il*. *La Giordania* è femminile: *alla*.' }
+      - id: egitto-brasile
+        type: fillBlank
+        prompt: Completa con *a* o *da*.
+        text: L'Egitto è vicino ___ Israele. Il Brasile è lontano ___ Israele.
+        blanks: [[a], [da]]
+      - id: accanto-al
+        type: fillBlank
+        prompt: Completa con *al* o *alla*.
+        text: Gli Stati Uniti sono accanto ___ Canada. L'Italia è accanto ___ Francia.
+        blanks: [[al], [alla]]
+        wordBank: [al, alla]
+      - id: a-la-alla
+        type: trueFalse
+        prompt: 'In italiano *a* + *la* diventa *alla*: *accanto alla Francia*.'
+        answer: true
+        feedback:
+          correct: Giusto! E *a* + *il* diventa *al*.
+          incorrect: '*A* + *la* si uniscono: *alla*. Non si dice *a la*.'
+      - id: preposizioni-ebraico
+        type: matching
+        prompt: Unisci ogni preposizione alla traduzione.
+        pairs:
+          - [sopra, מעל]
+          - [sotto, מתחת]
+          - [accanto a, ליד]
+          - [vicino a, קרוב ל־]
+          - [lontano da, רחוק מ־]
+      - id: ordina-cane
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Il cane è sotto il tavolo.

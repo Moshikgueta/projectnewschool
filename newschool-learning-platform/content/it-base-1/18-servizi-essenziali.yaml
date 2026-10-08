@@ -1,0 +1,500 @@
+# Cycle "Servizi essenziali", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: servizi-essenziali
+title: Servizi essenziali
+goal: Dare indicazioni in città e dire dove sono i luoghi con le preposizioni.
+position: 18
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Indicazioni" and "Preposizioni") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The city map used in Activities 1 and 4 is not in the notebook (no file or link).
+    The teacher brings or shares a map (see the teacher notes); please add one to the
+    course's media.
+  - >-
+    Introduction round: the source lists "Sono di Firenze" and "Sono a Roma" as loose
+    examples. The frame is "Sono ___. Sono di ___. Vivo vicino a / lontano da New
+    School."; "Sono a Roma" is left out. "Vivo vicino a New School" is kept as in the
+    source (with a school name, "vicino alla New School" may sound more natural;
+    please decide).
+  - >-
+    Summary, directions: "Arrivato / arrivato alla fine" (broken) is rewritten as
+    "Sei arrivato / è alla fine della strada". "luoghi i" typo removed. The section
+    "Indicazioni relative a luoghi" (accanto a, di fronte a, dietro, tra) is moved
+    under the prepositions skill, where it belongs.
+  - >-
+    Summary, prepositions: a short rule and table on a + il = al, a + la = alla, a +
+    l' = all', su + il = sul, su + la = sulla, da + la = dalla were ADDED, because the
+    notebook's own examples use these forms (accanto al supermercato, di fronte alla
+    stazione, sul tavolo, sulla sinistra) and the workbook practises them. Please
+    confirm.
+  - >-
+    Homework: the notebook's homework is written work, not a Mori conversation, so
+    the "Compiti" section has three answer boxes and no Mori prompt or tips (as in
+    the Spanish music cycle). Corrections in the examples: "Accanto a casa mia c'è un
+    parco e un supermercato" → "Accanto a casa mia ci sono un parco e un
+    supermercato" (two things → ci sono); "Raccomando il museo" → "Consiglio il
+    museo"; the headings "Attività 1" / "Compito 2" are made consistent.
+  - >-
+    Corrections in the activities: "COME si arriva" → "Come si arriva"; "Ti consiglio
+    di andare (supermercato…) ___" → "Ti consiglio di andare al / alla ___"; "Come si
+    arriva/arrivo…..?" → "Come si arriva? / Come ci arrivo?"; Activity 3 asked for
+    "In, accanto, tra, davanti" but the frame used "di fronte a": both "davanti a" and
+    "di fronte a" are given. Warm-up 2 frame "Arrivo ___ in ___" → "Arrivo a ___ in
+    autobus / in macchina / a piedi".
+  - >-
+    Vocabulary: "Bloccare – לחסום" is a mistranslation of English "block"; it is
+    replaced by "Isolato – בלוק (גוש בניינים)", the word used in the homework.
+    "Rotazione – סיבוב" (likely from "turn") is replaced by "Girare – לפנות".
+    "Consiglia" → "Consigliare – להמליץ"; "Accanto" → "Accanto a"; "Dietro" →
+    "Dietro (a)". "Giusto – נכון" is kept ("Sto andando nel posto giusto?"), and
+    "Destra – ימין" was added next to "Sinistra". Please confirm.
+  - >-
+    The notebook gives no activity times, so none are recorded. The "Studente 1/2/3"
+    answer lines are replaced by the optional answer boxes (decision C2).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: servizi-essenziali-classe
+    title: 'Classe: Servizi essenziali'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Servizi essenziali
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Indicazioni
+            description: '*Vai dritto, gira a destra, continua fino a…*'
+          - name: Preposizioni
+            description: '*In, a, su, da* e *accanto a, di fronte a, dietro, tra*'
+      - id: quizlet
+        type: externalLink
+        label: Servizi essenziali su Quizlet
+        url: https://quizlet.com/il/1029848655/basic-italian-essential-services-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Turno di presentazione
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Sono di ___. Vivo vicino a / lontano da New School.
+        example: Sono Mario. Sono di Firenze. Vivo vicino a New School.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quali posti ci sono vicino a casa tua?
+            frame: Vicino a casa mia c'è ___.
+          - question: Come arrivi a ___ da casa tua?
+            frame: Arrivo a ___ in autobus / in macchina / a piedi.
+          - question: Quali luoghi importanti ci sono nella tua città? (almeno 3)
+            frame: Nella mia città ci sono ___, ___ e ___.
+          - question: Come arrivi da casa tua alla fermata dell'autobus?
+            frame: "Esempio: Esco di casa, giro a destra, continuo per duecento metri. La fermata dell'autobus è di fronte al parco."
+          - question: Dov'è il supermercato più vicino a casa tua?
+            frame: Il supermercato più vicino a casa mia è accanto a / di fronte a ___.
+          - question: Come ci arrivi?
+            frame: 'Esempio: Cammino per 500 metri e poi giro a sinistra. Il supermercato è vicino alla banca.'
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: La mappa della città'
+        skills: [Indicazioni]
+        steps:
+          - Guarda la mappa della città con l'insegnante e trova insieme i luoghi.
+          - Impara a chiedere e a dare indicazioni (guarda l'esempio).
+          - 'Lavorate in coppia con la mappa: lo studente A chiede come arrivare a un luogo, lo studente B dà le indicazioni.'
+          - Dopo alcuni turni, scambiatevi i ruoli.
+          - Con tutto il gruppo, parlate delle difficoltà dell'attività.
+        example: |-
+          A: *Come si arriva alla biblioteca?*
+          B: *Continua dritto e poi gira a sinistra. La biblioteca è accanto al parco.*
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Centro informazioni turistiche'
+        skills: [Indicazioni]
+        steps:
+          - Ogni studente ha il suo centro informazioni turistiche.
+          - Lo studente 1 chiede un consiglio e come arrivare. Lo studente 2 risponde.
+          - Scambiatevi i ruoli.
+        example: |-
+          1: *Quale museo mi consigli?*
+          2: *Ti consiglio di andare al Museo ___.*
+          1: *Come ci arrivo?*
+          2: *Ci arrivi a piedi. Devi camminare fino a ___.*
+      - id: act2-frames
+        type: discussionQuestions
+        title: Al centro informazioni
+        items:
+          - question: Quale ___ (supermercato, biblioteca, museo) mi consigli?
+            frame: Ti consiglio di andare al / alla ___ (nome).
+          - question: Come si arriva? / Come ci arrivo?
+            frame: Si arriva in autobus / a piedi. Devi camminare per / fino a ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Parla di un luogo importante della città'
+        skills: [Preposizioni]
+        steps:
+          - Scegli un posto della tua città.
+          - Descrivi dove si trova. Usa le preposizioni *in, accanto a, tra, davanti a / di fronte a*.
+      - id: act3-frames
+        type: discussionQuestions
+        title: Il mio posto
+        items:
+          - question: Il posto che scelgo è ___.
+          - question: È un posto importante perché ___.
+          - question: Si trova in ___ (via, centro…).
+          - question: Accanto a ___.
+          - question: Tra il ___ e il ___.
+          - question: Di fronte a ___.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Indovina il luogo'
+        skills: [Preposizioni]
+        steps:
+          - A turno, uno studente sceglie un luogo sulla mappa della città.
+          - Gli altri fanno domande a risposta *sì* o *no* per indovinare il luogo.
+          - Chi indovina sceglie un nuovo luogo.
+        example: |-
+          (Lo studente 1 ha scelto la scuola.)
+          *Questo posto è **vicino al** teatro?* —No.
+          *Questo posto è **di fronte al** parco?* —Sì!
+          *Questo posto è la scuola?* —Sì!
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Indicazioni** (Attività 1 e 2) e **Preposizioni**
+          (Attività 3 e 4).
+      - id: n-intro
+        anchor: intro
+        text: Dai prima il tuo esempio e poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui appaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Prima ripassa le preposizioni con gli studenti. La mappa della città non è nel
+          quaderno né nella piattaforma: portala tu o condividila sullo schermo, e dai una
+          copia a ogni coppia. Alla fine chiarisci i malintesi e rinforza l'uso corretto
+          delle preposizioni.
+      - id: n-act4
+        anchor: act4
+        text: Usa la stessa mappa dell'Attività 1.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: servizi-essenziali-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Che cosa abbiamo imparato oggi
+      - id: rules-indicazioni
+        type: ruleSummary
+        skill: Indicazioni
+        rules:
+          - text: '**Vai dritto / vai diritto**: per continuare nella stessa direzione.'
+            examples: [Vai dritto fino al semaforo.]
+          - text: '**Gira a destra / gira a sinistra**: per cambiare direzione.'
+            examples: [Gira a destra dopo il negozio.]
+          - text: '**Continua / prosegui**: per continuare sulla stessa strada.'
+            examples: [Continua fino alla rotonda.]
+          - text: '**Sei arrivato / è alla fine della strada**: quando arrivi alla destinazione.'
+            examples: [La biblioteca è alla fine della strada.]
+          - text: '**A pochi passi / a pochi minuti**: il luogo è vicino.'
+            examples: [Il ristorante è **a pochi passi** dalla stazione.]
+          - text: "**All'angolo / all'incrocio**: dove le strade si incrociano."
+            examples: ["Gira **all'angolo** a destra."]
+          - text: '**Sulla destra / sulla sinistra**: la posizione secondo la direzione.'
+            examples: [La banca è **sulla sinistra** dopo il semaforo.]
+          - text: 'Usa frasi chiare e dirette, e punti di riferimento facili da riconoscere (monumenti, negozi, stazioni). Se non sei sicuro, chiedi conferma.'
+            examples: [È lontano?, Sto andando nel posto giusto?]
+      - id: rules-preposizioni
+        type: ruleSummary
+        skill: Preposizioni
+        rules:
+          - text: '**In**: dentro un luogo chiuso o una zona.'
+            examples: [Sono in ufficio., Vivo in città.]
+          - text: '**A**: una destinazione o un luogo preciso (una città).'
+            examples: [Vado a scuola., Sono a Roma.]
+          - text: '**Su**: sopra qualcosa.'
+            examples: [Il libro è sul tavolo.]
+          - text: '**Da**: da dove vieni, oppure a casa di una persona.'
+            examples: [Vengo da Milano., Vado da Maria.]
+          - text: '**Accanto a / vicino a**, **di fronte a / davanti a**, **dietro (a)**, **tra / fra**: dove si trova un luogo rispetto a un altro.'
+            examples:
+              - La farmacia è **accanto al** supermercato.
+              - Il parco è **di fronte alla** stazione.
+              - Il parcheggio è **dietro il** ristorante.
+              - La libreria è **tra** il cinema e il museo.
+          - text: "Prima di *il, la, l'*, la preposizione si unisce all'articolo: **a + il = al**, **a + la = alla** (guarda la tabella)."
+      - id: prep-table
+        type: table
+        caption: Preposizione + articolo
+        header: [Preposizione + articolo, Forma, Esempio]
+        rows:
+          - [a + il, al, La farmacia è accanto al supermercato.]
+          - [a + la, alla, Il parco è di fronte alla stazione.]
+          - [a + l', all', Gira all'angolo a destra.]
+          - [su + il, sul, Il libro è sul tavolo.]
+          - [su + la, sulla, La banca è sulla sinistra.]
+          - [da + la, dalla, Il ristorante è a pochi passi dalla stazione.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: servizi-essenziali-compiti
+    title: Compiti
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti
+      - id: how
+        type: text
+        text: Rispondi alle domande. Usa le preposizioni e il vocabolario del ciclo.
+      - id: hw-posti
+        type: reflection
+        prompt: >-
+          **Quali posti ci sono vicino a casa tua?** Esempio: *Accanto a casa mia ci sono
+          un parco e un supermercato.*
+      - id: hw-banca
+        type: reflection
+        prompt: >-
+          **Dov'è la banca nella tua città?** Esempio: *La banca è sulla strada
+          principale, vicino alla farmacia.*
+      - id: hw-consiglio
+        type: reflection
+        prompt: >-
+          **Quale posto importante della tua città consigli? Come ci arrivo?** Esempio:
+          *Consiglio il museo. Ci arrivi a piedi: devi camminare per tre isolati e girare
+          a destra. È vicino alla biblioteca.*
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: servizi-essenziali-pratica
+    book: workbook
+    title: 'Pratica: Servizi essenziali'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratica le due abilità del ciclo. Ogni risposta viene corretta subito, e puoi riprovare.
+      - id: ex-indicazioni
+        type: activity
+        activity: servizi-essenziali-indicazioni
+      - id: ex-preposizioni
+        type: activity
+        activity: servizi-essenziali-preposizioni
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: servizi-essenziali-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole della città
+        glossLang: he
+        link: https://quizlet.com/il/1029848655/basic-italian-essential-services-flash-cards/
+        items: &servizi-essenziali-words
+          - { term: Casa, gloss: בית }
+          - { term: Posto, gloss: מקום }
+          - { term: Città, gloss: עיר }
+          - { term: Supermercato, gloss: סופרמרקט }
+          - { term: Biblioteca, gloss: ספרייה }
+          - { term: Museo, gloss: מוזיאון }
+          - { term: Parco, gloss: פארק }
+          - { term: Scuola, gloss: בית ספר }
+          - { term: Teatro, gloss: תיאטרון }
+          - { term: Banca, gloss: בנק }
+          - { term: "Fermata dell'autobus", gloss: תחנת אוטובוס }
+          - { term: Strada, gloss: רחוב }
+          - { term: Isolato, gloss: בלוק (גוש בניינים) }
+          - { term: Angolo, gloss: פינה }
+          - { term: Sinistra, gloss: שמאל }
+          - { term: Destra, gloss: ימין }
+          - { term: Giusto, gloss: נכון }
+          - { term: Di fronte a, gloss: מול }
+          - { term: Dietro (a), gloss: מאחורי }
+          - { term: Accanto a, gloss: ליד }
+          - { term: Fra, gloss: בין }
+          - { term: Trasporto, gloss: תחבורה }
+          - { term: Autobus, gloss: אוטובוס }
+          - { term: A piedi, gloss: ברגל }
+          - { term: Girare, gloss: לפנות }
+          - { term: Camminare, gloss: ללכת }
+          - { term: Sto uscendo, gloss: אני יוצא / אני יוצאת }
+          - { term: Indirizzo, gloss: כתובת }
+          - { term: Importante, gloss: חשוב }
+          - { term: Consigliare, gloss: להמליץ }
+
+vocabulary:
+  - slug: servizi-essenziali
+    title: Servizi essenziali
+    items: *servizi-essenziali-words
+
+activities:
+  - slug: servizi-essenziali-indicazioni
+    title: 'Indicazioni: vai dritto, gira a destra'
+    minutes: 8
+    items:
+      - id: vai-dritto
+        type: multipleChoice
+        prompt: 'Non devi cambiare direzione. Che cosa dici?'
+        options:
+          - { text: Vai dritto., correct: true }
+          - {
+              text: Gira a destra.,
+              feedback: '*Gira* vuol dire cambiare direzione. Per continuare nella stessa direzione: *vai dritto*.',
+            }
+          - {
+              text: Gira a sinistra.,
+              feedback: '*Gira* vuol dire cambiare direzione. Per continuare nella stessa direzione: *vai dritto*.',
+            }
+      - id: unisci-espressioni
+        type: matching
+        prompt: Unisci ogni espressione al suo significato in ebraico.
+        pairs:
+          - [Vai dritto, לך ישר]
+          - [Gira a destra, פנה ימינה]
+          - [Gira a sinistra, פנה שמאלה]
+          - ["all'angolo", בפינה]
+          - [a pochi passi, במרחק כמה צעדים]
+      - id: completa-semaforo
+        type: fillBlank
+        prompt: Completa le indicazioni.
+        text: Vai ___ fino al semaforo. Al semaforo ___ a destra.
+        blanks: [[dritto, diritto], [gira]]
+        wordBank: [dritto, gira]
+      - id: sinistra-falso
+        type: trueFalse
+        prompt: '*Gira a sinistra* vuol dire: continua nella stessa direzione.'
+        answer: false
+        feedback:
+          correct: Giusto! *Gira a sinistra* vuol dire cambiare direzione. Per continuare diciamo *vai dritto*.
+          incorrect: '*Gira a sinistra* vuol dire cambiare direzione. Per continuare diciamo *vai dritto* o *continua*.'
+      - id: pochi-passi
+        type: multipleChoice
+        prompt: 'Il ristorante è molto vicino: è ___ dalla stazione.'
+        options:
+          - { text: a pochi passi, correct: true }
+          - {
+              text: "all'angolo",
+              feedback: "*All'angolo* è dove le strade si incrociano. Per dire che è vicino: *a pochi passi*.",
+            }
+          - {
+              text: sulla sinistra,
+              feedback: '*Sulla sinistra* dice la posizione, non la distanza. Per dire che è vicino: *a pochi passi*.',
+            }
+      - id: all-angolo
+        type: multipleChoice
+        prompt: Gira ___ a destra.
+        options:
+          - { text: "all'angolo", correct: true }
+          - { text: "a l'angolo", feedback: "*A* + *l'* diventa una parola sola: *all'angolo*." }
+          - {
+              text: al angolo,
+              feedback: "*Angolo* comincia con una vocale: *a* + *l'* = *all'angolo*.",
+            }
+      - id: ordina-semaforo
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Vai dritto fino al semaforo.
+      - id: fermata
+        type: shortAnswer
+        prompt: "Come arrivi da casa tua alla fermata dell'autobus? Scrivi due frasi."
+
+  - slug: servizi-essenziali-preposizioni
+    title: 'Preposizioni: in, a, su, da, accanto a'
+    minutes: 8
+    items:
+      - id: a-scuola
+        type: multipleChoice
+        prompt: Vado ___ scuola.
+        options:
+          - { text: a, correct: true }
+          - {
+              text: da,
+              feedback: '*Da* dice da dove vieni (*Vengo da Milano*). Per una destinazione: *Vado a scuola*.',
+            }
+          - {
+              text: su,
+              feedback: '*Su* vuol dire sopra qualcosa. Per una destinazione: *Vado a scuola*.',
+            }
+      - id: da-milano
+        type: multipleChoice
+        prompt: Vengo ___ Milano.
+        options:
+          - { text: da, correct: true }
+          - {
+              text: a,
+              feedback: '*A* è per una destinazione (*Vado a Roma*). Per dire da dove vieni: *Vengo da Milano*.',
+            }
+          - {
+              text: in,
+              feedback: '*In* vuol dire dentro un luogo. Per dire da dove vieni: *Vengo da Milano*.',
+            }
+      - id: sul-tavolo
+        type: multipleChoice
+        prompt: Il libro è ___ tavolo.
+        options:
+          - { text: sul, correct: true }
+          - { text: sulla, feedback: '*Tavolo* è maschile: *su* + *il* = *sul*.' }
+          - {
+              text: da,
+              feedback: '*Da* dice da dove vieni. Per dire «sopra»: *su* + *il* = *sul tavolo*.',
+            }
+      - id: al-alla
+        type: fillBlank
+        prompt: Completa con *al* o *alla*.
+        text: La farmacia è accanto ___ supermercato. Il parco è di fronte ___ stazione.
+        blanks: [[al], [alla]]
+        wordBank: [al, alla]
+      - id: tra-fra
+        type: trueFalse
+        prompt: '*Tra* e *fra* vogliono dire la stessa cosa.'
+        answer: true
+        feedback:
+          correct: 'Giusto! *La libreria è tra il cinema e il museo* = *fra il cinema e il museo*.'
+          incorrect: '*Tra* e *fra* sono uguali: *La libreria è tra / fra il cinema e il museo*.'
+      - id: unisci-posizione
+        type: matching
+        prompt: Unisci ogni parola al suo significato in ebraico.
+        pairs:
+          - [accanto a, ליד]
+          - [di fronte a, מול]
+          - [dietro, מאחורי]
+          - [tra, בין]
+          - [su, על]
+      - id: a-in
+        type: fillBlank
+        prompt: Completa con *a* o *in*.
+        text: Sono ___ Roma. Vivo ___ città.
+        blanks: [[a], [in]]
+        wordBank: [a, in]
+      - id: ordina-parcheggio
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Il parcheggio è dietro il ristorante.

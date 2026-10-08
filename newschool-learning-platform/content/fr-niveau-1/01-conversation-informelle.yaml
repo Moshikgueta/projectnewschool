@@ -1,0 +1,517 @@
+# Cycle "Conversation informelle", converted from the French digital notebook
+# ("Cahier digital 2026 – français niveau 1", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: conversation-informelle
+title: Conversation informelle
+goal: Bavarder en posant des questions et en faisant des phrases descriptives.
+position: 1
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Poser des questions" and "Phrases descriptives") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    IMPORTANT, summary rule for être: the notebook says "être → décrire quelque chose
+    de permanent", a rule carried over from Spanish (ser / estar). In French, être is
+    used for permanent AND temporary states (Je suis fatigué, Je suis à la maison). The
+    rule is rewritten as "être → dire qui on est, comment on est, où on est". The avoir
+    rule also mentions age (J'ai 30 ans), which French says with avoir; one exercise
+    item checks it. Please confirm.
+  - >-
+    The warm-up questions have no sentence frames in the notebook. Simple frames were
+    added (e.g. "Je m'appelle ___.", "J'habite à ___."). Please check or remove them.
+  - >-
+    Activity 3 ("Devine la question"): the answer "Je suis français." expected the
+    question "D'où tu viens ?"; it is changed to "Je viens de France." so the answer
+    fits the question. The answers and expected questions are in a teacher note only,
+    so students do not see them before the game.
+  - >-
+    Mori message: "s'il-te-plaît" → "s'il te plaît". The two extra Mori games each
+    have a second message to send later; each is a separate copyable message.
+  - >-
+    The Quizlet link had tracking parameters (?i=…&x=…); they were removed.
+  - >-
+    Vocabulary: "avoir – יש to have" (English left in) → "יש ל־ / להחזיק"; "soeur" →
+    "sœur", "frères et soeurs" → "frères et sœurs". "habiter – לגור" was ADDED, because
+    the cycle asks "Où tu habites ?" everywhere and the list only had "vivre – לחיות".
+    Please confirm.
+  - >-
+    Skill mapping (from the activity titles; the notebook gives no plan): Poser des
+    questions = Activities 1 and 3, Phrases descriptives = Activities 2 and 4. The
+    notebook gives no times, so no minutes are set.
+  - >-
+    The "Réponse de l'élève 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: conversation-informelle-classe
+    title: 'Classe : Conversation informelle'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Conversation informelle
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Poser des questions
+            description: 'Les mots interrogatifs : *qu’est-ce que, où, quand, pourquoi, comment*'
+          - name: Phrases descriptives
+            description: Décrire avec les verbes *être* et *avoir*
+      - id: quizlet
+        type: externalLink
+        label: Conversation informelle sur Quizlet
+        url: https://quizlet.com/il/1072618426/basic-french-2025-conversation-informelle-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. J’aime ___ (une chose). / J’aime ___ (un verbe à l’infinitif).
+        example: Je m’appelle Lévanah. J’aime les livres. J’aime lire.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Comment tu t’appelles ?
+            frame: Je m’appelle ___.
+          - question: Où tu travailles ?
+            frame: Je travaille à / dans ___.
+          - question: Qu’est-ce que tu aimes faire pendant ton temps libre ?
+            frame: Pendant mon temps libre, j’aime ___.
+          - question: Qu’est-ce que tu fais tous les jours ?
+            frame: Tous les jours, je ___.
+          - question: Quel est ton endroit préféré ? Pourquoi ?
+            frame: Mon endroit préféré est ___, parce que ___.
+          - question: Où tu habites ?
+            frame: J’habite à ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Simulation de la vie réelle, première rencontre'
+        skills: [Poser des questions]
+        steps:
+          - Écoute l’explication des questions de la banque.
+          - Travaillez en paires. Chaque paire choisit **5 questions** dans la banque.
+          - Pose les questions à ton / ta partenaire et réponds à ses questions.
+          - Présente les réponses de ton / ta partenaire à la classe, à la **3e personne du singulier** (il / elle).
+        example: |-
+          *Yosi est marié. Il a deux enfants. Il aime les chiens.*
+          *Dana aime danser. Elle a trois sœurs et un frère. Elle aime le hockey.*
+      - id: act1-questions
+        type: discussionQuestions
+        title: Banque de questions
+        items:
+          - question: Comment tu t’appelles ?
+          - question: Où tu habites ?
+          - question: Où tu travailles ?
+          - question: Tu es marié(e) ?
+          - question: Tu as des enfants ?
+          - question: Tu as des frères et sœurs ?
+          - question: Tu aimes les animaux ? Lesquels ?
+          - question: Tu aimes le sport ? Lequel ?
+          - question: Qu’est-ce que tu aimes faire ?
+          - question: Quand tu étudies le français ?
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Qui est-ce ?'
+        skills: [Phrases descriptives]
+        steps:
+          - Pense à **une personne importante pour toi** (famille, ami…) et complète les phrases ci-dessous.
+          - Travaillez en paires. L’élève A pose des questions à l’élève B sur la personne choisie.
+          - Échangez les rôles.
+          - En groupe, partage **un fait** que tu as appris sur la personne de ton / ta camarade.
+        example: |-
+          *Qui est-ce ?*
+          *Comment il / elle s’appelle ?*
+          *Où il / elle habite ?*
+          *Qu’est-ce qu’il / elle aime ?*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Complète les phrases
+        items:
+          - question: C’est mon / ma ___.
+          - question: Il / Elle s’appelle ___.
+          - question: Il / Elle habite à ___.
+          - question: Il / Elle travaille dans / à ___.
+          - question: Il / Elle aime ___.
+          - question: Il / Elle est marié(e) / célibataire / en couple.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Devine la question'
+        skills: [Poser des questions]
+        steps:
+          - Écoute la **réponse** que lit ton professeur.
+          - Trouve **la bonne question** pour cette réponse. Chaque bonne question = **1 point**.
+          - Si un élève se trompe, un autre élève peut essayer.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Devine qui c’est !'
+        skills: [Phrases descriptives]
+        steps:
+          - Un élève choisit une personnalité **sans dire qui c’est**.
+          - Un autre élève pose des questions (oui / non) avec *je suis*, *j’ai*… pour deviner de qui il s’agit.
+        example: |-
+          L’élève A pense à Lionel Messi.
+          L’élève B : *Je suis un homme ?* — Oui.
+          *Je suis célèbre ?* — Oui.
+          *Je joue au football ?* — Oui.
+          *Je joue pour mon pays ?* — Oui.
+          *Je suis Lionel Messi ?* — Oui !
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **Poser des questions** (activités 1 et 3) et
+          **Phrases descriptives** (activités 2 et 4).
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: Explique toutes les questions de la banque avant de former les paires. Chaque paire choisit 5 questions.
+      - id: n-act2
+        anchor: act2
+        text: À la fin, chaque élève partage avec le groupe un fait appris sur la personne choisie par son camarade.
+      - id: n-act3
+        anchor: act3
+        text: |-
+          Lis chaque réponse ; les élèves disent la bonne question (1 point par bonne question). Si un élève se trompe, un autre essaie.
+          1. Je m’appelle Yossi. → Comment tu t’appelles ?
+          2. Je viens de France. → D’où tu viens ?
+          3. J’aime voyager pour découvrir de nouveaux endroits. → Pourquoi tu aimes voyager ?
+          4. J’habite à Tel-Aviv. → Où tu habites ?
+          5. Je travaille à l’école New School. → Où tu travailles ?
+          6. J’étudie le français deux fois par semaine. → Combien de fois par semaine tu étudies le français ?
+          7. J’aime aller à la plage et lire. → Qu’est-ce que tu aimes faire ?
+          8. J’ai deux frères et une sœur. → Combien de frères et sœurs tu as ?
+          9. Mon plat préféré est la pizza. → Quel est ton plat préféré ?
+      - id: n-act4
+        anchor: act4
+        text: Les questions se posent à la 1re personne (*Je suis célèbre ?*), car l’élève cherche qui il est.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: conversation-informelle-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-questions
+        type: ruleSummary
+        skill: Poser des questions
+        rules:
+          - text: On utilise un mot interrogatif pour demander **une information précise** (pas seulement *oui* ou *non*).
+            examples: [D’où tu viens ?, Comment tu vas ?]
+          - text: '**Mot interrogatif + sujet + verbe** (français de tous les jours).'
+            examples: [Où tu habites ?, Comment tu t’appelles ?, Qu’est-ce que tu aimes faire ?]
+          - text: '**Mot interrogatif + verbe + sujet** (questions plus formelles).'
+            examples: [Où habites-tu ?, Comment t’appelles-tu ?, Qu’aimes-tu faire ?]
+          - text: Choisis le mot interrogatif dans le tableau.
+      - id: questions-table
+        type: table
+        caption: Les mots interrogatifs principaux
+        header: [Mot interrogatif, Utilisation, Exemple]
+        rows:
+          - [Qu’est-ce que, Choses, Qu’est-ce que tu fais ?]
+          - [Où, Lieux, Où tu habites ?]
+          - [Quand, Temps, Quand est ton anniversaire ?]
+          - [Pourquoi, Raison, Pourquoi tu apprends le français ?]
+          - [Comment, Manière / sentiment, Comment tu vas ?]
+      - id: rules-descriptive
+        type: ruleSummary
+        skill: Phrases descriptives
+        rules:
+          - text: Le verbe **être** sert à dire qui on est, comment on est et où on est.
+            examples: [Je suis heureux., Elle est gentille., Ils sont grands.]
+          - text: Le verbe **avoir** sert à parler de ce que l’on **possède**, et aussi de l’âge.
+            examples: [J’ai un frère., Elle a une voiture., Nous avons deux enfants., J’ai 30 ans.]
+      - id: etre-avoir-table
+        type: table
+        caption: Être et avoir au présent
+        header: [Personne, Être, Avoir]
+        rows:
+          - [je / j’, je suis, j’ai]
+          - [tu, tu es, tu as]
+          - [il / elle, il / elle est, il / elle a]
+          - [nous, nous sommes, nous avons]
+          - [vous, vous êtes, vous avez]
+          - [ils / elles, ils / elles sont, ils / elles ont]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: conversation-informelle-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie ce message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-conversation
+        type: aiTutorPrompt
+        title: Une conversation informelle
+        message: >-
+          Bonjour Mori ! Je veux discuter un peu. Peux-tu me poser des questions
+          informelles en utilisant les compétences « poser des questions » et « faire des
+          phrases descriptives » ? Utilise seulement le présent et, s’il te plaît, corrige
+          mes erreurs.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu mais en gardant la phrase en français ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-devine
+        type: aiTutorPrompt
+        title: Devine la personne
+        intro: Envoie ce message à Mori. Pense à quelqu’un de ta famille et réponds à ses questions.
+        message: >-
+          Salut Mori ! Jouons à un jeu. Je pense à quelqu’un de ma famille et tu dois
+          deviner qui c’est.
+      - id: mori-devine-2
+        type: aiTutorPrompt
+        intro: Quand Mori a deviné, envoie ce message.
+        message: >-
+          Maintenant à toi ! Pense à quelqu’un et je dois deviner qui c’est. Ça peut être
+          une personne célèbre.
+      - id: mori-verites
+        type: aiTutorPrompt
+        title: Deux vérités et un mensonge
+        intro: >-
+          Envoie ce message à Mori. Ensuite, écris trois phrases sur toi : deux vraies et
+          une fausse (par exemple : J’ai un frère. J’habite à Jérusalem. Je suis médecin.).
+          Mori doit deviner quelle phrase est le mensonge.
+        message: >-
+          Salut Mori ! Jouons à « Deux vérités et un mensonge ». Je vais te dire trois
+          choses sur moi et tu dois deviner laquelle est fausse.
+      - id: mori-verites-2
+        type: aiTutorPrompt
+        intro: Quand Mori a terminé, envoie ce message.
+        message: À toi maintenant ! Dis-moi deux vérités et un mensonge.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: conversation-informelle-pratique
+    book: workbook
+    title: 'Pratique : Conversation informelle'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-questions
+        type: activity
+        activity: conversation-informelle-questions
+      - id: ex-descriptions
+        type: activity
+        activity: conversation-informelle-descriptions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: conversation-informelle-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la conversation
+        glossLang: he
+        link: https://quizlet.com/il/1072618426/basic-french-2025-conversation-informelle-flash-cards/
+        items: &conversation-informelle-words
+          - { term: vivre, gloss: לחיות }
+          - { term: habiter, gloss: לגור }
+          - { term: travailler, gloss: לעבוד }
+          - { term: aimer / apprécier, gloss: לאהוב / לחבב }
+          - { term: faire, gloss: לעשות }
+          - { term: être, gloss: להיות }
+          - { term: avoir, gloss: יש ל־ / להחזיק }
+          - { term: lire, gloss: לקרוא }
+          - { term: danser, gloss: לרקוד }
+          - { term: voyager, gloss: לטייל / לנסוע }
+          - { term: aller, gloss: ללכת }
+          - { term: étudier, gloss: ללמוד }
+          - { term: poser une question, gloss: לשאול }
+          - { term: parler, gloss: לדבר }
+          - { term: dire, gloss: לומר }
+          - { term: deviner, gloss: לנחש }
+          - { term: prénom, gloss: שם פרטי }
+          - { term: marié, gloss: נשוי }
+          - { term: célibataire, gloss: רווק }
+          - { term: en couple, gloss: במערכת יחסים }
+          - { term: enfants, gloss: ילדים }
+          - { term: frères et sœurs, gloss: אחים ואחיות }
+          - { term: frère, gloss: אח }
+          - { term: sœur, gloss: אחות }
+          - { term: ami, gloss: חבר }
+          - { term: personne, gloss: אדם }
+          - { term: lieu / endroit, gloss: מקום }
+          - { term: loisir, gloss: תחביב }
+          - { term: sport, gloss: ספורט }
+          - { term: animaux, gloss: בעלי חיים }
+          - { term: temps libre, gloss: זמן פנוי }
+          - { term: tous les jours, gloss: כל יום }
+          - { term: où, gloss: איפה }
+          - { term: qu’est-ce que / que, gloss: מה }
+          - { term: quand, gloss: מתי }
+          - { term: pourquoi, gloss: למה }
+          - { term: comment, gloss: איך }
+
+vocabulary:
+  - slug: conversation-informelle
+    title: Conversation informelle
+    items: *conversation-informelle-words
+
+activities:
+  - slug: conversation-informelle-questions
+    title: 'Poser des questions : où, quand, pourquoi, comment'
+    minutes: 8
+    items:
+      - id: ou-habites
+        type: multipleChoice
+        prompt: ___ tu habites ? — J’habite à Tel-Aviv.
+        options:
+          - { text: Où, correct: true }
+          - { text: Quand, feedback: '*Quand* demande le temps. Pour un lieu, on dit *où*.' }
+          - { text: Pourquoi, feedback: '*Pourquoi* demande la raison. Pour un lieu, on dit *où*.' }
+      - id: comment-vas
+        type: multipleChoice
+        prompt: ___ tu vas ? — Je vais bien, merci.
+        options:
+          - { text: Comment, correct: true }
+          - { text: Où, feedback: '*Où* demande un lieu. Pour un sentiment, on dit *comment*.' }
+          - {
+              text: Quand,
+              feedback: '*Quand* demande le temps. Pour un sentiment, on dit *comment*.',
+            }
+      - id: quand-anniversaire
+        type: multipleChoice
+        prompt: ___ est ton anniversaire ? — Le 9 février.
+        options:
+          - { text: Quand, correct: true }
+          - {
+              text: Comment,
+              feedback: 'La réponse est une date : on demande le temps avec *quand*.',
+            }
+          - { text: Où, feedback: 'La réponse est une date, pas un lieu : on dit *quand*.' }
+      - id: mots-interrogatifs
+        type: matching
+        prompt: Associe chaque mot interrogatif à son utilisation.
+        pairs:
+          - [Qu’est-ce que, choses]
+          - [Où, lieux]
+          - [Quand, temps]
+          - [Pourquoi, raison]
+          - [Comment, manière / sentiment]
+      - id: pourquoi-francais
+        type: fillBlank
+        prompt: Complète la question avec le bon mot interrogatif.
+        text: ___ tu apprends le français ? — Parce que j’aime la France.
+        blanks: [[Pourquoi]]
+      - id: deux-structures
+        type: trueFalse
+        prompt: '« Où tu habites ? » et « Où habites-tu ? » sont deux questions correctes.'
+        answer: true
+        feedback:
+          correct: 'Oui ! *Où tu habites ?* est la forme de tous les jours, *Où habites-tu ?* est plus formelle.'
+          incorrect: 'Les deux sont correctes : mot interrogatif + sujet + verbe, ou mot interrogatif + verbe + sujet (plus formel).'
+      - id: ordre-aimes
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre pour faire une question.
+        sentence: Qu’est-ce que tu aimes faire ?
+      - id: plus-formelle
+        type: multipleChoice
+        prompt: Quelle question est la plus formelle ?
+        options:
+          - { text: Comment t’appelles-tu ?, correct: true }
+          - {
+              text: Comment tu t’appelles ?,
+              feedback: 'Mot interrogatif + sujet + verbe : c’est la forme de tous les jours. La forme formelle met le verbe avant le sujet.',
+            }
+
+  - slug: conversation-informelle-descriptions
+    title: 'Phrases descriptives : être et avoir'
+    minutes: 8
+    items:
+      - id: elle-est
+        type: multipleChoice
+        prompt: Elle ___ gentille.
+        options:
+          - { text: est, correct: true }
+          - { text: a, feedback: 'Pour décrire une personne, on utilise *être* : elle *est*.' }
+          - { text: es, feedback: '*Es* va avec *tu* (tu es). Avec *elle*, on dit *est*.' }
+      - id: nous-avons
+        type: multipleChoice
+        prompt: Nous ___ deux enfants.
+        options:
+          - { text: avons, correct: true }
+          - {
+              text: sommes,
+              feedback: 'Pour parler de ce que l’on possède, on utilise *avoir* : nous *avons*.',
+            }
+          - { text: avez, feedback: '*Avez* va avec *vous*. Avec *nous*, on dit *avons*.' }
+      - id: suis-as
+        type: fillBlank
+        prompt: Complète avec *être* ou *avoir* au présent.
+        text: Je ___ heureux. Tu ___ un frère ?
+        blanks: [[suis], [as]]
+      - id: etre-personnes
+        type: matching
+        prompt: Associe chaque personne à la forme du verbe *être*.
+        pairs:
+          - [je, suis]
+          - [tu, es]
+          - [il / elle, est]
+          - [nous, sommes]
+          - [ils / elles, sont]
+      - id: sont-avez
+        type: fillBlank
+        prompt: Complète avec *être* ou *avoir* au présent.
+        text: Ils ___ grands. Vous ___ une voiture.
+        blanks: [[sont], [avez]]
+      - id: avoir-posseder
+        type: trueFalse
+        prompt: 'Pour parler de ce que l’on possède, on utilise le verbe *avoir* : J’ai un frère.'
+        answer: true
+        feedback:
+          correct: Oui ! *Avoir* = ce que l’on possède.
+          incorrect: 'On utilise *avoir* pour ce que l’on possède : j’ai, tu as, il a…'
+      - id: ordre-voiture
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Elle a une voiture.
+      - id: age-avoir
+        type: trueFalse
+        prompt: On dit « Je suis 30 ans. »
+        answer: false
+        feedback:
+          correct: 'Bravo ! Pour l’âge, on utilise *avoir* : J’ai 30 ans.'
+          incorrect: 'En français, l’âge se dit avec *avoir* : J’ai 30 ans.'

@@ -1,0 +1,559 @@
+# Cycle "Lasst uns treffen!", converted from the German Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: lasst-uns-treffen
+title: Lasst uns treffen!
+goal: Ein Treffen planen, mit Wochentagen, Daten und den Präpositionen am, um und in.
+position: 6
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Wochentage und Daten" and "Präpositionen") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and every
+    right answer before students see them.
+  - >-
+    Skill names: the notebook names them "Wochentage & Zeiten" / "Daten und Zahlen" and
+    "Grundlegende Präpositionen (am / um / in)". Here: "Wochentage und Daten" and
+    "Präpositionen: am, um, in".
+  - >-
+    The summary is written in Hebrew in the notebook. The rules are given here as short
+    German ruleSummary blocks and tables; the memory trick ("טריק לזכירה מהירה") is kept
+    as a Hebrew (lang he) text block. Please check the German wording.
+  - >-
+    Ordinal numbers: the rule "after 3, most ordinals end in -te" is made precise: 1–19
+    take -te (with erste, dritte, siebte, achte as special forms), from 20 on -ste
+    (zwanzigste). Added: in a date you say "am" + ordinal + -en (am zwölften März,
+    written am 12. März). Please confirm this is not too much for A1.
+  - >-
+    Activity 1: "Kannst du dich am ___ um ___ im / in / auf ___ treffen?" is unidiomatic.
+    Rewritten as "Können wir uns am ___ um ___ im / in der ___ treffen?" (example: "Können
+    wir uns am Freitag um 15 Uhr in der Bibliothek treffen?"). The "auf" option was
+    dropped from the frame because no meeting place in the activity takes it.
+  - >-
+    Activity 4: "Am Samstag treffe ich meine Freunde, wir Spaß haben" → "…, weil wir Spaß
+    haben". A teacher note says that after "weil" the verb goes to the end (it is not
+    in the summary).
+  - >-
+    Activity 2 uses a worksheet "Mein Tag" that the teacher shows; the notebook has no
+    link to it. The sentence frames and the word bank are in the activity; the teacher
+    shares the worksheet on screen if they have it.
+  - >-
+    Mori messages were in English in the notebook; they are translated into German
+    (like the Spanish and English courses, which write them in the course language). The
+    places in Mori activity 2 (bank, supermarket, café, gym, mall) are given in German.
+  - >-
+    Vocabulary: nouns now have their article (der Montag, der Morgen, die Uhr, der
+    Spaß). "Sonntag – יום ראשון" is correct and kept. Please confirm.
+  - The Quizlet link lost its tracking parameter (?new).
+  - Activity times given as ranges (15–20 minutes) are recorded as 20; Activity 4 (10–15) as 15.
+  - >-
+    The "Antwort von Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: lasst-uns-treffen-unterricht
+    title: 'Unterricht: Lasst uns treffen!'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lasst uns treffen!
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Wochentage und Daten
+            description: Montag bis Sonntag, Ordnungszahlen im Datum (*am 12. März*)
+          - name: 'Präpositionen: am, um, in'
+            description: '*am Montag, um 15 Uhr, im Café, in der Bibliothek*'
+      - id: quizlet
+        type: externalLink
+        label: Lasst uns treffen! auf Quizlet
+        url: https://quizlet.com/br/1113971274/%D7%91%D7%95%D7%90%D7%95-%D7%A0%D7%99%D7%A4%D7%92%D7%A9-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Ich lerne Deutsch ___ Mal pro Woche, am ___.
+        example: Ich bin Anna. Ich lerne Deutsch zwei Mal pro Woche, am Montag und am Donnerstag.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Was ist dein Lieblingstag der Woche?
+            frame: Mein Lieblingstag ist ___, weil ___.
+          - question: Welchen Tag magst du nicht? Warum?
+            frame: Ich mag ___ nicht, weil ___.
+          - question: Wie viele Tage pro Woche lernst du Deutsch? Welche?
+            frame: Ich lerne Deutsch ___ Mal pro Woche, am ___ und am ___.
+          - question: Wann hast du Geburtstag?
+            frame: Mein Geburtstag ist am ___.
+          - question: Wo triffst du deine Freunde?
+            frame: Ich treffe meine Freunde im / in der / auf dem ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Lasst uns treffen!'
+        skills: [Wochentage und Daten, 'Präpositionen: am, um, in']
+        minutes: 20
+        steps:
+          - 'Arbeitet zu zweit. Schlag ein Treffen vor: Tag, Uhrzeit und Ort.'
+          - Dein Partner / Deine Partnerin sagt *Nein* und schlägt einen anderen Tag, eine andere Uhrzeit und einen anderen Ort vor.
+          - Dann sagt jeder der Klasse, wann und wo ihr euch trefft.
+        example: |-
+          **A:** Können wir uns **am Freitag um 15 Uhr in der Bibliothek** treffen?
+          **B:** Nein, aber **am Samstag um 16 Uhr im Café**.
+          **A:** Super! Bis Samstag!
+          **B:** Bis dann!
+      - id: act1-frames
+        type: discussionQuestions
+        title: Unser Treffen
+        items:
+          - question: Können wir uns am ___ um ___ im / in der ___ treffen?
+          - question: Nein, aber am ___ um ___ im / in der ___.
+          - question: Wir treffen uns am ___ um ___ im / in der ___.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Mein Tag'
+        skills: ['Präpositionen: am, um, in']
+        minutes: 20
+        steps:
+          - Schau dir das Arbeitsblatt „Mein Tag“ an.
+          - Ergänze die Sätze unten mit Verben aus der Wortbank.
+          - Lies deine Sätze der Klasse vor.
+        wordBank: [aufwachen, arbeiten, lernen, essen, fahren, Freunde treffen, trainieren]
+        example: |-
+          *Ich wache **am** Morgen auf.*
+          *Ich arbeite **um** 13 Uhr.*
+          *Ich treffe **am** Abend Freunde.*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Mein Tag
+        items:
+          - question: Ich ___ am Morgen.
+          - question: Ich ___ um 13 Uhr.
+          - question: Ich ___ am Abend.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Meine perfekte Woche'
+        skills: [Wochentage und Daten, 'Präpositionen: am, um, in']
+        minutes: 20
+        steps:
+          - Schreib 3 Sätze über deine perfekte Woche. Beginne jeden Satz mit *Am* + Tag.
+          - Lies deine Sätze der Klasse vor.
+        example: |-
+          *Am Montag lerne ich Deutsch.*
+          *Am Mittwoch treffe ich meine Freunde.*
+          *Am Samstag spiele ich Fußball.*
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Meine perfekte Woche
+        items:
+          - question: Am ___ gehe ich ___.
+          - question: Am ___ lerne ich ___.
+          - question: Am ___ treffe ich ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Wen triffst du?'
+        skills: [Wochentage und Daten]
+        minutes: 15
+        steps:
+          - 'Dein Lehrer sagt einen Tag. Sag einen Satz: *Am [Tag] treffe ich [Person], weil ___.* Immer mit *am*, *treffe ich* und einem Grund.'
+          - 'Fragen und Antworten: *Wen triffst du am Freitag?* – *Am Freitag treffe ich meine Eltern, weil wir zusammen essen.*'
+          - 'Verneinung mit *nicht*: *Am Montag treffe ich meine Freunde nicht, weil ich arbeite.*'
+          - 'Partnerarbeit: A fragt, B antwortet, dann wechselt ihr die Rollen. Mindestens 3 Tage, 3 Personen, 3 Gründe.'
+          - Schreib drei Sätze (unten).
+          - 'Spiel „Rate den Tag“: Sag deinen Satz ohne den Tag. Die Klasse rät: *Am Montag? Am Dienstag?* Du antwortest *Ja!* oder *Nein!*'
+        wordBank:
+          - meine Mutter
+          - mein Vater
+          - meine Eltern
+          - meine Familie
+          - mein Freund
+          - meine Freundin
+          - meine Freunde
+          - mein Lehrer
+          - meine Kollegen
+          - weil wir lernen
+          - weil wir arbeiten
+          - weil wir essen
+          - weil wir spielen
+          - weil wir einkaufen
+          - weil wir trainieren
+          - weil wir Spaß haben
+          - weil wir zu Hause sind
+        example: |-
+          *Am Montag treffe ich meine Freundin, weil wir lernen.*
+          *Am Dienstag treffe ich meinen Freund, weil wir Fußball spielen.*
+          *Am Mittwoch treffe ich meine Schwester, weil wir einkaufen.*
+          *Am Donnerstag treffe ich meine Kollegen, weil wir arbeiten.*
+          *Am Freitag treffe ich meine Eltern, weil wir zusammen essen.*
+          *Am Samstag treffe ich meine Freunde, weil wir Spaß haben.*
+          *Am Sonntag treffe ich meine Familie, weil wir zu Hause sind.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Wen triffst du?
+        items:
+          - question: Am ___ treffe ich ___, weil ___.
+          - question: Am ___ treffe ich ___, weil ___.
+          - question: Am ___ treffe ich ___, weil ___.
+      - id: act4-summary
+        type: callout
+        tone: info
+        title: Mini-Zusammenfassung
+        text: |-
+          **am** → vor dem Tag
+          **treffe ich** → das Verb an Position 2
+          **weil** → gibt den Grund
+          Ich kann sprechen, fragen, verneinen und schreiben.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fähigkeiten in diesem Zyklus: **Wochentage und Daten** (Aktivitäten 1, 3
+          und 4) und **Präpositionen am, um, in** (Aktivitäten 1, 2 und 3).
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Gib zuerst dein eigenes Beispiel und frag dann jeden Schüler.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Stelle jedem Schüler mindestens zwei Fragen. Die getippten Antworten siehst du unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: 'Fokus: Tag + Uhrzeit + Ort (am / um / in). Am Ende sagt jeder Schüler: „Wir treffen uns am ___ um ___ im ___.“'
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Zeig das Arbeitsblatt „Mein Tag“ am Bildschirm, wenn du es hast (es ist noch
+          nicht auf der Plattform). Achtung bei *aufwachen*: Ich wache am Morgen **auf**.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Nach *weil* steht das Verb am Ende (*weil wir zusammen essen*). Das steht nicht in
+          der Zusammenfassung: Modelliere es nur, ohne Grammatik zu erklären.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: lasst-uns-treffen-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Das haben wir heute gelernt
+      - id: rules-days
+        type: ruleSummary
+        skill: Wochentage und Daten
+        rules:
+          - text: 'Die Wochentage: Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag.'
+          - text: Im Datum benutzt man die **Ordnungszahl** (der erste, der zweite…).
+          - text: 'Von 1 bis 19 enden die Ordnungszahlen auf **-te**, ab 20 auf **-ste**. Besondere Formen: erste, dritte, siebte, achte.'
+            examples: [der vierte, der fünfte, der zwölfte, der zwanzigste]
+          - text: 'Nach **am** bekommt die Ordnungszahl ein **-n**: *am zwölften März*. So schreibt man es: *am 12. März*.'
+            examples: [Mein Geburtstag ist am 12. März.]
+      - id: ordinals-table
+        type: table
+        caption: Ordnungszahlen
+        header: [Zahl, Ordnungszahl, Im Datum]
+        rows:
+          - ['1.', der erste, am ersten]
+          - ['2.', der zweite, am zweiten]
+          - ['3.', der dritte, am dritten]
+          - ['4.', der vierte, am vierten]
+          - ['5.', der fünfte, am fünften]
+          - ['7.', der siebte, am siebten]
+          - ['12.', der zwölfte, am zwölften]
+          - ['20.', der zwanzigste, am zwanzigsten]
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: 'Präpositionen: am, um, in'
+        rules:
+          - text: '**Zeit:** **im** für lange Zeiten (Monate, Jahreszeiten), **am** für Tage, **um** für eine genaue Uhrzeit.'
+            examples:
+              - im Juli, im Sommer, im Winter
+              - am Montag, am Wochenende, am 1. Januar
+              - um 3 Uhr, um Mitternacht
+          - text: '**Ort:** **in** = in einem Raum oder einem großen Ort; **an** = an einer Grenze, an einer Wand; **auf** = auf einer Fläche.'
+            examples:
+              - in der Stadt, in der Küche, im Park
+              - an der Haltestelle, an der Wand
+              - auf dem Tisch, auf dem Balkon
+      - id: prepositions-table
+        type: table
+        caption: Wann? Wo?
+        header: [Präposition, Zeit, Ort]
+        rows:
+          - [im / in, 'im Juli, im Sommer', 'in der Stadt, im Park']
+          - [am / an, 'am Montag, am 1. Januar', 'an der Haltestelle, an der Wand']
+          - [um, 'um 3 Uhr, um Mitternacht', '–']
+          - [auf, '–', 'auf dem Tisch, auf dem Balkon']
+      - id: trick-he
+        type: text
+        lang: he
+        text: |-
+          **טריק לזכירה מהירה**
+          **im / in** → שטחים גדולים / זמנים ארוכים
+          **am / an** → ימים מסוימים / נקודות מגע
+          **um** → שעה מדויקת
+          **auf** → על משטח
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Wiederhole die beiden Fähigkeiten mit der Gruppe. Jeder Schüler sagt sein Geburtsdatum (*Mein Geburtstag ist am …*).
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: lasst-uns-treffen-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-treffen
+        type: aiTutorPrompt
+        title: Ein Treffen planen
+        message: >-
+          Hallo Mori! Ich möchte ein Treffen planen. Kannst du mir kurze Fragen mit den
+          Fähigkeiten Wochentage und Daten und Präpositionen der Zeit und des Ortes stellen?
+          Bitte benutze nur das Präsens und korrigiere meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Möchtest du mehr Fragen? Schick: **Bitte frag mich mehr!**
+          Verstehst du eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra-Übung
+      - id: mori-woche
+        type: aiTutorPrompt
+        title: Meine Woche
+        intro: Antworte in ganzen Sätzen im Präsens, mit Tagen, Uhrzeiten und Präpositionen der Zeit und des Ortes.
+        message: Hallo Mori! Ich möchte dir von meiner Woche erzählen. Kannst du mich nach meiner Routine an jedem Tag fragen?
+      - id: mori-oeffnungszeiten
+        type: aiTutorPrompt
+        title: Wann öffnet es, wann schließt es?
+        message: >-
+          Hallo Mori! Bitte frag mich nach verschiedenen Orten in der Stadt: Um wie viel
+          Uhr öffnen sie, um wie viel Uhr schließen sie, und wann gehe ich dorthin? Orte:
+          die Bank, der Supermarkt, das Café, das Fitnessstudio, das Einkaufszentrum.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: lasst-uns-treffen-uebung
+    book: workbook
+    title: 'Übung: Lasst uns treffen!'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fähigkeiten des Zyklus allein. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-wochentage
+        type: activity
+        activity: lasst-uns-treffen-wochentage
+      - id: ex-praepositionen
+        type: activity
+        activity: lasst-uns-treffen-praepositionen
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: lasst-uns-treffen-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für ein Treffen
+        glossLang: he
+        link: https://quizlet.com/br/1113971274/%D7%91%D7%95%D7%90%D7%95-%D7%A0%D7%99%D7%A4%D7%92%D7%A9-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &lasst-uns-treffen-words
+          - { term: der Montag, gloss: יום שני }
+          - { term: der Dienstag, gloss: יום שלישי }
+          - { term: der Mittwoch, gloss: יום רביעי }
+          - { term: der Donnerstag, gloss: יום חמישי }
+          - { term: der Freitag, gloss: יום שישי }
+          - { term: der Samstag, gloss: שבת }
+          - { term: der Sonntag, gloss: יום ראשון }
+          - { term: am, gloss: ב־ (לפני יום) }
+          - { term: um, gloss: ב־ (לפני שעה מדויקת) }
+          - { term: im, gloss: ב־ (בתוך זמן ארוך / מקום) }
+          - { term: der Morgen, gloss: בוקר }
+          - { term: der Abend, gloss: ערב }
+          - { term: die Uhr, gloss: שעה }
+          - { term: lernen, gloss: ללמוד }
+          - { term: arbeiten, gloss: לעבוד }
+          - { term: essen, gloss: לאכול }
+          - { term: gehen, gloss: ללכת }
+          - { term: treffen, gloss: לפגוש }
+          - { term: spielen, gloss: לשחק }
+          - { term: fahren, gloss: לנסוע }
+          - { term: meine Mutter, gloss: אמא שלי }
+          - { term: mein Vater, gloss: אבא שלי }
+          - { term: meine Eltern, gloss: ההורים שלי }
+          - { term: mein Freund, gloss: חבר שלי }
+          - { term: meine Freundin, gloss: חברה שלי }
+          - { term: meine Freunde, gloss: החברים שלי }
+          - { term: wann, gloss: מתי }
+          - { term: wo, gloss: איפה }
+          - { term: wen, gloss: את מי }
+          - { term: weil, gloss: כי / בגלל ש־ }
+          - { term: nicht, gloss: לא }
+          - { term: zusammen, gloss: ביחד }
+          - { term: zu Hause, gloss: בבית }
+          - { term: der Spaß, gloss: כיף / הנאה }
+
+vocabulary:
+  - slug: lasst-uns-treffen
+    title: Lasst uns treffen!
+    items: *lasst-uns-treffen-words
+
+activities:
+  - slug: lasst-uns-treffen-wochentage
+    title: Wochentage und Daten
+    minutes: 8
+    items:
+      - id: wochentage
+        type: fillBlank
+        prompt: Ergänze die Wochentage.
+        text: Montag, Dienstag, ___, Donnerstag, Freitag, ___, Sonntag
+        blanks: [[Mittwoch], [Samstag, Sonnabend]]
+      - id: nach-freitag
+        type: fillBlank
+        prompt: Welcher Tag kommt nach Freitag?
+        text: Nach Freitag kommt ___.
+        blanks: [[Samstag, Sonnabend]]
+      - id: wochenende
+        type: multipleChoice
+        prompt: Welcher Tag ist am Wochenende?
+        options:
+          - { text: Sonntag, correct: true }
+          - {
+              text: Montag,
+              feedback: 'Das Wochenende ist Samstag und Sonntag. Montag ist ein Arbeitstag.',
+            }
+          - {
+              text: Mittwoch,
+              feedback: 'Das Wochenende ist Samstag und Sonntag. Mittwoch ist in der Mitte der Woche.',
+            }
+      - id: ordnungszahlen
+        type: matching
+        prompt: Verbinde die Zahl mit der Ordnungszahl.
+        pairs:
+          - ['1.', der erste]
+          - ['3.', der dritte]
+          - ['5.', der fünfte]
+          - ['7.', der siebte]
+          - ['12.', der zwölfte]
+      - id: der-dritte
+        type: multipleChoice
+        prompt: 'Der 3. Mai ist der ___ Mai.'
+        options:
+          - { text: dritte, correct: true }
+          - { text: dreite, feedback: '3 hat eine besondere Form: *der dritte*.' }
+          - { text: drei, feedback: 'Im Datum benutzt man die Ordnungszahl: *der dritte Mai*.' }
+      - id: auf-te
+        type: trueFalse
+        prompt: 'Von 4 bis 19 enden die Ordnungszahlen meistens auf *-te*: *der vierte, der fünfte, der sechste*.'
+        answer: true
+        feedback:
+          correct: Richtig! Ab 20 enden sie auf *-ste*, zum Beispiel *der zwanzigste*.
+          incorrect: 'Doch: *der vierte, der fünfte, der sechste*: Sie enden auf *-te*.'
+      - id: geburtstag-am
+        type: multipleChoice
+        prompt: Mein Geburtstag ist ___ 12. März.
+        options:
+          - { text: am, correct: true }
+          - { text: um, feedback: '*um* steht vor einer Uhrzeit. Vor einem Datum steht *am*.' }
+          - {
+              text: im,
+              feedback: '*im* steht vor einem Monat ohne Tag (*im März*). Mit Tag: *am 12. März*.',
+            }
+      - id: ordne-geburtstag
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einer Frage.
+        sentence: Wann hast du Geburtstag?
+
+  - slug: lasst-uns-treffen-praepositionen
+    title: 'Präpositionen: am, um, im, an, auf'
+    minutes: 8
+    items:
+      - id: um-uhr
+        type: multipleChoice
+        prompt: Wir treffen uns ___ 15 Uhr.
+        options:
+          - { text: um, correct: true }
+          - {
+              text: am,
+              feedback: '*am* steht vor einem Tag. Vor einer genauen Uhrzeit steht *um*.',
+            }
+          - {
+              text: im,
+              feedback: '*im* ist für lange Zeiten (*im Juli*). Vor einer Uhrzeit steht *um*.',
+            }
+      - id: im-sommer
+        type: multipleChoice
+        prompt: ___ Sommer spiele ich Fußball.
+        options:
+          - { text: Im, correct: true }
+          - { text: Am, feedback: '*am* ist für Tage. Für eine lange Zeit wie den Sommer: *im*.' }
+          - { text: Um, feedback: '*um* ist für eine genaue Uhrzeit. Für den Sommer: *im*.' }
+      - id: treffen-am-um-im
+        type: fillBlank
+        prompt: Ergänze mit *am*, *um* oder *im*.
+        text: Wir treffen uns ___ Samstag ___ 16 Uhr ___ Café.
+        blanks: [[am], [um], [im]]
+        wordBank: [am, um, im]
+      - id: zeit-ort
+        type: matching
+        prompt: Wann benutzt man das? Verbinde.
+        pairs:
+          - [am Montag, ein Tag]
+          - [um 8 Uhr, eine genaue Uhrzeit]
+          - [im Juli, eine lange Zeit]
+          - [auf dem Tisch, auf einer Fläche]
+      - id: auf-tisch
+        type: multipleChoice
+        prompt: Das Buch liegt ___ dem Tisch.
+        options:
+          - { text: auf, correct: true }
+          - {
+              text: an,
+              feedback: '*an* ist für eine Grenze oder eine Wand (*an der Wand*). Auf einer Fläche: *auf*.',
+            }
+          - { text: um, feedback: '*um* ist für eine Uhrzeit. Auf einer Fläche: *auf dem Tisch*.' }
+      - id: um-montag
+        type: trueFalse
+        prompt: 'Dieser Satz ist richtig: *Ich lerne um Montag Deutsch.*'
+        answer: false
+        feedback:
+          correct: 'Richtig! Vor einem Tag steht *am*: *Ich lerne am Montag Deutsch.*'
+          incorrect: 'Vor einem Tag steht *am*, nicht *um*: *Ich lerne am Montag Deutsch.*'
+      - id: an-im
+        type: fillBlank
+        prompt: Ergänze mit *an* oder *im*.
+        text: Ich stehe ___ der Haltestelle. Wir spielen ___ Park Fußball.
+        blanks: [[an], [im]]
+        wordBank: [an, im]
+      - id: ordne-wen
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einer Frage.
+        sentence: Wen triffst du am Freitag?

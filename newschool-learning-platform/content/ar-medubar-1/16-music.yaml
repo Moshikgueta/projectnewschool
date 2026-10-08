@@ -1,0 +1,512 @@
+# Cycle "מוזיקה", converted from the spoken Arabic level 1 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew letters).
+course: ar-medubar-1
+slug: music
+title: "מוזיקה · מוסיק'א"
+goal: לשאול שאלות על מוזיקה ולספר מה עושים בהווה.
+position: 16
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Questions" and "Present-tense actions") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's activities,
+    its Mori examples and its vocabulary. An Arabic teacher must check every right
+    answer, every distractor and every transliteration before students see them.
+  - >-
+    The notebook has no grammar summary for this cycle, so there is no summary section.
+    Please consider adding one (question words + present-tense verbs).
+  - >-
+    The notebook says skill 1 (questions) is practised in Activities 1 and 3 and skill 2
+    (present tense) in Activities 2 and 4, but there is no Activity 4 and Activity 2
+    ("guess the question") practises questions. The skill tags here follow what each
+    activity actually does; please confirm.
+  - >-
+    Typos fixed: Mori step 5 example "אנא ببسم למא בסמע אלשיר" had Arabic letters; it is
+    written "אנא בַּתְבַּסָּם למא בסמע אלשיר", as in the vocabulary ("בַּתְבַּסָּם – מחייך").
+    Mori step 6 "פםתשרח לי בעברית" → "תשרח לי בעברית" (the letters "פם" look like a
+    typo; perhaps "פיך תשרח לי" was meant). Vocabulary "\\" separators → "/".
+  - >-
+    Inconsistent spellings kept as in the notebook: מוסיקה / מוסיק'א; "צחבי" (Activity
+    2) vs "ס'אחב" (vocabulary); "ברקד" (Mori examples) vs "בַּרק'וס'" (vocabulary) for
+    "dance"; "בחב" / "בּחיב" / "בֶּתְחֶיב"; "אימתה" (Mori step 4) vs "וינתא" (vocabulary)
+    for "when". The exercises use the vocabulary spellings.
+  - >-
+    Opening frame "אנא בסמע מוסיקה כל יום / ___מֶשׁ דאימָן!" kept as written; the blank
+    before "מֶשׁ דאימָן" (not always) is unclear. Warm-up question 5 ("שו בֶּתְפַד'ל
+    מוסיק'א ולא פודקאסט וליש") may need rewording.
+  - >-
+    Activity 3 song links: the tracking parameters (?si=…, &pi=…) were removed. The
+    notebook gives no song titles; the links are labelled "שיר 1/2/3". No lyrics are
+    copied. Please check the songs suit the level.
+  - >-
+    The empty answer lines of the warm-up questions are replaced by the optional answer
+    boxes (decision C2).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: music-class
+    title: 'שיעור: מוזיקה'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: מוזיקה
+      - id: skills
+        type: cycleOverview
+        lang: he
+        skills:
+          - name: בניית שאלות
+            description: שו, וֵין, וינתא, מין, ק'דיש, ליש
+          - name: פעולות בהווה
+            description: בַּסְמַע, בַּרַ׳נּי, בַּרק'וס', בַּתְבַּסָּם, בפכר…
+      - id: quizlet
+        type: externalLink
+        lang: he
+        label: מוזיקה ב-Quizlet
+        url: https://quizlet.com/il/1126371024/%D7%9E%D7%95%D7%96%D7%99%D7%A7%D7%94-%D7%9E%D7%95%D7%A1%D7%99%D7%A7%D7%90-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        lang: he
+        text: סבב פתיחה
+      - id: intro
+        type: sentenceFrame
+        frame: |-
+          אנא ___.
+          אנא בסמע מוסיקה כל יום / ___מֶשׁ דאימָן!
+        example: |-
+          אנא אינאס.
+          אנא בסמע מוסיק'א כל יום.
+      - id: warmup-title
+        type: heading
+        level: 3
+        lang: he
+        text: שאלות חימום
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: שו אלאור׳נֶיֶה אלמופַד'לֶּה עֶנְדָכְּ?
+            frame: אַחְלָא אור'נֶיֶּה ענדִי ___
+          - question: וֵין בתסמע מוסיק'א?
+            frame: אנא בסמע מוסיק'א פי ___
+          - question: וינתא בֶּתְחֶיב תֶסְמַע מוסיק'א?
+            frame: בּחיב אסמַע מוסיק'א לַמָּא ___
+          - question: בֶּשַׁכֶּל עאם, בֶּתְפַד'ֶל אלמוסיק'א אלג'דידֶה או אלק'דימֶה? ו ליש?
+          - question: שו בֶּתְפַד'ל מוסיק'א ולא פודקאסט וליש?
+            frame: אנא בפדל ___ לאנו ___
+          - question: פי אור'ניֶּה בֶּתְזַכְּרַכְּ (מזכירה לך) ב חדא או בֶּ פַתְרָה?
+      - id: activities-title
+        type: heading
+        level: 3
+        lang: he
+        text: פעילויות
+      - id: act1
+        type: classActivity
+        lang: he
+        title: 'פעילות 1: המוזיקה שלי'
+        skills: [בניית שאלות, פעולות בהווה]
+        steps:
+          - כל תלמיד עובד לבד ועונה על השאלות שלמטה בתשובה ישירה וקצרה.
+          - משתפים את התשובות עם הקבוצה.
+      - id: act1-questions
+        type: discussionQuestions
+        items:
+          - question: שו נוע מוסיקה בתחב?
+          - question: וינתא בתסמע מוסיק'א?
+          - question: וֵין בתסמע מוסיק'א?
+          - question: ק'דיש בתסמע מוסיק'א?
+          - question: שו בתעמַל למָּא תסמע מוסיק'א?
+      - id: act2
+        type: classActivity
+        lang: he
+        title: 'פעילות 2: נחש את השאלה'
+        skills: [בניית שאלות]
+        steps:
+          - המורה מקריא תשובה.
+          - מנחשים מה הייתה השאלה ואומרים אותה בערבית מדוברת.
+      - id: act2-answers-title
+        type: heading
+        level: 4
+        lang: he
+        text: התשובות
+      - id: act2-answers
+        type: discussionQuestions
+        items:
+          - question: אנא בַּסְמע מוסיק'א פי אלחדיק'ה.
+          - question: אנא בסמע מוסיק'א מַרָּה פי אליום.
+          - question: אנא בסמע מוסיק'א האדיה.
+          - question: אחלא נוע מוסיק'א הו אלקלאסיקיה.
+          - question: אנא בסמע מוסיקה מע צחבי.
+          - question: אנא בסמע מוסיקה מע אח'וי.
+          - question: לַמָּא ארכּוד' בסמע פודקאסט.
+          - question: אנא בחס חאלי מבסוט למא אַסְמע מוסיק'א.
+      - id: act3
+        type: classActivity
+        lang: he
+        title: 'פעילות 3: לאתר מילים מהשיר!'
+        skills: [פעולות בהווה]
+        steps:
+          - מאזינים לשירים שלמטה.
+          - מנסים לאתר מילים שאנחנו מכירים.
+          - מה המסר של השיר?
+      - id: song-1
+        type: externalLink
+        lang: he
+        label: שיר 1
+        url: https://open.spotify.com/track/31xnf3zZUIX9w33rIlg9bH
+      - id: song-2
+        type: externalLink
+        lang: he
+        label: שיר 2
+        url: https://youtu.be/XZY9ANC0AQA
+      - id: song-3
+        type: externalLink
+        lang: he
+        label: שיר 3
+        url: https://open.spotify.com/track/0J49Oq7Y8O4CSbdZeEVSBT
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          שתי מיומנויות במחזור: **בניית שאלות** (שאלות החימום, פעילויות 1 ו־2) ו**פעולות
+          בהווה** (פעילויות 1 ו־3).
+      - id: n-intro
+        anchor: intro
+        text: >-
+          מאוד קצר: כל תלמיד עד שני משפטים, עד חצי דקה לכל תלמיד. אם כולם מכירים, אפשר לדלג
+          ישר לשאלות החימום.
+      - id: n-act1
+        anchor: act1
+        text: התמקדו בחשיבה אישית, בניסוח משפטים פשוטים ובשיתוף.
+      - id: n-act2
+        anchor: act2
+        text: 'מקריאים כל תשובה, והתלמידים מנחשים את השאלה. מיקוד: בניית שאלות בהקשר של מוזיקה.'
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: music-homework
+    title: שיעורי בית עם מורי
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: 'שיעורי בית: עבודה עם מורי (מוזיקה)'
+      - id: step1-title
+        type: heading
+        level: 3
+        lang: he
+        text: 'שלב 1: פתיחת שיחה'
+      - id: step1-how
+        type: text
+        lang: he
+        text: פתחו את הצ׳אט עם מורי ושלחו את ההודעה הבאה.
+      - id: mori-open
+        type: aiTutorPrompt
+        message: |-
+          שלום מורי
+          אנא בדי אתדרב על ערבית
+          אסאלני שאלות ען מוסיקה
+          וסחח אחטאאי
+      - id: step2-title
+        type: heading
+        level: 3
+        lang: he
+        text: 'שלב 2: מענה לשאלות'
+      - id: step2-how
+        type: text
+        lang: he
+        text: מורי ישאל שאלות על מוזיקה. ענו על **כל שאלה במשפט קצר**; לא צריך תשובות ארוכות. למשל
+      - id: step2-examples
+        type: examples
+        items:
+          - text: אנא בסמע מוסיקה כל יום
+          - text: אנא בחב מוסיקה ערביה
+          - text: אנא ברקד למא בסמע מוסיקה
+      - id: step3-title
+        type: heading
+        level: 3
+        lang: he
+        text: 'שלב 3: בקשו עוד שאלות'
+      - id: step3-how
+        type: text
+        lang: he
+        text: כשתסיימו לענות על כמה שאלות, שלחו למורי
+      - id: mori-more
+        type: aiTutorPrompt
+        message: כמאן שאלות ען מוסיקה
+      - id: step4-title
+        type: heading
+        level: 3
+        lang: he
+        text: 'שלב 4: תרגול שאלות (אתם שואלים)'
+      - id: step4-how
+        type: text
+        lang: he
+        text: עכשיו אתם שואלים את מורי. שלחו אחת מהשאלות הבאות (או שאלה דומה), והקשיבו לתשובה של מורי.
+      - id: step4-questions
+        type: examples
+        items:
+          - text: וֵין בתסמע מוסיקה
+          - text: אימתה בתסמע מוסיקה
+          - text: קדיש בתסמע מוסיקה
+          - text: שו בתסאווי למא בתסמע מוסיקה
+      - id: step5-title
+        type: heading
+        level: 3
+        lang: he
+        text: 'שלב 5: תרגול חופשי קצר'
+      - id: step5-how
+        type: text
+        lang: he
+        text: שלחו למורי את ההודעה הזאת, ואז כתבו שני משפטים על מוזיקה.
+      - id: mori-two
+        type: aiTutorPrompt
+        message: אנא רח אחכי ג׳מלתין ען מוסיקה
+      - id: step5-examples
+        type: examples
+        items:
+          - text: אנא בסמע מוסיקה בליל
+          - text: אנא בַּתְבַּסָּם למא בסמע אלשיר
+      - id: step6-title
+        type: heading
+        level: 3
+        lang: he
+        text: 'שלב 6: בקשת הסבר (אם צריך)'
+      - id: step6-how
+        type: text
+        lang: he
+        text: אם מורי מסביר משהו ולא הבנתם, שלחו
+      - id: mori-explain
+        type: aiTutorPrompt
+        lang: he
+        message: |-
+          מורי
+          תשרח לי בעברית
+          ובכתיב ערבי בתעתיק
+      - id: closing
+        type: callout
+        lang: he
+        tone: tip
+        title: המטרה של העבודה עם מורי
+        text: |-
+          לדבר, לטעות, ללמוד.
+          לא חשוב להיות מושלם. חשוב לנסות.
+    teacherNotes:
+      - id: n-next
+        anchor: null
+        text: 'בשיעור הבא אפשר לפתוח עם השאלה "מי עבד עם מורי?", וכל תלמיד אומר משפט אחד שלמד.'
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: music-practice
+    book: workbook
+    title: 'תרגול: מוזיקה'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        lang: he
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+      - id: ex-questions
+        type: activity
+        activity: music-questions
+      - id: ex-present
+        type: activity
+        activity: music-present
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: music-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: מוזיקה
+        glossLang: he
+        link: https://quizlet.com/il/1126371024/%D7%9E%D7%95%D7%96%D7%99%D7%A7%D7%94-%D7%9E%D7%95%D7%A1%D7%99%D7%A7%D7%90-flash-cards/
+        items: &music-words
+          - { term: "מוסיק'א", gloss: מוזיקה }
+          - { term: לַחֶן, gloss: מנגינה }
+          - { term: "אור'נֶיֶּה", gloss: שיר }
+          - { term: סלאם, gloss: שלום }
+          - { term: מבְּסוט, gloss: שמח }
+          - { term: חֲזִין / זַעְלָאן, gloss: עצוב }
+          - { term: בַּסְמַע, gloss: שומע }
+          - { term: בַּרַ׳נּי, gloss: שר }
+          - { term: "בַּרק'וס'", gloss: רוקד }
+          - { term: בַּתְבַּסָּם, gloss: מחייך }
+          - { term: בּחרֶּכְּ, gloss: מזיז }
+          - { term: בתנפס, gloss: נושם }
+          - { term: בפכר, gloss: חושב }
+          - { term: בעיש, gloss: חי }
+          - { term: שו, gloss: מה }
+          - { term: וֵין, gloss: איפה }
+          - { term: וינתא, gloss: מתי }
+          - { term: מין, gloss: מי }
+          - { term: "ק'דיש / ק'דיה", gloss: כמה }
+          - { term: ליש, gloss: למה }
+          - { term: אנא, gloss: אני }
+          - { term: הו, gloss: הוא }
+          - { term: הי, gloss: היא }
+          - { term: כל יום, gloss: כל יום }
+          - { term: "אס'ובֶּח", gloss: בבוקר }
+          - { term: בליל, gloss: בלילה }
+          - { term: "ס'אחב", gloss: חבר }
+          - { term: "אח'", gloss: אח }
+          - { term: בית, gloss: בית }
+
+vocabulary:
+  - slug: music
+    title: מוזיקה
+    items: *music-words
+
+activities:
+  - slug: music-questions
+    title: 'בניית שאלות: מוזיקה'
+    minutes: 8
+    items:
+      - id: question-words
+        type: matching
+        lang: he
+        prompt: התאימו כל מילת שאלה לפירוש שלה.
+        pairs:
+          - [שו, מה]
+          - [וֵין, איפה]
+          - [וינתא, מתי]
+          - [מין, מי]
+          - [ליש, למה]
+      - id: garden
+        type: multipleChoice
+        lang: he
+        prompt: >-
+          התשובה: **אנא בַּסְמע מוסיק'א פי אלחדיק'ה.** (בגינה) באיזו מילת שאלה מתחילה
+          השאלה?
+        options:
+          - { text: וֵין, correct: true }
+          - { text: וינתא, feedback: 'וינתא = מתי. התשובה אומרת איפה: בגינה.' }
+          - { text: מין, feedback: 'מין = מי. התשובה אומרת איפה: בגינה.' }
+      - id: once-a-day
+        type: multipleChoice
+        lang: he
+        prompt: >-
+          התשובה: **אנא בסמע מוסיק'א מַרָּה פי אליום.** (פעם ביום) באיזו מילת שאלה מתחילה
+          השאלה?
+        options:
+          - { text: "ק'דיש", correct: true }
+          - { text: וֵין, feedback: "וֵין = איפה. התשובה אומרת כמה פעמים, ולכן שואלים ק'דיש." }
+          - { text: ליש, feedback: "ליש = למה. התשובה אומרת כמה פעמים, ולכן שואלים ק'דיש." }
+      - id: classical
+        type: multipleChoice
+        lang: he
+        prompt: >-
+          התשובה: **אחלא נוע מוסיק'א הו אלקלאסיקיה.** (הסוג הכי טוב הוא קלאסית) באיזו מילת
+          שאלה מתחילה השאלה?
+        options:
+          - { text: שו, correct: true }
+          - { text: וינתא, feedback: 'וינתא = מתי. התשובה אומרת מה: איזה סוג מוזיקה.' }
+          - { text: וֵין, feedback: 'וֵין = איפה. התשובה אומרת מה: איזה סוג מוזיקה.' }
+      - id: with-friends
+        type: multipleChoice
+        lang: he
+        prompt: >-
+          התשובה: **אנא בסמע מוסיקה מע צחבי.** (עם החברים שלי) באיזו מילת שאלה מתחילה
+          השאלה?
+        options:
+          - { text: מין, correct: true }
+          - { text: ליש, feedback: 'ליש = למה. התשובה אומרת עם מי, ולכן שואלים מע מין.' }
+          - { text: וינתא, feedback: 'וינתא = מתי. התשובה אומרת עם מי, ולכן שואלים מע מין.' }
+      - id: where-question
+        type: multipleChoice
+        lang: he
+        prompt: איזו שאלה פירושה **איפה אתה שומע מוזיקה?**
+        options:
+          - { text: "וֵין בתסמע מוסיק'א?", correct: true }
+          - { text: "וינתא בתסמע מוסיק'א?", feedback: 'זאת השאלה "מתי אתה שומע מוזיקה?".' }
+          - { text: "ק'דיש בתסמע מוסיק'א?", feedback: 'זאת השאלה "כמה אתה שומע מוזיקה?".' }
+      - id: order-what-do
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים לשאלה: מה אתה עושה כשאתה שומע מוזיקה?'
+        sentence: "שו בתעמַל למָּא תסמע מוסיק'א"
+      - id: wenta-meaning
+        type: trueFalse
+        lang: he
+        prompt: 'המילה **וינתא** פירושה **איפה**.'
+        answer: false
+        feedback:
+          correct: 'נכון! וינתא = מתי. איפה = וֵין.'
+          incorrect: 'וינתא = מתי. איפה = וֵין.'
+
+  - slug: music-present
+    title: 'פעולות בהווה: מוזיקה'
+    minutes: 8
+    items:
+      - id: verbs
+        type: matching
+        lang: he
+        prompt: התאימו כל פועל לפירוש שלו.
+        pairs:
+          - [בַּסְמַע, שומע]
+          - [בַּרַ׳נּי, שר]
+          - ["בַּרק'וס'", רוקד]
+          - [בַּתְבַּסָּם, מחייך]
+          - [בפכר, חושב]
+      - id: listen-every-day
+        type: multipleChoice
+        lang: he
+        prompt: איך אומרים **אני שומע מוזיקה כל יום**?
+        options:
+          - { text: אנא בסמע מוסיקה כל יום, correct: true }
+          - { text: אנא בפכר מוסיקה כל יום, feedback: 'בפכר = חושב. שומע = בסמע.' }
+          - { text: אנא בעיש מוסיקה כל יום, feedback: 'בעיש = חי. שומע = בסמע.' }
+      - id: breathe
+        type: multipleChoice
+        lang: he
+        prompt: איזו מילה פירושה **נושם**?
+        options:
+          - { text: בתנפס, correct: true }
+          - { text: בּחרֶּכְּ, feedback: בּחרֶּכְּ = מזיז. }
+          - { text: בעיש, feedback: בעיש = חי. }
+      - id: smile
+        type: multipleChoice
+        lang: he
+        prompt: איזו מילה פירושה **מחייך**?
+        options:
+          - { text: בַּתְבַּסָּם, correct: true }
+          - { text: בַּרַ׳נּי, feedback: בַּרַ׳נּי = שר. }
+          - { text: בַּסְמַע, feedback: בַּסְמַע = שומע. }
+      - id: happy
+        type: multipleChoice
+        lang: he
+        prompt: >-
+          השלימו: **אנא בחס חאלי ___ למא אַסְמע מוסיק'א.** (אני מרגיש שמח כשאני שומע
+          מוזיקה)
+        options:
+          - { text: מבְּסוט, correct: true }
+          - { text: חֲזִין, feedback: 'חֲזִין = עצוב. שמח = מבְּסוט.' }
+          - { text: זַעְלָאן, feedback: 'זַעְלָאן = עצוב. שמח = מבְּסוט.' }
+      - id: arabic-music
+        type: trueFalse
+        lang: he
+        prompt: 'המשפט **אנא בחב מוסיקה ערביה** פירושו "אני אוהב מוזיקה ערבית".'
+        answer: true
+        feedback:
+          correct: נכון!
+          incorrect: 'אנא = אני, בחב = אוהב, מוסיקה ערביה = מוזיקה ערבית.'
+      - id: he-lives
+        type: multipleChoice
+        lang: he
+        prompt: איך אומרים **הוא חי**?
+        options:
+          - { text: הו בעיש, correct: true }
+          - { text: אנא בעיש, feedback: 'אנא = אני. הוא = הו.' }
+          - { text: הו בפכר, feedback: 'בפכר = חושב. חי = בעיש.' }
+      - id: order-every-day
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: אני שומע מוזיקה כל יום.'
+        sentence: אנא בסמע מוסיקה כל יום

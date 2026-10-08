@@ -1,0 +1,548 @@
+# Cycle "Charla informal", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: charla-informal
+title: Charla informal
+goal: Charlar con preguntas y oraciones descriptivas con ser y estar.
+position: 1
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Hacer preguntas" and "Oraciones descriptivas") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The introduction example was cut off in the notebook ("Me gustan los libros. /
+    Me"). It is completed as "Me gustan los libros. / Me gusta leer."
+  - >-
+    The warm-up questions have no sentence frames in the notebook. Simple frames were
+    added (e.g. "Me llamo ___.", "Vivo en ___."). Please check or remove them.
+  - >-
+    Activity 1 question bank: "¿Está casado?" is changed to "¿Estás casado / casada?"
+    (the other questions use tú).
+  - >-
+    Activity 3 ("Adivina la pregunta"): the answer "Estudio inglés dos veces por
+    semana" is changed to "Estudio español…" to match the expected question "¿Cuántas
+    veces estudias español por semana?". "¿Cómo te llamas?" is accepted next to "¿Cuál
+    es tu nombre?", and the expected question for the free-time answer is "¿Qué te
+    gusta hacer en tu tiempo libre?". The answers and expected questions are in a
+    teacher note only, so students do not see them before the game.
+  - >-
+    Activity 4 title "¿Adivina quién?" is changed to "¡Adivina quién!".
+  - >-
+    Summary: "Cuando" in the question-word table is corrected to "Cuándo", and "sólo"
+    to "solo". The positive and negative forms of ser and estar are shown as two
+    tables (Persona / Forma positiva / Forma negativa).
+  - >-
+    Mori message: "corrije" → "corrige"; the broken phrase "usando las
+    habilidades?Haciendo Preguntas y oraciones descriptivas?" is rewritten as "usando
+    las habilidades Hacer preguntas y Oraciones descriptivas". The tip "con la oración
+    en inglés" is changed to "en español" (this is a Spanish course).
+  - >-
+    The two extra Mori games each have a second message to send later ("¡Ahora te
+    toca…!"); each is a separate copyable message.
+  - >-
+    Skill mapping (not stated in the notebook): Hacer preguntas = Activities 1 and 3,
+    Oraciones descriptivas = Activities 2 and 4, taken from the activity titles. The
+    notebook gives no recommended combination and no time for the introduction round.
+  - >-
+    Vocabulary: "vivir" is translated as "לגור / לחיות" (the cycle uses it as "where do
+    you live"). Please confirm.
+  - >-
+    The "Respuesta del estudiante 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: charla-informal-clase
+    title: 'Clase: Charla informal'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Charla informal
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Hacer preguntas
+            description: 'Las palabras interrogativas: *qué, dónde, cuándo, por qué, cómo*'
+          - name: Oraciones descriptivas
+            description: Describir con *ser* y *estar* (forma positiva y negativa)
+      - id: quizlet
+        type: externalLink
+        label: Charla informal en Quizlet
+        url: https://quizlet.com/il/1053409868/small-talk-basic-spanish-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Me gusta / Me gustan ___.
+        example: Soy Dana. Me gustan los libros. / Me gusta leer.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Cómo te llamas?
+            frame: Me llamo ___.
+          - question: ¿Dónde trabajas?
+            frame: Trabajo en ___.
+          - question: ¿Qué te gusta hacer en tu tiempo libre?
+            frame: En mi tiempo libre me gusta ___.
+          - question: ¿Qué haces todos los días?
+            frame: Todos los días ___.
+          - question: ¿Cuál es tu lugar favorito? ¿Por qué?
+            frame: Mi lugar favorito es ___, porque ___.
+          - question: ¿Dónde vives?
+            frame: Vivo en ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Simulación de la vida real: primera reunión'
+        skills: [Hacer preguntas]
+        minutes: 20
+        steps:
+          - Escucha la explicación de las preguntas del banco.
+          - Trabajen en parejas. Cada pareja elige cinco preguntas del banco.
+          - Hazle las preguntas a tu compañero / compañera y responde a sus preguntas.
+          - Di tres cosas sobre tu compañero / compañera, en tercera persona.
+        example: |-
+          *Yosi está casado, tiene dos hijos. Le gustan los perros.*
+          *A Dana le gusta bailar. Tiene tres hermanas y un hermano. Le gusta el hockey.*
+      - id: act1-questions
+        type: discussionQuestions
+        title: Banco de preguntas
+        items:
+          - question: Mi nombre es ___. ¿Cómo te llamas?
+          - question: ¿Dónde vives?
+          - question: ¿Dónde trabajas?
+          - question: ¿Estás casado / casada?
+          - question: ¿Tienes hijos?
+          - question: ¿Tienes hermanos o hermanas?
+          - question: ¿Te gustan los animales? ¿Qué animales?
+          - question: ¿Te gustan los deportes? ¿Cuáles?
+          - question: ¿Qué te gusta hacer?
+          - question: ¿Cuándo estudias español?
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: ¿Quién es él / ella?'
+        skills: [Oraciones descriptivas]
+        minutes: 20
+        steps:
+          - Elige a una persona importante para ti y completa las oraciones de abajo.
+          - Trabajen en parejas.
+          - El estudiante A hace preguntas sobre la persona del estudiante B.
+          - Cambien de rol.
+          - De regreso en la clase, cuenta un dato que escuchaste sobre la persona de tu pareja.
+        example: |-
+          *¿Quién es él / ella?*
+          *¿Cómo se llama él / ella?*
+          *¿Dónde vive?*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Completa las oraciones
+        items:
+          - question: Este es mi ___. / Esta es mi ___.
+          - question: Su nombre es ___.
+          - question: Él / Ella vive en ___.
+          - question: Él / Ella trabaja en ___.
+          - question: A él / ella le gusta ___.
+          - question: Él / Ella está casado/a / soltero/a / en una relación.
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Adivina la pregunta'
+        skills: [Hacer preguntas]
+        minutes: 20
+        steps:
+          - Escucha la respuesta que lee tu profesor.
+          - Di la pregunta correcta para esa respuesta. Cada pregunta correcta vale un punto.
+          - Si alguien se equivoca, otro estudiante lo intenta.
+          - Al final, ¿quién ganó? Repasamos juntos las reglas para hacer preguntas.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: ¡Adivina quién!'
+        skills: [Oraciones descriptivas]
+        minutes: 20
+        steps:
+          - Un estudiante elige un personaje para otro estudiante (una persona famosa o alguien de la clase).
+          - Otro estudiante da una pequeña pista con *eres*.
+          - El estudiante hace preguntas de sí o no con *soy* y adivina quién es.
+        example: |-
+          El estudiante A elige a Lionel Messi para el estudiante B.
+          Estudiante C (pista): *Eres de Argentina.*
+          Estudiante B: *¿Soy un hombre?* — Sí.
+          *¿Soy famoso?* — Sí.
+          *¿Juego al fútbol?* — Sí.
+          *¿Juego en la selección de mi país?* — Sí.
+          *¿Soy Lionel Messi?* — ¡Sí!
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Hacer preguntas** (Actividades 1 y 3) y
+          **Oraciones descriptivas** (Actividades 2 y 4).
+      - id: n-intro
+        anchor: intro
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 15
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: Explica cada pregunta del banco antes de dividir al grupo en parejas. Cada pareja elige cinco preguntas.
+      - id: n-act2
+        anchor: act2
+        text: Al final, cada estudiante comparte su experiencia y cuenta un dato sobre la persona de su pareja.
+      - id: n-act3
+        anchor: act3
+        text: |-
+          Lee cada respuesta; los estudiantes dicen la pregunta correcta (un punto por pregunta correcta). Al final, di quién ganó y explica las reglas para formar preguntas.
+          1. Mi nombre es Yossi. → ¿Cuál es tu nombre? / ¿Cómo te llamas?
+          2. Soy de Francia. → ¿De dónde eres?
+          3. Me gusta viajar al extranjero porque me gusta probar nuevas comidas y conocer nuevos lugares. → ¿Por qué te gusta viajar al extranjero?
+          4. Vivo en Tel Aviv. → ¿Dónde vives?
+          5. Trabajo en New School. → ¿Dónde trabajas?
+          6. Estudio español dos veces por semana. → ¿Cuántas veces estudias español por semana?
+          7. Me gusta ir a la playa o leer un libro en mi tiempo libre. → ¿Qué te gusta hacer en tu tiempo libre?
+          8. Tengo dos hermanos y una hermana. → ¿Cuántos hermanos tienes?
+          9. Mi comida favorita es la pizza. → ¿Cuál es tu comida favorita?
+      - id: n-act4
+        anchor: act4
+        text: La pista siempre usa *eres* (Eres de Argentina); las preguntas usan *soy* (¿Soy famoso?).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: charla-informal-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-questions
+        type: ruleSummary
+        skill: Hacer preguntas
+        rules:
+          - text: Usamos palabras interrogativas para pedir información, no solo «sí» o «no».
+            examples: [¿De dónde eres?, ¿Cómo estás?]
+          - text: '**Palabra interrogativa + verbo + sujeto.**'
+            examples:
+              - ¿Qué te gusta hacer los fines de semana?
+              - ¿Dónde trabajas?
+              - ¿Cómo está tu madre?
+          - text: Elige la palabra interrogativa de la tabla.
+      - id: questions-table
+        type: table
+        caption: Las palabras interrogativas
+        header: [Palabra interrogativa, Uso, Ejemplo]
+        rows:
+          - [Qué, Para preguntar sobre cosas, ¿A qué te dedicas?]
+          - [Dónde, Para preguntar sobre lugares, ¿Dónde vives?]
+          - [Cuándo, Para preguntar sobre el tiempo, ¿Cuándo es tu cumpleaños?]
+          - [Por qué, Para preguntar sobre razones, ¿Por qué te mudaste aquí?]
+          - [Cómo, Para preguntar sobre formas o sentimientos, ¿Cómo estás hoy?]
+      - id: rules-descriptive
+        type: ruleSummary
+        skill: Oraciones descriptivas
+        rules:
+          - text: Usamos **ser** para describir características permanentes o esenciales de personas, animales, lugares o cosas.
+            examples: [Yo soy feliz., Ella es agradable., Ellos no son altos.]
+          - text: Usamos **estar** para estados temporales, emociones, la ubicación o condiciones que pueden cambiar.
+            examples: [Estoy cansado., Ellos están en la playa., Nosotros no estamos tristes.]
+          - text: 'Para la forma negativa, pon **no** antes del verbo: *yo no soy*, *tú no estás*.'
+      - id: ser-table
+        type: table
+        caption: El verbo ser
+        header: [Persona, Forma positiva, Forma negativa]
+        rows:
+          - [Yo, soy, no soy]
+          - [Tú, eres, no eres]
+          - [Él / Ella / Usted, es, no es]
+          - [Nosotros / Nosotras, somos, no somos]
+          - [Vosotros / Vosotras, sois, no sois]
+          - [Ellos / Ellas / Ustedes, son, no son]
+      - id: estar-table
+        type: table
+        caption: El verbo estar
+        header: [Persona, Forma positiva, Forma negativa]
+        rows:
+          - [Yo, estoy, no estoy]
+          - [Tú, estás, no estás]
+          - [Él / Ella / Usted, está, no está]
+          - [Nosotros / Nosotras, estamos, no estamos]
+          - [Vosotros / Vosotras, estáis, no estáis]
+          - [Ellos / Ellas / Ustedes, están, no están]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 15
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: charla-informal-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-charla
+        type: aiTutorPrompt
+        title: Una charla informal
+        message: >-
+          ¡Hola Mori! Quiero charlar un rato. ¿Puedes hacerme preguntas informales
+          usando las habilidades Hacer preguntas y Oraciones descriptivas? Usa solo el
+          presente simple y, por favor, corrige mis errores.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Práctica adicional
+      - id: mori-adivina
+        type: aiTutorPrompt
+        title: Adivina la persona
+        intro: Envía este mensaje a Mori. Piensa en alguien de tu familia y responde a sus preguntas.
+        message: >-
+          ¡Oye, Mori! Juguemos a un juego. Pienso en alguien de mi familia y tú tienes
+          que adivinar quién es.
+      - id: mori-adivina-2
+        type: aiTutorPrompt
+        title: 'Adivina la persona: ahora tú adivinas'
+        intro: Cuando Mori adivine, envía este mensaje.
+        message: >-
+          ¡Ahora te toca a ti! Piensa en alguien y yo tengo que adivinar quién es.
+          Puede ser una persona famosa.
+      - id: mori-verdades
+        type: aiTutorPrompt
+        title: Dos verdades y una mentira
+        intro: >-
+          Envía este mensaje a Mori. Después escribe tres oraciones sobre ti: dos son
+          verdaderas y una es falsa (por ejemplo: *Tengo un hermano. Vivo en Jerusalén.
+          Soy médico.*). ¡Mori intentará adivinar cuál es la mentira!
+        message: >-
+          ¡Oye, Mori! Juguemos a «Dos verdades y una mentira». Te voy a contar tres cosas
+          sobre mí. Tienes que adivinar cuál no es cierta.
+      - id: mori-verdades-2
+        type: aiTutorPrompt
+        title: 'Dos verdades y una mentira: ahora Mori'
+        intro: Después, envía este mensaje.
+        message: ¡Ahora te toca a ti! Dime dos verdades y una mentira.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: charla-informal-practica
+    book: workbook
+    title: 'Práctica: Charla informal'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-preguntas
+        type: activity
+        activity: charla-informal-preguntas
+      - id: ex-descriptivas
+        type: activity
+        activity: charla-informal-descriptivas
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: charla-informal-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la charla informal
+        glossLang: he
+        link: https://quizlet.com/il/1053409868/small-talk-basic-spanish-flash-cards/
+        items: &charla-informal-words
+          - { term: Vivir, gloss: לגור / לחיות }
+          - { term: Trabajar, gloss: לעבוד }
+          - { term: Amar / Gustar, gloss: לאהוב / לחבב }
+          - { term: Hacer, gloss: לעשות }
+          - { term: Ser, gloss: להיות }
+          - { term: Leer, gloss: לקרוא }
+          - { term: Bailar, gloss: לרקוד }
+          - { term: Viajar, gloss: לטייל / לנסוע }
+          - { term: Ir, gloss: ללכת }
+          - { term: Estudiar, gloss: ללמוד }
+          - { term: Preguntar, gloss: לשאול }
+          - { term: Hablar, gloss: לדבר }
+          - { term: Decir, gloss: לומר }
+          - { term: Adivinar, gloss: לנחש }
+          - { term: Nombre, gloss: שם }
+          - { term: Casado, gloss: נשוי }
+          - { term: Soltero, gloss: רווק }
+          - { term: En una relación, gloss: במערכת יחסים }
+          - { term: Niños, gloss: ילדים }
+          - { term: Hermanos y hermanas, gloss: אחים ואחיות }
+          - { term: Hermano, gloss: אח }
+          - { term: Hermana, gloss: אחות }
+          - { term: Amigo, gloss: חבר }
+          - { term: Persona, gloss: אדם }
+          - { term: Lugar, gloss: מקום }
+          - { term: Pasatiempo, gloss: תחביב }
+          - { term: Deporte, gloss: ספורט }
+          - { term: Animales, gloss: בעלי חיים }
+          - { term: Tiempo libre, gloss: זמן פנוי }
+          - { term: Cada día, gloss: כל יום }
+          - { term: Dónde, gloss: איפה }
+          - { term: Qué, gloss: מה }
+          - { term: Cuándo, gloss: מתי }
+          - { term: Por qué, gloss: למה }
+          - { term: Cómo, gloss: איך }
+
+vocabulary:
+  - slug: charla-informal
+    title: Charla informal
+    items: *charla-informal-words
+
+activities:
+  - slug: charla-informal-preguntas
+    title: 'Hacer preguntas: qué, dónde, cuándo, por qué, cómo'
+    minutes: 8
+    items:
+      - id: vivo-en
+        type: multipleChoice
+        prompt: '*Vivo en Tel Aviv.* ¿Cuál es la pregunta?'
+        options:
+          - { text: ¿Dónde vives?, correct: true }
+          - {
+              text: ¿Cuándo vives?,
+              feedback: '*Cuándo* pregunta por el tiempo. Tel Aviv es un lugar: usa *dónde*.',
+            }
+          - {
+              text: ¿Qué vives?,
+              feedback: '*Qué* pregunta por cosas. Tel Aviv es un lugar: usa *dónde*.',
+            }
+      - id: soy-de
+        type: multipleChoice
+        prompt: '*Soy de Francia.* ¿Cuál es la pregunta?'
+        options:
+          - { text: ¿De dónde eres?, correct: true }
+          - {
+              text: ¿Dónde vives?,
+              feedback: 'La respuesta a *¿Dónde vives?* es *Vivo en…*. *Soy de…* responde a *¿De dónde eres?*',
+            }
+          - {
+              text: ¿Cómo eres?,
+              feedback: '*¿Cómo eres?* pregunta por tu forma de ser (alto, simpático…), no por tu país.',
+            }
+      - id: como-estas
+        type: multipleChoice
+        prompt: '¿___ estás hoy? — Estoy bien, gracias.'
+        options:
+          - { text: Cómo, correct: true }
+          - { text: Dónde, feedback: '*Bien* no es un lugar. Para sentimientos usa *cómo*.' }
+          - {
+              text: Por qué,
+              feedback: 'La respuesta no es una razón. Para sentimientos usa *cómo*.',
+            }
+      - id: palabras-uso
+        type: matching
+        prompt: Une cada palabra interrogativa con su uso.
+        pairs:
+          - [Qué, cosas]
+          - [Dónde, lugares]
+          - [Cuándo, el tiempo]
+          - [Por qué, razones]
+          - [Cómo, formas o sentimientos]
+      - id: si-no
+        type: trueFalse
+        prompt: Usamos las palabras interrogativas para preguntas que se responden solo con «sí» o «no».
+        answer: false
+        feedback:
+          correct: '¡Correcto! Las palabras interrogativas piden información: *¿Dónde vives? — En Tel Aviv.*'
+          incorrect: 'Las palabras interrogativas piden información, no solo «sí» o «no»: *¿Dónde vives? — En Tel Aviv.*'
+      - id: que-donde
+        type: fillBlank
+        prompt: Completa con la palabra interrogativa correcta.
+        text: ¿___ te gusta hacer? — Me gusta bailar. ¿___ trabajas? — Trabajo en New School.
+        blanks: [[Qué], [Dónde]]
+        wordBank: [Qué, Dónde, Cuándo]
+      - id: por-que
+        type: fillBlank
+        prompt: Completa la pregunta.
+        text: ¿___ te gusta viajar? — Porque me gusta conocer nuevos lugares.
+        blanks: [[Por qué]]
+      - id: ordena-pregunta
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: ¿Cuándo es tu cumpleaños?
+
+  - slug: charla-informal-descriptivas
+    title: 'Oraciones descriptivas: ser y estar'
+    minutes: 8
+    items:
+      - id: estoy-cansado
+        type: multipleChoice
+        prompt: Yo ___ cansado.
+        options:
+          - { text: estoy, correct: true }
+          - { text: soy, feedback: '*Cansado* es un estado que cambia: usa *estar* (yo estoy).' }
+          - { text: está, feedback: 'Con *yo* el verbo es *estoy*.' }
+      - id: estan-playa
+        type: multipleChoice
+        prompt: Ellos ___ en la playa.
+        options:
+          - { text: están, correct: true }
+          - { text: son, feedback: 'Para la ubicación (dónde estás) usa *estar*.' }
+          - { text: estamos, feedback: '*Estamos* es para *nosotros*. Con *ellos* usa *están*.' }
+      - id: completa-ser
+        type: fillBlank
+        prompt: Completa con el verbo *ser*.
+        text: Yo ___ de Francia. Tú ___ alto. Ellas ___ agradables.
+        blanks: [[soy], [eres], [son]]
+      - id: completa-estar
+        type: fillBlank
+        prompt: Completa con el verbo *estar*.
+        text: Nosotros no ___ tristes. ¿Cómo ___ tú hoy? Mi madre ___ en casa.
+        blanks: [[estamos], [estás], [está]]
+      - id: une-ser
+        type: matching
+        prompt: Une cada persona con la forma del verbo *ser*.
+        pairs:
+          - [yo, soy]
+          - [tú, eres]
+          - [él / ella, es]
+          - [nosotros, somos]
+          - [ellos / ellas, son]
+      - id: negativa
+        type: trueFalse
+        prompt: 'Para la forma negativa, ponemos *no* antes del verbo: *Ellos no son altos.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *No* va antes del verbo.
+          incorrect: '*No* va antes del verbo: *Ellos no son altos*, *Nosotros no estamos tristes*.'
+      - id: emociones
+        type: trueFalse
+        prompt: 'Para una emoción de hoy usamos *ser*: *Soy triste hoy.*'
+        answer: false
+        feedback:
+          correct: '¡Correcto! Las emociones que cambian van con *estar*: *Estoy triste hoy.*'
+          incorrect: 'Las emociones que cambian van con *estar*: *Estoy triste hoy.*'
+      - id: ordena-casa
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Mi hermana no está en casa.

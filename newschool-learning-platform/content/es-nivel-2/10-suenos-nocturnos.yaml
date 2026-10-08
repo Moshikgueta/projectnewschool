@@ -1,0 +1,626 @@
+# Cycle "Sueños nocturnos", converted from the Spanish level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-2
+slug: suenos-nocturnos
+title: Sueños nocturnos
+goal: Contar sueños con el pretérito indefinido y el imperfecto, y usar preposiciones avanzadas.
+position: 10
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Tiempo pasado" and "Preposiciones avanzadas") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The homework has no Mori message in the source (only "practise Quizlet" and
+    "write a paragraph and send it to the homework e-mail"). A Mori message was
+    written from the writing task, and the writing questions are kept as answer
+    boxes. The Quizlet homework line pointed to an empty Google Docs link ("join
+    the class"); it was left out because the Quizlet link is already in the class
+    and vocabulary sections.
+  - >-
+    Activity 1 says "choose one to three of the images below", but the images are
+    not in the exported notebook: only the Google Doc with the images is linked
+    (kept, without "?usp=sharing"). Please check the images are in that document.
+  - >-
+    Summary, skill 1: the conjugation endings in the source are correct. A table
+    with the full forms of *soñar* and *vivir* was ADDED so students see the endings
+    in use. "Pasado simple" is named "pretérito indefinido (pasado simple)".
+  - >-
+    Summary, skill 2: the source says "debido a" takes a noun or an infinitive.
+    "Debido a" + infinitive is rare and sounds unnatural at this level, so the rule
+    now says "debido a + noun". A rule on contractions was ADDED (a + el = al,
+    de + el = del: *debido al*, *a pesar del*, *debajo del*), because the workbook
+    uses it. "Preposiciones de lugar (simples)" → "Preposiciones de lugar" (the list
+    includes compound ones like *debajo de*).
+  - >-
+    Corrections: Activity 1 "escribirá un discurso" → "escribe un texto corto";
+    "interpretará su sueño y decir lo que creen" → "interpreta su sueño y dice qué
+    cree que significa"; "Encima, en ___, habían ___" → "Encima de ___ había ___"
+    (impersonal *haber* is singular). Activity 2 text: "Al principio me sentí
+    tranquilo … me sentía completamente perdida" → "perdido" (same narrator; the
+    questions say "el narrador"); question 3 "la sala subterránea" → "la habitación
+    subterránea" (as in the text). Activity 2, Etapa 3: "Descríbelo y cualquier
+    detalle inusual que recuerdes" → "Descríbelo con los detalles inusuales que
+    recuerdes". Activity 4: "sólo" → "solo". Warm-up 2 "¿Alguna vez soñaste uno de
+    estos sueños?" → "¿Alguna vez tuviste uno de estos sueños?".
+  - >-
+    Activity 3: the frame "La casa de mis sueños ___ en ___" and the example have
+    an empty verb slot; the example is completed as "La casa de mis sueños está en
+    Beverly Hills". Activity 2 is marked "para estudiantes avanzados" in the source;
+    it is titled "(nivel avanzado)".
+  - >-
+    Warm-up questions have no sentence frames in the source; simple frames were
+    added. The 11 dream facts of Activity 4 are kept as a table.
+  - >-
+    Vocabulary: "Despertar" → "Despertarse" (להתעורר; *despertar* is להעיר);
+    "Encima" → "Encima de"; "Escalera" glossed "מדרגות / סולם" (in the text it is a
+    staircase); "Lúcido" glossed "צלול" (חלום צלול = lucid dream) instead of
+    "בהיר"; "Vacío" glossed "ריק / חלל ריק"; "Rápido" glossed "מהר / מהיר";
+    "Alarma / despertador" glossed "אזעקה / שעון מעורר". Please confirm.
+  - >-
+    Only the introduction has a time in the source (no more than 5 minutes); no
+    other minutes are recorded. The Quizlet link is kept without "?new". The
+    "Respuesta de alumno 1/2/3" lines are replaced by the answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: suenos-nocturnos-clase
+    title: 'Clase: Sueños nocturnos'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Sueños nocturnos
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Tiempo pasado
+            description: 'Pretérito indefinido (*soñé*) y pretérito imperfecto (*soñaba*)'
+          - name: Preposiciones avanzadas
+            description: '*Detrás de, alrededor de, a pesar de, debido a, en lugar de*'
+      - id: quizlet
+        type: externalLink
+        label: Sueños nocturnos en Quizlet
+        url: https://quizlet.com/il/994790485/nighttime-dreams-conversational-spanish-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Sueño solo en hebreo. / Sueño en ___ (idiomas).
+        example: Soy Florencia. Sueño en hebreo, inglés y español.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Recuerdas tus sueños cuando te despiertas?
+            frame: Sí, recuerdo ___. / No, no recuerdo mis sueños.
+          - question: |-
+              ¿Alguna vez tuviste uno de estos sueños?
+              Soñé que se me caían los dientes. · Soñé que volaba. · Soñé que caía al vacío. · Soñé que fallaba en un examen. · Soñé que me perseguían.
+            frame: Sí, una vez soñé que ___.
+          - question: ¿Puedes contarnos qué pasó en un sueño que recuerdes?
+            frame: Soñé que ___. En el sueño, ___.
+          - question: ¿Soñaste alguna vez que estabas en otra época o en otro país?
+            frame: Sí, una vez soñé que estaba en ___.
+          - question: ¿Puedes hacer algo para tener menos pesadillas (malos sueños)?
+            frame: Para tener menos pesadillas, puedes ___.
+          - question: ¿Quién crees que tiene más sueños, los niños o los adultos? ¿Por qué?
+            frame: Creo que ___ tienen más sueños porque ___.
+          - question: 'Bonus: ¿Por qué crees que la gente sueña?'
+            frame: Creo que la gente sueña porque ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: ¿Con qué soñaste?'
+        skills: [Tiempo pasado, Preposiciones avanzadas]
+        steps:
+          - Haz una copia del documento de Google con las imágenes.
+          - 'Elige de una a tres imágenes. Escribe un texto corto en pasado, como si fueran sueños que tuviste anoche. Usa preposiciones (*en, sobre, con, acerca de, detrás de, cerca de…*).'
+          - Comparte uno de tus sueños con el grupo.
+          - (Opcional) El grupo interpreta tu sueño y dice qué cree que significa.
+        resource:
+          label: Imágenes de los sueños (documento de Google)
+          url: https://docs.google.com/document/d/1VVx7xtPF2FhOr0dUIEEftlZEx6-HmZklbXo9NgtBFTk/edit
+      - id: act1-frame
+        type: discussionQuestions
+        title: Mi sueño de anoche
+        items:
+          - question: Anoche soñé que ___.
+          - question: En el sueño, era de ___ (mañana / tarde / noche).
+          - question: Frente a la habitación / En la calle vi a ___.
+          - question: Había muchos ___ entre ___.
+          - question: Encima de ___ había ___.
+          - question: Un hombre ___ detrás de ___.
+          - question: Una mujer ___ cerca de ___.
+          - question: Un niño ___ al lado de ___.
+          - question: En el ___ había un / una ___.
+          - question: Y de repente ___.
+          - question: 'El sueño terminó así: ___.'
+          - question: Sé que suena como un sueño muy loco, pero creo que lo soñé debido a ___.
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2 (nivel avanzado): Los sueños más extraños'
+        skills: [Tiempo pasado]
+        steps:
+          - 'Etapa 1: Leemos el texto juntos. Cada estudiante lee una parte.'
+          - 'Etapa 2: Responde las preguntas (hablando).'
+          - 'Etapa 3 (opcional): Hablamos de las preguntas de discusión.'
+      - id: act2-text
+        type: text
+        text: |-
+          Anoche tuve el sueño más extraño. Estaba en un bosque gigante, rodeado de árboles que brillaban en diferentes colores. Al principio me sentí tranquilo, pero de repente el suelo empezó a temblar. En medio del bosque apareció una enorme escalera que llevaba a una habitación subterránea. En las paredes de la habitación había pinturas de animales que bailaban y hablaban entre ellos. Intenté acercarme a los cuadros, pero empezaron a moverse y ¡uno de los animales saltó del marco!
+
+          Me encontré al pie de la escalera, con una llave dorada en la mano. Me sentí como si estuviera en un laberinto: cada puerta que abría me llevaba a un lugar extraño diferente. En una habitación había trozos gigantes de pastel que flotaban cerca del techo, y en otra había una playa de arena violeta. Intenté volver, pero no pude encontrar el camino. Justo cuando me sentía completamente perdido, escuché una alarma sonar a mi lado. Me desperté y me di cuenta de que estaba a salvo en mi cama.
+      - id: act2-questions
+        type: discussionQuestions
+        title: 'Etapa 2: Preguntas sobre el texto'
+        items:
+          - question: ¿Dónde estaba el narrador en el sueño?
+          - question: ¿Qué pasó cuando el suelo empezó a temblar?
+          - question: ¿Qué había en las paredes de la habitación subterránea?
+          - question: ¿Qué encontró el narrador al pie de la escalera?
+          - question: ¿Qué cosas inusuales vio el narrador en las habitaciones?
+      - id: act2-discussion
+        type: discussionQuestions
+        title: 'Etapa 3 (opcional): Preguntas de discusión'
+        items:
+          - question: ¿Cuál es el sueño más extraño que recuerdas? Descríbelo con los detalles inusuales que recuerdes.
+          - question: ¿Crees que los sueños pueden decirnos algo sobre nosotros mismos? ¿Por qué?
+          - question: ¿Alguna vez tuviste un sueño recurrente o una pesadilla? ¿Cómo te hizo sentir?
+          - question: Si pudieras controlar tus sueños, ¿con qué te gustaría soñar? ¿Por qué?
+          - question: Algunas personas dicen que los sueños tienen significados. ¿Estás de acuerdo?
+          - question: ¿Crees que podemos aprender algo de nuestros sueños?
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: La casa de tus sueños'
+        skills: [Preposiciones avanzadas]
+        steps:
+          - Imagina un sueño hecho realidad. ¡Puedes vivir en la casa de tus sueños!
+          - Busca en internet una imagen de la casa de tus sueños.
+          - Describe la casa al grupo con preposiciones de lugar. Usa las oraciones de abajo.
+        example: |-
+          *La mansión de J. Lo en Beverly Hills:*
+          *La casa de mis sueños está en Beverly Hills. Elegí esta casa porque siempre quise vivir al lado de las celebridades, y J. Lo está vendiendo la casa, así que es una buena oportunidad. Mi novio y mi familia viven conmigo en mi casa. Delante de la casa hay una gran puerta de seguridad. Detrás de mi casa hay una piscina y un jacuzzi. Hay enormes árboles y plantas alrededor de mi casa.*
+      - id: act3-frame
+        type: discussionQuestions
+        title: La casa de mis sueños
+        items:
+          - question: La casa de mis sueños está en ___ (país / ciudad).
+          - question: Elegí esta casa porque ___.
+          - question: ___ vive / viven conmigo en mi casa.
+          - question: Delante de / Al lado de / Detrás de / Debajo de mi casa hay un / una ___. (2 oraciones)
+          - question: Hay ___ en / sobre / alrededor de mi casa. (2 oraciones)
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: ¡Ese dato curioso es cierto! De hecho…'
+        skills: [Tiempo pasado]
+        steps:
+          - 'Etapa 1: Tu profesor presenta 11 datos curiosos sobre los sueños.'
+          - 'Etapa 2: Cuenta una historia relacionada con uno de los datos. Puede ser el sueño o una experiencia relacionada. Si no tienes una, ¡invéntala!'
+        example: '*Una vez tuve un sueño lúcido: sabía que estaba soñando y volé sobre mi ciudad.*'
+      - id: act4-facts
+        type: table
+        caption: 11 datos curiosos sobre los sueños
+        header: [Dato, Explicación]
+        rows:
+          - [Todos soñamos cada noche, 'Sueñas todas las noches, pero a veces no lo recuerdas.']
+          - [Los sueños son cortos, La mayoría de los sueños duran solo entre 5 y 20 minutos.]
+          - [Puedes tener muchos sueños, Puedes tener de 4 a 6 sueños en una noche.]
+          - [
+              Algunas personas sueñan en blanco y negro,
+              Alrededor del 12 % de las personas no sueña en colores.,
+            ]
+          - [
+              Los sueños ayudan con los sentimientos,
+              Los sueños pueden ayudar a tu cerebro a comprender tus emociones.,
+            ]
+          - [
+              Puedes controlar los sueños,
+              'En algunos sueños, llamados sueños lúcidos, sabes que estás soñando y puedes controlar la historia.',
+            ]
+          - [
+              Olvidas los sueños rápidamente,
+              '5 minutos después de despertarte, olvidas la mitad de tu sueño. Después de 10 minutos, olvidas casi todo.',
+            ]
+          - [
+              Los sonidos pueden entrar en tus sueños,
+              Los ruidos y los olores a tu alrededor mientras duermes pueden formar parte de tus sueños.,
+            ]
+          - [
+              Los animales también sueñan,
+              '¡Los gatos, los perros y otros animales también tienen sueños!',
+            ]
+          - [
+              ¿Cómo sueñan las personas ciegas?,
+              'Las personas que nacen ciegas no ven imágenes en sus sueños, pero sueñan con sonidos, olores y sentimientos.',
+            ]
+          - [
+              Los sueños pueden ser extraños,
+              Los sueños suelen mezclar ideas y recuerdos de formas sorprendentes.,
+            ]
+      - id: act5
+        type: classActivity
+        title: 'Actividad 5: Un día para recordar'
+        skills: [Tiempo pasado, Preposiciones avanzadas]
+        steps:
+          - 'Etapa 1: Aprende 3 preposiciones avanzadas nuevas (tabla de abajo).'
+          - 'Etapa 2: Escribe un texto sobre un gran día que tuviste. Usa las tres preposiciones y las preguntas de abajo.'
+        example: '*A pesar de la lluvia, fuimos a la playa. Debido al tráfico, llegamos tarde. En lugar de nadar, comimos helado.*'
+      - id: act5-prepositions
+        type: table
+        caption: Preposiciones nuevas
+        header: [Español, Hebreo]
+        rows:
+          - [A pesar de, למרות]
+          - [Debido a, בגלל]
+          - [En lugar de, במקום]
+      - id: act5-questions
+        type: discussionQuestions
+        title: Mi día especial
+        items:
+          - question: ¿Cuándo fue tu día especial?
+            frame: Mi día especial fue ___.
+          - question: ¿Dónde fue?
+            frame: Fue en ___.
+          - question: ¿Qué hiciste ese día?
+            frame: Ese día ___.
+          - question: ¿Hubo algún problema ese día especial? ¿Cómo lo resolviste?
+            frame: A pesar de ___, ___. / Debido a ___, ___. / En lugar de ___, ___.
+          - question: ¿Por qué fue un día especial?
+            frame: Fue un día especial porque ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Tiempo pasado** (Actividades 1, 2, 4 y 5) y
+          **Preposiciones avanzadas** (Actividades 1, 3 y 5). La Actividad 2 es para
+          estudiantes avanzados.
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: >-
+          Muy corto: 2 oraciones por estudiante, no más de 30 segundos por persona. Si
+          el grupo ya se conoce, pasa directamente a las preguntas de calentamiento.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Recuerda a los estudiantes que hagan una copia del documento de Google antes
+          de escribir. Después de cada sueño, el grupo puede interpretarlo (opcional).
+      - id: n-act2
+        anchor: act2
+        text: Cada estudiante lee una parte del texto en voz alta. La Etapa 3 es opcional.
+      - id: n-act4
+        anchor: act4
+        text: Presenta los 11 datos con el grupo antes de que cada estudiante cuente su historia.
+      - id: n-act5
+        anchor: act5
+        text: Presenta las tres preposiciones nuevas con un ejemplo cada una antes de que los estudiantes escriban.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: suenos-nocturnos-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-pasado
+        type: ruleSummary
+        skill: Tiempo pasado
+        rules:
+          - text: '**Pretérito indefinido (pasado simple):** para acciones terminadas en un momento concreto del pasado. Verbos en **-ar**: raíz + *-é, -aste, -ó, -amos, -aron*. Verbos en **-er / -ir**: raíz + *-í, -iste, -ió, -imos, -ieron*.'
+            examples: [Ayer soñé con una gran playa.]
+          - text: '**Pretérito imperfecto:** para hábitos del pasado, descripciones y acciones en curso que otra acción interrumpe. Verbos en **-ar**: raíz + *-aba, -abas, -aba, -ábamos, -aban*. Verbos en **-er / -ir**: raíz + *-ía, -ías, -ía, -íamos, -ían*.'
+            examples: [Cuando era pequeño, todas las noches soñaba que visitaba un pueblo mágico.]
+          - text: 'La diferencia: el **indefinido** cuenta una acción terminada; el **imperfecto** describe la situación o lo que se repetía, sin pensar en su final.'
+            examples:
+              - Soñé con un lugar lejano. (acción terminada)
+              - En mi sueño, había un castillo rodeado de niebla. (descripción)
+      - id: pasado-table
+        type: table
+        caption: Soñar y vivir en pasado
+        header:
+          [Persona, Indefinido -ar, Indefinido -er / -ir, Imperfecto -ar, Imperfecto -er / -ir]
+        rows:
+          - [yo, soñé, viví, soñaba, vivía]
+          - [tú, soñaste, viviste, soñabas, vivías]
+          - [él / ella / usted, soñó, vivió, soñaba, vivía]
+          - [nosotros / nosotras, soñamos, vivimos, soñábamos, vivíamos]
+          - [ellos / ellas / ustedes, soñaron, vivieron, soñaban, vivían]
+      - id: rules-preposiciones
+        type: ruleSummary
+        skill: Preposiciones avanzadas
+        rules:
+          - text: '**Preposiciones de lugar:** dicen dónde está algo o alguien. Estructura: preposición + sustantivo. Las más comunes: *en, sobre, debajo de, delante de, detrás de, junto a, al lado de, entre, alrededor de, frente a*.'
+            examples:
+              - El gato está **en** la casa.
+              - Hay árboles **alrededor de** mi casa.
+          - text: '**A pesar de** + sustantivo / infinitivo: algo pasa aunque hay una dificultad.'
+            examples:
+              - '**A pesar de** la lluvia, fuimos al parque.'
+              - '**A pesar de** estar cansada, salí con mis amigos.'
+          - text: '**En lugar de** + sustantivo / infinitivo: eliges una cosa y no otra.'
+            examples:
+              - Decidí quedarme en casa **en lugar de** ir al cine.
+          - text: '**Debido a** + sustantivo: explica la causa de algo.'
+            examples:
+              - El vuelo se retrasó **debido a** problemas técnicos.
+          - text: '**a + el = al**, **de + el = del**.'
+            examples:
+              - Debido **al** tráfico, llegamos tarde.
+              - El gato está debajo **del** sofá.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: suenos-nocturnos-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: >-
+          Escribe un párrafo breve sobre un sueño que tuviste. Usa el pasado y las
+          preposiciones. Responde a las preguntas de abajo; después envía tu párrafo a
+          Mori para que lo corrija.
+      - id: writing
+        type: discussionQuestions
+        title: Mi sueño
+        items:
+          - question: ¿Dónde tuvo lugar el sueño? (país)
+          - question: ¿Cuándo tuviste este sueño? (año / mes)
+          - question: ¿Qué día fue?
+          - question: ¿Dónde estabas en el sueño?
+          - question: ¿Qué hora era en el sueño?
+          - question: ¿Quién estaba contigo en el sueño?
+      - id: mori-sueno
+        type: aiTutorPrompt
+        title: Mi sueño
+        intro: Copia el mensaje, escribe tu párrafo al final y envíalo a Mori.
+        message: >-
+          ¡Hola Mori! Escribí un párrafo sobre un sueño que tuve. Por favor, corrige
+          mis errores con el pretérito indefinido, el pretérito imperfecto y las
+          preposiciones (detrás de, al lado de, a pesar de, debido a, en lugar de).
+          Después, hazme preguntas sobre mi sueño. Este es mi párrafo: ___
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: suenos-nocturnos-practica
+    book: workbook
+    title: 'Práctica: Sueños nocturnos'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-pasado
+        type: activity
+        activity: suenos-nocturnos-pasado
+      - id: ex-preposiciones
+        type: activity
+        activity: suenos-nocturnos-preposiciones
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: suenos-nocturnos-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de los sueños
+        glossLang: he
+        link: https://quizlet.com/il/994790485/nighttime-dreams-conversational-spanish-flash-cards/
+        items: &suenos-nocturnos-words
+          - { term: Soñar, gloss: לחלום }
+          - { term: Sueño, gloss: חלום }
+          - { term: Despertarse, gloss: להתעורר }
+          - { term: Caer, gloss: ליפול }
+          - { term: Volar, gloss: לעוף }
+          - { term: Vacío, gloss: ריק / חלל ריק }
+          - { term: Examen, gloss: מבחן }
+          - { term: Perseguir, gloss: לרדוף }
+          - { term: Habitación, gloss: חדר }
+          - { term: Calle, gloss: רחוב }
+          - { term: Frente a, gloss: מול }
+          - { term: Alrededor de, gloss: סביב }
+          - { term: Encima de, gloss: מעל }
+          - { term: Detrás de, gloss: מאחורי }
+          - { term: Junto a, gloss: ליד }
+          - { term: Niño, gloss: ילד }
+          - { term: Mujer, gloss: אישה }
+          - { term: Hombre, gloss: גבר }
+          - { term: Al lado de, gloss: ליד }
+          - { term: Rápido, gloss: מהר / מהיר }
+          - { term: Misterioso, gloss: מסתורי }
+          - { term: Extraño, gloss: מוזר }
+          - { term: Llave, gloss: מפתח }
+          - { term: Escalera, gloss: מדרגות / סולם }
+          - { term: Subterráneo, gloss: תת-קרקעי }
+          - { term: Playa, gloss: חוף }
+          - { term: Pastel, gloss: עוגה }
+          - { term: Alarma / despertador, gloss: אזעקה / שעון מעורר }
+          - { term: Lúcido, gloss: צלול }
+          - { term: A pesar de, gloss: למרות }
+          - { term: Debido a, gloss: בגלל }
+          - { term: En lugar de, gloss: במקום }
+
+vocabulary:
+  - slug: suenos-nocturnos
+    title: Sueños nocturnos
+    items: *suenos-nocturnos-words
+
+activities:
+  - slug: suenos-nocturnos-pasado
+    title: 'Tiempo pasado: soñé y soñaba'
+    minutes: 8
+    items:
+      - id: anoche-sone
+        type: multipleChoice
+        prompt: Anoche ___ con una playa enorme.
+        options:
+          - { text: soñé, correct: true }
+          - {
+              text: soñaba,
+              feedback: '*Anoche* es un momento concreto y la acción terminó: usa el pretérito indefinido, *soñé*.',
+            }
+          - { text: soñó, feedback: '*Soñó* es para *él* o *ella*. Para *yo*, usa *soñé*.' }
+      - id: cada-noche
+        type: multipleChoice
+        prompt: Cuando era pequeño, todas las noches ___ que volaba.
+        options:
+          - { text: soñaba, correct: true }
+          - {
+              text: soñé,
+              feedback: '*Todas las noches* es un hábito del pasado: usa el pretérito imperfecto, *soñaba*.',
+            }
+          - { text: soñaron, feedback: '*Soñaron* es para *ellos*. Aquí habla *yo*: *soñaba*.' }
+      - id: habia
+        type: fillBlank
+        prompt: Completa con el verbo *haber* en pretérito imperfecto.
+        text: En mi sueño, ___ un castillo rodeado de niebla.
+        blanks: [[había]]
+      - id: une-yo
+        type: matching
+        prompt: Une cada verbo con su forma de *yo* en pretérito indefinido.
+        pairs:
+          - [soñar, soñé]
+          - [volar, volé]
+          - [comer, comí]
+          - [vivir, viví]
+          - [escribir, escribí]
+      - id: descripcion
+        type: trueFalse
+        prompt: 'Usamos el pretérito imperfecto para describir una situación en el pasado: *En el sueño, era de noche.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *Era* describe la situación del sueño.
+          incorrect: 'Las descripciones del pasado van en imperfecto: *era de noche*, *había un castillo*.'
+      - id: caminamos-comieron
+        type: fillBlank
+        prompt: Completa con el pretérito indefinido.
+        text: Ayer nosotros ___ (caminar) por la playa. Después, ellos ___ (comer) pastel.
+        blanks: [[caminamos], [comieron]]
+      - id: estaba
+        type: multipleChoice
+        prompt: ¿Cuál es la forma de *estar* en pretérito imperfecto para *yo*?
+        options:
+          - { text: estaba, correct: true }
+          - {
+              text: estuve,
+              feedback: '*Estuve* es pretérito indefinido. El imperfecto de *-ar* termina en *-aba*: *estaba*.',
+            }
+          - {
+              text: estaré,
+              feedback: '*Estaré* es futuro. El imperfecto de *-ar* termina en *-aba*: *estaba*.',
+            }
+      - id: ordena-volaba
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Anoche soñé que volaba sobre el mar.
+        alsoAccept: [Soñé que volaba sobre el mar anoche]
+
+  - slug: suenos-nocturnos-preposiciones
+    title: 'Preposiciones avanzadas: a pesar de, debido a, en lugar de'
+    minutes: 8
+    items:
+      - id: a-pesar-lluvia
+        type: multipleChoice
+        prompt: ___ la lluvia, fuimos al parque.
+        options:
+          - { text: A pesar de, correct: true }
+          - {
+              text: Debido a,
+              feedback: '*Debido a* explica la causa. Aquí hay una contradicción (llueve, pero fuimos): *a pesar de*.',
+            }
+          - {
+              text: En lugar de,
+              feedback: '*En lugar de* es elegir una cosa y no otra. Aquí hay una contradicción: *a pesar de*.',
+            }
+      - id: debido-vuelo
+        type: multipleChoice
+        prompt: El vuelo se retrasó ___ problemas técnicos.
+        options:
+          - { text: debido a, correct: true }
+          - {
+              text: a pesar de,
+              feedback: 'Los problemas técnicos son la causa del retraso: usa *debido a*.',
+            }
+          - {
+              text: en lugar de,
+              feedback: 'Los problemas técnicos son la causa del retraso: usa *debido a*.',
+            }
+      - id: en-lugar-cine
+        type: fillBlank
+        prompt: Completa la oración.
+        text: Decidí quedarme en casa ___ ir al cine.
+        blanks: [[en lugar de, en vez de]]
+        wordBank: [en lugar de, debido a, a pesar de]
+      - id: une-lugar
+        type: matching
+        prompt: Une cada preposición con su traducción.
+        pairs:
+          - [detrás de, מאחורי]
+          - [frente a, מול]
+          - [alrededor de, סביב]
+          - [encima de, מעל]
+          - [en lugar de, במקום]
+      - id: infinitivo
+        type: trueFalse
+        prompt: 'Después de *a pesar de* podemos usar un sustantivo o un verbo en infinitivo: *A pesar de estar cansada, salí.*'
+        answer: true
+        feedback:
+          correct: '¡Correcto! *A pesar de la lluvia* / *A pesar de estar cansada*.'
+          incorrect: '*A pesar de* puede ir con un sustantivo (*la lluvia*) o con un infinitivo (*estar*).'
+      - id: al-del
+        type: fillBlank
+        prompt: Completa con *al* o *del*.
+        text: El gato está debajo ___ sofá. Debido ___ tráfico, llegamos tarde.
+        blanks: [[del], [al]]
+        wordBank: [al, del]
+      - id: alrededor-de
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: Hay árboles alrededor de mi casa., correct: true }
+          - {
+              text: Hay árboles alrededor mi casa.,
+              feedback: 'Decimos *alrededor **de***: *alrededor de mi casa*.',
+            }
+          - {
+              text: Hay árboles alrededor a mi casa.,
+              feedback: 'Decimos *alrededor **de***, no *alrededor a*.',
+            }
+      - id: ordena-piscina
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Detrás de mi casa hay una piscina.
+        alsoAccept: [Hay una piscina detrás de mi casa]

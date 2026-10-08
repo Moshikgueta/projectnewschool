@@ -1,0 +1,589 @@
+# Cycle "Berufe", converted from the German Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: berufe
+title: Berufe
+goal: Über deinen Beruf sprechen, mit Verben im Präsens und mit Zahlen.
+position: 3
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Präsens" and "Zahlen") are NEW: the notebook has no
+    self-study exercises. They were written from the cycle's two skills, its summary
+    and its vocabulary. Please check level, wording and every right answer before
+    students see them.
+  - >-
+    The notebook calls the cycle "Klassenberufe" (a mistranslation of "Class:
+    Professions"); the title is "Berufe".
+  - >-
+    Summary rule C said "in German there are never two ordinary verbs in one
+    sentence". That is not true (Ich möchte arbeiten, Ich kann kochen). It is
+    rewritten as: in the present tense you need only one verb; do not add *sein*
+    (*Ich bin arbeite* is wrong). The claim "these three forms cover about 70% of
+    sentences at this level" was left out.
+  - >-
+    Summary, numbers: added that 16 and 17 lose letters (sechzehn, siebzehn) and
+    that 1 Uhr is said "ein Uhr"; times take *um* (um 9 Uhr).
+  - >-
+    The summary is written in Hebrew in the notebook. The rules are given in simple
+    German (ruleSummary) and the Hebrew explanations are kept as Hebrew text blocks
+    (lang he); the Hebrew translations of the examples became glosses in
+    "examples" blocks. Please check the Hebrew.
+  - >-
+    Activity 3 was called "Meine Geschäftsbudgetzahlen" (my business budget
+    numbers), which does not match its content (work times); it is now "Mein
+    Arbeitstag – Uhrzeiten".
+  - >-
+    Corrections: "Ich sehe TV" → "Ich sehe fern"; "Student A = Interviewer, Student B
+    = Bewerber" → "Schüler A fragt, Schüler B ist der Bewerber"; the question group
+    headings "Personal" and "Job" → "Person" and "Beruf"; Mori game "Ich bin Chef" →
+    "Ich bin der Chef / die Chefin". The English note "(keep super simple)" and the
+    activity goals, group forms and support ideas (picture cards, answer cards) moved
+    into teacher notes.
+  - >-
+    The general information says Präsens is practised in warm-up questions 1–3 and
+    Activity 1 or 3, Zahlen in questions 4–6. Activities 2, 3 and 4 practise both
+    skills (numbers and present tense); the activity skill tags say so.
+  - >-
+    The Mori starting message and tips were in English in the notebook; they are
+    translated into German.
+  - >-
+    Vocabulary: nouns carry their article; the professions also have the feminine
+    form (der Lehrer / die Lehrerin …), because the introduction example uses
+    "Lehrerin". "Uhr – שעה (זמן)" → "שעה (בשעון)". Please confirm.
+  - The Quizlet link lost its tracking parameter (?new).
+  - Activity times given as ranges (15–20 minutes) are recorded as 20 minutes; the introduction (5–10) as 10.
+  - >-
+    The "Antwort Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: berufe-unterricht
+    title: 'Unterricht: Berufe'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Berufe
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Präsens
+            description: 'Was machst du? *ich arbeite, du arbeitest, er / sie arbeitet*; das Verb steht an Position 2'
+          - name: Zahlen
+            description: Die Zahlen 1–20, Uhrzeiten, Stunden und Tage
+      - id: quizlet
+        type: externalLink
+        label: Berufe auf Quizlet
+        url: https://quizlet.com/br/1110976621/%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%95%D7%AA-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Ich arbeite als ___.
+        example: Ich bin Anna. Ich arbeite als Lehrerin.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Was machst du bei der Arbeit?
+            frame: Ich arbeite. / Ich helfe. / Ich schreibe. / Ich koche.
+          - question: Wo arbeitest du?
+            frame: Ich arbeite in der Schule / im Restaurant / im Krankenhaus.
+          - question: Was machst du gern bei der Arbeit?
+            frame: Ich arbeite gern. / Ich helfe gern. / Ich koche gern.
+          - question: Wie viele Stunden arbeitest du?
+            frame: Ich arbeite ___ Stunden.
+          - question: Wie viele Tage pro Woche arbeitest du?
+            frame: Ich arbeite ___ Tage pro Woche.
+          - question: Was machst du nach der Arbeit?
+            frame: Ich esse. / Ich schlafe. / Ich sehe fern. / Ich gehe nach Hause.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Wer bin ich?'
+        skills: [Präsens]
+        minutes: 20
+        steps:
+          - Wähl einen Beruf aus der Liste. Sag ihn nicht laut!
+          - Die anderen stellen Ja/Nein-Fragen (*Arbeitest du …? Kochst du? Hilfst du Menschen?*).
+          - 'Wenn du denkst, du weißt den Beruf, frag: *Bist du Kellner? Bist du Arzt?*'
+        wordBank: [Lehrer, Arzt, Kellner, Koch, Polizist, Kassierer, Ingenieur, Bäcker]
+        example: |-
+          A: *Arbeitest du im Restaurant?* → Ja.
+          B: *Servierst du Essen?* → Ja.
+          C: *Bist du Kellner?* → Ja!
+      - id: act1-questions
+        type: discussionQuestions
+        title: Ja/Nein-Fragen
+        items:
+          - question: Arbeitest du in der Schule?
+          - question: Arbeitest du im Restaurant?
+          - question: Arbeitest du im Krankenhaus?
+          - question: Arbeitest du draußen?
+          - question: Kochst du?
+          - question: Hilfst du Menschen?
+          - question: Fährst du?
+          - question: Schreibst du?
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Beruf und Arbeitsplatz – Zahlen'
+        skills: [Zahlen, Präsens]
+        minutes: 20
+        steps:
+          - Vervollständige die drei Sätze unten.
+          - 'Sag der Gruppe zwei Sätze: deinen Beruf, deinen Arbeitsplatz und wie viele Personen dort arbeiten.'
+        example: |-
+          *Ich bin Koch. Ich arbeite im Restaurant.*
+          *Im Restaurant arbeiten 5 Personen.*
+      - id: act2-sentences
+        type: discussionQuestions
+        items:
+          - question: Welcher Beruf?
+            frame: Ich bin ___.
+          - question: Wo arbeitest du?
+            frame: Ich arbeite im / in der ___.
+          - question: Wie viele Personen arbeiten dort?
+            frame: Dort arbeiten ___ Personen.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Mein Arbeitstag – Uhrzeiten'
+        skills: [Zahlen, Präsens]
+        minutes: 20
+        steps:
+          - Vervollständige die Sätze unten mit deinen Uhrzeiten.
+          - Arbeitet zu zweit. Lies deinem Partner / deiner Partnerin deine 4 Sätze vor.
+          - 'Die Lehrkraft fragt: *Wer beginnt früh? Wer macht spät Pause?* Zeig mit der Hand.'
+        example: |-
+          *Ich beginne um 9 Uhr.*
+          *Ich mache um 12 Uhr Pause.*
+          *Ich arbeite 6 Stunden.*
+          *Ich gehe um 15 Uhr nach Hause.*
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Mein Arbeitstag
+        items:
+          - question: Ich beginne um ___ Uhr.
+          - question: Ich mache um ___ Uhr Pause.
+          - question: Ich arbeite ___ Stunden.
+          - question: Ich gehe um ___ Uhr nach Hause.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Vorstellungsgespräch – Zahlen und Präsens'
+        skills: [Präsens, Zahlen]
+        minutes: 20
+        steps:
+          - Arbeitet zu zweit. Schüler A fragt, Schüler B ist der Bewerber / die Bewerberin.
+          - B bekommt eine Berufskarte. A stellt die Fragen unten.
+          - Tauscht die Rollen. Neuer Beruf, neue Fragen.
+        wordBank: [Lehrer, Arzt, Koch, Kellner, Polizist, Kassierer, Bäcker]
+        example: |-
+          A: *Wo arbeitest du?*
+          B: *Ich arbeite im Krankenhaus.*
+          A: *Wie viele Stunden arbeitest du?*
+          B: *Ich arbeite 40 Stunden.*
+          A: *Arbeitest du im Team?*
+          B: *Ja.*
+      - id: act4-questions
+        type: discussionQuestions
+        title: Fragen für das Vorstellungsgespräch
+        items:
+          - question: 'Person: Wie heißt du?'
+            frame: Ich heiße ___.
+          - question: 'Beruf: Was machst du?'
+            frame: Ich bin ___. / Ich ___.
+          - question: 'Beruf: Wo arbeitest du?'
+            frame: Ich arbeite im / in der ___.
+          - question: 'Zahlen: Wie viele Stunden arbeitest du?'
+            frame: Ich arbeite ___ Stunden.
+          - question: 'Zahlen: Wie viele Tage arbeitest du?'
+            frame: Ich arbeite ___ Tage.
+          - question: Arbeitest du im Team?
+            frame: Ja. / Nein.
+          - question: Arbeitest du drinnen oder draußen?
+            frame: Ich arbeite drinnen / draußen.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Präsens** (Aufwärmfragen 1–3, Aktivität 1
+          oder 3) und **Zahlen** (Aufwärmfragen 4–6). Aktivitäten 2, 3 und 4 üben beide
+          Fertigkeiten.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Gib zuerst dein eigenes Beispiel, dann ist jeder Schüler dran.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: >-
+          Stell jedem Schüler mindestens zwei Fragen. Halte die Antworten sehr einfach (A1):
+          ein Verb, ein Ort, eine Zahl.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Ziel: einfache Ja/Nein-Fragen und Berufe wiederholen. Ganze Klasse oder Gruppen.
+          Die Schüler können den Beruf auf einen Zettel schreiben. Schreib die Fragen an
+          die Tafel und erkläre: «Stellt nur Ja/Nein-Fragen mit *arbeitest du*, *kochst
+          du*, *hilfst du*.» Für schwächere Schüler: Zeig 4 Bilder; sie wählen aus 4
+          Berufen.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Ziel: Berufe und Zahlen (wie viele Personen?). Einzelarbeit, dann Plenum.
+          Korrigiere Verb und Zahl. Schwächere Schüler bekommen Bildkarten (Restaurant,
+          Schule, Krankenhaus, Bäckerei …).
+      - id: n-act3
+        anchor: act3
+        text: 'Ziel: Uhrzeiten und einfache Sätze im Präsens. Einzelarbeit, dann Paararbeit; am Ende ein kurzer Vergleich in der Gruppe.'
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Ziel: einfache Fragen im Präsens, Zahlen und Berufe. Schreib die Fragen an die
+          Tafel. Mini-Version für schwächere Schüler: Gib Antwortkarten («Ich arbeite 5
+          Stunden.» «Ich arbeite in der Schule.» «Ich arbeite im Team.»); die Schüler
+          wählen nur eine Karte und lesen sie vor.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: berufe-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-praesens
+        type: ruleSummary
+        skill: Präsens
+        rules:
+          - text: 'Im deutschen Satz steht das Verb **immer an Position 2**: Subjekt + Verb + Rest.'
+            examples:
+              [
+                Ich arbeite im Restaurant.,
+                Du hilfst Menschen.,
+                Er kocht im Restaurant.,
+                Sie schreibt im Büro.,
+              ]
+          - text: Auch wenn der Satz mit einem anderen Wort beginnt, bleibt das Verb an Position 2.
+            examples: [Heute arbeite ich im Restaurant., Im Restaurant arbeite ich.]
+          - text: 'Die Endung des Verbs hängt von der Person ab: ich arbeit**e**, du arbeit**est**, er / sie arbeit**et**.'
+          - text: 'Im Präsens brauchst du nur **ein** Verb. Benutze *sein* nicht mit einem anderen Verb.'
+            examples: ['*Ich bin arbeite.* ✗ → Ich arbeite. ✓', '*Sie ist kocht.* ✗ → Sie kocht. ✓']
+      - id: praesens-he
+        type: text
+        lang: he
+        text: >-
+          בגרמנית הפועל תמיד נמצא במקום השני במשפט: נושא + פועל + המשך המשפט. גם אם
+          המשפט מתחיל במילה אחרת, הפועל נשאר במקום השני. בהווה יש פועל אחד בלבד: לא
+          אומרים "Ich bin arbeite" (אני הוא עובד), אלא "Ich arbeite".
+      - id: arbeiten-table
+        type: table
+        caption: arbeiten (לעבוד)
+        header: [Person, arbeiten, Beispiel]
+        rows:
+          - [ich, arbeite, Ich arbeite 6 Stunden.]
+          - [du, arbeitest, Du arbeitest im Krankenhaus.]
+          - [er / sie, arbeitet, Er arbeitet im Team.]
+      - id: praesens-examples
+        type: examples
+        items:
+          - { text: Ich arbeite im Restaurant., gloss: אני עובד במסעדה }
+          - { text: Du hilfst Menschen., gloss: אתה עוזר לאנשים }
+          - { text: Er kocht im Restaurant., gloss: הוא מבשל במסעדה }
+          - { text: Sie schreibt im Büro., gloss: היא כותבת במשרד }
+          - { text: Heute arbeite ich im Restaurant., gloss: היום אני עובד במסעדה }
+          - { text: Du arbeitest im Krankenhaus., gloss: אתה עובד בבית חולים }
+          - { text: Er arbeitet im Team., gloss: הוא עובד בצוות }
+      - id: rules-zahlen
+        type: ruleSummary
+        skill: Zahlen
+        rules:
+          - text: Die Zahlen 1–20 sind die Basis für alle anderen Zahlen.
+            examples:
+              [
+                'eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn',
+                'elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn, zwanzig',
+              ]
+          - text: '13–19: Zahl + *zehn* (dreizehn). Achtung: **sechzehn** und **siebzehn** sind kürzer.'
+          - text: 'Uhrzeit: Zahl + **Uhr**. Für „wann?“ sagen wir **um** … Uhr. 1 Uhr = *ein Uhr*.'
+            examples: [3 Uhr, 9 Uhr, 14 Uhr, Ich beginne um 9 Uhr.]
+          - text: 'Stunden und Tage: *Ich arbeite ___ Stunden. Ich arbeite ___ Tage.*'
+            examples: [Ich arbeite 6 Stunden., Ich arbeite 5 Tage.]
+      - id: zahlen-he
+        type: text
+        lang: he
+        text: >-
+          המספרים 1–20 הם הבסיס לכל שאר המספרים. 13–19: מספר + zehn. שעה: מספר + Uhr,
+          ו"בשעה" = um: Ich beginne um 9 Uhr – אני מתחיל ב־9. כמה שעות? Ich arbeite ___
+          Stunden. כמה ימים? Ich arbeite ___ Tage.
+      - id: remember
+        type: callout
+        tone: tip
+        title: Ganz kurz
+        text: |-
+          **Präsens:** Das Verb steht an Position 2. *Ich arbeite / Du arbeitest / Er arbeitet.*
+          **Zahlen:** 1–20 und Uhrzeiten. *Ich arbeite 6 Stunden.*
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Wiederhole die zwei Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: berufe-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-beruf
+        type: aiTutorPrompt
+        title: Mein Beruf
+        message: >-
+          Hallo Mori! Ich möchte auf Deutsch über meinen Beruf sprechen. Bitte stell mir
+          einfache Fragen im Präsens und mit Zahlen. Korrigiere bitte meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Kannst du mir mehr Fragen stellen?**
+          Du brauchst Hilfe? Schick: **Kannst du es auf Hebräisch erklären, aber den Satz auf Deutsch schreiben?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Zusätzliche Übungen
+      - id: mori-raten
+        type: aiTutorPrompt
+        title: Errate den Beruf
+        intro: Denk an einen Beruf und schick diese Nachricht. Dann gib Mori Hinweise.
+        message: Hey Mori! Ich denke an einen Beruf. Rate mal, welcher!
+      - id: raten-example
+        type: examples
+        items:
+          - text: Ich arbeite im Krankenhaus.
+          - text: Ich helfe Menschen.
+          - text: → Arzt!
+      - id: mori-interview
+        type: aiTutorPrompt
+        title: Mini-Interview
+        intro: Schick diese Nachricht. Dann stell Mori 3–4 Fragen.
+        message: Hallo Mori! Wir machen ein Interview. Ich bin der Chef / die Chefin. Welchen Job möchtest du?
+      - id: interview-questions
+        type: examples
+        items:
+          - text: Wo arbeitest du?
+          - text: Was machst du?
+          - text: Wie viele Stunden arbeitest du?
+          - text: Arbeitest du gern?
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: berufe-uebung
+    book: workbook
+    title: 'Übung: Berufe'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-praesens
+        type: activity
+        activity: berufe-praesens
+      - id: ex-zahlen
+        type: activity
+        activity: berufe-zahlen
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: berufe-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für Berufe
+        glossLang: he
+        link: https://quizlet.com/br/1110976621/%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%95%D7%AA-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &berufe-words
+          - { term: der Lehrer / die Lehrerin, gloss: מורה }
+          - { term: der Arzt / die Ärztin, gloss: רופא / רופאה }
+          - { term: der Kellner / die Kellnerin, gloss: מלצר / מלצרית }
+          - { term: der Koch / die Köchin, gloss: טבח / טבחית }
+          - { term: der Polizist / die Polizistin, gloss: שוטר / שוטרת }
+          - { term: der Kassierer / die Kassiererin, gloss: קופאי / קופאית }
+          - { term: der Ingenieur / die Ingenieurin, gloss: מהנדס / מהנדסת }
+          - { term: der Bäcker / die Bäckerin, gloss: אופה }
+          - { term: arbeiten, gloss: לעבוד }
+          - { term: helfen, gloss: לעזור }
+          - { term: schreiben, gloss: לכתוב }
+          - { term: kochen, gloss: לבשל }
+          - { term: servieren, gloss: להגיש }
+          - { term: reparieren, gloss: לתקן }
+          - { term: verkaufen, gloss: למכור }
+          - { term: unterrichten, gloss: ללמד }
+          - { term: fahren, gloss: לנסוע }
+          - { term: schlafen, gloss: לישון }
+          - { term: die Schule, gloss: בית ספר }
+          - { term: das Restaurant, gloss: מסעדה }
+          - { term: das Krankenhaus, gloss: בית חולים }
+          - { term: das Geschäft, gloss: חנות }
+          - { term: die Bäckerei, gloss: מאפייה }
+          - { term: der Arbeitsplatz, gloss: מקום עבודה }
+          - { term: die Stunde, gloss: שעה }
+          - { term: der Tag, gloss: יום }
+          - { term: die Uhr, gloss: שעה (בשעון) }
+          - { term: die Pause, gloss: הפסקה }
+          - { term: beginnen, gloss: להתחיל }
+          - { term: wo, gloss: איפה }
+          - { term: wie viele, gloss: כמה }
+          - { term: was, gloss: מה }
+
+vocabulary:
+  - slug: berufe
+    title: Berufe
+    items: *berufe-words
+
+activities:
+  - slug: berufe-praesens
+    title: 'Präsens: ich arbeite, du arbeitest, er arbeitet'
+    minutes: 8
+    items:
+      - id: er-kocht
+        type: multipleChoice
+        prompt: Er ___ im Restaurant.
+        options:
+          - { text: kocht, correct: true }
+          - { text: koche, feedback: '*koche* passt zu *ich*. Für *er* sagen wir *er kocht*.' }
+          - { text: kochst, feedback: '*kochst* passt zu *du*. Für *er* sagen wir *er kocht*.' }
+      - id: du-arbeitest
+        type: multipleChoice
+        prompt: Du ___ im Krankenhaus.
+        options:
+          - { text: arbeitest, correct: true }
+          - {
+              text: arbeite,
+              feedback: '*arbeite* passt zu *ich*. Für *du* sagen wir *du arbeitest*.',
+            }
+          - {
+              text: arbeitet,
+              feedback: '*arbeitet* passt zu *er / sie*. Für *du* sagen wir *du arbeitest*.',
+            }
+      - id: ich-arbeite
+        type: fillBlank
+        prompt: Ergänze das Verb *arbeiten*.
+        text: Ich ___ in der Schule.
+        blanks: [[arbeite]]
+      - id: sie-schreibt
+        type: fillBlank
+        prompt: Ergänze das Verb *schreiben*.
+        text: Sie ___ im Büro.
+        blanks: [[schreibt]]
+      - id: bin-arbeite
+        type: trueFalse
+        prompt: 'Der Satz *Ich bin arbeite.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Im Präsens brauchst du nur ein Verb: *Ich arbeite.*'
+          incorrect: 'Benutze *sein* nicht mit einem anderen Verb. Richtig ist: *Ich arbeite.*'
+      - id: position-2
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Heute arbeite ich im Restaurant., correct: true }
+          - {
+              text: Heute ich arbeite im Restaurant.,
+              feedback: 'Das Verb steht an Position 2: *Heute arbeite ich …*',
+            }
+          - {
+              text: Heute arbeitet ich im Restaurant.,
+              feedback: 'Für *ich* sagen wir *arbeite*: *Heute arbeite ich …*',
+            }
+      - id: wer-macht-was
+        type: matching
+        prompt: Was macht wer?
+        pairs:
+          - [Der Lehrer, unterrichtet in der Schule.]
+          - [Der Arzt, hilft Menschen im Krankenhaus.]
+          - [Der Kellner, serviert Essen.]
+          - [Der Bäcker, arbeitet in der Bäckerei.]
+          - [Der Kassierer, arbeitet im Geschäft.]
+      - id: ordne-restaurant
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Ich arbeite im Restaurant.
+
+  - slug: berufe-zahlen
+    title: 'Zahlen: 1–20, Uhrzeiten, Stunden und Tage'
+    minutes: 8
+    items:
+      - id: zahlen-1-20
+        type: matching
+        prompt: Welche Zahl passt?
+        pairs:
+          - ['3', drei]
+          - ['7', sieben]
+          - ['11', elf]
+          - ['12', zwölf]
+          - ['20', zwanzig]
+      - id: sechzehn
+        type: multipleChoice
+        prompt: Wie schreibt man 16?
+        options:
+          - { text: sechzehn, correct: true }
+          - { text: sechszehn, feedback: '16 ist kürzer: *sechzehn* (ohne -s).' }
+          - { text: sechsundzehn, feedback: '13–19 sind Zahl + *zehn* in einem Wort: *sechzehn*.' }
+      - id: siebzehn
+        type: fillBlank
+        prompt: Schreib die Zahl als Wort.
+        text: 17 = ___
+        blanks: [[siebzehn]]
+      - id: zahl-uhr
+        type: trueFalse
+        prompt: 'Für die Uhrzeit sagen wir Zahl + *Uhr*: *Ich beginne um 9 Uhr.*'
+        answer: true
+        feedback:
+          correct: Richtig! *9 Uhr*, *14 Uhr*.
+          incorrect: 'Die Uhrzeit ist Zahl + *Uhr*: *um 9 Uhr*.'
+      - id: um-uhr
+        type: multipleChoice
+        prompt: Ich beginne ___ 9 Uhr.
+        options:
+          - { text: um, correct: true }
+          - {
+              text: am,
+              feedback: '*am* steht vor einem Datum (am 5. März). Vor einer Uhrzeit steht *um*.',
+            }
+          - {
+              text: im,
+              feedback: '*im* steht vor einem Monat (im März). Vor einer Uhrzeit steht *um*.',
+            }
+      - id: stunden-tage
+        type: fillBlank
+        prompt: Ergänze *Stunden* oder *Tage*.
+        text: Ich arbeite acht ___ pro Tag und fünf ___ pro Woche.
+        blanks: [[Stunden], [Tage]]
+        wordBank: [Stunden, Tage]
+      - id: ordne-uhr
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Ich gehe um 15 Uhr nach Hause.
+      - id: meine-stunden
+        type: shortAnswer
+        prompt: Wie viele Stunden arbeitest du? Schreib einen Satz.

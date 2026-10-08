@@ -1,0 +1,580 @@
+# Cycle "Rutina", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: rutina
+title: Rutina
+goal: Hablar de tu rutina con números, días de la semana y verbos reflexivos.
+position: 6
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Números y días de la semana" and "Verbos
+    reflexivos y preposiciones") are NEW: the notebook has no self-study exercises.
+    They were written from the cycle's two skills, its summary rules and its
+    vocabulary. Please check level, wording and every right answer before students
+    see them.
+  - >-
+    Skill names: the general information says "Números y fechas, Verbos reflexivos y
+    preposiciones"; the summary says "Números y días de la semana". The summary
+    names are used. The notebook gives no "Practicado con" plan, no recommended
+    combinations and no activity times; the teacher note suggests choosing 2–3 of
+    the 5 activities. Please confirm.
+  - >-
+    The warm-up questions had no answer frames in the notebook; frames were added.
+    Frames were also added for the activities so students can type their sentences.
+  - >-
+    Activity 1: the editorial line "Mejora: más simple que escribir cronogramas
+    largos…" is a note about the notebook, not for students or the lesson; it was
+    left out.
+  - >-
+    Activity 3 questions were ungrammatical ("¿Qué siempre haces por la mañana?");
+    rewritten as "¿Qué haces siempre por la mañana?", "¿Qué no haces nunca…?",
+    "¿Qué haces a veces…?", "¿Qué comes normalmente…?".
+  - >-
+    Activity 4: "hablo por teléfono en la mañana" → "por la mañana" (the form taught
+    in this course). Activity 5: "7 a.m." → "7 a. m.".
+  - >-
+    Summary skill 1: the rules were addressed with "usted" ("Repita… úselos…
+    ayudarle"); rewritten with "tú". Summary skill 2 said "2 reglas" but has
+    four parts (reflexive verbs, time and "a", frequency adverbs); all four are kept.
+    The paraphrases "yo despierto a mí mismo / él baña a sí mismo" were dropped
+    (they are not natural Spanish). The table "despertarse" (yo me despierto… ellos
+    se despiertan) was added from the pronoun list; please confirm.
+  - >-
+    Summary, frequency adverbs: the notebook says that with "ser" the adverb goes
+    after the verb ("Ella es siempre puntual"). Both orders are correct ("Ella
+    siempre es puntual" is the more common), so the rule now says the adverb usually
+    goes before the verb and with "ser" it can also go after. Please confirm.
+  - >-
+    Mori: the notebook has no tips (more questions / explain in Hebrew); the
+    standard tips callout of the other cycles was added. "Quiero practicar hablar
+    sobre rutinas" → "Quiero practicar cómo hablar de rutinas". Extra activity 1
+    ("Tú dices oraciones…") and 2 ("tú me haces preguntas") were rewritten as
+    requests to Mori ("Di…", "hazme…").
+  - >-
+    Links: the Quizlet link lost its "?new" parameter. The wheel of names link
+    (wheelofnames.com) is kept as the Activity 2 resource.
+  - >-
+    The "Respuesta del estudiante 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: rutina-clase
+    title: 'Clase: Rutina'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Rutina
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Números y días de la semana
+            description: 'La hora y los días: *Me despierto a las 7. Los lunes estudio español.*'
+          - name: Verbos reflexivos y preposiciones
+            description: '*me, te, se* + verbo; *a las* y *son las*; *siempre, a veces, nunca*'
+      - id: quizlet
+        type: externalLink
+        label: Rutina en Quizlet
+        url: https://quizlet.com/il/1063826487/espanol-basico-rutina-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Estudio español ___ veces por semana, el / los ___.
+        example: Soy Dana. Estudio español dos veces por semana, los lunes y los jueves.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿A qué hora te despiertas?
+            frame: Me despierto a las ___.
+          - question: ¿Te cepillas los dientes antes o después del desayuno?
+            frame: Me cepillo los dientes antes / después del desayuno.
+          - question: ¿Qué haces todos los martes?
+            frame: Todos los martes ___.
+          - question: ¿Qué haces por la mañana?
+            frame: Por la mañana ___.
+          - question: ¿Qué haces por la noche?
+            frame: Por la noche ___.
+          - question: ¿A qué hora te vas a dormir?
+            frame: Me voy a dormir a las ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: ¡Un día feliz, para mí y para él / ella!'
+        skills: [Números y días de la semana, Verbos reflexivos y preposiciones]
+        steps:
+          - Escribe 5 frases sobre tu día.
+          - En parejas, compartan su rutina y hagan una lista de **similitudes y diferencias**.
+          - Cada pareja presenta sus diferencias al grupo.
+        example: |-
+          *Me despierto a las 7, me cepillo los dientes, desayuno a las 8, voy a la escuela a las 9 y me acuesto a las 11.*
+          *Ella se despierta a las 6, pero yo me despierto a las 7.*
+      - id: act1-day
+        type: discussionQuestions
+        title: Mi día
+        items:
+          - question: Me despierto a las ___.
+          - question: Desayuno a las ___.
+          - question: Voy a ___ a las ___.
+          - question: Por la tarde ___.
+          - question: Me acuesto a las ___.
+          - question: ¿En qué es diferente tu pareja?
+            frame: Él / Ella se ___ a las ___, pero yo me ___ a las ___.
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: La ruleta de rutinas'
+        skills: [Números y días de la semana]
+        steps:
+          - Repite en coro las frases modelo de tu profesor.
+          - 'Gira la ruleta. Hay 4 categorías: **mañana**, **tarde**, **noche** y **fin de semana**.'
+          - 'Según la categoría, di **una frase con acción + hora**.'
+        resource:
+          label: La ruleta de rutinas
+          url: https://wheelofnames.com/cg8-gv2
+        example: |-
+          **Mañana:** *Me levanto a las 8.*
+          **Tarde:** *Estudio español a las 3.*
+          **Noche:** *Ceno a las 8.*
+          **Fin de semana:** *El domingo juego al fútbol a las 10.*
+      - id: act2-frames
+        type: discussionQuestions
+        title: Tu frase
+        items:
+          - question: 'Mañana: Por la mañana ___ a las ___.'
+          - question: 'Tarde: Por la tarde ___ a las ___.'
+          - question: 'Noche: Por la noche ___ a las ___.'
+          - question: 'Fin de semana: El sábado / El domingo ___ a las ___.'
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Mis hábitos y rutinas'
+        skills: [Verbos reflexivos y preposiciones]
+        steps:
+          - En parejas o tríos, pregunta y responde con los adverbios de frecuencia.
+          - Responde con frases completas.
+          - Cada grupo comparte con la clase **una cosa en común** y **una diferencia**.
+        wordBank: [siempre, nunca, a veces, normalmente, todos los días]
+        example: |-
+          *Siempre desayuno café. A veces voy al cine.*
+          *Nosotros siempre desayunamos en casa, pero nunca estudiamos por la mañana.*
+          *Ella a veces hace ejercicio; yo nunca hago ejercicio.*
+      - id: act3-questions
+        type: discussionQuestions
+        items:
+          - question: ¿Qué haces siempre por la mañana?
+            frame: Siempre ___ por la mañana.
+          - question: ¿Qué no haces nunca en la escuela / la universidad / el trabajo?
+            frame: Nunca ___ en ___.
+          - question: ¿Qué haces a veces los fines de semana?
+            frame: A veces ___ los fines de semana.
+          - question: ¿Qué comes normalmente en el desayuno?
+            frame: Normalmente desayuno ___.
+          - question: ¿Qué actividad haces todos los días?
+            frame: Todos los días ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Yo nunca…'
+        skills: [Verbos reflexivos y preposiciones]
+        steps:
+          - Levanta **3 dedos**.
+          - Un estudiante dice una frase con **«Yo nunca…»** en presente simple.
+          - Si tú **sí** lo haces, baja un dedo y responde en afirmativo.
+          - El turno pasa al siguiente estudiante.
+          - Gana el último que todavía tiene dedos arriba.
+        example: |-
+          **A:** *Yo nunca leo libros por la noche.*
+          **B:** *¡Yo sí! Yo leo libros por la noche.*
+      - id: act4-frames
+        type: discussionQuestions
+        items:
+          - question: Yo nunca ___.
+          - question: ¡Yo sí! Yo ___.
+      - id: act5
+        type: classActivity
+        title: 'Actividad 5: ¿Qué tan diferentes o similares son nuestras rutinas?'
+        skills: [Números y días de la semana, Verbos reflexivos y preposiciones]
+        steps:
+          - En parejas, pregúntense por turnos sobre su rutina diaria. Responde en primera persona.
+          - Mientras escuchas, compara las dos rutinas en tercera persona.
+          - Hagan una lista corta de cosas en común y cosas diferentes.
+          - Cada pareja comparte su lista con la clase.
+        example: |-
+          **A:** ¿A qué hora te despiertas?
+          **B:** Me despierto a las 7 a. m.
+          **A:** Ah, yo me despierto a las 6 a. m.
+          *Ella se despierta a las 7 a. m., pero yo me despierto a las 6 a. m.*
+          **En común:** Las dos desayunamos café. Vamos a la escuela por la mañana.
+          **Diferente:** Ella se despierta a las 8; yo, a las 6. Él cena a las 7; yo, a las 9.
+      - id: act5-questions
+        type: discussionQuestions
+        items:
+          - question: ¿A qué hora te despiertas?
+            frame: Me despierto a las ___.
+          - question: ¿Qué desayunas normalmente?
+            frame: Normalmente desayuno ___.
+          - question: ¿A qué hora vas a trabajar / estudiar?
+            frame: Voy a trabajar / estudiar a las ___.
+          - question: ¿Qué haces por la tarde?
+            frame: Por la tarde ___.
+          - question: ¿A qué hora te acuestas?
+            frame: Me acuesto a las ___.
+      - id: act5-list
+        type: discussionQuestions
+        title: Similitudes y diferencias
+        items:
+          - question: 'En común:'
+            frame: Los dos / Las dos ___.
+          - question: 'Diferente:'
+            frame: Él / Ella ___, pero yo ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Números y días de la semana** y **Verbos
+          reflexivos y preposiciones**. El cuaderno no da combinaciones recomendadas
+          ni tiempos: elige 2 o 3 actividades (por ejemplo, la 1 o la 2 para los
+          números, y la 3 o la 4 para los verbos y los adverbios).
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: >-
+          Muy breve: 2 oraciones por estudiante, no más de 30 segundos por persona
+          (también el profesor). Si ya se conocen, pasen directamente a las preguntas.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Es más simple que escribir cronogramas largos: el objetivo es comparar y
+          practicar la tercera persona (*ella se despierta*, *él se acuesta*).
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Usa la ruleta digital o dibuja una ruleta en la pizarra con 4 categorías
+          (mañana, tarde, noche, fin de semana). Antes de jugar, escribe en la pizarra
+          frases modelo y pide a los estudiantes que las repitan en coro: «Me despierto
+          a las 7.» «Como a la 1.» «Voy al cine el sábado.» «Duermo a las 11.» Es un
+          repaso dinámico de números y días de la semana.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Escribe en la pizarra los adverbios (siempre, nunca, a veces, normalmente,
+          todos los días) y da ejemplos en primera persona. Después, salas de
+          trabajo (breakout rooms) en parejas o tríos.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Modela primero: «Yo nunca bebo café.» «Yo nunca veo televisión por la
+          mañana.» «Yo nunca camino a la escuela.» Si alguien sí lo hace: «¡Yo sí! Yo
+          bebo café todos los días.» Ejemplos listos: Yo nunca desayuno a las 7. Yo
+          nunca bebo té. Yo nunca escucho música en el coche. Yo nunca estudio por la
+          noche. Yo nunca hablo por teléfono por la mañana. Yo nunca juego al fútbol.
+          Yo nunca voy al supermercado. Yo nunca miro series en la televisión.
+      - id: n-act5
+        anchor: act5
+        text: Al compartir, los estudiantes usan la primera persona (*yo me despierto*) y la tercera (*ella se despierta*).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: rutina-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Números y días de la semana
+        rules:
+          - text: Repite los números en voz alta y úsalos en ejemplos reales (tu edad, tu número de teléfono, la hora) para recordarlos mejor.
+          - text: Relaciona los días de la semana con las cosas que haces esos días.
+            examples: [Lunes — clases de español, Sábado — me relajo]
+          - text: >-
+              Asocia cada palabra nueva (un número o un día) con un dibujo o un color.
+              Por ejemplo, el **miércoles** puede ser verde porque vas al parque. ¡Tu
+              cerebro recuerda mejor con imágenes!
+      - id: rules-reflexive
+        type: ruleSummary
+        skill: Verbos reflexivos y preposiciones
+        rules:
+          - text: 'Un **verbo reflexivo** dice que la persona hace la acción a sí misma. Usamos el pronombre reflexivo: *me, te, se, nos, os, se*.'
+            examples:
+              [
+                '**Yo me despierto.**',
+                '**Tú te lavas** las manos (tus propias manos).',
+                '**Él se baña.**',
+              ]
+          - text: 'Diferencia con un verbo normal:'
+            examples:
+              [
+                'Verbo normal: *Yo lavo el coche* (el coche no soy yo).',
+                'Verbo reflexivo: *Yo me lavo.*',
+              ]
+          - text: '**Son las…** dice la hora de ahora. **A las…** dice a qué hora pasa algo.'
+            examples: [Son las tres., La clase es a las cinco.]
+          - text: 'También usamos **a** con algunos verbos.'
+            examples: [Juego **a** la pelota., Voy **a** la escuela., Invito **a** mi amiga.]
+          - text: 'Los adverbios de frecuencia van normalmente **antes del verbo**. Con *ser* también pueden ir después.'
+            examples:
+              - Yo **siempre** desayuno a las 8.
+              - Tú **a menudo** lees por la tarde.
+              - Él **a veces** juega al fútbol.
+              - Nosotros **nunca** comemos carne.
+              - Ella **siempre** es puntual. / Ella es **siempre** puntual.
+      - id: reflexive-table
+        type: table
+        caption: 'Despertarse: me, te, se…'
+        header: [Persona, Despertarse]
+        rows:
+          - [yo, me despierto]
+          - [tú, te despiertas]
+          - [él / ella, se despierta]
+          - [nosotros / nosotras, nos despertamos]
+          - [vosotros / vosotras, os despertáis]
+          - [ellos / ellas, se despiertan]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: rutina-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-rutina
+        type: aiTutorPrompt
+        title: Mi rutina diaria
+        message: >-
+          ¡Hola Mori! Quiero practicar cómo hablar de rutinas diarias. ¿Puedes hacerme
+          preguntas usando las habilidades Días de la semana y verbos reflexivos? Usa
+          solo presente simple.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Práctica adicional
+      - id: mori-hora
+        type: aiTutorPrompt
+        title: ¿A qué hora?
+        intro: Envía este mensaje a Mori.
+        message: >-
+          ¡Hola Mori! Di oraciones de rutina diaria sin el número o la hora (por
+          ejemplo: «Almuerzo a las ___»). Yo completo el espacio con un número y digo
+          la oración completa en presente simple. Por favor, corrígeme si cometo
+          errores.
+      - id: mori-dia
+        type: aiTutorPrompt
+        title: Un día típico
+        intro: Envía este mensaje a Mori.
+        message: >-
+          ¡Hola Mori! Te cuento cómo es un día típico para mí, con números y verbos
+          reflexivos (por ejemplo: «Me despierto a las 7 a. m. y desayuno a las 8»).
+          Por favor, hazme más preguntas para seguir la conversación y ayudarme a
+          mejorar.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: rutina-practica
+    book: workbook
+    title: 'Práctica: Rutina'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-numeros
+        type: activity
+        activity: rutina-numeros
+      - id: ex-verbos
+        type: activity
+        activity: rutina-verbos
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: rutina-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la rutina
+        glossLang: he
+        link: https://quizlet.com/il/1063826487/espanol-basico-rutina-flash-cards/
+        items: &rutina-words
+          - { term: despertarse, gloss: להתעורר }
+          - { term: levantarse, gloss: לקום }
+          - { term: cepillarse (los dientes / el pelo), gloss: לצחצח (שיניים / שיער) }
+          - { term: lavarse, gloss: לשטוף (את עצמו) }
+          - { term: ducharse, gloss: להתקלח }
+          - { term: vestirse, gloss: להתלבש }
+          - { term: acostarse, gloss: ללכת לישון }
+          - { term: dormirse, gloss: להירדם }
+          - { term: estudiar, gloss: ללמוד }
+          - { term: trabajar, gloss: לעבוד }
+          - { term: comer / almorzar, gloss: לאכול / לאכול צהריים }
+          - { term: desayunar, gloss: לאכול ארוחת בוקר }
+          - { term: cenar, gloss: לאכול ארוחת ערב }
+          - { term: descansar, gloss: לנוח }
+          - { term: jugar, gloss: לשחק }
+          - { term: mirar (la televisión / series), gloss: לראות (טלוויזיה / סדרות) }
+          - { term: por la mañana, gloss: בבוקר }
+          - { term: por la tarde, gloss: אחרי הצהריים }
+          - { term: por la noche, gloss: בלילה }
+          - { term: el fin de semana, gloss: בסוף השבוע }
+          - { term: todos los días, gloss: כל יום }
+          - { term: lunes, gloss: יום שני }
+          - { term: martes, gloss: יום שלישי }
+          - { term: miércoles, gloss: יום רביעי }
+          - { term: jueves, gloss: יום חמישי }
+          - { term: viernes, gloss: יום שישי }
+          - { term: sábado, gloss: שבת }
+          - { term: domingo, gloss: יום ראשון }
+          - { term: hora (¿A qué hora…?), gloss: שעה (באיזו שעה…?) }
+
+vocabulary:
+  - slug: rutina
+    title: Rutina
+    items: *rutina-words
+
+activities:
+  - slug: rutina-numeros
+    title: Números y días de la semana
+    minutes: 8
+    items:
+      - id: siete-once
+        type: fillBlank
+        prompt: Escribe los números en palabras.
+        text: Me despierto a las ___ (7) y me acuesto a las ___ (11).
+        blanks: [[siete], [once]]
+      - id: ocho
+        type: multipleChoice
+        prompt: Desayuno a las ___ (8).
+        options:
+          - { text: ocho, correct: true }
+          - { text: seis, feedback: '*Seis* es 6. El 8 es *ocho*.' }
+          - { text: dieciocho, feedback: '*Dieciocho* es 18. El 8 es *ocho*.' }
+      - id: manana-martes
+        type: multipleChoice
+        prompt: Hoy es lunes. Mañana es ___.
+        options:
+          - { text: martes, correct: true }
+          - { text: domingo, feedback: 'El domingo es el día **antes** del lunes.' }
+          - { text: miércoles, feedback: 'El miércoles es dos días después del lunes.' }
+      - id: dias-hebreo
+        type: matching
+        prompt: Une cada día con su nombre en hebreo.
+        pairs:
+          - [lunes, יום שני]
+          - [martes, יום שלישי]
+          - [miércoles, יום רביעי]
+          - [sábado, שבת]
+          - [domingo, יום ראשון]
+      - id: miercoles
+        type: fillBlank
+        prompt: Completa los días de la semana.
+        text: Lunes, martes, ___, jueves, viernes.
+        blanks: [[miércoles]]
+      - id: siete-dias
+        type: trueFalse
+        prompt: La semana tiene siete días.
+        answer: true
+        feedback:
+          correct: '¡Correcto! Lunes, martes, miércoles, jueves, viernes, sábado y domingo: 7 días.'
+          incorrect: 'Cuenta: lunes, martes, miércoles, jueves, viernes, sábado y domingo. Son 7.'
+      - id: ordena-sabados
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Los sábados juego al fútbol a las diez
+        alsoAccept: [Los sábados a las diez juego al fútbol]
+      - id: mi-hora
+        type: shortAnswer
+        prompt: ¿A qué hora te despiertas los lunes? Escribe una oración.
+
+  - slug: rutina-verbos
+    title: 'Verbos reflexivos y preposiciones'
+    minutes: 8
+    items:
+      - id: me-despierto
+        type: multipleChoice
+        prompt: Yo ___ despierto a las siete.
+        options:
+          - { text: me, correct: true }
+          - { text: te, feedback: '*Te* es para *tú*: *tú te despiertas*. Con *yo* usamos *me*.' }
+          - {
+              text: se,
+              feedback: '*Se* es para *él / ella*: *ella se despierta*. Con *yo* usamos *me*.',
+            }
+      - id: se-ducha
+        type: multipleChoice
+        prompt: Ella ___ ducha por la mañana.
+        options:
+          - { text: se, correct: true }
+          - { text: me, feedback: '*Me* es para *yo*. Con *ella* usamos *se*.' }
+          - { text: te, feedback: '*Te* es para *tú*. Con *ella* usamos *se*.' }
+      - id: te-nos
+        type: fillBlank
+        prompt: Completa con el pronombre reflexivo.
+        text: Tú ___ lavas las manos. Nosotros ___ acostamos a las once.
+        blanks: [[te], [nos]]
+      - id: pronombres
+        type: matching
+        prompt: Une cada persona con su pronombre reflexivo.
+        pairs:
+          - [yo, me]
+          - [tú, te]
+          - [él / ella, se]
+          - [nosotros, nos]
+          - [vosotros, os]
+      - id: lavo-coche
+        type: trueFalse
+        prompt: '*Yo lavo el coche* es un verbo reflexivo.'
+        answer: false
+        feedback:
+          correct: '¡Correcto! El coche no soy yo: es un verbo normal. Reflexivo: *Yo me lavo*.'
+          incorrect: 'El coche no soy yo, así que es un verbo normal. Un verbo reflexivo es *Yo me lavo*.'
+      - id: son-las
+        type: multipleChoice
+        prompt: ¿Qué hora es? — ___ las tres.
+        options:
+          - { text: Son, correct: true }
+          - {
+              text: A,
+              feedback: '*A las* dice a qué hora pasa algo (*la clase es a las tres*). Para la hora de ahora: *son las*.',
+            }
+          - { text: Es, feedback: 'Para las tres decimos *son las tres*.' }
+      - id: a-las
+        type: fillBlank
+        prompt: Completa con una preposición.
+        text: La clase es ___ las cinco.
+        blanks: [[a]]
+      - id: ordena-nunca
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Nosotros nunca comemos carne.

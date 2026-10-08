@@ -1,0 +1,554 @@
+# Cycle "Weather", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: weather
+title: Weather
+goal: Describe the weather with there is / there are and adjectives, and talk about temperatures and days with numbers.
+position: 10
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Describing the weather" and "Dates and numbers")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Activity 1 says "The students will receive the following chart", but the
+    notebook has no chart. A sample weekly chart (in °F) was ADDED, built around the
+    two days of the example; please check it or replace it with a real forecast.
+  - >-
+    Activity 1 example: "It's 83°F on Tuesday. It's cool." – 83°F is hot, not cool.
+    Changed to "It's hot." A teacher note gives simple °F ranges (cold, cool, warm,
+    hot); please confirm. Activities 2 and 4 use degrees Celsius, Activities 1 and 3
+    use °F, as in the notebook.
+  - >-
+    Summary, Numbers rule 1 said "The first part of 21–99 comes from 1–9". It is the
+    last part: twenty-**one** = a tens word + a number from 1 to 9, with a hyphen.
+    Rule 3 said 11–19 "don't follow a clear pattern"; it now says eleven and twelve
+    are irregular and thirteen to nineteen end in *-teen*, and should be learned by
+    heart. Please confirm the wording.
+  - >-
+    The notebook has no plan of skills per activity, no recommended combinations
+    and no activity times (only labels: NUMBERS, DESCRIBING AND NUMBERS,
+    DESCRIBING). The plan note follows the labels; no times are recorded. Please
+    confirm.
+  - >-
+    Small corrections: "The State I choose is" → "The state I chose is"; "In ___ its
+    hot/cold" → "In ___, it's hot / cold"; "This weather is great to go hiking and
+    swim in the pool" → "This weather is great for hiking and swimming in the pool"
+    (also "great for skiing and drinking hot chocolate"); the examples of Activity 2
+    kept "I like this state / I don't like this state" – now each example says one;
+    "a TV name Show" → "a name for the TV show"; Arizona and Alaska temperatures
+    are marked °C.
+  - >-
+    Mori extra practice: the two "Chatbot prompts" asked Mori to talk ("Can you tell
+    me about the weather…", "What is the weather like this week in your city?"),
+    but the instructions say the student talks. The messages were rewritten so the
+    student tells Mori and Mori corrects. Please confirm.
+  - >-
+    The warm-up questions had no answer frames; frames were added. "How is the
+    weather today in ___? How is the temperature there?" → "What is the weather like
+    today in ___? What is the temperature there?"
+  - >-
+    Vocabulary: "To hike – לטייל-לעשות מסלול" → "לטייל ברגל / לעשות מסלול";
+    "Reporter – כתבת" → "כתב / כתבת"; "Anchor – מגיש" → "מגיש / מגישה"; "Indoors –
+    בתוך הבית" → "בפנים"; "Breeze – בריזה" → "רוח קלה / בריזה"; "State – מדינה" →
+    "מדינה (בארצות הברית)". The days of the week (a second table in the notebook)
+    are in the same list.
+  - >-
+    Links: the Quizlet link lost its tracking parameter (?new).
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: weather-class
+    title: 'Class: Weather'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Weather
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Describing sentences
+            description: '*There is / there are* and adjectives: *There is a light breeze. It is a sunny day.*'
+          - name: Dates and numbers
+            description: 'Temperatures and days: *twenty-one, thirty, fifteen degrees; on Monday*'
+      - id: quizlet
+        type: externalLink
+        label: Weather words on Quizlet
+        url: https://quizlet.com/il/1029854436/basic-english-weather-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I like sunny / rainy days because ___.
+        example: I am Dana. I like sunny days because I like to go to the park.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Do you prefer hot or cold weather? Why?
+            frame: I prefer ___ weather because ___.
+          - question: What is the weather like today in ___ (your city)? What is the temperature there?
+            frame: Today in ___, it is ___. It is ___ degrees.
+          - question: Do you prefer to be outdoors or indoors in your free time? Why?
+            frame: I prefer to be outdoors / indoors because ___.
+          - question: What do you do on cold days?
+            frame: On cold days, I ___.
+          - question: What do you do on warm days?
+            frame: On warm days, I ___.
+          - question: What's your favorite season? Why?
+            frame: My favorite season is ___ because ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: The weather report'
+        skills: [Dates and numbers]
+        steps:
+          - Look at the weather chart below.
+          - Your teacher asks you about the weather on one day. Answer, then ask another student about another day.
+        example: |-
+          *Teacher: How's the weather on Sunday?*
+          *Student 1: It's 68°F on Sunday. It's warm. How's the weather on Tuesday?*
+          *Student 2: It's 83°F on Tuesday. It's hot. How's the weather on Friday?*
+      - id: act1-chart
+        type: table
+        caption: This week's weather
+        header: [Day, Weather, Temperature]
+        rows:
+          - [Sunday, sunny, 68°F]
+          - [Monday, cloudy, 59°F]
+          - [Tuesday, sunny, 83°F]
+          - [Wednesday, rainy, 54°F]
+          - [Thursday, windy, 61°F]
+          - [Friday, sunny, 90°F]
+          - [Saturday, cloudy, 72°F]
+      - id: act1-frames
+        type: discussionQuestions
+        items:
+          - question: How's the weather on ___?
+            frame: It's ___°F on ___. It's ___.
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: So many states…'
+        skills: [Describing sentences, Dates and numbers]
+        steps:
+          - Choose a state of the United States.
+          - Complete the sentences below.
+          - Share with the whole group.
+        example: |-
+          *The state I chose is Arizona. I like this state because I like the desert and sunny days. In Arizona, it's hot. The maximum temperature is 45 degrees (°C). The minimum temperature is 10 degrees. This weather is great for hiking and swimming in the pool.*
+
+          *The state I chose is Alaska. I don't like this state because I don't like the cold, but the mountains are beautiful. In Alaska, it's cold. The maximum temperature is 15 degrees (°C). The minimum temperature is -30 degrees. This weather is great for skiing and drinking hot chocolate.*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: My state
+        items:
+          - question: The state I chose is ___.
+          - question: I like / don't like this state because ___.
+          - question: In ___, it's hot / cold.
+          - question: The maximum temperature is ___ degrees.
+          - question: The minimum temperature is ___ degrees.
+          - question: This weather is great for ___.
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: TV simulation'
+        skills: [Describing sentences, Dates and numbers]
+        steps:
+          - Together, choose a name for the TV show and 4 cities or countries (one for each reporter).
+          - One student is the studio anchor. The other students are reporters in the cities, and describe the weather there.
+          - Act out the weather show. Use the frames below.
+      - id: act3-example
+        type: dialogue
+        lines:
+          - speaker: Studio anchor
+            text: "Good morning! Welcome to **Weather Around the World**! I'm **Sarah**, live from our studio. Let's check the weather! First, let's go to **New York**. **David**, how's the weather?"
+          - speaker: Field reporter
+            text: "Hello from **New York**! It's **cloudy** today. The high is **72°F** and the low is **60°F**. It's a great day to **walk in the park**! Back to you!"
+          - speaker: Studio anchor
+            text: "Wow, that sounds **nice**! Thanks, **David**! Let's go to our next city…"
+          - speaker: New reporter
+            text: "Hello from **Tokyo**! It's **rainy** today. The high is **65°F** and the low is **55°F**. It's a great day to **stay inside and read a book**! Back to you!"
+          - speaker: Studio anchor
+            text: "That's all for today! Stay safe and enjoy the weather. See you next time!"
+      - id: act3-frames
+        type: discussionQuestions
+        title: Weather around the world
+        items:
+          - question: 'Studio anchor:'
+            frame: Good morning! Welcome to ___! I'm ___, live from our studio. Let's check the weather! First, let's go to ___ (city). ___ (name), how's the weather?
+          - question: 'Field reporter:'
+            frame: Hello from ___ (city)! It's ___ (weather) today. The high is ___° and the low is ___°. It's a great day to ___ (activity)! Back to you!
+          - question: 'Studio anchor:'
+            frame: Wow, that sounds hot / cold / nice! Thanks, ___ (name)! Let's go to our next city…
+          - question: 'Studio anchor (wrap-up):'
+            frame: That's all for today! Stay safe and enjoy the weather. See you next time!
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: My perfect place'
+        skills: [Describing sentences]
+        steps:
+          - Dream a little! Think of your perfect place.
+          - Complete the sentences below and share them with the group.
+        example: |-
+          *My perfect place is in **the mountains**.*
+          *There, it is **chilly**.*
+          *The days are **cloudy** and sometimes **sunny**.*
+          *This place is **outdoors**.*
+          *It has **a big lake, a cozy cabin and a beautiful forest**.*
+          *My **dog** comes with me to my perfect place every **weekend**.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: My perfect place
+        items:
+          - question: My perfect place is in ___.
+          - question: There, it is hot / cold / warm / chilly.
+          - question: The days are sunny / rainy / cloudy.
+          - question: This place is indoors / outdoors.
+          - question: It has a ___, a ___ and a ___.
+          - question: My ___ comes with me to my perfect place every ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Describing sentences** (Activities 2, 3 and 4) and
+          **Dates and numbers** (Activities 1, 2 and 3). The notebook gives no
+          recommended combinations or times: choose 2 or 3 activities.
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first, then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          The chart is a sample (the original notebook had none); you can share a real
+          forecast instead. Simple guide in °F: under 50 = cold, 50–65 = cool, 65–80 =
+          warm, over 80 = hot. Ask the first question, then each student asks the next.
+      - id: n-act2
+        anchor: act2
+        text: Students can look up the temperatures online. Each student shares their state with the whole group.
+      - id: n-act3
+        anchor: act3
+        text: Choose as many cities as there are reporters. Read the example first, then let the students run the show.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: weather-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-describing
+        type: ruleSummary
+        skill: Describing sentences
+        rules:
+          - text: 'We use **there is** (one thing) and **there are** (more than one thing) to talk about the weather or what is happening outside.'
+            examples:
+              - There is a storm today.
+              - There are clouds and rain in the forecast.
+              - There is a light breeze in the air, and there are heavy clouds in the sky.
+          - text: 'Adjectives describe nouns: how the weather feels, looks or sounds. They go **before** the noun. Use them to give more details.'
+            examples:
+              - A windy day. A rainy afternoon.
+              - The weather is bright and sunny, perfect for a picnic.
+              - There's a warm, sunny day ahead, with a gentle breeze.
+          - text: After you describe the weather, add a verb to say what you **can do**.
+            examples:
+              [
+                The sky is clear and the temperature is high. You can go swimming and enjoy the sunshine.,
+              ]
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Dates and numbers
+        rules:
+          - text: 'Numbers from 21 to 99 = a tens word + a number from 1 to 9, with a hyphen (-).'
+            examples:
+              - twenty-one (21), thirty-five (35), ninety-eight (98)
+              - It's twenty-seven degrees now.
+          - text: 'Tens (20, 30, 40…) end in **-ty**: twenty, thirty, forty, fifty…'
+            examples:
+              [
+                It's sixty (60) degrees today – perfect for a walk!,
+                It's eighty (80) degrees – beach weather!,
+              ]
+          - text: '**Eleven** (11) and **twelve** (12) are irregular, and **thirteen** to **nineteen** (13–19) end in **-teen**. Learn them by heart.'
+            examples: [It's fifteen degrees tonight – so cold!, It's nineteen degrees now.]
+      - id: numbers-table
+        type: table
+        caption: Numbers
+        header: [11–19, Tens, 21–99]
+        rows:
+          - [eleven (11), twenty (20), twenty-one (21)]
+          - [twelve (12), thirty (30), thirty-five (35)]
+          - [thirteen (13), forty (40), forty-two (42)]
+          - [fifteen (15), fifty (50), fifty-three (53)]
+          - [nineteen (19), ninety (90), ninety-eight (98)]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: weather-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy this message and send it. Mori will ask you questions; answer every one.
+      - id: mori-weather
+        type: aiTutorPrompt
+        title: Talk about the weather
+        message: >-
+          Hi Mori! I want to talk about the weather. Can you ask me small talk questions
+          about the weather using the skills numbers and describing sentences? Use only
+          present simple, and please correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-world
+        type: aiTutorPrompt
+        title: Weather around the world
+        intro: 'Tell Mori about the weather today in three different countries or cities. Use numbers and describing sentences in the present simple, for example: *In Tel Aviv, it is sunny. The temperature is 30 degrees. In Paris, it is cloudy and 20 degrees. In New York, it rains a lot in July.*'
+        message: |-
+          Hi Mori! I want to tell you about the weather in three places today:
+          In ___, it is ___. The temperature is ___ degrees.
+          In ___, it is ___. The temperature is ___ degrees.
+          In ___, it is ___. The temperature is ___ degrees.
+          Please correct my mistakes and ask me questions.
+      - id: mori-week
+        type: aiTutorPrompt
+        title: My week in weather
+        intro: 'Describe the weather in your city from Monday to Friday. Use the days of the week, numbers (degrees) and weather words in the present simple, for example: *On Monday, it is hot. It is 34 degrees. On Tuesday, it is windy and cold. It is 18 degrees.*'
+        message: |-
+          Hi Mori! This is the weather in my city this week:
+          On Monday, it is ___. It is ___ degrees.
+          On Tuesday, it is ___. It is ___ degrees.
+          On Wednesday, it is ___. It is ___ degrees.
+          On Thursday, it is ___. It is ___ degrees.
+          On Friday, it is ___. It is ___ degrees.
+          Please correct my mistakes and ask me questions about my week.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: weather-practice
+    book: workbook
+    title: 'Practice: Weather'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-describing
+        type: activity
+        activity: weather-describing
+      - id: ex-numbers
+        type: activity
+        activity: weather-numbers
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: weather-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Weather words
+        glossLang: he
+        link: https://quizlet.com/il/1029854436/basic-english-weather-flash-cards/
+        items: &weather-words
+          - { term: Weather, gloss: מזג אוויר }
+          - { term: Sunny, gloss: שטוף שמש }
+          - { term: Rainy, gloss: גשום }
+          - { term: Cold, gloss: קר }
+          - { term: Warm, gloss: חמים }
+          - { term: Hot, gloss: חם }
+          - { term: Season, gloss: עונה }
+          - { term: Temperature, gloss: טמפרטורה }
+          - { term: Day, gloss: יום }
+          - { term: City, gloss: עיר }
+          - { term: State, gloss: מדינה (בארצות הברית) }
+          - { term: Maximum, gloss: מקסימלי }
+          - { term: Minimum, gloss: מינימלי }
+          - { term: Cloudy, gloss: מעונן }
+          - { term: Breeze, gloss: רוח קלה / בריזה }
+          - { term: Storm, gloss: סופה }
+          - { term: Snowy, gloss: מושלג }
+          - { term: To ski, gloss: לעשות סקי }
+          - { term: To hike, gloss: לטייל ברגל / לעשות מסלול }
+          - { term: To swim, gloss: לשחות }
+          - { term: Chocolate, gloss: שוקולד }
+          - { term: Perfect, gloss: מושלם }
+          - { term: Cabin, gloss: בקתה }
+          - { term: Lake, gloss: אגם }
+          - { term: Forest, gloss: יער }
+          - { term: Outdoors, gloss: בחוץ }
+          - { term: Indoors, gloss: בפנים }
+          - { term: Activity, gloss: פעילות }
+          - { term: Reporter, gloss: כתב / כתבת }
+          - { term: Anchor, gloss: מגיש / מגישה }
+          - { term: Summer, gloss: קיץ }
+          - { term: Autumn, gloss: סתיו }
+          - { term: Winter, gloss: חורף }
+          - { term: Spring, gloss: אביב }
+          - { term: Monday, gloss: יום שני }
+          - { term: Tuesday, gloss: יום שלישי }
+          - { term: Wednesday, gloss: יום רביעי }
+          - { term: Thursday, gloss: יום חמישי }
+          - { term: Friday, gloss: יום שישי }
+          - { term: Saturday, gloss: יום שבת }
+          - { term: Sunday, gloss: יום ראשון }
+
+vocabulary:
+  - slug: weather
+    title: Weather
+    items: *weather-words
+
+activities:
+  - slug: weather-describing
+    title: 'Describing the weather: there is, there are, adjectives'
+    minutes: 8
+    items:
+      - id: there-is-storm
+        type: multipleChoice
+        prompt: ___ a storm today.
+        options:
+          - { text: There is, correct: true }
+          - {
+              text: There are,
+              feedback: '*There are* is for more than one thing. *A storm* is one thing: *there is*.',
+            }
+      - id: there-are-clouds
+        type: multipleChoice
+        prompt: ___ heavy clouds in the sky.
+        options:
+          - { text: There are, correct: true }
+          - {
+              text: There is,
+              feedback: '*There is* is for one thing. *Clouds* is more than one: *there are*.',
+            }
+      - id: windy-day
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: It is a windy day., correct: true }
+          - {
+              text: It is a day windy.,
+              feedback: 'The adjective goes before the noun: *a windy day*.',
+            }
+      - id: adjective-before
+        type: trueFalse
+        prompt: 'Adjectives go before the noun: *a rainy afternoon*.'
+        answer: true
+        feedback:
+          correct: 'Right! *A windy day, a rainy afternoon, a sunny morning.*'
+          incorrect: 'In English, the adjective goes before the noun: *a rainy afternoon*.'
+      - id: cabin-trees
+        type: fillBlank
+        prompt: Complete with *there is* or *there are*.
+        text: In the mountains, ___ a cozy cabin and ___ many trees.
+        blanks: [[there is, there's], [there are]]
+      - id: you-can
+        type: fillBlank
+        prompt: Complete with one word.
+        text: The sky is clear and sunny. You ___ go swimming.
+        blanks: [[can]]
+      - id: weather-words
+        type: matching
+        prompt: Match each word with its meaning.
+        pairs:
+          - [Sunny, שטוף שמש]
+          - [Rainy, גשום]
+          - [Cloudy, מעונן]
+          - [Snowy, מושלג]
+          - [Cold, קר]
+      - id: heavy-clouds
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: There are heavy clouds.
+
+  - slug: weather-numbers
+    title: Dates and numbers
+    minutes: 8
+    items:
+      - id: numbers
+        type: matching
+        prompt: Match the numbers.
+        pairs:
+          - ['15', fifteen]
+          - ['21', twenty-one]
+          - ['35', thirty-five]
+          - ['60', sixty]
+          - ['98', ninety-eight]
+      - id: forty
+        type: multipleChoice
+        prompt: How do you write 40?
+        options:
+          - { text: forty, correct: true }
+          - { text: fourty, feedback: 'Careful: *four*, but *forty* (no *u*).' }
+          - { text: fourteen, feedback: '*Fourteen* is 14. Tens end in *-ty*: 40 is *forty*.' }
+      - id: nineteen
+        type: multipleChoice
+        prompt: It is 19 degrees now. How do you say 19?
+        options:
+          - { text: nineteen, correct: true }
+          - { text: ninety, feedback: '*Ninety* is 90. Numbers 13–19 end in *-teen*: *nineteen*.' }
+          - { text: nine-ten, feedback: 'Numbers 13–19 end in *-teen*: *nineteen*.' }
+      - id: twenty-seven
+        type: fillBlank
+        prompt: Write the number in words.
+        text: 'It is 27 degrees now: it is ___ degrees.'
+        blanks: [[twenty-seven, twenty seven]]
+      - id: ty-rule
+        type: trueFalse
+        prompt: 'The tens 20, 30, 40… end in *-ty*: twenty, thirty, forty.'
+        answer: true
+        feedback:
+          correct: 'Right! *Twenty, thirty, forty, fifty, sixty…*'
+          incorrect: 'The tens end in *-ty*: *twenty, thirty, forty…*'
+      - id: eleven-rule
+        type: trueFalse
+        prompt: '*Eleven* is made like *twenty-one*: a tens word + a number.'
+        answer: false
+        feedback:
+          correct: 'Right! *Eleven* and *twelve* are irregular: learn them by heart.'
+          incorrect: '*Eleven* (11) and *twelve* (12) are irregular. Learn them by heart.'
+      - id: days
+        type: fillBlank
+        prompt: Write the day of the week.
+        text: Today is Monday. Tomorrow is ___. Friday comes after ___.
+        blanks: [[Tuesday], [Thursday]]
+      - id: thirty-sunday
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: It is thirty degrees on Sunday.

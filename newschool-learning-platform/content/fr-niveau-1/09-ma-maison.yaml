@@ -1,0 +1,541 @@
+# Cycle "Ma maison", converted from the French niveau 1 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: ma-maison
+title: Ma maison
+goal: Décrire sa maison et parler de sa routine avec les verbes au présent.
+position: 9
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("La description" and "Les verbes au présent") are
+    NEW: the notebook has no self-study exercises. They were written from the
+    cycle's summary rules, examples and vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary, rule on *être*: the notebook said *être* is used "pour parler d’actions
+    en cours, de ses habitudes ou pour énoncer des faits et vérités générales". That
+    is the English present simple / "to be" rule translated literally and is wrong
+    for French. It is rewritten: *être* + adjective or place describes or situates
+    something (Mon appartement est grand / est au deuxième étage).
+  - >-
+    Summary, 2nd group: the notebook said "certains verbes qui se terminent par -IR
+    appartiennent au 2e groupe – exemples : partir, venir". *Partir* and *venir* are
+    3rd-group verbs; the rule now says that not all -IR verbs are in the 2nd group
+    (finir is, partir and venir are not). The English "(by heart)" was removed.
+  - >-
+    Summary, questions: "la manière la plus polie" is kept, with the three levels
+    labelled familier / courant / soutenu. Added examples of adjective forms (Le
+    salon est grand. La cuisine est grande. Les chambres sont grandes.) for the
+    line "Attention aux différentes formes". Please confirm.
+  - >-
+    Broken emoji characters before the room names in Activity 1 (encoding errors
+    such as "ð³") were removed; the rooms are now a table. Activity 3 frame "La/le
+    ___ … Elle est très ___" → "Le / La ___ … Il / Elle est très ___".
+  - >-
+    Added for students (not in the notebook): sentence frames for the warm-up
+    questions, a "Ma routine" frame and a third-person example for Activity 4, and
+    two Mori messages built from the homework instructions. Please check.
+  - >-
+    Vocabulary: "maison – בית פיזי" → "בית"; "maison (« chez soi ») – בית רגשי" →
+    term "chez moi", gloss "אצלי / בבית שלי"; "salle de bains – אמבטיה" → "חדר
+    אמבטיה" (it clashed with *baignoire*); "garage – חנייה" → "מוסך / חניה";
+    "serviettes – מפיות" → "מגבות / מפיות" (the notebook uses *serviette* for a
+    towel in the bathroom too); the routine phrases now have masculine and feminine
+    Hebrew forms. The notebook writes both "salle de bain" and "salle de bains"
+    (both are correct); they were left as they are.
+  - >-
+    The "MAISONS" pictures for Activity 2 are a Google Docs link (allowed); its
+    "?tab=t.0" parameter was removed. The Quizlet link lost its tracking parameters.
+    No activity times are given in the notebook, so none are recorded.
+  - >-
+    The "Réponse de l’élève 1/2/3" lines are replaced by the optional answer boxes:
+    students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: ma-maison-classe
+    title: 'En classe : Ma maison'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ma maison
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: La description
+            description: '*Il y a*, *être* + adjectif, la place et les formes des adjectifs'
+          - name: Les verbes au présent
+            description: Les trois groupes de verbes, la routine à la maison et les questions
+      - id: quizlet
+        type: externalLink
+        label: Ma maison sur Quizlet
+        url: https://quizlet.com/il/1073602517/basic-french-2025-ma-maison-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        prompt: Présente-toi en 2 phrases seulement.
+        frame: Je m’appelle ___. J’habite près de ___.
+        example: Je m’appelle Lévanah. J’habite près du Technion.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quelle est ta pièce préférée dans la maison ? Pourquoi ?
+            frame: Ma pièce préférée est ___ parce que ___.
+          - question: Que fais-tu dans cette pièce ?
+            frame: Dans cette pièce, je ___.
+          - question: Combien de pièces y a-t-il dans ta maison ?
+            frame: Il y a ___ pièces dans ma maison.
+          - question: Tu préfères travailler à la maison ou au bureau ? Pourquoi ?
+            frame: Je préfère travailler à la maison / au bureau parce que ___.
+          - question: Qu’y a-t-il sur ta table de nuit ?
+            frame: Sur ma table de nuit, il y a ___.
+          - question: Avec qui habites-tu ?
+            frame: J’habite seul / seule. / J’habite avec ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : devine la pièce'
+        skills: [La description]
+        steps:
+          - Révise avec ton professeur les pièces de la maison, leurs éléments et leurs adjectifs (tableau ci-dessous).
+          - Pense à **une pièce de la maison**. Ne dis pas laquelle !
+          - 'Les autres posent des questions pour deviner la pièce : *Est-ce qu’il y a un / une ___ ? Est-ce que cette pièce est ___ ? Est-ce qu’elle est ___ ?*'
+        example: |-
+          — Est-ce qu’il y a un four ?
+          — Oui.
+          — Est-ce que la pièce est en désordre ?
+          — Non.
+          — C’est la cuisine ?
+          — Oui ! Bravo !
+      - id: act1-rooms
+        type: table
+        caption: Les pièces de la maison
+        header: [Pièce, Éléments, Adjectifs]
+        rows:
+          - [
+              La cuisine,
+              'réfrigérateur, four, évier, table, chaises, placard, assiettes, micro-ondes, mixeur',
+              'chaud, propre, lumineux, spacieux, rangé, en désordre',
+            ]
+          - [
+              Le salon,
+              'canapé, fauteuil, table, télévision',
+              'accueillant, confortable, relaxant, élégant, moderne, spacieux, tranquille, rangé',
+            ]
+          - [
+              La chambre,
+              'lit, table de nuit, lampe, armoire, miroir, couverture, oreiller',
+              'calme, petit, grand, rangé, en désordre, privé, confortable',
+            ]
+          - [
+              La salle de bain,
+              'toilettes, lavabo, douche, baignoire, miroir, serviette, savon, brosse à dents',
+              'petit, propre, froid, humide, brillant, privé, frais',
+            ]
+          - [
+              La salle à manger,
+              'table, chaises, assiettes, verres, bougies, serviettes, vaisselier',
+              'élégant, formel, spacieux, lumineux, propre, accueillant, organisé',
+            ]
+          - [
+              Le jardin / La cour,
+              'herbe, fleurs, arbres, clôture, balançoire, banc, barbecue',
+              'vert, frais, ensoleillé, coloré, paisible, beau, spacieux, relaxant',
+            ]
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : je rends visite à un vieil ami'
+        skills: [La description]
+        steps:
+          - Travaillez **par deux**.
+          - Chaque élève reçoit **une image différente** d’une maison originale. Cette maison devient la tienne !
+          - Pose des questions à ton / ta partenaire pour découvrir sa maison, puis réponds à ses questions.
+        resource:
+          label: Les maisons (images)
+          url: https://docs.google.com/document/d/1oJE_SEP70sB5-RxfDzYr1x137dnUMzAB0qogy7Vuv2w/edit
+      - id: act2-questions
+        type: discussionQuestions
+        title: Exemples de questions
+        items:
+          - question: Comment est ton salon ?
+            frame: Mon salon est ___.
+          - question: Ta cuisine est grande ou petite ? Est-elle rangée ou en désordre ?
+            frame: Ma cuisine est ___. Elle est ___.
+          - question: Comment est ta chambre ? Est-elle confortable ?
+            frame: Ma chambre est ___.
+          - question: As-tu une pièce spéciale dans ta maison ?
+            frame: Oui, il y a ___. / Non, il n’y a pas de pièce spéciale.
+          - question: Ta maison est-elle moderne ou ancienne ?
+            frame: Ma maison est ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : débat – la meilleure pièce de la maison'
+        skills: [La description, Les verbes au présent]
+        steps:
+          - 'Le groupe se divise en **petits groupes**. Chaque groupe reçoit une pièce : la cuisine, le salon, la salle de bain ou le jardin.'
+          - Défends ta pièce et explique pourquoi c’est **la meilleure** (ajoute des éléments, des adjectifs et des verbes).
+        example: |-
+          *Le salon est la meilleure pièce de la maison.*
+          *Il y a un canapé, une télévision et des coussins colorés.*
+          *Il est très moderne, joli et confortable. Il est toujours rangé.*
+          *Dans cette pièce, on peut se détendre, regarder des films et lire des livres.*
+      - id: act3-frames
+        type: discussionQuestions
+        title: Nos arguments
+        items:
+          - question: Le / La ___ est la meilleure pièce de la maison.
+          - question: Il y a ___, ___ et quelques ___. (des éléments)
+          - question: Il / Elle est très ___, ___ et ___. (des adjectifs)
+          - question: Dans cette pièce, on peut ___, ___ et ___. (des verbes)
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : devine la routine'
+        skills: [Les verbes au présent]
+        steps:
+          - '**Écris ta routine** (sur un papier, ou par message privé au professeur si le cours est en ligne).'
+          - Le professeur donne ta routine à un autre élève.
+          - Cet élève la lit **à la troisième personne** (il / elle), et les autres devinent à qui elle appartient.
+        example: '*Il se lève à 7 heures. Il se brosse les dents. Il prend son petit-déjeuner. Il fait son lit.* — C’est la routine de qui ?'
+      - id: act4-routine
+        type: discussionQuestions
+        title: Ma routine
+        items:
+          - question: Le matin, je ___.
+          - question: L’après-midi, je ___.
+          - question: Le soir, je ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **la description** (Activités 1, 2 et 3) et
+          **les verbes au présent** (Activités 3 et 4).
+      - id: n-intro
+        anchor: intro
+        text: >-
+          Chaque élève se présente très brièvement : 2 phrases seulement, pas plus de 30
+          secondes par personne. Si les élèves se connaissent déjà, passe directement aux
+          questions d’échauffement.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Revois les pièces de la maison avec leurs éléments et leurs adjectifs. Choisis
+          **3 pièces** pour donner des exemples, puis chaque élève pense à une pièce.
+      - id: n-act2
+        anchor: act2
+        text: Donne à chaque élève une image différente du document « Maisons ».
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Les élèves t’envoient leur routine (papier ou message privé). Donne chaque
+          routine à un autre élève, qui la lit à la troisième personne.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: ma-maison-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Résumé de la leçon
+      - id: rules-description
+        type: ruleSummary
+        skill: La description
+        rules:
+          - text: 'On utilise **il y a** pour dire que quelque chose existe, ou pour dire ce qui se trouve dans un lieu. *Il y a* ne change pas : il va avec le singulier et avec le pluriel.'
+            examples: [Il y a un immeuble dans ma rue., Il y a 10 appartements dans cet immeuble.]
+          - text: On utilise le verbe **être** conjugué + un adjectif ou un lieu pour décrire ou situer quelque chose.
+            examples: [Mon appartement est grand., Mon appartement est au deuxième étage.]
+          - text: >-
+              Un adjectif donne des précisions sur un nom. Un adjectif court ou très
+              courant se place **avant** le nom ; un adjectif long ou peu courant se place
+              **après** le nom. Les couleurs sont toujours **après** le nom.
+            examples: [C’est une belle maison., C’est une maison contemporaine., un canapé gris]
+          - text: 'Attention aux différentes formes : masculin, féminin, pluriel.'
+            examples: [Le salon est grand., La cuisine est grande., Les chambres sont grandes.]
+          - text: >-
+              En français comme en hébreu, quand deux verbes se suivent, le deuxième est à
+              l’infinitif. C’est la même chose avec *je veux*, *j’ai besoin de*, *je peux*
+              + infinitif.
+            examples: ['Dans mon salon, je peux regarder la télé.', Je veux nettoyer la cuisine.]
+      - id: rules-present
+        type: ruleSummary
+        skill: Les verbes au présent
+        rules:
+          - text: En français, la terminaison du verbe change selon son groupe et selon le pronom personnel.
+          - text: 'Les verbes sont divisés en 3 groupes. **1er groupe** : les verbes en -ER (sauf *aller*).'
+            examples: [regarder, nettoyer, habiter]
+          - text: '**2e groupe** : des verbes en -IR comme *finir* (nous finissons). Attention : tous les verbes en -IR ne sont pas du 2e groupe.'
+            examples: ['*partir* et *venir* sont du 3e groupe.']
+          - text: '**3e groupe** : les verbes irréguliers. Il faut les apprendre par cœur.'
+            examples: [aller, faire, prendre, pouvoir, vouloir]
+          - text: 'Il y a plusieurs façons de poser une question. La plus polie (soutenue) est d’inverser le verbe et le pronom.'
+            examples:
+              - Tu as une grande maison ? (familier)
+              - Est-ce que tu as une grande maison ? (courant)
+              - As-tu une grande maison ? (soutenu)
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: ma-maison-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Complète un message, copie-le dans le chat avec Mori et envoie-le. Mori corrige tes erreurs et te pose des questions.
+      - id: mori-routine
+        type: aiTutorPrompt
+        title: 'Partie 1 : les verbes au présent'
+        intro: Écris **5 phrases** sur ta routine quotidienne à la maison, avec **5 verbes différents** au présent.
+        message: |-
+          Bonjour Mori ! Voici ma routine quotidienne à la maison :
+          1. ___
+          2. ___
+          3. ___
+          4. ___
+          5. ___
+          Corrige mes erreurs de conjugaison et pose-moi des questions sur ma routine, s’il te plaît.
+      - id: mori-piece
+        type: aiTutorPrompt
+        title: 'Partie 2 : décrire une pièce'
+        intro: Décris ta pièce préférée avec **au moins 3 adjectifs**, *il y a*, *être* et *est situé(e)*.
+        message: |-
+          Bonjour Mori ! Voici la description de ma pièce préférée :
+          ___
+          Corrige mes erreurs, s’il te plaît, et pose-moi des questions sur ma maison.
+      - id: example
+        type: callout
+        tone: tip
+        title: Exemple
+        text: |-
+          *Mon salon est grand et lumineux.*
+          *Il y a un canapé confortable et une grande télévision.*
+          *Il est toujours propre et bien rangé.*
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: ma-maison-pratique
+    book: workbook
+    title: 'Pratique : Ma maison'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux essayer encore.
+      - id: ex-description
+        type: activity
+        activity: ma-maison-description
+      - id: ex-present
+        type: activity
+        activity: ma-maison-present
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: ma-maison-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la maison
+        glossLang: he
+        link: https://quizlet.com/il/1073602517/basic-french-2025-ma-maison-flash-cards/
+        items: &ma-maison-words
+          - { term: pièce, gloss: חדר }
+          - { term: maison, gloss: בית }
+          - { term: chez moi, gloss: אצלי / בבית שלי }
+          - { term: cuisine, gloss: מטבח }
+          - { term: salon, gloss: סלון }
+          - { term: chambre, gloss: חדר שינה }
+          - { term: salle de bains, gloss: חדר אמבטיה }
+          - { term: salle à manger, gloss: חדר אוכל }
+          - { term: buanderie, gloss: חדר כביסה }
+          - { term: garage, gloss: מוסך / חניה }
+          - { term: jardin, gloss: גן }
+          - { term: canapé, gloss: ספה }
+          - { term: fauteuil, gloss: כורסא }
+          - { term: table, gloss: שולחן }
+          - { term: télévision, gloss: טלוויזיה }
+          - { term: lit, gloss: מיטה }
+          - { term: table de nuit, gloss: שידת לילה }
+          - { term: lampe, gloss: מנורה }
+          - { term: armoire, gloss: ארון }
+          - { term: miroir, gloss: מראה }
+          - { term: couverture, gloss: שמיכה }
+          - { term: coussin, gloss: כרית }
+          - { term: toilettes, gloss: שירותים }
+          - { term: lavabo, gloss: כיור }
+          - { term: douche, gloss: מקלחת }
+          - { term: baignoire, gloss: אמבטיה }
+          - { term: assiettes, gloss: צלחות }
+          - { term: verre, gloss: כוס }
+          - { term: bougies, gloss: נרות }
+          - { term: serviettes, gloss: מגבות / מפיות }
+          - { term: four, gloss: תנור }
+          - { term: je me lève, gloss: אני קם / קמה }
+          - { term: je me brosse les dents, gloss: אני מצחצח / מצחצחת שיניים }
+          - { term: je prends mon petit-déjeuner, gloss: אני אוכל / אוכלת ארוחת בוקר }
+          - { term: je fais mon lit, gloss: אני מסדר / מסדרת את המיטה }
+
+vocabulary:
+  - slug: ma-maison
+    title: Ma maison
+    items: *ma-maison-words
+
+activities:
+  - slug: ma-maison-description
+    title: La description
+    minutes: 8
+    items:
+      - id: il-y-a-four
+        type: multipleChoice
+        prompt: Dans ma cuisine, ___ un four et un évier.
+        options:
+          - { text: il y a, correct: true }
+          - { text: est, feedback: 'Pour dire ce qui se trouve dans un lieu, on utilise *il y a*.' }
+          - {
+              text: sont,
+              feedback: 'Pour dire ce qui se trouve dans un lieu, on utilise *il y a* (singulier et pluriel).',
+            }
+      - id: est-etage
+        type: multipleChoice
+        prompt: Mon appartement ___ au deuxième étage.
+        options:
+          - { text: est, correct: true }
+          - {
+              text: il y a,
+              feedback: 'Pour situer quelque chose, on utilise *être* : mon appartement est au deuxième étage.',
+            }
+          - { text: sont, feedback: '*Mon appartement* est singulier : est.' }
+      - id: couleurs
+        type: trueFalse
+        prompt: 'Les couleurs se placent toujours après le nom : *un canapé gris*.'
+        answer: true
+        feedback:
+          correct: Bravo ! On dit *un canapé gris*.
+          incorrect: 'Les couleurs sont toujours après le nom : *un canapé gris*.'
+      - id: belle-maison
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: C’est une belle maison., correct: true }
+          - {
+              text: C’est une maison belle.,
+              feedback: '*Belle* est un adjectif court et très courant : il se place avant le nom.',
+            }
+          - {
+              text: C’est une contemporaine maison.,
+              feedback: '*Contemporaine* est un adjectif long : il se place après le nom.',
+            }
+      - id: formes
+        type: fillBlank
+        prompt: Écris l’adjectif entre parenthèses à la bonne forme.
+        text: Ma cuisine est ___. (grand) Mes chambres sont ___. (petit)
+        blanks: [[grande], [petites]]
+      - id: pieces-elements
+        type: matching
+        prompt: Associe chaque pièce à un élément.
+        pairs:
+          - [la cuisine, le four]
+          - [la salle de bain, la douche]
+          - [la chambre, le lit]
+          - [le salon, le canapé]
+          - [le jardin, les fleurs]
+      - id: ordre-salon
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Mon salon est très confortable.
+      - id: deux-verbes
+        type: fillBlank
+        prompt: Complète avec le verbe entre parenthèses à la bonne forme.
+        text: Dans mon salon, je peux ___ la télé. (regarder) Je veux ___ la cuisine. (nettoyer)
+        blanks: [[regarder], [nettoyer]]
+
+  - slug: ma-maison-present
+    title: Les verbes au présent
+    minutes: 8
+    items:
+      - id: premier-groupe
+        type: multipleChoice
+        prompt: Quel verbe est du 1er groupe ?
+        options:
+          - { text: regarder, correct: true }
+          - {
+              text: aller,
+              feedback: '*Aller* se termine par -ER, mais il est irrégulier (3e groupe).',
+            }
+          - { text: finir, feedback: '*Finir* est un verbe du 2e groupe (nous finissons).' }
+      - id: partir-venir
+        type: trueFalse
+        prompt: '*Partir* et *venir* sont des verbes du 2e groupe.'
+        answer: false
+        feedback:
+          correct: 'Bravo ! *Partir* et *venir* sont du 3e groupe.'
+          incorrect: 'Tous les verbes en -IR ne sont pas du 2e groupe : *partir* et *venir* sont du 3e groupe.'
+      - id: nous-regardons
+        type: multipleChoice
+        prompt: Nous ___ la télévision dans le salon.
+        options:
+          - { text: regardons, correct: true }
+          - { text: regardez, feedback: '*Regardez* va avec *vous*. Avec *nous* : regardons.' }
+          - { text: regarder, feedback: 'Après *nous*, on conjugue le verbe : nous regardons.' }
+      - id: routine-je
+        type: fillBlank
+        prompt: Complète la routine avec le verbe entre parenthèses au présent.
+        text: Le matin, je me ___ à 7 heures. (lever) Ensuite, je ___ mon lit. (faire)
+        blanks: [[lève], [fais]]
+      - id: habiter
+        type: matching
+        prompt: Associe chaque pronom à la bonne forme du verbe *habiter*.
+        pairs:
+          - [j’, habite]
+          - [tu, habites]
+          - [nous, habitons]
+          - [vous, habitez]
+          - [elles, habitent]
+      - id: question-polie
+        type: multipleChoice
+        prompt: Quelle question est la plus polie (soutenue) ?
+        options:
+          - { text: As-tu une grande maison ?, correct: true }
+          - {
+              text: Tu as une grande maison ?,
+              feedback: 'Cette question est correcte, mais familière. La plus polie inverse le verbe et le pronom : *As-tu… ?*',
+            }
+          - {
+              text: Est-ce que tu as une grande maison ?,
+              feedback: 'Cette question est correcte et courante. La plus polie inverse le verbe et le pronom : *As-tu… ?*',
+            }
+      - id: ordre-petit-dejeuner
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Je prends mon petit-déjeuner dans la cuisine.
+      - id: routine-il
+        type: fillBlank
+        prompt: 'Lis la routine à la troisième personne : complète avec le verbe au présent.'
+        text: Il se ___ les dents. (brosser) Elle ___ son lit. (faire)
+        blanks: [[brosse], [fait]]

@@ -1,0 +1,616 @@
+# Cycle "איך להירגע", converted from the spoken Arabic digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew
+# transliteration); blocks with `lang: he` are Hebrew instructions.
+course: ar-medubar-1
+slug: how-to-relax
+title: איך להירגע
+goal: לספר איך נרגעים, במשפטי פעולה בהווה ובמשפטי תיאור בלי פועל.
+position: 13
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Present actions" and "Describing without a verb")
+    are NEW: the notebook has no self-study exercises. They were written from this
+    cycle's vocabulary, summary and examples. An Arabic teacher must check every
+    right answer, every distractor and every transliteration before students see them.
+  - >-
+    GRAMMAR, please check: the notebook's summary says the present-tense verb "does
+    not change by person (like English)" and "has no special ending in the plural",
+    but its own examples show the opposite (אנא בַּשְׁרַב / אנת בתשרב / הנה ביתחדרו).
+    That rule was rewritten: the prefix changes with the person and the plural adds
+    ־ו. The "common mistake" bullet "trying to change the verb by person" was removed,
+    and so was the unclear line "אין 'אני הקורא' כמו בעברית תקנית". Please confirm.
+  - >-
+    The Mori homework message said "אני רוצה לתרגל אנגלית" and "להשאיר את המשפט
+    באנגלית" (copied from the English notebook). Changed to spoken Arabic.
+  - >-
+    Corrections: example "אנא באקרע כתאב למה בדّي ארתאח" → "אנא בַּק'רא כתאב לַמָּא
+    בדי ארתאח" (an Arabic shadda character was inside the Hebrew letters; קרע/קרא
+    spelled as in the rest of the cycle; למה → לַמָּא as in the warm-up, so it is not
+    read as Hebrew "why"). Table row "החדר לא מסודרת" → "החדר לא מסודר". "ð פעולה
+    שקורית" → "פעולה שקורה" (a stray symbol and a Hebrew typo). Cycle title "איך
+    להרגע" → "איך להירגע". "ק'ַבֶּל" → "קַ'בֶּל" (niqqud on the wrong letter). Spaces
+    before commas and question marks removed.
+  - >-
+    Spelling doubts, kept as in the notebook: "בֶּתְפַדֶּל" (warm-up 4) vs
+    "בְּתְפַדֶּ'ל" (warm-up 2); "ליה" (warm-up 4) vs "ליש" (vocabulary) for "why";
+    "מוריח" (vocabulary) vs "מריח / מריחה" (summary) for "comfortable"; "בֶּחְד'ר" vs
+    "ביחדר" vs "אַחְדָ'ר"; "באאקל" (Activity 3 example) vs "בוכּל"; "נעים" in the first
+    Mori example ("כורסי נעים") — Arabic or Hebrew?
+  - >-
+    The table row "יש מוזיקה | ❌ לא משתמשים ב'יש' כאן" is kept as is, but it is
+    unclear (the cycle itself says "פיה מי" = there is water). Please clarify or drop.
+  - >-
+    The skills plan says Skill 2 is practised in "Activity 2 or Activity 4", but the
+    notebook has no Activity 4 in this cycle. The teacher note says Activity 2.
+  - >-
+    The answer frame "אנא בַּחֶס ___" under Activity 2's questions is new (built from
+    the vocabulary word "אנא בַּחֶס").
+  - >-
+    The Quizlet link's tracking parameters (?i=…&x=…) were removed. The notebook
+    gives no activity times, so none are set.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: how-to-relax-class
+    title: 'שיעור: איך להירגע'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: איך להירגע
+      - id: skills
+        type: cycleOverview
+        lang: he
+        skills:
+          - name: משפטי פעולה בהווה
+            description: נושא + פועל + המשך המשפט (אנא בַּק'רא, אנא בַּשְׁרַב)
+          - name: משפטי תיאור בהווה
+            description: נושא + תיאור, בלי פועל "להיות" (אלשאי סאחֶ'ן)
+      - id: quizlet
+        type: externalLink
+        lang: he
+        label: איך להירגע ב-Quizlet
+        url: https://quizlet.com/il/1124982913/%D7%90%D7%99%D7%9A-%D7%9C%D7%94%D7%99%D7%A8%D7%92%D7%A2-%D7%9E%D7%A2%D7%A8%D7%9A-%D7%A9%D7%99%D7%A2%D7%95%D7%A8-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        lang: he
+        text: סבב פתיחה
+      - id: intro-how
+        type: text
+        lang: he
+        text: כל תלמיד אומר מי הוא ואיך הוא נרגע. שני משפטים קצרים בלבד.
+      - id: intro
+        type: sentenceFrame
+        frame: |-
+          אנא ___.
+          אנא ברתאח מע ___. (מרַתי, ג'וזי, ס'אחבי, ס'אחבתי, חאלי! ..)
+      - id: warmup-title
+        type: heading
+        level: 3
+        lang: he
+        text: שאלות חימום
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: כּיף בֶּתְחֶסְ בֶּל הדוו' ואל רַוָאק'?
+            frame: בַּחֶס בֶּלהדוו' לַמָּא ___ (אַחְכִּי, אוכֶּל, אַחְדָ'ר פילֶם ..)
+          - question: שׁו בְּתְפַדֶּ'ל / י גַ'וְ האדי או מע מוסיק'א?
+          - question: וינתא אַחֶ'ר מַרָּה כּונֶת פיהא עַנְג'ד ראיֶק'!?
+            frame: ___ (אליום, קַ'בֶּל…, וַלַא מַרָּה!)
+          - question: בֶּתְפַדֶּל תֶּרְתאח פי אֶלְבִּית אַו בַּרָּא אֶלְבִּית? וין ו ליה?
+      - id: complete-title
+        type: heading
+        level: 4
+        text: כַּמֶּל אלג'ומַל
+      - id: complete
+        type: discussionQuestions
+        items:
+          - question: לַמָּא אַכּון טַפְראן, אנא ___
+          - question: לַמָּא חַדא יכּון טַפְרָאן, אנא ___
+          - question: אֶחְכּילי כֶּלְמֶה עַן אל ראחָה, אל הודוו' ואל רַוָאק' ___
+      - id: activities-title
+        type: heading
+        level: 3
+        lang: he
+        text: פעילויות
+      - id: act1
+        type: classActivity
+        lang: he
+        title: 'פעילות 1: החושים – פעולות'
+        skills: [משפטי פעולה בהווה]
+        steps:
+          - המורה מדגים כל פעם חוש אחד.
+          - כל תלמיד אומר שני דברים לכל חוש, עם התבניות שלמטה.
+      - id: act1-frames
+        type: sentenceFrame
+        frame: |-
+          אנא בַּשׁוף ___
+          אנא בַּסְמַע ___
+          אנא בַּלְמֶס ___
+          אנא בַּשֶׁם ___
+          אנא בּוכֶּל ___
+      - id: act2
+        type: classActivity
+        lang: he
+        title: 'פעילות 2: איך אתה מרגיש כש…'
+        skills: [משפטי תיאור בהווה]
+        steps:
+          - עבודה בזוגות.
+          - שואלים זה את זה את השאלות שלמטה ועונים במשפט תיאור.
+          - כל תלמיד משתף את הקבוצה בתשובה אחת או יותר.
+      - id: act2-questions
+        type: discussionQuestions
+        title: שו בֶּתְחֶס לַמָּא…
+        items:
+          - question: שו בֶּתְחֶס לַמָּא תֶּסְ'חא בַּכִּיר?
+            frame: אנא בַּחֶס ___
+          - question: שו בֶּתְחֶס לַמָּא תודְרוס עַרַבִּי?
+            frame: אנא בַּחֶס ___
+          - question: שו בֶּתְחֶס לַמָּא תוכֶּל אַכְּלָכְּ אלמופדל?
+            frame: אנא בַּחֶס ___
+          - question: שו בֶּתְחֶס לַמָּא תשוף ס'אחְבַּק אלקַ'ריבְּ?
+            frame: אנא בַּחֶס ___
+          - question: שו בֶּתְחֶס לַמָּא תֶּחְדַ'ר פילֶם?
+            frame: אנא בַּחֶס ___
+          - question: שו בֶּתְחֶס לַמָּא יכּון עֶנְדָכְּ אֶמְתֶחאן?
+            frame: אנא בַּחֶס ___
+          - question: שו בֶּתְחֶס לַמָּא תְכּון ג'ועאן?
+            frame: אנא בַּחֶס ___
+          - question: שו בֶּתְחֶס לַמָּא תסמע מוסיקה?
+            frame: אנא בַּחֶס ___
+      - id: act3
+        type: classActivity
+        lang: he
+        title: 'פעילות 3: תיאור מקום מרגיע (מומלצת)'
+        skills: [משפטי פעולה בהווה, משפטי תיאור בהווה]
+        steps:
+          - כל תלמיד מתאר שלושה דברים שהוא רואה במקום שמרגיע אותו.
+          - שאר התלמידים כותבים מה לדעתם המקום.
+          - 'גילוי: מה המקום? מי ניחש נכון?'
+          - מי שניחש נכון – ממשיך.
+      - id: act3-example
+        type: examples
+        items:
+          - text: |-
+              פיה מי.
+              באאקל אייס כרים הונאק.
+              בלבס אואעי סבּאחה.
+            gloss: 'התשובה: אלבחר (הים)'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          שתי מיומנויות במחזור הזה: **משפטי פעולה בהווה** (פעילות 1 או פעילות 3) ו**משפטי
+          תיאור בהווה** (פעילות 2). אפשר לחבר בין פעילות 1 לפעילות 2. פעילות 3 מומלצת.
+      - id: n-intro
+        anchor: intro
+        text: הדגימו קודם במשפטים שלכם, ואז כל תלמיד אומר שני משפטים קצרים בלבד.
+      - id: n-act1
+        anchor: act1
+        text: המורה מדגים כל פעם חוש אחד, ואחר כך כל תלמיד אומר שני דברים.
+      - id: n-act2
+        anchor: act2
+        text: בכיתה מתחילה בחרו רק 6–7 שאלות, ולא את כל הרשימה.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: how-to-relax-summary
+    title: סיכום דקדוקי
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: סיכום דקדוקי
+      - id: rules-actions
+        type: ruleSummary
+        lang: he
+        skill: 'מיומנות 1: פעולות בהווה (משפטים עם פועל)'
+        rules:
+          - text: >-
+              בערבית מדוברת, משפט עם פעולה בנוי כך: **נושא + פועל + המשך המשפט**. המבנה
+              פשוט וקבוע, ואין פועל עזר כמו am / is / are באנגלית.
+          - text: >-
+              ברוב הפעלים בהווה יש תחילית **ב־** לפני הפועל. ה־ב מסמנת פעולה שקורה עכשיו
+              או בדרך כלל.
+            examples:
+              - בַּק'רא – קורא
+              - בַּשְׁרַב – שותה
+              - בֶּחְד'ר – צופה
+              - בֶּסְמַע – שומע
+          - text: >-
+              התחילית משתנה לפי מי שעושה את הפעולה (אנא, אנת, הנה), וברבים נוספת לפועל
+              הסיומת ־ו.
+            examples:
+              - אנא בַּשְׁרַב שאי. – אני שותה תה.
+              - אנת בתשרב שאי פאלשיתא. – אתה שותה תה בחורף.
+              - הנה ביתחדרו פילם עאשאן ירתאחו. – הם צופים בסרט כדי להירגע.
+          - text: >-
+              ❌ טעות נפוצה של ישראלים: להוסיף "יש" או "הוא" לפני הפועל. בערבית מדוברת
+              פשוט אומרים מי + מה עושה.
+            examples:
+              - אנא בַּק'רא כתאב לַמָּא בדי ארתאח. – אני קורא ספר כשאני רוצה להירגע.
+      - id: rules-describing
+        type: ruleSummary
+        lang: he
+        skill: 'מיומנות 2: משפטי תיאור (בלי פעולה)'
+        rules:
+          - text: >-
+              משתמשים במשפט תיאור כשמתארים מצב, הרגשה, מקום או חפץ – בלי פעולה, בלי
+              "עושה".
+          - text: >-
+              המבנה: **נושא + תיאור**. אין פועל "להיות" בהווה, ולא אומרים "הוא" או "היא".
+            examples:
+              - אלשאי סאחֶ'ן. – התה חם. (לא "התה הוא חם")
+              - אלכנבאיה מריחה. – הספה נוחה.
+              - אלמוסיקה האדיה. – המוזיקה רגועה / שקטה.
+          - text: מֶרתאח מתאר מצב, לא פעולה.
+            examples:
+              - אנא מרתאח בעד אליוגה. – אני רגוע אחרי יוגה.
+          - text: 'שלילה במשפטי תיאור: **נושא + מש + תיאור**.'
+            examples:
+              - אלכורסי מש מריח. – הכיסא לא נוח.
+      - id: compare
+        type: table
+        lang: he
+        caption: עברית וערבית מדוברת
+        header: [עברית, ערבית מדוברת]
+        rows:
+          - [אני קורא, אנא בק'רא]
+          - [הוא רגוע, הו מרתאח]
+          - [החדר לא מסודר, אלע'רפה מש מרַתַבֶּה]
+          - [יש מוזיקה, ❌ לא משתמשים ב"יש" כאן]
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: how-to-relax-homework
+    title: שיעורי בית עם Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: שיעורי בית עם Mori
+      - id: how
+        type: text
+        lang: he
+        text: פתחו את הצ'אט של בית הספר, העתיקו את ההודעה ושלחו אותה ל-Mori.
+      - id: mori-relax
+        type: aiTutorPrompt
+        lang: he
+        title: איך נרגעים
+        message: |-
+          שלום Mori!
+          אני רוצה לתרגל ערבית מדוברת.
+          תשאל אותי שאלות על הנושא "איך נרגעים",
+          תשתמש רק בהווה פשוט,
+          ותתקן לי טעויות.
+      - id: tips
+        type: callout
+        lang: he
+        tone: tip
+        title: טיפים
+        text: |-
+          סיימתם ורוצים עוד שאלות? כתבו: **בבקשה תשאל אותי עוד.**
+          Mori מסביר משהו ואתם לא מבינים? כתבו: **אתה יכול להסביר לי בעברית, אבל להשאיר את המשפט בערבית?**
+      - id: extra-title
+        type: heading
+        level: 3
+        lang: he
+        text: תרגול נוסף – רשות
+      - id: mori-routine
+        type: aiTutorPrompt
+        lang: he
+        title: 'פעילות 1: רוטינה מרגיעה'
+        intro: שלחו ל-Mori את ההודעה, ואז תארו בערבית רוטינה מרגיעה משלכם, כמו בדוגמה.
+        message: |-
+          בוא נעשה פעילות.
+          אני מתאר רוטינה מרגיעה ואתה מנחש מה אני עושה.
+      - id: mori-routine-example
+        type: text
+        text: |-
+          אנא קאעד עלא כורסי נעים.
+          בשרב שאי.
+          בק'רא כתאב.
+          בסמע מוסיקה האדיה.
+      - id: mori-place
+        type: aiTutorPrompt
+        lang: he
+        title: 'פעילות 2: המקום המרגיע שלי'
+        intro: שלחו ל-Mori את ההודעה, ואז תארו בערבית את המקום שמרגיע אתכם, כמו בדוגמה.
+        message: |-
+          אני אתאר את המקום שמרגיע אותי,
+          ואתה תנסה לדמיין אותו.
+      - id: mori-place-example
+        type: text
+        text: |-
+          פי שג'רה כבירה.
+          אנא קאעד תחתהא ובאכתוב.
+          בסמע ס'ות אלעס'אפיר ובשוף וורוד.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: how-to-relax-practice
+    book: workbook
+    title: 'תרגול: איך להירגע'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        lang: he
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+      - id: ex-actions
+        type: activity
+        activity: how-to-relax-actions
+      - id: ex-describing
+        type: activity
+        activity: how-to-relax-describing
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: how-to-relax-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: adjectives
+        type: vocabulary
+        title: מילות תואר ורגשות
+        glossLang: he
+        link: https://quizlet.com/il/1124982913/%D7%90%D7%99%D7%9A-%D7%9C%D7%94%D7%99%D7%A8%D7%92%D7%A2-%D7%9E%D7%A2%D7%A8%D7%9A-%D7%A9%D7%99%D7%A2%D7%95%D7%A8-flash-cards/
+        items: &relax-adjectives
+          - term: מרתאח
+            gloss: רגוע
+          - term: מדר'וט
+            gloss: לחוץ
+          - term: האדי
+            gloss: שקט / רגוע
+          - term: מוריח
+            gloss: נוח
+          - term: קַ'לְק'אן
+            gloss: דואג
+          - term: ג'ועאן
+            gloss: רעב
+          - term: מבסוט
+            gloss: שמח
+          - term: מעסֶּ'ב
+            gloss: כועס
+          - term: סאח'ן
+            gloss: חם
+          - term: בארד
+            gloss: קר
+          - term: מומֶּל
+            gloss: משעמם
+          - term: מניחה
+            gloss: טובה / נעימה
+          - term: תעבאן
+            gloss: מותש
+          - term: מרתאח אכתר
+            gloss: יותר רגוע
+          - term: מוזעֶג'
+            gloss: מפריע
+      - id: verbs
+        type: vocabulary
+        title: פעלים שימושיים
+        glossLang: he
+        items: &relax-verbs
+          - term: ירתאח
+            gloss: נרגע
+          - term: אנא בַּחֶּס
+            gloss: (אני) מרגיש
+          - term: בק'רא
+            gloss: קורא
+          - term: בסמע
+            gloss: שומע / מקשיב
+          - term: ביחדר
+            gloss: צופה
+          - term: יתמשא
+            gloss: הולך / מטייל
+          - term: בוכּל
+            gloss: אוכל
+          - term: בַּשרב
+            gloss: שותה
+      - id: nouns
+        type: vocabulary
+        title: שמות עצם מרכזיים
+        glossLang: he
+        items: &relax-nouns
+          - term: מוסיקה
+            gloss: מוזיקה
+          - term: שאִי
+            gloss: תה
+          - term: פילם
+            gloss: סרט
+          - term: שוקולאטה
+            gloss: שוקולד
+          - term: כנבאיה
+            gloss: ספה
+          - term: אלבית
+            gloss: הבית
+          - term: אלטביעה
+            gloss: הטבע
+          - term: אלבחר
+            gloss: הים
+      - id: function-words
+        type: vocabulary
+        title: מילות תפקוד
+        glossLang: he
+        items: &relax-function
+          - term: מש
+            gloss: לא (שלילה)
+          - term: לאנו
+            gloss: כי
+          - term: ליש
+            gloss: למה
+
+vocabulary:
+  - slug: how-to-relax-adjectives
+    title: 'איך להירגע: תארים ורגשות'
+    items: *relax-adjectives
+  - slug: how-to-relax-verbs
+    title: 'איך להירגע: פעלים'
+    items: *relax-verbs
+  - slug: how-to-relax-nouns
+    title: 'איך להירגע: שמות עצם'
+    items: *relax-nouns
+  - slug: how-to-relax-function-words
+    title: 'איך להירגע: מילות תפקוד'
+    items: *relax-function
+
+activities:
+  - slug: how-to-relax-actions
+    title: משפטי פעולה בהווה
+    minutes: 8
+    items:
+      - id: drink-tea
+        type: multipleChoice
+        lang: he
+        prompt: איך אומרים "אני שותה תה"?
+        options:
+          - text: אנא בַּשְׁרַב שאי
+            correct: true
+          - text: אנא שאי
+            feedback: חסר הפועל. במשפט פעולה יש נושא + פועל + המשך המשפט.
+          - text: אנא הו בַּשְׁרַב שאי
+            feedback: לא מוסיפים "הו" (הוא) לפני הפועל. פשוט אומרים מי + מה עושה.
+      - id: read-book
+        type: multipleChoice
+        lang: he
+        prompt: איך אומרים "אני קורא ספר"?
+        options:
+          - text: אנא בַּק'רא כתאב
+            correct: true
+          - text: אנא בַּסְמַע כתאב
+            feedback: בַּסְמַע פירושו "שומע". "קורא" הוא בַּק'רא.
+          - text: אנא כתאב
+            feedback: חסר הפועל בַּק'רא (קורא).
+      - id: verbs
+        type: matching
+        lang: he
+        prompt: התאימו כל פועל לפירוש שלו.
+        pairs:
+          - [בַּק'רא, קורא]
+          - [בַּשְׁרַב, שותה]
+          - [בֶּסְמַע, שומע / מקשיב]
+          - [בוכּל, אוכל]
+          - [ביחדר, צופה]
+      - id: b-prefix
+        type: trueFalse
+        lang: he
+        prompt: ברוב הפעלים בהווה בערבית מדוברת יש תחילית ב־ לפני הפועל, כמו בַּק'רא ובַּשְׁרַב.
+        answer: true
+        feedback:
+          correct: נכון! ה־ב מסמנת פעולה שקורה עכשיו או בדרך כלל.
+          incorrect: ברוב הפעלים בהווה יש תחילית ב־, למשל בַּק'רא (קורא) ובַּשְׁרַב (שותה).
+      - id: no-yesh
+        type: trueFalse
+        lang: he
+        prompt: כדי להגיד "אני קורא" בערבית מדוברת צריך להוסיף "יש" או "הוא" לפני הפועל.
+        answer: false
+        feedback:
+          correct: נכון! זו טעות נפוצה. פשוט אומרים אנא בַּק'רא.
+          incorrect: לא מוסיפים "יש" או "הוא" לפני הפועל. פשוט אומרים מי + מה עושה, אנא בַּק'רא.
+      - id: listen-music
+        type: multipleChoice
+        lang: he
+        prompt: השלימו את המשפט "אני שומע מוזיקה". אנא ___ מוסיקה
+        options:
+          - text: בַּסְמַע
+            correct: true
+          - text: בוכּל
+            feedback: בוכּל פירושו "אוכל".
+          - text: בַּשְׁרַב
+            feedback: בַּשְׁרַב פירושו "שותה".
+      - id: order-winter
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: "אתה שותה תה בחורף".'
+        sentence: אנת בתשרב שאי פאלשיתא
+      - id: order-film
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: "הם צופים בסרט כדי להירגע".'
+        sentence: הנה ביתחדרו פילם עאשאן ירתאחו
+
+  - slug: how-to-relax-describing
+    title: משפטי תיאור בלי פועל
+    minutes: 8
+    items:
+      - id: tea-hot
+        type: multipleChoice
+        lang: he
+        prompt: איך אומרים "התה חם"?
+        options:
+          - text: אלשאי סאחֶ'ן
+            correct: true
+          - text: אלשאי הו סאחֶ'ן
+            feedback: במשפט תיאור לא אומרים "הו" (הוא). פשוט נושא + תיאור.
+          - text: אלשאי בארד
+            feedback: בארד פירושו "קר".
+      - id: chair-negative
+        type: multipleChoice
+        lang: he
+        prompt: איך אומרים "הכיסא לא נוח"?
+        options:
+          - text: אלכורסי מש מריח
+            correct: true
+          - text: אלכורסי מריח
+            feedback: זה אומר "הכיסא נוח". חסרה מילת השלילה מש.
+          - text: מש אלכורסי מריח
+            feedback: 'המבנה הוא נושא + מש + תיאור: אלכורסי מש מריח.'
+      - id: feelings
+        type: matching
+        lang: he
+        prompt: התאימו כל מילה לפירוש שלה.
+        pairs:
+          - [מרתאח, רגוע]
+          - [מדר'וט, לחוץ]
+          - [ג'ועאן, רעב]
+          - [מבסוט, שמח]
+          - [תעבאן, מותש]
+      - id: no-to-be
+        type: trueFalse
+        lang: he
+        prompt: במשפטי תיאור בהווה אין פועל "להיות". אומרים אלשאי סאחֶ'ן (התה חם).
+        answer: true
+        feedback:
+          correct: נכון! נושא + תיאור, בלי "הוא" ובלי "להיות".
+          incorrect: אין פועל "להיות" בהווה. המבנה הוא נושא + תיאור.
+      - id: state-not-action
+        type: trueFalse
+        lang: he
+        prompt: במשפט "אנא מרתאח" המילה מרתאח מתארת פעולה, כמו בַּק'רא.
+        answer: false
+        feedback:
+          correct: נכון! מרתאח מתאר מצב (רגוע), לא פעולה.
+          incorrect: מרתאח מתאר מצב (רגוע), לא פעולה. לכן אין לפניו תחילית ב־.
+      - id: room-negative
+        type: multipleChoice
+        lang: he
+        prompt: השלימו את המשפט "החדר לא מסודר". אלע'רפה ___ מרַתַבֶּה
+        options:
+          - text: מש
+            correct: true
+          - text: ליש
+            feedback: ליש פירושו "למה". השלילה היא מש.
+          - text: לאנו
+            feedback: לאנו פירושו "כי". השלילה היא מש.
+      - id: hungry
+        type: multipleChoice
+        lang: he
+        prompt: איך אומרים "אני רעב"? אנא ___
+        options:
+          - text: ג'ועאן
+            correct: true
+          - text: מומֶּל
+            feedback: מומֶּל פירושו "משעמם".
+          - text: מבסוט
+            feedback: מבסוט פירושו "שמח".
+      - id: order-yoga
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: "אני רגוע אחרי יוגה".'
+        sentence: אנא מרתאח בעד אליוגה

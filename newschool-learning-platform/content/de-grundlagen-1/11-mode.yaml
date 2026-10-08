@@ -1,0 +1,606 @@
+# Cycle "Mode und Shopping", converted from the German digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: mode
+title: Mode und Shopping
+goal: Kleidung beschreiben und über Preise sprechen, mit beschreibenden Sätzen und Zahlen.
+position: 11
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Beschreibende Sätze" and "Zahlen") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The summary is written in Hebrew in the notebook. The rules are now short German
+    ruleSummary blocks, and each skill keeps a Hebrew explanation as a `lang: he`
+    text block. Please check the Hebrew wording.
+  - >-
+    Descriptive summary, rule 1 said "ist / sind" but its first example is "Ich bin
+    modisch". The rule now gives ich bin, er / sie / es ist, wir / sie sind.
+  - >-
+    Descriptive summary, rule 2 said the adjective ALWAYS comes after ist / sind.
+    That is wrong for German (rule 3 itself has "eine rote Tasche"). Rewritten: after
+    ist / sind the adjective has no ending; before a noun it has an ending.
+  - >-
+    Descriptive summary, rule 3 (haben) now also lists du hast, wir haben, sie
+    haben (the example "Sie haben drei Jacken" uses the plural).
+  - >-
+    Numbers summary, rule 2 said the tens ALWAYS end in -zig. Wrong: dreißig ends in
+    -ßig. Rewritten with dreißig as the exception, and sechzig / siebzig (without -s
+    / -en) noted.
+  - >-
+    Numbers summary, rule 3 said 11 to 19 are all irregular and must be memorised.
+    Rewritten: elf and zwölf are special; 13 to 19 are unit + zehn (dreizehn …), with
+    sechzehn and siebzehn shortened.
+  - >-
+    Numbers summary, rule 1 now says that "eins" becomes "ein" (einundzwanzig). The
+    past-tense examples ("Ich habe sechzig Euro für Schuhe ausgegeben", "Ich habe
+    fünfzehn Paar Socken gekauft") are now in the present ("Die Schuhe kosten
+    sechzig Euro", "Ich kaufe fünfzehn Paar Socken"), as the cycle works in the
+    present.
+  - >-
+    Warm-up: "Nein, ich nicht." → "Nein, ich gehe nicht gern einkaufen."; "Ich kaufe
+    ___ Mal pro ___" → "… pro Woche / Monat / Jahr"; "Am ___" → "Am ___
+    (Wochenende / Montag …)".
+  - >-
+    Activity 1: "Was soll ich anziehen für ___?" → "Was soll ich für ___
+    anziehen?" (verb at the end); "Es ist bequem" after "Shorts und ein T-Shirt" →
+    "Das ist bequem". Title "Was soll ich anziehen BESCHREIBEN" → "Was soll ich
+    anziehen?" (the skill label in capitals is now the activity's skill).
+  - >-
+    Activity 1 mentions a picture of the clothes, which is not in the exported
+    notebook. The clothes and adjectives are kept as word banks; the teacher shares
+    a picture on screen.
+  - >-
+    Activity 2 (Rate den Preis): the Google Slides link is kept as the activity's
+    resource; the real prices are teacher-only (teacher note).
+  - >-
+    Activity 4 links to online shops (H&M, ZARA, UNIQLO) and names SHEIN. Shop links
+    are not on the link allow-list, so they were left out; the teacher note names
+    the shops. The English remark "(if that fails, try changing country to Germany)"
+    is now a German teacher note. Note: the ZARA link in the notebook pointed to the
+    English version of the German shop.
+  - >-
+    The Mori homework was in English. It is translated into German, and the opening
+    message now names this cycle's skills ("Beschreibende Sätze" and "Zahlen")
+    instead of "Actions in present and Numbers". The tip "explain it in Hebrew but
+    with the sentence in English" now says "auf Deutsch". The verb examples (buy,
+    go, eat, wear) are now kaufen, gehen, essen, tragen.
+  - >-
+    The checklist "what the student can do after the lesson" (Hebrew) is now a short
+    German callout at the end of the summary.
+  - >-
+    Vocabulary: "die Shorts – מכנס קצר" → "מכנסיים קצרים"; "es sind – הם / יש
+    (לרבים)" kept as in the notebook. Numbers are kept as in the notebook (20, 30,
+    50 only).
+  - Activity times given as ranges (15–20 minutes) are recorded as 20 minutes.
+  - >-
+    The "Antwort Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: mode-unterricht
+    title: 'Unterricht: Mode und Shopping'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Mode und Shopping
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Beschreibende Sätze
+            description: Kleidung beschreiben mit *sein*, *haben* und Adjektiven (Das Kleid ist rot.)
+          - name: Zahlen
+            description: Die Zahlen bis 100 für Preise und Mengen (Es kostet zwanzig Euro.)
+      - id: quizlet
+        type: externalLink
+        label: Mode und Shopping auf Quizlet
+        url: https://quizlet.com/1114250536/%D7%A9%D7%95%D7%A4%D7%99%D7%A0%D7%92-%D7%95%D7%90%D7%95%D7%A4%D7%A0%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Ich kaufe gern ___.
+        example: Ich bin Anna. Ich kaufe gern Bücher.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Gehst du gern einkaufen?
+            frame: Ja, ich gehe gern einkaufen. / Nein, ich gehe nicht gern einkaufen.
+          - question: Was kaufst du gern?
+            frame: Ich kaufe gern ___.
+          - question: Kaufst du online oder im Geschäft?
+            frame: Ich kaufe online. / Ich kaufe im Geschäft.
+          - question: Wann kaufst du ein?
+            frame: Am ___ (Wochenende / Montag …).
+          - question: Wie oft kaufst du Kleidung?
+            frame: Ich kaufe ___ Mal pro Woche / Monat / Jahr Kleidung.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Was soll ich anziehen?'
+        skills: [Beschreibende Sätze]
+        minutes: 20
+        steps:
+          - Wiederhole die Kleidung und die Adjektive mit deinem Lehrer.
+          - Hör das Beispiel von deinem Lehrer.
+          - 'Arbeitet zu zweit. Schüler A fragt: *Was soll ich für ___ anziehen?*'
+          - 'Schüler B antwortet: *Für ___ trägst du ___. Das ist ___.*'
+          - Dann wechselt ihr.
+        example: |-
+          *Was soll ich für den Strand anziehen?*
+          *Für den Strand trägst du Shorts und ein T-Shirt. Das ist bequem.*
+        wordBank:
+          - das Kleid
+          - die Shorts
+          - der Rock
+          - die Tasche
+          - der Mantel
+          - das T-Shirt
+          - die Hose
+          - die Schuhe
+      - id: act1-adjectives
+        type: wordBank
+        words: [bequem, elegant, warm, cool, bunt]
+      - id: act1-questions
+        type: discussionQuestions
+        title: Was soll ich anziehen?
+        items:
+          - question: Was soll ich für den Strand anziehen?
+            frame: Für den Strand trägst du ___. Das ist ___.
+          - question: Was soll ich für eine Party anziehen?
+            frame: Für eine Party trägst du ___. Das ist ___.
+          - question: Was soll ich für die Arbeit anziehen?
+            frame: Für die Arbeit trägst du ___. Das ist ___.
+          - question: Was soll ich für den Winter anziehen?
+            frame: Für den Winter trägst du ___. Das ist ___.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Rate den Preis'
+        skills: [Zahlen]
+        minutes: 15
+        steps:
+          - Schau das Bild in der Präsentation an.
+          - 'Rate den Preis. Sag einen Satz: *Ich glaube, es kostet ___ Euro.*'
+          - 'Dein Lehrer sagt den richtigen Preis: *Es kostet ___ Euro.*'
+          - Wer am nächsten liegt, bekommt einen Punkt.
+        example: '*Ich glaube, es kostet zwanzig Euro.*'
+        resource:
+          label: Rate den Preis (Folien 1–10)
+          url: https://docs.google.com/presentation/d/1uFqbDX8-ftLQBBJCfbx6Sna6zhKy-DBUeYQup7FSlq4/edit?usp=sharing
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Organisiere deinen Laden'
+        skills: [Beschreibende Sätze]
+        minutes: 20
+        steps:
+          - Hör das Beispiel von deinem Lehrer.
+          - Schreib 5 kurze Sätze über deinen Laden (unten).
+          - Arbeitet zu zweit. Lies deine 5 Sätze vor, dein Partner hört zu. Dann wechselt ihr.
+          - 2–3 Schüler stellen ihren Laden der Klasse vor.
+        example: |-
+          *Mein Laden heißt Fashion Trends.*
+          *Ich verkaufe Kleidung und Schuhe.*
+          *Mein Laden ist im Zentrum.*
+          *Ich habe eine Kasse und eine Umkleidekabine.*
+          *Mit mir arbeitet eine Verkäuferin.*
+      - id: act3-shop
+        type: discussionQuestions
+        title: Mein Laden
+        items:
+          - question: Mein Laden heißt ___.
+          - question: Ich verkaufe ___.
+          - question: Mein Laden ist ___.
+          - question: Ich habe ___.
+          - question: Mit mir arbeitet ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Budgetplanung'
+        skills: [Zahlen]
+        minutes: 20
+        steps:
+          - Du hast 100 Euro. Du kaufst Kleidung online. Du darfst nicht über 100 € gehen.
+          - Öffne den Online-Shop, den dein Lehrer zeigt.
+          - 'Wähle 3–5 Artikel aus verschiedenen Kategorien (T-Shirt, Hose, Schuhe, Jacke, Kleid). Du hast 10 Minuten.'
+          - Schreib deine Liste (unten) und lies sie der Klasse vor.
+          - 'Gewinner: die meisten Artikel, maximal 100 € und so nah wie möglich an 100 €.'
+        example: |-
+          *Ich habe 100 Euro.*
+          *Ich kaufe ein T-Shirt für 20 €.*
+          *Ich kaufe eine Hose für 30 €.*
+          *Ich kaufe Schuhe für 50 €.*
+          ***Zusammen: 100 €***
+      - id: act4-list
+        type: discussionQuestions
+        title: Meine Einkaufsliste
+        items:
+          - question: Ich kaufe ___ für ___ €.
+          - question: Ich kaufe ___ für ___ €.
+          - question: Ich kaufe ___ für ___ €.
+          - question: 'Zusammen: ___ €'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fähigkeiten in diesem Zyklus: **Beschreibende Sätze** (Vorstellungsrunde,
+          Aufwärmfragen, Aktivität 1 oder 3) und **Zahlen** (Aufwärmfragen, Aktivität 2
+          oder 4). Wähle für jede Fähigkeit eine Aktivität.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Schreib das Modell an die Tafel, gib dein eigenes Beispiel und frag dann jeden Schüler.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Stell jedem Schüler mindestens zwei Fragen. Die geschriebenen Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Phase 1: Wiederhole den Wortschatz an der Tafel oder zeig ein Bild mit der
+          Kleidung auf dem Bildschirm (das Bild ist noch nicht auf der Plattform). Phase
+          2: Mach das Modell vor. Phase 3: Paararbeit, dann wechseln.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Preise nur für den Lehrer: Kleid 50 €, Rock 90 €, Hose 40 €, Shorts 30 €,
+          Mantel 60 €, T-Shirt 20 €, Schuhe 70 €, Tasche 80 €. Schreib den Satz „Ich
+          glaube, es kostet ___ Euro." an die Tafel; die Schüler lesen ihn gemeinsam
+          laut. Korrigiere nur bei Bedarf (Zahlen, „kostet"). Spiel mit 3–6
+          Kleidungsstücken.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Schreib das Beispiel an die Tafel und lies die Sätze langsam vor. Die
+          Präsentation am Ende ist freiwillig (2–3 Schüler).
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Wähle einen deutschen Online-Shop und öffne ihn auf deinem Bildschirm; alle
+          Schüler benutzen dieselbe Seite. Vorschläge aus dem Heft: H&M, ZARA, UNIQLO
+          oder SHEIN (die Links sind nicht auf der Plattform). Wenn die deutsche Seite
+          nicht funktioniert, stell das Land auf Deutschland um. Schreib die Vorlage an
+          die Tafel und korrigiere nur Zahlen, „Euro" und „kaufe".
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: mode-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Das haben wir heute gelernt
+      - id: rules-describe
+        type: ruleSummary
+        skill: Beschreibende Sätze
+        rules:
+          - text: 'Mit *sein* sagst du, wie jemand oder etwas ist: ich **bin**, er / sie / es **ist**, wir / sie **sind**.'
+            examples:
+              - Ich bin modisch.
+              - Sie ist trendy.
+              - Die Schuhe sind cool.
+              - Er ist schick.
+              - Die Jeans ist neu.
+          - text: 'Adjektive geben mehr Information (Länge, Farbe, Größe, Stil, Preis). Nach *ist / sind* hat das Adjektiv **keine Endung**.'
+            examples:
+              - Das Kleid ist rot.
+              - Seine Jacke ist groß und warm.
+              - Die Hose ist kurz und blau.
+              - Mein Mantel ist weich und grün.
+          - text: 'Mit *haben* sagst du, was jemand hat: ich **habe**, du **hast**, er / sie **hat**, wir / sie **haben**.'
+            examples:
+              - Ich habe eine rote Tasche.
+              - Sie hat fünf Paar Schuhe.
+              - Sie haben drei Jacken.
+              - Er hat ein neues T-Shirt.
+      - id: describe-he
+        type: text
+        lang: he
+        text: >-
+          **בעברית:** משתמשים ב־*bin / ist / sind* כדי להגיד איך מישהו או משהו נראה:
+          *ist* ליחיד, *sind* לרבים. אחרי *ist / sind* התואר לא משתנה: *Das Kleid ist
+          rot* (השמלה אדומה). לפני שם עצם התואר מקבל סיומת: *eine rote Tasche* (תיק
+          אדום). משתמשים ב־*haben* כדי להגיד מה יש למישהו: *Ich habe* (יש לי), *Er /
+          Sie hat* (יש לו / לה).
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Zahlen
+        rules:
+          - text: 'Die Zahlen 21–99: zuerst die Einer, dann **und**, dann die Zehner. Alles ist ein Wort. *eins* wird zu *ein*.'
+            examples:
+              - 21 → einundzwanzig
+              - 35 → fünfunddreißig
+              - 98 → achtundneunzig
+              - Ich kaufe siebenundzwanzig Hemden.
+              - Es gibt achtundneunzig Artikel im Sale.
+          - text: 'Die Zehner enden auf **-zig**. Ausnahme: dreißig (**-ßig**). Achtung: sechzig, siebzig.'
+            examples:
+              - zwanzig, dreißig, vierzig, fünfzig
+              - sechzig, siebzig, achtzig, neunzig
+              - Die Schuhe kosten sechzig Euro.
+              - Die Jacke kostet achtzig Euro.
+          - text: 'Die Zahlen 11–19: *elf* und *zwölf* sind besonders. 13–19 sind Einer + **zehn**. Achtung: sechzehn, siebzehn.'
+            examples:
+              - elf, zwölf
+              - dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn
+              - Ich kaufe fünfzehn Paar Socken.
+              - Sie bestellt elf T-Shirts online.
+      - id: numbers-he
+        type: text
+        lang: he
+        text: >-
+          **בעברית:** במספרים 21–99 אומרים קודם את היחידות ואחר כך את העשרות (הפוך
+          מעברית), עם *und* באמצע ובמילה אחת: 21 = *einundzwanzig*. העשרות נגמרות
+          ב־*-zig*, חוץ מ־*dreißig* (30). את *elf* (11) ו־*zwölf* (12) צריך לזכור; 13–19
+          בנויים מהיחידה + *zehn*: *dreizehn* (13).
+      - id: can-do
+        type: callout
+        tone: info
+        title: Das kannst du jetzt
+        text: |-
+          Kleidung beschreiben (*ist / sind*, Adjektive).
+          Sagen, was du hast (*haben*).
+          Preise und Zahlen sagen.
+          In kurzen Sätzen über Einkaufen sprechen.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Wiederhole die zwei Fähigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: mode-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-einkaufen
+        type: aiTutorPrompt
+        title: Einkaufen im Einkaufszentrum
+        message: >-
+          Hallo Mori! Ich möchte im Einkaufszentrum einkaufen gehen. Kannst du mir Fragen
+          über Einkaufen stellen und dabei die Fähigkeiten „Beschreibende Sätze" und
+          „Zahlen" benutzen? Bitte benutze nur das Präsens und korrigiere meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte frag mich mehr!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Zusätzliche Übungen
+      - id: mori-liste
+        type: aiTutorPrompt
+        title: Meine Einkaufsliste
+        intro: >-
+          Schick diese Nachricht an Mori. Benutze in deinen Antworten mindestens 4
+          verschiedene Verben (kaufen, gehen, essen, tragen …), 5 verschiedene Dinge und
+          5 Zahlen oder mehr (zum Beispiel: drei Bananen, zwei Hemden, eine Flasche).
+        message: Hallo Mori! Ich möchte über meine Einkaufsliste sprechen. Kannst du mir Fragen mit Zahlen und im Präsens stellen?
+      - id: mori-preis
+        type: aiTutorPrompt
+        title: Wie viel kostet das?
+        intro: Schick diese Nachricht an Mori.
+        message: Hallo Mori! Kannst du mir Fragen stellen, wie viel jedes Ding kostet? Benutze bitte Zahlen und Sätze im Präsens.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: mode-uebung
+    book: workbook
+    title: 'Übung: Mode und Shopping'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fähigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-beschreiben
+        type: activity
+        activity: mode-beschreiben
+      - id: ex-zahlen
+        type: activity
+        activity: mode-zahlen
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: mode-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für Mode und Shopping
+        glossLang: he
+        link: https://quizlet.com/1114250536/%D7%A9%D7%95%D7%A4%D7%99%D7%A0%D7%92-%D7%95%D7%90%D7%95%D7%A4%D7%A0%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &mode-words
+          - { term: einkaufen, gloss: לקנות / לעשות קניות }
+          - { term: kaufen, gloss: לקנות }
+          - { term: gehen, gloss: ללכת }
+          - { term: online, gloss: אונליין }
+          - { term: das Geschäft, gloss: חנות }
+          - { term: der Laden, gloss: חנות }
+          - { term: der Preis, gloss: מחיר }
+          - { term: kosten, gloss: לעלות (בכסף) }
+          - { term: das Kleid, gloss: שמלה }
+          - { term: die Hose, gloss: מכנסיים }
+          - { term: das T-Shirt, gloss: חולצת טי }
+          - { term: die Schuhe, gloss: נעליים }
+          - { term: die Tasche, gloss: תיק }
+          - { term: der Mantel, gloss: מעיל }
+          - { term: der Rock, gloss: חצאית }
+          - { term: die Shorts, gloss: מכנסיים קצרים }
+          - { term: bequem, gloss: נוח }
+          - { term: elegant, gloss: אלגנטי }
+          - { term: warm, gloss: חם }
+          - { term: cool, gloss: מגניב }
+          - { term: bunt, gloss: צבעוני }
+          - { term: neu, gloss: חדש }
+          - { term: weich, gloss: רך }
+          - { term: ich kaufe, gloss: אני קונה }
+          - { term: ich habe, gloss: יש לי }
+          - { term: ich mag, gloss: אני אוהב }
+          - { term: es ist, gloss: זה (תיאור) }
+          - { term: es sind, gloss: הם / יש (לרבים) }
+          - { term: der Euro, gloss: יורו }
+          - { term: zwanzig (20), gloss: עשרים }
+          - { term: dreißig (30), gloss: שלושים }
+          - { term: fünfzig (50), gloss: חמישים }
+          - { term: die Verkäuferin, gloss: מוכרת }
+          - { term: der Kunde, gloss: לקוח }
+
+vocabulary:
+  - slug: mode
+    title: Mode und Shopping
+    items: *mode-words
+
+activities:
+  - slug: mode-beschreiben
+    title: 'Beschreibende Sätze: sein, haben und Adjektive'
+    minutes: 8
+    items:
+      - id: schuhe-sind
+        type: multipleChoice
+        prompt: Die Schuhe ___ cool.
+        options:
+          - { text: sind, correct: true }
+          - { text: ist, feedback: '*Die Schuhe* ist Plural: Man sagt *sind*.' }
+          - { text: bin, feedback: '*bin* passt nur zu *ich*: *Ich bin modisch.*' }
+      - id: kleid-rot
+        type: multipleChoice
+        prompt: Das Kleid ist ___.
+        options:
+          - { text: rot, correct: true }
+          - {
+              text: rote,
+              feedback: 'Nach *ist / sind* hat das Adjektiv keine Endung: *Das Kleid ist rot.*',
+            }
+          - {
+              text: roten,
+              feedback: 'Nach *ist / sind* hat das Adjektiv keine Endung: *Das Kleid ist rot.*',
+            }
+      - id: ich-bin
+        type: multipleChoice
+        prompt: Ich ___ modisch.
+        options:
+          - { text: bin, correct: true }
+          - { text: ist, feedback: '*ist* passt zu *er / sie / es*. Mit *ich* sagt man *bin*.' }
+          - { text: sind, feedback: '*sind* ist Plural. Mit *ich* sagt man *bin*.' }
+      - id: haben
+        type: fillBlank
+        prompt: Ergänze mit *haben*.
+        text: Ich ___ eine rote Tasche. Sie ___ fünf Paar Schuhe.
+        blanks: [[habe], [hat]]
+        wordBank: [habe, hat, haben]
+      - id: ist-sind
+        type: fillBlank
+        prompt: Ergänze mit *ist* oder *sind*.
+        text: Der Mantel ___ weich. Die Schuhe ___ neu.
+        blanks: [[ist], [sind]]
+        wordBank: [ist, sind]
+      - id: keine-endung
+        type: trueFalse
+        prompt: 'Nach *ist / sind* hat das Adjektiv keine Endung: *Die Hose ist kurz und blau.*'
+        answer: true
+        feedback:
+          correct: Richtig! *kurz* und *blau* stehen nach *ist* ohne Endung.
+          incorrect: 'Nach *ist / sind* bleibt das Adjektiv ohne Endung: *Die Hose ist kurz und blau.*'
+      - id: kleidung
+        type: matching
+        prompt: Verbinde jedes Wort mit der Übersetzung.
+        pairs:
+          - [das Kleid, שמלה]
+          - [der Rock, חצאית]
+          - [der Mantel, מעיל]
+          - [die Tasche, תיק]
+          - [die Schuhe, נעליים]
+      - id: ordne-tasche
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Ich habe eine rote Tasche.
+
+  - slug: mode-zahlen
+    title: 'Zahlen: Preise und Mengen'
+    minutes: 8
+    items:
+      - id: zehner
+        type: matching
+        prompt: Verbinde die Zahlen.
+        pairs:
+          - ['20', zwanzig]
+          - ['30', dreißig]
+          - ['50', fünfzig]
+          - ['60', sechzig]
+          - ['70', siebzig]
+      - id: einundzwanzig
+        type: multipleChoice
+        prompt: Das T-Shirt kostet 21 Euro. Wie sagt man *21*?
+        options:
+          - { text: einundzwanzig, correct: true }
+          - {
+              text: zwanzigundeins,
+              feedback: 'Zuerst die Einer, dann *und*, dann die Zehner: *einundzwanzig*.',
+            }
+          - { text: zwölf, feedback: '*zwölf* ist 12.' }
+      - id: fuenfunddreissig
+        type: multipleChoice
+        prompt: Der Rock kostet 35 Euro. Wie sagt man *35*?
+        options:
+          - { text: fünfunddreißig, correct: true }
+          - {
+              text: dreiundfünfzig,
+              feedback: '*dreiundfünfzig* ist 53. Zuerst die Einer (fünf), dann die Zehner (dreißig).',
+            }
+          - {
+              text: dreißigundfünf,
+              feedback: 'Zuerst die Einer, dann *und*, dann die Zehner: *fünfunddreißig*.',
+            }
+      - id: sechzehn
+        type: multipleChoice
+        prompt: Wie sagt man *16*?
+        options:
+          - { text: sechzehn, correct: true }
+          - { text: sechszehn, feedback: 'Achtung: *sechzehn* hat kein *s* nach *sech*.' }
+          - { text: sechzig, feedback: '*sechzig* ist 60.' }
+      - id: achtzig
+        type: fillBlank
+        prompt: Schreib die Zahl in Buchstaben.
+        text: Die Jacke kostet ___ Euro. (80)
+        blanks: [[achtzig]]
+      - id: fuenfzehn
+        type: fillBlank
+        prompt: Schreib die Zahl in Buchstaben.
+        text: Ich kaufe ___ Paar Socken. (15)
+        blanks: [[fünfzehn, fuenfzehn]]
+      - id: dreissig
+        type: trueFalse
+        prompt: 'Alle Zehner enden auf *-zig*, auch 30: *dreizig*.'
+        answer: false
+        feedback:
+          correct: Richtig! 30 heißt *dreißig*, mit *-ßig*.
+          incorrect: '30 ist die Ausnahme: *dreißig*, mit *-ßig*. Die anderen Zehner enden auf *-zig*.'
+      - id: ordne-preis
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Ich glaube, es kostet zwanzig Euro.

@@ -1,0 +1,565 @@
+# Cycle "Professioni", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: professioni
+title: Professioni
+goal: Parlare del lavoro con le azioni al presente e i numeri.
+position: 3
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Azioni al presente" and "Numeri") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Skill plan: the notebook says Azioni al presente = Activity 1 or 3, Numeri =
+    Activity 2 or 4, but Activity 3 is titled "I NUMERI del mio budget" and Activity 4
+    "NUMERI E AZIONI". The plan here follows the titles: Azioni = Activities 1 and 4,
+    Numeri = Activities 2 and 3 (Activity 4 practises both). Please confirm.
+  - >-
+    Mori: "Usa solo il presente semplice" → "Usa solo il presente"; the tip "Se Mori
+    spiega qualcosa in spagnolo… con la frase in spagnolo" → "in italiano"; the game
+    message "Voglio imparare lo spagnolo con un gioco" → "l'italiano" (Spanish words
+    left in by mistake).
+  - >-
+    Introduction round: "Colpo di scena: sono un/una ___" ("plot twist", a calque) →
+    "Di lavoro faccio il / la ___. / Sono ___."; the example "Sono un insegnante" →
+    "Sono insegnante. / Faccio l'insegnante." (professions after essere usually go
+    without the article).
+  - >-
+    Activity 1 ("21 domande"): the notebook says "domande a risposta aperta", but the
+    game and its example use yes / no questions ("Lavori con un computer? → No"). The
+    steps now say "domande sì / no".
+  - >-
+    Activity 2: "3 professioni che necessitano" → "3 professioni di cui ha bisogno";
+    title "Organizzazione delle professioni" → "La mia azienda". Activity 3: "X $ su
+    ___, X $ in ___" → "X $ per ___" (one correct preposition). Activity 3 also says
+    "the same items used before, with their prices", but the notebook has no item or
+    price list: the teacher prepares one (see the teacher note).
+  - >-
+    Activity 4: "Panificio → Chef" → "Panificio → Panettiere" (a chef works in a
+    restaurant; "Chef" stays in the vocabulary). "Studente B = Candidato/Dipendente" →
+    "Candidato".
+  - >-
+    Summary: rule 1 gives only "lavorare"; the full conjugation of "fare" (faccio,
+    fai, fa…) and the -are endings were added as tables. Rule 3 "Numeri cardinali fino
+    a 100" has no list in the notebook: a table of the tens (dieci… cento) was added,
+    and "c'è / ci sono" and "Quanti / Quante" were written as rules from the
+    notebook's examples. Please confirm.
+  - >-
+    Vocabulary: "Capo – מנהל" → "בוס / מנהל"; "Animali – חיות" is kept (the other
+    cycle has "בעלי חיים"). Please confirm.
+  - The Quizlet link is kept without the tracking parameter (funnelUUID).
+  - Activity times given as ranges (15–20 minutes) are recorded as 20 minutes; the introduction round (5–10 minutes) as 10.
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: professioni-classe
+    title: 'In classe: Professioni'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Professioni
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Azioni al presente
+            description: 'I verbi in *-are* e il verbo *fare*: *lavoro, lavori, lavora… faccio, fai, fa…*'
+          - name: Numeri
+            description: I numeri fino a 100, *quanti / quante*, *c'è / ci sono* e l'ora
+      - id: quizlet
+        type: externalLink
+        label: Professioni su Quizlet
+        url: https://quizlet.com/br/1068027034/professioni-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazioni
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Di lavoro faccio il / la ___. / Sono ___ (professione).
+        example: Sono Dana. Sono insegnante. / Faccio l'insegnante.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: 'Domande di riscaldamento: il lavoro'
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Cosa fai al lavoro?
+            frame: Al lavoro io ___, ___ e ___. (3 azioni)
+          - question: Dove lavori?
+            frame: Lavoro a / in / presso ___.
+          - question: Cosa ti piace del tuo lavoro?
+            frame: Mi piace ___. / Mi piace che ___.
+          - question: Cosa non ti piace del tuo lavoro?
+            frame: Non mi piace ___. / Non mi piace che ___.
+          - question: Quante ore lavori ogni settimana?
+            frame: Lavoro ___ ore alla settimana.
+          - question: Cosa fai dopo il lavoro?
+            frame: Dopo il lavoro io ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: 21 domande'
+        skills: [Azioni al presente]
+        minutes: 20
+        steps:
+          - Uno studente pensa a una professione segreta e non la dice a nessuno.
+          - Gli altri studenti, a turno, fanno domande sì / no con i verbi.
+          - La classe continua a fare domande finché qualcuno indovina la professione segreta.
+        wordBank:
+          [
+            lavorare,
+            usare,
+            guidare,
+            parlare,
+            viaggiare,
+            scrivere,
+            aiutare,
+            cucinare,
+            insegnare,
+            costruire,
+            vendere,
+          ]
+        example: |-
+          Professione segreta: *pilota* (solo lo studente scelto lo sa)
+          Studente A: *Lavori con un computer?* — No.
+          Studente B: *Lavori con le persone?* — Sì.
+          Studente C: *Guidi un'auto?* — No.
+          Studente D: *Indossi un'uniforme?* — Sì.
+          Studente E: *Viaggi in altri paesi?* — Sì.
+          Qualcuno indovina: *Sei un pilota?* — Sì!
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: La mia azienda'
+        skills: [Numeri]
+        minutes: 20
+        steps:
+          - Immagina di aprire un'attività. Scegli il nome dell'azienda e cosa vende o cosa fa.
+          - Scegli 3 professioni di cui ha bisogno e quanti lavoratori ti servono.
+          - Presenta la tua azienda alla classe con *c'è* e *ci sono*.
+        example: |-
+          *La mia attività è una scuola di musica. Ho bisogno di tre insegnanti di musica, una receptionist e una donna delle pulizie.*
+          *Ci sono tre insegnanti che insegnano musica. C'è una receptionist che aiuta gli studenti.*
+      - id: act2-plan
+        type: discussionQuestions
+        title: La mia azienda
+        items:
+          - question: "Nome dell'azienda: ___"
+          - question: 'Cosa vende / cosa fa: ___'
+          - question: 'Le professioni e quanti lavoratori: ___'
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: I numeri del mio budget'
+        skills: [Numeri]
+        minutes: 20
+        steps:
+          - Ogni gruppo ha un budget di **900 $** per aprire una nuova attività.
+          - Decidete quanto spendere ogni mese (per i primi 3 mesi) e cosa comprare ogni mese, dalla lista con i prezzi dell'insegnante.
+          - Ogni gruppo presenta il proprio piano con il modello qui sotto.
+      - id: act3-plan
+        type: discussionQuestions
+        title: Il nostro piano
+        items:
+          - question: 'Nel mese 1 spendo: ___ $ per ___, ___ $ per ___ e ___ $ per ___.'
+          - question: 'Nel mese 2 spendo: ___ $ per ___, ___ $ per ___ e ___ $ per ___.'
+          - question: 'Nel mese 3 spendo: ___ $ per ___, ___ $ per ___ e ___ $ per ___.'
+          - question: In totale spendo ___ $ in 3 mesi.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Il colloquio di lavoro'
+        skills: [Numeri, Azioni al presente]
+        minutes: 20
+        steps:
+          - Lavorate in coppia. Lo studente A è l'intervistatore, lo studente B è il candidato.
+          - Lo studente B riceve una carta professione (il luogo di lavoro e il ruolo).
+          - Lo studente A fa domande con i numeri e con le azioni al presente; lo studente B risponde.
+          - Scambiate i ruoli con una nuova carta professione e ripetete la conversazione.
+        example: |-
+          **A (intervistatore):** Quante persone lavorano con te?
+          **B (candidato):** Venti persone.
+          **A:** E quante ore lavori a settimana?
+          **B:** Lavoro quaranta ore a settimana.
+      - id: act4-cards
+        type: table
+        caption: Carte professione
+        header: [Luogo di lavoro, Professione]
+        rows:
+          - [Scuola, Insegnante]
+          - [Ospedale, Dottore]
+          - [Ristorante, Cameriere]
+          - [Azienda, Ingegnere]
+          - [Panificio, Panettiere]
+      - id: act4-numbers
+        type: discussionQuestions
+        title: Domande con i numeri
+        items:
+          - question: Quante persone lavorano con te?
+          - question: Quante ore lavori ogni settimana?
+          - question: Quanti giorni lavori a settimana?
+          - question: Quanti clienti servi al giorno?
+          - question: Quante pause hai?
+          - question: A che ora inizi a lavorare?
+      - id: act4-actions
+        type: discussionQuestions
+        title: Domande con le azioni al presente
+        items:
+          - question: Cosa fai per lavoro?
+          - question: Quali sono le tue responsabilità principali?
+          - question: Perché vuoi questo lavoro?
+          - question: Cosa ti piace di questa professione?
+          - question: Cosa fai di solito in una giornata di lavoro?
+          - question: Lavori bene in squadra?
+          - question: Segui facilmente le istruzioni?
+          - question: Sei puntuale?
+          - question: Fai delle pause durante il giorno?
+          - question: Come gestisci lo stress al lavoro?
+          - question: Lavori all'interno o all'esterno?
+          - question: Parli con i clienti?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Azioni al presente** (domande di riscaldamento 1,
+          2 e 3; Attività 1 e 4) e **Numeri** (domande 4, 5 e 6; Attività 2 e 3).
+          L'Attività 4 pratica tutte e due. Scegli un'attività per ogni abilità.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Fai prima il tuo esempio e poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: Lo studente scelto risponde solo «sì» o «no». Chi indovina la professione sceglie la prossima.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Il quaderno parla degli «stessi articoli usati in precedenza con i loro prezzi»,
+          ma la lista non c'è: prepara una lista di articoli con i prezzi (per esempio
+          computer, sedie, pubblicità) e condividila sullo schermo.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Dai a ogni studente B una carta professione. Variante: dopo due giri gli
+          studenti cambiano compagno (in presenza camminano per la classe; su Zoom
+          ruotano nelle stanze di breakout).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: professioni-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-actions
+        type: ruleSummary
+        skill: Azioni al presente
+        rules:
+          - text: 'I verbi in **-are** (lavorare, parlare, usare, aiutare, guidare, insegnare…): togli *-are* e aggiungi **-o, -i, -a, -iamo, -ate, -ano**.'
+            examples:
+              [
+                'Io lavoro, tu lavori, lui / lei lavora, noi lavoriamo, voi lavorate, loro lavorano.',
+              ]
+          - text: 'Il verbo **fare** è irregolare: *faccio, fai, fa, facciamo, fate, fanno*. Per la professione diciamo *faccio il / la…*'
+            examples: [Cosa fai al lavoro? — Faccio il cuoco.]
+          - text: 'Per le domande usiamo le parole interrogative: *Cosa? Dove? Quante? Perché?*'
+            examples: [Cosa fai?, Dove lavori?, Quante ore lavori?, Perché ti piace questo lavoro?]
+      - id: verbs-table
+        type: table
+        caption: Lavorare e fare al presente
+        header: [Persona, lavorare, fare]
+        rows:
+          - [io, lavoro, faccio]
+          - [tu, lavori, fai]
+          - [lui / lei, lavora, fa]
+          - [noi, lavoriamo, facciamo]
+          - [voi, lavorate, fate]
+          - [loro, lavorano, fanno]
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Numeri
+        rules:
+          - text: Impara i numeri fino a 100. Le decine sono nella tabella.
+            examples: [Lavoro 5 giorni a settimana., Lavoro quaranta ore a settimana.]
+          - text: '**Quanti** con i nomi maschili, **quante** con i nomi femminili.'
+            examples: [Quanti giorni lavori?, Quante ore lavori?]
+          - text: "**C'è** + una cosa o una persona; **ci sono** + più cose o persone."
+            examples: [C'è una receptionist., Ci sono 3 insegnanti.]
+          - text: "Per l'ora usiamo **alle** (all'una). I giorni della settimana: *lunedì, martedì, mercoledì, giovedì, venerdì, sabato, domenica*."
+            examples: [A che ora inizi a lavorare? — Inizio a lavorare alle 9.]
+      - id: tens-table
+        type: table
+        caption: Le decine
+        header: [Numero, In lettere]
+        rows:
+          - ['10', dieci]
+          - ['20', venti]
+          - ['30', trenta]
+          - ['40', quaranta]
+          - ['50', cinquanta]
+          - ['60', sessanta]
+          - ['70', settanta]
+          - ['80', ottanta]
+          - ['90', novanta]
+          - ['100', cento]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Ripassa le due abilità con la classe e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: professioni-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia questo messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-professioni
+        type: aiTutorPrompt
+        title: Parlare di professioni
+        message: >-
+          Ciao Mori. Vorrei parlare di professioni. Puoi farmi delle domande usando le
+          abilità «Azioni al presente» e «Numeri»? Usa solo il presente e correggi i miei
+          errori, per favore.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Puoi spiegarlo in ebraico, ma con la frase in italiano?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Attività interattive
+      - id: mori-chi-sono
+        type: aiTutorPrompt
+        title: Chi sono? (Indovina la professione)
+        intro: >-
+          Pensa a una professione e invia questo messaggio a Mori. Poi dai indizi con frasi
+          semplici, per esempio: *Lavoro con gli animali. Uso uno stetoscopio. Aiuto cani e
+          gatti.* (Risposta: veterinario)
+        message: Ciao Mori. Voglio imparare l'italiano con un gioco. Penso a una professione e tu devi indovinare.
+      - id: mori-chi-sono-2
+        type: aiTutorPrompt
+        title: 'Chi sono? Ora indovini tu'
+        intro: Quando Mori indovina, invia questo messaggio.
+        message: Ora tocca a te, Mori. Pensa a una professione e io indovino.
+      - id: mori-colloquio
+        type: aiTutorPrompt
+        title: Il colloquio di lavoro
+        intro: >-
+          Immagina di essere il capo di un'azienda. Mori vuole un lavoro e tu fai il
+          colloquio. Invia questo messaggio, poi fai a Mori 3 o 4 domande: *Perché vuoi
+          questo lavoro? Che esperienza hai? Cosa fai in questo lavoro? Quante ore puoi
+          lavorare? Ti piace lavorare in squadra? Dove vuoi lavorare?* Alla fine decidi:
+          gli dai il lavoro o no? Spiegagli perché.
+        message: Ciao Mori. Sto imparando con i giochi. Oggi faccio dei colloqui di lavoro. Che lavoro vorresti?
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: professioni-pratica
+    book: workbook
+    title: 'Pratica: Professioni'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-azioni
+        type: activity
+        activity: professioni-azioni
+      - id: ex-numeri
+        type: activity
+        activity: professioni-numeri
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: professioni-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole delle professioni
+        glossLang: he
+        link: https://quizlet.com/br/1068027034/professioni-flash-cards/
+        items: &professioni-words
+          - { term: professione, gloss: מקצוע }
+          - { term: lavoro, gloss: עבודה }
+          - { term: colloquio, gloss: ראיון }
+          - { term: intervistatore, gloss: מראיין }
+          - { term: dipendente, gloss: עובד }
+          - { term: capo, gloss: בוס / מנהל }
+          - { term: azienda, gloss: חברה }
+          - { term: esperienza, gloss: ניסיון }
+          - { term: responsabilità, gloss: אחריות }
+          - { term: squadra, gloss: צוות }
+          - { term: cliente, gloss: לקוח }
+          - { term: animali, gloss: חיות }
+          - { term: cani, gloss: כלבים }
+          - { term: gatti, gloss: חתולים }
+          - { term: stetoscopio, gloss: סטטוסקופ }
+          - { term: veterinario, gloss: וטרינר }
+          - { term: insegnante, gloss: מורה }
+          - { term: dottore, gloss: רופא }
+          - { term: cameriere, gloss: מלצר }
+          - { term: ingegnere, gloss: מהנדס }
+          - { term: chef, gloss: שף }
+          - { term: ore, gloss: שעות }
+          - { term: giorni, gloss: ימים }
+          - { term: settimana, gloss: שבוע }
+          - { term: domanda, gloss: שאלה }
+          - { term: risposta, gloss: תשובה }
+          - { term: perché, gloss: למה }
+          - { term: dove, gloss: איפה }
+          - { term: quando, gloss: מתי }
+          - { term: cosa, gloss: מה }
+          - { term: come, gloss: איך }
+          - { term: numeri, gloss: מספרים }
+          - { term: presente, gloss: הווה }
+          - { term: aiutare, gloss: לעזור }
+          - { term: usare, gloss: להשתמש }
+
+vocabulary:
+  - slug: professioni
+    title: Professioni
+    items: *professioni-words
+
+activities:
+  - slug: professioni-azioni
+    title: 'Azioni al presente: i verbi in -are e fare'
+    minutes: 8
+    items:
+      - id: io-lavoro
+        type: multipleChoice
+        prompt: Io ___ in un ospedale.
+        options:
+          - { text: lavoro, correct: true }
+          - {
+              text: lavora,
+              feedback: '*Lavora* è per *lui / lei*. Con *io* il verbo finisce in *-o*: *lavoro*.',
+            }
+          - { text: lavoriamo, feedback: '*Lavoriamo* è per *noi*. Con *io* usa *lavoro*.' }
+      - id: faccio
+        type: multipleChoice
+        prompt: Cosa fai al lavoro? — ___ il cuoco.
+        options:
+          - { text: Faccio, correct: true }
+          - { text: Fai, feedback: '*Fai* è per *tu*. Con *io* usa *faccio*.' }
+          - { text: Fa, feedback: '*Fa* è per *lui / lei*. Con *io* usa *faccio*.' }
+      - id: completa-are
+        type: fillBlank
+        prompt: Completa con il verbo al presente.
+        text: Tu ___ (parlare) con i clienti. Lei ___ (usare) il computer. Noi ___ (aiutare) le persone.
+        blanks: [[parli], [usa], [aiutiamo]]
+      - id: completa-fare
+        type: fillBlank
+        prompt: Completa con il verbo *fare*.
+        text: Voi cosa ___ al lavoro? — Noi ___ gli insegnanti. Loro ___ i camerieri.
+        blanks: [[fate], [facciamo], [fanno]]
+      - id: unisci-lavorare
+        type: matching
+        prompt: Unisci ogni persona alla forma del verbo *lavorare*.
+        pairs:
+          - [io, lavoro]
+          - [tu, lavori]
+          - [lui / lei, lavora]
+          - [noi, lavoriamo]
+          - [loro, lavorano]
+      - id: lui-lavora
+        type: trueFalse
+        prompt: 'Con *lui* e *lei* i verbi in *-are* finiscono in *-a*: *lui guida*, *lei insegna*.'
+        answer: true
+        feedback:
+          correct: Giusto! *Lui guida*, *lei insegna*, *il pilota viaggia*.
+          incorrect: 'Con *lui* e *lei* il verbo finisce in *-a*: *lui guida*, *lei insegna*.'
+      - id: tu-lavora
+        type: trueFalse
+        prompt: 'Con *tu* diciamo: *Tu lavora con le persone?*'
+        answer: false
+        feedback:
+          correct: 'Giusto! Con *tu* il verbo finisce in *-i*: *Tu lavori con le persone?*'
+          incorrect: 'Con *tu* il verbo finisce in *-i*: *Tu lavori con le persone?*'
+      - id: ordina-veterinario
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Il veterinario aiuta gli animali.
+
+  - slug: professioni-numeri
+    title: "Numeri: quanti, c'è / ci sono, l'ora"
+    minutes: 8
+    items:
+      - id: decine
+        type: matching
+        prompt: Unisci i numeri.
+        pairs:
+          - ['20', venti]
+          - ['30', trenta]
+          - ['40', quaranta]
+          - ['50', cinquanta]
+          - ['100', cento]
+      - id: quante-ore
+        type: multipleChoice
+        prompt: ___ ore lavori ogni settimana?
+        options:
+          - { text: Quante, correct: true }
+          - { text: Quanti, feedback: '*Ore* è femminile plurale: usa *quante*.' }
+          - { text: Quando, feedback: '*Quando* chiede il tempo. Per un numero usa *quante*.' }
+      - id: quanti-giorni
+        type: multipleChoice
+        prompt: ___ giorni lavori a settimana?
+        options:
+          - { text: Quanti, correct: true }
+          - { text: Quante, feedback: '*Giorni* è maschile plurale: usa *quanti*.' }
+          - { text: Dove, feedback: '*Dove* chiede un luogo. Per un numero usa *quanti*.' }
+      - id: cinque
+        type: fillBlank
+        prompt: Scrivi il numero in lettere.
+        text: 'Lavoro 5 giorni a settimana: lavoro ___ giorni.'
+        blanks: [[cinque]]
+      - id: ce-ci-sono
+        type: fillBlank
+        prompt: Completa con *c'è* o *ci sono*.
+        text: Nella mia scuola ___ tre insegnanti. ___ una receptionist.
+        blanks: [[ci sono], ["c'è", 'c’è']]
+        wordBank: ["c'è", ci sono]
+      - id: alle-nove
+        type: multipleChoice
+        prompt: A che ora inizi a lavorare? — Inizio a lavorare ___ 9.
+        options:
+          - { text: alle, correct: true }
+          - { text: il, feedback: "Per l'ora usiamo *alle*: *alle 9*." }
+          - { text: in, feedback: "Per l'ora usiamo *alle*: *alle 9*." }
+      - id: cento
+        type: trueFalse
+        prompt: Il numero 100 si dice *cento*.
+        answer: true
+        feedback:
+          correct: Giusto! 100 = *cento*.
+          incorrect: 100 si dice *cento*.
+      - id: ordina-ore
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Lavoro quaranta ore a settimana.

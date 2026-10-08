@@ -1,0 +1,612 @@
+# Cycle "Cómo relajarse", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: como-relajarse
+title: Cómo relajarse
+goal: Hablar de cómo te relajas con verbos reflexivos y oraciones descriptivas.
+position: 19
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Verbos reflexivos" and "Oraciones descriptivas") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The source gives no activity times for this cycle, so no times are recorded.
+  - >-
+    The plan says Activities 1 and 3 practise reflexive verbs, but they use ordinary
+    present-tense actions (veo, oigo, como; "¿Qué haces cuando…?"); only the warm-up
+    and "me siento" use reflexive verbs. Activities 1, 3 and 6 are tagged here as
+    "Verbos reflexivos / acciones" and the summary's extra section "Verbos en presente
+    (acciones)" is kept. Please confirm.
+  - >-
+    The summary says descriptive sentences use only "ser", but the class uses "me
+    siento + adjetivo" and "está cansado". The rule is kept as written; consider
+    adding a line about "estar" / "sentirse".
+  - >-
+    Warm-up: the garbled emoji after "El té es calmante" was removed; the question 6
+    frame is "Yo ___. El / La ___ es ___." with the source example.
+  - >-
+    Activity 2: the two "Etapa 2" are now steps 2 and 3; the question list was
+    normalised to "¿Cómo te sientes cuando…" + one situation each; "…estas en casa?" →
+    "…estás en casa?". A frame "Me siento ___ porque ___" was added.
+  - >-
+    Activity 3: "Finaliza la dinámica de las salas de reuniones" (breakout rooms) is
+    in the teacher note. Activity 4: "Yo como helado allá" → "allí". Activity 5:
+    "Estar en casa en un domingo" → "Estar en casa un domingo"; garbled emoji removed.
+    The Wheel of Names link is kept as the activity's resource. Activity 6: "Mi final
+    de semana relajante" → "Mi fin de semana relajante"; garbled emoji removed.
+  - >-
+    Summary: the source's numbering ("1. ### **¿Cuándo los usamos?**") was broken;
+    the reflexive rules are written as three rules (pronouns, when to use them,
+    examples in relaxation routines). The extra point "¿Qué pasa con los plurales?"
+    is kept as a fourth descriptive rule.
+  - >-
+    Mori: "Abra el chatbot de la escuela" → "Abre el chat con Mori"; "usa sólo" →
+    "usa solo". Extra activity 1: "Te describo una rutina relajante, y adivina qué
+    estoy haciendo" → "Te describo una rutina relajante y tú adivinas qué hago";
+    "(Mori adivina: Relájate en casa.)" → "Te relajas en casa."; "¡Ahora te toca!" →
+    "¡Ahora te toca a ti!". Extra activity 2: "mi lugar favorito para relajarte" →
+    "para relajarme".
+  - >-
+    Vocabulary: the Hebrew glosses in the source have niqqud (vowel points); they are
+    kept as written. The empty last table row was removed.
+  - >-
+    The "Respuesta del estudiante 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: como-relajarse-clase
+    title: 'Clase: Cómo relajarse'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cómo relajarse
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Verbos reflexivos
+            description: '*me relajo, te relajas, se relaja, nos relajamos, se relajan*'
+          - name: Oraciones descriptivas
+            description: 'Sujeto + *ser* + adjetivo: *La música es relajante. Las luces son suaves.*'
+      - id: quizlet
+        type: externalLink
+        label: Cómo relajarse en Quizlet
+        url: https://quizlet.com/il/856287205/basic-spanish-como-relajarse-actualizado-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Me relajo con ___.
+        example: Soy Dana. Me relajo con Netflix.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Cuándo te sientes relajado / relajada?
+            frame: Me siento relajado / relajada cuando ___.
+          - question: ¿Cuándo te sientes estresado / estresada?
+            frame: Me siento estresado / estresada cuando ___.
+          - question: ¿Qué haces para relajarte?
+            frame: Yo ___ para relajarme. Lo hago ___ veces por semana.
+          - question: ¿Cuándo te relajas? ¿Por la mañana o por la noche?
+            frame: Me relajo por la mañana / por la noche.
+          - question: ¿Prefieres relajarte en casa o en la naturaleza? ¿Por qué?
+            frame: Prefiero relajarme en ___ porque ___.
+          - question: ¿Qué haces cuando no puedes dormir?
+            frame: 'Yo ___. El / La ___ es ___. (Ejemplo: Yo bebo té de manzanilla. El té es calmante.)'
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Habla de tus sentidos'
+        skills: [Verbos reflexivos / acciones]
+        steps:
+          - Repasa el vocabulario de los cinco sentidos con tu profesor.
+          - Tu profesor da dos ejemplos de cosas que ve, oye, toca, huele o come.
+          - Trabajamos un sentido a la vez. Cada estudiante dice sus dos ejemplos.
+        example: |-
+          **Yo veo** un libro. **Yo veo** una ventana.
+          **Yo oigo** música. **Yo toco** mi mano.
+          **Yo huelo** café. **Yo como** una manzana.
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Completa las oraciones
+        items:
+          - question: Yo veo ___ y ___.
+          - question: Yo oigo ___ y ___.
+          - question: Yo toco ___ y ___.
+          - question: Yo huelo ___ y ___.
+          - question: Yo como ___ y ___.
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: ¿Cómo te sientes cuando…?'
+        skills: [Oraciones descriptivas]
+        steps:
+          - Trabajen en parejas.
+          - Entrevista a tu pareja con las preguntas de abajo.
+          - Comparte las respuestas de tu pareja con toda la clase.
+      - id: act2-questions
+        type: discussionQuestions
+        items:
+          - question: ¿Cómo te sientes cuando te despiertas temprano? ¿Por qué?
+            frame: Me siento ___ porque ___.
+          - question: ¿Cómo te sientes cuando estudias español? ¿Por qué?
+            frame: Me siento ___ porque ___.
+          - question: ¿Cómo te sientes cuando comes tu comida favorita?
+            frame: Me siento ___.
+          - question: ¿Cómo te sientes cuando ves a tu mejor amigo / amiga?
+            frame: Me siento ___.
+          - question: ¿Cómo te sientes cuando ves una película divertida?
+            frame: Me siento ___.
+          - question: ¿Cómo te sientes cuando tienes una prueba?
+            frame: Me siento ___.
+          - question: ¿Cómo te sientes cuando juegas un juego?
+            frame: Me siento ___.
+          - question: ¿Cómo te sientes cuando tienes hambre?
+            frame: Me siento ___.
+          - question: ¿Cómo te sientes cuando recibes un regalo?
+            frame: Me siento ___.
+          - question: ¿Cómo te sientes cuando estás en casa?
+            frame: Me siento ___.
+          - question: ¿Cómo te sientes cuando escuchas música?
+            frame: Me siento ___.
+          - question: ¿Cómo te sientes cuando vas a la playa?
+            frame: Me siento ___.
+          - question: ¿Cómo te sientes cuando hablas español?
+            frame: Me siento ___.
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: ¿Qué haces cuando…?'
+        skills: [Verbos reflexivos / acciones]
+        steps:
+          - Trabajen en parejas.
+          - Entrevista a tu pareja con las preguntas de abajo y escribe sus respuestas.
+          - Comparte con el grupo una respuesta de tu pareja.
+        example: |-
+          *Maya come chocolate cuando tiene hambre.*
+          *Daniel escucha música cuando se siente estresado.*
+          *Tomer pasea con su perro cuando va al parque.*
+      - id: act3-questions
+        type: discussionQuestions
+        items:
+          - question: ¿Qué haces cuando quieres dormir pero estás en el trabajo?
+            frame: Cuando quiero dormir en el trabajo, yo ___.
+          - question: ¿Qué haces cuando te sientes estresado / estresada?
+            frame: Cuando me siento estresado / estresada, yo ___.
+          - question: ¿Qué haces cuando tienes hambre? ¿Qué comes?
+            frame: Cuando tengo hambre, yo como ___.
+          - question: ¿Qué haces cuando quieres desconectarte?
+            frame: Cuando quiero desconectarme, yo ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Describe un lugar relajante y adivina qué es'
+        skills: [Oraciones descriptivas]
+        steps:
+          - Piensa en un lugar relajante. Describe 3 cosas que ves allí.
+          - Los demás escriben qué lugar creen que es, y cada uno dice su respuesta.
+          - Di qué lugar es. ¿Quién acertó? ¿Todos dijeron lo mismo?
+          - La primera persona que adivina correctamente describe el siguiente lugar.
+        example: |-
+          *Tiene **agua**. Yo como **helado** allí. Yo uso un **traje de baño**.*
+          *—¡La playa!*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Mi lugar relajante
+        items:
+          - question: Tiene ___.
+          - question: Yo ___ allí.
+          - question: Yo uso ___.
+          - question: ¿Qué lugar es? Creo que es ___.
+      - id: act5
+        type: classActivity
+        title: 'Actividad 5: La ruleta de las emociones'
+        skills: [Oraciones descriptivas]
+        steps:
+          - Tu profesor gira la ruleta y elige a un estudiante.
+          - Di cómo te sientes en esa situación y por qué.
+          - '**Regla importante:** cada estudiante da una respuesta **diferente** de las que ya dijeron sus compañeros.'
+        wordBank:
+          [
+            despertarse temprano,
+            comer pizza,
+            escuchar música,
+            ir a la playa,
+            recibir un regalo,
+            tener un examen,
+            ver una película divertida,
+            hablar español,
+            jugar un juego,
+            estar en casa un domingo,
+          ]
+        example: |-
+          Situación: *tener un examen*
+          *Me siento nervioso porque estudio mucho. / Me siento cansado porque no duermo bien.*
+          *Me siento feliz porque como pizza. / Me siento relajado porque estoy en casa.*
+        resource:
+          label: La ruleta de las emociones
+          url: https://wheelofnames.com/jkp-jx3
+      - id: act5-sentences
+        type: discussionQuestions
+        title: Completa la oración
+        items:
+          - question: Me siento ___ porque ___.
+      - id: act6
+        type: classActivity
+        title: 'Actividad 6: Mi fin de semana relajante'
+        skills: [Verbos reflexivos / acciones]
+        steps:
+          - Escribe 3 frases sobre lo que haces en un fin de semana relajante.
+          - 'Trabajen en parejas. Pregunta a tu pareja: *¿Qué haces en un fin de semana relajante?*'
+          - Presenta al grupo una frase de tu pareja.
+        example: |-
+          A: *¿Qué haces en un fin de semana relajante?*
+          B: *Yo camino en el parque y escucho música.*
+          A: *¡Qué bien! La música es relajante.*
+          *María bebe café y mira una película. Pedro descansa en casa porque está cansado.*
+      - id: act6-sentences
+        type: discussionQuestions
+        title: Mi fin de semana relajante
+        items:
+          - question: Yo ___. (Yo duermo mucho.)
+          - question: Yo ___. (Yo bebo té.)
+          - question: El / La ___ es ___. (La música es tranquila.)
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Verbos reflexivos** (preguntas y Actividad 1
+          o 3) y **Oraciones descriptivas** (preguntas y Actividad 2 o 4). Las
+          Actividades 5 y 6 son actividades extra.
+      - id: n-intro
+        anchor: intro
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Repasa el vocabulario de los 5 sentidos. Da dos ejemplos de un sentido;
+          después cada estudiante dice sus dos ejemplos. Trabaja un sentido a la vez.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Las parejas trabajan en salas de reuniones. Al cerrar las salas, cada
+          estudiante comparte una respuesta de su pareja.
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Prepara la ruleta digital (Wheel of Names) con las situaciones, o usa tarjetas.
+          Gira la ruleta y elige a un estudiante.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: como-relajarse-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-reflexive
+        type: ruleSummary
+        skill: Verbos reflexivos
+        rules:
+          - text: 'Los verbos reflexivos se usan con un **pronombre** que cambia según la persona.'
+            examples:
+              [
+                Yo **me relajo**,
+                Tú **te relajas**,
+                Él / Ella / Usted **se relaja**,
+                Nosotros **nos relajamos**,
+                Ellos / Ellas **se relajan**,
+              ]
+          - text: 'Los usamos cuando **la acción recae sobre la misma persona que la realiza**. Para relajarnos, describen actividades que hacemos para nosotros mismos.'
+          - text: Ejemplos en rutinas de relajación.
+            examples:
+              [
+                Yo **me estiro** antes de dormir.,
+                Tú **te sientas** en una posición cómoda.,
+                Él **se acuesta** en la hamaca.,
+                Nosotros **nos concentramos** en la respiración.,
+                Ellos **se bañan** con agua caliente.,
+              ]
+      - id: rules-descriptive
+        type: ruleSummary
+        skill: Oraciones descriptivas
+        rules:
+          - text: 'Usamos las oraciones descriptivas para describir cosas, personas, lugares o situaciones: no indican acciones, sino características o condiciones.'
+            examples: [El ambiente es tranquilo., La música es relajante., Las luces son suaves.]
+          - text: 'En presente usamos el verbo **ser** (soy, eres, es, somos, son): **sujeto + ser + adjetivo o sustantivo**.'
+            examples:
+              [El aroma es agradable., La habitación es silenciosa., Las toallas son suaves.]
+          - text: 'Para el negativo, ponemos **no** antes del verbo *ser*.'
+            examples: [El agua no es fría., La música no es fuerte., Las paredes no son oscuras.]
+          - text: 'Si el sujeto es plural, usamos **son** (o **no son**), y el adjetivo también va en plural.'
+            examples:
+              [
+                Los cojines son cómodos.,
+                Las lámparas no son brillantes.,
+                Los sonidos son naturales.,
+              ]
+      - id: rules-actions
+        type: ruleSummary
+        skill: Verbos en presente (acciones)
+        rules:
+          - text: Sujeto + verbo en presente.
+            examples: [Yo leo un libro., Tú escuchas música., Ellos miran una película.]
+          - text: 'Ojo con las terminaciones según el sujeto.'
+            examples:
+              [
+                '**-ar**: yo hablo, tú hablas, él / ella habla, nosotros hablamos, ellos hablan',
+                '**-er**: yo como, tú comes, él / ella come, nosotros comemos, ellos comen',
+                '**-ir**: yo vivo, tú vives, él / ella vive, nosotros vivimos, ellos viven',
+              ]
+          - text: 'No usamos *estar* o *ser* antes de otro verbo.'
+            examples: ['Correcto: *Yo veo televisión.*', 'Incorrecto: *Yo estoy veo televisión.*']
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: como-relajarse-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-relajarse
+        type: aiTutorPrompt
+        title: Hablar de cómo te relajas
+        message: >-
+          ¡Hola Mori! Quiero practicar español. ¿Puedes hacerme preguntas sobre
+          relajación con las habilidades de oraciones descriptivas y verbos reflexivos?
+          Por favor, usa solo presente simple y corrige mis errores.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Práctica adicional
+      - id: mori-rutina
+        type: aiTutorPrompt
+        title: Rutinas relajantes
+        intro: >-
+          Envía este mensaje a Mori y describe una rutina relajante. Por ejemplo: *Me
+          siento en una silla mullida. Tomo té. Leo un libro. Escucho música
+          tranquila.* (Mori adivina: *Te relajas en casa.*)
+        message: ¡Hola Mori! Hagamos una actividad. Te describo una rutina relajante y tú adivinas qué hago.
+      - id: mori-rutina-turno
+        type: aiTutorPrompt
+        title: 'Rutinas relajantes: ¡ahora tú!'
+        intro: Después, envía este mensaje.
+        message: ¡Ahora te toca a ti! Describe una rutina relajante y la adivinaré.
+      - id: mori-lugar
+        type: aiTutorPrompt
+        title: Mi lugar de relax
+        intro: >-
+          Envía este mensaje a Mori y describe tu lugar. Por ejemplo: *Hay un árbol
+          grande. Me siento debajo y escribo en mi cuaderno. Oigo pájaros y veo
+          flores.*
+        message: ¡Oye, Mori! Hagamos una actividad nueva. Te voy a describir mi lugar favorito para relajarme. Tú intenta imaginarlo.
+      - id: mori-lugar-turno
+        type: aiTutorPrompt
+        title: 'Mi lugar de relax: ¡ahora tú!'
+        intro: Después, envía este mensaje.
+        message: ¡Ahora te toca a ti! Describe tu lugar de descanso y lo imaginaré.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: como-relajarse-practica
+    book: workbook
+    title: 'Práctica: Cómo relajarse'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-reflexivos
+        type: activity
+        activity: como-relajarse-reflexivos
+      - id: ex-descriptivas
+        type: activity
+        activity: como-relajarse-descriptivas
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: como-relajarse-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras para relajarse
+        glossLang: he
+        link: https://quizlet.com/il/856287205/basic-spanish-como-relajarse-actualizado-flash-cards/
+        items: &relajarse-words
+          - { term: relajado / relajada, gloss: רָגוּעַ / רְגוּעָה }
+          - { term: estresado / estresada, gloss: לָחוּץ / לְחוּצָה }
+          - { term: cansado / cansada, gloss: עָיֵף / עֲיֵפָה }
+          - { term: hambriento / hambrienta, gloss: רָעֵב / רְעֵבָה }
+          - { term: feliz, gloss: שָׂמֵחַ / שְׂמֵחָה }
+          - { term: enojado / enojada, gloss: כּוֹעֵס / כּוֹעֶסֶת }
+          - { term: energético / energética, gloss: אֲנֶרְגֶטִי / אֲנֶרְגֶטִית }
+          - { term: tranquilo / tranquila, gloss: שָׁקֵט / שְׁקֵטָה }
+          - { term: cómodo / cómoda, gloss: נוֹחַ / נוֹחָה }
+          - { term: nervioso / nerviosa, gloss: עַצְבָּנִי / עַצְבָּנִית }
+          - { term: sentir (me siento), gloss: לְהַרְגִּישׁ }
+          - { term: dormir, gloss: לִישׁוֹן }
+          - { term: comer, gloss: לֶאֱכוֹל }
+          - { term: beber, gloss: לִשְׁתּוֹת }
+          - { term: escuchar, gloss: לְהַקְשִׁיב }
+          - { term: ver / mirar, gloss: לִרְאוֹת }
+          - { term: caminar, gloss: לָלֶכֶת }
+          - { term: tocar, gloss: לָגַעַת }
+          - { term: oler, gloss: לְהָרִיחַ }
+          - { term: descansar, gloss: לָנוּחַ }
+          - { term: música, gloss: מוּזִיקָה }
+          - { term: té, gloss: תֵּה }
+          - { term: café, gloss: קָפֶה }
+          - { term: chocolate, gloss: שׁוֹקוֹלָד }
+          - { term: película, gloss: סֶרֶט }
+          - { term: libro, gloss: סֵפֶר }
+          - { term: parque, gloss: פָּארְק }
+          - { term: playa, gloss: חוֹף }
+          - { term: casa, gloss: בַּיִת }
+          - { term: regalo, gloss: מַתָּנָה }
+          - { term: examen, gloss: מִבְחָן }
+          - { term: juego, gloss: מִשְׂחָק }
+          - { term: domingo, gloss: רִאשׁוֹן (יוֹם) }
+          - { term: sentidos, gloss: חוּשִׁים }
+          - { term: cuerpo, gloss: גּוּף }
+          - { term: ambiente, gloss: סְבִיבָה }
+
+vocabulary:
+  - slug: como-relajarse
+    title: Cómo relajarse
+    items: *relajarse-words
+
+activities:
+  - slug: como-relajarse-reflexivos
+    title: 'Verbos reflexivos: me, te, se, nos'
+    minutes: 8
+    items:
+      - id: yo-me
+        type: multipleChoice
+        prompt: Yo ___ relajo con música.
+        options:
+          - { text: me, correct: true }
+          - { text: te, feedback: '*Te* es para *tú*. Con *yo* usa *me*: *yo me relajo*.' }
+          - { text: se, feedback: '*Se* es para *él / ella / ellos*. Con *yo* usa *me*.' }
+      - id: nosotros-nos
+        type: multipleChoice
+        prompt: Nosotros ___ concentramos en la respiración.
+        options:
+          - { text: nos, correct: true }
+          - { text: se, feedback: '*Se* es para *él / ella / ellos*. Con *nosotros* usa *nos*.' }
+          - { text: me, feedback: '*Me* es para *yo*. Con *nosotros* usa *nos*.' }
+      - id: une-relajarse
+        type: matching
+        prompt: Une cada persona con el verbo *relajarse*.
+        pairs:
+          - [yo, me relajo]
+          - [tú, te relajas]
+          - [él / ella, se relaja]
+          - [nosotros, nos relajamos]
+          - [ellos / ellas, se relajan]
+      - id: tu-te
+        type: fillBlank
+        prompt: Completa con el pronombre correcto (*me, te, se, nos*).
+        text: Tú ___ sientas en una posición cómoda. Ellos ___ bañan con agua caliente.
+        blanks: [[te], [se]]
+      - id: ella-se-estira
+        type: fillBlank
+        prompt: Completa con el verbo *estirarse* en presente.
+        text: Ella ___ ___ antes de dormir.
+        blanks: [[se], [estira]]
+      - id: misma-persona
+        type: trueFalse
+        prompt: 'Usamos un verbo reflexivo cuando la acción recae sobre la misma persona que la realiza: *Yo me relajo.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! La persona hace la acción para sí misma.
+          incorrect: 'En *yo me relajo*, la acción es para la misma persona: por eso usamos *me*.'
+      - id: tu-te-relajas
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: Tú te relajas en casa., correct: true }
+          - {
+              text: Tú se relajas en casa.,
+              feedback: 'Con *tú* el pronombre es *te*: *tú te relajas*.',
+            }
+          - {
+              text: Tú te relaja en casa.,
+              feedback: 'Con *tú* el verbo termina en *-as*: *te relajas*.',
+            }
+      - id: ordena-estiro
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Yo me estiro antes de dormir.
+
+  - slug: como-relajarse-descriptivas
+    title: 'Oraciones descriptivas: ser + adjetivo'
+    minutes: 8
+    items:
+      - id: la-musica-es
+        type: multipleChoice
+        prompt: La música ___ relajante.
+        options:
+          - { text: es, correct: true }
+          - { text: son, feedback: '*La música* es singular: usa *es*.' }
+          - { text: eres, feedback: '*Eres* es para *tú*. Para una cosa usa *es*.' }
+      - id: las-luces-son
+        type: multipleChoice
+        prompt: Las luces ___ suaves.
+        options:
+          - { text: son, correct: true }
+          - { text: es, feedback: '*Las luces* es plural: usa *son*.' }
+          - { text: somos, feedback: '*Somos* es para *nosotros*. Para varias cosas usa *son*.' }
+      - id: es-son
+        type: fillBlank
+        prompt: Completa con *es* o *son*.
+        text: El aroma ___ agradable. Las toallas ___ suaves.
+        blanks: [[es], [son]]
+        wordBank: [es, son]
+      - id: cojines
+        type: multipleChoice
+        prompt: Los cojines son ___.
+        options:
+          - { text: cómodos, correct: true }
+          - {
+              text: cómodo,
+              feedback: '*Los cojines* es plural: el adjetivo también va en plural: *cómodos*.',
+            }
+          - { text: cómodas, feedback: '*Cojines* es masculino: usa *cómodos*.' }
+      - id: no-despues
+        type: trueFalse
+        prompt: 'Para hacer una oración negativa, ponemos *no* después del verbo: *La música es no fuerte.*'
+        answer: false
+        feedback:
+          correct: '¡Correcto! El *no* va antes del verbo: *La música no es fuerte.*'
+          incorrect: 'El *no* va antes del verbo *ser*: *La música no es fuerte.*'
+      - id: agua-negativo
+        type: fillBlank
+        prompt: 'Escribe la oración en negativo: *El agua es fría.*'
+        text: El agua ___ fría.
+        blanks: [[no es]]
+      - id: une-descripciones
+        type: matching
+        prompt: Une cada sujeto con el final correcto. Mira si es masculino o femenino, singular o plural.
+        pairs:
+          - [El ambiente, es tranquilo.]
+          - [La habitación, es silenciosa.]
+          - [Los cojines, son cómodos.]
+          - [Las paredes, no son oscuras.]
+      - id: ordena-musica
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: La música no es fuerte.

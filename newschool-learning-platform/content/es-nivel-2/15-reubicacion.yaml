@@ -1,0 +1,531 @@
+# Cycle "Reubicación", converted from the Spanish level 2 (conversational) digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-2
+slug: reubicacion
+title: Reubicación
+goal: Hablar de planes de mudanza en futuro y pedir información útil en una ciudad nueva.
+position: 15
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Futuro" and "Socializar") are NEW: the notebook has
+    no self-study exercises. They were written from the cycle's two skills, its
+    summary rules and its vocabulary. Please check level, wording and every right
+    answer before students see them.
+  - >-
+    Grammar correction: the summary said that "voy a + infinitivo" and the futuro
+    simple "significan lo mismo; usa la que sea más cómoda". This is rewritten: both
+    talk about plans and are understood the same way in conversation, but "ir a +
+    infinitivo" is more usual for near, decided plans, and the futuro simple for
+    predictions and plans further away. Please confirm.
+  - >-
+    Added to the summary (the notebook gives only examples): how to form both
+    futures — ir (voy, vas, va, vamos, vais, van) + a + infinitivo, and infinitivo +
+    -é, -ás, -á, -emos, -éis, -án — with a table, and the irregular futures the cycle
+    uses (haré, tendré, saldré) plus podré, diré, vendré. Also the two places of the
+    pronoun ("voy a mudarme" / "me voy a mudar"). Please confirm.
+  - >-
+    Information general: "2 habilidades practicadas: futuro simple" named only one
+    skill; the two skills are "Futuro" and "Socializar", as in the rest of the plan.
+  - >-
+    Corrections: title "Reubicacion" → "Reubicación"; "¿Quieres mudarte? A dónde?" →
+    "¿Quieres mudarte? ¿Adónde?"; "¡¡ey!! Amigo!" → "¡Hola, amigo!"; "¿qué voy a
+    hacer?" → "¿Qué voy a hacer?"; the summary heading "### **Futuro simple en
+    español**" (markdown left in the text) was cleaned. Warm-up 4 and 5 had their
+    examples in brackets; they became frames.
+  - >-
+    Activity 3 asks students to find a place online (Facebook groups) to ask for help.
+    No link is given, and Facebook is not on the link allow-list, so it stays a
+    teacher instruction. Activity 4 asks for "un día" but its example uses habits
+    ("todas las mañanas"); kept as in the source.
+  - >-
+    Homework: the five "Prompt para Mori" parts are turned into full Mori messages
+    with the notebook's questions and follow-up questions inside. Part 5 (Mori writes
+    a plan and the student corrects it) was reworded to be clearer. Please confirm.
+  - >-
+    Left out: the English footer "Send your homework to the New School bot…" with the
+    WhatsApp phone number (platform-specific, not course material). The "Respuesta de
+    alumno" lines are replaced by the optional answer boxes (decision C2). The source
+    gives no activity times, so no minutes are recorded.
+  - >-
+    Vocabulary: "Vivir" is glossed "לחיות, לגור"; "Compañero" kept as "חבר / עמית".
+    The Quizlet link is kept as in the source.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: reubicacion-clase
+    title: 'Clase: Reubicación'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Reubicación
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Futuro
+            description: '*Voy a + infinitivo* y el futuro simple: *me mudaré, haré, tendré*'
+          - name: Socializar
+            description: 'Hacer preguntas y dar información breve y útil: *¿Dónde está el mejor restaurante?*'
+      - id: quizlet
+        type: externalLink
+        label: Reubicación en Quizlet
+        url: https://quizlet.com/867385502/conversational-spanish-relocation-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. El año que viene voy a ___.
+        example: Soy Dana. El año que viene voy a viajar a París.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de preparación
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Quieres mudarte? ¿Adónde?
+            frame: Sí, quiero mudarme a ___. / No, no quiero mudarme.
+          - question: ¿Con quién te vas a mudar?
+            frame: Me voy a mudar con ___.
+          - question: ¿Cuándo te mudarás?
+            frame: Me mudaré ___.
+          - question: ¿Qué harás antes de mudarte?
+            frame: 'Voy a ___ (hacer las maletas, aprender el idioma, encontrar un trabajo, hacer amigos, encontrar un apartamento, ahorrar dinero…).'
+          - question: ¿Qué mejorará después de que te mudes? Nombra 2 cosas.
+            frame: 'Mi trabajo será mejor. / Tendré un auto mejor. / Saldré más. ___'
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: ¡Nos mudamos!'
+        skills: [Socializar, Futuro]
+        steps:
+          - 'La clase se divide en dos grupos. Por ejemplo: el grupo 1 se mudará a Europa y el grupo 2, a África.'
+          - Cada grupo escribe un mensaje a un amigo. Cuéntale sobre la mudanza y pídele ayuda con los preparativos.
+          - Lee el mensaje de tu grupo a la clase.
+        wordBank: [feliz, asustado, ansioso, triste, emocionado]
+      - id: act1-message
+        type: discussionQuestions
+        title: Nuestro mensaje
+        items:
+          - question: ¡Hola, amigo! Finalmente decidí… ¡me mudo a ___!
+          - question: Estoy muy ___ (feliz, asustado, ansioso, triste, emocionado).
+          - question: Antes de viajar, voy a ___.
+          - question: ¿Puedes ayudarme con ___?
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Necesito un plan'
+        skills: [Futuro]
+        steps:
+          - Escribe una lista de tus planes futuros, a corto y a largo plazo, con fecha y lugar.
+          - Escribe 10 pasos. El paso 1 es dónde estás ahora; el paso 10 es tu objetivo cumplido.
+          - Escribe los pasos para llegar del 1 al 10 y compártelos con el grupo.
+        example: |-
+          *Paso 1: Hoy estoy en Tel Aviv.*
+          *Paso 2: En enero voy a ahorrar dinero.*
+          *Paso 10: Vivo feliz en Madrid.*
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: ¿Alguien me ayudará?'
+        skills: [Socializar]
+        steps:
+          - Imagina que llegaste a una ciudad nueva y necesitas saber algo sobre ella.
+          - Busca en internet un lugar donde pedir ayuda (por ejemplo, un grupo de la ciudad en las redes sociales).
+          - Escribe un mensaje corto y claro para pedir ayuda.
+        example: '*¡Hola a todos! Acabo de llegar a la ciudad. ¿Dónde están los buenos restaurantes? ¿Cómo se paga el estacionamiento?*'
+      - id: act3-questions
+        type: discussionQuestions
+        title: Mi mensaje
+        items:
+          - question: ¿Dónde está el mejor ___?
+          - question: ¿Cómo se paga ___?
+          - question: ¿Dónde puedo ___?
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: ¿Qué voy a hacer?'
+        skills: [Futuro]
+        steps:
+          - Elige una ciudad para mudarte.
+          - Describe lo que harás allí durante un día. Usa el futuro.
+        example: >-
+          *Me mudaré a París. Todas las mañanas iré a la panadería. Comeré mucho queso y
+          beberé mucho vino. Iré todos los días a ver la Torre Eiffel. Tomaré el metro
+          para ir al trabajo. Trabajaré con franceses. Saldré con amigos después del
+          trabajo.*
+      - id: act4-frames
+        type: discussionQuestions
+        title: Mi día en la nueva ciudad
+        items:
+          - question: Me mudaré a ___.
+          - question: Por la mañana ___.
+          - question: Por la tarde ___.
+          - question: Por la noche ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Futuro** (preguntas de preparación, Actividad 2
+          o Actividad 4) y **Socializar** (preguntas de preparación, Actividad 1 o
+          Actividad 3).
+      - id: n-intro
+        anchor: intro
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act2
+        anchor: act2
+        text: Cada estudiante crea su propia lista de 10 pasos, con fechas y lugares. Los ejemplos del paso 1, 2 y 10 son solo modelos.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Explica que llegaron a una ciudad nueva y necesitan información (el mejor bar,
+          los buenos restaurantes, cómo se paga el estacionamiento). Cada estudiante busca
+          en internet un lugar para pedir ayuda (por ejemplo, grupos de Facebook de la
+          ciudad) y escribe su mensaje.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: reubicacion-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-futuro
+        type: ruleSummary
+        skill: Futuro
+        rules:
+          - text: 'Forma 1: **ir** (voy, vas, va, vamos, vais, van) **+ a + infinitivo**. Es muy común para planes cercanos y decididos.'
+            examples: [Voy a mudarme a Italia el año que viene., Voy a buscar un trabajo nuevo.]
+          - text: 'Forma 2: **futuro simple** = infinitivo + **-é, -ás, -á, -emos, -éis, -án**. Se usa para planes y predicciones, a menudo más lejanos.'
+            examples: [Me mudaré a España., Ahorraré dinero antes de mudarme.]
+          - text: 'Algunos verbos cambian la raíz en el futuro simple, pero las terminaciones son las mismas.'
+            examples:
+              [
+                'hacer → haré',
+                'tener → tendré',
+                'salir → saldré',
+                'poder → podré',
+                'decir → diré',
+                'venir → vendré',
+              ]
+          - text: 'En la conversación, las dos formas se entienden igual. Con un verbo como *mudarse*, el pronombre puede ir antes de *ir* o al final del infinitivo.'
+            examples: [Voy a mudarme. = Me voy a mudar., Me mudaré en julio.]
+      - id: table-futuro
+        type: table
+        caption: 'El futuro de «mudarse»'
+        header: [Persona, Ir a + infinitivo, Futuro simple]
+        rows:
+          - [Yo, voy a mudarme, me mudaré]
+          - [Tú, vas a mudarte, te mudarás]
+          - [Él / Ella / Usted, va a mudarse, se mudará]
+          - [Nosotros / Nosotras, vamos a mudarnos, nos mudaremos]
+          - [Vosotros / Vosotras, vais a mudaros, os mudaréis]
+          - [Ellos / Ellas / Ustedes, van a mudarse, se mudarán]
+      - id: rules-socializar
+        type: ruleSummary
+        skill: Socializar
+        rules:
+          - text: 'Socializar es **hacer preguntas y dar información breve y útil** en contextos sociales. Sé breve: da la información esencial.'
+            examples: [Me mudaré en julio.]
+          - text: Haz preguntas directas y prácticas.
+            examples: [¿Dónde está el mejor restaurante?, ¿Cómo se paga el estacionamiento?]
+          - text: Elige a la persona o al grupo correcto antes de preguntar.
+            examples: [Pregunta en un grupo de Facebook de tu nueva ciudad, no en un grupo general.]
+      - id: important
+        type: callout
+        tone: info
+        title: Lo más importante
+        text: |-
+          Con el **futuro** puedes hablar de tus planes de mudanza.
+          Con la habilidad de **socializar**, puedes pedir ayuda y dar información básica cuando llegas a un lugar nuevo.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: reubicacion-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia cada mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-futuro
+        type: aiTutorPrompt
+        title: 'Parte 1: Futuro, planes de mudanza'
+        message: |-
+          ¡Hola Mori! Quiero practicar el futuro. Hazme estas preguntas en orden. Espera mi respuesta y corrígeme si no uso bien el futuro. Después de cada respuesta, hazme la pregunta extra.
+          1. ¿Quieres mudarte? (Después: ¿Por qué sí o por qué no?)
+          2. ¿A dónde te mudarás? (Después: ¿Cuándo exactamente?)
+          3. ¿Con quién te vas a mudar? (Después: ¿Y quién no se mudará contigo?)
+          4. ¿Qué harás antes de mudarte? (Después: ¿Qué es lo más importante de esa lista?)
+          5. ¿Qué mejorará después de que te mudes? (Después: Dame dos ejemplos.)
+      - id: mori-socializar
+        type: aiTutorPrompt
+        title: 'Parte 2: Socializar, pedir y dar información'
+        message: |-
+          ¡Hola Mori! Hazme preguntas como si yo acabara de llegar a una ciudad nueva. Corrige mis respuestas si no son breves y claras.
+          1. ¿Dónde está el mejor restaurante de tu ciudad?
+          2. ¿Cómo se paga el transporte público?
+          3. ¿Qué lugar recomiendas visitar primero?
+          4. ¿Dónde puedo conocer gente nueva?
+          5. ¿Cuál es el mejor barrio para vivir?
+      - id: mori-plan
+        type: aiTutorPrompt
+        title: 'Parte 3: Mini juego «Mi plan de 10 pasos»'
+        intro: 'Ejemplo: *Paso 1: Hoy estoy en… · Paso 2: Voy a… · Paso 3: Me mudaré en… · Paso 10: Ya logré mi objetivo (Vivo feliz en mi nueva ciudad).*'
+        message: >-
+          ¡Hola Mori! Guíame para crear una lista de 10 pasos de mi mudanza, desde hoy
+          hasta el futuro. Pregúntame un paso cada vez y corrige mis errores, por favor.
+      - id: mori-escritura
+        type: aiTutorPrompt
+        title: 'Parte 4: Producción escrita guiada'
+        intro: |-
+          Ejemplo de alumno:
+          *Me mudaré a Madrid el próximo año.*
+          *Buscaré un trabajo antes de mudarme.*
+          *¿Dónde está el supermercado más cercano?*
+          *¿Cómo se paga el estacionamiento aquí?*
+        message: >-
+          ¡Hola Mori! Pídeme escribir 5 frases: 3 en futuro sobre mi mudanza y 2 frases
+          sociales (preguntas prácticas que haría en una ciudad nueva). Después, corrige mis
+          errores, por favor.
+      - id: mori-cierre
+        type: aiTutorPrompt
+        title: 'Parte 5: Cierre'
+        intro: Ahora tú eres el profesor.
+        message: >-
+          ¡Hola Mori! Escribe tu plan de mudanza en 3 frases en futuro y después hazme una
+          pregunta social, como si yo viviera en tu nueva ciudad. Yo voy a corregir tus
+          errores y a responder tu pregunta.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: reubicacion-practica
+    book: workbook
+    title: 'Práctica: Reubicación'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-futuro
+        type: activity
+        activity: reubicacion-futuro
+      - id: ex-socializar
+        type: activity
+        activity: reubicacion-socializar
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: reubicacion-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la mudanza
+        glossLang: he
+        link: https://quizlet.com/867385502/conversational-spanish-relocation-flash-cards/
+        items: &reubicacion-words
+          - { term: Mudarse, gloss: לעבור דירה }
+          - { term: Viajar, gloss: לנסוע }
+          - { term: Ahorrar dinero, gloss: לחסוך כסף }
+          - { term: Hacer las maletas, gloss: לארוז מזוודות }
+          - { term: Encontrar un trabajo, gloss: למצוא עבודה }
+          - { term: Encontrar un apartamento, gloss: למצוא דירה }
+          - { term: Aprender el idioma, gloss: ללמוד את השפה }
+          - { term: Hacer amigos, gloss: לעשות חברים }
+          - { term: Buscar, gloss: לחפש }
+          - { term: Vivir, gloss: 'לחיות, לגור' }
+          - { term: Voy a…, gloss: אני הולך / הולכת ל… }
+          - { term: Me mudaré…, gloss: אני אעבור דירה ל… }
+          - { term: Haré…, gloss: אני אעשה… }
+          - { term: Mejorará…, gloss: זה ישתפר… }
+          - { term: Feliz, gloss: שמח }
+          - { term: Asustado, gloss: מפוחד }
+          - { term: Ansioso, gloss: חרד }
+          - { term: Triste, gloss: עצוב }
+          - { term: Emocionado, gloss: נרגש }
+          - { term: Restaurante, gloss: מסעדה }
+          - { term: Supermercado, gloss: סופרמרקט }
+          - { term: Farmacia, gloss: בית מרקחת }
+          - { term: Hospital, gloss: בית חולים }
+          - { term: Escuela, gloss: בית ספר }
+          - { term: Universidad, gloss: אוניברסיטה }
+          - { term: Parque, gloss: פארק }
+          - { term: Cine, gloss: קולנוע }
+          - { term: Biblioteca, gloss: ספרייה }
+          - { term: Mercado, gloss: שוק }
+          - { term: Centro comercial, gloss: קניון }
+          - { term: Estación de tren, gloss: תחנת רכבת }
+          - { term: Aeropuerto, gloss: שדה תעופה }
+          - { term: Hotel, gloss: מלון }
+          - { term: Barrio, gloss: שכונה }
+          - { term: Ciudad, gloss: עיר }
+          - { term: Amigo, gloss: חבר }
+          - { term: Familia, gloss: משפחה }
+          - { term: Compañero, gloss: חבר / עמית }
+          - { term: Grupo, gloss: קבוצה }
+          - { term: Mejor, gloss: טוב יותר }
+          - { term: Peor, gloss: גרוע יותר }
+          - { term: Más, gloss: יותר }
+          - { term: Menos, gloss: פחות }
+
+vocabulary:
+  - slug: reubicacion
+    title: Reubicación
+    items: *reubicacion-words
+
+activities:
+  - slug: reubicacion-futuro
+    title: 'Futuro: voy a mudarme, me mudaré'
+    minutes: 8
+    items:
+      - id: me-mudare
+        type: multipleChoice
+        prompt: El año que viene, yo ___ a España.
+        options:
+          - { text: me mudaré, correct: true }
+          - {
+              text: me mudará,
+              feedback: 'La terminación *-á* es para él o ella. Para *yo*: *me mudaré*.',
+            }
+          - {
+              text: me mudé,
+              feedback: '*Me mudé* es pasado. *El año que viene* es futuro: *me mudaré*.',
+            }
+      - id: ahorrare
+        type: fillBlank
+        prompt: Completa con el verbo *ahorrar* (yo) en futuro simple.
+        text: Antes de mudarme, ___ dinero.
+        blanks: [[ahorraré, yo ahorraré]]
+      - id: hare
+        type: fillBlank
+        prompt: Completa con el verbo *hacer* (yo) en futuro simple.
+        text: Mañana ___ las maletas.
+        blanks: [[haré, yo haré]]
+      - id: une-futuro
+        type: matching
+        prompt: Une cada verbo con su forma para *yo* en futuro simple.
+        pairs:
+          - [hacer, haré]
+          - [tener, tendré]
+          - [salir, saldré]
+          - [ir, iré]
+          - [comer, comeré]
+      - id: ir-a
+        type: fillBlank
+        prompt: Completa con el verbo *ir* en presente.
+        text: Mi familia ___ a buscar un apartamento nuevo. Nosotros ___ a aprender el idioma.
+        blanks: [[va], [vamos]]
+      - id: pronombre
+        type: trueFalse
+        prompt: '*Voy a mudarme* y *Me voy a mudar* son correctas las dos.'
+        answer: true
+        feedback:
+          correct: ¡Correcto! El pronombre puede ir antes de *voy* o al final del infinitivo.
+          incorrect: 'Las dos son correctas: el pronombre puede ir antes de *voy* o al final del infinitivo.'
+      - id: voy-a-buscar
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: Voy a buscar un trabajo nuevo., correct: true }
+          - {
+              text: Voy buscar un trabajo nuevo.,
+              feedback: 'Falta *a*: *ir + a + infinitivo* → *voy a buscar*.',
+            }
+          - {
+              text: Voy a busco un trabajo nuevo.,
+              feedback: 'Después de *voy a* va el infinitivo: *buscar*.',
+            }
+      - id: ordena-metro
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Tomaré el metro para ir al trabajo.
+
+  - slug: reubicacion-socializar
+    title: 'Socializar: pedir y dar información'
+    minutes: 8
+    items:
+      - id: pregunta-practica
+        type: multipleChoice
+        prompt: Acabas de llegar a una ciudad nueva y buscas un lugar para comer. ¿Qué pregunta es directa y práctica?
+        options:
+          - { text: ¿Dónde está el mejor restaurante?, correct: true }
+          - {
+              text: ¿Te gusta comer?,
+              feedback: 'Esta pregunta no te da información útil. Pregunta directo: *¿Dónde está el mejor restaurante?*',
+            }
+          - {
+              text: ¿Qué hiciste ayer?,
+              feedback: 'Esta pregunta no es práctica para buscar comida. Pregunta directo: *¿Dónde está el mejor restaurante?*',
+            }
+      - id: grupo-correcto
+        type: multipleChoice
+        prompt: Te mudaste a Madrid y quieres saber cuál es el mejor barrio para vivir. ¿Dónde preguntas?
+        options:
+          - { text: En un grupo de Facebook de Madrid., correct: true }
+          - {
+              text: En un grupo general de recetas.,
+              feedback: 'Elige el grupo correcto antes de preguntar: un grupo de tu nueva ciudad.',
+            }
+          - {
+              text: En un grupo de fútbol de otro país.,
+              feedback: 'Elige el grupo correcto antes de preguntar: un grupo de tu nueva ciudad.',
+            }
+      - id: breve
+        type: trueFalse
+        prompt: 'Para socializar, es mejor dar la información esencial, por ejemplo: *Me mudaré en julio.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! Una respuesta breve y clara es suficiente.
+          incorrect: 'Sé breve: da solo la información esencial. *Me mudaré en julio.* es claro y suficiente.'
+      - id: como-donde
+        type: fillBlank
+        prompt: Completa las preguntas con *Cómo* o *Dónde*.
+        text: ¿___ se paga el estacionamiento? ¿___ está el supermercado más cercano?
+        blanks: [[Cómo, Dónde], [Dónde]]
+        wordBank: [Cómo, Dónde]
+      - id: une-respuestas
+        type: matching
+        prompt: Une cada pregunta con una respuesta breve.
+        pairs:
+          - [¿Cuándo te mudarás?, En julio.]
+          - [¿Con quién te vas a mudar?, Con mi familia.]
+          - [¿Dónde está la farmacia?, Al lado del supermercado.]
+          - [¿Cómo se paga el transporte público?, Con una tarjeta.]
+      - id: lugares
+        type: fillBlank
+        prompt: Completa con un lugar de la ciudad.
+        text: Para tomar el tren, voy a la ___ de tren. Para comprar medicinas, voy a la ___.
+        blanks: [[estación], [farmacia]]
+        wordBank: [estación, farmacia, biblioteca]
+      - id: ordena-supermercado
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: ¿Dónde está el supermercado más cercano?
+      - id: mi-pregunta
+        type: shortAnswer
+        prompt: Llegaste a una ciudad nueva. Escribe una pregunta práctica para un grupo de vecinos.

@@ -1,0 +1,525 @@
+# Cycle "Nourriture", converted from the French niveau 1 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: nourriture
+title: Nourriture
+goal: Parler de nourriture avec les verbes au présent et les adjectifs possessifs.
+position: 8
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Les verbes au présent" and "Les adjectifs
+    possessifs") are NEW: the notebook has no self-study exercises. They were written
+    from the cycle's summary rules, examples and vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Introduction example "Mon plat préféré est les pâtes" (singular verb with a
+    plural noun) is written as "Mon plat préféré, ce sont les pâtes", and the frame
+    as "Mon plat préféré, c’est ___".
+  - >-
+    Possessives table: "le jus d’oranges" → "le jus d’orange"; "Ma boisson préférée
+    est le coca" now ends with a full stop. "Mes amis se marient \!" (stray
+    backslash) → "Mes amis se marient !".
+  - >-
+    Summary: "A apprendre par coeur" → "À apprendre par cœur". The 3rd group rule
+    only listed verbs; the present of *boire* (je bois… ils boivent) was added as an
+    example, since students use it in Activities 2 and 3. Rule 3 (mon/ton/son before
+    a feminine word starting with a vowel) now has examples (mon amie, ton assiette,
+    son orange). A short note was added that *manger* keeps the *e* with *nous*
+    (nous mangeons). Please confirm these additions.
+  - >-
+    Activity 3 chain game: "que mange et boit ma mère ?" → "qu’est-ce que ma mère
+    mange et boit ?".
+  - >-
+    Activity 2: the restaurant menu is not in the notebook (the teacher shares it on
+    screen). See the teacher note.
+  - >-
+    The Mori homework had instructions written for Mori ("Mori doit demander…").
+    They are turned into four messages the student copies; the "Note finale" became
+    the tips callout.
+  - >-
+    Vocabulary: "son, sa, ses" was glossed "שלו / שלה / שלהם" — "שלהם" is *leur*,
+    so it is now "שלו / שלה"; "plat" "צלחת / מנה" → "מנה" (a plate is *assiette*);
+    "en liquide / en espèces" → "במזומן"; "par carte" → "בכרטיס אשראי"; "son,
+    sa,ses" spacing fixed. Please confirm.
+  - >-
+    The Quizlet link lost its tracking parameters (?i=…&x=…). No activity times are
+    given in the notebook, so none are recorded.
+  - >-
+    The "Réponse de l’élève 1/2/3" lines are replaced by the optional answer boxes:
+    students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: nourriture-classe
+    title: 'En classe : Nourriture'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Nourriture
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Les verbes au présent
+            description: 'Les trois groupes de verbes : *manger*, *finir* et les verbes irréguliers (*boire*, *mettre*…)'
+          - name: Les adjectifs possessifs
+            description: '*mon, ma, mes, ton, ta, tes, son, sa, ses, notre, nos, votre, vos, leur, leurs*'
+      - id: quizlet
+        type: externalLink
+        label: La nourriture sur Quizlet
+        url: https://quizlet.com/il/1074896443/basic-french-2025-nourriture-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Mon plat préféré, c’est ___.
+        example: Je m’appelle Lévanah. Mon plat préféré, ce sont les pâtes.
+      - id: possessives-table
+        type: table
+        caption: Les adjectifs possessifs en français
+        header: [Possessif, Exemples]
+        rows:
+          - [
+              Mon / Ma / Mes,
+              Mon plat préféré est la pizza. Ma boisson préférée est le coca. Mes amis mangent au restaurant.,
+            ]
+          - [
+              Ton / Ta / Tes,
+              Ton plat préféré est le poisson. Ta soupe préférée est la soupe à la tomate. Tes invités préfèrent la viande.,
+            ]
+          - [
+              Son / Sa / Ses,
+              Ma sœur adore le chocolat. Son chocolat préféré est le chocolat blanc. Sa boisson préférée est le jus d’orange. Ses fruits préférés sont la pomme et la banane.,
+            ]
+          - [
+              Notre / Nos,
+              Mon mari et moi avons un restaurant. Notre restaurant est très grand. Nos gnocchis sont délicieux.,
+            ]
+          - [Votre / Vos, Quel est votre plat préféré ? Vos salades sont fraîches.]
+          - [
+              Leur / Leurs,
+              Mes amis se marient ! Leur mariage est magnifique. Leurs gâteaux ne sont pas très bons.,
+            ]
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Aimes-tu manger ? Que préfères-tu manger ?
+            frame: Oui, j’aime manger ___.
+          - question: Que cuisines-tu ?
+            frame: Je cuisine ___.
+          - question: Quel est ton restaurant préféré ?
+            frame: Mon restaurant préféré est ___.
+          - question: Quel est le goût de ton plat préféré ?
+            frame: Mon plat préféré est ___ (salé, sucré, amer, épicé…).
+          - question: Quel est ton ingrédient préféré pour cuisiner ?
+            frame: Mon ingrédient préféré pour cuisiner est ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : ton sandwich préféré'
+        skills: [Les verbes au présent, Les adjectifs possessifs]
+        steps:
+          - Cherche **en français** les ingrédients de ton sandwich préféré (5 ingrédients maximum).
+          - Explique **en français** comment tu fais ton sandwich.
+          - 'Utilise un verbe à l’infinitif + un complément (*Couper le pain en deux*), ou un verbe au présent avec *je* (*Je coupe le pain en deux.*).'
+        example: |-
+          **Avec l’infinitif :** Couper le pain en deux. Ajouter du fromage et de la tomate. Fermer le sandwich.
+          **Avec « je » :** Je coupe le pain en deux. J’ajoute du fromage et de la tomate. Je ferme le sandwich.
+      - id: act1-verbs
+        type: table
+        caption: Verbes utiles pour cuisiner
+        header: [Infinitif, « Je » au présent, Traduction]
+        rows:
+          - [Couper, Je coupe, לחתוך]
+          - [Ouvrir, J’ouvre, לפתוח]
+          - [Fermer, Je ferme, לסגור]
+          - [Tartiner, Je tartine, למרוח]
+          - [Mettre, Je mets, לשים]
+          - [Ajouter, J’ajoute, להוסיף]
+      - id: act1-sandwich
+        type: discussionQuestions
+        title: Mon sandwich
+        items:
+          - question: 'Les ingrédients de mon sandwich : ___'
+          - question: 'Étape 1 : Je ___.'
+          - question: 'Étape 2 : Je ___.'
+          - question: 'Étape 3 : Je ___.'
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : allons au restaurant'
+        skills: [Les verbes au présent]
+        steps:
+          - Regarde le menu que partage ton professeur.
+          - Le groupe invente un nom amusant pour le restaurant.
+          - Un élève est **le serveur**, les autres sont **les clients**.
+          - On commence par l’entrée, puis on passe au plat principal et enfin au **paiement**.
+        example: |-
+          **Serveur :** Bonjour et bienvenue au restaurant ___ ! Voulez-vous commander ?
+          **Client 1 :** Oui, en entrée je prends ___ et je bois ___.
+          **Serveur :** Donc, toi, tu bois ___ et tu manges ___. / Vous buvez ___ et vous mangez ___.
+          **Serveur :** Comment est la nourriture ?
+          **Client :** Le plat est ___ (délicieux, froid, sec…).
+          **Serveur :** Vous payez en espèces ou par carte ?
+          **Clients :** Merci beaucoup, votre nourriture est délicieuse !
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : les invités à ton mariage'
+        skills: [Les adjectifs possessifs]
+        steps:
+          - 'Fais une liste d’invités avec **les adjectifs possessifs** : *mon mari / ma femme, nos amis du travail, son meilleur ami* (celui de mon mari ou de ma femme), *leurs collègues*…'
+          - 'Jeu en chaîne : répète ce que mangent et boivent les invités de l’élève précédent, puis dis ce que mange et boit un de tes invités.'
+        example: |-
+          **Professeur :** Ma mère mange du poisson et boit du vin blanc. Élève 1, qu’est-ce que ma mère mange et boit ?
+          **Élève 1 :** Ta mère mange du poisson et boit du vin blanc. Ma mère mange de la pizza et boit de la bière. Élève 2 ?
+          **Élève 2 :** Ta mère mange de la pizza et boit de la bière. Mon frère mange un hamburger et boit de l’eau.
+      - id: act3-guests
+        type: discussionQuestions
+        title: Ma liste d’invités
+        items:
+          - question: Mon / Ma ___ mange ___ et boit ___.
+          - question: Nos ___ mangent ___ et boivent ___.
+          - question: Son / Sa ___ mange ___ et boit ___.
+          - question: Leurs ___ mangent ___ et boivent ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **les verbes au présent** (Activité 1 ou 2)
+          et **les adjectifs possessifs** (Activité 1 ou 3).
+      - id: n-intro
+        anchor: intro
+        text: Donne ton propre exemple d’abord, puis demande à chaque élève. Présente ensuite le tableau des possessifs.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Les élèves cherchent leurs ingrédients en français (5 maximum), puis expliquent
+          leur recette avec l’infinitif ou avec *je*. Utilise le tableau des verbes utiles.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Distribue ou partage le menu du restaurant (sur Zoom : partage d’écran). Le
+          menu n’est pas encore sur la plateforme. Change de serveur à chaque plat.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Commence le jeu en chaîne avec ton propre exemple. Vérifie que chaque élève
+          passe de *ma mère* à *ta mère* quand il répète la phrase de l’autre.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: nourriture-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Résumé de la leçon
+      - id: rules-present
+        type: ruleSummary
+        skill: Les verbes au présent
+        rules:
+          - text: 'Les verbes en français se divisent en trois groupes. **1er groupe : les verbes en -ER** (exemple : *manger*).'
+            examples:
+              - Je mang**e** · Tu mang**es** · Il / Elle mang**e**
+              - Nous mange**ons** · Vous mang**ez** · Ils / Elles mang**ent**
+              - 'Attention : avec *nous*, *manger* garde le *e* : nous mang**e**ons.'
+          - text: '**2e groupe : les verbes en -IR comme *finir*.** Attention : tous les verbes en -IR n’appartiennent pas au 2e groupe.'
+            examples:
+              - Je fin**is** · Tu fin**is** · Il / Elle fin**it**
+              - Nous fin**issons** · Vous fin**issez** · Ils / Elles fin**issent**
+          - text: '**3e groupe : les verbes irréguliers** (*boire, vouloir, être, avoir, mettre*…). À apprendre par cœur.'
+            examples:
+              - Je bois · Tu bois · Il / Elle boit · Nous buvons · Vous buvez · Ils / Elles boivent
+          - text: N’utilise pas *être* avec un autre verbe conjugué.
+            examples: ['Correct : Je mange une pizza.', 'Incorrect : Je suis mange une pizza.']
+          - text: Avec la pratique, ça devient automatique !
+      - id: rules-possessives
+        type: ruleSummary
+        skill: Les adjectifs possessifs
+        rules:
+          - text: 'Règle 1 : en français, le possessif vient toujours **avant** le nom.'
+            examples: [Mon père · Ma mère]
+          - text: 'Règle 2 : le possessif s’accorde avec le **nom qui le suit**, et non avec la personne qui possède.'
+            examples:
+              - '**Mon gâteau** (masculin singulier)'
+              - '**Ma pizza** (féminin singulier)'
+              - '**Mes sushis** (pluriel)'
+          - text: 'Règle 3 : on utilise **mon, ton, son** devant un mot féminin qui commence par une voyelle ou un *h* muet.'
+            examples: [mon amie · ton assiette · son orange]
+      - id: possessives-grid
+        type: table
+        caption: Les adjectifs possessifs
+        header: [Singulier masculin, Singulier féminin, Pluriel]
+        rows:
+          - [mon, ma, mes]
+          - [ton, ta, tes]
+          - [son, sa, ses]
+          - [notre, notre, nos]
+          - [votre, votre, vos]
+          - [leur, leur, leurs]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: nourriture-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-verbes
+        type: aiTutorPrompt
+        title: 'Partie 1 : les verbes au présent'
+        message: >-
+          Bonjour Mori ! Pose-moi des questions avec des verbes de cuisine au présent,
+          avec « je ». Par exemple, demande-moi une phrase avec « couper », une phrase
+          avec « mettre » et une phrase avec « boire ». Corrige mes erreurs de
+          conjugaison, s’il te plaît.
+      - id: mori-possessifs
+        type: aiTutorPrompt
+        title: 'Partie 2 : les possessifs'
+        message: >-
+          Bonjour Mori ! Pose-moi des questions avec les adjectifs possessifs, par
+          exemple : « Quel est ton plat préféré ? », « Quel est le plat préféré de ton
+          frère ? », « Quels sont les plats préférés de tes amis ? ». Corrige mes erreurs
+          avec mon, ma, mes, ton, son, notre et leur, s’il te plaît.
+      - id: mori-restaurant
+        type: aiTutorPrompt
+        title: 'Partie 3 : jeu de rôle au restaurant'
+        message: >-
+          Bonjour Mori ! Faisons un jeu de rôle au restaurant. Tu es le serveur et je
+          suis le client. Après ma commande, répète-la (par exemple : « Alors, tu manges
+          une pizza et tu bois de l’eau, c’est correct ? ») et corrige mes erreurs de
+          vocabulaire ou de conjugaison.
+      - id: mori-journal
+        type: aiTutorPrompt
+        title: 'Partie 4 : petit journal de nourriture'
+        message: >-
+          Bonjour Mori ! Pose-moi des questions, une par une, pour écrire mon journal de
+          nourriture : Que manges-tu au petit-déjeuner ? Que manges-tu au déjeuner ? Que
+          manges-tu au dîner ? Quel est ton plat préféré ? Quel est le plat préféré de ta
+          famille ? Corrige mes erreurs de structure et de possessifs, s’il te plaît.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Commence toujours par **« Mori, pose-moi des questions… »** et termine par **« …et corrige mes erreurs. »**
+          Ainsi, la pratique est active et tu as une correction immédiate.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: nourriture-pratique
+    book: workbook
+    title: 'Pratique : Nourriture'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux essayer encore.
+      - id: ex-present
+        type: activity
+        activity: nourriture-present
+      - id: ex-possessifs
+        type: activity
+        activity: nourriture-possessifs
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: nourriture-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la nourriture
+        glossLang: he
+        link: https://quizlet.com/il/1074896443/basic-french-2025-nourriture-flash-cards/
+        items: &nourriture-words
+          - { term: manger, gloss: לאכול }
+          - { term: boire, gloss: לשתות }
+          - { term: cuisiner, gloss: לבשל }
+          - { term: couper, gloss: לחתוך }
+          - { term: ouvrir, gloss: לפתוח }
+          - { term: fermer, gloss: לסגור }
+          - { term: tartiner, gloss: למרוח }
+          - { term: mettre, gloss: לשים }
+          - { term: ajouter, gloss: להוסיף }
+          - { term: restaurant, gloss: מסעדה }
+          - { term: serveur, gloss: מלצר }
+          - { term: client, gloss: לקוח }
+          - { term: commander, gloss: להזמין }
+          - { term: payer, gloss: לשלם }
+          - { term: en liquide / en espèces, gloss: במזומן }
+          - { term: par carte, gloss: בכרטיס אשראי }
+          - { term: entrée, gloss: מנה ראשונה }
+          - { term: plat, gloss: מנה }
+          - { term: ingrédient, gloss: מרכיב }
+          - { term: sandwich, gloss: סנדוויץ׳ }
+          - { term: pizza, gloss: פיצה }
+          - { term: hamburger, gloss: המבורגר }
+          - { term: salade, gloss: סלט }
+          - { term: pain, gloss: לחם }
+          - { term: fromage, gloss: גבינה }
+          - { term: tomate, gloss: עגבנייה }
+          - { term: eau, gloss: מים }
+          - { term: vin, gloss: יין }
+          - { term: bière, gloss: בירה }
+          - { term: chocolat, gloss: שוקולד }
+          - { term: fruit, gloss: פרי }
+          - { term: banane, gloss: בננה }
+          - { term: orange, gloss: תפוז }
+          - { term: pomme, gloss: תפוח }
+          - { term: 'mon, ma, mes', gloss: שלי }
+          - { term: 'ton, ta, tes', gloss: שלך }
+          - { term: 'son, sa, ses', gloss: שלו / שלה }
+          - { term: 'notre, nos', gloss: שלנו }
+          - { term: 'votre, vos', gloss: שלכם / שלכן }
+          - { term: 'leur, leurs', gloss: שלהם / שלהן }
+
+vocabulary:
+  - slug: nourriture
+    title: Nourriture
+    items: *nourriture-words
+
+activities:
+  - slug: nourriture-present
+    title: Les verbes au présent
+    minutes: 8
+    items:
+      - id: nous-mangeons
+        type: multipleChoice
+        prompt: Nous ___ une pizza.
+        options:
+          - { text: mangeons, correct: true }
+          - { text: mangons, feedback: 'Avec *nous*, *manger* garde le *e* : nous mangeons.' }
+          - { text: mangez, feedback: '*Mangez* va avec *vous*. Avec *nous* : mangeons.' }
+      - id: je-mets
+        type: multipleChoice
+        prompt: Je ___ du fromage sur le pain.
+        options:
+          - { text: mets, correct: true }
+          - { text: mettre, feedback: 'Après *je*, on conjugue le verbe : je mets.' }
+          - { text: suis mets, feedback: 'On n’utilise pas *être* avec un autre verbe : je mets.' }
+      - id: suis-mange
+        type: trueFalse
+        prompt: 'Cette phrase est correcte : *Je suis mange une pizza.*'
+        answer: false
+        feedback:
+          correct: 'Bravo ! On dit *Je mange une pizza.*, sans *être*.'
+          incorrect: 'N’utilise pas *être* avec un autre verbe : *Je mange une pizza.*'
+      - id: finir
+        type: fillBlank
+        prompt: Complète avec le verbe *finir* au présent.
+        text: Tu ___ ton sandwich. Nous ___ le repas.
+        blanks: [[finis, tu finis], [finissons, nous finissons]]
+      - id: couper-ajouter
+        type: fillBlank
+        prompt: Complète avec le verbe entre parenthèses au présent.
+        text: Je ___ le pain en deux. (couper) Vous ___ de la tomate. (ajouter)
+        blanks: [[coupe, je coupe], [ajoutez, vous ajoutez]]
+      - id: manger-pronoms
+        type: matching
+        prompt: Associe chaque pronom à la bonne forme du verbe *manger*.
+        pairs:
+          - [je, mange]
+          - [tu, manges]
+          - [nous, mangeons]
+          - [vous, mangez]
+          - [ils, mangent]
+      - id: ordre-pain
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Je coupe le pain en deux.
+      - id: vous-buvez
+        type: multipleChoice
+        prompt: 'Le serveur demande : « Vous ___ de l’eau ou du vin ? »'
+        options:
+          - { text: buvez, correct: true }
+          - { text: boivez, feedback: '*Boire* est irrégulier (3e groupe) : vous buvez.' }
+          - { text: boire, feedback: 'Après *vous*, on conjugue le verbe : vous buvez.' }
+
+  - slug: nourriture-possessifs
+    title: Les adjectifs possessifs
+    minutes: 8
+    items:
+      - id: ma-pizza
+        type: multipleChoice
+        prompt: ___ pizza préférée est la margherita.
+        options:
+          - { text: Ma, correct: true }
+          - { text: Mon, feedback: '*Pizza* est féminin et commence par une consonne : ma pizza.' }
+          - { text: Mes, feedback: '*Mes* est pour le pluriel. *Pizza* est singulier : ma.' }
+      - id: son-chocolat
+        type: multipleChoice
+        prompt: Ma sœur adore le chocolat. ___ chocolat préféré est le chocolat blanc.
+        options:
+          - { text: Son, correct: true }
+          - {
+              text: Sa,
+              feedback: 'Le possessif s’accorde avec le nom, pas avec la personne. *Chocolat* est masculin : son.',
+            }
+          - { text: Ses, feedback: '*Chocolat* est singulier : son.' }
+      - id: mon-amie
+        type: trueFalse
+        prompt: 'On dit *ma amie*, parce que *amie* est féminin.'
+        answer: false
+        feedback:
+          correct: 'Bravo ! Devant une voyelle, on dit *mon amie*.'
+          incorrect: '*Amie* commence par une voyelle : on dit *mon amie*.'
+      - id: notre-nos
+        type: fillBlank
+        prompt: Complète avec *notre* ou *nos*.
+        text: Mon mari et moi avons un restaurant. ___ restaurant est très grand. ___ gnocchis sont délicieux.
+        blanks: [[notre], [nos]]
+        wordBank: [notre, nos]
+      - id: leur-votre
+        type: fillBlank
+        prompt: Complète avec *leur* ou *votre*.
+        text: 'Mes amis se marient ! ___ mariage est magnifique. Monsieur et Madame Martin, quel est ___ plat préféré ?'
+        blanks: [[leur], [votre]]
+        wordBank: [leur, votre]
+      - id: pronoms-possessifs
+        type: matching
+        prompt: Associe chaque personne au possessif (pour un nom masculin singulier).
+        pairs:
+          - [je, mon]
+          - [tu, ton]
+          - [il / elle, son]
+          - [nous, notre]
+          - [ils / elles, leur]
+      - id: ordre-plat
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Mon plat préféré est la pizza.
+      - id: leurs-enfants
+        type: multipleChoice
+        prompt: Paul et Marie ont deux enfants. ___ enfants mangent des pâtes.
+        options:
+          - { text: Leurs, correct: true }
+          - { text: Leur, feedback: '*Enfants* est pluriel : leurs.' }
+          - {
+              text: Ses,
+              feedback: 'Il y a deux personnes qui possèdent (Paul et Marie) : leur / leurs.',
+            }

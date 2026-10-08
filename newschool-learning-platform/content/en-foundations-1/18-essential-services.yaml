@@ -1,0 +1,480 @@
+# Cycle "Essential services", converted from the English Foundations digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: essential-services
+title: Essential services
+goal: Find places in the city, giving directions and using prepositions of place.
+position: 18
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Directions" and "Prepositions of place") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The town / city map used in Activities 1 and 4 is not linked in the notebook. The
+    teacher shares it on screen (see the teacher notes); it should move into the
+    course's own media.
+  - >-
+    Corrections: "Where is the closest supermarket from your house?" → "Where is the
+    closest supermarket to your house?" (question and frame); "How do you go from
+    your house to the bus stop?" → "How do you get from your house to the bus
+    stop?"; Activity 2 "Each one of the students have their tourism center" →
+    "Each student is a tourism information center"; "I recommend you to go to the
+    ___" → "I recommend the ___"; "You get there by bus/walking. You have to walk ___
+    blocks, turn left, one block, then right" → "You get there by bus / on foot.
+    Walk ___ blocks, turn left, walk one block, then turn right"; Activity 4 "yes/no
+    questions but preposition questions" → "yes / no questions with prepositions";
+    "theatre" → "theater" (the course uses American English).
+  - >-
+    Summary, directions rule 1 said "Introduce key directional words" (a note to the
+    teacher); it is written for students as "Learn the key direction words". The
+    rule 3 examples are put next to their question. Please confirm.
+  - >-
+    The Mori activity "What's near what?" uses *across from*, which is not taught in
+    this cycle (it is in the Traveling cycle). It is kept as in the notebook.
+  - >-
+    Vocabulary glosses changed: "Blocks" בלוקים → "Block" בלוק (רחוב); "Turn" פנה →
+    לפנות / פנה; "Directions" כיוונים → כיוונים / הוראות הגעה; "Library" ספריה →
+    ספרייה. The Quizlet link is kept without its "?i=…&x=…" parameters.
+  - >-
+    The source gives no activity times and no recommended activity combination, so
+    the activities have no minutes.
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: essential-services-class
+    title: 'Class: Essential services'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Essential services
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Directions
+            description: 'Ask for and give directions: *How do I get to…? Go straight, turn left.*'
+          - name: Prepositions of place
+            description: '*in, on, next to, between, in front of*'
+      - id: quizlet
+        type: externalLink
+        label: Essential services words on Quizlet
+        url: https://quizlet.com/il/997465732/essential-services-basic-english-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I live close to / far from New School.
+        example: I am Dana. I live close to New School.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What places are next to your house?
+            frame: There is a ___ next to my house. / There are ___ next to my house.
+          - question: How do you get to ___ from your house?
+            frame: I get to ___ by ___ (bus, car, train). / I walk.
+          - question: What important places are in your city? Name 3.
+            frame: There is a / the ___, a / the ___ and a / the ___.
+          - question: How do you get from your house to the bus stop?
+            frame: I go out of my house, turn ___ and walk straight for ___ blocks. The bus stop is ___.
+          - question: Where is the closest supermarket to your house?
+            frame: The closest supermarket to my house is next to / in front of the ___.
+          - question: How do you get there?
+            frame: I walk straight for ___ block(s), then turn ___. The supermarket is next to the ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: City map'
+        skills: [Directions]
+        steps:
+          - Look at the town map with your teacher. Name the places together.
+          - Listen to your teacher's example of asking for and giving directions.
+          - 'Work in pairs. Student A asks for directions to a place on the map. Student B gives directions.'
+          - After a few rounds, switch roles.
+          - Talk with the group about what was easy and what was difficult.
+        example: |-
+          **Student A:** *Excuse me, how do I get to the library?*
+          **Student B:** *Go straight ahead, then turn left. The library is next to the park.*
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: Tourism information center'
+        skills: [Directions]
+        steps:
+          - Each student is a tourism information center for their city.
+          - Student 1 asks Student 2 about a place and how to get there.
+          - Student 2 answers. Then Student 2 asks the next student, and so on.
+        example: |-
+          *Which supermarket / library / museum do you recommend?*
+          *I recommend the ___ (name of the place)!*
+          *How do I get there?*
+          *You get there by bus / on foot. Walk ___ blocks, turn left, walk one block, then turn right.*
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: An important place in my city'
+        skills: [Prepositions of place]
+        steps:
+          - Choose an important place in your city.
+          - Complete the sentences below. Use *in, next to, between, in front of*.
+          - Share your place with the group.
+      - id: act3-sentences
+        type: discussionQuestions
+        title: My place
+        items:
+          - question: The place I choose is the ___.
+          - question: It is an important place because ___.
+          - question: It is **in** ___.
+          - question: It is **next to** the ___.
+          - question: It is **between** the ___ and the ___.
+          - question: It is **in front of** the ___.
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Guess the place'
+        skills: [Prepositions of place]
+        steps:
+          - One student secretly picks a place or an object on the city map.
+          - The other students ask yes / no questions with prepositions to guess it.
+          - The student who guesses it picks a new place.
+        example: |-
+          *(The student picks the school.)*
+          *Is this place next to the theater?* — *No.*
+          *Is this place in front of the park?* — *Yes!*
+          *Is this place the school?* — *Yes!*
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Directions** (Activities 1 and 2) and
+          **Prepositions of place** (Activities 3 and 4).
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first, then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Review the direction words first (go straight, turn left / right, next to,
+          between, in front of). Share the town map on screen (the map is not in the
+          platform yet) and name the places together. Model the dialogue with one
+          student, then put students in pairs. At the end, discuss any problems and
+          correct common mistakes with prepositions.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Each student recommends a real place in their own city (with its name!) and
+          explains how to get there. The student who asked answers the next student.
+      - id: n-act4
+        anchor: act4
+        text: Use the same town map as in Activity 1.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: essential-services-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-directions
+        type: ruleSummary
+        skill: Directions
+        rules:
+          - text: 'Learn the key direction words. **Prepositions:** in, on, next to, between, behind, in front of. **Actions:** go straight, turn left, turn right, stop, cross.'
+          - text: Learn the names of important places (park, school, library, supermarket). They help you give directions.
+          - text: Use these key questions to ask for directions.
+            examples: [Where is the bank?, How can I get to the hotel?, Is it far from here?]
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: Prepositions of place
+        rules:
+          - text: Use **in** for places inside a building or an area.
+            examples: [The doctor is **in** the clinic., The medicine is **in** the pharmacy.]
+          - text: Use **on** for things on a surface.
+            examples:
+              [The bus stop sign is **on** the corner., The hospital map is **on** the wall.]
+          - text: Use **next to**, **between** or **in front of** to show where places are.
+            examples:
+              - The police station is **next to** the fire station.
+              - The bank is **between** the post office and the supermarket.
+              - The ambulance is **in front of** the hospital.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: essential-services-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy this message and send it. Mori will ask you questions; answer every one.
+      - id: mori-services
+        type: aiTutorPrompt
+        title: Talk about essential services
+        message: >-
+          Hi Mori! I want to practice English. Can you ask me questions about essential
+          services using the skills directions and prepositions? Please use only
+          present simple, and correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-directions
+        type: aiTutorPrompt
+        title: Give me directions
+        intro: >-
+          Send this message to Mori. Then ask Mori how to get to a place, for example:
+          *How do I get to the post office?* (Mori answers: *Go straight, turn right,
+          and it's next to the supermarket.*) After that, write: **Now it's your turn!
+          Ask me how to get somewhere, and I will give you directions.**
+        message: >-
+          Hi Mori! Let's do an activity. I will ask you how to get to a place, and you
+          give me directions using prepositions.
+      - id: mori-near
+        type: aiTutorPrompt
+        title: "What's near what?"
+        intro: >-
+          Send this message to Mori. Then describe a place, for example: *It is across
+          from the school. It is between the pharmacy and the bank.* (Mori guesses:
+          *Is it the police station?*) After that, write: **Now it's your turn!
+          Describe a place, and I will guess what it is.**
+        message: >-
+          Hey Mori! Let's do an activity. I will describe a place using prepositions,
+          and you guess what service it is.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: essential-services-practice
+    book: workbook
+    title: 'Practice: Essential services'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-directions
+        type: activity
+        activity: essential-services-directions
+      - id: ex-prepositions
+        type: activity
+        activity: essential-services-prepositions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: essential-services-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Essential services words
+        glossLang: he
+        link: https://quizlet.com/il/997465732/essential-services-basic-english-flash-cards/
+        items: &essential-services-words
+          - { term: Directions, gloss: כיוונים / הוראות הגעה }
+          - { term: Supermarket, gloss: סופרמרקט }
+          - { term: Library, gloss: ספרייה }
+          - { term: Museum, gloss: מוזיאון }
+          - { term: Bus, gloss: אוטובוס }
+          - { term: To walk, gloss: ללכת }
+          - { term: Street, gloss: רחוב }
+          - { term: Block, gloss: בלוק (רחוב) }
+          - { term: Corner, gloss: פינה }
+          - { term: Turn, gloss: לפנות / פנה }
+          - { term: Left, gloss: שמאל }
+          - { term: Right, gloss: ימין }
+          - { term: Straight, gloss: ישר }
+          - { term: In front of, gloss: מול }
+          - { term: Next to, gloss: ליד }
+          - { term: Between, gloss: בין }
+          - { term: Near, gloss: קרוב }
+          - { term: Far, gloss: רחוק }
+          - { term: Park, gloss: פארק }
+          - { term: Bank, gloss: בנק }
+          - { term: House, gloss: בית }
+          - { term: City, gloss: עיר }
+          - { term: Important, gloss: חשוב }
+          - { term: Place, gloss: מקום }
+          - { term: How, gloss: איך }
+          - { term: To get, gloss: להגיע }
+          - { term: To ask, gloss: לשאול }
+          - { term: To recommend, gloss: להמליץ }
+
+vocabulary:
+  - slug: essential-services
+    title: Essential services
+    items: *essential-services-words
+
+activities:
+  - slug: essential-services-directions
+    title: 'Directions: go straight, turn left'
+    minutes: 8
+    items:
+      - id: how-get
+        type: multipleChoice
+        prompt: Excuse me, ___ do I get to the library?
+        options:
+          - { text: how, correct: true }
+          - {
+              text: where,
+              feedback: 'To ask for the way, say *How do I get to…?* *Where* is for *Where is the library?*',
+            }
+          - {
+              text: who,
+              feedback: '*Who* asks about a person. To ask for the way, say *How do I get to…?*',
+            }
+      - id: words-hebrew
+        type: matching
+        prompt: Match the words with the Hebrew.
+        pairs:
+          - [left, שמאל]
+          - [right, ימין]
+          - [straight, ישר]
+          - [near, קרוב]
+          - [far, רחוק]
+      - id: straight-turn
+        type: fillBlank
+        prompt: Complete the directions with *straight* or *turn*.
+        text: Go ___ for two blocks, then ___ left.
+        blanks: [[straight], [turn]]
+        wordBank: [straight, turn]
+      - id: key-questions
+        type: trueFalse
+        prompt: '*Where is the bank?* and *How can I get to the bank?* are both questions for directions.'
+        answer: true
+        feedback:
+          correct: 'Right! *Where is…?* and *How can I get to…?* are key questions for directions.'
+          incorrect: 'Both are key questions for directions: *Where is…?* and *How can I get to…?*'
+      - id: where-bank
+        type: multipleChoice
+        prompt: '*Where is the bank?* Choose the best answer.'
+        options:
+          - { text: It is next to the park., correct: true }
+          - {
+              text: I go to the bank by bus.,
+              feedback: 'This answers *How do you get to the bank?* *Where* asks for the place: *It is next to the park.*',
+            }
+          - {
+              text: 'Yes, it is.',
+              feedback: '*Where is…?* is not a yes / no question. Say where the place is.',
+            }
+      - id: order-turn
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: Turn left at the bank.
+      - id: get-hotel
+        type: fillBlank
+        prompt: Complete the question.
+        text: How can I ___ to the hotel?
+        blanks: [[get, go]]
+      - id: buy-food
+        type: multipleChoice
+        prompt: Where can you buy food?
+        options:
+          - { text: At the supermarket., correct: true }
+          - {
+              text: At the library.,
+              feedback: 'At the library you read books. You buy food at the *supermarket*.',
+            }
+          - {
+              text: At the bank.,
+              feedback: 'At the bank you keep money. You buy food at the *supermarket*.',
+            }
+
+  - slug: essential-services-prepositions
+    title: 'Prepositions of place: in, on, next to, between'
+    minutes: 8
+    items:
+      - id: next-to-police
+        type: multipleChoice
+        prompt: The police station is ___ the fire station.
+        options:
+          - { text: next to, correct: true }
+          - {
+              text: between,
+              feedback: '*Between* needs two places: *between the post office **and** the supermarket*.',
+            }
+          - { text: next, feedback: 'Say *next **to***: *next to the fire station*.' }
+      - id: on-wall
+        type: multipleChoice
+        prompt: The hospital map is ___ the wall.
+        options:
+          - { text: 'on', correct: true }
+          - { text: in, feedback: 'The map touches the surface of the wall: use *on*.' }
+          - {
+              text: between,
+              feedback: '*Between* needs two places. The map touches the wall: use *on*.',
+            }
+      - id: between-two
+        type: fillBlank
+        prompt: Complete the sentence.
+        text: The bank is ___ the post office and the supermarket.
+        blanks: [[between]]
+      - id: words-hebrew
+        type: matching
+        prompt: Match the prepositions with the Hebrew.
+        pairs:
+          - [in front of, מול]
+          - [next to, ליד]
+          - [between, בין]
+          - [near, קרוב]
+      - id: between-one
+        type: trueFalse
+        prompt: 'This sentence is correct: *The bank is between the park.*'
+        answer: false
+        feedback:
+          correct: 'Right! *Between* needs two places: *between the park and the school*.'
+          incorrect: '*Between* needs two places: *The bank is between the park and the school.*'
+      - id: order-house
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: My house is next to the park.
+      - id: in-on
+        type: fillBlank
+        prompt: Complete with *in* or *on*.
+        text: The medicine is ___ the pharmacy. The bus stop sign is ___ the corner.
+        blanks: [[in], ['on']]
+        wordBank: [in, 'on']
+      - id: correct-sentence
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: The ambulance is in front of the hospital., correct: true }
+          - {
+              text: The ambulance is in front the hospital.,
+              feedback: 'Say *in front **of***: *in front of the hospital*.',
+            }
+          - {
+              text: The ambulance is between the hospital.,
+              feedback: '*Between* needs two places. Use *in front of the hospital*.',
+            }

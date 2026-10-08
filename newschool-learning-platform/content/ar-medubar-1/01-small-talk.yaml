@@ -1,0 +1,752 @@
+# Cycle "שיחת חולין", converted from the spoken Arabic level 1 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew
+# transliteration, apc-Hebr); Hebrew instructions carry `lang: he`.
+course: ar-medubar-1
+slug: small-talk
+title: שיחת חולין
+goal: 'לשאול ולענות על שאלות פשוטות בהווה, ולתאר את עצמי ואדם אחר.'
+position: 1
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("small-talk-questions" and "small-talk-describing")
+    are NEW: the notebook has no self-study exercises. They were written only from
+    this cycle's summary, examples and vocabulary. An Arabic teacher must check every
+    right answer, every wrong option and every transliteration before students see them.
+  - >-
+    Clear typos fixed: "אַןַא" (final nun) → "אַנַא" in four summary examples;
+    "מִסרַַח" (double patach) → "מִסרַח"; "עִנְדִֶכּ" (hiriq + segol) → "עִנְדִכּ"
+    and "בַּשְׁתרֶל" → "בַּשְׁתִרֶ'ל" in the vocabulary; "אשאררֶע" → "אשארֶע" in warm-up
+    question 2; stray "*" after "אנא אסמי" and "אנא בחיב" in the warm-up frames removed.
+  - >-
+    Not corrected, please decide: the verb "to work" is written both with ע' and with
+    ר' for غ (בַּשְׁתִעְ'ל / בַּשְׁתִרֶ'ל, בִּשְׁתִעְ'ל / בִּשְׁתִרֶ'ל) across the
+    cycle; "he/she" is written הֻו / הֻוֵ / הֻוֵה / הֻוא and הִי / הִיּ / הִיֵ / הִיֵּה /
+    הִיא. Should one spelling be used throughout?
+  - >-
+    Not corrected, please check: in Activity 4 the girls' sentences use the
+    first-person form with בַּ (מָאי בַּתחִבּّ, דָאנָה בַּתְחִבּّ רִיאדַה, מָאי בַּחִבּّ
+    כֻּתֻבּ), while the summary rule says "הִי + בְּתִ…" (הִי בְּתִחִבּّ). The exercises
+    follow the summary rule.
+  - >-
+    The summary formula is "question word + present verb + pronoun", but all its
+    examples put the pronoun before the verb (שׁוּ אַנְתַ בַּתְעְמַל…). The formula is
+    kept as written; please confirm or reword.
+  - >-
+    The summary's yes/no section says "this was used in the activity 'מי אני?'", but
+    the cycle has no such activity: the sentence was left out. The example "הִיּ מַרַּה –
+    היא אישה" is a statement, not a question; it is kept as in the notebook.
+  - >-
+    Homework task 6, lines 9–10 ("שׁוּ אַנַא בַּתְעְמַל כֻּל יוֹם?", "וֵין אַנַא
+    סַאכֵּן?") combine אַנַא with a question / the בַּתְ form; kept as written, with the
+    note "(מורי יתקן)" removed. Please check what was intended.
+  - >-
+    Warm-up question 1 merged the notebook's two lines (שׁוּ אִסְמַכּ / אִסְמֵכּ, and
+    "שו אסמַכְּ \ אֶסְמֶכְּ – ו שו בתשתרֶ'ל \ י?") into one question with the frame
+    "אנא אסמי ___ ו בשתרֶ'ל ___". The Hebrew "(לגבר) / (לאישה)" moved to the teacher note.
+  - >-
+    The vocabulary keeps only the Hebrew transliteration and the Hebrew meaning; the
+    Arabic-script column was left out (the course is written in transliteration). The
+    question-word table in the summary keeps its Arabic column as in the notebook.
+  - >-
+    The lesson goals list (end-of-lesson outcomes) and the "only present tense" note
+    are in the first teacher note, not in the student view.
+  - >-
+    Quizlet link: the tracking parameter "?new" was removed. The "תשובת תלמיד 1/2/3"
+    lines were removed (the platform has answer boxes). Activity times are as in the
+    notebook; the warm-up is 15 minutes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: small-talk-class
+    title: 'שיעור: שיחת חולין'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: שיחת חולין
+      - id: skills
+        type: cycleOverview
+        lang: he
+        skills:
+          - name: שאלות ותשובות בהווה
+            description: 'הבנת מבנה שאלה בסיסי (שׁוּ, וֵין, וינתא, לֵיש, כִּיף) וייצור תשובה קצרה, טבעית ופשוטה.'
+          - name: משפטי תיאור בהווה
+            description: 'תיאור עצמי ותיאור אדם נוסף: מקום מגורים, עבודה, תחביבים, מצב משפחתי, מה אוהבים.'
+      - id: quizlet
+        type: externalLink
+        lang: he
+        label: שיחות חולין בקוויזלט
+        url: https://quizlet.com/br/1119901819/%D7%A9%D7%99%D7%97%D7%95%D7%AA-%D7%97%D7%95%D7%9C%D7%99%D7%9F-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        lang: he
+        level: 3
+        text: סבב היכרות
+      - id: intro
+        type: sentenceFrame
+        frame: 'אַנַא ___. אַנַא בַּחִבּّ ___.'
+        example: 'אַנַא אסמי מוּשִׁיק. אַנַא בַּחִבּّ אל כֻּתֻבּ.'
+      - id: warmup-title
+        type: heading
+        lang: he
+        level: 3
+        text: שאלות פתיחה
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: "שׁוּ אִסְמַכּ / אִסְמֵכּ? ו שו בתשתרֶ'ל / בתשתרֶ'לי?"
+            frame: "אנא אסמי ___ ו בשתרֶ'ל ___."
+          - question: 'וין סאכְּן / ה? ו שו אסֶם אשארֶע?'
+          - question: "שׁוּ בַּתְחִבּّ תַעְמַל ח'לאל אליום?"
+            frame: "אנא בחיב ___ (אטבוח', אשתרי אואעי, ארוח משוָאר, אקרא כתאב, אחד'ר פילֶם…)"
+          - question: 'שוּ בְּתִשְרַבּ / בְּתִשְרַבִּי עַלֶ-סֻּובְּח?'
+            frame: 'בַּשְרַבּ אסֻּובִּח ___ (שָאי, קַהְוֶה, נסקפה, מַי, חליבְּ)'
+          - question: 'שׁוּ אַכּתַר מַחַלّ ביתחּיבוּ? לֵיש?'
+            frame: "___ (אלבית, אלשור'ול, אטביעה, אל בחר…)"
+          - question: "בשַכֶּל עאם, בחיבְּ אחכּי ען ___ (אלאח'בּאר, אסיאסֶה, אריאד'ה, אלעילֶה…)"
+          - question: 'אֶחְכּילי ען עאדֶה ענדָכְּ.'
+      - id: activities-title
+        type: heading
+        lang: he
+        level: 3
+        text: פעילויות
+      - id: act1
+        type: classActivity
+        lang: he
+        title: 'פעילות 1: סימולציית פגישה ראשונה'
+        skills: [שאלות ותשובות בהווה, משפטי תיאור בהווה]
+        minutes: 20
+        steps:
+          - הכיתה מתחלקת לזוגות.
+          - כל זוג בוחר חמש שאלות מהמאגר שלמטה ושואל אותן בערבית בלבד.
+          - 'דיווח על השותף בערבית: מעבירים את המידע ומשתמשים נכון בהֻוֵה / הִיֵּה.'
+        example: |-
+          הֻו מֻתְגַ'וֵז. הֻו בַּחִבּّ כְּלַאבּ. הֻוֵה בִּשְׁתִעְ'ל בְּמַחַלّ.
+          הִי בְּתִחִבּّ תִּרְקֻדּ. הִי עִנְדַהָ תַּלַת אִחְ'וַאת. הִי סַאכְּנֵה בְּחֵיפָא.
+      - id: act1-bank-title
+        type: heading
+        lang: he
+        level: 4
+        text: מאגר השאלות
+      - id: act1-bank
+        type: discussionQuestions
+        answerable: false
+        items:
+          - question: 'אַנַא אִסְמִי ___. שׁוּ אִסְמַכּ?'
+          - question: 'וֵין סַאכֵּן?'
+          - question: "וֵין בַּתְשְׁתִעְ'ל?"
+          - question: "אַנְתַ מֻתְגַ'ווֵז / ה?"
+          - question: 'עינדַכּ אווּלַאד?'
+          - question: "עינדַכּ אִחְ'ווּי וְאִחְ'וַאת?"
+          - question: 'בְּתִחִבּّ אל חֵיוַאנַאת? אַיּא?'
+          - question: "בְּתִחִבּّ ארִיאדַ'ה? אַיּא?"
+          - question: "אַי סאעה בתס'חא / בתק'ום מן אנום כל יום?"
+          - question: 'וֶינְתַא בַּתְדְרֻס עַרַבִּי?'
+      - id: act2
+        type: classActivity
+        lang: he
+        title: 'פעילות 2: מי הוא / היא?'
+        skills: [משפטי תיאור בהווה, שאלות ותשובות בהווה]
+        minutes: 20
+        steps:
+          - 'כל תלמיד כותב, רק בערבית, על אדם קרוב או דמות חשובה בחייו: שם, מגורים, עבודה, מה הוא אוהב. השתמשו בתבניות שלמטה.'
+          - המשתתפים שואלים שאלות על האדם (השאלות שלמטה).
+          - שיתוף בכיתה. כל תלמיד מציג את האדם שבחר השותף שלו.
+      - id: act2-frames
+        type: discussionQuestions
+        items:
+          - question: 'הַאדָּ / הַאי ___'
+          - question: 'אִסְמוֹ / אִסְמַהָא ___'
+          - question: 'הֻו סַאכֵּן בְּ___'
+          - question: 'הִי סַאכְּנֵה בְּ___'
+          - question: "הֻו בִּשְׁתִעְ'ל בְּ___"
+          - question: "הִי בְּתִשְׁתִעְ'ל בְּ___"
+          - question: 'הֻו בַּחִבּّ ___'
+          - question: 'הִי בְּתִחִבּّ ___'
+      - id: act2-questions-title
+        type: heading
+        lang: he
+        level: 4
+        text: שאלות בין התלמידים
+      - id: act2-questions
+        type: examples
+        items:
+          - text: 'מִין הַדָּא / הַדִּי?'
+          - text: 'שׁוּ אִסְמוֹ / איסימהא?'
+          - text: 'וֵין סַאכֵּן?'
+          - text: 'שׁוּ בַּחִבּّ?'
+      - id: act3
+        type: classActivity
+        lang: he
+        title: 'פעילות 3: מה השאלה?'
+        skills: [שאלות ותשובות בהווה]
+        minutes: 20
+        steps:
+          - המורה מקריא את התשובה הראשונה ובוחר תלמיד שיגיד על איזו שאלה היא עונה.
+          - 'תלמיד שאמר את השאלה הנכונה, בערבית, מקבל נקודה. אחר כך הוא מקריא את התשובה הבאה ובוחר את התלמיד הבא שינחש מה השאלה, וכך הלאה.'
+      - id: act3-answers-title
+        type: heading
+        lang: he
+        level: 4
+        text: התשובות
+      - id: act3-answers
+        type: examples
+        items:
+          - text: 'אִסְמִי נָאדֶר.'
+          - text: 'אַנא מִן חֵיפָא.'
+          - text: "אַנא בַּחִבּّ אַסַאפֶר לַבַּרָّה לַאֶנִּי בַּחִבּّ אַגְ'רַבּ אַכֵּל גְ'דִיד."
+          - text: 'אַנא סַאכֵּן בְּתֵל אַבִיבּ.'
+          - text: "אַנא בַּשְׁתִרֶ'ל בְּמַדְרַסֵה."
+          - text: 'אַנא בַּדְרוֹס עַרַבִּי מַרְתֵין בִּלְאֻסְבּוּע.'
+          - text: 'אַנא בַּחִבּّ אַרְוַח̣ עַל־בַּחֶר ו אַקְרַא כִּתַאבּ.'
+          - text: "עִנְדִי אִחְ'וין וּאִחְ'ות וַאחְדֵה."
+          - text: 'אַזקַא אַכֵּל עִנְדִי פיצַה.'
+      - id: act3-questions-title
+        type: heading
+        lang: he
+        level: 4
+        text: דוגמאות לשאלות
+      - id: act3-questions
+        type: examples
+        items:
+          - text: 'שׁוּ אִסְמַכּ?'
+          - text: 'מִן וֵין אַנְתַ?'
+          - text: 'לֵיש אַנְתַ בְּתִחִבּّ תְסַאפֶר?'
+          - text: 'וֵין אַנְתַ סַאכֵּן?'
+          - text: "וֵין אַנְתַ בַּתְשְׁתִעְ'ל?"
+          - text: 'כַּם מַרַּה בְּתִדְרֻס עַרַבִּי?'
+          - text: 'שׁוּ בַּתְחִבּّ תַעְמַל?'
+          - text: "כַּם אִחְ' וְאִחְ'ת עִנְדַכּ?"
+          - text: 'שׁוּ אַזקַא אַכֵּל עִנְדַכּ?'
+      - id: act4
+        type: classActivity
+        lang: he
+        title: 'פעילות 4: מִין בְּיַשְבַּה מִין? – מי דומה למי בכיתה?'
+        skills: [משפטי תיאור בהווה, שאלות ותשובות בהווה]
+        minutes: 20
+        steps:
+          - 'סקר קצר (5 דקות): המורה שואל את כל הכיתה שאלות קצרות, בערבית בלבד, ורושם על הלוח או בשיתוף מסך 4–5 תשובות מעניינות (רק בערבית / בתעתיק).'
+          - 'מי דומה למי? (8 דקות): עובדים בזוגות. מחליטים מי בכיתה ״דומה״ למי ומנסחים משפטים מחברים בערבית לפי התבניות.'
+          - 'הצגה לכיתה (7 דקות): כל זוג מציג 2–3 משפטים על ״מי דומה למי״.'
+      - id: act4-survey-title
+        type: heading
+        lang: he
+        level: 4
+        text: שאלות הסקר
+      - id: act4-survey
+        type: examples
+        items:
+          - text: 'מִין בַּחִבּّ קַהְוֵה?'
+          - text: 'מִין בַּחִבּّ יִקְרַא כִּתַאבּ?'
+          - text: 'מִין סַאכֵּן בְּתֵל אַבִיבּ?'
+          - text: "מִין בִּשְׁתִרַ'ֶל בְּמַדְרַסֵה?"
+          - text: 'מִין בַּחִבּّ יֻרוּחּ עַל־בַּחר?'
+          - text: "מין בס'חא בכּיר דאימָן?"
+          - text: 'מין ב עמארה?'
+      - id: act4-board-title
+        type: heading
+        lang: he
+        level: 4
+        text: דוגמה ללוח
+      - id: act4-board
+        type: examples
+        items:
+          - text: 'מָאי בַּתחִבּّ אל כֻּותֻובּ'
+          - text: 'נָאדֶר סַאכֵּן בְּיַפוֹ'
+          - text: "רוֹנִי בִּשְׁתִרֶ'ל בְּמֻסְתַשְפַא"
+          - text: 'דָאנָה בַּתְחִבּّ רִיאדַה'
+      - id: act4-frames
+        type: sentenceFrame
+        frame: |-
+          הֻוא בַּחִבּّ ___, וּכַמַאן ___ בַּחִבּّ ___
+          הִיא בְּתִשְׁתִרֶ'ל בְּ___, וּכַמַאן ___ בִּשְׁתִרֶ'ל בְּ___
+          הֻוא סַאכֵּן בְּ___, וּכַמַאן ___ סַאכֵּן בְּ___
+        example: |-
+          נָדֶר בִּשְׁתִרֶ'ל בְּמַדְרַסֵה, וּכַמַאן עֻמְר בִּשְׁתִרֶ'ל בְּמַדְרַסֵה.
+          דָאנָה בַּתְחִבּّ רִיאדַה, וּכַמַאן לִינָא בְּתִחִבּّ רִיאדַה.
+          מָאי בַּחִבּّ כֻּתֻבּ, בַּסّ נָדֶר בַּחִבּّ כֻּתֻבּ.
+      - id: act4-followup-title
+        type: heading
+        lang: he
+        level: 4
+        text: שאלות המשך של המורה
+      - id: act4-followup
+        type: examples
+        items:
+          - text: 'לֵיש בַּתְחִבּّ רִיאדַה?'
+          - text: 'אַיֵּה רִיאדַה בְּתִחִבּّ?'
+          - text: 'וֵין בִּתְתְמַרַן?'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: |-
+          שתי מיומנויות במחזור הזה: **שאלות ותשובות בהווה** ו**משפטי תיאור בהווה**. **זמן: רק הווה** – אין עבודה עם עבר או עתיד בשלב זה, כדי לא להעמיס על הלומדים.
+          בסיום השיעור התלמידים מסוגלים: להציג את עצמם במשפטים בסיסיים; לשאול על שם, מקום מגורים, מקצוע ותחביבים; להבין שאלות פשוטות ולהשיב עליהן; לנהל שיחת היכרות בסיסית בין שני אנשים; לתאר את השותף בגוף שלישי; לזהות שאלה לפי תשובה מוכנה; להשתמש בשאלות כן/לא.
+      - id: n-intro
+        anchor: intro
+        text: 'המורה מבקש מהתלמידים להציג את עצמם בערבית. תנו קודם את הדוגמה שלכם: ״אַנַא אסמי מוּשִׁיק. אַנַא בַּחִבּّ אל כֻּתֻבּ.״'
+      - id: n-warmup
+        anchor: warmup
+        minutes: 15
+        text: 'המורה לא שואל בעברית: שואלים **רק בערבית**, כך שהתלמידים נחשפים לשפה אמיתית כבר מההתחלה. לגבר: שׁוּ אִסְמַכּ? לאישה: שׁוּ אִסְמֵכּ?'
+      - id: n-act1
+        anchor: act1
+        text: 'בשלב הדיווח מתרגלים העברת מידע ושימוש נכון בהֻוֵה / הִיֵּה.'
+      - id: n-act2
+        anchor: act2
+        text: 'מטרת הפעילות: בניית יכולת תיאור מעמיקה יותר. המיומנות המרכזית כאן: *מעבר בין גוף ראשון לשלישי*.'
+      - id: n-act3
+        anchor: act3
+        text: 'מטרות הפעילות: פיתוח הבנת הנשמע, התאמת שאלה–תשובה, חיזוק אוצר מילות השאלה. התלמידים חייבים לומר את השאלה הנכונה בערבית.'
+      - id: n-act4
+        anchor: act4
+        text: |-
+          מטרות: תרגול הווה בסיסי; שאלות ותשובות; הרחבת אוצר מילים של תיאורים בסיסיים; אינטראקציה טבעית בין תלמידים; חיזוק המבנה הֻוֵ / הִיֵּה… בַּחִבּّ / בִּשְׁתִר'ֶל / סַאכֵּן / עִנְדַהא (יש לה) / ענדו (יש לו).
+          בהצגה לכיתה המורה מתקף ומתקן בזמן אמת את השימוש בהֻו / הִי, ומוסיף שאלות המשך קצרות בערבית. המשפט השלישי בדוגמה (עם בַּסّ) מראה הבדל, והוא אופציונלי.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: small-talk-summary
+    title: סיכום השיעור
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: סיכום השיעור
+      - id: rules-questions
+        type: ruleSummary
+        lang: he
+        skill: שאלות בהווה בסיסי
+        rules:
+          - text: 'המטרה: להבין **איך שואלים שאלה פשוטה**, בלי מבנים מורכבים.'
+          - text: 'ערבית מדוברת היא שפה מאוד ישירה. רוב השאלות נבנות בצורה פשוטה מאוד: **מילת שאלה + פועל בהווה + כינוי גוף**.'
+            examples:
+              - 'שׁוּ אַנְתַ בַּתְעְמַל כֻּל יוֹם? – מה אתה עושה כל יום?'
+              - 'וֵין אַנְתַ סַאכֵּן? – איפה אתה גר?'
+              - 'לֵיש אַנְתַ בַּתְחִבּّ תִּרְקֻדּ? – למה אתה אוהב לרקוד?'
+          - text: 'שאלות כן/לא: **אין מילת שאלה – רק טון עולה**.'
+            examples:
+              - "אַנְתַ מֻתְגַ'וֵז? – אתה נשוי?"
+              - 'הִיּ מַרַּה. – היא אישה.'
+              - 'הֻו מַשְהוּר? – הוא מפורסם?'
+      - id: question-words
+        type: table
+        lang: he
+        caption: מילות השאלה שנלמדו
+        header: [מילה בערבית, תעתיק, תרגום]
+        rows:
+          - [شو, שׁוּ, מה]
+          - [وين, וֵין, איפה]
+          - [ايمتى, אֵימְתַא / וינתא, מתי]
+          - [ليش, לֵיש / לֶיה, למה]
+          - [كيف, כִּיף, איך]
+      - id: rules-verbs
+        type: ruleSummary
+        lang: he
+        skill: פועל בהווה – המבנה הכי בסיסי בשפה
+        rules:
+          - text: 'גבר (אַתָּה): **בַּתְ** + פועל (בערבית: بِتْ).'
+            examples:
+              - 'בַּתְעְמַל – אתה עושה'
+              - "בַּתְשְׁתִרֶ'ל – אתה עובד"
+              - 'בַּתְחִבּّ – אתה אוהב'
+              - 'בַּתְדְרֻס – אתה לומד'
+          - text: 'אישה (אַתְּ): האות האחרונה משתנה ל־**י**: **בַּתְ** + פועל + **י**.'
+            examples:
+              - 'בַּתְעְמַלִי – את עושה'
+              - "בַּתְשְׁתִרֶ'לִי – את עובדת"
+              - 'בַּתְחִבִּי – את אוהבת'
+              - 'בַּתְדְרֻסִי – את לומדת'
+          - text: 'אני: **אַנַא בַּ**־ (אותו מבנה כמו ״אתה״, אבל עם אַנַא).'
+            examples:
+              - 'אַנַא בַּעְמַל – אני עושה'
+              - "אַנַא בַּשְׁתִרֶ'ל – אני עובד"
+              - 'אַנַא בַּחִבּّ – אני אוהב'
+              - 'אַנַא בַּדְרוֹס – אני לומד'
+      - id: rules-describing
+        type: ruleSummary
+        lang: he
+        skill: תיאור עצמי ותיאור אדם אחר
+        rules:
+          - text: "תיאור עצמי: **אַנַא** + פועל בהווה, או **אַנַא סַאכֵּן בְּ…** / **אַנַא בַּשְׁתִעְ'ל בְּ…**"
+            examples:
+              - 'אַנַא בַּחִבּّ אלכֻּתֻבּ. – אני אוהב ספרים'
+              - 'אַנַא סַאכֵּן בְּתֵל אַבִיבּ. – אני גר בתל אביב'
+              - "אַנַא בַּשְׁתִעְ'ל בְּמַדְרַסֵה. – אני עובד בבית ספר"
+              - 'אַנַא בַּחִבּّ אַרוּח̣ עַל־בַּחַר. – אני אוהב ללכת לים'
+          - text: 'הוא: **הֻו** + הפועל בלי י׳ (צורת הבסיס של הפועל).'
+            examples:
+              - "הֻוֵ בִּשְׁתִרֶ'ל בְּמַחַלّ אואעי. – הוא עובד בחנות בגדים"
+              - 'הֻוֵה בַּחִבּّ כְּלַאבּ. – הוא אוהב כלבים'
+          - text: 'היא: **הִי** + הפועל עם ת׳ בתחילתו (אותו מבנה של ״את״, רק לגוף שלישי).'
+            examples:
+              - "הִיּ בְּתִשְׁתִעְ'ל בְּמִסרַח. – היא עובדת בתיאטרון"
+              - "הִיּ בְּתִחִבּّ תִּרְקוס'. – היא אוהבת לרקוד"
+          - text: 'תיאור אדם אחר (גוף שלישי) – זה מבנה קריטי לשיחות אמיתיות בערבית.'
+            examples:
+              - 'הֻוא סַאכֵּן בְּיַפוֹ. – הוא גר ביפו'
+              - 'הִי סַאכְּנֵה בְּחֵיפָא. – היא גרה בחיפה'
+              - 'הֻוא בַּחִבּّ רִיאדַה. – הוא אוהב ספורט'
+              - "הִי בְּתִשְׁתִרֶ'ל בְּבַּנְק. – היא עובדת בבנק"
+          - text: '״יש לי״ – **עִנְדִי**: מבנה חשוב מאוד בשיחה בסיסית.'
+            examples:
+              - 'עִנְדִי – יש לי'
+              - 'עִנְדַכּ – יש לך (לגבר)'
+              - 'עִנְדִכּ – יש לך (לאישה)'
+              - 'עִנְדֻכּוּ – יש לכם'
+              - "עִנְדִי תֵּין אִחְ'וַאן וּאִחְ'ת. – יש לי שני אחים ואחות"
+              - 'עִנְדַכּ וַלַאד? – יש לך ילדים?'
+      - id: learned
+        type: callout
+        lang: he
+        tone: info
+        title: לסיכום – מה למדנו
+        text: |-
+          ✔ איך לבנות שאלה פשוטה בהווה
+          ✔ איך לענות במשפט קצר וצלול
+          ✔ את כל מילות השאלה המרכזיות
+          ✔ מבני הווה: אני / אתה / את / הוא / היא
+          ✔ איך לתאר את עצמי ואדם אחר
+          ✔ איך לומר ״יש לי״
+          ✔ איך לזהות מבנה של שאלה מתוך תשובה
+          ✔ איך לנהל שיחת היכרות פשוטה, 100% בערבית
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: עברו עם הקבוצה על מילות השאלה ועל מבני ההווה, ובקשו דוגמה חדשה לכל כלל.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: small-talk-homework
+    title: שיעורי בית עם מורי
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: שיעורי בית עם מורי
+      - id: how
+        type: text
+        lang: he
+        text: 'פתחו את הצ׳אט עם מורי, העתיקו את ההודעה ושלחו אותה *בדיוק* כפי שהיא. אין לשנות את הניסוח, כדי שהתרגול יעבוד חלק.'
+      - id: task1-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'מטלה 1 – תרגול שאלות ותשובות'
+      - id: mori-task1
+        type: aiTutorPrompt
+        message: "מורי, תַסְאַלנִי אַסְאִלֶה בִּלְעַרַבִּי (תעתיק). אַנַא בַּרְדّ בִּג׳ֻמַל קְצִירי בִּלְמודַ'רַע. תַצַחֵּחְ לִי אִזַא אנַא בַּעְ'לַט."
+      - id: task1-goal
+        type: text
+        lang: he
+        text: "מורי ישאל רק: שׁוּ אִסְמַכּ / וֵין אַנְתַ סַאכֵּן / שׁוּ בַּתְעְמַל כֻּל יוֹם / שׁוּ בַּתְחִבּّ / וֵין אַנְתַ בַּתְשְׁתִעְ'ל.\n**מטרה:** תרגול ייצור תשובה קצרה וטבעית, שיפור דיוק בהווה, קליטת מבנה שאלה."
+      - id: task2-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'מטלה 2 – תיאור עצמי'
+      - id: mori-task2
+        type: aiTutorPrompt
+        message: 'מורי, אַנַא בִּדִי אַחְכִּילַכּ עַנִי. אִסְאַלנִי אַסְאִלֶה עַן אַנַא: סִכַּנִי, שֻׁו בַחֶב אַעַמַל בי וַקְת אלְפַרַאג׳.'
+      - id: task2-goal
+        type: text
+        lang: he
+        text: "מורי ישאל למשל: וֵין אַנְתַ סַאכֵּן? שׁוּ בַּתְעְמַל? שׁוּ בַּתְחִבּّ? וואֵנְּתַא בַּתְרוּח̣ עַל־בַּחַר?\n**מטרה:** הרבה תרגול על ״אַנַא בַּחִבּّ / אַנַא סַאכֵּן / אַנַא בַּשְׁתִעְ'ל״ עם תיקון טעויות בזמן אמת."
+      - id: task3-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'מטלה 3 – תיאור אדם אחר (גוף שלישי)'
+      - id: mori-task3
+        type: aiTutorPrompt
+        message: 'מורי, בִּדִי תַסְאַלנִי עַן שַׁח׳ס תַאנִי. אַנַא בַּרְדّ עַן הֻוֵה / הִיֵּה בִּג׳ֻמַל קְצִירַה.'
+      - id: task3-goal
+        type: text
+        lang: he
+        text: "מורי ישאל בערבית: מִין הֻו? וֵין סַאכֵּן? שׁוּ בִּשְׁתִרֶ'ל? שׁוּ בַּחִבּّ?\n**מטרה:** תרגול ״הֻו / הִי״ בצורה מדויקת."
+      - id: task4-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'מטלה 4 – זיהוי השאלה מהתשובה'
+      - id: mori-task4
+        type: aiTutorPrompt
+        message: 'מורי, אעְטִינִי ג׳ֻוַאבּ וַאַנַא בַּחְזַר אִשׁ הִיֵּה אִלְאַסְאִילֶה.'
+      - id: task4-goal
+        type: text
+        lang: he
+        text: "דוגמה: מורי: **״אַסְמִי נָאדֶר.״** אתם: **״שׁוּ אִסְמַכּ?״**\n**מטרה:** חיזוק הבנת הנשמע והבנת מבני שאלה."
+      - id: task5-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'מטלה 5 – משחק ״מי דומה למי?״'
+      - id: mori-task5
+        type: aiTutorPrompt
+        message: "מורי, חַ'לִינַא נִלְעַבּ מִין בְּיַשְבַּה מִין. אעְטִינִי אִסֵם תַּלַאמֵיז וַאַנַא בַּעְמַל ג׳ֻמַל עַנְהֻם."
+      - id: task5-goal
+        type: text
+        lang: he
+        text: "מורי נותן שמות, ואתם אומרים משפטים, למשל: נָדֶר סַאכֵּן בְּיַפוֹ. וּכַמַאן עֻמְר סַאכֵּן בְּיַפוֹ. / דָאנָה בְּתִחִבּّ רִיאדַה, וּלִינָא כַמַאן בְּתִחִבּّ רִיאדַה.\n**מטרה:** תרגול חיבור מידע + הֻו / הִי בהווה."
+      - id: task6-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'מטלה 6 – 10 משפטים לכתיבה'
+      - id: task6-how
+        type: text
+        lang: he
+        text: 'השלימו את 10 המשפטים על בסיס השיעור ושלחו אותם למורי, שיתקן אותם. **מטרה:** לשחזר את כל מבני ההווה שנלמדו.'
+      - id: mori-task6
+        type: aiTutorPrompt
+        message: |-
+          1. אַנַא בַּחִבּّ ___
+          2. אַנַא סַאכֵּן בְּ___
+          3. אַנַא בַּשְׁתִרֶ'ל בְּ___
+          4. הֻו בִּשְׁתִרֶ'ל בְּ___
+          5. הִיּ בְּתִשְׁתִרֶ'ל בְּ___
+          6. הֻו בַּחִבּّ ___
+          7. הִיֵּה בְּתִחִבּّ ___
+          8. עִנְדִי ___
+          9. שׁוּ אַנַא בַּתְעְמַל כֻּל יוֹם?
+          10. וֵין אַנַא סַאכֵּן?
+      - id: task7-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'מטלה 7 – תרגול כן/לא'
+      - id: mori-task7
+        type: aiTutorPrompt
+        message: 'מורי, אִסְאַלנִי אַסְאִלֶה נַעַם־לָא. אַנַא בַּרְדّ.'
+      - id: task7-goal
+        type: text
+        lang: he
+        text: "מורי ישאל למשל: אנא בע׳ני? אנתא מתג׳ווז? הִיֵּה בְּתִשְׁתִעְ'ל?"
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: small-talk-practice
+    book: workbook
+    title: 'תרגול: שיחת חולין'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        lang: he
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+      - id: ex-questions
+        type: activity
+        activity: small-talk-questions
+      - id: ex-describing
+        type: activity
+        activity: small-talk-describing
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: small-talk-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: שיחת חולין
+        glossLang: he
+        link: https://quizlet.com/br/1119901819/%D7%A9%D7%99%D7%97%D7%95%D7%AA-%D7%97%D7%95%D7%9C%D7%99%D7%9F-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &small-talk-words
+          - { term: 'שׁוּ', gloss: 'מה' }
+          - { term: 'וֵין', gloss: 'איפה' }
+          - { term: 'אֵימְתַא / וינתא', gloss: 'מתי' }
+          - { term: 'לֵיש / ליה', gloss: 'למה' }
+          - { term: 'כִּיף', gloss: 'איך' }
+          - { term: 'אַנַא', gloss: 'אני' }
+          - { term: 'אַנְתַ', gloss: 'אתה' }
+          - { term: 'אַנְתִי', gloss: 'את' }
+          - { term: 'הֻוֵ', gloss: 'הוא' }
+          - { term: 'הִיֵ', gloss: 'היא' }
+          - { term: 'עִנְדִי', gloss: 'יש לי' }
+          - { term: 'עִנְדַכּ', gloss: 'יש לך (לגבר)' }
+          - { term: 'עִנְדִכּ', gloss: 'יש לך (לאישה)' }
+          - { term: 'בַּעְמַל', gloss: 'אני עושה / עובד' }
+          - { term: "בַּשְׁתִרֶ'ל", gloss: 'אני עובד' }
+          - { term: 'בַּדְרוֹס', gloss: 'אני לומד' }
+          - { term: 'בַּחִבּّ', gloss: 'אני אוהב / מחבב' }
+          - { term: 'בַּשְרַבּ', gloss: 'אני שותה' }
+          - { term: 'בַּרֻוּח', gloss: 'אני הולך / יוצא' }
+          - { term: 'סַאכֵּן', gloss: 'גר (זכר)' }
+          - { term: 'סַאכְּנֵה', gloss: 'גרה (נקבה)' }
+          - { term: 'אֶסְם', gloss: 'שם' }
+          - { term: 'מַחַלّ', gloss: 'חנות / מקום עבודה' }
+          - { term: 'מַדְרַסֵה', gloss: 'בית ספר' }
+          - { term: 'בַּחַר', gloss: 'ים' }
+          - { term: 'כֻּותֻובּ', gloss: 'ספרים' }
+          - { term: 'קַהְוֶה', gloss: 'קפה' }
+          - { term: 'שַׁאי', gloss: 'תה' }
+          - { term: 'חֵיוַואנַאת', gloss: 'חיות / בעלי חיים' }
+          - { term: "רִיאדַ'ה", gloss: 'ספורט' }
+          - { term: 'אוּלַאד', gloss: 'ילדים' }
+          - { term: "אִחְ'וַאן / אח'וֶה", gloss: 'אחים' }
+          - { term: "אוחְ'ת", gloss: 'אחות' }
+          - { term: "ח'וָאת", gloss: 'אחיות' }
+          - { term: "מֻתְגַ'וֵז", gloss: 'נשוי' }
+          - { term: 'אַכֵּל', gloss: 'אוכל' }
+          - { term: "סֻ'ובְּח", gloss: 'בוקר' }
+
+vocabulary:
+  - slug: small-talk
+    title: שיחת חולין
+    items: *small-talk-words
+
+activities:
+  - slug: small-talk-questions
+    title: שאלות ותשובות בהווה
+    minutes: 8
+    items:
+      - id: where
+        type: multipleChoice
+        lang: he
+        prompt: 'איזו מילת שאלה פירושה ״איפה״?'
+        options:
+          - { text: 'וֵין', correct: true }
+          - { text: 'שׁוּ', feedback: 'שׁוּ פירושה ״מה״.' }
+          - { text: 'לֵיש', feedback: 'לֵיש פירושה ״למה״.' }
+          - { text: 'כִּיף', feedback: 'כִּיף פירושה ״איך״.' }
+      - id: question-words
+        type: matching
+        lang: he
+        prompt: התאימו כל מילת שאלה לפירוש שלה.
+        pairs:
+          - ['שׁוּ', 'מה']
+          - ['וֵין', 'איפה']
+          - ['לֵיש', 'למה']
+          - ['כִּיף', 'איך']
+          - ['אֵימְתַא', 'מתי']
+      - id: name-question
+        type: multipleChoice
+        lang: he
+        prompt: 'התשובה היא: ״אִסְמִי נָאדֶר.״ מה הייתה השאלה?'
+        options:
+          - { text: 'שׁוּ אִסְמַכּ?', correct: true }
+          - { text: 'וֵין אַנְתַ סַאכֵּן?', feedback: 'זו שאלה על מקום מגורים: ״איפה אתה גר?״' }
+          - { text: "כַּם אִחְ' וְאִחְ'ת עִנְדַכּ?", feedback: 'זו שאלה על אחים ואחיות.' }
+      - id: live-question
+        type: multipleChoice
+        lang: he
+        prompt: 'התשובה היא: ״אַנא סַאכֵּן בְּתֵל אַבִיבּ.״ מה הייתה השאלה?'
+        options:
+          - { text: 'וֵין אַנְתַ סַאכֵּן?', correct: true }
+          - {
+              text: "וֵין אַנְתַ בַּתְשְׁתִעְ'ל?",
+              feedback: 'זו שאלה על מקום העבודה: ״איפה אתה עובד?״',
+            }
+          - { text: 'שׁוּ בַּתְחִבּّ תַעְמַל?', feedback: 'זו שאלה על מה אתה אוהב לעשות.' }
+      - id: work-question
+        type: multipleChoice
+        lang: he
+        prompt: "התשובה היא: ״אַנא בַּשְׁתִרֶ'ל בְּמַדְרַסֵה.״ מה הייתה השאלה?"
+        options:
+          - { text: "וֵין אַנְתַ בַּתְשְׁתִעְ'ל?", correct: true }
+          - { text: 'וֵין אַנְתַ סַאכֵּן?', feedback: 'זו שאלה על מקום מגורים: ״איפה אתה גר?״' }
+          - {
+              text: 'כַּם מַרַּה בְּתִדְרֻס עַרַבִּי?',
+              feedback: 'זו שאלה על כמה פעמים אתה לומד ערבית.',
+            }
+      - id: yes-no
+        type: trueFalse
+        lang: he
+        prompt: "בשאלת כן/לא אין מילת שאלה: רק הטון עולה. למשל: ״אַנְתַ מֻתְגַ'וֵז?״ – אתה נשוי?"
+        answer: true
+        feedback:
+          correct: 'נכון! בשאלת כן/לא אין מילת שאלה, רק טון עולה.'
+          incorrect: "בשאלת כן/לא אין מילת שאלה: ״אַנְתַ מֻתְגַ'וֵז?״ היא שאלה רק בגלל הטון העולה."
+      - id: every-day
+        type: multipleChoice
+        lang: he
+        prompt: 'איך שואלים גבר: ״מה אתה עושה כל יום?״'
+        options:
+          - { text: 'שׁוּ אַנְתַ בַּתְעְמַל כֻּל יוֹם?', correct: true }
+          - { text: 'וֵין אַנְתַ בַּתְעְמַל כֻּל יוֹם?', feedback: 'וֵין פירושה ״איפה״.' }
+          - { text: 'לֵיש אַנְתַ בַּתְעְמַל כֻּל יוֹם?', feedback: 'לֵיש פירושה ״למה״.' }
+      - id: order-why
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים לשאלה: ״למה אתה אוהב לרקוד?״'
+        sentence: 'לֵיש אַנְתַ בַּתְחִבּّ תִּרְקֻדּ?'
+
+  - slug: small-talk-describing
+    title: משפטי תיאור בהווה
+    minutes: 8
+    items:
+      - id: i-live
+        type: multipleChoice
+        lang: he
+        prompt: '״אני גר בתל אביב״ – השלימו: אַנַא ___ בְּתֵל אַבִיבּ.'
+        options:
+          - { text: 'סַאכֵּן', correct: true }
+          - { text: 'סַאכְּנֵה', feedback: 'סַאכְּנֵה היא הצורה לנקבה: ״גרה״.' }
+          - { text: 'בַּחִבּّ', feedback: 'בַּחִבּّ פירושו ״אני אוהב״.' }
+      - id: she-lives
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״היא גרה בחיפה״?'
+        options:
+          - { text: 'הִי סַאכְּנֵה בְּחֵיפָא.', correct: true }
+          - { text: 'הֻוא סַאכֵּן בְּחֵיפָא.', feedback: 'זה ״הוא גר בחיפה״.' }
+          - { text: 'אַנַא סַאכֵּן בְּחֵיפָא.', feedback: 'זה ״אני גר בחיפה״.' }
+      - id: she-likes
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״היא אוהבת לרקוד״?'
+        options:
+          - { text: 'הִי בְּתִחִבּّ תִּרְקֻדּ.', correct: true }
+          - {
+              text: 'הִי בַּחִבּّ תִּרְקֻדּ.',
+              feedback: 'עם הִי הפועל מקבל ת׳ בתחילתו: בְּתִחִבּّ.',
+            }
+          - { text: 'הֻו בַּחִבּّ תִּרְקֻדּ.', feedback: 'הֻו פירושו ״הוא״.' }
+      - id: pronouns
+        type: matching
+        lang: he
+        prompt: התאימו כל כינוי גוף לפירוש שלו.
+        pairs:
+          - ['אַנַא', 'אני']
+          - ['אַנְתַ', 'אתה']
+          - ['אַנְתִי', 'את']
+          - ['הֻוֵ', 'הוא']
+          - ['הִיֵ', 'היא']
+      - id: have-children
+        type: multipleChoice
+        lang: he
+        prompt: 'שואלים גבר: ״יש לך ילדים?״'
+        options:
+          - { text: 'עִנְדַכּ וַלַאד?', correct: true }
+          - { text: 'עִנְדִי וַלַאד?', feedback: 'עִנְדִי פירושו ״יש לי״.' }
+          - { text: 'עִנְדִכּ וַלַאד?', feedback: 'עִנְדִכּ פירושו ״יש לך״ – לאישה.' }
+      - id: you-feminine
+        type: trueFalse
+        lang: he
+        prompt: 'כשמדברים אל אישה, מוסיפים י בסוף הפועל: בַּתְחִבּّ ← בַּתְחִבִּי (את אוהבת).'
+        answer: true
+        feedback:
+          correct: 'נכון! בַּתְ + פועל + י: בַּתְחִבִּי, בַּתְעְמַלִי, בַּתְדְרֻסִי.'
+          incorrect: 'לאישה מוסיפים י בסוף: בַּתְחִבִּי – את אוהבת.'
+      - id: he-works
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״הוא עובד בחנות בגדים״?'
+        options:
+          - { text: "הֻוֵ בִּשְׁתִרֶ'ל בְּמַחַלّ אואעי.", correct: true }
+          - {
+              text: "הִי בְּתִשְׁתִרֶ'ל בְּמַחַלّ אואעי.",
+              feedback: 'הִי פירושו ״היא״: ״היא עובדת בחנות בגדים״.',
+            }
+          - { text: "אַנַא בַּשְׁתִרֶ'ל בְּמַחַלّ אואעי.", feedback: 'זה ״אני עובד בחנות בגדים״.' }
+      - id: order-siblings
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: ״יש לי שני אחים ואחות.״'
+        sentence: "עִנְדִי תֵּין אִחְ'וַאן וּאִחְ'ת"

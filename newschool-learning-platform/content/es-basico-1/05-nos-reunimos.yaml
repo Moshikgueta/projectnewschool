@@ -1,0 +1,548 @@
+# Cycle "¿Nos reunimos?", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: nos-reunimos
+title: ¿Nos reunimos?
+goal: Organizar una reunión con los días de la semana, los números y las preposiciones básicas.
+position: 5
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Días de la semana y números" and "Preposiciones
+    básicas") are NEW: the notebook has no self-study exercises. They were written
+    from the cycle's two skills, its summary rules and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Activity 1: the frame used "¿Puedes encontrarte…?" and the example used
+    "¿Puedes reunirte…?". Both now use "¿Puedes reunirte…?". The Activity 1
+    frames are also given as answer boxes (Estudiante 1 / Estudiante 2 / Etapa 2).
+  - >-
+    Activity 2 word bank: "despertar" → "despertarse" (the example says "me
+    despierto"). Activity 3 verb bank: "Ejercicio" → "Hacer ejercicio",
+    "Despertar" → "Despertarse", "Encontrarse" → "Encontrarse con amigos".
+  - >-
+    Activity 3 example: "trabajo en mi tarea" (a calque of "work on my homework") →
+    "hago mi tarea".
+  - >-
+    Activity 4 example: "voy a clase de yoga el lunes" → "los lunes" (it is a weekly
+    habit). Activity 4 has no time in the notebook and is not in the skill plan
+    ("Practicado con"); it is kept, without minutes.
+  - >-
+    Summary: "diez y seis" → "dieciséis". The small table "el lunes / los lunes" was
+    added to illustrate summary rule 1; please confirm.
+  - >-
+    Mori: "Abra el chatbot de la escuela" → "Abre el chat con Mori". The tip "con la
+    oración en inglés" → "en español". Extra activity 1: "cómo fue mi semana"
+    (past tense) → "cómo es mi semana" (the course uses the present only);
+    "Responda" → "Responde".
+  - >-
+    Vocabulary: "Despertar – לקום" → "Despertarse – להתעורר" (לקום is "levantarse");
+    "Conocer – לפגוש" → "להכיר" (לפגוש is "encontrarse"); "Ir de compras – לקנות" →
+    "לעשות קניות". Please confirm.
+  - Activity times given as ranges (15–20 minutes) are recorded as 20 minutes.
+  - >-
+    The "Respuesta del estudiante 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: nos-reunimos-clase
+    title: 'Clase: ¿Nos reunimos?'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: ¿Nos reunimos?
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Días de la semana y números
+            description: '*el lunes / los lunes*, los números y las fechas'
+          - name: Preposiciones básicas
+            description: '*a, en, de, con*: Voy **a** la escuela. Estoy **en** casa.'
+      - id: quizlet
+        type: externalLink
+        label: ¿Nos reunimos? en Quizlet
+        url: https://quizlet.com/il/876190603/basic-spanish-lets-meet-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Durante la semana me despierto ___ (por la mañana / al mediodía) y los sábados me despierto ___.
+        example: Soy Dana. Durante la semana me despierto por la mañana y los sábados me despierto al mediodía.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Cuál es tu día favorito de la semana? ¿Por qué?
+            frame: Mi día favorito de la semana es el ___ porque ___.
+          - question: ¿Qué día de la semana no te gusta? ¿Por qué?
+            frame: No me gusta el ___ porque ___.
+          - question: ¿Cuántos días a la semana estudias español? ¿Cuáles?
+            frame: Estudio español ___ veces a la semana. Estudio los ___, ___ y ___.
+          - question: ¿Cuándo es tu cumpleaños?
+            frame: Mi cumpleaños es el ___ de ___.
+          - question: ¿Cuál es tu mes favorito del año? ¿Por qué?
+            frame: Mi mes favorito del año es ___ porque ___.
+          - question: ¿Dónde te encuentras con tus amigos?
+            frame: Me encuentro con mis amigos en ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: ¡Vamos a reunirnos!'
+        skills: [Días de la semana y números, Preposiciones básicas]
+        minutes: 20
+        steps:
+          - '¡Carrusel! Tienes 2 minutos para organizar una reunión con un compañero. Usa las frases de abajo.'
+          - Cuando termina el tiempo, cambia de compañero.
+          - Al final, di cuándo y dónde te reúnes con cada compañero.
+        example: |-
+          **Estudiante 1:** ¡Hola! ¿Puedes reunirte este viernes a las 15:00 en la biblioteca?
+          **Estudiante 2:** No, pero ¿puedes este sábado a las 16:00 en la cafetería?
+          **Estudiante 1:** ¡Sí! Nos vemos el sábado a las 16:00 en la cafetería.
+          **Estudiante 2:** ¡Genial! ¡Nos vemos entonces!
+      - id: act1-frames
+        type: discussionQuestions
+        title: Organiza la reunión
+        items:
+          - question: 'Estudiante 1: invita a tu compañero.'
+            frame: ¡Hola! ¿Puedes reunirte este / el próximo ___ (día) a las ___ (hora) en ___ (lugar)?
+          - question: 'Estudiante 2: responde.'
+            frame: ¡Sí! / No, pero ¿puedes el ___ a las ___ en ___?
+          - question: ¿Cuándo y dónde te reúnes con tu compañero?
+            frame: Me reúno con ___ el ___ a las ___ en ___.
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Mi día'
+        skills: [Preposiciones básicas]
+        minutes: 20
+        steps:
+          - Escucha el ejemplo de tu profesor.
+          - Inventa tus propias frases con el banco de palabras y dilas en voz alta.
+          - Haz lo mismo con **al mediodía** y **por la noche**.
+        wordBank:
+          - en
+          - sobre
+          - a las
+          - durante
+          - despertarse
+          - trabajar
+          - estudiar
+          - comer
+          - conducir
+          - leer correos electrónicos
+          - reunirse con amigos
+          - divertirse
+          - hacer ejercicio
+        example: |-
+          *Yo me despierto temprano por la mañana y leo mis correos electrónicos.*
+          *Yo estudio y como con mis amigos al mediodía.*
+          *Yo hago ejercicio y me divierto viendo una serie por la noche.*
+      - id: act2-frames
+        type: discussionQuestions
+        title: Completa las oraciones
+        items:
+          - question: Yo ___ por la mañana.
+          - question: Yo ___ al mediodía.
+          - question: Yo ___ por la noche.
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Mi semana perfecta'
+        skills: [Días de la semana y números, Preposiciones básicas]
+        minutes: 20
+        steps:
+          - Imagina tu semana perfecta (o escribe tu semana real).
+          - Escribe 3 cosas que haces cada día. Usa el banco de verbos.
+          - Comparte tu semana con el grupo.
+        wordBank:
+          - despertarse
+          - ir
+          - estudiar
+          - comer
+          - jugar
+          - mirar
+          - encontrarse con amigos
+          - hacer ejercicio
+          - escuchar
+          - leer
+          - cocinar
+          - trabajar
+          - dormir
+          - limpiar
+          - comprar
+        example: |-
+          *Los domingos me despierto tarde, veo películas y ceno con mi familia.*
+          *Los lunes voy a la escuela, estudio español y hago ejercicio por la noche.*
+          *Los martes leo un libro, me reúno con mis amigos y cocino la cena.*
+          *Los miércoles escucho música, hago mi tarea y duermo temprano.*
+          *Los jueves limpio mi habitación, voy de compras y almuerzo en un restaurante.*
+          *Los viernes juego al fútbol, veo la televisión y salgo con mis amigos.*
+          *Los sábados me relajo en casa, visito a mis abuelos y salgo a caminar.*
+      - id: act3-week
+        type: discussionQuestions
+        title: Mi semana perfecta
+        items:
+          - question: Los domingos yo ___.
+          - question: Los lunes yo ___.
+          - question: Los martes yo ___.
+          - question: Los miércoles yo ___.
+          - question: Los jueves yo ___.
+          - question: Los viernes yo ___.
+          - question: Los sábados yo ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: ¿Con quién te encuentras cada semana?'
+        skills: [Días de la semana y números, Preposiciones básicas]
+        steps:
+          - Tu profesor dice un día de la semana.
+          - Di con quién te encuentras ese día y por qué.
+        example: |-
+          **Profesor:** ¡Lunes!
+          **Estudiante 1:** Me encuentro con mi amiga Anna porque voy a clase de yoga los lunes.
+          **Estudiante 2:** Me encuentro con mis padres porque cenamos juntos los lunes.
+          **Profesor:** ¡Martes!
+          **Estudiante 1:** Me encuentro con mis estudiantes porque enseño Historia los martes.
+          **Estudiante 2:** Me encuentro con mi amigo porque almorzamos juntos los martes.
+      - id: act4-frame
+        type: discussionQuestions
+        items:
+          - question: ¿Con quién te encuentras y por qué?
+            frame: Me encuentro con ___ porque ___ los ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Días de la semana y números** (Actividades 1
+          y 3) y **Preposiciones básicas** (Actividades 2 y 3). Combinaciones
+          recomendadas: Actividades 1 y 2, o Actividades 1 y 3. La Actividad 4 repasa
+          las dos habilidades.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Dinámica de carrusel: cada pareja tiene 2 minutos para organizar la reunión;
+          después cambian de compañero. Al final, cada estudiante dice cuándo y dónde
+          se reúne con el otro.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Da un ejemplo con el banco de palabras: «Por la mañana yo leo correos
+          electrónicos». Escribe en la pizarra las frases de los estudiantes mientras
+          hablan. Repite con «al mediodía» y «por la noche».
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Es una oportunidad para fantasear con la semana perfecta; los estudiantes
+          menos creativos pueden escribir su semana real. Cada día lleva 3 cosas.
+      - id: n-act4
+        anchor: act4
+        text: Di los días de la semana uno por uno. Es muy importante que cada estudiante participe con al menos una frase.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: nos-reunimos-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-days
+        type: ruleSummary
+        skill: Días de la semana y números
+        rules:
+          - text: >-
+              De lunes a viernes, el día se escribe igual en singular y en plural,
+              porque termina en **s**. **Sábado** y **domingo** llevan una **s** en
+              plural.
+          - text: 'Para un solo día usas **el**; para varios días (todas las semanas) usas **los**.'
+            examples:
+              - El lunes voy a la escuela. · Los lunes voy a la escuela.
+              - El sábado descanso. · Los sábados descanso.
+          - text: Aprende bien los números del uno al diez; los demás se forman con ellos. Si sabes contar hasta diez, es fácil decir cualquier fecha.
+            examples:
+              [
+                'uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez',
+                'once, doce, trece, catorce, quince, dieciséis, diecisiete…',
+              ]
+          - text: Usa **el** antes del día y **en** antes de los meses y los años.
+            examples:
+              [
+                Mi cumpleaños es **el** cinco de marzo.,
+                Nací **en** marzo de mil novecientos noventa y ocho.,
+              ]
+      - id: days-table
+        type: table
+        caption: Un día y varios días
+        header: [Un día, Varios días]
+        rows:
+          - [el lunes, los lunes]
+          - [el martes, los martes]
+          - [el miércoles, los miércoles]
+          - [el jueves, los jueves]
+          - [el viernes, los viernes]
+          - [el sábado, los sábados]
+          - [el domingo, los domingos]
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: Preposiciones básicas
+        rules:
+          - text: '**A** indica dirección, destino u hora.'
+            examples: [Voy **a** la escuela., La clase es **a** las 9.]
+          - text: '**En** indica lugar o medio de transporte.'
+            examples: [Estoy **en** casa., Viajamos **en** tren.]
+          - text: '**De** indica origen o posesión.'
+            examples: [Soy **de** México., El libro es **de** Ana.]
+          - text: '**Con** indica compañía o instrumento.'
+            examples: [Voy **con** mi amiga., Corto la carne **con** un cuchillo.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: nos-reunimos-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-reunion
+        type: aiTutorPrompt
+        title: Programar una reunión
+        message: >-
+          ¡Hola Mori! Quiero programar una reunión. ¿Podrías hacerme algunas preguntas
+          usando las habilidades de fechas y números, días de la semana y preposiciones
+          de tiempo y lugar? Por favor, usa solo presente simple y corrige mis errores.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Pregúntame más, por favor!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Práctica adicional
+      - id: mori-semana
+        type: aiTutorPrompt
+        title: Mi semana
+        intro: Envía este mensaje a Mori. Responde con oraciones completas en presente simple, con acciones, días y preposiciones de tiempo y lugar.
+        message: ¡Hola Mori! Quiero contarte cómo es mi semana. ¿Podrías preguntarme sobre mi rutina diaria?
+      - id: mori-horarios
+        type: aiTutorPrompt
+        title: ¿Cuándo cierra y cuándo abre?
+        intro: Envía este mensaje a Mori.
+        message: |-
+          ¡Hola Mori! Pregúntame sobre diferentes lugares de la ciudad: a qué hora abren, a qué hora cierran y cuándo puedo ir.
+          Lugares: banco, supermercado, cafetería, gimnasio, centro comercial.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: nos-reunimos-practica
+    book: workbook
+    title: 'Práctica: ¿Nos reunimos?'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-dias
+        type: activity
+        activity: nos-reunimos-dias
+      - id: ex-preposiciones
+        type: activity
+        activity: nos-reunimos-preposiciones
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: nos-reunimos-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras para reunirnos
+        glossLang: he
+        link: https://quizlet.com/il/876190603/basic-spanish-lets-meet-flash-cards/
+        items: &nos-reunimos-words
+          - { term: Despertarse, gloss: להתעורר }
+          - { term: Ir, gloss: ללכת }
+          - { term: Estudiar, gloss: ללמוד }
+          - { term: Comer, gloss: לאכול }
+          - { term: Jugar, gloss: לשחק }
+          - { term: Ver, gloss: לראות }
+          - { term: Esperar, gloss: לחכות }
+          - { term: Conocer, gloss: להכיר }
+          - { term: Hacer ejercicio, gloss: להתאמן }
+          - { term: Escuchar, gloss: להקשיב }
+          - { term: Leer, gloss: לקרוא }
+          - { term: Cocinar, gloss: לבשל }
+          - { term: Trabajar, gloss: לעבוד }
+          - { term: Dormir, gloss: לישון }
+          - { term: Limpiar, gloss: לנקות }
+          - { term: Ir de compras, gloss: לעשות קניות }
+          - { term: Mañana, gloss: בוקר }
+          - { term: Mediodía, gloss: צהריים }
+          - { term: Medianoche, gloss: חצות }
+          - { term: Durante, gloss: במהלך }
+          - { term: Fecha, gloss: תאריך }
+          - { term: Día, gloss: יום }
+          - { term: Mes, gloss: חודש }
+          - { term: Cumpleaños, gloss: יום הולדת }
+          - { term: Favorito, gloss: אהוב }
+          - { term: Semana, gloss: שבוע }
+          - { term: Encontrarse con amigos, gloss: להיפגש עם חברים }
+
+vocabulary:
+  - slug: nos-reunimos
+    title: ¿Nos reunimos?
+    items: *nos-reunimos-words
+
+activities:
+  - slug: nos-reunimos-dias
+    title: 'Días de la semana y números'
+    minutes: 8
+    items:
+      - id: el-sabado
+        type: multipleChoice
+        prompt: ___ sábado descanso.
+        options:
+          - { text: El, correct: true }
+          - {
+              text: Los,
+              feedback: '*Sábado* es singular (un solo día): usa *el*. En plural es *los sábados*.',
+            }
+          - { text: En, feedback: 'Antes del día usamos *el*, no *en*.' }
+      - id: los-lunes
+        type: multipleChoice
+        prompt: 'Todas las semanas: ___ lunes voy a la escuela.'
+        options:
+          - { text: Los, correct: true }
+          - {
+              text: El,
+              feedback: '*El lunes* es un solo día. Para todas las semanas usamos *los lunes*.',
+            }
+          - { text: La, feedback: 'Decimos *el lunes* o *los lunes*, nunca *la lunes*.' }
+      - id: plurales
+        type: fillBlank
+        prompt: Escribe el plural.
+        text: El sábado → los ___. El martes → los ___.
+        blanks: [[sábados], [martes]]
+      - id: lunes-plural
+        type: trueFalse
+        prompt: '*Domingo* en plural es *domingos*, pero *lunes* en plural es *lunes*.'
+        answer: true
+        feedback:
+          correct: ¡Correcto! De lunes a viernes el día ya termina en *s*.
+          incorrect: 'De lunes a viernes el plural es igual (*los lunes*). *Sábado* y *domingo* llevan *s*: *los domingos*.'
+      - id: numeros
+        type: matching
+        prompt: Une los números.
+        pairs:
+          - ['2', dos]
+          - ['4', cuatro]
+          - ['6', seis]
+          - ['8', ocho]
+          - ['16', dieciséis]
+      - id: el-en
+        type: fillBlank
+        prompt: Completa con *el* o *en*.
+        text: La reunión es ___ 9 de mayo. Mi cumpleaños es ___ abril.
+        blanks: [[el], [en]]
+        wordBank: [el, en]
+      - id: ordena-cumple
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Mi cumpleaños es el diez de mayo.
+
+  - slug: nos-reunimos-preposiciones
+    title: 'Preposiciones básicas: a, en, de, con'
+    minutes: 8
+    items:
+      - id: voy-a
+        type: multipleChoice
+        prompt: Voy ___ la escuela.
+        options:
+          - { text: a, correct: true }
+          - {
+              text: en,
+              feedback: '*En* es para el lugar donde estás o el transporte. Para la dirección o el destino usamos *a*.',
+            }
+          - { text: con, feedback: '*Con* es para la compañía: *voy con mi amiga*.' }
+      - id: en-tren
+        type: multipleChoice
+        prompt: Viajamos ___ tren.
+        options:
+          - { text: en, correct: true }
+          - {
+              text: a,
+              feedback: 'Para el medio de transporte usamos *en*: *en tren*, *en autobús*.',
+            }
+          - { text: de, feedback: '*De* es para el origen o la posesión: *soy de México*.' }
+      - id: reunion
+        type: multipleChoice
+        prompt: ¿Puedes reunirte el viernes ___ las 15:00 ___ la biblioteca?
+        options:
+          - { text: a / en, correct: true }
+          - {
+              text: en / a,
+              feedback: 'Para la hora usamos *a las*; para el lugar donde estás, *en*.',
+            }
+          - {
+              text: a / de,
+              feedback: '*De* es para el origen o la posesión. Para el lugar usamos *en*.',
+            }
+      - id: de-de
+        type: fillBlank
+        prompt: Completa con una preposición.
+        text: Soy ___ México. El libro es ___ Ana.
+        blanks: [[de], [de]]
+      - id: con
+        type: fillBlank
+        prompt: Completa con una preposición.
+        text: Voy a la cafetería ___ mi amiga.
+        blanks: [[con]]
+      - id: une-usos
+        type: matching
+        prompt: Une cada preposición con su uso.
+        pairs:
+          - [a, 'dirección, destino u hora']
+          - [en, lugar o medio de transporte]
+          - [de, origen o posesión]
+          - [con, compañía o instrumento]
+      - id: a-las
+        type: trueFalse
+        prompt: 'Para decir la hora de algo usamos *a las*: *La clase es a las nueve.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *A* indica la hora.
+          incorrect: 'Sí, usamos *a* para la hora: *La clase es a las nueve.*'
+      - id: ordena-casa
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Estoy en casa con mi hermano
+        alsoAccept: [Estoy con mi hermano en casa]

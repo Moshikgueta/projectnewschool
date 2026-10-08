@@ -1,0 +1,596 @@
+# Cycle "Proyectos y metas", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: proyectos-y-metas
+title: Proyectos y metas
+goal: Hablar de tus metas con verbos en presente, fechas y números.
+position: 15
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Verbos en presente" and "Fechas y números") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Introduction frame: "quiero empezar un nuevo [carrera / romance / amistad /
+    hobby / vida]" mixes masculine and feminine nouns; it is now "Quiero empezar un
+    nuevo / una nueva ___", with the example "Soy Florencia. Quiero empezar un nuevo
+    hobby."
+  - >-
+    Activity 3 card list: the month "Puede" (a mistranslation of English "May") is
+    corrected to "Mayo"; the verb card "Ayuda" → "Ayudar"; the example used "Iniciar"
+    and "inicia" for the card "Comenzar" → "Comenzar" / "comienza"; "Palabras clave
+    del socio" → "Palabras clave de tu compañero". In the example plan, the dates
+    (1, 5, 10, 15, 20) do not all match the number cards received (3, 5, 7, 9, 10)
+    and September is not used; they are kept as in the notebook. Please confirm or
+    align them.
+  - >-
+    Activity 4: the verb "Ejercicio" → "Hacer ejercicio"; in the example dialogue
+    "¿Es estudio?" → "¿Es estudiar?". The example dialogue is shown as a dialogue.
+  - >-
+    Activity 2 goal bank: "tener un nuevo Hobbie" → "tener un nuevo hobby"; stray
+    full stops removed.
+  - >-
+    Summary: the stray words "Usar להשתמש" and "Pagar" (in the middle of the present
+    tense rules) were left out. The last two examples of rule 3 repeated the
+    "Ustedes" lines with "Ellos"; the repeats were removed. "conocer nuevas
+    personas" → "conocer a personas nuevas". The -ar/-er/-ir conjugations are shown
+    as one table (estudiar, vender, vivir) with some of the notebook's sentences.
+  - >-
+    Summary, numbers: the tip "use *y* only between tens and units (31 = treinta y
+    uno)" is true from 31 upwards; a note was added that 16–29 are one word
+    (dieciséis, veintidós). Please confirm.
+  - >-
+    Summary, dates: the example "Escribir 15 de agosto del 99" with "año (en dos
+    cifras)" is rewritten: written dates use the full year (15 de agosto de 1999);
+    in speech people often say "del 99". Please confirm.
+  - >-
+    Mori message: "las habilidades de Acciones en Presente y Fechas y Números" →
+    "Verbos en presente y Fechas y números", to match the cycle's skill names. The
+    message for extra Activity 1 now includes the sentence frames and the list of
+    steps the notebook asked students to complete.
+  - >-
+    The Quizlet link's tracking parameter ("?new") was removed.
+  - >-
+    The Activity 3 cards are a Google Docs link (allowed); students online must make
+    a copy, and in person the teacher prints the cards (teacher note).
+  - >-
+    The vocabulary keeps the notebook's lower-case terms (months and weekdays are
+    written in lower case in Spanish). "ayuda" is a noun (עזרה); the verb card in
+    Activity 3 is "Ayudar".
+  - >-
+    The notebook gives no times and no recommended activity combinations for this
+    cycle; the plan note lists which activities practise each skill.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: proyectos-y-metas-clase
+    title: 'Clase: Proyectos y metas'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Proyectos y metas
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Verbos en presente
+            description: Los verbos en *-ar, -er, -ir* y *quiero / necesito / puedo* + infinitivo
+          - name: Fechas y números
+            description: Los números hasta el cincuenta y las fechas (el 15 de agosto de 1999)
+      - id: quizlet
+        type: externalLink
+        label: Metas y proyectos en Quizlet
+        url: https://quizlet.com/il/994764526/goals-and-projects-basic-spanish-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Quiero empezar un nuevo / una nueva ___ (carrera, romance, amistad, hobby, vida).
+        example: Soy Florencia. Quiero empezar un nuevo hobby.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Tienes una meta? ¿Cuál es?
+            frame: Mi meta es ___ antes de ___ (fecha).
+          - question: ¿Cuántas metas tienes para este mes / este año? ¿Cuáles son?
+            frame: |-
+              Para este año tengo ___ metas. Estas son:
+              1. ___
+              2. ___
+              3. ___
+          - question: ¿Qué haces para llegar a tu objetivo?
+            frame: Yo ___ para llegar a mi objetivo.
+          - question: ¿Cómo te sientes con tu progreso?
+            frame: Me siento ___ con mi progreso.
+          - question: ¿Por qué esta meta es importante para ti?
+            frame: Esta meta es importante para mí porque ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Mi nuevo objetivo'
+        skills: [Fechas y números]
+        steps:
+          - Escribe tu meta y una lista de 10 pasos para lograrla. Cada paso tiene una fecha de inicio.
+          - Comparte tu lista con toda la clase.
+      - id: act1-steps
+        type: discussionQuestions
+        title: Mis 10 pasos
+        items:
+          - question: 'Meta: ___'
+          - question: 'Paso 1: El ___ (fecha), yo ___ durante ___ minutos / horas / días / semanas.'
+          - question: 'Paso 2: El ___ (fecha), yo ___ durante ___ minutos / horas / días / semanas.'
+          - question: 'Paso 3: El ___ (fecha), yo ___ durante ___ minutos / horas / días / semanas.'
+          - question: 'Paso 4: El ___ (fecha), yo ___ durante ___ minutos / horas / días / semanas.'
+          - question: 'Paso 5: El ___ (fecha), yo ___ durante ___ minutos / horas / días / semanas.'
+          - question: 'Paso 6: El ___ (fecha), yo ___ durante ___ minutos / horas / días / semanas.'
+          - question: 'Paso 7: El ___ (fecha), yo ___ durante ___ minutos / horas / días / semanas.'
+          - question: 'Paso 8: El ___ (fecha), yo ___ durante ___ minutos / horas / días / semanas.'
+          - question: 'Paso 9: El ___ (fecha), yo ___ durante ___ minutos / horas / días / semanas.'
+          - question: 'Paso 10: ¡El ___ (fecha) lo logré!'
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: ¡Dos cerebros funcionan mejor que uno!'
+        skills: [Verbos en presente]
+        steps:
+          - Trabajen en parejas.
+          - El estudiante 1 dice cuál es su meta para este año. Puedes elegir una meta del banco.
+          - El estudiante 2 le da al menos 3 consejos para lograr la meta.
+          - Cambien los roles y hagan lo mismo.
+        example: |-
+          **Estudiante 1:** *Mi objetivo es hablar español para mi viaje a Latinoamérica.*
+          **Estudiante 2:** *Puedes ___, ___ y ___.*
+        wordBank:
+          - Hablar español
+          - Obtener mejores calificaciones en la escuela
+          - Hacer nuevos amigos
+          - Ahorrar dinero
+          - Aprender algo nuevo / tener un nuevo hobby
+          - Comer más sano y entrenar
+          - Ser más organizado con mi tiempo
+          - Leer más libros
+      - id: act2-frames
+        type: discussionQuestions
+        items:
+          - question: '¿Cuál es tu meta para este año?'
+            frame: Mi meta para este año es ___.
+          - question: ¿Qué puede hacer tu compañero para lograr su meta?
+            frame: Puedes ___, ___ y ___.
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Las tarjetas de objetivos de mis amigos'
+        skills: [Fechas y números]
+        steps:
+          - Abre las tarjetas. Si la clase es en línea, haz una copia del documento.
+          - 'Recibes 5 tarjetas de verbos (comenzar, trabajar, ayudar, aprender, finalizar), 10 tarjetas de números (del uno al diez) y 12 tarjetas de meses.'
+          - Tu compañero te da 5 palabras clave.
+          - Usa las tarjetas para hacer un plan de metas para tu compañero. Escribe 5 oraciones en tercera persona.
+        example: |-
+          **Verbos:** comenzar, trabajar, aprender, ayudar, finalizar
+          **Números:** 3, 5, 7, 9, 10
+          **Meses:** marzo, abril, junio, septiembre, diciembre
+          **Palabras clave de tu compañero:** inglés, computadora, horas, profesora, certificado
+          1. *Rachel comienza el proyecto el 1 de marzo de 2024.*
+          2. *Rachel trabaja 3 horas todos los días, a partir del 5 de marzo de 2024.*
+          3. *Rachel aprende inglés e informática con su profesora el 10 de abril de 2024.*
+          4. *La profesora ayuda a Rachel a estudiar para obtener un certificado a partir del 15 de junio de 2024.*
+          5. *Rachel finaliza el proyecto el 20 de diciembre de 2024.*
+        resource:
+          label: Tarjetas (Google Docs)
+          url: https://docs.google.com/document/d/1k9Sq6U_c4RA6mjoK_GsIOnUBrZHNJUQDmnpVgyHOf1s/edit?tab=t.0
+      - id: act3-plan
+        type: discussionQuestions
+        title: El plan de metas de mi compañero
+        items:
+          - question: 'Comenzar: ___ comienza ___ el ___ de ___.'
+          - question: 'Trabajar: ___ trabaja ___ a partir del ___ de ___.'
+          - question: 'Aprender: ___ aprende ___ el ___ de ___.'
+          - question: 'Ayudar: ___ ayuda a ___ el ___ de ___.'
+          - question: 'Finalizar: ___ finaliza ___ el ___ de ___.'
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: ¿Haces eso cuando…?'
+        skills: [Verbos en presente]
+        steps:
+          - Un estudiante elige en secreto un verbo de la lista.
+          - Los demás hacen preguntas de sí o no para adivinar el verbo. El estudiante solo responde «Sí» o «No».
+          - 'Cuando creen que saben el verbo, preguntan: *¿Es ___?*'
+          - Si adivinan, termina la ronda y otro estudiante elige un verbo nuevo.
+        wordBank: [estudiar, hacer ejercicio, trabajar, descansar, aprender]
+      - id: act4-example
+        type: dialogue
+        lines:
+          - { speaker: Estudiante 2, text: ¿Haces eso en el trabajo? }
+          - { speaker: Estudiante 1, text: No. }
+          - { speaker: Estudiante 3, text: ¿Haces eso en la escuela? }
+          - { speaker: Estudiante 1, text: Sí. }
+          - { speaker: Estudiante 2, text: ¿Es estudiar? }
+          - { speaker: Estudiante 1, text: ¡Sí! ¡Lo has adivinado! }
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Verbos en presente** (Actividades 2 y 4) y
+          **Fechas y números** (Actividades 1 y 3).
+      - id: n-intro
+        anchor: intro
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act2
+        anchor: act2
+        text: Cada estudiante da al menos 3 consejos con *Puedes* + infinitivo. Después cambian los roles.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Si la clase es en línea, cada estudiante hace una copia del documento de las
+          tarjetas. Si la clase es presencial, imprime las tarjetas. Las oraciones del
+          plan van en tercera persona.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Escribe los 5 verbos en la pizarra (o da la lista a cada grupo). El verbo
+          secreto del ejemplo es «estudiar».
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: proyectos-y-metas-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-present
+        type: ruleSummary
+        skill: Verbos en presente
+        rules:
+          - text: Usamos el presente para hablar de acciones que ocurren ahora, hechos o hábitos. También para hablar de planes o metas.
+            examples:
+              - Yo **estudio** todos los días.
+              - Tú **estudias** para el examen.
+              - Él **estudia** en la biblioteca.
+              - Nosotros **estudiamos** juntos.
+              - Ustedes **estudian** en la universidad.
+          - text: 'Hay tres grupos de verbos según su terminación: **-ar**, **-er**, **-ir**. Cada grupo tiene sus formas (mira la tabla).'
+            examples:
+              - Tú **vendes** tus ideas en el trabajo.
+              - Yo **vivo** cerca de mi trabajo.
+              - Vosotros **estudiáis** mucho para lograr el éxito.
+          - text: 'Después de *quiero*, *necesito* o *puedo*, el verbo va en **infinitivo**: no cambia.'
+            examples:
+              - '**Yo quiero** estudiar para aprender más.'
+              - '**Yo puedo** practicar todos los días para mejorar.'
+              - '**Tú necesitas** organizar tu tiempo mejor.'
+              - '**Ella puede** ayudar con el proyecto.'
+              - '**Nosotros queremos** empezar el curso mañana.'
+              - '**Vosotros queréis** aprender a bailar salsa.'
+              - '**Ustedes quieren** conocer a personas nuevas.'
+              - '**Ellos necesitan** descansar después de la semana de trabajo.'
+      - id: present-table
+        type: table
+        caption: Verbos en presente
+        header: [Persona, estudiar (-ar), vender (-er), vivir (-ir)]
+        rows:
+          - [yo, estudio, vendo, vivo]
+          - [tú, estudias, vendes, vives]
+          - [él / ella / usted, estudia, vende, vive]
+          - [nosotros / nosotras, estudiamos, vendemos, vivimos]
+          - [vosotros / vosotras, estudiáis, vendéis, vivís]
+          - [ellos / ellas / ustedes, estudian, venden, viven]
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Fechas y números
+        rules:
+          - text: 'Divide los números de dos cifras en decenas y unidades, con **y** entre ellas.'
+            examples:
+              - 42 → cuarenta y dos
+              - 31 → treinta y uno
+              - Del 16 al 29 se escribe una sola palabra (dieciséis, veintidós).
+          - text: Aprende las decenas y combínalas con las unidades.
+            examples:
+              - 20 = veinte · 30 = treinta · 40 = cuarenta · 50 = cincuenta
+              - 57 → cincuenta y siete
+          - text: 'Escribe las fechas así: **día + de + mes + de + año**. Aprende los meses y practica decir la fecha de tu cumpleaños.'
+            examples:
+              - 15 de agosto de 1999
+              - Al hablar, a veces decimos el año con dos cifras («el 15 de agosto del 99»).
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: proyectos-y-metas-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-meta
+        type: aiTutorPrompt
+        title: Mi nueva meta
+        message: >-
+          ¡Hola Mori! Tengo una nueva meta. ¿Puedes hacerme preguntas sobre mi meta
+          usando las habilidades de Verbos en presente y Fechas y números? Usa solo el
+          presente simple y, por favor, corrige mis errores.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Hazme más preguntas, por favor!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Práctica adicional
+      - id: mori-detalles
+        type: aiTutorPrompt
+        title: Contarle a Mori sobre mi meta
+        intro: Completa los espacios y envía el mensaje a Mori.
+        message: |-
+          ¡Hola Mori! Te cuento detalles sobre mi meta y tú me haces preguntas sobre ella.
+          Mi meta es ___.
+          Quiero empezar el ___ (fecha).
+          Para lograr mi meta, yo ___.
+          Esta meta es importante para mí porque ___.
+          Mis pasos:
+          1. ___
+          2. ___
+          3. ___
+          4. ___
+          5. ___
+          6. ___
+          7. ___
+          8. ___
+          9. ___
+          10. ¡Lo logré!
+      - id: mori-adivina
+        type: aiTutorPrompt
+        title: ¡Adivina la meta!
+        intro: Envía este mensaje a Mori. Mori te hará preguntas y tratará de adivinar tu meta.
+        message: >-
+          ¡Hola Mori! Quiero jugar a un juego. Te doy pistas sobre mi meta y tú adivinas
+          cuál es. Hazme preguntas usando acciones, fechas y números en presente simple.
+          Corrige mis errores, por favor.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: proyectos-y-metas-practica
+    book: workbook
+    title: 'Práctica: Proyectos y metas'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-verbos
+        type: activity
+        activity: proyectos-y-metas-verbos
+      - id: ex-fechas
+        type: activity
+        activity: proyectos-y-metas-fechas
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: proyectos-y-metas-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de metas y proyectos
+        glossLang: he
+        link: https://quizlet.com/il/994764526/goals-and-projects-basic-spanish-flash-cards/
+        items: &proyectos-words
+          - { term: meta, gloss: מטרה }
+          - { term: empezar, gloss: להתחיל }
+          - { term: planear, gloss: לתכנן }
+          - { term: trabajar, gloss: לעבוד }
+          - { term: ayuda, gloss: עזרה }
+          - { term: tiempo, gloss: זמן }
+          - { term: semana, gloss: שבוע }
+          - { term: día, gloss: יום }
+          - { term: mes, gloss: חודש }
+          - { term: terminar, gloss: לסיים }
+          - { term: estudiar, gloss: ללמוד }
+          - { term: practicar, gloss: לתרגל }
+          - { term: hablar, gloss: לדבר }
+          - { term: importante, gloss: חשוב }
+          - { term: progreso, gloss: התקדמות }
+          - { term: idea, gloss: רעיון }
+          - { term: enero, gloss: ינואר }
+          - { term: febrero, gloss: פברואר }
+          - { term: marzo, gloss: מרץ }
+          - { term: abril, gloss: אפריל }
+          - { term: mayo, gloss: מאי }
+          - { term: junio, gloss: יוני }
+          - { term: julio, gloss: יולי }
+          - { term: agosto, gloss: אוגוסט }
+          - { term: septiembre, gloss: ספטמבר }
+          - { term: octubre, gloss: אוקטובר }
+          - { term: noviembre, gloss: נובמבר }
+          - { term: diciembre, gloss: דצמבר }
+          - { term: lunes, gloss: יום שני }
+          - { term: martes, gloss: יום שלישי }
+          - { term: miércoles, gloss: יום רביעי }
+          - { term: jueves, gloss: יום חמישי }
+          - { term: viernes, gloss: יום שישי }
+          - { term: sábado, gloss: שבת }
+          - { term: domingo, gloss: יום ראשון }
+          - { term: uno, gloss: אחד }
+          - { term: dos, gloss: שתיים }
+          - { term: tres, gloss: שלוש }
+          - { term: cuatro, gloss: ארבע }
+          - { term: cinco, gloss: חמש }
+          - { term: seis, gloss: שש }
+          - { term: siete, gloss: שבע }
+          - { term: ocho, gloss: שמונה }
+          - { term: nueve, gloss: תשע }
+          - { term: diez, gloss: עשר }
+
+vocabulary:
+  - slug: proyectos-y-metas
+    title: Proyectos y metas
+    items: *proyectos-words
+
+activities:
+  - slug: proyectos-y-metas-verbos
+    title: Verbos en presente
+    minutes: 8
+    items:
+      - id: nosotros-estudiamos
+        type: multipleChoice
+        prompt: Nosotros ___ juntos para el examen.
+        options:
+          - { text: estudiamos, correct: true }
+          - {
+              text: estudian,
+              feedback: '*Estudian* es para *ellos* o *ustedes*. Con *nosotros*, el verbo termina en *-amos*: *estudiamos*.',
+            }
+          - {
+              text: estudio,
+              feedback: '*Estudio* es para *yo*. Con *nosotros*, el verbo termina en *-amos*: *estudiamos*.',
+            }
+      - id: completa-presente
+        type: fillBlank
+        prompt: Escribe el verbo en presente.
+        text: Yo ___ (vivir) cerca de mi trabajo. Tú ___ (vender) tus ideas en el trabajo. Ellos ___ (estudiar) para progresar.
+        blanks: [[vivo], [vendes], [estudian]]
+      - id: une-vivir
+        type: matching
+        prompt: Une cada persona con la forma de *vivir*.
+        pairs:
+          - [yo, vivo]
+          - [tú, vives]
+          - [él / ella, vive]
+          - [nosotros, vivimos]
+          - [vosotros, vivís]
+      - id: necesitas-organizar
+        type: multipleChoice
+        prompt: Tú necesitas ___ tu tiempo mejor.
+        options:
+          - { text: organizar, correct: true }
+          - {
+              text: organizas,
+              feedback: 'Después de *necesitas*, el verbo va en infinitivo: *necesitas organizar*.',
+            }
+          - {
+              text: organizo,
+              feedback: 'Después de *necesitas*, el verbo va en infinitivo: *necesitas organizar*.',
+            }
+      - id: quiero-infinitivo
+        type: trueFalse
+        prompt: 'En la oración *Yo quiero estudiar*, el verbo *estudiar* está en infinitivo.'
+        answer: true
+        feedback:
+          correct: ¡Correcto! Después de *quiero*, el verbo no cambia.
+          incorrect: 'Después de *quiero*, *necesito* o *puedo*, el verbo va en infinitivo: *estudiar*.'
+      - id: oraciones-correctas
+        type: multipleChoice
+        prompt: ¿Qué oraciones son correctas? Elige dos.
+        options:
+          - { text: Yo quiero viajar este verano., correct: true }
+          - { text: Nosotros queremos empezar el curso mañana., correct: true }
+          - {
+              text: Yo puedo practico todos los días.,
+              feedback: 'Después de *puedo*, usa el infinitivo: *Yo puedo practicar todos los días.*',
+            }
+          - {
+              text: Él quiere termina su trabajo.,
+              feedback: 'Después de *quiere*, usa el infinitivo: *Él quiere terminar su trabajo.*',
+            }
+      - id: necesitan-descansar
+        type: fillBlank
+        prompt: Escribe el verbo *necesitar* en presente.
+        text: Ustedes ___ descansar después de la semana de trabajo.
+        blanks: [[necesitan]]
+      - id: ordena-ayudar
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Ella puede ayudar con el proyecto.
+
+  - slug: proyectos-y-metas-fechas
+    title: Fechas y números
+    minutes: 8
+    items:
+      - id: decenas
+        type: matching
+        prompt: Une los números.
+        pairs:
+          - ['20', veinte]
+          - ['30', treinta]
+          - ['40', cuarenta]
+          - ['50', cincuenta]
+          - ['57', cincuenta y siete]
+      - id: cuarenta-y-dos
+        type: multipleChoice
+        prompt: ¿Cómo se dice 42?
+        options:
+          - { text: cuarenta y dos, correct: true }
+          - { text: cuatro y dos, feedback: '42 = 40 + 2. *Cuarenta* es 40: *cuarenta y dos*.' }
+          - {
+              text: cuarenta dos,
+              feedback: 'Usa *y* entre las decenas y las unidades: *cuarenta y dos*.',
+            }
+      - id: escribe-numeros
+        type: fillBlank
+        prompt: Escribe los números en palabras.
+        text: 35 = ___. 48 = ___.
+        blanks: [[treinta y cinco], [cuarenta y ocho]]
+      - id: formato-fecha
+        type: trueFalse
+        prompt: 'En español escribimos la fecha así: día + de + mes + de + año (*15 de agosto de 1999*).'
+        answer: true
+        feedback:
+          correct: ¡Correcto! Primero el día, después el mes y el año.
+          incorrect: 'Primero el día, después el mes y el año: *15 de agosto de 1999*.'
+      - id: fecha-correcta
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: Rachel comienza el proyecto el 1 de marzo., correct: true }
+          - {
+              text: Rachel comienza el proyecto el marzo 1.,
+              feedback: 'Primero el día, después el mes: *el 1 de marzo*.',
+            }
+          - {
+              text: Rachel comienza el proyecto el 1 marzo.,
+              feedback: 'Entre el día y el mes va *de*: *el 1 de marzo*.',
+            }
+      - id: meses
+        type: matching
+        prompt: Une cada mes con su número.
+        pairs:
+          - [enero, '1']
+          - [mayo, '5']
+          - [agosto, '8']
+          - [octubre, '10']
+          - [diciembre, '12']
+      - id: trabaja-horas
+        type: fillBlank
+        prompt: Escribe los números en palabras.
+        text: Rachel trabaja ___ (3) horas todos los días, a partir del ___ (5) de marzo.
+        blanks: [[tres], [cinco]]
+      - id: ordena-fecha
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Rachel finaliza el proyecto el 20 de diciembre.

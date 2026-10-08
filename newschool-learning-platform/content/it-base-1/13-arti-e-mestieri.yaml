@@ -1,0 +1,619 @@
+# Cycle "Arti e mestieri", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: arti-e-mestieri
+title: Arti e mestieri
+goal: Descrivere opere d'arte e oggetti con frasi descrittive e parlare di attività creative con azioni al presente.
+position: 13
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Frasi descrittive" and "Azioni al presente") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The notebook gives no times for this cycle, except Activity 1's stages (1 minute
+    to draw, 2 minutes to explain), kept in the teacher note. No other times are
+    recorded (the introduction note keeps the usual 10 minutes).
+  - >-
+    Introduction: "Colpo di scena: Mi piace ___ e sono bravo/pessimo in questo" ("colpo
+    di scena" means plot twist) is written as the frame "Sono ___. Mi piace ___ e sono
+    bravo / brava. / Mi piace ___ ma non sono bravo / brava."
+  - >-
+    Warm-up corrections: "Mi piace ___ con le mie mani.}" → "Mi piace ___ con le mani."
+    (stray brace; Italian uses the article with body parts); the shape frame is "Questo
+    è un ___. / Questa è una ___." (*una linea*); the colour examples "Questo è blu…"
+    → "È blu…"; "Sì, ho quadri in ___ / No, non ho." → "Sì, ho dei quadri in ___. /
+    No, non ne ho."; the art frame "Mi piace ___ perché" → "Sì, mi piace / No, non mi
+    piace l'arte perché ___". The shape and colour pictures did not survive the export:
+    the teacher shows objects (see the teacher note).
+  - >-
+    Activity 1: "Disegna un cerchio dentro al quadrato" → "dentro il quadrato" (also
+    in the summary); the model "Disegna un ___ in alto/in basso/al centro della
+    pagina" → "Disegna un / una ___ in alto / in basso / al centro." The activity is
+    marked AZIONI but its instructions are imperatives (*Disegna…*); a frame where
+    student B says what he or she does (*Disegno un quadrato…*) was added. Please
+    confirm.
+  - >-
+    Activity 2 is called "La stanza disordinata", but it is a guessing game about art
+    objects. The title is kept; please confirm or rename it. The question "Lo senti?"
+    (ambiguous: hear / feel) → "Fa un suono?". "Cavalletto" (easel) from its list was
+    added to the vocabulary (כן ציור).
+  - >-
+    Activity 3: the notebook says "un banco di 10 aggettivi" but lists 9; the list is
+    kept and the step says "banco di aggettivi". Both image banks (Activities 3 and 4)
+    are Google Docs links and are kept as the activities' resources (the "?tab=t.0"
+    and "/u/0" parts were removed).
+  - >-
+    Activity 4: the plenary frame "Ci piace la foto che/con ___" → "Ci piace la foto
+    in cui / con ___".
+  - >-
+    Activity 5 (not in the skills plan of the notebook) is kept as an extra activity.
+    "Ti piace dipingere? Cosa ti piace?" → "Cosa ti piace dipingere?"; "A Pedro piace
+    il blu per dipingere" → "A Pietro piace dipingere con il blu" (Spanish name and
+    awkward wording).
+  - >-
+    Summary: the six points are kept. Points 1 and 2 are the cycle's two skills; for
+    point 1 the rule that the adjective agrees with the noun (*bellissimo /
+    bellissima / luminosi*) was added, and for point 2 a table of regular verbs
+    (disegnare, dipingere). Points 3–6 are grouped under "Altre strutture della
+    lezione". "Ho quadri in casa" → "Ho dei quadri in casa".
+  - >-
+    Mori: "usando le competenze per descrivere frasi e azioni al presente semplice" →
+    "usando frasi descrittive e frasi con azioni al presente"; the tip "con la frase
+    in inglese" → "in italiano"; the clue "Taglio della carta colorata" (a noun
+    phrase) → "Taglio la carta colorata"; a garbled emoji (ð) was removed; the title
+    "Indovina il mestiere" → "Indovina il progetto" (Mori guesses a project, not a
+    trade). The notebook announces "2 attività interattive" but has only one.
+  - >-
+    Vocabulary glosses changed: "Dipingere" לצבוע → לצייר (בצבעים) / לצבוע;
+    "Divertente" מצחיק → מהנה / מצחיק; "Scarpette da ballo" נעלי בלט → נעלי ריקוד /
+    נעלי בלט. Please confirm.
+  - >-
+    The "Risposta dello studente 1/2/3" and "Studente 1/2/3: ___" lines are replaced by
+    the optional answer boxes: students may type, and the teacher sees the group's
+    answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: arti-e-mestieri-classe
+    title: 'Classe: Arti e mestieri'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Arti e mestieri
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Frasi descrittive
+            description: 'Essere + aggettivo: *Il quadro è bellissimo. I colori sono luminosi.*'
+          - name: Azioni al presente
+            description: 'Cosa facciamo: *Io dipingo un quadro. Tu disegni una linea.*'
+      - id: quizlet
+        type: externalLink
+        label: Arti e mestieri su Quizlet
+        url: https://quizlet.com/br/1068069332/arti-e-mestieri-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Turno introduttivo
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Mi piace ___ e sono bravo / brava. / Mi piace ___ ma non sono bravo / brava.
+        example: Sono Dana. Mi piace cantare e sono brava.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Cosa ti piace fare con le mani?
+            frame: Mi piace ___ con le mani.
+          - question: Qual è la forma di questo oggetto?
+            frame: Questo è un ___. / Questa è una ___. (*un rettangolo, un cerchio, un quadrato, un triangolo, una linea*)
+          - question: Di che colore è questo oggetto?
+            frame: È ___. (*È verde. È rosso. È blu, giallo, bianco e nero.*)
+          - question: Hai dei quadri in casa? Dove?
+            frame: Sì, ho dei quadri in ___. / No, non ne ho.
+          - question: Ti piace l'arte? Perché?
+            frame: Sì, mi piace / No, non mi piace l'arte perché ___.
+          - question: Quale tipo di arte ti piace di più (pittura, musica, scultura o danza)?
+            frame: Mi piace di più la ___ perché ___.
+          - question: Chi è il tuo artista preferito? Perché?
+            frame: Il mio artista preferito è ___ perché ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Disegna la mia immagine!'
+        skills: [Azioni al presente]
+        steps:
+          - Ripassa le parole della lista con l'insegnante.
+          - Lavorate in coppia. Lo studente A disegna un'immagine semplice (1 minuto).
+          - Poi spiega allo studente B come copiarla (2 minuti). Lo studente B dice cosa fa.
+          - Confrontate i disegni. Vince la coppia con i disegni più simili.
+          - Cambiate i ruoli e ripetete.
+        example: |-
+          A: *Disegna un quadrato in fondo alla pagina.*
+          B: *Disegno un quadrato in fondo alla pagina.*
+          A: *Disegna un triangolo sopra il quadrato.*
+          A: *Disegna un cerchio dentro il quadrato.*
+        wordBank:
+          - linea
+          - quadrato
+          - cerchio
+          - triangolo
+          - su
+          - giù
+          - sopra
+          - sotto
+          - sinistra
+          - destra
+          - dentro
+      - id: act1-frames
+        type: discussionQuestions
+        title: Frasi modello per dare istruzioni
+        answerable: false
+        items:
+          - question: Disegna un / una ___ in alto / in basso / al centro.
+          - question: Disegna un / una ___ a sinistra / a destra del ___.
+          - question: Disegna un / una ___ all'interno del ___.
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: La stanza disordinata'
+        skills: [Frasi descrittive]
+        steps:
+          - Guarda le immagini degli oggetti dell'arte e ripassa le parole con l'insegnante.
+          - Scegli **in segreto** un oggetto della lista (o prendi una carta dall'insegnante).
+          - Gli altri fanno domande; tu rispondi solo **sì** o **no**.
+          - Chi indovina l'oggetto sceglie il prossimo.
+        example: |-
+          *È grande? È piccolo? È pesante? È moderno? È luminoso?*
+          *Lo usi per dipingere / disegnare? Fa un suono?*
+        wordBank:
+          - pennello
+          - tela
+          - chitarra
+          - microfono
+          - matita
+          - cavalletto
+          - statua
+          - quaderno
+          - macchina fotografica
+          - tamburo
+          - pianoforte
+          - maschera
+          - scarpette da ballo
+      - id: act2-adjectives
+        type: discussionQuestions
+        title: Aggettivi utili
+        answerable: false
+        items:
+          - question: grande · piccolo · lungo · colorato · vecchio · nuovo · pesante · luminoso
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Descrivi le immagini con un amico'
+        skills: [Frasi descrittive]
+        steps:
+          - Lavorate in coppia. Ogni coppia riceve 6 dipinti famosi e un banco di aggettivi.
+          - Insieme scegliete almeno un aggettivo per ogni dipinto (potete usare lo stesso aggettivo più di una volta).
+          - Scrivete o dite una frase completa e spiegate **perché** avete scelto quell'aggettivo.
+        wordBank:
+          - bellissimo
+          - interessante
+          - semplice
+          - moderno
+          - vecchio
+          - grande
+          - piccolo
+          - buio
+          - luminoso
+        resource:
+          label: Banca immagini (dipinti)
+          url: https://docs.google.com/document/d/1h7Ed4JkQXAAB4xyA79eT4xcNApD99Al6mEhBb-VyC6w/edit
+      - id: act3-frames
+        type: discussionQuestions
+        title: Frasi da completare
+        items:
+          - question: L'immagine numero ___ è ___ perché ___.
+          - question: Il / La ___ nell'immagine è ___ perché ___.
+          - question: I / Le ___ nell'immagine sono ___ perché ___.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Mi piace quella in cui…'
+        skills: [Azioni al presente]
+        steps:
+          - Lavorate in coppia. Ogni coppia riceve 4–6 immagini.
+          - Uno studente sceglie un'immagine e dice se gli piace o non gli piace, e perché. Di' cosa fanno le persone nella foto.
+          - L'altro studente fa la stessa cosa con la stessa immagine o con un'altra. Continuate finché avete parlato di tutte le immagini.
+          - Alla fine ogni coppia sceglie una o due frasi da condividere con la classe.
+        resource:
+          label: Banca immagini (foto)
+          url: https://docs.google.com/document/d/1_rQhfxzTPC2Eq5nNxDtSR1fI1x5iTrNf9ZSKE4xXAcI/edit
+      - id: act4-frames
+        type: discussionQuestions
+        title: Frasi modello
+        items:
+          - question: Mi piace la foto in cui ___ perché ___.
+          - question: Non mi piace la foto in cui ___ perché ___.
+          - question: Ci piace la foto in cui / con ___ perché ___.
+          - question: Non ci piace la foto in cui / con ___ perché ___.
+      - id: act5
+        type: classActivity
+        title: 'Attività 5: Parliamo di arte'
+        skills: [Azioni al presente]
+        steps:
+          - Lavorate in coppia. Lo studente A fa le domande; lo studente B risponde con le frasi modello.
+          - Poi vi scambiate i ruoli.
+          - Ogni coppia condivide con il gruppo una cosa interessante sul compagno.
+        example: |-
+          *A Pietro piace dipingere con il blu.*
+          *Maria preferisce disegnare animali.*
+      - id: act5-questions
+        type: discussionQuestions
+        items:
+          - question: Ti piace dipingere? Cosa ti piace dipingere?
+            frame: Sì, mi piace dipingere ___.
+          - question: Preferisci disegnare o dipingere? Perché?
+            frame: Preferisco ___ perché ___.
+          - question: Quali colori ti piace usare per la tua arte?
+            frame: Mi piace il colore ___.
+          - question: Preferisci visitare i musei o andare ai concerti? Perché?
+            frame: Preferisco ___ perché ___.
+          - question: Chi è il tuo artista preferito? Perché?
+            frame: Il mio artista preferito è ___ perché ___.
+          - question: Quale arte non ti piace? Perché?
+            frame: Non mi piace ___ perché ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Frasi descrittive** (domande, Attività 2 e 3) e
+          **Azioni al presente** (domande, Attività 1 e 4). L'Attività 5 (mi piace /
+          preferisco / non mi piace) è un'attività in più, se c'è tempo.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Dai prima il tuo esempio ("Mi piace cantare e sono bravo / brava") e poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Fai almeno due domande a ogni studente. Per le domande sulla forma e sul colore
+          mostra degli oggetti o delle immagini (le immagini del quaderno non sono
+          nell'esportazione): un rettangolo, un cerchio, una linea, un quadrato, un
+          triangolo; oggetti verdi, rossi e di più colori.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Ripassa prima il vocabolario: linea, quadrato, cerchio, triangolo, su, giù,
+          sopra, sotto, sinistra, destra, dentro. Lo studente A ha 1 minuto per disegnare
+          e 2 minuti per spiegare. Chiedi allo studente B di ripetere al presente quello
+          che fa (*Disegno un cerchio…*).
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Mostra immagini o carte con oggetti dell'arte e scrivi alla lavagna gli
+          aggettivi utili. Ricorda che l'aggettivo cambia con l'oggetto: *È piccolo?*
+          (il pennello), *È piccola?* (la chitarra).
+      - id: n-act3
+        anchor: act3
+        text: Condividi la banca immagini con le coppie. Ogni coppia sceglie almeno un aggettivo per dipinto e dice perché.
+      - id: n-act4
+        anchor: act4
+        text: Condividi la banca immagini. Alla fine ogni coppia condivide una o due frasi con la classe.
+      - id: n-act5
+        anchor: act5
+        text: Scrivi le domande alla lavagna (o distribuiscile su cartoncini). Obiettivo - praticare *mi piace / preferisco / non mi piace*.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: arti-e-mestieri-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Oggi abbiamo imparato
+      - id: rules-descriptive
+        type: ruleSummary
+        skill: Frasi descrittive
+        rules:
+          - text: "Per descrivere forme, colori, oggetti, persone e opere d'arte: **soggetto + essere + aggettivo**."
+            examples: [Il quadro è bellissimo., L'immagine è interessante., I colori sono luminosi.]
+          - text: 'Con una cosa si usa **è**, con più cose si usa **sono**.'
+            examples: [La foto è scura., Le statue sono vecchie.]
+          - text: L'aggettivo cambia con la cosa (maschile o femminile, singolare o plurale).
+            examples:
+              - il quadro è bellissimo · la foto è bellissima
+              - i colori sono luminosi · le statue sono luminose
+          - text: Gli aggettivi in *-e* sono uguali al maschile e al femminile.
+            examples: [Il quadro è grande. La casa è grande., L'immagine è interessante.]
+          - text: 'Negativo: **non** prima di *è / sono*.'
+            examples: [Il quadro non è moderno.]
+      - id: rules-actions
+        type: ruleSummary
+        skill: Azioni al presente
+        rules:
+          - text: 'Per parlare di cosa facciamo con le mani e delle attività artistiche: **soggetto + verbo al presente**.'
+            examples: [Io dipingo un quadro., Tu disegni una linea., Loro cantano una canzone.]
+          - text: Il verbo cambia secondo la persona; *io, tu…* si possono togliere.
+            examples: [Dipingo con i pennelli. (= Io dipingo con i pennelli.)]
+      - id: present-table
+        type: table
+        caption: Verbi regolari al presente
+        header: [Persona, '-are: disegnare', '-ere: dipingere']
+        rows:
+          - [io, disegno, dipingo]
+          - [tu, disegni, dipingi]
+          - [lui / lei, disegna, dipinge]
+          - [noi, disegniamo, dipingiamo]
+          - [voi, disegnate, dipingete]
+          - [loro, disegnano, dipingono]
+      - id: rules-more
+        type: ruleSummary
+        skill: Altre strutture della lezione
+        rules:
+          - text: '*Mi piace / Non mi piace / Preferisco* per i gusti.'
+            examples:
+              [
+                Mi piace dipingere con le mani.,
+                Non mi piace la scultura.,
+                Preferisco disegnare animali.,
+              ]
+          - text: '*Perché* per dare una ragione.'
+            examples: [Mi piace la pittura perché è colorata., Non mi piace la foto perché è scura.]
+          - text: "*Avere* e *c'è / ci sono* per gli oggetti in casa o al museo."
+            examples: [Ho dei quadri in casa., Nel museo ci sono grandi sculture.]
+          - text: Espressioni di luogo per dare istruzioni per disegnare (Attività 1).
+            examples: [Disegna un cerchio in alto nella pagina., Il triangolo è dentro il quadrato.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: arti-e-mestieri-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia questo messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-arte
+        type: aiTutorPrompt
+        title: Arti e mestieri
+        message: >-
+          Ciao Mori! Vorrei chiacchierare un po'. Potresti farmi delle domande creative
+          usando frasi descrittive e frasi con azioni al presente? Per favore, correggi i
+          miei errori.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi continuare? Scrivi: **Per favore, chiedimi di più!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Esercizio aggiuntivo
+      - id: mori-indovina
+        type: aiTutorPrompt
+        title: Indovina il progetto
+        intro: Invia questo messaggio a Mori.
+        message: >-
+          Ciao, Mori! Facciamo un gioco. Io penso a un progetto artistico o artigianale e
+          tu devi indovinare di cosa si tratta.
+      - id: mori-indovina-next
+        type: text
+        text: |-
+          Dai indizi a Mori con azioni al presente e descrizioni. **Esempio:** *Taglio la carta colorata.* · *Dipingo con i pennelli.* · *Uso la colla per unire i pezzi.*
+          Quando Mori indovina, scrivi: «Adesso tocca a te! Pensa a un progetto artistico o artigianale e io indovinerò di cosa si tratta.»
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: arti-e-mestieri-pratica
+    book: workbook
+    title: 'Pratica: Arti e mestieri'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati con le due abilità del ciclo. Ogni risposta si corregge subito, e puoi riprovare.
+      - id: ex-descrittive
+        type: activity
+        activity: arti-e-mestieri-descrittive
+      - id: ex-azioni
+        type: activity
+        activity: arti-e-mestieri-azioni
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: arti-e-mestieri-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Parole di arti e mestieri
+        glossLang: he
+        link: https://quizlet.com/br/1068069332/arti-e-mestieri-flash-cards/
+        items: &arti-e-mestieri-words
+          - { term: Linea, gloss: קו }
+          - { term: Quadrato, gloss: ריבוע }
+          - { term: Cerchio, gloss: עיגול }
+          - { term: Triangolo, gloss: משולש }
+          - { term: Colore, gloss: צבע }
+          - { term: Disegno, gloss: ציור }
+          - { term: Pennello, gloss: מברשת }
+          - { term: Matita, gloss: עיפרון }
+          - { term: Tela, gloss: קנבס }
+          - { term: Cavalletto, gloss: כן ציור }
+          - { term: Chitarra, gloss: גיטרה }
+          - { term: Microfono, gloss: מיקרופון }
+          - { term: Macchina fotografica, gloss: מצלמה }
+          - { term: Tamburo, gloss: תוף }
+          - { term: Pianoforte, gloss: פסנתר }
+          - { term: Statua, gloss: פסל }
+          - { term: Quaderno, gloss: מחברת }
+          - { term: Maschera, gloss: מסכה }
+          - { term: Scarpette da ballo, gloss: נעלי ריקוד / נעלי בלט }
+          - { term: Blu, gloss: כחול }
+          - { term: Rosso, gloss: אדום }
+          - { term: Giallo, gloss: צהוב }
+          - { term: Verde, gloss: ירוק }
+          - { term: Bianco, gloss: לבן }
+          - { term: Nero, gloss: שחור }
+          - { term: Luminoso, gloss: מואר }
+          - { term: Buio, gloss: חשוך }
+          - { term: Grande, gloss: גדול }
+          - { term: Piccolo, gloss: קטן }
+          - { term: Vecchio, gloss: ישן }
+          - { term: Nuovo, gloss: חדש }
+          - { term: Colorato, gloss: צבעוני }
+          - { term: Bellissimo, gloss: יפהפה }
+          - { term: Interessante, gloss: מעניין }
+          - { term: Divertente, gloss: מהנה / מצחיק }
+          - { term: Importante, gloss: חשוב }
+          - { term: Cantare, gloss: לשיר }
+          - { term: Ballare, gloss: לרקוד }
+          - { term: Disegnare, gloss: לצייר }
+          - { term: Dipingere, gloss: לצייר (בצבעים) / לצבוע }
+
+vocabulary:
+  - slug: arti-e-mestieri
+    title: Arti e mestieri
+    items: *arti-e-mestieri-words
+
+activities:
+  - slug: arti-e-mestieri-descrittive
+    title: 'Frasi descrittive: essere + aggettivo'
+    minutes: 8
+    items:
+      - id: quadro-e
+        type: multipleChoice
+        prompt: Il quadro ___ bellissimo.
+        options:
+          - { text: è, correct: true }
+          - { text: sono, feedback: '*Il quadro* è una cosa sola: usa *è*.' }
+          - { text: ha, feedback: 'Per descrivere usiamo *essere*: *Il quadro è bellissimo.*' }
+      - id: colori-luminosi
+        type: multipleChoice
+        prompt: I colori sono ___.
+        options:
+          - { text: luminosi, correct: true }
+          - {
+              text: luminoso,
+              feedback: "*I colori* sono plurali: l'aggettivo è plurale, *luminosi*.",
+            }
+          - { text: luminose, feedback: '*Colori* è maschile: usa *luminosi*.' }
+      - id: non-moderno
+        type: multipleChoice
+        prompt: Quale frase è corretta?
+        options:
+          - { text: Il quadro non è moderno., correct: true }
+          - { text: Il quadro è non moderno., feedback: '*Non* va prima di *è*: *non è moderno*.' }
+          - { text: Il quadro no è moderno., feedback: 'Prima del verbo si usa *non*: *non è*.' }
+      - id: e-sono
+        type: fillBlank
+        prompt: Completa con *è* o *sono*.
+        text: La foto ___ scura. Le statue ___ grandi.
+        blanks: [[è], [sono]]
+        wordBank: [è, sono]
+      - id: nuova-piccoli
+        type: fillBlank
+        prompt: Completa con l'aggettivo nella forma giusta.
+        text: La chitarra è ___ (nuovo). I quaderni sono ___ (piccolo).
+        blanks: [[nuova], [piccoli]]
+      - id: aggettivi-e
+        type: trueFalse
+        prompt: 'Gli aggettivi in *-e* sono uguali al maschile e al femminile: *il quadro è grande*, *la casa è grande*.'
+        answer: true
+        feedback:
+          correct: Giusto! Anche *interessante* non cambia.
+          incorrect: '*Grande* e *interessante* non cambiano: *il quadro è grande*, *la casa è grande*.'
+      - id: aggettivi-ebraico
+        type: matching
+        prompt: Unisci ogni aggettivo alla traduzione.
+        pairs:
+          - [luminoso, מואר]
+          - [buio, חשוך]
+          - [vecchio, ישן]
+          - [nuovo, חדש]
+          - [colorato, צבעוני]
+      - id: ordina-immagine
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: L'immagine è molto interessante.
+
+  - slug: arti-e-mestieri-azioni
+    title: 'Azioni al presente: cosa fai?'
+    minutes: 8
+    items:
+      - id: io-dipingo
+        type: multipleChoice
+        prompt: Io ___ un quadro. (dipingere)
+        options:
+          - { text: dipingo, correct: true }
+          - { text: dipingi, feedback: '*Dipingi* è per *tu*. Con *io* usa *dipingo*.' }
+          - { text: dipinge, feedback: '*Dipinge* è per *lui / lei*. Con *io* usa *dipingo*.' }
+      - id: loro-cantano
+        type: multipleChoice
+        prompt: Loro ___ una canzone.
+        options:
+          - { text: cantano, correct: true }
+          - { text: canta, feedback: '*Canta* è per *lui / lei*. Con *loro* usa *cantano*.' }
+          - { text: cantiamo, feedback: '*Cantiamo* è per *noi*. Con *loro* usa *cantano*.' }
+      - id: taglio
+        type: multipleChoice
+        prompt: Quale frase è corretta?
+        options:
+          - { text: Taglio la carta colorata., correct: true }
+          - {
+              text: Io sono taglio la carta colorata.,
+              feedback: 'Non si mette *sono* prima di un altro verbo: *Taglio la carta.*',
+            }
+          - {
+              text: Io taglia la carta colorata.,
+              feedback: '*Taglia* è per *lui / lei*. Con *io* usa *taglio*.',
+            }
+      - id: tu-disegni
+        type: fillBlank
+        prompt: Completa con il verbo al presente.
+        text: Tu ___ (disegnare) una linea.
+        blanks: [[disegni]]
+      - id: usiamo-dipinge
+        type: fillBlank
+        prompt: Completa con il verbo al presente.
+        text: Noi ___ (usare) la colla. Lei ___ (dipingere) con i pennelli.
+        blanks: [[usiamo], [dipinge]]
+      - id: senza-sono
+        type: trueFalse
+        prompt: "Per un'azione al presente basta il verbo: *Io dipingo*, non *Io sono dipingo*."
+        answer: true
+        feedback:
+          correct: Giusto! Il verbo da solo dice l'azione.
+          incorrect: 'Non si usa *sono* prima di un altro verbo: *Io dipingo*.'
+      - id: disegnare
+        type: matching
+        prompt: Unisci ogni persona al verbo *disegnare*.
+        pairs:
+          - [io, disegno]
+          - [tu, disegni]
+          - [lui / lei, disegna]
+          - [noi, disegniamo]
+          - [loro, disegnano]
+      - id: ordina-pennelli
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Dipingo con i pennelli.

@@ -1,0 +1,554 @@
+# Cycle "Famiglia", converted from the Italian base digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: famiglia
+title: Famiglia
+goal: Parlare della propria famiglia con i possessivi, le date e i numeri.
+position: 2
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Possessivi" and "Date e numeri") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary, dates rule 3: "Sono nato in marzo 1998" (copied from the Spanish "en
+    marzo de 1998") is wrong in Italian. Rewritten as: il + day (il 5 marzo), a / in +
+    month (a marzo), nel + year (nel 1998), with l' before a number that starts with a
+    vowel (l'8 luglio, l'11 maggio) and "il primo" for the 1st. Please confirm.
+  - >-
+    Summary, possessives rule 1 "Si usano sempre con un nome (non diciamo solo mio)"
+    is not true in Italian ("Questo libro è mio"). Rewritten as "the possessive goes
+    before the noun". A table of all possessive forms (mio / mia / miei / mie… loro)
+    was ADDED, since the notebook has none; "loro" is invariable and always takes the
+    article. Please confirm.
+  - >-
+    Warm-up frames: "Mi piace ___ con il mio ___" → "con mio / mia ___" (no article
+    with singular relatives, as the summary says); "Incontrerò la mia famiglia…"
+    (future) → "Incontro la mia famiglia…" (the course uses the present); "Io vivo da
+    solo" → "Vivo da solo / da sola". "Nomina 3 cose che ti piacciono della tua
+    famiglia" → "…di una persona della tua famiglia" (the frame is about one person).
+  - >-
+    Activity 1 ("Prima e dopo!"): the notebook examples do not say "prima" or "dopo",
+    which is the point of the game. The examples now say "è dopo!" / "è prima!", as in
+    the other languages' notebooks.
+  - >-
+    Activity 2 title "I miei beni dell'albero genealogico" ("beni" = possessions) →
+    "Il mio albero genealogico". The family tree worksheet is an Adobe Acrobat link,
+    which is not on the link allow-list. Until it moves into the course's own media,
+    the teacher shares it on screen (see the teacher note).
+  - >-
+    Activity 3: "Cronologia (Presente semplice)" → "Il programma"; the frame "prendiamo
+    l'aereo" → "l'aereo / il treno" (the example uses the train); example "facciamo una
+    passeggiata in Piazza di Spagna e al Vaticano" → "…in Piazza di Spagna e visitiamo
+    il Vaticano".
+  - >-
+    Activity 4: the frame "Mi piace che io ___" (about yourself) was left out (it needs
+    the subjunctive and sounds unnatural); "Mi piace il mio / la mia ___" is kept.
+  - >-
+    Mori: "Usa solo il presente semplice" → "Usa solo il presente"; "Mori porrà e
+    risponderà a tutte le vostre domande" rewritten; the tip "con la frase in inglese"
+    → "in italiano". "Viaggio in famiglia": "abbiamo viaggiato" (past) → "partiamo";
+    the four repeated lines were removed. Both extra messages: "fatemi" (plural) →
+    "fammi".
+  - >-
+    Vocabulary: "Cucina – בישול" → "מטבח / בישול" (cucina is both the kitchen and
+    the cooking). Please confirm.
+  - The Quizlet link is kept without the tracking parameter (funnelUUID).
+  - Activity times given as ranges (15–20 minutes) are recorded as 20 minutes; the introduction round (5/10 minutes) as 10.
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: famiglia-classe
+    title: 'In classe: Famiglia'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Famiglia
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Possessivi
+            description: "*mio, mia, miei, mie*… e quando si usa l'articolo"
+          - name: Date e numeri
+            description: I numeri da uno a dieci e le date (il 9 febbraio)
+      - id: quizlet
+        type: externalLink
+        label: Famiglia su Quizlet
+        url: https://quizlet.com/br/1068023372/italiano-basico-famiglia-atualizato-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazioni
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Trascorro / Non trascorro molto tempo con la mia famiglia.
+        example: Sono Dana. Non trascorro molto tempo con la mia famiglia.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Di' i nomi delle persone della tua famiglia.
+            frame: |-
+              Mio padre si chiama ___. / Mia madre si chiama ___.
+              Mio fratello / Mia sorella si chiama ___.
+              I miei cugini si chiamano ___.
+          - question: Cosa ti piace fare con la tua famiglia?
+            frame: Mi piace ___ con mio / mia ___.
+          - question: Con chi parli spesso nella tua famiglia? Perché?
+            frame: Parlo molto con mio / mia ___, perché ___.
+          - question: Quando e dove incontri la tua famiglia?
+            frame: Incontro la mia famiglia il ___ (giorno) a / in ___.
+          - question: Di' tre cose che ti piacciono di una persona della tua famiglia.
+            frame: Mi piace che mio / mia ___ sia ___, ___ e ___.
+          - question: Con chi vivi?
+            frame: Vivo da solo / da sola. / Vivo con mio padre, mia madre e mio fratello.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Prima e dopo!'
+        skills: [Date e numeri, Possessivi]
+        minutes: 20
+        steps:
+          - Ascolta l'esempio dell'insegnante.
+          - Di' il compleanno di una persona della tua famiglia. Usa il possessivo giusto.
+          - Lo studente dopo di te dice se la sua data è **prima** o **dopo**, e dice la data.
+        example: |-
+          *Mia madre si chiama Dvora. Il suo compleanno è il 9 febbraio.*
+          *Il compleanno di mia sorella è dopo! È il 26 marzo.*
+          *Il compleanno di mio fratello è prima! È il 13 marzo.*
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Il mio albero genealogico'
+        skills: [Possessivi]
+        minutes: 20
+        steps:
+          - Apri l'albero genealogico che condivide l'insegnante.
+          - Completa l'albero con nomi ed età, e completa le frasi qui sotto.
+          - Condividi il tuo albero genealogico con la classe.
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Completa le frasi
+        items:
+          - question: Questo sono io! Mi chiamo ___. Ho ___ anni.
+          - question: Questo è mio ___. / Questa è mia ___. Si chiama ___. Ha ___ anni.
+          - question: Questo è mio ___. / Questa è mia ___. Si chiama ___. Ha ___ anni.
+          - question: Questi sono i miei ___. / Queste sono le mie ___. Si chiamano ___. Hanno ___ anni.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Organizziamo un viaggio in famiglia!'
+        skills: [Date e numeri]
+        minutes: 20
+        steps:
+          - Completa il programma del viaggio qui sotto. Usa il presente.
+          - Condividi il tuo programma con la classe.
+        example: |-
+          **Destinazione:** Roma
+          **Viaggiatori:** Io, mia madre, mio padre e mio fratello
+          Il **5 luglio** prendiamo il treno per **Roma**.
+          Il **6 luglio** visitiamo **il Colosseo e mangiamo la pizza**.
+          Il **7 luglio** facciamo **una passeggiata in Piazza di Spagna e visitiamo il Vaticano**.
+          Torniamo a casa **l'8 luglio** :)
+      - id: act3-plan
+        type: discussionQuestions
+        title: Il viaggio in famiglia
+        items:
+          - question: 'Destinazione: ___'
+          - question: 'Viaggiatori: Io, mio / mia ___, mio / mia ___'
+          - question: Il ___ prendiamo l'aereo / il treno per ___.
+          - question: Il ___ visitiamo ___.
+          - question: Il ___ facciamo ___.
+          - question: Torniamo a casa il ___ :)
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Cosa ti piace della tua famiglia?'
+        skills: [Possessivi]
+        minutes: 20
+        steps:
+          - Lavorate in coppia.
+          - Uno studente fa le domande qui sotto, l'altro risponde. Poi cambiate ruolo.
+          - Ogni coppia dice alla classe **una cosa** bella sulla famiglia del compagno e **una cosa** bella sul compagno.
+        example: |-
+          *Tom dice che gli piace la cucina di suo padre.*
+          *A me piace il sorriso di Tom!*
+        wordBank: [sorriso, capelli, cucina, sport, musica, disegni, gentilezza, voce, intelligenza]
+      - id: act4-questions
+        type: discussionQuestions
+        items:
+          - question: Cosa ti piace di più di tuo padre?
+            frame: Mi piace il suo ___. / Mi piace che lui ___.
+          - question: Cosa ti piace di più di tua madre?
+            frame: Mi piace la sua ___. / Mi piace che lei ___.
+          - question: Cosa ti piace di più di tuo fratello / di tua sorella?
+            frame: Mi piace il suo / la sua ___. / Mi piace che lui / lei ___.
+          - question: Cosa ti piace di più del tuo migliore amico / della tua migliore amica?
+            frame: Mi piace il suo / la sua ___. / Mi piace che lui / lei ___.
+          - question: Cosa ti piace di più di te stesso / stessa?
+            frame: Mi piace il mio / la mia ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Possessivi** (Attività 2 e 4) e **Date e numeri**
+          (Attività 1 e 3). Combinazioni consigliate: Attività 2 + 3 oppure Attività 1 + 4.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Fai prima il tuo esempio e poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Obiettivo: dire correttamente i compleanni e le date. Fai prima il modello:
+          «Mia madre si chiama Dvora. Il suo compleanno è il 9 febbraio.» Ogni studente usa
+          un possessivo + una data.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Condividi sullo schermo l'albero genealogico (il link di Acrobat è nel quaderno
+          precedente; non è ancora nella piattaforma). Metà classe condivide il proprio
+          albero; l'altra metà condivide nell'Attività 3.
+      - id: n-act3
+        anchor: act3
+        text: La metà della classe che non ha condiviso nell'Attività 2 condivide il programma del viaggio.
+      - id: n-act4
+        anchor: act4
+        text: Puoi dare la lista di parole (sorriso, capelli, cucina…) per completare le frasi.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: famiglia-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-possessives
+        type: ruleSummary
+        skill: Possessivi
+        rules:
+          - text: 'I possessivi servono per dire di chi è una cosa. Il possessivo va **prima** del nome: **mio** fratello (in ebraico: אחי / האח **שלי**).'
+          - text: 'Il possessivo cambia secondo il **nome** che viene dopo (maschile o femminile, singolare o plurale), non secondo chi ha la cosa.'
+            examples:
+              - mio padre (maschile singolare)
+              - mia madre (femminile singolare)
+              - i miei fratelli (maschile plurale)
+              - le mie sorelle (femminile plurale)
+          - text: "Di solito c'è anche l'articolo: *il mio amico*, *la mia amica*, *i miei genitori*. Eccezione: con i parenti al singolare non si usa l'articolo."
+            examples:
+              - mio padre, mia madre, mio fratello
+              - Mio fratello si chiama Luca.
+              - Le mie sorelle abitano a Roma.
+      - id: possessives-table
+        type: table
+        caption: I possessivi
+        header: [Chi?, Maschile singolare, Femminile singolare, Maschile plurale, Femminile plurale]
+        rows:
+          - [io, (il) mio, (la) mia, i miei, le mie]
+          - [tu, (il) tuo, (la) tua, i tuoi, le tue]
+          - [lui / lei, (il) suo, (la) sua, i suoi, le sue]
+          - [noi, (il) nostro, (la) nostra, i nostri, le nostre]
+          - [voi, (il) vostro, (la) vostra, i vostri, le vostre]
+          - [loro, il loro, la loro, i loro, le loro]
+      - id: rules-dates
+        type: ruleSummary
+        skill: Date e numeri
+        rules:
+          - text: Prima si scrive il giorno, poi il mese.
+            examples: [5 luglio 2024]
+          - text: Impara bene i numeri fino a dieci, sono la base di tutti gli altri.
+            examples:
+              [
+                'uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci',
+                'undici, dodici, tredici…',
+              ]
+          - text: "Usiamo **il** davanti al giorno (**l'** davanti a 8 e 11), **a** o **in** con i mesi e **nel** con gli anni. Il primo giorno del mese si dice *il primo*."
+            examples:
+              - Sono nato il 5 marzo.
+              - Torniamo a casa l'8 luglio.
+              - Sono nata a marzo.
+              - Sono nato nel 1998.
+              - Il compleanno di mia madre è il 9 febbraio.
+      - id: can-do
+        type: callout
+        tone: info
+        title: Cosa sappiamo fare adesso
+        text: |-
+          Presentare la nostra famiglia con i possessivi: *Questa è mia sorella. Ha 20 anni.*
+          Dire date e compleanni: *Il compleanno di mio padre è il 10 aprile.*
+          Parlare di ciò che ci piace della nostra famiglia: *Mi piace il sorriso di mia madre.*
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Ripassa le due abilità con la classe e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: famiglia-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia questo messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-famiglia
+        type: aiTutorPrompt
+        title: Parlare della tua famiglia
+        message: >-
+          Ciao Mori! Vorrei parlare della mia famiglia. Potresti farmi delle domande sulla
+          mia famiglia usando le abilità «Possessivi» e «Date e numeri»? Usa solo il
+          presente e correggi i miei errori, per favore.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratica aggiuntiva
+      - id: mori-viaggio
+        type: aiTutorPrompt
+        title: Viaggio in famiglia!
+        intro: Completa gli spazi e invia il messaggio a Mori.
+        message: |-
+          Ciao Mori! Sto organizzando un viaggio in famiglia e vorrei condividerlo con te:
+          La mia famiglia e io partiamo per ___ il ___ (data).
+          Il ___ (data), noi ___ (attività).
+          Il ___ (data), ___ (attività).
+          Il ___ (data), ___ (attività).
+          Torniamo a casa il ___ (data)!
+          Per favore, fammi domande sul mio viaggio.
+      - id: mori-routine
+        type: aiTutorPrompt
+        title: La routine della famiglia
+        intro: Completa gli spazi e invia il messaggio a Mori.
+        message: |-
+          Ciao Mori! Questa è la routine della mia famiglia:
+          Il lunedì mia madre ___.
+          Il martedì mio padre ___.
+          Il mercoledì mio fratello ___.
+          Il giovedì io ___.
+          Il venerdì mia sorella ___.
+          Il sabato noi ___.
+          La domenica ___.
+          Per favore, fammi domande sulla routine della mia famiglia.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: famiglia-pratica
+    book: workbook
+    title: 'Pratica: Famiglia'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-possessivi
+        type: activity
+        activity: famiglia-possessivi
+      - id: ex-date
+        type: activity
+        activity: famiglia-date
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: famiglia-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole della famiglia
+        glossLang: he
+        link: https://quizlet.com/br/1068023372/italiano-basico-famiglia-atualizato-flash-cards/
+        items: &famiglia-words
+          - { term: famiglia, gloss: משפחה }
+          - { term: padre, gloss: אבא }
+          - { term: madre, gloss: אמא }
+          - { term: fratello, gloss: אח }
+          - { term: sorella, gloss: אחות }
+          - { term: cugino, gloss: בן דוד }
+          - { term: amico, gloss: חבר }
+          - { term: nome, gloss: שם }
+          - { term: età, gloss: גיל }
+          - { term: compleanno, gloss: יום הולדת }
+          - { term: data, gloss: תאריך }
+          - { term: giorno, gloss: יום }
+          - { term: mese, gloss: חודש }
+          - { term: numero, gloss: מספר }
+          - { term: viaggio, gloss: טיול }
+          - { term: destinazione, gloss: יעד }
+          - { term: treno, gloss: רכבת }
+          - { term: aereo, gloss: מטוס }
+          - { term: casa, gloss: בית }
+          - { term: albero genealogico, gloss: עץ משפחה }
+          - { term: attività, gloss: פעילות }
+          - { term: domanda, gloss: שאלה }
+          - { term: risposta, gloss: תשובה }
+          - { term: coppia, gloss: זוג }
+          - { term: gruppo, gloss: קבוצה }
+          - { term: condivisione, gloss: שיתוף }
+          - { term: piacere, gloss: הנאה }
+          - { term: sorriso, gloss: חיוך }
+          - { term: capelli, gloss: שיער }
+          - { term: cucina, gloss: מטבח / בישול }
+          - { term: musica, gloss: מוזיקה }
+          - { term: sport, gloss: ספורט }
+          - { term: disegni, gloss: ציורים }
+          - { term: gentilezza, gloss: אדיבות }
+          - { term: intelligenza, gloss: אינטליגנציה }
+          - { term: voce, gloss: קול }
+
+vocabulary:
+  - slug: famiglia
+    title: Famiglia
+    items: *famiglia-words
+
+activities:
+  - slug: famiglia-possessivi
+    title: 'Possessivi: mio, mia, i miei, le mie'
+    minutes: 8
+    items:
+      - id: mio-padre
+        type: multipleChoice
+        prompt: ___ padre si chiama Marco.
+        options:
+          - { text: Mio, correct: true }
+          - {
+              text: Il mio,
+              feedback: "Con i parenti al singolare non usiamo l'articolo: *mio padre*.",
+            }
+          - { text: Mia, feedback: '*Padre* è maschile: usa *mio*.' }
+      - id: le-mie-sorelle
+        type: multipleChoice
+        prompt: ___ sorelle abitano a Roma.
+        options:
+          - { text: Le mie, correct: true }
+          - { text: Mie, feedback: "Con i parenti al plurale usiamo l'articolo: *le mie sorelle*." }
+          - { text: I miei, feedback: '*Sorelle* è femminile plurale: usa *le mie*.' }
+      - id: il-mio-amico
+        type: multipleChoice
+        prompt: ___ amico si chiama Luca.
+        options:
+          - { text: Il mio, correct: true }
+          - {
+              text: Mio,
+              feedback: "Un amico non è un parente: di solito usiamo l'articolo, *il mio amico*.",
+            }
+          - { text: La mia, feedback: '*Amico* è maschile: usa *il mio*.' }
+      - id: cambia-nome
+        type: trueFalse
+        prompt: 'Il possessivo cambia secondo il nome che viene dopo: *mio fratello*, *mia sorella*.'
+        answer: true
+        feedback:
+          correct: Giusto! *Mio* con un nome maschile, *mia* con un nome femminile.
+          incorrect: 'Il possessivo cambia secondo il nome (maschile o femminile, singolare o plurale): *mio fratello*, *mia sorella*.'
+      - id: articolo-parenti
+        type: trueFalse
+        prompt: "Con i parenti al singolare usiamo l'articolo: *il mio padre*."
+        answer: false
+        feedback:
+          correct: 'Giusto! Diciamo *mio padre*, senza articolo.'
+          incorrect: "Con i parenti al singolare non usiamo l'articolo: *mio padre*, *mia madre*."
+      - id: completa-possessivi
+        type: fillBlank
+        prompt: Completa con *mio*, *mia* o *i miei*.
+        text: Questo è ___ fratello. Questi sono ___ cugini. Questa è ___ madre.
+        blanks: [[mio], [i miei], [mia]]
+        wordBank: [mio, mia, i miei]
+      - id: unisci-possessivi
+        type: matching
+        prompt: Unisci ogni nome al possessivo giusto.
+        pairs:
+          - [___ padre, mio]
+          - [___ madre, mia]
+          - [___ fratelli, i miei]
+          - [___ sorelle, le mie]
+      - id: ordina-fratello
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Mio fratello si chiama Luca.
+
+  - slug: famiglia-date
+    title: Date e numeri
+    minutes: 8
+    items:
+      - id: giorno-mese
+        type: multipleChoice
+        prompt: Quale frase è giusta?
+        options:
+          - { text: Il mio compleanno è il 9 febbraio., correct: true }
+          - {
+              text: Il mio compleanno è febbraio 9.,
+              feedback: 'Prima il giorno, poi il mese: *il 9 febbraio*.',
+            }
+          - {
+              text: Il mio compleanno è in 9 febbraio.,
+              feedback: 'Davanti al giorno usiamo *il*: *il 9 febbraio*.',
+            }
+      - id: il-nel
+        type: fillBlank
+        prompt: Completa con *il* o *nel*.
+        text: Sono nato ___ 5 marzo. Mia sorella è nata ___ 1998.
+        blanks: [[il], [nel]]
+        wordBank: [il, nel]
+      - id: l-otto
+        type: multipleChoice
+        prompt: Torniamo a casa ___ luglio.
+        options:
+          - { text: l'8, correct: true }
+          - { text: il 8, feedback: "*Otto* comincia con una vocale: diciamo *l'8 luglio*." }
+          - { text: in 8, feedback: "Davanti al giorno usiamo *il* (o *l'*): *l'8 luglio*." }
+      - id: numeri
+        type: matching
+        prompt: Unisci i numeri.
+        pairs:
+          - ['3', tre]
+          - ['5', cinque]
+          - ['7', sette]
+          - ['9', nove]
+          - ['10', dieci]
+      - id: prima-giorno
+        type: trueFalse
+        prompt: 'In italiano scriviamo prima il giorno e poi il mese: *5 luglio 2024*.'
+        answer: true
+        feedback:
+          correct: Giusto! Prima il giorno, poi il mese.
+          incorrect: 'In italiano scriviamo prima il giorno, poi il mese: *5 luglio 2024*.'
+      - id: sei
+        type: fillBlank
+        prompt: Scrivi il numero in lettere.
+        text: 'Mio fratello ha 6 anni: ha ___ anni.'
+        blanks: [[sei]]
+      - id: conta
+        type: fillBlank
+        prompt: Completa i numeri.
+        text: uno, due, ___, quattro, cinque, ___, sette, otto, ___, dieci
+        blanks: [[tre], [sei], [nove]]
+      - id: ordina-casa
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Torniamo a casa il 7 agosto.

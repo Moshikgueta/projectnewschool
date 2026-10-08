@@ -1,0 +1,548 @@
+# Cycle "Food", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: food
+title: Food
+goal: Talk about food, building sentences with actions (present simple) and possessives.
+position: 8
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Actions in the present" and "Possessives") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Skill plan: the notebook says Actions is practised with "Activities 1 or 2", but
+    Activity 4 is also labelled ACTIONS. The plan note lists Activities 1, 2 and 4 for
+    Actions and Activity 3 for Possessives. Please confirm.
+  - >-
+    Possessives table: the examples for *his*, *her* and *their* did not use the word
+    ("John's steak is juicy."). They now show both forms: "This is John's steak. His
+    steak is juicy." (also for Maria and the Smiths). The table appears in class
+    (where the notebook shows it, after the introduction) and in the summary.
+  - >-
+    Activity 2 says "The teacher will give each student this restaurant menu", but
+    the notebook has no menu in the class plan. The menu from the Mori homework is
+    shown in class as a table. Please confirm, or replace it with the real menu.
+  - >-
+    Small corrections: "Which is your favorite ingredient" → "What is your favorite
+    ingredient"; "italian food" → "Italian food"; "Roast Beef" → "roast beef";
+    "Teach me your favorite plate" → "Teach me your favorite dish"; "divided into
+    couples" → "work in pairs"; "Do you pay with cash or a credit card?" → "Do you
+    pay in cash or by credit card?" (and the answers); "Bon Appetit" → "Bon appétit";
+    broken brackets in the Activity 4 verb list ("Chop – לקצוץ)") fixed.
+  - >-
+    Activity 1 says students may write the recipe "in infinitive or in first
+    person". In English the recipe form is the imperative, so the step now says
+    "as instructions (*Take the bread*) or with *I* (*I take the bread*)".
+  - >-
+    The Hebrew line in the waiter's first sentence ("רוצים להזמין?") was left out of
+    the dialogue; "To order – להזמין" is in the vocabulary.
+  - >-
+    The second warm-up question ("Do you like to cook?") had no answer frame; one was
+    added. The broken emoji characters (encoding errors) in the summary and in the
+    Mori menu were removed.
+  - >-
+    Links: the Quizlet link lost its tracking parameter (funnelUUID).
+  - Activity and summary times given as ranges (15–20 minutes) are recorded as 20 minutes; the introduction (5–10 minutes) as 10.
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: food-class
+    title: 'Class: Food'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Food
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Actions
+            description: 'Building sentences with actions in the present: *I eat, he cooks*'
+          - name: Possessives
+            description: '*my, your, his, her, our, their* and *of*: *my burger, the flavor of the pizza*'
+      - id: quizlet
+        type: externalLink
+        label: Food words on Quizlet
+        url: https://quizlet.com/il/856050535/basic-english-food-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I like to eat ___.
+        example: I am Dana. I like to eat pizza.
+      - id: possessives-title
+        type: heading
+        level: 3
+        text: Possessive words
+      - id: possessives-table
+        type: table
+        caption: Possessive words
+        header: [Word, Example]
+        rows: &food-possessives
+          - [My, My burger is delicious.]
+          - [Our, Welcome to The Italian Restaurant! Our pasta is homemade.]
+          - [Your (one person), 'Your soup is very hot, waiter.']
+          - [Your (more than one), 'My dear friends, your restaurant is amazing!']
+          - [His, This is John's steak. His steak is juicy.]
+          - [Her, This is Maria's salad. Her salad is fresh.]
+          - [Their, These are the Smiths' fries. Their fries are crispy.]
+          - [Of, The flavor of the pizza is amazing.]
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Do you like to eat? What do you like to eat?
+            frame: Yes / No, I like / don't like to eat ___.
+          - question: Do you like to cook? What do you like to cook?
+            frame: Yes / No, I like / don't like to cook ___.
+          - question: What flavors do you know? Which one is your favorite?
+            frame: 'I know these flavors: ___ (salty, sweet, sour, bitter, umami). My favorite is ___.'
+          - question: What is your favorite restaurant?
+            frame: My favorite restaurant is ___. It is a / an ___ (Italian, fast food, gourmet) restaurant.
+          - question: What do you cook for your family or for your friends?
+            frame: I cook ___ for my family / friends.
+          - question: What is your favorite ingredient to cook with?
+            frame: My favorite ingredient to cook with is ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Your favorite sandwich'
+        skills: [Actions]
+        minutes: 20
+        steps:
+          - Find the ingredients of your favorite sandwich (or another very simple food) online, in English. No more than 5 ingredients.
+          - Complete the recipe below. Write it as instructions (*Take the bread*) or with *I* (*I take the bread*).
+          - Explain to the group how to make your favorite sandwich.
+        wordBank: [cut, open, close, spread, put, add, take]
+        example: |-
+          *This is my favorite sandwich. The name of the sandwich is: Cheese sandwich.*
+          *I take the bread. I put the cheese on the bread. I take the bread and put it on the cheese.*
+          *Bon appétit!*
+      - id: act1-recipe
+        type: discussionQuestions
+        title: My favorite sandwich
+        items:
+          - question: 'The name of the sandwich is: ___'
+          - question: 'The ingredients of the sandwich are: ___, ___, ___, ___ and ___.'
+          - question: 'To prepare the sandwich, you do this: 1. I take the ___.'
+          - question: 2. I put the ___ on the ___.
+          - question: 3. I take the ___ and put it on the ___.
+      - id: act2
+        type: classActivity
+        title: "Activity 2: Let's go out to eat!"
+        skills: [Actions]
+        minutes: 20
+        steps:
+          - We go out to eat at a British, American or Australian restaurant. Together, choose a fun name for the restaurant.
+          - One student is the waiter. The other students are the customers.
+          - Look at the menu and act out the conversation below.
+      - id: menu
+        type: table
+        caption: Menu
+        header: [Starters, Main dishes, Desserts, Drinks]
+        rows:
+          - [Garlic bread, Cheeseburger with fries, Chocolate cake, Water]
+          - [Tomato soup, Fish and chips, Ice cream, Orange juice]
+          - [Chicken wings, Grilled chicken with rice, Apple pie, Cola]
+          - [Caesar salad, Veggie pasta, '', Tea]
+      - id: act2-dialogue
+        type: dialogue
+        lines:
+          - speaker: Waiter
+            text: Hello! Welcome to ___ (restaurant name). Do you want to order?
+          - speaker: Customer 1
+            text: Yes! For a starter, I eat ___ and drink ___.
+          - speaker: Customer 2
+            text: For a starter, I eat ___ and drink ___.
+          - speaker: Waiter
+            text: So, you drink ___ and eat ___. *(The waiter repeats this for each customer.)*
+          - speaker: Waiter
+            text: How is the food? How is the drink?
+          - speaker: Customer 1
+            text: The ___ is very good / bad / cold / dry.
+          - speaker: Customer 2
+            text: The ___ is very fresh / tasty / heavy.
+          - speaker: Waiter
+            text: What do you want for the main dish?
+          - speaker: Customer 1
+            text: I want ___.
+          - speaker: Customer 2
+            text: I want ___.
+          - speaker: Waiter
+            text: So, you eat ___, and you eat ___.
+          - speaker: Waiter
+            text: Do you pay in cash or by credit card?
+          - speaker: Customer 1
+            text: I pay in cash.
+          - speaker: Customer 2
+            text: I pay by credit card.
+          - speaker: Waiter
+            text: Thank you for coming! Come back soon!
+          - speaker: Customers
+            text: Thank you! The food is very good!
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Your wedding guests – who eats what?'
+        skills: [Possessives]
+        minutes: 20
+        steps:
+          - Look at the guest list and the food and drink options below.
+          - Listen to your teacher's example.
+          - Repeat what the student before you said, say what your guest eats and drinks, and ask the next student.
+        example: |-
+          *Teacher: My mother eats fish with vegetables and drinks white wine. Student 1, what does your mother eat and drink?*
+          *Student 1: Your mother eats fish with vegetables and drinks white wine. My mother eats roast beef and potatoes and drinks beer. Student 2, what does your brother eat and drink?*
+          *Student 2: Your mother eats roast beef and potatoes and drinks beer. My brother eats chicken and rice and drinks water.*
+      - id: act3-options
+        type: table
+        caption: The wedding
+        header: [Guests, Food, Drinks]
+        rows:
+          - [My husband / my wife, Fish with vegetables, 'White wine, red wine']
+          - [Our friends from work, Roast beef and potatoes, 'Beer, cola']
+          - [
+              "His / her best friend (my husband's / my wife's best friend)",
+              Chicken and rice,
+              'Water, orange juice',
+            ]
+          - ["His / her business partners (my husband's / my wife's business partners)", '', '']
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Who eats what?
+        items:
+          - question: Your ___ eats ___ and drinks ___.
+          - question: My ___ eats ___ and drinks ___.
+          - question: What does your ___ eat and drink?
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Teach me your favorite dish'
+        skills: [Actions]
+        minutes: 20
+        steps:
+          - Work in pairs.
+          - Choose a dish that you like to cook or to eat. Tell your partner how to cook it. Do not say the name of the dish!
+          - Your partner guesses the dish.
+        wordBank: [chop, mix, boil, fry, bake]
+      - id: act4-frames
+        type: discussionQuestions
+        items:
+          - question: How do you cook your dish?
+            frame: First, I ___ the ___. Then I ___ the ___.
+          - question: Guess the dish!
+            frame: Is it ___?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Actions** (Activities 1, 2 and 4) and **Possessives**
+          (Activity 3, and the possessives table). Recommended: Activity 1 or 2, plus
+          Activity 3.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Give your own example first. Students complete with a food word they know (cognates like pizza, hamburger, lasagna).
+      - id: n-possessives
+        anchor: possessives-table
+        text: Present the table quickly. It comes back in the summary.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Explain the first step in Hebrew: students look for the ingredients online, in
+          English (no more than 5). The verbs they will probably need: to cut (לחתוך), to
+          open (לפתוח), to close (לסגור), to spread (למרוח), to put (לשים), to add
+          (להוסיף).
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Show the menu on screen (on Zoom, share your screen). One student is the
+          waiter, who writes what each customer orders and repeats the orders.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Start with the example: "My mother eats fish with vegetables and drinks white
+          wine. Student 1, what does your mother eat and drink?" Students can play with
+          different guests, food and drinks.
+      - id: n-act4
+        anchor: act4
+        text: 'Useful verbs: chop (לקצוץ), mix (לערבב), boil (להרתיח), fry (לטגן), bake (לאפות).'
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: food-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-actions
+        type: ruleSummary
+        skill: Actions
+        rules:
+          - text: 'A sentence with an action = **who does the action + the verb**.'
+            examples: [I eat., I cook.]
+          - text: 'With **he, she, it**, add **-s** to the end of the verb.'
+            examples: [He / She eats., He / She cooks., The pasta (it) smells good.]
+          - text: 'Do **not** write *am, is, are* if you have a verb. Write the person and the verb.'
+            examples: ['I eat pizza at home.', '❌ Wrong: *I am eat pizza at home.*']
+      - id: rules-possessives
+        type: ruleSummary
+        skill: Possessives
+        rules:
+          - text: 'The possessive word comes **first**: *my food*, not *food my* (in Hebrew it is the opposite: האוכל **שלי**).'
+          - text: A possessive sentence says what the thing is and who it belongs to.
+            examples: [My burger is delicious., The flavor of the pizza is amazing.]
+          - text: Choose the word from the table.
+      - id: possessives-table
+        type: table
+        caption: Possessive words
+        header: [Word, Example]
+        rows: *food-possessives
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Go through both skills with the group and ask for one new example for each rule. It's simple! With practice, they will get it.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: food-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy this message and send it. Mori will ask you questions; answer every one.
+      - id: mori-food
+        type: aiTutorPrompt
+        title: Talk about food
+        message: >-
+          Hi Mori! I want to talk about food. Can you ask me questions using the skills
+          Possessive sentences and Actions in the present? Use only present simple, and
+          please correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-restaurant
+        type: aiTutorPrompt
+        title: "Let's go out to eat!"
+        intro: Send this message to Mori. Mori is the waiter and you are the customer.
+        message: |-
+          Hi Mori! I want to make a simulation where you are the waiter and I am the customer, based on this menu:
+          Starters: garlic bread, tomato soup, chicken wings, Caesar salad
+          Main dishes: cheeseburger with fries, fish and chips, grilled chicken with rice, veggie pasta
+          Desserts: chocolate cake, ice cream, apple pie
+          Drinks: water, orange juice, cola, tea
+          Please use only the present simple.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: food-practice
+    book: workbook
+    title: 'Practice: Food'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-actions
+        type: activity
+        activity: food-actions
+      - id: ex-possessives
+        type: activity
+        activity: food-possessives
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: food-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Food words
+        glossLang: he
+        link: https://quizlet.com/il/856050535/basic-english-food-flash-cards/
+        items: &food-words
+          - { term: To eat, gloss: לאכול }
+          - { term: To cook, gloss: לבשל }
+          - { term: Flavors, gloss: טעמים }
+          - { term: Salty, gloss: מלוח }
+          - { term: Sweet, gloss: מתוק }
+          - { term: Sour, gloss: חמוץ }
+          - { term: Bitter, gloss: מר }
+          - { term: Spicy, gloss: חריף }
+          - { term: Restaurant, gloss: מסעדה }
+          - { term: Family, gloss: משפחה }
+          - { term: Friends, gloss: חברים }
+          - { term: Ingredient, gloss: מרכיב }
+          - { term: Bread, gloss: לחם }
+          - { term: Cheese, gloss: גבינה }
+          - { term: To put, gloss: לשים }
+          - { term: To cut, gloss: לחתוך }
+          - { term: To open, gloss: לפתוח }
+          - { term: To close, gloss: לסגור }
+          - { term: To spread, gloss: למרוח }
+          - { term: To add, gloss: להוסיף }
+          - { term: Menu, gloss: תפריט }
+          - { term: Waiter, gloss: מלצר }
+          - { term: Customer, gloss: לקוח }
+          - { term: To order, gloss: להזמין }
+          - { term: Starter, gloss: מנה ראשונה }
+          - { term: Main dish, gloss: מנה עיקרית }
+          - { term: To drink, gloss: לשתות }
+          - { term: Cash, gloss: מזומן }
+          - { term: Credit card, gloss: כרטיס אשראי }
+          - { term: Wedding, gloss: חתונה }
+
+vocabulary:
+  - slug: food
+    title: Food
+    items: *food-words
+
+activities:
+  - slug: food-actions
+    title: 'Actions in the present: I eat, he eats'
+    minutes: 8
+    items:
+      - id: maria-cooks
+        type: multipleChoice
+        prompt: Maria ___ pasta every Friday.
+        options:
+          - { text: cooks, correct: true }
+          - { text: cook, feedback: 'Maria is *she*. With *he, she, it*, add **-s**: *she cooks*.' }
+          - { text: is cook, feedback: 'Do not write *am, is, are* with a verb: *Maria cooks*.' }
+      - id: eat-at-home
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: I eat pizza at home., correct: true }
+          - {
+              text: I am eat pizza at home.,
+              feedback: 'Do not write *am* with a verb. Write the person and the verb: *I eat*.',
+            }
+          - { text: I eats pizza at home., feedback: 'With *I*, the verb has no **-s**: *I eat*.' }
+      - id: add-s
+        type: trueFalse
+        prompt: 'With *he*, *she* and *it*, we add **-s** to the verb: *He cooks.*'
+        answer: true
+        feedback:
+          correct: 'Right! *He cooks, she eats, the pasta smells good.*'
+          incorrect: 'With *he, she, it*, the verb gets **-s**: *He cooks.*'
+      - id: is-drink
+        type: trueFalse
+        prompt: '*She is drink water.* is a correct sentence.'
+        answer: false
+        feedback:
+          correct: 'Right! Do not use *is* with a verb: *She drinks water.*'
+          incorrect: 'Do not use *is* with a verb. The correct sentence is: *She drinks water.*'
+      - id: brother-eats
+        type: fillBlank
+        prompt: Write the verb *eat* in the right form.
+        text: My brother ___ fish. I ___ chicken.
+        blanks: [[eats], [eat]]
+      - id: smells-cooks
+        type: fillBlank
+        prompt: Write the verb in the right form.
+        text: The pasta ___ (smell) good. My mother ___ (cook) on Fridays.
+        blanks: [[smells], [cooks]]
+      - id: kitchen-verbs
+        type: matching
+        prompt: Match each verb with its meaning.
+        pairs:
+          - [to cut, לחתוך]
+          - [to spread, למרוח]
+          - [to add, להוסיף]
+          - [to open, לפתוח]
+          - [to close, לסגור]
+      - id: orange-juice
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: He drinks orange juice.
+
+  - slug: food-possessives
+    title: 'Possessives: my, his, her, our, their, of'
+    minutes: 8
+    items:
+      - id: her-salad
+        type: multipleChoice
+        prompt: Maria has a salad. ___ salad is fresh.
+        options:
+          - { text: Her, correct: true }
+          - { text: His, feedback: '*His* is for a man or a boy. Maria is a woman.' }
+          - { text: Their, feedback: '*Their* is for more than one person.' }
+      - id: their-fries
+        type: multipleChoice
+        prompt: John and Sam have fries. ___ fries are crispy.
+        options:
+          - { text: Their, correct: true }
+          - { text: His, feedback: '*His* is for one man. John and Sam are two people: *their*.' }
+          - { text: Our, feedback: '*Our* is for *we* (me and other people).' }
+      - id: our-pasta
+        type: multipleChoice
+        prompt: We have a restaurant. ___ pasta is homemade.
+        options:
+          - { text: Our, correct: true }
+          - { text: My, feedback: '*My* is for *I* (one person). For *we*, use *our*.' }
+          - { text: Their, feedback: '*Their* is for *they*. For *we*, use *our*.' }
+      - id: food-my
+        type: trueFalse
+        prompt: '*Food my* is correct English.'
+        answer: false
+        feedback:
+          correct: 'Right! The possessive word comes first: *my food*.'
+          incorrect: 'In English, the possessive word comes first: *my food* (not *food my*).'
+      - id: flavor-of
+        type: fillBlank
+        prompt: Complete with one word.
+        text: The flavor ___ the pizza is amazing.
+        blanks: [[of]]
+      - id: his-her-friend
+        type: fillBlank
+        prompt: Complete with *his* or *her*.
+        text: This is my husband. ___ best friend is Tom. This is my wife. ___ best friend is Dana.
+        blanks: [[His], [Her]]
+        wordBank: [His, Her]
+      - id: pronouns
+        type: matching
+        prompt: Match each person with the possessive word.
+        pairs:
+          - [I, my]
+          - [you, your]
+          - [he, his]
+          - [she, her]
+          - [they, their]
+      - id: my-burger
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: My burger is delicious.

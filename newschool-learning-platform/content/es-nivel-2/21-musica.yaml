@@ -1,0 +1,621 @@
+# Cycle "Música", converted from the Spanish level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-2
+slug: musica
+title: Música
+goal: Hablar de música con habilidades sociales y contar recuerdos mezclando presente y pasado.
+position: 21
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Habilidades sociales" and "Narrativa en tiempo
+    mixto") are NEW: the notebook has no self-study exercises. They were written
+    from the cycle's two skills, its summary and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Song lyrics were NOT copied. Activity 1 ("La camisa negra", Juanes) had an
+    8-line cloze fragment of the lyrics and a "Reflexión" example quoting them;
+    both were removed. The song is linked as a YouTube search (please replace it
+    with the official video), and the teacher note asks the teacher to build the
+    cloze from the real lyrics on screen. Please check the notebook's answer key
+    (tengo, tengo, perdí, perdí, estaba, dejaste, seguía, quedé) against the real
+    lyrics: the notebook's fragment does not match the song as we know it (for
+    example, the song says "hoy mi amor está de luto", not "ayer… estaba de
+    luto"). The answer key is only in the teacher note.
+  - >-
+    Facts corrected in the artist examples: Shakira's first famous song was
+    "Estoy aquí" (1995); "¿Dónde están los ladrones?" is an album. Rosalía was born
+    in Sant Esteve Sesrovires, near Barcelona, so "nació en Barcelona" → "nació
+    cerca de Barcelona"; "Su canción más famosa es Con altura" → "Una de sus
+    canciones más famosas es «Con altura»". Please confirm, and check that
+    Shakira still lives in Miami.
+  - >-
+    Corrections: title "conexión presente-pasdo" → "presente–pasado"; "¿Qué país
+    piensas cuando escuchas la palabra salsa?" → "¿En qué país piensas…?";
+    "¿Bailaste mucho cuando fuiste niño/a?" → "cuando eras niño/a"; stray "¿" in
+    "¿Pistas más abiertas" removed; "reggaetón" → "reguetón" everywhere (RAE
+    spelling); broken emoji characters ("ð¹", "ð️") removed.
+  - >-
+    The notebook's "Skills practicados / Skills trabajados" lists and the
+    one-line didactic comments after each step ("Se activa vocabulario…",
+    "Aumenta la participación…") are teacher-only and are kept, shortened, in the
+    teacher notes.
+  - >-
+    Times: ranges are recorded as the larger number (10–15 → 15, 10–12 → 12).
+    Activity totals: Activity 1 = 60, Activity 2 = 55, Activity 3 = 47, Activity 5 =
+    37 minutes; together they are much longer than one class, so the plan note
+    asks the teacher to choose. Activity 1 has no step 5 in the source (the
+    numbering jumps from 4 to 6).
+  - >-
+    The beginner warm-up questions and the Activity 4 beginner prompts had answer
+    starters only in Activity 4; simple frames were added to the beginner warm-up
+    questions. Iniciante and intermedio levels are kept as separate blocks.
+  - >-
+    Homework: the "(A2 alto)" items are kept as a separate "Nivel intermedio"
+    message to Mori. Part 1 (writing) is a list of short answers.
+  - >-
+    Vocabulary: the source export is cut off after "Paí"; it was completed as
+    "País, מדינה". Please check whether more words followed. The Quizlet link is
+    kept as it is. The "Respuesta de alumno 1/2/3" lines are replaced by the
+    optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: musica-clase
+    title: 'Clase: Música'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Música
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Habilidades sociales
+            description: 'Hacer y responder preguntas sobre gustos y recuerdos musicales: *¿Qué música escuchas hoy? ¿Fuiste a un concierto?*'
+          - name: Narrativa en tiempo mixto
+            description: 'Contar historias con presente, pretérito indefinido e imperfecto: *Hoy escucho salsa, pero antes escuchaba rock.*'
+      - id: quizlet
+        type: externalLink
+        label: Música en Quizlet
+        url: https://quizlet.com/br/1072064549/musica-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        prompt: Preséntate con dos frases.
+        frame: Soy ___. En mi opinión, el mejor estilo de música es ___. Me gusta escuchar ___ cuando / en ___.
+        example: Soy Marta. En mi opinión, el mejor estilo de música es el rock. Me gusta escuchar rock cuando camino por la calle.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup-iniciante
+        type: discussionQuestions
+        title: Nivel iniciante
+        items:
+          - question: ¿Te gusta bailar? ¿Qué música bailaste el año pasado?
+            frame: Sí, me gusta bailar. / No, no me gusta bailar. El año pasado bailé ___.
+          - question: ¿Cuál fue la última canción famosa que escuchaste?
+            frame: La última canción famosa que escuché fue ___.
+          - question: ¿Viste una película o serie con música española o latina? ¿Cuál?
+            frame: Sí, vi ___. / No, no vi ___.
+          - question: ¿En qué país piensas cuando escuchas la palabra *salsa*?
+            frame: Pienso en ___.
+          - question: ¿Escuchaste música ayer? ¿Qué género?
+            frame: Sí, ayer escuché ___. / No, ayer no escuché música.
+          - question: ¿Cantaste una canción en una fiesta o en la escuela?
+            frame: Sí, canté ___ en ___. / No, no canté.
+      - id: warmup-intermedio
+        type: discussionQuestions
+        title: Nivel intermedio
+        items:
+          - question: ¿Qué recuerdos tienes con una canción especial de tu pasado?
+          - question: ¿Qué historia personal puedes contar relacionada con un concierto o una fiesta?
+          - question: ¿Qué canción famosa escuchaste muchas veces en tu vida? ¿Por qué?
+          - question: ¿Qué género musical cambió entre tu niñez y ahora?
+          - question: ¿Qué artistas de otros países conociste a través de la música?
+          - question: ¿Cómo describirías un amor o una amistad que recuerdas con una canción?
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: «La camisa negra» (Juanes), conexión presente–pasado'
+        skills: [Narrativa en tiempo mixto]
+        minutes: 60
+        steps:
+          - 'Primera escucha (5 minutos): escucha la canción completa, sin leer la letra. Responde con una palabra: ¿es alegre o triste?'
+          - 'Segunda escucha (10 minutos): completa los verbos que faltan en el fragmento que comparte tu profesor (presente o pasado).'
+          - 'Identificación de tiempos (10 minutos): marca con un color los verbos en presente y con otro color los verbos en pasado (pretérito indefinido o imperfecto).'
+          - 'Reflexión, ayer y hoy (15 minutos): escoge una frase en pasado de la canción y conéctala con una consecuencia en presente. Haz lo mismo con 2 ejemplos más.'
+          - 'Tus propias conexiones (15 minutos): escribe 3 frases en pasado (reales o inventadas) y una consecuencia en presente para cada una (abajo). Comparte con un compañero.'
+          - 'Cierre (5 minutos): ¿por qué Juanes mezcla pasado y presente en la canción?'
+        example: |-
+          *Ayer estudié toda la noche → Hoy estoy cansado.*
+          *Ayer comí demasiada pizza → Hoy tengo dolor de estómago.*
+          *Ayer estaba nervioso → Hoy me siento tranquilo.*
+        resource:
+          label: Juanes, «La camisa negra» (YouTube)
+          url: https://www.youtube.com/results?search_query=Juanes+La+Camisa+Negra
+      - id: act1-connections
+        type: discussionQuestions
+        title: Ayer… → Hoy…
+        items:
+          - question: Ayer ___ → Hoy ___.
+          - question: Ayer ___ → Hoy ___.
+          - question: Ayer ___ → Hoy ___.
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Biografía musical'
+        skills: [Narrativa en tiempo mixto, Habilidades sociales]
+        minutes: 55
+        steps:
+          - 'Introducción (5 minutos): ¿qué cantantes latinos conoces? ¿Qué canción famosa recuerdas?'
+          - 'Lectura (10 minutos): lee una mini biografía de un cantante, o busca en internet información básica (país, nacimiento, canción más famosa, estilo musical).'
+          - 'Preparación (10 minutos): escribe 3–4 frases sobre un cantante (abajo). Atención a la diferencia entre pasado y presente.'
+          - 'Presentación (15 minutos): presenta tu cantante al grupo en 30 segundos.'
+          - 'Comparaciones (10 minutos): en parejas o grupos, comparen dos artistas: *Shakira es más famosa que Rosalía. Bad Bunny tiene más canciones de reguetón que Marc Anthony. Shakira nació en 1977 y Rosalía nació en 1992.*'
+          - 'Cierre (5 minutos): ¿qué artista te gusta más y por qué?'
+        example: |-
+          *Shakira nació en Barranquilla, Colombia, en 1977. Su primera canción famosa fue «Estoy aquí». Ahora vive en Miami. Es famosa por combinar el pop con ritmos latinos.*
+          *Rosalía nació cerca de Barcelona en 1992. Una de sus canciones más famosas es «Con altura». Canta pop, reguetón y flamenco. A mí me gusta porque es muy creativa.*
+      - id: act2-bio
+        type: discussionQuestions
+        title: Mi cantante
+        items:
+          - question: Nació en ___ (ciudad / país) en ___ (año).
+          - question: Su canción más famosa es ___.
+          - question: Ahora ___ (vive en / canta en / tiene ___ años).
+          - question: A mí me gusta porque ___.
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Adivina el artista'
+        skills: [Habilidades sociales, Narrativa en tiempo mixto]
+        minutes: 47
+        steps:
+          - 'Calentamiento (5 minutos): mira las fotos de 3–4 cantantes famosos y repasa las estructuras: *Nació en… / Su estilo es… / Su canción más famosa es…*'
+          - 'Explicación (2 minutos): tu profesor describe a un cantante sin decir su nombre. Tienes que adivinar quién es.'
+          - 'Ronda del profesor (10 minutos): escucha las descripciones y adivina.'
+          - 'Ronda de estudiantes (15 minutos): en parejas o grupos pequeños, recibe una tarjeta con un artista, prepara una descripción de 3 frases y léela a la clase. La clase adivina.'
+          - 'Comparaciones (10 minutos): compara los artistas: *Bad Bunny es más joven que Shakira. Shakira es más famosa que Rosalía.*'
+          - 'Cierre (5 minutos): ¿cuál de estos cantantes prefieres y por qué? Responde con 1 frase.'
+        example: |-
+          *Shakira nació en Colombia. Su estilo es el pop latino. Su canción más famosa es «Hips Don't Lie».*
+          *Nació en Puerto Rico. Su estilo es el reguetón. Su canción más famosa es «Dákiti».* → *¡Es Bad Bunny!*
+      - id: act3-description
+        type: discussionQuestions
+        title: Mi descripción
+        items:
+          - question: Nació en ___. / Es de ___.
+          - question: Su estilo es ___.
+          - question: Su canción más famosa es ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Recuerdos musicales'
+        skills: [Narrativa en tiempo mixto, Habilidades sociales]
+        steps:
+          - Lee las preguntas de tu nivel.
+          - Responde con frases cortas. Usa el comienzo de la frase.
+          - En parejas, haz las preguntas a tu compañero y comparte con el grupo un recuerdo de tu compañero.
+      - id: act4-iniciante
+        type: discussionQuestions
+        title: Nivel iniciante (pretérito indefinido)
+        items:
+          - question: ¿Cuál fue la primera canción que te gustó?
+            frame: La primera canción que me gustó fue ___.
+          - question: ¿Qué música escuchaste cuando eras niño / niña?
+            frame: Escuché música ___.
+          - question: ¿Fuiste a un concierto? ¿De quién?
+            frame: Sí, fui a un concierto de ___. / No, no fui a ningún concierto.
+          - question: ¿Tocaste un instrumento musical? ¿Cuál?
+            frame: Sí, toqué ___. / No, no toqué ningún instrumento.
+          - question: ¿Cantaste en la escuela?
+            frame: Sí, canté en ___. / No, no canté.
+          - question: ¿Viste programas de música en la televisión? ¿Cuáles?
+            frame: Sí, vi ___. / No, no vi ___.
+          - question: ¿Bailaste mucho cuando eras niño / niña?
+            frame: Sí, bailé ___. / No, no bailé mucho.
+      - id: act4-intermedio
+        type: discussionQuestions
+        title: Nivel intermedio (pretérito indefinido + imperfecto)
+        items:
+          - question: ¿Cuál fue la primera canción que aprendiste de memoria? ¿Dónde la escuchaste?
+            frame: La primera canción que aprendí fue ___. La escuché en ___.
+          - question: ¿Qué música ponían tus padres en casa cuando eras niño / niña?
+            frame: Mis padres ponían ___. Siempre ___.
+          - question: ¿Cuál fue el primer concierto o festival al que fuiste? ¿Cómo fue la experiencia?
+            frame: Fui a un concierto de ___ en ___ (año). Fue ___.
+          - question: ¿Tocabas o estudiabas algún instrumento? ¿Durante cuánto tiempo?
+            frame: Sí, tocaba ___ durante ___. / No, no tocaba ningún instrumento.
+          - question: ¿Veías programas de música en la televisión? ¿Qué programas te gustaban?
+            frame: Sí, veía ___. Me gustaba ___.
+          - question: ¿Bailabas mucho de niño / niña? ¿Qué música bailabas?
+            frame: Sí, bailaba ___ con ___. / No, no bailaba.
+      - id: act5
+        type: classActivity
+        title: 'Actividad 5: La entrevista musical'
+        skills: [Habilidades sociales, Narrativa en tiempo mixto]
+        minutes: 37
+        steps:
+          - 'Introducción (5 minutos): hoy somos periodistas de música. Cada estudiante entrevista a un compañero sobre sus gustos musicales de hoy y de antes.'
+          - 'Preparación (5 minutos): elige 3–4 preguntas de la lista (abajo) o inventa una más.'
+          - 'Entrevistas en parejas (12 minutos): hagan turnos para preguntar y responder. Escribe 2–3 frases con la información más interesante de tu compañero.'
+          - 'Presentación (10 minutos): presenta a tu compañero como si fuera un artista.'
+          - 'Cierre (5 minutos): ¿qué géneros aparecieron más en la clase? ¿Qué diferencias hay entre la música de antes y la de hoy? ¿Cuál fue la respuesta más sorprendente?'
+        example: |-
+          *Hoy Marta escucha reguetón, pero antes escuchaba música pop. Su primer concierto fue de Shakira en 2015.*
+          *Este es Juan. Hoy escucha salsa, pero antes escuchaba rock. Su canción favorita de niño era «La Bamba». El año pasado fue a un concierto de Marc Anthony.*
+      - id: act5-questions
+        type: discussionQuestions
+        title: Preguntas para la entrevista
+        items:
+          - question: ¿Qué música escuchas hoy?
+          - question: ¿Cuál era tu canción favorita cuando eras niño / niña?
+          - question: ¿Fuiste a un concierto alguna vez? ¿De quién?
+          - question: ¿Qué género te gustaba antes y ya no escuchas?
+          - question: ¿Qué cantante te sorprende o te gusta mucho hoy?
+          - question: 'Mi pregunta:'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Habilidades sociales** (preguntas de
+          calentamiento, Actividades 3, 4 y 5) y **Narrativa en tiempo mixto**
+          (Actividades 1, 2 y 4). Las actividades son largas (entre 37 y 60
+          minutos): elige una o dos para cada clase. Las preguntas y la Actividad 4
+          tienen dos niveles: iniciante (A1–A2 bajo) e intermedio (A2 alto).
+      - id: n-intro
+        anchor: intro
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup-iniciante
+        text: Elige el nivel según el grupo. Haz al menos dos preguntas a cada estudiante.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Pon la canción (el enlace es una búsqueda en YouTube; elige el video
+          oficial). Para la segunda escucha, prepara tú el fragmento con huecos a
+          partir de la letra real (por ejemplo, la letra en genius.com) y compártelo
+          en pantalla: no copies la letra en la plataforma. El cuaderno anterior daba
+          estas respuestas: tengo, tengo, perdí, perdí, estaba, dejaste, seguía,
+          quedé; compruébalas con la letra real, porque el fragmento del cuaderno no
+          coincide con la canción. Idea clave del cierre: el pasado explica lo que
+          siente hoy.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Escribe en la pizarra nombres de cantantes (Shakira, Bad Bunny, Rosalía,
+          Marc Anthony…). Opción A: reparte fichas con mini biografías (4–5 frases
+          con fotos). Opción B: si hay internet, los estudiantes buscan la
+          información. Deja en la pizarra las estructuras modelo. Se practican el
+          pasado (nació, fue, tuvo), el presente (es, canta, vive) y los
+          comparativos.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Prepara fotos de 3–4 cantantes y tarjetas con nombres y datos de artistas.
+          Si hace falta, escribe en la pizarra: Nació en… / Es de… / Su estilo es… /
+          Su canción más famosa es… Da 4–5 descripciones. Fácil: país + estilo +
+          canción. Difícil: solo dos pistas. Anota en la pizarra las comparaciones
+          de los estudiantes.
+      - id: n-act5
+        anchor: act5
+        text: Entrega la lista de preguntas modelo. La presentación final crea un pequeño «festival de entrevistas musicales».
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: musica-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-narrativa
+        type: ruleSummary
+        skill: Narrativa en tiempo mixto
+        rules:
+          - text: '**Presente**: para hablar de gustos, opiniones y rutinas musicales.'
+            examples: [Me gusta escuchar salsa cuando cocino., Hoy escucho reguetón.]
+          - text: '**Pretérito indefinido**: para narrar hechos puntuales en el pasado.'
+            examples:
+              - Ayer escuché una canción famosa.
+              - Fui a un concierto de Shakira en 2015.
+              - La primera canción que me gustó fue «La Bamba».
+          - text: '**Pretérito imperfecto** (nivel intermedio): para describir hábitos y situaciones del pasado.'
+            examples:
+              - Cuando era niño, escuchaba música infantil.
+              - Mis padres ponían salsa en casa todos los días.
+              - En esa época siempre bailábamos en las fiestas.
+          - text: '**Conexión pasado–presente**: una acción del pasado explica cómo estás hoy.'
+            examples:
+              - Ayer estudié toda la noche → Hoy estoy cansado.
+              - Ayer comí demasiado → Hoy tengo dolor de estómago.
+      - id: rules-comparaciones
+        type: ruleSummary
+        skill: Comparativos y superlativos
+        rules:
+          - text: 'Para contrastar artistas y géneros: **más / menos… que**, **el / la más…**'
+            examples:
+              - Shakira es más famosa que Rosalía.
+              - Bad Bunny tiene más canciones de reguetón que Marc Anthony.
+              - Rosalía es la más joven del grupo.
+      - id: rules-sociales
+        type: ruleSummary
+        skill: Habilidades sociales
+        rules:
+          - text: 'Preguntas en presente:'
+            examples: [¿Qué música escuchas hoy?]
+          - text: 'Preguntas en pasado:'
+            examples:
+              [¿Fuiste a un concierto alguna vez?, ¿Qué música escuchabas cuando eras niño / niña?]
+          - text: 'En una entrevista combinamos los dos tiempos: *Hoy escucha salsa, pero antes escuchaba rock.*'
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: musica-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea
+      - id: write
+        type: discussionQuestions
+        title: 'Parte 1: Escribe'
+        items:
+          - question: Escribe 3 frases en presente sobre la música que escuchas hoy.
+          - question: Escribe 3 frases en pasado (pretérito indefinido) sobre tu experiencia musical.
+          - question: (Nivel intermedio) Escribe 2 frases en imperfecto sobre la música de tu infancia.
+          - question: Haz 1 comparación entre dos artistas o géneros.
+      - id: mori-title
+        type: heading
+        level: 3
+        text: 'Parte 2: Practica con Mori'
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia el mensaje de tu nivel y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-iniciante
+        type: aiTutorPrompt
+        title: Nivel iniciante
+        message: |-
+          ¡Hola Mori! Quiero practicar español sobre la música. Por favor:
+          1. Hazme 3 preguntas en presente sobre la música que escucho hoy.
+          2. Hazme 3 preguntas en pretérito indefinido sobre mi experiencia musical.
+          3. Hazme 2 preguntas para comparar dos artistas o géneros musicales.
+          Corrige mis respuestas y pídeme repetir la forma correcta.
+      - id: mori-intermedio
+        type: aiTutorPrompt
+        title: Nivel intermedio
+        message: |-
+          ¡Hola Mori! Quiero practicar español sobre la música. Por favor:
+          1. Hazme 3 preguntas en presente sobre la música que escucho hoy.
+          2. Hazme 3 preguntas en pretérito indefinido sobre mi experiencia musical.
+          3. Hazme 2 preguntas en imperfecto sobre la música de mi infancia.
+          4. Hazme 2 preguntas para comparar dos artistas o géneros musicales.
+          Corrige mis respuestas y pídeme repetir la forma correcta.
+      - id: mori-playlist
+        type: aiTutorPrompt
+        title: 'Parte 3: La playlist de mi vida (opcional)'
+        message: >-
+          Mori, ayúdame a crear una playlist de mi vida: 2 canciones de mi infancia,
+          2 de mi adolescencia y 2 de hoy. Hazme preguntas para escribir una frase
+          sobre cada canción.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: musica-practica
+    book: workbook
+    title: 'Práctica: Música'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-sociales
+        type: activity
+        activity: musica-sociales
+      - id: ex-narrativa
+        type: activity
+        activity: musica-narrativa
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: musica-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la música
+        glossLang: he
+        link: https://quizlet.com/br/1072064549/musica-flash-cards/
+        items: &musica-words
+          - { term: Música, gloss: מוזיקה }
+          - { term: Canción, gloss: שיר }
+          - { term: Bailar, gloss: לרקוד }
+          - { term: Cantar, gloss: לשיר }
+          - { term: Escuchar, gloss: להקשיב / לשמוע }
+          - { term: Artista, gloss: אמן / אמנית }
+          - { term: Cantante, gloss: זמר / זמרת }
+          - { term: Género, gloss: ז'אנר }
+          - { term: Estilo, gloss: סגנון }
+          - { term: Reguetón, gloss: רגאטון }
+          - { term: Salsa, gloss: סלסה }
+          - { term: Flamenco, gloss: פלמנקו }
+          - { term: Pop, gloss: פופ }
+          - { term: Rock, gloss: רוק }
+          - { term: Concierto, gloss: קונצרט / הופעה }
+          - { term: Festival, gloss: פסטיבל }
+          - { term: Biografía, gloss: ביוגרפיה }
+          - { term: Vida, gloss: חיים }
+          - { term: Infancia, gloss: ילדות }
+          - { term: Juventud, gloss: נעורים }
+          - { term: Pasado, gloss: עבר }
+          - { term: Presente, gloss: הווה }
+          - { term: Futuro, gloss: עתיד }
+          - { term: Recuerdo, gloss: זיכרון }
+          - { term: Historia, gloss: סיפור / היסטוריה }
+          - { term: Comparación, gloss: השוואה }
+          - { term: Famoso, gloss: מפורסם }
+          - { term: Creativo, gloss: יצירתי }
+          - { term: Divertido, gloss: מצחיק / מהנה }
+          - { term: Aburrido, gloss: משעמם }
+          - { term: Sorprendente, gloss: מפתיע }
+          - { term: Favorito, gloss: אהוב }
+          - { term: Opinión, gloss: דעה }
+          - { term: Experiencia, gloss: ניסיון }
+          - { term: Cultura, gloss: תרבות }
+          - { term: País, gloss: מדינה }
+
+vocabulary:
+  - slug: musica
+    title: Música
+    items: *musica-words
+
+activities:
+  - slug: musica-sociales
+    title: 'Habilidades sociales: preguntas sobre la música'
+    minutes: 8
+    items:
+      - id: une-respuestas
+        type: matching
+        prompt: Une cada pregunta con su respuesta.
+        pairs:
+          - [¿Qué música escuchas hoy?, Escucho reguetón.]
+          - [¿Fuiste a un concierto alguna vez?, 'Sí, fui a un concierto de Shakira.']
+          - [¿Tocaste un instrumento?, 'Sí, toqué la guitarra.']
+          - [¿Cantaste en la escuela?, 'No, no canté.']
+          - [¿Cuál era tu canción favorita cuando eras niño?, Mi canción favorita era «La Bamba».]
+      - id: fui
+        type: multipleChoice
+        prompt: —¿Fuiste a un concierto? —Sí, ___ a un concierto de Marc Anthony.
+        options:
+          - { text: fui, correct: true }
+          - { text: fue, feedback: '*Fue* es para él o ella. Para hablar de ti decimos *fui*.' }
+          - {
+              text: voy,
+              feedback: '*Voy* es presente. La pregunta es en pasado (*¿Fuiste…?*): *fui*.',
+            }
+      - id: escuchas
+        type: fillBlank
+        prompt: Completa la pregunta con el verbo *escuchar* en presente.
+        text: —¿Qué música ___ hoy? —Hoy escucho salsa.
+        blanks: [[escuchas]]
+      - id: pregunta-pasado
+        type: multipleChoice
+        prompt: ¿Qué pregunta está en pasado?
+        options:
+          - { text: ¿Qué música escuchaste ayer?, correct: true }
+          - {
+              text: ¿Qué música escuchas hoy?,
+              feedback: '*Escuchas* es presente. En pasado decimos *escuchaste*.',
+            }
+          - {
+              text: ¿Qué música te gusta?,
+              feedback: '*Te gusta* es presente. En pasado decimos, por ejemplo, *¿Qué música escuchaste ayer?*',
+            }
+      - id: gustos-presente
+        type: trueFalse
+        prompt: 'Para hablar de gustos y rutinas de hoy usamos el presente: *Me gusta escuchar salsa cuando cocino.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! Gustos, opiniones y rutinas → presente.
+          incorrect: 'Gustos, opiniones y rutinas van en presente: *Me gusta escuchar salsa cuando cocino.*'
+      - id: toque
+        type: fillBlank
+        prompt: Responde con el verbo *tocar* en pasado (yo).
+        text: —¿Tocaste un instrumento? —Sí, ___ el piano.
+        blanks: [[toqué, yo toqué]]
+      - id: ordena-favorita
+        type: reorderSentence
+        prompt: Ordena las palabras para hacer una pregunta.
+        sentence: ¿Cuál es tu canción favorita?
+      - id: tu-pregunta
+        type: shortAnswer
+        prompt: Escribe una pregunta en pasado para entrevistar a un compañero sobre la música.
+
+  - slug: musica-narrativa
+    title: 'Narrativa: presente y pasado'
+    minutes: 8
+    items:
+      - id: hoy-estoy
+        type: multipleChoice
+        prompt: Ayer estudié toda la noche. Hoy ___ cansado.
+        options:
+          - { text: estoy, correct: true }
+          - { text: estuve, feedback: 'Con *hoy* hablamos del presente: *hoy estoy cansado*.' }
+          - { text: estaba, feedback: '*Estaba* es pasado. Con *hoy* usamos el presente: *estoy*.' }
+      - id: comi-tengo
+        type: fillBlank
+        prompt: Completa con *comer* en pasado y *tener* en presente (yo).
+        text: Ayer ___ demasiada pizza. Hoy ___ dolor de estómago.
+        blanks: [[comí, yo comí], [tengo, yo tengo]]
+      - id: escuchaba
+        type: multipleChoice
+        prompt: Cuando era niño, ___ música infantil todos los días.
+        options:
+          - { text: escuchaba, correct: true }
+          - {
+              text: escucho,
+              feedback: '*Escucho* es presente. Para un hábito del pasado usamos el imperfecto: *escuchaba*.',
+            }
+          - {
+              text: voy a escuchar,
+              feedback: '*Voy a escuchar* es futuro. Para un hábito del pasado usamos el imperfecto: *escuchaba*.',
+            }
+      - id: imperfecto-habitos
+        type: trueFalse
+        prompt: 'El pretérito imperfecto describe hábitos del pasado: *Mis padres ponían salsa en casa todos los días.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *Ponían* es un hábito del pasado.
+          incorrect: 'Sí: el imperfecto (*ponían, escuchaba, bailábamos*) describe hábitos del pasado.'
+      - id: une-infinitivos
+        type: matching
+        prompt: Une cada forma con su infinitivo.
+        pairs:
+          - [nació, nacer]
+          - [tuvo, tener]
+          - [ponían, poner]
+          - [bailábamos, bailar]
+          - [escuché, escuchar]
+      - id: biografia
+        type: fillBlank
+        prompt: Completa la biografía con *nació* o *vive*.
+        text: Shakira ___ en Barranquilla en 1977. Ahora ___ en Miami.
+        blanks: [[nació], [vive]]
+        wordBank: [nació, vive]
+      - id: ordena-antes
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Hoy escucho salsa, pero antes escuchaba rock.
+      - id: marta
+        type: multipleChoice
+        prompt: Hoy Marta escucha reguetón, pero antes ___ música pop.
+        options:
+          - { text: escuchaba, correct: true }
+          - {
+              text: escucha,
+              feedback: 'Con *antes* hablamos de un hábito del pasado: *escuchaba*.',
+            }
+          - {
+              text: escuché,
+              feedback: '*Escuché* es para *yo*. Marta es ella, y es un hábito del pasado: *escuchaba*.',
+            }

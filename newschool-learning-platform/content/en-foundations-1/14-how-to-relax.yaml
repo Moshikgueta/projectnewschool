@@ -1,0 +1,526 @@
+# Cycle "How to relax", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: how-to-relax
+title: How to relax
+goal: Talk about how you relax, using sentences with actions and descriptive sentences in the present.
+position: 14
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Sentences with actions" and "Descriptive sentences")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    The source gives no times for the introduction, the warm-up, the activities or
+    the summary, so no minutes are recorded in this cycle. Please add them if you
+    want them.
+  - The tracking parameter (?funnelUUID=…) was removed from the Quizlet link.
+  - >-
+    Warm-up: "In your opinion, is music good to feel relaxed?" → "In your opinion, is
+    music good for relaxing?"; the frame "I relax in/at ___" → "I relax in the ___ /
+    at ___."; question 6 ("home or nature") had no answer frame, so one was added: "I
+    prefer to relax at home / in nature because ___."
+  - >-
+    Activity 1: the instructions were rewritten in clear English ("two things they
+    see, hear, feel on their body and smell. one sense at a time…"). "Feel on their
+    body" is written as *touch*, as in the frames. The frames are "I see ___ and ___."
+    etc. (two things per sense). The source has no example for students, so a short
+    one was added ("I see the sea and a big tree. I hear birds and soft music.").
+  - >-
+    Activity 2: "Stage 2" appeared twice (the second is the sharing stage). A frame
+    was added: "I feel ___ when I ___, because ___.", with a new example ("I feel
+    tired when I wake up early, because I like to sleep.").
+  - >-
+    Activity 3: "Each student will interview to their couple and ask what to they do
+    when…" → "Interview your partner: What do you do when…?"; "couples" → "pairs";
+    the four situations are written as questions to the partner. "Breakout rooms
+    dynamic finishes" became a teacher note.
+  - >-
+    Activity 4: the frames "It is ___. / It has ___. / I ___ there." were added from
+    the example. The example clues use action verbs ("I eat ice cream there"), but the
+    activity practises descriptive sentences, so the frame "It is ___" was added.
+    Please confirm. "ice-cream" → "ice cream".
+  - >-
+    Summary, skill 1, rule 1 says the plain verb is for "I, You, They"; *we* was added
+    ("I, you, we, they"), as in the Friendship cycle. The wrong examples are marked
+    with ✗.
+  - >-
+    Homework: "Open the school chatbot" → "Open the chat with Mori"; "using the skills
+    descriptive sentences and sentences with actions" → "using the skills Descriptive
+    sentences and Sentences with actions"; "Now is your turn!" → "Now it's your turn!"
+    (twice).
+  - >-
+    Vocabulary: kept as in the source. *Relaxed* and *Calm* both have the gloss רגוע
+    (Calm: רגוע (שקט)); keep both?
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: how-to-relax-class
+    title: 'Class: How to relax'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: How to relax
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Sentences with actions
+            description: 'Verbs in the present: *I read a book. She cooks soup.*'
+          - name: Descriptive sentences
+            description: '*am, is, are* + a describing word: *The tea is warm.*'
+      - id: quizlet
+        type: externalLink
+        label: Relaxation words on Quizlet
+        url: https://quizlet.com/il/856287127/basic-english-relaxation-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I relax with ___.
+        example: I am Dana. I relax with Netflix.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: When do you feel relaxed?
+            frame: I feel relaxed when I ___.
+          - question: When do you feel stressed?
+            frame: I feel stressed when I ___.
+          - question: What do you do to relax?
+            frame: I ___ to relax. I do it ___ times a week.
+          - question: When do you relax? In the morning or at night?
+            frame: I relax in the ___ / at ___.
+          - question: In your opinion, is music good for relaxing?
+            frame: I think music is ___ (good, boring, relaxing) because ___.
+          - question: Do you prefer to relax at home or in nature? Why?
+            frame: I prefer to relax at home / in nature because ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Talk about your senses'
+        skills: [Sentences with actions]
+        steps:
+          - Review the words for the five senses with your teacher.
+          - Listen to your teacher's two examples for one sense.
+          - Say two things of your own for the same sense. Then go on to the next sense.
+        example: |-
+          *I see the sea and a big tree.*
+          *I hear birds and soft music.*
+      - id: act1-senses
+        type: discussionQuestions
+        title: My senses
+        items:
+          - question: I see ___ and ___.
+          - question: I hear ___ and ___.
+          - question: I touch ___ and ___.
+          - question: I smell ___ and ___.
+          - question: I eat ___ and ___.
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: How do you feel when…?'
+        skills: [Descriptive sentences]
+        steps:
+          - Work in pairs.
+          - Interview your partner with the questions below.
+          - Share your partner's answers with the group.
+        example: '*I feel tired when I wake up early, because I like to sleep.*'
+      - id: act2-questions
+        type: discussionQuestions
+        title: How do you feel when you…
+        items:
+          - question: …wake up early? Why?
+            frame: I feel ___ when I ___, because ___.
+          - question: …study English? Why?
+          - question: …eat your favorite food?
+          - question: …see your best friend?
+          - question: …watch a funny movie?
+          - question: …have a test?
+          - question: …play a game?
+          - question: …are hungry?
+          - question: …get a gift?
+          - question: …are at home?
+          - question: …listen to music?
+          - question: …go to the beach?
+          - question: …speak English?
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: What do you do when…?'
+        skills: [Sentences with actions]
+        steps:
+          - Work in pairs.
+          - Interview your partner with the questions below. Write down your partner's answers.
+          - Share one of your partner's answers with the group. Remember the *-s* for *he* and *she*.
+        example: |-
+          *Maya eats chocolate when she is hungry.*
+          *Daniel listens to music when he feels stressed.*
+          *Tomer walks with his dog when he goes to the park.*
+      - id: act3-questions
+        type: discussionQuestions
+        title: What do you do when…
+        items:
+          - question: …you want to sleep, but you are at work?
+            frame: When I want to sleep at work, I ___.
+          - question: …you feel stressed?
+            frame: When I feel stressed, I ___.
+          - question: …you feel hungry? (If you eat, what do you eat?)
+            frame: When I feel hungry, I eat ___.
+          - question: …you want to disconnect?
+            frame: When I want to disconnect, I ___.
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Describe a relaxing place and guess'
+        skills: [Descriptive sentences]
+        steps:
+          - Think of a place you find relaxing. Say 3 things about it.
+          - The group writes what they think the place is. Then each student says their guess.
+          - Say what the place is. Who guessed right?
+          - The first person to guess right goes next.
+        example: |-
+          *It has **water**.*
+          *I eat **ice cream** there.*
+          *I wear a **swimsuit**.*
+          Answer: **The beach!**
+      - id: act4-clues
+        type: discussionQuestions
+        title: My relaxing place
+        items:
+          - question: It is ___.
+          - question: It has ___.
+          - question: I ___ there.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Sentences with actions** (warm-up questions,
+          Activity 1 or 3) and **Descriptive sentences** (warm-up questions, Activity 2
+          or 4). Choose one activity for each skill.
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first ("I relax with Netflix"), then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Go one sense at a time: give two examples of your own (two things you see,
+          hear, touch, smell or eat), then each student says their two things for that
+          sense.
+      - id: n-act2
+        anchor: act2
+        text: After the pair work, each student shares two or three of their partner's answers in the third person.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Use breakout rooms for the pair work. When the rooms close, each student
+          shares one answer of their partner in the third person (Maya eats…).
+      - id: n-act4
+        anchor: act4
+        text: Students write their guess before they say it, so everyone guesses.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: how-to-relax-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-actions
+        type: ruleSummary
+        skill: Sentences with actions (verbs in the present)
+        rules:
+          - text: 'Who does the action + the verb (for *I, you, we, they*).'
+            examples:
+              - I read a book when I want to relax.
+              - You drink hot tea on rainy days.
+              - They watch a movie to feel calm.
+          - text: For *he* and *she*, add **-s** to the verb.
+            examples:
+              - He listens to music when he is stressed.
+              - She cooks soup on cold days.
+              - Tom rests on the couch after work.
+          - text: Do **not** write *am, is, are* before a verb.
+            examples:
+              - ✓ I watch TV to relax.
+              - ✓ She drinks chamomile tea before bed.
+              - ✗ I am watch TV to relax.
+              - ✗ She is drinks tea before bed.
+      - id: rules-descriptive
+        type: ruleSummary
+        skill: Descriptive sentences (no action)
+        rules:
+          - text: >-
+              We use these sentences to **describe** things, people, places or
+              situations. They say how something is, not what someone does.
+          - text: 'Use the verb **to be** (*am, is, are*): subject + *am / is / are* + adjective or noun.'
+            examples:
+              - The tea is warm.
+              - She is relaxed after yoga.
+              - The couch is comfortable.
+              - The candles are calming.
+              - The music is soft and peaceful.
+          - text: 'To make a negative sentence, add **not** after *am, is, are*.'
+            examples:
+              - The room is not noisy.
+              - He is not stressed.
+              - The blanket is not cold.
+              - This chair is not comfortable.
+              - The lights are not too bright.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: how-to-relax-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy this message and send it. Mori will ask you questions; answer every one.
+      - id: mori-relax
+        type: aiTutorPrompt
+        title: Talk about how you relax
+        message: >-
+          Hi Mori! I want to practice English. Can you ask me questions about How to
+          Relax using the skills Descriptive sentences and Sentences with actions? Please
+          use only present simple, and correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-routines
+        type: aiTutorPrompt
+        title: Relaxing routines
+        intro: >-
+          Send this message to Mori and describe a relaxing routine. For example: *I
+          sit on a soft chair. I drink tea. I read a book. I listen to quiet music.*
+          (Mori guesses: *You relax at home.*) Then write: **Now it's your turn!
+          Describe a relaxing routine, and I will guess.**
+        message: Hi Mori! Let's do an activity. I describe a relaxing routine, and you guess what I am doing.
+      - id: mori-place
+        type: aiTutorPrompt
+        title: My relaxing place
+        intro: >-
+          Send this message to Mori and describe your place. For example: *There is a
+          big tree. I sit under it and write in my notebook. I hear birds and see
+          flowers.* Then write: **Now it's your turn! Describe your relaxing place, and
+          I will imagine it.**
+        message: Hey Mori! Let's do a new activity. I will describe my favorite relaxing place. You try to imagine it.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: how-to-relax-practice
+    book: workbook
+    title: 'Practice: How to relax'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-actions
+        type: activity
+        activity: how-to-relax-actions
+      - id: ex-descriptive
+        type: activity
+        activity: how-to-relax-descriptive
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: how-to-relax-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Relaxation words
+        glossLang: he
+        link: https://quizlet.com/il/856287127/basic-english-relaxation-flash-cards/
+        items: &relax-words
+          - { term: Relaxed, gloss: רגוע }
+          - { term: Stressed, gloss: לחוץ }
+          - { term: Energetic, gloss: אנרגטי }
+          - { term: Tired, gloss: עייף }
+          - { term: Hungry, gloss: רעב }
+          - { term: Angry, gloss: כועס }
+          - { term: Happy, gloss: שמח }
+          - { term: To feel, gloss: להרגיש }
+          - { term: To sleep, gloss: לישון }
+          - { term: To eat, gloss: לאכול }
+          - { term: To drink, gloss: לשתות }
+          - { term: To listen, gloss: להקשיב }
+          - { term: To watch, gloss: לצפות }
+          - { term: To walk, gloss: ללכת ברגל }
+          - { term: To touch, gloss: לגעת }
+          - { term: To hear, gloss: לשמוע }
+          - { term: To smell, gloss: להריח }
+          - { term: Meditation, gloss: מדיטציה }
+          - { term: Music, gloss: מוזיקה }
+          - { term: Tea, gloss: תה }
+          - { term: Senses, gloss: חושים }
+          - { term: Body, gloss: גוף }
+          - { term: Park, gloss: פארק }
+          - { term: Sandwich, gloss: "סנדוויץ'" }
+          - { term: Movie, gloss: סרט }
+          - { term: Comfortable, gloss: נוח }
+          - { term: Calm, gloss: רגוע (שקט) }
+          - { term: Disconnect, gloss: להתנתק }
+          - { term: Work, gloss: עבודה }
+          - { term: Chocolate, gloss: שוקולד }
+
+vocabulary:
+  - slug: how-to-relax
+    title: How to relax
+    items: *relax-words
+
+activities:
+  - slug: how-to-relax-actions
+    title: 'Sentences with actions: I relax, she relaxes'
+    minutes: 8
+    items:
+      - id: he-listens
+        type: multipleChoice
+        prompt: He ___ to music when he is stressed.
+        options:
+          - { text: listens, correct: true }
+          - { text: listen, feedback: 'With *he* and *she*, add *-s* to the verb: *he listens*.' }
+          - { text: is listen, feedback: 'Do not write *am, is, are* before a verb: *he listens*.' }
+      - id: watch-tv
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: I watch TV to relax., correct: true }
+          - {
+              text: I am watch TV to relax.,
+              feedback: 'Do not write *am, is, are* before a verb: *I watch*.',
+            }
+          - {
+              text: I watches TV to relax.,
+              feedback: 'Add *-s* only for *he* and *she*. With *I*, write *I watch*.',
+            }
+      - id: she-s
+        type: trueFalse
+        prompt: 'With *she*, we add *-s* to the verb: *She cooks soup on cold days.*'
+        answer: true
+        feedback:
+          correct: Right! *he* and *she* + verb + *-s*.
+          incorrect: 'With *he* and *she*, we add *-s*: *she cooks*, *he rests*.'
+      - id: is-drinks
+        type: trueFalse
+        prompt: '*She is drinks tea before bed.* is a correct sentence.'
+        answer: false
+        feedback:
+          correct: 'Right! Do not write *is* before a verb: *She drinks tea before bed.*'
+          incorrect: 'Do not write *is* before a verb. The correct sentence is: *She drinks tea before bed.*'
+      - id: read-rests
+        type: fillBlank
+        prompt: Complete with the verb in brackets.
+        text: I ___ (read) a book when I want to relax. Tom ___ (rest) on the couch after work.
+        blanks: [[read], [rests]]
+      - id: watch-drinks
+        type: fillBlank
+        prompt: Complete with the verb in brackets.
+        text: They ___ (watch) a movie to feel calm. She ___ (drink) chamomile tea before bed.
+        blanks: [[watch], [drinks]]
+      - id: verbs-hebrew
+        type: matching
+        prompt: Match each verb with its meaning in Hebrew.
+        pairs:
+          - [to sleep, לישון]
+          - [to drink, לשתות]
+          - [to listen, להקשיב]
+          - [to smell, להריח]
+          - [to touch, לגעת]
+      - id: drink-tea
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: I drink tea to relax.
+
+  - slug: how-to-relax-descriptive
+    title: 'Descriptive sentences: am, is, are'
+    minutes: 8
+    items:
+      - id: tea-is
+        type: multipleChoice
+        prompt: The tea ___ warm.
+        options:
+          - { text: is, correct: true }
+          - { text: are, feedback: '*The tea* is one thing: use *is*.' }
+          - { text: am, feedback: '*am* is only for *I*: *I am relaxed*.' }
+      - id: not-stressed
+        type: multipleChoice
+        prompt: Which negative sentence is correct?
+        options:
+          - { text: He is not stressed., correct: true }
+          - { text: He not is stressed., feedback: 'Put *not* after *is*: *He is not stressed.*' }
+          - {
+              text: He does not stressed.,
+              feedback: 'A descriptive sentence uses *am, is, are* + *not*: *He is not stressed.*',
+            }
+      - id: to-be
+        type: trueFalse
+        prompt: 'Descriptive sentences use the verb *to be*: *am, is, are*.'
+        answer: true
+        feedback:
+          correct: 'Right! *The couch is comfortable.*'
+          incorrect: 'Descriptive sentences use *am, is, are*: *The couch is comfortable.*'
+      - id: not-before
+        type: trueFalse
+        prompt: '*The room not is noisy.* is a correct negative sentence.'
+        answer: false
+        feedback:
+          correct: 'Right! *not* comes after *is*: *The room is not noisy.*'
+          incorrect: '*not* comes after *is*. The correct sentence is: *The room is not noisy.*'
+      - id: am-is-are
+        type: fillBlank
+        prompt: Complete with *am*, *is* or *are*.
+        text: I ___ relaxed. The couch ___ comfortable. The candles ___ calming.
+        blanks: [[am], [is], [are]]
+        wordBank: [am, is, are]
+      - id: make-negative
+        type: fillBlank
+        prompt: 'Complete with a negative: *is not* or *are not*.'
+        text: The blanket is warm. It ___ cold. The lights are soft. They ___ too bright.
+        blanks: [[is not, isn't], [are not, aren't]]
+      - id: feelings
+        type: matching
+        prompt: Match each word with its meaning in Hebrew.
+        pairs:
+          - [relaxed, רגוע]
+          - [stressed, לחוץ]
+          - [tired, עייף]
+          - [hungry, רעב]
+          - [comfortable, נוח]
+      - id: couch
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: The couch is very comfortable.

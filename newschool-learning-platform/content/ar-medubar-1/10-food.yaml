@@ -1,0 +1,687 @@
+# Cycle "אוכל – אִלְאַכֵּל", converted from the spoken Arabic level 1 notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew
+# transliteration); Hebrew instructions carry `lang: he`.
+course: ar-medubar-1
+slug: food
+title: אוכל – אִלְאַכֵּל
+goal: להגיד מה אני רוצה לאכול ולשתות עם בִּדִּי + פועל, ולהשתמש בברכות של מסעדה.
+position: 10
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("בִּדִּי + verb" and "Restaurant greetings") are NEW:
+    the notebook has no self-correcting exercises. They were written only from this
+    cycle's activities, summary and vocabulary. An Arabic teacher must check every
+    right answer, every wrong option and every transliteration before students see
+    them.
+  - >-
+    The notebook lists three skills (בִּדִּי + verb, simple food questions and answers,
+    restaurant greetings). The cycle overview keeps all three; the two exercises cover
+    בִּדִּי + verb and the greetings.
+  - >-
+    The notebook says to choose 2 of 3 main activities, but it has 4 activities
+    (Activity 4, the market, was added later). The teacher note says "2 of the 4".
+    Please confirm.
+  - >-
+    The introduction note says to add "עֻמְרִי…" only for a strong class, but the frame
+    already contains "עומְרִי ___ סַנֵה". The line is kept in the frame; the teacher
+    note says it is optional.
+  - >-
+    Small fixes: "סִֶעְר" (two vowels on one letter) → "סִעְר"; "ו וין" → "ווין"; the
+    double full stop after "בִּדִּי לֵימוֹן" removed; the market activity's stages
+    jump from 3/4 to 6, renumbered as stage 5; the Arabic shadda written on Hebrew
+    letters ("מַיّ") is written with a Hebrew dagesh ("מַיּ"); Arabic-script words
+    in the vocabulary were left out (terms are in transliteration only); the
+    Quizlet "?new" parameter was removed.
+  - >-
+    Dialect / spelling doubts, NOT changed (teacher's call): the warm-up frame
+    "בִּחֶבְּ אוכֶּל" (elsewhere "בַּחֵבּ", 1st person); "I eat" is written both
+    "אַכֻּל" and "אוכֶּל"; "I add" is written "בַּדִיף", "בַּדִּיף" and "בַּדִ'יף"
+    (ض); "מִין בֻּוכֵּל" (Activity 3 title); "פִיה אַחַ׳אנִי?" in the market dialogue
+    (meaning unclear: "anything else?"); "הַאדִי רִשֶׁת אִלְקַנַא" (shopping list);
+    "אַסְלָאם עַלֵכֻּם"; "קַהְוֶה" (homework) vs "ק'הְוֶה" (vocabulary); the spellings
+    "ח'יָאר / חִ'יָאר / חְ'יָאר" are kept as each place has them.
+  - >-
+    Vocabulary: the row "دكانة – סופר / מכולת" has no transliteration in the notebook;
+    it is written here as "דֻכַּאנֶה" (NEW transliteration, please check). The words
+    "ח'ובֶּז – לחם" appeared twice; kept once. The fruit/vegetable and quantity words
+    of Activity 4 were added to the vocabulary list. "אני אוכֶל" (verb) and
+    "אַכְּלֶה / אַכֶּל" (noun) are kept as two rows.
+  - >-
+    The homework ("שיעורי בית") is a written worksheet, not Mori messages. It is kept
+    as answer boxes; a line tells the student to send the answers to Mori for
+    correction. The greeting-matching task (task 5) also appears as a self-correcting
+    exercise in the workbook.
+  - >-
+    The "תשובות תלמידים 1-3" lines are replaced by the optional answer boxes; time
+    ranges are rounded up.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: food-class
+    title: 'שיעור: אוכל'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: אוכל – אִלְאַכֵּל
+      - id: skills
+        type: cycleOverview
+        lang: he
+        skills:
+          - name: '"אני רוצה" – בִּדִּי + פועל'
+            description: בִּדִּי אַכֻּל, בִּדִּי אַשְרַבּ, בִּדִּי אַטְלֻבּ
+          - name: שאלות ותשובות על אוכל ושתייה
+            description: מה אוהבים לאכול, מה מזמינים במסעדה
+          - name: ברכות במסעדה
+            description: יַעְטִיכּ אִלְעָאפְיֶה, יְסַלּמוּ אִידֵכּ, סַחַּה וּהַנָּא, לַו סַמַחְת
+      - id: quizlet
+        type: externalLink
+        lang: he
+        label: אוכל בקוויזלט
+        url: https://quizlet.com/br/1122963562/%D7%90%D7%95%D7%9B%D7%9C-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        lang: he
+        text: תעָארֻף – סבב פתיחה
+      - id: intro
+        type: sentenceFrame
+        frame: |-
+          אִסְמִי ___.
+          עומְרִי ___ סַנֵה.
+          אַנַא סָאכֵּן / סָאכְּנֶה פִי ___.
+          בַּחֵבּ אַכֻּל ___.
+        example: |-
+          אִסְמִי אינאס.
+          עֻמְרִי סֶתֶּה ותלאתין סַנֵה.
+          אַנַא סָאכְּנֶה פִי עין מאהל.
+          בַּחֵבּ אַכֻּל משָׁאוִי.
+      - id: warmup-title
+        type: heading
+        level: 3
+        lang: he
+        text: אסא'לה – שאלות חימום
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: שוּ בִּתְחֶבְּ תוכֶּל על ר'דָא?
+            frame: |-
+              בִּחֶבְּ אוכֶּל ___.
+              (מַעַכְּרוֹנֵה, סאנדויש טונה, שוֹרַבַּה, כַּעְכֶּה, סלטָה...)
+          - question: שו בֶּתְפַדֶּ'ל, אלאַכֶּל אלאמאלֶח או אלחלו? מע אַמְתֶלֶה!
+          - question: שו בּתֶח'תאר אַכֶּל, עַרַבִּי, איטָאלי או אַסּיָוי? וליש?
+          - question: בֶּשַׁכֶּל עאם, שו בתוטְלובְּ בֶּל מַטְעָם? אַיְ וַגְ'בֶּה?
+          - question: שו אַזְכָּא אַכְּלֶה אַכַּלֶתְהא? ווין?
+          - question: פי אַכֶּל מא בֶּתְחֶבּו?
+            frame: אֶד'א אה.. שו הו? ___
+      - id: activities-title
+        type: heading
+        level: 3
+        lang: he
+        text: פעילויות
+      - id: act1
+        type: classActivity
+        lang: he
+        title: 'פעילות 1: מַטְעַם פִי אִסּֿף (מסעדה בכיתה)'
+        skills: ['"אני רוצה" – בִּדִּי + פועל', ברכות במסעדה]
+        minutes: 20
+        steps:
+          - "מחלקים תפקידים: **נאדֶל** (מלצר), **טַבַּאח'** (טבח) ו**זְבּון** (לקוח)."
+          - 'שלב ההזמנה: הלקוח מזמין לפי התבנית שלמטה.'
+          - 'המלצר חוזר על ההזמנה בגוף שני ושואל: *מֻמְכֵּן תְעִיד?*'
+          - 'הטבח "מכין" ומסביר (אפשר בעברית, עם מילת מפתח בערבית): *בַּבַשֵל פַּטַאטַא, בַּדִּיף זַעְתַר...*'
+          - 'מעגל ברכות: כל אחד משתמש בברכה אחת מבנק המילים.'
+        wordBank:
+          - יַעְטִיכּ אִלְעָאפְיֶה
+          - יְסַלּמוּ אִידֵכּ
+          - תְפַדַּל
+          - לַו סַמַחְת
+          - סַחַּה וּהַנָּא
+      - id: act1-customer
+        type: sentenceFrame
+        prompt: זְבּון
+        frame: |-
+          בִּדִּי אַטְלֻבּ ___.
+          בִּדִּי אַכֻּל ___.
+          בִּדִּי אַשְרַבּ ___.
+      - id: act1-waiter
+        type: sentenceFrame
+        prompt: נאדֶל
+        frame: |-
+          בִּדַּכּ תֻטְלֻבּ ___?
+          בִּדַּכּ תִשְרַבּ ___?
+          מֻמְכֵּן תְעִיד?
+        answerable: false
+      - id: act2
+        type: classActivity
+        lang: he
+        title: "פעילות 2: סּאנדוישי (הסנדוויץ' שלי)"
+        skills: ['"אני רוצה" – בִּדִּי + פועל']
+        minutes: 20
+        steps:
+          - "כל תלמיד בוחר סנדוויץ' שהוא אוהב."
+          - "ממלאים את התבנית: שם הסנדוויץ' ושלושה מרכיבים."
+          - 'מסבירים איך מכינים אותו, עם הפעלים בגוף ראשון: *בַּקַטֵּע, בַּדַּהִן, בַּדִיף, בַּסַכֵּר*.'
+        wordBank:
+          - חֻ'בֵּז
+          - בַּנְדוֹרַה
+          - חִ'יָאר
+          - חַ'ס
+          - חומוס
+          - זִבְּדֶה
+          - טַחִינֵה
+          - חִ'יָאר מַכְּבּוּס
+          - פִלְפֵל אַחְמַר
+          - שַטַּה
+      - id: act2-sandwich
+        type: discussionQuestions
+        title: הַאדָא סּאנדוישִי אִלְמֻפַדַּל
+        items:
+          - question: 'אִסֶם אִלְסּאנדויש: ___'
+          - question: 'מֻכַּוִּנַאת אִלְסּאנדויש: 1) ___ 2) ___ 3) ___'
+          - question: |-
+              בַּקַטֵּע ___.
+              בַּדַּהִן ___.
+              בַּדִיף ___.
+              בַּסַכֵּר אִלְסּאנדויש.
+              סַחַּה וְהַנָּא!
+      - id: act3
+        type: classActivity
+        lang: he
+        title: 'פעילות 3: מִין בֻּוכֵּל וּשוּ? (מי אוכל מה)'
+        skills: ['"אני רוצה" – בִּדִּי + פועל']
+        minutes: 15
+        steps:
+          - 'כל תלמיד כותב לעצמו 3 אנשים: *אִמִי, אַבּוּי, סַאחְבִּי, סַאחְבְּתִי...*'
+          - כותבים מה כל אחד רוצה לאכול ולשתות, לפי הדוגמה.
+          - 'סבב: כל תלמיד מקריא 2–3 משפטים.'
+      - id: act3-example
+        type: examples
+        items:
+          - text: אִמִי בִּדְּהָא תָאכֻּל מַעַכְּרוֹנֵה וּתִשְרַבּ שַאי.
+            gloss: אמא שלי רוצה לאכול מעכרונה ולשתות תה.
+          - text: אַבּוּי בִּדּוֹ יַאכֻּל סּאנדויש חומוס.
+            gloss: אבא שלי רוצה לאכול סנדוויץ' חומוס.
+          - text: אַנַא בִּדִּי אוכֶּל פַלָאפֵל.
+            gloss: אני רוצה לאכול פלאפל.
+      - id: act3-sentences
+        type: discussionQuestions
+        items:
+          - question: ___ בִּדּוֹ / בִּדְּהָא ___.
+          - question: ___ בִּדּוֹ / בִּדְּהָא ___.
+          - question: אַנַא בִּדִּי ___.
+      - id: act4
+        type: classActivity
+        lang: he
+        title: 'פעילות 4: בִּשּׁוּק (בשוק)'
+        skills: ['"אני רוצה" – בִּדִּי + פועל', שאלות ותשובות על אוכל ושתייה]
+        minutes: 20
+        steps:
+          - 'חוזרים על המילים: פירות, ירקות וכמויות (קילו / חצי קילו).'
+          - 'עובדים בזוגות: אחד **בַּיָּאע** (מוכר), אחד **זְבּוּן** (לקוח). אחרי 2 דקות מחליפים.'
+          - 'מקימים בכיתה "דוכנים": דוכן פירות, דוכן ירקות, דוכן לימונדה, דוכן זיתים.'
+          - קונים ומוכרים לפי התבניות והדוגמה.
+          - 'רשימת הקניות שלי: כל תלמיד כותב 3 דברים ואומר אותם בקול.'
+      - id: act4-words
+        type: vocabulary
+        glossLang: he
+        items:
+          - { term: בַּנְדוֹרַה, gloss: עגבנייה }
+          - { term: "ח'יָאר", gloss: מלפפון }
+          - { term: בַּטַאטַא, gloss: תפוח אדמה }
+          - { term: "בִּסָ'ל", gloss: בצל }
+          - { term: "חַ'ס", gloss: חסה }
+          - { term: תופַאח, gloss: תפוח }
+          - { term: מוז, gloss: בננה }
+          - { term: לֵימוֹן, gloss: לימון }
+          - { term: פִלְפֵל אַחְמַר, gloss: פלפל אדום }
+          - { term: זַיִיתוּן, gloss: זיתים }
+          - { term: נֻס כִּילו, gloss: חצי קילו }
+          - { term: כִּילו, gloss: קילו }
+      - id: act4-customer
+        type: sentenceFrame
+        prompt: זְבּוּן
+        frame: |-
+          בִּדִּי ___.
+          שו סִעְר הַאדָא?
+          נֻס כִּילו / כִּילו
+        answerable: false
+      - id: act4-seller
+        type: sentenceFrame
+        prompt: בַּיָּאע
+        frame: |-
+          תְפַדַּל / תְפַדַּלִי.
+          הַאדָא בְּ___ שֵקֶל.
+        answerable: false
+      - id: act4-dialogue
+        type: dialogue
+        lines:
+          - speaker: זְבּוּן
+            text: אַסְלָאם עַלֵכֻּם. בִּדִּי כִּילו בַּנְדוֹרַה וּנֻס כִּילו חִ'יָאר.
+          - speaker: בַּיָּאע
+            text: תְפַדַּלִי. הַאדָא בְּחַ׳מְסַה שֵקֶל. פִיה אַחַ׳אנִי?
+          - speaker: זְבּוּן
+            text: אַיְוַה, בִּדִּי לֵימוֹן.
+      - id: act4-list
+        type: sentenceFrame
+        prompt: רשימת הקניות שלי
+        frame: 'הַאדִי רִשֶׁת אִלְקַנַא: בִּדִּי כִּילו ___, וּבִּדִּי ___, וּנֻס כִּילו ___.'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          בוחרים לפי מצב הכיתה 2 פעילויות עיקריות מתוך 4. מומלץ: פעילות 1 + פעילות 2
+          בשיעור הראשון; פעילות 3 או 4 לשיעור המשך או לחיזוק.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: >-
+          מטרה: היכרות וחיבור לנושא האוכל בתבנית ברורה. המורה מדגים לאט, ואז כל תלמיד
+          עונה באותה תבנית. השורה "עומְרִי..." – רק אם הכיתה חזקה.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: שואלים כל תלמיד לפחות שתי שאלות. התשובות שהתלמידים מקלידים מופיעות כאן מתחת לכל שאלה.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          סימולציה של שיחה בין לקוח, מלצר וטבח. המלצר חוזר על ההזמנה בגוף שני
+          (בִּדַּכּ...). בסוף, מעגל ברכות שירות עם בנק המילים.
+      - id: n-act3
+        anchor: act3
+        text: פעילות לחיזוק בִּדִּי עם אנשים שונים (בִּדּוֹ, בִּדְּהָא) ואוצר מילים של אוכל.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          מטרות: בִּדִּי, פירות וירקות, כמויות בסיסיות (קילו / חצי קילו), שאלות ותשובות
+          קצרות וסימולציה של שוק אמיתי. המורה מחלק תפקידים.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: food-summary
+    title: סיכום השיעור
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: מה למדנו היום
+      - id: rules-want
+        type: ruleSummary
+        lang: he
+        skill: '"אני רוצה" בערבית'
+        rules:
+          - text: 'ביטוי מפתח: **אָנַא בִּדִּי** – אני רוצה.'
+          - text: >-
+              בערבית מדוברת **אין צורת מקור** ("לשתות", "לאכול"). במקום המקור משתמשים
+              בצורת הפועל בגוף ראשון:
+            examples:
+              - אַשְרַבּ – אני שותה / לשתות
+              - אַכֻּל – אני אוכל / לאכול
+          - text: 'בעברית: אני רוצה לשתות מים. בערבית:'
+            examples:
+              - אָנַא בִּדִּי אַשְרַבּ מַיּ.
+          - text: 'בִּדִּי + אַשְרַבּ / אַכֻּל / אַרֻוח = "אני רוצה ל..."'
+      - id: greetings
+        type: table
+        lang: he
+        caption: ברכות – מינימום הכרחי
+        header: [ברכה, משמעות, תשובה]
+        rows:
+          - [יַעְטִיכּ אִלְעָאפְיֶה, שיתן לך בריאות (ישר כוח), אַללָּה יְעַאפִֿיכּ]
+          - [יְסַלּמוּ אִידֵכּ, יבורכו ידיך, וְאִידֵכּ (גם ידיך)]
+          - [סַחַּה וּהַנָּא, בתיאבון, עַלַא קַלְבַּכּ]
+          - [לַו סַמַחְת, בבקשה / סליחה, תְפַדַּל (בבקשה)]
+          - [מֻמְכֵּן / בִּנְפַע?, אפשר?, 'אַיְוַה, מֻמְכֵּן / בִּנְפַע']
+      - id: one-line
+        type: callout
+        tone: info
+        lang: he
+        title: סיכום בשורה אחת
+        text: >-
+          היום למדנו לדבר על אוכל: מה אנחנו רוצים לאכול ולשתות, איך מזמינים במסעדה,
+          ואיך אומרים "אני רוצה" בערבית בצורה פשוטה וברורה.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 15
+        text: עוברים עם הכיתה על שתי המיומנויות ומבקשים דוגמה חדשה לכל כלל ולכל ברכה.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: food-homework
+    title: שיעורי בית
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: שיעורי בית – אִלְאַכֵּל
+      - id: how
+        type: text
+        lang: he
+        text: >-
+          כתבו את התשובות בתיבות. אחר כך אפשר לשלוח אותן למורי בצ'אט ולבקש: "תקן לי את
+          הטעויות, בבקשה".
+      - id: task1-title
+        type: heading
+        level: 3
+        lang: he
+        text: 1) השלימו את המשפטים במילה הנכונה
+      - id: task1-bank
+        type: wordBank
+        words: [אַכֻּל, אַשְרַבּ, אַרֻוח, מַעַכְּרוֹנֵה, מַיּ, מַטְעַם]
+      - id: task1
+        type: discussionQuestions
+        items:
+          - question: אָנַא בִּדִּי ___ מַיּ.
+          - question: אָנַא בִּדִּי ___ עַמַטְעַם.
+          - question: אָנַא בִּדִּי ___ מַעַכְּרוֹנֵה.
+          - question: אָנַא בִּדִּי ___ קַהְוֶה.
+          - question: אָנַא בִּדִּי ___ מַטְעַם אַל־יוֹם.
+      - id: task2-title
+        type: heading
+        level: 3
+        lang: he
+        text: 2) כתבו 4 משפטים על אוכל שאתם אוהבים / לא אוהבים
+      - id: task2
+        type: discussionQuestions
+        items:
+          - question: אָנַא בַּחֵבּ ___.
+          - question: אָנַא מָא בַּחֵבּ ___.
+          - question: אָנַא בִּדִּי אַכֻּל ___.
+          - question: אָנַא מָא בִּדִּי אַכֻּל ___.
+      - id: task3-title
+        type: heading
+        level: 3
+        lang: he
+        text: 3) הזמנה במסעדה – כתבו הזמנה מלאה
+      - id: task3
+        type: discussionQuestions
+        items:
+          - question: בִּדִּי אַטְלֻבּ ___.
+          - question: בִּדִּי אַשְרַבּ ___.
+      - id: task4-title
+        type: heading
+        level: 3
+        lang: he
+        text: 4) בִּשּׁוּק – רשימת קניות קצרה
+      - id: task4
+        type: sentenceFrame
+        frame: |-
+          בִּדִּי כִּילו ___.
+          וּבִּדִּי נֻס כִּילו ___.
+          וּבִּדִּי ___.
+      - id: task5-title
+        type: heading
+        level: 3
+        lang: he
+        text: 5) מה עונים לברכה?
+      - id: task5-bank
+        type: wordBank
+        words: [תְפַדַּל, עַלַא קַלְבַּכּ, אַללָּה יְעַאפִֿיכּ, וְאִידֵכּ]
+      - id: task5
+        type: discussionQuestions
+        items:
+          - question: יְסַלּמוּ אִידֵכּ
+          - question: יַעְטִיכּ אִלְעָאפְיֶה
+          - question: סַחַּה וּהַנָּא
+          - question: לַו סַמַחְת
+      - id: task6-title
+        type: heading
+        level: 3
+        lang: he
+        text: 6) משפט אישי לסיום
+      - id: task6
+        type: sentenceFrame
+        frame: אָנַא בִּדִּי אַכֻּל ___ וּבִּדִּי אַשְרַבּ ___.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: food-practice
+    book: workbook
+    title: 'תרגול: אוכל'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        lang: he
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+      - id: ex-biddi
+        type: activity
+        activity: food-biddi
+      - id: ex-greetings
+        type: activity
+        activity: food-greetings
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: food-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: words-title
+        type: heading
+        level: 2
+        lang: he
+        text: אוצר מילים – אוכל
+      - id: words
+        type: vocabulary
+        glossLang: he
+        link: https://quizlet.com/br/1122963562/%D7%90%D7%95%D7%9B%D7%9C-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &food-words
+          - { term: אוכֶל, gloss: אני אוכל (פועל) }
+          - { term: אַכְּלֶה / אַכֶּל, gloss: אוכל (שם) }
+          - { term: אַשְרַבּ, gloss: אני שותה }
+          - { term: אִלְעַשא, gloss: ארוחת ערב }
+          - { term: "אִלְרָ'דָא", gloss: ארוחת צהריים }
+          - { term: פְטוּר, gloss: ארוחת בוקר }
+          - { term: "וָגְ'בֶּה", gloss: מנה }
+          - { term: "וַגְ'בֶּה ח'פיפֶה", gloss: נשנוש }
+          - { term: סאנדויש, gloss: "סנדוויץ'" }
+          - { term: "ח'ובֶּז", gloss: לחם }
+          - { term: בַּנְדוֹרַה, gloss: עגבנייה }
+          - { term: "חְ'יָאר", gloss: מלפפון }
+          - { term: "חַ'ס", gloss: חסה }
+          - { term: זִבְּדֶה, gloss: חמאה }
+          - { term: תֶחְלָאי, gloss: קינוח }
+          - { term: לַחְמֶה, gloss: בשר }
+          - { term: סַמַכְּ, gloss: דג }
+          - { term: "ח'וד'אר / ח'ודְרָה", gloss: ירקות }
+          - { term: פַואכֶּה, gloss: פירות }
+          - { term: זית, gloss: שמן }
+          - { term: בְּהאראת, gloss: תבלינים }
+          - { term: חֶלו, gloss: מתוק }
+          - { term: מאלֶח, gloss: מלוח }
+          - { term: "חאמֶד'", gloss: חמוץ }
+          - { term: טאזָה, gloss: טרי }
+          - { term: "טַבֶּח'", gloss: בישול }
+          - { term: "קַ'לִי", gloss: טיגון }
+          - { term: בַּטַאטַא, gloss: תפוח אדמה }
+          - { term: "בִּסָ'ל", gloss: בצל }
+          - { term: תופַאח, gloss: תפוח }
+          - { term: מוז, gloss: בננה }
+          - { term: לֵימוֹן, gloss: לימון }
+          - { term: פִלְפֵל אַחְמַר, gloss: פלפל אדום }
+          - { term: זַיִיתוּן, gloss: זיתים }
+          - { term: כִּילו, gloss: קילו }
+          - { term: נֻס כִּילו, gloss: חצי קילו }
+          - { term: בִּדִּי, gloss: אני רוצה }
+          - { term: בִּדִּי אוכֶּל, gloss: אני רוצה לאכול }
+          - { term: בִּדִּי אַשְרַבּ, gloss: אני רוצה לשתות }
+          - { term: "בֶּדּי אַוָּסִ'י", gloss: אני רוצה להזמין }
+          - { term: "בַּדִ'יף / בַּזִיד", gloss: אני מוסיף }
+          - { term: בַּסַכֵּר, gloss: אני סוגר }
+          - { term: בַּפְתַחְ, gloss: אני פותח }
+          - { term: אַבָּלֶּשׁ, gloss: אתחיל }
+          - { term: מַטְעַם, gloss: מסעדה }
+          - { term: "ק'הְוֶה", gloss: קפה / בית קפה }
+          - { term: דֻכַּאנֶה, gloss: סופר / מכולת }
+          - { term: נַאדֵל, gloss: מלצר }
+          - { term: זְבּוּן, gloss: לקוח }
+          - { term: זַבּאיֶן, gloss: לקוחות }
+          - { term: יַעְטִיכּ אִלְעָאפְיֶה, gloss: ישר כוח }
+          - { term: יְסַלּמוּ אִידֵכּ, gloss: יבורכו ידיך }
+          - { term: "סַ'חַּה וּהַנָּא", gloss: בתיאבון }
+          - { term: לַו סַמַחְת, gloss: בבקשה / סליחה }
+          - { term: תְפַדַּל, gloss: בבקשה }
+          - { term: בִּנְפַע, gloss: אפשר? }
+          - { term: מֻמְכֵּן, gloss: אפשר? }
+
+vocabulary:
+  - slug: food
+    title: אוכל – אִלְאַכֵּל
+    items: *food-words
+
+activities:
+  - slug: food-biddi
+    title: '"אני רוצה" – בִּדִּי + פועל'
+    minutes: 8
+    items:
+      - id: want-water
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: "אני רוצה לשתות מים"?'
+        options:
+          - { text: אָנַא בִּדִּי אַשְרַבּ מַיּ, correct: true }
+          - text: אָנַא בִּדִּי אַכֻּל מַיּ
+            feedback: '*אַכֻּל* = לאכול. לשתות = *אַשְרַבּ*.'
+          - text: אָנַא בַּחֵבּ אַשְרַבּ מַיּ
+            feedback: '*בַּחֵבּ* = אני אוהב. אני רוצה = *בִּדִּי*.'
+      - id: falafel
+        type: multipleChoice
+        lang: he
+        prompt: 'מה הפירוש של: *אַנַא בִּדִּי אוכֶּל פַלָאפֵל*?'
+        options:
+          - { text: אני רוצה לאכול פלאפל, correct: true }
+          - { text: אני אוהב פלאפל, feedback: 'אוהב = *בַּחֵבּ*. כאן יש *בִּדִּי* = אני רוצה.' }
+          - { text: אני רוצה לשתות פלאפל, feedback: '*אוכֶּל* = לאכול. לשתות = *אַשְרַבּ*.' }
+      - id: waiter
+        type: multipleChoice
+        lang: he
+        prompt: 'המלצר שואל את הלקוח: "אתה רוצה לשתות תה?" מה הוא אומר?'
+        options:
+          - { text: בִּדַּכּ תִשְרַבּ שַאי?, correct: true }
+          - text: בִּדִּי אַשְרַבּ שַאי.
+            feedback: '*בִּדִּי אַשְרַבּ* = אני רוצה לשתות. המלצר פונה ללקוח בגוף שני: *בִּדַּכּ תִשְרַבּ*.'
+          - text: בִּדּוֹ יַאכֻּל שַאי?
+            feedback: '*בִּדּוֹ* = הוא רוצה, ו*יַאכֻּל* = לאכול.'
+      - id: mother
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: "אמא שלי רוצה לאכול מעכרונה"?'
+        options:
+          - { text: אִמִי בִּדְּהָא תָאכֻּל מַעַכְּרוֹנֵה, correct: true }
+          - text: אִמִי בִּדּוֹ יַאכֻּל מַעַכְּרוֹנֵה
+            feedback: '*בִּדּוֹ יַאכֻּל* הוא לזכר (אַבּוּי בִּדּוֹ...). לאמא: *בִּדְּהָא תָאכֻּל*.'
+          - text: אִמִי בִּדִּי אַכֻּל מַעַכְּרוֹנֵה
+            feedback: '*בִּדִּי אַכֻּל* = אני רוצה לאכול.'
+      - id: who-wants
+        type: matching
+        lang: he
+        prompt: התאימו כל מילה לפירוש שלה.
+        pairs:
+          - [בִּדִּי, אני רוצה]
+          - [בִּדַּכּ, אתה רוצה]
+          - [בִּדּוֹ, הוא רוצה]
+          - [בִּדְּהָא, היא רוצה]
+      - id: no-infinitive
+        type: trueFalse
+        lang: he
+        prompt: 'בערבית מדוברת אין צורת מקור. "אני רוצה לאכול" = *בִּדִּי אַכֻּל* (בִּדִּי + הפועל בגוף ראשון).'
+        answer: true
+        feedback:
+          correct: נכון! בִּדִּי + אַשְרַבּ / אַכֻּל = "אני רוצה ל...".
+          incorrect: 'זה נכון: אין מקור, ומשתמשים בפועל בגוף ראשון: *בִּדִּי אַכֻּל*.'
+      - id: market-order
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: "אני רוצה קילו עגבניות וחצי קילו מלפפונים".'
+        sentence: "בִּדִּי כִּילו בַּנְדוֹרַה וּנֻס כִּילו חִ'יָאר"
+      - id: father
+        type: multipleChoice
+        lang: he
+        prompt: 'מה הפירוש של: *אַבּוּי בִּדּוֹ יַאכֻּל סּאנדויש חומוס*?'
+        options:
+          - { text: "אבא שלי רוצה לאכול סנדוויץ' חומוס", correct: true }
+          - text: "אני רוצה לאכול סנדוויץ' חומוס"
+            feedback: 'אני רוצה = *בִּדִּי*. כאן: *אַבּוּי בִּדּוֹ* = אבא שלי רוצה.'
+          - text: "אבא שלי מכין סנדוויץ' חומוס"
+            feedback: '*בִּדּוֹ יַאכֻּל* = הוא רוצה לאכול.'
+
+  - slug: food-greetings
+    title: ברכות במסעדה
+    minutes: 8
+    items:
+      - id: replies
+        type: matching
+        lang: he
+        prompt: התאימו כל ברכה לתשובה שלה.
+        pairs:
+          - [יְסַלּמוּ אִידֵכּ, וְאִידֵכּ]
+          - [יַעְטִיכּ אִלְעָאפְיֶה, אַללָּה יְעַאפִֿיכּ]
+          - [סַחַּה וּהַנָּא, עַלַא קַלְבַּכּ]
+          - [לַו סַמַחְת, תְפַדַּל]
+      - id: meanings
+        type: matching
+        lang: he
+        prompt: התאימו כל ביטוי לפירוש שלו.
+        pairs:
+          - [יַעְטִיכּ אִלְעָאפְיֶה, ישר כוח]
+          - [יְסַלּמוּ אִידֵכּ, יבורכו ידיך]
+          - [סַחַּה וּהַנָּא, בתיאבון]
+          - [לַו סַמַחְת, בבקשה / סליחה]
+          - [מֻמְכֵּן?, אפשר?]
+      - id: bon-appetit
+        type: multipleChoice
+        lang: he
+        prompt: 'המלצר מגיש את האוכל ואומר "בתיאבון". מה הוא אומר?'
+        options:
+          - { text: סַחַּה וּהַנָּא, correct: true }
+          - { text: יְסַלּמוּ אִידֵכּ, feedback: 'זה "יבורכו ידיך" – אומרים למי שהכין או הגיש.' }
+          - { text: לַו סַמַחְת, feedback: 'זה "בבקשה / סליחה" – כשפונים למישהו.' }
+      - id: reply-appetit
+        type: multipleChoice
+        lang: he
+        prompt: 'אומרים לכם *סַחַּה וּהַנָּא*. מה עונים?'
+        options:
+          - { text: עַלַא קַלְבַּכּ, correct: true }
+          - { text: וְאִידֵכּ, feedback: 'עונים *וְאִידֵכּ* ל*יְסַלּמוּ אִידֵכּ*.' }
+          - {
+              text: אַללָּה יְעַאפִֿיכּ,
+              feedback: 'עונים *אַללָּה יְעַאפִֿיכּ* ל*יַעְטִיכּ אִלְעָאפְיֶה*.',
+            }
+      - id: thank-chef
+        type: multipleChoice
+        lang: he
+        prompt: 'הטבח הכין לכם אוכל טעים. איך אומרים לו "יבורכו ידיך"?'
+        options:
+          - { text: יְסַלּמוּ אִידֵכּ, correct: true }
+          - { text: עַלַא קַלְבַּכּ, feedback: 'זו התשובה ל*סַחַּה וּהַנָּא*.' }
+          - { text: תְפַדַּל, feedback: '*תְפַדַּל* = בבקשה (כשנותנים משהו).' }
+      - id: tfaddal
+        type: trueFalse
+        lang: he
+        prompt: '*תְפַדַּל* פירושו "בבקשה".'
+        answer: true
+        feedback:
+          correct: 'נכון! למשל, המוכר אומר: *תְפַדַּל, הַאדָא בְּ... שֵקֶל*.'
+      - id: may-i
+        type: multipleChoice
+        lang: he
+        prompt: 'איך שואלים "אפשר?"'
+        options:
+          - { text: מֻמְכֵּן?, correct: true }
+          - { text: וְאִידֵכּ, feedback: '*וְאִידֵכּ* = גם ידיך (תשובה ל*יְסַלּמוּ אִידֵכּ*).' }
+          - { text: עַלַא קַלְבַּכּ, feedback: 'זו התשובה ל*סַחַּה וּהַנָּא*.' }
+      - id: wrong-reply
+        type: trueFalse
+        lang: he
+        prompt: 'התשובה ל*יַעְטִיכּ אִלְעָאפְיֶה* היא *עַלַא קַלְבַּכּ*.'
+        answer: false
+        feedback:
+          correct: 'נכון! עונים *אַללָּה יְעַאפִֿיכּ*.'
+          incorrect: 'עונים *אַללָּה יְעַאפִֿיכּ*. *עַלַא קַלְבַּכּ* היא התשובה ל*סַחַּה וּהַנָּא*.'

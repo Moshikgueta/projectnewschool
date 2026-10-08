@@ -1,0 +1,450 @@
+# Cycle "אופנה וקניות", converted from the spoken Arabic level 1 notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew
+# transliteration); Hebrew instructions carry `lang: he`.
+course: ar-medubar-1
+slug: fashion-and-shopping
+title: "אופנה וקניות – מוד'ה ומושתריאת"
+goal: לתאר בגדים במילים ובתארים פשוטים, ולדבר על מחירים וקניות במספרים.
+position: 12
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Clothes and description" and "Numbers and prices")
+    are NEW: the notebook has no self-correcting exercises. They were written only from
+    this cycle's activities and word lists. An Arabic teacher must check every right
+    answer, every wrong option and every transliteration before students see them. The
+    number words in the exercises (אַלֶף, תְלַאת מִיֵּה, אַרְבַּע מִיֵּה, תִשְעַ מִיֵּה,
+    חַ'מְסִין) are taken from the Activity 3 model and matched to their values by us.
+  - >-
+    The notebook has no lesson summary, no homework (Mori) and no vocabulary list for
+    this cycle, so there are no summary and homework sections. The vocabulary section
+    is built from the clothes, adjectives and situations lists in Activity 1, plus a
+    few words from the warm-up and Activity 3. These Hebrew glosses are NEW (the
+    notebook gives no meaning for them): אַהְוָן (נוח יותר), אַרְח'ָס' (זול יותר),
+    אַסְרָע (מהיר יותר), מַחַל (חנות), שַׁרֵית (קניתי), מַעַאי (יש לי), the number
+    words, and כַּם סִעְרוּ? (כמה זה עולה?). Please check.
+  - >-
+    The Activity 3 model has a wrong total: 300 + 400 + 150 = 850 shekels, but the
+    last line says "תִשְעַ מִיֵּה וְחַ'מְסִין" (950). Not changed; please fix the total
+    (or a price). A teacher note warns about it. It is not used in the exercises.
+  - >-
+    The notebook has two activities numbered 3. The first, "קנייה בחנות: דיאלוג קבוע",
+    has only goals and no dialogue, so it was left out; the second (shopping with a
+    1000-shekel budget) is Activity 3 here. If the dialogue exists elsewhere, please
+    send it.
+  - >-
+    Activity 2 uses a Google Slides presentation whose real prices are in the slide
+    notes. The link is in a teacher note only (not shown to students), so students do
+    not see the prices. The "?slide=…#slide=…" part of the link was removed.
+  - >-
+    Activity 3 asks students to browse the ZARA Israel / H&M Israel websites on their
+    phones. These sites are not on the link allow-list, so they are named but not
+    linked.
+  - >-
+    The introduction frame was split into a frame and an example ("…כֻּתֻב"); the
+    example name "דנה" is NEW. The Quizlet tracking parameters (?i=…&x=…) were removed.
+  - >-
+    Dialect / spelling doubts, NOT changed (teacher's call): "שוּ בִּלבַּס ל־…?" (3rd
+    person? "what do you wear" may be "שו בִּתִלְבַּס"); "שור'ול" for شغل (elsewhere
+    "שור'ל"); "כִּונְדַרָה" (Activity 1) vs "כִּנְדַרַאת" (Activity 3); "ליומיום" for
+    ليوم يوم; "מוריח" (مريح); "אנא אסמי" (usually just "אסמי"); "בַּחֶבֶּ אַשְׁתְרי";
+    "שַׁרֵית / שַרֵית" (I bought); "סֶעֶר אלאַואעי"; "ובַּסְ'רוף" (sukun placement).
+  - >-
+    Time ranges (5–10, 15–20, 12–15, 7–10 minutes) are rounded up. The "student
+    answer" lines are replaced by the optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: fashion-and-shopping-class
+    title: 'שיעור: אופנה וקניות'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: אופנה וקניות
+      - id: skills
+        type: cycleOverview
+        lang: he
+        skills:
+          - name: בגדים ותיאור
+            description: "פוּסתאן, בַּנְטַלוֹן, תַנּורָה... ותארים: מוריח, אַניק', רַסְמִי"
+          - name: מספרים ומחירים
+            description: 'כַּם סִעְרוּ? מַעַאי אַלֶף שֵקֶל. שַׁרֵית ___ בִּ ___ שֵקֶל.'
+      - id: quizlet
+        type: externalLink
+        lang: he
+        label: אופנה וקניות בקוויזלט
+        url: https://quizlet.com/il/1124601103/%D7%90%D7%95%D7%A4%D7%A0%D7%94-%D7%95%D7%A7%D7%A0%D7%99%D7%95%D7%AA-%D7%9E%D7%95%D7%93%D7%94-%D7%95%D7%9E%D7%95%D7%A9%D7%AA%D7%A8%D7%99%D7%90%D7%AA-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        lang: he
+        text: סבב פתיחה
+      - id: intro
+        type: sentenceFrame
+        frame: אנא אסמי ___ וּבְּחֶבּ אִשתרי ___.
+        example: אנא אסמי דנה וּבְּחֶבּ אִשתרי כֻּתֻב.
+      - id: warmup-title
+        type: heading
+        level: 3
+        lang: he
+        text: שאלות הכנה
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: שוּ בֶּתְחֶבּ/י תִשֶׁתְרי בֶּשַׁכֶּל עאם?
+            frame: בַּחֶבֶּ אַשְׁתְרי ___
+          - question: "בְּתִפַד'ל תִשתרי אוֹנְלַיין אוֹ מִן אִלמַחַל? לֵיה?"
+            frame: |-
+              בַּפַדֶּל אַשׁתְרי מן אלמַחַל לאנו ___
+              בַּפַדֶּל אַשׁתְרי אונליין לאנו ___
+              (אַהְוָן, אַרְח'ָס', אַסְרָע…)
+          - question: "כַּם מַרָּה בְּתֶשְׁתְרי בֶּל שַּׁהָר? ק'די בתוס'ְרוף?"
+            frame: |-
+              בַּשְׁתְרי ___ מַרָּה / מַרָּאת…
+              ובַּסְ'רוף ___ שקל
+          - question: מֶן וין בּתֶשְׁתְרי? שׁו אֶסֶם אל מַחַל? וליה מן האד אלמחל?
+          - question: "שו אַחֶ'ר אֶשֶׁי אֶשְׁתַריתו / אֶשְׁתַריתיה? וק'די כְּאן סֶעְרו?"
+          - question: "שׁו אַכְּתַר אֶשִׁי רָ'אלִי אֶשְׁתַרֵיתוֹ?"
+          - question: "לַוְ מַעַכְּ כּתיר מַס'ארי!.. בּתֶשְׁתְרי סָאעה ב תלאתין אלף שקל?"
+      - id: activities-title
+        type: heading
+        level: 3
+        lang: he
+        text: פעילויות
+      - id: act1
+        type: classActivity
+        lang: he
+        title: 'פעילות 1: מה אני לובש? (תיאור בגדים)'
+        skills: [בגדים ותיאור]
+        minutes: 20
+        steps:
+          - המורה מציג תמונות של פריטי לבוש. אומרים את שם הפריט ואת הצבע שלו.
+          - 'המורה כותב על הלוח ואומר בקול: *שוּ בִּלבַּס ל־…?*'
+          - עונים על השאלה לכל אחד מארבעת המצבים, ומתארים את הבגדים בעזרת בנק התארים.
+      - id: act1-clothes
+        type: vocabulary
+        glossLang: he
+        items:
+          - { term: פוּסתאן, gloss: שמלה }
+          - { term: בַּנְטַלוֹן, gloss: מכנסיים }
+          - { term: תַנּורָה, gloss: חצאית }
+          - { term: שַׁנְטֵה, gloss: תיק }
+          - { term: "גַ'קֵת", gloss: מעיל }
+          - { term: בְּלוּזַה, gloss: חולצה }
+          - { term: כִּונְדַרָה, gloss: נעליים }
+      - id: act1-situations
+        type: discussionQuestions
+        title: שוּ בִּלבַּס ל־…?
+        items:
+          - question: שוּ בִּלבַּס ל־עיד מילאד?
+          - question: "שוּ בִּלבַּס ל־יוֹם שׁור'ול?"
+          - question: שוּ בִּלבַּס ל־בַּחַר?
+          - question: "שוּ בִּלבַּס ל־לֶק'אא' מַע אלאַסְ'חאבְּ?"
+      - id: act1-adjectives
+        type: vocabulary
+        glossLang: he
+        items:
+          - { term: מוריח, gloss: נוח }
+          - { term: "אַניק'", gloss: אלגנטי }
+          - { term: ליומיום, gloss: יומיומי }
+          - { term: רַסְמִי, gloss: רשמי }
+          - { term: דַאפִי, gloss: חם }
+          - { term: "חַ'פִיף", gloss: קליל }
+          - { term: מְלַוַּן, gloss: צבעוני }
+      - id: act2
+        type: classActivity
+        lang: he
+        title: 'פעילות 2: תנחשו את המחיר (מספרים)'
+        skills: [מספרים ומחירים]
+        minutes: 20
+        steps:
+          - המורה משתף מצגת עם תמונות של בגדים. בכל שקף יש פריט אחד.
+          - 'המורה שואל: *כַּם סִעְרוּ?*'
+          - כל תלמיד אומר ניחוש אחד בלבד, בערבית ובמספר.
+          - המורה מגלה את המחיר האמיתי. מי שהכי קרוב מקבל נקודה.
+          - בסוף, מי שצבר הכי הרבה נקודות מנצח.
+      - id: act3
+        type: classActivity
+        lang: he
+        title: 'פעילות 3: שופינג עם תקציב אמיתי – 1000 ש"ח'
+        skills: [מספרים ומחירים, בגדים ותיאור]
+        minutes: 20
+        steps:
+          - 'לכל תלמיד יש תקציב של **1000 ש"ח**.'
+          - 'נכנסים בנייד לאתר של ZARA Israel או H&M Israel (לבד או בזוגות).'
+          - 'המטרה: לקנות **כמה שיותר פריטים** בלי לעבור את התקציב. מותר לבחור בגדים מכל הסוגים.'
+          - 'בונים "סל קניות" דמיוני: פריט, מחיר, סכום כולל (10 דקות).'
+          - מציגים את סל הקניות מול הכיתה לפי המבנה הקבוע.
+      - id: act3-board
+        type: dialogue
+        lines:
+          - speaker: '1'
+            text: כַּם מַעַכ?
+          - speaker: '2'
+            text: מַעַאי אַלֶף שֵקֶל.
+      - id: act3-frame
+        type: sentenceFrame
+        frame: |-
+          אַנא מַעַאי אַלֶף שֵקֶל.
+          שַׁרֵית ___ בִּ ___ שֵקֶל.
+          שַׁרֵית ___ בִּ ___ שֵקֶל.
+          סֶעֶר אלאַואעי ___ שֵקֶל.
+        example: |-
+          אַנא מַעַאי אַלֶף שֵקֶל.
+          שַרֵית פוּסתאן בִּ תְלַאת מִיֵּה שֵקֶל.
+          שַרֵית כִּנְדַרַאת בִּ אַרְבַּע מִיֵּה שֵקֶל.
+          שַרֵית בְּלוּזַאת בִּ מִיֵּה וַחְדֶה וְחַ'מְסִין.
+          כֻּלּוּ סַעְרוּ תִשְעַ מִיֵּה וְחַ'מְסִין שֵקֶל.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          שיעור של 90 דקות. מיומנויות: דיבור, תיאור, מספרים וקניות. בוחרים פעילויות לפי
+          מצב הכיתה.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: מטרה – היכרות וחיבור לנושא הקניות. המורה נותן דוגמה ראשון ואז שואל כל תלמיד.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: שואלים כל תלמיד לפחות שתי שאלות. התשובות שהתלמידים מקלידים מופיעות כאן מתחת לכל שאלה.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          מטרות: אוצר מילים של בגדים, המבנה "מה לובשים ל…", תיאור בעזרת תארים ודיבור
+          בהווה. חזרה על המילים 5 דקות, הצגת השאלה 2 דקות. דוגמה לשאלה לתלמיד: *שוּ
+          בִּלבַּס ל־יוֹם שׁור'ול?*
+      - id: n-act2
+        anchor: act2
+        text: >-
+          המצגת: [שופינג Shopping](https://docs.google.com/presentation/d/1uFqbDX8-ftLQBBJCfbx6Sna6zhKy-DBUeYQup7FSlq4/edit).
+          המחיר האמיתי של כל פריט מופיע **רק בהערות של השקף**, לא על התמונה, ולכן
+          התלמידים לא רואים אותו. אחרי שכולם ניחשו, פותחים את ההערות ומקריאים את
+          המחיר. רושמים נקודות על הלוח. משתמשים רק בשקפים שקשורים לאופנה, או רק בחלק
+          מהם אם רוצים לסיים מוקדם.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          כותבים על הלוח: *כַּם מַעַכ? / מַעַאי אַלֶף שֵקֶל*. מטרות: מספרים גדולים (מאות
+          ואלפים), הפעלים לקנות / ללבוש / להוציא, הצגה בעל־פה וקבלת החלטות בתקציב. חיפוש
+          עצמאי 10 דקות, הצגה 12 דקות.
+      - id: n-act3-sum
+        anchor: act3-frame
+        text: >-
+          שימו לב: בדוגמה 300 + 400 + 150 = 850 ש"ח, אבל בשורה האחרונה כתוב "תִשְעַ מִיֵּה
+          וְחַ'מְסִין" (950). כדאי לתקן לפני שמציגים את הדוגמה.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: fashion-and-shopping-practice
+    book: workbook
+    title: 'תרגול: אופנה וקניות'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        lang: he
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+      - id: ex-clothes
+        type: activity
+        activity: fashion-and-shopping-clothes
+      - id: ex-prices
+        type: activity
+        activity: fashion-and-shopping-prices
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: fashion-and-shopping-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: words-title
+        type: heading
+        level: 2
+        lang: he
+        text: אוצר מילים – אופנה וקניות
+      - id: words
+        type: vocabulary
+        glossLang: he
+        link: https://quizlet.com/il/1124601103/%D7%90%D7%95%D7%A4%D7%A0%D7%94-%D7%95%D7%A7%D7%A0%D7%99%D7%95%D7%AA-%D7%9E%D7%95%D7%93%D7%94-%D7%95%D7%9E%D7%95%D7%A9%D7%AA%D7%A8%D7%99%D7%90%D7%AA-flash-cards/
+        items: &fashion-words
+          - { term: פוּסתאן, gloss: שמלה }
+          - { term: בַּנְטַלוֹן, gloss: מכנסיים }
+          - { term: תַנּורָה, gloss: חצאית }
+          - { term: שַׁנְטֵה, gloss: תיק }
+          - { term: "גַ'קֵת", gloss: מעיל }
+          - { term: בְּלוּזַה, gloss: חולצה }
+          - { term: כִּונְדַרָה, gloss: נעליים }
+          - { term: מוריח, gloss: נוח }
+          - { term: "אַניק'", gloss: אלגנטי }
+          - { term: ליומיום, gloss: יומיומי }
+          - { term: רַסְמִי, gloss: רשמי }
+          - { term: דַאפִי, gloss: חם }
+          - { term: "חַ'פִיף", gloss: קליל }
+          - { term: מְלַוַּן, gloss: צבעוני }
+          - { term: עיד מילאד, gloss: יום הולדת }
+          - { term: "שור'ול", gloss: עבודה }
+          - { term: בַּחַר, gloss: ים }
+          - { term: "לֶק'אא' מַע אלאַסְ'חאבְּ", gloss: פגישה עם חברים }
+          - { term: כֻּתֻב, gloss: ספרים }
+          - { term: מַחַל, gloss: חנות }
+          - { term: אַהְוָן, gloss: נוח יותר }
+          - { term: "אַרְח'ָס'", gloss: זול יותר }
+          - { term: אַסְרָע, gloss: מהיר יותר }
+          - { term: כַּם סִעְרוּ?, gloss: כמה זה עולה? }
+          - { term: מַעַאי אַלֶף שֵקֶל, gloss: יש לי אלף שקל }
+          - { term: שַׁרֵית, gloss: קניתי }
+          - { term: מִיֵּה, gloss: מאה }
+          - { term: אַלֶף, gloss: אלף }
+
+vocabulary:
+  - slug: fashion-and-shopping
+    title: אופנה וקניות
+    items: *fashion-words
+
+activities:
+  - slug: fashion-and-shopping-clothes
+    title: בגדים ותיאור
+    minutes: 8
+    items:
+      - id: clothes
+        type: matching
+        lang: he
+        prompt: התאימו כל פריט לבוש לפירוש שלו.
+        pairs:
+          - [פוּסתאן, שמלה]
+          - [בַּנְטַלוֹן, מכנסיים]
+          - [תַנּורָה, חצאית]
+          - [שַׁנְטֵה, תיק]
+          - ["גַ'קֵת", מעיל]
+      - id: adjectives
+        type: matching
+        lang: he
+        prompt: התאימו כל תואר לפירוש שלו.
+        pairs:
+          - [מוריח, נוח]
+          - ["אַניק'", אלגנטי]
+          - [רַסְמִי, רשמי]
+          - [דַאפִי, חם]
+          - ["חַ'פִיף", קליל]
+      - id: blouse
+        type: multipleChoice
+        lang: he
+        prompt: 'מה הפירוש של *בְּלוּזַה*?'
+        options:
+          - { text: חולצה, correct: true }
+          - { text: שמלה, feedback: 'שמלה = *פוּסתאן*.' }
+          - { text: מעיל, feedback: "מעיל = *גַ'קֵת*." }
+      - id: skirt
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים "חצאית"?'
+        options:
+          - { text: תַנּורָה, correct: true }
+          - { text: בַּנְטַלוֹן, feedback: '*בַּנְטַלוֹן* = מכנסיים.' }
+          - { text: שַׁנְטֵה, feedback: '*שַׁנְטֵה* = תיק.' }
+      - id: sea
+        type: multipleChoice
+        lang: he
+        prompt: 'בשאלה *שוּ בִּלבַּס ל־בַּחַר?*, מה הפירוש של *בַּחַר*?'
+        options:
+          - { text: ים, correct: true }
+          - { text: עבודה, feedback: "עבודה = *שור'ול*." }
+          - { text: יום הולדת, feedback: 'יום הולדת = *עיד מילאד*.' }
+      - id: birthday
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים "יום הולדת"?'
+        options:
+          - { text: עיד מילאד, correct: true }
+          - { text: "לֶק'אא' מַע אלאַסְ'חאבְּ", feedback: 'זו פגישה עם חברים.' }
+          - { text: בַּחַר, feedback: '*בַּחַר* = ים.' }
+      - id: colorful
+        type: trueFalse
+        lang: he
+        prompt: '*מְלַוַּן* פירושו "צבעוני".'
+        answer: true
+        feedback:
+          correct: נכון! *מְלַוַּן* = צבעוני.
+      - id: formal
+        type: trueFalse
+        lang: he
+        prompt: '*רַסְמִי* פירושו "יומיומי".'
+        answer: false
+        feedback:
+          correct: 'נכון! *רַסְמִי* = רשמי. יומיומי = *ליומיום*.'
+          incorrect: '*רַסְמִי* = רשמי. יומיומי = *ליומיום*.'
+
+  - slug: fashion-and-shopping-prices
+    title: מספרים ומחירים
+    minutes: 8
+    items:
+      - id: numbers
+        type: matching
+        lang: he
+        prompt: התאימו כל מספר לערך שלו.
+        pairs:
+          - [אַלֶף, '1000']
+          - [תְלַאת מִיֵּה, '300']
+          - [אַרְבַּע מִיֵּה, '400']
+          - [תִשְעַ מִיֵּה, '900']
+          - ["חַ'מְסִין", '50']
+      - id: how-much
+        type: multipleChoice
+        lang: he
+        prompt: 'איך שואלים "כמה זה עולה?"'
+        options:
+          - { text: כַּם סִעְרוּ?, correct: true }
+          - { text: כַּם מַעַכ?, feedback: '*כַּם מַעַכ?* = כמה יש לך?' }
+          - { text: מַעַאי אַלֶף שֵקֶל., feedback: 'זה "יש לי אלף שקל".' }
+      - id: budget
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: "יש לי אלף שקל"?'
+        options:
+          - { text: אַנא מַעַאי אַלֶף שֵקֶל., correct: true }
+          - { text: אַנא מַעַאי מִיֵּה שֵקֶל., feedback: '*מִיֵּה* = מאה. אלף = *אַלֶף*.' }
+          - { text: כַּם מַעַכ?, feedback: 'זו שאלה: כמה יש לך?' }
+      - id: kam-maak
+        type: multipleChoice
+        lang: he
+        prompt: 'מה הפירוש של *כַּם מַעַכ?*'
+        options:
+          - { text: כמה יש לך?, correct: true }
+          - { text: כמה זה עולה?, feedback: 'כמה זה עולה? = *כַּם סִעְרוּ?*' }
+          - { text: מה קנית?, feedback: '*מַעַכ* = יש לך (איתך).' }
+      - id: shoes-400
+        type: multipleChoice
+        lang: he
+        prompt: 'מה הפירוש של: *שַרֵית כִּנְדַרַאת בִּ אַרְבַּע מִיֵּה שֵקֶל*?'
+        options:
+          - { text: קניתי נעליים ב־400 שקל, correct: true }
+          - {
+              text: קניתי נעליים ב־300 שקל,
+              feedback: '300 = *תְלַאת מִיֵּה*. כאן: *אַרְבַּע מִיֵּה* = 400.',
+            }
+          - { text: קניתי שמלה ב־400 שקל, feedback: 'שמלה = *פוּסתאן*. *כִּנְדַרַאת* = נעליים.' }
+      - id: dress-order
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: "קניתי שמלה ב־300 שקל".'
+        sentence: שַרֵית פוּסתאן בִּ תְלַאת מִיֵּה שֵקֶל
+      - id: watch
+        type: trueFalse
+        lang: he
+        prompt: '*תלאתין אלף שקל* = 30,000 שקל.'
+        answer: true
+        feedback:
+          correct: 'נכון! *תלאתין* = 30, *אלף* = אלף.'
+      - id: bought
+        type: multipleChoice
+        lang: he
+        prompt: 'מה הפירוש של *שַרֵית* במשפט: שַרֵית פוּסתאן?'
+        options:
+          - { text: קניתי, correct: true }
+          - { text: לבשתי, feedback: '*שַרֵית* = קניתי (מהפועל לקנות, כמו *אַשְׁתְרי*).' }
+          - { text: אני רוצה, feedback: 'אני רוצה = *בִּדִּי*. *שַרֵית* = קניתי.' }

@@ -1,0 +1,576 @@
+# Cycle "הבית שלי", converted from the spoken Arabic level 1 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew
+# transliteration, apc-Hebr); Hebrew instructions carry `lang: he`.
+course: ar-medubar-1
+slug: my-home
+title: 'הבית שלי – בֵּיתִי'
+goal: 'לשאול ולענות על שאלות בסיסיות על הבית, ולתאר אותו בקצרה עם יש / אין וכינויי רמז.'
+position: 3
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("my-home-questions" and "my-home-describing") are NEW:
+    the notebook has no self-study exercises. They were written only from this cycle's
+    tables, examples and vocabulary. An Arabic teacher must check every right answer,
+    every wrong option and every transliteration before students see them.
+  - >-
+    The notebook has NO summary and NO homework for this cycle. The summary section
+    was built from the cycle's own explanations (demonstratives, פִי / מַא פִי, the
+    answer template "verb + בּ + room"); please check it. There is no homework
+    section: please add Mori messages if you want them.
+  - >-
+    The basic vocabulary table ("10 words only") is garbled in the export: the rows
+    "מטבח חדר | מַטְבַּח' ע'ורְפֶה" and "דלתשכונהרחובבניין | בַּאבּחארָהשארֶעעַמארָה"
+    were split into מטבח, חדר, דלת, שכונה, רחוב, בניין. The table now has 14 words,
+    not 10: please confirm which words belong to this stage.
+  - >-
+    Activity 1 ("תיאור חדר קטן" / "בית החלומות שלי – בית אחלאמי") has a step 2 but no
+    step 1 in the notebook: only the question "שו בתח'תאר וליש / ליה?" is there. It is
+    kept as the first step; please complete the activity.
+  - >-
+    Activity 4, step 4 had an author's comment ("* לא הבנתי את המשימה! האם מציגים
+    תמונה?"). It was left out. Presumably the teacher points at objects in the room
+    picture from step 1; please confirm.
+  - >-
+    Not corrected, please check: in Activity 2's summary "הִי בַּשּוּף תַלַפְזְיוֹן" uses
+    the first-person form with הִי (cycle 1 teaches הִי + בְּתִ…). Activity 3 aims at 6
+    sentences but step 4 says "3 sentences only". The answer to "וֵין בְּתִנַאם?" is
+    "בִּעְ'רְפֶת אנוּם" in one place and "בִּעְ'רְפֶת נוּם" in another.
+  - >-
+    Vocabulary glosses kept as in the notebook: the verbs are first-person forms
+    (בָּאכּוֹל, בַּשְרַבּ…) glossed as infinitives (לאכול, לשתות…). "כְּבִּיר – גדול" is used
+    in class but is not in the vocabulary list; it was not added. The Arabic-script
+    column was left out (the course is written in transliteration).
+  - >-
+    Hebrew glosses inside Arabic questions were left out of the student text: "(אצלך)",
+    "(חדר שלי)", "(כמה חדרים יש בבית שלך?)", "(מכונת ייבוש)". The template hints in
+    Activity 3 that are in Hebrew ("חדר אחד או שניים"…) moved to the teacher note.
+  - >-
+    Quizlet link: the tracking parameter "?funnelUUID=…" was removed. Times: intro 5
+    minutes, demonstratives 10, warm-up 10–12 → 12. Activities have no times in the
+    notebook.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: my-home-class
+    title: 'שיעור: הבית שלי'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: 'הבית שלי – בֵּיתִי'
+      - id: skills
+        type: cycleOverview
+        lang: he
+        skills:
+          - name: שאלות ותשובות בסיסיות
+            description: 'שאלות על הבית (שוּ פִי…? וֵין…? כַּם…?) ותשובות קצרות: פועל + חדר.'
+          - name: תיאור קצר
+            description: 'שם עצם + יש / אין (פִי / מַא פִי) + כינוי רמז (הָאדָא / הָאי / הָדוֹל).'
+      - id: quizlet
+        type: externalLink
+        lang: he
+        label: הבית שלי בקוויזלט
+        url: https://quizlet.com/il/1119906652/%D7%94%D7%91%D7%99%D7%AA-%D7%A9%D7%9C%D7%99-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        lang: he
+        level: 3
+        text: סבב היכרות
+      - id: intro
+        type: sentenceFrame
+        frame: |-
+          אִסּמִי ___
+          אַנָא סָאכֵּן/ה פִי ___
+          בֵּיתִי ___ (כְּבִּיר / זְעִ'יר)
+        example: "אִסּמִי מוֹשִׁיק. אַנָא סָאכֵּן פִי תֵל אביב. בֵּיתִי זְעִ'יר."
+      - id: words-title
+        type: heading
+        lang: he
+        level: 3
+        text: אוצר מילים בסיסי
+      - id: words
+        type: table
+        lang: he
+        caption: חדרים וחפצים בבית
+        header: [עברית, ערבית מדוברת (תעתיק)]
+        rows:
+          - [סלון, "עֻ'רְפֶת מַעִישֶה / סלון"]
+          - [מטבח, "מַטְבַּח'"]
+          - [חדר, "ע'ורְפֶה"]
+          - [חדר שינה, "עֻ'רְפֶת נוּם"]
+          - [חדר רחצה, חַמַּאם]
+          - [מיטה, "תַחְ'ת"]
+          - [שולחן, טַאוְלַה]
+          - [כיסא, כֻּורסִי]
+          - [חלון, שֻובַּאכּ]
+          - [דלת, בַּאבּ]
+          - [שכונה, חארָה]
+          - [רחוב, שארֶע]
+          - [בניין, עַמארָה]
+          - [מקרר, "תַלַאגֵ'ה / ברּאד"]
+      - id: demonstratives-title
+        type: heading
+        lang: he
+        level: 3
+        text: כינויי רמז
+      - id: demonstratives
+        type: examples
+        items:
+          - text: 'הָאדָ / האדא'
+            gloss: 'זה (זכר)'
+          - text: 'הָאדִי / הָאי'
+            gloss: 'זו (נקבה)'
+          - text: 'הָדוֹל'
+            gloss: 'אלו (רבים)'
+      - id: demonstratives-examples
+        type: examples
+        items:
+          - text: 'הָאדָא בַּאבּ.'
+          - text: 'הָאי טַאוְלַה.'
+          - text: 'הָדוֹל כַּרָאסִי.'
+            gloss: 'כַּרָאסִי: כיסאות'
+      - id: warmup-title
+        type: heading
+        lang: he
+        level: 3
+        text: שאלות הכנה
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: "שו מוג'וד פי אלע'ורפֶה ענדָכּ / ענדֶכּ?"
+            frame: "פי ע'ורפתי מוג'וד ___ (באב, שובּאכּ, טאוולֶה, ברּאד, כּורסֶי)"
+          - question: "שו פי בּעֻ'רְפֶת נומַכּ / נומִכְּ?"
+            frame: "בּעֻ'רפֵת נומִי פי ___ (תַחֵ'ת, חְ'זָאנֶה, מַכְּתַבֶּה, בּרַנְדַה, חַמָּאם)"
+          - question: "כַּם ע'ורְפֶה פִי בּבֵּיתַכּ / ביתִּכְּ?"
+            frame: "בּבּיתי פי ___ (ע'ורְפֶה, ע'ורפְתִין, תַלַת עֻ'ורַף, אַרְבַּע עֻ'רַף)"
+          - question: 'וין בתחֶבּ / בתחבּי תקעד / תקעדי בל בית? ו מע מין?'
+            frame: "אנא בחיב אקעוד פי ___ (אלברנדה, אל ג'נינֶה, אלמטבּח', אלסלון) מע ___"
+          - question: 'הָאדָא / הָאי שֻ?'
+            frame: 'הָאי ___. / הָאדָ ___. / הָדוֹל ___.'
+          - question: 'שוּ מא פִי (פֶש) ענדַכְּ בל בית?'
+            frame: "פֶש ענדי / מא פי ענדי ___ (נַשּאפֶה, בַּרַנדָה, ס'ופָה כְּבּירֶה, טלפֶזיון כְּבּיר…)"
+      - id: activities-title
+        type: heading
+        lang: he
+        level: 3
+        text: פעילויות
+      - id: act1
+        type: classActivity
+        lang: he
+        title: 'פעילות 1: בית החלומות שלי – בית אחלאמי'
+        skills: [תיאור קצר]
+        steps:
+          - "שו בתח'תאר וליש / ליה? כל תלמיד בוחר מה יש בבית החלומות שלו."
+          - 'תיאור: כל תלמיד מתאר 2–3 חפצים בלבד בעזרת כינוי רמז.'
+        example: |-
+          הָאדָ תַחֶ'ת / סריר.
+          הָאי טַאוְלַה.
+          הָדוֹל כַּרָאסִי.
+      - id: act2
+        type: classActivity
+        lang: he
+        title: 'פעילות 2: ריאיון – מה אתה עושה בבית?'
+        skills: [שאלות ותשובות בסיסיות]
+        steps:
+          - מתחלקים לזוגות.
+          - כל תלמיד שואל את השותף *שאלות קצרות* על מה שהוא עושה בחלקים שונים בבית (השאלות שלמטה).
+          - "כל תשובה היא **שני חלקים בלבד**: פועל + חדר / מקום בבית. למשל: בַּשְרַבּ בִּלְמַטְבַּח'."
+          - 'סיכום (2 דקות): כל תלמיד מציג את בן הזוג במשפט אחד או שניים.'
+        example: |-
+          הוּ בַּשְרַבּ ק'הְוֶה בִּלְמַטְבַּח'.
+          הִי בַּשּוּף תַלַפְזְיוֹן בִּל סלון.
+      - id: act2-verbs
+        type: table
+        lang: he
+        caption: אוצר פעלים בסיסיים (לריאיון)
+        header: [עברית, ערבית מדוברת (תעתיק)]
+        rows:
+          - [לאכול, בָּאכּוֹל / בּוכֶּל]
+          - [לשתות, בַּשְרַבּ]
+          - [לישון, בָּנָאם]
+          - [לקרוא, בַּקְרַא]
+          - [לראות טלוויזיה, בַּשּוּף תַלַפְזְיוֹן]
+          - [לעבוד, "בַּשְתְעְ'ל"]
+          - [לסדר, ארַתֶּבְּ]
+      - id: act2-questions
+        type: discussionQuestions
+        items:
+          - question: "וֵין בְּתִשְרַבּ ק'הְוֶה?"
+            frame: "בַּשְרַבּ ק'הְוֶה בִּלְמַטְבַּח'."
+          - question: 'וֵין בְּתַאכּוֹל?'
+            frame: "בָּאכּוֹל בִּלְמַטְבַּח'."
+          - question: 'וֵין בְּתִנַאם / י?'
+            frame: "בָּנָאם בִּעְ'רְפֶת אנוּם."
+          - question: 'וֵין בְּתִקְרַא / יִ כְּתַאבּ?'
+            frame: 'בַּקְרַא בִּסַּלון.'
+          - question: 'וֵין בְּתִשּוּף תַלַפְזְיוֹן?'
+            frame: 'בַּשּוּף תַלַפְזְיוֹן בִּל סלון.'
+          - question: "וֵין בְּתִשְתְעְ'ל / י?"
+            frame: "בַּשְתְעְ'ל בִּל בֵּית / בִּל מַכְּתַבְּ."
+      - id: act3
+        type: classActivity
+        lang: he
+        title: 'פעילות 3: הבית שלי בכמה משפטים'
+        skills: [תיאור קצר]
+        steps:
+          - 'המורה מציג את התבנית (על הלוח / בשקופית).'
+          - 'קוראים יחד את התבנית ורואים דוגמאות קלות.'
+          - 'תרגול מונחה (2 דקות): המורה שואל שאלות שמכוונות לתשובות הנכונות.'
+          - 'כתיבה / דיבור אישי (3 דקות): כותבים או אומרים בעל פה **3 משפטים בלבד** לפי התבנית.'
+          - 'שיתוף בכיתה (2 דקות): 3–4 תלמידים משתפים בקול.'
+        example: |-
+          בֵּיתִי זְעִ'יר.
+          בֵּיתִי פִיו סַלון ו מַטְבַּח'.
+          עְ'רְפֶת נוּמִי פִיהא תַחְ'ת.
+      - id: act3-template
+        type: discussionQuestions
+        items:
+          - question: 'בֵּיתִי ___.'
+            frame: "כְּבִּיר / זְעִ'יר"
+          - question: 'בֵּיתִי פִי ___.'
+          - question: "בִּלְמַטְבַּח' פִי ___."
+            frame: "טַאוְלַה, כֻּורסִי, תלאג'ה…"
+          - question: 'בִּסַּלון פִי ___.'
+          - question: "בִעְ'רְפֶת נוּמִי פִי ___."
+            frame: "תַחְ'ת / כֻּרסִי / שֻבַּאכּ"
+          - question: "אֲנָא ___ בִּל מַטְבַּח'."
+            frame: "בָּטְבּוח' / בַּרַתֶּבְּ / בַּשרַבְּ"
+      - id: act3-examples
+        type: examples
+        items:
+          - text: "בֵּיתִי זְעִ'יר. בֵּיתִי פִי מַטְבַּח' ו סַלון. עְ'רְפֶת נוּמִי פִיהא תַחְ'ת."
+          - text: "בֵּיתִי כְּבִּיר. בֵּיתִי פִי תַּלַאגֶ'ה ו שֻבַּאכּ. עְ'רְפֶת נוּמִי פי טַאוְלַה."
+      - id: act3-guided-title
+        type: heading
+        lang: he
+        level: 4
+        text: תרגול מונחה
+      - id: act3-guided
+        type: discussionQuestions
+        items:
+          - question: "בֵּיתַכּ כְּבִּיר וּלָּא זְעִ'יר?"
+          - question: 'שוּ פִי בבֵּיתַכּ?'
+          - question: "שוּ פִי ב עֻ'רְפֶת נוּמַכּ?"
+      - id: act4
+        type: classActivity
+        lang: he
+        title: 'פעילות 4: מה יש ומה אין?'
+        skills: [תיאור קצר, שאלות ותשובות בסיסיות]
+        steps:
+          - 'המורה מציג תמונה של מטבח / סלון / חדר שינה.'
+          - 'מה יש? ומה אין? עונים על השאלות שלמטה.'
+          - 'זיהוי עם כינויי רמז: הָאדָא שֻו? / הָאדִי שֻו? / הָדוֹל שֻו?'
+          - 'עבודה בזוגות – חדר דמיוני: כל זוג בוחר 4 מילים מאוצר המילים ובונה משפטים לפי התבנית.'
+          - 'שיתוף קצר: 3–4 זוגות מציגים את החדר שלהם.'
+      - id: act4-questions
+        type: discussionQuestions
+        answerable: false
+        items:
+          - question: "שוּ פִי בִּלְמַטְבַּח'?"
+            frame: "פִי ___. (טַאוְלַה / כֻּורסִי / תַּלַאגֶ'ה…)"
+          - question: "שוּ מַא פִי בִּלְמַטְבַּח'?"
+            frame: 'מַא פִי ___.'
+          - question: 'הָאדָא שֻו?'
+            frame: 'הָאדָא ___.'
+          - question: 'הָאדִי שֻו?'
+            frame: 'הָאדִי ___.'
+          - question: 'הָדוֹל שֻו?'
+            frame: 'הָדוֹל ___.'
+      - id: act4-room
+        type: sentenceFrame
+        frame: |-
+          פִי ___ ו ___.
+          מַא פִי ___ ו ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: 'רמה: יסודות. שתי מיומנויות: **שאלות ותשובות בסיסיות** ו**תיאור קצר** (שם עצם + יש / אין + כינוי רמז).'
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: "תנו קודם את הדוגמה שלכם: ״אִסּמִי מוֹשִׁיק. אַנָא סָאכֵּן פִי תֵל אביב. בֵּיתִי זְעִ'יר.״"
+      - id: n-words
+        anchor: words
+        text: 'הטיפ הדידקטי: אין להוסיף מילים מעבר לאלה בשלב הזה. תלמיד יסודות לומד מעט, וחוזר הרבה.'
+      - id: n-demonstratives
+        anchor: demonstratives-examples
+        minutes: 10
+        text: 'תרגול מובנה: המורה מראה תמונה, והתלמיד עונה במשפט אחד בלבד.'
+      - id: n-warmup
+        anchor: warmup
+        minutes: 12
+        text: 'בשאלה 5 המורה מציג חפץ או תמונה. השאלה דורשת שם עצם, לא תשובה של כן / לא. בשאלה 6: נַשּאפֶה = מכונת ייבוש.'
+      - id: n-act1
+        anchor: act1
+        text: 'פעילות פשוטה שמשאירה הצלחה גבוהה. המורה מקפיד על: זכר / נקבה; יחיד / רבים; כמות מינימלית של טקסט; ללא תיאורי תכונות, ללא פעלים וביטויים מתקדמים.'
+      - id: n-act2
+        anchor: act2
+        text: "נשארים עם 5–6 פעלים בלבד כדי לשמור על פשטות. תבנית התשובה: פועל + בּ + שם החדר (בַּקְרַא בִּסַּלון. / בָּנָאם בִּעְ'רְפֶת נוּם.). המורה מתקן בעדינות זכר / נקבה וחדרים."
+      - id: n-act3
+        anchor: act3
+        text: |-
+          המטרה: טקסט קצר של 6 משפטים בלבד, על בסיס תבנית ידועה מראש (משפטים קצרים + תבנית ברורה + תוכן אישי). רמזים לתבנית: 2) חדר אחד או שניים; 3) רק חפצים שקשורים למטבח; 4) חפץ אחד או שניים, לפי בחירת התלמיד.
+          בתרגול המונחה: לשאלה הראשונה בוחרים דבר אחד, לשנייה אומרים שני דברים, לשלישית דבר אחד. המורה עוזר לבחור מילים מהאוצר המצומצם.
+          בכתיבה המורה מסתובב ומתקן רק: זכר / נקבה, עקביות במילים, שימוש נכון ב־פִיו / פיהא. אין הרחבות ואין תיאורים ארוכים. בשיתוף, המורה מחזק דיוק פונטי.
+          גרסה קלה: רק משפטים 1 + 2 (בֵּיתִי זְעִ'יר. בֵּיתִי פִיה מַטְבַּח'.). גרסה קצת מתקדמת (עדיין A1): להוסיף משפט רביעי קצר (וּבִּסַּלון פִיה טַלַפְזְיוֹן.).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: my-home-summary
+    title: סיכום השיעור
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: סיכום השיעור
+      - id: rules-describing
+        type: ruleSummary
+        lang: he
+        skill: תיאור קצר
+        rules:
+          - text: 'כינויי רמז: **הָאדָא** – זה (זכר), **הָאי / הָאדִי** – זו (נקבה), **הָדוֹל** – אלו (רבים).'
+            examples:
+              - 'הָאדָא בַּאבּ.'
+              - 'הָאי טַאוְלַה.'
+              - 'הָדוֹל כַּרָאסִי.'
+          - text: 'יש / אין: **פִי** – יש, **מַא פִי / פֶש** – אין; **עַנְדִי** – יש לי, **מַא עַנְדִי** – אין לי.'
+            examples:
+              - "בִּלְמַטְבַּח' פִי טַאוְלַה."
+              - 'מַא פִי ___.'
+              - 'פֶש ענדי / מא פי ענדי ___.'
+          - text: "תיאור הבית: **בֵּיתִי** + כְּבִּיר / זְעִ'יר, ו־**בֵּיתִי פִי…**"
+            examples:
+              - "בֵּיתִי זְעִ'יר."
+              - "בֵּיתִי פִיו סַלון ו מַטְבַּח'."
+              - "עְ'רְפֶת נוּמִי פִיהא תַחְ'ת."
+      - id: rules-questions
+        type: ruleSummary
+        lang: he
+        skill: שאלות ותשובות בסיסיות
+        rules:
+          - text: 'שואלים עם **שוּ** (מה), **וֵין** (איפה), **כַּם** (כמה).'
+            examples:
+              - "שוּ פִי בִּלְמַטְבַּח'?"
+              - "וֵין בְּתִשְרַבּ ק'הְוֶה?"
+              - "כַּם ע'ורְפֶה פִי בּבֵּיתַכּ?"
+          - text: 'עונים בשני חלקים בלבד: **פועל + בּ + שם החדר**.'
+            examples:
+              - "בַּשְרַבּ בִּלְמַטְבַּח'."
+              - 'בַּקְרַא בִּסַּלון.'
+              - "בָּנָאם בִּעְ'רְפֶת נוּם."
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: הסיכום הזה נבנה מתוך חומר השיעור (במחברת אין סיכום למחזור הזה). בקשו מכל תלמיד משפט אחד לכל כלל.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: my-home-practice
+    book: workbook
+    title: 'תרגול: הבית שלי'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        lang: he
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+      - id: ex-questions
+        type: activity
+        activity: my-home-questions
+      - id: ex-describing
+        type: activity
+        activity: my-home-describing
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: my-home-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: הבית שלי
+        glossLang: he
+        link: https://quizlet.com/il/1119906652/%D7%94%D7%91%D7%99%D7%AA-%D7%A9%D7%9C%D7%99-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &my-home-words
+          - { term: 'סלון', gloss: 'סלון' }
+          - { term: "מַטְבַּח'", gloss: 'מטבח' }
+          - { term: "עֻ'רְפֶת נוּם", gloss: 'חדר שינה' }
+          - { term: 'חַמַּאם', gloss: 'חדר רחצה' }
+          - { term: "תַחְ'ת", gloss: 'מיטה' }
+          - { term: 'טַאוְלַה', gloss: 'שולחן' }
+          - { term: 'כֻּורסִי', gloss: 'כיסא' }
+          - { term: 'שֻובַּאכּ', gloss: 'חלון' }
+          - { term: "ג'נינֶה", gloss: 'גינה' }
+          - { term: 'בּרנדה / בלכּונֶה', gloss: 'מרפסת' }
+          - { term: 'בַּאבּ', gloss: 'דלת' }
+          - { term: "תַּלַאגֶ'ה / ברּאד", gloss: 'מקרר' }
+          - { term: 'הַאדַא', gloss: 'זה' }
+          - { term: 'הַאי', gloss: 'זו' }
+          - { term: 'הַדוֹל', gloss: 'אלו' }
+          - { term: 'פִי', gloss: 'יש' }
+          - { term: 'מַא פִי / פש', gloss: 'אין' }
+          - { term: 'עַנְדִי', gloss: 'יש לי' }
+          - { term: 'מַא עַנְדִי', gloss: 'אין לי' }
+          - { term: 'בֵּיתִי', gloss: 'הבית שלי' }
+          - { term: 'בָּאכּוֹל / בוכֶּל', gloss: 'לאכול' }
+          - { term: 'בַּשְרַבּ', gloss: 'לשתות' }
+          - { term: 'בָּנָאם', gloss: 'לישון' }
+          - { term: 'בַּקְרַא', gloss: 'לקרוא' }
+          - { term: 'בַּשּוּף', gloss: 'לראות' }
+          - { term: "בַּשְתְרֶ'ל", gloss: 'לעבוד' }
+          - { term: 'בַּרַתֶּבְּ', gloss: 'לסדר' }
+          - { term: 'תַרְתיבְּ', gloss: 'סדר' }
+          - { term: "תַנְד'יף", gloss: 'ניקיון' }
+          - { term: 'שוּ', gloss: 'מה' }
+          - { term: 'וֵין', gloss: 'איפה' }
+          - { term: "ק'דֵיש / ק'דֶי", gloss: 'כמה' }
+          - { term: "זְעִ'יר", gloss: 'קטן' }
+
+vocabulary:
+  - slug: my-home
+    title: הבית שלי
+    items: *my-home-words
+
+activities:
+  - slug: my-home-questions
+    title: שאלות ותשובות על הבית
+    minutes: 8
+    items:
+      - id: rooms
+        type: matching
+        lang: he
+        prompt: התאימו כל מקום בבית לפירוש שלו.
+        pairs:
+          - ["מַטְבַּח'", 'מטבח']
+          - ["עֻ'רְפֶת נוּם", 'חדר שינה']
+          - ['חַמַּאם', 'חדר רחצה']
+          - ["ג'נינֶה", 'גינה']
+          - ['בּרנדה', 'מרפסת']
+      - id: coffee
+        type: multipleChoice
+        lang: he
+        prompt: "״וֵין בְּתִשְרַבּ ק'הְוֶה?״ – בחרו את התשובה המתאימה."
+        options:
+          - { text: "בַּשְרַבּ ק'הְוֶה בִּלְמַטְבַּח'.", correct: true }
+          - { text: "בָּנָאם בִּעְ'רְפֶת נוּם.", feedback: 'זו תשובה לשאלה ״איפה אתה ישן?״' }
+          - { text: 'בַּקְרַא בִּסַּלון.', feedback: 'זו תשובה לשאלה ״איפה אתה קורא?״' }
+      - id: eat-meaning
+        type: multipleChoice
+        lang: he
+        prompt: 'מה פירוש השאלה ״וֵין בְּתַאכּוֹל?״'
+        options:
+          - { text: 'איפה אתה אוכל?', correct: true }
+          - { text: 'מה אתה אוכל?', feedback: '״מה״ זה שוּ. וֵין פירושו ״איפה״.' }
+          - { text: 'איפה אתה ישן?', feedback: '״לישון״ זה בָּנָאם; בְּתַאכּוֹל – אתה אוכל.' }
+      - id: sleep
+        type: multipleChoice
+        lang: he
+        prompt: 'איך עונים על ״וֵין בְּתִנַאם?״'
+        options:
+          - { text: "בָּנָאם בִּעְ'רְפֶת נוּם.", correct: true }
+          - { text: "בָּאכּוֹל בִּלְמַטְבַּח'.", feedback: 'זה ״אני אוכל במטבח״.' }
+          - { text: 'בַּשּוּף תַלַפְזְיוֹן בִּל סלון.', feedback: 'זה ״אני רואה טלוויזיה בסלון״.' }
+      - id: verbs
+        type: matching
+        lang: he
+        prompt: התאימו כל פועל לפירוש שלו.
+        pairs:
+          - ['בַּשְרַבּ', 'לשתות']
+          - ['בָּנָאם', 'לישון']
+          - ['בַּקְרַא', 'לקרוא']
+          - ['בַּשּוּף', 'לראות']
+          - ['בַּרַתֶּבְּ', 'לסדר']
+      - id: how-many-rooms
+        type: multipleChoice
+        lang: he
+        prompt: 'איך שואלים: ״כמה חדרים יש בבית שלך?״'
+        options:
+          - { text: "כַּם ע'ורְפֶה פִי בּבֵּיתַכּ?", correct: true }
+          - { text: "שו פי בּעֻ'רְפֶת נומַכּ?", feedback: 'זו השאלה ״מה יש בחדר השינה שלך?״' }
+          - { text: 'וין בתחֶבּ תקעד בל בית?', feedback: 'זו השאלה ״איפה אתה אוהב לשבת בבית?״' }
+      - id: two-parts
+        type: trueFalse
+        lang: he
+        prompt: 'בריאיון ״מה אתה עושה בבית?״ כל תשובה היא שני חלקים בלבד: פועל + חדר / מקום בבית.'
+        answer: true
+        feedback:
+          correct: "נכון! למשל: בַּשְרַבּ בִּלְמַטְבַּח'."
+          incorrect: 'התשובה היא שני חלקים בלבד: פועל + חדר. למשל: בַּקְרַא בִּסַּלון.'
+      - id: order-tv
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: ״אני רואה טלוויזיה בסלון.״'
+        sentence: 'בַּשּוּף תַלַפְזְיוֹן בִּל סלון'
+
+  - slug: my-home-describing
+    title: 'תיאור קצר: יש / אין וכינויי רמז'
+    minutes: 8
+    items:
+      - id: this-masc
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים ״זה״ (זכר)?'
+        options:
+          - { text: 'הָאדָא', correct: true }
+          - { text: 'הָאי', feedback: 'הָאי משמש לנקבה: ״זו״.' }
+          - { text: 'הָדוֹל', feedback: 'הָדוֹל פירושו ״אלו״ (רבים).' }
+      - id: table
+        type: multipleChoice
+        lang: he
+        prompt: 'השלימו: ___ טַאוְלַה. (טַאוְלַה – נקבה)'
+        options:
+          - { text: 'הָאי', correct: true }
+          - { text: 'הָאדָא', feedback: 'טַאוְלַה היא מילה בנקבה: הָאי טַאוְלַה.' }
+          - { text: 'הָדוֹל', feedback: 'הָדוֹל משמש לרבים.' }
+      - id: chairs
+        type: multipleChoice
+        lang: he
+        prompt: 'השלימו: ___ כַּרָאסִי. (כַּרָאסִי – כיסאות)'
+        options:
+          - { text: 'הָדוֹל', correct: true }
+          - { text: 'הָאדָא', feedback: 'כַּרָאסִי הם רבים: הָדוֹל כַּרָאסִי.' }
+          - { text: 'הָאי', feedback: 'כַּרָאסִי הם רבים: הָדוֹל כַּרָאסִי.' }
+      - id: there-is
+        type: matching
+        lang: he
+        prompt: התאימו כל מילה לפירוש שלה.
+        pairs:
+          - ['פִי', 'יש']
+          - ['מַא פִי', 'אין']
+          - ['עַנְדִי', 'יש לי']
+          - ['מַא עַנְדִי', 'אין לי']
+          - ['בֵּיתִי', 'הבית שלי']
+      - id: there-isnt
+        type: multipleChoice
+        lang: he
+        prompt: "״שוּ מַא פִי בִּלְמַטְבַּח'?״ – בחרו תשובה שאומרת מה **אין** במטבח."
+        options:
+          - { text: "מַא פִי תַּלַאגֶ'ה.", correct: true }
+          - { text: "פִי תַּלַאגֶ'ה.", feedback: 'פִי פירושו ״יש״. ״אין״ זה מַא פִי.' }
+          - { text: "עַנְדִי תַּלַאגֶ'ה.", feedback: 'עַנְדִי פירושו ״יש לי״.' }
+      - id: small-house
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״הבית שלי קטן״?'
+        options:
+          - { text: "בֵּיתִי זְעִ'יר.", correct: true }
+          - { text: 'בֵּיתִי כְּבִּיר.', feedback: 'כְּבִּיר פירושו ״גדול״.' }
+          - { text: "בֵּיתַכּ זְעִ'יר.", feedback: 'בֵּיתַכּ פירושו ״הבית שלך״.' }
+      - id: plural
+        type: trueFalse
+        lang: he
+        prompt: 'משתמשים ב־הָדוֹל (אלו) כשמדברים על דבר אחד.'
+        answer: false
+        feedback:
+          correct: 'צדקתם! הָדוֹל הוא לרבים. לדבר אחד: הָאדָא (זכר) או הָאי (נקבה).'
+          incorrect: 'הָדוֹל הוא לרבים (הָדוֹל כַּרָאסִי). לדבר אחד: הָאדָא או הָאי.'
+      - id: order-bed
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: ״בחדר השינה שלי יש מיטה.״'
+        sentence: "בִעְ'רְפֶת נוּמִי פִי תַחְ'ת"

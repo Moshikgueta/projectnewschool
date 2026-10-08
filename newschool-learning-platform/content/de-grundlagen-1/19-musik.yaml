@@ -1,0 +1,578 @@
+# Cycle "Musik", converted from the German Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: musik
+title: Musik
+goal: Über Musik sprechen, W-Fragen stellen und Verben im Präsens benutzen.
+position: 19
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Fragen stellen" and "Verben im Präsens") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The summary is written in Hebrew. The rules are rewritten as short German rules
+    (ruleSummary), with the key explanation kept as a Hebrew `lang: he` text block for
+    each skill. The note "there is no do / does as in English" is kept only in the
+    Hebrew block. The lists "Was haben wir mit dem Lied gemacht?" and "Am Ende des
+    Unterrichts könnt ihr…" are a teacher note.
+  - >-
+    Summary, Präsens: the notebook lists only *ich*-forms. A short rule for the
+    endings was ADDED (*ich höre, du hörst, er / sie hört*), because Activity 2 asks
+    students to report about their partner (*Er hört Pop.*) and the warm-up uses
+    *du*-forms. Please confirm.
+  - >-
+    Activity 4 (song "Ich war noch niemals in New York", Udo Jürgens): the notebook
+    has no link to the song; please add a YouTube or Spotify link if the class plays
+    it. No song lyrics are copied. The four gap sentences ("Ich trinke im Café. Ich
+    denke an mein Leben. Ich träume von der großen Reise. Ich bleibe noch hier.") are
+    the notebook's own "shortened, didactic version"; they do not appear to be the
+    real lyrics, so they are kept as practice sentences with the word bank (trinke,
+    denke, träume, bleibe). Please check that they are not lyrics.
+  - >-
+    Homework: the instructions were in English (and Hebrew); they are now in German.
+    The Mori messages are kept as in the notebook. The list "What this homework
+    practices" was left out.
+  - >-
+    Titles fixed: "Erraten Sie die Frage FRAGEN" is now "Errate die Frage!" (the rest
+    of the cycle uses *du*); "AAktivität 4 (Erwachsene)" is now "Aktivität 4". The
+    Activity 3 heading "Antworten (für die Schüler sichtbar)" became an answer box
+    list; the list "Richtige Fragen (nur für den Lehrer)" is a teacher note.
+  - >-
+    Summary: the Hebrew gloss "איזה מוזיקה" is corrected to "איזו מוזיקה".
+  - >-
+    Vocabulary: "Pop" and "Rock" are written as "die Popmusik (Pop)" and "die
+    Rockmusik (Rock)"; "klassische Musik" as "die klassische Musik". "ich träume" is
+    glossed "אני חולם/ת" as in the summary. "trinken – לשתות" and "ich trinke" are
+    not in the list, although Activity 4 uses them; they were not added.
+  - >-
+    The Quizlet link's tracking parameter (?new) was removed. The notebook gives no
+    activity times, so no minutes are recorded.
+  - The "Antwort von Schüler 1/2/3" lines are removed (the platform has answer boxes).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: musik-unterricht
+    title: 'Unterricht: Musik'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Musik
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Fragen stellen
+            description: 'W-Fragen: *Was? Wo? Wann? Mit wem? Welche?* Das Verb steht an Position 2.'
+          - name: Verben im Präsens
+            description: '*ich höre, ich tanze, ich singe, ich denke, ich träume, ich bleibe*'
+      - id: quizlet
+        type: externalLink
+        label: Musik auf Quizlet
+        url: https://quizlet.com/br/1115858011/%D7%9E%D7%95%D7%96%D7%99%D7%A7%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich heiße ___. Ich höre gern ___.
+        example: Ich heiße Daniel. Ich höre gern Musik.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Was ist dein Lieblingslied?
+            frame: Mein Lieblingslied ist ___.
+          - question: Wo hörst du Musik?
+            frame: Ich höre Musik im ___.
+          - question: Wann hörst du Musik?
+            frame: Ich höre Musik am ___.
+          - question: Ist Musik wichtig für dich? Warum?
+            frame: Ja, Musik ist wichtig für mich, weil ___. / Nein, Musik ist nicht wichtig für mich, weil ___.
+          - question: Was machst du, wenn du dein Lieblingslied hörst?
+            frame: Ich ___, wenn ich mein Lieblingslied höre. (tanzen, singen, denken, kochen)
+          - question: Hörst du lieber Musik oder Podcasts? Warum?
+            frame: Ich höre lieber ___, weil ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Mein Lieblingslied – Mini-Präsentation'
+        skills: [Verben im Präsens]
+        steps:
+          - Sag nur 3 Sätze über dein Lieblingslied. Kurz und einfach. Benutze die Satz-Modelle unten.
+          - Die Klasse reagiert mit einem Wort, zum Beispiel *Schön!*, *Traurig!* oder *Fröhlich!*
+        example: |-
+          Mein Lieblingslied ist ein deutsches Lied.
+          Ich höre das Lied im Auto.
+          Ich fühle mich ruhig.
+      - id: act1-frames
+        type: discussionQuestions
+        title: Mein Lieblingslied
+        items:
+          - question: Was ist dein Lieblingslied?
+            frame: Mein Lieblingslied ist ___.
+          - question: Wann oder wo hörst du das Lied?
+            frame: Ich höre das Lied ___. (am Abend / im Auto / zu Hause)
+          - question: Wie ist das Lied?
+            frame: Das Lied ist ___. (schön / ruhig / traurig / fröhlich)
+          - question: Wie fühlst du dich?
+            frame: Ich fühle mich ___, wenn ich das Lied höre.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Musik-Interview'
+        skills: [Fragen stellen, Verben im Präsens]
+        steps:
+          - Arbeitet zu zweit. A stellt alle 5 Fragen unten, B antwortet mit Ich-Sätzen. Dann wechselt ihr die Rollen.
+          - 'Sag der Klasse 2 Sätze über deinen Partner: *Er / Sie hört ___. Er / Sie hört Musik am ___. Er / Sie hört Musik mit ___.*'
+        example: |-
+          Er hört Pop.
+          Er hört Musik am Abend.
+      - id: act2-questions
+        type: discussionQuestions
+        title: Musik-Interview
+        items:
+          - question: Welche Musik hörst du?
+            frame: Ich höre Pop.
+          - question: Wann hörst du Musik?
+            frame: Ich höre Musik am Abend.
+          - question: Wo hörst du Musik?
+            frame: Ich höre Musik zu Hause.
+          - question: Mit wem hörst du Musik?
+            frame: Ich höre Musik mit Freunden.
+          - question: Was machst du, wenn du Musik hörst?
+            frame: Ich tanze. / Ich singe. / Ich koche.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Errate die Frage!'
+        skills: [Fragen stellen]
+        steps:
+          - Der Lehrer liest nur die **Antwort**. Du sagst die richtige **Frage**.
+          - Die Klasse wiederholt die richtige Frage gemeinsam.
+          - 'Zu zweit (optional): A liest eine Antwort, B bildet die Frage. Nach 3–4 Sätzen wechselt ihr die Rollen.'
+        example: '*Ich höre Musik im Park.* → **Wo hörst du Musik?**'
+      - id: act3-answers
+        type: discussionQuestions
+        title: Schreib die Frage zur Antwort
+        items:
+          - question: Ich höre Musik im Park.
+          - question: Ich höre Pop.
+          - question: Ich höre Musik mit meiner Freundin.
+          - question: Ich höre Musik am Morgen.
+          - question: Ich mag keinen Heavy Metal.
+          - question: Ich tanze, wenn ich Musik höre.
+          - question: Ich höre Musik zu Hause.
+          - question: Ich höre Musik am Abend.
+          - question: Ich höre Musik im Bus.
+          - question: Ich höre Rockmusik.
+          - question: Ich singe, wenn ich Musik höre.
+          - question: Ich höre Musik mit meinen Freunden.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Lied mit Lücken – Verben im Präsens'
+        skills: [Verben im Präsens]
+        steps:
+          - 'Wir hören das Lied *Ich war noch niemals in New York* von Udo Jürgens.'
+          - Hör zu und ergänze die Verben in den Sätzen unten.
+          - Lest die vier Sätze zusammen laut vor.
+          - 'Ändere einen Satz mit einem eigenen Verb, zum Beispiel: *Ich trinke Kaffee.* *Ich höre Musik.* *Ich träume von Italien.* *Ich lese im Café.*'
+        wordBank: [trinke, denke, träume, bleibe]
+      - id: act4-gaps
+        type: discussionQuestions
+        title: Lücken füllen
+        items:
+          - question: Ich ___ im Café.
+          - question: Ich ___ an mein Leben.
+          - question: Ich ___ von der großen Reise.
+          - question: Ich ___ noch hier.
+          - question: Mein eigener Satz
+            frame: Ich ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Fragen stellen** (Aktivitäten 2 und 3)
+          und **Verben im Präsens** (Aktivitäten 1, 2 und 4). Am Ende können die
+          Schüler einfache Fragen über Musik stellen, mit **Ich** antworten, Verben im
+          Präsens benutzen und über Musik, Ort, Zeit und Personen sprechen.
+      - id: n-intro
+        anchor: intro
+        text: Schreib das Modell an die Tafel, gib dein eigenes Beispiel und frag dann jeden Schüler.
+      - id: n-warmup
+        anchor: warmup
+        text: Stell jedem Schüler mindestens zwei Fragen.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Schreib die Satz-Modelle an die Tafel. Die Schüler sprechen freiwillig oder
+          reihum. Nach jedem Schüler fragst du die Klasse: „Schön? Ruhig? Traurig?
+          Fröhlich?"
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Schreib die Fragen und die Antwort-Modelle an die Tafel. Geh herum, hilf bei
+          den Verben und korrigiere nur sanft.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Schreib **Antwort → Frage** an die Tafel und mach das Beispiel selbst vor.
+          Richtige Fragen (nur für den Lehrer): 1. Wo hörst du Musik? 2. Welche Musik
+          hörst du? 3. Mit wem hörst du Musik? 4. Wann hörst du Musik? 5. Welche Musik
+          magst du nicht? 6. Was machst du, wenn du Musik hörst? 7. Wo hörst du Musik?
+          8. Wann hörst du Musik? 9. Wo hörst du Musik? 10. Welche Musik hörst du? 11.
+          Was machst du, wenn du Musik hörst? 12. Mit wem hörst du Musik? Optional zum
+          Schluss: „Und du? Wo hörst du Musik?"
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Schreib die vier Verben an die Tafel: **trinke – denke – träume – bleibe**.
+          Lies die vier Sätze langsam vor oder spiel das Lied (der Link ist nicht im
+          Heft). Frag dann: „Was kommt hier?" und schreib die Lösungen an die Tafel:
+          trinke, denke, träume, bleibe.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: musik-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-questions
+        type: ruleSummary
+        skill: Fragen stellen
+        rules:
+          - text: 'Die wichtigen Fragewörter: *Was? Wo? Wann? Mit wem? Welche?*'
+            examples:
+              - Was hörst du?
+              - Wo hörst du Musik?
+              - Wann hörst du Musik?
+              - Mit wem hörst du Musik?
+              - Welche Musik hörst du?
+          - text: '**Fragewort + Verb + Subjekt.** Das Verb steht an **Position 2**.'
+            examples: [Wo hörst du Musik?]
+      - id: questions-table
+        type: table
+        caption: Fragen über Musik
+        header: [Frage, Hebräisch]
+        rows:
+          - [Was hörst du?, מה אתה שומע?]
+          - [Wo hörst du Musik?, איפה אתה שומע מוזיקה?]
+          - [Wann hörst du Musik?, מתי אתה שומע מוזיקה?]
+          - [Mit wem hörst du Musik?, עם מי אתה שומע מוזיקה?]
+          - [Welche Musik hörst du?, איזו מוזיקה אתה שומע?]
+      - id: questions-he
+        type: text
+        lang: he
+        text: 'מבנה של שאלה בגרמנית: **מילת שאלה + פועל + נושא**. אין "do / does" כמו באנגלית.'
+      - id: rules-verbs
+        type: ruleSummary
+        skill: Verben im Präsens
+        rules:
+          - text: 'Mit **ich** endet das Verb auf **-e**.'
+            examples: [ich höre, ich tanze, ich singe, ich denke, ich träume, ich bleibe]
+          - text: 'Mit **du** endet das Verb auf **-st**, mit **er / sie** auf **-t**.'
+            examples: [du hörst · er hört, du tanzt · sie tanzt, du singst · er singt]
+          - text: Benutze die Verben in einfachen Sätzen.
+            examples:
+              - Ich höre Musik.
+              - Ich tanze, wenn ich Musik höre.
+              - Ich trinke Kaffee.
+              - Ich träume von einer Reise.
+      - id: verbs-table
+        type: table
+        caption: Verben
+        header: [Deutsch, Hebräisch]
+        rows:
+          - [ich höre, אני שומע]
+          - [ich tanze, אני רוקד]
+          - [ich singe, אני שר]
+          - [ich denke, אני חושב]
+          - [ich träume, אני חולם/ת]
+          - [ich bleibe, אני נשאר]
+          - ['Ich tanze, wenn ich Musik höre.', אני רוקד כשאני שומע מוזיקה.]
+          - [Ich träume von einer Reise., אני חולם על טיול.]
+      - id: verbs-he
+        type: text
+        lang: he
+        text: 'בזמן הווה, עם **ich** הפועל נגמר ב־**e**: ich höre, ich tanze. עם **du** הוא נגמר ב־**st** (du hörst), ועם **er / sie** ב־**t** (er hört).'
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: >-
+          Wiederhole die zwei Fertigkeiten mit der Klasse und bitte um ein neues
+          Beispiel für jede Regel. Wiederhole auch das Lied: Wir haben zugehört, Verben
+          ergänzt, laut gelesen und eigene Sätze gebildet.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: musik-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte jede Frage auf Deutsch, laut oder schriftlich.
+      - id: mori-musik
+        type: aiTutorPrompt
+        title: Über Musik sprechen
+        message: |-
+          Hi Mori! Ich möchte Deutsch üben.
+          Bitte stell mir Fragen über Musik mit:
+          Was? Wo? Wann? Mit wem?
+          Bitte nur Präsens und korrigiere meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Möchtest du mehr Fragen? Schreib: **Bitte frag mich mehr!**
+          Verstehst du eine Erklärung nicht? Schreib: **Kannst du mir das auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra-Übungen
+      - id: mori-raten
+        type: aiTutorPrompt
+        title: Was mache ich mit Musik?
+        intro: >-
+          Schick diese Nachricht an Mori. Dann beschreibst du, was du machst, zum
+          Beispiel: *Ich bewege meinen Körper. Ich lächle. Ich fühle den Rhythmus.*
+          (Mori rät: *Tanzt du?*) Danach schreibst du: **Jetzt bist du dran! Du
+          beschreibst etwas mit Musik, und ich rate.**
+        message: |-
+          Hi Mori! Wir spielen ein Spiel.
+          Ich beschreibe, was ich mache, wenn ich Musik höre.
+          Du errätst die Aktion.
+      - id: mori-fragen
+        type: aiTutorPrompt
+        title: Fragen bauen
+        intro: >-
+          Schick diese Nachricht an Mori. Dann schreibst du einen Satz über Musik, zum
+          Beispiel: *Ich höre Musik am Abend.* (Mori schreibt: *Wann hörst du Musik?*)
+          Danach schreibst du: **Jetzt bist du dran! Schreib einen Satz, und ich mache
+          eine Frage.**
+        message: |-
+          Hi Mori! Wir machen ein Spiel.
+          Ich schreibe einen Satz über Musik.
+          Du machst daraus eine Frage mit:
+          Was? Wo? Wann? Mit wem?
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: musik-uebung
+    book: workbook
+    title: 'Übung: Musik'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-fragen
+        type: activity
+        activity: musik-fragen
+      - id: ex-verben
+        type: activity
+        activity: musik-verben
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: musik-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter zum Thema Musik
+        glossLang: he
+        link: https://quizlet.com/br/1115858011/%D7%9E%D7%95%D7%96%D7%99%D7%A7%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &musik-words
+          - { term: die Musik, gloss: מוזיקה }
+          - { term: das Lied, gloss: שיר }
+          - { term: hören, gloss: לשמוע / להאזין }
+          - { term: singen, gloss: לשיר }
+          - { term: tanzen, gloss: לרקוד }
+          - { term: die Frage, gloss: שאלה }
+          - { term: die Antwort, gloss: תשובה }
+          - { term: was, gloss: מה }
+          - { term: wo, gloss: איפה }
+          - { term: wann, gloss: מתי }
+          - { term: mit wem, gloss: עם מי }
+          - { term: ich höre, gloss: אני שומע }
+          - { term: ich tanze, gloss: אני רוקד }
+          - { term: ich singe, gloss: אני שר }
+          - { term: ich denke, gloss: אני חושב }
+          - { term: ich träume, gloss: אני חולם/ת }
+          - { term: ich bleibe, gloss: אני נשאר }
+          - { term: der Abend, gloss: ערב }
+          - { term: der Morgen, gloss: בוקר }
+          - { term: das Haus, gloss: בית }
+          - { term: der Park, gloss: פארק }
+          - { term: der Bus, gloss: אוטובוס }
+          - { term: zu Hause, gloss: בבית }
+          - { term: die Popmusik (Pop), gloss: פופ }
+          - { term: die Rockmusik (Rock), gloss: רוק }
+          - { term: die klassische Musik, gloss: מוזיקה קלאסית }
+          - { term: wichtig, gloss: חשוב }
+          - { term: fröhlich, gloss: שמח }
+          - { term: traurig, gloss: עצוב }
+          - { term: ruhig, gloss: רגוע }
+          - { term: der Rhythmus, gloss: קצב }
+
+vocabulary:
+  - slug: musik
+    title: Musik
+    items: *musik-words
+
+activities:
+  - slug: musik-fragen
+    title: 'Fragen stellen: Was? Wo? Wann? Mit wem? Welche?'
+    minutes: 8
+    items:
+      - id: wo-park
+        type: multipleChoice
+        prompt: '___ hörst du Musik? – Im Park.'
+        options:
+          - { text: Wo, correct: true }
+          - { text: Wann, feedback: '*Wann?* fragt nach der Zeit. *Im Park* ist ein Ort: *Wo?*' }
+          - {
+              text: Mit wem,
+              feedback: '*Mit wem?* fragt nach einer Person. *Im Park* ist ein Ort: *Wo?*',
+            }
+      - id: welche-musik
+        type: multipleChoice
+        prompt: '___ Musik hörst du? – Ich höre Pop.'
+        options:
+          - { text: Welche, correct: true }
+          - {
+              text: Wo,
+              feedback: '*Wo?* fragt nach dem Ort. Für die Art von Musik fragst du *Welche Musik?*',
+            }
+          - {
+              text: Wann,
+              feedback: '*Wann?* fragt nach der Zeit. Für die Art von Musik fragst du *Welche Musik?*',
+            }
+      - id: mit-wem
+        type: multipleChoice
+        prompt: '___ hörst du Musik? – Mit meiner Freundin.'
+        options:
+          - { text: Mit wem, correct: true }
+          - {
+              text: Was,
+              feedback: '*Was?* fragt nach einer Sache. Für eine Person fragst du *Mit wem?*',
+            }
+          - { text: Wo, feedback: '*Wo?* fragt nach dem Ort. Für eine Person fragst du *Mit wem?*' }
+      - id: wann
+        type: fillBlank
+        prompt: Schreib das Fragewort.
+        text: '___ hörst du Musik? – Am Morgen.'
+        blanks: [[Wann]]
+      - id: verb-zwei
+        type: trueFalse
+        prompt: 'In der Frage *Wo hörst du Musik?* steht das Verb an Position 2.'
+        answer: true
+        feedback:
+          correct: 'Richtig! Fragewort + Verb + Subjekt: *Wo hörst du Musik?*'
+          incorrect: 'Das Verb *hörst* steht direkt nach dem Fragewort, an Position 2.'
+      - id: richtige-frage
+        type: multipleChoice
+        prompt: Welche Frage ist richtig?
+        options:
+          - { text: Was machst du?, correct: true }
+          - { text: Was du machst?, feedback: 'Das Verb steht an Position 2: *Was machst du?*' }
+          - {
+              text: Machst was du?,
+              feedback: 'Zuerst das Fragewort, dann das Verb: *Was machst du?*',
+            }
+      - id: frage-antwort
+        type: matching
+        prompt: Welche Frage passt zu welcher Antwort?
+        pairs:
+          - [Ich höre Musik im Bus., Wo hörst du Musik?]
+          - [Ich höre Rockmusik., Welche Musik hörst du?]
+          - [Ich höre Musik am Abend., Wann hörst du Musik?]
+          - [Ich höre Musik mit meinen Freunden., Mit wem hörst du Musik?]
+          - [Ich singe., Was machst du?]
+      - id: ordne-mit-wem
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Mit wem hörst du Musik?
+
+  - slug: musik-verben
+    title: 'Verben im Präsens: ich höre, ich tanze'
+    minutes: 8
+    items:
+      - id: ich-hoere
+        type: multipleChoice
+        prompt: 'Ich ___ Musik. (hören)'
+        options:
+          - { text: höre, correct: true }
+          - {
+              text: hört,
+              feedback: '*hört* ist für *er / sie*. Mit *ich* endet das Verb auf -e: *ich höre*.',
+            }
+          - {
+              text: hörst,
+              feedback: '*hörst* ist für *du*. Mit *ich* endet das Verb auf -e: *ich höre*.',
+            }
+      - id: er-hoert
+        type: multipleChoice
+        prompt: 'Er ___ Pop. (hören)'
+        options:
+          - { text: hört, correct: true }
+          - {
+              text: höre,
+              feedback: '*höre* ist für *ich*. Mit *er / sie* endet das Verb auf -t: *er hört*.',
+            }
+          - {
+              text: hörst,
+              feedback: '*hörst* ist für *du*. Mit *er / sie* endet das Verb auf -t: *er hört*.',
+            }
+      - id: tanze
+        type: fillBlank
+        prompt: Schreib das Verb *tanzen* in der richtigen Form.
+        text: Ich ___, wenn ich Musik höre.
+        blanks: [[tanze]]
+      - id: trinke
+        type: fillBlank
+        prompt: Schreib das Verb *trinken* in der richtigen Form.
+        text: Ich ___ Kaffee im Café.
+        blanks: [[trinke]]
+      - id: du-singst
+        type: fillBlank
+        prompt: Schreib das Verb *singen* in der richtigen Form.
+        text: Du ___ gern.
+        blanks: [[singst]]
+      - id: endung-e
+        type: trueFalse
+        prompt: 'Mit *ich* endet das Verb auf -e: *ich singe, ich träume*.'
+        answer: true
+        feedback:
+          correct: 'Richtig! *ich höre, ich tanze, ich singe, ich träume*.'
+          incorrect: 'Mit *ich* endet das Verb auf -e: *ich höre, ich singe*.'
+      - id: bedeutung
+        type: matching
+        prompt: Was passt zusammen?
+        pairs:
+          - [ich höre, אני שומע]
+          - [ich tanze, אני רוקד]
+          - [ich singe, אני שר]
+          - [ich denke, אני חושב]
+          - [ich bleibe, אני נשאר]
+      - id: ordne-reise
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Ich träume von einer Reise.

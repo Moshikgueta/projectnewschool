@@ -1,0 +1,582 @@
+# Cycle "Profesiones", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: profesiones
+title: Profesiones
+goal: Hablar de profesiones con acciones en presente y números.
+position: 4
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Acciones en presente" and "Números") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    IMPORTANT: the summary rules for "Números" in the notebook are garbled ("Regla 2:
+    añadir 30-90"; "dos centenas o tres millares", which is not how Spanish says 200 or
+    3000). They were rewritten: (1) learn 1–10 well; (2) the tens 30–90 and "y" for
+    31–99 (treinta y uno, cuarenta y cinco); (3) cien / mil, with doscientos,
+    trescientos, quinientos, novecientos and dos mil, tres mil. A table of the numbers
+    was added. Please check.
+  - >-
+    Summary, -er verbs: the notebook's model verb is "atender", which changes its stem
+    (atiendo, atiendes) and so is not a good model of a regular -er verb. The model is
+    now "vender" (in the cycle's vocabulary), with a note that atender changes e → ie.
+    The vosotros forms were added to the conjugation table (the notebook leaves them
+    out here; other cycles include them).
+  - >-
+    Skill mapping in the notebook says Acciones en presente = warm-up questions 1–3
+    plus Activity 1 OR Activity 3, and Números = warm-up questions 4–6 plus Activity 2
+    OR Activity 4. But Activity 3 is a budget activity labelled NÚMEROS, and Activity 4
+    is labelled NÚMEROS Y ACCIONES; warm-up question 4 ("¿Qué no te gusta de tu
+    trabajo?") has no numbers. The teacher note keeps the notebook's mapping; please
+    check whether "Activity 1 or 4" / "Activity 2 or 3" was meant.
+  - >-
+    Activity 3 (budget) refers to "los mismos artículos que anteriormente y con los
+    precios de los artículos", a list of items with prices that is not in the
+    notebook. The steps are simplified; the teacher must supply the item list. The
+    frame "En el mes 1 gasto: X en ___" is written as "En el mes 1 gasto ___ dólares en
+    ___, …" and "Yo gasto ___ en 3 meses" as "En total gasto ___ dólares en 3 meses."
+  - >-
+    Introduction frame "Soy un ___ (profesión)" is changed to "Soy ___" (no article
+    with a profession in Spanish: "Soy profesora").
+  - >-
+    Activity 4 profession cards: "Panadería → Chef" is changed to "Panadería →
+    Panadero". "y “entrevistar” a un nuevo socio" is corrected to "entrevistan a un
+    nuevo compañero"; "salas de reuniones de Zoom" is written as "salas de grupos de
+    Zoom". "Sólo" → "solo" in Activity 1.
+  - >-
+    Mori section: a broken character ("ð", probably an emoji) was removed. The two
+    extra games each have a second message to send later; each is a separate copyable
+    message.
+  - >-
+    The Quizlet link had a "?new" parameter; it was removed.
+  - >-
+    Vocabulary: "Pintar" is translated as "לצבוע / לצייר" and "Pintor / Pintora" as
+    "צייר / צבע" (painter of pictures or of walls); "Servir" as "להגיש / לשרת";
+    "Sitio de construcción" is shown as "Obra / Sitio de construcción" because the
+    activities say "obra". Please confirm.
+  - Activity and summary times given as ranges (15–20 minutes) are recorded as 20 minutes.
+  - >-
+    The "Respuesta del estudiante 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: profesiones-clase
+    title: 'Clase: Profesiones'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Profesiones
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Acciones en presente
+            description: Verbos en -ar, -er, -ir (trabajo, vendo, escribo) y *quiero / necesito / puedo* + infinitivo
+          - name: Números
+            description: Del uno al diez, las decenas (treinta, cuarenta…), cien y mil
+      - id: quizlet
+        type: externalLink
+        label: Profesiones en Quizlet
+        url: https://quizlet.com/il/1053516339/professions-basic-spanish-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Soy ___ (profesión).
+        example: Soy Dana. Soy profesora.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Qué haces en el trabajo?
+            frame: En el trabajo yo ___, ___ y ___. (3 cosas que haces en el trabajo)
+          - question: ¿Dónde trabajas?
+            frame: Yo trabajo en ___.
+          - question: ¿Qué te gusta de tu trabajo?
+            frame: Me gusta que ___. / Me gusta ___.
+          - question: ¿Qué no te gusta de tu trabajo?
+            frame: No me gusta que ___. / No me gusta ___.
+          - question: ¿Cuántas horas trabajas cada semana?
+            frame: Trabajo ___ horas por semana.
+          - question: ¿Qué haces después del trabajo?
+            frame: Después del trabajo yo ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: 21 preguntas'
+        skills: [Acciones en presente]
+        minutes: 20
+        steps:
+          - Un estudiante elige un trabajo en secreto.
+          - El resto de la clase se turna para hacer preguntas de sí o no con verbos.
+          - Tienen hasta 21 preguntas para adivinar el trabajo.
+        example: |-
+          **Trabajo secreto:** *piloto* (¡solo el estudiante elegido lo sabe!)
+          Estudiante A: *¿Trabajas con una computadora?* — No.
+          Estudiante B: *¿Trabajas con gente?* — Sí.
+          Estudiante C: *¿Conduces un coche?* — No.
+          Estudiante D: *¿Llevas uniforme?* — Sí.
+          Estudiante E: *¿Viajas a otros países?* — Sí.
+          … hasta que alguien adivina: *¿Eres piloto?* — ¡Sí!
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: ¡Abrimos un negocio!'
+        skills: [Números]
+        minutes: 20
+        steps:
+          - 'Imagina que abres un negocio. Elige: el nombre de la empresa, qué vende o hace, 3 profesiones que necesitas y cuántos trabajadores.'
+          - ¡Preséntalo a la clase!
+        example: |-
+          *Mi negocio es una escuela de música. Necesito tres profesores de música, una recepcionista y una persona de limpieza.*
+          *Hay tres profesores que enseñan música. Hay una recepcionista que ayuda a los estudiantes.*
+      - id: act2-plan
+        type: discussionQuestions
+        title: Mi negocio
+        items:
+          - question: 'Nombre de la empresa: ___'
+          - question: 'Mi negocio vende / hace: ___'
+          - question: 'Necesito: ___, ___ y ___ (3 profesiones)'
+          - question: '¿Cuántos trabajadores? ___'
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Mi presupuesto empresarial'
+        skills: [Números]
+        minutes: 20
+        steps:
+          - Tienes un presupuesto de 900 dólares para empezar un nuevo negocio.
+          - Decide cuánto gastas cada mes durante los primeros 3 meses y qué compras.
+          - Presenta tu plan a la clase con las oraciones de abajo.
+      - id: act3-plan
+        type: discussionQuestions
+        title: Mi presupuesto
+        items:
+          - question: En el mes 1 gasto ___ dólares en ___, ___ dólares en ___ y ___ dólares en ___.
+          - question: En el mes 2 gasto ___ dólares en ___, ___ dólares en ___ y ___ dólares en ___.
+          - question: En el mes 3 gasto ___ dólares en ___, ___ dólares en ___ y ___ dólares en ___.
+          - question: En total gasto ___ dólares en 3 meses.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Entrevista de trabajo'
+        skills: [Números, Acciones en presente]
+        minutes: 20
+        steps:
+          - 'Trabajen en parejas: el estudiante A es el entrevistador y el estudiante B es el empleado.'
+          - El estudiante B recibe una tarjeta de profesión de tu profesor.
+          - El estudiante A hace las preguntas de abajo; el estudiante B responde.
+          - Cambien de rol, intercambien las tarjetas y repitan la conversación.
+        example: |-
+          **Tarjetas de profesión:** Escuela → Profesor · Hospital → Médico · Restaurante → Camarero · Obra → Ingeniero · Panadería → Panadero
+      - id: act4-dialogue
+        type: dialogue
+        lines:
+          - { speaker: A, text: ¿Cuántas personas trabajan contigo? }
+          - { speaker: B, text: Veinte personas. }
+          - { speaker: A, text: ¿Y cuántas horas trabajas por semana? }
+          - { speaker: B, text: Trabajo cuarenta horas a la semana. }
+      - id: act4-numbers
+        type: discussionQuestions
+        title: Preguntas de entrevista con números
+        items:
+          - question: ¿Cuántas personas trabajan contigo?
+          - question: ¿Cuántas horas trabajas cada semana?
+          - question: ¿Cuántos días trabajas por semana?
+          - question: ¿Cuántos clientes atiendes por día?
+          - question: ¿Cuántos descansos tienes?
+          - question: ¿A qué hora empiezas a trabajar?
+      - id: act4-actions
+        type: discussionQuestions
+        title: Preguntas de entrevista con acciones en presente
+        items:
+          - question: ¿Qué haces en tu trabajo?
+          - question: ¿Cuáles son tus principales responsabilidades?
+          - question: ¿Por qué quieres este trabajo?
+          - question: ¿Qué te gusta de esta profesión?
+          - question: ¿Trabajas bien en equipo?
+          - question: ¿Llegas a tiempo?
+          - question: ¿Tomas descansos durante el día?
+          - question: ¿Hablas con los clientes?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo. **Acciones en presente:** preguntas de
+          calentamiento 1–3, y una actividad más: la Actividad 1 o la Actividad 3.
+          **Números:** preguntas de calentamiento 4–6 y el vocabulario, y una actividad
+          más: la Actividad 2 o la Actividad 4.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Da a los estudiantes el presupuesto de 900 dólares y la lista de artículos con
+          sus precios (no está en el cuaderno; prepárala antes de la clase).
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Prepara las tarjetas de profesión. Giro opcional: después de dos rondas, los
+          estudiantes caminan por la clase y entrevistan a un nuevo compañero (en
+          persona) o cambian de sala de grupos en Zoom.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: profesiones-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-present
+        type: ruleSummary
+        skill: Acciones en presente
+        rules:
+          - text: Usamos el presente para hablar de acciones de ahora, hechos y hábitos. También para hablar de planes o metas.
+            examples: [Yo enseño en una escuela primaria.]
+          - text: 'Los verbos tienen tres grupos según su terminación: **-ar**, **-er**, **-ir**. Cada grupo tiene sus terminaciones (mira la tabla).'
+            examples:
+              - Yo trabajo en un hospital. · Tú trabajas en una oficina. · Ellos trabajan en una obra.
+              - Yo vendo pan. · Él vende coches. · Nosotros vendemos comida en la cafetería.
+              - Tú escribes informes médicos. · Ella escribe recetas para sus pacientes. · Ellas escriben historias para niños.
+              - '*Atender* cambia e → ie: atiendo, atiendes, atiende, atendemos, atienden.'
+          - text: Después de **quiero / necesito / puedo**, el verbo va en **infinitivo**.
+            examples:
+              - Yo quiero enseñar inglés.
+              - Yo necesito preparar una presentación.
+              - Tú puedes ayudar a los clientes.
+              - Ella quiere cocinar en un restaurante.
+              - Nosotros necesitamos organizar una reunión.
+              - Ellos pueden construir una casa.
+      - id: present-table
+        type: table
+        caption: Verbos en presente
+        header: [Persona, trabajar (-ar), vender (-er), escribir (-ir)]
+        rows:
+          - [Yo, trabajo, vendo, escribo]
+          - [Tú, trabajas, vendes, escribes]
+          - [Él / Ella / Usted, trabaja, vende, escribe]
+          - [Nosotros / Nosotras, trabajamos, vendemos, escribimos]
+          - [Vosotros / Vosotras, trabajáis, vendéis, escribís]
+          - [Ellos / Ellas / Ustedes, trabajan, venden, escriben]
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Números
+        rules:
+          - text: Aprende bien los números del uno al diez; los demás se forman con ellos.
+            examples: ['uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez']
+          - text: 'Aprende las decenas del 30 al 90. Del 31 al 99 usamos **y**: decena + y + número.'
+            examples: [treinta y uno, cuarenta y cinco, noventa y nueve]
+          - text: 'Aprende **cien** (100) y **mil** (1000). Para 2000, 3000… di el número + mil.'
+            examples:
+              [
+                Doscientos (200) · trescientos (300) · quinientos (500) · novecientos (900),
+                Dos mil (2000) · tres mil (3000),
+              ]
+      - id: numbers-table
+        type: table
+        caption: Los números
+        header: [Número, En palabras]
+        rows:
+          - ['20', veinte]
+          - ['30', treinta]
+          - ['40', cuarenta]
+          - ['50', cincuenta]
+          - ['60', sesenta]
+          - ['70', setenta]
+          - ['80', ochenta]
+          - ['90', noventa]
+          - ['100', cien]
+          - ['200', doscientos]
+          - ['300', trescientos]
+          - ['500', quinientos]
+          - ['900', novecientos]
+          - ['1000', mil]
+          - ['2000', dos mil]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: profesiones-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-profesiones
+        type: aiTutorPrompt
+        title: Hablar de profesiones
+        message: >-
+          Hola Mori. Quiero hablar sobre profesiones. ¿Puedes hacerme preguntas con las
+          habilidades "acciones en presente" y "números"? Usa solo presente simple y
+          corrige mis errores, por favor.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Hazme más preguntas, por favor!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicarlo en hebreo pero con la frase en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Práctica adicional
+      - id: mori-quien-soy
+        type: aiTutorPrompt
+        title: ¿Quién soy? (Adivina la profesión)
+        intro: >-
+          Piensa en una profesión y envía este mensaje a Mori. Después da pistas. Por
+          ejemplo: *Trabajo con animales. Uso un estetoscopio. Ayudo a perros y gatos.
+          ¿Quién soy?* → Veterinario.
+        message: Hola Mori. Quiero estudiar español con un juego. Yo pienso en una profesión y tú adivinas.
+      - id: mori-quien-soy-2
+        type: aiTutorPrompt
+        title: '¿Quién soy? Ahora tú adivinas'
+        intro: ¡Ahora es tu turno para adivinar! Envía este mensaje a Mori.
+        message: Ahora tú, Mori. Piensa en una profesión y yo adivino.
+      - id: mori-entrevista
+        type: aiTutorPrompt
+        title: Entrevista de trabajo
+        intro: >-
+          Tú eres el jefe de una empresa. Mori quiere un trabajo y tú haces la entrevista.
+          Envía este mensaje para empezar.
+        message: Hola Mori. Estoy aprendiendo con juegos. Hoy hago entrevistas de trabajo. ¿Qué trabajo quieres?
+      - id: entrevista-questions
+        type: examples
+        items:
+          - text: ¿Por qué quieres este trabajo?
+          - text: ¿Qué experiencia tienes?
+          - text: ¿Qué haces en este trabajo?
+          - text: ¿Cuántas horas puedes trabajar?
+          - text: ¿Te gusta trabajar en equipo?
+          - text: ¿Dónde quieres trabajar?
+      - id: entrevista-end
+        type: text
+        text: Haz 3 o 4 preguntas de esta lista (o inventa las tuyas). Cuando Mori conteste, tú decides **¿le das el trabajo o no? ¿Por qué?** ¡Explícaselo!
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: profesiones-practica
+    book: workbook
+    title: 'Práctica: Profesiones'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-presente
+        type: activity
+        activity: profesiones-presente
+      - id: ex-numeros
+        type: activity
+        activity: profesiones-numeros
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: profesiones-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de las profesiones
+        glossLang: he
+        link: https://quizlet.com/il/1053516339/professions-basic-spanish-flash-cards/
+        items: &profesiones-words
+          - { term: Enseñar, gloss: ללמד }
+          - { term: Escribir, gloss: לכתוב }
+          - { term: Arreglar / Reparar, gloss: לתקן }
+          - { term: Pintar, gloss: לצבוע / לצייר }
+          - { term: Vender, gloss: למכור }
+          - { term: Cocinar, gloss: לבשל }
+          - { term: Ayudar, gloss: לעזור }
+          - { term: Servir, gloss: להגיש / לשרת }
+          - { term: Maestro / Maestra, gloss: מורה }
+          - { term: Doctor / Doctora, gloss: רופא / רופאה }
+          - { term: Ingeniero / Ingeniera, gloss: מהנדס / מהנדסת }
+          - { term: Oficial de policía, gloss: שוטר / שוטרת }
+          - { term: Pintor / Pintora, gloss: צייר / צבע }
+          - { term: Cajero / Cajera, gloss: קופאי / קופאית }
+          - { term: Periodista, gloss: עיתונאי / עיתונאית }
+          - { term: Mesero / Mesera, gloss: מלצר / מלצרית }
+          - { term: Lugar de trabajo, gloss: מקום עבודה }
+          - { term: Negocio / Empresa, gloss: עסק }
+          - { term: Panadería, gloss: מאפייה }
+          - { term: Hospital, gloss: בית חולים }
+          - { term: Escuela, gloss: בית ספר }
+          - { term: Restaurante, gloss: מסעדה }
+          - { term: Obra / Sitio de construcción, gloss: אתר בנייה }
+          - { term: Sueldo / Salario, gloss: משכורת }
+          - { term: Presupuesto, gloss: תקציב }
+          - { term: Gastos, gloss: הוצאות }
+          - { term: Alquiler, gloss: שכר דירה }
+          - { term: Ahorros, gloss: חסכונות }
+          - { term: Trabajadores, gloss: עובדים }
+          - { term: Horas, gloss: שעות }
+
+vocabulary:
+  - slug: profesiones
+    title: Profesiones
+    items: *profesiones-words
+
+activities:
+  - slug: profesiones-presente
+    title: 'Acciones en presente: -ar, -er, -ir'
+    minutes: 8
+    items:
+      - id: yo-trabajo
+        type: multipleChoice
+        prompt: Yo ___ en un hospital.
+        options:
+          - { text: trabajo, correct: true }
+          - {
+              text: trabaja,
+              feedback: '*Trabaja* es para *él / ella*. Con *yo* el verbo termina en *-o*.',
+            }
+          - {
+              text: trabajar,
+              feedback: '*Trabajar* es el infinitivo. Con *yo* el verbo termina en *-o*: *trabajo*.',
+            }
+      - id: ella-escribe
+        type: multipleChoice
+        prompt: Ella ___ recetas para sus pacientes.
+        options:
+          - { text: escribe, correct: true }
+          - { text: escribo, feedback: '*Escribo* es para *yo*. Con *ella* usa *escribe*.' }
+          - {
+              text: escriben,
+              feedback: '*Escriben* es para *ellos / ellas*. Con *ella* usa *escribe*.',
+            }
+      - id: completa-grupos
+        type: fillBlank
+        prompt: Completa con el verbo en presente.
+        text: Nosotros ___ (trabajar) en una empresa. Ustedes ___ (vender) pan. Tú ___ (escribir) informes.
+        blanks: [[trabajamos], [venden], [escribes]]
+      - id: quiero-ensenar
+        type: multipleChoice
+        prompt: Yo quiero ___ inglés.
+        options:
+          - { text: enseñar, correct: true }
+          - {
+              text: enseño,
+              feedback: 'Después de *quiero*, el verbo va en infinitivo: *quiero enseñar*.',
+            }
+          - {
+              text: enseña,
+              feedback: 'Después de *quiero*, el verbo va en infinitivo: *quiero enseñar*.',
+            }
+      - id: necesito-infinitivo
+        type: fillBlank
+        prompt: Completa con el verbo correcto.
+        text: Yo necesito ___ (preparar) una presentación.
+        blanks: [[preparar]]
+      - id: infinitivo-regla
+        type: trueFalse
+        prompt: 'Después de *quiero*, *necesito* o *puedo*, el verbo va en infinitivo: *Ellos pueden construir una casa.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *Pueden construir*, *quiero enseñar*, *necesito preparar*.
+          incorrect: 'Después de *quiero / necesito / puedo* el verbo no cambia: *quiero enseñar*, no *quiero enseño*.'
+      - id: une-ensenar
+        type: matching
+        prompt: Une cada persona con la forma del verbo *enseñar*.
+        pairs:
+          - [yo, enseño]
+          - [tú, enseñas]
+          - [él / ella, enseña]
+          - [nosotros, enseñamos]
+          - [ellos / ellas, enseñan]
+      - id: ordena-construir
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Ellos pueden construir una casa.
+
+  - slug: profesiones-numeros
+    title: Números
+    minutes: 8
+    items:
+      - id: decenas
+        type: matching
+        prompt: Une los números.
+        pairs:
+          - ['30', treinta]
+          - ['40', cuarenta]
+          - ['50', cincuenta]
+          - ['60', sesenta]
+          - ['90', noventa]
+      - id: cuarenta-y-cinco
+        type: multipleChoice
+        prompt: ¿Cómo se dice 45?
+        options:
+          - { text: cuarenta y cinco, correct: true }
+          - {
+              text: cincuenta y cuatro,
+              feedback: '*Cincuenta y cuatro* es 54. Primero la decena (40 = cuarenta), después *y* + cinco.',
+            }
+          - {
+              text: cuatro cinco,
+              feedback: 'Decimos la decena + *y* + el número: *cuarenta y cinco*.',
+            }
+      - id: cuarenta-horas
+        type: fillBlank
+        prompt: Escribe el número en palabras.
+        text: 'Trabajo 40 horas por semana: trabajo ___ horas por semana.'
+        blanks: [[cuarenta]]
+      - id: doscientos
+        type: multipleChoice
+        prompt: ¿Cómo se dice 200?
+        options:
+          - { text: doscientos, correct: true }
+          - {
+              text: dos centenas,
+              feedback: 'No decimos *dos centenas*. 200 se dice *doscientos*, en una palabra.',
+            }
+          - { text: dos cien, feedback: '200 se dice *doscientos*, en una palabra.' }
+      - id: trescientos
+        type: fillBlank
+        prompt: Escribe el número en palabras.
+        text: 'En el mes 1 gasto 300 dólares: gasto ___ dólares.'
+        blanks: [[trescientos]]
+      - id: mil
+        type: trueFalse
+        prompt: 1000 se dice *mil* y 2000 se dice *dos mil*.
+        answer: true
+        feedback:
+          correct: ¡Correcto! El número + *mil*.
+          incorrect: '1000 = *mil*; 2000 = *dos mil*; 3000 = *tres mil*.'
+      - id: sesenta
+        type: trueFalse
+        prompt: 60 se dice *setenta*.
+        answer: false
+        feedback:
+          correct: '¡Correcto! 60 = *sesenta*; 70 = *setenta*.'
+          incorrect: '60 = *sesenta* (como *seis*); 70 = *setenta* (como *siete*).'
+      - id: ordena-horas
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Trabajo cuarenta horas a la semana.

@@ -1,0 +1,547 @@
+# Cycle "Planes para el fin de semana", converted from the Spanish nivel 2 digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-2
+slug: planes-fin-de-semana
+title: Planes para el fin de semana
+goal: Hablar de planes con el futuro (ir a + infinitivo y futuro simple) y comparar con comparativos y superlativos.
+position: 8
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Futuro" and "Comparaciones") are NEW: the notebook
+    has no self-study exercises. They were written from the cycle's two skills, its
+    summary rules and its vocabulary. Please check level, wording and every right
+    answer before students see them.
+  - >-
+    Summary, comparatives (wrong rule): "NO se cambia el adjetivo" is false for
+    Spanish: the adjective agrees with the noun (*Mis planes son más divertidos que
+    los tuyos*). Rewritten as "the adjective agrees; add más / menos / tan before
+    it". Two rules were added that the workbook uses: *bueno → mejor* and *malo →
+    peor* (never *más bueno / más mejor*), and the superlative structure *el / la /
+    los / las (+ noun) + más / menos + adjective (+ de)*. Please confirm.
+  - >-
+    Summary, future: the endings "-é, -ás, -á, -emos, -án" missed *-éis* (vosotros)
+    and did not say that they are added to the whole infinitive (*estudiar →
+    estudiaré*); both added, with a table of *ir a* and of *estudiar* in the futuro
+    simple. The tip used voseo ("tenés", "usá"); changed to "tienes", "usa" like the
+    rest of the course. "Futuro simple (futuro formal o general)" → "Futuro simple".
+    In the superlative example, "Lavar los trastes" (regional) → "Lavar los platos".
+  - >-
+    Activity 2 (debate): the questions were broken translations with English
+    prepositions in italics ("*en* ¿hogar?", "haciendo senderismo? *en* la
+    montaña"); they are rewritten as clear questions with the same ideas. The titles
+    "vs. / versus / frente a" → "… o …". A sentence frame was added.
+  - >-
+    Activity 4: the category emojis were corrupted in the source (ð️, ð¨‍ð©‍ð§‍ð¦) and
+    were left out. "El mejor para pasar en familia" → "El mejor fin de semana en
+    familia". "Escriba / Anime" (usted, for the teacher) moved to teacher notes.
+  - >-
+    Other corrections: activity titles had the skill in capitals ("VERBOS FUTUROS Y
+    MODALES", "COMPARACIONES", "FUTURO"); removed (skills are listed on each
+    activity). "Complete la tabla" → "Completa la tabla"; "Sábado" → "sábado" in the
+    tables; homework "Abrir / Comenzar / Utilice" → "Abre / Comienza / Usa"; "¿Vas
+    a comer o vas a cocinar?" → "¿Vas a comer fuera o vas a cocinar?".
+  - >-
+    Activity 1 also asks for modal verbs (deberías, puedes, debes, tienes que) from
+    the previous cycle; they are kept, but the activity is tagged only with the
+    skill Futuro.
+  - >-
+    The introduction round has no example in the source; one was added ("Soy Dana.
+    El próximo mes voy a viajar a Eilat."). Warm-up sentence frames were added (the
+    source has none). The "Respuesta de alumno 1/2/3" lines are replaced by the
+    answer boxes.
+  - >-
+    The homework is a guided chat with the "chatbot de la escuela"; it is written as
+    a Mori message with the steps as intro text. The source's written summary step
+    ("en tu cuaderno o Google Docs") is kept.
+  - >-
+    Vocabulary: "divertido" was glossed "מצחיק / משעשע" (funny); now "כיפי / משעשע".
+    "debate" → "דיון / ויכוח"; "relajación" → "רגיעה" (was "הרגעה"). Terms are
+    capitalised like the other cycles. Please confirm.
+  - >-
+    The Quizlet link's tracking parameters (?i=…&x=…) were removed. Activity 2 gives
+    5 minutes per question (4 questions), recorded as 20 minutes; no other times are
+    given.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: planes-fin-de-semana-clase
+    title: 'Clase: Planes para el fin de semana'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Planes para el fin de semana
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Futuro
+            description: '*Voy a viajar* (ir a + infinitivo) y *viajaré* (futuro simple)'
+          - name: Comparaciones
+            description: '*Más… que, menos… que, tan… como, el más…, el mejor, el peor*'
+      - id: quizlet
+        type: externalLink
+        label: Planes de fin de semana en Quizlet
+        url: https://quizlet.com/il/1049777273/conversational-spanish-weekend-plans-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: |-
+          Soy ___.
+          La próxima semana voy a ___. / El próximo mes voy a ___. / En el futuro voy a celebrar ___. / Prefiero celebrar en ___ (casa, un restaurante, la playa…).
+        example: Soy Dana. El próximo mes voy a viajar a Eilat.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Qué planeas hacer este fin de semana?
+            frame: Este fin de semana voy a ___.
+          - question: ¿Cómo es el mejor fin de semana que puedas imaginar?
+            frame: El mejor fin de semana es ___.
+          - question: ¿Cómo es el peor fin de semana que puedas imaginar?
+            frame: El peor fin de semana es ___.
+          - question: ¿Vas a pasar tiempo con amigos o con familiares este fin de semana?
+            frame: Este fin de semana voy a pasar tiempo con ___.
+          - question: ¿Prefieres hacer actividades en espacios cerrados o al aire libre? ¿Por qué?
+            frame: Prefiero ___ porque ___.
+          - question: ¿Qué es lo que más te gusta del fin de semana?
+            frame: Lo que más me gusta del fin de semana es ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Un fin de semana en el extranjero'
+        skills: [Futuro]
+        steps:
+          - 'Elige una ciudad (real o imaginaria) e investígala para crear **el itinerario perfecto para un fin de semana**. Piensa en: transporte, comida, lugares turísticos, cultura y momentos de relajación.'
+          - 'Trabajen en parejas: el estudiante A es el **guía turístico** y el estudiante B es el **turista**.'
+          - 'El guía da recomendaciones para el **jueves, viernes, sábado y domingo** con *deberías* (recomendación), *puedes / podrías* (posibilidad), *debes* (recomendación fuerte) y *tienes que* (necesidad).'
+          - Cambien de rol.
+          - 'Cada pareja comparte su itinerario con el grupo: el guía explica qué recomendó y el turista dice lo que **va a hacer** con *ir a + infinitivo*.'
+        example: |-
+          **Guía:** *El jueves, deberías visitar el famoso museo de arte en el centro. También puedes almorzar en una cafetería local. El viernes, podrías hacer un paseo en barco para ver la ciudad desde el río. ¡Podría ser lo más divertido del viaje! El sábado, debes subir a la montaña cercana para disfrutar de una vista increíble. Y el domingo, puedes relajarte en el jardín botánico, pero tienes que probar el té de hierbas en la cafetería que está allí.*
+          **Turista:** *El jueves voy a visitar el museo de arte y voy a almorzar en una cafetería local. El viernes voy a hacer un paseo en barco. El sábado voy a subir a la montaña y el domingo me voy a relajar en el jardín botánico y voy a probar el té de hierbas.*
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Debate, el fin de semana perfecto'
+        skills: [Comparaciones]
+        minutes: 20
+        steps:
+          - Tu profesor presenta un tema de debate.
+          - Habla y da tu opinión con comparaciones. Tienen 5 minutos para cada tema.
+          - No todos responden a todos los temas, pero **todos hablan durante la actividad**.
+      - id: act2-topics
+        type: discussionQuestions
+        title: Temas de debate
+        items:
+          - question: '**Fin de semana en casa o fin de semana de viaje.** ¿Qué es mejor y por qué? ¿Quedarte en casa, en tu zona de confort, o salir de viaje a explorar nuevos lugares de la ciudad o del país?'
+            frame: Para mí, ___ es mejor que ___ porque ___.
+          - question: '**Actividades de la mañana o actividades de la noche.** ¿Qué es mejor para tu fin de semana: despertarte temprano para empezar el día con energía, o disfrutar de una noche tranquila en casa con amigos o familiares?'
+            frame: Para mí, ___ es más ___ que ___ porque ___.
+          - question: '**Aventura al aire libre o pasatiempos en casa.** ¿Es mejor hacer senderismo en la montaña o andar en bicicleta alrededor del lago? ¿O prefieres quedarte en casa, leer junto a la ventana o cocinar?'
+            frame: Para mí, ___ es más ___ que ___ porque ___.
+          - question: '**Estar activo o descansar.** ¿Qué es mejor durante el fin de semana: correr por el parque o hacer ejercicio en el gimnasio, o quedarte en la cama y descansar todo el día?'
+            frame: Para mí, ___ es menos ___ que ___ porque ___.
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: ¿Qué va a hacer?'
+        skills: [Futuro]
+        steps:
+          - 'Elige una persona: alguien que conoces, una persona famosa o un personaje de un libro o una película.'
+          - Crea un horario divertido de fin de semana para esa persona. Usa *ir a + infinitivo* para decir lo que **va a hacer**.
+          - Completa la tabla de abajo.
+      - id: act3-example
+        type: table
+        caption: 'Ejemplo: Mario el Chef'
+        header: [Momento, ¿Qué va a hacer?]
+        rows:
+          - [viernes por la mañana, Va a ir al mercado para comprar verduras frescas.]
+          - [viernes por la tarde, Va a preparar platos especiales para su restaurante.]
+          - [viernes por la noche, Va a preparar la cena para sus invitados.]
+          - [sábado por la mañana, Va a dormir hasta tarde y va a beber una gran taza de café.]
+          - [sábado por la tarde, Va a tomar una clase de cocina con sus amigos.]
+          - [sábado por la noche, Va a ver una película y a relajarse en el sofá.]
+      - id: act3-schedule
+        type: discussionQuestions
+        title: Mi horario de fin de semana
+        items:
+          - question: 'Viernes por la mañana:'
+            frame: Va a ___.
+          - question: 'Viernes por la tarde:'
+            frame: Va a ___.
+          - question: 'Viernes por la noche:'
+            frame: Va a ___.
+          - question: 'Sábado por la mañana:'
+            frame: Va a ___.
+          - question: 'Sábado por la tarde:'
+            frame: Va a ___.
+          - question: 'Sábado por la noche:'
+            frame: Va a ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: ¿Quién tiene el mejor plan de fin de semana?'
+        skills: [Comparaciones]
+        steps:
+          - 'Compara tu horario de la Actividad 3 con el horario de otro estudiante. Explica por qué tu fin de semana es mejor. Usa: *más divertido que…, menos aburrido que…, el más relajante, mejor que…*'
+          - '¡Ahora vamos a votar! No hay un solo ganador: hay varias categorías.'
+          - Vota por un fin de semana en cada categoría y envía tu voto al profesor.
+          - Tu profesor dice los resultados. ¡Un aplauso para cada ganador!
+        example: '*Mi fin de semana es más divertido que el tuyo porque Mario va a cocinar todo el día, pero mi persona va a ir a un concierto.*'
+      - id: act4-categories
+        type: discussionQuestions
+        title: Categorías
+        items:
+          - question: El fin de semana más relajante es…
+          - question: El fin de semana más divertido es…
+          - question: El fin de semana más activo es…
+          - question: El mejor fin de semana en familia es…
+          - question: El fin de semana más sorprendente es…
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Futuro** (Actividades 1 y 3) y
+          **Comparaciones** (Actividades 2 y 4). La Actividad 4 se hace después de la
+          Actividad 3, con los horarios que escribieron los estudiantes.
+      - id: n-intro
+        anchor: intro
+        text: Cada estudiante dice una frase. Da tu propio ejemplo primero.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Los guías usan verbos para dar consejos (*deberías, puedes, debes, tienes
+          que*) del ciclo anterior; los turistas responden con *ir a + infinitivo*.
+      - id: n-act2
+        anchor: act2
+        minutes: 20
+        text: >-
+          Presenta un tema cada 5 minutos y pasa al siguiente cuando se acabe el tiempo.
+          Asegúrate de que todos los estudiantes hablen.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Anima a los estudiantes a usar *más… que, menos… que, el más…, mejor que*.
+          Escribe las categorías en la pizarra. Los estudiantes votan en un papel (en
+          persona) o por chat privado (en línea). Anuncia los resultados: *El fin de
+          semana más relajante es…*
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: planes-fin-de-semana-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-futuro
+        type: ruleSummary
+        skill: Futuro
+        rules:
+          - text: '**Ir a + infinitivo** (futuro próximo): para planes, intenciones o decisiones ya tomadas. Es muy común en la conversación diaria. Estructura: *ir* en presente (voy, vas, va, vamos, vais, van) + **a** + infinitivo.'
+            examples:
+              [
+                Voy a estudiar esta tarde.,
+                ¿Vas a viajar este verano?,
+                Ellos van a comer en ese restaurante.,
+              ]
+          - text: '**Futuro simple**: para predicciones, promesas, suposiciones y un futuro lejano o incierto. Estructura: infinitivo completo + **-é, -ás, -á, -emos, -éis, -án**.'
+            examples:
+              [
+                Estudiaré mañana si tengo tiempo.,
+                Algún día viviré cerca del mar.,
+                'No te preocupes, te ayudaré con la tarea.',
+              ]
+          - text: '¿Es un plan o una predicción? Si ya lo tienes planeado, usa **voy a + infinitivo**. Si lo imaginas, lo prometes o no estás seguro, usa el **futuro simple**.'
+            examples:
+              - Voy a viajar a México en julio. (Ya tengo el pasaje, es un plan.)
+              - Viajaré a México algún día. (Es un sueño o un deseo.)
+      - id: futuro-table
+        type: table
+        caption: Ir a + infinitivo y futuro simple
+        header: [Persona, ir a + infinitivo, futuro simple]
+        rows:
+          - [yo, voy a estudiar, estudiaré]
+          - [tú, vas a estudiar, estudiarás]
+          - [él / ella / usted, va a estudiar, estudiará]
+          - [nosotros / nosotras, vamos a estudiar, estudiaremos]
+          - [vosotros / vosotras, vais a estudiar, estudiaréis]
+          - [ellos / ellas / ustedes, van a estudiar, estudiarán]
+      - id: rules-comparaciones
+        type: ruleSummary
+        skill: Comparaciones
+        rules:
+          - text: 'Los **comparativos** comparan dos cosas. Agrega *más*, *menos* o *tan* antes del adjetivo. El adjetivo concuerda con el sustantivo (masculino o femenino, singular o plural).'
+            examples: [Mis planes son más divertidos que los tuyos.]
+          - text: 'Superioridad: **más + adjetivo + que**.'
+            examples:
+              [
+                Mi plan es más corto que el tuyo.,
+                El sábado es más caluroso que el viernes.,
+                Este juego es más fácil que el último.,
+              ]
+          - text: 'Inferioridad: **menos + adjetivo + que**.'
+            examples:
+              [
+                Tu fin de semana fue menos emocionante que el mío.,
+                Esta película es menos interesante que aquella.,
+              ]
+          - text: 'Igualdad: **tan + adjetivo + como**.'
+            examples: [El viernes fue tan tranquilo como el sábado.]
+          - text: 'Los **superlativos** expresan el extremo entre más de dos cosas: **el / la / los / las (+ sustantivo) + más / menos + adjetivo (+ de)**.'
+            examples:
+              - El sábado por la mañana fue el momento más tranquilo de mi fin de semana.
+              - Lavar los platos es la actividad de limpieza menos divertida.
+          - text: '*Bueno* y *malo* tienen formas especiales: **mejor** y **peor** (no *más bueno*, no *más mejor*).'
+            examples:
+              [
+                Va a ser la mejor fiesta de mi vida.,
+                El domingo por la noche fue la peor parte de mi semana.,
+              ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: planes-fin-de-semana-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Después sigue los pasos de abajo.
+      - id: mori-planes
+        type: aiTutorPrompt
+        title: Tus planes para el fin de semana
+        intro: >-
+          Mori va a responder. Después: (1) escribe sobre tus propios planes con *ir a*
+          (*Voy a ir de compras con mi hermana. También vamos a ver una película.*);
+          (2) hazle a Mori **3 preguntas más** en futuro; (3) **compara** tus planes con
+          los de Mori.
+        message: ¡Hola Mori! ¿Qué vas a hacer este fin de semana? Por favor, corrige mis errores.
+      - id: questions
+        type: examples
+        title: Preguntas en futuro
+        items:
+          - text: ¿Te quedarás en casa o saldrás?
+          - text: ¿Vas a ir a algún lugar especial el sábado o el domingo?
+          - text: ¿Con quién vas a pasar tiempo este fin de semana?
+          - text: ¿Vas a comer fuera o vas a cocinar este fin de semana?
+          - text: ¿Vas a hacer más cosas el sábado o el domingo?
+      - id: comparisons
+        type: examples
+        title: Frases para comparar
+        items:
+          - text: Mi fin de semana va a ser más emocionante que el tuyo.
+          - text: Vas a hacer cosas más relajantes que yo.
+          - text: Nuestros fines de semana son diferentes, pero los dos suenan divertidos.
+      - id: summary-task
+        type: reflection
+        prompt: 'Escribe un breve resumen: ¿Qué vas a hacer tú? ¿Qué va a hacer Mori? ¿Qué es parecido? ¿Qué es diferente?'
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: planes-fin-de-semana-practica
+    book: workbook
+    title: 'Práctica: Planes para el fin de semana'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-futuro
+        type: activity
+        activity: planes-fin-de-semana-futuro
+      - id: ex-comparaciones
+        type: activity
+        activity: planes-fin-de-semana-comparaciones
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: planes-fin-de-semana-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras del fin de semana
+        glossLang: he
+        link: https://quizlet.com/il/1049777273/conversational-spanish-weekend-plans-flash-cards/
+        items: &planes-words
+          - { term: Fin de semana, gloss: סוף שבוע }
+          - { term: Plan, gloss: תוכנית }
+          - { term: Futuro, gloss: עתיד }
+          - { term: Opinión, gloss: דעה }
+          - { term: Experiencia, gloss: ניסיון }
+          - { term: Cronograma, gloss: לוח זמנים }
+          - { term: Mañana, gloss: בוקר / מחר }
+          - { term: Tarde, gloss: אחר הצהריים }
+          - { term: Noche, gloss: לילה }
+          - { term: Turista, gloss: תייר }
+          - { term: Guía, gloss: מדריך / מדריכה }
+          - { term: Recomendación, gloss: המלצה }
+          - { term: Posibilidad, gloss: אפשרות }
+          - { term: Necesidad, gloss: צורך }
+          - { term: Relajación, gloss: רגיעה }
+          - { term: Cultura, gloss: תרבות }
+          - { term: Alimento, gloss: מזון / אוכל }
+          - { term: Transporte, gloss: תחבורה }
+          - { term: Debate, gloss: דיון / ויכוח }
+          - { term: Al aire libre, gloss: בחוץ }
+          - { term: Dentro, gloss: בפנים / בתוך }
+          - { term: Divertido, gloss: כיפי / משעשע }
+          - { term: Aburrido, gloss: משעמם }
+          - { term: Activo, gloss: פעיל }
+          - { term: Descansar, gloss: לנוח }
+          - { term: Votar, gloss: להצביע }
+          - { term: Ganador, gloss: מנצח }
+          - { term: Sorprendente, gloss: מפתיע }
+          - { term: Favorito, gloss: אהוב / מועדף }
+          - { term: Energía, gloss: אנרגיה }
+
+vocabulary:
+  - slug: planes-fin-de-semana
+    title: Planes para el fin de semana
+    items: *planes-words
+
+activities:
+  - slug: planes-fin-de-semana-futuro
+    title: 'Futuro: voy a viajar, viajaré'
+    minutes: 8
+    items:
+      - id: voy-a
+        type: multipleChoice
+        prompt: Este sábado yo ___ a visitar a mis abuelos.
+        options:
+          - { text: voy, correct: true }
+          - { text: va, feedback: '*Va* es para él / ella. Para *yo* usa *voy*.' }
+          - { text: vamos, feedback: '*Vamos* es para *nosotros*. Para *yo* usa *voy*.' }
+      - id: van-a
+        type: fillBlank
+        prompt: Completa con el verbo *ir* en presente.
+        text: Ellos ___ a comer en ese restaurante.
+        blanks: [[van]]
+      - id: vas-a
+        type: fillBlank
+        prompt: Completa con el verbo *ir* (tú).
+        text: ¿___ a viajar este verano?
+        blanks: [[Vas, Tú vas]]
+      - id: vivire
+        type: multipleChoice
+        prompt: Algún día ___ cerca del mar. (yo, futuro simple)
+        options:
+          - { text: viviré, correct: true }
+          - {
+              text: vivé,
+              feedback: 'En el futuro simple, la terminación va después del infinitivo completo: *vivir + é = viviré*.',
+            }
+          - { text: vivirá, feedback: '*Vivirá* es para él / ella. Para *yo* usa *viviré*.' }
+      - id: estudiar-futuro
+        type: matching
+        prompt: Une cada persona con el verbo *estudiar* en futuro simple.
+        pairs:
+          - [yo, estudiaré]
+          - [tú, estudiarás]
+          - [él / ella, estudiará]
+          - [nosotros, estudiaremos]
+          - [ellos / ellas, estudiarán]
+      - id: plan
+        type: trueFalse
+        prompt: '*Voy a viajar a México en julio* habla de un plan: ya tengo el pasaje.'
+        answer: true
+        feedback:
+          correct: ¡Correcto! Para planes ya decididos usamos *ir a + infinitivo*.
+          incorrect: '*Ir a + infinitivo* es para planes ya decididos. Para un sueño usamos el futuro simple: *Viajaré a México algún día.*'
+      - id: vamos-a-ver
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: Vamos a ver una película., correct: true }
+          - { text: Vamos ver una película., feedback: 'Falta *a*: *ir + a + infinitivo*.' }
+          - {
+              text: Vamos a vemos una película.,
+              feedback: 'Después de *a* el verbo va en infinitivo: *ver*.',
+            }
+      - id: ordena-sabado
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: El sábado voy a dormir hasta tarde.
+
+  - slug: planes-fin-de-semana-comparaciones
+    title: 'Comparaciones: más, menos, tan, el mejor'
+    minutes: 8
+    items:
+      - id: mas-que
+        type: multipleChoice
+        prompt: El sábado es ___ caluroso ___ el viernes.
+        options:
+          - { text: más … que, correct: true }
+          - { text: más … como, feedback: 'Con *más* usamos *que*: *más caluroso que*.' }
+          - { text: tan … que, feedback: 'Con *tan* usamos *como*: *tan caluroso como*.' }
+      - id: tan-como
+        type: fillBlank
+        prompt: Completa la comparación de igualdad.
+        text: El viernes fue ___ tranquilo ___ el sábado.
+        blanks: [[tan], [como]]
+      - id: mejor
+        type: multipleChoice
+        prompt: Mi plan es ___ que el tuyo. (bueno)
+        options:
+          - { text: mejor, correct: true }
+          - { text: más mejor, feedback: '*Mejor* ya es comparativo: no uses *más* antes.' }
+          - { text: tan mejor, feedback: '*Bueno* tiene una forma especial: *mejor que*.' }
+      - id: concordancia
+        type: trueFalse
+        prompt: 'El adjetivo no cambia en las comparaciones: *Mis planes son más divertido que los tuyos.*'
+        answer: false
+        feedback:
+          correct: '¡Correcto! El adjetivo concuerda con el sustantivo: *más divertidos*.'
+          incorrect: 'El adjetivo concuerda con el sustantivo: *Mis planes son más divertidos que los tuyos.*'
+      - id: tipos
+        type: matching
+        prompt: Une cada estructura con su uso.
+        pairs:
+          - [más … que, superioridad (+)]
+          - [menos … que, inferioridad (−)]
+          - [tan … como, igualdad (=)]
+          - [el / la más …, superlativo (el extremo)]
+      - id: la-mejor
+        type: fillBlank
+        prompt: Completa con el artículo correcto.
+        text: Va a ser ___ mejor fiesta de mi vida.
+        blanks: [[la]]
+      - id: peor
+        type: multipleChoice
+        prompt: El domingo por la noche fue la ___ parte de mi semana. (mala)
+        options:
+          - { text: peor, correct: true }
+          - { text: más mala, feedback: '*Malo / mala* tiene una forma especial: *peor*.' }
+          - { text: menos peor, feedback: '*Peor* ya es comparativo: no uses *menos* antes.' }
+      - id: ordena-aburrido
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Tu plan es menos aburrido que el mío.

@@ -1,0 +1,708 @@
+# Cycle "משפחה", converted from the spoken Arabic level 1 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew
+# transliteration, apc-Hebr); Hebrew instructions carry `lang: he`.
+course: ar-medubar-1
+slug: family
+title: 'משפחה – מִשְׁפָּחָה'
+goal: 'לדבר על המשפחה בכינויי שייכות ובגוף שלישי, ולומר תאריכים, ימים וחודשים עם קַבְּל / בַּעַד.'
+position: 2
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("family-members" and "family-dates") are NEW: the
+    notebook has no self-study exercises. They were written only from this cycle's
+    summary, examples and vocabulary. An Arabic teacher must check every right answer,
+    every wrong option and every transliteration before students see them.
+  - >-
+    Clear typos fixed: "ע׳נדי" (ע with geresh) → "ענדי" and "זע׳׳ירה" (double geresh)
+    → "זע׳ירה" in the teacher's intro example; "בִּשְתִע׳׳ל" → "בִּשְתִע׳ל" (Activity 4);
+    "האדִִי" (double hiriq) → "האדִי"; "בנרוח׳" → "בנרוח" in a summary example;
+    "תלַאטַה" (ט) → "תְלַאתָה" in the memory trick, as in the day list.
+  - >-
+    Not corrected, please decide: several words have more than one spelling in the
+    cycle: אלווג׳הא / אלווג׳ה / אלווג׳הה (destination); בִּתְחַכּוּ / בחקי (talk);
+    בִּעְמַל / בתעמל; אוח׳תי / אֻוח׳תִי / אֻח׳תִי. The work verb is written with ע' and ר'
+    (בִּשְתע׳ל / בִּשְתְרֶ׳ל).
+  - >-
+    Not corrected, please check: Activity 3 (family trip) uses the past tense "שו
+    עַמַלְתוּ בליום אלואל?" although cycle 1 says the course stays in the present at this
+    stage. Activity 4 uses "חַבַּובֵּה", which is not in the trait list or the vocabulary.
+  - >-
+    Activity 3, step 5 (short presentation) is garbled in the notebook ("אנא, **,
+    ___ מסאפרין" and "מנרוח על־**."). It was rebuilt as "אנא, ___, ___ מסאפרין." and
+    "בליום אלתאני: מנרוח על־___." Please confirm.
+  - >-
+    Activity 1 has no time in the notebook; no time is set. Its second step (the next
+    student says "קַבְּל / בַּעַד" and gives the date) is taken from the teacher's
+    example. Activity 2 has no instruction to share the tree, so none was added.
+  - >-
+    Hebrew glosses inside Arabic example answers were moved out or left out:
+    "(לצאת לטיול / לטייל)" after "נטלע משואר" (warm-up 3); the labels "תלמיד א / ב" in
+    Activity 1. The trait list and the trip word list keep their Hebrew meanings.
+  - >-
+    Vocabulary glosses kept as in the notebook, please check: "ארוח – הולך", "אַרַכַּבְּ –
+    לרכוב", "אזור – אבקר", "אדְרוּס – לומד" mix first-person and infinitive meanings.
+    "בִּשְתְרֶ׳ל – עובד" is the third person (he works). The Arabic-script column was
+    left out (the course is written in transliteration).
+  - >-
+    Homework tasks 2–6 are templates to fill in, not Mori messages: they are answer
+    boxes the teacher sees. Tasks 4 and 6 need the teacher (two dates, a photo). Only
+    task 1 is a Mori message.
+  - >-
+    The summary has no section on קַבְּל / בַּעַד although "what we learned" lists it; a
+    short rule with the Activity 1 sentences was added. Please check.
+  - >-
+    Quizlet link: the tracking parameter "?new" was removed. Warm-up time: 20 minutes,
+    as in the notebook.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: family-class
+    title: 'שיעור: משפחה'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: 'משפחה – מִשְׁפָּחָה'
+      - id: skills
+        type: cycleOverview
+        lang: he
+        skills:
+          - name: בני המשפחה וכינויי שייכות
+            description: 'אַבּוּי, אִמִּי, אַח׳וּי, אֻח׳תִי, וְלַאד עַמִּי, עֵילְתִי; תיאור בני משפחה בהווה בגוף שלישי (הֻוֵ / הִיֵ).'
+          - name: תאריכים
+            description: 'ימי השבוע, חודשי השנה, ו־קַבְּל / בַּעַד (לפני / אחרי).'
+      - id: quizlet
+        type: externalLink
+        lang: he
+        label: משפחה בקוויזלט
+        url: https://quizlet.com/br/1119903916/%D7%9E%D7%A9%D7%A4%D7%97%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        lang: he
+        level: 3
+        text: סבב היכרות
+      - id: intro
+        type: sentenceFrame
+        frame: |-
+          אנא ___ ___. עִנְדִי עֵילֵה זְעִ’ירַה / כְּבִּירַה.
+          ענדי ___ אח'וֶה ו ___ ח'ואת.
+        example: |-
+          אנא אסמי מושיק. ענדי עֵילֵה זע׳ירה בברזיל ועֵילֵה כבירה בישראיל.
+          ענדי תלת אח'וֶה ו אוח'ות וחדֶה.
+      - id: warmup-title
+        type: heading
+        lang: he
+        level: 3
+        text: שאלות חימום
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: 'אחְכִּילִי עַן עֵילְתַכּ. שו אסאמיהֶן?'
+            frame: |-
+              אנא ענדי ___
+              אַוְלאדי ___
+              אבוי. אסמו ___
+              אימי. אסמַהַא ___
+              אח׳וי. אסמו ___
+              אוח׳תי. אסמַהַא ___
+          - question: 'מין סאכֶּן מעַכְּ / מַעֶכְּ?'
+            frame: 'אנא סאכן לחאלי. / אנא סאכן מע אח׳וי ואימי.'
+          - question: "שוֹ בִּתְחִבּוּ תַעְמְלוּ מַע עֵילְתַכּו? (נרוח על מטעם, נחכּי מע בעד', נסאפֶר…)"
+            frame: |-
+              בחיבּ אַטלע מע עֵילְתי על־בַחר.
+              בחיבּ נִתגַ׳דַא מע בעד'.
+              נחד'ר פילם / מוסלסל.
+              נטלע משואר.
+          - question: "מַע מִין בִּתְחַכּוּ כְּתִיר? וּלֵיש / ליה? (מע אח'וי, מע אבֶּן עמי, מע ס'אחבתי…)"
+            frame: |-
+              אנא בחקי כתיר מע אוח׳תי לאנהא ___
+              אנא בחקי מע אימי לאנהא ק'ריבה מני.
+          - question: 'וינתא ו וֵין בִּתְתְקַאבְּלוּ מַע עֵילְתְכּ?'
+            frame: 'אנא בתקַאבל מע עֵילְתי יום אלג׳ומעה בבית סִתִּי.'
+          - question: "מין אכּתר ואחד מן אלעילה ק'ריב עליכְּ?"
+            frame: "___ (אוח'תי, אמּי, אבוי, אח'וי, סתּי…)"
+          - question: "שׁו בֶּדכְּ תְּג'יֶּר פי אלעילֶה?"
+      - id: activities-title
+        type: heading
+        lang: he
+        level: 3
+        text: פעילויות
+      - id: act1
+        type: classActivity
+        lang: he
+        title: 'פעילות 1: לפני – אחרי (תאריכים)'
+        skills: [תאריכים, בני המשפחה וכינויי שייכות]
+        steps:
+          - 'כל משתתף אומר מתי יום ההולדת שלו ושל קרוב משפחה או של משתתף אחר (גוף ראשון ושלישי).'
+          - 'המשתתף הבא אומר אם התאריך שלו **קַבְּל** (לפני) או **בַּעַד** (אחרי), ואומר את התאריך.'
+        example: |-
+          איסם אימי דבורא. עיד מילאדהא בתִסעה / תנין (שבאט – שהר תנין).
+          עיד מילאד אוח׳תי בעדהא! עיד מילאדהא בסִתֵּה אאד׳אר / תלאתה.
+          עיד מילאד אח׳וי קבל! עיד מילאדו בתלַאתֵה אאד׳אר / תלאתה.
+      - id: act2
+        type: classActivity
+        lang: he
+        title: 'פעילות 2: עץ משפחה'
+        skills: [בני המשפחה וכינויי שייכות]
+        steps:
+          - 'ממלאים את המשפטים שלמטה (בתעתיק בלבד) עם ״שלי / שלו / שלה / שלהם״.'
+      - id: act2-sentences
+        type: discussionQuestions
+        items:
+          - question: 'הַאדַא אנא. אסמי ___. עֻמְרי ___ סנה.'
+          - question: 'הַאדַא אבוי. אסמו ___. עֻמְרו ___ סנה.'
+          - question: 'הַאדי אימי. אסמהא ___. עֻמְרהא ___ סנה.'
+          - question: 'הַאדוֹל ולאד עמי. אסאמיְהום ___. עֻמרְהום ___ סנה.'
+      - id: act3
+        type: classActivity
+        lang: he
+        title: 'פעילות 3: טִיוּל מִשְׁפָּחָתִי'
+        skills: [תאריכים]
+        steps:
+          - 'בחירה מתוך רשימה: יעד אחד, 2–3 נוסעים ומקומות (בטבלה שלמטה).'
+          - ממלאים את הטבלה הפשוטה שלמטה.
+          - המורה מציג דוגמה.
+          - 'עבודה בזוגות: שואלים ועונים על השאלות הקצרות.'
+          - 'הצגה קצרה של הטיול לכיתה.'
+        wordBank:
+          - מנרוח
+          - מנסאפֶר
+          - מנרכּבְּ
+          - מנזור (נבקר)
+          - "מנרג'ע (נחזור)"
+        example: |-
+          אלווג׳ה: פאריס
+          אלמסאפרין: אנא, אימי, אבוי
+          יום 1: מנרכב טַיֵּרה עלא פאריס
+          יום 2: מנרוח על־מרכּז
+          יום 3: מנזור אל מתחַף
+          יום 4: מנרג'ע עַל־בֵּית
+      - id: act3-choices
+        type: table
+        lang: he
+        caption: 'שלב 1 – בחירה מתוך רשימה'
+        header: ['יעד (לבחור אחד)', 'מי נוסע (לבחור 2–3)', 'מקומות (לבחור)']
+        rows:
+          - [פאריס, אנא, מרכּז אלבַּלד]
+          - [עמאן, אבוי, בַּחַר]
+          - [תל אביב, אימי, מטעם]
+          - [חיפה, אח׳וי, מתחַף]
+          - [אל קודס, אֻוח׳תי, מחל הדאיא (חנות של מתנות)]
+          - ['', '', ברכּת סבאחה (בריכת שחייה)]
+      - id: act3-plan
+        type: discussionQuestions
+        items:
+          - question: 'אלווג׳הא: ___'
+          - question: 'אלמסאפרין: אנא, ___, ___'
+          - question: 'יום 1: מנרכב אטַיֵּארה עלא ___'
+          - question: 'יום 2: מנרוח על־___'
+          - question: 'יום 3: מנזוּר ___'
+          - question: "יום 4: מנרג'ע עַל־בֵּית"
+      - id: act3-pairs-title
+        type: heading
+        lang: he
+        level: 4
+        text: עבודה בזוגות – שאלות קצרות
+      - id: act3-pairs
+        type: discussionQuestions
+        answerable: false
+        items:
+          - question: 'לוֵין רַאיחִין?'
+            frame: 'עלא פאריס.'
+          - question: 'מִין מַעַכּ?'
+            frame: 'אנא, אימי, אבוי.'
+          - question: 'שו עַמַלְתוּ בליום אלואל?'
+            frame: 'מנרוח על־מרכּז.'
+          - question: 'וינתא בתרג׳עו?'
+            frame: 'ביום אַלארְבַּעַה.'
+      - id: act3-present-title
+        type: heading
+        lang: he
+        level: 4
+        text: הצגה קצרה
+      - id: act3-present
+        type: sentenceFrame
+        frame: |-
+          אלווג׳הא: ___
+          אנא, ___, ___ מסאפרין.
+          בליום אלואל: מנרכב אטַיֵארה.
+          בליום אלתאני: מנרוח על־___.
+      - id: act4
+        type: classActivity
+        lang: he
+        title: 'פעילות 4: מי בתמונה?'
+        skills: [בני המשפחה וכינויי שייכות]
+        steps:
+          - 'המורה מראה תמונה של אדם / בן משפחה ושואל רק שלוש שאלות.'
+          - 'התלמיד עונה לפי שלוש תבניות קבועות.'
+          - 'מה אני אוהב בו / בה? משפט אחד בלבד, עם תכונה פשוטה.'
+          - 'משחק קצר: המורה מצביע על תמונה ואומר ״אחְכִּילִי עַנּוּ / עַנּהַא!״, והתלמיד נותן רק שלושה משפטים: מִין הֻוֵ / הִיֵּ; שו בִּעְמַל; שו אנא בִּחְבּּ פִיו / פִיהַא.'
+        example: |-
+          האד אַח׳וּי. הֻוֵ בִּדְרֻס. אנא בִּחְבּּוֹ לַאֲנּוּ זַכִּי.
+          הִיֵּ אֻוח׳תִי. הִיֵּ בִּתְרֻוח עַל־מַרכַּז. אנא בִּחְבּּהַא לַאֲנּהַא חַבַּובֵּה.
+      - id: act4-questions
+        type: discussionQuestions
+        items:
+          - question: 'מין הַאדָא / האד?'
+            frame: |-
+              האד אַבּוּי / אַח׳וּי / אבן עַמִי.
+              הִאי אֻוח׳תִי / אִמִּי.
+          - question: 'שוּ בִּעְמַל / שוּ בִּתְעְמַל?'
+            frame: |-
+              הֻו בִּשְתִע׳ל. / הֻוֵ בִּדְרֻס. / הֻוֵ סַאכֵּן בְּ___.
+              הִיֵּ בִּתְעְמַל. / הִיֵּ בִּתְדְרֻס. / הִיֵּ סַאכְּנֵה בְּ___.
+          - question: 'לוֵין רַאיח?'
+            frame: 'רַאיֶח עַל־מַרכַּז. / רַאיֶח עַל־בַּחר. / רַאיֶח עַל־בֵּית.'
+      - id: act4-like
+        type: sentenceFrame
+        frame: 'אנא בִּחְבּּוֹ / בִּחְבּּהַא לַאֲנּוּ / לַאֲנּהַא ___.'
+        example: |-
+          אנא בִּחְבּּוֹ לַאֲנּוּ רַאִיק.
+          אנא בִּחְבּּהַא לַאֲנּהַא חִלְוֵה.
+      - id: act4-traits
+        type: table
+        lang: he
+        caption: תכונות פשוטות לשימוש
+        rows:
+          - [טַיִּבּ, טוב / טעים]
+          - [חִלְו, נחמד]
+          - [זַכִּי, חכם]
+          - [רַאִיֶק / האדִי, רגוע]
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: 'מה מתרגלים היום: כינויי שייכות בסיסיים (אַבּוּי, אִמִּי, אַח׳וּי, אֻח׳תִי, וְלַאד עַמִּי, עֵילְתִי); שאלות ותשובות בהווה; הווה בגוף שלישי (הֻוֵ / הִיֵ); תיאור בני משפחה; תאריכים עם קַבְּל / בַּעַד.'
+      - id: n-intro
+        anchor: intro
+        text: 'תנו קודם את הדוגמה שלכם, ואחר כך כל תלמיד מציג את עצמו לפי התבנית.'
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: 'שאלו כל תלמיד לפחות שתי שאלות. בשאלה 3, ״נטלע משואר״ פירושו לצאת לטיול / לטייל.'
+      - id: n-act1
+        anchor: act1
+        text: 'המורה נותן דוגמה: ״איסם אימי דבורא. עיד מילאדהא בתִסעה / תנין.״ שימו לב לשימוש בגוף ראשון ושלישי.'
+      - id: n-act4
+        anchor: act4
+        text: 'המורה שואל רק שלוש שאלות, והתלמיד עונה לפי התבניות הקבועות. בשלב ״מה אני אוהב בו / בה?״ – משפט אחד בלבד.'
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: family-summary
+    title: סיכום השיעור
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: 'סיכום השיעור – משפחה, הווה, תאריכים'
+      - id: rules-days
+        type: ruleSummary
+        lang: he
+        skill: ימי השבוע
+        rules:
+          - text: 'בערבית שמות הימים מאוד דומים לעברית או למספרים, ולכן קל לזכור.'
+          - text: 'טריק זיכרון: תנין ← תְלַאתָה ← אַרְבַּעַה ← ח׳מיס (2–3–4–5).'
+          - text: 'דוגמאות במשפט:'
+            examples:
+              - 'ביום אלתנֵין אנא בִּשְתע׳ל.'
+              - 'ביום אלג׳ֻמְעַה בנרוח על־בַּחַר.'
+              - 'ביום לתְלַאתה עִנְדִי דַרְס עַרַבִּי.'
+      - id: days
+        type: table
+        lang: he
+        caption: ימי השבוע
+        header: [תעתיק, עברית]
+        rows:
+          - [אַחַד, ראשון]
+          - [תנֵין, 'שני (כמו ״שתיים״)']
+          - [תְלַאתָה, שלישי (שלוש)]
+          - [אַרְבַּעַה, רביעי (ארבע)]
+          - [ח׳מִיס, חמישי (חמש)]
+          - [ג׳ֻמְעַה, שישי]
+          - [סַבְּת, שבת]
+      - id: rules-months
+        type: ruleSummary
+        lang: he
+        skill: חודשי השנה
+        rules:
+          - text: 'החודשים מגיעים מלבנון–סוריה–ירדן, ורבים מהם דומים לשמות המוכרים לנו. אפשר גם לומר **שהר** (חודש) + מספר.'
+          - text: 'טריקים לזכור:'
+            examples:
+              - 'שבאט כמו ״שבט״'
+              - 'ניסאן כמו הרכב'
+              - 'תמוז ואב – כמו בלוח העברי'
+              - 'תשרין אוול / תאני = ראשון / שני (אוקטובר / נובמבר)'
+              - 'כאנון אוול / תאני = ראשון / שני (דצמבר / ינואר)'
+          - text: 'דוגמאות במשפט:'
+            examples:
+              - 'עיד מילאדי בשְבּאט.'
+              - 'אחנא מסאפרין בתמוז.'
+      - id: months
+        type: table
+        lang: he
+        caption: חודשי השנה
+        header: [ערבית, עברית, 'שהר + מספר']
+        rows:
+          - [כנון תאני, ינואר, שהר ואחד]
+          - [שבאט, פברואר, שהר תנין]
+          - [אד׳אר, מרץ, שהר תלאתה]
+          - [ניסאן, אפריל, שהר ארבעה]
+          - [איאר, מאי, "שהר ח'מסה"]
+          - [חזיראן, יוני, שהר סתה]
+          - [תמוז, יולי, שהר סבעה]
+          - [אבּ, אוגוסט, שהר תמאנה]
+          - [אילול, ספטמבר, שהר תסעה]
+          - [תשרין אוול, אוקטובר, שהר עשרה]
+          - [תשרין תאני, נובמבר, שהר חדאש]
+          - [כנון אוול, דצמבר, שהר טנאש]
+      - id: rules-before-after
+        type: ruleSummary
+        lang: he
+        skill: 'קַבְּל / בַּעַד'
+        rules:
+          - text: '**קַבְּל** = לפני, **בַּעַד** = אחרי. משווים תאריכים, למשל ימי הולדת:'
+            examples:
+              - 'עיד מילאד אוח׳תי בעדהא!'
+              - 'עיד מילאד אח׳וי קבל!'
+      - id: learned
+        type: callout
+        lang: he
+        tone: info
+        title: מה למדנו היום?
+        text: |-
+          ✔ לבנות שאלות: **שו / וֵין / לֵיש / אֵימְתַא**
+          ✔ להשתמש בהווה: **אנא בַּעְמַל**, **הֻוֵ בִּשְתע׳ל**, **הִיֵּ בִּתְשְתע׳ל**
+          ✔ לדבר על המשפחה
+          ✔ להשתמש בכינויי שייכות (אַבּוּי, אִמִּי, אַח׳וּי…)
+          ✔ לתאר אדם בפשטות (הֻוֵ בִשְתע׳ל / הִיֵּ סַאכְּנֵה…)
+          ✔ להשתמש בתאריכים עם **קַבְּל / בַּעַד**
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: עברו עם הקבוצה על הימים, החודשים ו־קַבְּל / בַּעַד, ובקשו מכל תלמיד משפט אחד על יום ההולדת שלו.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: family-homework
+    title: שיעורי בית
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: שיעורי בית
+      - id: task1-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'מטלה 1 – שאלות ותשובות'
+      - id: task1-how
+        type: text
+        lang: he
+        text: פתחו את הצ׳אט עם מורי, העתיקו את ההודעה ושלחו אותה.
+      - id: mori-task1
+        type: aiTutorPrompt
+        message: |-
+          מורי, אסאלני 4 אסאאלה, ואנא ברוד בג׳מַל קצרה.
+          צחח לי לאו ע׳לטת.
+      - id: task2-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'מטלה 2 – תיאור עצמי'
+      - id: task2-how
+        type: text
+        lang: he
+        text: כתבו לפי התבנית.
+      - id: task2
+        type: discussionQuestions
+        items:
+          - question: 'אנא אסמי ___.'
+          - question: 'אנא סאכֵּן בְּ___.'
+          - question: 'עִנְדִי עֵילֵה זְעִ’ירַה / כְּבִּירַה.'
+          - question: 'אנא בִּחְבּ ___.'
+          - question: 'ביום ___ אנא בִּשְתע׳ל / בִּדְרֻס.'
+      - id: task3-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'מטלה 3 – תיאור בן משפחה'
+      - id: task3-how
+        type: text
+        lang: he
+        text: 'מלאו לפי התבנית (אבוי / אימי / אח׳וי / אֻוח׳תי).'
+      - id: task3
+        type: discussionQuestions
+        items:
+          - question: 'הֻוֵ / הִיֵּ ___.'
+          - question: 'הֻוֵ / הִיֵּ בִּעְמַל / בתעמל ___.'
+          - question: 'הֻוֵ / הִיֵּ סַאכֵּן / סַאכְּנֵה בְּ___.'
+          - question: 'אנא בִּחְבּּוֹ / בִּחְבּּהַא לַאֲנּוּ / לַאֲנּהַא ___.'
+      - id: task4-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'מטלה 4 – תאריכים (קַבְּל / בַּעַד)'
+      - id: task4-how
+        type: text
+        lang: he
+        text: המורה נותן שני תאריכים. כתבו משפט אחד.
+      - id: task4
+        type: sentenceFrame
+        frame: 'עיד מִלַאדי ___ קַבְּל / בַּעַד.'
+      - id: task5-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'מטלה 5 – טיול משפחתי (מילוי תבנית)'
+      - id: task5-how
+        type: text
+        lang: he
+        text: לא ממציאים – רק ממלאים.
+      - id: task5
+        type: discussionQuestions
+        items:
+          - question: 'אלווג׳הה: ___'
+          - question: 'אלמסאפרין: אנא, ___, ___'
+          - question: 'ביום אלאחד: מנרכב טַיֵּארה ונסאפר עלא ___'
+          - question: 'ביום א־תְנֵין: מנרוח על־___'
+          - question: 'ביום א־תְלַאתה: מנזוּר ___'
+          - question: "ביום אל אַרְבַּעַה: ראג'עין / מנרג'ע עַל־בֵּית"
+      - id: task6-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'מטלה 6 – מי בתמונה?'
+      - id: task6-how
+        type: text
+        lang: he
+        text: המורה שולח תמונה. ענו בשלושה משפטים.
+      - id: task6
+        type: discussionQuestions
+        items:
+          - question: 'הֻוֵ / הִיֵּ ___.'
+          - question: "הֻוֵ / הִיֵּ בִּעְמַל / בתעמל ___. / בשתר'ֶל / בתשתר'ֶל"
+          - question: 'אנא בִּחְבּּוֹ / בִּחְבּּהַא לַאֲנּוּ / לַאֲנּהַא ___.'
+    teacherNotes:
+      - id: n-task4
+        anchor: task4
+        text: תנו לכל תלמיד שני תאריכים (למשל ימי הולדת של שני בני משפחה) לפני שהוא כותב.
+      - id: n-task6
+        anchor: task6
+        text: שלחו לכל תלמיד תמונה של אדם או בן משפחה.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: family-practice
+    book: workbook
+    title: 'תרגול: משפחה'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        lang: he
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+      - id: ex-members
+        type: activity
+        activity: family-members
+      - id: ex-dates
+        type: activity
+        activity: family-dates
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: family-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: משפחה
+        glossLang: he
+        link: https://quizlet.com/br/1119903916/%D7%9E%D7%A9%D7%A4%D7%97%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &family-words
+          - { term: 'אַנַא', gloss: 'אני' }
+          - { term: 'אַבּוּי', gloss: 'אבא שלי' }
+          - { term: 'אִמִּי', gloss: 'אמא שלי' }
+          - { term: 'אַח׳וּי', gloss: 'אח שלי' }
+          - { term: 'אֻוח׳תִי', gloss: 'אחות שלי' }
+          - { term: 'עֵילֵה', gloss: 'משפחה' }
+          - { term: 'וַלַאד עַמִּי', gloss: 'בני דוד שלי' }
+          - { term: 'ארוח', gloss: 'הולך' }
+          - { term: 'אַרַכַּבְּ', gloss: 'לרכוב' }
+          - { term: 'מסאפרין', gloss: 'נוסעים' }
+          - { term: 'אזור', gloss: 'אבקר' }
+          - { term: "ראג'עין", gloss: 'חוזרים' }
+          - { term: 'בַּעְמַל', gloss: 'עושה / עובד' }
+          - { term: 'בִּשְתְרֶ׳ל', gloss: 'עובד' }
+          - { term: 'אדְרוּס', gloss: 'לומד' }
+          - { term: 'סַאכֵּן', gloss: 'גר' }
+          - { term: 'סַאכְּנֵה', gloss: 'גרה' }
+          - { term: 'שוּ', gloss: 'מה' }
+          - { term: 'וֵין', gloss: 'איפה' }
+          - { term: 'לֵיש / ליה', gloss: 'למה' }
+          - { term: 'אֵימְתַא / וינתא', gloss: 'מתי' }
+          - { term: 'מִין', gloss: 'מי' }
+          - { term: 'קַבְּל', gloss: 'לפני' }
+          - { term: 'בַּעַד', gloss: 'אחרי' }
+          - { term: 'אלאַחַד', gloss: 'ראשון' }
+          - { term: 'אתְנֵין', gloss: 'שני' }
+          - { term: 'תְלַאתה', gloss: 'שלישי' }
+          - { term: 'אַרְבַּעַה', gloss: 'רביעי' }
+          - { term: 'ח׳מִיס', gloss: 'חמישי' }
+          - { term: 'ג׳ֻומְעַה', gloss: 'שישי' }
+          - { term: 'אַסַּבְּת', gloss: 'שבת' }
+          - { term: 'טַיִּבּ', gloss: 'טוב / טעים' }
+          - { term: 'חִלו', gloss: 'נחמד / יפה / מתוק' }
+          - { term: 'זַכִּי / שאטֶר', gloss: 'חכם' }
+          - { term: 'רַאִיק / האדי', gloss: 'רגוע / שקט' }
+
+vocabulary:
+  - slug: family
+    title: משפחה
+    items: *family-words
+
+activities:
+  - slug: family-members
+    title: בני המשפחה וכינויי שייכות
+    minutes: 8
+    items:
+      - id: members
+        type: matching
+        lang: he
+        prompt: התאימו כל בן משפחה לפירוש שלו.
+        pairs:
+          - ['אַבּוּי', 'אבא שלי']
+          - ['אִמִּי', 'אמא שלי']
+          - ['אַח׳וּי', 'אח שלי']
+          - ['אֻוח׳תִי', 'אחות שלי']
+          - ['וַלַאד עַמִּי', 'בני דוד שלי']
+      - id: my-family
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים ״המשפחה שלי״?'
+        options:
+          - { text: 'עֵילְתִי', correct: true }
+          - { text: 'עֵילְתַכּ', feedback: 'עֵילְתַכּ פירושו ״המשפחה שלך״.' }
+          - { text: 'עֵילֵה', feedback: 'עֵילֵה פירושו ״משפחה״, בלי ״שלי״.' }
+      - id: his-name
+        type: multipleChoice
+        lang: he
+        prompt: '״זה אבא שלי. השם שלו דני.״ השלימו: הַאדַא אבוי. ___ דני.'
+        options:
+          - { text: 'אסמו', correct: true }
+          - { text: 'אסמהא', feedback: 'אסמהא פירושו ״השם שלה״ – לאישה.' }
+          - { text: 'אסמי', feedback: 'אסמי פירושו ״השם שלי״.' }
+      - id: this-is-mom
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״זאת אמא שלי.״?'
+        options:
+          - { text: 'הַאדי אימי.', correct: true }
+          - { text: 'הַאדַא אימי.', feedback: 'הַאדַא משמש לזכר. לנקבה אומרים הַאדי.' }
+          - { text: 'הַאדוֹל אימי.', feedback: 'הַאדוֹל פירושו ״אלה״ (רבים).' }
+      - id: she-studies
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״היא לומדת״?'
+        options:
+          - { text: 'הִיֵּ בִּתְדְרֻס.', correct: true }
+          - { text: 'הֻוֵ בִּדְרֻס.', feedback: 'זה ״הוא לומד״.' }
+          - {
+              text: 'הִיֵּ בִּדְרֻס.',
+              feedback: 'בגוף נקבה הפועל מתחיל ב־בִּתְ: הִיֵּ בִּתְדְרֻס.',
+            }
+      - id: trait
+        type: multipleChoice
+        lang: he
+        prompt: '״אני אוהב אותו כי הוא חכם.״ – אנא בִּחְבּּוֹ לַאֲנּוּ ___'
+        options:
+          - { text: 'זַכִּי', correct: true }
+          - { text: 'רַאִיק', feedback: 'רַאִיק פירושו ״רגוע״.' }
+          - { text: 'טַיִּבּ', feedback: 'טַיִּבּ פירושו ״טוב / טעים״.' }
+      - id: lives
+        type: trueFalse
+        lang: he
+        prompt: '״הוא גר״ זה הֻוֵ סַאכֵּן, ו״היא גרה״ זה הִיֵּ סַאכְּנֵה.'
+        answer: true
+        feedback:
+          correct: 'נכון! סַאכֵּן לזכר, סַאכְּנֵה לנקבה.'
+          incorrect: 'זה נכון: הֻוֵ סַאכֵּן (הוא גר), הִיֵּ סַאכְּנֵה (היא גרה).'
+      - id: order-like
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: ״אני אוהב אותה כי היא נחמדה.״'
+        sentence: 'אנא בִּחְבּּהַא לַאֲנּהַא חִלְוֵה'
+
+  - slug: family-dates
+    title: 'תאריכים: ימים, חודשים, קַבְּל / בַּעַד'
+    minutes: 8
+    items:
+      - id: days
+        type: matching
+        lang: he
+        prompt: התאימו כל יום לשם שלו בעברית.
+        pairs:
+          - ['אלאַחַד', 'ראשון']
+          - ['אתְנֵין', 'שני']
+          - ['תְלַאתה', 'שלישי']
+          - ['אַרְבַּעַה', 'רביעי']
+          - ['ח׳מִיס', 'חמישי']
+      - id: friday
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים ״שישי״?'
+        options:
+          - { text: 'ג׳ֻומְעַה', correct: true }
+          - { text: 'אַסַּבְּת', feedback: 'אַסַּבְּת פירושו ״שבת״.' }
+          - { text: 'ח׳מִיס', feedback: 'ח׳מִיס פירושו ״חמישי״.' }
+      - id: before
+        type: multipleChoice
+        lang: he
+        prompt: 'מה פירוש ״קַבְּל״?'
+        options:
+          - { text: 'לפני', correct: true }
+          - { text: 'אחרי', feedback: '״אחרי״ זה בַּעַד.' }
+          - { text: 'מתי', feedback: '״מתי״ זה אֵימְתַא / וינתא.' }
+      - id: shbat
+        type: multipleChoice
+        lang: he
+        prompt: 'איזה חודש הוא ״שבאט״?'
+        options:
+          - { text: 'פברואר', correct: true }
+          - { text: 'ינואר', feedback: 'ינואר זה כנון תאני.' }
+          - { text: 'מרץ', feedback: 'מרץ זה אד׳אר.' }
+      - id: months
+        type: matching
+        lang: he
+        prompt: התאימו כל חודש לשם שלו בעברית.
+        pairs:
+          - ['שבאט', 'פברואר']
+          - ['אד׳אר', 'מרץ']
+          - ['ניסאן', 'אפריל']
+          - ['תמוז', 'יולי']
+          - ['אילול', 'ספטמבר']
+      - id: tishrin
+        type: trueFalse
+        lang: he
+        prompt: '״תשרין אוול״ הוא אוקטובר, ו״תשרין תאני״ הוא נובמבר.'
+        answer: true
+        feedback:
+          correct: 'נכון! אוול = ראשון, תאני = שני.'
+          incorrect: 'תשרין אוול = אוקטובר, תשרין תאני = נובמבר.'
+      - id: after
+        type: multipleChoice
+        lang: he
+        prompt: 'יום ההולדת של אמא שלי ב־9 בפברואר, ושל אחותי ב־6 במרץ. השלימו: עיד מילאד אוח׳תי ___!'
+        options:
+          - { text: 'בעדהא', correct: true }
+          - { text: 'קבל', feedback: 'קבל פירושו ״לפני״, אבל 6 במרץ בא אחרי 9 בפברואר.' }
+      - id: order-monday
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: ״ביום שני אני עובד.״'
+        sentence: 'ביום אלתנֵין אנא בִּשְתע׳ל'

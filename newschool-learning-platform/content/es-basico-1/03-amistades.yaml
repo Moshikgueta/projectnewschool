@@ -1,0 +1,608 @@
+# Cycle "Amistades", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: amistades
+title: Amistades
+goal: Hablar de tus amigos con oraciones descriptivas y verbos en presente.
+position: 3
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Oraciones descriptivas" and "Verbos en presente") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    IMPORTANT: the summary rules for "Verbos en presente" in the notebook are a literal
+    translation of the English notebook (add -s/-es for he/she, use "do not / does
+    not", "infinitivo sin to"). They are wrong for Spanish and were rewritten: (1) the
+    ending changes with the person (hablo, hablas, habla…), with a table of -ar, -er
+    and -ir verbs (hablar, comer, compartir); (2) for él / ella the ending is -a (-ar)
+    or -e (-er, -ir); (3) for the negative, put *no* before the verb. The notebook's
+    examples are kept. Please check.
+  - >-
+    Summary, "Oraciones descriptivas": "Asunto" (a mistranslation of "subject") is
+    corrected to "Sujeto"; the negative structure "Asunto + es/son + no + adjetivo" is
+    corrected to "Sujeto + no + es/son + adjetivo"; the question structure is given as
+    "¿Es / Son + adjetivo + sujeto?" or "¿Sujeto + es / son + adjetivo?". A rule on
+    adjective agreement (alto / alta, plural with -s) was added, because the cycle's
+    examples use it ("Mi amiga es alta").
+  - >-
+    Warm-up question 2: the frame "Me gusta que ___ es ___" (needs the subjunctive in
+    correct Spanish) is changed to "Me gusta ___ porque es ___, ___ y ___."
+  - >-
+    Activity titles: "¿Tu amigo es…" → "¿Tu amigo es…?"; "¡Día perfecto del amigo!" →
+    "¡Un día perfecto con amigos!"; "¿Cuando?" → "¿Cuándo?".
+  - >-
+    Mori message: "Quiero practicar inglés" → "español"; the broken question "¿Puedes
+    hacerme preguntas sobre...? Amistad ¿Usar las habilidades…?" is rewritten as one
+    question; "use / corrija" → "usa / corrige" (tú, as in the other messages). The tip
+    "con la oración en inglés" is changed to "en español".
+  - >-
+    The notebook gives no times for this cycle (introduction, warm-up, activities,
+    summary), so no minutes are set. Activity 4 says 10 minutes to write; that is in
+    the teacher note.
+  - >-
+    Skill mapping from the notebook: Oraciones descriptivas = warm-up questions and
+    Activities 1–2; Verbos en presente = Activities 3–4. Activity 5 ("Mi amigo y yo")
+    is not in the mapping; it practises the present tense (its own goal says so), so it
+    is listed under Verbos en presente.
+  - >-
+    The Quizlet link had tracking parameters (?i=…&x=…); they were removed.
+  - >-
+    Vocabulary: "Mejor amigo" is translated as "החבר הכי טוב" (not "חבר טוב");
+    "Divertido" as "כיפי / מצחיק"; "Viajar" as "לטייל / לנסוע"; "Confiar" as "לסמוך /
+    לבטוח". Please confirm.
+  - >-
+    The "Respuesta del estudiante 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: amistades-clase
+    title: 'Clase: Amistades'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Amistades
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Oraciones descriptivas
+            description: Describir a tus amigos con *es* y *son* (alto, simpático, divertido…)
+          - name: Verbos en presente
+            description: Acciones y rutinas en presente (trabaja, juega, ayuda…)
+      - id: quizlet
+        type: externalLink
+        label: Amistades en Quizlet
+        url: https://quizlet.com/br/1060083398/amistades-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Mi amigo / amiga es ___. Nos gusta ___ juntos / juntas.
+        example: Soy Laura. Mi mejor amigo es Shahar. Nos gusta cantar juntos.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Cuándo ves a tus amigos?
+            frame: Veo a mis amigos el ___ en el / la ___.
+          - question: 'Elige a un amigo: ¿cuáles son tres cosas que te gustan de esta persona?'
+            frame: Me gusta ___ porque es ___, ___ y ___.
+          - question: ¿Por qué es importante tu amigo / amiga para ti?
+            frame: Es importante para mí porque es ___.
+          - question: ¿Crees que las amistades son importantes? ¿Por qué?
+            frame: |-
+              Sí, creo que las amistades son importantes porque ___.
+              No, creo que las amistades no son importantes porque ___.
+          - question: ¿Cómo te sientes cuando estás con tus amigos?
+            frame: Me siento ___ porque ___.
+          - question: ¿Qué haces por tus amigos?
+            frame: Yo ___ para mis amigos.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: ¿Quién sería tu amigo ideal?'
+        skills: [Oraciones descriptivas]
+        steps:
+          - Tu profesor presenta un grupo de tres personas famosas.
+          - 'Elige: un amigo para viajar, un amigo para hacer deporte y un amigo para trabajar en un proyecto.'
+          - Explica por qué con las oraciones de abajo.
+        wordBank:
+          - Shakira
+          - Lionel Messi
+          - Oprah Winfrey
+          - Emma Watson
+          - Dwayne Johnson (The Rock)
+          - Taylor Swift
+          - Cristiano Ronaldo
+          - Zendaya
+          - Elon Musk
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Completa las oraciones
+        items:
+          - question: Elijo a ___ para viajar porque es ___ y ___.
+          - question: Elijo a ___ para hacer deporte porque es ___.
+          - question: Elijo a ___ para trabajar en un proyecto porque es ___.
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: ¿Tu amigo es…?'
+        skills: [Oraciones descriptivas]
+        steps:
+          - Trabajen en parejas. Piensa en un amigo real (o inventado) y ponle un nombre.
+          - El estudiante A hace preguntas abiertas al estudiante B sobre su amigo. Después cambian.
+          - No se puede responder solo con «sí» o «no»; hay que dar frases completas.
+          - Presenta a la clase al amigo de tu compañero, en tercera persona.
+        example: |-
+          *Mi amiga es alta, tiene el pelo largo y es muy simpática.*
+          *Es divertido, pero a veces es un poco ruidoso.*
+          *La amiga de mi compañero es alta y muy simpática. Le gusta bailar y siempre ayuda a sus amigos.*
+          *El amigo de mi compañera es tranquilo y estudioso. No es tímido y le encanta jugar al fútbol.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Preguntas abiertas
+        items:
+          - question: ¿Cómo es tu amigo físicamente?
+          - question: ¿Cómo es su personalidad?
+          - question: ¿Qué cosas buenas tiene tu amigo?
+          - question: ¿Qué hace tu amigo cuando está con sus amigos?
+          - question: ¿En qué es diferente de ti?
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: ¿Cuánto conoces a tu amigo?'
+        skills: [Verbos en presente]
+        steps:
+          - Trabaja en pareja. Piensa en un amigo real o inventado.
+          - Haz preguntas a tu compañero / compañera sobre su amigo / amiga y anota las respuestas.
+          - Cambia de rol y repite.
+          - Presenta a la clase al amigo de tu compañero, en tercera persona.
+        example: '*El amigo de Laura se llama Diego. Trabaja en un restaurante. Le gusta escuchar música y jugar al fútbol.*'
+        wordBank:
+          - trabajar
+          - estudiar
+          - empezar
+          - terminar
+          - hacer deporte
+          - jugar
+          - salir
+          - leer
+          - ver películas
+          - escuchar música
+          - los días de la semana
+          - las horas
+          - siempre
+          - normalmente
+          - a veces
+          - nunca
+      - id: act3-questions
+        type: discussionQuestions
+        title: Preguntas sobre tu amigo
+        items:
+          - question: ¿Dónde trabaja tu amigo / amiga?
+          - question: ¿Cuántos días a la semana trabaja?
+          - question: ¿A qué hora empieza y termina su trabajo?
+          - question: ¿Qué le gusta hacer en su tiempo libre?
+          - question: ¿Qué no le gusta hacer?
+          - question: ¿Hace deporte? ¿Cuál?
+          - question: ¿Con quién pasa tiempo los fines de semana?
+          - question: ¿Qué hace normalmente por la mañana?
+          - question: ¿Qué hace normalmente por la noche?
+          - question: ¿Tiene alguna costumbre especial?
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Un día perfecto entre amigos'
+        skills: [Verbos en presente]
+        steps:
+          - Planifica un día perfecto con tus amigos. Completa el plan de abajo (10 minutos).
+          - Comparte tu día con la clase.
+        example: |-
+          **¿Dónde?** En la playa.
+          **¿Cuándo?** El sábado.
+          En este día perfecto, nosotros:
+          1. Nos levantamos temprano y nos encontramos en la estación de autobuses.
+          2. Compramos comida y bebidas.
+          3. Vamos a la playa y nadamos.
+          4. Jugamos al vóley y escuchamos música.
+          5. Almorzamos juntos y hablamos de recuerdos divertidos.
+          6. Vemos el atardecer y sacamos fotos antes de irnos a casa.
+      - id: act4-plan
+        type: discussionQuestions
+        title: ¡Un día perfecto con amigos!
+        items:
+          - question: '¿Dónde? ___'
+          - question: '¿Cuándo? ___'
+          - question: 'En este día perfecto, nosotros: 1. ___'
+          - question: 2. ___
+          - question: 3. ___
+          - question: 4. ___
+          - question: 5. ___
+          - question: 6. ___
+      - id: act5
+        type: classActivity
+        title: 'Actividad 5: Mi amigo y yo: parecidos y diferentes'
+        skills: [Verbos en presente]
+        steps:
+          - Piensa en un amigo real.
+          - Trabaja con un compañero / una compañera. Hazle las preguntas de abajo sobre su amigo.
+          - Escribe en la tabla qué es igual que tú y qué es diferente de ti.
+          - Cuenta al grupo 2–3 frases.
+        example: |-
+          *Mi amigo y yo hacemos deporte los fines de semana, pero él no ve películas y yo sí.*
+          *A los dos nos gusta la pizza, pero él escucha música clásica y yo escucho pop.*
+      - id: act5-questions
+        type: discussionQuestions
+        title: Preguntas sobre su amigo
+        items:
+          - question: ¿Qué deportes le gustan?
+          - question: ¿Qué música escucha?
+          - question: ¿Qué comidas le gustan?
+          - question: ¿Qué le gusta hacer con sus amigos?
+          - question: ¿Qué películas o series ve?
+          - question: ¿Qué hace normalmente por la mañana?
+          - question: ¿Qué hace normalmente los fines de semana?
+          - question: ¿Dónde suele pasar tiempo con amigos?
+          - question: ¿Con quién pasa más tiempo?
+          - question: ¿Qué lugares visita con sus amigos?
+      - id: act5-table
+        type: table
+        caption: 'Ejemplo: igual que yo y diferente de mí'
+        header: [Igual que yo, Diferente de mí]
+        rows:
+          - [Le gusta la pizza., No le gusta el cine.]
+          - [Escucha música pop., Escucha música clásica.]
+          - [Hace deporte los sábados., No hace deporte.]
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Oraciones descriptivas** (preguntas de
+          calentamiento y Actividades 1 y 2) y **Verbos en presente** (Actividades 3 y 4;
+          la Actividad 5 también practica el presente).
+      - id: n-intro
+        anchor: intro
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: Presenta un grupo de tres personas famosas del banco de personajes. Los estudiantes eligen y explican con las oraciones.
+      - id: n-act4
+        anchor: act4
+        text: Explica que deben planificar un día perfecto con sus amigos. Tienen 10 minutos para escribir; después cada estudiante comparte su día.
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Objetivo: practicar el presente en tercera persona para comparar gustos,
+          rutinas y experiencias, con preguntas abiertas y conectores simples (*pero*,
+          *los dos*, *yo sí / yo no*).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: amistades-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-descriptive
+        type: ruleSummary
+        skill: Oraciones descriptivas
+        rules:
+          - text: '**Singular:** sujeto + **es** + adjetivo / sustantivo.'
+            examples: [Mi mejor amigo es amable y comprensivo.]
+          - text: '**Plural:** sujeto en plural + **son** + adjetivo / sustantivo.'
+            examples: [Mis amigos siempre son serviciales y divertidos.]
+          - text: 'El adjetivo cambia como la persona: masculino o femenino, singular o plural.'
+            examples:
+              [Mi amigo es alto. · Mi amiga es alta., Mis amigos son altos. · Mis amigas son altas.]
+          - text: '**Negativos:** sujeto + **no** + es / son + adjetivo.'
+            examples: [Mi amigo no es grosero., Mis amigos no son egoístas.]
+          - text: '**Preguntas:** ¿Es / Son + adjetivo + sujeto? o ¿Sujeto + es / son + adjetivo?'
+            examples: [¿Son generosos tus amigos?, ¿Tu amigo es siempre honesto?]
+      - id: rules-present
+        type: ruleSummary
+        skill: Verbos en presente
+        rules:
+          - text: 'En presente, la terminación del verbo cambia según la persona: *hablo, hablas, habla…*'
+            examples: [Visito a mi amigo cada fin de semana., Hablan entre ellos todos los días.]
+          - text: 'Para **él / ella / usted**: los verbos en -ar terminan en **-a**; los verbos en -er y en -ir terminan en **-e**.'
+            examples:
+              [
+                Ella siempre me ayuda con mi tarea.,
+                Él me invita a sus fiestas.,
+                Mi amigo come pizza.,
+              ]
+          - text: 'Para la forma negativa, pon **no** antes del verbo.'
+            examples: [No discuto con mi mejor amigo., Ella no olvida mi cumpleaños.]
+      - id: present-table
+        type: table
+        caption: Verbos en presente
+        header: [Persona, hablar (-ar), comer (-er), compartir (-ir)]
+        rows:
+          - [Yo, hablo, como, comparto]
+          - [Tú, hablas, comes, compartes]
+          - [Él / Ella / Usted, habla, come, comparte]
+          - [Nosotros / Nosotras, hablamos, comemos, compartimos]
+          - [Vosotros / Vosotras, habláis, coméis, compartís]
+          - [Ellos / Ellas / Ustedes, hablan, comen, comparten]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: amistades-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-amistad
+        type: aiTutorPrompt
+        title: Hablar de la amistad
+        message: >-
+          ¡Hola Mori! Quiero practicar español. ¿Puedes hacerme preguntas sobre la
+          amistad usando las habilidades Oraciones descriptivas y Verbos en presente? Por
+          favor, usa solo el presente simple y corrige mis errores.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Práctica adicional
+      - id: mori-mejor-amigo
+        type: aiTutorPrompt
+        title: Mi mejor amigo
+        intro: >-
+          Envía este mensaje a Mori y después describe a tu mejor amigo. Por ejemplo:
+          *Tiene el pelo largo y los ojos grandes. Siempre me escucha. Vamos juntas al
+          parque y almorzamos en la escuela.*
+        message: >-
+          ¡Hola Mori! Hagamos una actividad. Voy a describir a mi mejor amigo con frases
+          descriptivas y acciones. Dime si crees que somos buenos amigos.
+      - id: mori-mejor-amigo-2
+        type: aiTutorPrompt
+        title: 'Mi mejor amigo: ahora Mori'
+        intro: Después, envía este mensaje.
+        message: ¡Ahora te toca a ti! Describe a tu mejor amigo y te diré si son buenos amigos.
+      - id: mori-buenos-amigos
+        type: aiTutorPrompt
+        title: ¿Qué hacen los buenos amigos?
+        intro: >-
+          Envía este mensaje a Mori y después escribe tres cosas. Por ejemplo: *1. Un buen
+          amigo te ayuda. 2. Un buen amigo se ríe de ti cuando estás triste. 3. Un buen
+          amigo juega contigo.* (Mori adivina el número 2.)
+        message: >-
+          ¡Oye, Mori! Juguemos a un juego. Voy a escribir tres cosas que hacen los amigos.
+          Una no es verdad. Tienes que adivinar cuál no es algo que hace un buen amigo.
+      - id: mori-buenos-amigos-2
+        type: aiTutorPrompt
+        title: '¿Qué hacen los buenos amigos? Ahora Mori'
+        intro: Después, envía este mensaje.
+        message: ¡Ahora te toca a ti! Escribe tres cosas que hacen los amigos. Yo adivino cuál no es verdad.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: amistades-practica
+    book: workbook
+    title: 'Práctica: Amistades'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-descriptivos
+        type: activity
+        activity: amistades-descriptivos
+      - id: ex-presente
+        type: activity
+        activity: amistades-presente
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: amistades-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la amistad
+        glossLang: he
+        link: https://quizlet.com/br/1060083398/amistades-flash-cards/
+        items: &amistades-words
+          - { term: Amigo, gloss: חבר }
+          - { term: Mejor amigo, gloss: החבר הכי טוב }
+          - { term: Amistad, gloss: חברות }
+          - { term: Viajar, gloss: לטייל / לנסוע }
+          - { term: Hacer deporte, gloss: לעשות ספורט }
+          - { term: Trabajar, gloss: לעבוד }
+          - { term: Proyecto, gloss: פרויקט }
+          - { term: Personalidad, gloss: אופי }
+          - { term: Alto, gloss: גבוה }
+          - { term: Bajo, gloss: נמוך }
+          - { term: Simpático, gloss: נחמד }
+          - { term: Divertido, gloss: כיפי / מצחיק }
+          - { term: Trabajador, gloss: חרוץ }
+          - { term: Creativo, gloss: יצירתי }
+          - { term: Inteligente, gloss: חכם }
+          - { term: Tranquilo, gloss: רגוע }
+          - { term: Ruidoso, gloss: רועש }
+          - { term: Jugar, gloss: לשחק }
+          - { term: Cocinar, gloss: לבשל }
+          - { term: Leer, gloss: לקרוא }
+          - { term: Ver películas, gloss: לראות סרטים }
+          - { term: Escuchar música, gloss: להאזין למוזיקה }
+          - { term: Bailar, gloss: לרקוד }
+          - { term: Comer, gloss: לאכול }
+          - { term: Beber, gloss: לשתות }
+          - { term: Salir, gloss: לצאת }
+          - { term: Ayudar, gloss: לעזור }
+          - { term: Compartir, gloss: לשתף }
+          - { term: Confiar, gloss: לסמוך / לבטוח }
+          - { term: Celebrar, gloss: לחגוג }
+          - { term: Invitar, gloss: להזמין }
+          - { term: Leal, gloss: נאמן }
+          - { term: Recuerdo, gloss: זיכרון }
+          - { term: Secreto, gloss: סוד }
+          - { term: Chisme, gloss: רכילות }
+
+vocabulary:
+  - slug: amistades
+    title: Amistades
+    items: *amistades-words
+
+activities:
+  - slug: amistades-descriptivos
+    title: 'Oraciones descriptivas: es y son'
+    minutes: 8
+    items:
+      - id: amigo-es
+        type: multipleChoice
+        prompt: Mi mejor amigo ___ amable.
+        options:
+          - { text: es, correct: true }
+          - { text: son, feedback: '*Mi mejor amigo* es una persona (singular): usa *es*.' }
+          - { text: soy, feedback: '*Soy* es para *yo*. Con *mi amigo* usa *es*.' }
+      - id: amigos-son
+        type: multipleChoice
+        prompt: Mis amigos ___ divertidos.
+        options:
+          - { text: son, correct: true }
+          - { text: es, feedback: '*Mis amigos* es plural: usa *son*.' }
+          - { text: eres, feedback: '*Eres* es para *tú*. Con *mis amigos* usa *son*.' }
+      - id: amiga-alta
+        type: multipleChoice
+        prompt: Mi amiga es ___.
+        options:
+          - { text: alta, correct: true }
+          - { text: alto, feedback: '*Amiga* es femenino: el adjetivo termina en *-a* (alta).' }
+          - { text: altas, feedback: '*Mi amiga* es una persona (singular): usa *alta*.' }
+      - id: negativo-orden
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: Mi amigo no es grosero., correct: true }
+          - { text: Mi amigo es no grosero., feedback: '*No* va antes del verbo: *no es*.' }
+          - {
+              text: No mi amigo es grosero.,
+              feedback: '*No* va justo antes del verbo: *Mi amigo no es grosero*.',
+            }
+      - id: es-son
+        type: fillBlank
+        prompt: Completa con *es* o *son*.
+        text: Mi amigo ___ tranquilo. Mis amigos no ___ egoístas. ¿___ generosos tus amigos?
+        blanks: [[es], [son], [Son]]
+        wordBank: [es, son]
+      - id: une-ser
+        type: matching
+        prompt: Une cada sujeto con la forma correcta del verbo *ser*.
+        pairs:
+          - [Yo, soy]
+          - [Tú, eres]
+          - [Mi amigo, es]
+          - [Nosotros, somos]
+          - [Mis amigos, son]
+      - id: plural-adjetivo
+        type: trueFalse
+        prompt: 'En plural, el adjetivo también va en plural: *Mis amigos son simpáticos.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *Amigos* es plural, y *simpáticos* también.
+          incorrect: 'El adjetivo cambia como la persona: *mi amigo simpático*, *mis amigos simpáticos*.'
+      - id: ordena-amigo
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Mi mejor amigo es alto y simpático
+        alsoAccept: [Mi mejor amigo es simpático y alto]
+
+  - slug: amistades-presente
+    title: Verbos en presente
+    minutes: 8
+    items:
+      - id: ella-ayuda
+        type: multipleChoice
+        prompt: Ella siempre me ___ con mi tarea.
+        options:
+          - { text: ayuda, correct: true }
+          - { text: ayudo, feedback: '*Ayudo* es para *yo*. Con *ella* usa *ayuda*.' }
+          - { text: ayudan, feedback: '*Ayudan* es para *ellos / ellas*. Con *ella* usa *ayuda*.' }
+      - id: nosotros-nadamos
+        type: multipleChoice
+        prompt: En la playa, nosotros ___.
+        options:
+          - { text: nadamos, correct: true }
+          - {
+              text: nada,
+              feedback: '*Nada* es para *él / ella*. Con *nosotros* el verbo termina en *-amos*.',
+            }
+          - {
+              text: nadan,
+              feedback: '*Nadan* es para *ellos / ellas*. Con *nosotros* el verbo termina en *-amos*.',
+            }
+      - id: completa-ar
+        type: fillBlank
+        prompt: Completa con el verbo en presente.
+        text: Yo ___ (visitar) a mi amigo cada fin de semana. Él me ___ (invitar) a sus fiestas. Ellos ___ (hablar) todos los días.
+        blanks: [[visito], [invita], [hablan]]
+      - id: completa-er-ir
+        type: fillBlank
+        prompt: Completa con el verbo en presente.
+        text: Mi amigo ___ (comer) pizza. Nosotros ___ (compartir) secretos.
+        blanks: [[come], [compartimos]]
+      - id: tercera-s
+        type: trueFalse
+        prompt: 'Para *él / ella* añadimos *-s* al verbo: *Ella ayudas.*'
+        answer: false
+        feedback:
+          correct: '¡Correcto! *-s* es para *tú* (tú ayudas). Con *ella*: *ella ayuda*.'
+          incorrect: '*-s* es para *tú* (tú ayudas). Con *ella*: *ella ayuda*.'
+      - id: une-hablar
+        type: matching
+        prompt: Une cada persona con la forma del verbo *hablar*.
+        pairs:
+          - [yo, hablo]
+          - [tú, hablas]
+          - [él / ella, habla]
+          - [nosotros, hablamos]
+          - [ellos / ellas, hablan]
+      - id: negativo
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: Ella no olvida mi cumpleaños., correct: true }
+          - {
+              text: Ella olvida no mi cumpleaños.,
+              feedback: '*No* va antes del verbo: *no olvida*.',
+            }
+          - {
+              text: Ella no olvidas mi cumpleaños.,
+              feedback: 'Con *ella* el verbo es *olvida*, sin *-s*.',
+            }
+      - id: ordena-discuto
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: No discuto con mi mejor amigo.

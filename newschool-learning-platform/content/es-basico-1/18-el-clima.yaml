@@ -1,0 +1,546 @@
+# Cycle "El clima", converted from the Spanish básico digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-basico-1
+slug: el-clima
+title: El clima
+goal: Hablar del clima con números y oraciones descriptivas.
+position: 18
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Números" and "Describir el clima") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The source gives no activity times for this cycle, so no times are recorded.
+  - >-
+    Activity 1 ("El informe meteorológico") says "Los estudiantes recibirán el
+    siguiente cuadro", but the chart did not survive the export (it was probably an
+    image). The teacher needs to share a weekly weather chart (see the teacher note);
+    the chart should move into the course's own media.
+  - >-
+    The warm-up questions have no answer frames in the source. Short frames were
+    ADDED (e.g. "Prefiero el calor / el frío porque ___"); please check them.
+  - >-
+    Activity 4: "Allí hace calor/frío // está fresco/cálido" → "Allí hace calor /
+    frío / fresco."; "Este lugar es al aire libre/en un lugar cerrado" → "Este lugar
+    está al aire libre. / Es un lugar cerrado."; the broken blank "y un **" → "y un
+    ___".
+  - >-
+    Summary, numbers: rule 1 ("La primera parte de los números del 21 al 99 proviene
+    de los números del 1 al 9") was rewritten as "decenas + y + unidades", with the
+    note that 21–29 are one word (veintiuno, veintisiete). Rule 2 said all multiples
+    of ten end in -enta; veinte and treinta do not, so it now says "desde cuarenta".
+    Rule 3's title said 11–15 but its text said 11–19; it now says once–quince are
+    irregular and 16–19 are "dieci + número".
+  - >-
+    Summary, numbers examples: the source examples used Fahrenheit-style values (53,
+    60, 80 grados), the past and future ("hicieron", "bajó", "subirá", "hará"), and
+    "Ayer hicieron cincuenta y tres grados" is wrong ("hizo"). They are replaced by
+    present-tense Celsius examples (veintisiete, treinta y dos, cuarenta, quince,
+    once grados).
+  - >-
+    Summary, description: "Hay un clima cálido en la playa" → "Hay sol en la playa";
+    "La temperatura está bajando" (a gerund, not an adjective) → "El cielo está
+    nublado hoy". The source says "3 reglas" but gives two; a third rule "hace +
+    calor / frío / viento" was ADDED because the activities use it. Please confirm.
+  - >-
+    Mori: the source has no tips for this cycle; the usual tips callout (more
+    questions / explain in Hebrew) was added. "Actividad 1: El clima alrededor del
+    mundo" asks students to tell Mori about three places, but its message asked Mori
+    for the weather in the future ("¿qué tiempo hará?"); the message is rewritten so
+    the student describes three places. "Actividad 2: Mi semana en el clima" had no
+    message; one was written from its instructions and examples. In the examples
+    "Hay 34 grados" / "Hay 25 grados" → "Hace 34 grados" / "Hace 25 grados".
+  - >-
+    Vocabulary glosses changed: "Esquiar" להתגלש → לגלוש בסקי; "Senderismo" טיול רגל →
+    טיול רגלי. The "?new" parameter was removed from the Quizlet link.
+  - >-
+    The "Respuesta del estudiante 1/2/3" lines are replaced by the optional answer
+    boxes (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: el-clima-clase
+    title: 'Clase: El clima'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: El clima
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Números
+            description: Los números del 11 al 99 para hablar de temperaturas (treinta y dos grados)
+          - name: Oraciones descriptivas
+            description: '*Hay*, *hace* y la diferencia entre *ser* y *estar* (el clima es cálido / hoy está nublado)'
+      - id: quizlet
+        type: externalLink
+        label: El clima en Quizlet
+        url: https://quizlet.com/il/1031678926/the-weather-basic-spanish-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Me gustan los días soleados / lluviosos porque ___.
+        example: Soy Dana. Me gustan los días soleados porque me gusta ir al parque.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Prefieres el calor o el frío? ¿Por qué?
+            frame: Prefiero el calor / el frío porque ___.
+          - question: ¿Cómo está el clima hoy en ___? ¿Cómo está la temperatura allí?
+            frame: Hoy en ___ está ___. Hace ___ grados.
+          - question: ¿Prefieres actividades en espacios cerrados o al aire libre? ¿Por qué?
+            frame: Prefiero actividades ___ porque ___.
+          - question: ¿Qué haces en los días fríos?
+            frame: En los días fríos, yo ___.
+          - question: ¿Qué haces en los días cálidos?
+            frame: En los días cálidos, yo ___.
+          - question: ¿Cuál es tu estación favorita? ¿Por qué?
+            frame: Mi estación favorita es ___ porque ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: El informe meteorológico'
+        skills: [Números]
+        steps:
+          - Mira el cuadro del clima de la semana que comparte tu profesor.
+          - Tu profesor te pregunta cómo está el clima un día. Responde con el clima y la temperatura.
+          - Después, tú preguntas a otro estudiante por otro día.
+        example: |-
+          *—¿Cómo está el clima el lunes?*
+          *—El lunes está soleado. La temperatura máxima es de veintiocho grados.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Completa las oraciones
+        items:
+          - question: El ___ (día) está ___. La temperatura máxima es de ___ grados.
+          - question: La temperatura mínima es de ___ grados.
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Tantas ciudades, tantos climas…'
+        skills: [Oraciones descriptivas, Números]
+        steps:
+          - Elige una ciudad de Latinoamérica.
+          - Completa las oraciones de abajo.
+          - Comparte tu ciudad con el grupo.
+        example: |-
+          *La ciudad que elijo es Cartagena. Está en Colombia.*
+          *Me gusta esta ciudad porque tiene playas hermosas y un clima tropical.*
+          *En Cartagena hace calor. La temperatura máxima es de 32 grados. La temperatura mínima es de 25 grados.*
+          *Este clima es genial para ir a la playa y nadar en el mar.*
+
+          *La ciudad que elijo es Ushuaia. Está en Argentina.*
+          *Me gusta esta ciudad porque tiene paisajes y montañas.*
+          *En Ushuaia hace frío. La temperatura máxima es de 10 grados. La temperatura mínima es de -5 grados.*
+          *Este clima es genial para esquiar y hacer senderismo en la nieve.*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Mi ciudad
+        items:
+          - question: La ciudad que elijo es ___.
+          - question: Está en ___ (país).
+          - question: Me gusta / No me gusta esta ciudad porque ___.
+          - question: En ___ hace frío / calor.
+          - question: La temperatura máxima es de ___ grados.
+          - question: La temperatura mínima es de ___ grados.
+          - question: Este clima es genial para ___ (verbo en infinitivo).
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Simulación de TV'
+        skills: [Oraciones descriptivas, Números]
+        steps:
+          - Un estudiante es el presentador del programa *El clima en todo el mundo*. Los otros estudiantes son reporteros en diferentes ciudades.
+          - El presentador abre el programa y llama a un reportero.
+          - El reportero responde con el clima y las temperaturas de su ciudad.
+          - El presentador reacciona y llama a otro reportero en otra ciudad.
+          - Al final, el presentador cierra el programa.
+      - id: act3-script
+        type: discussionQuestions
+        title: Guion del programa
+        items:
+          - question: 'Presentador: introducción'
+            frame: |-
+              ¡Hola a todos! Bienvenidos a *El clima en todo el mundo*.
+              Yo soy ___. Estoy en el estudio.
+              Vamos a mirar el clima en diferentes países.
+              Primero, vamos a ___ (ciudad). Nuestro reportero ___ está allí.
+              ___, ¿cómo está el clima?
+          - question: 'Reportero: el clima en tu ciudad'
+            frame: |-
+              ¡Hola desde ___ (ciudad)!
+              Hoy el clima está ___ (soleado / lluvioso / frío / nublado / caluroso).
+              La temperatura máxima es de ___ grados.
+              La temperatura mínima es de ___ grados.
+              Es un buen día para ___ (ir al parque, tomar helado, mirar una película…).
+          - question: 'Presentador: reacción'
+            frame: |-
+              ¡Wow! ¡El clima está ___ (frío / caluroso / muy bien)!
+              Gracias, ___. Ahora vamos a otra ciudad.
+          - question: 'Presentador: cierre'
+            frame: |-
+              Eso es todo por hoy en *El clima en todo el mundo*.
+              Disfruten el clima. ¡Hasta la próxima!
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Mi lugar perfecto'
+        skills: [Oraciones descriptivas]
+        steps:
+          - ¡Es hora de soñar un poco! Piensa en tu lugar perfecto.
+          - Completa las oraciones de abajo.
+          - Comparte tu lugar perfecto con el grupo.
+        example: |-
+          *Mi lugar perfecto está en las montañas.*
+          *Allí hace frío.*
+          *Los días son nublados y, a veces, soleados.*
+          *Este lugar está al aire libre.*
+          *Tiene un gran lago, una acogedora cabaña y un hermoso bosque.*
+          *Mi perro viene conmigo a mi lugar perfecto todos los sábados.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Mi lugar perfecto
+        items:
+          - question: Mi lugar perfecto está en ___.
+          - question: Allí hace calor / frío / fresco.
+          - question: Los días son soleados / lluviosos / nublados.
+          - question: Este lugar está al aire libre. / Es un lugar cerrado.
+          - question: Tiene un ___, un ___ y un ___.
+          - question: Mi ___ viene conmigo a mi lugar perfecto todos los ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Números** (Actividades 1, 2 y 3) y
+          **Oraciones descriptivas** (Actividades 2, 3 y 4).
+      - id: n-intro
+        anchor: intro
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Comparte en pantalla un cuadro del clima de la semana (día, clima,
+          temperatura máxima y mínima). El cuadro del cuaderno anterior no está en la
+          plataforma. Pregunta a un estudiante por un día; el estudiante que responde
+          pregunta a otro estudiante.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Elige un presentador (o hazlo tú la primera vez). Cada reportero elige una
+          ciudad. El presentador sigue hablando con diferentes reporteros.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: el-clima-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-describe
+        type: ruleSummary
+        skill: Oraciones descriptivas
+        rules:
+          - text: 'Usamos **hay** para decir que algo existe o para describir lo que hay en un lugar. *Hay* es igual en singular y en plural.'
+            examples: [Hay una tormenta en la ciudad., Hay nubes en el cielo., Hay sol en la playa.]
+          - text: 'Los adjetivos describen cómo es algo. Usamos **ser** para características permanentes y **estar** para características temporales o el estado de hoy.'
+            examples:
+              [
+                El clima **es** cálido y soleado.,
+                La mañana **es** fresca y agradable.,
+                El día **está** lluvioso y fresco.,
+                La tarde **está** soleada y cálida.,
+                El cielo **está** nublado hoy.,
+              ]
+          - text: 'Usamos **hace** con *calor*, *frío*, *fresco* y *viento*.'
+            examples: [En Cartagena hace calor., En Ushuaia hace frío., El martes hace viento.]
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Números
+        rules:
+          - text: 'Del 31 al 99 combinamos las decenas y las unidades con **y**: treinta y cinco (35), noventa y ocho (98). Del 21 al 29 es una sola palabra: veintiuno, veintisiete.'
+            examples:
+              [Ahora hace veintisiete grados., La temperatura máxima es de treinta y dos grados.]
+          - text: 'Las decenas: veinte, treinta, y desde el 40 terminan en **-enta**: cuarenta, cincuenta, sesenta, setenta, ochenta, noventa.'
+            examples: [Hoy hace treinta grados., En el desierto hace cuarenta grados.]
+          - text: 'Los números del 11 al 15 son irregulares: apréndelos de memoria (once, doce, trece, catorce, quince). Del 16 al 19 son **dieci + número**: dieciséis, diecisiete, dieciocho, diecinueve.'
+            examples: ['Esta noche hace quince grados. ¡Qué frío!', Ahora hace once grados.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: el-clima-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-clima
+        type: aiTutorPrompt
+        title: Hablar del clima
+        message: >-
+          ¡Hola Mori! Quiero hablar del clima. ¿Podrías hacerme preguntas informales
+          sobre el clima usando las habilidades de números y oraciones descriptivas?
+          Usa solo presente simple y, por favor, corrige mis errores.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Práctica adicional
+      - id: mori-mundo
+        type: aiTutorPrompt
+        title: El clima alrededor del mundo
+        intro: >-
+          Cuéntale a Mori el clima de hoy en tres países o ciudades. Usa números y
+          oraciones descriptivas en presente. Por ejemplo: *En Tel Aviv está soleado. La
+          temperatura es de 30 grados. En París está nublado y hace 20 grados.*
+          Completa los espacios y envía el mensaje.
+        message: |-
+          ¡Hola Mori! Te cuento el clima de hoy en tres lugares:
+          En ___ está ___. La temperatura es de ___ grados.
+          En ___ está ___. La temperatura es de ___ grados.
+          En ___ hace ___. La temperatura es de ___ grados.
+          Por favor, hazme preguntas y corrige mis errores.
+      - id: mori-semana
+        type: aiTutorPrompt
+        title: Mi semana en el clima
+        intro: >-
+          Describe el clima en tu ciudad los próximos cinco días. Usa los días de la
+          semana, los grados y palabras del clima. Por ejemplo: *El lunes hace calor.
+          Hace 34 grados. El martes hace viento y frío. Hace 18 grados.* Completa los
+          espacios y envía el mensaje.
+        message: |-
+          ¡Hola Mori! Este es el clima de mi semana en ___:
+          El lunes ___. Hace ___ grados.
+          El martes ___. Hace ___ grados.
+          El miércoles ___. Hace ___ grados.
+          El jueves ___. Hace ___ grados.
+          El viernes ___. Hace ___ grados.
+          Por favor, hazme preguntas sobre el clima de mi semana y corrige mis errores.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: el-clima-practica
+    book: workbook
+    title: 'Práctica: El clima'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-numeros
+        type: activity
+        activity: el-clima-numeros
+      - id: ex-describir
+        type: activity
+        activity: el-clima-describir
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: el-clima-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras del clima
+        glossLang: he
+        link: https://quizlet.com/il/1031678926/the-weather-basic-spanish-flash-cards/
+        items: &clima-words
+          - { term: Soleado, gloss: שמשי }
+          - { term: Lluvioso, gloss: גשום }
+          - { term: Nublado, gloss: מעונן }
+          - { term: Frío, gloss: קר }
+          - { term: Calor, gloss: חום }
+          - { term: Fresco, gloss: קריר }
+          - { term: Cálido, gloss: חמים }
+          - { term: Clima, gloss: מזג אוויר }
+          - { term: Temperatura, gloss: טמפרטורה }
+          - { term: Máxima, gloss: מקסימום }
+          - { term: Mínima, gloss: מינימום }
+          - { term: Ciudad, gloss: עיר }
+          - { term: País, gloss: ארץ / מדינה }
+          - { term: Estación, gloss: עונה }
+          - { term: Verano, gloss: קיץ }
+          - { term: Invierno, gloss: חורף }
+          - { term: Primavera, gloss: אביב }
+          - { term: Otoño, gloss: סתיו }
+          - { term: Ir al parque, gloss: ללכת לפארק }
+          - { term: Tomar helado, gloss: לאכול גלידה }
+          - { term: Mirar una película, gloss: לראות סרט }
+          - { term: Esquiar, gloss: לגלוש בסקי }
+          - { term: Nadar, gloss: לשחות }
+          - { term: Senderismo, gloss: טיול רגלי }
+          - { term: Playa, gloss: חוף ים }
+          - { term: Montaña, gloss: הר }
+          - { term: Lunes, gloss: יום שני }
+          - { term: Martes, gloss: יום שלישי }
+          - { term: Miércoles, gloss: יום רביעי }
+          - { term: Jueves, gloss: יום חמישי }
+          - { term: Viernes, gloss: יום שישי }
+          - { term: Sábado, gloss: שבת }
+          - { term: Domingo, gloss: יום ראשון }
+
+vocabulary:
+  - slug: el-clima
+    title: El clima
+    items: *clima-words
+
+activities:
+  - slug: el-clima-numeros
+    title: 'Números: temperaturas'
+    minutes: 8
+    items:
+      - id: une-numeros
+        type: matching
+        prompt: Une los números.
+        pairs:
+          - ['15', quince]
+          - ['21', veintiuno]
+          - ['35', treinta y cinco]
+          - ['40', cuarenta]
+          - ['98', noventa y ocho]
+      - id: treinta-y-dos
+        type: multipleChoice
+        prompt: 'La temperatura máxima es de 32 grados. ¿Cómo se dice 32?'
+        options:
+          - { text: treinta y dos, correct: true }
+          - { text: tres y dos, feedback: '*Tres* es 3. El 30 es *treinta*: treinta + y + dos.' }
+          - { text: trece y dos, feedback: '*Trece* es 13. El 32 es *treinta y dos*.' }
+      - id: veintisiete
+        type: multipleChoice
+        prompt: 'Ahora hace 27 grados. ¿Cómo se dice 27?'
+        options:
+          - { text: veintisiete, correct: true }
+          - {
+              text: diecisiete,
+              feedback: '*Diecisiete* es 17. Del 21 al 29 empezamos con *veinti-*: *veintisiete*.',
+            }
+          - { text: setenta y dos, feedback: '*Setenta y dos* es 72. El 27 es *veintisiete*.' }
+      - id: cuarenta
+        type: fillBlank
+        prompt: Escribe el número en palabras.
+        text: 'En el desierto hace 40 grados: hace ___ grados.'
+        blanks: [[cuarenta]]
+      - id: dieciseis
+        type: fillBlank
+        prompt: Escribe el número en palabras.
+        text: 'Esta noche hace 16 grados: hace ___ grados.'
+        blanks: [[dieciséis]]
+      - id: once-quince
+        type: trueFalse
+        prompt: 'Los números del 11 al 15 (once, doce, trece, catorce, quince) son irregulares: hay que aprenderlos de memoria.'
+        answer: true
+        feedback:
+          correct: '¡Correcto! Después, del 16 al 19, usamos *dieci-*: *dieciséis, diecisiete…*'
+          incorrect: Once, doce, trece, catorce y quince no siguen un patrón. Hay que aprenderlos de memoria.
+      - id: treinta-enta
+        type: trueFalse
+        prompt: '*Treinta* (30) termina en *-enta*, como *cuarenta* y *cincuenta*.'
+        answer: false
+        feedback:
+          correct: ¡Correcto! *Treinta* termina en *-inta*. Desde el 40 terminan en *-enta*.
+          incorrect: '*Treinta* termina en *-inta*. Desde el 40 terminan en *-enta*: cuarenta, cincuenta, sesenta…'
+      - id: ordena-temperatura
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: La temperatura máxima es de treinta grados.
+        alsoAccept: [La máxima temperatura es de treinta grados.]
+
+  - slug: el-clima-describir
+    title: Describir el clima
+    minutes: 8
+    items:
+      - id: hoy-esta
+        type: multipleChoice
+        prompt: Hoy el cielo ___ nublado.
+        options:
+          - { text: está, correct: true }
+          - {
+              text: es,
+              feedback: 'Hoy es algo temporal: usa *estar*. *Hoy el cielo está nublado.*',
+            }
+          - {
+              text: hay,
+              feedback: '*Hay* es para decir que algo existe: *hay nubes*. Con un adjetivo como *nublado* usa *está*.',
+            }
+      - id: hay-nubes
+        type: multipleChoice
+        prompt: ___ nubes en el cielo.
+        options:
+          - { text: Hay, correct: true }
+          - { text: Es, feedback: 'Para decir que algo existe en un lugar, usa *hay*.' }
+          - {
+              text: Está,
+              feedback: 'Para decir que algo existe en un lugar, usa *hay*: *Hay nubes en el cielo.*',
+            }
+      - id: hay-plural
+        type: trueFalse
+        prompt: Usamos *hay* solo con palabras en singular.
+        answer: false
+        feedback:
+          correct: '¡Correcto! *Hay* es igual en singular y en plural: *hay una tormenta*, *hay nubes*.'
+          incorrect: '*Hay* es igual en singular y en plural: *hay una tormenta*, *hay nubes*.'
+      - id: es-esta
+        type: fillBlank
+        prompt: Completa con *es* o *está*.
+        text: En Cartagena el clima ___ tropical. Hoy el día ___ lluvioso.
+        blanks: [[es], [está]]
+        wordBank: [es, está]
+      - id: la-tarde
+        type: multipleChoice
+        prompt: La tarde está ___.
+        options:
+          - { text: soleada, correct: true }
+          - {
+              text: soleado,
+              feedback: '*Tarde* es femenino: el adjetivo termina en *-a*: *soleada*.',
+            }
+          - { text: soleadas, feedback: '*La tarde* es singular: usa *soleada*.' }
+      - id: une-clima
+        type: matching
+        prompt: Une cada palabra con su descripción.
+        pairs:
+          - [el verano, Hace calor.]
+          - [el invierno, Hace frío.]
+          - [un día soleado, Hay sol.]
+          - [un día nublado, Hay nubes.]
+      - id: hace-frio
+        type: fillBlank
+        prompt: Completa con una palabra del banco.
+        text: En Ushuaia hace ___ y hay nieve.
+        blanks: [[frío]]
+        wordBank: [frío, calor]
+      - id: ordena-dia
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: El día está lluvioso y fresco.

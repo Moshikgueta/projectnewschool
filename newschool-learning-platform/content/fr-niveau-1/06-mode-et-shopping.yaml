@@ -1,0 +1,546 @@
+# Cycle "Mode et shopping", converted from the French digital notebook
+# ("Cahier digital 2026 – français niveau 1", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: mode-et-shopping
+title: Mode et shopping
+goal: Décrire des vêtements et parler de prix avec les nombres.
+position: 6
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Décrire des vêtements" and "Les nombres et les
+    prix") are NEW: the notebook has no self-study exercises. They were written from
+    the cycle's summary rules, examples and vocabulary. Please check level, wording
+    and every right answer before students see them.
+  - >-
+    Summary, adjective position: the notebook says a short adjective goes before the
+    noun and a long or colour adjective after it. That is not right in French (most
+    adjectives, short or long, go after the noun). Rewritten as "in general after
+    the noun; a few short, common adjectives (beau / belle, joli, grand, petit, bon,
+    nouveau) go before". Please confirm.
+  - >-
+    Summary: added a rule on adjective agreement (élégant → élégante,
+    confortable → confortables), since the adjective bank lists masculine and
+    feminine forms and two workbook items use it.
+  - >-
+    Summary, numbers 21–99: "join tens and units with a hyphen" now adds the
+    exception "et un" (vingt et un, trente et un…, soixante et onze), and one
+    workbook item tests it. The 11–19 rule now says onze to seize are learned by
+    heart and dix-sept, dix-huit, dix-neuf are dix + number (the notebook called all
+    of them irregular). The numbered list of rules was renumbered (it restarted at 1
+    for "avoir"). "par coeur" → "par cœur".
+  - >-
+    Activity 4 suggests five shopping sites (ASOS, H&M, ZARA, UNIQLO, SHEIN). Their
+    hosts are not on the link allow-list, so the links were removed; the site names
+    are in the teacher note.
+  - >-
+    Activity 2: the "devine le prix" Google Slides link was kept without its
+    "?slide=…#slide=…" part, so it opens on the first slide. The reference prices are
+    a teacher note (teacher only).
+  - >-
+    Activity 1 had no "Étape 1" heading; the steps were numbered. The adjective bank
+    is a word bank under the activity.
+  - >-
+    Vocabulary: "dépenser" is glossed "להוציא (כסף)" (was "להוציא"); "avoir" as "יש
+    ל… / להחזיק" (was "יש / להיות בעל"). The numbers stay grouped by row, as in the
+    notebook and Quizlet. Please confirm.
+  - >-
+    No activity times are given in the notebook for this cycle, so none are
+    recorded.
+  - >-
+    The "Réponse de l’élève 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers. The
+    "Date / Participants" header lines were left out.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: mode-et-shopping-classe
+    title: 'Classe : Mode et shopping'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Mode et shopping
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Description et réponses aux questions
+            description: Décrire des vêtements avec *être*, *avoir* et des adjectifs (activités 1 et 3)
+          - name: Nombres
+            description: Les nombres jusqu’à 100 et les prix (activités 2 et 4)
+      - id: quizlet
+        type: externalLink
+        label: Mode et shopping sur Quizlet
+        url: https://quizlet.com/il/1073016656/basic-french-2025-mode-et-shopping-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. J’aime acheter ___ (objet).
+        example: Je m’appelle Lévanah. J’aime acheter des vêtements pour mes enfants.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Aimes-tu faire du shopping ? Si oui, qu’est-ce que tu aimes acheter ? Si non, pourquoi ?
+            frame: Oui, j’aime acheter ___. / Non, parce que ___.
+          - question: Préfères-tu acheter en ligne ou aller dans un magasin ? Pourquoi ?
+            frame: Je préfère ___ parce que ___.
+          - question: Quand aimes-tu faire du shopping ?
+            frame: J’aime faire du shopping le week-end / pendant la semaine, le ___ (jour).
+          - question: Quel est ton magasin préféré ? Pourquoi ?
+            frame: Mon magasin préféré est ___ parce que ___.
+          - question: À quelle fréquence achètes-tu des vêtements ?
+            frame: J’achète des vêtements ___ fois par semaine / mois / an.
+          - question: Quand tu vas au centre commercial, dans combien de magasins vas-tu ? Lesquels ?
+            frame: Je vais dans ___ magasins. Je vais à / chez ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : que dois-je mettre ?'
+        skills: [Description et réponses aux questions]
+        steps:
+          - Regarde les images et révise le vocabulaire avec le professeur.
+          - 'Le professeur demande : *Que dois-je mettre pour… ?* (un anniversaire, le travail, la plage, une sortie avec des amis)'
+          - Réponds avec un vêtement et un adjectif de la banque d’adjectifs. Explique pourquoi avec *parce que*.
+        wordBank:
+          [
+            une robe,
+            un short,
+            une jupe,
+            un sac,
+            un manteau,
+            un tee-shirt,
+            un pantalon,
+            des chaussures,
+          ]
+        example: |-
+          *Pour un anniversaire, tu mets une robe parce qu’elle est élégante.*
+          *Pour la plage, tu mets un short et un tee-shirt parce qu’ils sont confortables.*
+      - id: adjectives-title
+        type: heading
+        level: 4
+        text: Banque d’adjectifs
+      - id: adjectives
+        type: wordBank
+        words:
+          - confortable
+          - élégant / élégante
+          - décontracté / décontractée
+          - formel / formelle
+          - chaud / chaude
+          - léger / légère
+          - moderne
+          - simple
+          - coloré / colorée
+          - stylé / stylée
+          - ample
+          - serré / serrée
+          - doux / douce
+          - épais / épaisse
+          - fin / fine
+      - id: act1-answers
+        type: discussionQuestions
+        title: Que dois-je mettre pour… ?
+        items:
+          - question: un anniversaire
+            frame: Pour un anniversaire, tu mets ___ parce que ___.
+          - question: le travail
+            frame: Pour le travail, tu mets ___ parce que ___.
+          - question: la plage
+            frame: Pour la plage, tu mets ___ parce que ___.
+          - question: une sortie avec des amis
+            frame: Pour une sortie avec des amis, tu mets ___ parce que ___.
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : devine le prix'
+        skills: [Nombres]
+        steps:
+          - Regarde l’image d’un article.
+          - Devine le prix et dis-le en français.
+          - Le professeur révèle le prix réel.
+          - L’étudiant le plus proche du prix réel gagne la manche.
+        example: '*Je pense que la robe coûte quarante-cinq euros.*'
+        resource:
+          label: Devine le prix (présentation)
+          url: https://docs.google.com/presentation/d/1uFqbDX8-ftLQBBJCfbx6Sna6zhKy-DBUeYQup7FSlq4/edit
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : crée ta propre boutique'
+        skills: [Description et réponses aux questions]
+        steps:
+          - Complète la fiche de ta boutique ci-dessous.
+          - Présente ta boutique au groupe et réponds aux questions des autres étudiants.
+        example: |-
+          **Nom :** Tendances de Mode
+          **Que vends-tu ?** Des vêtements, des chaussures et des accessoires.
+          **Lieu :** Au centre-ville, près d’un centre commercial.
+          **Contenu :** Une grande variété de vêtements modernes pour hommes et femmes, des cabines d’essayage, un rayon promotions, un espace détente confortable.
+          **Équipe :** Deux vendeurs, un caissier, un conseiller mode.
+      - id: act3-form
+        type: discussionQuestions
+        title: Ma boutique
+        items:
+          - question: Nom de la boutique ?
+          - question: Que vends-tu ?
+          - question: Où est-elle située ?
+          - question: Que trouve-t-on dans ta boutique ?
+          - question: Qui travaille avec toi ?
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : faire du shopping et respecter un budget'
+        skills: [Nombres]
+        steps:
+          - 'Objectif : acheter sans dépasser **100 €**.'
+          - Va sur le site de shopping en ligne choisi par le professeur.
+          - Choisis des vêtements et des accessoires pour arriver au plus près de 100 €, sans dépasser ce montant.
+          - Choisis **plusieurs catégories d’articles** (par exemple un vêtement, une paire de chaussures, un sac).
+          - 'Présente ton panier à la classe : l’article, son prix et le total.'
+          - Celui qui a le plus d’articles différents sans dépasser 100 € gagne !
+        example: '*J’achète un tee-shirt à vingt euros, un short à trente euros et un sac à quarante euros. Le total est de quatre-vingt-dix euros.*'
+      - id: act4-basket
+        type: discussionQuestions
+        title: Mon panier
+        items:
+          - question: 'Article 1 : ___ – prix : ___ euros'
+          - question: 'Article 2 : ___ – prix : ___ euros'
+          - question: 'Article 3 : ___ – prix : ___ euros'
+          - question: 'Le total est de ___ euros.'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Compétences du cycle : **description et réponses aux questions** (activité 1 ou
+          3) et **nombres** (activités 2 et 4).
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Montrez des images des vêtements et révisez le vocabulaire avant les questions.
+          Rappelez l’accord de l’adjectif : *une robe élégante*, *des chaussures
+          confortables*.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Prix de référence (pour le professeur uniquement) : robe 50 €, jupe 90 €,
+          pantalon 40 €, short 30 €, manteau 60 €, tee-shirt 20 €, chaussures 70 €, sac
+          80 €.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Choisissez un site de shopping en ligne et partagez-le à l’écran. Sites suggérés
+          dans le cahier : ASOS, H&M, ZARA, UNIQLO, SHEIN (les liens ne sont pas sur la
+          plateforme).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: mode-et-shopping-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris
+      - id: rules-description
+        type: ruleSummary
+        skill: Décrire des vêtements et un style
+        rules:
+          - text: 'Utilise le verbe **être** pour décrire des personnes et des choses.'
+            examples: [Je suis élégant., Elle est moderne., Ces chaussures sont confortables.]
+          - text: Ajoute des **adjectifs** pour donner plus de détails.
+            examples: [La robe est rouge., Sa veste est grande et chaude.]
+          - text: 'L’adjectif s’accorde avec le nom : **+ e** au féminin, **+ s** au pluriel.'
+            examples: [un sac élégant · une robe élégante, des chaussures confortables]
+          - text: 'En général, l’adjectif se place **après** le nom. Quelques adjectifs courts et fréquents se placent **avant** : beau / belle, joli, grand, petit, bon, nouveau.'
+            examples: [une robe rouge, un manteau confortable, une belle robe, un petit sac]
+          - text: Utilise le verbe **avoir** pour parler de ce qu’on possède.
+            examples: [J’ai un sac rouge., Elle a cinq paires de chaussures.]
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Les nombres
+        rules:
+          - text: '**De 11 à 16**, les nombres sont à apprendre par cœur : onze, douze, treize, quatorze, quinze, seize. Puis **dix + nombre** : dix-sept, dix-huit, dix-neuf.'
+          - text: Apprends bien les **dizaines** (voir le tableau).
+            examples: [J’ai dépensé **soixante euros** pour des chaussures.]
+          - text: '**De 21 à 99**, on relie les dizaines et les unités avec un tiret. Mais pour 21, 31, 41, 51, 61 et 71, on dit **et** : vingt **et** un, soixante **et** onze.'
+            examples:
+              [
+                J’ai acheté **vingt-sept** chemises.,
+                trente-cinq · quarante-huit · quatre-vingt-dix-neuf,
+              ]
+      - id: tens-table
+        type: table
+        caption: Les dizaines
+        header: [Nombre, En lettres]
+        rows:
+          - ['10', dix]
+          - ['20', vingt]
+          - ['30', trente]
+          - ['40', quarante]
+          - ['50', cinquante]
+          - ['60', soixante]
+          - ['70', soixante-dix]
+          - ['80', quatre-vingts]
+          - ['90', quatre-vingt-dix]
+          - ['100', cent]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Revoyez les règles avec le groupe et demandez un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: mode-et-shopping-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: 'Objectif : t’entraîner à parler de shopping avec le présent et les nombres. Ouvre le chat avec Mori, copie un message et envoie-le. Réponds à toutes les questions de Mori.'
+      - id: mori-conversation
+        type: aiTutorPrompt
+        title: Conversation générale
+        message: >-
+          Bonjour Mori ! Je veux aller faire du shopping au centre commercial. Peux-tu me
+          poser des questions sur mes achats en utilisant les verbes au présent et les
+          nombres ? Corrige-moi si je fais une erreur.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Écris : **Pose-moi plus de questions, s’il te plaît !**
+          Tu ne comprends pas une explication ? Écris : **Peux-tu m’expliquer en hébreu mais avec la phrase en français ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-liste
+        type: aiTutorPrompt
+        title: Liste de courses
+        intro: 'Dans tes réponses, utilise 4 verbes d’action (acheter, aller, manger, porter…), 5 articles différents et 5 nombres (ou plus). Par exemple : trois pommes, deux tee-shirts, une bouteille.'
+        message: >-
+          Bonjour Mori ! Je veux parler de ma liste de courses. Peux-tu me poser des
+          questions en utilisant des nombres et des verbes au présent ?
+      - id: mori-prix
+        type: aiTutorPrompt
+        title: Combien ça coûte ?
+        message: >-
+          Bonjour Mori ! Peux-tu me poser des questions sur le prix des articles, en
+          utilisant des nombres et des verbes au présent ?
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: mode-et-shopping-pratique
+    book: workbook
+    title: 'Pratique : Mode et shopping'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux essayer encore.
+      - id: ex-description
+        type: activity
+        activity: mode-et-shopping-description
+      - id: ex-nombres
+        type: activity
+        activity: mode-et-shopping-nombres
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: mode-et-shopping-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la mode et du shopping
+        glossLang: he
+        link: https://quizlet.com/il/1073016656/basic-french-2025-mode-et-shopping-flash-cards/
+        items: &mode-et-shopping-words
+          - { term: robe, gloss: שמלה }
+          - { term: short, gloss: מכנסיים קצרים }
+          - { term: jupe, gloss: חצאית }
+          - { term: sac, gloss: תיק }
+          - { term: manteau, gloss: מעיל }
+          - { term: tee-shirt, gloss: חולצה קצרה }
+          - { term: pantalon, gloss: מכנסיים }
+          - { term: chaussures, gloss: נעליים }
+          - { term: confortable, gloss: נוח }
+          - { term: élégant, gloss: אלגנטי }
+          - { term: décontracté, gloss: יומיומי }
+          - { term: formel, gloss: רשמי }
+          - { term: coloré, gloss: צבעוני }
+          - { term: acheter, gloss: לקנות }
+          - { term: aller, gloss: ללכת }
+          - { term: dépenser, gloss: להוציא (כסף) }
+          - { term: porter, gloss: ללבוש }
+          - { term: avoir, gloss: יש ל… / להחזיק }
+          - { term: aimer, gloss: לחבב / לאהוב }
+          - { term: faire des achats, gloss: ללכת לקניות }
+          - { term: achats en ligne, gloss: קניות באינטרנט }
+          - { term: magasin, gloss: חנות }
+          - { term: centre commercial, gloss: קניון }
+          - { term: réduction, gloss: הנחה }
+          - { term: cabine d’essayage, gloss: חדר הלבשה }
+          - { term: 'un, deux, trois, quatre, cinq', gloss: 'אחת, שתיים, שלוש, ארבע, חמש' }
+          - { term: 'six, sept, huit, neuf, dix', gloss: 'שש, שבע, שמונה, תשע, עשר' }
+          - {
+              term: 'onze, douze, treize, quatorze, quinze',
+              gloss: 'אחת עשרה, שתים עשרה, שלוש עשרה, ארבע עשרה, חמש עשרה',
+            }
+          - {
+              term: 'seize, dix-sept, dix-huit, dix-neuf',
+              gloss: 'שש עשרה, שבע עשרה, שמונה עשרה, תשע עשרה',
+            }
+          - { term: 'vingt, trente, quarante, cinquante', gloss: 'עשרים, שלושים, ארבעים, חמישים' }
+          - {
+              term: 'soixante, soixante-dix, quatre-vingts, quatre-vingt-dix',
+              gloss: 'שישים, שבעים, שמונים, תשעים',
+            }
+          - { term: cent, gloss: מאה }
+
+vocabulary:
+  - slug: mode-et-shopping
+    title: Mode et shopping
+    items: *mode-et-shopping-words
+
+activities:
+  - slug: mode-et-shopping-description
+    title: Décrire des vêtements
+    minutes: 8
+    items:
+      - id: robe-elegante
+        type: multipleChoice
+        prompt: La robe est ___.
+        options:
+          - { text: élégante, correct: true }
+          - { text: élégant, feedback: '*Robe* est féminin : on ajoute un *e* → élégante.' }
+          - { text: élégants, feedback: '*Robe* est féminin et singulier : élégante.' }
+      - id: sont
+        type: multipleChoice
+        prompt: Ces chaussures ___ confortables.
+        options:
+          - { text: sont, correct: true }
+          - { text: est, feedback: '*Ces chaussures* est pluriel (= elles) : elles **sont**.' }
+          - {
+              text: ont,
+              feedback: 'Pour décrire, on utilise **être** : elles sont confortables. *Avoir* sert à parler de ce qu’on possède.',
+            }
+      - id: place-couleur
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: J’ai une robe rouge., correct: true }
+          - {
+              text: J’ai une rouge robe.,
+              feedback: 'En général, l’adjectif se place après le nom : une robe rouge.',
+            }
+          - {
+              text: J’ai rouge une robe.,
+              feedback: 'L’adjectif va avec le nom, après lui : une robe rouge.',
+            }
+      - id: belle-robe
+        type: trueFalse
+        prompt: 'On dit « une belle robe » : *belle* se place avant le nom.'
+        answer: true
+        feedback:
+          correct: Oui ! *Beau / belle* est un des adjectifs courts qui se placent avant le nom.
+          incorrect: 'C’est correct : *beau / belle*, *petit*, *grand*… se placent avant le nom.'
+      - id: etre-avoir
+        type: fillBlank
+        prompt: Complète avec *être* ou *avoir* au présent.
+        text: Elle ___ moderne. Elle ___ cinq paires de chaussures.
+        blanks: [[est], [a]]
+      - id: accord
+        type: fillBlank
+        prompt: Accorde l’adjectif entre parenthèses.
+        text: La jupe est ___ (coloré). Les chaussures sont ___ (confortable).
+        blanks: [[colorée], [confortables]]
+      - id: masculin-feminin
+        type: matching
+        prompt: Associe le masculin et le féminin.
+        pairs:
+          - [élégant, élégante]
+          - [léger, légère]
+          - [doux, douce]
+          - [formel, formelle]
+          - [épais, épaisse]
+      - id: ordre-plage
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Pour la plage, tu mets un short.
+
+  - slug: mode-et-shopping-nombres
+    title: Les nombres et les prix
+    minutes: 8
+    items:
+      - id: dizaines
+        type: matching
+        prompt: Associe chaque nombre à son mot.
+        pairs:
+          - ['30', trente]
+          - ['40', quarante]
+          - ['50', cinquante]
+          - ['60', soixante]
+          - ['70', soixante-dix]
+      - id: quatre-vingts
+        type: multipleChoice
+        prompt: Comment dit-on 80 ?
+        options:
+          - { text: quatre-vingts, correct: true }
+          - { text: quatre-vingt-dix, feedback: '*Quatre-vingt-dix*, c’est 90 (80 + 10).' }
+          - { text: soixante-dix, feedback: '*Soixante-dix*, c’est 70 (60 + 10).' }
+      - id: vingt-sept
+        type: multipleChoice
+        prompt: Comment écrit-on 27 ?
+        options:
+          - { text: vingt-sept, correct: true }
+          - { text: sept-vingt, feedback: 'D’abord la dizaine, puis l’unité : vingt-sept.' }
+          - {
+              text: vingt et sept,
+              feedback: 'On dit *et* seulement avec *un* (vingt et un). Pour 27 : vingt-sept, avec un tiret.',
+            }
+      - id: vingt-et-un
+        type: trueFalse
+        prompt: Pour 21, on dit « vingt-un ».
+        answer: false
+        feedback:
+          correct: 'Exact ! On dit **vingt et un**.'
+          incorrect: 'Non : pour 21, 31, 41, 51, 61 et 71, on dit *et* : **vingt et un**.'
+      - id: prix
+        type: fillBlank
+        prompt: Écris le prix en lettres.
+        text: 'Le tee-shirt coûte 20 € : ___ euros. Le pantalon coûte 40 € : ___ euros.'
+        blanks: [[vingt], [quarante]]
+      - id: onze-seize
+        type: fillBlank
+        prompt: Écris le nombre en lettres.
+        text: 'Le sac coûte 15 € : ___ euros. J’ai 16 tee-shirts : j’ai ___ tee-shirts.'
+        blanks: [[quinze], [seize]]
+      - id: total
+        type: multipleChoice
+        prompt: 'Une robe à 50 € et un tee-shirt à 20 € : le total est de…'
+        options:
+          - { text: soixante-dix euros, correct: true }
+          - { text: soixante euros, feedback: '50 + 20 = 70, et 70 se dit *soixante-dix*.' }
+          - {
+              text: quatre-vingts euros,
+              feedback: '50 + 20 = 70 (soixante-dix). *Quatre-vingts*, c’est 80.',
+            }
+      - id: ordre-depense
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: J’ai dépensé soixante euros pour des chaussures.

@@ -1,0 +1,572 @@
+# Cycle "Ocasiones especiales: pasado", converted from the Spanish nivel 2 digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-2
+slug: ocasiones-especiales-pasado
+title: 'Ocasiones especiales: pasado'
+goal: Contar experiencias de celebraciones en pretérito indefinido y hacer preguntas sobre el pasado.
+position: 6
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Contar en pasado" and "Preguntas sobre el pasado")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's summary rules, its examples and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Skills: the notebook's "Habilidades a practicar" are general (speaking,
+    listening). The two cycle skills are taken from its goals and summary: "Contar
+    experiencias pasadas" and "Preguntar sobre el pasado".
+  - >-
+    Grammar rule corrected: the summary gives only the -ar endings ("-é, -aste, -ó,
+    -amos, -asteis, -aron") as "verbo regular". The -er / -ir endings (-í, -iste,
+    -ió, -imos, -isteis, -ieron) were added, with a table (celebrar, comer,
+    recibir) and a table of the irregular verbs used in the cycle (ir / ser, tener,
+    hacer, estar, dar, venir). "Pasado simple" (an English term) is written
+    "pretérito indefinido".
+  - >-
+    Corrections: "¿Dónde fuiste de vacaciones?" → "¿Adónde fuiste de vacaciones?";
+    warm-up example "Di una camiseta a mi mejor amigo." → "Le di una camiseta a mi
+    mejor amigo."; Activity 1 "¿Qué pasó especial o divertido…?" → "¿Qué pasó de
+    especial o divertido…?"; the stray "ð" before "Mori le debe preguntar" and the
+    broken asterisks in Activities 3–5 were removed; the Quizlet label
+    "ocaciones" → "ocasiones".
+  - >-
+    Activity 2's second example uses the pluscuamperfecto ("nunca había preparado
+    antes"), which is above this level; it is kept as in the notebook. Please
+    confirm or simplify.
+  - >-
+    Activity 5 needs character cards (singer, footballer, actor, chef, politician,
+    influencer); the notebook has none. The teacher note asks the teacher to
+    prepare them. The Shakira example is kept as in the notebook.
+  - >-
+    Links: "?new" removed from the Quizlet link. The notebook gives no activity
+    times, so no minutes are recorded.
+  - >-
+    The Mori homework has five parts; each is an aiTutorPrompt. The lines that say
+    what Mori should ask or do are in each prompt's intro.
+  - >-
+    Vocabulary: "Estar (estuve)" glossed "הייתי / נמצאתי" (the stray dagesh in
+    "נמצאתּי" was removed). Please confirm.
+  - >-
+    The "Respuesta de alumno 1/2/3" lines are replaced by the optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: ocasiones-especiales-pasado-clase
+    title: 'Clase: Ocasiones especiales (pasado)'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: 'Ocasiones especiales: pasado'
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Contar experiencias pasadas
+            description: '*El año pasado celebré mi cumpleaños en casa. Fui a la boda de mi prima.*'
+          - name: Preguntar sobre el pasado
+            description: '*¿Qué hiciste el fin de semana pasado? ¿Quién vino a tu fiesta?*'
+      - id: quizlet
+        type: externalLink
+        label: 'Ocasiones especiales: pasado en Quizlet'
+        url: https://quizlet.com/br/1071344404/ocasiones-especiales-pasado-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Yo soy ___. El año pasado celebré ___.
+        example: Yo soy Dana. El año pasado celebré mi graduación.
+      - id: intro-options
+        type: discussionQuestions
+        title: Otras opciones para tu segunda frase
+        items:
+          - question: La última vez que fui a una fiesta, hice ___.
+          - question: Recuerdo una ocasión especial porque ___.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Qué regalo recibiste en tu último cumpleaños?
+            frame: Recibí ___ de ___.
+          - question: ¿Qué regalo diste a un amigo o familiar el año pasado?
+            frame: Le di ___ a ___.
+          - question: ¿Dónde celebraste tu mejor cumpleaños?
+            frame: Celebré mi cumpleaños en ___.
+          - question: ¿Qué hiciste en tu primer día de escuela?
+            frame: Conocí a ___ y ___.
+          - question: ¿Fuiste alguna vez a una fiesta aburrida o mala?
+            frame: Sí, fui a una fiesta ___ y ___. / No, nunca fui a una fiesta aburrida.
+          - question: ¿Qué celebración familiar recuerdas con alegría?
+            frame: Recuerdo ___. Fue ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Entrevista sobre tradiciones y fiestas'
+        skills: [Contar experiencias pasadas, Preguntar sobre el pasado]
+        steps:
+          - Trabajen en parejas.
+          - Habla con tu compañero sobre **la mejor fiesta a la que fuiste**.
+          - Haz las preguntas de abajo y responde en pretérito indefinido.
+      - id: act1-questions
+        type: discussionQuestions
+        title: La mejor fiesta
+        items:
+          - question: ¿Dónde fue la fiesta?
+            frame: La fiesta fue en ___.
+          - question: ¿Qué fiesta fue (cumpleaños, boda, graduación…)?
+            frame: Fue ___.
+          - question: ¿Quién celebró la fiesta?
+            frame: ___ celebró la fiesta.
+          - question: ¿Cuántas personas asistieron?
+            frame: Asistieron ___ personas.
+          - question: ¿Qué regalo diste o recibiste?
+            frame: Di / Recibí ___.
+          - question: ¿Qué comiste y bebiste en la fiesta?
+            frame: Comí ___ y bebí ___.
+          - question: ¿Qué música escuchaste o qué baile hiciste?
+            frame: Escuché ___. / Bailé ___.
+          - question: ¿Qué pasó de especial o divertido en la fiesta?
+            frame: ___.
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Dos historias, ¿verdad o mentira?'
+        skills: [Contar experiencias pasadas]
+        steps:
+          - 'Piensa en dos historias sobre una experiencia pasada (una fiesta, una boda, un cumpleaños): una verdadera y otra inventada.'
+          - Cuenta tus dos historias al grupo. No digas cuál es la verdadera.
+          - El grupo adivina cuál es la verdadera y cuál es la mentira.
+        example: |-
+          *Historia 1: El año pasado viajé a Brasil y tuve la oportunidad de aprender a hacer capoeira con un maestro muy famoso. Fue una experiencia increíble.*
+          *Historia 2: Hace dos años participé en una competencia de cocina y gané el primer premio. Cociné un platillo que nunca había preparado antes.*
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Línea del tiempo de celebraciones'
+        skills: [Contar experiencias pasadas]
+        steps:
+          - 'Dibuja o anota una línea del tiempo con 3 o 4 celebraciones importantes de tu vida (un cumpleaños, una boda familiar, un viaje, una graduación).'
+          - Escribe una frase en pretérito indefinido para cada celebración.
+          - Comparte tu línea del tiempo con un compañero o en grupos pequeños.
+        example: |-
+          *En 2018 celebré mi graduación.*
+          *En 2020 fui a la boda de mi prima.*
+      - id: act3-timeline
+        type: discussionQuestions
+        title: Mi línea del tiempo
+        items:
+          - question: 'Celebración 1:'
+            frame: En ___ celebré / fui a ___.
+          - question: 'Celebración 2:'
+            frame: En ___ celebré / fui a ___.
+          - question: 'Celebración 3:'
+            frame: En ___ celebré / fui a ___.
+          - question: 'Celebración 4 (opcional):'
+            frame: En ___ celebré / fui a ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Diario de una celebración'
+        skills: [Contar experiencias pasadas, Preguntar sobre el pasado]
+        steps:
+          - Escribe un mini diario (4 o 5 frases) sobre una ocasión especial.
+          - 'Usa expresiones de tiempo: *ayer, el año pasado, hace dos años, en mi cumpleaños pasado…*'
+          - 'En parejas, lee tu diario. Tu compañero te hace una pregunta más: *¿Quién estuvo contigo? / ¿Qué comiste?*'
+        example: '*El año pasado celebré mi cumpleaños en casa. Vinieron mis amigos. Cantamos, bailamos y comimos pizza. Fue muy divertido.*'
+      - id: act4-diary
+        type: discussionQuestions
+        title: Mi diario
+        items:
+          - question: Escribe tu mini diario (4 o 5 frases).
+            frame: El año pasado / Hace dos años ___. Vinieron ___. Comimos ___. Fue ___.
+      - id: act5
+        type: classActivity
+        title: 'Actividad 5: Entrevista famosa'
+        skills: [Contar experiencias pasadas, Preguntar sobre el pasado]
+        steps:
+          - Tu profesor te da una tarjeta con un personaje famoso o inventado (cantante, futbolista, actor, chef, político, influencer).
+          - Tú eres ese personaje.
+          - 'En parejas: uno es periodista y hace las preguntas de abajo; el otro responde como la persona famosa y habla de una celebración especial de su pasado.'
+          - Cambien de rol.
+        example: '*Soy Shakira. El año pasado canté en la fiesta de cumpleaños de mi hijo. Bailamos y comimos pastel.*'
+      - id: act5-questions
+        type: discussionQuestions
+        title: Preguntas del periodista
+        items:
+          - question: ¿Dónde fue tu mejor fiesta?
+          - question: ¿Con quién celebraste?
+          - question: ¿Qué comiste o bebiste?
+          - question: ¿Qué regalo recibiste?
+          - question: ¿Qué momento especial recuerdas?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Contar experiencias pasadas** (Actividades 2,
+          3 y 4) y **Preguntar sobre el pasado** (Actividades 1, 4 y 5). Todo el ciclo
+          practica el pretérito indefinido.
+      - id: n-intro
+        anchor: intro
+        text: Cada estudiante dice 2 frases. Da tu propio ejemplo primero.
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Ejemplos del cuaderno: *Recibí un libro de mi hermana. / Le di una camiseta a
+          mi mejor amigo. / Celebré mi cumpleaños en un restaurante. / Conocí a mis
+          compañeros y hablé con el profesor. / Sí, fui a una fiesta sin música y me
+          aburrí. / Recuerdo la boda de mi primo. Fue muy divertida.*
+      - id: n-act1
+        anchor: act1
+        text: Usa Breakout Rooms para las parejas.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          La segunda historia de ejemplo usa *había preparado* (pluscuamperfecto); los
+          estudiantes no necesitan usar esta forma.
+      - id: n-act5
+        anchor: act5
+        text: Prepara las tarjetas con personajes famosos o inventados; el cuaderno no las incluye.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: ocasiones-especiales-pasado-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: summary-intro
+        type: text
+        text: >-
+          Hoy hablamos de **experiencias pasadas** (fiestas, viajes, cumpleaños, escuela,
+          familia) con el **pretérito indefinido**: acciones terminadas en un momento
+          concreto del pasado, una secuencia de acciones y experiencias personales.
+      - id: rules-contar
+        type: ruleSummary
+        skill: Contar experiencias pasadas
+        rules:
+          - text: 'Verbos regulares en **-ar**: -é, -aste, -ó, -amos, -asteis, -aron.'
+            examples:
+              [Yo celebré mi cumpleaños en casa., Bailamos salsa y escuchamos música toda la noche.]
+          - text: 'Verbos regulares en **-er** e **-ir** (las mismas terminaciones): -í, -iste, -ió, -imos, -isteis, -ieron.'
+            examples: [Comimos pizza y bebimos refrescos., Recibí un libro de mi hermana.]
+          - text: 'Verbos irregulares: cambian la raíz o toda la forma (*tener → tuve, ir → fui, hacer → hice*).'
+            examples: [El año pasado fui a una boda., Mis amigos me dieron un regalo muy bonito.]
+          - text: 'Negativas: **no** + verbo en pasado.'
+            examples: [No comí pastel., No fui a la fiesta.]
+          - text: 'Usos: una acción terminada en un momento concreto, una secuencia de acciones, una experiencia personal.'
+            examples:
+              - Ayer cené con mi familia.
+              - Me levanté, me vestí y fui a la fiesta.
+              - Conocí a mucha gente nueva.
+              - Fue una fiesta especial porque vi a toda mi familia.
+      - id: regular-table
+        type: table
+        caption: 'Pretérito indefinido: verbos regulares'
+        header: [Persona, celebrar, comer, recibir]
+        rows:
+          - [Yo, celebré, comí, recibí]
+          - [Tú, celebraste, comiste, recibiste]
+          - [Él / Ella / Usted, celebró, comió, recibió]
+          - [Nosotros / Nosotras, celebramos, comimos, recibimos]
+          - [Vosotros / Vosotras, celebrasteis, comisteis, recibisteis]
+          - [Ellos / Ellas / Ustedes, celebraron, comieron, recibieron]
+      - id: irregular-table
+        type: table
+        caption: 'Pretérito indefinido: verbos irregulares del ciclo'
+        header: [Infinitivo, Yo, Tú, Él / Ella, Nosotros, Ellos / Ellas]
+        rows:
+          - [ir / ser, fui, fuiste, fue, fuimos, fueron]
+          - [tener, tuve, tuviste, tuvo, tuvimos, tuvieron]
+          - [hacer, hice, hiciste, hizo, hicimos, hicieron]
+          - [estar, estuve, estuviste, estuvo, estuvimos, estuvieron]
+          - [dar, di, diste, dio, dimos, dieron]
+          - [venir, vine, viniste, vino, vinimos, vinieron]
+      - id: rules-preguntas
+        type: ruleSummary
+        skill: Preguntar sobre el pasado
+        rules:
+          - text: 'Preguntas: palabra interrogativa + verbo en pasado.'
+            examples:
+              - ¿Qué hiciste el fin de semana pasado?
+              - ¿Adónde fuiste de vacaciones?
+              - ¿Quién vino a tu fiesta?
+          - text: 'Usa expresiones de tiempo para ubicar la acción.'
+            examples:
+              - ayer · anoche · la semana pasada · el mes pasado · el año pasado
+              - hace dos días · hace tres años · en 2020
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos tablas con el grupo y pide a cada estudiante una frase afirmativa, una negativa y una pregunta.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: ocasiones-especiales-pasado-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia cada mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-preguntas
+        type: aiTutorPrompt
+        title: 'Parte 1: Preguntas personales'
+        intro: >-
+          Mori te preguntará, por ejemplo: *¿Qué regalo recibiste en tu último
+          cumpleaños? ¿Qué regalo diste a un amigo o familiar el año pasado? ¿Dónde
+          celebraste tu mejor cumpleaños? ¿Qué hiciste en tu primer día de escuela?
+          ¿Fuiste alguna vez a una fiesta aburrida o mala? ¿Qué pasó?*
+        message: Mori, hazme preguntas en pasado sobre mis celebraciones y experiencias especiales. Corrige mis errores, por favor.
+      - id: mori-diario
+        type: aiTutorPrompt
+        title: 'Parte 2: Diario corto'
+        intro: >-
+          Mori te pedirá usar expresiones como *ayer, el año pasado, hace dos años, en mi
+          cumpleaños pasado…*
+        message: Mori, ayúdame a escribir un mini diario de 5 frases en pasado sobre una ocasión especial.
+      - id: mori-linea
+        type: aiTutorPrompt
+        title: 'Parte 3: Línea del tiempo'
+        intro: 'Mori te recordará dar fechas o años: *En 2018 celebré… / En 2020 fui a…*'
+        message: Mori, pídeme escribir 3 frases en pasado para una línea del tiempo de mis celebraciones más importantes.
+      - id: mori-historias
+        type: aiTutorPrompt
+        title: 'Parte 4: Dos historias, ¿verdad o mentira?'
+        intro: >-
+          Mori te guiará: *Cuéntame primero una historia real en pasado. Ahora invéntate
+          otra, pero que parezca verdadera.*
+        message: 'Mori, ayúdame a inventar dos historias en pasado: una verdadera y una falsa. Ayúdame a escribirlas con detalles.'
+      - id: mori-gramatica
+        type: aiTutorPrompt
+        title: 'Parte 5: Gramática práctica'
+        intro: >-
+          Mori te dará frases como: *Celebro mi cumpleaños en casa. Mis amigos me dan un
+          regalo. Como pizza y bebo refrescos. Veo a toda mi familia. Bailamos y
+          escuchamos música.*
+        message: Mori, dame frases en presente y pídeme transformarlas al pretérito indefinido.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes algo? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: ocasiones-especiales-pasado-practica
+    book: workbook
+    title: 'Práctica: Ocasiones especiales (pasado)'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-narrar
+        type: activity
+        activity: ocasiones-especiales-pasado-narrar
+      - id: ex-preguntas
+        type: activity
+        activity: ocasiones-especiales-pasado-preguntas
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: ocasiones-especiales-pasado-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: 'Ocasiones especiales: pasado'
+        glossLang: he
+        link: https://quizlet.com/br/1071344404/ocasiones-especiales-pasado-flash-cards/
+        items: &ocasiones-especiales-pasado-words
+          - { term: Fiesta, gloss: מסיבה }
+          - { term: Cumpleaños, gloss: יום הולדת }
+          - { term: Boda, gloss: חתונה }
+          - { term: Graduación, gloss: סיום לימודים }
+          - { term: Celebración, gloss: חגיגה }
+          - { term: Ocasión especial, gloss: אירוע מיוחד }
+          - { term: Regalo, gloss: מתנה }
+          - { term: Invitado, gloss: אורח }
+          - { term: Familia, gloss: משפחה }
+          - { term: Amigos, gloss: חברים }
+          - { term: Recuerdo, gloss: זיכרון }
+          - { term: Música, gloss: מוזיקה }
+          - { term: Baile, gloss: ריקוד }
+          - { term: Comida, gloss: אוכל }
+          - { term: Bebida, gloss: שתייה }
+          - { term: Pastel, gloss: עוגה }
+          - { term: Restaurante, gloss: מסעדה }
+          - { term: Escuela, gloss: בית ספר }
+          - { term: Viaje, gloss: טיול }
+          - { term: Tradición, gloss: מסורת }
+          - { term: Historia, gloss: סיפור }
+          - { term: Diario, gloss: יומן }
+          - { term: Línea del tiempo, gloss: ציר זמן }
+          - { term: Experiencia, gloss: חוויה }
+          - { term: Ayer, gloss: אתמול }
+          - { term: Anoche, gloss: אתמול בלילה }
+          - { term: La semana pasada, gloss: שבוע שעבר }
+          - { term: El año pasado, gloss: שנה שעברה }
+          - { term: Hace dos años, gloss: לפני שנתיים }
+          - { term: Ir (fui), gloss: הלכתי }
+          - { term: Ser (fui), gloss: הייתי }
+          - { term: Estar (estuve), gloss: הייתי / נמצאתי }
+          - { term: Hacer (hice), gloss: עשיתי }
+          - { term: Tener (tuve), gloss: היה לי }
+          - { term: Recibir (recibí), gloss: קיבלתי }
+          - { term: Dar (di), gloss: נתתי }
+          - { term: Comer (comí), gloss: אכלתי }
+          - { term: Beber (bebí), gloss: שתיתי }
+
+vocabulary:
+  - slug: ocasiones-especiales-pasado
+    title: 'Ocasiones especiales: pasado'
+    items: *ocasiones-especiales-pasado-words
+
+activities:
+  - slug: ocasiones-especiales-pasado-narrar
+    title: 'Contar en pasado: celebré, fui, comimos'
+    minutes: 8
+    items:
+      - id: celebre
+        type: multipleChoice
+        prompt: 'El año pasado (yo) ___ mi cumpleaños en casa.'
+        options:
+          - { text: celebré, correct: true }
+          - {
+              text: celebró,
+              feedback: '*Celebró* es para *él / ella*. Para *yo* usamos *-é*: *celebré*.',
+            }
+          - {
+              text: celebro,
+              feedback: '*Celebro* es presente. *El año pasado* pide el pasado: *celebré*.',
+            }
+      - id: comimos
+        type: fillBlank
+        prompt: Escribe el verbo en pretérito indefinido.
+        text: Ayer ___ (comer, nosotros) pizza.
+        blanks: [[comimos, nosotros comimos]]
+      - id: une-irregulares
+        type: matching
+        prompt: Une cada verbo con su forma de *yo* en pasado.
+        pairs:
+          - [ir, fui]
+          - [tener, tuve]
+          - [hacer, hice]
+          - [dar, di]
+          - [recibir, recibí]
+      - id: negativa
+        type: fillBlank
+        prompt: 'Escribe la frase en negativo, con el verbo *ir* en pasado (yo).'
+        text: Estuve enfermo. ___ a la fiesta.
+        blanks: [[No fui, Yo no fui]]
+      - id: er-ir
+        type: trueFalse
+        prompt: 'Los verbos en *-er* y en *-ir* tienen las mismas terminaciones en pretérito indefinido: *comí, recibí*.'
+        answer: true
+        feedback:
+          correct: '¡Correcto! *-í, -iste, -ió, -imos, -isteis, -ieron*: *comí, recibí*.'
+          incorrect: 'Son las mismas: *comí / recibí, comiste / recibiste, comió / recibió*.'
+      - id: dieron
+        type: multipleChoice
+        prompt: Mis amigos me ___ un regalo muy bonito.
+        options:
+          - { text: dieron, correct: true }
+          - {
+              text: daron,
+              feedback: '*Dar* es irregular en pasado: *di, diste, dio, dimos, dieron*.',
+            }
+          - { text: dio, feedback: '*Dio* es para *él / ella*. *Mis amigos* = *ellos*: *dieron*.' }
+      - id: ordena-bailamos
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Bailamos salsa y escuchamos música.
+      - id: expresion
+        type: multipleChoice
+        prompt: ¿Qué expresión usamos con el pretérito indefinido?
+        options:
+          - { text: el año pasado, correct: true }
+          - {
+              text: el próximo año,
+              feedback: '*El próximo año* es futuro. Para el pasado: *ayer, el año pasado, hace dos años…*',
+            }
+          - {
+              text: mañana,
+              feedback: '*Mañana* es futuro. Para el pasado: *ayer, anoche, la semana pasada…*',
+            }
+
+  - slug: ocasiones-especiales-pasado-preguntas
+    title: 'Preguntas sobre el pasado: ¿qué hiciste?'
+    minutes: 8
+    items:
+      - id: hiciste
+        type: multipleChoice
+        prompt: '¿Qué ___ el fin de semana pasado? (hacer, tú)'
+        options:
+          - { text: hiciste, correct: true }
+          - { text: hice, feedback: '*Hice* es para *yo*. Para preguntar a *tú*: *hiciste*.' }
+          - {
+              text: hizo,
+              feedback: '*Hizo* es para *él / ella*. Para preguntar a *tú*: *hiciste*.',
+            }
+      - id: celebraste
+        type: fillBlank
+        prompt: Escribe el verbo en pretérito indefinido.
+        text: ¿Dónde ___ (celebrar, tú) tu mejor cumpleaños?
+        blanks: [[celebraste]]
+      - id: vino
+        type: fillBlank
+        prompt: Escribe el verbo en pretérito indefinido.
+        text: ¿Quién ___ (venir) a tu fiesta?
+        blanks: [[vino]]
+      - id: une-respuestas
+        type: matching
+        prompt: Une cada pregunta con su respuesta.
+        pairs:
+          - [¿Qué regalo recibiste?, Recibí un libro de mi hermana.]
+          - [¿Dónde celebraste tu cumpleaños?, En un restaurante.]
+          - [¿Quién vino a tu fiesta?, Vinieron mis amigos.]
+          - [¿Qué comiste en la fiesta?, Comí pizza.]
+          - [¿Cuándo fuiste a la boda?, El año pasado.]
+      - id: forma-tu
+        type: trueFalse
+        prompt: 'En la pregunta *¿Qué hiciste?*, *hiciste* es la forma de *tú*.'
+        answer: true
+        feedback:
+          correct: '¡Correcto! *hice* (yo), *hiciste* (tú), *hizo* (él / ella).'
+          incorrect: '*Hiciste* es la forma de *tú*: *hice* (yo), *hiciste* (tú), *hizo* (él / ella).'
+      - id: adonde
+        type: multipleChoice
+        prompt: '¿___ fuiste de vacaciones? — Fui a España.'
+        options:
+          - { text: Adónde, correct: true }
+          - {
+              text: Quién,
+              feedback: '*Quién* pregunta por una persona. Para un lugar con *ir* usamos *¿Adónde…?*',
+            }
+          - {
+              text: Cuánto,
+              feedback: '*Cuánto* pregunta por una cantidad. Para un lugar con *ir* usamos *¿Adónde…?*',
+            }
+      - id: ordena-regalo
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: ¿Qué regalo recibiste en tu cumpleaños?
+      - id: comiste
+        type: fillBlank
+        prompt: Escribe el verbo en pretérito indefinido.
+        text: ¿___ (comer, tú) pastel en la fiesta? — No, no comí pastel.
+        blanks: [[Comiste]]

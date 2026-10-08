@@ -1,0 +1,566 @@
+# Cycle "TV & Filme", converted from the German Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: tv-und-filme
+title: TV & Filme
+goal: Über Filme und Fernsehen sprechen, W-Fragen stellen und *im* und *am* benutzen.
+position: 18
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Fragen stellen" and "im / am") are NEW: the notebook
+    has no self-study exercises. They were written from the cycle's two skills, its
+    summary rules and its vocabulary. Please check level, wording and every right
+    answer before students see them.
+  - >-
+    The rule "am = time, im = place" from the summary and Activity 2 is too simple for
+    German: the same notebook uses *im Sommer / im Winter* (time) in Activity 4, and
+    *am Strand* is a place. The rule is rewritten: *im* = *in dem*, for places
+    (*im Kino, im Wohnzimmer*) and also for months and seasons (*im Sommer, im Juli*);
+    *am* = *an dem*, for times of day, days and the weekend (*am Abend, am Montag, am
+    Wochenende*). The exercises only test *im* + place, *am* + time of day / weekend
+    and *im* + season. Please confirm.
+  - >-
+    The summary is written in Hebrew. The rules are rewritten as short German rules
+    (ruleSummary), with the key explanation kept as a Hebrew `lang: he` text block for
+    each skill. The note "there is no do / does in German" is kept only in the Hebrew
+    block. The section "What can the student do at the end of the lesson?" is a
+    teacher note.
+  - >-
+    The general information lists four goals (Ich-Sätze, W-Fragen, Präpositionen
+    in / im / am, vocabulary); the summary has two skills. The cycle uses the
+    summary's two skills: "Fragen stellen" and "Präpositionen: im / am". There is no
+    skill plan in the notebook; the plan in the teacher note follows the activity
+    goals.
+  - >-
+    Homework: the instructions were in Hebrew; they are now in German. The Mori
+    messages are kept as in the notebook. The example scene "Es gibt einen Tisch im
+    Zimmer. Die Leute sitzen im Wohnzimmer. Ich sehe TV am Abend." is kept.
+  - >-
+    Activity 4: "Die Geschichte ist im Sommer / im Winter" is rewritten as "Die
+    Geschichte spielt im Sommer / im Winter". The title "Film & Serie Tabu
+    (Beschreiben mit im / in)" is now "Film- und Serien-Tabu".
+  - >-
+    Activity 1 is a points game; answers 9 and 10 ("Ich war 13 Jahre alt, als…", "Der
+    längste Film, den ich kenne…") are above A1. They are kept, but the answer key is
+    a teacher note. Please consider leaving them out.
+  - >-
+    Warm-up question 6 had no number and stray asterisks (fixed). The frames "Ich
+    sehe Filme normalerweise zu Hause. / im Kino." are written as full alternatives.
+  - >-
+    Vocabulary: the nouns had no articles; they are written as "der Film, die Serie,
+    das Fernsehen, der Lieblingsfilm, der Schauspieler, die Schauspielerin, die
+    Figur". "im Haus" is glossed "בבית (בתוך הבית)", and "zu Hause – בבית" was added
+    because the warm-up uses it. "Fernsehen (TV)" is written as "das Fernsehen / TV".
+  - >-
+    The Quizlet link's tracking parameter (?new) was removed. The notebook gives no
+    activity times, so no minutes are recorded.
+  - The "Antwort von Schüler 1/2/3" lines are removed (the platform has answer boxes).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: tv-und-filme-unterricht
+    title: 'Unterricht: TV & Filme'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: TV & Filme
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Fragen stellen
+            description: 'W-Fragen: *Was? Wo? Wann? Wer? Mit wem? Welche?* Das Verb steht an Position 2.'
+          - name: 'Präpositionen: im / am'
+            description: '*im Kino, im Wohnzimmer* (Ort) und *am Abend, am Wochenende* (Zeit)'
+      - id: quizlet
+        type: externalLink
+        label: TV & Filme auf Quizlet
+        url: https://quizlet.com/br/1115845115/%D7%A1%D7%A8%D7%98%D7%99%D7%9D-%D7%95%D7%98%D7%9C%D7%95%D7%99%D7%96%D7%99%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich heiße ___. Ich sehe gern ___.
+        example: Ich heiße Daniel. Ich sehe gern Filme.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: 'Was siehst du lieber: Filme oder Serien?'
+            frame: Ich sehe lieber Filme. / Ich sehe lieber Serien.
+          - question: Wo siehst du normalerweise Filme?
+            frame: Ich sehe Filme normalerweise zu Hause. / Ich sehe Filme normalerweise im Kino.
+          - question: Mit wem siehst du Filme am liebsten?
+            frame: Ich sehe Filme am liebsten mit Freunden. / Ich sehe Filme am liebsten mit meiner Familie.
+          - question: 'Wann siehst du öfter TV: am Abend oder am Wochenende?'
+            frame: Ich sehe TV öfter am Abend. / Ich sehe TV öfter am Wochenende.
+          - question: Siehst du Filme lieber zu Hause oder im Kino?
+            frame: Ich sehe Filme lieber zu Hause. / Ich sehe Filme lieber im Kino.
+          - question: Siehst du Filme allein oder mit anderen Leuten?
+            frame: Ich sehe Filme allein. / Ich sehe Filme mit anderen Leuten.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Was ist die richtige Frage?'
+        skills: [Fragen stellen]
+        steps:
+          - 'Wer beginnt? Schreib eine Zahl zwischen 1 und 100 auf. Wer am nächsten an der Zahl des Lehrers ist, beginnt.'
+          - Der Lehrer liest eine **Antwort** vor. Du sagst die richtige **Frage**.
+          - Für eine richtige Frage bekommst du **1 Punkt**. Ist die Frage falsch, ist der nächste Schüler dran.
+          - Jeder Schüler darf maximal 3-mal spielen.
+        example: '*Ich mag den Film Titanic.* → **Welchen Film magst du?**'
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Lieblingsfilm-Interview'
+        skills: [Fragen stellen, 'Präpositionen: im / am']
+        steps:
+          - 'Hör zu und wiederhole: *Ich sehe den Film **im** Kino. Ich sehe TV **am** Abend.*'
+          - Arbeitet zu zweit. Einer fragt, einer antwortet. Stellt alle 5 Fragen unten und antwortet in kurzen Sätzen.
+          - Schreib 1–2 Stichwörter pro Antwort.
+          - 'Sag der Klasse 2 Sätze über deinen Partner: *Sein / Ihr Lieblingsfilm ist ___. Er / Sie sieht den Film im ___. Er / Sie sieht den Film am ___.*'
+        example: |-
+          A: *Was ist dein Lieblingsfilm?* – B: *Mein Lieblingsfilm ist Titanic.*
+          A: *Wo siehst du den Film?* – B: *Ich sehe den Film im Kino.*
+          A: *Wann siehst du den Film?* – B: *Ich sehe den Film am Abend.*
+        wordBank: [im Kino, im Wohnzimmer, im Haus, im Park, am Abend, am Wochenende, am Morgen]
+      - id: act2-questions
+        type: discussionQuestions
+        title: Lieblingsfilm-Interview
+        items:
+          - question: Was ist dein Lieblingsfilm?
+            frame: Mein Lieblingsfilm ist ___.
+          - question: Wo siehst du diesen Film?
+            frame: Ich sehe den Film im ___.
+          - question: Wann siehst du diesen Film?
+            frame: Ich sehe den Film am ___.
+          - question: Mit wem siehst du diesen Film?
+            frame: Ich sehe den Film mit ___.
+          - question: Wer ist deine Lieblingsfigur im Film?
+            frame: Meine Lieblingsfigur ist ___.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: 21 Fragen'
+        skills: [Fragen stellen]
+        steps:
+          - Ein Schüler denkt an eine berühmte Person. Er sagt den Namen nicht.
+          - Die Klasse stellt nur Ja/Nein-Fragen, maximal 21 Fragen.
+          - 'Die Antwort ist nur: **Ja.** oder **Nein.**'
+          - Wer die Person errät, ist als Nächster dran.
+        example: |-
+          *Bist du ein Mann?*
+          *Bist du Schauspieler?*
+          *Bist du Sänger?*
+          *Bist du aus Deutschland?*
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Film- und Serien-Tabu'
+        skills: ['Präpositionen: im / am']
+        steps:
+          - Du bekommst einen Filmtitel oder eine Serie. Sag den Titel nicht!
+          - Beschreib den Film eine Minute lang mit einfachen Sätzen (siehe unten).
+          - Die Klasse rät. Rät die Klasse richtig, bekommst du 1 Punkt. Wer die meisten Punkte hat, gewinnt.
+        example: |-
+          Das ist ein Film.
+          Es geht um einen Fisch.
+          Er lebt im Meer.
+          Der Film ist lustig.
+          Was ist das? (*Findet Nemo*)
+      - id: act4-frames
+        type: discussionQuestions
+        title: Satz-Modelle
+        items:
+          - question: Ist es ein Film oder eine Serie?
+            frame: Das ist ein Film. / Das ist eine Serie.
+          - question: Um wen geht es?
+            frame: Es geht um einen Mann / eine Frau / ein Kind.
+          - question: Wo lebt die Person?
+            frame: Die Person lebt in einer Stadt / in einem Haus.
+          - question: Wann spielt die Geschichte?
+            frame: Die Geschichte spielt im Sommer / im Winter.
+          - question: Wie ist der Film?
+            frame: Der Film ist lustig / spannend / traurig. Was ist das?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Fragen stellen** (Aktivitäten 1, 2 und
+          3) und **Präpositionen: im / am** (Aktivitäten 2 und 4). Am Ende kann der
+          Schüler einfache Fragen stellen, mit **Ich** antworten, **im / am** richtig
+          benutzen und über Filme, Fernsehen, Zeit, Ort und Personen sprechen.
+      - id: n-intro
+        anchor: intro
+        text: Schreib das Modell an die Tafel, gib dein eigenes Beispiel und frag dann jeden Schüler.
+      - id: n-warmup
+        anchor: warmup
+        text: Stell jedem Schüler mindestens zwei Fragen.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Nenn eine Zahl; der Schüler mit der nächstliegenden Zahl ist Spieler 1.
+          Schreib **Antwort → richtige Frage** an die Tafel und mach das Beispiel
+          selbst vor. Lies immer nur die Antwort vor. Am Ende: Punkte zählen, Gewinner
+          nennen und die W-Fragen an der Tafel wiederholen (Was, Wo, Wann, Wer, Welche,
+          Warum).
+      - id: n-act1-key
+        anchor: act1
+        text: >-
+          Antworten und Fragen (nur für den Lehrer): 1. Ich mag den Film Titanic. →
+          Welchen Film magst du? 2. Der beste Schauspieler der Welt ist Brad Pitt. → Wer
+          ist der beste Schauspieler der Welt? 3. Ja, ich mag Filme und Serien. → Magst
+          du Filme und Serien? 4. Ich sehe TV gern auf dem Sofa im Wohnzimmer. → Wo
+          siehst du gern TV? 5. Ich sehe gern Filme im Kino. → Wo siehst du gern Filme?
+          6. Die schönste Schauspielerin ist für mich Natalie Portman. → Wer ist für
+          dich die schönste Schauspielerin? 7. Ich mag Actionfilme. → Welche Filme magst
+          du? 8. Ich mag Actionfilme, weil sie spannend sind. → Warum magst du
+          Actionfilme? 9. Ich war 13 Jahre alt, als ich zum ersten Mal im Kino war. →
+          Wie alt warst du, als du zum ersten Mal im Kino warst? 10. Der längste Film,
+          den ich kenne, ist Titanic. → Was ist der längste Film, den du kennst? 11.
+          Ich sehe abends gern TV. → Wann siehst du gern TV?
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Mini-Erklärung an der Tafel: **Ort – im** (im Kino, im Wohnzimmer, im Haus, im
+          Park) und **Zeit – am** (am Abend, am Wochenende, am Morgen). Die Klasse
+          wiederholt die zwei Modelle im Chor. Schreib die 5 Fragen und die
+          Antwort-Modelle an die Tafel. Geh herum, korrigiere **im / am** sanft und
+          hilf beim Wortschatz.
+      - id: n-act3
+        anchor: act3
+        text: Schreib die Frage-Modelle an die Tafel. Die Aktivität übt auch Berufe und Nationalität.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Gib jedem Schüler einen Filmtitel oder eine Serie (zum Beispiel *Findet
+          Nemo*). Schreib die Satz-Modelle an die Tafel.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: tv-und-filme-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-questions
+        type: ruleSummary
+        skill: Fragen stellen
+        rules:
+          - text: 'Die wichtigen Fragewörter: *Was? Wo? Wann? Wer? Mit wem?*'
+            examples:
+              - Was siehst du?
+              - Wo siehst du Filme?
+              - Wann siehst du TV?
+              - Wer ist dein Lieblingsschauspieler?
+              - Mit wem siehst du Filme?
+          - text: '**Fragewort + Verb + Subjekt.** Das Verb steht immer an **Position 2**.'
+            examples: [Wo wohnst du?, Wann siehst du TV?, Was magst du?]
+      - id: questions-table
+        type: table
+        caption: Fragen über Filme und TV
+        header: [Frage, Hebräisch]
+        rows:
+          - [Was siehst du?, מה אתה רואה?]
+          - [Wo siehst du Filme?, איפה אתה רואה סרטים?]
+          - [Wann siehst du TV?, מתי אתה רואה טלוויזיה?]
+          - [Wer ist dein Lieblingsschauspieler?, מי השחקן האהוב עליך?]
+          - [Mit wem siehst du Filme?, עם מי אתה רואה סרטים?]
+      - id: questions-he
+        type: text
+        lang: he
+        text: 'מבנה של שאלה בגרמנית: **מילת שאלה + פועל + נושא**. אין "do / does" בגרמנית! הפועל תמיד במקום השני במשפט.'
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: 'Präpositionen: im / am'
+        rules:
+          - text: '**Wo?** Für einen Ort im Raum oder im Gebäude: **im** (= *in dem*).'
+            examples: [im Kino, im Wohnzimmer, im Haus, Ich sehe Filme im Kino.]
+          - text: '**Wann?** Für Tageszeiten, Tage und das Wochenende: **am** (= *an dem*).'
+            examples: [am Abend, am Morgen, am Wochenende, Ich sehe TV am Abend.]
+          - text: 'Aber: Monate und Jahreszeiten haben **im**.'
+            examples: [im Sommer, im Winter, im Juli]
+      - id: prepositions-table
+        type: table
+        caption: im / am
+        header: [Deutsch, Hebräisch]
+        rows:
+          - [im Kino, בקולנוע]
+          - [im Wohnzimmer, בסלון]
+          - [im Haus, בבית]
+          - [am Abend, בערב]
+          - [am Morgen, בבוקר]
+          - [am Wochenende, בסוף שבוע]
+      - id: prepositions-he
+        type: text
+        lang: he
+        text: 'חוק עזר: **im** = בתוך מקום (im Kino, im Wohnzimmer). **am** = לזמן ביום, לימים ולסוף השבוע (am Abend, am Wochenende). שימו לב: עונות וחודשים באים עם **im** (im Sommer, im Juli).'
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die zwei Fertigkeiten mit der Klasse und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: tv-und-filme-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere diese Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte jede Frage, laut oder schriftlich.
+      - id: mori-filme
+        type: aiTutorPrompt
+        title: Über Filme und Fernsehen sprechen
+        message: |-
+          Hi Mori! Ich möchte Deutsch üben.
+          Bitte stell mir Fragen über Filme und Fernsehen mit:
+          Wo? Wann? Was? Mit wem?
+          Bitte nur Präsens und korrigiere meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Möchtest du mehr Fragen? Schreib: **Bitte frag mich mehr!**
+          Verstehst du eine Erklärung nicht? Schreib: **Kannst du mir das auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra-Übungen
+      - id: mori-szene
+        type: aiTutorPrompt
+        title: Wo ist die Szene?
+        intro: >-
+          Schick diese Nachricht an Mori. Dann beschreibst du eine Szene, zum Beispiel:
+          *Es gibt einen Tisch im Zimmer. Die Leute sitzen im Wohnzimmer. Ich sehe TV am
+          Abend.* (Mori rät: *Im Restaurant? Zu Hause?*) Danach schreibst du: **Jetzt
+          bist du dran! Du beschreibst, ich rate!**
+        message: |-
+          Hi Mori! Wir machen ein Spiel.
+          Ich beschreibe eine Szene mit im / am.
+          Du rätst, wo es ist.
+      - id: mori-fragen
+        type: aiTutorPrompt
+        title: Fragen über Filme bauen
+        intro: >-
+          Schick diese Nachricht an Mori. Dann schreibst du einen Satz, zum Beispiel:
+          *Ich sehe TV am Abend.* (Mori fragt: *Wann siehst du TV?*) Danach schreibst
+          du: **Jetzt bist du dran! Schreib einen Satz und ich mache eine Frage.**
+        message: |-
+          Hi Mori! Wir spielen ein Spiel.
+          Ich schreibe einen Satz.
+          Du machst daraus eine Frage mit:
+          Was? Wo? Wann? Mit wem?
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: tv-und-filme-uebung
+    book: workbook
+    title: 'Übung: TV & Filme'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-fragen
+        type: activity
+        activity: tv-und-filme-fragen
+      - id: ex-praepositionen
+        type: activity
+        activity: tv-und-filme-praepositionen
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: tv-und-filme-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter zum Thema TV & Filme
+        glossLang: he
+        link: https://quizlet.com/br/1115845115/%D7%A1%D7%A8%D7%98%D7%99%D7%9D-%D7%95%D7%98%D7%9C%D7%95%D7%99%D7%96%D7%99%D7%94-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &tv-und-filme-words
+          - { term: der Film, gloss: סרט }
+          - { term: die Serie, gloss: סדרה }
+          - { term: das Fernsehen / TV, gloss: טלוויזיה }
+          - { term: sehen, gloss: לראות }
+          - { term: gern sehen, gloss: אוהב לראות }
+          - { term: der Lieblingsfilm, gloss: סרט אהוב }
+          - { term: der Schauspieler, gloss: שחקן }
+          - { term: die Schauspielerin, gloss: שחקנית }
+          - { term: die Figur, gloss: דמות }
+          - { term: spannend, gloss: מותח }
+          - { term: lustig, gloss: מצחיק }
+          - { term: traurig, gloss: עצוב }
+          - { term: im Kino, gloss: בקולנוע }
+          - { term: im Wohnzimmer, gloss: בסלון }
+          - { term: im Haus, gloss: בבית (בתוך הבית) }
+          - { term: zu Hause, gloss: בבית }
+          - { term: am Abend, gloss: בערב }
+          - { term: am Morgen, gloss: בבוקר }
+          - { term: am Wochenende, gloss: בסוף שבוע }
+          - { term: allein, gloss: לבד }
+          - { term: mit Freunden, gloss: עם חברים }
+          - { term: mit der Familie, gloss: עם המשפחה }
+          - { term: Was?, gloss: מה? }
+          - { term: Wo?, gloss: איפה? }
+          - { term: Wann?, gloss: מתי? }
+          - { term: Wer?, gloss: מי? }
+          - { term: Mit wem?, gloss: עם מי? }
+          - { term: Ich sehe…, gloss: אני רואה… }
+          - { term: Ich mag…, gloss: אני אוהב… }
+          - { term: Ich sehe TV., gloss: אני רואה טלוויזיה. }
+          - { term: Ich sehe Filme., gloss: אני רואה סרטים. }
+          - { term: im / am, gloss: מילת יחס למקום / לזמן }
+          - { term: fragen, gloss: לשאול }
+          - { term: antworten, gloss: לענות }
+          - { term: raten, gloss: לנחש }
+          - { term: berühmt, gloss: מפורסם }
+
+vocabulary:
+  - slug: tv-und-filme
+    title: TV & Filme
+    items: *tv-und-filme-words
+
+activities:
+  - slug: tv-und-filme-fragen
+    title: 'Fragen stellen: Was? Wo? Wann? Wer?'
+    minutes: 8
+    items:
+      - id: wo-kino
+        type: multipleChoice
+        prompt: '___ siehst du Filme? – Im Kino.'
+        options:
+          - { text: Wo, correct: true }
+          - { text: Wann, feedback: '*Wann?* fragt nach der Zeit. *Im Kino* ist ein Ort: *Wo?*' }
+          - { text: Wer, feedback: '*Wer?* fragt nach einer Person. *Im Kino* ist ein Ort: *Wo?*' }
+      - id: wann-abend
+        type: multipleChoice
+        prompt: '___ siehst du TV? – Am Abend.'
+        options:
+          - { text: Wann, correct: true }
+          - { text: Wo, feedback: '*Wo?* fragt nach dem Ort. *Am Abend* ist eine Zeit: *Wann?*' }
+          - {
+              text: Was,
+              feedback: '*Was?* fragt nach einer Sache. *Am Abend* ist eine Zeit: *Wann?*',
+            }
+      - id: wer-schauspieler
+        type: multipleChoice
+        prompt: '___ ist dein Lieblingsschauspieler? – Brad Pitt.'
+        options:
+          - { text: Wer, correct: true }
+          - {
+              text: Was,
+              feedback: '*Was?* fragt nach einer Sache. Für eine Person fragst du *Wer?*',
+            }
+          - { text: Wo, feedback: '*Wo?* fragt nach dem Ort. Für eine Person fragst du *Wer?*' }
+      - id: richtige-frage
+        type: multipleChoice
+        prompt: Welche Frage ist richtig?
+        options:
+          - { text: Was siehst du?, correct: true }
+          - { text: Was du siehst?, feedback: 'Das Verb steht an Position 2: *Was siehst du?*' }
+          - {
+              text: Siehst was du?,
+              feedback: 'Zuerst das Fragewort, dann das Verb: *Was siehst du?*',
+            }
+      - id: kein-do
+        type: trueFalse
+        prompt: Im Deutschen braucht man für eine Frage ein Hilfswort wie *do* im Englischen.
+        answer: false
+        feedback:
+          correct: 'Richtig! Im Deutschen gibt es kein *do*: *Wann siehst du TV?*'
+          incorrect: 'Im Deutschen gibt es kein *do*. Das Verb steht an Position 2: *Wann siehst du TV?*'
+      - id: siehst
+        type: fillBlank
+        prompt: Schreib das Verb *sehen* in der richtigen Form.
+        text: Mit wem ___ du Filme?
+        blanks: [[siehst]]
+      - id: interview
+        type: matching
+        prompt: Welche Antwort passt zu welcher Frage?
+        pairs:
+          - [Was ist dein Lieblingsfilm?, Mein Lieblingsfilm ist Titanic.]
+          - [Wo siehst du den Film?, Ich sehe den Film im Kino.]
+          - [Wann siehst du den Film?, Ich sehe den Film am Abend.]
+          - [Mit wem siehst du den Film?, Ich sehe den Film mit Freunden.]
+          - [Wer ist deine Lieblingsfigur?, Meine Lieblingsfigur ist Nemo.]
+      - id: ordne-filme
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Wo siehst du Filme?
+
+  - slug: tv-und-filme-praepositionen
+    title: 'Präpositionen: im / am'
+    minutes: 8
+    items:
+      - id: im-kino
+        type: multipleChoice
+        prompt: Ich sehe Filme ___ Kino.
+        options:
+          - { text: im, correct: true }
+          - { text: am, feedback: '*Kino* ist ein Ort (Wo?). Für den Ort benutzt du *im*.' }
+      - id: am-abend
+        type: multipleChoice
+        prompt: Ich sehe TV ___ Abend.
+        options:
+          - { text: am, correct: true }
+          - {
+              text: im,
+              feedback: '*Abend* ist eine Tageszeit (Wann?). Für Tageszeiten benutzt du *am*.',
+            }
+      - id: wohnzimmer
+        type: fillBlank
+        prompt: Ergänze *im* oder *am*.
+        text: Wir sehen eine Serie ___ Wohnzimmer.
+        blanks: [[im]]
+        wordBank: [im, am]
+      - id: wochenende
+        type: fillBlank
+        prompt: Ergänze *im* oder *am*.
+        text: Ich sehe Filme ___ Wochenende.
+        blanks: [[am]]
+        wordBank: [im, am]
+      - id: sommer
+        type: multipleChoice
+        prompt: Die Geschichte spielt ___ Sommer.
+        options:
+          - { text: im, correct: true }
+          - {
+              text: am,
+              feedback: 'Jahreszeiten und Monate haben *im*: *im Sommer, im Winter, im Juli*.',
+            }
+      - id: am-morgen
+        type: trueFalse
+        prompt: '*am Morgen* ist eine Zeit. Es antwortet auf die Frage *Wann?*'
+        answer: true
+        feedback:
+          correct: 'Richtig! *am Morgen, am Abend, am Wochenende*: Wann?'
+          incorrect: '*Morgen* ist eine Tageszeit. *am Morgen* antwortet auf *Wann?*'
+      - id: bedeutung
+        type: matching
+        prompt: Was passt zusammen?
+        pairs:
+          - [im Kino, בקולנוע]
+          - [im Wohnzimmer, בסלון]
+          - [am Abend, בערב]
+          - [am Morgen, בבוקר]
+          - [am Wochenende, בסוף שבוע]
+      - id: ordne-kino
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Wir sind im Kino.

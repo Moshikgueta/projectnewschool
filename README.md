@@ -1,4 +1,20 @@
-# Teacher Dashboard
+# New School: staff room and learning platform
+
+This repository holds two apps:
+
+| Folder | What it is |
+| --- | --- |
+| [`newschool-learning-platform/`](newschool-learning-platform/README.md) | **The New School learning platform** (Next.js, TypeScript, Supabase): students' notebooks, exercises, vocabulary and progress; teachers' groups, classes and attendance; the office's students, packages, private lessons, rooms and timetable; staff tools; the content editor. It already includes stages A–E of the staff room's features and replaces the staff room at cut-over ([merge plan](newschool-learning-platform/docs/STAFF-ROOM-MERGE.md)). |
+| everything else (below) | **The staff room** (Cloudflare Worker + D1 and the teacher dashboard pages), which keeps running until the platform takes over. |
+
+The platform has its own setup, tests and documentation: start with its
+[README](newschool-learning-platform/README.md). Its CI runs from
+[`.github/workflows/platform-ci.yml`](.github/workflows/platform-ci.yml). No secrets are
+kept in the repository; each environment's keys are set in the hosting services.
+
+---
+
+## The staff room (Teacher Dashboard)
 
 לוח מחוונים למורה — desktop and mobile views for a language-school teaching system:
 students, digital notebooks (מחברות דיגיטליות) and lesson materials, in Hebrew RTL.

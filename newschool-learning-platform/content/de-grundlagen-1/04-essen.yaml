@@ -1,0 +1,553 @@
+# Cycle "Essen", converted from the German Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-grundlagen-1
+slug: essen
+title: Essen
+goal: Über Essen sprechen, mit Sätzen mit Handlungen und mit Possessivpronomen.
+position: 4
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Sätze mit Handlungen" and "Possessivpronomen") are
+    NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary and its vocabulary. Please check level, wording
+    and every right answer before students see them.
+  - >-
+    This cycle has no Mori homework in the notebook, so there is no homework section.
+    Please add Mori messages if you want them.
+  - >-
+    Summary rule 3 was titled "There is no am / is / are in German" (from the English
+    notebook). German does have *sein* (bin / ist / sind); the rule is rewritten as:
+    in the present tense, do not put *bin / ist* before another verb (*Ich bin esse*
+    is wrong). The rule "only one verb in a sentence" is limited to the present tense
+    for the same reason (Ich möchte essen).
+  - >-
+    Summary rule 2 (verb forms) now also says that *essen* changes its vowel (du
+    isst, er / sie isst) and that verbs on -d / -t add -e (du schneidest, er
+    schneidet). The possessive table adds *seine* and *ihre*.
+  - >-
+    The summary is written in Hebrew in the notebook. The rules are given in simple
+    German (ruleSummary) and the Hebrew explanations are kept as Hebrew text blocks
+    (lang he); the Hebrew translations of the examples became glosses. Please check
+    the Hebrew.
+  - >-
+    A possessive table appeared a second time inside the introduction round; it was
+    left out there (it is in the summary). Broken emoji characters were removed.
+  - >-
+    Titles: Activity 1 "Ihr Lieblingssandwich AKTIONEN" → "Dein Lieblingssandwich";
+    Activity 4 "Bringen Sie mir Ihren Lieblingsteller bei" (literal "teach me your
+    favourite dish", and *Teller* means plate) → "Mein Lieblingsgericht – rate mal!".
+    The skill labels in capitals (AKTIONEN, VERBEN, POSSESSIVPRONOMEN) became activity
+    skill tags.
+  - >-
+    Corrections: "Hilfsverben" (auxiliary verbs) → "Nützliche Verben"; restaurant
+    dialogue "Ich esse ___" → "Ich nehme ___" (answer to "Was möchten Sie essen?");
+    "Ist das Salat?" → "Ist das ein Salat?"; warm-up "Es ist ein ___ (italienisch /
+    Fast Food / Gourmet)-Restaurant" → "Es ist ein italienisches Restaurant / ein
+    Fast-Food-Restaurant / ein Gourmetrestaurant".
+  - >-
+    Activity 2 (restaurant) had only the dialogue; the steps (pairs, waiter and
+    customer, swap roles) were added. Please confirm.
+  - >-
+    Activity 3: the example "Seine Mutter isst Huhn …" only fits when the previous
+    student is a man; a teacher note says to use *ihre Mutter* for a woman.
+  - >-
+    Vocabulary: nouns carry their article (das Brot, die Cola …); "deine – שלך" →
+    "dein / deine"; "mein" → "mein / meine"; "Kunde" → "der Kunde / die Kundin – לקוח
+    / לקוחה"; "Freunde" → "die Freunde – חברים". Please confirm.
+  - The Quizlet link lost its tracking parameter (?new).
+  - Activity times given as ranges (15–20 minutes) are recorded as 20 minutes; the introduction (5–10) as 10.
+  - >-
+    The "Antwort von Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2): students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: essen-unterricht
+    title: 'Unterricht: Essen'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Essen
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Sätze mit Handlungen
+            description: 'Essen, kochen, schneiden, mischen: das Verb steht an Position 2'
+          - name: Possessivpronomen
+            description: '*mein Brot, deine Suppe, sein Salat, ihr Teller, unser Freund*'
+      - id: quizlet
+        type: externalLink
+        label: Essen auf Quizlet
+        url: https://quizlet.com/br/1110981548/%D7%90%D7%95%D7%9B%D7%9C-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Ich esse gern ___.
+        example: Ich bin Anna. Ich esse gern Pizza.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Isst du gern? Was isst du gern?
+            frame: Ja, ich esse gern ___. / Nein, ich esse nicht gern ___.
+          - question: Kochst du gern? Was kochst du gern?
+            frame: Ich koche gern ___.
+          - question: Welche Geschmacksrichtungen kennst du?
+            frame: 'Ich kenne: süß, salzig, sauer, bitter, scharf. Mein Lieblingsgeschmack ist ___.'
+          - question: Was ist dein Lieblingsrestaurant?
+            frame: Mein Lieblingsrestaurant ist ___. Es ist ein italienisches Restaurant / ein Fast-Food-Restaurant / ein Gourmetrestaurant.
+          - question: Für wen kochst du manchmal?
+            frame: Ich koche für meine Familie / meine Freunde.
+          - question: Was ist deine Lieblingszutat?
+            frame: Meine Lieblingszutat ist ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Dein Lieblingssandwich'
+        skills: [Sätze mit Handlungen]
+        minutes: 20
+        steps:
+          - Schreib den Namen und die Zutaten von deinem Lieblingssandwich.
+          - Schreib das Rezept, in der 1. Person (*Ich nehme …*) oder mit Befehlen (*Schneide …*).
+          - Lies dein Rezept der Gruppe vor.
+        wordBank:
+          [
+            schneiden → ich schneide,
+            öffnen → ich öffne,
+            schließen → ich schließe,
+            streichen → ich streiche,
+            legen → ich lege,
+            hinzufügen → ich füge … hinzu,
+          ]
+        example: |-
+          **Option 1 – in der 1. Person:** *Ich nehme das Brot. Ich lege den Käse auf das Brot. Dann nehme ich …*
+          **Option 2 – mit Befehlen:** *1. Schneide das Brot. 2. Lege den Käse auf das Brot. 3. Füge Tomaten hinzu.*
+      - id: act1-sandwich
+        type: discussionQuestions
+        title: Mein Lieblingssandwich
+        items:
+          - question: 'Der Name ist: ___'
+          - question: 'Die Zutaten sind: 1. ___ 2. ___ 3. ___ 4. ___'
+          - question: 'Das Rezept: ___'
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Lass uns essen gehen!'
+        skills: [Sätze mit Handlungen]
+        minutes: 20
+        steps:
+          - Arbeitet zu zweit. Eine Person ist der Kellner / die Kellnerin, eine Person ist der Kunde / die Kundin.
+          - Spielt den Dialog. Ergänzt die Lücken mit Essen und Getränken.
+          - Tauscht die Rollen.
+      - id: act2-dialogue
+        type: dialogue
+        lines:
+          - { speaker: Kellner, text: Hallo! Willkommen im Restaurant. Was möchten Sie essen? }
+          - { speaker: Kunde, text: Ich nehme ___. }
+          - { speaker: Kellner, text: Und was möchten Sie trinken? }
+          - { speaker: Kunde, text: Ich trinke ___. }
+          - { speaker: Kellner, text: Und als Hauptgericht? }
+          - { speaker: Kunde, text: Ich möchte ___ als Hauptgericht. }
+          - { speaker: Kellner, text: Schmeckt es? }
+          - { speaker: Kunde, text: Ja, es schmeckt gut. / Nein, es schmeckt nicht gut. }
+          - { speaker: Kellner, text: Möchten Sie bar oder mit Karte bezahlen? }
+          - { speaker: Kunde, text: Ich bezahle bar. / Ich bezahle mit Karte. }
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Wer isst was? – Hochzeitsgäste'
+        skills: [Possessivpronomen]
+        minutes: 20
+        steps:
+          - 'Wir sind auf einer Hochzeit. Die Lehrkraft fragt: *Was isst und trinkt deine Mutter?*'
+          - 'Du antwortest: *Meine Mutter isst Huhn und trinkt Wasser.*'
+          - Der nächste Schüler / die nächste Schülerin wiederholt deinen Satz mit *sein / ihr* und sagt einen neuen Satz über eine eigene Person.
+          - Die Runde geht weiter.
+        wordBank:
+          [
+            mein Mann,
+            meine Frau,
+            mein Vater,
+            meine Mutter,
+            unser Freund,
+            unsere Freundin,
+            sein Freund,
+            ihre Mutter,
+            Fisch,
+            Huhn,
+            Reis,
+            Gemüse,
+            Salat,
+            Cola,
+            Wasser,
+            Rotwein,
+          ]
+        example: |-
+          *Was isst und trinkt deine Mutter?*
+          *Meine Mutter isst Huhn und trinkt Wasser.*
+          *Seine Mutter isst Huhn und trinkt Wasser. Mein Vater isst Fisch und trinkt Cola.*
+      - id: act3-frames
+        type: discussionQuestions
+        items:
+          - question: Was isst deine Mutter / dein Vater / deine Frau?
+            frame: Meine Mutter / Mein Vater / Meine Frau isst ___.
+          - question: Was trinkt deine Mutter / dein Vater / deine Frau?
+            frame: Meine Mutter / Mein Vater / Meine Frau trinkt ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Mein Lieblingsgericht – rate mal!'
+        skills: [Sätze mit Handlungen]
+        minutes: 20
+        steps:
+          - Arbeitet zu zweit. Wähl im Kopf ein Gericht (Salat, Pasta, Pizza, Suppe …).
+          - 'Schüler A beschreibt das Gericht mit kurzen Sätzen: *Ich schneide Tomaten. Ich koche Nudeln.*'
+          - 'Schüler B rät: *Ist das Pizza? Ist das ein Salat? Ist das Pasta?*'
+          - Ist die Antwort richtig, tauscht die Rollen.
+        wordBank:
+          [
+            schneiden → ich schneide,
+            mischen → ich mische,
+            kochen → ich koche,
+            braten → ich brate,
+            backen → ich backe,
+            legen → ich lege,
+            hinzufügen → ich füge … hinzu,
+          ]
+        example: |-
+          A: *Ich koche Nudeln. Ich mische Tomaten und Käse.*
+          B: *Ist das Pasta?*
+          A: *Ja!*
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Sätze mit Handlungen** (Aufwärmfragen,
+          Aktivität 1 oder 2, Aktivität 4) und **Possessivpronomen** (Aufwärmfragen,
+          Aktivität 3).
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Gib zuerst dein eigenes Beispiel, dann ist jeder Schüler dran.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Stell jedem Schüler mindestens zwei Fragen. Die Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: Die Schüler wählen Option 1 oder Option 2 für das Rezept. Achte auf das Verb an Position 2 (*Dann nehme ich …*).
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Beim Wiederholen: War der vorige Schüler ein Mann, sagt man *seine Mutter*;
+          war es eine Frau, *ihre Mutter*.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Paararbeit. Ziel: Verben mit Handlungen (schneiden, kochen, mischen …). Schreib
+          die Verben an die Tafel (1 Minute Vorbereitung). Nur kurze Sätze!
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: essen-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-handlungen
+        type: ruleSummary
+        skill: Sätze mit Handlungen
+        rules:
+          - text: 'Das Verb (in der Form für die Person) steht **immer an Position 2**: Subjekt + Verb + Rest.'
+            examples:
+              [
+                Ich esse Pizza.,
+                Du kochst Nudeln.,
+                Er schneidet Brot.,
+                Heute koche ich Pasta.,
+                Im Restaurant esse ich Fisch.,
+              ]
+          - text: 'Bei *er / sie* endet das Verb meistens auf **-t**: kocht, mischt, legt, kauft, öffnet.'
+          - text: '*essen* ist anders: du **isst**, er / sie **isst**. Verben auf -d / -t bekommen ein -e: du schneid**est**, er schneid**et**.'
+          - text: Im Präsens brauchst du nur **ein** Verb. Kein *bin / ist* vor einem anderen Verb.
+            examples:
+              ['*Ich bin esse Pizza.* ✗ → Ich esse Pizza. ✓', '*Sie ist kocht.* ✗ → Sie kocht. ✓']
+      - id: handlungen-he
+        type: text
+        lang: he
+        text: >-
+          הפועל המוטה (הפועל לפי הגוף) תמיד נמצא במקום השני במשפט. בגוף er / sie הפועל
+          לרוב מסתיים ב־t. בהווה יש פועל אחד בלבד: לא אומרים "Ich bin esse Pizza" אלא
+          "Ich esse Pizza".
+      - id: verbs-table
+        type: table
+        caption: Verbformen
+        header: [Person, essen (לאכול), kochen (לבשל), schneiden (לחתוך), mischen (לערבב)]
+        rows:
+          - [ich, esse, koche, schneide, mische]
+          - [du, isst, kochst, schneidest, mischst]
+          - [er / sie, isst, kocht, schneidet, mischt]
+      - id: handlungen-examples
+        type: examples
+        items:
+          - { text: Ich esse Pizza., gloss: אני אוכל פיצה }
+          - { text: Du kochst Nudeln., gloss: אתה מבשל אטריות }
+          - { text: Er schneidet Brot., gloss: הוא חותך לחם }
+          - { text: Heute koche ich Pasta., gloss: היום אני מבשל פסטה }
+          - { text: Im Restaurant esse ich Fisch., gloss: במסעדה אני אוכל דג }
+      - id: rules-possessiv
+        type: ruleSummary
+        skill: Possessivpronomen
+        rules:
+          - text: 'Das Possessivpronomen steht **immer vor dem Nomen**. Possessivpronomen + Nomen sind eine Einheit.'
+            examples: [mein Brot, deine Pasta, sein Salat, ihr Teller, unser Freund, meine Frau]
+          - text: 'Mit *-e* vor *die*-Wörtern und im Plural: mein**e** Mutter, unser**e** Freunde.'
+          - text: 'Fragen und Antworten aus dem Unterricht:'
+            examples:
+              [
+                Was isst deine Mutter?,
+                Meine Mutter isst Huhn und trinkt Wasser.,
+                Was trinkt dein Vater?,
+                Sein Freund isst Fisch und trinkt Cola.,
+              ]
+      - id: possessiv-he
+        type: text
+        lang: he
+        text: >-
+          כינוי השייכות תמיד בא לפני שם העצם, ושניהם יחד הם יחידה אחת: mein Vater (אבא
+          שלי), ihre Mutter (אמא שלה), unser Essen (האוכל שלנו).
+      - id: possessiv-table
+        type: table
+        caption: Possessivpronomen
+        header: [Deutsch, Hebräisch, Beispiel]
+        rows:
+          - [mein / meine, שלי, Mein Sandwich ist lecker.]
+          - [dein / deine, שלך, Deine Suppe ist heiß.]
+          - [sein / seine, שלו, Sein Salat ist frisch.]
+          - [ihr / ihre, שלה, Ihr Teller ist groß.]
+          - [unser / unsere, שלנו, Unsere Freunde essen Pizza.]
+      - id: possessiv-examples
+        type: examples
+        items:
+          - { text: Mein Sandwich ist lecker., gloss: הסנדוויץ' שלי טעים }
+          - { text: Deine Suppe ist heiß., gloss: המרק שלך חם }
+          - { text: Sein Teller ist leer., gloss: הצלחת שלו ריקה }
+          - { text: Ihr Salat ist frisch., gloss: הסלט שלה טרי }
+          - { text: Unser Freund trinkt Cola., gloss: החבר שלנו שותה קולה }
+          - { text: Meine Mutter isst Huhn und trinkt Wasser., gloss: אמא שלי אוכלת עוף ושותה מים }
+      - id: remember
+        type: callout
+        tone: tip
+        title: Ganz kurz
+        text: |-
+          **Präsens:** Das Verb steht an Position 2, nur ein Verb. *Ich esse / du kochst / er mischt.*
+          **Possessivpronomen:** vor dem Nomen. *mein Brot, deine Pasta, ihr Getränk.*
+          **Frage und Antwort:** *Was isst deine Mutter? – Meine Mutter isst …*
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: Wiederhole die zwei Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: essen-uebung
+    book: workbook
+    title: 'Übung: Essen'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-handlungen
+        type: activity
+        activity: essen-handlungen
+      - id: ex-possessiv
+        type: activity
+        activity: essen-possessiv
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: essen-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter zum Essen
+        glossLang: he
+        link: https://quizlet.com/br/1110981548/%D7%90%D7%95%D7%9B%D7%9C-%D7%9E%D7%A2%D7%95%D7%93%D7%9B%D7%9F-flash-cards/
+        items: &essen-words
+          - { term: essen, gloss: לאכול }
+          - { term: trinken, gloss: לשתות }
+          - { term: kochen, gloss: לבשל }
+          - { term: schneiden, gloss: לחתוך }
+          - { term: mischen, gloss: לערבב }
+          - { term: backen, gloss: לאפות }
+          - { term: braten, gloss: לטגן }
+          - { term: legen, gloss: לשים / להניח }
+          - { term: hinzufügen, gloss: להוסיף }
+          - { term: das Brot, gloss: לחם }
+          - { term: der Käse, gloss: גבינה }
+          - { term: der Salat, gloss: סלט }
+          - { term: der Fisch, gloss: דג }
+          - { term: das Huhn, gloss: עוף }
+          - { term: das Gemüse, gloss: ירקות }
+          - { term: das Wasser, gloss: מים }
+          - { term: die Cola, gloss: קולה }
+          - { term: süß, gloss: מתוק }
+          - { term: salzig, gloss: מלוח }
+          - { term: sauer, gloss: חמוץ }
+          - { term: bitter, gloss: מר }
+          - { term: scharf, gloss: חריף }
+          - { term: mein / meine, gloss: שלי }
+          - { term: dein / deine, gloss: שלך }
+          - { term: sein, gloss: שלו }
+          - { term: ihr, gloss: שלה }
+          - { term: die Familie, gloss: משפחה }
+          - { term: die Freunde, gloss: חברים }
+          - { term: das Restaurant, gloss: מסעדה }
+          - { term: der Kellner, gloss: מלצר }
+          - { term: der Kunde / die Kundin, gloss: לקוח / לקוחה }
+          - { term: bestellen, gloss: להזמין }
+
+vocabulary:
+  - slug: essen
+    title: Essen
+    items: *essen-words
+
+activities:
+  - slug: essen-handlungen
+    title: 'Sätze mit Handlungen: essen, kochen, schneiden, mischen'
+    minutes: 8
+    items:
+      - id: du-isst
+        type: multipleChoice
+        prompt: Du ___ Pizza.
+        options:
+          - { text: isst, correct: true }
+          - { text: esse, feedback: '*esse* passt zu *ich*. Für *du* sagen wir *du isst*.' }
+          - { text: essest, feedback: '*essen* ist anders: *du isst* (mit *i*).' }
+      - id: er-schneidet
+        type: multipleChoice
+        prompt: Er ___ das Brot.
+        options:
+          - { text: schneidet, correct: true }
+          - {
+              text: schneide,
+              feedback: '*schneide* passt zu *ich*. Für *er* sagen wir *er schneidet*.',
+            }
+          - {
+              text: schneidest,
+              feedback: '*schneidest* passt zu *du*. Für *er* sagen wir *er schneidet*.',
+            }
+      - id: ich-koche
+        type: fillBlank
+        prompt: Ergänze das Verb *kochen*.
+        text: Ich ___ Nudeln.
+        blanks: [[koche]]
+      - id: anna-mischt
+        type: fillBlank
+        prompt: Ergänze das Verb *mischen*.
+        text: Anna ___ Gemüse.
+        blanks: [[mischt]]
+      - id: bin-esse
+        type: trueFalse
+        prompt: 'Der Satz *Ich bin esse Pizza.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Nur ein Verb: *Ich esse Pizza.*'
+          incorrect: 'Im Präsens kein *bin* vor einem anderen Verb. Richtig ist: *Ich esse Pizza.*'
+      - id: heute-koche
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Heute koche ich Pasta., correct: true }
+          - {
+              text: Heute ich koche Pasta.,
+              feedback: 'Das Verb steht an Position 2: *Heute koche ich …*',
+            }
+          - {
+              text: Heute ich Pasta koche.,
+              feedback: 'Das Verb steht an Position 2: *Heute koche ich …*',
+            }
+      - id: verben
+        type: matching
+        prompt: Welches Wort passt?
+        pairs:
+          - [schneiden, לחתוך]
+          - [mischen, לערבב]
+          - [backen, לאפות]
+          - [braten, לטגן]
+          - [hinzufügen, להוסיף]
+      - id: ordne-fisch
+        type: reorderSentence
+        prompt: Ordne die Wörter. Das Verb steht an Position 2.
+        sentence: Im Restaurant esse ich Fisch.
+
+  - slug: essen-possessiv
+    title: 'Possessivpronomen: mein Brot, dein Salat'
+    minutes: 8
+    items:
+      - id: ihr-salat
+        type: multipleChoice
+        prompt: Anna isst Salat. ___ Salat ist frisch.
+        options:
+          - { text: Ihr, correct: true }
+          - { text: Sein, feedback: 'Anna ist eine Frau (sie): wir sagen *ihr*.' }
+          - { text: Ihre, feedback: '*Salat* ist ein *der*-Wort: wir sagen *ihr Salat*.' }
+      - id: sein-teller
+        type: multipleChoice
+        prompt: Tom isst Fisch. ___ Teller ist leer.
+        options:
+          - { text: Sein, correct: true }
+          - { text: Ihr, feedback: 'Tom ist ein Mann (er): wir sagen *sein*.' }
+          - { text: Seine, feedback: '*Teller* ist ein *der*-Wort: wir sagen *sein Teller*.' }
+      - id: meine-mutter
+        type: fillBlank
+        prompt: Ergänze das Possessivpronomen für *ich*.
+        text: ___ Mutter isst Fisch.
+        blanks: [[Meine]]
+      - id: dein-vater
+        type: fillBlank
+        prompt: Ergänze das Possessivpronomen für *du*.
+        text: Was trinkt ___ Vater?
+        blanks: [[dein]]
+      - id: vor-nomen
+        type: trueFalse
+        prompt: 'Das Possessivpronomen steht vor dem Nomen: *mein Brot*.'
+        answer: true
+        feedback:
+          correct: Richtig! Possessivpronomen + Nomen sind eine Einheit.
+          incorrect: 'Das Possessivpronomen steht immer vor dem Nomen: *mein Brot*, nicht *Brot mein*.'
+      - id: bedeutung
+        type: matching
+        prompt: Was bedeutet das?
+        pairs:
+          - [mein Brot, הלחם שלי]
+          - [deine Pasta, הפסטה שלך]
+          - [sein Salat, הסלט שלו]
+          - [ihr Teller, הצלחת שלה]
+          - [unser Freund, החבר שלנו]
+      - id: unser-freund
+        type: multipleChoice
+        prompt: ___ Freund trinkt Cola. (wir)
+        options:
+          - { text: Unser, correct: true }
+          - { text: Unsere, feedback: '*Freund* ist ein *der*-Wort: wir sagen *unser Freund*.' }
+          - { text: Mein, feedback: '*mein* passt zu *ich*. Für *wir* sagen wir *unser*.' }
+      - id: ordne-mutter
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Meine Mutter isst Huhn und trinkt Wasser.

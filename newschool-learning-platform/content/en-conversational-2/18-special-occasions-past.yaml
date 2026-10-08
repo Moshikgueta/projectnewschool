@@ -1,0 +1,558 @@
+# Cycle "Special Occasions - Past", converted from the Conversational English
+# digital notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-conversational-2
+slug: special-occasions-past
+title: Special Occasions - Past
+goal: Talk about past celebrations with simple past sentences and simple past questions.
+position: 18
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Simple past sentences" and "Simple past questions")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's summary rules, examples and vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary, questions rule: the source gives the rule "Did + subject + base verb?"
+    but both examples are wh- questions (What did you do…? Where did you go…?). The
+    rule now shows both patterns: Did + subject + base verb (Did you go to the
+    party?) and question word + did + subject + base verb (Where did you go?).
+  - >-
+    Summary additions (not in the source, please confirm): the short form
+    "didn't" next to "did not"; two spelling notes for -ed (dance → danced, cry →
+    cried), because these verbs are in the vocabulary; a table of the irregular
+    verbs used in this cycle's examples and vocabulary (go, have, eat, see, give,
+    come, sing, speak, meet, make, win, drink). The workbook uses them.
+  - >-
+    The two skills are named here "Simple past sentences" (affirmative and negative,
+    with time expressions) and "Simple past questions". The source lists three
+    "skills practised" and has no "Class Objectives" text (the heading is empty).
+    The source also does not say which activities practise which skill; the teacher
+    note suggests a split. The source gives no activity times, so none were added.
+  - >-
+    Corrections: warm-up question 6 "Which family celebration do you remember
+    happily?" → "Which family celebration do you have happy memories of?"; Activity
+    4 goal "Write short narration" → "Write a short story"; vocabulary "Remind /
+    Reminded" and "Remember / Remembered" written as "Remind (reminded)" like the
+    other verbs. Warm-up question 5 ("Have you ever gone to a boring or bad
+    party?") is present perfect; it is correct English and the answer is in simple
+    past, so it was kept.
+  - >-
+    Vocabulary glosses: "Memorable" and "Unforgettable" had the same Hebrew (בלתי
+    נשכח); Memorable → "שנחרט בזיכרון / מיוחד", Unforgettable → "בלתי נשכח".
+    "Attend" and "Participate" both had להשתתף; Attend → "להגיע (לאירוע) /
+    להשתתף". "Gathering" → "מפגש / התכנסות". Please confirm.
+  - >-
+    Activity 2, story 2 uses the past perfect ("a dish I had never tried before"),
+    which is above this level; it was kept as an example. Activity 5 needs role
+    cards (singer, athlete, actor, influencer…) prepared by the teacher; they are not
+    in the notebook.
+  - >-
+    The Quizlet link is kept without its tracking parameter (funnelUUID). The
+    "Student 1/2/3" answer lines are replaced by the platform's answer boxes. The
+    empty "Date / Participants" lines were left out.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: special-occasions-past-class
+    title: 'Class: Special Occasions - Past'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Special Occasions - Past
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Simple past sentences
+            description: "*I celebrated my birthday at home. I didn't go to the party. Last year…*"
+          - name: Simple past questions
+            description: '*Did you dance? Where did you celebrate? What gift did you receive?*'
+      - id: quizlet
+        type: externalLink
+        label: Special Occasions (Past) on Quizlet
+        url: https://quizlet.com/br/1106216275/conversations-english-special-occasions-past-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        prompt: 'Say 2 sentences: your name, and one of these.'
+        frame: |-
+          I am ___.
+          Last year, I celebrated ___. / The last time I went to a party, I ___. / I remember a special occasion because ___.
+        example: I am Dana. Last year, I celebrated my 40th birthday.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup-how
+        type: text
+        text: Answer in the **simple past**.
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What gift did you receive on your last birthday?
+            frame: I received a book from my sister.
+          - question: What gift did you give to a friend or family member last year?
+            frame: I gave a t-shirt to my best friend.
+          - question: Where did you celebrate your best birthday?
+            frame: I celebrated my birthday in a restaurant.
+          - question: What did you do on your first day of school?
+            frame: I met my classmates and spoke with the teacher.
+          - question: Have you ever gone to a boring or bad party? What happened?
+            frame: Yes, I went to a party with no music and I was bored.
+          - question: Which family celebration do you have happy memories of? Why?
+            frame: I remember my cousin's wedding. It was very fun.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Interview about traditions and parties'
+        skills: [Simple past questions, Simple past sentences]
+        steps:
+          - Work in pairs (or breakout rooms).
+          - Interview your partner about **the best party they ever went to**. Use the questions below.
+          - Share **one detail** from your partner's story with the class.
+        example: "*My partner went to her cousin's wedding. They danced all night.*"
+      - id: act1-questions
+        type: discussionQuestions
+        title: Interview questions
+        items:
+          - question: Where was the party?
+            frame: The party was at / in ___.
+          - question: What kind of party was it? (birthday, wedding, graduation…)
+            frame: It was a ___.
+          - question: Who was celebrating?
+            frame: My ___ was celebrating.
+          - question: How many people attended?
+            frame: About ___ people attended.
+          - question: What gift did you give or receive?
+            frame: I gave / received ___.
+          - question: What did you eat and drink?
+            frame: We ate ___ and drank ___.
+          - question: What music did you listen to? Did you dance?
+            frame: We listened to ___. Yes, I danced. / No, I didn't dance.
+          - question: What special or funny thing happened?
+            frame: ___ happened, and everybody laughed.
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: Two stories - true or false?'
+        skills: [Simple past sentences]
+        steps:
+          - Think of **two stories** about a special occasion in the past. One is **true** and one is **invented** (false).
+          - Tell both stories. Don't say which one is real.
+          - 'Your classmates guess: *I think story 1 is true. / I think story 2 is the lie.*'
+        example: |-
+          **Story 1:** *Last year I traveled to Brazil and learned capoeira with a famous teacher.*
+          **Story 2:** *Two years ago I won a cooking contest and made a dish I had never tried before.*
+      - id: act2-stories
+        type: discussionQuestions
+        title: My two stories
+        items:
+          - question: 'Story 1: ___'
+          - question: 'Story 2: ___'
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Celebration timeline'
+        skills: [Simple past sentences]
+        steps:
+          - Write or draw a small **timeline** with **3–4 important celebrations** in your life, in time order.
+          - Share your timeline in pairs or groups.
+        example: |-
+          *In 2018, I celebrated my graduation.*
+          *In 2020, I went to my cousin's wedding.*
+      - id: act3-timeline
+        type: discussionQuestions
+        title: My timeline
+        items:
+          - question: In ___, I ___.
+          - question: In ___, I ___.
+          - question: In ___, I ___.
+          - question: In ___, I ___.
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Celebration diary'
+        skills: [Simple past sentences, Simple past questions]
+        steps:
+          - Write a **mini-diary (4–5 sentences)** about a special celebration.
+          - 'Use time expressions: *yesterday, last year, two years ago, on my last birthday…*'
+          - 'In pairs, ask each other follow-up questions: *Who was with you? What did you eat? What music did you listen to?*'
+        example: '*Last year, I celebrated my birthday at home. My friends came. We sang, danced, and ate pizza. It was very fun.*'
+      - id: act4-diary
+        type: discussionQuestions
+        title: My celebration diary
+        items:
+          - question: Last ___ / ___ ago, I celebrated ___.
+          - question: ___ came / was with me.
+          - question: We ___ and ___.
+          - question: It was ___.
+      - id: act5
+        type: classActivity
+        title: 'Activity 5: Famous interview role-play'
+        skills: [Simple past questions, Simple past sentences]
+        steps:
+          - Take a card with a famous or fictional role (singer, athlete, actor, influencer…).
+          - Work in pairs. One student is the **journalist**, the other is the **famous person**.
+          - The journalist asks about **a past celebration**; the famous person answers. Then switch roles.
+        example: "*I am Shakira. Last year, I sang at my son's birthday party. We danced and ate cake.*"
+      - id: act5-questions
+        type: discussionQuestions
+        title: Journalist's questions
+        items:
+          - question: Where was your best party?
+          - question: Who did you celebrate with?
+          - question: What did you eat or drink?
+          - question: What gift did you receive?
+          - question: What special moment do you remember?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Simple past sentences** (affirmative and negative, with
+          time expressions) and **Simple past questions**. Suggested split: Activities 2,
+          3 and 4 for sentences; Activities 1 and 5 for questions (Activity 4's
+          follow-up questions practise both). Choose two or three activities for the
+          lesson. The source gives no timings.
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first, then go around the group.
+      - id: n-warmup
+        anchor: warmup-title
+        text: >-
+          Ask each student at least two questions and make sure they answer in the simple
+          past. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: After the interviews, each student shares one detail about their partner in the third person (*She went…, They danced…*).
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Story 2 in the example uses the past perfect (*had never tried*); students do not
+          need it. Accept simple past only.
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Prepare role cards before the class (singer, athlete, actor, influencer, or
+          fictional characters). They are not in the notebook.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: special-occasions-past-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: skills-practiced
+        type: callout
+        tone: info
+        title: Skills practised
+        text: |-
+          Talking about **past experiences** (parties, birthdays, school memories, family events).
+          Making **affirmative, negative and question** forms in the simple past.
+          Using **time expressions** to say when something happened.
+      - id: rules-sentences
+        type: ruleSummary
+        skill: Simple past sentences
+        rules:
+          - text: '**Regular verbs:** add **-ed**.'
+            examples: [I celebrated my birthday at home., We danced all night.]
+          - text: 'Spelling: verb + *-e* → add only **-d** (*dance → danced*). Consonant + *-y* → **-ied** (*cry → cried*).'
+          - text: '**Irregular verbs** have their own past form. Memorize them (see the table).'
+            examples: [Last year I went to a wedding., We ate cake and sang.]
+          - text: "**Negative:** **did not (didn't) + base verb**. Never *didn't went*."
+            examples: [I did not eat cake., I didn't go to the party.]
+          - text: 'We use the simple past for finished actions at a specific time, for a sequence of actions, and for personal experiences.'
+          - text: 'Common time expressions:'
+            examples:
+              - 'yesterday, last night, last week, last month, last year'
+              - 'two days ago, three years ago, in 2020, on my last birthday'
+      - id: irregular-table
+        type: table
+        caption: Irregular verbs in this cycle
+        header: [Base verb, Simple past]
+        rows:
+          - [go, went]
+          - [have, had]
+          - [eat, ate]
+          - [see, saw]
+          - [give, gave]
+          - [come, came]
+          - [sing, sang]
+          - [speak, spoke]
+          - [meet, met]
+          - [make, made]
+          - [win, won]
+          - [drink, drank]
+      - id: rules-questions
+        type: ruleSummary
+        skill: Simple past questions
+        rules:
+          - text: '**Yes / no questions:** **Did + subject + base verb?**'
+            examples: ["Did you go to the party? — Yes, I did. / No, I didn't.", Did you dance?]
+          - text: '**Wh- questions:** **question word + did + subject + base verb?**'
+            examples:
+              - What did you do last weekend?
+              - Where did you go on your birthday?
+              - What gift did you receive?
+          - text: 'After *did*, the verb is in the base form: *Did you **eat**?* (not *Did you ate?*)'
+          - text: "With *be*, we don't use *did*: *Where **was** the party? Who **was** with you?*"
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: special-occasions-past-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy a message and send it. Mori will ask you questions; answer every one.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Part 1: Personal questions'
+        intro: 'Mori will ask questions like: *What gift did you receive on your last birthday? What gift did you give last year? Where did you celebrate your best birthday? What did you do on your first day of school? Did you ever go to a boring party? What happened?*'
+        message: Mori, ask me past tense questions about my celebrations and special experiences.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Part 2: Mini diary'
+        message: Mori, help me write a 5-sentence diary about a special celebration in the past.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Part 3: Timeline'
+        message: Mori, ask me to write 3 past tense sentences for a celebration timeline.
+      - id: mori-4
+        type: aiTutorPrompt
+        title: 'Part 4: Two stories'
+        message: Mori, help me create two past-tense stories, one real and one fake.
+      - id: mori-5
+        type: aiTutorPrompt
+        title: 'Part 5: Grammar practice'
+        intro: 'Mori will give you sentences like: *I celebrate my birthday at home. My friends give me a gift. We eat pizza and drink soda. I see my family. We dance and listen to music.*'
+        message: Mori, give me present-tense sentences and ask me to change them to the simple past.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: special-occasions-past-practice
+    book: workbook
+    title: 'Practice: Special Occasions - Past'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked right away, and you can try again.
+      - id: ex-sentences
+        type: activity
+        activity: special-occasions-past-sentences
+      - id: ex-questions
+        type: activity
+        activity: special-occasions-past-questions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: special-occasions-past-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Special occasions words
+        glossLang: he
+        link: https://quizlet.com/br/1106216275/conversations-english-special-occasions-past-flash-cards/
+        items: &special-occasions-past-words
+          - { term: Memory, gloss: זיכרון }
+          - { term: Remind (reminded), gloss: להזכיר / הזכיר }
+          - { term: Remember (remembered), gloss: לזכור / זכר }
+          - { term: Recall, gloss: להיזכר }
+          - { term: Experience, gloss: חוויה }
+          - { term: Story, gloss: סיפור }
+          - { term: Moment, gloss: רגע }
+          - { term: Highlight, gloss: רגע השיא }
+          - { term: Gathering, gloss: מפגש / התכנסות }
+          - { term: Family reunion, gloss: מפגש משפחתי }
+          - { term: Host (hosted), gloss: לארח / אירח }
+          - { term: Attend (attended), gloss: להגיע (לאירוע) / להשתתף }
+          - { term: Invite (invited), gloss: להזמין / הזמין }
+          - { term: Prepare (prepared), gloss: להכין / הכין }
+          - { term: Organize (organized), gloss: לארגן / ארגן }
+          - { term: Decorate (decorated), gloss: לקשט / קישט }
+          - { term: Celebrate (celebrated), gloss: לחגוג / חגג }
+          - { term: Participate (participated), gloss: להשתתף / השתתף }
+          - { term: Perform (performed), gloss: להופיע / הופיע }
+          - { term: Dance (danced), gloss: לרקוד / רקד }
+          - { term: Sing (sang), gloss: לשיר / שר }
+          - { term: Speak (spoke), gloss: לדבר / דיבר }
+          - { term: Give (gave), gloss: לתת / נתן }
+          - { term: Receive (received), gloss: לקבל / קיבל }
+          - { term: Laugh (laughed), gloss: לצחוק / צחק }
+          - { term: Cry (cried), gloss: לבכות / בכה }
+          - { term: Enjoy (enjoyed), gloss: ליהנות / נהנה }
+          - { term: Boring, gloss: משעמם }
+          - { term: Exciting, gloss: מרגש }
+          - { term: Awkward, gloss: מביך }
+          - { term: Memorable, gloss: שנחרט בזיכרון / מיוחד }
+          - { term: Unforgettable, gloss: בלתי נשכח }
+
+vocabulary:
+  - slug: special-occasions-past
+    title: Special Occasions - Past
+    items: *special-occasions-past-words
+
+activities:
+  - slug: special-occasions-past-sentences
+    title: "Simple past sentences: celebrated, went, didn't go"
+    minutes: 8
+    items:
+      - id: went-wedding
+        type: multipleChoice
+        prompt: Last year I ___ to my cousin's wedding.
+        options:
+          - { text: went, correct: true }
+          - {
+              text: go,
+              feedback: '*Go* is present. With *last year* we use the simple past: *went*.',
+            }
+          - { text: goed, feedback: '*Go* is irregular. The simple past is *went*, not *goed*.' }
+      - id: irregular-match
+        type: matching
+        prompt: Match each verb with its simple past form.
+        pairs:
+          - [eat, ate]
+          - [give, gave]
+          - [see, saw]
+          - [sing, sang]
+          - [have, had]
+      - id: danced-cried
+        type: fillBlank
+        prompt: Complete with the simple past of *dance* and *cry*.
+        text: At the wedding we ___ all night, and my mother ___ because she was so happy.
+        blanks: [[danced], [cried]]
+      - id: didnt-eat
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: I didn't eat cake., correct: true }
+          - {
+              text: I didn't ate cake.,
+              feedback: "After *didn't* (*did not*) we use the base verb: *didn't eat*.",
+            }
+          - {
+              text: I not ate cake.,
+              feedback: "The simple past negative needs *did not (didn't) + base verb*: *I didn't eat cake.*",
+            }
+      - id: negative-go
+        type: fillBlank
+        prompt: 'Make the sentence negative: *I went to the party.*'
+        text: I ___ to the party.
+        blanks: [["didn't go", did not go]]
+      - id: ago-tf
+        type: trueFalse
+        prompt: '*Two years ago I celebrated my graduation* is a correct sentence.'
+        answer: true
+        feedback:
+          correct: Right! *Two years ago* is a past time expression, and *celebrated* is the simple past.
+          incorrect: 'It is correct: *two years ago* + simple past (*celebrated*).'
+      - id: received-tf
+        type: trueFalse
+        prompt: '*Receive* is a regular verb. Its simple past is *received*.'
+        answer: true
+        feedback:
+          correct: 'Right! *Receive* is regular. It ends in *-e*, so we add only *-d*: *received*.'
+          incorrect: '*Receive* is regular: *receive → received* (verb + *-e* → add *-d*).'
+      - id: order-birthday
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: I celebrated my birthday at home.
+
+  - slug: special-occasions-past-questions
+    title: 'Simple past questions: Did you…? Where did you…?'
+    minutes: 8
+    items:
+      - id: did-you-dance
+        type: multipleChoice
+        prompt: Which question is correct?
+        options:
+          - { text: Did you dance at the party?, correct: true }
+          - {
+              text: Did you danced at the party?,
+              feedback: 'After *did* we use the base verb: *Did you dance?*',
+            }
+          - {
+              text: You did dance at the party?,
+              feedback: 'In a question, *did* comes before the subject: *Did you dance…?*',
+            }
+      - id: where-celebrate
+        type: fillBlank
+        prompt: Complete the question.
+        text: Where ___ you ___ your best birthday? — I celebrated it in a restaurant.
+        blanks: [[did], [celebrate]]
+      - id: gift-receive
+        type: multipleChoice
+        prompt: What gift ___ on your last birthday?
+        options:
+          - { text: did you receive, correct: true }
+          - {
+              text: did you received,
+              feedback: 'After *did* the verb stays in the base form: *receive*.',
+            }
+          - {
+              text: you received,
+              feedback: 'A wh- question needs *did* before the subject: *What gift did you receive?*',
+            }
+      - id: short-answers
+        type: matching
+        prompt: Match each question with its answer.
+        pairs:
+          - [Where was the party?, It was at my sister's house.]
+          - [Who did you celebrate with?, With my family.]
+          - [What did you eat?, We ate pizza and cake.]
+          - [Did you dance?, 'Yes, I did.']
+          - [How many people attended?, About fifty people.]
+      - id: was-party
+        type: trueFalse
+        prompt: '*Where did the party was?* is a correct question.'
+        answer: false
+        feedback:
+          correct: "Right! With *be* we don't use *did*: *Where was the party?*"
+          incorrect: "With *be* we don't use *did*. The correct question is *Where was the party?*"
+      - id: no-i-didnt
+        type: fillBlank
+        prompt: Complete the short answer.
+        text: Did you go to the wedding? — No, I ___.
+        blanks: [["didn't", did not]]
+      - id: question-word
+        type: multipleChoice
+        prompt: 'Answer: *I gave a t-shirt to my best friend.* What is the question?'
+        options:
+          - { text: What did you give to your best friend?, correct: true }
+          - {
+              text: Where did you give to your best friend?,
+              feedback: '*Where* asks about a place. The answer is a thing (a t-shirt), so we ask *What*.',
+            }
+          - {
+              text: What you gave to your best friend?,
+              feedback: 'A wh- question needs *did + subject + base verb*: *What did you give…?*',
+            }
+      - id: order-weekend
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: What did you do last weekend?

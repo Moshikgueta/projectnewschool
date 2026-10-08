@@ -1,0 +1,512 @@
+# Cycle "Fun and games", converted from the English Foundations digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-foundations-1
+slug: fun-and-games
+title: Fun and games
+goal: Talk about games and free time, using actions in the present and possessives.
+position: 11
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Actions in the present" and "Possessives") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Activity 1 (Simon Says) says it uses "possessive sentences", but it is marked
+    VERBS and the overview lists it under actions. It is listed under Actions in the
+    present here (it practises both). "Simon says: wave your hair" → "touch your
+    hair". The trick sentence "raise my right hand" is kept and explained in the
+    teacher note.
+  - >-
+    Activity 2's clues use *mine, yours, hers* ("Mine is brown. Yours is short."),
+    which are not in the summary or the vocabulary. The example now also shows the
+    forms from the summary (*My hair is brown. Your hair is short. Her hair is
+    long.*). Please decide which forms to use.
+  - >-
+    Activity 3 story example: "Do not like it" → "I do not like it."; "Get wet" →
+    "I get wet."
+  - >-
+    Summary, actions rule 1: the notebook says "I / you / they"; *we* was added
+    (we also take the verb without *s*). Rule 3's wrong example "I am watch TV." is
+    kept as a wrong example.
+  - >-
+    Summary, possessives rule 2 ("A possessive sentence has to describe something
+    and the possessor of it") is rewritten as "Say who owns it, then the thing". In
+    the table, "Domino" → "dominoes", "monopoly" → "Monopoly".
+  - >-
+    Small corrections: "my Yoga class" → "my yoga class"; warm-up "What is the
+    favorite TV Show of your ___ (member of the family/friend)" → "What is the
+    favorite TV show of your ___ (family member or friend)?".
+  - >-
+    Vocabulary: "Have – יש" → "יש לי / יש לך / יש להם"; "Friend – חבר" → "חבר /
+    חברה"; "Friends – חברים" → "חברים / חברות". "Our" is in the summary table but not
+    in the vocabulary; consider adding it (אנחנו → שלנו).
+  - >-
+    The notebook gives no activity times for this cycle, so none are recorded.
+  - >-
+    The Quizlet link's tracking parameter (?new) was removed.
+  - >-
+    The "Answer of student 1/2/3" lines are replaced by the optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: fun-and-games-class
+    title: 'Class: Fun and games'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Fun and games
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Actions in the present
+            description: Sentences with actions in the present (*I play. She plays.*)
+          - name: Possessives
+            description: '*my, your, his, her, our, their*'
+      - id: quizlet
+        type: externalLink
+        label: Fun and games on Quizlet
+        url: https://quizlet.com/il/1060774777/basic-english-fun-and-games-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. My favorite activity during the week is ___.
+        example: I am Dana. My favorite activity during the week is my yoga class.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What do you like to do in the mornings?
+            frame: I like to ___.
+          - question: What do you like to do in the evenings?
+            frame: I like to ___.
+          - question: Do you prefer to play sports or board games? Why?
+            frame: I prefer ___ because ___.
+          - question: Do you think only kids can play games, or can adults play too?
+            frame: I think ___ because ___.
+          - question: What is your favorite game? Why do you like it?
+            frame: My favorite game is ___. I like it because ___.
+          - question: What is the favorite TV show of your ___ (family member or friend)?
+            frame: His / Her favorite TV show is ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Simon Says'
+        skills: [Actions in the present]
+        steps:
+          - Listen to your teacher.
+          - Do the action only if your teacher says **"Simon says"**, and only if it is for **you**.
+          - Then you can be Simon! Tell your classmates what to do.
+        example: |-
+          *Simon says: raise your right hand.*
+          *Simon says: raise my right hand.*
+          *Simon says: clap your hands.*
+          *Simon says: stomp your feet.*
+          *Simon says: touch your nose.*
+          *Simon says: touch your hair.*
+          *Simon says: close your eyes.*
+          *Simon says: tell your classmates what to do.*
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: Guess the thing'
+        skills: [Possessives]
+        steps:
+          - Think of a thing. For example, *hair*.
+          - Give clues with possessive words.
+          - The other students listen to the clues and guess the thing.
+        example: |-
+          *My hair is brown. Your hair is short. Her hair is long.*
+          *(Mine is brown. Yours is short. Hers is long.)*
+          Answer: *Hair!*
+        wordBank: [hair, eyes, clothes, shoes, bag, house, car, phone, family, pet]
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Write a story together'
+        skills: [Actions in the present]
+        steps:
+          - Your teacher says the first sentence of the story.
+          - Each student adds one sentence to continue the story.
+        example: |-
+          Teacher: *It is a rainy day and I…*
+          Student 1: *…I do not like it.*
+          Student 2: *I go to the supermarket and I…*
+          Student 3: *…I get wet.*
+          **The end!**
+      - id: act3-starts
+        type: discussionQuestions
+        title: First sentences for the story
+        items:
+          - question: It is a rainy day and I ___.
+          - question: I play Monopoly with ___.
+          - question: I clean my house on a rainy day and ___.
+          - question: I do not like rainy days and I ___.
+          - question: I watch TV and ___.
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Two truths and a lie'
+        skills: [Possessives]
+        steps:
+          - Say **three sentences** with possessive words. Two are true and one is a lie.
+          - The other students listen and guess which sentence is the lie.
+          - Say the answer at the end!
+        example: |-
+          *My sister's name is Anna.*
+          *Our house is blue.*
+          *Her favorite animal is a giraffe.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Your three sentences
+        items:
+          - question: Sentence 1
+            frame: My ___'s ___ is ___.
+          - question: Sentence 2
+            frame: Our / His / Her ___ is ___.
+          - question: Sentence 3
+            frame: Their / Your ___ is ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **Actions in the present** (Activities 1 and 3) and
+          **Possessives** (Activities 2 and 4). Do the Quizlet and the warm-up questions,
+          then Activity 1 **or** 3, and Activity 2 **or** 4.
+      - id: n-intro
+        anchor: intro
+        text: Give your own example first, then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Say the sentences one by one. Students act only after "Simon says" and only
+          when the sentence is for them: "raise **my** right hand" is a trick (it is your
+          hand, so they do not move). Students can also read a sentence and be Simon.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Ideas for things: hair, eyes, clothes, shoes, bag, house, car, phone, family,
+          pet.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          More examples: *My brother's favorite sport is soccer. Their dog sleeps in the
+          bed. Your school is in London. His favorite food is pasta. Her phone is pink.
+          Our teacher's name is David.*
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: fun-and-games-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-actions
+        type: ruleSummary
+        skill: Actions in the present
+        rules:
+          - text: '**Who does the action + the verb.** With *I, you, we, they*, the verb does not change.'
+            examples:
+              - '**I** read a book.'
+              - '**You** drink hot tea.'
+              - '**They** watch a movie.'
+          - text: With *he* and *she*, add **s** to the end of the verb.
+            examples:
+              - '**He** listen**s** to music.'
+              - '**She** cook**s** soup.'
+          - text: Do **not** write *am, is, are* when you have a verb. Write the person and the verb.
+            examples: ['Right: *I watch TV.*', 'Wrong: *I am watch TV.*']
+      - id: rules-possessives
+        type: ruleSummary
+        skill: Possessives
+        rules:
+          - text: 'The possessive word comes **first**: *my favorite game*, not *favorite game my* (in Hebrew: המשחק **שלי**).'
+          - text: 'Say **who owns it**, then **the thing**: *my* (owner) + *favorite game* (thing).'
+          - text: Choose the word from the table.
+      - id: possessives-table
+        type: table
+        caption: Possessive words
+        header: [Word, Example]
+        rows:
+          - [My, My favorite game is Monopoly.]
+          - [Our, We are a big family. Our favorite place to play is our home.]
+          - [Your, Your favorite game is Simon Says.]
+          - [His, My father likes table games. His favorite game is dominoes.]
+          - [Her, My sister likes video games. Her favorite game is Super Mario.]
+          - [Their, I like that store. Their games are good.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: fun-and-games-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: >-
+          Open the chat with Mori, copy this message and send it. Mori will ask you
+          questions like *What is your favorite game? Do you play games with your friends?
+          What does your brother or sister do for fun?* Answer every question in the
+          present simple, and try to use *my, his, her, our, their*.
+      - id: mori-main
+        type: aiTutorPrompt
+        title: Fun and games
+        message: >-
+          Hi Mori! I want to have small talk conversations. Can you ask me small talk
+          questions about Fun and Games using the skills possessives and actions in
+          present simple? Please correct my mistakes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Extra practice
+      - id: mori-guess-game
+        type: aiTutorPrompt
+        title: Guess the game
+        intro: >-
+          Give Mori clues in the present simple with possessives. For example: *It's my
+          favorite game. I play it on my phone. My brother doesn't like it.* When Mori
+          guesses, send: **Now it's your turn! Think about a game and I will guess what it
+          is.**
+        message: Hey Mori! Let's play a game. I think about a game, and you need to guess what it is.
+      - id: mori-who
+        type: aiTutorPrompt
+        title: Who does it?
+        intro: >-
+          After this message, write a sentence like: *She plays tennis every Saturday.
+          She is my dad's daughter.* or *He plays computer games after school. He is my
+          parents' son.* Mori guesses the person (*Is it your sister?*). Then send: **Now
+          it's your turn! Tell me something someone in your family does for fun, and I
+          will guess who it is.**
+        message: >-
+          Hey Mori! Let's play a game. I tell you something someone in my family does
+          for fun. You need to guess who it is. I will use possessives and present
+          simple.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: fun-and-games-practice
+    book: workbook
+    title: 'Practice: Fun and games'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. You can try each question again.
+      - id: ex-actions
+        type: activity
+        activity: fun-and-games-actions
+      - id: ex-possessives
+        type: activity
+        activity: fun-and-games-possessives
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: fun-and-games-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Fun and games words
+        glossLang: he
+        link: https://quizlet.com/il/1060774777/basic-english-fun-and-games-flash-cards/
+        items: &fun-and-games-words
+          - { term: My, gloss: שלי }
+          - { term: Her, gloss: שלה }
+          - { term: His, gloss: שלו }
+          - { term: Their, gloss: שלהם }
+          - { term: Your, gloss: שלך }
+          - { term: Mother, gloss: אמא }
+          - { term: Father, gloss: אבא }
+          - { term: Sister, gloss: אחות }
+          - { term: Brother, gloss: אח }
+          - { term: Friend, gloss: חבר / חברה }
+          - { term: Friends, gloss: חברים / חברות }
+          - { term: Have, gloss: יש לי / יש לך / יש להם }
+          - { term: Has, gloss: יש לו / יש לה }
+          - { term: Right, gloss: ימין }
+          - { term: Left, gloss: שמאל }
+          - { term: To go, gloss: ללכת }
+          - { term: Umbrella, gloss: מטריה }
+          - { term: Couch, gloss: ספה }
+          - { term: Games, gloss: משחקים }
+          - { term: Monopoly, gloss: מונופול }
+          - { term: Car, gloss: רכב }
+          - { term: Blue, gloss: כחול }
+          - { term: Brown, gloss: חום }
+          - { term: Yellow, gloss: צהוב }
+          - { term: Pretty, gloss: יפה }
+          - { term: Ugly, gloss: מכוער }
+          - { term: Green, gloss: ירוק }
+          - { term: Tall, gloss: גבוה }
+          - { term: Small, gloss: קטן }
+          - { term: Big, gloss: גדול }
+
+vocabulary:
+  - slug: fun-and-games
+    title: Fun and games
+    items: *fun-and-games-words
+
+activities:
+  - slug: fun-and-games-actions
+    title: Actions in the present
+    minutes: 8
+    items:
+      - id: brother-plays
+        type: multipleChoice
+        prompt: My brother ___ soccer every Saturday.
+        options:
+          - { text: plays, correct: true }
+          - {
+              text: play,
+              feedback: '*My brother* is *he*. With *he* and *she*, add **s** to the verb: *plays*.',
+            }
+          - {
+              text: is play,
+              feedback: 'Do not write *am, is, are* when you have a verb: *My brother plays*.',
+            }
+      - id: watch-tv
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: I watch TV., correct: true }
+          - {
+              text: I am watch TV.,
+              feedback: 'Do not write *am, is, are* when you have a verb. Write the person and the verb: *I watch TV.*',
+            }
+          - { text: I watches TV., feedback: 'With *I*, the verb does not change: *I watch TV.*' }
+      - id: he-she-s
+        type: trueFalse
+        prompt: 'With *he* and *she*, we add *s* to the verb: *He listens to music.*'
+        answer: true
+        feedback:
+          correct: Right! *He listens*, *she cooks*.
+          incorrect: 'With *he* and *she*, we add *s*: *He listens to music. She cooks soup.*'
+      - id: listen-drink
+        type: fillBlank
+        prompt: Write the verb in the present.
+        text: He ___ (listen) to music. You ___ (drink) hot tea.
+        blanks: [[listens], [drink]]
+      - id: am-play
+        type: trueFalse
+        prompt: '*I am play Monopoly.* is a correct sentence.'
+        answer: false
+        feedback:
+          correct: Right! Do not write *am* with a verb. Say *I play Monopoly.*
+          incorrect: 'Do not write *am, is, are* when you have a verb. Say *I play Monopoly.*'
+      - id: he-she-forms
+        type: matching
+        prompt: Match each verb with its form for *he / she*.
+        pairs:
+          - [play, plays]
+          - [read, reads]
+          - [cook, cooks]
+          - [listen, listens]
+          - [clap, claps]
+      - id: friends-father
+        type: fillBlank
+        prompt: Write the verb in the present.
+        text: My friends ___ (play) board games. My father ___ (read) a book.
+        blanks: [[play], [reads]]
+      - id: sister-games
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: My sister plays video games.
+
+  - slug: fun-and-games-possessives
+    title: 'Possessives: my, your, his, her, our, their'
+    minutes: 8
+    items:
+      - id: his-game
+        type: multipleChoice
+        prompt: My father likes table games. ___ favorite game is dominoes.
+        options:
+          - { text: His, correct: true }
+          - { text: Her, feedback: '*Her* is for a woman or a girl. My father is a man: *his*.' }
+          - {
+              text: Their,
+              feedback: '*Their* is for more than one person. My father is one man: *his*.',
+            }
+      - id: her-game
+        type: multipleChoice
+        prompt: My sister likes video games. ___ favorite game is Super Mario.
+        options:
+          - { text: Her, correct: true }
+          - { text: His, feedback: '*His* is for a man or a boy. My sister is a girl: *her*.' }
+          - {
+              text: Your,
+              feedback: '*Your* is for the person you talk to. We talk about my sister: *her*.',
+            }
+      - id: word-order
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: My favorite game is Monopoly., correct: true }
+          - {
+              text: Favorite game my is Monopoly.,
+              feedback: 'The possessive word comes **first**: *my favorite game*.',
+            }
+          - {
+              text: Favorite my game is Monopoly.,
+              feedback: 'The possessive word comes **first**: *my favorite game*.',
+            }
+      - id: hebrew-order
+        type: trueFalse
+        prompt: 'In English, we say *favorite game my*, like in Hebrew (המשחק שלי).'
+        answer: false
+        feedback:
+          correct: 'Right! In English, the possessive word comes first: *my favorite game*.'
+          incorrect: 'In English, the possessive word comes **first**: *my favorite game*.'
+      - id: our-home
+        type: fillBlank
+        prompt: Complete with a possessive word.
+        text: We are a big family. ___ favorite place to play is ___ home.
+        blanks: [[Our], [our]]
+        wordBank: [My, Our, Their]
+      - id: pronouns
+        type: matching
+        prompt: Match each person with the possessive word.
+        pairs:
+          - [I, my]
+          - [you, your]
+          - [he, his]
+          - [she, her]
+          - [they, their]
+      - id: their-dog
+        type: fillBlank
+        prompt: Complete with *his*, *her* or *their*.
+        text: John and Susan have a dog. ___ dog sleeps in the bed.
+        blanks: [[Their]]
+        wordBank: [His, Her, Their]
+      - id: his-food
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: His favorite food is pasta.

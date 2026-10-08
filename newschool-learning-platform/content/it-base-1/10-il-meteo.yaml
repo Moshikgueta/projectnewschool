@@ -1,0 +1,556 @@
+# Cycle "Il meteo", converted from the Italian digital notebook
+# ("Quaderno Digitale 2026 – Italiano Base", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: il-meteo
+title: Il meteo
+goal: Descrivere il tempo e usare i numeri per le temperature.
+position: 10
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Descrivere il tempo" and "I numeri") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The general information lists three skills ("Date, Numeri, Tempo
+    Atmosferico"), but the activities and the summary use two: Descrivere and
+    Numeri ("Date e numeri"). The notebook has no material on dates, so the second
+    skill is called "Numeri" here. Please confirm.
+  - >-
+    Summary, adjective rule: the notebook says adjectives go **before** the noun,
+    a rule translated from English, while its own examples ("una giornata ventosa",
+    "un pomeriggio piovoso") put them after. In Italian they usually go after the
+    noun and agree with it. The rule is rewritten.
+  - >-
+    A summary rule on *fa caldo / fa freddo* and the impersonal weather verbs
+    (*piove, nevica, grandina, tuona*) was added from Activity 1 ("Verbi
+    meteorologici impersonali: piovere, grandinare, nevicare, tuonare").
+  - >-
+    Activity 1 example: the answers did not match the table ("Domenica ci sono 20
+    °C. Fa caldo." while the table says 3 °C and snow; "Martedì ci sono 28 °C. Fa
+    fresco." while the table says 25 °C, mild). They now follow the table. The
+    broken emoji in the table were removed.
+  - >-
+    Activity 3 example: "la temperatura minima è 60 °C" and Tokyo "65 °F / 55 °F"
+    (Fahrenheit left over from the English notebook) → 16 °C, and 18 °C / 13 °C.
+    "Meteo in tutto il mondo" → "Meteo nel mondo", as in the script; "Wow,!" →
+    "Wow!"; "Ci vediamo la prossima" → "Ci vediamo alla prossima"; "godetevi il
+    meteo" → "godetevi la giornata"; "Wow, sembra (caldo/freddo/piacevole)" → "Wow,
+    sembra una giornata calda / fredda / piacevole!".
+  - >-
+    Other corrections: introduction "le giornate di soleggiate" → "le giornate
+    soleggiate"; Activity 4 example "I giorni sono nuvolosi" → "Le giornate sono
+    nuvolose", as in the frame, and "Il Mio" → "Il mio"; numbers table "Ventitre"
+    → "Ventitré" (a rule on the accent was added); the heading "I Numeri 10-" →
+    "I numeri da 0 a 2000".
+  - >-
+    Homework: "porre e rispondere a domande semplici in inglese" → "in italiano"
+    (English left over); "Cosa fa? cosa piace fare ai chatbot in quel clima?" →
+    "Cosa piace fare a Mori con quel tempo?". The final summary questions are answer
+    boxes. Writing the summary in Google Docs is mentioned without a link.
+  - >-
+    Vocabulary: "Cabina" (בקתה) → "Baita", the Italian word for a mountain cabin
+    used in Activity 4; "Viaggiare (creare un itinerario)" → "Viaggiare" with the
+    gloss "לנסוע / לטייל". The other glosses (with niqqud) are unchanged.
+  - >-
+    The notebook gives no activity times, so none are set.
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes: students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: il-meteo-classe
+    title: 'Classe: Il meteo'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Il meteo
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Descrivere il tempo
+            description: "*c'è / ci sono*, *fa caldo / fa freddo*, gli aggettivi (*soleggiato, nuvoloso, piovoso*)"
+          - name: Numeri
+            description: I numeri da 0 a 2000 per le temperature (*ci sono 25 gradi*)
+      - id: quizlet
+        type: externalLink
+        label: Il meteo su Quizlet
+        url: https://quizlet.com/it/1052776565/meteo-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduzione
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Mi piacciono le giornate soleggiate / piovose perché ___.
+        example: Sono Marta. Mi piacciono le giornate soleggiate perché mi piace andare al parco.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Preferisci il caldo o il freddo? Perché?
+            frame: Preferisco il caldo / il freddo perché ___.
+          - question: Com'è il tempo oggi a ___? Com'è la temperatura lì?
+            frame: Oggi a ___ fa caldo / freddo. Ci sono ___ gradi.
+          - question: Preferisci trascorrere il tuo tempo libero all'aperto o al chiuso? Perché?
+            frame: Preferisco stare all'aperto / al chiuso perché ___.
+          - question: Cosa fai nelle giornate fredde?
+            frame: Nelle giornate fredde io ___.
+          - question: Cosa fai nelle giornate calde?
+            frame: Nelle giornate calde io ___.
+          - question: Qual è la tua stagione preferita? Perché?
+            frame: La mia stagione preferita è ___ perché ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Il bollettino meteorologico'
+        skills: [Numeri]
+        steps:
+          - Osservate insieme la tabella delle previsioni.
+          - Leggete le parole nuove della tabella.
+          - L'insegnante chiede com'è il tempo in un giorno della settimana. Lo studente risponde e poi fa la domanda a un altro studente.
+        example: |-
+          **Insegnante:** *Com'è il tempo domenica?*
+          **Studente 1:** *Domenica ci sono 3 gradi. Fa freddo e in montagna nevica. Com'è il tempo martedì?*
+          **Studente 2:** *Martedì ci sono 25 gradi. C'è il sole con le nuvole. Com'è il tempo venerdì?*
+      - id: act1-table
+        type: table
+        caption: Previsioni meteo – settimana simulata
+        header: [Giorno, Tempo, Temperatura, Vento, Consiglio]
+        rows:
+          - [Lunedì, Sole, 28 °C (caldo), Debole, T-shirt e cappellino]
+          - [Martedì, Sole con nuvole, 25 °C (mite), Leggero, Maglietta leggera]
+          - [Mercoledì, Pioggia, 20 °C (fresco), Moderato, Ombrello e giacca]
+          - [Giovedì, Temporale, 18 °C (fresco), Forte, Impermeabile e stivali]
+          - [Venerdì, Nuvoloso, 22 °C (mite), Debole, Felpa leggera]
+          - [Sabato, Vento e nuvole, 21 °C (fresco), Forte, Giacca a vento]
+          - [Domenica, Neve (in montagna), 3 °C (freddo), Leggero, Cappotto e guanti]
+      - id: act1-verbs
+        type: callout
+        tone: info
+        title: Verbi meteorologici (impersonali)
+        text: '*piovere → piove*, *grandinare → grandina*, *nevicare → nevica*, *tuonare → tuona*'
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Tanti stati…'
+        skills: [Descrivere il tempo, Numeri]
+        steps:
+          - Scegli uno stato degli Stati Uniti e completa le frasi qui sotto.
+          - Condividi con il gruppo.
+        example: |-
+          *Lo stato che scelgo è l'Arizona.*
+          *Mi piace questo stato perché mi piacciono il deserto e le giornate di sole.*
+          *In Arizona fa caldo.*
+          *La temperatura massima è di 45 gradi.*
+          *La temperatura minima è di 10 gradi.*
+          *Questo clima è perfetto per fare escursioni e nuotare in piscina.*
+
+          *Lo stato che scelgo è l'Alaska.*
+          *Non mi piace questo stato perché non mi piace il freddo, ma le montagne sono bellissime.*
+          *In Alaska fa freddo.*
+          *La temperatura massima è di 15 gradi.*
+          *La temperatura minima è di -30 gradi.*
+          *Questo clima è perfetto per andare a sciare e bere cioccolata calda.*
+      - id: act2-frame
+        type: discussionQuestions
+        title: Il mio stato
+        items:
+          - question: Lo stato che scelgo è ___.
+          - question: Mi piace / Non mi piace questo stato perché ___.
+          - question: In ___ fa caldo / freddo.
+          - question: La temperatura massima è di ___ gradi.
+          - question: La temperatura minima è di ___ gradi.
+          - question: Questo clima è perfetto per ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Simulazione TV'
+        skills: [Descrivere il tempo, Numeri]
+        steps:
+          - "Mettetevi d'accordo su: un nome per il programma televisivo e 4 città o paesi diversi (secondo il numero di studenti)."
+          - Uno studente è il conduttore in studio; gli altri sono i reporter nelle città e descrivono il meteo.
+          - La simulazione comincia! Seguite il copione qui sotto.
+      - id: act3-script
+        type: dialogue
+        lines:
+          - speaker: In studio
+            text: Buongiorno! Benvenuti a ___ (nome del programma)! Sono ___ (nome), in diretta dal nostro studio. Controlliamo il meteo! Per prima cosa, andiamo a ___ (città). ___ (nome), com'è il tempo?
+          - speaker: Reporter
+            text: Ciao da ___ (città)! Oggi è ___ (tempo). La temperatura massima è ___° e la temperatura minima è ___°. È una giornata fantastica per ___ (attività)! A te la parola!
+          - speaker: In studio
+            text: Wow, sembra una giornata calda / fredda / piacevole! Grazie, ___ (nome)! Andiamo nella nostra prossima città…
+          - speaker: Nuovo reporter
+            text: Ciao da ___ (città)! Oggi è ___ (tempo). La temperatura massima è ___° e la temperatura minima è ___°. È una giornata fantastica per ___ (attività)! A te la parola!
+          - speaker: In studio
+            text: È tutto per oggi! State al sicuro e godetevi la giornata. Ci vediamo alla prossima!
+      - id: act3-example-title
+        type: heading
+        level: 4
+        text: Esempio
+      - id: act3-example
+        type: dialogue
+        lines:
+          - speaker: Sara (in studio)
+            text: Buongiorno! Benvenuti a **Meteo nel mondo**! Io sono Sara, in diretta dal nostro studio. Controlliamo il meteo! Per prima cosa andiamo a New York. Davide, com'è il tempo?
+          - speaker: Davide (reporter a New York)
+            text: Ciao da New York! Oggi è nuvoloso. La temperatura massima è 22 °C e la temperatura minima è 16 °C. È una bella giornata per passeggiare nel parco! A te la parola!
+          - speaker: Sara (in studio)
+            text: Wow! Grazie, Davide! Andiamo nella nostra prossima città…
+          - speaker: Reporter a Tokyo
+            text: Ciao da Tokyo! Oggi qui è piovoso. La massima è 18 °C e la minima è 13 °C. È una bella giornata per restare in casa a leggere un libro! Ora torno a te!
+          - speaker: Sara (in studio)
+            text: È tutto per oggi! State al sicuro e godetevi la giornata. Ci vediamo alla prossima!
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Il mio posto perfetto'
+        skills: [Descrivere il tempo]
+        steps:
+          - Adesso sogniamo un po'!
+          - Completa le frasi qui sotto sul tuo posto perfetto.
+          - Condividi con il gruppo.
+        example: |-
+          *Il mio posto perfetto sono **le montagne**.*
+          *Lì fa **freddo**.*
+          *Le giornate sono **nuvolose e a volte soleggiate**.*
+          *Questo posto è **all'aperto**.*
+          *Ha **un grande lago, una baita accogliente e una bellissima foresta**.*
+          *Il mio **cane** viene con me nel mio posto perfetto ogni **fine settimana**.*
+      - id: act4-frame
+        type: discussionQuestions
+        title: Il mio posto perfetto
+        items:
+          - question: Il mio posto perfetto è ___.
+          - question: Lì fa caldo / freddo / tiepido / fresco.
+          - question: Le giornate sono soleggiate / piovose / nuvolose.
+          - question: Questo posto è al chiuso / all'aperto.
+          - question: Ha un ___, un ___ e un ___.
+          - question: Il mio ___ viene con me nel mio posto perfetto ogni ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Descrivere il tempo** (Attività 2, 3 e 4) e
+          **Numeri** (Attività 1, 2 e 3).
+      - id: n-intro
+        anchor: intro
+        text: Dai prima il tuo esempio, poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Fase 2: lavora sul lessico della tabella (sole, nuvole, pioggia, temporale,
+          vento, neve; caldo, mite, fresco, freddo). Presenta anche i verbi impersonali:
+          piove, grandina, nevica, tuona.
+      - id: n-act3
+        anchor: act3
+        text: Il numero di città dipende dal numero di studenti. Ripetete la parte «Nuovo reporter» per ogni città.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: il-meteo-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-describe
+        type: ruleSummary
+        skill: Descrivere il tempo
+        rules:
+          - text: Usiamo **c'è** (singolare) e **ci sono** (plurale) per parlare del tempo o di ciò che succede fuori.
+            examples:
+              - Oggi c'è una tempesta.
+              - Ci sono le nuvole.
+              - C'è una leggera brezza e ci sono nuvole pesanti che coprono il cielo.
+          - text: Per la temperatura usiamo **fa** + *caldo / freddo / fresco*. Per la pioggia e la neve usiamo i verbi impersonali.
+            examples: [Oggi fa freddo., Piove., Nevica in montagna., Grandina., Tuona.]
+          - text: "Gli aggettivi descrivono i nomi: ci dicono com'è il tempo. In italiano di solito vanno **dopo** il nome e cambiano con il genere e il numero del nome."
+            examples:
+              - una giornata ventosa
+              - un pomeriggio piovoso
+              - Il tempo è soleggiato, perfetto per un picnic.
+              - Ci aspetta una giornata calda e soleggiata, con una leggera brezza.
+          - text: Dopo la descrizione del tempo, aggiungi un verbo per dire cosa puoi fare o cosa succede.
+            examples:
+              [Il cielo è limpido e la temperatura è alta. Puoi andare a nuotare e goderti il sole.]
+      - id: numbers-title
+        type: heading
+        level: 3
+        text: I numeri da 0 a 2000
+      - id: numbers-table
+        type: table
+        rows:
+          - ['0', Zero, '10', Dieci, '20', Venti, '30', Trenta]
+          - ['1', Uno, '11', Undici, '21', Ventuno, '40', Quaranta]
+          - ['2', Due, '12', Dodici, '22', Ventidue, '50', Cinquanta]
+          - ['3', Tre, '13', Tredici, '23', Ventitré, '60', Sessanta]
+          - ['4', Quattro, '14', Quattordici, '24', Ventiquattro, '70', Settanta]
+          - ['5', Cinque, '15', Quindici, '25', Venticinque, '80', Ottanta]
+          - ['6', Sei, '16', Sedici, '26', Ventisei, '90', Novanta]
+          - ['7', Sette, '17', Diciassette, '27', Ventisette, '100', Cento]
+          - ['8', Otto, '18', Diciotto, '28', Ventotto, '1000', Mille]
+          - ['9', Nove, '19', Diciannove, '29', Ventinove, '2000', Duemila]
+      - id: rules-numbers
+        type: ruleSummary
+        skill: Numeri
+        rules:
+          - text: I numeri da 0 a 20 sono **irregolari**. Non seguono una regola fissa e dobbiamo **memorizzarli**. Consiglio — canta canzoni o fai giochi con i numeri.
+            examples:
+              ['uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci… fino a venti']
+          - text: 'Dopo il 20 i numeri seguono una struttura regolare: **decina + numero**.'
+            examples: [35 = trentacinque, 99 = novantanove]
+          - text: Quando dopo la decina vengono **uno** o **otto**, la decina perde la vocale finale.
+            examples: [21 = ventuno (non ventiuno), 28 = ventotto (non ventiotto)]
+          - text: Dopo il 20, quando il numero finisce con **tre**, scriviamo l'accento.
+            examples: [23 = ventitré, 33 = trentatré]
+          - text: 'Usa i numeri in situazioni reali. Consiglio: fai finta di essere in un negozio o al mercato.'
+            examples:
+              - "Dire l'età: Ho ventitré anni."
+              - "Dire l'ora: Sono le sette e mezza."
+              - 'Comprare qualcosa: Quanto costa? Costa nove euro.'
+              - 'Contare oggetti: Ci sono cinque studenti in classe.'
+              - 'Dire la temperatura: Ci sono venticinque gradi.'
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: il-meteo-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: 'Compiti: parla con Mori del meteo'
+      - id: goal
+        type: text
+        text: '**Obiettivo:** usare il vocabolario del meteo, fare domande semplici e rispondere in italiano.'
+      - id: how
+        type: text
+        text: Apri la chat con Mori (il chatbot della scuola), copia questo messaggio e invialo per iniziare la conversazione.
+      - id: mori-meteo
+        type: aiTutorPrompt
+        title: Il meteo
+        message: Ciao Mori! Vorrei parlarti del meteo. Com'è il tempo nella tua città?
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Aspetta la risposta di Mori. Poi fai **altre 3 domande** sulle sue risposte. Puoi usare queste domande:
+          *Fa caldo o freddo? · Qual è la temperatura oggi? · Ti piace il tempo oggi? · Cosa fai quando c'è il sole / fa freddo / piove?*
+          Scrivi anche le tue risposte. Esempio: *Oggi fa freddo. Indosso una giacca. Mi piace il clima freddo.*
+      - id: summary
+        type: discussionQuestions
+        title: Alla fine, scrivi un breve riassunto (qui, nel tuo quaderno o in Google Docs)
+        items:
+          - question: Com'è il meteo nella città di Mori?
+          - question: Cosa piace fare a Mori con quel tempo?
+          - question: Ti piace quel tipo di tempo? Perché?
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: il-meteo-pratica
+    book: workbook
+    title: 'Pratica: Il meteo'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratica le due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-descrivere
+        type: activity
+        activity: il-meteo-descrivere
+      - id: ex-numeri
+        type: activity
+        activity: il-meteo-numeri
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: il-meteo-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole del meteo
+        glossLang: he
+        link: https://quizlet.com/it/1052776565/meteo-flash-cards/
+        items: &il-meteo-words
+          - { term: Soleggiato, gloss: שָׁמֵשִׁי }
+          - { term: Nuvoloso, gloss: מְעוּנָן }
+          - { term: Piovoso, gloss: גְּשׁוּם }
+          - { term: Pioggia, gloss: גֶּשֶׁם }
+          - { term: Piovere, gloss: לְהִגָּשֵׁם }
+          - { term: Freddo, gloss: קַר }
+          - { term: Caldo, gloss: חַם }
+          - { term: Nevoso, gloss: שֶׁלֶגִי }
+          - { term: Neve, gloss: שֶׁלֶג }
+          - { term: Nevica, gloss: יוֹרֵד שֶׁלֶג }
+          - { term: Nebbia, gloss: עֲרָפֶל }
+          - { term: Tuono, gloss: רַעַם }
+          - { term: Grandine, gloss: בָּרָד }
+          - { term: Brezza, gloss: בְּרִיזָה / רוּחַ קַלָּה }
+          - { term: Tempesta, gloss: סוּפָה }
+          - { term: Massimo, gloss: מַכְסִימָלִי }
+          - { term: Minimo, gloss: מִינִימָלִי }
+          - { term: Temperatura, gloss: טֶמְפֶּרָטוּרָה }
+          - { term: Primavera, gloss: אָבִיב }
+          - { term: Estate, gloss: קַיִץ }
+          - { term: Autunno, gloss: סְתָו }
+          - { term: Inverno, gloss: חוֹרֶף }
+          - { term: Lunedì, gloss: יוֹם שֵׁנִי }
+          - { term: Martedì, gloss: יוֹם שְׁלִישִׁי }
+          - { term: Mercoledì, gloss: יוֹם רְבִיעִי }
+          - { term: Giovedì, gloss: יוֹם חֲמִישִׁי }
+          - { term: Venerdì, gloss: יוֹם שִׁשִּׁי }
+          - { term: Sabato, gloss: שַׁבָּת }
+          - { term: Domenica, gloss: יוֹם רִאשׁוֹן }
+          - { term: Città, gloss: עִיר }
+          - { term: Stato, gloss: מְדִינָה }
+          - { term: Lago, gloss: אֲגַם }
+          - { term: Foresta, gloss: יַעַר }
+          - { term: Baita, gloss: בִּקְתָּה }
+          - { term: All'aperto, gloss: בַּחוּץ }
+          - { term: All'interno / dentro casa, gloss: בִּפְנִים / בַּבַּיִת }
+          - { term: Sciare, gloss: לִגְלֹשׁ בַּשֶּׁלֶג }
+          - { term: Fare escursioni, gloss: לַעֲשׂוֹת טִיּוּל }
+          - { term: Viaggiare, gloss: לִנְסֹעַ / לְטַיֵּל }
+          - { term: Nuotare, gloss: לִשְׂחוֹת }
+          - { term: Cioccolato, gloss: שׁוֹקוֹלָד }
+          - { term: Perfetto, gloss: מוּשְׁלָם }
+          - { term: Giornalista, gloss: עִיתוֹנַאי }
+          - { term: Conduttore / Presentatore, gloss: מַנְחֶה / מַגִּישׁ }
+
+vocabulary:
+  - slug: il-meteo
+    title: Il meteo
+    items: *il-meteo-words
+
+activities:
+  - slug: il-meteo-descrivere
+    title: "Descrivere il tempo: c'è, ci sono, fa freddo"
+    minutes: 8
+    items:
+      - id: c-e-tempesta
+        type: multipleChoice
+        prompt: Oggi ___ una tempesta.
+        options:
+          - { text: "c'è", correct: true }
+          - { text: ci sono, feedback: "*Una tempesta* è singolare: usiamo *c'è*." }
+      - id: ci-sono-nuvole
+        type: multipleChoice
+        prompt: ___ le nuvole nel cielo.
+        options:
+          - { text: Ci sono, correct: true }
+          - { text: "C'è", feedback: '*Le nuvole* è plurale: usiamo *ci sono*.' }
+      - id: fa-freddo
+        type: multipleChoice
+        prompt: Domenica ci sono 3 gradi. ___
+        options:
+          - { text: Fa freddo., correct: true }
+          - { text: Fa caldo., feedback: '3 gradi sono pochi: *fa freddo*.' }
+          - { text: Ci sono freddo., feedback: 'Per la temperatura usiamo *fa*: *fa freddo*.' }
+      - id: giornata-soleggiata
+        type: multipleChoice
+        prompt: Oggi la giornata è ___.
+        options:
+          - { text: soleggiata, correct: true }
+          - { text: soleggiato, feedback: '*Giornata* è femminile: diciamo *soleggiata*.' }
+          - { text: soleggiate, feedback: '*Giornata* è singolare: diciamo *soleggiata*.' }
+      - id: aggettivo-dopo
+        type: trueFalse
+        prompt: "In italiano l'aggettivo va di solito prima del nome: *una ventosa giornata*."
+        answer: false
+        feedback:
+          correct: Giusto! Di solito l'aggettivo va dopo il nome.
+          incorrect: "Di solito l'aggettivo va dopo il nome: *una giornata ventosa*."
+      - id: fa-nevica
+        type: fillBlank
+        prompt: Completa con *fa* o con il verbo *nevicare* al presente.
+        text: Lunedì ___ caldo. Domenica in montagna ___.
+        blanks: [[fa], [nevica]]
+      - id: nome-verbo
+        type: matching
+        prompt: Unisci il nome al verbo del tempo.
+        pairs:
+          - [la pioggia, piove]
+          - [la neve, nevica]
+          - [la grandine, grandina]
+          - [il tuono, tuona]
+      - id: ordina-freddo
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Oggi fa freddo e piove.
+
+  - slug: il-meteo-numeri
+    title: 'I numeri: ventuno, ventotto, trentacinque'
+    minutes: 8
+    items:
+      - id: numeri-lettere
+        type: matching
+        prompt: Unisci il numero alla parola.
+        pairs:
+          - ['14', quattordici]
+          - ['21', ventuno]
+          - ['28', ventotto]
+          - ['35', trentacinque]
+          - ['99', novantanove]
+      - id: ventuno
+        type: multipleChoice
+        prompt: 21 = ?
+        options:
+          - { text: ventuno, correct: true }
+          - { text: ventiuno, feedback: 'Con *uno* la decina perde la vocale finale: *ventuno*.' }
+      - id: trentotto
+        type: multipleChoice
+        prompt: 38 = ?
+        options:
+          - { text: trentotto, correct: true }
+          - {
+              text: trentaotto,
+              feedback: 'Con *otto* la decina perde la vocale finale: *trentotto*.',
+            }
+          - {
+              text: trentaeotto,
+              feedback: 'Il numero è *decina + numero*, senza *e*: *trentotto*.',
+            }
+      - id: memorizzare
+        type: trueFalse
+        prompt: I numeri da 0 a 20 non seguono una regola fissa e dobbiamo memorizzarli.
+        answer: true
+        feedback:
+          correct: Giusto! Da 0 a 20 i numeri sono irregolari.
+          incorrect: I numeri da 0 a 20 sono irregolari, quindi dobbiamo memorizzarli.
+      - id: eta
+        type: fillBlank
+        prompt: Scrivi il numero 23 in lettere.
+        text: Ho ___ anni.
+        blanks: [[ventitré]]
+      - id: gradi
+        type: fillBlank
+        prompt: Scrivi il numero 28 in lettere.
+        text: Lunedì ci sono ___ gradi.
+        blanks: [[ventotto]]
+      - id: ordina-studenti
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Ci sono cinque studenti in classe.
+      - id: oggi
+        type: shortAnswer
+        prompt: Com'è la temperatura oggi nella tua città? Scrivi il numero in lettere. Per esempio, *Oggi ci sono ventidue gradi.*

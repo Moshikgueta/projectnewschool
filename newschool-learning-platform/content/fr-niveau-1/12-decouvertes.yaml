@@ -1,0 +1,557 @@
+# Cycle "Découvertes", converted from the French digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-1
+slug: decouvertes
+title: Découvertes
+goal: Dire où se trouvent les pays et les choses avec des prépositions, et décrire des actions au présent.
+position: 12
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Actions au présent" and "Les prépositions de lieu")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary rules and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    The overview said actions au présent = "activité 2 ou 3" and prépositions =
+    "activité 1 ou 3". Activity 3 (guess the body part) practises prepositions and
+    Activity 4 (creative / logical side) practises verbs, so the mapping is now:
+    actions = Activities 2 and 4, prépositions = Activities 1 and 3.
+  - >-
+    Summary: "Le présent simple" is an anglicism (English "present simple"); in French
+    it is "le présent". A line was ADDED: French has one present form for "now" and
+    for habits (je marche = I walk / I am walking).
+  - >-
+    Summary: a rule was ADDED for de + article (près de la France, à côté du Canada,
+    près d'Israël), which the examples already use (à côté du Canada, près d'Israël)
+    and which the exercises test. Please confirm.
+  - >-
+    Summary questions: "Qu'est-ce que fait la girafe ?" is kept as the second form
+    after "Que fait la girafe ?", and "Qu'est-ce que la girafe fait ?" is added as the
+    most common spoken form.
+  - >-
+    Small corrections: Activity 3 "Sur le tableau, il écrit" → "Au tableau, le
+    professeur écrit"; Activity 4 "Étudiant A / B" → "Élève A / B"; warm-up 4 "Mon
+    animal préféré est le ___" → "le / la / l' ___"; vocabulary "au dessus de" →
+    "au-dessus de", "oeil" → "œil".
+  - >-
+    Vocabulary glosses changed: "marcher – לצעוד" → "ללכת / לצעוד"; "partie du corps –
+    חלק גוף" → "חלק בגוף"; "au-dessus de – מעל ל" → "מעל"; Activity 1 table "מעל ל"
+    → "מעל". The body-part words la bouche and le nez (used in Activity 3) were
+    ADDED to the vocabulary list.
+  - >-
+    Activity 2 (animal picture) and Activity 4 (brain picture) need an image the
+    teacher shows; the notebook has no link for them. Activity 3 needs a small sheet
+    with body-part drawings (no link either). See the teacher notes.
+  - >-
+    Activity 3 timings (2 minutes, 5 minutes, 3–4 minutes) are kept in the steps (3–4
+    recorded as 4). The tips callout in the Mori section is not in this cycle's
+    notebook; it was copied from the other cycles.
+  - >-
+    The "Réponse de l'élève 1/2/3" lines are replaced by the optional answer boxes:
+    students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: decouvertes-classe
+    title: 'Classe : Découvertes'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Découvertes
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Actions au présent
+            description: "Dire ce que font les animaux et les gens : *l'oiseau vole, je dessine*"
+          - name: Les prépositions de lieu
+            description: '*au-dessus de, sous, à côté de, près de, loin de*'
+      - id: quizlet
+        type: externalLink
+        label: Découvertes sur Quizlet
+        url: https://quizlet.com/il/1074815620/basic-french-2025-decouvertes-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d'introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m'appelle ___. J'aime apprendre de nouvelles choses sur ___.
+        example: Je m'appelle Lévanah. J'aime apprendre de nouvelles choses sur les pays étrangers.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d'échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quel est ton pays préféré ? Pourquoi ?
+            frame: Mon pays préféré est ___ parce que ___.
+          - question: Ce pays est-il près ou loin d'Israël ?
+            frame: Ce pays est près / loin d'Israël.
+          - question: Que peux-tu faire dans ce pays ?
+            frame: On peut ___, ___ et ___.
+          - question: Quel est ton animal préféré ? Pourquoi ?
+            frame: Mon animal préféré est le / la / l' ___ parce que ___.
+          - question: Où vit ton animal préféré ?
+            frame: Il / Elle vit ___.
+          - question: Que fait-il tous les jours ?
+            frame: Tous les jours, il / elle ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Où est ce pays ?'
+        skills: [Les prépositions de lieu]
+        steps:
+          - 'Révision : le professeur révise les prépositions du tableau ci-dessous avec la classe.'
+          - Le professeur donne un pays à chaque élève.
+          - Dis où se trouve ce pays avec **au-dessus de**, **sous**, **à côté de**, **près de** ou **loin de**.
+          - Le professeur pose une question à un élève, l'élève répond. On continue avec d'autres pays jusqu'à ce que tout le monde participe.
+        example: |-
+          *La France est à côté de l'Espagne.*
+          — *L'Italie est-elle près ou loin de la France ?*
+          — *L'Italie est près de la France.*
+      - id: act1-table
+        type: table
+        caption: Les prépositions
+        header: [Français, Hébreu]
+        rows:
+          - [au-dessus de, מעל]
+          - [sous (ou en dessous de), מתחת]
+          - [à côté de, ליד]
+          - [près de, קרוב ל]
+          - [loin de, רחוק מ]
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Que font les animaux ?'
+        skills: [Actions au présent]
+        steps:
+          - Le professeur montre une image avec plusieurs animaux.
+          - "Dis ce que tu vois dans l'image. Exemple : « Je vois un éléphant. »"
+          - Choisis un animal et dis ce qu'il fait.
+        example: |-
+          L'éléphant **marche**.
+          La girafe **mange**.
+          Le léopard **grimpe**.
+          Le singe **grimpe**.
+          L'oiseau **vole**.
+        wordBank: [marcher, grimper, manger, sourire, voler]
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Devine la partie du corps'
+        skills: [Les prépositions de lieu]
+        steps:
+          - 'Préparation (2 minutes) : le professeur donne une petite feuille avec des dessins de parties du corps et écrit des questions modèles au tableau.'
+          - "L'élève mystère choisit une partie du corps en secret (exemple : la main)."
+          - "Questions (5 minutes) : les autres élèves posent des questions. L'élève mystère répond oui ou non."
+          - "Deviner (4 minutes) : « Est-ce la main ? Est-ce le pied ? Est-ce l'œil ? » Celui qui trouve devient le nouvel élève mystère."
+        example: |-
+          Élève B : *Est-ce sur ton visage ?* — Élève mystère : *Oui.*
+          Élève C : *Est-ce près de tes pieds ?* — Élève mystère : *Non.*
+          Élève D : *Utilises-tu cette partie du corps pour écrire ?* — Élève mystère : *Oui.*
+        wordBank:
+          - la tête
+          - la main
+          - le pied
+          - la bouche
+          - le nez
+          - l'œil / les yeux
+          - l'oreille
+      - id: act3-questions
+        type: discussionQuestions
+        title: Questions modèles
+        answerable: false
+        items:
+          - question: Est-ce sur ton visage ?
+          - question: Est-ce près de tes pieds ?
+          - question: Utilises-tu cette partie du corps pour parler ?
+          - question: Utilises-tu cette partie du corps pour voir ?
+          - question: Utilises-tu cette partie du corps pour marcher ?
+          - question: Utilises-tu cette partie du corps pour écrire ?
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Côté gauche ou côté droit ?'
+        skills: [Actions au présent]
+        steps:
+          - Le professeur explique que le cerveau a **un côté créatif** et **un côté logique**, puis montre une image.
+          - Mettez-vous par deux. L'élève A pose les questions à B, puis B pose les mêmes questions à A.
+          - Chaque élève présente ce que son partenaire a dit.
+        example: |-
+          A : *Que fais-tu quand tu te sens créatif ?*
+          B : *Quand je me sens créatif, je dessine et j'imagine des choses.*
+          *Yosi dessine et imagine des choses quand il se sent créatif.*
+          *Dana compte et résout des problèmes quand elle est logique.*
+        wordBank:
+          - dessiner
+          - chanter
+          - danser
+          - imaginer
+          - créer
+          - jouer
+          - écrire
+          - compter
+          - lire
+          - résoudre
+          - planifier
+          - organiser
+          - étudier
+          - penser
+      - id: act4-questions
+        type: discussionQuestions
+        items:
+          - question: 'Côté droit du cerveau (créatif) : que fais-tu quand tu te sens créatif / créative ?'
+            frame: Je me sens créatif / créative quand je ___.
+          - question: 'Côté gauche du cerveau (logique) : que fais-tu quand tu es logique ?'
+            frame: Je suis logique quand je ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **actions au présent** (Activités 2 et 4) et
+          **les prépositions de lieu** (Activités 1 et 3). Choisissez une activité pour
+          chaque compétence.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: Donnez votre propre exemple d'abord, puis interrogez chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 20
+        text: Posez au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Préparez une carte du monde à partager à l'écran. Faites attention à *de* :
+          *près de la France*, *à côté du Canada*, *près d'Israël*.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Préparez une image avec plusieurs animaux (éléphant, girafe, léopard, singe,
+          oiseau) à partager à l'écran ; le cahier n'a pas de lien pour cette image.
+      - id: n-act3
+        anchor: act3
+        minutes: 11
+        text: >-
+          Préparez une petite feuille avec des dessins de parties du corps (tête, main,
+          pied, bouche, nez, œil, oreille) et écrivez les questions modèles au tableau.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Montrez une image du cerveau avec un côté créatif (dessiner, chanter, danser…)
+          et un côté logique (compter, lire, résoudre…). Le cahier n'a pas de lien pour
+          cette image.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: decouvertes-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd'hui
+      - id: rules-present
+        type: ruleSummary
+        skill: Actions au présent
+        rules:
+          - text: "On utilise le présent pour parler de ce qui se passe **maintenant**, d'une **habitude** ou d'une vérité générale."
+          - text: 'En français, il y a une seule forme : *je marche* = אני הולך (maintenant ou tous les jours).'
+          - text: 'Structure : **sujet + verbe + complément**.'
+            examples: [Je marche dans le parc., Elle chante en classe., Nous étudions le français.]
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: Les prépositions de lieu
+        rules:
+          - text: Elles servent à dire **où se trouve** une chose.
+          - text: "Après *de* : de + le = **du**, de + la = **de la**, de + les = **des**, et **d'** devant une voyelle."
+            examples:
+              [
+                Les États-Unis sont à côté du Canada.,
+                L'Italie est près de la France.,
+                L'Égypte est près d'Israël.,
+              ]
+      - id: prepositions-table
+        type: table
+        caption: Les prépositions de lieu
+        header: [Préposition, Exemple]
+        rows:
+          - [Au-dessus de, L'avion passe au-dessus de la ville.]
+          - [Sous / en dessous de, Le chien est sous la table.]
+          - [À côté de, Israël est à côté de la Jordanie.]
+          - [Près de, L'Égypte est près d'Israël.]
+          - [Loin de, Le Japon est loin d'Israël.]
+      - id: rules-questions
+        type: ruleSummary
+        skill: Questions et réponses simples
+        rules:
+          - text: "**Que ? / Qu'est-ce que ?**"
+            examples: ["Que fait la girafe ? / Qu'est-ce que la girafe fait ? → *La girafe mange.*"]
+          - text: '**Où ?**'
+            examples: ['Où vit le lion ? → *Il vit en Afrique.*']
+          - text: '**Qui ?**'
+            examples: ['Qui chante ? → *Shakira chante.*']
+          - text: '**Quand ?**'
+            examples: ['Quand marches-tu ? → *Je marche le matin.*']
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 20
+        text: >-
+          Révisez les deux compétences avec le groupe et demandez un nouvel exemple pour
+          chaque règle. La forme « Qu'est-ce que fait la girafe ? » existe aussi ; à ce
+          niveau, préférez « Que fait la girafe ? ».
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: decouvertes-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie ce message et envoie-le. Mori va te poser des questions ; réponds à toutes les questions.
+      - id: mori-start
+        type: aiTutorPrompt
+        title: Les animaux et les pays
+        message: Bonjour Mori, je veux parler des animaux et des pays. Peux-tu me poser des questions avec des prépositions et des actions au présent ?
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S'il te plaît, pose-moi plus de questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m'expliquer en hébreu mais en gardant la phrase en français, s'il te plaît ?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Pratique supplémentaire
+      - id: mori-ou
+        type: aiTutorPrompt
+        title: Où se trouve ce pays ou cet animal ?
+        intro: "Exemples de réponses : *La Thaïlande est loin d'Israël. Le zèbre vit près de la rivière. Les États-Unis sont à côté du Canada.*"
+        message: Donne-moi un pays ou un animal, et je te dirai où il est. Corrige-moi si je me trompe.
+      - id: mori-animal
+        type: aiTutorPrompt
+        title: Que fait l'animal ?
+        intro: "Exemples de réponses : *La girafe mange des feuilles. Le singe grimpe à l'arbre. L'oiseau vole. L'éléphant marche.*"
+        message: Pose-moi des questions sur les animaux.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: decouvertes-pratique
+    book: workbook
+    title: 'Pratique : Découvertes'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux essayer encore une fois.
+      - id: ex-present
+        type: activity
+        activity: decouvertes-present
+      - id: ex-prepositions
+        type: activity
+        activity: decouvertes-prepositions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: decouvertes-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Découvertes
+        glossLang: he
+        link: https://quizlet.com/il/1074815620/basic-french-2025-decouvertes-flash-cards/
+        items: &decouvertes-words
+          - { term: animal, gloss: חיה }
+          - { term: éléphant, gloss: פיל }
+          - { term: girafe, gloss: ג'ירפה }
+          - { term: léopard, gloss: נמר }
+          - { term: singe, gloss: קוף }
+          - { term: oiseau, gloss: ציפור }
+          - { term: grimper, gloss: לטפס }
+          - { term: marcher, gloss: ללכת / לצעוד }
+          - { term: manger, gloss: לאכול }
+          - { term: voler, gloss: לעוף }
+          - { term: sourire, gloss: לחייך }
+          - { term: dessiner, gloss: לצייר }
+          - { term: chanter, gloss: לשיר }
+          - { term: danser, gloss: לרקוד }
+          - { term: imaginer, gloss: לדמיין }
+          - { term: créer, gloss: ליצור }
+          - { term: écrire, gloss: לכתוב }
+          - { term: compter, gloss: לספור }
+          - { term: lire, gloss: לקרוא }
+          - { term: résoudre, gloss: לפתור }
+          - { term: planifier, gloss: לתכנן }
+          - { term: organiser, gloss: לארגן }
+          - { term: étudier, gloss: ללמוד }
+          - { term: penser, gloss: לחשוב }
+          - { term: au-dessus de, gloss: מעל }
+          - { term: sous / en dessous de, gloss: מתחת }
+          - { term: près de, gloss: קרוב ל }
+          - { term: à côté de, gloss: ליד }
+          - { term: loin de, gloss: רחוק מ }
+          - { term: partie du corps, gloss: חלק בגוף }
+          - { term: tête, gloss: ראש }
+          - { term: main, gloss: יד }
+          - { term: pied, gloss: כף רגל }
+          - { term: bouche, gloss: פה }
+          - { term: nez, gloss: אף }
+          - { term: œil / yeux, gloss: עין / עיניים }
+          - { term: oreille, gloss: אוזן }
+
+vocabulary:
+  - slug: decouvertes
+    title: Découvertes
+    items: *decouvertes-words
+
+activities:
+  - slug: decouvertes-present
+    title: Actions au présent
+    minutes: 8
+    items:
+      - id: oiseau-vole
+        type: multipleChoice
+        prompt: L'oiseau ___.
+        options:
+          - { text: vole, correct: true }
+          - { text: voles, feedback: "*Voles* est pour *tu*. *L'oiseau* = *il* : il vole." }
+          - {
+              text: volent,
+              feedback: "*Volent* est pour *ils / elles* (plusieurs). *L'oiseau* = *il* : il vole.",
+            }
+      - id: singes
+        type: multipleChoice
+        prompt: Les singes ___ à l'arbre.
+        options:
+          - { text: grimpent, correct: true }
+          - { text: grimpe, feedback: '*Les singes* = *ils* (pluriel) : le verbe finit en *-ent*.' }
+          - {
+              text: grimpons,
+              feedback: '*Grimpons* est pour *nous*. *Les singes* = *ils* : ils grimpent.',
+            }
+      - id: nous-chantons
+        type: multipleChoice
+        prompt: Mes amis et moi, nous ___ le week-end.
+        options:
+          - { text: chantons, correct: true }
+          - {
+              text: chantez,
+              feedback: '*Chantez* est pour *vous*. Avec *nous*, le verbe finit en *-ons*.',
+            }
+          - {
+              text: chantent,
+              feedback: '*Chantent* est pour *ils / elles*. Avec *nous*, on dit *nous chantons*.',
+            }
+      - id: etudier-chanter
+        type: fillBlank
+        prompt: Complète avec le verbe au présent.
+        text: Nous ___ (étudier) le français. Elle ___ (chanter) en classe.
+        blanks: [[étudions], [chante]]
+      - id: dana
+        type: fillBlank
+        prompt: Complète avec le verbe au présent.
+        text: Dana ___ (compter) et ___ (organiser) quand elle est logique.
+        blanks: [[compte], [organise]]
+      - id: maintenant-habitude
+        type: trueFalse
+        prompt: On peut dire « Je marche maintenant » et aussi « Je marche tous les matins ».
+        answer: true
+        feedback:
+          correct: 'Oui ! Le présent sert pour maintenant et pour une habitude.'
+          incorrect: 'En français, le présent sert pour maintenant **et** pour une habitude : les deux phrases sont correctes.'
+      - id: questions
+        type: matching
+        prompt: Associe chaque question à sa réponse.
+        pairs:
+          - [Que fait la girafe ?, La girafe mange.]
+          - [Où vit le lion ?, Il vit en Afrique.]
+          - [Qui chante ?, Shakira chante.]
+          - [Quand marches-tu ?, Je marche le matin.]
+      - id: ordre-singe
+        type: reorderSentence
+        prompt: Remets les mots dans l'ordre.
+        sentence: Le singe grimpe à l'arbre.
+
+  - slug: decouvertes-prepositions
+    title: Les prépositions de lieu
+    minutes: 8
+    items:
+      - id: avion
+        type: multipleChoice
+        prompt: L'avion passe ___ la ville.
+        options:
+          - { text: au-dessus de, correct: true }
+          - {
+              text: sous,
+              feedback: "L'avion est dans le ciel, plus haut que la ville : *au-dessus de*.",
+            }
+          - {
+              text: à côté,
+              feedback: "Il manque *de* : on dit *à côté de*. Et l'avion est dans le ciel : *au-dessus de*.",
+            }
+      - id: bouche
+        type: multipleChoice
+        prompt: La bouche est ___ le nez.
+        options:
+          - { text: sous, correct: true }
+          - {
+              text: au-dessus de,
+              feedback: 'La bouche est plus bas que le nez : elle est *sous* le nez.',
+            }
+          - { text: loin de, feedback: "La bouche n'est pas loin du nez : elle est *sous* le nez." }
+      - id: japon
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Le Japon est loin d'Israël., correct: true }
+          - {
+              text: Le Japon est loin de Israël.,
+              feedback: "Devant une voyelle, *de* devient *d'* : loin d'Israël.",
+            }
+          - {
+              text: Le Japon est près d'Israël.,
+              feedback: "Le Japon est en Asie, très loin : *loin d'Israël*.",
+            }
+      - id: du-de-la
+        type: fillBlank
+        prompt: Complète avec *du* ou *de la*.
+        text: Les États-Unis sont à côté ___ Canada. L'Italie est près ___ France.
+        blanks: [[du], [de la]]
+        wordBank: [du, de la]
+      - id: loin-d
+        type: fillBlank
+        prompt: "Complète avec le contraire de *près d'*."
+        text: Le Japon n'est pas près d'Israël. Il est ___ Israël.
+        blanks: [["loin d'"]]
+      - id: de-le
+        type: trueFalse
+        prompt: 'On dit « Le chat est à côté du chien » parce que de + le = du.'
+        answer: true
+        feedback:
+          correct: 'Exact ! de + le = *du*.'
+          incorrect: 'On ne dit pas « de le » : de + le = *du*. Le chat est à côté du chien.'
+      - id: sens
+        type: matching
+        prompt: Associe chaque préposition à sa traduction.
+        pairs:
+          - [au-dessus de, מעל]
+          - [sous, מתחת]
+          - [à côté de, ליד]
+          - [près de, קרוב ל]
+          - [loin de, רחוק מ]
+      - id: ordre-chien
+        type: reorderSentence
+        prompt: Remets les mots dans l'ordre.
+        sentence: Le chien est sous la table.

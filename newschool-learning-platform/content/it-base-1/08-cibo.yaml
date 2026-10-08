@@ -1,0 +1,573 @@
+# Cycle "Cibo", converted from the Italian digital notebook
+# ("Quaderno Digitale 2026 – Italiano Base", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-base-1
+slug: cibo
+title: Cibo
+goal: Parlare del cibo con i verbi al presente e i possessivi.
+position: 8
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Verbi al presente" and "Possessivi") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary rule 2 for the present tense ("with the third person singular there is
+    always a different form") is a literal translation of the English rule (he/she
+    + -s). In Italian every person has its own ending. It is rewritten as "ogni
+    persona ha la sua forma", with the full present of *mangiare* and *bere* in a
+    table. "Presente semplice" (an English term) is written as "presente" throughout,
+    also in the Mori message. Please confirm.
+  - >-
+    The possessive rule now also says that *loro* always keeps the article (*il
+    loro padre*) and that relatives in the plural keep it (*i miei fratelli*); the
+    table of all possessive forms is new. In the class list, "Il suo
+    (maschile/femminile)" is written as "Il suo (di lui o di lei)".
+  - >-
+    Activity 2 has no heading in the notebook (it starts at "Fase 1 – Preparazione"
+    after Activity 1's verb list). It is called "Attività 2: Al ristorante" here and
+    assigned to the present-tense skill, as the general information says. The
+    restaurant menu is not in the notebook: the teacher shares one on screen.
+  - >-
+    Activity 3 example: the notebook gives the question "Cosa mangia e beve tuo
+    fratello?" to Student 2, then Student 2 answers it. The question is now said by
+    Student 1 to Student 2. "mio marito/moglie" → "mio marito / mia moglie".
+  - >-
+    The general information says the skills are practised with "Domande 1–7", but
+    the notebook has only 5 warm-up questions. The teacher note lists the plan
+    without question numbers. The notebook gives no activity times, so none are set.
+  - >-
+    Introduction frame: articles added ("Il mio cibo preferito è la pizza", not
+    "è pizza"); example "Io sono Marta" → "Sono Marta", as in the frame.
+  - >-
+    Mori tips: "Se Mori ti spiega qualcosa in inglese" and "con la frase in inglese"
+    were English left over from the English notebook; both now say *italiano*. In
+    the Mori activity "Al ristorante", "io ordinerò" (future) → "io ordino", to stay
+    in the present tense.
+  - >-
+    Vocabulary: the verb pairs (Tagliare / Io taglio…) are kept as two cards each,
+    as in the notebook; "Bere / Io bevo" glosses unchanged. "Ungere / spalmare" from
+    the activity is not in the notebook vocabulary and was not added.
+  - >-
+    The "Risposta dello studente 1/2/3" lines are replaced by the optional answer
+    boxes: students may type, and the teacher sees the group's answers.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: cibo-classe
+    title: 'Classe: Cibo'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cibo
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Verbi al presente
+            description: 'Azioni e abitudini: *io mangio, tu mangi, lei beve*'
+          - name: Possessivi
+            description: '*il mio, il tuo, il suo, il nostro, il vostro, il loro*'
+      - id: quizlet
+        type: externalLink
+        label: Cibo su Quizlet
+        url: https://quizlet.com/br/1068046233/italiano-basico-cibo-atualizato-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazione
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Il mio cibo preferito è ___ (la pizza, l'hamburger, la lasagna…).
+        example: Sono Marta. Il mio cibo preferito è il cioccolato.
+      - id: possessives-title
+        type: heading
+        level: 3
+        text: I possessivi con esempi
+      - id: possessives
+        type: examples
+        items:
+          - text: '**Il mio** → *Il mio cibo preferito è la pizza.*'
+          - text: '**Il tuo** → *Qual è il tuo ristorante preferito?*'
+          - text: '**Il suo** (di lui o di lei) → *Mio padre ama il cioccolato. Il suo preferito è quello bianco.*'
+          - text: '**La sua** → *Mia sorella ordina patatine fritte. La sua porzione non è pronta.*'
+          - text: '**Il nostro** → *Io e mio marito abbiamo un ristorante. Il nostro ristorante è molto grande.*'
+          - text: '**Il vostro** → *Ragazzi, qual è il vostro piatto preferito?*'
+          - text: '**Il loro** → *I miei amici cucinano male. I loro dolci non sono buoni.*'
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Ti piace mangiare? Cosa ti piace mangiare?
+            frame: Sì, mi piace mangiare ___.
+          - question: Cosa cucini a casa?
+            frame: Io cucino ___.
+          - question: Qual è il tuo ristorante preferito?
+            frame: Il mio ristorante preferito è ___.
+          - question: Qual è il sapore del tuo cibo preferito?
+            frame: Il mio cibo preferito è ___ (dolce, salato, amaro…).
+          - question: Qual è il tuo ingrediente preferito per cucinare?
+            frame: Il mio ingrediente preferito per cucinare è ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Il tuo panino preferito'
+        skills: [Verbi al presente, Possessivi]
+        steps:
+          - Cerca online (o pensa) gli **ingredienti del tuo panino preferito** in italiano. Massimo **5 ingredienti**.
+          - Presenta il tuo panino alla classe con le frasi qui sotto.
+          - Spiega come prepari il tuo panino con i verbi al presente (*io taglio, io metto…*).
+        example: |-
+          *Questo è il mio panino preferito.*
+          *Il nome del panino è **panino alla caprese**.*
+          *Gli ingredienti del mio panino sono: pane, mozzarella, pomodoro, basilico e olio d'oliva.*
+      - id: act1-frame
+        type: discussionQuestions
+        title: Il mio panino
+        items:
+          - question: Questo è il mio panino preferito. Il nome del panino è ___.
+          - question: 'Gli ingredienti del mio panino sono: ___, ___, ___, ___ e ___.'
+          - question: Come prepari il tuo panino?
+            frame: Io taglio ___. Io metto ___. Io aggiungo ___. Io chiudo ___.
+      - id: act1-how
+        type: text
+        text: >-
+          Per spiegare come si prepara un panino usiamo prima il **verbo all'infinito +
+          nome** (*tagliare il pane a metà*). Poi usiamo lo stesso verbo alla **prima
+          persona singolare (io)**: *io taglio il pane a metà*.
+      - id: act1-steps
+        type: table
+        caption: Come preparo il panino
+        header: [Infinito, Io]
+        rows:
+          - [Tagliare il pane a metà, Io taglio il pane a metà.]
+          - [Aggiungere formaggio e pomodoro, Io aggiungo formaggio e pomodoro.]
+          - [Chiudere il panino, Io chiudo il panino.]
+      - id: act1-verbs
+        type: table
+        caption: Verbi utili per i panini
+        header: [Infinito, Io]
+        rows:
+          - [Tagliare, io taglio]
+          - [Aprire, io apro]
+          - [Chiudere, io chiudo]
+          - [Ungere / spalmare, io ungo / io spalmo]
+          - [Mettere, io metto]
+          - [Aggiungere, io aggiungo]
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Al ristorante'
+        skills: [Verbi al presente]
+        steps:
+          - L'insegnante condivide il **menù di un ristorante italiano** (vero o inventato).
+          - Insieme, inventate un **nome divertente per il ristorante** (per esempio *La Trattoria Felice*, *Il Gusto Italiano*).
+          - Uno studente fa il **cameriere**, gli altri sono i **clienti**.
+          - Completate il dialogo qui sotto con i piatti e le bevande del menù.
+      - id: act2-dialogue
+        type: dialogue
+        lines:
+          - speaker: Cameriere
+            text: Buongiorno! Benvenuti a ___ (nome del ristorante). Cosa desiderate ordinare?
+          - speaker: Cliente 1
+            text: Per antipasto prendo ___ e da bere ___.
+          - speaker: Cliente 2
+            text: Per antipasto prendo ___ e da bere ___.
+          - speaker: Cliente 3
+            text: Per antipasto prendo ___ e da bere ___.
+          - speaker: Cameriere
+            text: Quindi, tu prendi ___ e ___. Tu prendi ___ e ___. Tu prendi ___ e ___.
+          - speaker: Cameriere
+            text: Ecco i vostri antipasti! Com'è il cibo? Com'è la bevanda?
+          - speaker: Cliente 1
+            text: Il ___ è ___.
+          - speaker: Cliente 2
+            text: La ___ è ___.
+          - speaker: Cliente 3
+            text: La ___ è ___.
+          - speaker: Cameriere
+            text: Cosa desiderate come piatto principale?
+          - speaker: Cliente 1
+            text: Per primo prendo ___.
+          - speaker: Cliente 2
+            text: Per primo prendo ___.
+          - speaker: Cliente 3
+            text: Per primo prendo ___.
+          - speaker: Cameriere
+            text: Quindi, tu mangi ___. Tu mangi ___. Tu mangi ___.
+          - speaker: Cameriere
+            text: È il momento di pagare! Pagate in contanti o con carta di credito?
+          - speaker: Cliente 1
+            text: Pago ___.
+          - speaker: Cliente 2
+            text: Pago ___.
+          - speaker: Cliente 3
+            text: Pago ___.
+          - speaker: Cameriere
+            text: Grazie mille per essere venuti! Tornate presto!
+          - speaker: Clienti
+            text: Grazie mille! Il vostro cibo è ___!
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Gli invitati al tuo matrimonio e chi mangia cosa'
+        skills: [Possessivi]
+        steps:
+          - "L'insegnante mostra un esempio di lista degli invitati con i **possessivi**: *mio marito / mia moglie, i nostri amici del lavoro, la sua migliore amica, i suoi soci*."
+          - L'insegnante dice cosa mangia e beve un invitato e fa una domanda al primo studente.
+          - Ogni studente **ripete l'informazione del compagno precedente** e aggiunge la sua.
+          - Poi fa la domanda allo studente successivo.
+        example: |-
+          **Insegnante:** *Mia madre mangia pesce e beve vino bianco. Studente 1, cosa mangia e beve tua madre?*
+          **Studente 1:** *Tua madre mangia pesce e beve vino bianco. Mia madre mangia pizza e beve birra. Studente 2, cosa mangia e beve tuo fratello?*
+          **Studente 2:** *Tua madre mangia pizza e beve birra. Mio fratello mangia hamburger e beve acqua.*
+      - id: act3-frame
+        type: discussionQuestions
+        title: Frasi utili
+        items:
+          - question: Tua madre / tua sorella… mangia ___ e beve ___.
+          - question: Mio fratello / mio amico… mangia ___ e beve ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Verbi al presente** (domande di riscaldamento,
+          Attività 1 e 2) e **Possessivi** (domande di riscaldamento, Attività 1 e 3).
+          L'Attività 1 è comune alle due abilità.
+      - id: n-intro
+        anchor: intro
+        text: Dai prima il tuo esempio, poi chiedi a ogni studente.
+      - id: n-possessives
+        anchor: possessives
+        text: Leggi gli esempi con la classe prima delle domande di riscaldamento.
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Fai prima il tuo esempio (panino alla caprese: pane, mozzarella, pomodoro,
+          basilico, olio d'oliva). Poi mostra le due tabelle: prima l'infinito, poi la
+          forma con *io*.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Il menù non è nel quaderno: prepara un menù di un ristorante italiano (vero o
+          inventato). Se la lezione è online (Zoom), condividilo sullo schermo.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Esempio di lista degli invitati: mio marito / mia moglie; i nostri amici del
+          lavoro; la sua migliore amica (la migliore amica di mio marito / mia moglie); i
+          suoi soci (i soci di mio marito / mia moglie). Comincia tu la catena.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: cibo-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-present
+        type: ruleSummary
+        skill: Verbi al presente
+        rules:
+          - text: Usiamo il **presente** per parlare delle azioni di tutti i giorni e delle abitudini.
+            examples: [Io mangio la pizza., Mia madre beve acqua., Lui lavora in ufficio.]
+          - text: Il verbo cambia con ogni persona (io, tu, lui/lei, noi, voi, loro). Ogni persona ha la sua forma.
+            examples:
+              ['io mangio, tu mangi, lui/lei mangia, noi mangiamo, voi mangiate, loro mangiano']
+          - text: Per la forma negativa usiamo **non** prima del verbo.
+            examples: [Io non mangio il pesce., Mia sorella non beve vino.]
+      - id: present-table
+        type: table
+        caption: Il presente di mangiare e bere
+        header: [Persona, Mangiare, Bere]
+        rows:
+          - [io, mangio, bevo]
+          - [tu, mangi, bevi]
+          - [lui / lei, mangia, beve]
+          - [noi, mangiamo, beviamo]
+          - [voi, mangiate, bevete]
+          - [loro, mangiano, bevono]
+      - id: rules-possessives
+        type: ruleSummary
+        skill: Possessivi
+        rules:
+          - text: Usiamo i **possessivi** per dire di chi è una persona o una cosa.
+            examples:
+              - '*Mio padre*, *mia madre*, *i miei amici*, *le mie sorelle*.'
+              - '*Il nostro amico*, *la sua amica*, *i loro soci*.'
+          - text: Il possessivo cambia con il **genere** (maschile / femminile) e il **numero** (singolare / plurale) del nome che accompagna.
+            examples: [mio fratello / mia sorella, i miei amici / le mie amiche]
+          - text: Di solito usiamo il possessivo con l'articolo.
+            examples: [il mio amico, la tua casa]
+          - text: "Eccezione: con i parenti al singolare non usiamo l'articolo. Con i parenti al plurale e con *loro* l'articolo resta."
+            examples: [mio padre / mia madre / mio fratello, i miei fratelli, il loro padre]
+      - id: possessives-table
+        type: table
+        caption: I possessivi
+        header:
+          [Persona, Maschile singolare, Femminile singolare, Maschile plurale, Femminile plurale]
+        rows:
+          - [io, il mio, la mia, i miei, le mie]
+          - [tu, il tuo, la tua, i tuoi, le tue]
+          - [lui / lei, il suo, la sua, i suoi, le sue]
+          - [noi, il nostro, la nostra, i nostri, le nostre]
+          - [voi, il vostro, la vostra, i vostri, le vostre]
+          - [loro, il loro, la loro, i loro, le loro]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: cibo-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori (il chatbot della scuola), copia questo messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-cibo
+        type: aiTutorPrompt
+        title: Il cibo e i pasti
+        message: >-
+          Ciao Mori! Voglio esercitarmi in italiano. Puoi farmi domande sul cibo e sui
+          pasti? Usa solo il presente e correggi i miei errori.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Hai finito e vuoi altre domande? Scrivi: **Per favore, chiedimi di più!**
+          Mori ti spiega qualcosa in italiano e non lo capisci? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Attività interattive con Mori
+      - id: mori-preferito
+        type: aiTutorPrompt
+        title: 'Attività 1: Il mio cibo preferito'
+        intro: >-
+          Scrivi a Mori questo messaggio e poi parla del tuo cibo preferito. Esempio:
+          *Mi piace la pizza. La mangio con i miei amici il sabato. Non mi piace il
+          pesce.* Alla fine scrivi: *Adesso chiedimi altre domande sul mio cibo
+          preferito.*
+        message: Ciao Mori! Voglio dirti qual è il mio cibo preferito.
+      - id: mori-ristorante
+        type: aiTutorPrompt
+        title: 'Attività 2: Al ristorante'
+        intro: >-
+          Scrivi a Mori questo messaggio. Esempio: Mori: *Cosa vuoi mangiare?* Tu:
+          *Mangio una pasta al pomodoro.* Mori: *Cosa vuoi bere?* Tu: *Bevo acqua
+          frizzante.*
+        message: >-
+          Ciao Mori! Facciamo un gioco. Io sono al ristorante e tu sei il cameriere.
+          Fammi delle domande e io ordino da mangiare e da bere.
+      - id: mori-casa
+        type: aiTutorPrompt
+        title: 'Attività 3: A casa mia'
+        intro: >-
+          Scrivi a Mori questo messaggio e poi racconta i tuoi pasti. Esempio: *A
+          colazione mangio pane e marmellata. A pranzo mangio pasta e carne. A cena
+          mangio una zuppa di verdure.* Alla fine scrivi: *Adesso chiedimi altre domande
+          sui pasti della mia giornata.*
+        message: Ciao Mori! Ti racconto cosa mangio a casa.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: cibo-pratica
+    book: workbook
+    title: 'Pratica: Cibo'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratica le due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-presente
+        type: activity
+        activity: cibo-presente
+      - id: ex-possessivi
+        type: activity
+        activity: cibo-possessivi
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: cibo-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole del cibo
+        glossLang: he
+        link: https://quizlet.com/br/1068046233/italiano-basico-cibo-atualizato-flash-cards/
+        items: &cibo-words
+          - { term: Pizza, gloss: פיצה }
+          - { term: Pasta, gloss: פסטה }
+          - { term: Pane, gloss: לחם }
+          - { term: Formaggio, gloss: גבינה }
+          - { term: Pomodoro, gloss: עגבנייה }
+          - { term: Carne, gloss: בשר }
+          - { term: Pesce, gloss: דג }
+          - { term: Insalata, gloss: סלט }
+          - { term: Acqua, gloss: מים }
+          - { term: Vino, gloss: יין }
+          - { term: Colazione, gloss: ארוחת בוקר }
+          - { term: Pranzo, gloss: ארוחת צהריים }
+          - { term: Cena, gloss: ארוחת ערב }
+          - { term: Tagliare, gloss: לחתוך }
+          - { term: Io taglio, gloss: אני חותך / חותכת }
+          - { term: Aprire, gloss: לפתוח }
+          - { term: Io apro, gloss: אני פותח / פותחת }
+          - { term: Chiudere, gloss: לסגור }
+          - { term: Io chiudo, gloss: אני סוגר / סוגרת }
+          - { term: Mettere, gloss: לשים }
+          - { term: Io metto, gloss: אני שם / שמה }
+          - { term: Aggiungere, gloss: להוסיף }
+          - { term: Io aggiungo, gloss: אני מוסיף / מוסיפה }
+          - { term: Mangiare, gloss: לאכול }
+          - { term: Io mangio, gloss: אני אוכל / אוכלת }
+          - { term: Bere, gloss: לשתות }
+          - { term: Io bevo, gloss: אני שותה }
+          - { term: Il mio / la mia, gloss: שלי }
+          - { term: Il tuo / la tua, gloss: שלך }
+          - { term: Il suo / la sua, gloss: שלו / שלה }
+          - { term: Il nostro / la nostra, gloss: שלנו }
+          - { term: Il vostro / la vostra, gloss: שלכם / שלכן }
+          - { term: Il loro / la loro, gloss: שלהם / שלהן }
+
+vocabulary:
+  - slug: cibo
+    title: Cibo
+    items: *cibo-words
+
+activities:
+  - slug: cibo-presente
+    title: 'Verbi al presente: mangio, mangi, mangia'
+    minutes: 8
+    items:
+      - id: io-mangio
+        type: multipleChoice
+        prompt: Io ___ la pizza.
+        options:
+          - { text: mangio, correct: true }
+          - { text: mangia, feedback: '*Mangia* è per lui / lei. Con *io* diciamo *mangio*.' }
+          - { text: mangi, feedback: '*Mangi* è per tu. Con *io* diciamo *mangio*.' }
+      - id: madre-beve
+        type: multipleChoice
+        prompt: Mia madre ___ acqua.
+        options:
+          - { text: beve, correct: true }
+          - { text: bevo, feedback: '*Bevo* è per io. Mia madre = lei: diciamo *beve*.' }
+          - { text: bevono, feedback: '*Bevono* è per loro. Mia madre = lei: diciamo *beve*.' }
+      - id: noi-mangiamo
+        type: multipleChoice
+        prompt: Noi ___ la pizza il sabato.
+        options:
+          - { text: mangiamo, correct: true }
+          - { text: mangiano, feedback: '*Mangiano* è per loro. Con *noi* diciamo *mangiamo*.' }
+          - { text: mangiate, feedback: '*Mangiate* è per voi. Con *noi* diciamo *mangiamo*.' }
+      - id: tu-mangi
+        type: fillBlank
+        prompt: Completa con il verbo *mangiare* al presente.
+        text: Tu ___ la pasta.
+        blanks: [[mangi]]
+      - id: io-taglio
+        type: fillBlank
+        prompt: Completa con il verbo *tagliare* alla persona *io*.
+        text: Io ___ il pane a metà.
+        blanks: [[taglio]]
+      - id: non-prima
+        type: trueFalse
+        prompt: 'Per la forma negativa usiamo *non* prima del verbo: *Io non mangio il pesce.*'
+        answer: true
+        feedback:
+          correct: Giusto! *Non* va sempre prima del verbo.
+          incorrect: '*Non* va prima del verbo: *Io non mangio il pesce.*'
+      - id: infinito-io
+        type: matching
+        prompt: Unisci l'infinito alla forma con *io*.
+        pairs:
+          - [tagliare, io taglio]
+          - [aprire, io apro]
+          - [chiudere, io chiudo]
+          - [mettere, io metto]
+          - [aggiungere, io aggiungo]
+      - id: ordina-pesce
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Io non mangio il pesce.
+
+  - slug: cibo-possessivi
+    title: 'Possessivi: il mio, il tuo, il suo'
+    minutes: 8
+    items:
+      - id: mio-padre
+        type: multipleChoice
+        prompt: ___ padre ama il cioccolato.
+        options:
+          - { text: Mio, correct: true }
+          - {
+              text: Il mio,
+              feedback: "Con i parenti al singolare non usiamo l'articolo: *mio padre*.",
+            }
+          - { text: Mia, feedback: '*Padre* è maschile: diciamo *mio padre*.' }
+      - id: miei-amici
+        type: multipleChoice
+        prompt: ___ amici cucinano male.
+        options:
+          - { text: I miei, correct: true }
+          - { text: Il mio, feedback: '*Amici* è plurale: diciamo *i miei amici*.' }
+          - { text: Le mie, feedback: '*Amici* è maschile: diciamo *i miei amici*.' }
+      - id: loro-dolci
+        type: multipleChoice
+        prompt: I miei amici cucinano male. ___ dolci non sono buoni.
+        options:
+          - { text: I loro, correct: true }
+          - { text: I suoi, feedback: 'I dolci sono dei miei amici (di loro): diciamo *i loro*.' }
+          - { text: Il loro, feedback: '*Dolci* è plurale: diciamo *i loro dolci*.' }
+      - id: il-tuo
+        type: fillBlank
+        prompt: Completa con il possessivo di *tu* (con l'articolo).
+        text: Qual è ___ ristorante preferito?
+        blanks: [[il tuo]]
+      - id: la-sua
+        type: fillBlank
+        prompt: Completa con il possessivo giusto (con l'articolo).
+        text: Mia sorella ordina patatine fritte. ___ porzione non è pronta.
+        blanks: [[la sua]]
+      - id: articolo-parenti
+        type: trueFalse
+        prompt: "Con i parenti al singolare usiamo l'articolo: *il mio padre*."
+        answer: false
+        feedback:
+          correct: Giusto! Diciamo *mio padre*, senza articolo.
+          incorrect: Con i parenti al singolare non usiamo l'articolo. Diciamo *mio padre*.
+      - id: persona-possessivo
+        type: matching
+        prompt: Unisci la persona al suo possessivo (con un nome maschile singolare).
+        pairs:
+          - [io, il mio]
+          - [tu, il tuo]
+          - [noi, il nostro]
+          - [voi, il vostro]
+          - [loro, il loro]
+      - id: ordina-sorella
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Mia sorella ordina le patatine fritte.
