@@ -1,0 +1,685 @@
+# Cycle "My Life in the Past", converted from the Conversational English level 2
+# digital notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-conversational-2
+slug: my-life-in-the-past
+title: My Life in the Past
+goal: Talk about your past with the past simple, the past continuous and used to.
+position: 2
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Past simple questions" and "Used to and past
+    continuous") are NEW: the notebook has no self-study exercises. They were written
+    from the cycle's summary rules, the activity examples and its vocabulary. Please
+    check level, wording and every right answer before students see them.
+  - >-
+    Introduction round, intermediate template: the instruction asks for *used to* or
+    the past continuous, but the teacher example uses the past simple ("When I was a
+    child, I played football every day"). The example is now "When I was a child, I
+    used to play football every day", and the verb hint "(played, lived, listened)"
+    is now "(used to play, used to live, used to listen)".
+  - >-
+    Activity 1, intermediate: the source pairs "childhood habits (past continuous /
+    used to)". The past continuous is not for habits; it now reads "childhood habits
+    (used to) and actions in progress (past continuous)".
+  - >-
+    Summary, used to: "situations that were true in the past but not are not true
+    anymore" → "…but are not true anymore"; question form "Did + you + use to + base
+    verb" → "Did + subject + use to + base verb". The summary was titled "for the
+    Teacher" but is shown to students as in the other cycles.
+  - >-
+    Activity 4, beginners: the model asks "Where did you travel the first time?" →
+    "…for the first time?" (as in the question list); the model answer says Tel Aviv
+    but the report says Jerusalem, so the report now says Tel Aviv.
+  - >-
+    Homework: beginner message 3 "Please check" → "Please correct my sentences";
+    intermediate message 2 asked for "3 in past simple, 2 in past continuous" about
+    childhood; habits in childhood are taught with *used to*, so it now says "2 with
+    used to or the past continuous"; intermediate message 3 had no greeting or request
+    and now starts "Hi Mori" and asks for corrections and a question.
+  - >-
+    Activity 2: the list numbering of the intermediate sentences was broken (1, 2, 3,
+    1, 1, 2, 1, 1, 2, 3) and is now one list of 10. The three-column table ("Pair work
+    / And / Or / Challenge") was turned into steps. The duplicated line "(Practice:
+    Simple Past + Past Continuous)" in the intermediate warm-up was kept once.
+  - >-
+    Vocabulary: "Occupied עמוס / עסוק" → "תפוס / עסוק" ("occupied" is mostly a seat or
+    room that is taken); "Humorous מצחיק" → "הומוריסטי / מצחיק"; capital letters in
+    the middle of terms ("Last Week") were made lower case. "Reminiscence" and
+    "Preferred" are above A2; consider replacing them with "Memory" and "Favorite".
+  - >-
+    Times: Activity 1 15 minutes, Activity 2 10, Activity 3 20, Activity 4 15 (2 + 8 +
+    5), as in the source. The Quizlet link is kept without its "?new" parameter. The
+    "Student 1/2/3" lines are replaced by the optional answer boxes (decision C2).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: my-life-in-the-past-class
+    title: 'Class: My Life in the Past'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: My Life in the Past
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Past simple
+            description: Finished actions and past simple questions (*What did you do yesterday?*)
+          - name: Used to and past continuous
+            description: Past habits (*I used to play football*) and actions in progress (*I was cooking when you called*)
+      - id: quizlet
+        type: externalLink
+        label: My Life in the Past on Quizlet
+        url: https://quizlet.com/br/1106307133/conversational-english-my-life-in-the-past-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro-basic
+        type: sentenceFrame
+        prompt: 'Beginners: say your name and one simple past action (*ate, went, saw, talked*).'
+        frame: I'm ___. Yesterday, I ___.
+        example: I'm Marta. Yesterday, I ate pizza at home.
+      - id: intro-inter
+        type: sentenceFrame
+        prompt: 'Intermediate: share a childhood memory or habit with *used to* (*used to play, used to live, used to listen*).'
+        frame: I'm ___. When I was a child, I ___.
+        example: I'm Marta. When I was a child, I used to play football every day.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup-basic-title
+        type: heading
+        level: 4
+        text: 'Option A: Beginners (past simple)'
+      - id: warmup-basic
+        type: discussionQuestions
+        items:
+          - question: What did you do yesterday afternoon?
+            frame: Yesterday afternoon I ___.
+          - question: What did you eat for your last meal?
+            frame: For my last meal, I ate ___.
+          - question: What movie or series did you watch last week?
+            frame: Last week I watched ___.
+          - question: What did you do last weekend?
+            frame: Last weekend I ___.
+          - question: Who did you talk to yesterday?
+            frame: Yesterday I talked to ___.
+          - question: What did you buy the last time you went shopping?
+            frame: The last time I went shopping, I bought ___.
+      - id: warmup-inter-title
+        type: heading
+        level: 4
+        text: 'Option B: Intermediate (past simple + past continuous)'
+      - id: warmup-inter
+        type: discussionQuestions
+        items:
+          - question: What were you doing yesterday at 8 p.m.?
+            frame: Yesterday at 8 p.m., I was ___ing.
+          - question: What were you doing when the last holiday started?
+            frame: When the last holiday started, I was ___.
+          - question: What were you doing when you heard some surprising news recently?
+            frame: I was ___ when I heard ___.
+          - question: What were you doing when you met your best friend for the first time?
+            frame: I was ___ when I met ___.
+          - question: What were you wearing yesterday when you left the house?
+            frame: I was wearing ___.
+          - question: What were people in your house doing this morning while you were getting ready?
+            frame: While I was getting ready, my ___ was ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      # Activity 1
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Personal interview'
+        skills: [Past simple, Used to and past continuous]
+        minutes: 15
+        steps:
+          - 'In pairs: Student A asks 3–4 questions. Student B answers in the **first person** (*I*).'
+          - Switch roles.
+          - Share with the group what you learned about your partner, in the **third person** (*he / she*).
+      - id: act1-levels
+        type: callout
+        tone: info
+        title: By level
+        text: |-
+          **Option A, beginners:** Ask simple past questions. Share **two things** about your partner. *Where were you born? I was born in Haifa.* → *My partner was born in Haifa and ate pasta yesterday.*
+          **Option B, intermediate:** Ask about past experiences (past simple / present perfect), childhood habits (*used to*) and actions in progress (past continuous). Write a **short report** (4–5 sentences) about your partner. *My partner was born in Haifa, his favorite trip was to Italy, and when he was a child, he used to play football every day.*
+      - id: act1-persons
+        type: table
+        caption: First, second and third person
+        header: [Person, Beginners, Intermediate]
+        rows:
+          - [1st (I), 'I was, I ate, I went', 'I traveled, I studied, I used to play']
+          - [
+              2nd (you),
+              'Where were you? What did you eat?',
+              'What did you do? What were you doing when…?',
+            ]
+          - [
+              3rd (he / she),
+              'He was, she ate',
+              'He traveled, she was studying, he used to listen to music',
+            ]
+      - id: act1-report
+        type: discussionQuestions
+        title: My partner
+        items:
+          - question: My partner ___.
+            frame: My partner was born in ___. / He / She ___ yesterday.
+          - question: When he / she was a child, ___.
+            frame: When he / she was a child, he / she used to ___.
+      # Activity 2
+      - id: act2
+        type: classActivity
+        title: "Activity 2: What's the question?"
+        skills: [Past simple, Used to and past continuous]
+        minutes: 10
+        steps:
+          - Change each sentence below into a question.
+          - 'Pair work, quick game: one student reads the answer, the other asks the correct question. Switch roles after each sentence.'
+          - 'Challenge: choose one sentence and write two different questions for the same answer, with different question words.'
+        example: |-
+          *Answer: Yesterday I had bread and coffee for breakfast.*
+          *Your question: What did you have for breakfast yesterday?*
+      - id: act2-basic
+        type: discussionQuestions
+        title: 'Option A: Beginners (past simple)'
+        items:
+          - question: I watched a movie with my brother last weekend.
+            frame: ___?
+          - question: She went to Paris in 2020.
+            frame: ___?
+          - question: They bought new shoes last Friday.
+            frame: ___?
+          - question: He studied Spanish for two hours.
+            frame: ___?
+          - question: We met our friends at the park.
+            frame: ___?
+          - question: My sister cooked pasta for dinner.
+            frame: ___?
+          - question: I woke up at 7:00 yesterday.
+            frame: ___?
+          - question: We traveled to Italy in June.
+            frame: ___?
+      - id: act2-inter
+        type: discussionQuestions
+        title: 'Option B: Intermediate (past continuous)'
+        items:
+          - question: I was wearing jeans and a black T-shirt.
+            frame: ___?
+          - question: Yes, they were playing football when it started to rain.
+            frame: ___?
+          - question: She was texting her friend during the movie.
+            frame: ___?
+          - question: Yesterday I was laughing because my friend told a funny joke.
+            frame: ___?
+          - question: They were cooking dinner when I arrived.
+            frame: ___?
+          - question: He was watching TV at 9 p.m. yesterday.
+            frame: ___?
+          - question: We were studying for the test all afternoon.
+            frame: ___?
+          - question: The dog was barking at the birds in the park.
+            frame: ___?
+          - question: I was driving to work when you called me.
+            frame: ___?
+          - question: Sara and Ron were dancing at the party.
+            frame: ___?
+      # Activity 3
+      - id: act3
+        type: classActivity
+        title: "Activity 3: Yesterday's diary"
+        skills: [Past simple, Used to and past continuous]
+        minutes: 20
+        steps:
+          - Write your diary sentences below.
+          - In pairs, exchange diaries. Your partner asks you questions about each sentence.
+          - Report to the group about your partner, in the third person.
+      - id: act3-levels
+        type: callout
+        tone: info
+        title: By level
+        text: |-
+          **Option A, beginners:** Write 3–4 simple sentences about what you did yesterday. Ask **one** extra question for each sentence (*I went to the supermarket. → What did you buy?*). Share 2 sentences about your partner (*My partner had coffee and went to the supermarket.*).
+          **Option B, intermediate:** Write 5–6 sentences with the **past continuous + time expressions** (*Yesterday at 7 p.m., I was cooking dinner. Two days ago, I was watching a movie when my friend called me.*). Ask **two** questions for each sentence, in the past continuous or the past simple (*What were you cooking? Were you cooking alone or with someone? Who called you?*). Report 3–4 sentences about your partner (*He was watching a movie when his friend called him.*).
+      - id: act3-diary
+        type: discussionQuestions
+        title: My diary
+        items:
+          - question: Yesterday I ___.
+            frame: Yesterday I ___. / Yesterday at ___, I was ___ing.
+          - question: Yesterday I ___.
+          - question: Yesterday I ___.
+          - question: Yesterday I ___.
+          - question: 'Report: My partner ___.'
+            frame: My partner ___ and ___. / She was ___ing at ___ yesterday.
+      # Activity 4
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: When I was a child'
+        skills: [Past simple, Used to and past continuous]
+        minutes: 15
+        steps:
+          - Read the questions for your level and think quietly about your childhood memories.
+          - In pairs, interview your partner with all the questions. Ask follow-up questions (*Why? Who? Where? Who with?*).
+          - Share 2–3 sentences about your partner with the group, in the third person.
+      - id: act4-basic
+        type: discussionQuestions
+        title: 'Option A: Beginners (past simple)'
+        items:
+          - question: Where did you travel for the first time?
+            frame: I traveled to ___ for the first time. And you?
+          - question: What was the first movie you watched in a cinema?
+            frame: The first movie I watched in a cinema was ___.
+          - question: What did you do on your last childhood vacation?
+            frame: On my last childhood vacation, I ___.
+          - question: 'Report: my partner'
+            frame: My partner traveled to ___ and his / her first movie was ___.
+      - id: act4-basic-example
+        type: callout
+        tone: info
+        title: 'Example, beginners'
+        text: |-
+          *Where did you travel for the first time? — I went to Tel Aviv. And you?*
+          *My partner traveled to Tel Aviv and his first movie was Toy Story.*
+      - id: act4-inter
+        type: discussionQuestions
+        title: 'Option B: Intermediate (used to)'
+        items:
+          - question: What did you use to do in your free time as a child?
+            frame: As a child, I used to ___.
+          - question: What kind of music did you use to listen to when you were young?
+            frame: When I was young, I used to listen to ___.
+          - question: What was your school like?
+            frame: My school was ___.
+          - question: What was your neighborhood like?
+            frame: My neighborhood was ___.
+          - question: What did you use to do with your family on weekends?
+            frame: On weekends, my family and I used to ___.
+          - question: 'Report: my partner'
+            frame: My partner used to ___, lived in ___ and used to ___.
+      - id: act4-inter-example
+        type: callout
+        tone: info
+        title: 'Follow-up questions and example, intermediate'
+        text: |-
+          *Where did you use to go? Who did you use to play with? Why did you like it? Do you still do that today?*
+          *My partner used to play basketball after school, lived in a quiet neighborhood, and used to listen to music on the radio.*
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: the **past simple** (all beginner options) and **used to /
+          past continuous** (intermediate options of every activity). Choose the option
+          for your group's level in each part of the class.
+      - id: n-intro
+        anchor: intro-title
+        text: Give your own example first (*I'm Marta. Yesterday, I ate pizza at home.*), then go around the group.
+      - id: n-warmup
+        anchor: warmup-title
+        text: Ask each student at least two questions. Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          The interview practises the 1st person (answers), the 2nd person (questions) and
+          the 3rd person (report). Students choose questions from the warm-up lists or
+          make their own.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Answer key, beginners (other question words are fine): 1. What did you watch /
+          Who did you watch a movie with last weekend? 2. Where did she go in 2020? 3. What
+          did they buy last Friday? 4. What did he study / How long did he study Spanish?
+          5. Where did you meet your friends? 6. What did your sister cook for dinner? 7.
+          What time did you wake up yesterday? 8. Where / When did you travel? —
+          Intermediate: 1. What were you wearing? 2. Were they playing football when it
+          started to rain? 3. What was she doing during the movie? 4. Why were you
+          laughing yesterday? 5. What were they doing when you arrived? 6. What was he
+          doing at 9 p.m. yesterday? 7. What were you doing all afternoon? 8. What was the
+          dog barking at? 9. Where were you driving when I called you? 10. Who was
+          dancing at the party?
+      - id: n-act3
+        anchor: act3
+        text: Writing 5 minutes, pair questions 10 minutes, reports 5 minutes.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Thinking 2 minutes, pair interview 8 minutes, report 5 minutes. Remind pairs to
+          ask follow-up questions (*Why? Who? Where? Who with?*).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: my-life-in-the-past-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-past-simple
+        type: ruleSummary
+        skill: Past simple
+        rules:
+          - text: 'We use the **past simple** for **finished actions** in the past: something that happened **once**, **many times**, or at a **specific time**.'
+            examples:
+              - I went to the cinema yesterday.
+              - We visited my grandparents every summer.
+              - She ate pizza at 8:00.
+          - text: '**Time expressions:** yesterday, last week, last night, two days ago, in 2020.'
+          - text: '**Form:** regular verbs add **-ed** (*I talked, she played, they watched*). Irregular verbs change (*go → went, eat → ate, see → saw*).'
+          - text: '**Questions:** *Did* + subject + base verb.'
+            examples: [What did you do yesterday?]
+      - id: rules-past-continuous
+        type: ruleSummary
+        skill: Past continuous
+        rules:
+          - text: 'An action **in progress** at a specific moment in the past.'
+            examples: [At 8 p.m. I was studying.]
+          - text: '**Background** actions in a story.'
+            examples: ['The sun was shining, and people were sitting in the park.']
+          - text: 'An action **interrupted** by another action: past continuous + *when* + past simple.'
+            examples:
+              [
+                I was cooking dinner when my friend called.,
+                He was walking home when it started to rain.,
+              ]
+          - text: '**Form:** *was / were* + verb + *-ing*.'
+            examples: [I was eating., They were watching., She was studying.]
+          - text: '**Questions:** *Was / Were* + subject + verb-*ing*?'
+            examples: [What were you doing at 7 p.m.?]
+      - id: rules-used-to
+        type: ruleSummary
+        skill: Used to
+        rules:
+          - text: 'We use **used to** for **past habits**, routines and **situations** that were true in the past but are not true anymore. We often use it to talk about our childhood.'
+            examples:
+              - I used to play football every day. (I don't play now.)
+              - She used to listen to music on the radio.
+              - They used to live in a small neighborhood.
+          - text: '**Form:** *used to* + base verb.'
+            examples: [I used to swim a lot., We used to live in Jerusalem.]
+          - text: '**Questions:** *Did* + subject + *use to* + base verb?'
+            examples: [What did you use to do after school?]
+          - text: "**Negative:** *didn't use to* + base verb."
+            examples: [I didn't use to like vegetables.]
+      - id: comparison-table
+        type: table
+        caption: Past simple, past continuous or used to?
+        header: [Structure, Use, Example]
+        rows:
+          - ['**Past simple**', A completed action, '*I watched a movie.*']
+          - [
+              '**Past continuous**',
+              'An action in progress, a background, an interruption',
+              '*I was watching a movie when my friend called.*',
+            ]
+          - [
+              '**Used to**',
+              A past habit or state (not true now),
+              '*I used to watch that show as a child.*',
+            ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through the rules for your group's level and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: my-life-in-the-past-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy a message and send it. Mori will ask you questions; answer every one.
+      - id: basic-title
+        type: heading
+        level: 3
+        text: Beginners
+      - id: mori-basic-1
+        type: aiTutorPrompt
+        title: 'Message 1: Practice questions'
+        message: "Hi Mori, ask me 5 easy questions in the past tense, like: What did you do yesterday? What did you eat? I'll answer. Please correct my mistakes."
+      - id: mori-basic-2
+        type: aiTutorPrompt
+        title: 'Message 2: Mini diary'
+        message: Hi Mori, I'll tell you 4 things I did yesterday. Please correct my sentences and ask me one more question about each.
+      - id: mori-basic-3
+        type: aiTutorPrompt
+        title: 'Message 3: Third-person report'
+        message: Hi Mori, I'll tell you what someone in my family did yesterday. Please correct my sentences and ask me one question about that person.
+      - id: inter-title
+        type: heading
+        level: 3
+        text: Intermediate
+      - id: mori-inter-1
+        type: aiTutorPrompt
+        title: 'Message 1: Interview practice'
+        message: 'Hi Mori, ask me 5 questions in the past: 3 in the past simple or present perfect, and 2 in the past continuous or with "used to". Please correct my answers.'
+      - id: mori-inter-2
+        type: aiTutorPrompt
+        title: 'Message 2: Short biography'
+        message: 'Hi Mori, I''ll tell you 5 sentences about my childhood: 3 in the past simple and 2 with "used to" or the past continuous. Please correct me and ask me one follow-up question.'
+      - id: mori-inter-3
+        type: aiTutorPrompt
+        title: 'Message 3: Detailed diary'
+        message: Hi Mori, I'll tell you what I did last week in 6 sentences. I'll add one descriptive detail to each sentence with the past continuous. Please correct my mistakes and ask me one question about my week.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: my-life-in-the-past-practice
+    book: workbook
+    title: 'Practice: My Life in the Past'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked right away, and you can try again.
+      - id: ex-past-simple
+        type: activity
+        activity: my-life-in-the-past-past-simple
+      - id: ex-used-to
+        type: activity
+        activity: my-life-in-the-past-used-to
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: my-life-in-the-past-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: My life in the past words
+        glossLang: he
+        link: https://quizlet.com/br/1106307133/conversational-english-my-life-in-the-past-flash-cards/
+        items: &my-life-in-the-past-words
+          - { term: Yesterday, gloss: אתמול }
+          - { term: Last week, gloss: שבוע שעבר }
+          - { term: Last weekend, gloss: סוף השבוע שעבר }
+          - { term: Two days ago, gloss: לפני יומיים }
+          - { term: Childhood, gloss: ילדות }
+          - { term: Reminiscence, gloss: היזכרות / זיכרון }
+          - { term: Habit, gloss: הרגל }
+          - { term: Personal routine, gloss: שגרה אישית }
+          - { term: Journey, gloss: מסע }
+          - { term: Vacation, gloss: חופשה }
+          - { term: Hometown, gloss: עיר הולדת }
+          - { term: Neighborhood, gloss: שכונה }
+          - { term: Companions, gloss: חברים / מלווים }
+          - { term: Relatives, gloss: קרובי משפחה }
+          - { term: Classmate, gloss: בן / בת כיתה }
+          - { term: Partner, gloss: שותף / שותפה }
+          - { term: Interview, gloss: ראיון }
+          - { term: Conversation, gloss: שיחה }
+          - { term: Question, gloss: שאלה }
+          - { term: Response, gloss: תגובה / תשובה }
+          - { term: Report, gloss: דיווח }
+          - { term: Experience, gloss: חוויה }
+          - { term: Story, gloss: סיפור }
+          - { term: Moment, gloss: רגע }
+          - { term: Celebration, gloss: חגיגה }
+          - { term: Humorous, gloss: הומוריסטי / מצחיק }
+          - { term: Interesting, gloss: מעניין }
+          - { term: Preferred, gloss: מועדף }
+          - { term: Quiet, gloss: שקט }
+          - { term: Occupied, gloss: תפוס / עסוק }
+          - { term: Together, gloss: ביחד }
+          - { term: Alone, gloss: לבד }
+
+vocabulary:
+  - slug: my-life-in-the-past
+    title: My Life in the Past
+    items: *my-life-in-the-past-words
+
+activities:
+  - slug: my-life-in-the-past-past-simple
+    title: 'Past simple: questions and reports'
+    minutes: 8
+    items:
+      - id: where-did-she-go
+        type: multipleChoice
+        prompt: '*She went to Paris in 2020.* Which question asks about the place?'
+        options:
+          - { text: Where did she go in 2020?, correct: true }
+          - {
+              text: Where did she went in 2020?,
+              feedback: 'After *did*, use the base verb: *go*, not *went*.',
+            }
+          - {
+              text: Where she went in 2020?,
+              feedback: 'A past simple question needs *did*: *Where did she go…?*',
+            }
+      - id: breakfast
+        type: fillBlank
+        prompt: Complete the question.
+        text: What ___ you have for breakfast yesterday?
+        blanks: [[did]]
+      - id: did-buy
+        type: fillBlank
+        prompt: '*They bought new shoes last Friday.* Complete the question.'
+        text: What ___ they ___ last Friday?
+        blanks: [[did], [buy]]
+      - id: q-and-a
+        type: matching
+        prompt: Match each question with its answer.
+        pairs:
+          - [Where were you born?, I was born in Haifa.]
+          - [What did you eat yesterday?, I ate pasta.]
+          - [Who did you talk to yesterday?, I talked to my mom.]
+          - [What time did you wake up?, I woke up at 7:00.]
+      - id: partner-was-born
+        type: multipleChoice
+        prompt: 'Your partner says: *I was born in Haifa.* Tell the group: My partner ___ born in Haifa.'
+        options:
+          - { text: was, correct: true }
+          - { text: were, feedback: '*Were* is for *you, we, they*. For *he / she*, use *was*.' }
+          - { text: is, feedback: 'Being born is in the past, so use *was*.' }
+      - id: base-after-did
+        type: trueFalse
+        prompt: 'In a past simple question, the verb after *did* is in the base form: *Did you study?*'
+        answer: true
+        feedback:
+          correct: Right! *Did* is already past, so the verb stays in the base form.
+          incorrect: '*Did* shows the past, so the verb is in the base form: *Did you study?* (not *studied*).'
+      - id: went-cinema
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: I went to the cinema yesterday., correct: true }
+          - {
+              text: I go to the cinema yesterday.,
+              feedback: '*Go* is the present. With *yesterday*, use *went*.',
+            }
+          - {
+              text: I was go to the cinema yesterday.,
+              feedback: "Don't use *was* with a base verb. The past simple of *go* is *went*.",
+            }
+      - id: order-yesterday
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: What did you do yesterday?
+
+  - slug: my-life-in-the-past-used-to
+    title: 'Used to and past continuous'
+    minutes: 8
+    items:
+      - id: was-studying
+        type: multipleChoice
+        prompt: At 8 p.m. yesterday, I ___.
+        options:
+          - { text: was studying, correct: true }
+          - { text: were studying, feedback: '*Were* is for *you, we, they*. For *I*, use *was*.' }
+          - {
+              text: am studying,
+              feedback: '*Am studying* is the present. For an action in progress in the past, use *was studying*.',
+            }
+      - id: cooking-called
+        type: fillBlank
+        prompt: Complete with the past continuous and the past simple.
+        text: I ___ cooking dinner when my friend ___.
+        blanks: [[was], [called]]
+        wordBank: [was, were, called, was calling]
+      - id: used-to-play
+        type: multipleChoice
+        prompt: When I was a child, I ___ play football every day.
+        options:
+          - { text: used to, correct: true }
+          - { text: use to, feedback: 'In positive sentences, write *used to*: *I used to play.*' }
+          - {
+              text: was used to,
+              feedback: 'For a past habit, use *used to* + base verb, without *was*.',
+            }
+      - id: did-use-to
+        type: fillBlank
+        prompt: Complete the question.
+        text: What ___ you use to do after school?
+        blanks: [[did]]
+      - id: didnt-use-to
+        type: multipleChoice
+        prompt: I ___ like vegetables, but now I love them.
+        options:
+          - { text: "didn't use to", correct: true }
+          - {
+              text: "didn't used to",
+              feedback: "After *didn't*, write *use to* (without *d*): *I didn't use to like…*",
+            }
+          - {
+              text: not used to,
+              feedback: "The negative needs *didn't*: *I didn't use to like vegetables.*",
+            }
+      - id: match-uses
+        type: matching
+        prompt: Match each sentence with its use.
+        pairs:
+          - [I watched a movie., a completed action]
+          - [I was watching a movie when my friend called., an interrupted action]
+          - [I used to watch cartoons as a child., a past habit (not true now)]
+          - [The sun was shining., a background in a story]
+      - id: still-live
+        type: trueFalse
+        prompt: '*They used to live in a small neighborhood.* This means they still live there.'
+        answer: false
+        feedback:
+          correct: Right! *Used to* is for things that were true in the past but are not true now.
+          incorrect: "*Used to* means it was true in the past but not now: they don't live there anymore."
+      - id: order-seven
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: What were you doing at 7 p.m.?
