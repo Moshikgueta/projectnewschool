@@ -1,0 +1,604 @@
+# Cycle "Festivales", converted from the Spanish nivel 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-2
+slug: festivales
+title: Festivales
+goal: Dar instrucciones e invitaciones con el imperativo y contar historias con el pasado, el presente y el futuro.
+position: 9
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Imperativo" and "Narrar con varios tiempos") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary rules and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Activity 1 (match traditions and places): one "country" is "ciervo" (deer), a
+    mistranslation; the tradition "Usar máscaras para esconderse de una deidad
+    maligna" is matched to it. It is shown as "(lugar por confirmar)" in the
+    student table and the answer key. Please supply the right place. "Vestirse de
+    naranja en honor a la reina" (Ámsterdam) → "en honor al rey": since 2014 it is
+    King's Day (Koningsdag). Please confirm. The answer key is in a teacher note.
+  - >-
+    Summary, imperative: the negative rule ("No + raíz + -es / -as") does not
+    explain *No salgas* (salir is irregular); a note was added that the negative is
+    built from the *yo* form of the present (salgo → no salgas). A short list of
+    common irregular tú imperatives was added (ven, sal, haz, pon, ten, ve, di),
+    since the source's own example "Ven al carnaval conmigo" uses one. Please
+    confirm.
+  - >-
+    Summary, narrative: the futuro simple example "el desfile se va a cancelar" is
+    ir a + infinitivo; changed to "el desfile se cancelará". The imperative and
+    narrative rules are otherwise correct and kept.
+  - >-
+    Activity 2 "Estas son mis vacaciones especiales" used "vacaciones" for
+    "holiday" (fiesta / festividad): title → "Mi fiesta especial"; "¿Cuál es tu
+    mejor recuerdo de estas vacaciones?" → "…de esta fiesta?"; "¿Qué vacaciones de
+    otro país te parecen interesantes?" → "¿Qué fiesta de otro país te parece
+    interesante?".
+  - >-
+    Activity 1 example: "para mezclarse" → "para mezclarte"; the five tips are
+    re-punctuated into full sentences ("Reserva tus entradas con antelación para ver
+    el desfile en el Sambódromo", "con lugareños" → "con la gente del lugar").
+    Activity 3: "Celebre" (usted) → "Celebra" (tú, like the other lines); "Munich" →
+    "Múnich"; "año nuevo chino" → "Año Nuevo chino"; "escriba su invitación" →
+    "escribe tu invitación"; "juegos de carnaval" → "juegos de feria". Oktoberfest
+    dates change every year: kept as an example. Activity 1 table: "Vestirse del
+    diablo y asustar a los asistentes al festival" → "Vestirse de diablo y asustar a
+    la gente del festival"; "Apache" → "Apaches".
+  - >-
+    Warm-up: the heading "Preguntas de preparación" → "Preguntas de calentamiento";
+    "¿O qué vestiste en tu último festival?" → "¿O qué ropa llevaste en tu último
+    festival?". Sentence frames were added (the source has none).
+  - >-
+    Activity 4: the note "(respuesta en el último trimestre)" after the last
+    question is unclear and was left out; that question is rewritten as "¿Qué te
+    inspiró a crear este festival? ¿En qué festivales a los que fuiste te basaste?".
+    "Salas de descanso en zoom" → Breakout Rooms (teacher note). Activity titles had
+    the skill in capitals ("IMPERATIVOS", "NARRATIVAS MÚLTIPLES"); removed.
+  - >-
+    Homework: the source has two writing tasks, not a Mori message. Each is written
+    as a Mori message for correction, keeping the instructions and examples
+    ("Escribir / Piense / Elija / asistió" → "Escribe / Piensa / Elige / fuiste").
+    Please confirm.
+  - >-
+    Skill 2 "el uso de narrativas múltiples (pasado, presente, futuro)" is called
+    "Narrar con varios tiempos".
+  - >-
+    Vocabulary: "Disfrazarse" was glossed "להתלבש" (to get dressed); now "להתחפש".
+    "Feriado" was "חופשה"; now "חג / יום חופש". "Entrada" → "כרטיס (כניסה)". Please
+    confirm.
+  - >-
+    The Quizlet link's funnelUUID parameter was removed. The source gives no
+    activity times except 10 minutes of research in Activity 1 (a step, not the
+    activity), so no minutes are recorded. The "Respuesta de alumno 1/2/3" lines are
+    replaced by the answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: festivales-clase
+    title: 'Clase: Festivales'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Festivales
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Imperativo
+            description: 'Instrucciones, invitaciones y consejos: *baila, come, vive, no cantes*'
+          - name: Narrar con varios tiempos
+            description: 'Pasado, presente y futuro en una historia: *fui, voy, iré*'
+      - id: quizlet
+        type: externalLink
+        label: Festivales en Quizlet
+        url: https://quizlet.com/il/1001272696/conversational-spanish-festivals-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Para el próximo Purim / Halloween me voy a disfrazar de ___.
+        example: Soy Florencia. Para el próximo Purim me voy a disfrazar de bruja.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿A qué festivales fuiste?
+            frame: Fui a ___.
+          - question: ¿De qué te disfrazaste el año pasado? ¿O qué ropa llevaste en tu último festival?
+            frame: El año pasado me disfracé de ___.
+          - question: ¿Hay algún festival al que vas todos los años?
+            frame: Sí, todos los años voy a ___. / No, no voy a ningún festival todos los años.
+          - question: ¿A qué festivales vas a ir?
+            frame: Voy a ir a ___.
+          - question: ¿Qué música escuchaste en el último festival? ¿Vas a escuchar la misma música en el próximo festival?
+            frame: En el último festival escuché ___. En el próximo voy a escuchar ___.
+          - question: ¿Qué hay que tener en cuenta a la hora de ir a un festival? (Responde con el imperativo.)
+            frame: Lleva contigo ___. / No olvides ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Si vas a este festival…'
+        skills: [Imperativo]
+        steps:
+          - Mira la tabla. Las tradiciones y los lugares están en desorden.
+          - Une por lo menos 3 tradiciones con su lugar correcto.
+          - 'En dos grupos: elijan un lugar con su tradición e investiguen 10 minutos. Escriban una lista de 5 cosas que tienes que hacer en ese festival.'
+          - Comparte tu lista con la clase. Usa el imperativo.
+        example: |-
+          **Lugar:** Río de Janeiro · **Costumbre:** Carnaval
+          5 cosas que tienes que hacer en el Carnaval de Río de Janeiro:
+          1. **Usa ropa colorida** para mezclarte con el ambiente festivo.
+          2. **Baila samba.** ¡Sal a las calles y únete a los desfiles!
+          3. **Reserva tus entradas con antelación** para ver el desfile en el Sambódromo.
+          4. **Mantente hidratado:** ¡puede hacer mucho calor durante las fiestas!
+          5. **Participa en las fiestas callejeras** (los «bloques») con la gente del lugar y otros turistas.
+      - id: act1-table
+        type: table
+        caption: Tradiciones y lugares (en desorden)
+        header: [Tradición, Lugar]
+        rows:
+          - [Carnaval, 'Venecia, Italia']
+          - [Usar máscaras para celebrar sin distinciones de estatus social, India]
+          - [Celebrar con los muertos, Reino Unido]
+          - [Echar polvos de colores a la gente, México]
+          - [Usar máscaras para esconderse de una deidad maligna, Río de Janeiro]
+          - [Vestirse como vikingos, Israel]
+          - [Los disfraces como rito de paso a la edad adulta, Ámsterdam]
+          - [Vestirse de diablo y asustar a la gente del festival, Apaches y otras tribus indígenas]
+          - [Vestirse de naranja en honor al rey, (lugar por confirmar)]
+          - [Estar disfrazado en la calle toda la semana de fiesta, Cataluña]
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Mi fiesta especial'
+        skills: [Narrar con varios tiempos]
+        steps:
+          - Trabajen en parejas.
+          - Hazle a tu compañero las preguntas de abajo. Elige **una pregunta de cada sección**.
+          - Toma notas de sus respuestas.
+      - id: act2-general
+        type: discussionQuestions
+        title: Preguntas generales
+        items:
+          - question: ¿Cuál es tu fiesta favorita y por qué?
+          - question: ¿Cuándo y dónde se celebra esta fiesta?
+          - question: ¿Se celebra esta fiesta en otros países? Si es así, ¿en qué es diferente?
+      - id: act2-traditions
+        type: discussionQuestions
+        title: Tradiciones y costumbres
+        items:
+          - question: ¿Cuáles son algunas tradiciones o rituales típicos de esta fiesta?
+          - question: ¿Tienes alguna tradición especial para esta fiesta?
+          - question: ¿Hay alguna comida o bebida especial para esta fiesta?
+      - id: act2-personal
+        type: discussionQuestions
+        title: Experiencia personal
+        items:
+          - question: ¿Cuál es tu mejor recuerdo de esta fiesta?
+          - question: ¿Cómo celebras esta fiesta? (En familia, con amigos, en casa, en eventos públicos…)
+      - id: act2-culture
+        type: discussionQuestions
+        title: Comparación cultural
+        items:
+          - question: ¿Alguna vez celebraste esta fiesta en otro país? ¿En qué era diferente?
+          - question: ¿Qué fiesta de otro país te parece interesante?
+      - id: act2-opinions
+        type: discussionQuestions
+        title: Reflexión y opiniones
+        items:
+          - question: ¿Crees que las celebraciones son importantes? ¿Por qué sí o por qué no?
+          - question: ¿Prefieres las celebraciones tradicionales o te gusta celebrar las fiestas de forma moderna?
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Crea una invitación (amable) con el imperativo'
+        skills: [Imperativo]
+        steps:
+          - 'Solo o en parejas, elige un festival famoso: Diwali (Festival de las Luces), Oktoberfest (Alemania), Carnaval (Brasil), Año Nuevo chino, Acción de Gracias (EE. UU.).'
+          - Si es necesario, busca información básica sobre el festival.
+          - Escribe tu invitación con imperativos para presentar actividades interesantes e invitar a participar.
+          - Presenta tu invitación a la clase y lee en voz alta los imperativos que usaste.
+        example: |-
+          **¡Estás invitado al Oktoberfest!**
+          *¡Celebra la fiesta de la cerveza más grande del mundo en Múnich!*
+          *¡Visítanos del 21 de septiembre al 6 de octubre en Múnich, Alemania!*
+          *¡Vístete con tu traje tradicional bávaro y únete a la diversión!*
+          *¡Prueba la auténtica cerveza alemana y deliciosos pretzels!*
+          *¡Canta música folclórica en vivo y baila toda la noche!*
+          *¡Monta en la noria y disfruta de emocionantes juegos de feria!*
+          *¡Trae a tus amigos y familiares a vivir este evento inolvidable!*
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Mi propio festival'
+        skills: [Narrar con varios tiempos]
+        steps:
+          - Ya conoces muchos festivales. ¡Ahora crea tu propio festival!
+          - Trabajen en grupos.
+          - Completa la ficha de abajo.
+          - Cada grupo presenta su festival a la clase.
+      - id: act4-festival
+        type: discussionQuestions
+        title: Mi festival
+        items:
+          - question: 'Nombre del festival:'
+          - question: 'Fecha del festival:'
+          - question: 'Lugar del festival:'
+          - question: ¿Cuánto dura este festival?
+          - question: 'Código de vestimenta:'
+          - question: ¿Qué música vamos a escuchar?
+          - question: ¿Qué artistas van a participar en el festival?
+          - question: ¿Qué va a pasar en este festival?
+          - question: ¿Qué te inspiró a crear este festival? ¿En qué festivales a los que fuiste te basaste?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Imperativo** (Actividades 1 y 3) y **Narrar
+          con varios tiempos** (Actividades 2 y 4). El cuaderno no indica tiempos.
+      - id: n-intro
+        anchor: intro
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Respuestas: Echar polvos de colores → India · Celebrar con los muertos → México
+          · Usar máscaras para esconderse de una deidad maligna → (lugar por confirmar;
+          en el cuaderno dice «ciervo») · Vestirse de diablo y asustar → Cataluña · Estar
+          disfrazado en la calle toda la semana → Israel · Los disfraces como rito de
+          paso → Apaches y otras tribus indígenas · Carnaval → Río de Janeiro · Usar
+          máscaras sin distinciones de estatus social → Venecia, Italia · Vestirse como
+          vikingos → Reino Unido · Vestirse de naranja en honor al rey → Ámsterdam.
+      - id: n-act4
+        anchor: act4
+        text: En línea, usa Breakout Rooms; en persona, los grupos se sientan juntos.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: festivales-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-imperativo
+        type: ruleSummary
+        skill: Imperativo
+        rules:
+          - text: Usamos el imperativo para dar instrucciones, hacer invitaciones y dar consejos.
+            examples:
+              [
+                Compra los boletos temprano.,
+                Ven al carnaval conmigo.,
+                Bebe mucha agua en el festival.,
+              ]
+          - text: 'Para **tú** (afirmativo): verbos en **-ar** → raíz + **-a**; verbos en **-er** y **-ir** → raíz + **-e**.'
+            examples:
+              [
+                'bailar → Baila en la fiesta.',
+                'comer → Come algo antes del concierto.',
+                'vivir → Vive el momento.',
+              ]
+          - text: 'Algunos verbos frecuentes son irregulares con **tú**.'
+            examples:
+              [
+                'venir → ven, salir → sal, hacer → haz, poner → pon',
+                'tener → ten, ir → ve, decir → di',
+              ]
+          - text: 'Negativo con **tú**: **no** + el presente de subjuntivo. Verbos en **-ar** → **-es**; verbos en **-er** y **-ir** → **-as**. La raíz sale de la forma *yo* del presente (salgo → no salgas).'
+            examples:
+              [
+                No cantes tan fuerte en la fiesta.,
+                No bebas demasiado en el festival.,
+                No salgas tarde del evento.,
+              ]
+          - text: 'Para **ustedes** (afirmativo y negativo): verbos en **-ar** → **-en**; verbos en **-er** y **-ir** → **-an**.'
+            examples:
+              [
+                Bailen en la fiesta.,
+                Coman antes del concierto.,
+                No canten tan fuerte.,
+                No salgan tarde.,
+              ]
+      - id: imperativo-table
+        type: table
+        caption: El imperativo
+        header: [Verbo, tú, no + tú, ustedes, no + ustedes]
+        rows:
+          - [bailar, baila, no bailes, bailen, no bailen]
+          - [comer, come, no comas, coman, no coman]
+          - [vivir, vive, no vivas, vivan, no vivan]
+          - [salir, sal, no salgas, salgan, no salgan]
+      - id: rules-narrar
+        type: ruleSummary
+        skill: Narrar con varios tiempos
+        rules:
+          - text: 'Usa el **pasado** para contar lo que ya ocurrió y dar contexto. **Pretérito indefinido**: acciones terminadas. **Imperfecto**: situaciones y hábitos en el pasado.'
+            examples:
+              [
+                Ayer fui a un concierto increíble.,
+                'Cuando era niño, siempre celebrábamos el carnaval.',
+              ]
+          - text: 'Usa el **presente** para que la historia sea más viva, como si pasara ahora (también en los diálogos).'
+            examples:
+              [
+                Napoleón llega a Rusia y enfrenta un invierno devastador.,
+                'Entonces ella me dice: «¡Vamos al festival!»',
+              ]
+          - text: 'Usa el **futuro** para anticipar lo que va a pasar: **futuro simple** para lo que sucederá, **ir a + infinitivo** para planes.'
+            examples:
+              [
+                'Si sigue lloviendo, el desfile se cancelará.',
+                Mañana vamos a preparar todo para la fiesta.,
+              ]
+          - text: 'Consejo extra: combina los tiempos para que tu historia sea más interesante.'
+            examples:
+              [
+                Ayer encontré una invitación (pasado). Hoy voy al evento (presente). ¿Qué pasará allí? (futuro),
+              ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: festivales-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Completa los espacios, copia el mensaje y envíalo a Mori. Mori corregirá tus frases y te hará preguntas.
+      - id: mori-imperativo
+        type: aiTutorPrompt
+        title: Consejos para un festival
+        intro: >-
+          Imagina que vas a un festival. Escribe **cinco frases** con el imperativo para
+          dar consejos a alguien que va a ese festival: qué debe hacer, qué debe evitar y
+          cómo disfrutar. Ejemplo: *¡Usa zapatos cómodos para caminar todo el día!*
+        message: |-
+          ¡Hola Mori! Estos son mis consejos para el festival ___:
+          1. ___
+          2. ___
+          3. ___
+          4. ___
+          5. ___
+          Por favor, corrige mis errores con el imperativo y hazme preguntas sobre el festival.
+      - id: mori-tiempos
+        type: aiTutorPrompt
+        title: Pasado, presente y futuro
+        intro: >-
+          Elige un festival al que fuiste. Escribe **tres oraciones**: en pasado (qué
+          hiciste la última vez), en presente (qué está haciendo la gente ahora) y en
+          futuro (qué pasará el próximo año). Ejemplo: *El año pasado bailé en el
+          carnaval. En este momento, la gente está disfrazada y celebrando. El año que
+          viene traeré a mis amigos al festival.*
+        message: |-
+          ¡Hola Mori! Te cuento sobre el festival ___:
+          Pasado: ___
+          Presente: ___
+          Futuro: ___
+          Por favor, corrige mis errores y hazme preguntas en pasado, presente y futuro.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: festivales-practica
+    book: workbook
+    title: 'Práctica: Festivales'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-imperativo
+        type: activity
+        activity: festivales-imperativo
+      - id: ex-narrar
+        type: activity
+        activity: festivales-narrar
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: festivales-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de los festivales
+        glossLang: he
+        link: https://quizlet.com/il/1001272696/conversational-spanish-festivals-flash-cards/
+        items: &festivales-words
+          - { term: Festival, gloss: פסטיבל }
+          - { term: Disfraz, gloss: תחפושת }
+          - { term: Disfrazarse, gloss: להתחפש }
+          - { term: Celebrar, gloss: לחגוג }
+          - { term: Música, gloss: מוזיקה }
+          - { term: Bailar, gloss: לרקוד }
+          - { term: Costumbre, gloss: מנהג }
+          - { term: Tradición, gloss: מסורת }
+          - { term: Máscara, gloss: מסכה }
+          - { term: Colores, gloss: צבעים }
+          - { term: Desfile, gloss: מצעד }
+          - { term: Fiesta callejera, gloss: מסיבת רחוב }
+          - { term: Reina, gloss: מלכה }
+          - { term: Vikingo, gloss: ויקינג }
+          - { term: Diablo, gloss: שטן }
+          - { term: Cultural, gloss: תרבותי }
+          - { term: Comida, gloss: אוכל }
+          - { term: Evento, gloss: אירוע }
+          - { term: Festival de música, gloss: פסטיבל מוזיקה }
+          - { term: Feriado, gloss: חג / יום חופש }
+          - { term: Preparación, gloss: הכנה }
+          - { term: Entrada, gloss: כרטיס (כניסה) }
+          - { term: Clima, gloss: מזג אוויר }
+          - { term: Estatus social, gloss: מעמד חברתי }
+          - { term: Indígena, gloss: ילידי }
+          - { term: Naranja, gloss: כתום }
+          - { term: Género musical, gloss: סגנון מוזיקה }
+          - { term: Artistas, gloss: אמנים }
+
+vocabulary:
+  - slug: festivales
+    title: Festivales
+    items: *festivales-words
+
+activities:
+  - slug: festivales-imperativo
+    title: 'Imperativo: baila, come, no cantes'
+    minutes: 8
+    items:
+      - id: bebe
+        type: multipleChoice
+        prompt: ___ mucha agua en el festival. (beber, tú)
+        options:
+          - { text: Bebe, correct: true }
+          - {
+              text: Bebes,
+              feedback: '*Bebes* es presente, no es una instrucción. El imperativo de *beber* es *bebe*.',
+            }
+          - {
+              text: Bebas,
+              feedback: '*Bebas* es para el negativo: *No bebas*. En afirmativo usa *bebe*.',
+            }
+      - id: baila
+        type: fillBlank
+        prompt: Completa con el imperativo de *bailar* (tú).
+        text: ___ en la fiesta.
+        blanks: [[Baila]]
+      - id: no-cantes
+        type: multipleChoice
+        prompt: No ___ tan fuerte en la fiesta. (cantar, tú)
+        options:
+          - { text: cantes, correct: true }
+          - {
+              text: canta,
+              feedback: 'En negativo, los verbos en *-ar* terminan en *-es*: *no cantes*.',
+            }
+          - { text: cantas, feedback: '*Cantas* es presente. En negativo usa *no cantes*.' }
+      - id: formas-tu
+        type: matching
+        prompt: Une cada verbo con su imperativo (tú).
+        pairs:
+          - [bailar, baila]
+          - [comer, come]
+          - [vivir, vive]
+          - [usar, usa]
+          - [salir, sal]
+      - id: ustedes
+        type: trueFalse
+        prompt: 'Con *ustedes*, los verbos en *-ar* terminan en *-en*: *Bailen en la fiesta.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! *-ar* → *-en* (bailen); *-er* / *-ir* → *-an* (coman, vivan).
+          incorrect: 'Con *ustedes*: *-ar* → *-en* (bailen); *-er* / *-ir* → *-an* (coman, vivan).'
+      - id: no-beban
+        type: fillBlank
+        prompt: Completa con el imperativo negativo de *beber* (ustedes).
+        text: No ___ demasiado en el festival.
+        blanks: [[beban]]
+      - id: no-salgas
+        type: multipleChoice
+        prompt: No ___ tarde del evento. (salir, tú)
+        options:
+          - { text: salgas, correct: true }
+          - {
+              text: sales,
+              feedback: '*Sales* es presente. En negativo usa el subjuntivo: *no salgas*.',
+            }
+          - { text: salas, feedback: 'La raíz sale de la forma *yo*: *salgo* → *no salgas*.' }
+      - id: ordena-entrada
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: No pierdas tu entrada.
+
+  - slug: festivales-narrar
+    title: 'Narrar: pasado, presente y futuro'
+    minutes: 8
+    items:
+      - id: fui
+        type: multipleChoice
+        prompt: Ayer ___ a un concierto increíble.
+        options:
+          - { text: fui, correct: true }
+          - { text: voy, feedback: '*Ayer* es pasado: usa el pretérito indefinido, *fui*.' }
+          - { text: iré, feedback: '*Iré* es futuro. *Ayer* es pasado: usa *fui*.' }
+      - id: celebrabamos
+        type: multipleChoice
+        prompt: Cuando era niño, siempre ___ el carnaval.
+        options:
+          - { text: celebrábamos, correct: true }
+          - {
+              text: celebraremos,
+              feedback: 'Es un hábito en el pasado: usa el imperfecto, *celebrábamos*.',
+            }
+          - {
+              text: vamos a celebrar,
+              feedback: '*Vamos a celebrar* es futuro. Para hábitos en el pasado usa el imperfecto.',
+            }
+      - id: traere
+        type: fillBlank
+        prompt: Completa con el verbo *traer* en futuro simple (yo).
+        text: El año que viene ___ a mis amigos al festival.
+        blanks: [[traeré, yo traeré]]
+      - id: tiempos
+        type: matching
+        prompt: Une cada oración con su tiempo.
+        pairs:
+          - [Ayer encontré una invitación., pretérito indefinido]
+          - ['Cuando era niña, bailaba en el desfile.', imperfecto]
+          - [Hoy voy al evento., presente]
+          - [¿Qué pasará allí?, futuro simple]
+          - [Mañana vamos a preparar todo., ir a + infinitivo]
+      - id: imperfecto-habitos
+        type: trueFalse
+        prompt: 'El imperfecto se usa para describir situaciones y hábitos en el pasado: *Cuando era niño, siempre celebrábamos el carnaval.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! El imperfecto describe hábitos y situaciones del pasado.
+          incorrect: 'El imperfecto sí describe hábitos en el pasado. Para acciones terminadas usamos el pretérito indefinido: *Ayer fui a un concierto.*'
+      - id: baile
+        type: fillBlank
+        prompt: Completa con el verbo *bailar* en pretérito indefinido (yo).
+        text: El año pasado ___ en el carnaval.
+        blanks: [[bailé, yo bailé]]
+      - id: cancelara
+        type: multipleChoice
+        prompt: Si sigue lloviendo, el desfile se ___.
+        options:
+          - { text: cancelará, correct: true }
+          - {
+              text: canceló,
+              feedback: 'Hablamos de algo que va a pasar: usa el futuro, *se cancelará*.',
+            }
+          - {
+              text: cancelaba,
+              feedback: '*Cancelaba* es imperfecto (pasado). Aquí usamos el futuro: *se cancelará*.',
+            }
+      - id: ordena-manana
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Mañana vamos a preparar todo.
