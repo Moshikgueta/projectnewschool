@@ -1,0 +1,520 @@
+# Cycle "Essential services (שירותים חיוניים)", converted from the spoken Arabic level 1 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew
+# transliteration, apc-Hebr); Hebrew blocks carry `lang: he`.
+
+course: ar-medubar-1
+slug: essential-services
+title: שירותים חיוניים
+goal: לתת ולהבין הוראות הגעה (כיוונים), ולתאר איפה נמצא מקום בעזרת מילות יחס.
+position: 8
+status: in_review
+review:
+  - "The two workbook exercises are NEW: the notebook has no self-study exercises. They were written only from this cycle's vocabulary, summary and examples. An Arabic teacher must check every right answer, every wrong option and every transliteration before students see them."
+  - "Spelling varies inside the cycle and was kept: אודדאם / ק'ודָּאם / קֻדָאם (opposite); בּוֹוסל / בּוֹוס'ל / בּוֹוצַל (I get to); דֻע’רי / דֻע'רי; הֻוַّ / הוּוַّ; יסאר / שׁמָאל / שְמָאל. Please choose one form per word; the exercises use אודדאם, דֻע’רי and the forms of the summary."
+  - 'Small corrections: "דֻור’רי" → "דֻע’רי"; "לִֶפּ" → "לִפּ"; "בַַּעד" → "בַּעד"; "רוּח’ דֻע’רי" → "רוּח דֻע’רי"; "מרּה" → "מרה"; "רכֶּבֱּת" → "רכֶּבֶּת"; "קַ''רִִיבְּ" → "קַ''רִיבְּ"; Hebrew "כול" → "כל".'
+  - "Hebrew meanings added where the notebook gave none: בַּעד (אחרי) and קַ'בֶּל (לפני) in the direction-word list; the glosses in the summary's key questions (וֵין = איפה, כיף בּוֹוצַל לַ–…? = איך מגיעים ל…?, קריב וַלַّא בעיד? = קרוב או רחוק?). Please confirm."
+  - 'Vocabulary: "אתיג’את – כיוונים" looks like it is missing a letter (اتجاهات, אִתִّגַ''אהַאת?) and "אַמְשִי" is "I walk" rather than the infinitive "ללכת". Both kept as written; please check.'
+  - 'The notebook has three activities (1, 2 and "3 – guess the place"), but Activity 2 continues with a second, unnumbered part (goal: free speaking, choosing a place and describing it with prepositions). It is kept as "פעילות 2 (המשך)". In Activity 3, the second example (the same questions half in Hebrew: "הוא חד אלמַסְרַח?") was left out because it repeats the first one.'
+  - The city map used in Activities 1–3 is not in the notebook. The teacher shares a map on screen until one is added to the course's media (see teacher notes).
+  - No Mori homework in this cycle, so there is no homework section. No activity times are given in the notebook.
+sections:
+  - slug: essential-services-class
+    title: 'בכיתה: שירותים חיוניים'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: שירותים חיוניים
+        lang: he
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: כיוונים
+            description: 'דֻע’רי, יסאר, ימין, לִפּ, ואיך שואלים: כיף בּוֹוצַל לַ–…?'
+          - name: מילות יחס
+            description: בְּ–, חד, אודדאם, בֵּין (ב־, ליד, מול, בין)
+        lang: he
+      - id: quizlet
+        type: externalLink
+        label: שירותים חיוניים בקוויזלט
+        url: https://quizlet.com/il/1112893246/%D7%AA%D7%97%D7%91%D7%95%D7%A8%D7%94-%D7%A0%D7%99%D7%95-%D7%A1%D7%A7%D7%95%D7%9C-%D7%9E%D7%95%D7%90%D7%A1%D7%9C%D7%90%D7%AA-%D7%95%D7%A1%D7%A4%D7%A8-flash-cards/
+        lang: he
+      - id: intro-title
+        type: heading
+        level: 3
+        text: סיבוב פתיחה
+        lang: he
+      - id: intro
+        type: sentenceFrame
+        frame: |-
+          איסמי ___.
+          אנא סאכן / סאכנֵה קריב מן ניו סקול או בעיד עַן ניו סקול.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: שאלות חימום
+        lang: he
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: שו פי חד בֵיתַכ / בֵיתֵכ?
+            frame: חד ביתי פי ___ (ג'אמעָה, מדרסֶה, בַּחַר, מחטָּה…)
+          - question: כיף בֶּתְרוח למַחַטֶּת אלבּאס' אל ק'ריבֶּה?
+            frame: בטלע מן אלבֵּית, בליף ימין, ובמשי דֻע’רי. אלמחַטֶּה אודדאם אלבּארֶכּ.
+          - question: כּיף בתוסָ'ל ל סופרמרקת בלחארָה?
+            frame: בַּמְשי, בַּעדין בלֶיף שְמָאל. אלסוּפֶּרמַרכֵּת חד אלבנק.
+          - question: וינתא אח'ֶר מרה רכֶּבֶּת ק'טאר? קד'יה כּאן סֶעֶר אל כּרתְ? (סֶעֶר = מחיר)
+          - question: בֶּתְפַדֶּ'ל תֶמְשי, תֶּרְכַּבְּ בּאס' / קֶ'טָאר אַו תְּסוק' סֶיַּארָה? ליש / ליה?
+            frame: ___ לאנו ___ (אהוָן, ארחַ'ס', אסרַע, אַרְיָחְ…)
+          - question: פי בל מַנְּטֶק'ה מטאר? קַ'רִיבְּ / בְּעִיד?
+            frame: ___ (X דק'איֶק' / סאעה / סאעאת)
+      - id: activities-title
+        type: heading
+        level: 3
+        text: 'פעילות – מפת העיר: כיוונים'
+        lang: he
+      - id: activities-goal
+        type: text
+        text: '**מטרה:** לתרגל הבנה וייצור של כיוונים פשוטים (ישר, שמאל, ימין, ליד, מול, בין), בעזרת מפה וחיקוי של מצבים אמיתיים.'
+        lang: he
+      - id: act1
+        type: classActivity
+        title: 'פעילות 1: חזרה על מילות כיוון'
+        skills:
+          - כיוונים
+        steps:
+          - המורה מציג/ה את מילות הכיוון על המסך.
+          - 'בדיקת הבנה: מישהו ברחוב שואל אתכם לאן ללכת. איך תגידו לו?'
+        lang: he
+      - id: act1-words
+        type: examples
+        items:
+          - text: דֻע’רי
+            gloss: ישר
+          - text: יסאר / שׁמָאל
+            gloss: שמאלה
+          - text: ימין
+            gloss: ימין
+          - text: לִפּ
+            gloss: לפנות
+          - text: חד
+            gloss: ליד
+          - text: ק'ודָּאם
+            gloss: מול
+          - text: וָרא
+            gloss: מאחורה
+          - text: בֵּין
+            gloss: בין
+          - text: בַּעד
+            gloss: אחרי
+          - text: קַ'בֶּל
+            gloss: לפני
+      - id: act1-check
+        type: discussionQuestions
+        title: איך אומרים בערבית?
+        items:
+          - question: ללכת קדימה
+          - question: ללכת שמאלה
+          - question: ללכת ימינה
+          - question: …אחרי הצומת…
+          - question: להמשיך קדימה כל הזמן
+          - question: אין דרך! האזור סגור!
+          - question: אסור לחנות כאן!
+          - question: אין כניסה!
+        lang: he
+      - id: act2
+        type: classActivity
+        title: 'פעילות 2: הדגמה – איך מגיעים?'
+        skills:
+          - כיוונים
+        steps:
+          - המורה מראה על המפה מקום A ומקום B, ומדגים דיאלוג אמיתי.
+          - התלמידים חוזרים על השורות הקצרות אחרי המורה.
+          - 'משחק קטן: המורה ממליץ לתלמיד על מקום, ואחר כך התלמיד ממליץ למורה.'
+        lang: he
+      - id: act2-dialogue
+        type: dialogue
+        lines:
+          - speaker: A
+            text: אַיַּ ___ בתנְס'חְנִי?
+          - speaker: B
+            text: בִּנְס'חַכּ תְרוּח עַ–___.
+          - speaker: A
+            text: כיף בּוֹוסל לַ–___?
+          - speaker: B
+            text: בּוֹוס'ל בִּלְבַּאס / מַשִי. בְּתמְשִי שוי / ח'מסין מטר… בעדין לִפּ…
+      - id: act2-gloss
+        type: callout
+        tone: tip
+        text: אַיַּ ___ בתנְס'חְנִי? = איזה ___ אתה ממליץ לי?
+        lang: he
+      - id: act2-reflect
+        type: discussionQuestions
+        title: שאלות לכיתה
+        items:
+          - question: באילו כיוונים השתמשתם הכי הרבה?
+          - question: מה היה קל? מה היה קשה?
+          - question: מי יכול להגיד משפט אחד?
+        lang: he
+      - id: act2b
+        type: classActivity
+        title: 'פעילות 2 (המשך): המקום שבחרתי'
+        skills:
+          - מילות יחס
+          - כיוונים
+        steps:
+          - כל תלמיד בוחר מקום בעיר שלו (או בעיר דמיונית).
+          - מתארים את המקום בתבנית שלמטה.
+          - 'בזוגות: תלמיד A מתאר, ותלמיד B מסמן נקודה במפה לפי התיאור.'
+          - 3–4 תלמידים מקריאים את התיאור שלהם.
+        lang: he
+      - id: act2b-frame
+        type: sentenceFrame
+        frame: |-
+          אִל־מַכַּאן אִלְלִי אִחְ'תַרְתֻّ הֻוַّ ___.
+          הֻוַّ מַכַּאן מֻהִמּ לִאִנּוֹ ___.
+          הֻוַّ בִּ–___.
+          הֻוַّ חַדّ ___.
+          הֻוַّ בֵּין ___ וּ–___.
+          הֻוַّ קֻדָאם ___.
+      - id: act3
+        type: classActivity
+        title: 'פעילות 3: נחשו את המקום'
+        skills:
+          - מילות יחס
+        steps:
+          - תלמיד בוחר מקום על המפה, בסוד.
+          - שאר התלמידים שואלים שאלות סגורות (כן / לא) עם מילות יחס.
+          - ממשיכים עד שמישהו מנחש נכון.
+        lang: he
+      - id: act3-dialogue
+        type: dialogue
+        lines:
+          - speaker: A
+            text: הוּוַّ חד אלמסרַח?
+          - speaker: B
+            text: לא.
+          - speaker: A
+            text: הוּוַّ אודדאם אלבּארֶכ?
+          - speaker: B
+            text: אה.
+          - speaker: A
+            text: הוּוַّ אלמדרַסֶה?
+          - speaker: B
+            text: אה!
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: 'שתי מיומנויות במחזור: **כיוונים** (פעילויות 1–2) ו**מילות יחס** (פעילות 2 המשך, פעילות 3). מפת העיר לא נמצאת בפלטפורמה: שתפו מפה על המסך.'
+      - id: n-intro
+        anchor: intro
+        text: 'הדגימו קודם: אני ___ (שם המורה), אנא ___ , ואחר כך שאלו כל תלמיד.'
+      - id: n-act2
+        anchor: act2
+        text: הדגישו את מילות הכיוון בקול גבוה יותר. בקשו מהתלמידים להגיד רק את מילות הכיוון אחרי כל משפט. חזרו על הדוגמה פעמיים–שלוש בקצב איטי.
+      - id: n-act2-reflect
+        anchor: act2-reflect
+        text: 'תנו לתלמיד או שניים להגיד משפט, למשל: רוּח דֻע’רי, בעדין לִפּ יסאר.'
+      - id: n-act2b
+        anchor: act2b
+        text: 'עודדו שימוש בהווה בלבד ותיאורים קצרים מאוד. אם תלמיד מתקשה, תנו לו מילה אחת חסרה: "הוא…? חד? אודדאם? בין?"'
+  - slug: essential-services-summary
+    title: סיכום השיעור
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: סיכום השיעור
+        lang: he
+      - id: rules-directions
+        type: ruleSummary
+        skill: כיוונים
+        rules:
+          - text: 'מילים חשובות:'
+            examples:
+              - דֻע’רי (ישר)
+              - יסאר (שמאל)
+              - ימין (ימין)
+              - חד (ליד)
+              - אודדאם (מול)
+              - בֵּין (בין)
+          - text: 'שאלות מפתח:'
+            examples:
+              - וֵין? (איפה?)
+              - כיף בּוֹוצַל לַ–…? (איך מגיעים ל…?)
+              - קריב וַלַّא בעיד? (קרוב או רחוק?)
+        lang: he
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: מילות יחס
+        rules:
+          - text: 'מילות יחס לתיאור מיקום:'
+            examples:
+              - בְּ– (ב־ / בתוך)
+              - חד (ליד)
+              - אודדאם (מול)
+              - בֵּין (בין)
+        lang: he
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: עברו עם הקבוצה על שתי המיומנויות, ובקשו דוגמה חדשה לכל מילה.
+  - slug: essential-services-practice
+    book: workbook
+    title: 'תרגול: שירותים חיוניים'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+        lang: he
+      - id: ex-directions
+        type: activity
+        activity: essential-services-directions
+      - id: ex-prepositions
+        type: activity
+        activity: essential-services-prepositions
+  - slug: essential-services-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: שירותים חיוניים
+        glossLang: he
+        link: https://quizlet.com/il/1112893246/%D7%AA%D7%97%D7%91%D7%95%D7%A8%D7%94-%D7%A0%D7%99%D7%95-%D7%A1%D7%A7%D7%95%D7%9C-%D7%9E%D7%95%D7%90%D7%A1%D7%9C%D7%90%D7%AA-%D7%95%D7%A1%D7%A4%D7%A8-flash-cards/
+        items: &essential-services-words
+          - term: אתיג’את
+            gloss: כיוונים
+          - term: סופרמַרכֵּת
+            gloss: סופרמרקט
+          - term: מַכְּתַבֶּה
+            gloss: ספרייה
+          - term: מתְחַף
+            gloss: מוזיאון
+          - term: בַּאס
+            gloss: אוטובוס
+          - term: אַמְשִי
+            gloss: ללכת
+          - term: שארֶע
+            gloss: רחוב
+          - term: בְּלוּק
+            gloss: בלוק
+          - term: זָאוִיֵּה
+            gloss: פינה
+          - term: לִפּ
+            gloss: לפנות
+          - term: יסאר
+            gloss: שמאל
+          - term: ימין
+            gloss: ימין
+          - term: דֻע’רי
+            gloss: ישר
+          - term: אודדאם
+            gloss: מול
+          - term: חד
+            gloss: ליד
+          - term: בֵּין
+            gloss: בין
+          - term: קריב
+            gloss: קרוב
+          - term: בעיד
+            gloss: רחוק
+          - term: בּארֶכּ
+            gloss: פארק
+          - term: בנק
+            gloss: בנק
+          - term: בֵּית
+            gloss: בית
+          - term: מדינֶה
+            gloss: עיר
+          - term: מֻוהִמּ
+            gloss: חשוב
+          - term: מַכַּאן
+            gloss: מקום
+          - term: כיף
+            gloss: איך
+          - term: אָוס'ל
+            gloss: להגיע
+          - term: אַסאַל
+            gloss: לשאול
+          - term: אַנְס'ח
+            gloss: להמליץ
+        lang: he
+vocabulary:
+  - slug: essential-services
+    title: שירותים חיוניים
+    items: *essential-services-words
+activities:
+  - slug: essential-services-directions
+    title: כיוונים
+    minutes: 8
+    items:
+      - id: match-directions
+        type: matching
+        prompt: התאימו כל מילה לפירוש שלה.
+        pairs:
+          - - דֻע’רי
+            - ישר
+          - - יסאר
+            - שמאל
+          - - לִפּ
+            - לפנות
+          - - וָרא
+            - מאחורה
+          - - בַּעד
+            - אחרי
+        lang: he
+      - id: straight
+        type: multipleChoice
+        prompt: איך אומרים "ישר"?
+        options:
+          - text: דֻע’רי
+            correct: true
+          - text: יסאר
+            feedback: יסאר = שמאל.
+          - text: לִפּ
+            feedback: לִפּ = לפנות.
+        lang: he
+      - id: how-get
+        type: multipleChoice
+        prompt: איך שואלים "איך מגיעים ל…?"
+        options:
+          - text: כיף בּוֹוצַל לַ–…?
+            correct: true
+          - text: וֵין?
+            feedback: וֵין? = איפה?
+          - text: קריב וַלַّא בעיד?
+            feedback: קריב וַלַّא בעיד? = קרוב או רחוק?
+        lang: he
+      - id: turn-right
+        type: multipleChoice
+        prompt: '"בטלע מן אלבֵּית, בליף ימין, ובמשי דֻע’רי." מה עושים מיד אחרי שיוצאים מהבית?'
+        options:
+          - text: פונים ימינה
+            correct: true
+          - text: פונים שמאלה
+            feedback: 'בליף ימין: פונים ימינה (ימין), לא שמאלה (יסאר).'
+          - text: הולכים אחורה
+            feedback: 'בליף ימין: פונים ימינה.'
+        lang: he
+      - id: near
+        type: trueFalse
+        prompt: קריב פירושו "רחוק".
+        answer: false
+        feedback:
+          correct: נכון! קריב = קרוב, בעיד = רחוק.
+          incorrect: קריב = קרוב, ובעיד = רחוק.
+        lang: he
+      - id: recommend
+        type: multipleChoice
+        prompt: מה פירוש המשפט בִּנְס'חַכּ תְרוּח עַ–___?
+        options:
+          - text: אני ממליץ לך ללכת ל–___
+            correct: true
+          - text: איך מגיעים ל–___?
+            feedback: '"איך מגיעים" זה כיף בּוֹוסל לַ–___? (אַנְס''ח = להמליץ).'
+          - text: איזה ___ אתה ממליץ לי?
+            feedback: זו השאלה אַיַּ ___ בתנְס'חְנִי?
+        lang: he
+      - id: match-places
+        type: matching
+        prompt: התאימו כל מקום לפירוש שלו.
+        pairs:
+          - - שארֶע
+            - רחוב
+          - - זָאוִיֵּה
+            - פינה
+          - - מַכְּתַבֶּה
+            - ספרייה
+          - - מתְחַף
+            - מוזיאון
+          - - בּארֶכּ
+            - פארק
+        lang: he
+      - id: order-left
+        type: reorderSentence
+        prompt: 'סדרו את המילים: אני הולך, ואחר כך פונה שמאלה.'
+        sentence: בַּמְשי בַּעדין בלֶיף שְמָאל
+        lang: he
+  - slug: essential-services-prepositions
+    title: 'מילות יחס: חד, אודדאם, בֵּין'
+    minutes: 8
+    items:
+      - id: match-prepositions
+        type: matching
+        prompt: התאימו כל מילת יחס לפירוש שלה.
+        pairs:
+          - - חד
+            - ליד
+          - - אודדאם
+            - מול
+          - - בֵּין
+            - בין
+          - - בְּ–
+            - ב־ / בתוך
+          - - וָרא
+            - מאחורה
+        lang: he
+      - id: station
+        type: multipleChoice
+        prompt: 'התחנה מול הפארק. השלימו: אלמחַטֶּה ___ אלבּארֶכּ'
+        options:
+          - text: אודדאם
+            correct: true
+          - text: חד
+            feedback: חד = ליד.
+          - text: בֵּין
+            feedback: בֵּין = בין.
+        lang: he
+      - id: supermarket
+        type: multipleChoice
+        prompt: 'הסופרמרקט ליד הבנק. השלימו: אלסוּפֶּרמַרכֵּת ___ אלבנק'
+        options:
+          - text: חד
+            correct: true
+          - text: אודדאם
+            feedback: אודדאם = מול.
+          - text: וָרא
+            feedback: וָרא = מאחורה.
+        lang: he
+      - id: between
+        type: multipleChoice
+        prompt: 'המקום בין הבנק לפארק. השלימו: הֻוַّ ___ אלבנק ואלבּארֶכּ'
+        options:
+          - text: בֵּין
+            correct: true
+          - text: חד
+            feedback: חד = ליד.
+          - text: אודדאם
+            feedback: אודדאם = מול.
+        lang: he
+      - id: had
+        type: trueFalse
+        prompt: חד פירושו "ליד".
+        answer: true
+        feedback:
+          correct: נכון! חד = ליד.
+          incorrect: חד = ליד.
+        lang: he
+      - id: quddam
+        type: trueFalse
+        prompt: אודדאם פירושו "מאחורה".
+        answer: false
+        feedback:
+          correct: נכון! אודדאם = מול, ומאחורה = וָרא.
+          incorrect: אודדאם = מול. מאחורה = וָרא.
+        lang: he
+      - id: order-station
+        type: reorderSentence
+        prompt: 'סדרו את המילים: התחנה מול הפארק.'
+        sentence: אלמחַטֶּה אודדאם אלבּארֶכּ
+        lang: he
+      - id: order-supermarket
+        type: reorderSentence
+        prompt: 'סדרו את המילים: הסופרמרקט ליד הבנק.'
+        sentence: אלסוּפֶּרמַרכֵּת חד אלבנק
+        lang: he

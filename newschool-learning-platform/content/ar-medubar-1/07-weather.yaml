@@ -1,0 +1,622 @@
+# Cycle "Weather", converted from the spoken Arabic level 1 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew letters);
+# Hebrew instructions carry `lang: he`.
+course: ar-medubar-1
+slug: weather
+title: מזג האוויר – אִטַּקס
+goal: לתאר את מזג האוויר, ולספר מה קורה עכשיו בעזרת הבינוני פועל (פָאעֵל).
+position: 7
+status: in_review
+review:
+  - 'The two workbook exercises ("Weather words" and "The participle") are NEW: the notebook has no self-study exercises. They were written only from this cycle''s vocabulary, summary and examples. An Arabic teacher must check every right answer, every wrong option and every transliteration before students see them.'
+  - 'Skills: the notebook names "weather vocabulary / descriptive sentences" and the participle (בינוני פועל, "here and now"). They are used as the cycle''s two skills: "מזג האוויר" and "בינוני פועל".'
+  - 'Typos fixed: warm-up 1 "כּיף אִטַּקִס" → "כִּיף אִטַּקְס" (as everywhere else in the cycle); "פָאעְלִָאת" (two vowels on one letter) → "פָאעְלָאת" in the conjugation table; stray backslashes from the export ("עוטֶלְתָכְּ \ עוטֶלְתֶכְּ", "שו שָאיֶפֵה \ שו פי בַּרָּא") were turned into " / ". Warm-up 6 frame "אנָא שָאיְפֶ\ה" is written "אַנָא שָאיֵף / שָאיְפֶה" (masculine / feminine). Please confirm.'
+  - Vocabulary gloss "עָאלי – גבוהה" → "גבוה" (עָאלי is masculine).
+  - 'Spelling variants kept as in the notebook (teacher''s call): חַאר (table, vocabulary) but חַם in the warm-up 1 word list; מֻשְׁמִס (table) / מֻושְׁמֶס (vocabulary); עַ’בָּאר (Activity 1 word bank) / ר׳בָּאר (vocabulary) for غبار; טַקֶ''ס / טַק''ס'' / אִטַּקְס; לַאבְּסֶה (vocabulary) / לָאבְּסֶה (Activity 4); גַ’ארְזֶה (Activity 4) / גַ׳ארְזַה (vocabulary); אִלְיום / אִלְיוֹם; '' and ’ and ׳ as geresh. The exercises use the vocabulary list''s spellings, except "מֻשְׁמִס" (the table form). Is "חַם" in warm-up 1 meant to be "חַאר"?'
+  - '"בּוּט – נעליים": بوط/بوت usually means boots (מגפיים). Kept as "נעליים" as in the notebook; please check.'
+  - Activity 2 asks "שו בעמלו?" (general present, "what do they do") inside a participle activity; kept as is. Please check whether a participle question was meant.
+  - The weather icons in the table were broken by the export ("ð¥"); they were restored as 🔥 (hot) and 🌥️ (cloudy). The Arabic-script column of that table is kept; the Arabic script after each vocabulary word was left out (the vocabulary card has term and meaning only).
+  - Activities 1 and 2 rely on pictures (a weather forecast, a scene with people) that are not in the exported notebook. The teacher shares them on screen (see the teacher notes); they should be added to the course's media.
+  - The "הערות למורים" about tenses (present simple / present progressive / participle) became a teacher note. The duplicated clothing word bank and frame in Activity 4 ("גרסה למחברת התלמיד") were merged into one frame and one word list.
+  - Activity 4 time "5–8 דקות" is recorded as 8 minutes; the guessing game is 2 minutes. The other activities have no times in the notebook.
+  - 'Homework: the notebook ends with a Google Docs link "שיעורי הבית של מערכי הסייקלים - מקורי:).docx" (the homework file for all cycles). It is kept as a link (sharing parameters removed); it is not checked whether students can open it. There are no Mori messages in this cycle.'
+  - The "תשובת תלמיד" lines are replaced by the optional answer boxes. The Quizlet link's tracking parameters (?i=…&x=…) were removed.
+sections:
+  - slug: weather-class
+    title: 'שיעור: מזג האוויר'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: מזג האוויר – אִטַּקְס
+      - id: skills
+        type: cycleOverview
+        lang: he
+        skills:
+          - name: מזג האוויר
+            description: מילים לתיאור מזג האוויר, משפטי תיאור (אִטַּקְס אִלְיום … הֻוֵּ …) וטווח טמפרטורות (בִּין … לַ …)
+          - name: בינוני פועל
+            description: 'משקל פָאעֵל לפעולה שקורה עכשיו: שָאיֵף, סַאמֵע, לָאבֵּס, חָאסֵס, רַאיֵח'
+      - id: quizlet
+        type: externalLink
+        lang: he
+        label: מזג האוויר בקוויזלט
+        url: https://quizlet.com/il/1105545775/%D7%9E%D7%96%D7%92%D7%90%D7%95%D7%95%D7%99%D7%A8-%D7%90%D7%98%D7%A7%D7%A1-%D7%A0%D7%99%D7%95-%D7%A1%D7%A7%D7%95%D7%9C-%D7%A2%D7%9D-%D7%AA%D7%A2%D7%AA%D7%99%D7%A7-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        lang: he
+        text: סבב היכרות – תַעָארֻף
+      - id: intro
+        type: sentenceFrame
+        frame: אִסְמִי ___. אַנָא סַאכֵּן / סַאכְּנֵה בְּ___. אִטַּקְס אִלְיום בְּ___ הֻוֵּ ___.
+        example: אִסְמִי גַּל. אַנָא סַאכֵּן בְּרִישׁוֹן. אִטַּקְס אִלְיום בְּרִישׁוֹן מֻעְ'יֵּם.
+      - id: weather-table
+        type: table
+        lang: he
+        caption: מילים למזג האוויר
+        header:
+          - ערבית
+          - תעתיק
+          - עברית
+          - אייקון
+        rows:
+          - - حارّ
+            - חַאר
+            - חם
+            - 🔥
+          - - بارد
+            - בָּארֵד
+            - קר
+            - ❄️
+          - - مُمْطِر
+            - מֻמְטִר
+            - גשום
+            - ☔
+          - - مُشْمِس
+            - מֻשְׁמִס
+            - שמשי
+            - ☀️
+          - - مُغَيَّم
+            - מֻעְ'יֵּם
+            - מעונן
+            - 🌥️
+      - id: warmup-title
+        type: heading
+        level: 3
+        lang: he
+        text: שאלות חימום
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: כִּיף אִטַּקְס אליום פי ___?
+            frame: אִטַּקְס אִלְיום פִי ___ הֻוֵּ ___. (מֻשְמִס, חַם, בָּארֵד, מֻמְטִר, מֻעְ'יֵּם)
+          - question: שו אַכְּתַר טַק'ס' בתחֶבְּ? אס'יף, ח'ריף, שיתא או רַבִּיע?
+          - question: שוּ בְּתִחִבּ תִעְמַל בְּפַסֶ'ל א־סֵ'יף?
+            frame: בְּחִבּ אַרוּח עַל־___ / בְּחִבּ אַשׁוּף ___. (אַסאפֶר, אַסְבַּח (לשחות), אַרוח מֶשְוָאר (טיול) · בַּחַר, טבּיעָה, דולֶה ג'דידֶה, נאס…)
+          - question: שוּ בְּתִחִבּ תִעְמֵל בְּפַסֵֿ'ל א־שִׁיתַא?
+            frame: בְּחִבּ אִשׁרַבְּ שַׁאי וּ אַשׁוּף מוסלסַל (סדרה) / בַּחֶבּ אַנַאם / אוכֶּל כַּסְתַנה…
+          - question: שו בֶּתְפַדֶּ'ל אלג'ו פי פֶנלַנְדָה או פי אלהֶנד?
+          - question: שו שָאיֵף / שָאיְפֶה? שו פי בַּרָּא?
+            frame: אַנָא שָאיֵף / שָאיְפֶה ___. (שִתָא, בַּרַד, נָאס, סַייָאראת, עַסָֿאפִיר (ציפורים), שַגַ'ר, עמארה, מחל אואעי, מַטְעָם…)
+          - question: וין בֶּתְחֶבְּ תְּכּון אלעוטְלֶה? (עוטֶלְתָכְּ / עוטֶלְתֶכְּ)
+      - id: activities-title
+        type: heading
+        level: 3
+        lang: he
+        text: פעילויות בכיתה – פַעָאלִיָאת בּסַּֿף
+      - id: act1
+        type: classActivity
+        lang: he
+        title: "פעילות 1: תחזית מזג האוויר – אִנַּשְרָה אִלְגַ'ווִיֶה"
+        skills:
+          - מזג האוויר
+        steps:
+          - הסתכלו בתחזית שהמורה מציג/ה.
+          - תארו את מזג האוויר בכל יום בתחזית. השתמשו במילים מבנק המילים.
+          - 'הוסיפו את טווח הטמפרטורות: בִּין ___ לַ ___.'
+        example: אִטַּקְס יום אִתלָאתָא בָּארֵד ו פי מַטַר ודַרַגֶ'ת אִלְחרָארַה בִּין תִסְעַה לַ אַרְבּעטַאש.
+        wordBank:
+          - חַאר
+          - בָּארֵד
+          - מֻמְטִר
+          - מֻשְׁמִס
+          - מֻעְ'יֵּם
+          - רִיח
+          - דָאפִי
+          - עַ’בָּאר
+      - id: act1-days
+        type: discussionQuestions
+        items:
+          - question: יום אִלתְּנֵין
+            frame: אִטַּקְס יום אִלתְּנֵין ___.
+          - question: יום אִתַּלָאתָא
+            frame: אִטַּקְס יום אִתַּלָאתָא ___.
+          - question: יום אִלְאַרְבִּעָא
+            frame: אִטַּקְס יום אִלְאַרְבִּעָא ___.
+          - question: יום אִלְחַ'מֵיס
+            frame: אִטַּקְס יום אִלְחַ'מֵיס ___.
+      - id: act2
+        type: classActivity
+        lang: he
+        title: 'פעילות 2: מה רואים בתמונה?'
+        skills:
+          - בינוני פועל
+        steps:
+          - הסתכלו בתמונה שהמורה מציג/ה.
+          - תארו מה אתם רואים, שומעים, מרגישים, ומה האנשים לובשים. השתמשו בבינוני פועל (שָאיֵף, לָאבּסין, חָאסִין).
+          - ספרו כמה בנים וכמה בנות יש בתמונה.
+      - id: act2-questions
+        type: discussionQuestions
+        items:
+          - question: שו שָאיֵף?
+            frame: אַנָא שָאיֵף ___.
+          - question: שו בעמלו?
+          - question: שו לָאבּסין?
+            frame: לָאבּסין ___.
+          - question: שו חָאסִין?
+          - question: כַּם וַלַד? כַּם בֶּנֶת?
+      - id: act3
+        type: classActivity
+        lang: he
+        title: 'פעילות 3: נחשו מה קורה בחוץ'
+        skills:
+          - בינוני פועל
+          - מזג האוויר
+        steps:
+          - 'תלמיד/ה בוחר/ת תבנית אחת: אַנָא שָאיֵף / אַנָא סָאמֵע / אַנָא חָאסֵס / אַנָא לָאבֵּס…'
+          - מוסיף/ה מילה אחת מבנק המילים.
+          - 'שאר הכיתה מנחשת: **כִּיף אִטַּקְס בַּרָּא؟**'
+          - מי שניחש/ה נכון מקבל/ת נקודה.
+      - id: act3-examples
+        type: examples
+        items:
+          - text: אַנָא שָאיֵף מַטַר.
+            gloss: 'הכיתה: גשם / מזג אוויר גשום.'
+          - text: אַנָא סָאמֵע רִיח.
+            gloss: 'הכיתה: רוח / יום קר.'
+          - text: אַנָא לָאבֵּס גַ’אכִּית.
+            gloss: 'הכיתה: קר בחוץ.'
+          - text: אַנָא חָאסֵס בַּרְדָאן.
+            gloss: 'הכיתה: מזג אוויר קר.'
+      - id: act4
+        type: classActivity
+        lang: he
+        title: 'פעילות 4: מה אתם לובשים עכשיו?'
+        skills:
+          - בינוני פועל
+        minutes: 8
+        steps:
+          - 'המורה שואל/ת כל תלמיד/ה: **שוּ לָאבֵּס איסא?**'
+          - 'עונים לפי התבנית, עם מילה אחת מבנק המילים: אַנָא לָאבֵּס ___ (תלמידה: אַנָא לַאבְּסֶה ___).'
+          - 'המורה יכול/ה לשאול **לֵיש?** ועונים במילה אחת: לַאֶנּוּ בָּארֵד / לַאֶנּוּ מֻמְטִר. (רשות: מי שלא יכול/ה — מדלגים.)'
+          - 'משחק ניחוש (2 דקות): תלמיד/ה אומר/ת "אַנָא לָאבֵּס אִשִי חָאמִי", והכיתה מנחשת (גַ’אכִּית? גַ’ארְזֶה? לַפְחַה?). מי שניחש/ה נכון מקבל/ת נקודה. 3 סבבים מספיקים.'
+        example: אַנָא לָאבֵּס גַ’אכִּית. / אַנָא לַאבְּסֶה לַפְחַה. — לֵיש? — לַאֶנּוּ בָּארֵד.
+      - id: act4-words
+        type: vocabulary
+        title: 'בנק מילים: לבוש'
+        glossLang: he
+        items:
+          - term: גַ’אכִּית
+            gloss: ג'קט
+          - term: לַפְחַה
+            gloss: צעיף
+          - term: כְּפוף
+            gloss: כפפות
+          - term: בּוּט
+            gloss: נעליים
+          - term: גַ’ארְזֶה
+            gloss: סוודר
+          - term: בּלוזֶה
+            gloss: חולצה
+          - term: קַ'מיס
+            gloss: חולצה מכופתרת
+          - term: בַּנְטָלוֹן
+            gloss: מכנסיים
+      - id: act4-frame
+        type: sentenceFrame
+        prompt: שוּ לָאבֵּס אִלְיוֹם؟
+        frame: אַנָא לָאבֵּס ___. / אַנָא לַאבְּסֶה ___.
+        example: אַנָא לָאבֵּס גַ’אכִּית.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: 'שתי מיומנויות במחזור הזה: **מזג האוויר** (סבב ההיכרות, שאלות החימום ופעילות 1) ו**בינוני פועל** (פעילויות 2, 3 ו־4).'
+      - id: n-tenses
+        anchor: skills
+        text: 'חובה להסביר שבערבית יש זמנים שונים, כמו באנגלית: הווה כללי (PRESENT SIMPLE, למשל בַּשְרַבּ), הווה מתמשך (PRESENT PROGRESSIVE) ובינוני פועל. היום מתמקדים בבינוני פועל: הסבירו מה הוא (כל המידע בסיכום השיעור).'
+      - id: n-intro
+        anchor: intro
+        text: 'שאלו את התלמידים: **כִּיף אִטַּקְס אִלְיום בְּ___؟** (בחרו עיר: תל אביב, ירושלים, חיפה, עמאן, קהיר…). כל תלמיד/ה עונה בתבנית החובה.'
+      - id: n-act1
+        anchor: act1
+        text: הציגו על המסך תחזית מזג אוויר לארבעה ימים (שני עד חמישי). התמונה אינה במחברת המקורית בפלטפורמה.
+      - id: n-act2
+        anchor: act2
+        text: 'הציגו על המסך תמונה עם אנשים. הפעילות עוסקת בבינוני: הסבירו לתלמידים למה אומרים **שָאיֵף** ולא **בַּשוף** (פעולה שקורה עכשיו).'
+      - id: n-act4
+        anchor: act4
+        text: 'המטרה: שהתלמידים יגידו מה הם לובשים עכשיו, בקשר למזג האוויר. בונים רק מילה אחת — עדיין A1.'
+  - slug: weather-summary
+    title: סיכום השיעור – תַלְחִ'יס אִדַּרְס
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: מה למדנו היום?
+      - id: rules-weather
+        type: ruleSummary
+        lang: he
+        skill: מזג האוויר
+        rules:
+          - text: 'מילים בסיסיות לתיאור מזג האוויר: חם, קר, גשום, שמשי, מעונן, רוח ועוד.'
+            examples:
+              - חַאר, בָּארֵד, מֻמְטִר, מֻשְׁמִס, מֻעְ'יֵּם, רִיח
+          - text: 'במקום לומר "קר לי / חם לי" כמו בעברית, בערבית אומרים "אני קר / אני קרה" (כמו באנגלית: I''m cold).'
+            examples:
+              - בַּרְדָאן (סק'עאן) – קר לי (ז)
+              - בַּרְדָאנֶה (סק'עאנֶה) – קר לי (נ)
+          - text: כדי לתאר טווח טמפרטורות משתמשים במבנה **בִּין ___ לַ ___**.
+            examples:
+              - דַרַגֶ'ת אִלְחרָארַה בִּין תִסְעַה לַ אַרְבּעטַאש.
+      - id: rules-participle
+        type: ruleSummary
+        lang: he
+        skill: בינוני פועל
+        rules:
+          - text: בינוני פועל מתאר פעולה שקורה עכשיו, או פעולה בתהליך. בבניין הראשון (פַעַלַ – فَعَلَ) הוא במשקל **פָאעֵל** (فَاعِل).
+            examples:
+              - רַאיֵח (رَايِح) – הולך
+              - גַ’אי (جَايِ) – בא
+              - שַאיֵף (شَايِف) – רואה
+              - סַאמֵע (سَامِع) – שומע
+              - כָּאתֵב (كاتب) – כותב
+          - text: מוסיפים א' אחרי פ' הפועל ושמים צירה על ע' הפועל.
+            examples:
+              - כַּתַבּ → כָּאתֵב (כותב)
+              - שָאף → שָאיֵף (רואה)
+              - רָח → רַאיֵח (הולך)
+          - text: בינוני פועל (רָאיֵח) = פעולה שמתרחשת ברגע זה ממש. הווה כללי (בַּ-) = הרגל, פעולה קבועה או כללית.
+            examples:
+              - أنا رايح عالمدرسة – אַנַא רָאיֵח עַלְמַדְרַסֶה – אני הולך לבית הספר עכשיו.
+              - أنا بروح عالمدرسة كل يوم – אַנַא בַּרוח עַלְמַדְרַסֶה כֻּל יוֹם – אני הולך לבית הספר כל יום.
+      - id: participle-table
+        type: table
+        lang: he
+        caption: נטיית הבינוני
+        header:
+          - צורה
+          - משקל
+          - דוגמה
+        rows:
+          - - יחיד
+            - פָאעֵל
+            - עָארֵף
+          - - יחידה
+            - פָאעְלֶה
+            - עָארְפֶה
+          - - רבות
+            - פָאעְלָאת
+            - עָארְפָאת
+          - - רבים
+            - פָאעלִין
+            - עָארְפִין
+      - id: examples-title
+        type: heading
+        level: 3
+        lang: he
+        text: משפטים לדוגמה
+      - id: participle-examples
+        type: examples
+        items:
+          - text: אַנָא רַאיֵחּ עַ(לַ)מַדְרַסֵהּ
+            gloss: אני הולך לבית הספר
+          - text: הֻוֵּ גַ'אי עַ(לַ)דַּרְס
+            gloss: הוא בא לשיעור
+          - text: אַ(ל)טֻּלַּאבּ טָאלֵעִין מִן א(ל)סַֿףּ
+            gloss: התלמידים יוצאים מהכיתה
+          - text: אַנָא סַאמֵעּ א(ל)-רִיַאח
+            gloss: אני שומע את הרוח
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: עברו על שתי המיומנויות עם הקבוצה, ובקשו מכל תלמיד/ה דוגמה חדשה בבינוני פועל.
+  - slug: weather-homework
+    title: שיעורי בית
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        lang: he
+        text: שיעורי בית
+      - id: how
+        type: text
+        lang: he
+        text: פתחו את קובץ שיעורי הבית ועשו את המשימה של מחזור "מזג האוויר".
+      - id: homework-file
+        type: externalLink
+        lang: he
+        label: שיעורי הבית של המחזורים
+        url: https://docs.google.com/document/d/1Z0zlS301QlViU3B1nS5gkde9KlDReViy/edit
+  - slug: weather-practice
+    book: workbook
+    title: 'תרגול: מזג האוויר'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        lang: he
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+      - id: ex-words
+        type: activity
+        activity: weather-words
+      - id: ex-participle
+        type: activity
+        activity: weather-participle
+  - slug: weather-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: מילים חיוניות – מזג האוויר
+        glossLang: he
+        link: https://quizlet.com/il/1105545775/%D7%9E%D7%96%D7%92%D7%90%D7%95%D7%95%D7%99%D7%A8-%D7%90%D7%98%D7%A7%D7%A1-%D7%A0%D7%99%D7%95-%D7%A1%D7%A7%D7%95%D7%9C-%D7%A2%D7%9D-%D7%AA%D7%A2%D7%AA%D7%99%D7%A7-flash-cards/
+        items: &a1
+          - term: חַאר
+            gloss: חם
+          - term: בָּארֵד
+            gloss: קר
+          - term: מֻושְׁמֶס
+            gloss: שמשי
+          - term: מֻעְ'יֵּם
+            gloss: מעונן
+          - term: מֻמְטִר
+            gloss: גשום
+          - term: רִיח
+            gloss: רוח
+          - term: דָאפִי
+            gloss: נעים / פושר
+          - term: ר׳בָּאר / ר'בַּרָה
+            gloss: אבק / אובך
+          - term: שט אלבַּחַר
+            gloss: חוף הים
+          - term: ג'בּאל
+            gloss: הרים
+          - term: עָאלי
+            gloss: גבוה
+          - term: וָאטי
+            gloss: נמוך
+          - term: טַקֶ'ס
+            gloss: מזג אוויר
+          - term: דַרַגֶ׳ת חַרַארַה
+            gloss: טמפרטורה
+          - term: בֵּין
+            gloss: בין
+          - term: לַ–
+            gloss: עד
+          - term: אַנָא
+            gloss: אני
+          - term: סַאכֵּן
+            gloss: גר (ז)
+          - term: סַאכְּנֶה
+            gloss: גרה (נ)
+          - term: שָאיֵף
+            gloss: רואה (ז)
+          - term: סַאמֵע
+            gloss: שומע (ז)
+          - term: לָאבֵּס
+            gloss: לובש (ז)
+          - term: לַאבְּסֶה
+            gloss: לובשת (נ)
+          - term: חָאסֵס
+            gloss: מרגיש (ז)
+          - term: חַאסֶּה
+            gloss: מרגישה (נ)
+          - term: רַאיֵח
+            gloss: הולך (עכשיו)
+          - term: גַ׳אכִּית
+            gloss: ג'קט
+          - term: לַפְחַה
+            gloss: צעיף
+          - term: כְּפוף
+            gloss: כפפות
+          - term: בּוּט
+            gloss: נעליים
+          - term: גַ׳ארְזַה
+            gloss: סוודר
+          - term: בּלוזֶה
+            gloss: חולצה
+          - term: בַּנְטָלוֹן
+            gloss: מכנסיים
+          - term: שורְתְּ
+            gloss: מכנס קצר
+          - term: נוס' כּום / כּום טַויל
+            gloss: שרוול קצר / שרוול ארוך
+          - term: כִּיף
+            gloss: איך
+vocabulary:
+  - slug: weather
+    title: מזג האוויר
+    items: *a1
+activities:
+  - slug: weather-words
+    title: מזג האוויר
+    minutes: 8
+    items:
+      - id: match-weather
+        type: matching
+        lang: he
+        prompt: התאימו כל מילה למשמעות שלה.
+        pairs:
+          - - חַאר
+            - חם
+          - - בָּארֵד
+            - קר
+          - - מֻמְטִר
+            - גשום
+          - - מֻשְׁמִס
+            - שמשי
+          - - מֻעְ'יֵּם
+            - מעונן
+      - id: atta2s
+        type: multipleChoice
+        lang: he
+        prompt: איך אומרים "מזג האוויר"?
+        options:
+          - text: אִטַּקְס
+            correct: true
+          - text: רִיח
+            feedback: רִיח = רוח.
+          - text: דַרַגֶ'ת חַרַארַה
+            feedback: דַרַגֶ'ת חַרַארַה = טמפרטורה.
+      - id: cold-today
+        type: multipleChoice
+        lang: he
+        prompt: 'השלימו: אִטַּקְס אִלְיום ___ (היום קר).'
+        options:
+          - text: בָּארֵד
+            correct: true
+          - text: חַאר
+            feedback: חַאר = חם.
+          - text: מֻשְׁמִס
+            feedback: מֻשְׁמִס = שמשי.
+      - id: im-cold
+        type: multipleChoice
+        lang: he
+        prompt: דני אומר "קר לי". מה הוא אומר בערבית?
+        options:
+          - text: אַנָא בַּרְדָאן
+            correct: true
+          - text: אַנָא בָּארֵד
+            feedback: בָּארֵד מתאר את מזג האוויר. על אדם אומרים בַּרְדָאן ("אני קר").
+          - text: אַנָא בַּרְדָאנֶה
+            feedback: בַּרְדָאנֶה היא צורת הנקבה. דני הוא זכר.
+      - id: range
+        type: multipleChoice
+        lang: he
+        prompt: "השלימו: דַרַגֶ'ת אִלְחרָארַה ___ תִסְעַה לַ אַרְבּעטַאש."
+        options:
+          - text: בִּין
+            correct: true
+          - text: כִּיף
+            feedback: כִּיף = איך. לטווח טמפרטורות אומרים בִּין ___ לַ ___.
+          - text: פִי
+            feedback: לטווח טמפרטורות אומרים בִּין ___ לַ ___.
+      - id: range-rule
+        type: trueFalse
+        lang: he
+        prompt: 'כדי לתאר טווח טמפרטורות אומרים: בִּין ___ לַ ___.'
+        answer: true
+        feedback:
+          correct: 'נכון! למשל: בִּין תִסְעַה לַ אַרְבּעטַאש.'
+          incorrect: המבנה הוא בִּין ___ לַ ___ (בין … עד …).
+      - id: ask-weather
+        type: multipleChoice
+        lang: he
+        prompt: איך שואלים "איך מזג האוויר היום בחיפה?"
+        options:
+          - text: כִּיף אִטַּקְס אִלְיום בְּחֵיפָה؟
+            correct: true
+          - text: וֵין אִטַּקְס אִלְיום בְּחֵיפָה؟
+            feedback: וֵין = איפה. שואלים עם כִּיף (איך).
+          - text: לֵיש אִטַּקְס אִלְיום בְּחֵיפָה؟
+            feedback: לֵיש = למה. שואלים עם כִּיף (איך).
+      - id: order-rishon
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: "מזג האוויר היום בראשון מעונן".'
+        sentence: אִטַּקְס אִלְיום בְּרִישׁוֹן מֻעְ'יֵּם
+  - slug: weather-participle
+    title: בינוני פועל
+    minutes: 8
+    items:
+      - id: match-participle
+        type: matching
+        lang: he
+        prompt: התאימו כל צורת בינוני למשמעות שלה.
+        pairs:
+          - - רַאיֵח
+            - הולך
+          - - גַ’אי
+            - בא
+          - - שַאיֵף
+            - רואה
+          - - סַאמֵע
+            - שומע
+          - - כָּאתֵב
+            - כותב
+      - id: katab
+        type: multipleChoice
+        lang: he
+        prompt: מהי צורת הבינוני (פָאעֵל) של כַּתַבּ?
+        options:
+          - text: כָּאתֵב
+            correct: true
+          - text: כַּתַבּ
+            feedback: "זה הפועל עצמו. בבינוני מוסיפים א' אחרי פ' הפועל: כָּאתֵב."
+          - text: רַאיֵח
+            feedback: רַאיֵח = הולך (מהפועל רָח).
+      - id: now-or-always
+        type: multipleChoice
+        lang: he
+        prompt: איך אומרים "אני הולך לבית הספר (עכשיו)"?
+        options:
+          - text: אַנַא רָאיֵח עַלְמַדְרַסֶה
+            correct: true
+          - text: אַנַא בַּרוח עַלְמַדְרַסֶה כֻּל יוֹם
+            feedback: בַּרוח … כֻּל יוֹם מתאר הרגל (כל יום), לא פעולה של עכשיו.
+          - text: אַנַא גַ'אי עַלְמַדְרַסֶה
+            feedback: גַ'אי = בא, לא הולך.
+      - id: baruh-now
+        type: trueFalse
+        lang: he
+        prompt: '"אַנַא בַּרוח" מתאר פעולה שקורה ברגע זה ממש.'
+        answer: false
+        feedback:
+          correct: נכון! בַּרוח (הווה כללי) הוא הרגל; עכשיו אומרים רָאיֵח.
+          incorrect: 'בַּרוח (הווה כללי) מתאר הרגל. פעולה של עכשיו: רָאיֵח (בינוני).'
+      - id: see-rain
+        type: multipleChoice
+        lang: he
+        prompt: 'השלימו: אַנָא ___ מַטַר (אני רואה גשם).'
+        options:
+          - text: שָאיֵף
+            correct: true
+          - text: סַאמֵע
+            feedback: סַאמֵע = שומע.
+          - text: לָאבֵּס
+            feedback: לָאבֵּס = לובש.
+      - id: she-wears
+        type: multipleChoice
+        lang: he
+        prompt: דנה אומרת "אני לובשת צעיף". מה היא אומרת?
+        options:
+          - text: אַנָא לַאבְּסֶה לַפְחַה
+            correct: true
+          - text: אַנָא לָאבֵּס לַפְחַה
+            feedback: לָאבֵּס היא צורת הזכר. דנה אומרת לַאבְּסֶה.
+          - text: אַנָא לַאבְּסֶה כְּפוף
+            feedback: כְּפוף = כפפות. צעיף = לַפְחַה.
+      - id: plural
+        type: multipleChoice
+        lang: he
+        prompt: 'לפי טבלת הנטייה: מהי צורת הרבים (זכר) של עָארֵף (יודע)?'
+        options:
+          - text: עָארְפִין
+            correct: true
+          - text: עָארְפֶה
+            feedback: עָארְפֶה היא צורת היחידה.
+          - text: עָארְפָאת
+            feedback: עָארְפָאת היא צורת הרבות.
+      - id: order-jacket
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: "אני לובש ג''קט".'
+        sentence: אַנָא לָאבֵּס גַ’אכִּית
