@@ -94,8 +94,9 @@ describe('content files', () => {
   });
 
   // The repository's own content must always be valid (Phase 3 exit criterion:
-  // invalid content fails CI).
-  it('every file in content/ is valid', () => {
+  // invalid content fails CI). It reads every course file, so its time grows
+  // with the content and gets a timeout of its own.
+  it('every file in content/ is valid', { timeout: 60_000 }, () => {
     const root = join(process.cwd(), 'content');
     const walk = (dir: string): string[] =>
       readdirSync(dir, { withFileTypes: true }).flatMap((e) =>
