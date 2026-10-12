@@ -1,0 +1,570 @@
+# Cycle "Cocina", converted from the Spanish level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-3
+slug: cocina
+title: Cocina
+goal: Hablar de experiencias con comida usando el pretérito perfecto y dar consejos y opiniones con verbos modales.
+position: 20
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Pretérito perfecto" and "Verbos modales") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's
+    summary rules, its examples and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Italian left in the source by mistake: the headings "Giro di presentazione" →
+    "Ronda de presentación" and "Vocabolario" → "Vocabulario"; the line "Livello: 3
+    (Avanzato intermedio - B1) / Competenze linguistiche" → "Nivel 3 (intermedio, B1) /
+    Competencias lingüísticas" (only used for the cycle overview). The slides link
+    title "Cucina … Conversazione in Italiano" also points to an Italian lesson.
+  - >-
+    The "Ronda de presentación" heading has no content in the source; a sentence frame
+    was added (Soy ___. Un plato que he probado y me ha encantado es ___.). Warm-up
+    sentence frames were also added (the source has two example answers, kept in the
+    frames), and the "Respuesta del estudiante 1/2/3" lines are replaced by the answer
+    boxes.
+  - >-
+    Left out: class notes about individual students at the end of Activity 3 (they
+    were about tipping, not about returning a dish). The lesson-slides link (gamma.app,
+    not allowed) is mentioned in a teacher note only. The Quizlet link is kept without
+    "?new". The empty "Fecha / Participantes" lines and the repeated title were
+    dropped.
+  - >-
+    Not in the source, so not converted: there is no Mori (homework) task in this
+    cycle, so the "cocina-tarea" section is left out. The notebook also gives no
+    activity times, so no minutes are recorded. Please add a Mori task if you want one.
+  - >-
+    Corrections: warm-up 1 had broken markdown (\#\#\# \*\*); English words in the
+    Spanish text: "una cheesecake vasca" → "una tarta de queso vasca", "Street food
+    asiática" → "Comida callejera asiática" (as in the vocabulary). The structure
+    line of the pretérito perfecto was broken LaTeX ("haber+participio +
+    \text{participio}…"); the same for "verbo modal + infinitivo". Both are rewritten
+    as plain text.
+  - >-
+    Summary, grammar added or made more precise: the pretérito perfecto rule now says
+    that "haber" is conjugated in the present (he, has, ha, hemos, habéis, han) and the
+    participle does not change, with a conjugation table and the regular endings (-ar →
+    -ado, -er/-ir → -ido); "volver → vuelto" and "hacer → hecho" are marked as
+    irregular. The modal-verb rule now says that deber / poder / tener que are
+    conjugated for the person and that the conditional (deberías, podrías) is softer;
+    a table was added. "Desde / desde hace" (present tense + time) is kept in the
+    summary under the pretérito perfecto skill, since it also talks about time up to
+    now. "Opinar" and "Comparaciones y recomendaciones" are kept under the modal-verb
+    skill. Please confirm.
+  - >-
+    The vocabulary list stops at item 30 ("La globalización") because the notebook ends
+    there; item 30 had no Hebrew gloss, so "גלובליזציה" was added. All 30 items were
+    converted; the other glosses are as in the source. Please confirm and add any
+    missing words.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: cocina-clase
+    title: 'Clase: Cocina'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cocina
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Pretérito perfecto
+            description: 'Experiencias y cosas recientes: *he probado, has comido, hemos cocinado, nunca he ido*'
+          - name: Verbos modales
+            description: 'Consejos, posibilidades y obligación: *deberías, puedes, podría, tienes que* + infinitivo'
+      - id: quizlet
+        type: externalLink
+        label: Cocina en Quizlet
+        url: https://quizlet.com/br/1184518212/cocina-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de presentación
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Un plato que he probado y me ha encantado es ___.
+        example: Soy Dana. Un plato que he probado y me ha encantado es el ceviche peruano.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Qué tipo de comida has probado que crees que todo el mundo debería probar al menos una vez? ¿Por qué?
+            frame: He probado ___ y creo que todo el mundo debería probarlo porque ___.
+          - question: ¿Has comido alguna vez algo raro o diferente que probablemente no habrías probado si alguien no te hubiera animado? ¿Cómo fue?
+            frame: 'He comido ___ y ___. (Ejemplo: He comido conejo y creo que nunca lo habría probado si no hubiera sido durante un tour, porque me parecía extraño comer un animal tan tierno.)'
+          - question: ¿Qué plato siempre has querido cocinar pero todavía no has conseguido preparar? ¿Qué te ha impedido hacerlo?
+            frame: 'Siempre he querido preparar ___, pero todavía no ___ porque ___. (Ejemplo: Siempre he querido preparar una tarta de queso vasca, pero todavía no he tenido la oportunidad porque mi horno no es lo suficientemente bueno.)'
+          - question: ¿Qué comida tradicional de tu infancia nunca has olvidado y te gustaría compartir con otras personas?
+            frame: Nunca he olvidado ___. Me gustaría compartirla porque ___.
+          - question: ¿Cuál es la receta más difícil que has preparado en tu vida?
+            frame: La receta más difícil que he preparado es ___.
+          - question: ¿Qué tipo de comida crees que los restaurantes israelíes deberían incluir más en sus menús? ¿Por qué?
+            frame: Creo que los restaurantes israelíes deberían incluir más ___ porque ___.
+          - question: ¿Qué comida has probado y sabes que nunca volverás a comer? Descríbela y explica por qué.
+            frame: He probado ___ y nunca volveré a comerlo porque ___.
+          - question: ¿Qué plato podría considerarse el plato nacional de Israel? Explica tu opinión.
+            frame: En mi opinión, ___ podría considerarse el plato nacional porque ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      # Actividad 1
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Entrevista: historias de comida y experiencias'
+        skills: [Pretérito perfecto, Verbos modales]
+        steps:
+          - '**Objetivos:** practicar el pretérito perfecto y las preguntas abiertas, hablar de experiencias personales con comida y restaurantes, y dar opiniones y recomendaciones con verbos modales.'
+          - '**Paso 1, preparación individual:** piensa en una comida inolvidable, una experiencia buena o mala en un restaurante, un plato raro o interesante que hayas probado, una comida que todavía quieras probar y una receta que hayas cocinado recientemente. Puedes tomar notas breves.'
+          - '**Paso 2, entrevista:** un estudiante es el entrevistador y el otro es el invitado de un programa de cocina o de viajes gastronómicos. El entrevistador hace preguntas de seguimiento para que la conversación sea natural. Usen el pretérito perfecto, verbos modales, opiniones personales, ejemplos y detalles.'
+          - '**Paso 3, cambio de roles:** el entrevistador ahora responde las preguntas y el invitado hace la entrevista.'
+          - '**Paso final:** presenta a tu compañero o compañera a la clase con un pequeño resumen.'
+        example: '*Ella ha probado comida tailandesa y japonesa, pero nunca ha probado comida india. También ha tenido una experiencia muy mala en un restaurante en Nueva York porque el servicio fue muy lento.*'
+      - id: act1-experiencias
+        type: discussionQuestions
+        title: 'Preguntas sugeridas: experiencias gastronómicas'
+        answerable: false
+        items:
+          - question: ¿Cuál ha sido la mejor comida que has probado en tu vida?
+          - question: ¿Has probado alguna comida extraña o inesperada?
+          - question: ¿Qué comida nunca volverías a comer?
+          - question: ¿Has tenido una mala experiencia en un restaurante?
+          - question: ¿Qué país tiene la mejor comida que has probado?
+      - id: act1-cocinar
+        type: discussionQuestions
+        title: 'Preguntas sugeridas: cocinar'
+        answerable: false
+        items:
+          - question: ¿Has cocinado algo difícil recientemente?
+          - question: ¿Qué plato deberías aprender a cocinar mejor?
+          - question: ¿Qué comida te gustaría preparar en el futuro?
+          - question: ¿Qué ingredientes nunca pueden faltar en tu cocina?
+      - id: act1-restaurantes
+        type: discussionQuestions
+        title: 'Preguntas sugeridas: restaurantes'
+        answerable: false
+        items:
+          - question: ¿Qué hace que un restaurante sea realmente bueno?
+          - question: ¿Qué debería mejorar la mayoría de los restaurantes?
+          - question: ¿Los camareros deberían recomendar platos a los clientes?
+          - question: ¿Qué restaurante recomendarías a un turista que visita tu ciudad?
+      - id: act1-cultura
+        type: discussionQuestions
+        title: 'Preguntas sugeridas: hábitos y cultura'
+        answerable: false
+        items:
+          - question: ¿Qué comida típica de tu país deberían probar los extranjeros?
+          - question: ¿Crees que las personas deberían probar comidas nuevas más seguido?
+          - question: ¿Qué diferencias has notado entre la comida de distintos países?
+          - question: ¿Las redes sociales han cambiado la forma en que las personas eligen restaurantes?
+      - id: act1-summary
+        type: discussionQuestions
+        title: 'Paso final: presenta a tu compañero o compañera'
+        items:
+          - question: Mi compañero / compañera ha probado ___, pero nunca ha ___.
+          - question: También ha tenido una experiencia ___ en ___ porque ___.
+          - question: Cree que todo el mundo debería ___.
+      # Actividad 2
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Crear el menú perfecto'
+        skills: [Verbos modales]
+        steps:
+          - '**Objetivos:** practicar el vocabulario de comida y restaurantes, usar verbos modales para recomendar y justificar, describir platos y trabajar en equipo con creatividad.'
+          - '**Paso 1, crear el restaurante:** en parejas o grupos pequeños, creen un restaurante nuevo. Decidan el nombre, el tipo de comida, el país o la inspiración cultural, el tipo de clientes, el ambiente del lugar y el precio general.'
+          - '**Paso 2, diseñar el menú:** creen un menú completo con mínimo 2 entradas, 3 platos principales, 2 postres y 2 bebidas. Cada plato tiene nombre, ingredientes principales, una descripción breve, precio y una característica especial.'
+          - '**Paso 3, recomendaciones del chef:** elijan el plato más popular, el más extraño, el plato que todo el mundo debería probar y el más saludable. Expliquen sus elecciones con verbos modales.'
+          - '**Paso 4, presentación del restaurante:** presenten su restaurante a la clase como en un programa de televisión o en una feria gastronómica. Expliquen el concepto, qué hace especial al menú, qué platos recomiendan y qué tipo de experiencia ofrece el lugar.'
+          - '**Paso 5, clientes y críticos:** los otros estudiantes son clientes, influencers gastronómicos o críticos de comida, y hacen preguntas (abajo).'
+          - '**Paso final, premiación:** la clase vota el restaurante más creativo, el menú más realista, el plato más extraño, el restaurante que realmente visitarían y el mejor nombre de restaurante.'
+        example: |-
+          **Hamburguesa Volcánica**
+          Hamburguesa con queso cheddar, jalapeños y salsa picante casera. Muy picante y servida con papas rústicas.
+          $18
+      - id: act2-types
+        type: examples
+        title: 'Paso 1: ejemplos de restaurantes'
+        items:
+          - text: Restaurante elegante italiano
+          - text: Comida callejera asiática
+          - text: Restaurante vegano moderno
+          - text: Restaurante temático de películas
+          - text: Restaurante futurista
+          - text: Parrilla argentina
+      - id: act2-chef
+        type: discussionQuestions
+        title: 'Paso 3: recomendaciones del chef'
+        items:
+          - question: 'El plato más popular es ___. Los clientes deberían probarlo porque ___. (Ejemplo: Los clientes deberían probar este plato porque es nuestra especialidad.)'
+          - question: 'El plato más extraño es ___. Podría ___. (Ejemplo: Este postre podría hacerse muy popular en redes sociales.)'
+          - question: El plato que todo el mundo debería probar es ___ porque ___.
+          - question: 'El plato más saludable es ___. (Ejemplo: Las personas que no comen carne podrían pedir esta opción.)'
+      - id: act2-critics
+        type: discussionQuestions
+        title: 'Paso 5: preguntas de clientes y críticos'
+        answerable: false
+        items:
+          - question: ¿Qué plato recomendarían para alguien vegetariano?
+          - question: ¿Cuál ha sido el plato más vendido?
+          - question: ¿Qué bebida combina mejor con este plato?
+          - question: ¿Se puede modificar el menú para personas con alergias?
+          - question: ¿Por qué debería visitar este restaurante?
+      # Actividad 3
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Debate: ¿debería devolver mi plato?'
+        skills: [Verbos modales, Pretérito perfecto]
+        steps:
+          - '**Pregunta del debate:** ¿Los clientes deberían poder devolver un plato en un restaurante? ¿Qué pasa si la comida no les gusta? ¿Lo has hecho alguna vez? ¿Qué debería hacer el cliente? ¿Cuál es la responsabilidad del restaurante?'
+          - '**Grupo A:** devolver la comida es razonable e importante. **Grupo B:** nunca se debería devolver un plato que ya fue pedido.'
+          - 'Cada argumento debe incluir un verbo modal o el pretérito perfecto. Es importante dar ejemplos personales.'
+          - '**Temas para incluir:** el tipo de restaurante (elegante, informal, comida para llevar), las diferencias culturales entre países, las razones para devolver un plato, y la atención al cliente y la responsabilidad del restaurante.'
+          - '**Paso final, debate en clase:** respondan a las preguntas de abajo.'
+        wordBank:
+          - En mi opinión…
+          - Creo que…
+          - Personalmente…
+          - Desde mi experiencia…
+          - Los clientes deberían…
+          - El restaurante tiene que…
+          - Alguna vez he…
+      - id: act3-final
+        type: discussionQuestions
+        title: 'Paso final: debate en clase'
+        items:
+          - question: ¿Cómo deberían los restaurantes encontrar un equilibrio entre ofrecer un buen servicio y evitar el desperdicio de comida?
+            frame: Creo que los restaurantes deberían ___.
+          - question: ¿Qué normas culturales deberían cambiar o mantenerse con la globalización?
+            frame: En mi opinión, ___ debería cambiar / mantenerse porque ___.
+          - question: ¿Qué reglas podrían ayudar a clientes y empleados a manejar mejor las quejas?
+            frame: Una regla que podría ayudar es ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Pretérito perfecto** (calentamiento y Actividades 1
+          y 3) y **Verbos modales** (Actividades 1, 2 y 3). El cuaderno no indica tiempos;
+          elige las actividades según el tiempo de la clase.
+      - id: n-slides
+        anchor: null
+        text: >-
+          El cuaderno enlaza una presentación de la clase en gamma.app; ese enlace no se
+          incluye aquí. Usa tu propia presentación si la tienes.
+      - id: n-intro
+        anchor: intro
+        text: Da tu propio ejemplo primero y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Elige 6 preguntas. Es importante que los estudiantes respondan con frases
+          completas y usen el pretérito perfecto.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Forma parejas. Las preguntas sugeridas son una ayuda: el entrevistador puede
+          elegirlas o hacer las suyas. En el paso final, corrige el pretérito perfecto en el
+          resumen (*ha probado, ha tenido*).
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Escribe en la pizarra el ejemplo del plato (nombre, ingredientes, descripción,
+          precio, característica especial) y algunas frases con *deberían, podrían, tienen
+          que*. Al final, organiza la votación.
+      - id: n-act3
+        anchor: act3
+        text: Divide la clase en dos grupos y asigna las posiciones. Cada argumento necesita un verbo modal o el pretérito perfecto.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: cocina-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-perfecto
+        type: ruleSummary
+        skill: Pretérito perfecto
+        rules:
+          - text: 'Usamos el pretérito perfecto para hablar de experiencias personales, de cosas que hemos hecho en nuestra vida, de situaciones recientes y de cambios que todavía tienen relación con el presente.'
+            examples:
+              - He probado comida japonesa.
+              - Nunca he comido comida india.
+              - ¿Has ido alguna vez a un restaurante vegano?
+              - Hemos visitado muchos cafés en Tel Aviv.
+          - text: 'Estructura: **haber** en presente (he, has, ha, hemos, habéis, han) + **participio**. *Haber* cambia según la persona; el participio no cambia.'
+            examples: [Yo he cocinado., Ella ha cocinado., Ellos han cocinado.]
+          - text: 'Participio regular: **-ar → -ado**, **-er / -ir → -ido**. Algunos participios son irregulares.'
+            examples:
+              - 'comer → comido, probar → probado, cocinar → cocinado, preparar → preparado'
+              - 'irregulares: volver → vuelto, hacer → hecho'
+          - text: 'Expresiones de tiempo comunes: **últimamente, recientemente, en los últimos años, esta semana, este mes, hoy**.'
+            examples:
+              - Últimamente he cocinado más en casa.
+              - En los últimos años los restaurantes han cambiado mucho.
+          - text: '**Desde** + un momento específico; **desde hace** + una cantidad de tiempo. Con el verbo en presente hablamos de algo que empezó en el pasado y continúa ahora.'
+            examples:
+              - Trabajo en este restaurante desde 2022.
+              - Vivo en Curitiba desde hace cinco años.
+      - id: perfecto-table
+        type: table
+        caption: Pretérito perfecto
+        header: [Persona, haber, probar, comer, hacer]
+        rows:
+          - [yo, he, he probado, he comido, he hecho]
+          - [tú, has, has probado, has comido, has hecho]
+          - [él / ella / usted, ha, ha probado, ha comido, ha hecho]
+          - [nosotros / nosotras, hemos, hemos probado, hemos comido, hemos hecho]
+          - [vosotros / vosotras, habéis, habéis probado, habéis comido, habéis hecho]
+          - [ellos / ellas / ustedes, han, han probado, han comido, han hecho]
+      - id: rules-modales
+        type: ruleSummary
+        skill: Verbos modales
+        rules:
+          - text: 'Los verbos modales sirven para dar consejos, hablar de posibilidades y expresar obligación o necesidad. **Deber:** consejo u obligación. El condicional (*deberías, deberían*) es más suave.'
+            examples:
+              - Deberías probar este plato.
+              - Los restaurantes deberían ofrecer más opciones vegetarianas.
+          - text: '**Poder:** posibilidad o permiso.'
+            examples: [Puedes pedir el menú del día., Este plato podría hacerse muy popular.]
+          - text: '**Tener que:** necesidad u obligación fuerte.'
+            examples:
+              [
+                Los camareros tienen que conocer los ingredientes.,
+                Tenemos que reservar antes de ir.,
+              ]
+          - text: 'Estructura: el verbo modal se conjuga según la persona (*debo, debes, debe…*) y después va el verbo en **infinitivo**: verbo modal + infinitivo.'
+            examples: [Debes probar el hummus., Podrían cambiar el menú., Tenemos que cocinar más.]
+          - text: 'Para expresar opiniones: **En mi opinión…, Creo que…, Personalmente…, Desde mi experiencia…**'
+            examples:
+              - Creo que la comida callejera israelí es increíble.
+              - Personalmente, nunca he entendido por qué el sushi es tan caro.
+          - text: 'Para comparar y recomendar: **más… que**, y los verbos modales.'
+            examples:
+              - Este restaurante es más acogedor que el otro.
+              - La comida tradicional debería ser más popular entre los jóvenes.
+              - Este lugar podría mejorar el servicio.
+      - id: modales-table
+        type: table
+        caption: Deber, poder y tener que
+        header: [Persona, deber, deber (más suave), poder, poder (más suave), tener que]
+        rows:
+          - [yo, debo, debería, puedo, podría, tengo que]
+          - [tú, debes, deberías, puedes, podrías, tienes que]
+          - [él / ella / usted, debe, debería, puede, podría, tiene que]
+          - [nosotros / nosotras, debemos, deberíamos, podemos, podríamos, tenemos que]
+          - [vosotros / vosotras, debéis, deberíais, podéis, podríais, tenéis que]
+          - [ellos / ellas / ustedes, deben, deberían, pueden, podrían, tienen que]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: cocina-practica
+    book: workbook
+    title: 'Práctica: Cocina'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-perfecto
+        type: activity
+        activity: cocina-perfecto
+      - id: ex-modales
+        type: activity
+        activity: cocina-modales
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: cocina-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la cocina
+        glossLang: he
+        link: https://quizlet.com/br/1184518212/cocina-flash-cards/
+        items: &cocina-words
+          - { term: Exigente, gloss: תובעני }
+          - { term: Sobrevalorado, gloss: מוערך יתר על המידה }
+          - { term: Inolvidable, gloss: בלתי נשכח }
+          - { term: Acogedor, gloss: נעים / חמים }
+          - { term: Sofisticado, gloss: מתוחכם }
+          - { term: Tradicional, gloss: מסורתי }
+          - { term: Innovador, gloss: חדשני }
+          - { term: Casero, gloss: ביתי }
+          - { term: Artesanal, gloss: אומנותי / עבודת יד }
+          - { term: Gourmet, gloss: גורמה }
+          - { term: Picante, gloss: חריף }
+          - { term: Cremoso, gloss: קרמי }
+          - { term: Crujiente, gloss: פריך }
+          - { term: Ahumado, gloss: מעושן }
+          - { term: Condimentado, gloss: מתובל }
+          - { term: La textura, gloss: המרקם }
+          - { term: El aroma, gloss: הארומה / הריח }
+          - { term: El ingrediente, gloss: המרכיב }
+          - { term: La receta, gloss: המתכון }
+          - { term: La especialidad, gloss: מנת הדגל / ההתמחות }
+          - { term: El establecimiento, gloss: העסק / המקום }
+          - { term: La reseña, gloss: ביקורת }
+          - { term: La experiencia gastronómica, gloss: חוויה קולינרית }
+          - { term: La cocina fusión, gloss: "מטבח פיוז'ן" }
+          - { term: La comida callejera, gloss: אוכל רחוב }
+          - { term: La cadena de restaurantes, gloss: רשת מסעדות }
+          - { term: La gastronomía, gloss: גסטרונומיה / קולינריה }
+          - { term: El desperdicio alimentario, gloss: בזבוז מזון }
+          - { term: La contaminación cruzada, gloss: זיהום צולב }
+          - { term: La globalización, gloss: גלובליזציה }
+
+vocabulary:
+  - slug: cocina
+    title: Cocina
+    items: *cocina-words
+
+activities:
+  - slug: cocina-perfecto
+    title: 'Pretérito perfecto: ¿qué has probado?'
+    minutes: 8
+    items:
+      - id: he-comido
+        type: multipleChoice
+        prompt: Yo nunca ___ comida india.
+        options:
+          - { text: he comido, correct: true }
+          - {
+              text: ha comido,
+              feedback: '*Ha* es para él / ella. Para *yo* usa *he*: *he comido*.',
+            }
+          - {
+              text: he comer,
+              feedback: 'Después de *haber* va el participio, no el infinitivo: *he comido*.',
+            }
+      - id: visitado
+        type: fillBlank
+        prompt: Completa con el participio de *visitar*.
+        text: Hemos ___ muchos cafés en Tel Aviv.
+        blanks: [[visitado]]
+      - id: participios
+        type: matching
+        prompt: Une cada verbo con su participio.
+        pairs:
+          - [hacer, hecho]
+          - [volver, vuelto]
+          - [probar, probado]
+          - [comer, comido]
+          - [cocinar, cocinado]
+      - id: haber-cambia
+        type: trueFalse
+        prompt: 'En el pretérito perfecto, *haber* cambia según la persona y el participio no cambia: *yo he cocinado, ellos han cocinado*.'
+        answer: true
+        feedback:
+          correct: ¡Correcto! Solo cambia *haber* (he, has, ha, hemos, habéis, han).
+          incorrect: 'El participio no cambia; solo cambia *haber*: *yo he cocinado, ellos han cocinado*.'
+      - id: has-ido
+        type: multipleChoice
+        prompt: ¿___ ido alguna vez a un restaurante vegano? (tú)
+        options:
+          - { text: Has, correct: true }
+          - { text: Ha, feedback: '*Ha* es para él / ella / usted. Para *tú* usa *has*.' }
+          - { text: He, feedback: '*He* es para *yo*. Para *tú* usa *has*.' }
+      - id: hecho
+        type: fillBlank
+        prompt: Completa con el participio de *hacer* (¡es irregular!).
+        text: Esta semana he ___ una receta nueva.
+        blanks: [[hecho]]
+      - id: desde-hace
+        type: multipleChoice
+        prompt: Vivo en Curitiba ___ cinco años.
+        options:
+          - { text: desde hace, correct: true }
+          - {
+              text: desde,
+              feedback: '*Desde* va con un momento específico (*desde 2022*). Con una cantidad de tiempo usamos *desde hace*.',
+            }
+          - {
+              text: hace desde,
+              feedback: 'El orden correcto es *desde hace*: *desde hace cinco años*.',
+            }
+      - id: ordena-conejo
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Nunca he comido conejo.
+
+  - slug: cocina-modales
+    title: 'Verbos modales: deberías, puedes, tienes que'
+    minutes: 8
+    items:
+      - id: probar
+        type: multipleChoice
+        prompt: Deberías ___ este plato. ¡Es nuestra especialidad!
+        options:
+          - { text: probar, correct: true }
+          - {
+              text: pruebas,
+              feedback: 'Después de un verbo modal va el infinitivo: *deberías probar*.',
+            }
+          - { text: a probar, feedback: 'Con *deber* no usamos *a*: *deberías probar*.' }
+      - id: tienen
+        type: fillBlank
+        prompt: Completa con el verbo *tener* en presente.
+        text: Los camareros ___ que conocer los ingredientes.
+        blanks: [[tienen]]
+      - id: funciones
+        type: matching
+        prompt: Une cada frase con su función.
+        pairs:
+          - [Deberías probar el hummus., dar un consejo]
+          - [Puedes pedir el menú del día., dar permiso]
+          - [Tenemos que reservar antes de ir., expresar una obligación fuerte]
+          - [Este postre podría hacerse muy popular., hablar de una posibilidad]
+          - ['En mi opinión, este lugar es acogedor.', dar una opinión]
+      - id: tener-que-infinitivo
+        type: trueFalse
+        prompt: 'Después de *tener que* el verbo también se conjuga: *Tenemos que cocinamos más.*'
+        answer: false
+        feedback:
+          correct: '¡Correcto! Solo se conjuga *tener*; después va el infinitivo: *Tenemos que cocinar más.*'
+          incorrect: 'Solo se conjuga *tener*; después va el infinitivo: *Tenemos que cocinar más.*'
+      - id: deberian
+        type: multipleChoice
+        prompt: Los restaurantes ___ ofrecer más opciones vegetarianas.
+        options:
+          - { text: deberían, correct: true }
+          - { text: debería, feedback: '*Los restaurantes* es plural (ellos): usa *deberían*.' }
+          - {
+              text: deberíamos,
+              feedback: '*Deberíamos* es para *nosotros*. Para *los restaurantes* (ellos) usa *deberían*.',
+            }
+      - id: puede
+        type: fillBlank
+        prompt: Completa con el verbo *poder* en presente.
+        text: ¿Se ___ modificar el menú para personas con alergias?
+        blanks: [[puede]]
+      - id: correcta
+        type: multipleChoice
+        prompt: ¿Qué oración es correcta?
+        options:
+          - { text: Podrían cambiar el menú., correct: true }
+          - {
+              text: Podrían cambian el menú.,
+              feedback: 'Después de *podrían* va el infinitivo: *cambiar*.',
+            }
+          - {
+              text: Podrían a cambiar el menú.,
+              feedback: 'Con *poder* no usamos *a*: *Podrían cambiar el menú.*',
+            }
+      - id: ordena-reservar
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Tenemos que reservar antes de ir.
