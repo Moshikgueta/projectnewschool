@@ -1,0 +1,633 @@
+# Cycle "Plans pour le week-end", converted from the French level 2 digital notebook
+# ("Cahier digital 2025 - français niveau 2", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-2
+slug: plans-pour-le-week-end
+title: Plans pour le week-end
+goal: Parler de ses projets au futur et comparer des week-ends.
+position: 8
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Le futur" and "Les comparaisons") are NEW: the notebook
+    has no self-study exercises. They were written from the cycle's two skills, its
+    summary rules, the activity examples and its vocabulary. Please check level, wording
+    and every right answer before students see them.
+  - >-
+    Summary, futur simple: "il suffit d'utiliser tout le verbe à l'infinitif et d'y
+    ajouter les terminaisons" is true for -er and -ir verbs, but -re verbs drop the final
+    e (prendre → je prendrai) and common verbs are irregular. A rule with the irregular
+    stems used in this cycle (être → ser-, avoir → aur-, aller → ir-, faire → fer-,
+    pouvoir → pourr-) and a table (visiter, aller, faire) were added. Rule 2 "le futur
+    simple est employé pour des événements plus éloignés" is softened: it is also used
+    for predictions and is more formal / written. Please confirm.
+  - >-
+    Summary, skill 2: the notebook has no rule for the comparative itself (plus / moins
+    / aussi + adjectif + que), although Activity 4 and the homework use it ("plus amusant
+    que", "moins ennuyeux que"). A rule was added. The irregular table's "bien → le / la
+    / les mieux" is wrong: the adverb's superlative is invariable, "le mieux". Fixed. The
+    English glosses in the table (good, bad, the best…) were removed. "mauvais → pire" is
+    kept, with a note that "plus mauvais" is also correct. A stray character "ð" after
+    rule 2's example was removed.
+  - >-
+    Summary, "ATTENTION en français au conditionnel et au subjonctif" and "Règle 3 : Je
+    dois / j'ai besoin" are not part of the cycle's two skills; they are kept as a short
+    "À retenir aussi" part. The Hebrew explanations of rule 3 are in a Hebrew callout
+    (lang he); the French rule and examples are in a rule summary.
+  - >-
+    Activity 1: the guide's list included "il faut que (nécessité)", which needs the
+    subjunctive (not taught at this level); changed to "il faut + infinitif". Step 6
+    said the tourist uses "le futur simple" but the example uses the futur proche (je
+    vais visiter…); the step now asks for the futur proche or the futur simple. The
+    modal verbs (devriez, pouvez, pourriez, devez) are not one of the cycle's skills
+    (they are from the Santé cycle); they are kept as in the source.
+  - >-
+    Activity 4: the categories announced in step 2 (le plus drôle, le plus actif, le plus
+    adapté pour passer du temps en famille) did not match the results in step 4 (le plus
+    amusant, le plus chargé, le meilleur week-end en famille). The results now use the
+    same five categories. Please confirm.
+  - >-
+    Corrections: Activity 3 example "donner un cours de cuisine avec ses amis" → "à ses
+    amis"; "dormir et boire une grande tasse de café" → "dormir tard et boire…";
+    Activity 2 had stray italics (*avec*, *à la*, *en*, *autour*, *chez vous*, *à*,
+    *dans*), removed, and missing spaces before "?" fixed; warm-up "Quelle est ta chose
+    préférée le week-end ?" → "Qu'est-ce que tu préfères faire le week-end ?"; Activity
+    1 "Il devra aborder" → "Ton programme parle de".
+  - >-
+    Homework: the notebook's six steps ("Ouvrir le chatbot de l'école…") became one Mori
+    message, with the questions and the comparison frames in the intro. Step 6 "Résumer
+    dans votre cahier ou Google Docs" is kept as a text block.
+  - >-
+    Vocabulary: "amusant – מצחיק / משעשע" → "מהנה / משעשע" (amusant = fun; drôle =
+    funny); "détente – הרגעה" → "רגיעה / מנוחה"; "débat – ויכוח" → "דיון / ויכוח";
+    "expérience – ניסיון" → "ניסיון / חוויה". Please confirm.
+  - >-
+    Times: Activity 2 "5 minutes par question" is in a teacher note; no other times are
+    given. No beginner / intermediate split in this cycle. The Quizlet link is kept
+    without its tracking parameters. The "Réponse de l'élève 1/2/3" lines are replaced
+    by the answer boxes. Frames were added to the warm-up questions (the source has
+    none).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: plans-pour-le-week-end-classe
+    title: 'Classe : Plans pour le week-end'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Plans pour le week-end
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Le futur
+            description: 'Futur proche (*je vais visiter*) et futur simple (*je visiterai*)'
+          - name: Les comparaisons
+            description: '*plus amusant que, moins ennuyeux que, le plus relaxant, le meilleur*'
+      - id: quizlet
+        type: externalLink
+        label: Plans pour le week-end sur Quizlet
+        url: https://quizlet.com/il/1094965939/conversational-french-2025-plans-pour-le-week-end-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        prompt: 'Dis ton prénom et complète une des phrases : *La semaine prochaine, je vais ___. / Le mois prochain, je vais ___. / Dans 10 ans, je célébrerai ___. / Je préfère célébrer ___ (à la maison, au restaurant, à la plage…).*'
+        frame: Je m’appelle ___. ___.
+        example: Je m’appelle Lévanah. Le mois prochain, je vais célébrer l’anniversaire de ma mère.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quels sont tes plans pour ce week-end ?
+            frame: Ce week-end, je vais ___.
+          - question: Quel est pour toi le meilleur week-end imaginable ?
+            frame: Le meilleur week-end, c’est ___.
+          - question: Quel est pour toi le pire week-end imaginable ?
+            frame: Le pire week-end, c’est ___.
+          - question: Passeras-tu du temps en famille ou avec des amis ce week-end ?
+            frame: Ce week-end, je passerai du temps avec ___.
+          - question: Préfères-tu faire des activités en intérieur ou en extérieur le week-end ? Pourquoi ?
+            frame: Je préfère les activités ___ parce que c’est plus ___.
+          - question: Qu’est-ce que tu préfères faire le week-end ?
+            frame: Le week-end, je préfère ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Un week-end à l’étranger'
+        skills: [Le futur]
+        steps:
+          - 'Choisis une ville (réelle ou imaginaire) et fais des recherches pour créer **le programme parfait pour un week-end dans cette ville**. Ton programme parle de : transports, gastronomie, attractions touristiques, culture et détente.'
+          - Travaillez en **paires**. L’élève A est le **guide touristique**, l’élève B est le **touriste**.
+          - 'Le guide donne des recommandations pour **jeudi, vendredi, samedi et dimanche**, avec : *vous devriez* (recommandation), *vous pouvez / vous pourriez* (possibilité, suggestion), *vous devez* (forte recommandation), *il faut* + infinitif (nécessité).'
+          - Le guide utilise aussi le futur (*vous allez visiter…, vous pourrez…*) pour que le touriste sache ce qu’il va faire chaque jour.
+          - 'Ensuite, **les rôles s’inversent** : l’élève B devient le guide et l’élève A devient le touriste.'
+          - 'Chaque paire partage son itinéraire avec le groupe : le guide explique quelles activités il a recommandées, le touriste explique ce qu’il **va faire** avec le futur proche ou le futur simple.'
+        example: |-
+          Le guide : *Jeudi, vous devriez visiter le célèbre musée d’art du centre-ville. Vous pouvez également aller déjeuner dans un café local.*
+          Le guide : *Vendredi, vous pourrez faire une excursion en bateau pour découvrir la ville depuis la rivière. C’est peut-être la partie la plus amusante du voyage !*
+          Le guide : *Samedi, vous devriez escalader la montagne voisine pour avoir une vue incroyable.*
+          Le guide : *Et dimanche, vous pourrez vous détendre dans le jardin botanique. Vous devez absolument essayer leur tisane.*
+          Le touriste : *Jeudi, je vais visiter le musée d’art et déjeuner dans un café local. Vendredi, je vais faire une promenade en bateau. Samedi, je vais escalader la montagne et dimanche, je vais me détendre dans le jardin botanique et boire une tisane.*
+      - id: act1-plan
+        type: discussionQuestions
+        title: Mon programme (le touriste)
+        items:
+          - question: Jeudi, je vais ___.
+          - question: Vendredi, je vais ___.
+          - question: Samedi, je ___ (futur simple).
+          - question: Dimanche, je ___ (futur simple).
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Débat, le week-end parfait'
+        skills: [Les comparaisons]
+        steps:
+          - Ton professeur partage un thème de débat (voir ci-dessous).
+          - Discutez du thème jusqu’à la fin du temps, puis passez au thème suivant.
+          - Tu n’as pas besoin de répondre à toutes les questions, mais **tout le monde doit parler pendant l’activité**.
+        wordBank:
+          [plus … que, moins … que, aussi … que, meilleur que, mieux que, le plus …, le meilleur]
+      - id: act2-debates
+        type: discussionQuestions
+        title: Les thèmes du débat
+        items:
+          - question: '**Week-end à la maison ou week-end en voyage ?** Que préférez-vous ? Pourquoi ? Rester à la maison dans votre zone de confort, ou partir en voyage et explorer de nouveaux endroits en ville ou à la campagne ?'
+            frame: Je préfère ___ parce que c’est plus ___ que ___.
+          - question: '**Activités du matin ou activités du soir ?** Que préférez-vous le week-end ? Vous réveiller tôt et commencer la journée plein d’énergie, ou profiter d’une soirée détendue avec vos amis ou votre famille à la maison ?'
+            frame: Pour moi, le ___ est mieux que le ___ parce que ___.
+          - question: '**Aventure en plein air ou loisirs à l’intérieur ?** Préférez-vous passer le week-end à faire de la randonnée en montagne ou du vélo autour du lac, ou rester chez vous et profiter d’activités comme la lecture ou la cuisine ?'
+            frame: ___ est moins ___ que ___.
+          - question: '**Rester actif ou se reposer ?** Que préférez-vous le week-end ? Faire des activités physiques, comme la course à pied dans le parc ou le sport à la salle de sport, ou rester dans votre lit et vous reposer toute la journée ?'
+            frame: Pour moi, le plus important, c’est ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Que vont-ils faire ?'
+        skills: [Le futur]
+        steps:
+          - Choisis une personne pour un week-end amusant. Ça peut être quelqu’un que tu connais, une personne célèbre ou même un personnage de livre ou de film !
+          - Complète son programme ci-dessous. Utilise le futur.
+          - Présente le programme au groupe.
+        example: |-
+          **Mario le chef**
+          Vendredi matin, il va aller au marché pour acheter des légumes frais.
+          Vendredi après-midi, il va inventer des plats originaux pour son restaurant.
+          Vendredi soir, il va préparer le dîner pour ses invités.
+          Samedi matin, il va dormir tard et boire une grande tasse de café.
+          Samedi après-midi, il va donner un cours de cuisine à ses amis.
+          Samedi soir, il va regarder un film et se détendre sur le canapé.
+      - id: act3-plan
+        type: discussionQuestions
+        title: Le programme du week-end
+        items:
+          - question: Vendredi matin, il / elle va ___.
+          - question: Vendredi après-midi, il / elle va ___.
+          - question: Vendredi soir, il / elle va ___.
+          - question: Samedi matin, il / elle va ___.
+          - question: Samedi après-midi, il / elle va ___.
+          - question: Samedi soir, il / elle va ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Qui a le meilleur plan pour ce week-end ?'
+        skills: [Les comparaisons]
+        steps:
+          - Compare ton programme du week-end (activité 3) avec un autre programme. Explique pourquoi ton programme est meilleur.
+          - 'Votez ! Il n’y a pas un seul gagnant, mais plusieurs catégories : le plus relaxant, le plus drôle, le plus actif, le meilleur pour passer du temps en famille, le plus surprenant.'
+          - Envoie ton vote à ton professeur (sur papier ou dans un message privé).
+          - Ton professeur annonce les résultats. Applaudissez chaque gagnant !
+        wordBank:
+          [plus amusant que…, moins ennuyeux que…, le plus relaxant, mieux que…, meilleur que…]
+        example: '*Mon week-end est plus amusant que le week-end de Dana, parce que je vais aller à la plage. Son week-end est moins actif que mon week-end.*'
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Mon week-end est meilleur !
+        items:
+          - question: Mon week-end est plus ___ que le week-end de ___ parce que ___.
+          - question: Le week-end de ___ est moins ___ que mon week-end.
+          - question: Mon week-end est le plus ___ parce que ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **le futur** (futur proche et futur simple),
+          avec les activités 1 et 3, et **les comparaisons** (comparatifs et superlatifs),
+          avec les activités 2 et 4. Fais l’activité 4 **après** l’activité 3, pour que les
+          élèves aient déjà écrit leur programme du week-end.
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Laisse du temps pour la recherche (Étape 1). Après le premier tour, les rôles
+          s’inversent. À la fin, chaque paire présente son itinéraire : vérifie le futur
+          proche (*aller* au présent + infinitif) chez le touriste.
+      - id: n-act2
+        anchor: act2
+        minutes: 20
+        text: >-
+          Partage les thèmes un par un : **5 minutes par thème**, puis passe au suivant.
+          Tous les élèves n’ont pas besoin de répondre à chaque thème, mais tous doivent
+          parler pendant l’activité. Encourage les comparatifs (*plus… que, moins… que,
+          mieux que*).
+      - id: n-act3
+        anchor: act3
+        text: Montre d’abord l’exemple de Mario le chef. Les élèves peuvent utiliser le futur proche (*il va aller*) ou le futur simple (*il ira*).
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Dis : « Votons maintenant ! Mais pas pour un seul gagnant… nous avons plusieurs
+          catégories ! » Les élèves votent sur papier (en classe) ou dans un chat privé (en
+          ligne). Annonce les résultats : *Le week-end le plus relaxant est… Le week-end le
+          plus drôle est… Le week-end le plus actif est… Le meilleur week-end en famille
+          est… Le week-end le plus surprenant est…* Chaque gagnant reçoit une salve
+          d’applaudissements.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: plans-pour-le-week-end-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-futur
+        type: ruleSummary
+        skill: Le futur
+        rules:
+          - text: 'Le **futur proche** : le verbe **aller** au présent + verbe à l’**infinitif**. C’est le plus facile, et il est surtout utilisé à l’oral.'
+            examples:
+              [
+                je vais,
+                tu vas,
+                il / elle va,
+                nous allons,
+                vous allez,
+                ils / elles vont,
+                'Ce week-end, je vais visiter un musée.',
+              ]
+          - text: 'Le **futur simple** : l’infinitif + les terminaisons **-ai, -as, -a, -ons, -ez, -ont**. Avec les verbes en **-re**, on enlève le **e** final.'
+            examples: [visiter → je visiterai, finir → nous finirons, prendre → je prendrai]
+          - text: 'Certains verbes ont un radical irrégulier au futur simple (les terminaisons restent les mêmes).'
+            examples:
+              [
+                être → je serai,
+                avoir → j’aurai,
+                aller → j’irai,
+                faire → je ferai,
+                pouvoir → je pourrai,
+              ]
+          - text: On utilise le **futur proche** pour des plans, des intentions ou des décisions déjà prises. C’est plus informel et très courant dans la conversation.
+            examples: ['Samedi, je vais faire une promenade en bateau.']
+          - text: On utilise le **futur simple** pour des projets plus lointains, des prévisions, et dans un style plus formel ou écrit.
+            examples:
+              [
+                'Dans 10 ans, je célébrerai mon anniversaire à Paris.',
+                Mon week-end sera plus excitant que le tien.,
+              ]
+      - id: futur-table
+        type: table
+        caption: Le futur simple
+        header: [Personne, visiter, aller, faire]
+        rows:
+          - [je / j’, visiterai, irai, ferai]
+          - [tu, visiteras, iras, feras]
+          - [il / elle, visitera, ira, fera]
+          - [nous, visiterons, irons, ferons]
+          - [vous, visiterez, irez, ferez]
+          - [ils / elles, visiteront, iront, feront]
+      - id: rules-comparaisons
+        type: ruleSummary
+        skill: Les comparaisons
+        rules:
+          - text: 'Le **comparatif** : **plus / moins / aussi** + adjectif + **que**. L’adjectif s’accorde avec le nom.'
+            examples:
+              [
+                Mon week-end est plus amusant que ton week-end.,
+                Cette ville est moins chère que Paris.,
+                Le samedi est aussi relaxant que le dimanche.,
+              ]
+          - text: Si vous comparez deux choses ou deux personnes, la phrase contient ces deux choses ou ces deux personnes, et la relation entre elles est claire.
+            examples: [Le week-end de Yossi est plus reposant que le week-end de Danny.]
+          - text: 'Avec un **superlatif** (*le plus, le meilleur, le pire…*), pas besoin de comparer avec autre chose.'
+            examples: [Le week-end de Yossi est le plus reposant.]
+          - text: 'Le superlatif de supériorité : **le / la / les + plus + adjectif**.'
+            examples: [Il est le plus grand., Elle est la plus gentille., Ce sont les plus drôles.]
+          - text: 'Le superlatif d’infériorité : **le / la / les + moins + adjectif**.'
+            examples:
+              [
+                Il est le moins patient.,
+                Elle est la moins bavarde.,
+                Ce sont les moins intéressants.,
+              ]
+          - text: 'Certains mots ont une forme spéciale : on ne dit pas *plus bon*, on dit **meilleur**. *Mieux* (de l’adverbe *bien*) est invariable : **le mieux**.'
+            examples:
+              [
+                Ce café est meilleur que l’autre.,
+                C’est la meilleure idée.,
+                Je danse mieux que toi.,
+                C’est Dana qui danse le mieux.,
+              ]
+      - id: irreguliers-table
+        type: table
+        caption: 'Les irréguliers : meilleur, pire, mieux'
+        header: [Mot de base, Comparatif, Superlatif]
+        rows:
+          - [bon (adjectif), meilleur(e)(s) que, le / la / les meilleur(e)(s)]
+          - [mauvais (adjectif), pire(s) que (ou plus mauvais que), le / la / les pire(s)]
+          - [bien (adverbe), mieux que, le mieux]
+      - id: also-title
+        type: heading
+        level: 3
+        text: À retenir aussi
+      - id: rules-also
+        type: ruleSummary
+        skill: Le conditionnel, le subjonctif, devoir et avoir besoin de
+        rules:
+          - text: 'Le **conditionnel présent** exprime une possibilité, un souhait, un conseil ou la politesse. On l’utilise souvent avec *si*, ou pour une demande polie.'
+            examples:
+              [
+                'Si j’avais de l’argent, j’achèterais une voiture.',
+                'Je voudrais un café, s’il vous plaît.',
+              ]
+          - text: 'Le **subjonctif** est un mode qui exprime le doute, le souhait, l’émotion, l’obligation ou la possibilité. Nous l’étudierons plus tard.'
+          - text: '**Je dois** + infinitif : une obligation, une chose qu’on doit faire.'
+            examples:
+              [Je dois faire mes devoirs., Je dois aller à l’école., Je dois me coucher tôt.]
+          - text: '**J’ai besoin de (d’)** + nom ou infinitif : on a besoin d’une chose ou de faire quelque chose.'
+            examples: [J’ai besoin d’un stylo., J’ai besoin d’aide., J’ai besoin de dormir.]
+      - id: also-he
+        type: callout
+        tone: info
+        lang: he
+        title: Je dois / J’ai besoin de
+        text: |-
+          **Je dois** = אני חייב / עליי. פעולה שחייבים לעשות – חובה או אחריות. *Je dois faire mes devoirs.* = עליי לעשות את שיעורי הבית.
+          **J’ai besoin de** = אני צריך (משהו). צורך בדבר (שם עצם) או בפעולה (פועל). *J’ai besoin d’aide.* = אני צריך עזרה. *J’ai besoin de dormir.* = אני צריך לישון.
+          מילים לזכור: le doute (ספק), le souhait (רצון / משאלה), l’émotion (רגש), l’obligation (חובה), la possibilité (אפשרות).
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle. Fais transformer une phrase au futur proche en futur simple (*je vais visiter → je visiterai*).
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: plans-pour-le-week-end-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: 'Ouvre le chat avec Mori, copie le message et envoie-le. Réponds avec tes plans (*aller* + infinitif). Ensuite, pose 3 questions au futur à Mori et compare vos plans.'
+      - id: mori-weekend
+        type: aiTutorPrompt
+        title: Parler de nos plans pour le week-end
+        intro: |-
+          **Tes 3 questions à Mori :** *Vas-tu rester à la maison ou sortir ? Que feras-tu ce week-end ? Passeras-tu du temps avec des amis ou en famille ?*
+          **Pour comparer :** *Mon week-end sera plus excitant que le tien. Tu vas faire des activités plus relaxantes que moi.*
+        message: >-
+          Salut Mori ! Je veux parler de nos plans pour le week-end. Demande-moi : « Que
+          vas-tu faire ce week-end ? » Je vais répondre avec le futur proche (aller +
+          infinitif). Ensuite, je vais te poser 3 questions au futur, et nous allons
+          comparer nos plans. Corrige mes erreurs, s’il te plaît.
+      - id: summary-task
+        type: text
+        text: '**Après la conversation, résume dans ton cahier :** Que vas-tu faire ? Que fera Mori ? Qu’est-ce qui est similaire ? Qu’est-ce qui est différent ?'
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: plans-pour-le-week-end-pratique
+    book: workbook
+    title: 'Pratique : Plans pour le week-end'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-futur
+        type: activity
+        activity: plans-pour-le-week-end-futur
+      - id: ex-comparaisons
+        type: activity
+        activity: plans-pour-le-week-end-comparaisons
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: plans-pour-le-week-end-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots du week-end
+        glossLang: he
+        link: https://quizlet.com/il/1094965939/conversational-french-2025-plans-pour-le-week-end-flash-cards/
+        items: &plans-pour-le-week-end-words
+          - { term: 'le week-end, la fin de semaine', gloss: סוף שבוע }
+          - { term: un plan, gloss: תוכנית }
+          - { term: le futur, gloss: עתיד }
+          - { term: une opinion, gloss: דעה }
+          - { term: une expérience, gloss: ניסיון / חוויה }
+          - { term: un emploi du temps, gloss: לוח זמנים }
+          - { term: le matin, gloss: בוקר }
+          - { term: demain, gloss: מחר }
+          - { term: l’après-midi, gloss: אחר הצהריים }
+          - { term: le soir, gloss: ערב }
+          - { term: la nuit, gloss: לילה }
+          - { term: un / une touriste, gloss: תייר / תיירת }
+          - { term: un / une guide, gloss: מדריך / מדריכה }
+          - { term: une recommandation, gloss: המלצה }
+          - { term: une possibilité, gloss: אפשרות }
+          - { term: un besoin, gloss: צורך }
+          - { term: la détente, gloss: רגיעה / מנוחה }
+          - { term: la culture, gloss: תרבות }
+          - { term: la nourriture / un aliment, gloss: מזון / אוכל }
+          - { term: le transport, gloss: תחבורה }
+          - { term: un débat, gloss: דיון / ויכוח }
+          - { term: en plein air / à l’extérieur, gloss: בחוץ }
+          - { term: à l’intérieur, gloss: בפנים / בתוך }
+          - { term: amusant, gloss: מהנה / משעשע }
+          - { term: ennuyeux, gloss: משעמם }
+          - { term: actif, gloss: פעיל }
+          - { term: se reposer, gloss: לנוח }
+          - { term: voter, gloss: להצביע }
+          - { term: un gagnant, gloss: מנצח }
+          - { term: surprenant, gloss: מפתיע }
+          - { term: préféré / favori, gloss: אהוב / מועדף }
+          - { term: l’énergie, gloss: אנרגיה }
+
+vocabulary:
+  - slug: plans-pour-le-week-end
+    title: Plans pour le week-end
+    items: *plans-pour-le-week-end-words
+
+activities:
+  - slug: plans-pour-le-week-end-futur
+    title: 'Le futur : je vais visiter, je visiterai'
+    minutes: 8
+    items:
+      - id: vais-visiter
+        type: multipleChoice
+        prompt: Samedi, je ___ visiter le musée.
+        options:
+          - { text: vais, correct: true }
+          - {
+              text: va,
+              feedback: 'Avec *je*, le verbe *aller* fait *je vais*. *Va* est pour *il / elle*.',
+            }
+          - {
+              text: vas,
+              feedback: 'Avec *je*, le verbe *aller* fait *je vais*. *Vas* est pour *tu*.',
+            }
+      - id: aller-present
+        type: fillBlank
+        prompt: Complète avec le verbe *aller* au présent (futur proche).
+        text: Nous ___ faire une promenade en bateau. Ils ___ escalader la montagne.
+        blanks: [[allons], [vont]]
+      - id: infinitif-apres-aller
+        type: multipleChoice
+        prompt: Dimanche, tu vas ___ dans le jardin botanique.
+        options:
+          - { text: te détendre, correct: true }
+          - {
+              text: te détends,
+              feedback: 'Au futur proche, après *aller*, le verbe est à l’infinitif : *tu vas te détendre*.',
+            }
+          - {
+              text: détendu,
+              feedback: '*Détendu* est un participe. Après *aller*, on met l’infinitif : *te détendre*.',
+            }
+      - id: futur-simple-terminaisons
+        type: matching
+        prompt: Associe chaque sujet au verbe *visiter* au futur simple.
+        pairs:
+          - [je, visiterai]
+          - [tu, visiteras]
+          - [nous, visiterons]
+          - [vous, visiterez]
+          - [ils, visiteront]
+      - id: irreguliers
+        type: fillBlank
+        prompt: Complète au futur simple.
+        text: (être) Mon week-end ___ génial. (aller) Demain, j’___ au marché. (faire) Nous ___ du vélo.
+        blanks: [[sera], [irai], [ferons]]
+      - id: prendre
+        type: multipleChoice
+        prompt: Le week-end prochain, je ___ le train pour Paris. (futur simple)
+        options:
+          - { text: prendrai, correct: true }
+          - {
+              text: prenderai,
+              feedback: 'Avec les verbes en *-re*, on enlève le *e* final de l’infinitif : *prendr-* + *ai* = *prendrai*.',
+            }
+          - {
+              text: vais prendre,
+              feedback: '*Vais prendre* est correct, mais c’est le futur proche. Au futur simple : *je prendrai*.',
+            }
+      - id: plans
+        type: trueFalse
+        prompt: On utilise le futur proche pour parler de plans et de décisions déjà prises.
+        answer: true
+        feedback:
+          correct: 'Bravo ! *Ce week-end, je vais voir mes amis* : c’est un plan déjà décidé.'
+          incorrect: 'C’est vrai : le futur proche (*aller* + infinitif) sert à parler de plans et de décisions déjà prises.'
+      - id: ordre-week-end
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Ce week-end, je vais voir mes amis.
+
+  - slug: plans-pour-le-week-end-comparaisons
+    title: 'Les comparaisons : plus… que, le plus…'
+    minutes: 8
+    items:
+      - id: plus-que
+        type: multipleChoice
+        prompt: Mon week-end est ___ amusant ___ ton week-end.
+        options:
+          - { text: plus … que, correct: true }
+          - {
+              text: plus … de,
+              feedback: 'Pour comparer deux choses, on dit *plus* + adjectif + *que*.',
+            }
+          - {
+              text: le plus … que,
+              feedback: '*Le plus* est un superlatif : on ne compare pas avec *que*. Ici : *plus amusant que*.',
+            }
+      - id: meilleur
+        type: multipleChoice
+        prompt: Ce restaurant est ___ que l’autre.
+        options:
+          - { text: meilleur, correct: true }
+          - {
+              text: plus bon,
+              feedback: 'On ne dit pas *plus bon*. Le comparatif de *bon* est *meilleur*.',
+            }
+          - {
+              text: mieux,
+              feedback: '*Mieux* vient de l’adverbe *bien*. Avec l’adjectif *bon* (un restaurant), on dit *meilleur*.',
+            }
+      - id: superlatif-accord
+        type: fillBlank
+        prompt: Complète avec *le*, *la* ou *les*.
+        text: Dana est ___ plus gentille. Ce sont ___ week-ends les plus relaxants. C’est ___ moins ennuyeux.
+        blanks: [[la], [les], [le]]
+        wordBank: [le, la, les]
+      - id: mieux-danse
+        type: multipleChoice
+        prompt: Yossi danse ___ que moi.
+        options:
+          - { text: mieux, correct: true }
+          - {
+              text: meilleur,
+              feedback: '*Danser* est un verbe : on utilise l’adverbe *mieux* (de *bien*), pas l’adjectif *meilleur*.',
+            }
+          - {
+              text: plus bien,
+              feedback: 'On ne dit pas *plus bien*. Le comparatif de *bien* est *mieux*.',
+            }
+      - id: superlatif-sans-que
+        type: trueFalse
+        prompt: 'Avec un superlatif, on doit toujours ajouter *que* : *Le week-end de Yossi est le plus reposant que.*'
+        answer: false
+        feedback:
+          correct: 'Bravo ! Avec un superlatif, pas besoin de comparer : *Le week-end de Yossi est le plus reposant.*'
+          incorrect: 'Avec un superlatif (*le plus, le meilleur*), pas besoin de *que* : *Le week-end de Yossi est le plus reposant.*'
+      - id: types
+        type: matching
+        prompt: Associe chaque phrase à son sens.
+        pairs:
+          - [plus amusant que, '+ (supériorité)']
+          - [moins ennuyeux que, '− (infériorité)']
+          - [aussi actif que, '= (égalité)']
+          - [le plus relaxant, superlatif]
+      - id: moins-que
+        type: fillBlank
+        prompt: 'Complète la comparaison (−, infériorité).'
+        text: Rester à la maison est ___ actif ___ faire de la randonnée.
+        blanks: [[moins], [que]]
+      - id: ordre-meilleur
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: C’est le meilleur week-end de l’année.
