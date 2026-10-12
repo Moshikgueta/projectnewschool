@@ -1,0 +1,804 @@
+# Cycle "Soziale Medien", converted from the German level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German); Hebrew blocks carry `lang: he`.
+course: de-stufe-3
+slug: soziale-medien
+title: Soziale Medien
+goal: Über Erfahrungen mit sozialen Medien sprechen, mit dem Perfekt und dem Passiv.
+position: 7
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Das Perfekt" and "Das Passiv") are NEW: the
+    notebook has no self-correcting exercises. They were written from the cycle's
+    summary, the activity examples, the classic homework (corrected) and the
+    vocabulary. Please check level, wording and every right answer before students
+    see them.
+  - >-
+    Activity 3 says "Lest die beiden Texte. Ein Schüler arbeitet mit Text 1, ein
+    Schüler mit Text 2", but the two texts are NOT in the notebook. The step is kept
+    and a teacher note asks the teacher to bring two short texts (one for passive
+    scrolling, one for active choices). Please add them or change the step.
+  - >-
+    Summary, Passiv: the notebook compares "Aktiv: Die Plattform hat das Video
+    geteilt" (Perfekt) with "Passiv: Das Video wurde geteilt" (Präteritum). The tenses
+    do not match; the comparison now shows Perfekt Passiv "Das Video ist geteilt
+    worden" next to the Präteritum Passiv "Das Video wurde geteilt" (both are past).
+    Added rules (not in the source, please confirm): Perfekt Passiv uses "worden",
+    not "geworden"; the doer is added with "von + Dativ" (Dieses Video wird von
+    Millionen Menschen gesehen, from the answer key); a table of the three Passiv
+    forms.
+  - >-
+    Summary, Perfekt: the notebook gives only "subject + haben/sein + Partizip II".
+    The rule now says haben/sein is in position 2 and the Partizip II at the end of
+    the sentence, and adds (please confirm) that verbs with ver-, ent-, be- and verbs
+    on -ieren have no ge- (verändert, verbracht, entdeckt, konsumiert) and that
+    separable verbs put -ge- in the middle (kennengelernt, eingeführt) — all verbs of
+    this cycle.
+  - >-
+    Classic homework, Exercise 2 key: Perfekt Aktiv sentences (Die Firma hat … eingeführt;
+    Die Nutzer haben …; Die Moderatoren haben …) are turned into Präteritum Passiv
+    (wurden eingeführt …). That is correct German; the teacher key now also accepts
+    the Perfekt Passiv (sind eingeführt worden, ist geteilt worden, ist entfernt
+    worden). All other key answers (Exercises 1, 3) were checked and are correct.
+    Exercise 4 and 5 model answers were checked and kept for the teacher only.
+  - >-
+    Corrections: broken warm-up headings ("### **…**" with stray asterisks) fixed;
+    Activity 2, step 2 "A: Erzählt von seiner Erfahrung. B: antwortet …" → "A erzählt
+    von seiner / ihrer Erfahrung. B antwortet …" (verb form and capital letter);
+    Hebrew "היי מורי\!" → "היי מורי!" (escaped character). Stray "**" marks and the
+    broken heading "Diskussion" (Activity 3) were cleaned up.
+  - >-
+    Added (not in the source): sentence frames for the warm-up questions 2–8 (built
+    from the question words, e.g. "Inklusion wird durch ___ gefördert." from the
+    notebook); frames for Activity 1 (five report sentences) and for the discussion
+    questions of Activities 3 and 4; a two-line model for the Activity 4 debate
+    (the source has none); a "Nützliche Ausdrücke" box in Activity 4 with the opinion
+    phrases from the summary; the German "how to" text and the tips callout in the
+    Mori part, as in the other cycles. Please check the invented examples.
+  - >-
+    Left out: the empty "Datum / Teilnehmer" lines, the "Antwort Schüler/in 1/2/3"
+    lines (the platform has answer boxes). The Quizlet link lost its tracking
+    parameter (?new). The notebook gives no times for this cycle, so no minutes are
+    set. No student names or class notes appear in this cycle.
+  - >-
+    Homework: the classic exercises and the Mori messages are kept in Hebrew, as in
+    the notebook (Mori blocks carry lang he); German exercise sentences stay in
+    German. The answer key ("תשובות לבדיקה עצמית") is in the teacher notes only.
+    Vocabulary glosses are unchanged.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: soziale-medien-unterricht
+    title: 'Unterricht: Soziale Medien'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Soziale Medien
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Das Perfekt
+            description: 'Erfahrungen und Veränderungen: *Soziale Medien haben unsere Kommunikation verändert.*'
+          - name: Das Passiv
+            description: 'Die Handlung ist wichtiger als die Person: *Eine neue Funktion ist eingeführt worden. Viele Beiträge werden geteilt.*'
+      - id: quizlet
+        type: externalLink
+        label: Soziale Medien auf Quizlet
+        url: https://quizlet.com/br/1186157056/soziale-medien-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich heiße ___ und ich denke, dass soziale Medien unser Leben verbessert / verschlechtert / verändert haben.
+        example: Ich heiße Marta und ich denke, dass soziale Medien unser Leben sowohl positiv als auch negativ verändert haben.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup-hint
+        type: callout
+        tone: info
+        text: Antworte immer in **vollständigen Sätzen**.
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Hast du deinen Alltag wegen sozialer Medien verändert?
+            frame: Ja, ich habe meinen Alltag verändert, weil ___. / Nein, ich habe meinen Alltag nicht verändert, weil ___.
+          - question: Hast du durch soziale Medien wichtige Menschen kennengelernt? Erzähl der Klasse davon.
+            frame: Ja, ich habe durch soziale Medien ___ kennengelernt. / Nein, ich habe noch nie ___.
+          - question: Welche Beiträge hast du in letzter Zeit geteilt?
+            frame: In letzter Zeit habe ich ___ geteilt.
+          - question: Wie wird Inklusion in sozialen Medien gefördert?
+            frame: Inklusion wird durch ___ gefördert.
+          - question: Wie werden Fake News verbreitet und wie können sie gestoppt werden?
+            frame: Fake News werden durch ___ verbreitet. Sie können gestoppt werden, wenn ___.
+          - question: Wie werden persönliche Daten von sozialen Medien gesammelt und wie findest du das?
+            frame: Persönliche Daten werden durch ___ gesammelt. Ich finde das ___, weil ___.
+          - question: Welche Inhalte werden deiner Meinung nach am häufigsten gefördert?
+            frame: Meiner Meinung nach werden ___ am häufigsten gefördert.
+          - question: Wird genug getan, um Jugendliche in sozialen Medien zu schützen? Warum?
+            frame: Ich denke, dass (nicht) genug getan wird, weil ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Trends des Jahrhunderts'
+        skills: [Das Passiv]
+        steps:
+          - 'Soziale Medien verändern sich ständig. Plattformen versuchen immer, neue Funktionen und Trends einzuführen. **Schritt 1:** Jede Gruppe bekommt eine Plattform: Instagram, TikTok, YouTube oder X / Twitter. Die Gruppe arbeitet als Forschungs- oder Medienteam.'
+          - '**Schritt 2:** Denkt an fünf aktuelle Trends oder Veränderungen. Ihr könnt echte oder erfundene, aber realistische Beispiele verwenden. Konzentriert euch auf: neue Funktionen, beliebte Inhalte, Richtlinien, virale Trends, künstliche Intelligenz, Algorithmen.'
+          - '**Schritt 3:** Schreibt fünf formelle Sätze im Passiv, mindestens 3 Sätze im **Perfekt Passiv** und 1 Satz im **Präteritum Passiv**.'
+          - '**Schritt 4:** Präsentiert euren Bericht. Regeln: nicht ablesen, langsam und deutlich sprechen, das Passiv natürlich verwenden.'
+          - '**Schritt 5:** Während die anderen präsentieren: Schreibt einen Passivsatz auf und entscheidet, ob er im Perfekt Passiv oder im Präteritum Passiv steht.'
+          - '**Schritt 6, Klassendiskussion:** Welche Plattform hat sich am meisten verändert? Warum ist das Passiv in Nachrichten und Berichten nützlich? Wie würde dieselbe Information im Aktiv klingen?'
+        example: |-
+          *Eine neue Funktion ist eingeführt worden.*
+          *Künstliche Intelligenz ist verwendet worden, um Inhalte zu personalisieren.*
+          *Im Jahr 2025 wurde eine neue Sicherheitsrichtlinie eingeführt.*
+          *Ein Bericht ist veröffentlicht worden.*
+          *Präsentation: Heute präsentieren wir aktuelle Entwicklungen auf Instagram. In den letzten Monaten sind mehrere neue Funktionen eingeführt worden.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Unser Bericht im Passiv
+        items:
+          - question: 'Satz 1 (Perfekt Passiv)'
+            frame: ___ ist / sind ___ worden.
+          - question: 'Satz 2 (Perfekt Passiv)'
+            frame: ___ ist / sind ___ worden.
+          - question: 'Satz 3 (Perfekt Passiv)'
+            frame: ___ ist / sind ___ worden.
+          - question: 'Satz 4 (Präteritum Passiv)'
+            frame: Im Jahr ___ wurde / wurden ___.
+          - question: 'Satz 5 (frei)'
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Was ich in sozialen Medien bemerkt habe'
+        skills: [Das Perfekt]
+        steps:
+          - '**Schritt 1:** Wählt zwei Themen aus der Liste unten. Bildet zu jedem Thema einen Satz im Perfekt.'
+          - '**Schritt 2, Gruppenarbeit:** A erzählt von seiner / ihrer Erfahrung. B antwortet ebenfalls im Perfekt. C stellt eine Zusatzfrage.'
+          - '**Schritt 3, Klassengespräch:** Vergleicht die Antworten verschiedener Schüler.'
+        example: |-
+          *A: Ich habe bemerkt, dass kurze Videos sehr beliebt geworden sind.*
+          *B: Das habe ich auch gesehen.*
+          *C: Hast du bemerkt, dass viele Menschen längere Videos nicht mehr anschauen?*
+      - id: act2-topics
+        type: discussionQuestions
+        title: Themen
+        items:
+          - question: Etwas, das in letzter Zeit sehr beliebt geworden ist.
+          - question: Etwas, über das viele Menschen sprechen.
+          - question: Etwas, das mich zum Lachen gebracht hat.
+          - question: Etwas, das mich nachdenklich gemacht hat.
+          - question: Etwas, das viele Menschen mögen.
+          - question: Etwas, das ich vermieden habe.
+          - question: Eine Person, die ich durch soziale Medien entdeckt habe.
+          - question: Eine Gewohnheit, die sich bei mir verändert hat.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Passives Scrollen oder aktive Entscheidungen?'
+        skills: [Das Passiv]
+        steps:
+          - '**Diskussion:** Werden Inhalte von den Nutzern ausgewählt oder für sie ausgewählt? Hast du schon einmal Zeit verloren, ohne es zu merken? Scrollst du einfach oder entscheidest du bewusst, was du anschaust?'
+          - '**Textanalyse:** Lest die beiden Texte. Ein Schüler arbeitet mit Text 1, ein Schüler mit Text 2.'
+          - '**Partnerarbeit:** Verwendet das Passiv: *Inhalte sind … / Zeit ist … / Kontrolle ist … / Gewohnheiten sind … / Entscheidungen sind …*'
+          - '**Gruppendiskussion:** Beantwortet die Fragen unten.'
+        example: |-
+          *Viel Zeit ist verschwendet worden.*
+          *Mehr Kontrolle ist gewonnen worden.*
+          *Neue Gewohnheiten sind entwickelt worden.*
+      - id: act3-questions
+        type: discussionQuestions
+        title: Gruppendiskussion
+        items:
+          - question: Was ist durch passives Scrollen verloren gegangen?
+            frame: Durch passives Scrollen ist ___ verloren gegangen.
+          - question: Was ist durch aktive Entscheidungen gewonnen worden?
+            frame: Durch aktive Entscheidungen ist / sind ___ gewonnen worden.
+          - question: Was wird von Plattformen gefördert?
+            frame: Von Plattformen wird / werden ___ gefördert.
+          - question: Was wird nicht ausreichend geschützt?
+            frame: ___ wird / werden nicht ausreichend geschützt.
+          - question: Was war für dich schwierig?
+            frame: Für mich war ___ schwierig.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Debatte – Woher sollten wir unsere Nachrichten bekommen?'
+        skills: [Das Perfekt]
+        steps:
+          - '**Gruppe A:** Wir sollten Nachrichten hauptsächlich über soziale Medien erhalten. **Gruppe B:** Wir sollten Nachrichten hauptsächlich über traditionelle Medien erhalten.'
+          - '**Vorbereitung:** Diskutiert: Warum vertrauen Menschen dieser Quelle? Wie werden Informationen verbreitet? Welche Rolle spielen Emotionen? Wie beeinflusst die Quelle Stress oder Informationsmüdigkeit? Versucht, Beispiele im Perfekt zu geben.'
+          - '**Debatte:** Gruppe A präsentiert ein Argument, Gruppe B antwortet. Danach umgekehrt.'
+          - '**Klassendiskussion:** Beantwortet die Fragen unten.'
+        example: |-
+          *Meiner Meinung nach sind Nachrichten in sozialen Medien schneller. Ich habe letzte Woche zuerst auf Instagram von dem Unfall gelesen.*
+          *Da bin ich anderer Meinung. Ich habe schon oft Fake News gesehen, die sehr oft geteilt worden sind.*
+      - id: act4-phrases
+        type: callout
+        tone: info
+        title: Nützliche Ausdrücke
+        text: |-
+          **Meinung:** Meiner Meinung nach … / Ich denke, dass … / Ich glaube, dass …
+          **Zustimmung:** Da stimme ich zu. / Das stimmt.
+          **Widerspruch:** Da bin ich anderer Meinung. / Andererseits …
+      - id: act4-questions
+        type: discussionQuestions
+        title: Klassendiskussion
+        items:
+          - question: Wie hat sich das Vertrauen in Informationen verändert?
+            frame: Das Vertrauen in Informationen hat sich ___ verändert, weil ___.
+          - question: Fühlst du dich heute von Nachrichten überfordert?
+            frame: Ja / Nein, ich fühle mich ___, weil ___.
+          - question: Welcher Quelle vertraust du mehr?
+            frame: Ich vertraue ___ mehr, weil ___.
+          - question: Ist es möglich, informiert zu bleiben, ohne gestresst zu sein?
+            frame: Ich denke, dass es (nicht) möglich ist, weil ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: das **Perfekt** (Aufwärmfragen 1–3,
+          Aktivitäten 2 und 4) und das **Passiv** (Aufwärmfragen 4–8, Aktivitäten 1
+          und 3) im Präsens, Präteritum und Perfekt. In der Debatte (Aktivität 4) kommen
+          Meinungsausdrücke dazu. Das Heft gibt für diesen Zyklus keine Zeiten an.
+      - id: n-intro
+        anchor: intro
+        text: Gib zuerst dein eigenes Beispiel. Achte auf die Nebensatz-Wortstellung nach *dass* (… verändert **haben**).
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Du kannst 8 Fragen auswählen. Die Schüler antworten immer in vollständigen
+          Sätzen. Die Fragen 4–8 stehen im Passiv: Achte darauf, dass die Antworten auch
+          im Passiv kommen (*Inklusion wird durch … gefördert*).
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Achte im Perfekt Passiv auf *worden* (nicht *geworden*): *Eine neue Funktion
+          ist eingeführt worden.* Beim Zuhören (Schritt 5) sammeln die Schüler die Sätze;
+          besprecht danach gemeinsam, welche im Perfekt und welche im Präteritum Passiv
+          stehen.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Die zwei Texte für die Textanalyse fehlen im Heft. Bring zwei kurze Texte mit
+          (zum Beispiel einen über passives Scrollen und einen über bewusste Mediennutzung)
+          oder lass die Textanalyse weg und geh direkt zur Partnerarbeit.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Teile die Klasse in zwei Gruppen. Die Gruppen müssen ihrer Position nicht
+          persönlich zustimmen. Erinnere an Beispiele im Perfekt (*Ich habe schon oft
+          gesehen, dass …*) und an die Ausdrücke im Kasten.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: soziale-medien-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: intro-he
+        type: text
+        lang: he
+        text: >-
+          בשיעור זה דיברנו על השפעת הרשתות החברתיות על חיי היומיום שלנו, על הדרך שבה
+          אנו צורכים מידע, ועל השינויים שהתרחשו בעולם התקשורת בשנים האחרונות. בנוסף,
+          תרגלנו שני נושאים דקדוקיים חשובים: **Perfekt** (זמן עבר המתאר חוויות ושינויים
+          בעלי קשר להווה) ו־**Passiv** (מבנה סביל).
+      - id: rules-perfekt
+        type: ruleSummary
+        skill: Das Perfekt
+        rules:
+          - text: 'Das **Perfekt** ist im gesprochenen Deutsch die wichtigste Vergangenheitsform. Wir benutzen es für persönliche Erfahrungen, Veränderungen, Ereignisse mit Folgen für heute und Handlungen, bei denen die genaue Zeit nicht wichtig ist.'
+            examples:
+              - Ich habe viele interessante Menschen online kennengelernt.
+              - Soziale Medien haben unsere Kommunikation verändert.
+          - text: 'Form: **haben / sein** (Position 2) + **Partizip II** (am Satzende).'
+            examples:
+              - Ich **habe** einen Beitrag **gelesen**.
+              - Wir **haben** viele Nachrichten **gesehen**.
+              - Kurze Videos **sind** sehr beliebt **geworden**.
+          - text: 'Verben mit **ver-, ent-, be-** und Verben auf **-ieren** haben kein *ge-*. Bei trennbaren Verben steht *-ge-* in der Mitte.'
+            examples:
+              - verändern → verändert
+              - verbringen → verbracht
+              - entdecken → entdeckt
+              - konsumieren → konsumiert
+              - kennenlernen → kennen**ge**lernt
+              - einführen → ein**ge**führt
+          - text: 'Typische Zeitwörter: **kürzlich, in letzter Zeit, schon, noch nie, oft, immer**.'
+            examples:
+              [
+                In letzter Zeit habe ich viele Videos über Reisen gesehen.,
+                Ich habe noch nie einen Beitrag gelöscht.,
+              ]
+      - id: perfekt-he
+        type: text
+        lang: he
+        text: |-
+          ה־**Perfekt** הוא אחד מזמני העבר החשובים ביותר בגרמנית המדוברת. משתמשים בו כאשר מדברים על: חוויות אישיות; שינויים שהתרחשו לאורך זמן; אירועים שיש להם השפעה על ההווה; פעולות שהתרחשו בעבר אך הזמן המדויק שלהן אינו חשוב.
+          מבנה הזמן: **haben / sein + Partizip II**. ה־haben / sein במקום השני במשפט, וה־Partizip II בסוף המשפט.
+          מילות זמן נפוצות: kürzlich (לאחרונה), in letzter Zeit (בזמן האחרון), schon (כבר), noch nie (מעולם לא), oft (לעיתים קרובות), immer (תמיד).
+      - id: rules-passiv
+        type: ruleSummary
+        skill: Das Passiv
+        rules:
+          - text: 'Das **Passiv** benutzen wir, wenn die **Handlung** wichtiger ist als die Person, die sie macht. Es ist typisch für Nachrichten, Berichte, Studien und Beiträge in sozialen Medien.'
+          - text: '**Präsens Passiv:** *werden* + Partizip II.'
+            examples: [Viele Beiträge werden täglich geteilt., Persönliche Daten werden gesammelt.]
+          - text: '**Präteritum Passiv:** *wurde / wurden* + Partizip II.'
+            examples:
+              [
+                Eine neue Funktion wurde eingeführt.,
+                Im Jahr 2025 wurde eine neue Sicherheitsrichtlinie eingeführt.,
+              ]
+          - text: '**Perfekt Passiv:** *sein* + Partizip II + **worden** (nicht *geworden*).'
+            examples:
+              [
+                Viele Informationen sind veröffentlicht worden.,
+                Ein Bericht ist veröffentlicht worden.,
+              ]
+          - text: 'Aktiv → Passiv: Das Objekt (Akkusativ) wird zum Subjekt. Die Person nennen wir nur, wenn sie wichtig ist: mit **von** + Dativ.'
+            examples:
+              - 'Aktiv: Die Plattform hat das Video geteilt.'
+              - 'Passiv: Das Video ist geteilt worden. / Das Video wurde geteilt.'
+              - 'Millionen Menschen sehen dieses Video. → Dieses Video wird von Millionen Menschen gesehen.'
+          - text: 'Im natürlichen Deutsch kombinieren wir Aktiv und Passiv: Das **Passiv** zeigt das Ergebnis oder den Prozess, das **Aktiv** eine Meinung, ein Gefühl oder eine persönliche Erfahrung.'
+            examples: [Viele Inhalte werden geteilt, aber ich lese nur wenige davon.]
+      - id: passiv-table
+        type: table
+        caption: Die drei Formen des Passivs
+        header: [Zeit, Form, Beispiel]
+        rows:
+          - [Präsens, werden + Partizip II, Viele Beiträge werden täglich geteilt.]
+          - [Präteritum, wurde(n) + Partizip II, Eine neue Funktion wurde eingeführt.]
+          - [
+              Perfekt,
+              ist / sind + Partizip II + worden,
+              Viele Informationen sind veröffentlicht worden.,
+            ]
+      - id: passiv-he
+        type: text
+        lang: he
+        text: |-
+          ה־**Passiv** (סביל) משמש כאשר הפעולה עצמה חשובה יותר ממי שביצע אותה. הוא נפוץ במיוחד בחדשות, בדוחות, במחקרים ובפרסומים ברשתות חברתיות.
+          השוואה: **Aktiv:** Die Plattform hat das Video geteilt. – הפלטפורמה שיתפה את הסרטון. **Passiv:** Das Video ist geteilt worden. / Das Video wurde geteilt. – הסרטון שותף.
+          **Präsens Passiv:** Viele Beiträge werden täglich geteilt. – פוסטים רבים משותפים מדי יום.
+          **Perfekt Passiv:** Viele Informationen sind veröffentlicht worden. – מידע רב פורסם.
+          **Präteritum Passiv:** Eine neue Funktion wurde eingeführt. – הוצגה פונקציה חדשה.
+          **שילוב בין Aktiv ו־Passiv:** בגרמנית טבעית משלבים בין שני המבנים. ה־Passiv מאפשר לנו להתמקד בתוצאה או בתהליך. ה־Aktiv מאפשר לנו להביע דעה, רגש או חוויה אישית. דוגמה: Viele Inhalte werden geteilt, aber ich lese nur wenige davon. – תכנים רבים משותפים, אבל אני קורא רק חלק קטן מהם.
+      - id: phrases-table
+        type: table
+        caption: Nützliche Ausdrücke
+        header: [Funktion, Deutsch, עברית]
+        rows:
+          - [Meinung, Meiner Meinung nach …, לדעתי…]
+          - [Meinung, 'Ich denke, dass …', אני חושב ש…]
+          - [Meinung, 'Ich glaube, dass …', אני מאמין ש…]
+          - [Zustimmung, Da stimme ich zu., אני מסכים.]
+          - [Zustimmung, Das stimmt., זה נכון.]
+          - [Widerspruch, Da bin ich anderer Meinung., אני חושב אחרת.]
+          - [Widerspruch, Andererseits …, מצד שני…]
+      - id: key-sentence
+        type: callout
+        tone: tip
+        title: Merksatz
+        text: '**Perfekt:** *haben / sein* … Partizip II. **Perfekt Passiv:** *ist / sind* … Partizip II + **worden**.'
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die Regeln mit der Gruppe und bitte um ein neues Beispiel zu jeder Passivform, am besten über eine Plattform, die die Schüler benutzen.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: soziale-medien-hausaufgaben
+    title: Hausaufgaben
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben
+      - id: classic-title
+        type: heading
+        level: 3
+        lang: he
+        text: שיעורי בית קלאסיים
+      - id: ex1-title
+        type: heading
+        level: 4
+        lang: he
+        text: תרגיל 1 – השלימו את המשפטים ב־Perfekt
+      - id: ex1-hint
+        type: text
+        lang: he
+        text: השתמשו בצורה הנכונה של הפועל.
+      - id: ex1
+        type: discussionQuestions
+        items:
+          - question: Ich ___ (sehen) viele Videos auf TikTok.
+          - question: Wir ___ (lesen) interessante Nachrichten online.
+          - question: Sie ___ (teilen) einen Beitrag auf Instagram.
+          - question: Ich ___ (kennenlernen) viele Menschen über soziale Medien.
+          - question: Du ___ (verbringen) viel Zeit im Internet.
+          - question: Wir ___ (entdecken) einen neuen Podcast.
+          - question: Er ___ (löschen) seinen Account.
+          - question: Ich ___ (hören) von diesem Influencer.
+      - id: ex2-title
+        type: heading
+        level: 4
+        lang: he
+        text: תרגיל 2 – הפכו את המשפטים ל־Passiv
+      - id: ex2-hint
+        type: text
+        lang: he
+        text: 'דוגמה: Die Plattform hat das Video geteilt. → Das Video wurde geteilt.'
+      - id: ex2
+        type: discussionQuestions
+        items:
+          - question: Die Firma hat neue Funktionen eingeführt.
+          - question: Die Nutzer haben den Beitrag geteilt.
+          - question: Die Plattform sammelt persönliche Daten.
+          - question: Millionen Menschen sehen dieses Video.
+          - question: Die Moderatoren haben den Kommentar entfernt.
+      - id: ex3-title
+        type: heading
+        level: 4
+        lang: he
+        text: תרגיל 3 – השלימו עם Perfekt או Passiv
+      - id: ex3
+        type: discussionQuestions
+        items:
+          - question: Viele Informationen ___ veröffentlicht worden.
+          - question: Ich ___ diesen Beitrag schon gesehen.
+          - question: Eine neue Funktion ___ eingeführt worden.
+          - question: Wir ___ viele Nachrichten gelesen.
+          - question: Persönliche Daten ___ gesammelt worden.
+      - id: ex4-title
+        type: heading
+        level: 4
+        lang: he
+        text: תרגיל 4 – שאלות אישיות
+      - id: ex4-hint
+        type: text
+        lang: he
+        text: ענו ב־3–4 משפטים מלאים על כל שאלה.
+      - id: ex4
+        type: discussionQuestions
+        items:
+          - question: Wie haben soziale Medien dein Leben verändert?
+          - question: Was hast du in letzter Zeit oft online gesehen?
+          - question: Welche Plattform hast du zuletzt benutzt?
+          - question: Welche Inhalte werden deiner Meinung nach zu oft gefördert?
+          - question: Hast du schon einmal Fake News gesehen? Was ist passiert?
+      - id: ex5-title
+        type: heading
+        level: 4
+        lang: he
+        text: תרגיל 5 – כתיבה
+      - id: ex5-hint
+        type: text
+        lang: he
+        text: |-
+          כתבו 120–150 מילים בנושא: **„Soziale Medien: Fluch oder Segen?“**
+          התייחסו ל: היתרונות של רשתות חברתיות; החסרונות שלהן; כיצד הן השפיעו על החיים שלכם; אילו שינויים ראיתם בשנים האחרונות.
+          השתמשו לפחות ב־5 משפטים ב־Perfekt וב־3 משפטים ב־Passiv.
+      - id: ex5
+        type: reflection
+        prompt: 'Soziale Medien: Fluch oder Segen?'
+      - id: mori-title
+        type: heading
+        level: 3
+        lang: he
+        text: שיעורי בית עם מורי
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere eine Nachricht und schick sie ab. Mori stellt dir Fragen; antworte auf Deutsch.
+      - id: mori-erfahrungen
+        type: aiTutorPrompt
+        lang: he
+        title: פעילות 1 – החוויות שלי ברשתות חברתיות
+        message: >-
+          היי מורי! אני לומד גרמנית ברמת B1. בבקשה שאל אותי שאלות על החוויות שלי ברשתות
+          חברתיות. תגרום לי להשתמש בזמן Perfekt כדי לדבר על דברים שראיתי, קראתי, שיתפתי
+          או גיליתי. תקן את כל הטעויות שלי מיד, הסבר אותן בקצרה, ושאל שאלות המשך כדי
+          שאענה במשפטים מלאים בגרמנית.
+      - id: mori-nachrichten
+        type: aiTutorPrompt
+        lang: he
+        title: פעילות 2 – חדשות ומידע ברשת
+        message: >-
+          היי מורי! בבקשה שאל אותי שאלות על חדשות, מידע ומשפיענים ברשתות חברתיות. תעודד
+          אותי להשתמש גם ב־Perfekt וגם ב־Passiv. שאל אותי מה פורסם, מה שותף, מה הוסר ומה
+          השפיע על אנשים. תקן את כל הטעויות שלי ועזור לי להרחיב את התשובות שלי.
+      - id: mori-experte
+        type: aiTutorPrompt
+        lang: he
+        title: פעילות 3 – מומחה לרשתות חברתיות
+        message: >-
+          היי מורי! תעמיד פנים שאני מומחה לרשתות חברתיות. שאל אותי על טרנדים חדשים,
+          אלגוריתמים, פרטיות, בינה מלאכותית והשפעת הרשתות החברתיות. תגרום לי להשתמש
+          במשפטי Passiv כמו "wurde veröffentlicht", "ist geteilt worden", "werden
+          gesammelt" ובמשפטי Perfekt. תקן כל טעות ותשאל שאלות מאתגרות ברמת B1.
+      - id: mori-interview
+        type: aiTutorPrompt
+        lang: he
+        title: פעילות 4 – ראיון עם משפיען
+        intro: בחרו משפיען, יוטיובר, עיתונאי או יוצר תוכן, וכתבו את שמו במקום ___ בהודעה.
+        message: >-
+          היי מורי! אני רוצה לראיין משפיען. המשפיען שבחרתי הוא: ___. בבקשה תענה כאילו אתה
+          אותו אדם. תעודד אותי לשאול שאלות ב־Perfekt וב־Passiv. תקן את השאלות שלי, הסבר את
+          הטעויות שלי, ושאל אותי שאלות המשך כדי לפתח שיחה טבעית בגרמנית.
+      - id: mori-debatte
+        type: aiTutorPrompt
+        lang: he
+        title: פעילות 5 – דיון על חדשות
+        message: >-
+          היי מורי! בוא נעשה דיון על השאלה: "האם אפשר לסמוך על חדשות ברשתות חברתיות?".
+          תציג דעות בעד ונגד. תעודד אותי להביע את דעתי באמצעות משפטים ב־Perfekt וב־Passiv,
+          להשתמש בביטויים כמו "Meiner Meinung nach", "Ich denke, dass" ו־"Andererseits".
+          תקן את כל הטעויות שלי ועזור לי לדבר בצורה טבעית ומשכנעת יותר בגרמנית.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          **Perfekt:** *haben / sein* … Partizip II am Ende. **Perfekt Passiv:** *ist / sind* … Partizip II + *worden*.
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+    teacherNotes:
+      - id: n-key1
+        anchor: ex1
+        text: >-
+          Lösungen Übung 1: 1. habe … gesehen 2. haben … gelesen 3. hat … geteilt 4. habe
+          … kennengelernt 5. hast … verbracht 6. haben … entdeckt 7. hat … gelöscht 8. habe
+          … gehört.
+      - id: n-key2
+        anchor: ex2
+        text: >-
+          Lösungen Übung 2: 1. Neue Funktionen wurden eingeführt. (auch: … sind
+          eingeführt worden.) 2. Der Beitrag wurde geteilt. (auch: … ist geteilt worden.)
+          3. Persönliche Daten werden gesammelt. 4. Dieses Video wird von Millionen
+          Menschen gesehen. 5. Der Kommentar wurde entfernt. (auch: … ist entfernt
+          worden.)
+      - id: n-key3
+        anchor: ex3
+        text: 'Lösungen Übung 3: 1. sind 2. habe 3. ist 4. haben 5. sind.'
+      - id: n-key4
+        anchor: ex4
+        text: |-
+          Beispielantworten Übung 4:
+          1. Soziale Medien haben mein Leben stark verändert. Ich habe viele Informationen schneller bekommen und neue Menschen kennengelernt. Gleichzeitig habe ich manchmal zu viel Zeit online verbracht.
+          2. In letzter Zeit habe ich viele Videos über Reisen und Sprachen gesehen. Ich habe auch viele Nachrichten über Politik und Technologie gelesen. Manche Inhalte waren interessant, aber andere waren nicht sehr wichtig.
+          3. Zuletzt habe ich Instagram benutzt. Ich habe dort Fotos gesehen und ein paar Nachrichten gelesen. Außerdem habe ich einige Beiträge von Freunden gelikt.
+          4. Meiner Meinung nach werden oberflächliche Inhalte zu oft gefördert. Viele Videos über Konsum, Streit oder unrealistische Lebensstile werden sehr oft gezeigt. Bessere Bildungsinhalte sollten mehr unterstützt werden.
+          5. Ja, ich habe schon einmal Fake News gesehen. Ein Beitrag wurde sehr oft geteilt, aber später wurde gezeigt, dass die Information falsch war. Seitdem prüfe ich Nachrichten vorsichtiger.
+      - id: n-key5
+        anchor: ex5
+        text: |-
+          Beispieltext Übung 5:
+          Soziale Medien sind meiner Meinung nach sowohl Fluch als auch Segen. Sie haben unser Leben stark verändert. Ich habe durch soziale Medien viele neue Informationen bekommen, interessante Videos gesehen und neue Menschen kennengelernt. Außerdem habe ich viele Nachrichten schneller gelesen als früher. Ein großer Vorteil ist, dass wichtige Informationen schnell geteilt werden. Auch Bildungsinhalte werden heute oft online veröffentlicht.
+          Aber es gibt auch Nachteile. Viele persönliche Daten werden gesammelt, und falsche Informationen werden manchmal verbreitet. Ich habe schon oft gesehen, dass Menschen zu viel Zeit im Internet verbracht haben. In den letzten Jahren sind viele neue Funktionen eingeführt worden, und kurze Videos sind besonders populär geworden. Meiner Meinung nach sollten soziale Medien bewusster genutzt werden. Sie können sehr nützlich sein, aber man muss kritisch bleiben.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: soziale-medien-uebung
+    book: workbook
+    title: 'Übung: Soziale Medien'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-perfekt
+        type: activity
+        activity: soziale-medien-perfekt
+      - id: ex-passiv
+        type: activity
+        activity: soziale-medien-passiv
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: soziale-medien-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für soziale Medien
+        glossLang: he
+        link: https://quizlet.com/br/1186157056/soziale-medien-flash-cards/
+        items: &soziale-medien-words
+          - { term: die sozialen Medien, gloss: רשתות חברתיות }
+          - { term: die Plattform, gloss: פלטפורמה }
+          - { term: der Nutzer, gloss: משתמש }
+          - { term: der Inhalt, gloss: תוכן }
+          - { term: die Reichweite, gloss: חשיפה / תפוצה }
+          - { term: der Einfluss, gloss: השפעה }
+          - { term: der Algorithmus, gloss: אלגוריתם }
+          - { term: die Sichtbarkeit, gloss: נראות }
+          - { term: die Richtlinie, gloss: מדיניות }
+          - { term: die Kampagne, gloss: קמפיין }
+          - { term: die Innovation, gloss: חידוש }
+          - { term: die Entwicklung, gloss: התפתחות }
+          - { term: die Schlagzeile, gloss: כותרת }
+          - { term: die Kritik, gloss: ביקורת }
+          - { term: das Publikum, gloss: קהל }
+          - { term: die Informationsquelle, gloss: מקור מידע }
+          - { term: die Fehlinformation, gloss: מידע שגוי / פייק ניוז }
+          - { term: die Privatsphäre, gloss: פרטיות }
+          - { term: die Meinungsfreiheit, gloss: חופש הביטוי }
+          - { term: die Glaubwürdigkeit, gloss: אמינות }
+          - { term: fördern, gloss: לקדם }
+          - { term: verbreiten, gloss: להפיץ }
+          - { term: veröffentlichen, gloss: לפרסם }
+          - { term: teilen, gloss: לשתף }
+          - { term: entfernen, gloss: להסיר }
+          - { term: konsumieren, gloss: לצרוך תוכן }
+          - { term: beeinflussen, gloss: להשפיע }
+          - { term: kritisieren, gloss: לבקר }
+          - { term: einführen, gloss: להשיק / להציג }
+          - { term: wahrnehmen, gloss: לתפוס / להבחין ב־ }
+          - { term: viral, gloss: ויראלי }
+          - { term: ständig, gloss: מתמיד / קבוע }
+          - { term: überwältigt, gloss: מוצף }
+          - { term: glaubwürdig, gloss: אמין }
+          - { term: voreingenommen, gloss: מוטה }
+          - { term: missverstanden, gloss: מובן בצורה שגויה / מפורש לא נכון }
+
+vocabulary:
+  - slug: soziale-medien
+    title: Soziale Medien
+    items: *soziale-medien-words
+
+activities:
+  - slug: soziale-medien-perfekt
+    title: Das Perfekt
+    minutes: 8
+    items:
+      - id: habe-gesehen
+        type: multipleChoice
+        prompt: Ich ___ viele Videos auf TikTok gesehen.
+        options:
+          - { text: habe, correct: true }
+          - {
+              text: bin,
+              feedback: '*sehen* ist kein Verb der Bewegung: Wir sagen *Ich habe gesehen*.',
+            }
+          - { text: hat, feedback: '*hat* ist für *er / sie / es*. Für *ich* sagen wir *habe*.' }
+      - id: geloescht
+        type: fillBlank
+        prompt: Schreib das Partizip II von *löschen*.
+        text: Er hat seinen Account ___.
+        blanks: [[gelöscht]]
+      - id: verbracht
+        type: multipleChoice
+        prompt: Du hast viel Zeit im Internet ___.
+        options:
+          - { text: verbracht, correct: true }
+          - {
+              text: geverbracht,
+              feedback: 'Verben mit *ver-* haben im Partizip II kein *ge-*: *verbracht*.',
+            }
+          - {
+              text: verbringt,
+              feedback: '*verbringen* ist unregelmäßig: Das Partizip II ist *verbracht*.',
+            }
+      - id: partizip-paare
+        type: matching
+        prompt: Welches Partizip II passt zu welchem Verb?
+        pairs:
+          - [teilen, geteilt]
+          - [lesen, gelesen]
+          - [entdecken, entdeckt]
+          - [kennenlernen, kennengelernt]
+          - [veröffentlichen, veröffentlicht]
+      - id: wortstellung
+        type: trueFalse
+        prompt: 'Der Satz *Ich habe gelesen einen Beitrag.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Das Partizip II steht am Satzende: *Ich habe einen Beitrag gelesen.*'
+          incorrect: 'Das Partizip II steht immer am Satzende: *Ich habe einen Beitrag gelesen.*'
+      - id: geworden
+        type: fillBlank
+        prompt: Ergänze *sein* in der richtigen Form und das Partizip II von *werden*.
+        text: Kurze Videos ___ in letzter Zeit sehr beliebt ___.
+        blanks: [[sind], [geworden]]
+      - id: kennengelernt
+        type: multipleChoice
+        prompt: Ich habe viele interessante Menschen online ___.
+        options:
+          - { text: kennengelernt, correct: true }
+          - {
+              text: gekennenlernt,
+              feedback: 'Bei trennbaren Verben steht *-ge-* in der Mitte: *kennen-ge-lernt*.',
+            }
+          - {
+              text: kennenlernen,
+              feedback: '*kennenlernen* ist der Infinitiv. Im Perfekt brauchen wir das Partizip II: *kennengelernt*.',
+            }
+      - id: ordne-kommunikation
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einem Satz im Perfekt.
+        sentence: Soziale Medien haben unsere Kommunikation verändert.
+
+  - slug: soziale-medien-passiv
+    title: Das Passiv
+    minutes: 8
+    items:
+      - id: praesens-werden
+        type: multipleChoice
+        prompt: Viele Beiträge ___ täglich geteilt.
+        options:
+          - { text: werden, correct: true }
+          - { text: wird, feedback: '*Beiträge* ist Plural: *Viele Beiträge werden geteilt*.' }
+          - {
+              text: haben,
+              feedback: 'Das Präsens Passiv bilden wir mit *werden* + Partizip II: *werden geteilt*.',
+            }
+      - id: perfekt-ist
+        type: fillBlank
+        prompt: Ergänze das Hilfsverb im Perfekt Passiv.
+        text: Eine neue Funktion ___ eingeführt worden.
+        blanks: [[ist]]
+      - id: worden
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Viele Informationen sind veröffentlicht worden., correct: true }
+          - {
+              text: Viele Informationen sind veröffentlicht geworden.,
+              feedback: 'Im Perfekt Passiv sagen wir *worden*, nicht *geworden*.',
+            }
+          - {
+              text: Viele Informationen haben veröffentlicht worden.,
+              feedback: 'Das Perfekt Passiv bilden wir mit *sein*: *sind … veröffentlicht worden*.',
+            }
+      - id: regel-worden
+        type: trueFalse
+        prompt: 'Im Perfekt Passiv benutzen wir *worden*, nicht *geworden*.'
+        answer: true
+        feedback:
+          correct: 'Richtig! *Ein Bericht ist veröffentlicht worden.*'
+          incorrect: 'Doch: Im Perfekt Passiv steht *worden*: *Ein Bericht ist veröffentlicht worden.*'
+      - id: aktiv-passiv
+        type: matching
+        prompt: Welcher Passivsatz passt zu welchem Aktivsatz?
+        pairs:
+          - [Die Plattform sammelt persönliche Daten., Persönliche Daten werden gesammelt.]
+          - [Die Moderatoren haben den Kommentar entfernt., Der Kommentar ist entfernt worden.]
+          - [Die Firma führte eine neue Funktion ein., Eine neue Funktion wurde eingeführt.]
+          - [
+              Millionen Menschen sehen dieses Video.,
+              Dieses Video wird von Millionen Menschen gesehen.,
+            ]
+      - id: praeteritum-wurde
+        type: fillBlank
+        prompt: Ergänze das Präteritum Passiv.
+        text: Im Jahr 2025 ___ eine neue Sicherheitsrichtlinie eingeführt.
+        blanks: [[wurde]]
+      - id: welche-form
+        type: multipleChoice
+        prompt: Welcher Satz steht im **Präteritum** Passiv?
+        options:
+          - { text: Der Beitrag wurde geteilt., correct: true }
+          - {
+              text: Der Beitrag ist geteilt worden.,
+              feedback: '*ist … worden* ist das Perfekt Passiv. Das Präteritum Passiv ist *wurde* + Partizip II.',
+            }
+          - {
+              text: Der Beitrag wird geteilt.,
+              feedback: '*wird* + Partizip II ist das Präsens Passiv. Das Präteritum Passiv ist *wurde* + Partizip II.',
+            }
+      - id: ordne-informationen
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einem Satz im Perfekt Passiv.
+        sentence: Viele Informationen sind veröffentlicht worden.
