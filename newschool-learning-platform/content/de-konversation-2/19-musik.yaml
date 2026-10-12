@@ -1,0 +1,671 @@
+# Cycle "Musik", converted from the German level 2 digital notebook
+# ("Conversational German - Digital Notebook", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-konversation-2
+slug: musik
+title: Musik
+goal: Über Musik heute und früher sprechen und Sänger und Musikstile vergleichen.
+position: 19
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Heute und früher" and "Vergleiche") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's skills,
+    its summary, the activity examples and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    The notebook lists four grammar points (Präsens, Perfekt, früher + Perfekt,
+    Vergleiche). The platform shows two skills per cycle, so they are grouped as
+    "Heute und früher" (Präsens, Perfekt, früher / jetzt) and "Vergleiche" (-er als,
+    der / das -ste, am -sten). The notebook has no plan saying which activity goes
+    with which skill; the plan note was added (Activities 1, 2, 3, 5 → skill 1;
+    Activity 4 → skill 2).
+  - >-
+    Grammar, comparisons: the summary (and Mori prompt 4) taught "long adjective:
+    mehr … als", translated from English "more … than". That is wrong for German:
+    every adjective takes -er (populärer, beliebter, interessanter), and the
+    example given ("Pop ist populärer als Jazz") already shows it. The rule is
+    rewritten; Mori prompt 4 now asks for "-er als" and the superlative. The focus
+    line "-er als / am meisten" now reads "-er als / am -sten"; "am liebsten / am
+    meisten" is kept as a rule for verbs (Ich höre am liebsten Pop).
+  - >-
+    Grammar, past: "Hast du schon einmal auf einem Konzert gewesen?" →
+    "Bist du schon einmal auf einem Konzert gewesen?" (sein forms the Perfekt with
+    sein). The summary called "Ich war auf einem Konzert" and "Früher mochte ich
+    Rockmusik" Perfekt; they are Präteritum. A rule was added: with sein, haben and
+    mögen we usually say war, hatte, mochte; other verbs use the Perfekt (habe …
+    gehört). The "früher" rule now says "früher + Perfekt or Präteritum".
+  - >-
+    Activity 3 model: "Sein bekanntestes Lied ist „Perfect“" → "Ein bekanntes Lied
+    von ihm ist „Perfect“" ("Shape of You" is usually named as his best-known song).
+    Facts checked: Ed Sheeran born 1991 in England; Adele (1988) is older than
+    Billie Eilish (2001); Justin Bieber is from Canada.
+  - >-
+    Other corrections: "Student A / Student B" → "Schüler A / Schüler B" (Student
+    means a university student); "Er singt Pop. Er kommt aus Kanada…" kept; "Das
+    Lied fühlt sich frei an" kept. The intro follow-up questions are now a teacher
+    note.
+  - >-
+    Activity 5 uses the song "Über den Wolken" (Reinhard Mey). The notebook gives no
+    link and no lyrics; no lyrics were copied. A YouTube search link was added as
+    the resource; please replace it with the exact video you use.
+  - >-
+    The Mori homework prompts are written in Hebrew in the notebook ("instructions in
+    Hebrew, examples in German"). They were translated into simple German so the
+    student practises German with Mori; the examples are kept as intros. Please
+    check, or tell us if you prefer the Hebrew messages. The tips callout was added
+    from the course pattern.
+  - >-
+    The grammar summary is in Hebrew in the notebook. The rules are given in simple
+    German (ruleSummary) and short corrected Hebrew explanations are kept as Hebrew
+    text blocks; the Hebrew translations of the examples are kept as glosses.
+  - >-
+    Vocabulary: nouns already had articles; "Pop / Rock / Jazz" → "der Pop / der Rock /
+    der Jazz"; "lieben – לאהוב מאוד" kept; "beliebt – פופולרי" → "אהוב / פופולרי";
+    "live – בהופעה חיה" → "בהופעה חיה / לייב". Please confirm.
+  - >-
+    Times: ranges are recorded as the larger number (8–10 → 10). Activity totals:
+    Activity 1 = 15, Activity 2 = 17, Activity 4 = 20, Activity 5 = 9 minutes;
+    Activity 3 has no time. The Quizlet link lost its "?new" parameter. The
+    "Schüler 1/2/3" answer lines are replaced by the optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: musik-unterricht
+    title: 'Unterricht: Musik'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Musik
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Heute und früher
+            description: 'Präsens (*Ich höre gern Pop.*), Perfekt (*Ich habe gestern ein Lied gehört.*) und *früher / jetzt*'
+          - name: Vergleiche
+            description: '*Adele ist älter als Billie Eilish. Das ist das beste Lied.*'
+      - id: quizlet
+        type: externalLink
+        label: Musik auf Quizlet
+        url: https://quizlet.com/br/1132367888/musik-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        prompt: Sag zwei kurze Sätze.
+        frame: Ich bin ___. Ich höre gern ___. Ich höre Musik, wenn ich ___.
+        example: Ich bin Sarah. Ich höre gern Popmusik. Ich höre Musik, wenn ich koche.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Hörst du gern Musik? Welche Art?
+            frame: Ja, ich höre gern ___. / Ich höre ___.
+          - question: Wann hörst du Musik?
+            frame: Ich höre Musik beim ___. / Ich höre Musik am ___.
+          - question: Welches Lied hast du zuletzt gehört?
+            frame: Ich habe gestern ein Lied von ___ gehört.
+          - question: Hast du als Kind Musik gehört? Welche?
+            frame: Als Kind habe ich ___ gehört.
+          - question: Hörst du Musik allein oder mit Freunden?
+            frame: Ich höre Musik allein. / Ich höre Musik mit Freunden.
+          - question: Welche Musik hörst du, wenn du glücklich bist?
+            frame: Wenn ich glücklich bin, höre ich ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Musik von gestern und heute'
+        skills: [Heute und früher]
+        minutes: 15
+        steps:
+          - Hör das Muster von deiner Lehrkraft. Mit *früher* sprechen wir über die Vergangenheit, mit *jetzt* über heute.
+          - 'Arbeitet zu zweit und stellt euch die Fragen: *Welche Musik hast du als Kind gehört? Welche Musik hörst du jetzt?*'
+          - Antworte mit dem Modell unten.
+          - Sag der Gruppe einen Satz über deinen Partner / deine Partnerin.
+        example: |-
+          *Früher habe ich Kinderlieder gehört. Jetzt höre ich Rockmusik.*
+          *Als ich 10 war, mochte ich Shakira. Jetzt höre ich Coldplay.*
+          *Früher mochte er Pop, jetzt hört er Jazz.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Früher und jetzt
+        items:
+          - question: Früher habe ich ___ gehört.
+          - question: Jetzt höre ich ___.
+          - question: Früher mochte mein Partner / meine Partnerin ___, jetzt hört er / sie ___.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Musik-Interview'
+        skills: [Heute und früher]
+        minutes: 17
+        steps:
+          - 'Arbeitet zu zweit: Schüler A ist der Interviewer / die Interviewerin, Schüler B ist der Gast.'
+          - A stellt B die 5 Fragen unten. B antwortet in ganzen Sätzen.
+          - A hört zu und notiert **2 wichtige Informationen**.
+          - Dann tauscht ihr die Rollen.
+          - Stell deinen Partner / deine Partnerin mit **zwei Sätzen** vor.
+        example: |-
+          *Ich höre heute Popmusik. Als Kind habe ich Kinderlieder gehört.*
+          *Ja, ich war auf einem Konzert. / Nein, noch nie.*
+          *Ich mag dieses Lied, weil es ruhig ist. Ich höre Musik am Abend.*
+          *Das ist Maria. Sie hört heute Popmusik. Früher hat sie Kinderlieder gehört.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Die Interviewfragen
+        items:
+          - question: Welche Musik hörst du heute gern?
+            frame: Ich höre heute gern ___.
+          - question: Welche Musik hast du als Kind gehört?
+            frame: Als Kind habe ich ___ gehört.
+          - question: Warst du schon einmal auf einem Konzert?
+            frame: Ja, ich war auf einem Konzert von ___. / Nein, noch nie.
+          - question: Welches Lied magst du sehr? Warum?
+            frame: Ich mag ___, weil es ___ ist.
+          - question: Wann hörst du normalerweise Musik?
+            frame: Ich höre Musik ___.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Musikalische Mini-Biografie'
+        skills: [Heute und früher]
+        steps:
+          - Lies die kurzen Infokarten über Sänger und Sängerinnen von deiner Lehrkraft.
+          - Wähl **einen** Künstler / **eine** Künstlerin.
+          - Sag **drei Sätze** über ihn / sie (ca. 30 Sekunden).
+        example: |-
+          *Ed Sheeran wurde 1991 in England geboren.*
+          *Ein bekanntes Lied von ihm ist „Perfect“.*
+          *Heute singt er Popmusik.*
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Mein Künstler / meine Künstlerin
+        items:
+          - question: ___ wurde ___ in ___ geboren.
+          - question: Ein bekanntes Lied von ihm / ihr ist „___“.
+          - question: Heute singt er / sie ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Errate den Sänger'
+        skills: [Vergleiche]
+        minutes: 20
+        steps:
+          - Hör die Beschreibung von deiner Lehrkraft und rate den Sänger.
+          - Arbeitet zu zweit. Jeder bereitet **zwei Hinweise** über einen Sänger / eine Sängerin vor.
+          - Lest die Hinweise laut vor. Die Gruppe rät.
+          - Nach jeder richtigen Antwort sagt ein Schüler / eine Schülerin einen Vergleich.
+        example: |-
+          *Er singt Pop. Er kommt aus Kanada. Er ist sehr berühmt.* – *Justin Bieber!*
+          *Adele ist älter als Billie Eilish.*
+          *Pop ist beliebter als Jazz.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Hinweise und Vergleiche
+        items:
+          - question: 'Hinweis 1: Er / Sie singt ___.'
+          - question: 'Hinweis 2: Er / Sie kommt aus ___.'
+          - question: 'Vergleich: ___ ist ___er als ___.'
+      - id: act5
+        type: classActivity
+        title: 'Aktivität 5: „Über den Wolken“ (Gefühl und Bedeutung)'
+        skills: [Heute und früher]
+        minutes: 9
+        steps:
+          - Hör den Refrain (40–60 Sekunden). Du musst nichts verstehen, nur fühlen.
+          - 'Wähl ein Wort: *ruhig, frei, traurig, glücklich*.'
+          - Sag einen Satz über das Lied.
+        wordBank: [ruhig, frei, traurig, glücklich]
+        example: |-
+          *Das Lied ist ruhig.*
+          *Ich mag das Lied, weil es ruhig ist.*
+          *Ich mag das Lied nicht, weil es traurig ist.*
+          *Das Lied fühlt sich frei an.*
+        resource:
+          label: '„Über den Wolken“ (Reinhard Mey) auf YouTube'
+          url: https://www.youtube.com/results?search_query=Reinhard+Mey+%C3%9Cber+den+Wolken
+      - id: act5-sentences
+        type: discussionQuestions
+        title: Mein Satz über das Lied
+        items:
+          - question: Das Lied ist ___.
+          - question: Ich mag das Lied (nicht), weil es ___ ist.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Heute und früher** (Präsens, Perfekt,
+          *früher / jetzt*; Aufwärmfragen, Aktivitäten 1, 2, 3 und 5) und **Vergleiche**
+          (Aktivität 4). Die Aktivitäten zusammen sind länger als eine Stunde: Wähl zwei
+          oder drei davon und immer Aktivität 4.
+      - id: n-intro
+        anchor: intro
+        text: 'Gib zuerst dein Beispiel. Frag dann kurz nach: *Warum magst du diese Musik? Hörst du Musik allein oder mit Freunden?*'
+      - id: n-warmup
+        anchor: warmup
+        text: 1–2 Sätze pro Schüler. Stell jedem Schüler mindestens zwei Fragen.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Schreib das Muster an die Tafel und sag es laut (2 Minuten): *Früher habe
+          ich Kinderlieder gehört. Jetzt höre ich Rockmusik.* Partnerarbeit 8 Minuten,
+          Teilen im Plenum 5 Minuten. Korrigiere sanft und wiederhole den korrekten
+          Satz.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Rollen verteilen: 2 Minuten. Sag: „Ihr macht ein Musik-Interview. Einer fragt,
+          der andere antwortet.“ Schreib die 5 Fragen an die Tafel oder gib sie auf
+          einem Blatt. Interview: 10 Minuten (dann Rollen tauschen); Vorstellen: 5
+          Minuten. Geh herum, hilf und korrigiere sanft.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Bereite 3–4 sehr kurze Infokarten über Sänger vor (oder schreib sie an die
+          Tafel), z. B. *Ed Sheeran wurde 1991 in England geboren. Heute singt er
+          Popmusik.* Jeder spricht ca. 30 Sekunden; hilf bei Aussprache und Verbformen.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Lehrer-Runde 5 Minuten: Beschreib einen Künstler, ohne den Namen zu sagen.
+          Paararbeit 10 Minuten, Vergleiche 5 Minuten. Schreib die Modelle an die
+          Tafel: *Adele ist älter als Billie Eilish. Pop ist beliebter als Jazz.*
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Sag: „Hört einfach zu. Ihr müsst nichts verstehen. Nur fühlen.“ Spiel 40–60
+          Sekunden des Refrains (2 Minuten), schreib die vier Wörter an die Tafel (2
+          Minuten); dann sagt jeder einen Satz (5 Minuten). Wiederhole korrekt und lass
+          den Schüler den Satz noch einmal sagen, wenn nötig. Das Heft nennt keinen
+          Link: Der Link oben ist eine YouTube-Suche; wähl das Video vorher aus.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: musik-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-heute
+        type: ruleSummary
+        skill: Heute und früher
+        rules:
+          - text: '**Präsens**: für Gewohnheiten und Vorlieben **jetzt**. Das Verb steht an Position 2.'
+            examples:
+              [
+                Ich höre Popmusik.,
+                Ich mag Jazz.,
+                Ich höre Musik am Abend.,
+                Welche Musik hörst du?,
+                Magst du dieses Lied?,
+              ]
+          - text: '**Perfekt**: für Erlebnisse in der Vergangenheit. *haben / sein* an Position 2, das **Partizip II** am Ende.'
+            examples:
+              [
+                Ich habe Rock gehört.,
+                Ich habe dieses Lied gestern gehört.,
+                Welches Lied hast du zuletzt gehört?,
+                Bist du schon einmal auf einem Konzert gewesen?,
+              ]
+          - text: 'Bei *sein*, *haben* und *mögen* sagen wir in der Vergangenheit meistens **war, hatte, mochte** (Präteritum).'
+            examples:
+              [
+                Ich war auf einem Konzert.,
+                Warst du schon einmal auf einem Konzert?,
+                Als Kind mochte ich Shakira.,
+              ]
+          - text: 'Verneinung: *kein / keine* vor einem Nomen ohne Artikel, sonst *nicht*.'
+            examples: [Ich habe keine Musik gehört., Ich war nicht auf einem Konzert.]
+          - text: '**früher** + Vergangenheit = so war es, aber heute nicht mehr. Im Deutschen brauchen wir keine besondere Form wie *used to* im Englischen. Mit **jetzt** + Präsens sprechen wir über heute.'
+            examples:
+              [
+                Früher habe ich Kinderlieder gehört.,
+                Früher habe ich viel gesungen.,
+                'Früher mochte ich Pop, jetzt höre ich Jazz.',
+              ]
+      - id: heute-he
+        type: text
+        lang: he
+        text: >-
+          הווה (Präsens) – להרגלים ולהעדפות עכשיו: Ich höre Popmusik. עבר (Perfekt) –
+          לחוויות שהסתיימו: haben / sein במקום השני ו־Partizip II בסוף המשפט: Ich habe
+          dieses Lied gestern gehört. עם sein, haben ו־mögen אומרים בדרך כלל war, hatte,
+          mochte: Ich war auf einem Konzert. בעזרת früher מדברים על מה שהיה פעם ועכשיו
+          כבר לא: Früher mochte ich Pop, jetzt höre ich Jazz.
+      - id: heute-examples
+        type: examples
+        items:
+          - { text: Ich höre Popmusik., gloss: אני שומע מוזיקת פופ }
+          - { text: Ich mag Jazz., gloss: אני אוהב ג׳אז }
+          - { text: Ich höre Musik am Abend., gloss: אני שומע מוזיקה בערב }
+          - { text: Welche Musik hörst du?, gloss: איזו מוזיקה אתה שומע? }
+          - { text: Magst du dieses Lied?, gloss: אתה אוהב את השיר הזה? }
+          - { text: Ich habe Rock gehört., gloss: שמעתי רוק }
+          - { text: Ich war auf einem Konzert., gloss: הייתי בהופעה }
+          - { text: Ich habe dieses Lied gestern gehört., gloss: שמעתי את השיר הזה אתמול }
+      - id: rules-vergleiche
+        type: ruleSummary
+        skill: Vergleiche
+        rules:
+          - text: '**Komparativ**: Adjektiv + **-er** + **als**. Das gilt auch für lange Adjektive (nicht *mehr … als*). Kurze Adjektive mit a, o, u bekommen oft einen Umlaut.'
+            examples:
+              [
+                Adele ist älter als Billie Eilish.,
+                Pop ist populärer als Jazz.,
+                Pop ist beliebter als Jazz.,
+                Pop ist ruhiger als Rock.,
+              ]
+          - text: '**Superlativ** vor einem Nomen: *der / die / das* + Adjektiv + **-ste**. Ohne Nomen: **am** + Adjektiv + **-sten**.'
+            examples:
+              [
+                Das ist das beste Lied.,
+                Er ist der berühmteste Sänger.,
+                Dieses Lied ist am schönsten.,
+              ]
+          - text: 'Unregelmäßig: *gut – besser – am besten*. Mit Verben: *gern – lieber – am liebsten*, *viel – mehr – am meisten*.'
+            examples:
+              [Ich höre lieber Rock als Pop., Ich höre am liebsten Jazz., Ich mag Pop am meisten.]
+      - id: vergleiche-he
+        type: text
+        lang: he
+        text: >-
+          השוואה: מוסיפים ‎-er לתואר ואחריו als (יותר … מ־). בגרמנית עושים זאת גם בתארים
+          ארוכים: populärer, beliebter (לא mehr … als). צורת עליון לפני שם עצם: der / die
+          / das + ‎-ste (das beste Lied); בלי שם עצם: am + ‎-sten (am schönsten).
+          יוצאי דופן: gut – besser – am besten; gern – lieber – am liebsten.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die zwei Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: musik-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere eine Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: '1: Wer bin ich und was mag ich?'
+        intro: 'Beispiel für deine Antwort: *Ich bin Daniel. Ich höre gern Popmusik. Ich höre Musik am Abend.*'
+        message: |-
+          Hallo Mori! Bitte frag mich: Wer bin ich und welche Musik mag ich heute?
+          Ich möchte im Präsens antworten.
+          Bitte korrigiere mich sofort.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: '2: Musik früher'
+        intro: 'Beispiel: *Früher habe ich Kinderlieder gehört. Früher mochte ich Rockmusik.*'
+        message: |-
+          Hallo Mori! Bitte frag mich, welche Musik ich als Kind gehört habe.
+          Ich möchte mit „früher“ und dem Perfekt antworten.
+          Bitte korrigiere jeden Fehler.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: '3: Ein Erlebnis mit Musik'
+        intro: 'Beispiel: *Ja, ich war auf einem Konzert. Ich habe ein Lied live gehört.*'
+        message: |-
+          Hallo Mori! Bitte frag mich, ob ich schon einmal auf einem Konzert oder einem Musikfestival war.
+          Ich antworte in der Vergangenheit (Perfekt).
+          Bitte korrigiere jeden Fehler.
+      - id: mori-4
+        type: aiTutorPrompt
+        title: '4: Vergleichen'
+        intro: 'Beispiel: *Pop ist beliebter als Jazz. Adele ist älter als Billie Eilish. Das ist das beste Lied.*'
+        message: |-
+          Hallo Mori! Bitte nenn mir zwei Musikstile oder zwei Sänger und bitte mich, sie zu vergleichen.
+          Ich möchte „-er als“ und den Superlativ (der / die / das -ste, am -sten) benutzen.
+          Bitte korrigiere jeden Fehler.
+      - id: mori-5
+        type: aiTutorPrompt
+        title: '5: Musik-Interview'
+        message: |-
+          Hallo Mori! Bitte sei mein Interviewer und frag mich:
+          – Welche Musik hörst du heute?
+          – Welche Musik hast du als Kind gehört?
+          – Warst du schon einmal auf einem Konzert?
+          – Wann hörst du Musik?
+          – Welches Lied magst du besonders?
+          Ich antworte auf Deutsch. Bitte korrigiere jeden Fehler.
+      - id: mori-6
+        type: aiTutorPrompt
+        title: '6: Eine kleine Geschichte über Musik'
+        intro: 'Beispiel: *Heute höre ich Popmusik. Früher habe ich Rock gehört. Pop ist ruhiger als Rock. Ich höre Musik am Abend. Musik macht mich glücklich.*'
+        message: |-
+          Hallo Mori! Ich möchte dir eine kurze Geschichte (4–5 Sätze) über Musik in meinem Leben erzählen.
+          Ich benutze das Präsens (was ich heute mag), die Vergangenheit (was ich früher mochte) und mindestens einen Vergleich.
+          Bitte korrigiere mich freundlich, stell mir Fragen, die mir helfen, und schlag mir dann eine bessere, klarere Version auf Deutsch vor.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: musik-uebung
+    book: workbook
+    title: 'Übung: Musik'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-zeiten
+        type: activity
+        activity: musik-zeiten
+      - id: ex-vergleiche
+        type: activity
+        activity: musik-vergleiche
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: musik-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für Musik
+        glossLang: he
+        link: https://quizlet.com/br/1132367888/musik-flash-cards/
+        items: &musik-words
+          - { term: die Musik, gloss: מוזיקה }
+          - { term: das Lied, gloss: שיר }
+          - { term: der Sänger / die Sängerin, gloss: זמר / זמרת }
+          - { term: die Band, gloss: להקה }
+          - { term: das Konzert, gloss: הופעה }
+          - { term: der Rhythmus, gloss: קצב }
+          - { term: die Melodie, gloss: מנגינה }
+          - { term: der Text, gloss: מילים / טקסט של שיר }
+          - { term: der Pop, gloss: פופ }
+          - { term: der Rock, gloss: רוק }
+          - { term: der Jazz, gloss: ג׳אז }
+          - { term: klassisch, gloss: קלאסי }
+          - { term: hören, gloss: לשמוע }
+          - { term: singen, gloss: לשיר }
+          - { term: tanzen, gloss: לרקוד }
+          - { term: mögen, gloss: לאהוב }
+          - { term: lieben, gloss: לאהוב מאוד }
+          - { term: bevorzugen, gloss: להעדיף }
+          - { term: heute, gloss: היום }
+          - { term: früher, gloss: בעבר }
+          - { term: gestern, gloss: אתמול }
+          - { term: immer, gloss: תמיד }
+          - { term: oft, gloss: לעיתים קרובות }
+          - { term: manchmal, gloss: לפעמים }
+          - { term: ruhig, gloss: רגוע }
+          - { term: laut, gloss: רועש }
+          - { term: traurig, gloss: עצוב }
+          - { term: glücklich, gloss: שמח }
+          - { term: berühmt, gloss: מפורסם }
+          - { term: beliebt, gloss: אהוב / פופולרי }
+          - { term: besser, gloss: טוב יותר }
+          - { term: älter, gloss: מבוגר יותר }
+          - { term: jünger, gloss: צעיר יותר }
+          - { term: live, gloss: בהופעה חיה / לייב }
+          - { term: zu Hause, gloss: בבית }
+          - { term: am Abend, gloss: בערב }
+
+vocabulary:
+  - slug: musik
+    title: Musik
+    items: *musik-words
+
+activities:
+  - slug: musik-zeiten
+    title: 'Heute und früher: höre, habe gehört, mochte'
+    minutes: 8
+    items:
+      - id: habe-gehoert
+        type: multipleChoice
+        prompt: Gestern ___ ich ein Lied von Adele gehört.
+        options:
+          - { text: habe, correct: true }
+          - { text: bin, feedback: '*hören* bildet das Perfekt mit *haben*: *Ich habe … gehört.*' }
+          - {
+              text: höre,
+              feedback: '*höre* ist Präsens. Im Perfekt steht *haben* an Position 2 und *gehört* am Ende.',
+            }
+      - id: frueher-jetzt
+        type: fillBlank
+        prompt: Ergänze das Verb *hören*.
+        text: Früher habe ich Kinderlieder ___. Jetzt ___ ich Rockmusik.
+        blanks: [[gehört, gehoert], [höre, hoere]]
+        wordBank: [gehört, höre, hört]
+      - id: warst-du
+        type: multipleChoice
+        prompt: ___ du schon einmal auf einem Konzert?
+        options:
+          - { text: Warst, correct: true }
+          - {
+              text: Hast,
+              feedback: '*sein* bildet das Perfekt mit *sein*: *Bist du … gewesen?* Oder kurz: *Warst du …?*',
+            }
+          - {
+              text: Bist,
+              feedback: '*Bist du* braucht am Ende *gewesen*. Ohne *gewesen* sagen wir *Warst du …?*',
+            }
+      - id: hast-gewesen
+        type: trueFalse
+        prompt: 'Der Satz *Hast du schon einmal auf einem Konzert gewesen?* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Richtig ist: *Bist du schon einmal auf einem Konzert gewesen?*'
+          incorrect: '*sein* bildet das Perfekt mit *sein*: *Bist du … gewesen?* (oder *Warst du …?*).'
+      - id: partizip
+        type: matching
+        prompt: Welches Partizip II passt?
+        pairs:
+          - [hören, gehört]
+          - [singen, gesungen]
+          - [tanzen, getanzt]
+          - [lieben, geliebt]
+          - [mögen, gemocht]
+      - id: als-kind-mochte
+        type: multipleChoice
+        prompt: Als Kind ___ ich Shakira.
+        options:
+          - { text: mochte, correct: true }
+          - {
+              text: mag,
+              feedback: '*als Kind* ist Vergangenheit. Bei *mögen* sagen wir meistens *mochte*.',
+            }
+          - {
+              text: möchte,
+              feedback: '*möchte* heißt „ich will gern“ (jetzt). Die Vergangenheit von *mögen* ist *mochte*.',
+            }
+      - id: am-abend
+        type: fillBlank
+        prompt: Ergänze *hören* im Präsens.
+        text: Am Abend ___ ich Musik.
+        blanks: [[höre, hoere]]
+      - id: ordne-frueher
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Früher habe ich Kinderlieder gehört.
+
+  - slug: musik-vergleiche
+    title: 'Vergleiche: älter als, das beste Lied'
+    minutes: 8
+    items:
+      - id: aelter
+        type: multipleChoice
+        prompt: Adele ist ___ als Billie Eilish.
+        options:
+          - { text: älter, correct: true }
+          - { text: alter, feedback: '*alt* bekommt im Komparativ einen Umlaut: *älter*.' }
+          - {
+              text: mehr alt,
+              feedback: 'Im Deutschen sagen wir nicht *mehr alt*. Wir hängen *-er* an: *älter*.',
+            }
+      - id: beliebter
+        type: multipleChoice
+        prompt: Pop ist ___ Jazz.
+        options:
+          - { text: beliebter als, correct: true }
+          - {
+              text: mehr beliebt als,
+              feedback: 'Auch lange Adjektive bekommen *-er*: *beliebter, populärer, interessanter*.',
+            }
+          - { text: beliebter wie, feedback: 'Nach dem Komparativ steht *als*: *beliebter als*.' }
+      - id: lange-adjektive
+        type: trueFalse
+        prompt: 'Im Deutschen bekommen auch lange Adjektive *-er*: *populärer, interessanter*.'
+        answer: true
+        feedback:
+          correct: Richtig! Im Deutschen gibt es kein *mehr … als* wie im Englischen.
+          incorrect: 'Doch: Alle Adjektive bekommen *-er*: *populärer als*, *interessanter als*.'
+      - id: lauter
+        type: fillBlank
+        prompt: Schreib den Komparativ von *laut*.
+        text: Rock ist ___ als Pop.
+        blanks: [[lauter]]
+      - id: das-beste
+        type: fillBlank
+        prompt: Schreib den Superlativ von *gut*.
+        text: Das ist das ___ Lied.
+        blanks: [[beste]]
+      - id: komparativ
+        type: matching
+        prompt: Welcher Komparativ passt?
+        pairs:
+          - [gut, besser]
+          - [alt, älter]
+          - [jung, jünger]
+          - [ruhig, ruhiger]
+          - [berühmt, berühmter]
+      - id: beruehmteste
+        type: multipleChoice
+        prompt: Er ist der ___ Sänger.
+        options:
+          - { text: berühmteste, correct: true }
+          - {
+              text: berühmter,
+              feedback: '*berühmter* ist der Komparativ (mit *als*). Für *der … Sänger* brauchen wir den Superlativ: *der berühmteste*.',
+            }
+          - {
+              text: am berühmtesten,
+              feedback: '*am … -sten* steht ohne Nomen. Vor einem Nomen sagen wir *der berühmteste Sänger*.',
+            }
+      - id: ordne-beste
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Das ist das beste Lied.
