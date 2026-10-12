@@ -1,0 +1,844 @@
+# Cycle "Gesundheit", converted from the German level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-stufe-3
+slug: gesundheit
+title: Gesundheit
+goal: Über Gesundheit sprechen, über frühere Gewohnheiten und Zustände und mit Modalverben für Ratschläge.
+position: 6
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Früher und heute" and "Modalverben") are NEW: they
+    were written from the cycle's summary, the activity examples, the corrected
+    homework exercises and the vocabulary. Please check level, wording and every
+    right answer before students see them.
+  - >-
+    Grammar: the short in-class review says "Immer / Oft + Präteritum: repeated
+    actions in the past" (Als Kind spielte ich oft Fußball). That is the English
+    "used to / would" rule and is not right for German: German has no special form
+    for repeated past actions. In speech we use the Perfekt (Als Kind habe ich oft
+    Fußball gespielt); the Präteritum is used in writing and stories, and in speech
+    with sein, haben and modal verbs (war, hatte, konnte, musste). Rewritten in the
+    class review, the German rules and the Hebrew summary (Präteritum paragraph).
+  - >-
+    Grammar, Modalverben: the notebook lists "könnten" as a modal verb next to
+    sollen / müssen / können / dürfen, and glosses "sollen" as advice while all
+    examples use "solltest / sollte". The rules now say that *sollte* and *könnte*
+    are Konjunktiv II forms of sollen / können, used for advice and polite
+    suggestions, and that *nicht dürfen* = forbidden but *nicht müssen* = not
+    necessary. A conjugation table (muss, kann, darf, soll, sollte, könnte) and a
+    Präteritum table (war, hatte, konnte, musste, spielte, machte) were added. Please
+    confirm.
+  - >-
+    Corrections: Activity 2 "Was darf nicht erlaubt sein?" → "Was darf man dort
+    nicht machen?"; Activity 1 "Gesundheit (Gesundheit) und Fitness (körperliche
+    Fitness)" → "Gesundheit und Fitness (körperliche Fitness)"; Activity 3 heading
+    "Ich fühle mich krank, aber niemand weiß warum!" → "…, niemand weiß, warum!"
+    (comma) and a stray "ð·" removed; English heading "Activity 4: Health in
+    History" → "Aktivität 4: Gesundheit in der Geschichte"; summary "Du hast die
+    Pflicht zu..." → "Du hast die Pflicht, … zu …" (comma + zu-infinitive).
+  - >-
+    Activity 4 asks students to look at the painting "The Doctor" by Luke Fildes,
+    but the image is not in the source export (empty lines only) and there is no
+    link. A teacher note asks the teacher to show it from their own material.
+  - >-
+    Homework answer key (only in teacher notes): Übung 1 is correct, but several
+    blanks accept more than one modal verb (1. solltest / musst, 2. solltest /
+    darfst, 3. muss / sollte, 8. sollten / müssen); the note says so. Übung 2–5 keys
+    are correct.
+  - >-
+    The warm-up note "(Der Lehrer kann 8 Fragen auswählen …)" is odd because there
+    are exactly 8 questions; it is now a teacher note ("choose the questions").
+    Frames were added for warm-up questions 4, 6, 7 and 8, which had none. The intro
+    round got an example (*Ich heiße Noa …*).
+  - >-
+    Homework: the four Mori messages are in Hebrew in the notebook and are kept in
+    Hebrew (Mori understands Hebrew; the student answers in German); only the
+    escaped "\!" was fixed. The classic homework (Übung 1–5) is kept as practice;
+    Übung 3 and 5 are writing boxes.
+  - >-
+    Vocabulary glosses changed (please confirm): "die Achtsamkeit – מודעות קשובה" →
+    "קשיבות / מיינדפולנס"; "die Angst – חרדה" → "פחד / חרדה". The "Vokabeln für
+    Quizlet – Gesundheit (B1+)" heading and the numbers were dropped.
+  - >-
+    Left out: "Datum / Teilnehmer", the "Antwort von Schüler/in 1/2/3" lines and the
+    empty lines of the missing painting. The source gives one time only (Activity 2:
+    15 minutes of group work); it is in a step and a teacher note, no other minutes
+    are set.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: gesundheit-unterricht
+    title: 'Unterricht: Gesundheit'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Gesundheit
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Vergangene Gewohnheiten und Zustände
+            description: '*Früher habe ich jeden Tag Cola getrunken. Früher war ich sportlicher.*'
+          - name: Modalverben
+            description: '*sollte, müssen, können, dürfen, könnte*: *Du solltest mehr schlafen. Man darf hier nicht rauchen.*'
+      - id: quizlet
+        type: externalLink
+        label: Gesundheit auf Quizlet
+        url: https://quizlet.com/br/1185984561/gesundheit-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich heiße ___. Ich denke, dass die Menschen genauso gesund sein sollten wie ich. / Ich denke, dass die Menschen versuchen sollten, gesünder zu sein als ich.
+        example: Ich heiße Noa. Ich denke, dass die Menschen versuchen sollten, gesünder zu sein als ich, weil ich zu viel Kaffee trinke.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup-hint
+        type: callout
+        tone: info
+        text: Antworte immer in **vollständigen Sätzen**.
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Wie definierst du Gesundheit? Gib Beispiele.
+            frame: Meiner Meinung nach ist Gesundheit ___.
+          - question: Welche ungesunde Gewohnheit hattest du früher?
+            frame: Früher habe ich ___, aber heute mache ich das nicht mehr, weil ___.
+          - question: Welches Gesundheitsthema sollte in der Schule unterrichtet werden?
+            frame: Ein Gesundheitsthema, das in der Schule unterrichtet werden sollte, ist ___, weil ___.
+          - question: Welche gesunde Gewohnheit könntest du in Zukunft übernehmen?
+            frame: In Zukunft könnte ich ___.
+          - question: Was hilft dir, wenn du gestresst bist?
+            frame: ___ könnte mir helfen, mich zu entspannen, weil ___.
+          - question: Welche schlechten Gewohnheiten sollten Menschen vermeiden, um länger zu leben?
+            frame: Menschen sollten ___ vermeiden, weil ___.
+          - question: Wie hat sich dein Lebensstil verändert, seit du erwachsen bist?
+            frame: Früher ___, heute ___.
+          - question: Was könntest du tun, um dein psychisches Wohlbefinden zu verbessern?
+            frame: Ich könnte ___.
+      - id: grammar-review
+        type: callout
+        tone: info
+        title: Kurze Grammatik-Wiederholung
+        text: |-
+          **Früher + Perfekt:** vergangene Gewohnheiten: *Früher habe ich jeden Tag Cola getrunken.*
+          **sein, haben, Modalverben im Präteritum:** vergangene Zustände: *Früher war ich sportlicher. Ich hatte mehr Freizeit.*
+          **Wiederholte Handlungen:** Im Gespräch meistens Perfekt (*Als Kind habe ich oft Fußball gespielt.*), beim Erzählen und Schreiben auch Präteritum (*Als Kind spielte ich oft Fußball.*).
+          **Modalverben:** *müssen, können, dürfen, sollen* und für Ratschläge *sollte, könnte*.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Meine Fitness früher und heute'
+        skills: [Vergangene Gewohnheiten und Zustände]
+        steps:
+          - 'Beginnt mit einer kurzen Diskussion über den Unterschied zwischen **Gesundheit** und **Fitness** (körperliche Fitness).'
+          - Denkt an eure Fitnessgewohnheiten vor einigen Jahren.
+          - 'Sprecht darüber, was ihr früher gemacht habt, wie ihr euch dabei gefühlt habt und was heute anders ist. Benutzt die Beispielfragen unten.'
+        example: '*Früher habe ich jeden Tag Fußball gespielt und hatte viel Energie. Heute gehe ich nur zweimal pro Woche joggen.*'
+      - id: act1-questions
+        type: discussionQuestions
+        title: Beispielfragen
+        items:
+          - question: Hattest du damals Fitnessziele?
+            frame: Damals hatte ich ___.
+          - question: Wie war dein Energielevel im Vergleich zu heute?
+            frame: Früher war mein Energielevel ___, heute ___.
+          - question: Hast du früher anders gegessen?
+            frame: Früher habe ich ___ gegessen.
+          - question: Wie hat sich dein Alltag verändert?
+            frame: Früher ___, heute ___.
+          - question: Welche gesunden Gewohnheiten hast du heute?
+            frame: Heute ___.
+          - question: Was vermisst du von früher?
+            frame: Ich vermisse ___.
+          - question: Warum hast du aufgehört?
+            frame: Ich habe aufgehört, weil ___.
+          - question: Wie hast du dich dabei gefühlt?
+            frame: Ich habe mich ___ gefühlt.
+          - question: Würdest du das gerne wieder machen?
+            frame: Ja, ich würde gerne wieder ___. / Nein, ___.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Achtsamkeit (Mindfulness)'
+        skills: [Modalverben]
+        steps:
+          - 'Beginnt mit einer Diskussion: *Was bedeutet Achtsamkeit? Warum ist sie heute so beliebt?*'
+          - '**Gruppenarbeit:** Gruppe A plant ein **Achtsamkeits-Retreat**. Gruppe B entwickelt eine **Achtsamkeits-App**. Diskutiert die Fragen unten und benutzt Modalverben.'
+          - Nach 15 Minuten präsentiert jede Gruppe ihre Ideen.
+          - Die andere Gruppe stellt 2–3 Nachfragen.
+        example: '*Bei unserem Retreat sollte es jeden Morgen Yoga geben. Man darf dort kein Handy benutzen.*'
+      - id: act2-questions
+        type: discussionQuestions
+        title: Fragen für die Gruppen
+        items:
+          - question: Welche Menschen könnten euren Service nutzen?
+            frame: ___ könnten unseren Service nutzen.
+          - question: Welche Aktivitäten sollte es geben?
+            frame: Es sollte ___ geben.
+          - question: Was darf man dort nicht machen?
+            frame: Man darf dort nicht ___.
+          - question: Was könnte euren Service besonders machen?
+            frame: ___ könnte unseren Service besonders machen.
+          - question: Welche Regeln müssen die Teilnehmer befolgen?
+            frame: Die Teilnehmer müssen ___.
+          - question: Welche Funktionen können personalisiert werden?
+            frame: ___ können personalisiert werden.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Gesundheits- und Wellnessforum'
+        skills: [Modalverben]
+        steps:
+          - Ihr seid Mitglieder eines Online-Gesundheitsforums. Ein neues Mitglied schreibt den Beitrag unten.
+          - 'Schreibt 4–5 Kommentare mit Ratschlägen. Verwendet *sollen (sollte), könnten, müssten, dürfen* und *vielleicht*.'
+          - Denkt daran, freundlich und respektvoll zu sein.
+        example: '*Vielleicht solltest du jeden Tag ein bisschen spazieren gehen. Du könntest auch weniger Kaffee trinken.*'
+      - id: act3-post
+        type: callout
+        tone: info
+        title: 'Hilfe! Ich fühle mich krank, aber niemand weiß, warum!'
+        text: |-
+          Hallo zusammen,
+          seit einigen Monaten fühle ich mich nicht gut. Ich bin ständig müde, selbst nach neun Stunden Schlaf. Außerdem habe ich oft Kopfschmerzen, Schwindel und manchmal zittern meine Hände ohne Grund.
+          Ich habe Bluttests, Herzuntersuchungen und sogar einen Gehirnscan gemacht. Alles war normal. Mein Arzt meint, es sei wahrscheinlich Stress.
+          Ich arbeite den ganzen Tag von zu Hause aus und gehe kaum nach draußen. Früher bin ich regelmäßig joggen gegangen, aber damit habe ich aufgehört. Außerdem trinke ich sehr viel Kaffee und lasse oft Mahlzeiten aus.
+          Eine Freundin empfiehlt Yoga, meine Mutter empfiehlt Suppe und mein Nachbar hat mir Kräutertropfen gegeben, die schrecklich schmecken.
+          Was sollte ich tun?
+          *– Müde und verwirrt in Tel Aviv*
+      - id: act3-comments
+        type: discussionQuestions
+        title: Eure Kommentare
+        items:
+          - question: Kommentar 1
+            frame: Du solltest ___.
+          - question: Kommentar 2
+            frame: Vielleicht könntest du ___.
+          - question: Kommentar 3
+            frame: Du müsstest ___.
+          - question: Kommentar 4
+            frame: Du darfst nicht ___.
+          - question: Kommentar 5
+            frame: An deiner Stelle würde ich ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Gesundheit in der Geschichte'
+        skills: [Vergangene Gewohnheiten und Zustände]
+        steps:
+          - Betrachtet das Gemälde **The Doctor** von Luke Fildes und diskutiert die Fragen unten.
+          - '**Debatte:** *„Die Menschen waren früher gesünder als heute.“* Gruppe A stimmt zu, Gruppe B lehnt ab.'
+          - 'Jede Gruppe bereitet vier Argumente vor: 1. eine vergangene Gewohnheit, 2. eine wiederholte Handlung, 3. einen vergangenen Zustand, 4. einen Vergleich mit heute.'
+          - 'Reagiert auf die Argumente der anderen Gruppe: *„Das ist ein guter Punkt, aber …“*'
+        example: |-
+          *Früher suchten die Menschen ihre Symptome nicht im Internet und machten sich deshalb weniger Sorgen.*
+          *Früher gab es in Krankenhäusern hauptsächlich Ärzte. Heute arbeiten dort auch Pflegekräfte, Psychologen, Physiotherapeuten und Ergotherapeuten.*
+      - id: act4-questions
+        type: discussionQuestions
+        title: Diskutiert
+        items:
+          - question: Was seht ihr auf dem Bild?
+            frame: Auf dem Bild sehe ich ___.
+          - question: Wie haben die Menschen damals auf ihre Gesundheit geachtet?
+            frame: Damals haben die Menschen ___.
+          - question: Was machte der Arzt anders als heute?
+            frame: Der Arzt ___, heute ___.
+          - question: Was ist ähnlich geblieben?
+            frame: Ähnlich geblieben ist, dass ___.
+      - id: act4-arguments
+        type: discussionQuestions
+        title: Unsere Argumente
+        items:
+          - question: Vergangene Gewohnheit
+            frame: Früher haben die Menschen ___.
+          - question: Wiederholte Handlung
+            frame: Die Menschen sind oft / jeden Tag ___.
+          - question: Vergangener Zustand
+            frame: Früher war / hatte ___.
+          - question: Vergleich mit heute
+            frame: Früher ___, heute ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **vergangene Gewohnheiten und Zustände**
+          (Aufwärmfragen 2 und 7, Aktivitäten 1 und 4) und **Modalverben**
+          (Aufwärmfragen 3–6 und 8, Aktivitäten 2 und 3). Niveau B1. Das Heft gibt nur
+          für Aktivität 2 eine Zeit an (15 Minuten Gruppenarbeit).
+      - id: n-intro
+        anchor: intro
+        text: Gib zuerst dein eigenes Beispiel. Die Schüler wählen eine der zwei Varianten.
+      - id: n-warmup
+        anchor: warmup
+        text: Wähle die Fragen aus, die zu deiner Gruppe passen. Die Schüler antworten immer in vollständigen Sätzen.
+      - id: n-grammar
+        anchor: grammar-review
+        text: >-
+          Im Heft steht hier „Immer / Oft + Präteritum = wiederholte Handlungen“. Das
+          ist eine Regel aus dem Englischen (*used to*). Im Deutschen gibt es keine
+          eigene Form dafür: Im Gespräch benutzen wir das Perfekt, das Präteritum vor
+          allem bei *sein, haben* und Modalverben und beim Erzählen.
+      - id: n-act2
+        anchor: act2
+        minutes: 15
+        text: 15 Minuten Gruppenarbeit, danach Präsentationen und 2–3 Nachfragen der anderen Gruppe.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Lies den Beitrag mit der Klasse und kläre neue Wörter (*Schwindel, zittern,
+          Kräutertropfen, Mahlzeiten auslassen*). *es sei* ist Konjunktiv I (indirekte
+          Rede); er muss hier nicht geübt werden.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Das Gemälde **The Doctor** von Luke Fildes (1891) ist im Heft nicht enthalten.
+          Zeig es aus deinem eigenen Material. Bei der Debatte ist das Präteritum
+          (*suchten, machten, gab es*) beim Erzählen genauso richtig wie das Perfekt.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: gesundheit-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-modal
+        type: ruleSummary
+        skill: Modalverben
+        rules:
+          - text: 'Mit **Modalverben** drücken wir **Rat, Möglichkeit, Pflicht, Erlaubnis** und **Fähigkeit** aus.'
+          - text: '**Wortstellung:** Das Modalverb steht auf **Position 2**, das zweite Verb steht **im Infinitiv am Satzende**.'
+            examples: [Ich muss mehr Wasser trinken., Sie sollte früher schlafen gehen.]
+          - text: '**Rat:** *sollte* (Konjunktiv II von *sollen*): *Du solltest …, Vielleicht solltest du …* Auch: *An deiner Stelle würde ich …*'
+            examples: [Du solltest mehr schlafen., Vielleicht solltest du mit einem Arzt sprechen.]
+          - text: '**Höflicher Vorschlag / Möglichkeit:** *könnte* (Konjunktiv II von *können*).'
+            examples: [Du könntest Yoga ausprobieren., Ich könnte mit Yoga anfangen.]
+          - text: '**Pflicht:** *müssen*.'
+            examples: [Du musst zum Arzt gehen., Ich muss weniger Kaffee trinken.]
+          - text: '**Erlaubnis:** *dürfen*. **Verbot:** *nicht dürfen*. Achtung: *nicht müssen* bedeutet „nicht nötig“, nicht „verboten“.'
+            examples:
+              [
+                Man darf hier nicht rauchen.,
+                'Du musst heute nicht trainieren. (Es ist nicht nötig.)',
+              ]
+          - text: '**Fähigkeit / Möglichkeit:** *können*.'
+            examples: [Ich kann jeden Tag Sport machen., Stress kann die Gesundheit beeinflussen.]
+      - id: modal-table
+        type: table
+        caption: Modalverben
+        header: [Person, müssen, können, dürfen, sollen, sollte (Rat), könnte (Vorschlag)]
+        rows:
+          - [ich, muss, kann, darf, soll, sollte, könnte]
+          - [du, musst, kannst, darfst, sollst, solltest, könntest]
+          - [er / sie / es / man, muss, kann, darf, soll, sollte, könnte]
+          - [wir, müssen, können, dürfen, sollen, sollten, könnten]
+          - [ihr, müsst, könnt, dürft, sollt, solltet, könntet]
+          - [sie / Sie, müssen, können, dürfen, sollen, sollten, könnten]
+      - id: modal-meaning
+        type: table
+        caption: Die wichtigen Verben der Stunde
+        header: [Deutsch, Hebräisch]
+        rows:
+          - [sollen / sollte, כדאי / צריך]
+          - [müssen, חייב]
+          - [können, יכול]
+          - [dürfen, מותר]
+          - [könnte(n), יכולים / עשויים (הצעה מנומסת)]
+      - id: modal-examples
+        type: examples
+        items:
+          - { text: Du solltest mehr schlafen., gloss: כדאי לך לישון יותר. }
+          - { text: Du musst zum Arzt gehen., gloss: אתה חייב ללכת לרופא. }
+          - { text: Du könntest Yoga ausprobieren., gloss: אתה יכול לנסות יוגה. }
+          - { text: Man darf hier nicht rauchen., gloss: אסור לעשן כאן. }
+          - { text: Ich kann jeden Tag Sport machen., gloss: אני יכול לעשות ספורט כל יום. }
+          - { text: Ich muss mehr Wasser trinken., gloss: אני חייב לשתות יותר מים. }
+          - { text: Sie sollte früher schlafen gehen., gloss: היא צריכה ללכת לישון מוקדם יותר. }
+      - id: modal-he
+        type: text
+        lang: he
+        text: |-
+          פעלי עזר מודאליים (Modalverben) מבטאים עצה, אפשרות, חובה, רשות ויכולת.
+          מבנה המשפט: הפועל המודאלי נמצא במקום השני, והפועל השני מופיע בסוף המשפט באינפיניטיב.
+          sollte ו־könnte הן צורות Konjunktiv II של sollen ו־können: משתמשים בהן לעצה (Du solltest…) ולהצעה מנומסת (Du könntest…).
+          שימו לב: nicht dürfen = אסור, אבל nicht müssen = לא חייבים (לא צריך).
+      - id: rules-frueher
+        type: ruleSummary
+        skill: Vergangene Gewohnheiten und Zustände
+        rules:
+          - text: '**Früher …** benutzen wir für eine Gewohnheit oder einen Zustand in der Vergangenheit, die es heute nicht mehr gibt. Nach *früher* auf Position 1 kommt das Verb.'
+            examples: [Früher habe ich viel Fast Food gegessen., Früher war ich sportlicher.]
+          - text: '**Gewohnheiten und Handlungen:** Im Gespräch benutzen wir meistens das **Perfekt**. Es gibt keine eigene Form für wiederholte Handlungen.'
+            examples:
+              [
+                Als Kind habe ich oft Fußball gespielt.,
+                Ich habe gestern trainiert.,
+                Ich habe einen Arzt besucht.,
+              ]
+          - text: '**Zustände:** Bei *sein*, *haben* und den Modalverben benutzen wir auch im Gespräch das **Präteritum**: *war, hatte, konnte, musste*.'
+            examples: [Ich hatte mehr Freizeit., Früher war ich oft gestresst.]
+          - text: 'Das **Präteritum** der anderen Verben benutzen wir vor allem beim **Erzählen** und **Schreiben**.'
+            examples: [Als Kind spielte ich Fußball.]
+          - text: '**Früher … heute …:** Für heute benutzen wir das **Präsens**.'
+            examples:
+              - Früher habe ich nie Sport gemacht, heute trainiere ich dreimal pro Woche.
+              - Früher war ich oft gestresst, heute achte ich mehr auf mein Wohlbefinden.
+      - id: praeteritum-table
+        type: table
+        caption: Wichtige Formen im Präteritum
+        header: [Infinitiv, ich / er / sie, wir / sie / Sie]
+        rows:
+          - [sein, war, waren]
+          - [haben, hatte, hatten]
+          - [können, konnte, konnten]
+          - [müssen, musste, mussten]
+          - [spielen, spielte, spielten]
+          - [machen, machte, machten]
+      - id: frueher-examples
+        type: examples
+        items:
+          - { text: Früher habe ich viel Fast Food gegessen., gloss: פעם אכלתי הרבה אוכל מהיר. }
+          - { text: Früher war ich sportlicher., gloss: פעם הייתי יותר ספורטיבי. }
+          - { text: Als Kind spielte ich Fußball., gloss: כשהייתי ילד שיחקתי כדורגל. }
+          - { text: Ich hatte mehr Freizeit., gloss: היה לי יותר זמן פנוי. }
+          - { text: Ich habe gestern trainiert., gloss: התאמנתי אתמול. }
+          - { text: Ich habe einen Arzt besucht., gloss: ביקרתי אצל רופא. }
+          - {
+              text: 'Früher habe ich nie Sport gemacht, heute trainiere ich dreimal pro Woche.',
+              gloss: 'פעם לא עשיתי ספורט בכלל, היום אני מתאמן שלוש פעמים בשבוע.',
+            }
+          - {
+              text: 'Früher war ich oft gestresst, heute achte ich mehr auf mein Wohlbefinden.',
+              gloss: 'פעם הייתי לחוץ לעיתים קרובות, היום אני מקדיש יותר תשומת לב לרווחה האישית שלי.',
+            }
+      - id: frueher-he
+        type: text
+        lang: he
+        text: |-
+          בשיעור למדנו כיצד לדבר על העבר באמצעות כמה מבנים שונים.
+          Früher…: כאשר רוצים לדבר על הרגל או מצב שהיה בעבר ואינו קיים היום.
+          Perfekt: הזמן הנפוץ ביותר בדיבור יומיומי בגרמנית, גם להרגלים ולפעולות שחזרו על עצמן (Als Kind habe ich oft Fußball gespielt).
+          Präteritum: משמש בעיקר לסיפור סיפורים ובכתיבה. עם sein, haben ופעלים מודאליים משתמשים בו גם בדיבור (war, hatte, konnte, musste).
+          השוואה בין עבר להווה: Früher… heute… (את ההווה אומרים ב־Präsens).
+      - id: structures-table
+        type: table
+        caption: Nützliche Strukturen zum Thema Gesundheit
+        header: [Funktion, Deutsch, Hebräisch]
+        rows:
+          - [Rat, Du solltest …, כדאי לך…]
+          - [Rat, An deiner Stelle würde ich …, במקומך הייתי…]
+          - [Möglichkeit, Du könntest …, אתה יכול…]
+          - [Möglichkeit, Vielleicht solltest du …, אולי כדאי לך…]
+          - [Pflicht, Du musst …, אתה חייב…]
+          - [Pflicht, 'Du hast die Pflicht, … zu …', יש לך חובה ל…]
+      - id: key-sentences
+        type: examples
+        items:
+          - { text: Ich sollte mehr schlafen., gloss: אני צריך לישון יותר. }
+          - { text: Ich muss weniger Kaffee trinken., gloss: אני חייב לשתות פחות קפה. }
+          - { text: Ich könnte mit Yoga anfangen., gloss: אני יכול להתחיל יוגה. }
+          - { text: Früher habe ich jeden Tag Sport gemacht., gloss: פעם עשיתי ספורט כל יום. }
+          - {
+              text: Heute achte ich mehr auf meine Gesundheit.,
+              gloss: היום אני מקפיד יותר על הבריאות שלי.,
+            }
+          - { text: Stress kann die Gesundheit beeinflussen., gloss: לחץ יכול להשפיע על הבריאות. }
+          - {
+              text: Ein gesunder Lebensstil ist wichtig für das Wohlbefinden.,
+              gloss: אורח חיים בריא חשוב לרווחה האישית.,
+            }
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole beide Fertigkeiten und bitte jeden Schüler um einen Satz *Früher …, heute …* und einen Ratschlag mit *Du solltest …*
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: gesundheit-hausaufgaben
+    title: Hausaufgaben
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        lang: he
+        text: פתחו את הצ׳אט עם מורי, העתיקו הודעה ושלחו אותה. ענו על השאלות של מורי בגרמנית.
+      - id: mori-lebensstil
+        type: aiTutorPrompt
+        lang: he
+        title: פעילות 1 – אורח החיים שלי
+        message: היי מורי! אני לומד גרמנית ברמת B1. בבקשה שאל אותי שאלות על הבריאות שלי, הרגלי השינה שלי, התזונה שלי, הפעילות הגופנית שלי ורמת הלחץ שלי. תגרום לי להשתמש בפעלי העזר sollen, müssen, können, dürfen ו־könnten. תקן את כל הטעויות שלי מיד, תסביר אותן בקצרה, ותשאל שאלות המשך כדי שאענה במשפטים מלאים בגרמנית.
+      - id: mori-frueher
+        type: aiTutorPrompt
+        lang: he
+        title: פעילות 2 – פעם והיום
+        message: היי מורי! בבקשה שאל אותי שאלות על ההרגלים שלי בעבר ובהווה. תעודד אותי להשתמש במילים früher, heute ו־damals. תקן את כל הטעויות שלי ותעזור לי להשוות בין החיים שלי בעבר לחיים שלי היום באמצעות משפטים מלאים בגרמנית.
+      - id: mori-berater
+        type: aiTutorPrompt
+        lang: he
+        title: פעילות 3 – יועץ בריאות
+        message: היי מורי! תן לי מצבים ובעיות בריאות שונות, ואני אתן עצות בגרמנית. תוודא שאני משתמש בפעלי עזר כמו sollen, müssen, können, dürfen ו־könnten. תקן את הטעויות שלי ותעזור לי לנסח תשובות טבעיות יותר.
+      - id: mori-arzt
+        type: aiTutorPrompt
+        lang: he
+        title: פעילות 4 – ביקור אצל רופא
+        message: היי מורי! בוא נעשה משחק תפקידים. אתה רופא ואני מטופל. שאל אותי שאלות על סימפטומים, הרגלים ואורח חיים. בסוף כל תשובה תקן את הטעויות שלי ותשאל שאלת המשך. תעזור לי להשתמש נכון בפעלי עזר ובזמני עבר.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          **Modalverb** auf Position 2, der **Infinitiv am Satzende**: *Du solltest mehr Wasser trinken.*
+          **Früher … heute …:** früher im Perfekt (oder *war / hatte*), heute im Präsens.
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: classic-title
+        type: heading
+        level: 2
+        text: Klassische Hausaufgaben
+      - id: ue1-title
+        type: heading
+        level: 3
+        text: 'Übung 1: Modalverben'
+      - id: ue1-he
+        type: text
+        lang: he
+        text: 'השלימו עם פועל מודאלי מתאים: sollen, müssen, können, dürfen, könnten.'
+      - id: ue1
+        type: discussionQuestions
+        items:
+          - question: Du ___ mehr Wasser trinken.
+          - question: Du ___ nicht so viel Kaffee trinken.
+          - question: Ich bin müde. Ich ___ heute früher schlafen gehen.
+          - question: Wenn du Rückenschmerzen hast, ___ du einen Physiotherapeuten besuchen.
+          - question: Patienten ___ die Medikamente regelmäßig nehmen.
+          - question: Man ___ im Krankenhaus nicht rauchen.
+          - question: Du ___ Yoga ausprobieren.
+          - question: Wir ___ mehr Sport machen.
+      - id: ue2-title
+        type: heading
+        level: 3
+        text: 'Übung 2: Übersetzung'
+      - id: ue2
+        type: discussionQuestions
+        lang: he
+        title: תרגמו לגרמנית
+        items:
+          - question: כדאי לך לעשות יותר ספורט.
+          - question: אני חייב לישון יותר.
+          - question: אנחנו יכולים ללכת לטייל.
+          - question: אסור לעשן כאן.
+          - question: אולי כדאי לך לדבר עם רופא.
+          - question: אני יכול לעזור לך.
+      - id: ue3-title
+        type: heading
+        level: 3
+        text: 'Übung 3: Früher und heute'
+      - id: ue3-he
+        type: text
+        lang: he
+        text: כתבו 5 משפטים על עצמכם.
+      - id: ue3-example
+        type: examples
+        items:
+          - text: Früher habe ich viel Cola getrunken, heute trinke ich mehr Wasser.
+      - id: ue3
+        type: discussionQuestions
+        items:
+          - question: '1.'
+            frame: Früher ___, heute ___.
+          - question: '2.'
+            frame: Früher ___, heute ___.
+          - question: '3.'
+            frame: Früher ___, heute ___.
+          - question: '4.'
+            frame: Früher ___, heute ___.
+          - question: '5.'
+            frame: Früher ___, heute ___.
+      - id: ue4-title
+        type: heading
+        level: 3
+        text: 'Übung 4: Gesundheit und Lebensstil'
+      - id: ue4-he
+        type: text
+        lang: he
+        text: ענו במשפטים מלאים.
+      - id: ue4
+        type: discussionQuestions
+        items:
+          - question: Welche ungesunde Gewohnheit hattest du früher?
+          - question: Was machst du heute für deine Gesundheit?
+          - question: Was solltest du öfter machen?
+          - question: Was musst du verbessern?
+          - question: Was könntest du diese Woche ausprobieren?
+      - id: ue5-title
+        type: heading
+        level: 3
+        text: 'Übung 5: Schreiben'
+      - id: ue5-he
+        type: text
+        lang: he
+        text: |-
+          כתבו פסקה של 80–100 מילים: „Mein gesunder Lebensstil“.
+          התייחסו ל: מה אתם עושים כדי להיות בריאים, מה עשיתם בעבר, מה תרצו לשפר בעתיד ועצה אחת שאתם נותנים לאחרים.
+          נסו להשתמש לפחות ב־2 פעלים מודאליים וב־2 משפטים על העבר.
+      - id: ue5
+        type: reflection
+        prompt: Mein gesunder Lebensstil
+    teacherNotes:
+      - id: n-mori
+        anchor: mori-lebensstil
+        text: Die Mori-Nachrichten sind wie im Heft auf Hebräisch. Die Schüler antworten Mori auf Deutsch.
+      - id: n-key1
+        anchor: ue1
+        text: >-
+          Lösungen Übung 1 (Heft): 1. solltest 2. solltest 3. muss 4. solltest 5.
+          müssen 6. darf 7. könntest 8. sollten. Auch richtig: 1. musst, 2. darfst
+          (Verbot), 3. sollte, 7. kannst, 8. müssen. Die Schüler müssen das Verb
+          konjugieren (sollen → du solltest).
+      - id: n-key2
+        anchor: ue2
+        text: >-
+          Lösungen Übung 2: 1. Du solltest mehr Sport machen. 2. Ich muss mehr
+          schlafen. 3. Wir können spazieren gehen. (auch: wandern gehen) 4. Man darf
+          hier nicht rauchen. 5. Vielleicht solltest du mit einem Arzt sprechen. 6. Ich
+          kann dir helfen.
+      - id: n-key3
+        anchor: ue3
+        text: >-
+          Beispiele Übung 3: 1. Früher habe ich viel Cola getrunken, heute trinke ich
+          mehr Wasser. 2. Früher habe ich wenig Sport gemacht, heute gehe ich zweimal
+          pro Woche joggen. 3. Früher habe ich spät geschlafen, heute gehe ich früher ins
+          Bett. 4. Früher habe ich oft Fast Food gegessen, heute koche ich mehr zu Hause.
+          5. Früher hatte ich viel Stress, heute mache ich manchmal Yoga.
+      - id: n-key4
+        anchor: ue4
+        text: >-
+          Beispielantworten Übung 4: 1. Früher habe ich zu viel Kaffee getrunken. 2.
+          Heute trinke ich mehr Wasser und mache mehr Sport. 3. Ich sollte öfter
+          spazieren gehen. 4. Ich muss meinen Schlaf verbessern. 5. Diese Woche könnte
+          ich Yoga ausprobieren.
+      - id: n-key5
+        anchor: ue5
+        text: >-
+          Beispieltext Übung 5: Mein gesunder Lebensstil ist heute besser als früher.
+          Früher habe ich viel Fast Food gegessen und wenig Sport gemacht. Außerdem habe
+          ich oft sehr spät geschlafen. Heute trinke ich mehr Wasser, koche öfter zu Hause
+          und gehe manchmal spazieren. Ich sollte mehr Sport machen und ich muss besser
+          auf meinen Schlaf achten. In Zukunft möchte ich regelmäßiger trainieren und
+          weniger Kaffee trinken. Meiner Meinung nach sollte man kleine Veränderungen
+          machen. Mein Tipp ist: Du solltest jeden Tag etwas für deine Gesundheit tun.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: gesundheit-uebung
+    book: workbook
+    title: 'Übung: Gesundheit'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-frueher
+        type: activity
+        activity: gesundheit-frueher
+      - id: ex-modalverben
+        type: activity
+        activity: gesundheit-modalverben
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: gesundheit-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter rund um Gesundheit
+        glossLang: he
+        link: https://quizlet.com/br/1185984561/gesundheit-flash-cards/
+        items: &gesundheit-words
+          - { term: das Wohlbefinden, gloss: רווחה אישית }
+          - { term: die Achtsamkeit, gloss: קשיבות / מיינדפולנס }
+          - { term: die Entschlossenheit, gloss: נחישות }
+          - { term: die Ausdauer, gloss: סיבולת }
+          - { term: die Genesung, gloss: החלמה }
+          - { term: die Rehabilitation, gloss: שיקום }
+          - { term: die Behandlung, gloss: טיפול }
+          - { term: die Therapie, gloss: טיפול (רגשי / פיזי) }
+          - { term: die Angst, gloss: פחד / חרדה }
+          - { term: der Stress, gloss: לחץ }
+          - { term: die Ernährung, gloss: תזונה }
+          - { term: die Fitness, gloss: כושר גופני }
+          - { term: der Lebensstil, gloss: אורח חיים }
+          - { term: die Gewohnheit, gloss: הרגל }
+          - { term: die Gesundheit, gloss: בריאות }
+          - { term: die Erkrankung, gloss: מחלה }
+          - { term: die Verletzung, gloss: פציעה }
+          - { term: die Beschwerden, gloss: תלונות רפואיות / תסמינים }
+          - { term: die Erholung, gloss: התאוששות / מנוחה }
+          - { term: die Vorsorge, gloss: מניעה רפואית }
+          - { term: vermeiden, gloss: להימנע }
+          - { term: bewältigen, gloss: להתמודד עם }
+          - { term: sich erholen, gloss: להתאושש }
+          - { term: sich entspannen, gloss: להירגע }
+          - { term: sich bewegen, gloss: להיות פעיל גופנית }
+          - { term: trainieren, gloss: להתאמן }
+          - { term: aufhören mit, gloss: להפסיק }
+          - { term: sich kümmern um, gloss: לדאוג ל… }
+          - { term: sich konzentrieren auf, gloss: להתרכז ב… }
+          - { term: sich anpassen an, gloss: להסתגל ל… }
+          - { term: gesundheitsbewusst, gloss: מודע לבריאות }
+          - { term: ausgeglichen, gloss: מאוזן }
+          - { term: belastend, gloss: מעיק / מכביד }
+          - { term: nachhaltig, gloss: בר־קיימא / לטווח ארוך }
+          - { term: körperlich, gloss: גופני }
+          - { term: geistig, gloss: מנטלי / שכלי }
+
+vocabulary:
+  - slug: gesundheit
+    title: Gesundheit
+    items: *gesundheit-words
+
+activities:
+  - slug: gesundheit-frueher
+    title: Früher und heute
+    minutes: 8
+    items:
+      - id: habe-getrunken
+        type: multipleChoice
+        prompt: Früher ___ ich jeden Tag Cola getrunken.
+        options:
+          - { text: habe, correct: true }
+          - {
+              text: bin,
+              feedback: '*trinken* ist kein Verb der Bewegung: Das Perfekt bilden wir mit *haben*: *Ich habe getrunken.*',
+            }
+          - {
+              text: hatte,
+              feedback: 'Das Perfekt ist *haben* im Präsens + Partizip II: *Früher habe ich … getrunken.*',
+            }
+      - id: war-sportlicher
+        type: fillBlank
+        prompt: Ergänze *sein* im Präteritum.
+        text: Früher ___ ich sportlicher.
+        blanks: [[war]]
+      - id: spielte
+        type: fillBlank
+        prompt: Ergänze *spielen* im Präteritum.
+        text: Als Kind ___ ich oft Fußball.
+        blanks: [[spielte]]
+      - id: war-hatte
+        type: trueFalse
+        prompt: 'Bei *sein* und *haben* benutzen wir für die Vergangenheit meistens *war* und *hatte*, auch im Gespräch.'
+        answer: true
+        feedback:
+          correct: 'Richtig! *Früher war ich sportlicher. Ich hatte mehr Freizeit.*'
+          incorrect: 'Doch: Bei *sein* und *haben* sagen wir meistens *war* und *hatte*: *Früher war ich sportlicher.*'
+      - id: praeteritum-formen
+        type: matching
+        prompt: Welche Präteritumform (ich) passt zu welchem Verb?
+        pairs:
+          - [sein, war]
+          - [haben, hatte]
+          - [können, konnte]
+          - [müssen, musste]
+          - [spielen, spielte]
+      - id: heute-praesens
+        type: multipleChoice
+        prompt: Früher habe ich nie Sport gemacht, heute ___ ich dreimal pro Woche.
+        options:
+          - { text: trainiere, correct: true }
+          - {
+              text: habe trainiert,
+              feedback: 'Mit *heute* sprechen wir über die Gegenwart: Wir benutzen das Präsens: *heute trainiere ich*.',
+            }
+          - {
+              text: trainierte,
+              feedback: '*trainierte* ist Präteritum (Vergangenheit). Für *heute* brauchen wir das Präsens: *trainiere*.',
+            }
+      - id: ordne-frueher
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einem Satz.
+        sentence: Früher habe ich viel Fast Food gegessen.
+      - id: hatte-freizeit
+        type: fillBlank
+        prompt: Ergänze *haben* im Präteritum.
+        text: Früher ___ ich mehr Freizeit.
+        blanks: [[hatte]]
+
+  - slug: gesundheit-modalverben
+    title: Modalverben
+    minutes: 8
+    items:
+      - id: rat-solltest
+        type: multipleChoice
+        prompt: 'Ein Rat: Du ___ mehr schlafen.'
+        options:
+          - { text: solltest, correct: true }
+          - {
+              text: darfst,
+              feedback: '*dürfen* bedeutet Erlaubnis. Für einen Rat benutzen wir *sollte*: *Du solltest mehr schlafen.*',
+            }
+          - {
+              text: kannst,
+              feedback: '*können* bedeutet Fähigkeit oder Möglichkeit. Für einen Rat benutzen wir *sollte*: *Du solltest …*',
+            }
+      - id: verbot-darf
+        type: fillBlank
+        prompt: 'Ein Verbot: Ergänze *dürfen*.'
+        text: Man ___ im Krankenhaus nicht rauchen.
+        blanks: [[darf]]
+      - id: wortstellung
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Ich muss mehr Wasser trinken., correct: true }
+          - {
+              text: Ich muss trinken mehr Wasser.,
+              feedback: 'Das zweite Verb steht im Infinitiv am Satzende: *Ich muss mehr Wasser trinken.*',
+            }
+          - {
+              text: Ich mehr Wasser trinken muss.,
+              feedback: 'Im Hauptsatz steht das Modalverb auf Position 2: *Ich muss mehr Wasser trinken.*',
+            }
+      - id: nicht-muessen
+        type: trueFalse
+        prompt: '*Du musst nicht rauchen.* bedeutet: Rauchen ist verboten.'
+        answer: false
+        feedback:
+          correct: 'Genau! *nicht müssen* = nicht nötig. Ein Verbot ist *nicht dürfen*: *Du darfst nicht rauchen.*'
+          incorrect: '*nicht müssen* bedeutet „nicht nötig“. Ein Verbot ist *nicht dürfen*: *Du darfst nicht rauchen.*'
+      - id: bedeutung
+        type: matching
+        prompt: Was drückt das Modalverb aus?
+        pairs:
+          - [Du solltest mehr schlafen., ein Rat]
+          - [Du musst zum Arzt gehen., eine Pflicht]
+          - [Hier darf man Sport machen., eine Erlaubnis]
+          - [Ich kann schwimmen., eine Fähigkeit]
+          - [Du könntest Yoga ausprobieren., ein höflicher Vorschlag]
+      - id: koenntest
+        type: fillBlank
+        prompt: 'Ein höflicher Vorschlag: Ergänze *können* im Konjunktiv II.'
+        text: Du ___ Yoga ausprobieren.
+        blanks: [[könntest]]
+      - id: ordne-arzt
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einem Ratschlag.
+        sentence: Vielleicht solltest du mit einem Arzt sprechen.
+      - id: pflicht-muessen
+        type: fillBlank
+        prompt: 'Eine Pflicht: Ergänze *müssen*.'
+        text: Patienten ___ die Medikamente regelmäßig nehmen.
+        blanks: [[müssen]]

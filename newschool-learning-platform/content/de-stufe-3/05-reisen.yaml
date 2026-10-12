@@ -1,0 +1,749 @@
+# Cycle "Reisen", converted from the German level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-stufe-3
+slug: reisen
+title: Reisen
+goal: Über Reiseerfahrungen sprechen, mit dem Perfekt und mit Zeitwörtern zum Erzählen.
+position: 5
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Perfekt" and "Erzählen mit Zeitwörtern") are NEW:
+    they were written from the cycle's summary, the activity examples, the corrected
+    homework exercises and the vocabulary. Please check level, wording and every
+    right answer before students see them.
+  - >-
+    Summary, questions in the Perfekt: the notebook gives "Haben / Sein + subjekt +
+    Partizip II" as the question pattern. That is only true for yes/no questions
+    (Hast du schon Japan besucht?); in W-questions the question word comes first and
+    haben / sein is in position 2 (Wohin bist du gereist?). Rewritten in the German
+    rules; "subjekt" → "Subjekt".
+  - >-
+    Summary, storytelling: added (please confirm) the word-order rule that after a
+    time word in position 1 the verb comes next and the subject follows (Zuerst
+    *habe ich* …, not *Zuerst ich habe*), and that *dass* sends the verb to the end
+    (…, dass er weg war). The source lists the time words but not this rule, and all
+    its examples follow it. The sein verbs now show *ist* (ist gegangen, ist gereist,
+    ist angekommen).
+  - >-
+    Corrections: Mori possible question "Hast du schon einmal allein gereist?" →
+    "Bist du schon einmal allein gereist?" (reisen takes sein); intro example "bevor
+    ich Englisch gelernt habe" → "Deutsch" (copied from the English notebook; the
+    frame says Deutsch); warm-up 4 "…, das völlig unnötig gewesen ist?" → "…, das
+    völlig unnötig war?" and its example "obwohl das Wetter heiß gewesen ist" →
+    "obwohl das Wetter heiß war" (with sein, *war* is the natural past form);
+    "Meine beste Reise war nach Japan / nach Italien" (warm-up 2 and homework model
+    answer) → "Meine beste Reise ging nach …". Summary gloss "zum Glück – למזלנו" →
+    "למרבה המזל" (please confirm).
+  - >-
+    Homework answer keys (only in teacher notes): Teil 1 and Teil 4 are correct. Teil
+    2 (put the story in order): the key order is kept; other logical orders may be
+    possible (e.g. "Leider habe ich meinen Zug verpasst" before "Dann habe ich
+    gemerkt …"), so accept them if they make sense.
+  - >-
+    Activity 4 ("Zu viele Touristen?") practises giving opinions (Meinungen
+    ausdrücken), which is in the summary but is not one of the two cycle skills; the
+    activity has no skill tag. Activity 3 combines Perfekt and opinions.
+  - >-
+    Left out: "Datum / Teilnehmer", the "Antwort von Student 1/2/3" lines, stray
+    "**", "###", "***" and the English heading "General information"; the notebook's
+    level line "3 (extreme)" (the course is B1). The source gives no times, so no
+    minutes are set. The intro example name "Shachar" is kept as the teacher's model.
+  - >-
+    Homework: the notebook has one Mori message and two Mori activities with Hebrew
+    instructions but no message of their own. The Hebrew instructions are kept; a
+    German starter message was added for each activity (please check). The classic
+    homework (Teil 1–4) is kept as practice; Teil 2 (ordering) has one writing box.
+  - >-
+    The Quizlet link lost its tracking parameter (?new). The vocabulary table header
+    row was dropped; glosses unchanged.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: reisen-unterricht
+    title: 'Unterricht: Reisen'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Reisen
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Perfekt
+            description: '*haben / sein* + Partizip II: *Ich habe meinen Zug verpasst. Ich bin nach Italien gereist.*'
+          - name: Erzählen mit Zeitwörtern
+            description: '*zuerst, dann, danach, plötzlich, leider, zum Glück, am Ende*: *Zuerst habe ich meinen Koffer gesucht.*'
+      - id: quizlet
+        type: externalLink
+        label: Reisen auf Quizlet
+        url: https://quizlet.com/br/1182936106/reisen-und-reiseerfahrungen-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Einführungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich heiße ___. Ich bin schon nach ___ gereist, bevor ich Deutsch gelernt habe.
+        example: Ich heiße Shachar. Ich bin nach Mexiko gereist, bevor ich Deutsch gelernt habe. Dort habe ich verstanden, wie schwierig es ist, eine neue Sprache zu lernen.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup-hint
+        type: callout
+        tone: info
+        text: Antworte in **vollständigen Sätzen** und benutze hauptsächlich das **Perfekt**.
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Wie viele Länder hast du schon besucht?
+            frame: Ich habe schon ___ Länder besucht.
+          - question: Was war deine beste Reise?
+            frame: Meine beste Reise ging nach ___, weil ich dort ___ habe.
+          - question: Was ist dir auf Reisen schon einmal Unerwartetes passiert?
+            frame: Ich habe einmal ___. / Einmal ist mir ___ passiert.
+          - question: Was hattest du in deinem Koffer, das völlig unnötig war?
+            frame: Ich habe ___ mitgenommen, obwohl ___.
+          - question: Hast du denselben Ort mehr als einmal besucht? Warum?
+            frame: Ich bin ___ nach ___ gereist, weil ___.
+          - question: Hast du schon einmal etwas Wichtiges verloren?
+            frame: Ich habe einmal ___ verloren.
+          - question: Hast du deine Reisepläne schon einmal ändern müssen? Warum?
+            frame: Ich musste meine Reise ändern, weil ___.
+          - question: Bist du schon einmal allein gereist?
+            frame: Ja, ich bin allein nach ___ gereist. / Nein, ich bin noch nie allein gereist.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Wahre oder falsche Reisegeschichte?'
+        skills: [Perfekt]
+        steps:
+          - '**Schritt 1 – Ideen sammeln:** Denk an eine **wahre** und eine **erfundene** Reisegeschichte. Erzähle beide im **Perfekt**.'
+          - 'Nützliche Strukturen: *Ich habe schon einmal … / Ich bin nach … gereist. / Ich habe noch nie … / Dort habe ich … / Zum Glück … / Leider …*'
+          - '**Schritt 2 – Geschichten erzählen:** In Gruppen erzählt jeder beide Geschichten. Die anderen stellen mindestens zwei Rückfragen (siehe unten).'
+          - '**Schritt 3 – Abstimmen:** Die Gruppe entscheidet, welche Geschichte falsch ist, und begründet ihre Meinung.'
+        example: '*Ich glaube, dass die zweite Geschichte falsch ist, weil sie unrealistisch klingt.*'
+      - id: act1-questions
+        type: discussionQuestions
+        title: Rückfragen
+        answerable: false
+        items:
+          - question: Wann ist das passiert?
+          - question: Mit wem bist du gereist?
+          - question: Wie hast du dich gefühlt?
+          - question: War das geplant?
+          - question: Was ist danach passiert?
+      - id: act1-vote
+        type: sentenceFrame
+        prompt: Welche Geschichte ist falsch?
+        frame: Ich glaube, dass die ___ Geschichte falsch ist, weil ___.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Reisechaos!'
+        skills: [Perfekt, Erzählen mit Zeitwörtern]
+        steps:
+          - '**Schritt 1 – Die Geschichte der Lehrkraft:** Hört eine kurze Reisegeschichte (siehe Beispiel).'
+          - '**Schritt 2 – Eigene Geschichte vorbereiten:** Denk an ein Reiseproblem, eine lustige Situation, einen stressigen Moment oder etwas Unerwartetes. Deine Geschichte ist 4–5 Sätze lang, im **Perfekt**, mit **Zeitwörtern** und persönlichen Details.'
+          - '**Schritt 3 – Geschichten erzählen:** Erzählt eure Geschichten zu zweit oder in Gruppen. Die Zuhörer stellen mindestens zwei Rückfragen: *Was ist dann passiert? Wie hast du reagiert? Mit wem warst du dort? War das stressig oder lustig? Hast du daraus etwas gelernt?*'
+          - '**Schritt 4 – Die beste Geschichte:** Jede Gruppe wählt die lustigste, die stressigste und die überraschendste Geschichte. Danach präsentiert jede Gruppe eine Geschichte der Klasse.'
+        example: |-
+          *Ich bin nach Rom gereist. Leider habe ich meinen Zug verpasst und musste drei Stunden warten. Danach habe ich ein kleines Café gefunden und dort interessante Leute kennengelernt.*
+        wordBank: [zuerst, dann, danach, plötzlich, am Ende, zum Glück, leider, überraschenderweise]
+      - id: act2-examples
+        type: examples
+        items:
+          - text: Zuerst habe ich meinen Koffer gesucht.
+          - text: Dann habe ich gemerkt, dass er weg war.
+          - text: Leider habe ich meinen Flug verpasst.
+          - text: Am Ende habe ich ein anderes Ticket gekauft.
+      - id: act2-story
+        type: discussionQuestions
+        title: Meine Reisegeschichte
+        items:
+          - question: Zuerst ___.
+          - question: Dann ___.
+          - question: Plötzlich ___.
+          - question: Zum Glück / Leider ___.
+          - question: Am Ende ___.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Lerne aus meinen Fehlern'
+        skills: [Perfekt, Erzählen mit Zeitwörtern]
+        steps:
+          - '**Schritt 1 – Eine Erfahrung auswählen:** Denk an ein Problem auf Reisen, einen Fehler, eine stressige Situation oder eine wichtige Lernerfahrung. Themen: Sprachprobleme, kulturelle Missverständnisse, Essen, Transport, Geldprobleme, Internetprobleme, Gesundheit.'
+          - '**Schritt 2 – Die Geschichte vorbereiten:** Deine Geschichte hat drei Teile (siehe unten).'
+          - '**Schritt 3 – Gruppenarbeit:** Erzählt eure Geschichten. Die Zuhörer stellen mindestens eine Rückfrage.'
+          - '**Schritt 4 – Reisetipps:** Jeder gibt einen Tipp.'
+        example: |-
+          *Man sollte immer eine Kopie vom Reisepass machen.*
+          *Ich habe gelernt, dass man nicht zu viel Geld mitnehmen sollte.*
+      - id: act3-parts
+        type: discussionQuestions
+        title: Meine Geschichte in drei Teilen
+        items:
+          - question: 'Teil 1: Was ist passiert?'
+            frame: Ich habe ein Problem mit ___ gehabt. / Ich habe einen Fehler gemacht.
+          - question: 'Teil 2: Wie hast du reagiert?'
+            frame: Dann habe ich ___. Später habe ich ___. Zum Glück / Leider ___.
+          - question: 'Teil 3: Was hast du gelernt?'
+            frame: Seitdem habe ich gelernt, dass ___. Heute würde ich ___.
+          - question: Dein Reisetipp
+            frame: Man sollte immer ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Zu viele Touristen?'
+        steps:
+          - '**Schritt 1 – Einführung:** Die Klasse spricht über Städte mit vielen Touristen, zum Beispiel Barcelona, Berlin und Amsterdam. *Warst du schon einmal an einem überfüllten Ort? Wie war die Erfahrung?*'
+          - '**Schritt 2 – Gruppenarbeit:** Gruppe A: *Tourismus sollte begrenzt werden.* Gruppe B: *Tourismus sollte nicht begrenzt werden.* Jede Gruppe bereitet 3–4 Argumente mit Beispielen und persönlichen Erfahrungen vor.'
+          - 'Nützliche Strukturen: *Meiner Meinung nach … / Ich glaube, dass … / Tourismus ist wichtig, weil … / Zu viele Touristen machen …*'
+          - '**Schritt 3 – Debatte:** Gruppe A präsentiert ein Argument, Gruppe B antwortet. Dann wechselt die Reihenfolge.'
+          - '**Schritt 4 – Klassendiskussion:** Sprecht über die Fragen unten.'
+        example: '*Meiner Meinung nach sollte Tourismus begrenzt werden, weil zu viele Touristen das Leben in der Stadt teuer machen.*'
+      - id: act4-questions
+        type: discussionQuestions
+        title: Klassendiskussion
+        items:
+          - question: Wie beeinflussen zu viele Touristen das tägliche Leben?
+            frame: Meiner Meinung nach ___.
+          - question: Hast du schon einmal einen sehr überfüllten Ort besucht?
+            frame: Ja, ich habe ___ besucht. Dort ___.
+          - question: Ist es fair, die Anzahl der Touristen zu begrenzen?
+            frame: Ich finde, dass ___, weil ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: das **Perfekt** (Aufwärmfragen,
+          Aktivitäten 1–3) und **Erzählen mit Zeitwörtern** (Aktivitäten 2 und 3).
+          Aktivität 4 übt Meinungen ausdrücken (*Meiner Meinung nach …, Ich glaube,
+          dass …*). Niveau B1. Das Heft gibt keine Zeiten an: Plane nach der Länge
+          deiner Stunde.
+      - id: n-intro
+        anchor: intro
+        text: Gib zuerst dein eigenes Beispiel. Achte auf *bin … gereist* und auf das Verb am Ende nach *bevor*.
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Modellantworten aus dem Heft: 1. *Ich habe schon zehn Länder besucht.* 2.
+          *Meine beste Reise ging nach Japan, weil ich dort eine andere Kultur erlebt
+          habe.* 3. *Ich habe einmal meinen Zug verpasst und musste mitten in der Nacht
+          ein Hotel suchen.* 4. *Ich habe zu viele warme Kleidungssachen mitgenommen,
+          obwohl das Wetter heiß war.* 5. *Ich bin zweimal nach Italien gereist, weil mir
+          das Essen und die Atmosphäre gefallen haben.* 6. *Ich habe einmal meinen
+          Reisepass verloren.* 7. *Ich musste meine Reise ändern, weil mein Flug
+          abgesagt worden ist.* 8. *Ja, ich bin allein nach Spanien gereist. Es war
+          zuerst stressig, aber später habe ich mich freier gefühlt.* Bei *sein*,
+          *haben* und Modalverben ist das Präteritum (*war, hatte, musste*) normal.
+      - id: n-act1
+        anchor: act1
+        text: Gib den Schülern ein paar Minuten Zeit für Schritt 1. Achte beim Erzählen auf *haben / sein* und das Partizip II am Satzende.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Erzähl in Schritt 1 deine eigene kurze Reisegeschichte oder die aus dem
+          Beispiel. Achte darauf, dass nach einem Zeitwort auf Position 1 das Verb folgt
+          (*Zuerst habe ich …*).
+      - id: n-act3
+        anchor: act3
+        text: Die Schüler sollen das Perfekt für die Geschichte und *Seitdem habe ich gelernt, dass …* / *Heute würde ich …* für die Lehre benutzen.
+      - id: n-act4
+        anchor: act4
+        text: Teile die Klasse in zwei Gruppen. In der Debatte sollen die Schüler auf das Argument der anderen Gruppe reagieren, nicht nur ihr eigenes vorlesen.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: reisen-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-perfekt
+        type: ruleSummary
+        skill: Perfekt
+        rules:
+          - text: 'Mit dem **Perfekt** sprechen wir über **Erfahrungen**, **Reisen**, Dinge, die wir im Leben gemacht haben, und Ereignisse aus der Vergangenheit, die mit heute verbunden sind. Es ist die häufigste Vergangenheitsform im gesprochenen Deutsch.'
+          - text: 'So bilden wir das Perfekt: **haben / sein** (Position 2) + **Partizip II** (am Satzende).'
+            examples:
+              - Ich habe Paris besucht.
+              - Ich bin nach Italien gereist.
+              - Ich habe meinen Zug verpasst.
+          - text: 'Mit **sein** bilden wir das Perfekt bei Verben der **Bewegung** und der **Veränderung**.'
+            examples:
+              - gehen → ist gegangen
+              - reisen → ist gereist
+              - ankommen → ist angekommen
+              - Ich bin nach Spanien gereist.
+          - text: 'Die **meisten Verben** bilden das Perfekt mit **haben**.'
+            examples: [Ich habe ein Hotel gebucht.]
+          - text: '**Ja-/Nein-Fragen:** *haben / sein* + Subjekt + … + Partizip II.'
+            examples: [Hast du schon Japan besucht?, Bist du schon allein gereist?]
+          - text: '**W-Fragen:** Fragewort + *haben / sein* + Subjekt + … + Partizip II.'
+            examples: [Wohin bist du gereist?, Was hast du verloren?]
+          - text: '**Verneinung:** *nicht* oder *noch nie* steht vor dem Partizip II.'
+            examples: [Ich habe meinen Pass nicht gefunden., Ich bin noch nie allein gereist.]
+      - id: perfekt-examples
+        type: examples
+        items:
+          - { text: Ich habe Paris besucht., gloss: ביקרתי בפריז. }
+          - { text: Ich bin nach Italien gereist., gloss: נסעתי לאיטליה. }
+          - { text: Ich habe meinen Zug verpasst., gloss: פספסתי את הרכבת שלי. }
+      - id: perfekt-he
+        type: text
+        lang: he
+        text: |-
+          בגרמנית משתמשים ב־Perfekt כדי לדבר על חוויות, טיולים, דברים שעשינו בחיים ואירועים מהעבר שקשורים להווה. זהו זמן הדיבור הכי נפוץ בגרמנית המדוברת.
+          מבנה: haben / sein + Partizip II.
+          sein: עם פעלי תנועה ושינוי מצב (gehen → ist gegangen, reisen → ist gereist, ankommen → ist angekommen). haben: רוב הפעלים (Ich habe ein Hotel gebucht).
+          בשאלת כן / לא, haben / sein בא ראשון (Hast du schon Japan besucht?). בשאלה עם מילת שאלה, מילת השאלה ראשונה ו־haben / sein אחריה (Wohin bist du gereist?).
+      - id: rules-erzaehlen
+        type: ruleSummary
+        skill: Erzählen mit Zeitwörtern
+        rules:
+          - text: 'Beim **Erzählen** benutzen wir viele **Zeitwörter** und Verbindungswörter: *zuerst, dann, danach, später, plötzlich, am Ende, zum Glück, leider, überraschenderweise*.'
+          - text: '**Wortstellung:** Steht ein Zeitwort auf Position 1, kommt danach das Verb (*haben / sein*) und dann das Subjekt.'
+            examples:
+              - Zuerst habe ich meinen Koffer gesucht.
+              - Leider habe ich meinen Flug verpasst.
+              - 'Falsch: *Zuerst ich habe meinen Koffer gesucht.*'
+          - text: 'Nach **dass** steht das Verb am Ende.'
+            examples: [Dann habe ich gemerkt, dass er weg war.]
+          - text: '**Eine gute Geschichte:** kurze, klare Sätze, Zeitwörter, Gefühle und Reaktionen, persönliche Details.'
+            examples:
+              - Ich habe mich gestresst gefühlt.
+              - Das war lustig.
+              - Das Problem war, dass …
+              - Zum Glück habe ich …
+              - Seitdem habe ich gelernt, dass …
+          - text: '**Meinungen ausdrücken:** *Meiner Meinung nach …, Ich glaube, dass …, Ehrlich gesagt …, Ich finde, dass …*'
+            examples:
+              - Meiner Meinung nach sollte Tourismus begrenzt werden.
+              - Ich finde, dass Tourismus wichtig ist.
+      - id: zeitwoerter-table
+        type: table
+        caption: Wichtige Zeitwörter
+        header: [Deutsch, Hebräisch]
+        rows:
+          - [zuerst, קודם]
+          - [dann, אז / אחר כך]
+          - [danach, לאחר מכן]
+          - [später, מאוחר יותר]
+          - [plötzlich, פתאום]
+          - [am Ende, בסוף]
+          - [zum Glück, למרבה המזל]
+          - [leider, לצערי]
+          - [überraschenderweise, באופן מפתיע]
+      - id: story-example
+        type: examples
+        items:
+          - text: Zuerst habe ich meinen Koffer gesucht.
+          - text: Dann habe ich gemerkt, dass er weg war.
+          - text: Leider habe ich meinen Flug verpasst.
+          - text: Am Ende habe ich ein neues Ticket gekauft.
+      - id: erzaehlen-he
+        type: text
+        lang: he
+        text: |-
+          כשמספרים סיפור בגרמנית משתמשים בהרבה מילות חיבור וזמן. אחרי מילת זמן בתחילת המשפט בא הפועל, ורק אחריו הנושא: Zuerst habe ich…
+          איך לספר סיפור טוב בגרמנית? כדאי לדבר במשפטים קצרים וברורים, להשתמש במילות זמן, להוסיף רגשות ותגובות ולתת פרטים אישיים.
+          הבעת דעה: Meiner Meinung nach…, Ich glaube, dass…, Ehrlich gesagt…, Ich finde, dass…
+          נושאים שתרגלנו בשיעור: חוויות מטיולים, בעיות בזמן טיול, טיולים לבד, מקומות עמוסים בתיירים, סיפורים מצחיקים ומלחיצים, שאלות המשך בשיחה.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole beide Fertigkeiten und lass jeden Schüler eine Mini-Geschichte mit drei Zeitwörtern im Perfekt erzählen.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: reisen-hausaufgaben
+    title: Hausaufgaben
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        lang: he
+        text: שלחו למורי את ההודעה הבאה. אחר כך עבדו עם מורי על שתי הפעילויות.
+      - id: mori-start
+        type: aiTutorPrompt
+        title: 'Start: Reisen'
+        message: Hallo Mori! Lass uns über Reisen sprechen. Bitte stell mir Fragen über meine Reiseerfahrungen. Hilf mir, das Perfekt zu benutzen, und korrigiere meine Fehler.
+      - id: mori-act1-title
+        type: heading
+        level: 3
+        text: 'Aktivität 1: Meine verrückte Reisegeschichte'
+      - id: mori-act1-he
+        type: text
+        lang: he
+        text: |-
+          ספרו למורי על טיול מצחיק, בעיה בטיול, רגע מלחיץ או משהו מפתיע שקרה לכם.
+          חובה להשתמש ב־Perfekt, במילות זמן ובפרטים אישיים.
+          מילים שימושיות: zuerst, dann, danach, plötzlich, leider, zum Glück, am Ende.
+      - id: mori-act1-examples
+        type: examples
+        items:
+          - text: Zuerst habe ich meinen Koffer gesucht.
+          - text: Dann habe ich gemerkt, dass er weg war.
+      - id: mori-act1
+        type: aiTutorPrompt
+        title: 'Aktivität 1: Meine verrückte Reisegeschichte'
+        message: >-
+          Hallo Mori! Ich erzähle dir eine Reisegeschichte im Perfekt, mit Zeitwörtern
+          wie zuerst, dann, plötzlich und am Ende. Bitte korrigiere meine Fehler und stell
+          mir Rückfragen zu meiner Geschichte.
+      - id: mori-act2-title
+        type: heading
+        level: 3
+        text: 'Aktivität 2: Reiseinterview'
+      - id: mori-act2-he
+        type: text
+        lang: he
+        text: |-
+          עשו עם מורי ראיון על טיולים. שאלו את מורי לפחות 5 שאלות על מדינות שהוא ביקר בהן, אוכל שהוא ניסה, בעיות בטיולים, טיולים לבד ומקומות מפתיעים. אחר כך ענו גם אתם על אותן שאלות.
+          אל תשכחו: לשאול שאלות המשך, לענות במשפטים מלאים, להשתמש ב־Perfekt ובמילות זמן וסיפור.
+      - id: mori-act2-examples
+        type: examples
+        items:
+          - text: Bist du schon einmal allein gereist?
+          - text: Welche Länder hast du besucht?
+          - text: Hast du schon einmal etwas verloren?
+          - text: Was war deine beste Reise?
+          - text: Hast du dich schon einmal verlaufen?
+      - id: mori-act2
+        type: aiTutorPrompt
+        title: 'Aktivität 2: Reiseinterview'
+        message: >-
+          Hallo Mori! Ich möchte dich über deine Reisen interviewen. Ich stelle dir
+          mindestens 5 Fragen im Perfekt. Danach stellst du mir dieselben Fragen und ich
+          antworte in ganzen Sätzen. Bitte korrigiere meine Fehler.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          **Perfekt:** *haben / sein* auf Position 2, das **Partizip II am Satzende**. Bewegung → *sein* (*Ich bin gereist*).
+          **Zeitwort am Anfang?** Dann kommt sofort das Verb: *Zuerst **habe** ich …*
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: classic-title
+        type: heading
+        level: 2
+        text: Klassische Hausaufgaben
+      - id: teil1-title
+        type: heading
+        level: 3
+        text: 'Teil 1: Perfekt'
+      - id: teil1-he
+        type: text
+        lang: he
+        text: השלימו את המשפטים ב־Perfekt. הפועל בסוגריים.
+      - id: teil1
+        type: discussionQuestions
+        items:
+          - question: Ich ___ nach Spanien ___. (reisen)
+          - question: Wir ___ ein Hotel ___. (buchen)
+          - question: Sie ___ ihren Reisepass ___. (verlieren)
+          - question: Ich ___ meinen Flug ___. (verpassen)
+          - question: Meine Freunde ___ viele Fotos ___. (machen)
+          - question: Er ___ allein nach Italien ___. (fahren)
+          - question: Wir ___ uns in Venedig ___. (verlaufen)
+          - question: Ich ___ interessante Leute ___. (treffen)
+      - id: teil2-title
+        type: heading
+        level: 3
+        text: 'Teil 2: Erzählen'
+      - id: teil2-he
+        type: text
+        lang: he
+        text: סדרו את המשפטים לפי סדר הגיוני.
+      - id: teil2-sentences
+        type: text
+        text: |-
+          - Danach habe ich ein Taxi genommen.
+          - Zuerst habe ich meinen Koffer gesucht.
+          - Am Ende habe ich mein Hotel gefunden.
+          - Leider habe ich meinen Zug verpasst.
+          - Dann habe ich gemerkt, dass mein Handy weg war.
+      - id: teil2
+        type: reflection
+        prompt: Schreib die Geschichte in der richtigen Reihenfolge.
+      - id: teil3-title
+        type: heading
+        level: 3
+        text: 'Teil 3: Schreiben'
+      - id: teil3-he
+        type: text
+        lang: he
+        text: ענו על השאלות ב־4–5 משפטים מלאים.
+      - id: teil3
+        type: discussionQuestions
+        items:
+          - question: Was war deine beste Reise?
+          - question: Hast du schon einmal ein Reiseproblem gehabt?
+          - question: Welche Stadt möchtest du noch besuchen? Warum?
+          - question: Wie fühlst du dich, wenn du allein reist?
+      - id: teil4-title
+        type: heading
+        level: 3
+        text: 'Teil 4: Wortschatz'
+      - id: teil4
+        type: discussionQuestions
+        lang: he
+        title: תרגמו לגרמנית
+        items:
+          - question: דרכון
+          - question: מזוודה
+          - question: טיול
+          - question: שדה תעופה
+          - question: תייר
+          - question: לפספס רכבת
+          - question: מלון
+          - question: חוויה
+          - question: ללכת לאיבוד
+          - question: להזמין מלון מראש
+    teacherNotes:
+      - id: n-mori
+        anchor: mori-act1
+        text: >-
+          Im Heft gibt es für die zwei Mori-Aktivitäten nur hebräische Anweisungen, keine
+          Nachricht. Die deutschen Startnachrichten sind neu.
+      - id: n-key1
+        anchor: teil1
+        text: >-
+          Lösungen Teil 1: 1. bin … gereist 2. haben … gebucht 3. hat … verloren 4.
+          habe … verpasst 5. haben … gemacht 6. ist … gefahren 7. haben … verlaufen 8.
+          habe … getroffen.
+      - id: n-key2
+        anchor: teil2
+        text: >-
+          Lösung Teil 2: 1. Zuerst habe ich meinen Koffer gesucht. 2. Dann habe ich
+          gemerkt, dass mein Handy weg war. 3. Leider habe ich meinen Zug verpasst. 4.
+          Danach habe ich ein Taxi genommen. 5. Am Ende habe ich mein Hotel gefunden.
+          Andere logische Reihenfolgen (z. B. 3 vor 2) kannst du auch akzeptieren.
+      - id: n-key3
+        anchor: teil3
+        text: >-
+          Beispielantworten Teil 3: 1. Meine beste Reise ging nach Italien. Ich habe
+          viele schöne Städte besucht und sehr gutes Essen gegessen. Besonders Venedig hat
+          mir gefallen. Die Reise war interessant und unvergesslich. 2. Ja, einmal habe
+          ich meinen Zug verpasst. Ich war sehr gestresst, aber danach habe ich ein Taxi
+          genommen. Am Ende bin ich trotzdem im Hotel angekommen. 3. Ich möchte noch
+          Berlin besuchen. Die Stadt hat viel Geschichte und viele interessante Museen.
+          Außerdem möchte ich mein Deutsch dort üben. 4. Wenn ich allein reise, fühle ich
+          mich frei und unabhängig. Manchmal bin ich ein bisschen nervös. Aber ich finde
+          es spannend, neue Orte allein zu entdecken.
+      - id: n-key4
+        anchor: teil4
+        text: >-
+          Lösungen Teil 4: der Reisepass, der Koffer, die Reise / der Ausflug, der
+          Flughafen, der Tourist, einen Zug verpassen, das Hotel, die Erfahrung / das
+          Erlebnis, sich verlaufen, ein Hotel im Voraus buchen.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: reisen-uebung
+    book: workbook
+    title: 'Übung: Reisen'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-perfekt
+        type: activity
+        activity: reisen-perfekt
+      - id: ex-erzaehlen
+        type: activity
+        activity: reisen-erzaehlen
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: reisen-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter rund ums Reisen
+        glossLang: he
+        link: https://quizlet.com/br/1182936106/reisen-und-reiseerfahrungen-flash-cards/
+        items: &reisen-words
+          - { term: die Unterkunft, gloss: מקום לינה }
+          - { term: die Atmosphäre, gloss: אווירה }
+          - { term: überfüllt, gloss: צפוף מדי }
+          - { term: überraschend, gloss: מפתיע }
+          - { term: stressig, gloss: מלחיץ }
+          - { term: entspannt, gloss: רגוע }
+          - { term: die Sehenswürdigkeit, gloss: אתר תיירות }
+          - { term: das Abenteuer, gloss: הרפתקה }
+          - { term: die Kultur, gloss: תרבות }
+          - { term: der Reiseführer, gloss: מדריך טיולים }
+          - { term: die Landschaft, gloss: נוף }
+          - { term: wandern, gloss: לעשות טיול רגלי }
+          - { term: der Ausflug, gloss: טיול קצר }
+          - { term: die Erinnerung, gloss: זיכרון }
+          - { term: entdecken, gloss: לגלות }
+          - { term: ausprobieren, gloss: לנסות }
+          - { term: die Reiseplanung, gloss: תכנון טיול }
+          - { term: die Touristenattraktion, gloss: אטרקציה תיירותית }
+          - { term: sich verlaufen, gloss: ללכת לאיבוד }
+          - { term: den Zug verpassen, gloss: לפספס רכבת }
+          - { term: die Erfahrung, gloss: חוויה }
+          - { term: die Herausforderung, gloss: אתגר }
+          - { term: die Gewohnheit, gloss: הרגל }
+          - { term: die Menschenmenge, gloss: קהל גדול }
+          - { term: die Strecke, gloss: מסלול / מרחק }
+          - { term: die Orientierung, gloss: התמצאות }
+          - { term: unabhängig, gloss: עצמאי }
+          - { term: die Sicherheit, gloss: ביטחון / בטיחות }
+          - { term: die Möglichkeit, gloss: אפשרות }
+          - { term: die Umgebung, gloss: סביבה }
+          - { term: sich anpassen, gloss: להסתגל }
+          - { term: beeindruckend, gloss: מרשים }
+          - { term: unerwartet, gloss: בלתי צפוי }
+          - { term: die Reiseerfahrung, gloss: חוויית טיול }
+          - { term: das Verhalten, gloss: התנהגות }
+          - { term: die Entscheidung, gloss: החלטה }
+
+vocabulary:
+  - slug: reisen
+    title: Reisen
+    items: *reisen-words
+
+activities:
+  - slug: reisen-perfekt
+    title: Perfekt
+    minutes: 8
+    items:
+      - id: bin-gereist
+        type: multipleChoice
+        prompt: Ich ___ nach Spanien gereist.
+        options:
+          - { text: bin, correct: true }
+          - {
+              text: habe,
+              feedback: '*reisen* ist ein Verb der Bewegung: Das Perfekt bilden wir mit *sein*: *Ich bin gereist.*',
+            }
+          - { text: ist, feedback: '*ist* ist für *er / sie / es*. Für *ich* sagen wir *bin*.' }
+      - id: hotel-gebucht
+        type: fillBlank
+        prompt: Ergänze das Perfekt von *buchen*.
+        text: Wir ___ ein Hotel ___.
+        blanks: [[haben], [gebucht]]
+      - id: pass-verloren
+        type: fillBlank
+        prompt: Ergänze das Perfekt von *verlieren*.
+        text: Sie ___ ihren Reisepass ___.
+        blanks: [[hat], [verloren]]
+      - id: allein-gereist
+        type: multipleChoice
+        prompt: Welche Frage ist richtig?
+        options:
+          - { text: Bist du schon einmal allein gereist?, correct: true }
+          - {
+              text: Hast du schon einmal allein gereist?,
+              feedback: '*reisen* bildet das Perfekt mit *sein*: *Bist du … gereist?*',
+            }
+          - {
+              text: Bist du schon einmal allein gereisen?,
+              feedback: 'Das Partizip II von *reisen* ist *gereist*.',
+            }
+      - id: verpasst
+        type: trueFalse
+        prompt: 'Der Satz *Ich habe meinen Flug verpasst.* ist richtig.'
+        answer: true
+        feedback:
+          correct: 'Richtig! Verben mit *ver-* bekommen kein *ge-*: *verpassen → verpasst*.'
+          incorrect: 'Der Satz ist richtig: *verpassen* bildet das Perfekt mit *haben*, und Verben mit *ver-* bekommen kein *ge-*: *verpasst*.'
+      - id: formen
+        type: matching
+        prompt: Welche Perfektform passt zu welchem Verb?
+        pairs:
+          - [verlieren, hat verloren]
+          - [ankommen, ist angekommen]
+          - [treffen, hat getroffen]
+          - [sich verlaufen, hat sich verlaufen]
+          - [fahren, ist gefahren]
+      - id: ordne-verneinung
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einem Satz.
+        sentence: Ich habe meinen Pass nicht gefunden.
+      - id: frage-japan
+        type: fillBlank
+        prompt: Ergänze *haben* oder *sein*.
+        text: ___ du schon Japan besucht?
+        blanks: [[Hast]]
+
+  - slug: reisen-erzaehlen
+    title: Erzählen mit Zeitwörtern
+    minutes: 8
+    items:
+      - id: zuerst-habe-ich
+        type: multipleChoice
+        prompt: Zuerst ___ meinen Koffer gesucht.
+        options:
+          - { text: habe ich, correct: true }
+          - {
+              text: ich habe,
+              feedback: 'Steht ein Zeitwort auf Position 1, kommt danach das Verb: *Zuerst habe ich …*',
+            }
+      - id: dann-ich-habe
+        type: trueFalse
+        prompt: 'Der Satz *Dann ich habe gemerkt, dass er weg war.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Nach *dann* kommt das Verb: *Dann habe ich gemerkt, dass er weg war.*'
+          incorrect: 'Nach einem Zeitwort auf Position 1 kommt das Verb: *Dann habe ich gemerkt …*'
+      - id: ordne-ende
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einem Satz.
+        sentence: Am Ende habe ich ein neues Ticket gekauft.
+      - id: bedeutung
+        type: matching
+        prompt: Was bedeutet das Zeitwort auf Hebräisch?
+        pairs:
+          - [zuerst, קודם]
+          - [plötzlich, פתאום]
+          - [leider, לצערי]
+          - [am Ende, בסוף]
+          - [zum Glück, למרבה המזל]
+      - id: zug-verpasst
+        type: fillBlank
+        prompt: Ergänze das Perfekt von *verpassen*.
+        text: Leider ___ ich meinen Zug ___.
+        blanks: [[habe], [verpasst]]
+      - id: zum-glueck
+        type: multipleChoice
+        prompt: 'Ich hatte kein Geld mehr. ___ hat mir ein Freund geholfen. (Das war gut für mich.)'
+        options:
+          - { text: Zum Glück, correct: true }
+          - {
+              text: Leider,
+              feedback: '*leider* benutzen wir für etwas Schlechtes. Hier ist es gut: *Zum Glück*.',
+            }
+      - id: dass
+        type: fillBlank
+        prompt: Ergänze das passende Wort.
+        text: Dann habe ich gemerkt, ___ mein Handy weg war.
+        blanks: [[dass]]
+      - id: ploetzlich
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Plötzlich habe ich meinen Pass verloren., correct: true }
+          - {
+              text: Plötzlich ich habe meinen Pass verloren.,
+              feedback: 'Nach *plötzlich* auf Position 1 kommt das Verb: *Plötzlich habe ich …*',
+            }
+          - {
+              text: Plötzlich habe ich meinen Pass verlieren.,
+              feedback: 'Im Perfekt brauchen wir das Partizip II: *verloren*.',
+            }
