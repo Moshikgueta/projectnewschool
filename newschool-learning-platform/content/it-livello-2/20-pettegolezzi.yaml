@@ -1,0 +1,808 @@
+# Cycle "Pettegolezzi e voci", converted from the Italian level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-livello-2
+slug: pettegolezzi
+title: Pettegolezzi e voci
+goal: Raccontare cosa è successo con il passato prossimo e fare confronti tra persone, storie e voci.
+position: 20
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Passato prossimo" and "Confronti") are NEW: the
+    notebook has no self-correcting exercises. They were written from the cycle's
+    two skills, its summary rules, the activity examples and its vocabulary.
+    Please check level, wording and every right answer before students see them.
+  - >-
+    The grammar summary ("סיכום דקדוקי") is in Hebrew in the notebook. It was
+    rewritten in Italian as rule summaries and tables (passato prossimo with
+    avere / essere, time markers, parlare / sentire / uscire, più / meno… di,
+    tanto… quanto, il più / la più, meglio / peggio), with the Italian examples
+    kept. The short student summary ("סיכום קצר לתלמידים") repeats the same
+    examples, so it is kept once, as the "Cosa sappiamo fare adesso" callout.
+  - >-
+    Summary, "Meglio di / Peggio di": every example uses "che" between two verbs
+    (È meglio leggere che parlare). The rule now says: meglio / peggio + di before
+    a noun or pronoun ("Racconti le storie meglio di me", ADDED example), + che
+    between two verbs. "Tanto… quanto": the examples leave out "tanto"; the rule
+    now says that "tanto" is optional. Please confirm.
+  - >-
+    Warm-up: the general question had broken markdown ("### **Perché…**") and the
+    model ended with "perché." with no blank; fixed to "perché ___". Activity 2,
+    question 5: "Era peggiore di altre" → "Era peggiore delle altre".
+  - >-
+    Classic homework ("שיעורי בית קלאסיים", 9 parts) is kept in the homework
+    section as written exercises, with the Hebrew instructions translated into
+    Italian; the answer key is in the teacher notes. Corrections in Part 5 (the
+    key did not fit the sentences): item 3 and 5 have one blank, so the answer is
+    "quanto" (not "tanto quanto"); item 4 "___ il gossip sulle celebrità" →
+    "___ gossip sulle celebrità" (answer "più… del", not "di il"); item 7 "___ le
+    notizie vere" → "___ notizie vere" (answer "più… delle"). Part 8, question 1
+    "Con chi è uscito la persona?" → "Con chi è uscito il narratore?" (the narrator
+    is a man: "sono uscito").
+  - >-
+    Mori: the questions for Parts 1, 2 and 4 are now inside the message, so Mori
+    receives them ("Fammi queste domande…" had no questions after copying). Part 3
+    "chiedimi: «Dimmi più dettagli»" → "«Dammi più dettagli»". The Hebrew gloss
+    after Part 5 (a translation of the message) was left out. The tips callout was
+    added as in the other cycles.
+  - >-
+    Activities 1, 3 and 5 need material the notebook does not include (an
+    ambiguous picture, cards with famous people, cards with sentence fragments);
+    the card fragments of Activity 5 are kept as a word bank. The notebook's
+    "Nota didattica" on respect and privacy is kept as a warning callout and a
+    teacher note.
+  - >-
+    Vocabulary: "Ambigua" → "ambiguo / ambigua" (the notebook gives only the
+    feminine). The Quizlet link is kept without its "?new" parameter. The notebook
+    gives no times for this cycle, so none are recorded.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: pettegolezzi-classe
+    title: 'In classe: Pettegolezzi e voci'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Pettegolezzi e voci
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Passato prossimo
+            description: 'Raccontare eventi conclusi: *Ho sentito che… Ho visto una foto. È uscita con un amico.*'
+          - name: Confronti
+            description: '*più… di, meno… di, tanto… quanto, il / la più, meglio, peggio*'
+      - id: quizlet
+        type: externalLink
+        label: Pettegolezzi e voci su Quizlet
+        url: https://quizlet.com/br/1191138213/pettegolezzi-e-voci-flash-cards/
+      - id: respect
+        type: callout
+        tone: warning
+        title: Rispetto e privacy
+        text: Parlare di gossip può essere divertente, ma non raccontiamo segreti veri o informazioni personali delicate. Possiamo inventare esempi o parlare di situazioni generali.
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazioni
+      - id: intro
+        type: sentenceFrame
+        prompt: Scegli il modello più adatto a te e aggiungi una frase.
+        frame: |-
+          Mi chiamo ___. A volte mi piace ascoltare storie sugli altri, ma non mi piace diffondere voci false.
+          Mi chiamo ___. Non mi piace parlare della vita privata degli altri.
+        example: |-
+          Mi chiamo Ana. A volte mi piace ascoltare storie sugli altri, ma non mi piace diffondere voci false.
+          Mi chiamo Daniel. Non mi piace parlare della vita privata degli altri, ma mi piace parlare di celebrità.
+      - id: mini-confronto
+        type: discussionQuestions
+        title: Mini confronto
+        items:
+          - question: Sono più pettegolo / pettegola di ___.
+          - question: Sono meno pettegolo / pettegola di ___.
+          - question: Secondo me, ___ è la persona più pettegola del gruppo.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di preparazione
+      - id: warmup-general
+        type: discussionQuestions
+        title: Domanda generale
+        items:
+          - question: Perché, secondo te, alla gente piace spettegolare?
+            frame: 'Secondo me, alla gente piace spettegolare perché ___. (Esempi: … perché è più facile che parlare di sé. / … perché è più divertente che parlare di cose serie.)'
+      - id: warmup-passato
+        type: discussionQuestions
+        title: 'Parte 1: Passato prossimo'
+        items:
+          - question: Qual è stata l'ultima notizia che hai sentito da un amico?
+            frame: 'Ho sentito che ___. (Esempio: Ho sentito che un mio amico ha cambiato lavoro.)'
+          - question: Con chi hai parlato ieri e di cosa avete parlato?
+            frame: 'Ieri ho parlato con ___ di ___. (Esempio: Ieri ho parlato con mia sorella di un viaggio.)'
+          - question: Hai mai sentito una voce falsa? Che cosa è successo?
+            frame: "Sì, una volta ho sentito che ___, ma non era vero. (Esempio: Una volta ho sentito che un'amica si era trasferita, ma non era vero.)"
+      - id: warmup-confronti
+        type: discussionQuestions
+        title: 'Parte 2: Confronti'
+        items:
+          - question: I pettegolezzi falsi sono più pericolosi dei pettegolezzi veri?
+            frame: 'Secondo me, i pettegolezzi falsi sono più / meno pericolosi perché ___. (Esempio: … perché possono rovinare la reputazione di una persona.)'
+          - question: 'Chi soffre di più per i pettegolezzi: gli adolescenti o gli adulti?'
+            frame: 'Secondo me, ___ soffrono di più perché ___. (Esempio: Secondo me, gli adolescenti soffrono di più perché la scuola e i social sono molto importanti per loro.)'
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: "Attività 1: Cosa è successo nell'immagine?"
+        skills: [Passato prossimo, Confronti]
+        steps:
+          - "Osservazione: guarda l'immagine che mostra l'insegnante (per esempio due persone che discutono, un gruppo che guarda un telefono, qualcuno che sembra sorpreso)."
+          - "In gruppo, inventate cosa è successo prima, durante e dopo l'immagine. Usate almeno 5 verbi al passato prossimo (qui sotto)."
+          - Ogni gruppo racconta la propria storia.
+          - 'La classe vota la storia più credibile, più divertente, più drammatica e più realistica.'
+          - 'Discussione: perché questa storia era più interessante delle altre? Perché era meno credibile? Quale dettaglio ha reso la storia più realistica?'
+        example: |-
+          *Secondo noi, ieri Marco è uscito con un'amica, ma poi hanno litigato.*
+          *Prima hanno parlato tranquillamente.*
+          *Poi lui ha guardato il telefono e ha visto un messaggio strano.*
+          *Dopo, lei gli ha spiegato la situazione.*
+          *Alla fine, hanno riso perché era tutto un malinteso.*
+      - id: act1-story
+        type: discussionQuestions
+        title: La nostra storia
+        items:
+          - question: Secondo noi, ieri ___.
+          - question: Prima, ___.
+          - question: Poi, ___.
+          - question: Dopo, ___.
+          - question: Alla fine, ___.
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Intervista di gossip'
+        skills: [Passato prossimo, Confronti]
+        steps:
+          - "Lavorate in coppia: uno fa l'intervistatore e l'altro l'intervistato. Poi cambiate ruolo."
+          - Fai le domande al compagno (qui sotto) e prendi appunti.
+          - 'Presenta al gruppo una cosa che hai imparato dal compagno.'
+        example: |-
+          *Il mio compagno ha sentito che ___.*
+          *Secondo lui, i pettegolezzi falsi sono più pericolosi di quelli veri perché ___.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Domande per l'intervista
+        items:
+          - question: Qual è stata l'ultima cosa interessante che hai sentito da un amico?
+            frame: Ho sentito che il mio amico / la mia amica ___.
+          - question: Qual è stato il pettegolezzo più divertente che hai sentito recentemente?
+            frame: Ho sentito che ___. Era più divertente di ___.
+          - question: Chi è stata l'ultima persona che ti ha raccontato un segreto?
+            frame: L'ultima persona che mi ha raccontato un segreto è stata ___.
+          - question: Chi è più pettegolo nella tua famiglia?
+            frame: ___ è più pettegolo / pettegola di ___.
+          - question: Hai mai sentito una voce che era peggiore delle altre?
+            frame: Sì, ho sentito una voce su ___. Era peggiore delle altre perché ___.
+          - question: I pettegolezzi sui social sono più pericolosi dei pettegolezzi a scuola o al lavoro?
+            frame: Secondo me, i pettegolezzi sui social sono più / meno pericolosi perché ___.
+      - id: act2-present
+        type: discussionQuestions
+        title: Presento il mio compagno
+        items:
+          - question: Il mio compagno / La mia compagna ha sentito che ___.
+          - question: Secondo lui / lei, i pettegolezzi falsi sono più pericolosi di quelli veri perché ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Scegli chi verrà a cena'
+        skills: [Confronti]
+        steps:
+          - "Guarda le carte che distribuisce l'insegnante: coppie di personaggi famosi o inventati (cantanti, attori, atleti, personaggi di serie TV, personaggi storici, influencer, scrittori)."
+          - Scegli 3 ospiti e scrivi una breve motivazione con i confronti (qui sotto).
+          - 'Confronta le tue scelte con un compagno: *Il mio ospite è più divertente del tuo. La tua scelta è meno interessante della mia.*'
+          - 'In gruppi di 3 o 4, organizzate una cena comune con solo 3 ospiti. Discutete, negoziate e giustificate le decisioni.'
+        example: |-
+          *La mia prima scelta è Shakira perché è più divertente di molti altri cantanti.*
+          *Preferisco Nadal perché è meno problematico di altri sportivi famosi.*
+          *Ho scelto Penélope Cruz perché secondo me è l'attrice più interessante della lista.*
+      - id: act3-choice
+        type: discussionQuestions
+        title: I miei ospiti
+        items:
+          - question: La mia prima scelta è ___ perché è più ___ di ___.
+          - question: Preferisco ___ perché è meno ___ di ___.
+          - question: Ho scelto ___ perché è il / la più ___.
+      - id: act3-group
+        type: discussionQuestions
+        title: La decisione del gruppo
+        items:
+          - question: Scegliamo ___ perché è più ___ di ___.
+          - question: Non scegliamo ___ perché è meno ___.
+          - question: Secondo noi, ___ è la scelta migliore.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Non ho mai'
+        skills: [Passato prossimo, Confronti]
+        steps:
+          - "L'insegnante legge una frase con *Non ho mai…*. Se tu l'hai fatto, alzi la mano o dici «io sì». Puoi sempre dire «passo»."
+          - 'Chi vuole racconta un dettaglio. Domande: *Quando è successo? Con chi eri? Perché lo hai fatto? Come ti sei sentito / sentita dopo? Era una situazione divertente o seria?*'
+          - 'Il gruppo confronta le esperienze: *La storia di Ana era più divertente della storia di Juan. La situazione di Marco era meno seria della situazione di Laura. Secondo me, questa è stata la storia più sorprendente.*'
+        example: |-
+          *Non ho mai raccontato il segreto di un amico.*
+          *Non ho mai creduto a una voce falsa.*
+          *Non ho mai inventato un pettegolezzo.*
+          *Non ho mai letto gossip sulle celebrità.*
+          *Non ho mai parlato di qualcuno sui social.*
+          *Non ho mai scoperto che una voce su di me era falsa.*
+          *Non ho mai detto «non dirlo a nessuno».*
+          *Non ho mai fatto finta di non sapere un segreto.*
+      - id: act5
+        type: classActivity
+        title: 'Attività 5: Storie miste'
+        skills: [Passato prossimo, Confronti]
+        steps:
+          - Ricevi le carte con frammenti di frasi.
+          - Combina 2 o 3 carte e crea un pettegolezzo inventato completo.
+          - 'Leggi il tuo pettegolezzo alla classe. La classe vota il più divertente, il più assurdo, il più realistico e il meno credibile.'
+        example: |-
+          *Ieri ho sentito che una mia amica è uscita con un attore famoso. Era il pettegolezzo più assurdo della settimana ed è stato più divertente del matrimonio di mia cugina.*
+        wordBank:
+          - Ieri ho sentito che…
+          - La settimana scorsa ho visto che…
+          - Un mio amico ha detto che…
+          - Una mia collega ha pubblicato…
+          - È uscito / uscita con…
+          - Ha cambiato lavoro…
+          - Ha litigato con…
+          - È stato più divertente di…
+          - È stato meno serio di…
+          - Era più strano di…
+          - Era il pettegolezzo più assurdo della settimana.
+      - id: act5-gossip
+        type: discussionQuestions
+        title: Il mio pettegolezzo inventato
+        items:
+          - question: 'Il mio pettegolezzo: ___'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Passato prossimo** (Attività 1, 2 e 4) e
+          **Confronti** (Attività 3, 4 e 5). Il quaderno non dà i tempi: scegli una o
+          due attività per lezione.
+      - id: n-respect
+        anchor: respect
+        text: >-
+          Nota didattica: il tema del gossip può essere divertente, ma è importante
+          mantenere rispetto e privacy. Gli studenti non devono raccontare segreti
+          veri o informazioni personali delicate: possono inventare esempi o parlare
+          di situazioni generali.
+      - id: n-intro
+        anchor: intro
+        text: Dai i due modelli. Ogni studente sceglie il modello più adatto e aggiunge una frase. Dopo il giro, fate il mini confronto.
+      - id: n-warmup
+        anchor: warmup-title
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Prepara un'immagine con una situazione ambigua (due persone che discutono,
+          un gruppo che guarda un telefono, una persona che esce da una festa,
+          qualcuno che sembra sorpreso, una scena in un bar, a scuola o al lavoro).
+          L'immagine non è nel quaderno.
+      - id: n-act2
+        anchor: act2
+        text: Ogni studente riceve la scheda con le domande (qui sotto). Durante l'intervista gli studenti prendono appunti.
+      - id: n-act3
+        anchor: act3
+        text: Prepara le carte con coppie di personaggi famosi o inventati. Le carte non sono nel quaderno.
+      - id: n-act4
+        anchor: act4
+        text: Leggi le frasi con *Non ho mai…* una alla volta. Ricorda agli studenti che possono sempre dire «passo».
+      - id: n-act5
+        anchor: act5
+        text: Scrivi i frammenti della lista su carte e distribuiscili (2 o 3 per studente).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: pettegolezzi-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-passato
+        type: ruleSummary
+        skill: Passato prossimo
+        rules:
+          - text: 'Usiamo il **passato prossimo** per raccontare azioni finite nel passato (in ebraico: דיברתי, שמעתי, ראיתי).'
+            examples:
+              - Ieri ho sentito un pettegolezzo.
+              - Ho visto una foto sui social.
+              - Ho parlato con la mia famiglia.
+              - La settimana scorsa ho sentito una voce falsa.
+              - Un amico mi ha detto un segreto.
+          - text: 'Parole di tempo che usiamo spesso con il passato prossimo:'
+            examples:
+              - ieri, ieri sera, la settimana scorsa, il mese scorso, l'anno scorso, una volta, recentemente, poco fa
+          - text: 'Si forma con **avere** o **essere** al presente + **participio passato**: *ho / hai / ha / abbiamo / avete / hanno* oppure *sono / sei / è / siamo / siete / sono*.'
+            examples:
+              - ho sentito, ho visto, ho letto, ho parlato, ho raccontato, ho scoperto
+              - ho pubblicato, ho inventato, ho creduto, ho detto
+          - text: "Il verbo **uscire** usa *essere*. Con *essere* il participio cambia secondo chi fa l'azione: maschile o femminile, singolare o plurale."
+            examples: [Lui è uscito., Lei è uscita., Loro sono usciti / uscite.]
+      - id: passato-table
+        type: table
+        caption: Passato prossimo
+        header: [Chi?, parlare, sentire, uscire]
+        rows:
+          - [io, ho parlato, ho sentito, sono uscito / uscita]
+          - [tu, hai parlato, hai sentito, sei uscito / uscita]
+          - [lui / lei, ha parlato, ha sentito, è uscito / uscita]
+          - [noi, abbiamo parlato, abbiamo sentito, siamo usciti / uscite]
+          - [voi, avete parlato, avete sentito, siete usciti / uscite]
+          - [loro, hanno parlato, hanno sentito, sono usciti / uscite]
+      - id: rules-confronti
+        type: ruleSummary
+        skill: Confronti
+        rules:
+          - text: '**più… di** (יותר מ…) e **meno… di** (פחות מ…).'
+            examples:
+              - Ana è più pettegola di Pedro.
+              - La storia di Marco era più divertente della mia.
+              - Sono meno pettegolo di mio fratello.
+              - Il gossip sulle celebrità è meno personale del gossip sugli amici.
+          - text: "*di* + articolo diventa una parola sola: **di + il = del**, **di + la = della**, **di + i = dei**, **di + le = delle**, **di + l' = dell'**."
+            examples:
+              - I pettegolezzi falsi sono più pericolosi dei pettegolezzi veri.
+              - Questa voce era meno credibile dell'altra.
+          - text: '**(tanto)… quanto** (כמו, באותה מידה): due cose sono uguali. *Tanto* si può togliere; nella conversazione si usa anche *come*.'
+            examples:
+              - Questa storia è divertente quanto la tua.
+              - Parlare di celebrità è interessante quanto parlare di sport.
+              - I pettegolezzi al lavoro sono comuni come quelli a scuola.
+          - text: '**il più / la più** (הכי): il massimo in un gruppo. Il gruppo va dopo *di* (*della lista, della famiglia*).'
+            examples:
+              - Shakira è la più interessante della lista.
+              - Questa è stata la voce più strana della settimana.
+              - Mia zia è la persona più pettegola della famiglia.
+          - text: '**meglio / peggio** (טוב יותר / גרוע יותר): + *di* davanti a un nome o a un pronome, + *che* tra due verbi.'
+            examples:
+              - Racconti le storie meglio di me.
+              - È meglio parlare di celebrità che parlare di amici.
+              - È peggio inventare una voce falsa che ripetere una notizia vera.
+              - Secondo me, leggere gossip è meglio che diffondere pettegolezzi.
+      - id: can-do
+        type: callout
+        tone: info
+        title: Cosa sappiamo fare adesso
+        text: |-
+          Raccontare cosa è successo: *Ieri ho parlato con un amico. Ho sentito una voce falsa. Ho visto una foto sui social.*
+          Confrontare persone, storie e situazioni: *I pettegolezzi falsi sono più pericolosi di quelli veri. Sono meno pettegolo di mio fratello. Questa è stata la storia più divertente.*
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le regole con la classe e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: pettegolezzi-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia un messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-passato
+        type: aiTutorPrompt
+        title: 'Parte 1: Passato prossimo'
+        message: |-
+          Mori, fammi queste domande in ordine. Aspetta la mia risposta e poi fammi una breve domanda di approfondimento.
+          1. Qual è stata l'ultima cosa che hai sentito da un amico? (Approfondimento: Quando l'hai sentita?)
+          2. Con chi hai parlato ieri e di cosa? (Approfondimento: Dove eravate?)
+          3. Hai mai sentito una voce falsa? (Approfondimento: Era una situazione divertente o seria?)
+      - id: mori-confronti
+        type: aiTutorPrompt
+        title: 'Parte 2: Confronti'
+        message: |-
+          Mori, fammi queste domande di confronto. Correggi la mia risposta se non uso più, meno, tanto quanto, il più o la più.
+          1. È meglio parlare di amici o di celebrità?
+          2. Chi è più pettegolo, tu o il tuo migliore amico?
+          3. Il pettegolezzo è più divertente o più pericoloso?
+          4. Chi è la persona più pettegola nella tua famiglia?
+      - id: mori-non-ho-mai
+        type: aiTutorPrompt
+        title: 'Parte 3: Mini gioco «Non ho mai»'
+        intro: 'Il gioco *Non ho mai* è come «אף פעם לא…». Esempi: *Hai mai raccontato un segreto a un amico? Hai mai creduto a una voce falsa? Hai mai letto gossip su una celebrità?*'
+        message: 'Mori, fammi tre domande con «Hai mai…?» sul tema del gossip. Aspetta la mia risposta e poi chiedimi: «Dammi più dettagli».'
+      - id: mori-scrittura
+        type: aiTutorPrompt
+        title: 'Parte 4: Scrittura guidata'
+        message: |-
+          Mori, fammi queste due domande e chiedimi di rispondere in 2 o 3 frasi complete.
+          1. Quale pettegolezzo interessante hai sentito il mese scorso?
+          2. Chi è la persona più pettegola della tua vita e perché?
+      - id: mori-riepilogo
+        type: aiTutorPrompt
+        title: 'Parte 5: Riepilogo'
+        message: Mori, chiedimi di scrivere 3 frasi al passato prossimo e 2 confronti sul tema del gossip. Poi correggi i miei errori.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+      - id: written-title
+        type: heading
+        level: 3
+        text: Esercizi scritti
+      - id: hw1
+        type: discussionQuestions
+        title: 'Parte 1: Completa al passato prossimo con il verbo tra parentesi'
+        items:
+          - question: Ieri io ___ un pettegolezzo interessante. (sentire)
+          - question: Marco ___ una foto sui social. (vedere)
+          - question: Noi ___ con la nostra famiglia. (parlare)
+          - question: Tu ___ un segreto a un amico? (raccontare)
+          - question: Loro ___ una voce falsa. (sentire)
+          - question: Io ___ un articolo su una celebrità. (leggere)
+          - question: Giulia ___ una storia assurda. (inventare)
+          - question: Voi ___ una notizia vera o falsa? (pubblicare)
+          - question: Mio fratello ___ a una voce falsa. (credere)
+          - question: Ieri sera Anna ___ con le sue amiche. (uscire)
+      - id: hw2
+        type: discussionQuestions
+        title: 'Parte 2: Avere o essere? Completa'
+        items:
+          - question: Io ___ parlato con un amico.
+          - question: Lei ___ uscita ieri sera.
+          - question: Noi ___ letto un gossip sulle celebrità.
+          - question: Loro ___ andati a cena.
+          - question: Tu ___ sentito una voce strana?
+          - question: Voi ___ scoperto un segreto?
+          - question: Marco ___ tornato a casa tardi.
+          - question: Io ___ visto una foto interessante.
+          - question: Le ragazze ___ uscite insieme.
+          - question: La mia famiglia ___ raccontato una storia divertente.
+      - id: hw3
+        type: discussionQuestions
+        title: 'Parte 3: Completa con uscire al passato prossimo (attenzione al participio)'
+        items:
+          - question: Marco ___ ___ ieri sera.
+          - question: Giulia ___ ___ con le amiche.
+          - question: Io, Moshe, ___ ___ alle otto.
+          - question: Io, Dana, ___ ___ alle nove.
+          - question: Noi, due uomini, ___ ___ insieme.
+          - question: Noi, due donne, ___ ___ insieme.
+          - question: Voi, ragazzi, ___ ___ tardi.
+          - question: Voi, ragazze, ___ ___ tardi.
+          - question: Loro, uomini, ___ ___ dopo cena.
+          - question: Loro, donne, ___ ___ dopo cena.
+      - id: hw4
+        type: discussionQuestions
+        title: 'Parte 4: Scrivi le frasi al passato prossimo (Parlo con un amico. → Ho parlato con un amico.)'
+        items:
+          - question: Sento una voce falsa.
+          - question: Vedo una foto sui social.
+          - question: Parliamo di celebrità.
+          - question: Racconti un segreto.
+          - question: Leggono un articolo interessante.
+          - question: Pubblico una foto.
+          - question: Scopriamo la verità.
+          - question: Credete a questa storia.
+          - question: Invento un pettegolezzo.
+          - question: Esce con gli amici.
+      - id: hw5
+        type: discussionQuestions
+        title: 'Parte 5: Completa con più… di, meno… di, (tanto)… quanto'
+        items:
+          - question: Ana è ___ pettegola ___ Pedro.
+          - question: Questa voce è ___ credibile ___ quella di ieri.
+          - question: Parlare di celebrità è interessante ___ parlare di sport.
+          - question: Il gossip sugli amici è ___ personale ___ gossip sulle celebrità.
+          - question: Questa storia è divertente ___ la tua.
+          - question: Mio fratello è ___ curioso ___ me.
+          - question: Le notizie false sono ___ pericolose ___ notizie vere.
+          - question: La mia amica è ___ pettegola ___ mia zia.
+      - id: hw6
+        type: discussionQuestions
+        title: 'Parte 6: Scegli la parola giusta'
+        items:
+          - question: Questa storia è più interessante ___ mia. (a. di / b. della / c. del)
+          - question: I pettegolezzi falsi sono più pericolosi ___ pettegolezzi veri. (a. di / b. dei / c. della)
+          - question: Marco è meno pettegolo ___ suo fratello. (a. di / b. della / c. dei)
+          - question: Questa è la storia più strana ___ settimana. (a. del / b. della / c. dei)
+          - question: Leggere gossip è meglio ___ inventare gossip. (a. che / b. di / c. della)
+          - question: Parlare di amici è peggio ___ parlare di celebrità. (a. che / b. dei / c. del)
+      - id: hw7-title
+        type: text
+        text: '**Parte 7:** traduci in italiano.'
+      - id: hw7
+        type: discussionQuestions
+        lang: he
+        items:
+          - question: אתמול שמעתי שמועה שקרית.
+          - question: ראיתי תמונה ברשתות החברתיות.
+          - question: דיברתי עם המשפחה שלי.
+          - question: חבר סיפר לי סוד.
+          - question: דודה שלי היא האדם הכי רכלן במשפחה.
+          - question: רכילות שקרית מסוכנת יותר מרכילות אמיתית.
+          - question: אני פחות רכלן מאחי.
+          - question: עדיף לקרוא רכילות מאשר להפיץ רכילות.
+          - question: יצאתי אתמול בערב עם חברים.
+          - question: הסיפור הזה מצחיק כמו הסיפור שלך.
+      - id: hw8-text
+        type: text
+        text: |-
+          **Parte 8:** leggi il testo e rispondi alle domande.
+
+          Ieri sera sono uscito con due amici. Abbiamo parlato di lavoro, di famiglia e anche di gossip. Un amico mi ha raccontato una voce molto strana su una celebrità famosa. All'inizio ho creduto alla storia, ma dopo ho scoperto che era falsa. Secondo me, i pettegolezzi falsi sono più pericolosi dei pettegolezzi veri, perché possono creare problemi. Però, a volte, leggere gossip è divertente quanto guardare una serie TV.
+      - id: hw8
+        type: discussionQuestions
+        items:
+          - question: Con chi è uscito il narratore?
+          - question: Di che cosa hanno parlato?
+          - question: Che cosa ha raccontato un amico?
+          - question: La voce era vera o falsa?
+          - question: Secondo il testo, perché i pettegolezzi falsi sono pericolosi?
+          - question: 'Completa: leggere gossip è divertente quanto ___.'
+      - id: hw9
+        type: reflection
+        prompt: >-
+          **Parte 9:** scrivi 5 frasi sul gossip: 2 al passato prossimo, 2 confronti con
+          *più*, *meno* o *(tanto)… quanto* e 1 frase con *il più* o *la più*. Puoi
+          cominciare così: *Ieri ho sentito… / Secondo me, il gossip è… / Nella mia
+          famiglia, la persona più pettegola è…*
+    teacherNotes:
+      - id: n-written
+        anchor: written-title
+        text: Gli esercizi scritti vengono dal quaderno («compiti classici»). Le soluzioni sono nelle note qui sotto.
+      - id: n-hw1
+        anchor: hw1
+        text: 'Soluzioni: 1 ho sentito, 2 ha visto, 3 abbiamo parlato, 4 hai raccontato, 5 hanno sentito, 6 ho letto, 7 ha inventato, 8 avete pubblicato, 9 ha creduto, 10 è uscita.'
+      - id: n-hw2
+        anchor: hw2
+        text: 'Soluzioni: 1 ho, 2 è, 3 abbiamo, 4 sono, 5 hai, 6 avete, 7 è, 8 ho, 9 sono, 10 ha.'
+      - id: n-hw3
+        anchor: hw3
+        text: >-
+          Soluzioni: 1 è uscito, 2 è uscita, 3 sono uscito, 4 sono uscita, 5 siamo
+          usciti, 6 siamo uscite, 7 siete usciti, 8 siete uscite, 9 sono usciti, 10 sono
+          uscite.
+      - id: n-hw4
+        anchor: hw4
+        text: >-
+          Soluzioni: 1 Ho sentito una voce falsa. 2 Ho visto una foto sui social. 3
+          Abbiamo parlato di celebrità. 4 Hai raccontato un segreto. 5 Hanno letto un
+          articolo interessante. 6 Ho pubblicato una foto. 7 Abbiamo scoperto la verità.
+          8 Avete creduto a questa storia. 9 Ho inventato un pettegolezzo. 10 È uscito /
+          uscita con gli amici.
+      - id: n-hw5
+        anchor: hw5
+        text: >-
+          Soluzioni possibili: 1 più… di, 2 meno… di, 3 quanto, 4 più… del, 5 quanto, 6
+          più / meno… di, 7 più… delle, 8 più / meno… di.
+      - id: n-hw6
+        anchor: hw6
+        text: 'Soluzioni: 1 b (della), 2 b (dei), 3 a (di), 4 b (della), 5 a (che), 6 a (che).'
+      - id: n-hw7
+        anchor: hw7
+        text: >-
+          Soluzioni possibili: 1 Ieri ho sentito una voce falsa. 2 Ho visto una foto sui
+          social. 3 Ho parlato con la mia famiglia. 4 Un amico mi ha raccontato un
+          segreto. 5 Mia zia è la persona più pettegola della famiglia. 6 I pettegolezzi
+          falsi sono più pericolosi dei pettegolezzi veri. 7 Sono meno pettegolo di mio
+          fratello. 8 È meglio leggere gossip che diffondere pettegolezzi. 9 Ieri sera
+          sono uscito / uscita con gli amici. 10 Questa storia è divertente quanto la
+          tua.
+      - id: n-hw8
+        anchor: hw8
+        text: >-
+          Soluzioni: 1 È uscito con due amici. 2 Hanno parlato di lavoro, di famiglia e di
+          gossip. 3 Ha raccontato una voce strana su una celebrità famosa. 4 Era falsa. 5
+          Perché possono creare problemi. 6 … guardare una serie TV.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: pettegolezzi-pratica
+    book: workbook
+    title: 'Pratica: Pettegolezzi e voci'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-passato
+        type: activity
+        activity: pettegolezzi-passato
+      - id: ex-confronti
+        type: activity
+        activity: pettegolezzi-confronti
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: pettegolezzi-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole dei pettegolezzi
+        glossLang: he
+        link: https://quizlet.com/br/1191138213/pettegolezzi-e-voci-flash-cards/
+        items: &pettegolezzi-words
+          - { term: pettegolezzo, gloss: רכילות }
+          - { term: voce, gloss: שמועה }
+          - { term: voce falsa, gloss: שמועה שקרית }
+          - { term: segreto, gloss: סוד }
+          - { term: vita privata, gloss: חיים פרטיים }
+          - { term: celebrità, gloss: ידוען / סלבריטי }
+          - { term: pettegolo, gloss: רכלן }
+          - { term: pettegola, gloss: רכלנית }
+          - { term: spettegolare, gloss: לרכל }
+          - { term: diffondere, gloss: להפיץ }
+          - { term: diffondere voci false, gloss: להפיץ שמועות שקריות }
+          - { term: raccontare un segreto, gloss: לספר סוד }
+          - { term: credere a una voce, gloss: להאמין לשמועה }
+          - { term: scoprire la verità, gloss: לגלות את האמת }
+          - { term: inventare, gloss: להמציא }
+          - { term: inventare un pettegolezzo, gloss: להמציא רכילות }
+          - { term: pubblicare, gloss: לפרסם }
+          - { term: discutere, gloss: להתווכח / לדון }
+          - { term: litigare, gloss: לריב }
+          - { term: malinteso, gloss: אי הבנה }
+          - { term: sorpreso, gloss: מופתע }
+          - { term: ambiguo / ambigua, gloss: דו משמעי / לא ברור }
+          - { term: credibile, gloss: אמין }
+          - { term: meno credibile, gloss: פחות אמין }
+          - { term: pericoloso, gloss: מסוכן }
+          - { term: divertente, gloss: מצחיק / מהנה }
+          - { term: drammatico, gloss: דרמטי }
+          - { term: realistico, gloss: ריאליסטי }
+          - { term: assurdo, gloss: אבסורדי / מופרך }
+          - { term: strano, gloss: מוזר }
+          - { term: serio, gloss: רציני }
+          - { term: rischio, gloss: סיכון }
+          - { term: situazione, gloss: מצב }
+          - { term: dettaglio, gloss: פרט }
+          - { term: intervista, gloss: ראיון }
+          - { term: prendere appunti, gloss: לרשום הערות }
+
+vocabulary:
+  - slug: pettegolezzi
+    title: Pettegolezzi e voci
+    items: *pettegolezzi-words
+
+activities:
+  - slug: pettegolezzi-passato
+    title: 'Passato prossimo: ho sentito, ho visto, è uscita'
+    minutes: 8
+    items:
+      - id: ho-sentito
+        type: multipleChoice
+        prompt: Ieri io ___ un pettegolezzo interessante.
+        options:
+          - { text: ho sentito, correct: true }
+          - {
+              text: sento,
+              feedback: '*Sento* è presente. Con *ieri* usiamo il passato prossimo: *ho sentito*.',
+            }
+          - { text: sono sentito, feedback: 'Il verbo *sentire* usa *avere*: *ho sentito*.' }
+      - id: anna-uscita
+        type: fillBlank
+        prompt: Completa con *uscire* al passato prossimo.
+        text: Ieri sera Anna ___ con le sue amiche.
+        blanks: [[è uscita, e uscita]]
+      - id: participi
+        type: matching
+        prompt: Unisci ogni verbo al suo participio passato.
+        pairs:
+          - [sentire, sentito]
+          - [vedere, visto]
+          - [leggere, letto]
+          - [dire, detto]
+          - [scoprire, scoperto]
+      - id: participio-essere
+        type: trueFalse
+        prompt: "Con *essere* il participio cambia secondo chi fa l'azione: *Lei è uscita. Loro sono usciti.*"
+        answer: true
+        feedback:
+          correct: 'Giusto! *Lui è uscito, lei è uscita, loro sono usciti / uscite.*'
+          incorrect: 'Con *essere* il participio cambia (maschile / femminile, singolare / plurale): *lei è uscita*.'
+      - id: ragazze-uscite
+        type: multipleChoice
+        prompt: Le ragazze ___ uscite insieme.
+        options:
+          - { text: sono, correct: true }
+          - { text: hanno, feedback: 'Il verbo *uscire* usa *essere*: *sono uscite*.' }
+          - { text: è, feedback: '*Le ragazze* sono loro (plurale): *sono uscite*.' }
+      - id: sentito-scoperto
+        type: fillBlank
+        prompt: Completa al passato prossimo con *sentire* e *scoprire*.
+        text: Ieri io ___ una voce falsa, ma poi noi ___ la verità.
+        blanks: [[ho sentito], [abbiamo scoperto]]
+      - id: amico-detto
+        type: multipleChoice
+        prompt: Un amico mi ___ un segreto.
+        options:
+          - { text: ha detto, correct: true }
+          - {
+              text: ho detto,
+              feedback: '*Ho detto* è per *io*. Per *un amico* (lui) usiamo *ha detto*.',
+            }
+          - { text: è detto, feedback: 'Il verbo *dire* usa *avere*: *ha detto*.' }
+      - id: ordina-uscito
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Ieri sera sono uscito con due amici.
+
+  - slug: pettegolezzi-confronti
+    title: 'Confronti: più… di, meno… di, quanto, il più'
+    minutes: 8
+    items:
+      - id: ana-pedro
+        type: multipleChoice
+        prompt: Ana è più pettegola ___ Pedro.
+        options:
+          - { text: di, correct: true }
+          - {
+              text: che,
+              feedback: 'Davanti a un nome di persona usiamo *di*: *più pettegola di Pedro*.',
+            }
+          - { text: del, feedback: '*Pedro* è un nome di persona, senza articolo: *di Pedro*.' }
+      - id: dei-veri
+        type: multipleChoice
+        prompt: I pettegolezzi falsi sono più pericolosi ___ pettegolezzi veri.
+        options:
+          - { text: dei, correct: true }
+          - { text: di, feedback: 'Davanti a *i pettegolezzi* usiamo *di + i = dei*.' }
+          - {
+              text: della,
+              feedback: '*Della* = di + la. *Pettegolezzi* è maschile plurale: *dei*.',
+            }
+      - id: della-settimana
+        type: fillBlank
+        prompt: Completa con *del*, *della* o *dei*.
+        text: Questa è la storia più strana ___ settimana.
+        blanks: [[della]]
+        wordBank: [del, della, dei]
+      - id: meglio-che
+        type: multipleChoice
+        prompt: Leggere gossip è meglio ___ inventare gossip.
+        options:
+          - { text: che, correct: true }
+          - {
+              text: di,
+              feedback: 'Tra due verbi (*leggere*, *inventare*) usiamo *che*: *meglio che inventare*.',
+            }
+          - { text: della, feedback: 'Tra due verbi usiamo *che*: *meglio che inventare*.' }
+      - id: quanto
+        type: trueFalse
+        prompt: '*Questa storia è divertente quanto la tua* vuol dire che le due storie sono divertenti allo stesso modo.'
+        answer: true
+        feedback:
+          correct: 'Giusto! *(tanto)… quanto* = כמו: le due cose sono uguali.'
+          incorrect: '*(tanto)… quanto* vuol dire che le due cose sono uguali: la mia storia e la tua sono divertenti allo stesso modo.'
+      - id: meno-pettegolo
+        type: fillBlank
+        prompt: Completa con *più* o *meno*.
+        text: 'Io sono ___ pettegolo di mio fratello: lui parla di tutti, io no.'
+        blanks: [[meno]]
+        wordBank: [più, meno]
+      - id: completa-frasi
+        type: matching
+        prompt: Unisci le due parti della frase.
+        pairs:
+          - [Mia zia è la persona più pettegola, della famiglia.]
+          - [Questa storia è divertente, quanto la tua.]
+          - [È meglio leggere, che parlare.]
+          - [Questa voce era meno credibile, dell'altra.]
+      - id: ordina-zia
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Mia zia è la persona più pettegola della famiglia.
