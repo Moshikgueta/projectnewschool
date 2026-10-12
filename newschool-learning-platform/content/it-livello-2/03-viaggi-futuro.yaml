@@ -1,0 +1,547 @@
+# Cycle "Viaggi - Futuro", converted from the Italian level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-livello-2
+slug: viaggi-futuro
+title: Viaggi e futuro
+goal: Parlare di viaggi, piani e sogni con il futuro semplice e fare domande al futuro.
+position: 3
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Frasi al futuro" and "Domande al futuro") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's rules,
+    the activity examples and its vocabulary. Please check level, wording and every
+    right answer before students see them.
+  - >-
+    The cycle is incomplete in the source: it has NO lesson summary ("Riepilogo"), NO
+    homework with Mori and no lesson plan. The summary section was built from the
+    notebook's "Informazioni generali" and "Cosa praticheremo oggi" (the futuro
+    semplice table and examples), so the "Compiti" section is left out. Please add a
+    Mori task if there is one. Title "Viaggi- Futuro" → "Viaggi e futuro".
+  - >-
+    Two skills were chosen from "Cosa praticheremo oggi": "Il futuro semplice"
+    (talking about our plans and about other people) and "Domande al futuro" (asking
+    others). Please confirm.
+  - >-
+    Summary, formation: "verbo + desinenze del futuro" was incomplete (viaggiare →
+    viaggerò is not "viaggiare + ò"). ADDED: -are and -ere → -er-, -ire → -ir-, verbs in
+    -ciare / -giare lose the i (viaggiare → viaggerò, mangiare → mangerò), and the
+    irregular futures used in the cycle (andrò, sarò, avrò, farò, vivrò). ADDED a short
+    rule on questions (tu form + question words), which the notebook has only as
+    examples. Please confirm.
+  - >-
+    Corrections: introduction "Il mio prossimo viaggio sarà a ___" → "a / in ___" (the
+    example says "in Grecia"); Activity 4 "Il prossimo anno viaggerò a ___" → "in / a
+    ___"; Activity 5 "Proverai cibo locale?" → "Proverai il cibo locale?" and "proverò
+    sushi" → "proverò il sushi"; Activity 1 "Viaggerà con treni elettrici" → "Viaggerà
+    con i treni elettrici".
+  - >-
+    Vocabulary: the future forms were glossed with the Hebrew infinitive ("Io viaggerò
+    / Tu viaggerai / Lui viaggerà – לטייל / לנסוע"). They now have the matching future
+    forms (אטייל / תטייל / יטייל, etc.). "Escursione – טיול" → "סיור / טיול רגלי";
+    "Progetto – פרויקט" → "תוכנית / פרויקט" (in this cycle it means plans). Please
+    check.
+  - >-
+    Links: the lesson slides (gamma.app) are not allowed and were left out (teacher
+    note). The Quizlet link is kept without "?new".
+  - >-
+    Times: the source gives only Activity 1 phase 1 (5 minutes) and Activity 4 (3 + 7 +
+    3 = 13 minutes). The "Studente 1/2/3" lines are replaced by the optional answer
+    boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: viaggi-futuro-classe
+    title: 'In classe: Viaggi e futuro'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Viaggi e futuro
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Il futuro semplice
+            description: 'Parlare di piani, sogni e previsioni, e di altre persone: *Visiterò il Giappone. Il mio compagno visiterà Roma.*'
+          - name: Domande al futuro
+            description: "*Cosa visiterai? Con chi viaggerai? Come sarà l'hotel?*"
+      - id: quizlet
+        type: externalLink
+        label: Viaggi e futuro su Quizlet
+        url: https://quizlet.com/br/1154891027/viaggi-futuro-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro introduttivo
+      - id: intro
+        type: sentenceFrame
+        frame: Mi chiamo ___. Il mio prossimo viaggio sarà a / in ___. Visiterò ___.
+        example: Mi chiamo Marta. Il mio prossimo viaggio sarà in Grecia. Visiterò le isole.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di preparazione
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quali luoghi visiterai nel tuo prossimo viaggio?
+            frame: Visiterò Barcellona e Siviglia.
+          - question: Quali attività farai durante il viaggio?
+            frame: Farò escursioni e proverò il cibo locale.
+          - question: Cosa porterai in valigia?
+            frame: Porterò vestiti estivi e la mia macchina fotografica.
+          - question: Come sarà l'hotel?
+            frame: Sarà grande e avrà una piscina.
+          - question: Come viaggerai tra 20 anni?
+            frame: Userò auto elettriche o viaggerò in treno veloce.
+          - question: Quale sarà il viaggio dei tuoi sogni?
+            frame: Sarà un viaggio in Giappone e visiterò templi antichi.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Tra 20 anni'
+        skills: [Il futuro semplice, Domande al futuro]
+        steps:
+          - Completa le frasi qui sotto sulla tua vita tra 20 anni.
+          - 'In coppia: uno studente legge le frasi, il compagno fa domande.'
+          - Presenta il tuo compagno alla classe.
+        example: |-
+          *A: Tra 20 anni vivrò a Barcellona.*
+          *B: Con chi vivrai a Barcellona?*
+          *Il mio compagno vivrà a Barcellona. Viaggerà con i treni elettrici. La sua casa sarà intelligente.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Tra 20 anni…
+        items:
+          - question: Tra 20 anni vivrò a ___.
+          - question: Viaggerò in ___.
+          - question: La tecnologia sarà ___.
+          - question: La mia vita sarà ___.
+      - id: act1-questions
+        type: callout
+        tone: info
+        title: Domande possibili
+        text: |-
+          *Con chi vivrai? Come viaggerai? Cosa mangerai?*
+          *Come sarà la tua casa? Che lavoro farai? Cosa farai nel tempo libero?*
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Il viaggio dei miei sogni'
+        skills: [Il futuro semplice, Domande al futuro]
+        steps:
+          - Scrivi tre frasi sul viaggio dei tuoi sogni (la quarta è facoltativa).
+          - 'In coppia: il compagno fa domande.'
+          - Presenta il tuo compagno alla classe.
+        example: |-
+          *Quale città visiterai? Che cibo proverai? Con chi viaggerai? Cosa farai lì? Che lingua parlerai? Cosa porterai con te?*
+          *Il mio compagno visiterà il Giappone. Proverà il ramen. Incontrerà un amico giapponese.*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Il viaggio dei miei sogni
+        items:
+          - question: Un giorno visiterò ___.
+          - question: Proverò ___.
+          - question: Incontrerò ___.
+          - question: (Facoltativo) Dormirò in ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Previsioni quotidiane'
+        skills: [Il futuro semplice, Domande al futuro]
+        steps:
+          - "L'insegnante propone una situazione: il prossimo fine settimana, la prossima estate, la tua vita tra 20 anni, il futuro dei trasporti."
+          - Scrivi due frasi al futuro.
+          - 'In coppia: il compagno fa domande.'
+          - Presenta il tuo compagno alla classe.
+        example: |-
+          *Il prossimo fine settimana andrò al mare. Tra 10 anni studierò all'università.*
+          *Con chi andrai al mare? Cosa studierai all'università?*
+          *Il mio compagno andrà al mare il prossimo fine settimana. Tra 10 anni studierà all'università.*
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Le mie previsioni
+        items:
+          - question: ___ (situazione) ___.
+            frame: Il prossimo fine settimana andrò ___.
+          - question: ___ (situazione) ___.
+            frame: Tra 10 anni ___.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Il mio prossimo viaggio'
+        skills: [Il futuro semplice, Domande al futuro]
+        minutes: 13
+        steps:
+          - Completa le frasi qui sotto su un viaggio reale.
+          - "In coppia: fate un'intervista. Domande possibili: *Dove viaggerai? Con chi viaggerai? Quanto tempo resterai lì? Cosa visiterai? Che cibo proverai?*"
+          - Presenta il tuo compagno alla classe.
+        example: |-
+          *A: Viaggerò in Italia.*
+          *B: Quale città visiterai?*
+          *Il mio compagno viaggerà in Italia. Visiterà Roma e Firenze. Proverà la pizza e la pasta.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Il mio prossimo viaggio
+        items:
+          - question: Il prossimo anno viaggerò in / a ___.
+          - question: Visiterò ___.
+          - question: Proverò ___.
+          - question: Dormirò in ___.
+          - question: Viaggerò con ___.
+      - id: act5
+        type: classActivity
+        title: 'Attività 5: Indovina il viaggio'
+        skills: [Domande al futuro]
+        steps:
+          - Uno studente pensa a un viaggio futuro ma non dice il luogo. Può dare un indizio.
+          - Gli altri studenti fanno domande al futuro.
+          - Gli studenti devono indovinare il luogo.
+        example: |-
+          *Viaggerai in Europa? Visiterai una grande città? Proverai il cibo locale? Viaggerai in aereo?*
+          *A: Visiterò templi e proverò il sushi.*
+          *B: Viaggerai in Giappone?*
+      - id: act6
+        type: classActivity
+        title: 'Attività 6: Pianifichiamo un viaggio'
+        skills: [Il futuro semplice]
+        steps:
+          - Lavorate in piccoli gruppi. Scegliete un paese.
+          - Create un piano per tre giorni di viaggio. Usate il futuro (noi).
+          - Presentate il piano alla classe.
+        example: |-
+          *Giorno 1: Visiteremo il centro storico.*
+          *Giorno 2: Proveremo il cibo locale.*
+          *Giorno 3: Andremo al museo.*
+      - id: act6-plan
+        type: discussionQuestions
+        title: Il nostro viaggio
+        items:
+          - question: 'Paese: ___'
+          - question: 'Giorno 1: Visiteremo ___.'
+          - question: 'Giorno 2: Proveremo ___.'
+          - question: 'Giorno 3: Faremo ___.'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Il quaderno non ha un piano della lezione. Ci sono sei attività: scegline due o
+          tre secondo il tempo. Tutte praticano il **futuro semplice**; per le **domande
+          al futuro** sono utili soprattutto le Attività 1, 4 e 5.
+      - id: n-links
+        anchor: null
+        text: La presentazione della lezione (gamma.app) non è inclusa nella piattaforma.
+      - id: n-intro
+        anchor: intro
+        text: Fai prima il tuo esempio e poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: 'Scrittura: 5 minuti. Poi lavoro in coppia e presentazione.'
+      - id: n-act3
+        anchor: act3
+        text: Proponi una situazione alla volta (il prossimo fine settimana, la prossima estate, la vita tra 20 anni, il futuro dei trasporti).
+      - id: n-act4
+        anchor: act4
+        minutes: 13
+        text: 'Preparazione: 3 minuti. Intervista: 7 minuti. Presentazione: 3 minuti.'
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: viaggi-futuro-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-futuro
+        type: ruleSummary
+        skill: Il futuro semplice
+        rules:
+          - text: 'Usiamo il **futuro semplice** per parlare di cose che succederanno: **piani**, **sogni** e **previsioni**.'
+            examples: [Io viaggerò in Giappone., Tu visiterai Roma., Noi proveremo il cibo locale.]
+          - text: 'Come si forma: radice del futuro + **-ò, -ai, -à, -emo, -ete, -anno**. I verbi in **-are** e **-ere** prendono **-er-**, i verbi in **-ire** prendono **-ir-**.'
+            examples: ['visitare → visiterò', 'prendere → prenderò', 'partire → partirò']
+          - text: 'I verbi in **-ciare** e **-giare** perdono la *i*.'
+            examples: ['viaggiare → viaggerò', 'mangiare → mangerò']
+          - text: 'Alcuni verbi sono irregolari.'
+            examples: ['andare → andrò, essere → sarò, avere → avrò, fare → farò, vivere → vivrò']
+          - text: "Per parlare di un'altra persona usiamo la forma di **lui / lei**."
+            examples: [Il mio compagno visiterà il Giappone., La sua casa sarà intelligente.]
+      - id: futuro-table
+        type: table
+        caption: Il futuro semplice di viaggiare
+        header: [Persona, Desinenza, Esempio (viaggiare)]
+        rows:
+          - [io, -ò, viaggerò]
+          - [tu, -ai, viaggerai]
+          - [lui / lei, -à, viaggerà]
+          - [noi, -emo, viaggeremo]
+          - [voi, -ete, viaggerete]
+          - [loro, -anno, viaggeranno]
+      - id: rules-domande
+        type: ruleSummary
+        skill: Domande al futuro
+        rules:
+          - text: 'Per fare una domanda a un compagno usiamo la forma di **tu** (*-ai*): *visiterai, viaggerai, farai*.'
+            examples:
+              [
+                Visiterò il Giappone. → Cosa visiterai in Giappone?,
+                Tra 20 anni vivrò a Barcellona. → Con chi vivrai a Barcellona?,
+              ]
+          - text: 'Parole per fare domande: *dove, con chi, cosa / che cosa, che + nome, quale, come, quanto tempo*.'
+            examples:
+              [
+                Dove viaggerai?,
+                Che cibo proverai?,
+                Come sarà la tua casa?,
+                Quanto tempo resterai lì?,
+              ]
+          - text: "Nelle domande sì / no basta l'intonazione: l'ordine delle parole non cambia."
+            examples: [Viaggerai in aereo?, Visiterai una grande città?]
+      - id: can-do
+        type: callout
+        tone: info
+        title: Cosa sappiamo fare adesso
+        text: |-
+          Parlare dei nostri piani: *Visiterò il Giappone.*
+          Fare domande agli altri: *Cosa visiterai in Giappone?*
+          Parlare di altre persone: *Il mio compagno visiterà il Giappone.*
+          Parlare di viaggi futuri, sogni, progetti e previsioni.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con la classe e chiedi un esempio nuovo per ogni regola.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: viaggi-futuro-pratica
+    book: workbook
+    title: 'Pratica: Viaggi e futuro'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-frasi
+        type: activity
+        activity: viaggi-futuro-frasi
+      - id: ex-domande
+        type: activity
+        activity: viaggi-futuro-domande
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: viaggi-futuro-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole dei viaggi
+        glossLang: he
+        link: https://quizlet.com/br/1154891027/viaggi-futuro-flash-cards/
+        items: &viaggi-futuro-words
+          - { term: viaggio, gloss: טיול / נסיעה }
+          - { term: futuro, gloss: עתיד }
+          - { term: piano, gloss: תוכנית }
+          - { term: sogno, gloss: חלום }
+          - { term: previsione, gloss: תחזית }
+          - { term: progetto, gloss: תוכנית / פרויקט }
+          - {
+              term: Io viaggerò / Tu viaggerai / Lui viaggerà (viaggiare),
+              gloss: אטייל / תטייל / יטייל,
+            }
+          - {
+              term: Io visiterò / Tu visiterai / Lui visiterà (visitare),
+              gloss: אבקר / תבקר / יבקר,
+            }
+          - {
+              term: Io partirò / Tu partirai / Lui partirà (partire),
+              gloss: אצא לדרך / תצא לדרך / יצא לדרך,
+            }
+          - {
+              term: Io arriverò / Tu arriverai / Lui arriverà (arrivare),
+              gloss: אגיע / תגיע / יגיע,
+            }
+          - { term: Io andrò / Tu andrai / Lui andrà (andare), gloss: אלך / תלך / ילך }
+          - { term: Io tornerò / Tu tornerai / Lui tornerà (tornare), gloss: אחזור / תחזור / יחזור }
+          - { term: Io dormirò / Tu dormirai / Lui dormirà (dormire), gloss: אישן / תישן / יישן }
+          - { term: Io mangerò / Tu mangerai / Lui mangerà (mangiare), gloss: אוכל / תאכל / יאכל }
+          - { term: Io proverò / Tu proverai / Lui proverà (provare), gloss: אנסה / תנסה / ינסה }
+          - { term: Io porterò / Tu porterai / Lui porterà (portare), gloss: אביא / תביא / יביא }
+          - {
+              term: Io incontrerò / Tu incontrerai / Lui incontrerà (incontrare),
+              gloss: אפגוש / תפגוש / יפגוש,
+            }
+          - { term: Io resterò / Tu resterai / Lui resterà (restare), gloss: אשאר / תישאר / יישאר }
+          - { term: città, gloss: עיר }
+          - { term: paese, gloss: מדינה }
+          - { term: hotel, gloss: מלון }
+          - { term: museo, gloss: מוזיאון }
+          - { term: centro, gloss: מרכז }
+          - { term: tempio, gloss: מקדש }
+          - { term: isola, gloss: אי }
+          - { term: mare, gloss: ים }
+          - { term: montagna, gloss: הר }
+          - { term: valigia, gloss: מזוודה }
+          - { term: biglietto, gloss: כרטיס }
+          - { term: escursione, gloss: סיור / טיול רגלי }
+          - { term: cibo, gloss: אוכל }
+          - { term: lingua, gloss: שפה }
+          - { term: casa, gloss: בית }
+          - { term: tecnologia, gloss: טכנולוגיה }
+          - { term: domani, gloss: מחר }
+          - { term: prossimo, gloss: הבא }
+
+vocabulary:
+  - slug: viaggi-futuro
+    title: Viaggi e futuro
+    items: *viaggi-futuro-words
+
+activities:
+  - slug: viaggi-futuro-frasi
+    title: 'Il futuro semplice: viaggerò, visiterò, sarò'
+    minutes: 8
+    items:
+      - id: viaggero
+        type: multipleChoice
+        prompt: Il prossimo anno (io) ___ in Italia.
+        options:
+          - { text: viaggerò, correct: true }
+          - {
+              text: viaggiarò,
+              feedback: 'Nel futuro i verbi in *-are* prendono *-er-*, e *viaggiare* perde la *i*: *viaggerò*.',
+            }
+          - {
+              text: viaggerà,
+              feedback: '*Viaggerà* è per *lui / lei*. Per *io* usiamo *viaggerò*.',
+            }
+      - id: proveremo
+        type: fillBlank
+        prompt: Completa con il futuro di *provare*.
+        text: Domani noi ___ il cibo locale.
+        blanks: [[proveremo]]
+      - id: unisci-persone
+        type: matching
+        prompt: Unisci ogni persona alla forma giusta di *viaggiare*.
+        pairs:
+          - [io, viaggerò]
+          - [tu, viaggerai]
+          - [lui / lei, viaggerà]
+          - [noi, viaggeremo]
+          - [loro, viaggeranno]
+      - id: are-er
+        type: trueFalse
+        prompt: 'Nel futuro dei verbi in *-are*, la *a* diventa *e*: *visitare → visiterò*.'
+        answer: true
+        feedback:
+          correct: 'Giusto! *visitare → visiterò*, *portare → porterò*.'
+          incorrect: 'I verbi in *-are* prendono *-er-* nel futuro: *visitare → visiterò*, *portare → porterò*.'
+      - id: sara-hotel
+        type: multipleChoice
+        prompt: L'hotel ___ grande e avrà una piscina.
+        options:
+          - { text: sarà, correct: true }
+          - { text: sarò, feedback: "*Sarò* è per *io*. L'hotel è *lui*: *sarà*." }
+          - {
+              text: è stato,
+              feedback: '*È stato* è passato. Parliamo del prossimo viaggio: usiamo il futuro, *sarà*.',
+            }
+      - id: compagno
+        type: fillBlank
+        prompt: Completa con il futuro di *vivere* e *essere*.
+        text: Il mio compagno ___ a Barcellona. La sua casa ___ intelligente.
+        blanks: [[vivrà], [sarà]]
+      - id: vivro
+        type: multipleChoice
+        prompt: Tra 20 anni (io) ___ a Barcellona.
+        options:
+          - { text: vivrò, correct: true }
+          - { text: viverò, feedback: '*Vivere* ha il futuro irregolare: *vivrò*.' }
+          - {
+              text: vivevo,
+              feedback: '*Vivevo* è imperfetto (passato). Con *tra 20 anni* usiamo il futuro: *vivrò*.',
+            }
+      - id: ordina-giappone
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Un giorno visiterò il Giappone.
+
+  - slug: viaggi-futuro-domande
+    title: 'Domande al futuro: cosa visiterai?'
+    minutes: 8
+    items:
+      - id: con-chi-vivrai
+        type: multipleChoice
+        prompt: 'A: *Tra 20 anni vivrò a Barcellona.* B: Qual è la domanda giusta?'
+        options:
+          - { text: Con chi vivrai a Barcellona?, correct: true }
+          - {
+              text: Con chi vivrò a Barcellona?,
+              feedback: '*Vivrò* è per *io*. Per fare una domanda al compagno usiamo *tu*: *vivrai*.',
+            }
+          - {
+              text: Con chi vivrà a Barcellona?,
+              feedback: '*Vivrà* è per *lui / lei*. Parli con il compagno: usa *tu*, *vivrai*.',
+            }
+      - id: proverai
+        type: fillBlank
+        prompt: Completa la domanda con il futuro di *provare* (tu).
+        text: Che cibo ___ in Italia?
+        blanks: [[proverai]]
+      - id: unisci-risposte
+        type: matching
+        prompt: Unisci ogni domanda alla sua risposta.
+        pairs:
+          - [Dove viaggerai?, Viaggerò in Italia.]
+          - [Con chi viaggerai?, Viaggerò con mia sorella.]
+          - [Quanto tempo resterai lì?, Resterò due settimane.]
+          - [Cosa porterai in valigia?, Porterò vestiti estivi.]
+          - [Come viaggerai?, Viaggerò in treno.]
+      - id: visiterai
+        type: multipleChoice
+        prompt: Quale domanda fai a un compagno sul suo prossimo viaggio?
+        options:
+          - { text: Visiterai una grande città?, correct: true }
+          - {
+              text: Visiterò una grande città?,
+              feedback: '*Visiterò* è per *io*. Per il compagno usiamo *tu*: *visiterai*.',
+            }
+          - {
+              text: Hai visitato una grande città?,
+              feedback: '*Hai visitato* è passato. Il viaggio è nel futuro: *visiterai*.',
+            }
+      - id: forma-tu
+        type: trueFalse
+        prompt: 'Per fare una domanda a un compagno al futuro usiamo la forma di *tu*: *Cosa farai lì?*'
+        answer: true
+        feedback:
+          correct: 'Giusto! *farai, visiterai, viaggerai* finiscono in *-ai*.'
+          incorrect: 'Per il compagno usiamo *tu*, con la desinenza *-ai*: *Cosa farai lì?*'
+      - id: parlerai
+        type: fillBlank
+        prompt: Completa la domanda con il futuro di *parlare* (tu).
+        text: Che lingua ___ in Giappone? — Parlerò inglese.
+        blanks: [[parlerai]]
+      - id: indovina
+        type: multipleChoice
+        prompt: 'A: *Visiterò templi e proverò il sushi.* B: ___'
+        options:
+          - { text: Viaggerai in Giappone?, correct: true }
+          - {
+              text: Viaggerò in Giappone?,
+              feedback: '*Viaggerò* è per *io*. Fai la domanda al compagno: *viaggerai*.',
+            }
+          - {
+              text: Hai viaggiato in Giappone?,
+              feedback: '*Hai viaggiato* è passato. A parla di un viaggio futuro: *viaggerai*.',
+            }
+      - id: ordina-italia
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Con chi viaggerai in Italia?
