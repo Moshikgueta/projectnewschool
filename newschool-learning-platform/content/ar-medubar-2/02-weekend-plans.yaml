@@ -1,0 +1,677 @@
+# Cycle "תוכניות לסופ״ש", converted from the spoken Arabic level 2 notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew
+# transliteration, apc-Hebr); Hebrew instructions carry `lang: he`.
+course: ar-medubar-2
+slug: weekend-plans
+title: 'תוכניות לסופ״ש'
+goal: 'לדבר על תוכניות בעתיד עם רַח + פועל (ועם לאזם / מומכן / אחסן), ולהשוות ולהביע דעה (אחסן מן, אמתע מן, אכתר / אקל).'
+position: 2
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("weekend-plans-future" and "weekend-plans-compare")
+    are NEW: the notebook has no self-study exercises. They were written only from
+    this cycle's summary, examples and vocabulary. An Arabic teacher must check every
+    right answer, every wrong option and every transliteration before students see
+    them.
+  - >-
+    Clear typos fixed: "ענדכS" → "ענדכ" (a Latin S, Activity 4); "אליומ" → "אליום"
+    (final mem, Activity 4); warm-up 3 ends with "!" although it is a question → "?".
+    Arabic-script letters inside transliteration were transliterated: homework step
+    4 "אכתר منك" → "אכתר מנכ", "אכתר مني" → "אכתר מני"; step 5 "מתשابه" → "מתשאבה".
+    Please check these three.
+  - >-
+    Not corrected, please check: Hebrew words inside Arabic sentences: "כי אנתא ראח
+    תטלע כתיר" (Activity 4, Hebrew "כי" for "because"; the sentence before uses
+    "לאן"); "הם ראח יסאפרו" (summary, Hebrew "הם" for "they"; Activity 3 has "הני");
+    "אפשר, בס אנא בחב האדה" (Activity 4); vocabulary "אוכל – אוכל" (Hebrew spelling;
+    Arabic is usually אַכְּל, as in the Activity 1 table "אכּל").
+  - >-
+    Not corrected, spelling variants in the cycle: the future word is written "רַח",
+    "רח" and "ראח"; "אחסן" means "כדאי" (Activity 1, vocabulary 29) and "יותר טוב מ"
+    with מן; "אמתע / מומתֶע אַכְּתַר" (Activity 2 frame); "מתעה / מֶתעה"; "וק'ת / וקט"
+    (time, Activity 4); "כטיר" (Activity 4, teacher sentence; elsewhere כתיר);
+    "ניהאיית / נהאיֶת / נֶהאיֶת אלאוסבוע / אסבוע"; "א-סבח / א-ס'ובח / אלסבח". The
+    exercises use the summary's spellings.
+  - >-
+    Please check: in the Mario example (Activity 3) the last line switches to "הי"
+    (she): "אללילה הי רח תרתאח עס'ופה". Vocabulary "ראח – הולך" is the future word, and
+    "ארוח – הולך ללכת" is "I go". The summary glosses "אחנא ראח נטלע" as "אנחנו נלך
+    לצאת".
+  - >-
+    Activity 1 table: the notebook has an empty third column with no header; it was
+    left out. Activity 3 table: the Hebrew time labels (שישי בבוקר…) were kept. The
+    Hebrew glosses "(הבדל)" and "(עבר)" in warm-up 7 were moved to a teacher note.
+  - >-
+    Times recorded as the upper value: preparation 5–7 → 7 minutes; role swap after
+    5–6 → 6 minutes; group preparation 2–3 → 3 minutes. The Quizlet link's share
+    parameters (?i=…&x=…) were removed. The "תשובת תלמיד" lines are replaced by the
+    optional answer boxes.
+  - >-
+    Homework: only step 1 is a Mori message in the notebook (in Arabic). Steps 2–5
+    are written by the student in the chat; they are shown as examples and, for step
+    5, as answer boxes the teacher sees.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: weekend-plans-class
+    title: 'שיעור: תוכניות לסופ״ש'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: 'תוכניות לסופ״ש – ערבית מדוברת'
+      - id: skills
+        type: cycleOverview
+        lang: he
+        skills:
+          - name: 'עתיד: רַח + פועל'
+            description: 'אנא רַח ארוח, הו ראח ינאם, אחנא ראח נטלע; ועם לאזם (חייב) / מומכן (אפשר) / אחסן (כדאי).'
+          - name: השוואות ודעה
+            description: 'אחסן מן, אמתע מן, אכתר / אקל, אחלא / אהדא / אסוא.'
+      - id: quizlet
+        type: externalLink
+        lang: he
+        label: תוכניות לסופ״ש בקוויזלט
+        url: https://quizlet.com/br/1135044155/%D7%AA%D7%95%D7%9B%D7%A0%D7%99%D7%95%D7%AA-%D7%9C%D7%A1%D7%95%D7%A4%D7%A9-flash-cards/
+      - id: intro-title
+        type: heading
+        lang: he
+        level: 3
+        text: פתיחה
+      - id: intro-how
+        type: text
+        lang: he
+        text: 'כל תלמיד אומר מי הוא ומה הוא **רַח** לעשות בשבוע הבא.'
+      - id: intro
+        type: sentenceFrame
+        frame: 'אנא אסמי ___. אלג׳ומעה אלג׳אי אנא רַח ___.'
+      - id: warmup-title
+        type: heading
+        lang: he
+        level: 3
+        text: שאלות חימום
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: 'שו רַח תֶעְמַל בניהאיֶת אֶלְאוסְבּוע?'
+            frame: 'רַח אטְלַע / רח ארוח / רח אסאפֶר…'
+          - question: 'שו אחלא ניהאיֶת אוסבוע עֶדנכְּ?'
+          - question: "וינתא כּאנת עֶנדָכְּ אסוָא' נֶהאיֶת אוסבּוע?"
+          - question: "בתפדֶּ'ל תח'טֶּטְ לנֶהאיֶּת אלאוסבוע או יכּון אֶשׁי עַפַוי?"
+          - question: "בתפדֶּ'ל נשׁאטאת בֶּלבּית או בּרא? ליש?"
+          - question: "שו מא בֶּתְחֶב תֶעמַל בֶּ יום אגּ'ומעה וסָּבת?"
+          - question: "שׁו אֶלְפַרק' בין נהאיֶת אלאוסבוע פי אל מאד'י ו אליום?"
+      - id: activities-title
+        type: heading
+        lang: he
+        level: 3
+        text: פעילויות
+      - id: act1
+        type: classActivity
+        lang: he
+        title: 'פעילות 1: סופ״ש בעיר אחרת'
+        skills: ['עתיד: רַח + פועל']
+        steps:
+          - 'הכנה אישית (7 דקות): כל תלמיד בוחר עיר אחת בעולם וחושב על סופ״ש מושלם בה. כותבים משפט אחד לכל משבצת בטבלה – רק רעיונות: מקום, פעולה, אוכל או מנוחה.'
+          - 'עבודה בזוגות: תלמיד A – מדריך תיירים, תלמיד B – תייר. בכל יום חייבים להשתמש פעם אחת ב־**רַח** ופעם אחת ב־**אחסן / מומכן / לאזם**.'
+          - 'הדיאלוג: המדריך מדבר, והתייר שואל לפחות שאלה אחת בכל יום (משפטי עזר למטה).'
+          - 'החלפת תפקידים אחרי 6 דקות: אותם כללים, אותו מבנה, עיר אחרת.'
+          - 'הצגה בכיתה: כל תייר מציג **שלושה ימים בלבד** לפי המבנה הקבוע.'
+        example: |-
+          יום אלח׳מיס ראח תרוח עלא אלמתחף. אחסן תאכל ע׳דא במטעם זע׳יר הנאכ.
+          יום אלג׳ומעה מומכן תעמל ג׳אולה בלקרב. ימכן יכון אחלא שי באלרחלה.
+          יום אלסבת לאזם תטלע עלא אלג׳בל. אלמנזר כתיר חילו.
+          יום אלאחד ראח תרתאח בלחדיקה. ולאזם תגרב א-שאי הנאכ.
+      - id: act1-table
+        type: table
+        lang: he
+        caption: 'שלב 1 – הטבלה (משפט אחד לכל משבצת)'
+        header: [יום, מחל, 'אכּל / ראחה / מֶשׁואר']
+        rows:
+          - ["אלח'מיס", '', '']
+          - ["אג'ומעה", '', '']
+          - ['אסבּת', '', '']
+          - ['אלאחד', '', '']
+      - id: act1-tools
+        type: table
+        lang: he
+        caption: כלי דיבור על הלוח
+        rows:
+          - ['לאזם', 'חייב']
+          - ['מומכן', 'אפשר']
+          - ['אחסן', 'כדאי יותר']
+          - ['רַח', 'עתיד']
+      - id: act1-frame
+        type: sentenceFrame
+        frame: |-
+          יום ___:
+          ראח + ___.
+          אחסן / מומכן / לאזם + ___.
+      - id: act1-tourist-title
+        type: heading
+        lang: he
+        level: 4
+        text: משפטי עזר לתייר
+      - id: act1-tourist
+        type: examples
+        items:
+          - text: 'טייב, שו ראח אעמל יום אלח׳מיס?'
+          - text: 'וליש לאזם ארוח הונאכ?'
+          - text: 'מומכן אעמל אישי תאני?'
+          - text: 'טייב, שו ראח אעמל יום אסבת?'
+          - text: 'וליש לאזם אטלע עג׳בל?'
+      - id: act1-present
+        type: discussionQuestions
+        items:
+          - question: 'יום אלח׳מיס רח…'
+          - question: 'יום אג׳ומעה רח…'
+          - question: 'יום אסּבת רח…'
+      - id: act2
+        type: classActivity
+        lang: he
+        title: 'פעילות 2: דיבייט – הסופ״ש המושלם'
+        skills: [השוואות ודעה]
+        steps:
+          - 'המורה כותב על הלוח את כלי השפה ומקריא את משפטי המודל. התלמידים חוזרים בקול.'
+          - 'חלוקה לעמדות: המורה מציג נושא עם שתי אפשרויות, והתלמידים בוחרים צד פיזית בכיתה או מרימים יד.'
+          - 'דיבור מודרך בקבוצות (3 דקות): כל קבוצה מכינה 2 משפטים לפי המבנה הקבוע.'
+          - 'הדיבייט: נציג מכל צד אומר משפט אחד, והמורה מעודד תגובות קצרות.'
+          - 'המטרה היא לא ״לנצח״, אלא להשתמש בהשוואות, להביע דעה, לשמוע דעות שונות ולדבר בערבית פשוטה ובטוחה.'
+        example: |-
+          אלבית אהדא מן אלסאפר.
+          אלסאפר אמתע מן אלבית.
+          אנא בחב אלמסא אכתר מן א-סבח.
+      - id: act2-tools
+        type: table
+        lang: he
+        caption: כלי שפה על הלוח
+        rows:
+          - ['אחסן מן…', 'יותר טוב מ…']
+          - ['אמתע מן…', 'יותר כיף מ…']
+          - ['אכתר… / אקל…', 'יותר / פחות']
+          - ['אחלא', 'הכי טוב']
+          - ['אהדא', 'הכי רגוע']
+          - ['אסוא', 'הכי גרוע']
+      - id: act2-topics
+        type: table
+        lang: he
+        caption: הנושאים
+        rows:
+          - ['בבית או בטיול', 'אלבית או ברּא?']
+          - ['בוקר או ערב', "א-ס'ובח ולא אלמסא?"]
+          - ['בחוץ או בפנים', 'ברא ולא בלבית?']
+          - ['פעילות או מנוחה', 'נשאט ולא ראחה?']
+      - id: act2-frame
+        type: sentenceFrame
+        frame: |-
+          ___ אחסן מן ___.
+          ___ מומתֶע אַכְּתַר מן ___.
+      - id: act2-debate
+        type: dialogue
+        lines:
+          - { speaker: 'קבוצה A', text: 'אלבית אהדא מן אלסאפר.' }
+          - { speaker: 'קבוצה B', text: 'לא, אלסאפר אמתע מן אלבית.' }
+      - id: act2-reactions-title
+        type: heading
+        lang: he
+        level: 4
+        text: תגובות קצרות
+      - id: act2-reactions
+        type: examples
+        items:
+          - text: 'אנא מַעַכ.'
+          - text: 'אנא מש מַעַכְּ.'
+          - text: 'האד אחסן.'
+          - text: 'האדה אכתר מתעה.'
+      - id: act3
+        type: classActivity
+        lang: he
+        title: 'פעילות 3: מה הוא הולך לעשות?'
+        skills: ['עתיד: רַח + פועל']
+        steps:
+          - 'בחירת דמות: כל תלמיד בוחר דמות אחת – מישהו שהוא מכיר, אדם מפורסם, דמות מסרט או מספר, או דמות מומצאת. ״אתם הולכים לבנות לה סופ״ש מלא.״'
+          - 'בניית לוח סופ״ש: בכל שורה בטבלה כותבים משפט אחד בלבד, שמתחיל במבנה **הו / היא / אנא / אחנא + ראח + פועל**. פעלים פשוטים: ללכת, לאכול, לישון, לראות, לנוח, לעבוד, לטייל.'
+          - 'כתיבה מודרכת: המורה מקריא ומדגים עם הכיתה (הו ראח… / היא ראח… / אנא ראח… / אחנא ראח…), והתלמידים ממלאים את הטבלה.'
+          - 'שיתוף בזוגות: כל תלמיד מקריא 3 שורות, ובן הזוג מגיב במשפט קצר: האד אחסן. / האד אמתע. / האד אהדא.'
+          - 'שיתוף בכיתה: 2–3 תלמידים מקריאים כל אחד 2 משפטים מהלוח שלהם.'
+        example: |-
+          שישי בבוקר: הו רח ירוח עלא א-סוק וישתרי ח׳ודרה.
+          שישי בצהריים: הו רח יטבּח אכלאת זי אַכּסל אלמטאעם.
+          שישי בלילה: הו רח יעמַל עשא ללד'יוּף.
+          שבת בבוקר: הו רח ינאם כתיר לאנו תעֶּב אליום!
+          שבת בצהריים: הני רח ירוחו עלא חַפְלֶה לַפֶרק'ֶת אנּור.
+          שבת בלילה: אללילה הי רח תרתאח עס'ופה ותחד'ר פילֶם.
+      - id: act3-table
+        type: discussionQuestions
+        items:
+          - question: 'שישי בבוקר: ___ ראח ___'
+          - question: 'שישי בצהריים: ___ ראח ___'
+          - question: 'שישי בלילה: ___ ראח ___'
+          - question: 'שבת בבוקר: ___ ראח ___'
+          - question: 'שבת בצהריים: ___ ראח ___'
+          - question: 'שבת בלילה: ___ ראח ___'
+      - id: act4
+        type: classActivity
+        lang: he
+        title: 'פעילות 4: למי יש הסופ״ש הכי טוב?'
+        skills: [השוואות ודעה]
+        steps:
+          - 'השוואה בזוגות (עם בן הזוג מפעילות 3): כל תלמיד משווה בין הסופ״ש שלו לסופ״ש של בן הזוג ואומר לפחות שני משפטים. בן הזוג מגיב במשפט קצר.'
+          - 'הצבעה לפי קטגוריות: המורה אומר את המשפט שלמטה וכותב על הלוח את הקטגוריות.'
+          - 'הצבעה: כל תלמיד כותב על פתק (או בצ׳אט פרטי) שם של תלמיד אחד לכל קטגוריה.'
+        example: |-
+          ח׳טתי אחסן מן ח׳טתכ, לאן אנא ראח ארתאח אכתר.
+          ניהאיית אלאסבוע תבעכ אמתע מן תבעי, כי אנתא ראח תטלע כתיר.
+      - id: act4-useful
+        type: sentenceFrame
+        frame: |-
+          ח׳טתי אחסן מן ח׳טתכ.
+          ניהאיית אלאסבוע ענדי אחלא מן ענדכ.
+        example: |-
+          אפשר, בס אנא בחב האדה.
+          אנא מש מַעַכ.
+          אמתע, בס האדה אקל ראחה.
+      - id: act4-teacher
+        type: text
+        text: 'אליום בדנא נסוּת. מש לפאאֵז ואחד, בס לפיאת כטיר!'
+      - id: act4-categories
+        type: table
+        lang: he
+        caption: הקטגוריות
+        rows:
+          - ['אכתר ראחה', 'הסופ״ש הכי רגוע']
+          - ['אכתר מתעה', 'הסופ״ש הכי כיפי']
+          - ['אכתר נשאט', 'הסופ״ש הכי פעיל']
+          - ["אחלא וק'ת מע אלעילה", 'הזמן הכי טוב עם המשפחה']
+          - ["אכתר מפאגֶ'א'", 'הסופ״ש הכי מפתיע']
+      - id: act4-vote
+        type: discussionQuestions
+        items:
+          - question: 'אכתר ראחה: ___'
+          - question: 'אכתר מתעה: ___'
+          - question: 'אכתר נשאט: ___'
+          - question: 'אחלא וקט מע אלעילה: ___'
+          - question: "אכתר מפאגֶ'א': ___"
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: 'מבנה דקדוקי מרכזי: רַח + פועל (עתיד פשוט). פעילויות 1 ו־3 – עתיד; פעילויות 2 ו־4 – השוואות ודעה.'
+      - id: n-intro
+        anchor: intro
+        text: 'תנו קודם את הדוגמה שלכם: ״אנא אסמי ___. אלג׳ומעה אלג׳אי אנא רַח ___.״'
+      - id: n-warmup
+        anchor: warmup
+        text: 'בשאלה 7: ״אֶלְפַרק׳״ = ההבדל, ״אל מאד׳י״ = העבר.'
+      - id: n-act1
+        anchor: act1
+        minutes: 7
+        text: 'מחלקים טבלה קצרה או מציירים אותה על הלוח. המטרה: שלכל תלמיד יהיה ״חומר ביד״ לפני העבודה בזוגות. כתבו על הלוח את ״כללי המשחק״ ואת המבנה הקבוע, והקריאו את הדוגמה (ימים חמישי–ראשון). אחרי 6 דקות מחליפים תפקידים.'
+      - id: n-act3
+        anchor: act3
+        text: 'עברו בין התלמידים, תקנו בעדינות והחזירו כל משפט למבנה ראח + פועל. בשיתוף בכיתה הקפידו על משפטים קצרים, מבנה נכון וחזרה עקבית על ראח + פועל.'
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: weekend-plans-summary
+    title: סיכום השיעור
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: סיכום דקדוקי
+      - id: rules-future
+        type: ruleSummary
+        lang: he
+        skill: עתיד בערבית מדוברת
+        rules:
+          - text: 'בעברית אומרים עתיד עם נטייה של הפועל עצמו: אני **אלך**, הוא **יישן**, אנחנו **נצא**, הם **ייסעו**.'
+          - text: 'בערבית מדוברת לא משנים את זמן הפועל. תמיד מוסיפים לפניו מילה אחת: **ראח + פועל**. כל עתיד, בלי יוצאים מן הכלל, עובד ככה.'
+            examples:
+              - 'אנא ראח ארוח – אני הולך ללכת'
+              - 'הו ראח ינאם – הוא הולך לישון'
+              - 'אחנא ראח נטלע – אנחנו נלך לצאת'
+              - 'הם ראח יסאפרו – הם הולכים לנסוע'
+          - text: 'בעברית: ״אני הולך מחר״, ״אני אסע מחר״. בערבית:'
+            examples:
+              - 'אנא רַח ארוח'
+              - 'אנא רַח אסאפר'
+          - text: 'כלומר: במקום לשנות את הפועל כמו בעברית, בערבית פשוט שמים **רַח** לפני הפועל, וזה מספיק.'
+      - id: rules-compare
+        type: ruleSummary
+        lang: he
+        skill: השוואות בערבית מדוברת
+        rules:
+          - text: 'בעברית אומרים: יותר טוב מ…, יותר כיף מ…, יותר / פחות, הכי טוב / הכי רגוע / הכי גרוע. בערבית יש מילים קבועות שעובדות בדיוק באותו רעיון.'
+          - text: '**אחסן מן** = יותר טוב מ'
+            examples:
+              - 'אלבית אחסן מן אלסאפר – הבית יותר טוב מטיול'
+          - text: '**אמתע מן** = יותר כיף מ'
+            examples:
+              - 'אלמסא אמתע מן א-סבח – הערב יותר כיף מהבוקר'
+          - text: '**אכתר / אקל** = יותר / פחות'
+            examples:
+              - 'האדה אכתר ראחה – זה יותר רגוע'
+              - 'האדה אקל מלל – זה פחות משעמם'
+          - text: '**אחלא / אהדא / אסוא** = הכי טוב / הכי רגוע / הכי גרוע'
+            examples:
+              - 'האדה אחלא ניהאיית אסבוע – זה הסופ״ש הכי טוב'
+              - 'האדה אהדא – זה הכי רגוע'
+              - 'האדה אסוא – זה הכי גרוע'
+          - text: 'כמו בעברית, קודם אומרים את הדבר, ואז מוסיפים ״יותר / הכי / פחות״. רק שבערבית משתמשים תמיד באותן מילים קבועות, וזה עושה את הדיבור פשוט, ברור וקל ללמידה.'
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: בקשו מכל תלמיד משפט אחד עם ראח + פועל ומשפט השוואה אחד (אחסן מן / אמתע מן).
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: weekend-plans-homework
+    title: שיעורי בית עם Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: שיעורי בית עם Mori
+      - id: how
+        type: text
+        lang: he
+        text: "פתחו את הצ'אט עם Mori. הכול נכתב בתעתיק עברי בלבד."
+      - id: step1-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'שלב 1 – פתיחת שיחה'
+      - id: step1-how
+        type: text
+        lang: he
+        text: העתיקו את ההודעה ושלחו אותה ל־Mori.
+      - id: mori-1
+        type: aiTutorPrompt
+        message: 'מרחבא מוֹרי! שו ראח תעמל בניהאיית אלאסבוע?'
+      - id: step2-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'שלב 2 – ספרו על הסופ״ש שלכם'
+      - id: step2-how
+        type: text
+        lang: he
+        text: 'כתבו ל־Mori 3–4 משפטים, רק עם המבנה **אנא ראח + פועל**. לדוגמה:'
+      - id: step2-examples
+        type: examples
+        items:
+          - text: 'אנא ראח ארוח לענד צחאבי.'
+          - text: 'אנא ראח אשאחד פילם.'
+          - text: 'אנא ראח ארתאח בלבית.'
+          - text: 'יום אלסבת אנא ראח אטלע ברא.'
+      - id: step3-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'שלב 3 – שאלו את Mori עוד שאלות'
+      - id: step3-how
+        type: text
+        lang: he
+        text: 'כתבו לפחות 3 שאלות עם **ראח**. לדוגמה:'
+      - id: step3-examples
+        type: examples
+        items:
+          - text: 'שו ראח תעמל יום אלסבת?'
+          - text: 'ראח תדל בלבית ולא תטלע?'
+          - text: 'מע מין ראח תקון בניהאיית אלאסבוע?'
+          - text: 'ראח תאכל אשי זכי?'
+      - id: step4-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'שלב 4 – השוואה'
+      - id: step4-how
+        type: text
+        lang: he
+        text: 'אחרי ש־Mori עונה, כתבו 2 משפטים. לדוגמה:'
+      - id: step4-examples
+        type: examples
+        items:
+          - text: 'ח׳טתי אחסן מן ח׳טתכ.'
+          - text: 'ניהאיית אלאסבוע תבעכ אמתע מן תבעי.'
+          - text: 'אנא ראח ארתאח אכתר מנכ.'
+          - text: 'אנתא ראח תטלע אכתר מני.'
+      - id: step5-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'שלב 5 – סיכום קצר (גם בתעתיק)'
+      - id: step5-how
+        type: text
+        lang: he
+        text: כתבו 4 שורות.
+      - id: step5
+        type: discussionQuestions
+        items:
+          - question: 'שו אנא ראח אעמל.'
+          - question: 'שו מוֹרי ראח יעמל.'
+          - question: 'שו מתשאבה ביננא.'
+          - question: 'שו מוכתלף ביננא.'
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: weekend-plans-practice
+    book: workbook
+    title: 'תרגול: תוכניות לסופ״ש'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        lang: he
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+      - id: ex-future
+        type: activity
+        activity: weekend-plans-future
+      - id: ex-compare
+        type: activity
+        activity: weekend-plans-compare
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: weekend-plans-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: 'תוכניות לסופ״ש'
+        glossLang: he
+        link: https://quizlet.com/br/1135044155/%D7%AA%D7%95%D7%9B%D7%A0%D7%99%D7%95%D7%AA-%D7%9C%D7%A1%D7%95%D7%A4%D7%A9-flash-cards/
+        items: &weekend-plans-words
+          - { term: 'ראח', gloss: 'הולך' }
+          - { term: 'יום', gloss: 'יום' }
+          - { term: 'ניהאיית אלאסבוע', gloss: 'סוף שבוע' }
+          - { term: 'אלבית', gloss: 'הבית' }
+          - { term: 'ברא', gloss: 'בחוץ' }
+          - { term: 'אלסאפר', gloss: 'טיול / נסיעה' }
+          - { term: 'סחאב', gloss: 'חברים' }
+          - { term: 'עֵילֵה', gloss: 'משפחה' }
+          - { term: 'אוכל', gloss: 'אוכל' }
+          - { term: 'מטעם', gloss: 'מסעדה' }
+          - { term: 'קהווה', gloss: 'קפה' }
+          - { term: 'פילם', gloss: 'סרט' }
+          - { term: 'ארתאח', gloss: 'לנוח' }
+          - { term: 'ארוח', gloss: 'הולך ללכת' }
+          - { term: 'אטלע', gloss: 'לצאת' }
+          - { term: 'אאכל', gloss: 'לאכול' }
+          - { term: 'אנאם', gloss: 'לישון' }
+          - { term: 'אחדר', gloss: 'לראות / לצפות' }
+          - { term: 'אלסבח', gloss: 'בוקר' }
+          - { term: 'אלמסא', gloss: 'ערב' }
+          - { term: 'ליל', gloss: 'לילה' }
+          - { term: 'חדיקה', gloss: 'פארק / גן' }
+          - { term: 'מתחף', gloss: 'מוזיאון' }
+          - { term: 'ג׳ולה', gloss: 'סיבוב / טיול קצר' }
+          - { term: 'נשאט', gloss: 'פעילות' }
+          - { term: 'ראחה', gloss: 'מנוחה' }
+          - { term: 'לאזם', gloss: 'חייב' }
+          - { term: 'מומכן', gloss: 'אפשר' }
+          - { term: 'אחסן', gloss: 'כדאי' }
+          - { term: 'אחסן מן', gloss: 'יותר טוב מ' }
+          - { term: 'אמתע מן', gloss: 'יותר כיף מ' }
+          - { term: 'אכתר', gloss: 'יותר' }
+          - { term: 'אקל', gloss: 'פחות' }
+          - { term: 'אחלא', gloss: 'הכי טוב' }
+          - { term: 'אהדא', gloss: 'הכי רגוע' }
+          - { term: 'אסוא', gloss: 'הכי גרוע' }
+
+vocabulary:
+  - slug: weekend-plans
+    title: 'תוכניות לסופ״ש'
+    items: *weekend-plans-words
+
+activities:
+  - slug: weekend-plans-future
+    title: 'עתיד: רַח + פועל'
+    minutes: 8
+    items:
+      - id: verbs
+        type: matching
+        lang: he
+        prompt: התאימו כל פועל לפירוש שלו.
+        pairs:
+          - ['ארתאח', 'לנוח']
+          - ['אנאם', 'לישון']
+          - ['אאכל', 'לאכול']
+          - ['אטלע', 'לצאת']
+          - ['אחדר', 'לראות / לצפות']
+      - id: will-travel
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״אני אסע״?'
+        options:
+          - { text: 'אנא רַח אסאפר', correct: true }
+          - { text: 'אנא אסאפר', feedback: 'חסר רַח. בעתיד תמיד שמים רַח לפני הפועל.' }
+          - { text: 'אחנא ראח נטלע', feedback: 'זה ״אנחנו נלך לצאת״.' }
+      - id: he-sleep
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״הוא הולך לישון״?'
+        options:
+          - { text: 'הו ראח ינאם', correct: true }
+          - { text: 'אנא ראח אנאם', feedback: 'זה ״אני הולך לישון״.' }
+          - { text: 'הו ראח ירוח', feedback: 'ירוח פירושו ״ילך״, לא ״יישן״.' }
+      - id: rule
+        type: trueFalse
+        lang: he
+        prompt: 'בערבית מדוברת מבטאים עתיד בעזרת המילה ״רַח״ לפני הפועל, בלי לשנות את זמן הפועל.'
+        answer: true
+        feedback:
+          correct: 'נכון! ראח + פועל: אנא ראח ארוח, הו ראח ינאם.'
+          incorrect: 'זה נכון: כל עתיד עובד ככה – ראח + פועל.'
+      - id: must
+        type: multipleChoice
+        lang: he
+        prompt: 'מה פירוש ״לאזם״?'
+        options:
+          - { text: 'חייב', correct: true }
+          - { text: 'אפשר', feedback: '״אפשר״ זה מומכן.' }
+          - { text: 'כדאי', feedback: '״כדאי״ זה אחסן.' }
+      - id: mountain
+        type: multipleChoice
+        lang: he
+        prompt: '״ביום שבת אתה חייב לעלות להר.״ – יום אלסבת ___ תטלע עלא אלג׳בל.'
+        options:
+          - { text: 'לאזם', correct: true }
+          - { text: 'מומכן', feedback: 'מומכן פירושו ״אפשר״. ״חייב״ זה לאזם.' }
+          - { text: 'אחסן', feedback: 'אחסן פירושו ״כדאי״. ״חייב״ זה לאזם.' }
+      - id: tourist
+        type: multipleChoice
+        lang: he
+        prompt: 'התייר שואל: ״טוב, מה אני אעשה ביום חמישי?״'
+        options:
+          - { text: 'טייב, שו ראח אעמל יום אלח׳מיס?', correct: true }
+          - {
+              text: 'שו ראח תעמל יום אלסבת?',
+              feedback: 'זה ״מה אתה תעשה ביום שבת?״ – גוף אחר ויום אחר.',
+            }
+          - { text: 'וליש לאזם ארוח הונאכ?', feedback: 'זה ״ולמה אני חייב ללכת לשם?״' }
+      - id: order-rest
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: ״אני אנוח בבית.״'
+        sentence: 'אנא ראח ארתאח בלבית'
+
+  - slug: weekend-plans-compare
+    title: 'השוואות: אחסן מן, אמתע מן'
+    minutes: 8
+    items:
+      - id: words
+        type: matching
+        lang: he
+        prompt: התאימו כל מילה לפירוש שלה.
+        pairs:
+          - ['אחסן מן', 'יותר טוב מ']
+          - ['אמתע מן', 'יותר כיף מ']
+          - ['אכתר', 'יותר']
+          - ['אקל', 'פחות']
+          - ['אהדא', 'הכי רגוע']
+      - id: worst
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״זה הכי גרוע״?'
+        options:
+          - { text: 'האדה אסוא', correct: true }
+          - { text: 'האדה אהדא', feedback: 'אהדא פירושו ״הכי רגוע״.' }
+          - { text: 'האדה אחלא', feedback: 'אחלא פירושו ״הכי טוב״.' }
+      - id: home-better
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״הבית יותר טוב מטיול.״?'
+        options:
+          - { text: 'אלבית אחסן מן אלסאפר.', correct: true }
+          - {
+              text: 'אלבית אמתע מן אלסאפר.',
+              feedback: 'אמתע מן פירושו ״יותר כיף מ״. ״יותר טוב מ״ זה אחסן מן.',
+            }
+          - {
+              text: 'אלסאפר אחסן מן אלבית.',
+              feedback: 'זה ״הטיול יותר טוב מהבית״ – הפוך. קודם אומרים את הדבר שהוא יותר טוב.',
+            }
+      - id: evening-fun
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״הערב יותר כיף מהבוקר.״?'
+        options:
+          - { text: 'אלמסא אמתע מן א-סבח.', correct: true }
+          - { text: 'אלמסא אהדא מן א-סבח.', feedback: 'אהדא פירושו ״רגוע יותר״, לא ״כיף יותר״.' }
+          - { text: 'א-סבח אמתע מן אלמסא.', feedback: 'זה ״הבוקר יותר כיף מהערב״ – הפוך.' }
+      - id: less-boring
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״זה פחות משעמם״?'
+        options:
+          - { text: 'האדה אקל מלל', correct: true }
+          - { text: 'האדה אכתר מלל', feedback: 'אכתר פירושו ״יותר״. ״פחות״ זה אקל.' }
+          - { text: 'האדה אסוא', feedback: 'אסוא פירושו ״הכי גרוע״.' }
+      - id: more-less
+        type: trueFalse
+        lang: he
+        prompt: '״אכתר״ פירושו ״פחות״.'
+        answer: false
+        feedback:
+          correct: 'נכון! אכתר = יותר, ו״פחות״ זה אקל.'
+          incorrect: 'לא בדיוק: אכתר = יותר, ו״פחות״ זה אקל.'
+      - id: evening-more
+        type: multipleChoice
+        lang: he
+        prompt: '״אני אוהב את הערב יותר מהבוקר.״ – אנא בחב אלמסא ___ מן א-סבח.'
+        options:
+          - { text: 'אכתר', correct: true }
+          - { text: 'אקל', feedback: 'אקל פירושו ״פחות״.' }
+          - { text: 'אחלא', feedback: 'אחלא פירושו ״הכי טוב״.' }
+      - id: order-trip
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: ״הטיול יותר כיף מהבית.״'
+        sentence: 'אלסאפר אמתע מן אלבית'
