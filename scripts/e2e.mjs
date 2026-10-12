@@ -23,12 +23,13 @@ const ok = (name, cond, extra = '') => {
 const bareFetch = globalThis.fetch;
 globalThis.fetch = (url, opts = {}) => bareFetch(url, { signal: AbortSignal.timeout(20000), ...opts });
 
-/* Every call returns {status, body, cookie} — the cookie matters as much as
+/* Every call returns {status, body, cookie, location} — the cookie matters as much as
    the body in an auth suite. */
-async function call(path, { method = 'GET', body, cookie } = {}) {
+async function call(path, { method = 'GET', body, cookie, userAgent } = {}) {
   const headers = {};
   if (body !== undefined) headers['content-type'] = 'application/json';
   if (cookie) headers.cookie = cookie;
+  if (userAgent) headers['user-agent'] = userAgent;
   const r = await fetch(B + path, {
     method, headers,
     body: body === undefined ? undefined : JSON.stringify(body),
@@ -37,7 +38,7 @@ async function call(path, { method = 'GET', body, cookie } = {}) {
   let j = null;
   try { j = await r.json(); } catch { }
   const set = r.headers.get('set-cookie') || '';
-  return { status: r.status, body: j || {}, cookie: set.split(';')[0], rawCookie: set };
+  return { status: r.status, body: j || {}, cookie: set.split(';')[0], rawCookie: set, location: r.headers.get('location') };
 }
 
 async function waitFor(url, tries = 60) {
@@ -392,7 +393,10 @@ async function waitFor(url, tries = 60) {
     console.log('\nServing');
     /* redirect:'manual' throughout — following one would leave the harness
        chasing the asset server's own .html/stem bounce. */
-    ok('bare domain serves the landing page', (await call('/')).status === 200);
+    const rootDesktop = await call('/');
+    ok('bare domain sends a computer to the dashboard', rootDesktop.status === 302 && rootDesktop.location === '/dashboard', rootDesktop.status + ' ' + rootDesktop.location);
+    const rootPhone = await call('/', { userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) Mobile/15E148' });
+    ok('bare domain sends a phone to the mobile view', rootPhone.status === 302 && rootPhone.location === '/mobile', rootPhone.status + ' ' + rootPhone.location);
     ok('dashboard serves', (await call('/dashboard')).status === 200);
     ok('mobile serves', (await call('/mobile')).status === 200);
     /* The .html form must redirect to the stem, not loop back to itself —

@@ -73,6 +73,16 @@ function itemRoute(method, path) {
   return fn ? { fn, id: m[2] } : null;
 }
 
+/* Phones get the mobile view. Chromium browsers say so directly in
+   Sec-CH-UA-Mobile; the rest are told apart by the User-Agent. Tablets
+   (iPad, Android without "Mobile") get the full dashboard. */
+function isPhone(request) {
+  const hint = request.headers.get('Sec-CH-UA-Mobile');
+  if (hint) return hint.includes('?1');
+  const ua = request.headers.get('User-Agent') || '';
+  return /iPhone|iPod|Android.+Mobile|Windows Phone|Mobi/i.test(ua);
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -83,6 +93,22 @@ export default {
 
     const byId = userRoute(request.method, path) || itemRoute(request.method, path);
     if (byId) return byId.fn({ request, env, params: { id: byId.id } });
+
+    /* The bare domain goes straight to the view that fits the device: phones
+       to the mobile view, everything else to the full dashboard. It redirects
+       to the extensionless form, which the asset server serves directly (a
+       '*.html' target would be bounced on to the stem anyway). */
+    if (path === '/' && (request.method === 'GET' || request.method === 'HEAD')) {
+      const target = isPhone(request) ? '/mobile' : '/dashboard';
+      return new Response(null, {
+        status: 302,
+        headers: {
+          Location: target + url.search,
+          'Cache-Control': 'no-store',
+          Vary: 'User-Agent, Sec-CH-UA-Mobile'
+        }
+      });
+    }
 
     if (path.startsWith('/api/')) {
       return new Response(JSON.stringify({ error: 'not found' }), {

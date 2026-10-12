@@ -95,9 +95,12 @@ the `<` of those tokens (and of `<script`) to `\x3c`, which leaves every value i
 ## The site
 
 `docs/` is the published site — GitHub Pages serves it from the `main` branch. It holds the
-hand-written landing page (`docs/index.html`, which links the two views and explains how to
-sign in) plus the two built pages, so the whole thing is static with no build step on
-GitHub's side. `docs/dashboard.html` and `docs/mobile.html` are generated — rebuild them
+hand-written landing page (`docs/index.html`) plus the two built pages, so the whole thing
+is static with no build step on GitHub's side. Opening the site goes straight to the view
+that fits the device: phones to the mobile view, everything else to the dashboard. On the
+school's server the Worker redirects `/` that way (by `Sec-CH-UA-Mobile` or the User-Agent);
+on static hosting a script at the top of `docs/index.html` does the same, and the page itself
+(links to both views and how to sign in) only shows when scripts are off. `docs/dashboard.html` and `docs/mobile.html` are generated — rebuild them
 with the command above rather than editing them; `docs/index.html` is a source file.
 
 Enabling it, once per repository: **Settings → Pages → Source: Deploy from a branch →

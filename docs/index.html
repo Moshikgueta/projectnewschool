@@ -3,6 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Open the view that fits the device straight away: phones get the mobile
+   view, everything else the full dashboard. On the school's server the Worker
+   already redirects '/' this way; this covers static hosting (GitHub Pages).
+   The page below stays as the fallback when scripts are off. */
+(function () {
+  var ua = navigator.userAgent || '';
+  var phone = (navigator.userAgentData && navigator.userAgentData.mobile) ||
+    /iPhone|iPod|Android.+Mobile|Windows Phone|Mobi/i.test(ua);
+  location.replace((phone ? 'mobile.html' : 'dashboard.html') + location.search + location.hash);
+})();
+</script>
 <title>חדר המורים · New School</title>
 <meta name="description" content="לוח בקרה למורה — תלמידים, מחברות דיגיטליות, שיעורים וחומרי לימוד.">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
