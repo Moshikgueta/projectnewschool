@@ -8,6 +8,7 @@
 
 import { spawn, spawnSync } from 'node:child_process';
 import { rmSync, existsSync, renameSync } from 'node:fs';
+import { trainingSuite } from './e2e-training.mjs';
 
 const PORT = 8973;
 const B = `http://127.0.0.1:${PORT}`;
@@ -272,6 +273,9 @@ async function waitFor(url, tries = 60) {
     ok('a disabled student cannot walk in with a live code', (await call('/api/staff/auth/code', {
       method: 'POST', body: { code: code2 } })).status === 401);
     await call('/api/staff/users/' + studentId, { method: 'PATCH', cookie: admin, body: { active: true } });
+    /* A live student session for the training suite's role checks — the one
+       above died with the rotation, and code entry is throttled shut below. */
+    const studentLive = (await call('/api/staff/auth/code', { method: 'POST', body: { code: code2 } })).cookie;
 
     /* Last in this section on purpose: the limit is keyed on the caller, and
        `wrangler dev` sends no CF-Connecting-IP, so every request here shares
@@ -373,6 +377,8 @@ async function waitFor(url, tries = 60) {
       method: 'PATCH', cookie: admin, body: { active: false } })).body.room.active === false);
     ok('a closed room still shows its timetable',
       (await call('/api/staff/bookings', { cookie: admin })).body.bookings.some(x => x.roomId === roomA));
+
+    await trainingSuite({ call, ok, admin, student: studentLive });
 
     console.log('\nThrottle');
     for (let i = 0; i < 8; i++) {
