@@ -1,0 +1,608 @@
+# Cycle "Wochenendpläne", converted from the German level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-konversation-2
+slug: wochenendplaene
+title: Wochenendpläne
+goal: Über Pläne für das Wochenende sprechen, mit dem Futur I, und Wochenenden vergleichen.
+position: 2
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Futur I" and "Vergleiche") are NEW: the notebook
+    has no self-study exercises. They were written from the cycle's two skills, its
+    summary, the activity examples and its vocabulary. Please check level, wording
+    and every right answer before students see them.
+  - >-
+    Futur I with modal verbs: the notebook's model sentence "Am Freitag wirst du das
+    Stadtzentrum besuchen sollen" (and in the summary "… das Museum besuchen
+    sollen") is not natural German for a recommendation. It is now "Am Freitag
+    solltest du das Stadtzentrum / das Museum besuchen" (Konjunktiv II for advice).
+    The summary rule "Futur I mit Modalverben" is rewritten: recommendations use
+    *sollte*, possibilities *können*, necessity *müssen*, all without *werden*. The
+    allowed modal list now reads "sollte (Empfehlung)". Please confirm.
+  - >-
+    Comparisons: the summary rule "mehr / weniger + Adjektiv + als" is a literal
+    translation from English ("more … than"). In German the comparative is adjective
+    + -er + als (besser als, entspannender als, interessanter als); *mehr* goes with
+    nouns and verbs (mehr Spaß als, ich schlafe mehr), *weniger* + adjective is
+    possible (weniger langweilig als). The superlative rule now shows both *am
+    lustigsten* and *das lustigste Wochenende*, and *gut → besser → am besten* is
+    added. Please confirm.
+  - >-
+    Summary: "use only Futur I when you talk about the future" is wrong for German:
+    the present tense with a time word is very common (Am Samstag treffe ich
+    Freunde). The rule now says both are correct; the activities still practise
+    Futur I.
+  - >-
+    Corrections: "Wie kann ein perfektes / schlechtes Wochenende sein?" → "Wie sieht
+    ein perfektes / schlechtes Wochenende aus?"; "Zu Hause ist entspannender als auf
+    Reisen" → "Zu Hause ist es entspannender als auf Reisen" (also "so gut wie");
+    homework "Dieses Wochenende wird besser als letztes Wochenende" → "… wird besser
+    sein als das letzte Wochenende"; "Zu Hause wird entspannender sein" → "Zu Hause
+    wird es entspannender sein"; "Samstag wird so gut wie Sonntag sein" → "Der
+    Samstag wird so schön sein wie der Sonntag"; challenge "werde ich mehr
+    entspannen" → "werde ich mich mehr entspannen" (sich entspannen).
+  - >-
+    English words removed: "Satzanfänge (Sentence Starters - A2)" → "Satzanfänge";
+    "Abstimmung (Voting-Element)" → "Abstimmung"; "Outdoor-Aktivitäten vs.
+    Indoor-Aktivitäten" → "Aktivitäten draußen oder drinnen" (also in the model
+    sentence); "vs." → "oder". Emoji in the Activity 4 categories were broken
+    characters and were removed.
+  - >-
+    Left out: a stray line "Was ist ähnlich? Was ist anders?" at the end of the
+    homework (it belongs to no task). Activity 3 has a table to fill in; it is now a
+    list of sentences with answer boxes, and the "Mario der Koch" example table is
+    the activity example. The online version of Activity 2 (breakout rooms, chat
+    poll) is in a teacher note.
+  - >-
+    The summary and the homework are written in Hebrew in the notebook. The rules
+    are given in simple German (ruleSummary) with the corrected Hebrew explanation as
+    a Hebrew text block; the Mori messages are written in German, the Hebrew
+    instructions became German intros, and the "Erinnerung" list went into the tips
+    callout. Please check the Hebrew.
+  - >-
+    Vocabulary glosses changed: "werden – יהיה / יהיה (פועל עתיד)" → "פועל עזר לעתיד
+    (גם: להיות / להפוך ל־)"; "entspannen" → "sich entspannen"; "nächste Woche – שבוע
+    הבא" → "בשבוע הבא"; "sollen – כדאי / המלצה" → "sollen / sollte – צריך / כדאי
+    (המלצה)". Please confirm.
+  - >-
+    The source gives no times for the introduction, warm-up or activities, so none
+    were added. The "Antwort von Schüler 1/2/3" lines are replaced by the optional
+    answer boxes. The Quizlet link is kept as is (it had no tracking parameter). The
+    warm-up question "Bevorzugst du am Wochenende Aktivitäten drinnen oder draußen?"
+    was simplified to "Machst du am Wochenende lieber etwas drinnen oder draußen?".
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: wochenendplaene-unterricht
+    title: 'Unterricht: Wochenendpläne'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Wochenendpläne
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Futur I
+            description: '*werden* + Infinitiv am Satzende: *Ich werde Freunde treffen.*'
+          - name: Vergleiche
+            description: '*besser als, so … wie, am besten, am entspannendsten*'
+      - id: quizlet
+        type: externalLink
+        label: Wochenendpläne auf Quizlet
+        url: https://quizlet.com/br/1127415756/wochenendplane-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Dieses Wochenende werde ich ___.
+        example: Ich bin Anna. Dieses Wochenende werde ich zu Hause bleiben und Freunde treffen.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Was wirst du dieses Wochenende machen?
+            frame: Dieses Wochenende werde ich ___.
+          - question: Wie sieht ein perfektes Wochenende aus?
+            frame: Ein perfektes Wochenende ist ___. Ich ___.
+          - question: Wie sieht ein schlechtes Wochenende aus?
+            frame: Ein schlechtes Wochenende ist ___.
+          - question: Wirst du dieses Wochenende Zeit mit Freunden oder mit der Familie verbringen?
+            frame: Ich werde Zeit mit ___ verbringen.
+          - question: Machst du am Wochenende lieber etwas drinnen oder draußen? Warum?
+            frame: Ich mache lieber etwas ___, weil ___.
+          - question: Was wird dir an diesem Wochenende am besten gefallen?
+            frame: Am besten wird mir ___ gefallen.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Ein Wochenende im Ausland'
+        skills: [Futur I]
+        steps:
+          - 'Vorbereitung (allein): Wähl eine Stadt und plan ein Wochenende dort: Transport, Essen, Sehenswürdigkeiten, Kultur, Entspannung.'
+          - 'Arbeitet zu zweit: Schüler A ist Tourist, Schüler B arbeitet im Tourismusbüro.'
+          - 'Rollenspiel: Schüler B gibt Empfehlungen für Freitag bis Sonntag, mit *sollte, können* und *müssen*.'
+          - Tauscht die Rollen.
+          - 'Präsentation: Der Tourist erklärt seinen Plan im Futur I.'
+        example: |-
+          *Tourismusbüro: Am Freitag solltest du das Stadtzentrum besuchen. Am Samstag kannst du eine Bootstour machen. Am Sonntag musst du dich entspannen und im Park spazieren gehen.*
+          *Tourist: Am Freitag werde ich das Museum besuchen. Am Samstag werde ich eine Bootstour machen. Am Sonntag werde ich mich entspannen.*
+      - id: act1-modal
+        type: callout
+        tone: info
+        title: Modalverben für Empfehlungen
+        text: |-
+          **sollte** – Empfehlung: *Du solltest das Museum besuchen.*
+          **können** – Möglichkeit: *Du kannst eine Bootstour machen.*
+          **müssen** – Notwendigkeit: *Du musst dich entspannen.*
+      - id: act1-plan
+        type: discussionQuestions
+        title: Mein Wochenende im Ausland
+        items:
+          - question: Am Freitag werde ich ___.
+          - question: Am Samstag werde ich ___.
+          - question: Am Sonntag werde ich ___.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Die perfekte Wochenenddebatte'
+        skills: [Vergleiche]
+        steps:
+          - Die Lehrkraft nennt zwei Möglichkeiten.
+          - Vergleiche die Möglichkeiten und begründe deine Meinung in ganzen Sätzen. Jeder spricht mindestens einmal.
+          - 'Abstimmung: Was ist besser? Stimmt per Handzeichen oder im Chat ab.'
+          - 'Ergebnis: Die Lehrkraft fasst zusammen: *Die meisten finden ___ besser als ___.*'
+        example: |-
+          *Für mich ist ein Wochenende auf Reisen **interessanter als** ein Wochenende zu Hause.*
+          *Aktivitäten am Abend sind **entspannender als** Aktivitäten am Morgen.*
+          *Aktivitäten draußen sind **genauso gut wie** Aktivitäten drinnen.*
+      - id: act2-topics
+        type: discussionQuestions
+        title: Themen zur Diskussion
+        items:
+          - question: Wochenende zu Hause oder Wochenende auf Reisen?
+            frame: Für mich ist ___ besser als ___.
+          - question: Aktivitäten am Morgen oder Aktivitäten am Abend?
+            frame: Ich finde ___ entspannender als ___.
+          - question: Aktivitäten draußen oder Aktivitäten drinnen?
+            frame: Am Wochenende ist ___ interessanter als ___.
+          - question: Aktiv bleiben oder sich ausruhen?
+            frame: ___ ist genauso gut wie ___, weil ___. / Ich mache lieber ___, denn ___.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Was werden sie tun?'
+        skills: [Futur I]
+        steps:
+          - 'Plan ein abwechslungsreiches Wochenende für eine Person: jemand, den du kennst, eine berühmte Person oder eine Figur aus einem Buch oder Film.'
+          - Beschreib die Pläne im Futur I (*werden* + Infinitiv).
+          - Stell den Plan der Gruppe vor.
+        example: |-
+          **Beispiel: Mario, der Koch**
+          *Freitagmorgen: Er wird früh aufstehen und frühstücken.*
+          *Freitagnachmittag: Er wird arbeiten und danach einkaufen.*
+          *Freitagabend: Er wird einen Film sehen.*
+          *Samstagmorgen: Er wird lange schlafen.*
+          *Samstagnachmittag: Er wird Freunde treffen.*
+          *Samstagabend: Er wird sich entspannen und Musik hören.*
+      - id: act3-plan
+        type: discussionQuestions
+        title: Was wird er / sie tun?
+        items:
+          - question: 'Freitagmorgen: Er / Sie wird ___.'
+          - question: 'Freitagnachmittag: Er / Sie wird ___.'
+          - question: 'Freitagabend: Er / Sie wird ___.'
+          - question: 'Samstagmorgen: Er / Sie wird ___.'
+          - question: 'Samstagnachmittag: Er / Sie wird ___.'
+          - question: 'Samstagabend: Er / Sie wird ___.'
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Wer hat den besten Wochenendplan?'
+        skills: [Vergleiche]
+        steps:
+          - Vergleiche deinen Plan aus Aktivität 3 mit dem Plan eines anderen Schülers. Erklär, warum dein Plan besser ist (*mehr Spaß als, weniger langweilig als, entspannender als, besser als*).
+          - 'Abstimmung: Es gibt nicht nur einen Gewinner, sondern mehrere Kategorien. Wähl eine Person pro Kategorie.'
+          - Die Lehrkraft nennt die Ergebnisse. Jeder Gewinner bekommt Applaus.
+        example: |-
+          *Mein Plan macht mehr Spaß als dein Plan. Dein Plan ist weniger langweilig als Marios Plan.*
+          *Das entspannendste Wochenende ist …*
+      - id: act4-categories
+        type: discussionQuestions
+        title: Kategorien
+        items:
+          - question: Am entspannendsten
+            frame: Das entspannendste Wochenende ist ___.
+          - question: Am lustigsten
+            frame: Das lustigste Wochenende ist ___.
+          - question: Am aktivsten
+            frame: Das aktivste Wochenende ist ___.
+          - question: Beste Familienzeit
+            frame: Das beste Familienwochenende ist ___.
+          - question: Am überraschendsten
+            frame: Das überraschendste Wochenende ist ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: das **Futur I** (Aktivitäten 1 und 3) und
+          **Vergleiche** (Aktivitäten 2 und 4). Aktivität 4 kommt nach Aktivität 3,
+          weil die Schüler ihre Pläne aus Aktivität 3 vergleichen.
+      - id: n-intro
+        anchor: intro
+        text: Gib zuerst dein Beispiel. Jeder Schüler sagt seinen Namen und einen einfachen Plan im Futur I.
+      - id: n-warmup
+        anchor: warmup
+        text: Stell jedem Schüler mindestens zwei Fragen. Die Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Fokus: Futur I + Modalverben. Für eine Empfehlung benutzen wir *sollte*
+          (Konjunktiv II), nicht *werden … sollen*. Der Tourist präsentiert seinen
+          Plan im Futur I.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Online-Version: Die Schüler diskutieren zuerst in Breakout-Räumen (2–3
+          Personen). Jede Gruppe wählt eine Meinung und präsentiert sie. Abgestimmt
+          wird im Chat, mit einer Umfrage oder mit Reaktionen. Zum Schluss: *Die
+          meisten Schüler finden ___ besser als ___. Viele Schüler denken, dass ___
+          entspannender ist.* A2-Fokus: einfache Vergleiche, kurze, klare Sätze, keine
+          Nebensätze nötig; Fehler nur sanft korrigieren.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Schreib die Kategorien an die Tafel. Im Präsenzunterricht stimmen die
+          Schüler auf einem Zettel ab, online im privaten Chat. A2-Fokus: einfache
+          Vergleiche, ganze Sätze, keine langen Erklärungen; Kommunikation ist
+          wichtiger als Perfektion.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: wochenendplaene-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-futur
+        type: ruleSummary
+        skill: Futur I
+        rules:
+          - text: 'Mit dem **Futur I** sprechen wir über Pläne: was wir am Wochenende machen werden.'
+          - text: '**werden** (konjugiert) steht auf **Position 2**, der **Infinitiv** steht **am Satzende**.'
+            examples:
+              - Ich **werde** am Wochenende **arbeiten**.
+              - Wir **werden** Freunde **treffen**.
+              - Am Samstag **werde** ich zu Hause **bleiben**.
+          - text: 'Im Deutschen sprechen wir auch mit dem **Präsens + Zeitangabe** über die Zukunft. Beides ist richtig.'
+            examples: [Am Samstag treffe ich Freunde., Am Samstag werde ich Freunde treffen.]
+          - text: 'Empfehlungen geben wir mit **sollte**, Möglichkeiten mit **können**, Notwendigkeit mit **müssen**. Der Infinitiv steht am Ende.'
+            examples:
+              - Am Freitag **solltest** du das Museum **besuchen**.
+              - Am Samstag **kannst** du eine Bootstour **machen**.
+              - Am Sonntag **musst** du dich **entspannen**.
+      - id: werden-table
+        type: table
+        caption: werden
+        header: [Person, werden, Beispiel]
+        rows:
+          - [ich, werde, Ich werde zu Hause bleiben.]
+          - [du, wirst, Was wirst du machen?]
+          - [er / sie, wird, Er wird einen Film sehen.]
+          - [wir, werden, Wir werden Freunde treffen.]
+      - id: rules-vergleiche
+        type: ruleSummary
+        skill: Vergleiche
+        rules:
+          - text: '**Komparativ:** Adjektiv + **-er** + **als**. Nicht *mehr* + Adjektiv.'
+            examples:
+              - Dieses Wochenende ist **besser als** das letzte.
+              - Zu Hause ist es **entspannender als** auf Reisen.
+              - Ein Wochenende auf Reisen ist **interessanter als** ein Wochenende zu Hause.
+          - text: '**mehr / weniger … als**: *mehr* mit Nomen und Verben, *weniger* auch mit Adjektiven.'
+            examples:
+              [
+                Mein Plan macht **mehr Spaß als** dein Plan.,
+                Dein Plan ist **weniger langweilig als** mein Plan.,
+              ]
+          - text: '**Gleich:** *so / genauso* + Adjektiv + **wie**.'
+            examples:
+              [
+                Zu Hause ist es **so gut wie** im Hotel.,
+                Aktivitäten draußen sind **genauso gut wie** Aktivitäten drinnen.,
+              ]
+          - text: '**Superlativ:** *am* + Adjektiv + **-sten**, oder vor einem Nomen: *der / die / das* + Adjektiv + **-ste**.'
+            examples:
+              - Der Samstag war **am lustigsten**.
+              - Das ist **das entspannendste** Wochenende.
+          - text: '*gut* ist unregelmäßig.'
+            examples: [gut → besser → am besten]
+      - id: key-sentence
+        type: callout
+        tone: tip
+        title: Merksatz
+        text: '**Zukunft auf Deutsch:** *werden* auf Position 2, der Infinitiv am Ende. Kurze, klare Sätze. Sprechen ist wichtiger als keine Fehler!'
+      - id: summary-he
+        type: text
+        lang: he
+        text: >-
+          בשיעור הזה למדנו לדבר על תוכניות לסוף השבוע ולהשוות בין סופי שבוע. עתיד –
+          Futur I: הפועל werden (ich werde, du wirst, er / sie wird, wir werden) במקום
+          השני, והפועל המרכזי בצורת המקור בסוף המשפט. בגרמנית אפשר לדבר על העתיד גם
+          בהווה עם מילת זמן (Am Samstag treffe ich Freunde). להמלצה אומרים sollte
+          (Du solltest das Museum besuchen), לאפשרות können ולחובה müssen – בלי
+          werden. השוואה: תואר + ‎-er + als (besser als, entspannender als); mehr עם
+          שם עצם או פועל (mehr Spaß als). אותו דבר: so / genauso … wie. הכי: am +
+          תואר + ‎-sten (am lustigsten), או לפני שם עצם: das lustigste Wochenende.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die Regeln mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: wochenendplaene-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere eine Nachricht und schick sie ab. Schreib kurze, klare Sätze im Futur I. Hab keine Angst vor Fehlern, Mori korrigiert dich und hilft dir.
+      - id: mori-gespraech
+        type: aiTutorPrompt
+        title: 'Aufgabe 1: Gespräch über das Wochenende'
+        intro: 'Antworte in ganzen Sätzen mit *werden* + Verb am Ende und benutze mindestens 3 verschiedene Verben. Mori kann zum Beispiel fragen: *Wirst du zu Hause bleiben oder ausgehen? Mit wem wirst du Zeit verbringen?*'
+        message: Hallo Mori! Bitte stell mir 5 Fragen über meine Pläne für das Wochenende.
+      - id: mori-plan
+        type: aiTutorPrompt
+        title: 'Aufgabe 2: Mein Plan für das Wochenende'
+        intro: 'Schreib danach 5 Sätze, nur im Futur I, mit einfachen Verben (gehen, bleiben, treffen, essen, lernen …). Beispiel: *Dieses Wochenende werde ich zu Hause bleiben. Am Samstag werde ich Freunde treffen. Am Sonntag werde ich mich entspannen.*'
+        message: Hallo Mori! Ich schreibe 5 Sätze über meine Pläne für das Wochenende. Bitte korrigiere mich und stell mir zu jedem Satz eine Frage.
+      - id: mori-vergleich
+        type: aiTutorPrompt
+        title: 'Aufgabe 3: Vergleiche'
+        intro: 'Schreib danach 3 Sätze: einen mit *besser / schlechter als*, einen mit *entspannender / interessanter als* und einen mit *so … wie*. Beispiel: *Dieses Wochenende wird besser sein als das letzte Wochenende. Zu Hause wird es entspannender sein als auf Reisen. Der Samstag wird so schön sein wie der Sonntag.*'
+        message: Hallo Mori! Ich vergleiche das nächste Wochenende mit dem letzten Wochenende. Bitte korrigiere meine Sätze.
+      - id: mori-person
+        type: aiTutorPrompt
+        title: 'Aufgabe 4: Eine andere Person'
+        intro: 'Schreib danach 4 Sätze über einen Freund, ein Familienmitglied oder eine berühmte Person, nur in der 3. Person (er / sie). Beispiel: *Mein Bruder wird am Samstag arbeiten. Er wird am Abend einen Film sehen.*'
+        message: Hallo Mori! Ich erzähle dir von den Wochenendplänen einer anderen Person. Bitte korrigiere mich und stell mir eine Frage.
+      - id: mori-challenge
+        type: aiTutorPrompt
+        title: 'Extra-Aufgabe (freiwillig)'
+        intro: 'Benutze in jedem Satz ein anderes Verb und mindestens einen Vergleich. Beispiel: *Dieses Wochenende werde ich mich mehr entspannen als letzte Woche.*'
+        message: Hallo Mori! Ich schreibe 5 Sätze über mein Wochenende, jeder mit einem anderen Verb und einem Vergleich. Bitte korrigiere mich.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          *werden* auf Position 2, das Verb am Ende. Sprich und schreib ohne Angst!
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: wochenendplaene-uebung
+    book: workbook
+    title: 'Übung: Wochenendpläne'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-futur
+        type: activity
+        activity: wochenendplaene-futur
+      - id: ex-vergleiche
+        type: activity
+        activity: wochenendplaene-vergleiche
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: wochenendplaene-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für das Wochenende
+        glossLang: he
+        link: https://quizlet.com/br/1127415756/wochenendplane-flash-cards/
+        items: &wochenendplaene-words
+          - { term: werden, gloss: 'פועל עזר לעתיד (גם: להיות / להפוך ל־)' }
+          - { term: bleiben, gloss: להישאר }
+          - { term: gehen, gloss: ללכת }
+          - { term: treffen, gloss: לפגוש }
+          - { term: arbeiten, gloss: לעבוד }
+          - { term: essen, gloss: לאכול }
+          - { term: lernen, gloss: ללמוד }
+          - { term: sich entspannen, gloss: להירגע }
+          - { term: reisen, gloss: לטייל / לנסוע }
+          - { term: besuchen, gloss: לבקר }
+          - { term: sollen / sollte, gloss: צריך / כדאי (המלצה) }
+          - { term: können, gloss: יכול / אפשר }
+          - { term: müssen, gloss: חייב }
+          - { term: das Wochenende, gloss: סוף שבוע }
+          - { term: der Plan, gloss: תוכנית }
+          - { term: die Familie, gloss: משפחה }
+          - { term: die Freunde, gloss: חברים }
+          - { term: die Stadt, gloss: עיר }
+          - { term: das Haus, gloss: בית }
+          - { term: der Park, gloss: פארק }
+          - { term: der Film, gloss: סרט }
+          - { term: am Wochenende, gloss: בסוף השבוע }
+          - { term: am Samstag, gloss: ביום שבת }
+          - { term: am Sonntag, gloss: ביום ראשון }
+          - { term: nächste Woche, gloss: בשבוע הבא }
+          - { term: heute, gloss: היום }
+          - { term: besser, gloss: יותר טוב }
+          - { term: schlechter, gloss: יותר גרוע }
+          - { term: entspannend, gloss: מרגיע }
+          - { term: interessanter, gloss: מעניין יותר }
+          - { term: am besten, gloss: הכי טוב }
+          - { term: am entspannendsten, gloss: הכי מרגיע }
+          - { term: oder, gloss: או }
+          - { term: weil, gloss: כי }
+          - { term: warum, gloss: למה }
+          - { term: mit wem, gloss: עם מי }
+
+vocabulary:
+  - slug: wochenendplaene
+    title: Wochenendpläne
+    items: *wochenendplaene-words
+
+activities:
+  - slug: wochenendplaene-futur
+    title: 'Futur I: werden + Infinitiv'
+    minutes: 8
+    items:
+      - id: werde-bleiben
+        type: multipleChoice
+        prompt: Dieses Wochenende ___ ich zu Hause bleiben.
+        options:
+          - { text: werde, correct: true }
+          - { text: wird, feedback: '*wird* ist für *er / sie*. Für *ich* sagen wir *werde*.' }
+          - { text: wirst, feedback: '*wirst* ist für *du*. Für *ich* sagen wir *werde*.' }
+      - id: wirst-werde
+        type: fillBlank
+        prompt: Ergänze die richtige Form von *werden*.
+        text: Was ___ du am Samstag machen? — Ich ___ Freunde treffen.
+        blanks: [[wirst], [werde]]
+        wordBank: [werde, wirst, wird, werden]
+      - id: werden-formen
+        type: matching
+        prompt: Welche Form von *werden* passt?
+        pairs:
+          - [ich, werde]
+          - [du, wirst]
+          - [er / sie, wird]
+          - [wir, werden]
+      - id: infinitiv-ende
+        type: trueFalse
+        prompt: 'Im Satz *Am Samstag werde ich Freunde treffen.* steht das Verb *treffen* am Satzende.'
+        answer: true
+        feedback:
+          correct: Richtig! *werden* steht auf Position 2, der Infinitiv am Ende.
+          incorrect: 'Doch: Der Infinitiv (*treffen*) steht im Futur I immer am Satzende.'
+      - id: richtiger-satz
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Am Sonntag werde ich einen Film sehen., correct: true }
+          - {
+              text: Am Sonntag ich werde einen Film sehen.,
+              feedback: '*werden* steht auf Position 2, direkt nach *Am Sonntag*: *Am Sonntag werde ich …*',
+            }
+          - {
+              text: Am Sonntag werde ich sehen einen Film.,
+              feedback: 'Der Infinitiv steht am Satzende: *… einen Film sehen.*',
+            }
+      - id: bruder-wird
+        type: fillBlank
+        prompt: Ergänze die richtige Form von *werden*.
+        text: Mein Bruder ___ am Samstag arbeiten.
+        blanks: [[wird]]
+      - id: solltest
+        type: multipleChoice
+        prompt: 'Eine Empfehlung: Am Freitag ___ du das Museum besuchen.'
+        options:
+          - { text: solltest, correct: true }
+          - {
+              text: musst,
+              feedback: '*musst* bedeutet: Das ist nötig. Für eine Empfehlung sagen wir *solltest*.',
+            }
+          - {
+              text: wirst sollen,
+              feedback: 'Für eine Empfehlung brauchen wir kein *werden*: *Du solltest das Museum besuchen.*',
+            }
+      - id: ordne-frage
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einer Frage.
+        sentence: Was wirst du am Wochenende machen?
+
+  - slug: wochenendplaene-vergleiche
+    title: 'Vergleiche: besser als, so … wie, am besten'
+    minutes: 8
+    items:
+      - id: interessanter
+        type: multipleChoice
+        prompt: Ein Wochenende auf Reisen ist ___ als ein Wochenende zu Hause.
+        options:
+          - { text: interessanter, correct: true }
+          - {
+              text: mehr interessant,
+              feedback: 'Im Deutschen bilden wir den Komparativ mit *-er*: *interessanter als*.',
+            }
+          - {
+              text: interessant,
+              feedback: 'Vor *als* brauchen wir den Komparativ: *interessanter als*.',
+            }
+      - id: besser
+        type: fillBlank
+        prompt: Schreib den Komparativ von *gut*.
+        text: Für mich ist dieses Wochenende ___ als das letzte.
+        blanks: [[besser]]
+      - id: entspannender
+        type: fillBlank
+        prompt: Schreib den Komparativ von *entspannend*.
+        text: Aktivitäten am Abend sind ___ als Aktivitäten am Morgen.
+        blanks: [[entspannender]]
+      - id: genauso-wie
+        type: multipleChoice
+        prompt: Aktivitäten draußen sind genauso gut ___ Aktivitäten drinnen.
+        options:
+          - { text: wie, correct: true }
+          - {
+              text: als,
+              feedback: 'Wenn zwei Dinge gleich sind, sagen wir *so / genauso … wie*. *als* steht nach dem Komparativ (*besser als*).',
+            }
+          - { text: dann, feedback: 'Wenn zwei Dinge gleich sind, sagen wir *so / genauso … wie*.' }
+      - id: komparativ-als
+        type: trueFalse
+        prompt: 'Nach einem Komparativ (*besser, schöner*) kommt *als*: *besser als*.'
+        answer: true
+        feedback:
+          correct: 'Richtig! *Dieses Wochenende ist besser als das letzte.*'
+          incorrect: 'Doch: Komparativ + *als*: *besser als, entspannender als*.'
+      - id: komparativ-paare
+        type: matching
+        prompt: Welcher Komparativ passt zu welchem Adjektiv?
+        pairs:
+          - [gut, besser]
+          - [schlecht, schlechter]
+          - [interessant, interessanter]
+          - [lustig, lustiger]
+          - [entspannend, entspannender]
+      - id: am-lustigsten
+        type: multipleChoice
+        prompt: Der Samstag war ___.
+        options:
+          - { text: am lustigsten, correct: true }
+          - {
+              text: am lustigste,
+              feedback: 'Nach *am* endet der Superlativ auf *-sten*: *am lustigsten*.',
+            }
+          - {
+              text: mehr lustig,
+              feedback: 'Im Deutschen sagen wir nicht *mehr lustig*. Der Superlativ ist *am lustigsten*.',
+            }
+      - id: mehr-spass
+        type: fillBlank
+        prompt: Ergänze *mehr* oder *weniger*.
+        text: Mein Plan macht ___ Spaß als dein Plan, denn dein Plan ist langweilig.
+        blanks: [[mehr]]
+        wordBank: [mehr, weniger]

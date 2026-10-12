@@ -1,0 +1,603 @@
+# Cycle "Mein Leben in der Vergangenheit", converted from the German level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-konversation-2
+slug: mein-leben-in-der-vergangenheit
+title: Mein Leben in der Vergangenheit
+goal: Über die Vergangenheit sprechen, mit dem Perfekt (haben / sein + Partizip II) und häufigen unregelmäßigen Verben.
+position: 1
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Perfekt mit haben / sein" and "Unregelmäßige Verben
+    im Perfekt") are NEW: the notebook has no self-study exercises. They were written
+    from the cycle's two skills, its summary, the activity examples and its
+    vocabulary. Please check level, wording and every right answer before students
+    see them.
+  - >-
+    Summary, questions: the notebook says (in Hebrew) "the verb (haben / sein) is
+    always at the start of the question". That is only true for yes/no questions
+    (Hast du gestern gearbeitet?). In W-questions the question word comes first and
+    haben / sein is in position 2 (Was hast du gegessen?). The rule is rewritten in
+    German and in the Hebrew text block.
+  - >-
+    Summary and teacher notes: the notebook says "only Perfekt, no other past
+    forms". As a classroom focus this is kept, but a note was added that with *sein*
+    and *haben* German speakers normally use *war / hatte* (Präteritum), and that
+    *Ich bin geboren* is a fixed form. The follow-up question "Wo genau war das?"
+    (Activity 3) is kept for this reason. Please confirm.
+  - >-
+    Summary, "sein": the notebook lists only verbs of motion / change of place. The
+    rule now also says "change of state" and lists *aufstehen → ist aufgestanden*,
+    which the cycle uses (Activity 2, homework). Please confirm.
+  - >-
+    Corrections: heading "Sich warm laufenFragen" → "Aufwärmfragen"; introduction
+    frame "Gestern habe ich ___" → "Gestern habe / bin ich ___" (verbs with sein);
+    Activity 4 missing closing bracket "(z. B. habe … gemacht, bin … gereist)";
+    Activity 4 report "Mein Partner ist nach Jerusalem gereist" → "nach Tel Aviv"
+    to match the model answer; stray characters (ð¹, ð) removed.
+  - >-
+    Activity 1 says Student A asks "3–4 questions from the list", but no list is
+    given; the activity now points to the warm-up questions. Activity 2: the 10
+    sentences to turn into questions are kept for students; a possible answer key
+    was added as a teacher note (other question words are also correct).
+  - >-
+    The summary is written in Hebrew in the notebook. The rules are given in simple
+    German (ruleSummary) and the Hebrew explanation is kept, shortened and corrected,
+    as a Hebrew text block (lang he). Please check the Hebrew.
+  - >-
+    Homework: the Mori messages were in Hebrew with German examples; they are
+    written in German now, and the Hebrew instructions to students ("answer in full
+    sentences", "only Perfekt" …) are given in German as intros. The final
+    "Erinnerung" list became the tips callout, with the two usual tip messages added.
+  - >-
+    Vocabulary: the verbs now show the helping verb (gehen – ist gegangen, essen –
+    hat gegessen) and the Hebrew headings were dropped. Glosses changed: "haben → יש /
+    פועל עזר" → "יש ל־ / פועל עזר"; "gehen (zur Arbeit gehen)" is now the item "zur
+    Arbeit gehen – ללכת לעבודה" (gehen is already in the list). Please confirm.
+  - >-
+    The Quizlet link lost its tracking parameter (?new). Times: introduction and
+    warm-up have no times in the source; Activity 1: 15, Activity 2: 10, Activity
+    3: 20, Activity 4: 15 minutes (Step 1: 2, Step 2: 8, Step 3: 5). The
+    "Schüler 1/2/3" answer lines are replaced by the optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: mein-leben-in-der-vergangenheit-unterricht
+    title: 'Unterricht: Mein Leben in der Vergangenheit'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Mein Leben in der Vergangenheit
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Perfekt mit haben / sein
+            description: '*haben / sein* + Partizip II am Satzende: *Ich habe gegessen. Ich bin gegangen.*'
+          - name: Unregelmäßige Verben im Perfekt
+            description: '*gegangen, gekommen, gefahren, gegessen, gesehen, gesprochen, getroffen*'
+      - id: quizlet
+        type: externalLink
+        label: Mein Leben in der Vergangenheit auf Quizlet
+        url: https://quizlet.com/br/1127409852/mein-leben-in-der-vergangenheit-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Gestern habe / bin ich ___.
+        example: Ich bin Marta. Gestern habe ich zu Hause Pizza gegessen.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Was hast du gestern Nachmittag gemacht?
+            frame: Gestern Nachmittag habe ich ___. / … bin ich ___.
+          - question: Was hast du bei deiner letzten Mahlzeit gegessen?
+            frame: Bei meiner letzten Mahlzeit habe ich ___ gegessen.
+          - question: Wen hast du letzte Woche getroffen?
+            frame: Letzte Woche habe ich ___ getroffen.
+          - question: Was hast du letztes Wochenende gemacht?
+            frame: Letztes Wochenende habe ich ___. / … bin ich ___.
+          - question: Wohin bist du zuletzt gegangen oder gefahren?
+            frame: Zuletzt bin ich nach / in ___ gegangen / gefahren.
+          - question: Was hast du beim letzten Einkauf gekauft?
+            frame: Beim letzten Einkauf habe ich ___ gekauft.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Persönliches Interview'
+        skills: [Perfekt mit haben / sein, Unregelmäßige Verben im Perfekt]
+        minutes: 15
+        steps:
+          - Arbeitet zu zweit.
+          - Schüler A stellt 3–4 Fragen (zum Beispiel aus den Aufwärmfragen).
+          - Schüler B antwortet in der Ich-Form, in ganzen Sätzen im Perfekt.
+          - Tauscht die Rollen.
+          - 'Danach berichtet jeder der Gruppe zwei Informationen über seinen Partner / seine Partnerin: in der 3. Person, im Perfekt.'
+        example: |-
+          *A: Wo bist du geboren?*
+          *B: Ich bin in Haifa geboren. Gestern habe ich Nudeln gegessen.*
+          *Bericht: Mein Partner ist in Haifa geboren und hat gestern Nudeln gegessen.*
+      - id: act1-persons
+        type: callout
+        tone: info
+        title: Personen im Perfekt
+        text: |-
+          **1. Person:** Ich **bin** geboren. Ich **habe** gegessen. Ich **bin** gegangen.
+          **2. Person (Fragen):** Wo **bist** du geboren? Was **hast** du gegessen?
+          **3. Person:** Er **ist** geboren. Sie **hat** gegessen.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Wie lautet die Frage?'
+        skills: [Perfekt mit haben / sein]
+        minutes: 10
+        steps:
+          - Arbeitet zu zweit.
+          - Schüler A liest eine Antwort unten vor.
+          - Schüler B stellt die passende Frage im Perfekt.
+          - Danach Rollenwechsel.
+          - 'Extra: Wähle einen Satz und stell zwei verschiedene Fragen (mit *was, wann, wo, mit wem* …).'
+        example: |-
+          *Antwort: Gestern habe ich Brot und Kaffee gegessen.*
+          *Frage: Was hast du gestern gegessen?*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Wandle die Antworten in Fragen um
+        items:
+          - question: Ich habe letzte Woche einen Film gesehen.
+            frame: ___ hast du ___?
+          - question: Sie ist am Samstag nach Berlin gefahren.
+            frame: ___ ist sie ___?
+          - question: Wir haben gestern Freunde getroffen.
+            frame: ___ habt ihr ___?
+          - question: Er hat zwei Stunden Deutsch gelernt.
+          - question: Ich bin gestern um 7 Uhr aufgestanden.
+          - question: Ich habe gestern Abend Pizza gegessen.
+          - question: Wir sind am Wochenende nach Hause gekommen.
+          - question: Sie hat gestern mit ihrer Mutter gesprochen.
+          - question: Er hat am Freitag im Supermarkt eingekauft.
+          - question: Ich bin gestern zur Arbeit gegangen.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Tagebucheintrag von gestern'
+        skills: [Perfekt mit haben / sein, Unregelmäßige Verben im Perfekt]
+        minutes: 20
+        steps:
+          - 'Schreiben: Schreib 3–4 einfache Sätze im Perfekt darüber, was du gestern gemacht hast.'
+          - 'Austausch: Arbeitet zu zweit und tauscht eure Texte. Stell zu jedem Satz deines Partners eine Zusatzfrage im Perfekt.'
+          - 'Bericht: Erzähl der Gruppe zwei Sätze über deinen Partner / deine Partnerin (3. Person, Perfekt).'
+        example: |-
+          *Gestern bin ich in den Supermarkt gegangen. Danach habe ich Kaffee getrunken.*
+          *Partner: Was hast du dort gekauft? Mit wem bist du gegangen? Wann hast du das gemacht? Wo genau war das?*
+          *Bericht: Mein Partner ist in den Supermarkt gegangen und hat sich einen Kaffee gekauft.*
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Mein Tagebuch von gestern
+        items:
+          - question: Gestern ___.
+          - question: Danach ___.
+          - question: Am Abend ___.
+          - question: Zum Schluss ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Als ich ein Kind war'
+        skills: [Perfekt mit haben / sein, Unregelmäßige Verben im Perfekt]
+        minutes: 15
+        steps:
+          - Lies die Fragen unten und denk in Ruhe über deine Kindheit nach. Antworte nur im Perfekt (z. B. *habe … gemacht, bin … gereist*).
+          - Arbeitet zu zweit. Schüler A interviewt Schüler B mit allen Fragen, dann Rollenwechsel. Stellt Anschlussfragen (*Warum? Wo? Mit wem?*).
+          - Erzähl der Gruppe 2–3 Sätze über deinen Partner / deine Partnerin (3. Person, Perfekt).
+        example: |-
+          *A: Wohin bist du bei deiner ersten Reise gereist?*
+          *B: Ich bin nach Tel Aviv gereist. Und du?*
+          *Bericht: Mein Partner ist nach Tel Aviv gereist und hat als Kind den Film „Toy Story“ im Kino gesehen.*
+      - id: act4-questions
+        type: discussionQuestions
+        items:
+          - question: Wohin bist du zum ersten Mal gereist?
+            frame: Ich bin zum ersten Mal nach ___ gereist.
+          - question: Welchen Film hast du als Kind im Kino gesehen?
+            frame: Als Kind habe ich ___ im Kino gesehen.
+          - question: Was hast du in deinem letzten Urlaub als Kind gemacht?
+            frame: In meinem letzten Urlaub als Kind habe ich ___. / … bin ich ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: das **Perfekt mit haben / sein** und
+          **häufige unregelmäßige Verben im Perfekt** (gehen, kommen, fahren, essen,
+          sehen, sprechen, treffen, machen). A2-Fokus in allen Aktivitäten: nur
+          Perfekt für Handlungen, *haben / sein* bewusst wählen, Partizip II am
+          Satzende. *als Kind, gestern, letzte Woche* sind nur Zeitangaben, keine neue
+          Grammatik.
+      - id: n-intro
+        anchor: intro
+        text: >-
+          Gib zuerst dein Beispiel. Jeder Schüler sagt seinen Namen und eine Handlung
+          im Perfekt, möglichst mit einem unregelmäßigen Verb.
+      - id: n-warmup
+        anchor: warmup
+        text: Stell jedem Schüler mindestens zwei Fragen. Die Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        minutes: 15
+        text: >-
+          So üben die Schüler die 1. Person (*Ich bin geboren. Ich habe gegessen.*),
+          die 2. Person in Fragen (*Wo bist du geboren? Was hast du gegessen?*) und die
+          3. Person im Bericht (*Er ist geboren. Sie hat gegessen.*). *Ich bin geboren*
+          ist eine feste Form. Bei *sein* und *haben* sagt man meistens *war / hatte*
+          (Präteritum); das ist richtig und muss nicht korrigiert werden.
+      - id: n-act2
+        anchor: act2
+        minutes: 10
+        text: >-
+          Ziel: Fragen im Perfekt richtig bilden (Fragewort, *haben / sein* auf
+          Position 2, Partizip II am Ende). Mögliche Fragen: 1. Was hast du letzte
+          Woche gesehen? 2. Wohin ist sie am Samstag gefahren? 3. Wen habt ihr gestern
+          getroffen? 4. Wie lange hat er Deutsch gelernt? 5. Wann bist du gestern
+          aufgestanden? 6. Was hast du gestern Abend gegessen? 7. Wann seid ihr nach
+          Hause gekommen? 8. Mit wem hat sie gestern gesprochen? 9. Wo hat er am
+          Freitag eingekauft? 10. Wohin bist du gestern gegangen? Andere Fragewörter
+          sind auch richtig.
+      - id: n-act3
+        anchor: act3
+        minutes: 20
+        text: Achte darauf, dass die Schüler *haben / sein* bewusst wählen und das Partizip II ans Satzende stellen.
+      - id: n-act4
+        anchor: act4
+        minutes: 15
+        text: >-
+          Schritt 1: 2 Minuten individuelles Nachdenken. Schritt 2: 8 Minuten
+          Paarinterview; erinnere an Anschlussfragen (Warum? Wo? Mit wem?). Schritt 3:
+          5 Minuten Bericht. *als Kind* ist nur eine Zeitangabe, keine neue Grammatik.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: mein-leben-in-der-vergangenheit-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-perfekt
+        type: ruleSummary
+        skill: Perfekt mit haben / sein
+        rules:
+          - text: 'Mit dem **Perfekt** sprechen wir über Handlungen, die in der Vergangenheit fertig sind. Es ist die wichtigste Vergangenheitsform im gesprochenen Deutsch.'
+            examples:
+              - Gestern habe ich gearbeitet.
+              - Letztes Wochenende bin ich nach Berlin gefahren.
+          - text: 'So bilden wir das Perfekt: **haben / sein** + **Partizip II**.'
+          - text: 'Die meisten Verben bilden das Perfekt mit **haben**.'
+            examples: [Ich habe Pizza gegessen., Wir haben Freunde getroffen.]
+          - text: 'Mit **sein** bilden wir das Perfekt bei Verben der **Bewegung** (Ortswechsel) und der **Veränderung**: gehen, kommen, fahren, reisen, aufstehen.'
+            examples:
+              [
+                Ich bin nach Hause gegangen.,
+                Sie ist nach Berlin gefahren.,
+                Ich bin um 7 Uhr aufgestanden.,
+              ]
+          - text: '**Wortstellung:** *haben / sein* steht auf **Position 2**, das **Partizip II** steht **am Satzende**.'
+            examples:
+              - Gestern **habe** ich viel **gearbeitet**.
+              - Am Samstag **bin** ich nach Berlin **gefahren**.
+              - 'Falsch: *Ich habe gearbeitet gestern.*'
+          - text: '**Ja-/Nein-Fragen:** *haben / sein* steht am Anfang.'
+            examples: [Hast du gestern gearbeitet?, Bist du nach Hause gegangen?]
+          - text: '**W-Fragen:** Zuerst das Fragewort, dann *haben / sein* (Position 2), das Partizip II am Ende.'
+            examples:
+              - Was **hast** du gegessen?
+              - Wen **hast** du getroffen?
+              - Wohin **bist** du gefahren?
+              - Mit wem **hast** du gesprochen?
+      - id: persons-table
+        type: table
+        caption: Personen im Perfekt
+        header: [Person, haben, sein]
+        rows:
+          - [ich, Ich habe gegessen., Ich bin gegangen.]
+          - [du, Was hast du gemacht?, Wohin bist du gegangen?]
+          - [er / sie, Er hat gearbeitet., Sie ist gefahren.]
+          - [wir, Wir haben Freunde getroffen., Wir sind nach Hause gekommen.]
+      - id: rules-unregelmaessig
+        type: ruleSummary
+        skill: Unregelmäßige Verben im Perfekt
+        rules:
+          - text: 'Regelmäßige Verben: **ge-** + Stamm + **-t**.'
+            examples: [machen → gemacht, arbeiten → gearbeitet, lernen → gelernt, kaufen → gekauft]
+          - text: 'Viele häufige Verben sind **unregelmäßig**: **ge-** + Stamm (oft mit anderem Vokal) + **-en**. Diese Formen lernen wir auswendig.'
+            examples:
+              - essen → hat gegessen
+              - sehen → hat gesehen
+              - sprechen → hat gesprochen
+              - treffen → hat getroffen
+              - trinken → hat getrunken
+              - gehen → ist gegangen
+              - kommen → ist gekommen
+              - fahren → ist gefahren
+          - text: 'Bei trennbaren Verben steht **-ge-** in der Mitte.'
+            examples: [aufstehen → ist auf**ge**standen, einkaufen → hat ein**ge**kauft]
+          - text: '*Ich bin geboren* ist eine feste Form. Bei *sein* und *haben* sagen wir meistens *war* und *hatte*: *Wo genau war das?*'
+      - id: key-sentence
+        type: callout
+        tone: tip
+        title: Merksatz
+        text: '**Vergangenheit auf Deutsch = Perfekt:** *haben / sein* in der Mitte, das Partizip II am Ende.'
+      - id: summary-he
+        type: text
+        lang: he
+        text: >-
+          בשיעור הזה למדנו לדבר על העבר בגרמנית עם ה־Perfekt: פעולות שהסתיימו (אתמול,
+          בשבוע שעבר, בסוף השבוע, כילד). המבנה: haben / sein + Partizip II. רוב הפעלים
+          באים עם haben; פעלי תנועה ושינוי מקום או מצב (gehen, kommen, fahren,
+          aufstehen) באים עם sein. haben / sein במקום השני במשפט, וה־Partizip II תמיד
+          בסוף. בשאלת כן / לא הפועל haben / sein בא ראשון (Hast du gearbeitet?); בשאלה
+          עם מילת שאלה, מילת השאלה ראשונה ו־haben / sein אחריה (Was hast du gegessen?).
+          עם sein ו־haben אומרים בדרך כלל war / hatte.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die Regeln mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: mein-leben-in-der-vergangenheit-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere eine Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-fragen
+        type: aiTutorPrompt
+        title: 'Aufgabe 1: Fragen und Antworten'
+        intro: Antworte in ganzen Sätzen, nur im Perfekt, und benutze mindestens 2 unregelmäßige Verben.
+        message: |-
+          Hallo Mori! Bitte stell mir 5 einfache Fragen im Perfekt, zum Beispiel:
+          Was hast du gestern gemacht?
+          Was hast du gegessen?
+          Ich antworte in ganzen Sätzen. Bitte korrigiere mich.
+      - id: mori-tagebuch
+        type: aiTutorPrompt
+        title: 'Aufgabe 2: Mini-Tagebuch'
+        intro: 'Schreib danach 4–5 Sätze über gestern, nur im Perfekt, mit mindestens 3 verschiedenen Verben. Beispiel: *Gestern bin ich um 7 Uhr aufgestanden. Danach habe ich gearbeitet.*'
+        message: Hallo Mori! Ich schreibe dir 4–5 Sätze darüber, was ich gestern gemacht habe. Bitte korrigiere mich und stell mir zu jedem Satz eine Frage.
+      - id: mori-bericht
+        type: aiTutorPrompt
+        title: 'Aufgabe 3: Bericht über eine andere Person'
+        intro: 'Schreib danach 3–4 Sätze in der 3. Person (er / sie). Achte auf *hat* oder *ist*. Beispiel: *Mein Bruder ist zur Arbeit gegangen. Er hat Kaffee getrunken.*'
+        message: Hallo Mori! Ich erzähle dir in 3–4 Sätzen, was ein Familienmitglied oder ein Freund gestern gemacht hat. Bitte korrigiere mich und stell mir eine Frage über diese Person.
+      - id: mori-challenge
+        type: aiTutorPrompt
+        title: 'Extra-Aufgabe (freiwillig)'
+        intro: 'Benutze in jedem Satz ein anderes unregelmäßiges Verb: *gegangen, gekommen, gefahren, gegessen, gesehen, gesprochen, getroffen*.'
+        message: Hallo Mori! Ich schreibe dir 5 Sätze über gestern. In jedem Satz benutze ich ein anderes unregelmäßiges Verb. Bitte korrigiere mich.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Nur **Perfekt**, *haben / sein* an der richtigen Stelle, das **Partizip II am Satzende**.
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: mein-leben-in-der-vergangenheit-uebung
+    book: workbook
+    title: 'Übung: Mein Leben in der Vergangenheit'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-perfekt
+        type: activity
+        activity: mein-leben-in-der-vergangenheit-perfekt
+      - id: ex-partizip
+        type: activity
+        activity: mein-leben-in-der-vergangenheit-partizip
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: mein-leben-in-der-vergangenheit-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für die Vergangenheit
+        glossLang: he
+        link: https://quizlet.com/br/1127409852/mein-leben-in-der-vergangenheit-flash-cards/
+        items: &mein-leben-in-der-vergangenheit-words
+          - { term: gehen – ist gegangen, gloss: ללכת }
+          - { term: kommen – ist gekommen, gloss: לבוא }
+          - { term: fahren – ist gefahren, gloss: לנסוע }
+          - { term: essen – hat gegessen, gloss: לאכול }
+          - { term: sehen – hat gesehen, gloss: לראות }
+          - { term: sprechen – hat gesprochen, gloss: לדבר }
+          - { term: treffen – hat getroffen, gloss: לפגוש }
+          - { term: machen – hat gemacht, gloss: לעשות }
+          - { term: haben, gloss: יש ל־ / פועל עזר }
+          - { term: sein, gloss: להיות / פועל עזר }
+          - { term: gestern, gloss: אתמול }
+          - { term: letzte Woche, gloss: בשבוע שעבר }
+          - { term: letztes Wochenende, gloss: בסוף השבוע שעבר }
+          - { term: als Kind, gloss: כילד / כשהייתי ילד }
+          - { term: arbeiten – hat gearbeitet, gloss: לעבוד }
+          - { term: lernen – hat gelernt, gloss: ללמוד }
+          - { term: kaufen – hat gekauft, gloss: לקנות }
+          - { term: trinken – hat getrunken, gloss: לשתות }
+          - { term: aufstehen – ist aufgestanden, gloss: לקום }
+          - { term: zur Arbeit gehen, gloss: ללכת לעבודה }
+          - { term: der Film, gloss: סרט }
+          - { term: die Freunde, gloss: חברים }
+          - { term: der Supermarkt, gloss: סופרמרקט }
+          - { term: die Arbeit, gloss: עבודה }
+          - { term: der Urlaub, gloss: חופשה }
+          - { term: das Wochenende, gloss: סוף שבוע }
+          - { term: was, gloss: מה }
+          - { term: wen, gloss: את מי }
+          - { term: wohin, gloss: לאן }
+          - { term: wann, gloss: מתי }
+          - { term: mit wem, gloss: עם מי }
+          - { term: danach, gloss: אחרי זה }
+          - { term: zu Hause, gloss: בבית }
+          - { term: dort, gloss: שם }
+          - { term: nach, gloss: ל־ / אל }
+          - { term: im, gloss: ב־ (ב + ה־) }
+
+vocabulary:
+  - slug: mein-leben-in-der-vergangenheit
+    title: Mein Leben in der Vergangenheit
+    items: *mein-leben-in-der-vergangenheit-words
+
+activities:
+  - slug: mein-leben-in-der-vergangenheit-perfekt
+    title: 'Perfekt mit haben / sein'
+    minutes: 8
+    items:
+      - id: habe-gegessen
+        type: multipleChoice
+        prompt: Gestern ___ ich Pizza gegessen.
+        options:
+          - { text: habe, correct: true }
+          - {
+              text: bin,
+              feedback: '*essen* ist kein Verb der Bewegung: Wir sagen *Ich habe gegessen*.',
+            }
+          - { text: hat, feedback: '*hat* ist für *er / sie*. Für *ich* sagen wir *habe*.' }
+      - id: ist-gefahren
+        type: multipleChoice
+        prompt: Am Samstag ___ sie nach Berlin gefahren.
+        options:
+          - { text: ist, correct: true }
+          - {
+              text: hat,
+              feedback: '*fahren* ist ein Verb der Bewegung: Das Perfekt bilden wir mit *sein*: *sie ist gefahren*.',
+            }
+          - { text: bin, feedback: '*bin* ist für *ich*. Für *sie* (eine Frau) sagen wir *ist*.' }
+      - id: haben-sind
+        type: fillBlank
+        prompt: Ergänze *haben* oder *sind*.
+        text: Wir ___ gestern Freunde getroffen. Dann ___ wir nach Hause gegangen.
+        blanks: [[haben], [sind]]
+        wordBank: [haben, sind]
+      - id: partizip-ende
+        type: trueFalse
+        prompt: 'Der Satz *Ich habe gearbeitet gestern.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Das Partizip II steht am Satzende: *Ich habe gestern gearbeitet.*'
+          incorrect: 'Das Partizip II steht immer am Satzende: *Ich habe gestern gearbeitet.*'
+      - id: frage-gegessen
+        type: multipleChoice
+        prompt: 'Antwort: *Ich habe gestern Abend Pizza gegessen.* Welche Frage passt?'
+        options:
+          - { text: Was hast du gestern Abend gegessen?, correct: true }
+          - {
+              text: Was du hast gestern Abend gegessen?,
+              feedback: 'In einer W-Frage steht *hast* direkt nach dem Fragewort (Position 2): *Was hast du …?*',
+            }
+          - {
+              text: Was hast du gegessen gestern Abend?,
+              feedback: 'Das Partizip II steht am Ende: *Was hast du gestern Abend gegessen?*',
+            }
+      - id: frage-antwort
+        type: matching
+        prompt: Welche Antwort passt zu welcher Frage?
+        pairs:
+          - [Wohin bist du gefahren?, Ich bin nach Berlin gefahren.]
+          - [Wen hast du getroffen?, Ich habe meine Freunde getroffen.]
+          - [Mit wem hast du gesprochen?, Ich habe mit meiner Mutter gesprochen.]
+          - [Was hast du gekauft?, Ich habe Brot gekauft.]
+          - [Wann bist du aufgestanden?, Ich bin um 7 Uhr aufgestanden.]
+      - id: bericht-partner
+        type: fillBlank
+        prompt: 'Bericht über deinen Partner (3. Person): Ergänze *ist* oder *hat*.'
+        text: Mein Partner ___ in Haifa geboren und ___ gestern Nudeln gegessen.
+        blanks: [[ist], [hat]]
+        wordBank: [ist, hat]
+      - id: ordne-frage
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einer Frage.
+        sentence: Was hast du gestern gemacht?
+
+  - slug: mein-leben-in-der-vergangenheit-partizip
+    title: Unregelmäßige Verben im Perfekt
+    minutes: 8
+    items:
+      - id: partizip-paare
+        type: matching
+        prompt: Welches Partizip II passt zu welchem Verb?
+        pairs:
+          - [gehen, gegangen]
+          - [essen, gegessen]
+          - [sehen, gesehen]
+          - [treffen, getroffen]
+          - [sprechen, gesprochen]
+      - id: gesehen
+        type: multipleChoice
+        prompt: Ich habe letzte Woche einen Film ___.
+        options:
+          - { text: gesehen, correct: true }
+          - {
+              text: gesieht,
+              feedback: '*sehen* ist unregelmäßig: Das Partizip II endet auf *-en*: *gesehen*.',
+            }
+          - {
+              text: sehen,
+              feedback: '*sehen* ist der Infinitiv. Im Perfekt brauchen wir das Partizip II: *gesehen*.',
+            }
+      - id: getrunken
+        type: fillBlank
+        prompt: Schreib das Partizip II von *trinken*.
+        text: Danach habe ich Kaffee ___.
+        blanks: [[getrunken]]
+      - id: gekommen
+        type: fillBlank
+        prompt: Schreib das Partizip II von *kommen*.
+        text: Wir sind am Wochenende nach Hause ___.
+        blanks: [[gekommen]]
+      - id: gemacht
+        type: trueFalse
+        prompt: 'Das Partizip II von *machen* ist *gemacht*.'
+        answer: true
+        feedback:
+          correct: 'Richtig! *machen* ist regelmäßig: *ge-* + *mach* + *-t*.'
+          incorrect: '*machen* ist regelmäßig: *ge-* + Stamm + *-t* = *gemacht*.'
+      - id: aufgestanden
+        type: multipleChoice
+        prompt: Ich bin gestern um 7 Uhr ___.
+        options:
+          - { text: aufgestanden, correct: true }
+          - {
+              text: geaufstanden,
+              feedback: 'Bei trennbaren Verben steht *-ge-* in der Mitte: *auf-ge-standen*.',
+            }
+          - { text: aufgesteht, feedback: '*stehen* ist unregelmäßig: *aufgestanden*.' }
+      - id: fahren-haben
+        type: trueFalse
+        prompt: 'Der Satz *Ich habe nach Berlin gefahren.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! *fahren* ist ein Verb der Bewegung: *Ich bin nach Berlin gefahren.*'
+          incorrect: 'Verben der Bewegung bilden das Perfekt mit *sein*: *Ich bin nach Berlin gefahren.*'
+      - id: gesprochen
+        type: fillBlank
+        prompt: Schreib das Partizip II von *sprechen*.
+        text: Sie hat gestern mit ihrer Mutter ___.
+        blanks: [[gesprochen]]
