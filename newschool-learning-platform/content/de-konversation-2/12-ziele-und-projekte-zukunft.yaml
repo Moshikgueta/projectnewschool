@@ -1,0 +1,590 @@
+# Cycle "Ziele und Projekte – Zukunft", converted from the German conversational
+# digital notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-konversation-2
+slug: ziele-und-projekte-zukunft
+title: Ziele und Projekte – Zukunft
+goal: Mit werden über Ziele sprechen und Zeitsätze mit wenn und nachdem bilden.
+position: 12
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Futur mit werden" and "Zeitsätze mit wenn und
+    nachdem") are NEW: the notebook has no self-study exercises. They were written
+    from the cycle's two skills, its summary, the activity examples and its
+    vocabulary. Please check level, wording and every right answer before students see
+    them.
+  - >-
+    Grammar focus and summary: the notebook says "wenn / nachdem + Präsens → werden"
+    and "in a sentence with wenn / nachdem the verb stays in the present". That is
+    right for wenn (Wenn ich Zeit habe, werde ich lernen) but wrong for nachdem: the
+    action in the nachdem clause is finished first, so it takes the Perfekt (Nachdem
+    ich mein Ziel erreicht habe, werde ich feiern), as all the notebook's own examples
+    show. The rule is rewritten. Two word-order rules were added: the verb goes to the
+    end of the wenn / nachdem clause, and the main clause after the comma starts with
+    the verb (…, werde ich …).
+  - >-
+    Summary: the notebook's werden examples are only ich / wir. A table of werden
+    (ich werde, du wirst, er / sie wird, wir werden, ihr werdet, sie / Sie werden) and a
+    rule for "Mein Ziel ist, … zu + Infinitiv" (used in the warm-up and the activities)
+    were added.
+  - >-
+    Corrections: warm-up question 5 "Wer wird mit dir deinen Treffer feiern?" ("Treffer"
+    = a hit / goal in sport) → "Wer wird mit dir feiern, wenn du dein Ziel erreichst?",
+    frame "Mein / Meine ___ wird mit mir feiern."; Activity 1 example "werde ich in
+    Deutschland reisen" → "werde ich durch Deutschland reisen"; Activity 3 "Ich werde
+    umgeben sein von ___" → "Ich werde von ___ umgeben sein" (and the student example
+    "von guten Menschen umgeben sein"); Activity 4 "Sein Ziel ist ___. Nächste Woche
+    wird er / sie ___." → "Sein / Ihr Ziel ist ___."; warm-up frame "Mein Ziel ist,
+    ___" → "Mein Ziel ist, ___ zu ___." (zu-infinitive, as in the teacher model).
+  - >-
+    The summary and the Mori prompts are in Hebrew in the notebook. The rules are now
+    in simple German (ruleSummary) and a short Hebrew explanation is kept as a Hebrew
+    text block. The five Mori prompts are translated into German messages, with the
+    notebook's German example answers as intros; please check the wording.
+  - >-
+    Activity 3 (visualisation with closed eyes): the teacher's script is kept in a
+    teacher note; the student view shows the writing task. Activities 1 and 3 have no
+    times in the notebook.
+  - >-
+    Vocabulary: glosses changed: "werden – יהיה / אעשה" → "פועל העזר של העתיד (ich werde
+    … = אני …)"; "schaffen – להצליח / לעשות" → "להצליח (לעשות משהו)"; "nächste Woche –
+    שבוע הבא" → "בשבוע הבא"; "der Plan – תכנית" → "תוכנית". Please confirm.
+  - >-
+    Times: Activity 4 (2 + 10 + 5) is recorded as 17 minutes. The Quizlet link lost its
+    "?new" parameter. The "Antwort von Schüler 1/2/3" lines are replaced by the answer
+    boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: ziele-und-projekte-zukunft-unterricht
+    title: 'Unterricht: Ziele und Projekte – Zukunft'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ziele und Projekte – Zukunft
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Futur mit werden
+            description: '*In der Zukunft werde ich jeden Tag üben.*'
+          - name: Zeitsätze mit wenn und nachdem
+            description: '*Wenn ich Zeit habe, werde ich … / Nachdem ich mein Ziel erreicht habe, werde ich …*'
+      - id: quizlet
+        type: externalLink
+        label: Ziele und Projekte – Zukunft auf Quizlet
+        url: https://quizlet.com/br/1131222328/ziele-und-projekte-zukunft-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Mein Ziel ist ___. In der Zukunft werde ich ___.
+        example: Ich bin Anna. Mein Ziel ist, besser Deutsch zu sprechen. In der Zukunft werde ich jeden Tag 10 Minuten üben.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Was ist dein Ziel?
+            frame: Mein Ziel ist, ___ zu ___.
+          - question: Warum ist dieses Ziel wichtig für dich?
+            frame: Dieses Ziel ist wichtig für mich, weil ___.
+          - question: Was wirst du nächste Woche tun, um dein Ziel zu erreichen?
+            frame: Nächste Woche werde ich ___.
+          - question: Was wirst du jeden Tag tun, um dein Ziel zu erreichen?
+            frame: Jeden Tag werde ich ___.
+          - question: Wer wird mit dir feiern, wenn du dein Ziel erreichst?
+            frame: Mein / Meine ___ wird mit mir feiern.
+          - question: Wie wirst du dich fühlen, wenn du dein Ziel erreichst?
+            frame: Ich werde mich ___ fühlen, wenn ich mein Ziel erreiche.
+          - question: Was wirst du machen, nachdem du dein Ziel erreicht hast?
+            frame: Nachdem ich mein Ziel erreicht habe, werde ich ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Meine Vision für mein Ziel'
+        skills: [Futur mit werden, Zeitsätze mit wenn und nachdem]
+        steps:
+          - Schreib dein Ziel und fünf kleine, realistische Schritte.
+          - Jeder liest 1–2 Schritte laut vor.
+        example: |-
+          *Mein Ziel ist: besser Deutsch sprechen.*
+          *1. Diese Woche werde ich jeden Tag 10 Minuten lesen.*
+          *2. Nächste Woche werde ich mit Mori sprechen.*
+          *3. Im nächsten Monat werde ich einen Kurs machen.*
+          *4. Wenn ich mehr Zeit habe, werde ich Filme auf Deutsch schauen.*
+          *5. Nachdem ich mein Ziel erreicht habe, werde ich durch Deutschland reisen.*
+      - id: act1-steps
+        type: discussionQuestions
+        title: Meine Schritte
+        items:
+          - question: 'Mein Ziel ist: ___'
+          - question: Diese Woche werde ich ___.
+          - question: Nächste Woche werde ich ___.
+          - question: Im nächsten Monat werde ich ___.
+          - question: Wenn ich mehr Zeit habe, werde ich ___.
+          - question: Nachdem ich mein Ziel erreicht habe, werde ich ___.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Dein Ziel, mein Plan'
+        skills: [Futur mit werden, Zeitsätze mit wenn und nachdem]
+        minutes: 15
+        steps:
+          - 'Arbeitet zu zweit: A und B.'
+          - 'A fragt B: *Was ist dein Ziel? Was wirst du nächste Woche tun? Wie kann ich dir helfen?*'
+          - 'B antwortet in ganzen Sätzen: *Mein Ziel ist ___. Nächste Woche werde ich ___.*'
+          - 'A macht einen Vorschlag: *Du kannst ___. / Wenn du das machst, wirst du ___.*'
+          - Dann tauscht ihr die Rollen.
+      - id: act2-dialogue
+        type: discussionQuestions
+        title: Unser Gespräch
+        items:
+          - question: Mein Ziel ist ___. Nächste Woche werde ich ___.
+          - question: Mein Vorschlag für meinen Partner / meine Partnerin
+            frame: Du kannst ___. / Wenn du das machst, wirst du ___.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Meine Zukunft sehen'
+        skills: [Futur mit werden]
+        steps:
+          - 'Schließ die Augen und stell dir dein zukünftiges Ich vor: Du hast dein Ziel erreicht. Wo bist du? Wie fühlst du dich? Wer ist bei dir?'
+          - Öffne die Augen. Jetzt bist du diese Person.
+          - 'Schreib eine Nachricht aus der Zukunft: 6 einfache Sätze mit den Strukturen unten.'
+          - Jeder liest einen Satz vor.
+        example: |-
+          *In der Zukunft werde ich in einer neuen Stadt leben.*
+          *Ich werde mich stolz fühlen.*
+          *Ich werde von guten Menschen umgeben sein.*
+          *Ich werde lernen, besser Deutsch zu sprechen.*
+          *Ich werde mich auf meine Träume konzentrieren.*
+          *Nachdem ich mein Ziel erreicht habe, werde ich reisen.*
+      - id: act3-words
+        type: wordBank
+        words:
+          - glücklich
+          - ruhig
+          - stolz
+          - frei
+          - meine Familie
+          - meine Freunde
+          - neue Menschen
+          - besser sprechen
+          - mehr lernen
+          - nicht aufgeben
+          - mein Ziel
+          - meine Träume
+          - meine Arbeit
+          - reisen
+          - feiern
+          - anderen helfen
+          - etwas Neues beginnen
+      - id: act3-message
+        type: discussionQuestions
+        title: Nachricht aus der Zukunft
+        items:
+          - question: In der Zukunft werde ich ___.
+          - question: Ich werde mich ___ fühlen.
+          - question: Ich werde von ___ umgeben sein.
+          - question: Ich werde lernen, ___.
+          - question: Ich werde mich auf ___ konzentrieren.
+          - question: Nachdem ich mein Ziel erreicht habe, werde ich ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Mein Zukunftsplan als Mini-Dialog'
+        skills: [Futur mit werden, Zeitsätze mit wenn und nachdem]
+        minutes: 17
+        steps:
+          - 'Arbeitet zu zweit: A und B.'
+          - 'A erzählt seinen Plan mit mindestens 3 Sätzen: *Mein Ziel ist ___. Nächste Woche werde ich ___. Wenn ich Zeit habe, werde ich ___.*'
+          - 'B hört zu und stellt eine Frage: *Wann genau? Mit wem? Wo? Warum?*'
+          - 'A antwortet in der Zukunft: *Am Montag werde ich ___. Ich werde das mit ___ machen.*'
+          - Dann wechseln die Rollen.
+          - 'Jeder sagt einen Satz über den Partner / die Partnerin: *Sein / Ihr Ziel ist ___. Nächste Woche wird er / sie ___.*'
+        example: |-
+          *Mein Ziel ist, besser Deutsch zu sprechen.*
+          *Nächste Woche werde ich jeden Tag 10 Minuten lesen.*
+          *Wenn ich Zeit habe, werde ich Podcasts hören.*
+          *Nachdem ich mein Ziel erreicht habe, werde ich nach Deutschland reisen.*
+      - id: act4-partner
+        type: discussionQuestions
+        title: Mein Partner / meine Partnerin
+        items:
+          - question: Sein / Ihr Ziel ist ___.
+          - question: Nächste Woche wird er / sie ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Futur mit werden** (alle Aktivitäten,
+          besonders 3) und **Zeitsätze mit wenn und nachdem** (Aktivitäten 1, 2 und 4).
+          Achte darauf: nach *wenn* Präsens, nach *nachdem* Perfekt; danach beginnt der
+          Hauptsatz mit dem Verb (*…, werde ich …*).
+      - id: n-intro
+        anchor: intro
+        text: Schreib die Struktur an die Tafel und gib zuerst dein Beispiel. Die Schüler antworten mit 2–3 Sätzen.
+      - id: n-warmup
+        anchor: warmup
+        text: Stell jedem Schüler mindestens zwei Fragen. Die Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Ziel: kleine, realistische Schritte formulieren. Schreib die Struktur an die
+          Tafel (*Mein Ziel ist: ___ / Diese Woche werde ich … / Nächste Woche werde ich … /
+          Im nächsten Monat werde ich … / Wenn ich mehr Zeit habe, werde ich … / Nachdem
+          ich mein Ziel erreicht habe, werde ich …*).
+      - id: n-act2
+        anchor: act2
+        minutes: 15
+        text: 'Ziel: Zukunftsformen im Dialog anwenden und auf einen Partner reagieren.'
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Schritt 1 (optional, 2 Minuten): Sag langsam: «Schließe deine Augen. Stell dir
+          dein zukünftiges Ich vor. Du hast dein Ziel erreicht. Wo bist du? Wie fühlst du
+          dich? Wer ist bei dir?» Dann 30–40 Sekunden Stille. Schritt 2 (nicht optional):
+          «Jetzt bist du diese zukünftige Person. Du hast dein Ziel erreicht. Wie stehst
+          du? Wie sprichst du? Wie fühlst du dich?» Die Schüler öffnen die Augen. Schritt
+          3: Schreiben mit der Wortbank an der Tafel. Teilen ist optional.
+      - id: n-act4
+        anchor: act4
+        minutes: 17
+        text: >-
+          Vorbereitung: 2 Minuten (Struktur an die Tafel, kurzes Lehrermodell).
+          Partnerarbeit: 10 Minuten. Kurzes Teilen (optional): 5 Minuten.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: ziele-und-projekte-zukunft-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-futur
+        type: ruleSummary
+        skill: Futur mit werden
+        rules:
+          - text: 'Über Ziele und die Zukunft sprechen wir mit **Subjekt + werden + Infinitiv**. Der Infinitiv steht **am Ende**.'
+            examples: [Ich werde lernen., Ich werde arbeiten., Wir werden reisen.]
+          - text: '*werden* steht an **Position 2**. Steht eine Zeitangabe am Anfang, kommt das Subjekt nach *werden*.'
+            examples:
+              [
+                Nächste Woche werde ich jeden Tag 10 Minuten lesen.,
+                In der Zukunft werde ich jeden Tag üben.,
+              ]
+          - text: 'Ein Ziel nennen: **Mein Ziel ist, … zu + Infinitiv**.'
+            examples:
+              - Mein Ziel ist, besser Deutsch zu sprechen.
+              - Mein Ziel ist, in Deutschland zu reisen.
+      - id: werden-table
+        type: table
+        caption: werden im Präsens
+        header: [Person, werden, Beispiel]
+        rows:
+          - [ich, werde, Ich werde einen Kurs machen.]
+          - [du, wirst, Du wirst dein Ziel erreichen.]
+          - [er / sie / es, wird, Sie wird mit mir feiern.]
+          - [wir, werden, Wir werden reisen.]
+          - [ihr, werdet, Ihr werdet viel üben.]
+          - [sie / Sie, werden, Sie werden stolz sein.]
+      - id: rules-zeitsaetze
+        type: ruleSummary
+        skill: Zeitsätze mit wenn und nachdem
+        rules:
+          - text: '**wenn** (auf Hebräisch: כש / אם): Im *wenn*-Satz steht das Verb im **Präsens**, die Zukunft steht im Hauptsatz mit *werden*.'
+            examples:
+              - Wenn ich Zeit habe, werde ich lernen.
+              - Wenn ich mein Ziel erreiche, werde ich sehr glücklich sein.
+          - text: '**nachdem** (auf Hebräisch: אחרי ש): Die Handlung im *nachdem*-Satz ist zuerst fertig: Sie steht im **Perfekt** (*habe / bin* + Partizip II).'
+            examples:
+              - Nachdem ich mein Ziel erreicht habe, werde ich feiern.
+          - text: 'Im *wenn*- und *nachdem*-Satz steht das Verb **am Ende**. Nach dem Komma beginnt der Hauptsatz mit dem **Verb**: *…, werde ich …*'
+            examples: ['Wenn ich mehr Zeit habe, werde ich Filme auf Deutsch schauen.']
+      - id: summary-he
+        type: text
+        lang: he
+        text: >-
+          כדי לדבר על העתיד אומרים: נושא + werden + פועל בצורת המקור, והמקור בסוף המשפט: Ich
+          werde lernen – אני אלמד. במשפט עם wenn (כש / אם) הפועל בהווה: Wenn ich Zeit habe,
+          werde ich lernen. במשפט עם nachdem (אחרי ש) הפעולה כבר הסתיימה, ולכן היא ב־Perfekt:
+          Nachdem ich mein Ziel erreicht habe, werde ich feiern. בשני המקרים הפועל עובר לסוף
+          המשפט, ואחרי הפסיק המשפט הראשי מתחיל בפועל: werde ich …
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die zwei Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: ziele-und-projekte-zukunft-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere eine Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Nachricht 1: Über mein Ziel sprechen'
+        intro: 'Beispiel für deine Antworten: *Mein Ziel ist, besser Deutsch zu sprechen. In der Zukunft werde ich jeden Tag üben.*'
+        message: Hallo Mori! Stell mir bitte Fragen über mein Ziel und meine Pläne für die Zukunft. Ich möchte mit werden antworten. Bitte korrigiere mich sofort.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Nachricht 2: Meine nächste Woche'
+        intro: 'Beispiel: *Nächste Woche werde ich jeden Tag 10 Minuten lesen. Am Montag werde ich mit Mori sprechen.*'
+        message: Mori, frag mich bitte nach meiner nächsten Woche. Ich möchte im Futur mit werden antworten. Bitte hilf mir mit der Wortstellung.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Nachricht 3: wenn und nachdem'
+        intro: 'Beispiele: *Wenn ich Zeit habe, werde ich … / Nachdem ich mein Ziel erreicht habe, werde ich …*'
+        message: Mori, gib mir bitte Sätze mit wenn und nachdem, und ich ergänze sie. Ich möchte sie richtig ergänzen. Bitte korrigiere mich sofort.
+      - id: mori-4
+        type: aiTutorPrompt
+        title: 'Nachricht 4: Interview über die Zukunft'
+        intro: 'Beispiel: *Mein Ziel ist, in Deutschland zu reisen. Wenn ich mein Ziel erreiche, werde ich sehr glücklich sein.*'
+        message: 'Mori, sei bitte mein Interviewer. Frag mich: Was ist mein Ziel? Warum ist es wichtig? Was werde ich nächste Woche tun? Wie werde ich mich fühlen, wenn ich mein Ziel erreiche? Bitte korrigiere meine Fehler.'
+      - id: mori-5
+        type: aiTutorPrompt
+        title: 'Nachricht 5: Kleine Schritte planen'
+        intro: 'Beispiel: *Diese Woche werde ich jeden Tag 10 Minuten lernen. Im nächsten Monat werde ich einen Kurs machen. Nachdem ich mein Ziel erreicht habe, werde ich feiern.*'
+        message: 'Mori, hilf mir bitte, einen kurzen Plan mit kleinen Schritten für mein Ziel zu machen. Frag mich: „Was wirst du diese Woche tun?“, „Was wirst du im nächsten Monat tun?“, „Was wirst du tun, nachdem du dein Ziel erreicht hast?“'
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: ziele-und-projekte-zukunft-uebung
+    book: workbook
+    title: 'Übung: Ziele und Projekte – Zukunft'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-werden
+        type: activity
+        activity: ziele-und-projekte-zukunft-werden
+      - id: ex-zeitsaetze
+        type: activity
+        activity: ziele-und-projekte-zukunft-zeitsaetze
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: ziele-und-projekte-zukunft-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für Ziele und Projekte
+        glossLang: he
+        link: https://quizlet.com/br/1131222328/ziele-und-projekte-zukunft-flash-cards/
+        items: &ziele-und-projekte-zukunft-words
+          - { term: das Ziel, gloss: מטרה }
+          - { term: der Traum, gloss: חלום }
+          - { term: die Zukunft, gloss: עתיד }
+          - { term: der Plan, gloss: תוכנית }
+          - { term: der Schritt, gloss: צעד }
+          - { term: der Erfolg, gloss: הצלחה }
+          - { term: die Entscheidung, gloss: החלטה }
+          - { term: die Motivation, gloss: מוטיבציה }
+          - { term: die Unterstützung, gloss: תמיכה }
+          - { term: der Fortschritt, gloss: התקדמות }
+          - { term: der Anfang, gloss: התחלה }
+          - { term: das Ende, gloss: סוף }
+          - { term: lernen, gloss: ללמוד }
+          - { term: arbeiten, gloss: לעבוד }
+          - { term: reisen, gloss: לטייל }
+          - { term: üben, gloss: להתאמן / לתרגל }
+          - { term: beginnen, gloss: להתחיל }
+          - { term: erreichen, gloss: להשיג }
+          - { term: schaffen, gloss: להצליח (לעשות משהו) }
+          - { term: planen, gloss: לתכנן }
+          - { term: helfen, gloss: לעזור }
+          - { term: feiern, gloss: לחגוג }
+          - { term: werden, gloss: פועל העזר של העתיד (ich werde … = אני …) }
+          - { term: wenn, gloss: כש / אם }
+          - { term: nachdem, gloss: אחרי ש }
+          - { term: weil, gloss: כי }
+          - { term: nächste Woche, gloss: בשבוע הבא }
+          - { term: im nächsten Monat, gloss: בחודש הבא }
+          - { term: in der Zukunft, gloss: בעתיד }
+          - { term: jeden Tag, gloss: כל יום }
+          - { term: glücklich, gloss: שמח }
+          - { term: stolz, gloss: גאה }
+          - { term: frei, gloss: חופשי }
+          - { term: sicher, gloss: בטוח }
+          - { term: bereit, gloss: מוכן }
+          - { term: erfolgreich, gloss: מצליח }
+
+vocabulary:
+  - slug: ziele-und-projekte-zukunft
+    title: Ziele und Projekte – Zukunft
+    items: *ziele-und-projekte-zukunft-words
+
+activities:
+  - slug: ziele-und-projekte-zukunft-werden
+    title: 'Futur mit werden: Ich werde mein Ziel erreichen'
+    minutes: 8
+    items:
+      - id: werde-lesen
+        type: multipleChoice
+        prompt: Nächste Woche ___ ich jeden Tag 10 Minuten lesen.
+        options:
+          - { text: werde, correct: true }
+          - {
+              text: wird,
+              feedback: '*wird* gehört zu *er / sie / es*. Mit *ich* sagen wir *ich werde*.',
+            }
+          - {
+              text: werden,
+              feedback: '*werden* gehört zu *wir* und *sie / Sie*. Mit *ich* sagen wir *ich werde*.',
+            }
+      - id: werden-wird
+        type: fillBlank
+        prompt: Ergänze die richtige Form von *werden*.
+        text: Wir ___ reisen. Mein Bruder ___ einen Kurs machen.
+        blanks: [[werden], [wird]]
+        wordBank: [werde, wirst, wird, werden]
+      - id: wortstellung
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: In der Zukunft werde ich jeden Tag üben., correct: true }
+          - {
+              text: In der Zukunft ich werde jeden Tag üben.,
+              feedback: '*werden* steht an Position 2. Nach *In der Zukunft* kommt zuerst *werde*, dann *ich*.',
+            }
+          - {
+              text: In der Zukunft werde ich üben jeden Tag.,
+              feedback: 'Der Infinitiv steht am Ende: *… jeden Tag üben*.',
+            }
+      - id: personen
+        type: matching
+        prompt: Welche Form von *werden* passt?
+        pairs:
+          - [ich, werde]
+          - [du, wirst]
+          - [meine Mutter, wird]
+          - [wir, werden]
+          - [ihr, werdet]
+      - id: infinitiv-ende
+        type: trueFalse
+        prompt: 'Im Satz *Ich werde nächste Woche mit Mori sprechen.* steht der Infinitiv am Ende.'
+        answer: true
+        feedback:
+          correct: Richtig! *werde* an Position 2, *sprechen* am Ende.
+          incorrect: 'Doch: *Ich werde nächste Woche mit Mori sprechen.* Der Infinitiv *sprechen* steht am Ende.'
+      - id: fuehlen
+        type: fillBlank
+        prompt: 'Ergänze: *werden* + Infinitiv von *fühlen*.'
+        text: Ich ___ mich sehr glücklich ___.
+        blanks: [[werde], [fühlen, fuehlen]]
+      - id: mein-ziel
+        type: multipleChoice
+        prompt: Was ist dein Ziel?
+        options:
+          - { text: 'Mein Ziel ist, besser Deutsch zu sprechen.', correct: true }
+          - {
+              text: 'Mein Ziel ist, besser Deutsch sprechen.',
+              feedback: 'Nach *Mein Ziel ist,* brauchen wir *zu* + Infinitiv: *… besser Deutsch zu sprechen.*',
+            }
+          - {
+              text: 'Mein Ziel ist, zu besser Deutsch sprechen.',
+              feedback: '*zu* steht direkt vor dem Infinitiv am Ende: *… besser Deutsch zu sprechen.*',
+            }
+      - id: ordne-mori
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Nächste Woche werde ich mit Mori sprechen.
+
+  - slug: ziele-und-projekte-zukunft-zeitsaetze
+    title: 'Zeitsätze: wenn und nachdem'
+    minutes: 8
+    items:
+      - id: wenn-habe
+        type: multipleChoice
+        prompt: Wenn ich Zeit ___, werde ich Podcasts hören.
+        options:
+          - { text: habe, correct: true }
+          - {
+              text: haben werde,
+              feedback: 'Im *wenn*-Satz steht das Präsens. Die Zukunft (*werde*) steht nur im Hauptsatz.',
+            }
+          - {
+              text: hat,
+              feedback: '*hat* gehört zu *er / sie / es*. Mit *ich* sagen wir *ich habe*.',
+            }
+      - id: nachdem-erreicht
+        type: multipleChoice
+        prompt: Nachdem ich mein Ziel ___, werde ich feiern.
+        options:
+          - { text: erreicht habe, correct: true }
+          - {
+              text: erreiche,
+              feedback: 'Nach *nachdem* ist die Handlung schon fertig: Wir benutzen das Perfekt, *erreicht habe*.',
+            }
+          - {
+              text: erreichen werde,
+              feedback: 'Im *nachdem*-Satz steht kein *werden*. Die Handlung ist schon fertig: *erreicht habe*.',
+            }
+      - id: hauptsatz-werde
+        type: fillBlank
+        prompt: Ergänze die richtige Form von *werden*.
+        text: Wenn ich mehr Zeit habe, ___ ich Filme auf Deutsch schauen.
+        blanks: [[werde]]
+      - id: komma-verb
+        type: trueFalse
+        prompt: 'Der Satz *Wenn ich Zeit habe, ich werde lernen.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Nach dem *wenn*-Satz kommt zuerst das Verb: *Wenn ich Zeit habe, werde ich lernen.*'
+          incorrect: 'Nach dem Komma beginnt der Hauptsatz mit dem Verb: *Wenn ich Zeit habe, werde ich lernen.*'
+      - id: partizipien
+        type: matching
+        prompt: Welches Partizip II passt? (für *nachdem* + Perfekt)
+        pairs:
+          - [erreichen, erreicht]
+          - [lernen, gelernt]
+          - [machen, gemacht]
+          - [schaffen, geschafft]
+          - [beginnen, begonnen]
+      - id: nachdem-kurs
+        type: fillBlank
+        prompt: Ergänze das Perfekt von *machen*.
+        text: Nachdem ich den Kurs ___ ___, werde ich nach Deutschland reisen.
+        blanks: [[gemacht], [habe]]
+      - id: verb-am-ende
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: 'Wenn ich mein Ziel erreiche, werde ich sehr glücklich sein.', correct: true }
+          - {
+              text: 'Wenn ich erreiche mein Ziel, werde ich sehr glücklich sein.',
+              feedback: 'Im *wenn*-Satz steht das Verb am Ende: *Wenn ich mein Ziel erreiche, …*',
+            }
+          - {
+              text: 'Wenn ich mein Ziel erreiche, ich werde sehr glücklich sein.',
+              feedback: 'Nach dem Komma kommt zuerst das Verb: *…, werde ich sehr glücklich sein.*',
+            }
+      - id: ordne-wenn
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Wenn ich Zeit habe, werde ich lernen.
