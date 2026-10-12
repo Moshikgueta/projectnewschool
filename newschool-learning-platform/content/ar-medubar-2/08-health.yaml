@@ -1,0 +1,640 @@
+# Cycle "בריאות – אַצִּחַּה", converted from the spoken Arabic level 2 digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew
+# transliteration, apc-Hebr); Hebrew instructions carry `lang: he`.
+course: ar-medubar-2
+slug: health
+title: 'בריאות – אַצִּחַּה'
+goal: 'לספר בעבר על בעיה בריאותית (שיחה אצל רופא), ולתת עצות עם לַאזֶם / מֻמְכִּן / אַחְסַן ו־לַאִנּוֹ.'
+position: 8
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("health-past" and "health-advice") are NEW: the
+    notebook has no self-study exercises. They were written only from this cycle's
+    summary, examples and vocabulary. An Arabic teacher must check every right answer,
+    every wrong option and every transliteration before students see them.
+  - >-
+    The notebook lists four skills (past, giving advice, health, at the doctor). They
+    were grouped into the course's two skills: talking about the past (a health
+    problem, at the doctor) and giving advice. The notebook has no Activity 2 (it
+    goes 1, 3, 4); the activities are numbered 1, 2, 3 here.
+  - >-
+    Please fix: the full example in the summary says in Hebrew "הרגשתי רע" (I felt
+    bad), but the Arabic is "חַסֵּית מַנִיח" (I felt good). Kept as in the notebook;
+    please correct one of them. The exercises do not use this sentence.
+  - >-
+    Clear typos fixed: summary title "בית מדוברת" → "ערבית מדוברת"; "מומְכִּן" (board,
+    Activity 2) and "מֻומְכִּן יִשְרַב שַאי" → "מֻמְכִּן", as everywhere else; warm-up
+    statement ה "אַהַ מן" → "אַהַם מן" (more important than); doubled punctuation
+    ("!?", "?!", "!.") in the warm-up reduced to one mark.
+  - >-
+    Not corrected, please decide: health is written אַצִּחַּה / צִּחִּי (with צ) and
+    אס'חָּה / ס'חְתַכְּ / ס'חי (with ס'); sport is רִיאַצַּה and רִיאַד'ה; body is
+    אִלְגִּסֶם and אִלְגִּ'סֶם; "what" is both אֵיש and שו; "good" is מְנִיח and מַנִיח. The
+    advice examples use the 3rd person (לַאזֶם יִנַאם, about a friend) and the
+    summary the 2nd person (לַאזֶם תִּנַאם).
+  - >-
+    The Quizlet link was broken in the notebook (the address was pasted twice); it
+    was rebuilt as one address and the tracking parameters "?i=…&x=…" were removed.
+    Please check that it opens the right set.
+  - >-
+    The "תשובת תלמיד 1/2/3" lines were removed (the platform has answer boxes). This
+    cycle has no Mori homework, so there is no homework section. The worksheet "אֻסְבּוּעִי
+    אִלצִּחִּי" (one healthy action per day) stays in class, after Activity 3, with its
+    word help. No activity has a time in the notebook.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: health-class
+    title: 'שיעור: בריאות'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: 'בריאות – אַצִּחַּה'
+      - id: skills
+        type: cycleOverview
+        lang: he
+        skills:
+          - name: לדבר על העבר – אצל הרופא
+            description: 'נִמְתּ, רֻחְתּ, אַקַלְתּ, חַסֵּית, וִקְעֶת; לספר לרופא מה קרה ולענות על שאלות.'
+          - name: מתן עצות
+            description: 'לַאזֶם / מֻמְכִּן / אַחְסַן + פועל, ו־מְנִיח לַאִנּוֹ + סיבה.'
+      - id: quizlet
+        type: externalLink
+        lang: he
+        label: אצחה בקוויזלט
+        url: https://quizlet.com/il/1151046882/%D7%90%D7%A1%D7%97%D7%94-%D7%91%D7%A8%D7%99%D7%90%D7%95%D7%AA-%D7%A2%D7%A8%D7%91%D7%99%D7%AA-%D7%A8%D7%9E%D7%94-2-flash-cards/
+      - id: intro-title
+        type: heading
+        lang: he
+        level: 3
+        text: סבב פתיחה
+      - id: intro-how
+        type: text
+        lang: he
+        text: כל תלמיד מציג את עצמו ואומר הרגל בריא.
+      - id: intro
+        type: sentenceFrame
+        frame: |-
+          אַנַא ___.
+          עַאנְדִי עַאדֶה צִּחִּיֶּה הִיֶּה ___.
+        example: |-
+          אַנַא מֻחַמַּד.
+          עַאנְדִי עַאדֶה צִּחִּיֶּה הִיֶּה אַנַא בְּנַאם בַּכִּיר.
+      - id: warmup-title
+        type: heading
+        lang: he
+        level: 3
+        text: שאלות חימום
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: "כֵּיף בְּתְּעַרֶּף אֶלְס'חָּה? הַל אס'חָּה הו ר'יאבְּ אֶלְמרַד'?"
+          - question: "הַל בֶּתְחֶס אנו אלמוג'תמַע בֶּהְתַם בֶּס'חָּה? אעטיני אמת'לֶה!"
+          - question: "שו הי אלעאדאת אֶלְיַומיֶּה אללי בֶּתְאַת'ֶר בֶּשׁכֶּל איג'אבּי על ס'חְתַכְּ?"
+          - question: "שו בּתֶחְ'תאר: מַס'ארי אכּתר או ס'חה אַפד'ל? עַלֶּלְ!"
+      - id: warmup-agree
+        type: discussionQuestions
+        title: "מַע או דֶ'ד!"
+        items:
+          - question: "א. אס'חָה מַסְאולֶיֶּה פַרְדֶיֶּה ומֶש מסאולֶיֶּת אדולֶה."
+          - question: "ב. אג'מאל מַרְבּוט בֶּסּ'חָּה."
+          - question: "ג. אֶלפוק'ור מֶשׁ מובּרֶּר לַאֶהְמאל אס'חָּה!"
+          - question: "ד. אֶלעַמַלֶיאת אַתָּג'מיליֶּה תוד'עֶף תק'בּול אד'את!"
+          - question: "ה. אסֶּחָּה אנַּפְסֶיֶּה אַהַם מן אסֶּחָּה אֶלג'סַדֶיֶּה."
+      - id: activities-title
+        type: heading
+        lang: he
+        level: 3
+        text: פעילויות
+      - id: act1
+        type: classActivity
+        lang: he
+        title: 'פעילות 1: אצל הרופא (שיחה אינטראקטיבית)'
+        skills: [לדבר על העבר – אצל הרופא, מתן עצות]
+        steps:
+          - 'מתחלקים לזוגות: תלמיד א׳ – רופא, תלמיד ב׳ – מטופל. המטופל חושב על בעיה בריאותית שקרתה בעבר.'
+          - 'המטופל מתחיל: מברך את הרופא ואומר מה קרה.'
+          - 'הרופא שואל לפחות 4 שאלות כדי להבין מה קרה.'
+          - 'המטופל עונה.'
+          - 'הרופא נותן עצה עם לַאזֶם / מֻמְכִּן / אַחְסַן.'
+          - 'הרופא מסיים את השיחה.'
+          - 'מחליפים תפקידים וחוזרים על הפעילות עם סיפור חדש.'
+        wordBank:
+          - וִקְעֶת
+          - מַרִדְתּ
+          - חַסֵּית בִּוַגַ'ע רַאס
+          - אַקַלְתּ אַכְּל מַא כַּאן מְנִיח
+      - id: act1-patient-title
+        type: heading
+        lang: he
+        level: 4
+        text: 'שלב 2 – המטופל מתחיל'
+      - id: act1-patient
+        type: sentenceFrame
+        frame: 'אַסַּלַאם דֻּכְּתּוֹר, אַנַא ___.'
+        example: |-
+          אַסַּלַאם דֻּכְּתּוֹר, אַנַא מַרִדְתּ אִמְבַּארֶח.
+          אַסַּלַאם דֻּכְּתּוֹר, אַנַא וִקְעֶת.
+      - id: act1-doctor-title
+        type: heading
+        lang: he
+        level: 4
+        text: 'שלבים 3–4 – הרופא שואל, המטופל עונה'
+      - id: act1-questions
+        type: discussionQuestions
+        items:
+          - question: 'אֵימְתַא צַּאר הַאדַא?'
+            frame: 'צַּאר הַאדַא אִמְבַּארֶח.'
+          - question: 'וֵין כֻּנְתּ?'
+            frame: 'כֻּנְתּ בִּלְבֵּית.'
+          - question: 'כֵּיף צַּאר הַאדַא?'
+            frame: 'זִחְלַקֶתּ.'
+          - question: 'אֵיש חַסֵּית?'
+            frame: "חַסֵּית בִּוַגַ'ע."
+          - question: 'אֵיש עַמַלְתּ בַּעְדֵין?'
+            frame: 'חַטֵית תִּלְג.'
+          - question: 'הַל רֻחְתּ עַנְד דֻּכְּתּוֹר?'
+          - question: 'כֵּיף חַסֵּית בַּעְדֵין?'
+      - id: act1-advice-title
+        type: heading
+        lang: he
+        level: 4
+        text: 'שלב 5 – הרופא נותן עצה'
+      - id: act1-advice
+        type: sentenceFrame
+        frame: |-
+          לַאזֶם ___.
+          מֻמְכִּן ___.
+          אַחְסַן ___.
+        example: |-
+          לַאזֶם תִּרְתַּאח.
+          מֻמְכִּן תִּחֻט תִּלְג.
+          אַחְסַן תִּנַאם מְנִיח.
+      - id: act1-end-title
+        type: heading
+        lang: he
+        level: 4
+        text: 'שלב 6 – הרופא מסיים את השיחה'
+      - id: act1-end
+        type: examples
+        items:
+          - text: 'אִנְשַאללַה תִּתְחַסַּן קַרִיב.'
+          - text: 'דִּיר בַּאלַכּ עַלַא חַאלַכּ.'
+      - id: act2
+        type: classActivity
+        lang: he
+        title: "פעילות 2: מתן עצות (נֶעטי נַס'יחָה!)"
+        skills: [מתן עצות]
+        steps:
+          - 'מטרה: לתת עצות על בריאות ולהסביר למה העצה טובה, עם לַאזֶם (צריך / חייב), מֻמְכִּן (אפשר / יכול) ו־מְנִיח לַאִנּוֹ (זה טוב כי…).'
+          - 'שלב 1: שומעים סיטואציה על חבר שיש לו הרגל לא בריא. כל תלמיד נותן עצה אחת ומסביר למה זו עצה טובה. המבנה: לַאזֶם + פועל, מֻמְכִּן + פועל, מְנִיח לַאִנּוֹ + סיבה.'
+          - "שלב 2 – הדגמה: המורה מציג סיטואציה ושואל: ״שו בתעטי נס'יחה?״"
+          - 'שלב 3 – תרגול עם כל הכיתה: המורה מציג סיטואציה (למטה), וכל תלמיד נותן עצה אחת.'
+          - 'שלב 4 – תרגול בזוגות (לא חובה): תלמיד א׳ אומר סיטואציה, תלמיד ב׳ נותן עצה, ואז מתחלפים.'
+        example: |-
+          ס'אחְבַּכּ מַא בִּנַאם מְנִיח.
+          לַאזֶם יִנַאם בַּכִּיר, מְנִיח לַאִנּוֹ אִלְגִּ'סֶם בִּרְתַּאח.
+          מֻמְכִּן יִשְרַב שַאי קַ'בֶּל אִנּוֹם, מְנִיח לַאִנּוֹ בִּסַאעֵד עַלַא אִנּוֹם.
+      - id: act2-frame
+        type: sentenceFrame
+        answerable: false
+        frame: |-
+          לַאזֶם ___.
+          מֻמְכִּן ___.
+          מְנִיח לַאִנּוֹ ___.
+      - id: act2-situations-title
+        type: heading
+        lang: he
+        level: 4
+        text: סיטואציות לתרגול
+      - id: act2-situations
+        type: discussionQuestions
+        items:
+          - question: "ס'אחְבַּכּ בְּאַכּוֹל סֻוכַּר כִּתִּיר."
+            frame: "לַאזֶם יוֹקַּ'ף או עלא אלאק'ל יח'פֶף סֻוכַּר."
+          - question: "ס'אחְבַּכּ מַא בִּשְרַב מַי."
+            frame: |-
+              לַאזֶם יִשְרַב מַי כִּתִּיר.
+              מְנִיח לַאִנּוֹ אִלְגִּסֶם בִּחְתַּאג' מַי.
+          - question: "ס'אחְבַּכּ מַא בִּעְמַל רִיאַד'ה."
+            frame: |-
+              מֻמְכִּן יִבַּלֵּש רִיאַד'ה.
+              מְנִיח לַאִנּוֹ אִלְגִּ'סֶם בִּכּוּן קְ'וִי.
+          - question: "ס'אחְבַּכּ בִּסְהַר כִּתִּיר בִּלְּיל."
+            frame: |-
+              לַאזֶם יִנַאם בַּכִּיר.
+              מְנִיח לַאִנּוֹ אִנּוֹם מֻוהִם לִצִּחַּה.
+          - question: "ס'אחְבַּכּ בִּחִס בִּתַּעַב כול אליום."
+            frame: |-
+              לַאזֶם יִרְתַּאח.
+              מֻמְכִּן יִנַאם אַכְּתַּר.
+      - id: act3
+        type: classActivity
+        lang: he
+        title: 'פעילות 3: השבוע הבריא שלי (אֻסְבּוּעִי אִלצִּחִּי)'
+        skills: [לדבר על העבר – אצל הרופא]
+        steps:
+          - 'המטרה: לדבר על **דברים בריאים שעשיתם השבוע**, שקשורים לגוף ולנפש: שינה טובה, אכילה בריאה, ספורט, מנוחה, שתיית מים, הליכה, הרפיה.'
+          - 'חושבים על **פעולה בריאה אחת לפחות בכל יום** וכותבים בדף העבודה שלמטה.'
+          - 'שיתוף: כל תלמיד אומר 2–3 משפטים על השבוע הבריא שלו. המורה יכול לשאול שאלות המשך.'
+        example: |-
+          יוֹם אִלְאַחַד אַנַא נִמְתּ בַּכִּיר. חַסֵּית בּנשאט אכבר לַאִנּוֹ נִמְתּ מְנִיח.
+          יוֹם אִלְאִתְנֵין אַנַא שְרִבְּתּ מַי כִּתִּיר. חַסֵּית מְנִיח לַאִנּוֹ אִלְגִּסֶם אִרְתַּאח.
+      - id: act3-frame
+        type: sentenceFrame
+        answerable: false
+        frame: |-
+          יוֹם ___ אַנַא ___.
+          חַסֵּית ___ לַאִנּוֹ ___.
+      - id: act3-followup-title
+        type: heading
+        lang: he
+        level: 4
+        text: שאלות המשך
+      - id: act3-followup
+        type: discussionQuestions
+        answerable: false
+        items:
+          - question: "אֵיש עַמַלְתּ עַשַאן תּחֶס אנכ ס'חי אכתר?"
+          - question: 'כֵּיף חַסֵּית בַּעְד מַא עַמַלְתּ הַאדַא אִשִּי?'
+          - question: 'הַל בִּדַּכּ תִּעְמַל הַאדַא אִשִּי כַּמַאן אֻסְבּוּע אִלִּי גַאי?'
+      - id: worksheet-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'דף עבודה – אֻסְבּוּעִי אִלצִּחִּי (השבוע הבריא שלי)'
+      - id: worksheet-how
+        type: text
+        lang: he
+        text: 'חלק 1 – כתיבה: כתבו פעולה בריאה אחת שעשיתם בכל יום, ואיך הרגשתם. המבנה: אַנַא ___. חַסֵּית ___ לַאִנּוֹ ___.'
+      - id: worksheet
+        type: discussionQuestions
+        items:
+          - question: 'יוֹם אִלְאַחַד: אַנַא ___. חַסֵּית ___ לַאִנּוֹ ___.'
+          - question: 'יוֹם אִלְאִתְנֵין: אַנַא ___. חַסֵּית ___ לַאִנּוֹ ___.'
+          - question: 'יוֹם אִלְתֻּלַאתַא: אַנַא ___. חַסֵּית ___ לַאִנּוֹ ___.'
+          - question: 'יוֹם אִלְאַרְבִּעַא: אַנַא ___. חַסֵּית ___ לַאִנּוֹ ___.'
+          - question: "יוֹם אִלְחַ'מִיס: אַנַא ___. חַסֵּית ___ לַאִנּוֹ ___."
+          - question: 'יוֹם אִלְגֻּמְעַה: אַנַא ___. חַסֵּית ___ לַאִנּוֹ ___.'
+          - question: 'יוֹם אִלְסַּבֶּת: אַנַא ___. חַסֵּית ___ לַאִנּוֹ ___.'
+      - id: worksheet-help-title
+        type: heading
+        lang: he
+        level: 4
+        text: 'חלק 2 – עזרה (אוצר מילים שימושי)'
+      - id: worksheet-verbs
+        type: wordBank
+        words:
+          - נִמְתּ בַּכִּיר
+          - שְרִבְּתּ מַי
+          - עַמַלְתּ רִיאַצַּה
+          - רֻחְתּ אַמְשִי
+          - אַקַלְתּ אַכְּל צִּחִּי
+          - אִרְתַּחְתּ
+          - נִמְתּ מְנִיח
+      - id: worksheet-feelings
+        type: wordBank
+        words:
+          - חַסֵּית מְנִיח
+          - חַסֵּית נַשִּיט
+          - חַסֵּית מֻרְתַּאח
+          - חַסֵּית מַבְּסוּט
+          - חַסֵּית הַאדִי
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: 'מיומנויות המחזור: דיבור על העבר, מתן עצות, דיבור על בריאות ושיחה אצל רופא.'
+      - id: n-warmup
+        anchor: warmup
+        text: "שאלו את התלמידים את השאלות ועודדו תשובות מלאות. בשאלות ״מַע או דֶ'ד!״ כל תלמיד אומר אם הוא מסכים או לא, ולמה."
+      - id: n-act1
+        anchor: act1
+        text: 'כתבו על הלוח את דוגמאות הבעיות (וִקְעֶת, מַרִדְתּ…), את שאלות הרופא ואת התבניות לַאזֶם / מֻמְכִּן / אַחְסַן.'
+      - id: n-act2
+        anchor: act2
+        text: 'כתבו על הלוח: לַאזֶם ___ / מֻמְכִּן ___ / מְנִיח לַאִנּוֹ ___. מטרה דקדוקית: עצות עם לַאזֶם, אפשרות עם מֻמְכִּן, הסבר עם לַאִנּוֹ, ופעלים בהווה בערבית מדוברת.'
+      - id: n-act3
+        anchor: act3
+        text: 'כתבו על הלוח את המבנה ״יוֹם ___ אַנַא ___ / חַסֵּית ___ לַאִנּוֹ ___״. הדגישו שבריאות קשורה לגוף ולנפש.'
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: health-summary
+    title: סיכום השיעור
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: 'סיכום דקדוקי – ערבית מדוברת לעומת עברית'
+      - id: intro
+        type: text
+        lang: he
+        text: 'בשיעור למדנו שני מבנים מרכזיים: עבר, ומתן עצות.'
+      - id: rules-past
+        type: ruleSummary
+        lang: he
+        skill: 'עבר – פעולה שקרתה בעבר'
+        rules:
+          - text: 'בעברית, כדי לדבר על העבר, משנים את הפועל: ישנתי, הלכתי, אכלתי, הרגשתי. הסיומת הנפוצה לגוף ״אני״ היא **תי־**.'
+          - text: 'גם בערבית משנים את הפועל. הסיומת הנפוצה לגוף ״אני״ היא **תּ־**.'
+            examples:
+              - 'נִמְתּ = ישנתי'
+              - 'רֻחְתּ = הלכתי'
+              - 'אַקַלְתּ = אכלתי'
+              - 'חַסֵּית = הרגשתי'
+          - text: 'בשתי השפות, הפועל עצמו משתנה. לא משתמשים במילת עזר.'
+      - id: past-table
+        type: table
+        lang: he
+        caption: 'השוואה: עבר'
+        header: [עברית, ערבית מדוברת]
+        rows:
+          - [ישנתי, נִמְתּ]
+          - [הלכתי, רֻחְתּ]
+          - [אכלתי, אַקַלְתּ]
+          - [הרגשתי, חַסֵּית]
+      - id: rules-advice
+        type: ruleSummary
+        lang: he
+        skill: מתן עצות
+        rules:
+          - text: '**לַאזֶם** = צריך, **מֻמְכִּן** = אפשר / יכול, **אַחְסַן** = עדיף.'
+            examples:
+              - 'לַאזֶם תִּנַאם בַּכִּיר.'
+              - 'מֻמְכִּן תִּרְתַּאח.'
+              - 'אַחְסַן תִּרְתַּאח.'
+          - text: 'הבדל חשוב: בעברית יש ״ל״ (לישון). בערבית אין – הפועל בא ישירות.'
+      - id: advice-table
+        type: table
+        lang: he
+        caption: 'השוואה: עצות'
+        header: [עברית, ערבית מדוברת]
+        rows:
+          - [צריך לישון, לַאזֶם תִּנַאם]
+          - [אפשר לנוח, מֻמְכִּן תִּרְתַּאח]
+          - [עדיף לנוח, אַחְסַן תִּרְתַּאח]
+      - id: rules-reason
+        type: ruleSummary
+        lang: he
+        skill: 'הסבר סיבה – ״כי״'
+        rules:
+          - text: '**לַאִנּוֹ** = כי. ״הרגשתי טוב כי ישנתי טוב״:'
+            examples:
+              - 'חַסֵּית מְנִיח לַאִנּוֹ נִמְתּ מְנִיח.'
+      - id: recap
+        type: callout
+        lang: he
+        tone: info
+        title: סיכום קצר
+        text: |-
+          **עבר:** ישנתי → נִמְתּ, הלכתי → רֻחְתּ
+          **עצות:** צריך → לַאזֶם, אפשר → מֻמְכִּן, עדיף → אַחְסַן
+          **סיבה:** כי → לַאִנּוֹ
+      - id: full-example
+        type: examples
+        items:
+          - text: 'אִמְבַּארֶח רֻחְתּ עַנְד אִלְדֻּכְּתּוֹר. חַסֵּית מַנִיח. לַאזֶם אַרְתַּאח.'
+            gloss: 'אתמול הלכתי לרופא. הרגשתי רע. צריך לנוח.'
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: 'שימו לב: בדוגמה המלאה ״חַסֵּית מַנִיח״ פירושו ״הרגשתי טוב״, אבל התרגום בעברית הוא ״הרגשתי רע״. תקנו בכיתה לפי מה שאתם מלמדים.'
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: health-practice
+    book: workbook
+    title: 'תרגול: בריאות'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        lang: he
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+      - id: ex-past
+        type: activity
+        activity: health-past
+      - id: ex-advice
+        type: activity
+        activity: health-advice
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: health-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: בריאות
+        glossLang: he
+        link: https://quizlet.com/il/1151046882/%D7%90%D7%A1%D7%97%D7%94-%D7%91%D7%A8%D7%99%D7%90%D7%95%D7%AA-%D7%A2%D7%A8%D7%91%D7%99%D7%AA-%D7%A8%D7%9E%D7%94-2-flash-cards/
+        items: &health-words
+          - { term: 'אַצִּחַּה', gloss: 'בריאות' }
+          - { term: 'דֻּכְּתּוֹר', gloss: 'רופא' }
+          - { term: 'מַרִיד', gloss: 'חולה' }
+          - { term: 'מֻשְכִּלֶה', gloss: 'בעיה' }
+          - { term: "וַגַ'ע", gloss: 'כאב' }
+          - { term: "וַגַ'ע רַאס", gloss: 'כאב ראש' }
+          - { term: "וַגַ'ע דַּהֶר", gloss: 'כאב גב' }
+          - { term: "וַגַ'ע חַלַק", gloss: 'כאב גרון' }
+          - { term: 'דַּוַא', gloss: 'תרופה' }
+          - { term: 'תִּלְג', gloss: 'קרח' }
+          - { term: 'רַאחַה', gloss: 'מנוחה' }
+          - { term: 'רִיאַצַּה', gloss: 'ספורט' }
+          - { term: 'אַכְּל', gloss: 'אוכל' }
+          - { term: 'אַכְּל צִּחִּי', gloss: 'אוכל בריא' }
+          - { term: 'מַי', gloss: 'מים' }
+          - { term: 'נוֹם', gloss: 'שינה' }
+          - { term: 'תַּעַבַּאן', gloss: 'עייף' }
+          - { term: 'מְנִיח', gloss: 'טוב' }
+          - { term: 'מֻרְתַּאח', gloss: 'רגוע / נח' }
+          - { term: 'נַשִּיט', gloss: 'אנרגטי' }
+          - { term: 'חַסֵּית', gloss: 'הרגשתי' }
+          - { term: 'נִמְתּ', gloss: 'ישנתי' }
+          - { term: 'אַקַלְתּ', gloss: 'אכלתי' }
+          - { term: 'שְרִבְּתּ', gloss: 'שתיתי' }
+          - { term: 'רֻחְתּ', gloss: 'הלכתי' }
+          - { term: 'וִקְעֶת', gloss: 'נפלתי' }
+          - { term: 'אִרְתַּחְתּ', gloss: 'נחתי' }
+          - { term: 'לַאזֶם', gloss: 'צריך / חייב' }
+          - { term: 'מֻמְכִּן', gloss: 'אפשר / יכול' }
+          - { term: 'אַחְסַן', gloss: 'עדיף' }
+          - { term: 'לַאִנּוֹ', gloss: 'כי' }
+          - { term: 'אֵימְתַא', gloss: 'מתי' }
+          - { term: 'כֵּיף', gloss: 'איך' }
+          - { term: 'לֵיש', gloss: 'למה' }
+          - { term: 'הַאדַא', gloss: 'זה' }
+          - { term: 'דִּיר בַּאלַכּ', gloss: 'תשמור על עצמך' }
+
+vocabulary:
+  - slug: health
+    title: בריאות
+    items: *health-words
+
+activities:
+  - slug: health-past
+    title: 'עבר – אצל הרופא: נִמְתּ, רֻחְתּ, חַסֵּית'
+    minutes: 8
+    items:
+      - id: past-verbs
+        type: matching
+        lang: he
+        prompt: התאימו כל פועל בעבר לפירוש שלו.
+        pairs:
+          - ['נִמְתּ', 'ישנתי']
+          - ['רֻחְתּ', 'הלכתי']
+          - ['אַקַלְתּ', 'אכלתי']
+          - ['שְרִבְּתּ', 'שתיתי']
+          - ['וִקְעֶת', 'נפלתי']
+      - id: felt
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים ״הרגשתי״?'
+        options:
+          - { text: 'חַסֵּית', correct: true }
+          - { text: 'נִמְתּ', feedback: 'נִמְתּ פירושו ״ישנתי״.' }
+          - { text: 'אִרְתַּחְתּ', feedback: 'אִרְתַּחְתּ פירושו ״נחתי״.' }
+      - id: ending
+        type: trueFalse
+        lang: he
+        prompt: 'בערבית מדוברת, הסיומת הנפוצה של הפועל בעבר בגוף ״אני״ היא תּ (כמו ״תי״ בעברית).'
+        answer: true
+        feedback:
+          correct: 'נכון! נִמְתּ, רֻחְתּ, אַקַלְתּ – כמו ישנתי, הלכתי, אכלתי.'
+          incorrect: 'זה נכון: בגוף ״אני״ הסיומת היא תּ – נִמְתּ, רֻחְתּ, אַקַלְתּ.'
+      - id: patient
+        type: multipleChoice
+        lang: he
+        prompt: 'אצל הרופא: ״שלום דוקטור, חליתי אתמול.״'
+        options:
+          - { text: 'אַסַּלַאם דֻּכְּתּוֹר, אַנַא מַרִדְתּ אִמְבַּארֶח.', correct: true }
+          - {
+              text: 'אַסַּלַאם דֻּכְּתּוֹר, אַנַא וִקְעֶת אִמְבַּארֶח.',
+              feedback: 'וִקְעֶת פירושו ״נפלתי״. ״חליתי״ זה מַרִדְתּ.',
+            }
+          - {
+              text: 'אַסַּלַאם דֻּכְּתּוֹר, אַנַא נִמְתּ אִמְבַּארֶח.',
+              feedback: 'נִמְתּ פירושו ״ישנתי״. ״חליתי״ זה מַרִדְתּ.',
+            }
+      - id: when-happened
+        type: multipleChoice
+        lang: he
+        prompt: 'הרופא שואל: ״אֵימְתַא צַּאר הַאדַא?״ מה הוא שואל?'
+        options:
+          - { text: 'מתי זה קרה?', correct: true }
+          - { text: 'איפה היית?', feedback: '״איפה היית?״ זה וֵין כֻּנְתּ?' }
+          - { text: 'איך זה קרה?', feedback: '״איך זה קרה?״ זה כֵּיף צַּאר הַאדַא?' }
+      - id: pains
+        type: matching
+        lang: he
+        prompt: התאימו כל מילה לפירוש שלה.
+        pairs:
+          - ["וַגַ'ע רַאס", 'כאב ראש']
+          - ["וַגַ'ע דַּהֶר", 'כאב גב']
+          - ["וַגַ'ע חַלַק", 'כאב גרון']
+          - ['דַּוַא', 'תרופה']
+          - ['תִּלְג', 'קרח']
+      - id: went-doctor
+        type: multipleChoice
+        lang: he
+        prompt: '״אתמול הלכתי לרופא.״ – אִמְבַּארֶח ___ עַנְד אִלְדֻּכְּתּוֹר.'
+        options:
+          - { text: 'רֻחְתּ', correct: true }
+          - { text: 'שְרִבְּתּ', feedback: 'שְרִבְּתּ פירושו ״שתיתי״.' }
+          - { text: 'נִמְתּ', feedback: 'נִמְתּ פירושו ״ישנתי״.' }
+      - id: order-slept
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: ״ביום ראשון הלכתי לישון מוקדם.״'
+        sentence: 'יוֹם אִלְאַחַד אַנַא נִמְתּ בַּכִּיר'
+
+  - slug: health-advice
+    title: 'מתן עצות: לַאזֶם, מֻמְכִּן, אַחְסַן, לַאִנּוֹ'
+    minutes: 8
+    items:
+      - id: advice-words
+        type: matching
+        lang: he
+        prompt: התאימו כל מילה לפירוש שלה.
+        pairs:
+          - ['לַאזֶם', 'צריך / חייב']
+          - ['מֻמְכִּן', 'אפשר / יכול']
+          - ['אַחְסַן', 'עדיף']
+          - ['לַאִנּוֹ', 'כי']
+      - id: must-sleep
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים ״צריך לישון מוקדם״?'
+        options:
+          - { text: 'לַאזֶם תִּנַאם בַּכִּיר', correct: true }
+          - {
+              text: 'מֻמְכִּן תִּנַאם בַּכִּיר',
+              feedback: 'מֻמְכִּן פירושו ״אפשר״. ״צריך״ זה לַאזֶם.',
+            }
+          - {
+              text: 'אַחְסַן תִּנַאם בַּכִּיר',
+              feedback: 'אַחְסַן פירושו ״עדיף״. ״צריך״ זה לַאזֶם.',
+            }
+      - id: no-lamed
+        type: trueFalse
+        lang: he
+        prompt: 'בערבית, כמו בעברית, יש ״ל״ לפני הפועל אחרי לַאזֶם (כמו ״לישון״).'
+        answer: false
+        feedback:
+          correct: 'נכון! בערבית אין ״ל״ – הפועל בא ישירות: לַאזֶם תִּנַאם.'
+          incorrect: 'לא נכון: בערבית הפועל בא ישירות, בלי ״ל״: לַאזֶם תִּנַאם.'
+      - id: water
+        type: multipleChoice
+        lang: he
+        prompt: "החבר שלך לא שותה מים (ס'אחְבַּכּ מַא בִּשְרַב מַי). איזו עצה מתאימה?"
+        options:
+          - { text: 'לַאזֶם יִשְרַב מַי כִּתִּיר.', correct: true }
+          - {
+              text: 'לַאזֶם יִנַאם בַּכִּיר.',
+              feedback: 'זו עצה לחבר שלא ישן טוב. הבעיה כאן היא מים.',
+            }
+          - {
+              text: "מֻמְכִּן יִבַּלֵּש רִיאַד'ה.",
+              feedback: 'זו עצה לחבר שלא עושה ספורט. הבעיה כאן היא מים.',
+            }
+      - id: better-rest
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים ״עדיף לנוח״?'
+        options:
+          - { text: 'אַחְסַן תִּרְתַּאח', correct: true }
+          - { text: 'לַאזֶם תִּרְתַּאח', feedback: 'לַאזֶם תִּרְתַּאח פירושו ״צריך לנוח״.' }
+          - { text: 'מֻמְכִּן תִּרְתַּאח', feedback: 'מֻמְכִּן תִּרְתַּאח פירושו ״אפשר לנוח״.' }
+      - id: because
+        type: multipleChoice
+        lang: he
+        prompt: "השלימו את ההסבר: לַאזֶם יִנַאם בַּכִּיר, ___ אִלְגִּ'סֶם בִּרְתַּאח."
+        options:
+          - { text: 'מְנִיח לַאִנּוֹ', correct: true }
+          - {
+              text: 'מֻמְכִּן',
+              feedback: 'מֻמְכִּן פירושו ״אפשר״. כדי להסביר למה, אומרים מְנִיח לַאִנּוֹ (זה טוב כי).',
+            }
+          - {
+              text: 'אַחְסַן',
+              feedback: 'אַחְסַן פירושו ״עדיף״. כדי להסביר למה, אומרים מְנִיח לַאִנּוֹ (זה טוב כי).',
+            }
+      - id: take-care
+        type: multipleChoice
+        lang: he
+        prompt: 'הרופא מסיים: ״דִּיר בַּאלַכּ עַלַא חַאלַכּ.״ מה הוא אומר?'
+        options:
+          - { text: 'תשמור על עצמך.', correct: true }
+          - { text: 'שתרגיש טוב בקרוב.', feedback: 'את זה אומרים: אִנְשַאללַה תִּתְחַסַּן קַרִיב.' }
+          - { text: 'צריך לנוח.', feedback: '״צריך לנוח״ זה לַאזֶם תִּרְתַּאח.' }
+      - id: order-water
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: ״הוא צריך לשתות הרבה מים.״'
+        sentence: 'לַאזֶם יִשְרַב מַי כִּתִּיר'
