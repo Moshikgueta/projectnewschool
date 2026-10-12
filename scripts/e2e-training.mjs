@@ -235,6 +235,9 @@ export async function trainingSuite({ call, ok, admin, student }) {
   ok('another teacher cannot write it', (await call(T + '/me/followups/' + a0.followups[0].id, { method: 'PATCH', cookie: vet.cookie, body: { reflection: 'x' } })).status === 404);
   r = await call(T + '/followups/' + a0.followups[0].id, { method: 'PATCH', cookie: ped.cookie, body: { managerNotes: 'שיחה טובה', recommendations: 'לגוון פעילויות', status: 'done' } });
   ok('the manager closes the checkpoint with notes', r.body.followup.status === 'done' && r.body.followup.recommendations === 'לגוון פעילויות');
+  r = await call(T + '/me', { cookie: dana.cookie });
+  ok('the teacher sees the recommendations but not the private notes',
+    r.body.assignments[0].followups[0].recommendations === 'לגוון פעילויות' && !JSON.stringify(r.body).includes('שיחה טובה'));
 
   console.log('\nTraining · continuing training after onboarding');
   r = await call(T + '/paths', { method: 'POST', cookie: ped.cookie, body: { title: 'רענון כלי Quizlet', kind: 'continuing', modules: [{ moduleId: modC.id }] } });

@@ -82,13 +82,17 @@ function publicSubmission(s) {
   };
 }
 
-function publicFollowup(f) {
+/* managerNotes are the manager's own working notes, like the impressions in
+   פיתוח מורים — kept from the teacher. Recommendations are written for them. */
+function publicFollowup(f, forLearner) {
   const def = FOLLOWUPS.find(x => x.key === f.checkpoint) || { label: f.checkpoint };
-  return {
+  const out = {
     id: f.id, checkpoint: f.checkpoint, label: def.label, dueDate: f.due_date, status: f.status,
-    reflection: f.reflection, managerNotes: f.manager_notes, meetingAt: f.meeting_at,
+    reflection: f.reflection, meetingAt: f.meeting_at,
     recommendations: f.recommendations, updatedAt: f.updated_at
   };
+  if (!forLearner) out.managerNotes = f.manager_notes;
+  return out;
 }
 
 function publicAssignment(a, path, state, extra) {
@@ -142,7 +146,7 @@ async function meGet({ request, env }) {
       'SELECT * FROM training_followups WHERE assignment_id=? ORDER BY due_date'
     ).bind(a.id).all();
     assignments.push(publicAssignment(a, { title: a.p_title, kind: a.p_kind, description: a.p_desc }, st, {
-      followups: (fu || []).map(publicFollowup)
+      followups: (fu || []).map(f => publicFollowup(f, true))
     }));
   }
   const { results: ann } = await env.DB.prepare(
@@ -321,7 +325,7 @@ async function meFollowup({ request, env, m: match }) {
     .bind(text(b.reflection, 6000), Date.now(), f.id).run();
   await notifyManagers(env, 'followup', 'רפלקציה חדשה בליווי', user.name);
   const row = await env.DB.prepare('SELECT * FROM training_followups WHERE id=?').bind(f.id).first();
-  return json({ ok: true, followup: publicFollowup(row) });
+  return json({ ok: true, followup: publicFollowup(row, true) });
 }
 
 /* ── notifications & announcements ─────────────────────────────────────── */
@@ -993,7 +997,7 @@ async function learnerGet({ request, env, m: match }) {
     }
     const { results: fu } = await env.DB.prepare('SELECT * FROM training_followups WHERE assignment_id=? ORDER BY due_date').bind(a.id).all();
     assignments.push(publicAssignment(a, { title: a.p_title, kind: a.p_kind, description: a.p_desc }, st, {
-      detail, followups: (fu || []).map(publicFollowup), attention: attentionReasons(a, st, Date.now())
+      detail, followups: (fu || []).map(f => publicFollowup(f)), attention: attentionReasons(a, st, Date.now())
     }));
   }
   const { results: log } = await env.DB.prepare(
@@ -1173,7 +1177,7 @@ async function followupsCreate({ request, env, m: match }) {
       `INSERT OR IGNORE INTO training_followups (id, assignment_id, checkpoint, due_date, status, updated_at) VALUES (?,?,?,?,'open',?)`
     ).bind(randomId('fu'), a.id, f.key, addDays(start, f.days), Date.now()).run();
   }
-  await audit(env, guard.user, 'followup.open', { type: 'assignment', id: a.id, subject: a.user_id, detail: 'מתחיל ' + start });
+  await audit(env, guard.user, 'followup.create', { type: 'assignment', id: a.id, subject: a.user_id, detail: 'מתחיל ' + start });
   return json({ ok: true }, 201);
 }
 

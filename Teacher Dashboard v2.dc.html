@@ -53,6 +53,104 @@ table{border-collapse:collapse;width:100%}
 :focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}
 ::selection{background:#DCE6FF}
 @keyframes rise{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+/* ── Teacher onboarding (ob-*) ─────────────────────────────────────────────
+   The rest of the page styles inline; these screens are larger and need
+   media queries and focus states, which inline styles cannot express. Same
+   tokens, same serif stack, same radii as the screens around them. */
+.ob{font-family:'Source Serif 4','Frank Ruhl Libre',Georgia,serif}
+.ob-anim{animation:rise .3s ease both}
+.ob-h1{font-size:30px;line-height:1.12}
+.ob-h2{font-size:19px;line-height:1.25}
+.ob-h3{font-size:15.5px;line-height:1.3}
+.ob-lead{margin-top:6px;font:400 14.5px/1.65 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);max-width:78ch;text-wrap:pretty}
+.ob-muted{font:400 12.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600)}
+.ob-card{background:var(--color-paper);border:1px solid var(--color-neutral-200);border-radius:16px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.ob-pad{padding:18px}
+.ob-soft{background:var(--color-neutral-100);border-radius:12px;padding:12px 14px}
+.ob-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.ob-between{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.ob-stack{display:flex;flex-direction:column;gap:12px}
+.ob-grid{display:grid;gap:14px}
+.ob-cols{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.ob-cols-wide{grid-template-columns:minmax(0,1.6fr) minmax(min(100%,300px),1fr);align-items:start}
+.ob-chip{display:inline-flex;align-items:center;gap:5px;min-height:22px;padding:2px 9px;border-radius:999px;font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;white-space:nowrap}
+.ob-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:36px;padding:0 14px;font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-paper);border:1px solid var(--color-neutral-300);border-radius:10px;cursor:pointer;text-decoration:none;transition:background .15s,border-color .15s,color .15s}
+.ob-btn:hover{background:var(--color-neutral-100);color:var(--color-text)}
+.ob-btn-primary{color:#fff;background:var(--color-neutral-900);border-color:var(--color-neutral-900)}
+.ob-btn-primary:hover{background:var(--color-accent);border-color:var(--color-accent);color:#fff}
+.ob-btn-accent{color:#fff;background:var(--color-accent);border-color:var(--color-accent)}
+.ob-btn-accent:hover{background:var(--color-accent-700);border-color:var(--color-accent-700);color:#fff}
+.ob-btn-ghost{background:transparent;border-color:transparent}
+.ob-btn-danger:hover{background:var(--color-critical-tint);border-color:var(--color-critical-tint);color:var(--color-critical)}
+.ob-btn-sm{min-height:28px;padding:0 10px;font-size:12px;border-radius:8px}
+.ob-btn:disabled{opacity:.42;cursor:not-allowed}
+.ob-btn:disabled:hover{background:var(--color-paper)}
+.ob-btn-primary:disabled:hover{background:var(--color-neutral-900)}
+.ob-input{width:100%;min-height:38px;padding:0 11px;font:400 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:9px;outline:none}
+.ob-input:focus{background:var(--color-paper);border-color:var(--color-accent)}
+textarea.ob-input{min-height:92px;padding:9px 11px;line-height:1.65;resize:vertical}
+select.ob-input{padding-inline-end:28px;background-image:linear-gradient(45deg,transparent 50%,var(--color-neutral-600) 50%),linear-gradient(135deg,var(--color-neutral-600) 50%,transparent 50%);background-position:left 14px center,left 9px center;background-size:5px 5px;background-repeat:no-repeat}
+.ob-label{display:flex;flex-direction:column;gap:5px;font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700)}
+.ob-check{display:flex;align-items:center;gap:8px;font:500 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);cursor:pointer}
+.ob-check input{width:17px;height:17px;accent-color:var(--color-accent);flex:none}
+.ob-bar{height:6px;border-radius:99px;background:var(--color-neutral-200);overflow:hidden}
+.ob-bar>span{display:block;height:100%;border-radius:99px;background:var(--color-accent);transition:width .6s cubic-bezier(.2,.7,.2,1)}
+.ob-prose{font:400 15px/1.75 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);max-width:72ch}
+.ob-prose p{margin:0 0 10px}
+.ob-prose ul{margin:0 0 10px;padding-inline-start:20px}
+.ob-prose li{margin:3px 0}
+.ob-tabs{display:flex;gap:4px;flex-wrap:wrap;padding:4px;background:var(--color-neutral-200);border-radius:12px;width:fit-content;max-width:100%}
+.ob-tab{min-height:32px;padding:0 13px;border:none;border-radius:9px;font:600 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;cursor:pointer}
+.ob-stat{padding:14px 16px}
+.ob-stat b{display:block;font:700 26px/1.1 'Source Serif 4','Frank Ruhl Libre',Georgia,serif}
+.ob-table{display:grid;grid-template-columns:minmax(150px,1.4fr) 90px minmax(130px,1.2fr) 120px 130px 90px 70px;gap:0}
+.ob-table>div{padding:10px 12px;border-bottom:1px solid var(--color-neutral-200);display:flex;align-items:center;min-width:0;font:400 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif}
+.ob-table .ob-th{font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600);background:var(--color-neutral-100)}
+.ob-scroll{overflow-x:auto}
+.ob-option{display:flex;align-items:flex-start;gap:10px;width:100%;text-align:start;padding:11px 13px;border-radius:11px;border:1.5px solid var(--color-neutral-300);background:var(--color-paper);font:500 14.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);cursor:pointer;transition:border-color .15s,background .15s,transform .15s}
+.ob-option:hover:not(:disabled){border-color:var(--color-accent);transform:translateY(-1px)}
+.ob-option:disabled{cursor:default}
+.ob-mark{width:22px;height:22px;flex:none;border-radius:50%;display:grid;place-items:center;font:700 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;background:var(--color-neutral-100);border:1px solid var(--color-neutral-300)}
+.ob-module{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:14px;align-items:center;padding:16px 18px;transition:transform .2s,box-shadow .2s}
+.ob-module.ob-open{cursor:pointer}
+.ob-module.ob-open:hover{transform:translateY(-2px);box-shadow:0 10px 26px -18px rgba(15,19,24,.45)}
+.ob-icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:var(--color-accent-100);color:var(--color-accent-700)}
+.ob-timeline{position:relative;display:flex;flex-direction:column;gap:10px}
+.ob-timeline::before{content:'';position:absolute;inset-inline-start:39px;top:24px;bottom:24px;width:2px;background:var(--color-neutral-200)}
+.ob-timeline>*{position:relative}
+.ob-cycle{position:relative;width:min(100%,380px);aspect-ratio:1;margin:8px auto}
+.ob-cycle::before{content:'';position:absolute;inset:12%;border:2px dashed var(--color-accent-300);border-radius:50%}
+.ob-node{position:absolute;transform:translate(-50%,-50%);min-width:74px;max-width:120px;padding:8px 10px;border-radius:12px;border:1.5px solid var(--color-accent-300);font:600 12.5px/1.3 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;cursor:pointer;text-align:center;box-shadow:0 6px 16px -12px rgba(15,19,24,.5);transition:transform .2s}
+.ob-node:hover{transform:translate(-50%,-50%) scale(1.05)}
+.ob-steps{display:flex;gap:6px;flex-wrap:wrap}
+.ob-step{min-height:34px;padding:0 13px;border-radius:999px;border:1.5px solid var(--color-accent-300);font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;cursor:pointer}
+.ob-hero{position:relative;overflow:hidden;background:var(--color-neutral-900);color:#fff;border-radius:20px;padding:26px 26px 24px}
+.ob-hero::after{content:'';position:absolute;inset-inline-start:-60px;top:-80px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--color-accent) 55%,transparent),transparent 70%);opacity:.55;pointer-events:none}
+.ob-ring{width:84px;height:84px;flex:none}
+.ob-block{padding:20px 22px;scroll-margin-top:20px}
+.ob-frame{width:100%;aspect-ratio:16/9;border:0;border-radius:12px;background:var(--color-neutral-200)}
+.ob-kicker{font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;letter-spacing:.06em;color:var(--color-accent-700)}
+.ob-dot{width:8px;height:8px;border-radius:50%;flex:none}
+.ob-list{display:flex;flex-direction:column}
+.ob-list>*{padding:11px 0;border-bottom:1px solid var(--color-neutral-200)}
+.ob-list>*:last-child{border-bottom:none}
+.ob-palette{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.ob-sticky{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--color-bg) 92%,transparent);backdrop-filter:blur(6px);padding:10px 0;margin:-10px 0 0}
+.ob-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:860px){
+  .ns-shell{grid-template-columns:minmax(0,1fr)!important}
+  .ns-rail{position:static!important;height:auto!important;padding:14px 12px!important;gap:12px!important}
+  .ns-main{padding:18px 16px 48px!important}
+  .ob-cols-wide{grid-template-columns:minmax(0,1fr)}
+  .ob-module{grid-template-columns:40px minmax(0,1fr);}
+  .ob-module>.ob-cta{grid-column:1/-1}
+  .ob-timeline::before{display:none}
+  .ob-h1{font-size:25px}
+  .ob-block{padding:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  .ob-anim,.ob-bar>span,.ob-module,.ob-option,.ob-node{animation:none!important;transition:none!important}
+}
 </style>
 </helmet>
 <sc-if value="{{ isLocked }}">
@@ -254,9 +352,9 @@ table{border-collapse:collapse;width:100%}
 </sc-if>
 
 <sc-if value="{{ showStaffApp }}" hint-placeholder-val="{{ true }}">
-<div dir="rtl" style="min-height:100vh;display:grid;grid-template-columns:252px minmax(0,1fr);background:var(--color-bg)">
+<div dir="rtl" class="ns-shell" style="min-height:100vh;display:grid;grid-template-columns:252px minmax(0,1fr);background:var(--color-bg)">
 
-<nav style="background:var(--color-neutral-900);padding:26px 16px 20px;display:flex;flex-direction:column;gap:24px;position:sticky;top:0;height:100vh">
+<nav class="ns-rail" style="background:var(--color-neutral-900);padding:26px 16px 20px;display:flex;flex-direction:column;gap:24px;position:sticky;top:0;height:100vh">
 <div style="padding:0 8px">
 <div style="display:flex;align-items:center;gap:10px">
 <span style="width:32px;height:32px;border-radius:10px;background:var(--color-accent);display:grid;place-items:center;font:800 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:#fff">NS</span>
@@ -303,6 +401,12 @@ table{border-collapse:collapse;width:100%}
 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v16H6z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>בונה סילבוס</a>
 </sc-if>
 <sc-if value="{{ isTeacherRole }}">
+<sc-if value="{{ hasTraining }}">
+<a href="#" onClick="{{ goTraining }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navTraining.color }};background:{{ navTraining.bg }}" style-hover="background:var(--color-neutral-900);color:#fff">
+<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V4h11l-1 4 6 1-2 7H6"/></svg>ההכשרה שלי<sc-if value="{{ hasTrUnread }}"><span style="margin-inline-start:auto;display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:var(--color-accent);color:#fff;font:700 10.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ trUnread }}</span></sc-if></a>
+</sc-if>
+<a href="#" onClick="{{ goHub }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navHub.color }};background:{{ navHub.bg }}" style-hover="background:var(--color-neutral-900);color:#fff">
+<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6v6H4zM14 5h6v6h-6zM4 15h6v4H4zM14 15h6v4h-6z"/></svg>מרכז משאבים</a>
 <a href="#" onClick="{{ go.feedback }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navColor.feedback }};background:{{ navBg.feedback }}" style-hover="background:var(--color-neutral-900);color:#fff">
 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4H4v12h4v4l4-4h8z"/><path d="M8 10h8M8 13h5"/></svg>פידבק שלי</a>
 <a href="#" onClick="{{ go.guides }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navColor.guides }};background:{{ navBg.guides }}" style-hover="background:var(--color-neutral-900);color:#fff">
@@ -314,6 +418,12 @@ table{border-collapse:collapse;width:100%}
 <span style="font:600 10.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-700);letter-spacing:.08em">אדמין בלבד</span>
 <span style="height:1px;flex:1;background:var(--color-neutral-800)"></span>
 </div>
+<sc-if value="{{ canManageTraining }}">
+<a href="#" onClick="{{ goTrainAdmin }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navTrainAdmin.color }};background:{{ navTrainAdmin.bg }}" style-hover="background:var(--color-neutral-900);color:#fff">
+<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 3 8l9 4 9-4zM7 10.5V15c0 1.7 2.2 3 5 3s5-1.3 5-3v-4.5M21 8v6"/></svg>ניהול הכשרת מורים</a>
+<a href="#" onClick="{{ goHub }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navHub.color }};background:{{ navHub.bg }}" style-hover="background:var(--color-neutral-900);color:#fff">
+<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6v6H4zM14 5h6v6h-6zM4 15h6v4H4zM14 15h6v4h-6z"/></svg>מרכז משאבים</a>
+</sc-if>
 <sc-if value="{{ showAdmitNav }}" hint-placeholder-val="{{ true }}">
 <a href="#" onClick="{{ go.admissions }}" style="display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;font:600 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ navColor.admissions }};background:{{ navBg.admissions }}" style-hover="background:var(--color-neutral-900);color:#fff">
 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.5v10"/><path d="M8.5 11 12 14.5 15.5 11"/><path d="M4.5 16v3.5h15V16"/></svg>קבלה ורישום</a>
@@ -352,10 +462,17 @@ table{border-collapse:collapse;width:100%}
 </div>
 </nav>
 
-<main style="padding:26px 32px 60px;min-width:0">
+<main class="ns-main" style="padding:26px 32px 60px;min-width:0">
 
 <sc-if value="{{ isDashboard }}" hint-placeholder-val="{{ true }}">
 <section data-screen-label="לוח בקרה" style="animation:rise .25s ease both">
+<sc-if value="{{ hasTraining }}">
+<div class="ob ob-card" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 18px;margin-bottom:18px;border-inline-start:4px solid var(--color-accent)">
+<span class="ob-icon" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V4h11l-1 4 6 1-2 7H6"/></svg></span>
+<div style="flex:1;min-width:200px"><div class="ob-kicker">ההכשרה שלי</div><div style="font:700 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;margin-top:2px">{{ trCardLine }}</div></div>
+<button type="button" class="ob-btn ob-btn-primary" onClick="{{ goTraining }}">כניסה להכשרה ←</button>
+</div>
+</sc-if>
 <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap">
 <div>
 <div style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-600);letter-spacing:.02em">{{ today }}</div>
@@ -1884,6 +2001,990 @@ table{border-collapse:collapse;width:100%}
 </section>
 </sc-if>
 
+<sc-if value="{{ showPlayer }}">
+<section data-screen-label="מודול הכשרה" class="ob ob-anim" aria-labelledby="ob-mod-title">
+<sc-if value="{{ playerLoading }}">
+<div class="ob-card ob-pad ob-muted" role="status">טוען את המודול…</div>
+</sc-if>
+<sc-if value="{{ pl }}">
+<div class="ob-sticky">
+<div class="ob-between">
+<button type="button" class="ob-btn ob-btn-ghost ob-btn-sm" onClick="{{ pl.back }}">→ {{ pl.backLabel }}</button>
+<div class="ob-row" style="flex:1;max-width:420px;min-width:180px">
+<div class="ob-bar" style="flex:1" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ pl.percentNum }}" aria-label="התקדמות במודול"><span style="width:{{ pl.width }}"></span></div>
+<span class="ob-muted" style="font-weight:600">{{ pl.percent }}</span>
+</div>
+</div>
+</div>
+
+<sc-if value="{{ playerPreview }}">
+<div class="ob-soft" style="margin-top:12px;background:var(--color-warning-tint);color:var(--color-warning-ink);font:600 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif" role="note">תצוגה מקדימה של הטיוטה — כך המורה יראה את המודול. הפעילויות כאן לא נשמרות.</div>
+</sc-if>
+
+<header class="ob-card" style="margin-top:14px;padding:24px 24px 20px">
+<div class="ob-row" style="gap:16px;align-items:flex-start">
+<span class="ob-icon" style="width:52px;height:52px" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="{{ pl.icon }}"/></svg></span>
+<div style="flex:1;min-width:220px">
+<div class="ob-row" style="gap:8px">
+<span class="ob-chip" style="background:{{ pl.statusBg }};color:{{ pl.statusFg }}">{{ pl.statusLabel }}</span>
+<sc-if value="{{ pl.hasEst }}"><span class="ob-muted">⏱ {{ pl.est }}</span></sc-if>
+<span class="ob-muted">· {{ pl.acts }}</span>
+</div>
+<h1 id="ob-mod-title" class="ob-h1" dir="auto" style="margin-top:8px">{{ pl.title }}</h1>
+<p class="ob-lead" dir="auto">{{ pl.description }}</p>
+</div>
+</div>
+<sc-if value="{{ pl.hasObjectives }}">
+<div class="ob-soft" style="margin-top:16px">
+<div class="ob-kicker">מטרות המודול</div>
+<ul style="margin:8px 0 0;padding-inline-start:20px;font:400 14px/1.7 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">
+<sc-for list="{{ pl.objectives }}" as="o"><li dir="auto">{{ o }}</li></sc-for>
+</ul>
+</div>
+</sc-if>
+<sc-if value="{{ pl.hasScore }}"><p class="ob-muted" style="margin-top:10px">{{ pl.score }}</p></sc-if>
+<sc-if value="{{ pl.failNote }}"><p role="alert" style="margin-top:8px;font:600 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-critical)">{{ pl.failNote }}</p></sc-if>
+</header>
+
+<sc-if value="{{ pl.empty }}">
+<div class="ob-card ob-pad ob-muted" style="margin-top:14px">המודול עדיין ריק.</div>
+</sc-if>
+
+<div class="ob-stack" style="margin-top:14px;gap:14px">
+<sc-for list="{{ pl.blocks }}" as="b">
+<article class="ob-card ob-block ob-anim" id="{{ b.id }}">
+<sc-if value="{{ b.isActivity }}">
+<div class="ob-row" style="margin-bottom:10px;gap:8px">
+<span class="ob-kicker">{{ b.typeLabel }}</span>
+<sc-if value="{{ b.optional }}"><span class="ob-chip" style="background:var(--color-neutral-200);color:var(--color-neutral-700)">רשות</span></sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{ b.is_heading }}"><h2 class="ob-h2" dir="auto" style="font-size:22px">{{ b.text }}</h2></sc-if>
+
+<sc-if value="{{ b.is_text }}">
+<div class="ob-prose" dir="auto">
+<sc-for list="{{ b.paras }}" as="p">
+<sc-if value="{{ !p.isList }}"><p>{{ p.text }}</p></sc-if>
+<sc-if value="{{ p.isList }}"><ul><sc-for list="{{ p.items }}" as="li"><li>{{ li }}</li></sc-for></ul></sc-if>
+</sc-for>
+</div>
+</sc-if>
+
+<sc-if value="{{ b.is_image }}">
+<figure style="margin:0">
+<sc-if value="{{ b.hasUrl }}"><img src="{{ b.url }}" alt="{{ b.alt }}" loading="lazy" style="max-width:100%;border-radius:12px;display:block"></sc-if>
+<sc-if value="{{ !b.hasUrl }}"><div class="ob-soft ob-muted">תמונה — טרם הוזן קישור</div></sc-if>
+<sc-if value="{{ b.caption }}"><figcaption class="ob-muted" style="margin-top:6px" dir="auto">{{ b.caption }}</figcaption></sc-if>
+</figure>
+</sc-if>
+
+<sc-if value="{{ b.is_video }}">
+<sc-if value="{{ b.hasEmbed }}"><iframe class="ob-frame" src="{{ b.embed }}" title="{{ b.title }}" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></sc-if>
+<sc-if value="{{ b.linkOnly }}"><a class="ob-btn" href="{{ b.url }}" target="_blank" rel="noopener noreferrer">▶ צפייה בסרטון ↗</a></sc-if>
+<sc-if value="{{ b.missing }}"><div class="ob-soft ob-muted">סרטון — טרם הוזן קישור</div></sc-if>
+<sc-if value="{{ b.caption }}"><p class="ob-muted" style="margin-top:8px" dir="auto">{{ b.caption }}</p></sc-if>
+</sc-if>
+
+<sc-if value="{{ b.is_embed }}">
+<h3 class="ob-h3" dir="auto" style="margin-bottom:10px">{{ b.title }}</h3>
+<sc-if value="{{ b.hasEmbed }}"><iframe class="ob-frame" style="aspect-ratio:4/3" src="{{ b.embed }}" title="{{ b.title }}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></sc-if>
+<sc-if value="{{ b.linkOnly }}"><a class="ob-btn" href="{{ b.url }}" target="_blank" rel="noopener noreferrer">פתיחה ↗</a></sc-if>
+<sc-if value="{{ b.missing }}"><div class="ob-soft ob-muted">טרם הוזן קישור</div></sc-if>
+</sc-if>
+
+<sc-if value="{{ b.is_link }}">
+<div class="ob-row" style="gap:14px;align-items:flex-start">
+<span class="ob-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span>
+<div style="flex:1;min-width:200px">
+<h3 class="ob-h3" dir="auto">{{ b.label }}</h3>
+<sc-if value="{{ b.hasNote }}"><p class="ob-muted" style="margin-top:4px" dir="auto">{{ b.note }}</p></sc-if>
+<sc-if value="{{ b.host }}"><p class="ob-muted" style="margin-top:4px;direction:ltr;text-align:right">{{ b.host }}</p></sc-if>
+</div>
+<sc-if value="{{ b.hasUrl }}"><a class="ob-btn" href="{{ b.url }}" target="_blank" rel="noopener noreferrer">פתיחה ↗</a></sc-if>
+<sc-if value="{{ b.missing }}"><span class="ob-chip" style="background:var(--color-neutral-200);color:var(--color-neutral-700)">טרם הוזן קישור</span></sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{ b.is_file }}">
+<div class="ob-row" style="gap:14px;align-items:flex-start">
+<span class="ob-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6v18h12V7zM14 3v4h4M9 13h6M9 17h4"/></svg></span>
+<div style="flex:1;min-width:200px">
+<h3 class="ob-h3" dir="auto">{{ b.label }}</h3>
+<sc-if value="{{ b.hasNote }}"><p class="ob-muted" style="margin-top:4px" dir="auto">{{ b.note }}</p></sc-if>
+</div>
+<sc-if value="{{ b.hasUrl }}"><a class="ob-btn" href="{{ b.url }}" target="_blank" rel="noopener noreferrer">פתיחת הקובץ ↗</a></sc-if>
+<sc-if value="{{ b.missing }}"><span class="ob-chip" style="background:var(--color-neutral-200);color:var(--color-neutral-700)">טרם הוזן קישור</span></sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{ b.is_callout }}">
+<div role="note" style="background:{{ b.toneBg }};border-radius:12px;padding:14px 16px;border-inline-start:4px solid {{ b.toneFg }}">
+<div class="ob-kicker" style="color:{{ b.toneFg }}">{{ b.toneLabel }}</div>
+<sc-if value="{{ b.title }}"><h3 class="ob-h3" dir="auto" style="margin-top:4px">{{ b.title }}</h3></sc-if>
+<div class="ob-prose" dir="auto" style="margin-top:6px;font-size:14px">
+<sc-for list="{{ b.paras }}" as="p">
+<sc-if value="{{ !p.isList }}"><p>{{ p.text }}</p></sc-if>
+<sc-if value="{{ p.isList }}"><ul><sc-for list="{{ p.items }}" as="li"><li>{{ li }}</li></sc-for></ul></sc-if>
+</sc-for>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ b.is_accordion }}">
+<div class="ob-list">
+<sc-for list="{{ b.items }}" as="it">
+<div>
+<button type="button" onClick="{{ it.toggle }}" aria-expanded="{{ it.open }}" style="display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;background:none;border:none;padding:2px 0;cursor:pointer;font:600 15px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-text);text-align:start"><span dir="auto">{{ it.title }}</span><span aria-hidden="true" style="font-size:18px;color:var(--color-accent-700)">{{ it.sign }}</span></button>
+<sc-if value="{{ it.open }}">
+<div class="ob-prose ob-anim" dir="auto" style="margin-top:8px;font-size:14px">
+<sc-for list="{{ it.paras }}" as="p">
+<sc-if value="{{ !p.isList }}"><p>{{ p.text }}</p></sc-if>
+<sc-if value="{{ p.isList }}"><ul><sc-for list="{{ p.items }}" as="li"><li>{{ li }}</li></sc-for></ul></sc-if>
+</sc-for>
+</div>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</sc-if>
+
+<sc-if value="{{ b.is_steps }}">
+<h3 class="ob-h3" dir="auto">{{ b.title }}</h3>
+<sc-if value="{{ b.note }}"><p class="ob-muted" style="margin-top:4px" dir="auto">{{ b.note }}</p></sc-if>
+<sc-if value="{{ b.isCycle }}">
+<div class="ob-cycle" role="group" aria-label="{{ b.title }}">
+<sc-for list="{{ b.items }}" as="st">
+<button type="button" class="ob-node" onClick="{{ st.select }}" aria-pressed="{{ st.active }}" style="left:{{ st.x }};top:{{ st.y }};background:{{ st.bg }};color:{{ st.fg }}"><span dir="auto">{{ st.n }}. {{ st.title }}</span></button>
+</sc-for>
+</div>
+</sc-if>
+<sc-if value="{{ b.isLinear }}">
+<div class="ob-steps" role="group" aria-label="{{ b.title }}" style="margin-top:12px">
+<sc-for list="{{ b.items }}" as="st">
+<button type="button" class="ob-step" onClick="{{ st.select }}" aria-pressed="{{ st.active }}" style="background:{{ st.bg }};color:{{ st.fg }}"><span dir="auto">{{ st.n }} · {{ st.title }}</span></button>
+</sc-for>
+</div>
+</sc-if>
+<sc-if value="{{ b.cur }}">
+<div class="ob-soft ob-anim" style="margin-top:12px" aria-live="polite">
+<div class="ob-between"><span class="ob-kicker">שלב {{ b.counter }}</span>
+<span class="ob-row" style="gap:6px"><button type="button" class="ob-btn ob-btn-sm" onClick="{{ b.prev }}" disabled="{{ b.noPrev }}">→ הקודם</button><button type="button" class="ob-btn ob-btn-sm" onClick="{{ b.next }}" disabled="{{ b.noNext }}">הבא ←</button></span></div>
+<h4 class="ob-h3" dir="auto" style="margin-top:6px">{{ b.cur.title }}</h4>
+<div class="ob-prose" dir="auto" style="margin-top:4px;font-size:14px">
+<sc-for list="{{ b.cur.paras }}" as="p">
+<sc-if value="{{ !p.isList }}"><p>{{ p.text }}</p></sc-if>
+<sc-if value="{{ p.isList }}"><ul><sc-for list="{{ p.items }}" as="li"><li>{{ li }}</li></sc-for></ul></sc-if>
+</sc-for>
+</div>
+</div>
+</sc-if>
+</sc-if>
+
+<sc-if value="{{ b.is_checklist }}">
+<div class="ob-between"><h3 class="ob-h3" dir="auto">{{ b.title }}</h3><span class="ob-chip" style="background:var(--color-neutral-200);color:var(--color-neutral-700)">{{ b.count }}</span></div>
+<div class="ob-stack" style="margin-top:12px;gap:9px">
+<sc-for list="{{ b.items }}" as="it">
+<label class="ob-check"><input type="checkbox" checked="{{ it.checked }}" disabled="{{ it.disabled }}" onChange="{{ it.toggle }}"><span dir="auto">{{ it.text }}</span></label>
+</sc-for>
+</div>
+<sc-if value="{{ b.done }}"><p role="status" style="margin-top:10px;font:600 13px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-positive-ink)">✓ הצ'קליסט הושלם</p></sc-if>
+</sc-if>
+
+<sc-if value="{{ b.is_mcq }}">
+<p class="ob-prose" dir="auto" style="font-weight:600">{{ b.question }}</p>
+<p class="ob-muted" style="margin-top:2px">{{ b.hint }}</p>
+<div class="ob-stack" style="margin-top:12px;gap:8px" role="group">
+<sc-for list="{{ b.options }}" as="o">
+<button type="button" class="ob-option" onClick="{{ o.pick }}" disabled="{{ o.disabled }}" aria-pressed="{{ o.pressed }}" style="background:{{ o.bg }};border-color:{{ o.border }}"><span class="ob-mark" aria-hidden="true">{{ o.mark }}</span><span style="flex:1"><span dir="auto">{{ o.text }}</span><sc-if value="{{ o.explain }}"><span class="ob-muted" style="display:block;margin-top:4px" dir="auto">{{ o.explain }}</span></sc-if></span></button>
+</sc-for>
+</div>
+<div class="ob-between" style="margin-top:12px">
+<span role="status" aria-live="polite" style="font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ b.resultFg }}">{{ b.result }}</span>
+<span class="ob-row"><span class="ob-muted">{{ b.attempts }}</span><sc-if value="{{ !b.done }}"><button type="button" class="ob-btn ob-btn-primary" onClick="{{ b.check }}" disabled="{{ !b.canCheck }}">בדיקה</button></sc-if></span>
+</div>
+<sc-if value="{{ b.explainAll }}"><div class="ob-soft" style="margin-top:10px;font:400 14px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif" dir="auto">{{ b.explainAll }}</div></sc-if>
+</sc-if>
+
+<sc-if value="{{ b.is_match }}">
+<p class="ob-prose" dir="auto" style="font-weight:600">{{ b.prompt }}</p>
+<div class="ob-stack" style="margin-top:12px;gap:8px">
+<sc-for list="{{ b.rows }}" as="r">
+<div class="ob-grid" style="grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;align-items:center">
+<label for="{{ r.id }}" dir="auto" style="font:600 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ r.left }}</label>
+<div>
+<select id="{{ r.id }}" class="ob-input" value="{{ r.value }}" onChange="{{ r.onChange }}" disabled="{{ r.disabled }}">
+<sc-for list="{{ r.opts }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for>
+</select>
+<sc-if value="{{ r.mark }}"><span style="display:block;margin-top:3px;font:600 12px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ r.markFg }}" dir="auto">{{ r.mark }}</span></sc-if>
+</div>
+</div>
+</sc-for>
+</div>
+<div class="ob-between" style="margin-top:12px">
+<span role="status" aria-live="polite" style="font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ b.resultFg }}">{{ b.result }}</span>
+<span class="ob-row"><span class="ob-muted">{{ b.attempts }}</span><sc-if value="{{ !b.done }}"><button type="button" class="ob-btn ob-btn-primary" onClick="{{ b.check }}" disabled="{{ !b.canCheck }}">בדיקה</button></sc-if></span>
+</div>
+</sc-if>
+
+<sc-if value="{{ b.is_order }}">
+<p class="ob-prose" dir="auto" style="font-weight:600">{{ b.prompt }}</p>
+<ol class="ob-stack" style="margin:12px 0 0;padding:0;list-style:none;gap:7px">
+<sc-for list="{{ b.items }}" as="it">
+<li class="ob-soft ob-row" style="padding:9px 12px;gap:10px">
+<span class="ob-mark" aria-hidden="true">{{ it.n }}</span>
+<span dir="auto" style="flex:1;font:500 14.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ it.text }}</span>
+<button type="button" class="ob-btn ob-btn-sm" onClick="{{ it.up }}" disabled="{{ it.noUp }}" aria-label="הזזה למעלה">▲</button>
+<button type="button" class="ob-btn ob-btn-sm" onClick="{{ it.down }}" disabled="{{ it.noDown }}" aria-label="הזזה למטה">▼</button>
+</li>
+</sc-for>
+</ol>
+<div class="ob-between" style="margin-top:12px">
+<span role="status" aria-live="polite" style="font:600 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:{{ b.resultFg }}">{{ b.result }}</span>
+<span class="ob-row"><span class="ob-muted">{{ b.attempts }}</span><sc-if value="{{ !b.done }}"><button type="button" class="ob-btn ob-btn-primary" onClick="{{ b.check }}" disabled="{{ !b.canCheck }}">בדיקה</button></sc-if></span>
+</div>
+</sc-if>
+
+<sc-if value="{{ b.is_scenario }}">
+<div class="ob-soft" style="font:400 15px/1.7 'Source Serif 4','Frank Ruhl Libre',Georgia,serif" dir="auto"><span class="ob-kicker" style="display:block;margin-bottom:4px">המצב</span>{{ b.situation }}</div>
+<p class="ob-muted" style="margin-top:12px">מה הייתם עושים? בחרו תגובה — יש יותר מדרך סבירה אחת, והמשוב מסביר את השיקולים.</p>
+<div class="ob-stack" style="margin-top:10px;gap:8px">
+<sc-for list="{{ b.options }}" as="o">
+<button type="button" class="ob-option" onClick="{{ o.choose }}" disabled="{{ o.disabled }}" aria-pressed="{{ o.pressed }}" style="border-color:{{ o.border }};flex-direction:column;gap:6px">
+<span class="ob-row" style="width:100%;justify-content:space-between"><span dir="auto">{{ o.text }}</span><sc-if value="{{ o.hasQ }}"><span class="ob-chip" style="background:{{ o.qBg }};color:{{ o.qFg }}">{{ o.qLabel }}</span></sc-if></span>
+<sc-if value="{{ o.feedback }}"><span class="ob-muted" dir="auto" style="font-size:13px">{{ o.feedback }}</span></sc-if>
+<sc-if value="{{ o.chosen }}"><span style="font:600 11.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-accent-700)">הבחירה שלך</span></sc-if>
+</button>
+</sc-for>
+</div>
+<sc-if value="{{ b.hasConsiderations }}"><div class="ob-soft ob-anim" role="status" style="margin-top:12px;border-inline-start:4px solid var(--color-accent)"><div class="ob-kicker">השיקולים הפדגוגיים</div><p dir="auto" style="margin-top:4px;font:400 14px/1.65 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ b.considerations }}</p></div></sc-if>
+</sc-if>
+
+<sc-if value="{{ b.is_open }}"><p class="ob-prose" dir="auto" style="font-weight:600">{{ b.prompt }}</p></sc-if>
+<sc-if value="{{ b.is_reflection }}"><p class="ob-prose" dir="auto" style="font-weight:600">{{ b.prompt }}</p></sc-if>
+<sc-if value="{{ b.is_lesson_plan }}"><p class="ob-prose" dir="auto" style="font-weight:600">{{ b.prompt }}</p></sc-if>
+<sc-if value="{{ b.is_upload }}"><p class="ob-prose" dir="auto" style="font-weight:600">{{ b.prompt }}</p></sc-if>
+<sc-if value="{{ b.prompt }}">
+<sc-if value="{{ b.reviewNote }}">
+<p class="ob-muted" style="margin-top:2px">{{ b.reviewNote }}</p>
+<sc-if value="{{ b.hasSub }}">
+<div class="ob-row" style="margin-top:10px"><span class="ob-chip" style="background:{{ b.subBg }};color:{{ b.subFg }}">{{ b.subLabel }}</span><sc-if value="{{ b.reviewer }}"><span class="ob-muted">{{ b.reviewer }}</span></sc-if></div>
+<sc-if value="{{ b.feedback }}"><div class="ob-soft" role="status" style="margin-top:8px;border-inline-start:4px solid var(--color-accent)"><div class="ob-kicker">משוב מהמנהל הפדגוגי</div><p dir="auto" style="margin-top:4px;font:400 14px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;white-space:pre-wrap">{{ b.feedback }}</p></div></sc-if>
+</sc-if>
+<sc-if value="{{ b.editable }}">
+<div class="ob-stack" style="margin-top:12px;gap:10px">
+<sc-if value="{{ b.is_lesson_plan }}">
+<sc-for list="{{ b.plan }}" as="f">
+<label class="ob-label">{{ f.label }}<sc-if value="{{ f.required }}"> *</sc-if>
+<textarea class="ob-input" style="min-height:70px" value="{{ f.value }}" onChange="{{ f.onChange }}" placeholder="{{ f.hint }}" dir="auto"></textarea></label>
+</sc-for>
+</sc-if>
+<sc-if value="{{ b.is_upload }}">
+<label class="ob-label">קישור לקובץ (גוגל דרייב או אחר)<input class="ob-input" type="url" value="{{ b.url }}" onChange="{{ b.onUrl }}" placeholder="https://drive.google.com/…" style="direction:ltr;text-align:right"></label>
+<label class="ob-label">הערה (לא חובה)<textarea class="ob-input" style="min-height:60px" value="{{ b.note }}" onChange="{{ b.onNote }}" dir="auto"></textarea></label>
+</sc-if>
+<sc-if value="{{ b.is_open }}"><label class="ob-label"><span class="ob-sr">התשובה שלך</span><textarea class="ob-input" style="min-height:130px" value="{{ b.text }}" onChange="{{ b.onText }}" placeholder="התשובה שלך…" dir="auto"></textarea></label></sc-if>
+<sc-if value="{{ b.is_reflection }}"><label class="ob-label"><span class="ob-sr">הרפלקציה שלך</span><textarea class="ob-input" style="min-height:130px" value="{{ b.text }}" onChange="{{ b.onText }}" placeholder="הרפלקציה שלך…" dir="auto"></textarea></label></sc-if>
+<div class="ob-between"><span class="ob-muted">הטיוטה נשמרת בדפדפן הזה עד שליחה.</span><button type="button" class="ob-btn ob-btn-primary" onClick="{{ b.submit }}" disabled="{{ !b.canSubmit }}">{{ b.submitLabel }}</button></div>
+</div>
+</sc-if>
+<sc-if value="{{ b.hasHistory }}">
+<details style="margin-top:12px"><summary class="ob-muted" style="cursor:pointer;font-weight:600">ההגשות שלי</summary>
+<div class="ob-stack" style="margin-top:8px;gap:8px">
+<sc-for list="{{ b.history }}" as="h">
+<div class="ob-soft">
+<div class="ob-row"><span class="ob-muted" style="font-weight:600">{{ h.attempt }} · {{ h.when }}</span><span class="ob-chip" style="background:{{ h.statusBg }};color:{{ h.statusFg }}">{{ h.statusLabel }}</span></div>
+<sc-for list="{{ h.paras }}" as="p"><p dir="auto" style="margin-top:6px;font:400 13.5px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ p.text }}<sc-for list="{{ p.items }}" as="li"> · {{ li }}</sc-for></p></sc-for>
+<sc-for list="{{ h.plan }}" as="f"><div style="margin-top:6px"><b style="font:600 12.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ f.label }}</b><sc-for list="{{ f.paras }}" as="p"><p dir="auto" style="font:400 13.5px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ p.text }}<sc-for list="{{ p.items }}" as="li"> · {{ li }}</sc-for></p></sc-for></div></sc-for>
+<sc-if value="{{ h.hasUrl }}"><a href="{{ h.url }}" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:6px;font-weight:600;direction:ltr">{{ h.url }}</a></sc-if>
+<sc-if value="{{ h.hasFeedback }}"><p dir="auto" style="margin-top:6px;font:400 13px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-accent-700)">משוב: {{ h.feedback }}</p></sc-if>
+</div>
+</sc-for>
+</div>
+</details>
+</sc-if>
+</sc-if>
+</sc-if>
+</article>
+</sc-for>
+</div>
+
+<sc-if value="{{ pl.showViewed }}">
+<div class="ob-card ob-pad ob-between" style="margin-top:14px">
+<div>
+<h2 class="ob-h3">סיימתם לעבור על החומר?</h2>
+<p class="ob-muted" style="margin-top:3px">סימון הקריאה נפרד מהשלמת הפעילויות ומאישור המנהל.</p>
+</div>
+<sc-if value="{{ pl.viewed }}"><span class="ob-chip" style="background:var(--color-positive-tint);color:var(--color-positive-ink)">✓ סומן כנקרא</span></sc-if>
+<sc-if value="{{ !pl.viewed }}"><button type="button" class="ob-btn ob-btn-accent" onClick="{{ pl.markViewed }}" disabled="{{ !pl.canMarkViewed }}">קראתי את החומר</button></sc-if>
+</div>
+</sc-if>
+<div style="margin-top:14px"><button type="button" class="ob-btn" onClick="{{ pl.back }}">→ {{ pl.backLabel }}</button></div>
+</sc-if>
+</section>
+</sc-if>
+
+<sc-if value="{{ trHome }}">
+<section data-screen-label="ההכשרה שלי" class="ob ob-anim">
+<sc-if value="{{ trLoading }}"><div class="ob-card ob-pad ob-muted" role="status">טוען את ההכשרה…</div></sc-if>
+<sc-if value="{{ trNone }}">
+<h1 class="ob-h1">ההכשרה שלי</h1>
+<div class="ob-card ob-pad" style="margin-top:16px;max-width:640px">
+<p class="ob-lead" style="margin:0">אין כרגע הכשרה שמשויכת אליך. כשהמנהל הפדגוגי ישייך הכשרה — קליטה, רענון או השתלמות — היא תופיע כאן ותקבל/י הודעה.</p>
+<button type="button" class="ob-btn" style="margin-top:14px" onClick="{{ goHub }}">למרכז המשאבים ←</button>
+</div>
+</sc-if>
+<sc-if value="{{ trHas }}">
+<div class="ob-hero">
+<div class="ob-between" style="align-items:flex-start;position:relative;z-index:1">
+<div style="flex:1;min-width:240px">
+<div class="ob-kicker" style="color:var(--color-accent-300)">New School | Teacher Onboarding</div>
+<h1 class="ob-h1" style="color:#fff;margin-top:8px">ברוכים הבאים ל-New School, {{ trFirstName }}!</h1>
+<p style="margin-top:10px;font:400 15px/1.7 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-neutral-300);max-width:56ch">כאן מחכה לך מסלול ההכשרה האישי שלך — בקצב שלך, בסדר שמתאים לך. ההתקדמות נשמרת אוטומטית, ותמיד אפשר לחזור ולהמשיך מאותה נקודה.</p>
+<sc-if value="{{ trResume }}"><button type="button" class="ob-btn ob-btn-accent" style="margin-top:16px;min-height:42px;padding:0 18px" onClick="{{ trResume.open }}">{{ trResume.label }}: {{ trResume.title }} ←</button></sc-if>
+</div>
+<div style="position:relative;width:84px;height:84px;flex:none" role="img" aria-label="התקדמות {{ trA.percent }}">
+<svg class="ob-ring" viewBox="0 0 84 84" aria-hidden="true"><circle cx="42" cy="42" r="34" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="8"/><circle cx="42" cy="42" r="34" fill="none" stroke="var(--color-accent-300)" stroke-width="8" stroke-linecap="round" stroke-dasharray="{{ trA.ring.dash }}" transform="rotate(-90 42 42)" style="transition:stroke-dasharray .8s ease"/></svg><span style="position:absolute;inset:0;display:grid;place-items:center;font:700 17px 'Source Serif 4',Georgia,serif;color:#fff">{{ trA.percent }}</span>
+</div>
+</div>
+</div>
+
+<div class="ob-grid ob-cols-wide" style="margin-top:16px">
+<div class="ob-stack" style="gap:14px">
+<sc-if value="{{ trMulti }}">
+<div class="ob-tabs" role="group" aria-label="המסלולים שלי">
+<sc-for list="{{ trTabs }}" as="t"><button type="button" class="ob-tab" onClick="{{ t.pick }}" aria-pressed="{{ t.pressed }}" style="background:{{ t.bg }}">{{ t.title }} <span class="ob-muted">· {{ t.kind }}</span></button></sc-for>
+</div>
+</sc-if>
+<div>
+<h2 class="ob-h2" dir="auto">{{ trA.title }}</h2>
+<sc-if value="{{ trA.description }}"><p class="ob-lead" dir="auto">{{ trA.description }}</p></sc-if>
+<p class="ob-muted" style="margin-top:6px">{{ trA.doneCount }}<sc-if value="{{ trA.hasDue }}"> · יעד לסיום: {{ trA.due }}</sc-if></p>
+</div>
+<div class="ob-timeline">
+<sc-for list="{{ trMods }}" as="m">
+<div class="ob-card ob-module" style="opacity:{{ m.opacity }}">
+<span class="ob-icon" style="background:{{ m.iconBg }};color:{{ m.iconFg }}" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="{{ m.icon }}"/></svg></span>
+<div style="min-width:0">
+<div class="ob-row" style="gap:7px"><span class="ob-muted" style="font-weight:600">מודול {{ m.n }}</span><span class="ob-chip" style="background:{{ m.statusBg }};color:{{ m.statusFg }}">{{ m.statusLabel }}</span><sc-if value="{{ m.optional }}"><span class="ob-chip" style="background:var(--color-neutral-200);color:var(--color-neutral-700)">רשות</span></sc-if></div>
+<h3 class="ob-h3" dir="auto" style="margin-top:5px;font-size:16.5px">{{ m.title }}</h3>
+<p class="ob-muted" dir="auto" style="margin-top:3px">{{ m.description }}</p>
+<div class="ob-row" style="margin-top:8px;gap:12px"><sc-if value="{{ m.hasEst }}"><span class="ob-muted">⏱ {{ m.est }}</span></sc-if><span class="ob-muted">{{ m.activities }}</span><div class="ob-bar" style="width:110px" aria-hidden="true"><span style="width:{{ m.width }}"></span></div></div>
+<sc-if value="{{ m.lockNote }}"><p class="ob-muted" style="margin-top:5px">🔒 {{ m.lockNote }}</p></sc-if>
+</div>
+<div class="ob-cta"><button type="button" class="{{ m.btnCls }}" onClick="{{ m.open }}" disabled="{{ !m.canOpen }}" aria-label="{{ m.aria }}">{{ m.cta }} ←</button></div>
+</div>
+</sc-for>
+<sc-if value="{{ trA.isOnboarding }}">
+<div class="ob-card ob-module" style="border:1.5px dashed var(--color-accent-300)">
+<span class="ob-icon" style="background:var(--color-accent);color:#fff" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V4h11l-1 4 6 1-2 7H6"/></svg></span>
+<div style="min-width:0">
+<div class="ob-row" style="gap:7px"><span class="ob-muted" style="font-weight:600">השלב האחרון</span><sc-if value="{{ trA.hasRd }}"><span class="ob-chip" style="background:{{ trA.rdBg }};color:{{ trA.rdFg }}">{{ trA.rdLabel }}</span></sc-if></div>
+<h3 class="ob-h3" style="margin-top:5px;font-size:16.5px">Ready to Teach</h3>
+<p class="ob-muted" style="margin-top:3px">אישור המוכנות להוראה הוא החלטה של המנהל הפדגוגי, אחרי שהוא עובר על המשימות ועל תכנון השיעור שלך — לא תוצאה אוטומטית של סיום המסכים.</p>
+<sc-if value="{{ trA.hasPending }}"><p class="ob-muted" style="margin-top:5px;color:var(--color-warning-ink)">{{ trA.pending }} משימות ממתינות לבדיקה.</p></sc-if>
+<sc-if value="{{ trA.rdNote }}"><div class="ob-soft" style="margin-top:8px;font:400 13.5px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif" dir="auto">{{ trA.rdNote }}</div></sc-if>
+<sc-if value="{{ trA.rdBy }}"><p class="ob-muted" style="margin-top:5px">{{ trA.rdBy }}</p></sc-if>
+</div>
+<div class="ob-cta"><span class="ob-chip" style="background:var(--color-neutral-200);color:var(--color-neutral-700)">{{ trA.status }}</span></div>
+</div>
+</sc-if>
+</div>
+
+<sc-if value="{{ trA.hasFollowups }}">
+<div class="ob-card ob-pad">
+<h2 class="ob-h2">הליווי ב-30 הימים הראשונים</h2>
+<p class="ob-muted" style="margin-top:4px">ארבע נקודות מעקב אחרי תחילת ההוראה. הרפלקציה שלך מגיעה למנהל הפדגוגי.</p>
+<div class="ob-grid ob-cols" style="margin-top:12px">
+<sc-for list="{{ trA.followups }}" as="f">
+<div class="ob-soft">
+<div class="ob-between"><b style="font:700 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ f.label }}</b><span class="ob-chip" style="background:var(--color-paper);color:var(--color-neutral-700)">{{ f.due }} · {{ f.statusLabel }}</span></div>
+<sc-if value="{{ f.hasMeeting }}"><p class="ob-muted" style="margin-top:5px">שיחת ליווי: {{ f.meeting }}</p></sc-if>
+<sc-if value="{{ f.hasRecs }}"><p dir="auto" style="margin-top:6px;font:400 13.5px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif;color:var(--color-accent-700)">המלצות: {{ f.recs }}</p></sc-if>
+<label class="ob-label" style="margin-top:8px">הרפלקציה שלי<textarea class="ob-input" style="min-height:70px" value="{{ f.reflection }}" onChange="{{ f.onReflection }}" dir="auto"></textarea></label>
+<button type="button" class="ob-btn ob-btn-sm" style="margin-top:6px" onClick="{{ f.save }}" disabled="{{ !f.dirty }}">שמירה</button>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-if>
+</div>
+
+<aside class="ob-stack" style="gap:14px">
+<sc-if value="{{ trProf }}">
+<div class="ob-card ob-pad">
+<div class="ob-row" style="gap:12px">
+<span style="width:46px;height:46px;border-radius:14px;background:var(--color-accent);color:#fff;display:grid;place-items:center;font:700 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ trProf.initials }}</span>
+<div><div style="font:700 16px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ trProf.name }}</div><div class="ob-muted">{{ trProf.position }}</div></div>
+</div>
+<dl style="margin:14px 0 0;display:grid;grid-template-columns:auto 1fr;gap:7px 14px;font:400 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">
+<dt class="ob-muted">שפת הוראה</dt><dd style="margin:0;font-weight:600">{{ trProf.language }}</dd>
+<dt class="ob-muted">תחילת הכשרה</dt><dd style="margin:0;font-weight:600">{{ trProf.start }}</dd>
+<dt class="ob-muted">סטטוס</dt><dd style="margin:0;font-weight:600">{{ trA.status }}</dd>
+<dt class="ob-muted">התקדמות</dt><dd style="margin:0"><div class="ob-row" style="gap:8px"><div class="ob-bar" style="flex:1"><span style="width:{{ trA.percent }}"></span></div><b>{{ trA.percent }}</b></div></dd>
+</dl>
+</div>
+</sc-if>
+<div class="ob-card ob-pad">
+<div class="ob-between"><h2 class="ob-h3">התראות</h2><sc-if value="{{ hasTrUnread }}"><button type="button" class="ob-btn ob-btn-ghost ob-btn-sm" onClick="{{ trReadAll }}">סימון הכל כנקרא</button></sc-if></div>
+<sc-if value="{{ !trHasNotes }}"><p class="ob-muted" style="margin-top:8px">אין התראות.</p></sc-if>
+<div class="ob-list" style="margin-top:6px">
+<sc-for list="{{ trNotes }}" as="n">
+<div class="ob-row" style="align-items:flex-start;gap:9px;flex-wrap:nowrap"><span class="ob-dot" style="background:{{ n.dot }};margin-top:6px"></span><div style="min-width:0"><div dir="auto" style="font:{{ n.weight }} 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ n.title }}</div><sc-if value="{{ n.body }}"><div class="ob-muted" dir="auto">{{ n.body }}</div></sc-if><div class="ob-muted" style="font-size:11.5px">{{ n.when }}</div></div></div>
+</sc-for>
+</div>
+</div>
+<div class="ob-card ob-pad">
+<h2 class="ob-h3">What's New</h2>
+<sc-if value="{{ !trHasNews }}"><p class="ob-muted" style="margin-top:8px">אין עדכונים חדשים.</p></sc-if>
+<div class="ob-list" style="margin-top:6px">
+<sc-for list="{{ trNews }}" as="a">
+<div><div class="ob-row" style="gap:6px"><span class="ob-chip" style="background:var(--color-accent-100);color:var(--color-accent-700)">{{ a.kind }}</span><span class="ob-muted">{{ a.when }}</span></div><div dir="auto" style="margin-top:4px;font:700 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ a.title }}</div><sc-for list="{{ a.paras }}" as="p"><p class="ob-muted" dir="auto" style="margin-top:3px">{{ p.text }}<sc-for list="{{ p.items }}" as="li"> · {{ li }}</sc-for></p></sc-for></div>
+</sc-for>
+</div>
+</div>
+<button type="button" class="ob-btn" onClick="{{ goHub }}">מרכז המשאבים וחיפוש ←</button>
+</aside>
+</div>
+</sc-if>
+</section>
+</sc-if>
+
+<sc-if value="{{ isHub }}">
+<section data-screen-label="מרכז משאבים" class="ob ob-anim">
+<h1 class="ob-h1">Teacher Resource Hub</h1>
+<p class="ob-lead">מחברות, סילבוסים, מערכי שיעור, מדריכים ונהלים — רק חומר שאושר כרשמי. זמין גם אחרי סיום ההכשרה.</p>
+
+<div class="ob-card ob-pad" style="margin-top:16px">
+<label class="ob-label" for="ob-search" style="font-size:14px;color:var(--color-text)">חיפוש בכל המידע — מודולים ומשאבים</label>
+<div class="ob-row" style="margin-top:6px;flex-wrap:nowrap">
+<input id="ob-search" class="ob-input" type="search" value="{{ srchQ }}" onChange="{{ onSearch }}" placeholder="למשל: איפה מוצאים מחברת? · Quizlet · מחזורים" style="min-height:44px;font-size:15px" autoComplete="off">
+<sc-if value="{{ srchShow }}"><button type="button" class="ob-btn" onClick="{{ srchClear }}">ניקוי</button></sc-if>
+</div>
+<p class="ob-muted" style="margin-top:6px">התוצאות מפנות למודול או למשאב שבו המידע הוזן. החיפוש לא ממציא תשובות — מה שלא הוזן לא יימצא.</p>
+<sc-if value="{{ srchShow }}">
+<div class="ob-list" style="margin-top:8px" role="status" aria-live="polite">
+<sc-if value="{{ srchNone }}"><p class="ob-muted">לא נמצא מידע שהוזן על זה. אפשר לפנות למנהל הפדגוגי.</p></sc-if>
+<sc-for list="{{ srchRes }}" as="h">
+<div class="ob-between" style="flex-wrap:nowrap"><div style="min-width:0"><div class="ob-row" style="gap:7px"><span class="ob-chip" style="background:var(--color-accent-100);color:var(--color-accent-700)">{{ h.kind }}</span><b dir="auto" style="font:700 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ h.title }}</b></div><p class="ob-muted" dir="auto" style="margin-top:3px">{{ h.snippet }}</p></div><button type="button" class="ob-btn ob-btn-sm" onClick="{{ h.open }}" disabled="{{ !h.canOpen }}">פתיחה ←</button></div>
+</sc-for>
+</div>
+</sc-if>
+</div>
+
+<div class="ob-row" style="margin-top:16px;gap:8px">
+<select class="ob-input" style="width:auto;min-width:150px" value="{{ hubLang }}" onChange="{{ onHubLang }}" aria-label="שפה"><sc-for list="{{ hubLangs }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select>
+<select class="ob-input" style="width:auto;min-width:120px" value="{{ hubLevel }}" onChange="{{ onHubLevel }}" aria-label="רמה"><sc-for list="{{ hubLevels }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select>
+<select class="ob-input" style="width:auto;min-width:130px" value="{{ hubKind }}" onChange="{{ onHubKind }}" aria-label="סוג משאב"><sc-for list="{{ hubKinds }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select>
+<select class="ob-input" style="width:auto;min-width:130px" value="{{ hubProg }}" onChange="{{ onHubProg }}" aria-label="תוכנית לימודים"><sc-for list="{{ hubProgs }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select>
+<select class="ob-input" style="width:auto;min-width:120px" value="{{ hubSort }}" onChange="{{ onHubSort }}" aria-label="מיון"><option value="updated">עודכנו לאחרונה</option><option value="title">לפי שם</option></select>
+<button type="button" class="ob-btn" onClick="{{ toggleHubFav }}" aria-pressed="{{ hubFavPressed }}">{{ hubFavLabel }}</button>
+<input class="ob-input" type="search" value="{{ hubQ }}" onChange="{{ onHubQ }}" placeholder="סינון לפי שם או תגית" aria-label="סינון משאבים" style="width:auto;flex:1;min-width:160px">
+</div>
+<p class="ob-muted" style="margin-top:8px">{{ hubCount }}</p>
+<sc-if value="{{ hubLoading }}"><div class="ob-card ob-pad ob-muted" role="status" style="margin-top:10px">טוען…</div></sc-if>
+<sc-if value="{{ hubNone }}"><div class="ob-card ob-pad ob-muted" style="margin-top:10px">עוד לא פורסמו משאבים רשמיים.</div></sc-if>
+<sc-if value="{{ hubEmpty }}"><sc-if value="{{ !hubNone }}"><div class="ob-card ob-pad ob-muted" style="margin-top:10px">אין משאבים שמתאימים לסינון.</div></sc-if></sc-if>
+<div class="ob-grid ob-cols" style="margin-top:10px">
+<sc-for list="{{ hubItems }}" as="r">
+<article class="ob-card ob-pad ob-stack" style="gap:8px">
+<div class="ob-between" style="flex-wrap:nowrap;align-items:flex-start">
+<div class="ob-row" style="gap:6px"><span class="ob-chip" style="background:var(--color-accent-100);color:var(--color-accent-700)">{{ r.kind }}</span><span class="ob-chip" style="background:var(--color-neutral-200);color:var(--color-neutral-700)">{{ r.lang }}</span><sc-if value="{{ r.hasLevel }}"><span class="ob-chip" style="background:var(--color-neutral-200);color:var(--color-neutral-700)">{{ r.level }}</span></sc-if></div>
+<button type="button" class="ob-btn ob-btn-ghost ob-btn-sm" onClick="{{ r.toggleFav }}" aria-pressed="{{ r.pressed }}" aria-label="{{ r.favAria }}" style="font-size:18px;color:var(--color-process-yellow)">{{ r.star }}</button>
+</div>
+<h2 class="ob-h3" dir="auto" style="font-size:16px">{{ r.title }}</h2>
+<sc-if value="{{ r.description }}"><p class="ob-muted" dir="auto">{{ r.description }}</p></sc-if>
+<sc-if value="{{ r.hasProgram }}"><p class="ob-muted">תוכנית: {{ r.program }}</p></sc-if>
+<div class="ob-row" style="gap:5px"><sc-for list="{{ r.tags }}" as="t"><span class="ob-muted" style="font-size:11.5px">#{{ t }}</span></sc-for></div>
+<div class="ob-between" style="margin-top:auto"><span class="ob-muted" style="font-size:11.5px">{{ r.updated }}</span>
+<span class="ob-row" style="gap:6px"><sc-if value="{{ r.linkWarn }}"><span class="ob-chip" style="background:{{ r.linkBg }};color:{{ r.linkFg }}">{{ r.linkLabel }}</span></sc-if><sc-if value="{{ r.hasUrl }}"><a class="ob-btn ob-btn-sm" href="{{ r.url }}" target="_blank" rel="noopener noreferrer">פתיחה ↗</a></sc-if></span></div>
+</article>
+</sc-for>
+</div>
+</section>
+</sc-if>
+
+<sc-if value="{{ isTrainAdmin }}">
+<section data-screen-label="ניהול הכשרת מורים" class="ob ob-anim">
+<sc-if value="{{ ta.notMgr }}"><div class="ob-card ob-pad">האזור הזה שמור למנהל הפדגוגי ולאדמין.</div></sc-if>
+<sc-if value="{{ !ta.notMgr }}">
+<sc-if value="{{ !showPlayer }}">
+<div class="ob-between" style="align-items:flex-end">
+<div><div class="ob-kicker">New School | Teacher Onboarding</div><h1 class="ob-h1" style="margin-top:4px">ניהול הכשרת מורים</h1></div>
+</div>
+<nav class="ob-tabs" aria-label="אזורי הניהול" style="margin-top:14px">
+<sc-for list="{{ ta.tabs }}" as="t"><button type="button" class="ob-tab" onClick="{{ t.go }}" aria-pressed="{{ t.pressed }}" style="background:{{ t.bg }};color:{{ t.fg }}">{{ t.label }}</button></sc-for>
+</nav>
+</sc-if>
+
+<sc-if value="{{ ta.empty }}">
+<sc-if value="{{ !ta.isEditor }}"><sc-if value="{{ !ta.isLearner }}">
+<div class="ob-card ob-pad" style="margin-top:16px;border:1.5px dashed var(--color-accent-300)">
+<h2 class="ob-h2">להתחיל מתבנית?</h2>
+<p class="ob-lead">אפשר ליצור את 12 המודולים של תבנית ההכשרה — Welcome to New School עד Final Assessment — כטיוטות, עם המטרות ורשימות הנושאים, ובמקומות שבהם צריך תוכן רשמי של New School: כרטיס "ממתין לתוכן רשמי". נוסף מסלול תבנית ו-8 המשאבים ממסמך ההכשרה מ-04.03.2026 כטיוטות שלא נבדקו. שום דבר לא מגיע למורים עד שתפרסם ותשייך.</p>
+<button type="button" class="ob-btn ob-btn-primary" style="margin-top:12px" onClick="{{ ta.seed }}">יצירת תבנית ההכשרה</button>
+</div>
+</sc-if></sc-if>
+</sc-if>
+
+<sc-if value="{{ ta.isOverview }}">
+<div class="ob-grid" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-top:16px">
+<sc-for list="{{ ta.stats }}" as="x"><div class="ob-card ob-stat"><b style="color:{{ x.tone }}">{{ x.value }}</b><span class="ob-muted">{{ x.label }}</span></div></sc-for>
+</div>
+<div class="ob-grid ob-cols" style="margin-top:14px">
+<div class="ob-card ob-pad">
+<h2 class="ob-h3">ממתין לבדיקה</h2>
+<sc-if value="{{ ta.noQueue }}"><p class="ob-muted" style="margin-top:8px">אין הגשות שממתינות.</p></sc-if>
+<div class="ob-list" style="margin-top:6px"><sc-for list="{{ ta.queue }}" as="q"><div class="ob-between" style="flex-wrap:nowrap"><div style="min-width:0"><b style="font:700 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ q.name }}</b><div class="ob-muted" dir="auto">{{ q.module }} · {{ q.when }} {{ q.attempt }}</div></div><button type="button" class="ob-btn ob-btn-sm ob-btn-primary" onClick="{{ q.open }}">לבדיקה</button></div></sc-for></div>
+</div>
+<div class="ob-card ob-pad">
+<h2 class="ob-h3">זקוקים למעקב</h2>
+<sc-if value="{{ ta.noAttention }}"><p class="ob-muted" style="margin-top:8px">אין כרגע מורים שדורשים מעקב.</p></sc-if>
+<div class="ob-list" style="margin-top:6px"><sc-for list="{{ ta.attention }}" as="q"><div class="ob-between" style="flex-wrap:nowrap"><div style="min-width:0"><b style="font:700 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ q.name }}</b><div class="ob-muted" dir="auto">{{ q.path }} · <span style="color:var(--color-critical)">{{ q.why }}</span></div></div><button type="button" class="ob-btn ob-btn-sm" onClick="{{ q.open }}">פתיחה</button></div></sc-for></div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ ta.isOverview }}"><div style="height:14px"></div></sc-if>
+<sc-if value="{{ ta.isTeachers }}"><div style="height:16px"></div></sc-if>
+<sc-if value="{{ ta.isOverview }}">
+<div class="ob-card" style="overflow:hidden">
+<div class="ob-between ob-pad" style="padding-bottom:10px"><h2 class="ob-h3">המורים בהכשרה</h2><input class="ob-input" type="search" style="width:220px" value="{{ ta.q }}" onChange="{{ ta.onQ }}" placeholder="חיפוש מורה, שפה, מסלול" aria-label="חיפוש מורה"></div>
+<div class="ob-scroll"><div class="ob-table" role="table" style="min-width:860px">
+<div class="ob-th" role="columnheader">מורה</div><div class="ob-th" role="columnheader">שפה</div><div class="ob-th" role="columnheader">מסלול</div><div class="ob-th" role="columnheader">התקדמות</div><div class="ob-th" role="columnheader">סטטוס</div><div class="ob-th" role="columnheader">פעילות אחרונה</div><div class="ob-th" role="columnheader"><span class="ob-sr">פעולות</span></div>
+<sc-for list="{{ ta.rows }}" as="r">
+<div role="cell" style="gap:8px"><span style="width:28px;height:28px;border-radius:9px;background:var(--color-accent-100);color:var(--color-accent-700);display:grid;place-items:center;font:700 10.5px 'Source Serif 4',Georgia,serif;flex:none">{{ r.initials }}</span><span style="min-width:0"><b style="display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ r.name }}</b><span class="ob-muted" style="font-size:11.5px">{{ r.position }}</span></span><sc-if value="{{ r.flag }}"><span title="{{ r.why }}" aria-label="{{ r.why }}" style="color:var(--color-critical)">●</span></sc-if></div>
+<div role="cell">{{ r.language }}</div>
+<div role="cell" dir="auto"><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ r.path }} <span class="ob-muted">· {{ r.kind }}</span></span></div>
+<div role="cell" style="gap:7px"><div class="ob-bar" style="flex:1"><span style="width:{{ r.width }}"></span></div><span class="ob-muted">{{ r.percent }}</span></div>
+<div role="cell"><span class="ob-chip" style="background:{{ r.statusBg }};color:{{ r.statusFg }}">{{ r.statusLabel }}</span></div>
+<div role="cell" class="ob-muted">{{ r.last }}</div>
+<div role="cell"><button type="button" class="ob-btn ob-btn-sm" onClick="{{ r.open }}" aria-label="פרופיל ההכשרה של {{ r.name }}">פתיחה</button></div>
+</sc-for>
+</div></div>
+<sc-if value="{{ ta.noRows }}"><p class="ob-muted ob-pad">עדיין לא שויכה הכשרה לאף מורה. משייכים מהלשונית "מורים ושיוך".</p></sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{ ta.isTeachers }}">
+<div class="ob-grid ob-cols">
+<form class="ob-card ob-pad ob-stack" onSubmit="{{ ta.assign }}">
+<h2 class="ob-h3">שיוך מסלול הכשרה</h2>
+<label class="ob-label">מורה<select name="userId" class="ob-input" required><option value="">בחירת מורה…</option><sc-for list="{{ ta.teacherOpts }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select></label>
+<label class="ob-label">מסלול<select name="pathId" class="ob-input" required><option value="">בחירת מסלול…</option><sc-for list="{{ ta.pathOpts }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select></label>
+<label class="ob-label">יעד לסיום (לא חובה)<input name="dueDate" type="date" class="ob-input"></label>
+<button type="submit" class="ob-btn ob-btn-primary">שיוך ושליחת הודעה למורה</button>
+<p class="ob-muted">ברשימה מופיעים חשבונות פעילים בתפקיד מורה. חשבונות חדשים נפתחים במסך משתמשים והרשאות.</p>
+</form>
+<div class="ob-card ob-pad">
+<h2 class="ob-h3">כל המורים</h2>
+<div class="ob-list" style="margin-top:6px;max-height:420px;overflow:auto">
+<sc-for list="{{ ta.teachersAll }}" as="t"><div class="ob-between"><div><b style="font:700 13.5px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ t.name }}</b><span class="ob-muted"> · {{ t.language }}</span><sc-if value="{{ t.inactive }}"><span class="ob-muted"> · מושבת</span></sc-if></div><button type="button" class="ob-btn ob-btn-sm" onClick="{{ t.open }}">{{ t.btnLabel }}</button></div></sc-for>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ ta.isLearner }}">
+<div style="margin-top:16px"><button type="button" class="ob-btn ob-btn-ghost ob-btn-sm" onClick="{{ ta.backToList }}">→ חזרה</button></div>
+<sc-if value="{{ ta.learnerLoading }}"><div class="ob-card ob-pad ob-muted" role="status">טוען…</div></sc-if>
+<sc-if value="{{ ta.learner }}">
+<div class="ob-grid ob-cols-wide" style="margin-top:8px">
+<div class="ob-stack" style="gap:14px">
+<div class="ob-card ob-pad ob-row" style="gap:14px">
+<span style="width:52px;height:52px;border-radius:15px;background:var(--color-accent);color:#fff;display:grid;place-items:center;font:700 18px 'Source Serif 4',Georgia,serif">{{ ta.learner.initials }}</span>
+<div><h2 class="ob-h2">{{ ta.learner.name }}</h2><p class="ob-muted">{{ ta.learner.email }} · {{ ta.learner.roleLabel }}<sc-if value="{{ ta.learner.inactive }}"> · החשבון מושבת</sc-if></p></div>
+</div>
+<sc-if value="{{ ta.learner.noAssignments }}"><div class="ob-card ob-pad ob-muted">עדיין לא שויכה הכשרה. אפשר לשייך מסלול מהטופס בצד.</div></sc-if>
+<sc-for list="{{ ta.learner.assignments }}" as="a">
+<div class="ob-card ob-pad">
+<div class="ob-between" style="align-items:flex-start">
+<div><div class="ob-row" style="gap:7px"><span class="ob-chip" style="background:var(--color-accent-100);color:var(--color-accent-700)">{{ a.kindLabel }}</span><span class="ob-chip" style="background:var(--color-neutral-200);color:var(--color-neutral-700)">{{ a.statusLabel }}</span><sc-if value="{{ a.hasReady }}"><span class="ob-chip" style="background:{{ a.readyBg }};color:{{ a.readyFg }}">{{ a.readyLabel }}</span></sc-if></div>
+<h3 class="ob-h2" dir="auto" style="margin-top:6px">{{ a.title }}</h3>
+<p class="ob-muted">{{ a.assigned }} · {{ a.last }} <sc-if value="{{ a.due }}">· {{ a.due }}</sc-if></p>
+<sc-if value="{{ a.hasAttention }}"><p style="margin-top:3px;font:600 12.5px 'Source Serif 4',Georgia,serif;color:var(--color-critical)">{{ a.attention }}</p></sc-if>
+</div>
+<div class="ob-row" style="gap:8px;min-width:160px"><div class="ob-bar" style="flex:1"><span style="width:{{ a.width }}"></span></div><b>{{ a.percent }}</b></div>
+</div>
+
+<div class="ob-list" style="margin-top:10px">
+<sc-for list="{{ a.modules }}" as="m">
+<div>
+<div class="ob-between" style="flex-wrap:nowrap">
+<button type="button" onClick="{{ m.toggle }}" aria-expanded="{{ m.open }}" style="display:flex;align-items:center;gap:10px;background:none;border:none;padding:0;cursor:pointer;text-align:start;min-width:0;flex:1;color:var(--color-text)">
+<span aria-hidden="true" class="ob-muted">{{ m.chev }}</span>
+<span style="min-width:0"><b dir="auto" style="font:700 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ m.title }}</b><sc-if value="{{ !m.required }}"><span class="ob-muted"> · רשות</span></sc-if><span class="ob-muted" style="display:block">{{ m.facts }}</span></span>
+</button>
+<span class="ob-chip" style="background:{{ m.statusBg }};color:{{ m.statusFg }}">{{ m.statusLabel }}</span>
+</div>
+<sc-if value="{{ m.open }}">
+<div class="ob-stack ob-anim" style="margin-top:10px;gap:10px;padding-inline-start:22px">
+<sc-if value="{{ !m.hasDetail }}"><p class="ob-muted">אין במודול פעילויות.</p></sc-if>
+<sc-for list="{{ m.items }}" as="x">
+<div class="ob-soft">
+<div class="ob-kicker">{{ x.typeLabel }}</div>
+<p dir="auto" style="margin-top:3px;font:600 13.5px/1.5 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ x.prompt }}</p>
+<sc-if value="{{ x.auto }}"><p style="margin-top:4px;font:600 12.5px 'Source Serif 4',Georgia,serif;color:{{ x.autoFg }}" dir="auto">{{ x.autoLine }}</p></sc-if>
+<sc-if value="{{ x.noSub }}"><p class="ob-muted" style="margin-top:4px">טרם הוגש.</p></sc-if>
+<sc-for list="{{ x.subs }}" as="h">
+<div style="margin-top:8px;padding:10px 12px;background:var(--color-paper);border-radius:10px;border:1px solid var(--color-neutral-200)">
+<div class="ob-row"><span class="ob-muted" style="font-weight:600">{{ h.attempt }} · {{ h.when }}</span><span class="ob-chip" style="background:{{ h.statusBg }};color:{{ h.statusFg }}">{{ h.statusLabel }}</span></div>
+<sc-for list="{{ h.paras }}" as="p"><p dir="auto" style="margin-top:6px;font:400 13.5px/1.65 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ p.text }}<sc-for list="{{ p.items }}" as="li"> · {{ li }}</sc-for></p></sc-for>
+<sc-for list="{{ h.plan }}" as="f"><div style="margin-top:6px"><b style="font:600 12.5px 'Source Serif 4',Georgia,serif">{{ f.label }}</b><sc-for list="{{ f.paras }}" as="p"><p dir="auto" style="font:400 13.5px/1.6 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ p.text }}<sc-for list="{{ p.items }}" as="li"> · {{ li }}</sc-for></p></sc-for></div></sc-for>
+<sc-if value="{{ h.hasUrl }}"><a href="{{ h.url }}" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:6px;font-weight:600;direction:ltr">{{ h.url }} ↗</a></sc-if>
+<sc-if value="{{ h.hasFeedback }}"><p dir="auto" style="margin-top:6px;font:400 13px/1.6 'Source Serif 4',Georgia,serif;color:var(--color-accent-700)">משוב: {{ h.feedback }} <span class="ob-muted">({{ h.reviewer }})</span></p></sc-if>
+<sc-if value="{{ h.canReview }}">
+<div class="ob-stack" style="margin-top:10px;gap:8px">
+<label class="ob-label">משוב למורה<textarea class="ob-input" style="min-height:70px" value="{{ h.fb }}" onChange="{{ h.onFb }}" placeholder="מה טוב, ומה לשפר. חובה בבקשת תיקון." dir="auto"></textarea></label>
+<div class="ob-row"><button type="button" class="ob-btn ob-btn-primary ob-btn-sm" onClick="{{ h.approve }}">אישור המשימה</button><button type="button" class="ob-btn ob-btn-sm ob-btn-danger" onClick="{{ h.revise }}">בקשת תיקון</button></div>
+</div>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</sc-for>
+<div><button type="button" class="ob-btn ob-btn-sm ob-btn-ghost" onClick="{{ m.reset }}">איפוס תשובות אוטומטיות במודול</button></div>
+</div>
+</sc-if>
+</div>
+</sc-for>
+</div>
+
+<div class="ob-soft" style="margin-top:14px">
+<h4 class="ob-h3">{{ a.rdTitle }}</h4>
+<p class="ob-muted" style="margin-top:3px">החלטה ניהולית מתועדת — נשמרת ביומן הפעולות ונשלחת למורה.<sc-if value="{{ !a.allDone }}"> שימו לב: עדיין לא כל מודולי החובה הושלמו.</sc-if></p>
+<sc-if value="{{ a.hasReady }}"><p style="margin-top:6px;font:400 13px/1.6 'Source Serif 4',Georgia,serif">החלטה נוכחית: <b>{{ a.readyLabel }}</b> · {{ a.readyBy }}<sc-if value="{{ a.readyNote }}"> — {{ a.readyNote }}</sc-if></p></sc-if>
+<div class="ob-row" role="group" aria-label="החלטה" style="margin-top:10px;gap:6px">
+<sc-for list="{{ a.rdOpts }}" as="o"><button type="button" class="ob-btn ob-btn-sm" onClick="{{ o.pick }}" aria-pressed="{{ o.pressed }}" style="border-color:{{ o.border }};background:{{ o.bg }}">{{ o.label }}</button></sc-for>
+</div>
+<label class="ob-label" style="margin-top:8px">הערה / מה נדרש להשלים<textarea class="ob-input" style="min-height:60px" value="{{ a.rdNote }}" onChange="{{ a.onRdNote }}" dir="auto"></textarea></label>
+<sc-if value="{{ a.isOnboarding }}"><label class="ob-label" style="margin-top:8px;max-width:240px">תחילת ההוראה (לפתיחת ליווי 30 יום)<input type="date" class="ob-input" value="{{ a.rdStart }}" onChange="{{ a.onRdStart }}"></label></sc-if>
+<button type="button" class="ob-btn ob-btn-primary" style="margin-top:10px" onClick="{{ a.saveRd }}">תיעוד ההחלטה</button>
+</div>
+
+<sc-if value="{{ a.hasFollowups }}">
+<h4 class="ob-h3" style="margin-top:16px">ליווי ב-30 הימים הראשונים</h4>
+<div class="ob-grid ob-cols" style="margin-top:8px">
+<sc-for list="{{ a.followups }}" as="f">
+<div class="ob-soft ob-stack" style="gap:7px">
+<div class="ob-between"><b style="font:700 13.5px 'Source Serif 4',Georgia,serif">{{ f.label }} · {{ f.due }}</b><span class="ob-chip" style="background:{{ f.statusBg }};color:{{ f.statusFg }}">{{ f.statusLabel }}</span></div>
+<p class="ob-muted" dir="auto"><b>רפלקציית המורה:</b> {{ f.reflection }}</p>
+<label class="ob-label">שיחת ליווי (תאריך/שעה)<input class="ob-input" value="{{ f.meeting }}" onChange="{{ f.onMeeting }}" placeholder="למשל 21.10 · 16:00"></label>
+<label class="ob-label">המלצות מקצועיות (המורה רואה)<textarea class="ob-input" style="min-height:56px" value="{{ f.recs }}" onChange="{{ f.onRecs }}" dir="auto"></textarea></label>
+<label class="ob-label">הערות פנימיות (למנהל בלבד)<textarea class="ob-input" style="min-height:56px" value="{{ f.notes }}" onChange="{{ f.onNotes }}" dir="auto"></textarea></label>
+<div class="ob-row"><button type="button" class="ob-btn ob-btn-sm ob-btn-primary" onClick="{{ f.save }}">שמירה</button><button type="button" class="ob-btn ob-btn-sm" onClick="{{ f.toggle }}">{{ f.toggleLabel }}</button></div>
+</div>
+</sc-for>
+</div>
+</sc-if>
+<div class="ob-row" style="margin-top:14px;gap:6px">
+<sc-if value="{{ !a.hasFollowups }}"><button type="button" class="ob-btn ob-btn-sm" onClick="{{ a.openFu }}">פתיחת ליווי 30 יום</button></sc-if>
+<sc-if value="{{ !a.withdrawn }}"><button type="button" class="ob-btn ob-btn-sm ob-btn-danger" onClick="{{ a.withdraw }}">ביטול השיוך</button></sc-if>
+<sc-if value="{{ a.withdrawn }}"><button type="button" class="ob-btn ob-btn-sm" onClick="{{ a.reactivate }}">הפעלה מחדש</button></sc-if>
+</div>
+</div>
+</sc-for>
+</div>
+
+<aside class="ob-stack" style="gap:14px">
+<div class="ob-card ob-pad ob-stack" style="gap:9px">
+<h3 class="ob-h3">פרטי המורה</h3>
+<label class="ob-label">שפת הוראה<input class="ob-input" value="{{ ta.learner.prof.language }}" onChange="{{ ta.learner.onLang }}" placeholder="למשל: איטלקית"></label>
+<label class="ob-label">תפקיד / סוג הוראה<input class="ob-input" value="{{ ta.learner.prof.position }}" onChange="{{ ta.learner.onPos }}" placeholder="למשל: מורה פרטי · אונליין"></label>
+<label class="ob-label">תאריך תחילת הכשרה<input type="date" class="ob-input" value="{{ ta.learner.prof.startDate }}" onChange="{{ ta.learner.onStart }}"></label>
+<button type="button" class="ob-btn ob-btn-sm" onClick="{{ ta.learner.saveProf }}">שמירת הפרטים</button>
+</div>
+<form class="ob-card ob-pad ob-stack" style="gap:9px" onSubmit="{{ ta.assign }}">
+<h3 class="ob-h3">שיוך מסלול נוסף</h3>
+<input type="hidden" name="userId" value="{{ ta.learner.userId }}">
+<label class="ob-label">מסלול<select name="pathId" class="ob-input" required><option value="">בחירה…</option><sc-for list="{{ ta.learner.pathOpts }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select></label>
+<label class="ob-label">יעד (לא חובה)<input type="date" name="dueDate" class="ob-input"></label>
+<button type="submit" class="ob-btn ob-btn-primary ob-btn-sm">שיוך</button>
+<p class="ob-muted">גם אחרי סיום הקליטה — הכשרות המשך, רענון נהלים, כלים חדשים.</p>
+</form>
+<div class="ob-card ob-pad">
+<h3 class="ob-h3">היסטוריית פעולות</h3>
+<div class="ob-list" style="margin-top:6px;max-height:360px;overflow:auto">
+<sc-for list="{{ ta.learner.audit }}" as="x"><div><b style="font:600 12.5px 'Source Serif 4',Georgia,serif">{{ x.action }}</b><div class="ob-muted" dir="auto">{{ x.when }} · {{ x.actor }}<sc-if value="{{ x.detail }}"> · {{ x.detail }}</sc-if></div></div></sc-for>
+</div>
+</div>
+</aside>
+</div>
+</sc-if>
+</sc-if>
+
+<sc-if value="{{ ta.isPaths }}">
+<div class="ob-grid ob-cols-wide" style="margin-top:16px">
+<div class="ob-stack" style="gap:14px">
+<sc-if value="{{ ta.noPaths }}"><div class="ob-card ob-pad ob-muted">אין עדיין מסלולים. יוצרים מסלול בטופס בצד.</div></sc-if>
+<div class="ob-grid ob-cols">
+<sc-for list="{{ ta.paths }}" as="p">
+<button type="button" class="ob-card ob-pad" onClick="{{ p.select }}" aria-pressed="{{ p.on }}" style="text-align:start;cursor:pointer;border-color:{{ p.border }};opacity:{{ p.opacity }};font:inherit;color:inherit">
+<div class="ob-row" style="gap:6px"><span class="ob-chip" style="background:var(--color-accent-100);color:var(--color-accent-700)">{{ p.kind }}</span><span class="ob-chip" style="background:var(--color-neutral-200);color:var(--color-neutral-700)">{{ p.lang }}</span><sc-if value="{{ p.archived }}"><span class="ob-chip" style="background:var(--color-neutral-200);color:var(--color-neutral-500)">ארכיון</span></sc-if></div>
+<h3 class="ob-h3" dir="auto" style="margin-top:8px">{{ p.title }}</h3>
+<p class="ob-muted" style="margin-top:3px">{{ p.count }} · {{ p.learners }}</p>
+<sc-if value="{{ p.audience }}"><p class="ob-muted">{{ p.audience }}</p></sc-if>
+</button>
+</sc-for>
+</div>
+<sc-if value="{{ ta.path }}">
+<div class="ob-card ob-pad ob-stack ob-anim" style="gap:12px">
+<div class="ob-between"><h2 class="ob-h2">עריכת מסלול</h2><span class="ob-row" style="gap:6px"><sc-if value="{{ ta.path.dirty }}"><button type="button" class="ob-btn ob-btn-sm ob-btn-ghost" onClick="{{ ta.path.discard }}">ביטול שינויים</button></sc-if><button type="button" class="ob-btn ob-btn-primary" onClick="{{ ta.path.save }}" disabled="{{ !ta.path.dirty }}">שמירת המסלול</button></span></div>
+<div class="ob-grid ob-cols">
+<label class="ob-label">שם<input class="ob-input" value="{{ ta.path.title }}" onChange="{{ ta.path.onTitle }}"></label>
+<label class="ob-label">סוג<select class="ob-input" value="{{ ta.path.kind }}" onChange="{{ ta.path.onKind }}"><sc-for list="{{ ta.path.kinds }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select></label>
+<label class="ob-label">שפת הוראה (ריק = כל השפות)<input class="ob-input" value="{{ ta.path.language }}" onChange="{{ ta.path.onLanguage }}"></label>
+<label class="ob-label">קהל יעד (תפקיד · סוג הוראה · קבוצה)<input class="ob-input" value="{{ ta.path.audience }}" onChange="{{ ta.path.onAudience }}"></label>
+</div>
+<label class="ob-label">תיאור<textarea class="ob-input" style="min-height:60px" value="{{ ta.path.description }}" onChange="{{ ta.path.onDescription }}" dir="auto"></textarea></label>
+<label class="ob-label" style="max-width:200px">מצב<select class="ob-input" value="{{ ta.path.status }}" onChange="{{ ta.path.onStatus }}"><sc-for list="{{ ta.path.statuses }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select></label>
+<h3 class="ob-h3">מודולים במסלול</h3>
+<sc-if value="{{ ta.path.empty }}"><p class="ob-muted">המסלול ריק. מוסיפים מודולים מהרשימה למטה.</p></sc-if>
+<div class="ob-list">
+<sc-for list="{{ ta.path.rows }}" as="r">
+<div class="ob-row" style="gap:8px">
+<span class="ob-mark">{{ r.n }}</span>
+<span dir="auto" style="flex:1;min-width:160px;font:600 14px 'Source Serif 4','Frank Ruhl Libre',Georgia,serif">{{ r.title }} <span class="ob-chip" style="background:{{ r.statusBg }};color:{{ r.statusFg }}">{{ r.statusLabel }}</span></span>
+<label class="ob-check" style="font-size:12.5px"><input type="checkbox" checked="{{ r.required }}" onChange="{{ r.onRequired }}">חובה</label>
+<select class="ob-input" style="width:auto;min-width:150px;min-height:30px;font-size:12.5px" value="{{ r.prereq }}" onChange="{{ r.onPrereq }}" aria-label="דרישת קדם"><sc-for list="{{ r.prereqOpts }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select>
+<button type="button" class="ob-btn ob-btn-sm" onClick="{{ r.up }}" disabled="{{ r.noUp }}" aria-label="למעלה">▲</button>
+<button type="button" class="ob-btn ob-btn-sm" onClick="{{ r.down }}" disabled="{{ r.noDown }}" aria-label="למטה">▼</button>
+<button type="button" class="ob-btn ob-btn-sm ob-btn-danger" onClick="{{ r.remove }}" aria-label="הסרה מהמסלול">✕</button>
+</div>
+</sc-for>
+</div>
+<label class="ob-label" style="max-width:420px">הוספת מודול<select class="ob-input" value="" onChange="{{ ta.path.onAdd }}"><option value="">בחירת מודול…</option><sc-for list="{{ ta.path.addOpts }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select></label>
+<p class="ob-muted">מודולים בטיוטה לא מוצגים למורים עד שמפרסמים אותם.</p>
+</div>
+</sc-if>
+</div>
+<form class="ob-card ob-pad ob-stack" style="gap:9px" onSubmit="{{ ta.newPath }}">
+<h2 class="ob-h3">מסלול חדש</h2>
+<label class="ob-label">שם המסלול<input name="title" class="ob-input" required placeholder="למשל: מורה חדש לספרדית"></label>
+<label class="ob-label">סוג<select name="kind" class="ob-input"><option value="onboarding">אונבורדינג — מורה חדש</option><option value="continuing">הכשרת המשך — רענון, כלים, פיתוח מקצועי</option></select></label>
+<label class="ob-label">שפת הוראה (ריק = כל השפות)<input name="language" class="ob-input"></label>
+<label class="ob-label">קהל יעד<input name="audience" class="ob-input" placeholder="תפקיד, סוג הוראה, קבוצת מורים"></label>
+<label class="ob-label">תיאור<textarea name="description" class="ob-input" style="min-height:60px"></textarea></label>
+<button type="submit" class="ob-btn ob-btn-primary">יצירת מסלול</button>
+</form>
+</div>
+</sc-if>
+
+<sc-if value="{{ ta.isModules }}">
+<div class="ob-between" style="margin-top:16px"><p class="ob-muted">כל מודול נערך כטיוטה ומגיע למורים רק אחרי פרסום. כל שמירה נשמרת כגרסה.</p><button type="button" class="ob-btn ob-btn-primary" onClick="{{ ta.newModule }}">+ מודול חדש</button></div>
+<sc-if value="{{ ta.noModules }}"><div class="ob-card ob-pad ob-muted" style="margin-top:10px">אין עדיין מודולים.</div></sc-if>
+<div class="ob-grid ob-cols" style="margin-top:12px">
+<sc-for list="{{ ta.modules }}" as="m">
+<article class="ob-card ob-pad ob-stack" style="gap:8px;opacity:{{ m.opacity }}">
+<div class="ob-row" style="gap:10px;flex-wrap:nowrap"><span class="ob-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="{{ m.icon }}"/></svg></span><div style="min-width:0"><div class="ob-row" style="gap:6px"><span class="ob-chip" style="background:{{ m.statusBg }};color:{{ m.statusFg }}">{{ m.statusLabel }}</span><sc-if value="{{ m.unpublished }}"><span class="ob-chip" style="background:var(--color-warning-tint);color:var(--color-warning-ink)">שינויים שלא פורסמו</span></sc-if></div><h3 class="ob-h3" dir="auto" style="margin-top:5px">{{ m.title }}</h3></div></div>
+<p class="ob-muted" dir="auto">{{ m.description }}</p>
+<p class="ob-muted" style="font-size:11.5px">{{ m.meta }} · {{ m.updated }}</p>
+<div class="ob-row" style="gap:6px;margin-top:auto">
+<sc-if value="{{ !m.archived }}"><button type="button" class="ob-btn ob-btn-sm ob-btn-primary" onClick="{{ m.edit }}">עריכה</button></sc-if>
+<button type="button" class="ob-btn ob-btn-sm" onClick="{{ m.dup }}">שכפול</button>
+<sc-if value="{{ !m.archived }}"><button type="button" class="ob-btn ob-btn-sm ob-btn-ghost" onClick="{{ m.archive }}">לארכיון</button></sc-if>
+<sc-if value="{{ m.archived }}"><button type="button" class="ob-btn ob-btn-sm" onClick="{{ m.unarchive }}">החזרה מהארכיון</button></sc-if>
+</div>
+</article>
+</sc-for>
+</div>
+</sc-if>
+
+<sc-if value="{{ ta.isEditor }}">
+<sc-if value="{{ ta.editorLoading }}"><div class="ob-card ob-pad ob-muted" role="status" style="margin-top:16px">טוען את המודול…</div></sc-if>
+<sc-if value="{{ ta.editor }}">
+<div class="ob-sticky" style="margin-top:6px">
+<div class="ob-between">
+<span class="ob-row" style="gap:8px"><button type="button" class="ob-btn ob-btn-ghost ob-btn-sm" onClick="{{ ta.editor.close }}">→ כל המודולים</button><span class="ob-chip" style="background:{{ ta.editor.statusBg }};color:{{ ta.editor.statusFg }}">{{ ta.editor.statusLabel }}</span><span class="ob-muted">{{ ta.editor.rev }} · {{ ta.editor.unpublished }}</span><sc-if value="{{ ta.editor.dirty }}"><span class="ob-chip" style="background:var(--color-warning-tint);color:var(--color-warning-ink)" role="status">● לא נשמר</span></sc-if></span>
+<span class="ob-row" style="gap:6px">
+<button type="button" class="ob-btn ob-btn-sm" onClick="{{ ta.editor.versionsBtn }}">היסטוריית גרסאות</button>
+<button type="button" class="ob-btn ob-btn-sm" onClick="{{ ta.editor.preview }}" disabled="{{ ta.editor.archived }}">תצוגה מקדימה</button>
+<button type="button" class="ob-btn ob-btn-sm" onClick="{{ ta.editor.save }}" disabled="{{ !ta.editor.dirty }}">{{ ta.editor.saveLabel }}</button>
+<button type="button" class="ob-btn ob-btn-sm ob-btn-accent" onClick="{{ ta.editor.publish }}" disabled="{{ ta.editor.archived }}">פרסום</button>
+</span>
+</div>
+</div>
+<p class="ob-muted" style="margin-top:4px">{{ ta.editor.updated }}<sc-if value="{{ ta.editor.published }}"> · {{ ta.editor.published }}</sc-if></p>
+<sc-if value="{{ ta.editor.archived }}"><div class="ob-soft" style="margin-top:10px">המודול בארכיון — לא ניתן לערוך. <button type="button" class="ob-btn ob-btn-sm" onClick="{{ ta.editor.unarchive }}">החזרה מהארכיון</button></div></sc-if>
+
+<sc-if value="{{ ta.editor.showVersions }}">
+<div class="ob-card ob-pad ob-anim" style="margin-top:12px">
+<h2 class="ob-h3">היסטוריית גרסאות</h2>
+<p class="ob-muted" style="margin-top:3px">כל שמירה ופרסום נשמרים. שחזור יוצר טיוטה חדשה — שום גרסה לא נמחקת.</p>
+<div class="ob-list" style="margin-top:6px;max-height:300px;overflow:auto">
+<sc-for list="{{ ta.editor.versions }}" as="v"><div class="ob-between"><div><b style="font:600 13px 'Source Serif 4',Georgia,serif;color:{{ v.color }}">{{ v.label }}</b><div class="ob-muted">{{ v.meta }}</div></div><button type="button" class="ob-btn ob-btn-sm" onClick="{{ v.restore }}">שחזור</button></div></sc-for>
+</div>
+</div>
+</sc-if>
+
+<div class="ob-grid ob-cols-wide" style="margin-top:12px">
+<div class="ob-stack" style="gap:12px">
+<sc-if value="{{ ta.editor.empty }}"><div class="ob-card ob-pad ob-muted">המודול ריק. מוסיפים רכיבים בכפתור "הוספת רכיב".</div></sc-if>
+<sc-for list="{{ ta.editor.blocks }}" as="b">
+<div class="ob-card" style="overflow:hidden">
+<div class="ob-between" style="padding:10px 14px;background:var(--color-neutral-100);flex-wrap:nowrap">
+<button type="button" onClick="{{ b.toggle }}" aria-expanded="{{ b.open }}" style="display:flex;align-items:center;gap:8px;background:none;border:none;cursor:pointer;min-width:0;flex:1;text-align:start;padding:0;color:var(--color-text)">
+<span class="ob-muted" aria-hidden="true">{{ b.chev }}</span><span class="ob-mark">{{ b.n }}</span>
+<span class="ob-chip" style="background:{{ b.chipBg }};color:{{ b.chipFg }}">{{ b.typeLabel }}</span>
+<span class="ob-muted" dir="auto" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ b.summary }}</span>
+</button>
+<span class="ob-row" style="gap:4px;flex-wrap:nowrap">
+<button type="button" class="ob-btn ob-btn-sm" onClick="{{ b.up }}" disabled="{{ b.noUp }}" aria-label="הזזת הרכיב למעלה">▲</button>
+<button type="button" class="ob-btn ob-btn-sm" onClick="{{ b.down }}" disabled="{{ b.noDown }}" aria-label="הזזת הרכיב למטה">▼</button>
+<button type="button" class="ob-btn ob-btn-sm ob-btn-danger" onClick="{{ b.remove }}" aria-label="מחיקת הרכיב">✕</button>
+</span>
+</div>
+<sc-if value="{{ b.open }}">
+<div class="ob-stack ob-anim" style="padding:14px;gap:10px">
+<sc-for list="{{ b.fields }}" as="f">
+<sc-if value="{{ f.isLine }}"><label class="ob-label">{{ f.label }}<input class="ob-input" value="{{ f.value }}" onChange="{{ f.onChange }}" dir="auto"></label></sc-if>
+<sc-if value="{{ f.isUrl }}"><label class="ob-label">{{ f.label }}<input class="ob-input" type="url" value="{{ f.value }}" onChange="{{ f.onChange }}" placeholder="https://…" style="direction:ltr;text-align:right"></label></sc-if>
+<sc-if value="{{ f.isArea }}"><label class="ob-label">{{ f.label }}<textarea class="ob-input" value="{{ f.value }}" onChange="{{ f.onChange }}" dir="auto"></textarea></label></sc-if>
+<sc-if value="{{ f.isInt }}"><label class="ob-label" style="max-width:260px">{{ f.label }}<input class="ob-input" type="number" min="0" max="99" value="{{ f.value }}" onChange="{{ f.onChange }}"></label></sc-if>
+<sc-if value="{{ f.isSelect }}"><label class="ob-label" style="max-width:300px">{{ f.label }}<select class="ob-input" value="{{ f.value }}" onChange="{{ f.onChange }}"><sc-for list="{{ f.opts }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select></label></sc-if>
+<sc-if value="{{ f.isBool }}"><label class="ob-check"><input type="checkbox" checked="{{ f.checked }}" onChange="{{ f.onChange }}">{{ f.label }}</label></sc-if>
+<sc-if value="{{ f.hint }}"><p class="ob-muted" style="margin-top:-4px">{{ f.hint }}</p></sc-if>
+</sc-for>
+<sc-if value="{{ b.hasList }}">
+<div class="ob-kicker" style="margin-top:4px">{{ b.listLabel }}</div>
+<sc-for list="{{ b.items }}" as="it">
+<div class="ob-soft ob-stack" style="gap:8px">
+<div class="ob-between"><span class="ob-muted" style="font-weight:600">#{{ it.n }}</span><span class="ob-row" style="gap:4px"><button type="button" class="ob-btn ob-btn-sm" onClick="{{ it.up }}" disabled="{{ it.noUp }}" aria-label="למעלה">▲</button><button type="button" class="ob-btn ob-btn-sm" onClick="{{ it.down }}" disabled="{{ it.noDown }}" aria-label="למטה">▼</button><button type="button" class="ob-btn ob-btn-sm ob-btn-danger" onClick="{{ it.remove }}" aria-label="הסרה">✕</button></span></div>
+<sc-for list="{{ it.fields }}" as="f">
+<sc-if value="{{ f.isLine }}"><label class="ob-label">{{ f.label }}<input class="ob-input" value="{{ f.value }}" onChange="{{ f.onChange }}" dir="auto"></label></sc-if>
+<sc-if value="{{ f.isArea }}"><label class="ob-label">{{ f.label }}<textarea class="ob-input" style="min-height:60px" value="{{ f.value }}" onChange="{{ f.onChange }}" dir="auto"></textarea></label></sc-if>
+<sc-if value="{{ f.isSelect }}"><label class="ob-label" style="max-width:260px">{{ f.label }}<select class="ob-input" value="{{ f.value }}" onChange="{{ f.onChange }}"><sc-for list="{{ f.opts }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select></label></sc-if>
+<sc-if value="{{ f.isBool }}"><label class="ob-check"><input type="checkbox" checked="{{ f.checked }}" onChange="{{ f.onChange }}">{{ f.label }}</label></sc-if>
+</sc-for>
+</div>
+</sc-for>
+<div><button type="button" class="ob-btn ob-btn-sm" onClick="{{ b.addItem }}">{{ b.addItemLabel }}</button></div>
+</sc-if>
+</div>
+</sc-if>
+</div>
+</sc-for>
+<div class="ob-card ob-pad" style="border:1.5px dashed var(--color-accent-300)">
+<button type="button" class="ob-btn ob-btn-primary" onClick="{{ ta.editor.toggleAdd }}" aria-expanded="{{ ta.editor.addOpen }}" disabled="{{ ta.editor.archived }}">+ הוספת רכיב</button>
+<sc-if value="{{ ta.editor.addOpen }}">
+<div class="ob-stack ob-anim" style="margin-top:12px">
+<sc-for list="{{ ta.editor.palette }}" as="g">
+<div><div class="ob-kicker">{{ g.label }}</div>
+<div class="ob-palette" style="margin-top:6px"><sc-for list="{{ g.items }}" as="t"><button type="button" class="ob-btn" style="justify-content:flex-start;flex-direction:column;align-items:flex-start;gap:0;min-height:44px;padding:6px 12px" onClick="{{ t.add }}">{{ t.label }}<sc-if value="{{ t.note }}"><span class="ob-muted" style="font-size:11px;font-weight:400">{{ t.note }}</span></sc-if></button></sc-for></div>
+</div>
+</sc-for>
+</div>
+</sc-if>
+</div>
+</div>
+
+<aside class="ob-card ob-pad ob-stack" style="gap:10px;position:sticky;top:64px">
+<h2 class="ob-h3">פרטי המודול</h2>
+<label class="ob-label">כותרת<input class="ob-input" value="{{ ta.editor.title }}" onChange="{{ ta.editor.onTitle }}" dir="auto"></label>
+<label class="ob-label">תיאור<textarea class="ob-input" style="min-height:70px" value="{{ ta.editor.description }}" onChange="{{ ta.editor.onDesc }}" dir="auto"></textarea></label>
+<label class="ob-label">מטרות למידה (שורה לכל מטרה)<textarea class="ob-input" style="min-height:90px" value="{{ ta.editor.objectives }}" onChange="{{ ta.editor.onObj }}" dir="auto"></textarea></label>
+<div class="ob-grid" style="grid-template-columns:auto 1fr;gap:10px;align-items:end">
+<span class="ob-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="{{ ta.editor.iconD }}"/></svg></span>
+<label class="ob-label">אייקון<select class="ob-input" value="{{ ta.editor.icon }}" onChange="{{ ta.editor.onIcon }}"><sc-for list="{{ ta.editor.icons }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select></label>
+</div>
+<label class="ob-label">משך משוער (דקות)<input class="ob-input" type="number" min="0" value="{{ ta.editor.est }}" onChange="{{ ta.editor.onEst }}"></label>
+<label class="ob-label">ציון מעבר בפריטים האוטומטיים (%)<input class="ob-input" type="number" min="0" max="100" value="{{ ta.editor.pass }}" onChange="{{ ta.editor.onPass }}" placeholder="ריק = לא הוגדר"></label>
+<p class="ob-muted">בלי ציון מעבר, הציון מדווח למנהל ולא חוסם. המשימות הפתוחות תמיד נבדקות בנפרד.</p>
+<div class="ob-row" style="gap:6px;margin-top:4px">
+<button type="button" class="ob-btn ob-btn-sm" onClick="{{ ta.editor.duplicate }}">שכפול</button>
+<sc-if value="{{ !ta.editor.archived }}"><button type="button" class="ob-btn ob-btn-sm ob-btn-ghost" onClick="{{ ta.editor.archive }}">העברה לארכיון</button></sc-if>
+</div>
+</aside>
+</div>
+</sc-if>
+</sc-if>
+
+<sc-if value="{{ ta.isResources }}">
+<div class="ob-grid ob-cols-wide" style="margin-top:16px">
+<div class="ob-stack" style="gap:10px">
+<div class="ob-row" style="gap:8px">
+<input class="ob-input" type="search" style="flex:1;min-width:180px" value="{{ ta.resQ }}" onChange="{{ ta.onResQ }}" placeholder="חיפוש לפי שם, שפה, קטגוריה, תגית" aria-label="חיפוש משאבים">
+<select class="ob-input" style="width:auto" value="{{ ta.resStatusF }}" onChange="{{ ta.onResStatusF }}" aria-label="סטטוס"><sc-for list="{{ ta.resStatusOpts }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select>
+</div>
+<p class="ob-muted">מורים רואים רק משאבים בסטטוס "רשמי". בדיקת קישור מבחינה בין קישור שבור לבין מסמך שדורש הרשאת גישה.</p>
+<sc-if value="{{ ta.noRes }}"><div class="ob-card ob-pad ob-muted">אין עדיין משאבים.</div></sc-if>
+<sc-for list="{{ ta.resRows }}" as="r">
+<div class="ob-card ob-pad">
+<div class="ob-between" style="align-items:flex-start">
+<div style="min-width:0;flex:1">
+<div class="ob-row" style="gap:6px"><span class="ob-chip" style="background:{{ r.statusBg }};color:{{ r.statusFg }}">{{ r.statusLabel }}</span><span class="ob-chip" style="background:var(--color-accent-100);color:var(--color-accent-700)">{{ r.kind }}</span><span class="ob-chip" style="background:var(--color-neutral-200);color:var(--color-neutral-700)">{{ r.lang }}</span><span class="ob-chip" style="background:{{ r.linkBg }};color:{{ r.linkFg }}">קישור: {{ r.linkLabel }}</span></div>
+<h3 class="ob-h3" dir="auto" style="margin-top:6px">{{ r.title }}</h3>
+<sc-if value="{{ r.hasUrl }}"><a href="{{ r.url }}" target="_blank" rel="noopener noreferrer" class="ob-muted" style="display:block;direction:ltr;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ r.url }}</a></sc-if>
+<sc-if value="{{ r.checked }}"><span class="ob-muted" style="font-size:11.5px">{{ r.checked }}</span></sc-if>
+</div>
+<div class="ob-row" style="gap:6px">
+<select class="ob-input" style="width:auto;min-height:30px;font-size:12.5px" value="{{ r.status }}" onChange="{{ r.onStatus }}" aria-label="סטטוס המשאב"><sc-for list="{{ r.statusOpts }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select>
+<button type="button" class="ob-btn ob-btn-sm" onClick="{{ r.check }}" disabled="{{ !r.hasUrl }}">בדיקת קישור</button>
+<button type="button" class="ob-btn ob-btn-sm" onClick="{{ r.edit }}">עריכה</button>
+</div>
+</div>
+</div>
+</sc-for>
+</div>
+<form class="ob-card ob-pad ob-stack" style="gap:9px;align-self:start" key="{{ ta.resForm.key }}" onSubmit="{{ ta.resSave }}">
+<h2 class="ob-h3">{{ ta.resForm.heading }}</h2>
+<label class="ob-label">שם<input name="title" class="ob-input" required defaultValue="{{ ta.resForm.v.title }}" dir="auto"></label>
+<label class="ob-label">קישור<input name="url" type="url" class="ob-input" defaultValue="{{ ta.resForm.v.url }}" placeholder="https://…" style="direction:ltr;text-align:right"></label>
+<label class="ob-label">תיאור<textarea name="description" class="ob-input" style="min-height:60px" defaultValue="{{ ta.resForm.v.description }}" dir="auto"></textarea></label>
+<div class="ob-grid" style="grid-template-columns:1fr 1fr;gap:9px">
+<label class="ob-label">סוג<select name="kind" class="ob-input" defaultValue="{{ ta.resForm.v.kind }}"><sc-for list="{{ ta.resForm.kinds }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select></label>
+<label class="ob-label">סטטוס<select name="status" class="ob-input" defaultValue="{{ ta.resForm.v.status }}"><sc-for list="{{ ta.resForm.statuses }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select></label>
+<label class="ob-label">שפה (ריק = כללי)<input name="language" class="ob-input" defaultValue="{{ ta.resForm.v.language }}"></label>
+<label class="ob-label">רמה<input name="level" class="ob-input" defaultValue="{{ ta.resForm.v.level }}"></label>
+<label class="ob-label">קטגוריה<input name="category" class="ob-input" defaultValue="{{ ta.resForm.v.category }}"></label>
+<label class="ob-label">תוכנית לימודים<input name="program" class="ob-input" defaultValue="{{ ta.resForm.v.program }}"></label>
+</div>
+<label class="ob-label">תגיות (מופרדות בפסיק)<input name="tags" class="ob-input" defaultValue="{{ ta.resForm.tags }}"></label>
+<fieldset style="border:1px solid var(--color-neutral-200);border-radius:10px;padding:8px 10px;max-height:150px;overflow:auto"><legend class="ob-muted" style="padding:0 4px">מודולים קשורים</legend>
+<sc-for list="{{ ta.resForm.mods }}" as="m"><label class="ob-check" style="font-size:12.5px;margin:3px 0"><input type="checkbox" name="moduleIds" value="{{ m.value }}" defaultChecked="{{ m.checked }}"><span dir="auto">{{ m.label }}</span></label></sc-for>
+</fieldset>
+<div class="ob-row"><button type="submit" class="ob-btn ob-btn-primary">{{ ta.resForm.submit }}</button><sc-if value="{{ ta.resForm.editing }}"><button type="button" class="ob-btn ob-btn-ghost" onClick="{{ ta.resForm.cancel }}">ביטול</button></sc-if></div>
+</form>
+</div>
+</sc-if>
+
+<sc-if value="{{ ta.isUpdates }}">
+<div class="ob-grid ob-cols-wide" style="margin-top:16px">
+<div class="ob-stack" style="gap:10px">
+<sc-if value="{{ ta.noAnn }}"><div class="ob-card ob-pad ob-muted">עוד לא פורסמו עדכונים.</div></sc-if>
+<sc-for list="{{ ta.ann }}" as="a">
+<div class="ob-card ob-pad" style="opacity:{{ a.opacity }}">
+<div class="ob-between"><span class="ob-row" style="gap:6px"><span class="ob-chip" style="background:var(--color-accent-100);color:var(--color-accent-700)">{{ a.kind }}</span><span class="ob-muted">{{ a.meta }}</span><sc-if value="{{ a.archived }}"><span class="ob-muted">· הוסר</span></sc-if></span><sc-if value="{{ !a.archived }}"><button type="button" class="ob-btn ob-btn-sm ob-btn-ghost" onClick="{{ a.archive }}">הסרה</button></sc-if></div>
+<h3 class="ob-h3" dir="auto" style="margin-top:6px">{{ a.title }}</h3>
+<sc-for list="{{ a.paras }}" as="p"><p class="ob-muted" dir="auto" style="margin-top:4px">{{ p.text }}<sc-for list="{{ p.items }}" as="li"> · {{ li }}</sc-for></p></sc-for>
+</div>
+</sc-for>
+</div>
+<form class="ob-card ob-pad ob-stack" style="gap:9px;align-self:start" onSubmit="{{ ta.annPost }}">
+<h2 class="ob-h3">עדכון חדש ל-What's New</h2>
+<label class="ob-label">כותרת<input name="title" class="ob-input" required dir="auto"></label>
+<label class="ob-label">סוג<select name="kind" class="ob-input"><option value="update">עדכון מקצועי</option><option value="policy">עדכון נוהל</option><option value="tool">כלי חדש</option><option value="module">מודול חדש</option></select></label>
+<label class="ob-label">תוכן<textarea name="body" class="ob-input" dir="auto"></textarea></label>
+<button type="submit" class="ob-btn ob-btn-primary">פרסום</button>
+<p class="ob-muted">העדכון מופיע בפורטל ובהתראות בלבד. אין שליחה חיצונית (מייל/וואטסאפ) עד שתוגדר תשתית מאושרת.</p>
+</form>
+</div>
+</sc-if>
+
+<sc-if value="{{ ta.isAudit }}">
+<div class="ob-card ob-pad" style="margin-top:16px">
+<h2 class="ob-h3">יומן פעולות ניהול</h2>
+<p class="ob-muted" style="margin-top:3px">כל פעולה משמעותית נרשמת כאן, ולא ניתנת לעריכה או למחיקה.</p>
+<sc-if value="{{ ta.noAudit }}"><p class="ob-muted" style="margin-top:8px">היומן ריק.</p></sc-if>
+<div class="ob-list" style="margin-top:8px">
+<sc-for list="{{ ta.audit }}" as="x"><div class="ob-between" style="flex-wrap:nowrap;align-items:flex-start"><div style="min-width:0"><b style="font:600 13.5px 'Source Serif 4',Georgia,serif">{{ x.action }}</b><sc-if value="{{ x.subject }}"><span class="ob-muted"> · {{ x.subject }}</span></sc-if><div class="ob-muted" dir="auto">{{ x.detail }}</div></div><span class="ob-muted" style="white-space:nowrap">{{ x.when }} · {{ x.actor }}</span></div></sc-for>
+</div>
+</div>
+</sc-if>
+</sc-if>
+</section>
+</sc-if>
+
 <sc-if value="{{ isGuides }}">
 <section data-screen-label="חומר הדרכה" style="animation:rise .25s ease both">
 <h1 style="font-size:30px;line-height:1.1">חומר הדרכה למורים</h1>
@@ -3039,6 +4140,1364 @@ class Component extends DCLogic {
     });
   }
 
+  /* ─── New School | Teacher Onboarding · server-backed ─────────────────────
+     Three screens on the same shell: ההכשרה שלי (a teacher's path and the
+     module player), מרכז משאבים (the hub and search, for teachers and the
+     pedagogical team) and ניהול הכשרת מורים (paths, the module editor,
+     review, readiness, follow-up). Everything is read from and written to
+     /api/staff/training/*, which checks the role on every call — the screens
+     below decide what to draw, never what anyone may do. */
+
+  TR_MANAGERS = ['אדמין', 'מנהל פדגוגי'];
+  canManageTraining() { const s = this.session(); return !!s && this.TR_MANAGERS.indexOf(s.role) > -1; }
+  canUseHub() { const s = this.session(); return !!s && (s.role === 'מורה' || this.canManageTraining()); }
+
+  /* Labels for every content block type, in the order the "add" palette shows
+     them. Field kinds mirror functions/_training.js, which enforces them. */
+  TR_BLOCKS = {
+    heading: { label: 'כותרת', group: 'content', fields: [{ k: 'text', label: 'כותרת', kind: 'line' }] },
+    text: { label: 'טקסט', group: 'content', fields: [{ k: 'body', label: 'טקסט', kind: 'area', hint: 'שורה ריקה מפרידה בין פסקאות. שורה שמתחילה ב-"- " היא תבליט.' }] },
+    image: { label: 'תמונה', group: 'content', fields: [{ k: 'url', label: 'קישור לתמונה', kind: 'url' }, { k: 'alt', label: 'תיאור לקוראי מסך', kind: 'line' }, { k: 'caption', label: 'כיתוב', kind: 'line' }] },
+    video: { label: 'סרטון', group: 'content', fields: [{ k: 'url', label: 'קישור (YouTube · Vimeo · Google Drive)', kind: 'url' }, { k: 'caption', label: 'כיתוב', kind: 'line' }] },
+    link: { label: 'קישור חיצוני', group: 'content', fields: [{ k: 'label', label: 'שם הקישור', kind: 'line' }, { k: 'url', label: 'כתובת', kind: 'url' }, { k: 'note', label: 'הסבר קצר', kind: 'area' }] },
+    file: { label: 'קובץ', group: 'content', fields: [{ k: 'label', label: 'שם הקובץ', kind: 'line' }, { k: 'url', label: 'קישור לקובץ (דרייב)', kind: 'url', hint: 'אין עדיין אחסון קבצים בפורטל — מקשרים לקובץ בגוגל דרייב.' }, { k: 'note', label: 'הסבר קצר', kind: 'area' }] },
+    callout: { label: 'כרטיס מידע', group: 'content', fields: [{ k: 'tone', label: 'סוג', kind: 'select', opts: [['info', 'מידע'], ['tip', 'טיפ'], ['warning', 'שימו לב'], ['pending', 'ממתין לתוכן רשמי']] }, { k: 'title', label: 'כותרת', kind: 'line' }, { k: 'body', label: 'תוכן', kind: 'area' }] },
+    accordion: { label: 'אקורדיון', group: 'content', fields: [], list: { k: 'items', label: 'פריטים', item: 'פריט', fields: [{ k: 'title', label: 'כותרת', kind: 'line' }, { k: 'body', label: 'תוכן', kind: 'area' }] } },
+    steps: { label: 'שלבים / תרשים', group: 'content', fields: [{ k: 'title', label: 'כותרת', kind: 'line' }, { k: 'layout', label: 'תצוגה', kind: 'select', opts: [['linear', 'שלבים ברצף'], ['cycle', 'מחזור (תרשים מעגלי)']] }, { k: 'note', label: 'הסבר', kind: 'area' }], list: { k: 'items', label: 'שלבים', item: 'שלב', fields: [{ k: 'title', label: 'שם השלב', kind: 'line' }, { k: 'body', label: 'מה קורה בשלב', kind: 'area' }] } },
+    embed: { label: 'הטמעת תוכן מאושר', group: 'content', fields: [{ k: 'title', label: 'כותרת', kind: 'line' }, { k: 'url', label: 'קישור (Google Docs/Slides/Drive · YouTube · Vimeo · Quizlet)', kind: 'url' }] },
+    checklist: { label: 'צ\'קליסט', group: 'activity', fields: [{ k: 'title', label: 'כותרת', kind: 'line' }, { k: 'required', label: 'חובה', kind: 'bool' }], list: { k: 'items', label: 'סעיפים', item: 'סעיף', fields: [{ k: 'text', label: 'סעיף', kind: 'line' }] } },
+    mcq: { label: 'שאלת רב-ברירה', group: 'activity', auto: true, fields: [{ k: 'question', label: 'שאלה', kind: 'area' }, { k: 'multi', label: 'אפשר לבחור יותר מתשובה אחת', kind: 'bool' }, { k: 'maxAttempts', label: 'מספר ניסיונות (0 = ללא הגבלה)', kind: 'int' }, { k: 'explain', label: 'הסבר שמוצג אחרי מענה', kind: 'area' }, { k: 'required', label: 'חובה', kind: 'bool' }], list: { k: 'options', label: 'תשובות', item: 'תשובה', fields: [{ k: 'text', label: 'תשובה', kind: 'line' }, { k: 'correct', label: 'נכונה', kind: 'bool' }, { k: 'explain', label: 'הסבר לתשובה', kind: 'line' }] } },
+    match: { label: 'שאלת התאמה', group: 'activity', auto: true, fields: [{ k: 'prompt', label: 'הנחיה', kind: 'area' }, { k: 'maxAttempts', label: 'מספר ניסיונות (0 = ללא הגבלה)', kind: 'int' }, { k: 'required', label: 'חובה', kind: 'bool' }], list: { k: 'pairs', label: 'זוגות', item: 'זוג', fields: [{ k: 'left', label: 'צד ימין', kind: 'line' }, { k: 'right', label: 'ההתאמה הנכונה', kind: 'line' }] } },
+    order: { label: 'שאלת סדר', group: 'activity', auto: true, fields: [{ k: 'prompt', label: 'הנחיה', kind: 'area' }, { k: 'maxAttempts', label: 'מספר ניסיונות (0 = ללא הגבלה)', kind: 'int' }, { k: 'required', label: 'חובה', kind: 'bool' }], list: { k: 'items', label: 'פריטים — בסדר הנכון', item: 'פריט', fields: [{ k: 'text', label: 'פריט', kind: 'line' }] } },
+    scenario: { label: 'תרחיש', group: 'activity', fields: [{ k: 'situation', label: 'המצב', kind: 'area' }, { k: 'considerations', label: 'השיקולים הפדגוגיים (מוצג אחרי הבחירה)', kind: 'area' }, { k: 'required', label: 'חובה', kind: 'bool' }], list: { k: 'options', label: 'אפשרויות תגובה', item: 'תגובה', fields: [{ k: 'text', label: 'תגובה', kind: 'line' }, { k: 'quality', label: 'הערכה', kind: 'select', opts: [['recommended', 'מומלצת'], ['acceptable', 'סבירה'], ['problematic', 'בעייתית']] }, { k: 'feedback', label: 'משוב מקצועי', kind: 'area' }] } },
+    open: { label: 'תשובה פתוחה', group: 'activity', human: true, fields: [{ k: 'prompt', label: 'השאלה', kind: 'area' }, { k: 'review', label: 'נבדק על ידי המנהל', kind: 'bool' }, { k: 'required', label: 'חובה', kind: 'bool' }] },
+    lesson_plan: { label: 'משימת תכנון שיעור', group: 'activity', human: true, fields: [{ k: 'prompt', label: 'הנחיה', kind: 'area' }, { k: 'review', label: 'נבדק על ידי המנהל', kind: 'bool' }, { k: 'required', label: 'חובה', kind: 'bool' }] },
+    reflection: { label: 'שאלת רפלקציה', group: 'activity', human: true, fields: [{ k: 'prompt', label: 'השאלה', kind: 'area' }, { k: 'review', label: 'נבדק על ידי המנהל', kind: 'bool' }, { k: 'required', label: 'חובה', kind: 'bool' }] },
+    upload: { label: 'הגשת קובץ', group: 'activity', human: true, fields: [{ k: 'prompt', label: 'הנחיה', kind: 'area' }, { k: 'review', label: 'נבדק על ידי המנהל', kind: 'bool' }, { k: 'required', label: 'חובה', kind: 'bool' }] }
+  };
+
+  TR_PLAN = [
+    { k: 'goal', label: 'מטרת השיעור', hint: 'מה התלמידים יוכלו לעשות בסוף השיעור' },
+    { k: 'skills', label: 'מיומנויות מרכזיות', hint: 'אילו מיומנויות שפה השיעור מפעיל' },
+    { k: 'stages', label: 'שלבי השיעור והפעילויות', hint: 'פתיחה · פעילות מרכזית · סיכום' },
+    { k: 'materials', label: 'חומרים וקישורים', hint: 'מחברת, דף עבודה, Quizlet…' },
+    { k: 'timing', label: 'חלוקת זמנים', hint: '' },
+    { k: 'backup', label: 'פעילות חלופית', hint: 'מה עושים אם משהו לא עובד' }
+  ];
+
+  TR_STATUS = {
+    not_started: ['טרם התחיל', 'var(--color-neutral-200)', 'var(--color-neutral-700)'],
+    in_progress: ['בתהליך', 'var(--color-accent-100)', 'var(--color-accent-700)'],
+    completed: ['הושלם', 'var(--color-positive-tint)', 'var(--color-positive-ink)'],
+    pending_review: ['ממתין לבדיקה', 'var(--color-warning-tint)', 'var(--color-warning-ink)'],
+    needs_revision: ['נדרש תיקון', 'var(--color-critical-tint)', 'var(--color-critical)'],
+    locked: ['נעול', 'var(--color-neutral-200)', 'var(--color-neutral-600)'],
+    unavailable: ['טרם פורסם', 'var(--color-neutral-200)', 'var(--color-neutral-600)']
+  };
+  TR_READY = {
+    ready: ['מוכן/ה להוראה', 'var(--color-positive-tint)', 'var(--color-positive-ink)'],
+    conditional: ['מוכן/ה בכפוף להשלמות', 'var(--color-warning-tint)', 'var(--color-warning-ink)'],
+    more_training: ['נדרשת הכשרה נוספת', 'var(--color-critical-tint)', 'var(--color-critical)'],
+    completed: ['ההכשרה אושרה כהושלמה', 'var(--color-positive-tint)', 'var(--color-positive-ink)']
+  };
+  TR_SUB = {
+    submitted: ['הוגש · ממתין לבדיקה', 'var(--color-warning-tint)', 'var(--color-warning-ink)'],
+    needs_revision: ['נדרש תיקון', 'var(--color-critical-tint)', 'var(--color-critical)'],
+    approved: ['אושר', 'var(--color-positive-tint)', 'var(--color-positive-ink)']
+  };
+  TR_RES_KINDS = [['notebook', 'מחברת'], ['syllabus', 'סילבוס'], ['lesson_plan', 'מערך שיעור'], ['guide', 'מדריך'], ['video', 'סרטון'], ['enrichment', 'העשרה'], ['policy', 'נוהל'], ['link', 'קישור שימושי'], ['faq', 'שאלות נפוצות'], ['template', 'תבנית']];
+  TR_RES_STATUS = [['official', 'רשמי'], ['draft', 'טיוטה'], ['review', 'דורש בדיקה'], ['archived', 'ארכיון']];
+  TR_LINK = { unchecked: ['לא נבדק', 'var(--color-neutral-200)', 'var(--color-neutral-700)'], ok: ['תקין', 'var(--color-positive-tint)', 'var(--color-positive-ink)'], restricted: ['דורש הרשאה', 'var(--color-warning-tint)', 'var(--color-warning-ink)'], broken: ['שבור', 'var(--color-critical-tint)', 'var(--color-critical)'], error: ['לא נבדק — שגיאה', 'var(--color-critical-tint)', 'var(--color-critical)'] };
+
+  /* One stroke-icon set for modules, so a path reads as a sequence of
+     recognisable stops rather than a list of titles. */
+  TR_ICONS = {
+    welcome: 'M4 11 12 4l8 7v9H4zM10 20v-6h4v6',
+    philosophy: 'M12 3a6 6 0 0 0-3.5 10.9V17h7v-3.1A6 6 0 0 0 12 3zM9.5 20h5',
+    program: 'M6 4h12v16H6zM9 8h6M9 12h6M9 16h3',
+    cycle: 'M20 12a8 8 0 1 1-2.3-5.6M20 4v4h-4',
+    notebook: 'M6 4h13v16H6zM6 8H3.5M6 12H3.5M6 16H3.5',
+    teach: 'M3 5h18v11H3zM8 20l4-4 4 4',
+    tools: 'M14.5 6.5a3.5 3.5 0 0 0 4.8 4.8L21 13l-8 8-3.2-1.7 6-6-1.3-1.3-6 6L7 16l8-8z',
+    classroom: 'M8 8a2.6 2.6 0 1 0 0-.01M16 8a2.6 2.6 0 1 0 0-.01M3 18c0-2.6 2.2-4.2 5-4.2s5 1.6 5 4.2M13.5 18c0-2.6 1.6-4.2 4-4.2s3.5 1.6 3.5 4.2',
+    policy: 'M12 3l8 3v6c0 4.5-3.4 7.7-8 9-4.6-1.3-8-4.5-8-9V6zM9 12l2 2 4-4',
+    hub: 'M4 5h6v6H4zM14 5h6v6h-6zM4 15h6v4H4zM14 15h6v4h-6z',
+    checklist: 'M4.5 4.5h15v15h-15zM8.5 12.5l2.2 2.2 4.8-5',
+    assessment: 'M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z',
+    book: 'M4 5c3-1.5 5.5-1.5 8 0v14c-2.5-1.5-5-1.5-8 0zM20 5c-3-1.5-5.5-1.5-8 0v14c2.5-1.5 5-1.5 8 0z',
+    video: 'M3 6h13v12H3zM16 10l5-3v10l-5-3',
+    star: 'M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z'
+  };
+  TR_ICON_LABELS = [['welcome', 'ברוכים הבאים'], ['philosophy', 'גישה פדגוגית'], ['program', 'תוכנית'], ['cycle', 'מחזורים'], ['notebook', 'מחברות'], ['teach', 'הוראה'], ['tools', 'כלים'], ['classroom', 'כיתה'], ['policy', 'נהלים'], ['hub', 'משאבים'], ['checklist', 'צ\'קליסט'], ['assessment', 'הערכה'], ['book', 'ספר'], ['video', 'סרטון'], ['star', 'כוכב']];
+
+  trApi(path, opts) { return this.api('/api/staff/training' + path, opts); }
+
+  trDate(ts) {
+    if (!ts) return '—';
+    try { return new Date(ts).toLocaleDateString('he-IL', { day: 'numeric', month: 'numeric', year: '2-digit' }); } catch (e) { return '—'; }
+  }
+  trIsoHe(iso) {
+    if (!iso) return '—';
+    const p = String(iso).split('-');
+    return p.length === 3 ? Number(p[2]) + '.' + Number(p[1]) + '.' + p[0].slice(2) : iso;
+  }
+  trAgo(ts) {
+    if (!ts) return 'עוד לא';
+    const d = Math.floor((Date.now() - ts) / 86400000);
+    return d <= 0 ? 'היום' : d === 1 ? 'אתמול' : 'לפני ' + d + ' ימים';
+  }
+  trChip(map, key) {
+    const v = map[key] || map.not_started || ['—', 'var(--color-neutral-200)', 'var(--color-neutral-700)'];
+    return { label: v[0], bg: v[1], fg: v[2] };
+  }
+  /* Paragraphs and "- " bullets, the one formatting the editor promises. No
+     HTML is ever interpreted — text in, text out. */
+  trParas(body) {
+    const out = [];
+    for (const chunk of String(body || '').split(/\n\s*\n/)) {
+      const lines = chunk.split('\n').map(x => x.trim()).filter(Boolean);
+      if (!lines.length) continue;
+      let para = [];
+      let list = null;
+      const flush = () => { if (para.length) { out.push({ isList: false, text: para.join(' '), items: [] }); para = []; } };
+      for (const ln of lines) {
+        if (/^[-•]\s+/.test(ln)) { flush(); if (!list) { list = { isList: true, text: '', items: [] }; out.push(list); } list.items.push(ln.replace(/^[-•]\s+/, '')); }
+        else { list = null; para.push(ln); }
+      }
+      flush();
+    }
+    return out;
+  }
+  /* Only hosts we know how to frame, rewritten to their embed form. Anything
+     else is shown as a plain link instead of an iframe. */
+  trEmbed(url) {
+    let u;
+    try { u = new URL(url); } catch (e) { return ''; }
+    if (u.protocol !== 'https:') return '';
+    const h = u.hostname.replace(/^www\./, '');
+    if (h === 'youtube.com' || h === 'm.youtube.com') {
+      const v = u.searchParams.get('v') || (u.pathname.match(/\/(embed|shorts)\/([\w-]+)/) || [])[2];
+      return v ? 'https://www.youtube-nocookie.com/embed/' + v : '';
+    }
+    if (h === 'youtu.be') return 'https://www.youtube-nocookie.com/embed/' + u.pathname.slice(1);
+    if (h === 'vimeo.com') { const id = (u.pathname.match(/\/(\d+)/) || [])[1]; return id ? 'https://player.vimeo.com/video/' + id : ''; }
+    if (h === 'player.vimeo.com') return u.toString();
+    if (h === 'drive.google.com') { const id = (u.pathname.match(/\/file\/d\/([\w-]+)/) || [])[1]; return id ? 'https://drive.google.com/file/d/' + id + '/preview' : ''; }
+    if (h === 'docs.google.com') {
+      const m = u.pathname.match(/^\/(document|presentation|spreadsheets)\/d\/([\w-]+)/);
+      return m ? 'https://docs.google.com/' + m[1] + '/d/' + m[2] + (m[1] === 'presentation' ? '/embed' : '/preview') : '';
+    }
+    if (h === 'quizlet.com') { const id = (u.pathname.match(/\/(\d+)/) || [])[1]; return id ? 'https://quizlet.com/' + id + '/flashcards/embed' : ''; }
+    return '';
+  }
+  trHost(url) { try { return new URL(url).hostname.replace(/^www\./, ''); } catch (e) { return ''; } }
+  trLs(key, val) {
+    try {
+      if (val === undefined) { const x = localStorage.getItem(key); return x ? JSON.parse(x) : null; }
+      if (val === null) localStorage.removeItem(key); else localStorage.setItem(key, JSON.stringify(val));
+    } catch (e) { }
+    return null;
+  }
+
+  /* ── teacher: my training ── */
+
+  loadTrainingMe() {
+    return this.trApi('/me').then(r => {
+      if (r.ok) {
+        const next = { trMe: r };
+        if (!this.state.trSel || !r.assignments.some(a => a.id === this.state.trSel)) next.trSel = r.assignments.length ? r.assignments[0].id : null;
+        this.setState(next);
+      } else if (r.status !== 403) {
+        this.setState({ trMeError: r.error || 'לא הצלחנו לטעון את ההכשרה' });
+      }
+      return r;
+    });
+  }
+  goTraining = (e) => {
+    if (e && e.preventDefault) e.preventDefault();
+    this.setState({ view: 'training', selected: null, trMod: null });
+    this.loadTrainingMe();
+  };
+  trAssignment() {
+    const me = this.state.trMe;
+    if (!me) return null;
+    return me.assignments.find(a => a.id === this.state.trSel) || me.assignments[0] || null;
+  }
+  trOpenModule(assignmentId, moduleId) {
+    this.setState({ view: 'training', trSel: assignmentId, trMod: { assignmentId, moduleId, data: null, busy: true }, trStep: {} });
+    this.trApi('/me/modules/' + moduleId + '?assignment=' + encodeURIComponent(assignmentId)).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא הצלחנו לפתוח את המודול'); this.setState({ trMod: null }); return; }
+      this.setState({ trMod: { assignmentId, moduleId, data: r.module, busy: false } });
+      try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) { }
+    });
+  }
+  trCloseModule = () => { this.setState({ trMod: null }); this.loadTrainingMe(); };
+  trDraft(id) { return (this.state.trDraft || {})[id]; }
+  trSetDraft(id, val) {
+    this.setState({ trDraft: Object.assign({}, this.state.trDraft || {}, { [id]: val }) });
+    const m = this.state.trMod;
+    /* Long answers survive a refresh or a dropped connection: kept in this
+       browser until the server accepts them. */
+    if (m && val && typeof val === 'object' && (val.text !== undefined || val.fields || val.url !== undefined)) {
+      this.trLs('ns.trAns.' + m.assignmentId + '.' + id, val);
+    }
+  }
+  trPost(path, body, okMsg) {
+    const m = this.state.trMod;
+    if (!m || m.preview) return Promise.resolve(null);
+    this.setState({ trBusy: true });
+    return this.trApi(path, { method: 'POST', body: Object.assign({ assignmentId: m.assignmentId, moduleId: m.moduleId }, body) }).then(r => {
+      this.setState({ trBusy: false });
+      if (!r.ok) { this.flash(r.error || 'השמירה נכשלה — התשובה שלך עדיין במסך'); return null; }
+      this.setState({ trMod: Object.assign({}, this.state.trMod, { data: r.module }) });
+      if (okMsg) this.flash(okMsg);
+      return r;
+    });
+  }
+  trMarkViewed = () => this.trPost('/me/progress', { action: 'viewed' }, 'סומן: עברת על החומר');
+  trAnswer(blockId, answer) {
+    return this.trPost('/me/progress', { action: 'answer', blockId, answer }).then(r => {
+      if (r) { const d = Object.assign({}, this.state.trDraft || {}); delete d[blockId]; this.setState({ trDraft: d }); }
+    });
+  }
+  trSubmit(blockId, body) {
+    const m = this.state.trMod;
+    return this.trPost('/me/submit', { blockId, body }, 'נשלח — תודה!').then(r => {
+      if (r && m) { this.trLs('ns.trAns.' + m.assignmentId + '.' + blockId, null); const d = Object.assign({}, this.state.trDraft || {}); delete d[blockId]; this.setState({ trDraft: d }); }
+    });
+  }
+  trSaveReflection(id) {
+    const text = (this.state.trFu || {})[id];
+    if (text === undefined) return;
+    this.trApi('/me/followups/' + id, { method: 'PATCH', body: { reflection: text } }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'השמירה נכשלה'); return; }
+      this.flash('הרפלקציה נשמרה');
+      this.loadTrainingMe();
+    });
+  }
+  trReadAll = () => {
+    this.trApi('/notifications/read', { method: 'POST', body: {} }).then(() => this.loadTrainingMe());
+  };
+
+  /* ── the resource hub and search ── */
+
+  goHub = (e) => {
+    if (e && e.preventDefault) e.preventDefault();
+    this.setState({ view: 'hub', selected: null });
+    this.loadHub();
+  };
+  loadHub() {
+    return this.trApi('/resources').then(r => {
+      if (r.ok) this.setState({ hubRes: r.resources });
+      else this.flash(r.error || 'לא הצלחנו לטעון את מרכז המשאבים');
+    });
+  }
+  hubToggleFav(id) {
+    const res = (this.state.hubRes || []).find(x => x.id === id);
+    if (!res) return;
+    const fav = !res.favorite;
+    this.setState({ hubRes: this.state.hubRes.map(x => x.id === id ? Object.assign({}, x, { favorite: fav }) : x) });
+    this.trApi('/resources/' + id + '/favorite', { method: 'POST', body: { favorite: fav } }).then(r => {
+      if (!r.ok) {
+        this.setState({ hubRes: this.state.hubRes.map(x => x.id === id ? Object.assign({}, x, { favorite: !fav }) : x) });
+        this.flash(r.error || 'לא נשמר');
+      }
+    });
+  }
+  onSearch = (e) => {
+    const q = e.target.value;
+    this.setState({ srchQ: q });
+    clearTimeout(this._srchT);
+    if (q.trim().length < 2) { this.setState({ srchRes: null }); return; }
+    this._srchT = setTimeout(() => {
+      this.trApi('/search?q=' + encodeURIComponent(q.trim())).then(r => {
+        if (r.ok && this.state.srchQ === q) this.setState({ srchRes: r.results });
+      });
+    }, 300);
+  };
+  srchOpen(hit) {
+    if (hit.type === 'resource') { if (hit.url) window.open(hit.url, '_blank', 'noopener'); return; }
+    if (this.canManageTraining()) { this.taOpenEditor(hit.id); return; }
+    if (hit.assignmentId) this.trOpenModule(hit.assignmentId, hit.id);
+  }
+
+  /* ── management ── */
+
+  goTrainAdmin = (e) => {
+    if (e && e.preventDefault) e.preventDefault();
+    if (!this.taLeaveEditor()) return;
+    this.setState({ view: 'trainAdmin', selected: null, taLearner: null, taEdit: null, trMod: null });
+    this.taLoad(this.state.taTab || 'overview');
+  };
+  taTab(tab) {
+    return () => {
+      if (!this.taLeaveEditor()) return;
+      this.setState({ taTab: tab, taLearner: null, taEdit: null, trMod: null });
+      this.taLoad(tab);
+    };
+  }
+  taLoad(tab) {
+    const done = (key) => (r) => { if (r.ok) this.setState({ [key]: r }); else this.flash(r.error || 'הטעינה נכשלה'); return r; };
+    if (tab === 'overview' || tab === 'teachers') {
+      this.trApi('/admin/overview').then(done('taOver'));
+      this.trApi('/admin/teachers').then(done('taTeachers'));
+      this.trApi('/paths').then(done('taPaths'));
+    }
+    if (tab === 'paths') { this.trApi('/paths').then(done('taPaths')); this.trApi('/modules').then(done('taModules')); }
+    if (tab === 'modules') { this.trApi('/modules').then(done('taModules')); this.trApi('/admin/overview').then(done('taOver')); }
+    if (tab === 'resources') { this.trApi('/resources').then(done('taRes')); this.trApi('/modules').then(done('taModules')); }
+    if (tab === 'updates') this.trApi('/announcements').then(done('taAnn'));
+    if (tab === 'audit') this.trApi('/audit').then(done('taAudit'));
+  }
+  taSeed = () => {
+    if (!confirm('ליצור את תבנית ההכשרה הראשונית?\n12 מודולים כטיוטות, מסלול תבנית ו-8 משאבי דוגמה כטיוטות. שום דבר לא יגיע למורים לפני שתפרסם ותשייך.')) return;
+    this.trApi('/admin/template', { method: 'POST', body: {} }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'היצירה נכשלה'); return; }
+      this.flash('נוצרו ' + r.modules + ' מודולים ו-' + r.resources + ' משאבים — כטיוטות');
+      this.taLoad(this.state.taTab || 'overview');
+    });
+  };
+
+  /* learners */
+  taOpenLearner(userId) {
+    if (!this.taLeaveEditor()) return;
+    this.setState({ view: 'trainAdmin', taLearner: { userId, data: null }, taEdit: null, trMod: null });
+    this.taReloadLearner(userId);
+    if (!this.state.taPaths) this.trApi('/paths').then(r => r.ok && this.setState({ taPaths: r }));
+  }
+  taReloadLearner(userId) {
+    return this.trApi('/admin/learners/' + userId).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא הצלחנו לטעון את המורה'); return; }
+      this.setState({ taLearner: { userId, data: r }, taProf: { language: r.profile.language, position: r.profile.position, startDate: r.profile.startDate } });
+    });
+  }
+  taAssign = (e) => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    if (!d.userId || !d.pathId) { this.flash('צריך לבחור מורה ומסלול'); return; }
+    const form = e.target;
+    this.trApi('/assignments', { method: 'POST', body: { userId: d.userId, pathId: d.pathId, dueDate: d.dueDate } }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'השיוך נכשל'); return; }
+      form.reset();
+      this.flash('המסלול שויך והמורה קיבל/ה הודעה');
+      if (this.state.taLearner) this.taReloadLearner(this.state.taLearner.userId);
+      this.taLoad('overview');
+    });
+  };
+  taSaveProfile = () => {
+    const L = this.state.taLearner;
+    if (!L) return;
+    this.trApi('/admin/learners/' + L.userId + '/profile', { method: 'PUT', body: this.state.taProf || {} }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'השמירה נכשלה'); return; }
+      this.flash('פרטי המורה נשמרו');
+      this.taReloadLearner(L.userId);
+    });
+  };
+  taReview(subId, decision) {
+    const feedback = (this.state.taFb || {})[subId] || '';
+    this.trApi('/submissions/' + subId + '/review', { method: 'POST', body: { decision, feedback } }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא נשמר'); return; }
+      this.flash(decision === 'approve' ? 'המשימה אושרה' : 'נשלחה בקשת תיקון');
+      const fb = Object.assign({}, this.state.taFb || {}); delete fb[subId];
+      this.setState({ taFb: fb });
+      if (this.state.taLearner) this.taReloadLearner(this.state.taLearner.userId);
+      this.trApi('/admin/overview').then(o => o.ok && this.setState({ taOver: o }));
+    });
+  }
+  taReadiness(assignmentId) {
+    const d = (this.state.taRd || {})[assignmentId] || {};
+    if (!d.decision) { this.flash('צריך לבחור החלטה'); return; }
+    if (!confirm('לתעד את ההחלטה "' + this.TR_READY[d.decision][0] + '"? ההחלטה נשמרת ביומן ונשלחת למורה.')) return;
+    this.trApi('/assignments/' + assignmentId + '/readiness', { method: 'POST', body: d }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא נשמר'); return; }
+      this.flash('ההחלטה תועדה');
+      const rd = Object.assign({}, this.state.taRd || {}); delete rd[assignmentId];
+      this.setState({ taRd: rd });
+      this.taReloadLearner(this.state.taLearner.userId);
+    });
+  }
+  taSetRd(assignmentId, k, v) {
+    const rd = Object.assign({}, this.state.taRd || {});
+    rd[assignmentId] = Object.assign({}, rd[assignmentId] || {}, { [k]: v });
+    this.setState({ taRd: rd });
+  }
+  taAssignment(assignmentId, body, msg) {
+    this.trApi('/assignments/' + assignmentId, { method: 'PATCH', body }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא נשמר'); return; }
+      this.flash(msg);
+      this.taReloadLearner(this.state.taLearner.userId);
+    });
+  }
+  taReset(assignmentId, moduleId) {
+    if (!confirm('לאפס את התשובות האוטומטיות במודול הזה? ההגשות והאישורים נשמרים.')) return;
+    this.trApi('/assignments/' + assignmentId + '/reset', { method: 'POST', body: { moduleId } }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'האיפוס נכשל'); return; }
+      this.flash('התשובות אופסו — המורה יכול/ה לענות שוב');
+      this.taReloadLearner(this.state.taLearner.userId);
+    });
+  }
+  taOpenFollowups(assignmentId) {
+    const start = window.prompt('תאריך תחילת ההוראה (YYYY-MM-DD):', new Date().toISOString().slice(0, 10));
+    if (start === null) return;
+    this.trApi('/assignments/' + assignmentId + '/followups', { method: 'POST', body: { teachingStart: start } }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא נפתח'); return; }
+      this.flash('נפתח מסלול ליווי ל-30 יום');
+      this.taReloadLearner(this.state.taLearner.userId);
+    });
+  }
+  taSetFu(id, k, v) {
+    const fu = Object.assign({}, this.state.taFu || {});
+    fu[id] = Object.assign({}, fu[id] || {}, { [k]: v });
+    this.setState({ taFu: fu });
+  }
+  taSaveFu(id, extra) {
+    const body = Object.assign({}, (this.state.taFu || {})[id] || {}, extra || {});
+    this.trApi('/followups/' + id, { method: 'PATCH', body }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא נשמר'); return; }
+      const fu = Object.assign({}, this.state.taFu || {}); delete fu[id];
+      this.setState({ taFu: fu });
+      this.flash('נקודת המעקב נשמרה');
+      this.taReloadLearner(this.state.taLearner.userId);
+    });
+  }
+
+  /* paths */
+  taNewPath = (e) => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target).entries());
+    const form = e.target;
+    this.trApi('/paths', { method: 'POST', body: d }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא נוצר'); return; }
+      form.reset();
+      this.flash('המסלול נוצר — עכשיו מוסיפים לו מודולים');
+      this.setState({ taPathSel: r.path.id, taPathDraft: null });
+      this.taLoad('paths');
+    });
+  };
+  taPathDraft() {
+    if (this.state.taPathDraft && this.state.taPathDraft.id === this.state.taPathSel) return this.state.taPathDraft;
+    const p = ((this.state.taPaths || {}).paths || []).find(x => x.id === this.state.taPathSel);
+    return p ? JSON.parse(JSON.stringify(p)) : null;
+  }
+  taEditPath(fn) {
+    const d = this.taPathDraft();
+    if (!d) return;
+    fn(d);
+    this.setState({ taPathDraft: d });
+  }
+  taSavePath = () => {
+    const d = this.taPathDraft();
+    if (!d) return;
+    this.trApi('/paths/' + d.id, {
+      method: 'PATCH', body: {
+        title: d.title, description: d.description, kind: d.kind, language: d.language, audience: d.audience, status: d.status,
+        modules: d.modules.map(m => ({ moduleId: m.moduleId, required: m.required, prereq: m.prereq }))
+      }
+    }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'השמירה נכשלה'); return; }
+      this.setState({ taPathDraft: null });
+      this.flash('המסלול נשמר');
+      this.taLoad('paths');
+    });
+  };
+
+  /* the module editor */
+  taNewModule = () => {
+    const title = window.prompt('שם המודול החדש:');
+    if (!title || !title.trim()) return;
+    this.trApi('/modules', { method: 'POST', body: { title: title.trim(), blocks: [] } }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא נוצר'); return; }
+      this.taOpenEditor(r.module.id);
+    });
+  };
+  taOpenEditor(id) {
+    if (!this.taLeaveEditor()) return;
+    this.setState({ view: 'trainAdmin', taTab: 'modules', taLearner: null, trMod: null, taEdit: { id, m: null, dirty: false, saving: false, versions: null, open: {} } });
+    this.trApi('/modules/' + id).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא נטען'); this.setState({ taEdit: null }); return; }
+      /* An edit that never reached the server (closed tab, lost connection)
+         is offered back if it was made on this same version. */
+      const backup = this.trLs('ns.trEdit.' + id);
+      const newer = backup && backup.rev < r.module.rev;
+      const ask = !backup || !backup.m || JSON.stringify(backup.m) === JSON.stringify(r.module) ? false
+        : newer
+          ? confirm('נמצאו שינויים שלך במודול הזה שלא נשמרו (מ-' + this.trDate(backup.at) + '), אבל ' + r.module.updatedBy + ' שמר/ה גרסה חדשה יותר בינתיים.\n\nלהחיל את השינויים שלך מעל הגרסה החדשה? הגרסה שלהם נשמרת בהיסטוריית הגרסאות ואפשר לשחזר אותה.')
+          : confirm('נמצאו שינויים במודול הזה שלא נשמרו (מ-' + this.trDate(backup.at) + '). לשחזר אותם?');
+      if (ask) {
+        /* Taking the server's rev makes the next save land on top of the newer
+           version deliberately, rather than bouncing off it again. */
+        this.setState({ taEdit: { id, m: Object.assign({}, backup.m, { rev: r.module.rev }), dirty: true, saving: false, versions: null, open: {} } });
+      } else {
+        this.trLs('ns.trEdit.' + id, null);
+        this.setState({ taEdit: { id, m: r.module, dirty: false, saving: false, versions: null, open: {} } });
+      }
+    });
+  }
+  taLeaveEditor() {
+    const e = this.state.taEdit;
+    if (e && e.dirty) return confirm('יש שינויים שלא נשמרו במודול. לצאת בלי לשמור? (עותק נשאר בדפדפן הזה ויוצע לשחזור)');
+    return true;
+  }
+  taCloseEditor = () => {
+    if (!this.taLeaveEditor()) return;
+    this.setState({ taEdit: null, trMod: null });
+    this.taLoad('modules');
+  };
+  taMutate(fn) {
+    const e = this.state.taEdit;
+    if (!e || !e.m) return;
+    const m = JSON.parse(JSON.stringify(e.m));
+    fn(m);
+    this.setState({ taEdit: Object.assign({}, e, { m, dirty: true }) });
+    this.trLs('ns.trEdit.' + e.id, { rev: m.rev, m, at: Date.now() });
+  }
+  taAddBlock(type) {
+    const def = this.TR_BLOCKS[type];
+    const b = { id: 'n' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), type };
+    for (const f of def.fields) b[f.k] = f.kind === 'bool' ? (f.k === 'required' || (f.k === 'review' && type !== 'reflection')) : f.kind === 'int' ? 0 : f.kind === 'select' ? f.opts[0][0] : '';
+    if (def.list) b[def.list.k] = [{ id: 'i' + Date.now().toString(36) }, { id: 'j' + Date.now().toString(36) }].map(x => { def.list.fields.forEach(f => { x[f.k] = f.kind === 'bool' ? false : f.kind === 'select' ? f.opts[0][0] : ''; }); return x; });
+    this.taMutate(m => { m.blocks.push(b); });
+    const e = this.state.taEdit;
+    this.setState({ taAddOpen: false, taEdit: Object.assign({}, this.state.taEdit, { open: Object.assign({}, (e && e.open) || {}, { [b.id]: true }) }) });
+  }
+  taSaveModule = (andPublish) => {
+    const e = this.state.taEdit;
+    if (!e || !e.m || e.saving) return Promise.resolve();
+    const m = e.m;
+    this.setState({ taEdit: Object.assign({}, e, { saving: true }) });
+    return this.trApi('/modules/' + e.id, {
+      method: 'PATCH', body: {
+        rev: m.rev, title: m.title, description: m.description, objectives: m.objectives,
+        icon: m.icon, estMinutes: m.estMinutes, passScore: m.passScore, blocks: m.blocks
+      }
+    }).then(r => {
+      const cur = this.state.taEdit;
+      if (!r.ok) {
+        this.setState({ taEdit: Object.assign({}, cur, { saving: false }) });
+        if (r.conflict) {
+          alert(r.error + '\n\nהעותק שלך שמור בדפדפן. כדי לא לדרוס את העבודה של אחרים: פתחו את המודול מחדש — המערכת תציע לשחזר את השינויים שלכם על הגרסה החדשה.');
+        } else this.flash(r.error || 'השמירה נכשלה — השינויים עדיין במסך');
+        return null;
+      }
+      this.trLs('ns.trEdit.' + e.id, null);
+      this.setState({ taEdit: Object.assign({}, cur, { m: r.module, dirty: false, saving: false, versions: null }) });
+      if (!andPublish) this.flash('הטיוטה נשמרה · גרסה ' + r.module.rev);
+      return r;
+    });
+  };
+  taPublish = () => {
+    const e = this.state.taEdit;
+    if (!e || !e.m) return;
+    if (!confirm('לפרסם את "' + e.m.title + '"?\nהמורים שהמודול במסלול שלהם יראו את הגרסה הזו ויקבלו הודעה.')) return;
+    const go = () => this.trApi('/modules/' + e.id + '/publish', { method: 'POST', body: { rev: this.state.taEdit.m.rev } }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'הפרסום נכשל'); return; }
+      this.setState({ taEdit: Object.assign({}, this.state.taEdit, { m: r.module, versions: null }) });
+      this.flash('המודול פורסם');
+    });
+    if (e.dirty) this.taSaveModule(true).then(r => { if (r) go(); }); else go();
+  };
+  taArchive(id, archived) {
+    if (archived && !confirm('להעביר לארכיון? המודול ייעלם מהמסלולים של המורים, וההתקדמות שלהם נשמרת.')) return;
+    this.trApi('/modules/' + id + '/archive', { method: 'POST', body: { archived } }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא בוצע'); return; }
+      this.flash(archived ? 'המודול הועבר לארכיון' : 'המודול הוחזר מהארכיון');
+      if (this.state.taEdit) this.setState({ taEdit: Object.assign({}, this.state.taEdit, { m: r.module }) });
+      this.taLoad('modules');
+    });
+  }
+  taDuplicate(id) {
+    this.trApi('/modules/' + id + '/duplicate', { method: 'POST', body: {} }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'השכפול נכשל'); return; }
+      this.flash('נוצר עותק כטיוטה');
+      this.taLoad('modules');
+    });
+  }
+  taVersions = () => {
+    const e = this.state.taEdit;
+    if (!e) return;
+    if (e.versions) { this.setState({ taEdit: Object.assign({}, e, { versions: null }) }); return; }
+    this.trApi('/modules/' + e.id + '/versions').then(r => {
+      if (r.ok) this.setState({ taEdit: Object.assign({}, this.state.taEdit, { versions: r.versions }) });
+    });
+  };
+  taRestore(versionId, rev) {
+    const e = this.state.taEdit;
+    if (e.dirty && !confirm('יש שינויים שלא נשמרו — הם יוחלפו. להמשיך?')) return;
+    if (!confirm('לשחזר את גרסה ' + rev + ' כטיוטה? הגרסה הנוכחית נשמרת בהיסטוריה.')) return;
+    this.trApi('/modules/' + e.id + '/restore', { method: 'POST', body: { versionId } }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'השחזור נכשל'); return; }
+      this.trLs('ns.trEdit.' + e.id, null);
+      this.setState({ taEdit: Object.assign({}, this.state.taEdit, { m: r.module, dirty: false, versions: null }) });
+      this.flash('גרסה ' + rev + ' שוחזרה כטיוטה');
+    });
+  }
+  /* The preview is the real teacher player fed with the draft — saved first,
+     so what is previewed is exactly what would be published. */
+  taPreview = () => {
+    const e = this.state.taEdit;
+    if (!e) return;
+    const show = () => this.trApi('/modules/' + e.id + '/preview').then(r => {
+      if (!r.ok) { this.flash(r.error || 'התצוגה המקדימה נכשלה'); return; }
+      this.setState({ trMod: { assignmentId: '', moduleId: e.id, data: r.module, busy: false, preview: true }, trStep: {} });
+      try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (x) { }
+    });
+    if (e.dirty) this.taSaveModule(true).then(r => { if (r) show(); }); else show();
+  };
+
+  /* resources */
+  taResSave = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const d = Object.fromEntries(new FormData(form).entries());
+    d.tags = String(d.tags || '').split(',').map(x => x.trim()).filter(Boolean);
+    d.moduleIds = new FormData(form).getAll('moduleIds');
+    const id = this.state.taResEdit;
+    this.trApi(id ? '/resources/' + id : '/resources', { method: id ? 'PATCH' : 'POST', body: d }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא נשמר'); return; }
+      form.reset();
+      this.setState({ taResEdit: null });
+      this.flash(id ? 'המשאב עודכן' : 'המשאב נוסף');
+      this.taLoad('resources');
+    });
+  };
+  taResStatus(id, status) {
+    this.trApi('/resources/' + id, { method: 'PATCH', body: { status } }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא נשמר'); return; }
+      this.taLoad('resources');
+    });
+  }
+  taResCheck(id) {
+    this.flash('בודק את הקישור…');
+    this.trApi('/resources/' + id + '/check', { method: 'POST', body: {} }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'הבדיקה נכשלה'); return; }
+      this.flash('תוצאת הבדיקה: ' + this.TR_LINK[r.linkStatus][0]);
+      this.taLoad('resources');
+    });
+  }
+  taAnnPost = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const d = Object.fromEntries(new FormData(form).entries());
+    if (!confirm('לפרסם את העדכון לכל המורים? הוא יופיע ב-What\'s New ובהתראות שבפורטל.')) return;
+    this.trApi('/announcements', { method: 'POST', body: d }).then(r => {
+      if (!r.ok) { this.flash(r.error || 'לא פורסם'); return; }
+      form.reset();
+      this.flash('העדכון פורסם');
+      this.taLoad('updates');
+    });
+  };
+  taAnnArchive(id) {
+    this.trApi('/announcements/' + id, { method: 'PATCH', body: { status: 'archived' } }).then(r => {
+      if (r.ok) { this.flash('העדכון הוסר מ-What\'s New'); this.taLoad('updates'); }
+    });
+  }
+
+  /* Leaving the page with an unsaved module edit asks first. The edit is
+     also kept in this browser, so even a forced close can be recovered. */
+  trBeforeUnload = (e) => {
+    if (this.state.taEdit && this.state.taEdit.dirty) { e.preventDefault(); e.returnValue = ''; }
+  };
+  TR_VIEWS = ['training', 'hub'];
+
+  /* Everything the onboarding templates read, in one place, so renderVals
+     only spreads it in. */
+  trainingVals(view) {
+    const s = this.state;
+    const sess = this.session();
+    const me = s.trMe;
+    const isMgr = this.canManageTraining();
+    const opt = (pairs, cur) => pairs.map(([value, label]) => ({ value, label, sel: value === cur }));
+    const iconD = (k) => this.TR_ICONS[k] || this.TR_ICONS.book;
+
+    /* ── the player (teacher, and the manager's preview) ── */
+    const mod = s.trMod;
+    const md = mod && mod.data;
+    const preview = !!(mod && mod.preview);
+    const busy = !!s.trBusy;
+    const playerBlocks = !md ? [] : md.blocks.map((entry, idx) => {
+      const b = entry.block, pr = entry.progress, sub = entry.submission;
+      const def = this.TR_BLOCKS[b.type] || { label: b.type };
+      const done = !!(pr && pr.state === 'done');
+      const draft = this.trDraft(b.id);
+      const flags = {};
+      Object.keys(this.TR_BLOCKS).forEach(t => { flags['is_' + t] = b.type === t; });
+      const vm = Object.assign({ id: b.id, type: b.type, typeLabel: def.label, n: idx + 1, isActivity: def.group === 'activity', required: b.required !== false, optional: def.group === 'activity' && b.required === false }, flags);
+
+      if (b.type === 'heading') vm.text = b.text;
+      if (b.type === 'text') vm.paras = this.trParas(b.body);
+      if (b.type === 'image') Object.assign(vm, { url: b.url, alt: b.alt || b.caption || '', caption: b.caption, hasUrl: !!b.url });
+      if (b.type === 'video' || b.type === 'embed') {
+        const em = b.url ? this.trEmbed(b.url) : '';
+        Object.assign(vm, { url: b.url, embed: em, hasEmbed: !!em, linkOnly: !!b.url && !em, missing: !b.url, caption: b.caption || b.title || '', title: b.title || b.caption || def.label });
+      }
+      if (b.type === 'link' || b.type === 'file') Object.assign(vm, { url: b.url, label: b.label || b.url || def.label, note: b.note, hasNote: !!b.note, hasUrl: !!b.url, host: this.trHost(b.url), missing: !b.url });
+      if (b.type === 'callout') {
+        const tone = { info: ['var(--color-accent-100)', 'var(--color-accent-700)', 'מידע'], tip: ['var(--color-positive-tint)', 'var(--color-positive-ink)', 'טיפ'], warning: ['var(--color-warning-tint)', 'var(--color-warning-ink)', 'שימו לב'], pending: ['var(--color-neutral-100)', 'var(--color-neutral-700)', 'ממתין לתוכן רשמי'] }[b.tone] || ['var(--color-accent-100)', 'var(--color-accent-700)', 'מידע'];
+        Object.assign(vm, { title: b.title, paras: this.trParas(b.body), toneBg: tone[0], toneFg: tone[1], toneLabel: tone[2], isPending: b.tone === 'pending' });
+      }
+      if (b.type === 'accordion') {
+        const open = s.trAcc || {};
+        vm.items = (b.items || []).map(it => ({
+          id: it.id, title: it.title, paras: this.trParas(it.body), open: !!open[b.id + it.id],
+          sign: open[b.id + it.id] ? '−' : '+',
+          toggle: () => this.setState({ trAcc: Object.assign({}, open, { [b.id + it.id]: !open[b.id + it.id] }) })
+        }));
+      }
+      if (b.type === 'steps') {
+        const items = b.items || [];
+        const cur = Math.min((s.trStep || {})[b.id] || 0, Math.max(0, items.length - 1));
+        const go = (i) => () => this.setState({ trStep: Object.assign({}, s.trStep || {}, { [b.id]: i }) });
+        const n = items.length;
+        Object.assign(vm, {
+          title: b.title, note: b.note, isCycle: b.layout === 'cycle', isLinear: b.layout !== 'cycle',
+          items: items.map((it, i) => {
+            /* Around a circle for the cycle layout, starting at twelve o'clock
+               and running clockwise — in RTL the eye reads it the same way. */
+            const ang = (i / Math.max(1, n)) * Math.PI * 2 - Math.PI / 2;
+            return {
+              n: i + 1, title: it.title, active: i === cur, select: go(i),
+              bg: i === cur ? 'var(--color-accent)' : i < cur ? 'var(--color-accent-100)' : 'var(--color-paper)',
+              fg: i === cur ? '#fff' : 'var(--color-text)',
+              x: (50 + 38 * Math.cos(ang)).toFixed(2) + '%', y: (50 + 38 * Math.sin(ang)).toFixed(2) + '%'
+            };
+          }),
+          cur: items[cur] ? { n: cur + 1, title: items[cur].title, paras: this.trParas(items[cur].body) } : null,
+          counter: (cur + 1) + ' מתוך ' + n,
+          prev: go(Math.max(0, cur - 1)), next: go(Math.min(n - 1, cur + 1)),
+          noPrev: cur === 0, noNext: cur >= n - 1
+        });
+      }
+      if (b.type === 'checklist') {
+        const checked = (draft && draft.checked) || (pr && pr.answer && pr.answer.checked) || [];
+        Object.assign(vm, {
+          title: b.title, done,
+          count: checked.length + ' / ' + (b.items || []).length,
+          items: (b.items || []).map(it => ({
+            id: it.id, text: it.text, checked: checked.indexOf(it.id) > -1, disabled: preview || busy,
+            toggle: () => {
+              const next = checked.indexOf(it.id) > -1 ? checked.filter(x => x !== it.id) : checked.concat(it.id);
+              this.trSetDraft(b.id, { checked: next });
+              this.trAnswer(b.id, { checked: next });
+            }
+          }))
+        });
+      }
+      if (b.type === 'mcq') {
+        const selected = (draft && draft.selected) || (pr && pr.answer && pr.answer.selected) || [];
+        const answered = !!pr;
+        Object.assign(vm, {
+          question: b.question, multi: b.multi, done, hint: b.multi ? 'אפשר לבחור יותר מתשובה אחת' : 'בחרו תשובה אחת',
+          options: (b.options || []).map(o => {
+            const isSel = selected.indexOf(o.id) > -1;
+            const reveal = done && o.correct !== undefined;
+            const right = reveal && o.correct, wrong = reveal && isSel && !o.correct;
+            return {
+              id: o.id, text: o.text, selected: isSel, disabled: done || preview || busy,
+              pressed: isSel ? 'true' : 'false',
+              mark: right ? '✓' : wrong ? '✕' : isSel ? '●' : '',
+              bg: right ? 'var(--color-positive-tint)' : wrong ? 'var(--color-critical-tint)' : isSel ? 'var(--color-accent-100)' : 'var(--color-paper)',
+              border: right ? 'var(--color-positive)' : wrong ? 'var(--color-critical-mid)' : isSel ? 'var(--color-accent)' : 'var(--color-neutral-300)',
+              explain: reveal && o.explain && (isSel || o.correct) ? o.explain : '',
+              pick: () => {
+                if (done) return;
+                const next = b.multi ? (isSel ? selected.filter(x => x !== o.id) : selected.concat(o.id)) : [o.id];
+                this.trSetDraft(b.id, { selected: next });
+              }
+            };
+          }),
+          canCheck: !done && !preview && selected.length > 0 && !busy,
+          check: () => this.trAnswer(b.id, { selected }),
+          result: !answered ? '' : done ? (pr.correct === false ? 'הניסיונות הסתיימו. התשובה הנכונה מסומנת.' : pr.correct ? 'נכון!' : 'נרשם.') : 'לא מדויק — אפשר לנסות שוב.',
+          resultFg: !answered ? '' : pr.correct ? 'var(--color-positive-ink)' : done ? 'var(--color-neutral-700)' : 'var(--color-critical)',
+          attempts: b.maxAttempts ? 'ניסיונות: ' + ((pr && pr.attempts) || 0) + ' מתוך ' + b.maxAttempts : '',
+          explainAll: done ? b.explain : ''
+        });
+      }
+      if (b.type === 'match') {
+        const map = (draft && draft.map) || (pr && pr.answer && pr.answer.map) || {};
+        const key = {};
+        (b.key || []).forEach(k => { key[k.id] = k.right; });
+        Object.assign(vm, {
+          prompt: b.prompt, done,
+          rows: (b.lefts || []).map(l => {
+            const v = map[l.id] || '';
+            const reveal = done && b.key;
+            return {
+              id: l.id, left: l.text, value: v, disabled: done || preview || busy,
+              opts: [{ value: '', label: 'בחרו…' }].concat((b.rights || []).map(x => ({ value: x, label: x }))),
+              onChange: (e) => this.trSetDraft(b.id, { map: Object.assign({}, map, { [l.id]: e.target.value }) }),
+              mark: reveal ? (key[l.id] === v ? '✓' : '✕ ' + key[l.id]) : '',
+              markFg: reveal ? (key[l.id] === v ? 'var(--color-positive-ink)' : 'var(--color-critical)') : ''
+            };
+          }),
+          canCheck: !done && !preview && !busy && (b.lefts || []).every(l => map[l.id]),
+          check: () => this.trAnswer(b.id, { map }),
+          result: !pr ? '' : pr.correct ? 'כל ההתאמות נכונות!' : done ? 'הניסיונות הסתיימו — ההתאמות הנכונות מסומנות.' : 'יש התאמות שגויות — נסו שוב.',
+          resultFg: pr && pr.correct ? 'var(--color-positive-ink)' : 'var(--color-critical)',
+          attempts: b.maxAttempts ? 'ניסיונות: ' + ((pr && pr.attempts) || 0) + ' מתוך ' + b.maxAttempts : ''
+        });
+      }
+      if (b.type === 'order') {
+        const base = (b.items || []).map(x => x.id);
+        let order = (draft && draft.order) || (pr && pr.answer && pr.answer.order && !done ? pr.answer.order : null) || (done && b.key ? b.key : base);
+        const byId = {};
+        (b.items || []).forEach(x => { byId[x.id] = x.text; });
+        const move = (i, d) => () => {
+          const o = order.slice();
+          const j = i + d;
+          if (j < 0 || j >= o.length) return;
+          [o[i], o[j]] = [o[j], o[i]];
+          this.trSetDraft(b.id, { order: o });
+        };
+        Object.assign(vm, {
+          prompt: b.prompt, done,
+          items: order.map((id, i) => ({ id, n: i + 1, text: byId[id] || '', up: move(i, -1), down: move(i, 1), noUp: i === 0 || done || preview, noDown: i === order.length - 1 || done || preview })),
+          canCheck: !done && !preview && !busy,
+          check: () => this.trAnswer(b.id, { order }),
+          result: !pr ? '' : pr.correct ? 'הסדר נכון!' : done ? 'הניסיונות הסתיימו — מוצג הסדר הנכון.' : 'הסדר עדיין לא נכון — נסו שוב.',
+          resultFg: pr && pr.correct ? 'var(--color-positive-ink)' : 'var(--color-critical)',
+          attempts: b.maxAttempts ? 'ניסיונות: ' + ((pr && pr.attempts) || 0) + ' מתוך ' + b.maxAttempts : ''
+        });
+      }
+      if (b.type === 'scenario') {
+        const chosen = pr && pr.answer ? pr.answer.choice : null;
+        const Q = { recommended: ['דרך מומלצת', 'var(--color-positive-tint)', 'var(--color-positive-ink)'], acceptable: ['דרך סבירה', 'var(--color-accent-100)', 'var(--color-accent-700)'], problematic: ['דרך בעייתית', 'var(--color-critical-tint)', 'var(--color-critical)'] };
+        Object.assign(vm, {
+          situation: b.situation, done, answered: done,
+          options: (b.options || []).map(o => {
+            const q = Q[o.quality];
+            return {
+              id: o.id, text: o.text, chosen: o.id === chosen, disabled: done || preview || busy,
+              pressed: o.id === chosen ? 'true' : 'false',
+              hasQ: done && !!q, qLabel: q ? q[0] : '', qBg: q ? q[1] : '', qFg: q ? q[2] : '',
+              feedback: done ? o.feedback : '',
+              border: o.id === chosen ? 'var(--color-accent)' : 'var(--color-neutral-300)',
+              choose: () => { if (!done && !preview) this.trAnswer(b.id, { choice: o.id }); }
+            };
+          }),
+          considerations: done ? b.considerations : '', hasConsiderations: done && !!b.considerations
+        });
+      }
+      if (def.human) {
+        const st = sub ? this.trChip(this.TR_SUB, sub.status) : null;
+        const editable = !preview && (!sub || sub.status === 'needs_revision');
+        const saved = !preview && mod ? this.trLs('ns.trAns.' + mod.assignmentId + '.' + b.id) : null;
+        const cur = draft || saved || (sub && sub.status === 'needs_revision' ? sub.body : null) || {};
+        Object.assign(vm, {
+          prompt: b.prompt, review: b.review !== false, reviewNote: b.review !== false ? 'נבדק על ידי המנהל הפדגוגי' : 'לא נבדק — ההגשה משלימה את הפעילות',
+          hasSub: !!sub, subLabel: st ? st.label : '', subBg: st ? st.bg : '', subFg: st ? st.fg : '',
+          feedback: sub && sub.feedback ? sub.feedback : '', reviewer: sub && sub.reviewedBy ? sub.reviewedBy + ' · ' + this.trDate(sub.reviewedAt) : '',
+          editable, canSubmit: editable && !busy,
+          submitLabel: sub && sub.status === 'needs_revision' ? 'הגשה מתוקנת' : 'הגשה',
+          text: cur.text || '', onText: (e) => this.trSetDraft(b.id, Object.assign({}, cur, { text: e.target.value })),
+          url: cur.url || '', onUrl: (e) => this.trSetDraft(b.id, Object.assign({}, cur, { url: e.target.value })),
+          note: cur.note || '', onNote: (e) => this.trSetDraft(b.id, Object.assign({}, cur, { note: e.target.value })),
+          plan: this.TR_PLAN.map(f => ({
+            k: f.k, label: f.label, hint: f.hint, value: (cur.fields || {})[f.k] || '', required: f.k === 'goal' || f.k === 'stages',
+            onChange: (e) => this.trSetDraft(b.id, Object.assign({}, cur, { fields: Object.assign({}, cur.fields || {}, { [f.k]: e.target.value }) }))
+          })),
+          submit: () => {
+            const body = b.type === 'lesson_plan' ? { fields: cur.fields || {} } : b.type === 'upload' ? { url: cur.url, note: cur.note } : { text: cur.text };
+            this.trSubmit(b.id, body);
+          },
+          history: (entry.history || []).slice().reverse().map(h => this.trSubView(h, b.type)),
+          hasHistory: (entry.history || []).length > 0
+        });
+      }
+      return vm;
+    });
+
+    const mState = md ? md.state : null;
+    const mChip = mState ? this.trChip(this.TR_STATUS, mState.status) : null;
+    const hasContent = !!md && md.blocks.some(x => !(this.TR_BLOCKS[x.block.type] || {}).group || this.TR_BLOCKS[x.block.type].group === 'content');
+
+    /* ── the teacher's dashboard ── */
+    const A = this.trAssignment();
+    const prof = me ? me.profile : null;
+    const pathMods = !A ? [] : A.modules.map((m, i) => {
+      const status = !m.available ? 'unavailable' : (m.state ? m.state.status : 'not_started');
+      const chip = this.trChip(this.TR_STATUS, status);
+      const canOpen = m.available && !m.locked;
+      const prereq = m.prereq ? (A.modules.find(x => x.moduleId === m.prereq) || {}).title : '';
+      return {
+        n: i + 1, id: m.moduleId, title: m.title, description: m.description, icon: iconD(m.icon),
+        est: m.estMinutes ? m.estMinutes + ' דק\'' : '', hasEst: !!m.estMinutes,
+        activities: m.activities + ' פעילויות', required: m.required, optional: !m.required,
+        statusLabel: chip.label, statusBg: chip.bg, statusFg: chip.fg,
+        percent: m.state ? m.state.percent : 0, width: (m.state ? m.state.percent : 0) + '%',
+        isDone: status === 'completed', canOpen, locked: m.locked, opacity: canOpen ? 1 : 0.72,
+        iconBg: status === 'completed' ? 'var(--color-positive-tint)' : 'var(--color-accent-100)', iconFg: status === 'completed' ? 'var(--color-positive-ink)' : 'var(--color-accent-700)',
+        btnCls: status === 'completed' ? 'ob-btn' : 'ob-btn ob-btn-primary', lockNote: m.locked ? 'ייפתח אחרי: ' + prereq : !m.available ? 'המודול עדיין לא פורסם' : '',
+        dot: status === 'completed' ? 'var(--color-positive)' : status === 'in_progress' || status === 'pending_review' ? 'var(--color-accent)' : status === 'needs_revision' ? 'var(--color-critical)' : 'var(--color-neutral-300)',
+        cta: status === 'not_started' ? 'התחלה' : status === 'completed' ? 'צפייה' : status === 'needs_revision' ? 'לתיקון' : 'המשך',
+        aria: (status === 'not_started' ? 'התחלה' : status === 'completed' ? 'צפייה' : status === 'needs_revision' ? 'לתיקון' : 'המשך') + ': ' + m.title,
+        open: () => canOpen && this.trOpenModule(A.id, m.moduleId)
+      };
+    });
+    const resume = A && (() => {
+      const last = A.lastModuleId && pathMods.find(x => x.id === A.lastModuleId && !x.isDone && x.canOpen);
+      const next = last || pathMods.find(x => x.canOpen && !x.isDone);
+      return next ? { title: next.title, open: next.open, label: last ? 'להמשיך מאיפה שעצרת' : 'להתחיל את המודול הבא' } : null;
+    })();
+    const ring = (pct) => { const c = 2 * Math.PI * 34; return { dash: (c * pct / 100).toFixed(1) + ' ' + c.toFixed(1), pct: pct + '%' }; };
+    const reqMods = A ? A.modules.filter(m => m.required && m.available) : [];
+    const rd = A && A.readiness ? this.trChip(this.TR_READY, A.readiness) : null;
+
+    /* ── hub ── */
+    const allRes = (s.hubRes || []).filter(r => r.status === 'official');
+    const hq = (s.hubQ || '').trim().toLowerCase();
+    let hub = allRes.filter(r =>
+      (!hq || [r.title, r.description, r.category, r.language, r.level, r.program, (r.tags || []).join(' ')].join(' ').toLowerCase().includes(hq)) &&
+      (!s.hubLang || (s.hubLang === '__general' ? !r.language : r.language === s.hubLang)) &&
+      (!s.hubLevel || r.level === s.hubLevel) && (!s.hubKind || r.kind === s.hubKind) &&
+      (!s.hubProg || r.program === s.hubProg) && (!s.hubFav || r.favorite));
+    hub = hub.slice().sort((a, b) => s.hubSort === 'title' ? a.title.localeCompare(b.title, 'he') : (b.updatedAt - a.updatedAt));
+    const kindLabel = (k) => (this.TR_RES_KINDS.find(x => x[0] === k) || [k, k])[1];
+    const uniq = (arr) => Array.from(new Set(arr.filter(Boolean))).sort((a, b) => a.localeCompare(b, 'he'));
+
+    /* ── management ── */
+    const over = s.taOver;
+    const taRows = over ? over.rows : [];
+    const teachers = (s.taTeachers && s.taTeachers.teachers) || [];
+    const paths = (s.taPaths && s.taPaths.paths) || [];
+    const modules = (s.taModules && s.taModules.modules) || [];
+    const tq = (s.taQ || '').trim().toLowerCase();
+    const MS = { draft: ['טיוטה', 'var(--color-neutral-200)', 'var(--color-neutral-700)'], published: ['פורסם', 'var(--color-positive-tint)', 'var(--color-positive-ink)'], archived: ['ארכיון', 'var(--color-neutral-200)', 'var(--color-neutral-500)'] };
+
+    const learnerVM = (() => {
+      const L = s.taLearner;
+      if (!L || !L.data) return null;
+      const d = L.data;
+      return {
+        name: d.profile.name, email: d.profile.email, roleLabel: d.profile.roleLabel, inactive: !d.profile.active,
+        initials: this.initials(d.profile.name),
+        prof: s.taProf || {},
+        onLang: (e) => this.setState({ taProf: Object.assign({}, s.taProf, { language: e.target.value }) }),
+        onPos: (e) => this.setState({ taProf: Object.assign({}, s.taProf, { position: e.target.value }) }),
+        onStart: (e) => this.setState({ taProf: Object.assign({}, s.taProf, { startDate: e.target.value }) }),
+        saveProf: this.taSaveProfile,
+        pathOpts: paths.filter(p => p.status === 'active' && !d.assignments.some(a => a.pathId === p.id && a.status !== 'withdrawn')).map(p => ({ value: p.id, label: p.title + (p.kind === 'continuing' ? ' · הכשרת המשך' : '') })),
+        userId: d.profile.userId,
+        noAssignments: d.assignments.length === 0,
+        assignments: d.assignments.map(a => {
+          const chip = a.readiness ? this.trChip(this.TR_READY, a.readiness) : null;
+          const rdDraft = (s.taRd || {})[a.id] || {};
+          return {
+            id: a.id, title: a.pathTitle, kindLabel: a.pathKind === 'continuing' ? 'הכשרת המשך' : 'אונבורדינג',
+            statusLabel: a.status === 'withdrawn' ? 'בוטל' : a.status === 'completed' ? 'הושלם' : 'פעיל', withdrawn: a.status === 'withdrawn',
+            percent: a.percent + '%', width: a.percent + '%', due: a.dueDate ? 'יעד: ' + this.trIsoHe(a.dueDate) : '',
+            assigned: 'שויך ' + this.trDate(a.assignedAt) + (a.assignedBy ? ' · ' + a.assignedBy : ''),
+            last: 'פעילות אחרונה: ' + this.trAgo(a.lastActivityAt),
+            attention: (a.attention || []).join(' · '), hasAttention: (a.attention || []).length > 0,
+            allDone: a.allRequiredDone, hasReady: !!chip, readyLabel: chip ? chip.label : '', readyBg: chip ? chip.bg : '', readyFg: chip ? chip.fg : '',
+            readyBy: a.readinessBy ? a.readinessBy + ' · ' + this.trDate(a.readinessAt) : '', readyNote: a.readinessNote,
+            rdOpts: (a.pathKind === 'continuing' ? ['completed', 'more_training'] : ['ready', 'conditional', 'more_training']).map(k => ({
+              value: k, label: this.TR_READY[k][0], sel: rdDraft.decision === k, pressed: rdDraft.decision === k ? 'true' : 'false',
+              border: rdDraft.decision === k ? 'var(--color-accent)' : 'var(--color-neutral-300)', bg: rdDraft.decision === k ? 'var(--color-accent-100)' : 'var(--color-paper)',
+              pick: () => this.taSetRd(a.id, 'decision', k)
+            })),
+            rdNote: rdDraft.note || '', onRdNote: (e) => this.taSetRd(a.id, 'note', e.target.value),
+            rdStart: rdDraft.teachingStart || '', onRdStart: (e) => this.taSetRd(a.id, 'teachingStart', e.target.value),
+            isOnboarding: a.pathKind !== 'continuing', rdTitle: a.pathKind !== 'continuing' ? 'אישור מוכנות להוראה' : 'אישור השלמת ההכשרה',
+            saveRd: () => this.taReadiness(a.id),
+            withdraw: () => confirm('לבטל את השיוך של "' + a.pathTitle + '"? ההתקדמות נשמרת ואפשר לשייך מחדש.') && this.taAssignment(a.id, { status: 'withdrawn' }, 'השיוך בוטל'),
+            reactivate: () => this.taAssignment(a.id, { status: 'active' }, 'השיוך הופעל מחדש'),
+            openFu: () => this.taOpenFollowups(a.id), hasFollowups: (a.followups || []).length > 0,
+            followups: (a.followups || []).map(f => {
+              const dr = (s.taFu || {})[f.id] || {};
+              const val = (k, k2) => dr[k] !== undefined ? dr[k] : f[k2 || k];
+              return {
+                id: f.id, label: f.label, due: this.trIsoHe(f.dueDate), done: f.status === 'done',
+                statusLabel: f.status === 'done' ? 'הושלם' : 'פתוח',
+                statusBg: f.status === 'done' ? 'var(--color-positive-tint)' : 'var(--color-neutral-200)', statusFg: f.status === 'done' ? 'var(--color-positive-ink)' : 'var(--color-neutral-700)',
+                reflection: f.reflection || 'המורה עוד לא כתב/ה רפלקציה.',
+                notes: val('managerNotes'), onNotes: (e) => this.taSetFu(f.id, 'managerNotes', e.target.value),
+                meeting: val('meetingAt'), onMeeting: (e) => this.taSetFu(f.id, 'meetingAt', e.target.value),
+                recs: val('recommendations'), onRecs: (e) => this.taSetFu(f.id, 'recommendations', e.target.value),
+                save: () => this.taSaveFu(f.id), toggle: () => this.taSaveFu(f.id, { status: f.status === 'done' ? 'open' : 'done' }),
+                toggleLabel: f.status === 'done' ? 'פתיחה מחדש' : 'סימון כהושלם'
+              };
+            }),
+            modules: a.modules.map(m => {
+              const status = !m.available ? 'unavailable' : m.state ? m.state.status : 'not_started';
+              const chip2 = this.trChip(this.TR_STATUS, status);
+              const st = m.state || {};
+              const det = (a.detail || {})[m.moduleId] || [];
+              const openKey = a.id + m.moduleId;
+              return {
+                id: m.moduleId, title: m.title, required: m.required, statusLabel: chip2.label, statusBg: chip2.bg, statusFg: chip2.fg,
+                icon: iconD(m.icon),
+                facts: [st.viewed ? 'החומר נקרא' : m.available ? 'החומר טרם סומן כנקרא' : '', m.available ? (st.activitiesDone || 0) + '/' + (st.activities || 0) + ' פעילויות' : '',
+                  st.score != null ? 'ציון אוטומטי ' + st.score + '%' + (st.passScore != null ? ' (סף ' + st.passScore + '%)' : ' · לא הוגדר סף') : '',
+                  st.missed ? st.missed + ' פריטים נענו שגוי עד תום הניסיונות' : ''].filter(Boolean).join(' · '),
+                open: !!(s.taOpenMod || {})[openKey], chev: (s.taOpenMod || {})[openKey] ? '▾' : '▸', toggle: () => this.setState({ taOpenMod: Object.assign({}, s.taOpenMod || {}, { [openKey]: !(s.taOpenMod || {})[openKey] }) }),
+                reset: () => this.taReset(a.id, m.moduleId), hasDetail: det.length > 0,
+                items: det.map(x => {
+                  const b = x.block;
+                  const def = this.TR_BLOCKS[b.type] || { label: b.type };
+                  const pr = x.progress;
+                  const last = x.history[x.history.length - 1];
+                  return {
+                    typeLabel: def.label, prompt: b.question || b.prompt || b.situation || b.title || '',
+                    auto: !def.human,
+                    autoLine: def.human ? '' : !pr ? 'טרם נענה' : (b.type === 'scenario' ? 'נבחר: ' + ((b.options.find(o => pr.answer && o.id === pr.answer.choice) || {}).text || '') : b.type === 'checklist' ? (pr.answer && pr.answer.checked ? pr.answer.checked.length : 0) + '/' + b.items.length + ' סומנו' : (pr.correct ? 'נכון' : pr.state === 'done' ? 'שגוי (הניסיונות הסתיימו)' : 'שגוי') + ' · ' + pr.attempts + ' ניסיונות'),
+                    autoFg: pr && pr.correct === false ? 'var(--color-critical)' : pr && pr.correct ? 'var(--color-positive-ink)' : 'var(--color-neutral-700)',
+                    human: !!def.human, noSub: !!def.human && !last,
+                    subs: x.history.slice().reverse().map(h => Object.assign(this.trSubView(h, b.type), {
+                      canReview: h.id === (last && last.id) && h.status === 'submitted',
+                      fb: (s.taFb || {})[h.id] || '',
+                      onFb: (e) => this.setState({ taFb: Object.assign({}, s.taFb || {}, { [h.id]: e.target.value }) }),
+                      approve: () => this.taReview(h.id, 'approve'), revise: () => this.taReview(h.id, 'revise')
+                    }))
+                  };
+                })
+              };
+            })
+          };
+        }),
+        audit: d.audit.map(x => ({ when: this.trDate(x.at), actor: x.actor, action: this.trActionLabel(x.action), detail: x.detail }))
+      };
+    })();
+
+    const E = s.taEdit;
+    const em = E && E.m;
+    const editorVM = em ? (() => {
+      const set = (k) => (e) => this.taMutate(m => { m[k] = e.target.value; });
+      const n = em.blocks.length;
+      const chip = this.trChip(MS, em.status);
+      return {
+        title: em.title, description: em.description, objectives: (em.objectives || []).join('\n'), est: em.estMinutes || '', pass: em.passScore == null ? '' : em.passScore,
+        onTitle: set('title'), onDesc: set('description'),
+        onObj: (e) => this.taMutate(m => { m.objectives = e.target.value.split('\n'); }),
+        onEst: (e) => this.taMutate(m => { m.estMinutes = e.target.value; }),
+        onPass: (e) => this.taMutate(m => { m.passScore = e.target.value === '' ? null : e.target.value; }),
+        icons: this.TR_ICON_LABELS.map(([k, label]) => ({ value: k, label, sel: em.icon === k })),
+        onIcon: set('icon'), icon: em.icon, iconD: iconD(em.icon),
+        statusLabel: chip.label, statusBg: chip.bg, statusFg: chip.fg, archived: em.status === 'archived',
+        rev: 'גרסה ' + em.rev, unpublished: em.everPublished && em.dirty ? 'יש שינויים שלא פורסמו' : !em.everPublished ? 'טרם פורסם' : 'הגרסה המפורסמת עדכנית',
+        dirty: E.dirty, saving: E.saving, saveLabel: E.saving ? 'שומר…' : E.dirty ? 'שמירת טיוטה' : 'נשמר',
+        updated: 'עודכן ' + this.trDate(em.updatedAt) + ' · ' + (em.updatedBy || ''), published: em.publishedAt ? 'פורסם ' + this.trDate(em.publishedAt) : '',
+        save: () => this.taSaveModule(false), publish: this.taPublish, preview: this.taPreview, close: this.taCloseEditor,
+        versionsBtn: this.taVersions, showVersions: !!E.versions,
+        versions: (E.versions || []).map(v => ({ label: 'גרסה ' + v.rev + ' · ' + ({ save: 'שמירה', publish: 'פרסום', restore: 'שחזור' }[v.kind] || v.kind), meta: this.trDate(v.at) + ' · ' + v.by + (v.note ? ' · ' + v.note : ''), isPublish: v.kind === 'publish', color: v.kind === 'publish' ? 'var(--color-positive-ink)' : 'var(--color-text)', restore: () => this.taRestore(v.id, v.rev) })),
+        archive: () => this.taArchive(E.id, true), unarchive: () => this.taArchive(E.id, false), duplicate: () => this.taDuplicate(E.id),
+        empty: n === 0,
+        addOpen: !!s.taAddOpen, toggleAdd: () => this.setState({ taAddOpen: !s.taAddOpen }),
+        palette: ['content', 'activity'].map(g => ({
+          label: g === 'content' ? 'תוכן' : 'פעילויות והערכה',
+          items: Object.keys(this.TR_BLOCKS).filter(t => this.TR_BLOCKS[t].group === g).map(t => ({ label: this.TR_BLOCKS[t].label, add: () => this.taAddBlock(t), note: this.TR_BLOCKS[t].auto ? 'נבדק אוטומטית' : this.TR_BLOCKS[t].human ? 'הגשה' : '' }))
+        })),
+        blocks: em.blocks.map((b, i) => {
+          const def = this.TR_BLOCKS[b.type] || { label: b.type, fields: [] };
+          const open = !!(E.open || {})[b.id];
+          const fieldVM = (obj, f, write) => ({
+            k: f.k, label: f.label, hint: f.hint || '',
+            isLine: f.kind === 'line', isArea: f.kind === 'area', isUrl: f.kind === 'url', isBool: f.kind === 'bool', isInt: f.kind === 'int', isSelect: f.kind === 'select',
+            value: obj[f.k] == null ? '' : obj[f.k], checked: !!obj[f.k],
+            opts: (f.opts || []).map(([value, label]) => ({ value, label })),
+            onChange: (e) => write(f.kind === 'bool' ? e.target.checked : e.target.value)
+          });
+          const summary = b.text || b.title || b.question || b.prompt || b.situation || b.label || (b.body || '').slice(0, 80) || '';
+          return {
+            id: b.id, n: i + 1, typeLabel: def.label, isActivity: def.group === 'activity', summary,
+            chipBg: def.group === 'activity' ? 'var(--color-accent-100)' : 'var(--color-paper)', chipFg: def.group === 'activity' ? 'var(--color-accent-700)' : 'var(--color-neutral-700)',
+            open, toggle: () => this.setState({ taEdit: Object.assign({}, E, { open: Object.assign({}, E.open || {}, { [b.id]: !open }) }) }),
+            chev: open ? '▾' : '▸',
+            up: () => this.taMutate(m => { if (i > 0) [m.blocks[i - 1], m.blocks[i]] = [m.blocks[i], m.blocks[i - 1]]; }),
+            down: () => this.taMutate(m => { if (i < m.blocks.length - 1) [m.blocks[i + 1], m.blocks[i]] = [m.blocks[i], m.blocks[i + 1]]; }),
+            noUp: i === 0, noDown: i === n - 1,
+            remove: () => confirm('למחוק את הרכיב "' + def.label + '"?') && this.taMutate(m => { m.blocks.splice(i, 1); }),
+            fields: def.fields.map(f => fieldVM(b, f, (v) => this.taMutate(m => { m.blocks[i][f.k] = v; }))),
+            hasList: !!def.list, listLabel: def.list ? def.list.label : '', addItemLabel: def.list ? '+ ' + def.list.item : '',
+            addItem: () => this.taMutate(m => { const it = { id: 'i' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5) }; def.list.fields.forEach(f => { it[f.k] = f.kind === 'bool' ? false : f.kind === 'select' ? f.opts[0][0] : ''; }); m.blocks[i][def.list.k] = (m.blocks[i][def.list.k] || []).concat(it); }),
+            items: !def.list ? [] : (b[def.list.k] || []).map((it, j, arr) => ({
+              n: j + 1,
+              fields: def.list.fields.map(f => fieldVM(it, f, (v) => this.taMutate(m => { m.blocks[i][def.list.k][j][f.k] = v; }))),
+              up: () => this.taMutate(m => { const L = m.blocks[i][def.list.k]; if (j > 0) [L[j - 1], L[j]] = [L[j], L[j - 1]]; }),
+              down: () => this.taMutate(m => { const L = m.blocks[i][def.list.k]; if (j < L.length - 1) [L[j + 1], L[j]] = [L[j], L[j + 1]]; }),
+              noUp: j === 0, noDown: j === arr.length - 1,
+              remove: () => this.taMutate(m => { m.blocks[i][def.list.k].splice(j, 1); })
+            }))
+          };
+        })
+      };
+    })() : null;
+
+    const pd = this.taPathDraft();
+    const modTitle = {};
+    modules.forEach(m => { modTitle[m.id] = m; });
+    const pathVM = pd ? {
+      id: pd.id, title: pd.title, description: pd.description, language: pd.language, audience: pd.audience,
+      kinds: opt([['onboarding', 'אונבורדינג'], ['continuing', 'הכשרת המשך']], pd.kind),
+      statuses: opt([['active', 'פעיל'], ['archived', 'ארכיון']], pd.status),
+      kind: pd.kind, status: pd.status,
+      onTitle: (e) => this.taEditPath(d => { d.title = e.target.value; }), onKind: (e) => this.taEditPath(d => { d.kind = e.target.value; }),
+      onLanguage: (e) => this.taEditPath(d => { d.language = e.target.value; }), onAudience: (e) => this.taEditPath(d => { d.audience = e.target.value; }),
+      onDescription: (e) => this.taEditPath(d => { d.description = e.target.value; }), onStatus: (e) => this.taEditPath(d => { d.status = e.target.value; }),
+      dirty: !!(s.taPathDraft && s.taPathDraft.id === pd.id),
+      save: this.taSavePath, discard: () => this.setState({ taPathDraft: null }),
+      empty: pd.modules.length === 0,
+      rows: pd.modules.map((m, i) => {
+        const mm = modTitle[m.moduleId] || {};
+        const chip = this.trChip(MS, mm.status || 'draft');
+        return {
+          n: i + 1, title: mm.title || m.title, statusLabel: chip.label, statusBg: chip.bg, statusFg: chip.fg,
+          required: m.required, onRequired: (e) => this.taEditPath(d => { d.modules[i].required = e.target.checked; }),
+          prereqOpts: [{ value: '', label: 'ללא דרישת קדם' }].concat(pd.modules.filter(x => x.moduleId !== m.moduleId).map(x => ({ value: x.moduleId, label: 'אחרי: ' + ((modTitle[x.moduleId] || {}).title || x.title) }))),
+          prereq: m.prereq || '', onPrereq: (e) => this.taEditPath(d => { d.modules[i].prereq = e.target.value || null; }),
+          up: () => this.taEditPath(d => { if (i > 0) [d.modules[i - 1], d.modules[i]] = [d.modules[i], d.modules[i - 1]]; }),
+          down: () => this.taEditPath(d => { if (i < d.modules.length - 1) [d.modules[i + 1], d.modules[i]] = [d.modules[i], d.modules[i + 1]]; }),
+          noUp: i === 0, noDown: i === pd.modules.length - 1,
+          remove: () => this.taEditPath(d => { d.modules.splice(i, 1); d.modules.forEach(x => { if (x.prereq === m.moduleId) x.prereq = null; }); })
+        };
+      }),
+      addOpts: modules.filter(m => m.status !== 'archived' && !pd.modules.some(x => x.moduleId === m.id)).map(m => ({ value: m.id, label: m.title + (m.status === 'draft' ? ' (טיוטה)' : '') })),
+      onAdd: (e) => { const v = e.target.value; if (v) this.taEditPath(d => { d.modules.push({ moduleId: v, title: (modTitle[v] || {}).title, required: true, prereq: null }); }); }
+    } : null;
+
+    const resAll = (s.taRes && s.taRes.resources) || [];
+    const rq = (s.taResQ || '').trim().toLowerCase();
+    const resEdit = s.taResEdit ? resAll.find(r => r.id === s.taResEdit) : null;
+
+    return {
+      /* nav */
+      canManageTraining: isMgr, canUseHub: this.canUseHub(),
+      trCardLine: A ? A.pathTitle + ' · ' + A.percent + '% הושלמו' + (A.readiness ? ' · ' + this.TR_READY[A.readiness][0] : '') : '',
+      hasTraining: !!(me && me.assignments.length), trUnread: me ? me.unread : 0, hasTrUnread: !!(me && me.unread),
+      navTraining: { color: view === 'training' ? '#ffffff' : '#9b9797', bg: view === 'training' ? '#2d2b2b' : 'transparent' },
+      navHub: { color: view === 'hub' ? '#ffffff' : '#9b9797', bg: view === 'hub' ? '#2d2b2b' : 'transparent' },
+      navTrainAdmin: { color: view === 'trainAdmin' ? '#ffffff' : '#9b9797', bg: view === 'trainAdmin' ? '#2d2b2b' : 'transparent' },
+      goTraining: this.goTraining, goHub: this.goHub, goTrainAdmin: this.goTrainAdmin,
+
+      /* player */
+      showPlayer: !!mod && ((view === 'training' && !preview) || (view === 'trainAdmin' && preview)),
+      playerLoading: !!mod && !md, playerPreview: preview,
+      pl: md ? {
+        title: md.title, description: md.description, objectives: md.objectives || [], hasObjectives: (md.objectives || []).length > 0,
+        icon: iconD(md.icon), est: md.estMinutes ? md.estMinutes + ' דקות' : '', hasEst: !!md.estMinutes,
+        statusLabel: mChip.label, statusBg: mChip.bg, statusFg: mChip.fg,
+        percent: mState.percent + '%', percentNum: mState.percent, width: mState.percent + '%',
+        acts: mState.activitiesDone + ' מתוך ' + mState.activities + ' פעילויות',
+        score: mState.score != null ? 'ציון בפריטים הנבדקים אוטומטית: ' + mState.score + '%' + (mState.passScore != null ? ' (נדרש ' + mState.passScore + '%)' : '') : '',
+        hasScore: mState.score != null,
+        failNote: mState.failedScore ? 'הציון נמוך מהנדרש. פנו למנהל הפדגוגי — הוא יכול לפתוח לכם ניסיון נוסף.' : '',
+        blocks: playerBlocks, empty: playerBlocks.length === 0,
+        showViewed: hasContent, viewed: md.viewed, canMarkViewed: hasContent && !md.viewed && !preview && !busy,
+        markViewed: this.trMarkViewed,
+        back: preview ? () => this.setState({ trMod: null }) : this.trCloseModule,
+        backLabel: preview ? 'חזרה לעורך' : 'חזרה למסלול'
+      } : null,
+
+      /* teacher home */
+      isTraining: view === 'training', isHub: view === 'hub', isTrainAdmin: view === 'trainAdmin',
+      trHome: view === 'training' && !mod,
+      trLoading: view === 'training' && !me,
+      trNone: !!me && me.assignments.length === 0,
+      trHas: !!A,
+      trFirstName: sess ? (sess.name || '').split(' ')[0] : '',
+      trProf: prof ? {
+        name: prof.name, initials: this.initials(prof.name), language: prof.language || 'לא הוגדרה', position: prof.position || sess.label || 'מורה',
+        start: prof.startDate ? this.trIsoHe(prof.startDate) : (A ? this.trDate(A.startedAt || A.assignedAt) : '—')
+      } : null,
+      trTabs: me ? me.assignments.map(a => ({ id: a.id, title: a.pathTitle, kind: a.pathKind === 'continuing' ? 'הכשרת המשך' : 'אונבורדינג', on: A && a.id === A.id, bg: A && a.id === A.id ? 'var(--color-paper)' : 'transparent', pressed: A && a.id === A.id ? 'true' : 'false', pick: () => this.setState({ trSel: a.id }) })) : [],
+      trMulti: !!me && me.assignments.length > 1,
+      trA: A ? {
+        title: A.pathTitle, description: A.pathDescription, isOnboarding: A.pathKind !== 'continuing',
+        percent: A.percent + '%', ring: ring(A.percent),
+        status: A.readiness ? rd.label : A.allRequiredDone ? 'ממתין לאישור המנהל' : A.percent > 0 ? 'בתהליך' : 'טרם התחיל',
+        due: A.dueDate ? this.trIsoHe(A.dueDate) : '', hasDue: !!A.dueDate,
+        doneCount: reqMods.filter(m => m.state && m.state.status === 'completed').length + ' מתוך ' + reqMods.length + ' מודולי חובה הושלמו',
+        pending: A.pendingReview, hasPending: A.pendingReview > 0,
+        rdLabel: rd ? rd.label : '', rdBg: rd ? rd.bg : '', rdFg: rd ? rd.fg : '', hasRd: !!rd,
+        rdNote: A.readinessNote, rdBy: A.readinessBy ? 'החלטה של ' + A.readinessBy + ' · ' + this.trDate(A.readinessAt) : '',
+        allDone: A.allRequiredDone,
+        followups: (A.followups || []).map(f => {
+          const dr = (s.trFu || {})[f.id];
+          return {
+            id: f.id, label: f.label, due: this.trIsoHe(f.dueDate), done: f.status === 'done',
+            statusLabel: f.status === 'done' ? 'הושלם' : 'פתוח', recs: f.recommendations, hasRecs: !!f.recommendations,
+            meeting: f.meetingAt, hasMeeting: !!f.meetingAt,
+            reflection: dr !== undefined ? dr : f.reflection,
+            onReflection: (e) => this.setState({ trFu: Object.assign({}, s.trFu || {}, { [f.id]: e.target.value }) }),
+            save: () => this.trSaveReflection(f.id), dirty: dr !== undefined && dr !== f.reflection
+          };
+        }),
+        hasFollowups: (A.followups || []).length > 0
+      } : null,
+      trMods: pathMods,
+      trResume: resume,
+      trNews: me ? me.announcements.map(a => ({ title: a.title, paras: this.trParas(a.body), when: this.trDate(a.at), kind: { update: 'עדכון מקצועי', policy: 'נוהל', module: 'מודול', tool: 'כלי' }[a.kind] || 'עדכון' })) : [],
+      trHasNews: !!(me && me.announcements.length),
+      trNotes: me ? me.notifications.slice(0, 8).map(n => ({ weight: n.read ? 500 : 700, title: n.title, body: n.body, when: this.trAgo(n.at), unread: !n.read, dot: n.read ? 'var(--color-neutral-300)' : 'var(--color-accent)' })) : [],
+      trHasNotes: !!(me && me.notifications.length),
+      trReadAll: this.trReadAll,
+
+      /* hub */
+      hubLoading: view === 'hub' && !s.hubRes,
+      hubItems: hub.map(r => {
+        const lk = this.trChip(this.TR_LINK, r.linkStatus);
+        return {
+          id: r.id, title: r.title, description: r.description, url: r.url, hasUrl: !!r.url, kind: kindLabel(r.kind),
+          lang: r.language || 'כללי', level: r.level, hasLevel: !!r.level, program: r.program, hasProgram: !!r.program,
+          tags: r.tags || [], updated: 'עודכן ' + this.trDate(r.updatedAt),
+          favAria: (r.favorite ? 'הסרה מהמועדפים' : 'הוספה למועדפים') + ': ' + r.title, fav: r.favorite, star: r.favorite ? '★' : '☆', favLabel: r.favorite ? 'הסרה מהמועדפים' : 'הוספה למועדפים', pressed: r.favorite ? 'true' : 'false',
+          toggleFav: () => this.hubToggleFav(r.id),
+          linkWarn: r.linkStatus === 'broken' || r.linkStatus === 'restricted', linkLabel: lk.label, linkBg: lk.bg, linkFg: lk.fg
+        };
+      }),
+      hubCount: hub.length + ' משאבים', hubEmpty: !!s.hubRes && hub.length === 0, hubNone: !!s.hubRes && allRes.length === 0,
+      hubQ: s.hubQ || '', onHubQ: (e) => this.setState({ hubQ: e.target.value }),
+      hubLangs: [{ value: '', label: 'כל השפות' }, { value: '__general', label: 'כללי (לכל השפות)' }].concat(uniq(allRes.map(r => r.language)).map(x => ({ value: x, label: x }))),
+      hubLevels: [{ value: '', label: 'כל הרמות' }].concat(uniq(allRes.map(r => r.level)).map(x => ({ value: x, label: x }))),
+      hubKinds: [{ value: '', label: 'כל הסוגים' }].concat(this.TR_RES_KINDS.filter(k => allRes.some(r => r.kind === k[0])).map(([value, label]) => ({ value, label }))),
+      hubProgs: [{ value: '', label: 'כל התוכניות' }].concat(uniq(allRes.map(r => r.program)).map(x => ({ value: x, label: x }))),
+      hubLang: s.hubLang || '', hubLevel: s.hubLevel || '', hubKind: s.hubKind || '', hubProg: s.hubProg || '', hubSort: s.hubSort || 'updated',
+      onHubLang: (e) => this.setState({ hubLang: e.target.value }), onHubLevel: (e) => this.setState({ hubLevel: e.target.value }),
+      onHubKind: (e) => this.setState({ hubKind: e.target.value }), onHubProg: (e) => this.setState({ hubProg: e.target.value }),
+      onHubSort: (e) => this.setState({ hubSort: e.target.value }),
+      hubFav: !!s.hubFav, hubFavLabel: s.hubFav ? '★ מועדפים בלבד' : '☆ מועדפים', hubFavPressed: s.hubFav ? 'true' : 'false', toggleHubFav: () => this.setState({ hubFav: !s.hubFav }),
+      srchQ: s.srchQ || '', onSearch: this.onSearch,
+      srchShow: !!s.srchRes, srchNone: !!s.srchRes && s.srchRes.length === 0,
+      srchRes: (s.srchRes || []).map(h => ({ title: h.title, snippet: h.snippet, kind: h.type === 'module' ? 'מודול' : 'משאב', open: () => this.srchOpen(h), isModule: h.type === 'module', canOpen: h.type === 'resource' ? !!h.url : (isMgr || !!h.assignmentId) })),
+      srchClear: () => this.setState({ srchQ: '', srchRes: null }),
+
+      /* management */
+      ta: {
+        tab: s.taTab || 'overview',
+        tabs: [['overview', 'סקירה'], ['teachers', 'מורים ושיוך'], ['paths', 'מסלולים'], ['modules', 'מודולים'], ['resources', 'משאבים'], ['updates', 'עדכונים'], ['audit', 'יומן פעולות']].map(([k, label]) => {
+          const on = (s.taTab || 'overview') === k && !s.taLearner && !s.taEdit;
+          return { k, label, on, pressed: on ? 'true' : 'false', go: this.taTab(k), bg: on ? 'var(--color-neutral-900)' : 'transparent', fg: on ? '#fff' : 'var(--color-neutral-700)' };
+        }),
+        isOverview: (s.taTab || 'overview') === 'overview' && !s.taLearner && !s.taEdit,
+        isTeachers: s.taTab === 'teachers' && !s.taLearner && !s.taEdit,
+        isPaths: s.taTab === 'paths' && !s.taLearner && !s.taEdit,
+        isModules: s.taTab === 'modules' && !s.taLearner && !s.taEdit,
+        isResources: s.taTab === 'resources' && !s.taLearner && !s.taEdit,
+        isUpdates: s.taTab === 'updates' && !s.taLearner && !s.taEdit,
+        isAudit: s.taTab === 'audit' && !s.taLearner && !s.taEdit,
+        isLearner: !!s.taLearner && !s.taEdit, learnerLoading: !!s.taLearner && !s.taLearner.data,
+        isEditor: !!s.taEdit && !mod, editorLoading: !!s.taEdit && !em,
+        notMgr: !isMgr,
+        seed: this.taSeed, empty: !!(over && over.empty), backToList: () => { if (this.taLeaveEditor()) this.setState({ taLearner: null, taEdit: null, trMod: null }); this.taLoad(s.taTab || 'overview'); },
+        stats: over ? [
+          { label: 'מורים בהכשרה', value: over.stats.inTraining, tone: 'var(--color-accent-700)' },
+          { label: 'השלימו', value: over.stats.completed, tone: 'var(--color-positive-ink)' },
+          { label: 'ממתינים לאישור מוכנות', value: over.stats.awaitingApproval, tone: 'var(--color-warning-ink)' },
+          { label: 'משימות לבדיקה', value: over.stats.toReview, tone: 'var(--color-warning-ink)' },
+          { label: 'התקדמות ממוצעת', value: over.stats.avgProgress + '%', tone: 'var(--color-text)' },
+          { label: 'זקוקים למעקב', value: over.stats.needsAttention, tone: 'var(--color-critical)' }
+        ] : [],
+        queue: over ? over.queue.map(q => ({ name: q.name, module: q.moduleTitle, when: this.trAgo(q.createdAt), attempt: q.attempt > 1 ? 'הגשה ' + q.attempt : '', open: () => this.taOpenLearner(q.userId) })) : [],
+        noQueue: !!over && over.queue.length === 0,
+        attention: taRows.filter(r => r.attention.length).map(r => ({ name: r.name, path: r.pathTitle, why: r.attention.join(' · '), open: () => this.taOpenLearner(r.userId) })),
+        noAttention: !!over && !taRows.some(r => r.attention.length),
+        q: s.taQ || '', onQ: (e) => this.setState({ taQ: e.target.value }),
+        rows: taRows.filter(r => !tq || (r.name + ' ' + r.language + ' ' + r.pathTitle).toLowerCase().includes(tq)).map(r => {
+          const chip = r.readiness ? this.trChip(this.TR_READY, r.readiness) : r.status === 'completed' ? this.trChip(this.TR_STATUS, 'completed') : r.needsRevision ? this.trChip(this.TR_STATUS, 'needs_revision') : r.pendingReview ? this.trChip(this.TR_STATUS, 'pending_review') : r.allRequiredDone ? { label: 'ממתין לאישור', bg: 'var(--color-warning-tint)', fg: 'var(--color-warning-ink)' } : this.trChip(this.TR_STATUS, r.percent ? 'in_progress' : 'not_started');
+          return {
+            name: r.name, initials: this.initials(r.name), language: r.language || '—', position: r.position || '—', path: r.pathTitle,
+            kind: r.pathKind === 'continuing' ? 'המשך' : 'קליטה', percent: r.percent + '%', width: r.percent + '%',
+            statusLabel: chip.label, statusBg: chip.bg, statusFg: chip.fg, last: this.trAgo(r.lastActivityAt),
+            flag: r.attention.length > 0, why: r.attention.join(' · '), open: () => this.taOpenLearner(r.userId)
+          };
+        }),
+        noRows: !!over && taRows.length === 0,
+        teacherOpts: teachers.filter(t => t.active).map(t => ({ value: t.userId, label: t.name + (t.language ? ' · ' + t.language : '') })),
+        teachersAll: teachers.map(t => ({ btnLabel: taRows.some(r => r.userId === t.userId) ? 'פרופיל הכשרה' : 'פרטים ושיוך', name: t.name, language: t.language || '—', inactive: !t.active, has: taRows.some(r => r.userId === t.userId), open: () => this.taOpenLearner(t.userId) })),
+        pathOpts: paths.filter(p => p.status === 'active').map(p => ({ value: p.id, label: p.title + (p.kind === 'continuing' ? ' · הכשרת המשך' : '') })),
+        assign: this.taAssign,
+        learner: learnerVM,
+        /* paths */
+        paths: paths.map(p => ({
+          id: p.id, title: p.title, kind: p.kind === 'continuing' ? 'הכשרת המשך' : 'אונבורדינג', lang: p.language || 'כל השפות', audience: p.audience,
+          count: p.modules.length + ' מודולים · ' + p.modules.filter(m => m.required).length + ' חובה', learners: p.learners + ' משויכים',
+          archived: p.status === 'archived', opacity: p.status === 'archived' ? 0.6 : 1, on: s.taPathSel === p.id,
+          border: s.taPathSel === p.id ? 'var(--color-accent)' : 'var(--color-neutral-200)',
+          select: () => this.setState({ taPathSel: p.id, taPathDraft: null })
+        })),
+        noPaths: !!s.taPaths && paths.length === 0,
+        path: pathVM, newPath: this.taNewPath,
+        /* modules */
+        modules: modules.map(m => {
+          const chip = this.trChip(MS, m.status);
+          return {
+            id: m.id, title: m.title, description: m.description, icon: iconD(m.icon), statusLabel: chip.label, statusBg: chip.bg, statusFg: chip.fg,
+            meta: m.blockCount + ' רכיבים · ' + m.activityCount + ' פעילויות' + (m.estMinutes ? ' · ' + m.estMinutes + ' דק\'' : ''),
+            updated: 'עודכן ' + this.trDate(m.updatedAt) + (m.updatedBy ? ' · ' + m.updatedBy : ''),
+            unpublished: m.everPublished && m.dirty && m.status !== 'archived', archived: m.status === 'archived', opacity: m.status === 'archived' ? 0.62 : 1,
+            edit: () => this.taOpenEditor(m.id), dup: () => this.taDuplicate(m.id),
+            archive: () => this.taArchive(m.id, true), unarchive: () => this.taArchive(m.id, false)
+          };
+        }),
+        noModules: !!s.taModules && modules.length === 0,
+        newModule: this.taNewModule,
+        editor: editorVM,
+        /* resources */
+        resQ: s.taResQ || '', onResQ: (e) => this.setState({ taResQ: e.target.value }),
+        resStatusF: s.taResStatus || '', onResStatusF: (e) => this.setState({ taResStatus: e.target.value }),
+        resStatusOpts: [{ value: '', label: 'כל הסטטוסים' }].concat(this.TR_RES_STATUS.map(([value, label]) => ({ value, label }))),
+        resRows: resAll.filter(r => (!rq || (r.title + ' ' + r.language + ' ' + r.category + ' ' + (r.tags || []).join(' ')).toLowerCase().includes(rq)) && (!s.taResStatus || r.status === s.taResStatus)).map(r => {
+          const lk = this.trChip(this.TR_LINK, r.linkStatus);
+          const st = { official: ['רשמי', 'var(--color-positive-tint)', 'var(--color-positive-ink)'], draft: ['טיוטה', 'var(--color-neutral-200)', 'var(--color-neutral-700)'], review: ['דורש בדיקה', 'var(--color-warning-tint)', 'var(--color-warning-ink)'], archived: ['ארכיון', 'var(--color-neutral-200)', 'var(--color-neutral-500)'] }[r.status];
+          return {
+            id: r.id, title: r.title, url: r.url, hasUrl: !!r.url, lang: r.language || 'כללי', kind: kindLabel(r.kind), level: r.level, category: r.category,
+            statusLabel: st[0], statusBg: st[1], statusFg: st[2], linkLabel: lk.label, linkBg: lk.bg, linkFg: lk.fg,
+            checked: r.linkCheckedAt ? 'נבדק ' + this.trDate(r.linkCheckedAt) : '',
+            statusOpts: this.TR_RES_STATUS.map(([value, label]) => ({ value, label })), status: r.status,
+            onStatus: (e) => this.taResStatus(r.id, e.target.value),
+            check: () => this.taResCheck(r.id), edit: () => { this.setState({ taResEdit: r.id }); try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (x) { } }
+          };
+        }),
+        noRes: !!s.taRes && resAll.length === 0,
+        resForm: {
+          key: s.taResEdit || 'new', editing: !!resEdit, heading: resEdit ? 'עריכת משאב' : 'משאב חדש', submit: resEdit ? 'שמירת שינויים' : 'הוספת משאב',
+          v: resEdit || { title: '', description: '', url: '', kind: 'guide', category: '', language: '', level: '', program: '', tags: [], status: 'draft', moduleIds: [] },
+          tags: resEdit ? (resEdit.tags || []).join(', ') : '',
+          kinds: this.TR_RES_KINDS.map(([value, label]) => ({ value, label, sel: (resEdit ? resEdit.kind : 'guide') === value })),
+          statuses: this.TR_RES_STATUS.map(([value, label]) => ({ value, label, sel: (resEdit ? resEdit.status : 'draft') === value })),
+          mods: modules.filter(m => m.status !== 'archived').map(m => ({ value: m.id, label: m.title, checked: !!resEdit && (resEdit.moduleIds || []).indexOf(m.id) > -1 })),
+          cancel: () => this.setState({ taResEdit: null })
+        },
+        resSave: this.taResSave,
+        /* updates & audit */
+        ann: ((s.taAnn && s.taAnn.announcements) || []).map(a => ({ title: a.title, paras: this.trParas(a.body), meta: this.trDate(a.at) + ' · ' + a.by, archived: a.status === 'archived', opacity: a.status === 'archived' ? 0.55 : 1, archive: () => this.taAnnArchive(a.id), kind: { update: 'עדכון מקצועי', policy: 'נוהל', module: 'מודול', tool: 'כלי' }[a.kind] || 'עדכון' })),
+        noAnn: !!s.taAnn && s.taAnn.announcements.length === 0,
+        annPost: this.taAnnPost,
+        audit: ((s.taAudit && s.taAudit.audit) || []).map(x => ({ when: this.trDate(x.at), actor: x.actor, action: this.trActionLabel(x.action), detail: x.detail, subject: x.subject })),
+        noAudit: !!s.taAudit && s.taAudit.audit.length === 0
+      }
+    };
+  }
+
+  trSubView(h, type) {
+    const st = this.trChip(this.TR_SUB, h.status);
+    const body = h.body || {};
+    return {
+      id: h.id, attempt: 'הגשה ' + h.attempt, when: this.trDate(h.createdAt),
+      statusLabel: st.label, statusBg: st.bg, statusFg: st.fg,
+      paras: type === 'lesson_plan' ? [] : this.trParas(body.text || body.note || ''),
+      isPlan: type === 'lesson_plan',
+      plan: type === 'lesson_plan' ? this.TR_PLAN.filter(f => (body.fields || {})[f.k]).map(f => ({ label: f.label, paras: this.trParas(body.fields[f.k]) })) : [],
+      url: body.url || '', hasUrl: !!body.url,
+      feedback: h.feedback, hasFeedback: !!h.feedback, reviewer: h.reviewedBy ? h.reviewedBy + ' · ' + this.trDate(h.reviewedAt) : ''
+    };
+  }
+
+  trActionLabel(a) {
+    const L = {
+      'module.create': 'יצירת מודול', 'module.publish': 'פרסום מודול', 'module.archive': 'מודול לארכיון', 'module.unarchive': 'מודול הוחזר מהארכיון',
+      'module.duplicate': 'שכפול מודול', 'module.restore': 'שחזור גרסה', 'path.create': 'יצירת מסלול', 'path.edit': 'עריכת מסלול', 'path.modules': 'עדכון מודולים במסלול',
+      'assignment.create': 'שיוך מסלול', 'assignment.withdrawn': 'ביטול שיוך', 'assignment.active': 'הפעלת שיוך מחדש', 'assignment.completed': 'סימון שיוך כהושלם', 'assignment.edit': 'עריכת שיוך',
+      'submission.approved': 'אישור משימה', 'submission.needs_revision': 'בקשת תיקון', 'readiness.ready': 'אישור מוכנות להוראה',
+      'readiness.conditional': 'מוכנות בכפוף להשלמות', 'readiness.more_training': 'נדרשת הכשרה נוספת', 'readiness.completed': 'אישור השלמת הכשרה',
+      'progress.reset': 'איפוס תשובות', 'followup.create': 'פתיחת ליווי 30 יום', 'followup.done': 'נקודת מעקב הושלמה', 'followup.open': 'נקודת מעקב נפתחה מחדש', 'followup.edit': 'עדכון נקודת מעקב',
+      'resource.create': 'הוספת משאב', 'resource.edit': 'עריכת משאב', 'resource.status.official': 'משאב סומן רשמי', 'resource.status.draft': 'משאב הוחזר לטיוטה',
+      'resource.status.review': 'משאב סומן לבדיקה', 'resource.status.archived': 'משאב לארכיון', 'announcement.publish': 'פרסום עדכון', 'announcement.archived': 'הסרת עדכון',
+      'template.seed': 'יצירת תבנית ההכשרה', 'profile.edit': 'עדכון פרטי מורה'
+    };
+    return L[a] || a;
+  }
+
   /* ── session ── */
 
   session() { return this.state.session; }
@@ -3223,6 +5682,8 @@ class Component extends DCLogic {
     });
     this.save(this.LS_SESSION, user);
     if (user.role === 'אדמין') this.loadAccounts();
+    /* Whether this teacher has training decides one nav item, so ask now. */
+    if (user.role === 'מורה') this.loadTrainingMe();
   }
 
   logout = () => {
@@ -3230,7 +5691,10 @@ class Component extends DCLogic {
     try { localStorage.removeItem(this.LS_SESSION); } catch (e) {}
     this.setState({
       session: null, accounts: null, view: 'dashboard', selected: null,
-      modal: null, role: null, devSel: null, grpSel: null, authMode: 'login'
+      modal: null, role: null, devSel: null, grpSel: null, authMode: 'login',
+      trMe: null, trMod: null, trDraft: null, hubRes: null, srchRes: null, srchQ: '',
+      taOver: null, taTeachers: null, taPaths: null, taModules: null, taRes: null, taAnn: null, taAudit: null,
+      taLearner: null, taEdit: null, taPathDraft: null, taPathSel: null
     });
   };
 
@@ -3956,6 +6420,7 @@ class Component extends DCLogic {
       });
     } catch (e) { /* private mode — run on seeds only */ }
     this.restoreSession();
+    window.addEventListener('beforeunload', this.trBeforeUnload);
   }
 
   /* The session is server-authoritative. The cached copy is painted first so
@@ -4128,12 +6593,12 @@ class Component extends DCLogic {
     const isOffice = role === 'אדמין';
     const isAdmissions = role === 'מנהלת קבלה';
     const sview = s.sview || this.props.studentsView || 'טבלה';
-    const ADMIN_VIEWS = ['teachers', 'settings', 'develop', 'users', 'admissions', 'tasks'];
+    const ADMIN_VIEWS = ['teachers', 'settings', 'develop', 'users', 'admissions', 'tasks', 'trainAdmin'];
     /* Per-account screen permissions, set by the office on the users screen. */
     const allowed = (sess && sess.screens) || this.allScreens();
     const canSee = (k) => !isTeacher || allowed.indexOf(k) > -1;
     let view = isTeacher && ADMIN_VIEWS.indexOf(s.view) > -1 ? 'dashboard' : s.view;
-    if (isTeacher && view !== 'profile' && !canSee(view)) view = canSee('dashboard') ? 'dashboard' : allowed[0] || 'dashboard';
+    if (isTeacher && view !== 'profile' && this.TR_VIEWS.indexOf(view) < 0 && !canSee(view)) view = canSee('dashboard') ? 'dashboard' : allowed[0] || 'dashboard';
     const all = this.students();
     /* Role scope: a teacher's every list is her own students. The admin sees the school. */
     const me = this.meName();
@@ -5214,7 +7679,8 @@ class Component extends DCLogic {
       closeModal: () => this.setState({ modal: null }),
       showAdd: s.modal === 'add', showMaterial: s.modal === 'material', showAttach: s.modal === 'attach',
       attachTitle: s.attach, submitStudent: this.submitStudent, submitMaterial: this.submitMaterial, submitAttach: this.submitAttach,
-      p, toast: s.toast, hasToast: !!s.toast
+      p, toast: s.toast, hasToast: !!s.toast,
+      ...this.trainingVals(view)
     };
   }
 }
