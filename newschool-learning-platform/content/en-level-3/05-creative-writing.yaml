@@ -1,0 +1,729 @@
+# Cycle "Creative Writing", converted from the English level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-level-3
+slug: creative-writing
+title: Creative Writing
+goal: Write and tell short stories with narrative past tenses and connectors.
+position: 5
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Narrative tenses" and "Connectors") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's summary
+    rules, the activity examples, the connector table and the vocabulary. Please
+    check level, wording and every right answer before students see them.
+  - >-
+    The "Interactive visual explanation" of the connecting words is a gamma.app page,
+    which is not on the link allow-list. The link was removed and the resource is
+    mentioned in a teacher note; the connector table itself is in the class section
+    and in the summary.
+  - >-
+    Activity 2 story: "A student arrived at school very early because they forgot
+    their phone at home" does not make sense (forgetting the phone at home is no
+    reason to go to school early). It now reads "…because they had forgotten their
+    phone there the day before." Please confirm, or choose another reason. Step 2
+    "What serial (order) words" → "What sequence (order) words".
+  - >-
+    Activity 3 has two "Step 3"s in the source; the steps are renumbered. Activity 3
+    asks for a story "in past simple"; the summary teaches the past simple and the
+    past continuous, so the rule now says "past simple (and past continuous for
+    background)". Same change in Activity 4.
+  - >-
+    Activity 5, comprehension question 1 "According to the text, why do people think
+    creative writing is difficult?" does not match the text (it says people think
+    creative writing is special and only for talented people). It now reads
+    "According to the text, what do many people believe about creative writing?" An
+    answer key was added in a teacher note.
+  - >-
+    Summary: "backgroun,d" → "background"; "includ,e" → "include"; "Use Connecting
+    Ideas with Simple Connectors" → "Connect ideas with simple connectors". An example
+    with *when* (past continuous + past simple) was added to rule 2, taken from the
+    homework.
+  - >-
+    Homework: the source numbers the parts "Part 1–4" and then "Step 5–7"; all are
+    now "Part 1–7". The "Don't forget to" list was rewritten as full instructions
+    ("Use a clear story structure…"). Part 7's message was slightly reworded ("I
+    answered some questions about my experience. Please go over them…").
+  - >-
+    Small corrections: the duplicated title was removed; stray asterisks, hashes and
+    broken bold were removed everywhere; "Narrating Tenses" → "Narrative tenses".
+    Quizlet links are kept without "?new". The English definitions of the vocabulary
+    are kept in a table under the cards (the cards hold a term and a Hebrew gloss
+    only).
+  - >-
+    Times: introduction round 8 minutes, connector pause 5 minutes, Activity 4
+    writing 3 + 5 + 2 minutes (as in the source). No other times are given. The
+    "Answer of student 1/2/3" lines are replaced by the answer boxes. The level label
+    "3 (extreme)" was not copied.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: creative-writing-class
+    title: 'Class: Creative Writing'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Creative Writing
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Narrative tenses
+            description: Write short stories with a clear structure, using the past simple for main actions and the past continuous for the background (*The student was walking upstairs when the lights went out.*)
+          - name: Connectors
+            description: Link your ideas with connectors of sequence, contrast and cause (*first, then, but, because, so*)
+      - id: quizlet-translation
+        type: externalLink
+        label: 'Creative Writing on Quizlet: English - Translation'
+        url: https://quizlet.com/br/1125150981/creative-writing-term-translation-flash-cards/
+      - id: quizlet-definition
+        type: externalLink
+        label: 'Creative Writing on Quizlet: English - Definition'
+        url: https://quizlet.com/br/1125151109/creative-writing-english-definition-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        prompt: Say one short sentence.
+        frame: I'm ___. Writing helps me ___.
+        example: I'm Marta. Writing helps me express my ideas.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What is creative writing, in your opinion? Is it different from other types of writing?
+            frame: I think that creative writing is…
+          - question: What do you usually write about? Give an example.
+            frame: I usually write about… For example, …
+          - question: Do writing and reading influence each other? Give 2 reasons to support your answer.
+            frame: I think that reading and writing influence / don't influence each other because… However / In addition / Moreover, …
+          - question: What is difficult for you when you write in English?
+            frame: When I write in English, … is difficult for me because…
+          - question: What do you do when you don't know what to write about?
+            frame: When I don't know what to write about, I…
+          - question: Does writing help you improve your English? How?
+            frame: Writing helps me… because…
+          - question: Do you think writing can change how we see the world? Give one reason or one example.
+            frame: I think writing can / can't change… because…
+          - question: In a world where we mostly type and text short messages, why do you think it's important to write?
+            frame: I think it's important to write because…
+      - id: kit-title
+        type: heading
+        level: 3
+        text: 'Pause before writing: connector word kit'
+      - id: kit-how
+        type: text
+        text: These words help your story flow. You don't need all of them. Choose **2–3**.
+      - id: kit-table
+        type: table
+        caption: Connecting words
+        header: [Sequence (order), Adding information, Contrast, Cause / effect, Condition]
+        rows:
+          - [First, and, but, because, if]
+          - [Then, also, however, so, '']
+          - [After that, too, although, '', '']
+          - [Finally, in addition, '', '', '']
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      # Activity 1
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Personal writing trigger'
+        skills: [Narrative tenses, Connectors]
+        steps:
+          - Before we start writing, let's think about creativity. Everyone gets ideas in different ways, and there is no right or wrong answer.
+          - 'Think on your own: answer the brainstorm questions below with notes and key words only, not full sentences.'
+          - 'As a group: each student shares one idea in one or two sentences, with a connector word.'
+          - 'As a class, talk about your conclusions: Which ideas were **similar**? Which idea was **different or surprising**? Did anyone change their opinion after listening?'
+        example: "*For me, writing is easier **when** I am relaxed, **because** I don't feel pressure.*"
+      - id: act1-notes
+        type: discussionQuestions
+        title: Brainstorm (notes only)
+        items:
+          - question: When do I feel creative?
+            frame: at night / when I'm relaxed / when I listen to music…
+          - question: What helps me think of ideas?
+            frame: pictures / music / talking / reading…
+          - question: What makes writing difficult for me?
+            frame: vocabulary / grammar / ideas / time…
+          - question: 'My idea for the group: ___'
+            frame: For me, writing is ___ when ___, because ___.
+      # Activity 2
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: What really happened?'
+        skills: [Narrative tenses, Connectors]
+        steps:
+          - 'Think like a writer: how do writers come up with ideas, and how do they keep their stories interesting? (Pair work or debate; no writing.)'
+          - Listen to the story your teacher reads. Then read the three theories below.
+          - 'In pairs or groups, discuss what happened: Which theory is most likely? Why? (Give two reasons.) What sequence (order) words can you add to the story to make it more suspenseful?'
+          - 'Twist! New information: *A security camera near the science lab stopped working at the same time as the lights.* You have 1 more minute. Has your theory changed? Why or why not?'
+          - As a class, each group presents its conclusion with at least 2 connecting words.
+        example: '*We think theory B is true because the camera stopped working. Also, there was a loud noise from the lab.*'
+      - id: act2-story
+        type: callout
+        tone: info
+        title: The story
+        text: |-
+          *A student arrived at school very early because they had forgotten their phone there the day before.*
+          *The corridors were silent and empty.*
+          *While the student was walking upstairs, the lights suddenly went out.*
+          *A loud noise came from the science lab.*
+          *Ten minutes later, the school was closed for the whole day.*
+      - id: act2-theories
+        type: table
+        caption: Theories
+        rows:
+          - ['**Theory A**', It was an accident (a power or system problem).]
+          - ['**Theory B**', Someone was inside the school.]
+          - ['**Theory C**', The student misunderstood what happened.]
+      - id: act2-discussion
+        type: discussionQuestions
+        title: Our theory
+        items:
+          - question: Which theory is most likely? Why?
+            frame: I think ___ because ___. / This theory makes sense because ___.
+          - question: Which theory do you not believe?
+            frame: It is possible, but ___. / I don't think ___ is true because ___.
+          - question: Has your theory changed after the new information? Why or why not?
+            frame: Our theory has / hasn't changed because ___.
+          - question: 'Our conclusion: ___'
+            frame: We think theory ___ is true because ___.
+      # Activity 3
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: The chain story'
+        skills: [Narrative tenses, Connectors]
+        steps:
+          - 'Your teacher writes the first sentence on the board: **That morning, something strange happened.**'
+          - 'As a class, choose the story anchors: the **character** (who the story is about) and the **place** (where it happens). All sentences must stay with this character and place.'
+          - 'You have 5 minutes to write your own short story about this character. Rules: past simple (and past continuous for background); at least 5 connecting words; the same character and place; a beginning, a middle and an end.'
+          - 'Now build a group story! Take turns: each student adds one sentence only, in the past, with one connector. Listen to the last sentence before you speak, and stay with the same character and place.'
+          - 'Your teacher reads the group story aloud. Reflect as a group: Did the story stay clear? Did it stay with the same character and place? Which sentence changed the story the most? Was it very different from your personal stories?'
+        example: |-
+          *That morning, something strange happened.*
+          *First, the teacher opened the classroom door. Then she saw a cat on her desk, but the windows were closed…*
+      - id: act3-story
+        type: discussionQuestions
+        title: My story
+        items:
+          - question: 'Character: ___ / Place: ___'
+          - question: 'Beginning: ___'
+            frame: That morning, ___. First, ___.
+          - question: 'Middle: ___'
+            frame: While ___ was ___ing, ___. Then ___, but ___.
+          - question: 'End: ___'
+            frame: Finally, ___, so ___.
+      # Activity 4
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Multiple perspectives'
+        skills: [Narrative tenses]
+        steps:
+          - 'Your teacher chooses one situation: *a power cut at night* or *a strange noise outside the house*.'
+          - 'Write **two short paragraphs** (4–5 lines each) about it. Paragraph 1: a person inside the situation. Paragraph 2: another person who saw or heard it.'
+          - 'Rules: use the past simple (and the past continuous for background), and at least 3 descriptive adjectives in each paragraph.'
+          - 'How to write: 3 minutes to plan, look for new words and write notes; 5 minutes to write; 2 minutes to revise and check.'
+          - 'Read your story aloud. Optional: after every story, another student asks a question.'
+          - 'Class discussion: What details changed between the two paragraphs? Which version was clearer?'
+        example: |-
+          *I was reading in bed when the lights went out. The room was dark and silent…*
+          *My neighbor was walking his dog when he saw that every window in our building was black…*
+      - id: act4-paragraphs
+        type: discussionQuestions
+        title: Two points of view
+        items:
+          - question: 'Paragraph 1: a person inside the situation'
+            frame: I was ___ing when ___. It was ___ and ___.
+          - question: 'Paragraph 2: another person who saw or heard it'
+            frame: He / She was ___ing when he / she saw / heard ___.
+      # Activity 5
+      - id: act5
+        type: classActivity
+        title: 'Activity 5: Reading and discussion: What is creative writing?'
+        skills: [Narrative tenses, Connectors]
+        steps:
+          - 'Before reading, answer two quick questions: Do you think you need talent to write well? Can anyone be creative, or only some people?'
+          - Read the text on your own. Try to understand the context; don't stop if you don't know a word.
+          - In pairs or groups, answer the comprehension questions.
+          - As a group, discuss the questions after the text. Keep your answers short so that everyone has time to share.
+      - id: act5-text-title
+        type: heading
+        level: 4
+        text: Creative Writing Is Not Magic
+      - id: act5-text
+        type: text
+        text: |-
+          Many people think creative writing is something special that only talented people can do. They believe writers are born creative and that ideas come easily to them.
+
+          In reality, creative writing is often the result of practice, observation and patience. Writers pay attention to small details in daily life: conversations, places, emotions and problems. These details later become stories.
+
+          Writing is also not always easy or enjoyable. Many writers say that starting is the hardest part. They write bad sentences first, then improve them slowly. Making mistakes is part of the process.
+
+          Creative writing helps people understand themselves and the world better. When we write, we organize our thoughts and give meaning to experiences. For this reason, creative writing is not magic. It is a skill that anyone can develop with time and effort.
+      - id: act5-comprehension
+        type: discussionQuestions
+        title: Comprehension questions
+        items:
+          - question: According to the text, what do many people believe about creative writing?
+          - question: What do writers observe in daily life?
+          - question: What is often the hardest part of writing?
+          - question: Does the text say mistakes are bad or normal?
+      - id: act5-discussion
+        type: discussionQuestions
+        title: Discussion
+        items:
+          - question: Do you agree that creative writing is a skill, not magic? Why?
+            frame: I agree because… / I don't fully agree because…
+          - question: Which part of the text do you agree with most?
+            frame: I think this part is true because…
+          - question: What detail from daily life could become a story?
+          - question: Is writing difficult for you? Why or why not?
+            frame: For me, writing is…
+          - question: Do you think writing helps you understand yourself better?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **narrative tenses** (story structure, past simple
+          and past continuous) and **connectors** (sequence, contrast, cause). Choose
+          up to 2 activities, according to time, the group profile and confidence
+          level. The activities are independent and do not need to be done in one
+          class.
+      - id: n-intro
+        anchor: intro
+        minutes: 8
+        text: Model the sentence once (*I'm Marta. Writing helps me express my ideas.*), then go around the group.
+      - id: n-warmup
+        anchor: warmup
+        text: Choose from the 8 questions. Answers typed here are visible to you below each question.
+      - id: n-kit
+        anchor: kit-title
+        minutes: 5
+        text: >-
+          Show the connecting words on the board. For weaker B1 groups, circle
+          **First / Then / But / Because** as the minimum set. The source also links
+          an interactive visual explanation on gamma.app ("Essential Connecting
+          Words"), which is not on the link allow-list; share it on screen if you use
+          it.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Focus: activate ideas before writing, connect creativity to personal
+          experience, and practise short, clear sentences. In step 1 students work
+          silently and write notes only. Write key words and connector words on the
+          board. Stop students who speak too long: the point is to be precise. In the
+          last step, stress that ideas can come to us in different ways.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Focus: express opinions, give reasons and build narrative tension. Read the
+          story aloud slowly, then show the three theories on the board. After the
+          pair discussion, read the twist and give groups 1 more minute.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Write the first sentence on the board without explaining anything. For the
+          anchors, take the first answer a student gives, even if it's silly. Focus:
+          keep the story coherent, react to others' ideas, practise connectors.
+      - id: n-act4
+        anchor: act4
+        minutes: 10
+        text: 'Focus: understand point of view and describe the same event differently. Writing time: 3 + 5 + 2 minutes.'
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Focus: reading comprehension, personal reflection on creative writing,
+          opinions with reasons. Monitor the breakout rooms and focus on content, not
+          grammar. Possible answers: 1. That it is something special that only
+          talented people can do; that writers are born creative and ideas come
+          easily to them. 2. Small details: conversations, places, emotions and
+          problems. 3. Starting. 4. Normal: making mistakes is part of the process.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: creative-writing-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: summary-intro
+        type: text
+        text: When you write a creative story, you do more than practise grammar. You learn how to shape ideas, organize events and communicate meaning in a clear and engaging way.
+      - id: rules-narrative
+        type: ruleSummary
+        skill: Narrative tenses
+        rules:
+          - text: '**Build a story structure.** Almost every story has a **beginning** (the setting and the situation), a **middle** (events or problems) and an **ending** (a result or a change). A clear structure helps the reader understand who the story is about, what happens and why it matters.'
+            examples:
+              - That morning, something strange happened.
+              - Later, the situation became more confusing.
+              - In the end, the truth was clear.
+          - text: '**Use time clearly.** Different tenses show what happened first, what was happening in the background and what happened next. Use the **past simple** for the main actions and the **past continuous** (*was / were + verb-ing*) for background situations.'
+            examples:
+              [The student was walking upstairs when the lights went out., It was raining outside.]
+          - text: '**Use imagination and interpretation.** Creative writing is not about "the correct answer". One situation can have many explanations; writers choose one version of events to make the story believable. Imagination helps build tension and meaning.'
+          - text: '**Write from different points of view.** It helps you see how details change with perspective, choose what information to include, and make stories more interesting and realistic.'
+      - id: rules-connectors
+        type: ruleSummary
+        skill: Connectors
+        rules:
+          - text: 'Connectors help your story flow, so it does not sound like a list of sentences. They show **order** (*first, then, finally*), explain **reasons** (*because, so*) and **contrast** ideas (*but, although*).'
+            examples:
+              [
+                The lights went out,
+                so the student felt scared.,
+                'It was quiet, but something felt wrong.',
+              ]
+      - id: connectors-table
+        type: table
+        caption: Connecting words
+        header: [Sequence (order), Adding information, Contrast, Cause / effect, Condition]
+        rows:
+          - [First, and, but, because, if]
+          - [Then, also, however, so, '']
+          - [After that, too, although, '', '']
+          - [Finally, in addition, '', '', '']
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: creative-writing-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Creative writing with Mori
+      - id: how
+        type: text
+        text: Write a short story step by step with Mori. Open the chat with Mori, copy each message and send it, then answer Mori's questions.
+      - id: remember
+        type: callout
+        tone: tip
+        title: "Don't forget to"
+        text: |-
+          Use a clear story structure (beginning, middle, end).
+          Use the past simple and the past continuous.
+          Use basic connectors.
+          Add imagination and personal meaning.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Part 1: Warming up your ideas'
+        intro: 'Start building the structure of your story. Talk about a place (school, house, street, city), a character (student, friend, neighbor, teacher) and a strange or unexpected moment.'
+        message: |-
+          Hi Mori! Ask me simple questions to help me think of ideas for a short story. Help me answer in clear sentences. I want to start planning my story using places, characters and interesting ideas.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Part 2: The beginning'
+        intro: 'Write the beginning of the story in the past simple, in **3–4 sentences**: where did the story happen, who was there, and what happened first? Example: *That morning, a student arrived at school early. The building was very quiet, **but** the student felt that something was wrong.*'
+        message: |-
+          Help me write the beginning of my short story using the past simple. Make sure I use connecting words and the ideas that I planned. Correct my grammar and order if needed.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Part 3: Background and tension'
+        intro: 'Add **1–2 sentences** with the past continuous (*was / were + verb-ing*). Example: *The student was walking upstairs when the lights went out. It was raining outside.*'
+        message: |-
+          Ask me to add background details using the past continuous. Correct me if I use the wrong tense.
+      - id: mori-4
+        type: aiTutorPrompt
+        title: 'Part 4: Connect your sentences'
+        intro: 'Add at least 2 connecting words between your sentences. Example: *The lights went out, **so** the student stopped walking. It was quiet, **but** the student felt scared.*'
+        message: |-
+          Help me connect my story using simple connectors like because, so, but, then.
+      - id: mori-5
+        type: aiTutorPrompt
+        title: 'Part 5: Explain and imagine'
+        intro: 'Choose ONE idea and write 2 sentences to explain what happened: *It was an accident. / Someone caused it. / The character misunderstood the situation.* Example: *I think someone was inside the building. I think so because there was a loud noise.*'
+        message: |-
+          Now I will explain why things happened in the story. Ask me questions about the idea and help me expand my imagination.
+      - id: mori-6
+        type: aiTutorPrompt
+        title: 'Part 6: The ending'
+        intro: 'Write **1–2 final sentences**. What was the result? How did the character feel in the end? Example: *In the end, the school was closed. The student felt confused but relieved.*'
+        message: |-
+          Help me write a clear ending for my story. Make sure I have a conclusion.
+      - id: mori-7
+        type: aiTutorPrompt
+        title: 'Part 7: Reflection'
+        intro: 'Good job! You wrote your story! Answer these questions, then send them to Mori: What part was easy for you to write? What part was difficult? Is it easier to write fiction or non-fiction? Explain your answer.'
+        message: |-
+          Help me reflect on my writing in simple sentences. I answered some questions about my experience. Please go over my answers and correct them if needed.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: creative-writing-practice
+    book: workbook
+    title: 'Practice: Creative Writing'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked right away, and you can try again.
+      - id: ex-narrative-tenses
+        type: activity
+        activity: creative-writing-narrative
+      - id: ex-connectors
+        type: activity
+        activity: creative-writing-connectors
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: creative-writing-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Creative writing words
+        glossLang: he
+        link: https://quizlet.com/br/1125150981/creative-writing-term-translation-flash-cards/
+        items: &creative-writing-words
+          - { term: Narrative, gloss: נרטיב / סיפור מתמשך }
+          - { term: Character, gloss: דמות }
+          - { term: Setting, gloss: רקע / זמן ומקום }
+          - { term: Situation, gloss: מצב }
+          - { term: Event, gloss: אירוע }
+          - { term: Detail, gloss: פרט }
+          - { term: Imagination, gloss: דמיון }
+          - { term: Perspective, gloss: נקודת מבט }
+          - { term: Meaning, gloss: משמעות }
+          - { term: Structure, gloss: מבנה }
+          - { term: Sequence, gloss: רצף }
+          - { term: Connector, gloss: מילת קישור }
+          - { term: Contrast, gloss: ניגוד }
+          - { term: Cause, gloss: סיבה }
+          - { term: Result, gloss: תוצאה }
+          - { term: Opinion, gloss: דעה }
+          - { term: Reason, gloss: נימוק / סיבה }
+          - { term: Explanation, gloss: הסבר }
+          - { term: Interpretation, gloss: פרשנות }
+          - { term: Tension, gloss: מתח }
+          - { term: Background, gloss: רקע }
+          - { term: Description, gloss: תיאור }
+          - { term: Process, gloss: תהליך }
+          - { term: Practice, gloss: תרגול }
+          - { term: Confidence, gloss: ביטחון עצמי }
+          - { term: Expression, gloss: ביטוי }
+          - { term: Reflection, gloss: התבוננות / חשיבה }
+          - { term: Choice, gloss: בחירה }
+          - { term: Point of view, gloss: נקודת מבט }
+          - { term: Version, gloss: גרסה }
+          - { term: Theory, gloss: השערה / תיאוריה }
+          - { term: Mystery, gloss: תעלומה }
+          - { term: Outcome, gloss: תוצאה סופית }
+          - { term: Fiction, gloss: סיפורת }
+          - { term: Non-fiction, gloss: ספרות עיונית }
+      - id: definitions
+        type: table
+        caption: Definitions in English
+        header: [Word, Definition]
+        rows:
+          - [Narrative, A way of telling a story or a series of events]
+          - [Character, A person in a story]
+          - [Setting, The place and time where a story happens]
+          - [Situation, A set of circumstances in a story]
+          - [Event, Something that happens in a story]
+          - [Detail, A small but important piece of information]
+          - [Imagination, The ability to create ideas or images in your mind]
+          - [Perspective, The way someone sees or understands a situation]
+          - [Meaning, What something represents or explains]
+          - [Structure, The way parts are organized together]
+          - [Sequence, The order in which events happen]
+          - [Connector, A word that links ideas or sentences]
+          - [Contrast, A clear difference between two ideas]
+          - [Cause, The reason why something happens]
+          - [Result, What happens because of an action]
+          - [Opinion, What someone thinks or believes]
+          - [Reason, An explanation for an opinion or action]
+          - [Explanation, Information that makes something clear]
+          - [Interpretation, A personal understanding of a situation or text]
+          - [Tension, A feeling of uncertainty or suspense]
+          - [Background, Information or events that explain a situation]
+          - [Description, Words that explain how something looks or feels]
+          - [Process, A series of actions that lead to a result]
+          - [Practice, Regular action to improve a skill]
+          - [Confidence, The feeling of being sure about your ability]
+          - [Expression, The act of showing ideas or feelings]
+          - [Reflection, Careful thinking about an experience]
+          - [Choice, An option that is selected]
+          - [Point of view, The position from which a story is told]
+          - [Version, One form or way a story is told]
+          - [Theory, An idea that explains a situation]
+          - [Mystery, Something difficult to explain or understand]
+          - [Outcome, The final result of a situation or story]
+          - [Fiction, Writing that tells an imaginary story and is not based on real facts]
+          - [Non-fiction, Writing that gives real information and is based on facts and true events]
+
+vocabulary:
+  - slug: creative-writing
+    title: Creative Writing
+    items: *creative-writing-words
+
+activities:
+  - slug: creative-writing-narrative
+    title: 'Narrative tenses: I was walking when the lights went out'
+    minutes: 8
+    items:
+      - id: went-out
+        type: multipleChoice
+        prompt: The student was walking upstairs when the lights suddenly ___ out.
+        options:
+          - { text: went, correct: true }
+          - {
+              text: were going,
+              feedback: 'The lights going out is a short main action, so use the past simple: *went*. The past continuous is for the background (*was walking*).',
+            }
+          - { text: go, feedback: '*Go* is the present. The story is in the past: *went*.' }
+      - id: was-raining
+        type: fillBlank
+        prompt: Complete with the past continuous of *rain* (background).
+        text: It ___ outside, and the corridors were silent.
+        blanks: [[was raining]]
+      - id: while
+        type: fillBlank
+        prompt: Complete with the past continuous of *read*.
+        text: While I ___ in bed, I heard a strange noise outside.
+        blanks: [[was reading]]
+      - id: background
+        type: trueFalse
+        prompt: 'We use the past continuous (*was / were + verb-ing*) for the main actions of a story, and the past simple for the background.'
+        answer: false
+        feedback:
+          correct: Right! It is the other way round. Past simple for main actions, past continuous for background situations.
+          incorrect: 'Past simple for the main actions (*The lights went out.*), past continuous for the background (*It was raining.*).'
+      - id: were-talking
+        type: multipleChoice
+        prompt: My friends ___ in the kitchen when the power cut started.
+        options:
+          - { text: were talking, correct: true }
+          - {
+              text: was talking,
+              feedback: '*My friends* is plural, so use *were*: *were talking*.',
+            }
+          - {
+              text: are talking,
+              feedback: '*Are talking* is the present continuous. The story is in the past: *were talking*.',
+            }
+      - id: structure
+        type: matching
+        prompt: Match each part of a story with what it contains.
+        pairs:
+          - [Beginning, The setting and the situation]
+          - [Middle, Events or problems]
+          - [Ending, A result or a change]
+          - [Point of view, The position from which a story is told]
+      - id: ending
+        type: multipleChoice
+        prompt: Which sentence is a good **ending** for a story?
+        options:
+          - {
+              text: 'In the end, the school was closed, and the student felt relieved.',
+              correct: true,
+            }
+          - {
+              text: 'That morning, something strange happened.',
+              feedback: 'This sentence starts the story: it sets the situation. An ending shows a result or a change.',
+            }
+          - {
+              text: 'The student was walking upstairs.',
+              feedback: 'This is a background detail (past continuous). An ending shows the result: *In the end…*',
+            }
+      - id: order-morning
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: That morning, something strange happened.
+
+  - slug: creative-writing-connectors
+    title: 'Connectors: first, then, but, because, so'
+    minutes: 8
+    items:
+      - id: so
+        type: multipleChoice
+        prompt: The lights went out, ___ the student stopped walking.
+        options:
+          - { text: so, correct: true }
+          - {
+              text: because,
+              feedback: '*Because* introduces a reason. Here *the student stopped walking* is the result, so use *so*.',
+            }
+          - {
+              text: although,
+              feedback: '*Although* shows contrast. Stopping is the result of the lights going out: *so*.',
+            }
+      - id: but
+        type: fillBlank
+        prompt: Complete with a contrast connector (one word).
+        text: It was quiet, ___ something felt wrong.
+        blanks: [[but, yet]]
+      - id: because
+        type: fillBlank
+        prompt: Complete with a connector that gives a reason.
+        text: For me, writing is easier when I am relaxed, ___ I don't feel pressure.
+        blanks: [[because, since, as]]
+      - id: groups
+        type: matching
+        prompt: Match each connector with its group.
+        pairs:
+          - [After that, Sequence (order)]
+          - [In addition, Adding information]
+          - [However, Contrast]
+          - [Because, Cause / effect]
+          - [If, Condition]
+      - id: sequence
+        type: multipleChoice
+        prompt: 'Which word goes in the gap? *First, the student arrived at school. ___, the lights went out.*'
+        options:
+          - { text: Then, correct: true }
+          - {
+              text: Although,
+              feedback: '*Although* shows contrast. To show the next event in order, use *Then* or *After that*.',
+            }
+          - {
+              text: Because,
+              feedback: '*Because* gives a reason. To show the next event in order, use *Then* or *After that*.',
+            }
+      - id: finally
+        type: trueFalse
+        prompt: '*Finally* is a sequence connector. We use it for the last event in a story.'
+        answer: true
+        feedback:
+          correct: 'Right! *First, then, after that, finally* show the order of events.'
+          incorrect: '*Finally* shows order: it introduces the last event (*Finally, the school was closed.*).'
+      - id: although
+        type: multipleChoice
+        prompt: Which sentence uses *although* correctly?
+        options:
+          - { text: 'Although the building was empty, the student heard footsteps.', correct: true }
+          - {
+              text: 'Although the lights went out, so the student was scared.',
+              feedback: 'Use only one connector: *Although* shows contrast, *so* shows a result. *The lights went out, so the student was scared.*',
+            }
+          - {
+              text: 'The student was scared although the lights went out.',
+              feedback: '*Although* shows contrast, but being scared is a result of the dark, not a contrast. Use *because* or *so* here.',
+            }
+      - id: order-because
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: The student felt scared because the corridor was dark.
