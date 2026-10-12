@@ -1,0 +1,900 @@
+# Cycle "Aktuelle Nachrichten", converted from the German level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-stufe-3
+slug: aktuelle-nachrichten
+title: Aktuelle Nachrichten
+goal: Über Nachrichten sprechen, mit der indirekten Rede (dass, ob, W-Wörter) und mit Vergangenheit, Gegenwart und Zukunft.
+position: 11
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Indirekte Rede" and "Vergangenheit, Gegenwart und
+    Zukunft") are NEW: the notebook has no self-correcting exercises. They were
+    written from the cycle's summary rules, examples and classic homework sentences.
+    Please check level, wording and every right answer before students see them.
+  - >-
+    The classic homework (Exercises 1–9) has NO answer key in the notebook. An answer
+    key was written for Exercises 1–6 and 8 and is in a teacher note only (never
+    student-visible). Please check it. In Exercise 2 and 3 other reporting verbs
+    (erzählte, erklärte) and keeping "gestern / morgen" are also correct. Exercise 6,
+    sentence 5 (Morgen beginnt …) is Zukunft although it is in the Präsens: a good
+    teaching point, mentioned in the key.
+  - >-
+    Indirect speech: the notebook teaches only dass / ob / W-word + indicative, which
+    is correct and normal in spoken German at B1. It does not mention Konjunktiv I,
+    which students will meet in real news (and which Activity 4, Dilemma 1, uses:
+    "dass diese Informationen privat seien"). A short info callout was added to the
+    summary (recognise Konjunktiv I: sei, habe, werde; no need to produce it). Please
+    confirm.
+  - >-
+    The summary is in Hebrew in the notebook. It is kept in Hebrew (ruleSummary
+    blocks with lang he) with the German examples and their Hebrew translations; only
+    markdown junk (stray ** and line breaks) was removed. The time-expression table
+    appears twice (Activity 1 and the summary): it is kept once in class and once in
+    the summary, as in the notebook, with the Activity 1 extra line "diese Woche → in
+    dieser Woche / in jener Woche".
+  - >-
+    Homework: the short Hebrew lines before each Mori message ("שלחו למורי", "המטרה:
+    …") are given as German intros; the Mori messages are unchanged apart from
+    removing the quotation marks around them. The Hebrew instructions of the classic
+    exercises are kept in Hebrew.
+  - >-
+    Privacy: the "Schüler:innen: Namen der Schüler:innen hier eintragen" line and all
+    "Antwort Schüler:in 1/2/3" lines were left out. The intro example "Ich bin Shachar"
+    was changed to "Ich bin Noa" in case it is a real person's name (teacher or
+    student). The other first names (Dana, Daniel, Noa, Maya, Tom, Lea, Amir, Sarah,
+    Ben, David) are example names in model sentences and were kept. "Ynet" (an Israeli
+    news site, no link) is kept in the example.
+  - >-
+    Vocabulary: the notebook has NO vocabulary list for this cycle (only the Quizlet
+    link and two glossed terms, Meinungsfreiheit / Pressefreiheit). A word list of 30
+    items was made from the cycle's own words; all Hebrew glosses except those two are
+    NEW. Please check them, or replace the list with the Quizlet set.
+  - >-
+    Corrections and small changes: broken bold marks and line breaks (e.g. "**Ich bin
+    __.****" and the Quizlet label "Deutsch - Hebräisch****") removed; "Der Lehrer /
+    die Lehrerin kann aus den folgenden acht Fragen auswählen" moved to a teacher note;
+    Activity 2, Phase 1 "Dana sagte, dass sie die Wettervorhersage fast nie schaut" is
+    kept (fine); Activity 3 empty answer lines ("-----") became answer boxes. Times:
+    the notebook gives only "ungefähr zehn Minuten" for the survey (Activity 2, Phase
+    2) and "zehn Minuten" to prepare the debate (Activity 4); these are in the steps,
+    and no activity minutes are set.
+  - >-
+    The Quizlet link lost its tracking parameter (?new). The notebook names no other
+    external resources (no slides, videos or articles) in this cycle.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: aktuelle-nachrichten-unterricht
+    title: 'Unterricht: Aktuelle Nachrichten'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Aktuelle Nachrichten
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Indirekte Rede mit dass, ob und W-Wörtern
+            description: '*Er sagte, dass die Situation ruhig ist. Sie fragte, ob die Straße offen ist. Er fragte, wann die Demonstration beginnt.*'
+          - name: Vergangenheit, Gegenwart und Zukunft
+            description: '*Letzte Woche hat … begonnen. Heute ist … Morgen wird es … geben.*'
+      - id: quizlet
+        type: externalLink
+        label: Aktuelle Nachrichten auf Quizlet (Deutsch – Hebräisch)
+        url: https://quizlet.com/il/1201448051/aktuelle-nachrichten-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Einstiegsrunde
+      - id: intro
+        type: sentenceFrame
+        prompt: Vervollständige die Sätze.
+        frame: Ich bin ___. Wenn ich wissen möchte, was in der Welt passiert, ___.
+        example: Ich bin Noa. Wenn ich wissen möchte, was in der Welt passiert, öffne ich Ynet auf meinem Handy oder höre Nachrichten im Radio.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Wie oft sollte man deiner Meinung nach Nachrichten lesen, sehen oder hören? Warum?
+            frame: Ich finde, man sollte ___ Nachrichten ___, weil ___.
+          - question: Welche Nachrichten interessieren dich am meisten (Politik, Wirtschaft, Sport, Kultur, Wissenschaft, lokale oder internationale Nachrichten)? Warum?
+            frame: Mich interessieren vor allem ___, weil ___.
+          - question: Was bedeutet Meinungsfreiheit für dich? Sollte man immer alles sagen dürfen?
+            frame: Für mich bedeutet Meinungsfreiheit, dass ___.
+          - question: Gab es in deiner Stadt oder Region in letzter Zeit eine Demonstration, eine Krise oder ein anderes wichtiges Ereignis? Was ist passiert?
+            frame: Vor kurzem hat es in ___ ___ gegeben. ___ ist passiert.
+          - question: Wie haben soziale Medien verändert, wie wir Nachrichten konsumieren? Wie war es früher? Wie ist es heute? Wie wird es deiner Meinung nach in Zukunft sein?
+            frame: Früher ___. Heute ___. In Zukunft wird ___.
+          - question: Gibt es einen Journalisten oder eine Journalistin, den oder die du gut findest? Warum?
+            frame: Ich finde ___ gut, weil er / sie ___.
+          - question: Sind Kinder in Israel heute stärker mit Nachrichten konfrontiert als früher? Welche Auswirkungen kann das haben?
+            frame: Ich glaube, dass Kinder heute ___. Das kann dazu führen, dass ___.
+          - question: Hast du schon einmal eine Nachricht oder Wettervorhersage gesehen, die falsch war? Was ist passiert?
+            frame: Einmal habe ich ___ gesehen. Später ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Schlagzeilen weitergeben'
+        skills: ['Indirekte Rede mit dass, ob und W-Wörtern']
+        steps:
+          - 'Lies die Erklärung und die Tabelle mit den Zeitangaben unten.'
+          - '**Stufe 1:** Die Lehrkraft zeigt direkte Aussagen oder Schlagzeilen. Formuliere sie mit **dass** neu.'
+          - '**Stufe 2:** Schreib **zwei eigene Schlagzeilen oder kurze Nachrichten** und schick sie der Lehrkraft.'
+          - 'Danach bekommst du die Nachrichten einer anderen Person und berichtest: *Noa sagte, dass … Daniel erklärte, dass … Maya berichtete, dass …*'
+        example: |-
+          *„Heute beginnt ein internationales Treffen.“ → Die Nachrichtensprecherin sagte, dass an diesem Tag ein internationales Treffen beginnt.*
+          *„Morgen wird das Wetter wärmer.“ → Der Reporter sagte, dass das Wetter am nächsten Tag wärmer wird.*
+      - id: act1-explanation
+        type: callout
+        tone: info
+        title: Indirekte Rede
+        text: |-
+          Wenn wir erzählen, **was eine andere Person gesagt hat**, benutzen wir die indirekte Rede. Auf B1 üben wir vor allem:
+          **sagen + dass:** Der Reporter sagte: „Die Situation ist ruhig.“ → *Der Reporter sagte, dass die Situation ruhig ist.*
+          **fragen + ob:** Die Journalistin fragte: „Ist die Straße wieder offen?“ → *Die Journalistin fragte, ob die Straße wieder offen ist.*
+          **fragen + Fragewort:** Der Reporter fragte: „Wann beginnt die Demonstration?“ → *Der Reporter fragte, wann die Demonstration beginnt.*
+          **Wichtig für Deutsch:** Anders als im Englischen müssen wir die Zeitform **nicht automatisch zurückverschieben**. „Das Wetter ist heute schlecht.“ → *Er sagte, dass das Wetter an diesem Tag schlecht **ist**.* (nicht automatisch *war*). Die Zeitform hängt davon ab, **wann die Information gültig ist**.
+      - id: act1-times
+        type: table
+        caption: Zeitangaben beim späteren Erzählen (nicht immer notwendig, sie hängen vom Kontext ab)
+        header: [Direkte Rede, Beim späteren Erzählen]
+        rows:
+          - [heute, an diesem Tag]
+          - [morgen, am nächsten Tag]
+          - [gestern, am Tag davor]
+          - [jetzt, zu diesem Zeitpunkt]
+          - [hier, dort]
+          - [diese Woche, in dieser Woche / in jener Woche]
+          - [nächste Woche, in der folgenden Woche]
+          - [letzte Woche, in der Woche davor]
+      - id: act1-stufe1
+        type: discussionQuestions
+        title: 'Stufe 1: Formuliere mit dass neu'
+        items:
+          - question: „Heute beginnt ein internationales Treffen.“
+            frame: Die Nachrichtensprecherin sagte, dass ___.
+          - question: „Morgen wird das Wetter wärmer.“
+            frame: Der Reporter sagte, dass ___.
+          - question: „Gestern gab es eine große Demonstration.“
+            frame: Die Journalistin sagte, dass ___.
+          - question: „Wir öffnen die Straße nächste Woche wieder.“
+            frame: Die Stadt sagte, dass ___.
+      - id: act1-stufe2
+        type: discussionQuestions
+        title: 'Stufe 2: Meine Schlagzeilen'
+        items:
+          - question: Meine erste Schlagzeile oder kurze Nachricht
+          - question: Meine zweite Schlagzeile oder kurze Nachricht
+          - question: Bericht über die Nachrichten einer anderen Person
+            frame: ___ sagte / erklärte / berichtete, dass ___.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Nachrichten-Umfrage'
+        skills: ['Indirekte Rede mit dass, ob und W-Wörtern']
+        steps:
+          - 'Ihr macht eine Umfrage darüber, wie die anderen Nachrichten konsumieren. Danach berichtet ihr der Klasse, **was eure Partner gesagt haben**.'
+          - '**Phase 1, Beispiel:** Die Lehrkraft stellt einer Person zwei Fragen und berichtet die Antworten in indirekter Rede.'
+          - '**Phase 2, Umfrage (ungefähr 10 Minuten):** Arbeitet zu zweit oder in kleinen Gruppen. Stellt die Fragen unten.'
+          - '**Phase 3, Berichten:** Jede Person berichtet über die Antworten ihres Partners / ihrer Partnerin.'
+          - '**Phase 4, Schlussfolgerungen (optional):** Fasst die Ergebnisse der Klasse zusammen.'
+        example: |-
+          *Frage: Wie oft liest oder siehst du Nachrichten? – Ich lese jeden Morgen Nachrichten. → Dana sagte, dass sie jeden Morgen Nachrichten liest.*
+          *Frage: Schaust du regelmäßig die Wettervorhersage? – Nein, fast nie. → Dana sagte, dass sie die Wettervorhersage fast nie schaut.*
+          *Bericht: Daniel sagte, dass er jeden Tag Nachrichten liest. Er erzählte, dass er meistens soziale Medien benutzt. Er sagte, dass ihn internationale Nachrichten mehr interessieren. Er erzählte, dass er diese Woche eine Nachricht über die Wirtschaft gesehen hat.*
+          *Schlussfolgerungen: Sechs Schüler sagten, dass sie täglich Nachrichten konsumieren. Die meisten Schüler sagten, dass sie auch soziale Medien benutzen. Nur zwei Personen sagten, dass sie regelmäßig Nachrichten im Fernsehen schauen.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Fragen für die Umfrage
+        items:
+          - question: Wie oft konsumierst du Nachrichten? (jeden Tag, mehrmals pro Woche, nur bei wichtigen Ereignissen, selten, andere Antwort)
+            frame: Er / Sie sagte, dass er / sie ___ Nachrichten konsumiert.
+          - question: Wo bekommst du deine Nachrichten (Fernsehen, Nachrichten-Websites, Instagram, TikTok, X, Telegram, Radio)? Warum benutzt du diese Quelle?
+            frame: Er / Sie erzählte, dass er / sie ___ benutzt, weil ___.
+          - question: Interessierst du dich mehr für lokale oder internationale Nachrichten? Warum?
+            frame: Er / Sie sagte, dass ihn / sie ___ mehr interessieren.
+          - question: Welche Schlagzeile aus dieser Woche erinnerst du besonders gut?
+            frame: Er / Sie erzählte, dass er / sie diese Woche ___ gesehen hat.
+          - question: Schaust du die Wettervorhersage? War die Vorhersage diese Woche richtig?
+            frame: Er / Sie sagte, dass ___.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Nachrichten aus Israel und aus der Welt'
+        skills:
+          ['Indirekte Rede mit dass, ob und W-Wörtern', 'Vergangenheit, Gegenwart und Zukunft']
+        steps:
+          - 'Arbeitet zu zweit. Denkt an zwei Nachrichten, die ihr in letzter Zeit gesehen, gehört oder gelesen habt: eine aus **Israel** und eine aus einem **anderen Land**. Füllt die Fragen unten aus.'
+          - '**Partnertausch:** Nach einigen Minuten wechselt ihr die Partner. Person A erzählt eine Nachricht, Person B hört zu und macht sich Notizen. Danach wechseln die Rollen.'
+          - '**Zurück im Plenum:** Jetzt erzählt jede Person **nicht ihre eigene Nachricht**, sondern die Nachricht ihres Partners / ihrer Partnerin.'
+        example: '*Tom erzählte mir, dass es letzte Woche in Frankreich eine große Demonstration gegeben hat. Er sagte, dass viele Menschen gegen eine neue Regel protestiert haben. Er erklärte, dass die Situation jetzt ruhiger ist.*'
+      - id: act3-israel
+        type: discussionQuestions
+        title: Nachricht aus Israel
+        items:
+          - question: 'Art des Ereignisses: Demonstration, Krise, Katastrophe, politische Nachricht, wirtschaftliche Nachricht, kulturelles Ereignis, wissenschaftliche Nachricht oder anderes?'
+          - question: Thema
+          - question: Wo und wann ist es passiert?
+          - question: Formuliere die Schlagzeile mit deinen eigenen Worten.
+          - question: Quelle
+          - question: Was wurde gesagt? (Du kannst das Zitat erfinden, wenn du dich nicht genau erinnerst.)
+            frame: „___“
+      - id: act3-world
+        type: discussionQuestions
+        title: Internationale Nachricht
+        items:
+          - question: 'Art des Ereignisses: Demonstration, Krise, Katastrophe, politische Nachricht, wirtschaftliche Nachricht, kulturelles Ereignis, wissenschaftliche Nachricht oder anderes?'
+          - question: Thema
+          - question: Wo und wann ist es passiert?
+          - question: Formuliere die Schlagzeile mit deinen eigenen Worten.
+          - question: Quelle
+          - question: Was wurde gesagt?
+            frame: „___“
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Debatte über Meinungsfreiheit und Pressefreiheit'
+        skills: ['Vergangenheit, Gegenwart und Zukunft']
+        steps:
+          - 'Zwei Begriffe: **die Meinungsfreiheit** (חופש הביטוי) und **die Pressefreiheit** (חופש העיתונות).'
+          - 'Wählt ein Dilemma unten. Die Klasse wird in zwei Gruppen geteilt: **Gruppe A** unterstützt die Veröffentlichung, **Gruppe B** ist dagegen.'
+          - 'Ihr habt **zehn Minuten** Zeit, Argumente vorzubereiten. Sprecht dabei über **Vergangenheit, Gegenwart und Zukunft** und benutzt die Redemittel unten.'
+          - 'Debattiert und beantwortet die Diskussionsfragen zu eurem Dilemma.'
+      - id: dilemma1-title
+        type: heading
+        level: 4
+        text: 'Dilemma 1: Das Privatleben einer berühmten Person'
+      - id: dilemma1
+        type: text
+        text: Eine berühmte Sängerin war letzte Woche im Krankenhaus. Ein Nachrichtensender veröffentlichte Informationen über ihren Gesundheitszustand, obwohl sie keine Erlaubnis gegeben hatte. Viele Fans wollten wissen, was passiert war. Ihre Familie sagte aber, dass diese Informationen privat seien.
+      - id: dilemma1-questions
+        type: discussionQuestions
+        items:
+          - question: Durften die Medien diese Informationen veröffentlichen?
+          - question: Was hätte der Sender anders machen sollen?
+          - question: Was wird passieren, wenn Medien regelmäßig private Informationen veröffentlichen?
+            frame: Wenn das so weitergeht, wird ___.
+      - id: dilemma2-title
+        type: heading
+        level: 4
+        text: 'Dilemma 2: Medien und Wahlen'
+      - id: dilemma2
+        type: text
+        text: 'Während eines Wahlkampfs gab ein Nachrichtensender einer politischen Partei deutlich mehr Sendezeit als den anderen Parteien. Einige Menschen sagten: „Ein privater Sender darf selbst entscheiden, was er zeigt.“ Andere sagten: „Bei Wahlen müssen alle Parteien fair behandelt werden.“'
+      - id: dilemma2-questions
+        type: discussionQuestions
+        items:
+          - question: Sollten Nachrichtensender während eines Wahlkampfs völlig frei entscheiden können? Oder sollte es Regeln geben?
+          - question: Was ist früher passiert?
+            frame: Früher ___.
+          - question: Wie beeinflusst es die Menschen heute?
+          - question: Was könnte in Zukunft passieren?
+            frame: In Zukunft wird ___.
+      - id: dilemma3-title
+        type: heading
+        level: 4
+        text: 'Dilemma 3: Falsche Nachrichten in sozialen Medien'
+      - id: dilemma3
+        type: text
+        text: 'Letzten Monat verbreitete sich in sozialen Medien eine Nachricht: „Morgen eröffnet ein neues Einkaufszentrum in Tel Aviv!“ Tausende Menschen kamen. Die Information war aber falsch, und nur wenige Geschäfte waren geöffnet. Einige Menschen sagten: „Jeder darf online schreiben, was er möchte.“ Andere sagten: „Plattformen müssen Fake News schneller entfernen.“'
+      - id: dilemma3-questions
+        type: discussionQuestions
+        items:
+          - question: Sollte man online alles veröffentlichen dürfen?
+          - question: Wer trägt Verantwortung für falsche Informationen?
+          - question: Was könnte passieren, wenn eine falsche Nachricht viral geht?
+            frame: Wenn eine falsche Nachricht viral geht, ___.
+      - id: debate-phrases
+        type: table
+        caption: Hilfreiche Redemittel für die Debatte
+        header: [Funktion, Redemittel]
+        rows:
+          - [
+              Meinung ausdrücken,
+              'Ich denke, dass … / Meiner Meinung nach … / Ich glaube, dass … / Für mich ist klar, dass …',
+            ]
+          - [Zustimmen, 'Da stimme ich dir zu. / Das sehe ich genauso. / Du hast recht, aber …']
+          - [
+              Widersprechen,
+              'Da bin ich anderer Meinung. / Das sehe ich anders. / Ich verstehe dein Argument, aber …',
+            ]
+          - [Über die Vergangenheit sprechen, Früher … / Letzte Woche … / In der Vergangenheit …]
+          - [
+              Über die Zukunft sprechen,
+              'In Zukunft wird … / Ich glaube, dass … passieren wird. / Wenn das so weitergeht, wird …',
+            ]
+          - [
+              Hypothetische Situationen,
+              'Wenn das passieren würde, … / Wenn die Nachricht falsch wäre, … / Die Medien könnten …',
+            ]
+      - id: act5
+        type: classActivity
+        title: 'Aktivität 5: Der Gute-Nachrichten-Sender'
+        skills: ['Vergangenheit, Gegenwart und Zukunft']
+        steps:
+          - 'Wir eröffnen einen Nachrichtensender, der **nur gute Nachrichten** sendet. Jede Person erfindet eine positive Nachricht. Sie kann realistisch oder kreativ sein.'
+          - 'Schreib deine Nachricht mit den fünf Teilen unten: Schlagzeile, Vergangenheit, Gegenwart, Zukunft und wie lange die positive Entwicklung weitergeht.'
+          - 'Präsentiere deine Nachricht der Klasse wie ein Nachrichtensprecher / eine Nachrichtensprecherin.'
+        example: |-
+          *Schlagzeile: Tel Aviv eröffnet zehn neue öffentliche Parks*
+          *Letztes Jahr hat die Stadt ein neues Projekt gestartet. Heute werden bereits drei neue Parks gebaut. Im nächsten Jahr werden sieben weitere Parks eröffnet. Wenn das Projekt erfolgreich ist, könnten auch andere Städte ähnliche Projekte starten.*
+      - id: act5-parts
+        type: discussionQuestions
+        title: Meine gute Nachricht
+        items:
+          - question: 1. Schlagzeile
+          - question: 2. Was ist passiert? Benutze die Vergangenheit.
+            frame: Letzte Woche / Gestern / Vor einem Monat ___.
+          - question: 3. Was passiert jetzt? Benutze das Präsens.
+            frame: Heute / Im Moment / Jetzt ___.
+          - question: 4. Was wird in Zukunft passieren? Benutze Futur I oder Präsens mit einer Zeitangabe.
+            frame: Nächste Woche wird ___. / In Zukunft werden ___. / Morgen ___.
+          - question: 5. Wie lange wird die positive Entwicklung weitergehen?
+            frame: Die positive Entwicklung wird ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: die **indirekte Rede mit dass, ob und
+          W-Wörtern** (Aktivitäten 1–3) und **Vergangenheit, Gegenwart und Zukunft
+          verbinden** (Aktivitäten 3–5). Das Heft gibt keine Gesamtzeit an: Wähle die
+          Aktivitäten nach der verfügbaren Zeit.
+      - id: n-intro
+        anchor: intro
+        text: Gib zuerst dein eigenes Beispiel.
+      - id: n-warmup
+        anchor: warmup
+        text: Wähle aus den acht Fragen aus. Achte bei Frage 5 darauf, dass die Schüler alle drei Zeiten benutzen (früher / heute / in Zukunft).
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Lösungen Stufe 1: 1. *… dass an diesem Tag ein internationales Treffen
+          beginnt.* 2. *… dass das Wetter am nächsten Tag wärmer wird.* 3. *… dass es am
+          Tag davor eine große Demonstration gegeben hat.* 4. *… dass sie die Straße in
+          der folgenden Woche wieder öffnet.* Für Stufe 2 schicken die Schüler ihre
+          Schlagzeilen per Chat; verteil sie danach neu, sodass jede Person die
+          Nachrichten einer anderen Person berichtet.
+      - id: n-act2
+        anchor: act2
+        text: Mach Phase 1 selbst mit einer Person vor. Achte beim Berichten auf das Pronomen (*ich → er / sie*) und auf das Verb am Ende nach *dass*.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          In Dilemma 1 steht *dass diese Informationen privat seien*: Das ist Konjunktiv I,
+          typisch für die Nachrichtensprache. Die Schüler sollen ihn erkennen, aber nicht
+          selbst benutzen müssen; *dass … privat sind* ist im Gespräch auch richtig.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: aktuelle-nachrichten-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: סיכום דקדוקי
+      - id: rules-indirekt
+        type: ruleSummary
+        lang: he
+        skill: 'מיומנות 1: דיבור עקיף בגרמנית (Indirekte Rede)'
+        rules:
+          - text: 'בדיבור עקיף אנחנו מספרים **מה אדם אחר אמר או שאל**, בלי לצטט אותו בדיוק. ברמת B1 נתמקד בעיקר בשלושה מבנים.'
+          - text: '**1. sagen + dass:** כשאנחנו מספרים מה מישהו אמר. שימו לב: אחרי **dass** הפועל המוטה עובר לסוף המשפט.'
+            examples:
+              - '„Ich lese jeden Morgen die Nachrichten.“ → Dana sagte, dass sie jeden Morgen die Nachrichten liest. (דנה אמרה שהיא קוראת חדשות כל בוקר.)'
+              - Er sagte, dass er heute arbeitet. (הוא אמר שהוא עובד היום.)
+              - Sie sagte, dass sie die Nachricht schon gesehen hat. (היא אמרה שהיא כבר ראתה את הכתבה.)
+          - text: '**2. fragen + ob:** כשאנחנו מדווחים על שאלת כן / לא. גם אחרי **ob** הפועל מגיע לסוף.'
+            examples:
+              - '„Schaust du jeden Tag Nachrichten?“ → Sie fragte, ob ich jeden Tag Nachrichten schaue. (היא שאלה אם אני צופה בחדשות כל יום.)'
+              - Er fragte, ob die Nachricht wahr ist. (הוא שאל אם הידיעה נכונה.)
+          - text: '**3. שאלות עם מילת שאלה:** אם בשאלה המקורית יש מילת שאלה כמו **wo, wann, warum, wie, was**, אנחנו שומרים עליה בדיבור העקיף.'
+            examples:
+              - '„Wo liest du Nachrichten?“ → Er fragte, wo ich Nachrichten lese.'
+              - '„Wann beginnt die Demonstration?“ → Sie fragte, wann die Demonstration beginnt.'
+          - text: '**שינוי כינויי הגוף:** כשעוברים מדיבור ישיר לעקיף, לפעמים צריך לשנות גם את כינוי הגוף.'
+            examples:
+              - '„Ich lese jeden Morgen Nachrichten.“ → Dana sagte, dass **sie** jeden Morgen Nachrichten liest.'
+              - '„Wir schauen heute die Nachrichten.“ → Die Schüler sagten, dass **sie** heute die Nachrichten schauen.'
+          - text: '**שינוי ביטויי זמן ומקום:** במקרים מסוימים גם ביטויי הזמן משתנים, במיוחד אם אנחנו מספרים את הדברים מאוחר יותר (ראו טבלה). אבל חשוב: בגרמנית השינוי הזה **לא תמיד חובה**. הוא תלוי בזמן ובמצב שבו אנחנו מספרים את הדברים.'
+            examples:
+              - '„Morgen gibt es eine Demonstration.“ → Er sagte, dass es am nächsten Tag eine Demonstration gibt.'
+          - text: '**הבדל חשוב מאנגלית:** באנגלית בדרך כלל יש שינוי זמן בדיבור עקיף (“I am tired.” → She said she **was** tired). בגרמנית אין חובה אוטומטית לשנות את הזמן: אפשר לומר *Sie sagte, dass sie müde ist*, אם המידע עדיין נכון. לכן ברמת B1 חשוב יותר לבחור זמן שמתאים למשמעות ולא לבצע שינוי אוטומטי.'
+            examples:
+              - '„Ich bin müde.“ → Sie sagte, dass sie müde ist.'
+      - id: times-table
+        type: table
+        caption: שינוי ביטויי זמן ומקום
+        header: [ישיר, עקיף]
+        rows:
+          - [heute, an diesem Tag]
+          - [morgen, am nächsten Tag]
+          - [gestern, am Tag davor]
+          - [nächste Woche, in der folgenden Woche]
+          - [letzte Woche, in der Woche davor]
+          - [hier, dort]
+          - [jetzt, zu diesem Zeitpunkt]
+      - id: konjunktiv1
+        type: callout
+        tone: info
+        title: In den Nachrichten
+        text: 'In Zeitungen und Nachrichtensendungen hört und liest man oft eine andere Form, den **Konjunktiv I**: *Der Reporter sagte, die Situation **sei** ruhig. Die Familie sagte, die Informationen **seien** privat.* Diese Form musst du auf B1 nur erkennen. Im Gespräch sagst du: *Der Reporter sagte, dass die Situation ruhig ist.*'
+      - id: rules-zeiten
+        type: ruleSummary
+        lang: he
+        skill: 'מיומנות 2: שילוב עבר, הווה ועתיד'
+        rules:
+          - text: 'כשמדברים על חדשות, אנחנו כמעט תמיד צריכים לעבור בין כמה זמנים.'
+            examples:
+              - Letzte Woche hat die Regierung eine neue Entscheidung bekannt gegeben. Heute diskutieren viele Menschen darüber. Morgen wird es eine Demonstration geben. (בשבוע שעבר הממשלה הודיעה על החלטה חדשה. היום הרבה אנשים דנים בכך. מחר תהיה הפגנה.)
+          - text: '**עבר:** לרוב משתמשים ב־**Perfekt** בדיבור.'
+            examples:
+              - Gestern hat der Reporter mit dem Minister gesprochen.
+              - Letzte Woche hat eine Demonstration stattgefunden.
+          - text: 'עם פעלים מסוימים נפוץ גם **Präteritum**.'
+            examples: [Es gab eine Krise., Die Situation war schwierig.]
+          - text: '**הווה:** משתמשים ב־**Präsens** בשביל מה שקורה עכשיו או בשביל עובדות.'
+            examples:
+              - Heute diskutieren die Menschen darüber.
+              - Die Medien berichten über das Thema.
+              - Viele Menschen lesen Nachrichten online.
+          - text: '**עתיד:** אפשר להשתמש ב־**werden + Infinitiv**. אבל בגרמנית טבעי מאוד גם להשתמש בהווה עם ביטוי זמן. שתי האפשרויות נכונות.'
+            examples:
+              - Morgen wird die Regierung eine Erklärung veröffentlichen.
+              - Morgen veröffentlicht die Regierung eine Erklärung.
+          - text: '**שילוב של כמה זמנים:**'
+            examples:
+              - Letzte Woche hat die Krise begonnen, heute ist die Situation ruhiger, und nächste Woche werden neue Gespräche stattfinden.
+              - Der Reporter sagte, dass die Krise letzte Woche begonnen hat, dass die Situation heute ruhiger ist und dass nächste Woche neue Gespräche stattfinden werden.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: >-
+          Wiederhole die zwei Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel
+          für jede Regel, mit einer aktuellen Nachricht. Erinnere an die Wortstellung:
+          Nach *dass, ob* und W-Wörtern steht das Verb am Ende.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: aktuelle-nachrichten-hausaufgaben
+    title: Hausaufgaben
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben
+      - id: classic-title
+        type: heading
+        level: 3
+        text: שיעורי בית קלאסיים
+      - id: ex1-title
+        type: heading
+        level: 4
+        text: 'Übung 1: dass oder ob?'
+      - id: ex1-instr
+        type: text
+        lang: he
+        text: השלימו עם **dass** או **ob**.
+      - id: ex1
+        type: discussionQuestions
+        items:
+          - question: Der Reporter sagte, ___ die Situation ruhig ist.
+          - question: Die Journalistin fragte, ___ die Straße wieder offen ist.
+          - question: Maria sagte, ___ sie jeden Abend Nachrichten schaut.
+          - question: Der Lehrer fragte, ___ wir die Schlagzeile verstanden haben.
+          - question: Tom sagte, ___ er soziale Medien als Nachrichtenquelle benutzt.
+          - question: Die Reporterin fragte, ___ die Information wirklich stimmt.
+          - question: Dana sagte, ___ sie internationale Nachrichten interessanter findet.
+          - question: Er fragte, ___ der Artikel glaubwürdig ist.
+      - id: ex2-title
+        type: heading
+        level: 4
+        text: 'Übung 2: Indirekte Rede'
+      - id: ex2-instr
+        type: text
+        lang: he
+        text: 'הפכו לדיבור עקיף. דוגמה: „Ich lese jeden Morgen Nachrichten.“ → David sagte, dass er jeden Morgen Nachrichten liest.'
+      - id: ex2
+        type: discussionQuestions
+        items:
+          - question: 'Lea: „Ich schaue selten Fernsehen.“'
+          - question: 'Daniel: „Ich lese Nachrichten auf meinem Handy.“'
+          - question: 'Maya: „Ich interessiere mich für internationale Nachrichten.“'
+          - question: 'Amir: „Ich habe gestern einen interessanten Artikel gelesen.“'
+          - question: 'Noa: „Ich werde morgen die Nachrichten schauen.“'
+          - question: 'Tom: „Ich glaube dieser Quelle nicht.“'
+          - question: 'Sarah: „Ich höre jeden Morgen Radio.“'
+          - question: 'Ben: „Ich habe die Nachricht auf Instagram gesehen.“'
+      - id: ex3-title
+        type: heading
+        level: 4
+        text: 'Übung 3: Ja-/Nein-Fragen in der indirekten Rede'
+      - id: ex3-instr
+        type: text
+        lang: he
+        text: 'הפכו את השאלות לדיבור עקיף. דוגמה: „Schaust du jeden Abend Nachrichten?“ → Sie fragte, ob ich jeden Abend Nachrichten schaue.'
+      - id: ex3
+        type: discussionQuestions
+        items:
+          - question: „Liest du Nachrichten online?“
+          - question: „Ist diese Quelle zuverlässig?“
+          - question: „Hast du die Nachricht gestern gesehen?“
+          - question: „Wird es morgen regnen?“
+          - question: „Interessierst du dich für Politik?“
+          - question: „Glaubst du diese Meldung?“
+      - id: ex4-title
+        type: heading
+        level: 4
+        text: 'Übung 4: Fragen mit Fragewort'
+      - id: ex4-instr
+        type: text
+        lang: he
+        text: 'שאלות עם מילת שאלה. דוגמה: „Wo liest du Nachrichten?“ → Er fragte, wo ich Nachrichten lese.'
+      - id: ex4
+        type: discussionQuestions
+        items:
+          - question: „Wann beginnt die Demonstration?“
+          - question: „Warum liest du keine Nachrichten?“
+          - question: „Wo hast du diese Information gefunden?“
+          - question: „Wie oft schaust du die Nachrichten?“
+          - question: „Was ist gestern passiert?“
+          - question: „Welche Nachrichten interessieren dich?“
+      - id: ex5-title
+        type: heading
+        level: 4
+        text: 'Übung 5: Die passende Zeitform'
+      - id: ex5-instr
+        type: text
+        lang: he
+        text: בחרו את הזמן המתאים. השלימו את המשפטים בפועל שבסוגריים.
+      - id: ex5
+        type: discussionQuestions
+        items:
+          - question: Gestern ___ die Regierung eine Erklärung ___. (veröffentlichen)
+          - question: Heute ___ viele Menschen über das Thema. (diskutieren)
+          - question: Morgen ___ der Minister eine Pressekonferenz ___. (geben)
+          - question: Letzte Woche ___ es eine große Demonstration. (geben)
+          - question: Im Moment ___ die Medien über die Krise. (berichten)
+          - question: Nächste Woche ___ neue Gespräche ___. (beginnen)
+          - question: Vor zwei Tagen ___ ich einen interessanten Artikel ___. (lesen)
+          - question: In Zukunft ___ soziale Medien wahrscheinlich noch wichtiger ___. (werden)
+      - id: ex6-title
+        type: heading
+        level: 4
+        text: 'Übung 6: Vergangenheit, Gegenwart oder Zukunft?'
+      - id: ex6-instr
+        type: text
+        lang: he
+        text: 'כתבו ליד כל משפט: **V** = Vergangenheit, **G** = Gegenwart, **Z** = Zukunft.'
+      - id: ex6
+        type: discussionQuestions
+        items:
+          - question: Die Regierung wird morgen eine Erklärung veröffentlichen.
+          - question: Gestern hat es stark geregnet.
+          - question: Heute diskutieren viele Menschen über das Thema.
+          - question: Letzte Woche gab es eine Demonstration.
+          - question: Morgen beginnt eine internationale Konferenz.
+          - question: Die Medien berichten im Moment darüber.
+          - question: Der Reporter hat gestern einen Politiker interviewt.
+          - question: Nächste Woche werden neue Informationen veröffentlicht.
+      - id: ex7-title
+        type: heading
+        level: 4
+        text: 'Übung 7: Drei Zeiten verbinden'
+      - id: ex7-instr
+        type: text
+        lang: he
+        text: 'כתבו שלושה משפטים על כל נושא: 1. מה קרה בעבר, 2. מה קורה עכשיו, 3. מה יקרה בעתיד.'
+      - id: ex7
+        type: discussionQuestions
+        items:
+          - question: 'Thema 1: Eine Demonstration'
+            frame: Letzte Woche ___. Heute ___. Morgen ___.
+          - question: 'Thema 2: Das Wetter'
+            frame: Letzte Woche ___. Heute ___. Morgen ___.
+          - question: 'Thema 3: Soziale Medien'
+            frame: Früher ___. Heute ___. In Zukunft ___.
+      - id: ex8-title
+        type: heading
+        level: 4
+        text: 'Übung 8: Korrigiere den Fehler'
+      - id: ex8-instr
+        type: text
+        lang: he
+        text: תקנו את הטעות. בכל משפט יש טעות אחת.
+      - id: ex8
+        type: discussionQuestions
+        items:
+          - question: Er sagte, dass er liest jeden Morgen Nachrichten.
+          - question: Sie fragte, dass ich die Nachrichten schaue.
+          - question: Tom sagte, dass ich soziale Medien benutze.
+          - question: Er fragte, wo lese ich Nachrichten.
+          - question: Sie sagte, dass sie gestern einen Artikel gelesen.
+          - question: Der Journalist sagte, dass morgen wird es regnen.
+          - question: Anna fragte, ob ist die Nachricht wahr.
+          - question: Er sagte, dass er hat die Nachricht gesehen.
+      - id: ex9-title
+        type: heading
+        level: 4
+        text: 'Übung 9: Schreiben'
+      - id: ex9-instr
+        type: text
+        lang: he
+        text: 'בחרו ידיעה אחת שראיתם או שמעתם לאחרונה. כתבו **6 עד 8 משפטים**. כללו: מה קרה, איפה זה קרה, מתי זה קרה, מה קורה עכשיו, מה צפוי לקרות בהמשך, מה מישהו אמר בנושא. השתמשו לפחות פעם אחת ב־**dass** ולפחות בשלושה זמנים: **Vergangenheit + Gegenwart + Zukunft**.'
+      - id: ex9
+        type: reflection
+        prompt: Meine Nachricht (6–8 Sätze)
+      - id: mori-title
+        type: heading
+        level: 3
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere eine Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-interview
+        type: aiTutorPrompt
+        title: 'Aufgabe 1: Interview über Nachrichtengewohnheiten'
+        intro: 'Ziel: *dass*, *ob* und indirekte Fragen üben.'
+        message: Hallo Mori! Stell mir bitte 6 Fragen darüber, wie ich Nachrichten konsumiere. Stelle mir Ja-/Nein-Fragen und W-Fragen. Nachdem ich geantwortet habe, bitte mich, meine eigenen Antworten in indirekter Rede wiederzugeben. Korrigiere besonders meine Wortstellung nach dass und ob.
+      - id: mori-reporter
+        type: aiTutorPrompt
+        title: 'Aufgabe 2: Ich bin Reporter'
+        intro: 'Mori gibt dir zum Beispiel: „Die Straße ist heute geschlossen.“ „Wir öffnen sie morgen wieder.“ Und du sagst: *Der Reporter sagte, dass die Straße an diesem Tag geschlossen ist. Er sagte auch, dass sie am nächsten Tag wieder geöffnet wird.*'
+        message: Gib mir bitte eine kurze erfundene Nachricht auf B1-Niveau. Schreibe sie zuerst als direkte Aussagen von zwei verschiedenen Personen. Danach werde ich berichten, was die Personen gesagt haben. Korrigiere meine indirekte Rede, Pronomen und Zeitangaben.
+      - id: mori-zeiten
+        type: aiTutorPrompt
+        title: 'Aufgabe 3: Gestern, heute und morgen'
+        message: 'Gib mir ein aktuelles Nachrichtenthema. Stelle mir danach drei Fragen: Was ist gestern passiert? Was passiert heute? Was wird morgen passieren? Ich möchte Vergangenheit, Gegenwart und Zukunft üben. Korrigiere meine Zeitformen.'
+      - id: mori-geruecht
+        type: aiTutorPrompt
+        title: 'Aufgabe 4: Wahrheit oder Gerücht?'
+        message: Erfinde drei kurze Nachrichten auf B1-Niveau. Zwei sollen glaubwürdig sein und eine soll ein Gerücht oder Fake News sein. Ich werde erklären, welche Nachricht ich nicht glaube und warum. Danach soll ich berichten, was du über jede Nachricht gesagt hast. Korrigiere meine indirekte Rede.
+      - id: mori-sendung
+        type: aiTutorPrompt
+        title: 'Aufgabe 5: Nachrichtensimulation'
+        message: Wir machen eine Nachrichtensendung. Du bist der Nachrichtensprecher und ich bin Reporter. Gib mir Informationen über ein Ereignis in der Vergangenheit, die Situation heute und eine Prognose für die Zukunft. Stelle mir danach Fragen und korrigiere meine Antworten auf B1-Niveau.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Nach **dass, ob** und W-Wörtern steht das Verb **am Ende**.
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+    teacherNotes:
+      - id: n-key-1-4
+        anchor: ex1
+        text: >-
+          Lösungen (vom Heft nicht gegeben, bitte prüfen). **Übung 1:** 1. dass 2. ob 3.
+          dass 4. ob 5. dass 6. ob 7. dass 8. ob. **Übung 2:** 1. Lea sagte, dass sie
+          selten Fernsehen schaut. 2. Daniel sagte, dass er Nachrichten auf seinem Handy
+          liest. 3. Maya sagte, dass sie sich für internationale Nachrichten interessiert.
+          4. Amir sagte, dass er gestern (am Tag davor) einen interessanten Artikel gelesen
+          hat. 5. Noa sagte, dass sie morgen (am nächsten Tag) die Nachrichten schauen
+          wird. 6. Tom sagte, dass er dieser Quelle nicht glaubt. 7. Sarah sagte, dass sie
+          jeden Morgen Radio hört. 8. Ben sagte, dass er die Nachricht auf Instagram
+          gesehen hat. **Übung 3** (Sie fragte, …): 1. ob ich Nachrichten online lese. 2.
+          ob diese Quelle zuverlässig ist. 3. ob ich die Nachricht gestern gesehen habe. 4.
+          ob es morgen regnen wird. 5. ob ich mich für Politik interessiere. 6. ob ich
+          diese Meldung glaube. **Übung 4** (Er fragte, …): 1. wann die Demonstration
+          beginnt. 2. warum ich keine Nachrichten lese. 3. wo ich diese Information
+          gefunden habe. 4. wie oft ich die Nachrichten schaue. 5. was gestern passiert
+          ist. 6. welche Nachrichten mich interessieren.
+      - id: n-key-5-8
+        anchor: ex5
+        text: >-
+          Lösungen (vom Heft nicht gegeben, bitte prüfen). **Übung 5:** 1. hat …
+          veröffentlicht 2. diskutieren 3. wird … geben 4. gab 5. berichten 6. werden …
+          beginnen 7. habe … gelesen 8. werden … werden. **Übung 6:** 1. Z 2. V 3. G 4. V
+          5. Z (Präsens mit Zeitangabe *morgen*) 6. G 7. V 8. Z. **Übung 8:** 1. Er sagte,
+          dass er jeden Morgen Nachrichten liest. 2. Sie fragte, ob ich die Nachrichten
+          schaue. 3. Tom sagte, dass er soziale Medien benutzt. 4. Er fragte, wo ich
+          Nachrichten lese. 5. Sie sagte, dass sie gestern einen Artikel gelesen hat. 6.
+          Der Journalist sagte, dass es morgen regnen wird. 7. Anna fragte, ob die
+          Nachricht wahr ist. 8. Er sagte, dass er die Nachricht gesehen hat.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: aktuelle-nachrichten-uebung
+    book: workbook
+    title: 'Übung: Aktuelle Nachrichten'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-indirekt
+        type: activity
+        activity: aktuelle-nachrichten-indirekte-rede
+      - id: ex-zeiten
+        type: activity
+        activity: aktuelle-nachrichten-zeitformen
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: aktuelle-nachrichten-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für Nachrichten und Medien
+        glossLang: he
+        link: https://quizlet.com/il/1201448051/aktuelle-nachrichten-flash-cards/
+        items: &aktuelle-nachrichten-words
+          - { term: die Nachrichten, gloss: חדשות }
+          - { term: die Nachricht, gloss: ידיעה / הודעה }
+          - { term: die Schlagzeile, gloss: כותרת }
+          - { term: die Quelle, gloss: מקור }
+          - { term: der Reporter / die Reporterin, gloss: כתב / כתבת }
+          - { term: der Journalist / die Journalistin, gloss: עיתונאי / עיתונאית }
+          - {
+              term: der Nachrichtensprecher / die Nachrichtensprecherin,
+              gloss: קריין / קריינית חדשות,
+            }
+          - { term: der Nachrichtensender, gloss: ערוץ חדשות }
+          - { term: die Wettervorhersage, gloss: תחזית מזג האוויר }
+          - { term: die Demonstration, gloss: הפגנה }
+          - { term: die Krise, gloss: משבר }
+          - { term: die Katastrophe, gloss: אסון }
+          - { term: das Ereignis, gloss: אירוע }
+          - { term: die Regierung, gloss: ממשלה }
+          - { term: die Erklärung, gloss: הצהרה / הודעה רשמית }
+          - { term: die Pressekonferenz, gloss: מסיבת עיתונאים }
+          - { term: der Wahlkampf, gloss: מערכת בחירות }
+          - { term: das Privatleben, gloss: חיים פרטיים }
+          - { term: die Meinungsfreiheit, gloss: חופש הביטוי }
+          - { term: die Pressefreiheit, gloss: חופש העיתונות }
+          - { term: das Gerücht, gloss: שמועה }
+          - { term: die Fake News, gloss: חדשות כזב }
+          - { term: glaubwürdig, gloss: אמין }
+          - { term: veröffentlichen, gloss: לפרסם }
+          - { term: berichten, gloss: לדווח }
+          - { term: sich verbreiten, gloss: להתפשט }
+          - { term: die indirekte Rede, gloss: דיבור עקיף }
+          - { term: am nächsten Tag, gloss: למחרת }
+          - { term: am Tag davor, gloss: יום קודם }
+          - { term: in der folgenden Woche, gloss: בשבוע שלאחר מכן }
+
+vocabulary:
+  - slug: aktuelle-nachrichten
+    title: Aktuelle Nachrichten
+    items: *aktuelle-nachrichten-words
+
+activities:
+  - slug: aktuelle-nachrichten-indirekte-rede
+    title: 'Indirekte Rede mit dass, ob und W-Wörtern'
+    minutes: 8
+    items:
+      - id: ob-strasse
+        type: multipleChoice
+        prompt: 'Die Journalistin fragte: „Ist die Straße wieder offen?“ → Die Journalistin fragte, ___ die Straße wieder offen ist.'
+        options:
+          - { text: ob, correct: true }
+          - {
+              text: dass,
+              feedback: 'Das ist eine Ja-/Nein-Frage. Für Fragen ohne Fragewort benutzen wir *ob*: *…, ob die Straße wieder offen ist.*',
+            }
+          - {
+              text: was,
+              feedback: 'Die Frage hat kein Fragewort (*Ist die Straße …?*). Für Ja-/Nein-Fragen benutzen wir *ob*.',
+            }
+      - id: dass-ruhig
+        type: fillBlank
+        prompt: 'Der Reporter sagte: „Die Situation ist ruhig.“ Ergänze *dass* oder *ob*.'
+        text: Der Reporter sagte, ___ die Situation ruhig ist.
+        blanks: [[dass]]
+        wordBank: [dass, ob]
+      - id: dana-liest
+        type: multipleChoice
+        prompt: 'Dana: „Ich lese jeden Morgen Nachrichten.“ Welcher Bericht ist richtig?'
+        options:
+          - { text: 'Dana sagte, dass sie jeden Morgen Nachrichten liest.', correct: true }
+          - {
+              text: 'Dana sagte, dass sie liest jeden Morgen Nachrichten.',
+              feedback: 'Nach *dass* steht das konjugierte Verb am Ende: *…, dass sie jeden Morgen Nachrichten liest.*',
+            }
+          - {
+              text: 'Dana sagte, dass ich jeden Morgen Nachrichten lese.',
+              feedback: 'Dana spricht über sich selbst. Im Bericht ändert sich das Pronomen: *ich → sie*.',
+            }
+      - id: wo-lese
+        type: trueFalse
+        prompt: 'Der Satz *Er fragte, wo lese ich Nachrichten.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Nach dem Fragewort steht das Verb am Ende: *Er fragte, wo ich Nachrichten lese.*'
+          incorrect: 'In der indirekten Frage steht das Verb am Ende: *Er fragte, wo ich Nachrichten lese.*'
+      - id: wann-beginnt
+        type: fillBlank
+        prompt: '„Wann beginnt die Demonstration?“ Schreib die indirekte Frage.'
+        text: Sie fragte, ___ die Demonstration ___.
+        blanks: [[wann], [beginnt]]
+      - id: zeitangaben
+        type: matching
+        prompt: 'Später erzählen: Welche Zeitangabe passt?'
+        pairs:
+          - [heute, an diesem Tag]
+          - [morgen, am nächsten Tag]
+          - [gestern, am Tag davor]
+          - [jetzt, zu diesem Zeitpunkt]
+          - [hier, dort]
+      - id: zeitform-zurueck
+        type: trueFalse
+        prompt: 'Im Deutschen muss man in der indirekten Rede die Zeitform immer zurückverschieben (*ist → war*).'
+        answer: false
+        feedback:
+          correct: 'Richtig! Anders als im Englischen ist das nicht automatisch: *Sie sagte, dass sie müde ist.* (wenn es noch stimmt)'
+          incorrect: 'Im Deutschen gibt es keinen automatischen Wechsel. Die Zeitform hängt davon ab, wann die Information gültig ist: *Sie sagte, dass sie müde ist.*'
+      - id: ordne-ob
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einem Satz.
+        sentence: Er fragte, ob die Nachricht wahr ist.
+
+  - slug: aktuelle-nachrichten-zeitformen
+    title: Vergangenheit, Gegenwart und Zukunft
+    minutes: 8
+    items:
+      - id: gestern-hat
+        type: multipleChoice
+        prompt: Gestern ___ die Regierung eine Erklärung veröffentlicht.
+        options:
+          - { text: hat, correct: true }
+          - {
+              text: ist,
+              feedback: '*veröffentlichen* bildet das Perfekt mit *haben*: *Die Regierung hat … veröffentlicht.*',
+            }
+          - {
+              text: wird,
+              feedback: '*gestern* ist Vergangenheit. Wir brauchen das Perfekt: *hat … veröffentlicht*.',
+            }
+      - id: gab
+        type: fillBlank
+        prompt: Ergänze *geben* im Präteritum.
+        text: Letzte Woche ___ es eine große Demonstration.
+        blanks: [[gab]]
+      - id: wird-geben
+        type: fillBlank
+        prompt: Ergänze *geben* im Futur I (*werden* + Infinitiv).
+        text: Morgen ___ der Minister eine Pressekonferenz ___.
+        blanks: [[wird], [geben]]
+      - id: praesens-zukunft
+        type: trueFalse
+        prompt: 'Der Satz *Morgen veröffentlicht die Regierung eine Erklärung.* spricht über die Zukunft.'
+        answer: true
+        feedback:
+          correct: 'Richtig! Mit einer Zeitangabe wie *morgen* kann das Präsens über die Zukunft sprechen.'
+          incorrect: 'Das Verb ist im Präsens, aber *morgen* zeigt die Zukunft. Im Deutschen ist das sehr natürlich.'
+      - id: partizipien
+        type: matching
+        prompt: Welches Partizip II passt zu welchem Verb?
+        pairs:
+          - [veröffentlichen, veröffentlicht]
+          - [lesen, gelesen]
+          - [sprechen, gesprochen]
+          - [stattfinden, stattgefunden]
+          - [beginnen, begonnen]
+      - id: im-moment
+        type: multipleChoice
+        prompt: Im Moment ___ die Medien über die Krise.
+        options:
+          - { text: berichten, correct: true }
+          - { text: berichtet, feedback: '*die Medien* ist Plural: *die Medien berichten*.' }
+          - {
+              text: haben berichtet,
+              feedback: '*Im Moment* bedeutet jetzt. Für das, was jetzt passiert, benutzen wir das Präsens: *berichten*.',
+            }
+      - id: habe-gelesen
+        type: fillBlank
+        prompt: Ergänze *lesen* im Perfekt.
+        text: Vor zwei Tagen ___ ich einen interessanten Artikel ___.
+        blanks: [[habe], [gelesen]]
+      - id: ordne-demo
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einem Satz über die Zukunft.
+        sentence: Morgen wird es eine Demonstration geben.
