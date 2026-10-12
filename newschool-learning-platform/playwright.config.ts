@@ -19,6 +19,9 @@ export default defineConfig({
   use: {
     baseURL: `http://localhost:${PORT}`,
     trace: 'retain-on-failure',
+    // No colour transitions: an accessibility scan right after a click would
+    // otherwise measure a button half-way between its two colours.
+    contextOptions: { reducedMotion: 'reduce' },
     launchOptions: executablePath ? { executablePath } : {},
   },
   projects: [
