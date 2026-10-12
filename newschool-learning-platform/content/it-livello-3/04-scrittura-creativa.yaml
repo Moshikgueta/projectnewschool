@@ -1,0 +1,634 @@
+# Cycle "Scrittura creativa", converted from the Italian level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-livello-3
+slug: scrittura-creativa
+title: Scrittura creativa
+goal: Raccontare una storia con il passato prossimo e l'imperfetto, e organizzarla con i connettori.
+position: 4
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Tempi narrativi" and "Connettori e struttura") are
+    NEW: the notebook has no self-correcting exercises. They were written from the
+    cycle's summary rules, the class examples and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    The notebook lists four competences (tempi narrativi; scrittura di testi brevi;
+    organizzazione delle idee; connettori semplici). They are grouped into the cycle's
+    two skills: "Tempi narrativi" (passato prossimo + imperfetto) and "Connettori e
+    struttura" (simple connectors, organising ideas, inizio / sviluppo / fine). Short
+    texts are written in Activities 3 and 4 and in the homework. Please confirm.
+  - >-
+    The lesson summary was in Hebrew; it is now in Italian (same rules and examples).
+    Added (not in the source, please confirm): an imperfetto table (essere, avere,
+    camminare) next to the passato prossimo forms used in the lesson, and the note
+    that "spegnersi" / "sentirsi" are reflexive and take essere.
+  - >-
+    Activity 2 story: "Uno studente è arrivato a scuola molto presto perché ha
+    dimenticato il telefono a casa" did not make sense (why come early for a phone
+    left at home?) and needed the trapassato for the earlier action. Now: "…perché
+    aveva dimenticato il telefono in classe il giorno prima". "Mentre salivano le
+    scale" (plural, but the subject is one student) → "Mentre saliva le scale".
+    Please check that the story still works the way you tell it.
+  - >-
+    Classic homework, Part 2 (choose the connector): "Era tardi, perché / ma sono
+    tornato a casa" had no right option → "Era tardi, quindi / ma sono tornato a
+    casa" (answer: quindi). "Ho avuto paura, quindi / ma sono uscito" had two right
+    options → "Avevo paura, quindi / ma sono entrato lo stesso" (answer: ma). The
+    answer keys of Parts 1, 2 and 4 are in a teacher note (Part 1, sentence 3:
+    "avevo"; "ho avuto" is also possible).
+  - >-
+    Mori: "Hi Mori!" → "Ciao Mori!". The four Hebrew steps (send the message, answer
+    at least 5 questions with passato prossimo + imperfetto + 2 connectors, ask for a
+    harder question and answer with a description, an action and a reason, ask for
+    corrections) are now three messages with the requirements in a callout, in
+    Italian.
+  - >-
+    Left out: the gamma.app lesson-slides link (not allowed; mentioned in a teacher
+    note), the "Data / Partecipanti" lines and the "Studente 1/2/3" lines (the
+    platform has answer boxes). "?new" was removed from the Quizlet link. The
+    notebook's teacher-facing lines ("Gli studenti lavorano individualmente…",
+    "L'insegnante legge lentamente…") are in teacher notes; the student steps are in
+    the "tu" form. The notebook gives no times, so no minutes are recorded.
+  - >-
+    Added: sentence frames for the warm-up questions (the source has none). The
+    "Connettori base" list is a word bank before the activities.
+  - >-
+    Vocabulary: the heading "Vocabulario" (Spanish) → "Vocabolario". Glosses changed:
+    "All'improvviso – בפתאומיות" → "לפתע / פתאום"; "Camminare – ללכת" → "ללכת
+    (ברגל)"; "Sentire – לשמוע" → "לשמוע / להרגיש" (the lesson uses both: "ho sentito
+    un rumore", "mi sono sentito spaventato"). Please confirm.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: scrittura-creativa-classe
+    title: 'In classe: Scrittura creativa'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Scrittura creativa
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Tempi narrativi
+            description: "Passato prossimo per gli eventi (*ho visto, sono entrato*) e imperfetto per la descrizione (*era buio, c'era silenzio*)"
+          - name: Connettori e struttura
+            description: 'Connettori semplici (*prima, poi, ma, perché, quindi, alla fine*) e una storia con inizio, sviluppo e fine'
+      - id: quizlet
+        type: externalLink
+        label: Scrittura creativa su Quizlet
+        url: https://quizlet.com/br/1171532696/scrittura-creativa-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduzione
+      - id: intro
+        type: sentenceFrame
+        frame: Sono ___. Scrivere mi aiuta a ___.
+        example: Sono Marta. Scrivere mi aiuta a esprimere le mie idee.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup-hint
+        type: callout
+        tone: info
+        text: Rispondi con frasi complete. Usa connettori semplici (*perché, ma, quindi*).
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Che cos'è la scrittura creativa secondo te?
+            frame: Secondo me, la scrittura creativa è ___.
+          - question: Di che cosa scrivi di solito? Fai un esempio.
+            frame: Di solito scrivo ___. Per esempio, ___.
+          - question: La lettura e la scrittura sono collegate? Perché?
+            frame: Sì / No, perché ___.
+          - question: Che cosa è difficile per te quando scrivi in italiano?
+            frame: Per me è difficile ___, quindi ___.
+          - question: Che cosa fai quando non hai idee?
+            frame: Quando non ho idee, ___.
+          - question: La scrittura ti aiuta a migliorare l'italiano? Come?
+            frame: Sì, mi aiuta a ___ perché ___.
+      - id: connettori-title
+        type: heading
+        level: 3
+        text: Preparazione alla scrittura
+      - id: connettori
+        type: wordBank
+        words: [Prima, Poi, Ma, Perché, Quindi, Alla fine]
+      - id: connettori-hint
+        type: text
+        text: Scegli 2 o 3 connettori e usali nelle attività.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Idee personali'
+        skills: [Connettori e struttura]
+        steps:
+          - '**Riflessione individuale:** rispondi alle domande qui sotto. Scrivi solo parole chiave, non frasi complete.'
+          - '**Condivisione guidata:** condividi una risposta con la classe o con il tuo piccolo gruppo. Usa una frase breve e un connettore.'
+          - '**Discussione in classe:** quali idee sono simili? Quali idee sono diverse o sorprendenti? Quale idea ti è piaciuta di più?'
+        example: '*Per me è più facile scrivere quando sono rilassato, perché non sento pressione.*'
+      - id: act1-questions
+        type: discussionQuestions
+        title: Le mie parole chiave
+        items:
+          - question: Quando mi sento creativo / creativa?
+          - question: Che cosa mi aiuta a trovare idee?
+          - question: Che cosa rende la scrittura difficile per me?
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Che cosa è successo davvero?'
+        skills: [Tempi narrativi, Connettori e struttura]
+        steps:
+          - '**Lettura guidata:** ascolta la storia (qui sotto). Poi rispondi: che cosa è successo? Dove si trova lo studente? Che cosa rende la situazione strana?'
+          - '**Ipotesi:** in coppia o in piccoli gruppi, scegliete una teoria: *è stato un incidente*; *qualcuno era dentro la scuola*; *lo studente ha capito male la situazione*.'
+          - '**Discussione in gruppo:** spiegate la vostra teoria con i connettori (*Penso che… Perché… Ma… Quindi…*). Date almeno 2 motivi e costruite una breve spiegazione.'
+          - "**Nuova informazione:** l'insegnante aggiunge un dettaglio. Cambia la vostra teoria? Perché sì o perché no?"
+          - "**Condivisione in classe:** ogni gruppo presenta la sua idea con almeno 2 connettori. L'insegnante corregge e aiuta a migliorare le frasi."
+        example: |-
+          *Uno studente è arrivato a scuola molto presto perché aveva dimenticato il telefono in classe il giorno prima.*
+          *I corridoi erano vuoti e silenziosi.*
+          *Mentre saliva le scale, le luci si sono spente.*
+          *Poco dopo, si è sentito un rumore forte dal laboratorio di scienze.*
+      - id: act2-model
+        type: callout
+        tone: info
+        title: Esempio di teoria
+        text: '*Penso che sia stato un incidente perché le luci si sono spente improvvisamente. Ma il rumore è strano, quindi non sono sicuro.*'
+      - id: act2-questions
+        type: discussionQuestions
+        title: La nostra teoria
+        items:
+          - question: Quale teoria avete scelto?
+            frame: Pensiamo che ___.
+          - question: Quali sono i vostri due motivi?
+            frame: Perché ___. Ma ___, quindi ___.
+          - question: Dopo la nuova informazione, cambiate teoria? Perché?
+            frame: Sì / No, perché ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Storia a catena'
+        skills: [Tempi narrativi, Connettori e struttura]
+        steps:
+          - "**Introduzione:** leggi la frase alla lavagna e immagina l'inizio della storia."
+          - '**Scelta degli elementi:** la classe sceglie insieme un personaggio (uno studente, un vicino, un insegnante…) e un luogo (la scuola, la casa, la strada, la città…). Tutte le frasi devono usare lo stesso personaggio e lo stesso luogo.'
+          - '**Scrittura individuale:** scrivi una breve storia al passato prossimo, con almeno 3 connettori (*prima, poi, ma, perché, quindi, alla fine*) e con inizio, sviluppo e fine.'
+          - '**Storia di gruppo:** costruite una storia insieme. Ogni studente aggiunge una sola frase al passato, con almeno un connettore, collegata alla frase precedente.'
+          - "**Condivisione e riflessione:** l'insegnante legge la storia finale. La storia è chiara? È coerente? Quale frase ha cambiato di più la storia?"
+        example: '*Quella mattina è successo qualcosa di strano.*'
+      - id: act3-writing
+        type: discussionQuestions
+        title: La mia storia
+        items:
+          - question: 'Personaggio e luogo: ___'
+          - question: 'Inizio: ___'
+          - question: 'Sviluppo: ___'
+          - question: 'Fine: ___'
+          - question: 'La mia frase per la storia di gruppo: ___'
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Due punti di vista'
+        skills: [Tempi narrativi, Connettori e struttura]
+        steps:
+          - '**Scelta della situazione:** scegli uno scenario, *un blackout durante la notte* oppure *un rumore strano fuori dalla casa*. Pensa a che cosa è successo e a chi è coinvolto.'
+          - "**Scrittura guidata:** scrivi due brevi paragrafi (4 o 5 frasi ciascuno). Paragrafo 1, *dentro la situazione*: racconta dal punto di vista della persona che vive l'esperienza. Paragrafo 2, *fuori dalla situazione*: racconta la stessa situazione dal punto di vista di un'altra persona (un vicino, un passante, un amico…)."
+          - "Usa il passato prossimo per gli eventi, almeno 3 aggettivi per le emozioni o l'ambiente e almeno 2 connettori (*prima, poi, ma, perché, quindi*)."
+          - '**Condivisione:** leggi il tuo testo alla classe o a un compagno. Il compagno può fare una domanda: *Che cosa è successo dopo? Come ti sei sentito davvero?*'
+          - '**Discussione in classe:** che cosa cambia tra i due punti di vista? Quale versione è più chiara o più interessante?'
+        example: '*Prima ho sentito un rumore forte, poi le luci si sono spente. Mi sono sentito molto spaventato e confuso.*'
+      - id: act4-writing
+        type: discussionQuestions
+        title: I miei due paragrafi
+        items:
+          - question: 'Paragrafo 1, dentro la situazione: ___'
+          - question: 'Paragrafo 2, fuori dalla situazione: ___'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Tempi narrativi** (passato prossimo +
+          imperfetto) e **Connettori e struttura** (connettori semplici, organizzazione
+          delle idee, inizio / sviluppo / fine). L'Attività 1 lavora sulle idee e sui
+          connettori; le Attività 2, 3 e 4 su tutte e due le abilità. Il quaderno non
+          indica i tempi delle attività. La presentazione della lezione (gamma.app) non
+          è inclusa nella piattaforma: usala dal tuo materiale, se vuoi.
+      - id: n-intro
+        anchor: intro
+        text: Dai prima il tuo esempio, poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        text: Chiedi frasi complete con almeno un connettore. Fai almeno due domande a ogni studente.
+      - id: n-connettori
+        anchor: connettori
+        text: Ogni studente sceglie 2 o 3 connettori da usare durante la lezione. Lascia la lista sullo schermo.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Fase 1: gli studenti lavorano da soli e scrivono solo parole chiave. Fase 2:
+          condividono una risposta con una frase breve e un connettore. Fase 3: la classe
+          confronta le risposte.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Leggi la storia lentamente e verifica la comprensione con le tre domande. Nella
+          fase «Nuova informazione» aggiungi: *La telecamera vicino al laboratorio non
+          funzionava nello stesso momento.* Alla fine correggi e migliora le frasi dei
+          gruppi.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Scrivi alla lavagna: *Quella mattina è successo qualcosa di strano.* Durante la
+          storia di gruppo controlla che ogni frase sia al passato, abbia un connettore e
+          si colleghi alla frase precedente. Alla fine leggi tu la storia completa.
+      - id: n-act4
+        anchor: act4
+        text: Alla fine correggi e migliora le frasi principali dei testi.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: scrittura-creativa-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-tempi
+        type: ruleSummary
+        skill: Tempi narrativi
+        rules:
+          - text: 'Per raccontare una storia chiara usiamo due tempi. Il **passato prossimo** racconta le **azioni**, che cosa è successo.'
+            examples: [Ho visto una luce., Sono entrato nella stanza.]
+          - text: "L'**imperfetto** descrive lo **sfondo**: la situazione, l'ambiente, lo stato d'animo."
+            examples: [Era buio., C'era silenzio., Avevo paura.]
+          - text: "Con **mentre** + imperfetto diamo la situazione; con il passato prossimo l'azione che succede in quel momento."
+            examples:
+              [
+                'Mentre camminavo, ho sentito un rumore.',
+                'Mentre saliva le scale, le luci si sono spente.',
+              ]
+          - text: 'I verbi di movimento (*entrare, uscire, arrivare*) e i verbi riflessivi (*spegnersi, sentirsi*) usano **essere**: il participio cambia con il genere e il numero.'
+            examples:
+              [Sono entrato / entrata., Le luci si sono spente., Mi sono sentita spaventata.]
+      - id: tempi-table
+        type: table
+        caption: Imperfetto
+        header: [Persona, essere, avere, camminare]
+        rows:
+          - [io, ero, avevo, camminavo]
+          - [tu, eri, avevi, camminavi]
+          - [lui / lei, era, aveva, camminava]
+          - [noi, eravamo, avevamo, camminavamo]
+          - [voi, eravate, avevate, camminavate]
+          - [loro, erano, avevano, camminavano]
+      - id: rules-connettori
+        type: ruleSummary
+        skill: Connettori e struttura
+        rules:
+          - text: 'I **connettori** rendono la storia chiara: non è solo una lista di frasi.'
+            examples: ['Prima sono entrato, poi ho visto una luce, ma avevo paura.']
+          - text: '**Ordine:** prima, poi, dopo, alla fine.'
+          - text: '**Causa e conseguenza:** *perché* (la causa), *quindi* (la conseguenza).'
+            examples:
+              [Non sono uscito perché era molto buio., 'Era tardi, quindi sono tornato a casa.']
+          - text: '**Contrasto:** ma, però.'
+            examples: ['Avevo paura, ma sono entrato lo stesso.']
+          - text: 'Ogni storia ha tre parti: **inizio** (la situazione), **sviluppo** (il problema, gli eventi) e **fine** (il risultato).'
+          - text: "Gli **aggettivi** descrivono le emozioni (*spaventato, nervoso, tranquillo*) e l'ambiente (*buio, silenzioso, strano*)."
+      - id: uses
+        type: table
+        caption: Frasi utili dalla lezione
+        header: [Per…, Esempio]
+        rows:
+          - [raccontare un'esperienza, Ho sentito un rumore.]
+          - [creare tensione, Poi le luci si sono spente.]
+          - [dare una spiegazione, Perché era molto buio.]
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli per scrivere bene
+        text: |-
+          Usa almeno 2 tempi (passato prossimo e imperfetto).
+          Aggiungi connettori.
+          Mantieni una struttura chiara: inizio, sviluppo, fine.
+          Usa aggettivi.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa il riepilogo e chiedi a ogni studente una frase della sua storia con un connettore, un verbo al passato prossimo e uno all'imperfetto.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: scrittura-creativa-compiti
+    title: Compiti
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti
+      - id: classic-title
+        type: heading
+        level: 3
+        text: Versione classica
+      - id: hw-1
+        type: discussionQuestions
+        title: "Parte 1: Completa con il passato prossimo o con l'imperfetto."
+        items:
+          - question: Prima ___ (entrare), poi ___ (vedere) una luce.
+          - question: Mentre io ___ (camminare), ___ (sentire) un rumore.
+          - question: Era molto buio e ___ (avere) paura.
+          - question: Alla fine ___ (capire) che cosa è successo.
+      - id: hw-2
+        type: discussionQuestions
+        title: 'Parte 2: Scegli il connettore giusto.'
+        items:
+          - question: Prima / Ma sono arrivato, poi ho parlato con lui.
+          - question: Era tardi, quindi / ma sono tornato a casa.
+          - question: Avevo paura, quindi / ma sono entrato lo stesso.
+      - id: hw-3
+        type: discussionQuestions
+        title: 'Parte 3: Scrivi 6–8 frasi sul tema «Una situazione strana».'
+        items:
+          - question: Usa il passato prossimo, l'imperfetto, almeno 3 connettori e 2 aggettivi.
+      - id: hw-4
+        type: discussionQuestions
+        title: 'Parte 4: Correggi gli errori.'
+        items:
+          - question: Io ero entrato e vedo una luce.
+          - question: Mentre camminavo, sento un rumore.
+          - question: Era buio ma ho paura.
+          - question: Prima entro, poi ho visto.
+      - id: mori-title
+        type: heading
+        level: 3
+        text: Con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia il primo messaggio e invialo. Rispondi alle domande di Mori, poi invia il secondo e il terzo messaggio.
+      - id: mori-rules
+        type: callout
+        tone: info
+        title: Nelle tue risposte
+        text: |-
+          Rispondi ad almeno **5 domande**.
+          Usa il **passato prossimo**, l'**imperfetto** e almeno **2 connettori**.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Messaggio 1: Raccontiamo una storia'
+        message: Ciao Mori! Voglio raccontare una storia. Fammi domande usando il passato e i connettori.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Messaggio 2: Una domanda più difficile'
+        intro: "Rispondi con una descrizione (imperfetto), un'azione (passato prossimo) e una causa (*perché*)."
+        message: Fammi una domanda più difficile.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Messaggio 3: Correzione'
+        message: Correggi le mie frasi e spiegami gli errori.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+    teacherNotes:
+      - id: n-key
+        anchor: hw-1
+        text: >-
+          Soluzioni. Parte 1: sono entrato / entrata, ho visto · camminavo, ho sentito ·
+          avevo (anche: ho avuto) · ho capito. Parte 2: Prima · quindi · ma. Parte 4: Sono
+          entrato e ho visto una luce. · Mentre camminavo, ho sentito un rumore. · Era buio
+          e avevo paura. · Prima sono entrato, poi ho visto.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: scrittura-creativa-pratica
+    book: workbook
+    title: 'Pratica: Scrittura creativa'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-tempi
+        type: activity
+        activity: scrittura-creativa-tempi
+      - id: ex-connettori
+        type: activity
+        activity: scrittura-creativa-connettori
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: scrittura-creativa-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole della scrittura creativa
+        glossLang: he
+        link: https://quizlet.com/br/1171532696/scrittura-creativa-flash-cards/
+        items: &scrittura-creativa-words
+          - { term: Storia, gloss: סיפור }
+          - { term: Evento, gloss: אירוע }
+          - { term: Situazione, gloss: מצב }
+          - { term: Personaggio, gloss: דמות }
+          - { term: Luogo, gloss: מקום }
+          - { term: Tempo, gloss: זמן }
+          - { term: Inizio, gloss: התחלה }
+          - { term: Sviluppo, gloss: התפתחות }
+          - { term: Fine, gloss: סוף }
+          - { term: Risultato, gloss: תוצאה }
+          - { term: Problema, gloss: בעיה }
+          - { term: Soluzione, gloss: פתרון }
+          - { term: Rumore, gloss: רעש }
+          - { term: Luce, gloss: אור }
+          - { term: Buio, gloss: חושך }
+          - { term: Strano, gloss: מוזר }
+          - { term: Paura, gloss: פחד }
+          - { term: Ansia, gloss: חרדה }
+          - { term: Tranquillo, gloss: רגוע }
+          - { term: Nervoso, gloss: עצבני }
+          - { term: Silenzioso, gloss: שקט }
+          - { term: Improvvisamente, gloss: פתאום }
+          - { term: "All'improvviso", gloss: לפתע / פתאום }
+          - { term: Prima, gloss: קודם }
+          - { term: Poi, gloss: אחר כך }
+          - { term: Dopo, gloss: אחרי }
+          - { term: Alla fine, gloss: בסוף }
+          - { term: Perché, gloss: כי }
+          - { term: Quindi, gloss: לכן }
+          - { term: Ma, gloss: אבל }
+          - { term: Però, gloss: אולם }
+          - { term: Camminare, gloss: ללכת (ברגל) }
+          - { term: Entrare, gloss: להיכנס }
+          - { term: Uscire, gloss: לצאת }
+          - { term: Sentire, gloss: לשמוע / להרגיש }
+          - { term: Capire, gloss: להבין }
+
+vocabulary:
+  - slug: scrittura-creativa
+    title: Scrittura creativa
+    items: *scrittura-creativa-words
+
+activities:
+  - slug: scrittura-creativa-tempi
+    title: 'Tempi narrativi: ho visto, era buio'
+    minutes: 8
+    items:
+      - id: cera-silenzio
+        type: multipleChoice
+        prompt: Era buio e c'___ silenzio.
+        options:
+          - { text: era, correct: true }
+          - {
+              text: è,
+              feedback: "*È* è presente. Per descrivere l'ambiente in una storia al passato usiamo l'imperfetto: *c'era*.",
+            }
+          - { text: ero, feedback: "*Ero* è la forma di *io*. Il silenzio è *lui*: *c'era*." }
+      - id: ho-sentito
+        type: multipleChoice
+        prompt: Mentre camminavo, ___ un rumore.
+        options:
+          - { text: ho sentito, correct: true }
+          - {
+              text: sento,
+              feedback: "*Sento* è presente. L'azione che succede durante la situazione va al passato prossimo: *ho sentito*.",
+            }
+          - {
+              text: sono sentito,
+              feedback: 'Qui *sentire* (sentire un rumore) usa *avere*: *ho sentito*.',
+            }
+      - id: entrato-visto
+        type: fillBlank
+        prompt: Completa con il passato prossimo di *entrare* e *vedere* (io).
+        text: Prima ___ nella stanza, poi ___ una luce.
+        blanks: [[sono entrato, sono entrata, io sono entrato, io sono entrata], [ho visto]]
+      - id: uso-imperfetto
+        type: trueFalse
+        prompt: "L'imperfetto si usa per raccontare le azioni principali della storia: *Entravo nella stanza.*"
+        answer: false
+        feedback:
+          correct: "Giusto! Le azioni vanno al passato prossimo (*Sono entrato nella stanza*); l'imperfetto descrive lo sfondo (*Era buio*)."
+          incorrect: "Le azioni vanno al passato prossimo (*Sono entrato nella stanza*). L'imperfetto descrive la situazione e l'ambiente (*Era buio, c'era silenzio*)."
+      - id: unisci-forme
+        type: matching
+        prompt: Unisci ogni verbo alla forma giusta.
+        pairs:
+          - ['entrare (io, passato prossimo)', sono entrato]
+          - ['vedere (io, passato prossimo)', ho visto]
+          - ['essere (lui, imperfetto)', era]
+          - ['avere (io, imperfetto)', avevo]
+          - ['camminare (io, imperfetto)', camminavo]
+      - id: si-sono-spente
+        type: multipleChoice
+        prompt: Poi, all'improvviso, le luci ___.
+        options:
+          - { text: si sono spente, correct: true }
+          - {
+              text: si spegnevano,
+              feedback: "È un'azione improvvisa, un evento della storia: usiamo il passato prossimo, *si sono spente*.",
+            }
+          - {
+              text: hanno spento,
+              feedback: '*Spegnersi* è riflessivo e usa *essere*: *le luci si sono spente*.',
+            }
+      - id: erano-vuoti
+        type: fillBlank
+        prompt: "Completa con l'imperfetto di *essere*."
+        text: I corridoi ___ vuoti e silenziosi.
+        blanks: [[erano]]
+      - id: ordina-mentre
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Mentre camminavo, ho sentito un rumore.
+
+  - slug: scrittura-creativa-connettori
+    title: 'Connettori e struttura: prima, poi, ma, quindi'
+    minutes: 8
+    items:
+      - id: prima
+        type: multipleChoice
+        prompt: ___ sono entrato, poi ho visto una luce.
+        options:
+          - { text: Prima, correct: true }
+          - {
+              text: Alla fine,
+              feedback: "*Alla fine* indica l'ultima azione. Qui è la prima azione (dopo viene *poi*): *Prima*.",
+            }
+          - {
+              text: Quindi,
+              feedback: '*Quindi* introduce una conseguenza. Qui mettiamo le azioni in ordine: *Prima… poi…*',
+            }
+      - id: quindi
+        type: multipleChoice
+        prompt: Era tardi, ___ sono tornato a casa.
+        options:
+          - { text: quindi, correct: true }
+          - {
+              text: ma,
+              feedback: "*Ma* introduce un contrasto. Qui tornare a casa è la conseguenza dell'ora tarda: *quindi*.",
+            }
+          - {
+              text: perché,
+              feedback: '*Perché* introduce la causa, non la conseguenza: *Sono tornato a casa perché era tardi.*',
+            }
+      - id: ma
+        type: multipleChoice
+        prompt: Avevo paura, ___ sono entrato lo stesso.
+        options:
+          - { text: ma, correct: true }
+          - {
+              text: quindi,
+              feedback: '*Lo stesso* indica un contrasto: avevo paura e sono entrato comunque. Usiamo *ma*.',
+            }
+          - {
+              text: prima,
+              feedback: "*Prima* serve a mettere le azioni in ordine. Qui c'è un contrasto: *ma*.",
+            }
+      - id: unisci-connettori
+        type: matching
+        prompt: Unisci ogni connettore alla sua funzione.
+        pairs:
+          - [prima, la prima azione]
+          - [alla fine, l'ultima azione]
+          - [perché, la causa]
+          - [quindi, la conseguenza]
+          - [ma, il contrasto]
+      - id: struttura
+        type: trueFalse
+        prompt: 'Una storia ha tre parti: inizio, sviluppo e fine.'
+        answer: true
+        feedback:
+          correct: 'Giusto! Inizio = la situazione; sviluppo = il problema e gli eventi; fine = il risultato.'
+          incorrect: 'Ogni storia ha tre parti: inizio (la situazione), sviluppo (il problema, gli eventi) e fine (il risultato).'
+      - id: perche-buio
+        type: fillBlank
+        prompt: Completa con il connettore giusto.
+        text: Non sono uscito ___ era molto buio.
+        blanks: [[perché]]
+        wordBank: [perché, quindi, ma, prima]
+      - id: sviluppo
+        type: multipleChoice
+        prompt: In quale parte della storia ci sono il problema e gli eventi?
+        options:
+          - { text: Nello sviluppo, correct: true }
+          - {
+              text: "All'inizio",
+              feedback: "L'inizio presenta la situazione. Il problema e gli eventi sono nello sviluppo.",
+            }
+          - {
+              text: Alla fine,
+              feedback: 'La fine racconta il risultato. Il problema e gli eventi sono nello sviluppo.',
+            }
+      - id: ordina-prima-poi
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Prima sono entrato, poi ho visto una luce.
