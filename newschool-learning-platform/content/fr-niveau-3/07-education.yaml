@@ -1,0 +1,730 @@
+# Cycle "Éducation", converted from the French level 3 digital notebook
+# ("Cahier digital 2026 - français niveau 3", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-3
+slug: education
+title: Éducation
+goal: Raconter ses expériences d’apprentissage au passé composé et à l’imparfait, et parler de projets et de prédictions au futur proche et au futur simple.
+position: 7
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Passé composé et imparfait" and "Futur proche et futur
+    simple") are NEW: the notebook has no self-study exercises. They were written from
+    the cycle's summary rules, the activity models and the vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    The notebook lists three skills (passé composé / imparfait; futur proche / futur
+    simple; opinion, cause, conséquence). The cycle overview keeps the first two as the
+    cycle's two skills; the opinion phrases and connectors (je pense que, parce que,
+    puisque, donc, c’est pourquoi, cependant) are practised inside the activities and
+    summed up in a summary rule.
+  - >-
+    Summary additions (not in the source, please confirm): the être verbs with agreement
+    of the participle (elle est entrée); irregular participles from the cycle (eu, été,
+    appris, compris, fait); how to form the imparfait (nous-stem + -ais… ; être → ét-);
+    how to form the futur proche (aller in the present + infinitive); how to form the
+    futur simple (infinitive + -ai, -as, -a, -ons, -ez, -ont; -re verbs drop the e) with
+    the irregular stems ser-, aur-, fer-, ir-, pourr-, devr-, deviendr-; two conjugation
+    tables. The source summary gave only "avoir / être + participe passé" and no
+    endings.
+  - >-
+    Corrections: Activity 3, question 3 "As-tu appris mieux en faisant qu’en lisant ?" →
+    "As-tu mieux appris en faisant qu’en lisant ?" (adverb before the participle); Mori
+    part 3 "ce que je pense qui changera dans le futur" (ungrammatical) → "ce qui, selon
+    moi, changera dans le futur"; summary "Je vais faire une formation, et cela
+    améliorera…" → no comma before "et"; model letter "j’étais très stressé(e)" →
+    "stressé" (the letter is signed Andrés). The broken "Structure suggérée" numbering
+    (1, 2, then 3-4 … 11-12 run together) was rebuilt. Stray "**" and "\*" marks and
+    the list items all numbered "1." were cleaned up.
+  - >-
+    Left out: the "Niveau 3 : français extrême" line, the "Date / Participants" lines and
+    all "Réponse de l’élève 1/2/3" lines (the platform has answer boxes). Each
+    activity's "Objectifs" and "Checklist professeur" lists are in the teacher notes. No
+    gamma.app link was found in this cycle.
+  - >-
+    The intro round and the warm-up had no sentence frames: frames were added for each
+    warm-up question. The source gives no time for the warm-up; Activity 4 "15–20
+    minutes" is recorded as 20. The parts given add up to 80 minutes plus the warm-up.
+  - >-
+    Mori part 4 ("Mini défi final") is not a message to Mori in the source but a 5–6
+    sentence answer; it is a reflection box with the required tenses in a callout. Mori
+    part 3's blank is kept as "___" for the student to fill in.
+  - >-
+    Vocabulary: "apprendre" and "étudier" were both glossed "ללמוד"; now "ללמוד (לרכוש
+    ידע)" and "ללמוד (לעיין, לשנן)". "présentation – הצגה / פרזנטציה" → "מצגת /
+    פרזנטציה" (הצגה is a theatre show). Please confirm. The Quizlet link's tracking
+    parameters (?i=…&x=…) were removed.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: education-classe
+    title: 'Classe : Éducation'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Éducation
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Passé composé et imparfait
+            description: 'Événements précis (*j’ai étudié en 2021*) et descriptions, habitudes, contexte (*quand j’étais au lycée, j’aimais l’histoire*)'
+          - name: Futur proche et futur simple
+            description: 'Projets (*je vais commencer un cours*) et prédictions (*l’éducation changera beaucoup*)'
+      - id: quizlet
+        type: externalLink
+        label: Éducation sur Quizlet
+        url: https://quizlet.com/il/1144007715/extreme-french-2026-education-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Quand j’étais à l’école, ma matière préférée était ___ parce que ___.
+        example: Je m’appelle Lévanah. Quand j’étais à l’école, ma matière préférée était le français parce que j’avais une professeure formidable.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup-hint
+        type: callout
+        tone: info
+        text: Réponds avec des **phrases complètes et développées**. Utilise le **passé composé** pour les événements et l’**imparfait** pour le contexte.
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: As-tu vécu une expérience d’apprentissage qui t’a marqué(e) ? Quand cela s’est-il passé ? Pourquoi était-ce important ?
+            frame: Oui, j’ai vécu ___. C’était ___. C’était important parce que ___.
+          - question: As-tu déjà étudié une matière qui était très difficile pour toi ? Qu’est-ce que tu as fait exactement pour progresser ?
+            frame: La matière ___ était très difficile pour moi. Pour progresser, j’ai ___.
+          - question: As-tu déjà suivi un cours en dehors de l’école ou de l’université ? Qu’est-ce que tu y as appris que tu n’as pas appris à l’école ?
+            frame: J’ai suivi un cours de ___. J’y ai appris ___.
+          - question: As-tu déjà travaillé en groupe et vécu une mauvaise expérience ? Qu’est-ce qui s’est passé ?
+            frame: Oui, une fois ___. Ce qui s’est passé, c’est que ___.
+          - question: Quelle matière, selon toi, va disparaître dans le futur ? Pourquoi ?
+            frame: Selon moi, ___ va disparaître parce que ___.
+          - question: As-tu déjà regretté de ne pas avoir appris quelque chose plus tôt ? Qu’est-ce que tu aurais fait différemment ?
+            frame: J’ai regretté de ne pas avoir appris ___. J’aurais ___.
+          - question: Qu’est-ce que tu vas étudier l’année prochaine (ou qu’aimerais-tu étudier) ? À quoi cela va-t-il te servir ?
+            frame: L’année prochaine, je vais étudier ___. Cela va me servir à ___.
+          - question: Si tu pouvais changer une chose dans le système éducatif de ton pays, que changerais-tu et pourquoi ?
+            frame: Je changerais ___ parce que ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Lettre à une personne importante dans ton parcours scolaire'
+        skills: [Passé composé et imparfait]
+        minutes: 20
+        steps:
+          - '**Préparation guidée (5 minutes) :** réfléchis aux questions ci-dessous et prends des notes courtes. Tu ne rédiges pas encore : tu organises tes idées.'
+          - '**Rédaction (10 minutes) :** écris une lettre de **10 à 12 phrases**. Utilise le **passé composé** pour les événements précis (*vous m’avez proposé…*) et l’**imparfait** pour la description, les habitudes et le contexte (*quand j’étais au collège, j’avais peur…*).'
+          - 'Structure suggérée : 1. Salutation (*Cher professeur…, Chère professeure…*). 2. Qui est cette personne. 3–4. Ce qu’elle a fait pour toi. 5–6. Un souvenir précis. 7–8. Le changement dans ta vie. 9–10. Remerciement final. 11–12. Formule de politesse et signature.'
+          - '**Lecture (5 minutes) :** lis ta lettre à ton / ta partenaire, ou à la classe si tu es volontaire.'
+          - 'Après chaque lecture, le / la partenaire pose **une question de relance** : *Comment tu t’es senti(e) à ce moment-là ? Est-ce que tu es toujours en contact avec cette personne ? Est-ce que tu aimerais devenir comme cette personne plus tard ?*'
+        example: |-
+          *Chère professeure Laura,*
+          *Vous avez été une des personnes les plus importantes dans mon parcours scolaire. Quand j’étais au collège, je manquais souvent de confiance en moi et j’avais peur de parler en classe. Vous m’encouragiez toujours et vous preniez le temps de m’expliquer les choses calmement. Je me souviens qu’en 2020, vous m’avez proposé de participer à un concours de langues. Ce jour-là, j’étais très stressé, mais j’ai accepté. Grâce à cette expérience, j’ai commencé à croire en mes capacités. Depuis ce moment, je me sens plus à l’aise à l’oral et j’ai progressé. Aujourd’hui, je comprends à quel point vous avez influencé ma vie. Merci pour votre patience et pour votre soutien.*
+          *Avec gratitude,*
+          *Andrés*
+      - id: act1-questions
+        type: discussionQuestions
+        title: Préparation de la lettre
+        items:
+          - question: Qui est cette personne importante pour toi ? (professeur, entraîneur, conseiller, membre de la famille…)
+            frame: C’est ___.
+          - question: Qu’est-ce qu’elle a fait pour toi ?
+            frame: Elle m’a aidé(e) à ___. / Elle m’a encouragé(e) à ___. / Elle m’a appris à ___.
+          - question: Te souviens-tu d’un moment précis avec cette personne ? Quand était-ce ? Que s’est-il passé exactement ?
+            frame: Je me souviens qu’en ___, ___.
+          - question: Comment ta vie a-t-elle changé grâce à cette personne ?
+            frame: Grâce à cette personne, ___.
+          - question: Pourquoi veux-tu la remercier aujourd’hui ?
+            frame: Je veux la remercier parce que ___.
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Le système éducatif du futur'
+        skills: [Futur proche et futur simple]
+        minutes: 20
+        steps:
+          - 'Vous faites partie du **ministère de l’Éducation en 2050**. Votre mission : inventer un **système scolaire plus inclusif** pour tous (élèves avec ou sans handicap, styles d’apprentissage différents, réalités sociales diverses).'
+          - '**Groupes (2 minutes) :** formez des groupes de 3 ou 4. Consigne : *Vous devez créer le système éducatif de 2050.*'
+          - '**Plan (10 minutes) :** préparez un plan avec au moins **4 idées** : **2 phrases au futur proche** (*Nous allons créer… / Nous allons développer…*), **2 phrases au futur simple** (*L’école deviendra… / Les élèves apprendront…*) et **au moins 2 connecteurs** (*parce que, cependant, donc, c’est pourquoi*). Utilisez les questions-guides ci-dessous.'
+          - '**Présentation orale (3 minutes par groupe) :** présentez votre système avec 2 phrases au futur proche, 2 phrases au futur simple et 1 ou 2 connecteurs.'
+          - '**Question critique (5 minutes) :** après chaque présentation, un autre groupe pose une question critique : *Pensez-vous que ce système fonctionnera dans tous les pays ? Que se passera-t-il si certains professeurs ne savent pas utiliser la technologie ? Est-ce que tous les élèves pourront s’adapter ?* Le groupe répond au futur.'
+        example: |-
+          *Nous allons former tous les professeurs au numérique parce que la technologie sera essentielle.*
+          *Nous allons adapter les écoles pour les élèves en situation de handicap.*
+          *L’éducation sera plus inclusive et plus flexible.*
+          *Beaucoup d’élèves apprendront à distance, mais certains préféreront continuer à aller à l’école.*
+          *C’est pourquoi le système éducatif changera énormément dans les prochaines années.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Questions-guides
+        items:
+          - question: Quelles nouvelles matières allez-vous créer ?
+            frame: Nous allons créer ___.
+          - question: Comment allez-vous aider les élèves en difficulté ?
+            frame: Nous allons ___.
+          - question: Quel sera le rôle du professeur ?
+            frame: Le professeur sera ___. / Le professeur va ___.
+          - question: 'Où les élèves étudieront-ils : à la maison, à l’école ou les deux ?'
+            frame: Les élèves étudieront ___ parce que ___.
+          - question: Quel sera l’impact de la technologie ?
+            frame: La technologie ___. C’est pourquoi ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Comment apprends-tu le mieux ?'
+        skills: [Passé composé et imparfait]
+        minutes: 15
+        steps:
+          - '**Présentation (5 minutes) :** écoute les six types d’apprentissage (tableau ci-dessous). Choisis ton style principal ; tu peux en choisir plusieurs.'
+          - '**En binômes (8 minutes) :** l’un pose les questions, l’autre répond au **passé composé** ; puis vous changez. Après chaque réponse, pose la **question de relance**.'
+          - '**Mise en commun (2 minutes) :** qui apprend mieux de façon visuelle ? En écoutant ? En faisant ? Partage une phrase avec le groupe (*J’ai mieux appris en groupe parce que ça me motive.*).'
+        example: |-
+          *J’ai mieux appris en écoutant des explications qu’en lisant seul(e).*
+          *J’ai aussi utilisé des applications pour réviser et cela m’a beaucoup aidé(e).*
+          *Quand j’ai étudié en groupe, j’ai mieux compris les sujets difficiles.*
+      - id: act3-types
+        type: table
+        caption: Types d’apprentissage
+        header: [Type, Apprend…, Exemple]
+        rows:
+          - [
+              Visuel,
+              'en regardant : images, vidéos, schémas…',
+              J’ai beaucoup appris en regardant des vidéos explicatives.,
+            ]
+          - [
+              Auditif,
+              'en écoutant : podcasts, explications, débats…',
+              J’ai mieux compris en écoutant les explications du professeur.,
+            ]
+          - [
+              Kinesthésique,
+              'en faisant : activités pratiques, jeux de rôle…',
+              J’ai appris davantage quand j’ai fait des exercices pratiques.,
+            ]
+          - [
+              Social,
+              'avec les autres : travail de groupe, échanges…',
+              J’ai mieux appris en étudiant avec d’autres personnes.,
+            ]
+          - [
+              Numérique,
+              'avec la technologie : applications, plateformes…',
+              J’ai beaucoup appris grâce aux applications et aux cours en ligne.,
+            ]
+          - [
+              Professionnel / concret,
+              'dans des situations réelles : stages, ateliers…',
+              J’ai appris énormément en travaillant directement sur le terrain.,
+            ]
+      - id: act3-questions
+        type: discussionQuestions
+        title: Questions pour ton / ta partenaire
+        items:
+          - question: As-tu déjà appris quelque chose seulement en regardant ? (Relance. Qu’est-ce que tu as appris comme ça ?)
+            frame: Oui, j’ai appris ___ en regardant ___.
+          - question: As-tu utilisé des enregistrements pour étudier ? (Relance. Est-ce que cela t’a aidé(e) ? Pourquoi ?)
+            frame: Oui, j’ai utilisé ___. Cela m’a aidé(e) parce que ___.
+          - question: As-tu mieux appris en faisant qu’en lisant ? (Relance. Dans quelle situation ?)
+            frame: Oui, j’ai mieux appris en faisant quand ___.
+          - question: As-tu mieux étudié en groupe que seul(e) ? (Relance. Avec qui ?)
+            frame: J’ai mieux étudié ___ parce que ___.
+          - question: As-tu appris davantage avec la technologie ? (Relance. Quelle application ou quelle plateforme as-tu utilisée ?)
+            frame: J’ai utilisé ___ et j’ai appris ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Je suis professeur en 2050'
+        skills: [Futur proche et futur simple]
+        minutes: 20
+        steps:
+          - '*Nous sommes en 2050. Le monde a changé : le travail, la technologie, la santé, le climat… Vous êtes maintenant professeurs et vous devez créer des matières nouvelles pour aider la nouvelle génération.*'
+          - '**Choix des matières (3 minutes) :** choisis **3 matières** qui n’existent pas aujourd’hui. Idées : éducation émotionnelle, intelligence artificielle dans la vie quotidienne, éducation financière pratique, écologie et survie climatique, communication numérique, gestion du stress.'
+          - '**Guide de création (5 minutes) :** pour chaque matière, complète les phrases ci-dessous.'
+          - '**Présentation orale (7 minutes) :** présente la matière que tu juges la plus importante, avec une phrase au **futur proche**, une phrase au **futur simple** et une justification claire.'
+          - '**Questions critiques (5 minutes) :** tes camarades te posent des questions : *Pourquoi cette matière sera-t-elle plus importante que les matières traditionnelles ? Qui en aura le plus besoin : les enfants, les adolescents ou les adultes ? Tous les pays pourront-ils enseigner cette matière ? Que se passera-t-il si les écoles ne s’adaptent pas ?* Réponds au futur.'
+          - '**Vote final (2 minutes) :** votez pour la matière la plus nécessaire, la plus innovante et celle qui peut changer la société.'
+        example: |-
+          *Je vais enseigner l’éducation émotionnelle parce que beaucoup de jeunes auront des problèmes de stress et d’anxiété.*
+          *Je vais l’enseigner avec des activités pratiques, des jeux de rôle et des discussions.*
+          *Les élèves apprendront à comprendre leurs émotions et à mieux communiquer.*
+          *Dans le futur, la santé mentale sera aussi importante que les mathématiques, donc cette matière changera la société.*
+      - id: act4-frames
+        type: discussionQuestions
+        title: Guide de création
+        items:
+          - question: Nom de la matière
+            frame: Je vais enseigner ___.
+          - question: Pourquoi sera-t-elle importante ?
+            frame: Ce sera important parce que ___.
+          - question: Comment vas-tu l’enseigner ?
+            frame: Je vais l’enseigner avec ___.
+          - question: Qu’est-ce qui changera dans la société ?
+            frame: Grâce à cette matière, la société ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **passé composé et imparfait** (échauffement,
+          activités 1 et 3) et **futur proche et futur simple** (activités 2 et 4). Le
+          cahier travaille aussi l’opinion, la cause et la conséquence (*je pense que,
+          parce que, donc, c’est pourquoi, cependant*), la production écrite, le débat et
+          la réflexion personnelle. Les activités durent 75 minutes au total, plus
+          l’échauffement : choisis selon le temps du groupe.
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: >-
+          Deux phrases par élève, 30 secondes maximum par élève et pour toi. Si les élèves
+          se connaissent déjà, passe directement aux questions d’échauffement. Donne
+          d’abord ton propre exemple.
+      - id: n-warmup
+        anchor: warmup
+        text: Demande des réponses complètes et développées, avec passé composé + imparfait. Pose au moins deux questions à chaque élève.
+      - id: n-act1
+        anchor: act1
+        minutes: 20
+        text: >-
+          Affiche ou écris les questions de préparation. Objectifs : le passé composé pour
+          raconter des événements précis, l’imparfait pour décrire une situation, une
+          habitude ou un contexte, et l’expression de la gratitude et du changement
+          personnel. Vérifie que l’élève a utilisé au moins 3 verbes au passé composé et 2
+          à l’imparfait, a exprimé de la gratitude et a expliqué un changement personnel.
+      - id: n-act2
+        anchor: act2
+        minutes: 20
+        text: >-
+          Divise la classe en groupes de 3 ou 4. Circule et corrige les erreurs
+          importantes. Vérifie que le groupe a utilisé correctement *aller* + infinitif et
+          le futur simple, au moins deux connecteurs, a présenté des idées claires et
+          inclusives et a répondu à une question au futur.
+      - id: n-act3
+        anchor: act3
+        minutes: 15
+        text: >-
+          Explique chaque type avec un exemple oral, puis donne un exemple personnel au
+          passé composé (*J’ai appris des langues en regardant des vidéos et en parlant
+          avec des personnes.*). Vérifie que l’élève a utilisé correctement le passé
+          composé, a exprimé une préférence, a répondu avec une phrase complète et a posé
+          au moins une question de relance.
+      - id: n-act4
+        anchor: act4
+        minutes: 20
+        text: >-
+          Lis le contexte de 2050 à voix haute. Pendant le guide de création, corrige le
+          futur et aide avec les connecteurs. Vérifie que l’élève a utilisé correctement le
+          futur proche et / ou le futur simple, a justifié avec *parce que, donc, c’est
+          pourquoi* ou *cependant*, a expliqué l’impact social, a parlé au moins 30 à 40
+          secondes et a répondu à une question du public.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: education-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-passe
+        type: ruleSummary
+        skill: Passé composé et imparfait
+        rules:
+          - text: 'Le **passé composé** raconte des **actions terminées**, des **événements précis** et des expériences vécues.'
+            examples:
+              - J’ai étudié à l’université.
+              - J’ai participé à un projet en groupe.
+              - J’ai eu un professeur qui m’a beaucoup aidé.
+          - text: 'Formation : **avoir** ou **être** au présent + **participe passé**. La plupart des verbes prennent *avoir*.'
+            examples: [j’ai étudié, tu as appris, nous avons participé]
+          - text: 'On utilise **être** avec les verbes de mouvement (*aller, venir, entrer, sortir, partir, arriver, rester…*) et les verbes pronominaux (*se souvenir, s’adapter*). Avec *être*, le participe s’accorde avec le sujet.'
+            examples:
+              [
+                Elle est entrée à l’université en 2019.,
+                Nous sommes allés à un atelier.,
+                Je me suis adapté(e) au nouveau cours.,
+              ]
+          - text: 'Participes passés irréguliers du cycle :'
+            examples:
+              [
+                'avoir → eu',
+                'être → été',
+                'apprendre → appris',
+                'comprendre → compris',
+                'faire → fait',
+              ]
+          - text: 'L’**imparfait** sert à la **description**, aux **habitudes** et au **contexte** dans le passé.'
+            examples:
+              - Quand j’étais enfant, j’aimais beaucoup l’école.
+              - Le professeur expliquait très bien.
+              - Nous travaillions souvent en groupe.
+          - text: 'Formation de l’imparfait : radical de *nous* au présent (*nous travaillons* → *travaill-*) + **-ais, -ais, -ait, -ions, -iez, -aient**. Exception : *être* → *ét-* (*j’étais*).'
+          - text: '**Dans un récit :** le passé composé pour ce qui s’est passé, l’imparfait pour le contexte.'
+            examples:
+              - Quand j’étais au collège, j’avais peur de parler en classe (imparfait). En 2020, j’ai participé à un concours (passé composé).
+      - id: passe-table
+        type: table
+        caption: Passé composé et imparfait
+        header: [Personne, passé composé (étudier), imparfait (étudier), imparfait (être)]
+        rows:
+          - [je / j’, j’ai étudié, j’étudiais, j’étais]
+          - [tu, tu as étudié, tu étudiais, tu étais]
+          - [il / elle, il / elle a étudié, il / elle étudiait, il / elle était]
+          - [nous, nous avons étudié, nous étudiions, nous étions]
+          - [vous, vous avez étudié, vous étudiiez, vous étiez]
+          - [ils / elles, ils / elles ont étudié, ils / elles étudiaient, ils / elles étaient]
+      - id: rules-futur
+        type: ruleSummary
+        skill: Futur proche et futur simple
+        rules:
+          - text: 'Le **futur proche** (*aller* au présent + **infinitif**) exprime une **intention**, un **projet** ou une **décision**.'
+            examples:
+              - Je vais étudier la psychologie.
+              - Nous allons changer le système scolaire.
+              - L’année prochaine, je vais commencer un cours.
+          - text: '*aller* au présent : *je vais, tu vas, il / elle va, nous allons, vous allez, ils / elles vont*.'
+          - text: 'Le **futur simple** exprime une **prédiction**, une **conséquence** ou une **hypothèse**.'
+            examples:
+              - L’école sera plus numérique.
+              - Les élèves apprendront davantage en ligne.
+              - Les professeurs devront se former.
+          - text: 'Formation du futur simple : **infinitif** + **-ai, -as, -a, -ons, -ez, -ont**. Les verbes en *-re* perdent le *e* (*apprendre* → *j’apprendrai*).'
+            examples: [étudier → j’étudierai, changer → elle changera, apprendre → ils apprendront]
+          - text: 'Certains verbes ont un radical irrégulier, mais les mêmes terminaisons.'
+            examples:
+              [
+                'être → ser- (sera)',
+                'avoir → aur- (auront)',
+                'faire → fer- (ferai)',
+                'aller → ir- (irons)',
+                'pouvoir → pourr- (pourront)',
+                'devoir → devr- (devront)',
+                'devenir → deviendr- (deviendra)',
+              ]
+          - text: '**Combinaison importante en B1 : plan + conséquence.** Le futur proche donne le plan, le futur simple donne le résultat.'
+            examples:
+              - Je vais faire une formation et cela améliorera mes compétences.
+              - Nous allons moderniser les écoles, donc l’éducation deviendra plus accessible.
+      - id: futur-table
+        type: table
+        caption: Le futur simple
+        header: [Personne, étudier, apprendre, être, avoir]
+        rows:
+          - [je / j’, étudierai, apprendrai, serai, aurai]
+          - [tu, étudieras, apprendras, seras, auras]
+          - [il / elle, étudiera, apprendra, sera, aura]
+          - [nous, étudierons, apprendrons, serons, aurons]
+          - [vous, étudierez, apprendrez, serez, aurez]
+          - [ils / elles, étudieront, apprendront, seront, auront]
+      - id: rules-opinion
+        type: ruleSummary
+        skill: Exprimer une opinion, une cause, une conséquence
+        rules:
+          - text: 'Pour donner son **opinion** : *Je pense que… / À mon avis… / Je crois que…*'
+          - text: 'Pour la **cause** : *parce que, puisque*. Pour la **conséquence** : *donc, alors, c’est pourquoi, en conséquence*. Pour l’**opposition** : *cependant, mais*.'
+            examples:
+              - Nous allons former les professeurs parce que la technologie sera essentielle.
+              - Beaucoup d’élèves apprendront à distance, cependant certains préféreront aller à l’école.
+      - id: key-table
+        type: table
+        caption: Tableau récapitulatif
+        header: [Temps verbal, Utilisation, Exemple]
+        rows:
+          - [Passé composé, événement précis, J’ai étudié en 2021.]
+          - [Imparfait, description / habitude, 'Quand j’étais au lycée, j’aimais l’histoire.']
+          - [Futur proche, projet / intention, Je vais commencer un cours.]
+          - [Futur simple, prédiction / conséquence, L’éducation changera beaucoup.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle, sur le parcours scolaire de chaque élève.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: education-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-passe
+        type: aiTutorPrompt
+        title: 'Partie 1 : Mes expériences d’apprentissage (passé)'
+        intro: 'Objectif : pratiquer le passé composé et l’imparfait.'
+        message: >-
+          Bonjour Mori. Je voudrais parler de mes expériences d’apprentissage. Pose-moi au
+          moins 6 questions pour que je puisse répondre en utilisant le passé composé.
+          Après chaque réponse, pose-moi une question de suivi pour que je puisse donner
+          plus de détails en utilisant l’imparfait (pour décrire le contexte ou une
+          habitude). Corrige mes erreurs et aide-moi à améliorer mes réponses.
+      - id: mori-futur
+        type: aiTutorPrompt
+        title: 'Partie 2 : Mon futur comme étudiant ou professeur'
+        intro: 'Objectif : pratiquer le futur proche et le futur simple.'
+        message: >-
+          Bonjour Mori. Parlons de mon futur. Pose-moi des questions sur mes projets en
+          utilisant le futur proche (aller + infinitif) et des questions sur mes
+          prédictions en utilisant le futur simple. Après chaque réponse, demande-moi
+          d’expliquer pourquoi. Corrige ma grammaire et aide-moi à répondre avec des
+          phrases complètes.
+      - id: mori-sujet
+        type: aiTutorPrompt
+        title: 'Partie 3 : Un sujet personnel sur l’éducation (opinion et réflexion)'
+        intro: 'Choisis UN thème : l’éducation dans mon pays, la technologie dans l’éducation, l’éducation inclusive, les professeurs qui m’ont marqué(e) ou le système éducatif du futur. Écris-le à la place de ___ dans le message.'
+        message: >-
+          Bonjour Mori. Je voudrais parler d’un sujet important pour moi : ___. Pose-moi
+          des questions sur mon opinion, sur mes expériences passées et sur ce qui, selon
+          moi, changera dans le futur. Je veux pratiquer le passé composé, l’imparfait et
+          le futur. Après chaque réponse, pose-moi une question de suivi pour que je
+          puisse développer.
+      - id: defi-title
+        type: heading
+        level: 3
+        text: 'Partie 4 : Mini défi final'
+      - id: defi-rules
+        type: callout
+        tone: info
+        title: Ta réponse doit contenir
+        text: |-
+          5 ou 6 phrases, avec :
+          - 2 phrases au **passé composé**
+          - 1 phrase à l’**imparfait**
+          - 2 phrases au **futur** (proche ou simple)
+      - id: defi
+        type: reflection
+        prompt: Comment l’éducation a-t-elle changé ta vie, et qu’est-ce que tu vas faire dans le futur grâce à ce que tu as appris ?
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: education-pratique
+    book: workbook
+    title: 'Pratique : Éducation'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-passe
+        type: activity
+        activity: education-passe
+      - id: ex-futur
+        type: activity
+        activity: education-futur
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: education-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de l’éducation
+        glossLang: he
+        link: https://quizlet.com/il/1144007715/extreme-french-2026-education-flash-cards/
+        items: &education-words
+          - { term: système éducatif, gloss: מערכת החינוך }
+          - { term: éducation publique, gloss: חינוך ציבורי }
+          - { term: éducation privée, gloss: חינוך פרטי }
+          - { term: éducation inclusive, gloss: חינוך משלב }
+          - { term: formation professionnelle, gloss: הכשרה מקצועית }
+          - { term: cursus universitaire, gloss: לימודים אקדמיים }
+          - { term: études supérieures, gloss: השכלה גבוהה }
+          - { term: établissement scolaire, gloss: מוסד חינוכי }
+          - { term: élève / étudiant, gloss: תלמיד / סטודנט }
+          - { term: professeur / enseignant, gloss: מורה }
+          - { term: tuteur, gloss: חונך }
+          - { term: conseiller d’orientation, gloss: יועץ חינוכי }
+          - { term: camarade de classe, gloss: חבר לכיתה }
+          - { term: apprendre, gloss: ללמוד (לרכוש ידע) }
+          - { term: enseigner, gloss: ללמד }
+          - { term: étudier, gloss: 'ללמוד (לעיין, לשנן)' }
+          - { term: pratiquer / s’entraîner, gloss: לתרגל }
+          - { term: s’améliorer / progresser, gloss: להשתפר }
+          - { term: examen, gloss: מבחן }
+          - { term: évaluation, gloss: הערכה }
+          - { term: note, gloss: ציון }
+          - { term: réussir (un examen), gloss: לעבור (מבחן) }
+          - { term: échouer, gloss: להיכשל }
+          - { term: progrès, gloss: התקדמות }
+          - { term: réussite / accomplissement, gloss: הישג }
+          - { term: devoirs, gloss: שיעורי בית }
+          - { term: travail en groupe, gloss: עבודה בקבוצה }
+          - { term: présentation, gloss: מצגת / פרזנטציה }
+          - { term: apprentissage autonome, gloss: למידה עצמאית }
+          - { term: cours en ligne, gloss: קורס מקוון }
+          - { term: technologie éducative, gloss: טכנולוגיה חינוכית }
+          - { term: compétences, gloss: מיומנויות }
+          - { term: développement personnel, gloss: התפתחות אישית }
+          - { term: motivation, gloss: מוטיבציה }
+          - { term: avenir de l’éducation, gloss: עתיד החינוך }
+          - { term: changement social, gloss: שינוי חברתי }
+
+vocabulary:
+  - slug: education
+    title: Éducation
+    items: *education-words
+
+activities:
+  - slug: education-passe
+    title: 'Passé composé et imparfait : mon parcours scolaire'
+    minutes: 8
+    items:
+      - id: avais-peur
+        type: multipleChoice
+        prompt: Quand j’étais au collège, j’___ souvent peur de parler en classe.
+        options:
+          - { text: avais, correct: true }
+          - {
+              text: ai eu,
+              feedback: '*Quand j’étais au collège* et *souvent* parlent d’une habitude : on utilise l’imparfait, *j’avais*.',
+            }
+          - {
+              text: aurai,
+              feedback: '*J’aurai* est au futur. Pour une habitude dans le passé, on utilise l’imparfait : *j’avais*.',
+            }
+      - id: avez-propose
+        type: multipleChoice
+        prompt: En 2020, vous ___ de participer à un concours de langues.
+        options:
+          - { text: m’avez proposé, correct: true }
+          - {
+              text: me proposiez,
+              feedback: '*En 2020* est un moment précis et l’action est terminée : on utilise le passé composé, *vous m’avez proposé*.',
+            }
+          - {
+              text: me proposez,
+              feedback: '*Vous me proposez* est au présent. Pour un événement précis du passé, on dit *vous m’avez proposé*.',
+            }
+      - id: ai-participe
+        type: fillBlank
+        prompt: Complète avec le verbe *participer* au passé composé.
+        text: L’année dernière, j’___ à un projet en groupe.
+        blanks: [[ai participé]]
+      - id: imparfait-usage
+        type: trueFalse
+        prompt: L’imparfait sert à décrire une situation, une habitude ou un contexte dans le passé.
+        answer: true
+        feedback:
+          correct: 'Bravo ! Par exemple : *Le professeur expliquait très bien. Nous travaillions souvent en groupe.*'
+          incorrect: 'Si, c’est vrai : l’imparfait décrit le contexte ou une habitude (*Nous travaillions souvent en groupe*). Le passé composé raconte un événement précis.'
+      - id: participes
+        type: matching
+        prompt: Associe chaque verbe à son participe passé.
+        pairs:
+          - [avoir, eu]
+          - [être, été]
+          - [apprendre, appris]
+          - [comprendre, compris]
+          - [faire, fait]
+      - id: est-entree
+        type: multipleChoice
+        prompt: En 2019, ma sœur ___ à l’université.
+        options:
+          - { text: est entrée, correct: true }
+          - {
+              text: a entré,
+              feedback: 'Le verbe *entrer* se conjugue avec *être* au passé composé : *elle est entrée*.',
+            }
+          - {
+              text: est entré,
+              feedback: 'Avec *être*, le participe s’accorde avec le sujet. *Ma sœur* est féminin : *elle est entrée*.',
+            }
+      - id: aimais
+        type: fillBlank
+        prompt: Complète avec le verbe *aimer* à l’imparfait (une habitude, une description).
+        text: Quand j’étais enfant, j’___ beaucoup l’école.
+        blanks: [[aimais]]
+      - id: ordre-professeur
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: J’ai eu un professeur formidable.
+
+  - slug: education-futur
+    title: 'Futur proche et futur simple : projets et prédictions'
+    minutes: 8
+    items:
+      - id: vais-etudier
+        type: multipleChoice
+        prompt: L’année prochaine, je ___ étudier la psychologie.
+        options:
+          - { text: vais, correct: true }
+          - { text: vas, feedback: '*Vas* est pour *tu*. Pour *je*, on dit *je vais* + infinitif.' }
+          - {
+              text: va,
+              feedback: '*Va* est pour *il / elle*. Pour *je*, on dit *je vais* + infinitif.',
+            }
+      - id: sera
+        type: fillBlank
+        prompt: Complète avec le verbe *être* au futur simple (une prédiction).
+        text: Dans le futur, l’école ___ plus numérique.
+        blanks: [[sera]]
+      - id: futurs-irreguliers
+        type: matching
+        prompt: Associe chaque verbe à sa forme au futur simple.
+        pairs:
+          - [être (l’école), sera]
+          - [avoir (les jeunes), auront]
+          - [devoir (les professeurs), devront]
+          - [devenir (l’éducation), deviendra]
+          - [apprendre (les élèves), apprendront]
+      - id: projet-prediction
+        type: trueFalse
+        prompt: 'On utilise le futur proche (*aller* + infinitif) pour un projet ou une intention, et le futur simple pour une prédiction.'
+        answer: true
+        feedback:
+          correct: 'Bravo ! *Je vais commencer un cours* (projet). *L’éducation changera beaucoup* (prédiction).'
+          incorrect: 'C’est vrai : *Je vais commencer un cours* (projet, futur proche). *L’éducation changera beaucoup* (prédiction, futur simple).'
+      - id: prediction
+        type: multipleChoice
+        prompt: Quelle phrase est une prédiction au futur simple ?
+        options:
+          - { text: L’éducation changera beaucoup., correct: true }
+          - {
+              text: Je vais commencer un cours.,
+              feedback: 'Cette phrase est au futur proche (*aller* + infinitif) : c’est un projet. Le futur simple, c’est *changera, sera, apprendront*…',
+            }
+          - {
+              text: 'Quand j’étais au lycée, j’aimais l’histoire.',
+              feedback: 'Cette phrase est à l’imparfait (passé). Le futur simple, c’est *changera, sera, apprendront*…',
+            }
+      - id: allons
+        type: fillBlank
+        prompt: Complète avec le verbe *aller* au présent (futur proche).
+        text: Nous ___ moderniser les écoles.
+        blanks: [[allons]]
+      - id: ameliorera
+        type: multipleChoice
+        prompt: Je vais faire une formation et cela ___ mes compétences.
+        options:
+          - { text: améliorera, correct: true }
+          - {
+              text: améliorait,
+              feedback: '*Améliorait* est à l’imparfait (passé). La formation est un projet et le résultat est au futur simple : *améliorera*.',
+            }
+          - {
+              text: améliorer,
+              feedback: 'Ici, il faut un verbe conjugué au futur simple : *cela améliorera*.',
+            }
+      - id: ordre-en-ligne
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Les élèves apprendront davantage en ligne.
