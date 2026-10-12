@@ -1,0 +1,674 @@
+# Cycle "Famiglia, generazioni e relazioni", converted from the Italian level 3 digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-livello-3
+slug: famiglia-e-generazioni
+title: Famiglia, generazioni e relazioni
+goal: Parlare della famiglia e delle generazioni con i connettivi logici e gli aggettivi descrittivi.
+position: 17
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Connettivi logici" and "Aggettivi descrittivi") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    summary rules, the activity examples and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    WRONG RULE fixed: the summary said "Sebbene richiede il congiuntivo a livello più
+    avanzato". "Sebbene" (like "benché") ALWAYS takes the congiuntivo; "anche se"
+    takes the indicativo. The examples "Sebbene abbiamo opinioni diverse" / "Sebbene
+    siamo diversi" are kept (for "noi" the congiuntivo presente has the same form as
+    the indicativo), with "Sebbene i genitori siano tradizionali…" from Activity 1
+    added so the congiuntivo is visible. ADDED to the connectors: "anche se",
+    "invece", "nonostante" (+ noun), "grazie a", used in the activities and Mori
+    tasks but not in the summary, and a connectors table.
+  - >-
+    WRONG EXAMPLE fixed: under "prima del nome" the summary gave "Un ambiente
+    stabile", where the adjective is AFTER the noun. Rewritten: descriptive adjectives
+    usually go after the noun (un ambiente stabile, una famiglia tradizionale); some
+    can go before, often to give emphasis (un forte legame, una bella famiglia). The
+    agreement rule showed only an -e adjective (tradizionale); -o adjectives
+    (organizzato / organizzata / organizzati / organizzate) and a table were added.
+    The example "Debole → Buono / Avanzato → Solidale…" (unclear) now reads "Mia
+    madre è buona. → Mia madre è solidale ed esigente." Please confirm.
+  - >-
+    Corrections: warm-up frame 3 "Ammirò" (passato remoto, 3rd person) → "Ammiro";
+    Activity 1 "Sé stesso" → "Tu" (the student fills in the tree); Activity 2
+    "Conferenza tra Super Tatee" → "Super Tate" (plural of "tata"); "verbi modali"
+    (the examples use "consiglierei, potrebbe") → "il condizionale (consiglierei,
+    potreste, dovreste)"; Mori task 1 "Parlami della mia famiglia" (Mori does not
+    know it) → "Voglio parlare della mia famiglia"; Mori task 2 "voglio che mi
+    faccia domande" (Lei form) → "voglio che tu mi faccia domande"; "Family Swap"
+    (English) → "Scambio di famiglia"; heading "Vocabulo" → "Vocabolario". The
+    intro example "Ho imparato il valore della responsabilità perché…" was rewritten
+    to follow the frame ("Una cosa importante che ho imparato dalla mia famiglia
+    è…"). All warm-up questions were numbered "1." in the source.
+  - >-
+    Left out: the gamma.app lesson slides (not allowed; mentioned in a teacher note);
+    the "Data / Studenti" lines; "Livello: B1-B2"; the "Risposta dello studente
+    1/2/3" lines (the platform has answer boxes). The Quizlet link's funnelUUID
+    tracking parameter was removed. Activity 3 uses a video and Activity 4 (and Mori
+    task 3) a podcast, but the source has no link for either: teacher notes ask the
+    teacher to choose one. "L'insegnante può scegliere 6 domande" moved to a teacher
+    note.
+  - >-
+    Added (not in the source): answer frames for Activities 1–5 and the Mori tasks'
+    "Attenzione grammaticale" lists as the intro of each message. The source has no
+    classic (written) homework for this cycle and no activity times, so none are
+    recorded.
+  - >-
+    Vocabulary: "Equilibrato" had no gloss in the source (the notebook ends there);
+    "מאוזן" was added. Please confirm. "Conflitto – קונפליקט" → "סכסוך / קונפליקט".
+    The other glosses are as in the source.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: famiglia-e-generazioni-classe
+    title: 'In classe: Famiglia, generazioni e relazioni'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Famiglia, generazioni e relazioni
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Connettivi logici
+            description: '*tuttavia, sebbene, anche se, mentre, quindi, di conseguenza, poiché*'
+          - name: Aggettivi descrittivi
+            description: '*solidale, esigente, resiliente, indipendente, tradizionale, protettivo*'
+      - id: quizlet
+        type: externalLink
+        label: Famiglia, generazioni e relazioni su Quizlet
+        url: https://quizlet.com/br/1149559860/famiglia-generazioni-e-relazioni-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazione
+      - id: intro
+        type: sentenceFrame
+        frame: |-
+          Mi chiamo ___.
+          La mia famiglia è ___ e ___, anche se a volte ___.
+          Una cosa importante che ho imparato dalla mia famiglia è ___, perché ___.
+        example: |-
+          Mi chiamo Marco.
+          La mia famiglia è molto unita e tradizionale, anche se a volte può essere un po' severa.
+          Una cosa importante che ho imparato dalla mia famiglia è il valore della responsabilità, perché i miei genitori sono sempre stati molto esigenti ma solidali.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup-hint
+        type: callout
+        tone: info
+        text: Rispondi con frasi complete. Usa **aggettivi precisi** e **connettivi logici** per collegare le idee.
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Descriveresti la tua famiglia come più tradizionale o più moderna? In che modo questo influenza le decisioni importanti?
+            frame: La mia famiglia è abbastanza ___, soprattutto per quanto riguarda ___. Tuttavia, è ___ quando si tratta di ___.
+          - question: Chi è una persona particolarmente influente nella tua famiglia e perché?
+            frame: ___ è una persona molto ___ e ___, quindi per me è ___. Anche se a volte è ___, è anche ___.
+          - question: Quali qualità ammiri nei membri più anziani della tua famiglia?
+            frame: Ammiro la loro ___ e la loro ___, anche se a volte ___. Sono ___, quindi i loro consigli sono ___.
+          - question: Come descriveresti la dinamica della tua famiglia?
+            frame: La mia famiglia è ___ e ___, anche se a volte ___. Di solito ___ perché ___.
+          - question: In che modo il tuo rapporto con i tuoi genitori è cambiato nel tempo?
+            frame: Nel tempo il mio rapporto è diventato più ___ e ___. Mentre prima ___, ora ___ perché ___.
+          - question: Pensi che crescere in Israele crei un'atmosfera familiare unica? Perché?
+            frame: Secondo me, crescere in Israele crea un'atmosfera ___ e ___, poiché ___. Anche se ___, offre ___.
+          - question: In che modo le aspettative familiari influenzano le scelte personali?
+            frame: Le aspettative familiari possono essere ___ perché ___. Tuttavia, possono essere ___ se ___.
+          - question: Come sarebbe la tua famiglia ideale in futuro?
+            frame: La mia famiglia ideale sarebbe ___ e ___, ma anche ___. Vorrei creare un ambiente ___, affinché ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: "Attività 1: L'albero professionale della famiglia"
+        skills: [Aggettivi descrittivi, Connettivi logici]
+        steps:
+          - '**Fase 1, preparazione individuale:** crea un «albero professionale» della tua famiglia fino a tre generazioni: nonni, genitori, tu e (facoltativo) figli.'
+          - 'Per ogni persona scrivi: la professione principale, 2 o 3 aggettivi per descrivere la sua personalità o il suo stile di lavoro e una frase sulla sua influenza. Cerca somiglianze, differenze e schemi che si ripetono.'
+          - '**Fase 2, presentazione a coppie:** presenta il tuo albero al compagno. Il compagno fa almeno tre domande di approfondimento. Poi vi scambiate i ruoli.'
+          - "**Fase 3, alla classe:** presenta una caratteristica interessante dell'albero del tuo compagno con almeno un connettivo logico."
+        example: |-
+          *Mio nonno era un imprenditore determinato e ambizioso. Grazie al suo esempio, mio padre è diventato molto responsabile.*
+          *La sua famiglia è molto orientata alla stabilità, mentre lui ha scelto un percorso creativo.*
+          *Sebbene i genitori siano tradizionali, lui è piuttosto indipendente.*
+      - id: act1-tree
+        type: discussionQuestions
+        title: Il mio albero professionale
+        items:
+          - question: I miei nonni
+            frame: Mio nonno / Mia nonna era ___. Era ___ e ___. Grazie al suo esempio, ___.
+          - question: I miei genitori
+            frame: Mia madre / Mio padre è ___. È ___ e ___, mentre ___.
+          - question: Io
+            frame: Sono ___. Anche se ___, io ___.
+          - question: I miei figli (facoltativo)
+            frame: Mio figlio / Mia figlia ___.
+      - id: act1-followup
+        type: examples
+        title: Domande di approfondimento
+        items:
+          - text: C'è una continuità professionale nella tua famiglia?
+          - text: Ti senti influenzato / influenzata dalle scelte dei tuoi genitori?
+          - text: Hai scelto un percorso simile o diverso?
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: La Super Tata visita la mia famiglia'
+        skills: [Aggettivi descrittivi, Connettivi logici]
+        steps:
+          - '**Fase 1:** immagina di essere una «Super Tata» che osserva la tua famiglia per una settimana. Scrivi un breve rapporto professionale, con un tono ironico ma rispettoso.'
+          - "**Fase 2:** il rapporto ha cinque parti: un'osservazione generale; una descrizione dei ruoli familiari con aggettivi precisi; un aspetto da migliorare (routine, comunicazione, divisione dei compiti, uso del telefono, puntualità); una soluzione con il condizionale (*consiglierei, potreste, dovreste*); una chiusura positiva."
+          - '**Fase 3, conferenza tra Super Tate:** a coppie, ogni studente presenta il suo rapporto. Il compagno aggiunge un altro suggerimento con il condizionale.'
+          - "**Fase 4, discussione guidata:** perché è più facile giudicare le famiglie degli altri? I social media creano un'immagine realistica delle famiglie?"
+        example: |-
+          *Questa è una famiglia affettuosa ma leggermente caotica.*
+          *La madre è estremamente organizzata, mentre il padre è rilassato ma distratto.*
+          *Consiglierei di stabilire regole più chiare, perché questo potrebbe ridurre i conflitti.*
+          *Nonostante qualche difficoltà, la famiglia è unita e leale.*
+      - id: act2-report
+        type: discussionQuestions
+        title: Il mio rapporto da Super Tata
+        items:
+          - question: Osservazione generale
+            frame: Questa è una famiglia ___ ma ___.
+          - question: Descrizione dei ruoli familiari
+            frame: La madre è ___, mentre il padre è ___.
+          - question: Un aspetto da migliorare
+            frame: Un problema di questa famiglia è ___.
+          - question: Una soluzione
+            frame: Consiglierei di ___, perché questo potrebbe ___.
+          - question: Chiusura positiva
+            frame: Nonostante ___, la famiglia è ___.
+      - id: act2-discussion
+        type: discussionQuestions
+        title: Discussione
+        items:
+          - question: Perché è più facile giudicare le famiglie degli altri?
+            frame: Secondo me è più facile perché ___.
+          - question: I social media creano un'immagine realistica delle famiglie?
+            frame: Secondo me ___; tuttavia, ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Divario generazionale'
+        skills: [Connettivi logici, Aggettivi descrittivi]
+        steps:
+          - "**Fase 1, brainstorming:** che cos'è un divario generazionale? Quali fattori lo causano? In che modo la tecnologia e i valori influenzano le differenze?"
+          - '**Fase 2, video:** durante la visione annota una somiglianza sorprendente, una differenza evidente e due aggettivi per descrivere ogni persona.'
+          - '**Fase 3, discussione a coppie:** rispondete alle domande qui sotto con i comparativi (*più… di, meno… di*) e i connettivi *mentre, tuttavia, sebbene, di conseguenza*.'
+          - '**Fase 4, condivisione:** ogni coppia presenta alla classe una differenza e una somiglianza con una frase complessa.'
+        example: '*La mia generazione è più aperta di quella dei miei genitori; tuttavia, è anche più stressata.*'
+      - id: act3-questions
+        type: discussionQuestions
+        title: Discussione a coppie
+        items:
+          - question: Hai mai parlato con qualcuno molto più giovane o più anziano di te?
+            frame: Sì, ho parlato con ___, che è ___. Sebbene ___, ___.
+          - question: La tua generazione è più aperta o più stressata rispetto alla precedente?
+            frame: La mia generazione è più ___ di quella precedente, mentre ___.
+          - question: Quali stereotipi ti infastidiscono?
+            frame: Mi infastidisce lo stereotipo che ___, perché ___.
+          - question: Una differenza e una somiglianza
+            frame: ___ è più ___, mentre ___. Tuttavia, tutti e due ___.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Relazioni tra fratelli'
+        skills: [Aggettivi descrittivi, Connettivi logici]
+        steps:
+          - "**Fase 1, ascolto del podcast:** annota una descrizione positiva, uno stereotipo menzionato e un'espressione interessante."
+          - "**Fase 2, comprensione guidata:** come viene descritta la relazione? Qual è il significato dell'espressione che hai sentito? Che cosa si dice sugli stereotipi?"
+          - '**Fase 3, discussione a gruppi:** rispondete alle domande qui sotto con frasi lunghe e collegate.'
+          - "**Fase 4, condivisione:** i ruoli tra fratelli influenzano la personalità adulta? I rapporti migliorano con l'età? Perché?"
+        example: '*Anche se discutiamo spesso, ci sosteniamo nei momenti difficili.*'
+      - id: act4-questions
+        type: discussionQuestions
+        title: Discussione a gruppi
+        items:
+          - question: Vai d'accordo con i tuoi fratelli?
+            frame: Con ___ vado ___ d'accordo. Anche se ___, ___.
+          - question: Il tuo ruolo familiare corrisponde agli stereotipi?
+            frame: Sono il primo / il secondo / il più piccolo, quindi ___. Tuttavia, ___.
+          - question: Gli stereotipi sono utili o dannosi?
+            frame: Secondo me sono ___, poiché ___.
+          - question: I rapporti tra fratelli migliorano con l'età?
+            frame: Con l'età ___; di conseguenza, ___.
+      - id: act5
+        type: classActivity
+        title: 'Attività 5: Dibattito. Lealtà familiare o indipendenza personale?'
+        skills: [Connettivi logici, Aggettivi descrittivi]
+        steps:
+          - "**Gruppo 1:** la lealtà familiare è il valore più importante. **Gruppo 2:** l'indipendenza personale deve avere la priorità."
+          - Ogni gruppo prepara almeno 3 argomenti con connettivi logici e aggettivi descrittivi.
+          - Dibattito tra i due gruppi.
+          - '**Conclusione, discussione aperta:** è possibile mantenere forti legami familiari senza sacrificare la libertà personale?'
+        example: "*La lealtà familiare è fondamentale, perché garantisce stabilità emotiva. Tuttavia, un'eccessiva pressione può risultare limitante.*"
+      - id: act5-arguments
+        type: discussionQuestions
+        title: I nostri argomenti
+        items:
+          - question: 'Argomento 1:'
+            frame: ___ è fondamentale, perché ___.
+          - question: 'Argomento 2:'
+            frame: Inoltre, ___. Di conseguenza, ___.
+          - question: 'Argomento 3:'
+            frame: Sebbene ___, ___.
+          - question: È possibile mantenere forti legami familiari senza sacrificare la libertà personale?
+            frame: Secondo me ___, tuttavia ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Connettivi logici** e **Aggettivi descrittivi**;
+          tutte e cinque le attività le praticano insieme. Il quaderno non indica i
+          tempi: scegli le attività secondo il tempo della lezione. Il quaderno ha un link
+          a una presentazione su gamma.app («Famiglia, Generazioni e Relazioni») che non
+          è inclusa nella piattaforma (il sito non è permesso); se la usi, aprila dal tuo
+          materiale.
+      - id: n-intro
+        anchor: intro
+        text: Dai prima il tuo esempio, poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Scegli 6 domande. Controlla che gli studenti rispondano con frasi complete,
+          aggettivi precisi e connettivi logici per collegare le idee.
+      - id: n-act1
+        anchor: act1
+        text: 'Modalità: lavoro individuale → lavoro a coppie → presentazione orale. Incoraggia gli studenti a trovare somiglianze, differenze e schemi che si ripetono.'
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Modalità: scrittura individuale → confronto a coppie → discussione con tutta
+          la classe. Ricorda che dopo *consiglierei di* va l'infinito, e dopo *potreste /
+          dovreste* l'infinito senza preposizione.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Modalità: brainstorming → video → discussione a coppie → condivisione. Il
+          quaderno non indica quale video usare: scegli prima della lezione un breve
+          video in italiano sul divario generazionale (per esempio su YouTube).
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Modalità: ascolto → comprensione → discussione → condivisione. Il quaderno non
+          ha il link del podcast: scegli prima della lezione un breve podcast o video
+          sulle relazioni tra fratelli (primogenito, figlio di mezzo, il più piccolo) con
+          una descrizione positiva, uno stereotipo e un'espressione. Lo stesso podcast
+          serve per il Compito 3 con Mori.
+      - id: n-act5
+        anchor: act5
+        text: "Modalità: divisione in gruppi → preparazione degli argomenti → dibattito. Alla fine correggi l'uso dei connettivi."
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: famiglia-e-generazioni-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-aggettivi
+        type: ruleSummary
+        skill: Aggettivi descrittivi
+        rules:
+          - text: 'Gli aggettivi servono a descrivere persone (personalità, atteggiamenti, caratteristiche), ambienti e dinamiche familiari, e stati emotivi. Un aggettivo preciso rende il discorso meno generico.'
+            examples: [Mia madre è buona. → Mia madre è solidale ed esigente.]
+          - text: "L'aggettivo va dopo il verbo **essere** e dopo verbi come **sembrare, diventare, apparire**."
+            examples:
+              [
+                Mia madre è molto organizzata.,
+                La situazione sembra complicata.,
+                La discussione è diventata intensa.,
+              ]
+          - text: "Di solito l'aggettivo descrittivo va **dopo il nome**. Alcuni aggettivi possono andare prima, spesso per dare più forza."
+            examples: [un ambiente stabile, una famiglia tradizionale, un forte legame familiare]
+          - text: "**Accordo:** l'aggettivo concorda in genere e numero con il nome. Gli aggettivi in *-o* hanno quattro forme (*-o, -a, -i, -e*); gli aggettivi in *-e* hanno due forme (*-e* al singolare, *-i* al plurale)."
+            examples:
+              - Mio padre è organizzato. / Mia madre è organizzata.
+              - genitori severi / famiglie tradizionali
+          - text: '**Rafforzare gli aggettivi:** *molto, estremamente, particolarmente, profondamente, incredibilmente*.'
+            examples: [È estremamente responsabile., Mia nonna è profondamente religiosa.]
+      - id: aggettivi-table
+        type: table
+        caption: Accordo degli aggettivi
+        header:
+          [Aggettivo, Maschile singolare, Femminile singolare, Maschile plurale, Femminile plurale]
+        rows:
+          - [-o, organizzato, organizzata, organizzati, organizzate]
+          - [-o, severo, severa, severi, severe]
+          - [-e, tradizionale, tradizionale, tradizionali, tradizionali]
+          - [-e, indipendente, indipendente, indipendenti, indipendenti]
+      - id: rules-connettivi
+        type: ruleSummary
+        skill: Connettivi logici
+        rules:
+          - text: 'I connettivi collegano le idee e rendono il discorso coerente e strutturato.'
+          - text: '**Aggiunta:** *e, inoltre, anche*.'
+            examples:
+              [
+                È indipendente e molto determinata.,
+                'La mia famiglia è unita. Inoltre, è molto solidale.',
+              ]
+          - text: '**Contrasto:** *ma, tuttavia, invece, mentre, anche se, sebbene, nonostante*.'
+            examples:
+              - La mia famiglia è unita, ma discutiamo spesso.
+              - La madre è organizzata, mentre il padre è distratto.
+              - Nonostante qualche difficoltà, la famiglia è unita e leale.
+          - text: '**Anche se** + indicativo; **sebbene** + congiuntivo (sempre).'
+            examples:
+              - Anche se discutiamo spesso, ci sosteniamo nei momenti difficili.
+              - Sebbene i genitori siano tradizionali, lui è piuttosto indipendente.
+              - Sebbene abbiamo opinioni diverse, ci rispettiamo.
+          - text: '**Causa:** *perché, dato che, poiché, grazie a* (+ nome).'
+            examples:
+              - Ho scelto questa carriera perché i miei genitori mi hanno sostenuto.
+              - Grazie al suo esempio, mio padre è diventato molto responsabile.
+          - text: '**Conseguenza:** *quindi, di conseguenza, perciò*.'
+            examples: ['La famiglia è molto unita, quindi ci vediamo spesso.']
+          - text: '**Sequenza:** *prima, poi, successivamente, infine*.'
+            examples: ['Prima abbiamo discusso, poi abbiamo trovato una soluzione.']
+      - id: connettivi-table
+        type: table
+        caption: Connettivi logici
+        header: [Funzione, Connettivi]
+        rows:
+          - [Aggiunta, 'e, inoltre, anche']
+          - [
+              Contrasto,
+              'ma, tuttavia, invece, mentre, anche se, sebbene (+ congiuntivo), nonostante',
+            ]
+          - [Causa, 'perché, dato che, poiché, grazie a']
+          - [Conseguenza, 'quindi, di conseguenza, perciò']
+          - [Sequenza, 'prima, poi, successivamente, infine']
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con il gruppo e chiedi un esempio nuovo per ogni regola, sulla famiglia di ogni studente.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: famiglia-e-generazioni-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia un messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: goal
+        type: text
+        text: 'Obiettivo: usare aggettivi forti e precisi, connettivi logici corretti e strutture comparative per scrivere frasi complesse e coerenti, e correggere i tuoi errori.'
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Compito 1: Descrivere la propria famiglia'
+        intro: 'Attenzione: usa frasi complete, collega le idee con i connettivi, evita frasi troppo lunghe e confuse e usa i comparativi corretti. Esempio: *La mia famiglia è più tradizionale di quella dei miei amici, mentre loro sono più indipendenti.*'
+        message: >-
+          Ciao Mori! Voglio parlare della mia famiglia. Fammi domande che mi aiutino a
+          descrivere le personalità e l'atmosfera usando aggettivi forti come solidale,
+          tradizionale, indipendente o intenso. Chiedimi di confrontare due generazioni
+          della mia famiglia usando strutture comparative come più… di, meno… di, così…
+          come, mentre o invece. Incoraggiami a spiegare in che modo la mia famiglia è
+          simile o diversa rispetto ad altre famiglie che conosco. Correggi i miei errori
+          e suggerisci aggettivi più precisi o frasi comparative più chiare quando
+          necessario.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Compito 2: Scambio di famiglia'
+        intro: 'Immagina di entrare a far parte di una famiglia famosa. Scegli una famiglia conosciuta e descrivi la tua «nuova» famiglia. Attenzione: usa connettivi diversi secondo il significato, giustifica sempre le tue opinioni e usa almeno un contrasto e una causa in ogni risposta. Esempio: *Questa famiglia è estremamente ambiziosa, mentre la mia è più riservata. Tuttavia, entrambe valorizzano la lealtà.*'
+        message: >-
+          Ciao Mori, sto entrando a far parte di una famiglia famosa e voglio che tu mi
+          faccia domande su come sarebbe la vita in quella famiglia. Incoraggiami a
+          descriverla usando aggettivi forti e a spiegare le mie idee usando connettivi
+          come perché, sebbene, tuttavia, mentre, anche se e di conseguenza. Chiedimi di
+          parlare delle somiglianze e delle differenze tra questa famiglia famosa e la mia
+          famiglia reale. Correggi i miei errori e suggerisci frasi più chiare se le mie
+          idee non sono ben collegate.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Compito 3: Relazioni tra fratelli'
+        intro: "Prima ascolta il podcast sulle relazioni tra fratelli (lo stesso della lezione) e annota una descrizione positiva, uno stereotipo e un'espressione interessante. Attenzione: usa frasi lunghe ma ben organizzate, connettivi appropriati e il passato prossimo e l'imperfetto per le esperienze passate. Esempio: *Anche se litigavamo spesso da bambini, ora abbiamo un rapporto molto più maturo perché abbiamo imparato a rispettarci.*"
+        message: >-
+          Ciao Mori, oggi ho ascoltato un podcast sulle relazioni tra fratelli e sugli
+          stereotipi legati al primogenito, al figlio di mezzo e al più piccolo. Fammi
+          domande che mi aiutino a descrivere il mio rapporto con i miei fratelli usando
+          aggettivi forti come solidale, competitivo, indipendente, protettivo o testardo.
+          Chiedimi se il mio ruolo in famiglia corrisponde agli stereotipi comuni oppure
+          no. Incoraggiami a spiegare le mie idee usando connettivi come sebbene,
+          tuttavia, perché, mentre e di conseguenza. Correggi i miei errori e suggerisci
+          aggettivi più precisi o frasi meglio strutturate se necessario.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: famiglia-e-generazioni-pratica
+    book: workbook
+    title: 'Pratica: Famiglia, generazioni e relazioni'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-connettivi
+        type: activity
+        activity: famiglia-e-generazioni-connettivi
+      - id: ex-aggettivi
+        type: activity
+        activity: famiglia-e-generazioni-aggettivi
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: famiglia-e-generazioni-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole della famiglia e delle relazioni
+        glossLang: he
+        link: https://quizlet.com/br/1149559860/famiglia-generazioni-e-relazioni-flash-cards/
+        items: &famiglia-e-generazioni-words
+          - { term: Relazione, gloss: מערכת יחסים }
+          - { term: Legame, gloss: קשר }
+          - { term: Influenza, gloss: השפעה }
+          - { term: Valore, gloss: ערך }
+          - { term: Tradizione, gloss: מסורת }
+          - { term: Aspettativa, gloss: ציפייה }
+          - { term: Indipendenza, gloss: עצמאות }
+          - { term: Lealtà, gloss: נאמנות }
+          - { term: Responsabilità, gloss: אחריות }
+          - { term: Sostegno, gloss: תמיכה }
+          - { term: Conflitto, gloss: סכסוך / קונפליקט }
+          - { term: Discussione, gloss: ויכוח / דיון }
+          - { term: Rispetto, gloss: כבוד }
+          - { term: Comprensione, gloss: הבנה }
+          - { term: Stabilità, gloss: יציבות }
+          - { term: Libertà personale, gloss: חופש אישי }
+          - { term: Pressione sociale, gloss: לחץ חברתי }
+          - { term: Stereotipo, gloss: סטריאוטיפ }
+          - { term: Ruolo sociale, gloss: תפקיד חברתי }
+          - { term: Divario generazionale, gloss: פער דורי }
+          - { term: Resiliente, gloss: עמיד / חסין }
+          - { term: Tradizionale, gloss: מסורתי }
+          - { term: Moderno, gloss: מודרני }
+          - { term: Indipendente, gloss: עצמאי }
+          - { term: Esigente, gloss: תובעני }
+          - { term: Solidale, gloss: תומך }
+          - { term: Competitivo, gloss: תחרותי }
+          - { term: Protettivo, gloss: מגונן }
+          - { term: Testardo, gloss: עקשן }
+          - { term: Aperto di mentalità, gloss: פתוח מחשבתית }
+          - { term: Conservatore, gloss: שמרני }
+          - { term: Flessibile, gloss: גמיש }
+          - { term: Ambizioso, gloss: שאפתן }
+          - { term: Limitante, gloss: מגביל }
+          - { term: Coerente, gloss: עקבי }
+          - { term: Equilibrato, gloss: מאוזן }
+
+vocabulary:
+  - slug: famiglia-e-generazioni
+    title: Famiglia, generazioni e relazioni
+    items: *famiglia-e-generazioni-words
+
+activities:
+  - slug: famiglia-e-generazioni-connettivi
+    title: 'Connettivi logici: tuttavia, sebbene, quindi'
+    minutes: 8
+    items:
+      - id: ma
+        type: multipleChoice
+        prompt: La mia famiglia è unita, ___ discutiamo spesso.
+        options:
+          - { text: ma, correct: true }
+          - {
+              text: quindi,
+              feedback: '*Quindi* esprime una conseguenza. Qui le due idee sono in contrasto: *ma*.',
+            }
+          - {
+              text: perché,
+              feedback: '*Perché* esprime una causa. Qui le due idee sono in contrasto: *ma*.',
+            }
+      - id: sebbene-siano
+        type: multipleChoice
+        prompt: Sebbene i miei genitori ___ tradizionali, io sono piuttosto indipendente.
+        options:
+          - { text: siano, correct: true }
+          - {
+              text: sono,
+              feedback: 'Dopo *sebbene* usiamo sempre il congiuntivo: *sebbene siano*.',
+            }
+          - {
+              text: sarebbero,
+              feedback: 'Dopo *sebbene* non usiamo il condizionale, ma il congiuntivo: *sebbene siano*.',
+            }
+      - id: conseguenza
+        type: fillBlank
+        prompt: Completa con un connettivo di conseguenza.
+        text: La famiglia è molto unita, ___ ci vediamo spesso.
+        blanks: [[quindi, perciò, di conseguenza]]
+      - id: funzioni
+        type: matching
+        prompt: Unisci ogni connettivo alla sua funzione.
+        pairs:
+          - [inoltre, aggiunta]
+          - [tuttavia, contrasto]
+          - [poiché, causa]
+          - [di conseguenza, conseguenza]
+          - [infine, sequenza]
+      - id: anche-se
+        type: trueFalse
+        prompt: '*Anche se* vuole il congiuntivo, come *sebbene*.'
+        answer: false
+        feedback:
+          correct: "Giusto! *Anche se* vuole l'indicativo: *Anche se discutiamo spesso, ci sosteniamo.*"
+          incorrect: "*Anche se* vuole l'indicativo (*anche se discutiamo*); solo *sebbene* vuole il congiuntivo (*sebbene siano*)."
+      - id: perche
+        type: multipleChoice
+        prompt: Ho scelto questa carriera ___ i miei genitori mi hanno sostenuto.
+        options:
+          - { text: perché, correct: true }
+          - {
+              text: tuttavia,
+              feedback: '*Tuttavia* esprime un contrasto. Qui la seconda parte dà la causa: *perché*.',
+            }
+          - {
+              text: sebbene,
+              feedback: '*Sebbene* esprime un contrasto e vuole il congiuntivo. Qui diamo la causa: *perché*.',
+            }
+      - id: prima-poi
+        type: fillBlank
+        prompt: Completa con un connettivo di sequenza.
+        text: ___ abbiamo discusso, poi abbiamo trovato una soluzione.
+        blanks: [[Prima, prima]]
+      - id: ordina-sosteniamo
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Anche se discutiamo spesso, ci sosteniamo.
+
+  - slug: famiglia-e-generazioni-aggettivi
+    title: 'Aggettivi descrittivi: accordo e posizione'
+    minutes: 8
+    items:
+      - id: organizzata
+        type: multipleChoice
+        prompt: Mia madre è molto ___.
+        options:
+          - { text: organizzata, correct: true }
+          - {
+              text: organizzato,
+              feedback: "L'aggettivo concorda con *madre* (femminile singolare): *organizzata*.",
+            }
+          - {
+              text: organizzate,
+              feedback: '*Madre* è singolare: *organizzata*, non il plurale *organizzate*.',
+            }
+      - id: severi
+        type: fillBlank
+        prompt: Completa con l'aggettivo *severo* nella forma giusta.
+        text: I miei genitori sono molto ___.
+        blanks: [[severi]]
+      - id: tradizionali
+        type: fillBlank
+        prompt: Completa con l'aggettivo *tradizionale* nella forma giusta.
+        text: Le famiglie dei miei amici sono ___.
+        blanks: [[tradizionali]]
+      - id: significati
+        type: matching
+        prompt: Unisci ogni aggettivo al suo significato.
+        pairs:
+          - [esigente, chiede molto agli altri]
+          - [testardo, non cambia mai idea]
+          - [solidale, aiuta e sostiene gli altri]
+          - [flessibile, si adatta facilmente ai cambiamenti]
+          - [protettivo, difende le persone che ama]
+      - id: due-forme
+        type: trueFalse
+        prompt: 'Gli aggettivi in *-e* (*tradizionale, indipendente*) hanno la stessa forma al maschile e al femminile.'
+        answer: true
+        feedback:
+          correct: 'Giusto! *Un padre indipendente, una madre indipendente*; al plurale: *indipendenti*.'
+          incorrect: 'Gli aggettivi in *-e* non cambiano con il genere: *un padre indipendente, una madre indipendente*.'
+      - id: indipendenti
+        type: multipleChoice
+        prompt: Quale frase è corretta?
+        options:
+          - { text: Le mie sorelle sono molto indipendenti., correct: true }
+          - {
+              text: Le mie sorelle sono molto indipendente.,
+              feedback: "*Sorelle* è plurale: anche l'aggettivo va al plurale, *indipendenti*.",
+            }
+          - {
+              text: Le mie sorelle sono molto indipendenta.,
+              feedback: 'Gli aggettivi in *-e* non hanno una forma in *-a*: al plurale diventano *indipendenti*.',
+            }
+      - id: posizione
+        type: multipleChoice
+        prompt: Quale frase è corretta?
+        options:
+          - { text: Mia madre è una donna organizzata., correct: true }
+          - {
+              text: Mia madre è una organizzata donna.,
+              feedback: "Di solito l'aggettivo descrittivo va dopo il nome: *una donna organizzata*.",
+            }
+          - {
+              text: Mia madre è una donna organizzato.,
+              feedback: "L'aggettivo concorda con *donna* (femminile): *organizzata*.",
+            }
+      - id: ordina-responsabile
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Mio padre è estremamente responsabile.
