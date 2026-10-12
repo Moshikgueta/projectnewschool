@@ -1,0 +1,745 @@
+# Cycle "מה לא עשיתי", converted from the spoken Arabic level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew
+# transliteration, apc-Hebr); Hebrew instructions carry `lang: he`.
+course: ar-medubar-2
+slug: what-i-didnt-do
+title: מה לא עשיתי
+goal: 'לומר מה לא עשיתי בעבר עם מַא + פועל בעבר, ולשאול, לענות ולספר על אחרים בשלילה בעבר.'
+position: 13
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("what-i-didnt-do-negation" and
+    "what-i-didnt-do-questions") are NEW: the notebook has no self-study exercises.
+    They were written only from this cycle's grammar explanation, base table,
+    summary and examples. An Arabic teacher must check every right answer, every
+    wrong option and every transliteration before students see them.
+  - >-
+    The notebook has NO vocabulary list for this cycle and no Quizlet link. The
+    vocabulary section was built from the base table (10 verbs, with their Hebrew
+    meanings from the explanation and the Activity 2 list), "כַּתַבְּת" from the
+    person table, and the time words and connectors used in the activities. These
+    glosses were added by the converter, please check: כַּנְת בִּדִּי = רציתי,
+    בַּס = אבל, בַּדַל הַאד = במקום זה, אִשְתַרֵית = קניתי, אַיוַה = כן,
+    הַאד אלאוּסְבּוּע = השבוע, אִלְיוֹם = היום, טַבַּחְת = בישלתי.
+  - >-
+    The two skills were taken from the lesson goals: (1) negation in the past with
+    מַא + past verb; (2) asking and answering yes / no about the past, plans that did
+    not happen (כַּנְת בִּדִּי…, בַּס מַא…) and negation in other persons.
+  - >-
+    Not corrected, please decide: the 3rd person masculine of "went" is written
+    "מַא רַח" in Activity 4 ("מִין מַא רַח עַאלְשֻעְ'ל?") but "מַא רַאח" in the breakout
+    room report; the feminine in the Mori homework is "הִי מַא רַחַת". "הו" (person table)
+    / "הוּ" elsewhere. "מִתְ'ל" (breakout title) is written with a geresh, unlike
+    "מִתְל" in earlier cycles. The workbook avoids these forms.
+  - >-
+    Changed: the explanation line "מא רוחת" (breakout model) was written as "מַא רַחְת"
+    to match the rest of the cycle. The author's notes "ואני הייתי קורא לפעילות בתוך
+    המחברת:" (an unfinished sentence) and "כך אתה גם מכניס גוף שלישי…" were removed
+    from the student view; the second is now a teacher note.
+  - >-
+    Times: the notebook adds up to about 113 minutes (8 + 15 + 10 + 12 + 15 + 15 +
+    20 + 10 + 8) for a 90-minute lesson. The breakout activity "18–20 minutes" was
+    recorded as 20. Please decide what to shorten; nothing was removed. The
+    breakout activity has no number in the notebook (it comes between Activities 3
+    and 4); the numbering was kept.
+  - >-
+    The notebook's last Mori task (task 3) ends with two example sentences
+    ("הִי מַא רַחַת עַאלְשֻעְ'ל." / "הִי מַא טַבַּחַת."), the second with an unclosed
+    bold mark; they were kept as an example under the message. The Mori messages are
+    written in Hebrew, so they have lang he.
+  - >-
+    Hebrew translations under the Arabic examples (opening, explanation, summary,
+    person table) were kept as glosses in examples blocks or tables. The Activity 2
+    and Activity 3 lists are in Hebrew in the notebook and stay in Hebrew.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: what-i-didnt-do-class
+    title: 'שיעור: מה לא עשיתי'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: 'מה לא עשיתי? – שלילה בעבר בערבית מדוברת'
+      - id: skills
+        type: cycleOverview
+        lang: he
+        skills:
+          - name: שלילה בעבר
+            description: 'מַא + פועל בעבר: מַא רַחְת, מַא שֻפְת, מַא אַכַּלְת. הפועל נשאר בעבר.'
+          - name: שאלות, תשובות ודיווח בשלילה
+            description: 'לענות אַיוַה / לַא במשפט מלא, לספר על תכנית שלא קרתה (כַּנְת בִּדִּי…, בַּס מַא…), ולהשתמש בשלילה בכמה גופים.'
+      - id: goals
+        type: callout
+        lang: he
+        tone: info
+        title: מטרות השיעור
+        text: |-
+          בסוף השיעור תוכלו:
+          ✔ לומר מה עשיתם ומה לא עשיתם
+          ✔ לענות בשלילה על שאלות בעבר
+          ✔ לשאול שאלות על פעולות שלא קרו
+          ✔ להשתמש בשלילה בעבר בכמה גופים
+          ✔ לספר בקצרה על יום או סוף שבוע דרך דברים שקרו ולא קרו
+          ✔ להגיב לדברים שתלמיד אחר לא עשה
+      - id: opening-title
+        type: heading
+        lang: he
+        level: 3
+        text: פתיחה
+      - id: opening-frame
+        type: sentenceFrame
+        answerable: false
+        frame: |-
+          אִמְבַּארֶח אַנַא ___.
+          אִמְבַּארֶח אַנַא מַא ___.
+      - id: opening-examples
+        type: examples
+        items:
+          - { text: 'אִמְבַּארֶח שְרִבְּת קַהְוֶה.', gloss: 'אתמול שתיתי קפה.' }
+          - { text: 'אִמְבַּארֶח מַא שֻפְת פִילֶם.', gloss: 'אתמול לא ראיתי סרט.' }
+      - id: opening-question
+        type: sentenceFrame
+        answerable: false
+        frame: 'שו אלפַרֶק?'
+      - id: round-title
+        type: heading
+        lang: he
+        level: 4
+        text: סבב קצר
+      - id: round-how
+        type: text
+        lang: he
+        text: 'כל תלמיד אומר משפט אחד חיובי ומשפט אחד שלילי.'
+      - id: round
+        type: sentenceFrame
+        frame: |-
+          אִמְבַּארֶח ___.
+          אִמְבַּארֶח מַא ___.
+        example: |-
+          אִמְבַּארֶח רַחְת עַאלְשֻעְ'ל.
+          מַא טַבַּחְת.
+      - id: warmup-title
+        type: heading
+        lang: he
+        level: 3
+        text: שאלות חימום
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: 'שׁו עַמֵלְת אִמְבַּארֶח?'
+          - question: 'שׁו מַא עַמֵלְת אִמְבַּארֶח?'
+          - question: 'מַא שֻפְת פִילֶם אִמְבַּארֶח?'
+          - question: 'מַא רַחְת עַלַא מַטְעַם הַאד אלאוּסְבּוּע?'
+          - question: 'מַא אַכַּלְת בַּרַּא אִמְבַּארֶח?'
+          - question: 'מַא חַכֵּית מַע צְחַאבַּכ אִמְבַּארֶח?'
+          - question: 'מַא דַרַסְת אִמְבַּארֶח?'
+          - question: 'מַא אִלְתַקֵית מַע חַד הַאד אלאוּסְבּוּע?'
+          - question: 'מַא שְרִבְּת קַהְוֶה אִלְיוֹם אַלְסֻבְּח?'
+          - question: 'מַא נִמְת מְנִיח אִמְבַּארֶח?'
+      - id: warmup-rule
+        type: callout
+        lang: he
+        tone: tip
+        title: עונים במשפט מלא
+        text: 'אם עונים רק ״לא״, חוזרים למשפט מלא: **מַא רַחְת.** / **מַא שֻפְת.** / **מַא אַכַּלְת.**'
+      - id: grammar-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'הסבר דקדוקי: שלילה בעבר'
+      - id: grammar
+        type: ruleSummary
+        lang: he
+        skill: 'שלילה בעבר: מַא + פועל בעבר'
+        rules:
+          - text: 'בערבית מדוברת, כשאנחנו רוצים להגיד שפעולה **לא קרתה**, בדרך כלל שמים **מַא + פועל בעבר**.'
+            examples:
+              - 'רַחְת – הלכתי / מַא רַחְת – לא הלכתי'
+              - 'שֻפְת – ראיתי / מַא שֻפְת – לא ראיתי'
+              - 'אַכַּלְת – אכלתי / מַא אַכַּלְת – לא אכלתי'
+          - text: '**חשוב:** הפועל **נשאר בעבר**. אנחנו לא משנים אותו להווה.'
+            examples:
+              - '❌ מַא בְּרוּח אִמְבַּארֶח'
+              - '✅ מַא רַחְת אִמְבַּארֶח'
+          - text: 'בדיוק כמו שבעברית לא אומרים ״אתמול אני לא הולך״, אלא ״אתמול לא הלכתי״.'
+      - id: base-table
+        type: table
+        lang: he
+        caption: טבלת בסיס
+        header: [חיובי, שלילי]
+        rows:
+          - [עַמֵלְת, מַא עַמֵלְת]
+          - [רַחְת, מַא רַחְת]
+          - [אַכַּלְת, מַא אַכַּלְת]
+          - [שְרִבְּת, מַא שְרִבְּת]
+          - [שֻפְת, מַא שֻפְת]
+          - [חַכֵּית, מַא חַכֵּית]
+          - [דַרַסְת, מַא דַרַסְת]
+          - [אִשְתַרֵית, מַא אִשְתַרֵית]
+          - [נִמְת, מַא נִמְת]
+          - [סַאפַרְת, מַא סַאפַרְת]
+      - id: activities-title
+        type: heading
+        lang: he
+        level: 3
+        text: פעילויות
+      - id: act1
+        type: classActivity
+        lang: he
+        title: 'פעילות 1: כן עשיתי / לא עשיתי'
+        skills: [שלילה בעבר, 'שאלות, תשובות ודיווח בשלילה']
+        minutes: 12
+        steps:
+          - 'המורה אומר פעולה.'
+          - 'התלמיד עונה מיד במשפט חיובי או שלילי אמיתי.'
+          - 'המורה ממשיך בקצב מהיר עם השאלות שלמטה.'
+        example: |-
+          שֻפְת פִילֶם אִמְבַּארֶח?
+          אַיוַה, שֻפְת פִילֶם.
+          לַא, מַא שֻפְת פִילֶם.
+      - id: act1-questions
+        type: discussionQuestions
+        answerable: false
+        items:
+          - question: "רַחְת עַאלְשֻעְ'ל?"
+          - question: 'אַכַּלְת פִיצַה?'
+          - question: 'חַכֵּית מַע אִמַּכ?'
+          - question: 'שְרִבְּת קַהְוֶה?'
+          - question: 'דַרַסְת עַרַבִּי?'
+          - question: 'אִשְתַרֵית אִשִי?'
+          - question: 'נִמְת תַמַאן סַאעַאת?'
+          - question: 'טַבַּחְת?'
+          - question: 'סַאפַרְת הַאד אלשַּהֶר?'
+      - id: act2
+        type: classActivity
+        lang: he
+        title: 'פעילות 2: יום מוזר'
+        skills: [שלילה בעבר]
+        minutes: 15
+        steps:
+          - 'כל תלמיד מקבל רשימה של 8 פעולות (למשל: שתיתי קפה, הלכתי לעבודה, אכלתי ארוחת בוקר, דיברתי עם חבר, עשיתי ספורט, ראיתי טלוויזיה, בישלתי, למדתי ערבית).'
+          - 'התלמיד מסמן ליד כל פעולה: ✔ עשיתי / ✘ לא עשיתי.'
+          - 'אחר כך הוא מספר בערבית מה עשה ומה לא עשה (ראו דוגמה).'
+          - 'עבודה בזוגות: A מספר, ו־B מזהה מה לא קרה ואומר את זה.'
+        example: |-
+          אִמְבַּארֶח שְרִבְּת קַהְוֶה.
+          רַחְת עַאלְשֻעְ'ל.
+          בַּס מַא עַמֵלְת רִיאַדַה.
+          מַא שֻפְת טִלְפִזְיוֹן.
+          וּמַא טַבַּחְת.
+      - id: act2-pairs
+        type: sentenceFrame
+        answerable: false
+        frame: 'אַה, אִנְת מַא ___ וּמַא ___.'
+        example: 'אַה, אִנְת מַא טַבַּחְת וּמַא שֻפְת טִלְפִזְיוֹן.'
+      - id: act3
+        type: classActivity
+        lang: he
+        title: 'פעילות 3: חקירה'
+        skills: ['שאלות, תשובות ודיווח בשלילה']
+        minutes: 15
+        steps:
+          - 'המורה אומר: ״קרה משהו אתמול. אתם החוקרים.״'
+          - 'תלמיד A מקבל כרטיס עם דברים שעשה ולא עשה (ראו דוגמה בטבלה).'
+          - 'תלמיד B שואל שאלות כדי לגלות מה קרה, ו־A עונה אַיוַה / לַא במשפט מלא.'
+          - 'אחרי 4 דקות מחליפים תפקידים.'
+      - id: act3-card
+        type: table
+        lang: he
+        caption: דוגמה לכרטיס
+        header: [עשה, לא עשה]
+        rows:
+          - [הלך למסעדה, לא שתה קפה]
+          - [פגש חבר, לא נסע במונית]
+          - [אכל המבורגר, לא חזר הביתה מוקדם]
+      - id: act3-questions
+        type: discussionQuestions
+        answerable: false
+        items:
+          - question: 'רַחְת עַלַא מַטְעַם?'
+            frame: 'אַיוַה, רַחְת. / לַא, מַא רַחְת.'
+          - question: 'אִלְתַקֵית מַע חַד?'
+          - question: 'שְרִבְּת קַהְוֶה?'
+          - question: 'רַכֶּבְת טַקְסִי?'
+          - question: 'אַכַּלְת הַמְבּוּרְגֶר?'
+      - id: breakout
+        type: classActivity
+        lang: he
+        title: "פעילות בחדרים (Breakout Rooms): מַא צַאר מִתְ'ל מַא כַּנַּא מְחַ'טְּטִין"
+        skills: [שלילה בעבר, 'שאלות, תשובות ודיווח בשלילה']
+        minutes: 20
+        steps:
+          - 'מטרה: לדבר על תוכניות מהעבר שלא יצאו לפועל, תוך שימוש קבוע ב־מַא + פועל בעבר. מיומנויות: שאילת שאלות בעבר, שלילה בעבר, שאלות המשך, הסבר קצר של מה השתבש, דיווח על בן הזוג בגוף שלישי.'
+          - 'שלב 1 – הכנה בכיתה (3 דקות): המורה מציג את המבנה ״כַּנְת בִּדִּי ___, בַּס מַא ___.״ ומדגיש: לא מדברים על העתיד, רק על תכנית שהייתה בעבר ולא קרתה.'
+          - 'שלב 2 – שאלות חובה בחדר (8 דקות לכל סבב): תלמיד A שואל את תלמיד B לפחות 5 שאלות מתוך הרשימה. לא צריך לשאול את כולן.'
+          - 'שלב 3 – שאלות המשך חובה: אחרי כל תשובה, בן הזוג שואל לפחות שאלה אחת נוספת, כדי שהשיחה לא תיעצר אחרי משפט אחד.'
+          - 'שלב 4 – החלפת תפקידים: אחרי 8 דקות A הופך ל־B ו־B הופך ל־A.'
+          - 'שלב 5 – משימת דיווח (5 דקות בכיתה הראשית): כל תלמיד זוכר דבר אחד מעניין על בן הזוג ומספר עליו בגוף שלישי.'
+          - 'כלל הפעילות: כל תלמיד מייצר לפחות 3 משפטים עם מַא + עבר, 2 משפטים עם כַּנְת בִּדִּי… בַּס מַא…, ו־3 שאלות המשך.'
+      - id: breakout-frame-title
+        type: heading
+        lang: he
+        level: 4
+        text: 'שלב 1 – המבנה'
+      - id: breakout-frame
+        type: sentenceFrame
+        frame: 'כַּנְת בִּדִּי ___, בַּס מַא ___.'
+        example: |-
+          כַּנְת בִּדִּי אַרוּח עַאלבַּחֶר, בַּס מַא רַחְת.
+          כַּנְת בִּדִּי אַשׁוּף פִילֶם, בַּס מַא שֻפְת.
+          כַּנְת בִּדִּי אַלְתַקִי מַע צַאחְבִּי, בַּס מַא אִלְתַקֵית מַעו.
+      - id: breakout-questions-title
+        type: heading
+        lang: he
+        level: 4
+        text: 'שלב 2 – שאלות חובה (בוחרים 5)'
+      - id: breakout-questions
+        type: discussionQuestions
+        items:
+          - question: 'שׁו כַּנְת בִּדַּכ תַעְמַל וּמַא עַמֵלְת?'
+          - question: 'וֵין כַּנְת בִּדַּכ תְרוּח וּמַא רַחְת?'
+          - question: 'מַע מִין כַּנְת בִּדַּכ תִלְתַקִי וּמַא אִלְתַקֵית?'
+          - question: 'שׁו כַּנְת בִּדַּכ תֹאכֹּל וּמַא אַכַּלְת?'
+          - question: 'שׁו כַּנְת בִּדַּכ תִשׁוּף וּמַא שֻפְת?'
+          - question: 'פִי מוּנַאסַבֶּה כַּנְת בִּדַּכ תְרוּח עַלֵיהַא וּמַא רַחְת?'
+          - question: 'פִי אִשִי כַּנְת בִּדַּכ תִשְתַרִי וּמַא אִשְתַרֵית?'
+          - question: 'פִי אִשִי כַּנְת בִּדַּכ תִדְרוּס וּמַא דַרַסְת?'
+      - id: breakout-followup-title
+        type: heading
+        lang: he
+        level: 4
+        text: 'שלב 3 – שאלות המשך'
+      - id: breakout-followup
+        type: examples
+        items:
+          - { text: 'לֵיש מַא ___?', gloss: 'למה לא ___?' }
+          - { text: 'שׁו צַאר?', gloss: 'מה קרה?' }
+          - { text: 'וֵין כַּנְת בַּדַל הַאד?' }
+          - { text: 'שׁו עַמֵלְת בַּדַל הַאד?' }
+          - { text: 'מַע מִין כַּנְת?' }
+          - { text: 'אֵימַתַא כַּאן הַאד?' }
+          - { text: "בַּלְאַחֶ'ר שׁו עַמֵלְת?" }
+      - id: breakout-model-title
+        type: heading
+        lang: he
+        level: 4
+        text: מודל לשיחה
+      - id: breakout-model
+        type: dialogue
+        lines:
+          - { speaker: A, text: 'שׁו כַּנְת בִּדַּכ תַעְמַל אִמְבַּארֶח וּמַא עַמֵלְת?' }
+          - { speaker: B, text: 'כַּנְת בִּדִּי אַרוּח עַאלבַּחֶר, בַּס מַא רַחְת.' }
+          - { speaker: A, text: 'לֵיש מַא רַחְת?' }
+          - { speaker: B, text: 'לַאנו כַּנְת תַעְבַּאן.' }
+          - { speaker: A, text: 'שׁו עַמֵלְת בַּדַל הַאד?' }
+          - { speaker: B, text: 'כַּעַדְת בַּלְבֵּית וּשֻפְת פִילֶם.' }
+      - id: breakout-model-point
+        type: text
+        lang: he
+        text: 'התלמיד כבר לא רק אומר **מַא רַחְת**, אלא מחבר: תכנית ← שלילה ← סיבה ← מה קרה במקום.'
+      - id: breakout-switch-title
+        type: heading
+        lang: he
+        level: 4
+        text: 'שלב 4 – הודעה לחדרים'
+      - id: breakout-switch
+        type: sentenceFrame
+        answerable: false
+        frame: 'הַלַּק בַּדְּלוּ אלאדְוַאר!'
+      - id: breakout-report-title
+        type: heading
+        lang: he
+        level: 4
+        text: 'שלב 5 – דיווח בכיתה הראשית'
+      - id: breakout-report
+        type: discussionQuestions
+        items:
+          - question: 'שׁו כַּאן בִּדֹו / בִּדְהַא יַעְמַל וּמַא עַמַל / עַמְלַת?'
+            frame: |-
+              שַׁרִיכִי כַּאן בִּדֹו יְרוּח עַאלבַּחֶר, בַּס מַא רַאח.
+              שַׁרִיכְתִי כַּאנֶת בִּדְהַא תְשׁוּף פִילֶם, בַּס מַא שַׁאפַת.
+      - id: act4
+        type: classActivity
+        lang: he
+        title: 'פעילות 4: מי בכיתה לא...?'
+        skills: ['שאלות, תשובות ודיווח בשלילה']
+        minutes: 10
+        steps:
+          - 'המורה שואל שאלה (למשל ״מִין מַא שְרִב קַהְוֶה אִלְיוֹם?״).'
+          - 'מי שלא עשה את הפעולה מרים יד.'
+          - 'תלמיד אחר אומר משפט בגוף שלישי על מי שהרים יד.'
+        example: |-
+          מִין מַא שְרִב קַהְוֶה אִלְיוֹם?
+          דַנִי מַא שְרִב קַהְוֶה אִלְיוֹם.
+      - id: act4-questions
+        type: discussionQuestions
+        answerable: false
+        items:
+          - question: 'מִין מַא אַכַּל פְטוּר?'
+          - question: 'מִין מַא נַאם מְנִיח?'
+          - question: "מִין מַא רַח עַאלְשֻעְ'ל?"
+          - question: 'מִין מַא שַׁאף טִלְפִזְיוֹן אִמְבַּארֶח?'
+          - question: 'מִין מַא דַרַס הַאד אלאוּסְבּוּע?'
+      - id: act5
+        type: classActivity
+        lang: he
+        title: 'פעילות 5: שלושה דברים שלא עשיתי'
+        skills: [שלילה בעבר]
+        minutes: 8
+        steps:
+          - 'כל תלמיד כותב שלושה משפטים אמיתיים לפי התבנית שלמטה.'
+          - 'אחר כך כל תלמיד מקריא.'
+          - 'שאר הכיתה יכולה לשאול שאלה אחת: ״לֵיש?״ או ״שׁו עַמֵלְת בַּדַל הַאד?״'
+      - id: act5-sentences
+        type: discussionQuestions
+        items:
+          - question: 'אִמְבַּארֶח מַא ___.'
+          - question: 'הַאד אלאוּסְבּוּע מַא ___.'
+          - question: "אַחֶ'ר נִהַאיֶת אוּסְבּוּע מַא ___."
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: 'מיקוד דקדוקי: שלילה בעבר בלבד. מבנה מרכזי: מַא + פועל בעבר. משך: 90 דקות.'
+      - id: n-opening
+        anchor: opening-title
+        minutes: 8
+        text: 'כתבו על הלוח את שתי התבניות, תנו שתי דוגמאות על עצמכם ושאלו ״שו אלפַרֶק?״. המטרה היא שהתלמידים יגלו לבד ש־מַא הופכת את המשפט לשלילי.'
+      - id: n-warmup
+        anchor: warmup-title
+        minutes: 15
+        text: 'שאלו בערבית בלבד ככל האפשר. אם תלמיד עונה רק ״לא״, החזירו אותו למשפט מלא.'
+      - id: n-grammar
+        anchor: grammar-title
+        minutes: 10
+        text: הסבירו את הכלל עם הטבלה, והדגישו שהפועל נשאר בעבר.
+      - id: n-act1
+        anchor: act1
+        minutes: 12
+        text: 'המטרה: להפוך את מַא + עבר לאוטומטי. שמרו על קצב מהיר.'
+      - id: n-breakout
+        anchor: breakout
+        minutes: 20
+        text: 'שלחו לחדרים את ההודעה ״הַלַּק בַּדְּלוּ אלאדְוַאר!״ אחרי 8 דקות. כלל הפעילות על המסך הופך אותה למדידה ולא רק ״תדברו קצת״. בשלב 5 התלמידים משתמשים גם בגוף שלישי, בלי לפתוח נושא דקדוקי חדש.'
+      - id: n-act4
+        anchor: act4
+        minutes: 10
+        text: ככה מכניסים גם גוף שלישי בלי ללמד נושא חדש.
+      - id: n-act5
+        anchor: act5
+        minutes: 8
+        text: המוקד עדיין נשאר בשלילה בעבר.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: what-i-didnt-do-summary
+    title: סיכום השיעור
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: 'סיכום דקדוקי – מה למדנו?'
+      - id: rules
+        type: ruleSummary
+        lang: he
+        skill: 'מַא + עבר'
+        rules:
+          - text: 'כדי לומר שפעולה קרתה בעבר: **פועל בעבר**.'
+            examples: ['רַחְת.']
+          - text: 'כדי לומר שהיא לא קרתה: **מַא + פועל בעבר**.'
+            examples: ['מַא רַחְת.']
+          - text: 'נוסחה אחת בלבד: **מַא + עבר**. זה כל המיקוד הדקדוקי של השיעור.'
+      - id: summary-examples
+        type: table
+        lang: he
+        caption: דוגמאות
+        header: [חיובי, שלילי, עברית]
+        rows:
+          - [שֻפְת, מַא שֻפְת, 'ראיתי / לא ראיתי']
+          - [אַכַּלְת, מַא אַכַּלְת, 'אכלתי / לא אכלתי']
+          - [חַכֵּית, מַא חַכֵּית, 'דיברתי / לא דיברתי']
+          - [סַאפַרְת, מַא סַאפַרְת, 'נסעתי / לא נסעתי']
+      - id: persons-title
+        type: heading
+        lang: he
+        level: 3
+        text: תרגול לפי גופים
+      - id: persons-intro
+        type: text
+        lang: he
+        text: 'אתם כבר מכירים את העבר לפי גוף, לכן רק הופכים אותו לשלילי.'
+      - id: persons
+        type: examples
+        items:
+          - { text: 'אַנַא מַא כַּתַבְּת.', gloss: 'אני לא כתבתי.' }
+          - { text: 'אִנְת מַא כַּתַבְּת.', gloss: 'אתה לא כתבת.' }
+          - { text: 'הו מַא כַּתַב.', gloss: 'הוא לא כתב.' }
+          - { text: 'הִי מַא כַּתַבַּת.', gloss: 'היא לא כתבה.' }
+          - { text: 'אִחְנַא מַא כַּתַבְּנַא.', gloss: 'אנחנו לא כתבנו.' }
+          - { text: 'הֻם מַא כַּתַבּוּ.', gloss: 'הם לא כתבו.' }
+      - id: persons-rule
+        type: callout
+        lang: he
+        tone: info
+        text: '**מַא לא משתנה. הפועל משתנה לפי הגוף בדיוק כמו בעבר החיובי.**'
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: 'בקשו מכל תלמיד משפט שלילי אחד על עצמו ומשפט שלילי אחד על חבר לכיתה (גוף שלישי).'
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: what-i-didnt-do-homework
+    title: שיעורי בית עם מורי
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: שיעורי בית עם מורי
+      - id: how
+        type: text
+        lang: he
+        text: פתחו את הצ׳אט עם מורי, העתיקו כל הודעה ושלחו אותה.
+      - id: mori-1
+        type: aiTutorPrompt
+        lang: he
+        title: 'משימה 1: אתמול'
+        message: 'מורי, תשאל אותי 8 שאלות על אתמול בערבית מדוברת בתעתיק. אני חייב לענות במשפט מלא. לפחות 4 מהתשובות שלי צריכות להיות בשלילה עם "מא + עבר". אם אני משתמש בהווה, תעצור ותתקן אותי.'
+      - id: mori-2
+        type: aiTutorPrompt
+        lang: he
+        title: 'משימה 2: כן או לא?'
+        message: 'מורי, תן לי כל פעם פעולה אחת בעבר. תשאל אם עשיתי אותה אתמול. אני אענה או בחיוב או בשלילה. תוודא שבשלילה אני משתמש ב"מא + פועל בעבר".'
+      - id: mori-3
+        type: aiTutorPrompt
+        lang: he
+        title: 'משימה 3: היום של בן אדם אחר'
+        message: 'מורי, תן לי דמות דמיונית וספר לי 5 דברים שהיא עשתה אתמול ו-3 דברים שהיא לא עשתה. אחר כך תשאל אותי שאלות עליה, ואני אענה בגוף שלישי.'
+      - id: mori-3-example-title
+        type: heading
+        lang: he
+        level: 4
+        text: לדוגמה
+      - id: mori-3-example
+        type: sentenceFrame
+        answerable: false
+        frame: |-
+          הִי מַא רַחַת עַאלְשֻעְ'ל.
+          הִי מַא טַבַּחַת.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: what-i-didnt-do-practice
+    book: workbook
+    title: 'תרגול: מה לא עשיתי'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        lang: he
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+      - id: ex-negation
+        type: activity
+        activity: what-i-didnt-do-negation
+      - id: ex-questions
+        type: activity
+        activity: what-i-didnt-do-questions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: what-i-didnt-do-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: מה לא עשיתי
+        glossLang: he
+        items: &didnt-words
+          - { term: 'מַא', gloss: 'לא (לפני פועל בעבר)' }
+          - { term: 'עַמֵלְת', gloss: 'עשיתי' }
+          - { term: 'רַחְת', gloss: 'הלכתי' }
+          - { term: 'אַכַּלְת', gloss: 'אכלתי' }
+          - { term: 'שְרִבְּת', gloss: 'שתיתי' }
+          - { term: 'שֻפְת', gloss: 'ראיתי' }
+          - { term: 'חַכֵּית', gloss: 'דיברתי' }
+          - { term: 'דַרַסְת', gloss: 'למדתי' }
+          - { term: 'אִשְתַרֵית', gloss: 'קניתי' }
+          - { term: 'נִמְת', gloss: 'ישנתי' }
+          - { term: 'סַאפַרְת', gloss: 'נסעתי' }
+          - { term: 'טַבַּחְת', gloss: 'בישלתי' }
+          - { term: 'כַּתַבְּת', gloss: 'כתבתי' }
+          - { term: 'אִמְבַּארֶח', gloss: 'אתמול' }
+          - { term: 'אִלְיוֹם', gloss: 'היום' }
+          - { term: 'הַאד אלאוּסְבּוּע', gloss: 'השבוע' }
+          - { term: 'אַיוַה', gloss: 'כן' }
+          - { term: 'לַא', gloss: 'לא' }
+          - { term: 'כַּנְת בִּדִּי', gloss: 'רציתי' }
+          - { term: 'בַּס', gloss: 'אבל' }
+          - { term: 'בַּדַל הַאד', gloss: 'במקום זה' }
+          - { term: 'שׁו צַאר?', gloss: 'מה קרה?' }
+
+vocabulary:
+  - slug: what-i-didnt-do
+    title: מה לא עשיתי
+    items: *didnt-words
+
+activities:
+  - slug: what-i-didnt-do-negation
+    title: 'שלילה בעבר: מַא + עבר'
+    minutes: 8
+    items:
+      - id: negatives
+        type: matching
+        lang: he
+        prompt: התאימו כל משפט שלילי לפירוש שלו.
+        pairs:
+          - ['מַא רַחְת', 'לא הלכתי']
+          - ['מַא שֻפְת', 'לא ראיתי']
+          - ['מַא אַכַּלְת', 'לא אכלתי']
+          - ['מַא חַכֵּית', 'לא דיברתי']
+          - ['מַא סַאפַרְת', 'לא נסעתי']
+      - id: didnt-go
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״אתמול לא הלכתי״?'
+        options:
+          - { text: 'מַא רַחְת אִמְבַּארֶח', correct: true }
+          - {
+              text: 'מַא בְּרוּח אִמְבַּארֶח',
+              feedback: 'הפועל נשאר בעבר: מַא רַחְת, לא מַא בְּרוּח.',
+            }
+          - {
+              text: 'רַחְת אִמְבַּארֶח',
+              feedback: 'זה ״אתמול הלכתי״. לשלילה מוסיפים מַא לפני הפועל.',
+            }
+      - id: stays-past
+        type: trueFalse
+        lang: he
+        prompt: 'בשלילה בעבר הופכים את הפועל להווה: מַא + פועל בהווה.'
+        answer: false
+        feedback:
+          correct: 'נכון! הפועל נשאר בעבר: מַא רַחְת.'
+          incorrect: 'הפועל נשאר בעבר: מַא + פועל בעבר (מַא רַחְת).'
+      - id: coffee
+        type: multipleChoice
+        lang: he
+        prompt: 'שְרִבְּת קַהְוֶה = שתיתי קפה. איך אומרים: ״לא שתיתי קפה״?'
+        options:
+          - { text: 'מַא שְרִבְּת קַהְוֶה', correct: true }
+          - { text: 'שְרִבְּת מַא קַהְוֶה', feedback: 'מַא בא לפני הפועל: מַא שְרִבְּת.' }
+          - {
+              text: 'לַא שְרִבְּת קַהְוֶה',
+              feedback: 'לַא היא התשובה ״לא״. את הפועל שוללים עם מַא: מַא שְרִבְּת.',
+            }
+      - id: studied
+        type: multipleChoice
+        lang: he
+        prompt: 'מה פירוש ״מַא דַרַסְת״?'
+        options:
+          - { text: 'לא למדתי', correct: true }
+          - { text: 'למדתי', feedback: '״למדתי״ זה דַרַסְת, בלי מַא.' }
+          - { text: 'לא נסעתי', feedback: '״לא נסעתי״ זה מַא סַאפַרְת.' }
+      - id: cook
+        type: multipleChoice
+        lang: he
+        prompt: 'השלימו: אִמְבַּארֶח ___ טַבַּחְת. (אתמול לא בישלתי.)'
+        options:
+          - { text: 'מַא', correct: true }
+          - { text: 'לַא', feedback: 'לַא היא התשובה ״לא״. לפני פועל בעבר שמים מַא.' }
+          - { text: 'בַּס', feedback: 'בַּס פירושו ״אבל״.' }
+      - id: bought
+        type: multipleChoice
+        lang: he
+        prompt: 'איזה משפט אומר ״לא קניתי״?'
+        options:
+          - { text: 'מַא אִשְתַרֵית', correct: true }
+          - { text: 'אִשְתַרֵית', feedback: 'זה ״קניתי״. לשלילה מוסיפים מַא.' }
+          - { text: 'מַא סַאפַרְת', feedback: 'מַא סַאפַרְת פירושו ״לא נסעתי״.' }
+      - id: order-film
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: ״אתמול לא ראיתי סרט.״'
+        sentence: 'אִמְבַּארֶח מַא שֻפְת פִילֶם'
+
+  - slug: what-i-didnt-do-questions
+    title: 'שאלות, תשובות ודיווח בשלילה'
+    minutes: 8
+    items:
+      - id: answer-no
+        type: multipleChoice
+        lang: he
+        prompt: '״שֻפְת פִילֶם אִמְבַּארֶח?״ – ענו ״לא״ במשפט מלא.'
+        options:
+          - { text: 'לַא, מַא שֻפְת פִילֶם.', correct: true }
+          - { text: 'לַא.', feedback: 'עונים במשפט מלא: לַא, מַא שֻפְת פִילֶם.' }
+          - { text: 'לַא, שֻפְת פִילֶם.', feedback: 'חסרה מַא: בלי מַא המשפט אומר ״ראיתי סרט״.' }
+      - id: answer-yes
+        type: multipleChoice
+        lang: he
+        prompt: '״רַחְת עַלַא מַטְעַם?״ – ענו ״כן״.'
+        options:
+          - { text: 'אַיוַה, רַחְת.', correct: true }
+          - { text: 'לַא, מַא רַחְת.', feedback: 'זו התשובה ״לא, לא הלכתי״.' }
+          - { text: 'אַיוַה, מַא רַחְת.', feedback: 'אַיוַה (כן) לא מתאים ל־מַא רַחְת (לא הלכתי).' }
+      - id: persons
+        type: matching
+        lang: he
+        prompt: התאימו כל משפט לפירוש שלו.
+        pairs:
+          - ['אַנַא מַא כַּתַבְּת', 'אני לא כתבתי']
+          - ['הו מַא כַּתַב', 'הוא לא כתב']
+          - ['הִי מַא כַּתַבַּת', 'היא לא כתבה']
+          - ['אִחְנַא מַא כַּתַבְּנַא', 'אנחנו לא כתבנו']
+          - ['הֻם מַא כַּתַבּוּ', 'הם לא כתבו']
+      - id: she-didnt
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״היא לא כתבה״?'
+        options:
+          - { text: 'הִי מַא כַּתַבַּת.', correct: true }
+          - { text: 'הִי מַא כַּתַב.', feedback: 'כַּתַב הוא ״כתב״ (הוא). לגוף ״היא״: כַּתַבַּת.' }
+          - {
+              text: 'הִי מַא כַּתַבּוּ.',
+              feedback: 'כַּתַבּוּ הוא ״כתבו״ (הם). לגוף ״היא״: כַּתַבַּת.',
+            }
+      - id: ma-same
+        type: trueFalse
+        lang: he
+        prompt: 'מַא לא משתנה לפי הגוף; רק הפועל משתנה, כמו בעבר החיובי.'
+        answer: true
+        feedback:
+          correct: 'נכון! אַנַא מַא כַּתַבְּת, הו מַא כַּתַב, הֻם מַא כַּתַבּוּ.'
+          incorrect: 'מַא תמיד אותו דבר. רק הפועל משתנה: אַנַא מַא כַּתַבְּת, הו מַא כַּתַב.'
+      - id: why-not
+        type: multipleChoice
+        lang: he
+        prompt: 'איך שואלים שאלת המשך: ״למה לא הלכת?״'
+        options:
+          - { text: 'לֵיש מַא רַחְת?', correct: true }
+          - { text: 'שׁו עַמֵלְת בַּדַל הַאד?', feedback: 'זו השאלה ״מה עשית במקום זה?״.' }
+          - { text: 'שׁו צַאר?', feedback: 'זו השאלה ״מה קרה?״.' }
+      - id: plan
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״רציתי ללכת לים, אבל לא הלכתי״?'
+        options:
+          - { text: 'כַּנְת בִּדִּי אַרוּח עַאלבַּחֶר, בַּס מַא רַחְת.', correct: true }
+          - {
+              text: 'כַּנְת בִּדִּי אַרוּח עַאלבַּחֶר, בַּס רַחְת.',
+              feedback: 'חסרה מַא: ״בַּס רַחְת״ פירושו ״אבל הלכתי״.',
+            }
+          - {
+              text: 'כַּנְת בִּדִּי אַרוּח עַאלבַּחֶר, בַּס מַא בְּרוּח.',
+              feedback: 'הפועל נשאר בעבר: מַא רַחְת.',
+            }
+      - id: order-dani
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: ״דני לא שתה קפה היום.״'
+        sentence: 'דַנִי מַא שְרִב קַהְוֶה אִלְיוֹם'
