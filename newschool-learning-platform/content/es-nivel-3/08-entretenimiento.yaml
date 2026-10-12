@@ -1,0 +1,699 @@
+# Cycle "Entretenimiento", converted from the Spanish nivel 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-3
+slug: entretenimiento
+title: Entretenimiento
+goal: Hablar de experiencias culturales con el pretérito perfecto y expresar opiniones con argumentos.
+position: 8
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Pretérito perfecto" and "Opiniones con argumentos")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's summary rules, the activity examples and the vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Wrong rules translated from English (rewritten, please confirm): summary point D
+    said "Usamos have/has + participio" and "Con for / since, en español: desde /
+    desde hace". Spanish uses haber + participio, and for a situation that started in
+    the past and continues now Spanish normally uses the PRESENT with desde / desde
+    hace ("Esta serie se emite desde 2016", "Trabaja en el cine desde hace diez
+    años"); the source example "Esta serie se ha emitido desde 2016" was replaced. The
+    perfect is kept with durante / toda la vida ("Él ha trabajado en cine durante
+    muchos años").
+  - >-
+    The Mori messages and the sample Mori lines were in ENGLISH ("Hi Mori! Let's play an
+    opinion challenge called 'Convince Me'…", "Let's start with concerts. What concerts
+    have you attended…"). They are translated into Spanish, and "Corrige mis errores"
+    was added to the first message.
+  - >-
+    Anglicisms in the opinion phrases: "Tienes un buen punto…" (calque of "you have a
+    good point") → "Tienes razón en eso…"; "Entiendo tu punto, pero…" → "Entiendo lo
+    que dices, pero…". Warm-up 7 "¿Prefieres lo mainstream o lo indie?" → "¿Prefieres lo
+    comercial (mainstream) o lo independiente (indie)?".
+  - >-
+    Debate (Activity 4): the title "6. Actividad 4" had a stray "6."; "¿Está muriendo
+    el mundo del entretenimiento?" → "¿Se está muriendo…?"; the topic "La gente ha usado
+    más el móvil y menos espacios culturales. ¿El entretenimiento tradicional ha estado
+    muriendo?" → "En los últimos años, la gente ha usado más el móvil y ha ido menos a
+    espacios culturales. ¿Se está muriendo el entretenimiento tradicional?"; the groups
+    argue "sí, se está muriendo" / "no".
+  - >-
+    Summary: "4. Estructura oral recomendada" and "6. Estructura final para el
+    estudiante" give the same four steps (He + participio → opinión → razón → ejemplo /
+    conclusión); kept once. "5. Aplicación del pretérito perfecto en las actividades"
+    was mostly left out: its examples repeat the activities (Califícalo, pódcast,
+    "barato", debate); "Los productores han creado conflictos falsos" and "Las
+    plataformas digitales han cambiado la industria" are not kept. The list "En este
+    plan, se usa Pretérito Perfecto para…" is summed up in the skill description. The
+    participle rule (-ado / -ido) and "descubrir → descubierto" were added.
+  - >-
+    Other fixes: "podcast(s)" → "pódcast(s)"; "folklórica" → "folclórica"; "Reality
+    shows" → "realities"; "YouTube o TikTok de 'drama', challenges" → "vídeos de
+    «drama», retos… en YouTube o TikTok"; the incomplete summary line "Últimamente la
+    gente la ha sobrevalorado…" became the Activity 1 example "Creo que esta serie está
+    sobrevalorada, ya que últimamente la gente la ha recomendado demasiado." The Mori
+    sample exchange is folded into each Mori task's intro.
+  - >-
+    Activity 1 (¡Califícalo!) has only a list and criteria in the source; steps were
+    written (choose 6, rate with the criteria, justify with pretérito perfecto + a
+    connector), using the "Califícalo" examples from the summary.
+  - >-
+    Left out: the gamma.app presentation link (slide links are not allowed; mentioned
+    in a teacher note), "Nivel: 3 (avanzado – habilidades extremas)", the "Fecha /
+    Participantes" lines and all "Respuesta estudiante 1/2/3" lines. Warm-up questions
+    had no frames; frames were added. The source gives no times for this cycle.
+  - >-
+    The model answers in Activity 2 put words in the mouths of real people (Shakira,
+    Almodóvar, Bad Bunny) as a role-play model; they are kept as examples marked "como
+    si fueras…". Please check you are happy with the facts (Shakira's collaborations
+    and awards).
+  - >-
+    Vocabulary: kept as in the source (36 words in three groups, merged into one
+    list). Terms were stripped of bold marks. The Quizlet link's "?new" parameter was
+    removed.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: entretenimiento-clase
+    title: 'Clase: Entretenimiento'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Entretenimiento
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Pretérito perfecto
+            description: 'Experiencias, logros y cambios recientes: *he visto, has escuchado, ha colaborado, han lanzado*'
+          - name: Opiniones con argumentos
+            description: '*Creo que…, desde mi punto de vista…* + *porque, ya que, por eso, sin embargo* + adjetivos'
+      - id: quizlet
+        type: externalLink
+        label: Entretenimiento en Quizlet
+        url: https://quizlet.com/br/1121277448/entretenimiento-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Un espectáculo / concierto / serie que creo que todo el mundo debería ver es ___.
+        example: Soy Dana. Una serie que creo que todo el mundo debería ver es *La Casa de Papel*.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup-hint
+        type: callout
+        tone: info
+        text: Responde con **frases completas** y usa el **pretérito perfecto**.
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Qué es para ti el entretenimiento?
+            frame: Para mí, el entretenimiento es ___.
+          - question: ¿Qué serie, pódcast, músico o creador has descubierto recientemente y por qué te ha interesado?
+            frame: He descubierto ___ porque ___. (Ejemplo. He descubierto *La Mesías* porque muchos amigos me la han recomendado y me ha parecido muy original.)
+          - question: '¿Qué forma de entretenimiento has usado más este año: televisión, redes sociales, pódcasts o eventos en vivo? ¿Por qué?'
+            frame: Este año he usado más ___ porque ___.
+          - question: ¿Has abandonado alguna vez un evento cultural porque te has aburrido? ¿Qué ha pasado?
+            frame: Sí, una vez ___. / No, nunca he abandonado ___.
+          - question: ¿Qué concierto o espectáculo en vivo has disfrutado más en los últimos años? ¿Qué lo ha hecho especial? (Rosalía, Bad Bunny, Vetusta Morla, Fito Páez, Sebastián Yatra…)
+            frame: El que más he disfrutado ha sido ___. Lo ha hecho especial ___.
+          - question: ¿Qué película, serie o artista has visto más de una vez y por qué vale la pena repetirla? (*Relatos salvajes*, *Coco*, *La Casa de Papel*, *Roma*, *El secreto de sus ojos*…)
+            frame: He visto ___ varias veces porque ___.
+          - question: Describe tu estilo de entretenimiento. ¿Prefieres lo comercial (mainstream) o lo independiente (indie)? (cine de Almodóvar, música indie española o argentina, series de Netflix, HBO o Movistar…)
+            frame: Prefiero ___ porque ___.
+          - question: ¿Hay algún tipo de entretenimiento que crees que está infravalorado? ¿Por qué? (cine documental latinoamericano, teatro local, música folclórica moderna…)
+            frame: Creo que ___ está infravalorado porque ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: ¡Califícalo!'
+        skills: [Opiniones con argumentos, Pretérito perfecto]
+        steps:
+          - 'Mira la lista de clásicos del entretenimiento hispano y global. Elige **6** para calificar.'
+          - 'Califica cada uno con un criterio: *sobrevalorado, innovador, inolvidable, que hace pensar, con mucho significado* o un criterio libre.'
+          - 'Justifica tu opinión: empieza con el **pretérito perfecto** (*He visto…, He escuchado…*), da tu opinión (*Creo que…*) y explica la razón con un conector (*porque, ya que, por eso*).'
+          - Compara tus calificaciones con las de tus compañeros. ¿Están de acuerdo?
+        example: |-
+          *He visto esta película varias veces y siempre me ha parecido inolvidable.*
+          *Creo que esta serie está sobrevalorada, ya que últimamente la gente la ha recomendado demasiado.*
+        wordBank:
+          - La Casa de Papel
+          - Coco
+          - Romeo + Julieta
+          - Titanic
+          - El Rey León
+          - Fito Páez
+          - Rosalía
+          - Soda Stereo
+          - Los Miserables
+          - Shakira
+          - Forrest Gump
+          - Game of Thrones
+          - El laberinto del fauno
+          - Almodóvar (director)
+          - Beyoncé
+          - El viaje de Chihiro
+          - Cerati
+          - The Office
+      - id: act1-ratings
+        type: discussionQuestions
+        title: Mis 6 calificaciones
+        items:
+          - question: Calificación 1
+            frame: He visto / escuchado ___ y creo que es ___ porque ___.
+          - question: Calificación 2
+            frame: He visto / escuchado ___ y creo que es ___ porque ___.
+          - question: Calificación 3
+            frame: He visto / escuchado ___ y creo que es ___ porque ___.
+          - question: Calificación 4
+            frame: He visto / escuchado ___ y creo que es ___ porque ___.
+          - question: Calificación 5
+            frame: He visto / escuchado ___ y creo que es ___ porque ___.
+          - question: Calificación 6
+            frame: He visto / escuchado ___ y creo que es ___ porque ___.
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Entrevista de pódcast'
+        skills: [Pretérito perfecto]
+        steps:
+          - 'Vas a crear una mini-entrevista profesional para tu pódcast: preguntas en **pretérito perfecto** sobre logros, experiencias, colaboraciones, premios, retos y vida profesional.'
+          - '**Paso 1:** elige a una figura del entretenimiento, del mundo hispano (Shakira, Bad Bunny, Penélope Cruz, Pedro Almodóvar, Gael García Bernal, Rigoberta Bandini, Rosalía, J Balvin, Soda Stereo / Cerati, Lali Espósito, Carlos Vives) o internacional (Beyoncé, Zendaya, Billie Eilish, Taylor Swift, Christopher Nolan, Timothée Chalamet). Escribe: *He elegido a ___ porque ___.*'
+          - '**Paso 2:** escribe 5 preguntas en pretérito perfecto sobre: carrera profesional, colaboraciones, premios y reconocimientos, retos y dificultades, vida personal y desarrollo (mira las ideas de abajo).'
+          - '**Paso 3:** conviértete en la persona famosa y responde a 2 preguntas con el pretérito perfecto.'
+          - '**Paso 4:** presenta tu pódcast a tu compañero o compañera en una mini-presentación oral.'
+        example: |-
+          **Pregunta:** *¿Con qué artistas has colaborado a lo largo de tu carrera?*
+          **Respuesta (como si fueras Shakira):** *He colaborado con muchos artistas increíbles, como Carlos Vives, Beyoncé, Maluma y Bizarrap. Estas colaboraciones me han permitido explorar diferentes estilos y llegar a nuevas audiencias.*
+          **Pregunta:** *¿Qué premios has recibido últimamente?*
+          **Respuesta (como si fueras Shakira):** *He recibido varios premios por la sesión con Bizarrap, y también he sido reconocida por mi impacto global en la música latina.*
+          **Pregunta:** *¿Qué proyectos has dirigido en los últimos años?*
+          **Respuesta (como si fueras Almodóvar):** *He dirigido varias películas que han tenido un gran impacto internacional y he trabajado con actrices y actores jóvenes que me han inspirado mucho.*
+          **Pregunta:** *¿Qué experiencias han influido en tu música?*
+          **Respuesta (como si fueras Bad Bunny):** *He vivido procesos personales muy intensos que han marcado mis últimos álbumes y he visitado muchos lugares que me han cambiado la perspectiva artística.*
+      - id: act2-ideas
+        type: examples
+        title: Ideas para tus preguntas
+        items:
+          - text: ¿Qué proyectos importantes **has realizado** en los últimos años?
+            gloss: Carrera profesional
+          - text: ¿Con qué productores o directores **has trabajado** recientemente? ¿Qué papel **ha marcado** tu trayectoria?
+            gloss: Carrera profesional
+          - text: ¿Con qué artistas **has colaborado** hasta ahora? ¿Qué colaboración **te ha sorprendido** más?
+            gloss: Colaboraciones
+          - text: ¿Qué premios importantes **has recibido** a lo largo de tu carrera? ¿Alguna de tus obras **ha sido nominada** este año?
+            gloss: Premios y reconocimientos
+          - text: ¿Qué desafíos personales o profesionales **has enfrentado**? ¿Cómo **has superado** los momentos difíciles?
+            gloss: Retos y dificultades
+          - text: ¿Qué hábitos nuevos **has adoptado** para mejorar como artista? ¿Qué lugares **has visitado** que te han inspirado?
+            gloss: Vida personal y desarrollo
+      - id: act2-questions
+        type: discussionQuestions
+        title: Mis 5 preguntas
+        items:
+          - question: 'Pregunta 1 (modelo: ¿Qué proyectos importantes has lanzado recientemente?)'
+            frame: ¿Qué ___ has ___?
+          - question: 'Pregunta 2 (modelo: ¿Con qué artistas has colaborado a lo largo de tu carrera?)'
+            frame: ¿Con qué ___ has ___?
+          - question: 'Pregunta 3 (modelo: ¿Qué premios has recibido en los últimos años?)'
+            frame: ¿Qué ___ has ___?
+          - question: 'Pregunta 4 (modelo: ¿Qué retos personales has tenido que enfrentar?)'
+            frame: ¿Qué ___ has ___?
+          - question: 'Pregunta 5 (modelo: ¿Qué experiencias de tu vida han influido en tu estilo artístico?)'
+            frame: ¿Qué ___ han ___?
+      - id: act2-presentation
+        type: callout
+        tone: info
+        title: Modelo de presentación
+        text: >-
+          *Hoy en nuestro pódcast tengo como invitada a Shakira. La he elegido porque ha
+          sido una de las artistas más influyentes del mundo latino. Le he preguntado sobre
+          sus colaboraciones, sus premios recientes y las experiencias que han marcado su
+          carrera. Shakira me ha contado que ha trabajado con artistas como Beyoncé y
+          Bizarrap, y que ha recibido varios premios internacionales este año. También ha
+          dicho que sus experiencias personales la han inspirado mucho en sus últimos
+          proyectos.*
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Entretenimiento «barato»'
+        skills: [Opiniones con argumentos, Pretérito perfecto]
+        steps:
+          - '*Entretenimiento barato* = contenido exagerado, polémico, superficial o hecho para obtener clics. Ejemplos: realities como *La isla de las tentaciones*, *Gran Hermano*, *Acapulco Shore* o *Supervivientes*; programas de chismes como *Sálvame*; vídeos de «drama», retos o contenido sensacionalista en YouTube o TikTok; noticias amarillistas.'
+          - '**Paso 1, lluvia de ideas:** ¿qué adjetivos describen este tipo de entretenimiento? (*superficial, exagerado, sensacionalista, polémico, repetitivo…*)'
+          - '**Paso 2, investiga un caso real** con las preguntas guía de abajo.'
+          - '**Paso 3, presentación:** presenta tu caso con frases en **pretérito perfecto** y tu opinión.'
+        example: |-
+          *Este programa se ha vuelto muy popular porque muestra conflictos todo el tiempo.*
+          *Los productores han utilizado escándalos para atraer audiencia.*
+          *Desde mi punto de vista, es un programa superficial y sensacionalista.*
+      - id: act3-questions
+        type: discussionQuestions
+        title: Preguntas guía
+        items:
+          - question: ¿Qué tipo de entretenimiento es?
+            frame: Es ___.
+          - question: ¿Quién es el público?
+            frame: El público es ___.
+          - question: ¿Por qué se ha vuelto popular?
+            frame: Se ha vuelto popular porque ___.
+          - question: ¿Qué elementos «baratos» incluye?
+            frame: Incluye ___.
+          - question: ¿Cómo lo describes con adjetivos?
+            frame: Creo que es ___ y ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Debate. ¿Se está muriendo el mundo del entretenimiento?'
+        skills: [Opiniones con argumentos, Pretérito perfecto]
+        steps:
+          - '**Tema:** En los últimos años, la gente ha usado más el móvil y ha ido menos a espacios culturales. ¿Se está muriendo el entretenimiento tradicional?'
+          - '**Paso 1, discusión inicial:** hablen de cines, conciertos, teatros, museos, eventos culturales y Netflix / YouTube / TikTok.'
+          - '**Paso 2, preparación:** el grupo A argumenta que **sí**, se está muriendo; el grupo B argumenta que **no**. Cada uno escribe 4 o 5 argumentos con el pretérito perfecto.'
+          - '**Paso 3, debate guiado:** A presenta un argumento y B responde; después B presenta uno y A responde. Usen las frases de acuerdo y desacuerdo del resumen.'
+          - '**Paso 4 (opcional), preguntas finales:** ¿Cómo ha cambiado la tecnología el entretenimiento? ¿Qué actividades culturales han sobrevivido?'
+        example: |-
+          *La asistencia a los cines ha disminuido en los últimos años.*
+          *Las plataformas digitales han creado nuevas formas de entretenimiento.*
+          *No estoy completamente de acuerdo, porque muchos conciertos han tenido más público que nunca.*
+      - id: act4-arguments
+        type: discussionQuestions
+        title: Mis argumentos
+        items:
+          - question: Argumento 1
+            frame: En los últimos años, ___ ha / han ___. Por eso, ___.
+          - question: Argumento 2
+            frame: Creo que ___ porque ___.
+          - question: Argumento 3
+            frame: Aunque ___, ___.
+          - question: Argumento 4
+            frame: Además, ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Pretérito perfecto** (calentamiento,
+          Actividades 2, 3 y 4) y **Opiniones con argumentos** (Actividades 1, 3 y 4). El
+          cuaderno no indica tiempos. El cuaderno enlaza una presentación en gamma.app que
+          no se incluye aquí (los enlaces a presentaciones no están permitidos); úsala desde
+          tu propio material si quieres.
+      - id: n-warmup
+        anchor: warmup
+        text: Pide respuestas completas con el pretérito perfecto. Haz al menos dos preguntas a cada estudiante.
+      - id: n-act1
+        anchor: act1
+        text: Escribe los criterios en la pizarra. Pide a cada estudiante que justifique al menos dos calificaciones con *He visto / He escuchado* + opinión + conector.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Revisa que las preguntas usan *has* + participio y que las respuestas «como la
+          persona famosa» usan *he* + participio. En el Paso 4, el estudiante cuenta en
+          tercera persona (*me ha contado que ha trabajado…*).
+      - id: n-act3
+        anchor: act3
+        text: El Paso 2 se puede hacer con el teléfono, buscando información del programa elegido.
+      - id: n-act4
+        anchor: act4
+        text: Divide la clase en dos grupos. Escribe en la pizarra las frases para expresar acuerdo y desacuerdo de forma diplomática.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: entretenimiento-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-perfecto
+        type: ruleSummary
+        skill: Pretérito perfecto
+        rules:
+          - text: '**Experiencias de la vida** (sin decir cuándo). Se usa mucho con *alguna vez, nunca, ya, todavía no, siempre, muchas veces*.'
+            examples:
+              - He visto *La Casa de Papel* tres veces.
+              - ¿Has asistido alguna vez a un concierto de Rosalía?
+              - Shakira ha colaborado con muchos artistas internacionales.
+          - text: '**Acciones o cambios recientes**, con *últimamente, recientemente, este año, estos días*.'
+            examples:
+              - Este año he empezado a escuchar nuevos pódcasts.
+              - La película ha tenido mucho éxito últimamente.
+              - Las plataformas han crecido muchísimo en la última década.
+          - text: '**Cambios o procesos que siguen teniendo efecto hoy**, con *en los últimos años, desde entonces, a lo largo de mi vida*.'
+            examples:
+              - La industria musical ha cambiado por completo con el streaming.
+              - La audiencia ha aumentado en los espectáculos en vivo.
+              - Mucha gente ha dejado de ir al cine.
+          - text: 'Para una situación que **empezó en el pasado y sigue ahora**, el español usa a menudo el **presente** con *desde* (+ año, mes o momento) o *desde hace* (+ cantidad de tiempo). Con *durante* o *toda la vida* usamos el pretérito perfecto.'
+            examples:
+              - Esta serie se emite desde 2016.
+              - Trabaja en el cine desde hace diez años.
+              - Él ha trabajado en cine durante muchos años.
+          - text: 'Estructura: **haber** (*he, has, ha, hemos, habéis, han*) + **participio** (-ar → **-ado**; -er / -ir → **-ido**). Participios irregulares frecuentes:'
+            examples:
+              [
+                'ver → visto',
+                'hacer → hecho',
+                'escribir → escrito',
+                'decir → dicho',
+                'poner → puesto',
+                'abrir → abierto',
+                'volver → vuelto',
+                'romper → roto',
+                'descubrir → descubierto',
+              ]
+      - id: perfecto-table
+        type: table
+        caption: Estructura del pretérito perfecto
+        header: [Sujeto, Haber, Participio]
+        rows:
+          - [Yo, he, visto / trabajado / colaborado]
+          - [Tú, has, descubierto / asistido]
+          - [Él / Ella / Usted, ha, ganado / dirigido]
+          - [Nosotros / Nosotras, hemos, visto / creado]
+          - [Vosotros / Vosotras, habéis, participado / grabado]
+          - [Ellos / Ellas / Ustedes, han, lanzado / producido]
+      - id: perfecto-indefinido
+        type: table
+        caption: Pretérito perfecto o pretérito indefinido
+        header: [Pretérito perfecto, Pretérito indefinido]
+        rows:
+          - [Conexión con el presente, Evento terminado en el pasado]
+          - [No importa el momento exacto, Sí importa cuándo ocurrió]
+          - [Experiencias en la vida, Eventos concretos]
+          - [He visto una serie increíble este mes., Vi esa serie el año pasado.]
+      - id: rules-opiniones
+        type: ruleSummary
+        skill: Opiniones con argumentos
+        rules:
+          - text: 'No basta con decir *pienso que…*: presenta tu opinión claramente, justifícala con conectores, añade ejemplos reales y usa adjetivos adecuados.'
+          - text: 'Para **introducir una opinión**:'
+            examples:
+              [
+                Creo que…,
+                Considero que…,
+                Desde mi punto de vista…,
+                En mi opinión…,
+                A mi parecer…,
+                Yo diría que…,
+              ]
+          - text: 'Para **expresar acuerdo**:'
+            examples: [Estoy de acuerdo contigo porque…, Es verdad que…, Tienes razón en eso…]
+          - text: 'Para **expresar desacuerdo** de forma diplomática:'
+            examples:
+              [
+                'No estoy completamente de acuerdo, porque…',
+                No lo veo así…,
+                'Entiendo lo que dices, pero creo que…',
+              ]
+          - text: '**Conectores** para justificar la opinión: *porque* (causa), *ya que* (explicación), *por eso / por esa razón* (consecuencia), *aunque* (contraste), *sin embargo* (oposición fuerte), *además* (añadir ideas).'
+            examples:
+              - He visto la serie dos veces y me ha parecido muy emocionante, por eso la he recomendado.
+              - Es un programa popular; sin embargo, creo que es muy superficial.
+          - text: '**Estructura de una buena respuesta:** 1. empieza con el pretérito perfecto (*He visto / He escuchado / He descubierto…*); 2. da una opinión clara (*Creo que es una serie innovadora…*); 3. justifica (*…porque mezcla géneros y tiene un mensaje muy profundo*); 4. da un ejemplo o concluye (*Por ejemplo… / Por eso la he recomendado muchas veces*).'
+      - id: adjectives
+        type: table
+        caption: Adjetivos útiles para cine, series y música
+        header: [Tipo, Adjetivos]
+        rows:
+          - [Positivos, 'memorable, innovador, destacable, profundo, inspirador, cautivador']
+          - [Negativos, 'superficial, exagerado, polémico, predecible, sobrevalorado']
+          - [Neutrales / analíticos, 'icónico, experimental, clásico, significativo, provocador']
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades. Pide a cada estudiante una respuesta con la estructura de cuatro pasos sobre algo que ha visto o escuchado esta semana.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: entretenimiento-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia un mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-convenceme
+        type: aiTutorPrompt
+        title: 'Actividad 1: «Convénceme» (opiniones + pretérito perfecto)'
+        intro: >-
+          Practica el pretérito perfecto (*he visto, he escuchado, he descubierto, he dejado
+          de ver…*), opiniones (*creo que…, considero que…, desde mi punto de vista…*),
+          conectores (*porque, ya que, por eso, sin embargo…*) y adjetivos (*profundo,
+          superficial, innovador, icónico, sobrevalorado, inolvidable…*). Ejemplo: Mori
+          dice *La Casa de Papel ha sido una de las series más sobrevaloradas de los últimos
+          años.* Tú respondes: *No estoy completamente de acuerdo. He visto la serie dos
+          veces y me ha parecido muy emocionante. Los personajes me han mantenido
+          enganchado. Es una serie intensa.* Después, Mori te pregunta: *¿Qué serie te ha
+          parecido realmente inolvidable y por qué?*
+        message: >-
+          ¡Hola, Mori! Juguemos a un reto de opiniones que se llama «Convénceme». Dame
+          opiniones fuertes o sorprendentes sobre el entretenimiento (películas, series,
+          famosos, tendencias). Yo tengo que estar de acuerdo o en desacuerdo y explicar mi
+          opinión con razones y adjetivos. Después de cada respuesta, hazme una pregunta de
+          seguimiento para hacerme pensar más. Por favor, corrige mis errores.
+      - id: mori-tipos
+        type: aiTutorPrompt
+        title: 'Actividad 2: «Tipos de entretenimiento» (pretérito perfecto + preguntas)'
+        intro: >-
+          Practica el pretérito perfecto para tus experiencias (*he ido, he asistido, he
+          probado, he visitado, he dejado de…*) y para hacer preguntas (*¿Has visto…? ¿Has
+          asistido…? ¿Has escuchado…?*). Ejemplo: Mori pregunta *Empecemos con los
+          conciertos. ¿A qué conciertos has ido en los últimos años?* Tú respondes: *He
+          asistido a varios conciertos, pero el de Fito Páez ha sido el más especial
+          porque… ¿Y tú, Mori? ¿Has visto algún concierto últimamente que te haya
+          sorprendido?*
+        message: >-
+          ¡Hola, Mori! Hablemos de diferentes tipos de entretenimiento. Dame un tema cada
+          vez (cines, conciertos, museos, espectáculos en vivo, eventos culturales o
+          quedarse en casa con Netflix, YouTube o TikTok). Para cada tema, hazme preguntas
+          en pretérito perfecto sobre mis experiencias. Yo voy a responder y también te
+          voy a hacer a ti una pregunta en pretérito perfecto. Por favor, corrige mis
+          errores y pídeme más detalles.
+      - id: remember
+        type: callout
+        tone: info
+        title: Recuerda
+        text: |-
+          1. Usa el **pretérito perfecto**: *he visto, has escuchado, hemos asistido, han lanzado…*
+          2. Empieza tus respuestas con una **opinión clara**: *Creo que…, Desde mi punto de vista…, A mi parecer…*
+          3. Justifica con **conectores**: *porque, ya que, por eso, además…*
+          4. Usa **adjetivos** para enriquecer tu opinión: *inspirador, superficial, sobrevalorado, innovador, profundo, caótico, provocador*
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: entretenimiento-practica
+    book: workbook
+    title: 'Práctica: Entretenimiento'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-perfecto
+        type: activity
+        activity: entretenimiento-perfecto
+      - id: ex-opiniones
+        type: activity
+        activity: entretenimiento-opiniones
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: entretenimiento-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras del entretenimiento
+        glossLang: he
+        link: https://quizlet.com/br/1121277448/entretenimiento-flash-cards/
+        items: &entretenimiento-words
+          - { term: Innovador, gloss: חדשני }
+          - { term: Inolvidable, gloss: בלתי נשכח }
+          - { term: Icónico, gloss: איקוני / סמלי }
+          - { term: Inspirador, gloss: מעורר השראה }
+          - { term: Provocador, gloss: מעורר מחשבה / פרובוקטיבי }
+          - { term: Sobrevalorado, gloss: מוערך יתר על המידה }
+          - { term: Infravalorado, gloss: לא מוערך מספיק }
+          - { term: Superficial, gloss: שטחי }
+          - { term: Exagerado, gloss: מוגזם }
+          - { term: Sensacionalista, gloss: סנסציוני / צעקני }
+          - { term: Industria, gloss: תעשייה }
+          - { term: Audiencia, gloss: קהל / צופים }
+          - { term: Tendencia, gloss: מגמה }
+          - { term: Plataforma, gloss: פלטפורמה }
+          - { term: Contenido, gloss: תוכן }
+          - { term: Género (cinematográfico / musical), gloss: ז׳אנר }
+          - { term: Crítica (reseña), gloss: ביקורת }
+          - { term: Estreno, gloss: בכורה }
+          - { term: Colaboración, gloss: שיתוף פעולה }
+          - { term: Premio, gloss: פרס }
+          - { term: Experiencia, gloss: חוויה }
+          - { term: Mensaje, gloss: מסר }
+          - { term: Narrativa, gloss: נרטיב / סיפור }
+          - { term: Impacto, gloss: השפעה }
+          - { term: Dirigir, gloss: לביים }
+          - { term: Producir, gloss: להפיק }
+          - { term: Editar, gloss: לערוך }
+          - { term: Interpretar (actuar), gloss: לגלם / לשחק }
+          - { term: Lanzar (película / canción), gloss: להוציא לאור / לשחרר }
+          - { term: Estrenar, gloss: לעלות לבכורה }
+          - { term: Colaborar, gloss: לשתף פעולה }
+          - { term: Recomendar, gloss: להמליץ }
+          - { term: Influir, gloss: להשפיע }
+          - { term: Analizar, gloss: לנתח }
+          - { term: Evaluar, gloss: להעריך }
+          - { term: Comparar, gloss: להשוות }
+
+vocabulary:
+  - slug: entretenimiento
+    title: Entretenimiento
+    items: *entretenimiento-words
+
+activities:
+  - slug: entretenimiento-perfecto
+    title: 'Pretérito perfecto: he visto, ha colaborado'
+    minutes: 8
+    items:
+      - id: he-visto
+        type: multipleChoice
+        prompt: Yo ___ *La Casa de Papel* tres veces.
+        options:
+          - { text: he visto, correct: true }
+          - { text: he veído, feedback: 'El participio de *ver* es irregular: *visto*.' }
+          - {
+              text: ha visto,
+              feedback: '*Ha* es para él / ella. Para *yo* usamos *he*: *he visto*.',
+            }
+      - id: participios
+        type: matching
+        prompt: Une cada verbo con su participio irregular.
+        pairs:
+          - [hacer, hecho]
+          - [escribir, escrito]
+          - [decir, dicho]
+          - [poner, puesto]
+          - [volver, vuelto]
+      - id: ha-colaborado
+        type: fillBlank
+        prompt: Completa con el verbo *colaborar* en pretérito perfecto.
+        text: Shakira ___ con muchos artistas internacionales.
+        blanks: [[ha colaborado]]
+      - id: han-crecido
+        type: fillBlank
+        prompt: Completa con el verbo *crecer* en pretérito perfecto.
+        text: Las plataformas digitales ___ muchísimo en la última década.
+        blanks: [[han crecido]]
+      - id: este-mes
+        type: multipleChoice
+        prompt: ___ he visto una serie increíble.
+        options:
+          - { text: Este mes, correct: true }
+          - {
+              text: El año pasado,
+              feedback: '*El año pasado* es un tiempo terminado: va con el indefinido (*El año pasado vi…*). Con el perfecto usamos *este mes, este año, últimamente*.',
+            }
+          - {
+              text: Ayer,
+              feedback: '*Ayer* es un tiempo terminado: va con el indefinido (*Ayer vi…*). Con el perfecto usamos *este mes, este año, últimamente*.',
+            }
+      - id: haber
+        type: trueFalse
+        prompt: 'El pretérito perfecto se forma con el verbo *tener* + participio: *tengo visto*.'
+        answer: false
+        feedback:
+          correct: '¡Correcto! Se forma con *haber* + participio: *he visto, has escuchado, ha colaborado*.'
+          incorrect: 'En español usamos *haber* (no *tener*) + participio: *he visto, has escuchado, ha colaborado*.'
+      - id: has-recibido
+        type: fillBlank
+        prompt: Completa la pregunta con el verbo *recibir* (tú) en pretérito perfecto.
+        text: ¿Qué premios ___ en los últimos años?
+        blanks: [[has recibido, tú has recibido]]
+      - id: ordena-cine
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Mucha gente ha dejado de ir al cine.
+
+  - slug: entretenimiento-opiniones
+    title: 'Opiniones con argumentos: creo que…, porque…'
+    minutes: 8
+    items:
+      - id: porque
+        type: multipleChoice
+        prompt: Creo que es una serie innovadora ___ mezcla géneros.
+        options:
+          - { text: porque, correct: true }
+          - {
+              text: sin embargo,
+              feedback: '*Sin embargo* expresa oposición. Para dar la causa usamos *porque*.',
+            }
+          - {
+              text: por eso,
+              feedback: '*Por eso* introduce una consecuencia. Para dar la causa usamos *porque*.',
+            }
+      - id: conectores
+        type: matching
+        prompt: Une cada conector con su función.
+        pairs:
+          - [porque, causa]
+          - [por eso, consecuencia]
+          - [aunque, contraste]
+          - [además, añadir una idea]
+      - id: desacuerdo
+        type: multipleChoice
+        prompt: ¿Qué frase expresa desacuerdo de forma diplomática?
+        options:
+          - { text: 'No estoy completamente de acuerdo, porque…', correct: true }
+          - {
+              text: Estoy de acuerdo contigo porque…,
+              feedback: 'Esta frase expresa acuerdo, no desacuerdo.',
+            }
+          - { text: Es verdad que…, feedback: '*Es verdad que…* expresa acuerdo.' }
+      - id: desde
+        type: fillBlank
+        prompt: Completa la frase para introducir una opinión.
+        text: ___ mi punto de vista, es una película inolvidable.
+        blanks: [[Desde, desde]]
+      - id: negativo
+        type: multipleChoice
+        prompt: ¿Qué adjetivo es negativo?
+        options:
+          - { text: predecible, correct: true }
+          - {
+              text: inspirador,
+              feedback: '*Inspirador* es positivo: algo que te da ideas y ganas de hacer cosas.',
+            }
+          - { text: cautivador, feedback: '*Cautivador* es positivo: algo que te atrae mucho.' }
+      - id: sin-embargo
+        type: trueFalse
+        prompt: '*Sin embargo* sirve para añadir una idea más, como *además*.'
+        answer: false
+        feedback:
+          correct: '¡Correcto! *Sin embargo* expresa oposición: *Es popular; sin embargo, es superficial.*'
+          incorrect: '*Sin embargo* expresa oposición fuerte (*Es popular; sin embargo, es superficial*). Para añadir una idea usamos *además*.'
+      - id: por-eso
+        type: fillBlank
+        prompt: Completa con un conector de consecuencia.
+        text: He visto la serie dos veces y me ha encantado. ___, la he recomendado muchas veces.
+        blanks: [[Por eso, por eso, Por esa razón, por esa razón, Por lo tanto, por lo tanto]]
+      - id: ordena-opinion
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: En mi opinión, este programa es muy superficial.
