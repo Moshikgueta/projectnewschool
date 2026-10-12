@@ -1,0 +1,584 @@
+# Cycle "Identität und Gemeinschaft", converted from the German level 2 digital notebook
+# ("Conversational German - Digital Notebook", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-konversation-2
+slug: identitaet-und-gemeinschaft
+title: Identität und Gemeinschaft
+goal: Mit sein und Vergleichen über dich und deine Gemeinschaft sprechen, mit werden über die Zukunft.
+position: 14
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Identität: sein und Vergleiche" and "Zukunft mit
+    werden") are NEW: the notebook has no self-study exercises. They were written from
+    the cycle's grammar points, its summary, the activity examples and its vocabulary.
+    Please check level, wording and every right answer before students see them.
+  - >-
+    The notebook has three grammar points (sein; Vergleiche; Zukunft mit werden). The
+    platform pattern uses two skills, so the cycle overview groups them as "Identität:
+    sein und Vergleiche" (describing yourself and your community: Ich bin …, Meine Stadt
+    ist größer als …) and "Zukunft mit werden". Please confirm, or tell us if you prefer
+    three skills.
+  - >-
+    Summary, Vergleiche: the notebook gives "mehr … als – יותר מ: Meine Stadt ist größer
+    als deine" and "weniger … als – פחות מ: Meine Nachbarschaft ist ruhiger als die
+    Innenstadt". Both examples are comparatives with -er, not mehr / weniger, and the
+    second does not show "weniger" at all. Rewritten for German: adjective + -er + als
+    (not "mehr groß"), with umlaut for short adjectives (größer, älter) and gut →
+    besser; "weniger + adjective + als" (Meine Nachbarschaft ist weniger laut als die
+    Innenstadt); "mehr / weniger + noun + als" (Ich habe mehr Freunde als du); "so …
+    wie" for the same. The pattern "A ist + תואר + als + B" → "A ist + Adjektiv-er + als
+    + B".
+  - >-
+    Summary, werden: "Subjekt + werden + Verb am Ende" → "werden auf Position 2 +
+    Infinitiv am Ende"; the example "Meine Stadt wird **besser** sein" had the adjective
+    in bold as "the main verb at the end"; now "sein" is in bold. The Hebrew conjugation
+    glosses were cut off ("Ich werde – אני א", "Du wirst – אתה ת") and are completed.
+    "ihr werdet / sie werden" and "ihr seid / sie sind" were added to the tables. A rule
+    was added that for plans German often uses the Präsens with a time word (Nächstes
+    Jahr helfe ich …), and werden especially for predictions and promises. Please
+    confirm.
+  - >-
+    The Hebrew summary is kept as Hebrew text blocks (lang he) next to the German rules;
+    the "What can we do now?" part is a callout. Please check the Hebrew.
+  - >-
+    Corrections: warm-up frame "Mein ___ ist älter als ich." → "Mein / Meine ___ ist
+    älter als ich." (Schwester, Mutter); "Ziel der Stunde" was used for the goal and
+    the cycle overview. Activity 4's model "Meine Stadt wird nächstes Jahr
+    verschwinden." is kept (it is the false sentence of the game).
+  - >-
+    The six Mori prompts are written in Hebrew in the notebook. They were translated
+    into German messages; the German example answers are kept as the intro of each
+    prompt. Please check. The tips callout was added from the course pattern.
+  - >-
+    Vocabulary: "werden – להיות בעתיד / אעשה" → "werden – (פועל העזר לעתיד) יהיה /
+    אעשה; גם: להפוך ל־"; "alt – ישן" → "ישן / זקן"; "so … wie – כמו" → "כמו (באותה
+    מידה)"; "kommen (aus) – להגיע מ" → "kommen aus – לבוא מ־ / להיות מ־". The Hebrew
+    headings of the word lists were dropped. Please confirm.
+  - >-
+    Times: Activity 1 (10–15) → 15, Activity 2 (15–20) → 20, Activity 3 (15–20) → 20,
+    Activity 4 (10–15) → 15. The introduction round and the warm-up have no times. The
+    Quizlet link lost its "?new" parameter. The "Schüler 1/2/3" lines are replaced by
+    the answer boxes. There is no beginner / intermediate split in this cycle.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: identitaet-und-gemeinschaft-unterricht
+    title: 'Unterricht: Identität und Gemeinschaft'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Identität und Gemeinschaft
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: 'Identität: sein und Vergleiche'
+            description: '*Ich bin Student. Meine Stadt ist größer als meine Heimatstadt. Meine Familie ist so freundlich wie deine.*'
+          - name: Zukunft mit werden
+            description: '*Ich werde meinen Nachbarn helfen. Meine Gemeinschaft wird sauberer sein.*'
+      - id: goal
+        type: callout
+        tone: info
+        title: Ziel der Stunde
+        text: 'Du kannst in einfachen Sätzen sagen: wer du bist, wo du dazugehörst, wie deine Gemeinschaft ist und wie deine Gemeinschaft in der Zukunft sein wird.'
+      - id: quizlet
+        type: externalLink
+        label: Identität und Gemeinschaft auf Quizlet
+        url: https://quizlet.com/br/1131235151/identitat-und-gemeinschaft-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___ (Name). Ich komme aus ___. / Ich bin ___ (Nationalität). Ich bin ___ (Beruf, Rolle oder Gefühl).
+        example: Ich bin Daniel. Ich komme aus Israel. Ich bin Student und heute müde.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Woher kommst du und wo wohnst du jetzt?
+            frame: Ich komme aus ___ und wohne jetzt in ___.
+          - question: Wie ist deine Nachbarschaft? (groß, klein, ruhig, laut)
+            frame: Meine Nachbarschaft ist ___.
+          - question: Wer in deiner Familie ist älter als du?
+            frame: Mein / Meine ___ ist älter als ich.
+          - question: Ist deine Stadt größer oder kleiner als eine andere Stadt?
+            frame: Meine Stadt ist ___ als ___.
+          - question: Was magst du an deiner Identität am meisten?
+            frame: An meiner Identität mag ich am meisten ___.
+          - question: Was wirst du dieses Jahr für deine Gemeinschaft tun?
+            frame: Dieses Jahr werde ich ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Wer bin ich?'
+        skills: ['Identität: sein und Vergleiche']
+        minutes: 15
+        steps:
+          - Schreib 3 kurze Sätze (unten).
+          - 'Fragt in Paaren: Woher kommst du? Ist deine Gemeinschaft groß oder klein?'
+          - Jedes Paar teilt einen Satz mit der Klasse.
+        example: '*Ich bin Sara. Ich komme aus Brasilien. Meine Gemeinschaft ist freundlich.*'
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Meine 3 Sätze
+        items:
+          - question: Ich bin ___.
+          - question: Ich komme aus ___.
+          - question: Meine Gemeinschaft ist ___.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Ähnlich oder anders?'
+        skills: ['Identität: sein und Vergleiche']
+        minutes: 20
+        steps:
+          - Bildet in Paaren 3 Sätze mit Vergleichen. Benutzt die Satzstarter unten.
+          - Jedes Paar sagt einen Satz im Plenum.
+        example: '*Meine Stadt ist größer als meine Heimatstadt, aber ruhiger.*'
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Unsere Vergleiche
+        items:
+          - question: Meine Familie ist ___ als deine.
+          - question: Meine Stadt ist ___ als meine Heimatstadt.
+          - question: Meine Nachbarschaft ist ___, aber ___.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Meine Gemeinschaft in der Zukunft'
+        skills: [Zukunft mit werden]
+        minutes: 20
+        steps:
+          - 'Sprecht in kleinen Gruppen über die Fragen: Was wirst du für deine Gemeinschaft tun? Wie wird deine Gemeinschaft in 5 Jahren sein?'
+          - Jede Gruppe schreibt 3 Sätze mit *werden*.
+          - Jede Gruppe präsentiert 2 Sätze.
+        example: '*Ich werde meinen Nachbarn helfen. Meine Gemeinschaft wird sauberer sein.*'
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Unsere Sätze über die Zukunft
+        items:
+          - question: Ich werde ___.
+          - question: In 5 Jahren wird meine Gemeinschaft ___ sein.
+          - question: Wir werden ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Richtig oder falsch?'
+        skills: ['Identität: sein und Vergleiche', Zukunft mit werden]
+        minutes: 15
+        steps:
+          - 'Jeder Schüler sagt 3 Sätze: 1. Identität, 2. Vergleich, 3. Zukunft. Ein Satz ist falsch.'
+          - Die Klasse rät, welcher Satz falsch ist.
+        example: '*Ich komme aus Argentinien. Mein Bruder ist größer als ich. Meine Stadt wird nächstes Jahr verschwinden.*'
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Meine 3 Sätze
+        items:
+          - question: 'Identität: Ich bin ___. / Ich komme aus ___.'
+          - question: 'Vergleich: ___ ist ___ als ___.'
+          - question: 'Zukunft: ___ werde / wird ___.'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Grammatikfokus: *sein* (Identität und Zustand), Vergleiche (*-er als*, *mehr /
+          weniger … als*, *so … wie*) und die Zukunft mit *werden* (einfache Pläne und
+          Vorhersagen). Aktivitäten 1 und 2 üben *sein* und Vergleiche, Aktivität 3
+          *werden*, Aktivität 4 wiederholt alles. Dauer der Stunde: 90 Minuten.
+      - id: n-intro
+        anchor: intro
+        text: 'Gib zuerst dein Beispiel: «Ich bin Marta. Ich bin Argentinierin. Ich bin Lehrerin. Ich bin heute in Tel Aviv.» Dann sagt jeder Schüler 3 kurze Sätze.'
+      - id: n-warmup
+        anchor: warmup-title
+        text: Stell jedem Schüler mindestens zwei Fragen. Die Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        minutes: 15
+        text: 'Form: individuell → Paare → Klasse. Ziel: *sein* für Identität verwenden.'
+      - id: n-act2
+        anchor: act2
+        minutes: 20
+        text: 'Form: Paare → Klasse. Schreib die Satzstarter an die Tafel. Achte auf den Komparativ mit *-er* (nicht *mehr groß*) und auf den Umlaut (*größer, älter*).'
+      - id: n-act3
+        anchor: act3
+        minutes: 20
+        text: 'Form: kleine Gruppen → Klasse. Achte darauf, dass der Infinitiv am Ende steht (*Ich werde meinen Nachbarn helfen.*).'
+      - id: n-act4
+        anchor: act4
+        minutes: 15
+        text: 'Form: ganze Klasse. Wiederholung aller Strukturen: Identität, Vergleich, Zukunft.'
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: identitaet-und-gemeinschaft-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-sein
+        type: ruleSummary
+        skill: 'Identität: sein'
+        rules:
+          - text: 'Mit **sein** sprechen wir über unsere **Identität** (wer ich bin) und über einen **Zustand** (wie ich mich jetzt fühle, wo ich jetzt bin).'
+            examples: [Ich bin Student., Ich bin Israeli., Ich bin müde., Ich bin in Tel Aviv.]
+      - id: sein-table
+        type: table
+        caption: sein
+        header: [Person, sein]
+        rows:
+          - [ich, bin]
+          - [du, bist]
+          - [er / sie / es, ist]
+          - [wir, sind]
+          - [ihr, seid]
+          - [sie / Sie, sind]
+      - id: sein-he
+        type: text
+        lang: he
+        text: >-
+          בגרמנית משתמשים ב־sein כדי לדבר על זהות קבועה (מי אני) ועל מצב זמני (איך אני מרגיש
+          עכשיו, איפה אני נמצא). Ich bin Student – אני סטודנט. Ich bin Israeli – אני ישראלי.
+          Ich bin müde – אני עייף. Ich bin in Tel Aviv – אני בתל אביב.
+      - id: rules-vergleiche
+        type: ruleSummary
+        skill: Vergleiche
+        rules:
+          - text: '**Komparativ:** A ist + Adjektiv + **-er** + **als** + B. Wir sagen nicht *mehr groß*.'
+            examples:
+              [
+                Meine Stadt ist größer als deine.,
+                Meine Nachbarschaft ist ruhiger als die Innenstadt.,
+              ]
+          - text: 'Kurze Adjektive bekommen oft einen **Umlaut**. *gut* ist unregelmäßig.'
+            examples: ['groß → größer, alt → älter, gut → besser']
+          - text: '**weniger** + Adjektiv + **als**: das Gegenteil von *-er als*.'
+            examples: [Meine Nachbarschaft ist weniger laut als die Innenstadt.]
+          - text: 'Mit Nomen: **mehr / weniger** + Nomen + **als**.'
+            examples: [Meine Stadt hat mehr Parks als mein Dorf.]
+          - text: '**so** + Adjektiv + **wie**: A und B sind gleich.'
+            examples: [Meine Familie ist so freundlich wie deine.]
+      - id: vergleiche-he
+        type: text
+        lang: he
+        text: >-
+          כדי להשוות בין אנשים, מקומות או דברים: תואר + ‎-er + als = יותר … מ־ (größer als –
+          גדול יותר מ־). לא אומרים mehr groß. weniger + תואר + als = פחות … מ־. mehr / weniger
+          + שם עצם + als = יותר / פחות … מ־. so + תואר + wie = … כמו (באותה מידה).
+      - id: rules-werden
+        type: ruleSummary
+        skill: Zukunft mit werden
+        rules:
+          - text: 'Für Pläne und Vorhersagen benutzen wir **werden** + **Infinitiv**. *werden* steht auf Position 2, der **Infinitiv am Ende**.'
+            examples:
+              [
+                Ich werde meinen Nachbarn **helfen**.,
+                Meine Stadt wird moderner **sein**.,
+                Wir werden dieses Jahr etwas für die Gemeinschaft **tun**.,
+              ]
+          - text: 'Für Pläne benutzen wir oft auch das **Präsens** mit einem Zeitwort (*dieses Jahr, nächstes Jahr, in fünf Jahren*).'
+            examples: [Nächstes Jahr helfe ich meinen Nachbarn.]
+      - id: werden-table
+        type: table
+        caption: werden
+        header: [Person, werden, Beispiel]
+        rows:
+          - [ich, werde, Ich werde lernen.]
+          - [du, wirst, Du wirst helfen.]
+          - [er / sie / es, wird, Meine Stadt wird besser sein.]
+          - [wir, werden, Wir werden etwas tun.]
+          - [ihr, werdet, Ihr werdet planen.]
+          - [sie / Sie, werden, Sie werden arbeiten.]
+      - id: werden-he
+        type: text
+        lang: he
+        text: >-
+          כדי לדבר על תוכניות או תחזיות לעתיד משתמשים ב־werden + פועל בשם הפועל (Infinitiv).
+          werden נמצא במקום השני, והפועל הראשי תמיד בסוף המשפט: Ich werde lernen – אני אלמד.
+          Meine Stadt wird besser sein – העיר שלי תהיה טובה יותר. Ich werde – אני (אעשה), du
+          wirst – אתה (תעשה), er / sie wird – הוא / היא (יעשה / תעשה), wir werden – אנחנו
+          (נעשה).
+      - id: recap
+        type: callout
+        tone: info
+        title: Was kannst du jetzt?
+        text: |-
+          **Sagen, wer du bist:** *Ich bin Daniel. Ich bin Student.*
+          **Deine Gemeinschaft beschreiben:** *Meine Nachbarschaft ist ruhig.*
+          **Dinge vergleichen:** *Meine Stadt ist größer als mein Dorf.*
+          **Über die Zukunft sprechen:** *Dieses Jahr werde ich meiner Gemeinschaft helfen.*
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die Regeln mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: identitaet-und-gemeinschaft-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere eine Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Nachricht 1: Wer ich bin und wo ich dazugehöre'
+        intro: 'Beispielantwort: *Ich bin Daniel. Ich bin Israeli. Ich bin Student und ich bin in Tel Aviv.*'
+        message: Hallo Mori! Bitte mich, mich auf Deutsch vorzustellen. Ich möchte *sein* benutzen und sagen, wer ich bin und wo ich wohne. Bitte korrigiere mich sofort.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Nachricht 2: Meine Gemeinschaft'
+        intro: 'Beispiel: *Meine Nachbarschaft ist ruhig und freundlich.*'
+        message: Hallo Mori! Stell mir Fragen über meine Nachbarschaft oder meine Gemeinschaft. Ich möchte in einfachen Sätzen mit *sein* antworten. Bitte korrigiere mich.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Nachricht 3: Vergleichen'
+        intro: 'Beispiel: *Meine Stadt ist größer als mein Dorf. Meine Familie ist so freundlich wie deine.*'
+        message: Hallo Mori! Nenn mir zwei Orte oder zwei Personen und bitte mich, sie zu vergleichen. Ich möchte *-er als*, *weniger … als* und *so … wie* benutzen. Bitte korrigiere mich.
+      - id: mori-4
+        type: aiTutorPrompt
+        title: 'Nachricht 4: Die Zukunft meiner Gemeinschaft'
+        intro: 'Beispiel: *Dieses Jahr werde ich meinen Nachbarn helfen. Meine Gemeinschaft wird moderner sein.*'
+        message: Hallo Mori! Frag mich, was ich dieses Jahr für meine Gemeinschaft tun werde und wie meine Gemeinschaft in 5 Jahren sein wird. Ich antworte mit *werden*. Bitte korrigiere mich.
+      - id: mori-5
+        type: aiTutorPrompt
+        title: 'Nachricht 5: Kurzes Interview'
+        message: |-
+          Hallo Mori! Sei ein Interviewer. Frag mich:
+          Wer bin ich?
+          Woher komme ich?
+          Wie ist meine Gemeinschaft?
+          Wie wird sie in der Zukunft sein?
+          Ich antworte auf Deutsch, und du korrigierst jeden Fehler.
+      - id: mori-6
+        type: aiTutorPrompt
+        title: 'Nachricht 6: Eine kurze Geschichte'
+        message: Hallo Mori! Bitte mich, 4–5 Sätze über mich, über meine Gemeinschaft und über meine Pläne für die Zukunft zu erzählen. Ich benutze *sein*, Vergleiche und *werden*. Bitte korrigiere mich und schlag eine bessere Version vor.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: identitaet-und-gemeinschaft-uebung
+    book: workbook
+    title: 'Übung: Identität und Gemeinschaft'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-identitaet
+        type: activity
+        activity: identitaet-und-gemeinschaft-identitaet
+      - id: ex-zukunft
+        type: activity
+        activity: identitaet-und-gemeinschaft-zukunft
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: identitaet-und-gemeinschaft-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für Identität und Gemeinschaft
+        glossLang: he
+        link: https://quizlet.com/br/1131235151/identitat-und-gemeinschaft-flash-cards/
+        items: &identitaet-und-gemeinschaft-words
+          - { term: die Identität, gloss: זהות }
+          - { term: die Gemeinschaft, gloss: קהילה }
+          - { term: die Kultur, gloss: תרבות }
+          - { term: die Nationalität, gloss: לאום }
+          - { term: die Stadt, gloss: עיר }
+          - { term: die Nachbarschaft, gloss: שכונה }
+          - { term: die Familie, gloss: משפחה }
+          - { term: der Freund, gloss: חבר }
+          - { term: der Beruf, gloss: מקצוע }
+          - { term: der Student / die Studentin, gloss: סטודנט / סטודנטית }
+          - { term: der Ort, gloss: מקום }
+          - { term: das Zuhause, gloss: בית }
+          - { term: sein, gloss: להיות }
+          - { term: wohnen, gloss: לגור }
+          - { term: kommen aus, gloss: לבוא מ־ / להיות מ־ }
+          - { term: helfen, gloss: לעזור }
+          - { term: lernen, gloss: ללמוד }
+          - { term: arbeiten, gloss: לעבוד }
+          - { term: vergleichen, gloss: להשוות }
+          - { term: ändern, gloss: לשנות }
+          - { term: planen, gloss: לתכנן }
+          - { term: werden, gloss: '(פועל העזר לעתיד) יהיה / אעשה; גם: להפוך ל־' }
+          - { term: mehr als, gloss: יותר מ־ }
+          - { term: weniger als, gloss: פחות מ־ }
+          - { term: so … wie, gloss: כמו (באותה מידה) }
+          - { term: größer, gloss: גדול יותר }
+          - { term: kleiner, gloss: קטן יותר }
+          - { term: besser, gloss: טוב יותר }
+          - { term: dieses Jahr, gloss: השנה }
+          - { term: in fünf Jahren, gloss: בעוד חמש שנים }
+          - { term: freundlich, gloss: ידידותי }
+          - { term: ruhig, gloss: שקט }
+          - { term: laut, gloss: רועש }
+          - { term: modern, gloss: מודרני }
+          - { term: alt, gloss: ישן / זקן }
+          - { term: stolz, gloss: גאה }
+
+vocabulary:
+  - slug: identitaet-und-gemeinschaft
+    title: Identität und Gemeinschaft
+    items: *identitaet-und-gemeinschaft-words
+
+activities:
+  - slug: identitaet-und-gemeinschaft-identitaet
+    title: 'Identität: sein und Vergleiche'
+    minutes: 8
+    items:
+      - id: ich-bin
+        type: multipleChoice
+        prompt: Ich ___ Student.
+        options:
+          - { text: bin, correct: true }
+          - { text: ist, feedback: '*ist* ist für *er / sie / es*. Für *ich* sagen wir *bin*.' }
+          - { text: bist, feedback: '*bist* ist für *du*. Für *ich* sagen wir *bin*.' }
+      - id: bist-sind
+        type: fillBlank
+        prompt: Ergänze das Verb *sein*.
+        text: Du ___ heute müde. Wir ___ in Tel Aviv.
+        blanks: [[bist], [sind]]
+      - id: sein-formen
+        type: matching
+        prompt: Welche Form von *sein* passt?
+        pairs:
+          - [ich, bin]
+          - [du, bist]
+          - [er / sie / es, ist]
+          - [wir, sind]
+          - [ihr, seid]
+      - id: groesser
+        type: multipleChoice
+        prompt: Meine Stadt ist ___ als mein Dorf.
+        options:
+          - { text: größer, correct: true }
+          - {
+              text: mehr groß,
+              feedback: 'Im Deutschen sagen wir nicht *mehr groß*. Wir sagen Adjektiv + *-er*: *größer*.',
+            }
+          - { text: großer, feedback: '*groß* bekommt im Komparativ einen Umlaut: *größer*.' }
+      - id: so-wie
+        type: fillBlank
+        prompt: Meine Familie und deine Familie sind gleich freundlich. Ergänze.
+        text: Meine Familie ist so freundlich ___ deine.
+        blanks: [[wie]]
+        wordBank: [wie, als, so]
+      - id: als-nicht-wie
+        type: trueFalse
+        prompt: 'Der Satz *Meine Nachbarschaft ist ruhiger wie die Innenstadt.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Nach dem Komparativ kommt *als*: *ruhiger als die Innenstadt*.'
+          incorrect: 'Nach dem Komparativ (*ruhiger*) kommt *als*, nicht *wie*. *wie* benutzen wir mit *so … wie*.'
+      - id: weniger-laut
+        type: multipleChoice
+        prompt: Die Innenstadt ist sehr laut. Meine Nachbarschaft ist ___ laut als die Innenstadt.
+        options:
+          - { text: weniger, correct: true }
+          - {
+              text: mehr,
+              feedback: 'Die Innenstadt ist lauter, also ist meine Nachbarschaft *weniger laut*. Und mit Adjektiven sagen wir nicht *mehr*, sondern *-er* (*lauter*).',
+            }
+          - {
+              text: am wenigsten,
+              feedback: '*am wenigsten* ist der Superlativ, ohne *als*. Mit *als* sagen wir *weniger … als*.',
+            }
+      - id: ordne-israel
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Ich komme aus Israel.
+
+  - slug: identitaet-und-gemeinschaft-zukunft
+    title: Zukunft mit werden
+    minutes: 8
+    items:
+      - id: ich-werde
+        type: multipleChoice
+        prompt: Ich ___ meinen Nachbarn helfen.
+        options:
+          - { text: werde, correct: true }
+          - { text: wird, feedback: '*wird* ist für *er / sie / es*. Für *ich* sagen wir *werde*.' }
+          - {
+              text: werden,
+              feedback: '*werden* ist für *wir* und *sie*. Für *ich* sagen wir *werde*.',
+            }
+      - id: gemeinschaft-wird
+        type: fillBlank
+        prompt: Ergänze die richtige Form von *werden*.
+        text: Meine Gemeinschaft ___ sauberer sein.
+        blanks: [[wird]]
+      - id: werden-formen
+        type: matching
+        prompt: Welche Form von *werden* passt?
+        pairs:
+          - [ich, werde]
+          - [du, wirst]
+          - [er / sie / es, wird]
+          - [wir, werden]
+          - [ihr, werdet]
+      - id: infinitiv-ende
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Ich werde meinen Nachbarn helfen., correct: true }
+          - {
+              text: Ich werde helfen meinen Nachbarn.,
+              feedback: 'Mit *werden* steht der Infinitiv am Ende: *Ich werde meinen Nachbarn helfen.*',
+            }
+          - {
+              text: Ich werde meinen Nachbarn helfe.,
+              feedback: 'Nach *werden* kommt der Infinitiv: *helfen*, nicht *helfe*.',
+            }
+      - id: regel-ende
+        type: trueFalse
+        prompt: 'Mit *werden* steht der Infinitiv am Ende des Satzes: *Meine Stadt wird moderner sein.*'
+        answer: true
+        feedback:
+          correct: Richtig! *wird* steht auf Position 2, *sein* am Ende.
+          incorrect: 'Doch: *werden* steht auf Position 2, der Infinitiv (*sein*) am Ende.'
+      - id: wir-werden-tun
+        type: fillBlank
+        prompt: Ergänze *werden* und den Infinitiv.
+        text: Wir ___ dieses Jahr etwas für die Gemeinschaft ___.
+        blanks: [[werden], [tun, machen]]
+      - id: in-fuenf-jahren
+        type: multipleChoice
+        prompt: In fünf Jahren ___ meine Stadt größer sein.
+        options:
+          - { text: wird, correct: true }
+          - {
+              text: werde,
+              feedback: '*werde* ist für *ich*. Für *meine Stadt* (sie) sagen wir *wird*.',
+            }
+          - {
+              text: wirst,
+              feedback: '*wirst* ist für *du*. Für *meine Stadt* (sie) sagen wir *wird*.',
+            }
+      - id: ordne-stadt
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Meine Stadt wird moderner sein.
