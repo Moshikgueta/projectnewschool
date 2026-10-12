@@ -1,0 +1,600 @@
+# Cycle "Voyages - futur proche", converted from the French level 2 digital notebook
+# ("Cahier digital 2025 - français niveau 2", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-2
+slug: voyages-futur-proche
+title: Voyages et futur proche
+goal: Utiliser le futur proche pour parler de ses projets de voyage.
+position: 3
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Le futur proche" and "Mes projets de voyage") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules, the activity examples and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    The futur proche rule in the source (aller au présent + infinitif) is correct French
+    and is kept. Added to the summary: the negation around "aller" (Je ne vais pas partir),
+    the place of the reflexive pronoun (Je vais me promener, from the vocabulary), the
+    question forms (Où vas-tu dormir ? / Qu’est-ce que tu vas faire ?), time markers
+    (demain, ce week-end, l’été prochain, bientôt, dans 5 minutes) and the sequence
+    connectors (d’abord, ensuite, puis, enfin) from Activity 3. The workbook uses them.
+    Please confirm.
+  - >-
+    Skill 2 in the source is "parler de ses projets de voyage, exprimer des souhaits et
+    des prédictions". The notebook has material for travel plans and one prediction (Il
+    va bientôt pleuvoir), but nothing on wishes (j’aimerais, je voudrais…). The skill is
+    shortened to "Parler de ses projets de voyage"; nothing on wishes was added.
+  - >-
+    Corrections: "Quel transport vas-tu utiliser ?" / "Quel transport allons-nous
+    utiliser ?" → "Quel moyen de transport vas-tu prendre ? / allons-nous prendre ?" (as
+    in the warm-up); a comma after the sequence connectors (D’abord, je vais…; Ensuite,
+    …); Mori beginner message 2 "Écoute et dis-moi s’ils sont corrects" → "Lis mes phrases
+    et dis-moi si elles sont correctes" (written chat); Mori intermediate message 1 "pose
+    une question de suivi" → "pose-moi une question de suivi"; Mori intermediate message 2
+    example "D’abord je vais voyager en avion à Madrid" → "D’abord, je vais prendre l’avion
+    pour Madrid"; a stray space in "(conjugué au présent )" was removed. The title "Voyages
+    - futur proche" → "Voyages et futur proche".
+  - >-
+    Activity 4 example "des photos de pingouins": in Antarctica they are "manchots", but
+    "pingouins" is the everyday word; kept.
+  - >-
+    Vocabulary: "Profiter / S’amuser – להנות" → "ליהנות" (spelling); "À la fin" → "Enfin /
+    À la fin" (the lesson uses "enfin" in every sequence); "Voyager / Partir en voyage"
+    kept. Please confirm.
+  - >-
+    The warm-up questions have no answer frames in the source; short frames were added.
+    The notebook does not say which activities practise which skill. Activities 2 and 3
+    have no times in the source.
+  - >-
+    Times given as ranges are recorded as the upper value (2–3 → 3, 8–10 → 10, 5–7 → 7).
+    The Quizlet link is kept without its tracking parameters (?i=…&x=…). The "Réponse de
+    l’élève 1/2/3" lines are replaced by the optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: voyages-futur-proche-classe
+    title: 'Classe : Voyages et futur proche'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Voyages et futur proche
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Le futur proche
+            description: '*aller* au présent + infinitif : *je vais partir, nous allons visiter*'
+          - name: Parler de ses projets de voyage
+            description: '*Où vas-tu partir ? D’abord, je vais… Ensuite… Enfin…*'
+      - id: quizlet
+        type: externalLink
+        label: Voyages et futur proche sur Quizlet
+        url: https://quizlet.com/il/1096100982/conversational-french-2025-voyages-futur-proche-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. L’été prochain, je vais partir ___.
+        example: Je m’appelle Lévanah. L’été prochain, je vais partir en Italie.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Où vas-tu partir lors de tes prochaines vacances ?
+            frame: Lors de mes prochaines vacances, je vais partir à / en…
+          - question: Avec qui vas-tu voyager ?
+            frame: Je vais voyager avec…
+          - question: Qu’est-ce que vous allez faire pendant ce voyage ?
+            frame: Nous allons…
+          - question: Où allez-vous dormir ?
+            frame: Nous allons dormir dans un hôtel / un appartement / un camping…
+          - question: Quel moyen de transport vas-tu prendre ? (avion, train, voiture…)
+            frame: Je vais prendre…
+          - question: Quels souvenirs vas-tu acheter ?
+            frame: Je vais acheter…
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Plan de voyage en binôme'
+        skills: [Le futur proche, Parler de ses projets de voyage]
+        minutes: 18
+        steps:
+          - Lis les questions modèles ci-dessous.
+          - 'En binômes : l’élève A pose les questions. L’élève B répond avec *aller* au présent + infinitif. Puis échangez les rôles.'
+          - Pour plus d’interaction, ajoute un détail à chaque réponse.
+          - Présente au groupe ce que ton / ta partenaire va faire, à la troisième personne.
+        example: |-
+          *A : Où vas-tu dormir ?*
+          *B : Je vais dormir dans un appartement près du centre.*
+          *A : Qu’est-ce que tu vas acheter pendant ce voyage ?*
+          *B : Je vais acheter des souvenirs pour ma famille.*
+          *Mon camarade va dormir dans un appartement et il va acheter des souvenirs pour sa famille.*
+      - id: act1-questions
+        type: discussionQuestions
+        title: Questions modèles
+        items:
+          - question: Où vas-tu partir ?
+          - question: Avec qui vas-tu voyager ?
+          - question: Qu’est-ce que tu vas faire pendant ce voyage ?
+            frame: Je vais visiter des musées et je vais prendre des photos.
+          - question: Où vas-tu dormir ?
+          - question: Quel moyen de transport vas-tu prendre ?
+          - question: Quels souvenirs vas-tu acheter ?
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Un voyage collectif'
+        skills: [Le futur proche, Parler de ses projets de voyage]
+        steps:
+          - En groupes de 3 ou 4, choisissez une destination.
+          - 'Chaque élève ajoute une action au futur proche : transport, repas, activités, hébergement, achats.'
+          - Posez-vous des questions pour enrichir le plan (*Où allons-nous dormir ? Qu’allons-nous visiter d’abord ? Quel moyen de transport allons-nous prendre ?*).
+          - Présentez votre plan à la classe avec *nous*.
+        example: |-
+          *A : Nous allons voyager en France.*
+          *B : Nous allons dormir dans un hôtel à Lyon.*
+          *C : Nous allons visiter des musées à Paris.*
+          *D : Nous allons acheter des souvenirs à Marseille.*
+          *B : Est-ce qu’on va voyager en avion ou en train ?*
+          *Tous : En avion !*
+      - id: act2-plan
+        type: discussionQuestions
+        title: Notre voyage
+        items:
+          - question: Nous allons voyager à / en ___.
+          - question: Nous allons dormir ___.
+          - question: Nous allons visiter ___.
+          - question: Nous allons acheter ___.
+          - question: Nous allons prendre ___ (moyen de transport).
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : L’agenda de voyage surprise'
+        skills: [Parler de ses projets de voyage, Le futur proche]
+        steps:
+          - Choisis 4 ou 5 actions dans la liste de ton professeur (par exemple voyager en train, visiter un musée, manger au restaurant, acheter un cadeau, aller à la plage, dormir à l’hôtel).
+          - Mets-les dans l’ordre.
+          - Écris ton mini-agenda avec *aller* au présent + infinitif et *d’abord, ensuite, puis, enfin*.
+        example: |-
+          *D’abord, je vais prendre l’avion pour Rome.*
+          *Ensuite, je vais visiter le Colisée.*
+          *Puis, je vais manger une pizza dans un restaurant typique.*
+          *Enfin, je vais acheter un souvenir pour ma famille.*
+      - id: act3-agenda
+        type: discussionQuestions
+        title: Mon agenda de voyage
+        items:
+          - question: D’abord, je vais ___.
+          - question: Ensuite, je vais ___.
+          - question: Puis, je vais ___.
+          - question: Enfin, je vais ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Le voyage impossible'
+        skills: [Le futur proche, Parler de ses projets de voyage]
+        minutes: 19
+        steps:
+          - 'Choisissez un voyage « impossible » : un mois en Antarctique, une semaine sur Mars ou trois jours sur une île sans Internet.'
+          - En groupe, imaginez 5 actions principales avec *aller* au présent + infinitif. Utilisez les questions ci-dessous.
+          - Présentez votre voyage à la classe.
+          - La classe vote pour le projet le plus amusant, le plus réaliste ou le plus fou.
+        example: |-
+          *Nous allons emporter des vêtements très chauds.*
+          *Nous allons dormir dans des igloos.*
+          *Nous allons manger du poisson et de la soupe chaude.*
+          *Nous allons prendre des photos de pingouins.*
+          *Nous allons faire un bonhomme de neige.*
+      - id: act4-questions
+        type: discussionQuestions
+        title: Questions pour vous guider
+        items:
+          - question: Qu’allons-nous emporter ?
+          - question: Où allons-nous dormir ?
+          - question: Qu’allons-nous manger ?
+          - question: Qu’allons-nous faire ?
+          - question: Comment allons-nous survivre / nous amuser ?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **le futur proche** (*aller* au présent +
+          infinitif) et **parler de ses projets de voyage**. Toutes les activités
+          pratiquent les deux ; le cahier ne donne pas de combinaison recommandée.
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        minutes: 18
+        text: >-
+          Préparation : 3 minutes (écris les questions modèles au tableau). Travail en
+          binômes : 10 minutes. Mise en commun : 5 minutes. Exemple de compte-rendu : *Ma
+          camarade va voyager en Italie, elle va dormir dans un hôtel et elle va acheter
+          des vêtements.*
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Présentation finale de l’exemple : *Nous allons voyager en France, nous allons
+          dormir dans un hôtel à Lyon, nous allons visiter des musées à Paris et nous
+          allons acheter des souvenirs à Marseille.*
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Prépare une liste d’actions de voyage pour chaque élève (à l’écran ou sur papier) :
+          voyager en train, visiter un musée, manger au restaurant, acheter un cadeau, aller à
+          la plage, dormir à l’hôtel…
+      - id: n-act4
+        anchor: act4
+        minutes: 19
+        text: >-
+          Préparation : 2 minutes (présente les trois voyages impossibles). Travail en
+          groupes : 10 minutes. Présentation et vote : 7 minutes.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: voyages-futur-proche-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-futur
+        type: ruleSummary
+        skill: Le futur proche
+        rules:
+          - text: 'Le **futur proche** (*aller* au présent + infinitif) sert à parler de plans concrets, d’intentions ou de décisions déjà prises. On l’utilise beaucoup à l’oral.'
+          - text: '**Plans décidés :**'
+            examples:
+              [Je vais voyager en Italie cet été., Nous allons dormir dans un hôtel à Barcelone.]
+          - text: '**Actions imminentes** et prédictions :'
+            examples: [Je vais sortir dans 5 minutes., Il va bientôt pleuvoir.]
+          - text: '**Intentions personnelles :**'
+            examples:
+              [
+                Je vais étudier davantage le français cette année.,
+                Ils vont acheter une nouvelle voiture.,
+              ]
+          - text: '**Structure :** sujet + *aller* (conjugué au présent) + **infinitif**.'
+            examples:
+              - Je vais voyager en France.
+              - Tu vas manger un croissant.
+              - Il / Elle va dormir à l’hôtel.
+              - Nous allons visiter des musées.
+              - Vous allez parler français.
+              - Ils vont acheter des souvenirs.
+          - text: 'À la forme négative, *ne… pas* entoure le verbe *aller*.'
+            examples: [Je ne vais pas partir cet été., Nous n’allons pas dormir à l’hôtel.]
+          - text: 'Avec un verbe pronominal, le pronom va devant l’infinitif.'
+            examples: [Je vais me promener., Nous allons nous amuser.]
+      - id: aller-table
+        type: table
+        caption: Le verbe aller au présent
+        header: [Personne, aller, Exemple]
+        rows:
+          - [je, vais, Je vais voyager.]
+          - [tu, vas, Tu vas manger.]
+          - [il / elle / on, va, Elle va dormir.]
+          - [nous, allons, Nous allons visiter.]
+          - [vous, allez, Vous allez parler.]
+          - [ils / elles, vont, Ils vont acheter.]
+      - id: rules-projets
+        type: ruleSummary
+        skill: Parler de ses projets de voyage
+        rules:
+          - text: 'Pour poser une question, on peut inverser *aller* et le sujet, ou utiliser *est-ce que*.'
+            examples:
+              - Où vas-tu dormir ?
+              - Qu’est-ce que tu vas faire pendant ce voyage ?
+              - Est-ce qu’on va voyager en avion ou en train ?
+          - text: 'Marqueurs temporels du futur :'
+            examples: ['demain, ce week-end, cet été, l’été prochain, bientôt, dans 5 minutes']
+          - text: 'Pour mettre les actions dans l’ordre : **d’abord, ensuite, puis, enfin**.'
+            examples:
+              - D’abord, je vais prendre l’avion pour Rome. Ensuite, je vais visiter le Colisée. Enfin, je vais acheter un souvenir.
+          - text: 'Pour raconter les projets de ton / ta partenaire, utilise la troisième personne.'
+            examples: [Ma camarade va voyager en Italie et elle va dormir dans un hôtel.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les règles avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: voyages-futur-proche-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: basic-title
+        type: heading
+        level: 3
+        text: Niveau débutant
+      - id: basic-goal
+        type: text
+        text: 'Objectif : pratiquer des phrases courtes sur des projets concrets.'
+      - id: mori-basic-1
+        type: aiTutorPrompt
+        title: 'Message 1 : Questions et réponses'
+        message: |-
+          Bonjour Mori, pose-moi 5 questions faciles avec aller au présent + infinitif, par exemple :
+          Où vas-tu voyager ?
+          Que vas-tu manger demain ?
+          Où vas-tu dormir pendant les vacances ?
+          Je vais te répondre et tu me corriges si je me trompe.
+      - id: mori-basic-2
+        type: aiTutorPrompt
+        title: 'Message 2 : Mini-journal de projets'
+        intro: 'Ensuite, écris tes phrases. Exemple : *Je vais étudier le français demain. Vendredi, je vais manger une pizza. Samedi, je vais rendre visite à mes grands-parents. Dimanche, je vais beaucoup dormir.*'
+        message: Bonjour Mori, je vais te raconter 4 projets pour cette semaine. Lis mes phrases et dis-moi si elles sont correctes. Puis pose-moi une question supplémentaire pour chaque phrase.
+      - id: mori-basic-3
+        type: aiTutorPrompt
+        title: 'Message 3 : Rapport à la troisième personne'
+        intro: 'Ensuite, écris tes phrases. Exemple : *Mon frère va jouer au football. Il va étudier pour un examen. Il va manger un hamburger.*'
+        message: Bonjour Mori, je vais te raconter ce qu’une personne de ma famille va faire. Corrige mes phrases et pose-moi une question sur cette personne.
+      - id: inter-title
+        type: heading
+        level: 3
+        text: Niveau intermédiaire
+      - id: inter-goal
+        type: text
+        text: 'Objectif : utiliser le futur proche avec plus de détails, des questions de suivi et des récits à la troisième personne.'
+      - id: mori-inter-1
+        type: aiTutorPrompt
+        title: 'Message 1 : Entretien sur les projets'
+        intro: 'Exemple : Mori : *Que vas-tu faire pendant ton prochain voyage ?* Toi : *Je vais visiter des musées à Rome.* Mori : *Très bien. Quel musée vas-tu visiter d’abord ?*'
+        message: Bonjour Mori, pose-moi 6 questions sur mon prochain voyage et mes projets, avec aller au présent + infinitif. Après chaque réponse, corrige-moi et pose-moi une question de suivi.
+      - id: mori-inter-2
+        type: aiTutorPrompt
+        title: 'Message 2 : Agenda de voyage'
+        intro: 'Ensuite, écris tes cinq phrases. Exemple : *D’abord, je vais prendre l’avion pour Madrid. Ensuite, je vais visiter le Palais royal. Puis, je vais manger des tapas dans un restaurant. Plus tard, je vais acheter des souvenirs. Enfin, je vais rentrer à l’hôtel.*'
+        message: Bonjour Mori, je vais organiser mon prochain voyage en 5 phrases, avec d’abord, ensuite, puis, enfin. Corrige mes phrases et pose-moi une question pour ajouter un détail.
+      - id: mori-inter-3
+        type: aiTutorPrompt
+        title: 'Message 3 : Projets familiaux à la troisième personne'
+        intro: 'Ensuite, écris tes phrases. Exemple : *Ma mère va aller au supermarché. Mon père va regarder un match de football. Ma sœur va sortir avec ses amis.*'
+        message: Bonjour Mori, je vais te raconter ce que trois membres de ma famille vont faire ce week-end. Corrige mes phrases et pose-moi une question sur l’un d’eux.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: voyages-futur-proche-pratique
+    book: workbook
+    title: 'Pratique : Voyages et futur proche'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-futur
+        type: activity
+        activity: voyages-futur-proche-futur
+      - id: ex-projets
+        type: activity
+        activity: voyages-futur-proche-projets
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: voyages-futur-proche-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots du voyage
+        glossLang: he
+        link: https://quizlet.com/il/1096100982/conversational-french-2025-voyages-futur-proche-flash-cards/
+        items: &voyages-futur-proche-words
+          - { term: Voyager / Partir en voyage, gloss: לנסוע / לטייל }
+          - { term: Partir en vacances, gloss: לצאת לחופשה }
+          - { term: Dormir, gloss: לישון }
+          - { term: Manger, gloss: לאכול }
+          - { term: Acheter, gloss: לקנות }
+          - { term: Visiter, gloss: לבקר }
+          - { term: Utiliser, gloss: להשתמש }
+          - { term: Prendre (un moyen de transport), gloss: לקחת (תחבורה) }
+          - { term: Emporter / Apporter, gloss: לקחת / להביא }
+          - { term: Connaître / Faire la connaissance, gloss: להכיר }
+          - { term: Faire, gloss: לעשות }
+          - { term: Voir, gloss: לראות }
+          - { term: Prendre des photos, gloss: לצלם }
+          - { term: Se promener / Se balader, gloss: לטייל / להסתובב }
+          - { term: Profiter / S’amuser, gloss: ליהנות }
+          - { term: Se souvenir, gloss: לזכור }
+          - { term: Hôtel, gloss: מלון }
+          - { term: Appartement, gloss: דירה }
+          - { term: Camping, gloss: קמפינג }
+          - { term: Avion, gloss: מטוס }
+          - { term: Train, gloss: רכבת }
+          - { term: Voiture, gloss: רכב / מכונית }
+          - { term: Musée, gloss: מוזיאון }
+          - { term: Restaurant, gloss: מסעדה }
+          - { term: Plage, gloss: חוף ים }
+          - { term: Ville, gloss: עיר }
+          - { term: Souvenir, gloss: מזכרת }
+          - { term: Valise, gloss: מזוודה }
+          - { term: Appareil photo, gloss: מצלמה }
+          - { term: Passeport, gloss: דרכון }
+          - { term: Billet / Ticket de transport, gloss: כרטיס נסיעה }
+          - { term: D’abord, gloss: קודם }
+          - { term: Ensuite, gloss: אחר כך }
+          - { term: Puis / Plus tard, gloss: לאחר מכן }
+          - { term: Enfin / À la fin, gloss: בסוף }
+          - { term: Bientôt, gloss: בקרוב }
+          - { term: Demain, gloss: מחר }
+
+vocabulary:
+  - slug: voyages-futur-proche
+    title: Voyages et futur proche
+    items: *voyages-futur-proche-words
+
+activities:
+  - slug: voyages-futur-proche-futur
+    title: 'Le futur proche : je vais partir'
+    minutes: 8
+    items:
+      - id: nous-allons
+        type: multipleChoice
+        prompt: Nous ___ visiter des musées.
+        options:
+          - { text: allons, correct: true }
+          - { text: allez, feedback: '*Allez* est pour *vous*. Avec *nous*, on dit *nous allons*.' }
+          - {
+              text: vont,
+              feedback: '*Vont* est pour *ils / elles*. Avec *nous*, on dit *nous allons*.',
+            }
+      - id: conjugue-aller
+        type: fillBlank
+        prompt: Complète avec le verbe *aller* au présent.
+        text: Je ___ voyager en France. Tu ___ manger un croissant. Ils ___ acheter des souvenirs.
+        blanks: [[vais], [vas], [vont]]
+      - id: phrase-correcte
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Je vais dormir à l’hôtel., correct: true }
+          - {
+              text: Je vais dors à l’hôtel.,
+              feedback: 'Après *aller*, le deuxième verbe est à l’infinitif : *je vais dormir*.',
+            }
+          - {
+              text: Je va dormir à l’hôtel.,
+              feedback: 'Avec *je*, on dit *je vais* : *Je vais dormir à l’hôtel.*',
+            }
+      - id: structure
+        type: trueFalse
+        prompt: 'Le futur proche se forme avec *aller* au présent + un infinitif : *Je vais partir.*'
+        answer: true
+        feedback:
+          correct: 'Bravo ! *aller* au présent + infinitif : *je vais partir, nous allons visiter*.'
+          incorrect: 'Si, c’est vrai : le futur proche = *aller* au présent + infinitif. *Je vais partir.*'
+      - id: pronoms-aller
+        type: matching
+        prompt: Associe chaque pronom à la bonne forme du verbe *aller*.
+        pairs:
+          - [je, vais]
+          - [tu, vas]
+          - [il / elle, va]
+          - [vous, allez]
+          - [ils / elles, vont]
+      - id: pleuvoir
+        type: fillBlank
+        prompt: 'Complète la prédiction : *aller* au présent + infinitif.'
+        text: Il ___ bientôt ___ (pleuvoir).
+        blanks: [[va], [pleuvoir]]
+      - id: negation
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Je ne vais pas partir cet été., correct: true }
+          - {
+              text: Je ne vais partir pas cet été.,
+              feedback: 'Au futur proche, *ne… pas* entoure le verbe *aller* : *Je ne vais pas partir.*',
+            }
+          - {
+              text: Je vais ne partir pas cet été.,
+              feedback: 'Au futur proche, *ne… pas* entoure le verbe *aller* : *Je ne vais pas partir.*',
+            }
+      - id: ordre-voiture
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Ils vont acheter une nouvelle voiture.
+
+  - slug: voyages-futur-proche-projets
+    title: Mes projets de voyage
+    minutes: 8
+    items:
+      - id: vas-tu-dormir
+        type: multipleChoice
+        prompt: Où ___-tu dormir pendant les vacances ?
+        options:
+          - { text: vas, correct: true }
+          - {
+              text: va,
+              feedback: '*Va* est pour *il / elle*. Avec *tu*, on dit *vas* : *Où vas-tu dormir ?*',
+            }
+          - {
+              text: vais,
+              feedback: '*Vais* est pour *je*. Avec *tu*, on dit *vas* : *Où vas-tu dormir ?*',
+            }
+      - id: agenda-ordre
+        type: fillBlank
+        prompt: Complète l’agenda avec *D’abord*, *Ensuite* et *Enfin*.
+        text: ___, je vais prendre l’avion pour Rome. ___, je vais visiter le Colisée. ___, je vais acheter un souvenir pour ma famille.
+        blanks: [[D’abord, D'abord], [Ensuite, Puis], [Enfin]]
+        wordBank: [D’abord, Ensuite, Enfin]
+      - id: questions-reponses
+        type: matching
+        prompt: Associe chaque question à sa réponse.
+        pairs:
+          - [Où vas-tu dormir ?, Je vais dormir dans un appartement.]
+          - [Avec qui vas-tu voyager ?, Avec ma famille.]
+          - [Quel moyen de transport vas-tu prendre ?, Je vais prendre le train.]
+          - [Quels souvenirs vas-tu acheter ?, Des cartes postales pour mes amis.]
+          - [Où vas-tu partir ?, Je vais partir en Italie.]
+      - id: camarade-musees
+        type: multipleChoice
+        prompt: 'Ta camarade dit : *Je vais visiter des musées.* Raconte au groupe : Ma camarade ___ des musées.'
+        options:
+          - { text: va visiter, correct: true }
+          - {
+              text: vais visiter,
+              feedback: '*Vais* est pour *je*. Pour *elle* (ma camarade), on dit *va visiter*.',
+            }
+          - {
+              text: va visite,
+              feedback: 'Après *aller*, le verbe est à l’infinitif : *va visiter*.',
+            }
+      - id: allons-nous
+        type: multipleChoice
+        prompt: Quel moyen de transport ___-nous prendre ?
+        options:
+          - { text: allons, correct: true }
+          - {
+              text: allez,
+              feedback: '*Allez* est pour *vous*. Avec *nous*, on dit *allons* : *allons-nous*.',
+            }
+          - {
+              text: vont,
+              feedback: '*Vont* est pour *ils / elles*. Avec *nous*, on dit *allons-nous*.',
+            }
+      - id: prediction
+        type: trueFalse
+        prompt: '*Il va bientôt pleuvoir* est une prédiction au futur proche.'
+        answer: true
+        feedback:
+          correct: 'Bravo ! On utilise aussi le futur proche pour une prédiction ou une action imminente.'
+          incorrect: 'C’est vrai : *Il va bientôt pleuvoir* est une prédiction (*va* + *pleuvoir*).'
+      - id: valise
+        type: fillBlank
+        prompt: Complète avec un mot du vocabulaire.
+        text: Je vais mettre mes vêtements dans ma ___. Je ne vais pas oublier mon ___ pour prendre l’avion.
+        blanks: [[valise], [passeport, billet]]
+        wordBank: [valise, passeport, plage, ville]
+      - id: ordre-igloos
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Nous allons dormir dans des igloos.

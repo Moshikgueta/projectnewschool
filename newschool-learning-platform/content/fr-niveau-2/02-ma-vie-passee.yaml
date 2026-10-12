@@ -1,0 +1,690 @@
+# Cycle "Ma vie passée", converted from the French level 2 digital notebook
+# ("Cahier digital 2025 - français niveau 2", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-2
+slug: ma-vie-passee
+title: Ma vie passée
+goal: Raconter sa vie au passé composé et à l’imparfait avec je, tu et il / elle.
+position: 2
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Les temps du passé" and "Je, tu, il / elle au passé") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules, the activity examples and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Summary: the notebook gives uses and examples but no forms. Added: the passé composé
+    with avoir / être + participle (with agreement after être: elle est allée), the
+    imparfait endings (-ais, -ais, -ait…; être → ét-), and a table of je / tu / il / elle
+    forms (skill 2 has no rules of its own in the source). Please confirm.
+  - >-
+    Corrections: Activity 2, "A qui as-tu rendu visite" → "À qui"; "Quelle formation as-tu
+    commencé" → "commencée" (agreement with the preceding direct object); a missing full
+    stop after "au petit-déjeuner"; summary "passécomposé" → "passé composé"; Activity 4
+    "Qu’as-tu mangé d'inoubliable  ?" (double space, straight apostrophe) cleaned; Activity
+    1 and Mori intermediate message 1 "son voyage préféré a été en Italie" / "Mon voyage
+    préféré a été en Italie" → "…, c’était en Italie" (calque of Spanish "fue a Italia");
+    Mori beginner message 1 "Je vais répondre et corrige-moi si je me trompe" → "Je vais
+    répondre. Corrige-moi si je me trompe."; Mori beginner message 2 "Écoute mes phrases"
+    → "Lis mes phrases" (it is a written chat). Stray "**" and "&#10;" markup was removed
+    from the warm-up questions and activity 2.
+  - >-
+    Mori intermediate message 2 asks for "3 au passé composé et 2 à l’imparfait" but the
+    example has 1 passé composé and 4 imparfaits. The message now asks for "2 au passé
+    composé et 3 à l’imparfait", and the example sentence "Le voyage était amusant" → "Le
+    voyage a été très amusant" (a finished trip seen as a whole), as in cycle 1.
+  - >-
+    The Mori messages and the summary of this cycle are almost the same as in cycle 1
+    ("Expériences passées"). They are kept in both cycles so each cycle is complete;
+    you may want to vary them.
+  - >-
+    The warm-up questions have no answer frames in the source; short frames were added
+    (e.g. "Hier après-midi, j’ai…", "Quand j’étais enfant, le dimanche, je…"). The
+    introduction round has two models (beginner: Hier, …; intermediate: Quand j’étais
+    enfant, …); both are kept.
+  - >-
+    Activity 2: the expected questions are given to the teacher as an answer key in a
+    teacher note; students see the sentences and write a question.
+  - >-
+    Vocabulary: "Je suis allé / Tu es allé" → "Je suis allé(e) / Tu es allé(e)"; "Hier
+    soir – אתמול בלילה" → "אתמול בערב"; "J’ai déménagé – עברתי" → "עברתי דירה"; "Quand
+    j’étais enfant – כשהייתי ילד" → "כשהייתי ילד / ילדה". Please confirm.
+  - >-
+    The notebook does not say which activities practise which skill. Times: Activity 3,
+    beginners 5 + 10 + 5 = 20 minutes, intermediates 5 + 10 + 7 = 22 minutes (recorded as
+    22). The Quizlet link is kept without its tracking parameters (?i=…&x=…). The "Réponse
+    de l’élève 1/2/3" lines are replaced by the optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: ma-vie-passee-classe
+    title: 'Classe : Ma vie passée'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ma vie passée
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Les temps du passé
+            description: Passé composé (*j’ai mangé, je suis né(e)*) et imparfait (*je jouais, c’était*)
+          - name: Je, tu, il / elle au passé
+            description: '*J’ai mangé. → Qu’as-tu mangé ? → Il / Elle a mangé.*'
+      - id: quizlet
+        type: externalLink
+        label: Ma vie passée sur Quizlet
+        url: https://quizlet.com/il/1095438755/conversational-french-2025-ma-vie-passee-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro-basic-title
+        type: heading
+        level: 4
+        text: Niveau débutant
+      - id: intro-basic
+        type: sentenceFrame
+        frame: Je m’appelle ___. Hier, ___.
+        example: Je m’appelle Lévanah. Hier, j’ai joué avec mes enfants.
+      - id: intro-inter-title
+        type: heading
+        level: 4
+        text: Niveau intermédiaire
+      - id: intro-inter
+        type: sentenceFrame
+        frame: Je m’appelle ___. Quand j’étais enfant, ___.
+        example: Je m’appelle Lévanah. Quand j’étais enfant, je jouais avec mes parents le dimanche.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup-basic-title
+        type: heading
+        level: 4
+        text: Niveau débutant
+      - id: warmup-basic
+        type: discussionQuestions
+        items:
+          - question: Qu’as-tu fait hier après-midi ?
+            frame: Hier après-midi, j’ai… / je suis allé(e)…
+          - question: Qu’as-tu mangé au petit-déjeuner ?
+            frame: Au petit-déjeuner, j’ai mangé… et j’ai bu…
+          - question: Quel film as-tu vu récemment ?
+            frame: Récemment, j’ai vu…
+          - question: Qu’as-tu fait le week-end dernier ?
+            frame: Le week-end dernier, j’ai… / je suis allé(e)…
+          - question: Avec qui as-tu parlé hier ?
+            frame: Hier, j’ai parlé avec…
+          - question: Qu’as-tu acheté la dernière fois que tu as fait du shopping ?
+            frame: La dernière fois, j’ai acheté…
+      - id: warmup-inter-title
+        type: heading
+        level: 4
+        text: Niveau intermédiaire
+      - id: warmup-inter
+        type: discussionQuestions
+        items:
+          - question: Que faisais-tu généralement le dimanche quand tu étais enfant ?
+            frame: Quand j’étais enfant, le dimanche, je…
+          - question: Quelle musique écoutais-tu à 10 ans ?
+            frame: À 10 ans, j’écoutais…
+          - question: Comment était ton école ?
+            frame: Mon école était…
+          - question: Quel a été ton dernier voyage ? Où es-tu allé(e) ?
+            frame: Mon dernier voyage, c’était… Je suis allé(e) à / en…
+          - question: Quelle a été l’activité la plus amusante du mois dernier ?
+            frame: L’activité la plus amusante du mois dernier a été…
+          - question: Comment était ton quartier quand tu étais petit(e) ?
+            frame: Quand j’étais petit(e), mon quartier était…
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Entretien personnel'
+        skills: ['Je, tu, il / elle au passé', Les temps du passé]
+        steps:
+          - En binômes, l’élève A pose des questions de la liste ci-dessous (option A ou B).
+          - L’élève B répond à la première personne (*je*).
+          - Inversez les rôles.
+          - En groupe, présente ton / ta partenaire à la troisième personne (*il / elle*).
+        example: |-
+          *A : Où es-tu né(e) ?*
+          *B : Je suis né à Haïfa.*
+          *Mon camarade est né à Haïfa et hier, il a mangé des pâtes.*
+      - id: act1-levels
+        type: callout
+        tone: info
+        title: Selon le niveau
+        text: |-
+          **Option A – Niveau débutant :** pose 3 ou 4 questions simples. En groupe, présente **2 faits** sur ton / ta partenaire.
+          **Option B – Niveau intermédiaire :** pose des questions sur ses expériences et ses habitudes passées. En groupe, fais un mini-compte-rendu de **4 ou 5 phrases**, avec le passé composé et l’imparfait. *Mon camarade est né à Haïfa, son voyage préféré, c’était en Italie, et quand il était enfant, il jouait au football tous les jours.*
+      - id: act1-basic
+        type: discussionQuestions
+        title: 'Option A – Niveau débutant : questions suggérées'
+        items:
+          - question: Où es-tu né(e) ?
+            frame: Je suis né(e) à…
+          - question: Où as-tu grandi ?
+            frame: J’ai grandi à…
+          - question: Qu’as-tu mangé hier ?
+            frame: Hier, j’ai mangé…
+          - question: Qu’as-tu regardé à la télé la semaine dernière ?
+            frame: La semaine dernière, j’ai regardé…
+          - question: Qu’as-tu fait le week-end dernier ?
+            frame: Le week-end dernier, j’ai…
+      - id: act1-inter
+        type: discussionQuestions
+        title: 'Option B – Niveau intermédiaire : questions suggérées'
+        items:
+          - question: Quel a été ton voyage préféré ? (passé composé)
+          - question: Quelle a été l’activité la plus amusante du mois dernier ? (passé composé)
+          - question: Qu’as-tu acheté récemment ? (passé composé)
+          - question: Que faisais-tu pendant ton temps libre quand tu étais enfant ? (imparfait)
+            frame: Je jouais au football et je regardais des dessins animés.
+          - question: Quelle musique écoutais-tu quand tu étais jeune ? (imparfait)
+          - question: Comment était ton école ? (imparfait)
+          - question: Où vivais-tu avant ? (imparfait)
+          - question: Comment était ton meilleur ami / ta meilleure amie d’enfance ? (imparfait)
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Quelle est la question ?'
+        skills: ['Je, tu, il / elle au passé']
+        steps:
+          - Lis la phrase au passé (ci-dessous ou à l’écran).
+          - Invente la question qui correspond.
+          - Les autres élèves proposent d’autres questions possibles.
+        example: |-
+          Phrase : *Hier, j’ai mangé du pain et j’ai bu du café au petit-déjeuner.*
+          Question : *Qu’as-tu pris au petit-déjeuner hier ?*
+          Autre question possible : *Quand as-tu pris ton petit-déjeuner ?*
+      - id: act2-variants
+        type: callout
+        tone: info
+        title: Variantes
+        text: |-
+          **Jeu rapide en binômes :** un élève lit la phrase, l’autre invente la question le plus vite possible.
+          **Compétition en groupe :** le groupe qui invente le plus de questions différentes en 1 minute gagne.
+          **Compte-rendu :** quelques élèves lisent leurs questions à voix haute.
+      - id: act2-basic
+        type: discussionQuestions
+        title: Niveau débutant
+        items:
+          - question: Hier, j’ai pris un café au petit-déjeuner.
+            frame: 'Question : ___ ?'
+          - question: Samedi, je suis allé(e) au supermarché.
+            frame: 'Question : ___ ?'
+          - question: La semaine dernière, j’ai vu un film à la maison.
+            frame: 'Question : ___ ?'
+          - question: Le week-end dernier, j’ai cuisiné des pâtes.
+            frame: 'Question : ___ ?'
+          - question: Hier, j’ai parlé avec mon meilleur ami.
+            frame: 'Question : ___ ?'
+      - id: act2-inter
+        type: discussionQuestions
+        title: Niveau intermédiaire
+        items:
+          - question: Le mois dernier, j’ai acheté un téléphone.
+            frame: 'Question : ___ ?'
+          - question: Il y a trois jours, j’ai rendu visite à mes grands-parents.
+            frame: 'Question : ___ ?'
+          - question: Pendant mes vacances, je suis allé(e) en Espagne.
+            frame: 'Question : ___ ?'
+          - question: Le week-end dernier, j’ai joué au football avec mes amis.
+            frame: 'Question : ___ ?'
+          - question: L’année dernière, j’ai commencé une formation d’anglais.
+            frame: 'Question : ___ ?'
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Le journal d’hier'
+        skills: [Les temps du passé, 'Je, tu, il / elle au passé']
+        minutes: 22
+        steps:
+          - Écris des phrases sur ce que tu as fait hier (3 ou 4 phrases simples, ou 5 ou 6 phrases avec des marqueurs temporels).
+          - En binômes, échangez vos phrases. Ton / Ta partenaire pose une ou deux questions sur chaque phrase.
+          - En groupe, présente ce qu’a fait ton / ta partenaire, à la troisième personne.
+        example: |-
+          *Je suis allé au supermarché.* → *Qu’as-tu acheté ? Avec qui es-tu allé au supermarché ?*
+          *J’ai regardé une série.* → *Quelle série as-tu regardée ? L’as-tu aimée ?*
+          *Mon camarade a pris un café et est allé au supermarché.*
+      - id: act3-levels
+        type: callout
+        tone: info
+        title: Selon le niveau
+        text: |-
+          **Option A – Niveau débutant :** 3 ou 4 phrases simples (*Hier, j’ai pris un café. J’ai étudié le français l’après-midi. Je suis allé au supermarché.*). Une question par phrase. En groupe, 2 phrases sur ton / ta partenaire.
+          **Option B – Niveau intermédiaire :** 5 ou 6 phrases avec *hier, hier soir, le week-end dernier, il y a deux jours* (*Hier après-midi, je suis allé à la salle de sport. Il y a deux jours, j’ai dîné avec mes amis.*). Au moins deux questions par phrase. En groupe, un mini-compte-rendu de 4 ou 5 phrases : *Mon camarade est allé à la salle de sport, a dîné avec ses amis et le week-end dernier, il a étudié pour un examen.*
+          **Pour enrichir :** ajoute une description ou une habitude à l’imparfait. *Quand j’étais enfant, je dînais toujours avec ma famille. Avant, je vivais dans une autre ville, et hier, je suis retourné dans cette ville pour voir mes grands-parents.*
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Mon journal d’hier
+        items:
+          - question: Hier, ___.
+          - question: Hier soir, ___.
+          - question: Il y a deux jours, ___.
+          - question: Le week-end dernier, ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Quand j’étais enfant…'
+        skills: [Les temps du passé, 'Je, tu, il / elle au passé']
+        steps:
+          - Ton professeur pose une question et donne sa réponse.
+          - En binômes, posez les questions ci-dessous et répondez. Ton / Ta partenaire pose une question de suivi.
+          - En groupe, partage les réponses de ton / ta partenaire à la troisième personne.
+        example: |-
+          *Professeur : Où es-tu parti(e) pour la première fois en voyage ? Je suis parti(e) à Paris. Et toi ?*
+          *Mon camarade est parti en voyage pour la première fois à Paris.*
+          *Ma camarade jouait au basket, vivait dans un quartier avec beaucoup de parcs et écoutait toujours de la musique à la radio.*
+      - id: act4-basic
+        type: discussionQuestions
+        title: 'Option A – Niveau débutant : questions simples'
+        items:
+          - question: Où es-tu parti(e) pour la première fois en voyage ?
+            frame: Je suis parti(e) pour la première fois à / en…
+          - question: Qu’as-tu mangé d’inoubliable ?
+            frame: J’ai mangé…
+          - question: Quel a été ton premier film au cinéma ?
+            frame: Mon premier film au cinéma, c’était…
+      - id: act4-inter
+        type: discussionQuestions
+        title: 'Option B – Niveau intermédiaire : questions ouvertes (imparfait)'
+        items:
+          - question: Que faisais-tu pendant ton temps libre quand tu étais enfant ?
+            frame: 'Quand j’étais enfant, je… — Question de suivi : Où jouais-tu ?'
+          - question: Quelle musique écoutais-tu étant petit(e) ?
+            frame: 'J’écoutais… — Question de suivi : Avec qui écoutais-tu de la musique ?'
+          - question: Comment était ton école ?
+            frame: Mon école était…
+          - question: Comment était ton quartier ?
+            frame: Mon quartier était…
+          - question: Que faisais-tu avec ta famille le week-end ?
+            frame: Le week-end, avec ma famille, je…
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **les temps du passé** (passé composé et
+          imparfait) et **je, tu, il / elle au passé** (répondre à la 1ʳᵉ personne, poser
+          la question à la 2ᵉ, raconter à la 3ᵉ). Chaque activité a une option A
+          (débutants) et une option B (intermédiaires) : choisis celle de ton groupe.
+      - id: n-intro
+        anchor: intro-title
+        text: Choisis le modèle du niveau de ton groupe. Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup-title
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Bilan débutants : 1ʳᵉ personne (*Je suis né(e), j’ai mangé…*), 2ᵉ personne (*Où
+          es-tu né(e) ? Qu’as-tu mangé ?*), 3ᵉ personne (*Il est né, elle a mangé…*).
+          Bilan intermédiaires : *J’ai voyagé, quand j’étais enfant je jouais… / Qu’as-tu
+          fait ? Que faisais-tu quand… ? / Il a voyagé, elle jouait, il écoutait toujours
+          de la musique.*
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Corrigé (d’autres questions sont possibles). Débutants : *Qu’as-tu pris au
+          petit-déjeuner hier ? · Où es-tu allé(e) samedi ? · Qu’as-tu vu la semaine
+          dernière ? · Qu’as-tu cuisiné le week-end dernier ? · Avec qui as-tu parlé hier ?*
+          Intermédiaires : *Qu’as-tu acheté le mois dernier ? · À qui as-tu rendu visite il
+          y a trois jours ? · Où es-tu allé(e) pendant tes vacances ? · Quel sport as-tu
+          pratiqué le week-end dernier ? · Quelle formation as-tu commencée l’année
+          dernière ?*
+      - id: n-act3
+        anchor: act3
+        minutes: 22
+        text: >-
+          Option A : préparation 5 minutes, binômes 10 minutes, compte-rendu 5 minutes (20
+          minutes). Option B : préparation 5 minutes, binômes 10 minutes, compte-rendu 7
+          minutes (22 minutes). Bilan : *J’ai pris, je suis allé… / Qu’as-tu pris ? Où
+          es-tu allé ? / Il a pris, elle a étudié, il est allé…*
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Objectif : une conversation fluide sur l’enfance, avec le passé composé (faits
+          ponctuels) et l’imparfait (habitudes, descriptions). Commence par ta propre
+          réponse. Avec l’option B, chaque partenaire doit poser une question de suivi.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: ma-vie-passee-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-temps
+        type: ruleSummary
+        skill: Les temps du passé
+        rules:
+          - text: 'Le **passé composé** raconte des actions **ponctuelles et terminées**. Utilise-le pour une action unique, précise, terminée.'
+            examples:
+              - Hier, j’ai mangé une pizza.
+              - Samedi, je suis allé(e) au cinéma.
+              - La semaine dernière, j’ai vu un film.
+          - text: 'Formation : **avoir** ou **être** au présent + **participe passé**. Avec *être* (*aller, partir, naître, rentrer, retourner…*), le participe s’accorde avec le sujet.'
+            examples: [Il est né à Haïfa., Elle est allée au supermarché., J’ai bu un café.]
+          - text: 'L’**imparfait** sert pour les **habitudes** et les **descriptions** dans le passé. Terminaisons : **-ais, -ais, -ait, -ions, -iez, -aient** (*être* → *j’étais*).'
+            examples:
+              - Quand j’étais enfant, je jouais toujours au football.
+              - Mon quartier était très calme.
+              - À l’école, nous avions toujours des cours de musique.
+          - text: '**Dans un récit :** passé composé pour ce qui s’est passé, imparfait pour le contexte.'
+            examples:
+              - L’été dernier, je suis allé(e) à la plage (passé composé). La mer était très calme et il faisait chaud (imparfait).
+      - id: rules-personnes
+        type: ruleSummary
+        skill: Je, tu, il / elle au passé
+        rules:
+          - text: 'En classe, on utilise les trois personnes : **je** pour répondre, **tu** pour poser la question, **il / elle** pour raconter.'
+            examples:
+              - 'J’ai mangé une pizza. (1ʳᵉ personne)'
+              - 'Qu’as-tu mangé hier ? (2ᵉ personne, question)'
+              - 'Il a mangé une pizza hier. (3ᵉ personne, compte-rendu)'
+          - text: 'Questions fréquentes :'
+            examples:
+              - Qu’as-tu fait le mois dernier ? (passé composé)
+              - Que faisais-tu quand tu étais enfant ? (imparfait)
+              - Comment était ton école ? (imparfait)
+      - id: persons-table
+        type: table
+        caption: Je, tu, il / elle au passé
+        header: [Personne, avoir + participe, être + participe, imparfait]
+        rows:
+          - [je / j’, j’ai mangé, je suis allé(e), je jouais]
+          - [tu, tu as mangé, tu es allé(e), tu jouais]
+          - [il, il a mangé, il est allé, il jouait]
+          - [elle, elle a mangé, elle est allée, elle jouait]
+      - id: participles-table
+        type: table
+        caption: Participes passés irréguliers du cycle
+        header: [Infinitif, Participe passé]
+        rows:
+          - [boire, bu]
+          - [voir, vu]
+          - [lire, lu]
+          - [faire, fait]
+          - [connaître, connu]
+          - [perdre, perdu]
+          - [prendre, pris]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les règles avec le groupe et demande un nouvel exemple à la 1ʳᵉ, à la 2ᵉ et à la 3ᵉ personne.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: ma-vie-passee-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: basic-title
+        type: heading
+        level: 3
+        text: Niveau débutant
+      - id: mori-basic-1
+        type: aiTutorPrompt
+        title: 'Message 1 : Questions et réponses'
+        message: Bonjour Mori, je veux pratiquer le passé composé. Pose-moi 5 questions simples comme « Qu’as-tu fait hier ? » ou « Qu’as-tu mangé ? ». Je vais répondre. Corrige-moi si je me trompe.
+      - id: mori-basic-2
+        type: aiTutorPrompt
+        title: 'Message 2 : Mini-journal'
+        intro: 'Ensuite, écris tes phrases. Exemple : *Hier, je suis allé(e) au supermarché. Hier soir, j’ai regardé une série. Le week-end dernier, j’ai préparé une pizza. J’ai parlé avec mon ami au téléphone.*'
+        message: Bonjour Mori, je vais te raconter 4 choses que j’ai faites hier. Lis mes phrases et dis-moi si elles sont correctes. Ensuite, pose-moi une question sur chaque phrase.
+      - id: mori-basic-3
+        type: aiTutorPrompt
+        title: 'Message 3 : Compte-rendu à la troisième personne'
+        intro: 'Ensuite, écris tes phrases. Exemple : *Ma sœur a étudié pour un examen. Elle a mangé une salade. Elle a regardé un film.*'
+        message: Bonjour Mori, je vais te raconter ce qu’une personne de ma famille a fait hier, à la troisième personne. Dis-moi si c’est correct et pose-moi une question sur cette personne.
+      - id: inter-title
+        type: heading
+        level: 3
+        text: Niveau intermédiaire
+      - id: mori-inter-1
+        type: aiTutorPrompt
+        title: 'Message 1 : Interview'
+        intro: 'Exemple : Mori : *Quel a été ton voyage préféré ?* Toi : *Mon voyage préféré, c’était en Italie.* Mori : *Très bien. Est-ce qu’il faisait beau ?*'
+        message: Bonjour Mori, pose-moi 5 questions au passé, 3 au passé composé et 2 à l’imparfait. Après chaque réponse, corrige-moi et pose-moi une question de suivi.
+      - id: mori-inter-2
+        type: aiTutorPrompt
+        title: 'Message 2 : Mini-biographie'
+        intro: 'Ensuite, écris tes cinq phrases. Exemple : *Quand j’étais enfant, je vivais dans une petite ville. Je jouais toujours avec mes amis dans la rue. En 2005, j’ai voyagé à Madrid avec ma famille. Le voyage a été très amusant. Mon école était grande.*'
+        message: Bonjour Mori, je veux écrire une mini-biographie de mon enfance. Je vais te dire 5 phrases, 2 au passé composé et 3 à l’imparfait. Corrige mes erreurs et pose-moi une question sur mon enfance.
+      - id: mori-inter-3
+        type: aiTutorPrompt
+        title: 'Message 3 : Journal détaillé'
+        intro: 'Ensuite, écris tes phrases. Exemple : *Samedi, je suis allé(e) à la plage. Il faisait très chaud. Dimanche, j’ai dîné avec ma famille. La nourriture était délicieuse.*'
+        message: Bonjour Mori, je vais te raconter ce que j’ai fait la semaine dernière en 6 phrases. Pour chaque phrase, je vais ajouter un détail à l’imparfait. Corrige-moi si je me trompe et pose-moi une question sur une de mes phrases.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: ma-vie-passee-pratique
+    book: workbook
+    title: 'Pratique : Ma vie passée'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-passe
+        type: activity
+        activity: ma-vie-passee-passe
+      - id: ex-personnes
+        type: activity
+        activity: ma-vie-passee-personnes
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: ma-vie-passee-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de ma vie passée
+        glossLang: he
+        link: https://quizlet.com/il/1095438755/conversational-french-2025-ma-vie-passee-flash-cards/
+        items: &ma-vie-passee-words
+          - { term: Je suis allé(e) / Tu es allé(e) / Il est allé, gloss: הלכתי / הלכת / הלך }
+          - { term: J’ai mangé / Tu as mangé / Il a mangé, gloss: אכלתי / אכלת / אכל }
+          - { term: J’ai bu / Tu as bu / Il a bu, gloss: שתיתי / שתית / שתה }
+          - { term: J’ai vu / Tu as vu / Il a vu, gloss: ראיתי / ראית / ראה }
+          - { term: J’ai parlé / Tu as parlé / Il a parlé, gloss: דיברתי / דיברת / דיבר }
+          - { term: J’ai étudié / Tu as étudié / Il a étudié, gloss: למדתי / למדת / למד }
+          - { term: J’ai travaillé / Tu as travaillé / Il a travaillé, gloss: עבדתי / עבדת / עבד }
+          - { term: J’ai joué / Tu as joué / Il a joué, gloss: שיחקתי / שיחקת / שיחק }
+          - { term: J’ai écouté / Tu as écouté / Il a écouté, gloss: הקשבתי / הקשבת / הקשיב }
+          - { term: J’ai lu / Tu as lu / Il a lu, gloss: קראתי / קראת / קרא }
+          - { term: J’ai fait / Tu as fait / Il a fait, gloss: עשיתי / עשית / עשה }
+          - { term: J’ai connu / Tu as connu / Il a connu, gloss: הכרתי / הכרת / הכיר }
+          - { term: J’ai cuisiné / Tu as cuisiné / Il a cuisiné, gloss: בישלתי / בישלת / בישל }
+          - { term: J’ai acheté / Tu as acheté / Il a acheté, gloss: קניתי / קנית / קנה }
+          - { term: J’ai oublié / Tu as oublié / Il a oublié, gloss: שכחתי / שכחת / שכח }
+          - {
+              term: J’ai déménagé / Tu as déménagé / Il a déménagé,
+              gloss: עברתי דירה / עברת דירה / עבר דירה,
+            }
+          - { term: J’ai organisé / Tu as organisé / Il a organisé, gloss: ארגנתי / ארגנת / ארגן }
+          - { term: J’ai perdu / Tu as perdu / Il a perdu, gloss: איבדתי / איבדת / איבד }
+          - { term: J’étais / Tu étais / Il était, gloss: הייתי / היית / היה }
+          - { term: Hier, gloss: אתמול }
+          - { term: Hier soir, gloss: אתמול בערב }
+          - { term: Le week-end dernier, gloss: בסוף השבוע שעבר }
+          - { term: La semaine dernière, gloss: בשבוע שעבר }
+          - { term: Il y a deux jours, gloss: לפני יומיים }
+          - { term: L’année dernière, gloss: בשנה שעברה }
+          - { term: Quand j’étais enfant, gloss: כשהייתי ילד / ילדה }
+          - { term: Supermarché, gloss: סופרמרקט }
+          - { term: Restaurant, gloss: מסעדה }
+          - { term: Cinéma, gloss: קולנוע }
+          - { term: Plage, gloss: חוף ים }
+          - { term: Vacances, gloss: חופשה }
+          - { term: Film, gloss: סרט }
+          - { term: Anniversaire, gloss: יום הולדת }
+
+vocabulary:
+  - slug: ma-vie-passee
+    title: Ma vie passée
+    items: *ma-vie-passee-words
+
+activities:
+  - slug: ma-vie-passee-passe
+    title: 'Les temps du passé : j’ai vu, je jouais'
+    minutes: 8
+    items:
+      - id: semaine-film
+        type: multipleChoice
+        prompt: La semaine dernière, ___ un film.
+        options:
+          - { text: j’ai vu, correct: true }
+          - {
+              text: je voyais,
+              feedback: 'Une action unique et terminée, à un moment précis : on utilise le passé composé, *j’ai vu*.',
+            }
+          - {
+              text: je vois,
+              feedback: '*Je vois* est au présent. Avec *la semaine dernière*, on dit *j’ai vu*.',
+            }
+      - id: rue-jouais
+        type: multipleChoice
+        prompt: Quand j’étais enfant, je ___ toujours avec mes amis dans la rue.
+        options:
+          - { text: jouais, correct: true }
+          - {
+              text: ai joué,
+              feedback: '*Quand j’étais enfant* et *toujours* parlent d’une habitude : on utilise l’imparfait, *je jouais*.',
+            }
+          - {
+              text: joue,
+              feedback: '*Je joue* est au présent. Pour une habitude dans le passé, on dit *je jouais*.',
+            }
+      - id: avant-vivais
+        type: fillBlank
+        prompt: Complète avec le verbe *vivre* à l’imparfait.
+        text: Avant, je ___ dans une autre ville.
+        blanks: [[vivais]]
+      - id: ecole-avions
+        type: multipleChoice
+        prompt: À l’école, nous ___ toujours des cours de musique.
+        options:
+          - { text: avions, correct: true }
+          - {
+              text: avons eu,
+              feedback: '*Toujours* parle d’une habitude dans le passé : on utilise l’imparfait, *nous avions*.',
+            }
+          - {
+              text: avons,
+              feedback: '*Nous avons* est au présent. Pour une habitude à l’école, autrefois, on dit *nous avions*.',
+            }
+      - id: action-unique
+        type: trueFalse
+        prompt: 'Pour une action unique et terminée, on utilise l’imparfait : *Hier, je mangeais une pizza.*'
+        answer: false
+        feedback:
+          correct: 'Bravo ! Pour une action unique et terminée, on utilise le passé composé : *Hier, j’ai mangé une pizza.*'
+          incorrect: 'L’imparfait est pour les habitudes et les descriptions. Pour une action unique et terminée : *Hier, j’ai mangé une pizza.*'
+      - id: participes
+        type: matching
+        prompt: Associe chaque verbe à son participe passé.
+        pairs:
+          - [boire, bu]
+          - [lire, lu]
+          - [voir, vu]
+          - [connaître, connu]
+          - [perdre, perdu]
+      - id: diner-repas
+        type: fillBlank
+        prompt: Complète avec *dîner* au passé composé et *être* à l’imparfait.
+        text: Il y a deux jours, j’___ avec mes amis. Le repas ___ délicieux.
+        blanks: [[ai dîné], [était]]
+      - id: ordre-quartier
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Mon quartier était très calme.
+
+  - slug: ma-vie-passee-personnes
+    title: 'Je, tu, il / elle au passé'
+    minutes: 8
+    items:
+      - id: as-tu-mange
+        type: multipleChoice
+        prompt: Qu’___-tu mangé hier ?
+        options:
+          - { text: as, correct: true }
+          - {
+              text: ai,
+              feedback: '*Ai* est pour *je* (j’ai). Avec *tu*, on dit *as* : *Qu’as-tu mangé ?*',
+            }
+          - {
+              text: a,
+              feedback: '*A* est pour *il / elle*. Avec *tu*, on dit *as* : *Qu’as-tu mangé ?*',
+            }
+      - id: ne-haifa
+        type: multipleChoice
+        prompt: 'Raconte au groupe : Mon camarade ___ à Haïfa.'
+        options:
+          - { text: est né, correct: true }
+          - { text: a né, feedback: 'Le verbe *naître* se conjugue avec *être* : *il est né*.' }
+          - {
+              text: suis né,
+              feedback: '*Suis* est pour *je*. Pour *il* (mon camarade), on dit *est né*.',
+            }
+      - id: elle-etudie
+        type: fillBlank
+        prompt: 'Raconte à la troisième personne : *J’ai étudié le français.*'
+        text: Elle ___ le français.
+        blanks: [[a étudié]]
+      - id: tu-as-pris
+        type: fillBlank
+        prompt: Complète avec le verbe *prendre* au passé composé.
+        text: Tu ___ un café ce matin ?
+        blanks: [[as pris]]
+      - id: je-il
+        type: matching
+        prompt: Associe la forme avec *je* à la forme avec *il*.
+        pairs:
+          - [j’ai bu, il a bu]
+          - [je suis allé, il est allé]
+          - [j’étais, il était]
+          - [j’ai fait, il a fait]
+          - [je jouais, il jouait]
+      - id: accord-etre
+        type: trueFalse
+        prompt: 'Avec *être*, le participe passé s’accorde avec le sujet : *Elle est allée au cinéma.*'
+        answer: true
+        feedback:
+          correct: 'Bravo ! *Il est allé*, mais *elle est allée* (+ e).'
+          incorrect: 'Avec *être*, le participe s’accorde avec le sujet : *il est allé*, *elle est allée*.'
+      - id: faisais-tu
+        type: multipleChoice
+        prompt: Que ___-tu quand tu étais enfant ?
+        options:
+          - { text: faisais, correct: true }
+          - {
+              text: faisait,
+              feedback: '*Faisait* est pour *il / elle*. Avec *tu*, l’imparfait se termine en *-ais* : *faisais*.',
+            }
+          - { text: faisions, feedback: '*Faisions* est pour *nous*. Avec *tu*, on dit *faisais*.' }
+      - id: ordre-basket
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Ma camarade jouait au basket.
