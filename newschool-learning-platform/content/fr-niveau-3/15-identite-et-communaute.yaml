@@ -1,0 +1,657 @@
+# Cycle "Identité et communauté", converted from the French level 3 digital notebook
+# ("Cahier digital 2026 - français niveau 3", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-3
+slug: identite-et-communaute
+title: Identité et communauté
+goal: Faire des hypothèses avec si et le conditionnel, et raconter un changement au passé, au présent et au futur.
+position: 15
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Les hypothèses avec si" and "Raconter un changement")
+    are NEW: the notebook has no self-study exercises. They were written from the cycle's
+    summary rules, the activity examples and its vocabulary. Please check level, wording
+    and every right answer before students see them.
+  - >-
+    The notebook lists three skills: (1) phrases hypothétiques, (2) construction d’un
+    récit (passé, présent, futur), (3) argumentation et débat, comparaison, contraste et
+    justification. The cycle overview keeps the first two as the cycle's two skills; the
+    third is practised in Activities 2, 3 and 5 and keeps its own block in the summary
+    ("Argumenter et comparer").
+  - >-
+    Summary additions (please confirm): a short reminder of how to form the imparfait and
+    the conditionnel présent, with a table (avoir, être, changer, pouvoir); the rule "no
+    conditionnel right after si"; a comparison rule with a verb (verbe + plus / moins /
+    autant + que), because the source example "La communauté religieuse influence plus
+    que la communauté sportive" does not match the source structure "plus / moins +
+    adjectif + que"; the tenses for the narrative (imparfait for descriptions and habits,
+    passé composé for finished events, présent, futur simple).
+  - >-
+    Corrections: Mori model "pose-moi une question avec le deuxième conditionnel" →
+    "…une question avec une hypothèse (si + imparfait, conditionnel)" ("deuxième
+    conditionnel" is a calque of the English "second conditional"); Mori "Pourquoi on dit
+    si je changeais…" → "Pourquoi est-ce qu’on dit…"; Activity 5 "A mon avis" → "À mon
+    avis"; summary connector "comme preuve" → "la preuve, c’est que…"; summary "Dans 5
+    ans,  je travaillerai" (double space). Broken bold and italics marks ("**", "\*\*")
+    were removed throughout.
+  - >-
+    The Mori homework in the source is a list of example requests in five steps (ask for
+    questions, ask for corrections, ask for explanations, a model interaction, closing).
+    Steps 1–3 and 5 are now three messages to Mori; the model interaction is a dialogue
+    block. Please check the wording.
+  - >-
+    Left out: the "Date / Participants" lines and the "Réponse de l’élève 1/2/3" lines
+    (the platform has answer boxes). The warm-up questions had no sentence frames in the
+    source: frames were added. Activities 1, 2, 4 and 5 have optional phases (symbols,
+    "bouclier d’identité", life line, vote) that are kept as steps marked optional.
+  - >-
+    Times: Activity 1 5 + 7 + 20 + 10 + 5 = 47 min; Activity 2 5 + 10 + 10 + 10 + 5 = 40;
+    Activity 3 5 + 10 + 10 + 10 + 5 = 40; Activity 4 7 + 10 + 10 + 10 + 5 = 42; Activity
+    5 5 + 7 + 15 + 5 + 5 = 37. Each activity is almost a full lesson; the plan note asks
+    the teacher to choose. Ranges are recorded as the upper value (5–7 → 7, 15–20 → 20,
+    8–10 → 10).
+  - >-
+    Vocabulary: "Inclusion – הכללה" → "הכלה" (הכללה means generalisation); "Débat –
+    ויכוח" → "דיון / ויכוח". The header row "Français / Hébreu" was dropped. The
+    Quizlet link is kept without its tracking parameters (?i=…&x=…). Please confirm.
+  - >-
+    The intro example says "L’élément le plus important de mon identité, c’est ma
+    religion." It is kept as written (it is the teacher's own example, not a student's).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: identite-et-communaute-classe
+    title: 'Classe : Identité et communauté'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Identité et communauté
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Les hypothèses avec si
+            description: 'Si + imparfait, conditionnel présent (*Si cette communauté n’existait pas, ma vie serait différente.*)'
+          - name: 'Raconter un changement : passé, présent, futur'
+            description: '*Quand j’étais enfant… Aujourd’hui… Dans 5 ans, je…* avec des connecteurs temporels'
+      - id: quizlet
+        type: externalLink
+        label: Identité et communauté sur Quizlet
+        url: https://quizlet.com/il/1144782196/extreme-french-2026-identite-et-communaute-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. L’élément le plus important de mon identité, c’est ___.
+        example: Je m’appelle Lévanah. L’élément le plus important de mon identité, c’est ma religion.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: En plus de ton nom et de ta nationalité, qu’est-ce qui fait partie de ton identité ?
+            frame: En plus de mon nom et de ma nationalité, mon identité, c’est aussi…
+          - question: Quelles communautés existent dans ta ville ou ton pays et influencent ta manière de penser ? Est-ce que tu te sens membre de ces communautés ?
+            frame: Dans ma ville, il y a… Je me sens / Je ne me sens pas membre de… parce que…
+          - question: Parmi ces aspects — langue, culture, religion, travail, loisirs — lequel a le plus changé dans ta vie ? Pourquoi ?
+            frame: Ce qui a le plus changé, c’est… Avant…, mais maintenant…
+          - question: À quelles communautés appartiens-tu ?
+            frame: J’appartiens à la communauté de…
+          - question: Quel est le lien entre l’identité et la communauté ?
+            frame: À mon avis, l’identité et la communauté sont liées parce que…
+          - question: Penses-tu que la communauté change ton identité ou que ton identité change la communauté ? Explique avec un exemple.
+            frame: Je pense que… Par exemple, …
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Quel serait mon rôle ?'
+        skills: [Les hypothèses avec si]
+        minutes: 47
+        steps:
+          - '**Mes communautés (5 minutes) :** écris **3 communautés** auxquelles tu appartiens (famille, université, sport, religion, réseaux sociaux, quartier…). En binômes ou en trios, cherchez **une communauté en commun**.'
+          - '**Choix de la communauté et des rôles (7 minutes) :** la classe choisit ensemble **une communauté commune**. Ensuite, chacun choisit un rôle dans cette communauté.'
+          - '**Inventer une nouvelle communauté (20 minutes) :** en groupes de 3 ou 4, inventez une communauté imaginaire inspirée de vos expériences. Définissez ses **principes et valeurs** (que défend-elle ?), les **rôles** (qui fait quoi ?), les **événements** (quelles activités, dans quel but ?) et, si vous voulez, des **symboles** (drapeau, slogan, mascotte, logo).'
+          - '**Présentation (10 minutes) :** chaque groupe présente sa communauté en 3 points : 1. ce que c’est et ses valeurs ; 2. le rôle de chaque membre ; 3. les événements organisés et pourquoi. Optionnel : dessins, images, icônes.'
+          - '**Réflexion écrite (5 minutes) :** écris une mini-conclusion (voir les phrases ci-dessous).'
+        example: |-
+          *J’appartiens à la communauté de mon université parce que j’y étudie depuis deux ans.*
+          *Dans cette communauté, mon rôle serait d’organiser les événements parce que j’aime le contact avec les gens.*
+          *Si nous formions une communauté, nos valeurs seraient la solidarité et le respect.*
+      - id: act1-frames
+        type: discussionQuestions
+        title: Phrases modèles
+        items:
+          - question: Mes communautés
+            frame: J’appartiens à la communauté de… parce que… / Je me sens membre de… puisque…
+          - question: Mon rôle
+            frame: Dans cette communauté, mon rôle serait… parce que… / Je serais chargé(e) de… afin de…
+          - question: Notre communauté imaginaire
+            frame: Si nous formions une communauté, nous ferions partie de… / Nos valeurs seraient… parce que…
+          - question: Nos événements
+            frame: Nous organiserions des événements à… afin de… / Pendant cet événement, il y aurait… pour…
+          - question: Ma conclusion
+            frame: Si ma communauté existait vraiment, elle changerait ma vie parce que… / Le plus intéressant dans cette activité, c’était…
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Au-delà de mon identité'
+        skills: [Les hypothèses avec si]
+        minutes: 40
+        steps:
+          - '**Réflexion individuelle (5 minutes) :** écris **5 éléments** qui font partie de ton identité. Catégories possibles : langues, valeurs, goûts / intérêts, culture / nationalité, religion / croyances, profession / études, loisirs. *Une partie de mon identité, c’est… / Quelque chose d’essentiel chez moi, c’est…*'
+          - '**Comparaison en binômes (10 minutes) :** comparez vos listes. *Quels éléments de ton identité partages-tu avec moi ? Quel élément est unique chez toi ? Quel élément est le plus important et pourquoi ?* Utilisez des connecteurs : *de plus, cependant, au contraire, aussi, donc, c’est pourquoi…*'
+          - '**Mini-débat (10 minutes) :** en groupes de 3 ou 4. *Quels éléments identitaires sont universels (communs à tous) ? Quels éléments sont individuels ? Certains éléments peuvent-ils changer avec le temps ?*'
+          - '**Hypothèses (10 minutes) :** complète les phrases ci-dessous, puis partage à l’oral (en cercle ou en « speed sharing »).'
+          - '**Optionnel – identité visuelle (5 minutes) :** dessine un « bouclier d’identité » avec des symboles pour tes 5 éléments, puis présente-le : *Ce symbole représente ma passion pour… parce que…*'
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Mes hypothèses
+        items:
+          - question: Si je changeais de langue, ma vie serait différente parce que ___.
+          - question: Si je changeais mes valeurs, ma relation avec les autres serait ___.
+          - question: Si je changeais mes loisirs, je passerais plus de temps avec ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Communautés en conflit'
+        skills: [Les hypothèses avec si]
+        minutes: 40
+        steps:
+          - '**Brainstorming individuel (5 minutes) :** note 2 communautés qui influencent ta vie (famille, école, travail, religion, sport, réseaux sociaux, politique…). *Une communauté qui m’influence est… parce que… / Une autre communauté importante dans ma vie, c’est…*'
+          - '**Mise en commun (10 minutes) :** en groupes de 3 ou 4, partagez et choisissez 4 communautés principales. *Quelle communauté influence le plus ta vie personnelle ? Ta façon de penser ? Y a-t-il une communauté commune à tout le groupe ?*'
+          - '**Débat et contraste (10 minutes) :** comparez les communautés avec les phrases ci-dessous. Connecteurs : *cependant, en revanche, donc, de plus…*'
+          - '**Hypothèses (10 minutes) :** formule au moins deux hypothèses, puis partage à l’oral (« speed debate » : 1 minute par élève).'
+          - '**Mini-présentation (5 minutes) :** chaque groupe présente la communauté qui a le plus d’influence selon lui, une comparaison avec une autre communauté et une hypothèse sur ce qui se passerait si elle n’existait pas.'
+        example: |-
+          *La communauté religieuse influence plus que la communauté sportive parce qu’elle transmet des valeurs chaque jour.*
+          *En revanche, la communauté sportive influence seulement à certains moments.*
+          *Si cette communauté n’existait pas, la société serait moins solidaire.*
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Comparer et imaginer
+        items:
+          - question: La communauté ___ influence plus que ___ parce que ___.
+          - question: Alors que la communauté ___ nous aide à ___, la communauté ___ nous limite dans ___.
+          - question: À mon avis, ___ est plus important(e) que ___ parce que ___.
+          - question: Si cette communauté n’existait pas, ma vie serait ___.
+          - question: Si la communauté ___ avait moins de pouvoir, la société changerait parce que ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Récit de changement'
+        skills: ['Raconter un changement : passé, présent, futur']
+        minutes: 42
+        steps:
+          - '**Préparation individuelle (7 minutes) :** choisis un aspect (langue, culture, religion, travail, études, loisirs, valeurs…) et écris 3 phrases : **passé** (*Quand j’étais enfant…*), **présent** (*Aujourd’hui / Actuellement…*), **futur** (*Dans 5 ans, je pense que…*).'
+          - '**Développement du récit (10 minutes) :** ajoute des connecteurs. Passé : *quand j’avais…, je faisais souvent…, à cette époque…* Présent : *actuellement, en ce moment, encore…* Futur : *dans quelques années, probablement, j’espère que…* Phrases modèles : *Avant…, mais maintenant… / Aujourd’hui…, cependant dans le futur… / Si je pense à l’avenir, je crois que…*'
+          - '**Échange en binômes (10 minutes) :** raconte ton histoire. Ton / Ta partenaire pose 2 ou 3 questions : *Pourquoi as-tu changé… ? Qui a influencé ce changement ? Que ferais-tu si tu avais une autre opportunité ?*'
+          - '**Partage en petits groupes (10 minutes) :** en groupes de 3 ou 4, votez pour le changement le plus surprenant, le plus commun et le plus positif. Résumé à la classe : *Dans notre groupe, nous avons tous changé sur… mais dans le futur, nous voulons…*'
+          - '**Optionnel – ligne de vie (5 minutes) :** dessine une ligne du temps passé – présent – futur, avec une phrase pour chaque étape.'
+        example: |-
+          *Quand j’étais enfant, je parlais seulement hébreu.*
+          *Aujourd’hui, j’étudie l’anglais et l’espagnol.*
+          *Dans 5 ans, je pense que je travaillerai dans un autre pays.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Mon récit
+        items:
+          - question: Passé
+            frame: Quand j’étais enfant, … / À cette époque, …
+          - question: Présent
+            frame: Aujourd’hui, … / Actuellement, …
+          - question: Futur
+            frame: Dans 5 ans, je pense que… / J’espère que…
+      - id: act5
+        type: classActivity
+        title: 'Activité 5 : Mini-débat – identité ou communauté ?'
+        skills: [Les hypothèses avec si]
+        minutes: 37
+        steps:
+          - '**Préparation individuelle (5 minutes) :** note une idée pour chaque affirmation : *La communauté change l’identité parce que… / quand…* et *L’identité change la communauté parce que… / si…*'
+          - '**Équipes (7 minutes) :** **équipe A** : la communauté change l’identité ; **équipe B** : l’identité change la communauté. Chaque équipe prépare 3 arguments principaux et 1 exemple personnel ou réel.'
+          - '**Débat guidé (15 minutes) :** le professeur modère. Ouverture (1 minute par équipe) : *À mon avis, la communauté change l’identité parce que…* Réponse avec contraste : *Cependant, nous pensons que l’identité change la communauté quand…* Hypothèse obligatoire : *Si ma communauté était différente, je serais… / Si mon identité changeait, ma communauté changerait aussi…*'
+          - '**Règles :** 1 minute maximum par tour ; utilisez des connecteurs (*de plus, en revanche, cependant, donc…*).'
+          - '**Conclusion individuelle (5 minutes) :** écris tes deux phrases de conclusion (ci-dessous).'
+          - '**Optionnel – vote (5 minutes) :** votez pour l’argument le plus convaincant (autocollants, mains levées, sondage rapide).'
+        example: |-
+          *La communauté scolaire change l’identité parce que les élèves apprennent des valeurs communes.*
+          *Si ma communauté était plus ouverte, je serais plus tolérant(e).*
+      - id: act5-conclusion
+        type: discussionQuestions
+        title: Ma conclusion
+        items:
+          - question: Après le débat, je pense que ___.
+          - question: Ce que j’ai appris de plus important, c’est ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **les hypothèses avec si** (si + imparfait,
+          conditionnel présent ; activités 1, 2, 3 et 5) et **raconter un changement au
+          passé, au présent et au futur** (activité 4). Le cahier travaille aussi
+          l’**argumentation** : comparaison, contraste et justification avec des connecteurs
+          (activités 2, 3 et 5). Chaque activité dure presque un cours entier : choisis-en
+          une ou deux selon le temps et le groupe, et raccourcis les phases optionnelles.
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: >-
+          Deux phrases par élève, 30 secondes maximum par élève et pour toi. Si les élèves
+          se connaissent déjà, passe directement aux questions d’échauffement. Cette phase
+          ne dépasse pas 5 minutes.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Le sujet est personnel (religion, croyances) ; laisse chaque élève choisir ce qu’il veut partager.
+      - id: n-act1
+        anchor: act1
+        minutes: 47
+        text: >-
+          Objectifs : exprimer l’appartenance, parler des rôles sociaux, faire des hypothèses
+          au conditionnel, organiser et présenter à l’oral. Mes communautés 5 minutes, choix
+          des rôles 7, nouvelle communauté 20, présentation 10, réflexion écrite 5.
+      - id: n-act2
+        anchor: act2
+        minutes: 40
+        text: >-
+          Objectifs : décrire, comparer et justifier des éléments identitaires avec des
+          hypothèses (conditionnel irréel). Écris les catégories au tableau. Encourage les
+          connecteurs pendant la comparaison en binômes.
+      - id: n-act3
+        anchor: act3
+        minutes: 40
+        text: >-
+          Objectifs : réfléchir à l’influence des communautés, pratiquer le contraste, la
+          justification et le conditionnel irréel. Pendant le « speed debate », chronomètre
+          1 minute par élève.
+      - id: n-act4
+        anchor: act4
+        minutes: 42
+        text: >-
+          Objectif : utiliser le passé, le présent et le futur dans un récit cohérent avec
+          des connecteurs temporels. Vérifie l’imparfait pour les habitudes (*je parlais*),
+          le présent pour aujourd’hui et le futur simple pour les prévisions (*je
+          travaillerai*).
+      - id: n-act5
+        anchor: act5
+        minutes: 37
+        text: >-
+          Objectif : argumenter, contraster et utiliser des hypothèses. Modère le débat,
+          surveille le temps de parole (1 minute par tour) et vérifie que chaque équipe
+          formule au moins une hypothèse avec *si* + imparfait.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: identite-et-communaute-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-hypotheses
+        type: ruleSummary
+        skill: Les hypothèses avec si
+        rules:
+          - text: 'Structure : **Si + imparfait, conditionnel présent**.'
+            examples:
+              - Si j’avais plus de temps, j’apprendrais une autre langue.
+              - Si ma communauté était plus inclusive, il y aurait plus d’opportunités pour tout le monde.
+              - Si je changeais mes valeurs, ma vie serait très différente.
+          - text: 'On l’utilise pour parler d’une **situation imaginaire ou peu probable**, exprimer une **conséquence possible mais incertaine**, débattre et imaginer des communautés fictives.'
+          - text: 'Attention : **jamais de conditionnel juste après *si***. On dit *si je changeais*, pas *si je changerais*.'
+            examples: ['Si je changeais de langue, ma vie serait différente.']
+          - text: 'Formation : l’**imparfait** = radical de *nous* au présent + *-ais, -ais, -ait, -ions, -iez, -aient* (*être → j’étais*). Le **conditionnel présent** = radical du futur + les mêmes terminaisons (*avoir → j’aurais, être → je serais, pouvoir → je pourrais, faire → je ferais*).'
+          - text: 'Connecteurs utiles pour la conséquence :'
+            examples: ['alors, dans ce cas, par conséquent, donc, c’est pourquoi…']
+      - id: si-table
+        type: table
+        caption: Si + imparfait → conditionnel présent
+        header: [Verbe, Imparfait (après si), Conditionnel présent]
+        rows:
+          - [avoir, si j’avais, j’aurais]
+          - [être, si j’étais, je serais]
+          - [changer, si je changeais, je changerais]
+          - [pouvoir, si je pouvais, je pourrais]
+          - ['exister (il / elle)', si elle n’existait pas, elle existerait]
+      - id: rules-recit
+        type: ruleSummary
+        skill: 'Raconter un changement : passé, présent, futur'
+        rules:
+          - text: '**Passé :** l’**imparfait** pour décrire et parler des habitudes ; le **passé composé** pour une action terminée ou une durée fermée (*pendant 10 ans*).'
+            examples:
+              - J’ai habité à Paris pendant 10 ans.
+              - À cette époque, je jouais souvent dans un club sportif.
+              - Quand j’étais enfant, je parlais seulement hébreu.
+          - text: '**Présent :** ce qui est vrai aujourd’hui.'
+            examples:
+              - Aujourd’hui, j’étudie l’anglais et l’espagnol.
+              - Actuellement, j’appartiens à plusieurs communautés en ligne.
+          - text: '**Futur simple** (infinitif + *-ai, -as, -a, -ons, -ez, -ont*) : les prévisions et les projets.'
+            examples:
+              - Dans 5 ans, je travaillerai dans un autre pays.
+              - À l’avenir, ma communauté organisera plus d’événements culturels.
+          - text: 'Connecteurs temporels :'
+            examples:
+              - 'avant, à cette époque, aujourd’hui, actuellement, maintenant, dans quelques années, plus tard, dans le futur, probablement, j’espère que…'
+          - text: 'Phrases modèles :'
+            examples:
+              [
+                'Avant…, mais maintenant…, et dans le futur…',
+                'Si je pense à l’avenir, je crois que…',
+              ]
+      - id: rules-argumenter
+        type: ruleSummary
+        skill: Argumenter et comparer
+        rules:
+          - text: 'Comparer avec un **adjectif** : *plus / moins / aussi* + adjectif + *que*.'
+            examples: [L’identité personnelle est aussi importante que la communauté.]
+          - text: 'Comparer avec un **nom** : *plus de / moins de / autant de* + nom + *que*.'
+            examples: [J’ai autant de liens dans ma communauté que dans ma famille.]
+          - text: 'Comparer avec un **verbe** : verbe + *plus / moins / autant* + *que*.'
+            examples: [La communauté religieuse influence plus que la communauté sportive.]
+          - text: 'Connecteurs pour argumenter :'
+            examples:
+              - 'Contraste : cependant, en revanche, pourtant, même si, alors que'
+              - 'Ajout : de plus, aussi, en outre, par ailleurs'
+              - 'Exemple : par exemple, dans mon cas, la preuve, c’est que…'
+              - 'Conclusion : donc, par conséquent, en conclusion, finalement'
+          - text: 'Phrases modèles utiles :'
+            examples:
+              - Je suis… et l’élément le plus important de mon identité, c’est…
+              - J’appartiens à la communauté de… parce que…
+              - Dans cette communauté, mon rôle serait… parce que…
+              - Si cette communauté n’existait pas, ma vie serait…
+              - Après le débat, je pense que…
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les règles avec le groupe et demande à chaque élève une hypothèse avec *si* et un mini-récit en trois phrases (passé, présent, futur).
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: identite-et-communaute-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-questions
+        type: aiTutorPrompt
+        title: 'Message 1 : Mon identité et ma communauté'
+        message: Bonjour Mori, pose-moi des questions sur mon identité et ma communauté, une par une. Pose-moi des questions au passé, au présent et au futur. Corrige mes erreurs, s’il te plaît. Si je fais une faute, donne-moi la forme correcte et répète ma phrase corrigée pour que je puisse la répéter.
+      - id: mori-hypotheses
+        type: aiTutorPrompt
+        title: 'Message 2 : Les hypothèses avec si'
+        intro: 'Si tu ne comprends pas une correction, demande : *Mori, explique-moi pourquoi c’est faux.* / *Pourquoi est-ce qu’on dit « si je changeais » et pas « si je changerais » ?* / *Pourquoi on utilise l’imparfait ici ?*'
+        message: Bonjour Mori, pose-moi des questions avec une hypothèse (si + imparfait, conditionnel présent) sur mon identité et ma communauté. Si je fais une faute, donne-moi la forme correcte, explique-moi la règle et demande-moi de répéter la phrase corrigée.
+      - id: model-title
+        type: heading
+        level: 3
+        text: Modèle d’interaction
+      - id: model
+        type: dialogue
+        lines:
+          - {
+              speaker: Étudiant,
+              text: 'Mori, pose-moi une question avec une hypothèse (si + imparfait, conditionnel).',
+            }
+          - {
+              speaker: Mori,
+              text: 'Si tu pouvais changer un aspect de ton identité, que changerais-tu ?',
+            }
+          - { speaker: Étudiant, text: 'Si je changerais de langue, ma vie serait différente.' }
+          - {
+              speaker: Mori,
+              text: 'On ne dit pas *si je changerais*, on dit *si je changeais*. La structure est : *si + imparfait, conditionnel*. Répète : *Si je changeais de langue, ma vie serait différente.*',
+            }
+          - { speaker: Étudiant, text: 'Si je changeais de langue, ma vie serait différente.' }
+          - {
+              speaker: Mori,
+              text: 'Très bien. On utilise l’imparfait après *si* pour exprimer une hypothèse irréelle ou peu probable.',
+            }
+      - id: mori-closing
+        type: aiTutorPrompt
+        title: 'Message 3 : Clôture'
+        message: Mori, pose-moi une dernière question pour réviser. Ensuite, dis-moi si mon français aujourd’hui était meilleur, et donne-moi une phrase à répéter chez moi.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: identite-et-communaute-pratique
+    book: workbook
+    title: 'Pratique : Identité et communauté'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-hypotheses
+        type: activity
+        activity: identite-et-communaute-hypotheses
+      - id: ex-recit
+        type: activity
+        activity: identite-et-communaute-recit
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: identite-et-communaute-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de l’identité et de la communauté
+        glossLang: he
+        link: https://quizlet.com/il/1144782196/extreme-french-2026-identite-et-communaute-flash-cards/
+        items: &identite-et-communaute-words
+          - { term: Identité, gloss: זהות }
+          - { term: Communauté, gloss: קהילה }
+          - { term: Appartenance, gloss: שייכות }
+          - { term: Citoyenneté, gloss: אזרחות }
+          - { term: Inclusion, gloss: הכלה }
+          - { term: Exclusion, gloss: הדרה }
+          - { term: Minorité, gloss: מיעוט }
+          - { term: Majorité, gloss: רוב }
+          - { term: Représentation, gloss: ייצוג }
+          - { term: Stéréotype, gloss: סטריאוטיפ }
+          - { term: Préjugé, gloss: דעה קדומה }
+          - { term: Discrimination, gloss: אפליה }
+          - { term: Diversité, gloss: גיוון }
+          - { term: Multiculturalisme, gloss: רב־תרבותיות }
+          - { term: Idéologie, gloss: אידיאולוגיה }
+          - { term: Valeurs, gloss: ערכים }
+          - { term: Principes, gloss: עקרונות }
+          - { term: Croyances, gloss: אמונות }
+          - { term: Influence, gloss: השפעה }
+          - { term: Pouvoir, gloss: כוח }
+          - { term: Hiérarchie, gloss: היררכיה }
+          - { term: Égalité, gloss: שוויון }
+          - { term: Justice, gloss: צדק }
+          - { term: Solidarité, gloss: סולידריות }
+          - { term: Droits, gloss: זכויות }
+          - { term: Responsabilité, gloss: אחריות }
+          - { term: Engagement, gloss: מחויבות }
+          - { term: Leadership, gloss: מנהיגות }
+          - { term: Rôle, gloss: תפקיד }
+          - { term: Conflit, gloss: סכסוך }
+          - { term: Débat, gloss: דיון / ויכוח }
+          - { term: Contraste, gloss: ניגוד }
+          - { term: Comparaison, gloss: השוואה }
+          - { term: Hypothèse, gloss: השערה }
+          - { term: Conséquence, gloss: תוצאה }
+          - { term: Récit / narration, gloss: נרטיב / סיפור }
+          - { term: Perspective, gloss: נקודת מבט }
+          - { term: Constitution, gloss: חוקה }
+
+vocabulary:
+  - slug: identite-et-communaute
+    title: Identité et communauté
+    items: *identite-et-communaute-words
+
+activities:
+  - slug: identite-et-communaute-hypotheses
+    title: 'Les hypothèses avec si : si + imparfait, conditionnel'
+    minutes: 8
+    items:
+      - id: avais
+        type: multipleChoice
+        prompt: Si j’___ plus de temps, j’apprendrais une autre langue.
+        options:
+          - { text: avais, correct: true }
+          - {
+              text: aurais,
+              feedback: '*Aurais* est au conditionnel. Jamais de conditionnel après *si* : on dit *si j’avais*.',
+            }
+          - {
+              text: ai,
+              feedback: '*Ai* est au présent. Avec *apprendrais* (conditionnel), on met l’imparfait après *si* : *si j’avais*.',
+            }
+      - id: aurait
+        type: fillBlank
+        prompt: Complète avec *il y a* au conditionnel présent (verbe *avoir*).
+        text: Si ma communauté était plus inclusive, il y ___ plus d’opportunités pour tout le monde.
+        blanks: [[aurait]]
+      - id: changerais
+        type: trueFalse
+        prompt: 'Cette phrase est correcte : *Si je changerais de langue, ma vie serait différente.*'
+        answer: false
+        feedback:
+          correct: 'Bravo ! Après *si*, on met l’imparfait : *Si je changeais de langue, ma vie serait différente.*'
+          incorrect: 'Attention : jamais de conditionnel après *si*. On dit : *Si je changeais de langue, ma vie serait différente.*'
+      - id: existait
+        type: fillBlank
+        prompt: Complète avec le verbe *exister* à l’imparfait.
+        text: Si cette communauté n’___ pas, la société serait moins solidaire.
+        blanks: [[existait]]
+      - id: passerais
+        type: multipleChoice
+        prompt: Si je changeais mes loisirs, je ___ plus de temps avec mes amis.
+        options:
+          - { text: passerais, correct: true }
+          - {
+              text: passerai,
+              feedback: '*Passerai* est au futur. Après *si* + imparfait, on utilise le conditionnel : *je passerais*.',
+            }
+          - {
+              text: passais,
+              feedback: '*Passais* est à l’imparfait. L’imparfait va après *si* ; dans l’autre partie, on met le conditionnel : *je passerais*.',
+            }
+      - id: conditionnel-formes
+        type: matching
+        prompt: Associe chaque verbe à sa forme au conditionnel présent.
+        pairs:
+          - [avoir, j’aurais]
+          - [être, je serais]
+          - [faire, je ferais]
+          - [pouvoir, je pourrais]
+          - [changer, je changerais]
+      - id: phrase-correcte
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - {
+              text: 'Si je pouvais changer un aspect de mon identité, je changerais ma langue.',
+              correct: true,
+            }
+          - {
+              text: 'Si je pourrais changer un aspect de mon identité, je changerais ma langue.',
+              feedback: 'Après *si*, pas de conditionnel : on dit *si je pouvais*.',
+            }
+          - {
+              text: 'Si je pouvais changer un aspect de mon identité, je changerai ma langue.',
+              feedback: '*Changerai* est au futur. Après *si* + imparfait, on met le conditionnel : *je changerais*.',
+            }
+      - id: ordre-tolerant
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Si ma communauté était plus ouverte, je serais plus tolérant.
+
+  - slug: identite-et-communaute-recit
+    title: 'Raconter un changement : passé, présent, futur'
+    minutes: 8
+    items:
+      - id: parlais
+        type: multipleChoice
+        prompt: Quand j’étais enfant, je ___ seulement hébreu.
+        options:
+          - { text: parlais, correct: true }
+          - {
+              text: parlerai,
+              feedback: '*Parlerai* est au futur. Pour une habitude dans le passé (*quand j’étais enfant*), on utilise l’imparfait : *je parlais*.',
+            }
+          - {
+              text: parle,
+              feedback: '*Parle* est au présent. *Quand j’étais enfant* parle du passé : *je parlais*.',
+            }
+      - id: travaillerai
+        type: fillBlank
+        prompt: Complète avec le verbe *travailler* au futur simple.
+        text: Dans 5 ans, je pense que je ___ dans un autre pays.
+        blanks: [[travaillerai]]
+      - id: connecteur-futur
+        type: multipleChoice
+        prompt: Quel connecteur parle du futur ?
+        options:
+          - { text: dans quelques années, correct: true }
+          - {
+              text: à cette époque,
+              feedback: '*À cette époque* parle du passé (*À cette époque, je jouais…*). Pour le futur : *dans quelques années*.',
+            }
+          - {
+              text: actuellement,
+              feedback: '*Actuellement* parle du présent. Pour le futur : *dans quelques années*.',
+            }
+      - id: temps
+        type: matching
+        prompt: Associe chaque forme à son temps.
+        pairs:
+          - [je parlais, imparfait]
+          - [j’étudie, présent]
+          - [je travaillerai, futur simple]
+          - [j’ai habité, passé composé]
+          - [je serais, conditionnel présent]
+      - id: habitude
+        type: trueFalse
+        prompt: 'Pour une habitude dans le passé (*À cette époque, je jouais souvent dans un club sportif.*), on utilise l’imparfait.'
+        answer: true
+        feedback:
+          correct: 'Bravo ! L’imparfait décrit les habitudes et le contexte dans le passé : *je jouais souvent*.'
+          incorrect: 'Si : pour une habitude dans le passé, on utilise l’imparfait. *À cette époque, je jouais souvent dans un club sportif.*'
+      - id: jouais
+        type: fillBlank
+        prompt: Complète avec le verbe *jouer* à l’imparfait.
+        text: Avant, je ___ souvent au football, mais maintenant je fais du yoga.
+        blanks: [[jouais]]
+      - id: appartiens
+        type: multipleChoice
+        prompt: Aujourd’hui, j’___ à plusieurs communautés en ligne.
+        options:
+          - { text: appartiens, correct: true }
+          - {
+              text: appartenais,
+              feedback: '*Appartenais* est à l’imparfait. Avec *aujourd’hui*, on utilise le présent : *j’appartiens*.',
+            }
+          - {
+              text: appartiendrai,
+              feedback: '*Appartiendrai* est au futur. Avec *aujourd’hui*, on utilise le présent : *j’appartiens*.',
+            }
+      - id: ordre-pays
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Dans quelques années, je travaillerai dans un autre pays.
