@@ -22,6 +22,7 @@ import * as rooms from '../functions/api/staff/rooms.js';
 import * as room from '../functions/api/staff/room.js';
 import * as bookings from '../functions/api/staff/bookings.js';
 import * as booking from '../functions/api/staff/booking.js';
+import * as training from '../functions/api/staff/training.js';
 
 const ROUTES = {
   'POST /api/staff/auth/login': login.onRequestPost,
@@ -80,6 +81,10 @@ export default {
 
     const handler = ROUTES[request.method + ' ' + path];
     if (handler) return handler({ request, env });
+
+    /* Teacher onboarding has its own router — some forty routes that would
+       otherwise crowd this table. Same session, same guards. */
+    if (path.startsWith(training.PREFIX)) return training.handle(request, env, path);
 
     const byId = userRoute(request.method, path) || itemRoute(request.method, path);
     if (byId) return byId.fn({ request, env, params: { id: byId.id } });
