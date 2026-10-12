@@ -64,7 +64,7 @@ export async function loadStoredItems(
   );
   const ids = items.map((i) => i.id);
   const none = ['00000000-0000-0000-0000-000000000000'];
-  const [keys, answers] = await Promise.all([
+  const [keys, answers, counted] = await Promise.all([
     must(
       'keys',
       db
@@ -72,6 +72,8 @@ export async function loadStoredItems(
         .select('item_id, answer, feedback')
         .in('item_id', ids.length ? ids : none),
     ),
+    // The answers the caller can read (all of them for the manager and the
+    // import's secret key; only their own students' for a teacher)…
     must(
       'answers',
       db
@@ -79,10 +81,22 @@ export async function loadStoredItems(
         .select('item_id')
         .in('item_id', ids.length ? ids : none),
     ),
+    // …and every answer, counted by the database for anyone who may edit
+    // the exercise (app.answered_item_ids), so a teacher's editor locks a
+    // question another group answered.
+    must(
+      'answered items',
+      db.from('activity_answered_items').select('item_id, answers').eq('activity_id', activityId),
+    ),
   ]);
   const keyOf = new Map(keys.map((k) => [k.item_id, k]));
   const answered = new Map<string, number>();
   for (const a of answers) answered.set(a.item_id, (answered.get(a.item_id) ?? 0) + 1);
+  for (const c of counted) {
+    if (c.item_id && (c.answers ?? 0) > (answered.get(c.item_id) ?? 0)) {
+      answered.set(c.item_id, c.answers ?? 0);
+    }
+  }
   return {
     items: items.map((i) => ({
       ...i,

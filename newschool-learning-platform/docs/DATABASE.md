@@ -40,23 +40,23 @@ user_roles      courses                      enrollments           section_progr
 
 ### Catalog — what the school teaches
 
-| Table                   | Key columns                                                                                            | Notes                                                                                                             |
-| ----------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| `languages`             | id, code (BCP 47: `es`, `he`, `ar`…), name, **direction** (`ltr`/`rtl`)                                | The language being _taught_.                                                                                      |
-| `levels`                | id, language_id, code, title, position, cefr (nullable)                                                | "Level 1".                                                                                                        |
-| `courses`               | id, level_id, slug, title, description, **instruction_locale**, status, published_at                   | A concrete course ("Español básico 2025"). `instruction_locale` = language of the explanations (usually `he`).    |
-| `cycles`                | id, course_id, slug, title, communicative_goal, position, status                                       | Communicative topic ("Food"). `position` is only the _suggested_ order — groups choose what's active.             |
-| `books`                 | id, course_id, **kind** (`notebook`/`workbook`), title                                                 | One notebook and one workbook per course (more kinds later, e.g. `teacher_guide`).                                |
-| `book_sections`         | id, book_id, cycle_id, position, title, **blocks** jsonb, schema_version, phase, status                | The content. `blocks` validated against the block schema ([CONTENT-MODEL.md](CONTENT-MODEL.md)).                  |
-| `section_teacher_notes` | section_id, blocks jsonb                                                                               | Teacher-only content, in its own table so it **cannot** leak with a student query (RLS can't filter inside JSON). |
-| `activities`            | id, course_id, cycle_id, slug, title, instructions jsonb, **phase**, scoring_mode, est_minutes, status | Any interactive unit: workbook exercise, in-notebook question, homework.                                          |
-| `activity_items`        | id, activity_id, position, **type**, prompt jsonb, data jsonb, points                                  | One question. `data` is type-specific and **public** (options, gaps, tokens — each with a stable id).             |
-| `activity_item_keys`    | item_id, answer jsonb, feedback jsonb                                                                  | Correct answers. **No student access, ever.** Teachers and managers may read them.                                |
-| `skills`                | id, code (`vocab.food`, `grammar.past_simple`, `listening`), label                                     | Taxonomy that drives recommendations and "topics to revisit".                                                     |
-| `activity_skills`       | activity_id, skill_id                                                                                  | Many-to-many.                                                                                                     |
-| `vocabulary_sets`       | id, course_id, cycle_id, title                                                                         | Per-cycle word lists.                                                                                             |
-| `vocabulary_items`      | id, set_id, position, term, gloss, example, notes, audio_asset_id, image_asset_id, attrs jsonb         | `attrs` holds language-specific grammar (gender, plural, verb class) without a column per language.               |
-| `media_assets`          | id, bucket, path, kind, mime, bytes, duration_s, alt_text, transcript, source/licence, created_by      | Every file in Storage. Content blocks refer to assets by id, never by URL.                                        |
+| Table                   | Key columns                                                                                                                                                                                   | Notes                                                                                                             |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `languages`             | id, code (BCP 47: `es`, `he`, `ar`…), name, **direction** (`ltr`/`rtl`)                                                                                                                       | The language being _taught_.                                                                                      |
+| `levels`                | id, language_id, code, title, position, cefr (nullable)                                                                                                                                       | "Level 1".                                                                                                        |
+| `courses`               | id, level_id, slug, title, description, **instruction_locale**, status, published_at                                                                                                          | A concrete course ("Español básico 2025"). `instruction_locale` = language of the explanations (usually `he`).    |
+| `cycles`                | id, course_id, slug, title, communicative_goal, position, status                                                                                                                              | Communicative topic ("Food"). `position` is only the _suggested_ order — groups choose what's active.             |
+| `books`                 | id, course_id, **kind** (`notebook`/`workbook`), title                                                                                                                                        | One notebook and one workbook per course (more kinds later, e.g. `teacher_guide`).                                |
+| `book_sections`         | id, book_id, cycle_id, position, title, **blocks** jsonb, schema_version, phase, status                                                                                                       | The content. `blocks` validated against the block schema ([CONTENT-MODEL.md](CONTENT-MODEL.md)).                  |
+| `section_teacher_notes` | section_id, blocks jsonb                                                                                                                                                                      | Teacher-only content, in its own table so it **cannot** leak with a student query (RLS can't filter inside JSON). |
+| `activities`            | id, course_id, cycle_id, slug, title, instructions jsonb, **phase**, scoring_mode, est_minutes, status, created_by (null = curriculum; else the teacher or office user who wrote it, ADR-038) | Any interactive unit: workbook exercise, in-notebook question, homework.                                          |
+| `activity_items`        | id, activity_id, position, **type**, prompt jsonb, data jsonb, points                                                                                                                         | One question. `data` is type-specific and **public** (options, gaps, tokens — each with a stable id).             |
+| `activity_item_keys`    | item_id, answer jsonb, feedback jsonb                                                                                                                                                         | Correct answers. **No student access, ever.** Teachers and managers may read them.                                |
+| `skills`                | id, code (`vocab.food`, `grammar.past_simple`, `listening`), label                                                                                                                            | Taxonomy that drives recommendations and "topics to revisit".                                                     |
+| `activity_skills`       | activity_id, skill_id                                                                                                                                                                         | Many-to-many.                                                                                                     |
+| `vocabulary_sets`       | id, course_id, cycle_id, title                                                                                                                                                                | Per-cycle word lists.                                                                                             |
+| `vocabulary_items`      | id, set_id, position, term, gloss, example, notes, audio_asset_id, image_asset_id, attrs jsonb                                                                                                | `attrs` holds language-specific grammar (gender, plural, verb class) without a column per language.               |
+| `media_assets`          | id, bucket, path, kind, mime, bytes, duration_s, alt_text, transcript, source/licence, created_by                                                                                             | Every file in Storage. Content blocks refer to assets by id, never by URL.                                        |
 
 Enums: `content_status` = `draft | in_review | published | archived`;
 `phase` = `before_class | during_class | after_class | review | optional`;
@@ -167,6 +167,32 @@ privileged client after checking access with the student's own session (ADR-006)
 latest answer, first-try score), never keys. A partial unique index allows one open
 (`in_progress`) attempt per student and activity. `activity_items.slug` gives items a
 stable identity for imports.
+
+Exercises written by staff (Phase 8, migration `…1800_staff_exercises`, ADR-038):
+`activities.created_by` is null for the school curriculum (manager-only, unchanged) and
+otherwise names the teacher or office user who wrote the exercise; it is set once, in the
+author's own name, and never changed (trigger `app.activities_created_by`).
+
+| Helper                               | True when                                                                                                                                                                                                                   |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `app.can_author_activity(course)`    | caller teaches a group of the course, or is the office (MFA)                                                                                                                                                                |
+| `app.can_edit_activity(activity)`    | manager (MFA); or a staff exercise the caller wrote and may still author in its course; or, for the office, one written by any office user                                                                                  |
+| `app.can_edit_item(item)`            | `can_edit_activity` of the item's exercise                                                                                                                                                                                  |
+| `app.can_view_staff_activity(…row…)` | the author; the office (office-written in any status, others once published); teachers of the course once published; a student only through an assignment they can see (their group, or them by name) in a published course |
+| `app.answered_item_ids(activity)`    | rows only for callers who may edit the exercise: every answered item, whoever answered it                                                                                                                                   |
+
+- `activities`: staff insert only with `created_by = auth.uid()` and `can_author_activity`;
+  update only what `can_edit_activity` allows; no delete (archived instead).
+  `activities_select` = manager, or curriculum `published` in a visible cycle, or
+  `can_view_staff_activity` — so a staff exercise never reaches a whole course.
+- `activity_items` (select follows the parent row as before), `activity_item_keys`
+  (students still read none) and `activity_sources`: staff write through
+  `can_edit_activity` / `can_edit_item`.
+- The office (MFA) reads published courses and cycles, reads all assignments, inserts
+  assignments for any group in its own name, and updates or deletes only its own.
+- Views for the editor (no functions in `public`): `editable_activities` (ids the caller
+  may edit) and `activity_answered_items` (over `app.answered_item_ids`), both
+  `security_barrier`, select-only, no `anon` access.
 
 Note the admin column: **admin is not a superset of everything.** Admin manages accounts
 and settings; seeing student learning data requires the pedagogical role (a person can

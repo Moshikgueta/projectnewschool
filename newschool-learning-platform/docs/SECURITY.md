@@ -146,6 +146,23 @@ nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Polic
 - ☑ No guardian or parent details are collected until the minors question (ROADMAP D7) is
   answered.
 
+### Exercises written by staff — Phase 8 (ADR-038)
+
+- ☑ Teachers (courses they teach) and the office (MFA, any course) write exercises with
+  their own session; the database checks every write (`app.can_author_activity`,
+  `app.can_edit_activity`). An exercise is written in its author's own name and its
+  author never changes (trigger). Teachers cannot edit each other's exercises or the
+  curriculum; nobody but the manager (MFA) edits the curriculum; nothing is deleted.
+- ☑ **Students see a staff exercise only through an assignment they can see** (to their
+  group, or to them by name), not because they are in its course. Its questions follow
+  it; its answer keys stay unreadable for students. A student of another group gets
+  nothing from the API and a 404 from the app for its page or attempt (pgTAP, API and
+  E2E tests), the same as for a page that does not exist.
+- ☑ The office assigns to any group in its own name and can remove only what it
+  assigned. Teachers still assign only to their own groups.
+- ☑ Which questions have answers is counted by `app.answered_item_ids`, which returns
+  nothing to anyone who may not edit the exercise, so answer counts are not exposed.
+
 ### Rate limiting — Phases 1 & 4
 
 - ☐ Auth endpoints: Supabase Auth's built-in limits (tightened), plus CAPTCHA
@@ -223,6 +240,9 @@ the API call" attack exactly.
   a student opening any teacher view → 404.
 - Student B's answer request rewritten in flight to carry student A's attempt id →
   refused, and nothing is written to A's attempt (checked in the database).
+- A staff exercise assigned only to group X: a student of another group (same course or
+  not) opening `/learn/activities/<id>` → 404, and it is absent from their practice
+  list; a teacher who did not write it opening its editor → 404.
 
 **Answer keys (Phase 4)** — beyond "students can't read `activity_item_keys`": the
 public part of an exercise must not give the answer away either. An API test signs in

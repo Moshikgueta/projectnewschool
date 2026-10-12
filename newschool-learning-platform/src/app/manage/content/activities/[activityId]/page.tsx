@@ -2,6 +2,7 @@ import type { Metadata, Route } from 'next';
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { z } from 'zod';
+import { saveActivityContent } from '@/server/actions/cms';
 import { requireArea } from '@/server/auth/session';
 import { getActivityForEdit } from '@/server/queries/cms';
 import { ButtonLink } from '@/ui/Button';
@@ -75,6 +76,7 @@ export default async function ActivityEditorPage({
           yaml={activity.yaml}
           courseLang={activity.courseLang}
           answered={activity.answered}
+          saveAction={saveActivityContent}
         />
       </Section>
     </div>

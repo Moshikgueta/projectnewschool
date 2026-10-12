@@ -44,7 +44,8 @@ registry of New School components, so new courses need no code changes. Full det
 
 ```
 src/
-  app/        routes: (auth) · learn/ (student) · teach/ (teacher) · manage/ (ped. manager) · admin/
+  app/        routes: / (entry: student or staff sign-in) · (auth) · learn/ (student) · teach/ (teacher,
+              incl. exercises/) · office/ (incl. exercises/) · manage/ (ped. manager) · admin/
   server/     auth guards, queries, Server Actions, privileged/ (only place with the secret key)
   domain/     pure TypeScript: grading, recommendations, progress, spaced review
   content/    block schemas, block renderers, exercise engine            (Phase 3)

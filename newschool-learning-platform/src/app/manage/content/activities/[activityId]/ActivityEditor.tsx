@@ -12,7 +12,7 @@ import {
 } from '@/content/activity-editor';
 import { NotebookView } from '@/content/render/NotebookView';
 import { solutionOf } from '@/domain/grading/solution';
-import { saveActivityContent, type EditorState } from '@/server/actions/cms';
+import type { EditorState } from '@/server/actions/cms';
 import { Alert } from '@/ui/Alert';
 import { Button } from '@/ui/Button';
 import { Badge } from '@/ui/Card';
@@ -25,7 +25,9 @@ const initial: EditorState = { status: 'idle' };
  * content files. Both edit the same document; it is checked as it changes,
  * with a preview of each question and its right answer. Questions students
  * have answered are marked: their options and answers are locked (the server
- * and the database refuse such changes).
+ * and the database refuse such changes). `saveAction` is the area's own save
+ * (the manager's in /manage, the teacher's or the office's for their
+ * exercises, ADR-038), each with its own guard.
  */
 export function ActivityEditor({
   activityId,
@@ -34,6 +36,7 @@ export function ActivityEditor({
   yaml,
   courseLang,
   answered,
+  saveAction,
 }: {
   activityId: string;
   activitySlug: string;
@@ -41,6 +44,7 @@ export function ActivityEditor({
   yaml: string;
   courseLang: string;
   answered: Record<string, number>;
+  saveAction: (prev: EditorState, formData: FormData) => Promise<EditorState>;
 }) {
   const t = useTranslations('cms.activity');
   const ts = useTranslations('cms.section');
@@ -51,7 +55,7 @@ export function ActivityEditor({
   );
   const [text, setText] = useState(yaml);
   const [switchProblem, setSwitchProblem] = useState(false);
-  const [state, action, pending] = useActionState(saveActivityContent, initial);
+  const [state, action, pending] = useActionState(saveAction, initial);
   const deferredText = useDeferredValue(text);
   const deferredDoc = useDeferredValue(doc);
   const result = useMemo(

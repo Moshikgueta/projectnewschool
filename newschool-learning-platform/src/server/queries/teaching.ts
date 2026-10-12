@@ -35,6 +35,8 @@ export type GroupOverview = {
   /** Classes that have started, latest first, with how many students are marked. */
   pastClasses: { id: string; startsAt: string; marked: number; students: number }[];
   activities: { id: string; title: string; cycleId: string; phase: string }[];
+  /** Published activities of the course to assign: the curriculum's and exercises staff wrote. */
+  assignable: { id: string; title: string; cycleId: string; byStaff: boolean }[];
   assignments: {
     id: string;
     title: string;
@@ -123,7 +125,7 @@ export async function getGroupOverview(
       .limit(5),
     supabase
       .from('activities')
-      .select('id, title, cycle_id, phase, created_at')
+      .select('id, title, cycle_id, phase, created_at, created_by, status')
       .eq('course_id', courseId)
       .order('created_at'),
     supabase
@@ -196,6 +198,12 @@ export async function getGroupOverview(
   }
 
   const state = new Map(groupCycles.data!.map((g) => [g.cycle_id, g.state]));
+  // Exercises staff wrote (ADR-038) belong to this group only once assigned
+  // to it; until then they are only offered in the "assign" list.
+  // (A teacher also sees their own drafts; only published ones count here.)
+  const assignedHere = new Set(assignments.data!.map((a) => a.activity_id));
+  const published = activities.data!.filter((a) => a.status === 'published');
+  const groupActivities = published.filter((a) => a.created_by === null || assignedHere.has(a.id));
   const activeCycleIds = new Set(
     groupCycles.data!.filter((g) => g.state === 'active').map((g) => g.cycle_id),
   );
@@ -215,7 +223,7 @@ export async function getGroupOverview(
 
   const summaries = studentSummaries(everyone, {
     activeCycleActivityIds: new Set(
-      activities.data!.filter((a) => activeCycleIds.has(a.cycle_id)).map((a) => a.id),
+      groupActivities.filter((a) => activeCycleIds.has(a.cycle_id)).map((a) => a.id),
     ),
     submitted,
     tries: firstTries,
@@ -272,11 +280,17 @@ export async function getGroupOverview(
         .length,
       students: markable.length,
     })),
-    activities: activities.data!.map((a) => ({
+    activities: groupActivities.map((a) => ({
       id: a.id,
       title: a.title,
       cycleId: a.cycle_id,
       phase: a.phase,
+    })),
+    assignable: published.map((a) => ({
+      id: a.id,
+      title: a.title,
+      cycleId: a.cycle_id,
+      byStaff: a.created_by !== null,
     })),
     assignments: assignments.data!.map((a) => ({
       id: a.id,

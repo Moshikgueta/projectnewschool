@@ -100,6 +100,17 @@
     "noAccess": {
       "title": "Your account is not set up yet",
       "body": "You are signed in, but no course or role has been assigned to this account. Please contact the school office."
+    },
+    "entry": {
+      "metaTitle": "Welcome",
+      "title": "Welcome to New School",
+      "intro": "Choose how to sign in.",
+      "student": "Student login",
+      "studentHint": "With the entry code your teacher gave you.",
+      "studentEmail": "Students with an email and password",
+      "studentEmailLink": "sign in here",
+      "staff": "Staff login",
+      "staffHint": "Teachers, office and management: email and password."
     }
   },
   "learn": {
@@ -292,7 +303,8 @@
       "attendanceNone": "Not taken yet",
       "markedCount": "{marked} of {total} marked",
       "attendanceLink": "Attendance",
-      "attendanceFor": "Attendance for {date}"
+      "attendanceFor": "Attendance for {date}",
+      "byStaff": "staff exercise"
     },
     "forms": {
       "saved": "Saved.",
@@ -1249,6 +1261,59 @@
       "questionId": "Question id (keeps its answers linked):",
       "questionType": "Question type",
       "addQuestion": "Add question"
+    }
+  },
+  "exercises": {
+    "nav": "Exercises",
+    "list": {
+      "titleTeach": "My exercises",
+      "titleOffice": "Exercises",
+      "subtitleTeach": "Write your own exercises for the courses you teach, then assign them to your groups. Students get them as soon as they are assigned.",
+      "subtitleOffice": "Exercises written by the office, for any course. Assign them to any group; students get them as soon as they are assigned.",
+      "newTitle": "New exercise",
+      "newName": "Title",
+      "cycle": "Course and cycle",
+      "create": "Create exercise",
+      "noCycles": "There is no published course to write in yet.",
+      "listTitle": "Exercises",
+      "empty": "No exercises yet",
+      "emptyHint": "Create one above: it starts as a draft with one example question.",
+      "updated": "Updated {date}"
+    },
+    "edit": {
+      "back": "Back to {list}",
+      "statusTitle": "Status",
+      "statusDraft": "Draft: only staff see it. Publish it to assign it to a group.",
+      "statusPublished": "Published: groups it is assigned to see it now.",
+      "statusArchived": "Archived: hidden from students, kept with their answers.",
+      "publish": "Publish",
+      "unpublish": "Back to draft",
+      "archive": "Archive",
+      "restore": "Restore as draft",
+      "details": "Details",
+      "assignTitle": "Groups and homework",
+      "noAssignments": "Not assigned to any group yet.",
+      "publishFirst": "Publish the exercise to assign it to a group.",
+      "noGroups": "There is no open group in this course to assign it to.",
+      "assignHint": "Students of the group see it in their homework right away.",
+      "group": "Group",
+      "dueDate": "Due date (optional)",
+      "note": "Note for students (optional)",
+      "assignButton": "Assign",
+      "due": "Due {date}",
+      "noDue": "No due date",
+      "remove": "Remove",
+      "removeLabel": "Remove the homework of {group}"
+    },
+    "messages": {
+      "saved": "Saved.",
+      "invalid": "Check the form and try again.",
+      "notAllowed": "You can’t change this exercise.",
+      "failed": "Could not save. Try again.",
+      "conflict": "Someone saved this exercise after you opened it. Copy your changes, reload the page and apply them again.",
+      "problems": "Fix the problems below, then save.",
+      "past": "Choose a date in the future.",
+      "notPublished": "Publish the exercise first."
     }
   }
 }

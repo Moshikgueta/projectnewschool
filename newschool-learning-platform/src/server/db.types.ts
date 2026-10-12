@@ -25,16 +25,40 @@ export type Database = {
           Tables: {
             "activities": {
                   Row: {
-                    "course_id": string,"created_at": string,"cycle_id": string,"est_minutes": number | null,"id": string,"instructions": NonNullable<Json>,"phase": Database["public"]['Enums']["learning_phase"],"scoring_mode": Database["public"]['Enums']["scoring_mode"],"slug": string,"status": Database["public"]['Enums']["content_status"],"title": string,"updated_at": string
+                    "course_id": string,"created_at": string,"created_by": string | null,"cycle_id": string,"est_minutes": number | null,"id": string,"instructions": NonNullable<Json>,"phase": Database["public"]['Enums']["learning_phase"],"scoring_mode": Database["public"]['Enums']["scoring_mode"],"slug": string,"status": Database["public"]['Enums']["content_status"],"title": string,"updated_at": string
                   }
                   Insert: {
-                    "course_id": string,"created_at"?: string,"cycle_id": string,"est_minutes"?: number | null,"id"?: string,"instructions"?: NonNullable<Json>,"phase"?: Database["public"]['Enums']["learning_phase"],"scoring_mode"?: Database["public"]['Enums']["scoring_mode"],"slug": string,"status"?: Database["public"]['Enums']["content_status"],"title": string,"updated_at"?: string
+                    "course_id": string,"created_at"?: string,"created_by"?: string | null,"cycle_id": string,"est_minutes"?: number | null,"id"?: string,"instructions"?: NonNullable<Json>,"phase"?: Database["public"]['Enums']["learning_phase"],"scoring_mode"?: Database["public"]['Enums']["scoring_mode"],"slug": string,"status"?: Database["public"]['Enums']["content_status"],"title": string,"updated_at"?: string
                   }
                   Update: {
-                    "course_id"?: string,"created_at"?: string,"cycle_id"?: string,"est_minutes"?: number | null,"id"?: string,"instructions"?: NonNullable<Json>,"phase"?: Database["public"]['Enums']["learning_phase"],"scoring_mode"?: Database["public"]['Enums']["scoring_mode"],"slug"?: string,"status"?: Database["public"]['Enums']["content_status"],"title"?: string,"updated_at"?: string
+                    "course_id"?: string,"created_at"?: string,"created_by"?: string | null,"cycle_id"?: string,"est_minutes"?: number | null,"id"?: string,"instructions"?: NonNullable<Json>,"phase"?: Database["public"]['Enums']["learning_phase"],"scoring_mode"?: Database["public"]['Enums']["scoring_mode"],"slug"?: string,"status"?: Database["public"]['Enums']["content_status"],"title"?: string,"updated_at"?: string
                   }
                   Relationships: [
                     {
+      foreignKeyName: "activities_created_by_fkey"
+      columns: ["created_by"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "activities_created_by_fkey"
+      columns: ["created_by"]
+isOneToOne: false
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "activities_created_by_fkey"
+      columns: ["created_by"]
+isOneToOne: false
+      referencedRelation: "task_assignees"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "activities_created_by_fkey"
+      columns: ["created_by"]
+isOneToOne: false
+      referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    },{
       foreignKeyName: "activities_cycle_id_course_id_fkey"
       columns: ["cycle_id","course_id"]
 isOneToOne: false
@@ -97,6 +121,18 @@ isOneToOne: false
 isOneToOne: false
       referencedRelation: "activities"
       referencedColumns: ["id"]
+    },{
+      foreignKeyName: "activity_skills_activity_id_fkey"
+      columns: ["activity_id"]
+isOneToOne: false
+      referencedRelation: "activity_answered_items"
+      referencedColumns: ["activity_id"]
+    },{
+      foreignKeyName: "activity_skills_activity_id_fkey"
+      columns: ["activity_id"]
+isOneToOne: false
+      referencedRelation: "editable_activities"
+      referencedColumns: ["activity_id"]
     },{
       foreignKeyName: "activity_skills_skill_id_fkey"
       columns: ["skill_id"]
@@ -680,6 +716,18 @@ isOneToOne: false
 isOneToOne: false
       referencedRelation: "activities"
       referencedColumns: ["id"]
+    },{
+      foreignKeyName: "learning_events_activity_id_fkey"
+      columns: ["activity_id"]
+isOneToOne: false
+      referencedRelation: "activity_answered_items"
+      referencedColumns: ["activity_id"]
+    },{
+      foreignKeyName: "learning_events_activity_id_fkey"
+      columns: ["activity_id"]
+isOneToOne: false
+      referencedRelation: "editable_activities"
+      referencedColumns: ["activity_id"]
     },{
       foreignKeyName: "learning_events_course_id_fkey"
       columns: ["course_id"]
@@ -1618,7 +1666,27 @@ isOneToOne: false
                 }
           }
           Views: {
-            "office_students": {
+            "activity_answered_items": {
+                  Row: {
+                    "activity_id": string | null,"answers": number | null,"item_id": string | null
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"editable_activities": {
+                  Row: {
+                    "activity_id": string | null
+                  }
+                  Insert: {
+                           "activity_id"?: string | null
+                         }
+                        Update: {
+                           "activity_id"?: string | null
+                         }
+                        Relationships: [
+                    
+                  ]
+                },"office_students": {
                   Row: {
                     "created_at": string | null,"display_name": string | null,"id": string | null
                   }

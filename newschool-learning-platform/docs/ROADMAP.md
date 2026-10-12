@@ -230,7 +230,7 @@ stages: [STAFF-ROOM-MERGE.md](STAFF-ROOM-MERGE.md).
 - [ ] Cut-over: the domain points here, the Worker shows "we have moved", D1 read-only
       for 30 days, then archived and deleted
 
-### Phase 8 — Pedagogical CMS _(page and exercise editing implemented locally)_
+### Phase 8 — Pedagogical CMS _(page and exercise editing, staff exercises implemented locally)_
 
 Status 2026-10-07:
 
@@ -255,7 +255,16 @@ Status 2026-10-07:
 - [x] Form editor for exercise questions (ADR-037): a form per question type, add,
       duplicate, reorder and remove questions, answered questions locked; YAML view kept;
       5 unit tests, 1 more end-to-end test
-- [ ] Media upload; teacher proposals with manager approval; page history view
+- [x] Teacher and office exercises (ADR-038, decided by the school owner 2026-10-12):
+      teachers (in the courses they teach) and the office (MFA, any course) write
+      exercises in the same editor, publish them and assign them to groups; students get
+      them once assigned, and only then (never the whole course); the pedagogical manager
+      sees and edits everything. No approval step: this replaces "teacher proposals with
+      manager approval". 47 pgTAP, 1 API, 3 end-to-end (including the signed-out entry
+      page and a student of another group getting a 404), 3 unit tests
+- [x] One site, two ways in: signed-out visitors to `/` choose student sign-in (entry
+      code, with a link to email sign-in) or staff sign-in
+- [ ] Media upload; page history view
 
 Planned scope:
 

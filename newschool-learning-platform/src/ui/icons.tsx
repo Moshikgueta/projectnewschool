@@ -12,10 +12,12 @@ import {
   ChatCircleText,
   ClipboardText,
   Door,
+  Exam,
   Gear,
   House,
   ListChecks,
   NotePencil,
+  Student,
   Toolbox,
   Translate,
   UsersThree,
@@ -37,6 +39,8 @@ export const ICONS = {
   feedback: ChatCircleText,
   tasks: ListChecks,
   resources: BookBookmark,
+  exercises: Exam,
+  student: Student,
 } as const;
 
 export type IconName = keyof typeof ICONS;

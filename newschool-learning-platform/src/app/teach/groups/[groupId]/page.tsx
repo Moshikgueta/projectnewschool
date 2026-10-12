@@ -115,14 +115,14 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
                 ))}
               </ul>
             )}
-            {group.activities.length ? (
+            {group.assignable.length ? (
               <Card>
                 <h3 className="mb-3 font-semibold">{t('assign')}</h3>
                 <AssignForm
                   groupId={group.id}
-                  activities={group.activities.map((a) => ({
+                  activities={group.assignable.map((a) => ({
                     id: a.id,
-                    label: `${cycleTitle.get(a.cycleId) ?? ''} · ${a.title}`,
+                    label: `${cycleTitle.get(a.cycleId) ?? ''} · ${a.title}${a.byStaff ? ` (${t('byStaff')})` : ''}`,
                   }))}
                 />
               </Card>

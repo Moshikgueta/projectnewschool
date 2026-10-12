@@ -60,7 +60,7 @@ export function NavLinks({
         {items.map((item) => {
           const current = isCurrent(pathname, item.href, item.href === root);
           return (
-            <li key={item.href} className="flex-1">
+            <li key={item.href} className="min-w-0 flex-1">
               <Link
                 href={item.href}
                 aria-current={current ? 'page' : undefined}

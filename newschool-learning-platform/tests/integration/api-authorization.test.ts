@@ -288,3 +288,99 @@ describe('exercise editing, through the API', () => {
     });
   }
 });
+
+describe('exercises written by a teacher (ADR-038), through the API', () => {
+  const EXERCISE = 'e1000000-0000-4000-8000-0000000000a1';
+  const ITEM = 'e2000000-0000-4000-8000-0000000000a1';
+  const CYCLE = '40000000-0000-4000-8000-000000000001';
+  const TEACHER_X = '00000000-0000-4000-8000-0000000000b1';
+  const secret = process.env.SUPABASE_SECRET_KEY ?? '';
+  const cleanup = () =>
+    createClient<Database>(url, secret, { auth: { persistSession: false } })
+      .from('activities')
+      .delete()
+      .eq('id', EXERCISE);
+
+  beforeAll(async () => {
+    expect(secret, 'SUPABASE_SECRET_KEY must be set for this test’s clean-up').not.toBe('');
+    await cleanup();
+  });
+  afterAll(async () => {
+    await cleanup();
+  });
+
+  it('reach only the students of the group they are assigned to', async () => {
+    const tx = await signedIn('teacher.x@example.com');
+    const created = await tx.from('activities').insert({
+      id: EXERCISE,
+      course_id: IDS.courseSpanish,
+      cycle_id: CYCLE,
+      slug: 'api-staff-exercise',
+      title: 'API: staff exercise',
+      created_by: TEACHER_X,
+      status: 'published',
+    });
+    expect(created.error).toBeNull();
+    const item = await tx.from('activity_items').insert({
+      id: ITEM,
+      activity_id: EXERCISE,
+      course_id: IDS.courseSpanish,
+      position: 1,
+      slug: 'q1',
+      type: 'trueFalse',
+      prompt: [{ id: 'prompt', type: 'text', text: '¿Verdadero?' }],
+      data: {},
+    });
+    expect(item.error).toBeNull();
+    const key = await tx
+      .from('activity_item_keys')
+      .insert({ item_id: ITEM, course_id: IDS.courseSpanish, answer: { value: true } });
+    expect(key.error).toBeNull();
+
+    // Published but not assigned: no student sees it.
+    const a = await signedIn('student.a@example.com');
+    const c = await signedIn('student.c@example.com');
+    expect((await a.from('activities').select('id').eq('id', EXERCISE)).data).toEqual([]);
+
+    const assigned = await tx.from('assignments').insert({
+      group_id: IDS.groupX,
+      course_id: IDS.courseSpanish,
+      activity_id: EXERCISE,
+      assigned_by: TEACHER_X,
+    });
+    expect(assigned.error).toBeNull();
+
+    // Student A (group X) now sees it and its question, never the answer.
+    expect((await a.from('activities').select('id').eq('id', EXERCISE)).data).toHaveLength(1);
+    expect((await a.from('activity_items').select('id').eq('id', ITEM)).data).toHaveLength(1);
+    expect((await a.from('activity_item_keys').select('item_id').eq('item_id', ITEM)).data).toEqual(
+      [],
+    );
+
+    // Student C (not in group X) gets nothing by id, and cannot plant
+    // homework for themselves to get it.
+    expect((await c.from('activities').select('id').eq('id', EXERCISE)).data).toEqual([]);
+    expect((await c.from('activity_items').select('id').eq('id', ITEM)).data).toEqual([]);
+    expect((await c.from('assignments').select('id').eq('activity_id', EXERCISE)).data).toEqual([]);
+    const planted = await c.from('assignments').insert({
+      group_id: 'a0000000-0000-4000-8000-000000000002',
+      course_id: '30000000-0000-4000-8000-000000000002',
+      activity_id: '70000000-0000-4000-8000-000000000003',
+      assigned_by: '00000000-0000-4000-8000-0000000000a3',
+    });
+    expect(planted.error?.code).toBe('42501');
+    expect((await c.from('editable_activities').select('activity_id')).data).toEqual([]);
+    expect((await c.from('activity_answered_items').select('item_id')).data).toEqual([]);
+
+    // Teacher Y cannot change it.
+    const ty = await signedIn('teacher.y@example.com');
+    const changed = await ty
+      .from('activities')
+      .update({ title: 'Taken over' })
+      .eq('id', EXERCISE)
+      .select('id');
+    expect(changed.data ?? []).toEqual([]);
+
+    for (const s of [tx, a, c, ty]) await s.auth.signOut();
+  });
+});

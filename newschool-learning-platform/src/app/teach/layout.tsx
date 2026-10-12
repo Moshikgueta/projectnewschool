@@ -16,6 +16,7 @@ export default async function TeachLayout({ children }: { children: ReactNode })
       languageAction={setInterfaceLanguage}
       nav={[
         { href: '/teach', label: t('teach.nav.groups'), icon: 'groups' },
+        { href: '/teach/exercises', label: t('exercises.nav'), icon: 'exercises' },
         { href: '/teach/timetable', label: t('teach.nav.timetable'), icon: 'timetable' },
         { href: '/teach/tools', label: t('staff.nav.tools'), icon: 'tools' },
       ]}

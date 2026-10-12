@@ -153,7 +153,8 @@ export async function assignActivity(_prev: ManageState, formData: FormData): Pr
 
   const { supabase, group } = await taughtGroup(parsed.data.groupId);
   if (!group) return message('notAllowed');
-  // Only published activities of this group's course (teachers cannot read drafts).
+  // Only published activities of this group's course (teachers cannot read
+  // drafts), the curriculum's or exercises staff wrote for it (ADR-038).
   const { data: activity } = await supabase
     .from('activities')
     .select('id, phase')
@@ -173,6 +174,7 @@ export async function assignActivity(_prev: ManageState, formData: FormData): Pr
     assigned_by: user.id,
   });
   if (error) return message(error.code === '42501' ? 'notAllowed' : 'failed');
+  revalidatePath(`/teach/exercises/${activity.id}` as Route);
   return done(group.id);
 }
 
@@ -188,6 +190,8 @@ export async function removeAssignment(formData: FormData): Promise<void> {
     .eq('id', assignmentId.data)
     .eq('group_id', groupId.data);
   revalidatePath(`/teach/groups/${groupId.data}` as Route);
+  // Also removable from the exercise's own page (/teach/exercises/…).
+  revalidatePath('/teach/exercises', 'layout');
 }
 
 export type CodeState =
