@@ -1,0 +1,584 @@
+# Cycle "Occasions spéciales - passé", converted from the French level 2 digital notebook
+# ("Cahier digital 2025 - français niveau 2", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-2
+slug: occasions-speciales-passe
+title: 'Occasions spéciales : le passé'
+goal: Raconter une occasion spéciale au passé composé et à l’imparfait, et poser des questions au passé.
+position: 6
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Le passé composé et l'imparfait" and "Questions au
+    passé") are NEW: the notebook has no self-study exercises. They were written from
+    the cycle's two skills, its summary rules, the activity examples and its
+    vocabulary. Please check level, wording and every right answer before students
+    see them.
+  - >-
+    Summary: the formation of the passé composé and the participle rules are written
+    in Hebrew in the notebook; they are translated into French here, like the rest of
+    the student text. The notebook says "avoir ou être" but never says which verbs
+    take être: a rule was added (aller, venir, arriver, partir, sortir, naître,
+    mourir… and the pronominal verbs like se lever take être, and the participle
+    agrees with the subject: elle est allée, ils sont venus). Please confirm.
+  - >-
+    Summary, participles: "naitre" → "naître"; "clore = close" → "clore → clos"
+    ("close" is the feminine form). The rare verbs clore, inclure and joindre are
+    kept in the table for the -os / -us / -int endings, but without their Hebrew
+    glosses (לסגור, לכלול, לצרף…); rire, suivre and sourire also lost theirs. Please
+    say if you want the glosses back, or the rare verbs removed.
+  - >-
+    Summary: skill 1 is "le passé composé et l'imparfait", but the notebook never
+    explains the imparfait. A short rule was added from the cycle's own examples
+    (c'était très amusant, combien de personnes étaient présentes): the imparfait
+    describes (c'était, il y avait, j'étais). Skill 2 ("poser des questions au
+    passé") has no rule either: one was added from the activity questions (Où as-tu
+    célébré… ? Quel cadeau as-tu reçu ? Es-tu allé(e)… ?). The broken markdown of the
+    summary headings ("\*\*Quand utiliser…\*\*") was cleaned.
+  - >-
+    Corrections: warm-up 6 "un événement qui t'a rendu heureux/heureuse" → "qui t'a
+    rendu(e) heureux / heureuse" (agreement with the preceding object t'); Activity 4
+    "Quels cadeaux as-tu reçu ?" → "reçus" (same rule); Activity 5 "Quel moment
+    spécial te souviens-tu ?" → "De quel moment spécial te souviens-tu ?"; Activity
+    1 "était-ce (…)?" → "était-ce… ?"; Mori "Mes amis m'achète un cadeau" →
+    "m'achètent"; vocabulary "Aller (je suis allé)" → "je suis allé(e)".
+  - >-
+    The notebook gives no plan saying which activity practises which skill, and no
+    times, so no minutes are set. The plan note suggests one mapping (passé composé
+    and imparfait: Activities 2, 3 and 4; questions: Activities 1 and 5), made by the
+    converter from the activity content. Please confirm. Activity 5 needs character
+    cards (singer, actor, footballer, chef…) prepared by the teacher; they are not in
+    the notebook.
+  - >-
+    Mori: the five tasks are written in the notebook as an instruction plus "Mori doit
+    demander / me rappeler…". Each is now one message the student sends, with the
+    questions and reminders inside it. The tips callout was added.
+  - >-
+    Vocabulary: "La semaine dernière – שבוע שעבר" → "בשבוע שעבר"; "L'année dernière –
+    שנה שעברה" → "בשנה שעברה" (the French is an adverb of time). Please confirm. The
+    Quizlet link is kept without its tracking parameters (?i=…&x=…). The "Réponse de
+    l'élève 1/2/3" lines are replaced by the optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: occasions-speciales-passe-classe
+    title: 'Classe : Occasions spéciales (passé)'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: 'Occasions spéciales : le passé'
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Le passé composé et l’imparfait
+            description: '*J’ai fêté mon anniversaire. Mes amis sont venus. C’était très amusant.*'
+          - name: Poser des questions au passé
+            description: '*Quel cadeau as-tu reçu ? Où as-tu célébré ton anniversaire ?*'
+      - id: quizlet
+        type: externalLink
+        label: 'Occasions spéciales : passé sur Quizlet'
+        url: https://quizlet.com/il/1096120119/conversational-french-2025-occasions-speciales-passe-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        prompt: Dis ton prénom, puis complète une des phrases.
+        frame: |-
+          Je m’appelle ___.
+          L’année dernière, j’ai célébré ___.
+          La dernière fois que je suis allé(e) à une fête, j’ai ___.
+          Je me souviens de ___ (une occasion spéciale) parce que ___.
+        example: Je m’appelle Lévanah. L’année dernière, j’ai célébré l’anniversaire de mariage de mes parents.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quel cadeau as-tu reçu pour ton dernier anniversaire ?
+            frame: J’ai reçu un livre de ma sœur.
+          - question: Quel cadeau as-tu offert à un ami ou à un membre de ta famille l’année dernière ?
+            frame: J’ai offert un tee-shirt à mon meilleur ami.
+          - question: Où as-tu célébré ton plus bel anniversaire ?
+            frame: Je l’ai fêté dans un restaurant.
+          - question: Qu’as-tu fait le premier jour d’école ?
+            frame: J’ai rencontré mes camarades et j’ai parlé avec le professeur.
+          - question: Es-tu déjà allé(e) à une fête ennuyeuse ?
+            frame: Oui, je suis allé(e) à une fête sans musique et je me suis ennuyé(e).
+          - question: Parle-nous d’un événement qui t’a rendu(e) heureux / heureuse.
+            frame: Je me souviens du mariage de mon cousin, c’était très amusant.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Entretien sur les traditions et les fêtes'
+        skills: [Poser des questions au passé, Le passé composé et l’imparfait]
+        steps:
+          - Travaillez en binômes (en classe, ou en ligne dans des salles de sous-groupes).
+          - Parle d’une fête à laquelle tu as participé. Ton / ta camarade te pose les questions ci-dessous.
+          - Réponds au passé composé (et à l’imparfait pour décrire).
+      - id: act1-questions
+        type: discussionQuestions
+        title: Questions de l’entretien
+        items:
+          - question: Où a eu lieu la fête ?
+          - question: Quelle fête était-ce (anniversaire, mariage, remise de diplôme…) ?
+          - question: Qui a organisé la fête ?
+          - question: Combien de personnes étaient présentes ?
+          - question: Quel cadeau as-tu offert ou reçu ?
+          - question: Qu’as-tu mangé et bu ?
+          - question: Quelle musique as-tu écoutée ? As-tu dansé ?
+          - question: Quelque chose d’amusant ou de spécial s’est-il passé ?
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Deux histoires, vraie ou fausse ?'
+        skills: [Le passé composé et l’imparfait]
+        steps:
+          - Invente **deux histoires** au passé sur une fête, un anniversaire, un mariage ou un événement spécial. Une est **vraie**, l’autre est **fausse**.
+          - Raconte tes deux histoires à la classe, sans dire laquelle est vraie.
+          - Les autres devinent laquelle est vraie et laquelle est inventée.
+        example: |-
+          *L’année dernière, je suis allé(e) au Brésil et j’ai appris la capoeira avec un maître célèbre.*
+          *Il y a deux ans, j’ai participé à un concours de cuisine et j’ai gagné le premier prix.*
+      - id: act2-stories
+        type: discussionQuestions
+        title: Mes deux histoires
+        items:
+          - question: 'Histoire 1 : ___'
+          - question: 'Histoire 2 : ___'
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : La chronologie des célébrations'
+        skills: [Le passé composé et l’imparfait]
+        steps:
+          - Crée une **ligne du temps** avec 3 ou 4 célébrations importantes de ta vie (un anniversaire, un mariage, un voyage, une remise de diplôme…).
+          - Écris une phrase au passé composé pour chaque célébration.
+          - Partage ta ligne du temps avec un(e) camarade ou avec la classe.
+        example: |-
+          *En 2018, j’ai fêté ma remise de diplôme.*
+          *En 2020, je suis allé(e) au mariage de ma cousine.*
+      - id: act3-timeline
+        type: discussionQuestions
+        title: Ma ligne du temps
+        items:
+          - question: En ___, j’ai / je suis ___.
+          - question: En ___, j’ai / je suis ___.
+          - question: En ___, j’ai / je suis ___.
+          - question: En ___, j’ai / je suis ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Le journal d’une célébration'
+        skills: [Le passé composé et l’imparfait, Poser des questions au passé]
+        steps:
+          - Écris un **mini-journal de 4 ou 5 phrases** sur une occasion spéciale.
+          - 'Utilise des expressions de temps : *hier, l’année dernière, il y a deux ans, pour mon dernier anniversaire…*'
+          - En binômes, lis ton texte. Ton / ta camarade te pose une question complémentaire.
+        example: |-
+          *L’année dernière, j’ai fêté mon anniversaire à la maison. Mes amis sont venus. Nous avons chanté, dansé et mangé de la pizza. C’était très amusant.*
+          → *Qui a préparé la pizza ? Quels cadeaux as-tu reçus ?*
+      - id: act4-journal
+        type: discussionQuestions
+        title: Mon mini-journal
+        items:
+          - question: ___ (quand ?), j’ai ___.
+          - question: ___
+          - question: ___
+          - question: C’était ___.
+      - id: act5
+        type: classActivity
+        title: 'Activité 5 : L’interview'
+        skills: [Poser des questions au passé, Le passé composé et l’imparfait]
+        steps:
+          - Prends une carte de personnage (chanteur, acteur, footballeur, chef, influenceur…). Tu joues ce personnage.
+          - 'En binômes : un élève est le / la journaliste, l’autre est la « personne célèbre » et répond aux questions.'
+          - Changez de rôle.
+        example: '*Je suis Shakira. L’année dernière, j’ai chanté à la fête d’anniversaire de mon fils. Nous avons dansé et mangé du gâteau.*'
+      - id: act5-questions
+        type: discussionQuestions
+        title: Questions du / de la journaliste
+        items:
+          - question: Où a eu lieu ta meilleure fête ?
+          - question: Avec qui as-tu célébré ?
+          - question: Qu’as-tu mangé ou bu ?
+          - question: Quel cadeau as-tu reçu ?
+          - question: De quel moment spécial te souviens-tu ?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **le passé composé et l’imparfait** et
+          **poser des questions au passé**. Le cahier ne précise pas quelle activité
+          pratique quelle compétence. Proposition : passé composé et imparfait avec les
+          activités 2, 3 et 4 ; questions au passé avec les activités 1 et 5.
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: En ligne, envoie les binômes dans des salles de sous-groupes (« breakout rooms »).
+      - id: n-act4
+        anchor: act4
+        text: 'Objectif de l’activité : rédiger un court texte narratif au passé. Vérifie l’usage des expressions de temps et de l’auxiliaire (*avoir* ou *être*).'
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Avant la classe, prépare des cartes avec des personnages réels ou imaginaires
+          (chanteur, acteur, footballeur, chef, influenceur…) : elles ne sont pas dans le
+          cahier. Objectif : pratiquer le passé composé à travers un jeu de rôle.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: occasions-speciales-passe-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-pc
+        type: ruleSummary
+        skill: Le passé composé et l’imparfait
+        rules:
+          - text: 'On utilise le **passé composé** pour des **actions ponctuelles ou terminées** dans le passé.'
+            examples: ['Hier, j’ai dîné avec ma famille.']
+          - text: 'On l’utilise aussi pour une **succession d’actions**.'
+            examples: ['Je me suis levé(e), je me suis habillé(e) et je suis allé(e) à la fête.']
+          - text: '**Formation :** auxiliaire **avoir** ou **être** au présent + **participe passé**.'
+            examples: [J’ai mangé., Nous avons dansé.]
+          - text: 'On utilise **être** avec les verbes de mouvement (*aller, venir, arriver, partir, sortir…*), *naître*, *mourir* et les verbes pronominaux (*se lever*). Le participe s’accorde alors avec le sujet.'
+            examples: [Elle est allée à la fête., Mes amis sont venus., Nous nous sommes amusé(e)s.]
+          - text: 'On utilise l’**imparfait** pour **décrire** : comment c’était, qui était là.'
+            examples:
+              [
+                C’était très amusant.,
+                Il y avait beaucoup de musique.,
+                Combien de personnes étaient présentes ?,
+              ]
+      - id: time-expressions
+        type: callout
+        tone: info
+        title: Expressions de temps utiles
+        text: '*hier, avant-hier, la semaine dernière, le mois dernier, l’année dernière, il y a deux jours, il y a trois ans, en 2020*'
+      - id: participles-regular
+        type: table
+        caption: Le participe passé des verbes réguliers
+        header: [Groupe, Règle, Exemples]
+        rows:
+          - [
+              '1ᵉʳ groupe (-er)',
+              'on enlève **-er** et on ajoute **-é**',
+              'parler → parlé (j’ai parlé) · manger → mangé · danser → dansé',
+            ]
+          - [
+              '2ᵉ groupe (-ir)',
+              'on enlève **-ir** et on ajoute **-i**',
+              'finir → fini (j’ai fini) · grossir → grossi · réussir → réussi',
+            ]
+      - id: participles-irregular
+        type: table
+        caption: Le participe passé des verbes du 3ᵉ groupe
+        header: [Terminaison, Exemples]
+        rows:
+          - ['avoir, être', 'avoir → eu (j’ai eu) · être → été (j’ai été)']
+          - ['-é', 'aller → allé (je suis allé) · naître → né (je suis né)']
+          - [
+              '-u',
+              'pouvoir → pu · vouloir → voulu · venir → venu · courir → couru · voir → vu · boire → bu · descendre → descendu · tenir → tenu · lire → lu · recevoir → reçu',
+            ]
+          - ['-is', 'prendre → pris · mettre → mis']
+          - ['-os / -us', 'clore → clos · inclure → inclus']
+          - ['-ait / -it', 'faire → fait · dire → dit']
+          - ['-int', joindre → joint]
+          - ['-ort / -ert', 'mourir → mort (il est mort) · ouvrir → ouvert · offrir → offert']
+          - ['-i', 'rire → ri · suivre → suivi · sortir → sorti · partir → parti · sourire → souri']
+      - id: rules-questions
+        type: ruleSummary
+        skill: Poser des questions au passé
+        rules:
+          - text: 'Mot interrogatif + **auxiliaire-sujet** (avec un trait d’union) + participe passé.'
+            examples:
+              [
+                Où as-tu célébré ton anniversaire ?,
+                Quel cadeau as-tu reçu ?,
+                Qu’as-tu mangé et bu ?,
+              ]
+          - text: 'Avec un verbe qui prend **être**, l’auxiliaire est *es-tu*.'
+            examples: [Es-tu déjà allé(e) à une fête ennuyeuse ?]
+          - text: 'Pour demander qui a fait l’action : **Qui** + *a* + participe passé.'
+            examples: [Qui a organisé la fête ?, Qui a préparé la pizza ?]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: occasions-speciales-passe-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-questions
+        type: aiTutorPrompt
+        title: 'Message 1 : Questions sur un événement spécial'
+        message: |-
+          Bonjour Mori ! Pose-moi des questions au passé sur un événement spécial, comme mon anniversaire ou une fête. Par exemple :
+          Quel cadeau as-tu reçu pour ton dernier anniversaire ?
+          Quel cadeau as-tu offert à un ami ou à un membre de ta famille l’année dernière ?
+          Où as-tu célébré ton meilleur anniversaire ?
+          Es-tu déjà allé(e) à une fête ennuyeuse ou ratée ? Qu’est-ce qui s’est passé ?
+          Corrige mes erreurs, s’il te plaît.
+      - id: mori-journal
+        type: aiTutorPrompt
+        title: 'Message 2 : Mon mini-journal'
+        message: Bonjour Mori ! Aide-moi à écrire un mini-journal de 5 phrases au passé sur une occasion spéciale. Rappelle-moi d’utiliser des expressions de temps comme « hier », « l’année dernière », « il y a deux ans », « pour mon dernier anniversaire ». Corrige mes erreurs, s’il te plaît.
+      - id: mori-timeline
+        type: aiTutorPrompt
+        title: 'Message 3 : Ma ligne du temps'
+        message: Bonjour Mori ! Demande-moi d’écrire 3 phrases au passé pour une ligne du temps de mes célébrations les plus importantes. Rappelle-moi d’indiquer des dates ou des années, par exemple « En 2018, j’ai célébré… », « En 2020, je suis allé(e)… ». Corrige mes erreurs, s’il te plaît.
+      - id: mori-histoires
+        type: aiTutorPrompt
+        title: 'Message 4 : Deux histoires, une vraie et une fausse'
+        message: Bonjour Mori ! Aide-moi à inventer deux histoires au passé, une vraie et une fausse, avec des détails. Demande-moi d’abord de raconter une histoire vraie au passé, puis d’en inventer une autre qui paraisse vraie. Corrige mes erreurs, s’il te plaît.
+      - id: mori-transformer
+        type: aiTutorPrompt
+        title: 'Message 5 : Du présent au passé composé'
+        message: |-
+          Bonjour Mori ! Donne-moi des phrases au présent et demande-moi de les transformer au passé composé, une par une. Par exemple :
+          Je célèbre mon anniversaire à la maison.
+          Mes amis m’achètent un cadeau.
+          Je mange de la pizza et je bois du coca.
+          Je vois toute ma famille.
+          Nous dansons et écoutons de la musique.
+          Corrige mes réponses, s’il te plaît.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: occasions-speciales-passe-pratique
+    book: workbook
+    title: 'Pratique : Occasions spéciales (passé)'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-passe-compose
+        type: activity
+        activity: occasions-speciales-passe-passe-compose
+      - id: ex-questions
+        type: activity
+        activity: occasions-speciales-passe-questions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: occasions-speciales-passe-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots des occasions spéciales au passé
+        glossLang: he
+        link: https://quizlet.com/il/1096120119/conversational-french-2025-occasions-speciales-passe-flash-cards/
+        items: &occasions-speciales-passe-words
+          - { term: Fête, gloss: מסיבה }
+          - { term: Anniversaire, gloss: יום הולדת }
+          - { term: Mariage, gloss: חתונה }
+          - { term: Remise de diplôme, gloss: סיום לימודים }
+          - { term: Célébration, gloss: חגיגה }
+          - { term: Occasion spéciale, gloss: אירוע מיוחד }
+          - { term: Cadeau, gloss: מתנה }
+          - { term: Invité, gloss: אורח }
+          - { term: Famille, gloss: משפחה }
+          - { term: Amis, gloss: חברים }
+          - { term: Souvenir, gloss: זיכרון }
+          - { term: Musique, gloss: מוזיקה }
+          - { term: Danse, gloss: ריקוד }
+          - { term: Nourriture, gloss: אוכל }
+          - { term: Boisson, gloss: שתייה }
+          - { term: Gâteau, gloss: עוגה }
+          - { term: Restaurant, gloss: מסעדה }
+          - { term: École, gloss: בית ספר }
+          - { term: Voyage, gloss: טיול }
+          - { term: Tradition, gloss: מסורת }
+          - { term: Histoire / Récit, gloss: סיפור }
+          - { term: Journal, gloss: יומן }
+          - { term: Ligne du temps, gloss: ציר זמן }
+          - { term: Expérience, gloss: חוויה }
+          - { term: Hier, gloss: אתמול }
+          - { term: Hier soir, gloss: אתמול בערב }
+          - { term: La semaine dernière, gloss: בשבוע שעבר }
+          - { term: L’année dernière, gloss: בשנה שעברה }
+          - { term: Il y a deux ans, gloss: לפני שנתיים }
+          - { term: Aller (je suis allé(e)), gloss: הלכתי }
+          - { term: Être (j’ai été / j’étais), gloss: הייתי }
+          - { term: Faire (j’ai fait), gloss: עשיתי }
+          - { term: Avoir (j’ai eu / j’avais), gloss: היה לי }
+          - { term: Recevoir (j’ai reçu), gloss: קיבלתי }
+          - { term: Donner (j’ai donné), gloss: נתתי }
+          - { term: Manger (j’ai mangé), gloss: אכלתי }
+          - { term: Boire (j’ai bu), gloss: שתיתי }
+
+vocabulary:
+  - slug: occasions-speciales-passe
+    title: 'Occasions spéciales : le passé'
+    items: *occasions-speciales-passe-words
+
+activities:
+  - slug: occasions-speciales-passe-passe-compose
+    title: 'Le passé composé et l’imparfait : j’ai fêté, c’était'
+    minutes: 8
+    items:
+      - id: ai-dine
+        type: multipleChoice
+        prompt: Hier, j’___ avec ma famille.
+        options:
+          - { text: ai dîné, correct: true }
+          - { text: suis dîné, feedback: '*Dîner* se conjugue avec *avoir* : *j’ai dîné*.' }
+          - {
+              text: ai dîner,
+              feedback: 'Après l’auxiliaire, on met le participe passé : *-er* → *-é*, *j’ai dîné*.',
+            }
+      - id: fini-pris
+        type: fillBlank
+        prompt: Complète avec le participe passé des verbes entre parenthèses.
+        text: J’ai ___ (finir) mes devoirs et j’ai ___ (prendre) le bus.
+        blanks: [[fini], [pris]]
+      - id: participes
+        type: matching
+        prompt: Associe chaque verbe à son participe passé.
+        pairs:
+          - [faire, fait]
+          - [boire, bu]
+          - [recevoir, reçu]
+          - [offrir, offert]
+          - [voir, vu]
+      - id: est-allee
+        type: multipleChoice
+        prompt: L’année dernière, ma sœur ___ au Brésil.
+        options:
+          - { text: est allée, correct: true }
+          - { text: a allé, feedback: '*Aller* se conjugue avec *être* : *elle est allée*.' }
+          - {
+              text: est allé,
+              feedback: 'Avec *être*, le participe s’accorde avec le sujet : *ma sœur* est féminin, donc *allée*.',
+            }
+      - id: auxiliaire-aller
+        type: trueFalse
+        prompt: 'Avec le verbe *aller*, on utilise l’auxiliaire *avoir* : *j’ai allé*.'
+        answer: false
+        feedback:
+          correct: 'Bravo ! *Aller* se conjugue avec *être* : *je suis allé(e)*.'
+          incorrect: '*Aller* est un verbe de mouvement : il se conjugue avec *être*, *je suis allé(e)*.'
+      - id: venus-danse
+        type: fillBlank
+        prompt: Complète avec le participe passé des verbes entre parenthèses.
+        text: Mes amis sont ___ (venir) et nous avons ___ (danser) toute la nuit.
+        blanks: [[venus], [dansé]]
+      - id: c-etait
+        type: multipleChoice
+        prompt: Je me souviens du mariage de mon cousin, ___ très amusant.
+        options:
+          - { text: c’était, correct: true }
+          - {
+              text: c’est,
+              feedback: '*C’est* est le présent. Pour décrire un souvenir, on utilise l’imparfait : *c’était*.',
+            }
+          - {
+              text: ce sera,
+              feedback: '*Ce sera* est le futur. Pour décrire un souvenir, on utilise l’imparfait : *c’était*.',
+            }
+      - id: ordre-anniversaire
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: L’année dernière, j’ai fêté mon anniversaire à la maison.
+
+  - slug: occasions-speciales-passe-questions
+    title: 'Questions au passé : Quel cadeau as-tu reçu ?'
+    minutes: 8
+    items:
+      - id: as-recu
+        type: multipleChoice
+        prompt: Quel cadeau ___-tu reçu pour ton anniversaire ?
+        options:
+          - { text: as, correct: true }
+          - { text: es, feedback: '*Recevoir* se conjugue avec *avoir* : *as-tu reçu ?*' }
+          - { text: a, feedback: 'Avec *tu*, l’auxiliaire *avoir* est *as* : *as-tu reçu ?*' }
+      - id: qu-as-tu
+        type: fillBlank
+        prompt: Complète la question avec l’auxiliaire.
+        text: Qu’___-tu mangé à la fête ?
+        blanks: [[as]]
+      - id: questions-reponses
+        type: matching
+        prompt: Associe chaque question à sa réponse.
+        pairs:
+          - [Où as-tu célébré ton anniversaire ?, Je l’ai fêté dans un restaurant.]
+          - [Quel cadeau as-tu reçu ?, J’ai reçu un livre.]
+          - [Qui a organisé la fête ?, Ma sœur a organisé la fête.]
+          - [Es-tu allé à une fête ennuyeuse ?, 'Oui, je suis allé à une fête sans musique.']
+          - [Qu’as-tu bu ?, J’ai bu du coca.]
+      - id: es-tu-alle
+        type: multipleChoice
+        prompt: Quelle question est correcte ?
+        options:
+          - { text: Es-tu déjà allé à une fête ennuyeuse ?, correct: true }
+          - {
+              text: As-tu déjà allé à une fête ennuyeuse ?,
+              feedback: '*Aller* se conjugue avec *être* : *es-tu allé ?*',
+            }
+          - {
+              text: Es-tu déjà aller à une fête ennuyeuse ?,
+              feedback: 'Après l’auxiliaire, on met le participe passé : *allé*, pas l’infinitif *aller*.',
+            }
+      - id: inversion
+        type: trueFalse
+        prompt: 'Dans une question au passé composé avec inversion, le sujet vient après l’auxiliaire : *As-tu dansé ?*'
+        answer: true
+        feedback:
+          correct: 'Bravo ! Auxiliaire + trait d’union + sujet, puis le participe : *As-tu dansé ? Es-tu allé(e) ?*'
+          incorrect: 'Avec l’inversion, le sujet vient après l’auxiliaire, avec un trait d’union : *As-tu dansé ?*'
+      - id: as-tu-danse
+        type: fillBlank
+        prompt: Complète la question.
+        text: — ___-tu dansé ? — Oui, j’ai dansé toute la nuit.
+        blanks: [[As]]
+      - id: offert-recu
+        type: multipleChoice
+        prompt: 'Réponse : *J’ai offert un tee-shirt à mon meilleur ami.* Quelle est la question ?'
+        options:
+          - { text: Quel cadeau as-tu offert ?, correct: true }
+          - {
+              text: Quel cadeau as-tu reçu ?,
+              feedback: '*Recevoir* : on te donne un cadeau. *Offrir* : tu donnes un cadeau. La réponse parle d’*offrir*.',
+            }
+          - {
+              text: Quel cadeau offres-tu ?,
+              feedback: '*Offres* est le présent. La réponse est au passé composé : *as-tu offert ?*',
+            }
+      - id: ordre-bel-anniversaire
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre pour faire une question.
+        sentence: Où as-tu célébré ton plus bel anniversaire ?

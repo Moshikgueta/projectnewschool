@@ -1,0 +1,562 @@
+# Cycle "Voyages - futur simple", converted from the French level 2 digital notebook
+# ("Cahier digital 2025 - français niveau 2", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-2
+slug: voyages-futur-simple
+title: 'Voyages : le futur simple'
+goal: Parler de ses voyages au futur simple, poser des questions et rapporter des projets au futur.
+position: 4
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Le futur simple" and "Questions et récits au futur")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary rules, the activity examples and its vocabulary.
+    Please check level, wording and every right answer before students see them.
+  - >-
+    Summary, rule 1: "il suffit de prendre tout le verbe à l'infinitif et d'ajouter la
+    terminaison" is not true for verbs in -re: they lose their final -e (prendre → je
+    prendrai, vivre → je vivrai, boire → je boirai). The rule now says so, with
+    examples. "Le futur simple est le temps le plus facile en français" is softened
+    to "Le futur simple se forme facilement".
+  - >-
+    Summary, rule 2 ("certains verbes doivent être appris par cœur") gave only
+    "aller → j'irai". A table of the irregular futures used in this cycle was added
+    (aller → j'irai, être → je serai, avoir → j'aurai / il y aura, faire → je ferai,
+    venir → je viendrai, pouvoir → je pourrai, voir → je verrai), and a table of the
+    regular endings (parler, finir, prendre). Please confirm.
+  - >-
+    Summary: skill 2 ("poser des questions et rapporter des faits au futur") has no
+    rule in the source. A short rule was added from the activity examples: question
+    word + verb + -tu with a hyphen (Où voyageras-tu ? Que feras-tu ?), and the 3rd
+    person to report what a classmate said (Mon camarade visitera le Japon).
+  - >-
+    Mori: "corriger mes erreurs" → "corrige mes erreurs" (imperative, as in the first
+    message); "A présent" → "À présent"; the broken quotation in the second message
+    was fixed ("Où dormirons-nous ? – Nous dormirons à l'hôtel."); "Je te réponds en
+    utilisant le futur simple - corrige mes erreurs" was moved into the first
+    message, which it belongs to.
+  - >-
+    The notebook gives no plan saying which activity practises which skill: all
+    three activities practise both (writing in the futur simple, then follow-up
+    questions and a 3rd-person report). Teachers choose the activities.
+  - >-
+    Times given as ranges are recorded as the upper value (7–8 → 8, 3–4 → 4, 5–7 →
+    7). Activity totals: 1 → 18 min, 2 → 17 min, 3 → 17 min. The Quizlet link is
+    kept without its tracking parameters (?i=…&x=…). The "Réponse de l'élève 1/2/3"
+    lines are replaced by the optional answer boxes.
+  - >-
+    Vocabulary: "Il/elle", "Ils/elles" spaced as "Il / elle", "Ils / elles".
+    "J'essaierai" (also correct: j'essayerai) is kept. Glosses are as in the notebook.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: voyages-futur-simple-classe
+    title: 'Classe : Voyages (futur simple)'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: 'Voyages : le futur simple'
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Le futur simple
+            description: '*Je visiterai, tu feras, il ira, nous prendrons…*'
+          - name: Questions et récits au futur
+            description: '*Où voyageras-tu ? Que feras-tu ?* → *Mon camarade visitera le Japon.*'
+      - id: quizlet
+        type: externalLink
+        label: 'Voyages : futur simple sur Quizlet'
+        url: https://quizlet.com/il/1096107425/conversational-french-2025-voyages-futur-simple-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Mon prochain voyage sera au / en / à ___ et je ferai ___.
+        example: Je m’appelle Lévanah. Mon prochain voyage sera au Portugal et je ferai une visite guidée à Lisbonne.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quels lieux visiteras-tu pendant ton prochain voyage ?
+            frame: Je visiterai Paris et Marseille.
+          - question: Quelles activités feras-tu pendant ce voyage ?
+            frame: Je ferai des visites et je goûterai la cuisine française.
+          - question: Qu’emporteras-tu dans ta valise ?
+            frame: J’emporterai des vêtements chauds et mon appareil photo.
+          - question: Comment sera l’hôtel où tu dormiras ?
+            frame: Il sera grand et il y aura une piscine.
+          - question: Quel moyen de transport utiliseras-tu dans 20 ans ?
+            frame: J’utiliserai une voiture volante ou je voyagerai en train rapide.
+          - question: Tu organises le voyage de tes rêves. Que feras-tu ?
+            frame: Ce sera un voyage au Japon et je visiterai des temples anciens.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Dans 20 ans'
+        skills: [Le futur simple, Questions et récits au futur]
+        minutes: 18
+        steps:
+          - Complète les phrases ci-dessous au futur simple.
+          - 'En binômes : un élève lit ses phrases, l’autre pose 2 ou 3 questions de suivi.'
+          - Présente ton / ta camarade au groupe, à la 3ᵉ personne.
+        example: |-
+          Élève A : *Dans 20 ans, je vivrai à Barcelone.*
+          Élève B : *Avec qui vivras-tu à Barcelone ? Dans une maison ou dans un appartement ?*
+          *Ma camarade vivra à Barcelone, voyagera en train électrique et sa maison sera intelligente.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Ma vie dans 20 ans
+        items:
+          - question: Dans 20 ans, je vivrai à ___.
+          - question: Je voyagerai en ___.
+          - question: La technologie sera ___.
+          - question: Ma vie sera ___. (facultatif)
+      - id: act1-questions
+        type: callout
+        tone: info
+        title: Idées de questions
+        text: |-
+          *Avec qui vivras-tu ? Comment voyageras-tu exactement ? Que mangeras-tu dans le futur ? Comment sera ta maison ? Auras-tu un autre travail ? Quelles nouvelles activités feras-tu ?*
+          *Comment sera l’école ou l’université du futur ? Qu’est-ce qui changera dans notre manière de voyager ? Qu’est-ce qui n’existera plus dans 20 ans ? Qu’est-ce qui ne changera pas ?*
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Mon voyage de rêve'
+        skills: [Le futur simple, Questions et récits au futur]
+        minutes: 17
+        steps:
+          - Écris trois phrases au futur simple (ci-dessous).
+          - 'En binômes : ton / ta camarade pose des questions pour avoir plus d’informations.'
+          - Présente au groupe ce que tu as appris sur ton / ta camarade.
+        example: |-
+          Élève A : *Un jour, je visiterai le Japon.*
+          Élève B : *Quelle ville visiteras-tu au Japon ? Que goûteras-tu là-bas ?*
+          *Mon camarade visitera le Japon, goûtera le ramen et rencontrera un ami japonais.*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Mon voyage de rêve
+        items:
+          - question: Un jour, je visiterai ___.
+          - question: Je goûterai ___.
+          - question: Je rencontrerai ___.
+          - question: 'Facultatif : Je logerai dans ___. / Je ferai ___.'
+      - id: act2-questions
+        type: callout
+        tone: info
+        title: Idées de questions
+        text: '*Quelle ville visiteras-tu ? Quel plat goûteras-tu en premier ? Avec qui voyageras-tu ? Quelles activités feras-tu là-bas ? Quelle langue parleras-tu ? Que prendras-tu avec toi ?*'
+      - id: act2-levels
+        type: callout
+        tone: info
+        title: Selon le niveau
+        text: |-
+          **Débutants (A2−) :** phrases simples et concrètes. *Je visiterai l’Italie, je goûterai une pizza typique, je rencontrerai de nouveaux amis.*
+          **Intermédiaires (A2+) :** phrases plus détaillées. *Je visiterai l’Italie avec ma famille, je goûterai la pizza napolitaine à Naples et je rencontrerai un chef local.*
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Prédictions'
+        skills: [Le futur simple, Questions et récits au futur]
+        minutes: 17
+        steps:
+          - 'Choisis une situation : ton prochain week-end, l’été prochain, le futur des transports, l’école ou l’université dans 10 ans, ta vie dans 20 ans.'
+          - Écris 2 phrases au futur simple.
+          - 'En binômes : lis tes phrases. Ton / ta camarade pose des questions de suivi.'
+          - Présente ton / ta camarade au groupe, à la 3ᵉ personne.
+        example: |-
+          *Le week-end prochain, j’irai à la plage.* → *Avec qui iras-tu à la plage ?*
+          *Dans 10 ans, j’enseignerai à l’université.* → *Quelle matière enseigneras-tu à l’université ?*
+          *Mon camarade ira à la plage le week-end prochain et dans 10 ans, il enseignera le français à l’université.*
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Mes prédictions
+        items:
+          - question: ___ (quand ?), je ___.
+          - question: ___ (quand ?), je ___.
+      - id: act3-levels
+        type: callout
+        tone: info
+        title: Selon le niveau
+        text: |-
+          **Débutants (A2−) :** phrases très simples avec un marqueur de temps clair. *Samedi, je mangerai une pizza. / Demain, j’étudierai le français.*
+          **Intermédiaires (A2+) :** phrases plus longues, avec des détails et des justifications. *L’année prochaine, je voyagerai en Italie avec ma famille et je goûterai la cuisine typique de Rome.*
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **le futur simple** et **poser des questions
+          et rapporter des faits au futur**. Les trois activités pratiquent les deux :
+          écriture au futur simple, questions de suivi en binômes (2ᵉ personne), puis
+          présentation du / de la camarade (3ᵉ personne). Choisis les activités selon le
+          temps disponible.
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        minutes: 18
+        text: >-
+          Écriture individuelle : 5 minutes. Interaction en binômes : 8 minutes (2 ou 3
+          questions de suivi, voir les idées de questions). Présentation en groupe : 5
+          minutes, à la 3ᵉ personne. Objectif : imaginer la vie dans 20 ans et
+          interagir à la 1ʳᵉ, 2ᵉ et 3ᵉ personne.
+      - id: n-act2
+        anchor: act2
+        minutes: 17
+        text: >-
+          Écriture individuelle : 4 minutes. Interaction en binômes : 8 minutes.
+          Présentation en groupe : 5 minutes. Objectif : parler de projets et de rêves
+          de voyage à la 1ʳᵉ, 2ᵉ et 3ᵉ personne. Adapte les attentes au niveau du
+          groupe (voir l’encadré « Selon le niveau »).
+      - id: n-act3
+        anchor: act3
+        minutes: 17
+        text: >-
+          Préparation : 2 minutes (propose les situations). Production individuelle : 5
+          minutes. Interaction en binômes : 7 minutes. Présentation finale : 3 minutes, à
+          la 3ᵉ personne. Objectif : pratiquer le futur simple à partir de situations de
+          la vie réelle.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: voyages-futur-simple-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-futur
+        type: ruleSummary
+        skill: Le futur simple
+        rules:
+          - text: 'Le futur simple se forme facilement : on prend **l’infinitif** du verbe et on ajoute la terminaison : **-ai, -as, -a, -ons, -ez, -ont**.'
+            examples:
+              - '(manger) Demain, je **mangerai** une pizza.'
+              - '(finir) Demain, je **finirai** mes devoirs.'
+          - text: 'Les verbes en **-re** perdent le **-e** final de l’infinitif.'
+            examples: [prendre → je **prendrai**, vivre → je **vivrai**, boire → je **boirai**]
+          - text: 'Certains verbes sont **irréguliers** : il faut les apprendre par cœur (voir le tableau). Les terminaisons restent les mêmes.'
+            examples:
+              - '(aller) Demain, **j’irai** au cinéma.'
+              - (faire) Je **ferai** une visite guidée.
+              - (être) Ce **sera** un beau voyage.
+          - text: 'À l’oral, et dans les situations informelles, on utilise souvent le **futur proche** : *aller* au présent + infinitif.'
+            examples:
+              - '(manger) Demain, je **vais manger** une pizza.'
+              - '(aller) Demain, je **vais aller** au cinéma.'
+      - id: endings-table
+        type: table
+        caption: Le futur simple des verbes réguliers
+        header: [Sujet, parler, finir, prendre]
+        rows:
+          - [je / j’, parlerai, finirai, prendrai]
+          - [tu, parleras, finiras, prendras]
+          - [il / elle / on, parlera, finira, prendra]
+          - [nous, parlerons, finirons, prendrons]
+          - [vous, parlerez, finirez, prendrez]
+          - [ils / elles, parleront, finiront, prendront]
+      - id: irregular-table
+        type: table
+        caption: Quelques verbes irréguliers au futur simple
+        header: [Infinitif, Radical, Exemple]
+        rows:
+          - [aller, ir-, j’irai]
+          - [être, ser-, je serai]
+          - [avoir, aur-, 'j’aurai · il y aura']
+          - [faire, fer-, je ferai]
+          - [venir, viendr-, je viendrai]
+          - [pouvoir, pourr-, je pourrai]
+          - [voir, verr-, je verrai]
+      - id: rules-questions
+        type: ruleSummary
+        skill: Questions et récits au futur
+        rules:
+          - text: 'Pour poser une question, mets le mot interrogatif, puis le verbe au futur et le sujet, avec un **trait d’union** : *verbe-tu*.'
+            examples: [Où voyageras-tu ?, Que feras-tu là-bas ?, Avec qui iras-tu à la plage ?]
+          - text: 'Pour rapporter ce que dit ton / ta camarade, utilise la **3ᵉ personne** (terminaison **-a**).'
+            examples:
+              [
+                Je visiterai le Japon. → Mon camarade **visitera** le Japon.,
+                Je vivrai à Barcelone. → Ma camarade **vivra** à Barcelone.,
+              ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: voyages-futur-simple-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: goal-questions
+        type: text
+        text: '**Objectif :** pratiquer les questions et les réponses au futur simple.'
+      - id: mori-voyage
+        type: aiTutorPrompt
+        title: 'Message 1 : Mon voyage à l’étranger'
+        message: |-
+          Bonjour Mori ! Je prépare un voyage à l’étranger. Pose-moi des questions comme : « Où voyageras-tu ? », « Que feras-tu là-bas ? », « Avec qui voyageras-tu ? ».
+          Je te réponds au futur simple. Corrige mes erreurs, s’il te plaît.
+      - id: mori-amis
+        type: aiTutorPrompt
+        title: 'Message 2 : Deux amis préparent un voyage'
+        message: |-
+          À présent, fais comme si nous étions deux amis qui préparent un voyage ensemble. Posons-nous des questions chacun notre tour et répondons au futur simple.
+          Par exemple : « Où dormirons-nous ? – Nous dormirons à l’hôtel. »
+          Corrige mes erreurs, s’il te plaît.
+      - id: goal-predictions
+        type: text
+        text: '**Objectif :** utiliser le futur simple pour faire des prédictions.'
+      - id: mori-20-ans
+        type: aiTutorPrompt
+        title: 'Message 3 : Voyager dans 20 ans'
+        message: Bonjour Mori ! Aide-moi à imaginer comment je voyagerai dans 20 ans. Pose-moi des questions sur les moyens de transport, les destinations et les nouvelles technologies. Je te réponds au futur simple. Corrige mes erreurs, s’il te plaît.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: voyages-futur-simple-pratique
+    book: workbook
+    title: 'Pratique : Voyages (futur simple)'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-futur
+        type: activity
+        activity: voyages-futur-simple-futur
+      - id: ex-questions
+        type: activity
+        activity: voyages-futur-simple-questions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: voyages-futur-simple-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots des voyages et du futur
+        glossLang: he
+        link: https://quizlet.com/il/1096107425/conversational-french-2025-voyages-futur-simple-flash-cards/
+        items: &voyages-futur-simple-words
+          - { term: Je découvrirai, gloss: אגלה }
+          - { term: Tu connaîtras, gloss: תכיר }
+          - { term: Il / elle changera, gloss: ישנה }
+          - { term: Nous réussirons, gloss: נצליח }
+          - { term: Ils / elles construiront, gloss: יבנו }
+          - { term: J’essaierai, gloss: אנסה }
+          - { term: Tu participeras, gloss: תשתתף }
+          - { term: Nous organiserons, gloss: נארגן }
+          - { term: Ils / elles décideront, gloss: יחליטו }
+          - { term: Je me souviendrai, gloss: אזכור }
+          - { term: Tu oublieras, gloss: תשכח }
+          - { term: Il / elle pensera, gloss: יחשוב }
+          - { term: Nous visiterons, gloss: נבקר }
+          - { term: Je participerai, gloss: אשתתף }
+          - { term: Tu prépareras, gloss: תכין }
+          - { term: Nous attendrons, gloss: נחכה }
+          - { term: Ils / elles utiliseront, gloss: ישתמשו }
+          - { term: Je finirai, gloss: אסיים }
+          - { term: Tu commenceras, gloss: תתחיל }
+          - { term: Ils / elles continueront, gloss: ימשיכו }
+          - { term: Projet, gloss: פרויקט }
+          - { term: Objectif, gloss: מטרה }
+          - { term: Rêve, gloss: חלום }
+          - { term: Avenir / Futur, gloss: עתיד }
+          - { term: Opportunité, gloss: הזדמנות }
+          - { term: Expérience, gloss: חוויה }
+          - { term: Culture, gloss: תרבות }
+          - { term: Histoire / Récit, gloss: סיפור }
+          - { term: Cours / leçon, gloss: שיעור }
+          - { term: Université, gloss: אוניברסיטה }
+          - { term: Conférence, gloss: כנס }
+          - { term: Événement, gloss: אירוע }
+          - { term: Excursion / Sortie, gloss: טיול }
+          - { term: Billet / Ticket d’entrée, gloss: כרטיס }
+          - { term: Vacances, gloss: חופשה }
+          - { term: Nouveau travail, gloss: עבודה חדשה }
+          - { term: Entretien, gloss: ראיון }
+          - { term: Fête, gloss: מסיבה }
+          - { term: Activité, gloss: פעילות }
+          - { term: Opinion, gloss: דעה }
+
+vocabulary:
+  - slug: voyages-futur-simple
+    title: 'Voyages : le futur simple'
+    items: *voyages-futur-simple-words
+
+activities:
+  - slug: voyages-futur-simple-futur
+    title: 'Le futur simple : je visiterai, j’irai'
+    minutes: 8
+    items:
+      - id: mangerai
+        type: multipleChoice
+        prompt: Demain, je ___ une pizza.
+        options:
+          - { text: mangerai, correct: true }
+          - {
+              text: mangera,
+              feedback: '*-a* est la terminaison de *il / elle*. Avec *je*, on ajoute *-ai* : *je mangerai*.',
+            }
+          - {
+              text: mangeons,
+              feedback: '*Mangeons* est le présent de *nous*. Au futur simple avec *je* : *je mangerai*.',
+            }
+      - id: finirons
+        type: fillBlank
+        prompt: Complète avec le verbe *finir* au futur simple.
+        text: Ce soir, nous ___ nos devoirs.
+        blanks: [[finirons]]
+      - id: prendrai
+        type: multipleChoice
+        prompt: L’été prochain, je ___ le train pour Paris.
+        options:
+          - { text: prendrai, correct: true }
+          - {
+              text: prendrerai,
+              feedback: 'Les verbes en *-re* perdent le *-e* final : *prendr-* + *-ai* = *je prendrai*.',
+            }
+          - { text: prends, feedback: '*Prends* est le présent. Au futur simple : *je prendrai*.' }
+      - id: irreguliers
+        type: matching
+        prompt: Associe chaque verbe à sa forme au futur simple.
+        pairs:
+          - [aller, j’irai]
+          - [être, je serai]
+          - [avoir, j’aurai]
+          - [faire, je ferai]
+          - [venir, je viendrai]
+      - id: terminaisons
+        type: trueFalse
+        prompt: 'Les terminaisons du futur simple sont : *-ai, -as, -a, -ons, -ez, -ont*.'
+        answer: true
+        feedback:
+          correct: 'Bravo ! Par exemple : je visiterai, tu visiteras, il visitera, nous visiterons, vous visiterez, ils visiteront.'
+          incorrect: 'Si, ce sont bien les terminaisons du futur simple : je visiterai, tu visiteras, il visitera, nous visiterons, vous visiterez, ils visiteront.'
+      - id: irons-visiterons
+        type: fillBlank
+        prompt: Complète avec les verbes entre parenthèses au futur simple.
+        text: L’été prochain, nous ___ (aller) en Italie et nous ___ (visiter) Rome.
+        blanks: [[irons], [visiterons]]
+      - id: irai-cinema
+        type: multipleChoice
+        prompt: '*Demain, je vais aller au cinéma.* Quelle phrase dit la même chose au futur simple ?'
+        options:
+          - { text: 'Demain, j’irai au cinéma.', correct: true }
+          - {
+              text: 'Demain, j’allerai au cinéma.',
+              feedback: '*Aller* est irrégulier au futur simple : *j’irai*.',
+            }
+          - {
+              text: 'Demain, je vais au cinéma.',
+              feedback: '*Je vais* est le présent. Au futur simple, *aller* devient *j’irai*.',
+            }
+      - id: ordre-barcelone
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Dans 20 ans, je vivrai à Barcelone.
+
+  - slug: voyages-futur-simple-questions
+    title: 'Questions et récits au futur : Où iras-tu ?'
+    minutes: 8
+    items:
+      - id: voyageras
+        type: multipleChoice
+        prompt: Avec qui ___-tu ?
+        options:
+          - { text: voyageras, correct: true }
+          - {
+              text: voyagerai,
+              feedback: '*-ai* est pour *je*. Avec *tu*, la terminaison est *-as* : *voyageras-tu ?*',
+            }
+          - {
+              text: voyagera,
+              feedback: '*-a* est pour *il / elle*. Avec *tu*, la terminaison est *-as* : *voyageras-tu ?*',
+            }
+      - id: feras
+        type: fillBlank
+        prompt: Complète la question avec le verbe *faire* au futur simple.
+        text: Que ___-tu là-bas ?
+        blanks: [[feras]]
+      - id: questions-reponses
+        type: matching
+        prompt: Associe chaque question à sa réponse.
+        pairs:
+          - [Où voyageras-tu ?, Je voyagerai au Japon.]
+          - [Que goûteras-tu ?, Je goûterai le ramen.]
+          - [Avec qui iras-tu à la plage ?, J’irai avec mes amis.]
+          - [Comment sera ta maison ?, Elle sera intelligente.]
+          - [Quelle langue parleras-tu ?, Je parlerai japonais.]
+      - id: visitera
+        type: multipleChoice
+        prompt: 'Ton camarade dit : *Je visiterai le Japon.* Tu le racontes au groupe : Mon camarade ___ le Japon.'
+        options:
+          - { text: visitera, correct: true }
+          - {
+              text: visiterai,
+              feedback: '*Visiterai* est pour *je*. Pour ton camarade (*il*), on dit *visitera*.',
+            }
+          - {
+              text: visiteras,
+              feedback: '*Visiteras* est pour *tu*. Pour ton camarade (*il*), on dit *visitera*.',
+            }
+      - id: trait-union
+        type: trueFalse
+        prompt: 'Dans la question *Où iras-tu ?*, on met un trait d’union entre le verbe et *tu*.'
+        answer: true
+        feedback:
+          correct: 'Bravo ! Verbe + trait d’union + sujet : *iras-tu, feras-tu, dormirons-nous*.'
+          incorrect: 'Quand le sujet vient après le verbe, on met un trait d’union : *Où iras-tu ?*'
+      - id: vivra-voyagera
+        type: fillBlank
+        prompt: Raconte ce que dit ta camarade. Complète avec les verbes au futur simple.
+        text: Ma camarade ___ (vivre) à Barcelone et elle ___ (voyager) en train électrique.
+        blanks: [[vivra], [voyagera]]
+      - id: dormirons
+        type: multipleChoice
+        prompt: Quelle question est correcte ?
+        options:
+          - { text: Où dormirons-nous ?, correct: true }
+          - {
+              text: Où dormirons nous ?,
+              feedback: 'Il manque le trait d’union : *dormirons-nous*.',
+            }
+          - {
+              text: Où dormirai-nous ?,
+              feedback: 'Avec *nous*, la terminaison est *-ons* : *dormirons-nous*.',
+            }
+      - id: ordre-ville
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre pour faire une question.
+        sentence: Quelle ville visiteras-tu au Japon ?
