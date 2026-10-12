@@ -1,0 +1,617 @@
+# Cycle "Potins", converted from the French level 2 (conversational) digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-2
+slug: potins
+title: Potins
+goal: Comparer des personnes et des histoires, et raconter un potin au passé composé.
+position: 14
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Les comparaisons" and "Le passé composé") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules, the activity examples and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Summary, comparisons: added "bon → meilleur" and "bien → mieux" (the activities
+    use "elle chante mieux", "le meilleur choix", and the vocabulary has meilleur /
+    pire), "verbe + plus / moins / autant que" (warm-up: "Les adolescents souffrent
+    plus que les adultes"), "de" after a superlative, and the superlative with
+    "moins". Summary, passé composé: added the rule that the participle agrees with
+    the subject after être (the examples "Elle est allée", "Ils sont partis" already
+    showed it). "par coeur" → "par cœur". Please confirm.
+  - >-
+    Corrections: intro frame "___ est plus / moins bavard(e) que moi" had no subject;
+    the plus-que-parfait "J'ai entendu qu'un camarade avait changé de travail"
+    (warm-up 3 and Activity 2 step 3) → "a changé de travail", to stay with the
+    passé composé taught in this cycle (both are correct French); "Stromaé" →
+    "Stromae", "Edith Piaf" → "Édith Piaf"; Activity 4 "celle de Juan" (Spanish name
+    left from the Spanish notebook) → "celle de Julien"; Activity 5 example split into
+    two sentences ("…un acteur célèbre. Pierre en a parlé…"); "Ecris" → "Écris";
+    general warm-up "Pourquoi pensez-vous" → "Pourquoi penses-tu" (tu like the rest
+    of the course).
+  - >-
+    Activity 2 keeps "le potin le plus amusant que tu as entendu" (spoken French;
+    written French prefers the subjunctive "que tu aies entendu"). Activity 3 lists
+    Gérard Depardieu among the celebrity pairs, with an example about looks ("plus
+    jolie que Gérard Depardieu"); you may wish to replace this pair. Kept as in the
+    source.
+  - >-
+    Homework, part 3: the message asked Mori for "trois phrases commençant par Je n'ai
+    jamais" but the example was a question ("As-tu déjà raconté le secret d'un
+    ami ?"). Rewritten: Mori asks three "As-tu déjà… ?" questions and the student
+    answers "Oui, j'ai déjà…" or "Non, je n'ai jamais…". Please confirm.
+  - >-
+    The plan in the notebook is: comparisons → Activity 2 or 3; passé composé →
+    Activity 1 or 4. Activity 5 (mixed stories) is an extra passé composé activity.
+    Activity 1 needs an image chosen by the teacher, Activity 2 a sheet of 6–8
+    questions (the suggested questions are given), Activity 3 cards with celebrity
+    pairs and Activity 5 cards with sentence fragments (not in the notebook).
+  - >-
+    The Quizlet link is kept without "?i=…&x=…". The "Réponse de l'élève 1/2/3" lines
+    are replaced by the answer boxes. The notebook gives no times and no
+    débutant / intermédiaire split for this cycle.
+  - >-
+    Vocabulary: "Bavard – רכלן" → "פטפטן" (bavard = talkative; רכלן is a gossip);
+    "Écouter – לשמוע" → "להקשיב" (לשמוע is entendre); "Célébrité – סלב" → "סלב /
+    ידוען". Please confirm.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: potins-classe
+    title: 'Classe : Potins'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Potins
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Les comparaisons
+            description: '*plus… que, moins… que, aussi… que, le / la / les plus…*'
+          - name: Le passé composé
+            description: '*J’ai entendu que… Il est sorti avec… Ils se sont disputés.*'
+      - id: quizlet
+        type: externalLink
+        label: Potins sur Quizlet
+        url: https://quizlet.com/il/1082434447/conversational-french-2025-potins-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. J’aime / Je n’aime pas parler des autres. ___ est plus / moins bavard(e) que moi.
+        example: Je m’appelle Lévanah. Je n’aime pas parler des autres. Ma voisine est plus bavarde que moi.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup-general
+        type: discussionQuestions
+        title: Question générale
+        items:
+          - question: Pourquoi penses-tu que les gens aiment raconter des potins ?
+            frame: Parce que c’est plus amusant que de parler de choses sérieuses. / Parce que c’est plus facile que de parler de soi.
+      - id: warmup-pc
+        type: discussionQuestions
+        title: Passé composé
+        items:
+          - question: Quelle est la dernière chose que tu as entendue à propos d’un ami ?
+            frame: J’ai entendu que mon ami est allé à ___ pour ___.
+          - question: Avec qui as-tu parlé hier et de quoi avez-vous parlé ?
+            frame: J’ai parlé avec ___ de ___.
+          - question: Quel potin as-tu entendu à l’école ou au travail la semaine dernière ?
+            frame: J’ai entendu qu’un camarade a changé de travail.
+          - question: De quoi as-tu parlé avec ta famille le week-end dernier ?
+            frame: J’ai parlé avec ma famille d’une fête / d’un voyage / de l’école.
+          - question: Quelle est la dernière chose que tu as vue sur les réseaux sociaux à propos de quelqu’un ?
+            frame: J’ai vu que mon ami a publié des photos de ses vacances.
+          - question: As-tu déjà entendu un faux potin ? Lequel ?
+            frame: Oui, j’ai entendu qu’une amie avait un petit copain, mais ce n’était pas vrai.
+      - id: warmup-comparaisons
+        type: discussionQuestions
+        title: Comparaisons
+        items:
+          - question: Est-il préférable de parler d’amis ou de célébrités ?
+            frame: Il est préférable de parler de ___ parce que ___.
+          - question: Qui est la personne la plus bavarde dans ta famille ?
+            frame: La personne la plus bavarde est ma tante parce que ___.
+          - question: Les potins sont-ils amusants ou dangereux ?
+            frame: Ils sont ___ parce que ___.
+          - question: Qui est le plus bavard, toi ou ton meilleur ami ?
+            frame: Je suis plus / moins bavard(e) que ___.
+          - question: 'Qui souffre le plus des potins : les adolescents ou les adultes ?'
+            frame: Les adolescents souffrent plus que les adultes parce que ___.
+          - question: 'Qu’est-ce qui fait le plus de mal : un potin sur ta vie personnelle ou sur ton travail ?'
+            frame: Un potin sur ma vie personnelle fait plus mal qu’un potin sur ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Qu’est-ce qui s’est passé ?'
+        skills: [Le passé composé]
+        steps:
+          - Regarde l’image que montre ton professeur.
+          - En groupes, inventez une histoire au passé composé.
+          - Chaque groupe raconte son histoire.
+          - La classe vote pour l’histoire la plus crédible.
+          - 'Discussion rapide : qu’est-ce qui a rendu l’histoire choisie plus intéressante ou plus réaliste que les autres ?'
+        example: '*Il est sorti avec son amie, mais ensuite ils se sont disputés.*'
+      - id: act1-story
+        type: discussionQuestions
+        title: Notre histoire
+        items:
+          - question: Hier, ___.
+          - question: Ensuite, ___.
+          - question: À la fin, ___.
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Interview de potins'
+        skills: [Les comparaisons, Le passé composé]
+        steps:
+          - '**Préparation :** lis les questions ci-dessous.'
+          - '**Interview :** travaillez par deux. L’un est l’intervieweur, l’autre l’interviewé. Ensuite, échangez les rôles.'
+          - '**Présentation :** résume au groupe ce que tu as appris de ton ou ta camarade.'
+        example: |-
+          *Mon camarade a entendu que son ami a changé de travail la semaine dernière.*
+          *Il pense que les faux potins sont plus dangereux que les vrais.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Questions de l’interview
+        items:
+          - question: Quelle est la dernière chose que tu as entendue à propos d’un ami ?
+            frame: Mon ami ___.
+          - question: Quel est le potin le plus amusant que tu as entendu la semaine dernière ?
+            frame: La semaine dernière, ___ et c’était plus amusant que ___.
+          - question: Qui est la dernière personne qui t’a confié un secret ?
+            frame: '___ m’a confié un secret : ___.'
+          - question: Qui est le plus bavard dans ta famille, toi ou ton frère / ta sœur ?
+            frame: Mon frère est plus bavard que moi.
+          - question: Quel potin, à l’école ou au travail, a été pire que les autres ?
+            frame: Le pire potin a été ___.
+          - question: Est-ce qu’un faux potin est plus dangereux qu’un vrai potin ?
+            frame: Un faux potin est plus dangereux parce que ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Choisis qui vient dîner'
+        skills: [Les comparaisons]
+        steps:
+          - '**Préparation :** ton professeur distribue des cartes avec des paires de célébrités (chanteurs, acteurs, sportifs, politiciens).'
+          - '**Choix individuel :** choisis 3 invités parmi les paires. Écris vite pourquoi, avec des comparatifs.'
+          - '**En binômes :** comparez vos choix. Réagissez avec des comparatifs ou des superlatifs.'
+          - '**En groupes de 3 ou 4 :** choisissez seulement 3 invités pour un dîner commun. Discutez, négociez et justifiez vos choix.'
+        wordBank:
+          - Mbappé / Zinedine Zidane
+          - Marion Cotillard / Gérard Depardieu
+          - Stromae / Édith Piaf
+          - Indila / Aya Nakamura
+        example: |-
+          *Mon premier choix est Mbappé parce qu’il est plus jeune que Zinedine Zidane.*
+          *Je choisis Indila parce qu’elle chante mieux qu’Aya Nakamura.*
+          *Mon invité est plus drôle que ton invité (que le tien).*
+          *Ton choix est moins intéressant que mon choix (que le mien).*
+          *Indila est le meilleur choix, car elle est plus amusante que les autres.*
+          *Pas Mbappé, il est moins drôle que Zidane.*
+      - id: act3-choices
+        type: discussionQuestions
+        title: Mes 3 invités
+        items:
+          - question: Mon premier choix est ___ parce qu’il / elle est plus ___ que ___.
+          - question: Mon deuxième choix est ___ parce que ___.
+          - question: Mon troisième choix est ___ parce que ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Je n’ai jamais, jamais…'
+        skills: [Le passé composé, Les comparaisons]
+        steps:
+          - 'On joue à « Je n’ai jamais, jamais… », avec des phrases sur les potins.'
+          - Les élèves qui l’ont déjà fait lèvent la main et expliquent quand, avec qui ou pourquoi.
+          - Le groupe compare les expériences.
+        example: |-
+          *Je n’ai jamais raconté le secret d’un ami.*
+          *Je n’ai jamais inventé un potin à l’école.*
+          *L’histoire d’Anna est plus drôle que celle de Julien.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Mes phrases
+        items:
+          - question: Je n’ai jamais ___.
+          - question: Je n’ai jamais ___.
+      - id: act5
+        type: classActivity
+        title: 'Activité 5 : Histoires mélangées'
+        skills: [Le passé composé]
+        steps:
+          - Ton professeur distribue des cartes avec des morceaux de phrases au passé composé.
+          - Avec les cartes, crée des potins complets.
+          - Partage tes potins avec le groupe.
+        wordBank:
+          ['Hier, j’ai entendu que…', … a parlé de…, … est sorti avec…, … la semaine dernière à…]
+        example: '*Hier, j’ai entendu que mon amie est sortie avec un acteur célèbre. Pierre en a parlé pendant le dîner.*'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **les comparaisons** (activité 2 ou 3) et **le
+          passé composé** (activité 1 ou 4). L’activité 5 est une activité de plus pour
+          le passé composé.
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup-title
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: Avant le cours, choisis une image (par exemple deux personnes dans un café). Montre-la à l’écran.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Distribue une fiche avec 6 à 8 questions (les questions proposées sont
+          ci-dessous). Chaque élève interviewe un camarade, puis résume ses réponses au
+          groupe.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Prépare des cartes avec des paires de célébrités (exemples dans la banque de
+          mots). Tu peux changer les paires selon ton groupe.
+      - id: n-act5
+        anchor: act5
+        text: Prépare des cartes avec des morceaux de phrases au passé composé (exemples dans la banque de mots).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: potins-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-pc
+        type: ruleSummary
+        skill: Le passé composé
+        rules:
+          - text: Le passé composé sert à **décrire des actions terminées** dans le passé, à un moment précis.
+          - text: 'On le forme avec l’**auxiliaire** *avoir* ou *être* au présent + le **participe passé** du verbe.'
+            examples:
+              - 'Je parle avec mon ami. → Hier, j’ai parlé avec mon ami.'
+              - 'Nous allons au cinéma. → Samedi, nous sommes allés au cinéma.'
+          - text: 'Marqueurs de temps fréquents : ces mots montrent que l’action est terminée.'
+            examples:
+              - 'hier, avant-hier, la semaine dernière, le mois dernier, il y a deux jours, ce matin, cet après-midi, ce soir'
+          - text: 'Le participe passé : **-er → -é** (parler → j’ai parlé), **-ir → -i** (finir → j’ai fini). Les autres verbes sont souvent irréguliers : à apprendre par cœur.'
+            examples:
+              - 'avoir → j’ai eu, être → j’ai été, faire → j’ai fait, voir → j’ai vu'
+              - 'prendre → j’ai pris, vouloir → j’ai voulu, pouvoir → j’ai pu, venir → je suis venu(e)'
+          - text: 'La plupart des verbes prennent **avoir**. Les verbes de déplacement ou de changement d’état et les verbes pronominaux prennent **être** : *aller, venir, arriver, partir, entrer, sortir, monter, descendre, naître, mourir, rester, tomber…*'
+            examples:
+              [
+                Elle **est allée** à l’école hier.,
+                Ils **sont partis** en vacances la semaine dernière.,
+                Ils **se sont disputés**.,
+              ]
+          - text: 'Avec **être**, le participe passé s’accorde avec le sujet : + **e** au féminin, + **s** au pluriel.'
+            examples: [il est sorti · elle est sortie · ils sont sortis · elles sont sorties]
+      - id: rules-comparaisons
+        type: ruleSummary
+        skill: Les comparaisons
+        rules:
+          - text: 'Les comparaisons servent à **comparer deux éléments**. Elles expriment la supériorité, l’infériorité, l’égalité ou le superlatif.'
+          - text: '**Supériorité : plus + adjectif + que**'
+            examples:
+              [
+                Marie est **plus bavarde que** Sophie.,
+                Le potin d’hier était **plus drôle que** celui d’aujourd’hui.,
+              ]
+          - text: '**Infériorité : moins + adjectif + que**'
+            examples:
+              [
+                Je suis **moins bavard que** mon frère.,
+                Cette histoire est **moins intéressante que** l’autre.,
+              ]
+          - text: '**Égalité : aussi + adjectif + que**'
+            examples:
+              - Les potins à l’école sont **aussi courants que** ceux au travail.
+              - Ce film est **aussi amusant que** celui que nous avons vu la semaine dernière.
+          - text: '**Superlatif : le / la / les + plus (ou moins) + adjectif**, souvent suivi de **de**. On accorde l’article et l’adjectif : *le plus drôle, la plus drôle, les plus drôles*.'
+            examples:
+              [
+                Indila est **la plus intéressante** de la liste.,
+                C’était **le potin le plus drôle** de tous.,
+              ]
+          - text: 'Attention : **bon → meilleur** (adjectif) et **bien → mieux** (adverbe). On ne dit pas *plus bon* ni *plus bien*.'
+            examples: [Indila est le meilleur choix., Elle chante mieux qu’Aya Nakamura.]
+          - text: 'Avec un verbe : **verbe + plus / moins / autant + que**.'
+            examples:
+              [Les adolescents souffrent plus que les adultes., Mon frère parle autant que moi.]
+      - id: comparaisons-table
+        type: table
+        caption: Les comparaisons
+        header: [Comparaison, Forme, Exemple]
+        rows:
+          - [Supériorité, plus + adjectif + que, Marie est plus bavarde que Sophie.]
+          - [Infériorité, moins + adjectif + que, Je suis moins bavard que mon frère.]
+          - [Égalité, aussi + adjectif + que, Ce film est aussi amusant que l’autre.]
+          - [Superlatif, le / la / les + plus + adjectif, C’était le potin le plus drôle de tous.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: potins-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-pc
+        type: aiTutorPrompt
+        title: 'Partie 1 : Passé composé'
+        message: |-
+          Bonjour Mori ! Pose-moi ces questions dans l’ordre. Attends ma réponse, puis pose une petite question pour avoir plus de détails.
+          1. Quelle est la dernière chose que tu as entendue à propos d’un ami ? (Ensuite : Quand l’as-tu entendue ?)
+          2. Avec qui as-tu parlé hier et de quoi avez-vous parlé ? (Ensuite : Où étais-tu ?)
+          3. Quel potin as-tu entendu à l’école ou au travail la semaine dernière ? (Ensuite : Était-il vrai ou faux ?)
+      - id: mori-comparaisons
+        type: aiTutorPrompt
+        title: 'Partie 2 : Comparaisons'
+        message: |-
+          Bonjour Mori ! Pose-moi maintenant ces questions sur les comparaisons. Corrige ma réponse si je n’utilise pas plus / moins / aussi… que ou le plus.
+          1. Est-il préférable de parler d’amis ou de célébrités ?
+          2. Qui est le plus bavard, toi ou ton meilleur ami ?
+          3. Les potins sont-ils plus amusants ou plus dangereux ?
+          4. Qui est la personne la plus bavarde dans ta famille ?
+      - id: mori-jamais
+        type: aiTutorPrompt
+        title: 'Partie 3 : Mini-jeu « Je n’ai jamais »'
+        message: >-
+          Bonjour Mori ! Pose-moi trois questions qui commencent par « As-tu déjà… ? »
+          sur les potins, par exemple : « As-tu déjà raconté le secret d’un ami ? ». Je
+          vais répondre « Oui, j’ai déjà… » ou « Non, je n’ai jamais… ». Attends ma
+          réponse et dis-moi : « Raconte-moi plus de détails. »
+      - id: mori-ecrit
+        type: aiTutorPrompt
+        title: 'Partie 4 : Production écrite'
+        message: |-
+          Bonjour Mori ! Pose-moi ces deux questions et demande-moi d’écrire la réponse en 2 ou 3 phrases complètes. Corrige mes erreurs, s’il te plaît.
+          1. Quel potin intéressant as-tu entendu le mois dernier ?
+          2. Qui est la personne la plus bavarde dans ta vie, et pourquoi ?
+      - id: mori-cloture
+        type: aiTutorPrompt
+        title: 'Partie 5 : Clôture'
+        message: >-
+          Bonjour Mori ! Demande-moi d’écrire 3 phrases au passé composé et 2
+          comparaisons sur les potins pour réviser la leçon. Corrige mes erreurs, s’il te
+          plaît.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: potins-pratique
+    book: workbook
+    title: 'Pratique : Potins'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-comparaisons
+        type: activity
+        activity: potins-comparaisons
+      - id: ex-passe-compose
+        type: activity
+        activity: potins-passe-compose
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: potins-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots des potins
+        glossLang: he
+        link: https://quizlet.com/il/1082434447/conversational-french-2025-potins-flash-cards/
+        items: &potins-words
+          - { term: potin, gloss: רכילות }
+          - { term: bavard, gloss: פטפטן }
+          - { term: passé, gloss: עבר }
+          - { term: adolescent, gloss: נער }
+          - { term: adulte, gloss: מבוגר }
+          - { term: comparaison, gloss: השוואה }
+          - { term: plus, gloss: יותר }
+          - { term: moins, gloss: פחות }
+          - { term: meilleur, gloss: טוב יותר }
+          - { term: le meilleur / la meilleure, gloss: הכי טוב / הכי טובה }
+          - { term: pire, gloss: גרוע יותר }
+          - { term: faux, gloss: שקרי / לא נכון }
+          - { term: vrai, gloss: אמיתי / נכון }
+          - { term: vérité, gloss: אמת }
+          - { term: secret, gloss: סוד }
+          - { term: histoire, gloss: סיפור }
+          - { term: amusant, gloss: משעשע / מהנה }
+          - { term: dangereux, gloss: מסוכן }
+          - { term: drôle, gloss: מצחיק }
+          - { term: intéressant, gloss: מעניין }
+          - { term: célèbre, gloss: מפורסם }
+          - { term: célébrité, gloss: סלב / ידוען }
+          - { term: ami, gloss: חבר }
+          - { term: famille, gloss: משפחה }
+          - { term: travail, gloss: עבודה }
+          - { term: école, gloss: בית ספר }
+          - { term: réseaux sociaux, gloss: רשתות חברתיות }
+          - { term: jamais, gloss: אף פעם }
+          - { term: interview, gloss: ראיון }
+          - { term: image, gloss: תמונה }
+          - { term: dîner, gloss: ארוחת ערב }
+          - { term: invité, gloss: אורח }
+          - { term: groupe, gloss: קבוצה }
+          - { term: couple, gloss: זוג }
+          - { term: voter, gloss: להצביע }
+          - { term: inventer, gloss: להמציא }
+          - { term: écouter, gloss: להקשיב }
+          - { term: raconter, gloss: לספר }
+
+vocabulary:
+  - slug: potins
+    title: Potins
+    items: *potins-words
+
+activities:
+  - slug: potins-comparaisons
+    title: 'Les comparaisons : plus, moins, aussi… que'
+    minutes: 8
+    items:
+      - id: plus-bavarde
+        type: multipleChoice
+        prompt: Marie parle beaucoup. Sophie parle peu. Marie est ___ Sophie.
+        options:
+          - { text: plus bavarde que, correct: true }
+          - {
+              text: moins bavarde que,
+              feedback: 'Marie parle plus que Sophie : c’est la supériorité, *plus bavarde que*.',
+            }
+          - {
+              text: plus bavarde de,
+              feedback: 'Pour comparer deux personnes, on utilise *que* : *plus bavarde que*.',
+            }
+      - id: aussi-que
+        type: fillBlank
+        prompt: Complète la comparaison d’égalité.
+        text: Les potins à l’école sont ___ courants ___ ceux au travail.
+        blanks: [[aussi], [que]]
+      - id: le-plus-drole
+        type: multipleChoice
+        prompt: C’était le potin ___ de tous.
+        options:
+          - { text: le plus drôle, correct: true }
+          - {
+              text: plus drôle,
+              feedback: 'Au superlatif, il faut l’article : *le potin le plus drôle*.',
+            }
+          - {
+              text: le plus drôle que,
+              feedback: 'Après un superlatif, on utilise *de*, pas *que* : *le plus drôle de tous*.',
+            }
+      - id: plus-bon
+        type: trueFalse
+        prompt: 'On peut dire : *Ce choix est plus bon que l’autre.*'
+        answer: false
+        feedback:
+          correct: 'Bravo ! *Bon* devient *meilleur* : *Ce choix est meilleur que l’autre.*'
+          incorrect: 'On ne dit pas *plus bon*. *Bon* devient *meilleur* : *Ce choix est meilleur que l’autre.*'
+      - id: formes
+        type: matching
+        prompt: Associe chaque comparaison à sa forme.
+        pairs:
+          - [supériorité, plus … que]
+          - [infériorité, moins … que]
+          - [égalité, aussi … que]
+          - [superlatif, le / la / les plus …]
+      - id: la-les
+        type: fillBlank
+        prompt: Complète avec l’article du superlatif (*le*, *la* ou *les*).
+        text: Indila est ___ plus intéressante de la liste. Mes cousins sont ___ plus bavards de la famille.
+        blanks: [[la], [les]]
+        wordBank: [le, la, les]
+      - id: mieux
+        type: multipleChoice
+        prompt: Je choisis Indila parce qu’elle chante ___ qu’Aya Nakamura.
+        options:
+          - { text: mieux, correct: true }
+          - {
+              text: meilleur,
+              feedback: '*Chanter* est un verbe : on utilise l’adverbe *bien → mieux*. *Meilleur* va avec un nom.',
+            }
+          - { text: plus bien, feedback: 'On ne dit pas *plus bien*. *Bien* devient *mieux*.' }
+      - id: ordre-frere
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Je suis moins bavard que mon frère.
+
+  - slug: potins-passe-compose
+    title: 'Le passé composé : j’ai entendu, il est sorti'
+    minutes: 8
+    items:
+      - id: ai-parle
+        type: multipleChoice
+        prompt: Hier, ___ avec mon ami.
+        options:
+          - { text: j’ai parlé, correct: true }
+          - { text: je suis parlé, feedback: '*Parler* prend l’auxiliaire *avoir* : *j’ai parlé*.' }
+          - {
+              text: je parle,
+              feedback: '*Je parle* est au présent. Avec *hier*, on utilise le passé composé : *j’ai parlé*.',
+            }
+      - id: sommes-alles
+        type: fillBlank
+        prompt: Complète au passé composé avec le verbe *aller*.
+        text: Samedi, nous ___ au cinéma.
+        blanks: [[sommes allés, sommes allées]]
+      - id: participes
+        type: matching
+        prompt: Associe chaque verbe à son participe passé.
+        pairs:
+          - [faire, fait]
+          - [voir, vu]
+          - [prendre, pris]
+          - [venir, venu]
+          - [pouvoir, pu]
+      - id: sont-partis
+        type: multipleChoice
+        prompt: Ils ___ partis en vacances la semaine dernière.
+        options:
+          - { text: sont, correct: true }
+          - {
+              text: ont,
+              feedback: '*Partir* est un verbe de déplacement : il prend *être*. *Ils sont partis.*',
+            }
+          - { text: est, feedback: '*Ils* est au pluriel : *ils sont partis*.' }
+      - id: accord-etre
+        type: trueFalse
+        prompt: 'Avec *être*, le participe passé s’accorde avec le sujet : *Elle est allée à l’école.*'
+        answer: true
+        feedback:
+          correct: 'Bravo ! Avec *être*, on ajoute *-e* au féminin et *-s* au pluriel : *elle est allée, ils sont allés*.'
+          incorrect: 'Avec *être*, le participe s’accorde avec le sujet : *elle est allée* (+ e).'
+      - id: est-sortie
+        type: fillBlank
+        prompt: Complète au passé composé avec le verbe *sortir*.
+        text: La semaine dernière, mon amie ___ avec un acteur célèbre.
+        blanks: [[est sortie]]
+      - id: a-fini
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Il a fini ses devoirs., correct: true }
+          - {
+              text: Il a finé ses devoirs.,
+              feedback: 'Les verbes en *-ir* comme *finir* font leur participe en *-i* : *fini*.',
+            }
+          - {
+              text: Il est fini ses devoirs.,
+              feedback: '*Finir* prend l’auxiliaire *avoir* : *il a fini*.',
+            }
+      - id: ordre-potin
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: J’ai entendu un potin à l’école.

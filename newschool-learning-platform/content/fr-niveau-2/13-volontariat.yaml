@@ -1,0 +1,548 @@
+# Cycle "Volontariat : aider les autres", converted from the French level 2
+# (conversational) digital notebook (docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-2
+slug: volontariat
+title: 'Volontariat : aider les autres'
+goal: Raconter une expérience de bénévolat avec le passé composé et l’imparfait.
+position: 13
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Le passé composé" and "L'imparfait") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules, the activity examples and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Summary, passé composé: the conjugation table had links to
+    la-conjugaison.nouvelobs.com (not on the link allow-list) and Hebrew labels inside
+    the header; the links are removed and the table is rebuilt (pronoun / avoir /
+    être). The notebook's "3 règles" gave no participle rule and no rule for choosing
+    avoir or être; added: -er → é, -ir → i, a few irregular participles, être with
+    verbs of movement / change of state and pronominal verbs, and agreement of the
+    participle with the subject after être (elle est allée). Please confirm.
+  - >-
+    Summary, imparfait: a closing bracket was missing in rule 1. Added how to form the
+    stem (the "nous" form of the present without -ons: nous finissons → je
+    finissais) and the one exception (être → j'étais), with a table for "aider".
+    Please confirm.
+  - >-
+    Activity 1 (gap-fill race): the notebook gives no answer key; one was written in a
+    teacher note (se portent volontaires, donnent, pouvons, reçoivent, aidons,
+    améliorons, ont agi, est). Note that only the "guerre" sentence uses a past
+    tense; the others are in the present, so this activity does not really practise
+    the cycle's two skills. Kept as in the source. Please check the key.
+  - >-
+    Corrections: warm-up 2 "Qu'ont-ils fait de spécial ?" → "Qu'a-t-elle fait de
+    spécial ?" (the subject is "une organisation"); warm-up 4 "cela les fait se
+    sentir ___" (calque of "makes them feel") → "parce qu'ils se sentent ___";
+    warm-up 5 "y es-tu allé" → "allé(e)"; warm-up 6 "qu'en penses-tu" → "Qu'en
+    penses-tu"; Activity 2 had two titles ("j'étais un super bénévole" / "J'étais un
+    grand bénévole !"), one kept; "Que faisait cette association  ?" (double space);
+    Activity 4 title "début sur le volontariat" → "Débat sur le volontariat";
+    "met trop de pression aux étudiants" → "met trop de pression sur les étudiants";
+    Activity 3 mixed "Cherchez… dans ta langue" (now a teacher note).
+  - >-
+    Homework: the notebook addresses the student with "vous"; the Mori messages and
+    questions now use "tu" like the rest of the course. "Pouvez-vous penser à un
+    moment où…" (calque of "Can you think of…") → "Te souviens-tu d'un moment où…".
+    "Raconter à Mori une expérience… ou sur ce que" → "Raconte à Mori une
+    expérience… ou ce que". Both tasks are written as full Mori messages.
+  - >-
+    The YouTube video (Activity 3) is kept without its "&ab_channel=…" parameter; the
+    Quizlet link without "?i=…&x=…". Activity 4 step 2 "10-15 minutes" is recorded
+    as 15. The "Réponse de l'élève 1/2/3" lines are replaced by the answer boxes.
+    The notebook gives no level split (débutant / intermédiaire) and no skill-to-
+    activity plan for this cycle; none was added.
+  - >-
+    Vocabulary: "compassion – אכפתיות" → "חמלה / אכפתיות"; "compétences – יכולות" →
+    "כישורים / יכולות"; "avoir besoin – להצטרך" → "avoir besoin (de)"; "temps" →
+    "le temps". Please confirm.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: volontariat-classe
+    title: 'Classe : Volontariat'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: 'Volontariat : aider les autres'
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Le passé composé
+            description: 'Une action finie : *j’ai aidé, je suis allé(e), nous avons donné*'
+          - name: L’imparfait
+            description: 'Une habitude ou une description au passé : *j’aidais, c’était, nous faisions*'
+      - id: quizlet
+        type: externalLink
+        label: Volontariat sur Quizlet
+        url: https://quizlet.com/il/1094954149/conversational-french-2025-volontariat-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. La semaine dernière, pour les autres, j’ai ___. Quand j’étais plus jeune, je ___.
+        example: 'Je m’appelle Lévanah. Voici ce que j’ai fait pour les autres la semaine dernière : j’ai préparé du pain pour les soldats. Quand j’étais plus jeune, j’aidais des enfants à faire leurs devoirs tous les vendredis.'
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Parle-nous d’une situation où tu as aidé quelqu’un.
+            frame: Un jour, j’ai aidé ___. J’ai ___.
+          - question: Peux-tu nommer une organisation à but non lucratif que tu admires ? Pourquoi ? Qu’a-t-elle fait de spécial ?
+            frame: J’admire ___ parce qu’elle a ___.
+          - question: Le volontariat signifie travailler sans être payé. Es-tu bénévole en ce moment ? Où ?
+            frame: Oui, je suis bénévole à ___. / Non, je ne suis pas bénévole en ce moment.
+          - question: Pourquoi les gens font-ils du bénévolat ?
+            frame: Les gens font du bénévolat parce qu’ils se sentent ___ (utiles, heureux, fiers…).
+          - question: Partage une expérience personnelle de bénévolat. Était-ce un bénévolat régulier ou n’y es-tu allé(e) qu’une fois ?
+            frame: J’ai fait du bénévolat à ___. J’y allais tous les ___. / J’y suis allé(e) une seule fois.
+          - question: Que pensais-tu du bénévolat avant d’en faire ? Qu’en penses-tu maintenant ?
+            frame: Avant, je pensais que ___. Maintenant, je pense que ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : La course au bénévolat'
+        skills: [Le passé composé]
+        steps:
+          - Complète les phrases avec le bon verbe de la banque, à la bonne forme.
+          - Travaille seul(e) ou en binôme, comme le dit ton professeur.
+          - 'Le premier ou la première qui termine crie : « Terminé ! »'
+        wordBank: [pouvoir, recevoir, se porter volontaire, améliorer, agir, aider, donner, être]
+      - id: act1-text
+        type: discussionQuestions
+        title: Complète le texte
+        items:
+          - question: De nombreuses personnes ___ pour soutenir ceux qui en ont besoin.
+          - question: Ils ___ de leur temps aux autres.
+          - question: Nous ___ changer les choses en partageant nos compétences.
+          - question: Les gens de notre ville ___ notre aide.
+          - question: Lorsque nous ___ les autres, nous nous sentons bien.
+          - question: Nous ___ notre communauté grâce au bénévolat.
+          - question: Lorsque la guerre a commencé, les volontaires ___ sans rien attendre en retour, parce que c’était important pour eux.
+          - question: Aider les personnes dans le besoin ___ un acte de générosité.
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : J’étais un super bénévole !'
+        skills: [L’imparfait, Le passé composé]
+        minutes: 10
+        steps:
+          - C’est le moment d’être créatifs ! Travaillez en binômes.
+          - Inventez le bénévolat le plus étrange que vous ayez jamais fait (une histoire inventée, bien sûr !).
+          - 'Écrivez : le nom de l’association ; ce que faisait cette association ; votre rôle et ce que vous apportiez à l’association ; pourquoi l’association a fermé.'
+          - Présentez votre histoire à la classe.
+      - id: act2-story
+        type: discussionQuestions
+        title: Notre association
+        items:
+          - question: Le nom de l’association était ___.
+          - question: Cette association faisait ___ / s’occupait de ___.
+          - question: Notre rôle dans cette association était ___.
+          - question: Chaque jour, ___.
+          - question: Cette association a fermé parce que ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Histoires et vidéos'
+        skills: [L’imparfait, Le passé composé]
+        steps:
+          - Regarde la vidéo sur un ou une bénévole qui aide une personne dans le besoin.
+          - Réponds aux questions avec des mots simples.
+        resource:
+          label: Vidéo sur le bénévolat (YouTube)
+          url: https://www.youtube.com/watch?v=EF-8sZuyar0
+      - id: act3-questions
+        type: discussionQuestions
+        items:
+          - question: Que faisait le bénévole pour aider la personne ?
+            frame: Le bénévole ___ (imparfait).
+          - question: Comment penses-tu que la personne aidée se sentait ?
+            frame: Je pense qu’elle se sentait ___.
+          - question: Pourquoi est-il important d’aider les autres membres de la communauté ?
+            frame: C’est important parce que ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Débat sur le volontariat'
+        skills: [Le passé composé, L’imparfait]
+        steps:
+          - '**Situation :** le gouvernement local propose une nouvelle loi. Les lycéens et les étudiants doivent faire au moins 50 heures de bénévolat avant d’obtenir leur diplôme. Certains pensent que c’est positif : cela forme le caractère des jeunes et améliore la société. D’autres pensent que cela met trop de pression sur des étudiants déjà très occupés par leurs études et leurs activités.'
+          - En groupes, discutez et préparez plusieurs arguments pour défendre votre point de vue (15 minutes).
+          - Chaque groupe présente et défend son point de vue (5 minutes). Appuyez-vous sur des expériences passées, avec le passé composé et l’imparfait.
+          - Chaque groupe répond à l’autre groupe (3 minutes).
+          - Le juge (le professeur) choisit un gagnant.
+          - 'Réflexion : quel groupe a présenté les arguments les plus convaincants ? Comment les expériences passées ont-elles influencé vos opinions ?'
+        example: '*Les étudiants sont obligés de faire du bénévolat dans le cadre de leurs études.*'
+      - id: act4-arguments
+        type: discussionQuestions
+        title: Nos arguments
+        items:
+          - question: 'Notre point de vue : ___'
+          - question: 'Argument 1 : Quand j’étais au lycée, ___.'
+          - question: 'Argument 2 : L’année dernière, j’ai ___.'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **le passé composé** et **l’imparfait**. Le
+          cahier ne dit pas quelle activité correspond à quelle compétence : les
+          activités 2, 3 et 4 font pratiquer les deux temps ensemble.
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Tu décides si les élèves travaillent en binômes (salles de discussion) ou seuls.
+          Corrigé : 1. se portent volontaires · 2. donnent · 3. pouvons · 4. reçoivent ·
+          5. aidons · 6. améliorons · 7. ont agi · 8. est. Seule la phrase 7 est au
+          passé composé ; les autres sont au présent.
+      - id: n-act2
+        anchor: act2
+        minutes: 10
+        text: Divise les élèves en binômes. Chaque binôme a 10 minutes pour inventer son histoire, puis la présente.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Le cahier propose de chercher sur YouTube une vidéo courte (3 minutes ou moins)
+          et captivante sur un bénévole qui aide une personne dans le besoin ; la vidéo
+          de France 3 Grand Est est la proposition du cahier. Après la vidéo, lance la
+          discussion avec un vocabulaire simple.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Divise la classe en deux groupes (pour / contre). Préparation : 15 minutes ;
+          présentation : 5 minutes par groupe ; réponse : 3 minutes par groupe. Tu es le
+          juge. L’argumentation doit s’appuyer sur des expériences, avec le passé composé
+          et l’imparfait.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: volontariat-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-pc
+        type: ruleSummary
+        skill: Le passé composé
+        rules:
+          - text: On utilise le passé composé pour parler d’**événements ponctuels ou achevés** (finis).
+            examples: [J’ai visité Londres l’année dernière.]
+          - text: 'On forme le passé composé avec **avoir** ou **être** au présent + le **participe passé** (voir le tableau).'
+            examples: [J’ai aidé mon voisin., Je suis allé(e) à l’association.]
+          - text: 'Le participe passé : les verbes en **-er** → **-é**, les verbes en **-ir** comme *finir* → **-i**. Beaucoup de verbes sont irréguliers.'
+            examples:
+              - 'aider → aidé, donner → donné, finir → fini'
+              - 'faire → fait, voir → vu, prendre → pris, recevoir → reçu'
+          - text: 'La plupart des verbes prennent **avoir**. Les verbes de déplacement ou de changement d’état (*aller, venir, partir, arriver, sortir, rester…*) et les verbes pronominaux prennent **être**. Avec **être**, le participe s’accorde avec le sujet.'
+            examples:
+              [
+                Elle est allée à l’association.,
+                Ils sont venus aider.,
+                Nous nous sommes sentis utiles.,
+              ]
+          - text: Au passé composé, la négation porte seulement sur l’auxiliaire.
+            examples: [Je **n’**ai **pas** visité Londres l’année dernière.]
+      - id: pc-table
+        type: table
+        caption: Le passé composé
+        header: [Pronom, Auxiliaire avoir, Auxiliaire être, Participe passé]
+        rows:
+          - [j’ / je, ai, suis, aidé / allé(e)]
+          - [tu, as, es, aidé / allé(e)]
+          - [il / elle / on, a, est, aidé / allé(e)]
+          - [nous, avons, sommes, aidé / allé(e)s]
+          - [vous, avez, êtes, aidé / allé(e)(s)]
+          - [ils / elles, ont, sont, aidé / allé(e)s]
+      - id: rules-imparfait
+        type: ruleSummary
+        skill: L’imparfait
+        rules:
+          - text: 'On utilise l’imparfait pour :'
+            examples:
+              - 'une description au passé : Mon grand-père était gentil.'
+              - 'une habitude au passé : Quand j’étais petite, j’allais au cinéma tous les week-ends.'
+              - 'un événement qui se répète au passé : Tous les soirs, je faisais mes devoirs.'
+              - 'une action longue, coupée par une action courte au passé composé : Je regardais la télé quand, tout d’un coup, le téléphone a sonné.'
+          - text: L’imparfait n’est pas un temps composé ; on n’utilise pas d’auxiliaire.
+            examples: [J’aidais des enfants. (et pas *j’ai aidais*)]
+          - text: 'Pour former le radical, on prend le présent avec **nous** et on enlève **-ons**. Exception : **être** → *ét-*.'
+            examples:
+              - 'nous aidons → j’aidais'
+              - 'nous finissons → je finissais'
+              - 'nous faisons → je faisais'
+              - 'être → j’étais'
+          - text: 'Les terminaisons sont toujours les mêmes : **-ais, -ais, -ait, -ions, -iez, -aient**.'
+      - id: imparfait-table
+        type: table
+        caption: 'L’imparfait : aider'
+        header: [Pronom, Terminaison, aider]
+        rows:
+          - [j’ / je, -ais, j’aidais]
+          - [tu, -ais, tu aidais]
+          - [il / elle / on, -ait, il aidait]
+          - [nous, -ions, nous aidions]
+          - [vous, -iez, vous aidiez]
+          - [ils / elles, -aient, ils aidaient]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: volontariat-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-questions
+        type: aiTutorPrompt
+        title: 'Partie 1 : Mes expériences au passé composé'
+        message: |-
+          Bonjour Mori ! Pose-moi ces questions une par une. Je vais répondre au passé composé. Corrige mes erreurs, s’il te plaît.
+          1. As-tu fait du bénévolat dans une association l’année dernière ?
+          2. Qui as-tu aidé dans le passé ? De quelle manière ?
+          3. As-tu participé à un événement de ta communauté ? Comment ?
+          4. Te souviens-tu d’un moment où tu as agi pour soutenir une cause ou une communauté ? Qu’as-tu fait ?
+          5. Quand as-tu soutenu un ami ou un membre de ta famille pour la dernière fois ? Comment l’as-tu soutenu ?
+          6. As-tu déjà eu besoin de l’aide d’autres personnes ? De quel type d’aide as-tu eu besoin ?
+          7. As-tu déjà pris soin d’une personne dans le besoin ? Comment l’as-tu aidée ?
+      - id: mori-recit
+        type: aiTutorPrompt
+        title: 'Partie 2 : Mon expérience de bénévolat'
+        intro: 'Raconte à Mori une expérience de bénévolat, ou ce que le bénévolat a représenté pour toi dans le passé. Utilise le passé composé et l’imparfait. Essaie de dire : le type de bénévolat que tu as fait ; comment tu as aidé la communauté ; les compétences que tu as utilisées ou développées ; l’impact de tes actions.'
+        message: >-
+          Bonjour Mori ! Je vais te raconter une expérience de bénévolat avec le passé
+          composé et l’imparfait. Corrige mes erreurs, s’il te plaît, et pose-moi une
+          question de plus sur mon expérience.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: volontariat-pratique
+    book: workbook
+    title: 'Pratique : Volontariat'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-passe-compose
+        type: activity
+        activity: volontariat-passe-compose
+      - id: ex-imparfait
+        type: activity
+        activity: volontariat-imparfait
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: volontariat-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots du volontariat
+        glossLang: he
+        link: https://quizlet.com/il/1094954149/conversational-french-2025-volontariat-flash-cards/
+        items: &volontariat-words
+          - { term: volontariat / bénévolat, gloss: התנדבות }
+          - { term: aider, gloss: לעזור }
+          - { term: la communauté, gloss: קהילה }
+          - { term: les gens, gloss: אנשים }
+          - { term: donner, gloss: לתת }
+          - { term: le temps, gloss: זמן }
+          - { term: soutien, gloss: תמיכה }
+          - { term: 'gentillesse, bienveillance', gloss: חסד }
+          - { term: partager, gloss: לשתף }
+          - { term: compassion, gloss: חמלה / אכפתיות }
+          - { term: local, gloss: מקומי }
+          - { term: avoir besoin (de), gloss: להצטרך }
+          - { term: action, gloss: פעולה }
+          - { term: assistance, gloss: סיוע }
+          - { term: aide, gloss: עזרה }
+          - { term: 'impact, influence', gloss: השפעה }
+          - { term: charité, gloss: צדקה }
+          - { term: contribution, gloss: תרומה }
+          - { term: venir, gloss: לבוא }
+          - { term: faire, gloss: לעשות }
+          - { term: une organisation à but non lucratif, gloss: ארגון ללא מטרות רווח }
+          - { term: compétences, gloss: כישורים / יכולות }
+
+vocabulary:
+  - slug: volontariat
+    title: 'Volontariat : aider les autres'
+    items: *volontariat-words
+
+activities:
+  - slug: volontariat-passe-compose
+    title: 'Le passé composé : j’ai aidé, je suis allé(e)'
+    minutes: 8
+    items:
+      - id: ai-prepare
+        type: multipleChoice
+        prompt: Hier, ___ du pain pour les soldats.
+        options:
+          - { text: j’ai préparé, correct: true }
+          - {
+              text: je suis préparé,
+              feedback: '*Préparer* prend l’auxiliaire *avoir* : *j’ai préparé*.',
+            }
+          - {
+              text: je prépare,
+              feedback: '*Je prépare* est au présent. Avec *hier*, on utilise le passé composé : *j’ai préparé*.',
+            }
+      - id: est-allee
+        type: fillBlank
+        prompt: Complète au passé composé avec le verbe *aller*.
+        text: Samedi, Léa ___ à l’association.
+        blanks: [[est allée]]
+      - id: participes
+        type: matching
+        prompt: Associe chaque verbe à son participe passé.
+        pairs:
+          - [aider, aidé]
+          - [finir, fini]
+          - [faire, fait]
+          - [voir, vu]
+          - [prendre, pris]
+      - id: negation
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Je n’ai pas visité Londres l’année dernière., correct: true }
+          - {
+              text: Je n’ai visité pas Londres l’année dernière.,
+              feedback: 'La négation entoure l’auxiliaire : *je n’ai pas visité*.',
+            }
+          - {
+              text: Je ne pas ai visité Londres l’année dernière.,
+              feedback: '*Ne* va avant l’auxiliaire et *pas* après : *je n’ai pas visité*.',
+            }
+      - id: aller-avoir
+        type: trueFalse
+        prompt: 'Avec le verbe *aller*, on utilise l’auxiliaire *avoir* : *j’ai allé*.'
+        answer: false
+        feedback:
+          correct: 'Bravo ! *Aller* est un verbe de déplacement : il prend *être*. *Je suis allé(e).*'
+          incorrect: '*Aller* est un verbe de déplacement : il prend *être*. On dit *je suis allé(e)*.'
+      - id: avons-donne
+        type: fillBlank
+        prompt: Complète au passé composé avec le verbe *donner*.
+        text: L’année dernière, nous ___ de notre temps aux autres.
+        blanks: [[avons donné]]
+      - id: sont-arrives
+        type: multipleChoice
+        prompt: Les bénévoles ___ arrivés à 8 heures.
+        options:
+          - { text: sont, correct: true }
+          - {
+              text: ont,
+              feedback: '*Arriver* est un verbe de déplacement : il prend *être*. *Ils sont arrivés.*',
+            }
+          - {
+              text: est,
+              feedback: '*Les bénévoles* = *ils* (pluriel) : on dit *ils sont arrivés*.',
+            }
+      - id: ordre-voisin
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: J’ai aidé mon voisin hier.
+
+  - slug: volontariat-imparfait
+    title: 'L’imparfait : j’aidais, c’était'
+    minutes: 8
+    items:
+      - id: allais
+        type: multipleChoice
+        prompt: Quand j’étais petite, ___ au cinéma tous les week-ends.
+        options:
+          - { text: j’allais, correct: true }
+          - {
+              text: je suis allée,
+              feedback: '*Tous les week-ends* = une habitude au passé : on utilise l’imparfait, *j’allais*.',
+            }
+          - {
+              text: je vais,
+              feedback: '*Je vais* est au présent. Pour une habitude au passé : *j’allais*.',
+            }
+      - id: etait
+        type: fillBlank
+        prompt: Complète avec le verbe *être* à l’imparfait.
+        text: Mon grand-père ___ très gentil.
+        blanks: [[était]]
+      - id: terminaisons
+        type: matching
+        prompt: Associe chaque pronom au verbe *aider* à l’imparfait.
+        pairs:
+          - [je / tu, aidais]
+          - [il / elle, aidait]
+          - [nous, aidions]
+          - [vous, aidiez]
+          - [ils / elles, aidaient]
+      - id: auxiliaire
+        type: trueFalse
+        prompt: L’imparfait se forme avec un auxiliaire (*avoir* ou *être*).
+        answer: false
+        feedback:
+          correct: 'Bravo ! L’imparfait n’a pas d’auxiliaire : radical + *-ais, -ais, -ait, -ions, -iez, -aient*.'
+          incorrect: 'L’imparfait n’est pas un temps composé : pas d’auxiliaire. *J’aidais, nous faisions.*'
+      - id: regardais
+        type: multipleChoice
+        prompt: Je ___ la télé quand, tout d’un coup, le téléphone a sonné.
+        options:
+          - { text: regardais, correct: true }
+          - {
+              text: ai regardé,
+              feedback: 'Une action longue, coupée par une action courte : l’action longue est à l’imparfait, *je regardais*.',
+            }
+          - {
+              text: regarde,
+              feedback: '*Regarde* est au présent. L’action longue au passé est à l’imparfait : *je regardais*.',
+            }
+      - id: faisions-regardiez
+        type: fillBlank
+        prompt: Complète avec les verbes à l’imparfait.
+        text: Tous les soirs, nous ___ (faire) nos devoirs et vous ___ (regarder) la télé.
+        blanks: [[faisions], [regardiez]]
+      - id: aidais-vendredis
+        type: multipleChoice
+        prompt: Quand j’étais plus jeune, ___ des enfants à faire leurs devoirs tous les vendredis.
+        options:
+          - { text: j’aidais, correct: true }
+          - { text: j’ai aidais, feedback: 'L’imparfait n’a pas d’auxiliaire : *j’aidais*.' }
+          - {
+              text: j’aidions,
+              feedback: '*-ions* est la terminaison de *nous*. Avec *je* : *j’aidais*.',
+            }
+      - id: ordre-grand-pere
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Mon grand-père était très gentil.

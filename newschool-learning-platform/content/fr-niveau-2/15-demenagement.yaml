@@ -1,0 +1,565 @@
+# Cycle "Déménagement", converted from the French level 2 (conversational) digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-2
+slug: demenagement
+title: Déménagement
+goal: Parler de ses projets de déménagement au futur et demander des informations utiles dans une nouvelle ville.
+position: 15
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Le futur" and "Socialiser") are NEW: the notebook
+    has no self-study exercises. They were written from the cycle's two skills, its
+    summary rules, the activity examples and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Grammar correction: the summary said "Le futur simple sert à parler de plans… Deux
+    formes principales : Forme 1 : aller + infinitif (futur proche), Forme 2 : verbe
+    au futur simple". The futur proche is not a form of the futur simple. Rewritten:
+    "Pour parler du futur, il y a deux formes": the futur proche (aller au présent +
+    infinitif, for near or decided plans) and the futur simple (for plans and
+    predictions, often further away). Please confirm.
+  - >-
+    Added to the summary (the notebook gives only the endings and examples): how to
+    form the futur simple (infinitive + -ai, -as, -a, -ons, -ez, -ont; -re verbs drop
+    the final e: prendre → je prendrai), the irregular stems the cycle uses (aller →
+    j'irai, faire → je ferai, avoir → j'aurai, être → je serai) plus pouvoir → je
+    pourrai, venir → je viendrai, acheter → j'achèterai, the present of "aller" for
+    the futur proche, and a table for "déménager" in both forms. Please confirm.
+  - >-
+    Corrections: intro frame "L'année prochaine, je" was cut off → "L'année prochaine,
+    je ___ (futur simple)"; warm-up 2 asked in the futur simple but the frame was in
+    the futur proche, both are now given; Activity 4 "la Tour Eiffel" → "la tour
+    Eiffel"; Activity 1 adjective "excité" (in French it often means "agitated" or has
+    a sexual sense; a calque of "excited") → "impatient(e)"; adjectives in the bank
+    now show the feminine (heureux / heureuse…). The socialising rules were in "vous"
+    ("Soyez brefs…"); they now use "tu" like the rest of the course.
+  - >-
+    Activity 3 asks students to write as if in a local Facebook group. There is no
+    link, so nothing is left out; it stays an instruction. Activity 2 asks for 10
+    steps; the example steps come from the homework (part 3).
+  - >-
+    Homework: the five "Prompt pour Mori" parts are written as full Mori messages with
+    the notebook's questions and follow-up questions ("Relance") inside. Part 5 (Mori
+    writes a plan and the student corrects it) is kept, with an intro saying "Ici,
+    c'est toi le professeur".
+  - >-
+    The Quizlet link is kept without "?i=…&x=…". The "Réponse de l'élève 1/2/3" lines
+    are replaced by the answer boxes. The notebook gives no times and no
+    débutant / intermédiaire split for this cycle.
+  - >-
+    Vocabulary: "Ému / Impatient – נרגש" is split: "ému(e) – נרגש" and "impatient(e)
+    – מחכה בקוצר רוח" (impatient means looking forward to / impatient, not moved);
+    "Effrayé" glossed "מפוחד" as in the source; "Vivre – לחיות" → "לחיות / לגור".
+    Please confirm.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: demenagement-classe
+    title: 'Classe : Déménagement'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Déménagement
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Le futur
+            description: 'Le futur proche (*je vais déménager*) et le futur simple (*je déménagerai, j’irai, je ferai*)'
+          - name: Socialiser
+            description: 'Poser des questions et donner des informations simples et claires : *Où est le meilleur restaurant ?*'
+      - id: quizlet
+        type: externalLink
+        label: Déménagement sur Quizlet
+        url: https://quizlet.com/il/1083669420/conversational-french-2025-demenager-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. L’année prochaine, je ___ (futur simple).
+        example: Je m’appelle Lévanah. L’année prochaine, je partirai au Canada.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Veux-tu déménager ? Où ?
+            frame: Oui, je veux déménager à / en / au ___. / Non, je ne veux pas déménager.
+          - question: Avec qui déménageras-tu ?
+            frame: Je déménagerai avec ___. / Je vais déménager avec ___.
+          - question: Quand déménageras-tu ?
+            frame: Je déménagerai en ___.
+          - question: Que feras-tu avant de déménager ?
+            frame: 'Je vais ___ / Je ___ (faire mes valises, apprendre la langue, trouver un travail, me faire des amis, chercher un appartement, économiser de l’argent…).'
+          - question: Qu’est-ce qui s’améliorera après ton déménagement ? Nomme deux choses.
+            frame: J’aurai un meilleur travail. / J’aurai une nouvelle voiture. / Je sortirai plus souvent. ___
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : On déménage !'
+        skills: [Socialiser, Le futur]
+        steps:
+          - 'La classe est divisée en deux groupes. Groupe 1 : vous déménagez en **Europe**. Groupe 2 : vous déménagez en **Afrique**.'
+          - Chaque groupe écrit un **message à un ami** pour lui annoncer son projet et lui demander de l’aide pour les préparatifs.
+          - Lisez votre message à la classe.
+        wordBank:
+          [
+            heureux / heureuse,
+            inquiet / inquiète,
+            anxieux / anxieuse,
+            triste,
+            impatient / impatiente,
+          ]
+      - id: act1-message
+        type: discussionQuestions
+        title: Notre message
+        items:
+          - question: 'Salut ! J’ai enfin décidé : je déménage à / en / au ___ !'
+          - question: Je suis très ___ (heureux, inquiet, anxieux, triste, impatient).
+          - question: Avant de voyager, je vais ___.
+          - question: Peux-tu m’aider avec ___ ?
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : J’ai besoin d’un plan'
+        skills: [Le futur]
+        steps:
+          - Écris une **liste de tes projets futurs**, à court et à long terme.
+          - 'La liste a **10 étapes**. Étape 1 : la situation actuelle (*Aujourd’hui, je suis…*). Étape 10 : le but atteint (*Je suis heureux / heureuse dans ma nouvelle ville.*).'
+          - Décris les étapes pour arriver à ton but, puis présente ta liste.
+        example: |-
+          *Étape 1 : Aujourd’hui, je suis à Tel Aviv.*
+          *Étape 2 : Je vais économiser de l’argent.*
+          *Étape 3 : Je déménagerai en juillet.*
+          *Étape 10 : Je vis heureux dans ma nouvelle ville.*
+      - id: act2-steps
+        type: discussionQuestions
+        title: Mon plan
+        items:
+          - question: 'Étape 1 : Aujourd’hui, je suis ___.'
+          - question: 'Étape 2 : Je vais ___.'
+          - question: 'Étape 3 : Je ___ (futur simple).'
+          - question: 'Étapes 4 à 9 : ___'
+          - question: 'Étape 10 : ___'
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Qui peut m’aider ?'
+        skills: [Socialiser]
+        steps:
+          - Imagine que tu viens **d’arriver dans une nouvelle ville** et que tu as besoin d’informations.
+          - Écris un message pour demander de l’aide, comme dans un **groupe Facebook local**.
+          - Lis ton message au groupe.
+        example: '*Bonjour à tous ! Je viens d’arriver en ville. Où se trouve le meilleur café ? Quels sont les bons restaurants ? Comment payer le stationnement ?*'
+      - id: act3-message
+        type: discussionQuestions
+        title: Mon message
+        items:
+          - question: Où se trouve le meilleur ___ ?
+          - question: Quels sont les bons ___ ?
+          - question: Comment payer ___ ?
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Qu’est-ce que je vais faire ?'
+        skills: [Le futur]
+        steps:
+          - Choisis **une ville** où tu aimerais t’installer.
+          - Décris **ce que tu feras pendant une journée typique**. Utilise le futur simple.
+        example: >-
+          *Je déménagerai à Paris. Tous les matins, j’irai à la boulangerie. Je mangerai
+          beaucoup de fromage et je boirai beaucoup de vin. Je visiterai la tour Eiffel
+          tous les jours. Je prendrai le métro pour aller au travail. Je travaillerai avec
+          des Français. Je sortirai avec des amis après le travail.*
+      - id: act4-day
+        type: discussionQuestions
+        title: Ma journée dans ma nouvelle ville
+        items:
+          - question: Je déménagerai à ___.
+          - question: Le matin, ___.
+          - question: L’après-midi, ___.
+          - question: Le soir, ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **le futur** (activité 2 ou 4) et
+          **socialiser** (activité 1 ou 3).
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act2
+        anchor: act2
+        text: Chaque élève crée sa propre liste de 10 étapes. Les exemples des étapes 1, 2, 3 et 10 sont seulement des modèles.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Explique que les élèves viennent d’arriver dans une nouvelle ville et ont besoin
+          d’informations (le meilleur café, les bons restaurants, comment payer le
+          stationnement). Chacun écrit son message comme dans un groupe Facebook de la
+          ville.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: demenagement-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-futur
+        type: ruleSummary
+        skill: Le futur
+        rules:
+          - text: 'Pour parler de **plans** et de **prédictions**, il y a deux formes principales.'
+          - text: '**Forme 1 : le futur proche** = *aller* au présent (*vais, vas, va, allons, allez, vont*) + **infinitif**. On l’utilise souvent pour un projet proche ou déjà décidé.'
+            examples:
+              [Je vais déménager en Italie l’année prochaine., Je vais chercher un nouveau travail.]
+          - text: '**Forme 2 : le futur simple** = **infinitif** + **-ai, -as, -a, -ons, -ez, -ont**. Les verbes en *-re* perdent le *e* final (*prendre → je prendrai*). On l’utilise pour des plans et des prédictions, souvent plus lointains.'
+            examples: [Je déménagerai en Espagne., J’économiserai de l’argent avant de déménager.]
+          - text: 'Certains verbes ont un radical irrégulier, mais les terminaisons sont les mêmes.'
+            examples:
+              - 'aller → j’irai, faire → je ferai, avoir → j’aurai, être → je serai'
+              - 'pouvoir → je pourrai, venir → je viendrai, acheter → j’achèterai'
+      - id: futur-table
+        type: table
+        caption: 'Le futur de « déménager »'
+        header: [Pronom, Futur proche, Futur simple]
+        rows:
+          - [je, vais déménager, déménagerai]
+          - [tu, vas déménager, déménageras]
+          - [il / elle / on, va déménager, déménagera]
+          - [nous, allons déménager, déménagerons]
+          - [vous, allez déménager, déménagerez]
+          - [ils / elles, vont déménager, déménageront]
+      - id: rules-socialiser
+        type: ruleSummary
+        skill: Socialiser
+        rules:
+          - text: 'Socialiser, c’est **poser des questions et donner des informations simples et claires**. Sois **bref et précis** : donne l’information essentielle.'
+            examples: [Je déménagerai en juillet.]
+          - text: Pose des **questions directes et pratiques**.
+            examples: [Où est le meilleur restaurant ?, Comment payer le stationnement ?]
+          - text: Adresse-toi **à la bonne personne ou au bon groupe**.
+            examples:
+              - Pose tes questions dans un groupe Facebook de ta nouvelle ville, pas dans un groupe général.
+      - id: important
+        type: callout
+        tone: info
+        title: Le plus important
+        text: |-
+          Avec le **futur**, tu peux parler de tes projets de déménagement.
+          Pour **socialiser**, tu peux demander de l’aide et donner des informations simples quand tu arrives dans un nouvel endroit.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: demenagement-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-futur
+        type: aiTutorPrompt
+        title: 'Partie 1 : Futur simple, mes projets de déménagement'
+        message: |-
+          Bonjour Mori ! Pose-moi ces questions dans l’ordre. Attends ma réponse et corrige-moi si je n’utilise pas correctement le futur. Après chaque réponse, pose-moi la question de relance.
+          1. Veux-tu déménager ? (Relance : Pourquoi oui ou pourquoi non ?)
+          2. Où déménageras-tu ? (Relance : Quand exactement ?)
+          3. Avec qui vas-tu déménager ? (Relance : Et qui ne déménagera pas avec toi ?)
+          4. Que feras-tu avant de déménager ? (Relance : Qu’est-ce qui est le plus important dans cette liste ?)
+          5. Qu’est-ce qui s’améliorera après ton déménagement ? (Relance : Donne-moi deux exemples.)
+      - id: mori-socialiser
+        type: aiTutorPrompt
+        title: 'Partie 2 : Socialiser, demander et donner des informations'
+        message: |-
+          Bonjour Mori ! Pose-moi des questions comme si je venais d’arriver dans une nouvelle ville. Corrige mes réponses si elles ne sont pas courtes et claires.
+          1. Où est le meilleur restaurant de ta ville ?
+          2. Comment payer les transports publics ?
+          3. Quel endroit recommandes-tu de visiter en premier ?
+          4. Où puis-je rencontrer de nouvelles personnes ?
+          5. Quel est le meilleur quartier pour vivre ?
+      - id: mori-plan
+        type: aiTutorPrompt
+        title: 'Partie 3 : Mini-jeu « Mon plan en 10 étapes »'
+        intro: 'Exemple : *Étape 1 : Aujourd’hui, je suis à… · Étape 2 : Je vais… · Étape 3 : Je déménagerai en… · Étape 10 : Je vis heureux dans ma nouvelle ville.*'
+        message: >-
+          Bonjour Mori ! Guide-moi pour créer une liste de 10 étapes de mon déménagement,
+          du présent jusqu’à l’avenir. Demande-moi une étape à la fois et corrige mes
+          erreurs, s’il te plaît.
+      - id: mori-ecrit
+        type: aiTutorPrompt
+        title: 'Partie 4 : Production écrite guidée'
+        intro: |-
+          Exemple d’élève :
+          *Je déménagerai à Madrid l’année prochaine.*
+          *Je chercherai un travail avant de déménager.*
+          *J’achèterai une nouvelle voiture.*
+          *Où est le supermarché le plus proche ?*
+          *Comment payer le stationnement ici ?*
+        message: >-
+          Bonjour Mori ! Demande-moi d’écrire 5 phrases : 3 phrases au futur simple sur
+          mon déménagement et 2 questions pratiques pour socialiser. Ensuite, corrige mes
+          erreurs, s’il te plaît.
+      - id: mori-cloture
+        type: aiTutorPrompt
+        title: 'Partie 5 : Clôture'
+        intro: Ici, c’est toi le professeur !
+        message: >-
+          Bonjour Mori ! Écris ton plan de déménagement en trois phrases au futur, puis
+          pose-moi une question pratique comme si je vivais dans ta nouvelle ville. Je
+          corrigerai tes erreurs et je répondrai à ta question.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: demenagement-pratique
+    book: workbook
+    title: 'Pratique : Déménagement'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-futur
+        type: activity
+        activity: demenagement-futur
+      - id: ex-socialiser
+        type: activity
+        activity: demenagement-socialiser
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: demenagement-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots du déménagement
+        glossLang: he
+        link: https://quizlet.com/il/1083669420/conversational-french-2025-demenager-flash-cards/
+        items: &demenagement-words
+          - { term: déménager, gloss: לעבור דירה }
+          - { term: voyager, gloss: 'לנסוע, לטוס' }
+          - { term: économiser de l’argent, gloss: לחסוך כסף }
+          - { term: faire les valises, gloss: לארוז מזוודות }
+          - { term: trouver un travail, gloss: למצוא עבודה }
+          - { term: trouver un appartement, gloss: למצוא דירה }
+          - { term: apprendre la langue, gloss: ללמוד את השפה }
+          - { term: se faire des amis, gloss: לעשות חברים }
+          - { term: chercher, gloss: לחפש }
+          - { term: vivre, gloss: לחיות / לגור }
+          - { term: Je vais…, gloss: אני הולך / הולכת ל… }
+          - { term: Je déménagerai à…, gloss: אני אעבור דירה ל… }
+          - { term: Je ferai…, gloss: אני אעשה… }
+          - { term: Ça s’améliorera…, gloss: זה ישתפר… }
+          - { term: heureux / content, gloss: שמח }
+          - { term: effrayé, gloss: מפוחד }
+          - { term: anxieux, gloss: חרד }
+          - { term: triste, gloss: עצוב }
+          - { term: ému(e), gloss: נרגש }
+          - { term: impatient(e), gloss: מחכה בקוצר רוח }
+          - { term: restaurant, gloss: מסעדה }
+          - { term: supermarché, gloss: סופרמרקט }
+          - { term: pharmacie, gloss: בית מרקחת }
+          - { term: hôpital, gloss: בית חולים }
+          - { term: école, gloss: בית ספר }
+          - { term: université, gloss: אוניברסיטה }
+          - { term: parc, gloss: פארק }
+          - { term: cinéma, gloss: קולנוע }
+          - { term: bibliothèque, gloss: ספרייה }
+          - { term: marché, gloss: שוק }
+          - { term: centre commercial, gloss: קניון }
+          - { term: gare, gloss: תחנת רכבת }
+          - { term: aéroport, gloss: שדה תעופה }
+          - { term: hôtel, gloss: מלון }
+          - { term: quartier, gloss: שכונה }
+          - { term: ville, gloss: עיר }
+          - { term: ami, gloss: חבר }
+          - { term: famille, gloss: משפחה }
+          - { term: camarade / collègue, gloss: חבר / עמית }
+          - { term: groupe, gloss: קבוצה }
+          - { term: mieux / meilleur, gloss: טוב יותר }
+          - { term: pire, gloss: גרוע יותר }
+          - { term: plus, gloss: יותר }
+          - { term: moins, gloss: פחות }
+
+vocabulary:
+  - slug: demenagement
+    title: Déménagement
+    items: *demenagement-words
+
+activities:
+  - slug: demenagement-futur
+    title: 'Le futur : je vais déménager, je déménagerai'
+    minutes: 8
+    items:
+      - id: demenagerai
+        type: multipleChoice
+        prompt: L’année prochaine, je ___ en Espagne.
+        options:
+          - { text: déménagerai, correct: true }
+          - {
+              text: déménagera,
+              feedback: 'La terminaison *-a* est pour *il / elle*. Avec *je* : *-ai*, *je déménagerai*.',
+            }
+          - {
+              text: ai déménagé,
+              feedback: '*J’ai déménagé* est au passé. *L’année prochaine* parle du futur : *je déménagerai*.',
+            }
+      - id: economiserons
+        type: fillBlank
+        prompt: Complète avec le verbe *économiser* au futur simple.
+        text: Avant de déménager, nous ___ de l’argent.
+        blanks: [[économiserons]]
+      - id: irreguliers
+        type: matching
+        prompt: Associe chaque verbe à sa forme au futur simple.
+        pairs:
+          - [aller, j’irai]
+          - [faire, je ferai]
+          - [avoir, j’aurai]
+          - [être, je serai]
+          - [prendre, je prendrai]
+      - id: vais-chercher
+        type: multipleChoice
+        prompt: Je ___ chercher un nouveau travail. (futur proche)
+        options:
+          - { text: vais, correct: true }
+          - { text: vas, feedback: '*Vas* est pour *tu*. Avec *je* : *je vais chercher*.' }
+          - {
+              text: vais à,
+              feedback: 'Après *aller*, on met directement l’infinitif, sans *à* : *je vais chercher*.',
+            }
+      - id: terminaisons
+        type: trueFalse
+        prompt: 'Le futur simple se forme avec l’infinitif + les terminaisons *-ai, -as, -a, -ons, -ez, -ont*.'
+        answer: true
+        feedback:
+          correct: 'Bravo ! *déménager → je déménagerai, nous déménagerons*.'
+          incorrect: 'Si : infinitif + *-ai, -as, -a, -ons, -ez, -ont*. *Je déménagerai, nous déménagerons.*'
+      - id: irons-prendras
+        type: fillBlank
+        prompt: Complète avec les verbes au futur simple.
+        text: Tous les matins, nous ___ (aller) à la boulangerie et tu ___ (prendre) le métro.
+        blanks: [[irons], [prendras]]
+      - id: aurai
+        type: multipleChoice
+        prompt: Après mon déménagement, ___ un meilleur travail.
+        options:
+          - { text: j’aurai, correct: true }
+          - {
+              text: j’avoirai,
+              feedback: '*Avoir* a un radical irrégulier au futur : *aur-*. On dit *j’aurai*.',
+            }
+          - {
+              text: j’ai eu,
+              feedback: '*J’ai eu* est au passé. *Après mon déménagement* parle du futur : *j’aurai*.',
+            }
+      - id: ordre-metro
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Je prendrai le métro pour aller au travail.
+
+  - slug: demenagement-socialiser
+    title: 'Socialiser : demander et donner des informations'
+    minutes: 8
+    items:
+      - id: question-pratique
+        type: multipleChoice
+        prompt: Tu viens d’arriver dans une nouvelle ville et tu cherches un endroit pour manger. Quelle question est directe et pratique ?
+        options:
+          - { text: Où est le meilleur restaurant ?, correct: true }
+          - {
+              text: Tu aimes manger ?,
+              feedback: 'Cette question ne te donne pas d’information utile. Pose une question directe : *Où est le meilleur restaurant ?*',
+            }
+          - {
+              text: Qu’est-ce que tu as fait hier ?,
+              feedback: 'Cette question n’aide pas à trouver un restaurant. Pose une question directe : *Où est le meilleur restaurant ?*',
+            }
+      - id: bon-groupe
+        type: multipleChoice
+        prompt: Tu as déménagé à Lyon et tu veux savoir quel est le meilleur quartier pour vivre. Où poses-tu ta question ?
+        options:
+          - { text: Dans un groupe Facebook de Lyon., correct: true }
+          - {
+              text: Dans un groupe général de recettes.,
+              feedback: 'Adresse-toi au bon groupe : un groupe de ta nouvelle ville.',
+            }
+          - {
+              text: Dans un groupe de football d’un autre pays.,
+              feedback: 'Adresse-toi au bon groupe : un groupe de ta nouvelle ville.',
+            }
+      - id: bref
+        type: trueFalse
+        prompt: 'Pour socialiser, une réponse brève et précise suffit, par exemple : *Je déménagerai en juillet.*'
+        answer: true
+        feedback:
+          correct: Bravo ! Une réponse courte et claire suffit.
+          incorrect: 'Sois bref et précis : donne l’information essentielle. *Je déménagerai en juillet.* est clair et suffisant.'
+      - id: ou-quand
+        type: fillBlank
+        prompt: Complète les questions avec *Où*, *Quand* ou *Comment*.
+        text: ___ se trouve la gare ? — À côté du marché. ___ déménageras-tu ? — En juillet.
+        blanks: [[Où], [Quand]]
+        wordBank: [Où, Quand, Comment]
+      - id: reponses
+        type: matching
+        prompt: Associe chaque question à une réponse courte.
+        pairs:
+          - [Quand déménageras-tu ?, En juillet.]
+          - [Avec qui vas-tu déménager ?, Avec ma famille.]
+          - [Où est la pharmacie ?, À côté du supermarché.]
+          - [Comment payer les transports publics ?, Avec une carte.]
+      - id: lieux
+        type: fillBlank
+        prompt: Complète avec un lieu de la ville.
+        text: Pour prendre le train, je vais à la ___. Pour acheter des médicaments, je vais à la ___.
+        blanks: [[gare], [pharmacie]]
+        wordBank: [gare, pharmacie, bibliothèque]
+      - id: message-clair
+        type: multipleChoice
+        prompt: Quel message est le meilleur pour un groupe Facebook de ta nouvelle ville ?
+        options:
+          - {
+              text: 'Bonjour à tous ! Je viens d’arriver à Lyon. Où se trouve le meilleur café ?',
+              correct: true,
+            }
+          - {
+              text: Bonjour. Aidez-moi.,
+              feedback: 'Ce message n’est pas précis : on ne sait pas ce que tu cherches. Pose une question directe.',
+            }
+          - {
+              text: 'Bonjour ! Je m’appelle Dana, j’aime le cinéma, la musique, les voyages et la cuisine, et j’ai deux chats.',
+              feedback: 'Ce message est long et ne pose pas de question. Sois bref et pose une question pratique.',
+            }
+      - id: ordre-supermarche
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Le supermarché est à côté de la gare.
