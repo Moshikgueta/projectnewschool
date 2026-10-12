@@ -1,0 +1,628 @@
+# Cycle "Volontariato e aiuto agli altri", converted from the Italian level 2 digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-livello-2
+slug: volontariato
+title: Volontariato e aiuto agli altri
+goal: Raccontare esperienze di volontariato con il passato prossimo e descrivere il passato con l'imperfetto.
+position: 18
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Passato prossimo" and "Imperfetto") are NEW: the notebook
+    has no self-study exercises. They were written from the cycle's two skills, its summary
+    rules, the activity examples and its vocabulary. Please check level, wording and every
+    right answer before students see them.
+  - >-
+    Grammar check: the passato prossimo tables (aiutare, ricevere, offrire), the essere
+    agreement examples and the imperfetto tables (aiutare, ricevere, offrire, essere, fare,
+    dire) are correct. The tables were merged into two tables. A short line was ADDED to
+    the passato prossimo rule ("con avere il participio non cambia") to contrast with
+    essere.
+  - >-
+    Corrections: warm-up 1 example "Una volta ho aiutato un amico che si era trasferito. Ho
+    portato scatole…" (trapassato, and the friend had already moved) → "Una volta ho aiutato
+    un amico a traslocare. Ho portato le scatole e poi ho pulito la casa con lui."; homework
+    reading text "mentre giocavano fuori" → "mentre i bambini giocavano fuori" (the subject
+    was unclear, and question 2 says "i bambini"); homework model "abbiamo organizzato cibo e
+    vestiti" → "abbiamo distribuito cibo e vestiti" (you organise an event, not food).
+  - >-
+    Activity 1 answer key: the notebook gives "la comunità è stata molto grata". "Era molto
+    grata" (a state, imperfetto) is at least as natural; the teacher note accepts both.
+    Warm-up 6 uses the congiuntivo (pensavo che fosse / penso che sia), above A2: kept as a
+    fixed frame from the notebook. Please confirm.
+  - >-
+    Homework: the notebook's "Compito" is written work (4 parts) with no Mori messages. It is
+    kept with answer boxes in the homework section. The Part 2 solutions (lavoravano,
+    organizzavano, aiutavo, arrivavano, davamo) are moved to a teacher note.
+  - >-
+    Activity 3 needs a short video or story about volunteering chosen by the teacher; the
+    notebook gives no link. The lesson slides are a gamma.app link, which is not allowed on
+    the platform: left out and mentioned in a teacher note. The notebook has no lesson plan or
+    activity times; the teacher note suggests a choice.
+  - >-
+    Vocabulary: "Senzatetto – חסר בית" → "חסר בית / חסרי בית" (senzatetto does not change in
+    the plural); "Gratificante – מספק" → "מספק / מתגמל". Please confirm.
+  - >-
+    The Quizlet link is kept without its "?new" parameter. The "Risposta dello studente
+    1/2/3" lines are replaced by the answer boxes. The empty "Data / Partecipanti" lines were
+    left out.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: volontariato-classe
+    title: 'In classe: Volontariato e aiuto agli altri'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Volontariato e aiuto agli altri
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Passato prossimo
+            description: 'Raccontare esperienze finite: *ho aiutato, abbiamo raccolto, siamo andati*'
+          - name: Imperfetto
+            description: 'Descrivere abitudini, emozioni e situazioni nel passato: *aiutavo, era, mi sentivo*'
+      - id: quizlet
+        type: externalLink
+        label: Volontariato e aiuto agli altri su Quizlet
+        url: https://quizlet.com/br/1191222914/volontariato-e-aiuto-agli-altri-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazioni
+      - id: intro
+        type: sentenceFrame
+        prompt: Presentati e di' una cosa che hai fatto per aiutare gli altri.
+        frame: Mi chiamo ___. Una volta ho aiutato ___. Quando aiutavo, mi sentivo ___.
+        example: Mi chiamo Marco. Una volta ho preparato cibo per alcune famiglie della mia comunità. Quando aiutavo, mi sentivo utile e felice.
+      - id: intro-variant
+        type: callout
+        tone: info
+        title: Variante
+        text: '*Non ho mai fatto volontariato, ma una volta ho aiutato ___. In futuro vorrei fare volontariato con ___.*'
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Racconta una situazione in cui hai aiutato qualcuno.
+            frame: 'Una volta ho aiutato ___. Ho ___ e poi ___. (Es.: Una volta ho aiutato un amico a traslocare. Ho portato le scatole e poi ho pulito la casa con lui.)'
+          - question: Hai mai fatto volontariato? Dove? Cosa hai fatto?
+            frame: 'Sì, ho fatto volontariato a / in ___. Ho ___. / No, non ho mai fatto volontariato, ma vorrei ___. (Es.: Sì, ho fatto volontariato in una scuola. Ho aiutato i bambini con i compiti.)'
+          - question: Conosci un'organizzazione non profit che ammiri? Che cosa fa?
+            frame: "Conosco ___. Questa organizzazione aiuta ___. (Es.: Conosco un'organizzazione che aiuta i senzatetto. Offre cibo, vestiti e supporto.)"
+          - question: Secondo te, perché le persone fanno volontariato?
+            frame: 'Secondo me, le persone fanno volontariato perché ___. Quando aiutano gli altri, si sentono ___. (Es.: perché vogliono sentirsi utili e aiutare la comunità.)'
+          - question: Quando eri più giovane, aiutavi spesso gli altri? In che modo?
+            frame: 'Quando ero più giovane, aiutavo ___. Di solito ___. (Es.: aiutavo mia nonna. Di solito facevo la spesa per lei.)'
+          - question: Cosa pensavi del volontariato prima? E cosa ne pensi adesso?
+            frame: 'Prima pensavo che il volontariato fosse ___. Adesso penso che sia ___. (Es.: difficile… importante e molto umano.)'
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Gara di volontariato'
+        skills: [Passato prossimo, Imperfetto]
+        steps:
+          - Lavora in coppia o da solo / da sola.
+          - Completa il testo con il verbo giusto nella forma giusta (passato prossimo o imperfetto). Usa la banca dei verbi.
+          - Quando hai finito, di' **Fatto!**
+          - "Discussione: quali verbi sono al passato prossimo? Quali all'imperfetto? Perché usiamo l'imperfetto in «mentre lavoravano»? Perché usiamo il passato prossimo in «hanno aiutato»?"
+        wordBank: [avere, andare, raccogliere, lavorare, essere, aiutare, essere]
+      - id: act1-text
+        type: discussionQuestions
+        title: Completa il testo
+        items:
+          - question: La settimana scorsa, molte persone della nostra città ___ bisogno di aiuto.
+          - question: Un gruppo di volontari ___ al centro comunitario.
+          - question: I volontari ___ cibo, vestiti e medicine.
+          - question: Mentre ___, parlavano con le famiglie e ascoltavano le loro storie.
+          - question: La situazione ___ difficile, ma tutti erano molto motivati.
+          - question: Alla fine della giornata, i volontari ___ molte persone e la comunità ___ molto grata.
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Era un volontariato stranissimo!'
+        skills: [Imperfetto, Passato prossimo]
+        steps:
+          - In coppia, inventate il lavoro di volontariato più strano, divertente o assurdo possibile. La storia può essere finta.
+          - Completate il modello qui sotto.
+          - Ogni coppia presenta la propria organizzazione alla classe.
+          - "Gli altri votano: l'organizzazione più strana, più divertente, più utile e più assurda."
+        example: |-
+          *Il nome dell'organizzazione era «Gatti senza Wi-Fi».*
+          *Questa organizzazione aiutava gatti tristi che non avevano Internet.*
+          *Ogni giorno noi portavamo piccoli computer ai gatti e insegnavamo loro a guardare video di uccelli.*
+          *Il nostro ruolo era parlare con i gatti e controllare se erano felici.*
+          *Un giorno abbiamo organizzato una grande festa per tutti i gatti del quartiere.*
+          *Alla fine, l'organizzazione ha chiuso perché i gatti hanno imparato a usare Internet meglio di noi.*
+      - id: act2-model
+        type: discussionQuestions
+        title: La nostra organizzazione
+        items:
+          - question: Il nome dell'organizzazione era ___.
+          - question: Questa organizzazione aiutava ___.
+          - question: Ogni giorno noi ___.
+          - question: Il nostro ruolo era ___.
+          - question: Un giorno abbiamo ___.
+          - question: Alla fine, l'organizzazione ha chiuso perché ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Tempo di storia o video'
+        skills: [Passato prossimo, Imperfetto]
+        steps:
+          - "Guarda il video breve o ascolta la storia dell'insegnante sul volontariato."
+          - Rispondi a voce alle domande di comprensione.
+          - Discuti le domande finali con la classe.
+      - id: act3-comprehension
+        type: discussionQuestions
+        title: Domande di comprensione
+        items:
+          - question: Chi era il volontario?
+          - question: Chi ha aiutato?
+          - question: Cosa ha fatto per aiutare?
+          - question: Com'era la situazione all'inizio?
+          - question: Come si è sentita la persona aiutata?
+          - question: Come si sentiva il volontario?
+          - question: Perché questa storia è importante?
+      - id: act3-discussion
+        type: discussionQuestions
+        title: Discussione
+        items:
+          - question: Ti è piaciuta la storia? Perché?
+          - question: Hai mai visto una situazione simile?
+          - question: Secondo te, aiutare gli altri cambia anche la persona che aiuta?
+          - question: Che tipo di volontariato è più importante nella tua città?
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Dibattito sul volontariato'
+        skills: [Passato prossimo, Imperfetto]
+        steps:
+          - 'Tema: **Gli studenti dovrebbero fare volontariato come parte del percorso scolastico o universitario?**'
+          - 'Situazione: una scuola vuole creare una nuova regola. Ogni studente dovrà fare 50 ore di volontariato prima del diploma. Alcune persone pensano che sia una buona idea, perché il volontariato aiuta a sviluppare responsabilità e solidarietà. Altre persone pensano che non sia giusto, perché gli studenti hanno già molti impegni.'
+          - 'La classe si divide in due gruppi. Gruppo A: il volontariato obbligatorio è una buona idea. Gruppo B: il volontariato obbligatorio non è una buona idea.'
+          - Ogni gruppo prepara 3 argomenti, con esempi personali ed esperienze passate.
+          - Ogni gruppo presenta la propria opinione. Ogni studente dice almeno una frase.
+          - "Ogni gruppo risponde all'argomento dell'altro gruppo."
+          - 'Riflessione finale: quale gruppo ha presentato gli argomenti più convincenti? Quale esperienza passata è stata più interessante? Il volontariato deve essere obbligatorio o volontario? Perché?'
+      - id: act4-phrases
+        type: discussionQuestions
+        title: Frasi utili
+        items:
+          - question: Secondo noi, il volontariato obbligatorio è positivo / negativo perché ___.
+          - question: Quando uno studente fa volontariato, impara a ___.
+          - question: Una volta abbiamo visto / fatto / aiutato ___.
+          - question: Secondo noi, gli studenti si sentono ___ quando aiutano gli altri.
+          - question: Però, alcuni studenti hanno ___.
+      - id: act4-reply
+        type: callout
+        tone: info
+        title: Per rispondere all'altro gruppo
+        text: |-
+          *Capisco il vostro punto, ma secondo noi ___.*
+          *È vero che ___, però ___.*
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **passato prossimo** (azioni finite) e **imperfetto**
+          (abitudini, emozioni, descrizioni). Tutte le attività praticano le due abilità
+          insieme. Il quaderno non indica quali attività scegliere né i tempi: per esempio
+          Attività 1 + 2, oppure Attività 3 + 4. La presentazione della lezione (gamma.app)
+          non è disponibile sulla piattaforma.
+      - id: n-objectives
+        anchor: null
+        text: >-
+          Obiettivi: parlare di una volta in cui hanno aiutato qualcuno; raccontare
+          un'esperienza di volontariato; distinguere tra passato prossimo e imperfetto;
+          descrivere cosa facevano, come si sentivano e com'era la situazione; parlare
+          dell'importanza del volontariato; esprimere opinioni semplici sul volontariato
+          obbligatorio.
+      - id: n-intro
+        anchor: intro
+        text: Fai prima il tuo esempio. Chi non ha mai fatto volontariato può usare la variante.
+      - id: n-warmup
+        anchor: warmup-title
+        text: Fai almeno due domande a ogni studente. La domanda 6 usa il congiuntivo (fosse / sia) come frase fissa; non serve spiegarlo.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Soluzione possibile: avevano, è andato, hanno raccolto, lavoravano, era, hanno
+          aiutato, è stata (accetta anche «era molto grata»). Dopo la correzione fai le
+          quattro domande della discussione.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Prepara un video breve (massimo 3 minuti), chiaro, coinvolgente e adatto al livello
+          A2, oppure racconta una storia semplice di volontariato. Il quaderno non indica un
+          video.
+      - id: n-act4
+        anchor: act4
+        text: Dividi la classe in due gruppi e dai qualche minuto per preparare 3 argomenti con le frasi utili.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: volontariato-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-pp
+        type: ruleSummary
+        skill: Passato prossimo
+        rules:
+          - text: 'Usiamo il **passato prossimo** per parlare di azioni finite nel passato.'
+            examples:
+              - Ho aiutato un amico.
+              - Ho fatto volontariato in una scuola.
+              - Abbiamo raccolto vestiti.
+              - I volontari hanno preparato cibo.
+              - Siamo andati al centro comunitario.
+          - text: 'Si forma con **avere / essere al presente + participio passato**. Con **avere** il participio non cambia.'
+            examples: [Io ho aiutato., Noi abbiamo ricevuto., Loro hanno offerto.]
+          - text: 'Usiamo **essere** con molti verbi di movimento e di cambiamento. Con **essere** il participio cambia secondo genere e numero.'
+            examples:
+              - Sono andato / andata.
+              - Siamo arrivati / arrivate.
+              - È diventato / diventata.
+              - Sono tornato / tornata.
+              - Marco è andato. Anna è andata.
+              - Marco e Luca sono andati. Anna e Sara sono andate.
+      - id: pp-table
+        type: table
+        caption: Passato prossimo con avere
+        header: [Persona, aiutare, ricevere, offrire]
+        rows:
+          - [io, ho aiutato, ho ricevuto, ho offerto]
+          - [tu, hai aiutato, hai ricevuto, hai offerto]
+          - [lui / lei, ha aiutato, ha ricevuto, ha offerto]
+          - [noi, abbiamo aiutato, abbiamo ricevuto, abbiamo offerto]
+          - [voi, avete aiutato, avete ricevuto, avete offerto]
+          - [loro, hanno aiutato, hanno ricevuto, hanno offerto]
+      - id: rules-imp
+        type: ruleSummary
+        skill: Imperfetto
+        rules:
+          - text: '**Abitudini nel passato**'
+            examples:
+              - Quando ero volontario, aiutavo ogni settimana.
+              - Ogni venerdì andavo al centro comunitario.
+              - Di solito preparavamo pasti per le famiglie.
+          - text: '**Situazioni, descrizioni, emozioni e stati nel passato**'
+            examples:
+              - La comunità aveva bisogno di aiuto.
+              - La situazione era difficile.
+              - I volontari erano stanchi, ma felici.
+              - Faceva freddo, ma continuavamo a lavorare.
+          - text: "**Un'azione in corso** (imperfetto) interrotta da **un'azione specifica** (passato prossimo), spesso con *mentre*."
+            examples:
+              - Mentre i volontari lavoravano, è arrivata una famiglia.
+              - Mentre preparavamo il cibo, il coordinatore ha telefonato.
+              - Mentre parlavo con i bambini, ho capito quanto era importante il progetto.
+      - id: imp-table
+        type: table
+        caption: Imperfetto
+        header: [Persona, aiutare, ricevere, offrire, essere, fare, dire]
+        rows:
+          - [io, aiutavo, ricevevo, offrivo, ero, facevo, dicevo]
+          - [tu, aiutavi, ricevevi, offrivi, eri, facevi, dicevi]
+          - [lui / lei, aiutava, riceveva, offriva, era, faceva, diceva]
+          - [noi, aiutavamo, ricevevamo, offrivamo, eravamo, facevamo, dicevamo]
+          - [voi, aiutavate, ricevevate, offrivate, eravate, facevate, dicevate]
+          - [loro, aiutavano, ricevevano, offrivano, erano, facevano, dicevano]
+      - id: imp-examples
+        type: examples
+        items:
+          - { text: 'Quando ero volontario, aiutavo a organizzare eventi ogni settimana.' }
+          - { text: "Prima, l'organizzazione riceveva meno donazioni." }
+          - { text: I volontari offrivano supporto alle famiglie. }
+          - { text: I volontari erano molto motivati. }
+          - { text: Ogni settimana facevamo volontariato. }
+          - { text: Il coordinatore diceva sempre grazie ai volontari. }
+      - id: pp-or-imp
+        type: table
+        caption: Passato prossimo o imperfetto?
+        header:
+          ['Passato prossimo (azioni finite)', 'Imperfetto (abitudini, descrizioni, contesto)']
+        rows:
+          - [Ho aiutato una famiglia., Aiutavo ogni settimana.]
+          - [Abbiamo raccolto vestiti., La situazione era difficile.]
+          - [Siamo andati al rifugio., I volontari erano stanchi.]
+          - [Il coordinatore ha ringraziato tutti., Avevamo poco tempo.]
+      - id: together
+        type: callout
+        tone: info
+        title: Insieme
+        text: |-
+          *Mentre aiutavamo le famiglie, è arrivato altro cibo.*
+          *La comunità aveva bisogno di aiuto, quindi abbiamo organizzato una raccolta.*
+          *Ero nervoso, ma ho parlato con molte persone.*
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le regole con la classe e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: volontariato-compiti
+    title: Compiti
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti
+      - id: how
+        type: text
+        text: Usa il **passato prossimo** per le azioni specifiche e l'**imperfetto** per abitudini, descrizioni ed emozioni. Scrivi le risposte negli spazi qui sotto.
+      - id: part1-title
+        type: heading
+        level: 3
+        text: 'Parte 1: Domande e risposte'
+      - id: part1
+        type: discussionQuestions
+        items:
+          - question: Quando è stata l'ultima volta che hai aiutato qualcuno?
+          - question: Hai mai fatto volontariato? Dove?
+          - question: Cosa facevi quando eri volontario / volontaria?
+          - question: Com'era l'ambiente?
+          - question: Come ti sentivi mentre aiutavi?
+          - question: Hai aiutato qualcuno quest'anno? In che modo?
+      - id: part2-title
+        type: heading
+        level: 3
+        text: "Parte 2: Dal presente all'imperfetto"
+      - id: part2
+        type: discussionQuestions
+        title: Cambia le frasi dal presente all'imperfetto.
+        items:
+          - question: 'I volontari lavorano molto durante il giorno. → Ricordo che i volontari ___ molto durante il giorno.'
+          - question: 'Ogni anno, i volontari organizzano eventi per raccogliere donazioni. → Nel 2022, i volontari ___ eventi per raccogliere donazioni ogni mese.'
+          - question: 'Aiuto le famiglie che si trasferiscono. → Prima, io ___ le famiglie che si trasferivano.'
+          - question: 'Durante gli eventi, i volontari arrivano presto per prepararsi. → Durante gli eventi, i volontari ___ presto per prepararsi.'
+          - question: 'Ogni giorno, noi diamo cibo ai senzatetto. → Ogni giorno, noi ___ cibo ai senzatetto.'
+      - id: part3-title
+        type: heading
+        level: 3
+        text: 'Parte 3: Comprensione della lettura'
+      - id: part3-text
+        type: text
+        text: |-
+          L'estate scorsa, un gruppo di volontari ha deciso di aiutare in una scuola per bambini in difficoltà. Ogni giorno, i volontari lavoravano con i bambini, insegnavano loro a leggere e preparavano piccoli spuntini.
+          Un giorno, mentre i bambini giocavano fuori, è arrivata una famiglia che non aveva una casa. I volontari hanno offerto il loro supporto e hanno dato vestiti e cibo alla famiglia. Alla fine della giornata, tutti si sentivano felici perché avevano aiutato qualcuno.
+      - id: part3
+        type: discussionQuestions
+        title: Rispondi con frasi complete.
+        items:
+          - question: Che cosa facevano i volontari ogni giorno?
+          - question: Che cosa è successo mentre i bambini giocavano fuori?
+          - question: Che cosa hanno offerto i volontari alla famiglia?
+          - question: Perché tutti si sentivano felici alla fine della giornata?
+      - id: part4-title
+        type: heading
+        level: 3
+        text: 'Parte 4: Scrittura'
+      - id: part4-model
+        type: callout
+        tone: info
+        title: Modello
+        text: |-
+          *Il mese scorso sono andato a un centro di volontariato per aiutare i senzatetto. Ero un po' nervoso, ma anche molto motivato. Durante il giorno, abbiamo distribuito cibo e vestiti. Mentre lavoravamo, molti volontari parlavano con le famiglie. La situazione era difficile, ma tutti volevano aiutare. Alla fine, mi sono sentito molto felice perché ho fatto qualcosa di utile.*
+      - id: part4
+        type: reflection
+        prompt: Scrivi un breve paragrafo di 5-7 frasi su un giorno in cui hai aiutato qualcuno o hai partecipato a un'attività di volontariato.
+    teacherNotes:
+      - id: n-part2
+        anchor: part2
+        text: 'Soluzioni: 1. lavoravano; 2. organizzavano; 3. aiutavo; 4. arrivavano; 5. davamo.'
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: volontariato-pratica
+    book: workbook
+    title: 'Pratica: Volontariato e aiuto agli altri'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-passato-prossimo
+        type: activity
+        activity: volontariato-passato-prossimo
+      - id: ex-imperfetto
+        type: activity
+        activity: volontariato-imperfetto
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: volontariato-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole del volontariato
+        glossLang: he
+        link: https://quizlet.com/br/1191222914/volontariato-e-aiuto-agli-altri-flash-cards/
+        items: &volontariato-words
+          - { term: volontario, gloss: מתנדב }
+          - { term: volontaria, gloss: מתנדבת }
+          - { term: volontariato, gloss: התנדבות }
+          - { term: aiutare, gloss: לעזור }
+          - { term: aiuto, gloss: עזרה }
+          - { term: comunità, gloss: קהילה }
+          - { term: donare, gloss: לתרום }
+          - { term: offrire, gloss: להציע / לתת }
+          - { term: ricevere, gloss: לקבל }
+          - { term: supporto, gloss: תמיכה }
+          - { term: solidarietà, gloss: סולידריות }
+          - { term: gentilezza, gloss: אדיבות / טוב לב }
+          - { term: condividere, gloss: לשתף }
+          - { term: prendersi cura di, gloss: לדאוג ל... }
+          - { term: avere bisogno di, gloss: להזדקק ל... }
+          - { term: azione, gloss: פעולה }
+          - { term: impatto, gloss: השפעה }
+          - { term: beneficenza, gloss: צדקה }
+          - { term: contributo, gloss: תרומה }
+          - { term: partecipare, gloss: להשתתף }
+          - { term: organizzazione non profit, gloss: ארגון ללא מטרת רווח }
+          - { term: competenze, gloss: מיומנויות }
+          - { term: abilità, gloss: יכולות }
+          - { term: rifugio, gloss: מקלט }
+          - { term: senzatetto, gloss: חסר בית / חסרי בית }
+          - { term: famiglia in difficoltà, gloss: משפחה במצוקה }
+          - { term: raccogliere, gloss: לאסוף }
+          - { term: distribuire, gloss: לחלק }
+          - { term: donazioni, gloss: תרומות }
+          - { term: evento, gloss: אירוע }
+          - { term: coordinatore, gloss: רכז }
+          - { term: gratificante, gloss: מספק / מתגמל }
+          - { term: utile, gloss: מועיל }
+          - { term: motivato, gloss: מלא מוטיבציה }
+          - { term: una volta, gloss: פעם אחת }
+          - { term: mentre, gloss: בזמן ש }
+
+vocabulary:
+  - slug: volontariato
+    title: Volontariato e aiuto agli altri
+    items: *volontariato-words
+
+activities:
+  - slug: volontariato-passato-prossimo
+    title: 'Passato prossimo: ho aiutato, siamo andati'
+    minutes: 8
+    items:
+      - id: ho-aiutato
+        type: multipleChoice
+        prompt: Ieri io ___ un amico.
+        options:
+          - { text: ho aiutato, correct: true }
+          - { text: sono aiutato, feedback: '*Aiutare* vuole *avere*: *ho aiutato*.' }
+          - {
+              text: ha aiutato,
+              feedback: '*Ha aiutato* è per *lui / lei*. Per *io* usiamo *ho aiutato*.',
+            }
+      - id: anna-andata
+        type: fillBlank
+        prompt: Completa con il participio di *andare*.
+        text: Anna è ___ al centro comunitario.
+        blanks: [[andata]]
+      - id: sono-andati
+        type: multipleChoice
+        prompt: Marco e Luca ___ andati al rifugio.
+        options:
+          - { text: sono, correct: true }
+          - {
+              text: hanno,
+              feedback: '*Andare* è un verbo di movimento: vuole *essere*. *Sono andati.*',
+            }
+          - { text: è, feedback: '*Marco e Luca* è plurale (loro): *sono andati*.' }
+      - id: unisci-participi
+        type: matching
+        prompt: Unisci ogni verbo al suo participio passato.
+        pairs:
+          - [aiutare, aiutato]
+          - [ricevere, ricevuto]
+          - [offrire, offerto]
+          - [fare, fatto]
+          - [raccogliere, raccolto]
+      - id: accordo-essere
+        type: trueFalse
+        prompt: 'Con *essere*, il participio cambia secondo genere e numero: *Anna e Sara sono andate.*'
+        answer: true
+        feedback:
+          correct: Giusto! *Anna e Sara* = femminile plurale → *andate*.
+          incorrect: 'È vero: con *essere* il participio cambia. *Anna e Sara sono andate.*'
+      - id: abbiamo-raccolto
+        type: fillBlank
+        prompt: Completa con *avere*.
+        text: Noi ___ raccolto vestiti per le famiglie.
+        blanks: [[abbiamo]]
+      - id: arrivate
+        type: multipleChoice
+        prompt: Anna e Sara sono ___ al centro.
+        options:
+          - { text: arrivate, correct: true }
+          - {
+              text: arrivati,
+              feedback: '*Anna e Sara* sono due donne: femminile plurale, *arrivate*.',
+            }
+          - { text: arrivata, feedback: '*Anna e Sara* è plurale: *arrivate*.' }
+      - id: ordina-preparato
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: I volontari hanno preparato cibo.
+
+  - slug: volontariato-imperfetto
+    title: 'Imperfetto: aiutavo, era, facevamo'
+    minutes: 8
+    items:
+      - id: aiutavo
+        type: multipleChoice
+        prompt: Quando ero volontario, ___ ogni settimana.
+        options:
+          - { text: aiutavo, correct: true }
+          - {
+              text: ho aiutato,
+              feedback: "*Ogni settimana* è un'abitudine nel passato: usiamo l'imperfetto, *aiutavo*.",
+            }
+          - { text: aiutavano, feedback: '*Aiutavano* è per *loro*. Per *io* usiamo *aiutavo*.' }
+      - id: era
+        type: fillBlank
+        prompt: Completa con l'imperfetto di *essere*.
+        text: La situazione ___ difficile, ma i volontari ___ molto motivati.
+        blanks: [[era], [erano]]
+      - id: unisci-fare
+        type: matching
+        prompt: Unisci ogni persona alla forma giusta di *fare* all'imperfetto.
+        pairs:
+          - [io, facevo]
+          - [tu, facevi]
+          - [lui / lei, faceva]
+          - [noi, facevamo]
+          - [loro, facevano]
+      - id: lavoravano
+        type: multipleChoice
+        prompt: Mentre i volontari ___, è arrivata una famiglia.
+        options:
+          - { text: lavoravano, correct: true }
+          - {
+              text: hanno lavorato,
+              feedback: "Con *mentre* parliamo di un'azione in corso: usiamo l'imperfetto, *lavoravano*.",
+            }
+          - { text: lavorava, feedback: '*I volontari* è plurale (loro): *lavoravano*.' }
+      - id: azioni-finite
+        type: trueFalse
+        prompt: "Usiamo l'imperfetto per un'azione finita e specifica, per esempio: *Ho aiutato una famiglia.*"
+        answer: false
+        feedback:
+          correct: "Giusto! Per un'azione finita usiamo il passato prossimo. L'imperfetto è per abitudini, descrizioni ed emozioni."
+          incorrect: "*Ho aiutato* è passato prossimo: lo usiamo per azioni finite. L'imperfetto è per abitudini, descrizioni ed emozioni."
+      - id: davamo
+        type: fillBlank
+        prompt: Cambia il verbo dal presente all'imperfetto (*diamo* → ?).
+        text: Ogni giorno, noi ___ cibo ai senzatetto.
+        blanks: [[davamo]]
+      - id: ha-telefonato
+        type: multipleChoice
+        prompt: Mentre preparavamo il cibo, all'improvviso il coordinatore ___.
+        options:
+          - { text: ha telefonato, correct: true }
+          - {
+              text: telefonava,
+              feedback: "*All'improvviso*: è un'azione specifica che interrompe. Usiamo il passato prossimo, *ha telefonato*.",
+            }
+          - {
+              text: hanno telefonato,
+              feedback: '*Il coordinatore* è singolare (lui): *ha telefonato*.',
+            }
+      - id: ordina-stanchi
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: I volontari erano stanchi, ma felici.
