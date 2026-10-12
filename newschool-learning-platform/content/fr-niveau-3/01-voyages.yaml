@@ -1,0 +1,589 @@
+# Cycle "Voyages", converted from the French level 3 digital notebook
+# ("Cahier digital 2026 - français niveau 3", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-3
+slug: voyages
+title: Voyages
+goal: Raconter ses voyages au passé composé et à l’imparfait, et parler d’une action antérieure avec le plus-que-parfait.
+position: 1
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Le passé composé et l’imparfait" and "Le
+    plus-que-parfait") are NEW: the notebook has no self-study exercises. They were written
+    from the cycle's summary rules, the activity examples and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Summary additions (not in the source, please confirm): the list of verbs that take
+    être in the passé composé (movement verbs and pronominal verbs) with agreement of the
+    participle; agreement of the participle in the plus-que-parfait with être (elle était
+    partie); a conjugation table for the passé composé, the imparfait and the
+    plus-que-parfait. The source gives the imparfait endings on one line only.
+  - >-
+    Corrections in the summary: "Ce matin je me suis réveillé à 6h" → "Ce matin, je me
+    suis réveillé(e) à 6 h"; "Je me suis levé, je me suis douché, je me suis habillé" →
+    with (e) on each participle; "Il pleuvait quand je suis sorti." → "sorti(e)";
+    "Est-ce que tu as déjà été à Londres ?" → "Est-ce que tu es déjà allé(e) à Londres ?"
+    (« as été » is common in speech but « es allé(e) » is the standard form to teach;
+    change back if you prefer); "radical de “nous” au présent (sans -ons)" kept, with the
+    example nous mangeons → je mangeais added. Missing full stops and broken bold marks
+    were fixed throughout.
+  - >-
+    Activity 3: "tombé(e) amoureux(se)" → "tombé(e) amoureux / amoureuse". Activity 4 is
+    labelled "plus-que-parfait", but four follow-up questions use the passé composé
+    (Qu’est-ce qui s’est passé ? Qu’as-tu fait pour la résoudre ? Est-ce que cela a causé
+    des problèmes ? Qu’est-ce qui a changé depuis la première fois ?). They were kept as in the source; the teacher note asks students to answer with at least one
+    plus-que-parfait.
+  - >-
+    Mori: "Ouvre le chatbot de l’école" → "Ouvre le chat avec Mori"; the message now starts
+    "Bonjour Mori,". The final written task asks where the chatbot travelled and what it
+    liked doing, so one sentence was added to the message asking Mori to tell about one of
+    its own (imaginary) trips. The written task ("dans le cahier ou sur Google Docs") is a
+    reflection box. Please confirm.
+  - >-
+    Left out: the "Date / Participants" lines, the "Niveau 3 : français extrême" line and
+    the "Réponse de l’élève 1/2/3" lines (the platform has answer boxes). The notebook gives
+    no times for the warm-up and the activities (only "5 minutes" for the intro round), so
+    no minutes are recorded for them.
+  - >-
+    The intro round and the warm-up questions had no sentence frames: frames were added
+    for each warm-up question. Activities 3 and 4 had no model answer: one short example
+    was added to each. Please confirm.
+  - >-
+    Vocabulary: "voyage – טיול" → "נסיעה / טיול"; "bagages – מטען" → "מטען / כבודה";
+    "réserver – להזמין" → "להזמין (מקום)"; "préparé(e) – מוכן/נה" → "מוכן/נה, שהתכונן/ה"
+    (prêt(e) is "ready"; préparé(e) is "prepared"). Please confirm. The Quizlet link is kept
+    without its tracking parameters (?i=…&x=…).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: voyages-classe
+    title: 'Classe : Voyages'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Voyages
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Le passé composé et l’imparfait
+            description: 'Actions terminées (*j’ai visité, je suis allé(e)*) et descriptions ou habitudes (*c’était, j’habitais*)'
+          - name: Le plus-que-parfait
+            description: 'Une action antérieure à une autre action passée (*j’avais déjà voyagé, elle était partie*)'
+      - id: quizlet
+        type: externalLink
+        label: Voyages sur Quizlet
+        url: https://quizlet.com/il/1125974187/extreme-french-voyages-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. J’avais déjà voyagé à / en ___ avant de commencer cette formation de français.
+        example: Je m’appelle Lévanah. J’avais déjà voyagé à Paris avant de commencer cette formation de français.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quelle est la chose la plus inattendue qui t’est arrivée pendant un voyage ?
+            frame: La chose la plus inattendue, c’est quand ___.
+          - question: Combien de pays as-tu visités dans ta vie ?
+            frame: Dans ma vie, j’ai visité ___ pays.
+          - question: Dans quels types de logements as-tu séjourné pendant tes voyages ?
+            frame: J’ai séjourné dans ___.
+          - question: Quels endroits de ton pays avais-tu déjà visités avant ton premier voyage à l’étranger ?
+            frame: Avant mon premier voyage à l’étranger, j’avais déjà visité ___.
+          - question: Parlais-tu déjà français avant ton premier voyage à l’étranger ?
+            frame: Avant mon premier voyage, je parlais / je ne parlais pas ___.
+          - question: Qu’as-tu mis dans ta valise qui s’est révélé complètement inutile ?
+            frame: J’ai mis ___ dans ma valise, mais ça ne m’a servi à rien.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Une vérité et un mensonge'
+        skills: [Le passé composé et l’imparfait]
+        steps:
+          - 'Thème : des choses que j’ai faites en voyage, au **passé composé**.'
+          - Chaque élève raconte **deux histoires** de voyage, **une vraie et une fausse**.
+          - Les autres élèves devinent quelle histoire est vraie et laquelle est fausse.
+          - '**Bonus :** tu peux aussi utiliser le **plus-que-parfait** si tu veux (ce n’est pas obligatoire).'
+        example: |-
+          **Vérité :** *Je suis allé(e) au Japon et j’ai mangé des sushis dans un restaurant traditionnel. C’était incroyable, et j’ai même appris à faire des sushis avec le chef !*
+          **Mensonge :** *J’ai voyagé en Australie et j’ai fait du parachutisme au-dessus de la Grande Barrière de corail. C’était l’expérience la plus excitante de ma vie !*
+      - id: act1-stories
+        type: discussionQuestions
+        title: Mes deux histoires
+        items:
+          - question: 'Histoire 1 :'
+            frame: Je suis allé(e) à / en ___ et j’ai ___.
+          - question: 'Histoire 2 :'
+            frame: J’ai voyagé à / en ___ et j’ai ___.
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Quand tu as fait ça, moi, j’avais déjà…'
+        skills: [Le plus-que-parfait]
+        steps:
+          - '**Étape 1 :** le professeur raconte une histoire amusante qui lui est arrivée pendant un voyage, avec la date.'
+          - 'À la fin, un élève répond : *Quand tu as fait ça, moi, j’avais déjà…* et raconte une histoire plus ancienne.'
+          - '**Étape 2 :** chaque élève continue la chaîne en reprenant la phrase. Tout le monde participe et raconte une expérience de voyage.'
+        example: |-
+          **Le professeur :** *En 2018, je me suis complètement perdu(e) à Venise parce que je suivais Google Maps, et il m’a fait tourner en rond pendant une heure !*
+          **Élève 1 :** *Quand tu t’es perdu(e) à Venise en 2018, moi, j’avais déjà perdu mon passeport à l’aéroport de Madrid en 2016. J’ai dû parler à la police et j’ai raté mon vol !*
+          **Élève 2 :** *Quand tu as perdu ton passeport en 2016, moi, j’avais déjà mangé des insectes frits en Thaïlande en 2015 sans savoir ce que c’était. Je croyais que c’étaient des chips !*
+          **Élève 3 :** *Quand tu as mangé des insectes en 2015, moi, je m’étais déjà endormi(e) dans un bus à New York en 2014 et j’avais raté mon arrêt. Je suis arrivé(e) dans une ville complètement différente !*
+          **Élève 4 :** *Quand tu as raté ton arrêt en 2014, moi, j’avais déjà été coincé(e) dans un ascenseur d’hôtel à Londres pendant 20 minutes avec des inconnus, en 2013 !*
+      - id: act2-chain
+        type: discussionQuestions
+        title: Ma phrase dans la chaîne
+        items:
+          - question: Quand tu as ___ en ___, moi, j’avais déjà ___.
+            frame: Quand tu as ___ en ___, moi, j’avais déjà / j’étais déjà ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Est-ce que tu as déjà… ?'
+        skills: [Le passé composé et l’imparfait]
+        steps:
+          - Travaillez **en binômes**.
+          - Choisissez **trois questions** dans la liste ci-dessous et répondez-y au **passé composé**.
+        example: '*Est-ce que tu as déjà raté un train ?* — *Oui, j’ai raté un train à Lyon l’année dernière. Il pleuvait et je suis arrivé(e) en retard à la gare.*'
+      - id: act3-questions
+        type: discussionQuestions
+        title: Est-ce que tu as déjà… ?
+        items:
+          - question: Est-ce que tu as déjà voyagé seul(e) ?
+          - question: Est-ce que tu as déjà perdu tes bagages à l’aéroport ?
+          - question: Est-ce que tu t’es déjà perdu(e) dans un pays étranger ?
+          - question: Est-ce que tu as déjà goûté une nourriture vraiment étrange en voyage ?
+          - question: Est-ce que tu as déjà visité un lieu que tu avais vu dans un film ?
+          - question: Est-ce que tu as déjà eu un vol retardé ou annulé ?
+          - question: Est-ce que tu as déjà séjourné dans une auberge de jeunesse ?
+          - question: Est-ce que tu as déjà fait un road trip avec des amis ?
+          - question: Est-ce que tu as déjà visité plus de trois pays pendant un seul voyage ?
+          - question: Est-ce que tu as déjà raté un train ou un avion en voyage ?
+          - question: Est-ce que tu t’es déjà fait un nouvel ami en voyage ?
+          - question: Est-ce que tu as déjà participé à un voyage organisé ?
+          - question: Est-ce que tu as déjà voyagé sans rien planifier ?
+          - question: Est-ce que tu as déjà vécu un moment drôle ou embarrassant à l’étranger ?
+          - question: Est-ce que tu es déjà tombé(e) amoureux / amoureuse d’un lieu (ou d’une personne) en voyage ?
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Quand tu as fait ça, est-ce que tu avais… ?'
+        skills: [Le plus-que-parfait]
+        steps:
+          - '*Suite de l’activité 3.* Restez en binômes et approfondissez vos réponses.'
+          - Ton / Ta partenaire te pose la question de suivi. Réponds avec au moins un verbe au **plus-que-parfait**.
+        example: '*Tu as déjà perdu tes bagages ? Qu’avais-tu mis dans ta valise qui était vraiment important ?* — *J’avais mis mon ordinateur et tous mes médicaments dans la valise !*'
+      - id: act4-questions
+        type: discussionQuestions
+        title: Questions de suivi
+        items:
+          - question: Tu as déjà voyagé seul(e) ? Qu’avais-tu fait avant qui t’a aidé(e) à te sentir prêt(e) ?
+          - question: Tu as déjà perdu tes bagages ? Qu’avais-tu mis dans ta valise qui était vraiment important ?
+          - question: Tu t’es déjà perdu(e) à l’étranger ? Avais-tu déjà appris quelques mots de la langue locale ?
+          - question: Tu as déjà mangé quelque chose d’étrange ? Qu’est-ce que les gens t’avaient dit avant que tu le goûtes ?
+          - question: Tu as déjà visité un lieu vu dans un film ? Avais-tu déjà vu le film avant d’y aller ?
+          - question: Tu as déjà fait un road trip avec des amis ? Aviez-vous tout organisé avant de partir ?
+          - question: Tu as déjà raté un train ou un avion ? Qu’est-ce qui s’est passé ?
+          - question: Tu t’es déjà fait un ami en voyage ? Qu’aviez-vous vécu avant de vous rencontrer ?
+          - question: Tu as déjà visité un pays dont tu ne parlais pas la langue ? Avais-tu étudié un peu de vocabulaire avant ?
+          - question: Tu as déjà eu une urgence pendant un voyage ? Qu’as-tu fait pour la résoudre ?
+          - question: Tu as déjà voyagé sans rien planifier ? Est-ce que cela a causé des problèmes ?
+          - question: Tu as déjà vécu un moment embarrassant à l’étranger ? Qu’est-ce qui s’était passé juste avant ?
+          - question: Tu es déjà retourné(e) dans un lieu que tu aimais ? Qu’est-ce qui a changé depuis la première fois ?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **le passé composé et l’imparfait** (échauffement,
+          activités 1 et 3) et **le plus-que-parfait** (ronde d’introduction, activités 2 et
+          4). Le cahier ne donne pas de durée pour les activités : choisis-les selon le temps
+          et le niveau du groupe.
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: >-
+          Deux phrases par élève, 30 secondes maximum par élève et pour toi. Si les élèves
+          se connaissent déjà, passe directement aux questions d’échauffement. Cette phase
+          ne doit pas dépasser 5 minutes. Donne d’abord ton propre exemple.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève et demande des réponses complètes.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Laisse une minute de préparation. Corrige le choix de l’auxiliaire (*je suis
+          allé(e)*, *j’ai voyagé*). Le plus-que-parfait est un bonus, selon le niveau du
+          groupe.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Commence toi-même la chaîne avec une histoire datée. Chaque élève doit donner une
+          date plus ancienne que la précédente. Vérifie l’auxiliaire à l’imparfait (*j’avais
+          perdu, j’étais allé(e), je m’étais endormi(e)*).
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Plusieurs questions de suivi sont au passé composé (*Qu’est-ce qui s’est passé ?*).
+          Demande quand même une réponse avec au moins un plus-que-parfait (*J’avais oublié
+          de…*).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: voyages-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-pc-imparfait
+        type: ruleSummary
+        skill: Le passé composé et l’imparfait
+        rules:
+          - text: 'On utilise le **passé composé** pour une action **achevée**, une action **ponctuelle** ou une **série d’événements**.'
+            examples:
+              - J’ai visité Paris l’année dernière.
+              - Ce matin, je me suis réveillé(e) à 6 h pour prendre l’avion.
+              - Je me suis levé(e), je me suis douché(e), je me suis habillé(e) et j’ai pris un taxi pour aller à la gare.
+          - text: 'Formation : **avoir** ou **être** au présent + **participe passé**. On utilise *être* avec les verbes de mouvement (*aller, partir, arriver, sortir, rentrer, tomber…*) et les verbes pronominaux (*se perdre, se lever*). Avec *être*, le participe s’accorde avec le sujet.'
+            examples:
+              [
+                Ils sont allés à Paris.,
+                Elle a visité le musée du Louvre.,
+                Elle s’est perdue à Venise.,
+              ]
+          - text: 'Questions et négations : *ne… pas*, *ne… pas encore*, *ne… jamais* entourent l’auxiliaire ; *déjà* se place entre l’auxiliaire et le participe.'
+            examples:
+              - 'Est-ce que tu es déjà allé(e) à Londres ?'
+              - 'Je n’ai pas encore terminé.'
+          - text: 'On utilise l’**imparfait** pour décrire une situation, un état ou un décor dans le passé, pour des **habitudes**, pour une action **longue ou en cours**, et pour des sentiments ou des pensées.'
+            examples:
+              - Quand j’étais enfant, j’habitais à la campagne.
+              - Le dimanche, nous mangions toujours chez mes grands-parents.
+              - Il pleuvait quand je suis sorti(e).
+              - J’avais peur et je ne comprenais pas la situation.
+          - text: 'L’imparfait va souvent avec *souvent, toujours, parfois, tous les jours, pendant que*.'
+          - text: 'Formation : radical de *nous* au présent (sans *-ons*) + **-ais, -ais, -ait, -ions, -iez, -aient**. Exception : *être* → *ét-* (*j’étais*).'
+            examples:
+              ['nous habitons → j’habitais', 'nous mangeons → je mangeais', 'nous avons → j’avais']
+      - id: pc-imparfait-table
+        type: table
+        caption: Passé composé et imparfait
+        header: [Personne, visiter (passé composé), aller (passé composé), habiter (imparfait)]
+        rows:
+          - [je / j’, j’ai visité, je suis allé(e), j’habitais]
+          - [tu, tu as visité, tu es allé(e), tu habitais]
+          - [il / elle, il / elle a visité, il est allé / elle est allée, il / elle habitait]
+          - [nous, nous avons visité, nous sommes allé(e)s, nous habitions]
+          - [vous, vous avez visité, vous êtes allé(e)(s), vous habitiez]
+          - [
+              ils / elles,
+              ils / elles ont visité,
+              ils sont allés / elles sont allées,
+              ils / elles habitaient,
+            ]
+      - id: rules-pqp
+        type: ruleSummary
+        skill: Le plus-que-parfait
+        rules:
+          - text: 'On utilise le **plus-que-parfait** pour une action **antérieure à une autre action passée**.'
+            examples:
+              [
+                J’avais terminé mes devoirs avant de dîner.,
+                J’ai mangé les pommes que j’avais achetées.,
+              ]
+          - text: 'Formation : **avoir** ou **être** à l’**imparfait** + **participe passé**. On choisit l’auxiliaire comme au passé composé ; avec *être*, le participe s’accorde avec le sujet.'
+            examples:
+              - Elle était partie quand je suis arrivé(e).
+              - Nous n’avions jamais vu la neige avant ce voyage.
+              - Je m’étais endormi(e) dans le bus.
+          - text: 'Utilise des connecteurs temporels : *avant, après, quand, au moment où, déjà*.'
+            examples:
+              - 'Quand tu t’es perdu(e) à Venise, moi, j’avais déjà perdu mon passeport.'
+      - id: pqp-table
+        type: table
+        caption: Le plus-que-parfait
+        header: [Personne, voyager (avoir), partir (être)]
+        rows:
+          - [je / j’, j’avais voyagé, j’étais parti(e)]
+          - [tu, tu avais voyagé, tu étais parti(e)]
+          - [il / elle, il / elle avait voyagé, il était parti / elle était partie]
+          - [nous, nous avions voyagé, nous étions parti(e)s]
+          - [vous, vous aviez voyagé, vous étiez parti(e)(s)]
+          - [ils / elles, ils / elles avaient voyagé, ils étaient partis / elles étaient parties]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les trois temps avec le groupe et demande un nouvel exemple de voyage pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: voyages-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie le message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori
+        type: aiTutorPrompt
+        title: Parler de voyages avec Mori
+        intro: 'Objectif : utiliser le vocabulaire du voyage et pratiquer le **passé composé** et le **plus-que-parfait**.'
+        message: >-
+          Bonjour Mori, j’aimerais parler de voyages en utilisant le passé composé et le
+          plus-que-parfait. Peux-tu me poser des questions sur mes expériences de voyage ?
+          Ensuite, raconte-moi aussi un de tes voyages pour que je puisse te poser des
+          questions.
+      - id: writing-title
+        type: heading
+        level: 3
+        text: Production écrite finale
+      - id: writing-hint
+        type: callout
+        tone: info
+        text: Après la conversation, réponds à ces questions par écrit, avec des phrases complètes.
+      - id: writing-1
+        type: reflection
+        prompt: Où Mori a-t-il voyagé ?
+      - id: writing-2
+        type: reflection
+        prompt: Qu’aimait-il faire pendant ses voyages ?
+      - id: writing-3
+        type: reflection
+        prompt: Avait-il fait quelque chose de spécial avant de partir ?
+      - id: writing-4
+        type: reflection
+        prompt: Aimes-tu voyager ? Pourquoi ?
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: voyages-pratique
+    book: workbook
+    title: 'Pratique : Voyages'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-passe
+        type: activity
+        activity: voyages-passe
+      - id: ex-plus-que-parfait
+        type: activity
+        activity: voyages-plus-que-parfait
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: voyages-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots du voyage
+        glossLang: he
+        link: https://quizlet.com/il/1125974187/extreme-french-voyages-flash-cards/
+        items: &voyages-words
+          - { term: voyager, gloss: לנסוע }
+          - { term: voyage, gloss: נסיעה / טיול }
+          - { term: valise, gloss: מזוודה }
+          - { term: passeport, gloss: דרכון }
+          - { term: aéroport, gloss: שדה תעופה }
+          - { term: bagages, gloss: מטען / כבודה }
+          - { term: perdre, gloss: לאבד }
+          - { term: réserver, gloss: להזמין (מקום) }
+          - { term: vol, gloss: טיסה }
+          - { term: retard, gloss: עיכוב }
+          - { term: auberge de jeunesse, gloss: הוסטל }
+          - { term: hébergement, gloss: לינה }
+          - { term: carte, gloss: מפה }
+          - { term: se perdre, gloss: ללכת לאיבוד }
+          - { term: nourriture, gloss: אוכל }
+          - { term: étrange, gloss: מוזר }
+          - { term: film, gloss: סרט }
+          - { term: seul(e), gloss: לבד }
+          - { term: ami(e), gloss: חבר/ה }
+          - { term: route, gloss: כביש }
+          - { term: groupe, gloss: קבוצה }
+          - { term: planifier, gloss: לתכנן }
+          - { term: expérience, gloss: חוויה }
+          - { term: histoire, gloss: סיפור }
+          - { term: raconter, gloss: לספר }
+          - { term: question, gloss: שאלה }
+          - { term: réponse, gloss: תשובה }
+          - { term: vérité, gloss: אמת }
+          - { term: mensonge, gloss: שקר }
+          - { term: préparé(e), gloss: 'מוכן/נה, שהתכונן/ה' }
+
+vocabulary:
+  - slug: voyages
+    title: Voyages
+    items: *voyages-words
+
+activities:
+  - slug: voyages-passe
+    title: Le passé composé et l’imparfait
+    minutes: 8
+    items:
+      - id: visite-paris
+        type: multipleChoice
+        prompt: L’année dernière, j’___ Paris.
+        options:
+          - { text: ai visité, correct: true }
+          - {
+              text: visitais,
+              feedback: 'Une action achevée à un moment précis (*l’année dernière*) : on utilise le passé composé, *j’ai visité*.',
+            }
+          - {
+              text: visite,
+              feedback: '*Je visite* est au présent. Pour une action terminée dans le passé, on dit *j’ai visité*.',
+            }
+      - id: dimanche-mangions
+        type: multipleChoice
+        prompt: Le dimanche, nous ___ toujours chez mes grands-parents.
+        options:
+          - { text: mangions, correct: true }
+          - {
+              text: avons mangé,
+              feedback: '*Le dimanche* et *toujours* parlent d’une habitude : on utilise l’imparfait, *nous mangions*.',
+            }
+          - {
+              text: mangerons,
+              feedback: '*Mangerons* est au futur. Pour une habitude dans le passé, on dit *nous mangions*.',
+            }
+      - id: pleuvait
+        type: fillBlank
+        prompt: Complète avec le verbe *pleuvoir* à l’imparfait (une action en cours).
+        text: Il ___ quand je suis sorti.
+        blanks: [[pleuvait]]
+      - id: sont-alles
+        type: fillBlank
+        prompt: Complète avec le verbe *aller* au passé composé.
+        text: L’été dernier, mes parents ___ à Paris.
+        blanks: [[sont allés]]
+      - id: serie
+        type: trueFalse
+        prompt: 'Pour raconter une série d’événements (*je me suis levé, je me suis douché, j’ai pris un taxi*), on utilise l’imparfait.'
+        answer: false
+        feedback:
+          correct: 'Bravo ! Une série d’événements terminés se raconte au passé composé.'
+          incorrect: 'Une série d’événements terminés se raconte au passé composé : *je me suis levé, je me suis douché, j’ai pris un taxi*.'
+      - id: imparfait-formes
+        type: matching
+        prompt: Associe chaque verbe à sa forme à l’imparfait (je).
+        pairs:
+          - [être, j’étais]
+          - [avoir, j’avais]
+          - [habiter, j’habitais]
+          - [comprendre, je comprenais]
+          - [manger, je mangeais]
+      - id: louvre-auxiliaire
+        type: multipleChoice
+        prompt: Elle ___ visité le musée du Louvre.
+        options:
+          - { text: a, correct: true }
+          - {
+              text: est,
+              feedback: 'Le verbe *visiter* se conjugue avec *avoir* au passé composé : *elle a visité*.',
+            }
+          - {
+              text: ont,
+              feedback: '*Ont* est pour *ils / elles*. Pour *elle*, on dit *a* : *elle a visité*.',
+            }
+      - id: ordre-sushis
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: J’ai mangé des sushis au Japon.
+
+  - slug: voyages-plus-que-parfait
+    title: 'Le plus-que-parfait : j’avais déjà…'
+    minutes: 8
+    items:
+      - id: pommes
+        type: multipleChoice
+        prompt: J’ai mangé les pommes que j’___ au marché.
+        options:
+          - { text: avais achetées, correct: true }
+          - {
+              text: achetais,
+              feedback: 'L’achat a eu lieu **avant** le repas : pour une action antérieure à une autre action passée, on utilise le plus-que-parfait, *j’avais achetées*.',
+            }
+          - {
+              text: achèterai,
+              feedback: '*J’achèterai* est au futur. L’achat a eu lieu avant : *j’avais achetées*.',
+            }
+      - id: devoirs
+        type: fillBlank
+        prompt: Complète avec le verbe *terminer* au plus-que-parfait.
+        text: J’___ mes devoirs avant de dîner.
+        blanks: [[avais terminé]]
+      - id: etait-partie
+        type: multipleChoice
+        prompt: 'Elle n’était plus là : elle ___ avant mon arrivée.'
+        options:
+          - { text: était partie, correct: true }
+          - {
+              text: avait parti,
+              feedback: 'Le verbe *partir* se conjugue avec *être* : *elle était partie*.',
+            }
+          - {
+              text: partait,
+              feedback: 'L’action est terminée **avant** une autre action passée : on utilise le plus-que-parfait, *elle était partie*.',
+            }
+      - id: formation
+        type: trueFalse
+        prompt: 'Le plus-que-parfait se forme avec *avoir* ou *être* à l’imparfait + participe passé.'
+        answer: true
+        feedback:
+          correct: 'Bravo ! *J’avais voyagé, j’étais parti(e).*'
+          incorrect: 'C’est vrai : *avoir* ou *être* à l’imparfait + participe passé. *J’avais voyagé, j’étais parti(e).*'
+      - id: neige
+        type: fillBlank
+        prompt: Complète avec le verbe *voir* au plus-que-parfait.
+        text: Nous n’___ jamais ___ la neige avant ce voyage.
+        blanks: [[avions], [vu]]
+      - id: pc-pqp
+        type: matching
+        prompt: Associe chaque forme du passé composé à la forme du plus-que-parfait.
+        pairs:
+          - [j’ai voyagé, j’avais voyagé]
+          - [je suis allé, j’étais allé]
+          - [nous avons vu, nous avions vu]
+          - [elle s’est perdue, elle s’était perdue]
+          - [ils ont raté, ils avaient raté]
+      - id: chaine
+        type: multipleChoice
+        prompt: Quand tu t’es perdu à Venise en 2018, moi, j’___ mon passeport à Madrid en 2016.
+        options:
+          - { text: avais déjà perdu, correct: true }
+          - {
+              text: perdais déjà,
+              feedback: 'L’imparfait sert à décrire ou à parler d’habitudes. Pour une action antérieure (2016 avant 2018), on dit *j’avais déjà perdu*.',
+            }
+          - {
+              text: étais déjà perdu,
+              feedback: 'Le verbe *perdre* (perdre quelque chose) se conjugue avec *avoir* : *j’avais déjà perdu*.',
+            }
+      - id: ordre-bus
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Je m’étais endormi dans le bus.
