@@ -1,0 +1,601 @@
+# Cycle "Recent News", converted from the English level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-level-3
+slug: recent-news
+title: Recent News
+goal: Talk about the news with reported speech and mixed tenses.
+position: 1
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Reported speech" and "Mixed tenses") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's summary
+    rules, the activity examples and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary, reported speech: the source rules (present → past, will → would, time and
+    place words) are kept. A rule "past simple → past perfect" (*"The protest started
+    yesterday" → She said the protest had started the day before*) was ADDED, because
+    the headlines in Activities 1 and 3 are mostly in the past simple. The *asked* rule
+    now says that the question becomes normal word order with *if* (*She asked if I
+    liked coffee*, not *if did I like*), and that *that* is optional. Please confirm.
+  - >-
+    Activity 2 model: "Dana said that she consumes the news daily. She said she doesn't
+    watch the weather forecast." This does not follow the backshift rule taught in the
+    summary. It now reads "Dana said that she consumed the news daily. She said she
+    didn't watch the weather forecast." A teacher note says that keeping the present is
+    also possible when the fact is still true.
+  - >-
+    Activity 1, Level 1: the direct-speech headlines are on a canva.com page, which is
+    not on the link allow-list. The link was removed; a teacher note mentions it (show
+    it on screen or write your own headlines).
+  - >-
+    Warm-up: the source says "8 questions", but question 2 (freedom of speech) is
+    repeated, so there are 7. The repeat was removed. Frames (sentence starters) were
+    added to the warm-up questions; the source has the questions only.
+  - >-
+    Small corrections: "Each student makes us 2 headlines" → "makes up 2 headlines";
+    "artice" → "article" (Activity 3, twice); missing opening quotation mark in the
+    *will → would* example; Mori task "something recent that happened in Israel or
+    nationally" → "in Israel or in the world" (nationally = in Israel); "Can you ask me
+    for a short weather news story" → "Can you ask me to tell a short weather news
+    story"; Activity 5 "What happened until now" → "What has happened until now";
+    stray asterisks and broken bold were removed. Activity 3 has no skill label in the
+    source; it practises reported speech (the pairs report what they heard).
+  - >-
+    Vocabulary: "Enviornmet" → "Environment", "Statment" → "Statement", "Weather
+    Forcast" → "Weather forecast". "Channel" was glossed "תחנה" (station); it is now
+    "ערוץ / תחנה", because a TV channel is ערוץ. The "Definition" column was left out
+    (the vocabulary block has a term and a Hebrew gloss only); the definitions are on
+    the second Quizlet set.
+  - >-
+    Both Quizlet links (English–Hebrew and English–definitions) are kept without their
+    tracking parameters (?i=…&x=…). The "Level: 3 (extreme)" header and the "Students"
+    line were left out. The "Answer of student 1/2/3" lines are replaced by the optional
+    answer boxes. The source gives no total times; only the times it gives (10 minutes
+    in Activities 2 and 4) are kept, in the steps.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: recent-news-class
+    title: 'Class: Recent News'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Recent News
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Reported speech
+            description: Tell what someone else said (*She said that she was tired.*)
+          - name: Mixed tenses
+            description: Connect the past, the present and the future in one story (*Yesterday the protest started, and today people are still talking about it.*)
+      - id: quizlet-he
+        type: externalLink
+        label: Recent News on Quizlet (English–Hebrew)
+        url: https://quizlet.com/il/1083872939/extreme-english-recent-news-english-hebrew-flash-cards/
+      - id: quizlet-def
+        type: externalLink
+        label: Recent News on Quizlet (English definitions)
+        url: https://quizlet.com/il/1083868482/extreme-english-recent-new-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. When I want to know the news, I ___.
+        example: I am Shachar. When I want to know the news, I open Ynet on my phone or listen to the news update on the radio.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: How often do you think people should consume news, and why?
+            frame: I think people should consume news ___ because ___.
+          - question: What is freedom of speech in your opinion? What is the difference between freedom of speech for a private person and for news channels?
+            frame: In my opinion, freedom of speech is ___. A private person ___, but a news channel ___.
+          - question: Was there a protest, crisis or disaster in your area recently?
+            frame: Recently there was a ___ in ___. It happened because ___.
+          - question: How has social media affected news consumption? How has it changed from the past, and what do you think will happen in the future?
+            frame: Social media has ___. In the past people ___, and in the future they will ___.
+          - question: Is there a news reporter or journalist that you admire? Why?
+            frame: I admire ___ because he / she ___.
+          - question: Do you think children in Israel are more exposed to news now than they were in the past? How might this affect their future?
+            frame: I think children today are ___ exposed to news than in the past. This might ___.
+          - question: Have you ever watched a news report or weather forecast that was wrong? What happened?
+            frame: Yes, I have. / No, I haven't. Once, the forecast said that ___, but ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      # Activity 1
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Reporting headlines'
+        skills: [Reported speech]
+        steps:
+          - Look at the news headlines in direct speech.
+          - Say each headline in reported speech. Remember to change the time words (see the table below).
+        example: |-
+          *Headline: "The new bridge opens today."*
+          *The news said that the new bridge opened that day.*
+      - id: act1-levels
+        type: callout
+        tone: info
+        title: Two levels
+        text: |-
+          **Level 1:** Your teacher shows headlines in direct speech. You build the reported speech yourself.
+          **Level 2:** Make up 2 headlines and send them to your teacher. Your teacher gives you a classmate's headline, and you say it in reported speech.
+      - id: act1-table
+        type: table
+        caption: Time and place words in reported speech
+        header: [Direct speech, Reported speech]
+        rows:
+          - [today, that day]
+          - [tomorrow, the next day / the following day]
+          - [yesterday, the day before / the previous day]
+          - [now, then]
+          - [here, there]
+          - [this, that]
+          - [next week, the following week]
+          - [last week, the week before]
+      - id: act1-sentences
+        type: discussionQuestions
+        title: My headlines
+        items:
+          - question: 'Headline 1: ___'
+            frame: The news said that ___.
+          - question: 'Headline 2: ___'
+            frame: The reporter said that ___.
+      # Activity 2
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: News survey'
+        skills: [Reported speech]
+        steps:
+          - Listen to your teacher's example. Your teacher asks one student two questions and reports the answers.
+          - In breakout rooms, ask your partners the survey questions below. You have 10 minutes to ask and to prepare your answers in reported speech.
+          - Back in class, tell the group your partners' answers in reported speech. Your teacher adds them to the survey board.
+          - 'Optional: say one conclusion from the survey in reported speech.'
+        example: |-
+          *Dana said that she consumed the news daily.*
+          *She said she didn't watch the weather forecast.*
+          *Six students said that they consumed news from Channel 12, but most of the students said they also used social media.*
+      - id: act2-survey
+        type: discussionQuestions
+        title: Survey questions
+        items:
+          - question: How often do you consume news? (daily / a few times a week / only for breaking news / other)
+            frame: My partner said that he / she consumed news ___.
+          - question: Where do you get it (which channel, website or social media)? Why?
+            frame: She said that she got the news from ___ because ___.
+          - question: Do you prefer local news or international news?
+            frame: He said that he preferred ___.
+          - question: What was one headline you remember this week?
+            frame: She said that she remembered the headline "___".
+          - question: Do you check the weather forecast? Was it accurate this week?
+            frame: He said that he ___ the weather forecast and that it ___ accurate.
+          - question: 'Optional: our conclusion from the survey'
+            frame: ___ students said that ___, but most of the students said ___.
+      # Activity 3
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: National vs. international news'
+        skills: [Reported speech]
+        steps:
+          - In pairs, think of two news stories that you saw recently, one from the national news and one from the international news. You can use the form below.
+          - Change partners. Tell your new partner about one story, and listen to their story.
+          - Back in class, tell the group about the story you heard from your partner, in reported speech.
+        example: '*My partner told me that there had been a big protest in Tel Aviv the week before. She said that the reporter had called it "the biggest protest of the year".*'
+      - id: act3-local
+        type: discussionQuestions
+        title: Local news (Israel)
+        items:
+          - question: 'Event type: protest / crisis / disaster / news report / other: ___'
+          - question: 'Topic: politics, economics, culture… ___'
+          - question: 'Where and when: ___'
+          - question: 'The headline in your words: ___'
+          - question: 'Source (channel, website or social media): ___'
+          - question: 'One short quote from the article (invent one if needed): "___"'
+      - id: act3-international
+        type: discussionQuestions
+        title: International news
+        items:
+          - question: 'Event type: protest / crisis / disaster / news report / other: ___'
+          - question: 'Topic: politics, economics, culture… ___'
+          - question: 'Where and when: ___'
+          - question: 'The headline in your words: ___'
+          - question: 'Source (channel, website or social media): ___'
+          - question: 'One short quote from the article (invent one if needed): "___"'
+      - id: act3-report
+        type: discussionQuestions
+        title: What my partner told me
+        items:
+          - question: 'My partner told me that ___.'
+            frame: He / She said that ___. The article said that ___.
+      # Activity 4
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Freedom of speech debate'
+        skills: [Mixed tenses]
+        steps:
+          - Your teacher reads one of the dilemmas below.
+          - The group divides into two. One side supports freedom of speech for the media; the other side disagrees.
+          - Each side has 10 minutes to plan the debate with mixed tenses. Every student prepares at least one point.
+          - Hold the debate as a class.
+        example: '*Last week the channel published private details. Today her family is still upset, and in the future people will not trust the news.*'
+      - id: act4-dilemmas
+        type: discussionQuestions
+        title: Dilemmas
+        items:
+          - question: A famous singer was in the hospital last week. The news channel published details about her health without her permission. Many fans wanted to know the truth, but her family said it was private. Should the media have had the freedom to publish this?
+            frame: I think the media should / shouldn't have published it, because ___.
+          - question: During the last election campaign, a news channel gave more time to one political party than to the others. Some people said that freedom of speech means the channel can choose what to broadcast. Others said that this was unfair and that every party should get equal time. Should the media have complete freedom in covering elections, or should there be rules to make it equal?
+            frame: In the last election, ___. Today ___. In the future, ___ will ___.
+          - question: Last month, a big rumor spread on social media saying that a new shopping mall would open in Tel Aviv "tomorrow". Thousands of people came, but the story was false. Only a few stores were open. Some people said that freedom of speech means anyone should be able to post what they want. Others said that social media companies should stop people from posting fake news. Should people always have freedom of speech online, even if the information is not true?
+            frame: When the rumor spread, ___. Now people ___. If companies ___, they will ___.
+      # Activity 5
+      - id: act5
+        type: classActivity
+        title: 'Activity 5: The Good News Channel'
+        skills: [Mixed tenses]
+        steps:
+          - We are opening a news channel with only good news!
+          - Make up a creative news story about something good. Use the four parts below.
+          - Tell your story to the class like a news reporter.
+        example: '*Headline: Sea turtles are back! Last year volunteers cleaned the beach in Ashdod. Now hundreds of baby turtles are going into the sea. The volunteers will clean the beach every month, and next year there will be even more turtles.*'
+      - id: act5-story
+        type: discussionQuestions
+        title: My good news story
+        items:
+          - question: 'Headline: ___'
+          - question: 'What has happened until now: ___'
+          - question: 'What is happening now: ___'
+          - question: 'How long will the good news continue, and what will happen: ___'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Level 3 (B1). Two skills this cycle: **reported speech** (Activities 1, 2 and 3)
+          and **mixed tenses** (Activities 4 and 5). Choose the activities that fit your
+          time.
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Pick the questions that fit your group and ask each student at least two.
+          Answers typed here are visible to you below each question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Explain first that the time words change in reported speech (table below).
+          Level 1: the original direct-speech headlines are on a canva.com page in the old
+          notebook (not on the link allow-list); show them on screen or write your own.
+          Level 2: each student sends you 2 headlines; give each student a classmate's
+          headline to report.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Stage 1: explain what a survey is, ask one student two questions and report the
+          answers. Stage 2: show the questions and open breakout rooms (10 minutes).
+          Stage 3: write the answers on a survey board. Stage 4 (the conclusion) is
+          optional. Keeping the present (*she said she consumes the news daily*) is also
+          possible when the fact is still true; for practice, ask for the backshift.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          The example uses the past perfect (*there had been*), the backshift of the past
+          simple. Accept the past simple from weaker students and model the correction.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Read one dilemma to the class, divide the group into two sides and give them 10
+          minutes to plan. Check that every student says at least one point and uses more
+          than one tense.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: recent-news-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-reported
+        type: ruleSummary
+        skill: Reported speech
+        rules:
+          - text: 'Use **reported speech** to tell what someone else said. It helps you share information from direct speech in your own words.'
+          - text: "**said:** when we don't mention who the person spoke to. *That* is optional."
+            examples: [She said (that) she was tired.]
+          - text: '**told:** when we say who received the information (*told me, told us, told him*).'
+            examples: [He told me (that) he was busy.]
+          - text: '**asked:** for questions. Use *if* for yes / no questions, and normal word order (subject + verb).'
+            examples: [She asked if I liked coffee.]
+          - text: 'Tenses, pronouns and time words often change. **Present → past:**'
+            examples: ['"I am happy." → She said she was happy.']
+          - text: '**will → would:**'
+            examples: ['"I will come tomorrow." → He said he would come the next day.']
+          - text: '**Past simple → past perfect** (*had* + past participle):'
+            examples:
+              [
+                '"The protest started yesterday." → She said the protest had started the day before.',
+              ]
+          - text: '**Time and place words:** today → that day, here → there, tomorrow → the next day, yesterday → the day before.'
+      - id: rules-mixed
+        type: ruleSummary
+        skill: Mixed tenses
+        rules:
+          - text: 'Use **mixed tenses** when a sentence talks about more than one time. They help you connect the past, the present and the future in one idea.'
+          - text: 'Choose the tense by the time of the action. **Past** for finished actions:'
+            examples: [Yesterday the protest started.]
+          - text: '**Present** for actions happening now, or habits:'
+            examples: [Today people are watching the news., I read the news every morning.]
+          - text: '**Future / conditional** for predictions or results:'
+            examples:
+              [
+                Tomorrow the channel will broadcast it.,
+                'If people watch, they will understand better.',
+              ]
+          - text: '**Combine** them to tell a full story or explanation.'
+            examples:
+              - Last week the government made a statement, today people are still talking about it, and tomorrow they will protest.
+              - The reporter explained what happened yesterday and said what might happen next week.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: recent-news-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy a message and send it. Mori will ask you questions; answer every one.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Message 1: Recent news'
+        message: |-
+          Hi Mori! I want to talk about recent news. Can you ask me questions using the skills of reported speech and mixed tenses? Please correct my mistakes.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Message 2: I am a reporter'
+        message: |-
+          Hi Mori! Give me a news update about something recent that happened in Israel or in the world. I will report the news back to you using reported speech. Make sure to check my time phrases, pronouns and tenses.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Message 3: The weather forecast'
+        message: |-
+          Hi Mori! Can you ask me to tell a short weather news story? I must talk about what the weather was like last week (past), what it is like today (present), what the forecast is for tomorrow (future), and what would happen if the forecast was wrong (conditional).
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: recent-news-practice
+    book: workbook
+    title: 'Practice: Recent News'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked right away, and you can try again.
+      - id: ex-reported-speech
+        type: activity
+        activity: recent-news-reported
+      - id: ex-mixed-tenses
+        type: activity
+        activity: recent-news-tenses
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: recent-news-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: News words
+        glossLang: he
+        link: https://quizlet.com/il/1083872939/extreme-english-recent-news-english-hebrew-flash-cards/
+        items: &recent-news-words
+          - { term: Headline, gloss: כותרת }
+          - { term: Article, gloss: כתבה }
+          - { term: Reporter, gloss: כתב / כתבת }
+          - { term: To report, gloss: לדווח }
+          - { term: Breaking news, gloss: חדשות מתפרצות }
+          - { term: Source, gloss: מקור }
+          - { term: To interview, gloss: לראיין }
+          - { term: Channel, gloss: ערוץ / תחנה }
+          - { term: Journalist, gloss: עיתונאי / עיתונאית }
+          - { term: Comment, gloss: תגובה }
+          - { term: Rumor, gloss: שמועה }
+          - { term: Politics, gloss: פוליטיקה }
+          - { term: Government, gloss: ממשלה }
+          - { term: Prime Minister, gloss: ראש הממשלה }
+          - { term: President, gloss: נשיא }
+          - { term: Crisis, gloss: משבר }
+          - { term: Protest, gloss: הפגנה / מחאה }
+          - { term: Economics, gloss: כלכלה }
+          - { term: Science, gloss: מדע }
+          - { term: Climate, gloss: אקלים }
+          - { term: Environment, gloss: סביבה }
+          - { term: Culture, gloss: תרבות }
+          - { term: Local news, gloss: חדשות מקומיות }
+          - { term: International news, gloss: חדשות בינלאומיות }
+          - { term: Statement, gloss: הצהרה }
+          - { term: To consume news, gloss: לצרוך חדשות }
+          - { term: Disaster, gloss: אסון }
+          - { term: To rescue, gloss: להציל }
+          - { term: To broadcast, gloss: לשדר }
+          - { term: Weather forecast, gloss: תחזית מזג האוויר }
+          - { term: Freedom of speech, gloss: חופש הביטוי }
+
+vocabulary:
+  - slug: recent-news
+    title: Recent News
+    items: *recent-news-words
+
+activities:
+  - slug: recent-news-reported
+    title: 'Reported speech: She said she was tired'
+    minutes: 8
+    items:
+      - id: was-tired
+        type: multipleChoice
+        prompt: '"I am tired," Dana said. → Dana said she ___ tired.'
+        options:
+          - { text: was, correct: true }
+          - {
+              text: am,
+              feedback: 'In reported speech, the present changes to the past, and *I* becomes *she*: *she was*.',
+            }
+          - { text: were, feedback: 'With *she*, the past of *be* is *was*, not *were*.' }
+      - id: would-call
+        type: fillBlank
+        prompt: 'Report the sentence: "I will call you tomorrow," he said.'
+        text: He said he ___ call me the next day.
+        blanks: [[would]]
+      - id: time-words
+        type: matching
+        prompt: Match each time or place word with its form in reported speech.
+        pairs:
+          - [today, that day]
+          - [tomorrow, the next day]
+          - [yesterday, the day before]
+          - [here, there]
+          - [now, then]
+      - id: told-me
+        type: multipleChoice
+        prompt: He ___ me that he was busy.
+        options:
+          - { text: told, correct: true }
+          - {
+              text: said,
+              feedback: 'When we say who received the information (*me*), we use *told*: *He told me…* With *said*, there is no person: *He said that…*',
+            }
+          - {
+              text: asked,
+              feedback: '*Asked* is for questions. Here he gives information, so use *told*.',
+            }
+      - id: asked-if
+        type: multipleChoice
+        prompt: '"Do you like coffee?" she asked me. → She asked ___.'
+        options:
+          - { text: if I liked coffee, correct: true }
+          - {
+              text: if did I like coffee,
+              feedback: 'A reported question has normal word order (subject + verb) and no *did*: *if I liked coffee*.',
+            }
+          - {
+              text: that I liked coffee,
+              feedback: 'For a yes / no question, use *if*, not *that*: *She asked if I liked coffee.*',
+            }
+      - id: here-there
+        type: trueFalse
+        prompt: 'In reported speech, *here* usually changes to *there*.'
+        answer: true
+        feedback:
+          correct: 'Right! *"I am here," she said. → She said she was there.*'
+          incorrect: 'Place words change too: *here → there*, just like *today → that day*.'
+      - id: were-going
+        type: fillBlank
+        prompt: 'Report the sentence: "We are going to the protest today," they said.'
+        text: They said they ___ going to the protest ___.
+        blanks: [[were], [that day]]
+      - id: order-told
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: She told me that she was busy.
+
+  - slug: recent-news-tenses
+    title: 'Mixed tenses: yesterday, today and tomorrow'
+    minutes: 8
+    items:
+      - id: started
+        type: multipleChoice
+        prompt: Yesterday the protest ___.
+        options:
+          - { text: started, correct: true }
+          - {
+              text: starts,
+              feedback: '*Yesterday* is a finished time, so use the past simple: *started*.',
+            }
+          - {
+              text: will start,
+              feedback: '*Will* is for the future. *Yesterday* needs the past simple: *started*.',
+            }
+      - id: are-watching
+        type: multipleChoice
+        prompt: Right now, people ___ the news.
+        options:
+          - { text: are watching, correct: true }
+          - {
+              text: watched,
+              feedback: '*Watched* is the past. For an action happening now, use the present continuous: *are watching*.',
+            }
+          - {
+              text: were watching,
+              feedback: '*Were watching* is the past continuous. *Right now* needs the present: *are watching*.',
+            }
+      - id: storm
+        type: fillBlank
+        prompt: 'Complete with the right tense: *start*, then *still rain*.'
+        text: The storm ___ yesterday, and it ___ now.
+        blanks: [[started], [is still raining, "'s still raining"]]
+      - id: if-watch
+        type: fillBlank
+        prompt: 'Complete the prediction with *will* + *understand*.'
+        text: If people watch the report, they ___ better.
+        blanks: [[will understand]]
+      - id: time-tense
+        type: matching
+        prompt: Match each time expression with the tense we usually use.
+        pairs:
+          - [Last week…, past simple]
+          - [Right now…, present continuous]
+          - [Every morning…, present simple]
+          - [Tomorrow…, future with will]
+      - id: one-tense
+        type: trueFalse
+        prompt: One sentence can only have one tense.
+        answer: false
+        feedback:
+          correct: 'Right! We mix tenses to connect times: *Last week the government made a statement, and today people are still talking about it.*'
+          incorrect: 'A sentence can talk about more than one time, so it can have more than one tense: *Yesterday the protest started, and tomorrow they will protest again.*'
+      - id: statement
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - {
+              text: 'Last week the government made a statement, and today people are still talking about it.',
+              correct: true,
+            }
+          - {
+              text: 'Last week the government makes a statement, and today people still talk about it.',
+              feedback: '*Last week* is finished, so use the past simple: *made*. For now, use *are still talking*.',
+            }
+          - {
+              text: 'Last week the government will make a statement, and today people talked about it.',
+              feedback: '*Will* is for the future and *talked* is the past. Use *made* for last week and *are talking* for today.',
+            }
+      - id: order-broadcast
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: Tomorrow the channel will broadcast the news.
