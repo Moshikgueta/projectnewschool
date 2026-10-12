@@ -1,0 +1,803 @@
+# Cycle "La mia vita nel passato", converted from the Italian level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-livello-2
+slug: la-mia-vita-nel-passato
+title: La mia vita nel passato
+goal: Raccontare la propria vita con il passato prossimo e l'imperfetto e fare domande al passato.
+position: 4
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Passato prossimo e imperfetto" and "Domande al
+    passato") are NEW: the notebook has no self-study exercises. They were written
+    from the cycle's summary rules, the activity examples and its vocabulary. Please
+    check level, wording and every right answer before students see them.
+  - >-
+    Skills: the notebook lists four objectives (passato prossimo, imperfetto,
+    questions in the past, 1st / 2nd / 3rd person). They are grouped into the
+    cycle's two skills: "Passato prossimo e imperfetto" and "Domande al passato (io,
+    tu, lui / lei)".
+  - >-
+    The lesson summary and the Mori instructions are in Hebrew in the notebook. They
+    are rewritten in Italian (the Hebrew translations of the examples are left out;
+    the vocabulary keeps its Hebrew glosses). Please check.
+  - >-
+    Summary, grammar: the notebook never says when the passato prossimo takes
+    "essere" and when "avere", nor that the participle agrees with the subject after
+    "essere" (è andato / è andata), although the activities use both. A rule and a
+    table (io / tu / lui, lei for mangiare, andare, fare and the imperfetto of
+    giocare, vivere, essere) were ADDED. The rule "always with a clear time word"
+    was softened to "often" (Ho visto quel film is correct without one).
+  - >-
+    Corrections: Activity 3 (B1) "Dove sei andato in palestra?" → "In quale palestra
+    sei andato?"; Activity 4 "Dove sei andato per la prima volta?" → "Dove sei
+    andato in viaggio per la prima volta?" (also in the teacher's model); "Cosa hai
+    mangiato una volta che ricordi bene?" → "Quale piatto speciale hai mangiato una
+    volta e ricordi ancora?"; Activity 2 (B1) "Durante la mia vacanza" → "Durante le
+    vacanze"; Activity 4 (B1+) "Viveva in una città piccola, ma è andato spesso al
+    mare" (a habit in the passato prossimo) → "…ma un'estate è andato al mare con i
+    nonni"; frames with "bambino" also offer "bambina", and "andato" also "andata".
+  - >-
+    Activity 1 (A2): the report example "Il mio compagno è nato a Haifa" and the
+    conclusion "Dove sei nato?" do not match the suggested questions; "Dove sei
+    nato / nata?" was added to the questions.
+  - >-
+    Mori, intermediate task 2 asks for "3 frasi al passato prossimo e 2
+    all'imperfetto", but its example has 2 in the passato prossimo and 3 in the
+    imperfetto. The message now says "2 al passato prossimo e 3 all'imperfetto". The
+    short teacher explanation at the end of the homework ("הסבר קצר") is a teacher
+    note.
+  - >-
+    Vocabulary: "Ho cenato… אכלתי ארוחת ערב / אכלת / אכל" → "…/ אכלת ארוחת ערב / אכל
+    ארוחת ערב"; "Giocavo… שיחקתי / שיחקת / שיחק" → "הייתי משחק / היית משחק / היה
+    משחק" and "Ascoltavo… הקשבתי…" → "הייתי מקשיב / היית מקשיב / היה מקשיב", like
+    the other imperfetto glosses. Please confirm.
+  - >-
+    The gamma.app lesson slides link is not allowed and is left out (see the teacher
+    note). The Quizlet link is kept without "?new". Times given as ranges are
+    recorded as the upper value (5–7 → 7).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: la-mia-vita-nel-passato-classe
+    title: 'In classe: La mia vita nel passato'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: La mia vita nel passato
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Passato prossimo e imperfetto
+            description: '*Ieri ho mangiato la pizza. Quando ero bambino, giocavo a calcio.*'
+          - name: Domande al passato (io, tu, lui / lei)
+            description: '*Cosa hai fatto? · Cosa facevi? · Il mio compagno è andato al mare.*'
+      - id: quizlet
+        type: externalLink
+        label: La mia vita nel passato su Quizlet
+        url: https://quizlet.com/nl/1167647022/la-mia-vita-nel-passato-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazioni
+      - id: intro-basic
+        type: sentenceFrame
+        prompt: "**Livello principiante:** di' il tuo nome e una cosa che hai fatto ieri."
+        frame: Mi chiamo ___. Ieri ___.
+        example: Mi chiamo Marta. Ieri ho mangiato la pizza a casa.
+      - id: intro-inter
+        type: sentenceFrame
+        prompt: "**Livello intermedio:** di' il tuo nome e un ricordo o un'abitudine del passato."
+        frame: Mi chiamo ___. Quando ero bambino / bambina, ___.
+        example: Mi chiamo Marta. Quando ero bambina, giocavo a calcio.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup-basic-title
+        type: heading
+        level: 4
+        text: 'Opzione A: gruppi principianti (passato prossimo)'
+      - id: warmup-basic
+        type: discussionQuestions
+        items:
+          - question: Cosa hai fatto ieri pomeriggio?
+            frame: Ieri pomeriggio ___.
+          - question: Cosa hai mangiato nell'ultimo pasto?
+            frame: Nell'ultimo pasto ho mangiato ___.
+          - question: Cosa hai visto recentemente?
+            frame: Recentemente ho visto ___.
+          - question: Cosa hai fatto lo scorso fine settimana?
+            frame: Lo scorso fine settimana ___.
+          - question: Con chi hai parlato ieri?
+            frame: Ieri ho parlato con ___.
+          - question: Cosa hai comprato l'ultima volta?
+            frame: L'ultima volta ho comprato ___.
+      - id: warmup-inter-title
+        type: heading
+        level: 4
+        text: 'Opzione B: gruppi intermedi (passato prossimo + imperfetto)'
+      - id: warmup-inter
+        type: discussionQuestions
+        items:
+          - question: Cosa facevi la domenica quando eri bambino / bambina?
+            frame: Quando ero bambino / bambina, la domenica ___.
+          - question: Che musica ascoltavi a 10 anni?
+            frame: A 10 anni ascoltavo ___.
+          - question: Com'era la tua scuola?
+            frame: La mia scuola era ___.
+          - question: Qual è stato il tuo ultimo viaggio?
+            frame: Il mio ultimo viaggio è stato a / in ___.
+          - question: Qual è stata la cosa più divertente che hai fatto il mese scorso?
+            frame: La cosa più divertente che ho fatto il mese scorso è stata ___.
+          - question: Com'era il tuo quartiere?
+            frame: Il mio quartiere era ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Intervista'
+        skills: ['Domande al passato (io, tu, lui / lei)', Passato prossimo e imperfetto]
+        minutes: 15
+        steps:
+          - Lavorate in coppia.
+          - Lo studente A fa 3 o 4 domande della lista. Lo studente B risponde in prima persona, con frasi complete.
+          - Scambiatevi i ruoli.
+          - Nel gruppo, racconta in terza persona cosa ha detto il tuo compagno.
+      - id: act1-basic
+        type: discussionQuestions
+        title: 'Opzione A: livello A2 (principianti), passato prossimo'
+        items:
+          - question: Dove sei nato / nata?
+          - question: Cosa hai visto la settimana scorsa?
+          - question: Cosa hai fatto lo scorso fine settimana?
+          - question: Cosa hai mangiato ieri sera?
+          - question: Con chi hai parlato ieri?
+      - id: act1-basic-example
+        type: callout
+        tone: info
+        title: 'Opzione A: esempio di report'
+        text: |-
+          *Il mio compagno è nato a Haifa e ieri ha mangiato la pasta. Lo scorso fine settimana è andato al cinema.*
+          **1ª persona:** *Sono nato, ho mangiato, sono andato…*
+          **2ª persona:** *Dove sei nato? Cosa hai fatto ieri?*
+          **3ª persona:** *Lui è nato, lei ha mangiato…*
+      - id: act1-inter
+        type: discussionQuestions
+        title: 'Opzione B: livello B1 (intermedio), passato prossimo + imperfetto'
+        items:
+          - question: Qual è stato il tuo viaggio preferito?
+          - question: Qual è stata la cosa più divertente che hai fatto il mese scorso?
+          - question: Qual è stata l'ultima cosa che hai comprato?
+          - question: Cosa facevi nel tempo libero quando eri bambino / bambina?
+          - question: Che musica ascoltavi quando eri giovane?
+          - question: Com'era la tua scuola?
+          - question: Dove vivevi prima?
+          - question: Com'era il tuo migliore amico / la tua migliore amica d'infanzia?
+      - id: act1-inter-example
+        type: callout
+        tone: info
+        title: 'Opzione B: esempio di intervista e di report'
+        text: |-
+          *A: Cosa facevi nel tempo libero quando eri bambino?*
+          *B: Giocavo a calcio e guardavo i cartoni animati.*
+          Mini-report biografico (4–5 frasi, in terza persona): *Il mio compagno è nato a Haifa. Il suo viaggio preferito è stato in Italia. Da bambino giocava a calcio tutti i giorni.*
+          **1ª persona:** *Ho viaggiato, ho studiato, da bambino giocavo…*
+          **2ª persona:** *Cosa hai fatto? Cosa facevi quando eri bambino?*
+          **3ª persona:** *Lui viaggiava, lei suonava, lui ascoltava sempre musica…*
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Qual è la domanda?'
+        skills: ['Domande al passato (io, tu, lui / lei)']
+        minutes: 10
+        steps:
+          - Leggi la frase al passato.
+          - Trasformala in una domanda.
+          - I compagni propongono altre domande per la stessa risposta.
+        example: |-
+          *Ieri ho fatto colazione con pane e caffè.*
+          *→ Cosa hai mangiato a colazione ieri?*
+      - id: act2-basic
+        type: discussionQuestions
+        title: 'Livello A2 (base)'
+        items:
+          - question: Ieri ho fatto colazione con pane e caffè.
+            frame: ___?
+          - question: Sabato sono andato al supermercato.
+            frame: ___?
+          - question: La settimana scorsa ho guardato un film a casa.
+            frame: ___?
+          - question: Lo scorso fine settimana ho cucinato la pasta.
+            frame: ___?
+          - question: Ieri ho parlato con la mia migliore amica.
+            frame: ___?
+          - question: Ieri sera ho studiato italiano.
+            frame: ___?
+          - question: Due giorni fa ho lavorato fino a tardi.
+            frame: ___?
+          - question: Domenica sono andato al parco.
+            frame: ___?
+          - question: Ieri ho bevuto un caffè al bar.
+            frame: ___?
+          - question: La settimana scorsa ho comprato dei vestiti.
+            frame: ___?
+      - id: act2-inter
+        type: discussionQuestions
+        title: 'Livello B1 (intermedio)'
+        items:
+          - question: Il mese scorso ho comprato un nuovo cellulare.
+            frame: ___?
+          - question: Tre giorni fa ho visitato i miei nonni.
+            frame: ___?
+          - question: Durante le vacanze sono andato in Spagna.
+            frame: ___?
+          - question: Lo scorso fine settimana ho giocato a calcio con i miei amici.
+            frame: ___?
+          - question: L'anno scorso ho iniziato un corso di inglese.
+            frame: ___?
+          - question: Ieri sera ho cenato con i miei colleghi.
+            frame: ___?
+          - question: Due settimane fa ho visto una mostra interessante.
+            frame: ___?
+          - question: L'estate scorsa ho viaggiato in Italia.
+            frame: ___?
+          - question: Ieri ho parlato con il mio capo di un nuovo progetto.
+            frame: ___?
+          - question: La settimana scorsa ho organizzato una festa.
+            frame: ___?
+      - id: act2-extension
+        type: callout
+        tone: info
+        title: 'Estensione (B1+)'
+        text: |-
+          Per ogni risposta, crea **2 o 3 domande diverse**.
+          *L'estate scorsa ho viaggiato in Italia.* → *Dove hai viaggiato l'estate scorsa? Quando hai viaggiato in Italia? Con chi hai viaggiato? Perché hai scelto l'Italia?*
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Diario di ieri'
+        skills: [Passato prossimo e imperfetto, 'Domande al passato (io, tu, lui / lei)']
+        minutes: 20
+        steps:
+          - 'Preparazione (5 minuti): scrivi cosa hai fatto ieri.'
+          - 'In coppia (10 minuti): scambiatevi i diari. Il compagno fa domande su ogni frase.'
+          - 'Produzione finale (5 minuti): presenta il tuo compagno al gruppo, in terza persona.'
+      - id: act3-basic
+        type: callout
+        tone: info
+        title: 'Livello A2 (base)'
+        text: |-
+          Scrivi **3 o 4 frasi semplici**: *Ieri ho fatto colazione con caffè e pane. Nel pomeriggio ho studiato italiano. Sono andato al supermercato. Ieri sera ho guardato una serie.*
+          Il compagno fa **1 domanda** per ogni frase: *Cosa hai mangiato a colazione? Cosa hai studiato? Cosa hai comprato al supermercato? Quale serie hai guardato?*
+          Presenta **2 o 3 informazioni** sul compagno: *Il mio compagno ha fatto colazione con caffè e pane. Nel pomeriggio ha studiato italiano.*
+          **1ª persona:** *Ho fatto, ho studiato, sono andato…* · **2ª persona:** *Cosa hai fatto? Dove sei andato?* · **3ª persona:** *Lui ha fatto, lei è andata…*
+      - id: act3-inter
+        type: callout
+        tone: info
+        title: 'Livello B1 (intermedio)'
+        text: |-
+          Scrivi **5 o 6 frasi più complete**, con marcatori temporali: *Ieri pomeriggio sono andato in palestra. Due giorni fa ho cenato con i miei amici. Lo scorso fine settimana ho studiato per un esame. Domenica sono andato al mare.*
+          Il compagno fa **almeno 2 domande** per ogni frase: *In quale palestra sei andato? Con chi sei andato?* · *Dove hai cenato? Cosa hai mangiato?* · *Per quale esame hai studiato? Era difficile?* · *Con chi sei andato al mare? Com'era il tempo?*
+          Presenta un **mini-report di 4 o 5 frasi**: *Il mio compagno ieri è andato in palestra. Due giorni fa ha cenato con i suoi amici. Lo scorso fine settimana ha studiato per un esame.*
+          **Estensione (B1+):** aggiungi una frase descrittiva all'imperfetto: *Quando era più giovane, andava spesso in palestra. Il film era molto interessante. Il tempo era bello.*
+      - id: act3-diary
+        type: discussionQuestions
+        title: Il mio diario di ieri
+        items:
+          - question: Ieri mattina ___.
+          - question: Nel pomeriggio ___.
+          - question: Ieri sera ___.
+          - question: Ho anche ___.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Quando ero bambino…'
+        skills: [Passato prossimo e imperfetto, 'Domande al passato (io, tu, lui / lei)']
+        minutes: 15
+        steps:
+          - Ascolta l'esempio dell'insegnante.
+          - Lavorate in coppia. Uno fa le domande, l'altro risponde in prima persona.
+          - '(B1) Dopo ogni risposta, fai **una domanda di follow-up**: *Dove lo facevi? Con chi? Quanto spesso? Ti piaceva?*'
+          - Scambiatevi i ruoli.
+          - Presenta al gruppo, in terza persona, quello che ha detto il tuo compagno.
+      - id: act4-basic
+        type: discussionQuestions
+        title: 'Livello A2 (base): passato prossimo'
+        items:
+          - question: Dove sei andato / andata in viaggio per la prima volta?
+            frame: La prima volta sono andato / andata a ___.
+          - question: Quale piatto speciale hai mangiato una volta e ricordi ancora?
+            frame: Una volta ho mangiato ___.
+          - question: Qual è stato il tuo primo film al cinema?
+            frame: Il mio primo film al cinema è stato ___.
+          - question: Cosa hai fatto durante una vacanza da bambino / bambina?
+            frame: Durante una vacanza ___.
+          - question: Dove hai passato le vacanze quando eri piccolo / piccola?
+            frame: Ho passato le vacanze a / in ___.
+          - question: Con chi sei andato / andata in vacanza?
+            frame: Sono andato / andata in vacanza con ___.
+      - id: act4-inter
+        type: discussionQuestions
+        title: 'Livello B1 (intermedio): imperfetto'
+        items:
+          - question: Cosa facevi nel tempo libero quando eri bambino / bambina?
+          - question: Che musica ascoltavi da bambino / bambina?
+          - question: Com'era la tua scuola?
+          - question: Com'era il tuo quartiere?
+          - question: Cosa facevi con la tua famiglia nel fine settimana?
+          - question: Avevi un hobby preferito? Quale?
+          - question: Con chi passavi più tempo?
+      - id: act4-examples
+        type: callout
+        tone: info
+        title: Esempi di report
+        text: |-
+          **A2:** *Il mio compagno è andato a Gerusalemme per la prima volta. Il suo primo film è stato Toy Story. È andato al mare con la sua famiglia.*
+          **B1:** *Il mio compagno giocava a calcio quando era bambino. Viveva in un quartiere con molti parchi. Ascoltava spesso musica alla radio. Passava il fine settimana con la sua famiglia.*
+          **Estensione (B1+):** aggiungi una frase al passato prossimo: *Da bambino giocava a calcio, ma una volta ha partecipato a un torneo. Viveva in una città piccola, ma un'estate è andato al mare con i nonni.*
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Obiettivi: parlare di esperienze passate con il **passato prossimo**,
+          introdurre e praticare l'**imperfetto** (abitudini e descrizioni), fare
+          **domande al passato** e passare dalla prima alla seconda e alla terza persona.
+          Quasi ogni parte ha un'opzione per gruppi principianti (A2) e una per gruppi
+          intermedi (B1): scegli quella del tuo gruppo. Le slide della lezione erano su
+          gamma.app, che non è nella lista dei link permessi: se le usi, condividile
+          tu dallo schermo.
+      - id: n-intro
+        anchor: intro-title
+        text: Fai prima il tuo esempio (*Mi chiamo Marta. Ieri ho mangiato la pizza a casa.*) e poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup-title
+        text: 'Domande veloci: con i gruppi principianti solo passato prossimo; con i gruppi intermedi passato prossimo + imperfetto. Fai almeno due domande a ogni studente.'
+      - id: n-act1
+        anchor: act1
+        minutes: 15
+        text: >-
+          A2: 3–4 domande al passato prossimo e un breve report del compagno. B1:
+          domande su esperienze (passato prossimo) e su abitudini e descrizioni
+          (imperfetto); alla fine ogni studente presenta un mini-report biografico di 4–5
+          frasi in terza persona.
+      - id: n-act2
+        anchor: act2
+        minutes: 10
+        text: >-
+          Domande possibili (A2): Cosa hai mangiato a colazione ieri? · Dove sei andato
+          sabato? · Cosa hai visto la settimana scorsa? · Cosa hai cucinato lo scorso
+          fine settimana? · Con chi hai parlato ieri? · Cosa hai studiato ieri sera? ·
+          Quando hai lavorato fino a tardi? · Dove sei andato domenica? · Cosa hai
+          bevuto ieri? · Cosa hai comprato la settimana scorsa? Domande possibili (B1):
+          Cosa hai comprato il mese scorso? · Chi hai visitato tre giorni fa? · Dove
+          sei andato in vacanza? · Che sport hai praticato lo scorso fine settimana? ·
+          Quale corso hai iniziato l'anno scorso? · Con chi hai cenato ieri sera? · Cosa
+          hai visto due settimane fa? · Dove hai viaggiato l'estate scorsa? · Di cosa
+          hai parlato con il tuo capo? · Cosa hai organizzato la settimana scorsa?
+          Accetta altre domande corrette.
+      - id: n-act3
+        anchor: act3
+        minutes: 20
+        text: >-
+          Preparazione: 5 minuti. Lavoro in coppia: 10 minuti. Produzione finale: 5
+          minuti (con i gruppi B1 fino a 7). Alla fine riprendi le tre persone: *Ho
+          fatto* (io) · *Cosa hai fatto?* (tu) · *Lui ha fatto, lei è andata* (lui /
+          lei).
+      - id: n-act4
+        anchor: act4
+        minutes: 15
+        text: >-
+          Fai prima il modello: «Dove sei andato in viaggio per la prima volta? Io sono
+          andato a Tel Aviv. E tu?». Obiettivo: parlare dell'infanzia in modo fluido,
+          con il passato prossimo (esperienze specifiche) e l'imperfetto (abitudini e
+          descrizioni), dalla prima alla terza persona. Conclusione A2: *Sono andato, ho
+          mangiato, ho visto* · *Dove sei andato?* · *Lui è andato, lei ha visto*.
+          Conclusione B1: *Giocavo, ascoltavo, vivevo* · *Cosa facevi? Com'era?* · *Lui
+          giocava, lei viveva*.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: la-mia-vita-nel-passato-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: overview
+        type: text
+        text: >-
+          Oggi abbiamo parlato del passato: abbiamo raccontato esperienze con verbi
+          frequenti (*sono andato, ho mangiato, ho visto, ho parlato, ho studiato, ho
+          viaggiato*), abbiamo fatto domande al passato e siamo passati dalla prima
+          persona (*Io sono andato*) alla seconda (*Dove sei andato?*) e alla terza
+          (*Lui è andato*).
+      - id: basic-title
+        type: heading
+        level: 3
+        text: Livello principiante (A2)
+      - id: rules-pp
+        type: ruleSummary
+        skill: Passato prossimo e imperfetto
+        rules:
+          - text: 'Il **passato prossimo** racconta azioni **specifiche**, successe **una volta** e già **finite**. Risponde a domande come *Cosa hai fatto? Cosa hai mangiato? Dove sei andato?*'
+            examples:
+              - Ieri ho mangiato la pizza.
+              - Sabato sono andato al cinema.
+              - La settimana scorsa ho visto un film.
+          - text: 'Si forma con **avere** o **essere** al presente + il **participio passato** (*mangiare → mangiato, vedere → visto, fare → fatto*).'
+            examples: [Ho mangiato. Hai visto. Ha fatto.]
+          - text: 'La maggior parte dei verbi usa **avere**. Alcuni verbi di movimento o di cambiamento usano **essere**: *andare, venire, arrivare, partire, nascere, stare, essere*. Con **essere** il participio cambia come il soggetto: *o / a* al singolare, *i / e* al plurale.'
+            examples:
+              - Marco è andato al mare.
+              - Mia sorella è andata al mare.
+              - I miei amici sono andati al cinema.
+          - text: "Spesso c'è un'**espressione di tempo**:"
+            examples:
+              - 'ieri, ieri sera, sabato, la settimana scorsa, lo scorso fine settimana, due giorni fa'
+      - id: pp-table
+        type: table
+        caption: Passato prossimo
+        header: [Persona, mangiare, andare, fare]
+        rows:
+          - [io, ho mangiato, sono andato / andata, ho fatto]
+          - [tu, hai mangiato, sei andato / andata, hai fatto]
+          - [lui / lei, ha mangiato, è andato / andata, ha fatto]
+      - id: rules-domande
+        type: ruleSummary
+        skill: Domande al passato (io, tu, lui / lei)
+        rules:
+          - text: 'Per fare una domanda: parola interrogativa (*cosa, dove, con chi, quando, quale*) + verbo al passato, alla seconda persona (*tu*).'
+            examples:
+              - Cosa hai mangiato ieri?
+              - Dove sei andato sabato?
+              - Con chi hai parlato?
+          - text: 'Cambia la persona secondo con chi parli: io racconto, a te faccio una domanda, di lui / lei faccio un report.'
+            examples:
+              - '1ª persona (io): Ho mangiato la pizza.'
+              - '2ª persona (tu): Cosa hai mangiato ieri?'
+              - '3ª persona (lui / lei): Ieri ha mangiato la pizza.'
+      - id: inter-title
+        type: heading
+        level: 3
+        text: Livello intermedio (B1)
+      - id: rules-imperfetto
+        type: ruleSummary
+        skill: Passato prossimo + imperfetto
+        rules:
+          - text: "L'**imperfetto** descrive le **abitudini** del passato e le **situazioni** o le **descrizioni** (come era una persona, un luogo, il tempo)."
+            examples:
+              - Quando ero bambino, giocavo a calcio.
+              - Il mio quartiere era molto tranquillo.
+              - A scuola avevamo lezioni di musica.
+          - text: "Espressioni tipiche dell'imperfetto:"
+            examples:
+              [
+                'quando ero bambino / bambina, da piccolo, di solito, spesso, sempre, tutti i giorni',
+              ]
+          - text: "In un racconto usiamo tutti e due: il **passato prossimo** dice cosa è successo, l'**imperfetto** descrive la situazione."
+            examples: [L'estate scorsa sono andato al mare. Il mare era molto tranquillo.]
+          - text: 'Domande utili:'
+            examples:
+              - Cosa hai fatto? (passato prossimo)
+              - Cosa facevi? (imperfetto)
+              - Com'era? (imperfetto)
+          - text: "Racconta di un'altra persona in terza persona:"
+            examples: [Il mio compagno giocava a calcio e viaggiava molto.]
+      - id: imperfetto-table
+        type: table
+        caption: Imperfetto
+        header: [Persona, giocare, vivere, essere]
+        rows:
+          - [io, giocavo, vivevo, ero]
+          - [tu, giocavi, vivevi, eri]
+          - [lui / lei, giocava, viveva, era]
+      - id: recap
+        type: callout
+        tone: info
+        title: Da ricordare
+        text: |-
+          **Passato prossimo** = un'azione specifica, finita.
+          **Imperfetto** = abitudini, descrizioni, lo sfondo del racconto.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le regole del livello del tuo gruppo e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: la-mia-vita-nel-passato-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia un messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: basic-title
+        type: heading
+        level: 3
+        text: Livello principiante (A2)
+      - id: basic-goal
+        type: text
+        text: 'Frasi semplici e domande brevi, al passato prossimo.'
+      - id: mori-basic-1
+        type: aiTutorPrompt
+        title: 'Compito 1: Domande e risposte'
+        intro: Mori ti fa 5 domande. Rispondi con frasi complete; Mori ti corregge.
+        message: 'Ciao Mori, voglio praticare il passato prossimo. Fammi 5 domande semplici, tipo: Cosa hai fatto ieri? Cosa hai mangiato? Io risponderò e tu mi correggerai.'
+      - id: mori-basic-2
+        type: aiTutorPrompt
+        title: 'Compito 2: Mini-diario'
+        intro: 'Poi scrivi 4 frasi su ieri. Esempio: *Ieri sono andato al supermercato. Ieri sera ho guardato la TV. Ho cucinato la pizza. Ho parlato con un amico.*'
+        message: Ciao Mori, ti racconterò 4 cose che ho fatto ieri. Correggimi e poi fammi una domanda su ogni frase.
+      - id: mori-basic-3
+        type: aiTutorPrompt
+        title: "Compito 3: Report su un'altra persona"
+        intro: "Poi scrivi 3 frasi in terza persona. Esempio: *Mia sorella ha studiato per un esame. Ha mangiato un'insalata. Ha guardato un film.*"
+        message: Ciao Mori, ti racconterò cosa ha fatto ieri una persona della mia famiglia. Correggimi e fammi una domanda.
+      - id: inter-title
+        type: heading
+        level: 3
+        text: Livello intermedio (B1)
+      - id: inter-goal
+        type: text
+        text: "Risposte più lunghe: unisci il passato prossimo e l'imperfetto e rispondi alle domande di follow-up."
+      - id: mori-inter-1
+        type: aiTutorPrompt
+        title: 'Compito 1: Intervista'
+        intro: 'Esempio: Mori: *Qual è stato il tuo viaggio preferito?* Tu: *Il mio viaggio preferito è stato in Italia.* Mori: *Con chi sei andato?*'
+        message: "Ciao Mori, fammi 5 domande: 3 al passato prossimo e 2 all'imperfetto. Correggimi e fammi una domanda di follow-up."
+      - id: mori-inter-2
+        type: aiTutorPrompt
+        title: 'Compito 2: Mini-biografia'
+        intro: 'Poi scrivi 5 frasi. Esempio: *Quando ero bambino, vivevo in una piccola città. Giocavo con i miei amici. Sono andato a Madrid con la mia famiglia. Il viaggio è stato divertente. La scuola era grande.*'
+        message: "Ciao Mori, scriverò una mini-biografia della mia infanzia: 2 frasi al passato prossimo e 3 all'imperfetto. Correggimi e fammi una domanda."
+      - id: mori-inter-3
+        type: aiTutorPrompt
+        title: 'Compito 3: Diario dettagliato'
+        intro: "Poi scrivi 6 frasi, ognuna con una descrizione all'imperfetto. Esempio: *Sabato sono andato in spiaggia. Faceva molto caldo. Ho cenato con la mia famiglia. Il cibo era delizioso.*"
+        message: "Ciao Mori, ti racconterò cosa ho fatto la settimana scorsa in 6 frasi. In ogni frase aggiungo un dettaglio all'imperfetto. Correggimi e fammi una domanda."
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+    teacherNotes:
+      - id: n-homework
+        anchor: null
+        text: 'Livello principiante: frasi semplici e domande brevi. Livello intermedio: risposte più lunghe, i due tempi insieme e domande di follow-up.'
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: la-mia-vita-nel-passato-pratica
+    book: workbook
+    title: 'Pratica: La mia vita nel passato'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-tempi
+        type: activity
+        activity: la-mia-vita-nel-passato-tempi
+      - id: ex-domande
+        type: activity
+        activity: la-mia-vita-nel-passato-domande
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: la-mia-vita-nel-passato-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole della mia vita nel passato
+        glossLang: he
+        link: https://quizlet.com/nl/1167647022/la-mia-vita-nel-passato-flash-cards/
+        items: &la-mia-vita-nel-passato-words
+          - { term: Sono andato / sei andato / è andato, gloss: הלכתי / הלכת / הלך }
+          - { term: Ho mangiato / hai mangiato / ha mangiato, gloss: אכלתי / אכלת / אכל }
+          - { term: Ho visto / hai visto / ha visto, gloss: ראיתי / ראית / ראה }
+          - { term: Ho parlato / hai parlato / ha parlato, gloss: דיברתי / דיברת / דיבר }
+          - { term: Ho studiato / hai studiato / ha studiato, gloss: למדתי / למדת / למד }
+          - { term: Ho viaggiato / hai viaggiato / ha viaggiato, gloss: טיילתי / טיילת / טייל }
+          - { term: Ho comprato / hai comprato / ha comprato, gloss: קניתי / קנית / קנה }
+          - { term: Ho fatto / hai fatto / ha fatto, gloss: עשיתי / עשית / עשה }
+          - { term: Ho bevuto / hai bevuto / ha bevuto, gloss: שתיתי / שתית / שתה }
+          - { term: Ho lavorato / hai lavorato / ha lavorato, gloss: עבדתי / עבדת / עבד }
+          - { term: Ho guardato / hai guardato / ha guardato, gloss: צפיתי / צפית / צפה }
+          - { term: Ho cucinato / hai cucinato / ha cucinato, gloss: בישלתי / בישלת / בישל }
+          - { term: Ho visitato / hai visitato / ha visitato, gloss: ביקרתי / ביקרת / ביקר }
+          - {
+              term: Ho cenato / hai cenato / ha cenato,
+              gloss: אכלתי ארוחת ערב / אכלת ארוחת ערב / אכל ארוחת ערב,
+            }
+          - { term: Ho iniziato / hai iniziato / ha iniziato, gloss: התחלתי / התחלת / התחיל }
+          - {
+              term: Ho organizzato / hai organizzato / ha organizzato,
+              gloss: ארגנתי / ארגנת / ארגן,
+            }
+          - { term: Ero / eri / era, gloss: הייתי / היית / היה }
+          - { term: Avevo / avevi / aveva, gloss: היה לי / היה לך / היה לו }
+          - { term: Giocavo / giocavi / giocava, gloss: הייתי משחק / היית משחק / היה משחק }
+          - { term: Ascoltavo / ascoltavi / ascoltava, gloss: הייתי מקשיב / היית מקשיב / היה מקשיב }
+          - { term: Vivevo / vivevi / viveva, gloss: גרתי / גרת / גר }
+          - { term: Abitavo / abitavi / abitava, gloss: גרתי / גרת / גר }
+          - { term: Andavo / andavi / andava, gloss: הייתי הולך / היית הולך / היה הולך }
+          - { term: Facevo / facevi / faceva, gloss: הייתי עושה / היית עושה / היה עושה }
+          - { term: Studiavo / studiavi / studiava, gloss: הייתי לומד / היית לומד / היה לומד }
+          - { term: Lavoravo / lavoravi / lavorava, gloss: הייתי עובד / היית עובד / היה עובד }
+          - { term: Passavo / passavi / passava, gloss: הייתי מבלה / היית מבלה / היה מבלה }
+          - { term: Guardavo / guardavi / guardava, gloss: הייתי צופה / היית צופה / היה צופה }
+          - { term: Sono stato / sei stato / è stato, gloss: הייתי / היית / היה }
+          - { term: Sono andato al mare, gloss: הלכתי לים }
+          - { term: Ho parlato con un amico, gloss: דיברתי עם חבר }
+          - { term: Ho studiato italiano, gloss: למדתי איטלקית }
+          - { term: Ho mangiato la pizza, gloss: אכלתי פיצה }
+          - { term: Ho visto un film, gloss: ראיתי סרט }
+          - { term: Giocavo a calcio, gloss: הייתי משחק כדורגל }
+          - { term: Vivevo in una città piccola, gloss: גרתי בעיר קטנה }
+          - { term: Ieri, gloss: אתמול }
+          - { term: La settimana scorsa, gloss: בשבוע שעבר }
+          - { term: Lo scorso fine settimana, gloss: בסוף השבוע האחרון }
+          - { term: Due giorni fa, gloss: לפני יומיים }
+          - { term: Quando ero bambino, gloss: כשהייתי ילד }
+
+vocabulary:
+  - slug: la-mia-vita-nel-passato
+    title: La mia vita nel passato
+    items: *la-mia-vita-nel-passato-words
+
+activities:
+  - slug: la-mia-vita-nel-passato-tempi
+    title: 'Passato prossimo e imperfetto: ho mangiato, mangiavo'
+    minutes: 8
+    items:
+      - id: ieri-pizza
+        type: multipleChoice
+        prompt: Ieri ___ la pizza.
+        options:
+          - { text: ho mangiato, correct: true }
+          - {
+              text: mangiavo,
+              feedback: "*Ieri* indica un'azione specifica e finita: usiamo il passato prossimo, *ho mangiato*.",
+            }
+          - {
+              text: mangio,
+              feedback: '*Mangio* è presente. Con *ieri* usiamo il passato: *ho mangiato*.',
+            }
+      - id: sabato-cinema
+        type: multipleChoice
+        prompt: Sabato ___ al cinema.
+        options:
+          - { text: sono andato, correct: true }
+          - {
+              text: ho andato,
+              feedback: '*Andare* è un verbo di movimento: usa *essere*, *sono andato*.',
+            }
+          - {
+              text: andavo,
+              feedback: "*Sabato* indica un'azione specifica, una volta sola: usiamo il passato prossimo, *sono andato*.",
+            }
+      - id: sorella-andata
+        type: multipleChoice
+        prompt: Mia sorella ___ al mare.
+        options:
+          - { text: è andata, correct: true }
+          - {
+              text: è andato,
+              feedback: 'Con *essere* il participio cambia come il soggetto: *mia sorella* è femminile, quindi *è andata*.',
+            }
+          - { text: ha andata, feedback: '*Andare* usa *essere*: *è andata*.' }
+      - id: giocavo
+        type: fillBlank
+        prompt: Completa con il verbo *giocare* all'imperfetto.
+        text: Quando ero bambino, ___ a calcio tutti i giorni.
+        blanks: [[giocavo, io giocavo]]
+      - id: quartiere-era
+        type: trueFalse
+        prompt: "Nella frase *Il mio quartiere era molto tranquillo* usiamo l'imperfetto perché è una descrizione."
+        answer: true
+        feedback:
+          correct: "Giusto! Le descrizioni del passato vanno all'imperfetto: *era*."
+          incorrect: "Le descrizioni del passato (come era un luogo, una persona) vanno all'imperfetto: *era molto tranquillo*."
+      - id: unisci-participi
+        type: matching
+        prompt: Unisci ogni verbo alla forma di *io* al passato prossimo.
+        pairs:
+          - [mangiare, ho mangiato]
+          - [andare, sono andato]
+          - [vedere, ho visto]
+          - [fare, ho fatto]
+          - [bere, ho bevuto]
+      - id: estate-mare
+        type: fillBlank
+        prompt: Completa con *andare* (passato prossimo) e *essere* (imperfetto).
+        text: L'estate scorsa ___ al mare. Il mare ___ molto tranquillo.
+        blanks: [[sono andato, sono andata, io sono andato, io sono andata], [era]]
+      - id: ordina-calcio
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Da bambino giocavo a calcio con i miei amici.
+
+  - slug: la-mia-vita-nel-passato-domande
+    title: 'Domande al passato: Cosa hai fatto? Cosa facevi?'
+    minutes: 8
+    items:
+      - id: studiato
+        type: multipleChoice
+        prompt: 'Risposta: *Ieri sera ho studiato italiano.* Qual è la domanda?'
+        options:
+          - { text: Cosa hai studiato ieri sera?, correct: true }
+          - {
+              text: Cosa ho studiato ieri sera?,
+              feedback: "*Ho studiato* è per *io*. Per fare una domanda a un'altra persona (tu) usiamo *hai studiato*.",
+            }
+          - {
+              text: Cosa studi ieri sera?,
+              feedback: '*Studi* è presente. Con *ieri sera* usiamo il passato: *Cosa hai studiato?*',
+            }
+      - id: dove-sei-andato
+        type: fillBlank
+        prompt: Completa la domanda con il verbo *andare* al passato prossimo.
+        text: Sabato sono andato al supermercato. → Dove ___ sabato?
+        blanks: [[sei andato, sei andata, tu sei andato, tu sei andata]]
+      - id: unisci-domande
+        type: matching
+        prompt: Unisci ogni domanda alla sua risposta.
+        pairs:
+          - [Con chi hai parlato ieri?, Ho parlato con la mia migliore amica.]
+          - [Cosa hai bevuto al bar?, Ho bevuto un caffè.]
+          - [Dove sei andato domenica?, Sono andato al parco.]
+          - [Cosa hai comprato la settimana scorsa?, Ho comprato dei vestiti.]
+          - [Com'era la tua scuola?, Era grande e moderna.]
+      - id: report-serie
+        type: multipleChoice
+        prompt: 'Il tuo compagno dice: *Ieri sera ho guardato una serie.* Lo racconti al gruppo: Il mio compagno ___ una serie.'
+        options:
+          - { text: ha guardato, correct: true }
+          - {
+              text: ho guardato,
+              feedback: '*Ho guardato* è per *io*. Per il tuo compagno (lui) usiamo *ha guardato*.',
+            }
+          - {
+              text: hai guardato,
+              feedback: '*Hai guardato* è per *tu*. Per il tuo compagno (lui) usiamo *ha guardato*.',
+            }
+      - id: facevi
+        type: multipleChoice
+        prompt: "Vuoi chiedere un'abitudine dell'infanzia. Quale domanda usi?"
+        options:
+          - { text: Cosa facevi quando eri bambino?, correct: true }
+          - {
+              text: Cosa hai fatto quando eri bambino?,
+              feedback: "Per le abitudini del passato usiamo l'imperfetto: *Cosa facevi?*",
+            }
+          - {
+              text: Cosa fai quando eri bambino?,
+              feedback: "*Fai* è presente. Per un'abitudine del passato usiamo *facevi*.",
+            }
+      - id: report-nata
+        type: fillBlank
+        prompt: 'Completa il report sulla tua compagna con *nascere* (passato prossimo) e *vivere* (imperfetto).'
+        text: La mia compagna ___ a Haifa. Da bambina ___ in un quartiere tranquillo.
+        blanks: [[è nata, lei è nata], [viveva, lei viveva]]
+      - id: seconda-persona
+        type: trueFalse
+        prompt: '*Dove sei andato?* è una domanda alla seconda persona (tu).'
+        answer: true
+        feedback:
+          correct: Giusto! *Sei andato* = tu. *Sono andato* = io, *è andato* = lui.
+          incorrect: '*Sei andato* è la seconda persona (tu). *Sono andato* = io, *è andato* = lui.'
+      - id: ordina-mare
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Con chi sei andato al mare?
