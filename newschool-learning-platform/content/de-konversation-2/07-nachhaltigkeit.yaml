@@ -1,0 +1,649 @@
+# Cycle "Nachhaltigkeit", converted from the German level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-konversation-2
+slug: nachhaltigkeit
+title: Nachhaltigkeit
+goal: Über die Umwelt sprechen, mit der Zukunft mit werden und mit Vergleichen.
+position: 7
+status: in_review
+
+review:
+  - >-
+    The two workbook exercises ("Zukunft mit werden" and "Vergleiche") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary, the activity examples and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Summary, comparisons: the notebook calls the first structure "mehr / weniger …
+    als" but its example is "umweltfreundlicher als" (a Komparativ with -er). "mehr +
+    adjective" ("mehr umweltfreundlich") is not correct German (a rule carried over
+    from English). The rule is rewritten: adjective + -er + als (sauberer, grüner,
+    umweltfreundlicher; gut → besser); weniger + adjective + als (weniger schädlich);
+    mehr / weniger + noun + als (mehr Müll, weniger Plastik); so + adjective (base
+    form) + wie. Activity 2's required list "1. mehr … als" was changed the same way.
+    Please confirm.
+  - >-
+    Summary, Zukunft: a werden table (ich werde, du wirst, er / sie / es wird, wir
+    werden, ihr werdet, sie / Sie werden) was added; the notebook gives only ich /
+    wir examples. The wenn rule now also says that after the wenn clause the main
+    clause starts with the verb (Wenn wir mehr recyceln, **wird** die Umwelt
+    sauberer). The note "after als and wie the word order does not change" was
+    dropped (it does not help at A2 and is not a rule students need here).
+  - >-
+    The summary and the Mori homework are written in Hebrew in the notebook. The rules
+    are given in simple German (ruleSummary) with short Hebrew text blocks (lang he);
+    the 8 Mori prompts were translated into German messages the student sends to Mori
+    (the Hebrew "goal" line of each prompt became the title). Please check the German
+    and the Hebrew. The Hebrew summary's "important A2 principles" and "short summary"
+    were merged into one callout.
+  - >-
+    The end of the class plan ("Grammatik-Reminder (2 Minuten)" and "Lehrerhinweise –
+    wichtig") became teacher notes. The introduction note "Keine Bewertung, nur
+    Beobachtung" is a teacher note. The teacher shows 2–3 pictures (rubbish, recycling,
+    traffic) in Activity 1: the pictures are not in the notebook.
+  - >-
+    Activity 2 says "Jedes Paar bekommt 2 Paare" but lists three pairs; it now says
+    "zwei der drei Paare". Activity 4 frames "___ ist sauberer als ___" etc. were kept;
+    the formatting debris (stray asterisks and line-break codes) was removed.
+  - >-
+    Vocabulary: glosses kept as in the notebook except "werden – יהיה / להפוך ל־ (פועל
+    עזר לעתיד)" → "פועל עזר לעתיד (אני אעשה) / להפוך ל־", "das Auto – רכב" → "מכונית",
+    "trennen (Müll trennen)" split into its own entry "den Müll trennen". "als" and "wie"
+    glosses now say "(בהשוואה)". Please confirm.
+  - >-
+    Times given as ranges are recorded as the upper value (Activity 1 15–20 → 20, pair
+    work 8–10 → 10, Activity 3 15–20 → 20, Activity 4 10–12 → 12). The Quizlet link
+    lost its "?new" parameter. The "Antwort Schüler 1/2/3" lines were removed (the
+    platform has answer boxes); the model answers are kept as frames.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: nachhaltigkeit-unterricht
+    title: 'Unterricht: Nachhaltigkeit'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Nachhaltigkeit
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Zukunft mit werden
+            description: '*werden* + Infinitiv: *Ich werde mehr recyceln.* Wenn-Sätze: *Wenn wir mehr recyceln, wird die Umwelt sauberer.*'
+          - name: Vergleiche
+            description: '*umweltfreundlicher als*, *weniger … als*, *so … wie*'
+      - id: quizlet
+        type: externalLink
+        label: Nachhaltigkeit auf Quizlet
+        url: https://quizlet.com/br/1128898092/nachhaltigkeit-flash-cards/
+      - id: aims
+        type: callout
+        tone: info
+        title: Sprachliche Ziele
+        text: |-
+          Über Umweltgewohnheiten sprechen.
+          Einfache Zukunftspläne formulieren.
+          Dinge vergleichen.
+          Kurze Fragen stellen und beantworten.
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Einführungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Mein Name ist ___. Ich recycle oft / manchmal / nie.
+        example: Mein Name ist Yuval. Ich recycle manchmal.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Vorbereitungsfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Womit transportierst du deine Einkäufe und warum?
+            frame: |-
+              Ich transportiere meine Einkäufe mit ___, weil ___.
+              *Modell: Ich transportiere meine Einkäufe mit einer Stofftasche, weil sie praktisch ist.*
+          - question: Wie transportierst du Wasser, wenn du das Haus verlässt (zum Beispiel Plastikflasche, Becher, Thermoskanne)?
+            frame: |-
+              Ich nehme ___ mit, weil ___.
+              *Modell: Ich nehme eine Trinkflasche mit, weil ich kein Plastik benutzen möchte.*
+          - question: Was machst du zu Hause, um weniger Strom zu verbrauchen?
+            frame: |-
+              Ich ___.
+              *Modell: Ich mache das Licht aus und benutze weniger Strom.*
+          - question: Welche Art von Müll recycelst du am häufigsten und wie?
+            frame: |-
+              Ich recycle ___ und ___.
+              *Modell: Ich recycle Papier und Plastik und bringe sie in den Container.*
+          - question: Wie bewegst du dich am liebsten in deiner Stadt fort und warum?
+            frame: |-
+              Ich fahre / gehe ___, weil ___.
+              *Modell: Ich fahre mit dem Bus, weil es günstig und umweltfreundlich ist.*
+          - question: Welche Veränderungen möchtest du in Zukunft machen, um die Umweltverschmutzung zu reduzieren?
+            frame: |-
+              In Zukunft werde ich ___.
+              *Modell: In Zukunft werde ich weniger Plastik benutzen und mehr zu Fuß gehen.*
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Was werden wir für den Planeten tun?'
+        skills: [Zukunft mit werden]
+        minutes: 20
+        steps:
+          - 'Einstieg (5 Minuten): Schau die Bilder an. Was sehen wir hier? Ist das gut oder schlecht für die Umwelt?'
+          - 'Paararbeit (10 Minuten): Schreibt zu zweit **3 Zukunftssätze** mit den Satzanfängen unten. Benutzt die Wortbank.'
+          - 'Kurzer Austausch (5 Minuten): Jedes Paar liest **einen Satz** vor.'
+        example: |-
+          *Ich werde mehr recyceln.*
+          *Wenn wir nicht recyceln, wird die Umwelt schmutzig.*
+        wordBank:
+          - recyceln
+          - Plastik benutzen
+          - zu Fuß gehen
+          - mit dem Bus fahren
+          - Müll trennen
+          - Energie sparen
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Unsere 3 Zukunftssätze
+        items:
+          - question: Wir werden ___.
+          - question: Wir werden weniger ___.
+          - question: Wenn wir das nicht tun, wird ___.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Was ist umweltfreundlicher?'
+        skills: [Vergleiche]
+        minutes: 15
+        steps:
+          - 'Vorbereitung (3 Minuten): Lies die Beispiele an der Tafel.'
+          - 'Partnerarbeit (10 Minuten): Jedes Paar bekommt zwei der drei Paare: *Fahrrad / Auto*, *Stofftasche / Plastiktasche*, *Leitungswasser / Plastikflasche*.'
+          - 'Schreibt **3 Vergleichssätze**: 1. mit Komparativ + *als* (z. B. *umweltfreundlicher als*), 2. mit *weniger … als*, 3. mit *so … wie*.'
+          - 'Plenum (4 Minuten): Jedes Paar liest einen Satz vor.'
+        example: |-
+          *Das Fahrrad ist umweltfreundlicher als das Auto.*
+          *Eine Stofftasche ist besser als eine Plastiktasche.*
+          *Der Bus ist so praktisch wie das Auto.*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Unsere 3 Vergleichssätze
+        items:
+          - question: ___ ist ___er als ___.
+          - question: ___ ist weniger ___ als ___.
+          - question: ___ ist so ___ wie ___.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Öko-Interview (wechselnde Paare)'
+        skills: [Zukunft mit werden, Vergleiche]
+        minutes: 20
+        steps:
+          - 'Vorbereitung (2 Minuten): Lies die drei Fragen unten.'
+          - 'Runde 1 (5 Minuten): A fragt, B antwortet. Dann wechselt ihr die Rollen.'
+          - 'Runde 2 (5 Minuten): Neue Partner, gleiche Fragen.'
+          - 'Bericht im Plenum (5 Minuten): Jeder sagt **einen Satz** über seinen Partner / seine Partnerin.'
+        example: |-
+          *Mein Partner wird weniger Plastik benutzen.*
+          *Er findet den Bus besser als das Auto.*
+      - id: act3-questions
+        type: discussionQuestions
+        items:
+          - question: Was wirst du diese Woche tun, um der Umwelt zu helfen?
+            frame: Diese Woche werde ich ___.
+          - question: Was ist besser für die Umwelt – Auto oder Bus? Warum?
+            frame: Der Bus / Das Auto ist besser als ___, weil ___.
+          - question: Was wird in deiner Stadt in Zukunft besser oder schlechter sein?
+            frame: In Zukunft wird ___ besser / schlechter sein.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Städte vergleichen'
+        skills: [Vergleiche]
+        minutes: 12
+        steps:
+          - 'Partnerarbeit: Wählt zwei Städte oder Orte: eure eigene Stadt und eine bekannte Stadt.'
+          - Schreibt 2–3 Sätze mit den Satzanfängen unten.
+          - 'Kurzer Austausch: 1 Satz pro Paar.'
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Unsere Städte
+        items:
+          - question: ___ ist sauberer als ___.
+          - question: ___ ist grüner als ___.
+          - question: ___ ist so groß wie ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Zukunft mit werden** (Aktivitäten 1 und
+          3) und **Vergleiche** (Aktivitäten 2, 3 und 4). Niveau A2: klar, konkret,
+          wiederholbar.
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: Jeder Schüler sagt einen Satz. Keine Bewertung, nur Beobachtung.
+      - id: n-warmup
+        anchor: warmup
+        text: Stell jedem Schüler mindestens zwei Fragen. Die Modellantworten stehen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Zeig zu Beginn 2–3 Bilder (Müll, Recycling, Verkehr; nicht im Heft). Schreib
+          dann an die Tafel: «Ich werde ___.» und «Wenn wir ___, wird ___.» Beim
+          Austausch korrigierst du nur: *werden*, das Verb am Ende und die Aussprache.
+      - id: n-act2
+        anchor: act2
+        text: 'Schreib vorher an die Tafel: «Das Fahrrad ist umweltfreundlicher als das Auto. Eine Stofftasche ist besser als eine Plastiktasche. Der Bus ist so praktisch wie das Auto.»'
+      - id: n-act3
+        anchor: act3
+        text: Schreib die drei Fragen an die Tafel. Nach Runde 1 bilden die Schüler neue Paare.
+      - id: n-reminder
+        anchor: act4-sentences
+        minutes: 2
+        text: >-
+          Grammatik-Reminder zum Schluss: Zukunft = Subjekt + *werden* + Infinitiv (*Ich
+          werde mehr recyceln.*). Vergleiche: Komparativ + *als*, *weniger … als*, *so …
+          wie*.
+      - id: n-tips
+        anchor: act4-sentences
+        text: >-
+          Lehrerhinweise – wichtig: ein Gedanke pro Satz; kein Fachvokabular erzwingen;
+          Inhalt ist wichtiger als Perfektion.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: nachhaltigkeit-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-werden
+        type: ruleSummary
+        skill: Zukunft mit werden
+        rules:
+          - text: 'Für Pläne und Entscheidungen für die Zukunft benutzen wir **werden + Infinitiv**. *werden* steht an Position 2, der Infinitiv steht **am Ende**.'
+            examples:
+              [
+                Ich **werde** mehr recyceln.,
+                Ich **werde** weniger Plastik benutzen.,
+                Wir **werden** mehr zu Fuß gehen.,
+              ]
+          - text: 'Mit **wenn** sprechen wir über Folgen. Im wenn-Satz steht das Verb am Ende. Danach kommt zuerst das Verb *wird / werden*, dann das Subjekt.'
+            examples:
+              [
+                'Wenn wir mehr recyceln, **wird** die Umwelt sauberer.',
+                'Wenn wir nicht sparen, **wird** es mehr Müll geben.',
+              ]
+          - text: 'Fragen und kurze Antworten:'
+            examples:
+              [
+                'Was **wirst** du tun, um der Umwelt zu helfen? – Ich **werde** den Bus nehmen.',
+                Was ist besser für die Umwelt – Bus oder Auto? – Der Bus ist besser als das Auto.,
+              ]
+      - id: werden-table
+        type: table
+        caption: werden
+        header: [Person, werden, Beispiel]
+        rows:
+          - [ich, werde, Ich werde mehr recyceln.]
+          - [du, wirst, Du wirst weniger Plastik benutzen.]
+          - [er / sie / es, wird, Sie wird mit dem Bus fahren.]
+          - [wir, werden, Wir werden Energie sparen.]
+          - [ihr, werdet, Ihr werdet den Müll trennen.]
+          - [sie / Sie, werden, Sie werden zu Fuß gehen.]
+      - id: werden-he
+        type: text
+        lang: he
+        text: >-
+          בגרמנית משתמשים ב־werden + Infinitiv כדי לדבר על תוכניות והחלטות לעתיד. werden
+          מוטה לפי הגוף ועומד במקום השני, והפועל העיקרי בצורת המקור מגיע תמיד בסוף המשפט.
+          במשפט עם wenn הפועל מגיע בסוף החלק של wenn, ואחריו המשפט הראשי מתחיל בפועל
+          wird / werden.
+      - id: rules-vergleiche
+        type: ruleSummary
+        skill: Vergleiche
+        rules:
+          - text: 'Zwei Dinge sind **nicht gleich**: Adjektiv + **-er** + **als**. *gut* ist unregelmäßig: *besser*.'
+            examples:
+              [
+                Das Fahrrad ist **umweltfreundlicher als** das Auto.,
+                Eine Stofftasche ist **besser als** eine Plastiktasche.,
+              ]
+          - text: '**weniger** + Adjektiv + **als**. Mit einem Nomen: **mehr / weniger** + Nomen + **als**. (Nicht: *mehr umweltfreundlich*.)'
+            examples:
+              [
+                Der Bus ist **weniger schädlich als** das Auto.,
+                Das Auto macht **mehr Müll als** das Fahrrad.,
+              ]
+          - text: 'Zwei Dinge sind **gleich**: **so** + Adjektiv (Grundform) + **wie**.'
+            examples:
+              [
+                Der Bus ist **so praktisch wie** das Auto.,
+                Leitungswasser ist **so gut wie** Wasser aus der Flasche.,
+              ]
+      - id: vergleiche-he
+        type: text
+        lang: he
+        text: >-
+          כשמשווים בין שני דברים שונים מוסיפים לתואר את הסיומת ‎-er ואחריו als
+          (umweltfreundlicher als – ידידותי יותר לסביבה מ־). gut הופך ל־besser. בגרמנית לא
+          אומרים mehr לפני תואר; weniger לפני תואר אפשר (weniger schädlich – פחות מזיק).
+          mehr / weniger באים גם לפני שם עצם (mehr Müll – יותר זבל). כשהדברים שווים:
+          so + תואר + wie (so praktisch wie – פרקטי כמו).
+      - id: a2-tips
+        type: callout
+        tone: tip
+        title: Tipps für A2
+        text: |-
+          Ein Gedanke pro Satz. Kurze, klare Sätze.
+          Die gleichen Strukturen oft wiederholen.
+          Der Inhalt ist wichtiger als Perfektion.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die zwei Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: nachhaltigkeit-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere eine Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: '1. Zukunft mit werden'
+        message: |-
+          Hallo Mori! Ich möchte die Zukunft auf Deutsch üben.
+          Bitte stell mir 5 einfache Fragen darüber, was ich in Zukunft für die Umwelt tun werde, zum Beispiel über Recycling, Verkehr, Strom und Plastik.
+          Korrigiere meine Sätze sofort und erkläre kurz, wenn es einen Fehler gibt.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: '2. Wenn-Sätze (wenn + werden)'
+        message: |-
+          Hallo Mori! Ich möchte Sätze mit „wenn“ üben.
+          Bitte gib mir den Anfang von einem Satz, und ich ergänze ihn.
+          Zum Beispiel: Wenn wir mehr recyceln, …
+          Korrigiere die Wortstellung und wie ich „werden“ benutze.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: '3. Vergleiche mit als'
+        message: |-
+          Hallo Mori! Bitte gib mir zwei Dinge zum Vergleichen, zum Beispiel Bus und Auto, Stofftasche und Plastiktasche.
+          Ich antworte mit einem Vergleich mit „als“ (zum Beispiel: besser als, weniger … als).
+          Korrigiere mich, wenn nötig.
+      - id: mori-4
+        type: aiTutorPrompt
+        title: '4. Vergleiche mit so … wie'
+        message: |-
+          Hallo Mori! Ich möchte „so … wie“ üben.
+          Bitte gib mir zwei Dinge zum Vergleichen, und ich mache einen Satz.
+          Zum Beispiel: Der Bus ist so praktisch wie das Auto.
+          Korrigiere die Struktur und die Wörter.
+      - id: mori-5
+        type: aiTutorPrompt
+        title: '5. Fragen und Antworten'
+        message: |-
+          Hallo Mori! Bitte stell mir 5 kurze Fragen über die Umwelt.
+          Ich antworte mit kurzen, klaren Sätzen.
+          Korrigiere mich sofort, wenn ich einen Fehler in der Grammatik oder in der Wortstellung mache.
+      - id: mori-6
+        type: aiTutorPrompt
+        title: '6. Über eine andere Person sprechen (er / sie)'
+        message: |-
+          Hallo Mori! Ich möchte über eine andere Person sprechen.
+          Bitte frag mich, was eine andere Person in Zukunft für die Umwelt tun wird.
+          Korrigiere, wie ich „er / sie“ und das Verb „werden“ benutze.
+      - id: mori-7
+        type: aiTutorPrompt
+        title: '7. Allgemeine Wiederholung'
+        message: |-
+          Hallo Mori! Ich möchte das wiederholen:
+          – werden
+          – wenn + werden
+          – Vergleiche mit als (besser als, weniger … als)
+          – so … wie
+          Bitte stell mir kurze Fragen und korrigiere mich immer sofort.
+      - id: mori-8
+        type: aiTutorPrompt
+        title: '8. Selbsttest'
+        message: |-
+          Hallo Mori! Ich schreibe jetzt 5 Sätze auf Deutsch über Nachhaltigkeit.
+          Bitte prüfe:
+          – ob ich „werden“ richtig benutze
+          – die Wortstellung
+          – die Vergleiche
+          Und sag mir auch, was ich gut gemacht habe.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: nachhaltigkeit-uebung
+    book: workbook
+    title: 'Übung: Nachhaltigkeit'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-werden
+        type: activity
+        activity: nachhaltigkeit-werden
+      - id: ex-vergleiche
+        type: activity
+        activity: nachhaltigkeit-vergleiche
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: nachhaltigkeit-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für die Umwelt
+        glossLang: he
+        link: https://quizlet.com/br/1128898092/nachhaltigkeit-flash-cards/
+        items: &nachhaltigkeit-words
+          - { term: die Umwelt, gloss: הסביבה }
+          - { term: der Müll, gloss: זבל }
+          - { term: das Plastik, gloss: פלסטיק }
+          - { term: das Recycling, gloss: מיחזור }
+          - { term: die Energie, gloss: אנרגיה }
+          - { term: der Strom, gloss: חשמל }
+          - { term: die Flasche, gloss: בקבוק }
+          - { term: die Tasche, gloss: תיק / שקית }
+          - { term: der Bus, gloss: אוטובוס }
+          - { term: das Auto, gloss: מכונית }
+          - { term: recyceln, gloss: למחזר }
+          - { term: benutzen, gloss: להשתמש }
+          - { term: sparen, gloss: לחסוך }
+          - { term: fahren, gloss: לנסוע }
+          - { term: gehen, gloss: ללכת }
+          - { term: machen, gloss: לעשות }
+          - { term: helfen, gloss: לעזור }
+          - { term: trennen, gloss: להפריד }
+          - { term: den Müll trennen, gloss: להפריד אשפה }
+          - { term: kaufen, gloss: לקנות }
+          - { term: nehmen, gloss: לקחת }
+          - { term: werden, gloss: פועל עזר לעתיד (אני אעשה) / להפוך ל־ }
+          - { term: bleiben, gloss: להישאר }
+          - { term: ändern, gloss: לשנות }
+          - { term: mehr, gloss: יותר }
+          - { term: weniger, gloss: פחות }
+          - { term: als, gloss: מאשר (בהשוואה) }
+          - { term: so, gloss: כך / כל כך }
+          - { term: wie, gloss: כמו (בהשוואה) }
+          - { term: gut, gloss: טוב }
+          - { term: schlecht, gloss: רע }
+          - { term: sauber, gloss: נקי }
+          - { term: praktisch, gloss: פרקטי }
+          - { term: umweltfreundlich, gloss: ידידותי לסביבה }
+          - { term: oft, gloss: לעיתים קרובות }
+          - { term: manchmal, gloss: לפעמים }
+          - { term: nie, gloss: אף פעם }
+
+vocabulary:
+  - slug: nachhaltigkeit
+    title: Nachhaltigkeit
+    items: *nachhaltigkeit-words
+
+activities:
+  - slug: nachhaltigkeit-werden
+    title: 'Zukunft mit werden: Ich werde mehr recyceln.'
+    minutes: 8
+    items:
+      - id: ich-werde
+        type: multipleChoice
+        prompt: Ich ___ mehr recyceln.
+        options:
+          - { text: werde, correct: true }
+          - {
+              text: wird,
+              feedback: '*wird* ist für *er / sie / es*. Für *ich* sagen wir *ich werde*.',
+            }
+          - {
+              text: werden,
+              feedback: '*werden* ist für *wir* und *sie / Sie*. Für *ich* sagen wir *ich werde*.',
+            }
+      - id: du-wirst
+        type: multipleChoice
+        prompt: Du ___ weniger Plastik benutzen.
+        options:
+          - { text: wirst, correct: true }
+          - { text: werde, feedback: '*werde* ist für *ich*. Für *du* sagen wir *du wirst*.' }
+          - {
+              text: wird,
+              feedback: '*wird* ist für *er / sie / es*. Für *du* sagen wir *du wirst*.',
+            }
+      - id: wir-gehen
+        type: fillBlank
+        prompt: Ergänze *werden* und den Infinitiv.
+        text: Wir ___ mehr zu Fuß ___.
+        blanks: [[werden], [gehen]]
+        wordBank: [werden, wird, gehen, gehst]
+      - id: infinitiv-ende
+        type: trueFalse
+        prompt: 'Der Satz *Ich werde benutzen weniger Plastik.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Der Infinitiv steht am Ende: *Ich werde weniger Plastik benutzen.*'
+          incorrect: 'Mit *werden* steht der Infinitiv am Ende: *Ich werde weniger Plastik benutzen.*'
+      - id: person-werden
+        type: matching
+        prompt: Welche Form von *werden* passt?
+        pairs:
+          - [ich, werde]
+          - [du, wirst]
+          - [er / sie / es, wird]
+          - [wir, werden]
+          - [ihr, werdet]
+      - id: wenn-wird
+        type: multipleChoice
+        prompt: Wenn wir mehr recyceln, ___
+        options:
+          - { text: wird die Umwelt sauberer., correct: true }
+          - {
+              text: die Umwelt wird sauberer.,
+              feedback: 'Nach dem wenn-Satz kommt zuerst das Verb: *…, wird die Umwelt sauberer.*',
+            }
+          - {
+              text: die Umwelt sauberer wird.,
+              feedback: 'Das Verb steht nur im wenn-Satz am Ende. Danach kommt zuerst das Verb: *…, wird die Umwelt sauberer.*',
+            }
+      - id: wenn-schmutzig
+        type: fillBlank
+        prompt: Ergänze die richtige Form von *werden*.
+        text: Wenn wir nicht recyceln, ___ die Umwelt schmutzig.
+        blanks: [[wird]]
+      - id: ordne-bus
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Ich werde mit dem Bus fahren.
+
+  - slug: nachhaltigkeit-vergleiche
+    title: 'Vergleiche: besser als, so … wie'
+    minutes: 8
+    items:
+      - id: umweltfreundlicher
+        type: multipleChoice
+        prompt: Das Fahrrad ist ___ als das Auto.
+        options:
+          - { text: umweltfreundlicher, correct: true }
+          - {
+              text: mehr umweltfreundlich,
+              feedback: 'Im Deutschen sagen wir nicht *mehr* + Adjektiv. Wir hängen *-er* an: *umweltfreundlicher*.',
+            }
+          - {
+              text: umweltfreundlich,
+              feedback: 'Mit *als* brauchen wir den Komparativ mit *-er*: *umweltfreundlicher als*.',
+            }
+      - id: so-wie
+        type: multipleChoice
+        prompt: Der Bus ist so praktisch ___ das Auto.
+        options:
+          - { text: wie, correct: true }
+          - {
+              text: als,
+              feedback: '*als* steht nach dem Komparativ (*praktischer als*). Mit *so* sagen wir *so … wie*.',
+            }
+          - { text: so, feedback: 'Die Struktur ist *so* + Adjektiv + *wie*: *so praktisch wie*.' }
+      - id: besser
+        type: fillBlank
+        prompt: Ergänze den Komparativ von *gut*.
+        text: Eine Stofftasche ist ___ als eine Plastiktasche.
+        blanks: [[besser]]
+      - id: so-gut-als
+        type: trueFalse
+        prompt: 'Der Satz *Leitungswasser ist so gut als Wasser aus der Flasche.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Mit *so* sagen wir *wie*: *so gut wie*.'
+          incorrect: 'Wenn zwei Dinge gleich sind, sagen wir *so … wie*: *so gut wie*.'
+      - id: komparativ-paare
+        type: matching
+        prompt: Welcher Komparativ passt?
+        pairs:
+          - [sauber, sauberer]
+          - [grün, grüner]
+          - [gut, besser]
+          - [groß, größer]
+          - [praktisch, praktischer]
+      - id: weniger-als
+        type: fillBlank
+        prompt: Ergänze *weniger … als*.
+        text: Mit einer Trinkflasche benutzen wir ___ Plastik ___ mit Plastikflaschen.
+        blanks: [[weniger], [als]]
+        wordBank: [weniger, als, wie, so]
+      - id: richtiger-satz
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Der Bus ist weniger schädlich als das Auto., correct: true }
+          - {
+              text: Der Bus ist weniger schädlich wie das Auto.,
+              feedback: 'Nach *weniger* + Adjektiv steht *als*: *weniger schädlich als*.',
+            }
+          - {
+              text: Der Bus ist so schädlicher wie das Auto.,
+              feedback: 'Nach *so* steht die Grundform des Adjektivs: *so schädlich wie*.',
+            }
+      - id: ordne-fahrrad
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Das Fahrrad ist umweltfreundlicher als das Auto.
