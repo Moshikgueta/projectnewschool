@@ -20,6 +20,8 @@ students, digital notebooks (מחברות דיגיטליות) and lesson materia
 | `schema.sql` | D1 schema: `staff_users`, `staff_sessions`, `staff_reset_tokens` |
 | `scripts/e2e.mjs` | 60 end-to-end checks against a local Worker and D1 (`npm test`) |
 | `wrangler.toml` | Worker + D1 config |
+| `functions/_training*.js`, `functions/api/staff/training.js` | Teacher onboarding — see [TEACHER-ONBOARDING.md](TEACHER-ONBOARDING.md) |
+| `scripts/e2e-training.mjs` | The onboarding half of `npm test` |
 
 ## Running it
 
