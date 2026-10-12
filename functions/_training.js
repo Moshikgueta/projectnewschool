@@ -171,6 +171,36 @@ export function sanitizeBlocks(input) {
   return out;
 }
 
+/* What must be there before a module can be published. Content blocks may
+   go out with a link still missing — the template does that on purpose and
+   the page says "טרם הוזן קישור" — but an activity a teacher cannot complete
+   (a question with no answers, no correct option) would block their path.
+   Returns a list of problems, each naming the block by its position. */
+export function publishProblems(blocks) {
+  const out = [];
+  const filled = (arr, ...keys) => (arr || []).filter(x => keys.every(k => String(x[k] || '').trim()));
+  blocks.forEach((b, i) => {
+    const n = 'רכיב ' + (i + 1);
+    if (b.type === 'heading' && !b.text) out.push(n + ': כותרת ריקה');
+    if (b.type === 'text' && !b.body) out.push(n + ': טקסט ריק');
+    if (b.type === 'mcq') {
+      if (!b.question) out.push(n + ': שאלת רב-ברירה בלי שאלה');
+      if (filled(b.options, 'text').length < 2) out.push(n + ': צריך לפחות שתי תשובות');
+      if (!b.options.some(o => o.correct && o.text)) out.push(n + ': לא סומנה תשובה נכונה');
+    }
+    if (b.type === 'match' && filled(b.pairs, 'left', 'right').length < 2) out.push(n + ': צריך לפחות שני זוגות מלאים');
+    if (b.type === 'match' && filled(b.pairs, 'left', 'right').length !== b.pairs.length) out.push(n + ': יש זוג חסר');
+    if (b.type === 'order' && filled(b.items, 'text').length < 2) out.push(n + ': צריך לפחות שני פריטים לסידור');
+    if (b.type === 'scenario') {
+      if (!b.situation) out.push(n + ': תרחיש בלי תיאור מצב');
+      if (filled(b.options, 'text').length < 2) out.push(n + ': צריך לפחות שתי אפשרויות תגובה');
+    }
+    if (b.type === 'checklist' && !filled(b.items, 'text').length) out.push(n + ': צ\'קליסט ריק');
+    if (BLOCK_TYPES[b.type] && BLOCK_TYPES[b.type].act === 'human' && !b.prompt) out.push(n + ': משימה בלי הנחיה');
+  });
+  return out;
+}
+
 export function isActivity(b) {
   const def = BLOCK_TYPES[b.type];
   return !!(def && def.act);
@@ -340,7 +370,7 @@ export function moduleState(mod, blocks, progress, subs) {
   const viewed = !hasContent || !!(progress[CONTENT_KEY]);
   let units = hasContent ? 1 : 0;
   let doneUnits = hasContent && viewed ? 1 : 0;
-  let autoTotal = 0, autoCorrect = 0, pending = 0, revise = 0, exhausted = 0, touched = !!progress[CONTENT_KEY];
+  let autoTotal = 0, autoCorrect = 0, autoAnswered = 0, pending = 0, revise = 0, exhausted = 0, touched = !!progress[CONTENT_KEY];
   let activities = 0, activitiesDone = 0;
 
   for (const b of blocks) {
@@ -353,7 +383,7 @@ export function moduleState(mod, blocks, progress, subs) {
     let done = false;
     if (kind === 'human') {
       if (s && s.status === 'approved') done = true;
-      else if (s && s.status === 'submitted' && b.review === false) done = true;
+      else if (s && s.status === 'received') done = true;
       else if (s && s.status === 'submitted') { if (required) pending++; }
       else if (s && s.status === 'needs_revision') { if (required) revise++; }
     } else {
@@ -362,6 +392,7 @@ export function moduleState(mod, blocks, progress, subs) {
         const graded = b.type !== 'mcq' || b.options.some(o => o.correct);
         if (graded) {
           autoTotal++;
+          if (p) autoAnswered++;
           if (p && p.correct === 1) autoCorrect++;
           if (p && p.state === 'done' && p.correct === 0 && required) exhausted++;
         }
@@ -372,7 +403,9 @@ export function moduleState(mod, blocks, progress, subs) {
     if (required) { units++; if (done) doneUnits++; }
   }
 
-  const score = autoTotal ? Math.round((autoCorrect / autoTotal) * 100) : null;
+  /* No score until something has been answered — 0% before the first try
+     reads as a failure that never happened. */
+  const score = autoTotal && autoAnswered ? Math.round((autoCorrect / autoTotal) * 100) : null;
   const threshold = mod.pass_score == null ? null : mod.pass_score;
   const allAutoDone = blocks.filter(b => actKind(b) === 'auto' && b.required !== false)
     .every(b => progress[b.id] && progress[b.id].state === 'done');

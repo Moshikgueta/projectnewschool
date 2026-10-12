@@ -13,7 +13,7 @@ import { currentStaff, readJson, roleLabel } from '../../_staff.js';
 import {
   requireManager, requireStaffLearner, isManager, LEARNER_ROLE, DAY,
   parseJson, str, text, isoDate, safeUrl, randomId,
-  sanitizeBlocks, stripBlockForLearner, gradeAnswer, cleanSubmission, isActivity, actKind,
+  sanitizeBlocks, publishProblems, stripBlockForLearner, gradeAnswer, cleanSubmission, isActivity, actKind,
   moduleRow, loadAssignmentState, buildAssignmentState, moduleState, CONTENT_KEY,
   READINESS_LABEL, FOLLOWUPS, addDays, audit, notify, notifyManagers
 } from '../../_training.js';
@@ -295,15 +295,19 @@ async function meSubmit({ request, env }) {
     'SELECT * FROM training_submissions WHERE assignment_id=? AND module_id=? AND block_id=? ORDER BY created_at DESC LIMIT 1'
   ).bind(ctx.a.id, ctx.m.id, block.id).first();
   if (last && last.status === 'approved') return bad('המשימה כבר אושרה.', 409);
-  if (last && last.status === 'submitted' && block.review !== false) return bad('המשימה ממתינה לבדיקה. אפשר יהיה לעדכן אותה אם יתבקש תיקון.', 409);
+  if (last && last.status === 'submitted') return bad('המשימה ממתינה לבדיקה. אפשר יהיה לעדכן אותה אם יתבקש תיקון.', 409);
+  if (last && last.status === 'received') return bad('כבר הגשת את המשימה הזו.', 409);
 
   const c = cleanSubmission(block, b.body);
   if (c.error) return bad(c.error);
   const now = Date.now();
   await env.DB.prepare(
     `INSERT INTO training_submissions (id, assignment_id, module_id, block_id, user_id, attempt, body, status, created_at)
-     VALUES (?,?,?,?,?,?,?,'submitted',?)`
-  ).bind(randomId('sb'), ctx.a.id, ctx.m.id, block.id, user.id, last ? last.attempt + 1 : 1, JSON.stringify(c.body), now).run();
+     VALUES (?,?,?,?,?,?,?,?,?)`
+  ).bind(randomId('sb'), ctx.a.id, ctx.m.id, block.id, user.id, last ? last.attempt + 1 : 1, JSON.stringify(c.body),
+    /* No review on this block: the submission is the completion, and it must
+       not sit in anyone's review queue. */
+    block.review === false ? 'received' : 'submitted', now).run();
   await touchAssignment(env, ctx.a, ctx.m.id);
   if (block.review !== false) {
     await notifyManagers(env, 'submission', 'משימה ממתינה לבדיקה', user.name + ' · ' + ctx.m.title);
@@ -680,6 +684,8 @@ async function modulePublish({ request, env, m: match }) {
   if (b.rev !== undefined && Number(b.rev) !== m.rev) return bad('יש גרסה חדשה יותר של המודול. צריך לטעון אותה לפני פרסום.', 409);
   const blocks = parseJson(m.draft, []);
   if (!blocks.length) return bad('אי אפשר לפרסם מודול ריק.');
+  const problems = publishProblems(blocks);
+  if (problems.length) return json({ ok: false, error: 'אי אפשר לפרסם עדיין: ' + problems.join(' · '), problems }, 400);
   const now = Date.now();
   const first = m.published == null;
   await env.DB.prepare(

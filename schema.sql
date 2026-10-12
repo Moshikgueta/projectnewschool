@@ -241,7 +241,7 @@ CREATE TABLE IF NOT EXISTS training_submissions (
   user_id TEXT NOT NULL,
   attempt INTEGER NOT NULL DEFAULT 1,
   body TEXT NOT NULL,                    -- JSON {text} | {fields:{...}} | {url, note}
-  status TEXT NOT NULL DEFAULT 'submitted', -- submitted | needs_revision | approved
+  status TEXT NOT NULL DEFAULT 'submitted', -- submitted | needs_revision | approved | received (no review needed)
   feedback TEXT NOT NULL DEFAULT '',
   reviewed_by TEXT NOT NULL DEFAULT '',
   reviewed_at INTEGER,

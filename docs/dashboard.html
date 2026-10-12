@@ -2357,6 +2357,11 @@ select.ob-input{padding-inline-end:28px;background-image:linear-gradient(45deg,t
 @media (max-width:860px){
   .ns-shell{grid-template-columns:minmax(0,1fr)!important}
   .ns-rail{position:static!important;height:auto!important;padding:14px 12px!important;gap:12px!important}
+  .ns-rail>div:nth-child(2){flex-direction:row!important;overflow-x:auto;gap:4px!important;padding-bottom:4px;scrollbar-width:thin}
+  .ns-rail>div:nth-child(2)>a{white-space:nowrap;flex:none}
+  .ns-rail>div:nth-child(2)>div{display:none!important}
+  .ns-rail>div:last-child{flex-direction:row!important;align-items:center;flex-wrap:wrap;padding:10px!important}
+  .ns-rail>div:last-child>div:last-child{display:none}
   .ns-main{padding:18px 16px 48px!important}
   .ob-cols-wide{grid-template-columns:minmax(0,1fr)}
   .ob-module{grid-template-columns:40px minmax(0,1fr);}
@@ -4240,7 +4245,7 @@ select.ob-input{padding-inline-end:28px;background-image:linear-gradient(45deg,t
 
 <header class="ob-card" style="margin-top:14px;padding:24px 24px 20px">
 <div class="ob-row" style="gap:16px;align-items:flex-start">
-<span class="ob-icon" style="width:52px;height:52px" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="{{ pl.icon }}"/></svg></span>
+<span class="ob-icon" style="width:52px;height:52px" aria-hidden="true">{{ pl.iconEl }}</span>
 <div style="flex:1;min-width:220px">
 <div class="ob-row" style="gap:8px">
 <span class="ob-chip" style="background:{{ pl.statusBg }};color:{{ pl.statusFg }}">{{ pl.statusLabel }}</span>
@@ -4337,7 +4342,7 @@ select.ob-input{padding-inline-end:28px;background-image:linear-gradient(45deg,t
 
 <sc-if value="{{ b.is_callout }}">
 <div role="note" style="background:{{ b.toneBg }};border-radius:12px;padding:14px 16px;border-inline-start:4px solid {{ b.toneFg }}">
-<div class="ob-kicker" style="color:{{ b.toneFg }}">{{ b.toneLabel }}</div>
+<sc-if value="{{ b.toneLabel !== b.title }}"><div class="ob-kicker" style="color:{{ b.toneFg }}">{{ b.toneLabel }}</div></sc-if>
 <sc-if value="{{ b.title }}"><h3 class="ob-h3" dir="auto" style="margin-top:4px">{{ b.title }}</h3></sc-if>
 <div class="ob-prose" dir="auto" style="margin-top:6px;font-size:14px">
 <sc-for list="{{ b.paras }}" as="p">
@@ -4581,7 +4586,7 @@ select.ob-input{padding-inline-end:28px;background-image:linear-gradient(45deg,t
 <div class="ob-timeline">
 <sc-for list="{{ trMods }}" as="m">
 <div class="ob-card ob-module" style="opacity:{{ m.opacity }}">
-<span class="ob-icon" style="background:{{ m.iconBg }};color:{{ m.iconFg }}" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="{{ m.icon }}"/></svg></span>
+<span class="ob-icon" style="background:{{ m.iconBg }};color:{{ m.iconFg }}" aria-hidden="true">{{ m.iconEl }}</span>
 <div style="min-width:0">
 <div class="ob-row" style="gap:7px"><span class="ob-muted" style="font-weight:600">מודול {{ m.n }}</span><span class="ob-chip" style="background:{{ m.statusBg }};color:{{ m.statusFg }}">{{ m.statusLabel }}</span><sc-if value="{{ m.optional }}"><span class="ob-chip" style="background:var(--color-neutral-200);color:var(--color-neutral-700)">רשות</span></sc-if></div>
 <h3 class="ob-h3" dir="auto" style="margin-top:5px;font-size:16.5px">{{ m.title }}</h3>
@@ -4993,7 +4998,7 @@ select.ob-input{padding-inline-end:28px;background-image:linear-gradient(45deg,t
 <div class="ob-grid ob-cols" style="margin-top:12px">
 <sc-for list="{{ ta.modules }}" as="m">
 <article class="ob-card ob-pad ob-stack" style="gap:8px;opacity:{{ m.opacity }}">
-<div class="ob-row" style="gap:10px;flex-wrap:nowrap"><span class="ob-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="{{ m.icon }}"/></svg></span><div style="min-width:0"><div class="ob-row" style="gap:6px"><span class="ob-chip" style="background:{{ m.statusBg }};color:{{ m.statusFg }}">{{ m.statusLabel }}</span><sc-if value="{{ m.unpublished }}"><span class="ob-chip" style="background:var(--color-warning-tint);color:var(--color-warning-ink)">שינויים שלא פורסמו</span></sc-if></div><h3 class="ob-h3" dir="auto" style="margin-top:5px">{{ m.title }}</h3></div></div>
+<div class="ob-row" style="gap:10px;flex-wrap:nowrap"><span class="ob-icon" aria-hidden="true">{{ m.iconEl }}</span><div style="min-width:0"><div class="ob-row" style="gap:6px"><span class="ob-chip" style="background:{{ m.statusBg }};color:{{ m.statusFg }}">{{ m.statusLabel }}</span><sc-if value="{{ m.unpublished }}"><span class="ob-chip" style="background:var(--color-warning-tint);color:var(--color-warning-ink)">שינויים שלא פורסמו</span></sc-if></div><h3 class="ob-h3" dir="auto" style="margin-top:5px">{{ m.title }}</h3></div></div>
 <p class="ob-muted" dir="auto">{{ m.description }}</p>
 <p class="ob-muted" style="font-size:11.5px">{{ m.meta }} · {{ m.updated }}</p>
 <div class="ob-row" style="gap:6px;margin-top:auto">
@@ -5101,7 +5106,7 @@ select.ob-input{padding-inline-end:28px;background-image:linear-gradient(45deg,t
 <label class="ob-label">תיאור<textarea class="ob-input" style="min-height:70px" value="{{ ta.editor.description }}" onChange="{{ ta.editor.onDesc }}" dir="auto"></textarea></label>
 <label class="ob-label">מטרות למידה (שורה לכל מטרה)<textarea class="ob-input" style="min-height:90px" value="{{ ta.editor.objectives }}" onChange="{{ ta.editor.onObj }}" dir="auto"></textarea></label>
 <div class="ob-grid" style="grid-template-columns:auto 1fr;gap:10px;align-items:end">
-<span class="ob-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="{{ ta.editor.iconD }}"/></svg></span>
+<span class="ob-icon" aria-hidden="true">{{ ta.editor.iconEl }}</span>
 <label class="ob-label">אייקון<select class="ob-input" value="{{ ta.editor.icon }}" onChange="{{ ta.editor.onIcon }}"><sc-for list="{{ ta.editor.icons }}" as="o"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select></label>
 </div>
 <label class="ob-label">משך משוער (דקות)<input class="ob-input" type="number" min="0" value="{{ ta.editor.est }}" onChange="{{ ta.editor.onEst }}"></label>
@@ -6420,7 +6425,8 @@ class Component extends DCLogic {
   TR_SUB = {
     submitted: ['הוגש · ממתין לבדיקה', 'var(--color-warning-tint)', 'var(--color-warning-ink)'],
     needs_revision: ['נדרש תיקון', 'var(--color-critical-tint)', 'var(--color-critical)'],
-    approved: ['אושר', 'var(--color-positive-tint)', 'var(--color-positive-ink)']
+    approved: ['אושר', 'var(--color-positive-tint)', 'var(--color-positive-ink)'],
+    received: ['הוגש ✓', 'var(--color-positive-tint)', 'var(--color-positive-ink)']
   };
   TR_RES_KINDS = [['notebook', 'מחברת'], ['syllabus', 'סילבוס'], ['lesson_plan', 'מערך שיעור'], ['guide', 'מדריך'], ['video', 'סרטון'], ['enrichment', 'העשרה'], ['policy', 'נוהל'], ['link', 'קישור שימושי'], ['faq', 'שאלות נפוצות'], ['template', 'תבנית']];
   TR_RES_STATUS = [['official', 'רשמי'], ['draft', 'טיוטה'], ['review', 'דורש בדיקה'], ['archived', 'ארכיון']];
@@ -6448,6 +6454,12 @@ class Component extends DCLogic {
   TR_ICON_LABELS = [['welcome', 'ברוכים הבאים'], ['philosophy', 'גישה פדגוגית'], ['program', 'תוכנית'], ['cycle', 'מחזורים'], ['notebook', 'מחברות'], ['teach', 'הוראה'], ['tools', 'כלים'], ['classroom', 'כיתה'], ['policy', 'נהלים'], ['hub', 'משאבים'], ['checklist', 'צ\'קליסט'], ['assessment', 'הערכה'], ['book', 'ספר'], ['video', 'סרטון'], ['star', 'כוכב']];
 
   trApi(path, opts) { return this.api('/api/staff/training' + path, opts); }
+  /* Icons as elements, not template attributes: a raw d="{{ … }}" sits in the
+     page before the runtime renders and the browser logs it as a bad path. */
+  trIconEl(d, size) {
+    return React.createElement('svg', { width: size || 20, height: size || 20, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.7, strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': true },
+      React.createElement('path', { d }));
+  }
 
   trDate(ts) {
     if (!ts) return '—';
@@ -7196,6 +7208,8 @@ class Component extends DCLogic {
         });
       }
       if (def.human) {
+        /* Without review a submission is the completion itself — saying
+           "waiting for review" there would promise a check nobody will do. */
         const st = sub ? this.trChip(this.TR_SUB, sub.status) : null;
         const editable = !preview && (!sub || sub.status === 'needs_revision');
         const saved = !preview && mod ? this.trLs('ns.trAns.' + mod.assignmentId + '.' + b.id) : null;
@@ -7237,7 +7251,7 @@ class Component extends DCLogic {
       const canOpen = m.available && !m.locked;
       const prereq = m.prereq ? (A.modules.find(x => x.moduleId === m.prereq) || {}).title : '';
       return {
-        n: i + 1, id: m.moduleId, title: m.title, description: m.description, icon: iconD(m.icon),
+        n: i + 1, id: m.moduleId, title: m.title, description: m.description, icon: iconD(m.icon), iconEl: this.trIconEl(iconD(m.icon), 21),
         est: m.estMinutes ? m.estMinutes + ' דק\'' : '', hasEst: !!m.estMinutes,
         activities: m.activities + ' פעילויות', required: m.required, optional: !m.required,
         statusLabel: chip.label, statusBg: chip.bg, statusFg: chip.fg,
@@ -7389,7 +7403,7 @@ class Component extends DCLogic {
         onEst: (e) => this.taMutate(m => { m.estMinutes = e.target.value; }),
         onPass: (e) => this.taMutate(m => { m.passScore = e.target.value === '' ? null : e.target.value; }),
         icons: this.TR_ICON_LABELS.map(([k, label]) => ({ value: k, label, sel: em.icon === k })),
-        onIcon: set('icon'), icon: em.icon, iconD: iconD(em.icon),
+        onIcon: set('icon'), icon: em.icon, iconD: iconD(em.icon), iconEl: this.trIconEl(iconD(em.icon)),
         statusLabel: chip.label, statusBg: chip.bg, statusFg: chip.fg, archived: em.status === 'archived',
         rev: 'גרסה ' + em.rev, unpublished: em.everPublished && em.dirty ? 'יש שינויים שלא פורסמו' : !em.everPublished ? 'טרם פורסם' : 'הגרסה המפורסמת עדכנית',
         dirty: E.dirty, saving: E.saving, saveLabel: E.saving ? 'שומר…' : E.dirty ? 'שמירת טיוטה' : 'נשמר',
@@ -7491,7 +7505,7 @@ class Component extends DCLogic {
       playerLoading: !!mod && !md, playerPreview: preview,
       pl: md ? {
         title: md.title, description: md.description, objectives: md.objectives || [], hasObjectives: (md.objectives || []).length > 0,
-        icon: iconD(md.icon), est: md.estMinutes ? md.estMinutes + ' דקות' : '', hasEst: !!md.estMinutes,
+        icon: iconD(md.icon), iconEl: this.trIconEl(iconD(md.icon), 24), est: md.estMinutes ? md.estMinutes + ' דקות' : '', hasEst: !!md.estMinutes,
         statusLabel: mChip.label, statusBg: mChip.bg, statusFg: mChip.fg,
         percent: mState.percent + '%', percentNum: mState.percent, width: mState.percent + '%',
         acts: mState.activitiesDone + ' מתוך ' + mState.activities + ' פעילויות',
@@ -7638,7 +7652,7 @@ class Component extends DCLogic {
         modules: modules.map(m => {
           const chip = this.trChip(MS, m.status);
           return {
-            id: m.id, title: m.title, description: m.description, icon: iconD(m.icon), statusLabel: chip.label, statusBg: chip.bg, statusFg: chip.fg,
+            id: m.id, title: m.title, description: m.description, icon: iconD(m.icon), iconEl: this.trIconEl(iconD(m.icon)), statusLabel: chip.label, statusBg: chip.bg, statusFg: chip.fg,
             meta: m.blockCount + ' רכיבים · ' + m.activityCount + ' פעילויות' + (m.estMinutes ? ' · ' + m.estMinutes + ' דק\'' : ''),
             updated: 'עודכן ' + this.trDate(m.updatedAt) + (m.updatedBy ? ' · ' + m.updatedBy : ''),
             unpublished: m.everPublished && m.dirty && m.status !== 'archived', archived: m.status === 'archived', opacity: m.status === 'archived' ? 0.62 : 1,

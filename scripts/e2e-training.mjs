@@ -116,6 +116,14 @@ export async function trainingSuite({ call, ok, admin, student }) {
   ok('drafts cannot be opened', (await call(T + '/me/modules/' + modA.id + '?assignment=' + asg, { cookie: dana.cookie })).status === 403);
   ok('another teacher cannot use her assignment', (await call(T + '/me/modules/' + modA.id + '?assignment=' + asg, { cookie: vet.cookie })).status === 404);
 
+  r = await call(T + '/modules', { method: 'POST', cookie: ped.cookie, body: { title: 'חסר', blocks: [{ type: 'mcq', question: '', options: [{ text: 'א' }] }] } });
+  r = await call(T + '/modules/' + r.body.module.id + '/publish', { method: 'POST', cookie: ped.cookie, body: {} });
+  ok('an incomplete question cannot be published', r.status === 400 && r.body.problems.length === 3, JSON.stringify(r.body));
+  r = await call(T + '/admin/template', { method: 'POST', cookie: ped.cookie, body: {} });
+  const tpl = (await call(T + '/modules', { cookie: ped.cookie })).body.modules.filter(m => m.title === 'Classroom Management' || m.title === 'Before Your First Class');
+  let tplOk = true;
+  for (const m of tpl) tplOk = tplOk && (await call(T + '/modules/' + m.id + '/publish', { method: 'POST', cookie: ped.cookie, body: {} })).body.ok === true;
+  ok('the template modules pass the publish check', tplOk);
   for (const m of [modA, modB, modC]) await call(T + '/modules/' + m.id + '/publish', { method: 'POST', cookie: ped.cookie, body: {} });
   r = await call(T + '/me', { cookie: dana.cookie });
   const mods = r.body.assignments[0].modules;
@@ -201,6 +209,7 @@ export async function trainingSuite({ call, ok, admin, student }) {
   const refl = r.body.module.blocks[0].block;
   r = await call(T + '/me/submit', { method: 'POST', cookie: dana.cookie, body: { assignmentId: asg, moduleId: modB.id, blockId: refl.id, body: { text: 'רפלקציה' } } });
   ok('a reflection without review completes on submission', r.body.module.state.status === 'completed');
+  ok('and never enters the review queue', (await call(T + '/admin/overview', { cookie: ped.cookie })).body.stats.toReview === 0);
   r = await call(T + '/me', { cookie: dana.cookie });
   ok('the optional module does not block completion', r.body.assignments[0].allRequiredDone === true && r.body.assignments[0].percent === 100);
 
