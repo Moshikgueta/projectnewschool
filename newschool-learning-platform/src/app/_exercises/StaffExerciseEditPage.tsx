@@ -125,6 +125,13 @@ export async function StaffExerciseEditPage({
                         : t('noDue')}
                       {a.note ? ` · ${a.note}` : ''}
                     </p>
+                    {a.recipients ? (
+                      <p className="text-sm text-fg-secondary">
+                        {a.recipients.length
+                          ? t('forStudents', { names: a.recipients.join(', ') })
+                          : t('forSelected')}
+                      </p>
+                    ) : null}
                   </div>
                   {a.canRemove ? (
                     <form action={actions.removeAssignment}>

@@ -11,6 +11,7 @@ import { staffExerciseSlug } from '@/content/exercise-slug';
 import { zonedTimeToUtc } from '@/domain/learning/time';
 import type { EditorState } from '@/server/actions/cms';
 import type { ManageState } from '@/server/actions/manage';
+import { giveHomework, readAudience } from '@/server/assignments';
 import type { SessionUser } from '@/server/auth/session';
 import { requireArea } from '@/server/auth/session';
 import { loadActivitySource, planActivityItems } from '@/server/content/activity-writer';
@@ -32,7 +33,16 @@ const scoring = z.enum(['none', 'practice', 'scored']);
 const staffStatus = z.enum(['draft', 'published', 'archived']);
 
 type Key =
-  'saved' | 'invalid' | 'notAllowed' | 'failed' | 'conflict' | 'problems' | 'past' | 'notPublished';
+  | 'saved'
+  | 'invalid'
+  | 'notAllowed'
+  | 'failed'
+  | 'conflict'
+  | 'problems'
+  | 'past'
+  | 'notPublished'
+  | 'noStudents'
+  | 'notInGroup';
 
 async function say(key: Key): Promise<ManageState> {
   const t = await getTranslations('exercises.messages');
@@ -328,9 +338,10 @@ export async function setOfficeExerciseStatus(formData: FormData): Promise<void>
 }
 
 /**
- * The office gives a published exercise to any group of its course, in its
- * own name (assignments_insert_office). Teachers use assignActivity in
- * teach.ts, which keeps them to their own groups.
+ * The office gives a published exercise to any group of its course, or to
+ * selected students of it (ADR-039), in its own name (assignments_insert_office,
+ * assignment_recipients_insert_office). Teachers use assignActivity in teach.ts,
+ * which keeps them to their own groups.
  */
 export async function assignOfficeExercise(
   _prev: ManageState,
@@ -350,7 +361,8 @@ export async function assignOfficeExercise(
       dueDate: formData.get('dueDate') ?? '',
       note: formData.get('note') ?? '',
     });
-  if (!parsed.success) return say('invalid');
+  const audience = readAudience(formData);
+  if (!parsed.success || !audience) return say('invalid');
   const dueAt = parsed.data.dueDate
     ? zonedTimeToUtc(`${parsed.data.dueDate}T23:59`, user.timezone)
     : null;
@@ -373,16 +385,20 @@ export async function assignOfficeExercise(
   if (!activity) return say('invalid');
   if (activity.status !== 'published') return say('notPublished');
 
-  const { error } = await supabase.from('assignments').insert({
-    group_id: group.id,
-    course_id: group.course_id,
-    activity_id: activity.id,
-    phase: activity.phase,
-    due_at: dueAt?.toISOString() ?? null,
-    note: parsed.data.note,
-    assigned_by: user.id,
-  });
-  if (error) return say(error.code === '42501' ? 'notAllowed' : 'failed');
+  const result = await giveHomework(
+    supabase,
+    {
+      group_id: group.id,
+      course_id: group.course_id,
+      activity_id: activity.id,
+      phase: activity.phase,
+      due_at: dueAt?.toISOString() ?? null,
+      note: parsed.data.note,
+      assigned_by: user.id,
+    },
+    audience,
+  );
+  if (result !== 'ok') return say(result);
   refresh('office', activity.id);
   return say('saved');
 }

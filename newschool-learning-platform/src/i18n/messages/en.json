@@ -304,7 +304,8 @@
       "markedCount": "{marked} of {total} marked",
       "attendanceLink": "Attendance",
       "attendanceFor": "Attendance for {date}",
-      "byStaff": "staff exercise"
+      "byStaff": "staff exercise",
+      "forStudents": "For {names}"
     },
     "forms": {
       "saved": "Saved.",
@@ -313,7 +314,9 @@
       "failed": "Could not save. Try again.",
       "past": "Choose a date or time in the future.",
       "notStarted": "Attendance opens 30 minutes before the class starts.",
-      "nobodyMarked": "Mark at least one student."
+      "nobodyMarked": "Mark at least one student.",
+      "noStudents": "Choose at least one student.",
+      "notInGroup": "Choose students of this group."
     },
     "activity": {
       "back": "Back to the group",
@@ -358,6 +361,47 @@
       "empty": "No students to mark.",
       "back": "Back to the group",
       "hint": "Students you leave unmarked stay unmarked. Excused absences don’t count against attendance."
+    },
+    "student": {
+      "metaTitle": "Student",
+      "back": "Back to {group}",
+      "since": "In the group since {date}",
+      "lastActive": "Last active {date}",
+      "neverActive": "Not active in this course yet",
+      "progress": "Progress",
+      "week": "Practised on {days} of the last 7 days (goal: {goal})",
+      "activeCycle": "Active cycle",
+      "cycleLine": "Activities {activitiesDone} of {activitiesTotal} · Pages {sectionsDone} of {sectionsTotal}",
+      "cyclePercent": "{percent}% of {title}",
+      "revisit": "Topics to revisit",
+      "noRevisit": "Nothing to revisit yet.",
+      "skillLine": "{percent}% right on the first try ({answers} answers)",
+      "attempts": "Recent attempts",
+      "noAttempts": "No attempts yet.",
+      "score": "{score} of {max}",
+      "attemptStatus": {
+        "in_progress": "In progress",
+        "submitted": "Submitted"
+      },
+      "teacherView": "Teacher view of {title}",
+      "homework": "Homework",
+      "noHomework": "No homework yet.",
+      "personal": "By name",
+      "homeworkStatus": {
+        "done": "Done",
+        "open": "Open",
+        "overdue": "Overdue",
+        "untracked": "Not tracked"
+      },
+      "assignTitle": "Give an activity to {name} only",
+      "assignHint": "Only {name} gets it; the rest of the group does not see it.",
+      "attendance": "Attendance",
+      "attendanceRate": "Attended {attended} of {counted} classes",
+      "attendanceNone": "Attendance not taken yet.",
+      "recentClasses": "Latest classes",
+      "notebook": "Notebook",
+      "notebookHint": "Pages {name} has written in. Each page shows the answers of the whole group.",
+      "noNotebook": "Nothing written in the notebook yet."
     }
   },
   "manage": {
@@ -1303,7 +1347,9 @@
       "due": "Due {date}",
       "noDue": "No due date",
       "remove": "Remove",
-      "removeLabel": "Remove the homework of {group}"
+      "removeLabel": "Remove the homework of {group}",
+      "forStudents": "For {names}",
+      "forSelected": "For selected students"
     },
     "messages": {
       "saved": "Saved.",
@@ -1313,7 +1359,15 @@
       "conflict": "Someone saved this exercise after you opened it. Copy your changes, reload the page and apply them again.",
       "problems": "Fix the problems below, then save.",
       "past": "Choose a date in the future.",
-      "notPublished": "Publish the exercise first."
+      "notPublished": "Publish the exercise first.",
+      "noStudents": "Choose at least one student.",
+      "notInGroup": "Choose students of this group."
     }
+  },
+  "assignAudience": {
+    "who": "Who gets it",
+    "group": "All students",
+    "selected": "Selected students",
+    "choose": "Choose the students"
   }
 }

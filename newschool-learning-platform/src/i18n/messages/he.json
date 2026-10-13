@@ -304,7 +304,8 @@
       "markedCount": "{marked} מתוך {total} סומנו",
       "attendanceLink": "נוכחות",
       "attendanceFor": "נוכחות לשיעור {date}",
-      "byStaff": "תרגיל צוות"
+      "byStaff": "תרגיל צוות",
+      "forStudents": "עבור {names}"
     },
     "forms": {
       "saved": "נשמר.",
@@ -313,7 +314,9 @@
       "failed": "השמירה נכשלה. כדאי לנסות שוב.",
       "past": "יש לבחור תאריך או שעה בעתיד.",
       "notStarted": "אפשר לסמן נוכחות מחצי שעה לפני תחילת השיעור.",
-      "nobodyMarked": "סמנו לפחות תלמיד או תלמידה אחת."
+      "nobodyMarked": "סמנו לפחות תלמיד או תלמידה אחת.",
+      "noStudents": "יש לבחור לפחות תלמיד או תלמידה אחת.",
+      "notInGroup": "יש לבחור תלמידים מהקבוצה הזו."
     },
     "activity": {
       "back": "חזרה לקבוצה",
@@ -358,6 +361,47 @@
       "empty": "אין תלמידים לסימון.",
       "back": "חזרה לקבוצה",
       "hint": "מי שלא סומן נשאר ללא סימון. היעדרות מוצדקת לא נספרת נגד הנוכחות."
+    },
+    "student": {
+      "metaTitle": "תלמיד/ה",
+      "back": "חזרה אל {group}",
+      "since": "בקבוצה מאז {date}",
+      "lastActive": "פעילות אחרונה: {date}",
+      "neverActive": "עדיין לא היה/תה פעיל/ה בקורס",
+      "progress": "התקדמות",
+      "week": "תרגל/ה ב־{days} מתוך 7 הימים האחרונים (היעד: {goal})",
+      "activeCycle": "מחזור פעיל",
+      "cycleLine": "פעילויות {activitiesDone} מתוך {activitiesTotal} · דפים {sectionsDone} מתוך {sectionsTotal}",
+      "cyclePercent": "{percent}% מתוך {title}",
+      "revisit": "נושאים לחזרה",
+      "noRevisit": "עדיין אין נושאים לחזרה.",
+      "skillLine": "{percent}% נכון בניסיון הראשון ({answers} תשובות)",
+      "attempts": "ניסיונות אחרונים",
+      "noAttempts": "עדיין אין ניסיונות.",
+      "score": "{score} מתוך {max}",
+      "attemptStatus": {
+        "in_progress": "בתהליך",
+        "submitted": "הוגש"
+      },
+      "teacherView": "תצוגת מורה של {title}",
+      "homework": "שיעורי בית",
+      "noHomework": "עדיין אין שיעורי בית.",
+      "personal": "אישי",
+      "homeworkStatus": {
+        "done": "בוצע",
+        "open": "פתוח",
+        "overdue": "באיחור",
+        "untracked": "לא נמדד"
+      },
+      "assignTitle": "הקצאת פעילות רק ל{name}",
+      "assignHint": "רק {name} יקבל/תקבל אותה; שאר הקבוצה לא רואה אותה.",
+      "attendance": "נוכחות",
+      "attendanceRate": "נכח/ה ב־{attended} מתוך {counted} שיעורים",
+      "attendanceNone": "עדיין לא סומנה נוכחות.",
+      "recentClasses": "שיעורים אחרונים",
+      "notebook": "מחברת",
+      "notebookHint": "דפים ש{name} כתב/ה בהם. בכל דף מוצגות התשובות של כל הקבוצה.",
+      "noNotebook": "עדיין לא נכתב דבר במחברת."
     }
   },
   "manage": {
@@ -1303,7 +1347,9 @@
       "due": "להגשה עד {date}",
       "noDue": "ללא תאריך הגשה",
       "remove": "הסרה",
-      "removeLabel": "הסרת שיעורי הבית של {group}"
+      "removeLabel": "הסרת שיעורי הבית של {group}",
+      "forStudents": "עבור {names}",
+      "forSelected": "לתלמידים נבחרים"
     },
     "messages": {
       "saved": "נשמר.",
@@ -1313,7 +1359,15 @@
       "conflict": "מישהו שמר את התרגיל אחרי שפתחתם אותו. העתיקו את השינויים, טענו את הדף מחדש והחילו אותם שוב.",
       "problems": "תקנו את הבעיות שלמטה ואז שמרו.",
       "past": "בחרו תאריך בעתיד.",
-      "notPublished": "קודם פרסמו את התרגיל."
+      "notPublished": "קודם פרסמו את התרגיל.",
+      "noStudents": "בחרו לפחות תלמיד או תלמידה אחת.",
+      "notInGroup": "בחרו תלמידים מהקבוצה הזו."
     }
+  },
+  "assignAudience": {
+    "who": "למי",
+    "group": "כל התלמידים",
+    "selected": "תלמידים נבחרים",
+    "choose": "בחירת התלמידים"
   }
 }

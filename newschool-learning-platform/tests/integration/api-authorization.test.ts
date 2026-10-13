@@ -384,3 +384,81 @@ describe('exercises written by a teacher (ADR-038), through the API', () => {
     for (const s of [tx, a, c, ty]) await s.auth.signOut();
   });
 });
+
+describe('homework for selected students (ADR-039), through the API', () => {
+  const ASSIGNMENT = 'e3000000-0000-4000-8000-0000000000a9';
+  const TEACHER_X = '00000000-0000-4000-8000-0000000000b1';
+  const STUDENT_C = '00000000-0000-4000-8000-0000000000a3';
+  const secret = process.env.SUPABASE_SECRET_KEY ?? '';
+  const cleanup = () =>
+    createClient<Database>(url, secret, { auth: { persistSession: false } })
+      .from('assignments')
+      .delete()
+      .eq('id', ASSIGNMENT);
+
+  beforeAll(async () => {
+    expect(secret, 'SUPABASE_SECRET_KEY must be set for this test’s clean-up').not.toBe('');
+    await cleanup();
+  });
+  afterAll(async () => {
+    await cleanup();
+  });
+
+  it('reaches only the chosen student; classmates cannot see it, join it or learn who has it', async () => {
+    const tx = await signedIn('teacher.x@example.com');
+    const given = await tx.from('assignments').insert({
+      id: ASSIGNMENT,
+      group_id: IDS.groupX,
+      course_id: IDS.courseSpanish,
+      activity_id: '70000000-0000-4000-8000-000000000002',
+      audience: 'selected',
+      assigned_by: TEACHER_X,
+    });
+    expect(given.error).toBeNull();
+    const chosen = await tx
+      .from('assignment_recipients')
+      .insert({ assignment_id: ASSIGNMENT, student_id: IDS.studentB });
+    expect(chosen.error).toBeNull();
+    // Not even a teacher of the group can add a student from another group.
+    const outsider = await tx
+      .from('assignment_recipients')
+      .insert({ assignment_id: ASSIGNMENT, student_id: STUDENT_C });
+    expect(outsider.error?.code).toBe('23514');
+
+    const a = await signedIn('student.a@example.com');
+    const b = await signedIn('student.b@example.com');
+    expect((await b.from('assignments').select('id').eq('id', ASSIGNMENT)).data).toHaveLength(1);
+
+    // Student A, same group, not chosen: nothing by id, nothing by filtering
+    // on B, and cannot add themselves or remove B.
+    expect((await a.from('assignments').select('id').eq('id', ASSIGNMENT)).data).toEqual([]);
+    expect(
+      (await a.from('assignment_recipients').select('student_id').eq('assignment_id', ASSIGNMENT))
+        .data,
+    ).toEqual([]);
+    expect(
+      (await a.from('assignment_recipients').select('assignment_id').eq('student_id', IDS.studentB))
+        .data,
+    ).toEqual([]);
+    const joined = await a
+      .from('assignment_recipients')
+      .insert({ assignment_id: ASSIGNMENT, student_id: IDS.studentA });
+    expect(joined.error?.code).toBe('42501');
+    const removed = await a
+      .from('assignment_recipients')
+      .delete()
+      .eq('assignment_id', ASSIGNMENT)
+      .select('student_id');
+    expect(removed.data ?? []).toEqual([]);
+    // Nor can A turn it into homework for the whole group.
+    const widened = await a
+      .from('assignments')
+      .update({ audience: 'group' })
+      .eq('id', ASSIGNMENT)
+      .select('id');
+    expect(widened.data ?? []).toEqual([]);
+    expect((await a.from('assignments').select('id').eq('id', ASSIGNMENT)).data).toEqual([]);
+
+    for (const s of [tx, a, b]) await s.auth.signOut();
+  });
+});

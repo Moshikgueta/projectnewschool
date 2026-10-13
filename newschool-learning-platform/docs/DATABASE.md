@@ -194,6 +194,24 @@ author's own name, and never changed (trigger `app.activities_created_by`).
   may edit) and `activity_answered_items` (over `app.answered_item_ids`), both
   `security_barrier`, select-only, no `anon` access.
 
+Homework for selected students (Phase 7, migration `…1900_selected_homework`, ADR-039):
+an assignment with `audience = 'selected'` reaches only its `assignment_recipients`
+(`assignments_select` and `app.can_view_staff_activity` check
+`app.is_assignment_recipient`, unchanged).
+
+- **Recipients are students of the assignment's group** (enrolment `active` or `paused`),
+  and exist only for `selected` assignments: trigger
+  `app.check_assignment_recipient` (AFTER insert/update, so RLS refuses an outsider before
+  the check reveals anything about enrolments). Applies to every writer, the secret key
+  included. An assignment with recipients cannot move to another group
+  (`app.assignments_keep_recipients_group`).
+- `assignment_recipients`: teachers of the group read and write (`app.teaches_assignment`,
+  unchanged); the office (MFA) reads, inserts and deletes only for assignments it gave
+  itself (`app.office_owns_assignment`: `assigned_by = auth.uid()`); a student reads only
+  their own rows and writes none; the manager (MFA) everything.
+- `enrollments_select_office`: the office (MFA) reads enrolments, to offer a group's
+  students when it assigns.
+
 Note the admin column: **admin is not a superset of everything.** Admin manages accounts
 and settings; seeing student learning data requires the pedagogical role (a person can
 hold both). This is least privilege applied to the most powerful account.

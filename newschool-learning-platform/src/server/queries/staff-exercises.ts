@@ -125,13 +125,21 @@ export async function getAuthoringOptions(
 
 export type StaffExerciseForEdit = ActivityForEdit & {
   courseId: string;
-  groups: { id: string; name: string }[];
+  /** Open groups to give it to, with the students that can be chosen by name. */
+  groups: { id: string; name: string; students: { id: string; name: string }[] }[];
   assignments: {
     id: string;
     groupId: string;
     groupName: string;
     dueAt: string | null;
     note: string;
+    /**
+     * Given to selected students: their names, as far as the caller may see
+     * them (the office sees the recipients of its own homework only, so an
+     * empty list means "selected students" without names). Null for the
+     * whole group.
+     */
+    recipients: string[] | null;
     canRemove: boolean;
   }[];
 };
@@ -163,14 +171,18 @@ export async function getStaffExerciseForEdit(
 
   let groupsQuery = supabase
     .from('groups')
-    .select('id, name, status, group_teachers ( teacher_id )')
+    .select(
+      'id, name, status, group_teachers ( teacher_id ), enrollments ( status, student:profiles ( id, display_name ) )',
+    )
     .eq('course_id', row.course_id)
     .in('status', ['planned', 'active'])
     .order('name');
   if (area === 'teach') {
     groupsQuery = supabase
       .from('groups')
-      .select('id, name, status, group_teachers!inner ( teacher_id )')
+      .select(
+        'id, name, status, group_teachers!inner ( teacher_id ), enrollments ( status, student:profiles ( id, display_name ) )',
+      )
       .eq('course_id', row.course_id)
       .eq('group_teachers.teacher_id', user.id)
       .in('status', ['planned', 'active'])
@@ -181,7 +193,10 @@ export async function getStaffExerciseForEdit(
     groupsQuery,
     supabase
       .from('assignments')
-      .select('id, group_id, due_at, note, assigned_by, created_at, group:groups ( name )')
+      .select(
+        `id, group_id, due_at, note, assigned_by, created_at, audience, group:groups ( name ),
+         assignment_recipients ( student:profiles ( display_name ) )`,
+      )
       .eq('activity_id', activityId)
       .order('created_at', { ascending: false }),
   ]);
@@ -192,13 +207,29 @@ export async function getStaffExerciseForEdit(
   return {
     ...activity,
     courseId: row.course_id,
-    groups: groups.data.map((g) => ({ id: g.id, name: g.name })),
+    groups: groups.data.map((g) => ({
+      id: g.id,
+      name: g.name,
+      students: g.enrollments
+        .flatMap((e) =>
+          e.student && (e.status === 'active' || e.status === 'paused')
+            ? [{ id: e.student.id, name: e.student.display_name }]
+            : [],
+        )
+        .sort((a, b) => a.name.localeCompare(b.name)),
+    })),
     assignments: assignments.data.map((a) => ({
       id: a.id,
       groupId: a.group_id,
       groupName: a.group?.name ?? '',
       dueAt: a.due_at,
       note: a.note,
+      recipients:
+        a.audience === 'selected'
+          ? a.assignment_recipients
+              .flatMap((r) => (r.student ? [r.student.display_name] : []))
+              .sort((x, y) => x.localeCompare(y))
+          : null,
       // Teachers remove homework of their own groups; the office its own.
       canRemove: area === 'teach' ? taught.has(a.group_id) : a.assigned_by === user.id,
     })),

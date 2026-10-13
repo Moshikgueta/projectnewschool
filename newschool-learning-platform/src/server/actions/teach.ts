@@ -8,6 +8,7 @@ import { zonedTimeToUtc } from '@/domain/learning/time';
 import type { ManageState } from '@/server/actions/manage';
 import { requireArea } from '@/server/auth/session';
 import { formatCode } from '@/domain/auth/codes';
+import { giveHomework, readAudience } from '@/server/assignments';
 import { ATTENDANCE_STATUSES } from '@/domain/teaching/attendance';
 import { getClassAttendance } from '@/server/queries/attendance';
 import { issueCode, isStudentOnly } from '@/server/privileged/student-codes';
@@ -21,7 +22,7 @@ import { createSupabaseServerClient } from '@/server/supabase/server';
 const uuid = z.uuid();
 
 async function message(
-  key: 'saved' | 'invalid' | 'notAllowed' | 'failed' | 'past',
+  key: 'saved' | 'invalid' | 'notAllowed' | 'failed' | 'past' | 'noStudents' | 'notInGroup',
 ): Promise<ManageState> {
   const t = await getTranslations('teach.forms');
   return key === 'saved' ? { status: 'ok', message: t(key) } : { status: 'error', message: t(key) };
@@ -39,7 +40,8 @@ async function taughtGroup(groupId: string) {
 }
 
 function done(groupId: string) {
-  revalidatePath(`/teach/groups/${groupId}` as Route);
+  // The group page and the pages under it (a student's page, an activity).
+  revalidatePath(`/teach/groups/${groupId}` as Route, 'layout');
   return message('saved');
 }
 
@@ -142,7 +144,8 @@ export async function assignActivity(_prev: ManageState, formData: FormData): Pr
       dueDate: formData.get('dueDate') ?? '',
       note: formData.get('note') ?? '',
     });
-  if (!parsed.success) return message('invalid');
+  const audience = readAudience(formData);
+  if (!parsed.success || !audience) return message('invalid');
 
   // Due at the end of that day, in the teacher's time zone.
   const dueAt = parsed.data.dueDate
@@ -164,16 +167,21 @@ export async function assignActivity(_prev: ManageState, formData: FormData): Pr
     .maybeSingle();
   if (!activity) return message('invalid');
 
-  const { error } = await supabase.from('assignments').insert({
-    group_id: group.id,
-    course_id: group.course_id,
-    activity_id: activity.id,
-    phase: activity.phase,
-    due_at: dueAt?.toISOString() ?? null,
-    note: parsed.data.note,
-    assigned_by: user.id,
-  });
-  if (error) return message(error.code === '42501' ? 'notAllowed' : 'failed');
+  // The whole group, or selected students of it (ADR-039).
+  const result = await giveHomework(
+    supabase,
+    {
+      group_id: group.id,
+      course_id: group.course_id,
+      activity_id: activity.id,
+      phase: activity.phase,
+      due_at: dueAt?.toISOString() ?? null,
+      note: parsed.data.note,
+      assigned_by: user.id,
+    },
+    audience,
+  );
+  if (result !== 'ok') return message(result);
   revalidatePath(`/teach/exercises/${activity.id}` as Route);
   return done(group.id);
 }
@@ -189,7 +197,7 @@ export async function removeAssignment(formData: FormData): Promise<void> {
     .delete()
     .eq('id', assignmentId.data)
     .eq('group_id', groupId.data);
-  revalidatePath(`/teach/groups/${groupId.data}` as Route);
+  revalidatePath(`/teach/groups/${groupId.data}` as Route, 'layout');
   // Also removable from the exercise's own page (/teach/exercises/…).
   revalidatePath('/teach/exercises', 'layout');
 }

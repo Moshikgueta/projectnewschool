@@ -1,6 +1,8 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { useState } from 'react';
+import { AudienceFields, type AudienceStudent } from '@/app/_staff/AudienceFields';
 import { ActionForm } from '@/app/manage/ActionForm';
 import type { ManageState } from '@/server/actions/manage';
 import { Button } from '@/ui/Button';
@@ -127,9 +129,12 @@ export function AssignExerciseForm({
 }: {
   action: Action;
   activityId: string;
-  groups: { id: string; name: string }[];
+  /** Groups to give it to, each with the students that can be chosen by name. */
+  groups: { id: string; name: string; students: AudienceStudent[] }[];
 }) {
   const t = useTranslations('exercises.edit');
+  const [groupId, setGroupId] = useState(groups[0]?.id ?? '');
+  const students = groups.find((g) => g.id === groupId)?.students ?? [];
   return (
     <ActionForm action={action} hidden={{ activityId }} className="flex flex-col gap-3">
       {(pending) => (
@@ -138,12 +143,16 @@ export function AssignExerciseForm({
             id="assign-group"
             name="groupId"
             label={t('group')}
+            value={groupId}
+            onChange={(e) => setGroupId(e.target.value)}
             options={groups.map((g) => ({ value: g.id, label: g.name }))}
           />
           <div className="grid gap-3 sm:grid-cols-2">
             <TextField id="assign-due" name="dueDate" type="date" label={t('dueDate')} />
             <TextField id="assign-note" name="note" dir="auto" label={t('note')} maxLength={1000} />
           </div>
+          {/* A new group starts again from "the whole group". */}
+          <AudienceFields key={groupId} students={students} idPrefix="assign" />
           <Button type="submit" loading={pending} className="self-start">
             {t('assignButton')}
           </Button>

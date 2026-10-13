@@ -86,6 +86,11 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
                             {a.dueAt ? t('due', { date: when(a.dueAt) }) : t('noDue')}
                             {a.note ? ` · ${a.note}` : ''}
                           </p>
+                          {a.recipients ? (
+                            <p className="text-sm text-fg-secondary">
+                              {t('forStudents', { names: a.recipients.join(', ') })}
+                            </p>
+                          ) : null}
                         </div>
                         <form action={removeAssignment}>
                           <input type="hidden" name="groupId" value={group.id} />
@@ -124,6 +129,7 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
                     id: a.id,
                     label: `${cycleTitle.get(a.cycleId) ?? ''} · ${a.title}${a.byStaff ? ` (${t('byStaff')})` : ''}`,
                   }))}
+                  students={group.choosable}
                 />
               </Card>
             ) : null}
@@ -163,7 +169,12 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
                         <th scope="row" className="px-4 py-3 text-start font-normal">
                           <span className="flex items-center gap-3">
                             <Avatar name={s.name} />
-                            <bdi>{s.name}</bdi>
+                            <Link
+                              href={`/teach/groups/${group.id}/students/${s.id}` as Route}
+                              className={LINK}
+                            >
+                              <bdi>{s.name}</bdi>
+                            </Link>
                             {s.status !== 'active' ? (
                               <Badge>{t(`status.${s.status}`)}</Badge>
                             ) : null}
@@ -272,7 +283,7 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
           ))}
         </div>
 
-        <aside className="flex min-w-0 flex-col gap-10">
+        <div className="flex min-w-0 flex-col gap-10">
           <Section id="cycle-heading" title={t('activeCycle')}>
             <Card className="flex flex-col gap-4">
               <p className="text-lg font-semibold">{active ? active.title : t('noActiveCycle')}</p>
@@ -361,7 +372,7 @@ export default async function GroupPage({ params }: { params: Promise<{ groupId:
               </ul>
             )}
           </Section>
-        </aside>
+        </div>
       </div>
     </>
   );

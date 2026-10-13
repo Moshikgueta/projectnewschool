@@ -184,7 +184,7 @@ Status 2026-10-06:
 - [x] Pure, unit-tested insights (`domain/teaching/insights.ts`); seed student D in group X so "common difficulties" has a real sample
 - [x] Tests: 16 pgTAP teacher-authorization tests (own groups only, no homework in another teacher's name, homework only from the group's course, students cannot give homework or schedule classes, no reading of other courses' answers or keys); end-to-end: the group page matches hand-computed numbers, homework reaches the student and can be removed, classes and the active cycle, the teacher activity view, and 404s across groups, courses and roles
 - [ ] Pilot teachers use it for two weeks (exit criterion; needs the school)
-- [ ] Per-student page and homework for selected students (the database supports it; no screen yet)
+- [x] Per-student page and homework for selected students (2026-10-13, ADR-039): `/teach/groups/<group>/students/<student>` with the course progress, recent attempts and scores, the student's homework (group and personal) as done / open / overdue, attendance and the notebook pages they wrote in, and "give an activity to this student only"; the group page, the exercise page and the office's exercise page give homework to the whole group or to chosen students; recipients must be students of the group (database trigger); the office manages recipients of its own homework only; 35 pgTAP tests, an API test and 5 end-to-end tests including forged requests and 404s across groups and roles
 
 Planned scope:
 

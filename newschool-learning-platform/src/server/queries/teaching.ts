@@ -44,9 +44,13 @@ export type GroupOverview = {
     activityId: string | null;
     dueAt: string | null;
     note: string;
+    /** Names of the chosen students; null when given to the whole group. */
+    recipients: string[] | null;
     done: number;
     total: number;
   }[];
+  /** Students homework can be given to by name (active and paused). */
+  choosable: { id: string; name: string }[];
   difficulties: {
     itemId: string;
     activityId: string;
@@ -299,9 +303,18 @@ export async function getGroupOverview(
       activityId: a.activity_id,
       dueAt: a.due_at,
       note: a.note,
+      recipients:
+        a.audience === 'selected'
+          ? a.assignment_recipients
+              .map((r) => nameOf.get(r.student_id) ?? '')
+              .sort((x, y) => x.localeCompare(y))
+          : null,
       done: progressOf.get(a.id)?.done ?? 0,
       total: progressOf.get(a.id)?.total ?? 0,
     })),
+    choosable: enrolled
+      .filter((s) => s.status === 'active' || s.status === 'paused')
+      .map((s) => ({ id: s.id, name: s.name })),
     difficulties: commonDifficulties(firstTries).flatMap((d) => {
       const info = itemInfo.get(d.itemId);
       if (!info?.activity) return [];

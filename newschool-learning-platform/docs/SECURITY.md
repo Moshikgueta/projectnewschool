@@ -163,6 +163,26 @@ nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Polic
 - ☑ Which questions have answers is counted by `app.answered_item_ids`, which returns
   nothing to anyone who may not edit the exercise, so answer counts are not exposed.
 
+### Teacher's student page and homework for selected students — Phase 7 (ADR-039)
+
+- ☑ **A student never reaches homework, or an exercise, given only to another student**,
+  even in the same group and with its address or id: not the assignment, not who it was
+  given to, not the exercise or its questions (pgTAP `15_selected_homework`, API test,
+  E2E: 404 for the exercise page). A student cannot add themselves as a recipient,
+  remove themselves, or widen the homework to the whole group.
+- ☑ Recipients must be students of the assignment's group (active or paused): a database
+  trigger refuses anyone else, for teachers, the office and the secret key alike, after
+  RLS has refused callers who may not choose recipients at all (so the answer never
+  reveals who is enrolled where). The app checks first only to give a clear message.
+- ☑ The office (MFA) chooses recipients only for homework it gave itself; teachers only
+  for homework of groups they teach. The office reads enrolments (which group each
+  student is in) to offer the group's students.
+- ☑ The teacher's page for one student (`/teach/groups/<group>/students/<student>`) is
+  served only to a teacher of that group, for a student enrolled in it; everything else
+  (another teacher's group, a student of another group, a student or the office opening
+  it) is the same 404 as a missing page (E2E). Its data is read with the teacher's own
+  session, so RLS limits it again.
+
 ### Rate limiting — Phases 1 & 4
 
 - ☐ Auth endpoints: Supabase Auth's built-in limits (tightened), plus CAPTCHA

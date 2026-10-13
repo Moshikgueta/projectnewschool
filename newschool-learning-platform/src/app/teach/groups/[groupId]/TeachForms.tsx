@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useActionState } from 'react';
+import { AudienceFields, type AudienceStudent } from '@/app/_staff/AudienceFields';
 import { ActionForm } from '@/app/manage/ActionForm';
 import {
   assignActivity,
@@ -71,13 +72,22 @@ export function ClassForm({ groupId }: { groupId: string }) {
 export function AssignForm({
   groupId,
   activities,
+  students,
+  onlyStudent,
 }: {
   groupId: string;
   activities: { id: string; label: string }[];
+  /** Students of the group that can be chosen by name. */
+  students: AudienceStudent[];
+  /** On a student's page: give it to this student only, no choice shown. */
+  onlyStudent?: string;
 }) {
   const t = useTranslations('teach.group');
+  const hidden: Record<string, string> = onlyStudent
+    ? { groupId, audience: 'selected', studentId: onlyStudent }
+    : { groupId };
   return (
-    <ActionForm action={assignActivity} hidden={{ groupId }} className="flex flex-col gap-3">
+    <ActionForm action={assignActivity} hidden={hidden} className="flex flex-col gap-3">
       {(pending) => (
         <>
           <SelectField
@@ -90,6 +100,7 @@ export function AssignForm({
             <TextField id="assign-due" name="dueDate" type="date" label={t('dueDate')} />
             <TextField id="assign-note" name="note" label={t('note')} maxLength={1000} />
           </div>
+          {onlyStudent ? null : <AudienceFields students={students} idPrefix="assign" />}
           <Button type="submit" loading={pending} className="self-start">
             {t('assignButton')}
           </Button>
