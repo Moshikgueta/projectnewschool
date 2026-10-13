@@ -654,7 +654,8 @@
         "saved": "Saved",
         "skipped": "Skipped"
       },
-      "back": "Back to practice"
+      "back": "Back to practice",
+      "corrected": "This question’s answer was corrected on {date}; your result follows the corrected answer."
     },
     "practice": {
       "title": "Practice",
@@ -1076,7 +1077,7 @@
       "slugTaken": "That short name is already used here. Choose another.",
       "conflict": "Someone saved this page after you opened it. Copy your changes, reload the page and apply them again.",
       "problems": "Fix the problems below, then save.",
-      "answeredChanged": "{count, plural, one {a student has answered it} other {students have answered it # times}}, so its options and answers can’t change. Add a new question instead.",
+      "answeredChanged": "{count, plural, one {a student has answered it} other {students have answered it # times}}, so its options and answers can’t change. To fix a wrong answer, use “Correct the answer” on the question.",
       "answeredRemoved": "{count, plural, one {a student has answered it} other {students have answered it # times}}, so it can’t be removed."
     },
     "course": {
@@ -1282,7 +1283,7 @@
       "true": "True",
       "false": "False",
       "publishedWarning": "This exercise is published: saving changes what students see right away.",
-      "answeredNote": "{count, plural, one {One question has} other {# questions have}} answers from students: their options and answers are locked; their wording, feedback and points can still change. To change the answers, add a new question.",
+      "answeredNote": "{count, plural, one {One question has} other {# questions have}} answers from students: their options and answers are locked; their wording, feedback and points can still change. If an answer key is wrong, the pedagogical manager can use “Correct the answer”, which re-checks past answers.",
       "fromStored": "This exercise was written before sources were kept, so options appear in their stored order. Saving keeps the questions you don’t change exactly as they are.",
       "types": {
         "multipleChoice": "Multiple choice",
@@ -1306,6 +1307,58 @@
       "questionId": "Question id (keeps its answers linked):",
       "questionType": "Question type",
       "addQuestion": "Add question"
+    },
+    "correction": {
+      "action": "Correct the answer",
+      "actionLabel": "Correct the answer of question {n}",
+      "title": "Correct the answer",
+      "intro": "Students have answered this question. Correcting its answer re-checks all their past answers with the new one: those who answered what is now right get the credit, those who answered what is now wrong lose it, and scores change accordingly.",
+      "optionsLegend": "Which options are right?",
+      "truthLegend": "The statement is",
+      "true": "True",
+      "false": "False",
+      "textHint": "The sentence:",
+      "blankLabel": "Blank {n}: accepted answers, one per line",
+      "accents": "Accents",
+      "accentsOptions": {
+        "lenient": "A missing accent still counts (with a reminder)",
+        "strict": "Accents must be right"
+      },
+      "matchLabel": "“{left}” matches",
+      "sentencesLabel": "Accepted sentences, one per line",
+      "wordsHint": "Use exactly these words: {words}",
+      "reason": "Why is the answer corrected?",
+      "reasonHint": "Required. Kept with the correction; students don’t see it.",
+      "preview": "Check the effect",
+      "effectTitle": "If you confirm:",
+      "effectResponses": "{count, plural, one {One past answer is} other {# past answers are}} checked again.",
+      "effectCorrect": "{count, plural, one {One answer changes} other {# answers change}} from wrong to right.",
+      "effectIncorrect": "{count, plural, one {One answer changes} other {# answers change}} from right to wrong.",
+      "effectPartial": "{count, plural, one {One answer gets} other {# answers get}} a different partial score.",
+      "effectStudents": "Results change for {students, plural, one {one student} other {# students}} ({attempts, plural, one {one attempt} other {# attempts}}).",
+      "effectNone": "No past result changes: everyone keeps their result.",
+      "confirm": "Confirm the correction",
+      "cancel": "Cancel",
+      "done": "Corrected. {responses, plural, one {One past answer} other {# past answers}} re-checked: {right} now right, {wrong} now wrong.",
+      "pending": "The answer is corrected, but past answers have not all been re-checked yet. Re-check them now.",
+      "recheck": "Re-check past answers now",
+      "rechecked": "Past answers re-checked.",
+      "last": "Answer corrected on {date}: {reason}",
+      "fromReport": "You are correcting this in answer to a student’s report; the report will be marked resolved.",
+      "problems": {
+        "typeMismatch": "This question changed type; reload the page.",
+        "unreadable": "This question’s answer can’t be corrected here.",
+        "unchanged": "That is the answer it already has.",
+        "unknownOption": "Choose among the question’s options.",
+        "blankCount": "Give at least one accepted answer for every blank.",
+        "pairs": "Match every item on the left.",
+        "sameWords": "Each sentence must use exactly the words of the question.",
+        "invalid": "Check the form and try again.",
+        "notAllowed": "Only the pedagogical manager can correct answers.",
+        "failed": "Could not correct the answer. Try again.",
+        "notAnswered": "No student has answered this question yet: change it in the editor and save.",
+        "reasonMissing": "Write why the answer is corrected (at least 3 characters)."
+      }
     }
   },
   "exercises": {
@@ -1424,7 +1477,10 @@
       "reopen": "Reopen",
       "reopenLabel": "Reopen the report of {date} about {title}",
       "openInEditor": "Open in the editor",
-      "openTeacherView": "Open"
+      "openTeacherView": "Open",
+      "correctAnswer": "Correct the answer",
+      "correctAnswerLabel": "Correct the answer of {title}",
+      "corrected": "Answer corrected {date}: {reason}"
     }
   }
 }

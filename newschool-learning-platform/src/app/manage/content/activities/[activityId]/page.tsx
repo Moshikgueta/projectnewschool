@@ -3,8 +3,13 @@ import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { z } from 'zod';
 import { saveActivityContent } from '@/server/actions/cms';
+import {
+  correctAnswer,
+  previewAnswerCorrection,
+  recheckCorrection,
+} from '@/server/actions/corrections';
 import { requireArea } from '@/server/auth/session';
-import { getActivityForEdit } from '@/server/queries/cms';
+import { getActivityForEdit, getCorrectableItems } from '@/server/queries/cms';
 import { ButtonLink } from '@/ui/Button';
 import { Card } from '@/ui/Card';
 import { PageTitle, Section } from '@/ui/Page';
@@ -17,19 +22,32 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function ActivityEditorPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ activityId: string }>;
+  /** From a mistake report: open this question's correction (ADR-041). */
+  searchParams: Promise<{ correct?: string; report?: string }>;
 }) {
   await requireArea('manage');
   const id = z.uuid().safeParse((await params).activityId);
   if (!id.success) notFound();
   const activity = await getActivityForEdit(id.data);
   if (!activity) notFound();
-  const [t, ts] = await Promise.all([
+  const query = await searchParams;
+  const correctId = z.uuid().safeParse(query.correct);
+  const reportId = z.uuid().safeParse(query.report);
+  const answeredSlugs = Object.entries(activity.answered)
+    .filter(([, n]) => n > 0)
+    .map(([slug]) => slug);
+  const [t, ts, correctable] = await Promise.all([
     getTranslations('cms.activity'),
     getTranslations('cms.section'),
+    getCorrectableItems(activity.id, answeredSlugs),
   ]);
-  const answeredItems = Object.values(activity.answered).filter((n) => n > 0).length;
+  const answeredItems = answeredSlugs.length;
+  const openSlug = correctId.success
+    ? (Object.entries(correctable).find(([, c]) => c.itemId === correctId.data)?.[0] ?? null)
+    : null;
 
   return (
     <div className="flex flex-col gap-8">
@@ -77,6 +95,16 @@ export default async function ActivityEditorPage({
           courseLang={activity.courseLang}
           answered={activity.answered}
           saveAction={saveActivityContent}
+          correction={{
+            items: correctable,
+            actions: {
+              preview: previewAnswerCorrection,
+              apply: correctAnswer,
+              recheck: recheckCorrection,
+            },
+            reportId: openSlug && reportId.success ? reportId.data : null,
+            openSlug,
+          }}
         />
       </Section>
     </div>

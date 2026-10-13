@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import type { ActivityFormDoc } from '@/content/activity-editor';
 import type { EditorProblem } from '@/content/editor';
 import { ITEM_TYPES, itemFields, itemSummary, newItem, type ItemType } from '@/content/item-forms';
@@ -17,22 +17,29 @@ const INPUT = 'min-h-11 rounded-md border border-border-strong bg-surface px-3 t
 /**
  * An exercise's questions, each opened into the form of its type. A question
  * students have answered says so: its options and answers are locked (the
- * server refuses a change) and it cannot be removed.
+ * server refuses a change) and it cannot be removed. On the manager's page,
+ * `renderCorrection` adds "Correct the answer" to it (ADR-041).
  */
 export function ItemListEditor({
   doc,
   onChange,
   problems,
   answered,
+  renderCorrection,
+  initiallyOpen = null,
 }: {
   doc: ActivityFormDoc;
   onChange: (doc: ActivityFormDoc) => void;
   problems: EditorProblem[];
   answered: Record<string, number>;
+  renderCorrection?: (id: string, n: number) => ReactNode;
+  initiallyOpen?: string | null;
 }) {
   const t = useTranslations('cms.activity');
   const tf = useTranslations('cms.form');
-  const [open, setOpen] = useState<ReadonlySet<string>>(new Set());
+  const [open, setOpen] = useState<ReadonlySet<string>>(
+    () => new Set(initiallyOpen ? [initiallyOpen] : []),
+  );
   const [adding, setAdding] = useState<ItemType>('multipleChoice');
   const items = doc.items;
   const setItems = (next: Rec[]) => onChange({ ...doc, items: next });
@@ -144,6 +151,7 @@ export function ItemListEditor({
                       {t('lockedNote', { count })}
                     </p>
                   ) : null}
+                  {count && renderCorrection ? renderCorrection(id, i + 1) : null}
                   {own.length ? (
                     <ul className="list-disc rounded-md bg-error-light p-3 ps-8 text-sm text-error-ink">
                       {own.map((p, k) => (

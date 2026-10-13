@@ -292,6 +292,13 @@ in [GO-LIVE.md](GO-LIVE.md).
 - [x] `content:import` can target production from the operator's machine
       (`APP_ENV=production`, `--production`, `--confirm=<host>`)
 - [x] Tests: 40 pgTAP, 1 API, 2 end-to-end, 20 unit
+- [x] Correcting a wrong answer key on an answered question (school owner, 2026-10-13;
+      ADR-041): the pedagogical manager (MFA) corrects it from the exercise editor or straight
+      from a mistake report, with a reason and a preview of the effect; every past answer is
+      re-checked with the live grader and scores updated; the report is resolved as
+      "corrected"; students see that the question was corrected. `content:import` leaves
+      answered keys alone and prints how to correct them. Tests: 28 pgTAP (including that a
+      session cannot open the answered-item triggers itself), 2 API, 1 end-to-end, 20 unit
 - [ ] Launch: [GO-LIVE.md](GO-LIVE.md) on the day the accounts exist
 - [ ] Teachers answer the open `review:` questions course by course; then `pilot: false`
 

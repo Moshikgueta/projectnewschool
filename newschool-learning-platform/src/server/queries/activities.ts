@@ -10,7 +10,13 @@ import { listMyCourses, type MyCourse } from './student';
 type ScoringMode = Database['public']['Enums']['scoring_mode'];
 type Phase = Database['public']['Enums']['learning_phase'];
 
-export type ActivityItem = { item: PublicItem | null; rawId: string; prompt: (Block | null)[] };
+export type ActivityItem = {
+  item: PublicItem | null;
+  rawId: string;
+  prompt: (Block | null)[];
+  /** When the answer key was corrected after students had answered (ADR-041). */
+  correctedAt: string | null;
+};
 
 export type ActivityDetail = {
   id: string;
@@ -39,7 +45,7 @@ export async function getActivity(activityId: string): Promise<ActivityDetail | 
     .select(
       `id, title, course_id, cycle_id, phase, scoring_mode, est_minutes, instructions,
        cycle:cycles ( title, course:courses ( pilot, level:levels ( language:languages ( code ) ) ) ),
-       items:activity_items ( id, type, prompt, data, points, position )`,
+       items:activity_items ( id, type, prompt, data, points, position, corrected_at )`,
     )
     .eq('id', activityId)
     .maybeSingle();
@@ -63,6 +69,7 @@ export async function getActivity(activityId: string): Promise<ActivityDetail | 
         rawId: i.id,
         item: parsePublicItem({ id: i.id, type: i.type, data: i.data, points: Number(i.points) }),
         prompt: parseBlocksForRender(i.prompt),
+        correctedAt: i.corrected_at,
       })),
   };
 }

@@ -87,13 +87,13 @@ isOneToOne: false
                   ]
                 },"activity_items": {
                   Row: {
-                    "activity_id": string,"course_id": string,"created_at": string,"data": NonNullable<Json>,"id": string,"points": number,"position": number,"prompt": NonNullable<Json>,"slug": string,"type": string
+                    "activity_id": string,"corrected_at": string | null,"course_id": string,"created_at": string,"data": NonNullable<Json>,"id": string,"points": number,"position": number,"prompt": NonNullable<Json>,"slug": string,"type": string
                   }
                   Insert: {
-                    "activity_id": string,"course_id": string,"created_at"?: string,"data"?: NonNullable<Json>,"id"?: string,"points"?: number,"position"?: number,"prompt"?: NonNullable<Json>,"slug": string,"type": string
+                    "activity_id": string,"corrected_at"?: string | null,"course_id": string,"created_at"?: string,"data"?: NonNullable<Json>,"id"?: string,"points"?: number,"position"?: number,"prompt"?: NonNullable<Json>,"slug": string,"type": string
                   }
                   Update: {
-                    "activity_id"?: string,"course_id"?: string,"created_at"?: string,"data"?: NonNullable<Json>,"id"?: string,"points"?: number,"position"?: number,"prompt"?: NonNullable<Json>,"slug"?: string,"type"?: string
+                    "activity_id"?: string,"corrected_at"?: string | null,"course_id"?: string,"created_at"?: string,"data"?: NonNullable<Json>,"id"?: string,"points"?: number,"position"?: number,"prompt"?: NonNullable<Json>,"slug"?: string,"type"?: string
                   }
                   Relationships: [
                     {
@@ -768,6 +768,55 @@ isOneToOne: false
       columns: ["course_id"]
 isOneToOne: false
       referencedRelation: "courses"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"item_corrections": {
+                  Row: {
+                    "activity_id": string | null,"attempts_rescored": number | null,"became_correct": number | null,"became_incorrect": number | null,"corrected_at": string,"corrected_by": string | null,"course_id": string,"id": string,"item_id": string,"new_answer": NonNullable<Json>,"new_data": NonNullable<Json>,"new_source": Json | null,"old_answer": Json | null,"old_data": Json | null,"reason": string,"regraded_at": string | null,"report_id": string | null,"responses_rechecked": number | null
+                  }
+                  Insert: {
+                    "activity_id"?: string | null,"attempts_rescored"?: number | null,"became_correct"?: number | null,"became_incorrect"?: number | null,"corrected_at"?: string,"corrected_by"?: string | null,"course_id": string,"id"?: string,"item_id": string,"new_answer": NonNullable<Json>,"new_data": NonNullable<Json>,"new_source"?: Json | null,"old_answer"?: Json | null,"old_data"?: Json | null,"reason": string,"regraded_at"?: string | null,"report_id"?: string | null,"responses_rechecked"?: number | null
+                  }
+                  Update: {
+                    "activity_id"?: string | null,"attempts_rescored"?: number | null,"became_correct"?: number | null,"became_incorrect"?: number | null,"corrected_at"?: string,"corrected_by"?: string | null,"course_id"?: string,"id"?: string,"item_id"?: string,"new_answer"?: NonNullable<Json>,"new_data"?: NonNullable<Json>,"new_source"?: Json | null,"old_answer"?: Json | null,"old_data"?: Json | null,"reason"?: string,"regraded_at"?: string | null,"report_id"?: string | null,"responses_rechecked"?: number | null
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "item_corrections_corrected_by_fkey"
+      columns: ["corrected_by"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "item_corrections_corrected_by_fkey"
+      columns: ["corrected_by"]
+isOneToOne: false
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "item_corrections_corrected_by_fkey"
+      columns: ["corrected_by"]
+isOneToOne: false
+      referencedRelation: "task_assignees"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "item_corrections_corrected_by_fkey"
+      columns: ["corrected_by"]
+isOneToOne: false
+      referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "item_corrections_item_id_course_id_fkey"
+      columns: ["item_id","course_id"]
+isOneToOne: false
+      referencedRelation: "activity_items"
+      referencedColumns: ["id","course_id"]
+    },{
+      foreignKeyName: "item_corrections_report_id_fkey"
+      columns: ["report_id"]
+isOneToOne: false
+      referencedRelation: "content_reports"
       referencedColumns: ["id"]
     }
                   ]

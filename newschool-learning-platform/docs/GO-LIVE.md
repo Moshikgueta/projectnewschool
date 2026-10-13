@@ -204,7 +204,8 @@ unset SUPABASE_SECRET_KEY APP_ENV NEXT_PUBLIC_SUPABASE_URL
 ## 11. Fixing a reported mistake
 
 Reports arrive in `/manage/reports` (all courses) and `/teach/reports` (teachers: their
-courses). Each links to the exercise or page. Two ways to fix:
+courses). Each links to the exercise or page; a report about a question also links the
+manager straight to correcting its answer. Two ways to fix:
 
 **A. In the platform (quick, one fix):** pedagogical manager → **Open in the editor** →
 change the page, or the exercise's question → Save → back in Reports, **Mark resolved**.
@@ -221,11 +222,22 @@ Rules that decide which way:
   skips them unless `--overwrite-app-edits`). Exercises **are** rewritten from the file, so
   after fixing an exercise in the editor, put the same fix in its YAML file before the next
   import, or the import brings the old version back.
-- A question students have already answered keeps its options and answer key (ADR-036):
-  its wording, points and feedback can change, but a **wrong answer key on an answered
-  question cannot be edited**. Fix it by adding a corrected question (new `id`) and
-  setting the old one's feedback to explain, or by archiving the exercise and publishing
-  a corrected copy under a new slug.
+- A question students have already answered keeps its options (ADR-036): its wording,
+  points and feedback can change in the editor or the file, but its options and answer key
+  cannot be saved over.
+- **A wrong answer key on an answered question is corrected in the platform** (ADR-041), by
+  the pedagogical manager (MFA): in `/manage/reports`, **Correct the answer** on the report
+  (or in the exercise editor: open the question → **Correct the answer**) → mark the right
+  answer → write the reason → **Check the effect** (how many past answers become right or
+  wrong, how many students' results change) → **Confirm the correction**. Every past answer
+  to the question is re-checked and scores are updated; the report is marked resolved and
+  shows "Answer corrected"; students see "This question's answer was corrected on …" on
+  their results. If the page says past answers were not all re-checked, press **Re-check
+  past answers now** (safe to repeat).
+- Then put the same answer in the YAML file (a pull request). Until then, `content:import`
+  leaves the corrected question as it is and prints a warning with these steps; it never
+  changes an answered key itself (there is no import flag for it: a correction needs the
+  manager's MFA session and a reason).
 - When a teacher answers a cycle's `review:` questions, remove them from the file in the
   same pull request as the fix.
 

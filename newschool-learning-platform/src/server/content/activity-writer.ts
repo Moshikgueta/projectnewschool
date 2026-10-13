@@ -160,7 +160,10 @@ export type PlanProblem = {
 /** A plan problem in English, for the import script's log. */
 export function describeProblem(p: PlanProblem): string {
   return p.code === 'answeredChanged'
-    ? `Item "${p.item}" has ${p.count} answer(s) from students: its options and answers cannot change. Add a new item instead.`
+    ? `Item "${p.item}" has ${p.count} answer(s) from students: its options and answers cannot change here. ` +
+        'If its answer key is wrong, the pedagogical manager corrects it in the platform ' +
+        '(exercise editor → the question → "Correct the answer", with a reason): past answers are re-checked ' +
+        'and scores updated (docs/GO-LIVE.md §11, ADR-041). Then put the same answer in this file.'
     : `Item "${p.item}" has ${p.count} answer(s) from students and cannot be removed.`;
 }
 
@@ -199,6 +202,10 @@ export async function planActivityItems(
     | { kind: 'position'; id: string; position: number }
     | { kind: 'item'; compiled: CompiledItem; position: number; textOnly: boolean };
   const steps: Step[] = [];
+  // The source saved with the exercise: what was written, except that an
+  // answered item left as it is (the import) keeps its stored version, so the
+  // editor shows the answers students are graded by (ADR-041).
+  const sourceItems = [...args.items];
 
   args.items.forEach((item, index) => {
     const position = index + 1;
@@ -217,7 +224,11 @@ export async function planActivityItems(
       if (!was || !sameAnswers(was, item)) {
         const problem: PlanProblem = { code: 'answeredChanged', item: item.id, count };
         if (strict) problems.push(problem);
-        else warnings.push(`${describeProblem(problem)} Left as it is.`);
+        else {
+          warnings.push(`${describeProblem(problem)} Left as it is.`);
+          if (before && was && sameAnswers(was, before)) sourceItems[index] = before;
+          else if (was) sourceItems[index] = was;
+        }
         return;
       }
       // Same answers: keep the stored options, ids and key; change the wording.
@@ -323,7 +334,7 @@ export async function planActivityItems(
             course_id: args.courseId,
             source: {
               instructions: args.instructions,
-              items: args.items,
+              items: sourceItems,
             } as unknown as NonNullable<Json>,
           },
           { onConflict: 'activity_id' },

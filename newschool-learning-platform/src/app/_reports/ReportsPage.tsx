@@ -81,6 +81,11 @@ export async function ReportsPage({
     }
     return t('page', { title: r.section?.title || t('unavailable') });
   };
+  // A reported question: the manager goes straight to correcting its answer (ADR-041).
+  const correctHref = (r: ContentReport): Route | null =>
+    area === 'manage' && r.activity && r.itemId
+      ? (`/manage/content/activities/${r.activity.id}?correct=${r.itemId}&report=${r.id}` as Route)
+      : null;
   const setStatus = area === 'manage' ? setReportStatusAsManager : setReportStatusAsTeacher;
   const base = area === 'manage' ? '/manage/reports' : '/teach/reports';
 
@@ -118,6 +123,7 @@ export async function ReportsPage({
             <ul className="flex flex-col gap-3">
               {course.reports.map((r) => {
                 const link = href(r);
+                const correct = correctHref(r);
                 const label = what(r);
                 return (
                   <li key={r.id}>
@@ -176,7 +182,24 @@ export async function ReportsPage({
                             {area === 'manage' ? t('openInEditor') : t('openTeacherView')}
                           </Link>
                         ) : null}
+                        {correct ? (
+                          <Link
+                            href={correct}
+                            className={LINK}
+                            aria-label={t('correctAnswerLabel', { title: label })}
+                          >
+                            {t('correctAnswer')}
+                          </Link>
+                        ) : null}
                       </p>
+                      {r.correction ? (
+                        <p className="text-sm text-success-ink">
+                          {t('corrected', {
+                            date: date(r.correction.at),
+                            reason: r.correction.reason,
+                          })}
+                        </p>
+                      ) : null}
                     </Card>
                   </li>
                 );

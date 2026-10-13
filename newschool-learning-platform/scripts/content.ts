@@ -3,7 +3,9 @@
 //   pnpm content:validate [dir]   check every content/**/*.yaml file; exit 1 on problems
 //   pnpm content:import  [dir]    validate, then upsert into the database by slug
 //                                 (sections edited in the platform are skipped unless
-//                                 --overwrite-app-edits is passed)
+//                                 --overwrite-app-edits is passed; a question students
+//                                 have answered keeps its answer key, which only the
+//                                 manager corrects in the platform, ADR-041)
 //
 // Import runs against the local database by default. A staging import needs
 // APP_ENV=staging and --confirm=<host of NEXT_PUBLIC_SUPABASE_URL>; a

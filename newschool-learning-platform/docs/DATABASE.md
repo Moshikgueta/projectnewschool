@@ -228,6 +228,27 @@ its course):
 | trigger `…_before_update` | sets `resolved_by = auth.uid()` and `resolved_at = now()` on resolving, clears both on reopening; audit trigger records every change                                                 |
 | delete                    | nobody (no grant)                                                                                                                                                                    |
 
+Answer corrections (migration `…2100_answer_corrections`, ADR-041):
+`activity_items.corrected_at` (when the key was last corrected; set only by a correction,
+read like the rest of the item, so students can be told). `item_corrections` is both the
+request and its audit record: `item_id`, `course_id`, `activity_id`, `corrected_by`,
+`corrected_at`, `reason` (3–500), optional `report_id` (the mistake report it answers),
+`old_data`/`old_answer`, `new_data`/`new_answer`, `new_source` (the corrected question in
+the authored form), and the re-check's counts (`responses_rechecked`, `became_correct`,
+`became_incorrect`, `attempts_rescored`, `regraded_at`).
+
+| Policy / rule                                                         | Who / what                                                                                                                                                                                                                                                                                 |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `item_corrections_select`                                             | the manager (MFA) only: rows hold answer keys. Not teachers, the office or students                                                                                                                                                                                                        |
+| `item_corrections_insert`                                             | the manager (MFA); insert grant on the request columns only (`item_id`, `course_id`, `reason`, `report_id`, `new_data`, `new_answer`, `new_source`)                                                                                                                                        |
+| trigger `app.correct_answered_item` (BEFORE INSERT, SECURITY DEFINER) | checks `app.is_manager()` itself; locks the item and key; refuses a change to anything but the key and multiple choice's `multiple` (23001) or no change (22023); records old values, who and when; updates item, key, `corrected_at` and the source's item; bumps `activities.updated_at` |
+| `app.item_correction_grants` (private table)                          | the one-time bypass: (transaction id, item, random token). No grant to `anon`, `authenticated` or `service_role`; written and removed only inside the trigger                                                                                                                              |
+| `app.item_correction_allowed(item)`                                   | true only with a grant row for the current transaction and item **and** `app.item_correction` = its token; asked by `app.protect_answered_item` / `app.protect_answered_key` (which also refuse any other change of `corrected_at`)                                                        |
+| trigger `app.item_corrections_keep`                                   | a correction is never rewritten: only the re-check's counts may be filled in (by the server's secret key); no delete grant                                                                                                                                                                 |
+
+The re-check of past answers writes `responses` (`is_correct`, `score`, `feedback_code`)
+and `attempts` (`state`, `score`) with the secret key, like live grading (ADR-006).
+
 Note the admin column: **admin is not a superset of everything.** Admin manages accounts
 and settings; seeing student learning data requires the pedagogical role (a person can
 hold both). This is least privilege applied to the most powerful account.

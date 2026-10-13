@@ -552,3 +552,43 @@ describe('mistake reports (ADR-040), through the API', () => {
     await d.auth.signOut();
   });
 });
+
+describe('answer corrections (ADR-041), through the API', () => {
+  const correction = {
+    item_id: IDS.itemSpanish,
+    course_id: IDS.courseSpanish,
+    reason: 'Trying to change the key myself.',
+    new_data: {
+      options: [
+        { id: 'o1', text: 'Me llamo Ana.' },
+        { id: 'o2', text: 'Tengo diez años.' },
+      ],
+    },
+    new_answer: { optionIds: ['o2'] },
+  };
+
+  it('a student or a teacher cannot correct an answer, read corrections or call the function', async () => {
+    for (const email of ['student.a@example.com', 'teacher.x@example.com']) {
+      const s = await signedIn(email);
+      const insert = await s.from('item_corrections').insert(correction);
+      expect(insert.error?.code, email).toBe('42501');
+      const { data } = await s.from('item_corrections').select('*');
+      expect(data, email).toEqual([]);
+      const rpc = await s.rpc('correct_answered_item' as never);
+      expect(rpc.error, email).not.toBeNull();
+      await s.auth.signOut();
+    }
+    // The key is as it was, and still unreadable for the student.
+    const a = await signedIn('student.a@example.com');
+    const { data: keys } = await a.from('activity_item_keys').select('answer');
+    expect(keys).toEqual([]);
+    await a.auth.signOut();
+  });
+
+  it('a manager session without MFA cannot correct either', async () => {
+    const pm = await signedIn('manager@example.com');
+    const insert = await pm.from('item_corrections').insert(correction);
+    expect(insert.error?.code).toBe('42501');
+    await pm.auth.signOut();
+  });
+});

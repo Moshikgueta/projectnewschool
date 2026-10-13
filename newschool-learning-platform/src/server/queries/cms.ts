@@ -1,6 +1,12 @@
 import 'server-only';
 import { activityToYaml } from '@/content/activity-editor';
 import { sectionToYaml } from '@/content/editor';
+import {
+  currentAnswer,
+  isCorrectable,
+  type CorrectableType,
+  type Correction,
+} from '@/content/item-correction';
 import { loadActivitySource } from '@/server/content/activity-writer';
 import type { Database } from '@/server/db.types';
 import { createSupabaseServerClient } from '@/server/supabase/server';
@@ -256,4 +262,65 @@ export async function getActivityForEdit(activityId: string): Promise<ActivityFo
     fromStored: loaded.fromStored,
     answered: Object.fromEntries(loaded.answered),
   };
+}
+
+/** An answered question whose answer key the manager may correct (ADR-041). */
+export type CorrectableItem = {
+  itemId: string;
+  type: CorrectableType;
+  /** The public data (options, words, pairs, the sentence): ids are what the key names. */
+  data: Record<string, unknown>;
+  /** The current answer key, in the correction form's terms. */
+  answer: Correction;
+  /** The latest correction, if any. */
+  last: { id: string; at: string; reason: string; rechecked: boolean } | null;
+};
+
+/**
+ * The answered questions of an exercise that can be corrected, by slug. Read
+ * with the manager's own session: keys and corrections are the manager's
+ * (RLS), so anyone else gets an empty map.
+ */
+export async function getCorrectableItems(
+  activityId: string,
+  answeredSlugs: string[],
+): Promise<Record<string, CorrectableItem>> {
+  if (!answeredSlugs.length) return {};
+  const supabase = await createSupabaseServerClient();
+  const { data: items, error } = await supabase
+    .from('activity_items')
+    .select('id, slug, type, data')
+    .eq('activity_id', activityId)
+    .in('slug', answeredSlugs);
+  if (error) fail('the questions', error);
+  const ids = items.map((i) => i.id);
+  if (!ids.length) return {};
+  const [keys, corrections] = await Promise.all([
+    supabase.from('activity_item_keys').select('item_id, answer').in('item_id', ids),
+    supabase
+      .from('item_corrections')
+      .select('id, item_id, corrected_at, reason, regraded_at')
+      .eq('activity_id', activityId)
+      .order('corrected_at', { ascending: false }),
+  ]);
+  if (keys.error) fail('the answer keys', keys.error);
+  if (corrections.error) fail('the corrections', corrections.error);
+  const keyOf = new Map(keys.data.map((k) => [k.item_id, k.answer]));
+  const out: Record<string, CorrectableItem> = {};
+  for (const item of items) {
+    if (!isCorrectable(item.type)) continue;
+    const answer = currentAnswer({ type: item.type, data: item.data, key: keyOf.get(item.id) });
+    if (!answer) continue;
+    const last = corrections.data.find((c) => c.item_id === item.id);
+    out[item.slug] = {
+      itemId: item.id,
+      type: item.type,
+      data: item.data as Record<string, unknown>,
+      answer,
+      last: last
+        ? { id: last.id, at: last.corrected_at, reason: last.reason, rechecked: !!last.regraded_at }
+        : null,
+    };
+  }
+  return out;
 }

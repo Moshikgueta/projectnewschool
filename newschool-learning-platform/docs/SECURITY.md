@@ -209,6 +209,33 @@ nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Polic
   `--confirm=<host>`, from the operator's machine with the secret key typed in
   ([GO-LIVE.md](GO-LIVE.md) §7); `.env.local` is not read when `APP_ENV` is set.
 
+### Correcting an answered question's key (ADR-041)
+
+- ☑ **Only the pedagogical manager with MFA** corrects an answer key once students have
+  answered: the Server Action checks `requireArea('manage')`, the insert into
+  `item_corrections` is made with the manager's own session (RLS: `app.is_manager()`), and
+  the SECURITY DEFINER trigger that applies it checks `app.is_manager()` again. Students,
+  teachers (even of the course, even the exercise's author), the office, a manager without
+  MFA, anonymous callers and the secret key (no manager session) are refused (pgTAP
+  `17_answer_corrections`, API test, E2E). Nothing new is callable as RPC: the trigger
+  function cannot be called directly and has no execute grant.
+- ☑ **The answered-item triggers cannot be switched off by a session.** They let a change
+  through only when the running transaction holds a grant row for that item in
+  `app.item_correction_grants` (no API role can read or write it) **and** the
+  transaction-local setting `app.item_correction` equals that row's random token. Any
+  session can set the setting; tested that doing so (with any value) still gets 23001, that
+  writing the grant is refused, and that `corrected_at` cannot be set by hand. The grant is
+  removed before the trigger returns, and the question is locked again afterwards.
+- ☑ A correction changes the **key only** (and multiple choice's "several answers" flag):
+  the options, words, pairs and their ids stay (checked in the database too), so no past
+  answer changes meaning. A reason is required; the record keeps the old and new key, who
+  and when, and is never rewritten or deleted.
+- ☑ Keys stay server-side: corrections (which hold keys) are readable by the manager only;
+  students still read no key (pgTAP, API). Students see only that a question was corrected
+  and when.
+- ☑ Re-grading uses the same grader as live answers, on the server, with the privileged
+  module after the manager's checks; it takes only the item id, never a user id.
+
 ### Rate limiting — Phases 1 & 4
 
 - ☐ Auth endpoints: Supabase Auth's built-in limits (tightened), plus CAPTCHA

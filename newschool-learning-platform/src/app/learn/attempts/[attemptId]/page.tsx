@@ -1,6 +1,6 @@
 import type { Metadata, Route } from 'next';
 import { notFound } from 'next/navigation';
-import { getTranslations } from 'next-intl/server';
+import { getFormatter, getTranslations } from 'next-intl/server';
 import { z } from 'zod';
 import { isAutoGraded } from '@/content/items';
 import { ActivityPlayer } from '@/content/player/ActivityPlayer';
@@ -65,14 +65,14 @@ export default async function AttemptPage({ params }: { params: Promise<{ attemp
           }))}
         />
       ) : (
-        <Results attempt={attempt} />
+        <Results attempt={attempt} timeZone={user.timezone} />
       )}
     </article>
   );
 }
 
-async function Results({ attempt }: { attempt: AttemptView }) {
-  const t = await getTranslations('activity');
+async function Results({ attempt, timeZone }: { attempt: AttemptView; timeZone: string }) {
+  const [t, format] = await Promise.all([getTranslations('activity'), getFormatter()]);
   const { activity, state } = attempt;
   const graded = activity.items.filter((i) => i.item && isAutoGraded(i.item.type));
   const rightFirstTime = graded.filter((i) => {
@@ -101,10 +101,22 @@ async function Results({ attempt }: { attempt: AttemptView }) {
       <ol className="divide-y divide-border rounded-lg border border-border bg-surface">
         {activity.items.map((entry, i) => {
           const status = state.items[entry.rawId]?.status ?? 'skipped';
+          // Re-checked after its answer was corrected (ADR-041).
+          const corrected =
+            entry.correctedAt && state.items[entry.rawId] ? entry.correctedAt : null;
           return (
-            <li key={entry.rawId} className="flex items-center justify-between gap-3 px-4 py-3">
-              <span>{t('results.item', { n: i + 1 })}</span>
-              <Badge tone={tone[status]}>{t(`results.status.${status}`)}</Badge>
+            <li key={entry.rawId} className="flex flex-col gap-1 px-4 py-3">
+              <span className="flex items-center justify-between gap-3">
+                <span>{t('results.item', { n: i + 1 })}</span>
+                <Badge tone={tone[status]}>{t(`results.status.${status}`)}</Badge>
+              </span>
+              {corrected ? (
+                <span className="text-sm text-muted">
+                  {t('results.corrected', {
+                    date: format.dateTime(new Date(corrected), { dateStyle: 'medium', timeZone }),
+                  })}
+                </span>
+              ) : null}
             </li>
           );
         })}

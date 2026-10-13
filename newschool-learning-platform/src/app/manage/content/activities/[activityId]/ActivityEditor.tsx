@@ -13,9 +13,11 @@ import {
 import { NotebookView } from '@/content/render/NotebookView';
 import { solutionOf } from '@/domain/grading/solution';
 import type { EditorState } from '@/server/actions/cms';
+import type { CorrectableItem } from '@/server/queries/cms';
 import { Alert } from '@/ui/Alert';
 import { Button } from '@/ui/Button';
 import { Badge } from '@/ui/Card';
+import { CorrectAnswer, type CorrectionActions } from './CorrectAnswer';
 import { ItemListEditor } from './ItemListEditor';
 
 const initial: EditorState = { status: 'idle' };
@@ -27,7 +29,9 @@ const initial: EditorState = { status: 'idle' };
  * have answered are marked: their options and answers are locked (the server
  * and the database refuse such changes). `saveAction` is the area's own save
  * (the manager's in /manage, the teacher's or the office's for their
- * exercises, ADR-038), each with its own guard.
+ * exercises, ADR-038), each with its own guard. `correction` is given only
+ * on the pedagogical manager's page: "Correct the answer" on answered
+ * questions (ADR-041).
  */
 export function ActivityEditor({
   activityId,
@@ -37,6 +41,7 @@ export function ActivityEditor({
   courseLang,
   answered,
   saveAction,
+  correction,
 }: {
   activityId: string;
   activitySlug: string;
@@ -45,6 +50,14 @@ export function ActivityEditor({
   courseLang: string;
   answered: Record<string, number>;
   saveAction: (prev: EditorState, formData: FormData) => Promise<EditorState>;
+  correction?: {
+    items: Record<string, CorrectableItem>;
+    actions: CorrectionActions;
+    /** The mistake report being answered, if the manager came from one. */
+    reportId: string | null;
+    /** The question to open with its correction form. */
+    openSlug: string | null;
+  };
 }) {
   const t = useTranslations('cms.activity');
   const ts = useTranslations('cms.section');
@@ -54,6 +67,14 @@ export function ActivityEditor({
     () => yamlToActivityDoc(yaml) ?? { instructions: [], items: [] },
   );
   const [text, setText] = useState(yaml);
+  // A newer saved version (after a save or an answer correction) replaces
+  // what the editor holds, so it never saves over a correction.
+  const [shownYaml, setShownYaml] = useState(yaml);
+  if (yaml !== shownYaml) {
+    setShownYaml(yaml);
+    setDoc(yamlToActivityDoc(yaml) ?? { instructions: [], items: [] });
+    setText(yaml);
+  }
   const [switchProblem, setSwitchProblem] = useState(false);
   const [state, action, pending] = useActionState(saveAction, initial);
   const deferredText = useDeferredValue(text);
@@ -116,7 +137,29 @@ export function ActivityEditor({
         {switchProblem ? <Alert tone="error">{tf('cannotSwitch')}</Alert> : null}
 
         {mode === 'form' ? (
-          <ItemListEditor doc={doc} onChange={setDoc} problems={formProblems} answered={answered} />
+          <ItemListEditor
+            doc={doc}
+            onChange={setDoc}
+            problems={formProblems}
+            answered={answered}
+            initiallyOpen={correction?.openSlug ?? null}
+            renderCorrection={
+              correction
+                ? (id, n) => {
+                    const item = correction.items[id];
+                    return item ? (
+                      <CorrectAnswer
+                        item={item}
+                        n={n}
+                        actions={correction.actions}
+                        reportId={correction.openSlug === id ? correction.reportId : null}
+                        startOpen={correction.openSlug === id}
+                      />
+                    ) : null;
+                  }
+                : undefined
+            }
+          />
         ) : (
           <>
             <label htmlFor="activity-yaml" className="font-semibold">

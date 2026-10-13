@@ -22,6 +22,10 @@ export type ContentReport = {
   activity: { id: string; title: string } | null;
   /** Position of the question in its exercise (1-based), when a question was reported. */
   question: number | null;
+  /** The reported question's id, when a question was reported. */
+  itemId: string | null;
+  /** The answer correction made for this report (manager only, ADR-041). */
+  correction: { at: string; reason: string } | null;
   section: { id: string; title: string; kind: Database['public']['Enums']['book_kind'] } | null;
 };
 
@@ -30,13 +34,14 @@ export async function listReports(filter: ReportStatus | 'all'): Promise<Content
   let query = supabase
     .from('content_reports')
     .select(
-      `id, status, message, suggested_answer, created_at, resolved_at, course_id, activity_id, book_section_id,
+      `id, status, message, suggested_answer, created_at, resolved_at, course_id, activity_id, item_id, book_section_id,
        course:courses!content_reports_course_id_fkey ( id, title ),
        activity:activities!content_reports_activity_id_course_id_fkey ( id, title ),
        item:activity_items!content_reports_item_id_course_id_fkey ( position ),
        section:book_sections!content_reports_book_section_id_course_id_fkey ( id, title, book:books ( kind ) ),
        reporter:profiles!content_reports_reporter_id_fkey ( display_name ),
-       resolver:profiles!content_reports_resolved_by_fkey ( display_name )`,
+       resolver:profiles!content_reports_resolved_by_fkey ( display_name ),
+       corrections:item_corrections!item_corrections_report_id_fkey ( corrected_at, reason )`,
     )
     .order('created_at', { ascending: false })
     .limit(500);
@@ -55,6 +60,14 @@ export async function listReports(filter: ReportStatus | 'all'): Promise<Content
     course: { id: r.course_id, title: r.course?.title ?? '' },
     activity: r.activity_id ? { id: r.activity_id, title: r.activity?.title ?? '' } : null,
     question: r.item ? r.item.position : null,
+    itemId: r.item_id,
+    // RLS shows corrections to the manager only; teachers get none.
+    correction: r.corrections.length
+      ? {
+          at: r.corrections[r.corrections.length - 1]!.corrected_at,
+          reason: r.corrections[r.corrections.length - 1]!.reason,
+        }
+      : null,
     section: r.book_section_id
       ? {
           id: r.book_section_id,
