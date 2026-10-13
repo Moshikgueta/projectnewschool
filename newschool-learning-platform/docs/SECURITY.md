@@ -236,7 +236,22 @@ nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Polic
 - ☑ Re-grading uses the same grader as live answers, on the server, with the privileged
   module after the manager's checks; it takes only the item id, never a user id.
 
-### Rate limiting — Phases 1 & 4
+### RLS performance rewrite (migration `…2200_rls_performance`)
+
+- ☑ **Policies unchanged in meaning.** To keep pages fast at 10,000 students
+  ([PERFORMANCE.md](PERFORMANCE.md)), 43 read policies (and the read side of `FOR ALL`
+  policies) now ask "is this row's group / course / student / class among the caller's"
+  against a set computed once per query (`app.taught_group_ids()`,
+  `app.taught_student_courses()`, `app.readable_course_ids()`, …) instead of calling a
+  helper per row, and bare `app.is_office()` / `app.is_staff()` are wrapped in
+  `(select …)`. Each set helper restates its per-row helper's predicate verbatim, with the
+  same `SECURITY DEFINER`, `STABLE` and empty `search_path`; it lives in the private `app`
+  schema (not callable through the API, no `anon` execute). No policy was widened or
+  narrowed and no write policy changed. Evidence: the pgTAP suite passes unchanged; every
+  benchmarked query returns the same rows for the same user before and after; and
+  `scripts/perf/policy-equivalence.sql` compares 14 users (students, teachers, the office
+  and the manager with and without MFA, the admin) × all 53 tables and views under the
+  old and the new policies in one transaction: 0 differences.
 
 - ☐ Auth endpoints: Supabase Auth's built-in limits (tightened), plus CAPTCHA
   (Cloudflare Turnstile) on login/reset if abuse appears.

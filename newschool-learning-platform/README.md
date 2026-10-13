@@ -29,6 +29,7 @@ to run it.
 | [docs/CONTENT-MODEL.md](docs/CONTENT-MODEL.md)     | Cycles model, block documents, exercises, migration of existing materials  |
 | [docs/CONTENT-AUDIT.md](docs/CONTENT-AUDIT.md)     | What the existing notebooks contain and what that changes                  |
 | [docs/ROADMAP.md](docs/ROADMAP.md)                 | MVP, phases, decisions needed, Phase 0 checklist, TODO                     |
+| [docs/PERFORMANCE.md](docs/PERFORMANCE.md)         | RLS at school scale: load data, benchmark, results, how to re-run          |
 | [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)           | GitHub org setup, environments, CI/CD, env vars, backups, costs            |
 | [docs/GO-LIVE.md](docs/GO-LIVE.md)                 | Step by step for launch day: Supabase, Vercel, content import, first users |
 

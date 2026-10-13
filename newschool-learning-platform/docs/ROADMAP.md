@@ -313,6 +313,10 @@ in [GO-LIVE.md](GO-LIVE.md).
 - External RLS review; OWASP ASVS L2 pass; WCAG 2.2 AA audit with real assistive
   technology; load test at 10× expected users; restore drill; pre-production checklist
   in SECURITY.md §5.
+- Load test: the data-volume half is done (10,000 students, 3.2 million answers; every
+  hot query under 50 ms, [PERFORMANCE.md](PERFORMANCE.md)); still to do: many concurrent
+  sessions against the hosted plan. Also from that work: pages that read more than
+  PostgREST's 1,000-row cap need paging (PERFORMANCE.md §8).
 
 ### Parallel track — Content
 
@@ -404,7 +408,10 @@ Docs. Then transfer the repository into the New School organization.
 **Technical spikes (time-boxed, throwaway)**
 
 - [ ] React Aria vs Radix for RTL + accessible matching/reorder interactions
-- [ ] RLS performance with helper functions on a seeded 10k-student dataset
+- [x] RLS performance with helper functions on a seeded 10k-student dataset — done 2026-10-13
+      ([PERFORMANCE.md](PERFORMANCE.md)): 27 of 96 hot queries were over 50 ms (worst 4.9 s);
+      after migration `…2200_rls_performance` (same rules, evaluated once per query) all are
+      under 50 ms. Repeatable: `pnpm perf:seed`, `pnpm perf:bench`
 - [ ] `@supabase/ssr` with HttpOnly cookies and server-only data access
 
 ## Running TODO

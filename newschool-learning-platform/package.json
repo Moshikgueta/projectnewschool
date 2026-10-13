@@ -29,7 +29,11 @@
     "db:start": "supabase start",
     "db:reset": "supabase db reset",
     "db:types": "supabase gen types typescript --local > src/server/db.types.ts.tmp && mv src/server/db.types.ts.tmp src/server/db.types.ts || (rm -f src/server/db.types.ts.tmp; exit 1)",
-    "content:review-sheet": "tsx scripts/review-sheet.ts"
+    "content:review-sheet": "tsx scripts/review-sheet.ts",
+    "perf:seed": "node scripts/perf/perf.mjs seed",
+    "perf:bench": "node scripts/perf/perf.mjs bench",
+    "perf:pages": "vitest run --config scripts/perf/vitest.config.ts scripts/perf/pages.perf.ts",
+    "perf:regrade": "vitest run --config scripts/perf/vitest.config.ts scripts/perf/regrade.perf.ts"
   },
   "dependencies": {
     "@phosphor-icons/react": "2.1.10",

@@ -109,6 +109,25 @@ export type RegradedAttempt = {
 const round = (n: number) => Math.round(n * 100) / 100;
 
 /**
+ * Same JSON value, whatever the order of object keys. The state comes back
+ * from the database's jsonb with its keys in jsonb's own order, so comparing
+ * JSON.stringify output would see every stored attempt as changed.
+ */
+function sameJson(a: unknown, b: unknown): boolean {
+  if (a === b) return true;
+  if (typeof a !== 'object' || typeof b !== 'object' || a === null || b === null) return false;
+  if (Array.isArray(a) || Array.isArray(b)) {
+    if (!Array.isArray(a) || !Array.isArray(b) || a.length !== b.length) return false;
+    return a.every((x, i) => sameJson(x, b[i]));
+  }
+  const ra = a as Record<string, unknown>;
+  const rb = b as Record<string, unknown>;
+  const keys = (r: Record<string, unknown>) => Object.keys(r).filter((k) => r[k] !== undefined);
+  const ka = keys(ra);
+  return ka.length === keys(rb).length && ka.every((k) => sameJson(ra[k], rb[k]));
+}
+
+/**
  * An attempt with one item's progress rebuilt from its re-graded tries. A
  * finished attempt's score moves by the change in that item's first-try
  * score (the maximum does not change: the item and its points are the same).
@@ -133,9 +152,7 @@ export function regradeAttempt(
     attempt.status === 'submitted' && attempt.score !== null
       ? round(Math.max(0, Number(attempt.score) - before + after))
       : attempt.score;
-  const changed =
-    score !== attempt.score ||
-    JSON.stringify(previous ?? null) !== JSON.stringify(items[itemId] ?? null);
+  const changed = score !== attempt.score || !sameJson(previous ?? null, items[itemId] ?? null);
   return { id: attempt.id, state: next, score, before, after, changed };
 }
 

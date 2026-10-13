@@ -210,6 +210,32 @@ describe('regradeAttempt', () => {
     expect(twice.changed).toBe(false);
     expect(twice.score).toBe(1);
   });
+
+  it('is idempotent on state read back from the database (jsonb orders keys its own way)', () => {
+    // jsonb stores object keys shortest first, then bytewise.
+    const asJsonb = (v: unknown): unknown =>
+      Array.isArray(v)
+        ? v.map(asJsonb)
+        : v && typeof v === 'object'
+          ? Object.fromEntries(
+              Object.entries(v)
+                .sort(([a], [b]) => a.length - b.length || (a < b ? -1 : a > b ? 1 : 0))
+                .map(([k, x]) => [k, asJsonb(x)]),
+            )
+          : v;
+    const { state, responses } = played(mc('o1'), 'a', [
+      { optionIds: ['o2'] },
+      { optionIds: ['o1'] },
+    ]);
+    const stored = asJsonb(state) as AttemptState;
+    expect(JSON.stringify(stored)).not.toBe(JSON.stringify(state));
+    const again = regradeAttempt(
+      { id: 'a', status: 'submitted', score: 0, maxScore: 1, state: stored },
+      'item',
+      rows(mc('o1'), responses),
+    );
+    expect(again.changed).toBe(false);
+  });
 });
 
 describe('correctionEffect', () => {

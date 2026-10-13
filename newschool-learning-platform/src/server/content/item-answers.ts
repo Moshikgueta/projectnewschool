@@ -65,16 +65,20 @@ function toStoredResponse(r: ResponseRow): StoredResponse {
 const RESPONSE_COLUMNS =
   'id, attempt_id, user_id, answer, is_correct, score, feedback_code, try_no, created_at';
 
-/** Every response to an item that the client may read (all pages); optionally one attempt's. */
+/**
+ * Every response to an item that the client may read (all pages); optionally
+ * only one attempt's, or only those of a list of attempts.
+ */
 export async function loadItemResponses(
   db: Client,
   itemId: string,
-  attemptId?: string,
+  attempts?: string | string[],
 ): Promise<StoredResponse[]> {
   const out: StoredResponse[] = [];
   for (let from = 0; ; from += PAGE) {
     let query = db.from('responses').select(RESPONSE_COLUMNS).eq('item_id', itemId);
-    if (attemptId) query = query.eq('attempt_id', attemptId);
+    if (typeof attempts === 'string') query = query.eq('attempt_id', attempts);
+    else if (attempts) query = query.in('attempt_id', attempts);
     const { data, error } = await query.order('id').range(from, from + PAGE - 1);
     if (error) throw new Error(`Could not load answers: ${error.message}`);
     out.push(...(data as ResponseRow[]).map(toStoredResponse));

@@ -137,6 +137,17 @@ Helper functions (`SECURITY DEFINER`, `STABLE`, `search_path = ''`), called as
 | `app.teaches_group(group_id)`                          | row in `group_teachers` for the caller                                                                |
 | `app.teaches_student_in_course(student_id, course_id)` | caller teaches a group of `course_id` in which `student_id` is enrolled                               |
 
+At scale a helper that takes a row's column (`app.teaches_group(group_id)`) cannot be
+evaluated once, so the read policies use a set-returning twin instead —
+`group_id in (select app.taught_group_ids())` — computed once per query and probed per
+row (migration `…2200_rls_performance`, [PERFORMANCE.md](PERFORMANCE.md)). Each twin
+restates its helper's predicate: `readable_course_ids` (`can_read_course` minus the
+manager), `taught_course_ids`, `taught_group_ids`, `member_group_ids`,
+`received_assignment_ids`, `taught_assignment_ids`, `own_assignment_ids`,
+`taught_student_courses`, `taught_session_ids`, `taught_student_ids`, `my_teacher_ids`,
+`private_student_ids`, `private_teacher_ids`, `student_or_teacher_ids`. Write policies
+still call the per-row helpers. New read policies should follow the same pattern.
+
 Policies (read = `SELECT`; writes are listed separately):
 
 | Table                                     | Student                                         | Teacher                                      | Ped. manager            | Admin              |
