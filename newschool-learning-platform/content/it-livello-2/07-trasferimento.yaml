@@ -1,0 +1,692 @@
+# Cycle "Trasferimento", converted from the Italian level 2 (conversational) digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-livello-2
+slug: trasferimento
+title: Trasferimento
+goal: Parlare di un trasferimento con il futuro semplice e socializzare in una città nuova.
+position: 7
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Futuro semplice" and "Socializzare") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules, the activity examples and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Summary, futuro semplice: the notebook says (in Hebrew) "you usually remove the
+    verb ending and add new endings", which is vague and not quite right. Rewritten
+    as an Italian rule: drop the final -e of the infinitive (-are verbs change the a to
+    e: parlare → parler-) and add -ò, -ai, -à, -emo, -ete, -anno. Added: the spelling
+    of -care / -gare (cercherò) and -ciare / -giare / -iare (mangerò, studierò), a full
+    conjugation table (parlare, vivere, partire), and the irregular futures the cycle
+    uses (sarò, avrò, farò, andrò, vivrò, dovrò, potrò). "Vivere → vivrò" in the
+    notebook's example table is irregular and is now marked as such. Please confirm.
+  - >-
+    Summary, "Verbi riflessivi": the table of trasferirsi had only io / tu / lui; the
+    plural forms (ci trasferiamo, vi trasferite, si trasferiscono) and a futuro column
+    were ADDED. Summary, "Dare consigli": "Ti consiglio di + infinito" (Ti consiglio di
+    usare la metropolitana) and "Ci sono… / C'è…?" were ADDED, since the workbook uses
+    them. The emotions table now notes the feminine form (emozionata, nervosa).
+  - >-
+    Corrections: Activity 1 example "studierò meglio il italiano" → "l'italiano", and
+    since the example is about moving to Barcelona, "studierò meglio lo spagnolo"
+    (the sentence was copied from the Spanish notebook); Activity 3 list "Muovo
+    lavoro" → "Nuovo lavoro"; Activity 4 list "Cita sociale" (Spanish "cita") → "Vita
+    sociale"; the warm-up frame "Sì, voglio trasferirmi perché…" is kept, "Mi
+    mancheranno… / Mi mancherà…" now has "(plurale) / (singolare)".
+  - >-
+    The gamma.app slide link ("מצגת השיעור") is not on the link allow-list and was left
+    out; see the teacher note. The Quizlet link is kept without "?new" (the URL itself
+    says "transferimento"; that is Quizlet's slug, not a typo in the course).
+  - >-
+    Written homework (Hebrew "שיעורי בית קלאסיים", parts 1–4) is kept in the homework
+    section as answer boxes, before the Mori messages; the answer key of part 1 is in
+    a teacher note. The Hebrew translation sentences are kept in Hebrew. The five Mori
+    parts are kept as five messages; the Hebrew instructions for the student ("the
+    student must…") are translated into Italian as the intro of each message.
+  - >-
+    Vocabulary: the verb items list three future forms but gloss the infinitive (e.g.
+    "Mi trasferirò, ti trasferirai, si trasferirà – לעבור דירה"). The infinitive was
+    added in brackets to each term so the gloss matches; the Hebrew glosses are
+    unchanged. Please confirm.
+  - >-
+    The source gives no activity times, so no minutes are recorded. The "Risposta dello
+    studente 1/2/3" lines are replaced by the optional answer boxes (decision C2).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: trasferimento-classe
+    title: 'In classe: Trasferimento'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Trasferimento
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Futuro semplice
+            description: '*Mi trasferirò, cercherò, vivrò*: parlare di piani e cambiamenti futuri'
+          - name: Socializzare
+            description: 'Chiedere informazioni, aiuto e consigli in una città nuova: *Quali quartieri consigli?*'
+      - id: quizlet
+        type: externalLink
+        label: Trasferimento su Quizlet
+        url: https://quizlet.com/br/1188735778/transferimento-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro introduttivo
+      - id: intro
+        type: sentenceFrame
+        frame: Io sono ___. L'anno prossimo ___.
+        example: Io sono Dana. L'anno prossimo andrò a Parigi.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di preparazione
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Vuoi trasferirti in futuro? Perché o perché no?
+            frame: Sì, voglio trasferirmi perché… / No, preferisco restare dove vivo adesso perché…
+          - question: In quale città o paese ti trasferirai? Perché scegli questo posto?
+            frame: Mi trasferirò a ___ perché…
+          - question: Con chi ti trasferirai e com'è il vostro rapporto?
+            frame: Mi trasferirò con ___. Andiamo molto d'accordo perché…
+          - question: Quando pensi di trasferirti? Cosa devi fare prima?
+            frame: Penso di trasferirmi… Prima dovrò…
+          - question: Quali saranno le difficoltà più grandi del trasferimento?
+            frame: La difficoltà più grande sarà…
+          - question: Cosa cambierà nella tua vita dopo il trasferimento?
+            frame: Dopo il trasferimento avrò… / La mia vita sarà…
+          - question: Quali vantaggi avrà la tua nuova città?
+            frame: La mia nuova città avrà… / Ci saranno…
+          - question: Cosa ti mancherà del posto dove vivi adesso?
+            frame: Mi mancheranno… (plurale) / Mi mancherà… (singolare)
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Finalmente mi trasferisco!'
+        skills: [Socializzare, Futuro semplice]
+        steps:
+          - La classe si divide in due gruppi.
+          - Ogni gruppo sceglie una città, un paese e il motivo del trasferimento.
+          - 'Ogni gruppo scrive un messaggio a un amico. Nel messaggio: spiega perché vi trasferite, descrivi le vostre emozioni, parla dei preparativi e chiedi aiuto o consigli.'
+          - Leggete il messaggio alla classe.
+        example: |-
+          *Ciao! Ho finalmente deciso di trasferirmi a Barcellona perché voglio cambiare vita e trovare nuove opportunità.*
+          *Sono molto emozionato ma anche un po' nervoso.*
+          *Prima di partire cercherò un appartamento e studierò meglio lo spagnolo.*
+          *Puoi consigliarmi dei quartieri tranquilli?*
+        wordBank: [emozionato, nervoso, felice, ansioso, triste]
+      - id: act1-message
+        type: discussionQuestions
+        title: Il nostro messaggio
+        items:
+          - question: Ciao! Ho finalmente deciso di trasferirmi a ___ perché ___.
+          - question: Sono molto ___ ma anche un po' ___.
+          - question: Prima di partire ___.
+          - question: Puoi consigliarmi ___?
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Il mio piano in 10 passi'
+        skills: [Futuro semplice]
+        steps:
+          - 'Crea un piano futuro in 10 passi. Il passo 1 è la tua situazione attuale; il passo 10 è il tuo obiettivo finale già raggiunto.'
+          - Usa il futuro semplice, le espressioni di tempo e le tue motivazioni personali.
+          - Spiega il tuo piano alla classe.
+        example: |-
+          *1. Adesso vivo in Brasile.*
+          *2. Studierò italiano ogni giorno.*
+          *3. Cercherò lavoro online.*
+          *4. Risparmierò più soldi.*
+          *5. Parlerò con persone italiane.*
+          *6. Organizzerò i documenti.*
+          *7. Cercherò un appartamento.*
+          *8. Comprerò il biglietto.*
+          *9. Mi trasferirò a Milano.*
+          *10. Vivrò felicemente in Italia.*
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Mi sono appena trasferito!'
+        skills: [Socializzare]
+        steps:
+          - Immagina di esserti trasferito / trasferita da poco in una nuova città dove non conosci nessuno.
+          - "Ricevi una situazione dall'insegnante: nuovo lavoro, università, trasferimento con la famiglia, cambio di vita, studio della lingua o nuova relazione."
+          - 'Scrivi un messaggio realistico nel «gruppo online della città»: presentati, spiega perché ti sei trasferito / trasferita, descrivi un problema o una difficoltà e fai almeno 3 domande pratiche. Usa un tono naturale e amichevole.'
+          - Gli altri studenti rispondono come abitanti della città, danno consigli pratici e possono fare altre domande.
+          - Alla fine decidi quali consigli seguirai e spiega perché.
+        example: |-
+          *Ciao a tutti! Mi chiamo Luca e mi sono appena trasferito a Berlino per lavoro.*
+          *Non conosco ancora bene la città e sto cercando di organizzare la mia nuova vita qui.*
+          *Quali quartieri consigliate per vivere senza spendere troppo?*
+          *È facile usare i mezzi pubblici?*
+          *Dove posso conoscere nuove persone della mia età?*
+          *Ci sono posti interessanti per uscire la sera?*
+      - id: act3-message
+        type: discussionQuestions
+        title: Il mio messaggio nel gruppo della città
+        items:
+          - question: Ciao a tutti! Mi chiamo ___ e mi sono appena trasferito / trasferita a ___ per ___.
+          - question: Il mio problema è che ___.
+          - question: Domanda 1
+            frame: Quali quartieri consigliate…? / Dove posso…?
+          - question: Domanda 2
+            frame: È facile…? / Ci sono…?
+          - question: Domanda 3
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Un giorno nella mia nuova vita'
+        skills: [Futuro semplice]
+        steps:
+          - Scegli una città dove trasferirti.
+          - 'Descrivi una giornata tipica della tua vita futura: routine quotidiana, lavoro o studio, trasporto, tempo libero, vita sociale.'
+          - Alla fine la classe ti fa altre domande.
+        example: |-
+          *Mi trasferirò a Parigi.*
+          *La mattina prenderò la metropolitana per andare al lavoro.*
+          *Lavorerò in un ufficio internazionale nel centro della città.*
+          *Durante la pausa pranzo mangerò in piccoli ristoranti francesi.*
+          *La sera uscirò con gli amici oppure andrò al cinema.*
+          *Nel fine settimana visiterò nuovi posti della città.*
+      - id: act4-frames
+        type: discussionQuestions
+        title: La mia giornata nella nuova città
+        items:
+          - question: Mi trasferirò a ___.
+          - question: La mattina ___.
+          - question: Durante la pausa pranzo ___.
+          - question: La sera ___.
+          - question: Nel fine settimana ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Futuro semplice** (domande di preparazione,
+          Attività 2 e Attività 4) e **Socializzare** (domande di preparazione, Attività 1
+          e Attività 3). La presentazione del quaderno è su gamma.app, che non è nella
+          piattaforma: se la usi, condividila tu sullo schermo.
+      - id: n-intro
+        anchor: intro
+        text: Fai prima il tuo esempio e poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act2
+        anchor: act2
+        text: Ogni studente crea il proprio piano. L'esempio è solo un modello; chiedi di aggiungere espressioni di tempo (l'anno prossimo, tra due anni, prima di…).
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Dai a ogni studente una situazione diversa (nuovo lavoro, università,
+          trasferimento con la famiglia, cambio di vita, studio della lingua, nuova
+          relazione). Obiettivo linguistico: fare domande pratiche, chiedere aiuto, dare
+          consigli e usare il futuro e il presente in modo naturale.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: trasferimento-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-futuro
+        type: ruleSummary
+        skill: Futuro semplice
+        rules:
+          - text: 'Usiamo il **futuro semplice** per parlare di piani, obiettivi, previsioni e cambiamenti futuri.'
+            examples:
+              [Mi trasferirò a Milano., Cercherò lavoro online., Vivrò felicemente in Italia.]
+          - text: "Come si forma: togliamo la **-e** finale dell'infinito (nei verbi in **-are** la *a* diventa *e*) e aggiungiamo **-ò, -ai, -à, -emo, -ete, -anno**."
+            examples:
+              [
+                'parlare → parler- → parlerò',
+                'scrivere → scriver- → scriverò',
+                'partire → partir- → partirò',
+              ]
+          - text: "Attenzione all'ortografia: i verbi in **-care / -gare** aggiungono una *h*; i verbi in **-ciare / -giare / -iare** perdono la *i*."
+            examples:
+              [
+                'cercare → cercherò',
+                'pagare → pagherò',
+                'mangiare → mangerò',
+                'studiare → studierò',
+                'cambiare → cambierò',
+              ]
+          - text: 'Alcuni verbi sono **irregolari**, ma le desinenze sono le stesse.'
+            examples:
+              [
+                'essere → sarò',
+                'avere → avrò',
+                'fare → farò',
+                'andare → andrò',
+                'vivere → vivrò',
+                'dovere → dovrò',
+                'potere → potrò',
+              ]
+      - id: futuro-table
+        type: table
+        caption: Il futuro semplice
+        header: [Pronome, Desinenza, parlare, vivere (irregolare), partire]
+        rows:
+          - [io, -ò, parlerò, vivrò, partirò]
+          - [tu, -ai, parlerai, vivrai, partirai]
+          - [lui / lei, -à, parlerà, vivrà, partirà]
+          - [noi, -emo, parleremo, vivremo, partiremo]
+          - [voi, -ete, parlerete, vivrete, partirete]
+          - [loro, -anno, parleranno, vivranno, partiranno]
+      - id: time-table
+        type: table
+        caption: Parole di tempo
+        header: [Italiano, Ebraico]
+        rows:
+          - [l'anno prossimo, בשנה הבאה]
+          - [in futuro, בעתיד]
+          - [prima di…, לפני ש…]
+          - [dopo, אחרי]
+          - [ogni giorno, כל יום]
+          - [tra due anni, בעוד שנתיים]
+      - id: rules-tempo
+        type: ruleSummary
+        skill: Futuro semplice
+        rules:
+          - text: Le parole di tempo aiutano a raccontare un piano in ordine.
+            examples:
+              [
+                Prima di trasferirmi studierò italiano.,
+                Dopo il trasferimento avrò più tempo libero.,
+              ]
+          - text: '**Trasferirsi** è un verbo riflessivo: il pronome (*mi, ti, si, ci, vi, si*) va prima del verbo.'
+            examples: [Mi trasferisco a Roma., L'anno prossimo mi trasferirò a Roma.]
+      - id: riflessivi-table
+        type: table
+        caption: Trasferirsi
+        header: [Pronome, Presente, Futuro]
+        rows:
+          - [io, mi trasferisco, mi trasferirò]
+          - [tu, ti trasferisci, ti trasferirai]
+          - [lui / lei, si trasferisce, si trasferirà]
+          - [noi, ci trasferiamo, ci trasferiremo]
+          - [voi, vi trasferite, vi trasferirete]
+          - [loro, si trasferiscono, si trasferiranno]
+      - id: rules-socializzare
+        type: ruleSummary
+        skill: Socializzare
+        rules:
+          - text: 'Per dare una ragione usiamo **perché**.'
+            examples:
+              [
+                Mi trasferirò a Barcellona perché voglio cambiare vita.,
+                Studio italiano perché voglio vivere in Italia.,
+              ]
+          - text: In una città nuova facciamo domande pratiche per chiedere informazioni.
+            examples:
+              - Quali quartieri consigli?
+              - Dove posso conoscere persone nuove?
+              - È facile usare i mezzi pubblici?
+              - Ci sono posti interessanti?
+          - text: "Per dire che una cosa esiste usiamo **c'è** (singolare) e **ci sono** (plurale)."
+            examples:
+              [C'è una metropolitana vicino a casa?, Ci sono posti interessanti per uscire la sera?]
+          - text: 'Per dare consigli: **Ti consiglio** + nome, **Ti consiglio di** + infinito, **Puoi** + infinito, **Dovresti** + infinito.'
+            examples:
+              - Ti consiglio questo quartiere.
+              - Ti consiglio di usare la metropolitana.
+              - Puoi andare a un corso di lingua.
+              - Dovresti usare la metropolitana.
+      - id: emotions-table
+        type: table
+        caption: Emozioni
+        header: [Maschile, Femminile, Ebraico]
+        rows:
+          - [emozionato, emozionata, מתרגש / מתרגשת]
+          - [nervoso, nervosa, לחוץ / לחוצה]
+          - [felice, felice, שמח / שמחה]
+          - [ansioso, ansiosa, 'חרד / חרדה, מודאג / מודאגת']
+          - [triste, triste, עצוב / עצובה]
+      - id: emotions-example
+        type: callout
+        tone: info
+        title: Esempio
+        text: '*Sono emozionato ma anche nervoso.* / *Sono emozionata ma anche nervosa.*'
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con la classe e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: trasferimento-compiti
+    title: Compiti
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti
+      - id: part1-title
+        type: heading
+        level: 3
+        text: 'Parte 1: Completa le frasi con il futuro semplice'
+      - id: part1
+        type: discussionQuestions
+        items:
+          - question: L'anno prossimo io ___ (trasferirsi) in Italia.
+          - question: Prima del trasferimento ___ (studiare) italiano ogni giorno.
+          - question: Noi ___ (cercare) un appartamento in centro.
+          - question: Lui ___ (lavorare) in una nuova azienda.
+          - question: Dopo il trasferimento voi ___ (conoscere) nuove persone.
+      - id: part2-title
+        type: heading
+        level: 3
+        text: 'Parte 2: Rispondi con frasi complete'
+      - id: part2
+        type: discussionQuestions
+        items:
+          - question: Vuoi trasferirti in futuro? Perché?
+          - question: In quale città ti trasferirai?
+          - question: Cosa farai prima del trasferimento?
+          - question: Quale sarà la difficoltà più grande?
+          - question: Cosa migliorerà nella tua vita?
+      - id: part3-title
+        type: heading
+        level: 3
+        text: "Parte 3: Traduci dall'ebraico all'italiano"
+      - id: part3
+        type: discussionQuestions
+        items:
+          - question: אני אעבור לרומא בשנה הבאה.
+          - question: לפני המעבר אני אחפש עבודה.
+          - question: אני אלמד איטלקית כל יום.
+          - question: איפה אפשר להכיר אנשים חדשים?
+          - question: אילו שכונות אתה ממליץ?
+      - id: part4-title
+        type: heading
+        level: 3
+        text: 'Parte 4: Scrittura'
+      - id: part4
+        type: reflection
+        prompt: >-
+          Scrivi un paragrafo di 6–8 frasi: **«La mia nuova vita in un'altra città»**. Usa
+          il futuro semplice, le emozioni, le ragioni (*perché*) e qualche domanda pratica.
+      - id: mori-title
+        type: heading
+        level: 3
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia un messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Parte 1: Conversazione sul trasferimento'
+        message: |-
+          Ciao Mori! Fammi domande sul mio futuro trasferimento. Usa il futuro semplice e correggi i miei errori. Per esempio:
+          Dove ti trasferirai?
+          Perché vuoi trasferirti?
+          Con chi vivrai?
+          Cosa farai prima del trasferimento?
+          Cosa cambierà nella tua vita?
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Parte 2: Simulazione, la nuova città'
+        message: >-
+          Ciao Mori! Facciamo una simulazione. Io sono appena arrivato / arrivata in una
+          nuova città e ho bisogno di informazioni pratiche. Consigliami dei quartieri,
+          spiegami i trasporti, suggeriscimi posti interessanti e fammi altre domande.
+          Correggi i miei errori.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Parte 3: Il mio piano in 10 passi'
+        intro: Spiega ogni passo, usa le parole di tempo e racconta i tuoi obiettivi personali.
+        message: Ciao Mori! Aiutami a creare il mio piano di trasferimento in 10 passi. Correggi il mio futuro semplice.
+      - id: mori-4
+        type: aiTutorPrompt
+        title: 'Parte 4: Scrittura guidata'
+        intro: Presentati, spiega perché ti sei trasferito / trasferita, fai almeno 3 domande e usa un tono naturale e amichevole.
+        message: Ciao Mori! Chiedimi di scrivere un messaggio in un gruppo online della mia nuova città. Correggi la grammatica e rendi il messaggio più naturale.
+      - id: mori-5
+        type: aiTutorPrompt
+        title: 'Parte 5: Parlare liberamente'
+        intro: 'Parla di lavoro, amici, routine, trasporti, hobby e obiettivi futuri.'
+        message: Ciao Mori! Fammi parlare per un minuto della mia vita futura nella nuova città. Interrompimi solo per correggere gli errori importanti.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+    teacherNotes:
+      - id: n-part1
+        anchor: part1
+        text: 'Soluzioni: 1. mi trasferirò; 2. studierò; 3. cercheremo; 4. lavorerà; 5. conoscerete.'
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: trasferimento-pratica
+    book: workbook
+    title: 'Pratica: Trasferimento'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-futuro
+        type: activity
+        activity: trasferimento-futuro
+      - id: ex-socializzare
+        type: activity
+        activity: trasferimento-socializzare
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: trasferimento-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole del trasferimento
+        glossLang: he
+        link: https://quizlet.com/br/1188735778/transferimento-flash-cards/
+        items: &trasferimento-words
+          - {
+              term: 'Mi trasferirò, ti trasferirai, si trasferirà (trasferirsi)',
+              gloss: לעבור דירה / לעבור מקום,
+            }
+          - { term: 'Risparmierò, risparmierai, risparmierà (risparmiare)', gloss: לחסוך }
+          - { term: 'Organizzerò, organizzerai, organizzerà (organizzare)', gloss: לארגן }
+          - { term: 'Conoscerò, conoscerai, conoscerà (conoscere)', gloss: להכיר }
+          - { term: 'Consiglierò, consiglierai, consiglierà (consigliare)', gloss: להמליץ }
+          - { term: 'Migliorerò, migliorerai, migliorerà (migliorare)', gloss: להשתפר / לשפר }
+          - {
+              term: 'Cambierò vita, cambierai vita, cambierà vita (cambiare vita)',
+              gloss: לשנות חיים,
+            }
+          - {
+              term: 'Cercherò lavoro, cercherai lavoro, cercherà lavoro (cercare lavoro)',
+              gloss: לחפש עבודה,
+            }
+          - { term: 'Farò amicizia, farai amicizia, farà amicizia (fare amicizia)', gloss: להתיידד }
+          - { term: 'Mi ambienterò, ti ambienterai, si ambienterà (ambientarsi)', gloss: להסתגל }
+          - {
+              term: 'Mi sistemerò, ti sistemerai, si sistemerà (sistemarsi)',
+              gloss: להתמקם / להסתדר,
+            }
+          - { term: 'Affronterò, affronterai, affronterà (affrontare)', gloss: להתמודד עם }
+          - { term: 'Mi abituerò, ti abituerai, si abituerà (abituarsi)', gloss: להתרגל }
+          - { term: 'Gestirò, gestirai, gestirà (gestire)', gloss: לנהל }
+          - { term: 'Realizzerò, realizzerai, realizzerà (realizzare)', gloss: להגשים / לממש }
+          - { term: Quartiere, gloss: שכונה }
+          - { term: Opportunità, gloss: הזדמנות }
+          - { term: Trasporto pubblico, gloss: תחבורה ציבורית }
+          - { term: Mezzi pubblici, gloss: אמצעי תחבורה ציבורית }
+          - { term: Routine quotidiana, gloss: שגרה יומית }
+          - { term: Relazione, gloss: מערכת יחסים }
+          - { term: Obiettivo, gloss: מטרה }
+          - { term: Situazione attuale, gloss: מצב נוכחי }
+          - { term: Vita futura, gloss: חיים עתידיים }
+          - { term: Difficoltà, gloss: קושי }
+          - { term: Cambiamento, gloss: שינוי }
+          - { term: Consiglio, gloss: עצה }
+          - { term: Esperienza, gloss: חוויה }
+          - { term: Vita sociale, gloss: חיי חברה }
+          - { term: Preparativi, gloss: הכנות }
+          - { term: Opportunità professionali, gloss: הזדמנויות מקצועיות }
+          - { term: Emozionato, gloss: מתרגש }
+          - { term: Ansioso, gloss: חרד / מודאג }
+          - { term: Nervoso, gloss: לחוץ }
+          - { term: Realistico, gloss: מציאותי }
+          - { term: Spontaneo, gloss: ספונטני }
+
+vocabulary:
+  - slug: trasferimento
+    title: Trasferimento
+    items: *trasferimento-words
+
+activities:
+  - slug: trasferimento-futuro
+    title: 'Futuro semplice: mi trasferirò, cercherò, vivrò'
+    minutes: 8
+    items:
+      - id: mi-trasferiro
+        type: multipleChoice
+        prompt: L'anno prossimo io ___ a Milano.
+        options:
+          - { text: mi trasferirò, correct: true }
+          - {
+              text: mi trasferirà,
+              feedback: 'La desinenza *-à* è per *lui / lei*. Per *io*: *mi trasferirò*.',
+            }
+          - {
+              text: mi sono trasferito,
+              feedback: "*Mi sono trasferito* è passato. *L'anno prossimo* è futuro: *mi trasferirò*.",
+            }
+      - id: studiero
+        type: fillBlank
+        prompt: Completa con il futuro di *studiare* (io).
+        text: Prima del trasferimento ___ italiano ogni giorno.
+        blanks: [[studierò, io studierò]]
+      - id: cercheremo
+        type: fillBlank
+        prompt: Completa con il futuro di *cercare*. Attenzione alla *h*!
+        text: Noi ___ un appartamento in centro.
+        blanks: [[cercheremo]]
+      - id: unisci-irregolari
+        type: matching
+        prompt: Unisci ogni verbo alla sua forma per *io* al futuro.
+        pairs:
+          - [parlare, parlerò]
+          - [vivere, vivrò]
+          - [partire, partirò]
+          - [essere, sarò]
+          - [avere, avrò]
+      - id: anno
+        type: trueFalse
+        prompt: 'Nel futuro semplice la desinenza per *loro* è *-anno*: *lavoreranno*.'
+        answer: true
+        feedback:
+          correct: Giusto! *Loro lavoreranno, vivranno, partiranno.*
+          incorrect: 'La desinenza per *loro* è *-anno*: *lavoreranno, vivranno, partiranno*.'
+      - id: conoscerete
+        type: multipleChoice
+        prompt: Dopo il trasferimento voi ___ nuove persone.
+        options:
+          - { text: conoscerete, correct: true }
+          - {
+              text: conoscerai,
+              feedback: '*Conoscerai* è per *tu*. Per *voi* la desinenza è *-ete*: *conoscerete*.',
+            }
+          - {
+              text: conoscete,
+              feedback: '*Conoscete* è presente. *Dopo il trasferimento* parla del futuro: *conoscerete*.',
+            }
+      - id: avra-saranno
+        type: fillBlank
+        prompt: Completa con il futuro di *avere* e *essere*.
+        text: La mia nuova città ___ molti parchi. Ci ___ tante opportunità.
+        blanks: [[avrà], [saranno]]
+        wordBank: [avrà, avrò, sarà, saranno]
+      - id: ordina-roma
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Mi trasferirò a Roma l'anno prossimo.
+
+  - slug: trasferimento-socializzare
+    title: 'Socializzare: domande, ragioni e consigli'
+    minutes: 8
+    items:
+      - id: domanda-pratica
+        type: multipleChoice
+        prompt: Ti sei appena trasferito / trasferita in una nuova città e cerchi una zona dove vivere. Quale domanda è utile e pratica?
+        options:
+          - { text: Quali quartieri consigli?, correct: true }
+          - {
+              text: Ti piace vivere?,
+              feedback: 'Questa domanda non ti dà informazioni pratiche. Chiedi in modo diretto: *Quali quartieri consigli?*',
+            }
+          - {
+              text: Dove hai mangiato ieri?,
+              feedback: 'Questa domanda non ti aiuta a trovare una zona dove vivere. Chiedi: *Quali quartieri consigli?*',
+            }
+      - id: dove-posso
+        type: fillBlank
+        prompt: Completa la domanda con il verbo *potere* (io).
+        text: Dove ___ conoscere persone nuove?
+        blanks: [[posso]]
+      - id: dovresti
+        type: multipleChoice
+        prompt: Il tuo amico non sa come andare al lavoro. Quale consiglio è giusto?
+        options:
+          - { text: Dovresti usare la metropolitana., correct: true }
+          - {
+              text: Dovrei usare la metropolitana.,
+              feedback: '*Dovrei* è per *io*. Per dare un consiglio a un amico (tu) usiamo *dovresti*.',
+            }
+          - {
+              text: Ti consiglio usare la metropolitana.,
+              feedback: 'Prima di un infinito diciamo *Ti consiglio di*: *Ti consiglio di usare la metropolitana.*',
+            }
+      - id: unisci-risposte
+        type: matching
+        prompt: Unisci ogni domanda alla risposta giusta.
+        pairs:
+          - [Quali quartieri consigli?, Ti consiglio Trastevere. È tranquillo.]
+          - [È facile usare i mezzi pubblici?, 'Sì, la metropolitana è comoda.']
+          - [Dove posso conoscere persone nuove?, Puoi andare a un corso di lingua.]
+          - [Perché ti trasferisci?, Perché voglio cambiare vita.]
+      - id: perche
+        type: trueFalse
+        prompt: 'Per dare una ragione usiamo *perché*: *Mi trasferirò a Roma perché voglio cambiare vita.*'
+        answer: true
+        feedback:
+          correct: Giusto! *Perché* introduce la ragione.
+          incorrect: 'La frase è giusta: *perché* introduce la ragione.'
+      - id: emozionata
+        type: fillBlank
+        prompt: 'Giulia parla di sé. Completa con *emozionato* al femminile.'
+        text: Sono ___ ma anche un po' nervosa.
+        blanks: [[emozionata]]
+      - id: ci-sono
+        type: multipleChoice
+        prompt: ___ posti interessanti per uscire la sera?
+        options:
+          - { text: Ci sono, correct: true }
+          - {
+              text: "C'è",
+              feedback: "*Posti* è plurale: usiamo *ci sono*. *C'è* è per il singolare.",
+            }
+          - {
+              text: Sono,
+              feedback: 'Per chiedere se una cosa esiste usiamo *ci sono*: *Ci sono posti interessanti?*',
+            }
+      - id: ordina-persone
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Dove posso conoscere persone nuove?

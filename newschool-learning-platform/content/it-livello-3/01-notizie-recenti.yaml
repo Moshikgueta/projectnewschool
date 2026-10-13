@@ -1,0 +1,628 @@
+# Cycle "Notizie recenti", converted from the Italian level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-livello-3
+slug: notizie-recenti
+title: Notizie recenti
+goal: Riferire le notizie con il discorso indiretto e raccontarle usando passato, presente e futuro.
+position: 1
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Discorso indiretto" and "Passato, presente e futuro
+    nelle notizie") are NEW: the notebook has no self-study exercises. They were
+    written from the cycle's summary rules, the activity examples and its vocabulary.
+    Please check level, wording and every right answer before students see them.
+  - >-
+    Left out: the gamma.app lesson slides (slide links are not allowed; mentioned in a
+    teacher note), the "Data / Partecipanti" lines, "Studenti: scrivi qui i nomi degli
+    studenti" and all "Studente 1/2/3" lines (the platform has answer boxes). The
+    Quizlet link's "?new" parameter was removed.
+  - >-
+    Privacy: the example names "Shachar" (introduction) and "Dana" (Activity 2) may be
+    real people, so they were replaced with "Marco" and "Giulia". "Ynet" in the
+    introduction example was changed to "un sito di notizie" (no brand names).
+  - >-
+    Warm-up: the question "Che cosa significa per te la libertà di parola?…" appears
+    twice in the source; it is kept once (7 questions instead of 8). The source had
+    broken markdown ("### **…**") around every question; it was removed. Sentence
+    frames were added to every question (not in the source).
+  - >-
+    Discorso indiretto rules REWRITTEN / EXTENDED (please confirm): the source only
+    says that "il tempo verbale" often changes and gives one example. Added: the tense
+    shifts when the introducing verb is in the past (presente → imperfetto, passato
+    prossimo → trapassato prossimo, futuro → condizionale passato), with a table; the
+    note that with a present introducing verb (dice che) the tense does not change;
+    that a fact that is still true can stay in the present (the source example "ha
+    detto che guarda le notizie ogni giorno"); io → lui / lei; "adesso → allora" in the
+    time-word table. The two time-word tables of the source (Activity 1 and summary)
+    were merged into one ("questo / questa → quello / quella").
+  - >-
+    Activity 1, level 1: the notebook says "the teacher shows some headlines" but gives
+    none. Four sample headlines were ADDED as sentences to transform (one per tense
+    shift), so students have something to complete; the teacher can replace them.
+  - >-
+    Corrections: Activity 4 "Competenza: Usare tempi diversi e esprimere opinioni" →
+    "ed esprimere"; "Gruppo B: Pensa che devono esserci regole" → "pensa che debbano
+    esserci delle regole" (congiuntivo after pensare che); Situation 1 question "I
+    media dovevano pubblicare queste informazioni?" → "I media avrebbero dovuto
+    pubblicare queste informazioni?" (condizionale passato for a past choice); Mori
+    "Nel futuro potrebbe succedere" → "In futuro potrebbe succedere"; "Per favore
+    correggi" → "Per favore, correggi"; "Vocabulario" → "Vocabolario". Activity 4 got
+    sentence frames for both groups (not in the source).
+  - >-
+    The source cycle has no timings and no lesson plan; none were invented. The plan
+    note maps the activities to the two skills. Activity 3 and Activity 5 do not name a
+    skill in the source: Activity 3 → both skills (students retell the partner's
+    news), Activity 5 → tenses.
+  - >-
+    Mori: one message (kept). The "Struttura suggerita" is a callout under it, and the
+    "Obiettivo finale" (talk for 5–8 minutes) is in the goal text.
+  - >-
+    Vocabulary: the source glosses are in ENGLISH; they were translated into Hebrew
+    (please check every gloss). "Voce (rumor)" → "voce (diceria)"; "Notizia urgente
+    – breaking news" → "notizia dell'ultima ora" (more natural in Italian); "Notizia"
+    → "notizia" with gloss חדשה / ידיעה.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: notizie-recenti-classe
+    title: 'In classe: Notizie recenti'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Notizie recenti
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Discorso indiretto
+            description: "Riferire che cosa ha detto un'altra persona: *Il giornalista ha detto che il giorno dopo ci sarebbe stata una protesta.*"
+          - name: Passato, presente e futuro nelle notizie
+            description: "Raccontare una notizia: *Ieri c'è stata una protesta. Oggi molte persone ne parlano. Domani il governo farà un annuncio.*"
+      - id: quizlet
+        type: externalLink
+        label: Notizie recenti su Quizlet
+        url: https://quizlet.com/br/1153912677/notizie-recenti-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazione
+      - id: intro
+        type: sentenceFrame
+        frame: Io sono ___. Quando voglio sapere le notizie, ___.
+        example: Io sono Marco. Quando voglio sapere le notizie, apro un sito di notizie sul telefono o ascolto la radio.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup-hint
+        type: callout
+        tone: info
+        text: Rispondi con **frasi complete**.
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quanto spesso pensi che le persone dovrebbero leggere o guardare le notizie, e perché?
+            frame: Penso che le persone dovrebbero ___ perché ___.
+          - question: Che cosa significa per te la libertà di parola? Qual è la differenza tra la libertà di parola per una persona privata e per i canali di notizie?
+            frame: Per me la libertà di parola significa ___. Per i canali di notizie, invece, ___.
+          - question: C'è stata una protesta, una crisi o un disastro nella tua zona recentemente?
+            frame: Sì, ___ c'è stata ___. / No, recentemente non è successo niente di grave.
+          - question: Come hanno cambiato i social media il modo di consumare le notizie? Com'era nel passato e che cosa pensi che succederà nel futuro?
+            frame: Prima le persone ___. Adesso ___. In futuro ___.
+          - question: C'è un reporter o un giornalista che ammiri? Perché?
+            frame: Ammiro ___ perché ___.
+          - question: Pensi che i bambini oggi siano più esposti alle notizie rispetto al passato? Come potrebbe influenzare il loro futuro?
+            frame: Secondo me i bambini oggi ___. Questo potrebbe ___.
+          - question: Hai mai visto un servizio di notizie o una previsione del tempo che era sbagliata? Che cosa è successo?
+            frame: Sì, una volta ___. La previsione diceva che ___, ma invece ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Raccontare i titoli delle notizie'
+        skills: [Discorso indiretto]
+        steps:
+          - "Il **discorso indiretto** si usa per dire che cosa ha detto un'altra persona. Guarda l'esempio e la tabella dei cambiamenti nel riepilogo."
+          - "**Livello 1:** l'insegnante mostra alcuni titoli di notizie. Trasforma le frasi in discorso indiretto (vedi sotto)."
+          - "**Livello 2:** ogni studente inventa due titoli di notizie. L'insegnante li distribuisce agli studenti. Ogni studente racconta le notizie che ha ricevuto usando il discorso indiretto."
+        example: |-
+          *Discorso diretto:* Il giornalista ha detto: «Domani ci sarà una protesta».
+          *Discorso indiretto:* Il giornalista ha detto che il giorno dopo ci sarebbe stata una protesta.
+      - id: act1-headlines
+        type: discussionQuestions
+        title: 'Livello 1: trasforma i titoli'
+        items:
+          - question: 'Il giornalista ha detto: «Domani ci sarà uno sciopero dei treni».'
+            frame: Il giornalista ha detto che il giorno dopo ___.
+          - question: 'Il sindaco ha detto: «Oggi la biblioteca è chiusa».'
+            frame: Il sindaco ha detto che quel giorno ___.
+          - question: 'La presentatrice ha detto: «Ieri il governo ha approvato una nuova legge».'
+            frame: La presentatrice ha detto che il giorno prima ___.
+          - question: 'Gli esperti hanno detto: «La settimana prossima farà molto caldo».'
+            frame: Gli esperti hanno detto che la settimana dopo ___.
+      - id: act1-own
+        type: discussionQuestions
+        title: 'Livello 2: i miei due titoli'
+        items:
+          - question: Il mio primo titolo
+            frame: ___.
+          - question: Il mio secondo titolo
+            frame: ___.
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Sondaggio sulle notizie'
+        skills: [Discorso indiretto]
+        steps:
+          - Fai le domande del sondaggio ai compagni e scrivi le loro risposte.
+          - Poi racconta le risposte alla classe usando il discorso indiretto.
+        example: |-
+          *Giulia ha detto che guarda le notizie ogni giorno.*
+          *Ha detto che non guarda la previsione del tempo.*
+          *Tre studenti hanno detto che guardano le notizie sui social media.*
+      - id: act2-survey
+        type: discussionQuestions
+        title: Domande del sondaggio
+        items:
+          - question: 'Quanto spesso guardi le notizie? (ogni giorno / qualche volta alla settimana / solo quando succede qualcosa di importante)'
+            frame: ___ ha detto che guarda le notizie ___.
+          - question: Dove guardi le notizie? Quale canale, sito o social media usi? Perché?
+            frame: ___ ha detto che usa ___ perché ___.
+          - question: Preferisci le notizie locali o internazionali?
+            frame: ___ ha detto che preferisce ___.
+          - question: Qual è un titolo di notizia che ricordi di questa settimana?
+            frame: ___ ha detto che ricorda la notizia ___.
+          - question: Guardi la previsione del tempo? Era corretta questa settimana?
+            frame: ___ ha detto che ___ e che la previsione ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Notizie nazionali e internazionali'
+        skills: [Discorso indiretto, 'Passato, presente e futuro nelle notizie']
+        steps:
+          - 'In coppia pensate a due notizie che avete visto recentemente: una notizia **locale** e una notizia **internazionale**.'
+          - Preparate le informazioni qui sotto per ogni notizia.
+          - Dopo l'attività cambiate partner. Ogni studente racconta la notizia del compagno usando il discorso indiretto.
+        example: |-
+          *Il mio compagno ha detto che la settimana prima c'era stata una protesta a Tel Aviv.*
+      - id: act3-info
+        type: discussionQuestions
+        title: Informazioni da preparare
+        items:
+          - question: 'Tipo di evento (protesta / crisi / disastro / notizia / altro)'
+            frame: È ___.
+          - question: 'Tema della notizia (politica / economia / cultura)'
+            frame: Il tema è ___.
+          - question: Dove e quando è successo?
+            frame: È successo a ___ il ___.
+          - question: Il titolo della notizia con parole vostre
+            frame: ___.
+          - question: 'Fonte della notizia (canale TV / sito internet / social media)'
+            frame: L'abbiamo vista su ___.
+          - question: Una breve citazione della notizia
+            frame: Il giornalista ha detto che ___.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Dibattito sulla libertà di parola'
+        skills: ['Passato, presente e futuro nelle notizie']
+        steps:
+          - L'insegnante presenta una situazione. La classe si divide in due gruppi.
+          - '**Gruppo A** è a favore della libertà dei media. **Gruppo B** pensa che debbano esserci delle regole.'
+          - Ogni gruppo prepara i suoi argomenti e poi li presenta. Usate tempi diversi ed esprimete le vostre opinioni.
+      - id: act4-s1
+        type: callout
+        tone: info
+        title: Situazione 1
+        text: |-
+          Una cantante famosa era in ospedale la settimana scorsa. Un canale di notizie ha pubblicato informazioni sulla sua salute senza il permesso della famiglia.
+          I fan volevano sapere la verità. La famiglia ha detto che era una questione privata.
+          **I media avrebbero dovuto pubblicare queste informazioni?**
+      - id: act4-s2
+        type: callout
+        tone: info
+        title: Situazione 2
+        text: |-
+          Durante una campagna elettorale un canale TV ha dato più tempo a un partito politico.
+          Alcune persone hanno detto che la libertà di parola significa che il canale può scegliere che cosa mostrare. Altre persone hanno detto che non è giusto.
+          **I media devono avere libertà totale o devono seguire delle regole?**
+      - id: act4-frames
+        type: discussionQuestions
+        title: Le nostre opinioni
+        items:
+          - question: Situazione 1
+            frame: Secondo me i media (non) avrebbero dovuto pubblicare queste informazioni perché ___.
+          - question: Situazione 2
+            frame: Penso che i media debbano ___ perché ___.
+      - id: act5
+        type: classActivity
+        title: 'Attività 5: Il canale delle buone notizie'
+        skills: ['Passato, presente e futuro nelle notizie']
+        steps:
+          - Immaginiamo un canale di notizie che pubblica solo notizie positive.
+          - 'Ogni studente inventa una notizia positiva con questa struttura: titolo, che cosa è successo prima, che cosa succede adesso, che cosa succederà nel futuro.'
+          - Presenta la tua notizia alla classe.
+        example: |-
+          *Titolo:* Una nuova biblioteca apre in città.
+          *Prima:* Il comune ha iniziato il progetto l'anno scorso.
+          *Adesso:* Molte persone visitano la biblioteca.
+          *Futuro:* La città aprirà altre biblioteche.
+      - id: act5-news
+        type: discussionQuestions
+        title: La mia buona notizia
+        items:
+          - question: Titolo della notizia
+            frame: ___.
+          - question: Che cosa è successo prima?
+            frame: L'anno scorso / Il mese scorso ___.
+          - question: Che cosa succede adesso?
+            frame: Adesso ___.
+          - question: Che cosa succederà nel futuro?
+            frame: In futuro ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Discorso indiretto** (Attività 1, 2 e 3) e
+          **Passato, presente e futuro nelle notizie** (domande di riscaldamento,
+          Attività 3, 4 e 5). Il quaderno non indica i tempi delle attività: scegli le
+          attività in base al tempo disponibile. La presentazione della lezione
+          (gamma.app) non è inclusa nella piattaforma (i link alle presentazioni non sono
+          permessi); usala dal tuo materiale, se vuoi.
+      - id: n-warmup
+        anchor: warmup
+        text: Scegli alcune domande. Gli studenti devono rispondere con frasi complete.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Spiega il discorso indiretto con l'esempio e la tabella del riepilogo. Livello 1:
+          i quattro titoli sotto sono solo un esempio, puoi mostrare titoli veri di
+          questa settimana. Livello 2: raccogli i titoli inventati dagli studenti e
+          ridistribuiscili, così ognuno riferisce una notizia scritta da un compagno.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Presenta una situazione alla volta. Chiedi a ogni gruppo di usare il passato per
+          i fatti, il presente per le opinioni e il futuro o il condizionale per le
+          conseguenze (*Se i media pubblicano tutto, le persone non si fideranno più*).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: notizie-recenti-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Riassunto grammaticale della lezione
+      - id: rules-indiretto
+        type: ruleSummary
+        skill: Discorso indiretto
+        rules:
+          - text: "Il **discorso indiretto** si usa per **raccontare quello che ha detto un'altra persona**, senza usare le sue parole esatte. Struttura: **verbo introduttivo + che + frase**."
+            examples:
+              - 'Verbi comuni: dire, spiegare, raccontare, annunciare'
+              - 'Il governo ha annunciato che ___. / Il sindaco ha spiegato che ___.'
+          - text: 'Se il verbo introduttivo è al **presente** (*dice, spiega*), il tempo della frase **non cambia**.'
+            examples:
+              - '«Domani ci sarà una protesta». → Il giornalista dice che domani ci sarà una protesta.'
+          - text: 'Se il verbo introduttivo è al **passato** (*ha detto, ha spiegato*), di solito il tempo cambia: **presente → imperfetto**, **passato prossimo → trapassato prossimo**, **futuro → condizionale passato**.'
+            examples:
+              - '«La biblioteca è chiusa». → Ha detto che la biblioteca era chiusa.'
+              - '«Il governo ha fatto un annuncio». → Ha detto che il governo aveva fatto un annuncio.'
+              - '«Domani ci sarà una protesta». → Ha detto che il giorno dopo ci sarebbe stata una protesta.'
+          - text: 'Se una cosa è **ancora vera** adesso, possiamo lasciare il presente anche dopo *ha detto*.'
+            examples:
+              - '«Guardo le notizie ogni giorno». → Giulia ha detto che guarda le notizie ogni giorno.'
+          - text: 'Cambiano anche le **persone** (*io → lui / lei*) e le **parole di tempo e di luogo** (vedi la tabella).'
+            examples:
+              - '«Domani il governo farà un annuncio». → Il giornalista ha detto che il giorno dopo il governo avrebbe fatto un annuncio.'
+      - id: tenses-table
+        type: table
+        caption: 'I tempi nel discorso indiretto (verbo introduttivo al passato)'
+        header: [Discorso diretto, Discorso indiretto, Esempio]
+        rows:
+          - [presente, imperfetto, «È chiuso». → Ha detto che era chiuso.]
+          - [
+              passato prossimo,
+              trapassato prossimo,
+              «Ho visto la notizia». → Ha detto che aveva visto la notizia.,
+            ]
+          - [
+              futuro semplice,
+              condizionale passato,
+              «Ci sarà una protesta». → Ha detto che ci sarebbe stata una protesta.,
+            ]
+      - id: words-table
+        type: table
+        caption: Parole di tempo e di luogo
+        header: [Discorso diretto, Discorso indiretto]
+        rows:
+          - [oggi, quel giorno]
+          - [domani, il giorno dopo]
+          - [ieri, il giorno prima]
+          - [adesso, allora]
+          - [qui, lì]
+          - [questo / questa, quello / quella]
+          - [la settimana prossima, la settimana dopo]
+          - [la settimana scorsa, la settimana prima]
+      - id: rules-tempi
+        type: ruleSummary
+        skill: Passato, presente e futuro nelle notizie
+        rules:
+          - text: 'Il **passato** (passato prossimo) si usa per gli **eventi che sono già successi**.'
+            examples:
+              - Ieri c'è stata una protesta in città.
+              - Il governo ha fatto un annuncio la settimana scorsa.
+          - text: 'Il **presente** si usa per la **situazione attuale**, quello che succede adesso.'
+            examples:
+              - Oggi molte persone parlano della notizia.
+              - I giornalisti discutono il problema.
+          - text: 'Il **futuro** si usa per le **previsioni** e gli eventi che succederanno.'
+            examples:
+              - Domani il governo farà un annuncio.
+              - La prossima settimana inizierà una nuova legge.
+          - text: '**Idea chiave:** quando raccontiamo una notizia, spesso **combiniamo passato, presente e futuro**. Così la notizia è chiara e completa.'
+            examples:
+              - La settimana scorsa c'è stata una protesta. Oggi molte persone parlano della situazione. Domani il governo farà un nuovo annuncio.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità e chiedi a ogni studente di riferire una notizia vera in discorso indiretto, con almeno due tempi diversi.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: notizie-recenti-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: goal
+        type: text
+        text: "Obiettivo: parlare di una **notizia recente** per 5–8 minuti, usando il passato (eventi già successi), il presente (la situazione attuale), il futuro (previsioni e conseguenze) e il discorso indiretto (per raccontare che cosa ha detto un'altra persona)."
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia il messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori
+        type: aiTutorPrompt
+        title: Una notizia recente
+        message: |-
+          Ciao Mori!
+          Voglio parlare di una notizia recente. Fammi domande su:
+          - che cosa è successo
+          - dove è successo
+          - quando è successo
+          - che cosa succede adesso
+          - che cosa potrebbe succedere in futuro
+          Fammi usare anche il discorso indiretto, per esempio: «Il giornalista ha detto che…», «Il governo ha annunciato che…».
+          Per favore, correggi i miei errori e fammi altre domande per continuare la conversazione.
+      - id: structure
+        type: callout
+        tone: info
+        title: Struttura suggerita
+        text: |-
+          **Passato:** Ieri / La settimana scorsa è successo ___. C'è stata / C'è stato ___.
+          **Presente:** Adesso molte persone parlano di ___. I giornalisti discutono ___.
+          **Futuro:** Domani il governo ___. In futuro potrebbe succedere ___.
+          **Discorso indiretto:** Il giornalista ha detto che ___. Il sindaco ha spiegato che ___. Gli esperti hanno detto che ___.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: notizie-recenti-pratica
+    book: workbook
+    title: 'Pratica: Notizie recenti'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-discorso
+        type: activity
+        activity: notizie-recenti-discorso
+      - id: ex-tempi
+        type: activity
+        activity: notizie-recenti-tempi
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: notizie-recenti-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole delle notizie
+        glossLang: he
+        link: https://quizlet.com/br/1153912677/notizie-recenti-flash-cards/
+        items: &notizie-recenti-words
+          - { term: notizia, gloss: חדשה / ידיעה }
+          - { term: titolo, gloss: כותרת }
+          - { term: articolo, gloss: כתבה / מאמר }
+          - { term: giornalista, gloss: עיתונאי }
+          - { term: reporter, gloss: כתב }
+          - { term: canale, gloss: ערוץ }
+          - { term: fonte, gloss: מקור }
+          - { term: informazione, gloss: מידע }
+          - { term: commento, gloss: תגובה / פרשנות }
+          - { term: intervista, gloss: ראיון }
+          - { term: dichiarazione, gloss: הצהרה }
+          - { term: voce (diceria), gloss: שמועה }
+          - { term: governo, gloss: ממשלה }
+          - { term: presidente, gloss: נשיא }
+          - { term: primo ministro, gloss: ראש ממשלה }
+          - { term: politica, gloss: פוליטיקה }
+          - { term: elezione, gloss: בחירות }
+          - { term: protesta, gloss: מחאה }
+          - { term: crisi, gloss: משבר }
+          - { term: disastro, gloss: אסון }
+          - { term: economia, gloss: כלכלה }
+          - { term: cultura, gloss: תרבות }
+          - { term: scienza, gloss: מדע }
+          - { term: clima, gloss: אקלים }
+          - { term: trasmettere, gloss: לשדר }
+          - { term: pubblicare, gloss: לפרסם }
+          - { term: informare, gloss: ליידע }
+          - { term: raccontare, gloss: לספר / לדווח }
+          - { term: annunciare, gloss: להודיע / להכריז }
+          - { term: spiegare, gloss: להסביר }
+          - { term: notizie locali, gloss: חדשות מקומיות }
+          - { term: notizie internazionali, gloss: חדשות בינלאומיות }
+          - { term: previsione del tempo, gloss: תחזית מזג האוויר }
+          - { term: notizia dell'ultima ora, gloss: מבזק חדשות }
+          - { term: libertà di parola, gloss: חופש הביטוי }
+          - { term: media, gloss: תקשורת }
+
+vocabulary:
+  - slug: notizie-recenti
+    title: Notizie recenti
+    items: *notizie-recenti-words
+
+activities:
+  - slug: notizie-recenti-discorso
+    title: 'Discorso indiretto: ha detto che…'
+    minutes: 8
+    items:
+      - id: giorno-dopo
+        type: multipleChoice
+        prompt: 'Il giornalista ha detto: «Domani ci sarà una protesta». → Il giornalista ha detto che ___ ci sarebbe stata una protesta.'
+        options:
+          - { text: il giorno dopo, correct: true }
+          - { text: domani, feedback: 'Nel discorso indiretto *domani* diventa *il giorno dopo*.' }
+          - {
+              text: il giorno prima,
+              feedback: '*Il giorno prima* corrisponde a *ieri*. *Domani* diventa *il giorno dopo*.',
+            }
+      - id: era-stanca
+        type: multipleChoice
+        prompt: 'Ieri Anna ha detto: «Oggi sono molto stanca». → Ieri Anna ha detto che quel giorno ___ molto stanca.'
+        options:
+          - { text: era, correct: true }
+          - {
+              text: ero,
+              feedback: 'Nel discorso indiretto *io* diventa *lei*: non *ero* ma *era*.',
+            }
+          - {
+              text: sarebbe stata,
+              feedback: "Il condizionale passato corrisponde al futuro. Qui c'è un presente (*sono*), che diventa imperfetto: *era*.",
+            }
+      - id: aveva-approvato
+        type: fillBlank
+        prompt: 'Completa con il verbo *approvare*. Il governo ha detto: «Abbiamo approvato una nuova legge».'
+        text: Il governo ha detto che ___ una nuova legge.
+        blanks: [[aveva approvato]]
+      - id: parole-tempo
+        type: matching
+        prompt: Unisci ogni parola del discorso diretto alla parola del discorso indiretto.
+        pairs:
+          - [oggi, quel giorno]
+          - [domani, il giorno dopo]
+          - [ieri, il giorno prima]
+          - [qui, lì]
+          - [la settimana prossima, la settimana dopo]
+      - id: futuro-condizionale
+        type: trueFalse
+        prompt: 'Dopo *ha detto che*, il futuro (*ci sarà*) diventa condizionale passato (*ci sarebbe stata*).'
+        answer: true
+        feedback:
+          correct: 'Giusto! «Domani ci sarà una protesta». → Ha detto che il giorno dopo ci sarebbe stata una protesta.'
+          incorrect: 'Con il verbo introduttivo al passato, il futuro diventa condizionale passato: *ci sarà* → *ci sarebbe stata*.'
+      - id: avrebbe-fatto
+        type: fillBlank
+        prompt: 'Completa con il verbo *fare*. Il giornalista ha detto: «Domani il governo farà un annuncio».'
+        text: Il giornalista ha detto che il giorno dopo il governo ___ un annuncio.
+        blanks: [[avrebbe fatto]]
+      - id: dice-che
+        type: trueFalse
+        prompt: 'Se il verbo introduttivo è al presente (*dice che*), il tempo della frase cambia sempre.'
+        answer: false
+        feedback:
+          correct: 'Giusto! Con *dice che* il tempo non cambia: *Il giornalista dice che domani ci sarà una protesta.*'
+          incorrect: 'Con il verbo introduttivo al presente il tempo non cambia: *Il giornalista dice che domani ci sarà una protesta.*'
+      - id: ordina-sindaco
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Il sindaco ha spiegato che la strada era chiusa.
+
+  - slug: notizie-recenti-tempi
+    title: 'Passato, presente e futuro nelle notizie'
+    minutes: 8
+    items:
+      - id: ce-stata
+        type: multipleChoice
+        prompt: Ieri ___ una protesta in città.
+        options:
+          - { text: "c'è stata", correct: true }
+          - {
+              text: "c'è",
+              feedback: "*C'è* è presente. Con *ieri* parliamo di un evento già successo: *c'è stata*.",
+            }
+          - {
+              text: ci sarà,
+              feedback: "*Ci sarà* è futuro. Con *ieri* usiamo il passato: *c'è stata*.",
+            }
+      - id: fara
+        type: multipleChoice
+        prompt: Domani il governo ___ un annuncio.
+        options:
+          - { text: farà, correct: true }
+          - {
+              text: ha fatto,
+              feedback: '*Ha fatto* è passato. Con *domani* parliamo di un evento che succederà: *farà*.',
+            }
+          - {
+              text: faceva,
+              feedback: '*Faceva* è imperfetto (passato). Con *domani* usiamo il futuro: *farà*.',
+            }
+      - id: parlano
+        type: fillBlank
+        prompt: Completa con il presente di *parlare*.
+        text: Oggi molte persone ___ della notizia.
+        blanks: [[parlano]]
+      - id: iniziera
+        type: fillBlank
+        prompt: Completa con il futuro semplice di *iniziare*.
+        text: La prossima settimana ___ una nuova legge.
+        blanks: [[inizierà]]
+      - id: futuri
+        type: matching
+        prompt: Unisci ogni verbo alla sua forma al futuro (lui / lei).
+        pairs:
+          - [fare, farà]
+          - [essere, sarà]
+          - [iniziare, inizierà]
+          - [aprire, aprirà]
+          - [parlare, parlerà]
+      - id: passato-uso
+        type: trueFalse
+        prompt: Per parlare di eventi che sono già successi usiamo il futuro.
+        answer: false
+        feedback:
+          correct: "Giusto! Per gli eventi già successi usiamo il passato: *Ieri c'è stata una protesta.*"
+          incorrect: "Per gli eventi già successi usiamo il passato (*Ieri c'è stata una protesta*). Il futuro è per le previsioni."
+      - id: visitano
+        type: multipleChoice
+        prompt: "Il comune ha iniziato il progetto l'anno scorso. Adesso molte persone ___ la biblioteca."
+        options:
+          - { text: visitano, correct: true }
+          - {
+              text: visiteranno,
+              feedback: '*Visiteranno* è futuro. Con *adesso* parliamo della situazione attuale: usiamo il presente, *visitano*.',
+            }
+          - {
+              text: visitavano,
+              feedback: '*Visitavano* è imperfetto (passato). Con *adesso* usiamo il presente: *visitano*.',
+            }
+      - id: ordina-biblioteche
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: La città aprirà altre biblioteche.

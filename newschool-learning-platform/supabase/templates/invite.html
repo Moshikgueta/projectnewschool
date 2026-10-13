@@ -1,0 +1,13 @@
+<!-- Invite email. The link goes to our own /auth/confirm route, which verifies the
+     one-time token on the server. Replace the text logo with the official New School
+     logo (hosted PNG) once the brand files exist — see brand/README.md. -->
+<h2>New School</h2>
+<p>You have been invited to the New School learning platform.</p>
+<p>
+  <a
+    href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=invite&next=/account/set-password"
+  >
+    Accept the invitation and choose a password
+  </a>
+</p>
+<p>If you were not expecting this email, you can ignore it.</p>

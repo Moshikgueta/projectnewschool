@@ -1,0 +1,614 @@
+# Cycle "Tratsch", converted from the German level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-konversation-2
+slug: tratsch
+title: Tratsch
+goal: Im Perfekt erzählen, was passiert ist, und Personen und Geschichten vergleichen.
+position: 16
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Perfekt" and "Vergleiche") are NEW: the notebook has
+    no self-correcting exercises. They were written from the cycle's two skills, its
+    summary rules, the activity examples and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Grammar, comparisons: the notebook gives "mehr … als" and "am meisten" as the
+    structures for comparing (literal translation of English "more … than", "the
+    most"), and Activity 4 has the frames "___ ist mehr … als ___" and "___ ist am
+    meisten …". That is wrong for German adjectives (*mehr lustig als, *am meisten
+    lustig). The summary, the frames and the Mori message now say: adjective + -er
+    + als (lustiger als), weniger + adjective + als, so + adjective + wie, am +
+    adjective + -sten / der, die, das …-ste (am lustigsten, die lustigste
+    Geschichte), and "mehr … als / am meisten" only with verbs and nouns (Mein
+    Freund tratscht mehr als ich). Irregular forms (gut – besser – am besten, viel –
+    mehr – am meisten) and -esten after -t (am interessantesten) were ADDED. Activity
+    3 presentation frame "dass … mehr / weniger … ist als …" → "dass … …er / weniger
+    … ist als …". Please confirm.
+  - >-
+    Grammar, Perfekt: the Hebrew summary calls the Perfekt "עבר פשוט" (simple past);
+    it is now "עבר – Perfekt". A rule was ADDED: sein with verbs of movement or
+    change (gehen, fahren, bleiben, passieren), haben with most other verbs, and the
+    Partizip II at the end of the sentence. The summary was in Hebrew: it is given
+    as German rule summaries, with a short corrected Hebrew text block for each
+    skill.
+  - >-
+    Corrections: Activity 1 title "Was geschah dort?" (Präteritum) → "Was ist dort
+    passiert?" (Perfekt, the cycle's skill); Activity 3 interview questions had no
+    question marks; Activity 4 "Vergleiche und Superlativen" → "Superlative"; Mori
+    prompt 2 example "Er war krank und blieb zu Hause" → "… und ist zu Hause
+    geblieben" (Perfekt); introduction frame "___ ist weniger tratschsüchtig als
+    ich" (rare word, not in the vocabulary) → "___ tratscht weniger als ich".
+  - >-
+    The Mori prompts are written in Hebrew in the notebook ("instructions in Hebrew,
+    examples in German"). They were translated into German, as in the other
+    cycles, and the example answers moved to the intro line. Prompt 3 now asks for
+    "-er … als" instead of "mehr … als". The tips callout was added as in the other
+    cycles.
+  - >-
+    The notebook has two Quizlet links: an English set ("gossip-updated", with an
+    empty link text) and the German set "Tratsch". Only the German set is kept,
+    without its "?new" parameter. Please add the other one if you use it.
+  - >-
+    Activity 1 needs a picture chosen by the teacher (whispering people, an argument,
+    a phone, a celebrity); Activity 4 needs the celebrity pairs on the screen. Neither
+    is in the notebook. The notebook gives no plan for which activities go with which
+    skill and has four 20-minute activities in a 90-minute lesson; the plan note
+    (choose activities by time) is ADDED.
+  - >-
+    Vocabulary: the English headings ("People & Communication" …) were dropped;
+    glosses changed: "so … wie – כמו" → "… כמו (באותה מידה)"; "mehr … als – יותר
+    מ־" → "יותר … מ־"; "am meisten – הכי" → "הכי הרבה" (am meisten is only the
+    superlative of viel). Please confirm.
+  - >-
+    Times: the warm-up (10–15 minutes) is recorded as 15. Activity 1 has no time in
+    the notebook. The "Antwort von Schüler 1/2/3" lines are replaced by the optional
+    answer boxes (decision C2).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: tratsch-unterricht
+    title: 'Unterricht: Tratsch'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tratsch
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Perfekt
+            description: '*haben / sein* + Partizip II: *Ich habe ein Gerücht gehört. Sie ist zur Party gegangen.*'
+          - name: Vergleiche
+            description: '*lustiger als, weniger … als, so … wie, am lustigsten, die lustigste Geschichte*'
+      - id: quizlet
+        type: externalLink
+        label: Tratsch auf Quizlet
+        url: https://quizlet.com/br/1131444757/tratsch-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Ich mag Tratsch. / Ich mag Tratsch nicht.
+        example: Ich bin Sarah. Ich spreche gern über andere Leute. / Ich bin James. Ich mag Tratsch nicht.
+      - id: intro-compare
+        type: sentenceFrame
+        prompt: 'Dann ein Vergleich:'
+        frame: Ich bin gesprächiger als ___. / ___ tratscht weniger als ich.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Warum tratschen die Leute?
+            frame: Weil es ___ ist. (Modell *Weil es interessant ist.*)
+          - question: Ist Tratsch gut oder schlecht?
+            frame: Manchmal ist er ___, aber manchmal ___. (Modell *Manchmal ist er lustig, aber manchmal tut er weh.*)
+          - question: Was hast du gestern gehört?
+            frame: Ich habe etwas über ___ gehört.
+          - question: Mit wem hast du gestern gesprochen?
+            frame: Ich habe mit meinem / meiner ___ gesprochen.
+          - question: Wer in deiner Familie ist am gesprächigsten?
+            frame: Mein / Meine ___ ist am gesprächigsten.
+          - question: Wer tratscht mehr – du oder dein bester Freund / deine beste Freundin?
+            frame: Mein Freund / Meine Freundin tratscht mehr als ich. / Ich tratsche mehr als ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Was ist dort passiert?'
+        skills: [Perfekt]
+        steps:
+          - Schau dir das Bild von deiner Lehrkraft an (flüsternde Leute, ein Streit, ein Handy, ein Promi).
+          - Sammelt zusammen Verben im Perfekt.
+          - 'In Gruppen (3 Personen): Wer sind die Leute? Was ist passiert? Warum? Benutzt mindestens **3 Verben im Perfekt**.'
+          - Eine Person aus der Gruppe erzählt die Geschichte.
+          - 'Die Klasse stimmt ab: Welche Geschichte ist die lustigste? Welche ist die glaubwürdigste?'
+        wordBank: [gesagt, gehört, gesehen, gesprochen, gestritten, gelacht, gepostet]
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Unsere Geschichte
+        items:
+          - question: Zuerst haben sie ___.
+          - question: Dann hat jemand ___.
+          - question: Am Ende haben sie ___.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Ich habe noch nie …'
+        skills: [Perfekt, Vergleiche]
+        minutes: 20
+        steps:
+          - Die Lehrkraft sagt einen Satz mit *Ich habe noch nie …*
+          - Wer das schon einmal gemacht hat, hebt die Hand und sagt **einen einfachen Satz im Perfekt**. Nur 1–2 Sätze, kurz und klar.
+          - 'Die Lehrkraft oder ein Partner fragt nach: *Wann war das? Wem hast du es erzählt? Was ist danach passiert?*'
+          - Nach 2–3 Geschichten vergleicht die Klasse die Geschichten.
+        example: |-
+          *Ich habe noch nie ein Geheimnis erzählt. / Ich habe noch nie ein Gerücht erfunden.*
+          *Ich habe das einmal in der Schule gemacht. / Ich habe ein Geheimnis erzählt. Meine Freundin war traurig.*
+          *Annas Geschichte war lustiger als Johns. Marias Geschichte war die dramatischste. Peters Geschichte war weniger ernst.*
+        wordBank: [erzählt, gehört, gesagt, gepostet, gestritten, gelacht, gelogen]
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Sprachhilfe
+        items:
+          - question: Ich habe noch nie ___.
+          - question: Ich habe das gemacht, als ich ___ war.
+          - question: Mein Freund / Meine Freundin war ___.
+          - question: Es war ___, aber ___.
+          - question: ___s Geschichte war ___er als ___s Geschichte.
+            frame: '… weniger … als … / … die …ste Geschichte'
+      - id: act2-variants
+        type: callout
+        tone: info
+        title: Varianten
+        text: |-
+          **Punktespiel:** Jede erhobene Hand = 1 Punkt. Extra-Punkt für einen korrekten Satz im Perfekt.
+          **Sicherheitsregel:** Du kannst immer sagen: *Es war harmloser Klatsch.*
+          **Ranking:** Die Klasse wählt die lustigste, die dramatischste und die glaubwürdigste Geschichte.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Klatsch-Interview'
+        skills: [Vergleiche, Perfekt]
+        minutes: 20
+        steps:
+          - Lies die Fragen unten. Die Lehrkraft wiederholt kurz wichtige Wörter und Satzmuster.
+          - Arbeitet zu zweit. Stellt euch gegenseitig die Fragen und macht kurze Notizen.
+          - 'Achte auf: Perfekt, Vergleiche, Superlative.'
+          - Sag der Klasse **2–3 Sätze** über deinen Partner / deine Partnerin.
+          - Nach jeder Präsentation stellt ein Mitschüler / eine Mitschülerin **eine Frage**.
+        example: |-
+          *Mein Partner hat gehört, dass …*
+          *Sie glaubt, dass falscher Klatsch gefährlicher ist als wahrer Klatsch.*
+          *In seiner Familie ist seine Tante die gesprächigste Person.*
+      - id: act3-questions
+        type: discussionQuestions
+        title: Interviewfragen
+        items:
+          - question: Wer in deiner Familie tratscht am meisten?
+            frame: Mein / Meine ___ tratscht am meisten.
+          - question: Was ist das lustigste Gerücht, das du gehört hast?
+            frame: Das lustigste Gerücht war, dass ___.
+          - question: Wer ist die gesprächigste Person, die du kennst?
+            frame: Die gesprächigste Person ist ___.
+          - question: Sind falsche Gerüchte gefährlicher als wahre Gerüchte?
+            frame: Ich glaube, falsche Gerüchte sind (nicht) gefährlicher als wahre Gerüchte, weil ___.
+          - question: Mit wem hast du letzte Woche gesprochen?
+            frame: Letzte Woche habe ich mit ___ gesprochen.
+      - id: act3-report
+        type: discussionQuestions
+        title: Über meinen Partner / meine Partnerin
+        items:
+          - question: Er / Sie hat mir gesagt, dass ___.
+          - question: Er / Sie glaubt, dass ___ …er / weniger … ist als ___.
+          - question: In seiner / ihrer Familie ist ___ die gesprächigste Person.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Wer kommt zum Abendessen?'
+        skills: [Vergleiche]
+        minutes: 20
+        steps:
+          - 'Schau dir die Paare an: Messi – Ronaldo, Adele – Shakira, Beyoncé – Taylor Swift, Brad Pitt – Tom Cruise.'
+          - 'Allein: Wähle **3 Prominente** für dein Abendessen. Schreib 2–3 Sätze mit Vergleichen.'
+          - 'Zu zweit: Vergleicht eure Listen.'
+          - 'In Gruppen von 3–4 Personen: Einigt euch auf **3 Gäste**. Benutzt mindestens **einen Superlativ**.'
+          - Jede Gruppe präsentiert ihre Gäste und sagt, warum.
+        example: |-
+          *Shakira ist lustiger als Adele. Messi ist beliebter als Ronaldo.*
+          *Meine Gäste sind interessanter als deine. Deine Liste ist weniger überraschend.*
+          *Shakira ist die lustigste Person. Brad Pitt ist der bekannteste Schauspieler.*
+        wordBank: [lustig, beliebt, interessant, dramatisch, freundlich, talentiert]
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Sprachhilfe
+        items:
+          - question: ___ ist …er als ___.
+          - question: ___ ist weniger … als ___.
+          - question: ___ ist so … wie ___.
+          - question: ___ ist am …sten. / ___ ist der / die …ste ___.
+          - question: ___ ist am wenigsten ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Perfekt** (Aufwärmfragen, Aktivitäten 1
+          und 2) und **Vergleiche** (Aktivitäten 2, 3 und 4). Die Stunde dauert 90
+          Minuten: Wähle die Aktivitäten passend zur Zeit, z. B. Aktivität 1 oder 2 und
+          Aktivität 3 oder 4.
+      - id: n-intro
+        anchor: intro
+        minutes: 10
+        text: 'Gib zuerst das Modell: «Ich bin Sarah. Ich spreche gern über andere Leute.» «Ich bin James. Ich mag Tratsch nicht.» Dann sagt jeder Schüler seinen Satz und einen Vergleich.'
+      - id: n-warmup
+        anchor: warmup
+        minutes: 15
+        text: Stell jedem Schüler mindestens zwei Fragen. Die Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Zeig ein Bild (flüsternde Leute, Streit, Handy, Promi); es ist nicht im Heft.
+          Sammelt die Verben an der Tafel, bevor die Gruppen arbeiten.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Interaktion: ganze Klasse und Paare. Erwartetes Ergebnis: kurze persönliche
+          Sätze im Perfekt, einfache Nachfragen, Vergleiche mit *…er als / weniger … als
+          / am …sten*, viel Beteiligung und Spaß. Achte darauf, dass niemand etwas
+          Privates erzählen muss: Die Sicherheitsregel gilt immer.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Gib jedem Schüler die Fragen auf einem Blatt oder auf dem Bildschirm.
+          Varianten: Die Klasse wählt die dramatischste Familie, die kreativste
+          Geschichte und die lustigste Meinung. Erwartetes Ergebnis: einfache Fragen
+          stellen, kurze Notizen machen, klar berichten, Vergleiche benutzen.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Zeig die Paare von Prominenten auf dem Bildschirm und schreib die Adjektive an
+          die Tafel. Interaktion: allein → Paar → Gruppe → Klasse. Korrigiere *mehr
+          lustig* zu *lustiger* und *am meisten lustig* zu *am lustigsten*.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: tratsch-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-perfekt
+        type: ruleSummary
+        skill: Perfekt
+        rules:
+          - text: 'Mit dem **Perfekt** erzählen wir, was passiert ist: *haben* / *sein* + **Partizip II**. Das Partizip II steht am Ende des Satzes.'
+            examples:
+              - Ich habe ein Gerücht gehört.
+              - Ich habe mit meiner Schwester gesprochen.
+              - Wir haben über einen Freund gesprochen.
+              - Sie ist zur Party gegangen.
+          - text: 'Die meisten Verben haben **haben**. Verben der Bewegung oder Veränderung haben **sein**: *gehen, fahren, kommen, bleiben, passieren*.'
+            examples: [Er ist zu Hause geblieben., Was ist danach passiert?]
+          - text: 'Partizip II: meistens **ge- … -t** (*hören → gehört, sagen → gesagt, posten → gepostet*), bei vielen unregelmäßigen Verben **ge- … -en** (*sprechen → gesprochen, streiten → gestritten, lügen → gelogen*). Verben auf *-ieren* und mit *er-* haben kein *ge-*: *passiert, erzählt*.'
+          - text: 'Typische Zeitwörter:'
+            examples: ['gestern, letzte Woche, letztes Jahr']
+      - id: perfekt-he
+        type: text
+        lang: he
+        text: >-
+          עבר – Perfekt: כשאנחנו מספרים "מה קרה", אנחנו כמעט תמיד משתמשים ב־Perfekt:
+          haben / sein + Partizip II, וה־Partizip II עומד בסוף המשפט. רוב הפעלים באים
+          עם haben; פעלים של תנועה או שינוי (gehen, fahren, bleiben, passieren) באים עם
+          sein. מילות זמן: gestern – אתמול, letzte Woche – בשבוע שעבר, letztes Jahr –
+          בשנה שעברה.
+      - id: rules-vergleiche
+        type: ruleSummary
+        skill: Vergleiche
+        rules:
+          - text: '**Mehr**: Adjektiv + **-er** + **als**. Nicht *mehr interessant*!'
+            examples: [Tratsch ist interessanter als Nachrichten., Shakira ist lustiger als Adele.]
+          - text: '**Weniger**: *weniger* + Adjektiv + *als*.'
+            examples: [Ich bin weniger dramatisch als meine Schwester.]
+          - text: '**Gleich**: *so* + Adjektiv + *wie*.'
+            examples: [Mein Freund ist so neugierig wie ich.]
+          - text: '**Superlativ**: *am* + Adjektiv + **-sten**, oder *der / die / das* + Adjektiv + **-ste** vor einem Nomen. Nach *-t* oder *-s* oft **-esten**: *am interessantesten*.'
+            examples:
+              - Meine Mutter ist am gesprächigsten.
+              - Meine Mutter ist die gesprächigste Person.
+              - Das war die lustigste Geschichte.
+          - text: '**mehr … als** und **am meisten** benutzen wir mit Verben und Nomen.'
+            examples: [Mein Freund tratscht mehr als ich., Wer tratscht am meisten?]
+      - id: comparison-table
+        type: table
+        caption: Vergleiche
+        header: [Adjektiv, Komparativ, Superlativ]
+        rows:
+          - [lustig, lustiger als, am lustigsten / die lustigste]
+          - [dramatisch, dramatischer als, am dramatischsten / die dramatischste]
+          - [interessant, interessanter als, am interessantesten / die interessanteste]
+          - [gut, besser als, am besten / die beste]
+          - [viel, mehr als, am meisten]
+      - id: vergleiche-he
+        type: text
+        lang: he
+        text: >-
+          השוואות: יותר – תואר + ‎-er + als (lustiger als); פחות – weniger + תואר + als;
+          שווה – so + תואר + wie; הכי – am + תואר + ‎-sten או der / die / das + תואר + ‎-ste
+          לפני שם עצם. בגרמנית לא אומרים "mehr lustig" אלא lustiger. mehr … als ו־am
+          meisten באים עם פעלים ושמות עצם: Mein Freund tratscht mehr als ich.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die zwei Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: tratsch-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere eine Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-perfekt
+        type: aiTutorPrompt
+        title: '1: Perfekt'
+        intro: 'Beispielantwort: *Ich habe gestern mit meiner Schwester gesprochen. Ich habe ein Gerücht gehört.*'
+        message: Hallo Mori, stell mir Fragen darüber, was gestern oder letzte Woche passiert ist. Ich möchte im Perfekt antworten. Bitte korrigiere mich sofort.
+      - id: mori-geschichte
+        type: aiTutorPrompt
+        title: '2: Eine kurze Geschichte'
+        intro: 'Beispiel: *Letzte Woche habe ich etwas über meinen Freund gehört. Er war krank und ist zu Hause geblieben. Ich habe ihm geschrieben.*'
+        message: Mori, bitte mich, eine kurze Geschichte in 2–3 Sätzen zu erzählen, über etwas, das ich über einen Freund gehört habe. Ich benutze das Perfekt. Bitte korrigiere meine Fehler.
+      - id: mori-vergleiche
+        type: aiTutorPrompt
+        title: '3: Einfache Vergleiche'
+        intro: 'Beispiel: *Meine Schwester ist gesprächiger als ich. Mein Freund ist so neugierig wie ich.*'
+        message: Mori, nenne mir zwei Personen oder zwei Dinge und bitte mich, sie zu vergleichen. Ich möchte „-er als“, „weniger … als“ und „so … wie“ benutzen. Bitte korrigiere mich.
+      - id: mori-superlativ
+        type: aiTutorPrompt
+        title: '4: Am … in meiner Familie'
+        intro: 'Beispiel: *Meine Mutter ist die gesprächigste Person in meiner Familie. Mein Bruder ist am dramatischsten.*'
+        message: Mori, frag mich, wer in meiner Familie am gesprächigsten ist und wer am dramatischsten ist. Ich antworte mit dem Superlativ. Bitte korrigiere mich.
+      - id: mori-interview
+        type: aiTutorPrompt
+        title: '5: Ein kurzes Interview'
+        message: |-
+          Mori, sei ein Interviewer. Stell mir diese Fragen, eine nach der anderen:
+          Mit wem hast du gestern gesprochen?
+          Was hast du über einen Freund gehört?
+          Wer ist in deiner Familie am gesprächigsten?
+          Wer ist dramatischer – du oder dein bester Freund?
+          Ich antworte auf Deutsch, und du korrigierst jeden Fehler.
+      - id: mori-frei
+        type: aiTutorPrompt
+        title: '6: Frei sprechen'
+        message: Mori, bitte mich, 4–5 Sätze am Stück zu sagen, zwei Sätze im Perfekt, zwei Vergleiche und einen Satz mit dem Superlativ. Bitte korrigiere mich und schlag mir eine bessere Version vor.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: tratsch-uebung
+    book: workbook
+    title: 'Übung: Tratsch'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-perfekt
+        type: activity
+        activity: tratsch-perfekt
+      - id: ex-vergleiche
+        type: activity
+        activity: tratsch-vergleiche
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: tratsch-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für Tratsch
+        glossLang: he
+        link: https://quizlet.com/br/1131444757/tratsch-flash-cards/
+        items: &tratsch-words
+          - { term: der Freund / die Freundin, gloss: חבר / חברה }
+          - { term: die Familie, gloss: משפחה }
+          - { term: die Leute, gloss: אנשים }
+          - { term: das Gespräch, gloss: שיחה }
+          - { term: die Meinung, gloss: דעה }
+          - { term: die Geschichte, gloss: סיפור }
+          - { term: der Tratsch, gloss: רכילות }
+          - { term: das Gerücht, gloss: שמועה }
+          - { term: das Geheimnis, gloss: סוד }
+          - { term: die Wahrheit, gloss: אמת }
+          - { term: die Lüge, gloss: שקר }
+          - { term: das Drama, gloss: דרמה }
+          - { term: hören, gloss: לשמוע }
+          - { term: sagen, gloss: לומר }
+          - { term: sprechen, gloss: לדבר }
+          - { term: erzählen, gloss: לספר }
+          - { term: posten, gloss: לפרסם }
+          - { term: lachen, gloss: לצחוק }
+          - { term: streiten, gloss: לריב }
+          - { term: glauben, gloss: להאמין }
+          - { term: lügen, gloss: לשקר }
+          - { term: finden, gloss: למצוא / לחשוב }
+          - { term: lustig, gloss: מצחיק }
+          - { term: interessant, gloss: מעניין }
+          - { term: dramatisch, gloss: דרמטי }
+          - { term: freundlich, gloss: נחמד }
+          - { term: neugierig, gloss: סקרן }
+          - { term: beliebt, gloss: פופולרי }
+          - { term: gestern, gloss: אתמול }
+          - { term: letzte Woche, gloss: בשבוע שעבר }
+          - { term: letztes Jahr, gloss: בשנה שעברה }
+          - { term: mehr … als, gloss: יותר … מ־ }
+          - { term: weniger … als, gloss: פחות … מ־ }
+          - { term: so … wie, gloss: … כמו (באותה מידה) }
+          - { term: am meisten, gloss: הכי הרבה }
+          - { term: jetzt, gloss: עכשיו }
+
+vocabulary:
+  - slug: tratsch
+    title: Tratsch
+    items: *tratsch-words
+
+activities:
+  - slug: tratsch-perfekt
+    title: 'Perfekt: Ich habe gehört, sie ist gegangen'
+    minutes: 8
+    items:
+      - id: habe-gehoert
+        type: multipleChoice
+        prompt: Gestern ___ ich ein Gerücht gehört.
+        options:
+          - { text: habe, correct: true }
+          - { text: bin, feedback: '*hören* ist keine Bewegung: Wir sagen *Ich habe … gehört*.' }
+          - { text: hat, feedback: '*hat* gehört zu *er / sie / es*. Mit *ich* sagen wir *habe*.' }
+      - id: gesprochen
+        type: fillBlank
+        prompt: Schreib das Partizip II von *sprechen*.
+        text: Ich habe mit meiner Schwester ___.
+        blanks: [[gesprochen]]
+      - id: partizip
+        type: matching
+        prompt: Welches Partizip II passt zu welchem Verb?
+        pairs:
+          - [hören, gehört]
+          - [lachen, gelacht]
+          - [streiten, gestritten]
+          - [lügen, gelogen]
+          - [erzählen, erzählt]
+      - id: ist-gegangen
+        type: multipleChoice
+        prompt: Sie ___ zur Party gegangen.
+        options:
+          - { text: ist, correct: true }
+          - {
+              text: hat,
+              feedback: '*gehen* ist eine Bewegung: Das Perfekt hat *sein*. *Sie ist gegangen.*',
+            }
+          - {
+              text: sind,
+              feedback: '*sind* ist für *wir / sie* (Plural). Für *sie* (eine Person) sagen wir *ist*.',
+            }
+      - id: am-ende
+        type: trueFalse
+        prompt: 'Im Perfekt steht das Partizip II am Ende des Satzes: *Ich habe ein Geheimnis erzählt.*'
+        answer: true
+        feedback:
+          correct: Richtig! *habe* steht an Position 2, *erzählt* am Ende.
+          incorrect: 'Das Partizip II steht am Ende: *Ich habe ein Geheimnis erzählt.*'
+      - id: hat-gepostet
+        type: fillBlank
+        prompt: Ergänze das Perfekt von *posten*.
+        text: Mein Freund ___ ein Foto ___.
+        blanks: [[hat], [gepostet]]
+      - id: geblieben
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Er war krank und ist zu Hause geblieben., correct: true }
+          - {
+              text: Er war krank und hat zu Hause geblieben.,
+              feedback: '*bleiben* hat im Perfekt *sein*: *Er ist zu Hause geblieben.*',
+            }
+          - {
+              text: Er war krank und ist zu Hause bleiben.,
+              feedback: 'Im Perfekt brauchen wir das Partizip II: *geblieben*.',
+            }
+      - id: ordne-gesprochen
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Wir haben über einen Freund gesprochen.
+
+  - slug: tratsch-vergleiche
+    title: 'Vergleiche: lustiger als, am lustigsten'
+    minutes: 8
+    items:
+      - id: interessanter
+        type: multipleChoice
+        prompt: Tratsch ist ___ als Nachrichten.
+        options:
+          - { text: interessanter, correct: true }
+          - {
+              text: mehr interessant,
+              feedback: 'Im Deutschen sagen wir nicht *mehr interessant*. Wir sagen Adjektiv + *-er*: *interessanter als*.',
+            }
+          - {
+              text: interessant,
+              feedback: 'Vor *als* brauchen wir den Komparativ mit *-er*: *interessanter*.',
+            }
+      - id: so-wie
+        type: fillBlank
+        prompt: 'Gleich: Ergänze die zwei Wörter.'
+        text: Mein Freund ist ___ neugierig ___ ich.
+        blanks: [[so, genauso], [wie]]
+      - id: gespraechigste
+        type: multipleChoice
+        prompt: Meine Mutter ist die ___ Person in meiner Familie.
+        options:
+          - { text: gesprächigste, correct: true }
+          - {
+              text: gesprächiger,
+              feedback: '*gesprächiger* ist der Komparativ (mit *als*). Mit *die* + Nomen sagen wir *die gesprächigste Person*.',
+            }
+          - {
+              text: meisten gesprächige,
+              feedback: 'Beim Superlativ benutzen wir *-ste*, nicht *meisten*: *die gesprächigste Person*.',
+            }
+      - id: mehr-lustig
+        type: trueFalse
+        prompt: 'Der Satz *Shakira ist mehr lustig als Adele.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Richtig ist: *Shakira ist lustiger als Adele.*'
+          incorrect: 'Im Deutschen sagen wir nicht *mehr lustig*, sondern *lustiger*: *Shakira ist lustiger als Adele.*'
+      - id: lustiger
+        type: fillBlank
+        prompt: Schreib den Komparativ von *lustig*.
+        text: Annas Geschichte war ___ als Johns Geschichte.
+        blanks: [[lustiger]]
+      - id: superlativ
+        type: matching
+        prompt: Welcher Superlativ passt?
+        pairs:
+          - [lustig, am lustigsten]
+          - [interessant, am interessantesten]
+          - [dramatisch, am dramatischsten]
+          - [gut, am besten]
+          - [viel, am meisten]
+      - id: weniger
+        type: multipleChoice
+        prompt: Ich bin ___ dramatisch als meine Schwester.
+        options:
+          - { text: weniger, correct: true }
+          - { text: wenig, feedback: 'Für einen Vergleich mit *als* sagen wir *weniger … als*.' }
+          - {
+              text: so,
+              feedback: '*so* passt zu *wie*: *so dramatisch wie*. Mit *als* sagen wir *weniger dramatisch als*.',
+            }
+      - id: ordne-mehr
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Mein Freund tratscht mehr als ich.

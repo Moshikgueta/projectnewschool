@@ -1,0 +1,645 @@
+# Cycle "Occasioni speciali: passato", converted from the Italian level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-livello-2
+slug: occasioni-speciali-passato
+title: 'Occasioni speciali: passato'
+goal: Raccontare feste e momenti speciali al passato prossimo e fare domande sul passato.
+position: 6
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Raccontare al passato" and "Domande sul passato")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's summary rules, its examples and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Skills: the notebook's "Abilità" are general (speaking, listening; moved to a
+    teacher note). The two cycle skills come from its goals and summary: "Raccontare
+    al passato" (passato prossimo, affirmative and negative) and "Domande sul
+    passato".
+  - >-
+    The lesson summary and the homework instructions are in Hebrew in the notebook.
+    They are rewritten in Italian (the Hebrew translations of the examples are left
+    out; the vocabulary keeps its Hebrew glosses). The Hebrew sentences of the
+    translation exercise (homework part 4) stay in Hebrew, in a block marked as
+    Hebrew.
+  - >-
+    Summary, grammar: "essere" is described only as the auxiliary of verbs of motion
+    or change of state, but the summary itself uses reflexive verbs ("Mi sono
+    alzato, mi sono vestito"); the rule now says reflexive verbs also take "essere".
+    The activities describe the party with "era / c'era / c'erano" (imperfetto) while
+    the notebook says "use the passato prossimo"; a rule on these description forms
+    was ADDED. Tables of the passato prossimo with avere (festeggiare) and essere
+    (andare) for all persons were ADDED. Please confirm.
+  - >-
+    Corrections: Activity 2 example "Ho cucinato un piatto che non avevo mai fatto
+    prima" (trapassato prossimo, above A2) → "Ho cucinato un piatto molto
+    difficile"; Activity 5 "Ha mangiato torta" → "Ha mangiato la torta"; Activity 1
+    preparation "dove era / con chi era / cosa ha fatto" → "dov'era la festa / con
+    chi eri / cosa hai fatto"; frames now offer "andato / andata", "stato / stata";
+    the stray "\\" after "ביטויי זמן" and the "ð" characters before the Mori
+    instructions were removed.
+  - >-
+    Mori: what Mori should do (correct mistakes, ask for full answers, remind you
+    to use time expressions…) was a Hebrew note under each message; it is now part
+    of each message, so that Mori actually does it. Please check.
+  - >-
+    The classic homework (writing, completing, choosing avere / essere, translating)
+    is kept in the homework section with answer boxes; the answer key is in a
+    teacher note. Activity 5 needs character cards (singer, footballer, actor, chef,
+    influencer); the notebook has none. The Shakira example is kept as in the
+    notebook. The notebook gives no activity times, so no minutes are recorded.
+  - >-
+    Links: the gamma.app lesson slides link is not allowed and is left out (see the
+    teacher note); "?new" was removed from the Quizlet link. The "Risposta dello
+    studente 1/2/3" lines are replaced by the answer boxes.
+  - >-
+    Vocabulary: "Sono venuto… הגעתי / הגעת / הגענו" → "באתי / באת / באנו (הגעתי)";
+    "Ho regalato… נתתי מתנה / נתת / נתנו" → "נתתי מתנה / נתת מתנה / נתנו מתנה". Please
+    confirm.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: occasioni-speciali-passato-classe
+    title: 'In classe: Occasioni speciali (passato)'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: 'Occasioni speciali: passato'
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Raccontare al passato
+            description: "*L'anno scorso ho festeggiato il mio compleanno a casa. Non sono andato alla festa.*"
+          - name: Domande sul passato
+            description: '*Cosa hai fatto? Dove sei andato? Chi è venuto?*'
+      - id: quizlet
+        type: externalLink
+        label: Occasioni speciali (passato) su Quizlet
+        url: https://quizlet.com/br/1173775650/occasioni-speciali-passate-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazioni
+      - id: intro
+        type: sentenceFrame
+        prompt: "Di' il tuo nome e completa **una** di queste frasi: *L'anno scorso ho festeggiato ___. · L'ultima volta che sono andato / andata a una festa, ho ___. · Ricordo un'occasione speciale perché ___.*"
+        frame: Mi chiamo ___. ___.
+        example: Mi chiamo Dana. L'anno scorso ho festeggiato il mio compleanno al mare.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quale regalo hai ricevuto per il tuo ultimo compleanno?
+            frame: 'Ho ricevuto ___ da ___. (Esempio: Ho ricevuto un libro da mia sorella.)'
+          - question: Che regalo hai fatto a un amico o a un familiare?
+            frame: 'Ho regalato ___ a ___. (Esempio: Ho regalato una maglietta a un amico.)'
+          - question: Dove hai festeggiato il tuo compleanno più bello?
+            frame: 'Ho festeggiato ___. (Esempio: Ho festeggiato in un ristorante.)'
+          - question: Cosa hai fatto il primo giorno di scuola?
+            frame: 'Il primo giorno di scuola ___. (Esempio: Ho conosciuto i miei compagni.)'
+          - question: Sei mai stato / stata a una festa noiosa?
+            frame: 'Sì, ___. / No, non ___. (Esempio: Sì, mi sono annoiato molto.)'
+          - question: Quale festa di famiglia ricordi con piacere?
+            frame: 'Ricordo ___. (Esempio: Il matrimonio di mio cugino.)'
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Intervista su tradizioni e feste'
+        skills: [Domande sul passato, Raccontare al passato]
+        steps:
+          - "Da solo: pensa a una festa speciale a cui sei stato / stata (compleanno, matrimonio, laurea…). Prepara qualche idea: dov'era la festa, con chi eri, cosa hai fatto."
+          - 'In coppia: lo studente A fa le domande qui sotto, lo studente B risponde al passato.'
+          - Scambiatevi i ruoli.
+          - Alcuni studenti raccontano alla classe la festa del compagno.
+        example: '*Lui è andato a una festa di compleanno. Ha mangiato la pizza e ha ballato molto.*'
+      - id: act1-questions
+        type: discussionQuestions
+        title: Domande dell'intervista
+        items:
+          - question: Dov'era la festa?
+          - question: Che tipo di festa era?
+          - question: Chi ha festeggiato?
+          - question: Quante persone c'erano?
+          - question: Che regalo hai fatto o ricevuto?
+          - question: Cosa hai mangiato e bevuto?
+          - question: Che musica c'era? Hai ballato?
+          - question: Perché era speciale?
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Due storie. Vero o falso?'
+        skills: [Raccontare al passato, Domande sul passato]
+        steps:
+          - "Da solo: pensa a due storie personali (una festa, un matrimonio, un compleanno, un evento speciale). Una è **vera**, l'altra è **inventata**."
+          - Racconta le due storie al gruppo, senza dire quale è vera.
+          - Gli altri studenti fanno domande per capire meglio le storie.
+          - Il gruppo vota quale storia è vera e quale è falsa.
+        example: |-
+          *Storia 1: L'anno scorso sono andato in Brasile e ho imparato la capoeira con un insegnante famoso. È stata un'esperienza incredibile.*
+          *Storia 2: Due anni fa ho partecipato a un concorso di cucina e ho vinto il primo premio. Ho cucinato un piatto molto difficile.*
+      - id: act2-stories
+        type: discussionQuestions
+        title: Le mie due storie
+        items:
+          - question: 'Storia 1: ___'
+          - question: 'Storia 2: ___'
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Cronologia delle celebrazioni'
+        skills: [Raccontare al passato, Domande sul passato]
+        steps:
+          - 'Da solo: pensa a 3 o 4 momenti importanti della tua vita (un compleanno, un matrimonio, un viaggio, una laurea).'
+          - Disegna o scrivi una linea del tempo, con una frase al passato prossimo per ogni momento.
+          - 'In coppia o in piccoli gruppi: racconta la tua cronologia in ordine, con le espressioni di tempo.'
+          - "Il compagno fa 1 o 2 domande per ogni momento: *Con chi eri? Dov'era? Cosa hai fatto?*"
+        example: |-
+          *Nel 2018 ho festeggiato la mia laurea.*
+          *Nel 2020 sono andato al matrimonio di mio cugino.*
+      - id: act3-timeline
+        type: discussionQuestions
+        title: La mia cronologia
+        items:
+          - question: 'Nel ___'
+            frame: Nel ___ ho festeggiato / sono andato / sono andata ___.
+          - question: 'Nel ___'
+          - question: 'Nel ___'
+          - question: 'Nel ___'
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Diario di una festa'
+        skills: [Raccontare al passato, Domande sul passato]
+        steps:
+          - "Da solo: pensa a un'occasione speciale (un compleanno, una festa, un evento importante)."
+          - "Scrivi un mini-diario di 4 o 5 frasi. Usa le espressioni di tempo: *ieri, l'anno scorso, due anni fa, il giorno del mio compleanno*."
+          - 'In coppia: leggi il tuo diario al compagno.'
+          - "Fai una domanda al compagno: *Chi era con te? Cosa hai mangiato? Dov'era la festa?*"
+        example: |-
+          *L'anno scorso ho festeggiato il mio compleanno a casa.*
+          *Sono venuti i miei amici.*
+          *Abbiamo mangiato la pizza e bevuto bibite.*
+          *Abbiamo ballato e cantato.*
+          *È stato molto divertente.*
+      - id: act4-diary
+        type: discussionQuestions
+        title: Il mio diario
+        items:
+          - question: ___
+            frame: L'anno scorso / Due anni fa ho festeggiato ___.
+          - question: ___
+          - question: ___
+          - question: ___
+          - question: ___
+      - id: act5
+        type: classActivity
+        title: 'Attività 5: Intervista famosa'
+        skills: [Domande sul passato, Raccontare al passato]
+        steps:
+          - Scegli o ricevi una carta con un personaggio (un cantante, un calciatore, un attore, uno chef, un influencer…).
+          - 'In coppia: lo studente A è il giornalista, lo studente B è la persona famosa.'
+          - Il giornalista fa domande su un evento speciale del passato. La persona famosa risponde al passato prossimo.
+          - Scambiatevi i ruoli.
+          - Presenta il tuo compagno alla classe.
+        example: |-
+          *Sono Shakira. L'anno scorso ho cantato alla festa di compleanno di mio figlio. Abbiamo ballato e mangiato la torta.*
+          *Presentazione: Lui è un cantante. L'anno scorso ha festeggiato con la sua famiglia. Ha mangiato la torta e ha ballato molto.*
+      - id: act5-questions
+        type: discussionQuestions
+        title: Le domande del giornalista
+        items:
+          - question: Dove hai festeggiato la tua festa più bella?
+          - question: Con chi hai festeggiato?
+          - question: Cosa hai mangiato o bevuto?
+          - question: Che regalo hai ricevuto?
+          - question: Quale momento speciale ricordi?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Obiettivi: parlare di esperienze passate legate a feste e momenti speciali,
+          usare il **passato prossimo** in modo semplice e chiaro e raccontare con più
+          fluidità. Abilità: espressione orale (raccontare esperienze) e comprensione
+          orale (capire i compagni). Le slide della lezione erano su gamma.app, che non è
+          nella lista dei link permessi: se le usi, condividile tu dallo schermo.
+      - id: n-intro
+        anchor: intro-title
+        text: Fai prima il tuo esempio e poi chiedi a ogni studente di dire 2 frasi.
+      - id: n-warmup
+        anchor: warmup-title
+        text: Fai almeno due domande a ogni studente.
+      - id: n-act1
+        anchor: act1
+        text: Alla fine, alcuni studenti raccontano la festa del compagno in terza persona (*Lui è andato…, Lei ha ballato…*).
+      - id: n-act2
+        anchor: act2
+        text: Dai prima tu le due storie di esempio e fai votare la classe. Ricorda agli studenti di non dire quale storia è vera.
+      - id: n-act3
+        anchor: act3
+        text: Gli studenti devono raccontare in ordine e usare le espressioni di tempo (*nel 2018, due anni fa, l'anno scorso*).
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Prepara prima della lezione delle carte con personaggi reali o inventati (un
+          cantante, un calciatore, un attore, uno chef, un influencer). Il quaderno non ha
+          le carte.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: occasioni-speciali-passato-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: overview
+        type: text
+        text: >-
+          Oggi abbiamo parlato di esperienze passate (feste, viaggi, compleanni, la
+          scuola, la famiglia). Abbiamo praticato le frasi affermative e negative al
+          passato, le domande sul passato e le espressioni di tempo.
+      - id: rules-racconto
+        type: ruleSummary
+        skill: Raccontare al passato
+        rules:
+          - text: 'Il **passato prossimo** si forma con **avere** o **essere** + il **participio passato**.'
+            examples:
+              - Ho festeggiato il mio compleanno a casa.
+              - Sono andato a un matrimonio.
+          - text: 'La maggior parte dei verbi usa **avere**.'
+            examples: ['Ho mangiato, ho bevuto, ho parlato']
+          - text: 'I verbi di movimento o di cambiamento (*andare, venire, arrivare*) e i verbi riflessivi (*alzarsi, vestirsi, annoiarsi*) usano **essere**. Con **essere** il participio cambia come il soggetto (maschile / femminile, singolare / plurale).'
+            examples:
+              - Sono andato / Sono andata alla festa.
+              - Lei è arrivata tardi.
+              - I miei amici sono venuti.
+              - Mi sono alzato, mi sono vestito e sono andato alla festa.
+          - text: 'Per la **negazione** mettiamo **non** prima del verbo.'
+            examples: [Non ho mangiato la torta., Non sono andato alla festa.]
+          - text: "Usiamo il passato prossimo per un'azione finita, per una serie di azioni e per le esperienze personali."
+            examples:
+              - Ieri ho cenato con la mia famiglia.
+              - Mi sono alzato, mi sono vestito e sono andato alla festa.
+              - Ho incontrato molte persone nuove.
+          - text: "Per **descrivere** la festa (com'era, chi c'era) usiamo spesso *era*, *c'era*, *c'erano*."
+            examples: [La festa era a casa mia., C'era musica pop., C'erano molte persone.]
+      - id: pp-table
+        type: table
+        caption: Passato prossimo con avere e con essere
+        header: [Persona, festeggiare (avere), andare (essere)]
+        rows:
+          - [io, ho festeggiato, sono andato / andata]
+          - [tu, hai festeggiato, sei andato / andata]
+          - [lui / lei, ha festeggiato, è andato / andata]
+          - [noi, abbiamo festeggiato, siamo andati / andate]
+          - [voi, avete festeggiato, siete andati / andate]
+          - [loro, hanno festeggiato, sono andati / andate]
+      - id: rules-domande
+        type: ruleSummary
+        skill: Domande sul passato
+        rules:
+          - text: 'Parola interrogativa + verbo al passato prossimo.'
+            examples:
+              - Cosa hai fatto?
+              - Dove sei andato?
+              - Chi è venuto?
+      - id: party-examples
+        type: callout
+        tone: info
+        title: Esempi di feste
+        text: |-
+          *L'anno scorso ho festeggiato il mio compleanno in un ristorante.*
+          *I miei amici mi hanno fatto un regalo.*
+          *Abbiamo ballato e ascoltato musica.*
+          *Abbiamo mangiato la pizza e bevuto bibite.*
+          *È stata una festa speciale.*
+      - id: time-words
+        type: table
+        caption: Espressioni di tempo
+        header: [Italiano, Ebraico]
+        rows:
+          - [ieri, אתמול]
+          - [la notte scorsa, אתמול בלילה]
+          - [la settimana scorsa, בשבוע שעבר]
+          - [il mese scorso, בחודש שעבר]
+          - [l'anno scorso, בשנה שעברה]
+          - [due giorni fa, לפני יומיים]
+          - [tre anni fa, לפני שלוש שנים]
+          - [nel 2020, בשנת 2020]
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: occasioni-speciali-passato-compiti
+    title: Compiti
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti
+      - id: classic-title
+        type: heading
+        level: 3
+        text: Versione classica
+      - id: hw-1
+        type: discussionQuestions
+        title: 'Parte 1: Scrivi 5 frasi su un evento speciale del passato (una festa, un compleanno, un viaggio…). Usa il passato prossimo e le espressioni di tempo.'
+        items:
+          - question: L'anno scorso ho festeggiato ___.
+          - question: ___
+          - question: ___
+          - question: ___
+          - question: ___
+      - id: hw-2
+        type: discussionQuestions
+        title: 'Parte 2: Completa con il verbo al passato prossimo.'
+        items:
+          - question: Io ___ (mangiare) la pizza alla festa.
+          - question: Noi ___ (bere) bibite.
+          - question: Lei ___ (andare) a un matrimonio.
+          - question: Io ___ (ricevere) un regalo.
+          - question: Noi ___ (ballare) tutta la notte.
+      - id: hw-3
+        type: discussionQuestions
+        title: 'Parte 3: Scegli la forma giusta (avere o essere).'
+        items:
+          - question: Io ___ (ho / sono) andato alla festa.
+          - question: Noi ___ (ho / abbiamo) mangiato la pizza.
+          - question: Lei ___ (è / ha) arrivata tardi.
+          - question: Io ___ (ho / sono) ricevuto un regalo.
+          - question: Loro ___ (sono / hanno) andati a casa.
+      - id: hw-4-title
+        type: heading
+        level: 4
+        text: 'Parte 4: Traduci in italiano.'
+      - id: hw-4
+        type: discussionQuestions
+        lang: he
+        items:
+          - question: חגגתי את יום ההולדת שלי בבית.
+          - question: הלכתי למסיבה עם חברים.
+          - question: אכלנו פיצה ושתינו קולה.
+          - question: לא הלכתי למסיבה.
+          - question: מה עשית אתמול?
+      - id: mori-title
+        type: heading
+        level: 3
+        text: Con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia un messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Parte 1: Conversazione'
+        message: Ciao Mori! Fammi domande sulle mie esperienze passate (feste, compleanni, viaggi). Correggi i miei errori e chiedimi di rispondere con frasi complete.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Parte 2: Diario guidato'
+        message: "Ciao Mori! Aiutami a scrivere un diario di 5 frasi su una festa. Chiedimi di usare «ieri», «l'anno scorso» e «due anni fa», e correggimi."
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Parte 3: Due storie (vero o falso)'
+        message: Ciao Mori! Aiutami a scrivere due storie al passato, una vera e una falsa. Prima la storia vera, poi la storia inventata. Aiutami anche con le parole.
+      - id: mori-4
+        type: aiTutorPrompt
+        title: 'Parte 4: Cronologia'
+        message: Ciao Mori! Chiedimi di parlare di 3 momenti importanti della mia vita, con 3 frasi. Ricordami di usare le espressioni di tempo.
+      - id: mori-5
+        type: aiTutorPrompt
+        title: 'Parte 5: Trasformazione grammaticale'
+        intro: 'Esempi: *Mangio la pizza → Ho mangiato la pizza* · *Vado alla festa → Sono andato alla festa*'
+        message: Ciao Mori! Dammi frasi al presente e aiutami a trasformarle al passato.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+    teacherNotes:
+      - id: n-key
+        anchor: hw-2
+        text: >-
+          Soluzioni. Parte 2: ho mangiato · abbiamo bevuto · è andata · ho ricevuto ·
+          abbiamo ballato. Parte 3: sono · abbiamo · è · ho · sono. Parte 4: Ho
+          festeggiato il mio compleanno a casa. · Sono andato / andata alla festa con gli
+          amici (con i miei amici). · Abbiamo mangiato la pizza e bevuto la Coca-Cola. ·
+          Non sono andato / andata alla festa. · Cosa hai fatto ieri?
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: occasioni-speciali-passato-pratica
+    book: workbook
+    title: 'Pratica: Occasioni speciali (passato)'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-racconto
+        type: activity
+        activity: occasioni-speciali-passato-racconto
+      - id: ex-domande
+        type: activity
+        activity: occasioni-speciali-passato-domande
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: occasioni-speciali-passato-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole delle occasioni speciali
+        glossLang: he
+        link: https://quizlet.com/br/1173775650/occasioni-speciali-passate-flash-cards/
+        items: &occasioni-speciali-passato-words
+          - {
+              term: Ho festeggiato / Hai festeggiato / Abbiamo festeggiato,
+              gloss: חגגתי / חגגת / חגגנו,
+            }
+          - { term: Ho ricevuto / Hai ricevuto / Abbiamo ricevuto, gloss: קיבלתי / קיבלת / קיבלנו }
+          - {
+              term: Ho regalato / Hai regalato / Abbiamo regalato,
+              gloss: נתתי מתנה / נתת מתנה / נתנו מתנה,
+            }
+          - {
+              term: Ho partecipato / Hai partecipato / Abbiamo partecipato,
+              gloss: השתתפתי / השתתפת / השתתפנו,
+            }
+          - { term: Ho ricordato / Hai ricordato / Abbiamo ricordato, gloss: זכרתי / זכרת / זכרנו }
+          - {
+              term: Ho incontrato / Hai incontrato / Abbiamo incontrato,
+              gloss: פגשתי / פגשת / פגשנו,
+            }
+          - {
+              term: Ho organizzato / Hai organizzato / Abbiamo organizzato,
+              gloss: ארגנתי / ארגנת / ארגנו,
+            }
+          - { term: Ho ballato / Hai ballato / Abbiamo ballato, gloss: רקדתי / רקדת / רקדנו }
+          - { term: Ho cantato / Hai cantato / Abbiamo cantato, gloss: שרתי / שרת / שרנו }
+          - { term: Sono andato / Sei andato / Siamo andati, gloss: הלכתי / הלכת / הלכנו }
+          - { term: Sono venuto / Sei venuto / Siamo venuti, gloss: באתי / באת / באנו (הגעתי) }
+          - { term: Ho fatto / Hai fatto / Abbiamo fatto, gloss: עשיתי / עשית / עשינו }
+          - { term: Ho mangiato / Hai mangiato / Abbiamo mangiato, gloss: אכלתי / אכלת / אכלנו }
+          - { term: Ho bevuto / Hai bevuto / Abbiamo bevuto, gloss: שתיתי / שתית / שתינו }
+          - { term: Sono stato / Sei stato / Siamo stati, gloss: הייתי / היית / היינו }
+          - { term: Ho avuto / Hai avuto / Abbiamo avuto, gloss: היה לי / היה לך / היה לנו }
+          - { term: festa, gloss: מסיבה }
+          - { term: compleanno, gloss: יום הולדת }
+          - { term: matrimonio, gloss: חתונה }
+          - { term: evento, gloss: אירוע }
+          - { term: occasione, gloss: אירוע / הזדמנות }
+          - { term: regalo, gloss: מתנה }
+          - { term: invitato, gloss: אורח }
+          - { term: ricordo, gloss: זיכרון }
+          - { term: esperienza, gloss: חוויה }
+          - { term: musica, gloss: מוזיקה }
+          - { term: cibo, gloss: אוכל }
+          - { term: bevanda, gloss: משקה }
+          - { term: torta, gloss: עוגה }
+          - { term: ristorante, gloss: מסעדה }
+          - { term: viaggio, gloss: טיול }
+          - { term: ieri, gloss: אתמול }
+          - { term: la settimana scorsa, gloss: בשבוע שעבר }
+          - { term: l'anno scorso, gloss: בשנה שעברה }
+          - { term: due anni fa, gloss: לפני שנתיים }
+
+vocabulary:
+  - slug: occasioni-speciali-passato
+    title: 'Occasioni speciali: passato'
+    items: *occasioni-speciali-passato-words
+
+activities:
+  - slug: occasioni-speciali-passato-racconto
+    title: 'Raccontare al passato: ho festeggiato, sono andato'
+    minutes: 8
+    items:
+      - id: sono-andato
+        type: multipleChoice
+        prompt: Io ___ andato alla festa di Marco.
+        options:
+          - { text: sono, correct: true }
+          - { text: ho, feedback: '*Andare* è un verbo di movimento: usa *essere*, *sono andato*.' }
+      - id: ballato-cantato
+        type: fillBlank
+        prompt: Completa con il passato prossimo di *ballare* e *cantare*.
+        text: Alla festa noi ___ e ___ tutta la sera.
+        blanks: [[abbiamo ballato], [cantato, abbiamo cantato]]
+      - id: lei-arrivata
+        type: multipleChoice
+        prompt: Lei ___ tardi alla festa.
+        options:
+          - { text: è arrivata, correct: true }
+          - {
+              text: è arrivato,
+              feedback: 'Con *essere* il participio cambia come il soggetto: *lei* è femminile, quindi *è arrivata*.',
+            }
+          - { text: ha arrivata, feedback: '*Arrivare* usa *essere*: *è arrivata*.' }
+      - id: unisci-verbi
+        type: matching
+        prompt: Unisci ogni verbo alla forma di *io* al passato prossimo.
+        pairs:
+          - [festeggiare, ho festeggiato]
+          - [ricevere, ho ricevuto]
+          - [venire, sono venuto]
+          - [bere, ho bevuto]
+          - [fare, ho fatto]
+      - id: negazione
+        type: trueFalse
+        prompt: 'Per la negazione mettiamo *non* prima del verbo: *Non sono andato alla festa.*'
+        answer: true
+        feedback:
+          correct: Giusto! *Non* va prima di *sono* / *ho*.
+          incorrect: '*Non* va prima del verbo: *Non sono andato*, *Non ho mangiato*.'
+      - id: amici-venuti
+        type: fillBlank
+        prompt: Completa con il passato prossimo di *venire*.
+        text: Per il mio compleanno ___ tutti i miei amici.
+        blanks: [[sono venuti]]
+      - id: non-sono-andato
+        type: multipleChoice
+        prompt: Ieri sera ___ alla festa, perché ero stanco.
+        options:
+          - { text: non sono andato, correct: true }
+          - { text: sono non andato, feedback: '*Non* va prima del verbo: *non sono andato*.' }
+          - { text: non ho andato, feedback: '*Andare* usa *essere*: *non sono andato*.' }
+      - id: ordina-compleanno
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: L'anno scorso ho festeggiato il mio compleanno a casa.
+
+  - slug: occasioni-speciali-passato-domande
+    title: 'Domande sul passato: Cosa hai fatto? Chi è venuto?'
+    minutes: 8
+    items:
+      - id: che-regalo
+        type: multipleChoice
+        prompt: 'Risposta: *Ho ricevuto un libro da mia sorella.* Qual è la domanda?'
+        options:
+          - { text: Che regalo hai ricevuto?, correct: true }
+          - {
+              text: Che regalo ho ricevuto?,
+              feedback: "*Ho ricevuto* è per *io*. Per fare una domanda a un'altra persona (tu) usiamo *hai ricevuto*.",
+            }
+          - {
+              text: Dove hai festeggiato?,
+              feedback: 'La risposta non dice dove, dice quale regalo: *un libro*.',
+            }
+      - id: sei-andata
+        type: fillBlank
+        prompt: Fai una domanda a Sara. Completa con il passato prossimo di *andare*.
+        text: Sara, dove ___ sabato sera? — Sono andata a un matrimonio.
+        blanks: [[sei andata, tu sei andata]]
+      - id: unisci-domande
+        type: matching
+        prompt: Unisci ogni domanda alla sua risposta.
+        pairs:
+          - [Chi è venuto alla festa?, Sono venuti i miei cugini.]
+          - [Cosa avete mangiato?, Abbiamo mangiato la pizza.]
+          - [Dove hai festeggiato?, Ho festeggiato in un ristorante.]
+          - [Che musica c'era?, C'era musica pop.]
+          - [Con chi hai ballato?, Ho ballato con mia sorella.]
+      - id: chi-venuto
+        type: multipleChoice
+        prompt: Chi ___ alla tua festa?
+        options:
+          - { text: è venuto, correct: true }
+          - { text: ha venuto, feedback: '*Venire* usa *essere*: *Chi è venuto?*' }
+          - {
+              text: sei venuto,
+              feedback: '*Chi* vuole il verbo alla terza persona: *Chi è venuto?*',
+            }
+      - id: hai-fatto
+        type: fillBlank
+        prompt: Completa la domanda con il passato prossimo di *fare* (tu).
+        text: Cosa ___ il primo giorno di scuola? — Ho conosciuto i miei compagni.
+        blanks: [[hai fatto, tu hai fatto]]
+      - id: essere-movimento
+        type: trueFalse
+        prompt: 'Nella domanda *Dove sei andato?* usiamo *essere* perché *andare* è un verbo di movimento.'
+        answer: true
+        feedback:
+          correct: Giusto! *Andare, venire, arrivare* usano *essere*.
+          incorrect: '*Andare* è un verbo di movimento e usa *essere*: *sei andato*.'
+      - id: report-ballato
+        type: multipleChoice
+        prompt: 'Marco dice: *Ho ballato molto.* Lo racconti alla classe: Marco ___ molto.'
+        options:
+          - { text: ha ballato, correct: true }
+          - {
+              text: ho ballato,
+              feedback: '*Ho ballato* è per *io*. Per Marco (lui) usiamo *ha ballato*.',
+            }
+          - { text: è ballato, feedback: '*Ballare* usa *avere*: *ha ballato*.' }
+      - id: ordina-regalo
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Che regalo hai ricevuto per il tuo compleanno?

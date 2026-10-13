@@ -1,0 +1,858 @@
+# Cycle "Musica", converted from the Italian level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-livello-2
+slug: musica
+title: Musica
+goal: Fare domande sulla musica e raccontare ricordi musicali con presente, passato prossimo e imperfetto.
+position: 19
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Abilità sociali" and "Narrazione mista") are NEW:
+    the notebook has no self-correcting exercises. They were written from the
+    cycle's two skills, its summary rules, the activity examples and its
+    vocabulary. Please check level, wording and every right answer before
+    students see them.
+  - >-
+    No song lyrics were copied. Activity 1 asks the teacher to choose the song;
+    the notebook's cloze text is a teacher-made text (not lyrics) and is kept.
+    The teacher note asks the teacher to play the song from YouTube or Spotify
+    and never to paste lyrics into the platform.
+  - >-
+    The grammar summary ("סיכום דקדוקי") is in Hebrew in the notebook. It was
+    rewritten in Italian as rule summaries (presente, passato prossimo,
+    imperfetto, passato prossimo vs imperfetto, past + present, comparisons), with
+    the Italian examples kept. The short student summary ("סיכום קצר לתלמידים")
+    repeats the same rules and examples, so it is kept once, as the "Cosa sappiamo
+    fare adesso" callout.
+  - >-
+    Summary, "Meglio di / Peggio di": all the notebook examples use "meglio che"
+    between two infinitives ("ascoltare musica dal vivo è meglio che ascoltare
+    musica sul telefono"). The rule now says: meglio / peggio + di before a noun or
+    pronoun ("Canti meglio di me", ADDED example), meglio / peggio + che between two
+    verbs. Please confirm.
+  - >-
+    Summary: a table of the passato prossimo with essere (andato / andata / andati
+    / andate) was ADDED from the notebook's examples; the Hebrew line "פעם אהבתי
+    רוק, אבל היום אני מעדיף פו" is cut off in the source (the Italian sentence is
+    complete).
+  - >-
+    Activity 2: "La sua canzone famosa è «Con Altura»" → "Una delle sue canzoni più
+    famose è «Con altura»" (Rosalía has several famous songs). Please check the
+    artists' facts (Shakira born in Barranquilla in 1977, Rosalía near Barcelona in
+    1992).
+  - >-
+    Classic homework ("שיעורי בית קלאסיים", 8 parts) is kept in the homework
+    section as written exercises, with the Hebrew instructions translated into
+    Italian; the answer key is in the teacher notes. Corrections in Part 5: "Il jazz
+    è ___ popolare ___ il pop" and "Il rock è ___ ballabile ___ la salsa" had the
+    article in the sentence, but the key says "meno… del / della" ("del il pop" is
+    wrong): the article was removed from the sentences ("___ pop", "___ salsa").
+    Part 1 item 10: missing closing bracket "(piacere" fixed. Part 7 key: the
+    narrator is a man ("Quando ero bambino", "sono andato"), so "Le piaceva / Gli
+    piaceva" → "Gli piaceva" and "È andato / andata" → "È andato".
+  - >-
+    Vocabulary: "Internazionale – בין לאומי" → "בינלאומי" (spelling); "Prendere
+    appunti – לכתוב הערות" → "לרשום הערות". Please confirm.
+  - >-
+    The Mori tasks (5 parts) are kept; the example questions under each task are
+    shown as an intro to the message. The tips callout was added as in the other
+    cycles. The Quizlet link is kept without its "?new" parameter. The "Risposta
+    dello studente 1/2/3" lines are replaced by the optional answer boxes. The
+    notebook gives no times for this cycle, so none are recorded.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: musica-classe
+    title: 'In classe: Musica'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Musica
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Abilità sociali
+            description: 'Fare domande, intervistare un compagno e reagire alle sue risposte: *Che musica ascolti? Sei mai andato a un concerto?*'
+          - name: Narrazione mista
+            description: "Parlare di gusti musicali al presente e raccontare esperienze al passato prossimo e all'imperfetto: *Oggi ascolto il pop, ma prima ascoltavo il rock.*"
+      - id: quizlet
+        type: externalLink
+        label: Musica su Quizlet
+        url: https://quizlet.com/br/1191140446/musica-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazioni
+      - id: intro
+        type: sentenceFrame
+        prompt: Presentati con due frasi.
+        frame: Sono ___. Secondo me, il miglior genere musicale è ___. Mi piace ascoltare ___ quando ___.
+        example: Sono Marta. Secondo me, il miglior genere musicale è il rock. Mi piace ascoltare il rock quando cammino per strada.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di preparazione
+      - id: warmup-basso
+        type: discussionQuestions
+        title: Livello A2 basso
+        items:
+          - question: Ti piace ballare? Che tipo di musica ti fa venire voglia di ballare?
+            frame: Sì, mi piace ballare quando ascolto ___. / No, non mi piace molto ballare, ma mi piace ascoltare ___.
+          - question: Hai ascoltato musica ieri? Che genere hai ascoltato?
+            frame: 'Ieri ho ascoltato ___. (Esempio: Ieri ho ascoltato musica pop mentre cucinavo.)'
+          - question: Qual è stata l'ultima canzone famosa che hai ascoltato?
+            frame: L'ultima canzone famosa che ho ascoltato è stata ___.
+          - question: Hai mai visto un concerto dal vivo? Di chi?
+            frame: Sì, sono andato / andata a un concerto di ___. / No, non sono mai andato / andata a un concerto dal vivo.
+          - question: Quando ascolti musica di solito?
+            frame: 'Di solito ascolto musica quando ___. (Esempio: Di solito ascolto musica quando lavoro, cammino o viaggio.)'
+          - question: Sai cantare o suonare uno strumento?
+            frame: So cantare / suonare ___. / Non so cantare / suonare, ma mi piace ascoltare musica.
+      - id: warmup-alto
+        type: discussionQuestions
+        title: Livello A2 alto
+        items:
+          - question: Che ricordo hai di una canzone speciale del tuo passato?
+            frame: Una canzone speciale per me è ___ perché ___.
+          - question: Che musica ascoltavi quando eri bambino / bambina?
+            frame: Quando ero bambino / bambina, ascoltavo ___.
+          - question: Quale storia personale puoi raccontare su un concerto, una festa o una canzone?
+            frame: Una volta sono andato / andata a ___. È stato ___ perché ___.
+          - question: Quale canzone hai ascoltato molte volte nella tua vita? Perché?
+            frame: Ho ascoltato molte volte ___ perché ___.
+          - question: Come sono cambiati i tuoi gusti musicali negli ultimi anni?
+            frame: Prima ascoltavo ___, ma oggi ascolto di più ___.
+          - question: Quale artista di un altro paese hai scoperto grazie alla musica?
+            frame: Ho scoperto ___. Mi piace perché ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Una canzone tra ieri e oggi'
+        skills: [Narrazione mista]
+        steps:
+          - "Primo ascolto: ascolta la canzone che sceglie l'insegnante, senza leggere il testo. La canzone sembra felice, triste, romantica, energica o nostalgica? *Secondo me, la canzone è ___.*"
+          - 'Completa il testo qui sotto con i verbi della lista (presente, passato prossimo o imperfetto).'
+          - "Identificazione dei tempi: segna i verbi al presente, al passato prossimo e all'imperfetto. Quale verbo parla di oggi? Quale parla di un'azione finita nel passato? Quale parla di un'abitudine del passato?"
+          - 'Ieri e oggi: collega un evento passato a una conseguenza presente, come negli esempi.'
+          - 'Produzione personale: scrivi 3 frasi con passato e presente (qui sotto).'
+          - 'Discussione: perché alcune canzoni collegano il passato e il presente?'
+        example: |-
+          *Ieri ho studiato tutta la notte. Oggi sono stanco.*
+          *Ieri ho ascoltato una canzone triste. Oggi mi sento nostalgico.*
+          *Quando ero bambino, ascoltavo questa canzone con mio padre. Oggi questa canzone mi ricorda la mia famiglia.*
+          *Una volta ho cantato questa canzone a una festa. Oggi mi fa ridere.*
+        wordBank: [ascolto, ho pensato, ascoltavo, abbiamo cantato, mi sento]
+      - id: act1-cloze
+        type: discussionQuestions
+        title: Completa il testo
+        items:
+          - question: Oggi ___ una canzone lenta.
+          - question: Ieri ___ a una persona importante per me.
+          - question: Quando ero più giovane, ___ questa canzone ogni estate.
+          - question: Una volta, io e i miei amici ___ questa canzone a una festa.
+          - question: Adesso, quando la ascolto, ___ un po' nostalgico / nostalgica.
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Le mie frasi
+        items:
+          - question: Quando ero piccolo / piccola, ascoltavo ___.
+          - question: Oggi ascolto ___.
+          - question: Una volta ho cantato ___ e oggi questa canzone mi ricorda ___.
+      - id: act1-key
+        type: callout
+        tone: info
+        title: Idea chiave
+        text: La musica spesso collega quello che abbiamo vissuto con quello che sentiamo oggi.
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Biografia musicale'
+        skills: [Narrazione mista, Abilità sociali]
+        steps:
+          - 'Attivazione: quali cantanti italiani, latini o internazionali conosci? Quale canzone famosa ricordi?'
+          - "Lettura guidata: leggi la mini-biografia che ti dà l'insegnante (4 o 5 frasi)."
+          - Scegli un cantante e prepara 4 frasi (qui sotto).
+          - Presenta il tuo artista alla classe in 30 secondi.
+          - 'Confronti: in coppia o in gruppo, confronta due artisti.'
+          - "Chiusura: quale artista ti piace di più e perché? *L'artista che mi piace di più è ___ perché ___.*"
+        example: |-
+          *Shakira è nata a Barranquilla, in Colombia, nel 1977. È diventata famosa con canzoni in spagnolo e in inglese. Il suo stile unisce pop, rock e ritmi latini. Oggi è una delle cantanti latine più conosciute nel mondo. Mi piace perché è creativa e molto energica.*
+          *Rosalía è nata vicino a Barcellona nel 1992. Una delle sue canzoni più famose è «Con altura». Il suo stile unisce flamenco, pop e musica urbana. Mi piace perché è molto creativa.*
+      - id: act2-bio
+        type: discussionQuestions
+        title: Il mio artista
+        items:
+          - question: ___ è nato / nata a ___ nel ___.
+          - question: La sua canzone più famosa è ___.
+          - question: Il suo stile è ___.
+          - question: Mi piace / Non mi piace perché ___.
+      - id: act2-compare
+        type: discussionQuestions
+        title: Confronti
+        items:
+          - question: Confronta due artisti con *più… di*.
+            frame: ___ è più famoso / famosa di ___. (Shakira è più famosa di Rosalía.)
+          - question: Confronta due artisti con *più… di* o *meno… di*.
+            frame: ___ è più giovane / moderno / meno interessante di ___. (Bad Bunny è più moderno di Marc Anthony.)
+          - question: Chi è il più / la più ___?
+            frame: Secondo me, questa cantante è la più creativa.
+      - id: act3
+        type: classActivity
+        title: "Attività 3: Indovina l'artista"
+        skills: [Abilità sociali, Narrazione mista]
+        steps:
+          - 'Riscaldamento: guarda le foto o i nomi di 3 o 4 cantanti famosi e ripassa le strutture utili.'
+          - "Round dell'insegnante: l'insegnante descrive 4 o 5 artisti senza dire il nome. Indovina chi è."
+          - 'Round degli studenti: in coppia o in piccoli gruppi, ricevi il nome di un artista e prepara 3 frasi (qui sotto). La classe deve indovinare.'
+          - 'Dopo ogni artista, la classe fa un confronto: *Questo artista è più famoso di ___. / È meno conosciuto di ___. / Secondo me, è il / la più interessante.*'
+          - 'Chiusura: quale di questi cantanti preferisci e perché?'
+        example: |-
+          *È nata in Colombia. Il suo stile è il pop latino. È famosa per canzoni in spagnolo e in inglese. Chi è?*
+          *Risposta possibile: Shakira.*
+        wordBank:
+          [
+            È nato / nata a…,
+            È di…,
+            Il suo stile è…,
+            La sua canzone più famosa è…,
+            È famoso / famosa per…,
+          ]
+      - id: act3-description
+        type: discussionQuestions
+        title: Il nostro artista misterioso
+        items:
+          - question: È nato / nata a ___.
+          - question: Il suo stile è ___.
+          - question: Una sua canzone famosa è ___.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Ricordi musicali'
+        skills: [Narrazione mista, Abilità sociali]
+        steps:
+          - Leggi le domande del tuo livello.
+          - Rispondi con frasi brevi. Usa l'inizio della frase.
+          - In coppia, fai le domande al compagno e racconta al gruppo un suo ricordo musicale.
+      - id: act4-basso
+        type: discussionQuestions
+        title: Livello A2 basso
+        items:
+          - question: Qual è stata la prima canzone che ti è piaciuta?
+            frame: La prima canzone che mi è piaciuta è stata ___.
+          - question: Che musica ascoltavi da bambino / bambina?
+            frame: Da bambino / bambina ascoltavo ___.
+          - question: Sei mai andato / andata a un concerto?
+            frame: Sì, sono andato / andata a un concerto di ___. / No, non sono mai andato / andata a un concerto.
+          - question: Suonavi uno strumento musicale? Quale?
+            frame: Sì, suonavo ___. / No, non suonavo nessuno strumento.
+          - question: Cantavi a scuola o alle feste?
+            frame: Sì, cantavo ___. / No, non cantavo molto.
+          - question: Da bambino / bambina ballavi molto?
+            frame: Sì, ballavo spesso. / No, non ballavo molto.
+      - id: act4-alto
+        type: discussionQuestions
+        title: Livello A2 alto
+        items:
+          - question: Qual è stata la prima canzone che hai imparato a memoria? Dove l'hai sentita?
+            frame: La prima canzone che ho imparato a memoria è stata ___. L'ho sentita ___.
+          - question: Che musica ascoltavano i tuoi genitori a casa quando eri bambino / bambina?
+            frame: Quando ero bambino / bambina, i miei genitori ascoltavano ___.
+          - question: Qual è stato il primo concerto o festival a cui hai partecipato? Com'è stata l'esperienza?
+            frame: Sono andato / andata a un concerto di ___ nel ___. È stata un'esperienza ___.
+          - question: Hai studiato o suonato uno strumento? Per quanto tempo?
+            frame: Sì, ho studiato / suonato ___ per ___. / No, non ho mai studiato uno strumento.
+          - question: Guardavi programmi musicali in televisione? Quali ti piacevano?
+            frame: Sì, guardavo ___. Mi piaceva perché ___.
+          - question: Come sono cambiati i tuoi gusti musicali?
+            frame: Prima ascoltavo ___, ma oggi ascolto ___.
+      - id: act5
+        type: classActivity
+        title: "Attività 5: L'intervista musicale"
+        skills: [Abilità sociali, Narrazione mista]
+        steps:
+          - 'Oggi siamo giornalisti musicali: ogni studente intervista un compagno sui suoi gusti musicali di oggi e del passato.'
+          - Scegli 4 domande dalla lista (qui sotto) o inventa domande simili.
+          - In coppia, fai il giornalista e poi l'intervistato. Durante l'intervista prendi appunti.
+          - Presenta il tuo compagno come se fosse un artista.
+          - 'Chiusura: quali generi musicali sono più presenti nella classe? Quali erano più presenti nel passato? Qual è stata la risposta più sorprendente? Quale artista è il più amato dal gruppo?'
+        example: |-
+          *Questa è Marta. Oggi ascolta il reggaeton, ma prima ascoltava musica pop. La sua canzone preferita da bambina era «La Bamba». L'anno scorso è andata a un concerto di Marc Anthony. Secondo me, i suoi gusti musicali sono molto vari.*
+      - id: act5-questions
+        type: discussionQuestions
+        title: Domande per l'intervista
+        items:
+          - question: Che musica stai ascoltando molto in questo periodo?
+          - question: Qual era la tua canzone preferita quando eri bambino / bambina?
+          - question: Sei mai stato / stata a un concerto? Di chi?
+          - question: Quale genere ti piaceva prima, ma oggi non ascolti più?
+          - question: Quale cantante ti sorprende o ti piace molto oggi?
+          - question: Che canzone ti ricorda una persona importante?
+          - question: Che musica ascolti quando sei felice?
+          - question: Che musica ascolti quando sei triste?
+      - id: act5-present
+        type: discussionQuestions
+        title: Presento il mio compagno
+        items:
+          - question: Questo è / Questa è ___.
+          - question: Oggi ascolta ___, ma prima ascoltava ___.
+          - question: La sua canzone preferita da bambino / bambina era ___.
+          - question: L'anno scorso è andato / andata a un concerto di ___.
+          - question: Secondo me, i suoi gusti musicali sono ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Abilità sociali** (domande, intervista e
+          reazioni: Attività 3, 4 e 5) e **Narrazione mista** (presente, passato
+          prossimo e imperfetto: Attività 1, 2 e 4). Il quaderno non dà i tempi:
+          scegli una o due attività per lezione. Le domande di preparazione e
+          l'Attività 4 hanno due livelli (A2 basso e A2 alto): scegli quello del
+          gruppo.
+      - id: n-intro
+        anchor: intro
+        text: Fai prima il tuo esempio e poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup-basso
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Scegli tu la canzone e falla ascoltare da YouTube o da Spotify. Per evitare
+          problemi con i testi protetti, usa solo un breve frammento, una canzone già
+          autorizzata oppure il testo creato per l'attività (qui sopra): non copiare
+          il testo della canzone nella piattaforma. Soluzioni del testo da
+          completare: ascolto, ho pensato, ascoltavo, abbiamo cantato, mi sento.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Scrivi alla lavagna i nomi dei cantanti che dicono gli studenti. Distribuisci
+          mini-biografie di 4 o 5 frasi (come l'esempio di Shakira). Lascia alla
+          lavagna le strutture del modello.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Prepara foto o nomi di 3 o 4 cantanti famosi e un biglietto con il nome di
+          un artista per ogni gruppo. Descrivi 4 o 5 artisti senza dire il nome.
+      - id: n-act5
+        anchor: act5
+        text: 'Ogni studente presenta il compagno «come se fosse un artista». Alla fine fai le quattro domande di chiusura a tutto il gruppo.'
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: musica-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-presente
+        type: ruleSummary
+        skill: Presente
+        rules:
+          - text: 'Usiamo il **presente** per parlare di quello che succede adesso, delle abitudini e dei gusti: che musica ascolto, che cantante preferisco, cosa penso di un genere.'
+            examples:
+              - Mi piace ascoltare la salsa mentre cucino.
+              - Oggi ascolto molto pop.
+              - Non mi piace il rock pesante.
+              - Secondo me, il jazz è molto elegante.
+          - text: "**Mi piace** + nome (con l'articolo) o + verbo all'infinito."
+            examples: [Mi piace il pop., Mi piace ascoltare musica.]
+          - text: "**Di solito** + presente, per un'abitudine. **Secondo me** per dare un'opinione."
+            examples:
+              - Di solito ascolto musica quando cammino.
+              - Secondo me, il rock è più interessante del pop.
+      - id: rules-passato
+        type: ruleSummary
+        skill: Passato prossimo
+        rules:
+          - text: "Usiamo il **passato prossimo** per un'azione precisa e finita nel passato (in ebraico: שמעתי, הלכתי, גיליתי)."
+            examples:
+              - Ieri ho ascoltato una canzone famosa.
+              - Sono andato / andata a un concerto nel 2015.
+              - Ho scoperto un nuovo artista l'anno scorso.
+              - La prima canzone che mi è piaciuta è stata «La Bamba».
+          - text: 'Si forma con **avere** o **essere** al presente + **participio passato**. La maggior parte dei verbi usa *avere*.'
+            examples:
+              [Ho ascoltato una canzone., Abbiamo cantato insieme., Hai scoperto un artista nuovo?]
+          - text: "Verbi come **andare**, **nascere** e **diventare** usano *essere*. Con *essere* il participio cambia secondo chi fa l'azione (maschile / femminile, singolare / plurale)."
+            examples:
+              - Sono andato a un concerto. (un uomo)
+              - Sono andata a un concerto. (una donna)
+              - Shakira è nata in Colombia.
+              - È diventata famosa.
+      - id: essere-table
+        type: table
+        caption: Passato prossimo con essere (andare)
+        header: [Chi?, Maschile, Femminile]
+        rows:
+          - [io, sono andato, sono andata]
+          - [tu, sei andato, sei andata]
+          - [lui / lei, è andato, è andata]
+          - [noi, siamo andati, siamo andate]
+          - [voi, siete andati, siete andate]
+          - [loro, sono andati, sono andate]
+      - id: rules-imperfetto
+        type: ruleSummary
+        skill: Imperfetto
+        rules:
+          - text: "Usiamo l'**imperfetto** per le abitudini, gli stati e le descrizioni nel passato (in ebraico: הייתי שומע, היינו רוקדים)."
+            examples:
+              - Quando ero bambino, ascoltavo musica per bambini.
+              - I miei genitori ascoltavano salsa a casa.
+              - A quei tempi, alle feste si ballava sempre.
+              - Da adolescente, mi piaceva molto il rock.
+          - text: "**Passato prossimo** = un'azione precisa, finita. **Imperfetto** = un'abitudine, uno stato o una descrizione."
+            examples:
+              - Ieri ho ascoltato una canzone italiana. (passato prossimo)
+              - L'anno scorso sono andato a un concerto. (passato prossimo)
+              - Quando ero bambino, ascoltavo musica italiana. (imperfetto)
+              - Prima mi piaceva il rock, ma oggi preferisco il pop. (imperfetto + presente)
+          - text: 'Con la musica colleghiamo il passato e il presente: quello che è successo prima e quello che sentiamo oggi.'
+            examples:
+              - Da bambino ascoltavo questa canzone. Oggi mi ricorda la mia famiglia.
+              - Ho cantato questa canzone a una festa. Oggi mi fa ridere.
+              - Ieri ho ascoltato una canzone triste. Oggi mi sento nostalgico.
+      - id: rules-confronti
+        type: ruleSummary
+        skill: Confronti
+        rules:
+          - text: "**più… di** (יותר מ…) e **meno… di** (פחות מ…). *di* + articolo diventa *del, della, dell'…*"
+            examples:
+              - Shakira è più famosa di Rosalía.
+              - Il pop è più facile da ascoltare del jazz.
+              - Questa canzone è più romantica dell'altra.
+              - Questo artista è meno conosciuto di Bad Bunny.
+              - Il rock è meno popolare del pop nella mia famiglia.
+          - text: '**il più / la più** (הכי): il migliore o il più… in un gruppo.'
+            examples:
+              - Rosalía è una delle artiste più creative.
+              - Secondo me, questa è la canzone più bella.
+              - Qual è l'artista più amato dal gruppo?
+          - text: '**meglio / peggio** (טוב יותר / גרוע יותר): + *di* davanti a un nome o a un pronome, + *che* tra due verbi.'
+            examples:
+              - Canti meglio di me.
+              - Secondo me, ascoltare musica dal vivo è meglio che ascoltare musica sul telefono.
+              - Cantare male è meglio che non cantare mai.
+      - id: can-do
+        type: callout
+        tone: info
+        title: Cosa sappiamo fare adesso
+        text: |-
+          Parlare dei nostri gusti al presente: *Oggi ascolto molto pop. Mi piace ascoltare musica quando cammino.*
+          Raccontare un'azione finita: *Ieri ho ascoltato una canzone famosa. Sono andato / andata a un concerto.*
+          Raccontare abitudini del passato: *Quando ero bambino, ascoltavo musica pop. Da adolescente, mi piaceva il rock.*
+          Confrontare artisti e canzoni: *Shakira è più famosa di Rosalía. Secondo me, questa cantante è la più creativa.*
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le regole con la classe e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: musica-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia un messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-presente
+        type: aiTutorPrompt
+        title: 'Parte 1: Presente'
+        intro: 'Domande possibili: *Che musica ascolti oggi? Quando ascolti musica di solito? Quale genere musicale ti piace di più?*'
+        message: Mori, fammi 3 domande al presente sulla musica che ascolto oggi. Aspetta la mia risposta, correggi i miei errori e fammi una breve domanda di approfondimento.
+      - id: mori-passato
+        type: aiTutorPrompt
+        title: 'Parte 2: Passato prossimo'
+        intro: 'Domande possibili: *Hai ascoltato musica ieri? Sei mai andato / andata a un concerto? Quale artista hai scoperto recentemente?*'
+        message: Mori, fammi 3 domande al passato prossimo sulla mia esperienza musicale. Correggi le mie risposte e aiutami a usare avere o essere correttamente.
+      - id: mori-imperfetto
+        type: aiTutorPrompt
+        title: 'Parte 3: Imperfetto'
+        intro: 'Domande possibili: *Che musica ascoltavi quando eri bambino / bambina? Cantavi o ballavi molto da piccolo / piccola?*'
+        message: Mori, fammi 2 domande all'imperfetto sulla musica della mia infanzia. Correggi le mie risposte e chiedimi di ripetere la forma corretta.
+      - id: mori-confronti
+        type: aiTutorPrompt
+        title: 'Parte 4: Confronti'
+        intro: 'Domande possibili: *Chi è più famoso, Shakira o Rosalía? Quale genere è più ballabile, la salsa o il jazz?*'
+        message: Mori, fammi 2 domande per confrontare due artisti, due canzoni o due generi musicali. Correggimi se non uso più, meno, il più o la più.
+      - id: mori-playlist
+        type: aiTutorPrompt
+        title: 'Parte 5: La playlist della mia vita'
+        message: 'Mori, aiutami a creare una playlist della mia vita: 2 canzoni della mia infanzia, 2 canzoni della mia adolescenza e 2 canzoni di oggi. Fammi domande e aiutami a scrivere una frase su ogni canzone.'
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+      - id: written-title
+        type: heading
+        level: 3
+        text: Esercizi scritti
+      - id: hw1
+        type: discussionQuestions
+        title: 'Parte 1: Completa al presente con il verbo tra parentesi'
+        items:
+          - question: Io ___ musica quando cammino. (ascoltare)
+          - question: Marta ___ il pop italiano. (preferire)
+          - question: Noi ___ spesso musica in macchina. (sentire)
+          - question: Tu ___ uno strumento musicale? (suonare)
+          - question: Loro ___ canzoni romantiche. (cantare)
+          - question: Voi ___ musica quando studiate? (ascoltare)
+          - question: Mio fratello ___ molto il rap. (amare)
+          - question: Io non ___ il rock pesante. (ascoltare)
+          - question: Questa canzone mi ___ felice. (fare)
+          - question: A lei ___ il jazz. (piacere)
+      - id: hw2
+        type: discussionQuestions
+        title: 'Parte 2: Completa al passato prossimo'
+        items:
+          - question: Ieri io ___ una canzone italiana. (ascoltare)
+          - question: Noi ___ un concerto dal vivo. (vedere)
+          - question: Marco ___ un nuovo artista. (scoprire)
+          - question: Tu ___ questa canzone molte volte? (sentire)
+          - question: Loro ___ a un festival musicale. (andare)
+          - question: Giulia ___ una canzone molto famosa. (cantare)
+          - question: Io ___ a un concerto nel 2019. (andare)
+          - question: Shakira ___ famosa in tutto il mondo. (diventare)
+          - question: Voi ___ una playlist per la festa? (creare)
+          - question: Il cantante ___ in Colombia. (nascere)
+      - id: hw3
+        type: discussionQuestions
+        title: "Parte 3: Completa all'imperfetto"
+        items:
+          - question: Quando ero bambino, io ___ musica per bambini. (ascoltare)
+          - question: Da adolescente, mia sorella ___ molto il rock. (amare)
+          - question: I miei genitori ___ salsa a casa. (ascoltare)
+          - question: Noi ___ sempre alle feste. (ballare)
+          - question: Tu ___ uno strumento quando eri piccolo? (suonare)
+          - question: Da bambina, Giulia ___ sempre in macchina. (cantare)
+          - question: Quando vivevamo in Brasile, noi ___ molta musica brasiliana. (sentire)
+          - question: A quei tempi, mi ___ molto il pop. (piacere)
+          - question: Voi ___ programmi musicali in TV? (guardare)
+          - question: Da bambino, Luca non ___ molto la musica. (ascoltare)
+      - id: hw4
+        type: discussionQuestions
+        title: 'Parte 4: Passato prossimo o imperfetto? Scegli la forma giusta'
+        items:
+          - question: Ieri io ___ una canzone nuova. (a. ascoltavo / b. ho ascoltato)
+          - question: Quando ero bambino, ___ musica con i miei genitori. (a. ascoltavo / b. ho ascoltato)
+          - question: L'anno scorso noi ___ a un concerto di Laura Pausini. (a. andavamo / b. siamo andati)
+          - question: Da adolescente, mi ___ molto il rock. (a. è piaciuto / b. piaceva)
+          - question: Una volta, Giulia ___ davanti a tutta la classe. (a. ha cantato / b. cantava)
+          - question: Quando abitavo a Tel Aviv, ___ spesso musica israeliana. (a. ho ascoltato / b. ascoltavo)
+          - question: Ieri sera Marco ___ una playlist nuova. (a. ha creato / b. creava)
+          - question: Prima ascoltavo molto pop, ma ieri ___ jazz. (a. ho ascoltato / b. ascoltavo)
+      - id: hw5
+        type: discussionQuestions
+        title: 'Parte 5: Completa con più… di, meno… di, il più / la più, meglio che'
+        items:
+          - question: Shakira è ___ famosa ___ molti altri artisti.
+          - question: Il jazz è ___ popolare ___ pop nella mia classe.
+          - question: Secondo me, Rosalía è ___ creativa.
+          - question: Questa canzone è ___ romantica ___ quella di ieri.
+          - question: Ascoltare musica dal vivo è ___ ascoltare musica sul telefono.
+          - question: Il rock è ___ ballabile ___ salsa.
+          - question: Questo artista è ___ interessante della lista.
+          - question: Cantare male è ___ non cantare mai.
+      - id: hw6-title
+        type: text
+        text: '**Parte 6:** traduci in italiano.'
+      - id: hw6
+        type: discussionQuestions
+        lang: he
+        items:
+          - question: היום אני שומע הרבה פופ.
+          - question: אתמול שמעתי שיר איטלקי.
+          - question: כשהייתי ילד, הייתי שומע מוזיקה עם ההורים שלי.
+          - question: הלכתי להופעה בשנת 2018.
+          - question: גיליתי אמן חדש בשנה שעברה.
+          - question: לדעתי, שאקירה יותר מפורסמת מרוסליה.
+          - question: השיר הזה מזכיר לי את המשפחה שלי.
+          - question: פעם אהבתי רוק, אבל היום אני מעדיף פופ.
+          - question: הזמרת הזאת היא הכי יצירתית.
+          - question: לשמוע מוזיקה בלייב עדיף מלשמוע מוזיקה בטלפון.
+      - id: hw7-text
+        type: text
+        text: |-
+          **Parte 7:** leggi il testo e rispondi alle domande.
+
+          Quando ero bambino, ascoltavo molta musica con i miei genitori. A casa, mio padre ascoltava salsa e mia madre preferiva il pop italiano. Da adolescente, invece, mi piaceva molto il rock. L'anno scorso sono andato a un concerto dal vivo per la prima volta. Ho visto un artista brasiliano molto famoso e ho cantato tutte le canzoni. Oggi ascolto generi diversi, ma secondo me la musica dal vivo è più emozionante della musica sul telefono.
+      - id: hw7
+        type: discussionQuestions
+        items:
+          - question: Che musica ascoltava la persona da bambino?
+          - question: Che musica ascoltava il padre?
+          - question: Che genere musicale piaceva alla persona da adolescente?
+          - question: Dove è andata la persona l'anno scorso?
+          - question: Che cosa ha fatto al concerto?
+          - question: Secondo il testo, che cosa è più emozionante?
+      - id: hw8
+        type: reflection
+        prompt: >-
+          **Parte 8:** scrivi 8 frasi sulla musica nella tua vita: 2 al presente, 2 al
+          passato prossimo, 2 all'imperfetto e 2 confronti. Puoi cominciare così: *Oggi
+          ascolto… / Mi piace… / L'anno scorso ho… / Quando ero bambino / bambina,
+          ascoltavo… / Secondo me, … è più … di …*
+    teacherNotes:
+      - id: n-written
+        anchor: written-title
+        text: Gli esercizi scritti vengono dal quaderno («compiti classici»). Le soluzioni sono nelle note qui sotto.
+      - id: n-hw1
+        anchor: hw1
+        text: 'Soluzioni: 1 ascolto, 2 preferisce, 3 sentiamo, 4 suoni, 5 cantano, 6 ascoltate, 7 ama, 8 ascolto, 9 fa, 10 piace.'
+      - id: n-hw2
+        anchor: hw2
+        text: 'Soluzioni: 1 ho ascoltato, 2 abbiamo visto, 3 ha scoperto, 4 hai sentito, 5 sono andati / andate, 6 ha cantato, 7 sono andato / andata, 8 è diventata, 9 avete creato, 10 è nato.'
+      - id: n-hw3
+        anchor: hw3
+        text: 'Soluzioni: 1 ascoltavo, 2 amava, 3 ascoltavano, 4 ballavamo, 5 suonavi, 6 cantava, 7 sentivamo, 8 piaceva, 9 guardavate, 10 ascoltava.'
+      - id: n-hw4
+        anchor: hw4
+        text: 'Soluzioni: 1 b (ho ascoltato), 2 a (ascoltavo), 3 b (siamo andati), 4 b (piaceva), 5 a (ha cantato), 6 b (ascoltavo), 7 a (ha creato), 8 a (ho ascoltato).'
+      - id: n-hw5
+        anchor: hw5
+        text: 'Soluzioni possibili: 1 più… di, 2 meno… del, 3 la più, 4 più… di, 5 meglio che, 6 meno… della, 7 il più, 8 meglio che.'
+      - id: n-hw6
+        anchor: hw6
+        text: >-
+          Soluzioni possibili: 1 Oggi ascolto molto pop. 2 Ieri ho ascoltato una canzone
+          italiana. 3 Quando ero bambino, ascoltavo musica con i miei genitori. 4 Sono
+          andato / andata a un concerto nel 2018. 5 Ho scoperto un nuovo artista l'anno
+          scorso. 6 Secondo me, Shakira è più famosa di Rosalía. 7 Questa canzone mi
+          ricorda la mia famiglia. 8 Prima mi piaceva il rock, ma oggi preferisco il pop.
+          9 Questa cantante è la più creativa. 10 Ascoltare musica dal vivo è meglio che
+          ascoltare musica sul telefono.
+      - id: n-hw7
+        anchor: hw7
+        text: >-
+          Soluzioni: 1 Ascoltava molta musica con i suoi genitori. 2 Il padre ascoltava
+          salsa. 3 Gli piaceva molto il rock. 4 È andato a un concerto dal vivo. 5 Ha
+          visto un artista brasiliano famoso e ha cantato tutte le canzoni. 6 La musica
+          dal vivo è più emozionante della musica sul telefono.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: musica-pratica
+    book: workbook
+    title: 'Pratica: Musica'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-sociali
+        type: activity
+        activity: musica-sociali
+      - id: ex-narrazione
+        type: activity
+        activity: musica-narrazione
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: musica-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole della musica
+        glossLang: he
+        link: https://quizlet.com/br/1191140446/musica-flash-cards/
+        items: &musica-words
+          - { term: gusti musicali, gloss: טעם מוזיקלי }
+          - { term: genere musicale, gloss: סגנון מוזיקלי }
+          - { term: artista, gloss: אמן / אמנית }
+          - { term: cantante, gloss: זמר / זמרת }
+          - { term: stile, gloss: סגנון }
+          - { term: ritmo, gloss: קצב }
+          - { term: melodia, gloss: מנגינה }
+          - { term: testo di una canzone, gloss: מילים של שיר }
+          - { term: concerto dal vivo, gloss: הופעה חיה }
+          - { term: festival musicale, gloss: פסטיבל מוזיקה }
+          - { term: strumento musicale, gloss: כלי נגינה }
+          - { term: playlist, gloss: פלייליסט }
+          - { term: album, gloss: אלבום }
+          - { term: biografia, gloss: ביוגרפיה }
+          - { term: esperienza musicale, gloss: חוויה מוזיקלית }
+          - { term: ricordo, gloss: זיכרון }
+          - { term: infanzia, gloss: ילדות }
+          - { term: adolescenza, gloss: גיל ההתבגרות }
+          - { term: a memoria, gloss: בעל פה }
+          - { term: creativo, gloss: יצירתי }
+          - { term: energico, gloss: אנרגטי }
+          - { term: nostalgico, gloss: נוסטלגי }
+          - { term: romantico, gloss: רומנטי }
+          - { term: lento, gloss: איטי }
+          - { term: pesante, gloss: כבד }
+          - { term: ballabile, gloss: רקיד }
+          - { term: sorprendente, gloss: מפתיע }
+          - { term: preferito, gloss: מועדף / אהוב }
+          - { term: famoso, gloss: מפורסם }
+          - { term: internazionale, gloss: בינלאומי }
+          - { term: scoprire, gloss: לגלות }
+          - { term: ricordare, gloss: לזכור / להזכיר }
+          - { term: collegare, gloss: לחבר }
+          - { term: cambiare gusti, gloss: לשנות טעם / לשנות העדפות }
+          - { term: intervistare, gloss: לראיין }
+          - { term: prendere appunti, gloss: לרשום הערות }
+
+vocabulary:
+  - slug: musica
+    title: Musica
+    items: *musica-words
+
+activities:
+  - slug: musica-sociali
+    title: 'Abilità sociali: domande sulla musica'
+    minutes: 8
+    items:
+      - id: quando-ascolti
+        type: multipleChoice
+        prompt: 'Marta risponde: *Di solito ascolto musica quando cammino.* Qual è la domanda?'
+        options:
+          - { text: Quando ascolti musica di solito?, correct: true }
+          - {
+              text: Quando ascolto musica di solito?,
+              feedback: '*Ascolto* è per *io*. Per fare una domanda a un compagno (tu) usiamo *ascolti*.',
+            }
+          - {
+              text: Quando ascoltavi musica di solito?,
+              feedback: 'La risposta è al presente (*ascolto*), quindi anche la domanda è al presente: *ascolti*.',
+            }
+      - id: unisci-domande
+        type: matching
+        prompt: Unisci ogni domanda alla sua risposta.
+        pairs:
+          - [Ti piace ballare?, 'Sì, mi piace ballare quando ascolto la salsa.']
+          - [Hai ascoltato musica ieri?, 'Sì, ieri ho ascoltato musica pop.']
+          - [Sei mai andato a un concerto?, 'No, non sono mai andato a un concerto.']
+          - [Che musica ascoltavi da bambino?, Da bambino ascoltavo musica per bambini.]
+          - [Sai suonare uno strumento?, 'Sì, so suonare la chitarra.']
+      - id: sei-andata
+        type: fillBlank
+        prompt: Completa la domanda con il verbo *essere*.
+        text: Marta, ___ mai andata a un concerto? — Sì, sono andata a un concerto di Marc Anthony.
+        blanks: [[sei]]
+      - id: mai-andata
+        type: multipleChoice
+        prompt: 'Marta risponde alla domanda *Hai mai visto un concerto dal vivo?* Quale risposta è giusta?'
+        options:
+          - { text: 'No, non sono mai andata a un concerto dal vivo.', correct: true }
+          - {
+              text: 'No, non ho mai andata a un concerto dal vivo.',
+              feedback: 'Il verbo *andare* usa *essere*: *sono andata*.',
+            }
+          - {
+              text: 'No, non sono mai andato a un concerto dal vivo.',
+              feedback: 'Marta è una donna. Con *essere* il participio cambia: *sono andata*.',
+            }
+      - id: tu-domande
+        type: trueFalse
+        prompt: 'Per fare una domanda a un compagno usiamo la forma di *tu*: *Che musica ascolti?*'
+        answer: true
+        feedback:
+          correct: 'Giusto! *Che musica ascolti? Sai cantare? Sei mai andato a un concerto?*'
+          incorrect: 'A un compagno parliamo con *tu*: *ascolti, sai, sei andato*.'
+      - id: presenta-ascolta
+        type: multipleChoice
+        prompt: 'Il tuo compagno dice: *Oggi ascolto il reggaeton.* Presentalo alla classe: Oggi ___ il reggaeton.'
+        options:
+          - { text: ascolta, correct: true }
+          - {
+              text: ascolto,
+              feedback: '*Ascolto* è per *io*. Per parlare del compagno (lui / lei) usiamo *ascolta*.',
+            }
+          - {
+              text: ascolti,
+              feedback: '*Ascolti* è per *tu*. Per parlare del compagno (lui / lei) usiamo *ascolta*.',
+            }
+      - id: presenta-marta
+        type: fillBlank
+        prompt: Presenta Marta. Completa con *ascoltare* all'imperfetto e *andare* al passato prossimo.
+        text: Questa è Marta. Oggi ascolta il reggaeton, ma prima ___ musica pop. L'anno scorso ___ a un concerto di Marc Anthony.
+        blanks: [[ascoltava], [è andata, e andata]]
+      - id: ordina-felice
+        type: reorderSentence
+        prompt: Metti le parole in ordine e fai la domanda.
+        sentence: Che musica ascolti quando sei felice?
+
+  - slug: musica-narrazione
+    title: 'Narrazione mista: oggi ascolto, ieri ho ascoltato, prima ascoltavo'
+    minutes: 8
+    items:
+      - id: ieri-ho-ascoltato
+        type: multipleChoice
+        prompt: Ieri ___ una canzone italiana.
+        options:
+          - { text: ho ascoltato, correct: true }
+          - {
+              text: ascoltavo,
+              feedback: "*Ieri* + un'azione precisa e finita: usiamo il passato prossimo, *ho ascoltato*.",
+            }
+          - {
+              text: ascolto,
+              feedback: '*Ascolto* è presente. Con *ieri* usiamo il passato: *ho ascoltato*.',
+            }
+      - id: da-bambino
+        type: multipleChoice
+        prompt: Quando ero bambino, ___ musica con i miei genitori.
+        options:
+          - { text: ascoltavo, correct: true }
+          - {
+              text: ho ascoltato,
+              feedback: "*Quando ero bambino* parla di un'abitudine del passato: usiamo l'imperfetto, *ascoltavo*.",
+            }
+          - {
+              text: ascolto,
+              feedback: "*Ascolto* è presente. Per un'abitudine del passato usiamo *ascoltavo*.",
+            }
+      - id: shakira-nata
+        type: fillBlank
+        prompt: Completa al passato prossimo con *nascere* e *diventare*.
+        text: Shakira ___ a Barranquilla nel 1977 e ___ famosa in tutto il mondo.
+        blanks: [[è nata, e nata], [è diventata, e diventata]]
+      - id: essere-avere
+        type: trueFalse
+        prompt: 'Il verbo *andare* fa il passato prossimo con *avere*: *ho andato a un concerto*.'
+        answer: false
+        feedback:
+          correct: 'Giusto! *Andare*, *nascere* e *diventare* usano *essere*: *sono andato / andata*.'
+          incorrect: '*Andare* usa *essere*: *sono andato / andata a un concerto*.'
+      - id: ieri-oggi
+        type: matching
+        prompt: Unisci il passato al presente.
+        pairs:
+          - [Ieri ho studiato tutta la notte., Oggi sono stanco.]
+          - [Ieri ho ascoltato una canzone triste., Oggi mi sento nostalgico.]
+          - [Da bambino ascoltavo questa canzone con mio padre., Oggi mi ricorda la mia famiglia.]
+          - [Una volta ho cantato questa canzone a una festa., Oggi mi fa ridere.]
+      - id: prima-oggi
+        type: fillBlank
+        prompt: Completa con *piacere* all'imperfetto e *preferire* al presente.
+        text: Prima mi ___ il rock, ma oggi ___ il pop.
+        blanks: [[piaceva], [preferisco]]
+      - id: concerto-pausini
+        type: multipleChoice
+        prompt: L'anno scorso noi ___ a un concerto di Laura Pausini.
+        options:
+          - { text: siamo andati, correct: true }
+          - {
+              text: andavamo,
+              feedback: "*L'anno scorso* + un'azione finita, una volta: usiamo il passato prossimo, *siamo andati*.",
+            }
+          - { text: abbiamo andato, feedback: 'Il verbo *andare* usa *essere*: *siamo andati*.' }
+      - id: ordina-ricorda
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Oggi questa canzone mi ricorda la mia famiglia.

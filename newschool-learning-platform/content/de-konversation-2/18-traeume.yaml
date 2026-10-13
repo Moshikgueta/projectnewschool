@@ -1,0 +1,682 @@
+# Cycle "Träume", converted from the German level 2 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-konversation-2
+slug: traeume
+title: Träume
+goal: Einen Traum im Perfekt erzählen und mit Präpositionen sagen, wann und wo etwas war.
+position: 18
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Perfekt" and "Präpositionen") are NEW: the notebook
+    has no self-correcting exercises. They were written from the cycle's two skills,
+    its summary rules, the activity examples and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Grammar, prepositions (Activity 5 board and summary): "am Morgen" was listed
+    under "in" (months, years); it is now under "an" (days, dates, times of day: am
+    Morgen, am Abend, but in der Nacht). "am Bahnhof" was given as an example of
+    "bei"; it is "an" (am Bahnhof, am Meer), so a line "an" was ADDED to the place
+    prepositions and "bei" now has "bei mir zu Hause, bei meiner Oma, beim Arzt". The
+    summary now also says that place answers to "Wo?" take the dative (im = in dem,
+    am = an dem, beim = bei dem) and that time comes before place (Ich war am Montag
+    im Park). Please confirm.
+  - >-
+    Word order: the teacher's model correction in Activity 5 ("In Deutsch sagen
+    wir: Ich war im Park am Montag") → "Auf Deutsch sagen wir: Ich war am Montag im
+    Park." (time before place); Mori prompt 2 example "Ich war im Park um 7 Uhr" →
+    "Ich war um 7 Uhr im Park".
+  - >-
+    Perfekt, the cycle's skill: warm-up question 2 offered the dreams in Präteritum
+    ("Ich flog. Ich fiel. Ich wurde verfolgt."); they are now in Perfekt ("Ich bin
+    geflogen. Ich bin gefallen. Jemand hat mich verfolgt."), matching the model
+    answer "Ja, ich bin geflogen". Activity 2 reading text: "Plötzlich klingelte mein
+    Wecker. Ich wachte auf." → "Plötzlich hat mein Wecker geklingelt. Ich bin
+    aufgewacht.", question 4 "Wie endete der Traum?" → "Wie hat der Traum geendet?"
+    and its model answer in Perfekt. "war", "hatte" and "stand" were kept (usual in
+    spoken German too). Activity 5 guiding question "Was geschah danach?" → "Was ist
+    danach passiert?". The summary was in Hebrew: it is given as German rule
+    summaries with a short Hebrew text block for each skill; the summary's third
+    topic (früher) is part of the Perfekt skill.
+  - >-
+    Teacher glosses were in English (Wald = forest, Schlüssel = key, Wecker = alarm
+    clock, vergessen = not remember, träumen = dream); they are now in Hebrew. Other
+    fixes: broken markdown around warm-up question 6; Activity 5 "fragt den Schüler,
+    sie noch einmal zu sagen" → "bittet den Schüler, sie noch einmal zu sagen".
+  - >-
+    Links: Activity 1 (Unsplash "dream", Pixabay "night") and Activity 3 (Unsplash
+    "house", Pixabay "villa") link to image sites that are not on the allow-list.
+    The links were left out; teacher notes say which pictures to show. Please add
+    pictures on an allowed host (e.g. Google Drive) if you want links.
+  - >-
+    Activity 2 is marked "FÜR FORTGESCHRITTENE SCHÜLER" in the notebook; it is kept
+    in class with a callout "Für Fortgeschrittene". The notebook has no beginner
+    alternative for it.
+  - >-
+    The Mori prompts are written in Hebrew in the notebook ("instructions in Hebrew,
+    examples in German"). They were translated into German, as in the other
+    cycles, and the example answers moved to the intro line. The tips callout was
+    added as in the other cycles.
+  - >-
+    Vocabulary glosses changed: "letzte Nacht – הלילה האחרון" → "אתמול בלילה";
+    "sich erinnern – לזכור" → "לזכור / להיזכר"; "im Jahr – בשנה" → "בשנת …"; "vor –
+    לפני / מול" kept. Please confirm.
+  - >-
+    The notebook gives no plan for which activities go with which skill (there are 5
+    activities); the plan note is ADDED. Times given as ranges are recorded as the
+    upper value (7–8 → 8, 5–6 → 6, 3–4 → 4); they are given per phase in the steps
+    and teacher notes, since the notebook gives no total per activity. The Quizlet link is kept as is. The
+    "Antwort von Schüler 1/2/3" lines are replaced by the optional answer boxes
+    (decision C2).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: traeume-unterricht
+    title: 'Unterricht: Träume'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Träume
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Perfekt
+            description: 'Einen Traum erzählen: *Letzte Nacht habe ich geträumt. Ich bin aufgewacht. Früher hatte ich viele Albträume.*'
+          - name: Präpositionen
+            description: 'Zeit und Ort: *um 7 Uhr, am Montag, im Juni, im Park, vor dem Haus, neben mir*'
+      - id: quizlet
+        type: externalLink
+        label: Träume auf Quizlet
+        url: https://quizlet.com/br/1132363939/traume-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        prompt: Sag zwei kurze Sätze.
+        frame: Ich bin ___. Ich träume auf ___ (in einer Sprache / in zwei Sprachen).
+        example: Ich bin David. Ich träume auf Hebräisch und Englisch.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup-rule
+        type: callout
+        tone: info
+        text: '**Nur 1–2 Sätze pro Antwort. Kurz und einfach.**'
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Erinnerst du dich an deine Träume?
+            frame: Ja, manchmal. / Nein, selten.
+          - question: 'Hattest du schon einmal einen dieser Träume? *Ich bin geflogen. Ich bin gefallen. Jemand hat mich verfolgt.*'
+            frame: Ja, ich bin geflogen. / Nein, das hatte ich nie.
+          - question: Erzähle einen Traum in zwei Sätzen.
+            frame: Letzte Nacht habe ich geträumt. Ich war in ___.
+          - question: Kann man weniger Albträume haben? Wie?
+            frame: Ja. Man kann ___. / Nein. Ich weiß nicht.
+          - question: 'Wer träumt mehr: Kinder oder Erwachsene? Warum?'
+            frame: Kinder träumen mehr, weil sie viel Fantasie haben. / Erwachsene träumen mehr, weil sie viel Stress haben.
+          - question: Warum träumen Menschen?
+            frame: Menschen träumen, weil das Gehirn arbeitet. / Ich glaube, wir träumen, um Gefühle zu verstehen.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Mein Traum in Bildern'
+        skills: [Perfekt, Präpositionen]
+        steps:
+          - Wähle **ein Bild** von deiner Lehrkraft.
+          - Schreib **3 Sätze** über deinen Traum, im Perfekt und mit Präpositionen.
+          - Lies deine 3 Sätze vor.
+        example: '*Letzte Nacht habe ich geträumt. Ich war in einem Wald. Neben mir war ein Hund.*'
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Mein Traum
+        items:
+          - question: Letzte Nacht habe ich geträumt.
+            frame: Letzte Nacht habe ich von ___ geträumt.
+          - question: Ich war in ___.
+          - question: Neben mir war ___. / Über mir war ___.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Die seltsamsten Träume'
+        skills: [Perfekt, Präpositionen]
+        steps:
+          - 'Hör zu (2 Minuten): Die Lehrkraft liest den Text einmal langsam vor. Nur zuhören: keine Fragen, kein Schreiben.'
+          - 'Lest zusammen (4 Minuten): Die Lehrkraft liest Satz für Satz und die Klasse wiederholt, oder jeder liest **einen Satz** laut.'
+          - 'Beantworte die Fragen unten **in ganzen Sätzen** (5 Minuten). Schüler 1 antwortet, Schüler 2 wiederholt oder ergänzt, Schüler 3 antwortet mit eigenen Worten.'
+          - 'Extra (3 Minuten): *War der Traum schön oder beängstigend? Warum? Möchtest du so einen Traum haben?*'
+      - id: act2-level
+        type: callout
+        tone: info
+        title: Für Fortgeschrittene
+        text: 'Diese Aktivität ist für fortgeschrittene Gruppen. Ziel: Leseverstehen trainieren, das Perfekt wiederholen und kurze Antworten in ganzen Sätzen geben.'
+      - id: act2-text
+        type: text
+        text: |-
+          *Letzte Nacht hatte ich einen seltsamen Traum.
+          Ich war in einem Wald.
+          Vor mir stand eine große Tür.
+          Neben mir war ein Hund.
+          Ich hatte einen Schlüssel in der Hand.
+          Plötzlich hat mein Wecker geklingelt.
+          Ich bin aufgewacht.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Fragen zum Text
+        items:
+          - question: Wo war die Person?
+            frame: Die Person war in ___.
+          - question: Was hatte sie in der Hand?
+            frame: Sie hatte ___ in der Hand.
+          - question: Wer war neben ihr?
+            frame: Neben ihr war ___.
+          - question: Wie hat der Traum geendet?
+            frame: Der Wecker hat ___, und sie ist ___.
+          - question: War der Traum schön oder beängstigend? Warum?
+            frame: Er war beängstigend, weil es eine große Tür gab. / Er war schön, weil ___.
+          - question: Möchtest du so einen Traum haben?
+            frame: Ja, ich mag Hunde. / Nein, ich habe Angst.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Mein Traumhaus'
+        skills: [Präpositionen]
+        steps:
+          - 'Bild auswählen (3 Minuten): Schau dir die Bilder von Häusern an und wähle ein Haus, das dir gefällt. Das ist dein Traumhaus.'
+          - 'Schreiben (8 Minuten): Schreib vier kurze Sätze über dein Traumhaus. Benutze genau die vier Modelle unten: kurze Sätze, einfache Wörter.'
+          - 'Vorlesen (ca. 40 Sekunden pro Person): Lies deine vier Sätze laut vor.'
+        example: |-
+          *Mein Traumhaus ist in Italien.*
+          *Ich wohne mit meiner Familie.*
+          *Vor dem Haus ist ein Garten.*
+          *Hinter dem Haus gibt es einen Pool.*
+        wordBank: [der Garten, der Pool, die Straße, das Meer, der Wald]
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Mein Traumhaus
+        items:
+          - question: Mein Traumhaus ist in ___.
+          - question: Ich wohne mit ___.
+          - question: Vor dem Haus ist ___.
+          - question: Hinter dem Haus gibt es ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Traum-Fakten'
+        skills: [Perfekt]
+        steps:
+          - 'Lies die drei Fakten (2 Minuten): *Alle Menschen träumen. Man vergisst Träume schnell. Auch Tiere träumen.*'
+          - Wähle **einen** Fakt. Nur einen (1 Minute).
+          - Sag zu deinem Fakt **zwei kurze Sätze im Perfekt** (6 Minuten).
+        example: |-
+          *Ich habe oft geträumt, aber ich habe es vergessen.*
+          *Mein Hund hat geschlafen. Ich glaube, er hat geträumt.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Meine zwei Sätze
+        items:
+          - question: Ich habe ___ geträumt.
+          - question: Ich habe ___ vergessen.
+          - question: Mein / Meine ___ hat geschlafen. Ich glaube, er / sie hat geträumt.
+      - id: act5
+        type: classActivity
+        title: 'Aktivität 5: Ein unvergesslicher Tag'
+        skills: [Präpositionen, Perfekt]
+        steps:
+          - Wiederhole mit der Lehrkraft die Präpositionen für Zeit und Ort (Tabelle unten).
+          - 'Denk an einen unvergesslichen Tag in deinem Leben: eine Reise, ein Geburtstag, ein Erfolg, ein besonderer Tag (3 Minuten).'
+          - Plane deine Geschichte mit den Leitfragen unten.
+          - Hör das Modell von deiner Lehrkraft.
+          - Erzähl deine Geschichte in **4–6 kurzen Sätzen** (1 Minute pro Person).
+        example: |-
+          *Ich erinnere mich an einen tollen Tag.*
+          *Es war im November um 15 Uhr, an meinem Geburtstag.*
+          *Wir waren bei mir zu Hause.*
+          *Meine Freunde haben eine Party gemacht.*
+          *Am Abend haben wir zusammen gegessen.*
+          *Ich habe mich sehr glücklich gefühlt.*
+      - id: act5-table
+        type: table
+        caption: Präpositionen für Zeit und Ort
+        header: [Präposition, Wofür?, Beispiele]
+        rows:
+          - [um, Uhrzeit, 'um 15 Uhr, um 8 Uhr']
+          - [an (am), 'Tage, Daten, Tageszeiten', 'am Montag, am 4. Juli, am Geburtstag, am Morgen']
+          - [in (im), 'Monate, Jahreszeiten, Jahre', 'im Juni, im Sommer, im Jahr 2022']
+          - [in (im), 'Raum, Stadt, Land', 'im Zimmer, in der Stadt, im Park']
+          - [auf, Oberfläche, 'auf dem Tisch, auf der Straße']
+          - [an (am), 'an einem Ort, am Rand', 'am Bahnhof, am Meer']
+          - [bei, 'bei einer Person, zu Hause', 'bei mir zu Hause, bei meiner Oma']
+      - id: act5-questions
+        type: discussionQuestions
+        title: Leitfragen
+        items:
+          - question: Wann ist es passiert?
+            frame: im Jahr …, im Sommer …, am Montag …, um 15 Uhr …
+          - question: Wo ist es passiert?
+            frame: in einer Stadt, bei mir zu Hause, im Park …
+          - question: Was hast du gemacht?
+            frame: Ich habe … / Wir haben …
+          - question: Was ist danach passiert?
+            frame: Dann habe ich … / Danach sind wir …
+          - question: Wer war bei dir?
+            frame: Meine Familie war bei mir …
+          - question: Wie hast du dich gefühlt?
+            frame: Ich habe mich glücklich / nervös / stolz gefühlt.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Perfekt** (mit *früher*; Aufwärmfragen,
+          Aktivitäten 1, 2 und 4) und **Präpositionen** für Zeit und Ort (Aktivitäten 1,
+          3 und 5). Aktivität 2 ist für fortgeschrittene Gruppen. Wähle die Aktivitäten
+          passend zu deiner Gruppe und zur Zeit.
+      - id: n-intro
+        anchor: intro
+        text: Gib zuerst das Modell («Ich bin David. Ich träume auf Hebräisch und Englisch.»), dann ist jeder Schüler dran.
+      - id: n-warmup
+        anchor: warmup
+        text: Stell jedem Schüler mindestens zwei Fragen. Nur 1–2 Sätze pro Antwort.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Zeig Bilder zu Träumen und zur Nacht (z. B. einen Wald, eine Stadt bei Nacht,
+          Tiere). Im Heft stehen Links zu Unsplash und Pixabay; diese Seiten sind auf der
+          Plattform nicht erlaubt. Bereite die Bilder vorher vor (z. B. in Google
+          Drive).
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Sag: «Wir lesen jetzt eine sehr kurze Traumgeschichte. Hört zuerst nur zu.»
+          Lies den Text einmal langsam, ohne Unterbrechung. Hilf beim gemeinsamen Lesen
+          bei Aussprache und Bedeutung: *Wald* = יער, *Schlüssel* = מפתח, *Wecker* = שעון
+          מעורר. Stell die Fragen eine nach der anderen; die Schüler antworten in ganzen
+          Sätzen. Die zwei letzten Fragen sind optional (3 Minuten).
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Im Heft stehen Links zu Häusern (Unsplash) und Villen (Pixabay); diese Seiten
+          sind auf der Plattform nicht erlaubt. Zeig Bilder von Häusern auf dem
+          Bildschirm. Erinnere: kurze Sätze, einfache Wörter, nur die vier Strukturen.
+          Geh herum und hilf bei Ländern und Städten, beim Wortschatz (Garten, Pool,
+          Straße, Meer, Wald) und bei den Präpositionen. Korrigiere sanft: Wiederhole den
+          korrekten Satz und lass den Schüler ihn noch einmal sagen. Beispiel: Schüler:
+          «Mein Traumhaus ist auf Italien.» Lehrkraft: «In Italien. Kannst du es noch
+          einmal sagen?»
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Lies die drei Fakten einmal langsam vor. Klärung bei Bedarf: *vergessen* =
+          לשכוח, *träumen* = לחלום. Du kannst an die Tafel schreiben: *Ich habe …
+          geträumt. Ich habe … vergessen. Mein … hat geschlafen. Ich glaube, er / sie hat
+          geträumt.* Korrigiere sanft im Moment. Beispiel: Schüler: «Ich habe geträumt
+          viel, aber ich vergesse.» Lehrkraft: «Im Perfekt: Ich habe viel geträumt, aber
+          ich habe es vergessen. Kannst du das noch einmal sagen?»
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Wiederholung an der Tafel: 5 Minuten, mit 2–3 schnellen Beispielen, die die
+          Klasse wiederholt. Denken: 3 Minuten. Modell: 1 Minute. Erzählen: 1 Minute pro
+          Schüler. Hör zu, notiere typische Fehler bei *in / an / um / bei* und
+          unterbrich nicht lange. Feedback (4 Minuten): Wiederhole nach jeder Geschichte
+          1–2 Sätze korrekt und bitte den Schüler, sie noch einmal zu sagen. Beispiel:
+          Schüler: «Ich war am Park am Montag.» Lehrkraft: «Auf Deutsch sagen wir: Ich
+          war am Montag im Park. Kannst du das noch einmal sagen?»
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: traeume-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-perfekt
+        type: ruleSummary
+        skill: Perfekt
+        rules:
+          - text: 'Im gesprochenen Deutsch erzählen wir mit dem **Perfekt**, was passiert ist: *haben* / *sein* + **Partizip II** am Ende.'
+            examples:
+              - Ich habe geträumt.
+              - Ich habe einen Hund gesehen.
+              - Wir haben im Park gesprochen.
+          - text: 'Verben der Bewegung oder Veränderung haben **sein**: *fliegen, fallen, aufwachen, gehen*.'
+            examples: [Ich bin aufgewacht., Ich bin geflogen.]
+          - text: '**Fragen**: Das Hilfsverb steht am Anfang. **Verneinung**: *nicht* vor dem Partizip II.'
+            examples:
+              [
+                Hast du letzte Nacht geträumt?,
+                Bist du aufgewacht?,
+                Ich habe nicht geträumt.,
+                Ich bin nicht geflogen.,
+              ]
+          - text: 'Für Dinge, die **früher** so waren, aber heute nicht mehr, sagen wir **früher** + Vergangenheit. Mit *sein* und *haben* sagen wir meistens *war* und *hatte*.'
+            examples:
+              - Früher habe ich jede Nacht geträumt.
+              - Früher hatte ich viele Albträume.
+              - Früher war ich oft müde.
+      - id: perfekt-he
+        type: text
+        lang: he
+        text: >-
+          עבר – Perfekt: בגרמנית מדוברת משתמשים ב־Perfekt כדי לדבר על פעולות שהסתיימו
+          בעבר: haben / sein + Partizip II. Ich habe geträumt – חלמתי. Ich habe einen
+          Hund gesehen – ראיתי כלב. Ich bin aufgewacht – התעוררתי. הרגלים בעבר: מוסיפים
+          את המילה früher למשפט בזמן עבר; בגרמנית אין מבנה מיוחד כמו "used to" באנגלית.
+      - id: rules-praep
+        type: ruleSummary
+        skill: Präpositionen
+        rules:
+          - text: '**Zeit**: **um** + Uhrzeit, **am** + Tag, Datum, Tageszeit, **im** + Monat, Jahreszeit, Jahr.'
+            examples:
+              - um 7 Uhr, um Mitternacht
+              - am Montag, am Geburtstag, am Morgen, am Abend (aber in der Nacht)
+              - im Juni, im Sommer, im Jahr 2023
+          - text: '**Ort** (Wo?): **in** (Raum, Stadt, Land), **auf** (Oberfläche), **an** (am Rand, an einem Ort), **bei** (Person, zu Hause).'
+            examples:
+              - im Zimmer, in der Stadt, in Israel
+              - auf dem Tisch, auf der Straße
+              - am Bahnhof, am Meer
+              - bei mir zu Hause, bei meiner Oma
+          - text: '**vor / hinter / neben**: wo etwas ist, im Vergleich zu etwas anderem.'
+            examples: [vor dem Haus, hinter der Tür, neben mir]
+          - text: 'Auf die Frage **Wo?** folgt der **Dativ**: *in dem → im, an dem → am, bei dem → beim*.'
+            examples: [Ich war im Park., Der Garten ist vor dem Haus.]
+          - text: 'Im Satz steht die **Zeit vor dem Ort**.'
+            examples: [Ich war am Montag im Park., Ich war um 7 Uhr im Park.]
+      - id: praep-he
+        type: text
+        lang: he
+        text: >-
+          מילות יחס של זמן: um – שעה מדויקת (um 7 Uhr); am – ימים, תאריכים וחלקי היום
+          (am Montag, am Morgen); im – חודשים, עונות ושנים (im Juni, im Jahr 2023). מילות
+          יחס של מקום: in – חדרים, ערים, מדינות; auf – על משטח; an – ליד / על יד מקום
+          (am Bahnhof); bei – אצל מישהו (bei mir zu Hause); vor / hinter / neben – לפני /
+          מאחורי / ליד משהו.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die zwei Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: traeume-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere eine Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-traum
+        type: aiTutorPrompt
+        title: '1: Ein kurzer Traum'
+        intro: 'Beispielantwort: *Letzte Nacht habe ich geträumt. Ich war in einer Stadt. Ich bin aufgewacht.*'
+        message: Hallo Mori, bitte mich, einen kurzen Traum in 2–3 Sätzen zu erzählen. Ich möchte das Perfekt benutzen. Bitte korrigiere mich sofort.
+      - id: mori-wann-wo
+        type: aiTutorPrompt
+        title: '2: Wann und wo?'
+        intro: 'Beispiel: *Der Traum war im Jahr 2024. Ich war um 7 Uhr im Park.*'
+        message: Mori, frag mich, wann und wo der Traum passiert ist. Ich möchte die Präpositionen für Zeit und Ort benutzen, in, an, um und bei. Bitte korrigiere jeden Fehler.
+      - id: mori-wer
+        type: aiTutorPrompt
+        title: '3: Wer war da?'
+        intro: 'Beispiel: *Neben mir war ein Hund. Vor mir stand eine Tür.*'
+        message: Mori, frag mich, wer in meinem Traum war und wo er oder sie war, im Vergleich zu mir. Ich möchte vor, hinter und neben benutzen.
+      - id: mori-frueher
+        type: aiTutorPrompt
+        title: '4: Früher und heute'
+        intro: 'Beispiel: *Früher habe ich jede Nacht geträumt. Früher hatte ich viele Albträume.*'
+        message: Mori, bitte mich, mit dem Wort „früher“ etwas über meine Träume in der Vergangenheit zu sagen. Hilf mir, das Verb in die Vergangenheit zu setzen.
+      - id: mori-interview
+        type: aiTutorPrompt
+        title: '5: Ein kurzes Interview über Träume'
+        message: |-
+          Mori, sei ein Interviewer. Stell mir diese Fragen, eine nach der anderen:
+          Erinnerst du dich an deine Träume?
+          Wann hattest du deinen letzten Traum?
+          Wo warst du im Traum?
+          Wer war bei dir?
+          Wie hast du dich gefühlt?
+          Ich antworte auf Deutsch, und du korrigierst jeden Fehler.
+      - id: mori-geschichte
+        type: aiTutorPrompt
+        title: '6: Eine kleine Geschichte'
+        message: |-
+          Mori, bitte mich, eine kurze Geschichte in 4–5 Sätzen über einen Traum zu erzählen. Ich benutze das Perfekt, mindestens einmal das Wort „früher“ und Präpositionen für den Ort (in, vor, neben). Bitte:
+          Korrigiere mich freundlich.
+          Stell mir Fragen, damit ich mich selbst korrigieren kann.
+          Schlag mir dann eine bessere, klare Version auf Deutsch vor.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: traeume-uebung
+    book: workbook
+    title: 'Übung: Träume'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-perfekt
+        type: activity
+        activity: traeume-perfekt
+      - id: ex-praepositionen
+        type: activity
+        activity: traeume-praepositionen
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: traeume-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für Träume
+        glossLang: he
+        link: https://quizlet.com/br/1132363939/traume-flash-cards/
+        items: &traeume-words
+          - { term: der Traum, gloss: חלום }
+          - { term: die Nacht, gloss: לילה }
+          - { term: schlafen, gloss: לישון }
+          - { term: träumen, gloss: לחלום }
+          - { term: aufwachen, gloss: להתעורר }
+          - { term: sich erinnern, gloss: לזכור / להיזכר }
+          - { term: vergessen, gloss: לשכוח }
+          - { term: seltsam, gloss: מוזר }
+          - { term: der Wald, gloss: יער }
+          - { term: das Zimmer, gloss: חדר }
+          - { term: die Tür, gloss: דלת }
+          - { term: der Schlüssel, gloss: מפתח }
+          - { term: der Hund, gloss: כלב }
+          - { term: der Wecker, gloss: שעון מעורר }
+          - { term: fliegen, gloss: לעוף }
+          - { term: fallen, gloss: ליפול }
+          - { term: Angst haben, gloss: לפחד }
+          - { term: sich fühlen, gloss: להרגיש }
+          - { term: glücklich, gloss: שמח }
+          - { term: müde, gloss: עייף }
+          - { term: plötzlich, gloss: פתאום }
+          - { term: letzte Nacht, gloss: אתמול בלילה }
+          - { term: früher, gloss: בעבר }
+          - { term: heute, gloss: היום }
+          - { term: gestern, gloss: אתמול }
+          - { term: in, gloss: ב… }
+          - { term: auf, gloss: על… }
+          - { term: bei, gloss: אצל / ליד }
+          - { term: vor, gloss: לפני / מול }
+          - { term: hinter, gloss: מאחורי }
+          - { term: neben, gloss: ליד }
+          - { term: um, gloss: בשעה }
+          - { term: am Morgen, gloss: בבוקר }
+          - { term: im Jahr, gloss: בשנת … }
+          - { term: im Park, gloss: בפארק }
+          - { term: zu Hause, gloss: בבית }
+
+vocabulary:
+  - slug: traeume
+    title: Träume
+    items: *traeume-words
+
+activities:
+  - slug: traeume-perfekt
+    title: 'Perfekt: Ich habe geträumt'
+    minutes: 8
+    items:
+      - id: habe-getraeumt
+        type: multipleChoice
+        prompt: Letzte Nacht ___ ich geträumt.
+        options:
+          - { text: habe, correct: true }
+          - {
+              text: bin,
+              feedback: '*träumen* ist keine Bewegung: Das Perfekt hat *haben*. *Ich habe geträumt.*',
+            }
+          - { text: hat, feedback: '*hat* gehört zu *er / sie / es*. Mit *ich* sagen wir *habe*.' }
+      - id: aufgewacht
+        type: multipleChoice
+        prompt: Ich ___ um 7 Uhr aufgewacht.
+        options:
+          - { text: bin, correct: true }
+          - {
+              text: habe,
+              feedback: '*aufwachen* ist eine Veränderung: Das Perfekt hat *sein*. *Ich bin aufgewacht.*',
+            }
+          - {
+              text: hat,
+              feedback: '*aufwachen* hat *sein*, und mit *ich* sagen wir *bin*: *Ich bin aufgewacht.*',
+            }
+      - id: geflogen
+        type: fillBlank
+        prompt: Ergänze das Perfekt von *fliegen*.
+        text: Im Traum ___ ich ___.
+        blanks: [[bin], [geflogen]]
+      - id: partizip
+        type: matching
+        prompt: Welches Partizip II passt zu welchem Verb?
+        pairs:
+          - [träumen, geträumt]
+          - [sehen, gesehen]
+          - [schlafen, geschlafen]
+          - [fallen, gefallen]
+          - [aufwachen, aufgewacht]
+      - id: frueher
+        type: trueFalse
+        prompt: '*Früher habe ich jede Nacht geträumt.* bedeutet: Das war in der Vergangenheit oft so, aber heute nicht mehr.'
+        answer: true
+        feedback:
+          correct: Richtig! Mit *früher* + Vergangenheit sprechen wir über Gewohnheiten in der Vergangenheit.
+          incorrect: '*früher* + Vergangenheit = eine Gewohnheit in der Vergangenheit, heute nicht mehr.'
+      - id: vergessen
+        type: fillBlank
+        prompt: Ergänze das Partizip II von *vergessen*.
+        text: Ich habe viel geträumt, aber ich habe es ___.
+        blanks: [[vergessen]]
+      - id: frage
+        type: multipleChoice
+        prompt: Welche Frage ist richtig?
+        options:
+          - { text: Hast du letzte Nacht geträumt?, correct: true }
+          - {
+              text: Hast du letzte Nacht träumen?,
+              feedback: 'Im Perfekt brauchen wir das Partizip II: *geträumt*.',
+            }
+          - {
+              text: Bist du letzte Nacht geträumt?,
+              feedback: '*träumen* hat im Perfekt *haben*: *Hast du … geträumt?*',
+            }
+      - id: ordne-hund
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Letzte Nacht habe ich einen Hund gesehen.
+
+  - slug: traeume-praepositionen
+    title: 'Präpositionen: um, am, im, vor, neben'
+    minutes: 8
+    items:
+      - id: um
+        type: multipleChoice
+        prompt: Ich bin ___ 7 Uhr aufgewacht.
+        options:
+          - { text: um, correct: true }
+          - {
+              text: am,
+              feedback: '*am* steht vor Tagen und Daten (*am Montag*). Vor einer Uhrzeit steht *um*.',
+            }
+          - {
+              text: im,
+              feedback: '*im* steht vor Monaten und Jahren (*im Juni*). Vor einer Uhrzeit steht *um*.',
+            }
+      - id: am-im
+        type: fillBlank
+        prompt: Ergänze *am* oder *im*.
+        text: Die Party war ___ Montag. Mein Geburtstag ist ___ Juni.
+        blanks: [[am], [im]]
+        wordBank: [am, im]
+      - id: in-italien
+        type: multipleChoice
+        prompt: Mein Traumhaus ist ___ Italien.
+        options:
+          - { text: in, correct: true }
+          - {
+              text: auf,
+              feedback: '*auf* ist für eine Oberfläche (*auf dem Tisch*). Für ein Land sagen wir *in*: *in Italien*.',
+            }
+          - {
+              text: bei,
+              feedback: '*bei* ist für eine Person (*bei mir zu Hause*). Für ein Land sagen wir *in*.',
+            }
+      - id: zeit-ort
+        type: matching
+        prompt: Was passt zusammen?
+        pairs:
+          - [um, 15 Uhr]
+          - [am, Montag]
+          - [im, Juni]
+          - [auf, dem Tisch]
+          - [bei, mir zu Hause]
+      - id: hinter
+        type: fillBlank
+        prompt: 'Ergänze die Präposition: מאחורי = ?'
+        text: Ich habe Angst. Der Hund ist ___ mir.
+        blanks: [[hinter]]
+      - id: zeit-vor-ort
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Ich war am Montag im Park., correct: true }
+          - {
+              text: Ich war um Montag im Park.,
+              feedback: '*um* steht vor einer Uhrzeit. Vor einem Tag steht *am*: *am Montag*.',
+            }
+          - {
+              text: Ich war am Montag auf dem Park.,
+              feedback: '*auf* ist für eine Oberfläche. Wir sagen *im Park*: *Ich war am Montag im Park.*',
+            }
+      - id: im-in-dem
+        type: trueFalse
+        prompt: '*im* = *in dem* und *am* = *an dem*.'
+        answer: true
+        feedback:
+          correct: Richtig! *im Park = in dem Park, am Montag = an dem Montag*.
+          incorrect: '*im* ist die kurze Form von *in dem*, *am* die kurze Form von *an dem*.'
+      - id: ordne-neben
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Neben mir war ein Hund.

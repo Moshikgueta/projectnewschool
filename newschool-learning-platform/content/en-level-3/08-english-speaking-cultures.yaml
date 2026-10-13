@@ -1,0 +1,763 @@
+# Cycle "English Speaking Cultures", converted from the English level 3 digital
+# notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-level-3
+slug: english-speaking-cultures
+title: English-Speaking Cultures
+goal: Ask questions in the past tenses and use polite, natural phrases from English-speaking cultures.
+position: 8
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Questions in the past" and "Social norms and
+    conversation") are NEW: the notebook has no self-study exercises. They were
+    written from the cycle's summary rules, the phrase tables and the vocabulary.
+    Please check level, wording and every right answer before students see them.
+  - >-
+    Quizlet: the source labels look swapped. The link under "English – Translation"
+    is the "english-definition" set and the link under "English – Definition" is the
+    "english-translation" set. The links are labelled here by their URLs; please
+    check. The "?i=…&x=…" parameters were removed.
+  - >-
+    Warm-up: the teacher instruction says "use the present perfect tense" (copied
+    from another cycle?). This cycle's skill is questions in the past tenses, so the
+    teacher note now says "use past tenses". Please confirm.
+  - >-
+    Warm-up question 5: "Has someone ever felt that you came across as something
+    that you didn't want to be?" → "Have you ever come across as someone you are not?"
+    with a short explanation of *come across as*. Model answer: "Yes, they have" →
+    "Yes, I have"; "stuck up" → "stuck-up"; "I was only in a little bit of shock" → "I
+    was just a little overwhelmed". Please confirm the new wording.
+  - >-
+    "Cultural shock" → "culture shock" (warm-up 3 and the summary example).
+    Warm-up 8: "How do you feel that the people in the USA… are different" → "How do
+    you think people in the USA… are different".
+  - >-
+    Activity 3: the podcast "English isn't always English" is linked on canva.com in
+    class, which is not on the link allow-list. The homework links the same title on
+    docs.google.com; that link is used for the class activity too. Please check it
+    is the same podcast. The activity had no title; it is now "English isn't always
+    English". The homework Mori message had a url-shortener.me link, which was
+    removed from the message.
+  - >-
+    Activity 4 (debate): every argument must use "a modal verb or the present
+    perfect", which are not this cycle's skills (the same rule appears in the Cuisine
+    cycle). Kept as in the source, with "or a question in the past" added. "Group 1 /
+    Group 2" and "Group A / Group B" were made consistent (Group A / B).
+  - >-
+    Activity 2: "can not be translated" → "cannot be translated"; "Tell the class in a
+    reported speech" → "Use reported speech to tell the class". The phrase "Take the
+    piss" (UK / Australia) is very informal and can sound rude; it is kept as in the
+    source. Please decide whether to keep it.
+  - >-
+    Summary, social norms rule 1: "Instead of *I don't like it* → *It wasn't really my
+    cup of tea*" mixes present and past; it now reads "*It's not really my cup of
+    tea.*". Rule 2 was reworded ("Try and learn phrases that are frequently used in the
+    language that you are talking" → "Learn phrases that people often use in the
+    culture you are talking to"). The politeness table had broken emoji (shown as
+    "ð"); the levels are now written in words.
+  - >-
+    Vocabulary: the source has an English definition for every word; the vocabulary
+    block has only a term and a Hebrew gloss, so the definitions were left out (they
+    are on the definition Quizlet set). Glosses changed: Spouse "בן / בת זוג נשואים" →
+    "בן / בת זוג (נשואים)"; Can I have "?אפשר לקבל" → "אפשר לקבל…?"; Passive-aggressive
+    "פאסיב-אגרסיב" → "פסיבי-אגרסיבי"; Soccer "כדורגל בארצות הברית" → "כדורגל (המונח
+    האמריקאי)"; Football "כדורגל בבריטניה" → "כדורגל (המונח הבריטי)". The broken term
+    "Passive- aggressive" was joined.
+  - >-
+    The warm-up frames for questions without a model answer were added. The source
+    gives no activity times, so no minutes were added. The "Answer of student 1/2/3"
+    lines are replaced by the answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: english-speaking-cultures-class
+    title: 'Class: English-Speaking Cultures'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: English-Speaking Cultures
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Questions in the past
+            description: 'Past simple, past continuous, present perfect and past perfect questions (*Did you feel at ease? Have you ever lived abroad?*)'
+          - name: Social norms and conversation
+            description: Polite, indirect language and common phrases from the US, the UK and Australia (*It's not really my cup of tea.*)
+      - id: quizlet-definition
+        type: externalLink
+        label: 'English-Speaking Cultures on Quizlet: English – Definition'
+        url: https://quizlet.com/il/1125898365/english-speaking-cultures-english-definition-flash-cards/
+      - id: quizlet-translation
+        type: externalLink
+        label: 'English-Speaking Cultures on Quizlet: English – Translation'
+        url: https://quizlet.com/il/1125898753/english-speaking-cultures-english-translation-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. I like / don't like to engage in small talk because ___.
+        example: I am Dana. I like to engage in small talk because it helps me meet new people.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: How do you feel about communicating with people from non-English-speaking countries compared to native English speakers?
+            frame: When I talk to people who don't speak English natively, I feel ___ compared to when I talk to native English speakers.
+          - question: Do you think that you are more of an introvert or an extrovert? Explain your answer with examples.
+            frame: I think I am more of an introvert / extrovert. For example, ___.
+          - question: Have you ever experienced culture shock?
+            frame: Yes, I have. When I ___, I felt ___. / No, I haven't, but ___.
+          - question: When you meet English speakers for the first time, what social behaviors feel familiar to you, and what feels different or surprising?
+            frame: ___ feels familiar, but ___ surprised me.
+          - question: Have you ever come across as someone you are not? (*come across as* = seem to other people)
+            frame: Yes, I have. When I ___, I came across as ___, but I was really ___.
+          - question: What do you do when you feel like someone is invading your personal space? It can be a real or a figurative space.
+            frame: When someone invades my personal space, I ___.
+          - question: In conversations, do you prefer to speak your mind even if others disagree, or to listen and be respectful of different opinions? Does this change between cultures?
+            frame: I prefer to ___ because ___. In ___ culture, people ___.
+          - question: How do you think people in the USA / Australia / the UK are different from people in Israel?
+            frame: I think people in ___ are more / less ___ than people in Israel.
+      - id: warmup-model
+        type: callout
+        tone: info
+        title: Model answer (question 5)
+        text: "*Yes, I have. When I started my new job, I was a little overwhelmed by everything and didn't socialize as much as I usually do. I came across as stuck-up, but I was just a little overwhelmed.*"
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      # Activity 1
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Are numbers cultural?'
+        skills: [Social norms and conversation]
+        steps:
+          - Watch the short video as a class.
+          - Talk about what you understood from the video. Share a personal experience on the subject if you have one.
+          - In groups, talk about the video and answer the questions below.
+        resource:
+          label: "How the way you count reveals where you're from (BBC Reel)"
+          url: https://www.youtube.com/watch?v=g9S6qD_Wylw
+      - id: act1-questions
+        type: discussionQuestions
+        title: Group questions
+        items:
+          - question: The video shows that something that feels "natural" is actually learned through culture. What other everyday behaviors do you think feel natural but might be cultural, especially in English-speaking countries?
+          - question: Do you think people from different cultures notice and organize the world differently? How might this affect communication, work or relationships in English-speaking cultures?
+          - question: Some cultures value simplicity and clarity, while others value symbolism, context or tradition. Where do you see this difference in English-speaking cultures like the US or the UK?
+          - question: When people from different cultures work or socialize together, what kinds of misunderstandings do you think come from different ways of thinking, not just different languages?
+          - question: Have you ever realized that something you do automatically feels confusing or unusual to English speakers? What did that teach you about cultural norms?
+            frame: Yes, I have. I realized that ___. It taught me that ___.
+      # Activity 2
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: Figures of speech'
+        skills: [Questions in the past]
+        steps:
+          - Some English phrases cannot be translated word for word into Hebrew. Look at the phrases below and choose ONE. Don't know what it means? Look it up!
+          - Ask your partner a question **about the past** with that phrase.
+          - Your partner **answers the question** with a real or imagined experience.
+          - '**Switch roles** and choose a **different phrase**.'
+          - Use reported speech to tell the class about one of your partner's experiences.
+        example: |-
+          *A: Did you hit it off with anyone at your last job?*
+          *B: Yes, I did. I hit it off with my manager on the first day.*
+          *A (to the class): She said that she had hit it off with her manager on the first day.*
+        wordBank:
+          - Get along
+          - Hang out
+          - Catch up
+          - Hit it off
+          - Drift apart
+          - Take it personally
+          - Break the ice
+          - Speak your mind
+          - Feel at ease
+          - Make time (for)
+          - Move on
+          - Deal with
+          - Be there for someone
+          - Not my cup of tea
+          - Pop round
+          - Have a chinwag
+          - Take the piss
+          - Take a rain check
+      - id: act2-questions
+        type: discussionQuestions
+        title: My questions and my partner's answers
+        items:
+          - question: 'My phrase: ___. My question: ___'
+            frame: Did you ever ___? / Have you ever ___? / What were you doing when ___?
+          - question: 'My second phrase: ___. My question: ___'
+          - question: "My partner's experience (reported speech): ___"
+            frame: He / She said that he / she had ___.
+      # Activity 3
+      - id: act3
+        type: classActivity
+        title: "Activity 3: English isn't always English"
+        skills: [Social norms and conversation, Questions in the past]
+        steps:
+          - Listen to the podcast. You can listen to parts of it or to the whole podcast.
+          - As a class, answer the comprehension questions below.
+          - In pairs or as a group, share how you felt after listening. Give examples of your experiences talking to English speakers from different countries.
+        resource:
+          label: "English isn't always English (podcast)"
+          url: https://docs.google.com/document/d/17PY4XJYyoJ68igzMufPwJikXezpn_RttYYnp741AoBk/edit
+      - id: act3-questions
+        type: discussionQuestions
+        title: Comprehension questions
+        items:
+          - question: What are two ways English can sound different even when people are speaking the same language? Give examples from the podcast.
+          - question: How can pronunciation differences affect understanding in everyday situations, according to the podcast?
+          - question: What does the podcast suggest about the connection between language, culture and identity?
+          - question: Why can indirect language or small talk cause confusion between cultures, based on what you heard?
+          - question: How can being aware of different accents and communication styles improve conversations in international settings?
+          - question: 'My experience: ___'
+            frame: When I talked to someone from ___, I ___.
+      # Activity 4
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Debate – What is easier?'
+        skills: [Social norms and conversation]
+        steps:
+          - 'Moving to a new country is hard, especially when you have to adapt to a new language and culture. **Is it easier to move from Israel to the US or from the US to Israel?**'
+          - '**Group A:** *Moving from Israel to the US is easier.* **Group B:** *Moving from the US to Israel is easier.*'
+          - In groups, think of arguments to support your opinion. Each argument must include at least one **modal verb** (*should, could, must, might*), the **present perfect** (*have / has* + past participle) or a question in the past. Include personal or real examples!
+          - 'Debate! Each group gives one argument at a time: Group A gives an argument, Group B responds; Group B gives an argument, Group A responds.'
+          - Finish with the discussion questions below as a class.
+        example: '*Group A: People who move to the US should learn small talk. I have lived in New York, and people there were very friendly and polite.*'
+      - id: act4-topics
+        type: callout
+        tone: info
+        title: Topics to think about
+        text: |-
+          **Language and communication:** English vs. Hebrew, accents, small talk, politeness.
+          **Cultural norms and daily life:** directness vs. indirectness, customer service, social rules and personal space.
+          **Work and professional culture.**
+          **Social life and a sense of belonging.**
+      - id: act4-arguments
+        type: discussionQuestions
+        title: Our arguments
+        items:
+          - question: 'Argument 1: ___'
+          - question: 'Argument 2: ___'
+          - question: 'Argument 3: ___'
+      - id: act4-discussion
+        type: discussionQuestions
+        title: Discussion as a class
+        items:
+          - question: Which challenges should people expect when moving between Israel and the US?
+            frame: People should expect ___.
+          - question: Have cultural misunderstandings become more common or less common as people have moved internationally?
+            frame: I think they have become ___ because ___.
+          - question: What advice should someone follow to adapt successfully to a new culture?
+            frame: They should ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **questions in the past** (Activities 2 and 3) and
+          **social norms and conversation** (Activities 1, 3 and 4).
+      - id: n-warmup
+        anchor: warmup-title
+        text: >-
+          Pick from the 8 questions. Make sure students answer in full sentences and
+          use past tenses. Answers typed here are visible to you below each question.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          The phrase table with meanings and example sentences is in the summary.
+          "Take the piss" is very informal (UK / Australia) and can sound rude: explain
+          it before students use it.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          The class link to the podcast in the old notebook was a canva.com design
+          (not on the link allow-list); the Google Doc linked here is the one the
+          homework uses. If the audio is only on Canva, play it from your screen.
+          Ask the comprehension questions to make sure students understood.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: english-speaking-cultures-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: tenses-table
+        type: table
+        caption: Questions in the past tenses
+        header: [What you want to ask about, Tense to use]
+        rows:
+          - [A finished past event, Past simple]
+          - [An action in progress, Past continuous]
+          - [A life experience (no time), Present perfect]
+          - [Something that happened before another past event, Past perfect]
+      - id: rules-questions
+        type: ruleSummary
+        skill: Questions in the past
+        rules:
+          - text: 'Ask questions in the **past simple** about **finished actions or events**, often with a finished or known time. **Form:** *Did* + subject + base verb?'
+            examples: [Did you feel like your American colleagues understood you at the meeting?]
+          - text: 'Ask questions in the **past continuous** about an action that was **in progress** at a moment in the past. They focus on what was happening, not the result, and often go together with the past simple. **Form:** *Was / Were* + subject + verb-*ing*?'
+            examples:
+              [
+                Were you having a hard time understanding the conversation?,
+                What were you doing when the meeting started?,
+              ]
+          - text: 'Ask questions in the **present perfect** about **life experiences**, without saying when. They ask whether something has happened, not when. **Form:** *Have / Has* + subject + past participle?'
+            examples: [Have you ever lived abroad?, Has she ever experienced culture shock?]
+          - text: 'Ask questions in the **past perfect** about an action that happened **before another past event**. They make the order of past events clear. **Form:** *Had* + subject + past participle?'
+            examples:
+              [
+                Had they met before the project started?,
+                Had she met a person from Australia before the trip?,
+              ]
+      - id: rules-norms
+        type: ruleSummary
+        skill: Social norms and conversation
+        rules:
+          - text: Use **indirect, softer language** to give opinions politely, especially when you disagree. It helps keep good relationships.
+            examples: ["Instead of *I don't like it*, try *It's not really my cup of tea.*"]
+          - text: Learn phrases that people often use in the culture you are talking to. Phrases can be different between countries, so use the right ones (see the table).
+          - text: 'Good communication is **not only about grammar**: choose the right tone and the right level of directness for the situation.'
+      - id: phrases-table
+        type: table
+        caption: Common phrases
+        header: [Phrase, Country, What it means, Example sentence]
+        rows:
+          - [
+              Get along,
+              General English,
+              Have a good relationship,
+              '*I got along well with my manager at my last job.*',
+            ]
+          - [
+              Hang out,
+              General English (mostly US),
+              Spend time together casually,
+              '*We hung out after work last Friday.*',
+            ]
+          - [
+              Catch up,
+              General English,
+              Talk and update each other,
+              '*I caught up with an old friend over coffee.*',
+            ]
+          - [
+              Hit it off,
+              General English,
+              Like each other immediately,
+              '*We hit it off as soon as we met.*',
+            ]
+          - [
+              Drift apart,
+              General English,
+              Slowly become less close,
+              '*We drifted apart after we moved to different cities.*',
+            ]
+          - [
+              Take it personally,
+              General English,
+              Feel hurt by something,
+              '*I took the comment personally at first.*',
+            ]
+          - [
+              Break the ice,
+              General English,
+              Make people feel comfortable,
+              '*The host told a joke to break the ice.*',
+            ]
+          - [
+              Speak your mind,
+              General English,
+              Say what you really think,
+              '*She finally spoke her mind in the meeting.*',
+            ]
+          - [
+              Feel at ease,
+              General English,
+              Feel relaxed and comfortable,
+              '*I felt at ease once I got to know the team.*',
+            ]
+          - [
+              Make time (for),
+              General English,
+              Decide to spend time on something even when you are busy,
+              '*I made time for my family last weekend.*',
+            ]
+          - [
+              Move on,
+              General English,
+              Continue after a difficult time,
+              '*It took time, but I eventually moved on.*',
+            ]
+          - [
+              Deal with,
+              General English,
+              Handle a problem or situation,
+              '*He learned how to deal with stress at work.*',
+            ]
+          - [
+              Be there for someone,
+              General English,
+              Give emotional support,
+              '*My friends were there for me during a hard time.*',
+            ]
+          - [Not my cup of tea, UK, Something you don't enjoy, "*Reality TV isn't my cup of tea.*"]
+          - [
+              Pop round,
+              UK,
+              Visit briefly and informally,
+              '*My neighbor popped round to say hello.*',
+            ]
+          - [Have a chinwag, UK, Have a casual chat, '*We had a quick chinwag during the break.*']
+          - [
+              Take the piss,
+              UK / Australia,
+              'Joke or make fun of someone (very informal)',
+              "*They were just taking the piss – they weren't being serious.*",
+            ]
+          - [
+              Take a rain check,
+              US / Canada,
+              Say no politely and do it another time,
+              '*I took a rain check on dinner and suggested next week.*',
+            ]
+      - id: politeness-table
+        type: table
+        caption: How polite is it?
+        header: [Phrase, Politeness level]
+        rows:
+          - [I want…, Too direct]
+          - [Can I have…?, Polite and casual]
+          - ["I'd like…", Polite]
+          - [Could I have…?, Very polite]
+          - [I would appreciate…, Very formal]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask each student for one past question with a phrase from the table.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: english-speaking-cultures-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy a message and send it. Mori will ask you questions; answer every one.
+      - id: mori-main
+        type: aiTutorPrompt
+        title: Cultural differences and social norms
+        message: |-
+          Hi Mori! Let's practice talking about cultural differences and social norms. Please ask me questions in the past tense (past simple, past continuous, and present perfect) about my experiences with people from English-speaking cultures, such as the USA, the UK, or Australia.
+          You can ask me about situations where I felt comfortable or uncomfortable, misunderstandings I've had, differences in communication style, and moments when language or pronunciation caused confusion.
+          Please also ask questions that make me compare cultures politely, use softening language, and explain how people behaved or reacted in real situations.
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Three interactive activities
+      - id: podcast-link
+        type: externalLink
+        label: "English isn't always English (podcast)"
+        url: https://docs.google.com/document/d/17PY4XJYyoJ68igzMufPwJikXezpn_RttYYnp741AoBk/edit
+      - id: mori-podcast
+        type: aiTutorPrompt
+        title: "Activity 1: English isn't always English"
+        intro: >-
+          Listen to the podcast again. Write down a cultural difference about language
+          and understanding each other between Israeli English speakers and native
+          English speakers from the UK, the USA or Australia. Use comparisons and give
+          examples from your life. Then send your answer with this message.
+        message: >-
+          Hi Mori, I listened to the podcast "English isn't always English" and wrote
+          down differences between English speakers from different countries compared
+          to Israel. Please check my answer for grammar mistakes and ask me follow-up
+          questions about my experiences.
+      - id: mori-friend
+        type: aiTutorPrompt
+        title: 'Activity 2: My friend abroad'
+        intro: >-
+          Have a make-believe conversation with Mori, a person from an English-speaking
+          country (USA / UK / Australia). Lead the conversation: ask Mori questions in
+          the past tense and use natural English phrases that are common in these
+          cultures.
+        message: >-
+          Hi Mori! You are a person from an English-speaking country (the USA, the UK,
+          or Australia). Let's have a natural conversation about life, culture, and
+          daily experiences in your country. Please answer my questions like a real
+          person, and feel free to ask me follow-up questions too. I will ask you
+          questions in the past tense about your experiences, habits, and social
+          situations, and I will try to use natural English phrases that people
+          commonly use in your culture.
+      - id: friend-remember
+        type: callout
+        tone: tip
+        title: "Don't forget to"
+        text: |-
+          Ask the questions in the past tense.
+          Use culture-specific phrases: look at the class summary for help!
+          Sound polite and curious, not too direct or judgmental.
+      - id: accents-video
+        type: externalLink
+        label: 'ONE language, THREE accents: UK vs USA vs AUS English!'
+        url: https://www.youtube.com/watch?v=R1lmeSIhLxc
+      - id: accents-questions
+        type: discussionQuestions
+        title: 'Activity 3: One language, three accents'
+        items:
+          - question: Which pronunciation in the video sounded most familiar to you? Why?
+          - question: Which word was hardest to understand when you heard it in a different accent?
+          - question: Did the video change how you feel about making pronunciation mistakes? How?
+          - question: Have you ever misunderstood someone because of their accent? What happened?
+          - question: Which accent do you think is easier for international communication? Why?
+      - id: mori-accents
+        type: aiTutorPrompt
+        title: 'Activity 3: Check my answers'
+        intro: Watch the video, answer the questions above, and send your answers to Mori with this message.
+        message: |-
+          Hi Mori! I've answered some questions about a video showing different English accents (Australia, the USA, and the UK). Please read my answers carefully and help me check them.
+          1. Correct any grammar or tense mistakes (especially past tenses).
+          2. Suggest more natural or native-like phrasing if needed.
+          3. Point out if anything sounds too direct or unnatural for English conversation.
+          4. Keep the meaning of my answers the same - don't rewrite everything.
+          After each correction, please briefly explain why it's better. At the end, tell me one thing I did well and one thing I can improve next time.
+      - id: accents-remember
+        type: callout
+        tone: tip
+        title: "Don't forget to"
+        text: |-
+          Use the past tense when you talk about the video and your experiences.
+          Explain *why*, not just *what*: give a short reason or example, not one-sentence answers.
+          Speak about accents respectfully, not as "right" or "wrong": focus on clarity, familiarity and personal experience.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: english-speaking-cultures-practice
+    book: workbook
+    title: 'Practice: English-Speaking Cultures'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked right away, and you can try again.
+      - id: ex-questions
+        type: activity
+        activity: english-speaking-cultures-questions
+      - id: ex-norms
+        type: activity
+        activity: english-speaking-cultures-norms
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: english-speaking-cultures-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: English-speaking cultures words
+        glossLang: he
+        link: https://quizlet.com/il/1125898753/english-speaking-cultures-english-translation-flash-cards/
+        items: &english-speaking-cultures-words
+          - { term: Spouse, gloss: בן / בת זוג (נשואים) }
+          - { term: Significant other, gloss: בן / בת זוג }
+          - { term: Passed away, gloss: נפטר }
+          - { term: Introvert, gloss: מופנם }
+          - { term: Extrovert, gloss: מוחצן }
+          - { term: Personal space, gloss: מרחב אישי }
+          - { term: Open-minded, gloss: פתוח מחשבה }
+          - { term: Direct, gloss: ישיר }
+          - { term: Independent, gloss: עצמאי }
+          - { term: Boundaries, gloss: גבולות }
+          - { term: Awkward, gloss: מביך / לא נעים }
+          - { term: To get along, gloss: להסתדר }
+          - { term: To catch up, gloss: להשלים פערים / להתעדכן }
+          - { term: Quality time, gloss: זמן איכות }
+          - { term: Life stage, gloss: שלב בחיים }
+          - { term: Siblings, gloss: אחים ואחיות }
+          - { term: To drift apart, gloss: להתרחק בהדרגה }
+          - { term: To make time (for), gloss: לפנות זמן למשהו }
+          - { term: To feel at ease, gloss: להרגיש בנוח }
+          - { term: To move on, gloss: להמשיך הלאה }
+          - { term: It depends, gloss: זה תלוי }
+          - { term: Fair enough, gloss: הוגן / סביר }
+          - { term: No hard feelings, gloss: בלי טינה }
+          - { term: "I'm alright", gloss: אני בסדר }
+          - { term: So-so, gloss: ככה־ככה }
+          - { term: Can I have…?, gloss: אפשר לקבל…? }
+          - { term: I would like…, gloss: הייתי רוצה… }
+          - { term: Figure of speech, gloss: ביטוי ציורי }
+          - { term: Soccer, gloss: כדורגל (המונח האמריקאי) }
+          - { term: Football, gloss: כדורגל (המונח הבריטי) }
+          - { term: Restroom, gloss: שירותים }
+          - { term: Passive-aggressive, gloss: פסיבי-אגרסיבי }
+          - { term: To speak your mind, gloss: לומר את דעתך }
+          - { term: Vague, gloss: מעורפל }
+          - { term: Blunt, gloss: בוטה / ישיר מדי }
+
+vocabulary:
+  - slug: english-speaking-cultures
+    title: English-Speaking Cultures
+    items: *english-speaking-cultures-words
+
+activities:
+  - slug: english-speaking-cultures-questions
+    title: 'Questions in the past: Did you…? Were you…? Have you ever…? Had you…?'
+    minutes: 8
+    items:
+      - id: did-feel
+        type: multipleChoice
+        prompt: ___ you feel at ease at your first meeting with the team?
+        options:
+          - { text: Did, correct: true }
+          - {
+              text: Were,
+              feedback: '*Were* goes with the *-ing* form (*Were you feeling…?*). With the base verb *feel*, use *Did*.',
+            }
+          - {
+              text: Have,
+              feedback: '*Have* goes with a past participle (*Have you felt…?*). With the base verb *feel*, use *Did*.',
+            }
+      - id: were-doing
+        type: fillBlank
+        prompt: Complete the past continuous question.
+        text: What ___ you doing when the meeting started?
+        blanks: [[were]]
+      - id: life-experience
+        type: multipleChoice
+        prompt: Which question asks about a life experience, without saying when?
+        options:
+          - { text: Have you ever lived abroad?, correct: true }
+          - {
+              text: Did you live abroad in 2019?,
+              feedback: 'This question gives a time (*in 2019*), so it is the past simple. For a life experience, use *Have you ever…?*',
+            }
+          - {
+              text: Were you living abroad last year?,
+              feedback: 'This is the past continuous: an action in progress at a time in the past. For a life experience, use *Have you ever…?*',
+            }
+      - id: question-tenses
+        type: matching
+        prompt: Match each question with its tense.
+        pairs:
+          - [Did you hit it off with your new team?, Past simple]
+          - [Were you talking to your manager when I called?, Past continuous]
+          - [Have you ever taken a rain check?, Present perfect]
+          - [Had you met her before the trip?, Past perfect]
+      - id: has-she
+        type: fillBlank
+        prompt: Complete the present perfect question.
+        text: ___ she ever experienced culture shock?
+        blanks: [[Has]]
+      - id: had-met
+        type: fillBlank
+        prompt: Write *meet* in the right form (past perfect).
+        text: Had they ___ before the project started?
+        blanks: [[met]]
+      - id: base-verb
+        type: trueFalse
+        prompt: 'In a past simple question, the main verb is in the base form: *Did you catch up with her?*'
+        answer: true
+        feedback:
+          correct: 'Right! *Did* shows the past, so the verb stays in the base form: *Did you catch…?*'
+          incorrect: 'After *did*, use the base form: *Did you catch up?*, not *Did you caught up?*'
+      - id: order-get-along
+        type: reorderSentence
+        prompt: Put the words in order to make a question.
+        sentence: Did you get along with your manager?
+
+  - slug: english-speaking-cultures-norms
+    title: 'Social norms: polite and natural English'
+    minutes: 8
+    items:
+      - id: most-polite
+        type: multipleChoice
+        prompt: You are in a café. Which is the most polite way to order?
+        options:
+          - { text: 'Could I have a coffee, please?', correct: true }
+          - {
+              text: I want a coffee.,
+              feedback: "*I want…* is too direct in English. Try *Could I have…?* or *I'd like…*",
+            }
+          - {
+              text: Give me a coffee.,
+              feedback: 'An order like *Give me…* sounds rude. Ask a polite question: *Could I have…?*',
+            }
+      - id: phrases
+        type: matching
+        prompt: Match each phrase with its meaning.
+        pairs:
+          - [hit it off, like each other immediately]
+          - [drift apart, slowly become less close]
+          - [break the ice, make people feel comfortable]
+          - [take a rain check, say no politely and do it another time]
+          - [speak your mind, say what you really think]
+      - id: softer
+        type: multipleChoice
+        prompt: "Your friend loves reality TV, but you don't. Which answer is softer and more polite?"
+        options:
+          - { text: "It's not really my cup of tea.", correct: true }
+          - {
+              text: Reality TV is terrible.,
+              feedback: "This is very direct. Use softer language when you disagree: *It's not really my cup of tea.*",
+            }
+          - {
+              text: I hate reality TV.,
+              feedback: "This is too direct. A softer way: *It's not really my cup of tea.*",
+            }
+      - id: there-for-me
+        type: fillBlank
+        prompt: Complete the phrase *be there for someone*.
+        text: My friends were ___ for me during a hard time.
+        blanks: [[there]]
+      - id: rain-check-uk
+        type: trueFalse
+        prompt: '*Take a rain check* is mostly a UK phrase.'
+        answer: false
+        feedback:
+          correct: 'Right! *Take a rain check* is a US / Canada phrase.'
+          incorrect: '*Take a rain check* is used mostly in the US and Canada. UK phrases are, for example, *pop round* and *have a chinwag*.'
+      - id: hung-out
+        type: fillBlank
+        prompt: Write *hang* in the past simple.
+        text: We ___ out after work last Friday.
+        blanks: [[hung]]
+      - id: most-formal
+        type: multipleChoice
+        prompt: Which phrase is the most formal?
+        options:
+          - { text: I would appreciate…, correct: true }
+          - {
+              text: Can I have…?,
+              feedback: '*Can I have…?* is polite but casual. *I would appreciate…* is very formal.',
+            }
+          - {
+              text: I want…,
+              feedback: '*I want…* is too direct. *I would appreciate…* is very formal.',
+            }
+      - id: order-hit-it-off
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: We hit it off as soon as we met.

@@ -1,0 +1,568 @@
+# Cycle "Identité et communauté", converted from the French level 2 digital notebook
+# ("Cahier digital 2025 - français niveau 2", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-2
+slug: identite-et-communaute
+title: Identité et communauté
+goal: Parler de son identité et de sa communauté avec le futur et les comparaisons.
+position: 16
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Le futur" and "Les comparaisons") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules, the activity examples and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Summary, futur simple rule 2: "il suffit d'utiliser tout le verbe à l'infinitif et
+    d'y ajouter les terminaisons" is true for -er and -ir verbs but not for -re verbs
+    (prendre → je prendrai, the final -e is dropped) nor for irregular verbs. The rule
+    now says so, lists the endings (-ai, -as, -a, -ons, -ez, -ont) and adds a NEW table
+    with être (je serai), avoir (j'aurai), aller (j'irai), faire (je ferai) and a
+    regular verb (changer). Please confirm.
+  - >-
+    Summary, comparisons: the source's broken "ð" characters (probably ✅ / ❌ icons)
+    were replaced by "Correct :" / "Incomplet :" / "À éviter :" labels. Rule 3 ("j'aime
+    plus la génération Z" → "je préfère la génération Z") is kept; note that "j'aime
+    mieux la génération Z" is also correct French, and this was added. Rule 1 now gives
+    the structure plus / moins / aussi + adjectif + que, with agreement of the
+    adjective (Ma communauté est plus grande…). Rule 2 mentions "le meilleur / le pire"
+    as in the source.
+  - >-
+    Corrections: warm-up 3 "es-tu croyant ?" → "Es-tu croyant(e) ?"; Activity 4 example
+    was missing its final full stop; Mori instructions in "vous" (Citez, Comparez,
+    Imaginez) → "tu", like the rest of the student text. Stray "**" and "&#10;" markup
+    removed.
+  - >-
+    Warm-up questions 3 and 4 ask about religion and gender. They are kept as in the
+    source, but a teacher note says students may skip a question they prefer not to
+    answer. Please confirm you want to keep them.
+  - >-
+    Activity 1 is titled "l'avenir de ma communauté" but is a set of mini-interviews on
+    identity (with some future and comparison questions). The title is kept. The
+    source says "Mini-interviews (3–4 min)" and then "after 2 minutes, change
+    partners"; both are kept in the steps, minutes recorded as 4. The questions are
+    given as discussion questions.
+  - >-
+    Mori: the source gives three tasks but no message to send. The three Mori messages
+    were WRITTEN from these tasks (present yourself in 3 sentences; compare two of your
+    communities on size, ideology and place; imagine your identity in the future).
+    The tips callout was added as in the other cycles.
+  - >-
+    Times given as ranges are recorded as the upper value: 3–4 → 4, 2–3 → 3, 7–8 → 8,
+    12–15 → 15, 8–10 → 10. Activity 2 total 4 + 3 + 8 = 15; Activity 4 total 15 + 10
+    = 25. The "Réponse de l'élève 1/2/3" lines are removed (answer boxes). The Quizlet
+    link is kept without its "?i=…&x=…" tracking parameters.
+  - >-
+    Vocabulary: "Avoir – to have" (English) → "יש ל־ / להחזיק"; "Inclusif – מכליל" →
+    "מכליל / מכיל"; "Aussi… que – כמו" → "…כמו (באותה מידה)"; "État – מצב" → "מצב /
+    מדינה" (in an identity lesson "État" may mean the state). "Plus que / Moins que"
+    are written "Plus… que / Moins… que". Please confirm.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: identite-et-communaute-classe
+    title: 'Classe : Identité et communauté'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Identité et communauté
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Le futur
+            description: 'Futur proche (*je vais changer*) et futur simple (*je changerai, je serai*)'
+          - name: Les comparaisons
+            description: '*plus… que, moins… que, aussi… que, le / la plus…*'
+      - id: quizlet
+        type: externalLink
+        label: Identité et communauté sur Quizlet
+        url: https://quizlet.com/il/1094978094/conversational-french-2025-identite-et-communaute-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Je suis ___ (nationalité / religion / citoyenneté / genre / ville).
+        example: Je m’appelle Lévanah. Je suis française et israélienne. Je suis juive.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: De quel pays viens-tu ? Quelle est ta nationalité ?
+            frame: Je viens de ___. Je suis ___.
+          - question: Où vis-tu aujourd’hui ?
+            frame: Aujourd’hui, je vis à / en ___.
+          - question: Quelle est ta religion ? Es-tu croyant(e) ?
+            frame: Je suis ___. Je suis / Je ne suis pas croyant(e).
+          - question: Quel est ton genre ?
+            frame: Je suis ___.
+          - question: Compare-toi à une autre personne que tu connais.
+            frame: |-
+              Je suis plus ___ que ___.
+              Je suis moins ___ que ___.
+          - question: Imagine ta vie dans 5 ans. Quels éléments de ton identité vont changer ? Quelle partie de ton identité ne changera jamais ?
+            frame: Dans 5 ans, mon / ma ___ va changer. Mon / Ma ___ ne changera jamais.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : L’avenir de ma communauté'
+        skills: [Le futur, Les comparaisons]
+        minutes: 4
+        steps:
+          - Écoute l’exemple de ton professeur.
+          - En binômes, pose les questions ci-dessous à ton / ta partenaire et réponds à ses questions (mini-interview).
+          - Après 2 minutes, change de partenaire et recommence l’interview.
+        example: '*Bonjour, je m’appelle Lévanah. Je suis professeure. Je suis française et israélienne. Je suis née à Paris mais aujourd’hui, je vis en Israël. Et toi ?*'
+      - id: act1-questions
+        type: discussionQuestions
+        title: Questions de l’interview
+        items:
+          - question: D’où viens-tu et où vis-tu aujourd’hui ?
+          - question: Comment te définis-tu en tant que personne ?
+          - question: Quelle est ta profession ?
+          - question: Qui dans ta famille est plus grand ou plus petit que toi ?
+            frame: Mon / Ma ___ est plus grand(e) / plus petit(e) que moi.
+          - question: Ta communauté est-elle plus grande ou plus petite qu’une autre que tu connais ?
+            frame: Ma communauté est plus / moins grande que ___.
+          - question: Quelle partie de ton identité ne changera jamais ?
+          - question: Qui seras-tu dans 10 ans ? Que feras-tu ?
+            frame: Dans 10 ans, je serai ___. Je ___.
+          - question: Comment est ta ville aujourd’hui (climat, ambiance) ?
+          - question: Qui est la personne la plus importante dans ta vie et pourquoi ?
+            frame: La personne la plus importante dans ma vie, c’est ___, parce que ___.
+          - question: 'Si un touriste te demande : « Qu’est-ce qui est typique de ta communauté ? », que réponds-tu ?'
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Comparer les communautés'
+        skills: [Les comparaisons]
+        minutes: 15
+        steps:
+          - Révise les structures avec ton professeur (4 minutes).
+          - En petits groupes (breakout rooms), comparez des communautés (classe, ville, religion, amis…). Utilisez au moins 3 types de comparaisons (3 minutes).
+          - De retour dans le groupe principal, chaque groupe présente 2 phrases et répond aux questions du professeur (8 minutes).
+        example: |-
+          **plus… que** → *Ma communauté est plus grande que la tienne.*
+          **moins… que** → *Ma communauté est moins diversifiée que la tienne.*
+          **aussi… que** → *Notre communauté est aussi unie que leur communauté.*
+          **le / la plus…** → *La communauté étudiante est la plus active.*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Nos comparaisons
+        items:
+          - question: ___ est plus ___ que ___.
+          - question: ___ est moins ___ que ___.
+          - question: ___ est aussi ___ que ___.
+          - question: ___ est le / la plus ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Ma communauté dans le futur'
+        skills: [Le futur]
+        steps:
+          - Lis l’exemple et les phrases modèles de ton professeur (4 minutes).
+          - En groupe, imaginez l’avenir de votre communauté. Écrivez 3 phrases au **futur simple** pour répondre aux questions ci-dessous.
+          - Chaque groupe partage ses 3 phrases et répond aux questions complémentaires du professeur.
+        example: '*Ma communauté sera plus inclusive. Nous aiderons les nouveaux membres à s’intégrer.*'
+      - id: act3-questions
+        type: discussionQuestions
+        title: Ma communauté dans 10 ans
+        items:
+          - question: Qu’est-ce qui sera le plus important dans ta communauté dans 10 ans ?
+            frame: Dans 10 ans, ___ sera le plus important.
+          - question: Qu’est-ce qui sera différent ?
+            frame: ___ sera différent(e).
+          - question: Qu’est-ce qui ne changera jamais ?
+            frame: ___ ne changera jamais.
+          - question: Quels problèmes rencontrera ta communauté ?
+            frame: Ma communauté rencontrera ___.
+          - question: Quelles solutions trouvera-t-elle ?
+            frame: Elle trouvera ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Qui sommes-nous ? Que faisons-nous ? Que ferons-nous ?'
+        skills: [Les comparaisons, Le futur]
+        minutes: 25
+        steps:
+          - En petits groupes (breakout rooms), écrivez 4 phrases sur votre communauté — deux phrases comparatives et deux phrases au futur simple (15 minutes).
+          - Chaque groupe lit ses 4 phrases au groupe ; le professeur corrige les erreurs fréquentes (10 minutes).
+        example: '*Ma communauté est la communauté étudiante. En ce moment, nous organisons un événement culturel. Notre communauté est plus cosmopolite que d’autres communautés car nous avons des membres originaires de pays différents. Dans 5 ans, notre communauté sera encore plus grande et diversifiée.*'
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Nos 4 phrases
+        items:
+          - question: 'Comparaison 1 : ___'
+          - question: 'Comparaison 2 : ___'
+          - question: 'Futur 1 : ___'
+          - question: 'Futur 2 : ___'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **le futur** (futur proche et futur simple,
+          activités 1, 3 et 4) et **les comparaisons** (activités 1, 2 et 4). Choisis 2 ou
+          3 activités selon le temps.
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Pose au moins deux questions à chaque élève. Les questions sur la religion et le
+          genre sont personnelles : un élève peut choisir de ne pas répondre et passer à
+          une autre question.
+      - id: n-act1
+        anchor: act1
+        minutes: 4
+        text: >-
+          Donne d’abord ton modèle (« Bonjour, je m’appelle… Et toi ? »). Mini-interviews en
+          binômes (3 à 4 minutes) ; après 2 minutes, les élèves changent de partenaire et
+          répètent l’interview.
+      - id: n-act2
+        anchor: act2
+        minutes: 15
+        text: >-
+          Introduction (4 minutes) : rappelle les structures *plus… que, moins… que, aussi…
+          que, le / la plus…*. Breakout rooms (3 minutes). Retour en groupe principal (8
+          minutes) : chaque groupe présente 2 phrases. Questions complémentaires : «
+          Pourquoi ta communauté est-elle plus importante ? », « En quoi est-elle moins
+          unie ? »
+      - id: n-act3
+        anchor: act3
+        minutes: 4
+        text: >-
+          Introduction (4 minutes) : écris 2 ou 3 phrases modèles au tableau. Ensuite,
+          chaque groupe partage 3 phrases au futur simple. Questions complémentaires : «
+          Pourquoi cela sera-t-il important ? », « Que se passera-t-il si… ? »
+      - id: n-act4
+        anchor: act4
+        minutes: 25
+        text: >-
+          Travail en breakout rooms : 15 minutes. Présentation en groupe : 10 minutes.
+          Corrige les erreurs fréquentes (accord de l’adjectif, *que* après *plus /
+          moins / aussi*, terminaisons du futur simple).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: identite-et-communaute-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-futur
+        type: ruleSummary
+        skill: Le futur
+        rules:
+          - text: 'Le **futur proche** est la forme la plus facile : le verbe **aller** au présent + **verbe à l’infinitif**. On l’utilise surtout à l’oral.'
+            examples: [Je vais changer de ville., Nous allons organiser un événement.]
+          - text: 'Le **futur simple** : pour la plupart des verbes, on prend **l’infinitif** et on ajoute les terminaisons **-ai, -as, -a, -ons, -ez, -ont**. Pour les verbes en **-re**, on enlève le *e* final.'
+            examples: [changer → je changerai, choisir → tu choisiras, prendre → il prendra]
+          - text: Certains verbes fréquents sont **irréguliers** au futur simple et sont à apprendre (voir le tableau).
+            examples: ['Dans 10 ans, je serai professeur.', Ma communauté aura plus de membres.]
+          - text: Les deux formes sont différentes en théorie, mais à l’oral tu peux choisir la forme la plus facile pour toi.
+            examples: [Je vais aider ma communauté. = J’aiderai ma communauté.]
+      - id: futur-table
+        type: table
+        caption: Le futur simple
+        header: [Sujet, changer, être, avoir, aller, faire]
+        rows:
+          - [je / j’, changerai, serai, aurai, irai, ferai]
+          - [tu, changeras, seras, auras, iras, feras]
+          - [il / elle / on, changera, sera, aura, ira, fera]
+          - [nous, changerons, serons, aurons, irons, ferons]
+          - [vous, changerez, serez, aurez, irez, ferez]
+          - [ils / elles, changeront, seront, auront, iront, feront]
+      - id: rules-comparaisons
+        type: ruleSummary
+        skill: Les comparaisons
+        rules:
+          - text: 'Pour comparer deux choses ou deux personnes, la phrase contient **les deux éléments** et la relation entre eux : **plus / moins / aussi + adjectif + que**. L’adjectif s’accorde avec le sujet.'
+            examples:
+              - 'Correct : *La communauté de Yossi est plus accueillante que la communauté de Danny.*'
+              - 'Incomplet : *La communauté de Yossi est plus accueillante.*'
+              - '*Ma communauté est moins diversifiée que la tienne.*'
+              - '*Notre communauté est aussi unie que leur communauté.*'
+          - text: 'Avec un **superlatif** (*le / la / les plus…, le meilleur, le pire*), pas besoin de comparer à autre chose.'
+            examples:
+              [
+                '*La communauté de Yossi est la plus accueillante.*',
+                '*La communauté étudiante est la plus active.*',
+              ]
+          - text: On peut utiliser *plus* ou *moins*, mais parfois un autre verbe exprime mieux l’idée.
+            examples:
+              - 'À éviter : *J’aime plus la génération Z.*'
+              - 'Mieux : *Je préfère la génération Z.* / *J’aime mieux la génération Z.*'
+      - id: comparaisons-table
+        type: table
+        caption: Les comparaisons
+        header: [Structure, Sens, Exemple]
+        rows:
+          - [plus + adjectif + que, '+', Ma communauté est plus grande que la tienne.]
+          - [moins + adjectif + que, '−', Ma ville est moins calme que ta ville.]
+          - [aussi + adjectif + que, '=', Notre communauté est aussi unie que leur communauté.]
+          - [le / la / les plus + adjectif, superlatif, La communauté étudiante est la plus active.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: identite-et-communaute-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-presentation
+        type: aiTutorPrompt
+        title: 'Message 1 : Je me présente'
+        intro: Présente-toi à Mori en trois phrases.
+        message: Bonjour Mori ! Je vais me présenter en trois phrases (mon nom, mon identité, ma communauté). Corrige mes erreurs, s’il te plaît.
+      - id: mori-comparer
+        type: aiTutorPrompt
+        title: 'Message 2 : Comparer deux communautés'
+        intro: 'Choisis deux communautés auxquelles tu appartiens. Compare trois aspects : la **taille** (le nombre de personnes), l’**idéologie** (en quoi croient les membres) et l’**emplacement** (où se trouve la communauté, si elle a un emplacement précis).'
+        message: Bonjour Mori ! Je veux comparer deux communautés auxquelles j’appartiens. Je vais écrire trois phrases avec plus… que, moins… que ou aussi… que, sur la taille, l’idéologie et l’emplacement. Corrige mes phrases et pose-moi une question sur chaque communauté, s’il te plaît.
+      - id: mori-futur
+        type: aiTutorPrompt
+        title: 'Message 3 : Mon identité dans le futur'
+        intro: Imagine comment ton identité évoluera dans le futur.
+        message: Bonjour Mori ! Je veux imaginer comment mon identité va changer dans le futur. Pose-moi des questions sur ma vie dans 5 ou 10 ans. Je vais répondre avec le futur proche et le futur simple. Corrige mes erreurs, s’il te plaît.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: identite-et-communaute-pratique
+    book: workbook
+    title: 'Pratique : Identité et communauté'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-futur
+        type: activity
+        activity: identite-et-communaute-futur
+      - id: ex-comparaisons
+        type: activity
+        activity: identite-et-communaute-comparaisons
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: identite-et-communaute-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de l’identité et de la communauté
+        glossLang: he
+        link: https://quizlet.com/il/1094978094/conversational-french-2025-identite-et-communaute-flash-cards/
+        items: &identite-et-communaute-words
+          - { term: identité, gloss: זהות }
+          - { term: communauté, gloss: קהילה }
+          - { term: être, gloss: להיות }
+          - { term: avoir, gloss: יש ל־ / להחזיק }
+          - { term: nationalité, gloss: לאום }
+          - { term: religion, gloss: דת }
+          - { term: citoyenneté, gloss: אזרחות }
+          - { term: genre, gloss: מגדר }
+          - { term: localité, gloss: יישוב }
+          - { term: profession, gloss: מקצוע }
+          - { term: famille, gloss: משפחה }
+          - { term: personne, gloss: אדם / איש }
+          - { term: comparaisons, gloss: השוואות }
+          - { term: plus… que, gloss: יותר… מ־ }
+          - { term: moins… que, gloss: פחות… מ־ }
+          - { term: aussi… que, gloss: …כמו (באותה מידה) }
+          - { term: le / la plus, gloss: הכי }
+          - { term: futur, gloss: עתיד }
+          - { term: je vais, gloss: אני הולך ל־ / אני עומד ל־ }
+          - { term: je serai, gloss: אהיה }
+          - { term: j’aurai, gloss: יהיה לי }
+          - { term: dans 5 ans, gloss: בעוד חמש שנים }
+          - { term: dans 10 ans, gloss: בעוד עשר שנים }
+          - { term: État, gloss: מצב / מדינה }
+          - { term: lieu, gloss: מקום }
+          - { term: caractéristiques, gloss: תכונות }
+          - { term: différence, gloss: הבדל }
+          - { term: questions, gloss: שאלות }
+          - { term: entretien, gloss: ראיון }
+          - { term: présentation, gloss: הצגה / מצגת }
+          - { term: vrai, gloss: נכון / אמיתי }
+          - { term: faux, gloss: שקרי / לא נכון }
+          - { term: activité, gloss: פעילות }
+          - { term: description, gloss: תיאור }
+          - { term: inclusif, gloss: מכליל / מכיל }
+          - { term: diversifié, gloss: מגוון }
+          - { term: important, gloss: חשוב }
+          - { term: changer, gloss: לשנות }
+
+vocabulary:
+  - slug: identite-et-communaute
+    title: Identité et communauté
+    items: *identite-et-communaute-words
+
+activities:
+  - slug: identite-et-communaute-futur
+    title: 'Le futur : je vais changer, je changerai'
+    minutes: 8
+    items:
+      - id: serai
+        type: multipleChoice
+        prompt: Dans 10 ans, je ___ professeure.
+        options:
+          - { text: serai, correct: true }
+          - {
+              text: suis,
+              feedback: '*Suis* est au présent. Avec *dans 10 ans*, on utilise le futur : *je serai*.',
+            }
+          - {
+              text: sera,
+              feedback: '*Sera* est pour *il / elle*. Avec *je*, la terminaison est *-ai* : *je serai*.',
+            }
+      - id: aiderons
+        type: fillBlank
+        prompt: Complète avec le verbe *aider* au futur simple.
+        text: Nous ___ les nouveaux membres à s’intégrer.
+        blanks: [[aiderons]]
+      - id: vais
+        type: multipleChoice
+        prompt: Demain, je ___ parler de ma communauté.
+        options:
+          - { text: vais, correct: true }
+          - { text: va, feedback: '*Va* est pour *il / elle*. Avec *je* : *je vais* + infinitif.' }
+          - {
+              text: allons,
+              feedback: '*Allons* est pour *nous*. Avec *je* : *je vais* + infinitif.',
+            }
+      - id: prendre
+        type: trueFalse
+        prompt: 'Au futur simple, *prendre* garde tout l’infinitif : *je prendreai*.'
+        answer: false
+        feedback:
+          correct: 'Bravo ! Pour les verbes en *-re*, on enlève le *e* : *je prendrai*.'
+          incorrect: 'Pour les verbes en *-re*, on enlève le *e* final avant la terminaison : *je prendrai*.'
+      - id: irreguliers
+        type: matching
+        prompt: Associe chaque verbe à sa forme au futur simple.
+        pairs:
+          - [être, je serai]
+          - [avoir, j’aurai]
+          - [aller, j’irai]
+          - [faire, je ferai]
+          - [changer, je changerai]
+      - id: rencontrera
+        type: fillBlank
+        prompt: Complète avec le verbe *rencontrer* au futur simple.
+        text: Quels problèmes ___ ta communauté ?
+        blanks: [[rencontrera]]
+      - id: changera
+        type: multipleChoice
+        prompt: Quelle partie de ton identité ne ___ jamais ?
+        options:
+          - { text: changera, correct: true }
+          - {
+              text: changerai,
+              feedback: '*Changerai* est pour *je*. Le sujet est *quelle partie* (= elle) : *changera*.',
+            }
+          - {
+              text: changeras,
+              feedback: '*Changeras* est pour *tu*. Le sujet est *quelle partie* (= elle) : *changera*.',
+            }
+      - id: ordre-inclusive
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Ma communauté sera plus inclusive.
+
+  - slug: identite-et-communaute-comparaisons
+    title: 'Les comparaisons : plus… que, moins… que, aussi… que'
+    minutes: 8
+    items:
+      - id: plus-grande
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Ma communauté est plus grande que la tienne., correct: true }
+          - {
+              text: Ma communauté est plus grande de la tienne.,
+              feedback: 'Après *plus*, on utilise *que* : *plus grande que*.',
+            }
+          - {
+              text: Ma communauté est plus grand que la tienne.,
+              feedback: '*Communauté* est féminin : l’adjectif s’accorde, *plus grande*.',
+            }
+      - id: aussi
+        type: fillBlank
+        prompt: 'Complète pour dire que les deux communautés sont égales (=).'
+        text: Notre communauté est ___ unie que leur communauté.
+        blanks: [[aussi]]
+        wordBank: [plus, moins, aussi]
+      - id: moins-que
+        type: fillBlank
+        prompt: 'Complète la comparaison (−).'
+        text: Ma communauté est ___ diversifiée ___ la tienne.
+        blanks: [[moins], [que]]
+      - id: phrase-complete
+        type: trueFalse
+        prompt: '*La communauté de Yossi est plus accueillante.* Cette comparaison est complète.'
+        answer: false
+        feedback:
+          correct: 'Bravo ! Il manque le deuxième élément : *… plus accueillante que la communauté de Danny*.'
+          incorrect: 'Quand on compare, la phrase contient les deux éléments : *… plus accueillante que la communauté de Danny*.'
+      - id: la-plus
+        type: multipleChoice
+        prompt: La communauté étudiante est ___ active.
+        options:
+          - { text: la plus, correct: true }
+          - { text: le plus, feedback: '*Communauté* est féminin : *la plus active*.' }
+          - {
+              text: plus,
+              feedback: 'Sans deuxième élément, on utilise le superlatif avec l’article : *la plus active*.',
+            }
+      - id: sens
+        type: matching
+        prompt: Associe chaque structure à son sens.
+        pairs:
+          - [plus… que, '+ (supérieur)']
+          - [moins… que, '− (inférieur)']
+          - [aussi… que, '= (égal)']
+          - [la plus…, superlatif (le maximum)]
+      - id: prefere
+        type: multipleChoice
+        prompt: 'Quelle phrase est la plus naturelle ?'
+        options:
+          - { text: Je préfère la génération Z., correct: true }
+          - {
+              text: J’aime plus la génération Z.,
+              feedback: 'À l’oral, *j’aime plus* peut aussi vouloir dire « je n’aime plus ». Pour être clair, on utilise *préférer* : *Je préfère la génération Z.*',
+            }
+          - {
+              text: Je plus aime la génération Z.,
+              feedback: '*Plus* ne se met pas avant le verbe. On dit : *Je préfère la génération Z.*',
+            }
+      - id: ordre-active
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: La communauté étudiante est la plus active.

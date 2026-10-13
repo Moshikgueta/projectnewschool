@@ -1,0 +1,676 @@
+# Cycle "Argent et épargne", converted from the French level 3 digital notebook
+# ("Cahier digital 2026 - français niveau 3", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-3
+slug: argent-et-epargne
+title: Argent et épargne
+goal: Parler d’argent et d’épargne avec les phrases de condition (si) et la voix passive.
+position: 2
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Les phrases de condition" and "La voix passive") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's summary
+    rules, the activity examples and its vocabulary. Please check level, wording and every
+    right answer before students see them.
+  - >-
+    COPYRIGHT: Activity 3 starts with a text "5 conseils pour économiser de l’argent" by a
+    named financial advisor, with a quote and a long first-person biography ("À propos de
+    Daniel…") that look taken from a real website. The name, the quote and the biography
+    were left out and replaced by a one-line neutral description. The five short tips
+    (titles and one-line explanations) are generic and were kept.
+  - >-
+    Grammar fix (Activity 2 and summary): the source rule "devrait / pourrait / faudrait
+    + être + participe passé" (and "devoir / pouvoir / falloir + être + participe passé")
+    is wrong for falloir, which is impersonal (*L’argent faudrait être économisé is not
+    French). The rule now says devoir / pouvoir (+ être + participe passé) and gives
+    falloir as "il faudrait que + subjonctif" (Il faudrait que l’argent soit économisé) or
+    "il faudrait + infinitif". Please confirm.
+  - >-
+    Grammar fix (Activity 3, type 3 questions): "Si tu avais économisé ton argent, comment
+    auraient été tes finances aujourd’hui ?" → "comment seraient tes finances aujourd’hui
+    ?" and "Si tu avais commencé à économiser plus jeune, comment aurait été ta vie
+    aujourd’hui ?" → "comment serait ta vie aujourd’hui ?" (a result in the present after
+    si + plus-que-parfait takes the conditionnel présent). A short note on this mixed form
+    was added to the summary. Please confirm.
+  - >-
+    Summary addition (not in the source, please confirm): the tense of the passive is
+    carried by être (est économisé / a été économisé / sera économisé), with examples; a
+    table of the four types of conditional sentences. The type numbers 0–3 were broken in
+    the export (all shown as "1.") and were restored.
+  - >-
+    Other corrections: "Etape 1" → "Étape 1"; "Si j’avais économisé, j’aurais acheté une
+    maison" (missing full stop); Mori activity 2 "les différentes formes de conditions" →
+    "les différents types de phrases de condition"; Mori greeting "Salut Mori !" kept and
+    added to the two activity messages. Broken bold marks were removed throughout.
+  - >-
+    Left out: the "Date / Participants" lines, the "Niveau 3 : français extrême" line and
+    the "Réponse de l’élève 1/2/3" lines (the platform has answer boxes). The notebook gives
+    no times for the warm-up and the activities, so no minutes are recorded for them.
+    Activity 3 splits questions by level (débutants: types 0 and 1; niveau avancé: types 2
+    and 3): kept in a "Selon le niveau" callout.
+  - >-
+    The warm-up questions had no sentence frames: frames were added. Activity 3 and the
+    Activity 4 pair work had no answer frames: frames were added. Please confirm.
+  - >-
+    Vocabulary: "revenus – הכנסה" → "הכנסות"; "divertissement / loisirs – בידור" →
+    "בידור / פנאי"; "actions – פעולות" → "מניות / פעולות" (in Activity 2 *actions* means
+    shares: investie dans des actions); "voix passive – סביל" → "סביל (צורה סבילה)".
+    Please confirm. The Quizlet link is kept without its tracking parameters (?i=…&x=…).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: argent-et-epargne-classe
+    title: 'Classe : Argent et épargne'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Argent et épargne
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Les phrases de condition
+            description: 'Si + présent, imparfait ou plus-que-parfait (*si j’économise…, si j’avais plus d’argent…, si j’avais économisé…*)'
+          - name: La voix passive
+            description: 'Être + participe passé (*l’argent est économisé, l’argent devrait être investi*)'
+      - id: quizlet
+        type: externalLink
+        label: Argent et épargne sur Quizlet
+        url: https://quizlet.com/il/1126257552/extreme-french-2026-argent-et-epargne-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Je pense que la stabilité financière est importante parce que ___.
+        example: Je m’appelle Lévanah. Je pense que la stabilité financière est importante parce qu’on ne sait pas ce qui peut arriver dans la vie.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Combien d’argent penses-tu que les jeunes devraient économiser chaque mois ?
+            frame: Je pense que les jeunes devraient économiser ___ par mois parce que ___.
+          - question: Penses-tu qu’on apprend suffisamment à gérer son argent à l’école ou devrait-on en parler davantage ?
+            frame: À mon avis, à l’école, on ___.
+          - question: Que ferais-tu si ton salaire diminuait de 20 % ?
+            frame: Si mon salaire diminuait de 20 %, je ___.
+          - question: Que devrait-on faire si quelqu’un perdait ses économies à cause d’une erreur de la banque ?
+            frame: Si quelqu’un perdait ses économies, la banque devrait ___.
+          - question: Comment les adolescents peuvent-ils apprendre aujourd’hui à bien épargner ?
+            frame: Les adolescents peuvent apprendre à épargner en ___.
+          - question: Si on te donnait un million d’euros, comment le dépenserais-tu ?
+            frame: Si on me donnait un million d’euros, je ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Parlons de conditions'
+        skills: [Les phrases de condition]
+        steps:
+          - Mettez-vous par deux.
+          - Discutez et répondez à **4 questions** choisies par le professeur selon votre niveau (types 0 à 3 ci-dessous).
+          - Mise en commun en classe entière.
+        example: '*Si tu gagnais 10 000 dollars demain, que ferais-tu avec cet argent ?* — *Si je gagnais 10 000 dollars, j’en économiserais la moitié et je partirais en voyage.*'
+      - id: act1-type0
+        type: discussionQuestions
+        title: 'Type 0 : probabilité ou quasi-certitude au présent (si + présent, présent)'
+        items:
+          - question: Si tu économises de l’argent chaque mois, que se passe-t-il ?
+            frame: Si j’économise chaque mois, ___.
+          - question: Si les gens ne planifient pas leurs dépenses, que se passe-t-il en général ?
+            frame: Si les gens ne planifient pas leurs dépenses, ils ___.
+          - question: Si quelqu’un dépense plus qu’il ne gagne, quels problèmes rencontre-t-il ?
+            frame: Si quelqu’un dépense plus qu’il ne gagne, il ___.
+          - question: Si tu achètes toujours le moins cher, quel effet cela a-t-il sur ton style de vie ?
+            frame: Si j’achète toujours le moins cher, ___.
+      - id: act1-type1
+        type: discussionQuestions
+        title: 'Type 1 : probabilité ou quasi-certitude au futur (si + présent, futur simple)'
+        items:
+          - question: Si tu reçois une prime cette année, comment l’utiliseras-tu ?
+            frame: Si je reçois une prime, je l’utiliserai pour ___.
+          - question: Si tu trouves un logement moins cher, dans quoi dépenseras-tu l’argent en plus ?
+            frame: Si je trouve un logement moins cher, je dépenserai l’argent en plus dans ___.
+          - question: Si tu ouvres un compte d’épargne le mois prochain, combien économiseras-tu ?
+            frame: Si j’ouvre un compte d’épargne, j’économiserai ___.
+          - question: Si tes dépenses augmentent l’année prochaine, que réduiras-tu en premier ?
+            frame: Si mes dépenses augmentent, je réduirai d’abord ___.
+      - id: act1-type2
+        type: discussionQuestions
+        title: 'Type 2 : hypothèse ou situation irréelle (si + imparfait, conditionnel présent)'
+        items:
+          - question: Si tu gagnais 10 000 dollars demain, que ferais-tu avec cet argent ?
+            frame: Si je gagnais 10 000 dollars, je ___.
+          - question: Si tu pouvais vivre n’importe où pour moins cher, où vivrais-tu ?
+            frame: Si je pouvais vivre n’importe où, je vivrais ___.
+          - question: Si tu devais économiser 50 % de ton salaire, qu’arrêterais-tu d’acheter ?
+            frame: Si je devais économiser la moitié de mon salaire, j’arrêterais d’acheter ___.
+          - question: Si tu pouvais changer une chose dans la façon dont les gens économisent, que changerais-tu ?
+            frame: Si je pouvais changer une chose, je changerais ___.
+      - id: act1-type3
+        type: discussionQuestions
+        title: 'Type 3 : hypothèse non réalisée dans le passé, regrets (si + plus-que-parfait, conditionnel passé)'
+        items:
+          - question: Si tu avais économisé plus d’argent l’année dernière, qu’en aurais-tu fait ?
+            frame: Si j’avais économisé plus d’argent, j’aurais ___.
+          - question: Si tu avais su davantage de choses sur l’argent à 18 ans, qu’aurais-tu fait différemment ?
+            frame: Si j’avais su davantage de choses à 18 ans, j’aurais ___.
+          - question: Si tu avais moins dépensé en vêtements quand tu étais jeune, combien aurais-tu économisé ?
+            frame: Si j’avais moins dépensé en vêtements, j’aurais économisé ___.
+          - question: Si tu avais demandé conseil avant, aurais-tu évité certaines erreurs financières ?
+            frame: Si j’avais demandé conseil, j’aurais évité ___.
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Que faut-il faire ?'
+        skills: [La voix passive]
+        steps:
+          - Le professeur présente une situation. Tu réponds avec la **voix passive**.
+          - 'Structure : *devrait / pourrait* (conditionnel présent) + **être** + **participe passé**. Avec *falloir* : *il faudrait que* + **soit** + participe passé.'
+        example: |-
+          *Une grosse prime t’est accordée au travail. Que faudrait-il en faire ?*
+          *L’argent devrait être économisé pour les projets futurs.*
+          *Une partie pourrait être investie dans des actions ou sur un compte d’épargne.*
+          *Des dons pourraient être faits à des associations caritatives.*
+      - id: act2-situations
+        type: discussionQuestions
+        title: Situations
+        items:
+          - question: Une grosse prime t’est accordée au travail. Que faudrait-il en faire ?
+            frame: L’argent devrait être ___.
+          - question: De l’argent a été volé sur le compte bancaire d’un ami. Que faudrait-il faire ?
+            frame: La banque devrait être ___. / Le vol devrait être ___.
+          - question: Trop d’argent est dépensé pour des choses inutiles. Que faudrait-il faire ?
+            frame: Moins d’argent devrait être ___.
+          - question: Aujourd’hui, les jeunes n’économisent pas assez. Que faudrait-il faire ?
+            frame: Plus d’argent pourrait être ___ si ___.
+          - question: On pense que les jeunes devraient apprendre à gérer leur argent à l’école. Es-tu d’accord ?
+            frame: Oui / Non, la gestion de l’argent devrait être ___.
+          - question: Ta ville cherche des idées sur la façon dont l’argent public devrait être dépensé. Que proposes-tu ?
+            frame: L’argent public pourrait être ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Conseils financiers'
+        skills: [Les phrases de condition]
+        steps:
+          - '**Étape 1 :** lis le texte « 5 conseils pour économiser de l’argent », écrit par un conseiller financier (les cinq conseils sont ci-dessous).'
+          - '**Étape 2 :** travaillez par deux. Chaque binôme reçoit **un conseil** et répond aux questions associées, selon son niveau.'
+        example: '*Si tu commences à économiser ce mois-ci, en quoi cela t’aidera-t-il ?* — *Si je commence ce mois-ci, j’aurai assez d’argent pour les vacances.*'
+      - id: act3-levels
+        type: callout
+        tone: info
+        title: Selon le niveau
+        text: |-
+          **Niveau débutant :** questions *Zéro* et *Premier* (si + présent, présent / futur simple).
+          **Niveau avancé :** questions *Deuxième* (si + imparfait, conditionnel présent) et *Troisième* (si + plus-que-parfait, conditionnel passé).
+      - id: act3-tip1
+        type: discussionQuestions
+        title: '1. Paye-toi en premier : quand tu reçois de l’argent, mets-en une partie de côté avant de le dépenser. Même une petite somme compte.'
+        items:
+          - question: 'Zéro : Que se passe-t-il si tu économises d’abord une partie de ton argent ?'
+          - question: 'Premier : Si tu commences à économiser ce mois-ci, en quoi cela t’aidera-t-il ?'
+          - question: 'Deuxième : Si tu pouvais économiser la moitié de ton salaire, qu’en ferais-tu ?'
+          - question: 'Troisième : Si tu avais économisé ton argent, comment seraient tes finances aujourd’hui ?'
+      - id: act3-tip2
+        type: discussionQuestions
+        title: '2. Sache où va ton argent : note tes dépenses pendant une semaine.'
+        items:
+          - question: 'Zéro : Si tu notes tes dépenses, que remarques-tu ?'
+          - question: 'Premier : Si tu regardes tes dépenses cette semaine, qu’apprendras-tu ?'
+          - question: 'Deuxième : Si tu pouvais voir toutes tes dépenses au même endroit, comment te sentirais-tu ?'
+          - question: 'Troisième : Si tu avais mieux géré ton argent l’année dernière, qu’est-ce qui aurait été différent ?'
+      - id: act3-tip3
+        type: discussionQuestions
+        title: 3. Fixe-toi un objectif
+        items:
+          - question: 'Zéro : Si tu as un objectif, économises-tu plus facilement ?'
+          - question: 'Premier : Si tu te fixes un objectif ce mois-ci, combien économiseras-tu ?'
+          - question: 'Deuxième : Si tu pouvais choisir n’importe quel objectif aujourd’hui, lequel serait-ce ?'
+          - question: 'Troisième : Si tu t’étais fixé un objectif clair l’année dernière, qu’aurais-tu fait avec ton argent ?'
+      - id: act3-tip4
+        type: discussionQuestions
+        title: 4. Dépense moins pour les petites choses
+        items:
+          - question: 'Zéro : Si tu achètes moins de petites choses, que se passe-t-il avec ton épargne ?'
+          - question: 'Premier : Si tu arrêtes d’acheter des snacks tous les jours, combien économiseras-tu ce mois-ci ?'
+          - question: 'Deuxième : Si tu pouvais éviter un achat inutile par jour, comment te sentirais-tu ?'
+          - question: 'Troisième : Si tu avais moins dépensé en snacks l’an dernier, qu’aurais-tu pu acheter de plus important ?'
+      - id: act3-tip5
+        type: discussionQuestions
+        title: 5. Commence aujourd’hui, pas demain
+        items:
+          - question: 'Zéro : Si tu attends trop longtemps pour économiser, que se passe-t-il ?'
+          - question: 'Premier : Si tu économises aujourd’hui, que feras-tu de cet argent à l’avenir ?'
+          - question: 'Deuxième : Si tu pouvais te donner un conseil financier, quel serait ce conseil ?'
+          - question: 'Troisième : Si tu avais commencé à économiser plus jeune, comment serait ta vie aujourd’hui ?'
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Comment économiser de l’argent ?'
+        skills: [La voix passive]
+        steps:
+          - '**Étape 1 – Explication :** aujourd’hui, nous parlons de la façon dont l’argent peut être économisé ou gaspillé au quotidien, avec la voix passive.'
+          - '**Étape 2 – Discussion collective :** réponds aux trois questions ci-dessous.'
+          - '**Étape 3 – Travail en binômes :** chaque binôme reçoit une phrase et propose une solution à la voix passive.'
+        example: |-
+          *L’eau peut être économisée si la consommation d’eau est limitée.*
+          *Moins d’énergie peut être utilisée si les lumières sont éteintes.*
+          *Plus d’argent peut être économisé si les repas sont pris à la maison.*
+          *Le gaspillage alimentaire peut être réduit en planifiant les repas et en conservant correctement les aliments.*
+      - id: act4-discussion
+        type: discussionQuestions
+        title: Discussion collective
+        items:
+          - question: Dans quel domaine penses-tu que l’on gaspille le plus d’argent ?
+            frame: Je pense que le plus d’argent est gaspillé dans ___.
+          - question: Quelle petite chose pourrait être changée pour économiser de l’argent ?
+            frame: ___ pourrait être changé(e).
+          - question: Qu’est-ce qui est fait chez toi pour économiser de l’argent ?
+            frame: Chez moi, ___ est / sont ___.
+      - id: act4-pairs
+        type: discussionQuestions
+        title: Phrases pour les binômes
+        items:
+          - question: Explique comment l’eau peut être économisée à la maison.
+            frame: L’eau peut être économisée si ___.
+          - question: Explique comment le gaspillage alimentaire peut être réduit.
+            frame: Le gaspillage alimentaire peut être réduit si ___.
+          - question: Explique comment l’énergie est gaspillée au quotidien.
+            frame: L’énergie est gaspillée quand ___.
+          - question: Explique comment les coûts de transport peuvent être réduits.
+            frame: Les coûts de transport peuvent être réduits si ___.
+          - question: Explique comment les habitudes de consommation peuvent être modifiées.
+            frame: Les habitudes de consommation peuvent être modifiées si ___.
+          - question: Explique comment l’argent est gaspillé dans les loisirs.
+            frame: L’argent est gaspillé dans les loisirs quand ___.
+          - question: Explique comment l’argent peut être économisé en voyage.
+            frame: L’argent peut être économisé en voyage si ___.
+          - question: Explique comment les objets anciens peuvent être réutilisés au lieu d’être jetés.
+            frame: Les objets anciens peuvent être réutilisés pour ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **les phrases de condition** (échauffement,
+          activités 1 et 3) et **la voix passive** (activités 2 et 4). Le cahier ne donne pas
+          de durée pour les activités : choisis-les selon le temps et le niveau du groupe.
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: >-
+          Deux phrases par élève, 30 secondes maximum par élève et pour toi. Si les élèves
+          se connaissent déjà, passe directement aux questions d’échauffement. Cette phase
+          ne doit pas dépasser 5 minutes.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Rappelle qu’après *si* on ne met jamais le futur ni le conditionnel.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Choisis 4 questions par binôme selon le niveau : types 0 et 1 pour les débutants,
+          types 2 et 3 pour les plus avancés. Termine par une mise en commun en classe
+          entière.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Présente les situations une par une. Vérifie l’accord du participe (*une partie
+          pourrait être investie*). Si un élève dit « il faudrait être économisé », corrige
+          en *il faudrait que l’argent soit économisé* ou *il faudrait économiser l’argent*.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Le cahier donne un texte d’un conseiller financier avec sa biographie ; seuls les
+          cinq conseils sont gardés ici. Donne un conseil à chaque binôme et choisis les
+          questions selon le niveau.
+      - id: n-act4
+        anchor: act4
+        text: Lis les exemples à voix haute, puis donne une phrase à chaque binôme. Corrige l’accord du participe avec le sujet.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: argent-et-epargne-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-conditions
+        type: ruleSummary
+        skill: Les phrases de condition
+        rules:
+          - text: 'Les phrases de condition expriment une **condition** (avec *si*) et son **résultat**. Elles servent à parler de faits généraux, de situations possibles ou d’hypothèses. Structure de base : *si* + condition, conséquence.'
+            examples:
+              - 'Si tu économises, tu as plus d’argent.'
+          - text: '**Type 0 – probabilité ou quasi-certitude au présent :** si + **présent**, **présent**.'
+            examples:
+              - 'Si on dépense trop, on a des problèmes.'
+          - text: '**Type 1 – probabilité ou quasi-certitude au futur :** si + **présent**, **futur simple**.'
+            examples:
+              - 'Si j’économise, je partirai en voyage.'
+          - text: '**Type 2 – hypothèse ou situation irréelle :** si + **imparfait**, **conditionnel présent**.'
+            examples:
+              - 'Si j’avais plus d’argent, j’achèterais une maison.'
+          - text: '**Type 3 – hypothèse non réalisée dans le passé, regrets :** si + **plus-que-parfait**, **conditionnel passé**.'
+            examples:
+              - 'Si j’avais économisé, j’aurais acheté une maison.'
+          - text: 'Pour une conséquence **dans le présent** d’une condition passée, on peut mettre le conditionnel présent.'
+            examples:
+              - Si tu avais économisé ton argent, tes finances seraient meilleures aujourd’hui.
+          - text: '**Attention :** jamais de futur ni de conditionnel après *si*.'
+            examples: ['Si j’avais plus d’argent… (et non : si j’aurais)']
+      - id: conditions-table
+        type: table
+        caption: Les phrases de condition
+        header: [Type, Après si, Dans le résultat, Exemple]
+        rows:
+          - ['0', présent, présent, 'Si on dépense trop, on a des problèmes.']
+          - ['1', présent, futur simple, 'Si j’économise, je partirai en voyage.']
+          - [
+              '2',
+              imparfait,
+              conditionnel présent,
+              'Si j’avais plus d’argent, j’achèterais une maison.',
+            ]
+          - [
+              '3',
+              plus-que-parfait,
+              conditionnel passé,
+              'Si j’avais économisé, j’aurais acheté une maison.',
+            ]
+      - id: rules-passive
+        type: ruleSummary
+        skill: La voix passive
+        rules:
+          - text: 'On utilise la **voix passive** quand l’accent est mis sur l’**action**, et non sur la personne qui la fait, ou quand cette personne est inconnue ou peu importante. Elle est très fréquente pour les règles, les conseils et les faits généraux.'
+          - text: 'Formation : **être** + **participe passé**. Le participe passé s’accorde avec le sujet.'
+            examples:
+              - 'L’argent est économisé.'
+              - 'L’eau est économisée.'
+              - 'Les lumières sont éteintes.'
+          - text: 'Actif → passif : le complément devient le sujet. La personne qui fait l’action (le complément d’agent) est introduite par **par** et peut être supprimée.'
+            examples:
+              [
+                'Actif : Les gens économisent de l’argent. → Passif : L’argent est économisé (par les gens).',
+              ]
+          - text: 'Le temps est donné par le verbe *être*.'
+            examples:
+              - 'L’argent est économisé.'
+              - 'L’argent a été économisé.'
+              - 'L’argent sera économisé.'
+          - text: 'Avec **devoir** et **pouvoir** : *devoir / pouvoir* + **être** + participe passé. Très utilisé pour donner des conseils ou exprimer des règles.'
+            examples:
+              [
+                L’argent doit être économisé.,
+                Plus d’énergie peut être économisée.,
+                L’argent devrait être économisé pour les projets futurs.,
+              ]
+          - text: '*Falloir* est impersonnel : on dit **il faudrait que** + *soit* + participe passé, ou **il faudrait** + infinitif.'
+            examples:
+              - 'Il faudrait que l’argent soit économisé.'
+              - 'Il faudrait économiser l’argent.'
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les quatre types de phrases de condition et la voix passive, puis demande un nouvel exemple sur l’argent pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: argent-et-epargne-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-general
+        type: aiTutorPrompt
+        title: Message pour commencer
+        message: Salut Mori ! Je veux m’entraîner sur le thème de l’argent et de l’épargne. Pose-moi des questions en utilisant la voix passive et les phrases de condition, et corrige mes erreurs.
+      - id: mori-reporter
+        type: aiTutorPrompt
+        title: 'Activité 1 : Reporter d’actualité (voix passive)'
+        message: Salut Mori ! Jouons au reporter d’actualité financière. Énonce une courte information à la voix passive, et je la complète avec deux ou trois phrases, aussi à la voix passive. Corrige mes erreurs.
+      - id: mori-riche
+        type: aiTutorPrompt
+        title: 'Activité 2 : Si j’étais riche… (phrases de condition)'
+        message: Salut Mori ! Pose-moi des questions amusantes avec « si » pour que je puisse répondre avec les différents types de phrases de condition. Corrige mes erreurs.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: argent-et-epargne-pratique
+    book: workbook
+    title: 'Pratique : Argent et épargne'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-conditions
+        type: activity
+        activity: argent-et-epargne-conditions
+      - id: ex-passive
+        type: activity
+        activity: argent-et-epargne-passive
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: argent-et-epargne-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de l’argent et de l’épargne
+        glossLang: he
+        link: https://quizlet.com/il/1126257552/extreme-french-2026-argent-et-epargne-flash-cards/
+        items: &argent-et-epargne-words
+          - { term: argent, gloss: כסף }
+          - { term: épargne, gloss: חיסכון }
+          - { term: dépenser, gloss: להוציא כסף }
+          - { term: économiser / épargner, gloss: לחסוך }
+          - { term: salaire, gloss: משכורת }
+          - { term: prime / bonus, gloss: בונוס }
+          - { term: compte, gloss: חשבון }
+          - { term: banque, gloss: בנק }
+          - { term: revenus, gloss: הכנסות }
+          - { term: dépenses, gloss: הוצאות }
+          - { term: budget, gloss: תקציב }
+          - { term: dette, gloss: חוב }
+          - { term: erreur, gloss: טעות }
+          - { term: conseil, gloss: עצה }
+          - { term: habitude, gloss: הרגל }
+          - { term: objectif, gloss: מטרה }
+          - { term: investir, gloss: להשקיע }
+          - { term: réduire, gloss: להפחית }
+          - { term: réutiliser, gloss: להשתמש מחדש }
+          - { term: gaspiller, gloss: לבזבז }
+          - { term: gaspillage alimentaire, gloss: בזבוז מזון }
+          - { term: énergie, gloss: אנרגיה }
+          - { term: eau, gloss: מים }
+          - { term: transport, gloss: תחבורה }
+          - { term: divertissement / loisirs, gloss: בידור / פנאי }
+          - { term: solution, gloss: פתרון }
+          - { term: coût, gloss: עלות }
+          - { term: éducation financière, gloss: חינוך פיננסי }
+          - { term: sécurité, gloss: ביטחון }
+          - { term: avenir, gloss: עתיד }
+          - { term: planifier, gloss: לתכנן }
+          - { term: phrase conditionnelle, gloss: משפט תנאי }
+          - { term: hypothétique, gloss: היפותטי }
+          - { term: voix passive, gloss: סביל (צורה סבילה) }
+          - { term: actions, gloss: מניות / פעולות }
+          - { term: résultat, gloss: תוצאה }
+          - { term: opportunité, gloss: הזדמנות }
+          - { term: responsabilité, gloss: אחריות }
+          - { term: changer, gloss: לשנות }
+          - { term: habitude de consommation, gloss: הרגל צריכה }
+
+vocabulary:
+  - slug: argent-et-epargne
+    title: Argent et épargne
+    items: *argent-et-epargne-words
+
+activities:
+  - slug: argent-et-epargne-conditions
+    title: 'Les phrases de condition : si…'
+    minutes: 8
+    items:
+      - id: si-economises
+        type: multipleChoice
+        prompt: Si tu économises, tu ___ plus d’argent.
+        options:
+          - { text: as, correct: true }
+          - {
+              text: aurais,
+              feedback: 'Après *si* + présent, le résultat est au présent (ou au futur). Le conditionnel *aurais* va avec *si* + imparfait.',
+            }
+          - {
+              text: avais,
+              feedback: '*Avais* est à l’imparfait. Après *si* + présent, le résultat est au présent : *tu as*.',
+            }
+      - id: partirai
+        type: fillBlank
+        prompt: Complète avec le verbe *partir* au futur simple.
+        text: Si j’économise, je ___ en voyage.
+        blanks: [[partirai]]
+      - id: si-avais
+        type: multipleChoice
+        prompt: Si j’___ plus d’argent, j’achèterais une maison.
+        options:
+          - { text: avais, correct: true }
+          - {
+              text: aurais,
+              feedback: 'Jamais de conditionnel après *si* ! Avec un conditionnel présent dans le résultat, on met l’imparfait après *si* : *si j’avais*.',
+            }
+          - {
+              text: aurai,
+              feedback: 'Jamais de futur après *si* ! Avec un conditionnel présent dans le résultat, on met l’imparfait après *si* : *si j’avais*.',
+            }
+      - id: aurais-achete
+        type: fillBlank
+        prompt: Complète avec le verbe *acheter* au conditionnel passé.
+        text: Si j’avais économisé, j’___ une maison.
+        blanks: [[aurais acheté]]
+      - id: jamais-conditionnel
+        type: trueFalse
+        prompt: 'On peut dire : *Si j’aurais plus d’argent, je voyagerais.*'
+        answer: false
+        feedback:
+          correct: 'Bravo ! Jamais de conditionnel après *si* : *Si j’avais plus d’argent, je voyagerais.*'
+          incorrect: 'Attention : jamais de conditionnel après *si*. On dit : *Si j’avais plus d’argent, je voyagerais.*'
+      - id: types
+        type: matching
+        prompt: Associe chaque structure à son exemple.
+        pairs:
+          - [
+              'si + présent, présent',
+              'Si les gens ne planifient pas leurs dépenses, ils ont des problèmes.',
+            ]
+          - ['si + présent, futur simple', 'Si tu reçois une prime, tu l’économiseras.']
+          - [
+              'si + imparfait, conditionnel présent',
+              'Si tu gagnais 10 000 euros, tu partirais en voyage.',
+            ]
+          - [
+              'si + plus-que-parfait, conditionnel passé',
+              'Si tu avais demandé conseil, tu aurais évité cette erreur.',
+            ]
+      - id: vivrais
+        type: multipleChoice
+        prompt: Si tu pouvais vivre n’importe où, où ___-tu ?
+        options:
+          - { text: vivrais, correct: true }
+          - {
+              text: vivras,
+              feedback: 'Après *si* + imparfait (*pouvais*), le résultat est au conditionnel présent : *vivrais-tu*.',
+            }
+          - {
+              text: vivais,
+              feedback: '*Vivais* est à l’imparfait. Après *si* + imparfait, le résultat est au conditionnel présent : *vivrais-tu*.',
+            }
+      - id: ordre-prime
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Si je reçois une prime, je l’économiserai.
+
+  - slug: argent-et-epargne-passive
+    title: 'La voix passive : l’argent est économisé'
+    minutes: 8
+    items:
+      - id: ordre-doit
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: L’argent doit être économisé.
+      - id: eau-economisee
+        type: fillBlank
+        prompt: Complète avec le participe passé du verbe *économiser* (attention à l’accord).
+        text: L’eau peut être ___ si la consommation est limitée.
+        blanks: [[économisée]]
+      - id: accord
+        type: trueFalse
+        prompt: 'À la voix passive, le participe passé s’accorde avec le sujet : *Les lumières sont éteintes.*'
+        answer: true
+        feedback:
+          correct: 'Bravo ! *Les lumières* est féminin pluriel : *éteintes*.'
+          incorrect: 'C’est vrai : avec *être*, le participe s’accorde avec le sujet. *Les lumières* est féminin pluriel : *éteintes*.'
+      - id: actif-passif
+        type: multipleChoice
+        prompt: 'Actif : *Les gens économisent de l’argent.* Quelle est la phrase passive ?'
+        options:
+          - { text: L’argent est économisé par les gens., correct: true }
+          - {
+              text: L’argent a économisé les gens.,
+              feedback: 'À la voix passive, on utilise *être* + participe passé, et la personne qui fait l’action vient après *par* : *L’argent est économisé par les gens.*',
+            }
+          - {
+              text: Les gens sont économisés par l’argent.,
+              feedback: 'Le complément (*l’argent*) devient le sujet, et les gens viennent après *par* : *L’argent est économisé par les gens.*',
+            }
+      - id: prime-accordee
+        type: fillBlank
+        prompt: Complète avec le participe passé du verbe *accorder* (attention à l’accord).
+        text: Une grosse prime t’est ___ au travail.
+        blanks: [[accordée]]
+      - id: actif-passif-paires
+        type: matching
+        prompt: Associe chaque phrase active à sa phrase passive.
+        pairs:
+          - [On réduit le gaspillage., Le gaspillage est réduit.]
+          - [On éteint les lumières., Les lumières sont éteintes.]
+          - [On limite la consommation d’eau., La consommation d’eau est limitée.]
+          - [On réutilise les objets anciens., Les objets anciens sont réutilisés.]
+      - id: peut-etre
+        type: multipleChoice
+        prompt: Plus d’argent ___ économisé si les repas sont pris à la maison.
+        options:
+          - { text: peut être, correct: true }
+          - {
+              text: peut,
+              feedback: 'Il manque *être* : *pouvoir* + **être** + participe passé (*peut être économisé*).',
+            }
+          - {
+              text: peut avoir,
+              feedback: 'La voix passive se forme avec *être*, pas avec *avoir* : *peut être économisé*.',
+            }
+      - id: devrait
+        type: fillBlank
+        prompt: Complète avec le verbe *devoir* au conditionnel présent (un conseil).
+        text: L’argent ___ être économisé pour les projets futurs.
+        blanks: [[devrait]]

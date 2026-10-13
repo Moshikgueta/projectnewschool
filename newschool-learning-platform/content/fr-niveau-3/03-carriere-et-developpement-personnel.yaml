@@ -1,0 +1,650 @@
+# Cycle "Carrière et développement personnel", converted from the French level 3
+# digital notebook ("Cahier digital 2026 - français niveau 3", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-3
+slug: carriere-et-developpement-personnel
+title: Carrière et développement personnel
+goal: Se présenter dans un contexte professionnel et raconter son parcours au passé, au présent, au futur et au conditionnel.
+position: 3
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("La présentation personnelle" and "Construire une
+    narration avec les différents temps") are NEW: the notebook has no self-study
+    exercises. They were written from the cycle's summary rules, the activity examples and
+    its vocabulary. Please check level, wording and every right answer before students see
+    them.
+  - >-
+    The summary has no rules for skill 1 (présentation personnelle). A short rule was added
+    from Activity 4's demonstration (name and job, daily activities, an interesting fact in
+    the past, present or future) and from the intro round. Please confirm. The summary's
+    "Phrases conditionnelles", "Voix passive (optionnelle)" and "Connecteurs" parts are kept
+    under skill 2 (narration); the passive is marked optional as in the source.
+  - >-
+    Corrections: warm-up "qu’as-tu fais ?" → "qu’as-tu fait ?"; Activity 1 "Parlez-moi de
+    votre patron préféré et pourquoi aimiez-vous travailler avec lui." → "Parlez-moi de
+    votre patron préféré : pourquoi aimiez-vous travailler avec lui ?" (direct and indirect
+    question were mixed); Activity 2 "Que t’inspire-t-elle à faire ?" → "Qu’est-ce qu’elle
+    te donne envie de faire ?" (calque of English "inspire you to do"); Activity 4 "drônes"
+    → "drones"; Activity 5 stray "Conditionnel : / Si je pouvais…" → "Conditionnel : Si je
+    pouvais…"; "Le professeur note un tableau" → "note les phrases dans un tableau";
+    gendered forms in examples: "je serais très stressé" → "stressé(e)", "je travaille
+    comme consultant" → "consultant(e)", "je serais plus motivé" → "motivé(e)". Missing
+    full stops and broken bold marks were fixed throughout.
+  - >-
+    Tools: "Zoom Poll + Breakout rooms + Chat" (Activity 3) and "breakout rooms" (Activity
+    4) are written in French in the teacher notes (sondage Zoom, salles de sous-groupes,
+    chat). Activity 3's poll question and options are kept in a teacher note.
+  - >-
+    Times: ranges are recorded as the upper value. Activity 3 "10–15 min" → 15 (its steps:
+    poll 2, pairs 5–6 → 6, sharing 5, mini-debate 3 = 16); Activity 4: 2 + 8 + 5 = 15;
+    Activity 5: 1 + 2–3 + 4 + 2–3 → 1 + 3 + 4 + 3 = 11. Activities 1 and 2 have no total
+    time (Activity 2: 7 min to find a source, 2 min per presentation). Please adjust.
+  - >-
+    Mori: the source gives one general message and five "activités possibles" described
+    in one line each (mini-entretien, ligne de vie, conditionnels au travail, inspiration
+    professionnelle, mini-test). Each one was turned into a full message to Mori from its
+    description. Please check the wording.
+  - >-
+    Left out: the "Date / Participants" lines, the "Niveau 3 : français extrême" line and
+    the "Réponse de l’élève 1/2/3" lines (the platform has answer boxes). The intro round's
+    "5 minutes" limit is in a teacher note.
+  - >-
+    The warm-up questions had no sentence frames: frames were added. Activity 1 had no
+    example answer: one was added. Please confirm.
+  - >-
+    Vocabulary: "Conditionnel – משפט תנאי" → "דרך התנאי (קונדיציונל)" (משפט תנאי is a
+    conditional sentence); "Réussite – הישג" → "הצלחה / הישג"; "CV / Curriculum" → "CV
+    (curriculum vitae)". Please confirm. The Quizlet link is kept without its tracking
+    parameters (?i=…&x=…).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: carriere-et-developpement-personnel-classe
+    title: 'Classe : Carrière et développement personnel'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Carrière et développement personnel
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: La présentation personnelle
+            description: 'Se présenter en entretien ou en networking (*Je m’appelle Anna, je suis ingénieure… Je développe…*)'
+          - name: Construire une narration avec les différents temps
+            description: 'Passé, présent, futur et conditionnel (*je rêvais de…, aujourd’hui je travaille…, dans cinq ans, je serai…, si je pouvais…*)'
+      - id: quizlet
+        type: externalLink
+        label: Carrière et développement personnel sur Quizlet
+        url: https://quizlet.com/il/1126262860/extreme-french-2026-carriere-et-developpement-personnel-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Quand j’étais enfant, je rêvais de devenir ___ et aujourd’hui je suis ___.
+        example: Je m’appelle Lévanah. Quand j’étais enfant, je rêvais de devenir avocate et aujourd’hui je suis professeure de français.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Que fais-tu fréquemment dans ton travail ? (Donne trois exemples.)
+            frame: Dans mon travail, je ___, je ___ et je ___.
+          - question: 'Qu’est-ce qui est le plus important pour toi au travail : l’argent ou l’épanouissement personnel ? (Explique en une phrase avec trois raisons.)'
+            frame: Pour moi, le plus important, c’est ___ parce que ___, ___ et ___.
+          - question: Est-ce que ton travail a du sens pour toi ? Pourquoi ?
+            frame: Oui / Non, mon travail a / n’a pas de sens pour moi parce que ___.
+          - question: Quelles autres activités fais-tu pour toi-même en dehors du travail ?
+            frame: En dehors du travail, je ___.
+          - question: Que dois-tu faire pour maintenir un bon équilibre entre vie professionnelle et vie personnelle ?
+            frame: Pour garder un bon équilibre, je dois ___.
+          - question: Quelle a été la situation la plus difficile au travail et qu’as-tu fait ?
+            frame: La situation la plus difficile a été quand ___. J’ai ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Présentation personnelle, simulation d’entretien'
+        skills: [La présentation personnelle]
+        steps:
+          - Le professeur forme des binômes (intervieweur / interviewé).
+          - L’intervieweur pose une question de la banque ci-dessous et l’interviewé répond.
+          - Les rôles sont inversés.
+          - Chaque étudiant donne un retour à son / sa partenaire.
+        example: '*Parlez-moi d’un succès ou d’un échec qui vous a appris quelque chose.* — *Il y a trois ans, j’ai raté un projet important parce que je n’avais pas assez planifié. Depuis, je prépare chaque projet avec mon équipe.*'
+      - id: act1-questions
+        type: discussionQuestions
+        title: Banque de questions
+        items:
+          - question: 'Parlez-moi de votre patron préféré : pourquoi aimiez-vous travailler avec lui ?'
+          - question: J’ai vu sur votre CV que vous avez changé plusieurs fois de travail. Pourquoi ?
+          - question: Parlez-moi d’un succès ou d’un échec qui vous a appris quelque chose.
+          - question: Que pensez-vous que vos collègues disent de vous en votre absence ?
+          - question: Pourquoi ne devrions-nous pas vous embaucher ?
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Qu’est-ce qui m’inspire dans mon travail ?'
+        skills: [Construire une narration avec les différents temps, La présentation personnelle]
+        steps:
+          - '**Recherche (7 minutes) :** trouve une vidéo courte, une image ou une citation qui t’inspire dans ta vie professionnelle.'
+          - '**Présentation (2 minutes maximum) :** réponds aux trois questions ci-dessous.'
+          - '**Retour du groupe :** clarté, persuasion, mémorabilité, structure.'
+          - '**Discussion avec le professeur :** comment construire une narration au passé, au présent et au futur.'
+      - id: act2-questions
+        type: discussionQuestions
+        title: Ma présentation
+        items:
+          - question: Quelle est ta source d’inspiration ?
+            frame: Ma source d’inspiration, c’est ___.
+          - question: Qu’est-ce qu’elle te donne envie de faire ?
+            frame: Elle me donne envie de ___.
+          - question: Donne un exemple concret de son effet sur toi.
+            frame: Par exemple, l’année dernière, ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Débat, patron parfait ou patron horrible'
+        skills: [Construire une narration avec les différents temps]
+        minutes: 15
+        steps:
+          - '**Sondage (2 minutes) :** *As-tu déjà eu un patron parfait ou, au contraire, un patron horrible ?*'
+          - '**En binômes (6 minutes) :** l’étudiant A imagine un patron parfait, l’étudiant B décrit un patron horrible, avec *si* + imparfait, conditionnel présent. Après 3 minutes, inversez les rôles.'
+          - '**Mise en commun (5 minutes) :** chaque binôme partage une phrase sur son patron idéal et une sur son patron horrible. Le professeur note les phrases dans un tableau.'
+          - '**Mini-débat (3 minutes) :** *Qu’est-ce qui est plus important : éviter d’avoir un patron horrible ou avoir un patron idéal ?* Défends brièvement ton point de vue.'
+          - '**Mini-tâche (optionnelle) :** écris une phrase avec *si* + plus-que-parfait, conditionnel passé.'
+        example: |-
+          **A :** *Si j’avais un patron parfait, il me ferait confiance.*
+          **B :** *Si mon chef était autoritaire, je serais très stressé(e).*
+          **Mini-tâche :** *Si mon ancien patron m’avait soutenu(e) davantage, j’aurais progressé plus rapidement.*
+      - id: act3-table
+        type: table
+        caption: Patron idéal ou patron horrible
+        header: [Patron idéal, Patron horrible]
+        rows:
+          - [
+              'Si mon chef était empathique, la motivation serait plus grande.',
+              'Si mon chef criait sur ses employés, le moral baisserait.',
+            ]
+          - [
+              'Si mon chef était visionnaire, il inspirerait l’équipe.',
+              'Si mon chef ne planifiait pas les choses à faire, les projets échoueraient.',
+            ]
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Mes phrases
+        items:
+          - question: 'Patron idéal :'
+            frame: Si mon chef était ___, ___.
+          - question: 'Patron horrible :'
+            frame: Si mon chef ___, ___.
+          - question: 'Mini-tâche (optionnelle) :'
+            frame: Si mon ancien patron avait ___, j’aurais ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Networking express'
+        skills: [La présentation personnelle, Construire une narration avec les différents temps]
+        minutes: 15
+        steps:
+          - '**Démonstration (2 minutes) :** ta présentation contient ton nom et ta profession, tes activités quotidiennes et un fait intéressant (au passé, au présent ou au futur).'
+          - '**Rondes rapides (8 minutes) :** en binômes, 2 minutes par paire (1 minute par personne), puis on change de partenaire.'
+          - '**Mise en commun (5 minutes) :** écris la phrase ci-dessous. Deux volontaires la lisent à voix haute.'
+          - '**Extension (optionnelle) :** écris une version améliorée de ta présentation avec le passé, le présent et le futur.'
+        example: |-
+          *Je m’appelle Anna, je suis ingénieure en informatique.*
+          *Je développe des applications éducatives.*
+          *Quand j’étais enfant, je rêvais d’être pilote et l’année prochaine, j’apprendrai à piloter des drones.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Mes phrases
+        items:
+          - question: Ma présentation en networking
+            frame: Je m’appelle ___, je suis ___. Je ___. Quand j’étais enfant, ___.
+          - question: La personne la plus mémorable
+            frame: La personne la plus mémorable pour moi a été ___ parce que ___.
+          - question: 'Version améliorée : passé'
+            frame: Quand j’étais enfant, ___.
+          - question: 'Version améliorée : présent'
+            frame: Aujourd’hui, je travaille ___.
+          - question: 'Version améliorée : futur'
+            frame: Dans cinq ans, je serai ___.
+      - id: act5
+        type: classActivity
+        title: 'Activité 5 : Ligne de vie professionnelle'
+        skills: [Construire une narration avec les différents temps]
+        minutes: 11
+        steps:
+          - '**Consigne (1 minute) :** raconte ta carrière comme une ligne de vie, dans une mini-narration au passé, au présent et au futur.'
+          - '**Préparation individuelle (3 minutes) :** complète les phrases ci-dessous.'
+          - '**Échange en binômes (4 minutes) :** partage ta ligne de vie avec ton / ta partenaire.'
+          - '**Mise en commun (3 minutes, optionnelle) :** résume en 2 phrases la ligne de vie de ton / ta partenaire.'
+          - '**Variantes rapides :** écris tes 3 phrases (passé, présent, futur) dans le chat, puis votez pour la plus surprenante.'
+      - id: act5-sentences
+        type: discussionQuestions
+        title: Ma ligne de vie
+        items:
+          - question: Passé
+            frame: Quand j’étais enfant, je rêvais de ___. / Mon premier travail était ___.
+          - question: Présent
+            frame: Aujourd’hui, je travaille ___. / Je prépare ___.
+          - question: Futur
+            frame: Dans le futur, je serai ___.
+          - question: Conditionnel
+            frame: Si je pouvais choisir ___, j’aimerais ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **la présentation personnelle** (activités 1, 2
+          et 4) et **construire une narration avec les différents temps** (activités 2 à 5).
+          L’activité 3 pratique aussi les phrases de condition. Les activités 3 à 5 sont
+          prévues pour Zoom (sondage Zoom, salles de sous-groupes, chat) ; en classe,
+          remplace le sondage par un vote à main levée.
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: >-
+          Deux phrases par élève, 30 secondes maximum par élève et pour toi. Si les élèves
+          se connaissent déjà, passe directement aux questions d’échauffement. Cette phase
+          ne doit pas dépasser 5 minutes.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève et demande des réponses complètes.
+      - id: n-act1
+        anchor: act1
+        text: Veille à ce que le vocabulaire de l’unité soit utilisé et corrige la grammaire sur le moment.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          7 minutes de recherche, puis 2 minutes maximum par présentation. Termine par une
+          discussion guidée sur la narration : passé (imparfait / passé composé), présent,
+          futur.
+      - id: n-act3
+        anchor: act3
+        minutes: 15
+        text: >-
+          Sondage Zoom : « As-tu déjà eu un patron parfait ou au contraire un patron
+          horrible ? » Options : Oui / Non / Je préfère ne pas répondre. Les binômes
+          travaillent en salles de sous-groupes. Note les phrases des élèves dans le tableau
+          (patron idéal / patron horrible). Objectifs : pratiquer les phrases de condition,
+          exprimer une opinion sur le travail, comparer et argumenter.
+      - id: n-act4
+        anchor: act4
+        minutes: 15
+        text: >-
+          Donne d’abord le modèle d’Anna. Les binômes tournent en salles de sous-groupes
+          (2 minutes par paire). Objectifs : se présenter rapidement et clairement, se
+          distinguer, utiliser le passé, le présent et le futur.
+      - id: n-act5
+        anchor: act5
+        minutes: 11
+        text: La mise en commun et les variantes (chat, vote) sont optionnelles.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: carriere-et-developpement-personnel-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-presentation
+        type: ruleSummary
+        skill: La présentation personnelle
+        rules:
+          - text: 'Une présentation professionnelle rapide contient : ton **nom** et ta **profession**, tes **activités quotidiennes** (au présent) et un **fait intéressant** (au passé, au présent ou au futur).'
+            examples:
+              - Je m’appelle Anna, je suis ingénieure en informatique.
+              - Je développe des applications éducatives.
+              - Quand j’étais enfant, je rêvais d’être pilote et l’année prochaine, j’apprendrai à piloter des drones.
+          - text: 'Pour la profession : *je suis* + métier (sans article), ou *je travaille comme* + métier.'
+            examples:
+              - 'Je suis professeure de français.'
+              - 'Aujourd’hui, je travaille comme consultant(e).'
+      - id: rules-narration
+        type: ruleSummary
+        skill: Construire une narration avec les différents temps
+        rules:
+          - text: '**Passé – imparfait :** habitudes, situations répétées, descriptions au passé.'
+            examples:
+              - 'Quand j’étais enfant, je rêvais de devenir médecin.'
+          - text: '**Passé – passé composé :** faits ponctuels, suites d’événements.'
+            examples:
+              - 'L’année dernière, j’ai travaillé dans une entreprise internationale.'
+          - text: '**Présent :** situation actuelle, habitudes, vérités générales.'
+            examples:
+              - 'Aujourd’hui, je travaille comme consultant(e).'
+          - text: '**Futur proche** (*aller* au présent + infinitif) et **futur simple :** projets et prédictions.'
+            examples:
+              - 'Demain, je vais présenter un projet important.'
+              - 'Dans le futur, je créerai ma propre entreprise.'
+          - text: '**Conditionnel :** désirs ou situations hypothétiques.'
+            examples:
+              - 'J’aimerais devenir médecin.'
+              - 'Si je pouvais changer de travail, je le ferais dès aujourd’hui.'
+          - text: '**Connecteurs pour structurer une narration.** Passé : *quand j’étais enfant…, à l’époque…, il y a quelques années…* Présent : *actuellement…, aujourd’hui…, en ce moment…, pour l’instant…* Futur / conditionnel : *dans le futur…, dans cinq ans…, si je pouvais…, j’aimerais…*'
+      - id: rules-conditions
+        type: ruleSummary
+        skill: Les phrases de condition
+        rules:
+          - text: '**Type 0 – probabilité ou quasi-certitude au présent :** si + présent, présent.'
+            examples:
+              - 'Si tu travailles dur, tu obtiens de bons résultats.'
+          - text: '**Type 1 – probabilité ou quasi-certitude au futur :** si + présent, futur simple.'
+            examples:
+              - 'Si j’étudie davantage cette année, j’obtiendrai un meilleur emploi.'
+          - text: '**Type 2 – hypothèse :** si + imparfait, conditionnel présent.'
+            examples:
+              - 'Si j’avais un chef plus flexible, je serais plus motivé(e).'
+          - text: '**Type 3 – hypothèse non réalisée dans le passé :** si + plus-que-parfait, conditionnel passé.'
+            examples:
+              - 'Si j’avais accepté ce travail, j’aurais voyagé davantage.'
+          - text: '**Attention :** jamais de futur ni de conditionnel après *si*.'
+      - id: rules-passive
+        type: ruleSummary
+        skill: La voix passive (optionnelle)
+        rules:
+          - text: 'On met l’accent sur l’action plutôt que sur l’agent : **être** + participe passé (+ **par** + agent). Le temps est donné par *être*.'
+            examples:
+              - Le projet a été approuvé par le comité.
+              - De nouvelles opportunités ont été offertes dans l’entreprise.
+              - Plus de formation devrait être donnée aux employés.
+      - id: tenses-table
+        type: table
+        caption: Les temps dans une narration
+        header: [Temps, Pour…, Exemple]
+        rows:
+          - [
+              Imparfait,
+              habitudes et descriptions au passé,
+              'Quand j’étais enfant, je rêvais de devenir médecin.',
+            ]
+          - [
+              Passé composé,
+              faits ponctuels,
+              'L’année dernière, j’ai travaillé dans une entreprise internationale.',
+            ]
+          - [Présent, situation actuelle, 'Aujourd’hui, je travaille comme consultant(e).']
+          - [
+              Futur proche / futur simple,
+              projets et prédictions,
+              'Dans le futur, je créerai ma propre entreprise.',
+            ]
+          - [Conditionnel, désirs et hypothèses, J’aimerais devenir médecin.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Demande à chaque élève une mini-narration de trois phrases (passé, présent, futur) sur sa carrière, puis une phrase au conditionnel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: carriere-et-developpement-personnel-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-general
+        type: aiTutorPrompt
+        title: Message général
+        message: Bonjour Mori ! Je veux pratiquer ce que j’ai appris sur la carrière et le développement personnel. Pose-moi des questions pour que je me présente et que je raconte mon parcours en utilisant le passé, le présent, le futur et le conditionnel. Corrige mes erreurs.
+      - id: mori-entretien
+        type: aiTutorPrompt
+        title: 'Activité 1 : Mini-entretien'
+        message: Bonjour Mori ! Joue le rôle d’un recruteur et pose-moi 5 questions d’entretien d’embauche. Après chacune de mes réponses, corrige mes erreurs et propose-moi une version améliorée de ma réponse.
+      - id: mori-ligne
+        type: aiTutorPrompt
+        title: 'Activité 2 : Ligne de vie professionnelle'
+        message: Bonjour Mori ! Je vais te raconter mon parcours professionnel au passé, au présent et au futur. Corrige mes erreurs et propose-moi des connecteurs pour mieux structurer mon récit.
+      - id: mori-conditionnels
+        type: aiTutorPrompt
+        title: 'Activité 3 : Conditionnels au travail'
+        message: Bonjour Mori ! Pose-moi des questions sur le travail avec « si » (par exemple Si tu pouvais changer de travail, que ferais-tu ?) pour que je réponde avec les phrases de condition. Corrige mes erreurs.
+      - id: mori-inspiration
+        type: aiTutorPrompt
+        title: 'Activité 4 : Inspiration professionnelle'
+        message: Bonjour Mori ! Pose-moi des questions sur ce qui m’inspire dans mon travail. Je veux répondre au passé, au présent et au futur. Corrige mes erreurs.
+      - id: mori-test
+        type: aiTutorPrompt
+        title: 'Activité 5 : Mini-test'
+        message: Bonjour Mori ! Donne-moi 5 phrases sur le travail avec des erreurs sur les temps et les phrases de condition. Je vais les corriger, puis tu me diras si mes corrections sont justes.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: carriere-et-developpement-personnel-pratique
+    book: workbook
+    title: 'Pratique : Carrière et développement personnel'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-presentation
+        type: activity
+        activity: carriere-et-developpement-personnel-presentation
+      - id: ex-narration
+        type: activity
+        activity: carriere-et-developpement-personnel-narration
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: carriere-et-developpement-personnel-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la carrière
+        glossLang: he
+        link: https://quizlet.com/il/1126262860/extreme-french-2026-carriere-et-developpement-personnel-flash-cards/
+        items: &carriere-et-developpement-personnel-words
+          - { term: Carrière, gloss: קריירה }
+          - { term: Développement, gloss: התפתחות }
+          - { term: Profession, gloss: מקצוע }
+          - { term: Travail, gloss: עבודה }
+          - { term: Routine, gloss: שגרה }
+          - { term: Équilibre, gloss: איזון }
+          - { term: Vie professionnelle, gloss: חיים מקצועיים }
+          - { term: Vie personnelle, gloss: חיים אישיים }
+          - { term: Chef, gloss: בוס / מנהל }
+          - { term: Collègue, gloss: עמית }
+          - { term: Succès, gloss: הצלחה }
+          - { term: Échec, gloss: כישלון }
+          - { term: Motivation, gloss: מוטיבציה }
+          - { term: Entretien, gloss: ראיון }
+          - { term: CV (curriculum vitae), gloss: קורות חיים }
+          - { term: Recrutement, gloss: גיוס }
+          - { term: Licenciement, gloss: פיטורים }
+          - { term: Salaire, gloss: משכורת }
+          - { term: Poste, gloss: משרה }
+          - { term: Entreprise, gloss: חברה }
+          - { term: Projet, gloss: פרויקט }
+          - { term: Réussite, gloss: הצלחה / הישג }
+          - { term: Défi, gloss: אתגר }
+          - { term: Opportunité, gloss: הזדמנות }
+          - { term: Compétences, gloss: מיומנויות }
+          - { term: Formation, gloss: הכשרה }
+          - { term: Expérience, gloss: ניסיון }
+          - { term: Inspiration, gloss: השראה }
+          - { term: Futur, gloss: עתיד }
+          - { term: Présent, gloss: הווה }
+          - { term: Passé, gloss: עבר }
+          - { term: Conditionnel, gloss: דרך התנאי (קונדיציונל) }
+          - { term: Hypothèse, gloss: השערה }
+          - { term: Narration / récit, gloss: סיפור / נרטיב }
+          - { term: Objectif, gloss: מטרה }
+          - { term: Confiance, gloss: ביטחון / אמון }
+          - { term: Communication, gloss: תקשורת }
+          - { term: Négociation, gloss: משא ומתן }
+          - { term: Mémorable, gloss: בלתי נשכח }
+          - { term: Networking / réseau de contacts, gloss: נטוורקינג / רשת קשרים }
+
+vocabulary:
+  - slug: carriere-et-developpement-personnel
+    title: Carrière et développement personnel
+    items: *carriere-et-developpement-personnel-words
+
+activities:
+  - slug: carriere-et-developpement-personnel-presentation
+    title: La présentation personnelle
+    minutes: 8
+    items:
+      - id: suis-ingenieure
+        type: multipleChoice
+        prompt: Je m’appelle Anna, je ___ ingénieure en informatique.
+        options:
+          - { text: suis, correct: true }
+          - {
+              text: ai,
+              feedback: 'Pour dire sa profession, on utilise *être* : *je suis ingénieure*.',
+            }
+          - {
+              text: fais,
+              feedback: 'Pour dire sa profession, on utilise *être* : *je suis ingénieure* (ou *je travaille comme ingénieure*).',
+            }
+      - id: revais
+        type: fillBlank
+        prompt: Complète avec le verbe *rêver* à l’imparfait (une situation dans le passé).
+        text: Quand j’étais enfant, je ___ de devenir avocate.
+        blanks: [[rêvais]]
+      - id: developpe
+        type: multipleChoice
+        prompt: 'Tes activités quotidiennes aujourd’hui : Je ___ des applications éducatives.'
+        options:
+          - { text: développe, correct: true }
+          - {
+              text: développais,
+              feedback: '*Développais* est à l’imparfait (le passé). Pour les activités d’aujourd’hui, on utilise le présent : *je développe*.',
+            }
+          - {
+              text: développerais,
+              feedback: '*Développerais* est au conditionnel (une hypothèse). Pour les activités d’aujourd’hui, on utilise le présent : *je développe*.',
+            }
+      - id: contenu
+        type: trueFalse
+        prompt: 'Dans une présentation rapide de networking, on dit son nom et sa profession, ses activités quotidiennes et un fait intéressant.'
+        answer: true
+        feedback:
+          correct: 'Bravo ! Nom et profession, activités quotidiennes, un fait intéressant (passé, présent ou futur).'
+          incorrect: 'C’est vrai : nom et profession, activités quotidiennes, un fait intéressant (passé, présent ou futur).'
+      - id: parties
+        type: matching
+        prompt: Associe chaque partie de la présentation à son exemple.
+        pairs:
+          - ['Nom et profession', 'Je m’appelle Anna, je suis ingénieure.']
+          - [Activités quotidiennes, Je développe des applications éducatives.]
+          - [Fait intéressant au passé, 'Quand j’étais enfant, je rêvais d’être pilote.']
+          - [Projet pour le futur, 'L’année prochaine, j’apprendrai à piloter des drones.']
+      - id: apprendrai
+        type: fillBlank
+        prompt: Complète avec le verbe *apprendre* au futur simple.
+        text: L’année prochaine, j’___ à piloter des drones.
+        blanks: [[apprendrai]]
+      - id: comme
+        type: multipleChoice
+        prompt: Aujourd’hui, je travaille ___ consultante.
+        options:
+          - { text: comme, correct: true }
+          - {
+              text: en,
+              feedback: 'Avec *travailler* + un métier, on dit *travailler comme* : *je travaille comme consultante*.',
+            }
+          - {
+              text: pour,
+              feedback: '*Travailler pour* + une entreprise (*je travaille pour Air France*). Avec un métier, on dit *je travaille comme consultante*.',
+            }
+      - id: ordre-anna
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Je m’appelle Anna, je suis ingénieure en informatique.
+
+  - slug: carriere-et-developpement-personnel-narration
+    title: 'Construire une narration : passé, présent, futur, conditionnel'
+    minutes: 8
+    items:
+      - id: premier-poste
+        type: multipleChoice
+        prompt: 'Un fait ponctuel : En 2020, j’___ mon premier poste.'
+        options:
+          - { text: ai obtenu, correct: true }
+          - {
+              text: obtiendrai,
+              feedback: '*Obtiendrai* est au futur. Pour un fait ponctuel dans le passé (*en 2020*), on utilise le passé composé : *j’ai obtenu*.',
+            }
+          - {
+              text: obtiendrais,
+              feedback: '*Obtiendrais* est au conditionnel. Pour un fait ponctuel dans le passé (*en 2020*), on utilise le passé composé : *j’ai obtenu*.',
+            }
+      - id: ferais
+        type: fillBlank
+        prompt: Complète avec le verbe *faire* au conditionnel présent.
+        text: Si je pouvais changer de travail, je le ___ dès aujourd’hui.
+        blanks: [[ferais]]
+      - id: creerai
+        type: multipleChoice
+        prompt: 'Un projet : Dans le futur, je ___ ma propre entreprise.'
+        options:
+          - { text: créerai, correct: true }
+          - {
+              text: créais,
+              feedback: '*Créais* est à l’imparfait (le passé). Pour un projet, on utilise le futur : *je créerai*.',
+            }
+          - {
+              text: ai créé,
+              feedback: '*Ai créé* est au passé composé. Pour un projet, on utilise le futur : *je créerai*.',
+            }
+      - id: aurais-voyage
+        type: fillBlank
+        prompt: Complète avec le verbe *voyager* au conditionnel passé.
+        text: Si j’avais accepté ce travail, j’___ davantage.
+        blanks: [[aurais voyagé]]
+      - id: imparfait-habitudes
+        type: trueFalse
+        prompt: 'Pour parler d’une habitude ou faire une description dans le passé, on utilise l’imparfait : *Quand j’étais enfant, je rêvais de devenir médecin.*'
+        answer: true
+        feedback:
+          correct: 'Bravo ! L’imparfait sert aux habitudes et aux descriptions au passé.'
+          incorrect: 'C’est vrai : l’imparfait sert aux habitudes et aux descriptions au passé. Le passé composé sert aux faits ponctuels.'
+      - id: connecteurs
+        type: matching
+        prompt: Associe chaque connecteur au temps de la narration.
+        pairs:
+          - [Quand j’étais enfant…, le passé]
+          - [Actuellement…, le présent]
+          - [Dans cinq ans…, le futur]
+          - [Si je pouvais…, le conditionnel]
+      - id: vais-presenter
+        type: multipleChoice
+        prompt: Demain, je ___ présenter un projet important.
+        options:
+          - { text: vais, correct: true }
+          - {
+              text: irai,
+              feedback: 'Le futur proche se forme avec *aller* au **présent** + infinitif : *je vais présenter*.',
+            }
+          - {
+              text: allais,
+              feedback: '*Allais* est à l’imparfait. Le futur proche se forme avec *aller* au présent + infinitif : *je vais présenter*.',
+            }
+      - id: ordre-consultant
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Aujourd’hui, je travaille comme consultant.

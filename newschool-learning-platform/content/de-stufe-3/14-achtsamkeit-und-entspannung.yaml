@@ -1,0 +1,816 @@
+# Cycle "Achtsamkeit und Entspannung", converted from the German level 3 digital notebook
+# ("German Level 3- Digital Notebook", docs/CONTENT-AUDIT.md). DRAFT for teacher review:
+# see `review` below. Blocks without `lang` are in the course language (German).
+course: de-stufe-3
+slug: achtsamkeit-und-entspannung
+title: Achtsamkeit und Entspannung
+goal: Über Stress, Ruhe und Achtsamkeit sprechen, mit genauen Adjektiven und dem Konjunktiv II.
+position: 14
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Adjektive für Gefühle, Orte und Atmosphäre" and
+    "Konjunktiv II") are NEW: they were written from the cycle's summary rules, the
+    activity examples, the homework exercises and the vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    The notebook lists three language goals: (1) Konjunktiv II for hypothetical
+    situations, (2) adjectives to describe feelings, places and atmosphere, (3) telling
+    experiences in different tenses (Perfekt, Präteritum, Plusquamperfekt). The cycle
+    overview keeps (1) and (2) as the cycle's two skills; (3) is practised in Activity 1
+    and homework Aufgabe 3 and keeps its own block in the summary.
+  - >-
+    Summary corrections: the Konjunktiv II structure "Wenn + Konjunktiv II, würde +
+    Infinitiv" was rewritten: in the wenn-clause the verb goes to the end and the main
+    clause starts with the verb; both clauses can use wäre / hätte / Modalverb or würde +
+    infinitive (the source's own example "Wenn ich weniger arbeiten würde, hätte ich…"
+    has it the other way round). The Hebrew text was changed the same way. ADDED
+    (please confirm): "es gibt → es gäbe" (used in Activity 2: "Wenn es mehr Pflanzen
+    gäbe…") and a short rule for the Konjunktiv II der Vergangenheit (hätte / wäre +
+    Partizip II), used in Activity 4, Situation 1.
+  - >-
+    Summary, Plusquamperfekt: "Als ich in den Urlaub gefahren bin, hatte ich mehrere sehr
+    stressige Wochen gehabt" mixes Perfekt and Plusquamperfekt; common in speech and kept,
+    with a note that written texts usually use Präteritum after "als" (Als ich in den
+    Urlaub fuhr, …). Please confirm.
+  - >-
+    Other corrections: warm-up question 7 "Praktizierst du oder jemand, den du kennst,
+    Achtsamkeit?" (the verb only agrees with "du") → "Praktizierst du Achtsamkeit, oder
+    kennst du jemanden, der Achtsamkeit praktiziert?"; Activity 4 "Versucht, nicht nur zu
+    sagen: Ich stimme zu. Sondern erklärt warum:" → "Sagt nicht nur „Ich stimme zu“,
+    sondern erklärt, warum"; Mori "Am Ende frage Mori" → "Frag Mori am Ende"; the table
+    header "**Einfach** / **Genauer**" (escaped bold marks) was cleaned; stray "**"
+    marks were removed throughout.
+  - >-
+    Homework Aufgabe 2: the hints in brackets were the answers themselves ("würde /
+    hätte" …). They are now infinitives: (werden / haben), (sein / können), (werden /
+    sein), (werden / werden), (haben / werden), (werden / werden). The answer keys
+    (checked, all correct) are in teacher notes only. Aufgabe 1 keeps its two-word choice
+    in brackets.
+  - >-
+    Not in the platform: the pictures of calm places (Activity 1, Step 1) are not in the
+    notebook; the video "What Is Mindfulness? | The Mindfulness Toolkit" (Activity 3) is
+    named without a link. Both are mentioned in teacher notes; add a YouTube link if you
+    have it.
+  - >-
+    Left out: the "Datum / Teilnehmende" lines and all "Antwort Teilnehmer/in 1/2/3"
+    lines (the platform has answer boxes). The source gives no times for this cycle.
+  - >-
+    Vocabulary: the header row "Deutsch / Hebräisch" was dropped; glosses kept as in the
+    source. The Quizlet link lost its tracking parameter (?new).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: achtsamkeit-und-entspannung-unterricht
+    title: 'Unterricht: Achtsamkeit und Entspannung'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Achtsamkeit und Entspannung
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Adjektive für Gefühle, Orte und Atmosphäre
+            description: 'Genauer beschreiben: *friedlich, erholsam, angespannt, erschöpft* statt *gut, schön, ruhig*; *ein ruhiger Raum, eine angenehme Atmosphäre*'
+          - name: Konjunktiv II
+            description: 'Hypothetische Situationen: *Wenn mein Büro ruhiger wäre, könnte ich mich besser konzentrieren.*'
+      - id: quizlet
+        type: externalLink
+        label: Achtsamkeit und Entspannung auf Quizlet
+        url: https://quizlet.com/il/1201954398/achtsamkeit-und-entspannung-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Wenn ich jetzt an einem entspannenden Ort sein könnte, wäre ich ___.
+        example: Ich bin Amit. Wenn ich jetzt an einem entspannenden Ort sein könnte, wäre ich in Indien und würde meditieren.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Einstiegsfragen
+      - id: warmup-hint
+        type: callout
+        tone: info
+        text: Antworte möglichst in vollständigen Sätzen und benutze passende **Adjektive** und den **Konjunktiv II**. Wenn du nicht über persönliche Erfahrungen sprechen möchtest, kannst du auch eine Situation erfinden.
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Denk an einen Moment, in dem du dich wirklich entspannt gefühlt hast. Was hat die Situation so ruhig oder friedlich gemacht? Beschreibe die Atmosphäre.
+            frame: Ich habe mich wirklich entspannt gefühlt, als ___. Die Atmosphäre war ___ und ___.
+          - question: Manche Menschen finden die Stadt interessant und lebendig, aber auch anstrengend. Die Natur kann dagegen ruhig sein, aber manchmal auch isoliert wirken. Wo kannst du dich besser erholen und warum? Vergleiche beide Orte.
+            frame: In ___ kann ich mich besser erholen, weil ___. Die Stadt ist ___er als die Natur.
+          - question: Was macht eine Aktivität deiner Meinung nach wirklich entspannend und nicht nur unterhaltsam?
+            frame: Eine Aktivität ist wirklich entspannend, wenn ___.
+          - question: Wenn du einen perfekten stressfreien Tag für eine sehr beschäftigte Person planen könntest, was würde dieser Tag beinhalten?
+            frame: Der Tag würde mit ___ beginnen. Danach würde die Person ___.
+          - question: Welche Rolle spielt Technologie bei Stress im modernen Alltag?
+            frame: Ich glaube, Technologie macht uns ___, weil ___.
+          - question: Wenn du eine tägliche Gewohnheit aufgeben müsstest, um ruhiger zu leben, welche wäre das? Wie würde sich dein Alltag verändern?
+            frame: Ich würde ___ aufgeben. Mein Alltag wäre dann ___.
+          - question: Praktizierst du Achtsamkeit, oder kennst du jemanden, der Achtsamkeit praktiziert? Was hast du über die Vorteile gehört?
+            frame: Ich habe gehört, dass Achtsamkeit ___.
+          - question: Wenn du einen entspannenden Moment aus dem letzten Jahr noch einmal erleben könntest, welchen würdest du wählen? Warum?
+            frame: Ich würde ___ wählen, weil ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Der Ort, der dich verändert'
+        skills: ['Adjektive für Gefühle, Orte und Atmosphäre', Konjunktiv II]
+        steps:
+          - '**Schritt 1 – Ruhige Orte beschreiben:** Seht Bilder von ruhigen Orten in der Natur und in der Stadt. Sagt nicht immer nur *gut, schön* oder *ruhig*, sondern benutzt genauere Adjektive. Sprecht über die Fragen unten.'
+          - '**Schritt 2 – Eine persönliche Geschichte mit Sinneseindrücken (Einzelarbeit):** Wähle eines der Bilder oder einen eigenen Ort, an dem du dich entspannen kannst. Schreib eine kurze Geschichte. Beschreibe nicht nur, was passiert ist, sondern auch die Atmosphäre, Geräusche, Farben und Gefühle.'
+          - '**Vergangenheit (3 bis 4 Sätze):** eine reale oder erfundene Erinnerung an diesen Ort. **Gegenwart (2 bis 3 Sätze):** Wie fühlst du dich heute, wenn du an diesen Ort denkst? **Zukunft (2 Sätze):** Was möchtest du dort in Zukunft machen oder erleben? **Konjunktiv II (2 Sätze):** Wie würde sich dein Leben verändern, wenn dieser Ort Teil deines Alltags wäre?'
+          - '**Schritt 3 – Präsentation:** Erzählt eure Geschichte in Paaren oder Breakout-Räumen. Die andere Person hört zu und stellt mindestens eine Rückfrage, zum Beispiel: *Warum war dieser Ort für dich so besonders? Würdest du dort auch allein Zeit verbringen? Was würdest du dort heute anders machen?*'
+          - '**Schritt 4 – Gemeinsame Reflexion:** Jede Person nennt eine interessante Beschreibung aus der Geschichte einer anderen Person. Sprecht über die Fragen am Ende.'
+        example: |-
+          *Vor zwei Jahren habe ich eine Woche in den Bergen verbracht. Am Anfang war die Stille ungewohnt und fast etwas bedrückend. Nach ein paar Tagen wurde die Atmosphäre aber sehr friedlich und befreiend. Ich hatte vorher lange nicht mehr so viel Zeit in der Natur verbracht.*
+          *Heute fühle ich mich schon ruhiger, wenn ich an diesen Ort denke. Die Erinnerung hilft mir, langsamer zu werden und bewusster zu atmen.*
+          *Nächstes Jahr möchte ich wieder dorthin fahren. Ich möchte dort ein paar Tage ohne Handy verbringen.*
+          *Wenn ich in der Nähe der Berge leben würde, wäre ich wahrscheinlich geduldiger und ausgeglichener. Ich würde mir mehr Zeit für mich selbst nehmen.*
+      - id: act1-places
+        type: discussionQuestions
+        title: Ruhige Orte (Schritt 1)
+        items:
+          - question: Welcher Ort wirkt am erholsamsten? Warum?
+            frame: ___ wirkt am erholsamsten, weil ___.
+          - question: Welcher Ort sieht friedlich aus, könnte aber in Wirklichkeit unangenehm sein?
+            frame: ___ sieht friedlich aus, aber es könnte ___ sein.
+          - question: Welcher Ort wäre für manche Menschen entspannend, aber für andere stressig?
+            frame: ___ wäre für manche Menschen entspannend, aber für andere ___.
+          - question: Welche Farben, Geräusche oder Materialien machen einen Ort angenehm?
+            frame: Ein Ort ist angenehm, wenn es ___ gibt.
+      - id: act1-story
+        type: discussionQuestions
+        title: Meine Geschichte (Schritt 2)
+        items:
+          - question: 'Vergangenheit: Was ist an diesem Ort passiert?'
+            frame: Vor ___ habe ich ___. Am Anfang war ___. Ich hatte vorher ___.
+          - question: 'Gegenwart: Wie fühlst du dich heute, wenn du an diesen Ort denkst?'
+            frame: Heute fühle ich mich ___, wenn ich an diesen Ort denke.
+          - question: 'Zukunft: Was möchtest du dort in Zukunft machen oder erleben?'
+            frame: Nächstes Jahr möchte ich ___.
+          - question: 'Konjunktiv II: Wie würde sich dein Leben verändern, wenn dieser Ort Teil deines Alltags wäre?'
+            frame: Wenn ich in der Nähe von ___ leben würde, wäre ich ___.
+      - id: act1-reflection
+        type: discussionQuestions
+        title: Gemeinsame Reflexion (Schritt 4)
+        items:
+          - question: Welche Adjektive wurden sehr oft benutzt?
+          - question: Welche Beschreibungen waren besonders lebendig?
+          - question: Welche Wörter haben die Atmosphäre besonders gut beschrieben?
+          - question: Welche hypothetischen Situationen wirkten realistisch und welche eher idealistisch?
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Ein achtsamer Arbeitsplatz'
+        skills: ['Adjektive für Gefühle, Orte und Atmosphäre', Konjunktiv II]
+        steps:
+          - '**Schritt 1 – Die Aufgabe verstehen (Gruppenarbeit / Breakout-Räume):** Ihr arbeitet als Team von Innenarchitekten. Eine Firma hat euch gebeten, einen Arbeitsplatz für Menschen zu gestalten, die sich oft gestresst oder unkonzentriert fühlen. Der Arbeitsplatz soll Stress reduzieren, die Konzentration verbessern, ruhig, aber nicht langweilig wirken und für 20 Mitarbeitende funktionieren. Sammelt vorher bessere Adjektive (Tabelle unten).'
+          - '**Schritt 2 – Den Arbeitsplatz planen:** Besprecht die Elemente in der zweiten Tabelle und benutzt den Konjunktiv II.'
+          - '**Schritt 3 – Einen Prompt für eine KI schreiben:** Schreibt einen kurzen Prompt, mit dem eine KI ein Bild eures Arbeitsplatzes erstellen könnte.'
+          - '**Schritt 4 – Präsentation:** Jede Gruppe präsentiert ihren Arbeitsplatz und erklärt ihre Entscheidungen. Die anderen reagieren auf den Entwurf: *Wenn du jeden Tag dort arbeiten würdest, wie würde sich dein Verhalten verändern? Würdest du dich besser konzentrieren können? Welcher Bereich wäre für dich am wichtigsten?*'
+          - '**Schritt 5 – Gemeinsame Korrektur:** Passt das Bild zu den verwendeten Adjektiven? Welche wichtigen Details fehlen? Welche Adjektive könnten genauer sein? Wie könnte man den Prompt verbessern?'
+        example: |-
+          *Wenn das Licht zu hell wäre, würden sich die Mitarbeitenden vielleicht angespannt fühlen.*
+          *Wenn es mehr Pflanzen gäbe, würde der Raum natürlicher wirken.*
+          *Wenn es einen Ruheraum gäbe, könnten sich die Mitarbeitenden dort kurz entspannen.*
+      - id: act2-adjectives
+        type: table
+        caption: Bessere Adjektive
+        header: [Einfach, Genauer]
+        rows:
+          - [schön, angenehm / harmonisch]
+          - [gut, praktisch / funktional / effizient]
+          - [ruhig, friedlich / entspannend / erholsam]
+          - [hell, freundlich / natürlich beleuchtet]
+          - [modern, minimalistisch / schlicht / zeitgemäß]
+      - id: act2-elements
+        type: table
+        caption: Den Arbeitsplatz planen
+        header: [Element, Ideen]
+        rows:
+          - [Licht, natürliches Licht / warmes Licht / helles oder gedämpftes Licht]
+          - [Farben, neutrale Farben / warme Farben / natürliche Farben]
+          - [Materialien, Holz / Glas / Pflanzen / Stoff]
+          - [Geräusche, absolute Ruhe / leise Musik / Naturgeräusche / Bereiche für Gespräche]
+          - [
+              Möbel,
+              ergonomische Stühle / offene Arbeitsbereiche / private Arbeitsplätze / Sofas oder Entspannungsbereiche,
+            ]
+          - [Arbeitsbedingungen, flexible Pausen / ruhige Zeiten / weniger digitale Ablenkung]
+          - [
+              Eine besondere Achtsamkeitsidee,
+              Meditationsraum / Garten / handyfreie Zone / Atemübungen / kurze Ruhepausen,
+            ]
+      - id: act2-prompt
+        type: sentenceFrame
+        prompt: 'Unser Prompt für die KI (Schritt 3):'
+        frame: Bitte erstelle ein Bild von einem ___ Arbeitsplatz mit ___. Die Atmosphäre soll ___ sein.
+        example: Bitte erstelle ein Bild von einem ruhigen und minimalistischen Arbeitsplatz mit viel natürlichem Licht, warmen Holzmöbeln und großen grünen Pflanzen. Die Atmosphäre soll friedlich, offen und erholsam sein. Es gibt bequeme ergonomische Stühle und einen kleinen ruhigen Bereich für Meditation und Entspannung. Die Farben sind natürlich und warm. Der Raum soll modern, aber gleichzeitig gemütlich wirken.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Achtsamkeit im Alltag'
+        skills: ['Adjektive für Gefühle, Orte und Atmosphäre', Konjunktiv II]
+        steps:
+          - '**Schritt 1 – Was bedeutet Achtsamkeit?** Klassengespräch über die ersten Fragen unten.'
+          - '**Schritt 2 – Video über Achtsamkeit:** Seht gemeinsam ein kurzes Video über Achtsamkeit. Sprecht danach: Welche Gefühle oder Reaktionen wurden im Video beschrieben? Wie kann Achtsamkeit Menschen helfen, anders auf Stress zu reagieren? Welche einfache achtsame Entscheidung könnte man jeden Tag treffen? Welche Idee aus dem Video fandest du besonders interessant?'
+          - '**Schritt 3 – Gruppengespräch (Breakout-Räume):** Besprecht in kleinen Gruppen die Fragen im Konjunktiv II.'
+          - '**Schritt 4 – Gemeinsame Reflexion:** Jede Person erzählt einen interessanten Punkt aus dem Gruppengespräch. Danach sprecht über die letzten Fragen.'
+        example: |-
+          *Wenn ich in stressigen Situationen ruhiger reagieren könnte, würde ich bessere Entscheidungen treffen.*
+          *Wenn ich jeden Morgen fünf Minuten ohne Handy verbringen würde, wäre ich wahrscheinlich ausgeglichener.*
+      - id: act3-meaning
+        type: discussionQuestions
+        title: Was bedeutet Achtsamkeit? (Schritt 1)
+        items:
+          - question: Was bedeutet das Wort *Achtsamkeit* für dich?
+            frame: Für mich bedeutet Achtsamkeit ___.
+          - question: Denk an eine Situation, in der du gestresst warst. Was hilft dir normalerweise, wieder ruhiger zu werden?
+            frame: Wenn ich gestresst bin, hilft mir ___.
+          - question: Kann man Entspannung lernen?
+          - question: Wann fällt es dir besonders schwer, im Moment zu bleiben?
+            frame: Es fällt mir besonders schwer, wenn ___.
+      - id: act3-groups
+        type: discussionQuestions
+        title: Gruppengespräch (Schritt 3)
+        items:
+          - question: Wenn jemand ständig in Eile und gestresst wäre, was würdest du dieser Person empfehlen?
+            frame: Ich würde dieser Person empfehlen, ___.
+          - question: Wenn du in stressigen Situationen ruhiger reagieren könntest, was würde sich verändern?
+            frame: Wenn ich ruhiger reagieren könnte, würde ___.
+          - question: Welche körperlichen Signale bemerkst du, wenn du gestresst bist?
+            frame: Wenn ich gestresst bin, bemerke ich ___.
+          - question: Wenn du eine tägliche Aktivität bewusster machen könntest, welche würdest du wählen?
+            frame: Ich würde ___ bewusster machen.
+          - question: Wenn du jeden Morgen fünf Minuten ohne Handy verbringen würdest, welchen Unterschied würde das machen?
+            frame: Ich wäre wahrscheinlich ___.
+          - question: Was könnte passieren, wenn Menschen versuchen würden, jede unangenehme Emotion sofort zu vermeiden?
+      - id: act3-reflection
+        type: discussionQuestions
+        title: Gemeinsame Reflexion (Schritt 4)
+        items:
+          - question: Wenn alle Menschen regelmäßig Achtsamkeit praktizieren würden, wie könnten sich Schulen oder Arbeitsplätze verändern?
+            frame: Schulen und Arbeitsplätze wären ___.
+          - question: Könnte es auch Nachteile haben, wenn man ständig versucht, achtsam und ruhig zu sein?
+          - question: Ist Stress immer negativ?
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Achtsamkeit für alle?'
+        skills: ['Adjektive für Gefühle, Orte und Atmosphäre', Konjunktiv II]
+        steps:
+          - 'In den letzten Jahren ist Prüfungsstress für viele Schülerinnen und Schüler zu einem wichtigen Thema geworden. Viele fühlen sich vor wichtigen Prüfungen nervös, unkonzentriert oder emotional überfordert. Deshalb haben einige Schulen begonnen, vor Prüfungen kurze Atem- oder Achtsamkeitsübungen anzubieten. Die Befürworter sagen, dass solche Übungen helfen können, sich ruhiger, konzentrierter und besser vorbereitet zu fühlen. Kritiker meinen dagegen, dass Achtsamkeit eine persönliche Entscheidung bleiben sollte: Nicht jeder fühlt sich bei Atem- oder Meditationsübungen wohl.'
+          - '**Die Frage:** Sollten Schulen Achtsamkeitsübungen aktiv fördern, oder sollte jeder selbst entscheiden, wie er mit Stress umgeht? **Gruppe 1:** Jeder kann von Achtsamkeit profitieren. Atemübungen sollten vor Prüfungen angeboten werden. **Gruppe 2:** Achtsamkeit ist eine persönliche Entscheidung und nicht für jeden geeignet. Atemübungen sollten nicht verpflichtend sein.'
+          - '**Schritt 1 – Argumente sammeln:** Auch wenn ihr persönlich eine andere Meinung habt, sammelt gute Argumente für eure Position. Denkt über die drei Situationen unten nach. Jedes Argument soll mindestens ein passendes Adjektiv und ein persönliches Beispiel oder einen Satz im Konjunktiv II enthalten.'
+          - '**Schritt 2 – Debatte:** Gruppe A nennt ein Argument, Gruppe B reagiert. Dann nennt Gruppe B ein Argument, und Gruppe A reagiert. Sagt nicht nur *Ich stimme zu*, sondern erklärt, warum.'
+          - '**Schritt 3 – Klassendiskussion:** Sprecht über die Fragen am Ende.'
+        example: |-
+          *Ich sehe das anders, weil …*
+          *Das könnte stimmen, aber …*
+          *Wenn Schulen das verpflichtend machen würden, könnte …*
+      - id: act4-situations
+        type: discussionQuestions
+        title: Situationen (Schritt 1)
+        items:
+          - question: 'Situation 1: Wenn du während deiner Schulzeit regelmäßig Achtsamkeitsübungen gemacht hättest, glaubst du, dass du anders auf Prüfungsstress reagiert hättest? Wie hätten sich deine Gefühle, dein Verhalten oder deine Leistung verändert?'
+            frame: Wenn ich Achtsamkeitsübungen gemacht hätte, wäre ich vielleicht ___ gewesen.
+          - question: 'Situation 2: Wenn Schulen jeden Tag Achtsamkeitsübungen anbieten würden, wie würde sich die Atmosphäre im Klassenzimmer verändern? Wäre sie ruhiger, entspannter, konzentrierter, harmonischer – oder künstlich und unangenehm?'
+            frame: Die Atmosphäre wäre ___, weil ___.
+          - question: 'Situation 3: Wenn Schulen Achtsamkeit regelmäßig vor Prüfungen, Präsentationen oder Konflikten einsetzen würden, könnten Schülerinnen und Schüler langfristig besser mit Stress umgehen? Oder würden sie zu abhängig von diesen Übungen werden?'
+            frame: Ich glaube, sie würden ___.
+      - id: act4-discussion
+        type: discussionQuestions
+        title: Klassendiskussion (Schritt 3)
+        items:
+          - question: Wenn das moderne Leben plötzlich langsamer und weniger konkurrenzorientiert wäre, wären Menschen wirklich entspannter?
+            frame: Wenn das Leben langsamer wäre, ___.
+          - question: Manche Menschen sagen, dass man sich Entspannung nach harter Arbeit verdienen muss. Andere meinen, Entspannung sollte ein normaler Teil des Alltags sein. Was denkst du?
+            frame: Ich denke, dass ___.
+          - question: Wie könnten Achtsamkeitsübungen in der Schule später das Arbeitsleben beeinflussen?
+          - question: Sollte man lernen, Stress zu reduzieren, oder sollte man auch lernen, mit Stress umzugehen?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **genaue Adjektive** für Gefühle, Orte und
+          Atmosphäre und der **Konjunktiv II** für hypothetische Situationen. Dazu kommt
+          das Erzählen von Erfahrungen in verschiedenen Zeitformen (Aktivität 1,
+          Hausaufgabe 3). Das Heft gibt keine Zeiten an; wähle die Aktivitäten nach der
+          verfügbaren Zeit.
+      - id: n-intro
+        anchor: intro
+        text: Gib zuerst dein eigenes Beispiel. Jede Person sagt ihren Namen und einen Satz im Konjunktiv II.
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Wähle aus den acht Fragen aus. Die Teilnehmenden sollen in vollständigen Sätzen
+          antworten, passende Adjektive und den Konjunktiv II benutzen. Erfundene
+          Situationen sind in Ordnung.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Einzelarbeit + Partnerarbeit / Präsentation. Zeige der Klasse in Schritt 1
+          Bilder von ruhigen Orten in der Natur und in der Stadt (die Bilder sind nicht
+          im Heft; bring eigene mit). Hilf beim Sammeln genauer Adjektive.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Gruppenarbeit / Breakout-Räume. Wenn möglich, lass die Gruppen ihren Prompt in
+          Schritt 3 mit einem Bildgenerator ausprobieren und zeig die Bilder in Schritt
+          4 und 5. Achte auf Adjektivendungen (*mit viel natürlichem Licht, warmen
+          Holzmöbeln*).
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Klassengespräch + Breakout-Räume. Das Heft nennt für Schritt 2 das Video „What
+          Is Mindfulness? | The Mindfulness Toolkit“, aber ohne Link. Such es auf
+          YouTube und zeig es der Klasse (es ist auf Englisch).
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Debatte. Teile die Klasse in zwei Gruppen. Die Teilnehmenden vertreten die
+          Position ihrer Gruppe, auch wenn sie persönlich anders denken. Situation 1
+          benutzt den Konjunktiv II der Vergangenheit (*gemacht hättest, reagiert
+          hättest*): Erkläre die Form kurz, wenn nötig.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: achtsamkeit-und-entspannung-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-adjektive
+        type: ruleSummary
+        skill: 'Adjektive für Gefühle, Orte und Atmosphäre'
+        rules:
+          - text: 'Nach **sein, werden** oder **bleiben** bekommt das Adjektiv **keine Endung**.'
+            examples:
+              [Der Raum ist ruhig., Ich bin heute entspannter., Nach der Übung wurde ich ruhiger.]
+          - text: '**Vor einem Nomen** bekommt das Adjektiv eine **Endung**.'
+            examples:
+              - ein ruhiger Raum
+              - eine entspannende Übung
+              - eine angenehme Atmosphäre
+              - ein stressiger Tag
+          - text: 'Nicht immer nur *gut, schön, ruhig*: Benutze **genauere** Adjektive.'
+            examples:
+              - ruhig → entspannt / friedlich / ausgeglichen
+              - schön → angenehm / harmonisch
+              - schlecht → unangenehm / belastend
+              - müde → erschöpft
+              - nervös → angespannt / unruhig
+          - text: 'Wir können ein Adjektiv **verstärken**.'
+            examples:
+              - sehr entspannt
+              - wirklich ruhig
+              - extrem stressig
+              - besonders angenehm
+              - ziemlich anstrengend
+      - id: rules-konjunktiv
+        type: ruleSummary
+        skill: Konjunktiv II
+        rules:
+          - text: 'Mit dem **Konjunktiv II** sprechen wir über **hypothetische**, also nicht reale Situationen.'
+            examples:
+              - Wenn ich weniger arbeiten würde, hätte ich mehr Zeit zum Entspannen.
+              - Wenn mein Büro ruhiger wäre, könnte ich mich besser konzentrieren.
+          - text: 'Wichtige Formen: **sein → wäre, haben → hätte, können → könnte, müssen → müsste, werden → würde, es gibt → es gäbe**. Bei den meisten anderen Verben: **würde + Infinitiv**.'
+            examples:
+              - Wenn das Leben langsamer wäre, hätten viele Menschen vielleicht weniger Stress.
+              - Wenn es mehr Pflanzen gäbe, würde der Raum natürlicher wirken.
+          - text: '**Wortstellung:** Im **wenn-Satz** steht das konjugierte Verb **am Ende**. Danach beginnt der Hauptsatz mit dem **Verb**.'
+            examples:
+              - Wenn ich jeden Tag meditieren **würde**, **könnte** ich wahrscheinlich besser abschalten.
+              - Wenn wir weniger Zeit am Handy verbringen **würden**, **würden** wir vielleicht besser schlafen.
+          - text: '**Konjunktiv II der Vergangenheit:** *hätte / wäre* + **Partizip II** für eine Vergangenheit, die nicht passiert ist.'
+            examples:
+              - Wenn ich in der Schule Atemübungen gemacht hätte, hätte ich anders auf Prüfungsstress reagiert.
+      - id: rules-erzaehlen
+        type: ruleSummary
+        skill: Über Erfahrungen erzählen
+        rules:
+          - text: 'Für abgeschlossene Ereignisse benutzen wir im Gespräch meistens das **Perfekt**: *haben / sein* + Partizip II.'
+            examples:
+              - Ich habe eine Atemübung gemacht.
+              - Ich habe mich danach ruhiger gefühlt.
+              - Wir sind für eine Woche in die Berge gefahren.
+          - text: 'Bei **sein, haben** und den **Modalverben** benutzen wir oft das **Präteritum**.'
+            examples:
+              [Ich war sehr gestresst., Ich hatte wenig Zeit., Ich musste jeden Tag lange arbeiten.]
+          - text: 'Das **Plusquamperfekt** (*hatte / war* + Partizip II) beschreibt etwas, das **vor** einem anderen Ereignis in der Vergangenheit passiert ist.'
+            examples:
+              - Bevor ich mit Meditation angefangen habe, hatte ich noch nie eine Atemübung gemacht.
+              - Als ich in den Urlaub gefahren bin, hatte ich mehrere sehr stressige Wochen gehabt.
+              - 'Geschrieben meistens mit Präteritum: *Als ich in den Urlaub fuhr, …*'
+          - text: '**Gegenwart und Zukunft:** Für Gewohnheiten und oft auch für Pläne (mit einer Zeitangabe) benutzen wir das **Präsens**. Für Wünsche: **möchte** + Infinitiv. Für Vermutungen über die Zukunft: **Futur I** (*werden* + Infinitiv).'
+            examples:
+              - Ich mache jeden Morgen eine kurze Pause.
+              - Wenn ich gestresst bin, gehe ich spazieren.
+              - Nächste Woche probiere ich eine neue Meditation aus.
+              - Ich möchte in Zukunft besser mit Stress umgehen.
+              - Achtsamkeit wird in Zukunft wahrscheinlich eine größere Rolle am Arbeitsplatz spielen.
+      - id: tenses-table
+        type: table
+        caption: Zeitformen auf einen Blick
+        header: [Zeitform, Wofür?, Beispiel]
+        rows:
+          - [
+              Perfekt / Präteritum,
+              Was ist passiert?,
+              Ich habe eine Atemübung gemacht. Ich war sehr gestresst.,
+            ]
+          - [
+              Plusquamperfekt,
+              Was war vorher schon passiert?,
+              Ich hatte noch nie eine Atemübung gemacht.,
+            ]
+          - [Präsens, Gewohnheiten und Pläne, Nächste Woche probiere ich eine neue Meditation aus.]
+          - [Futur I, Vermutungen über die Zukunft, Achtsamkeit wird eine größere Rolle spielen.]
+          - [
+              Konjunktiv II,
+              Hypothetische Situationen,
+              'Wenn mein Büro ruhiger wäre, könnte ich mich besser konzentrieren.',
+            ]
+      - id: summary-he-adjektive
+        type: text
+        lang: he
+        text: >-
+          **Adjektive – שמות תואר.** בגרמנית משתמשים בשמות תואר כדי לתאר רגשות, אנשים,
+          מקומות ואווירה. כאשר שם התואר מגיע אחרי sein, werden או bleiben, הוא לא מקבל
+          סיומת: Der Raum ist ruhig – החדר שקט. Nach der Übung wurde ich ruhiger – אחרי
+          התרגיל נעשיתי רגוע יותר. כאשר שם התואר מגיע לפני שם עצם, הוא בדרך כלל מקבל
+          סיומת: ein ruhiger Raum – חדר שקט; eine entspannende Übung – תרגיל מרגיע; eine
+          angenehme Atmosphäre – אווירה נעימה; ein stressiger Tag – יום מלחיץ. כדאי
+          להימנע משימוש חוזר במילים כלליות כמו gut, schön, ruhig ולהשתמש במילים מדויקות
+          יותר. אפשר גם לחזק את שם התואר: sehr entspannt – רגוע מאוד; wirklich ruhig –
+          באמת רגוע; extrem stressig – מלחיץ מאוד; besonders angenehm – נעים במיוחד;
+          ziemlich anstrengend – די מעייף.
+      - id: summary-he-zeiten
+        type: text
+        lang: he
+        text: >-
+          **לדבר על חוויות בעבר.** בשפה המדוברת משתמשים הרבה ב־Perfekt (haben / sein +
+          Partizip II) כדי לספר על אירועים שהסתיימו: Ich habe eine Atemübung gemacht –
+          עשיתי תרגיל נשימה. עם sein, haben ופעלים מודאליים משתמשים הרבה גם
+          ב־Präteritum: Ich war sehr gestresst – הייתי מאוד לחוץ. משתמשים
+          ב־Plusquamperfekt (hatte / war + Partizip II) כדי לתאר משהו שכבר קרה לפני אירוע
+          אחר בעבר: Bevor ich mit Meditation angefangen habe, hatte ich noch nie eine
+          Atemübung gemacht – לפני שהתחלתי לעשות מדיטציה, מעולם לא עשיתי תרגיל נשימה.
+          דרך פשוטה לזכור: Perfekt / Präteritum = מה קרה; Plusquamperfekt = מה כבר קרה
+          קודם. **הווה ועתיד:** כדי לדבר על הרגלים בהווה משתמשים ב־Präsens, ולעיתים קרובות
+          גם לתוכניות עתידיות, במיוחד כשיש ביטוי זמן (Nächste Woche probiere ich …).
+          לרצון או כוונה: möchte; לתחזיות: Futur I (Achtsamkeit wird … spielen).
+      - id: summary-he-konjunktiv
+        type: text
+        lang: he
+        text: >-
+          **Konjunktiv II.** משתמשים ב־Konjunktiv II כדי לדבר על מצבים דמיוניים או
+          היפותטיים. צורות חשובות: sein → wäre, haben → hätte, können → könnte, müssen →
+          müsste, werden → würde, es gibt → es gäbe; ברוב הפעלים האחרים: würde +
+          Infinitiv. במשפט עם wenn הפועל עובר לסוף, והמשפט הראשי מתחיל בפועל: Wenn ich
+          weniger arbeiten würde, hätte ich mehr Zeit zum Entspannen – אם הייתי עובד
+          פחות, היה לי יותר זמן להירגע. Wenn mein Büro ruhiger wäre, könnte ich mich
+          besser konzentrieren – אם המשרד שלי היה שקט יותר, הייתי יכול להתרכז טוב יותר.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die Regeln mit der Gruppe und bitte um ein neues Beispiel für jede Regel, zum Beispiel über einen ruhigen Ort oder einen stressigen Tag.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: achtsamkeit-und-entspannung-hausaufgaben
+    title: Hausaufgaben
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere die Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-gespraech
+        type: aiTutorPrompt
+        title: 'Aufgabe: Gespräch über Achtsamkeit und Entspannung'
+        intro: 'Versuche im Gespräch mindestens 4 verschiedene Adjektive zu benutzen, 2 Sätze im Konjunktiv II zu bilden, 1 Erfahrung aus der Vergangenheit zu erzählen und 1 Satz im Plusquamperfekt zu benutzen.'
+        message: >-
+          Hallo Mori. Ich möchte Achtsamkeit und Entspannung auf B1-Niveau üben. Stelle
+          mir nacheinander 6 Fragen. Frage mich zuerst nach einer stressigen Erfahrung
+          aus meiner Vergangenheit und danach, wie ich mich normalerweise entspanne.
+          Stelle mir anschließend hypothetische Fragen mit Konjunktiv II. Hilf mir,
+          verschiedene Adjektive zu benutzen und nicht immer nur „gut“, „schlecht“ oder
+          „ruhig“ zu sagen. Korrigiere nur wichtige Fehler und zeige mir danach eine
+          bessere Version meines Satzes.
+      - id: mori-ende
+        type: aiTutorPrompt
+        title: Zum Schluss
+        intro: Frag Mori am Ende des Gesprächs.
+        message: Welche drei Fehler habe ich am häufigsten gemacht und welche drei neuen Adjektive sollte ich mir merken?
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Statt *gut, schlecht, ruhig*: **angenehm, belastend, friedlich, erholsam, angespannt** …
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: practice-title
+        type: heading
+        level: 2
+        text: Übungen zum Schreiben
+      - id: aufgabe1
+        type: discussionQuestions
+        title: 'Aufgabe 1: Adjektive – Ergänze das passende Adjektiv.'
+        items:
+          - question: Nach einem langen Arbeitstag bin ich oft sehr ___. *(erschöpft / harmonisch)*
+          - question: Ein Raum mit Pflanzen und natürlichem Licht wirkt oft ___. *(beruhigend / impulsiv)*
+          - question: Vor einer wichtigen Prüfung bin ich manchmal ___. *(angespannt / erholsam)*
+          - question: Nach einem Wochenende in der Natur fühle ich mich oft ___. *(erfrischt / chaotisch)*
+          - question: Zu viele Nachrichten und Geräusche können ___ sein. *(überwältigend / ausgeglichen)*
+          - question: Eine ruhige und freundliche Atmosphäre kann sehr ___ wirken. *(angenehm / reaktiv)*
+      - id: aufgabe2
+        type: discussionQuestions
+        title: 'Aufgabe 2: Konjunktiv II – Ergänze die richtige Form.'
+        items:
+          - question: Wenn ich weniger arbeiten ___, ___ ich mehr Zeit zum Entspannen. *(werden / haben)*
+          - question: Wenn mein Arbeitsplatz ruhiger ___, ___ ich mich besser konzentrieren. *(sein / können)*
+          - question: Wenn ich jeden Morgen meditieren ___, ___ ich wahrscheinlich entspannter. *(werden / sein)*
+          - question: Wenn wir weniger Zeit am Handy verbringen ___, ___ wir vielleicht besser schlafen. *(werden / werden)*
+          - question: Wenn ich mehr Freizeit ___, ___ ich häufiger in die Natur fahren. *(haben / werden)*
+          - question: Wenn die Schule Atemübungen anbieten ___, ___ sich manche Schüler vor Prüfungen ruhiger fühlen. *(werden / werden)*
+      - id: aufgabe3
+        type: discussionQuestions
+        title: 'Aufgabe 3: Vergangenheit – Setze die Verben in die passende Vergangenheitsform.'
+        items:
+          - question: Letzte Woche ___ ich sehr viel Stress. *(haben)*
+          - question: Am Wochenende ___ ich einen langen Spaziergang ___. *(machen)*
+          - question: Danach ___ ich mich deutlich ruhiger ___. *(fühlen)*
+          - question: Bevor ich spazieren gegangen bin, ___ ich den ganzen Tag am Computer ___. *(arbeiten)*
+          - question: Früher ___ ich Pausen oft nicht wichtig. *(finden)*
+          - question: Diese Erfahrung ___ mir ___, dass Pausen wichtig sind. *(zeigen)*
+      - id: aufgabe4-title
+        type: heading
+        level: 3
+        text: 'Aufgabe 4: Kurze Schreibaufgabe'
+      - id: aufgabe4-rules
+        type: callout
+        tone: info
+        title: Dein Text
+        text: |-
+          Schreib **6 bis 8 Sätze** über einen Ort oder eine Aktivität, die dir hilft, dich zu entspannen. Beantworte: Was machst du dort? Wann warst du das letzte Mal dort? Wie hast du dich vorher gefühlt? Wie hast du dich danach gefühlt? Warum ist dieser Ort oder diese Aktivität entspannend? Was würde sich verändern, wenn du dort jeden Tag Zeit verbringen könntest?
+          Benutze mindestens **3 verschiedene Adjektive**, **1 Satz im Perfekt**, **1 Satz im Plusquamperfekt** und **1 Satz im Konjunktiv II**.
+      - id: aufgabe4
+        type: reflection
+        prompt: Ein Ort oder eine Aktivität, die mir hilft, mich zu entspannen
+    teacherNotes:
+      - id: n-key1
+        anchor: aufgabe1
+        text: >-
+          Lösungen Aufgabe 1: 1. erschöpft 2. beruhigend 3. angespannt 4. erfrischt 5.
+          überwältigend 6. angenehm.
+      - id: n-key2
+        anchor: aufgabe2
+        text: >-
+          Lösungen Aufgabe 2: 1. würde, hätte 2. wäre, könnte 3. würde, wäre 4. würden,
+          würden 5. hätte, würde 6. würde, würden.
+      - id: n-key3
+        anchor: aufgabe3
+        text: >-
+          Lösungen Aufgabe 3: 1. hatte 2. habe … gemacht 3. habe … gefühlt 4. hatte …
+          gearbeitet 5. fand 6. hat … gezeigt.
+      - id: n-key4
+        anchor: aufgabe4
+        text: >-
+          Aufgabe 4: individuelle Antworten. Beispiel: *Letztes Wochenende bin ich an den
+          Strand gefahren. Vorher hatte ich eine sehr stressige Woche gehabt. Als ich dort
+          angekommen bin, war die Atmosphäre ruhig und angenehm. Ich habe einen langen
+          Spaziergang gemacht und mich danach viel entspannter gefühlt. Das Geräusch des
+          Meeres war besonders beruhigend. Heute denke ich gern an diesen Tag zurück. Wenn
+          ich jeden Tag am Meer leben könnte, wäre ich wahrscheinlich ausgeglichener und
+          würde weniger Zeit am Handy verbringen.*
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: achtsamkeit-und-entspannung-uebung
+    book: workbook
+    title: 'Übung: Achtsamkeit und Entspannung'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-adjektive
+        type: activity
+        activity: achtsamkeit-und-entspannung-adjektive
+      - id: ex-konjunktiv
+        type: activity
+        activity: achtsamkeit-und-entspannung-konjunktiv
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: achtsamkeit-und-entspannung-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für Achtsamkeit und Entspannung
+        glossLang: he
+        link: https://quizlet.com/il/1201954398/achtsamkeit-und-entspannung-flash-cards/
+        items: &achtsamkeit-und-entspannung-words
+          - { term: die Achtsamkeit, gloss: מיינדפולנס / קשיבות }
+          - { term: die Entspannung, gloss: רגיעה }
+          - { term: der Stress, gloss: לחץ }
+          - { term: die Ruhe, gloss: שקט / רוגע }
+          - { term: die Atmosphäre, gloss: אווירה }
+          - { term: die Gewohnheit, gloss: הרגל }
+          - { term: die Aufmerksamkeit, gloss: תשומת לב }
+          - { term: die Wahrnehmung, gloss: מודעות / תפיסה }
+          - { term: die Selbstregulation, gloss: ויסות עצמי }
+          - { term: die Widerstandskraft, gloss: חוסן }
+          - { term: die Konzentration, gloss: ריכוז }
+          - { term: die Atemübung, gloss: תרגיל נשימה }
+          - { term: sich entspannen, gloss: להירגע }
+          - { term: sich konzentrieren, gloss: להתרכז }
+          - { term: sich erholen, gloss: להתאושש / לנוח }
+          - { term: abschalten, gloss: להתנתק / להירגע }
+          - { term: beobachten, gloss: להתבונן }
+          - { term: bemerken, gloss: לשים לב }
+          - { term: reduzieren, gloss: להפחית }
+          - { term: vermeiden, gloss: להימנע }
+          - { term: erholsam, gloss: מרגיע / משקם }
+          - { term: beruhigend, gloss: מרגיע }
+          - { term: friedlich, gloss: שליו }
+          - { term: ausgeglichen, gloss: מאוזן }
+          - { term: angenehm, gloss: נעים }
+          - { term: angespannt, gloss: מתוח }
+          - { term: unruhig, gloss: חסר מנוחה }
+          - { term: erschöpft, gloss: מותש }
+          - { term: überwältigend, gloss: מציף }
+          - { term: belastend, gloss: מעיק }
+          - { term: chaotisch, gloss: כאוטי }
+          - { term: isoliert, gloss: מבודד }
+          - { term: aufmerksam, gloss: קשוב }
+          - { term: impulsiv, gloss: אימפולסיבי }
+          - { term: bewusst, gloss: מודע }
+          - { term: gegenwärtig, gloss: נוכחי / בהווה }
+
+vocabulary:
+  - slug: achtsamkeit-und-entspannung
+    title: Achtsamkeit und Entspannung
+    items: *achtsamkeit-und-entspannung-words
+
+activities:
+  - slug: achtsamkeit-und-entspannung-adjektive
+    title: Adjektive für Gefühle, Orte und Atmosphäre
+    minutes: 8
+    items:
+      - id: erschoepft
+        type: multipleChoice
+        prompt: Nach einem langen Arbeitstag bin ich oft sehr ___.
+        options:
+          - { text: erschöpft, correct: true }
+          - {
+              text: harmonisch,
+              feedback: '*harmonisch* beschreibt einen Ort oder eine Atmosphäre, nicht wie müde eine Person ist. Sehr müde = *erschöpft*.',
+            }
+          - {
+              text: erholsam,
+              feedback: '*erholsam* beschreibt etwas, das uns Ruhe gibt (ein erholsamer Urlaub). Sehr müde = *erschöpft*.',
+            }
+      - id: ruhiger-raum
+        type: fillBlank
+        prompt: Ergänze *ruhig* mit der richtigen Endung.
+        text: Das ist ein ___ Raum.
+        blanks: [[ruhiger]]
+      - id: entspannende-uebung
+        type: fillBlank
+        prompt: Ergänze *entspannend* mit der richtigen Endung.
+        text: Wir haben eine ___ Übung gemacht.
+        blanks: [[entspannende]]
+      - id: keine-endung
+        type: trueFalse
+        prompt: 'Nach *sein, werden* oder *bleiben* bekommt das Adjektiv keine Endung: *Der Raum ist ruhig.*'
+        answer: true
+        feedback:
+          correct: 'Richtig! *Der Raum ist ruhig.* Aber vor einem Nomen: *ein ruhiger Raum*.'
+          incorrect: 'Doch: Nach *sein, werden, bleiben* gibt es keine Endung (*Der Raum ist ruhig*). Nur vor einem Nomen: *ein ruhiger Raum*.'
+      - id: genauer
+        type: matching
+        prompt: Welches genauere Adjektiv passt zu welchem einfachen Adjektiv?
+        pairs:
+          - [müde, erschöpft]
+          - [nervös, angespannt]
+          - [schlecht, belastend]
+          - [schön, harmonisch]
+          - [ruhig, friedlich]
+      - id: beruhigend
+        type: multipleChoice
+        prompt: Ein Raum mit Pflanzen und natürlichem Licht wirkt oft ___.
+        options:
+          - { text: beruhigend, correct: true }
+          - {
+              text: impulsiv,
+              feedback: '*impulsiv* beschreibt das Verhalten einer Person, nicht einen Raum.',
+            }
+          - {
+              text: erschöpft,
+              feedback: '*erschöpft* beschreibt, wie sich eine Person fühlt (sehr müde), nicht einen Raum.',
+            }
+      - id: stressiger-tag
+        type: fillBlank
+        prompt: Ergänze *stressig* mit der richtigen Endung.
+        text: Gestern war ein ___ Tag.
+        blanks: [[stressiger]]
+      - id: ordne-atmosphaere
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einem Satz.
+        sentence: Die Atmosphäre war besonders angenehm.
+        alsoAccept: [Besonders angenehm war die Atmosphäre]
+
+  - slug: achtsamkeit-und-entspannung-konjunktiv
+    title: Konjunktiv II
+    minutes: 8
+    items:
+      - id: wuerde-haette
+        type: fillBlank
+        prompt: Ergänze *werden* und *haben* im Konjunktiv II.
+        text: Wenn ich weniger arbeiten ___, ___ ich mehr Zeit zum Entspannen.
+        blanks: [[würde], [hätte]]
+      - id: waere
+        type: multipleChoice
+        prompt: Wenn mein Büro ruhiger ___, könnte ich mich besser konzentrieren.
+        options:
+          - { text: wäre, correct: true }
+          - {
+              text: ist,
+              feedback: 'Die Situation ist hypothetisch (nicht real). Wir brauchen den Konjunktiv II: *sein → wäre*.',
+            }
+          - {
+              text: würde,
+              feedback: 'Von *sein* sagen wir nicht *würde sein*, sondern *wäre*. Und das Verb steht im wenn-Satz am Ende: *ruhiger wäre*.',
+            }
+      - id: gaebe
+        type: multipleChoice
+        prompt: Wenn es mehr Pflanzen ___, würde der Raum natürlicher wirken.
+        options:
+          - { text: gäbe, correct: true }
+          - {
+              text: gibt,
+              feedback: '*gibt* ist real (Präsens). Für eine hypothetische Situation: *es gibt → es gäbe*.',
+            }
+          - {
+              text: hätte,
+              feedback: 'Wir sagen *es gibt* (nicht *es hat*). Im Konjunktiv II: *es gäbe*.',
+            }
+      - id: in-die-natur
+        type: fillBlank
+        prompt: Ergänze *würde*, *wäre* oder *hätte*.
+        text: Wenn ich mehr Freizeit hätte, ___ ich häufiger in die Natur fahren.
+        blanks: [[würde]]
+        wordBank: [würde, wäre, hätte]
+      - id: meditieren
+        type: trueFalse
+        prompt: 'Der Satz *Wenn ich jeden Tag meditieren würde, könnte ich besser abschalten.* ist richtig.'
+        answer: true
+        feedback:
+          correct: 'Richtig! Im wenn-Satz steht *würde* am Ende, und der Hauptsatz beginnt mit dem Verb *könnte*.'
+          incorrect: 'Der Satz ist richtig: *meditieren würde* steht am Ende, und der Hauptsatz beginnt mit *könnte*.'
+      - id: wortstellung
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - {
+              text: 'Wenn das Licht zu hell wäre, würden sich die Mitarbeitenden angespannt fühlen.',
+              correct: true,
+            }
+          - {
+              text: 'Wenn das Licht wäre zu hell, würden sich die Mitarbeitenden angespannt fühlen.',
+              feedback: 'Im wenn-Satz steht das konjugierte Verb am Ende: *zu hell wäre*.',
+            }
+          - {
+              text: 'Wenn das Licht zu hell wäre, die Mitarbeitenden würden sich angespannt fühlen.',
+              feedback: 'Nach dem wenn-Satz beginnt der Hauptsatz mit dem Verb: *…, würden sich die Mitarbeitenden …*',
+            }
+      - id: satzteile
+        type: matching
+        prompt: Welcher Hauptsatz passt zu welchem wenn-Satz?
+        pairs:
+          - ['Wenn es einen Ruheraum gäbe,', könnten sich die Mitarbeitenden dort kurz entspannen.]
+          - ['Wenn das Leben langsamer wäre,', hätten viele Menschen vielleicht weniger Stress.]
+          - [
+              'Wenn wir weniger Zeit am Handy verbringen würden,',
+              würden wir vielleicht besser schlafen.,
+            ]
+          - ['Wenn ich mehr Freizeit hätte,', würde ich häufiger in die Natur fahren.]
+      - id: ordne-zeit
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einem Satz.
+        sentence: Ich würde mir mehr Zeit nehmen.
+        alsoAccept: [Mehr Zeit würde ich mir nehmen]

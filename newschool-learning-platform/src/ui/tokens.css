@@ -1,0 +1,88 @@
+/*
+ * New School design tokens — the ONLY file in src/ allowed to contain colour values
+ * (enforced by scripts/check-no-raw-colors.mjs). See docs/DESIGN-SYSTEM.md §3.
+ *
+ * ⚠️  BRAND VALUES ARE PLACEHOLDERS.
+ * The official New School colours have not been supplied yet (no vector logo, no
+ * colour codes — DESIGN-SYSTEM.md §1–2). The brand tokens below are deliberately
+ * NEUTRAL GREYS so nobody mistakes them for the brand. When the official values
+ * arrive, replace the values in the "Tier 1" block only; nothing else changes.
+ * Do not ship to production with these placeholders.
+ */
+
+:root {
+  /* ── Tier 1: brand primitives (PLACEHOLDER — replace with official values) ── */
+  --ns-brand-1-50: #f3f4f5;
+  --ns-brand-1-100: #e4e6e8;
+  --ns-brand-1-500: #4b5258; /* PLACEHOLDER: canonical primary from the logo */
+  --ns-brand-1-600: #3c4247;
+  --ns-brand-1-700: #2e3337;
+  --ns-brand-2-50: #f5f5f4;
+  --ns-brand-2-100: #e7e6e4;
+  --ns-brand-2-500: #6b6a66; /* PLACEHOLDER: secondary from the logo gradient */
+  --ns-brand-2-600: #575652;
+
+  /* Neutrals (to be tinted toward the official primary once known) */
+  --ns-neutral-0: #ffffff;
+  --ns-neutral-50: #f6f7f7;
+  --ns-neutral-100: #eceeef;
+  --ns-neutral-200: #dde0e2;
+  --ns-neutral-400: #9aa1a6;
+  --ns-neutral-600: #5f676d;
+  --ns-neutral-700: #464d52;
+  --ns-neutral-900: #1d2124;
+
+  /* Functional (provisional; re-validate against the official primary) */
+  --ns-green-600: #2e7d5b;
+  --ns-green-50: #e6f2ec;
+  --ns-green-800: #1a5740;
+  --ns-amber-600: #9a6b00;
+  --ns-amber-50: #fbf1d8;
+  --ns-amber-800: #6b4a00;
+  --ns-red-600: #b3261e;
+  --ns-red-50: #f9e7e5;
+  --ns-red-800: #7f1d17;
+
+  /* ── Tier 2: semantic tokens (components use these) ── */
+  --color-brand-primary: var(--ns-brand-1-500);
+  --color-brand-primary-hover: var(--ns-brand-1-600);
+  --color-brand-primary-active: var(--ns-brand-1-700);
+  --color-brand-primary-light: var(--ns-brand-1-50);
+  --color-brand-secondary: var(--ns-brand-2-500);
+  --color-brand-secondary-hover: var(--ns-brand-2-600);
+  --color-brand-secondary-light: var(--ns-brand-2-50);
+  --color-brand-accent: var(--ns-brand-2-500);
+  --color-on-brand: var(--ns-neutral-0);
+
+  --color-background: var(--ns-neutral-50);
+  --color-surface: var(--ns-neutral-0);
+  --color-surface-secondary: var(--ns-neutral-100);
+  --color-text-primary: var(--ns-neutral-900);
+  --color-text-secondary: var(--ns-neutral-700);
+  --color-text-muted: var(--ns-neutral-600);
+  --color-border: var(--ns-neutral-200);
+  --color-border-strong: var(--ns-neutral-400);
+  --color-focus-ring: var(--ns-brand-1-500);
+
+  --color-success: var(--ns-green-600);
+  --color-success-light: var(--ns-green-50);
+  --color-success-ink: var(--ns-green-800);
+  --color-warning: var(--ns-amber-600);
+  --color-warning-light: var(--ns-amber-50);
+  --color-warning-ink: var(--ns-amber-800);
+  --color-error: var(--ns-red-600);
+  --color-error-light: var(--ns-red-50);
+  --color-error-ink: var(--ns-red-800);
+  --color-info: var(--ns-brand-1-600);
+  --color-info-light: var(--ns-brand-1-50);
+  --color-info-ink: var(--ns-brand-1-700);
+
+  /* Typography — provisional until the official typeface is confirmed (§4) */
+  --font-sans:
+    'IBM Plex Sans', 'IBM Plex Sans Hebrew', 'IBM Plex Sans Arabic', system-ui, -apple-system,
+    'Segoe UI', Arial, sans-serif;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}

@@ -1,0 +1,686 @@
+# Cycle "חוויות בעבר", converted from the spoken Arabic level 2 notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (spoken Arabic in Hebrew
+# transliteration, apc-Hebr); Hebrew instructions carry `lang: he`.
+course: ar-medubar-2
+slug: past-experiences
+title: 'חוויות בעבר'
+goal: 'לספר מה עשיתי בעבר עם מילות זמן ולשאול על כך, ולדבר על חוויות חיים עם מררה / ולא מררה / אכר מררה.'
+position: 3
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("past-experiences-yesterday" and
+    "past-experiences-ever") are NEW: the notebook has no self-study exercises. They
+    were written only from this cycle's summary, examples and vocabulary. An Arabic
+    teacher must check every right answer, every wrong option and every
+    transliteration before students see them.
+  - >-
+    Please check, important: Activity 1 step 4 teaches "הו רחת" for "he went" and
+    gives the models "הו אמבארח רחת עלא…" and (Activity 4) "צחבי רחת עלא אלג׳בל". In the
+    rest of the cycle "רחת" is "I went". The text was kept as written; the exercises
+    do not test third-person forms.
+  - >-
+    Clear typos fixed: "בממסיבה" → "במסיבה" (Activity 4, double מ); "עַליכְד" →
+    "עַליכְּ" (preparation question 2, stray ד). Not changed, please check: homework
+    message 1 "בדנא נתרנ עבר" (the last letter is a non-final nun; maybe "נתמרן"?).
+  - >-
+    Not corrected, please check: Hebrew words inside Arabic sentences: "צלת עלא הר" /
+    "מא חד צלא עלא הר" (Activity 2, Hebrew "הר"; Activity 4 has "אלג׳בל"); "רקצת
+    במסיבה" (Hebrew "מסיבה"); "סיפורו כאן מתע" (Hebrew "סיפור").
+  - >-
+    Not corrected, spelling variants: "מררה / מרָּה / מַרָּה / מַרְרָה"; "שאחדת"
+    (activities) / "שָׁאַהַדְת" (vocabulary); "רחת" / "רִחְת" / "רַחְת" (the vocabulary
+    lists "הלכתי" twice, rows 8 and 18); "כנת / כֻּנְת / כּונֶת"; "אימתה / אֵימְתָא";
+    "צחאבי / צְחָאבּ"; "אכר מררה" (usually written with ח', آخر); "באד א-טלאב"
+    (Activity 3, "some of the students"). The exercises use the summary's spellings.
+  - >-
+    Activity 5 uses a question wheel (or cards); the notebook has no link, so none
+    was added (wheelofnames.com would be allowed). Activity 4 needs three pictures
+    chosen by the teacher.
+  - >-
+    The Quizlet link's share parameters (?i=…&x=…) were removed. The "Date /
+    Participants" lines and the "תלמיד 1/2/3" answer lines of the opening round were
+    left out (the platform has answer boxes). Hebrew glosses inside Arabic questions
+    in Activity 3 ("(מתי?)" etc.) were moved into a table.
+  - >-
+    The notebook does not say which activity practises which skill. The plan note
+    assumes: Activities 1, 4 and 5 – past with time words and questions; Activities 2
+    and 3 – life experiences (מררה / ולא מררה / אכר מררה).
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: past-experiences-class
+    title: 'שיעור: חוויות בעבר'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: 'חוויות בעבר – ערבית מדוברת'
+      - id: skills
+        type: cycleOverview
+        lang: he
+        skills:
+          - name: עבר עם מילות זמן ושאלות
+            description: 'אמבארח, אלוּסבוע אלמאדי, א-שהר אלמאדי; רחת, אכלת, שאחדת, כנת; שאלות: וֵין? שו? מע מין? אימתה?'
+          - name: 'חוויות חיים: מררה, ולא מררה, אכר מררה'
+            description: 'אנא ולא מררה אכלת סושי. / אכר מררה שאחדת פילם כאן אמבארח.'
+      - id: quizlet
+        type: externalLink
+        lang: he
+        label: חוויות בעבר בקוויזלט
+        url: https://quizlet.com/il/1140420853/%D7%97%D7%95%D7%95%D7%99%D7%95%D7%AA-%D7%91%D7%A2%D7%91%D7%A8-%D7%90%D7%97%D7%93%D7%A8%D7%AA%D7%91%D7%9C%D7%9E%D7%90%D7%93%D7%99-flash-cards/
+      - id: intro-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'פתיחה – סבב קצר'
+      - id: intro-how
+        type: text
+        lang: he
+        text: 'כל תלמיד אומר **משפט אחד בלבד** בעבר.'
+      - id: intro
+        type: sentenceFrame
+        frame: |-
+          אמבארח אנא ___.
+          אלוּסבוע אלִּי מַרַק' אנא ___.
+          קבל יומין אנא כּונֶת ___.
+      - id: warmup-title
+        type: heading
+        lang: he
+        level: 3
+        text: שאלות הכנה
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: 'וין עֶשֶׁת טפולֶתַכְּ? ושׁו אכּתַר אשי בּתֶתְזַכָּר מנהא?'
+          - question: "מין כּאן אשְָּח'ס' אלק'ריבְּ עַליכְּ פי אלמאד'י?"
+          - question: "שׁו כּאן אַוָּל שׁור'ול אֶשׁתַר'לתו? אַעְטיני תַפאס'יל!"
+          - question: "הַל פי מַרָּה דַרַסֶת מַוְד'וע ו מא כַּמַּלְתו / י?"
+          - question: "פי מַרָּה נְדֶמֶת על ק'ראר? פי מַג'אל תֶחְכּילי שו הו?!"
+          - question: "וינתא אחֶ'ר מַרָּה חַסִּית בֶּלְח'וף?"
+          - question: "שׁו אֶלְפַרְק' בּין כיף אנת אליום לַבּין ק'בֶּל עשׁר סנין?!"
+      - id: activities-title
+        type: heading
+        lang: he
+        level: 3
+        text: פעילויות
+      # Activity 1
+      - id: act1
+        type: classActivity
+        lang: he
+        title: 'פעילות 1: מה עשית אתמול?'
+        skills: [עבר עם מילות זמן ושאלות]
+        steps:
+          - 'כתיבה אישית: כל תלמיד כותב **שלושה משפטים קצרים** על אתמול, במבנה **אמבארח אנא + פועל**.'
+          - 'שיחה בזוגות: תלמיד A מקריא משפט אחד, ותלמיד B שואל שאלה קצרה בעבר. אחרי כל משפט מחליפים תפקידים.'
+          - 'השוואה פשוטה: כל תלמיד אומר דבר אחד דומה ודבר אחד שונה.'
+          - 'דיווח על בן הזוג: כל תלמיד כותב או אומר משפט אחד על בן הזוג.'
+        example: |-
+          אמבארח אנא רחת עלא אלשוגל.
+          אמבארח אנא אכלת פיצה.
+          אמבארח אנא שאחדת פילם.
+      - id: act1-write
+        type: discussionQuestions
+        items:
+          - question: 'אמבארח אנא ___'
+          - question: 'אמבארח אנא ___'
+          - question: 'אמבארח אנא ___'
+      - id: act1-questions-title
+        type: heading
+        lang: he
+        level: 4
+        text: 'שלב 2 – שאלות לבן הזוג'
+      - id: act1-questions
+        type: examples
+        items:
+          - text: 'שו עמלֵת אמבארח?'
+          - text: 'וֵין רחת?'
+          - text: 'שו אכלת?'
+      - id: act1-dialogue
+        type: dialogue
+        lines:
+          - { speaker: A, text: 'אמבארח אנא רחת עלא אלשוגל.' }
+          - { speaker: B, text: 'וֵין רחת?' }
+          - { speaker: A, text: 'רחת עלא תל אביב.' }
+      - id: act1-compare-title
+        type: heading
+        lang: he
+        level: 4
+        text: 'שלב 3 – השוואה פשוטה'
+      - id: act1-compare
+        type: sentenceFrame
+        frame: |-
+          אנא כמן רחת עלא אלשוגל.
+          אנא מא רחת.
+          אנא אכלת שי תאני.
+        example: |-
+          אנא כמן שאחדת פילם.
+          בס אנא מא אכלת פיצה.
+      - id: act1-report-title
+        type: heading
+        lang: he
+        level: 4
+        text: 'שלב 4 – דיווח על בן הזוג'
+      - id: act1-report
+        type: sentenceFrame
+        frame: |-
+          הו אמבארח רחת עלא ___.
+          היא אמבארח אכלת ___.
+        example: |-
+          הו אמבארח שאחד פילם.
+          היא אמבארח רחת עלא אלשוגל.
+      # Activity 2
+      - id: act2
+        type: classActivity
+        lang: he
+        title: 'פעילות 2: ״מעולם לא…״'
+        skills: ['חוויות חיים: מררה, ולא מררה, אכר מררה']
+        steps:
+          - 'כתיבה אישית: כל תלמיד כותב **שני משפטים** על דברים שמעולם לא עשה, במבנה **אנא ולא מררה + פועל בעבר**.'
+          - 'שיתוף ותגובה: כל תלמיד מקריא משפט אחד, והכיתה מגיבה – מי שכן עשה: ״אנא עמלֵת!״; מי שגם לא עשה: ״ולא אנא!״'
+          - 'משפטי סיכום: אחרי שכולם דיברו, כל תלמיד כותב **משפט אחד** על הכיתה.'
+        example: |-
+          אנא ולא מרָּה אכלת סושי.
+          אנא ולא מרָּה סאפרת בּטריין.
+          אנא ולא מרָּה צלת עלא הר.
+      - id: act2-words
+        type: table
+        lang: he
+        caption: מילים לחוויות חיים
+        rows:
+          - ['מררה', 'פעם']
+          - ['ולא מררה', 'אף פעם']
+          - ['עומרי', 'בחיים שלי']
+      - id: act2-write
+        type: discussionQuestions
+        items:
+          - question: 'אנא ולא מַרָּה ___'
+          - question: 'אנא ולא מַרָּה ___'
+      - id: act2-reactions-title
+        type: heading
+        lang: he
+        level: 4
+        text: תגובות הכיתה
+      - id: act2-reactions
+        type: table
+        lang: he
+        rows:
+          - ['אם עשיתם את זה', 'אנא עמלֵת! / אנא סאפַרֶת! / אנא אכֶּלת!']
+          - ['אם גם אתם לא עשיתם', 'ולא אנא! / אנא כמן ולא מררה!']
+      - id: act2-dialogue
+        type: dialogue
+        lines:
+          - { speaker: A, text: 'אנא ולא מרָּה אכלת סושי.' }
+          - { speaker: B, text: 'אנא אכלת!' }
+          - { speaker: C, text: 'ולא אנא!' }
+      - id: act2-summary
+        type: sentenceFrame
+        frame: 'כתיר מן א-טלאב ___.'
+        example: |-
+          כתיר מן א-טלאב סאפרו.
+          כתיר מן א-טלאב ולא מררה אכלו סושי.
+          מא חד צלא עלא הר.
+      # Activity 3
+      - id: act3
+        type: classActivity
+        lang: he
+        title: 'פעילות 3: ״הפעם האחרונה ש…״'
+        skills: ['חוויות חיים: מררה, ולא מררה, אכר מררה']
+        steps:
+          - 'השלמת משפטים: כל תלמיד משלים שלושה משפטים קצרים לפי המודלים. משפט קצר, פרט אחד בלבד (זמן או מקום), בלי סיפור ארוך.'
+          - 'שיתוף ושאלות קצרות: כל תלמיד מקריא משפט אחד, ושאר הכיתה יכולה לשאול שאלה אחת קצרה.'
+          - 'סיכום קצר: כל תלמיד כותב **משפט אחד** על הכיתה.'
+        example: |-
+          אכר מררה טבּחת כאן אמבארח.
+          אכר מררה שאחדת פילם כאן אלוּסבוע אלמאדי.
+          אכר מררה סאפרת כאן א-סנה אלמאדיה.
+      - id: act3-write
+        type: discussionQuestions
+        items:
+          - question: 'אכר מררה טבּחת כאן ___'
+          - question: 'אכר מררה שאחדת פילם כאן ___'
+          - question: 'אכר מררה רחת עלא טיול כאן ___'
+      - id: act3-questions
+        type: table
+        lang: he
+        caption: שאלות קצרות
+        rows:
+          - ['אימתה?', 'מתי?']
+          - ['וֵין?', 'איפה?']
+          - ['מע מין?', 'עם מי?']
+      - id: act3-dialogue
+        type: dialogue
+        lines:
+          - { speaker: A, text: 'אכר מררה שאחדת פילם כאן אמבארח.' }
+          - { speaker: B, text: 'וֵין שאחדת?' }
+          - { speaker: A, text: 'שאחדת בלבית.' }
+      - id: act3-summary
+        type: sentenceFrame
+        frame: '___ מן א-טלאב ___.'
+        example: |-
+          כתיר מן א-טלאב שאחדו פילם אמבארח.
+          באד א-טלאב סאפרו א-סנה אלמאדיה.
+      # Activity 4
+      - id: act4
+        type: classActivity
+        lang: he
+        title: 'פעילות 4: סיפור משלוש תמונות'
+        skills: [עבר עם מילות זמן ושאלות]
+        steps:
+          - 'תכנון: המורה מציג שלוש תמונות על הלוח (לדוגמה: חוף | מסעדה | מסיבה). בונים סיפור קצר עם **שלושה משפטים** – בכל משפט פעולה אחת.'
+          - 'כתיבה אישית: כל תלמיד כותב 3 משפטים קצרים – פועל אחד בכל משפט, בלי תיאורים ארוכים.'
+          - 'שיתוף בכיתה: כל תלמיד מקריא את שלושת המשפטים, והכיתה יכולה להגיב: חילו! / מתע! / כתיר טייב!'
+          - 'רפלקציה קצרה: כל תלמיד כותב משפט אחד על סיפור של חבר.'
+        example: |-
+          רחת עלא אלבחר.
+          בעדין אכלת במטעם.
+          ובעדין רקצת במסיבה.
+      - id: act4-connectors
+        type: table
+        lang: he
+        caption: מחברים משפטים בעזרת
+        rows:
+          - ['ו', 'ו־']
+          - ['בעדין', 'ואז']
+          - ['לאן', 'כי (רשות)']
+      - id: act4-simple
+        type: examples
+        items:
+          - text: 'רחת עלא אלבחר.'
+          - text: 'אכלת במטעם.'
+          - text: 'רקצת במסיבה.'
+      - id: act4-write
+        type: discussionQuestions
+        items:
+          - question: '1. ___'
+          - question: '2. ___'
+          - question: '3. ___'
+      - id: act4-reflection
+        type: sentenceFrame
+        frame: 'צחבי / היא ___.'
+        example: |-
+          צחבי רחת עלא אלג׳בל.
+          היא אכלת במטעם.
+          סיפורו כאן מתע.
+      # Activity 5
+      - id: act5
+        type: classActivity
+        lang: he
+        title: 'פעילות 5: מתי עשיתי מה?'
+        skills: [עבר עם מילות זמן ושאלות]
+        steps:
+          - 'המורה משתמש בגלגל שאלות (או בכרטיסיות) עם מילות השאלה שבטבלה.'
+          - 'כל תלמיד מסובב את הגלגל, בונה שאלה בעבר ושואל תלמיד אחר.'
+          - 'התלמיד שעונה – עונה בקצרה ומסובב את הגלגל הבא.'
+      - id: act5-words
+        type: table
+        lang: he
+        caption: מילות השאלה בגלגל
+        rows:
+          - ['מין?', 'מי']
+          - ['שו?', 'מה']
+          - ['וֵין?', 'איפה']
+          - ['אימתה?', 'מתי']
+          - ['ליש?', 'למה']
+          - ['כיף?', 'איך']
+      - id: act5-models
+        type: discussionQuestions
+        answerable: false
+        items:
+          - question: 'וֵין רחת אמבארח?'
+            frame: 'רחת עלא אלבית.'
+          - question: 'שו אכלת בניהאיית אלאסבוע?'
+            frame: 'אכלת פיצה.'
+          - question: 'מע מין כנת אלוּסבוע אלמאדי?'
+            frame: 'כנת מע צחאבי.'
+          - question: 'אימתה שאחדת פילם?'
+            frame: 'שאחדת אמבארח.'
+          - question: 'וֵין כנת?'
+            frame: 'כנת בלבית.'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: 'שתי מיומנויות: עבר עם מילות זמן ושאלות (פעילויות 1, 4, 5) וחוויות חיים עם מררה / ולא מררה / אכר מררה (פעילויות 2, 3). אין ״זמן חדש״: זה אותו עבר, רק עם מילים שמסבירות מתי ואיך.'
+      - id: n-intro
+        anchor: intro
+        text: 'כתבו על הלוח את שלוש ההתחלות. כל תלמיד אומר משפט אחד בלבד.'
+      - id: n-act1
+        anchor: act1
+        text: 'הדגישו: כמו בעברית ״הוא הלך״, ״היא אכלה״ – בערבית ״הו רחת״, ״היא אכלת״. אותו רעיון, צורה אחרת. (ראו את הערת הבדיקה על ״הו רחת״.)'
+      - id: n-act2
+        anchor: act2
+        text: 'הדגישו: כמו בעברית ״אף פעם לא אכלתי סושי״ – בערבית ״אנא ולא מררה אכלת סושי״. אותו רעיון, מילים אחרות.'
+      - id: n-act3
+        anchor: act3
+        text: 'סכמו בעברית: ״הפעם האחרונה שראיתי סרט הייתה אתמול״ = ״אכר מררה שאחדת פילם כאן אמבארח״. אותו רעיון, אותו עבר, רק מילים אחרות.'
+      - id: n-act4
+        anchor: act4
+        text: 'הכינו מראש שלוש תמונות (למשל חוף, מסעדה, מסיבה). סיכום: כמו בעברית, אפשר לספר סיפור פשוט בעבר עם משפטים קצרים – ״הלכתי. אכלתי. פגשתי.״ אין ״זמן מיוחד״: יש עבר אחד, ומחברים אותו עם ו ו־בעדין.'
+      - id: n-act5
+        anchor: act5
+        text: 'הדגישו: כמו בעברית ״איפה היית?״ – ״הייתי בבית.״, בערבית ״וֵין כנת?״ – ״כנת בלבית.״ אותו רעיון, אותו עבר.'
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: past-experiences-summary
+    title: סיכום השיעור
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: 'סיכום דקדוקי – בהשוואה לעברית'
+      - id: rules-past
+        type: ruleSummary
+        lang: he
+        skill: עבר בערבית מדוברת
+        rules:
+          - text: 'בעברית אומרים: אתמול הלכתי, שבוע שעבר אכלתי, פעם אחת נסעתי, אף פעם לא הייתי. בערבית מדוברת יש **עבר אחד בלבד**.'
+          - text: 'לא משנים ״זמן״ – רק מוסיפים **מילים שמסבירות מתי ואיך** (בטבלה).'
+          - text: 'דוגמאות:'
+            examples:
+              - 'אמבארח רחת עלא אלשוגל – אתמול הלכתי לעבודה'
+              - 'מררה כנת בפאריס – פעם הייתי בפריז'
+              - 'אנא ולא מררה אכלת סושי – אף פעם לא אכלתי סושי'
+              - 'אכר מררה שאחדת פילם כאן אמבארח – הפעם האחרונה שראיתי סרט הייתה אתמול'
+          - text: 'כמו בעברית: יש עבר אחד, והמילים מסביב אומרות לנו *מתי* ו־*איך* זה קרה.'
+      - id: time-words
+        type: table
+        lang: he
+        caption: מילים שמסבירות מתי ואיך
+        rows:
+          - ['אמבארח', 'אתמול']
+          - ['אלוּסבוע אלמאדי', 'שבוע שעבר']
+          - ['א-שהר אלמאדי', 'חודש שעבר']
+          - ['מררה', 'פעם']
+          - ['ולא מררה', 'אף פעם']
+          - ['עומרי', 'בחיים שלי']
+          - ['אכר מררה', 'הפעם האחרונה']
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: 'בקשו מכל תלמיד משפט אחד עם מילת זמן (אמבארח / אלוּסבוע אלמאדי) ומשפט אחד עם מררה / ולא מררה / אכר מררה.'
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: past-experiences-homework
+    title: שיעורי בית עם Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        lang: he
+        level: 2
+        text: 'שיעורי בית – שיחה עם Mori'
+      - id: how
+        type: text
+        lang: he
+        text: "פתחו את הצ'אט עם Mori, העתיקו כל הודעה ושלחו אותה. הכול בתעתיק עברי."
+      - id: mori-1-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'הודעה 1 – על אתמול'
+      - id: mori-1-how
+        type: text
+        lang: he
+        text: שלחו את ההודעה, וענו על כל שאלה במשפט קצר בעבר.
+      - id: mori-1
+        type: aiTutorPrompt
+        message: 'מרחבא מוֹרי! בדנא נתרנ עבר. סאלני 5 אסאילה בסיטה על אמבארח.'
+      - id: mori-2-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'הודעה 2 – חוויות חיים'
+      - id: mori-2
+        type: aiTutorPrompt
+        message: 'מרחבא מוֹרי! סאלני 5 אסאילה על חאיאתִי: מררה, ולא מררה.'
+      - id: mori-2-examples
+        type: examples
+        items:
+          - text: 'אנא ולא מררה אכלת סושי.'
+          - text: 'מררה סאפרת עלא רומא.'
+      - id: mori-3-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'הודעה 3 – הפעם האחרונה'
+      - id: mori-3
+        type: aiTutorPrompt
+        message: 'מרחבא מוֹרי! אנא רח אכתוב 3 גֻמל: "אכר מררה…". סחח לי.'
+      - id: mori-3-examples
+        type: examples
+        items:
+          - text: 'אכר מררה שאחדת פילם כאן אמבארח.'
+          - text: 'אכר מררה טבּחת כאן אלוּסבוע אלמאדי.'
+          - text: 'אכר מררה סאפרת כאן א-סנה אלמאדיה.'
+      - id: mori-4-title
+        type: heading
+        lang: he
+        level: 3
+        text: 'הודעה 4 – סיפור קצר'
+      - id: mori-4
+        type: aiTutorPrompt
+        message: 'מרחבא מוֹרי! אנא רח אחכי סיפור קצר מן 3 גֻמל. סחח לי.'
+      - id: mori-4-examples
+        type: examples
+        items:
+          - text: 'אמבארח רחת עלא אלבחר.'
+          - text: 'בעדין אכלת במטעם.'
+          - text: 'ובעדין רחת עלא אלבית.'
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: past-experiences-practice
+    book: workbook
+    title: 'תרגול: חוויות בעבר'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        lang: he
+        text: תרגלו את שתי המיומנויות של המחזור. כל תשובה נבדקת מיד, ואפשר לנסות שוב.
+      - id: ex-yesterday
+        type: activity
+        activity: past-experiences-yesterday
+      - id: ex-ever
+        type: activity
+        activity: past-experiences-ever
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: past-experiences-vocabulary
+    title: אוצר מילים
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: 36 המילים הכי חשובות של השיעור
+        glossLang: he
+        link: https://quizlet.com/il/1140420853/%D7%97%D7%95%D7%95%D7%99%D7%95%D7%AA-%D7%91%D7%A2%D7%91%D7%A8-%D7%90%D7%97%D7%93%D7%A8%D7%AA%D7%91%D7%9C%D7%9E%D7%90%D7%93%D7%99-flash-cards/
+        items: &past-experiences-words
+          - { term: 'אַמְבַּארֵח', gloss: 'אתמול' }
+          - { term: 'אֶלּוּסְבּוּע אֶלְמָאדִי', gloss: 'שבוע שעבר' }
+          - { term: 'אֶ-שַּהְר אֶלְמָאדִי', gloss: 'חודש שעבר' }
+          - { term: 'מַרְרָה', gloss: 'פעם' }
+          - { term: 'וְלָא מַרְרָה', gloss: 'אף פעם' }
+          - { term: 'עוּמְרִי', gloss: 'בחיים שלי' }
+          - { term: 'אַכְר מַרְרָה', gloss: 'הפעם האחרונה' }
+          - { term: 'רִחְת', gloss: 'הלכתי' }
+          - { term: 'אַכַּלְת', gloss: 'אכלתי' }
+          - { term: 'שָׁאַהַדְת', gloss: 'ראיתי / צפיתי' }
+          - { term: 'נִמְת', gloss: 'ישנתי' }
+          - { term: 'טַבַּחְת', gloss: 'בישלתי' }
+          - { term: 'סָאפַרְת', gloss: 'נסעתי / טסתי' }
+          - { term: 'כֻּנְת', gloss: 'הייתי' }
+          - { term: 'זֻרְת', gloss: 'ביקרתי' }
+          - { term: 'אִשְתַרֵית', gloss: 'קניתי' }
+          - { term: 'תְעַלַּלַּמְת', gloss: 'למדתי' }
+          - { term: 'רַחְת', gloss: 'הלכתי (מדובר)' }
+          - { term: 'אֶלְבֵּית', gloss: 'הבית' }
+          - { term: 'בַּרָּא', gloss: 'בחוץ' }
+          - { term: 'אֶלְמַטְעַם', gloss: 'מסעדה' }
+          - { term: 'פִילְם', gloss: 'סרט' }
+          - { term: 'אֶלְבַּחְר', gloss: 'הים' }
+          - { term: 'גֻ׳וּלָה', gloss: 'סיבוב / טיול קצר' }
+          - { term: 'בְּעַדֵין', gloss: 'ואז' }
+          - { term: 'וְ', gloss: 'ו־' }
+          - { term: 'וֵין', gloss: 'איפה' }
+          - { term: 'שׁוּ', gloss: 'מה' }
+          - { term: 'אֵימְתָא', gloss: 'מתי' }
+          - { term: 'מַע מִין', gloss: 'עם מי' }
+          - { term: 'לֵיש', gloss: 'למה' }
+          - { term: 'חִילוּ', gloss: 'נחמד / יפה' }
+          - { term: 'מֻתְעָה', gloss: 'כיף' }
+          - { term: 'כְּתִיר', gloss: 'מאוד' }
+          - { term: 'צְחָאבּ', gloss: 'חברים' }
+          - { term: 'עֵילֵה', gloss: 'משפחה' }
+
+vocabulary:
+  - slug: past-experiences
+    title: חוויות בעבר
+    items: *past-experiences-words
+
+activities:
+  - slug: past-experiences-yesterday
+    title: 'מה עשית אתמול? עבר ומילות זמן'
+    minutes: 8
+    items:
+      - id: verbs
+        type: matching
+        lang: he
+        prompt: התאימו כל פועל בעבר לפירוש שלו.
+        pairs:
+          - ['רחת', 'הלכתי']
+          - ['אכלת', 'אכלתי']
+          - ['טבּחת', 'בישלתי']
+          - ['סאפרת', 'נסעתי']
+          - ['כנת', 'הייתי']
+      - id: went-work
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״אתמול הלכתי לעבודה.״?'
+        options:
+          - { text: 'אמבארח רחת עלא אלשוגל.', correct: true }
+          - {
+              text: 'אלוּסבוע אלמאדי רחת עלא אלשוגל.',
+              feedback: 'אלוּסבוע אלמאדי פירושו ״שבוע שעבר״. ״אתמול״ זה אמבארח.',
+            }
+          - { text: 'אמבארח שאחדת פילם.', feedback: 'זה ״אתמול ראיתי סרט״.' }
+      - id: last-week
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים ״שבוע שעבר״?'
+        options:
+          - { text: 'אלוּסבוע אלמאדי', correct: true }
+          - { text: 'א-שהר אלמאדי', feedback: 'א-שהר אלמאדי פירושו ״חודש שעבר״.' }
+          - { text: 'אמבארח', feedback: 'אמבארח פירושו ״אתמול״.' }
+      - id: where-went
+        type: multipleChoice
+        lang: he
+        prompt: 'בן הזוג אומר: ״אמבארח אנא רחת עלא אלשוגל.״ איך שואלים ״לאן הלכת?״'
+        options:
+          - { text: 'וֵין רחת?', correct: true }
+          - { text: 'שו אכלת?', feedback: 'זה ״מה אכלת?״' }
+          - { text: 'מע מין כנת?', feedback: 'זה ״עם מי היית?״' }
+      - id: at-home
+        type: multipleChoice
+        lang: he
+        prompt: 'שואלים אתכם: ״וֵין כנת?״ (איפה היית?). איך עונים ״הייתי בבית״?'
+        options:
+          - { text: 'כנת בלבית.', correct: true }
+          - { text: 'רחת עלא אלבית.', feedback: 'זה ״הלכתי הביתה״.' }
+          - { text: 'שאחדת בלבית.', feedback: 'זה ״ראיתי (צפיתי) בבית״.' }
+      - id: then
+        type: multipleChoice
+        lang: he
+        prompt: 'מה פירוש ״בעדין״?'
+        options:
+          - { text: 'ואז', correct: true }
+          - { text: 'כי', feedback: '״כי״ זה לאן.' }
+          - { text: 'אתמול', feedback: '״אתמול״ זה אמבארח.' }
+      - id: me-too
+        type: multipleChoice
+        lang: he
+        prompt: 'בן הזוג ראה סרט אתמול, וגם אתם. איך אומרים ״גם אני ראיתי סרט״?'
+        options:
+          - { text: 'אנא כמן שאחדת פילם.', correct: true }
+          - { text: 'בס אנא מא אכלת פיצה.', feedback: 'זה ״אבל אני לא אכלתי פיצה״.' }
+          - { text: 'אנא אכלת שי תאני.', feedback: 'זה ״אני אכלתי משהו אחר״.' }
+      - id: order-pizza
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: ״אתמול אני אכלתי פיצה.״'
+        sentence: 'אמבארח אנא אכלת פיצה'
+
+  - slug: past-experiences-ever
+    title: 'מררה, ולא מררה, אכר מררה'
+    minutes: 8
+    items:
+      - id: words
+        type: matching
+        lang: he
+        prompt: התאימו כל ביטוי לפירוש שלו.
+        pairs:
+          - ['מררה', 'פעם']
+          - ['ולא מררה', 'אף פעם']
+          - ['עומרי', 'בחיים שלי']
+          - ['אכר מררה', 'הפעם האחרונה']
+      - id: never-sushi
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״אף פעם לא אכלתי סושי.״?'
+        options:
+          - { text: 'אנא ולא מררה אכלת סושי.', correct: true }
+          - { text: 'אנא מררה אכלת סושי.', feedback: 'מררה פירושו ״פעם״. ״אף פעם״ זה ולא מררה.' }
+          - { text: 'אכר מררה אכלת סושי.', feedback: 'אכר מררה פירושו ״הפעם האחרונה״.' }
+      - id: once-paris
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״פעם הייתי בפריז.״?'
+        options:
+          - { text: 'מררה כנת בפאריס.', correct: true }
+          - { text: 'ולא מררה כנת בפאריס.', feedback: 'ולא מררה פירושו ״אף פעם״.' }
+          - { text: 'אכר מררה כנת בפאריס.', feedback: 'אכר מררה פירושו ״הפעם האחרונה״.' }
+      - id: last-film
+        type: multipleChoice
+        lang: he
+        prompt: 'איך אומרים: ״הפעם האחרונה שראיתי סרט הייתה אתמול.״?'
+        options:
+          - { text: 'אכר מררה שאחדת פילם כאן אמבארח.', correct: true }
+          - {
+              text: 'אכר מררה שאחדת פילם כאן אלוּסבוע אלמאדי.',
+              feedback: 'כאן כתוב ״שבוע שעבר״ (אלוּסבוע אלמאדי). ״אתמול״ זה אמבארח.',
+            }
+          - { text: 'אנא ולא מררה שאחדת פילם.', feedback: 'זה ״אף פעם לא ראיתי סרט״.' }
+      - id: i-did
+        type: multipleChoice
+        lang: he
+        prompt: 'חבר אומר: ״אנא ולא מרָּה אכלת סושי.״ אתם כן אכלתם סושי. מה אומרים?'
+        options:
+          - { text: 'אנא אכלת!', correct: true }
+          - { text: 'ולא אנא!', feedback: 'זה ״גם אני לא!״ – כשגם אתם לא עשיתם.' }
+          - { text: 'אנא כמן ולא מררה!', feedback: 'זה ״גם אני אף פעם לא!״ – כשגם אתם לא עשיתם.' }
+      - id: no-new-tense
+        type: trueFalse
+        lang: he
+        prompt: 'כדי לדבר על חוויות חיים (פעם / אף פעם / הפעם האחרונה) צריך בערבית מדוברת זמן חדש.'
+        answer: false
+        feedback:
+          correct: 'נכון! אין זמן חדש: זה אותו עבר, רק עם המילים מררה / ולא מררה / אכר מררה.'
+          incorrect: 'לא: אין זמן חדש. זה אותו עבר, רק עם מילים שמסבירות איך ומתי.'
+      - id: last-year
+        type: multipleChoice
+        lang: he
+        prompt: '״הפעם האחרונה שנסעתי הייתה בשנה שעברה.״ – אכר מררה סאפרת כאן ___'
+        options:
+          - { text: 'א-סנה אלמאדיה', correct: true }
+          - { text: 'אמבארח', feedback: 'אמבארח פירושו ״אתמול״.' }
+          - { text: 'א-שהר אלמאדי', feedback: 'א-שהר אלמאדי פירושו ״חודש שעבר״.' }
+      - id: order-cooked
+        type: reorderSentence
+        lang: he
+        prompt: 'סדרו את המילים: ״הפעם האחרונה שבישלתי הייתה אתמול.״'
+        sentence: 'אכר מררה טבּחת כאן אמבארח'

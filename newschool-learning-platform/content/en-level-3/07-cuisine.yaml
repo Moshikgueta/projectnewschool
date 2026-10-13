@@ -1,0 +1,744 @@
+# Cycle "Cuisine", converted from the English level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-level-3
+slug: cuisine
+title: Cuisine
+goal: Talk about food and restaurants with modal verbs and the present perfect.
+position: 7
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Modal verbs" and "Present perfect") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's summary
+    rules, the activity examples and the vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    Summary, modal verbs table: the source calls *can* "the most polite" modal. That
+    is not right: *could* and *would* are more polite than *can*. The row now reads
+    "Asking permission, offering help or asking for something (polite but casual)".
+    Please confirm.
+  - >-
+    Summary, present perfect rule 4: the source says "some verbs stay the same, and
+    others change completely" with *make → made* next to *eat → eaten*, which is
+    unclear. It now says that some past participles are the same as the past simple
+    (*make → made → made, order → ordered → ordered*) and others are different (*eat →
+    ate → eaten, choose → chose → chosen*).
+  - >-
+    Summary, present perfect rule 3: the example "This restaurant has been serving
+    kosher meals since 1998" is the present perfect continuous; it is now labelled
+    as such, and a simple present perfect example was added (*This restaurant has
+    served kosher meals since 1998.*).
+  - >-
+    Warm-up question 2, model answer: "I don't think I would have eaten it if it
+    wasn't as part of an organized tour" → "…if it hadn't been part of an organized
+    tour" (third conditional).
+  - >-
+    Activity 3: the interactive menu is on a gamma.app page, which is not on the link
+    allow-list; the link was removed and the menu is mentioned in a teacher note. The
+    customer question "Might this be cooked with butter?" (correct but very formal)
+    → "Could this dish be cooked with butter?". The stages were numbered
+    inconsistently (Stage 1, Step 2, Stage 3…) and are now plain steps. A broken
+    emoji in "switch roles" was removed.
+  - >-
+    Activity 4: "What should the place of food have to do with it?" → "What should the
+    restaurant do about it?". The "Step / Stage" numbering was made consistent.
+  - >-
+    Homework, "My dining experiences": "give details using time phrases in the
+    present simple" → "in the past simple" (time phrases like *last year* go with
+    the past simple, not the present perfect).
+  - >-
+    Small corrections: "Explain" (warm-up 8) → "Explain why."; stray asterisks and
+    broken bold were removed; "Have/has eaten" etc. → "Have / has eaten". The two
+    Quizlet links are kept without their "?i=…&x=…" parameters. The Quizlet URL
+    spells the topic "cusine" (the URL is kept as it is).
+  - >-
+    Vocabulary: the source table has an English definition for every word; the
+    vocabulary block has only a term and a Hebrew gloss, so the definitions were left
+    out (they are on the "English – Definition" Quizlet set). Glosses changed:
+    Produce "תוצרת" → "תוצרת חקלאית"; Have / has boiled "בישלה במים רותחים" → "בישל
+    במים רותחים / הרתיח"; Refreshment "משקה" → "משקה / כיבוד קל". "Entrée" means the
+    main dish in American English (in British English it is a starter); kept as the
+    source has it.
+  - >-
+    The warm-up frames for questions without a model answer in the source were
+    added. The source gives no activity times, so no minutes were added. The
+    "Answer of student 1/2/3" lines are replaced by the answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: cuisine-class
+    title: 'Class: Cuisine'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cuisine
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Modal verbs
+            description: Advice, suggestions, necessity and politeness at a restaurant (*You should try the house special.*)
+          - name: Present perfect
+            description: Food experiences, changes and ongoing situations (*I have never eaten rabbit.*)
+      - id: quizlet-translation
+        type: externalLink
+        label: 'Cuisine on Quizlet: English – Translation'
+        url: https://quizlet.com/il/1121767569/cusine-english-translation-flash-cards/
+      - id: quizlet-definition
+        type: externalLink
+        label: 'Cuisine on Quizlet: English – Definition'
+        url: https://quizlet.com/il/1121766910/cusine-english-definition-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        frame: I am ___. On Friday night, my family eats ___.
+        example: I am Dana. On Friday night, my family eats chicken soup and challah.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: What types of cuisine have you tried that you think everyone *should* try at least once? Why?
+            frame: I have tried ___, and I think that everyone should try it at least once because ___.
+          - question: Have you ever eaten something unusual that you *might* not have tried if someone hadn't encouraged you? What was it like?
+            frame: I have eaten ___, and I don't think I would have eaten it if ___.
+          - question: What is a dish you have always wanted to cook but *haven't been able to* yet? What has stopped you?
+            frame: I have always wanted to ___, but I haven't had the chance because ___.
+          - question: What traditional food from your childhood have you *never forgotten* and would love to share with others?
+            frame: I have never forgotten ___. I would love to share it because ___.
+          - question: What is the hardest recipe that you have ever baked or cooked?
+            frame: The hardest recipe I have ever made is ___ because ___.
+          - question: What cuisine do you think Israeli restaurants *should* include more in their menus? Why?
+            frame: I think Israeli restaurants should include more ___ food because ___.
+          - question: What is a food that you have tasted and will never taste again? Describe the food and explain why.
+            frame: I have tasted ___, and I will never taste it again because ___.
+          - question: What food could be the national food of Israel? Explain why.
+            frame: I think ___ could be the national food of Israel because ___.
+      - id: warmup-model
+        type: callout
+        tone: info
+        title: Model answers
+        text: |-
+          *I have tried Ethiopian food, and I think that everyone should try it at least once because it has interesting flavors that aren't very popular in Western cuisine.*
+          *I have eaten rabbit, and I don't think I would have eaten it if it hadn't been part of an organized tour, because it feels weird to eat such a cute animal.*
+          *I have always wanted to bake a Basque cheesecake, but I haven't had the chance because my oven isn't good enough.*
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      # Activity 1
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: Have you ever tasted my comfort food?'
+        skills: [Present perfect]
+        steps:
+          - 'Comfort foods are foods that make us feel better: food that we eat when we want to treat ourselves. Think of your comfort food and send it to the teacher privately.'
+          - Each time, one student is the speaker. The other students ask yes / no questions to guess the comfort food.
+          - The guessing students can only ask yes / no questions in the **present perfect**. The speaker must answer in the present perfect too.
+        example: |-
+          *A: Have you eaten this food at a restaurant?*
+          *B: Yes, I have. I have also made it at home.*
+      - id: act1-challenge
+        type: callout
+        tone: info
+        title: 'Optional: make it more complex!'
+        text: |-
+          Every 3–4 questions, the guessers ask a question with a **modal verb**: *Would people normally add spices to this food?*
+          Ask questions with **adjectives**: *Is this food creamy and savory?*
+          Ask a question that **compares it to another culture**: *Have people in Japan eaten a similar dish?*
+          Ask a question about a **memory**: *Have you eaten this dish at a family event?*
+      - id: act1-questions
+        type: discussionQuestions
+        title: My questions
+        items:
+          - question: 'A present perfect question: ___'
+            frame: Have you ever ___? / Has your family ___?
+          - question: 'A question with a modal verb: ___'
+            frame: Would people ___? / Could you ___?
+          - question: 'My comfort food is ___ because ___.'
+      # Activity 2
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: Restaurant critique'
+        skills: [Modal verbs]
+        steps:
+          - Think of well-known restaurants or food chains that you have visited over the years. Imagine that you are a restaurant critic talking to other critics.
+          - "Choose a restaurant and write a short explanation about it: what you liked and disliked, and what should and shouldn't change."
+          - Meet your fellow critics and talk about the restaurants. Use modal verbs! Use the questions below.
+          - Choose one of the restaurants and build a **Top 5 Improvement Plan** with five different modal verbs.
+        example: |-
+          *1. They **should** reduce the noise level during busy hours.*
+          *2. They **could** update the interior design to make it more modern.*
+          *3. They **might** attract more customers by adding vegan options.*
+          *4. The staff **must** offer friendlier, faster service.*
+          *5. The chain **would** benefit from introducing seasonal specials.*
+      - id: act2-review
+        type: discussionQuestions
+        title: My restaurant review
+        items:
+          - question: "Restaurant: ___. I liked ___, but I didn't like ___."
+          - question: What do you think the restaurant should improve?
+            frame: I think they should ___.
+          - question: Which things shouldn't they change?
+            frame: They shouldn't change ___ because ___.
+          - question: What might attract or discourage customers?
+            frame: ___ might attract / discourage customers because ___.
+          - question: What changes could make the restaurant more successful?
+            frame: ___ could make the restaurant more successful.
+          - question: What additions would make you want to return more often?
+            frame: I would return more often if they ___.
+      - id: act2-plan
+        type: discussionQuestions
+        title: Top 5 Improvement Plan
+        items:
+          - question: They should ___.
+          - question: They could ___.
+          - question: They might ___.
+          - question: They must ___.
+          - question: They would ___.
+      # Activity 3
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Role play – Can I order what I need?'
+        skills: [Present perfect, Modal verbs]
+        steps:
+          - 'In pairs: one student is the waiter, and the other is a customer with specific dietary needs (vegan, kosher, vegetarian or allergy-related). Each customer has a back story (see below).'
+          - "**Customer's goal:** order a safe and enjoyable meal by asking questions and explaining your needs clearly."
+          - "**Waiter's goal:** help the customer order. Explain the menu, check the ingredients and give advice with modal verbs."
+          - Look at the menu your teacher shows. Ask and answer questions about the food. Use modal verbs and the present perfect at least once each.
+          - 'Come to a decision and tell the class: what the customer would like to order, why, what they should avoid, and what could be improved on the menu.'
+          - If there is time, switch roles.
+        example: |-
+          *Customer: Could you tell me if this dish contains nuts? I've had problems with nuts before.*
+          *Waiter: I've checked with the kitchen, and it doesn't contain nuts. But you could also try the grilled vegetable plate.*
+      - id: act3-customers
+        type: table
+        caption: Customers and their back stories
+        header: [Customer, Back story]
+        rows:
+          - [
+              Vegan customer,
+              "*You **have** had bad experiences in restaurants before, when they said that a meal was vegan but it wasn't.*",
+            ]
+          - [
+              Kosher customer,
+              '*Someone on a Jewish travel blog **has** recommended this restaurant to you.*',
+            ]
+          - [
+              Vegetarian customer,
+              "*You **haven't** tried this restaurant before, but you have heard that it's vegetarian-friendly.*",
+            ]
+          - [
+              'Customer with an allergy (nuts, gluten, lactose, sesame or seafood)',
+              "*You **haven't** been able to eat out for months because of your allergy.*",
+            ]
+      - id: act3-phrases
+        type: table
+        caption: Useful phrases
+        header: [Customer, Waiter]
+        rows:
+          - ['*Should I order…?*', '*You should avoid this dish because…*']
+          - [
+              '*Could you tell me if this dish contains…?*',
+              '*You could try the grilled vegetable plate.*',
+            ]
+          - [
+              "*I've had problems with this ingredient before.*",
+              '*The chef might be able to adapt it for you.*',
+            ]
+          - ["*I haven't eaten dairy in years.*", "*We've prepared gluten-free pasta before.*"]
+          - [
+              '*Would you recommend something vegan?*',
+              "*I've checked with the kitchen, and it doesn't contain nuts.*",
+            ]
+          - [
+              '*Could this dish be cooked with butter?*',
+              '*We must be careful with cross-contamination.*',
+            ]
+      - id: act3-order
+        type: discussionQuestions
+        title: Our decision
+        items:
+          - question: What would the customer like to order?
+            frame: The customer would like ___.
+          - question: Why?
+            frame: Because ___.
+          - question: What should the customer avoid?
+            frame: The customer should avoid ___ because ___.
+          - question: What could be improved on the menu?
+            frame: The restaurant could ___.
+      # Activity 4
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: Debate – Should I return my meal?'
+        skills: [Modal verbs, Present perfect]
+        steps:
+          - 'Should customers be allowed to return food at restaurants? What happens if the meal is not to your liking? Have you done this before? What should the customer do? What should the restaurant do about it?'
+          - '**Team A:** *Returning food is reasonable and important.* **Team B:** *You should never return a meal that you ordered!*'
+          - In your team, think of points to support your opinion. Every point must use a modal verb or the present perfect. Give personal examples!
+          - 'Debate! Each team gives one argument at a time: Team A gives an argument, Team B responds; Team B gives an argument, Team A responds.'
+          - Finish with the discussion questions below as a class.
+        example: |-
+          *Team A: You should return a dish if it's undercooked. I have done it, and the restaurant thanked me.*
+          *Team B: But customers might return food just because they changed their mind.*
+      - id: act4-points
+        type: callout
+        tone: info
+        title: Points to add to the discussion
+        text: |-
+          The type of restaurant: fancy, casual or takeaway.
+          Cultural norms and differences between countries (use examples in the present perfect!).
+          The reason for returning the food.
+          Customer service and the restaurant's responsibility.
+      - id: act4-arguments
+        type: discussionQuestions
+        title: Our arguments
+        items:
+          - question: 'Argument 1: ___'
+          - question: 'Argument 2: ___'
+          - question: 'Argument 3: ___'
+      - id: act4-discussion
+        type: discussionQuestions
+        title: Discussion as a class
+        items:
+          - question: How should restaurants balance good customer service with avoiding unnecessary food waste?
+            frame: I think restaurants should ___.
+          - question: In your opinion, which cultural norms about returning food *should or shouldn't* change as dining becomes more international?
+            frame: I think ___ should / shouldn't change because ___.
+          - question: What guidelines or rules *could* help both customers and restaurant staff handle complaints more respectfully and effectively?
+            frame: A rule that could help is ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: **modal verbs** (Activities 2, 3 and 4) and the
+          **present perfect** (warm-up, Activities 1, 3 and 4). Choose the activities
+          for your lesson; Activities 3 and 4 combine both skills.
+      - id: n-warmup
+        anchor: warmup-title
+        text: >-
+          Pick from the 8 questions. Make sure students answer in full sentences and
+          use the present perfect. Answers typed here are visible to you below each
+          question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Students send their comfort food to you privately (for example in the chat).
+          Make sure the guessers keep to the present perfect; for stronger groups, use
+          the optional challenges.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          The interactive menu for this role play is on the old notebook's gamma.app
+          page (gamma.app/docs/Our-Complete-Menu-ltoxws3x0kqc1c0), which is not on the
+          link allow-list. Share it on screen, or use any restaurant menu. Give each
+          customer a different back story.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Encourage students to give personal examples in their arguments, and make
+          sure every point has a modal verb or the present perfect.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: cuisine-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-present-perfect
+        type: ruleSummary
+        skill: Present perfect
+        rules:
+          - text: Use the **present perfect** to talk about food or restaurant **experiences** without saying when they happened. It focuses on the experience, not the time. If you say **when** it happened, use the past simple.
+            examples:
+              - She has never eaten at a vegan restaurant.
+              - Have you ever returned a dish at a restaurant?
+              - "I've tried sushi, but I've never ordered it in Israel."
+          - text: 'Use the present perfect to describe **changes and trends** in food culture and dining habits: things that have changed up to now. **Time phrases:** *recently, lately, over the years, in the last few years.*'
+            examples:
+              - People have started ordering food online more than ever.
+              - Restaurants have become more allergy-friendly in the last few years.
+              - Customers have become more demanding about food quality.
+          - text: 'Use the present perfect for **situations that started in the past and are still true now**. **For** + a period of time (*for a long time, for 5 years*); **since** + a point in time (*since 2020, since March*).'
+            examples:
+              - He has worked as a chef for 10 years.
+              - This restaurant has served kosher meals since 1998.
+              - "I've been a vegetarian for a long time."
+              - 'This restaurant has been serving kosher meals since 1998. (present perfect continuous: the action is still going on)'
+          - text: '**Form:** *have / has* + past participle. Some past participles are the same as the past simple; others are different.'
+            examples:
+              - make → made → made
+              - order → ordered → ordered
+              - eat → ate → eaten
+              - choose → chose → chosen
+      - id: rules-modals
+        type: ruleSummary
+        skill: Modal verbs
+        rules:
+          - text: Use **modal verbs** to show attitude, politeness, advice or necessity in food and restaurant situations. They make you sound stronger, softer or more polite.
+            examples:
+              - You should try the house special. (gentle advice)
+              - You must avoid this dish – it contains nuts. (strong necessity)
+              - You could choose the vegan option. (friendly suggestion)
+              - Would you like to see the dessert menu? (polite offer)
+          - text: A modal verb never comes alone. Always add a verb in the **base form** after it. Don't add *-s* or *-ed* to the verb after a modal.
+            examples:
+              - Could you **tell** me if this is gluten-free?
+              - You should **ask** about the ingredients.
+              - "They might **change** your dish if there's a problem."
+          - text: 'Modal verbs **do not change** for different people or numbers. They stay the same with *I, you, he, she, we, they*.'
+            examples:
+              [I should return the dish., He should return the dish., They should return the dish.]
+          - text: Choose the modal verb by how strong, polite or uncertain you want to sound (see the table).
+      - id: modals-table
+        type: table
+        caption: Which modal verb?
+        header: [Modal verb, How strong / polite, Main use, Example]
+        rows:
+          - [
+              '**Must**',
+              Strong necessity (most urgent),
+              'Rules, safety, things you cannot change',
+              'You **must** avoid this dish – it contains nuts.',
+            ]
+          - [
+              '**Should**',
+              Advice / recommendation,
+              Giving guidance or opinions,
+              "You **should** return the dish if it's undercooked.",
+            ]
+          - [
+              '**Could**',
+              Possibility / soft suggestion,
+              Offering options politely,
+              You **could** try the vegetarian option.,
+            ]
+          - [
+              '**Might / May**',
+              Possibility / uncertainty,
+              'Guessing, being careful or indirect',
+              This dish **might / may** contain dairy.,
+            ]
+          - [
+              '**Would**',
+              'Polite, indirect',
+              'Preferences, polite offers or requests',
+              I **would** recommend the house special.,
+            ]
+          - [
+              '**Can**',
+              'Polite but casual',
+              'Asking permission, offering help or asking for something',
+              '**Can** I change my order?',
+            ]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new restaurant example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: cuisine-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy a message and send it. Mori will ask you questions; answer every one.
+      - id: mori-main
+        type: aiTutorPrompt
+        title: Restaurants and food experiences
+        message: >-
+          Hi Mori! Let's practice talking about restaurants and food experiences.
+          Please ask me questions that will make me use modal verbs for advice and
+          suggestions, and the present perfect to talk about my dining experiences. You
+          can ask me about dishes I've ordered, problems I've had in restaurants, and
+          what I think customers should or shouldn't do.
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Two interactive activities
+      - id: mori-menu
+        type: aiTutorPrompt
+        title: 'Activity 1: Dream menu'
+        intro: >-
+          Build a dream meal for Mori: 1 appetizer, 1 main course, 1 dessert and 1
+          drink. Mori will tell you its preferences and food restrictions. Suggest the
+          meal with modal verbs and change the menu after Mori's feedback.
+        message: >-
+          Hi Mori! I want to build you a special restaurant menu based on your personal
+          preferences. Please tell me what dishes you like and don't like, and any
+          other helpful information. I will create a menu for you based on your
+          suggestions and present it to you using modal verbs. Ask me questions about
+          ingredients, allergies, and flavor preferences so I can design the perfect
+          dining experience.
+      - id: menu-remember
+        type: callout
+        tone: tip
+        title: "Don't forget to"
+        text: |-
+          Use modal verbs for suggestions, and choose the right one for how strong you want to sound.
+          Check for hidden ingredients in the dishes you suggest.
+          Ask follow-up questions with food adjectives.
+      - id: mori-experiences
+        type: aiTutorPrompt
+        title: 'Activity 2: My dining experiences'
+        intro: There are so many foods in the world. Talk to Mori about your likes, dislikes and experiences with different kinds of food.
+        message: >-
+          Hi Mori! Let's talk about foods I have tried or have never tried. Please ask
+          me questions in a way that makes me answer using the present perfect and food
+          adjectives. Ask me about different cuisines, dishes I've tasted, foods I
+          haven't eaten yet, and flavors or textures I enjoy or dislike.
+      - id: experiences-remember
+        type: callout
+        tone: tip
+        title: "Don't forget to"
+        text: |-
+          Ask Mori follow-up questions too, so it's a conversation and not an interview.
+          Add food adjectives, and give details with time phrases in the past simple when you say when (*I tried it last summer.*).
+          Talk about foods that you have tried and foods you haven't tried.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: cuisine-practice
+    book: workbook
+    title: 'Practice: Cuisine'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked right away, and you can try again.
+      - id: ex-modal-verbs
+        type: activity
+        activity: cuisine-modal-verbs
+      - id: ex-present-perfect
+        type: activity
+        activity: cuisine-present-perfect
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: cuisine-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Cuisine words
+        glossLang: he
+        link: https://quizlet.com/il/1121767569/cusine-english-translation-flash-cards/
+        items: &cuisine-words
+          - { term: Cuisine, gloss: מטבח / סגנון בישול }
+          - { term: Ingredients, gloss: מרכיבים }
+          - { term: Seasoning, gloss: תיבול }
+          - { term: Aromatic, gloss: ארומטי }
+          - { term: Savory, gloss: מלוח / עשיר בטעם }
+          - { term: Mild, gloss: עדין }
+          - { term: Texture, gloss: מרקם }
+          - { term: Vegan, gloss: טבעוני }
+          - { term: Vegetarian, gloss: צמחוני }
+          - { term: Produce, gloss: תוצרת חקלאית }
+          - { term: Serving size, gloss: גודל מנה }
+          - { term: Food restrictions, gloss: מגבלות תזונה }
+          - { term: Have / has eaten, gloss: אכל }
+          - { term: Have / has drunk, gloss: שתה }
+          - { term: Have / has frozen, gloss: הקפיא }
+          - { term: Have / has taken, gloss: לקח }
+          - { term: Have / has grown, gloss: גדל }
+          - { term: Have / has bitten, gloss: נשך }
+          - { term: To slice, gloss: לפרוס }
+          - { term: Garnish, gloss: קישוט למאכל }
+          - { term: Artisanal, gloss: בעבודת יד }
+          - { term: Umami, gloss: אומאמי / טעם עמוק }
+          - { term: Have / has boiled, gloss: בישל במים רותחים / הרתיח }
+          - { term: Have / has grilled, gloss: צלה }
+          - { term: Have / has charged, gloss: גבה כסף }
+          - { term: Have / has forgotten, gloss: שכח }
+          - { term: Have / has burnt, gloss: שרף }
+          - { term: Have / has choked, gloss: נחנק }
+          - { term: Have / has bought, gloss: קנה }
+          - { term: Have / has chopped, gloss: קצץ }
+          - { term: Have / has reserved, gloss: הזמין מקום }
+          - { term: To ferment, gloss: להתסיס }
+          - { term: To caramelize, gloss: לקרמל }
+          - { term: Raw, gloss: נא }
+          - { term: Overcooked, gloss: מבושל מדי }
+          - { term: Undercooked, gloss: לא מבושל מספיק }
+          - { term: Portion, gloss: מנה }
+          - { term: Value for money, gloss: תמורה למחיר }
+          - { term: Service, gloss: שירות }
+          - { term: Variety, gloss: מגוון }
+          - { term: Food chain, gloss: רשת מסעדות }
+          - { term: Appetizer, gloss: מנה ראשונה }
+          - { term: Entrée, gloss: מנה עיקרית }
+          - { term: Refreshment, gloss: משקה / כיבוד קל }
+
+vocabulary:
+  - slug: cuisine
+    title: Cuisine
+    items: *cuisine-words
+
+activities:
+  - slug: cuisine-modal-verbs
+    title: 'Modal verbs: You should try it, you must avoid it'
+    minutes: 8
+    items:
+      - id: must-avoid
+        type: multipleChoice
+        prompt: You have a nut allergy, and this dish contains nuts. You ___ avoid it.
+        options:
+          - { text: must, correct: true }
+          - {
+              text: could,
+              feedback: '*Could* is a soft suggestion. For safety (an allergy), we use *must*: strong necessity.',
+            }
+          - {
+              text: might,
+              feedback: '*Might* shows that something is possible but not sure. For safety, use *must*.',
+            }
+      - id: should-return
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: He should return the dish., correct: true }
+          - {
+              text: He shoulds return the dish.,
+              feedback: 'Modal verbs do not change for *he / she*: *he should*, not *he shoulds*.',
+            }
+          - {
+              text: He should returns the dish.,
+              feedback: 'After a modal verb, use the base form with no *-s*: *should return*.',
+            }
+          - {
+              text: He should to return the dish.,
+              feedback: 'Do not use *to* after *should*: *should return*.',
+            }
+      - id: might-change
+        type: fillBlank
+        prompt: Write the verb *change* in the right form.
+        text: "They might ___ your dish if there's a problem."
+        blanks: [[change]]
+      - id: modal-uses
+        type: matching
+        prompt: Match each modal verb with its main use.
+        pairs:
+          - [must, strong necessity]
+          - [should, advice]
+          - [could, a soft suggestion]
+          - [might, possibility (not sure)]
+          - [would, a polite offer or request]
+      - id: would-like
+        type: multipleChoice
+        prompt: 'The waiter makes a polite offer: ___ you like to see the dessert menu?'
+        options:
+          - { text: Would, correct: true }
+          - {
+              text: Must,
+              feedback: '*Must* is strong necessity. For a polite offer, use *Would you like…?*',
+            }
+          - {
+              text: Should,
+              feedback: '*Should* gives advice. For a polite offer, use *Would you like…?*',
+            }
+      - id: no-s
+        type: trueFalse
+        prompt: 'With *she*, the modal verb gets an *-s*: *She musts avoid nuts.*'
+        answer: false
+        feedback:
+          correct: 'Right! Modal verbs never change: *She must avoid nuts.*'
+          incorrect: 'Modal verbs stay the same with every person: *I must, she must, they must.*'
+      - id: might-dairy
+        type: trueFalse
+        prompt: '*This dish might contain dairy* means the waiter is sure the dish contains dairy.'
+        answer: false
+        feedback:
+          correct: 'Right! *Might* shows possibility or uncertainty: maybe it contains dairy.'
+          incorrect: '*Might* means "maybe": the waiter is not sure. To be sure, say *This dish contains dairy.*'
+      - id: order-house-special
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: You should try the house special.
+
+  - slug: cuisine-present-perfect
+    title: 'Present perfect: Have you ever tried it?'
+    minutes: 8
+    items:
+      - id: ever-returned
+        type: multipleChoice
+        prompt: Have you ever ___ a dish at a restaurant?
+        options:
+          - { text: returned, correct: true }
+          - {
+              text: return,
+              feedback: 'The present perfect is *have* + past participle: *Have you ever returned…?*',
+            }
+          - {
+              text: returning,
+              feedback: 'The present perfect uses the past participle, not the *-ing* form: *returned*.',
+            }
+      - id: eaten
+        type: fillBlank
+        prompt: Write the past participle of *eat*.
+        text: She has never ___ at a vegan restaurant.
+        blanks: [[eaten]]
+      - id: participles
+        type: matching
+        prompt: Match each verb with its past participle.
+        pairs:
+          - [eat, eaten]
+          - [choose, chosen]
+          - [make, made]
+          - [drink, drunk]
+          - [take, taken]
+      - id: for-ten-years
+        type: multipleChoice
+        prompt: He has worked as a chef ___ 10 years.
+        options:
+          - { text: for, correct: true }
+          - {
+              text: since,
+              feedback: 'Use *since* with a point in time (*since 2020*). With a period of time (*10 years*), use *for*.',
+            }
+          - {
+              text: ago,
+              feedback: '*Ago* goes with the past simple (*I started 10 years ago*). With the present perfect and a period of time, use *for*.',
+            }
+      - id: since-1998
+        type: fillBlank
+        prompt: Complete with *for* or *since*.
+        text: This restaurant has served kosher meals ___ 1998.
+        blanks: [[since]]
+      - id: say-when
+        type: trueFalse
+        prompt: 'When you say **when** something happened (*last Friday, in 2019*), you use the present perfect.'
+        answer: false
+        feedback:
+          correct: 'Right! With a specific time, use the past simple: *I ate sushi last Friday.*'
+          incorrect: 'With a specific time, use the past simple: *I ate sushi last Friday.* The present perfect has no time: *I have eaten sushi.*'
+      - id: have-become
+        type: fillBlank
+        prompt: Write *become* in the present perfect.
+        text: Restaurants ___ more allergy-friendly in the last few years.
+        blanks: [[have become]]
+      - id: order-never-ordered
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: I have never ordered sushi in Israel.

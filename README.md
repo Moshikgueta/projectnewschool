@@ -1,4 +1,20 @@
-# Teacher Dashboard
+# New School: staff room and learning platform
+
+This repository holds two apps:
+
+| Folder | What it is |
+| --- | --- |
+| [`newschool-learning-platform/`](newschool-learning-platform/README.md) | **The New School learning platform** (Next.js, TypeScript, Supabase): students' notebooks, exercises, vocabulary and progress; teachers' groups, classes and attendance; the office's students, packages, private lessons, rooms and timetable; staff tools; the content editor. It already includes stages A–E of the staff room's features and replaces the staff room at cut-over ([merge plan](newschool-learning-platform/docs/STAFF-ROOM-MERGE.md)). |
+| everything else (below) | **The staff room** (Cloudflare Worker + D1 and the teacher dashboard pages), which keeps running until the platform takes over. |
+
+The platform has its own setup, tests and documentation: start with its
+[README](newschool-learning-platform/README.md). Its CI runs from
+[`.github/workflows/platform-ci.yml`](.github/workflows/platform-ci.yml). No secrets are
+kept in the repository; each environment's keys are set in the hosting services.
+
+---
+
+## The staff room (Teacher Dashboard)
 
 לוח מחוונים למורה — desktop and mobile views for a language-school teaching system:
 students, digital notebooks (מחברות דיגיטליות) and lesson materials, in Hebrew RTL.
@@ -81,9 +97,12 @@ the `<` of those tokens (and of `<script`) to `\x3c`, which leaves every value i
 ## The site
 
 `docs/` is the published site — GitHub Pages serves it from the `main` branch. It holds the
-hand-written landing page (`docs/index.html`, which links the two views and explains how to
-sign in) plus the two built pages, so the whole thing is static with no build step on
-GitHub's side. `docs/dashboard.html` and `docs/mobile.html` are generated — rebuild them
+hand-written landing page (`docs/index.html`) plus the two built pages, so the whole thing
+is static with no build step on GitHub's side. Opening the site goes straight to the view
+that fits the device: phones to the mobile view, everything else to the dashboard. On the
+school's server the Worker redirects `/` that way (by `Sec-CH-UA-Mobile` or the User-Agent);
+on static hosting a script at the top of `docs/index.html` does the same, and the page itself
+(links to both views and how to sign in) only shows when scripts are off. `docs/dashboard.html` and `docs/mobile.html` are generated — rebuild them
 with the command above rather than editing them; `docs/index.html` is a source file.
 
 Enabling it, once per repository: **Settings → Pages → Source: Deploy from a branch →

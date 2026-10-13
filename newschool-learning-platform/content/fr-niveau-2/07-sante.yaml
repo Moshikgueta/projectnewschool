@@ -1,0 +1,608 @@
+# Cycle "Santé", converted from the French level 2 digital notebook
+# ("Cahier digital 2025 - français niveau 2", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-2
+slug: sante
+title: Santé
+goal: Raconter un problème de santé au passé et donner des conseils avec les verbes modaux.
+position: 7
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Le passé composé et l'imparfait" and "Donner des
+    conseils") are NEW: the notebook has no self-study exercises. They were written from
+    the cycle's two skills, its summary rules, the activity examples and its vocabulary.
+    Please check level, wording and every right answer before students see them.
+  - >-
+    Summary, skill 1: the notebook names the skill "les temps du passé (passé composé et
+    imparfait)" but the summary only explains the passé composé. Two rules were added:
+    with être the participle agrees with the subject (Elle est tombée, Je me suis
+    senti(e)), and the imparfait for descriptions and states in the past (J'avais mal à
+    la tête, J'étais fatigué(e)), with a short table of the auxiliary verbs. The rule
+    "être / avoir au présent + participe passé" now says which verbs take être (verbs of
+    movement such as aller, tomber, sortir, and all pronominal verbs such as se casser,
+    se sentir). Please confirm this matches how you teach it.
+  - >-
+    Activity 4 model: "Le lundi, j'ai ___" means "every Monday" (a habit) and does not
+    fit the passé composé; changed to "Lundi dernier, j'ai ___", as in the notebook's own
+    examples.
+  - >-
+    Corrections: Activity 1 question "Qu'as-tu fait pour te faire mal ?" → "Comment
+    est-ce que tu t'es fait mal ?"; "Depuis combien de temps as-tu mal ?" kept; "par
+    coeur" → "par cœur"; warm-up questions had stray "**" markers (removed); the
+    introduction model "Pour être en bonne santé, ___" has a blank added; Activity 2
+    "Es-tu allé à l'hôpital ?" → "Es-tu allé(e) à l'hôpital ?".
+  - >-
+    Homework: the notebook's interactive activity 1 ("Pense à une ancienne habitude, et
+    je te poserai des questions…") was written as if Mori were speaking. It is now a
+    message from the student: Mori thinks of a habit and the student asks the questions,
+    then they swap roles. Interactive activity 2 is likewise rewritten as the student's
+    message ("Imagine que tu as un problème de santé ; je vais te donner des
+    conseils…"). Please confirm the intent.
+  - >-
+    Vocabulary: "J'ai besoin – אני צריך" → "J'ai besoin de"; "Il vaut mieux que" → "Il
+    vaut mieux (+ infinitif)", the form used in the summary ("Il vaut mieux rester à la
+    maison"; "il vaut mieux que" needs the subjunctive); "En bonne santé / sain – בריא"
+    kept; "Prendre soin de soi – לשמור על עצמך" → "לשמור על עצמך / לדאוג לעצמך". Please
+    confirm.
+  - >-
+    The notebook gives no times and no beginner / intermediate split for this cycle, so
+    none were added. The plan (which activity practises which skill) is not in the
+    notebook; the teacher note gives a suggestion from the activities' content. The
+    Quizlet link is kept without its tracking parameters (?i=…&x=…). The "Réponse de
+    l'élève 1/2/3" lines are replaced by the answer boxes. Frames were added to the
+    warm-up questions (the source has none). Activity 3 has an example and a word bank
+    built from the notebook's "Exemples de phrases" (Tu dois… / Tu peux… / C'est mieux
+    de…) plus the summary's modal verbs; the example sentence is new.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: sante-classe
+    title: 'Classe : Santé'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Santé
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Les temps du passé
+            description: 'Passé composé et imparfait : *Hier, je suis tombé(e). J’avais mal au genou.*'
+          - name: Les verbes modaux pour donner des conseils
+            description: '*Tu dois te reposer. Il faut boire de l’eau. Tu pourrais faire du yoga.*'
+      - id: quizlet
+        type: externalLink
+        label: Santé sur Quizlet
+        url: https://quizlet.com/il/1095471095/conversational-french-2025-sante-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Pour être en bonne santé, je ___.
+        example: Je m’appelle Lévanah. Pour être en bonne santé, je me couche tôt tous les soirs.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Comment prends-tu soin de ta santé pendant la semaine ?
+            frame: Pendant la semaine, je ___.
+          - question: Quand as-tu vu le médecin pour la dernière fois ?
+            frame: J’ai vu le médecin ___ (la semaine dernière, il y a un mois…).
+          - question: 'Qu’est-ce qui est plus important pour toi : bien manger ou faire du sport ? Pourquoi ?'
+            frame: Pour moi, ___ est plus important parce que ___.
+          - question: Fais-tu du sport ? Quel sport ? Combien de fois par semaine ?
+            frame: Je fais du / de la ___, ___ fois par semaine.
+          - question: Quel conseil peux-tu donner à quelqu’un qui veut adopter une vie plus saine ?
+            frame: Tu dois ___. / Tu devrais ___.
+          - question: Que fais-tu quand tu te sens mal ?
+            frame: Quand je me sens mal, je ___.
+          - question: Quand as-tu été malade pour la dernière fois ?
+            frame: J’ai été malade ___. J’avais ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Chez le médecin, dans la salle d’attente'
+        skills: [Les temps du passé, Les verbes modaux pour donner des conseils]
+        steps:
+          - Vous êtes dans la salle d’attente d’un médecin. Pense à un petit problème de santé (rhume, mal de tête, mal de dos…).
+          - 'Dis au groupe pourquoi tu es ici : *Je suis ici parce que j’ai un rhume.*'
+          - Les autres te posent des questions simples (voir ci-dessous).
+          - 'Ensuite, les autres te donnent des **conseils** : *Tu dois…, Tu peux…*'
+        example: |-
+          *Je suis ici parce que j’ai un rhume.*
+          *Depuis quand ? As-tu pris un médicament ?*
+          *Tu dois boire beaucoup d’eau. Tu dois te reposer davantage.*
+          *Tu peux faire un peu d’exercice. Tu ne dois pas fumer ni boire trop d’alcool.*
+      - id: act1-questions
+        type: discussionQuestions
+        title: Les questions des autres patients
+        items:
+          - question: Pourquoi ?
+          - question: Depuis quand ?
+          - question: As-tu pris un médicament ?
+          - question: Depuis combien de temps as-tu mal ?
+          - question: Comment est-ce que tu t’es fait mal ?
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Rendez-vous médical, dans le cabinet du médecin'
+        skills: [Les temps du passé, Les verbes modaux pour donner des conseils]
+        steps:
+          - Travaillez en binôme. Un(e) élève est le **médecin**, l’autre est le **patient**.
+          - Le patient imagine un petit accident ou une situation passée et la raconte au passé.
+          - Le médecin pose des questions au passé (voir ci-dessous).
+          - Le médecin donne des **conseils** avec *vous devez, vous pouvez…*
+          - Ensuite, **échangez les rôles**.
+        example: |-
+          Patient : *Hier, je suis tombé et je me suis fait mal au genou.*
+          Patient : *J’ai mangé quelque chose de mauvais hier soir.*
+          Patient : *Je me suis cassé la jambe en jouant au foot.*
+          Médecin : *Vous devez vous reposer. Vous pouvez mettre de la glace.*
+          Médecin : *Si vous avez encore mal, vous devez consulter un spécialiste. Revenez me voir si vous n’allez pas mieux.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Les questions du médecin
+        items:
+          - question: Quand cela s’est-il passé ?
+          - question: Qu’as-tu fait après ?
+          - question: As-tu pris un médicament ?
+          - question: Es-tu allé(e) à l’hôpital ?
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Donner des conseils'
+        skills: [Les verbes modaux pour donner des conseils]
+        steps:
+          - Ton professeur propose une **situation**.
+          - Donne un conseil à ton ami et explique pourquoi.
+        wordBank: [Tu dois…, Tu peux…, Tu devrais…, Il faut…, C’est mieux de…, Il vaut mieux…]
+        example: '*Ton ami dort mal la nuit.* → *Tu devrais éteindre ton téléphone avant de dormir, parce que l’écran te réveille.*'
+      - id: act3-situations
+        type: discussionQuestions
+        title: Situations
+        items:
+          - question: Ton ami mange trop de fast-food.
+            frame: Tu dois / Tu devrais ___ parce que ___.
+          - question: Ton ami ne boit jamais d’eau.
+            frame: Il faut ___ parce que ___.
+          - question: Ton ami dort mal la nuit.
+            frame: Tu pourrais ___ parce que ___.
+          - question: Ton ami est stressé.
+            frame: C’est mieux de ___ parce que ___.
+          - question: Ton ami regarde la télé trop tard.
+            frame: Tu ne dois pas ___ parce que ___.
+          - question: Ton ami ne fait jamais de sport.
+            frame: Tu peux ___ parce que ___.
+          - question: Ton ami passe la nuit sur son téléphone.
+            frame: Il vaut mieux ___ parce que ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Ma semaine saine'
+        skills: [Les temps du passé]
+        steps:
+          - Écris une **action saine que tu as faite** la semaine dernière.
+          - Explique comment tu t’es senti(e) et pourquoi.
+          - Partage ta phrase avec le groupe.
+        example: |-
+          *Lundi dernier, j’ai refusé du travail supplémentaire. Je me suis sentie plus calme car j’ai eu du temps pour moi.*
+          *Vendredi dernier, je suis sortie marcher avec Yossi et Dana. Je me suis sentie heureuse car j’ai vu mes amis.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Ma semaine saine
+        items:
+          - question: Lundi dernier, j’ai ___. Je me suis senti(e) ___ parce que ___.
+          - question: ___ dernier, je suis ___. Je me suis senti(e) ___ parce que ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **les temps du passé** (passé composé et
+          imparfait) et **les verbes modaux pour donner des conseils** (devoir, falloir,
+          pouvoir, au présent et au conditionnel). Le cahier ne donne pas de plan ni de
+          durées. Suggestion : activités 1 et 2 (les deux compétences), activité 3
+          (conseils), activité 4 (passé composé).
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Explique la situation : tout le monde est dans la salle d’attente d’un médecin.
+          Chaque élève pense à un petit problème de santé. Les autres posent les questions,
+          puis donnent des conseils avec *tu dois, tu peux, tu ne dois pas*.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Écris les questions utiles au tableau (ou montre-les à l’écran). Vérifie
+          l’auxiliaire *être* avec *tomber, aller* et les verbes pronominaux (*je me suis
+          fait mal, je me suis cassé la jambe*). Le médecin vouvoie le patient.
+      - id: n-act3
+        anchor: act3
+        text: Propose une situation à chaque élève. Demande un conseil **et** une explication (*parce que…*). Encourage le conditionnel (*tu devrais, tu pourrais*) pour un conseil plus doux.
+      - id: n-act4
+        anchor: act4
+        text: Vérifie le passé composé et l’accord du participe avec *être* (*je me suis sentie* pour une femme).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: sante-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-passe
+        type: ruleSummary
+        skill: Les temps du passé
+        rules:
+          - text: On utilise le **passé composé** pour parler d’actions terminées dans le passé.
+            examples: ['Hier, j’ai fait du sport.', Elle a mangé des légumes au déjeuner.]
+          - text: 'Forme : **avoir** ou **être** au présent + **participe passé**. 1er groupe -ER → **-é** ; 2e groupe -IR → **-i** ; 3e groupe : à apprendre par cœur.'
+            examples:
+              [marcher → j’ai marché, finir → j’ai fini, prendre → j’ai pris, faire → j’ai fait]
+          - text: 'On utilise **être** avec les verbes de mouvement (*aller, venir, sortir, tomber…*) et avec les verbes pronominaux (*se sentir, se casser, se faire mal*). Avec **être**, le participe s’accorde avec le sujet.'
+            examples:
+              [
+                Il est tombé. / Elle est tombée.,
+                Je me suis senti(e) mieux.,
+                Nous sommes allé(e)s chez le médecin.,
+              ]
+          - text: 'Négation : **ne (n’)** + auxiliaire + **pas** + participe.'
+            examples: [Je n’ai pas mangé., Je ne suis pas allé(e) à l’hôpital.]
+          - text: 'Questions : on inverse le sujet et l’auxiliaire.'
+            examples: [As-tu mangé ?, As-tu pris un médicament ?, Es-tu allé(e) à l’hôpital ?]
+          - text: On utilise l’**imparfait** pour décrire une situation ou un état dans le passé (comment on était, comment on se sentait).
+            examples:
+              [
+                J’avais mal à la tête.,
+                J’étais très fatigué(e).,
+                Il faisait froid et j’avais de la fièvre.,
+              ]
+      - id: aux-table
+        type: table
+        caption: Les auxiliaires
+        header: [Personne, avoir (présent), être (présent), avoir (imparfait), être (imparfait)]
+        rows:
+          - [je / j’, ai, suis, avais, étais]
+          - [tu, as, es, avais, étais]
+          - [il / elle, a, est, avait, était]
+          - [nous, avons, sommes, avions, étions]
+          - [vous, avez, êtes, aviez, étiez]
+          - [ils / elles, ont, sont, avaient, étaient]
+      - id: rules-modaux
+        type: ruleSummary
+        skill: Les verbes modaux pour donner des conseils
+        rules:
+          - text: On utilise les verbes modaux pour donner des **conseils** ou **faire des suggestions**. Après le verbe modal, le verbe est à l’**infinitif**.
+            examples:
+              [
+                Tu dois dormir davantage.,
+                Tu dois consulter un médecin.,
+                Tu peux te reposer.,
+                Il vaut mieux rester à la maison.,
+              ]
+          - text: '**Au présent**, le conseil est fort ou nécessaire : c’est important ou obligatoire.'
+            examples:
+              [
+                Tu dois aller chez le médecin.,
+                Il faut manger plus de légumes.,
+                Tu peux te reposer un peu.,
+              ]
+          - text: '**Au conditionnel**, le conseil est plus doux, plus poli : c’est une suggestion, pas une obligation.'
+            examples:
+              - Tu devrais aller chez le médecin. (= C’est une bonne idée.)
+              - Il faudrait dormir plus. (= Ce serait mieux.)
+              - Tu pourrais marcher un peu chaque jour. (= Si tu veux.)
+          - text: 'Négation : **ne** + verbe modal + **pas** + infinitif.'
+            examples: [Tu ne dois pas fumer., Tu ne devrais pas boire trop de café.]
+      - id: present-table
+        type: table
+        caption: 'Au présent : le conseil est fort ou nécessaire'
+        header: [Verbe, Exemple, Sens]
+        rows:
+          - [devoir, Tu dois dormir plus., C’est nécessaire.]
+          - [falloir, Il faut boire de l’eau., C’est une obligation générale.]
+          - [pouvoir, Tu peux faire du sport., 'C’est possible, une autorisation.']
+      - id: conditionnel-table
+        type: table
+        caption: 'Au conditionnel : le conseil est plus doux, plus poli'
+        header: [Verbe, Exemple, Sens]
+        rows:
+          - [
+              devoir → tu devrais,
+              Tu devrais dormir plus.,
+              'C’est un bon conseil, mais pas une obligation.',
+            ]
+          - [falloir → il faudrait, Il faudrait boire plus d’eau., C’est une recommandation douce.]
+          - [pouvoir → tu pourrais, Tu pourrais faire du yoga., 'C’est une idée, une suggestion.']
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle. Fais transformer un conseil fort (*Tu dois…*) en conseil doux (*Tu devrais…*).
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: sante-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-habitudes
+        type: aiTutorPrompt
+        title: 'Message 1 : Les habitudes saines'
+        message: >-
+          Salut Mori ! Je veux parler d’habitudes saines. Peux-tu me poser des questions en
+          utilisant le passé composé et les verbes modaux ? Corrige mes erreurs, s’il te
+          plaît.
+      - id: mori-detective
+        type: aiTutorPrompt
+        title: 'Message 2 : Le détective des habitudes saines'
+        message: >-
+          Salut Mori ! Jouons au détective des habitudes saines. Pense à une ancienne
+          habitude, et je vais te poser des questions au passé (passé composé et
+          imparfait) pour deviner laquelle. Ensuite, on inverse les rôles. Corrige mes
+          erreurs, s’il te plaît.
+      - id: mori-conseils
+        type: aiTutorPrompt
+        title: 'Message 3 : Jeu de rôle, les conseils de santé'
+        message: >-
+          Salut Mori ! Faisons un jeu de rôle sur les conseils de santé. Imagine que tu as
+          un problème de santé et raconte-le-moi au passé. Je vais te donner des conseils
+          avec les verbes modaux (tu dois, il faut, tu devrais, tu pourrais…). Corrige mes
+          erreurs, s’il te plaît.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: sante-pratique
+    book: workbook
+    title: 'Pratique : Santé'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-passe
+        type: activity
+        activity: sante-passe
+      - id: ex-conseils
+        type: activity
+        activity: sante-conseils
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: sante-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la santé
+        glossLang: he
+        link: https://quizlet.com/il/1095471095/conversational-french-2025-sante-flash-cards/
+        items: &sante-words
+          - { term: la santé, gloss: בריאות }
+          - { term: en bonne santé / sain, gloss: בריא }
+          - { term: une habitude, gloss: הרגל }
+          - { term: un médecin / un docteur, gloss: רופא }
+          - { term: un rendez-vous (médical), gloss: תור }
+          - { term: un hôpital, gloss: בית חולים }
+          - { term: un médicament, gloss: תרופה }
+          - { term: une douleur, gloss: כאב }
+          - { term: un mal de gorge, gloss: כאב גרון }
+          - { term: un rhume, gloss: הצטננות }
+          - { term: un mal de tête, gloss: כאב ראש }
+          - { term: un mal de dos, gloss: כאב גב }
+          - { term: un mal de ventre, gloss: כאב בטן }
+          - { term: dormir, gloss: לישון }
+          - { term: se reposer, gloss: לנוח }
+          - { term: boire, gloss: לשתות }
+          - { term: manger, gloss: לאכול }
+          - { term: faire du sport, gloss: לעשות ספורט }
+          - { term: se sentir, gloss: להרגיש }
+          - { term: demander, gloss: לשאול }
+          - { term: répondre, gloss: לענות }
+          - { term: il faudrait, gloss: כדאי }
+          - { term: il faut, gloss: צריך }
+          - { term: je dois, gloss: אני חייב }
+          - { term: j’ai besoin de, gloss: אני צריך }
+          - { term: je peux, gloss: אני יכול }
+          - { term: il se peut, gloss: יכול להיות }
+          - { term: peut-être (possibilité), gloss: אולי (אפשרות) }
+          - { term: il vaut mieux (+ infinitif), gloss: עדיף }
+          - { term: prendre soin de soi, gloss: לשמור על עצמך / לדאוג לעצמך }
+          - { term: bon rétablissement, gloss: החלמה מהירה }
+          - { term: un conseil, gloss: עצה }
+
+vocabulary:
+  - slug: sante
+    title: Santé
+    items: *sante-words
+
+activities:
+  - slug: sante-passe
+    title: 'Les temps du passé : passé composé et imparfait'
+    minutes: 8
+    items:
+      - id: suis-tombe
+        type: multipleChoice
+        prompt: Hier, je ___ et je me suis fait mal au genou.
+        options:
+          - { text: suis tombé, correct: true }
+          - {
+              text: ai tombé,
+              feedback: '*Tomber* est un verbe de mouvement : on utilise *être*. *Je suis tombé.*',
+            }
+          - {
+              text: tombe,
+              feedback: '*Tombe* est au présent. Avec *hier*, on utilise le passé composé : *je suis tombé*.',
+            }
+      - id: participes
+        type: matching
+        prompt: Associe chaque verbe à son participe passé.
+        pairs:
+          - [marcher, marché]
+          - [finir, fini]
+          - [prendre, pris]
+          - [faire, fait]
+          - [boire, bu]
+      - id: elle-est-allee
+        type: multipleChoice
+        prompt: Ma sœur ___ à l’hôpital.
+        options:
+          - { text: est allée, correct: true }
+          - {
+              text: est allé,
+              feedback: 'Avec *être*, le participe s’accorde avec le sujet : *ma sœur* est féminin, donc *allée*.',
+            }
+          - {
+              text: a allée,
+              feedback: '*Aller* se conjugue avec *être* au passé composé : *elle est allée*.',
+            }
+      - id: pris-medicament
+        type: fillBlank
+        prompt: Complète avec le verbe au passé composé.
+        text: (prendre) Hier soir, j’___ un médicament. (manger) Nous ___ des légumes au déjeuner.
+        blanks: [[ai pris], [avons mangé]]
+      - id: negation
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Je n’ai pas mangé., correct: true }
+          - {
+              text: Je n’ai mangé pas.,
+              feedback: 'Au passé composé, *ne… pas* entoure l’auxiliaire : *Je n’ai pas mangé.*',
+            }
+          - {
+              text: Je ne pas ai mangé.,
+              feedback: '*Ne* va avant l’auxiliaire et *pas* après : *Je n’ai pas mangé.*',
+            }
+      - id: imparfait-avais
+        type: multipleChoice
+        prompt: Quand j’étais petit, j’___ souvent mal au ventre.
+        options:
+          - { text: avais, correct: true }
+          - {
+              text: aurai,
+              feedback: '*Aurai* est au futur. Pour décrire une situation ou une habitude dans le passé, on utilise l’imparfait : *j’avais*.',
+            }
+          - {
+              text: avons,
+              feedback: '*Avons* est pour *nous*, au présent. Avec *je*, à l’imparfait : *j’avais*.',
+            }
+      - id: senti-accord
+        type: trueFalse
+        prompt: 'Une femme dit : *Je me suis sentie plus calme.* La phrase est correcte.'
+        answer: true
+        feedback:
+          correct: 'Bravo ! *Se sentir* est pronominal : on utilise *être*, et le participe s’accorde (*sentie* pour une femme).'
+          incorrect: 'La phrase est correcte : avec *être*, le participe s’accorde avec le sujet. Une femme dit *je me suis sentie*.'
+      - id: ordre-genou
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Je me suis fait mal au genou.
+
+  - slug: sante-conseils
+    title: 'Donner des conseils : tu dois, il faut, tu devrais'
+    minutes: 8
+    items:
+      - id: dois-dormir
+        type: multipleChoice
+        prompt: Tu es très fatigué. Tu ___ dormir davantage.
+        options:
+          - { text: dois, correct: true }
+          - {
+              text: doit,
+              feedback: 'Avec *tu*, le verbe *devoir* fait *tu dois*. *Il doit* est pour *il / elle*.',
+            }
+          - {
+              text: devoir,
+              feedback: 'Il faut conjuguer le verbe modal : *tu dois*. C’est le deuxième verbe qui reste à l’infinitif.',
+            }
+      - id: infinitif
+        type: multipleChoice
+        prompt: Il faut ___ beaucoup d’eau.
+        options:
+          - { text: boire, correct: true }
+          - {
+              text: bois,
+              feedback: 'Après *il faut*, le verbe est à l’infinitif : *il faut boire*.',
+            }
+          - {
+              text: bu,
+              feedback: '*Bu* est un participe passé. Après *il faut*, on met l’infinitif : *boire*.',
+            }
+      - id: present-conditionnel
+        type: matching
+        prompt: Associe le présent (conseil fort) et le conditionnel (conseil doux).
+        pairs:
+          - [tu dois, tu devrais]
+          - [il faut, il faudrait]
+          - [tu peux, tu pourrais]
+          - [vous devez, vous devriez]
+      - id: plus-doux
+        type: multipleChoice
+        prompt: Quel conseil est le plus doux, le plus poli ?
+        options:
+          - { text: Tu devrais aller chez le médecin., correct: true }
+          - {
+              text: Tu dois aller chez le médecin.,
+              feedback: '*Tu dois* (présent) est un conseil fort. Le conditionnel *tu devrais* est plus doux.',
+            }
+          - {
+              text: Il faut aller chez le médecin.,
+              feedback: '*Il faut* (présent) est une obligation. Le conditionnel *tu devrais* est plus doux.',
+            }
+      - id: obligation
+        type: trueFalse
+        prompt: '*Tu pourrais faire du yoga* est une obligation.'
+        answer: false
+        feedback:
+          correct: 'Bravo ! *Tu pourrais* (conditionnel) est une idée, une suggestion, pas une obligation.'
+          incorrect: '*Tu pourrais* est au conditionnel : c’est une suggestion, pas une obligation.'
+      - id: complete-conseils
+        type: fillBlank
+        prompt: Complète avec le verbe au conditionnel.
+        text: (devoir) Tu ___ te reposer. (pouvoir) Vous ___ mettre de la glace.
+        blanks: [[devrais], [pourriez]]
+        wordBank: [devrais, devriez, pourrais, pourriez]
+      - id: ne-dois-pas
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Tu ne dois pas fumer., correct: true }
+          - {
+              text: Tu dois ne fumer pas.,
+              feedback: '*Ne… pas* entoure le verbe modal : *Tu ne dois pas fumer.*',
+            }
+          - {
+              text: Tu ne dois fumer pas.,
+              feedback: '*Pas* va juste après le verbe modal : *Tu ne dois pas fumer.*',
+            }
+      - id: ordre-vaut-mieux
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Il vaut mieux rester à la maison.

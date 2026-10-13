@@ -1,0 +1,654 @@
+# Cycle "Durabilité", converted from the French level 2 digital notebook
+# ("Cahier digital 2025 - français niveau 2", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-2
+slug: durabilite
+title: Durabilité
+goal: Parler de l’écologie avec le futur proche, le futur simple et les comparaisons.
+position: 17
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Le futur proche et le futur simple" and "Les
+    comparaisons") are NEW: the notebook has no self-study exercises. They were written
+    from the cycle's two skills, its summary rules, the activity examples and its
+    vocabulary. Please check level, wording and every right answer before students
+    see them.
+  - >-
+    Summary, futur simple: "on note tout le verbe à l'infinitif puis on ajoute la
+    terminaison" is kept for -er / -ir verbs; the rule now adds that -re verbs drop
+    their final -e (prendre → je prendrai) and gives a NEW table of the irregular verbs
+    of the cycle (être → serai, avoir → aurai, aller → irai, faire → ferai). A rule on
+    the negative futur proche (Nous n'allons pas jeter…) and on "bon → meilleur" (used
+    in Activity 2: "le meilleur pour la planète") was added. Superlatives now say "le /
+    la / les + plus / moins + adjectif (+ de…)", and "plus de + nom + que" (Mon
+    partenaire recycle plus de plastique que de papier) was added from Activity 3.
+    Please confirm.
+  - >-
+    Summary, superlative example "La France est le pays le plus avancé en énergie
+    solaire" is not true (France is not the leader in solar energy); it was replaced by
+    "Le vélo est le moyen de transport le plus écologique."
+  - >-
+    Corrections: intro frame had a stray "»" and "Je [recycle… / je recycle parfois…]"
+    → "Je recycle tout le temps / Je recycle parfois / Je ne recycle jamais"; warm-up
+    (advanced) 3 "Quels produits meilleurs pour l'environnement" → "Quels produits plus
+    écologiques"; Mori comparison message ended with "?" in the middle of a request and
+    had no object for "comparer" → "comparer mes habitudes écologiques avec les tiennes
+    en utilisant…"; Mori example "Mori prend la voiture moins que moi" → "Mori prend
+    moins la voiture que moi"; "Envoyer ce message à Mori" → "Envoie ce message à Mori".
+    Stray "**", "&#10;" and "\!" markup removed.
+  - >-
+    Activity 5: the groups were in a different order in step 1 (1 Sénégal, 3 RCA) and
+    in the texts (1 RCA, 3 Sénégal); step 1 now follows the texts. The Hebrew
+    translations of the group topics in step 1 are left out (student text is in
+    French). The step "Répondre aux questions en équipe" has no questions in the
+    source; answer boxes for 2 comparisons and 2 future sentences were added instead.
+    Please check the facts in the three texts: Danzi solar plant "250 000 habitants",
+    the Côte d'Ivoire campaign name "Un jour, 5 millions d'arbres", and solar-powered
+    BRT stations in Dakar.
+  - >-
+    The source has no class plan. The plan note maps the activities to the two skills
+    (futur: 1, 3, 5; comparaisons: 2, 3, 4, 5) and suggests choosing 2 or 3. Activities
+    1 and 4 need images or a map chosen by the teacher (not in the notebook).
+  - >-
+    Warm-up levels "Niveau A2 – Basique / Avancé" are kept as "Niveau A2 – basique" and
+    "Niveau A2 – avancé". Mori: the general message and the four activities are kept;
+    activity 4 had no example, none was added.
+  - >-
+    Times given as ranges are recorded as the upper value: Activity 5 "10-12" → 12,
+    "8-10" → 10 (total 2 + 12 + 10 + 5 = 29). Activity 2 total 5 + 10 + 5 = 20;
+    Activity 3 total 5 + 5 + 10 = 20. The "Réponse de l'élève / de l'étudiant 1/2/3"
+    lines are removed (answer boxes). The Quizlet link is kept without its "?i=…&x=…"
+    tracking parameters.
+  - >-
+    Vocabulary: "Éolienne – רוח (אנרגיה רוח)" → "טורבינת רוח"; "Solaire – שמשי" →
+    "סולארי / של השמש"; "Vélo – אופנים" → "אופניים"; "Air – אויר" → "אוויר"; "Déchets
+    – אשפה" → "פסולת / אשפה"; "Aussi… que – כמו… כמו" → "…כמו (באותה מידה)". Please
+    confirm.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: durabilite-classe
+    title: 'Classe : Durabilité'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Durabilité
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Le futur proche et le futur simple
+            description: '*Nous allons recycler davantage. La pollution diminuera.*'
+          - name: Les comparaisons
+            description: '*plus… que, moins… que, aussi… que, le / la plus…*'
+      - id: quizlet
+        type: externalLink
+        label: Durabilité sur Quizlet
+        url: https://quizlet.com/il/1077202023/conversational-french-2025-durabilite-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Je recycle tout le temps. / Je recycle parfois. / Je ne recycle jamais.
+        example: Je m’appelle Lévanah. Je recycle parfois.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup-basic
+        type: discussionQuestions
+        title: Niveau A2 – basique (vie quotidienne)
+        items:
+          - question: Qu’utilises-tu pour transporter tes courses au supermarché et pourquoi ?
+            frame: J’utilise ___ parce que ___.
+          - question: Comment transportes-tu l’eau lorsque tu sors de chez toi ? (bouteille en plastique, verre, gourde…)
+            frame: J’utilise ___.
+          - question: Que fais-tu à la maison pour consommer moins d’électricité ?
+            frame: À la maison, je ___.
+          - question: Quel type de déchet recycles-tu le plus et comment le fais-tu ?
+            frame: Je recycle surtout ___.
+          - question: Quel moyen de transport préfères-tu en ville et pourquoi ?
+            frame: En ville, je préfère ___ parce que ___.
+          - question: Que fais-tu des bouteilles ou des canettes quand elles sont vides ?
+            frame: Quand elles sont vides, je ___.
+      - id: warmup-advanced
+        type: discussionQuestions
+        title: Niveau A2 – avancé (vie quotidienne)
+        items:
+          - question: Comment peux-tu utiliser moins d’eau dans ta routine quotidienne ?
+          - question: Que fais-tu pour maintenir ta maison ou ton quartier propre ?
+          - question: Quels produits plus écologiques achètes-tu et pourquoi ?
+          - question: Que fais-tu des vêtements que tu ne portes plus et pourquoi ?
+          - question: Dans le futur, quels changements veux-tu faire dans ta vie pour moins polluer ?
+            frame: Dans le futur, je vais ___.
+          - question: Quel moyen de transport utilises-tu au quotidien et quels avantages t’apporte-t-il ?
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : Comment allons-nous sauver la planète ?'
+        skills: [Le futur proche et le futur simple]
+        steps:
+          - 'Regarde les images de ton professeur (pollution, recyclage, énergies renouvelables…) et réponds : « Que va-t-on faire pour sauver la planète ? »'
+          - 'En petits groupes, créez une mini-campagne écologique : un **slogan court**, **3 phrases au futur proche** et **1 phrase d’avertissement** (*si* + présent, futur simple).'
+          - Chaque groupe présente sa campagne en **1 minute** devant la classe.
+          - La classe vote pour la campagne la plus **créative** ou la plus **réaliste**.
+        example: |-
+          **Slogan :** *Recycler, c’est l’avenir !*
+          **Futur proche :** *Nous allons recycler davantage. Nous allons utiliser moins de plastique. Nous n’allons pas jeter nos déchets par terre.*
+          **Avertissement :** *Si nous ne le faisons pas, la planète souffrira.*
+      - id: act1-campagne
+        type: discussionQuestions
+        title: Notre campagne
+        items:
+          - question: 'Slogan : ___'
+          - question: Nous allons ___.
+          - question: Nous allons ___.
+          - question: Nous n’allons pas ___.
+          - question: Si nous ne le faisons pas, ___.
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Le marché écologique (jeu de rôle)'
+        skills: [Les comparaisons]
+        minutes: 20
+        steps:
+          - 'La classe devient un marché. Chaque groupe reçoit des produits à défendre : sac en tissu **ou** sac en plastique, aliment local **ou** aliment importé, vélo **ou** voiture.'
+          - 'Préparation (5 minutes) : prépare tes arguments pour expliquer pourquoi ton produit est **le meilleur pour la planète**.'
+          - 'Jeu de rôle (10 minutes) : les **acheteurs** posent des questions ; les **vendeurs** répondent avec des comparaisons.'
+          - 'Vote (5 minutes) : la classe choisit **le produit le plus convaincant**.'
+        example: '*Notre sac est plus écologique que le vôtre.*'
+      - id: act2-arguments
+        type: discussionQuestions
+        title: Mes arguments
+        items:
+          - question: Notre produit est plus ___ que ___.
+          - question: Notre produit est moins ___ que ___.
+          - question: Notre produit est le / la plus ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : L’interview écologique'
+        skills: [Le futur proche et le futur simple, Les comparaisons]
+        minutes: 20
+        steps:
+          - 'Première ronde (5 minutes) : choisis **3 questions** de la liste et interviewe ton / ta partenaire.'
+          - 'Changement de partenaire (5 minutes) : nouvelle interview avec **de nouvelles questions**.'
+          - 'Présentation finale (10 minutes) : présente ton / ta partenaire à la classe.'
+        example: '*Mon partenaire recycle plus de plastique que de papier. Dans le futur, il va utiliser son vélo plus souvent.*'
+      - id: act3-questions
+        type: discussionQuestions
+        title: Questions possibles
+        items:
+          - question: Que fais-tu chez toi pour économiser l’eau ?
+          - question: Que vas-tu faire demain pour protéger la planète ?
+            frame: Demain, je vais ___.
+          - question: 'Qu’utilises-tu le plus : le vélo ou la voiture ? Pourquoi ?'
+            frame: J’utilise plus ___ que ___ parce que ___.
+          - question: Tu préfères acheter des vêtements neufs ou d’occasion ?
+          - question: Quel objet de ta maison pollue le plus ?
+          - question: 'Que recycles-tu le plus : le plastique ou le papier ?'
+            frame: Je recycle plus de ___ que de ___.
+          - question: Quels changements veux-tu faire dans ta vie pour protéger la planète ?
+          - question: Qui, dans ta famille, recycle le plus ?
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Carte verte'
+        skills: [Les comparaisons]
+        steps:
+          - Regarde la carte du monde de ton professeur.
+          - Compare **deux villes ou deux pays**.
+          - 'Variante : on crée une carte de la classe ; chaque élève dit une comparaison sur son pays ou sa ville.'
+        example: |-
+          *Lyon est plus propre que Marseille.*
+          *Tel Aviv est aussi moderne que Paris.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Mes comparaisons
+        items:
+          - question: ___ est plus ___ que ___.
+          - question: ___ est aussi ___ que ___.
+      - id: act5
+        type: classActivity
+        title: 'Activité 5 : Recherche – quel pays est le plus écologique ?'
+        skills: [Les comparaisons, Le futur proche et le futur simple]
+        minutes: 29
+        steps:
+          - 'Répartition des groupes (2 minutes) : groupe 1 → **République centrafricaine** (énergie solaire à Danzi) ; groupe 2 → **Côte d’Ivoire** (reforestation) ; groupe 3 → **Sénégal** (bus électriques à Dakar).'
+          - 'Travail en groupes (12 minutes) : lisez votre texte ci-dessous et préparez **2 comparaisons** et **2 phrases au futur simple**.'
+          - 'Présentation en classe (10 minutes) : chaque groupe présente ses 2 phrases au futur et ses 2 comparaisons.'
+          - 'Débat final (5 minutes) : « Quel pays sera le plus écologique dans le futur et pourquoi ? »'
+      - id: act5-groupe1-title
+        type: heading
+        level: 4
+        text: 'Groupe 1 – République centrafricaine : énergie solaire à Danzi'
+      - id: act5-groupe1
+        type: text
+        text: >-
+          En République centrafricaine, une grande **centrale solaire** a été construite
+          dans le village de **Danzi**, près de **Bangui**, la capitale. Cette centrale
+          produit de l’**électricité propre** grâce au soleil. Elle peut fournir de
+          l’électricité à **250 000 habitants**. C’est un projet important car beaucoup de
+          personnes n’ont pas encore d’électricité dans ce pays. Dans le futur, le pays
+          utilisera **de plus en plus d’énergie solaire** pour protéger l’environnement.
+      - id: act5-groupe2-title
+        type: heading
+        level: 4
+        text: 'Groupe 2 – Côte d’Ivoire : reforestation et protection des forêts'
+      - id: act5-groupe2
+        type: text
+        text: >-
+          En Côte d’Ivoire, il y a un **grand projet pour planter des arbres** et protéger
+          les forêts. Chaque année, des millions d’arbres sont plantés grâce à des
+          campagnes comme **« Un jour, 5 millions d’arbres »**. Ces projets permettent de
+          **réparer les forêts détruites** et de donner du **travail** aux habitants dans
+          les zones rurales. Dans le futur, la Côte d’Ivoire aura **plus de forêts** et la
+          nature sera **mieux protégée**.
+      - id: act5-groupe3-title
+        type: heading
+        level: 4
+        text: 'Groupe 3 – Sénégal : bus électriques à Dakar'
+      - id: act5-groupe3
+        type: text
+        text: >-
+          À **Dakar**, la capitale du Sénégal, de **nouveaux bus électriques** ont été mis
+          en service. Ces bus ne polluent pas l’air car ils fonctionnent à
+          l’**électricité**, et certaines stations utilisent **l’énergie solaire**. Le
+          projet s’appelle **BRT (Bus Rapid Transit)** et il rend la ville **plus propre**
+          et **moins bruyante**. Dans le futur, il y aura **plus de bus électriques** et
+          **moins de voitures polluantes** à Dakar.
+      - id: act5-sentences
+        type: discussionQuestions
+        title: Nos phrases
+        items:
+          - question: 'Comparaison 1 : ___'
+          - question: 'Comparaison 2 : ___'
+          - question: 'Futur simple 1 : ___'
+          - question: 'Futur simple 2 : ___'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **le futur proche et le futur simple**
+          (activités 1, 3 et 5) et **les comparaisons** (activités 2, 3, 4 et 5). Choisis
+          2 ou 3 activités selon le temps, et les questions d’échauffement du niveau de ton
+          groupe (basique ou avancé).
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup-title
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Avant le cours, prépare quelques images (pollution, recyclage, énergies
+          renouvelables…) : elles ne sont pas dans le cahier. Montre-les et pose la
+          question « Que va-t-on faire pour sauver la planète ? ». Vérifie que chaque
+          groupe utilise *aller* au présent + infinitif, et *si* + présent → futur simple
+          dans la phrase d’avertissement.
+      - id: n-act2
+        anchor: act2
+        minutes: 20
+        text: >-
+          Préparation : 5 minutes. Jeu de rôle : 10 minutes. Vote : 5 minutes. Donne à
+          chaque groupe un produit à défendre.
+      - id: n-act3
+        anchor: act3
+        minutes: 20
+        text: >-
+          Première ronde : 5 minutes. Changement de partenaire : 5 minutes. Présentation
+          finale : 10 minutes. Distribue 3 questions de la liste à chaque élève.
+      - id: n-act4
+        anchor: act4
+        text: Montre une carte du monde à l’écran ou distribue des cartes aux élèves (pas dans le cahier).
+      - id: n-act5
+        anchor: act5
+        minutes: 29
+        text: >-
+          Répartition : 2 minutes. Travail en groupes : 12 minutes. Présentation : 10
+          minutes. Débat final : 5 minutes. Chaque groupe lit seulement son texte.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: durabilite-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-futur
+        type: ruleSummary
+        skill: Le futur proche et le futur simple
+        rules:
+          - text: 'Le **futur proche** (*aller* au présent + infinitif) sert à parler de projets ou d’intentions dans un avenir proche. À l’oral, on l’utilise très souvent, même pour un avenir plus lointain.'
+            examples: [Je vais recycler davantage., Nous allons planter des arbres.]
+          - text: 'À la forme négative, *ne… pas* entoure le verbe *aller*.'
+            examples: [Nous n’allons pas jeter nos déchets par terre.]
+          - text: 'Le **futur simple** sert à faire des projections dans le futur, à dire une action future certaine, à faire une promesse ou un engagement. Terminaisons : **-ai, -as, -a, -ons, -ez, -ont**.'
+            examples:
+              [
+                La Côte d’Ivoire aura plus de forêts en 2050.,
+                La pollution diminuera dans les villes.,
+              ]
+          - text: 'Pour les verbes en **-er** et en **-ir**, on écrit tout l’infinitif puis on ajoute la terminaison. Pour les verbes en **-re**, on enlève le *e* final. Les verbes irréguliers sont à apprendre (voir le tableau).'
+            examples: [recycler → je recyclerai, réussir → tu réussiras, prendre → il prendra]
+          - text: 'Avec **si** + présent, on utilise le futur simple dans l’autre partie de la phrase.'
+            examples: ['Si nous ne le faisons pas, la planète souffrira.']
+      - id: futur-table
+        type: table
+        caption: Le futur simple
+        header: [Sujet, recycler, être, avoir, aller, faire]
+        rows:
+          - [je / j’, recyclerai, serai, aurai, irai, ferai]
+          - [tu, recycleras, seras, auras, iras, feras]
+          - [il / elle / on, recyclera, sera, aura, ira, fera]
+          - [nous, recyclerons, serons, aurons, irons, ferons]
+          - [vous, recyclerez, serez, aurez, irez, ferez]
+          - [ils / elles, recycleront, seront, auront, iront, feront]
+      - id: rules-comparaisons
+        type: ruleSummary
+        skill: Les comparaisons
+        rules:
+          - text: '**Plus / moins / aussi + adjectif + que.** L’adjectif s’accorde avec le sujet.'
+            examples:
+              - '**Plus… que :** *Le vélo est plus écologique que la voiture.*'
+              - '**Moins… que :** *Le sac en tissu est moins polluant que le sac en plastique.*'
+              - '**Aussi… que :** *Ma ville est aussi bruyante que la tienne.*'
+          - text: 'Avec un nom, on dit **plus de / moins de + nom + que**.'
+            examples:
+              [
+                Mon partenaire recycle plus de plastique que de papier.,
+                Il y aura moins de voitures polluantes.,
+              ]
+          - text: '**Superlatifs : le / la / les + plus / moins + adjectif.**'
+            examples:
+              [
+                Le vélo est le moyen de transport le plus écologique.,
+                La voiture est le moyen de transport le moins écologique.,
+              ]
+          - text: 'Attention : on ne dit pas « plus bon », on dit **meilleur(e)**.'
+            examples: [Notre produit est meilleur pour la planète., C’est le meilleur produit.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: durabilite-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-general
+        type: aiTutorPrompt
+        title: L’écologie et la planète
+        message: >-
+          Bonjour Mori ! Je veux parler de l’écologie et de la planète. Peux-tu me poser des
+          questions simples sur ce que je compte faire pour protéger l’environnement ?
+          Utilise seulement le futur proche (aller + infinitif) et le futur simple et
+          corrige mes erreurs, s’il te plaît.
+      - id: extra-title
+        type: heading
+        level: 3
+        text: Activités interactives
+      - id: mori-futur-proche
+        type: aiTutorPrompt
+        title: 'Activité 1 : Mes projets verts (futur proche)'
+        intro: 'Raconte à Mori **trois actions écologiques** que tu vas faire bientôt, avec *aller* + infinitif. Exemple : *Je vais trier mes déchets. Je vais planter un arbre dans le jardin. Je vais utiliser une gourde et pas de bouteilles en plastique.*'
+        message: Bonjour Mori ! Je veux parler de mes projets pour protéger la planète. Voici trois actions que je vais bientôt faire. Corrige mes phrases si elles sont incorrectes.
+      - id: mori-futur-simple
+        type: aiTutorPrompt
+        title: 'Activité 2 : La planète en 2050 (futur simple)'
+        intro: 'Dis à Mori **trois phrases** sur ce qui **se passera en 2050** pour la planète. Exemple : *En 2050, les villes seront plus propres. Les voitures utiliseront seulement de l’électricité. Il y aura plus d’arbres dans les forêts.*'
+        message: Bonjour Mori ! Voici trois phrases sur l’état de la planète en 2050 selon moi. Corrige mes erreurs, s’il te plaît.
+      - id: mori-comparaisons
+        type: aiTutorPrompt
+        title: 'Activité 3 : Comparer des habitudes écologiques (comparaisons)'
+        intro: 'Compare tes habitudes avec celles de Mori ou d’un ami. Fais **trois phrases** avec *plus… que, moins… que, aussi… que*. Exemple : *Je recycle plus que mon frère. Mori prend moins la voiture que moi. Ma ville est aussi propre que la tienne.*'
+        message: Bonjour Mori ! Je souhaite comparer mes habitudes écologiques avec les tiennes en utilisant plus… que, moins… que ou aussi… que. Corrige mes phrases si nécessaire.
+      - id: mori-superlatifs
+        type: aiTutorPrompt
+        title: 'Activité 4 : La ville la plus verte (superlatifs)'
+        intro: Utilise *le plus / le moins* pour décrire des records écologiques.
+        message: Bonjour Mori ! Je souhaite te parler de la ville la plus écologique / la moins écologique que je connaisse. Corrige mes phrases si elles sont fausses.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: durabilite-pratique
+    book: workbook
+    title: 'Pratique : Durabilité'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-futur
+        type: activity
+        activity: durabilite-futur
+      - id: ex-comparaisons
+        type: activity
+        activity: durabilite-comparaisons
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: durabilite-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la durabilité
+        glossLang: he
+        link: https://quizlet.com/il/1077202023/conversational-french-2025-durabilite-flash-cards/
+        items: &durabilite-words
+          - { term: planète, gloss: כוכב לכת / פלנטה }
+          - { term: Terre, gloss: ארץ / כדור הארץ }
+          - { term: futur, gloss: עתיד }
+          - { term: énergie, gloss: אנרגיה }
+          - { term: solaire, gloss: סולארי / של השמש }
+          - { term: éolienne, gloss: טורבינת רוח }
+          - { term: électricité, gloss: חשמל }
+          - { term: pollution, gloss: זיהום }
+          - { term: air, gloss: אוויר }
+          - { term: eau, gloss: מים }
+          - { term: déchets, gloss: פסולת / אשפה }
+          - { term: plastique, gloss: פלסטיק }
+          - { term: papier, gloss: נייר }
+          - { term: verre, gloss: זכוכית }
+          - { term: recyclage, gloss: מחזור }
+          - { term: sac, gloss: שקית / תיק }
+          - { term: bouteille, gloss: בקבוק }
+          - { term: voiture, gloss: מכונית }
+          - { term: vélo, gloss: אופניים }
+          - { term: transport, gloss: תחבורה }
+          - { term: bus, gloss: אוטובוס }
+          - { term: électrique, gloss: חשמלי }
+          - { term: forêt, gloss: יער }
+          - { term: arbre, gloss: עץ }
+          - { term: reforestation, gloss: ייעור מחדש }
+          - { term: campagne, gloss: קמפיין / מבצע }
+          - { term: communauté, gloss: קהילה }
+          - { term: ville, gloss: עיר }
+          - { term: propre, gloss: נקי }
+          - { term: sale, gloss: מלוכלך }
+          - { term: écologique, gloss: אקולוגי / ידידותי לסביבה }
+          - { term: vert, gloss: ירוק }
+          - { term: plus… que, gloss: יותר… מ־ }
+          - { term: moins… que, gloss: פחות… מ־ }
+          - { term: aussi… que, gloss: …כמו (באותה מידה) }
+          - { term: le / la plus, gloss: הכי / ביותר }
+          - { term: je vais, gloss: אני עומד ל… / אני הולך ל… }
+          - { term: il y aura, gloss: יהיה }
+
+vocabulary:
+  - slug: durabilite
+    title: Durabilité
+    items: *durabilite-words
+
+activities:
+  - slug: durabilite-futur
+    title: 'Le futur proche et le futur simple : je vais recycler, je recyclerai'
+    minutes: 8
+    items:
+      - id: allons
+        type: multipleChoice
+        prompt: Demain, nous ___ trier nos déchets.
+        options:
+          - { text: allons, correct: true }
+          - {
+              text: vont,
+              feedback: '*Vont* est pour *ils / elles*. Avec *nous* : *nous allons* + infinitif.',
+            }
+          - {
+              text: allez,
+              feedback: '*Allez* est pour *vous*. Avec *nous* : *nous allons* + infinitif.',
+            }
+      - id: planter
+        type: multipleChoice
+        prompt: Je vais ___ un arbre dans le jardin.
+        options:
+          - { text: planter, correct: true }
+          - {
+              text: planterai,
+              feedback: 'Après *aller*, le verbe reste à l’infinitif : *je vais planter*.',
+            }
+          - {
+              text: plante,
+              feedback: 'Après *aller*, le verbe reste à l’infinitif : *je vais planter*.',
+            }
+      - id: seront
+        type: fillBlank
+        prompt: Complète avec le verbe *être* au futur simple.
+        text: En 2050, les villes ___ plus propres.
+        blanks: [[seront]]
+      - id: aura
+        type: fillBlank
+        prompt: Complète avec le verbe *avoir* au futur simple.
+        text: Il y ___ plus d’arbres dans les forêts.
+        blanks: [[aura]]
+      - id: formes
+        type: matching
+        prompt: Associe chaque verbe à sa forme au futur simple.
+        pairs:
+          - [recycler (je), je recyclerai]
+          - [réussir (tu), tu réussiras]
+          - [être (ils), ils seront]
+          - [avoir (elle), elle aura]
+          - [utiliser (nous), nous utiliserons]
+      - id: negation
+        type: multipleChoice
+        prompt: Quelle phrase est correcte ?
+        options:
+          - { text: Nous n’allons pas jeter nos déchets par terre., correct: true }
+          - {
+              text: Nous ne allons pas jeter nos déchets par terre.,
+              feedback: 'Devant une voyelle, *ne* devient *n’* : *nous n’allons pas*.',
+            }
+          - {
+              text: Nous n’allons jeter pas nos déchets par terre.,
+              feedback: '*Ne… pas* entoure le verbe *aller* : *nous n’allons pas jeter*.',
+            }
+      - id: futur-proche-regle
+        type: trueFalse
+        prompt: Le futur proche se forme avec le verbe *aller* au présent + l’infinitif.
+        answer: true
+        feedback:
+          correct: 'Bravo ! *Je vais recycler, nous allons planter.*'
+          incorrect: 'Si : *aller* au présent + infinitif. *Je vais recycler, nous allons planter.*'
+      - id: ordre-pollution
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: La pollution diminuera dans les villes.
+
+  - slug: durabilite-comparaisons
+    title: 'Les comparaisons : plus… que, moins… que, le plus…'
+    minutes: 8
+    items:
+      - id: plus-ecologique
+        type: multipleChoice
+        prompt: Le vélo pollue moins. Le vélo est ___ écologique que la voiture.
+        options:
+          - { text: plus, correct: true }
+          - {
+              text: moins,
+              feedback: 'Le vélo pollue moins, donc il est *plus* écologique que la voiture.',
+            }
+          - {
+              text: le plus,
+              feedback: 'Avec *que* et deux éléments, on utilise le comparatif *plus… que*, sans article.',
+            }
+      - id: moins-que
+        type: fillBlank
+        prompt: 'Complète la comparaison (−).'
+        text: Le sac en tissu est ___ polluant ___ le sac en plastique.
+        blanks: [[moins], [que]]
+      - id: aussi
+        type: fillBlank
+        prompt: 'Complète pour dire que les deux villes sont égales (=).'
+        text: Ma ville est ___ bruyante que la tienne.
+        blanks: [[aussi]]
+        wordBank: [plus, moins, aussi]
+      - id: le-moins
+        type: multipleChoice
+        prompt: La voiture est le moyen de transport ___ écologique.
+        options:
+          - { text: le moins, correct: true }
+          - {
+              text: la moins,
+              feedback: 'L’article s’accorde avec *moyen* (masculin) : *le moyen de transport le moins écologique*.',
+            }
+          - {
+              text: moins,
+              feedback: 'Pour un superlatif, on répète l’article : *le moyen de transport le moins écologique*.',
+            }
+      - id: meilleur
+        type: trueFalse
+        prompt: 'On dit « Notre produit est plus bon pour la planète. »'
+        answer: false
+        feedback:
+          correct: 'Bravo ! On ne dit pas « plus bon », on dit *meilleur* : *Notre produit est meilleur pour la planète.*'
+          incorrect: 'On ne dit pas « plus bon », on dit *meilleur* : *Notre produit est meilleur pour la planète.*'
+      - id: meme-sens
+        type: matching
+        prompt: Associe les phrases qui ont le même sens.
+        pairs:
+          - [Lyon est plus propre que Marseille., Marseille est moins propre que Lyon.]
+          - [Le vélo est moins polluant que la voiture., La voiture est plus polluante que le vélo.]
+          - [Le bus est plus rapide que le vélo., Le vélo est moins rapide que le bus.]
+          - [Tel Aviv est aussi moderne que Paris., Paris est aussi moderne que Tel Aviv.]
+      - id: plus-de
+        type: multipleChoice
+        prompt: Mon partenaire recycle ___ plastique que de papier.
+        options:
+          - { text: plus de, correct: true }
+          - {
+              text: plus,
+              feedback: 'Avec un nom, on dit *plus de* : *plus de plastique que de papier*.',
+            }
+          - {
+              text: plus du,
+              feedback: 'Après *plus*, on dit *de* (pas *du*) : *plus de plastique*.',
+            }
+      - id: ordre-sac
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Notre sac est plus écologique que le vôtre.

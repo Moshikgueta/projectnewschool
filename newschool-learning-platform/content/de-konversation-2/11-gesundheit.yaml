@@ -1,0 +1,637 @@
+# Cycle "Gesundheit", converted from the German conversational digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-konversation-2
+slug: gesundheit
+title: Gesundheit
+goal: Im Perfekt über Gesundheitsprobleme erzählen und mit Modalverben Ratschläge geben.
+position: 11
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Perfekt" and "Ratschläge mit Modalverben") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary, the activity examples and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Activity 4: the board template "Am [Tag] habe ich ___" does not work for
+    "spazieren gehen" from its own word bank (Perfekt with sein: "bin spazieren
+    gegangen"), and "ausruhen" is reflexive. The template is now "Am ___ habe / bin
+    ich ___", and the word bank gives the Partizip II forms (bin spazieren gegangen,
+    habe geschlafen, habe mich ausgeruht, habe gesprochen, habe gekocht, habe gelesen,
+    habe nicht gearbeitet, habe Nein gesagt).
+  - >-
+    Summary, Perfekt: the example "Warst du beim Arzt?" is Präteritum, not Perfekt.
+    A rule was added: with sein and haben we usually use the Präteritum (war, hatte),
+    as in the warm-up and Activity 2 ("Wann warst du …?", "Hattest du sofort
+    Schmerzen?"). The sein list "gehen, kommen, fallen, werden, bleiben" now also
+    names stürzen and ausrutschen (from the activities) and says bleiben and sein take
+    sein too, although they are not movement.
+  - >-
+    Summary, Modalverben: the notebook lists "sollten" as the advice form. The
+    summary now says that "solltest / sollte" and "könntest / könnte" are the
+    Konjunktiv II (softer, polite advice), and gives a table (ich sollte, du solltest,
+    er / sie sollte; ich kann, du kannst …; ich muss, du musst …). The rule "no zu
+    after a modal verb" and "no -t for er / sie / es" is kept.
+  - >-
+    Corrections: Activity 2 "Ich habe gestern zu viel ungesund gegessen" → "Ich habe
+    gestern zu viel Ungesundes gegessen"; "weh tut" → "wehtut" (twice, the notebook
+    also writes "wehgetan"); "Student A / B" → "Schüler A / B" (English word); the
+    final "Gute Besserung!" closing is kept. In the role play the doctor says "du"; in
+    real life a doctor says "Sie". This is kept for A2 but mentioned in a teacher note.
+  - >-
+    Warm-up and introduction: the notebook gives no answer frames for the warm-up
+    questions; short frames were added from the cycle's structures. Please check.
+    Activity 1 has no example in the notebook; a short example dialogue was built from
+    its phase sentences. The answer boxes of Activities 1–3 are new; two of the
+    Activity 3 scenarios ("Dein Freund schläft schlecht", "Deine Freundin ist sehr
+    gestresst") come from the teacher model and the Mori prompt 4.
+  - >-
+    The summary and the Mori prompts are in Hebrew in the notebook. The rules are now
+    in simple German (ruleSummary) and a short Hebrew explanation is kept as a Hebrew
+    text block. The five Mori prompts are translated into German messages; please check
+    the wording.
+  - >-
+    Vocabulary: nouns now carry their article. The Perfekt verbs were listed as bare
+    participles with a 1st person gloss ("geschlafen – ישנתי"); they are now full forms
+    ("ich habe geschlafen – ישנתי", "ich bin spazieren gegangen – יצאתי להליכה").
+    "krank gewesen" → "ich war krank / ich bin krank gewesen"; "gesund geworden –
+    הפכתי לבריא" → "ich bin gesund geworden – הבראתי"; "kann / kannst – יכול" → "יכול /
+    יכולה"; "Pass auf dich auf! – תשמור על עצמך" → "שמור / שמרי על עצמך!". Please confirm.
+  - >-
+    Times given as ranges are recorded as the upper value (Activity 3 execution 10–15
+    → 15, Activity 4 writing 8–10 → 10). The Quizlet link lost its "?new" parameter.
+    The "Antwort von Schüler 1/2/3" lines are replaced by the answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: gesundheit-unterricht
+    title: 'Unterricht: Gesundheit'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Gesundheit
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Perfekt
+            description: '*haben / sein* + Partizip II: *Ich habe Tee getrunken. Ich bin gestürzt.*'
+          - name: Ratschläge mit Modalverben
+            description: '*Du solltest … / Vielleicht kannst du … / Du musst …*'
+      - id: quizlet
+        type: externalLink
+        label: Gesundheit auf Quizlet
+        url: https://quizlet.com/br/1131214582/gesundheit-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Eine gesunde Gewohnheit, die ich habe, ist ___.
+        example: 'Ich bin Anna. Eine gesunde Gewohnheit, die ich habe, ist: Ich gehe jeden Abend früh schlafen.'
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Wie kümmerst du dich um deine Gesundheit?
+            frame: Ich esse … / Ich schlafe … / Ich mache …
+          - question: Wann warst du das letzte Mal beim Arzt?
+            frame: Ich war … beim Arzt, weil …
+          - question: 'Was ist dir wichtiger: gesunde Ernährung oder Bewegung? Warum?'
+            frame: … ist mir wichtiger, weil …
+          - question: Treibst du Sport? Welche Art? Wie oft pro Woche?
+            frame: Ich mache … / Ich gehe … Mal pro Woche …
+          - question: Welchen Rat würdest du jemandem geben, der gesünder leben möchte?
+            frame: Du solltest … / Vielleicht kannst du …
+          - question: Was machst du, wenn du dich krank fühlst?
+            frame: Wenn ich mich krank fühle, …
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Beim Arzt – im Wartezimmer'
+        skills: [Ratschläge mit Modalverben, Perfekt]
+        steps:
+          - 'Ihr seid im Wartezimmer beim Arzt. Jeder denkt sich ein einfaches Gesundheitsproblem aus: eine Erkältung, Halsschmerzen, Kopfschmerzen, Rückenschmerzen.'
+          - 'Ein Schüler / eine Schülerin beginnt: *Ich bin hier, weil ich ___ habe.*'
+          - 'Die anderen fragen: *Warum hast du das? Wann hat es angefangen? Was machst du zu Hause?*'
+          - Die anderen geben einfache Ratschläge und gute Wünsche.
+          - 'Der erste Schüler fragt den nächsten: *Und du? Warum bist du hier?* Es geht weiter, bis alle gesprochen haben.'
+        example: |-
+          *A: Ich bin hier, weil ich Halsschmerzen habe.*
+          *B: Wann hat es angefangen?*
+          *A: Gestern Abend.*
+          *B: Du solltest viel Wasser trinken. Gute Besserung!*
+      - id: act1-advice
+        type: callout
+        tone: info
+        title: Ratschläge und gute Wünsche
+        text: |-
+          **Ratschläge:** *Du solltest mehr schlafen. / Du solltest viel Wasser trinken. / Du könntest Tee trinken. / Du solltest heute zu Hause bleiben. / Du musst deine Medikamente nehmen. / Vielleicht solltest du dein Handy nachts ausschalten.*
+          **Gute Wünsche:** *Gute Besserung! / Ich hoffe, es geht dir bald besser. / Pass auf dich auf!*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Im Wartezimmer
+        items:
+          - question: Ich bin hier, weil ich ___ habe.
+          - question: Mein Rat für meinen Partner / meine Partnerin
+            frame: Du solltest … / Du könntest … / Du musst …
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Beim Arzt – Arzt und Patient'
+        skills: [Perfekt, Ratschläge mit Modalverben]
+        steps:
+          - 'Arbeitet zu zweit: Schüler A ist der Arzt, Schüler B ist der Patient.'
+          - 'Der Patient denkt an ein Problem in der Vergangenheit: *Ich bin gestern gestürzt und habe mir das Knie verletzt. / Ich habe gestern zu viel Ungesundes gegessen. / Ich habe Fußball gespielt und mir den Knöchel verstaucht.*'
+          - 'Der Arzt fragt: *Wann ist es passiert? Wie ist es passiert? Was hast du danach gemacht? Hast du Medikamente genommen? Warst du im Krankenhaus?*'
+          - Der Patient antwortet im Perfekt. Der Arzt gibt Ratschläge mit Modalverben.
+          - 'Zum Schluss: *Gute Besserung! Pass auf dich auf!* Dann tauscht ihr die Rollen.'
+        example: |-
+          **Patient:** *Hallo, Doktor. Gestern bin ich zu Hause gestürzt und habe mir den Arm verletzt.*
+          **Arzt:** *Wann bist du gestürzt?*
+          **Patient:** *Ich bin gestern Nachmittag gestürzt.*
+          **Arzt:** *Wie bist du gestürzt?*
+          **Patient:** *Ich bin auf der Treppe ausgerutscht.*
+          **Arzt:** *Hattest du sofort Schmerzen?*
+          **Patient:** *Ja, es hat sehr wehgetan.*
+          **Arzt:** *Hast du etwas dagegen gemacht?*
+          **Patient:** *Ich habe Eis draufgelegt.*
+          **Arzt:** *Du solltest deinen Arm ausruhen. Du könntest noch einmal Eis drauflegen. Wenn es morgen noch wehtut, musst du zum Spezialisten gehen.*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Mein Problem
+        items:
+          - question: Was ist passiert?
+            frame: Gestern bin ich … / Gestern habe ich …
+          - question: Was hast du danach gemacht?
+            frame: Danach habe ich …
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Freundliche Ratschläge'
+        skills: [Ratschläge mit Modalverben]
+        minutes: 21
+        steps:
+          - 'Die Lehrkraft zeigt ein Szenario, zum Beispiel: *Dein Freund schläft schlecht.*'
+          - 'Gib einen Rat und einen Grund: *Du solltest … / Vielleicht kannst du …* + *Das ist gut, weil …*'
+          - '**Variante A (Plenum):** Jeder Schüler sagt einen anderen Rat und einen Grund. Nicht dieselbe Idee wiederholen!'
+          - '**Variante B (Paare):** Schüler A liest ein Szenario, Schüler B gibt Rat und Grund. Dann wechselt ihr.'
+          - 'Nach jeder Antwort stellt der Zuhörer eine kurze Frage: *Warum ist das gut? Wie oft soll ich das machen? Wann soll ich das machen? Was noch?*'
+        example: |-
+          *Dein Freund schläft schlecht.*
+          *Du solltest vor dem Schlafengehen ein Buch lesen. Das ist gut, weil du dich entspannst.*
+          *Vielleicht kannst du abends keinen Kaffee trinken. Das ist gut, weil du dann leichter einschläfst.*
+          *A: Du solltest weniger Zucker essen. Das ist gut, weil du dich besser fühlst.*
+          *B: Wie oft isst du normalerweise Zucker?*
+      - id: act3-starters
+        type: callout
+        tone: info
+        title: Satzstarter
+        text: |-
+          **Du solltest …** + Infinitiv = normaler, freundlicher Rat
+          **Vielleicht kannst du …** + Infinitiv = weicher, höflicher Vorschlag
+          **Das ist gut, weil …** = Grund
+          **Ratschläge:** *Du solltest mehr … / Vielleicht kannst du weniger … / Du solltest nicht so viel … / Vielleicht kannst du früher …*
+          **Gründe:** *… weil du dann besser schläfst. / … weil das gesünder ist. / … weil du weniger Stress hast. / … weil du mehr Energie hast. / … weil dein Kopf dann nicht wehtut.*
+      - id: act3-scenarios
+        type: discussionQuestions
+        title: Rat + Grund
+        items:
+          - question: Dein Freund trinkt nie Wasser.
+            frame: Du solltest mehr Wasser trinken. Das ist gut, weil dein Körper es braucht.
+          - question: Dein Freund ist nachts immer am Handy.
+            frame: Vielleicht kannst du dein Handy abends weglegen. Das ist gut, weil du dann besser schlafen kannst.
+          - question: Dein Freund schläft schlecht.
+          - question: Deine Freundin ist sehr gestresst.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Meine gesunde vergangene Woche'
+        skills: [Perfekt]
+        minutes: 17
+        steps:
+          - 'Gesundheit ist nicht nur Sport oder Essen. Gesundheit ist auch: ausruhen, mit Freunden sprechen, Nein sagen, Zeit für sich haben.'
+          - Denk an die letzte Woche. Jeden Tag hast du etwas Kleines für deine Gesundheit gemacht.
+          - 'Schreib einen Satz pro Tag: *Am ___ habe / bin ich ___. Ich habe mich ___ gefühlt, weil ___.*'
+          - 'Teilt 1 oder 2 Sätze in der Gruppe oder zu zweit. War das gut für deinen Körper, deinen Geist oder für beides?'
+        example: |-
+          *Am Montag habe ich früh geschlafen. Ich habe mich ruhig gefühlt, weil ich genug Zeit hatte.*
+          *Am Mittwoch habe ich einen Spaziergang gemacht. Ich habe mich besser gefühlt, weil ich draußen war.*
+          *Am Freitag habe ich mit Freunden gesprochen. Ich war glücklich, weil ich nicht allein war.*
+      - id: act4-words
+        type: wordBank
+        words:
+          - bin spazieren gegangen
+          - habe geschlafen
+          - habe mich ausgeruht
+          - habe gesprochen
+          - habe gekocht
+          - habe gelesen
+          - habe nicht gearbeitet
+          - habe Nein gesagt
+          - ruhig
+          - glücklich
+          - müde
+          - entspannt
+          - zufrieden
+          - besser
+      - id: act4-week
+        type: discussionQuestions
+        title: Meine Woche
+        items:
+          - question: Am Sonntag habe / bin ich ___. Ich habe mich ___ gefühlt, weil ___.
+          - question: Am Montag habe / bin ich ___. Ich habe mich ___ gefühlt, weil ___.
+          - question: Am Dienstag habe / bin ich ___. Ich habe mich ___ gefühlt, weil ___.
+          - question: Am Mittwoch habe / bin ich ___. Ich habe mich ___ gefühlt, weil ___.
+          - question: Am Donnerstag habe / bin ich ___. Ich habe mich ___ gefühlt, weil ___.
+          - question: Am Freitag habe / bin ich ___. Ich habe mich ___ gefühlt, weil ___.
+          - question: Am Samstag habe / bin ich ___. Ich habe mich ___ gefühlt, weil ___.
+          - question: War das gut für deinen Körper, deinen Geist oder für beides?
+            frame: Für meinen Körper. / Für meinen Geist. / Für beides.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Perfekt** (Aktivitäten 2 und 4) und
+          **Ratschläge mit Modalverben** (Aktivitäten 1, 2 und 3). Aktivität 2 verbindet
+          beide: Was ist passiert (Perfekt)? Was soll ich jetzt tun (Modalverben)?
+      - id: n-intro
+        anchor: intro
+        text: Gib zuerst dein eigenes Beispiel, dann ist jeder Schüler dran.
+      - id: n-warmup
+        anchor: warmup
+        text: Stell jedem Schüler mindestens zwei Fragen. Die Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Ziel: über ein einfaches Gesundheitsproblem sprechen, Fragen stellen und
+          reagieren. Schreib die Ratschläge und die guten Wünsche an die Tafel. Die
+          Aktivität geht im Kreis weiter, bis alle gesprochen haben.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Schreib die hilfreichen Fragen an die Tafel. Der Patient antwortet im
+          **Perfekt**, der Arzt gibt Ratschläge mit **Modalverben**. Hinweis: Im echten
+          Leben sagt ein Arzt *Sie* (*Wann sind Sie gestürzt? Sie sollten …*). Im
+          Rollenspiel bleiben wir bei *du*; mit starken Gruppen kannst du *Sie* üben.
+      - id: n-act3
+        anchor: act3
+        minutes: 21
+        text: >-
+          Tafel vorbereiten: 2 Minuten (die drei Bausteine *Du solltest … / Vielleicht
+          kannst du … / Das ist gut, weil …* mit 2–3 Beispielen). Mini-Erklärung: 1
+          Minute; nach *solltest / kannst* kommt der Infinitiv am Ende, ohne *zu*.
+          Lehrkraft modelliert: 2 Minuten (die zwei Modelle zum Szenario *Dein Freund
+          schläft schlecht*). Aktivität erklären: 1 Minute. Durchführung: 15 Minuten. Bei
+          Variante B gibst du jedem Paar 3–5 Szenarien. Korrektur sofort und kurz: sagt
+          jemand *Du solltest zu trinken Wasser*, modellierst du: *Du solltest Wasser
+          trinken.* Biete auch ein „Upgrade“ an: *Das ist gut, weil du dich entspannst.* →
+          *Das ist gut, weil du dann besser schlafen kannst.*
+      - id: n-act4
+        anchor: act4
+        minutes: 17
+        text: >-
+          Einführung: 2 Minuten, in einfachem A2-Deutsch, mit 2–3 mündlichen Beispielen.
+          Schreibaufgabe: 10 Minuten; schreib die Struktur und die Wortbank an die Tafel
+          und erkläre: *habe / bin* + Partizip II = Vergangenheit, *gefühlt* = Gefühl,
+          *weil* = Grund. Teilen (optional): 5 Minuten.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: gesundheit-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-perfekt
+        type: ruleSummary
+        skill: Perfekt
+        rules:
+          - text: 'Mit dem **Perfekt** sprechen wir über Dinge, die in der Vergangenheit passiert und fertig sind: **haben / sein** + **Partizip II**. Das Partizip II steht **am Ende**.'
+            examples:
+              [
+                Ich habe gegessen.,
+                Ich habe mich besser gefühlt.,
+                Ich bin gestürzt.,
+                Ich bin zum Arzt gegangen.,
+              ]
+          - text: 'Verben der **Bewegung** und der **Veränderung** bilden das Perfekt mit **sein**: *gehen, kommen, fallen, stürzen, ausrutschen, werden*. Auch *bleiben* und *sein* nehmen *sein*.'
+            examples: [Ich bin auf der Treppe ausgerutscht., Ich bin gesund geworden.]
+          - text: 'Die meisten anderen Verben bilden das Perfekt mit **haben**.'
+            examples: [Ich habe Tee getrunken., Ich habe mir das Knie verletzt.]
+          - text: 'Bei **sein** und **haben** benutzen wir meistens das Präteritum: *war, hatte*.'
+            examples: [Warst du beim Arzt?, Hattest du sofort Schmerzen?, Ich war krank.]
+          - text: 'Verneinung mit **nicht**:'
+            examples: [Ich habe mich nicht gut gefühlt.]
+      - id: rules-modal
+        type: ruleSummary
+        skill: Ratschläge mit Modalverben
+        rules:
+          - text: '**solltest / sollte** = Rat. **kannst / könntest** = weicher Vorschlag. **musst** = starke Notwendigkeit.'
+            examples:
+              [
+                Du solltest mehr schlafen.,
+                Vielleicht kannst du Tee trinken.,
+                Du musst zum Arzt gehen.,
+              ]
+          - text: '*sollte* und *könnte* sind der **Konjunktiv II** von *sollen* und *können*. Sie klingen höflich und freundlich.'
+            examples: [Du könntest noch einmal Eis drauflegen.]
+          - text: 'Nach dem Modalverb kommt der **Infinitiv am Ende**, ohne *zu*.'
+            examples:
+              [
+                Du solltest Wasser trinken. (nicht *Du solltest zu trinken Wasser*),
+                Er muss arbeiten.,
+              ]
+          - text: 'Bei Modalverben hat die *er / sie / es*-Form **keine Endung -t**.'
+            examples: [Er sollte schlafen., Sie muss sich ausruhen.]
+          - text: 'Rat + Grund mit **weil**: Das Verb steht nach *weil* am Ende.'
+            examples:
+              - Du solltest dich ausruhen. Das ist gut, weil dein Körper Zeit braucht.
+      - id: modal-table
+        type: table
+        caption: Modalverben für Ratschläge
+        header: [Person, sollen (Konj. II), können, können (Konj. II), müssen]
+        rows:
+          - [ich, sollte, kann, könnte, muss]
+          - [du, solltest, kannst, könntest, musst]
+          - [er / sie / es, sollte, kann, könnte, muss]
+          - [wir / sie / Sie, sollten, können, könnten, müssen]
+      - id: link
+        type: callout
+        tone: info
+        title: Beide Themen zusammen
+        text: 'Was ist passiert (Perfekt)? Was solltest du jetzt tun (Modalverb)? *Ich bin gestern gestürzt. – Du solltest dich ausruhen, weil dein Körper Zeit braucht.*'
+      - id: summary-he
+        type: text
+        lang: he
+        text: >-
+          Perfekt = עבר: haben / sein + Partizip II, וה־Partizip II בסוף המשפט. פעלים של
+          תנועה ושינוי מצב (gehen, kommen, fallen, stürzen, werden) וגם bleiben ו־sein
+          באים עם sein; רוב הפעלים האחרים עם haben. עם sein ו־haben עצמם אומרים בדרך כלל
+          war / hatte. פעלים מודאליים: solltest – עצה, kannst / könntest – הצעה רכה, musst –
+          צורך חזק. אחרי פועל מודאלי בא פועל בצורת המקור בסוף המשפט, בלי zu, ובגוף er / sie
+          / es אין סיומת t־ (er muss, er sollte).
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die zwei Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: gesundheit-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere eine Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Nachricht 1: Vergangenheit und Gesundheit'
+        message: Hallo Mori! Stell mir bitte Fragen über meine Gesundheit in der letzten Woche, damit ich im Perfekt antworten kann. Bitte korrigiere mich, wenn ich einen Fehler mache.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Nachricht 2: Spiel „Wer war krank?“'
+        message: Mori, lass uns ein Spiel spielen! Du denkst an ein Gesundheitsproblem, das du „früher“ hattest, und ich stelle dir Fragen auf Deutsch, um herauszufinden, was passiert ist. Danach denke ich an ein Problem, und du fragst mich.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Nachricht 3: Rollenspiel beim Arzt'
+        message: Mori, lass uns ein Rollenspiel machen. Du bist der Arzt, und ich bin der Patient. Frag mich, was mir passiert ist, und ich antworte im Perfekt. Danach gibst du mir Ratschläge mit solltest, kannst und musst. Bitte korrigiere mich sofort.
+      - id: mori-4
+        type: aiTutorPrompt
+        title: 'Nachricht 4: Ratschläge für einen Freund'
+        message: 'Mori, gib mir Situationen von einem Freund mit einem Gesundheitsproblem (zum Beispiel: Er schläft schlecht, er isst zu viel Süßes, er ist sehr gestresst). Ich gebe Ratschläge mit „Du solltest …“ oder „Vielleicht kannst du …“, und du prüfst, ob meine Grammatik richtig ist.'
+      - id: mori-5
+        type: aiTutorPrompt
+        title: 'Nachricht 5: Meine gesunde Woche'
+        message: 'Mori, frag mich nach meiner letzten Woche. Ich antworte mit dieser Struktur: „Am … habe ich … Ich habe mich … gefühlt, weil …“. Bitte korrigiere jeden Fehler und zeig mir eine bessere Version.'
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: gesundheit-uebung
+    book: workbook
+    title: 'Übung: Gesundheit'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-perfekt
+        type: activity
+        activity: gesundheit-perfekt
+      - id: ex-ratschlaege
+        type: activity
+        activity: gesundheit-ratschlaege
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: gesundheit-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter zur Gesundheit
+        glossLang: he
+        link: https://quizlet.com/br/1131214582/gesundheit-flash-cards/
+        items: &gesundheit-words
+          - { term: die Gesundheit, gloss: בריאות }
+          - { term: gesund, gloss: בריא }
+          - { term: die Gewohnheit, gloss: הרגל }
+          - { term: der Arzt, gloss: רופא }
+          - { term: der Termin, gloss: תור }
+          - { term: das Krankenhaus, gloss: בית חולים }
+          - { term: das Medikament, gloss: תרופה }
+          - { term: der Schmerz / die Schmerzen, gloss: כאב / כאבים }
+          - { term: die Erkältung, gloss: הצטננות }
+          - { term: die Halsschmerzen (Pl.), gloss: כאב גרון }
+          - { term: die Kopfschmerzen (Pl.), gloss: כאב ראש }
+          - { term: die Rückenschmerzen (Pl.), gloss: כאב גב }
+          - { term: ich habe geschlafen, gloss: ישנתי }
+          - { term: ich habe mich ausgeruht, gloss: נחתי }
+          - { term: ich habe getrunken, gloss: שתיתי }
+          - { term: ich habe gegessen, gloss: אכלתי }
+          - { term: ich bin spazieren gegangen, gloss: יצאתי להליכה }
+          - { term: ich habe mich … gefühlt, gloss: הרגשתי … }
+          - { term: ich war krank / ich bin krank gewesen, gloss: הייתי חולה }
+          - { term: ich habe mich besser gefühlt, gloss: הרגשתי יותר טוב }
+          - { term: ich bin gestürzt, gloss: נפלתי }
+          - { term: ich habe mich verletzt, gloss: נפצעתי }
+          - { term: ich bin gesund geworden, gloss: הבראתי }
+          - { term: ruhig, gloss: רגוע }
+          - { term: glücklich, gloss: שמח }
+          - { term: gestresst, gloss: לחוץ }
+          - { term: gestern, gloss: אתמול }
+          - { term: letzte Woche, gloss: בשבוע שעבר }
+          - { term: sollte / solltest, gloss: כדאי (עצה) }
+          - { term: kann / kannst, gloss: יכול / יכולה }
+          - { term: muss / musst, gloss: חייב / חייבת }
+          - { term: vielleicht, gloss: אולי }
+          - { term: weil, gloss: כי }
+          - { term: besser, gloss: יותר טוב }
+          - { term: Gute Besserung!, gloss: החלמה מהירה! }
+          - { term: Pass auf dich auf!, gloss: שמור / שמרי על עצמך! }
+
+vocabulary:
+  - slug: gesundheit
+    title: Gesundheit
+    items: *gesundheit-words
+
+activities:
+  - slug: gesundheit-perfekt
+    title: 'Perfekt: Ich habe … / Ich bin …'
+    minutes: 8
+    items:
+      - id: bin-gestuerzt
+        type: multipleChoice
+        prompt: Gestern ___ ich zu Hause gestürzt.
+        options:
+          - { text: bin, correct: true }
+          - {
+              text: habe,
+              feedback: '*stürzen* ist eine Bewegung: Das Perfekt bildet man mit *sein*. *Ich bin gestürzt.*',
+            }
+          - {
+              text: ist,
+              feedback: '*ist* gehört zu *er / sie / es*. Mit *ich* sagen wir *ich bin*: *Ich bin gestürzt.*',
+            }
+      - id: habe-getrunken
+        type: multipleChoice
+        prompt: Ich ___ viel Wasser getrunken.
+        options:
+          - { text: habe, correct: true }
+          - {
+              text: bin,
+              feedback: '*trinken* ist keine Bewegung: Das Perfekt bildet man mit *haben*. *Ich habe getrunken.*',
+            }
+          - {
+              text: hat,
+              feedback: '*hat* gehört zu *er / sie / es*. Mit *ich* sagen wir *ich habe*.',
+            }
+      - id: gegangen
+        type: fillBlank
+        prompt: Ergänze das Partizip II von *gehen*.
+        text: Ich bin zum Arzt ___.
+        blanks: [[gegangen]]
+      - id: partizipien
+        type: matching
+        prompt: Welches Partizip II passt?
+        pairs:
+          - [schlafen, geschlafen]
+          - [trinken, getrunken]
+          - [essen, gegessen]
+          - [sprechen, gesprochen]
+          - [fühlen, gefühlt]
+      - id: partizip-ende
+        type: trueFalse
+        prompt: 'Im Perfekt steht das Partizip II meistens am Ende: *Ich habe gestern viel geschlafen.*'
+        answer: true
+        feedback:
+          correct: Richtig! *habe* an Position 2, *geschlafen* am Ende.
+          incorrect: 'Doch: Das Partizip II steht am Ende. *Ich habe gestern viel geschlafen.*'
+      - id: besser-gefuehlt
+        type: fillBlank
+        prompt: Ergänze *haben* und das Partizip II von *fühlen*.
+        text: Am Montag ___ ich mich besser ___.
+        blanks: [[habe], [gefühlt, gefuehlt]]
+      - id: nach-hause
+        type: trueFalse
+        prompt: 'Der Satz *Ich habe nach Hause gegangen.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! *gehen* ist eine Bewegung: *Ich bin nach Hause gegangen.*'
+          incorrect: '*gehen* ist eine Bewegung und bildet das Perfekt mit *sein*: *Ich bin nach Hause gegangen.*'
+      - id: ordne-knie
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Ich habe mir das Knie verletzt.
+
+  - slug: gesundheit-ratschlaege
+    title: 'Ratschläge: Du solltest …'
+    minutes: 8
+    items:
+      - id: solltest
+        type: multipleChoice
+        prompt: Du ___ mehr schlafen.
+        options:
+          - { text: solltest, correct: true }
+          - {
+              text: sollte,
+              feedback: '*sollte* gehört zu *ich* und *er / sie*. Mit *du* sagen wir *du solltest*.',
+            }
+          - {
+              text: sollten,
+              feedback: '*sollten* gehört zu *wir* und *sie / Sie*. Mit *du* sagen wir *du solltest*.',
+            }
+      - id: infinitiv-ende
+        type: multipleChoice
+        prompt: Welcher Rat ist richtig?
+        options:
+          - { text: Du solltest Wasser trinken., correct: true }
+          - {
+              text: Du solltest zu trinken Wasser.,
+              feedback: 'Nach dem Modalverb kommt kein *zu*, und der Infinitiv steht am Ende: *Du solltest Wasser trinken.*',
+            }
+          - {
+              text: Du solltest trinken Wasser.,
+              feedback: 'Der Infinitiv steht am Ende: *Du solltest Wasser trinken.*',
+            }
+      - id: kannst
+        type: fillBlank
+        prompt: Ergänze eine Form von *können*.
+        text: Vielleicht ___ du Tee trinken.
+        blanks: [[kannst, könntest, koenntest]]
+      - id: keine-endung
+        type: trueFalse
+        prompt: 'Bei Modalverben hat die *er / sie / es*-Form keine Endung *-t*: *er muss, sie sollte*.'
+        answer: true
+        feedback:
+          correct: Richtig! *er muss*, nicht *er musst*.
+          incorrect: 'Doch: *er muss, er kann, sie sollte*. Die *er / sie / es*-Form hat kein *-t*.'
+      - id: problem-rat
+        type: matching
+        prompt: Welcher Rat passt zu welchem Problem?
+        pairs:
+          - [Ich trinke nie Wasser., Du solltest mehr Wasser trinken.]
+          - [Ich bin nachts immer am Handy., Vielleicht kannst du dein Handy abends weglegen.]
+          - [Ich habe Halsschmerzen., Du könntest Tee trinken.]
+          - [Ich habe mir den Arm verletzt., Du solltest deinen Arm ausruhen.]
+      - id: weil
+        type: multipleChoice
+        prompt: 'Du solltest früher ins Bett gehen. Das ist gut, weil ___.'
+        options:
+          - { text: du dann besser schläfst, correct: true }
+          - {
+              text: du schläfst dann besser,
+              feedback: 'Nach *weil* steht das Verb am Ende: *weil du dann besser schläfst*.',
+            }
+          - {
+              text: dann du besser schläfst,
+              feedback: 'Nach *weil* kommt zuerst das Subjekt *du*, das Verb steht am Ende: *weil du dann besser schläfst*.',
+            }
+      - id: musst
+        type: fillBlank
+        prompt: 'Ergänze *müssen* (starke Notwendigkeit).'
+        text: Wenn es morgen noch wehtut, ___ du zum Arzt gehen.
+        blanks: [[musst]]
+      - id: ordne-wasser
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Du solltest mehr Wasser trinken.

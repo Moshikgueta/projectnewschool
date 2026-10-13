@@ -1,0 +1,715 @@
+# Cycle "Una lengua, muchos mundos", converted from the Spanish level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-3
+slug: una-lengua-muchos-mundos
+title: Una lengua, muchos mundos
+goal: Hacer preguntas sobre experiencias en pasado y comparar culturas y acentos del mundo hispanohablante.
+position: 18
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Preguntas y experiencias en pasado" and "Comparar y
+    opinar") are NEW: the notebook has no self-study exercises. They were written from
+    the cycle's summary rules, its activity examples and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Skills: the notebook lists four (questions in the past, comparing cultures,
+    recognising accents/expressions/social norms, talking respectfully about language
+    differences). The platform template has two, so they are grouped as "Preguntas y
+    experiencias en pasado" (summary points 1, 2 and 6) and "Comparar y opinar"
+    (summary points 3, 4 and 5). Please confirm.
+  - >-
+    The grammar summary was written in Hebrew; it is translated into Spanish (the
+    language of all student-facing text). Grammar fix: "Nunca había escuchado esa
+    expresión" was listed as a pretérito perfecto example, but it is pluscuamperfecto
+    (había + participio). It is now in its own rule. The rule "haber + participio" now
+    says to conjugate haber (he, has, ha, hemos, han); a table of haber and the
+    irregular participles visto, hecho, dicho, escrito were added. Summary point 2 had
+    no rule: added "use the indefinido with a specific past time (ayer, el año
+    pasado)". Comparisons: no example of "tan… como" was given; one was added, plus the
+    irregular forms mejor / peor. Example "El acento colombiano es más claro que el
+    chileno" → "Para mí, el acento colombiano es más claro que el chileno" (an opinion,
+    not a fact).
+  - >-
+    Corrections: English "Stage" → "Paso" in every activity; "brochure simple" →
+    "folleto sencillo"; "Breakout Rooms" → "grupos pequeños"; "¿Habías conocido esa
+    expresión antes?" → "¿Habías escuchado esa expresión antes?"; garbled emoji
+    characters in the video title were removed; stray "s" in the Hebrew gloss of
+    "Perspectiva" (נקודת מבטs) removed. The warm-up example "guagua" now says what it
+    means (autobús, in Cuba, Puerto Rico and the Canary Islands) in a teacher note.
+  - >-
+    Left out: the lesson-slides link (gamma.app, not allowed; it also points to a
+    different lesson, "Familia, generaciones y relaciones"); mentioned in a teacher note.
+    The YouTube link is kept without "&t=44s"; the teacher note says to start at 0:44.
+    The Quizlet link is kept without its "?new" parameter.
+  - >-
+    Times: only Actividad 5 has times; ranges recorded as the upper value (3–5 → 5, 5–7
+    → 7, 10–12 → 12). Activities 1–4 have no times and the notebook gives no plan for
+    choosing among them (Activities 2 and 3 are very similar: Agencia de viajes and
+    Elige tu destino; Activity 3 looks like a simpler version). The plan note suggests
+    choosing one of them. Warm-up frames were added; the "Respuesta del estudiante
+    1/2/3" lines are replaced by the answer boxes.
+  - >-
+    The written homework ("Tarea clásica", Parts A, B and C) is kept in the homework
+    section as answerable questions, before the Mori message.
+  - >-
+    Vocabulary: glosses are as in the source except "Perspectiva" (typo fixed). Many
+    words are abstract (Ambigüedad, Connotación, Razonamiento) and do not appear in the
+    lesson; kept as given. Please confirm the glosses.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: una-lengua-muchos-mundos-clase
+    title: 'Clase: Una lengua, muchos mundos'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Una lengua, muchos mundos
+      - id: subtitle
+        type: text
+        text: Culturas hispanohablantes, acentos y formas de hablar en diferentes países.
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Preguntas y experiencias en pasado
+            description: '*¿Has visto…? ¿Has hablado…? Vi un documental. Nunca había escuchado…*'
+          - name: Comparar y opinar
+            description: '*más… que, menos… que, tan… como; Creo que…, Estoy de acuerdo porque…*'
+      - id: quizlet
+        type: externalLink
+        label: Una lengua, muchos mundos en Quizlet
+        url: https://quizlet.com/br/1177253962/una-lengua-muchos-mundos-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de presentación
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. El español que más me gusta / más me cuesta es ___ porque ___.
+        example: Soy Dana. El español que más me cuesta es el chileno porque hablan muy rápido.
+      - id: intro-questions
+        type: discussionQuestions
+        title: Después de cada estudiante, otro estudiante hace una pregunta
+        answerable: false
+        items:
+          - question: ¿Por qué te cuesta ese acento?
+          - question: ¿Lo has escuchado en la vida real o en series?
+          - question: ¿Te gustaría aprenderlo mejor?
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Has hablado alguna vez con una persona de otro país hispanohablante? ¿De dónde era?
+            frame: 'Sí, hablé con una persona de ___. Era de ___ y ___. (Ejemplo: Sí, hablé con una persona de México. Era de Guadalajara y hablaba muy rápido.)'
+          - question: ¿Qué acento en español te parece más fácil de entender? ¿Por qué?
+            frame: 'El acento ___ me parece más fácil porque ___. (Ejemplo: El acento colombiano me parece más fácil porque hablan claro y más despacio.)'
+          - question: ¿Has visto una serie, película o video de España, México, Argentina, Colombia o Chile? ¿Cómo sonaba el español?
+            frame: 'Sí, vi una serie ___. El español sonaba ___. (Ejemplo: Sí, vi una serie argentina. El español sonaba diferente y usaban muchas expresiones locales.)'
+          - question: ¿Alguna vez entendiste mal una palabra en español por el acento o por el país?
+            frame: 'Sí, una vez no entendí la palabra ___ porque ___. (Ejemplo: Sí, una vez no entendí la palabra «guagua» porque en mi país no usamos esa palabra.)'
+          - question: ¿Crees que hablar de forma directa es igual en todos los países hispanohablantes?
+            frame: 'Creo que ___ porque ___. (Ejemplo: No, creo que algunas culturas son más directas y otras más formales o indirectas.)'
+          - question: ¿Qué país hispanohablante te da más curiosidad culturalmente?
+            frame: 'Me da mucha curiosidad ___ porque ___. (Ejemplo: Me da mucha curiosidad Perú porque quiero conocer su comida y su historia.)'
+          - question: ¿Qué palabras conoces que cambian de país a país?
+            frame: 'Sé que «___» se usa en ___ y «___» en ___. (Ejemplo: Sé que «ordenador» se usa en España y «computadora» en muchos países de América Latina.)'
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      # Actividad 1
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Mapa vivo del mundo hispanohablante'
+        skills: [Comparar y opinar, Preguntas y experiencias en pasado]
+        steps:
+          - '**Paso 1, activación:** mira el mapa de los países hispanohablantes y responde a las preguntas rápidas de abajo.'
+          - '**Paso 2, mini investigación:** cada estudiante o grupo recibe un país (México, Argentina, España, Colombia, Chile, Perú, Cuba, Uruguay o Venezuela).'
+          - 'Prepara 4 cosas: una palabra típica del país, una expresión común, algo cultural importante y una diferencia en la forma de hablar.'
+          - '**Paso 3, presentación rápida:** cada grupo presenta su país en 2 minutos.'
+          - 'Los otros estudiantes hacen preguntas en pasado: *¿Dónde escuchaste esa palabra? ¿Habías escuchado esa expresión antes? ¿Te pareció fácil o difícil entender ese acento?*'
+        example: |-
+          **Argentina**
+          *Palabra:* laburo = trabajo
+          *Expresión:* ¿Todo bien? / che
+          *Cultura:* el mate, el fútbol, el asado
+          *Forma de hablar:* usan «vos» en lugar de «tú».
+      - id: act1-questions
+        type: discussionQuestions
+        title: Preguntas rápidas
+        items:
+          - question: ¿Qué países conoces?
+            frame: Conozco ___.
+          - question: ¿Qué países has visitado?
+            frame: He visitado ___. / No he visitado ningún país hispanohablante.
+          - question: ¿Qué países te gustaría visitar?
+            frame: Me gustaría visitar ___ porque ___.
+          - question: ¿Qué acentos crees que son más diferentes?
+            frame: Creo que el acento de ___ es más diferente que el de ___.
+      - id: act1-country
+        type: discussionQuestions
+        title: Mi país
+        items:
+          - question: Una palabra típica del país
+            frame: La palabra ___ significa ___.
+          - question: Una expresión común
+            frame: En ___ dicen «___».
+          - question: Algo cultural importante
+          - question: Una diferencia en la forma de hablar
+      # Actividad 2
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Agencia de viajes'
+        skills: [Preguntas y experiencias en pasado, Comparar y opinar]
+        steps:
+          - '**Paso 1, activación:** responde a las preguntas del profesor. Después de cada respuesta, otro estudiante reacciona: *¿Por qué elegiste ese país? ¿Qué te interesa de ese lugar? ¿Ya conocías algo sobre su cultura?*'
+          - '**Paso 2:** hoy son **agentes de viajes**. Cada estudiante o pareja recibe un país hispanohablante (México, Argentina, España, Colombia, Perú, Chile…).'
+          - '**Paso 3, preparación:** busquen la bandera, un plato típico, un festival importante, la moneda y un lugar turístico importante. Hablen entre ustedes todo el tiempo: *¿Conoces este plato? ¿Has escuchado este festival antes? ¿Te gustaría visitar este lugar? ¿Qué sabes de este país?*'
+          - '**Paso 4, presentación dinámica:** no es una presentación tradicional, es una **venta**: *«Debes viajar a mi país porque…»*. Da al menos tres razones, haz al menos una pregunta al público y usa al menos una estructura en pasado.'
+          - '**Paso 5:** después de cada presentación, los otros estudiantes hacen preguntas (mira abajo). Todos participan al menos una vez.'
+          - '**Paso 6, cliente y agente:** un estudiante es el cliente y otro el agente. El cliente pone una condición (*No me gusta la comida picante. / No quiero gastar mucho dinero. / No me gustan los lugares con mucha gente.*) y el agente adapta su propuesta.'
+          - '**Paso 7, reflexión final:** completa las frases de abajo.'
+        example: |-
+          *Debes viajar a Perú porque tiene una cultura increíble. ¿Has escuchado sobre Machu Picchu? Yo vi un documental el año pasado y me impresionó mucho. También puedes probar comida típica como el ceviche.*
+
+          **Cliente:** *No me gusta la comida picante.*
+          **Agente:** *No hay problema. En México también puedes encontrar comida que no es picante. Además, puedes visitar sitios históricos muy importantes. ¿Te interesa la historia o prefieres la naturaleza?*
+      - id: act2-warmup
+        type: discussionQuestions
+        title: 'Paso 1: activación'
+        items:
+          - question: ¿Has viajado a un país hispanohablante?
+            frame: Sí, he viajado a ___. / No, nunca he viajado a un país hispanohablante.
+          - question: ¿A qué país te gustaría viajar? ¿Por qué?
+            frame: Me gustaría viajar a ___ porque ___.
+          - question: ¿Qué es lo más importante para ti cuando eliges un destino?
+            frame: Para mí, lo más importante es ___.
+      - id: act2-public
+        type: discussionQuestions
+        title: 'Paso 5: preguntas del público'
+        answerable: false
+        items:
+          - question: ¿Es un país caro?
+          - question: ¿Qué hiciste allí? (puede ser inventado)
+          - question: ¿Qué fue lo más interesante?
+          - question: ¿Qué comida recomiendas?
+          - question: ¿Qué tan seguro es?
+      - id: act2-reflection
+        type: discussionQuestions
+        title: 'Paso 7: reflexión final'
+        items:
+          - question: El país más interesante fue ___ porque ___.
+          - question: Me sorprendió que ___.
+          - question: Nunca había escuchado ___.
+      # Actividad 3
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Elige tu destino'
+        skills: [Comparar y opinar]
+        steps:
+          - '**Paso 1, activación:** *¿Te gusta viajar? ¿Por qué? ¿Qué tipo de viaje prefieres: relajado, de aventura o cultural?* Después de cada respuesta, otro estudiante dice: *Yo también / Yo no, porque… / ¿Por qué prefieres eso?*'
+          - '**Paso 2:** cada estudiante o pareja tiene un país y prepara un **folleto sencillo** para recomendarlo.'
+          - '**Paso 3, preparación:** la bandera, la comida típica, un festival, la moneda y un lugar importante. Mientras trabajan, hablan: *¿Qué elegimos? ¿Qué es más interesante? ¿Qué recomendamos?*'
+          - '**Paso 4, presentación corta (45 segundos):** *Este país es bueno para… Puedes ver… Puedes comer…*'
+          - '**Paso 5, preguntas:** después de cada presentación, los otros estudiantes hacen una pregunta: *¿Es caro? ¿Qué recomiendas hacer? ¿Qué es lo más interesante?*'
+          - '**Paso 6, elección:** *Quiero viajar a… porque…*'
+          - '**Paso 7, cierre:** *Me gustó… / Me sorprendió…*'
+      - id: act3-frames
+        type: discussionQuestions
+        title: Mi elección
+        items:
+          - question: Este país es bueno para ___. Puedes ver ___. Puedes comer ___.
+          - question: Quiero viajar a ___ porque ___.
+          - question: Me gustó ___. Me sorprendió ___.
+      # Actividad 4
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Debate: ¿Cómo debe ser el español?'
+        skills: [Comparar y opinar]
+        steps:
+          - '**Paso 1, activación:** *¿El español debería ser igual en todos los países o es mejor que sea diferente?* Responde: *Creo que sí porque… / Creo que no porque…* Después de cada respuesta, otro estudiante dice si está de acuerdo o no, y por qué.'
+          - '**Paso 2, preparación:** la clase se divide en dos grupos. **Grupo A:** el español debería ser más uniforme. **Grupo B:** es mejor que el español sea diferente en cada país. Cada grupo prepara ideas con las preguntas guía.'
+          - '**Paso 3, debate:** el Grupo A presenta una idea, el Grupo B responde; después el Grupo B presenta una idea y el Grupo A responde.'
+          - 'Reglas: hablar claro, reaccionar a lo que dijo el otro grupo y dar ejemplos.'
+          - '**Paso 4, discusión abierta:** respondan a las preguntas del profesor.'
+          - '**Cierre:** completa las frases de abajo.'
+        wordBank:
+          - Creo que…
+          - En mi opinión…
+          - Estoy de acuerdo porque…
+          - No estoy de acuerdo porque…
+          - Eso depende de…
+          - Un ejemplo es…
+      - id: act4-guide
+        type: discussionQuestions
+        title: Preguntas guía
+        items:
+          - question: ¿Es más fácil aprender un solo tipo de español?
+          - question: ¿Las diferencias crean problemas o riqueza cultural?
+          - question: ¿Qué pasa cuando las personas no entienden palabras?
+      - id: act4-open
+        type: discussionQuestions
+        title: Discusión abierta
+        items:
+          - question: ¿Es más importante la gramática o la comunicación?
+            frame: Creo que ___ es más importante que ___ porque ___.
+          - question: ¿Qué español te gustaría aprender y por qué?
+            frame: Me gustaría aprender el español de ___ porque ___.
+          - question: ¿Las diferencias culturales hacen el idioma más interesante?
+            frame: En mi opinión, ___.
+      - id: act4-closing
+        type: discussionQuestions
+        title: Cierre
+        items:
+          - question: Después del debate, creo que ___.
+          - question: Lo más interesante fue ___.
+          - question: Ahora pienso diferente sobre ___.
+      # Actividad 5
+      - id: act5
+        type: classActivity
+        title: 'Actividad 5: Adivina el acento (una sola escucha)'
+        skills: [Comparar y opinar, Preguntas y experiencias en pasado]
+        minutes: 31
+        steps:
+          - '**Paso 1, activación:** *¿Crees que puedes reconocer un país solo por el acento? ¿Qué acento en español te parece más claro?* Después de cada respuesta, otro estudiante reacciona o hace una pregunta.'
+          - '**Paso 2, escucha:** mira el video **una sola vez**. No tomes notas largas, solo ideas clave. Intenta identificar los países y nota las diferencias en cómo suena el español.'
+          - '**Paso 3, en grupos de 2 o 3:** cada estudiante responde al menos 3 preguntas de abajo.'
+          - 'Después de cada respuesta, otro estudiante dice si está de acuerdo o no, hace una pregunta o da un ejemplo personal.'
+          - '**Paso 4, cierre:** cada estudiante comparte una idea interesante que escuchó, un acento que le resultó difícil y algo que quiere mejorar.'
+        wordBank:
+          - Estoy de acuerdo porque…
+          - No estoy de acuerdo porque…
+          - ¿Puedes explicar eso mejor?
+          - A mí me pasó algo parecido…
+        resource:
+          label: Adivina el país por su acento (MindQuiz)
+          url: https://www.youtube.com/watch?v=THHyeb98emU
+      - id: act5-questions
+        type: discussionQuestions
+        title: Preguntas para los grupos
+        items:
+          - question: ¿Qué acento entendiste mejor y por qué?
+            frame: Entendí mejor el acento ___ porque ___.
+          - question: ¿Cuál fue el acento más difícil de entender? ¿Qué lo hizo difícil?
+            frame: El acento más difícil fue ___ porque ___.
+          - question: ¿Qué diferencia clara notaste entre dos acentos del video?
+            frame: El acento ___ es más ___ que el acento ___.
+          - question: ¿Alguna vez no entendiste a alguien por su acento? ¿Qué pasó?
+            frame: Sí, una vez ___.
+          - question: ¿Crees que algunos acentos son más fáciles para estudiantes? ¿Por qué?
+            frame: Creo que ___.
+          - question: ¿Prefieres aprender un solo acento o entender muchos? Explica.
+            frame: Prefiero ___ porque ___.
+          - question: ¿El acento cambia solo la pronunciación o también la forma de expresarse?
+            frame: En mi opinión, ___.
+          - question: Después de este video, ¿qué quieres mejorar en tu español?
+            frame: Quiero mejorar ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Preguntas y experiencias en pasado** (preguntas de
+          calentamiento, Actividades 1, 2 y 5) y **Comparar y opinar** (Actividades 3, 4 y 5).
+          El cuaderno no da tiempos para las Actividades 1 a 4. Las Actividades 2 (Agencia de
+          viajes) y 3 (Elige tu destino) son muy parecidas: la 3 es una versión más sencilla.
+          Elige una de las dos según el nivel del grupo.
+      - id: n-slides
+        anchor: null
+        text: >-
+          El cuaderno enlaza una presentación de la clase en gamma.app; ese enlace no se
+          incluye aquí (además apunta a otra clase, «Familia, generaciones y relaciones»).
+          Usa tu propia presentación si la tienes.
+      - id: n-intro
+        anchor: intro
+        text: 'Da tu propio ejemplo primero. Interacción obligatoria: después de cada estudiante, otro estudiante le hace una pregunta.'
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Elige de 6 a 8 preguntas y pide frases completas. *Guagua* significa *autobús* en
+          Cuba, Puerto Rico y las islas Canarias.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Muestra un mapa de los países hispanohablantes en la pantalla. Reparte los países
+          entre los estudiantes o los grupos. Corrige las preguntas en pasado del Paso 3.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          En el Paso 1, empieza con preguntas abiertas y pide que otro estudiante reaccione
+          a cada respuesta. En el Paso 4, comprueba que cada grupo usa al menos una
+          estructura en pasado (*vi, he visto, me impresionó*).
+      - id: n-act4
+        anchor: act4
+        text: Divide la clase en dos grupos. Al final, haz las preguntas de la discusión abierta a todo el grupo.
+      - id: n-act5
+        anchor: act5
+        minutes: 31
+        text: >-
+          Activación: 5 minutos. Escucha: 7 minutos (empieza el video en el minuto 0:44 y
+          ponlo una sola vez). Grupos: 12 minutos (en línea, en salas de grupos). Cierre: 7
+          minutos.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: una-lengua-muchos-mundos-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: summary-intro
+        type: text
+        text: >-
+          En esta clase hablamos de culturas, países, acentos y experiencias personales en el
+          mundo hispanohablante. Practicamos preguntas en pasado, comparaciones, opiniones y
+          reacciones a las ideas de otros.
+      - id: rules-pasado
+        type: ruleSummary
+        skill: Preguntas y experiencias en pasado
+        rules:
+          - text: 'Usamos el **pretérito perfecto** para hablar de experiencias de la vida, **sin decir cuándo** pasaron. Estructura: **haber** en presente (*he, has, ha, hemos, han*) + **participio**.'
+            examples:
+              - ¿Has hablado con personas de otros países?
+              - ¿Has visto una serie argentina?
+              - He viajado a México.
+          - text: 'Participio: los verbos en **-ar** terminan en **-ado**, y los verbos en **-er / -ir** en **-ido**. Algunos son irregulares.'
+            examples:
+              - hablar → hablado, viajar → viajado, escuchar → escuchado
+              - entender → entendido, vivir → vivido
+              - ver → visto, hacer → hecho, decir → dicho, escribir → escrito
+          - text: 'Usamos el **pretérito indefinido** para contar qué pasó en un **momento concreto** (*ayer, el año pasado, una vez*).'
+            examples:
+              - Vi un documental sobre Perú.
+              - Escuché un acento chileno.
+              - Entendí algunas palabras.
+              - El año pasado vi un documental y me impresionó mucho.
+          - text: 'Con **había** + participio (pretérito pluscuamperfecto) decimos que algo no pasó **antes** de otro momento del pasado.'
+            examples: [Nunca había escuchado esa expresión., ¿Habías escuchado esa palabra antes?]
+          - text: 'Preguntas útiles para la conversación:'
+            examples:
+              - ¿Por qué te gusta ese acento?
+              - ¿Qué diferencia notaste?
+              - ¿Qué fue lo más interesante?
+              - ¿Te gustaría viajar a Perú?
+              - ¿Qué recomiendas?
+      - id: haber-table
+        type: table
+        caption: Pretérito perfecto
+        header: [Persona, haber, viajar, ver]
+        rows:
+          - [yo, he, he viajado, he visto]
+          - [tú, has, has viajado, has visto]
+          - [él / ella / usted, ha, ha viajado, ha visto]
+          - [nosotros / nosotras, hemos, hemos viajado, hemos visto]
+          - [ellos / ellas / ustedes, han, han viajado, han visto]
+      - id: rules-comparar
+        type: ruleSummary
+        skill: Comparar y opinar
+        rules:
+          - text: 'Para comparar cosas diferentes usamos **más + adjetivo + que** y **menos + adjetivo + que**.'
+            examples:
+              - México es más grande que Uruguay.
+              - Algunos países hablan más rápido que otros.
+              - Para mí, el acento colombiano es más claro que el chileno.
+          - text: 'Para decir que dos cosas son iguales usamos **tan + adjetivo + como**.'
+            examples: [Para mí, el acento chileno es tan difícil como el cubano.]
+          - text: 'Formas especiales: *más bueno* → **mejor**, *más malo* → **peor**.'
+            examples: [Este video es mejor que el otro., Mi pronunciación es peor que la tuya.]
+          - text: 'Para dar una opinión: **Creo que…, Pienso que…, En mi opinión…, Me parece que…**'
+            examples:
+              - Creo que cada país tiene una cultura diferente.
+              - En mi opinión, los acentos hacen el idioma más interesante.
+          - text: 'Para reaccionar a la opinión de otra persona: **Estoy de acuerdo porque…, No estoy de acuerdo porque…, Eso depende de…** (usamos el verbo *estar*).'
+            examples:
+              - Estoy de acuerdo porque las diferencias culturales son importantes.
+              - No estoy de acuerdo porque es más fácil aprender un solo tipo de español.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: una-lengua-muchos-mundos-tarea
+    title: Tarea
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea
+      - id: written-title
+        type: heading
+        level: 3
+        text: 'Parte A: responde con frases completas'
+      - id: written-a
+        type: discussionQuestions
+        items:
+          - question: ¿Qué país hispanohablante te parece más interesante? ¿Por qué?
+          - question: ¿Qué acento en español te parece más fácil de entender?
+          - question: ¿Has escuchado alguna vez español de Argentina, España o México? ¿Cómo sonaba?
+          - question: ¿Qué comida típica de un país hispanohablante te gustaría probar?
+          - question: ¿Crees que las diferencias entre acentos hacen el español más interesante? ¿Por qué?
+          - question: ¿Qué país te gustaría visitar en el futuro?
+          - question: ¿Alguna vez no entendiste una palabra por el acento? Explica qué pasó.
+      - id: written-b-title
+        type: heading
+        level: 3
+        text: 'Parte B: completa las frases'
+      - id: written-b
+        type: discussionQuestions
+        items:
+          - question: El acento de ___ es más difícil que el de ___.
+          - question: La cultura de ___ parece más ___ que la de ___.
+          - question: Creo que la comida de ___ es más interesante porque ___.
+          - question: El español de ___ suena más ___.
+          - question: Me parece que viajar a ___ sería más interesante que viajar a ___ porque ___.
+      - id: written-c-title
+        type: heading
+        level: 3
+        text: 'Parte C: expresa tu opinión'
+      - id: written-c
+        type: discussionQuestions
+        items:
+          - question: Creo que los acentos diferentes son importantes porque ___.
+          - question: En mi opinión, aprender culturas ayuda a hablar mejor un idioma porque ___.
+          - question: Me parece que el español cambia mucho entre países porque ___.
+          - question: Creo que entender diferentes acentos es difícil porque ___.
+      - id: mori-title
+        type: heading
+        level: 3
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia este mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori
+        type: aiTutorPrompt
+        title: Culturas hispanohablantes
+        message: |-
+          Hoy hablamos sobre culturas hispanohablantes, acentos y diferencias entre países.
+          Hazme preguntas guiadas sobre:
+          - países y culturas
+          - acentos en español
+          - comparaciones entre países
+          - experiencias personales
+          - diferencias culturales
+          Corrige todos mis errores inmediatamente y explícalos brevemente.
+          Haz preguntas de seguimiento después de cada respuesta.
+          Usa principalmente vocabulario de nivel B1-B2 y mantén una conversación natural e interactiva.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: una-lengua-muchos-mundos-practica
+    book: workbook
+    title: 'Práctica: Una lengua, muchos mundos'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-pasado
+        type: activity
+        activity: una-lengua-muchos-mundos-pasado
+      - id: ex-comparar
+        type: activity
+        activity: una-lengua-muchos-mundos-comparar
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: una-lengua-muchos-mundos-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: 'Una lengua, muchos mundos: palabras'
+        glossLang: he
+        link: https://quizlet.com/br/1177253962/una-lengua-muchos-mundos-flash-cards/
+        items: &una-lengua-muchos-mundos-words
+          - { term: Diversidad lingüística, gloss: גיוון לשוני }
+          - { term: Regionalismo, gloss: אזוריות לשונית }
+          - { term: Modismo, gloss: ביטוי מקומי }
+          - { term: Jerga, gloss: סלנג }
+          - { term: Dialecto, gloss: ניב }
+          - { term: Entonación, gloss: אינטונציה }
+          - { term: Fluidez, gloss: שטף דיבור }
+          - { term: Matiz, gloss: ניואנס }
+          - { term: Perspectiva, gloss: נקודת מבט }
+          - { term: Convivencia, gloss: דו-קיום }
+          - { term: Interculturalidad, gloss: בין-תרבותיות }
+          - { term: Estereotipo, gloss: סטריאוטיפ }
+          - { term: Prejuicio, gloss: דעה קדומה }
+          - { term: Integración, gloss: השתלבות }
+          - { term: Adaptación cultural, gloss: הסתגלות תרבותית }
+          - { term: Malentendido, gloss: אי-הבנה }
+          - { term: Interpretación, gloss: פרשנות }
+          - { term: Ambigüedad, gloss: עמימות }
+          - { term: Contexto social, gloss: הקשר חברתי }
+          - { term: Formalidad, gloss: רשמיות }
+          - { term: Cercanía, gloss: קרבה }
+          - { term: Desigualdad, gloss: אי-שוויון }
+          - { term: Connotación, gloss: קונוטציה }
+          - { term: Percepción, gloss: תפיסה }
+          - { term: Argumentación, gloss: טיעון }
+          - { term: Razonamiento, gloss: חשיבה לוגית }
+          - { term: Persuasión, gloss: שכנוע }
+          - { term: Replantear, gloss: לנסח מחדש }
+          - { term: Cuestionar, gloss: להטיל ספק }
+          - { term: Contradecir, gloss: לסתור }
+          - { term: Coincidir, gloss: להסכים }
+          - { term: Discrepar, gloss: לחלוק על }
+          - { term: Enriquecedor, gloss: מעשיר }
+          - { term: Complejidad, gloss: מורכבות }
+          - { term: Variación lingüística, gloss: שונות לשונית }
+          - { term: Sensibilidad cultural, gloss: רגישות תרבותית }
+
+vocabulary:
+  - slug: una-lengua-muchos-mundos
+    title: Una lengua, muchos mundos
+    items: *una-lengua-muchos-mundos-words
+
+activities:
+  - slug: una-lengua-muchos-mundos-pasado
+    title: Preguntas y experiencias en pasado
+    minutes: 8
+    items:
+      - id: has-visto
+        type: multipleChoice
+        prompt: ¿___ alguna vez una serie argentina? (tú, ver)
+        options:
+          - { text: Has visto, correct: true }
+          - { text: Has veído, feedback: 'El participio de *ver* es irregular: *visto*.' }
+          - {
+              text: Has ver,
+              feedback: 'Después de *haber* va el participio, no el infinitivo: *has visto*.',
+            }
+      - id: he-viajado
+        type: fillBlank
+        prompt: Completa con *viajar* en pretérito perfecto (yo).
+        text: Nunca ___ a México.
+        blanks: [[he viajado]]
+      - id: participios
+        type: matching
+        prompt: Une cada verbo con su participio.
+        pairs:
+          - [hablar, hablado]
+          - [ver, visto]
+          - [hacer, hecho]
+          - [escuchar, escuchado]
+          - [decir, dicho]
+      - id: momento-concreto
+        type: trueFalse
+        prompt: 'Con un momento concreto del pasado (*ayer, el año pasado*) usamos el pretérito indefinido: *El año pasado vi un documental sobre Perú.*'
+        answer: true
+        feedback:
+          correct: ¡Correcto! Con *ayer* o *el año pasado* usamos el indefinido.
+          incorrect: 'Con un momento concreto del pasado usamos el indefinido: *El año pasado vi un documental.*'
+      - id: vi
+        type: multipleChoice
+        prompt: El año pasado yo ___ un documental sobre Perú.
+        options:
+          - { text: vi, correct: true }
+          - {
+              text: he visto,
+              feedback: 'Con *el año pasado* (un momento concreto) usamos el indefinido: *vi*.',
+            }
+          - { text: veí, feedback: 'El indefinido de *ver* (yo) es *vi*, sin *e*.' }
+      - id: has-hablado
+        type: fillBlank
+        prompt: Completa con *haber* (tú).
+        text: ¿___ hablado con personas de otros países?
+        blanks: [[Has, has]]
+      - id: ordena-acento
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: He escuchado un acento chileno.
+      - id: escuche
+        type: multipleChoice
+        prompt: Ayer ___ un acento muy diferente. (yo, escuchar)
+        options:
+          - { text: escuché, correct: true }
+          - {
+              text: escuchado,
+              feedback: 'El participio solo no es un verbo conjugado. Con *ayer* usamos el indefinido: *escuché*.',
+            }
+          - { text: escuchí, feedback: 'Los verbos en -ar terminan en *-é* para *yo*: *escuché*.' }
+
+  - slug: una-lengua-muchos-mundos-comparar
+    title: Comparar y opinar
+    minutes: 8
+    items:
+      - id: mas-que
+        type: multipleChoice
+        prompt: México es ___ grande ___ Uruguay.
+        options:
+          - { text: más… que, correct: true }
+          - {
+              text: más… como,
+              feedback: 'Con *más* usamos *que*: *más grande que*. *Como* va con *tan*.',
+            }
+          - {
+              text: tan… que,
+              feedback: 'México no es igual de grande que Uruguay. Para cosas diferentes usamos *más… que*.',
+            }
+      - id: tan-como
+        type: fillBlank
+        prompt: Completa la comparación de igualdad.
+        text: Para mí, el acento chileno es ___ difícil ___ el cubano.
+        blanks: [[tan], [como]]
+      - id: igualdad
+        type: trueFalse
+        prompt: 'Para decir que dos cosas son iguales usamos *tan + adjetivo + que*.'
+        answer: false
+        feedback:
+          correct: '¡Correcto! Usamos *tan + adjetivo + como*: *tan difícil como*.'
+          incorrect: 'La forma es *tan + adjetivo + como*: *El acento chileno es tan difícil como el cubano.*'
+      - id: funciones
+        type: matching
+        prompt: Une cada frase con su función.
+        pairs:
+          - [Creo que…, dar una opinión]
+          - [Estoy de acuerdo porque…, aceptar la idea de otra persona]
+          - [No estoy de acuerdo porque…, rechazar la idea de otra persona]
+          - [Eso depende de…, decir que no siempre es igual]
+          - [más… que, comparar dos cosas diferentes]
+      - id: mejor
+        type: multipleChoice
+        prompt: Este video es ___ que el otro. (bueno)
+        options:
+          - { text: mejor, correct: true }
+          - { text: más bueno, feedback: 'Para comparar calidad decimos *mejor*, no *más bueno*.' }
+          - {
+              text: más mejor,
+              feedback: '*Mejor* ya es una comparación: no usamos *más* con *mejor*.',
+            }
+      - id: mas-menos
+        type: fillBlank
+        prompt: Completa con una palabra de comparación.
+        text: Algunos países hablan ___ rápido que otros.
+        blanks: [[más, menos]]
+      - id: ordena-cultura
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Creo que cada país tiene una cultura diferente.
+      - id: estoy-de-acuerdo
+        type: multipleChoice
+        prompt: ¿Qué frase es correcta?
+        options:
+          - { text: Estoy de acuerdo contigo., correct: true }
+          - {
+              text: Soy de acuerdo contigo.,
+              feedback: 'Decimos *estar de acuerdo*: *Estoy de acuerdo.*',
+            }
+          - { text: Estoy acuerdo contigo., feedback: 'Falta *de*: *estar de acuerdo*.' }

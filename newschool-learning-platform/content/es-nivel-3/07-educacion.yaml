@@ -1,0 +1,725 @@
+# Cycle "Educación", converted from the Spanish nivel 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-3
+slug: educacion
+title: Educación
+goal: Hablar de experiencias de aprendizaje con el pretérito perfecto y el indefinido, y de planes y predicciones con ir a + infinitivo y el futuro simple.
+position: 7
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Pretérito perfecto e indefinido" and "El futuro: ir a
+    y futuro simple") are NEW: the notebook has no self-study exercises. They were
+    written from the cycle's summary rules, the activity models and the vocabulary.
+    Please check level, wording and every right answer before students see them.
+  - >-
+    The notebook lists three grammar goals (perfecto vs. indefinido; ir a + infinitivo
+    and futuro simple; opinions, causes and consequences). The cycle overview keeps the
+    first two as the cycle's two skills; connectors (porque, aunque, por eso) are
+    practised inside the future activities and mentioned in the summary.
+  - >-
+    Left out: the gamma.app presentation link (slide links are not allowed; mentioned
+    in a teacher note), the "Fecha / Participantes" lines and the "Respuestas:
+    Estudiante 1/2/3" lines (the platform has answer boxes). The "Habilidades
+    trabajadas" list (expresión oral, escritura guiada, debate, pensamiento crítico)
+    is in the plan note.
+  - >-
+    Summary additions (not in the source, please confirm): how to form the participle
+    (-ado / -ido) with the irregular participles hecho, visto, escrito, dicho, puesto,
+    vuelto, abierto; the forms of the futuro simple (infinitive + -é, -ás, -á, -emos,
+    -éis, -án) with the irregulars tendré, haré, podré, diré, saldré, habrá; a
+    conjugation table for both. The source summary gives only "haber + participio"
+    and no future endings. A short rule on the connectors porque / aunque / por eso was
+    added from Activities 2 and 4.
+  - >-
+    Corrections: Activity 1, step 1, question 3 "(¿Cuándo fue?) ¿Qué pasó
+    exactamente?)" → "¿Cuándo fue? ¿Qué pasó exactamente?"; Activity 4 checklist
+    "Justificó con por qué, por eso o aunque" → "porque, por eso o aunque"; Activity
+    3, kinesthetic channel "Recordar mientras practica" → "Aprender mientras practica";
+    Activity 2 model "…desde casa aunque…" → "…desde casa, aunque…" (comma); Activity 4
+    guide "Cómo la va a enseñar" / "Qué cambiará en la sociedad" turned into sentence
+    frames for the student (*La voy a enseñar con ___*). Stray "ð" characters and
+    broken bold marks were removed throughout.
+  - >-
+    More small fixes in Activity 3: "Podcasts" → "pódcasts"; "Plataformas online" /
+    "cursos online" → "plataformas en línea" / "cursos en línea" (the vocabulary item
+    "curso online" and the exercise sentence keep "online", which is common in Spain;
+    change if you prefer); "Jugar roles" → "juegos de rol"; follow-up question "¿Te ha
+    ayudado?" → "¿Te han ayudado?" (agrees with "grabaciones"). Activity 4 model
+    "…matemáticas, por eso esta materia…" → "…matemáticas; por eso, esta materia…".
+  - >-
+    Not kept: the summary example "He trabajado en proyectos en grupo." and the
+    "Ejemplos generales" lines that repeat other examples (Voy a estudiar pedagogía /
+    La educación será más digital appear in the key table and the exercises); the two
+    sample sentences of Activity 3, step 3 ("He aprendido mejor en grupo porque me
+    motiva más", "He aprendido mucho con vídeos online") — the second is used as a
+    workbook item. Each activity's "Objetivo" lists are summed up in the teacher notes.
+  - >-
+    Activity 1 (the letter) has a long model letter; it is kept as the activity
+    example. Andrés says "seguridad en mí mismo" (masculine): fine for the model.
+    Activity 4 "Paso 1–5" are kept as steps; the source's voting step is the last one.
+  - >-
+    Times: the notebook says 90 minutes in total, but the parts add up to about 95
+    (intro 5, warm-up 15, Activities 20 + 20 + 15 + 20). Activity 4 "15–20 minutos" is
+    recorded as 20. The plan note asks the teacher to choose. Activity 2's own steps
+    (2 + 10 + 3 per group + 5) can exceed 20 minutes with many groups.
+  - >-
+    The intro round and warm-up had no sentence frames or example: an example (*Soy
+    Dana…*) and frames for each warm-up question were added.
+  - >-
+    Mori part 4 ("Mini reto final") is not a message to Mori in the source but a 5–6
+    sentence answer; it is a reflection box with the required tenses in a callout. Mori
+    part 3's blank is kept as "___" for the student to fill in.
+  - >-
+    Vocabulary: "aprender" and "estudiar" were both glossed "ללמוד"; now "ללמוד (לרכוש
+    ידע)" and "ללמוד (לעיין, לשנן)". "presentación – הצגה / פרזנטציה" → "מצגת /
+    פרזנטציה" (הצגה is a theatre show). Please confirm. The Quizlet link's "?new"
+    parameter was removed.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: educacion-clase
+    title: 'Clase: Educación'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Educación
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Pretérito perfecto e indefinido
+            description: 'Experiencias (*he estudiado, me ha enseñado*) y detalles concretos (*lo hice en 2022*)'
+          - name: 'El futuro: ir a + infinitivo y futuro simple'
+            description: 'Planes (*voy a estudiar*) y predicciones (*la educación será más digital*)'
+      - id: quizlet
+        type: externalLink
+        label: Educación en Quizlet
+        url: https://quizlet.com/br/1120948790/educacion-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Yo soy ___. Mi materia favorita en la escuela era ___ porque ___.
+        example: Yo soy Dana. Mi materia favorita en la escuela era la historia porque la profesora contaba historias increíbles.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de calentamiento
+      - id: warmup-hint
+        type: callout
+        tone: info
+        text: Responde con frases **completas y desarrolladas**. Usa el **pretérito perfecto** para la experiencia y el **pretérito indefinido** para los detalles.
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Has tenido alguna experiencia de aprendizaje que te haya marcado en tu vida? ¿Cuándo ocurrió? ¿Por qué fue importante?
+            frame: Sí, he tenido ___. Ocurrió ___. Fue importante porque ___.
+          - question: ¿Has estudiado alguna materia que te haya costado mucho? ¿Qué hiciste exactamente para mejorar?
+            frame: Me ha costado mucho ___. Para mejorar, ___.
+          - question: ¿Has hecho algún curso fuera de la escuela o la universidad? ¿Qué aprendiste allí que no aprendiste en la escuela?
+            frame: He hecho un curso de ___. Allí aprendí ___.
+          - question: ¿Has trabajado alguna vez en grupo y ha sido una mala experiencia? ¿Qué pasó exactamente?
+            frame: Sí, una vez ___. Lo que pasó fue que ___.
+          - question: ¿Qué asignatura crees que va a desaparecer del sistema educativo en el futuro? ¿Por qué?
+            frame: Creo que ___ va a desaparecer porque ___.
+          - question: ¿Te has arrepentido alguna vez de no haber estudiado algo antes? ¿Qué habrías hecho diferente?
+            frame: Me he arrepentido de no haber estudiado ___. Habría ___.
+          - question: ¿Qué vas a estudiar el próximo año o qué te gustaría estudiar? ¿Para qué te servirá?
+            frame: El próximo año voy a estudiar ___. Me servirá para ___.
+          - question: Si pudieras cambiar una cosa del sistema educativo de tu país, ¿qué cambiarías y por qué?
+            frame: Cambiaría ___ porque ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: Carta a una persona que marcó tu educación'
+        skills: [Pretérito perfecto e indefinido]
+        minutes: 20
+        steps:
+          - '**Preparación (5 minutos):** piensa en las preguntas de abajo y toma notas cortas. Todavía no escribes la carta: solo organizas las ideas.'
+          - '**Escritura (10 minutos):** escribe una carta de 10 a 12 frases. Usa el **pretérito perfecto** para las experiencias (*me ha ayudado, me ha enseñado*) y el **pretérito indefinido** para un momento concreto (*en 2020 me animó a…*).'
+          - 'Estructura sugerida: 1. Saludo (*Querida profesora…*). 2. Quién es esa persona. 3–4. Qué ha hecho por ti. 5–6. Un momento concreto del pasado. 7–8. Cómo ha cambiado tu vida. 9–10. Agradecimiento final. 11–12. Despedida y nombre.'
+          - '**Lectura (5 minutos):** lee tu carta a un compañero, o en voz alta al grupo.'
+          - 'Después de cada lectura, el compañero hace **una pregunta de seguimiento**: *¿Cómo te sentiste en ese momento? ¿Sigues en contacto con esa persona? ¿Te gustaría ser como esa persona en el futuro?*'
+        example: |-
+          *Querida profesora Laura:*
+          *Usted ha sido una de las personas más importantes en mi educación. Me ha ayudado a confiar en mis capacidades y me ha enseñado a no tener miedo a equivocarme. Siempre me ha animado a participar y a expresar mis ideas. Recuerdo que en 2020 me animó a participar en un concurso de idiomas y gracias a eso perdí la vergüenza de hablar en público. Desde entonces, he tenido más seguridad en mí mismo. Aunque en ese momento no lo entendí, hoy sé cuánto ha influido en mi vida. Gracias por todo lo que ha hecho por mí y por no dejar de creer en mí.*
+          *Con cariño,*
+          *Andrés*
+      - id: act1-questions
+        type: discussionQuestions
+        title: Preparación de la carta
+        items:
+          - question: ¿Quién es esa persona importante para ti? (profesor, entrenadora, orientador, familiar…)
+            frame: Es ___.
+          - question: ¿Qué ha hecho por ti?
+            frame: Me ha ayudado a ___. / Me ha enseñado a ___.
+          - question: ¿Recuerdas un momento concreto con esa persona? ¿Cuándo fue? ¿Qué pasó exactamente?
+            frame: Recuerdo que en ___, ___.
+          - question: ¿Cómo ha cambiado tu vida gracias a esa persona?
+            frame: Gracias a esa persona, ___.
+          - question: ¿Por qué quieres agradecerle hoy?
+            frame: Quiero agradecerle porque ___.
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: El sistema educativo del futuro'
+        skills: ['El futuro: ir a + infinitivo y futuro simple']
+        minutes: 20
+        steps:
+          - 'Ahora ustedes forman parte del **Ministerio de Educación del año 2050**. Su misión: crear un **sistema educativo inclusivo** que funcione para todos los estudiantes (con y sin discapacidad, con diferentes estilos de aprendizaje y con realidades sociales distintas).'
+          - '**Grupos (2 minutos):** formen grupos de 3 o 4 estudiantes. Cada grupo es un equipo del Ministerio. El reto: *Diseñen el sistema educativo del futuro para el año 2050.*'
+          - '**Plan (10 minutos):** escriban un plan con un mínimo de 4 ideas: **dos planes** con *ir a* (*Vamos a crear…, Vamos a formar…*), **dos predicciones** con futuro simple (*La educación será…, Los estudiantes aprenderán…*) y **al menos dos conectores** (*porque, aunque, por eso*). Usen las preguntas guía de abajo.'
+          - '**Presentación (3 minutos por grupo):** presenten su sistema con 2 frases con *ir a*, 2 frases con futuro simple y 1 o 2 conectores.'
+          - '**Pregunta crítica (5 minutos):** después de cada presentación, otro grupo hace una pregunta crítica: *¿Creen que ese sistema funcionará en todos los países? ¿Qué pasará con los profesores que no sepan usar la tecnología? ¿Todos los estudiantes podrán adaptarse a ese sistema?* El grupo responde usando el futuro.'
+        example: |-
+          *Vamos a formar a todos los profesores en educación digital porque la tecnología será muy importante en el futuro.*
+          *Vamos a adaptar las escuelas para estudiantes con discapacidad.*
+          *La educación será más inclusiva y más flexible.*
+          *Muchos estudiantes aprenderán desde casa, aunque algunas personas preferirán seguir yendo a la escuela.*
+          *Por eso, el sistema educativo va a cambiar mucho en los próximos años.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Preguntas guía
+        items:
+          - question: ¿Qué materias nuevas van a crear?
+            frame: Vamos a crear ___.
+          - question: ¿Cómo van a ayudar a los estudiantes con dificultades?
+            frame: Vamos a ___.
+          - question: ¿Cómo va a cambiar el papel del profesor?
+            frame: El profesor va a ___. / El profesor será ___.
+          - question: '¿Dónde van a estudiar los alumnos: en casa, en la escuela o en los dos lugares?'
+            frame: Los alumnos estudiarán ___ porque ___.
+          - question: ¿Cómo va a influir la tecnología?
+            frame: La tecnología ___. Por eso, ___.
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: ¿Cómo aprendes mejor?'
+        skills: [Pretérito perfecto e indefinido]
+        minutes: 15
+        steps:
+          - '**Presentación (5 minutos):** escucha los seis canales de aprendizaje (abajo). Elige mentalmente tu estilo principal; puedes elegir más de uno.'
+          - '**En parejas (8 minutos):** uno pregunta y el otro responde con el **pretérito perfecto**; después cambian. Después de cada respuesta, haz la **repregunta**.'
+          - '**Puesta en común (2 minutos):** ¿quién aprende mejor de forma visual? ¿Y de forma auditiva? ¿Y haciendo? Comparte una frase con el grupo.'
+        example: |-
+          *He aprendido mejor escuchando explicaciones que leyendo solo.*
+          *También he usado aplicaciones para estudiar y me han ayudado mucho.*
+          *Cuando he estudiado en grupo, he entendido mejor los temas difíciles.*
+      - id: act3-channels
+        type: table
+        caption: Canales de aprendizaje
+        header: [Canal, Aprende mejor…, Ejemplo]
+        rows:
+          - [
+              Visual,
+              'viendo: imágenes, vídeos, esquemas, colores, presentaciones',
+              He aprendido mucho viendo vídeos explicativos.,
+            ]
+          - [
+              Auditivo,
+              'escuchando: explicaciones orales, pódcasts, grabaciones, debates',
+              He entendido mejor las clases cuando he escuchado audios.,
+            ]
+          - [
+              Kinestésico,
+              'haciendo y moviéndose: aprender mientras practica, usar el cuerpo, juegos de rol, construir cosas',
+              He aprendido más cuando he hecho actividades prácticas.,
+            ]
+          - [
+              Social,
+              'con otras personas: en grupo, explicando a otros, debatiendo, trabajando en equipo',
+              He aprendido mejor cuando he estudiado con otras personas.,
+            ]
+          - [
+              Digital,
+              'con tecnología: apps, plataformas en línea, juegos digitales, cursos virtuales',
+              He aprendido mucho usando aplicaciones y cursos en línea.,
+            ]
+          - [
+              Profesional / vocacional,
+              'en situaciones reales de trabajo: prácticas, talleres, formación técnica, aprendizaje en el trabajo',
+              He aprendido muchas cosas trabajando directamente.,
+            ]
+      - id: act3-questions
+        type: discussionQuestions
+        title: Preguntas para tu pareja
+        items:
+          - question: ¿Has aprendido algo solo mirando? (Repregunta. ¿Qué has aprendido así?)
+            frame: Sí, he aprendido ___ mirando ___.
+          - question: ¿Has usado grabaciones para estudiar? (Repregunta. ¿Te han ayudado? ¿Por qué?)
+            frame: Sí, he usado ___. Me han ayudado porque ___.
+          - question: ¿Has aprendido mejor haciendo que leyendo? (Repregunta. ¿En qué situación?)
+            frame: Sí, he aprendido mejor haciendo cuando ___.
+          - question: ¿Has estudiado mejor en grupo que solo? (Repregunta. ¿Con quién has estudiado?)
+            frame: He estudiado mejor ___ porque ___.
+          - question: ¿Has aprendido más con tecnología? (Repregunta. ¿Qué aplicación o plataforma has usado?)
+            frame: He usado ___ y he aprendido ___.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Soy profesor en 2050'
+        skills: ['El futuro: ir a + infinitivo y futuro simple']
+        minutes: 20
+        steps:
+          - '*Estamos en el año 2050. El mundo ha cambiado mucho: el trabajo, la tecnología, la salud, el clima y la forma de relacionarnos. Ahora ustedes son profesores del futuro y van a crear las materias que la nueva generación necesita para vivir mejor.*'
+          - '**Elección (3 minutos):** elige tres materias que **no existen hoy** en la escuela: sobre emociones, tecnología, medio ambiente, sociedad, ética, trabajo o emprendimiento. Ideas: educación emocional, inteligencia artificial para la vida diaria, educación financiera real, supervivencia climática, comunicación digital, manejo del estrés.'
+          - '**Guion (5 minutos):** completa las frases de abajo para cada materia.'
+          - '**Congreso de Educación 2050 (7 minutos):** presenta tu materia más importante. Incluye un plan con *ir a*, una predicción con futuro simple y una justificación clara.'
+          - '**Preguntas críticas (5 minutos):** tus compañeros te preguntan: *¿Por qué crees que esta materia será más importante que las tradicionales? ¿Quiénes la necesitarán más: niños, adolescentes o adultos? ¿Crees que todos los países podrán enseñar esta materia? ¿Qué pasará si las escuelas no se adaptan a estos cambios?* Responde usando el futuro.'
+          - '**Votación (2 minutos):** vota por la materia más necesaria, la más innovadora y la que más puede cambiar la sociedad.'
+        example: |-
+          *Voy a enseñar educación emocional porque muchos jóvenes tendrán problemas de estrés y ansiedad.*
+          *La voy a enseñar con actividades prácticas, juegos de rol y conversaciones reales.*
+          *Los estudiantes aprenderán a entender sus emociones y a comunicarse mejor.*
+          *En el futuro, la salud mental será tan importante como las matemáticas; por eso, esta materia cambiará la sociedad.*
+      - id: act4-frames
+        type: discussionQuestions
+        title: Guion para tu materia
+        items:
+          - question: Nombre de la materia
+            frame: Voy a enseñar ___.
+          - question: ¿Por qué será importante?
+            frame: Será importante porque ___.
+          - question: ¿Cómo la vas a enseñar?
+            frame: La voy a enseñar con ___.
+          - question: ¿Qué cambiará en la sociedad?
+            frame: Gracias a esta materia, la sociedad ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Pretérito perfecto e indefinido** (calentamiento,
+          Actividades 1 y 3) y **El futuro: ir a + infinitivo y futuro simple**
+          (Actividades 2 y 4). También se trabajan la expresión oral, la escritura guiada,
+          el debate y el pensamiento crítico. El cuaderno indica 90 minutos, pero las
+          partes suman unos 95: elige las actividades según el tiempo. El cuaderno enlaza
+          una presentación en gamma.app que no se incluye aquí (los enlaces a
+          presentaciones no están permitidos); úsala desde tu propio material si quieres.
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: Practica el presente y el pasado (*era*). Da tu propio ejemplo primero.
+      - id: n-warmup
+        anchor: warmup
+        minutes: 15
+        text: Pide respuestas completas y desarrolladas, con pretérito perfecto + indefinido. Haz al menos dos preguntas a cada estudiante.
+      - id: n-act1
+        anchor: act1
+        minutes: 20
+        text: >-
+          Proyecta o escribe las preguntas de preparación. Mientras escriben, revisa que cada
+          estudiante: usa al menos 3 verbos en pretérito perfecto y 1 en indefinido, expresa
+          agradecimiento y explica un cambio personal.
+      - id: n-act2
+        anchor: act2
+        minutes: 20
+        text: >-
+          Reparte una hoja o escribe el reto en la pizarra. Circula, corrige los errores
+          importantes y ayuda con el futuro. Revisa que el grupo: usa bien *ir a* +
+          infinitivo y el futuro simple, usa al menos dos conectores, presenta ideas claras
+          e inclusivas y responde a una pregunta usando el futuro.
+      - id: n-act3
+        anchor: act3
+        minutes: 15
+        text: >-
+          Explica cada canal con un ejemplo oral y da un ejemplo personal con pretérito
+          perfecto (*Yo he aprendido idiomas usando vídeos y hablando con personas*).
+          Revisa que el estudiante: usa bien el pretérito perfecto, expresa una preferencia
+          personal, responde con una frase completa y hace al menos una repregunta.
+      - id: n-act4
+        anchor: act4
+        minutes: 20
+        text: >-
+          Lee el marco del año 2050 en voz alta. Durante el guion, corrige el futuro y
+          ayuda con los conectores (*porque, por eso, aunque*). La votación puede ser a mano
+          alzada o con papeletas. Revisa que el estudiante: usa bien el futuro, justifica con
+          *porque, por eso* o *aunque*, explica el impacto social, habla al menos 30–40
+          segundos y responde una pregunta del público.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: educacion-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-pasado
+        type: ruleSummary
+        skill: Pretérito perfecto e indefinido
+        rules:
+          - text: 'El **pretérito perfecto** habla de experiencias de la vida cuando **no decimos exactamente cuándo** pasaron, o cuando la experiencia está relacionada con el presente.'
+            examples:
+              - He estudiado en una universidad.
+              - He tenido profesores que han cambiado mi forma de aprender.
+              - He participado en varios cursos de formación.
+              - He aprendido a organizar mejor mi tiempo de estudio.
+          - text: 'Estructura: **haber** (*he, has, ha, hemos, habéis, han*) + **participio**. El participio de los verbos en -ar termina en **-ado**; el de los verbos en -er / -ir, en **-ido**.'
+            examples:
+              ['estudiar → he estudiado', 'aprender → he aprendido', 'participar → he participado']
+          - text: 'Algunos participios son irregulares.'
+            examples:
+              [
+                'hacer → hecho',
+                'ver → visto',
+                'escribir → escrito',
+                'decir → dicho',
+                'poner → puesto',
+                'volver → vuelto',
+                'abrir → abierto',
+              ]
+          - text: 'Usamos el **pretérito perfecto** para la experiencia y el **pretérito indefinido** para el detalle concreto (cuándo, dónde, con quién).'
+            examples:
+              - He participado en muchos cursos. El más importante lo hice en 2022.
+              - He tenido una profesora que me ha marcado mucho. La conocí en la secundaria.
+              - He aprendido mucho sobre educación. Empecé a interesarme por este tema hace cinco años.
+      - id: perfecto-table
+        type: table
+        caption: Pretérito perfecto
+        header: [Persona, haber, estudiar, aprender]
+        rows:
+          - [yo, he, he estudiado, he aprendido]
+          - [tú, has, has estudiado, has aprendido]
+          - [él / ella / usted, ha, ha estudiado, ha aprendido]
+          - [nosotros / nosotras, hemos, hemos estudiado, hemos aprendido]
+          - [vosotros / vosotras, habéis, habéis estudiado, habéis aprendido]
+          - [ellos / ellas / ustedes, han, han estudiado, han aprendido]
+      - id: rules-futuro
+        type: ruleSummary
+        skill: 'El futuro: ir a + infinitivo y futuro simple'
+        rules:
+          - text: '**Ir a + infinitivo** expresa **planes, decisiones ya pensadas e intenciones claras**. Estructura: *ir* (*voy, vas, va, vamos, vais, van*) + **a** + infinitivo.'
+            examples:
+              - Voy a estudiar educación especial el próximo año.
+              - Voy a hacer un máster en enseñanza de idiomas.
+              - Vamos a crear un programa educativo más inclusivo.
+              - El próximo semestre voy a tomar un curso de formación profesional.
+          - text: 'El **futuro simple** expresa **predicciones, suposiciones, promesas o consecuencias**: no es un plan seguro. Se forma con el **infinitivo** + *-é, -ás, -á, -emos, -éis, -án*.'
+            examples:
+              - Las escuelas usarán más tecnología en el futuro.
+              - Los profesores necesitarán más formación digital.
+              - La educación será más flexible.
+              - Muchos estudiantes estudiarán desde casa.
+          - text: 'Algunos verbos tienen la raíz irregular en el futuro, pero las mismas terminaciones.'
+            examples:
+              [
+                'tener → tendré',
+                'hacer → haré',
+                'poder → podré',
+                'decir → diré',
+                'salir → saldré',
+                'haber → habrá',
+              ]
+          - text: '**Plan + resultado:** combinamos *ir a* (el plan) con el futuro simple (el resultado o la consecuencia).'
+            examples:
+              - Voy a estudiar educación especial porque quiero ayudar. Creo que cambiará mi forma de ver la enseñanza.
+              - Voy a hacer un curso de psicología educativa. Me ayudará a entender mejor a mis alumnos.
+              - Vamos a cambiar la manera de enseñar. La educación será más inclusiva.
+              - Voy a formarme como profesor. En el futuro trabajaré en una escuela internacional.
+          - text: 'Para justificar: **porque** (causa), **aunque** (contraste), **por eso** (consecuencia).'
+            examples:
+              - Vamos a formar a los profesores porque la tecnología será muy importante.
+              - Muchos estudiantes aprenderán desde casa, aunque algunos preferirán ir a la escuela.
+      - id: futuro-table
+        type: table
+        caption: Futuro simple
+        header: [Persona, estudiar, aprender, ser, tener]
+        rows:
+          - [yo, estudiaré, aprenderé, seré, tendré]
+          - [tú, estudiarás, aprenderás, serás, tendrás]
+          - [él / ella / usted, estudiará, aprenderá, será, tendrá]
+          - [nosotros / nosotras, estudiaremos, aprenderemos, seremos, tendremos]
+          - [vosotros / vosotras, estudiaréis, aprenderéis, seréis, tendréis]
+          - [ellos / ellas / ustedes, estudiarán, aprenderán, serán, tendrán]
+      - id: key-table
+        type: table
+        caption: Resumen clave
+        header: [Tiempo verbal, Para qué se usa, Ejemplo]
+        rows:
+          - [Pretérito perfecto, Experiencias, He estudiado en una universidad.]
+          - [Pretérito indefinido, Detalles concretos, Estudié en 2020.]
+          - [Ir a + infinitivo, Planes, Voy a estudiar pedagogía.]
+          - [Futuro simple, Predicciones, La educación cambiará mucho.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa las dos habilidades con el grupo y pide un ejemplo nuevo para cada regla, sobre la educación de cada estudiante.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: educacion-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia un mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-pasado
+        type: aiTutorPrompt
+        title: 'Parte 1: Mis experiencias de aprendizaje (pasado)'
+        intro: 'Objetivo: practicar el pretérito perfecto y el pretérito indefinido.'
+        message: >-
+          Hola, Mori. Quiero hablar sobre mis experiencias de aprendizaje. Por favor, hazme
+          al menos 6 preguntas para que pueda responder usando el pretérito perfecto.
+          Después de cada respuesta, hazme una pregunta de seguimiento para que pueda dar
+          más detalles usando el pretérito indefinido. Por favor, corrige mis errores y
+          ayúdame a mejorar mis respuestas.
+      - id: mori-futuro
+        type: aiTutorPrompt
+        title: 'Parte 2: Mi futuro como estudiante o profesor (futuro)'
+        intro: 'Objetivo: practicar *ir a* + infinitivo y el futuro simple.'
+        message: >-
+          Hola, Mori. Hablemos de mi futuro. Por favor, hazme preguntas sobre mis planes de
+          estudio usando «ir a» y preguntas sobre predicciones usando el futuro simple.
+          Después de cada respuesta, pídeme que explique por qué. Por favor, corrige mi
+          gramática y ayúdame a usar frases completas.
+      - id: mori-tema
+        type: aiTutorPrompt
+        title: 'Parte 3: Un tema personal sobre educación (opinión y reflexión)'
+        intro: 'Elige UN tema: la educación en mi país, la tecnología en la educación, la educación inclusiva, los profesores que me han marcado o el sistema educativo del futuro. Escríbelo en el espacio ___ del mensaje.'
+        message: >-
+          Hola, Mori. Quiero hablar sobre un tema de educación que es importante para mí:
+          ___. Por favor, hazme preguntas sobre mi opinión, mis experiencias y lo que creo
+          que cambiará en el futuro. Quiero practicar el pretérito perfecto, el pretérito
+          indefinido y el futuro. Después de cada respuesta, hazme una pregunta de
+          seguimiento para que pueda explicar más.
+      - id: reto-title
+        type: heading
+        level: 3
+        text: 'Parte 4: Mini reto final'
+      - id: reto-rules
+        type: callout
+        tone: info
+        title: Tu respuesta debe incluir
+        text: |-
+          5 o 6 frases seguidas, con:
+          - 2 frases en **pretérito perfecto**
+          - 1 frase en **pretérito indefinido**
+          - 2 frases en **futuro** (*ir a* + infinitivo o futuro simple)
+      - id: reto
+        type: reflection
+        prompt: ¿Cómo ha cambiado la educación tu vida y qué vas a hacer en el futuro con lo que has aprendido?
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: educacion-practica
+    book: workbook
+    title: 'Práctica: Educación'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-pasado
+        type: activity
+        activity: educacion-pasado
+      - id: ex-futuro
+        type: activity
+        activity: educacion-futuro
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: educacion-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la educación
+        glossLang: he
+        link: https://quizlet.com/br/1120948790/educacion-flash-cards/
+        items: &educacion-words
+          - { term: sistema educativo, gloss: מערכת החינוך }
+          - { term: educación pública, gloss: חינוך ציבורי }
+          - { term: educación privada, gloss: חינוך פרטי }
+          - { term: educación inclusiva, gloss: חינוך משלב }
+          - { term: formación profesional, gloss: הכשרה מקצועית }
+          - { term: carrera universitaria, gloss: לימודים אקדמיים }
+          - { term: estudios superiores, gloss: השכלה גבוהה }
+          - { term: centro educativo, gloss: מוסד חינוכי }
+          - { term: estudiante, gloss: תלמיד / סטודנט }
+          - { term: profesor, gloss: מורה }
+          - { term: tutor, gloss: חונך }
+          - { term: orientador, gloss: יועץ חינוכי }
+          - { term: compañero de clase, gloss: חבר לכיתה }
+          - { term: aprender, gloss: ללמוד (לרכוש ידע) }
+          - { term: enseñar, gloss: ללמד }
+          - { term: estudiar, gloss: 'ללמוד (לעיין, לשנן)' }
+          - { term: practicar, gloss: לתרגל }
+          - { term: mejorar, gloss: להשתפר }
+          - { term: examen, gloss: מבחן }
+          - { term: evaluación, gloss: הערכה }
+          - { term: nota, gloss: ציון }
+          - { term: aprobar, gloss: לעבור (מבחן) }
+          - { term: suspender, gloss: להיכשל }
+          - { term: progreso, gloss: התקדמות }
+          - { term: logro, gloss: הישג }
+          - { term: tarea, gloss: שיעורי בית }
+          - { term: trabajo en grupo, gloss: עבודה בקבוצה }
+          - { term: presentación, gloss: מצגת / פרזנטציה }
+          - { term: aprendizaje autónomo, gloss: למידה עצמאית }
+          - { term: curso online, gloss: קורס מקוון }
+          - { term: tecnología educativa, gloss: טכנולוגיה חינוכית }
+          - { term: habilidades, gloss: מיומנויות }
+          - { term: desarrollo personal, gloss: התפתחות אישית }
+          - { term: motivación, gloss: מוטיבציה }
+          - { term: futuro de la educación, gloss: עתיד החינוך }
+          - { term: cambio social, gloss: שינוי חברתי }
+
+vocabulary:
+  - slug: educacion
+    title: Educación
+    items: *educacion-words
+
+activities:
+  - slug: educacion-pasado
+    title: 'Pretérito perfecto e indefinido: mis experiencias'
+    minutes: 8
+    items:
+      - id: he-participado
+        type: multipleChoice
+        prompt: Yo ___ en muchos cursos de formación.
+        options:
+          - { text: he participado, correct: true }
+          - {
+              text: participado,
+              feedback: 'El pretérito perfecto necesita el verbo *haber* antes del participio: *he participado*.',
+            }
+          - {
+              text: ha participado,
+              feedback: '*Ha* es para él / ella. Para *yo* usamos *he*: *he participado*.',
+            }
+      - id: ha-ensenado
+        type: fillBlank
+        prompt: Completa con el verbo *enseñar* en pretérito perfecto.
+        text: Mi profesora me ___ a no tener miedo a equivocarme.
+        blanks: [[ha enseñado]]
+      - id: la-conoci
+        type: multipleChoice
+        prompt: He tenido una profesora que me ha marcado mucho. La ___ en la secundaria.
+        options:
+          - { text: conocí, correct: true }
+          - {
+              text: he conocido,
+              feedback: 'Aquí damos un detalle concreto (cuándo: *en la secundaria*). Para el detalle usamos el indefinido: *conocí*.',
+            }
+          - {
+              text: conozco,
+              feedback: '*Conozco* es presente. Hablamos de un momento del pasado: *conocí*.',
+            }
+      - id: detalle
+        type: trueFalse
+        prompt: Usamos el pretérito perfecto para dar el detalle concreto (cuándo, dónde, con quién).
+        answer: false
+        feedback:
+          correct: '¡Correcto! El detalle concreto va en indefinido: *El más importante lo hice en 2022.*'
+          incorrect: 'El perfecto es para la experiencia (*He participado en muchos cursos*); el detalle concreto va en indefinido (*Lo hice en 2022*).'
+      - id: participios
+        type: matching
+        prompt: Une cada verbo con su participio.
+        pairs:
+          - [estudiar, estudiado]
+          - [aprender, aprendido]
+          - [hacer, hecho]
+          - [ver, visto]
+          - [escribir, escrito]
+      - id: lo-hice
+        type: fillBlank
+        prompt: Completa con el verbo *hacer* (yo) en el tiempo correcto.
+        text: He participado en muchos cursos. El más importante lo ___ en 2022.
+        blanks: [[hice]]
+      - id: has-estudiado
+        type: fillBlank
+        prompt: Completa con el verbo *estudiar* (tú) en pretérito perfecto.
+        text: ¿___ alguna vez una materia muy difícil?
+        blanks: [[Has estudiado, has estudiado, Tú has estudiado, tú has estudiado]]
+      - id: ordena-videos
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: He aprendido mucho con vídeos online.
+
+  - slug: educacion-futuro
+    title: 'El futuro: ir a + infinitivo y futuro simple'
+    minutes: 8
+    items:
+      - id: voy-a
+        type: multipleChoice
+        prompt: El próximo año ___ estudiar educación especial. (yo)
+        options:
+          - { text: voy a, correct: true }
+          - {
+              text: voy,
+              feedback: 'Falta la preposición *a*: *ir* + **a** + infinitivo (*voy a estudiar*).',
+            }
+          - { text: vas a, feedback: '*Vas* es para *tú*. Para *yo* usamos *voy a*.' }
+      - id: usaran
+        type: fillBlank
+        prompt: Completa con el verbo *usar* en futuro simple.
+        text: Las escuelas ___ más tecnología en el futuro.
+        blanks: [[usarán]]
+      - id: irregulares
+        type: matching
+        prompt: Une cada verbo con su forma en futuro simple.
+        pairs:
+          - [tener (yo), tendré]
+          - [hacer (yo), haré]
+          - [poder (yo), podré]
+          - [ser (la educación), será]
+          - [aprender (ellos), aprenderán]
+      - id: plan-prediccion
+        type: trueFalse
+        prompt: 'Usamos *ir a* + infinitivo para planes e intenciones, y el futuro simple para predicciones.'
+        answer: true
+        feedback:
+          correct: '¡Correcto! *Voy a estudiar pedagogía* (plan). *La educación será más digital* (predicción).'
+          incorrect: '*Ir a* + infinitivo = plan (*Voy a estudiar pedagogía*). Futuro simple = predicción (*La educación será más digital*).'
+      - id: prediccion
+        type: multipleChoice
+        prompt: ¿Qué frase es una predicción con futuro simple?
+        options:
+          - { text: La educación será más flexible., correct: true }
+          - {
+              text: Vamos a crear un programa nuevo.,
+              feedback: 'Esta frase usa *ir a* + infinitivo: es un plan. El futuro simple es *será*, *aprenderán*…',
+            }
+          - {
+              text: He estudiado en una universidad.,
+              feedback: 'Esta frase está en pretérito perfecto (pasado). El futuro simple es *será*, *aprenderán*…',
+            }
+      - id: vamos
+        type: fillBlank
+        prompt: Completa con el verbo *ir* (nosotros).
+        text: Nosotros ___ a cambiar la manera de enseñar.
+        blanks: [[vamos]]
+      - id: ayudara
+        type: multipleChoice
+        prompt: Voy a hacer un curso de psicología educativa. Me ___ a entender mejor a mis alumnos.
+        options:
+          - { text: ayudará, correct: true }
+          - {
+              text: ayudó,
+              feedback: '*Ayudó* es pasado. El curso es un plan, y el resultado va en futuro: *ayudará*.',
+            }
+          - {
+              text: ayudar,
+              feedback: 'Aquí necesitamos un verbo conjugado en futuro: *Me ayudará*.',
+            }
+      - id: ordena-inclusiva
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: La educación será más inclusiva.

@@ -1,0 +1,656 @@
+# Cycle "Viaggiare", converted from the Italian level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-livello-3
+slug: viaggiare
+title: Viaggiare
+goal: Raccontare esperienze di viaggio con il passato prossimo e dire che cosa era successo prima con il trapassato prossimo.
+position: 10
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Passato prossimo" and "Trapassato prossimo") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's
+    summary rules, the activity examples and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Grammar summary, passato prossimo: the source rule "Non usare espressioni di tempo
+    specifiche come ieri, la settimana scorsa, nel 2020 quando si vuole enfatizzare
+    l'esperienza" is the English present perfect rule translated literally. It is wrong
+    for Italian: the passato prossimo is used freely with ieri, la settimana scorsa,
+    nel 2020 (the cycle's own examples do it: "Nel 2025 mi sono perso a Venezia"). It
+    was rewritten: the passato prossimo is used both for life experiences (often with
+    mai / già) and for finished actions at a precise time. Please confirm.
+  - >-
+    Grammar summary, trapassato prossimo: "La forma è uguale per tutti i soggetti" is
+    the English "had + participle" rule and is wrong for Italian. Rewritten: the
+    imperfetto of avere / essere changes with the person (avevo, avevi, aveva…; ero,
+    eri, era…), and with essere the participle agrees (era partito / era partita).
+    ADDED (not in the source): when to use essere or avere, a passato prossimo table
+    and a trapassato prossimo table, and the frame "Quando + passato prossimo, … già +
+    trapassato". Please confirm.
+  - >-
+    Links: the lesson slides (gamma.app) are not allowed and were left out (mentioned
+    in a teacher note). The Quizlet link's "?new" parameter was removed. The
+    "Data / Partecipanti" lines and the "Risposta studente 1/2/3" lines were removed
+    (the platform has answer boxes).
+  - >-
+    Corrections: broken bold marks and "&#10;" characters in four warm-up questions
+    were removed; warm-up 5 "Sei mai tornato" → "tornato / tornata", warm-up 8 "da
+    solo" → "da solo / da sola"; warm-up 7 "Cosa era successo che ha causato il
+    cambiamento?" → "Che cosa era successo? Perché hai cambiato i piani?"; Activity 2
+    prize "mi sono identificato" → "identificato / identificata"; Activity 3 "Cosa era
+    successo prima (trapassato)" → "(trapassato prossimo)"; Activity 1 structures
+    "Sono stato/a…, arrivato/a" written as "stato / stata, arrivato / arrivata".
+  - >-
+    Homework corrections: question 1 "Cosa avevi fatto prima che ti ha fatto sentire
+    pronto?" → "Che cosa avevi fatto prima per sentirti pronto / pronta?"; question 2
+    "Cosa avevi messo dentro che era importante?" → "Che cosa di importante ci avevi
+    messo dentro?"; question 3 "Ti sei mai perso" → "perso / persa"; question 9 "Cosa
+    era successo che ti ha fatto arrivare in ritardo?" → "Che cosa era successo? Perché
+    eri in ritardo?". Interview message: in the source Mori plays the traveller but is
+    also asked to "fammi una domanda di approfondimento"; it now also asks Mori to
+    correct the student's questions. "[nome del viaggiatore]" → "___".
+  - >-
+    Added: sentence frames for the warm-up questions (the source has none). Kept the
+    model name "Shachar" in the introduction example (a model sentence, not a student
+    answer). The source gives no times for this cycle, so no minutes were added; the
+    plan note asks the teacher to choose activities to fit the lesson. Activity 1's
+    "Strutture utili" and Activity 2's "Banca di verbi" are word banks. Activity 4 has
+    no example in the source: two model sentences were added (please confirm).
+  - >-
+    Activity 2 needs a timeline on the board (teacher). Activity 4 (debate) has the
+    skill "conversazione e opinioni" in the source; it is mapped to the passato
+    prossimo, as its brainstorming asks for it.
+  - >-
+    Vocabulary: kept as in the source (40 words), only first letters lowercased.
+    "Esperienza unica – חוויה של פעם בחיים" kept; please check.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: viaggiare-classe
+    title: 'In classe: Viaggiare'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Viaggiare
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Passato prossimo
+            description: 'Esperienze di viaggio e azioni concluse: *sono stato in Giappone, ho perso il volo, non ho mai…*'
+          - name: Trapassato prossimo
+            description: "Un'azione successa prima di un'altra nel passato: *quando sono arrivato, avevo già dimenticato il passaporto*"
+      - id: quizlet
+        type: externalLink
+        label: Viaggiare su Quizlet
+        url: https://quizlet.com/br/1149300499/viaggiare-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazione
+      - id: intro
+        type: sentenceFrame
+        frame: Mi chiamo ___. Avevo viaggiato in ___ prima di iniziare a studiare l'italiano.
+        example: Mi chiamo Shachar. Avevo viaggiato in Messico prima di iniziare a studiare l'italiano e questo mi ha fatto capire quanto sia difficile imparare una nuova lingua.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup-hint
+        type: callout
+        tone: info
+        text: Rispondi con **frasi complete** e giustifica la tua risposta. Usa il **passato prossimo** e, quando serve, il **trapassato prossimo**. Se non vuoi parlare di esperienze vere, puoi inventare una situazione, ma usa bene i tempi verbali.
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Quanti Paesi hai visitato nella tua vita?
+            frame: Ho visitato ___ Paesi, per esempio ___.
+          - question: Qual è stato il viaggio più bello che hai fatto finora? Che cosa lo ha reso speciale?
+            frame: Il viaggio più bello è stato ___. Lo ha reso speciale ___.
+          - question: Qual è la cosa più inaspettata che ti è successa mentre viaggiavi?
+            frame: Una volta, mentre viaggiavo in ___, mi è successo che ___.
+          - question: Durante un viaggio, che cosa avevi messo in valigia che poi si è rivelato completamente inutile?
+            frame: Avevo messo in valigia ___, ma non l'ho mai usato / usata.
+          - question: Sei mai tornato / tornata nello stesso posto più di una volta? Perché hai deciso di tornare?
+            frame: Sì, sono tornato / tornata a ___ perché ___.
+          - question: Hai mai perso qualcosa durante un viaggio? Che cosa avevi fatto prima di accorgerti che mancava?
+            frame: Sì, ho perso ___. Prima, avevo ___.
+          - question: Hai mai dovuto cambiare i tuoi piani durante un viaggio? Che cosa era successo? Perché hai cambiato i piani?
+            frame: Sì, ho dovuto cambiare i piani perché ___ era / aveva già ___.
+          - question: Hai mai viaggiato da solo / da sola? Com'è stata l'esperienza rispetto a viaggiare con un gruppo?
+            frame: Sì, ho viaggiato da solo / da sola a ___. È stato ___ rispetto a ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Storie di viaggio'
+        skills: [Passato prossimo]
+        steps:
+          - 'Pensa ai viaggi che hai fatto nella tua vita: Paesi visitati, esperienze insolite, problemi incontrati, situazioni divertenti o difficili.'
+          - "**Fase 1, brainstorming (individuale):** prepara due esperienze, **una vera** e **una falsa**. La storia comincia con il **passato prossimo**; poi puoi aggiungere dettagli con l'imperfetto o il trapassato prossimo."
+          - '**Fase 2, racconto e domande (in coppia o in piccoli gruppi):** racconta le due storie. Gli altri ascoltano senza interrompere. Poi ogni compagno fa almeno **2 domande di approfondimento** (vedi sotto).'
+          - '**Fase 3, votazione:** il gruppo decide quale storia è falsa e dà almeno una motivazione basata su quello che ha sentito. Poi chi ha raccontato rivela la verità.'
+          - "**Fase 4, sfida di classe (facoltativa):** l'insegnante sceglie 2 o 3 storie, oppure scrive alcune frasi anonime alla lavagna. La classe dice quale tempo verbale è stato usato e chi potrebbe aver detto la frase."
+        wordBank:
+          - Non ho mai…
+          - Sono stato / stata…
+          - Quando sono arrivato / arrivata…
+          - Prima di questo, avevo…
+          - Non avevo mai…
+        example: |-
+          **Verità:** *Sono stato in Giappone e ho provato il sushi in un ristorante tradizionale. È stato incredibile e ho imparato a prepararlo con lo chef.*
+          **Bugia:** *Sono stato in Australia e ho fatto paracadutismo sopra la Grande Barriera Corallina. È stata l'esperienza più emozionante della mia vita.*
+      - id: act1-questions
+        type: discussionQuestions
+        title: Domande di approfondimento
+        answerable: false
+        items:
+          - question: Quando è successo?
+          - question: Con chi eri?
+          - question: Avevi organizzato tutto prima del viaggio?
+          - question: Avevi già visitato quel posto?
+          - question: Perché hai deciso di farlo?
+      - id: act1-stories
+        type: discussionQuestions
+        title: Le mie due storie
+        items:
+          - question: La storia vera
+            frame: Sono stato / stata in ___ e ___.
+          - question: La storia falsa
+            frame: Sono stato / stata in ___ e ___.
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Quando tu hai…, io avevo già…'
+        skills: [Trapassato prossimo]
+        steps:
+          - "**Promemoria:** *Quando* + passato prossimo, *io avevo già* + participio passato. Esempio: *Quando sono arrivato all'aeroporto, avevo già dimenticato il passaporto.* Che cosa è successo prima? → dimenticare il passaporto. Che cosa è successo dopo? → arrivare all'aeroporto."
+          - "**Fase 1, la storia dell'insegnante:** ascolta la storia dell'insegnante. L'anno è scritto sulla linea del tempo alla lavagna: *Nel 2025 mi sono perso completamente a Venezia perché ho seguito il navigatore e ho camminato in cerchio per un'ora.*"
+          - "**Fase 2, preparazione individuale:** pensa a una storia che è successa **prima** della storia dell'insegnante. Struttura obbligatoria: *Quando tu* + passato prossimo (anno), *io avevo già* + participio passato (anno precedente)."
+          - "**Fase 3, catena narrativa:** racconta la tua storia e aggiungi un dettaglio al passato prossimo. Lo studente successivo si collega alla storia dell'insegnante o a quella dello studente precedente."
+          - '**Fase 4, riepilogo e premi:** la classe assegna i premi: il viaggiatore più sfortunato, la storia più divertente, il momento più stressante, il viaggio che non vorrei mai fare, la storia con cui mi sono identificato / identificata di più.'
+        wordBank:
+          - avevo già perso
+          - avevo già prenotato
+          - avevo già dimenticato
+          - avevo già perso il volo
+          - avevo già provato
+          - avevo già pagato
+          - avevo già sbagliato
+        example: |-
+          **Insegnante:** *Nel 2025 mi sono perso a Venezia…*
+          **Studente 1:** *Quando ti sei perso a Venezia nel 2025, io avevo già perso il passaporto all'aeroporto di Madrid nel 2019. Ho dovuto parlare con la polizia e ho perso il volo.*
+          **Studente 2:** *Quando hai perso il passaporto nel 2019, io avevo già mangiato insetti fritti in Thailandia nel 2018 senza sapere che cosa fossero. Pensavo che fossero patatine.*
+      - id: act2-frame
+        type: sentenceFrame
+        prompt: La mia storia per la catena
+        frame: Quando tu ___ nel ___, io avevo già ___ nel ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Imparare dai miei errori'
+        skills: [Passato prossimo, Trapassato prossimo]
+        steps:
+          - 'Molti errori succedono durante un viaggio. **Fase 1:** scegli una situazione: problemi linguistici, errori culturali, problemi con il cibo, perdersi, problemi di trasporto, problemi economici, problemi con internet o con il telefono, problemi di sicurezza o di salute.'
+          - "**Fase 2:** prepara una storia in **3 parti** con le frasi qui sotto: 1. l'esperienza (passato prossimo); 2. che cosa era successo prima (trapassato prossimo); 3. la lezione imparata."
+          - '**Fase 3, in coppia:** racconta la tua storia con le tre parti. Chi ascolta fa almeno una domanda di approfondimento. Poi vi scambiate i ruoli.'
+          - '**Fase 4, giro di consigli:** condividi un consiglio con la classe: *Ho imparato che è importante…*'
+      - id: act3-parts
+        type: discussionQuestions
+        title: La mia storia in 3 parti
+        items:
+          - question: "Parte 1: l'esperienza (passato prossimo)"
+            frame: Ho avuto un problema con ___. / Ho fatto un errore quando ___. / Mi è successo che ___.
+          - question: 'Parte 2: che cosa era successo prima (trapassato prossimo)'
+            frame: Prima di questo, avevo ___. / Quando ___, avevo già ___. / Non avevo mai ___.
+          - question: 'Parte 3: la lezione imparata'
+            frame: Ho imparato che ___. / Adesso so che ___. / La prossima volta ___.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Dibattito. Turisti: dentro o fuori?'
+        skills: [Passato prossimo]
+        steps:
+          - "Negli ultimi anni città come Barcellona, Venezia e Amsterdam sono diventate molto affollate a causa del turismo. Alcuni residenti dicono che i prezzi sono aumentati, che c'è troppo rumore e che la vita quotidiana è più difficile. Altri sostengono che il turismo crea lavoro, aiuta l'economia locale e porta opportunità culturali."
+          - '**Fase 1, introduzione:** discussione generale, senza esprimere opinioni forti.'
+          - "**Fase 2, brainstorming in gruppi:** Gruppo A: *I turisti dovrebbero essere limitati.* Gruppo B: *I turisti non dovrebbero essere limitati.* Ogni gruppo prepara 4 o 5 argomenti con il **passato prossimo** per parlare di esperienze reali o generali, e prepara anche possibili risposte agli argomenti dell'altro gruppo."
+          - '**Fase 3, dibattito strutturato:** il Gruppo A presenta un argomento, il Gruppo B risponde; poi il Gruppo B presenta un argomento e il Gruppo A risponde.'
+          - '**Fase 4, domande finali:** vedi sotto.'
+        example: |-
+          *A Venezia i prezzi sono aumentati molto e molti residenti sono andati a vivere fuori città.*
+          *Il turismo ha creato molti posti di lavoro e ha aiutato l'economia locale.*
+      - id: act4-questions
+        type: discussionQuestions
+        title: Domande finali
+        items:
+          - question: Hai mai visitato un luogo molto affollato? Come ti sei sentito / sentita?
+            frame: Sì, ho visitato ___. Mi sono sentito / sentita ___.
+          - question: Secondo te è giusto limitare il numero di turisti? Perché?
+            frame: Secondo me ___ perché ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Passato prossimo** (domande di riscaldamento,
+          Attività 1, 3 e 4) e **Trapassato prossimo** (giro di presentazione, Attività 2
+          e 3). Obiettivi comunicativi: raccontare esperienze di viaggio, mettere in
+          ordine eventi passati, esprimere opinioni e partecipare a un dibattito. Il
+          quaderno non indica i tempi: scegli le attività in base alla durata della
+          lezione. La presentazione della lezione (gamma.app) non è inclusa nella
+          piattaforma (i link alle presentazioni non sono permessi); usala dal tuo
+          materiale se vuoi.
+      - id: n-intro
+        anchor: intro
+        text: Scrivi il modello alla lavagna e dai prima il tuo esempio.
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Scegli le domande per il tuo gruppo. Gli studenti rispondono con frasi
+          complete, usano il passato prossimo e il trapassato prossimo quando serve, e
+          giustificano le risposte.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Lavoro individuale + coppie o stanze separate (breakout rooms). Per la Fase 4
+          (facoltativa) scegli 2 o 3 studenti con storie forti, oppure scrivi alla
+          lavagna alcune frasi anonime sentite durante l'attività.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Attività di gruppo. Racconta la tua storia con un anno chiaro e scrivilo sulla
+          linea del tempo alla lavagna: l'anno deve permettere agli studenti di raccontare
+          eventi precedenti. Durante la catena aggiorna la linea del tempo con gli anni di
+          ogni storia. Alla fine correggi gli errori più comuni (ausiliare, accordo del
+          participio con *essere*: *ero già stato / stata*).
+      - id: n-act3
+        anchor: act3
+        text: Individuale + coppie. Controlla che ogni storia abbia le tre parti e almeno un verbo al trapassato prossimo.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Dividi la classe in due gruppi. Nella Fase 1 lascia parlare tutti senza
+          prendere posizione; nella Fase 2 ricorda di usare il passato prossimo per gli
+          esempi.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: viaggiare-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-passato
+        type: ruleSummary
+        skill: Passato prossimo
+        rules:
+          - text: 'Il **passato prossimo** si usa per le **esperienze di vita** (spesso con *mai* e *già*) e per le **azioni concluse** nel passato, anche quando diciamo il momento preciso (*ieri, la settimana scorsa, nel 2020*).'
+            examples:
+              - Ho visitato Parigi.
+              - Sono andato in Francia.
+              - Nel 2025 mi sono perso a Venezia.
+          - text: 'Struttura: **avere** o **essere** (al presente) + **participio passato**. Con **essere** (verbi di movimento e di cambiamento come *andare, arrivare, partire, tornare, rimanere*, e i verbi riflessivi) il participio si accorda con il soggetto.'
+            examples:
+              - Marco è arrivato. / Marta è arrivata.
+              - I miei amici sono partiti per Roma.
+              - Ho prenotato l'albergo. / Abbiamo perso il treno.
+          - text: 'Domande sulle esperienze: **Hai mai** + participio…? Negazione: **Non ho mai** + participio…'
+            examples:
+              - Hai mai visitato Roma?
+              - Non ho mai perso il passaporto.
+              - Non sono mai stato in Giappone.
+      - id: passato-table
+        type: table
+        caption: Passato prossimo
+        header: [Persona, avere + participio, essere + participio]
+        rows:
+          - [io, ho visitato, sono partito / partita]
+          - [tu, hai visitato, sei partito / partita]
+          - [lui / lei, ha visitato, è partito / partita]
+          - [noi, abbiamo visitato, siamo partiti / partite]
+          - [voi, avete visitato, siete partiti / partite]
+          - [loro, hanno visitato, sono partiti / partite]
+      - id: rules-trapassato
+        type: ruleSummary
+        skill: Trapassato prossimo
+        rules:
+          - text: "Il **trapassato prossimo** indica un'azione successa **prima di un'altra azione** nel passato."
+            examples:
+              - Avevo finito i compiti prima di uscire.
+              - Era già partito quando sono arrivato.
+          - text: "Struttura: **imperfetto di avere o essere** + **participio passato**. L'ausiliare cambia con la persona (*avevo, avevi, aveva…*; *ero, eri, era…*). Si sceglie *avere* o *essere* come nel passato prossimo, e con *essere* il participio si accorda."
+            examples:
+              - Avevo già prenotato l'albergo.
+              - Il treno era già partito.
+              - Marta era già stata in Italia.
+          - text: 'Per raccontare due azioni: **Quando** + passato prossimo (dopo), … **già** + trapassato prossimo (prima).'
+            examples:
+              - Quando sono arrivato all'aeroporto, avevo già dimenticato il passaporto.
+              - Quando ti sei perso a Venezia, io avevo già perso il passaporto a Madrid.
+          - text: 'Domande: **Avevi già** + participio…? Negazione: **Non avevo mai** + participio…'
+            examples:
+              - Avevi già visitato quel posto?
+              - Non avevo mai viaggiato da solo.
+      - id: trapassato-table
+        type: table
+        caption: Trapassato prossimo
+        header: [Persona, avere + participio, essere + participio]
+        rows:
+          - [io, avevo prenotato, ero partito / partita]
+          - [tu, avevi prenotato, eri partito / partita]
+          - [lui / lei, aveva prenotato, era partito / partita]
+          - [noi, avevamo prenotato, eravamo partiti / partite]
+          - [voi, avevate prenotato, eravate partiti / partite]
+          - [loro, avevano prenotato, erano partiti / partite]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità e chiedi a ogni studente un esempio nuovo sui suoi viaggi, con un'azione al passato prossimo e una al trapassato prossimo.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: viaggiare-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia un messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-viaggi
+        type: aiTutorPrompt
+        title: Parliamo di viaggi
+        message: >-
+          Ciao Mori! Parliamo di viaggi. Fammi domande sulle mie esperienze di viaggio.
+          Voglio rispondere usando il passato prossimo per raccontare le mie esperienze e il
+          trapassato prossimo per spiegare che cosa era successo prima di un problema o di
+          una situazione durante il viaggio.
+      - id: interview-title
+        type: heading
+        level: 3
+        text: 'Attività 1: Intervista a un viaggiatore famoso'
+      - id: interview-prep
+        type: discussionQuestions
+        title: 'Scegli un viaggiatore famoso e prepara 5 domande: 3 al passato prossimo (esperienze di vita) e 2 al trapassato prossimo (che cosa era successo prima di un evento).'
+        items:
+          - question: Domanda 1 (passato prossimo)
+            frame: Hai mai visitato ___?
+          - question: Domanda 2 (passato prossimo)
+            frame: Quali sfide hai affrontato ___?
+          - question: Domanda 3 (passato prossimo)
+            frame: ___?
+          - question: Domanda 4 (trapassato prossimo)
+            frame: Che cosa era successo prima di ___?
+          - question: Domanda 5 (trapassato prossimo)
+            frame: Avevi mai ___ prima di ___?
+      - id: mori-interview
+        type: aiTutorPrompt
+        title: Intervista
+        intro: Scrivi il nome del viaggiatore al posto di ___.
+        message: >-
+          Ciao Mori! Facciamo un'intervista. Fingi di essere ___. Ti farò domande sulle
+          tue esperienze usando il passato prossimo e il trapassato prossimo. Dopo ogni
+          risposta, fammi tu una domanda di approfondimento per continuare la
+          conversazione e correggi le mie domande se ci sono errori.
+      - id: interview-remember
+        type: callout
+        tone: info
+        title: Ricorda
+        text: |-
+          Usa il **passato prossimo** per le esperienze.
+          Usa il **trapassato prossimo** per le azioni precedenti.
+          Fai **domande aperte**.
+      - id: questions-title
+        type: heading
+        level: 3
+        text: 'Attività 2: Domande sui viaggi'
+      - id: questions
+        type: discussionQuestions
+        title: Rispondi usando il passato prossimo e il trapassato prossimo.
+        items:
+          - question: Hai mai viaggiato da solo / da sola? Che cosa avevi fatto prima per sentirti pronto / pronta?
+          - question: Hai mai perso la valigia? Che cosa di importante ci avevi messo dentro?
+          - question: Ti sei mai perso / persa in un Paese straniero? Avevi già imparato la lingua locale?
+          - question: Hai mai provato un cibo strano? Che cosa ti avevano detto prima di assaggiarlo?
+          - question: Hai mai visitato un luogo visto in un film? Avevi già visto il film prima di andarci?
+          - question: Hai mai avuto un volo in ritardo? Che cosa avevi programmato di fare all'arrivo?
+          - question: Hai mai dormito in un ostello? Avevi già condiviso una stanza con sconosciuti?
+          - question: Hai mai fatto un viaggio in macchina con amici? Avevate pianificato tutto prima di partire?
+          - question: Hai mai perso un treno o un aereo? Che cosa era successo? Perché eri in ritardo?
+          - question: Hai mai fatto amicizia durante un viaggio? Che cosa avevate vissuto prima di incontrarvi?
+      - id: mori-questions
+        type: aiTutorPrompt
+        title: Correggi le mie risposte
+        intro: Copia le tue risposte dopo il messaggio.
+        message: >-
+          Ciao Mori. Ho risposto alle domande sui viaggi usando il passato prossimo e il
+          trapassato prossimo. Prima correggi le mie risposte e dammi suggerimenti per
+          migliorarle. Poi parliamo insieme delle mie esperienze.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: viaggiare-pratica
+    book: workbook
+    title: 'Pratica: Viaggiare'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-passato
+        type: activity
+        activity: viaggiare-passato
+      - id: ex-trapassato
+        type: activity
+        activity: viaggiare-trapassato
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: viaggiare-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole dei viaggi
+        glossLang: he
+        link: https://quizlet.com/br/1149300499/viaggiare-flash-cards/
+        items: &viaggiare-words
+          - { term: itinerario, gloss: מסלול טיול }
+          - { term: alloggio, gloss: מקום לינה }
+          - { term: prenotazione, gloss: הזמנה / הזמנת מקום }
+          - { term: prenotare, gloss: להזמין }
+          - { term: partenza, gloss: יציאה }
+          - { term: arrivo, gloss: הגעה }
+          - { term: esperienza unica, gloss: חוויה של פעם בחיים }
+          - { term: gestire il budget, gloss: לנהל תקציב }
+          - { term: affrontare un problema, gloss: להתמודד עם בעיה }
+          - { term: adattarsi, gloss: להסתגל }
+          - { term: rimanere bloccato, gloss: להיתקע }
+          - { term: disorientato, gloss: מבולבל / חסר התמצאות }
+          - { term: affollato, gloss: צפוף }
+          - { term: imprevedibile, gloss: בלתי צפוי }
+          - { term: assicurazione, gloss: ביטוח }
+          - { term: escursione, gloss: טיול קצר / סיור }
+          - { term: passeggiata, gloss: הליכה }
+          - { term: trekking, gloss: טרק / טיול רגלי ארוך }
+          - { term: viaggio, gloss: טיול / נסיעה }
+          - { term: vacanza, gloss: חופשה }
+          - { term: tour, gloss: סיור מודרך }
+          - { term: guida turistica, gloss: מדריך טיולים }
+          - { term: locale, gloss: מקומי }
+          - { term: agenzia di viaggi, gloss: סוכנות נסיעות }
+          - { term: vagare, gloss: לשוטט }
+          - { term: borseggiatore, gloss: כייס }
+          - { term: truffa, gloss: תרמית }
+          - { term: crociera, gloss: שייט תענוגות }
+          - { term: perdere il volo, gloss: לפספס טיסה }
+          - { term: bagaglio, gloss: מזוודה / מטען }
+          - { term: valigia, gloss: מזוודה }
+          - { term: passaporto, gloss: דרכון }
+          - { term: biglietto, gloss: כרטיס }
+          - { term: volo, gloss: טיסה }
+          - { term: aeroporto, gloss: שדה תעופה }
+          - { term: stazione, gloss: תחנה }
+          - { term: prenotare in anticipo, gloss: להזמין מראש }
+          - { term: soggiornare, gloss: לשהות }
+          - { term: organizzare un viaggio, gloss: לארגן טיול }
+          - { term: cambiare programma, gloss: לשנות תוכנית }
+
+vocabulary:
+  - slug: viaggiare
+    title: Viaggiare
+    items: *viaggiare-words
+
+activities:
+  - slug: viaggiare-passato
+    title: 'Passato prossimo: sono stato, ho perso, non ho mai…'
+    minutes: 8
+    items:
+      - id: e-stata
+        type: multipleChoice
+        prompt: "L'estate scorsa Marta ___ in Giappone."
+        options:
+          - { text: è stata, correct: true }
+          - { text: ha stata, feedback: "Il verbo *essere* usa l'ausiliare *essere*: *è stata*." }
+          - {
+              text: è stato,
+              feedback: 'Con *essere* il participio si accorda con il soggetto. Marta è femminile: *è stata*.',
+            }
+      - id: hai-mai-visitato
+        type: fillBlank
+        prompt: Completa con il passato prossimo di *visitare* (tu).
+        text: ___ mai ___ Parigi?
+        blanks: [[Hai, hai, Tu hai, tu hai], [visitato]]
+      - id: con-ieri
+        type: trueFalse
+        prompt: 'In italiano il passato prossimo si può usare con un momento preciso: *ieri, la settimana scorsa, nel 2020*.'
+        answer: true
+        feedback:
+          correct: 'Giusto! *Nel 2025 mi sono perso a Venezia.* Il passato prossimo va bene anche con un momento preciso.'
+          incorrect: "In italiano il passato prossimo si usa anche con un momento preciso: *Ieri ho prenotato l'albergo. Nel 2025 mi sono perso a Venezia.*"
+      - id: unisci-participi
+        type: matching
+        prompt: Unisci ogni verbo alla sua forma di *io* al passato prossimo.
+        pairs:
+          - [perdere, ho perso]
+          - [prendere, ho preso]
+          - [vedere, ho visto]
+          - [rimanere, sono rimasto]
+          - [fare, ho fatto]
+      - id: sono-arrivato
+        type: multipleChoice
+        prompt: "Luca racconta: Quando ___ all'aeroporto, ho preso un taxi."
+        options:
+          - { text: sono arrivato, correct: true }
+          - {
+              text: ho arrivato,
+              feedback: 'Il verbo *arrivare* è un verbo di movimento: usa *essere*, *sono arrivato*.',
+            }
+          - {
+              text: arrivato,
+              feedback: "Il passato prossimo ha bisogno dell'ausiliare: *sono arrivato*.",
+            }
+      - id: sono-partiti
+        type: fillBlank
+        prompt: Completa con il passato prossimo di *partire*.
+        text: Ieri i miei amici ___ per Roma.
+        blanks: [[sono partiti]]
+      - id: non-ho-mai
+        type: multipleChoice
+        prompt: '*Hai mai perso il volo?* Qual è la risposta giusta?'
+        options:
+          - { text: 'No, non ho mai perso il volo.', correct: true }
+          - {
+              text: 'No, ho mai perso il volo.',
+              feedback: 'Nella negazione serve *non* prima del verbo: *Non ho mai perso…*',
+            }
+          - {
+              text: 'No, non mai ho perso il volo.',
+              feedback: "*Mai* va tra l'ausiliare e il participio: *non ho mai perso*.",
+            }
+      - id: ordina-passaporto
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Non ho mai perso il passaporto.
+
+  - slug: viaggiare-trapassato
+    title: 'Trapassato prossimo: avevo già…'
+    minutes: 8
+    items:
+      - id: avevo-dimenticato
+        type: multipleChoice
+        prompt: "Quando sono arrivato all'aeroporto, ___ già il passaporto."
+        options:
+          - { text: avevo dimenticato, correct: true }
+          - {
+              text: ho dimenticato,
+              feedback: "Dimenticare il passaporto è successo **prima** di arrivare: per l'azione precedente usiamo il trapassato prossimo, *avevo dimenticato*.",
+            }
+          - {
+              text: dimenticavo,
+              feedback: "*Dimenticavo* è imperfetto. Per un'azione successa prima di un'altra usiamo *avevo dimenticato*.",
+            }
+      - id: era-partito
+        type: fillBlank
+        prompt: "Completa con l'ausiliare giusto al trapassato prossimo."
+        text: Quando siamo arrivati alla stazione, il treno ___ già partito.
+        blanks: [[era]]
+      - id: stessa-forma
+        type: trueFalse
+        prompt: Il trapassato prossimo ha la stessa forma per tutti i soggetti.
+        answer: false
+        feedback:
+          correct: "Giusto! L'ausiliare cambia con la persona: *avevo, avevi, aveva, avevamo, avevate, avevano*."
+          incorrect: "In italiano l'ausiliare cambia con la persona: *io avevo prenotato, tu avevi prenotato, noi avevamo prenotato…*"
+      - id: unisci-persone
+        type: matching
+        prompt: Unisci ogni persona alla forma giusta del trapassato prossimo.
+        pairs:
+          - [io, avevo prenotato]
+          - [tu, avevi prenotato]
+          - [lui / lei, aveva prenotato]
+          - [noi, avevamo prenotato]
+          - [loro, avevano prenotato]
+      - id: prima-dopo
+        type: multipleChoice
+        prompt: "*Quando Sara è arrivata a Venezia, aveva già prenotato l'albergo.* Quale azione è successa prima?"
+        options:
+          - { text: "prenotare l'albergo", correct: true }
+          - {
+              text: arrivare a Venezia,
+              feedback: "*È arrivata* è al passato prossimo: è l'azione successiva. Il trapassato (*aveva prenotato*) indica l'azione precedente.",
+            }
+      - id: non-avevo-mai
+        type: fillBlank
+        prompt: Completa con il trapassato prossimo di *mangiare* (io).
+        text: Prima di questo viaggio, non ___ mai ___ insetti fritti.
+        blanks: [[avevo], [mangiato]]
+      - id: era-stata
+        type: multipleChoice
+        prompt: Quando è cominciato il corso, Marta ___ in Italia tre volte.
+        options:
+          - { text: era già stata, correct: true }
+          - {
+              text: aveva già stata,
+              feedback: "Il verbo *essere* usa l'ausiliare *essere* anche nel trapassato: *era stata*.",
+            }
+          - {
+              text: era già stato,
+              feedback: 'Con *essere* il participio si accorda. Marta è femminile: *era già stata*.',
+            }
+      - id: ordina-albergo
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Avevo già prenotato l'albergo.

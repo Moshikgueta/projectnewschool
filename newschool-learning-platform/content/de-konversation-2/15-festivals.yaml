@@ -1,0 +1,554 @@
+# Cycle "Festivals", converted from the German level 2 digital notebook
+# ("Conversational German - Digital Notebook", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-konversation-2
+slug: festivals
+title: Festivals
+goal: Mit dem Imperativ Tipps für ein Festival geben und in drei Zeiten über Festivals erzählen.
+position: 15
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Imperativ" and "Drei Zeiten") are NEW: the notebook
+    has no self-study exercises. They were written from the cycle's two skills, its
+    summary, the activity examples and its vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    The notebook lists four foci (Imperativ, Perfekt, Präsens, werden + Infinitiv); its
+    summary groups them into two: "Imperativ" and "Drei Zeiten" (Perfekt, Präsens,
+    Futur). These are the cycle's two skills.
+  - >-
+    Summary, Imperativ: the notebook only says "no subject (du), verb first". Rules were
+    added for how the du-form is built (du kommst → Komm!; e → i verbs keep the i: du
+    isst → Iss!; a → ä verbs lose the umlaut: du trägst → Trag!), that a separable
+    prefix goes to the end (Bring Wasser mit!), and the ihr-form (Kommt! Bringt … mit!)
+    and Sie-form (Kommen Sie!), because Activities 3–4 and the Mori prompts address
+    groups. The Hebrew explanation is kept as a Hebrew text block (lang he). Please
+    check.
+  - >-
+    Summary, drei Zeiten: a reminder was added that the Perfekt uses "sein" with gehen
+    / kommen (Ich bin zum Karneval gegangen) and that werden stands in position 2 with
+    the infinitive at the end. Please confirm.
+  - >-
+    Activity 1 needs a scrambled table of traditions and countries ("Die Schüler
+    bekommen eine ungeordnete Tabelle"), which is not in the notebook. Please add it
+    (or a link on an allowed host); a teacher note says so.
+  - >-
+    Corrections: Activity 2 frame "Das ist der Lieblingsfeiertag von ___." (the holiday
+    was never named) → "Der Lieblingsfeiertag von ___ ist ___."; Activity 4 "Was habt
+    ihr früher besucht?" (does not fit an invented festival) → "Was ist dort letztes
+    Jahr passiert?"; warm-up model "Ich war auf dem Karneval." → "Ich war beim Karneval.
+    / auf dem Karneval." (both used). Mixed "Stelle / Mache / Schreibe" and "Arbeite"
+    imperatives in the steps were made consistent (Stell, Mach, Schreib).
+  - >-
+    The six Mori prompts are written in Hebrew in the notebook. They were translated
+    into German messages; the German example answers are kept as the intro of each
+    prompt. Please check. The tips callout was added from the course pattern.
+  - >-
+    Vocabulary: the English group headings (Festivals & Events, People & Culture,
+    Clothes & Objects, Actions & Verbs, Time & Structure) were dropped. "der Künstler"
+    → "der Künstler / die Künstlerin"; "das Straßenfest – פסטיבל רחוב" → "חגיגת רחוב /
+    פסטיבל רחוב". Please confirm.
+  - >-
+    No times are given for the activities, so none are recorded. The Quizlet link lost
+    its tracking parameter (funnelUUID). The "Schüler 1/2/3" lines are replaced by the
+    answer boxes. There is no beginner / intermediate split in this cycle.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: festivals-unterricht
+    title: 'Unterricht: Festivals'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Festivals
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Imperativ
+            description: '*Komm früh! Trag bequeme Schuhe! Bring Wasser mit!*'
+          - name: Drei Zeiten
+            description: 'Perfekt (*Ich habe getanzt.*), Präsens (*Die Leute tragen Kostüme.*), Futur mit *werden* (*Ich werde wiederkommen.*)'
+      - id: quizlet
+        type: externalLink
+        label: Festivals auf Quizlet
+        url: https://quizlet.com/br/1131439940/festivals-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Zum nächsten Fest verkleide ich mich als ___.
+        example: Ich bin Ana. Zum nächsten Fest verkleide ich mich als Hexe.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Auf welchem Festival warst du?
+            frame: Ich war beim ___. / Ich war auf dem ___.
+          - question: Als was hast du dich letztes Jahr verkleidet?
+            frame: Ich habe mich als ___ verkleidet.
+          - question: Gibt es ein Festival, das du jedes Jahr besuchst? Warum?
+            frame: Ja, ich gehe jedes Jahr zum ___, weil ___.
+          - question: Welches Festival wirst du in Zukunft besuchen?
+            frame: Ich werde nächstes Jahr zum ___ gehen.
+          - question: Was muss man auf einem Festival tun? Antworte im Imperativ.
+            frame: Bring ___ mit. Trag ___. Komm ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Wenn du zu diesem Festival gehst …'
+        skills: [Imperativ]
+        steps:
+          - Du bekommst eine ungeordnete Tabelle (Tradition + Land). Ordne mindestens 3 Traditionen dem richtigen Land zu.
+          - Wählt in Gruppen ein Land und ein Festival.
+          - Recherchiert 10 Minuten und schreibt 5 Dinge, die man dort tun muss. Benutzt den Imperativ.
+          - Jede Gruppe präsentiert ihre Liste.
+        example: |-
+          **Karneval – Rio de Janeiro**
+          *Trag bunte Kleidung. Tanz Samba. Geh auf die Straße. Bring Wasser mit. Mach viele Fotos.*
+      - id: act1-list
+        type: discussionQuestions
+        title: 'Unser Festival: 5 Dinge, die man dort tun muss'
+        items:
+          - question: 1. ___!
+          - question: 2. ___!
+          - question: 3. ___!
+          - question: 4. ___!
+          - question: 5. ___!
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Mein besonderer Feiertag'
+        skills: [Drei Zeiten]
+        steps:
+          - Arbeite in Paaren.
+          - Stell deinem Partner / deiner Partnerin die 5 Fragen unten.
+          - Mach dir kurze Notizen.
+          - Stell deinen Partner / deine Partnerin der Klasse vor.
+        example: |-
+          *Der Lieblingsfeiertag von ___ ist ___.*
+          *Letztes Jahr hat er / sie ___.*
+          *Jetzt ___.*
+          *Nächstes Jahr wird er / sie ___.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Fragen an deinen Partner / deine Partnerin
+        items:
+          - question: Was ist dein Lieblingsfeiertag?
+            frame: Mein Lieblingsfeiertag ist ___.
+          - question: Wann feierst du ihn?
+            frame: Ich feiere ihn im ___. / am ___.
+          - question: Was machst du an diesem Tag?
+            frame: An diesem Tag ___ ich ___.
+          - question: Was hast du letztes Jahr gemacht?
+            frame: Letztes Jahr habe ich ___.
+          - question: Was wirst du nächstes Jahr machen?
+            frame: Nächstes Jahr werde ich ___.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Schreib eine Einladung'
+        skills: [Imperativ]
+        steps:
+          - Arbeite allein oder in Paaren.
+          - Wähl ein bekanntes Festival.
+          - Schreib eine kurze Einladung mit Imperativen. Beschreib, was man dort tun kann.
+          - Lies deine Einladung der Klasse vor.
+        example: |-
+          **Du bist eingeladen zu …**
+          *Komm nach … Trag … Iss … Tanz … Bring deine Freunde mit!*
+      - id: act3-invitation
+        type: discussionQuestions
+        title: Meine Einladung
+        items:
+          - question: Du bist eingeladen zu ___!
+          - question: Komm nach ___!
+          - question: Trag ___!
+          - question: Iss ___!
+          - question: Tanz ___!
+          - question: Bring deine Freunde mit!
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Erfinde dein eigenes Festival'
+        skills: [Drei Zeiten, Imperativ]
+        steps:
+          - Arbeitet in Gruppen von 3.
+          - Erfindet ein neues Festival und beantwortet gemeinsam die Fragen unten.
+          - Bereitet eine kurze Präsentation vor.
+          - Präsentiert euer Festival der Klasse.
+      - id: act4-questions
+        type: discussionQuestions
+        title: Unser Festival
+        items:
+          - question: Wie heißt das Festival?
+            frame: Das Festival heißt ___.
+          - question: Wo findet es statt?
+            frame: Es findet in ___ statt.
+          - question: Wann ist es?
+            frame: Es ist im ___. / am ___.
+          - question: Was trägt man?
+            frame: Man trägt ___.
+          - question: Welche Musik hört man?
+            frame: Man hört ___.
+          - question: Was passiert dort?
+            frame: Dort ___ die Leute ___.
+          - question: Was ist dort letztes Jahr passiert?
+            frame: Letztes Jahr haben die Leute ___.
+          - question: Was wird nächstes Jahr passieren?
+            frame: Nächstes Jahr wird ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Imperativ** (Aufwärmfrage 5,
+          Aktivitäten 1 und 3) und **Drei Zeiten**: Perfekt, Präsens und Futur mit
+          *werden* (Aufwärmfragen 1–4, Aktivitäten 2 und 4).
+      - id: n-intro
+        anchor: intro
+        text: Gib zuerst dein Beispiel, dann ist jeder Schüler dran.
+      - id: n-warmup
+        anchor: warmup-title
+        text: Stell jedem Schüler mindestens zwei Fragen. Die Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Die ungeordnete Tabelle (Traditionen und Länder) ist nicht im Heft. Bereite sie
+          vor der Stunde vor und teile sie aus oder zeig sie auf dem Bildschirm. Die
+          Gruppen recherchieren 10 Minuten.
+      - id: n-act2
+        anchor: act2
+        text: Achte bei der Vorstellung auf die drei Zeiten (Perfekt, Präsens, *werden* + Infinitiv).
+      - id: n-act4
+        anchor: act4
+        text: Jede Gruppe benutzt in der Präsentation alle drei Zeiten und mindestens einen Imperativ (zum Beispiel *Kommt zu unserem Festival!*).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: festivals-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-imperativ
+        type: ruleSummary
+        skill: Imperativ
+        rules:
+          - text: 'Mit dem **Imperativ** geben wir eine Anweisung oder einen Tipp, oder wir bitten direkt um etwas.'
+          - text: 'Im Imperativ (*du*) sagen wir das Wort *du* **nicht**. Das Verb steht **am Anfang**.'
+            examples: [Komm!, Hör zu!, Bring Wasser mit!, Trag bequeme Schuhe!]
+          - text: 'So bilden wir die *du*-Form: *du*-Form im Präsens ohne **-st**. Verben mit *e → i* behalten das *i*. Verben mit *a → ä* haben **keinen** Umlaut.'
+            examples: ['du kommst → Komm!', 'du isst → Iss!', 'du trägst → Trag!']
+          - text: 'Bei trennbaren Verben steht das Präfix **am Ende**.'
+            examples: ['mitbringen → Bring Wasser mit!', 'zuhören → Hör zu!']
+          - text: '**Negativ:** mit *nicht*. **Höflich:** mit *bitte*.'
+            examples: [Geh nicht weg!, Fass das nicht an!, Bitte komm hierher., Bitte hör zu.]
+          - text: 'Für mehrere Freunde (*ihr*): die *ihr*-Form ohne *ihr*. Höflich (*Sie*): Verb + *Sie*.'
+            examples: [Kommt früh!, Bringt Wasser mit!, Kommen Sie zu unserem Festival!]
+      - id: imperativ-he
+        type: text
+        lang: he
+        text: >-
+          משתמשים בציווי כדי לתת הוראה, לתת עצה או לבקש משהו בצורה ישירה. בגרמנית, בציווי לא
+          אומרים את הנושא (du), והפועל מופיע בתחילת המשפט: Komm! – בוא! Hör zu! – תקשיב!
+          Bring Wasser mit! – תביא מים! Trag bequeme Schuhe! – תנעל נעליים נוחות! ציווי שלילי:
+          Geh nicht weg! – אל תלך! Fass das nicht an! – אל תיגע בזה! כדי להיות מנומסים מוסיפים
+          bitte: Bitte hör zu.
+      - id: rules-zeiten
+        type: ruleSummary
+        skill: Drei Zeiten
+        rules:
+          - text: '**Vergangenheit – Perfekt:** was wir gemacht haben. *haben / sein* + Partizip II am Ende; *gehen* und *kommen* mit *sein*.'
+            examples: [Letztes Jahr habe ich getanzt., Ich bin zum Karneval gegangen.]
+          - text: '**Gegenwart – Präsens:** was jetzt passiert.'
+            examples: [Jetzt tragen die Leute Kostüme.]
+          - text: '**Zukunft – werden + Infinitiv:** was passieren wird. *werden* auf Position 2, der Infinitiv am Ende.'
+            examples: [Nächstes Jahr werde ich wiederkommen.]
+          - text: 'Mit den drei Zeiten erzählen wir eine kleine Geschichte: was war, was jetzt passiert und was in der Zukunft sein wird.'
+      - id: zeiten-examples
+        type: examples
+        items:
+          - { text: Letztes Jahr habe ich getanzt., gloss: בשנה שעברה רקדתי. }
+          - { text: Jetzt tragen die Leute Kostüme., gloss: עכשיו האנשים לובשים תחפושות. }
+          - { text: Nächstes Jahr werde ich wiederkommen., gloss: בשנה הבאה אחזור שוב. }
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die zwei Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: festivals-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere eine Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Nachricht 1: Ein Festival aus der Vergangenheit'
+        intro: 'Beispielantwort: *Letztes Jahr habe ich auf dem Karneval getanzt und Musik gehört.*'
+        message: Hallo Mori! Bitte mich, von einem Festival zu erzählen, das ich besucht habe. Ich möchte das Perfekt benutzen und sagen, was ich dort gemacht habe. Bitte korrigiere mich sofort.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Nachricht 2: Was jetzt passiert'
+        intro: 'Beispiel: *Jetzt tragen die Leute Kostüme und feiern auf der Straße.*'
+        message: Hallo Mori! Frag mich, was jetzt auf diesem Festival passiert. Ich möchte im Präsens antworten. Bitte korrigiere mich.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Nachricht 3: Die Zukunft des Festivals'
+        intro: 'Beispiel: *Nächstes Jahr werde ich meine Freunde mitbringen.*'
+        message: Hallo Mori! Frag mich, was ich in Zukunft auf diesem Festival machen werde. Ich antworte mit *werden* + Infinitiv. Bitte korrigiere mich.
+      - id: mori-4
+        type: aiTutorPrompt
+        title: 'Nachricht 4: Tipps geben'
+        intro: 'Beispiel: *Bring Wasser mit. Trag bequeme Schuhe. Geh nicht allein.*'
+        message: Hallo Mori! Stell dir vor, mein Freund fährt zu einem Festival. Bitte mich, ihm drei Tipps im Imperativ zu geben. Bitte korrigiere mich.
+      - id: mori-5
+        type: aiTutorPrompt
+        title: 'Nachricht 5: Kurzes Interview'
+        message: |-
+          Hallo Mori! Sei ein Interviewer. Frag mich:
+          Auf welchem Festival war ich?
+          Was habe ich dort gemacht?
+          Was passiert dort jetzt?
+          Was werde ich dort in Zukunft machen?
+          Welchen Tipp gebe ich Leuten, die dorthin fahren?
+          Ich antworte auf Deutsch, und du korrigierst jeden Fehler.
+      - id: mori-6
+        type: aiTutorPrompt
+        title: 'Nachricht 6: Eine kurze Geschichte über ein Festival'
+        message: |-
+          Hallo Mori! Bitte mich, eine kurze Geschichte mit 4–5 Sätzen über ein Festival zu erzählen:
+          einen Satz in der Vergangenheit,
+          einen Satz in der Gegenwart,
+          einen Satz in der Zukunft,
+          und zwei Tipps im Imperativ.
+          Ich benutze das Perfekt, das Präsens, *werden* und den Imperativ. Bitte korrigiere mich und schlag eine bessere Version vor.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: festivals-uebung
+    book: workbook
+    title: 'Übung: Festivals'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-imperativ
+        type: activity
+        activity: festivals-imperativ
+      - id: ex-zeiten
+        type: activity
+        activity: festivals-zeiten
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: festivals-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für Festivals
+        glossLang: he
+        link: https://quizlet.com/br/1131439940/festivals-flash-cards/
+        items: &festivals-words
+          - { term: das Festival, gloss: פסטיבל }
+          - { term: der Feiertag, gloss: חג }
+          - { term: der Karneval, gloss: קרנבל }
+          - { term: das Fest, gloss: חגיגה }
+          - { term: die Parade, gloss: מצעד }
+          - { term: das Straßenfest, gloss: חגיגת רחוב / פסטיבל רחוב }
+          - { term: die Tradition, gloss: מסורת }
+          - { term: der Brauch, gloss: מנהג }
+          - { term: das Ereignis, gloss: אירוע }
+          - { term: die Leute, gloss: אנשים }
+          - { term: der Freund / die Freundin, gloss: חבר / חברה }
+          - { term: die Gemeinschaft, gloss: קהילה }
+          - { term: der Künstler / die Künstlerin, gloss: אמן / אמנית }
+          - { term: die Musik, gloss: מוזיקה }
+          - { term: tanzen, gloss: לרקוד }
+          - { term: das Kostüm, gloss: תחפושת }
+          - { term: sich verkleiden, gloss: להתחפש }
+          - { term: die Maske, gloss: מסכה }
+          - { term: die Kleidung, gloss: בגדים }
+          - { term: das Ticket, gloss: כרטיס }
+          - { term: das Wasser, gloss: מים }
+          - { term: die Schuhe, gloss: נעליים }
+          - { term: feiern, gloss: לחגוג }
+          - { term: gehen, gloss: ללכת }
+          - { term: kommen, gloss: לבוא }
+          - { term: bringen, gloss: להביא }
+          - { term: tragen, gloss: ללבוש }
+          - { term: hören, gloss: לשמוע }
+          - { term: sehen, gloss: לראות }
+          - { term: machen, gloss: לעשות }
+          - { term: letztes Jahr, gloss: שנה שעברה }
+          - { term: jetzt, gloss: עכשיו }
+          - { term: nächstes Jahr, gloss: שנה הבאה }
+          - { term: heute, gloss: היום }
+          - { term: dort, gloss: שם }
+          - { term: wieder, gloss: שוב }
+
+vocabulary:
+  - slug: festivals
+    title: Festivals
+    items: *festivals-words
+
+activities:
+  - slug: festivals-imperativ
+    title: 'Imperativ: Komm! Trag! Bring … mit!'
+    minutes: 8
+    items:
+      - id: bring-mit
+        type: multipleChoice
+        prompt: 'Gib deinem Freund einen Tipp (*Wasser mitbringen*):'
+        options:
+          - { text: Bring Wasser mit!, correct: true }
+          - {
+              text: Du bringst Wasser mit!,
+              feedback: 'Im Imperativ sagen wir *du* nicht, und das Verb steht am Anfang: *Bring Wasser mit!*',
+            }
+          - {
+              text: Mitbring Wasser!,
+              feedback: 'Bei *mitbringen* steht *mit* am Ende: *Bring Wasser mit!*',
+            }
+      - id: trag-schuhe
+        type: fillBlank
+        prompt: Schreib den Imperativ (*du*) von *tragen*.
+        text: ___ bequeme Schuhe!
+        blanks: [[Trag, Trage]]
+      - id: imperativ-formen
+        type: matching
+        prompt: Welcher Imperativ passt?
+        pairs:
+          - [du kommst, Komm!]
+          - [du tanzt, Tanz!]
+          - [du gehst, Geh!]
+          - [du isst, Iss!]
+          - [du hörst zu, Hör zu!]
+      - id: iss
+        type: multipleChoice
+        prompt: '*essen* (du isst): ___ viel Obst auf dem Festival!'
+        options:
+          - { text: Iss, correct: true }
+          - { text: Esse, feedback: 'Verben mit *e → i* behalten das *i* im Imperativ: *Iss!*' }
+          - { text: Isst, feedback: 'Wir nehmen die *du*-Form ohne *-st*: *du isst → Iss!*' }
+      - id: ohne-du
+        type: trueFalse
+        prompt: 'Im Imperativ (*du*) sagen wir das Wort *du* nicht: *Komm früh!*'
+        answer: true
+        feedback:
+          correct: Richtig! Das Verb steht am Anfang, ohne *du*.
+          incorrect: 'Doch: im Imperativ sagen wir *du* nicht. *Komm früh!*'
+      - id: nicht-allein
+        type: fillBlank
+        prompt: 'Ein negativer Tipp: Ergänze.'
+        text: Geh ___ allein!
+        blanks: [[nicht]]
+      - id: ihr-form
+        type: multipleChoice
+        prompt: 'Du sprichst mit zwei Freunden (*ihr*). Welcher Satz ist richtig?'
+        options:
+          - { text: Bringt Wasser mit!, correct: true }
+          - {
+              text: Bring Wasser mit!,
+              feedback: '*Bring* ist für eine Person (*du*). Für *ihr* sagen wir *Bringt … mit!*',
+            }
+          - {
+              text: Bringen Wasser mit!,
+              feedback: 'Mit *-en* brauchen wir *Sie*: *Bringen Sie Wasser mit!* Für *ihr*: *Bringt Wasser mit!*',
+            }
+      - id: ordne-freunde
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Bring deine Freunde mit!
+
+  - slug: festivals-zeiten
+    title: 'Drei Zeiten: Perfekt, Präsens, werden'
+    minutes: 8
+    items:
+      - id: habe-getanzt
+        type: multipleChoice
+        prompt: Letztes Jahr ___ ich getanzt.
+        options:
+          - { text: habe, correct: true }
+          - {
+              text: werde,
+              feedback: '*getanzt* ist ein Partizip II: Perfekt mit *haben*. *Letztes Jahr habe ich getanzt.*',
+            }
+          - { text: bin, feedback: '*tanzen* hat im Perfekt *haben*: *Ich habe getanzt.*' }
+      - id: werde-wiederkommen
+        type: multipleChoice
+        prompt: Nächstes Jahr ___ ich wiederkommen.
+        options:
+          - { text: werde, correct: true }
+          - {
+              text: habe,
+              feedback: '*Nächstes Jahr* ist Zukunft: *werden* + Infinitiv. *Ich werde wiederkommen.*',
+            }
+          - { text: wird, feedback: '*wird* ist für *er / sie / es*. Für *ich* sagen wir *werde*.' }
+      - id: leute-tragen
+        type: fillBlank
+        prompt: Ergänze *tragen* im Präsens.
+        text: Jetzt ___ die Leute Kostüme.
+        blanks: [[tragen]]
+      - id: satzteile
+        type: matching
+        prompt: Welcher Satzteil passt?
+        pairs:
+          - [Letztes Jahr habe ich, auf dem Karneval getanzt.]
+          - [Jetzt tragen die Leute, Kostüme.]
+          - [Nächstes Jahr werde ich, meine Freunde mitbringen.]
+          - [Ich bin letztes Jahr, zum Oktoberfest gegangen.]
+      - id: gegangen
+        type: fillBlank
+        prompt: Ergänze das Partizip II von *gehen*.
+        text: Letztes Jahr bin ich zum Karneval ___.
+        blanks: [[gegangen]]
+      - id: zukunft-tf
+        type: trueFalse
+        prompt: 'Der Satz *Nächstes Jahr werde ich meine Freunde mitbringen.* spricht über die Zukunft.'
+        answer: true
+        feedback:
+          correct: Richtig! *werde* + Infinitiv (*mitbringen*) = Zukunft.
+          incorrect: '*werden* + Infinitiv am Ende (*mitbringen*) ist die Zukunft.'
+      - id: was-gemacht
+        type: multipleChoice
+        prompt: Was hast du letztes Jahr auf dem Festival gemacht?
+        options:
+          - { text: Ich habe Musik gehört., correct: true }
+          - {
+              text: Ich werde Musik hören.,
+              feedback: 'Das ist die Zukunft. Die Frage ist im Perfekt: *Ich habe Musik gehört.*',
+            }
+          - {
+              text: Ich höre Musik.,
+              feedback: 'Das ist das Präsens. Die Frage ist im Perfekt: *Ich habe Musik gehört.*',
+            }
+      - id: ordne-wiederkommen
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Nächstes Jahr werde ich wiederkommen.

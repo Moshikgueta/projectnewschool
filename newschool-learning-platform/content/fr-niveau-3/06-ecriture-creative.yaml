@@ -1,0 +1,659 @@
+# Cycle "Écriture créative", converted from the French level 3 digital notebook
+# ("Cahier digital 2026 - français niveau 3", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-3
+slug: ecriture-creative
+title: Écriture créative
+goal: Écrire des textes narratifs avec les temps du récit et exprimer son point de vue avec des connecteurs narratifs.
+position: 6
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Les temps du récit" and "Les connecteurs narratifs")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's summary, the activity models, the connector "boîte à outils" and the
+    vocabulary. Please check level, wording and every right answer before students see
+    them (fill-in blanks with a contrast connector accept cependant, pourtant and
+    néanmoins).
+  - >-
+    Summary additions (please confirm): what follows each connector — the subjonctif
+    after à condition que, à moins que, pourvu que, pour que, afin que, bien que (and
+    usually malgré le fait que); the infinitive after afin de and dans le but de; a noun
+    after en cas de; the indicatif after puisque, étant donné que, comme, si jamais, de
+    sorte que (result). Students have not studied the subjonctif in this notebook so far
+    (check the course order), so the rule only says "+ subjonctif" with one example each.
+  - >-
+    Summary, conditionnel: "Les voleurs seraient un père et son fils" and the detective
+    model "Le voleur serait entré par la fenêtre" are the conditionnel for unconfirmed
+    information (journalistic use), not a si-hypothesis. The rule now says so. "Quand je
+    suis arrivé" → "arrivé(e)". "au moins trois temps verbaux différents (passé composé,
+    imparfait, conditionnel)" → "trois temps ou modes" (the conditionnel is a mood).
+  - >-
+    Corrections: title "Ecriture créative" → "Écriture créative"; warm-up "Pourquoi
+    écrire aide-t-il à apprendre une langue ?" → "Pourquoi est-ce qu’écrire aide à
+    apprendre une langue ?"; Mori model "J’étais fatigué, cependant je n’arrivais pas à
+    dormir." → "J’étais fatigué(e) ; cependant, je n’arrivais pas à dormir."; Activity 1
+    model endings got their final full stop; broken bold marks ("\*\* &#10;") were
+    removed from the connector list.
+  - >-
+    Mori: the source is a set of instructions for Mori ("Contexte pour Mori",
+    "Consignes pour Mori") with the level "avancé (B2–C1)". The course is B1, so the
+    level line was dropped. The instructions were turned into three messages the student
+    sends (guided story, new perspective, reflection), keeping each step and Mori’s
+    correction rules. The imposed ending "…et depuis ce jour-là, plus rien ne fut comme
+    avant" uses the passé simple (fut), which is not taught here; it is kept (it is a
+    fixed literary phrase) with a short note that fut = a été. Please confirm.
+  - >-
+    Activities 3 (histoire en chaîne) and 4 (perspectives multiples) have no times and
+    no example in the source. Activity 3 has no starting sentence (the teacher gives one;
+    two "phrases pour commencer" from the summary were offered as ideas). Activity 4’s
+    perspectives (protagoniste, témoin, autorité, voix inattendue) were given sentence
+    frames from summary part 5. Activity 2 says the journalists write a title and a
+    short article but gives only the title. Times: Activity 1 = 2 + 3 + 2 + 12 + 7 = 26;
+    Activity 2 = 4 + 12 + 8 + 4 = 28 (ranges recorded as the upper value); boîte à
+    outils 5; intro 5.
+  - >-
+    The "Objectifs" lists of each activity are in the teacher notes. Summary parts 4–7
+    (fonctions discursives, changement de perspective, procédés stylistiques, production
+    finale) were shortened into two rule lists and a checklist callout. The "Réponse de
+    l’élève 1/2/3" lines and the empty "Date / Participants" lines were left out.
+  - >-
+    Vocabulary: "Cohésion – קוהרנטיות / לכידות" and "Cohérence – עקביות" were mixed up:
+    now "Cohésion – לכידות" and "Cohérence – קוהרנטיות / עקביות"; "Conditionnel – תנאי" →
+    "דרך התנאי"; "Cependant – למרות זאת" → "עם זאת" (as in the connector list, where
+    pourtant = למרות זאת); niqqud removed from "מילת קישור"; "Narration – נרטיב / סיפור"
+    → "סיפור / קריינות". "Climax" kept (le point culminant is more common in French).
+    The connector list’s Hebrew glosses are kept in the toolbox table. The Quizlet link
+    is kept without its tracking parameters. Please confirm the glosses.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: ecriture-creative-classe
+    title: 'Classe : Écriture créative'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Écriture créative
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: 'Production écrite : créer des textes narratifs'
+            description: 'Passé composé, imparfait, plus-que-parfait et conditionnel : *C’était une nuit pluvieuse. Quand je suis arrivé(e), l’objet avait déjà disparu.*'
+          - name: 'Exprimer son point de vue avec des connecteurs narratifs'
+            description: '*Pour moi, écrire est une manière de… / D’abord…, ensuite…, cependant…, finalement…*'
+      - id: quizlet
+        type: externalLink
+        label: Écriture créative sur Quizlet
+        url: https://quizlet.com/il/1137887676/extreme-french-2026-ecriture-creative-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        prompt: 'Idées : m’exprimer, me détendre, mieux comprendre le monde, progresser en français, inspirer les autres, autre idée…'
+        frame: Je m’appelle ___. Pour moi, écrire est une manière de ___.
+        example: Je m’appelle Lévanah. Pour moi, écrire est une manière de ne rien oublier.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Qu’est-ce que l’écriture créative pour toi ?
+            frame: Pour moi, l’écriture créative, c’est ___.
+          - question: Sur quels sujets aimes-tu écrire ? Pourquoi ?
+            frame: J’aime écrire sur ___ parce que ___.
+          - question: As-tu déjà écrit un texte dont tu es fier / fière ? Lequel ?
+            frame: Oui, j’ai écrit ___. / Non, je n’ai jamais ___.
+          - question: Qu’est-ce qui est le plus difficile pour toi quand tu écris dans une autre langue ?
+            frame: Il est difficile pour moi d’écrire ___ parce que ___.
+          - question: Que fais-tu quand tu manques d’idées pour écrire ?
+            frame: Quand je manque d’idées, je ___.
+          - question: Pourquoi est-ce qu’écrire aide à apprendre une langue ?
+            frame: Je pense qu’écrire aide à ___.
+          - question: Penses-tu que l’écriture peut changer notre manière de comprendre la réalité ? Comment ?
+            frame: Je pense que oui / non, parce que ___.
+      - id: toolbox-title
+        type: heading
+        level: 3
+        text: Boîte à outils
+      - id: toolbox-intro
+        type: text
+        text: Avant d’écrire, voici les **connecteurs narratifs** à utiliser dans les activités.
+      - id: toolbox
+        type: table
+        caption: Connecteurs narratifs
+        header: [Fonction, Connecteur, Hébreu]
+        rows:
+          - [Cause / conséquence, puisque, מכיוון ש־]
+          - [Cause / conséquence, étant donné que, בהתחשב בכך ש־]
+          - [Cause / conséquence, donc, לכן]
+          - [Cause / conséquence, de sorte que, כך ש־ / באופן ש־]
+          - [Contraste, cependant, עם זאת]
+          - [Contraste, pourtant, למרות זאת]
+          - [Contraste, malgré le fait que, למרות העובדה ש־]
+          - [Contraste, néanmoins, אף על פי כן]
+          - [Chronologie / succession, d’abord, תחילה]
+          - [Chronologie / succession, ensuite, לאחר מכן]
+          - [Chronologie / succession, pendant ce temps, בינתיים]
+          - [Chronologie / succession, finalement, לבסוף]
+          - [Condition / hypothèse, à condition que, בתנאי ש־]
+          - [Condition / hypothèse, en cas de, במקרה של]
+          - [Condition / hypothèse, si jamais, אם אי פעם / אם במקרה]
+          - [Condition / hypothèse, à moins que, אלא אם כן]
+          - [But, afin de, כדי]
+          - [But, dans le but de, במטרה ל־]
+          - [But, pour que, כדי ש־]
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : La fin de l’histoire'
+        skills:
+          - 'Production écrite : créer des textes narratifs'
+          - Exprimer son point de vue avec des connecteurs narratifs
+        minutes: 26
+        steps:
+          - '**Consigne (2 minutes) :** chacun invente **la dernière phrase d’une histoire**. Cette phrase servira de fin à l’histoire écrite par un autre élève. Elle peut être mystérieuse, drôle, dramatique ou absurde : plus elle est originale, mieux c’est.'
+          - '**Écriture individuelle (3 minutes) :** écris **une phrase courte** (une ou deux lignes maximum) qui pourrait terminer une histoire.'
+          - '**Échange des fins (2 minutes) :** le professeur redistribue les phrases au hasard. Personne ne reçoit la sienne.'
+          - '**Écriture de l’histoire (12 minutes) :** écris **un court récit de 3 ou 4 paragraphes** qui mène naturellement à la phrase finale reçue. Utilise des connecteurs narratifs et garde les mêmes temps (passé, ou présent de narration).'
+          - '**Lecture et comparaison (7 minutes) :** lisez les textes à voix haute. L’auteur de la phrase finale réagit : *Est-ce proche de ce que j’imaginais ? Qu’est-ce qui est différent ou surprenant ?*'
+        example: |-
+          *Tout cela n’était qu’un rêve.*
+          *Le trésor n’a jamais été trouvé.*
+          *La lettre d’amour a disparu pour toujours.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Ma phrase finale et mon histoire
+        items:
+          - question: Ma phrase finale (pour un autre élève)
+          - question: La phrase finale que j’ai reçue
+          - question: Mon histoire (3 ou 4 paragraphes)
+            frame: Ce matin-là, ___. D’abord, ___. Ensuite, ___. Cependant, ___. Finalement, ___.
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Enquête criminelle'
+        skills:
+          - 'Production écrite : créer des textes narratifs'
+          - Exprimer son point de vue avec des connecteurs narratifs
+        minutes: 28
+        steps:
+          - '*Un objet très précieux a disparu de la bibliothèque municipale pendant un violent orage. Personne ne sait exactement ce qui s’est passé.*'
+          - '**Répartition des rôles (4 minutes) :** en groupes de 3 ou 4 : les **détectives** formulent des hypothèses (conditionnel) ; les **témoins** témoignent au passé ; les **suspects** inventent un alibi (conditionnel) ; les **journalistes** (facultatif) écrivent un titre et un court article.'
+          - '**Production écrite (12 minutes) :** chaque élève écrit le texte de son rôle.'
+          - '**Mise en commun (8 minutes) :** chaque groupe présente ses versions. Un élève ou le professeur joue le rôle du modérateur.'
+          - '**Discussion finale (4 minutes) :** *Quelle version est la plus crédible ? Qui semble coupable ? Quels éléments se contredisent ?*'
+        example: |-
+          *Détective : Le voleur serait entré par la fenêtre. S’il avait forcé la porte, il aurait laissé des traces.*
+          *Témoin : J’ai vu une silhouette avec un parapluie rouge.*
+          *Suspect : Si j’avais été sur place, j’aurais appelé la police.*
+          *Journaliste : Vol mystérieux à la bibliothèque pendant l’orage*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Mon rôle
+        items:
+          - question: Détective
+            frame: Le voleur serait ___. S’il avait ___, il aurait ___.
+          - question: Témoin
+            frame: Ce soir-là, il pleuvait. J’ai vu ___.
+          - question: Suspect
+            frame: Je n’étais pas là. Si j’avais été sur place, j’aurais ___.
+          - question: Journaliste
+            frame: 'Titre : ___. Hier soir, pendant l’orage, ___.'
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Histoire en chaîne'
+        skills:
+          - 'Production écrite : créer des textes narratifs'
+          - Exprimer son point de vue avec des connecteurs narratifs
+        steps:
+          - 'Le professeur propose une phrase de départ. Chaque élève ajoute **une phrase**, puis passe le texte au suivant.'
+          - '**Règles :** respecte les temps verbaux, garde les mêmes personnages et le même lieu, utilise des connecteurs.'
+          - '**Lecture finale et discussion.**'
+        example: |-
+          *Ce matin-là, quelque chose a changé pour toujours…*
+          *Quand j’ai ouvert la porte, je n’arrivais pas à croire ce que je voyais…*
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Ma phrase dans l’histoire
+        items:
+          - question: Ma phrase
+            frame: Ensuite, ___. / Pendant ce temps, ___. / Cependant, ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Perspectives multiples'
+        skills:
+          - 'Production écrite : créer des textes narratifs'
+          - Exprimer son point de vue avec des connecteurs narratifs
+        steps:
+          - 'Choisissez un scénario : **un accident sous la pluie**, **une panne d’électricité dans toute la ville** ou **quelqu’un frappe à votre porte à minuit**.'
+          - 'Chaque élève écrit **un paragraphe** selon une perspective différente : le **protagoniste**, un **témoin**, une **autorité** (policier, maire…) ou une **voix inattendue** (un chien, un objet, l’orage).'
+          - Lisez vos paragraphes et comparez. Comment l’histoire change-t-elle avec le point de vue ?
+        example: |-
+          *Témoin : J’ai vu une voiture glisser sur la route mouillée.*
+          *Voix inattendue : Le chien aboyait sans arrêt parce qu’il avait remarqué quelque chose.*
+      - id: act4-sentences
+        type: discussionQuestions
+        title: Ma perspective
+        items:
+          - question: Protagoniste (je / nous)
+            frame: J’étais ___ quand soudain ___.
+          - question: Témoin (je)
+            frame: J’ai vu ___.
+          - question: Autorité (il / elle, troisième personne)
+            frame: Le / La ___ est arrivé(e) à ___ heures. Il / Elle ___.
+          - question: Voix inattendue (un animal, un objet, l’orage)
+            frame: L’orage grondait et ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **la production écrite de textes narratifs**
+          (temps du passé, conditionnel, perspective) et **les connecteurs narratifs pour
+          exprimer son point de vue**. Les quatre activités pratiquent les deux. Le cahier ne
+          dit pas combien d’activités choisir : les activités 1 et 2 durent chacune environ
+          25 à 30 minutes.
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: >-
+          Deux phrases par élève, 30 secondes maximum par élève et par enseignant. Si les
+          élèves se connaissent déjà, passe directement aux questions d’échauffement.
+      - id: n-toolbox
+        anchor: toolbox-title
+        minutes: 5
+        text: >-
+          Présente la liste des connecteurs avant les activités d’écriture. Demande un
+          exemple oral pour quelques connecteurs.
+      - id: n-act1
+        anchor: act1
+        minutes: 26
+        text: >-
+          Ramasse les phrases finales sur papier ou fais-les envoyer par message, puis
+          redistribue-les au hasard. Objectifs : travailler la cohésion narrative, stimuler la
+          créativité et comparer différentes interprétations d’une même fin.
+      - id: n-act2
+        anchor: act2
+        minutes: 28
+        text: >-
+          Objectifs : utiliser différents temps du passé, employer le conditionnel, écrire de
+          manière collaborative et explorer plusieurs points de vue. Rappelle que *serait
+          entré* (conditionnel passé) présente une information non confirmée.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Donne une phrase de départ (par exemple une des deux phrases modèles). Objectifs :
+          garder la cohérence d’un récit collectif, s’adapter à l’écriture des autres et
+          développer l’improvisation écrite. Le cahier ne donne pas de durée.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Objectifs : comprendre l’effet du point de vue narratif, travailler la description
+          et développer l’empathie narrative. Le cahier ne donne pas de durée ni d’exemple :
+          les exemples et les cadres viennent du résumé.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: ecriture-creative-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-recit
+        type: ruleSummary
+        skill: 'Production écrite : créer des textes narratifs'
+        rules:
+          - text: 'Le **passé composé** raconte des faits ponctuels.'
+            examples: ['Hier, j’ai vu une ombre dans la bibliothèque.']
+          - text: 'L’**imparfait** sert aux descriptions, aux habitudes et au contexte.'
+            examples: [C’était une nuit pluvieuse et tout le monde était silencieux.]
+          - text: 'Le **plus-que-parfait** (*avoir* / *être* à l’imparfait + participe passé) raconte une action **antérieure** à une autre action passée.'
+            examples:
+              - Quand je suis arrivé(e), l’objet avait déjà disparu.
+              - Quand je suis arrivé(e), la lumière s’était déjà éteinte.
+          - text: 'Le **conditionnel** sert aux hypothèses (*si* + plus-que-parfait, conditionnel passé) et aux informations **non confirmées** (enquête, journalisme).'
+            examples:
+              - S’ils étaient entrés par la fenêtre, ils auraient laissé des traces.
+              - Les voleurs seraient un père et son fils. (information non confirmée)
+              - Le voleur serait entré par la fenêtre. (information non confirmée)
+          - text: 'Le **présent de narration** (facultatif, style littéraire) rend le récit plus vivant.'
+            examples: ['Tout à coup, quelqu’un frappe à la porte.']
+          - text: '**Commencer** et **terminer** une histoire :'
+            examples:
+              - Ce matin-là, quelque chose a changé pour toujours…
+              - Quand j’ai ouvert la porte, je n’arrivais pas à croire ce que je voyais…
+              - Rien n’était réellement arrivé. C’était un rêve depuis le début.
+              - Il a alors compris qu’elle n’avait jamais reçu la lettre.
+          - text: '**Décrire** : des adjectifs (*sombre, mystérieux, étrange*) et des décors (*une salle de lecture vide, une ville silencieuse*).'
+          - text: '**Changer de perspective** : 1ʳᵉ personne (témoins, protagonistes), 3ᵉ personne (observateurs, journalistes), voix inattendues (un animal, un objet, l’orage).'
+            examples:
+              - J’ai vu… / Nous pensons…
+              - Le voleur est entré par la fenêtre.
+              - L’orage grondait et plongeait tout dans l’obscurité.
+          - text: '**Cohésion du texte** : garde les mêmes temps, les mêmes personnages et les mêmes lieux.'
+      - id: rules-connecteurs
+        type: ruleSummary
+        skill: Exprimer son point de vue avec des connecteurs narratifs
+        rules:
+          - text: '**Exprimer une opinion** (présent) et **donner une explication** :'
+            examples:
+              - Pour moi, écrire est une manière d’inspirer.
+              - Je pense qu’écrire aide à…
+              - Il est difficile pour moi d’écrire parce que…
+          - text: '**Séquence :** *d’abord, ensuite, alors, pendant ce temps, au bout d’un moment, finalement*.'
+            examples:
+              - D’abord, j’ai entendu un bruit. Ensuite, la lumière s’est éteinte. Finalement, tout est devenu silencieux.
+          - text: '**Contraste :** *cependant, pourtant, néanmoins, en revanche* + phrase complète ; *malgré le fait que, bien que* + subjonctif.'
+            examples:
+              - J’étais fatigué(e) ; cependant, je n’arrivais pas à dormir.
+          - text: '**Cause et conséquence :** *puisque, étant donné que, comme* (cause) ; *donc, par conséquent, alors, de sorte que* (conséquence).'
+            examples:
+              - Puisque la porte était fermée, le voleur est entré par la fenêtre.
+              - Il pleuvait ; par conséquent, la bibliothèque était vide.
+          - text: '**Condition / hypothèse :** *si…, si jamais* + indicatif ; *en cas de* + nom ; *à condition que, à moins que, pourvu que* + subjonctif.'
+            examples:
+              - En cas de problème, appelle la police.
+              - Si jamais tu vois une ombre, cours !
+          - text: '**But :** *afin de, dans le but de* + infinitif ; *pour que, afin que* + subjonctif.'
+            examples:
+              - J’écris afin de ne rien oublier.
+              - Le témoin parle pour que la police comprenne.
+      - id: final-checklist
+        type: callout
+        tone: tip
+        title: Ma production finale
+        text: |-
+          Dans ton texte, essaie de :
+          - utiliser au moins **deux connecteurs narratifs avancés** ;
+          - employer au moins **trois temps ou modes différents** (passé composé, imparfait, conditionnel…) ;
+          - comparer l’effet du **changement de personne** (*je* → *il / elle*) sur ton récit.
+          Pense aussi au style : des métaphores, des descriptions subjectives et des points de vue variés (protagoniste, témoin, autorité, objet).
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les temps du récit et les connecteurs. Demande à chaque élève une phrase avec un connecteur de contraste et une phrase au plus-que-parfait.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: ecriture-creative-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie un message et envoie-le. Mori va te guider étape par étape et te corriger.
+      - id: goal
+        type: text
+        text: 'Objectif : écrire une courte histoire avec le passé (passé composé, imparfait, plus-que-parfait), le conditionnel présent et passé, et des connecteurs narratifs (cependant, malgré le fait que, par conséquent, ensuite, finalement…).'
+      - id: mori-recit
+        type: aiTutorPrompt
+        title: 'Partie 1 : Court récit (8 à 10 lignes)'
+        intro: 'La fin imposée utilise *fut*, le passé simple de *être* (= *a été*) : c’est une formule littéraire.'
+        message: |-
+          Bonjour Mori, aujourd’hui je veux écrire avec toi une courte histoire (8 à 10 lignes), étape par étape. Motive-moi, corrige-moi tout de suite, donne-moi des exemples clairs et demande-moi toujours de réécrire correctement. Voici les étapes :
+          1. Demande-moi deux phrases au passé pour commencer (exemple : « C’était une nuit pluvieuse… » ou « Tout à coup, j’ai entendu un bruit… »). Si j’utilise le présent, dis-le-moi et demande-moi de passer au passé.
+          2. Demande-moi une phrase avec un connecteur de contraste (cependant, malgré le fait que, néanmoins). S’il n’y a pas de connecteur, demande-moi d’essayer encore.
+          3. Demande-moi une phrase avec un connecteur de succession (ensuite, alors, finalement).
+          4. Demande-moi une phrase au conditionnel passé (exemple : « Si j’avais vu l’ombre, j’aurais couru. »).
+          5. Demande-moi une phrase au plus-que-parfait (exemple : « Quand je suis arrivé, la lumière s’était déjà éteinte. »).
+          6. Demande-moi de terminer mon histoire par cette phrase : « … et depuis ce jour-là, plus rien ne fut comme avant. »
+      - id: mori-perspective
+        type: aiTutorPrompt
+        title: 'Partie 2 : Perspectives multiples (5 ou 6 lignes)'
+        message: >-
+          Mori, maintenant je vais réécrire mon histoire en 5 ou 6 lignes depuis une autre
+          perspective. Si j’ai écrit à la première personne (je), je passe à la troisième
+          personne (il / elle), ou je choisis une voix différente : un chien, un objet ou
+          l’orage. Si j’utilise encore « je », dis-le-moi et demande-moi d’essayer à la
+          troisième personne. Corrige mes erreurs.
+      - id: mori-reflexion
+        type: aiTutorPrompt
+        title: 'Partie 3 : Brève réflexion (3 ou 4 lignes)'
+        message: >-
+          Mori, dernière étape : je vais écrire 3 ou 4 lignes pour répondre à ces questions.
+          Quels connecteurs ai-je utilisés ? Comment l’histoire a-t-elle changé avec la
+          nouvelle perspective ? Qu’est-ce qui a été le plus difficile : le conditionnel, le
+          plus-que-parfait ou les connecteurs ? Si ma réponse est trop courte ou sans
+          exemple, demande-moi un exemple précis de connecteur que j’ai utilisé.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: ecriture-creative-pratique
+    book: workbook
+    title: 'Pratique : Écriture créative'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-recit
+        type: activity
+        activity: ecriture-creative-recit
+      - id: ex-connecteurs
+        type: activity
+        activity: ecriture-creative-connecteurs
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: ecriture-creative-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de l’écriture créative
+        glossLang: he
+        link: https://quizlet.com/il/1137887676/extreme-french-2026-ecriture-creative-flash-cards/
+        items: &ecriture-creative-words
+          - { term: Narrateur, gloss: מספר }
+          - { term: Perspective, gloss: נקודת מבט }
+          - { term: Témoin, gloss: עד }
+          - { term: Suspect, gloss: חשוד }
+          - { term: Détective, gloss: בלש }
+          - { term: Journaliste, gloss: עיתונאי }
+          - { term: Mystère, gloss: תעלומה }
+          - { term: Vol, gloss: גניבה }
+          - { term: Scène / Lieu, gloss: סצנה / זירה }
+          - { term: Version, gloss: גרסה }
+          - { term: Contraste, gloss: ניגוד }
+          - { term: Séquence, gloss: רצף }
+          - { term: Connecteur, gloss: מילת קישור }
+          - { term: Cohésion, gloss: לכידות }
+          - { term: Cohérence, gloss: קוהרנטיות / עקביות }
+          - { term: Interprétation, gloss: פרשנות }
+          - { term: Point de vue, gloss: נקודת השקפה }
+          - { term: Conditionnel, gloss: דרך התנאי }
+          - { term: Plus-que-parfait, gloss: פלוסקוומפרפקטו (עבר של עבר) }
+          - { term: Hypothèse, gloss: השערה }
+          - { term: Supposition, gloss: הנחה }
+          - { term: Contradiction, gloss: סתירה }
+          - { term: Preuve, gloss: ראיה / הוכחה }
+          - { term: Version officielle, gloss: גרסה רשמית }
+          - { term: Alibi, gloss: אליבי / טענת חפות }
+          - { term: Narration, gloss: סיפור / קריינות }
+          - { term: Voix narrative, gloss: קול סיפורי }
+          - { term: Dénouement, gloss: סיום עלילה }
+          - { term: Climax, gloss: שיא }
+          - { term: Description, gloss: תיאור }
+          - { term: Détail, gloss: פרט }
+          - { term: Interpréter, gloss: לפרש }
+          - { term: Formuler, gloss: לנסח }
+          - { term: Rédiger, gloss: לנסח בכתב }
+          - { term: Expression, gloss: ביטוי }
+          - { term: Afin que, gloss: כדי ש… }
+          - { term: Malgré le fait que, gloss: למרות ש… }
+          - { term: Cependant, gloss: עם זאת }
+
+vocabulary:
+  - slug: ecriture-creative
+    title: Écriture créative
+    items: *ecriture-creative-words
+
+activities:
+  - slug: ecriture-creative-recit
+    title: 'Les temps du récit : passé composé, imparfait, plus-que-parfait, conditionnel'
+    minutes: 8
+    items:
+      - id: nuit-pluvieuse
+        type: multipleChoice
+        prompt: ___ une nuit pluvieuse et tout le monde était silencieux.
+        options:
+          - { text: C’était, correct: true }
+          - {
+              text: Ça a été,
+              feedback: 'Pour décrire le contexte (le temps qu’il fait, l’ambiance), on utilise l’imparfait : *c’était*.',
+            }
+          - {
+              text: C’est,
+              feedback: '*C’est* est au présent. Dans un récit au passé, la description est à l’imparfait : *c’était*.',
+            }
+      - id: ombre
+        type: multipleChoice
+        prompt: Hier soir, j’___ une ombre dans la bibliothèque.
+        options:
+          - { text: ai vu, correct: true }
+          - {
+              text: avais vu,
+              feedback: 'Le plus-que-parfait sert à une action antérieure à une autre action passée. Ici, c’est un fait ponctuel : *j’ai vu*.',
+            }
+          - {
+              text: voyais,
+              feedback: 'L’imparfait sert aux descriptions et aux habitudes. Ici, c’est un fait ponctuel : *j’ai vu*.',
+            }
+      - id: avait-disparu
+        type: fillBlank
+        prompt: Complète avec le verbe *disparaître* au plus-que-parfait.
+        text: Quand je suis arrivé(e), l’objet ___ déjà ___.
+        blanks: [[avait], [disparu]]
+      - id: s-etait-eteinte
+        type: fillBlank
+        prompt: Complète avec le verbe *s’éteindre* au plus-que-parfait.
+        text: Quand je suis arrivé(e), la lumière ___ déjà éteinte.
+        blanks: [[s’était, s'était]]
+      - id: temps-usages
+        type: matching
+        prompt: Associe chaque temps à son usage.
+        pairs:
+          - [passé composé, un fait ponctuel]
+          - [imparfait, une description ou le contexte]
+          - [plus-que-parfait, une action antérieure à une autre action passée]
+          - [conditionnel, une hypothèse ou une information non confirmée]
+          - [présent de narration, un récit plus vivant]
+      - id: serait-entre
+        type: trueFalse
+        prompt: 'Dans *Le voleur serait entré par la fenêtre*, le détective présente une information **sûre**.'
+        answer: false
+        feedback:
+          correct: 'Bravo ! Le conditionnel (*serait entré*) présente une hypothèse ou une information non confirmée.'
+          incorrect: 'Attention : le conditionnel (*serait entré*) présente une hypothèse ou une information non confirmée, pas une information sûre.'
+      - id: traces
+        type: fillBlank
+        prompt: Complète avec *laisser* au conditionnel passé.
+        text: S’il avait forcé la porte, il ___ des traces.
+        blanks: [[aurait laissé]]
+      - id: perspective
+        type: multipleChoice
+        prompt: 'Phrase à la 1ʳᵉ personne : *J’ai vu le voleur entrer par la fenêtre.* Quelle phrase raconte la même chose à la 3ᵉ personne ?'
+        options:
+          - { text: Le témoin a vu le voleur entrer par la fenêtre., correct: true }
+          - {
+              text: Nous avons vu le voleur entrer par la fenêtre.,
+              feedback: '*Nous* est la 1ʳᵉ personne du pluriel. À la 3ᵉ personne, on dit *il / elle* ou *le témoin*.',
+            }
+          - {
+              text: Tu as vu le voleur entrer par la fenêtre.,
+              feedback: '*Tu* est la 2ᵉ personne. À la 3ᵉ personne, on dit *il / elle* ou *le témoin*.',
+            }
+
+  - slug: ecriture-creative-connecteurs
+    title: 'Les connecteurs narratifs'
+    minutes: 8
+    items:
+      - id: fonctions
+        type: matching
+        prompt: Associe chaque connecteur à sa fonction.
+        pairs:
+          - [cependant, contraste]
+          - [ensuite, chronologie]
+          - [puisque, cause]
+          - [à condition que, condition]
+          - [afin de, but]
+      - id: fatigue
+        type: fillBlank
+        prompt: Complète avec un connecteur de contraste.
+        text: J’étais fatigué(e) ; ___, je n’arrivais pas à dormir.
+        blanks: [[cependant, pourtant, néanmoins]]
+      - id: sequence
+        type: fillBlank
+        prompt: Complète avec *d’abord*, *ensuite* et *finalement*.
+        text: ___, j’ai entendu un bruit. ___, la lumière s’est éteinte. ___, tout est devenu silencieux.
+        blanks: [[D’abord, d’abord, D'abord, d'abord], [Ensuite, ensuite], [Finalement, finalement]]
+      - id: afin-de
+        type: multipleChoice
+        prompt: J’écris tous les jours ___ progresser en français.
+        options:
+          - { text: afin de, correct: true }
+          - {
+              text: pour que,
+              feedback: '*Pour que* est suivi d’un verbe conjugué (au subjonctif). Avec un infinitif (*progresser*), on dit *afin de* ou *pour*.',
+            }
+          - {
+              text: puisque,
+              feedback: '*Puisque* exprime la cause, pas le but. Pour le but + infinitif : *afin de progresser*.',
+            }
+      - id: puisque
+        type: multipleChoice
+        prompt: ___ la porte était fermée, le voleur est entré par la fenêtre.
+        options:
+          - { text: Puisque, correct: true }
+          - {
+              text: Cependant,
+              feedback: '*Cependant* exprime un contraste. Ici, la porte fermée est la cause : *Puisque…*',
+            }
+          - {
+              text: Finalement,
+              feedback: '*Finalement* marque la fin d’une séquence. Ici, on explique la cause : *Puisque…*',
+            }
+      - id: en-cas-de
+        type: trueFalse
+        prompt: '*En cas de* est suivi d’un nom : *En cas de problème, appelle la police.*'
+        answer: true
+        feedback:
+          correct: 'Bravo ! *En cas de* + nom (*en cas de problème, en cas d’orage*).'
+          incorrect: 'C’est vrai : *en cas de* est suivi d’un nom (*en cas de problème, en cas d’orage*).'
+      - id: par-consequent
+        type: multipleChoice
+        prompt: Il pleuvait très fort ; ___, la bibliothèque était vide.
+        options:
+          - { text: par conséquent, correct: true }
+          - {
+              text: malgré le fait que,
+              feedback: '*Malgré le fait que* exprime un contraste. La bibliothèque vide est une conséquence de la pluie : *par conséquent*.',
+            }
+          - {
+              text: d’abord,
+              feedback: '*D’abord* commence une séquence. Ici, on exprime une conséquence : *par conséquent*.',
+            }
+      - id: ordre-opinion
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Pour moi, écrire est une manière de m’exprimer.

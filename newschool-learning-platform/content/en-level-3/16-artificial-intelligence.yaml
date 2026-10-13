@@ -1,0 +1,787 @@
+# Cycle "Artificial Intelligence", converted from the English level 3
+# digital notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (English).
+course: en-level-3
+slug: artificial-intelligence
+title: Artificial Intelligence
+goal: Talk about AI with the second conditional and the future with will and going to.
+position: 16
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Second conditional" and "Future: will vs. going to")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's summary rules, the activity examples and the vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Summary, second conditional: the source says it is used for "unreal or impossible
+    situations that happen now". This now reads "unreal or imaginary situations in the
+    present or the future", which matches the rest of the rule and the examples.
+  - >-
+    Summary, going to: "plans and intentions that were planned ahead" was simplified to
+    "plans and intentions: decisions we made before we speak". Please confirm.
+  - >-
+    Activity 1, prompt table: several examples use "I would like / I would prefer /
+    I wouldn't like". These are polite requests with "would", not the second
+    conditional. A teacher note says so, so students don't confuse the two.
+  - >-
+    Activity 2, Step 3: "AI slowly replaces the job slowly, over 10 years" → "AI
+    replaces the job slowly, over 10 years"; "What won't they do better?" → "What
+    won't it do better?" (it = AI).
+  - >-
+    Activity 3, Step 3: the source says the teacher reads "3 statements" but lists 4.
+    The text now says "these statements" and keeps all four.
+  - >-
+    Homework "AI Apocalypse": the scenario mixed "By 2045, AI will have taken over…"
+    with "AI systems now manage…". It now starts "It is 2045. Artificial intelligence
+    has taken over most professional industries", so the tenses match the story. The
+    last bullet "What will happen if nothing changes?" was made a statement like the
+    others. Title typo "Apocolypse" → "Apocalypse".
+  - >-
+    Homework "Life as a Bot": "artificial-intelligance English-learning assistant" →
+    "an artificial intelligence English-learning assistant".
+  - >-
+    Homework "Prompt for Mori": students write their own prompt, so there is no ready
+    message to copy. The guideline table is kept, with a short frame to start from.
+  - >-
+    Small corrections: "The students sent the prompt to the teacher" → "send";
+    emoji in the prompt tables were removed (broken characters in the export); stray
+    asterisks and broken bold were removed. "Answer of student 1/2/3" lines were
+    removed (the platform has answer boxes).
+  - >-
+    Links: the "Prompt presentation" is on gamma.app, which is not on the link
+    allow-list, so it was removed and mentioned in a teacher note. The Quizlet links
+    were kept without their "?i=…&x=…" parameters, and the YouTube link without its
+    playlist parameters.
+  - >-
+    The warm-up definition of AI (learning, problem solving, natural language) is
+    teacher material shown after the brainstorm, so it is a teacher note with a short
+    student callout.
+  - >-
+    Vocabulary: the source table has English definitions, which the vocabulary block
+    cannot hold, so only the Hebrew glosses are kept. Two fixes: "Dystopia" had the
+    gloss "דיסטופיהמשכנע" (two words merged) → "דיסטופיה", and "Persuasive" had no
+    gloss → "משכנע".
+  - >-
+    The source gives no times for the activities, so no minutes were added. The
+    "Level: 3 (extreme)" line was left out.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: artificial-intelligence-class
+    title: 'Class: Artificial Intelligence'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Artificial Intelligence
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Second conditional
+            description: Imaginary situations and their results (*If AI replaced drivers, unemployment would increase.*)
+          - name: 'Future: will vs. going to'
+            description: Predictions, promises and quick decisions with *will*; plans with *going to* (*Our school is going to introduce AI lessons.*)
+      - id: quizlet-he
+        type: externalLink
+        label: Artificial Intelligence on Quizlet (English–Hebrew)
+        url: https://quizlet.com/il/1143099007/artificial-intelligance-ai-english-hebrew-flash-cards/
+      - id: quizlet-def
+        type: externalLink
+        label: Artificial Intelligence on Quizlet (English–definition)
+        url: https://quizlet.com/il/854809761/artificial-intelligance-ai-english-definition-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduction round
+      - id: intro
+        type: sentenceFrame
+        prompt: Say your name and how often you use AI.
+        frame: I'm ___. I use AI every day / a few times a week / hardly ever.
+        example: I am Ofir. I use AI a few times a week, mostly for looking up words in English.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Warm-up questions
+      - id: warmup-tip
+        type: callout
+        tone: tip
+        text: Answer in full sentences. Use the future (*will / going to*) and the second conditional (*If…, I would…*).
+      - id: warmup-ai
+        type: discussionQuestions
+        title: What is AI?
+        items:
+          - question: What would technology have to do to qualify as AI?
+            frame: To qualify as AI, technology would have to…
+      - id: warmup-definition
+        type: callout
+        tone: info
+        title: Artificial intelligence (AI)
+        text: |-
+          The ability of technology to copy human intelligence. To do that, AI needs three abilities:
+          **1. Learning:** learning new things and collecting new information.
+          **2. Problem solving and reasoning:** using what it learned to find solutions to new problems.
+          **3. Understanding natural language:** understanding a request in normal human language, not in code.
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Is AI only ChatGPT? What other AI platforms do you know and use? Give an example.
+            frame: I also use… for…
+          - question: Would life without AI be better or worse? Give an example to support your opinion.
+            frame: Life without AI would be… because…
+          - question: If AI didn't exist today, how would your daily routine be different?
+            frame: If AI didn't exist, I would…
+          - question: Are governments going to regulate AI more strictly in the future? Why do you think so?
+            frame: I think governments are going to… because…
+          - question: Do you think people will trust AI more or less in the future? Explain your reasoning.
+            frame: I think people will trust AI… because…
+          - question: Describe a specific experience you have had with AI. Was it helpful, disappointing, surprising or frustrating? Why?
+            frame: Once I asked AI to… and it was… because…
+          - question: How do you think AI will influence your career or field of work in the next 5–10 years?
+            frame: In the next few years, AI will…
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activities
+      # Activity 1
+      - id: act1
+        type: classActivity
+        title: 'Activity 1: How to write a prompt'
+        skills: ['Future: will vs. going to']
+        steps:
+          - 'Class warm-up: Have you ever talked to an AI chatbot about plans? What did you ask? Did you get the answer you were looking for?'
+          - 'A **prompt** is the instruction you give to AI. It explains what you need and how you want the AI to help you. When you write a clear prompt, the AI will understand you better and give you a better answer.'
+          - Go over the rules for a clear prompt in the table below.
+          - 'In pairs, plan an ideal getaway for your partner. You have 1 minute to ask your partner about their preferences. Then use the rules to ask AI to build the itinerary. Send your prompt to the teacher in the chat.'
+          - Read or summarize what the AI planned for your partner's vacation. The focus is on the prompt, not on the vacation!
+          - The class looks at one or two prompts together and corrects common mistakes.
+        example: |-
+          *I am going to spend a long weekend in Barcelona in May, and I will need a detailed plan for three days. I will arrive on Friday afternoon and will leave on Monday morning.*
+          *I would like a mix of cultural attractions, local food experiences and some relaxing outdoor activities. I wouldn't like very touristy places all the time, and I would prefer authentic neighborhoods.*
+          *I am going to travel with one friend who loves live music, so we would like an evening activity such as a concert or performance. Our budget is moderate, so we wouldn't want luxury options.*
+          *Please create a clear daily schedule with times, locations and short explanations for each activity. If the weather is bad, what would you suggest as an alternative plan?*
+      - id: act1-table
+        type: table
+        caption: How to write a clear prompt
+        header: [A good prompt will…, Example]
+        rows:
+          - [
+              '**State your goal clearly**',
+              'I **am going** to plan a weekend vacation, and I **will** need a detailed itinerary.',
+            ]
+          - [
+              '**Give background / context**',
+              'I **will** be in Rome for three days, and I **would** like cultural activities and local food experiences.',
+            ]
+          - [
+              '**Specify time and practical details**',
+              'I **am going** to arrive on Friday evening and **will** leave on Monday morning.',
+            ]
+          - [
+              '**Explain your preferences**',
+              "I **would** prefer outdoor activities, and I **wouldn't** like anything too expensive.",
+            ]
+          - [
+              '**Mention limits or constraints**',
+              'I **am going** to travel on a budget, so I **would** like affordable options.',
+            ]
+          - [
+              '**Clarify who is involved**',
+              'I **will** be traveling with friends who **would** enjoy live music.',
+            ]
+          - [
+              '**Ask for a specific format**',
+              'Please make a daily schedule with times and locations. / I **would** like a clear list with recommendations and prices.',
+            ]
+      - id: act1-prompt
+        type: discussionQuestions
+        title: My prompt
+        items:
+          - question: "My partner's preferences: ___"
+            frame: My partner would like… / wouldn't like…
+          - question: 'My prompt: ___'
+            frame: I am going to… and I will need… I would like… Please make…
+          - question: 'What the AI planned: ___'
+            frame: The AI suggested…
+      # Activity 2
+      - id: act2
+        type: classActivity
+        title: 'Activity 2: AI takeover'
+        skills: ['Future: will vs. going to', Second conditional]
+        steps:
+          - 'Class brainstorm: Around the world, artificial intelligence is beginning to replace human jobs. Some changes are gradual and organized; others are sudden and controversial.'
+          - 'In breakout rooms, your group (or the teacher) chooses a scenario: AI replaces customer service / translators / drivers / news writers / personal assistants.'
+          - As a group, imagine what would happen if your scenario came true. Use the questions below.
+          - Each group presents its ideas. As a class, choose the most worrying replacement and the one most likely to happen.
+        example: |-
+          *If AI replaced drivers, many people would lose their jobs.*
+          *I think translators will use AI more and more.*
+      - id: act2-brainstorm
+        type: discussionQuestions
+        title: Class brainstorm
+        items:
+          - question: Have you already seen AI replacing human jobs?
+            frame: Yes, I have seen… / No, I haven't seen…
+          - question: Which professions do you think will change first?
+            frame: I think… will change first because…
+          - question: Is your job or future career going to be affected?
+            frame: My job is (not) going to be affected because…
+      - id: act2-scenario
+        type: discussionQuestions
+        title: Imagine the future
+        items:
+          - question: 'A gradual replacement: AI replaces the job slowly, over 10 years. What would happen?'
+            frame: If AI replaced… slowly, people would…
+          - question: 'A sudden replacement: next year, AI replaces 80% of the people who work in this profession. What would happen?'
+            frame: If AI suddenly replaced…, …would…
+          - question: What will AI do better than humans? What won't it do better?
+            frame: AI will… better than humans, but it won't…
+          - question: If this AI replacement happened in Israel, would it improve society or create serious problems?
+            frame: If this happened in Israel, it would…
+          - question: What would the consequences of this replacement be?
+            frame: One consequence would be…
+          - question: "Our group's conclusion: ___"
+            frame: The most worrying replacement is… / The most likely replacement is…
+      # Activity 3
+      - id: act3
+        type: classActivity
+        title: 'Activity 3: Can AI solve a crime?'
+        skills: [Second conditional, 'Future: will vs. going to']
+        steps:
+          - Listen to the podcast as a class, with subtitles. Then summarize the main points together.
+          - Answer the class questions about the podcast.
+          - In pairs, keep talking about the podcast with the questions below.
+          - Each pair shares two points from the podcast and their conversation.
+          - 'The teacher reads statements about AI. Say if you agree, disagree or are not sure, and explain why.'
+        resource:
+          label: 'Can AI solve crime? (BBC Learning English, 6 Minute English)'
+          url: https://www.youtube.com/watch?v=_zmMl7T8164
+      - id: act3-class
+        type: discussionQuestions
+        title: After listening
+        items:
+          - question: What surprised you in the podcast?
+            frame: I was surprised that…
+          - question: Do you think AI will become essential in police investigations?
+            frame: I think AI will / won't…
+          - question: Would you feel comfortable if the police used AI to analyze your personal data?
+            frame: If the police used AI to analyze my data, I would feel…
+      - id: act3-pairs
+        type: discussionQuestions
+        title: Talk in pairs
+        items:
+          - question: Why is AI useful in crime investigations?
+          - question: What are the risks of using AI in policing?
+          - question: What does "real-time insight" allow detectives to do?
+          - question: Will AI make investigations faster? If AI replaced most detectives, what would happen?
+            frame: AI will… If AI replaced most detectives, …would…
+          - question: Might it create ethical problems?
+          - question: Should the police depend heavily on technology?
+          - question: If AI made a mistake, who would be responsible?
+            frame: If AI made a mistake, … would be responsible because…
+          - question: If criminals learned how to manipulate AI systems, what would the police do?
+            frame: If criminals learned…, the police would…
+      - id: act3-statements
+        type: discussionQuestions
+        title: Agree, disagree or not sure?
+        items:
+          - question: '"AI will improve justice more than it will harm society."'
+            frame: I agree / disagree / I'm not sure, because…
+          - question: '"AI will make crime investigations more accurate than human detectives."'
+            frame: I agree / disagree / I'm not sure, because…
+          - question: '"If governments use AI responsibly, society will become safer."'
+            frame: I agree / disagree / I'm not sure, because…
+          - question: '"The risks of AI surveillance will outweigh the benefits in the long term."'
+            frame: I agree / disagree / I'm not sure, because…
+      # Activity 4
+      - id: act4
+        type: classActivity
+        title: 'Activity 4: AI and education'
+        skills: [Second conditional, 'Future: will vs. going to']
+        steps:
+          - Read the text below. Then the class splits into two groups. **Group 1:** AI should be taught in schools. **Group 2:** AI should not be taught in schools.
+          - "Brainstorm in your group. Find points that support your side, even if you don't fully agree with it. Use reasons and examples from your own experience."
+          - '**Rule:** every argument must include a future prediction (*will / going to*) or a sentence in the second conditional.'
+          - 'Debate! Each group gives one argument at a time: Group 1 gives an argument, Group 2 responds; Group 2 gives an argument, Group 1 responds.'
+          - Finish with the class discussion questions below.
+        example: |-
+          *If schools taught AI, students would be ready for future jobs.*
+          *Students are going to depend on AI, and they will lose important skills.*
+      - id: act4-text
+        type: text
+        text: >-
+          Artificial intelligence is becoming part of everyday life. Students already use
+          AI tools to search for information, translate texts, generate ideas and even
+          complete assignments. In the future, many jobs will require people to understand
+          how AI works and how to use it responsibly. However, some educators worry that if
+          schools teach AI without clear limits, students might become too dependent on
+          technology and lose important skills such as critical thinking and creativity.
+          This debate raises an important question: should schools prepare the younger
+          generation for an AI-driven world, or should they protect traditional learning
+          methods?
+      - id: act4-brainstorm
+        type: discussionQuestions
+        title: Brainstorm in groups
+        items:
+          - question: How will AI change education and the job market in the next 10–15 years? What skills will students need, and how might learning change?
+            frame: In the next 10–15 years, AI will… Students will need…
+          - question: What could the benefits and risks of teaching AI in schools be? Think about independence, creativity, responsibility and future careers.
+            frame: One benefit would be… One risk would be…
+          - question: If schools fully integrated AI into the classroom, how would students' learning experience change? Would it improve understanding, reduce effort, create dependence or increase opportunity?
+            frame: If schools fully integrated AI, students would…
+      - id: act4-discussion
+        type: discussionQuestions
+        title: Class discussion
+        items:
+          - question: If students depended on AI for homework, how would they develop creativity?
+            frame: If students depended on AI, they would…
+          - question: If schools banned AI completely, what would students do?
+            frame: If schools banned AI, students would…
+          - question: If you were the Minister of Education, what would you introduce?
+            frame: If I were the Minister of Education, I would…
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Two skills this cycle: the **future with will and going to** (warm-up,
+          Activities 1, 2 and 3) and the **second conditional** (warm-up, Activities 2, 3
+          and 4). The source gives no timings.
+      - id: n-warmup
+        anchor: warmup-title
+        text: >-
+          Pick from the 8 questions. Make sure students answer in full sentences and use
+          the future and conditionals. If students don't feel comfortable talking about
+          real experiences, they can make something up, as long as they speak English.
+      - id: n-definition
+        anchor: warmup-ai
+        text: >-
+          Let students brainstorm first, then show the definition below. The three
+          abilities (learning, problem solving and reasoning, understanding natural
+          language) come from the notebook's research note.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          The notebook links to a "Prompt presentation" on gamma.app
+          (gamma.app/docs/How-to-Write-Effective-AI-Prompts-udxp5znhjhdwv7v), which is not
+          on the link allow-list. Share it on screen if you want; the table below has the
+          same rules. Optionally, students read the rules alone first and then say what
+          they learned. Point out that *I would like / I would prefer* in the table are
+          polite requests, not the second conditional.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Play the podcast with subtitles. After listening, summarize the main points and
+          ask comprehension questions before the class questions.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Split the class into two groups and give each group its side. Remind them of
+          the rule: every argument needs *will / going to* or the second conditional.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: artificial-intelligence-summary
+    title: Summary
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: What we learned today
+      - id: rules-future
+        type: ruleSummary
+        skill: 'Future: will vs. going to'
+        rules:
+          - text: 'Use **will** for **predictions**, **promises** and **spontaneous decisions** (decisions we make while we speak).'
+            examples:
+              - AI will become an essential skill in most careers. (prediction)
+              - Schools will have to update their curriculum soon. (prediction)
+              - "Don't worry, I will explain how this tool works. (promise)"
+              - "That's a good point. I will change my opinion. (spontaneous decision)"
+          - text: 'Use **going to** for **plans and intentions**: decisions we made before we speak.'
+            examples:
+              - Our school is going to introduce AI lessons next year. (plan)
+              - The Ministry of Education is going to develop new guidelines. (intention)
+              - We are going to train teachers before students start using AI tools. (plan)
+          - text: 'Using both in one sentence or paragraph? Start with **going to** for the plan or decision (what you plan to do), then use **will** for the result you expect (what you believe will happen because of it).'
+            examples:
+              - Schools are going to teach AI literacy, and this will prepare students for future jobs.
+              - The government is going to regulate AI use in classrooms, and this will reduce misuse.
+              - We are going to include AI in exams, and students will take it more seriously.
+      - id: rules-conditional
+        type: ruleSummary
+        skill: Second conditional
+        rules:
+          - text: 'We use the **second conditional** for **unreal or imaginary situations** in the present or the future: imaginary changes, dreams and hypothetical ideas.'
+          - text: '**Form:** *If* + past simple, *would* + base verb.'
+            examples:
+              - If AI replaced most office jobs, many people would need new skills.
+              - If AI became more intelligent than humans, society would change dramatically.
+              - If companies relied only on AI, they would lose the human element.
+          - text: 'We use the **past simple** after *if*, but we are **not talking about the past**.'
+          - text: 'In the second conditional, we often use **were** instead of *was* with all subjects (*I, he, she, it*).'
+            examples: ['If I were a CEO, I would invest in AI development.']
+      - id: modals-table
+        type: table
+        caption: 'Not only would: could and might'
+        header: [Modal verb, What it shows, Example]
+        rows:
+          - [
+              '**would**',
+              The expected or most likely result,
+              '*If AI replaced drivers, unemployment would increase.*',
+            ]
+          - [
+              '**could**',
+              A possible ability or option,
+              '*If AI analyzed medical data faster, doctors could save more lives.*',
+            ]
+          - [
+              '**might**',
+              A possible but less certain result,
+              '*If AI controlled social media, misinformation might increase.*',
+            ]
+      - id: quick-rules
+        type: callout
+        tone: info
+        title: Quick rules
+        text: |-
+          A plan you already made? **going to**: *We are going to use AI next year.*
+          A prediction, a promise or a quick decision? **will**: *AI will change education.*
+          An imaginary situation? **If + past simple, would + base verb**: *If AI replaced teachers, students would miss them.*
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Go through both skills with the group and ask for one new example for each rule.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: artificial-intelligence-homework
+    title: Homework with Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Homework with Mori
+      - id: how
+        type: text
+        text: Open the chat with Mori, copy a message and send it. Mori will ask you questions; answer every one.
+      - id: task1-title
+        type: heading
+        level: 3
+        text: 'Task 1: Write your own prompt for Mori'
+      - id: task1
+        type: text
+        text: >-
+          Write a prompt that asks Mori to practise the topics from class with you, both
+          conversation and grammar. Use the prompt-building rules from Activity 1. Then
+          send your prompt and have a conversation with Mori.
+      - id: task1-table
+        type: table
+        caption: What your prompt should include
+        header: [What your prompt should include, Guideline]
+        rows:
+          - ['**Clear goal**', Say exactly what you want Mori to do.]
+          - ['**Lesson focus**', Mention what you learned in class.]
+          - ['**Conversation type**', Say how you want Mori to interact with you.]
+          - ['**Grammar request**', Tell Mori which grammar to focus on.]
+          - ['**Interaction style**', 'Ask Mori to respond actively, not just agree.']
+          - ['**Level of difficulty**', Control the level of challenge.]
+          - ['**Specific task**', Add something concrete.]
+      - id: task1-frame
+        type: sentenceFrame
+        prompt: Write your prompt here first.
+        frame: "Hi Mori! I am going to practise… Today in class we learned… Please… Focus on… Don't just agree with me… Make it…"
+      - id: task2-title
+        type: heading
+        level: 3
+        text: 'Task 2: AI apocalypse'
+      - id: task2-text
+        type: text
+        text: >-
+          Read the paragraph about an apocalyptic future. It is 2045. Artificial
+          intelligence has taken over most professional industries. AI systems manage
+          hospitals, schools, banks, transportation, law firms and even governments. Human
+          workers were gradually replaced because AI was faster, cheaper and more
+          efficient. At first, society celebrated the progress. But over time, problems
+          appeared. Millions of people lost their jobs. Creativity decreased because
+          machines made most decisions. Human skills slowly weakened. Now a global movement
+          has started. People are asking: what are we going to do to rebuild a
+          human-centered world?
+      - id: task2-explain
+        type: callout
+        tone: info
+        title: You are part of a global council trying to redesign society. Explain…
+        text: |-
+          what humanity is going to change.
+          what governments are going to introduce.
+          what people will need to relearn.
+          what will happen if nothing changes.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Message: AI apocalypse'
+        message: |-
+          I just read a scenario about a future where AI has taken over most professional industries. I want to discuss what humanity is going to do to change the world.
+          Please ask me challenging questions about solutions, consequences and ethical dilemmas.
+          Make sure I use "going to" for plans, "will" for predictions, and the second conditional.
+          If my answer is short, ask follow-up questions. Correct my mistakes.
+      - id: task2-tips
+        type: callout
+        tone: tip
+        title: "Don't forget to…"
+        text: |-
+          Choose *will* or *going to*: *will* for predictions, *going to* for plans.
+          Be creative! Use adjectives in your answers.
+          Try to imagine good and bad outcomes.
+      - id: task3-title
+        type: heading
+        level: 3
+        text: 'Task 3: Life as a bot'
+      - id: task3-text
+        type: text
+        text: >-
+          Mori is an AI assistant designed to help students improve their English. He asks
+          questions, corrects mistakes, suggests better vocabulary and encourages deeper
+          thinking. He doesn't replace teachers: he supports learners by giving unlimited
+          speaking practice. In the future, AI language assistants will become more
+          advanced. They will personalize lessons, adapt to students' weaknesses and give
+          real-time feedback. But one question remains: how will AI change the way people
+          learn English? Interview Mori about "his" role in English teaching. Ask him
+          about the future of education, what he is planning to do, and what would happen
+          if…
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Message: Interview with Mori'
+        message: |-
+          I am interviewing you for an article about AI and English learning.
+          Please answer as an artificial intelligence English-learning assistant who helps students practice speaking. Give thoughtful and optimistic answers.
+          After each answer, ask me a follow-up question so we can continue the conversation. Correct my mistakes if I make any.
+      - id: task3-tips
+        type: callout
+        tone: tip
+        title: "Don't forget to…"
+        text: |-
+          Keep the conversation flowing, like a real interview.
+          Ask questions about hypothetical situations (second conditional).
+          Ask questions about future predictions.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tips
+        text: |-
+          Want more questions? Send: **Please ask me more!**
+          Don't understand an explanation? Send: **Can you explain it to me in Hebrew but with the sentence in English?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: artificial-intelligence-practice
+    book: workbook
+    title: 'Practice: Artificial Intelligence'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practise the two skills of this cycle on your own. Each answer is checked right away, and you can try again.
+      - id: ex-conditional
+        type: activity
+        activity: artificial-intelligence-conditional
+      - id: ex-future
+        type: activity
+        activity: artificial-intelligence-future
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: artificial-intelligence-vocabulary
+    title: Vocabulary
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Artificial intelligence words
+        glossLang: he
+        link: https://quizlet.com/il/1143099007/artificial-intelligance-ai-english-hebrew-flash-cards/
+        items: &artificial-intelligence-words
+          - { term: Artificial intelligence, gloss: בינה מלאכותית }
+          - { term: System, gloss: מערכת }
+          - { term: Machine, gloss: מכונה }
+          - { term: Software, gloss: תוכנה }
+          - { term: Tool, gloss: כלי }
+          - { term: To replace, gloss: להחליף }
+          - { term: To control, gloss: לשלוט }
+          - { term: To depend on, gloss: להיות תלוי ב־ }
+          - { term: Feedback, gloss: משוב }
+          - { term: Possibility, gloss: אפשרות }
+          - { term: Consequence, gloss: תוצאה }
+          - { term: Decision, gloss: החלטה }
+          - { term: Surveillance, gloss: מעקב }
+          - { term: To outweigh, gloss: לעלות על / להיות משמעותי יותר מ־ }
+          - { term: Benefits, gloss: יתרונות }
+          - { term: Automation, gloss: אוטומציה }
+          - { term: Innovation, gloss: חדשנות }
+          - { term: Accuracy, gloss: דיוק }
+          - { term: Efficiency, gloss: יעילות }
+          - { term: Regulation, gloss: רגולציה / תקנה }
+          - { term: Privacy, gloss: פרטיות }
+          - { term: To regulate, gloss: להסדיר / לפקח על }
+          - { term: Accountability, gloss: אחריותיות / נשיאה באחריות }
+          - { term: Transition, gloss: מעבר }
+          - { term: Digital literacy, gloss: אוריינות דיגיטלית }
+          - { term: To invade privacy, gloss: לפגוע בפרטיות }
+          - { term: Ethical, gloss: מוסרי }
+          - { term: Bias, gloss: הטיה }
+          - { term: Misuse, gloss: שימוש לרעה }
+          - { term: Acronym, gloss: ראשי תיבות }
+          - { term: Utopia, gloss: אוטופיה }
+          - { term: Dystopia, gloss: דיסטופיה }
+          - { term: Persuasive, gloss: משכנע }
+
+vocabulary:
+  - slug: artificial-intelligence
+    title: Artificial Intelligence
+    items: *artificial-intelligence-words
+
+activities:
+  - slug: artificial-intelligence-conditional
+    title: 'Second conditional: If AI replaced drivers…'
+    minutes: 8
+    items:
+      - id: replaced
+        type: multipleChoice
+        prompt: If AI ___ most office jobs, many people would need new skills.
+        options:
+          - { text: replaced, correct: true }
+          - {
+              text: replaces,
+              feedback: 'This is an imaginary situation, so after *if* we use the past simple: *replaced*.',
+            }
+          - {
+              text: would replace,
+              feedback: "We don't use *would* after *if*. Use the past simple: *If AI replaced…*",
+            }
+      - id: were-ceo
+        type: fillBlank
+        prompt: Use the verb *be* the way we learned for imaginary situations.
+        text: If I ___ a CEO, I would invest in AI development.
+        blanks: [[were, was]]
+      - id: would-lose
+        type: fillBlank
+        prompt: Use *would* and the verb *lose*.
+        text: If AI controlled our phones, we ___ our privacy.
+        blanks: [[would lose]]
+      - id: not-past
+        type: trueFalse
+        prompt: 'In *If AI became more intelligent than humans, society would change*, the past simple *became* talks about the past.'
+        answer: false
+        feedback:
+          correct: Right! The past simple after *if* shows an imaginary situation in the present or the future.
+          incorrect: 'We use the past simple after *if*, but we are not talking about the past. It is an imaginary situation now or in the future.'
+      - id: might
+        type: multipleChoice
+        prompt: 'If AI controlled social media, misinformation ___ increase. (We are not sure about the result.)'
+        options:
+          - { text: might, correct: true }
+          - {
+              text: would,
+              feedback: '*Would* shows the expected or most likely result. For a less certain result, use *might*.',
+            }
+          - {
+              text: will,
+              feedback: '*Will* is not used in the second conditional. Use *would*, *could* or *might*.',
+            }
+      - id: results
+        type: matching
+        prompt: Match each *if* part with the best result.
+        pairs:
+          - [If AI replaced drivers…, …unemployment would increase.]
+          - [If AI analyzed medical data faster…, …doctors could save more lives.]
+          - [If I were the Minister of Education…, …I would introduce AI lessons.]
+          - [If schools banned AI completely…, …students would use it at home.]
+      - id: correct-sentence
+        type: multipleChoice
+        prompt: Which sentence is correct?
+        options:
+          - { text: 'If I had more time, I would learn about AI.', correct: true }
+          - {
+              text: 'If I would have more time, I would learn about AI.',
+              feedback: "Don't use *would* after *if*. Use the past simple: *If I had more time…*",
+            }
+          - {
+              text: 'If I have more time, I would learn about AI.',
+              feedback: 'For an imaginary situation, use the past simple after *if*: *had*, not *have*.',
+            }
+      - id: order-what-would
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: What would you do if AI replaced your job?
+
+  - slug: artificial-intelligence-future
+    title: 'Future: will or going to?'
+    minutes: 8
+    items:
+      - id: promise
+        type: multipleChoice
+        prompt: "Don't worry, I ___ how this tool works. (a promise)"
+        options:
+          - { text: will explain, correct: true }
+          - {
+              text: explain,
+              feedback: 'For a promise about the future, use *will* + base verb: *I will explain*.',
+            }
+          - {
+              text: explained,
+              feedback: '*Explained* is the past. A promise is about the future: *I will explain*.',
+            }
+      - id: plan
+        type: multipleChoice
+        prompt: Our school decided last month. It ___ introduce AI lessons next year.
+        options:
+          - { text: is going to, correct: true }
+          - { text: going to, feedback: "Don't forget *be*: *It is going to introduce…*" }
+          - {
+              text: is go to,
+              feedback: 'The form is *be* + *going to* + base verb: *It is going to introduce…*',
+            }
+      - id: will-plans
+        type: trueFalse
+        prompt: We use *will* for plans that we made before we speak.
+        answer: false
+        feedback:
+          correct: 'Right! For plans made before, use *going to*: *We are going to train teachers.*'
+          incorrect: 'For plans made before, use *going to*. *Will* is for predictions, promises and quick decisions.'
+      - id: uses
+        type: matching
+        prompt: Match each sentence with its use.
+        pairs:
+          - [AI will become an essential skill in most careers., a prediction]
+          - ["Don't worry, I will help you with this tool.", a promise]
+          - ["That's a good point. I'll change my opinion.", a spontaneous decision]
+          - [We are going to train teachers next month., a plan made before]
+      - id: is-going-to
+        type: fillBlank
+        prompt: Use *going to* and the verb *regulate*.
+        text: The new law is ready. The government ___ AI in classrooms next year.
+        blanks: [[is going to regulate]]
+      - id: wont-replace
+        type: fillBlank
+        prompt: Write a negative prediction with *will* and the verb *replace*.
+        text: I think AI ___ all teachers. Students need people.
+        blanks: [["won't replace", will not replace]]
+      - id: plan-result
+        type: multipleChoice
+        prompt: Which sentence follows the rule "going to for the plan, will for the result"?
+        options:
+          - {
+              text: 'Schools are going to teach AI literacy, and this will prepare students for future jobs.',
+              correct: true,
+            }
+          - {
+              text: 'Schools will teach AI literacy, and this is going to prepare students for future jobs.',
+              feedback: 'Start with *going to* for the plan, then use *will* for the result.',
+            }
+          - {
+              text: 'Schools going to teach AI literacy, and this will prepare students for future jobs.',
+              feedback: "Don't forget *are*: *Schools are going to teach…*",
+            }
+      - id: order-explain
+        type: reorderSentence
+        prompt: Put the words in order.
+        sentence: I will explain how this tool works.

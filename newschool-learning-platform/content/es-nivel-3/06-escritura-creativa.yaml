@@ -1,0 +1,713 @@
+# Cycle "Escritura creativa", converted from the Spanish level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-3
+slug: escritura-creativa
+title: Escritura creativa
+goal: Escribir textos narrativos con los tiempos del pasado y presentar narraciones cohesionadas con conectores.
+position: 6
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Narrar en pasado" and "Conectores y cohesión") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    two skills, its summary (tenses, connectors, points of view), the class examples
+    and its vocabulary. Please check level, wording and every right answer before
+    students see them.
+  - >-
+    Skill names: the notebook's skills are "Producción escrita (creación de textos
+    narrativos)" and "Preparación y presentación de narrativas complejas". They are
+    kept as "Escribir textos narrativos" and "Presentar narraciones complejas"; the
+    exercises practise the grammar the summary gives for each (past narrative tenses;
+    connectors, cohesion and point of view).
+  - >-
+    Summary (wrong rule): "Condicional simple: hipótesis en presente/futuro", with the
+    example "El robo ocurriría entre las 8 y las 9", does not match: in that sentence
+    the condicional expresses a guess about the past (= probablemente ocurrió). The
+    rule now gives both uses. Connectors of condition and purpose (en caso de que,
+    siempre que, con tal de que, a condición de que, para que, a fin de que) take the
+    subjunctive; this was missing and is now in the summary. A table of the three
+    past tenses was added.
+  - >-
+    Corrections: "¿Sobre qué te gusta escribir? ¿por qué?" → "¿Por qué?"; "¿Has escrito
+    algo del que te sientas orgulloso?" → "algo de lo que te sientas orgulloso u
+    orgullosa"; "Actividad 2: : Investigación" (double colon); Mori example "Estaba
+    cansado, sin embargo, no podía dormir" → "Estaba cansado; sin embargo, no podía
+    dormir"; "Un desconocido toca tu puerta" / "alguien toca la puerta" → "llama a
+    tu puerta" / "llama a la puerta"; "¿Cuál punto de vista resultó…?" → "¿Qué punto de vista…?";
+    suspect's alibi "…en la universidad, no podría haber estado…" → "…en la
+    universidad; no podría…"; "Modo Zoom/chat" → "Modo chat" (no brand needed);
+    stray characters "ð¹" before the summary headings and the broken bold /
+    italic marks of the summary and homework were removed.
+  - >-
+    Mori: the notebook gives instructions addressed to Mori ("Contexto para Mori",
+    "Mori comienza diciendo…"). They are turned into three messages the student sends
+    (story step by step, rewrite from another perspective, reflection), keeping every
+    step, example and correction rule. "Nivel del alumno: avanzado (B2–C1)" was
+    changed to B1, the level of this course. Please check.
+  - >-
+    Vocabulary: "Alibi (coartada)" → "Coartada" (alibi is English); "Cohesión,
+    קוהרנטיות / לכידות" → "לכידות" and "Coherencia, עקביות" → "קוהרנטיות / עקביות"
+    (the two glosses were mixed); the vowel points in "מִלַּת קִשּׁוּר" were removed;
+    "Narración, נרטיב / סיפור" → "סיפור / נרטיב"; "Coartada" keeps only "אליבי"
+    (the source also had "טענת חפות"). Please confirm.
+  - >-
+    Left out: the "Nivel: 3 (avanzado / extremo)" line (the course is B1), the "Fecha"
+    and "Participantes" fields. The "Respuesta de alumno 1/2/3" lines are replaced by
+    the answer boxes. The source gives no plan for choosing activities. Activity 1 has
+    no total time (its steps add up to about 26 minutes). Times given as ranges are
+    recorded as the upper value (Actividad 2 20–25 → 25; Actividades 3 and 4 15–20 →
+    20; steps 10–12 → 12, 5–7 → 7, 3–4 → 4, 7–8 → 8, 8–10 → 10, 5–6 → 6, 6–7 → 7).
+    The section "Producción final (meta-gramatical)" of the summary is kept as a
+    checklist.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: escritura-creativa-clase
+    title: 'Clase: Escritura creativa'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Escritura creativa
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Escribir textos narrativos
+            description: 'Pasado narrativo (*vi, era, había desaparecido*) y condicional (*habría dejado huellas*)'
+          - name: Presentar narraciones complejas
+            description: 'Conectores (*sin embargo, por lo tanto, finalmente*), cohesión y puntos de vista'
+      - id: quizlet
+        type: externalLink
+        label: Escritura creativa en Quizlet
+        url: https://quizlet.com/il/921689816/creative-writing-extreme-spanish-actualizado-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Escribir para mí es una forma de ___.
+        prompt: 'Ideas: ser mejor en mi trabajo, desahogarme, inspirar a otras personas, obtener claridad, ser interesante…'
+        example: Soy Marta. Escribir para mí es una forma de conocerme.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas de preparación
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: ¿Qué es para ti la escritura creativa?
+            frame: Para mí, la escritura creativa es ___.
+          - question: ¿Sobre qué te gusta escribir? ¿Por qué?
+            frame: Me gusta escribir sobre ___ porque ___.
+          - question: ¿Has escrito algo de lo que te sientas orgulloso u orgullosa? ¿Qué fue?
+            frame: Sí, escribí ___. / Todavía no, pero me gustaría escribir ___.
+          - question: ¿Qué es lo más difícil para ti al escribir en otro idioma?
+            frame: Lo más difícil para mí es ___.
+          - question: ¿Qué haces cuando no tienes ideas para escribir?
+            frame: Cuando no tengo ideas, ___.
+          - question: ¿Por qué escribir te ayuda a aprender un idioma?
+            frame: Creo que escribir ayuda a ___.
+          - question: ¿Crees que la escritura puede cambiar la manera en que entendemos la realidad? ¿Cómo?
+            frame: Creo que sí / no, porque ___.
+      - id: kit-title
+        type: heading
+        level: 3
+        text: Pausa antes de escribir
+      - id: kit
+        type: table
+        caption: Kit narrativo de conectores
+        header: [Función, Conectores]
+        rows:
+          - [Causa y consecuencia, 'puesto que, dado que, por lo tanto, de modo que']
+          - [Contraste, 'sin embargo, a pesar de que, no obstante']
+          - [Secuencia, 'en primer lugar, después, mientras tanto, finalmente']
+          - [
+              Condición / hipótesis,
+              'en caso de que, siempre que, a condición de que (+ subjuntivo)',
+            ]
+          - [Propósito, 'a fin de que, para que (+ subjuntivo), con el objetivo de (+ infinitivo)']
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: El final de la historia'
+        skills: [Escribir textos narrativos, Presentar narraciones complejas]
+        steps:
+          - 'Inventa la **última frase de un cuento**. Esa frase será el punto de llegada de otra persona. Puede ser misteriosa, graciosa, dramática o absurda: cuanto más original, mejor.'
+          - Escribe una frase breve y clara (1–2 líneas como máximo) que funcione como cierre. Entrégala en papel o envíala por el chat.
+          - El profesor reparte las frases al azar, para que nadie reciba la suya.
+          - 'Escribe un cuento corto (3–4 párrafos) que lleve **naturalmente** a la frase final que recibiste. Usa conectores del kit narrativo (*por lo tanto, sin embargo, a pesar de que, finalmente…*) y mantén el mismo tiempo verbal (pasado o presente).'
+          - 'Lee tu cuento en voz alta. El autor de la frase final comenta: *¿Se parece a lo que había imaginado? ¿Qué fue diferente o inesperado?*'
+          - Comenten en grupo cómo una misma frase puede generar caminos narrativos distintos.
+        example: |-
+          *Y desde entonces nunca volvió a mirar atrás.*
+          *El secreto quedó enterrado bajo las aguas del río.*
+          *Lo sorprendente es que todo había sido un sueño.*
+      - id: act1-writing
+        type: discussionQuestions
+        title: Mi cuento
+        items:
+          - question: 'Mi frase final (para otra persona): ___'
+          - question: 'La frase final que recibí: ___'
+          - question: 'Mi cuento (3–4 párrafos): ___'
+      - id: act1-variations
+        type: callout
+        tone: info
+        title: Variaciones opcionales
+        text: |-
+          **Competencia creativa:** la clase vota por la historia más sorprendente, más emotiva o más coherente.
+          **Versión colectiva:** en parejas, reciben un final y escriben juntos la historia.
+          **Giro doble:** al terminar, el profesor da una frase extra que cambia el sentido del cuento y los estudiantes improvisan un epílogo breve.
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Investigación de un crimen'
+        skills: [Escribir textos narrativos, Presentar narraciones complejas]
+        minutes: 25
+        steps:
+          - 'Un objeto muy valioso ha desaparecido de la **biblioteca de la ciudad durante una tormenta eléctrica**. Nadie sabe exactamente qué pasó. Ustedes van a investigar el crimen desde diferentes roles.'
+          - 'En grupos de 3–4, reciban o elijan un rol: **detectives** (hipótesis en condicional), **testigos** (un testimonio breve en pasado), **sospechosos** (una coartada con *si hubiera…, habría…*) o **periodistas** (opcional: un titular y 3 frases para un artículo).'
+          - Cada grupo escribe 2–3 párrafos desde su rol (mira los ejemplos).
+          - Cada grupo presenta su parte a la clase. El profesor o un estudiante hace de moderador de la investigación y organiza las versiones.
+          - 'Analicen: *¿Qué versión es más convincente? ¿Quién parece culpable? ¿Qué detalles son contradictorios o sorprendentes?*'
+        example: |-
+          **Detectives:** *Si el sospechoso hubiera entrado por la ventana, habría dejado huellas. El robo habría ocurrido entre las 8 y las 9 de la noche.*
+          **Testigos:** *Yo vi una sombra con un paraguas rojo cerca de la puerta. Escuché un ruido fuerte en la sala de lectura.*
+          **Sospechosos:** *Si yo hubiera estado allí, habría ayudado, pero estaba en mi casa. Yo estaba estudiando en la universidad; no podría haber estado en la biblioteca.*
+          **Periodistas:** *Misterioso robo en la biblioteca durante la tormenta. Los vecinos creen que alguien aprovechó el apagón eléctrico.*
+      - id: act2-writing
+        type: discussionQuestions
+        title: Nuestro texto
+        items:
+          - question: 'Nuestro rol: ___'
+          - question: 'Nuestros párrafos: ___'
+      - id: act2-variations
+        type: callout
+        tone: info
+        title: Variaciones
+        text: |-
+          **1. Juego de pistas:** el profesor reparte tarjetas con datos secretos (*había huellas de barro*, *faltaba una lámpara*).
+          **2. Final alternativo:** cada estudiante escribe en 2–3 líneas cómo habría terminado el caso.
+          **3. Dramatización:** en vez de leer, los grupos actúan su versión (interrogatorio, rueda de prensa, escena del crimen).
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: La historia encadenada'
+        skills: [Escribir textos narrativos, Presentar narraciones complejas]
+        minutes: 20
+        steps:
+          - El profesor propone una primera frase para todos.
+          - Escribe **una frase** para continuar la historia.
+          - Pasa tu papel (o el documento en línea) al compañero de la derecha. Lee lo anterior y añade otra frase coherente.
+          - Repitan 5–6 rondas, hasta que el texto vuelva al primer autor.
+          - 'Para la cohesión: lean bien lo que ya está escrito, usen conectores (*entonces, después, sin embargo, de repente*), mantengan el mismo tiempo verbal y los personajes y escenarios ya presentados.'
+          - El primer autor lee la historia completa en voz alta. El grupo reacciona con risas, preguntas o comentarios.
+          - 'Comenten: *¿La historia mantuvo la coherencia o se volvió absurda? ¿Qué frases sorprendieron o cambiaron el rumbo? ¿Qué técnicas podrían mejorar la cohesión? ¿Qué estilo predominó: humor, misterio, drama?*'
+          - Al final, nombren al menos **2 técnicas narrativas** que ayudan a la coherencia (conectores, repetición de personajes, descripciones claras).
+        example: |-
+          *Aquella mañana algo cambió para siempre…*
+          *Cuando abrí la puerta, no podía creer lo que vi…*
+          *El silencio de la ciudad parecía anunciar una catástrofe…*
+      - id: act3-writing
+        type: discussionQuestions
+        title: Mis frases
+        items:
+          - question: 'Ronda 1: ___'
+          - question: 'Ronda 2: ___'
+          - question: 'Ronda 3: ___'
+          - question: '2 técnicas que ayudan a la coherencia: ___'
+      - id: act3-variations
+        type: callout
+        tone: info
+        title: Variaciones opcionales
+        text: |-
+          **Modo chat:** cada estudiante escribe su frase en un chat común y el profesor las va ordenando.
+          **Versión rápida oral:** en vez de escribir, cada estudiante dice una frase y el siguiente continúa.
+          **Versión temática:** el profesor fija un género (terror, comedia, ciencia ficción).
+          **Final inesperado:** el profesor prepara una frase final secreta y la añade al cierre.
+          **Mini-proyecto:** se elige la historia más creativa para reescribirla y mejorarla.
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Perspectivas múltiples'
+        skills: [Escribir textos narrativos, Presentar narraciones complejas]
+        minutes: 20
+        steps:
+          - El profesor presenta un escenario breve y abierto.
+          - 'Escribe **un párrafo corto (4–6 líneas)** que narre la escena desde una perspectiva: un **protagonista** (el conductor, la persona en la casa), un **observador cercano** (un peatón, un vecino, un amigo), una **autoridad** (un policía, un médico, un juez) o una **voz inesperada** (un perro, un objeto, el clima).'
+          - 'En grupos de 3–4, lean sus párrafos y comparen: *¿Cómo cambia la percepción de lo sucedido? ¿Qué detalles aparecen en una versión y no en otra? ¿Cuál resulta más convincente o más emotiva?*'
+          - 'Puesta en común: *¿Qué aporta cada perspectiva a la historia? ¿Cómo cambia el lenguaje según la voz elegida? ¿Qué punto de vista resultó más creativo o sorprendente?*'
+        example: |-
+          *Un accidente de coche en plena lluvia.*
+          *Un apagón general en toda la ciudad.*
+          *Un desconocido llama a tu puerta a medianoche.*
+      - id: act4-writing
+        type: discussionQuestions
+        title: Mi perspectiva
+        items:
+          - question: 'Mi perspectiva: ___'
+          - question: 'Mi párrafo (4–6 líneas): ___'
+      - id: act4-variations
+        type: callout
+        tone: info
+        title: Variaciones opcionales
+        text: |-
+          **Versión encadenada:** unan los párrafos en orden (protagonista → testigo → autoridad → voz inesperada) para crear una historia polifónica.
+          **Cambio de perspectiva:** reescribe tu párrafo desde un punto de vista completamente diferente.
+          **Competencia creativa:** la clase vota por el punto de vista más original, más emotivo o más realista.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Escribir textos narrativos** y **Presentar
+          narraciones complejas**; todas las actividades practican las dos. El cuaderno no
+          indica cuántas actividades elegir ni cómo combinarlas.
+      - id: n-intro
+        anchor: intro
+        minutes: 8
+        text: Da tu propio ejemplo primero (*Soy Marta. Escribir para mí es una forma de conocerme.*) y después pregunta a cada estudiante.
+      - id: n-warmup
+        anchor: warmup
+        text: Haz al menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen debajo de cada pregunta.
+      - id: n-kit
+        anchor: kit
+        minutes: 5
+        text: >-
+          Antes de las actividades de producción, presenta esta mini-lista de conectores
+          narrativos avanzados. Los estudiantes pueden copiarla o tenerla en la pantalla
+          como «kit narrativo» durante las actividades.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Instrucción inicial: 2 minutos. Escritura de la frase final: 3 minutos.
+          Intercambio de finales: 2 minutos (opcional: lee algunas en voz alta para
+          despertar curiosidad). Escritura del cuento: 12 minutos. Presentación y
+          comparación: 7 minutos. Objetivo: cohesión narrativa con un final impuesto.
+      - id: n-act2
+        anchor: act2
+        minutes: 25
+        text: >-
+          Asignación de roles: 4 minutos. Producción escrita: 12 minutos. Presentación: 8
+          minutos. Discusión final: 4 minutos. Al final, puedes revelar un «final oficial»
+          inventado o dejar que la clase cree varios finales posibles. Objetivo: narrar
+          con distintos tiempos verbales (pretérito, condicional, pluscuamperfecto) y ver
+          cómo los puntos de vista construyen versiones diferentes.
+      - id: n-act3
+        anchor: act3
+        minutes: 20
+        text: >-
+          Punto de partida: 2 minutos (elige una de las frases del ejemplo). Construcción
+          colectiva: 10 minutos. Lectura compartida: 6 minutos. Discusión guiada: 5
+          minutos.
+      - id: n-act4
+        anchor: act4
+        minutes: 20
+        text: >-
+          Escenario: 2 minutos (elige uno del ejemplo). Producción individual: 7 minutos.
+          Lectura en grupos: 5 minutos. Discusión plenaria: 6 minutos. Al cierre, destaca
+          que **la narración no solo depende de los hechos**, sino de **quién los cuenta
+          y cómo los interpreta**.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: escritura-creativa-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-pasado
+        type: ruleSummary
+        skill: Pasado narrativo
+        rules:
+          - text: '**Pretérito indefinido**: para hechos puntuales.'
+            examples: [Ayer vi una sombra en la biblioteca.]
+          - text: '**Pretérito imperfecto**: para descripciones, rutinas y contexto.'
+            examples: [Era una noche lluviosa y todos estaban en silencio.]
+          - text: '**Pretérito pluscuamperfecto** (*había* + participio): para acciones anteriores a otra acción pasada.'
+            examples: [Cuando llegué, el objeto ya había desaparecido.]
+      - id: pasado-table
+        type: table
+        caption: Los tres tiempos del pasado narrativo
+        header: [Persona, Indefinido (ver), Imperfecto (estar), Pluscuamperfecto (desaparecer)]
+        rows:
+          - [yo, vi, estaba, había desaparecido]
+          - [tú, viste, estabas, habías desaparecido]
+          - [él / ella / usted, vio, estaba, había desaparecido]
+          - [nosotros / nosotras, vimos, estábamos, habíamos desaparecido]
+          - [vosotros / vosotras, visteis, estabais, habíais desaparecido]
+          - [ellos / ellas / ustedes, vieron, estaban, habían desaparecido]
+      - id: rules-condicional
+        type: ruleSummary
+        skill: Condicional
+        rules:
+          - text: '**Condicional simple**: hipótesis sobre el presente o el futuro (*Si tuviera tiempo, escribiría más.*). También sirve para hacer una suposición sobre el pasado.'
+            examples:
+              [
+                'El robo ocurriría entre las 8 y las 9. (= Probablemente ocurrió entre las 8 y las 9.)',
+              ]
+          - text: '**Condicional compuesto** (*habría* + participio): hipótesis irreales en el pasado.'
+            examples: [Si hubiera entrado por la ventana, habría dejado huellas.]
+      - id: rules-presente
+        type: ruleSummary
+        skill: Presente
+        rules:
+          - text: '**Presente de opinión**, en la introducción y la reflexión.'
+            examples: [Para mí, escribir es una forma de inspirar.]
+          - text: '**Presente narrativo** (opcional, estilo literario).'
+            examples: [De repente, alguien llama a la puerta.]
+      - id: rules-conectores
+        type: ruleSummary
+        skill: Conectores y marcadores discursivos
+        rules:
+          - text: '**Secuencia:**'
+            examples: ['primero, después, entonces, finalmente, al cabo de un rato, mientras tanto']
+          - text: '**Contraste:**'
+            examples: ['sin embargo, no obstante, en cambio, a pesar de que, aunque']
+          - text: '**Causa y consecuencia:**'
+            examples: ['puesto que, dado que, ya que, por lo tanto, así que, de modo que']
+          - text: '**Condición / hipótesis:** *si* + indicativo; *en caso de que, siempre que, con tal de que* + subjuntivo.'
+            examples: [En caso de que vuelva el ladrón, llama a la policía.]
+          - text: '**Propósito:** *para que, a fin de que* + subjuntivo; *con el objetivo de* + infinitivo.'
+            examples: [Dejé la luz encendida para que el detective pudiera ver.]
+      - id: rules-estructuras
+        type: ruleSummary
+        skill: Estructuras narrativas
+        rules:
+          - text: 'Frases para empezar una historia:'
+            examples:
+              [
+                Aquella mañana algo cambió para siempre…,
+                'Cuando abrí la puerta, no podía creer lo que vi…',
+              ]
+          - text: 'Finales narrativos:'
+            examples: [Desde entonces nunca volvió a mirar atrás., Todo había sido un sueño.]
+          - text: 'Descripción: adjetivos (*oscuro, misterioso, extraño*) y escenarios (*una sala de lectura vacía, una ciudad en silencio*).'
+      - id: rules-funciones
+        type: ruleSummary
+        skill: Funciones discursivas
+        rules:
+          - text: 'Expresar opiniones y reflexiones:'
+            examples: [Para mí, la escritura es…, Creo que escribir ayuda a…]
+          - text: 'Narrar hechos pasados:'
+            examples: [Yo vi una sombra con un paraguas rojo.]
+          - text: 'Formular hipótesis:'
+            examples: ['Si yo hubiera estado allí, habría ayudado.']
+          - text: 'Dar explicaciones:'
+            examples: [Es difícil para mí escribir porque…]
+          - text: 'Inventar diálogos o testimonios (testigos, sospechosos).'
+      - id: rules-perspectiva
+        type: ruleSummary
+        skill: Cambio de perspectiva
+        rules:
+          - text: '**Primera persona** (testigos, protagonistas):'
+            examples: [Yo vi… / Nosotros pensamos…]
+          - text: '**Tercera persona** (observadores, periodistas):'
+            examples: [El ladrón entró por la ventana.]
+          - text: '**Voces inesperadas** (no humanas):'
+            examples:
+              [
+                El perro ladraba sin parar porque había notado algo.,
+                La tormenta rugía y oscurecía todo.,
+              ]
+      - id: recursos
+        type: callout
+        tone: info
+        title: Recursos de estilo
+        text: |-
+          **Cohesión textual:** mantén los tiempos verbales, los personajes y los escenarios.
+          **Conectores avanzados** para escribir con fluidez.
+          **Registro literario:** metáforas y descripciones subjetivas.
+          **Variedad de puntos de vista:** protagonista, testigo, autoridad, objeto.
+      - id: checklist
+        type: callout
+        tone: tip
+        title: Al terminar, puedo…
+        text: |-
+          ✓ usar al menos 2 conectores narrativos avanzados en mi texto;
+          ✓ usar al menos tres tiempos verbales distintos (indefinido, imperfecto, condicional);
+          ✓ comparar cómo la persona gramatical cambia la interpretación del relato.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Repasa el resumen con el grupo y pide a cada estudiante una frase de su cuento con un conector y un tiempo del pasado.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: escritura-creativa-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: 'Vas a escribir un cuento breve con Mori, paso a paso. Abre el chat con Mori, copia el mensaje de la Parte 1 y envíalo. Cuando termines, envía la Parte 2 y después la Parte 3.'
+      - id: mori-cuento
+        type: aiTutorPrompt
+        title: 'Parte 1: Cuento breve (8–10 líneas)'
+        message: |-
+          Hola Mori, hoy quiero escribir un cuento breve contigo, paso a paso. Mi nivel es B1. Quiero practicar el pasado narrativo (indefinido, imperfecto, pluscuamperfecto), el condicional simple y compuesto, y los conectores narrativos.
+          Guíame con estos pasos, uno por uno. Después de cada paso, corrígeme enseguida, dame un ejemplo claro y pídeme que repita la forma correcta:
+          1. Inicio: dos frases en pasado para empezar el cuento (por ejemplo: «Era una noche lluviosa…» o «De repente, escuché un ruido…»). Si uso el presente (es), dime que lo cambie al pasado (era).
+          2. Una frase con un conector de contraste (sin embargo, a pesar de que, no obstante). Si olvido el conector, dame un ejemplo como «Estaba cansado; sin embargo, no podía dormir» y pídeme que lo intente otra vez.
+          3. Una frase con un conector de secuencia (después, entonces, finalmente).
+          4. Una frase en condicional compuesto (por ejemplo: «Si hubiera visto la sombra, habría corrido»).
+          5. Una frase con pluscuamperfecto (por ejemplo: «Cuando llegué, ya se había apagado la luz»).
+          6. El final: termino el cuento con la frase «… y desde ese día, nada volvió a ser igual».
+          ¿Empezamos?
+      - id: mori-perspectiva
+        type: aiTutorPrompt
+        title: 'Parte 2: Perspectivas múltiples (5–6 líneas)'
+        message: |-
+          Mori, ahora voy a reescribir mi cuento en 5–6 líneas desde otra perspectiva: si lo escribí en primera persona (yo), lo cambio a tercera persona (él / ella), o uso una voz diferente: un perro, un objeto o la tormenta.
+          Si todavía uso «yo», dímelo y pídeme que lo intente otra vez. Corrige mis errores, por favor.
+      - id: mori-reflexion
+        type: aiTutorPrompt
+        title: 'Parte 3: Reflexión breve'
+        message: |-
+          Mori, último paso. Voy a escribir 3–4 líneas para responder:
+          ¿Qué conectores usé?
+          ¿Cómo cambió la historia al cambiar la perspectiva?
+          ¿Qué fue lo más difícil: el condicional, el pluscuamperfecto o los conectores?
+          Si mis respuestas son muy cortas o no tienen ejemplos, pídeme un ejemplo concreto de un conector que usé. Corrige mis errores, por favor.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: escritura-creativa-practica
+    book: workbook
+    title: 'Práctica: Escritura creativa'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-narracion
+        type: activity
+        activity: escritura-creativa-narracion
+      - id: ex-conectores
+        type: activity
+        activity: escritura-creativa-conectores
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: escritura-creativa-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la escritura creativa
+        glossLang: he
+        link: https://quizlet.com/il/921689816/creative-writing-extreme-spanish-actualizado-flash-cards/
+        items: &escritura-creativa-words
+          - { term: Narrador, gloss: מספר }
+          - { term: Perspectiva, gloss: נקודת מבט }
+          - { term: Testigo, gloss: עד }
+          - { term: Sospechoso, gloss: חשוד }
+          - { term: Detective, gloss: בלש }
+          - { term: Periodista, gloss: עיתונאי }
+          - { term: Misterio, gloss: תעלומה }
+          - { term: Robo, gloss: גניבה }
+          - { term: Escenario, gloss: סצנה / זירה }
+          - { term: Versión, gloss: גרסה }
+          - { term: Contraste, gloss: ניגוד }
+          - { term: Secuencia, gloss: רצף }
+          - { term: Conector, gloss: מילת קישור }
+          - { term: Cohesión, gloss: לכידות }
+          - { term: Coherencia, gloss: קוהרנטיות / עקביות }
+          - { term: Interpretación, gloss: פרשנות }
+          - { term: Punto de vista, gloss: נקודת השקפה }
+          - { term: Condicional, gloss: תנאי }
+          - { term: Pluscuamperfecto, gloss: פלוסקוומפרפקטו (עבר לפני עבר) }
+          - { term: Hipótesis, gloss: השערה }
+          - { term: Suposición, gloss: הנחה }
+          - { term: Contradicción, gloss: סתירה }
+          - { term: Evidencia, gloss: ראיה / הוכחה }
+          - { term: Versión oficial, gloss: גרסה רשמית }
+          - { term: Coartada, gloss: אליבי }
+          - { term: Narración, gloss: סיפור / נרטיב }
+          - { term: Voz narrativa, gloss: קול סיפורי }
+          - { term: Desenlace, gloss: סיום עלילה }
+          - { term: Clímax, gloss: שיא }
+          - { term: Descripción, gloss: תיאור }
+          - { term: Detalle, gloss: פרט }
+          - { term: Interpretar, gloss: לפרש }
+          - { term: Formular, gloss: לנסח }
+          - { term: Redactar, gloss: לנסח בכתב }
+          - { term: Expresión, gloss: ביטוי }
+          - { term: A fin de que, gloss: כדי ש… }
+          - { term: A pesar de que, gloss: למרות ש… }
+          - { term: Sin embargo, gloss: למרות זאת }
+
+vocabulary:
+  - slug: escritura-creativa
+    title: Escritura creativa
+    items: *escritura-creativa-words
+
+activities:
+  - slug: escritura-creativa-narracion
+    title: 'Narrar en pasado: vi, estaba, había desaparecido'
+    minutes: 8
+    items:
+      - id: vi
+        type: multipleChoice
+        prompt: Ayer ___ una sombra en la biblioteca.
+        options:
+          - { text: vi, correct: true }
+          - {
+              text: veía,
+              feedback: 'El imperfecto (*veía*) es para descripciones y rutinas. Para un hecho puntual usamos el indefinido: *vi*.',
+            }
+          - {
+              text: había visto,
+              feedback: 'El pluscuamperfecto es para una acción anterior a otra acción pasada. Aquí es un hecho puntual: *vi*.',
+            }
+      - id: estaban
+        type: multipleChoice
+        prompt: Todos ___ en silencio cuando empezó la tormenta.
+        options:
+          - { text: estaban, correct: true }
+          - {
+              text: están,
+              feedback: '*Están* es presente. Para describir el contexto en el pasado usamos el imperfecto: *estaban*.',
+            }
+          - {
+              text: han estado,
+              feedback: '*Han estado* es pretérito perfecto. Para el contexto de una historia en pasado usamos el imperfecto: *estaban*.',
+            }
+      - id: habia
+        type: fillBlank
+        prompt: Completa con el verbo *haber* para formar el pluscuamperfecto.
+        text: Cuando llegué, el objeto ya ___ desaparecido.
+        blanks: [[había]]
+      - id: une-tiempos
+        type: matching
+        prompt: Une cada tiempo verbal con su uso en una narración.
+        pairs:
+          - [Pretérito indefinido, hechos puntuales]
+          - [Pretérito imperfecto, 'descripciones, rutinas y contexto']
+          - [Pretérito pluscuamperfecto, una acción anterior a otra acción pasada]
+          - [Condicional compuesto, hipótesis irreales en el pasado]
+      - id: mismo-tiempo
+        type: trueFalse
+        prompt: Para dar cohesión a un cuento, conviene mantener el mismo tiempo verbal (pasado o presente).
+        answer: true
+        feedback:
+          correct: ¡Correcto! Mantener los tiempos verbales, los personajes y los escenarios da cohesión al texto.
+          incorrect: 'Sí conviene: la cohesión textual pide mantener los tiempos verbales, los personajes y los escenarios.'
+      - id: ladraba
+        type: fillBlank
+        prompt: Completa con el imperfecto de *ladrar*.
+        text: El perro ___ sin parar porque había notado algo.
+        blanks: [[ladraba]]
+      - id: tercera-persona
+        type: multipleChoice
+        prompt: 'Cambia la perspectiva a tercera persona: *Yo vi una sombra con un paraguas rojo.*'
+        options:
+          - { text: Ella vio una sombra con un paraguas rojo., correct: true }
+          - {
+              text: Ella vi una sombra con un paraguas rojo.,
+              feedback: '*Vi* es para *yo*. Para *ella* usamos *vio*.',
+            }
+          - {
+              text: Ella ve una sombra con un paraguas rojo.,
+              feedback: '*Ve* es presente. La historia está en pasado: *vio*.',
+            }
+      - id: ordena-noche
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Era una noche lluviosa y todos estaban en silencio.
+
+  - slug: escritura-creativa-conectores
+    title: 'Conectores y cohesión: sin embargo, por lo tanto, para que'
+    minutes: 8
+    items:
+      - id: sin-embargo
+        type: multipleChoice
+        prompt: Estaba cansado; ___, no podía dormir.
+        options:
+          - { text: sin embargo, correct: true }
+          - {
+              text: por lo tanto,
+              feedback: '*Por lo tanto* expresa una consecuencia. Aquí hay un contraste (cansado, pero sin dormir): *sin embargo*.',
+            }
+          - {
+              text: finalmente,
+              feedback: '*Finalmente* es un conector de secuencia. Aquí hay un contraste: *sin embargo*.',
+            }
+      - id: une-conectores
+        type: matching
+        prompt: Une cada conector con su función.
+        pairs:
+          - [sin embargo, contraste]
+          - [por lo tanto, consecuencia]
+          - [mientras tanto, secuencia]
+          - [en caso de que, condición]
+          - [a fin de que, propósito]
+      - id: por-lo-tanto
+        type: multipleChoice
+        prompt: Llovía mucho; ___, la biblioteca cerró temprano.
+        options:
+          - { text: por lo tanto, correct: true }
+          - {
+              text: sin embargo,
+              feedback: '*Sin embargo* expresa contraste. Aquí la lluvia es la causa del cierre: usamos un conector de consecuencia, *por lo tanto*.',
+            }
+          - {
+              text: a pesar de que,
+              feedback: '*A pesar de que* expresa contraste. Aquí hay una consecuencia: *por lo tanto*.',
+            }
+      - id: a-pesar
+        type: trueFalse
+        prompt: '*A pesar de que* es un conector de contraste.'
+        answer: true
+        feedback:
+          correct: '¡Correcto! Como *sin embargo* y *no obstante*, expresa contraste.'
+          incorrect: '*A pesar de que* expresa contraste, como *sin embargo* y *no obstante*.'
+      - id: para-que
+        type: multipleChoice
+        prompt: Dejé la luz encendida ___ el detective pudiera ver.
+        options:
+          - { text: para que, correct: true }
+          - {
+              text: dado que,
+              feedback: '*Dado que* expresa causa. Aquí hay un propósito: *para que* (+ subjuntivo).',
+            }
+          - {
+              text: sin embargo,
+              feedback: '*Sin embargo* expresa contraste. Aquí hay un propósito: *para que*.',
+            }
+      - id: despues
+        type: fillBlank
+        prompt: Completa con un conector de secuencia.
+        text: Primero entramos en la sala y ___ encontramos una carta.
+        blanks: [[después, luego, entonces, más tarde]]
+        wordBank: [después, sin embargo, por lo tanto, a pesar de que]
+      - id: en-caso-de-que
+        type: multipleChoice
+        prompt: En caso de que ___ el ladrón, llama a la policía.
+        options:
+          - { text: vuelva, correct: true }
+          - {
+              text: vuelve,
+              feedback: 'Después de *en caso de que* usamos el subjuntivo: *vuelva*.',
+            }
+          - {
+              text: volverá,
+              feedback: 'Después de *en caso de que* no usamos el futuro, sino el subjuntivo: *vuelva*.',
+            }
+      - id: ordena-nadie
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: Sin embargo, nadie vio al ladrón.

@@ -1,0 +1,845 @@
+# Cycle "Geld und Sparen", converted from the German level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-stufe-3
+slug: geld-und-sparen
+title: Geld und Sparen
+goal: Über Geld und Sparen diskutieren, mit dem Konjunktiv II und dem Passiv mit Modalverben.
+position: 4
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Konjunktiv II" and "Passiv mit Modalverben") are
+    NEW: they were written from the cycle's summary, the activity examples, the
+    corrected homework exercises and the vocabulary. Please check level, wording and
+    every right answer before students see them.
+  - >-
+    COPYRIGHT: Activity 3 is a reading "5 Spartipps – Von Daniel Roberts,
+    Finanzberater" with a quote and a first-person biography ("Über Daniel": his
+    parents, his time in the navy …). The name, the quote and the biography were
+    left out and replaced by one neutral line ("Ein Finanzberater gibt fünf einfache
+    Spartipps."). The five short tips and their questions are kept. Please confirm.
+  - >-
+    Summary, Passiv mit Modalverben: the notebook gives the structure as "Modalverb
+    + Partizip II + werden", which reads as if the three words stand together. It
+    now says that the modal verb is in position 2 and Partizip II + werden stand at
+    the end (Mehr Geld *sollte* für die Zukunft *gespart werden*), in the German
+    rules and in the Hebrew text. Rules on "von + Dativ" for the person and on
+    singular / plural of the modal verb (sollte / sollten) were added.
+  - >-
+    Summary, Konjunktiv II: added (please confirm) that the main clause after a
+    wenn-clause starts with the verb (…, würde ich reisen), that haben / sein /
+    modal verbs use their own forms (hätte, wäre, könnte, müsste) instead of würde +
+    Infinitiv, the past form hätte / wäre + Partizip II as a rule, and a
+    conjugation table (hätte, wäre, würde, könnte). The source summary only gives
+    the pattern "wenn + hätte / wäre → würde + Infinitiv" and examples.
+  - >-
+    Homework answer key, Teil 2 (Passiv): no. 3 "Mehr über Sparen sollte in Schulen
+    unterrichtet werden" → "In Schulen sollte mehr über das Sparen unterrichtet
+    werden" (more natural). No. 4 "Früher sollte von jungen Menschen investiert
+    werden" is grammatical, but *früher* in position 1 reads as "in the past"; it is
+    now "Von jungen Menschen sollte früher investiert werden" with a note that
+    "Junge Menschen sollten früher investieren" (active) is the natural sentence.
+    Teil 1 and Teil 4 keys are correct. The keys are only in teacher notes.
+  - >-
+    Corrections: warm-up 2 example "Ich finde, dass finanzielle Bildung wichtiger
+    genommen werden sollte" → frame "Ich finde, dass finanzielle Bildung ___
+    unterrichtet werden sollte" (matches the question and practises the Passiv);
+    Activity 4 topic "Wie Energie reduziert werden kann" → "Wie Energie gespart
+    werden kann"; vocabulary "die Steuer – עתיד" (wrong gloss) → "die Steuer – מס".
+    Stray "**", "###" and the broken "Datum / Teilnehmer" heading were removed.
+  - >-
+    Activity 1 says the pairs answer "vier Fragen", but eight questions are listed:
+    now "vier der acht Fragen" (the teacher or pair chooses). Step 2 asks for
+    "indirekte Rede"; the examples use dass-clauses with würde (Er hat gesagt, dass
+    er ein Haus kaufen würde), which is fine at B1; Konjunktiv I is not required.
+  - >-
+    Left out: "Datum / Teilnehmer" fields and the "Antwort von Student 1/2/3" lines
+    (the platform has answer boxes). The source gives no times for any part, so no
+    minutes are set. The intro round had no example: one was added (*Ich heiße
+    Noa …*). The warm-up model answers became sentence frames.
+  - >-
+    Homework: the notebook has one Mori message and two Mori "activities" with
+    Hebrew talking points but no message for them. The Hebrew instructions are kept
+    as Hebrew text; a German starter message was added for each activity (please
+    check). The classic homework (Teil 1–4) is kept as practice with answer boxes;
+    the answer key ("תשובות לבדיקה עצמית") is only in a teacher note. The "מה תרגלנו
+    בשיעור" list is kept as a Hebrew text block at the end of the summary.
+  - >-
+    The Quizlet link lost its tracking parameter (?new). The vocabulary table header
+    row (**Deutsch** / **Hebräisch**) was dropped.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: geld-und-sparen-unterricht
+    title: 'Unterricht: Geld und Sparen'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Geld und Sparen
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Konjunktiv II
+            description: '*hätte, wäre, würde* + Infinitiv: *Wenn ich mehr Geld hätte, würde ich reisen.*'
+          - name: Passiv mit Modalverben
+            description: 'Modalverb + Partizip II + *werden*: *Mehr Geld sollte gespart werden.*'
+      - id: quizlet
+        type: externalLink
+        label: Geld und Sparen auf Quizlet
+        url: https://quizlet.com/br/1182903751/geld-und-sparen-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Einführungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich heiße ___. Ich finde finanzielle Sicherheit wichtig, weil ___.
+        example: Ich heiße Noa. Ich finde finanzielle Sicherheit wichtig, weil ich ohne Stress leben möchte.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Wie viel Geld sollten junge Menschen jeden Monat sparen?
+            frame: Ich denke, junge Menschen sollten etwa ___ % ihres Gehalts sparen.
+          - question: Sollte finanzielle Bildung stärker in Schulen unterrichtet werden?
+            frame: Ich finde, dass finanzielle Bildung ___ unterrichtet werden sollte.
+          - question: Was würdest du tun, wenn dein Gehalt um 20 % reduziert würde?
+            frame: Wenn mein Gehalt reduziert würde, würde ich ___.
+          - question: Was sollte getan werden, wenn jemand wegen eines Bankfehlers Geld verliert?
+            frame: Das Geld sollte ___ werden.
+          - question: Wenn du eine Million Euro bekommen würdest, wofür würdest du das Geld ausgeben?
+            frame: Wenn ich eine Million Euro bekommen würde, würde ich ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Wenn ich reich wäre'
+        skills: [Konjunktiv II]
+        steps:
+          - '**Schritt 1:** Arbeitet zu zweit und beantwortet vier der acht Fragen unten.'
+          - 'Jede Antwort ist mindestens 3–4 Sätze lang, benutzt den **Konjunktiv II** und enthält persönliche Beispiele. Stellt eurem Partner / eurer Partnerin Rückfragen.'
+          - 'Nützliche Strukturen: *Wenn ich mehr Geld hätte, würde ich … / Ich glaube, dass … / Vielleicht würde ich … / An deiner Stelle würde ich …*'
+          - '**Schritt 2:** Erzählt der Klasse, was euer Partner / eure Partnerin gesagt hat: in der 3. Person, in vollständigen Sätzen und mit Details.'
+        example: |-
+          *Er hat gesagt, dass er ein Haus kaufen würde.*
+          *Sie hat erzählt, dass sie nach Spanien ziehen würde, wenn sie mehr Geld hätte.*
+      - id: act1-questions
+        type: discussionQuestions
+        title: Fragen
+        items:
+          - question: Wenn du morgen 10.000 Euro gewinnen würdest, was würdest du tun?
+            frame: Wenn ich 10.000 Euro gewinnen würde, würde ich ___.
+          - question: Wenn du weniger Miete bezahlen müsstest, wofür würdest du mehr Geld ausgeben?
+            frame: Wenn ich weniger Miete bezahlen müsste, würde ich mehr Geld für ___ ausgeben.
+          - question: Wenn du 50 % deines Gehalts sparen müsstest, worauf würdest du verzichten?
+            frame: Ich würde auf ___ verzichten.
+          - question: Wenn du die Spargewohnheiten der Menschen ändern könntest, was würdest du verändern?
+            frame: Wenn ich die Spargewohnheiten ändern könnte, würde ich ___.
+          - question: Wenn du als Teenager mehr über Geld gelernt hättest, was wäre heute anders?
+            frame: Wenn ich als Teenager mehr über Geld gelernt hätte, wäre ___.
+          - question: Wenn du früher weniger Geld ausgegeben hättest, was hättest du kaufen können?
+            frame: Wenn ich früher weniger Geld ausgegeben hätte, hätte ich ___ kaufen können.
+          - question: Wenn du reich wärst, würdest du weiterarbeiten?
+            frame: Wenn ich reich wäre, würde ich (nicht) weiterarbeiten, weil ___.
+          - question: Wenn du kostenlos in einem anderen Land leben könntest, wohin würdest du ziehen?
+            frame: Ich würde nach ___ ziehen, weil ___.
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Was sollte getan werden?'
+        skills: [Passiv mit Modalverben]
+        steps:
+          - Die Lehrkraft stellt verschiedene Situationen vor.
+          - Antwortet mit dem **Passiv mit Modalverben** (*sollte, könnte, muss, kann* + Partizip II + *werden*).
+        example: |-
+          *Mehr Geld sollte gespart werden.*
+          *Finanzielle Bildung sollte früher unterrichtet werden.*
+          *Weniger Geld sollte für unnötige Produkte ausgegeben werden.*
+          *Lebensmittelverschwendung könnte reduziert werden.*
+      - id: act2-situations
+        type: discussionQuestions
+        title: Situationen
+        items:
+          - question: Zu viel Geld wird für unnötige Dinge ausgegeben. Was sollte verändert werden?
+            frame: ___ sollte ___ werden.
+          - question: Zu wenig Geld wird von jungen Menschen gespart. Was sollte getan werden?
+            frame: ___ sollte ___ werden.
+          - question: Mehr Finanzbildung wird in Schulen gefordert. Stimmst du zu?
+            frame: Ich stimme (nicht) zu, weil ___.
+          - question: Öffentliches Geld wird schlecht genutzt. Was könnte verbessert werden?
+            frame: ___ könnte ___ werden.
+          - question: Viele Menschen haben Schulden. Was sollte getan werden?
+            frame: ___ sollte ___ werden.
+          - question: Lebensmittel werden oft verschwendet. Wie könnte Geld gespart werden?
+            frame: Geld könnte gespart werden, wenn ___.
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Spartipps'
+        skills: [Konjunktiv II, Passiv mit Modalverben]
+        steps:
+          - '**Schritt 1 – Gemeinsam lesen:** Die Klasse liest gemeinsam die fünf Spartipps unten.'
+          - '**Schritt 2 – Partnerarbeit:** Jedes Paar wählt zwei Spartipps aus und diskutiert die Fragen. Benutzt den **Konjunktiv II**, gebt vollständige Antworten, stellt Rückfragen und nennt persönliche Beispiele.'
+          - '**Schritt 3 – Klassendiskussion:** Jedes Paar präsentiert eine interessante Idee oder einen Spartipp.'
+        example: |-
+          *Wenn Menschen früher sparen würden, hätten sie später weniger Stress.*
+          *Mehr Geld sollte für die Zukunft gespart werden.*
+      - id: act3-text
+        type: callout
+        tone: info
+        title: 5 Spartipps
+        text: |-
+          Ein Finanzberater gibt fünf einfache Spartipps.
+          **1. Spare zuerst Geld.** Wenn du Geld bekommst, solltest du zuerst einen Teil sparen und erst danach Geld ausgeben.
+          **2. Kontrolliere deine Ausgaben.** Viele Menschen geben Geld aus, ohne genau zu wissen, wofür. Wenn man seine Ausgaben notiert, kann Geld besser kontrolliert werden.
+          **3. Setze dir Ziele.** Es ist einfacher zu sparen, wenn man ein klares Ziel hat.
+          **4. Kaufe weniger kleine Dinge.** Kleine Einkäufe wirken oft harmlos, aber zusammen kosten sie viel Geld.
+          **5. Fang heute an.** Viele Menschen warten zu lange mit dem Sparen.
+      - id: act3-questions
+        type: discussionQuestions
+        title: Fragen zu den Spartipps
+        items:
+          - question: 'Tipp 1: Wenn du jeden Monat zuerst sparen würdest, wie würde sich dein Leben verändern?'
+            frame: Wenn ich jeden Monat zuerst sparen würde, ___.
+          - question: 'Tipp 1: Wenn du schon früher angefangen hättest zu sparen, was wäre heute anders?'
+            frame: Wenn ich früher angefangen hätte zu sparen, ___.
+          - question: 'Tipp 2: Wenn du alle deine Ausgaben sehen würdest, was würdest du verändern?'
+            frame: Ich würde ___.
+          - question: 'Tipp 2: Welche Dinge könnten reduziert werden?'
+            frame: ___ könnte(n) reduziert werden.
+          - question: 'Tipp 3: Wenn du heute ein Sparziel wählen könntest, welches wäre das?'
+            frame: Mein Sparziel wäre ___.
+          - question: 'Tipp 3: Wenn du für eine große Reise sparen würdest, worauf würdest du verzichten?'
+            frame: Ich würde auf ___ verzichten.
+          - question: 'Tipp 4: Wenn du weniger Snacks oder Kaffee kaufen würdest, wie viel Geld würdest du sparen?'
+            frame: Ich würde ungefähr ___ sparen.
+          - question: 'Tipp 4: Was könnte weniger gekauft werden?'
+            frame: ___ könnte(n) weniger gekauft werden.
+          - question: 'Tipp 5: Wenn du jünger wärst, würdest du anders mit Geld umgehen?'
+            frame: Wenn ich jünger wäre, würde ich ___.
+          - question: 'Tipp 5: Welchen Rat würdest du jungen Menschen geben?'
+            frame: Ich würde ihnen raten, ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Wie kann Geld gespart werden?'
+        skills: [Passiv mit Modalverben]
+        steps:
+          - '**Schritt 1 – Klassendiskussion:** Sprecht über die drei Fragen unten.'
+          - '**Schritt 2 – Partnerarbeit:** Wählt drei Themen und findet Lösungen im **Passiv** (*kann / könnte / sollte … werden*).'
+          - '**Schritt 3:** Jedes Paar präsentiert eine Lösung. Ein anderes Paar stellt eine Rückfrage.'
+        example: |-
+          *Das Licht sollte ausgemacht werden, wenn niemand im Zimmer ist.*
+          *Alte Möbel könnten wiederverwendet werden.*
+      - id: act4-discussion
+        type: discussionQuestions
+        title: Klassendiskussion
+        items:
+          - question: Wo wird deiner Meinung nach am meisten Geld verschwendet?
+            frame: Meiner Meinung nach wird am meisten Geld für ___ verschwendet.
+          - question: Welche kleinen Gewohnheiten könnten verändert werden?
+            frame: ___ könnte verändert werden.
+          - question: Was wird bei dir zu Hause gemacht, um Geld zu sparen?
+            frame: Bei mir zu Hause wird ___.
+      - id: act4-topics
+        type: discussionQuestions
+        title: Themen
+        items:
+          - question: Wie kann Wasser zu Hause gespart werden?
+            frame: Wasser kann gespart werden, wenn ___. / ___ sollte ___ werden.
+          - question: Wie kann Energie gespart werden?
+            frame: ___ sollte ___ werden.
+          - question: Wie können Transportkosten gesenkt werden?
+            frame: ___ könnte(n) ___ werden.
+          - question: Wie können Einkaufsgewohnheiten verändert werden?
+            frame: ___ sollte(n) ___ werden.
+          - question: Wie können alte Dinge wiederverwendet werden?
+            frame: ___ könnte(n) ___ werden.
+          - question: Wie kann beim Reisen Geld gespart werden?
+            frame: ___ sollte(n) ___ werden.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Konjunktiv II** (Aufwärmfragen 3 und 5,
+          Aktivitäten 1 und 3) und **Passiv mit Modalverben** (Aufwärmfragen 1, 2 und 4,
+          Aktivitäten 2, 3 und 4). Niveau B1. Das Heft gibt keine Zeiten an: Plane die
+          Aktivitäten nach der Länge deiner Stunde.
+      - id: n-intro
+        anchor: intro
+        text: Gib zuerst dein eigenes Beispiel. Jeder Schüler sagt seinen Namen und einen Grund mit *weil* (Verb am Ende).
+      - id: n-warmup
+        anchor: warmup
+        text: >-
+          Antworten aus dem Heft als Modell: 1. *Ich denke, junge Menschen sollten etwa
+          20 % ihres Gehalts sparen.* 2. *Ich finde, dass finanzielle Bildung in Schulen
+          stärker unterrichtet werden sollte.* 3. *Wenn mein Gehalt reduziert würde,
+          würde ich weniger Geld für Restaurants ausgeben.* 4. *Das Geld sollte sofort
+          zurückgegeben werden.* 5. *Wenn ich eine Million Euro bekommen würde, würde
+          ich reisen und eine Wohnung kaufen.*
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Jedes Paar wählt vier der acht Fragen (oder du teilst sie zu). Fragen 5 und 6
+          üben die Vergangenheit (*hätte gelernt, hätte kaufen können*). Im Bericht
+          reichen dass-Sätze mit *würde* (*Er hat gesagt, dass er ein Haus kaufen
+          würde.*); Konjunktiv I ist hier nicht nötig.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Lies jede Situation vor und lass mehrere Schüler antworten. Achte darauf, dass
+          das Modalverb auf Position 2 steht und *Partizip II + werden* am Satzende.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Im Heft steht hier ein Text eines Finanzberaters mit Zitat und persönlicher
+          Biografie. Diese Teile sind aus Urheberrechtsgründen nicht übernommen; die
+          fünf kurzen Tipps sind geblieben. Wenn du die Biografie zeigen willst, nutze
+          dein eigenes Material.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Schritt 1 im Plenum, Schritt 2 zu zweit (drei Themen pro Paar). In Schritt 3
+          stellt jeweils ein anderes Paar eine Rückfrage, möglichst ebenfalls im Passiv
+          (*Wie könnte das gemacht werden?*).
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: geld-und-sparen-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-konjunktiv
+        type: ruleSummary
+        skill: Konjunktiv II
+        rules:
+          - text: 'Mit dem **Konjunktiv II** sprechen wir über **hypothetische Situationen**, **Träume**, **Fantasie**, **Ratschläge** und **unreale Situationen**.'
+          - text: 'Gegenwart: Meistens benutzen wir **würde + Infinitiv** (Infinitiv am Satzende). Bei *haben*, *sein* und den Modalverben benutzen wir die eigene Form: **hätte, wäre, könnte, müsste**.'
+            examples:
+              - Ich würde weniger arbeiten.
+              - Wenn ich mehr Geld hätte, …
+              - Wenn ich reich wäre, …
+          - text: '**wenn-Satz + Hauptsatz:** Im wenn-Satz steht das Verb am Ende. Der Hauptsatz beginnt dann mit dem Verb: *…, würde ich …*'
+            examples:
+              - Wenn ich mehr Geld hätte, würde ich reisen.
+              - Wenn ich reich wäre, würde ich weniger arbeiten.
+              - Wenn ich im Lotto gewinnen würde, würde ich eine Wohnung kaufen.
+          - text: '**Ratschläge geben:** *An deiner Stelle würde ich …*'
+            examples: [An deiner Stelle würde ich sparen.]
+          - text: '**Vergangenheit, die nicht passiert ist:** **hätte / wäre + Partizip II**.'
+            examples:
+              - Wenn ich früher gespart hätte, hätte ich ein Haus gekauft.
+              - Wenn ich mehr gelernt hätte, …
+      - id: konjunktiv-table
+        type: table
+        caption: Konjunktiv II
+        header: [Person, haben, sein, werden, können]
+        rows:
+          - [ich, hätte, wäre, würde, könnte]
+          - [du, hättest, wärst, würdest, könntest]
+          - [er / sie / es, hätte, wäre, würde, könnte]
+          - [wir, hätten, wären, würden, könnten]
+          - [ihr, hättet, wärt, würdet, könntet]
+          - [sie / Sie, hätten, wären, würden, könnten]
+      - id: konjunktiv-examples
+        type: examples
+        items:
+          - {
+              text: 'Wenn ich mehr Geld hätte, würde ich reisen.',
+              gloss: 'אם היה לי יותר כסף, הייתי מטייל.',
+            }
+          - {
+              text: 'Wenn ich reich wäre, würde ich weniger arbeiten.',
+              gloss: 'אם הייתי עשיר, הייתי עובד פחות.',
+            }
+          - {
+              text: 'Wenn ich früher gespart hätte, hätte ich ein Haus gekauft.',
+              gloss: 'אם הייתי חוסך מוקדם יותר, הייתי קונה בית.',
+            }
+          - { text: Wenn ich im Lotto gewinnen würde …, gloss: אם הייתי זוכה בלוטו… }
+          - { text: An deiner Stelle würde ich sparen., gloss: במקומך הייתי חוסך. }
+          - { text: Wenn ich mehr gelernt hätte …, gloss: אם הייתי לומד יותר… }
+      - id: konjunktiv-he
+        type: text
+        lang: he
+        text: |-
+          ה־Konjunktiv II משמש בגרמנית כדי לדבר על מצבים היפותטיים, חלומות, דמיון, עצות ומצבים לא מציאותיים.
+          בדרך כלל משתמשים בו עם würde + Infinitiv, ועם הצורות hätte / wäre.
+          מבנה בסיסי: wenn + hätte / wäre → würde + Infinitiv. במשפט ה־wenn הפועל בא בסוף, והמשפט השני מתחיל בפועל: Wenn ich mehr Geld hätte, würde ich reisen.
+          שימושים חשובים: לדבר על מצבים דמיוניים (Wenn ich im Lotto gewinnen würde…), לתת עצות (An deiner Stelle würde ich sparen) ולדבר על עבר שלא קרה (Wenn ich mehr gelernt hätte…): hätte / wäre + Partizip II.
+      - id: rules-passiv
+        type: ruleSummary
+        skill: Passiv mit Modalverben
+        rules:
+          - text: 'Das **Passiv** benutzen wir, wenn die **Handlung** wichtiger ist als die Person, die sie macht.'
+          - text: '**Passiv Präsens:** **werden** (Position 2) + **Partizip II** (am Satzende).'
+            examples: [Das Geld wird gespart., Viele Produkte werden gekauft.]
+          - text: '**Passiv mit Modalverb:** Das Modalverb steht auf **Position 2**, am Satzende stehen **Partizip II + werden**. Für Empfehlungen benutzen wir oft *sollte* und *könnte*.'
+            examples:
+              - Mehr Geld sollte gespart werden.
+              - Finanzielle Bildung sollte in Schulen unterrichtet werden.
+              - Weniger Geld sollte verschwendet werden.
+              - Lebensmittelverschwendung könnte reduziert werden.
+          - text: 'Das Modalverb passt zum Subjekt: Singular *sollte / könnte*, Plural *sollten / könnten*.'
+            examples:
+              [Mehr Geld sollte gespart werden., Öffentliche Ausgaben könnten reduziert werden.]
+          - text: 'Die Person nennen wir oft nicht. Wenn doch, dann mit **von + Dativ**.'
+            examples: [Finanzielle Bildung sollte von der Regierung gefördert werden.]
+          - text: '**Aktiv → Passiv:** Das Akkusativobjekt des Aktivsatzes wird das Subjekt des Passivsatzes.'
+            examples:
+              - 'Die Menschen sparen Geld. → Geld wird gespart.'
+              - 'Die Menschen sollten mehr Geld sparen. → Mehr Geld sollte gespart werden.'
+      - id: aktiv-passiv-table
+        type: table
+        caption: Aktiv und Passiv
+        header: ['', Aktiv, Passiv]
+        rows:
+          - [Präsens, Die Menschen sparen Geld., Geld wird gespart.]
+          - [
+              mit Modalverb,
+              Die Menschen sollten mehr Geld sparen.,
+              Mehr Geld sollte gespart werden.,
+            ]
+          - [
+              mit Modalverb,
+              Die Stadt könnte die Ausgaben reduzieren.,
+              Die Ausgaben könnten reduziert werden.,
+            ]
+      - id: passiv-examples
+        type: examples
+        items:
+          - { text: Das Geld wird gespart., gloss: הכסף נחסך. }
+          - { text: Viele Produkte werden gekauft., gloss: מוצרים רבים נקנים. }
+          - { text: Mehr Geld sollte gespart werden., gloss: צריך לחסוך יותר כסף. }
+          - {
+              text: Finanzielle Bildung sollte in Schulen unterrichtet werden.,
+              gloss: צריך ללמד חינוך פיננסי בבתי ספר.,
+            }
+          - { text: Weniger Geld sollte verschwendet werden., gloss: צריך לבזבז פחות כסף. }
+      - id: passiv-he
+        type: text
+        lang: he
+        text: |-
+          בגרמנית משתמשים ב־Passiv (סביל) כאשר הפעולה חשובה יותר מהאדם שעושה אותה.
+          מבנה בסיסי: werden + Partizip II.
+          Passiv עם Modalverben הוא המבנה הכי חשוב לרמת B1: הפועל המודאלי (sollte, könnte) במקום השני, ו־Partizip II + werden בסוף המשפט: Mehr Geld sollte für die Zukunft gespart werden.
+          ההבדל בין Aktiv ל־Passiv: Die Menschen sparen Geld (Aktiv) / Geld wird gespart (Passiv). ב־Passiv הפעולה חשובה יותר מהאדם.
+      - id: structures-table
+        type: table
+        caption: Nützliche Strukturen
+        header: [Konjunktiv II, Passiv]
+        rows:
+          - ['Wenn ich mehr Geld hätte, …', Es sollte mehr gespart werden.]
+          - [Ich würde …, Es könnte weniger gekauft werden.]
+          - [An deiner Stelle würde ich …, Mehr Geld sollte … werden.]
+          - [Vielleicht würde ich …, Weniger Geld sollte … werden.]
+      - id: practised-he
+        type: text
+        lang: he
+        text: |-
+          מה תרגלנו בשיעור?
+          דיבור היפותטי: מה היית עושה עם הרבה כסף, איך היית משנה הרגלי חיסכון, מה היית עושה אחרת בעבר.
+          דיונים חברתיים: איך צריך לחסוך כסף, מה צריך ללמד בבתי ספר, איך כסף מתבזבז.
+          דיבור מתקדם יותר בגרמנית: Konjunktiv II, Passiv, Modalverben, הבעת דעה והמלצות.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole beide Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel, zum Thema Geld und Sparen.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: geld-und-sparen-hausaufgaben
+    title: Hausaufgaben
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        lang: he
+        text: 'שלחו למורי את ההודעה הבאה. אחר כך עבדו עם מורי על שתי הפעילויות.'
+      - id: mori-start
+        type: aiTutorPrompt
+        title: 'Start: Geld und Sparen'
+        message: Hallo Mori! Lass uns über Geld und Sparen sprechen. Bitte stell mir Fragen mit Konjunktiv II und Passiv mit Modalverben. Korrigiere meine Fehler und stell mir Rückfragen.
+      - id: mori-act1-title
+        type: heading
+        level: 3
+        text: 'Aktivität 1: Wenn ich reich wäre'
+      - id: mori-act1-he
+        type: text
+        lang: he
+        text: |-
+          ספרו למורי מה הייתם עושים אם היה לכם הרבה כסף. דברו על:
+          - איפה הייתם גרים
+          - מה הייתם קונים
+          - האם הייתם ממשיכים לעבוד
+          - על מה הייתם מבזבזים פחות כסף
+          - מה הייתם משנים בחיים שלכם
+          חובה להשתמש ב־würde, ב־hätte / wäre וב־wenn.
+      - id: mori-act1-examples
+        type: examples
+        items:
+          - text: Wenn ich reich wäre, würde ich in Spanien leben.
+          - text: Wenn ich mehr Geld hätte, würde ich weniger arbeiten.
+      - id: mori-act1
+        type: aiTutorPrompt
+        title: 'Aktivität 1: Wenn ich reich wäre'
+        message: >-
+          Hallo Mori! Ich erzähle dir, was ich machen würde, wenn ich viel Geld hätte:
+          wo ich leben würde, was ich kaufen würde, ob ich weiterarbeiten würde, wofür
+          ich weniger Geld ausgeben würde und was ich in meinem Leben ändern würde. Bitte
+          korrigiere meine Fehler und stell mir Rückfragen.
+      - id: mori-act2-title
+        type: heading
+        level: 3
+        text: 'Aktivität 2: Wie sollte Geld gespart werden?'
+      - id: mori-act2-he
+        type: text
+        lang: he
+        text: |-
+          דברו עם מורי על דרכים לחסוך כסף. דברו על:
+          - איך אפשר לחסוך בבית
+          - איך אנשים מבזבזים כסף
+          - מה צריך להשתנות
+          - מה בתי ספר צריכים ללמד
+          חובה להשתמש ב־Passiv עם Modalverben.
+      - id: mori-act2-examples
+        type: examples
+        items:
+          - text: Mehr Geld sollte gespart werden.
+          - text: Lebensmittelverschwendung sollte reduziert werden.
+          - text: Finanzielle Bildung sollte früher unterrichtet werden.
+      - id: mori-act2
+        type: aiTutorPrompt
+        title: 'Aktivität 2: Wie sollte Geld gespart werden?'
+        message: >-
+          Hallo Mori! Lass uns darüber sprechen, wie man Geld sparen kann: zu Hause, beim
+          Einkaufen und in der Schule. Ich möchte das Passiv mit Modalverben üben (zum
+          Beispiel: Mehr Geld sollte gespart werden). Bitte stell mir Fragen, korrigiere
+          meine Fehler und stell mir Rückfragen.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          **Konjunktiv II:** *Wenn ich … hätte / wäre, würde ich …* (im wenn-Satz steht das Verb am Ende).
+          **Passiv:** Modalverb auf Position 2, **Partizip II + werden** am Satzende.
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+      - id: classic-title
+        type: heading
+        level: 2
+        text: Klassische Hausaufgaben
+      - id: teil1-title
+        type: heading
+        level: 3
+        text: 'Teil 1: Konjunktiv II'
+      - id: teil1-he
+        type: text
+        lang: he
+        text: השלימו את המשפטים. הפועל בסוגריים.
+      - id: teil1
+        type: discussionQuestions
+        items:
+          - question: Wenn ich mehr Geld ___, würde ich öfter reisen. (haben)
+          - question: Wenn meine Miete billiger ___, würde ich mehr sparen. (sein)
+          - question: Wenn ich reich ___, würde ich ein Haus kaufen. (sein)
+          - question: Wenn ich weniger Geld für Kleidung ausgegeben hätte, ___ ich mehr gespart. (haben)
+          - question: Wenn Menschen besser mit Geld umgehen würden, ___ sie weniger Schulden. (haben)
+          - question: Wenn du eine Million Euro gewinnen würdest, was ___ du machen? (werden)
+          - question: Wenn ich früher finanzielle Bildung gehabt hätte, ___ ich heute weniger Stress. (haben)
+          - question: An deiner Stelle ___ ich weniger Geld verschwenden. (werden)
+      - id: teil2-title
+        type: heading
+        level: 3
+        text: 'Teil 2: Passiv mit Modalverben'
+      - id: teil2-he
+        type: text
+        lang: he
+        text: הפכו את המשפטים ל־Passiv.
+      - id: teil2-example
+        type: examples
+        items:
+          - text: 'Die Menschen sollten mehr Geld sparen. → Mehr Geld sollte gespart werden.'
+      - id: teil2
+        type: discussionQuestions
+        items:
+          - question: Die Regierung sollte finanzielle Bildung fördern.
+          - question: Viele Menschen sollten weniger Geld verschwenden.
+          - question: Schulen sollten mehr über das Sparen unterrichten.
+          - question: Junge Menschen sollten früher investieren.
+          - question: Die Stadt könnte öffentliche Ausgaben reduzieren.
+          - question: Familien sollten Lebensmittelverschwendung vermeiden.
+      - id: teil3-title
+        type: heading
+        level: 3
+        text: 'Teil 3: Schreiben'
+      - id: teil3-he
+        type: text
+        lang: he
+        text: ענו על השאלות ב־4–5 משפטים מלאים.
+      - id: teil3
+        type: discussionQuestions
+        items:
+          - question: Was würdest du tun, wenn du 50.000 Euro gewinnen würdest?
+          - question: Wofür geben Menschen heute zu viel Geld aus?
+          - question: Was sollte getan werden, damit junge Menschen besser sparen?
+          - question: Was würdest du gerne in deinem Konsumverhalten verändern?
+      - id: teil4-title
+        type: heading
+        level: 3
+        text: 'Teil 4: Wortschatz'
+      - id: teil4
+        type: discussionQuestions
+        lang: he
+        title: תרגמו לגרמנית
+        items:
+          - question: חיסכון
+          - question: חובות
+          - question: משכורת
+          - question: השקעה
+          - question: אחריות
+          - question: תקציב
+          - question: לבזבז
+          - question: אינפלציה
+          - question: הוצאות
+          - question: עתיד
+    teacherNotes:
+      - id: n-mori
+        anchor: mori-act1
+        text: >-
+          Im Heft gibt es für die zwei Mori-Aktivitäten nur hebräische Gesprächspunkte,
+          keine Nachricht. Die deutschen Startnachrichten sind neu.
+      - id: n-key1
+        anchor: teil1
+        text: >-
+          Lösungen Teil 1: 1. hätte 2. wäre 3. wäre 4. hätte (ich mehr gespart) 5.
+          hätten 6. würdest 7. hätte 8. würde.
+      - id: n-key2
+        anchor: teil2
+        text: >-
+          Lösungen Teil 2: 1. Finanzielle Bildung sollte von der Regierung gefördert
+          werden. 2. Weniger Geld sollte von vielen Menschen verschwendet werden. 3. In
+          Schulen sollte mehr über das Sparen unterrichtet werden. 4. Von jungen Menschen
+          sollte früher investiert werden. (Unpersönliches Passiv ohne Subjekt; der
+          Aktivsatz klingt hier natürlicher.) 5. Öffentliche Ausgaben könnten von der
+          Stadt reduziert werden. 6. Lebensmittelverschwendung sollte von Familien
+          vermieden werden. Die Angabe mit *von* kann auch fehlen.
+      - id: n-key3
+        anchor: teil3
+        text: >-
+          Beispielantworten Teil 3: 1. Wenn ich 50.000 Euro gewinnen würde, würde ich
+          einen Teil sparen. Ich würde auch eine Reise machen und etwas Geld investieren.
+          Den Rest würde ich für meine Zukunft behalten. 2. Viele Menschen geben zu viel
+          Geld für Kleidung, Technik und Restaurants aus. Manche kaufen Dinge, die sie
+          nicht wirklich brauchen. Werbung beeinflusst viele Menschen. 3. Meiner Meinung
+          nach sollte finanzielle Bildung in Schulen unterrichtet werden. Eltern sollten
+          auch mit ihren Kindern über Geld sprechen. Außerdem sollten junge Menschen
+          lernen, ein Budget zu planen. 4. Ich würde gerne weniger impulsiv einkaufen.
+          Ich möchte mehr sparen und nur Dinge kaufen, die ich wirklich brauche. Außerdem
+          würde ich mehr Geld investieren.
+      - id: n-key4
+        anchor: teil4
+        text: >-
+          Lösungen Teil 4: das Sparen / die Ersparnisse, die Schulden, das Gehalt, die
+          Investition, die Verantwortung, das Budget, verschwenden, die Inflation, die
+          Ausgaben, die Zukunft.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: geld-und-sparen-uebung
+    book: workbook
+    title: 'Übung: Geld und Sparen'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-konjunktiv
+        type: activity
+        activity: geld-und-sparen-konjunktiv
+      - id: ex-passiv
+        type: activity
+        activity: geld-und-sparen-passiv
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: geld-und-sparen-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter rund um Geld und Sparen
+        glossLang: he
+        link: https://quizlet.com/br/1182903751/geld-und-sparen-flash-cards/
+        items: &geld-und-sparen-words
+          - { term: sparen, gloss: לחסוך }
+          - { term: die Ersparnisse, gloss: חסכונות }
+          - { term: die Ausgaben, gloss: הוצאות }
+          - { term: das Einkommen, gloss: הכנסה }
+          - { term: das Gehalt, gloss: משכורת }
+          - { term: die finanzielle Sicherheit, gloss: ביטחון כלכלי }
+          - { term: die Schulden, gloss: חובות }
+          - { term: investieren, gloss: להשקיע }
+          - { term: die Investition, gloss: השקעה }
+          - { term: verschwenden, gloss: לבזבז }
+          - { term: reduzieren, gloss: להפחית }
+          - { term: die Miete, gloss: שכר דירה }
+          - { term: die Nebenkosten, gloss: הוצאות נלוות }
+          - { term: die Rechnung, gloss: חשבון }
+          - { term: das Budget, gloss: תקציב }
+          - { term: das Sparkonto, gloss: חשבון חיסכון }
+          - { term: die Überweisung, gloss: העברה בנקאית }
+          - { term: die Kreditkarte, gloss: כרטיס אשראי }
+          - { term: der Kredit, gloss: אשראי / הלוואה }
+          - { term: die Bankgebühren, gloss: עמלות בנק }
+          - { term: die Inflation, gloss: אינפלציה }
+          - { term: die Wirtschaft, gloss: כלכלה }
+          - { term: die Steuer, gloss: מס }
+
+vocabulary:
+  - slug: geld-und-sparen
+    title: Geld und Sparen
+    items: *geld-und-sparen-words
+
+activities:
+  - slug: geld-und-sparen-konjunktiv
+    title: Konjunktiv II
+    minutes: 8
+    items:
+      - id: haette-reisen
+        type: multipleChoice
+        prompt: Wenn ich mehr Geld ___, würde ich öfter reisen.
+        options:
+          - { text: hätte, correct: true }
+          - {
+              text: habe,
+              feedback: '*habe* ist Indikativ: Das ist real. Für eine unreale Situation brauchen wir den Konjunktiv II: *hätte*.',
+            }
+          - {
+              text: hatte,
+              feedback: '*hatte* ist Präteritum (Vergangenheit). Hier sprechen wir über eine unreale Situation: *Wenn ich mehr Geld hätte …*',
+            }
+      - id: waere-reich
+        type: fillBlank
+        prompt: Ergänze *sein* im Konjunktiv II.
+        text: Wenn ich reich ___, würde ich weniger arbeiten.
+        blanks: [[wäre]]
+      - id: an-deiner-stelle
+        type: fillBlank
+        prompt: Ergänze *werden* im Konjunktiv II.
+        text: An deiner Stelle ___ ich weniger Geld verschwenden.
+        blanks: [[würde]]
+      - id: wortstellung
+        type: trueFalse
+        prompt: 'Der Satz *Wenn ich mehr Geld hätte, ich würde reisen.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! Nach dem wenn-Satz kommt zuerst das Verb: *Wenn ich mehr Geld hätte, würde ich reisen.*'
+          incorrect: 'Nach dem wenn-Satz beginnt der Hauptsatz mit dem Verb: *…, würde ich reisen.*'
+      - id: vergangenheit
+        type: multipleChoice
+        prompt: Wenn ich früher gespart ___, hätte ich ein Haus gekauft.
+        options:
+          - { text: hätte, correct: true }
+          - {
+              text: würde,
+              feedback: 'Für eine Vergangenheit, die nicht passiert ist, benutzen wir *hätte / wäre* + Partizip II: *gespart hätte*.',
+            }
+          - {
+              text: wäre,
+              feedback: '*sparen* bildet das Perfekt mit *haben*. Darum: *Wenn ich früher gespart hätte …*',
+            }
+      - id: formen
+        type: matching
+        prompt: Welche Form im Konjunktiv II (ich) passt zu welchem Verb?
+        pairs:
+          - [haben, hätte]
+          - [sein, wäre]
+          - [werden, würde]
+          - [können, könnte]
+          - [müssen, müsste]
+      - id: ordne-rat
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einem Ratschlag.
+        sentence: An deiner Stelle würde ich mehr sparen.
+      - id: schulden
+        type: fillBlank
+        prompt: Ergänze *werden* und *haben* im Konjunktiv II.
+        text: Wenn Menschen besser mit Geld umgehen ___, ___ sie weniger Schulden.
+        blanks: [[würden], [hätten]]
+
+  - slug: geld-und-sparen-passiv
+    title: Passiv mit Modalverben
+    minutes: 8
+    items:
+      - id: gespart-werden
+        type: multipleChoice
+        prompt: Mehr Geld sollte ___.
+        options:
+          - { text: gespart werden, correct: true }
+          - {
+              text: werden gespart,
+              feedback: 'Am Satzende steht zuerst das Partizip II, dann *werden*: *gespart werden*.',
+            }
+          - {
+              text: sparen werden,
+              feedback: 'Im Passiv brauchen wir das Partizip II: *gespart werden*.',
+            }
+      - id: unterrichtet
+        type: fillBlank
+        prompt: Schreib das Partizip II von *unterrichten*.
+        text: Finanzielle Bildung sollte in Schulen ___ werden.
+        blanks: [[unterrichtet]]
+      - id: handlung
+        type: trueFalse
+        prompt: Im Passiv ist die Handlung wichtiger als die Person, die sie macht.
+        answer: true
+        feedback:
+          correct: 'Richtig! *Geld wird gespart.* Wer spart, ist nicht wichtig.'
+          incorrect: 'Doch: Das Passiv benutzen wir, wenn die Handlung wichtiger ist als die Person: *Geld wird gespart.*'
+      - id: aktiv-passiv
+        type: multipleChoice
+        prompt: '*Die Menschen sollten weniger Geld verschwenden.* Welcher Satz ist das Passiv?'
+        options:
+          - { text: Weniger Geld sollte verschwendet werden., correct: true }
+          - {
+              text: Weniger Geld sollte verschwenden werden.,
+              feedback: 'Im Passiv steht das Partizip II vor *werden*: *verschwendet werden*.',
+            }
+          - {
+              text: Weniger Geld wird verschwendet sollen.,
+              feedback: 'Das Modalverb steht auf Position 2, *Partizip II + werden* am Ende: *Weniger Geld sollte verschwendet werden.*',
+            }
+      - id: koennte
+        type: fillBlank
+        prompt: Ergänze *können* im Konjunktiv II.
+        text: Lebensmittelverschwendung ___ reduziert werden.
+        blanks: [[könnte]]
+      - id: werden-praesens
+        type: fillBlank
+        prompt: 'Passiv Präsens: Ergänze *werden*.'
+        text: Viele Produkte ___ gekauft.
+        blanks: [[werden]]
+      - id: paare
+        type: matching
+        prompt: Welcher Passivsatz passt zu welchem Aktivsatz?
+        pairs:
+          - [Die Regierung sollte Bildung fördern., Bildung sollte gefördert werden.]
+          - [Familien sollten Verschwendung vermeiden., Verschwendung sollte vermieden werden.]
+          - [Die Stadt könnte die Kosten senken., Die Kosten könnten gesenkt werden.]
+          - [Wir sollten alte Dinge wiederverwenden., Alte Dinge sollten wiederverwendet werden.]
+      - id: ordne-passiv
+        type: reorderSentence
+        prompt: Ordne die Wörter zu einem Passivsatz.
+        sentence: Weniger Geld sollte für unnötige Produkte ausgegeben werden.

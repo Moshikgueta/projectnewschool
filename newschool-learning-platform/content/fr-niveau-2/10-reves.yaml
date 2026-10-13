@@ -1,0 +1,689 @@
+# Cycle "Rêves", converted from the French level 2 digital notebook
+# ("Cahier digital 2025 - français niveau 2", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-2
+slug: reves
+title: Rêves
+goal: Raconter un rêve au passé (passé composé et imparfait) et utiliser les prépositions de lieu et de temps.
+position: 10
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Les temps du passé" and "Les prépositions") are NEW:
+    the notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules, the activity texts and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Summary, past tenses, rule 1 said the past participle is "toujours la même forme".
+    That is wrong for verbs with être (elle est allée, ils sont partis). The rule now
+    says: with avoir the participle does not change (in these simple sentences); with
+    être it agrees with the subject. A short table of imparfait endings (être, faire,
+    jouer) was added.
+  - >-
+    Summary, prepositions, rule 3 ("autres prépositions de lieu") is empty in the
+    source. It was filled with the place prepositions used in Activities 1 and 3 and
+    in the vocabulary (devant, derrière, à côté de, près de, sous, au-dessus de,
+    autour de). Rule 2 "EN" now also gives AU / AUX for masculine and plural
+    countries (au Canada, aux États-Unis), which Activity 3 uses ("à / en / au /
+    aux"). In the time list, "LE" (le lundi, le 3 mars) is marked as an article, not a
+    preposition. Examples were added to the time rule (the source gives only labels).
+    Please confirm.
+  - >-
+    Activity 5, step 1 repeats the place-preposition rules of the summary word for
+    word; they are kept once, in the summary. The time expressions of step 1 are
+    kept as a reminder callout in the activity.
+  - >-
+    Corrections: "les espèces fermés" → "les espaces fermés" (twice); "la boite" →
+    "la boîte"; "connaitre" → "connaître"; "A votre avis" / "A :" → "À"; "demande
+    lui" → "demande-lui"; "qui rêve le plus ? les enfants" → "Les enfants"; stray
+    asterisks (**\*\*…\*\***) around the warm-up questions removed; Activity 3 step 2
+    "et où ont placé ces objets" → "et l'endroit où ils les ont placés"; Activity 3
+    frame "___ vit avec moi à / dans / sur / chez moi" → "___ vit / vivent avec moi
+    dans ma maison", and "chez" removed from "dans / sur / chez / autour de ma maison"
+    (one cannot say "chez ma maison"); "J Lo" / "JLo" → "J.Lo"; Activity 4 step 2
+    (mixed singular / plural) rewritten; "Comment vous êtes-vous senti ?" →
+    "senti(e) ?".
+  - >-
+    Activity 2 story: the narrator's gender changed in the text ("entourée", "je me
+    suis retrouvée" vs "perdu", "je me suis réveillé"), and the questions say "le
+    narrateur". The text is now masculine throughout (entouré, retrouvé). Please
+    change it all to feminine if you prefer.
+  - >-
+    Vocabulary: "Escalier – סולם" → "מדרגות" (סולם is a ladder); "Lucide – בהיר" →
+    "צלול" (rêve lucide = חלום צלול); "Alarme / Réveil – שעון מעורר" → "אזעקה / שעון
+    מעורר"; "Chambre – חדר" → "חדר שינה" (a room in general is "une pièce");
+    "Au-dessus" → "Au-dessus de"; "À côté de" appeared twice and is kept once. Please
+    confirm.
+  - >-
+    The notebook does not say which activities practise which skill and gives no
+    times, so no minutes are set. The teacher note suggests a mapping (past:
+    Activities 1, 2, 4, 5; prepositions: Activities 1, 3, 5). The Quizlet link is
+    kept without its "?i=…&x=…" parameters; the Google Docs link of Activity 1 is kept
+    without "?usp=sharing". The "Réponse de l'élève 1/2/3" lines are replaced by the
+    answer boxes.
+  - >-
+    Activity 3 example uses a real celebrity's house (J.Lo in Beverly Hills), as in
+    the notebook; students look for a photo of a dream house online themselves.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: reves-classe
+    title: 'Classe : Rêves'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Rêves
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Les temps du passé
+            description: Le passé composé (*j’ai rêvé, je suis tombé*) et l’imparfait (*j’étais, il y avait*)
+          - name: Les prépositions
+            description: 'Lieu et temps : *dans, à, en, sur, sous, devant, derrière, à côté de, depuis, pendant*'
+      - id: quizlet
+        type: externalLink
+        label: Rêves sur Quizlet
+        url: https://quizlet.com/il/1094950578/conversational-french-2025-reves-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. Je rêve uniquement dans ma langue maternelle. / Je rêve en ___ (les langues).
+        example: Je m’appelle Lévanah. Je rêve souvent en français, parfois en hébreu.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Lorsque vous vous réveillez le matin, vous souvenez-vous de vos rêves de la nuit ?
+            frame: Oui / Non, en général je m’en souviens. / Je ne m’en souviens pas.
+          - question: |-
+              Avez-vous déjà fait un de ces rêves ? Avez-vous déjà rêvé que :
+              vos dents tombaient · vous voliez · vous tombiez · vous échouiez à un examen · vous étiez pourchassé(e) ?
+            frame: Oui, j’ai déjà fait ce rêve. / Non, je n’ai jamais fait ce rêve.
+          - question: Pouvez-vous nous raconter un rêve dont vous vous souvenez ?
+            frame: Une nuit, j’ai rêvé que ___. Dans mon rêve, j’étais ___.
+          - question: Avez-vous déjà rêvé que vous étiez dans un autre pays ou à une autre époque ?
+            frame: Oui, une fois, j’ai rêvé que j’étais en / au / à ___.
+          - question: Pouvez-vous faire quelque chose pour faire moins de cauchemars (mauvais rêves) ?
+            frame: Pour faire moins de cauchemars, on peut ___.
+          - question: Selon vous, qui rêve le plus ? Les enfants ou les adultes ? Pourquoi ?
+            frame: Je pense que ___ rêvent le plus, parce que ___.
+          - question: 'Bonus : À votre avis, pourquoi est-ce que les gens rêvent ?'
+            frame: À mon avis, les gens rêvent parce que ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : De quoi as-tu rêvé ?'
+        skills: [Les temps du passé, Les prépositions]
+        steps:
+          - Fais une copie du document Google avec les images avant de commencer à écrire.
+          - 'Choisis une à trois images. Écris un texte au passé qui décrit les images comme si c’était un rêve. Utilise des prépositions (*dans, sur, avec, à propos de, près de, à côté de…*) et des mots que tu connais (les couleurs, etc.).'
+          - Chacun à son tour, partage un de tes rêves avec le groupe.
+          - Le groupe interprète ton rêve et dit ce qu’il signifie, selon lui.
+        resource:
+          label: Images de rêves (document Google)
+          url: https://docs.google.com/document/d/1VVx7xtPF2FhOr0dUIEEftlZEx6-HmZklbXo9NgtBFTk/edit
+      - id: act1-frame
+        type: discussionQuestions
+        title: Mon rêve de la nuit dernière
+        items:
+          - question: La nuit dernière, j’ai rêvé que / de ___.
+          - question: C’était le matin / l’après-midi / la nuit, et ___.
+          - question: Dans la pièce / Dans la rue, j’ai vu ___.
+          - question: Il y avait beaucoup de ___ dans ___.
+          - question: Dans le ciel, il y avait ___.
+          - question: Un ___ homme ___ avec ___.
+          - question: Une ___ femme ___ près de ___.
+          - question: Un enfant était ___ à côté de ___.
+          - question: Sur le / la ___, il y avait ___.
+          - question: Le rêve se passait sous ___.
+          - question: Soudain, ___.
+          - question: 'Le rêve s’est terminé ainsi : ___.'
+          - question: Je pense avoir fait ce rêve à cause de ___ / parce que ___.
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Le rêve le plus étrange'
+        skills: [Les temps du passé]
+        steps:
+          - 'Étape 1 : Lisons le texte ensemble. Chaque élève lit une partie du texte.'
+          - 'Étape 2 : Réponds aux questions sur le texte.'
+          - 'Étape 3 (facultative) : Discutons des questions de discussion.'
+      - id: act2-text
+        type: text
+        text: |-
+          La nuit dernière, j’ai fait un rêve très étrange. J’étais dans une forêt géante, entouré d’arbres qui scintillaient de différentes couleurs. Au début, je me sentais calme, mais soudain, le sol a commencé à trembler. Au milieu de la forêt, un immense escalier est apparu ; il menait à une pièce souterraine. Sur les murs de cette pièce, il y avait des peintures d’animaux qui dansaient et parlaient entre eux. J’ai essayé de me rapprocher des peintures, mais elles ont commencé à bouger, et l’un des animaux a sauté hors du cadre !
+
+          Je me suis retrouvé en bas de l’escalier, avec une clé en or dans la main. J’avais l’impression d’être dans un labyrinthe, et chaque porte que j’ouvrais menait à un endroit étrange différent. Dans une pièce, il y avait des morceaux de gâteau géants qui flottaient au plafond, et dans une autre, il y avait une plage de sable violet. J’ai essayé de repartir en arrière, mais je n’ai pas réussi à retrouver mon chemin. Juste au moment où je me sentais complètement perdu, j’ai entendu une alarme sonner à côté de moi. Je me suis réveillé et j’ai compris que j’étais en sécurité dans mon lit, mais l’étrange sensation du rêve est restée avec moi toute la journée.
+      - id: act2-questions
+        type: discussionQuestions
+        title: 'Étape 2 : Questions sur le texte'
+        items:
+          - question: Où était le narrateur dans le rêve ?
+          - question: Que s’est-il passé lorsque le sol a commencé à trembler ?
+          - question: Qu’y avait-il sur les murs de la pièce souterraine ?
+          - question: Qu’a trouvé le narrateur en bas de l’escalier ?
+          - question: Quelles choses inhabituelles le narrateur a-t-il vues dans les pièces ?
+          - question: Qu’a ressenti le narrateur à son réveil ?
+      - id: act2-discussion
+        type: discussionQuestions
+        title: 'Étape 3 (facultative) : Discussion'
+        items:
+          - question: Quel est le rêve le plus étrange dont vous vous souvenez ? Décrivez-le, avec les détails inhabituels.
+          - question: Pensez-vous que les rêves peuvent nous révéler quelque chose sur nous-mêmes ? Pourquoi ?
+          - question: Avez-vous déjà fait un rêve ou un cauchemar récurrent ? Comment vous êtes-vous senti(e) ?
+          - question: Si vous pouviez contrôler vos rêves, de quoi voudriez-vous rêver ? Pourquoi ?
+          - question: Certaines personnes disent que les rêves ont une signification. Êtes-vous d’accord ? Pourquoi ?
+          - question: Pensez-vous que nous pouvons apprendre quelque chose de nos rêves ? Partagez une expérience qui vous a semblé importante.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : La maison de tes rêves'
+        skills: [Les prépositions, Les temps du passé]
+        steps:
+          - 'Imagine : l’année dernière, tu as gagné la maison de tes rêves ! Ton rêve est devenu réalité.'
+          - Cherche en ligne une photo de la maison de tes rêves.
+          - Prépare une présentation pour le groupe. Utilise des prépositions de lieu pour dire où est la maison, quels objets tu as choisis pour décorer le salon et où tu les as placés.
+          - Présente ta maison au groupe.
+        example: |-
+          **Le manoir de J.Lo à Beverly Hills**
+          *Ma maison de rêve est à Beverly Hills.*
+          *J’ai choisi cette maison parce que j’ai toujours voulu vivre à côté des célébrités, et J.Lo vend sa maison : c’est une bonne occasion.*
+          *Mon petit ami et ma famille vivent avec moi dans ma maison.*
+          *Devant la maison, il y a un grand portail de sécurité. Derrière ma maison, il y a une piscine et un jacuzzi.*
+          *Il y a d’énormes arbres et des plantes autour de ma maison.*
+      - id: act3-frame
+        type: discussionQuestions
+        title: Ma maison de rêve
+        items:
+          - question: Ma maison de rêve est à / en / au / aux ___ (ville / pays).
+          - question: J’ai choisi cette maison parce que ___.
+          - question: ___ vit / vivent avec moi dans ma maison.
+          - question: Devant / À côté de / Derrière / Sous ma maison, il y a ___. (2 phrases)
+          - question: Il y a ___ dans / sur / autour de ma maison.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Ce fait amusant est vrai !'
+        skills: [Les temps du passé]
+        steps:
+          - Lis les 11 faits amusants sur les rêves avec ton professeur.
+          - Choisis un fait et raconte au passé une histoire liée à ce fait. Ça peut être un rêve ou une expérience de ta vie.
+          - Si tu n’as pas d’histoire, tu peux en inventer une !
+      - id: act4-facts
+        type: table
+        caption: 11 faits amusants sur les rêves
+        header: [Fait, Explication]
+        rows:
+          - [
+              Tout le monde rêve chaque nuit.,
+              'Vous rêvez chaque nuit, mais parfois vous ne vous en souvenez pas.',
+            ]
+          - [Les rêves sont courts., La plupart des rêves ne durent qu’entre 5 et 20 minutes.]
+          - [Vous pouvez faire de nombreux rêves., Vous pouvez faire entre 4 et 6 rêves par nuit.]
+          - [
+              Certaines personnes rêvent en noir et blanc.,
+              Environ 12 % des personnes ne rêvent pas en couleur.,
+            ]
+          - [
+              Les rêves aident à gérer les sentiments.,
+              Les rêves peuvent aider votre cerveau à comprendre vos émotions.,
+            ]
+          - [
+              Vous pouvez contrôler vos rêves.,
+              'Dans certains rêves, appelés rêves lucides, vous savez que vous rêvez et vous pouvez contrôler l’histoire.',
+            ]
+          - [
+              Vous oubliez rapidement vos rêves.,
+              '5 minutes après votre réveil, vous oubliez la moitié de votre rêve. Après 10 minutes, la plus grande partie du rêve a disparu de votre mémoire.',
+            ]
+          - [
+              Les sons peuvent entrer dans vos rêves.,
+              Les bruits (ou les odeurs) autour de vous pendant votre sommeil peuvent faire partie de vos rêves.,
+            ]
+          - [Les animaux rêvent aussi., 'Les chats, les chiens et d’autres animaux rêvent aussi !']
+          - [
+              Les aveugles rêvent.,
+              'Les personnes nées aveugles ne voient pas d’images dans leurs rêves, mais elles rêvent avec des sons, des odeurs et des sentiments.',
+            ]
+          - [
+              Les rêves peuvent être étranges.,
+              Les rêves mélangent souvent des idées et des souvenirs de manière surprenante.,
+            ]
+      - id: act5
+        type: classActivity
+        title: 'Activité 5 : Une journée inoubliable'
+        skills: [Les prépositions, Les temps du passé]
+        steps:
+          - Révise les prépositions de temps (ci-dessous) et de lieu (voir le résumé).
+          - Pense à un événement important de ta vie (un voyage, un anniversaire, un accident, une réussite…).
+          - Raconte ton histoire au groupe. Utilise bien les prépositions de temps et de lieu. Les questions ci-dessous peuvent t’aider.
+          - Pendant que tu parles, le professeur et les autres élèves notent les prépositions que tu utilises. On en discute à la fin.
+        example: '*Je me souviens d’une journée fantastique : c’était le jour de mon anniversaire, l’année dernière. C’était en novembre, à 15 heures, quand mes amis m’ont fait la surprise d’une fête. Nous nous sommes retrouvés chez moi et tout le monde a apporté des cadeaux. Le soir, nous avons dîné ensemble autour d’un délicieux repas.*'
+      - id: act5-reminder
+        type: callout
+        tone: info
+        title: 'Rappel : les expressions de temps'
+        text: |-
+          **DANS** : dans trois mois, dans deux ans, dans une heure
+          **À / AU** : à 8 heures, au mois de décembre, à Noël
+          **EN** : en décembre, en 2026
+          **LE** (article) : le lundi, le week-end, le 3 mars, le jour de Noël
+      - id: act5-questions
+        type: discussionQuestions
+        title: Questions pour guider ton histoire
+        items:
+          - question: Quand est-ce que cela s’est passé ?
+          - question: Où est-ce que cela s’est passé ?
+          - question: Que faisiez-vous à ce moment-là ?
+          - question: Que s’est-il passé ensuite ?
+          - question: Qui était avec vous ?
+          - question: Qu’avez-vous ressenti ensuite ?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **Les temps du passé** (passé composé et
+          imparfait) et **Les prépositions** (lieu et temps). Le cahier ne dit pas quelle
+          activité correspond à quelle compétence. Suggestion : le passé avec les
+          activités 1, 2, 4 et 5 ; les prépositions avec les activités 1, 3 et 5. Choisis
+          les activités selon le temps et la taille du groupe.
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup
+        text: Pose au moins deux questions à chaque élève. Les réponses écrites ici apparaissent sous chaque question.
+      - id: n-act1
+        anchor: act1
+        text: >-
+          Chaque élève choisit une à trois images, selon le temps et la taille du
+          groupe. Avant de commencer, donne quelques mots de vocabulaire difficiles en
+          lien avec les images. Encourage les élèves à utiliser des mots qu’ils
+          connaissent (les couleurs, etc.). Rappelle-leur de faire une copie du document
+          Google avant d’écrire.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Explique aux élèves que l’année dernière, ils ont gagné la maison de leurs
+          rêves. Ils présentent l’emplacement de la maison et la décoration du salon
+          avec des prépositions de lieu.
+      - id: n-act4
+        anchor: act4
+        text: Présente d’abord les 11 faits amusants au groupe, puis chaque élève raconte son histoire.
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Révise d’abord les prépositions de temps et de lieu, puis donne l’exemple.
+          Pendant les histoires, note les prépositions utilisées ; à la fin de chaque
+          présentation, discutez des erreurs avec le groupe.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: reves-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-passe
+        type: ruleSummary
+        skill: Les temps du passé
+        rules:
+          - text: >-
+              En français, les deux principaux temps du passé sont le **passé composé**
+              et l’**imparfait**. Le passé composé raconte des **événements ponctuels**
+              (une action terminée). L’imparfait sert pour les **descriptions** et les
+              **habitudes** dans le passé.
+            examples:
+              - Soudain, le sol **a commencé** à trembler.
+              - J’**étais** dans une forêt géante.
+          - text: >-
+              Le passé composé = **avoir** ou **être** au présent + **participe passé**.
+              Avec *avoir*, le participe ne change pas. Avec *être*, il s’accorde avec le
+              sujet.
+            examples: [J’ai joué. · Elle a joué., Il est allé. · Elle est allée. · Ils sont allés.]
+          - text: >-
+              L’imparfait n’est pas un temps composé. Les terminaisons sont les mêmes pour
+              tous les verbes : je **-ais**, tu **-ais**, il / elle **-ait**, nous
+              **-ions**, vous **-iez**, ils / elles **-aient**.
+            examples: [je jouais · nous jouions · ils jouaient]
+          - text: >-
+              Entre le présent et le passé, seuls **le verbe** et **l’expression de
+              temps** changent. Si tu n’es pas sûr(e), commence par une phrase au présent,
+              puis conjugue le verbe au passé. **Ne change rien d’autre !**
+            examples:
+              - Nous **jouons** au football tous les samedis. (présent)
+              - '**Au lycée**, nous **jouions** au football tous les samedis. (imparfait)'
+              - '**Hier**, nous **avons joué** au football. (passé composé)'
+          - text: >-
+              Ajoute toujours une **expression de temps** pour montrer que tu parles du
+              passé, même si tu te trompes dans la forme du verbe.
+            examples:
+              - Ne dis pas seulement *j’ai joué*. Dis *Hier, j’ai joué.*
+      - id: imparfait-table
+        type: table
+        caption: L’imparfait
+        header: [Sujet, être, faire, jouer]
+        rows:
+          - [je / j’, étais, faisais, jouais]
+          - [tu, étais, faisais, jouais]
+          - [il / elle, était, faisait, jouait]
+          - [nous, étions, faisions, jouions]
+          - [vous, étiez, faisiez, jouiez]
+          - [ils / elles, étaient, faisaient, jouaient]
+      - id: rules-prepositions
+        type: ruleSummary
+        skill: Les prépositions
+        rules:
+          - text: >-
+              Il existe beaucoup de prépositions en français. On les utilise pour parler
+              de lieu, de temps ou de position. Il faut connaître leur traduction, mais
+              aussi apprendre comment on les utilise en français.
+          - text: '**Les prépositions de temps** :'
+            examples:
+              - '**À / AU** : un moment précis (à 8 heures, au mois de décembre, à Noël)'
+              - '**DANS** : un moment dans le futur (dans trois mois, dans une heure)'
+              - '**LE** (article) : une date, une habitude (le 3 mars, le lundi, le week-end)'
+              - '**DEPUIS** : une action qui continue (J’habite ici depuis deux ans.)'
+              - '**PENDANT** : une durée limitée (J’ai dormi pendant dix heures.)'
+              - '**EN** : un mois, une année (en décembre, en 2026) ou le temps pour faire quelque chose (J’ai fini en une heure.)'
+          - text: '**Les prépositions de lieu** :'
+            examples:
+              - '**DANS** : à l’intérieur de quelque chose (dans la boîte), les espaces fermés et certains transports (je suis dans le train), certains espaces ouverts (dans le jardin, dans la rue)'
+              - '**À** : un lieu (je suis à la gare), une ville (j’habite à Paris), une pièce de la maison (à la cuisine ; on dit aussi *dans ma chambre* pour dire « à l’intérieur »)'
+              - '**EN** : un pays féminin ou un pays qui commence par une voyelle (en France, en Israël)'
+              - '**AU / AUX** : un pays masculin ou pluriel (au Canada, aux États-Unis)'
+              - '**SUR** : une chose placée sur une autre (le livre est sur la table), certains lieux de la ville (sur l’avenue, sur la place)'
+          - text: '**Autres prépositions de lieu** :'
+            examples:
+              - '**devant** ≠ **derrière** : Devant la maison, il y a un portail. Derrière la maison, il y a une piscine.'
+              - '**sur** ≠ **sous** : Le livre est sur la table. Le chat est sous la table.'
+              - '**à côté de / près de** : Un enfant était à côté de sa mère.'
+              - '**au-dessus de** : Des oiseaux volaient au-dessus des arbres.'
+              - '**autour de** : Il y a des arbres autour de ma maison.'
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: reves-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs avec Mori
+      - id: how
+        type: text
+        text: >-
+          Écris un court paragraphe sur un de tes rêves, au passé et avec des
+          prépositions. Ensuite, ouvre le chat avec Mori, copie le message, ajoute ton
+          paragraphe et envoie-le.
+      - id: guide
+        type: discussionQuestions
+        title: Questions pour guider ton paragraphe
+        answerable: false
+        items:
+          - question: Où le rêve a-t-il eu lieu ? (pays)
+          - question: Quand ? (année / mois / jour)
+          - question: Où étais-tu dans le rêve ?
+          - question: Quelle heure était-il ?
+          - question: Qui était avec toi ?
+      - id: mori-reve
+        type: aiTutorPrompt
+        title: Mon rêve
+        intro: >-
+          Exemple de paragraphe : *La nuit dernière, j’ai rêvé que j’étais en France, à
+          Paris. C’était le 12 octobre 2024. Dans mon rêve, j’étais dans un grand parc
+          près de la tour Eiffel. Il était environ 18 heures et le soleil se couchait.
+          Mon ami David était avec moi et nous avons vu des oiseaux voler au-dessus des
+          arbres. Tout autour, il y avait des fleurs colorées et des gens qui se
+          promenaient tranquillement. Soudain, un ballon rouge est passé au-dessus de nos
+          têtes, il a explosé et je me suis réveillé.*
+        message: |-
+          Bonjour Mori ! Voici un paragraphe sur un de mes rêves. J’ai utilisé le passé composé, l’imparfait et des prépositions de lieu et de temps. Corrige mes erreurs, s’il te plaît, et explique-moi chaque correction. Ensuite, pose-moi deux questions sur mon rêve.
+          ___ (ton paragraphe)
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: reves-pratique
+    book: workbook
+    title: 'Pratique : Rêves'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-passe
+        type: activity
+        activity: reves-passe
+      - id: ex-prepositions
+        type: activity
+        activity: reves-prepositions
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: reves-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots des rêves
+        glossLang: he
+        link: https://quizlet.com/il/1094950578/conversational-french-2025-reves-flash-cards/
+        items: &reves-words
+          - { term: rêver, gloss: לחלום }
+          - { term: rêve, gloss: חלום }
+          - { term: se réveiller, gloss: להתעורר }
+          - { term: tomber, gloss: ליפול }
+          - { term: voler, gloss: לעוף }
+          - { term: vide, gloss: ריק }
+          - { term: examen, gloss: מבחן }
+          - { term: poursuivre, gloss: לרדוף }
+          - { term: chambre, gloss: חדר שינה }
+          - { term: rue, gloss: רחוב }
+          - { term: devant, gloss: מול }
+          - { term: autour de, gloss: סביב }
+          - { term: au-dessus de, gloss: מעל }
+          - { term: derrière, gloss: מאחורי }
+          - { term: à côté de, gloss: ליד }
+          - { term: enfant, gloss: ילד }
+          - { term: femme, gloss: אישה }
+          - { term: homme, gloss: גבר }
+          - { term: rapidement, gloss: מהר }
+          - { term: mystérieux, gloss: מסתורי }
+          - { term: étrange, gloss: מוזר }
+          - { term: clé, gloss: מפתח }
+          - { term: escalier, gloss: מדרגות }
+          - { term: souterrain, gloss: תת-קרקעי }
+          - { term: plage, gloss: חוף }
+          - { term: gâteau, gloss: עוגה }
+          - { term: alarme / réveil, gloss: אזעקה / שעון מעורר }
+          - { term: lucide, gloss: צלול }
+          - { term: malgré, gloss: למרות }
+          - { term: à cause de, gloss: בגלל }
+          - { term: au lieu de, gloss: במקום }
+
+vocabulary:
+  - slug: reves
+    title: Rêves
+    items: *reves-words
+
+activities:
+  - slug: reves-passe
+    title: 'Les temps du passé : passé composé et imparfait'
+    minutes: 8
+    items:
+      - id: ai-fait
+        type: multipleChoice
+        prompt: La nuit dernière, ___ un rêve très étrange.
+        options:
+          - { text: j’ai fait, correct: true }
+          - {
+              text: je faisais,
+              feedback: 'C’est un événement ponctuel (la nuit dernière) : on utilise le passé composé, *j’ai fait*.',
+            }
+          - {
+              text: je fais,
+              feedback: '*Je fais* est au présent. Avec *la nuit dernière*, on utilise le passé composé : *j’ai fait*.',
+            }
+      - id: revais
+        type: multipleChoice
+        prompt: Quand j’étais petit, je ___ souvent que je volais.
+        options:
+          - { text: rêvais, correct: true }
+          - {
+              text: rêve,
+              feedback: '*Je rêve* est au présent. Pour une habitude dans le passé, on utilise l’imparfait : *je rêvais*.',
+            }
+          - {
+              text: rêverai,
+              feedback: '*Je rêverai* est au futur. Pour une habitude dans le passé, on utilise l’imparfait : *je rêvais*.',
+            }
+      - id: etions-faisait
+        type: fillBlank
+        prompt: Complète avec l’imparfait des verbes entre parenthèses.
+        text: Dans mon rêve, nous ___ (être) dans une forêt et il ___ (faire) nuit.
+        blanks: [[étions], [faisait]]
+      - id: participe-accord
+        type: trueFalse
+        prompt: Au passé composé, le participe passé ne change jamais.
+        answer: false
+        feedback:
+          correct: 'Bravo ! Avec *être*, le participe s’accorde avec le sujet : *elle est allée*, *ils sont allés*.'
+          incorrect: 'Avec *avoir*, le participe ne change pas (*elle a joué*). Mais avec *être*, il s’accorde avec le sujet : *elle est allée*.'
+      - id: est-allee
+        type: multipleChoice
+        prompt: Hier, Léa ___ à la plage.
+        options:
+          - { text: est allée, correct: true }
+          - {
+              text: a allé,
+              feedback: 'Le verbe *aller* se conjugue avec *être* au passé composé : *elle est allée*.',
+            }
+          - {
+              text: est allé,
+              feedback: 'Avec *être*, le participe s’accorde avec le sujet. Léa est une femme : *elle est allée*.',
+            }
+      - id: participes
+        type: matching
+        prompt: Associe chaque verbe à son participe passé.
+        pairs:
+          - [rêver, rêvé]
+          - [voir, vu]
+          - [faire, fait]
+          - [tomber, tombé]
+          - [entendre, entendu]
+      - id: jouions-avons-joue
+        type: fillBlank
+        prompt: Complète avec le verbe *jouer* à l’imparfait ou au passé composé.
+        text: Au lycée, nous ___ au football tous les samedis. Hier, nous ___ au football.
+        blanks: [[jouions], [avons joué]]
+      - id: ordre-reve
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Hier, j’ai rêvé de la mer.
+
+  - slug: reves-prepositions
+    title: 'Les prépositions : dans, à, en, sur…'
+    minutes: 8
+    items:
+      - id: a-paris
+        type: multipleChoice
+        prompt: J’habite ___ Paris.
+        options:
+          - { text: à, correct: true }
+          - {
+              text: en,
+              feedback: '*En* va devant un pays féminin (*en France*). Devant une ville, on dit *à* : *à Paris*.',
+            }
+          - {
+              text: dans,
+              feedback: 'Devant le nom d’une ville, on utilise *à* : *j’habite à Paris*.',
+            }
+      - id: en-france
+        type: multipleChoice
+        prompt: Dans mon rêve, j’étais ___ France.
+        options:
+          - { text: en, correct: true }
+          - {
+              text: à,
+              feedback: '*À* va devant une ville (*à Paris*). *France* est un pays féminin : *en France*.',
+            }
+          - {
+              text: au,
+              feedback: '*Au* va devant un pays masculin (*au Canada*). *France* est féminin : *en France*.',
+            }
+      - id: sur-dans
+        type: fillBlank
+        prompt: Complète avec *sur* ou *dans*.
+        text: Le livre est ___ la table et les clés sont ___ la boîte (à l’intérieur).
+        blanks: [[sur], [dans]]
+        wordBank: [sur, dans]
+      - id: dans-trois-mois
+        type: multipleChoice
+        prompt: Je pars en vacances ___ trois mois. (C’est dans le futur.)
+        options:
+          - { text: dans, correct: true }
+          - {
+              text: pendant,
+              feedback: '*Pendant* donne une durée (*pendant dix heures*). Pour un moment dans le futur, on dit *dans* : *dans trois mois*.',
+            }
+          - {
+              text: depuis,
+              feedback: '*Depuis* est pour une action qui continue. Pour un moment dans le futur, on dit *dans trois mois*.',
+            }
+      - id: en-a
+        type: fillBlank
+        prompt: Complète avec *en* ou *à*.
+        text: Je suis né(e) ___ 2001. Le rendez-vous est ___ 8 heures.
+        blanks: [[en], [à]]
+        wordBank: [en, à]
+      - id: lieu-hebreu
+        type: matching
+        prompt: Associe chaque préposition à sa traduction.
+        pairs:
+          - [devant, מול]
+          - [derrière, מאחורי]
+          - [à côté de, ליד]
+          - [autour de, סביב]
+          - [au-dessus de, מעל]
+      - id: en-ville
+        type: trueFalse
+        prompt: 'Devant le nom d’une ville, on utilise *en* : *en Paris*.'
+        answer: false
+        feedback:
+          correct: 'Bravo ! Devant une ville, on dit *à* : *à Paris*. *En* va devant un pays féminin : *en France*.'
+          incorrect: 'Devant une ville, on dit *à* : *à Paris*. *En* va devant un pays féminin : *en France*.'
+      - id: depuis
+        type: multipleChoice
+        prompt: J’apprends le français ___ deux ans. (Et je continue !)
+        options:
+          - { text: depuis, correct: true }
+          - {
+              text: dans,
+              feedback: '*Dans* est pour un moment dans le futur. Pour une action qui continue, on dit *depuis* : *depuis deux ans*.',
+            }
+          - {
+              text: en,
+              feedback: '*En* va devant un mois ou une année (*en 2026*). Pour une action qui continue, on dit *depuis*.',
+            }

@@ -1,0 +1,630 @@
+# Cycle "Musique", converted from the French level 2 digital notebook
+# ("Cahier digital 2025 - français niveau 2", docs/CONTENT-AUDIT.md).
+# DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (French).
+course: fr-niveau-2
+slug: musique
+title: Musique
+goal: Parler de musique avec les compétences sociales et raconter ses souvenirs en mélangeant les temps.
+position: 21
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Les compétences sociales" and "Les temps dans un
+    récit") are NEW: the notebook has no self-study exercises. They were written from
+    the cycle's two skills, its summary and its vocabulary. Please check level,
+    wording and every right answer before students see them.
+  - >-
+    Song lyrics were NOT copied. Activity 1 ("Je te donne", Jean-Jacques Goldman) had
+    a 10-line gap-fill of "simplified and adapted" lyrics; it was removed. The teacher
+    note asks the teacher to build the gap-fill from the real lyrics on screen, and
+    keeps only the verbs to conjugate (avoir, être, croire, apprendre, savoir) and the
+    notebook's answer key (ai eu, suis, crois, ai appris, sais). Please check that key
+    against the real song: the notebook's text was adapted and may not match it. The
+    YouTube link is kept without its playlist parameters (&list=…&start_radio=1), and
+    the Hebrew note in the title ("להוסיף קישור לשיר", add a link to the song) was
+    removed because the link is there.
+  - >-
+    Corrections: "Quelle chanson as-tu écouté de nombreuses fois ?" → "écoutée" and
+    summary "Quelle musique as-tu écouté hier ?" → "écoutée" (agreement with the
+    object placed before avoir); "Tes goûts musicaux ont-t-il changé" → "ont-ils
+    changé"; "Cours de clôture" → "Clôture" (twice); Activity 3 "Il / Elle est né(e)
+    en … (pays)" → "à … (ville), en / au … (pays)" (au Mali, au Canada); Activity 5
+    example "Son premier concert était celui de Stromae en 2015" → "a été" (a single
+    past event, as the summary teaches); "Quelle réponse t'a le plus surpris ?" →
+    "surpris(e)"; stray space in "J'aime la musique pop ." removed.
+  - >-
+    The summary "Les comparaisons" and "Questions et réponses" points are kept; a
+    line was added under the passé composé rule: verbs of movement (aller…) take être
+    (Je suis allé(e)), since the cycle uses "Es-tu déjà allé(e) à un concert ?".
+  - >-
+    Homework Part 2 told the student to ask Mori questions about the student's own
+    tastes ("Pose-lui 3 questions… sur tes goûts musicaux"). It now asks Mori to put
+    the questions to the student. Part 1 (writing) is a list of answer boxes.
+  - >-
+    Frames were added to the beginner warm-up questions and to the A1–A2 questions of
+    Activity 4 (the source has none). Débutant and intermédiaire levels are kept as
+    separate blocks.
+  - >-
+    Times: ranges are recorded as the larger number (10–15 → 15, 10–12 → 12).
+    Activity totals: Activity 1 = 60, Activity 2 = 55, Activity 3 = 47, Activity 5 =
+    37 minutes, so the plan note asks the teacher to choose. Activity 2 option A needs
+    short biographies with photos and Activity 3 needs photos of singers: neither is
+    in the notebook.
+  - >-
+    Facts in the artist examples were checked as far as possible (Stromae: born 12
+    March 1985 in Brussels, "Alors on danse" 2009; Aya Nakamura: born in Bamako,
+    "Djadja"). "Angèle est plus jeune qu'Aya Nakamura" is true only by a few months
+    (both born in 1995); please confirm or change the example.
+  - >-
+    Vocabulary: "Célèbre – מפורסם" → "מפורסם/ת"; "Expérience – ניסיון" → "ניסיון /
+    חוויה". The Quizlet link is kept without its tracking parameters (?i=…&x=…). The
+    "Réponse de l'élève 1/2/3" lines are replaced by the optional answer boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: musique-classe
+    title: 'Classe : Musique'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Musique
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Les compétences sociales
+            description: 'Poser des questions sur la musique, répondre et réagir : *Quelle musique écoutes-tu ? Es-tu déjà allé(e) à un concert ?*'
+          - name: Les temps dans un récit
+            description: 'Présent, passé composé et imparfait : *Aujourd’hui, j’écoute du rock, mais avant, j’écoutais de la pop.*'
+      - id: quizlet
+        type: externalLink
+        label: Musique sur Quizlet
+        url: https://quizlet.com/il/1089414876/conversational-french-2025-musique-2-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronde d’introduction
+      - id: intro
+        type: sentenceFrame
+        frame: Je m’appelle ___. À mon avis, le meilleur style de musique est ___. J’aime écouter ___ quand / pendant ___.
+        example: Je m’appelle Lévanah. À mon avis, le meilleur style de musique est le rock. J’aime écouter du rock quand je marche dans la rue.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Questions d’échauffement
+      - id: warmup-debutant
+        type: discussionQuestions
+        title: Niveau débutant (A1–A2)
+        items:
+          - question: Aimes-tu danser ? Sur quelle musique as-tu dansé l’année dernière ?
+            frame: Oui, j’aime danser. / Non, je n’aime pas danser. L’année dernière, j’ai dansé sur ___.
+          - question: Quelle est la dernière chanson que tu as écoutée ?
+            frame: La dernière chanson que j’ai écoutée est ___.
+          - question: As-tu vu un film ou une série avec de la musique française ? Lequel / Laquelle ?
+            frame: Oui, j’ai vu ___. / Non, je n’ai pas vu de film avec de la musique française.
+          - question: À quel pays penses-tu quand tu entends le mot *French cancan* ?
+            frame: Je pense à ___.
+          - question: As-tu écouté de la musique hier ? Quel genre ?
+            frame: Oui, hier, j’ai écouté ___. / Non, je n’ai pas écouté de musique.
+          - question: As-tu déjà chanté une chanson à une fête ou à l’école ?
+            frame: Oui, j’ai chanté ___ à ___. / Non, je n’ai jamais chanté.
+      - id: warmup-intermediaire
+        type: discussionQuestions
+        title: Niveau intermédiaire (A2+)
+        items:
+          - question: Quels souvenirs associes-tu à une chanson spéciale de ton passé ?
+          - question: Quelle histoire personnelle peux-tu raconter en lien avec un concert ou une fête ?
+          - question: Quelle chanson as-tu écoutée de nombreuses fois ? Pourquoi ?
+          - question: Tes goûts musicaux ont-ils changé entre ton enfance et aujourd’hui ?
+          - question: Quels artistes étrangers as-tu découverts grâce à la musique ?
+          - question: Comment décrirais-tu une amitié ou un amour lié à une chanson ?
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Activités
+      - id: act1
+        type: classActivity
+        title: 'Activité 1 : « Je te donne » (Jean-Jacques Goldman), présent et passé'
+        skills: [Les temps dans un récit, Les compétences sociales]
+        minutes: 60
+        steps:
+          - 'Première écoute (5 minutes) : écoute la chanson sans lire le texte. Selon toi, de quoi parle la chanson ? a) d’amour b) d’amitié c) de travail d) de vacances'
+          - 'Deuxième écoute (10 minutes) : complète les verbes du texte à trous que partage ton professeur, au **présent** ou au **passé composé** selon le sens.'
+          - 'Identification des temps (10 minutes) : souligne en **bleu** les verbes au présent et en **rouge** les verbes au passé composé.'
+          - 'Compréhension (10 minutes) : réponds aux trois questions ci-dessous.'
+          - 'Production écrite (15 minutes) : écris trois phrases comme dans la chanson, avec le présent et le passé composé. Tu peux t’inspirer de ta vie.'
+          - 'Activité orale (10 minutes) : en binôme, lis tes phrases à voix haute. Ton / ta partenaire répond : « Merci ! Moi, je te donne… » + une phrase personnelle.'
+        example: |-
+          *Je te donne mes sourires et mes chansons.*
+          *Je t’ai donné mon temps et mon aide.*
+          *Je te donne tout ce que je sais faire.*
+          — *Je te donne ma patience.* — *Merci ! Moi, je te donne mon énergie.*
+        resource:
+          label: Jean-Jacques Goldman, « Je te donne » (YouTube)
+          url: https://www.youtube.com/watch?v=493R05ifNsI
+      - id: act1-tenses
+        type: table
+        caption: Les deux temps de la chanson
+        header: [Temps, Exemple, Rappel]
+        rows:
+          - [Présent, 'je crois, je sais', Action ou état actuel]
+          - [Passé composé, 'j’ai eu, j’ai appris', Action déjà terminée]
+      - id: act1-questions
+        type: discussionQuestions
+        title: Compréhension
+        items:
+          - question: Que veut dire « Je te donne » dans la chanson ?
+          - question: Le chanteur parle-t-il de choses matérielles ou de sentiments ?
+          - question: Pourquoi utilise-t-il à la fois le passé et le présent ?
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Mes phrases « Je te donne… »
+        items:
+          - question: Je te donne ___.
+          - question: Je t’ai donné ___.
+          - question: Je te donne ___.
+      - id: act2
+        type: classActivity
+        title: 'Activité 2 : Biographie musicale'
+        skills: [Les temps dans un récit, Les compétences sociales]
+        minutes: 55
+        steps:
+          - 'Introduction (5 minutes) : quels chanteurs français ou francophones connais-tu ? Quelle chanson célèbre aimes-tu ?'
+          - 'Lecture ou recherche (10 minutes) : lis une courte biographie, ou cherche sur internet les informations sur un chanteur (pays, année de naissance, chanson célèbre, style musical).'
+          - 'Production (10 minutes) : prépare 3 ou 4 phrases sur un chanteur (ci-dessous).'
+          - 'Présentations orales (15 minutes) : présente ton chanteur en 30 secondes.'
+          - 'Comparaisons (10 minutes) : compare deux artistes. *Stromae est plus célèbre qu’Angèle. Aya Nakamura a plus de chansons connues que Christine and the Queens.*'
+          - 'Clôture (5 minutes) : quel artiste préfères-tu et pourquoi ?'
+        example: |-
+          *Stromae est né le 12 mars 1985 à Bruxelles, en Belgique.*
+          *Sa première chanson célèbre est « Alors on danse », sortie en 2009.*
+          *Il mélange différents genres musicaux : musique électronique, hip-hop, chanson française et influences africaines.*
+      - id: act2-bio
+        type: discussionQuestions
+        title: Mon chanteur / Ma chanteuse
+        items:
+          - question: Il / Elle est né(e) à ___ en ___.
+          - question: Sa chanson la plus célèbre est ___.
+          - question: Aujourd’hui, il / elle ___.
+          - question: J’aime cet artiste parce que ___.
+      - id: act3
+        type: classActivity
+        title: 'Activité 3 : Devine l’artiste'
+        skills: [Les compétences sociales, Les temps dans un récit]
+        minutes: 47
+        steps:
+          - 'Échauffement (5 minutes) : regarde les photos de chanteurs célèbres et révise les structures : *Il / Elle est né(e) à… (ville), en / au… (pays). Son style est… Sa chanson la plus célèbre est…*'
+          - 'Consignes (2 minutes) : ton professeur décrit un chanteur sans dire son nom. Devine de qui il s’agit.'
+          - 'Tour du professeur (10 minutes) : écoute les descriptions et devine.'
+          - 'Tour des élèves (15 minutes) : par groupes, préparez une description (ci-dessous) et lisez-la. Le reste de la classe devine.'
+          - 'Comparaisons (10 minutes) : après avoir trouvé l’artiste, compare. *Angèle est plus jeune qu’Aya Nakamura. Aya Nakamura est plus célèbre que Vianney.*'
+          - 'Question finale (5 minutes) : quel chanteur préfères-tu et pourquoi ?'
+        example: |-
+          *Elle est née à Bamako, au Mali. Elle chante du R’n’B et de la pop urbaine. Sa chanson la plus célèbre est « Djadja ».*
+          → *C’est Aya Nakamura !*
+      - id: act3-description
+        type: discussionQuestions
+        title: Notre description
+        items:
+          - question: Il / Elle est né(e) à ___, en / au ___.
+          - question: Son style est ___.
+          - question: Sa chanson la plus célèbre est ___.
+      - id: act4
+        type: classActivity
+        title: 'Activité 4 : Souvenirs musicaux'
+        skills: [Les temps dans un récit, Les compétences sociales]
+        steps:
+          - Lis les questions de ton niveau.
+          - En binôme, pose les questions à ton / ta partenaire et réponds à ses questions.
+          - Partage avec le groupe un souvenir musical de ton / ta partenaire.
+      - id: act4-debutant
+        type: discussionQuestions
+        title: Niveau A1–A2 (passé composé)
+        items:
+          - question: Quelle a été la première chanson que tu as aimée ?
+            frame: La première chanson que j’ai aimée a été ___.
+          - question: Es-tu déjà allé(e) à un concert ? De qui ?
+            frame: Oui, je suis allé(e) à un concert de ___. / Non, je ne suis jamais allé(e) à un concert.
+          - question: As-tu déjà joué d’un instrument de musique devant un public ?
+            frame: Oui, j’ai joué du / de la ___. / Non, je n’ai jamais joué devant un public.
+          - question: As-tu déjà chanté lors d’une fête ou d’une cérémonie ?
+            frame: Oui, j’ai chanté à ___. / Non, je n’ai jamais chanté.
+          - question: As-tu déjà regardé des émissions musicales à la télévision ?
+            frame: Oui, j’ai regardé ___. / Non, je n’ai jamais regardé d’émissions musicales.
+          - question: As-tu déjà pris des cours de danse ?
+            frame: Oui, j’ai pris des cours de ___. / Non, je n’ai jamais pris de cours de danse.
+      - id: act4-intermediaire
+        type: discussionQuestions
+        title: Niveau A2+ (passé composé et imparfait)
+        items:
+          - question: Quelle est la première chanson que tu as apprise par cœur ? Où l’as-tu entendue ?
+          - question: Quelle musique tes parents écoutaient-ils quand tu étais enfant ?
+          - question: Quel a été ton premier concert ou festival ? Comment était-ce ?
+          - question: Jouais-tu d’un instrument ?
+          - question: Quelles émissions de musique regardais-tu quand tu étais plus jeune ?
+          - question: Sur quelle musique aimais-tu danser quand tu étais petit(e) ?
+      - id: act5
+        type: classActivity
+        title: 'Activité 5 : L’interview musicale'
+        skills: [Les compétences sociales, Les temps dans un récit]
+        minutes: 37
+        steps:
+          - 'Introduction (5 minutes) : aujourd’hui, nous sommes journalistes spécialisés en musique. Interviewe un / une camarade sur ses goûts musicaux d’hier et d’aujourd’hui.'
+          - 'Préparation des questions (5 minutes) : choisis des questions dans la liste ci-dessous ou invente une question.'
+          - 'Interviews en binômes (12 minutes) : pose tes questions à ton / ta partenaire et note 2 ou 3 phrases sur lui / elle.'
+          - 'Présentation (10 minutes) : présente ton / ta partenaire comme une célébrité musicale.'
+          - 'Clôture (5 minutes) : quels genres musicaux ont été les plus mentionnés ? Quelles différences entre la musique d’hier et celle d’aujourd’hui ? Quelle réponse t’a le plus surpris(e) ?'
+        example: |-
+          *Maria écoute de la musique classique, mais avant, elle écoutait de la pop.*
+          *Son premier concert a été celui de Stromae en 2015.*
+      - id: act5-questions
+        type: discussionQuestions
+        title: Questions pour l’interview
+        items:
+          - question: Quelle musique écoutes-tu aujourd’hui ?
+          - question: Quelle était ta chanson préférée quand tu étais enfant ?
+          - question: Es-tu déjà allé(e) à un concert ? De qui ?
+          - question: Quel genre aimais-tu avant et que tu n’écoutes plus ?
+          - question: Quel chanteur te plaît particulièrement aujourd’hui ?
+          - question: 'Ma question :'
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Deux compétences dans ce cycle : **les compétences sociales** (poser des
+          questions, répondre, réagir : activités 3, 4 et 5) et **les temps dans un
+          récit** (présent, passé composé, imparfait : activités 1, 2 et 4). Les
+          activités sont longues (de 37 à 60 minutes) : choisis-en une ou deux par
+          cours. Les questions d’échauffement et l’activité 4 ont deux niveaux.
+      - id: n-intro
+        anchor: intro
+        text: Donne d’abord ton propre exemple, puis interroge chaque élève.
+      - id: n-warmup
+        anchor: warmup-debutant
+        text: Choisis le niveau selon le groupe. Pose au moins deux questions à chaque élève.
+      - id: n-act1
+        anchor: act1
+        minutes: 60
+        text: >-
+          Passe la chanson (lien YouTube). Pour la deuxième écoute, prépare toi-même le
+          texte à trous à partir des vraies paroles (par exemple sur genius.com) et
+          projette-le : ne copie pas les paroles sur la plateforme. L’ancien cahier
+          faisait conjuguer *avoir, être, croire, apprendre, savoir* ; réponses
+          attendues : *ai eu, suis, crois, ai appris, sais* (à vérifier avec les vraies
+          paroles, car le texte du cahier était adapté). Idée clé : le chanteur donne ce
+          qu’il a vécu (passé) et ce qu’il est aujourd’hui (présent).
+      - id: n-act2
+        anchor: act2
+        minutes: 55
+        text: >-
+          Note au tableau les noms des chanteurs que donnent les élèves. Option A :
+          distribue de courtes biographies (4 ou 5 phrases avec photo), à préparer avant
+          le cours (elles ne sont pas dans le cahier). Option B : si internet est
+          disponible, les élèves cherchent les informations. Laisse les modèles au
+          tableau pendant la production.
+      - id: n-act3
+        anchor: act3
+        minutes: 47
+        text: >-
+          Prépare des photos de chanteurs célèbres. Pendant ton tour, donne 4 ou 5
+          descriptions comme l’exemple d’Aya Nakamura. Note au tableau les comparaisons
+          des élèves.
+      - id: n-act5
+        anchor: act5
+        minutes: 37
+        text: Distribue ou projette la liste de questions modèles. Chaque élève présente son / sa partenaire comme une célébrité musicale.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: musique-resume
+    title: Résumé
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Ce que nous avons appris aujourd’hui
+      - id: rules-temps
+        type: ruleSummary
+        skill: Les temps dans un récit
+        rules:
+          - text: '**Présent** : pour exprimer ses goûts et ses habitudes musicales.'
+            examples:
+              [J’aime écouter de la musique classique quand je cuisine., J’aime la musique pop.]
+          - text: '**Passé composé** : pour raconter un fait ponctuel. Avec *aller*, on utilise *être*.'
+            examples:
+              - 'Hier, j’ai écouté la nouvelle chanson de Stromae.'
+              - Je suis allé(e) à son concert en 2015.
+          - text: '**Imparfait** : pour décrire des habitudes passées.'
+            examples:
+              - 'Quand j’étais enfant, j’écoutais des chansons pour enfants.'
+          - text: '**Lien passé–présent** : une action passée explique une conséquence aujourd’hui.'
+            examples:
+              - 'Hier, j’ai trop mangé → Aujourd’hui, j’ai mal au ventre.'
+      - id: rules-comparaisons
+        type: ruleSummary
+        skill: Les comparaisons
+        rules:
+          - text: 'Pour comparer des artistes : **plus / moins… que**, **le / la plus…**'
+            examples:
+              [Aya Nakamura est plus célèbre que Vianney., Angèle est la plus jeune du groupe.]
+      - id: rules-sociales
+        type: ruleSummary
+        skill: Les compétences sociales
+        rules:
+          - text: 'Questions et réponses : le temps de la question donne le temps de la réponse.'
+            examples:
+              - 'Présent : Quelle musique écoutes-tu ? — J’écoute du rock.'
+              - 'Passé composé : Quelle musique as-tu écoutée hier ? — Hier, j’ai écouté de la pop.'
+              - 'Imparfait : Quelle musique écoutais-tu quand tu étais enfant ? — J’écoutais des chansons pour enfants.'
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Révise les deux compétences avec le groupe et demande un nouvel exemple pour chaque règle.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: musique-devoirs
+    title: Devoirs avec Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Devoirs
+      - id: write
+        type: discussionQuestions
+        title: 'Partie 1 : Écrire'
+        items:
+          - question: Écris 3 phrases au présent sur la musique que tu écoutes aujourd’hui.
+          - question: Écris 3 phrases au passé composé sur ton expérience musicale.
+          - question: Écris 2 phrases à l’imparfait sur ton enfance musicale.
+          - question: Écris 1 comparaison entre deux artistes ou deux genres.
+      - id: mori-title
+        type: heading
+        level: 3
+        text: 'Partie 2 : Pratique orale avec Mori'
+      - id: how
+        type: text
+        text: Ouvre le chat avec Mori, copie le message et envoie-le. Mori va te poser des questions ; réponds à toutes.
+      - id: mori-oral
+        type: aiTutorPrompt
+        title: Mes goûts musicaux
+        message: |-
+          Bonjour Mori ! Je veux parler de musique en français. S’il te plaît :
+          1. Pose-moi 3 questions au présent sur mes goûts musicaux.
+          2. Pose-moi 3 questions au passé composé sur mon expérience musicale.
+          3. Pose-moi 2 questions à l’imparfait sur mon enfance musicale.
+          Corrige mes réponses et fais-moi répéter la bonne phrase.
+      - id: mori-playlist
+        type: aiTutorPrompt
+        title: 'Partie 3 : La playlist de ma vie (optionnel)'
+        message: >-
+          Bonjour Mori ! Aide-moi à créer la playlist de ma vie : 2 chansons de mon
+          enfance, 2 de mon adolescence et 2 d’aujourd’hui. Pose-moi des questions pour
+          écrire une phrase sur chaque chanson, et corrige mes phrases.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Conseils
+        text: |-
+          Tu veux plus de questions ? Envoie : **S’il te plaît, pose-moi encore des questions !**
+          Tu ne comprends pas une explication ? Envoie : **Peux-tu m’expliquer en hébreu, mais avec la phrase en français ?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: musique-pratique
+    book: workbook
+    title: 'Pratique : Musique'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Pratique les deux compétences du cycle. Chaque réponse est corrigée tout de suite, et tu peux réessayer.
+      - id: ex-sociales
+        type: activity
+        activity: musique-sociales
+      - id: ex-temps
+        type: activity
+        activity: musique-temps
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: musique-vocabulaire
+    title: Vocabulaire
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Les mots de la musique
+        glossLang: he
+        link: https://quizlet.com/il/1089414876/conversational-french-2025-musique-2-flash-cards/
+        items: &musique-words
+          - { term: musique, gloss: מוזיקה }
+          - { term: chanson, gloss: שיר }
+          - { term: danser, gloss: לרקוד }
+          - { term: chanter, gloss: לשיר }
+          - { term: écouter, gloss: להקשיב / לשמוע }
+          - { term: artiste, gloss: אמן / אמנית }
+          - { term: chanteur / chanteuse, gloss: זמר / זמרת }
+          - { term: genre, gloss: ז'אנר }
+          - { term: style, gloss: סגנון }
+          - { term: pop, gloss: פופ }
+          - { term: rock, gloss: רוק }
+          - { term: concert, gloss: קונצרט / הופעה }
+          - { term: festival, gloss: פסטיבל }
+          - { term: biographie, gloss: ביוגרפיה }
+          - { term: vie, gloss: חיים }
+          - { term: enfance, gloss: ילדות }
+          - { term: jeunesse, gloss: נעורים }
+          - { term: passé, gloss: עבר }
+          - { term: présent, gloss: הווה }
+          - { term: futur, gloss: עתיד }
+          - { term: souvenir, gloss: זיכרון }
+          - { term: histoire, gloss: סיפור / היסטוריה }
+          - { term: comparaison, gloss: השוואה }
+          - { term: célèbre, gloss: מפורסם/ת }
+          - { term: créatif / créative, gloss: יצירתי/ת }
+          - { term: drôle / amusant, gloss: מצחיק / מהנה }
+          - { term: ennuyeux / ennuyeuse, gloss: משעמם/ת }
+          - { term: surprenant(e), gloss: מפתיע/ה }
+          - { term: préféré / favori, gloss: אהוב }
+          - { term: opinion, gloss: דעה }
+          - { term: expérience, gloss: ניסיון / חוויה }
+          - { term: culture, gloss: תרבות }
+          - { term: pays, gloss: מדינה }
+          - { term: année, gloss: שנה }
+          - { term: groupe, gloss: קבוצה / להקה }
+          - { term: paroles (d’une chanson), gloss: מילים (של שיר) }
+
+vocabulary:
+  - slug: musique
+    title: Musique
+    items: *musique-words
+
+activities:
+  - slug: musique-sociales
+    title: 'Les compétences sociales : questions et réponses sur la musique'
+    minutes: 8
+    items:
+      - id: questions-reponses
+        type: matching
+        prompt: Associe chaque question à sa réponse.
+        pairs:
+          - [Quelle musique écoutes-tu ?, J’écoute du rock.]
+          - [Es-tu déjà allé(e) à un concert ?, 'Oui, je suis allé(e) à un concert de Stromae.']
+          - [Jouais-tu d’un instrument ?, 'Oui, je jouais du piano.']
+          - [
+              Quelle était ta chanson préférée quand tu étais enfant ?,
+              C’était une chanson pour enfants.,
+            ]
+          - [Quel artiste préfères-tu ?, Je préfère Angèle.]
+      - id: reagir
+        type: multipleChoice
+        prompt: '— Je te donne ma patience. — Merci ! ___'
+        options:
+          - { text: 'Moi, je te donne mon énergie.', correct: true }
+          - {
+              text: 'Moi, je te donnes mon énergie.',
+              feedback: 'Avec *je*, le verbe *donner* au présent est *je donne* (sans -s).',
+            }
+          - {
+              text: 'Moi, je donne te mon énergie.',
+              feedback: 'Le pronom *te* se place avant le verbe : *je te donne*.',
+            }
+      - id: ecoutes
+        type: fillBlank
+        prompt: Complète la question avec le verbe *écouter* au présent.
+        text: — Quelle musique ___-tu ? — J’écoute du rock.
+        blanks: [[écoutes]]
+      - id: question-passe
+        type: multipleChoice
+        prompt: Quelle question est au passé composé ?
+        options:
+          - { text: Quelle musique as-tu écoutée hier ?, correct: true }
+          - {
+              text: Quelle musique écoutes-tu ?,
+              feedback: '*Écoutes-tu* est au présent. Au passé composé : *as-tu écoutée*.',
+            }
+          - {
+              text: Quelle musique écoutais-tu quand tu étais enfant ?,
+              feedback: '*Écoutais-tu* est à l’imparfait. Au passé composé : *as-tu écoutée*.',
+            }
+      - id: troisieme-personne
+        type: trueFalse
+        prompt: 'Pour présenter ton / ta partenaire au groupe, tu parles à la 3e personne : *Maria écoute de la musique classique.*'
+        answer: true
+        feedback:
+          correct: 'Bravo ! On présente son / sa partenaire avec *il / elle* : *Maria écoute…, elle écoutait…*'
+          incorrect: 'C’est vrai : pour présenter quelqu’un, on utilise la 3e personne (*il / elle*) : *Maria écoute de la musique classique.*'
+      - id: jouais
+        type: fillBlank
+        prompt: Complète la question avec le verbe *jouer* à l’imparfait.
+        text: — Tu ___ d’un instrument quand tu étais petit(e) ? — Oui, je jouais du piano.
+        blanks: [[jouais]]
+      - id: ont-ils
+        type: multipleChoice
+        prompt: Tes goûts musicaux ___ changé ?
+        options:
+          - { text: ont-ils, correct: true }
+          - {
+              text: ont-t-il,
+              feedback: 'Le verbe *ont* finit déjà par *t* : pas de *-t-* en plus. Et *tes goûts* est au pluriel : *ont-ils*.',
+            }
+          - { text: a-t-il, feedback: '*Tes goûts* est au pluriel : *ont-ils changé ?*' }
+      - id: ordre-maria
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre pour présenter ta partenaire.
+        sentence: Maria écoute de la musique classique.
+
+  - slug: musique-temps
+    title: 'Les temps dans un récit : présent, passé composé, imparfait'
+    minutes: 8
+    items:
+      - id: ai-ecoute
+        type: multipleChoice
+        prompt: Hier, ___ la nouvelle chanson de Stromae.
+        options:
+          - { text: j’ai écouté, correct: true }
+          - {
+              text: j’écoute,
+              feedback: '*J’écoute* est au présent. Avec *hier*, pour un fait ponctuel : *j’ai écouté*.',
+            }
+          - {
+              text: j’écouterai,
+              feedback: '*J’écouterai* est au futur. Avec *hier* : *j’ai écouté*.',
+            }
+      - id: ecoutais
+        type: multipleChoice
+        prompt: Quand j’étais enfant, ___ des chansons pour enfants tous les jours.
+        options:
+          - { text: j’écoutais, correct: true }
+          - {
+              text: j’écoute,
+              feedback: '*J’écoute* est au présent. Pour une habitude passée, on utilise l’imparfait : *j’écoutais*.',
+            }
+          - {
+              text: j’écouterai,
+              feedback: '*J’écouterai* est au futur. Pour une habitude passée : *j’écoutais*.',
+            }
+      - id: lien-passe-present
+        type: fillBlank
+        prompt: Complète avec *manger* au passé composé et *avoir* au présent.
+        text: Hier, j’ai trop ___. Aujourd’hui, j’___ mal au ventre.
+        blanks: [[mangé], [ai]]
+      - id: temps-usage
+        type: matching
+        prompt: Associe chaque phrase à son temps.
+        pairs:
+          - [J’aime la musique pop., 'présent : un goût']
+          - ['Hier, j’ai écouté Stromae.', 'passé composé : un fait ponctuel']
+          - ['Quand j’étais enfant, j’écoutais du rock.', 'imparfait : une habitude passée']
+          - ['Aujourd’hui, j’ai mal au ventre.', 'présent : une conséquence']
+      - id: aller-etre
+        type: trueFalse
+        prompt: 'Le passé composé de *aller* se forme avec *avoir* : *J’ai allé au concert.*'
+        answer: false
+        feedback:
+          correct: 'Bravo ! *Aller* se conjugue avec *être* : *Je suis allé(e) au concert.*'
+          incorrect: '*Aller* se conjugue avec *être* : *Je suis allé(e) au concert.*'
+      - id: est-ne
+        type: fillBlank
+        prompt: Complète avec l’auxiliaire *être*.
+        text: Stromae ___ né le 12 mars 1985 à Bruxelles.
+        blanks: [[est]]
+      - id: ecoutait
+        type: multipleChoice
+        prompt: Maria écoute de la musique classique, mais avant, elle ___ de la pop.
+        options:
+          - { text: écoutait, correct: true }
+          - {
+              text: écoute,
+              feedback: 'Avec *avant*, on parle d’une habitude passée : *elle écoutait*.',
+            }
+          - {
+              text: écouterait,
+              feedback: 'Pour une habitude passée, on utilise l’imparfait : *elle écoutait*.',
+            }
+      - id: ordre-enfant
+        type: reorderSentence
+        prompt: Remets les mots dans l’ordre.
+        sentence: Quand j’étais enfant, j’écoutais du rock.

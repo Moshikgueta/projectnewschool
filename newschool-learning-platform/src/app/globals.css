@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+@import '../ui/tokens.css';
+
+/* Tier 3: expose the semantic tokens to Tailwind (bg-primary, text-muted …). */
+@theme inline {
+  --color-primary: var(--color-brand-primary);
+  --color-primary-hover: var(--color-brand-primary-hover);
+  --color-primary-active: var(--color-brand-primary-active);
+  --color-primary-light: var(--color-brand-primary-light);
+  --color-secondary: var(--color-brand-secondary);
+  --color-secondary-light: var(--color-brand-secondary-light);
+  --color-on-brand: var(--color-on-brand);
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-surface-secondary: var(--color-surface-secondary);
+  --color-fg: var(--color-text-primary);
+  --color-fg-secondary: var(--color-text-secondary);
+  --color-muted: var(--color-text-muted);
+  --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
+  --color-focus: var(--color-focus-ring);
+  --color-success: var(--color-success);
+  --color-success-light: var(--color-success-light);
+  --color-success-ink: var(--color-success-ink);
+  --color-warning: var(--color-warning);
+  --color-warning-light: var(--color-warning-light);
+  --color-warning-ink: var(--color-warning-ink);
+  --color-error: var(--color-error);
+  --color-error-light: var(--color-error-light);
+  --color-error-ink: var(--color-error-ink);
+  --color-info-light: var(--color-info-light);
+  --color-info-ink: var(--color-info-ink);
+  --font-sans: var(--font-sans);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--color-background);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem; /* 17px: Hebrew/Arabic need the extra size (DESIGN-SYSTEM.md §4) */
+    line-height: 1.6;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

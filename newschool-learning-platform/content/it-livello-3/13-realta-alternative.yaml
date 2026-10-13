@@ -1,0 +1,708 @@
+# Cycle "Realtà alternative", converted from the Italian level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-livello-3
+slug: realta-alternative
+title: Realtà alternative
+goal: Immaginare situazioni irreali nel presente (se avessi…, farei…) e nel passato (se avessi avuto…, avrei fatto…).
+position: 13
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Secondo periodo ipotetico" and "Terzo periodo
+    ipotetico") are NEW: the notebook has no self-study exercises. They were written
+    from the cycle's summary rules, the class examples and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Grammar (wrong rule): the notebook gives the structures as "Se + imperfetto,
+    condizionale" and "Se + trapassato prossimo, condizionale passato". In standard
+    Italian the verb after "se" is the congiuntivo imperfetto (se avessi, se fossi) and
+    the congiuntivo trapassato (se avessi studiato, se fossi andato), not the
+    indicative imperfetto / trapassato prossimo (these are only colloquial). All rules
+    now say so; the Hebrew note "even though we use a past tense (imperfetto) the
+    meaning is present" now refers to the congiuntivo imperfetto. ADDED: tables of the
+    congiuntivo imperfetto, the condizionale presente and the third type (avessi
+    studiato / avrei superato), the rule that the condizionale never goes after "se",
+    and that verbs with essere keep essere (se fossi andato, sarei arrivato; la mia
+    vita sarebbe cambiata). Please confirm.
+  - >-
+    Summary (wrong rule): "Use of auxiliary verbs: would = normal result, could =
+    possibility, might = less sure possibility" was copied from the English notebook.
+    Italian has no such auxiliaries: it is now a rule on the condizionale of the main
+    verb (risultato: viaggerei), of potere (possibilità: potrei) and of dovere
+    (consiglio: dovrei). The labels "secondo / terzo condizionale" (English "second /
+    third conditional") are now "secondo / terzo periodo ipotetico" everywhere (summary
+    tips, Activity 3, homework, Mori).
+  - >-
+    The lesson summary ("סיכום השיעור") is in Hebrew in the source; it was rewritten in
+    Italian as rule summaries, with the Italian examples kept. The "Ripasso
+    grammaticale" at the start of the lesson repeats the same two rules: it is kept
+    once, as two info callouts before the warm-up questions, and in the summary.
+  - >-
+    Corrections: Activity 3, phase 2 "com'è la tua vita? cosa è meglio o peggio?" →
+    "Come sarebbe la tua vita? Che cosa sarebbe meglio o peggio?" (the phase asks for
+    the second type); Activity 5 "«What if» vs accettazione" and "Pensare «what if»"
+    (English) → "«E se…?» o accettazione" / "Chiedersi «e se…?»"; "Hi Mori!" → "Ciao
+    Mori!"; "Vocabulario" → "Vocabolario"; full stops added to the example sentences.
+  - >-
+    Missing in the source: Activity 3 "Fase 4 - Presentazione" is an empty heading; a
+    step "Ogni coppia presenta il proprio mondo alternativo alla classe" was added.
+    Activity 4 has no skills line (it practises the third type). Activity 1 phase 2
+    asks partners to ask questions but there is no example; one was added. Only the
+    introduction has a time (5 minutes); the notebook gives no other times and no
+    plan for choosing activities.
+  - >-
+    Classic homework ("שיעורי בית - גרסה קלאסית", 4 parts) is kept in the homework
+    section as written exercises, with the Hebrew instructions translated into
+    Italian; the answer key (not in the source) was ADDED in the teacher notes. Part 1
+    items 2, 3 and 5 can be completed with either the second or the third type; the
+    key gives both. Part 4 item 3 "Se fossi più ricco, avrei comprato una casa" is
+    meant as a mistake, but it is a correct mixed sentence (present condition, past
+    result); the key says so and gives the two "pure" versions. "Passare l'esame" is
+    colloquial but correct and was kept; the summary uses "superare l'esame".
+  - >-
+    Mori: the four steps are kept as two messages (the first message and "Fammi una
+    domanda più difficile") plus a callout with the conversation requirements and the
+    final request "Correggi le mie frasi e spiegami gli errori" as a third message.
+  - >-
+    Left out: the gamma.app lesson presentation (slide links are not allowed;
+    mentioned in a teacher note), the "Data / Partecipanti" fields and the "Studente
+    1/2/3" answer lines (the platform has answer boxes). The Quizlet link is kept
+    without "?new". The example name in the introduction (Maria) is a model, not a
+    student.
+  - >-
+    Vocabulary: "Uguale – אותו דבר" → "שווה / זהה"; "Conseguenza" and "Risultato" are
+    kept with different glosses as in the source. Please confirm.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: realta-alternative-classe
+    title: 'In classe: Realtà alternative'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Realtà alternative
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Secondo periodo ipotetico
+            description: 'Situazioni immaginarie nel presente o nel futuro: *Se avessi più tempo, viaggerei di più.*'
+          - name: Terzo periodo ipotetico
+            description: "Situazioni immaginarie nel passato: *Se avessi studiato di più, avrei superato l'esame.*"
+      - id: quizlet
+        type: externalLink
+        label: Realtà alternative su Quizlet
+        url: https://quizlet.com/br/1171381815/realta-alternative-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduzione
+      - id: intro
+        type: sentenceFrame
+        frame: Io sono ___. La mia vita sarebbe più / meno ___ se avessi ___.
+        example: Sono Maria. La mia vita sarebbe più rilassante se avessi più tempo libero.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di riscaldamento
+      - id: warmup-secondo-title
+        type: heading
+        level: 4
+        text: Secondo periodo ipotetico
+      - id: warmup-secondo-rule
+        type: callout
+        tone: info
+        title: Se + congiuntivo imperfetto, condizionale presente
+        text: |-
+          Si usa per situazioni **irreali**, sogni e cambiamenti immaginari nel presente o nel futuro.
+          *Se avessi più tempo, viaggerei di più.*
+      - id: warmup-secondo
+        type: discussionQuestions
+        items:
+          - question: Se potessi cambiare una cosa nella tua vita, che cosa cambieresti e perché?
+            frame: Se potessi, cambierei ___ perché ___.
+          - question: Se potessi vivere la vita di un'altra persona per un giorno, chi sceglieresti?
+            frame: Sceglierei ___ perché ___.
+          - question: Se potessi vivere in un film o in un libro, quale sceglieresti?
+            frame: Vivrei in ___ perché ___.
+          - question: Se potessi risolvere un problema globale, quale sceglieresti?
+            frame: Risolverei il problema di ___. Il mondo sarebbe ___.
+      - id: warmup-terzo-title
+        type: heading
+        level: 4
+        text: Terzo periodo ipotetico
+      - id: warmup-terzo-rule
+        type: callout
+        tone: info
+        title: Se + congiuntivo trapassato, condizionale passato
+        text: |-
+          Si usa per parlare del **passato** e immaginare risultati diversi.
+          *Se avessi studiato di più, avrei superato l'esame.*
+      - id: warmup-terzo
+        type: discussionQuestions
+        items:
+          - question: Se avessi studiato qualcosa di diverso, che cosa faresti oggi?
+            frame: Se avessi studiato ___, oggi farei ___.
+          - question: Se non avessi incontrato una persona importante, che cosa sarebbe cambiato?
+            frame: Se non avessi incontrato ___, ___ sarebbe cambiato / non avrei ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: La mia vita parallela'
+        skills: [Secondo periodo ipotetico]
+        steps:
+          - '**Fase 1 – Pensiero individuale:** immagina una vita diversa e scrivi almeno 3 frasi (qui sotto).'
+          - '**Fase 2 – In coppia:** presenta la tua vita alternativa. Il compagno fa domande: *Perché cambieresti questo? Come sarebbe la tua vita?*'
+          - "**Fase 3 – Con la classe:** ogni coppia presenta una frase. La classe vota l'idea più interessante."
+        example: |-
+          *A: Se vivessi in un altro paese, abiterei vicino al mare.*
+          *B: Perché cambieresti questo? Come sarebbe la tua vita?*
+          *A: Sarei più rilassato, perché ogni mattina farei una passeggiata sulla spiaggia.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: La mia vita parallela
+        items:
+          - question: Se avessi più tempo, io ___.
+          - question: Se vivessi in un altro paese, io ___.
+          - question: Se potessi imparare qualcosa, io ___.
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Cambiare il mondo'
+        skills: [Secondo periodo ipotetico]
+        steps:
+          - '**Fase 1 – Gruppi:** ogni gruppo riceve un tema: economia, salute, educazione o ambiente. Scrivete 3–4 frasi con il secondo periodo ipotetico.'
+          - '**Fase 2 – Nuovi gruppi:** cambiate gruppo e spiegate le vostre idee ai nuovi compagni.'
+          - '**Fase 3 – Discussione:** quale idea è la migliore?'
+        example: |-
+          *Se non esistesse il denaro, le persone scambierebbero prodotti.*
+          *Se tutti studiassero gratis, ci sarebbe meno violenza.*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Il nostro mondo cambiato
+        items:
+          - question: 'Il nostro tema: ___'
+          - question: Se ___, ___.
+            frame: Se non esistesse…, le persone…
+          - question: Se ___, ___.
+            frame: Se tutti…, ci sarebbe…
+          - question: Se ___, ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Realtà alternative nei media'
+        skills: [Secondo periodo ipotetico, Terzo periodo ipotetico]
+        steps:
+          - '**Fase 1 – Brainstorming:** film, serie o libri su realtà alternative.'
+          - '**Fase 2 – Immaginazione (secondo periodo ipotetico):** se vivessi in questo mondo, come sarebbe la tua vita? Che cosa sarebbe meglio o peggio?'
+          - '**Fase 3 – Riflessione (terzo periodo ipotetico):** se il protagonista avesse fatto una scelta diversa, che cosa sarebbe cambiato?'
+          - '**Fase 4 – Presentazione:** ogni coppia presenta il proprio mondo alternativo alla classe.'
+      - id: act3-questions
+        type: discussionQuestions
+        title: Il mondo del film, della serie o del libro
+        items:
+          - question: Quale film, serie o libro hai scelto?
+            frame: Ho scelto ___.
+          - question: Se vivessi in questo mondo, come sarebbe la tua vita?
+            frame: Se vivessi in questo mondo, ___.
+          - question: Che cosa sarebbe meglio o peggio?
+            frame: Sarebbe meglio ___, ma sarebbe peggio ___.
+          - question: Se il protagonista avesse fatto una scelta diversa, che cosa sarebbe cambiato?
+            frame: Se il protagonista avesse ___, ___ sarebbe cambiato / avrebbe ___.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Storia alternativa'
+        skills: [Terzo periodo ipotetico]
+        steps:
+          - "**Fase 1 – Scelta dell'evento:** scegli un evento storico importante (locale o globale)."
+          - "**Fase 2 – Immaginazione:** immagina come la storia sarebbe cambiata se questo evento fosse stato diverso. Descrivi **tre conseguenze** con il terzo periodo ipotetico: subito dopo l'evento, dopo 10 anni, dopo 100 anni."
+          - '**Fase 3 – In coppia:** condividi le tue idee con un compagno. Discutete: quale conseguenza è la più sorprendente? Quale è la più realistica? Come sarebbe diversa la vita oggi?'
+      - id: act4-sentences
+        type: discussionQuestions
+        title: La mia storia alternativa
+        items:
+          - question: "L'evento: ___"
+          - question: "Subito dopo l'evento: ___"
+            frame: Se ___ fosse stato diverso, subito dopo ___ avrebbe / sarebbe ___.
+          - question: 'Dopo 10 anni: ___'
+          - question: 'Dopo 100 anni: ___'
+      - id: act5
+        type: classActivity
+        title: 'Attività 5: Dibattito'
+        skills: [Secondo periodo ipotetico, Terzo periodo ipotetico]
+        steps:
+          - '**Tema: «E se…?» o accettazione.** Gruppo 1: chiedersi «e se…?» aiuta a imparare e a crescere. Gruppo 2: accettare la realtà è più sano.'
+          - '**Fase 1 – Preparazione:** dividetevi in gruppi. Ogni gruppo prepara argomenti per difendere la propria posizione. Ogni argomento deve avere una frase con il secondo periodo ipotetico, una frase con il terzo periodo ipotetico e un esempio personale o reale.'
+          - "**Fase 2 – Dibattito:** il gruppo A presenta un'idea e il gruppo B risponde; poi il gruppo B presenta un'idea e il gruppo A risponde."
+          - '**Fase 3 – Discussione finale:** pensare troppo al passato aiuta o crea stress? È possibile trovare un equilibrio tra «e se…?» e accettazione? Quale posizione è stata più convincente?'
+        example: |-
+          *Se le persone riflettessero di più sulle loro decisioni, imparerebbero dai loro errori.*
+          *Se non avessi pensato al passato, non avrei imparato così tanto.*
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **secondo periodo ipotetico** (introduzione,
+          prime domande, Attività 1 e 2) e **terzo periodo ipotetico** (seconde domande,
+          Attività 4); le Attività 3 e 5 usano tutti e due. Comincia con il secondo
+          periodo ipotetico (situazioni immaginarie nel presente o nel futuro), poi passa
+          al terzo (situazioni immaginarie nel passato). Il quaderno non dice quante
+          attività scegliere. La presentazione della lezione (gamma.app) non è inclusa
+          nella piattaforma: usala dal tuo materiale, se vuoi.
+      - id: n-intro
+        anchor: intro
+        minutes: 5
+        text: Dai prima il tuo esempio, poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup-title
+        text: >-
+          Scegli le domande in base al livello della classe. Leggi con il gruppo il
+          riquadro di grammatica prima delle domande. Le risposte scritte qui compaiono
+          sotto ogni domanda.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          La fase 4 (presentazione) è vuota nel quaderno: ogni coppia presenta in breve
+          il proprio mondo alternativo.
+      - id: n-act5
+        anchor: act5
+        text: Controlla che ogni argomento abbia una frase del secondo tipo, una del terzo tipo e un esempio.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: realta-alternative-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: rules-secondo
+        type: ruleSummary
+        skill: Secondo periodo ipotetico
+        rules:
+          - text: 'Si usa per parlare di situazioni **immaginarie nel presente o nel futuro**: sogni, idee non reali, cambiamenti immaginari.'
+          - text: 'Struttura: **se + congiuntivo imperfetto, condizionale presente**.'
+            examples:
+              - Se avessi più tempo, viaggerei di più.
+              - Se fossi ricco, comprerei una casa.
+              - Se non esistesse il denaro, le persone scambierebbero prodotti.
+          - text: '**Importante:** il congiuntivo imperfetto sembra un tempo passato (*avessi, fossi*), ma qui il significato è presente o futuro: *Se avessi più tempo* = non ho tempo adesso.'
+          - text: '**Attenzione:** dopo *se* non usiamo mai il condizionale.'
+            examples: ['Se avrei più tempo, viaggerei. ✗', 'Se avessi più tempo, viaggerei. ✓']
+          - text: '*Se ho più tempo, viaggio di più* (se + presente) non è un errore: parla di una situazione **reale e possibile**. *Se avessi più tempo, viaggerei* parla di una situazione **immaginaria**.'
+      - id: cong-imperfetto-table
+        type: table
+        caption: Congiuntivo imperfetto (dopo se)
+        header: [Persona, avere, essere, potere, vivere]
+        rows:
+          - [io, avessi, fossi, potessi, vivessi]
+          - [tu, avessi, fossi, potessi, vivessi]
+          - [lui / lei, avesse, fosse, potesse, vivesse]
+          - [noi, avessimo, fossimo, potessimo, vivessimo]
+          - [voi, aveste, foste, poteste, viveste]
+          - [loro, avessero, fossero, potessero, vivessero]
+      - id: condizionale-table
+        type: table
+        caption: Condizionale presente
+        header: [Persona, viaggiare, essere, avere, fare]
+        rows:
+          - [io, viaggerei, sarei, avrei, farei]
+          - [tu, viaggeresti, saresti, avresti, faresti]
+          - [lui / lei, viaggerebbe, sarebbe, avrebbe, farebbe]
+          - [noi, viaggeremmo, saremmo, avremmo, faremmo]
+          - [voi, viaggereste, sareste, avreste, fareste]
+          - [loro, viaggerebbero, sarebbero, avrebbero, farebbero]
+      - id: rules-terzo
+        type: ruleSummary
+        skill: Terzo periodo ipotetico
+        rules:
+          - text: 'Si usa per parlare del **passato** e immaginare che cosa sarebbe successo se qualcosa fosse stato diverso. Non possiamo più cambiare la situazione.'
+          - text: 'Struttura: **se + congiuntivo trapassato (*avessi / fossi* + participio), condizionale passato (*avrei / sarei* + participio)**.'
+            examples:
+              - Se avessi studiato di più, avrei superato l'esame.
+              - Se avessi fatto una scelta diversa, la mia vita sarebbe cambiata.
+              - Se fossimo partiti prima, non avremmo perso il treno.
+          - text: 'I verbi che usano *essere* al passato prossimo usano *essere* anche qui, e il participio cambia con il genere e il numero.'
+            examples:
+              - Se Marta fosse andata in Italia, sarebbe diventata più indipendente.
+              - Se avessi fatto una scelta diversa, la mia vita sarebbe cambiata.
+          - text: "**Attenzione:** dopo *avrei / sarei* va il participio, non l'infinito."
+            examples: ["avrei superare l'esame ✗", "avrei superato l'esame ✓"]
+      - id: terzo-table
+        type: table
+        caption: Terzo periodo ipotetico
+        header: [Persona, se + congiuntivo trapassato, condizionale passato]
+        rows:
+          - [io, avessi studiato, avrei superato]
+          - [tu, avessi studiato, avresti superato]
+          - [lui / lei, avesse studiato, avrebbe superato]
+          - [noi, avessimo studiato, avremmo superato]
+          - [voi, aveste studiato, avreste superato]
+          - [loro, avessero studiato, avrebbero superato]
+      - id: rules-differenza
+        type: ruleSummary
+        skill: Secondo o terzo?
+        rules:
+          - text: '**Secondo:** presente o futuro, una situazione immaginaria.'
+            examples: ['Se fossi ricco, comprerei una casa.']
+          - text: '**Terzo:** passato, una situazione che non possiamo più cambiare (rimpianto o risultato diverso).'
+            examples: ['Se avessi fatto una scelta diversa, la mia vita sarebbe cambiata.']
+          - text: 'Nella seconda parte possiamo usare il condizionale del verbo principale (**risultato**), di *potere* (**possibilità**) o di *dovere* (**consiglio**).'
+            examples:
+              - Se avessi più tempo, viaggerei di più. (risultato)
+              - Se avessi più tempo, potrei imparare il tedesco. (possibilità)
+              - Se ti sentissi stanco, dovresti riposare. (consiglio)
+      - id: hebrew-examples
+        type: examples
+        items:
+          - text: Se avessi più tempo, viaggerei di più.
+            gloss: אם היה לי יותר זמן, הייתי מטייל יותר.
+          - text: Se avessi studiato di più, avrei superato l'esame.
+            gloss: אם הייתי לומד יותר, הייתי עובר את המבחן.
+          - text: Se fossi ricco, comprerei una casa.
+            gloss: אם הייתי עשיר, הייתי קונה בית.
+          - text: Se avessi fatto una scelta diversa, la mia vita sarebbe cambiata.
+            gloss: אם הייתי בוחר אחרת, החיים שלי היו משתנים.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Usa il **secondo periodo ipotetico** per parlare di sogni e il **terzo** per parlare del passato.
+          Aggiungi una ragione con *perché*.
+          Dai esempi personali e parla con frasi complete.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: >-
+          Il riassunto del quaderno è in ebraico; qui è in italiano con le traduzioni
+          ebraiche degli esempi principali. Chiedi a ogni studente un esempio nuovo per
+          ciascuno dei due tipi.
+      - id: n-modali
+        anchor: rules-differenza
+        text: >-
+          Nel quaderno questa regola era copiata dall'inglese (would / could / might).
+          In italiano basta il condizionale: *viaggerei* (risultato), *potrei*
+          (possibilità), *dovrei / dovresti* (consiglio). Per un consiglio si usa spesso
+          anche *Se fossi in te, farei…*.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: realta-alternative-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia un messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Messaggio 1: Realtà alternative nella mia vita'
+        message: Ciao Mori! Voglio praticare il secondo e il terzo periodo ipotetico. Fammi domande su realtà alternative, decisioni e cambiamenti nella mia vita.
+      - id: mori-rules
+        type: callout
+        tone: info
+        title: Durante la conversazione
+        text: |-
+          Dai almeno **5 risposte complete**. Usa:
+          - 2 frasi con il **secondo periodo ipotetico** (*Se avessi…, farei…*)
+          - 1 frase con il **terzo periodo ipotetico** (*Se avessi fatto…, avrei…*)
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Messaggio 2: Una domanda più difficile'
+        intro: 'Rispondi con una situazione immaginaria (secondo tipo), una situazione nel passato (terzo tipo) e una ragione (*perché*).'
+        message: Fammi una domanda più difficile.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Messaggio 3: Correzione'
+        intro: Alla fine della conversazione scrivi questo messaggio.
+        message: Correggi le mie frasi e spiegami gli errori.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+      - id: written-title
+        type: heading
+        level: 3
+        text: Esercizi scritti
+      - id: hw1
+        type: discussionQuestions
+        title: 'Parte 1: Completa le frasi con la forma giusta (secondo o terzo periodo ipotetico)'
+        items:
+          - question: Se io ___ (avere) più tempo, ___ (viaggiare) di più.
+          - question: Se lui ___ (studiare) di più, ___ (passare) l'esame.
+          - question: Se noi ___ (vivere) in Italia, ___ (imparare) meglio la lingua.
+          - question: Se io ___ (sapere) prima, ___ (fare) una scelta diversa.
+          - question: Se loro ___ (lavorare) meno, ___ (essere) più felici.
+      - id: hw2
+        type: discussionQuestions
+        title: 'Parte 2: Secondo o terzo? Scegli la forma giusta'
+        items:
+          - question: Se avessi più soldi, ___ una casa. (comprerei / avrei comprato)
+          - question: Se avessi studiato di più, ___ l'esame. (passerei / avrei passato)
+          - question: Se fossi in te, ___ così. (farei / avrei fatto)
+          - question: Se avessi avuto più tempo, ___. (viaggerei / avrei viaggiato)
+      - id: hw3
+        type: reflection
+        prompt: >-
+          **Parte 3:** scrivi 6–8 frasi sul tema «La mia vita in una realtà alternativa».
+          Usa 2 frasi con il secondo periodo ipotetico, 2 frasi con il terzo periodo
+          ipotetico e un esempio personale.
+      - id: hw4
+        type: discussionQuestions
+        title: 'Parte 4: Correggi le frasi'
+        items:
+          - question: Se ho più tempo, viaggerei di più.
+          - question: Se avrei studiato, passerei l'esame.
+          - question: Se fossi più ricco, avrei comprato una casa.
+          - question: Se avevo studiato di più, avrei passato l'esame.
+    teacherNotes:
+      - id: n-written
+        anchor: written-title
+        text: Gli esercizi scritti vengono dal quaderno («compiti classici»). Il quaderno non ha le soluzioni; quelle qui sotto sono state aggiunte.
+      - id: n-hw1
+        anchor: hw1
+        text: >-
+          Soluzioni: 1 avessi, viaggerei; 2 avesse studiato, avrebbe passato (o:
+          studiasse, passerebbe); 3 vivessimo, impareremmo (o: avessimo vissuto, avremmo
+          imparato); 4 avessi saputo, avrei fatto; 5 lavorassero, sarebbero (o: avessero
+          lavorato, sarebbero stati).
+      - id: n-hw2
+        anchor: hw2
+        text: 'Soluzioni: 1 comprerei, 2 avrei passato, 3 farei, 4 avrei viaggiato.'
+      - id: n-hw4
+        anchor: hw4
+        text: >-
+          Soluzioni: 1 Se avessi più tempo, viaggerei di più. 2 Se avessi studiato, avrei
+          passato l'esame. 3 Se fossi stato più ricco, avrei comprato una casa (o: Se
+          fossi più ricco, comprerei una casa). Nota: la frase del quaderno è anche
+          possibile come periodo misto («sono una persona ricca in generale → in passato
+          avrei comprato»). 4 Se avessi studiato di più, avrei passato l'esame.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: realta-alternative-pratica
+    book: workbook
+    title: 'Pratica: Realtà alternative'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-secondo
+        type: activity
+        activity: realta-alternative-secondo
+      - id: ex-terzo
+        type: activity
+        activity: realta-alternative-terzo
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: realta-alternative-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole delle realtà alternative
+        glossLang: he
+        link: https://quizlet.com/br/1171381815/realta-alternative-flash-cards/
+        items: &realta-alternative-words
+          - { term: realtà, gloss: מציאות }
+          - { term: alternativa, gloss: חלופה }
+          - { term: possibilità, gloss: אפשרות }
+          - { term: decisione, gloss: החלטה }
+          - { term: scelta, gloss: בחירה }
+          - { term: risultato, gloss: תוצאה }
+          - { term: conseguenza, gloss: תוצאה / השלכה }
+          - { term: esperienza, gloss: חוויה }
+          - { term: cambiamento, gloss: שינוי }
+          - { term: futuro, gloss: עתיד }
+          - { term: passato, gloss: עבר }
+          - { term: presente, gloss: הווה }
+          - { term: situazione, gloss: מצב }
+          - { term: immaginare, gloss: לדמיין }
+          - { term: sognare, gloss: לחלום }
+          - { term: cambiare, gloss: לשנות }
+          - { term: decidere, gloss: להחליט }
+          - { term: accettare, gloss: לקבל }
+          - { term: pentirsi, gloss: להתחרט }
+          - { term: sbaglio, gloss: טעות }
+          - { term: successo, gloss: הצלחה }
+          - { term: fallimento, gloss: כישלון }
+          - { term: opportunità, gloss: הזדמנות }
+          - { term: perdere un'occasione, gloss: לפספס הזדמנות }
+          - { term: impatto, gloss: השפעה }
+          - { term: prospettiva, gloss: נקודת מבט }
+          - { term: società, gloss: חברה }
+          - { term: evento, gloss: אירוע }
+          - { term: abitudine, gloss: הרגל }
+          - { term: vita, gloss: חיים }
+          - { term: problema, gloss: בעיה }
+          - { term: soluzione, gloss: פתרון }
+          - { term: diverso, gloss: שונה }
+          - { term: uguale, gloss: שווה / זהה }
+          - { term: importante, gloss: חשוב }
+          - { term: possibile, gloss: אפשרי }
+
+vocabulary:
+  - slug: realta-alternative
+    title: Realtà alternative
+    items: *realta-alternative-words
+
+activities:
+  - slug: realta-alternative-secondo
+    title: 'Secondo periodo ipotetico: se avessi…, farei…'
+    minutes: 8
+    items:
+      - id: viaggerei
+        type: multipleChoice
+        prompt: Se avessi più tempo, ___ di più.
+        options:
+          - { text: viaggerei, correct: true }
+          - {
+              text: viaggerò,
+              feedback: '*Viaggerò* è futuro. Con *se* + congiuntivo imperfetto (*avessi*) la seconda parte va al condizionale: *viaggerei*.',
+            }
+          - {
+              text: viaggiassi,
+              feedback: '*Viaggiassi* è congiuntivo imperfetto: va dopo *se*. Nella seconda parte usiamo il condizionale: *viaggerei*.',
+            }
+      - id: vivessi
+        type: fillBlank
+        prompt: Completa con il congiuntivo imperfetto di *vivere* (io).
+        text: Se ___ in un altro paese, imparerei un'altra lingua.
+        blanks: [[vivessi, io vivessi]]
+      - id: fossi-ricco
+        type: multipleChoice
+        prompt: Se ___ ricco, comprerei una casa.
+        options:
+          - { text: fossi, correct: true }
+          - {
+              text: sarei,
+              feedback: 'Dopo *se* non usiamo mai il condizionale. Usiamo il congiuntivo imperfetto: *fossi*.',
+            }
+          - {
+              text: sono,
+              feedback: 'Con *sono* (presente) la seconda parte sarebbe *compro*. Con *comprerei* usiamo il congiuntivo imperfetto: *fossi*.',
+            }
+      - id: se-condizionale
+        type: trueFalse
+        prompt: 'La frase *Se avrei più tempo, viaggerei di più* è corretta.'
+        answer: false
+        feedback:
+          correct: 'Giusto! Dopo *se* non usiamo il condizionale: *Se avessi più tempo, viaggerei di più.*'
+          incorrect: 'Dopo *se* non usiamo mai il condizionale. La frase corretta è: *Se avessi più tempo, viaggerei di più.*'
+      - id: unisci-mondo
+        type: matching
+        prompt: Unisci le due parti di ogni frase.
+        pairs:
+          - [Se non esistesse il denaro…, …le persone scambierebbero prodotti.]
+          - [Se tutti studiassero gratis…, …ci sarebbe meno violenza.]
+          - [Se fossi in te…, …non lo farei.]
+          - [Se potessi vivere in un libro…, …sceglierei Harry Potter.]
+      - id: vivessimo
+        type: fillBlank
+        prompt: Completa con *vivere* (congiuntivo imperfetto) e *imparare* (condizionale presente).
+        text: Se noi ___ in Italia, ___ meglio la lingua.
+        blanks: [[vivessimo, noi vivessimo], [impareremmo]]
+      - id: frase-corretta
+        type: multipleChoice
+        prompt: Quale frase è corretta?
+        options:
+          - { text: 'Se avessi più tempo, viaggerei di più.', correct: true }
+          - {
+              text: 'Se ho più tempo, viaggerei di più.',
+              feedback: 'Con il condizionale (*viaggerei*) dopo *se* usiamo il congiuntivo imperfetto: *Se avessi…*',
+            }
+          - {
+              text: 'Se avrei più tempo, viaggerei di più.',
+              feedback: 'Dopo *se* non usiamo il condizionale: *Se avessi…*',
+            }
+      - id: ordina-ricco
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Se fossi ricco, comprerei una casa.
+
+  - slug: realta-alternative-terzo
+    title: 'Terzo periodo ipotetico: se avessi avuto…, avrei fatto…'
+    minutes: 8
+    items:
+      - id: avrei-superato
+        type: multipleChoice
+        prompt: Se avessi studiato di più, ___ l'esame.
+        options:
+          - { text: avrei superato, correct: true }
+          - {
+              text: supererei,
+              feedback: 'La condizione è nel passato (*avessi studiato*): anche il risultato è nel passato, con il condizionale passato: *avrei superato*.',
+            }
+          - {
+              text: avrei superare,
+              feedback: "Dopo *avrei* va il participio, non l'infinito: *avrei superato*.",
+            }
+      - id: avessi-saputo
+        type: fillBlank
+        prompt: Completa con il congiuntivo trapassato di *sapere* (io).
+        text: Se ___ prima, avrei fatto una scelta diversa.
+        blanks: [[avessi saputo, io avessi saputo]]
+      - id: avessi-studiato
+        type: multipleChoice
+        prompt: Se ___ di più, avrei passato l'esame.
+        options:
+          - { text: avessi studiato, correct: true }
+          - {
+              text: avrei studiato,
+              feedback: 'Dopo *se* non usiamo il condizionale. Usiamo il congiuntivo trapassato: *avessi studiato*.',
+            }
+          - {
+              text: avevo studiato,
+              feedback: "*Avevo studiato* è trapassato prossimo (indicativo): si sente nella lingua parlata, ma nell'italiano corretto dopo *se* usiamo il congiuntivo: *avessi studiato*.",
+            }
+      - id: uso-terzo
+        type: trueFalse
+        prompt: Il terzo periodo ipotetico parla di situazioni nel passato che non possiamo più cambiare.
+        answer: true
+        feedback:
+          correct: "Giusto! *Se avessi studiato di più, avrei superato l'esame* (ma non ho studiato)."
+          incorrect: "Il terzo periodo ipotetico parla del passato: *Se avessi studiato di più, avrei superato l'esame* (ma non ho studiato)."
+      - id: unisci-condizionale-passato
+        type: matching
+        prompt: Unisci ogni verbo al suo condizionale passato (io).
+        pairs:
+          - [fare, avrei fatto]
+          - [andare, sarei andato]
+          - [essere, sarei stato]
+          - [vedere, avrei visto]
+          - [avere, avrei avuto]
+      - id: sarebbe-cambiata
+        type: fillBlank
+        prompt: Completa con il condizionale passato di *cambiare*. Attenzione al soggetto (*la mia vita*).
+        text: Se avessi fatto una scelta diversa, la mia vita ___.
+        blanks: [[sarebbe cambiata]]
+      - id: treno
+        type: multipleChoice
+        prompt: Se fossimo partiti prima, non ___ il treno.
+        options:
+          - { text: avremmo perso, correct: true }
+          - {
+              text: perderemmo,
+              feedback: 'La condizione è nel passato (*fossimo partiti*): il risultato va al condizionale passato, *avremmo perso*.',
+            }
+          - {
+              text: abbiamo perso,
+              feedback: '*Abbiamo perso* racconta un fatto reale. Per immaginare un passato diverso usiamo *avremmo perso*.',
+            }
+      - id: ordina-esame
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Se avessi studiato di più, avrei superato l'esame.

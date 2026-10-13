@@ -1,0 +1,599 @@
+# Cycle "Besondere Anlässe: Vergangenheit", converted from the German level 2
+# digital notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-konversation-2
+slug: besondere-anlaesse-vergangenheit
+title: 'Besondere Anlässe: Vergangenheit'
+goal: Über vergangene Feste erzählen, mit dem Perfekt und mit Zeitangaben.
+position: 8
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Perfekt" and "Zeitangaben") are NEW: the notebook has
+    no self-study exercises. They were written from the cycle's two skills, its summary,
+    the activity examples and its vocabulary. Please check level, wording and every
+    right answer before students see them.
+  - >-
+    The notebook names one grammar focus (Perfekt) and the aim "Zeitangaben in der
+    Vergangenheit benutzen"; these are the cycle's two skills.
+  - >-
+    Summary: the Hebrew summary says that in German one does not tell about the past
+    with a "simple past" but with the Perfekt. That is too strong: *sein* and *haben*
+    are usually used in the Präteritum (ich war, ich hatte), as in the warm-up example
+    "ich war auf einer Party … mir war langweilig". A rule was added. The summary also
+    now explains how the Partizip II is formed (ge-…-t / ge-…-en; no ge- with be-
+    verbs like bekommen; einladen → eingeladen), that *passieren* takes *sein*, and the
+    word order (haben / sein at position 2, Partizip II at the end; after a time word
+    at the start, the verb comes before the subject). A Partizip table was added from
+    the cycle's verbs. Please confirm.
+  - >-
+    The summary and the Mori homework are written in Hebrew in the notebook. The rules
+    are given in simple German (ruleSummary) with a short Hebrew text block (lang he);
+    the 5 Mori prompts were translated into German messages for Mori. The Hebrew
+    summary's closing paragraph (why the Perfekt matters) was left out. Please check
+    the German and the Hebrew.
+  - >-
+    Corrections: title "Vergangenheitt" → "Vergangenheit"; "Ebene: A2" → "Niveau";
+    Activity 1 question "Was ist Lustiges oder Besonderes passiert?" → "Ist etwas
+    Lustiges oder Besonderes passiert?"; "Student 1" / "Schüler 1/2/3" lines removed
+    (the platform has answer boxes). The formatting debris in Activity 5 (stray
+    asterisks and line-break codes) was removed.
+  - >-
+    The introduction round has no model sentence in the notebook; none was added.
+    Activity 5 needs role cards (famous or invented people) prepared by the teacher:
+    they are not in the notebook. No activity has a total time in the notebook (only
+    Activity 1: 5–7 minutes for the conversation, recorded as 7), so no minutes are
+    given; please add them if you like.
+  - >-
+    The "Lehrer achtet auf" lists of each activity became teacher notes.
+  - >-
+    Vocabulary: "erinnern – לזכור" → "sich erinnern (an) – לזכור / להיזכר (ב־)"; "die
+    Erinnerung – זיכרון" kept; "letztes Jahr – שנה שעברה" → "בשנה שעברה"; "genießen –
+    ליהנות" → "ליהנות (מ־)"; "einladen – להזמין" now says "(לאירוע)". Added "im Jahr
+    2020 – בשנת 2020" and "an meinem letzten Geburtstag", which the summary and
+    Activity 4 use. Please confirm.
+  - The Quizlet link lost its "?new" parameter.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: besondere-anlaesse-vergangenheit-unterricht
+    title: 'Unterricht: Besondere Anlässe: Vergangenheit'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: 'Besondere Anlässe: Vergangenheit'
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Perfekt mit haben und sein
+            description: '*Ich habe meinen Geburtstag gefeiert. Ich bin zur Party gegangen.*'
+          - name: Zeitangaben in der Vergangenheit
+            description: '*gestern, letztes Jahr, vor zwei Jahren, im Jahr 2020*'
+      - id: quizlet
+        type: externalLink
+        label: Besondere Anlässe (Vergangenheit) auf Quizlet
+        url: https://quizlet.com/br/1129377125/besondere-anlasse-vergangenheit-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Einführungsrunde
+      - id: intro
+        type: sentenceFrame
+        prompt: 'Sag zwei Sätze: Wie heißt du? Dann wähle **einen** Satz.'
+        frame: |-
+          Ich bin ___.
+          Letztes Jahr habe ich ___ gefeiert. / Als ich das letzte Mal auf einer Party war, habe ich ___. / Ich erinnere mich an einen besonderen Anlass, weil ___.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Vorbereitungsfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Welches Geschenk hast du zu deinem letzten Geburtstag bekommen?
+            frame: |-
+              Ich habe ___ von ___ bekommen.
+              *Beispiel: Ich habe ein Buch von meiner Schwester bekommen.*
+          - question: Welches Geschenk hast du letztes Jahr verschenkt?
+            frame: |-
+              Ich habe ___ ___ geschenkt.
+              *Beispiel: Ich habe meiner besten Freundin ein T-Shirt geschenkt.*
+          - question: Wo hast du deinen schönsten Geburtstag gefeiert?
+            frame: |-
+              Ich habe meinen Geburtstag ___ gefeiert.
+              *Beispiel: Ich habe meinen Geburtstag in einem Restaurant gefeiert.*
+          - question: Was hast du an deinem ersten Schultag gemacht?
+            frame: |-
+              Ich habe ___.
+              *Beispiel: Ich habe meine Klassenkameraden getroffen und mit der Lehrerin gesprochen.*
+          - question: Warst du schon mal auf einer langweiligen Party? Was ist passiert?
+            frame: |-
+              Ja, ich war auf ___. / Nein, ich war noch nie auf einer langweiligen Party.
+              *Beispiel: Ja, ich war auf einer Party ohne Musik und mir war langweilig.*
+          - question: An welche Familienfeier erinnerst du dich gern? Warum?
+            frame: |-
+              Ich erinnere mich an ___. Es hat ___.
+              *Beispiel: Ich erinnere mich an die Hochzeit meiner Cousine. Es hat viel Spaß gemacht.*
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Interview: Die beste Party'
+        skills: [Perfekt mit haben und sein]
+        steps:
+          - Arbeitet zu zweit (oder in Breakout-Räumen).
+          - Interviewe deinen Partner / deine Partnerin mit den Leitfragen unten (7 Minuten).
+          - Kommt zurück ins Plenum.
+          - Erzähl der Klasse **ein interessantes Detail** aus der Geschichte deines Partners / deiner Partnerin.
+      - id: act1-questions
+        type: discussionQuestions
+        title: Leitfragen
+        items:
+          - question: Wo hat die Party stattgefunden?
+          - question: Was für eine Feier war es?
+          - question: Wer hat gefeiert?
+          - question: Wie viele Personen waren da?
+          - question: Welches Geschenk hast du bekommen oder gegeben?
+          - question: Was hast du gegessen und getrunken?
+          - question: Welche Musik hast du gehört? Hast du getanzt?
+          - question: Ist etwas Lustiges oder Besonderes passiert?
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Zwei Geschichten: Wahr oder falsch?'
+        skills: [Perfekt mit haben und sein, Zeitangaben in der Vergangenheit]
+        steps:
+          - 'Denk dir zwei kurze Geschichten über einen besonderen Anlass aus: eine wahre und eine erfundene.'
+          - Erzähl beide Geschichten nacheinander. Sag nicht, welche wahr ist.
+          - Die anderen hören zu und raten.
+          - Sag am Ende, welche Geschichte stimmt.
+        example: |-
+          *Ich glaube, Geschichte 1 ist wahr.*
+          *Ich glaube, Geschichte 2 ist eine Lüge.*
+      - id: act2-stories
+        type: discussionQuestions
+        title: Meine zwei Geschichten (Was? Wo? Wann?)
+        items:
+          - question: 'Geschichte 1: ___'
+          - question: 'Geschichte 2: ___'
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Zeitleiste der Feierlichkeiten'
+        skills: [Zeitangaben in der Vergangenheit, Perfekt mit haben und sein]
+        steps:
+          - Mach eine kleine Zeitleiste mit **drei bis vier** wichtigen Feiern aus deinem Leben (z. B. Geburtstage, Hochzeiten, Abschlüsse, besondere Reisen).
+          - Schreib zu jedem Punkt einen einfachen Satz im Perfekt.
+          - Arbeitet zu zweit oder in kleinen Gruppen. Stellt eure Zeitleisten vor und erklärt kurz jede Feier.
+        example: |-
+          *2018 habe ich meinen Abschluss gefeiert.*
+          *2020 habe ich die Hochzeit meines Cousins besucht.*
+      - id: act3-timeline
+        type: discussionQuestions
+        title: Meine Zeitleiste
+        items:
+          - question: ___ (Jahr) habe ich ___.
+          - question: ___ (Jahr) habe ich ___.
+          - question: ___ (Jahr) habe ich ___.
+          - question: ___ (Jahr) bin ich ___.
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Feiertagebuch'
+        skills: [Perfekt mit haben und sein, Zeitangaben in der Vergangenheit]
+        steps:
+          - Schreib einen Mini-Tagebucheintrag mit **vier bis fünf Sätzen** über eine besondere Feier.
+          - 'Benutze mindestens zwei Zeitangaben: *gestern, letztes Jahr, vor zwei Jahren, an meinem letzten Geburtstag …*'
+          - 'Die Fragen unten helfen dir: Wann? Wo? Wer? Was?'
+          - 'Arbeitet zu zweit: Einer liest seinen Text vor. Der Partner / Die Partnerin stellt zwei weitere Fragen (z. B. *Wer war noch da? Was hast du gegessen?*).'
+      - id: act4-diary
+        type: discussionQuestions
+        title: Mein Feiertagebuch
+        items:
+          - question: Wann war die Feier?
+          - question: Wo war sie?
+          - question: Wer war dabei?
+          - question: Was ist passiert?
+      - id: act5
+        type: classActivity
+        title: 'Aktivität 5: Rollenspiel: Berühmtes Interview'
+        skills: [Perfekt mit haben und sein]
+        steps:
+          - Du bekommst eine Karte mit einer Rolle (z. B. Sänger, Sportlerin, Schauspieler, Influencerin).
+          - 'Arbeitet zu zweit: Einer ist Journalist / Journalistin, einer ist die berühmte Person.'
+          - Der Journalist stellt 4–5 Fragen zu einer vergangenen Feier (Fragen unten).
+          - Die berühmte Person antwortet frei im Perfekt.
+          - Nach einigen Minuten wechselt ihr die Rollen.
+      - id: act5-questions
+        type: discussionQuestions
+        title: Fragen für das Interview
+        items:
+          - question: Wo war deine beste Party?
+          - question: Mit wem hast du gefeiert?
+          - question: Was hast du gegessen oder getrunken?
+          - question: Welches Geschenk hast du bekommen?
+          - question: An welchen Moment erinnerst du dich besonders?
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: das **Perfekt** mit *haben* und *sein*
+          (alle Aktivitäten) und **Zeitangaben in der Vergangenheit** (besonders
+          Aktivitäten 3 und 4).
+      - id: n-warmup
+        anchor: warmup
+        text: Stell jedem Schüler mindestens zwei Fragen. Die Beispielantworten stehen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        minutes: 7
+        text: >-
+          Die Paare haben 5–7 Minuten für das Gespräch. Achte auf: richtige Verwendung
+          von *haben* und *sein*; einfache, vollständige Sätze; mehr Flüssigkeit beim
+          Erzählen.
+      - id: n-act2
+        anchor: act2
+        text: >-
+          Achte auf: eine klare Struktur der Geschichte (Was? Wo? Wann?); einfache und
+          richtige Sätze im Perfekt; flüssiges Sprechen ohne ständiges Unterbrechen; Mut,
+          kreativ zu sein und vor der Gruppe zu sprechen.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Achte auf: richtige Zeitangaben; eine klare zeitliche Reihenfolge; einfache,
+          verständliche Sätze im Perfekt; kurzes, strukturiertes Erzählen.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Erinnere vorher an die Struktur: Wann war die Feier? Wo war sie? Wer war dabei?
+          Was ist passiert? Achte auf: vollständige Sätze; richtiges Perfekt; sinnvolle
+          Zeitangaben; Zusammenhang zwischen den Sätzen; mündliche Antworten auf
+          Nachfragen.
+      - id: n-act5
+        anchor: act5
+        text: >-
+          Bereite Karten mit Rollen vor (berühmte oder erfundene Personen: Sänger,
+          Sportler, Schauspieler, Influencer); sie sind nicht im Heft. Achte auf: richtige
+          Fragen im Perfekt; spontane, zusammenhängende Antworten; *haben* und *sein*;
+          natürliche Interaktion.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: besondere-anlaesse-vergangenheit-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-perfekt
+        type: ruleSummary
+        skill: Perfekt mit haben und sein
+        rules:
+          - text: 'Über Feiern und Erlebnisse in der Vergangenheit sprechen wir mit dem **Perfekt**: *haben / sein* (Position 2) + **Partizip II** (am Ende).'
+            examples:
+              [
+                Ich **habe** meinen Geburtstag **gefeiert**.,
+                Ich **habe** ein Geschenk **bekommen**.,
+                Ich **bin** zur Party **gegangen**.,
+              ]
+          - text: 'Die meisten Verben bilden das Perfekt mit **haben**. Verben der Bewegung (*gehen, kommen, fahren*) und *passieren* bilden es mit **sein**.'
+            examples:
+              [
+                Wir **haben** Pizza gegessen.,
+                Meine Freunde **sind** zu mir gekommen.,
+                Was **ist** passiert?,
+              ]
+          - text: 'Partizip II: regelmäßige Verben mit **ge- … -t** (*feiern → gefeiert*), viele unregelmäßige mit **ge- … -en** (*essen → gegessen*). Verben mit *be-* haben kein *ge-* (*bekommen → bekommen*). Bei *einladen* steht *ge* in der Mitte: *eingeladen*.'
+          - text: '*sein* und *haben* benutzen wir meistens im **Präteritum**: *ich war, du warst, er / sie war; ich hatte*.'
+            examples: [Ich **war** auf einer Party ohne Musik., Mir **war** langweilig.]
+          - text: 'Verneinung: **kein / keine / keinen** vor einem Nomen, **nicht** vor dem Partizip oder vor einem Ort.'
+            examples: [Ich habe **keinen** Kuchen gegessen., Ich bin **nicht** zur Party gegangen.]
+          - text: 'Fragen: Fragewort + *haben / sein* + Subjekt … + Partizip II am Ende.'
+            examples:
+              [
+                Was **hast** du gestern **gemacht**?,
+                Wo **hast** du deinen Geburtstag **gefeiert**?,
+                Mit wem **warst** du dort?,
+              ]
+      - id: partizip-table
+        type: table
+        caption: Verben aus dem Unterricht
+        header: [Infinitiv, Hilfsverb, Partizip II, Beispiel]
+        rows:
+          - [feiern, haben, gefeiert, Ich habe meinen Geburtstag gefeiert.]
+          - [tanzen, haben, getanzt, Wir haben getanzt.]
+          - [bekommen, haben, bekommen, Ich habe ein Buch bekommen.]
+          - [einladen, haben, eingeladen, Ich habe meine Freunde eingeladen.]
+          - [essen, haben, gegessen, Wir haben Pizza gegessen.]
+          - [trinken, haben, getrunken, Wir haben Limonade getrunken.]
+          - [sehen, haben, gesehen, Ich habe meine Familie gesehen.]
+          - [gehen, sein, gegangen, Ich bin zur Party gegangen.]
+          - [kommen, sein, gekommen, Meine Freunde sind gekommen.]
+          - [fahren, sein, gefahren, Wir sind nach Berlin gefahren.]
+      - id: rules-zeit
+        type: ruleSummary
+        skill: Zeitangaben in der Vergangenheit
+        rules:
+          - text: 'Zeitangaben sagen, **wann** etwas passiert ist.'
+            examples:
+              [
+                gestern,
+                letztes Jahr,
+                vor zwei Jahren,
+                im Jahr 2020 / 2020,
+                an meinem letzten Geburtstag,
+              ]
+          - text: 'Steht die Zeitangabe am Anfang, kommt danach das Verb (*habe / bin*), dann das Subjekt.'
+            examples:
+              [
+                '**Letztes Jahr habe ich** meinen Abschluss gefeiert.',
+                '**2020 habe ich** die Hochzeit meines Cousins besucht.',
+                '**Gestern bin ich** zur Party gegangen.',
+              ]
+      - id: summary-he
+        type: text
+        lang: he
+        text: >-
+          כדי לספר על מסיבה, יום הולדת או זיכרון אישי משתמשים ב־Perfekt: haben / sein
+          במקום השני + Partizip II בסוף המשפט (Ich habe ein Geschenk bekommen – קיבלתי
+          מתנה). רוב הפעלים באים עם haben; פעלי תנועה (gehen, kommen, fahren) ו־passieren
+          באים עם sein (Ich bin zur Party gegangen – הלכתי למסיבה). את sein ו־haben
+          אומרים בדרך כלל בעבר הפשוט: ich war (הייתי), ich hatte (היה לי). מילות זמן
+          (gestern, letztes Jahr, vor zwei Jahren, im Jahr 2020) עוזרות למקם את הסיפור;
+          כשהן בתחילת המשפט, הפועל בא מיד אחריהן.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die zwei Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: besondere-anlaesse-vergangenheit-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: Öffne den Chat mit Mori, kopiere eine Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: '1. Fragen und Sprechen'
+        intro: Mori fragt zum Beispiel nach einem Geburtstag, einer Party, einem Geschenk, einer Hochzeit oder einer Familienfeier.
+        message: Hallo Mori! Bitte stell mir auf Deutsch Fragen über Feiern und besondere Anlässe, die ich in der Vergangenheit erlebt habe.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: '2. Ein kurzes Tagebuch'
+        message: Hallo Mori! Bitte hilf mir, einen kurzen Text mit 5 Sätzen auf Deutsch über eine besondere Feier in meiner Vergangenheit zu schreiben.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: '3. Meine Zeitleiste'
+        message: Hallo Mori! Ich möchte drei Sätze auf Deutsch in der Vergangenheit über drei wichtige Feiern in meinem Leben schreiben. Bitte frag mich nach diesen Feiern und korrigiere meine Sätze.
+      - id: mori-4
+        type: aiTutorPrompt
+        title: '4. Zwei Geschichten: Wahr oder falsch'
+        message: 'Hallo Mori! Bitte hilf mir, zwei kurze Geschichten auf Deutsch in der Vergangenheit über besondere Anlässe zu erfinden: eine wahre und eine erfundene.'
+      - id: mori-5
+        type: aiTutorPrompt
+        title: '5. Grammatiktraining: Perfekt'
+        message: |-
+          Hallo Mori! Bitte gib mir Sätze im Präsens auf Deutsch, und ich schreibe sie im Perfekt.
+          Zum Beispiel:
+          Ich feiere meinen Geburtstag zu Hause.
+          Meine Freunde kommen zu mir.
+          Wir essen Pizza und trinken Limonade.
+          Ich sehe meine Familie.
+          Wir tanzen und hören Musik.
+          Korrigiere mich, wenn ich einen Fehler mache.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: besondere-anlaesse-vergangenheit-uebung
+    book: workbook
+    title: 'Übung: Besondere Anlässe: Vergangenheit'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-perfekt
+        type: activity
+        activity: besondere-anlaesse-vergangenheit-perfekt
+      - id: ex-zeitangaben
+        type: activity
+        activity: besondere-anlaesse-vergangenheit-zeitangaben
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: besondere-anlaesse-vergangenheit-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter für besondere Anlässe
+        glossLang: he
+        link: https://quizlet.com/br/1129377125/besondere-anlasse-vergangenheit-flash-cards/
+        items: &besondere-anlaesse-vergangenheit-words
+          - { term: die Party, gloss: מסיבה }
+          - { term: der Geburtstag, gloss: יום הולדת }
+          - { term: die Feier, gloss: חגיגה }
+          - { term: das Geschenk, gloss: מתנה }
+          - { term: feiern, gloss: לחגוג }
+          - { term: bekommen, gloss: לקבל }
+          - { term: geben, gloss: לתת }
+          - { term: einladen, gloss: להזמין (לאירוע) }
+          - { term: kommen, gloss: לבוא }
+          - { term: gehen, gloss: ללכת }
+          - { term: tanzen, gloss: לרקוד }
+          - { term: singen, gloss: לשיר }
+          - { term: essen, gloss: לאכול }
+          - { term: trinken, gloss: לשתות }
+          - { term: sprechen, gloss: לדבר }
+          - { term: sehen, gloss: לראות }
+          - { term: lachen, gloss: לצחוק }
+          - { term: weinen, gloss: לבכות }
+          - { term: genießen, gloss: ליהנות (מ־) }
+          - { term: sich erinnern (an), gloss: לזכור / להיזכר (ב־) }
+          - { term: die Erinnerung, gloss: זיכרון }
+          - { term: der Moment, gloss: רגע }
+          - { term: die Familie, gloss: משפחה }
+          - { term: die Hochzeit, gloss: חתונה }
+          - { term: langweilig, gloss: משעמם }
+          - { term: schön, gloss: יפה / נחמד }
+          - { term: besonders, gloss: מיוחד }
+          - { term: gestern, gloss: אתמול }
+          - { term: letztes Jahr, gloss: בשנה שעברה }
+          - { term: vor zwei Jahren, gloss: לפני שנתיים }
+          - { term: im Jahr 2020, gloss: בשנת 2020 }
+          - { term: an meinem letzten Geburtstag, gloss: ביום ההולדת האחרון שלי }
+          - { term: mit wem, gloss: עם מי }
+          - { term: wo, gloss: איפה }
+          - { term: was, gloss: מה }
+          - { term: wann, gloss: מתי }
+          - { term: warum, gloss: למה }
+
+vocabulary:
+  - slug: besondere-anlaesse-vergangenheit
+    title: 'Besondere Anlässe: Vergangenheit'
+    items: *besondere-anlaesse-vergangenheit-words
+
+activities:
+  - slug: besondere-anlaesse-vergangenheit-perfekt
+    title: 'Perfekt: Ich habe gefeiert, ich bin gegangen'
+    minutes: 8
+    items:
+      - id: habe-gefeiert
+        type: multipleChoice
+        prompt: Ich ___ meinen Geburtstag gefeiert.
+        options:
+          - { text: habe, correct: true }
+          - { text: bin, feedback: '*feiern* bildet das Perfekt mit *haben*: *Ich habe gefeiert.*' }
+          - {
+              text: hat,
+              feedback: '*hat* ist für *er / sie / es*. Für *ich* sagen wir *ich habe*.',
+            }
+      - id: sind-gegangen
+        type: multipleChoice
+        prompt: Wir ___ zur Party gegangen.
+        options:
+          - { text: sind, correct: true }
+          - {
+              text: haben,
+              feedback: '*gehen* ist ein Verb der Bewegung: Perfekt mit *sein*. *Wir sind gegangen.*',
+            }
+          - { text: seid, feedback: '*seid* ist für *ihr*. Für *wir* sagen wir *wir sind*.' }
+      - id: bekommen
+        type: fillBlank
+        prompt: Ergänze das Partizip II von *bekommen*.
+        text: Ich habe ein Buch von meiner Schwester ___.
+        blanks: [[bekommen]]
+      - id: partizip-paare
+        type: matching
+        prompt: Welches Partizip II passt?
+        pairs:
+          - [essen, gegessen]
+          - [sehen, gesehen]
+          - [feiern, gefeiert]
+          - [kommen, gekommen]
+          - [trinken, getrunken]
+      - id: haben-gekommen
+        type: trueFalse
+        prompt: 'Der Satz *Meine Freunde haben zu mir gekommen.* ist richtig.'
+        answer: false
+        feedback:
+          correct: 'Genau! *kommen* bildet das Perfekt mit *sein*: *Meine Freunde sind zu mir gekommen.*'
+          incorrect: '*kommen* ist ein Verb der Bewegung: *Meine Freunde sind zu mir gekommen.*'
+      - id: hast-gemacht
+        type: fillBlank
+        prompt: Ergänze die Frage im Perfekt (*machen*).
+        text: Was ___ du gestern ___?
+        blanks: [[hast], [gemacht]]
+      - id: keinen-kuchen
+        type: multipleChoice
+        prompt: Ich habe ___ Kuchen gegessen.
+        options:
+          - { text: keinen, correct: true }
+          - {
+              text: nicht,
+              feedback: 'Vor einem Nomen ohne Artikel verneinen wir mit *kein*: *keinen Kuchen*.',
+            }
+          - { text: kein, feedback: '*der Kuchen* ist hier im Akkusativ: *keinen Kuchen*.' }
+      - id: ordne-geburtstag
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Wo hast du deinen Geburtstag gefeiert?
+
+  - slug: besondere-anlaesse-vergangenheit-zeitangaben
+    title: 'Zeitangaben: gestern, letztes Jahr, vor zwei Jahren'
+    minutes: 8
+    items:
+      - id: letztes-jahr-v2
+        type: multipleChoice
+        prompt: Letztes Jahr ___
+        options:
+          - { text: habe ich meinen Abschluss gefeiert., correct: true }
+          - {
+              text: ich habe meinen Abschluss gefeiert.,
+              feedback: 'Nach der Zeitangabe kommt zuerst das Verb, dann das Subjekt: *Letztes Jahr habe ich …*',
+            }
+          - {
+              text: ich meinen Abschluss gefeiert habe.,
+              feedback: 'Im Hauptsatz steht *habe* an Position 2: *Letztes Jahr habe ich meinen Abschluss gefeiert.*',
+            }
+      - id: vor-jahren
+        type: fillBlank
+        prompt: Ergänze die Präposition.
+        text: Ich habe meine Cousine ___ zwei Jahren besucht.
+        blanks: [[vor]]
+      - id: fragen-antworten
+        type: matching
+        prompt: Welche Antwort passt zu welcher Frage?
+        pairs:
+          - [Wann hast du gefeiert?, Letztes Jahr.]
+          - [Wo hast du gefeiert?, In einem Restaurant.]
+          - [Mit wem hast du gefeiert?, Mit meiner Familie.]
+          - [Was hast du gegessen?, Pizza und Kuchen.]
+          - [Wer ist gekommen?, Meine Freunde.]
+      - id: vor-zwei-jahren
+        type: trueFalse
+        prompt: '*vor zwei Jahren* bedeutet: zwei Jahre in der Vergangenheit.'
+        answer: true
+        feedback:
+          correct: Richtig! *Vor zwei Jahren* = zwei Jahre vor heute.
+          incorrect: '*vor zwei Jahren* spricht über die Vergangenheit: zwei Jahre vor heute.'
+      - id: vergangenheit-wort
+        type: multipleChoice
+        prompt: Welche Zeitangabe passt zur Vergangenheit?
+        options:
+          - { text: letztes Jahr, correct: true }
+          - { text: nächstes Jahr, feedback: '*nächstes Jahr* spricht über die Zukunft.' }
+          - { text: morgen, feedback: '*morgen* spricht über die Zukunft.' }
+      - id: letztes
+        type: fillBlank
+        prompt: Ergänze *letztes*.
+        text: ___ Jahr habe ich die Hochzeit meines Cousins besucht.
+        blanks: [[Letztes]]
+      - id: im-jahr
+        type: multipleChoice
+        prompt: Ich habe meinen Geburtstag ___ Jahr 2020 in einem Restaurant gefeiert.
+        options:
+          - { text: im, correct: true }
+          - { text: in, feedback: 'Wir sagen *im Jahr 2020* oder nur *2020*.' }
+          - {
+              text: am,
+              feedback: '*am* steht vor einem Tag oder Datum. Mit *Jahr* sagen wir *im Jahr 2020*.',
+            }
+      - id: ordne-gestern
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Was hast du gestern gemacht?

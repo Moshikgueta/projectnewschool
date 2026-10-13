@@ -1,0 +1,602 @@
+# Cycle "Salute e benessere", converted from the Italian level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-livello-3
+slug: salute-e-benessere
+title: Salute e benessere
+goal: Parlare di abitudini e stati nel passato e dare consigli con i verbi modali.
+position: 7
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Abitudini e stati nel passato" and "Verbi modali") are
+    NEW: the notebook has no self-study exercises. They were written from the cycle's
+    summary rules, the activity examples and its vocabulary. Please check level, wording
+    and every right answer before students see them.
+  - >-
+    Links: the lesson slides (gamma.app) are not allowed and were left out (mentioned in a
+    teacher note). The Quizlet link is kept without its "?new" parameter. The "Data /
+    Partecipanti" lines were left out.
+  - >-
+    "Ripasso grammaticale veloce": the rule '"Usare + infinito" / "Prima" → abitudini
+    passate' is a literal translation of English "used to + infinitive" and is wrong for
+    Italian. It now says: imperfetto (often with prima, di solito, una volta) → past
+    habits. Please confirm.
+  - >-
+    The lesson summary ("סיכום שיעור") was in Hebrew in the source; it is now in Italian
+    in the Riepilogo section, with the Hebrew translations of the examples kept in a few
+    rules. "Devi mangi ✔️❌" (marked both right and wrong) → "Devi mangi ❌" (wrong).
+    ADDED: imperfetto table (mangiare, fare, essere) and present / conditional table of
+    dovere and potere, which the notebook does not have. Please confirm.
+  - >-
+    Corrections: Activity 3 example "Dovresti dormire meglio e meno usare il telefono" →
+    "…e usare meno il telefono"; forum message "Lavoro da casa tutto il giorno e esco poco"
+    → "…ed esco poco"; stray "ð·" characters after the forum title removed. Warm-up 5
+    "Quando sei stressato" → "stressato / stressata"; warm-up 7 "da quando sei adulto" →
+    "adulto / adulta"; Activity 1 "Avevi obiettivi sportivi?" kept.
+  - >-
+    Mori part 2: "Voglio dare consigli usando dovrei, potrei e devo" → "dovresti, potresti
+    e devi" (to give advice to someone else we use the tu forms, as in the examples under
+    the message). The "what to practise" lists and example answers (in Hebrew in the
+    source) are now intro lines in Italian. Part 3 (paragraph "Una volta che non mi sentivo
+    bene") is kept as a reflection box plus the Mori message.
+  - >-
+    Warm-up questions 4, 6 and 8 had no sentence frame; frames were added. The introduction
+    had no example; one was added (*Mi chiamo Dana…*).
+  - >-
+    The cycle has no timings in the source, so none were added. Activity 4 needs a picture
+    of a doctor in the past chosen by the teacher (not in the notebook): see teacher note.
+  - >-
+    Vocabulary: "Trattamento" and "Terapia" were both glossed "טיפול": now "טיפול (רפואי)"
+    and "טיפול / תרפיה". "Infermiere – אח / אחות" → term "Infermiere / Infermiera".
+    "Esercizio – פעילות גופנית" → "פעילות גופנית / תרגיל". "Potresti – אתה יכול / אולי" →
+    "תוכל / אולי כדאי לך". "Devi – אתה חייב" → "אתה חייב / את חייבת". Please check.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: salute-e-benessere-classe
+    title: 'In classe: Salute e benessere'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Salute e benessere
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Abitudini e stati nel passato
+            description: 'Imperfetto per le abitudini (*prima mangiavo molto zucchero*), passato prossimo per le azioni finite (*ieri ho fatto sport*) e confronti con il presente (*prima… / adesso…*)'
+          - name: Verbi modali
+            description: 'Consigli, possibilità e necessità: *dovresti dormire di più, potresti fare yoga, devi mangiare meglio*'
+      - id: quizlet
+        type: externalLink
+        label: Salute e benessere su Quizlet
+        url: https://quizlet.com/il/1168773789/salute-e-benessere-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Introduzione
+      - id: intro
+        type: sentenceFrame
+        frame: Mi chiamo ___. Penso che le persone dovrebbero essere sane come me / più sane di me.
+        example: Mi chiamo Dana. Penso che le persone dovrebbero essere più sane di me.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande iniziali
+      - id: warmup-hint
+        type: callout
+        tone: info
+        text: Rispondi con **frasi complete**.
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Come definisci la salute? Fai un esempio.
+            frame: Secondo me, la salute è ___.
+          - question: Qual è un'abitudine poco sana che avevi prima?
+            frame: Prima ___, ma ora non lo faccio più perché ___.
+          - question: Quale argomento sulla salute dovrebbe essere insegnato a scuola? Perché?
+            frame: Secondo me, a scuola si dovrebbe insegnare ___ perché ___.
+          - question: Qual è un'abitudine sana che potresti adottare?
+            frame: Potrei ___.
+          - question: Quando sei stressato / stressata, cosa potrebbe aiutarti a rilassarti?
+            frame: ___ potrebbe aiutarmi perché ___.
+          - question: Quali cattive abitudini dovrebbero evitare le persone per vivere più a lungo?
+            frame: Le persone dovrebbero evitare ___ perché ___.
+          - question: Come è cambiato il tuo stile di vita da quando sei adulto / adulta?
+            frame: Prima ___, ma adesso ___.
+          - question: Cosa potresti fare per migliorare il tuo benessere mentale?
+            frame: Per migliorare il mio benessere mentale potrei ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Io prima vs oggi'
+        skills: [Abitudini e stati nel passato]
+        steps:
+          - '**Preparazione individuale:** pensa alle tue abitudini sportive nel passato. Scrivi alcune idee: cosa facevi prima, come ti sentivi, cosa è cambiato oggi.'
+          - '**Conversazione:** parla con un compagno e descrivi le tue abitudini sportive nel passato, le tue abitudini oggi e le differenze tra prima e adesso.'
+          - '**Domande guida:** fatevi le domande qui sotto per continuare la conversazione.'
+          - '**Condivisione:** ogni coppia condivide un esempio interessante con la classe.'
+        example: |-
+          *Prima facevo poco sport e mi sentivo spesso stanco. Adesso vado in palestra tre volte alla settimana e ho più energia.*
+      - id: act1-questions
+        type: discussionQuestions
+        title: Domande guida
+        items:
+          - question: Avevi obiettivi sportivi?
+            frame: Sì, prima volevo ___. / No, non avevo ___.
+          - question: Com'era il tuo livello di energia?
+            frame: Il mio livello di energia era ___.
+          - question: Mangiavi in modo diverso?
+            frame: Prima mangiavo ___, adesso mangio ___.
+          - question: Cosa fai oggi che prima non facevi?
+            frame: Oggi ___, ma prima non ___.
+          - question: Perché hai cambiato abitudini?
+            frame: Ho cambiato abitudini perché ___.
+      - id: act2
+        type: classActivity
+        title: 'Attività 2: Mindfulness'
+        skills: [Verbi modali]
+        steps:
+          - "**Introduzione:** parlate insieme. Che cos'è la mindfulness? Perché è così popolare oggi?"
+          - "**Lavoro di gruppo:** dividete la classe in due gruppi. **Gruppo 1:** organizza un ritiro di relax. **Gruppo 2:** crea un'app per ridurre lo stress."
+          - '**Pianificazione:** ogni gruppo discute e prepara la propria idea usando i verbi modali (*dovere, potere*). Usate le domande qui sotto.'
+          - '**Presentazione:** ogni gruppo presenta la propria idea alla classe. Gli altri studenti fanno 2 o 3 domande.'
+        example: |-
+          *Il nostro ritiro potrebbe essere utile per le persone che lavorano troppo.*
+          *I partecipanti dovrebbero spegnere il telefono. Non si deve parlare durante la meditazione.*
+      - id: act2-questions
+        type: discussionQuestions
+        title: Pensate a…
+        items:
+          - question: Chi potrebbe usare questo servizio?
+            frame: Questo servizio potrebbe essere utile per ___.
+          - question: Cosa si dovrebbe fare?
+            frame: Si dovrebbe ___.
+          - question: Cosa non si deve fare?
+            frame: Non si deve ___.
+          - question: Cosa potrebbe rendere il servizio speciale?
+            frame: ___ potrebbe rendere il servizio speciale.
+          - question: Quali regole bisogna seguire?
+            frame: Bisogna ___.
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Forum sulla salute'
+        skills: [Verbi modali]
+        steps:
+          - '**Leggere:** leggi il messaggio del forum (qui sotto).'
+          - '**Capire:** individua qual è il problema principale e quali abitudini non sono sane.'
+          - '**Scrivere:** scrivi 4 o 5 consigli per aiutare la persona. Usa frasi complete con **dovresti** (consiglio), **potresti** (suggerimento) e **devi** (necessità).'
+          - '**Parlare:** leggi i tuoi consigli ad alta voce. Ascolta gli altri studenti e aggiungi altre idee.'
+        example: |-
+          *Dovresti dormire meglio e usare meno il telefono.*
+          *Potresti fare una passeggiata ogni giorno.*
+          *Devi mangiare in modo più regolare.*
+      - id: act3-message
+        type: callout
+        tone: info
+        title: 'Mi sento sempre stanco'
+        text: |-
+          Ciao a tutti,
+          da alcuni mesi mi sento sempre stanco. Anche quando dormo 8 o 9 ore, mi sveglio senza energia. Ho spesso mal di testa e a volte mi sento un po' stressato.
+          Lavoro da casa tutto il giorno ed esco poco. Prima facevo jogging, ma ora non faccio più sport. Bevo molto caffè e a volte salto i pasti perché lavoro troppo.
+          Il medico dice che è stress, ma non sono sicuro. Cosa posso fare per sentirmi meglio?
+      - id: act3-advice
+        type: discussionQuestions
+        title: I miei consigli
+        items:
+          - question: Un consiglio con *dovresti*
+            frame: Dovresti ___.
+          - question: Un suggerimento con *potresti*
+            frame: Potresti ___.
+          - question: Una necessità con *devi*
+            frame: Devi ___.
+          - question: Un altro consiglio
+            frame: Dovresti / Potresti / Devi ___.
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Salute nel passato'
+        skills: [Abitudini e stati nel passato]
+        steps:
+          - "**Osservazione:** guarda l'immagine del medico nel passato che mostra l'insegnante."
+          - '**Descrizione:** rispondi alle domande qui sotto.'
+          - '**Discussione:** discutete insieme: *Le persone erano più sane nel passato rispetto a oggi?*'
+          - '**Lavoro di gruppo:** dividetevi in gruppi. Ogni gruppo prepara un esempio di abitudine nel passato e un confronto con oggi.'
+          - '**Presentazione:** ogni gruppo presenta le proprie idee alla classe. Gli altri studenti possono fare domande o aggiungere esempi.'
+        example: '*Prima le persone camminavano di più, oggi usano la macchina.*'
+      - id: act4-questions
+        type: discussionQuestions
+        title: Descrizione
+        items:
+          - question: "Cosa vedi nell'immagine?"
+            frame: "Nell'immagine vedo ___."
+          - question: Come si curavano le persone nel passato?
+            frame: Nel passato le persone si curavano con ___.
+          - question: Cosa è diverso oggi?
+            frame: In passato ___, oggi ___.
+          - question: Le persone erano più sane nel passato rispetto a oggi?
+            frame: Secondo me, le persone erano più / meno sane perché ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Abitudini e stati nel passato** (imperfetto,
+          passato prossimo, confronti *prima… / adesso…*), con le Attività 1 e 4; e **Verbi
+          modali** (*dovresti, potresti, devi*), con le Attività 2 e 3. Il quaderno non
+          indica i tempi: scegli le attività secondo il tempo disponibile.
+      - id: n-links
+        anchor: null
+        text: >-
+          La presentazione della lezione (gamma.app) non è inclusa nella piattaforma (i link
+          alle presentazioni non sono permessi); usala dal tuo materiale se vuoi.
+      - id: n-review
+        anchor: intro
+        text: >-
+          Ripasso grammaticale veloce prima delle attività: imperfetto (con *prima*, *di
+          solito*) → abitudini passate (*Prima mangiavo molto zucchero. Prima facevo poco
+          sport.*); passato prossimo → azioni finite (*Ieri ho fatto sport.*); verbi modali:
+          *dovrei* → consiglio, *potrei* → possibilità, *devo* → necessità.
+      - id: n-warmup
+        anchor: warmup-title
+        text: Scegli 6–8 domande. Gli studenti devono rispondere con frasi complete.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Risposte attese per la fase «Capire»: il problema principale è la stanchezza
+          continua (forse per lo stress); abitudini non sane: lavora da casa tutto il giorno
+          ed esce poco, non fa più sport, beve molto caffè, salta i pasti.
+      - id: n-act4
+        anchor: act4
+        text: >-
+          Prima della lezione scegli un'immagine di un medico nel passato (non è nel
+          quaderno) e mostrala sullo schermo.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: salute-e-benessere-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: learned
+        type: text
+        text: 'Abbiamo parlato delle abitudini nel passato, abbiamo confrontato il passato con il presente, abbiamo dato consigli con i verbi modali e abbiamo imparato il vocabolario della salute.'
+      - id: rules-passato
+        type: ruleSummary
+        skill: Abitudini e stati nel passato
+        rules:
+          - text: "L'**imperfetto** si usa per le **abitudini** nel passato e per gli **stati** che continuano. Descrive qualcosa di generale, non un'azione precisa."
+            examples:
+              - Prima mangiavo male. (פעם אכלתי לא בריא)
+              - Facevo poco sport. (עשיתי מעט ספורט)
+          - text: "Il **passato prossimo** si usa per un'azione **precisa e finita** nel passato. Struttura: **avere / essere** + **participio passato**."
+            examples:
+              - Ho mangiato troppo. (אכלתי יותר מדי)
+              - Sono andato dal medico. (הלכתי לרופא)
+              - Ieri ho fatto sport.
+          - text: 'Per **confrontare** il passato con il presente usiamo **Prima… / Adesso…** oppure **In passato… / Oggi…**: imperfetto per il passato, presente per oggi.'
+            examples:
+              - Prima facevo sport, adesso non ho tempo.
+              - In passato le persone camminavano di più, oggi usano la macchina.
+              - Prima mangiavo male, ma adesso mangio meglio.
+      - id: imperfetto-table
+        type: table
+        caption: Imperfetto
+        header: [Persona, mangiare, fare, essere]
+        rows:
+          - [io, mangiavo, facevo, ero]
+          - [tu, mangiavi, facevi, eri]
+          - [lui / lei, mangiava, faceva, era]
+          - [noi, mangiavamo, facevamo, eravamo]
+          - [voi, mangiavate, facevate, eravate]
+          - [loro, mangiavano, facevano, erano]
+      - id: rules-modali
+        type: ruleSummary
+        skill: Verbi modali
+        rules:
+          - text: '**Dovere** (צריך / חייב) esprime una **necessità** o un obbligo.'
+            examples: [Devi mangiare meglio. (אתה חייב לאכול טוב יותר)]
+          - text: '**Potere** (יכול / אפשר) esprime una **possibilità**.'
+            examples: [Puoi fare sport. (אתה יכול לעשות ספורט)]
+          - text: '**Dovere al condizionale** (*dovrei, dovresti*) esprime un **consiglio gentile**. Anche **potresti** si usa per dare un suggerimento.'
+            examples: [Dovresti dormire di più. (כדאי לך לישון יותר), Potresti fare yoga.]
+          - text: "**Regola importante:** dopo un verbo modale c'è sempre un altro verbo all'**infinito**."
+            examples: ['Devi mangiare. ✔️', 'Devi mangi. ❌']
+          - text: 'Per dare consigli in modo naturale: **Dovresti / Potresti / Devi + infinito**.'
+            examples: [Dovresti riposarti., Potresti fare yoga., Devi cambiare abitudini.]
+      - id: modali-table
+        type: table
+        caption: Dovere e potere
+        header:
+          [
+            Persona,
+            dovere (presente),
+            dovere (condizionale),
+            potere (presente),
+            potere (condizionale),
+          ]
+        rows:
+          - [io, devo, dovrei, posso, potrei]
+          - [tu, devi, dovresti, puoi, potresti]
+          - [lui / lei, deve, dovrebbe, può, potrebbe]
+          - [noi, dobbiamo, dovremmo, possiamo, potremmo]
+          - [voi, dovete, dovreste, potete, potreste]
+          - [loro, devono, dovrebbero, possono, potrebbero]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le regole con il gruppo e chiedi a ogni studente un esempio nuovo sulla propria salute.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: salute-e-benessere-compiti
+    title: Compiti con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia un messaggio e invialo. Mori ti farà delle domande; rispondi a tutte con frasi complete.
+      - id: mori-passato
+        type: aiTutorPrompt
+        title: 'Parte 1: Parlare del passato'
+        intro: "Rispondi con frasi complete sulle tue abitudini nel passato e su come sono cambiate fino a oggi. Esempi: *Prima mangiavo male, ma adesso mangio meglio. Ho iniziato a fare sport l'anno scorso.*"
+        message: Ciao Mori! Parliamo di salute. Fammi domande sulle mie abitudini nel passato. Voglio usare imperfetto e passato prossimo. Fammi anche domande di confronto tra passato e presente.
+      - id: mori-consigli
+        type: aiTutorPrompt
+        title: 'Parte 2: Dare consigli'
+        intro: 'Dai consigli in situazioni diverse. Esempi: *Dovresti dormire di più. Potresti fare sport. Devi mangiare meglio.*'
+        message: Ciao Mori! Dammi situazioni sulla salute. Voglio dare consigli usando dovresti, potresti e devi. Fammi domande e continua la conversazione.
+      - id: scrittura-title
+        type: heading
+        level: 3
+        text: 'Parte 3: Scrittura e correzione'
+      - id: scrittura-hint
+        type: callout
+        tone: info
+        title: Una volta che non mi sentivo bene
+        text: |-
+          Scrivi un breve paragrafo (5 o 6 frasi). Racconta:
+          - che cosa è successo
+          - come ti sentivi
+          - che cosa hai fatto
+          - che cosa hai imparato
+      - id: scrittura
+        type: reflection
+        prompt: Una volta che non mi sentivo bene…
+      - id: mori-scrittura
+        type: aiTutorPrompt
+        title: 'Parte 3: Invia il tuo testo a Mori'
+        intro: Copia il messaggio e aggiungi il tuo paragrafo.
+        message: Ciao Mori! Ho scritto un testo sulla mia salute. Correggi i miei errori e spiegami. Poi fammi domande per continuare la conversazione.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: salute-e-benessere-pratica
+    book: workbook
+    title: 'Pratica: Salute e benessere'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-passato
+        type: activity
+        activity: salute-e-benessere-passato
+      - id: ex-modali
+        type: activity
+        activity: salute-e-benessere-modali
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: salute-e-benessere-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Le parole della salute e del benessere
+        glossLang: he
+        link: https://quizlet.com/il/1168773789/salute-e-benessere-flash-cards/
+        items: &salute-e-benessere-words
+          - { term: Malattia, gloss: מחלה }
+          - { term: Infortunio, gloss: פציעה }
+          - { term: Trattamento, gloss: טיפול (רפואי) }
+          - { term: Esercizio, gloss: פעילות גופנית / תרגיל }
+          - { term: Dieta, gloss: תזונה }
+          - { term: Stress, gloss: לחץ }
+          - { term: Benessere, gloss: רווחה }
+          - { term: Mal di testa, gloss: כאב ראש }
+          - { term: Ansia, gloss: חרדה }
+          - { term: Recupero, gloss: החלמה }
+          - { term: Medico, gloss: רופא }
+          - { term: Infermiere / Infermiera, gloss: אח / אחות }
+          - { term: Paziente, gloss: מטופל }
+          - { term: Farmaco, gloss: תרופה }
+          - { term: Terapia, gloss: טיפול / תרפיה }
+          - { term: Abitudine, gloss: הרגל }
+          - { term: Cambiamento, gloss: שינוי }
+          - { term: Salute, gloss: בריאות }
+          - { term: Corpo, gloss: גוף }
+          - { term: Energia, gloss: אנרגיה }
+          - { term: Dormire, gloss: לישון }
+          - { term: Mangiare, gloss: לאכול }
+          - { term: Allenarsi, gloss: להתאמן }
+          - { term: Riposarsi, gloss: לנוח }
+          - { term: Evitare, gloss: להימנע }
+          - { term: Migliorare, gloss: לשפר }
+          - { term: Iniziare, gloss: להתחיל }
+          - { term: Smettere, gloss: להפסיק }
+          - { term: Cambiare, gloss: לשנות }
+          - { term: Provare, gloss: לנסות }
+          - { term: Dovresti, gloss: כדאי לך }
+          - { term: Potresti, gloss: תוכל / אולי כדאי לך }
+          - { term: Devi, gloss: אתה חייב / את חייבת }
+          - { term: Meglio, gloss: יותר טוב }
+          - { term: Peggio, gloss: יותר גרוע }
+          - { term: Spesso, gloss: לעיתים קרובות }
+
+vocabulary:
+  - slug: salute-e-benessere
+    title: Salute e benessere
+    items: *salute-e-benessere-words
+
+activities:
+  - slug: salute-e-benessere-passato
+    title: 'Abitudini e stati nel passato: prima… adesso…'
+    minutes: 8
+    items:
+      - id: mangiavo
+        type: multipleChoice
+        prompt: Prima ___ molto zucchero, ma adesso mangio meglio.
+        options:
+          - { text: mangiavo, correct: true }
+          - {
+              text: ho mangiato,
+              feedback: "*Prima* parla di un'abitudine nel passato: usiamo l'imperfetto, *mangiavo*.",
+            }
+          - {
+              text: mangio,
+              feedback: "*Mangio* è presente. Per un'abitudine nel passato usiamo l'imperfetto: *mangiavo*.",
+            }
+      - id: sono-andato
+        type: multipleChoice
+        prompt: Ieri ___ dal medico.
+        options:
+          - { text: sono andato, correct: true }
+          - {
+              text: andavo,
+              feedback: "*Ieri* indica un'azione precisa e finita: usiamo il passato prossimo, *sono andato*.",
+            }
+          - { text: ho andato, feedback: 'Il verbo *andare* usa *essere*: *sono andato*.' }
+      - id: facevo
+        type: fillBlank
+        prompt: "Completa con l'imperfetto di *fare* (io)."
+        text: Prima ___ poco sport, adesso vado in palestra.
+        blanks: [[facevo, io facevo]]
+      - id: azione-precisa
+        type: trueFalse
+        prompt: "L'imperfetto si usa per un'azione precisa e finita, per esempio: *Ieri mangiavo troppo.*"
+        answer: false
+        feedback:
+          correct: "Giusto! Per un'azione precisa e finita usiamo il passato prossimo: *Ieri ho mangiato troppo.*"
+          incorrect: "L'imperfetto è per le abitudini e gli stati. Per un'azione precisa usiamo il passato prossimo: *Ieri ho mangiato troppo.*"
+      - id: unisci-imperfetto
+        type: matching
+        prompt: "Unisci ogni verbo alla sua forma di *io* all'imperfetto."
+        pairs:
+          - [mangiare, mangiavo]
+          - [fare, facevo]
+          - [dormire, dormivo]
+          - [bere, bevevo]
+          - [essere, ero]
+      - id: camminavano
+        type: fillBlank
+        prompt: "Completa con l'imperfetto di *camminare* (loro)."
+        text: In passato le persone ___ di più, oggi usano la macchina.
+        blanks: [[camminavano]]
+      - id: ho-iniziato
+        type: multipleChoice
+        prompt: L'anno scorso ___ a fare sport.
+        options:
+          - { text: ho iniziato, correct: true }
+          - {
+              text: iniziavo,
+              feedback: "*L'anno scorso* indica un momento preciso: hai iniziato una volta. Usiamo il passato prossimo, *ho iniziato*.",
+            }
+          - {
+              text: inizio,
+              feedback: "*Inizio* è presente. Con *l'anno scorso* usiamo il passato prossimo: *ho iniziato*.",
+            }
+      - id: ordina-prima
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Prima mangiavo male, ma adesso mangio meglio.
+
+  - slug: salute-e-benessere-modali
+    title: 'Verbi modali: dovresti, potresti, devi'
+    minutes: 8
+    items:
+      - id: dovresti-dormire
+        type: multipleChoice
+        prompt: Ti senti sempre stanco? ___ dormire di più.
+        options:
+          - { text: Dovresti, correct: true }
+          - {
+              text: Dovrei,
+              feedback: '*Dovrei* è la forma di *io*. Per dare un consiglio a te usiamo *dovresti*.',
+            }
+          - {
+              text: Dovresti a,
+              feedback: "Dopo un verbo modale viene subito l'infinito, senza *a*: *Dovresti dormire*.",
+            }
+      - id: devi-mangiare
+        type: multipleChoice
+        prompt: Devi ___ meglio.
+        options:
+          - { text: mangiare, correct: true }
+          - {
+              text: mangi,
+              feedback: "Dopo un verbo modale c'è sempre l'infinito: *Devi mangiare*.",
+            }
+          - {
+              text: mangiato,
+              feedback: "*Mangiato* è il participio. Dopo un verbo modale usiamo l'infinito: *mangiare*.",
+            }
+      - id: infinito
+        type: trueFalse
+        prompt: "Dopo un verbo modale usiamo sempre l'infinito: *Devi mangiare.*"
+        answer: true
+        feedback:
+          correct: 'Giusto! *Dovresti riposarti. Potresti fare yoga. Devi cambiare abitudini.*'
+          incorrect: "Dopo un verbo modale c'è sempre l'infinito: *Devi mangiare*, non *Devi mangi*."
+      - id: forme-modali
+        type: matching
+        prompt: Unisci ogni verbo alla sua forma.
+        pairs:
+          - ['dovere (tu, presente)', devi]
+          - ['dovere (tu, condizionale)', dovresti]
+          - ['potere (tu, presente)', puoi]
+          - ['potere (tu, condizionale)', potresti]
+          - ['dovere (io, condizionale)', dovrei]
+      - id: potresti-fare
+        type: fillBlank
+        prompt: Completa con l'infinito di *fare*.
+        text: Potresti ___ una passeggiata ogni giorno.
+        blanks: [[fare]]
+      - id: dovresti-riposarti
+        type: fillBlank
+        prompt: Completa con *dovere* al condizionale (tu).
+        text: Lavori troppo. ___ riposarti.
+        blanks: [[Dovresti, dovresti, Tu dovresti, tu dovresti]]
+      - id: consiglio-gentile
+        type: multipleChoice
+        prompt: Quale frase dà un consiglio gentile?
+        options:
+          - { text: Dovresti bere meno caffè., correct: true }
+          - {
+              text: Devi bere meno caffè.,
+              feedback: '*Devi* esprime una necessità, è più forte. Il consiglio gentile usa il condizionale: *dovresti*.',
+            }
+          - {
+              text: Ho bevuto meno caffè.,
+              feedback: 'Questa frase è al passato prossimo: racconta un fatto, non dà un consiglio.',
+            }
+      - id: ordina-regolare
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Devi mangiare in modo più regolare.

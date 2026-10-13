@@ -1,0 +1,638 @@
+# Cycle "Umzug" (notebook title: "Verlegung"), converted from the German
+# conversational digital notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher
+# review: see `review` below.
+# Blocks without `lang` are in the course language (German).
+course: de-konversation-2
+slug: umzug
+title: Umzug
+goal: Mit werden über Pläne für einen Umzug sprechen und in einer neuen Stadt kurze Fragen stellen.
+position: 10
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Futur mit werden" and "Fragen in einer neuen Stadt")
+    are NEW: the notebook has no self-study exercises. They were written from the
+    cycle's two skills, its summary, the activity examples and its vocabulary. Please
+    check level, wording and every right answer before students see them.
+  - >-
+    Title: the notebook calls the cycle "Verlegung", a mistranslation of
+    "Relocation" (Verlegung = moving an object, an event or a patient, not moving
+    house). The cycle is now titled "Umzug", which is also the word the activities
+    use. The Quizlet set is still named "Verlegung"; consider renaming it there.
+  - >-
+    Summary, Futur I: the notebook's table says "Du / Wir / Sie werden + Verb". "du
+    werden" is wrong: the form is "du wirst". The summary now has the full table (ich
+    werde, du wirst, er / sie / es wird, wir werden, ihr werdet, sie / Sie werden).
+    Please confirm.
+  - >-
+    Summary: two rules were added from the activities. (1) Präsens + time word also
+    talks about the future (Activity 1: "Ich ziehe nach Portugal." / "Ich ziehe
+    nächstes Jahr nach Berlin."). (2) Verb position: werden is the 2nd element, so after
+    a time word at the start the subject comes after werden (Nächstes Jahr werde ich
+    …), and the infinitive goes to the end. The notebook only says "the main verb is
+    always at the end"; it is now "the infinitive is at the end".
+  - >-
+    Summary, skill 2 ("Soziale Interaktion") had only phrases. A short rule was added:
+    W-question = question word + verb in position 2 (Wo ist …? Wie bezahlt man …?);
+    "man" = people in general; "Kann mir jemand … empfehlen?" = modal verb in position
+    2, infinitive at the end.
+  - >-
+    Corrections: summary example "Ich werde nach Paris ziehen. Wie findet man hier eine
+    Wohnung?" → "… Wie findet man dort eine Wohnung?" (the person is not there yet).
+    Activity 1 template: "Kannst du mir bei ___ helfen?" kept, with a note that bei
+    takes the dative (bei der Wohnungssuche, beim Packen). Activity 3 example "Ich
+    bin neu in der Stadt – wo lässt es sich am besten wohnen?" (correct but above A2)
+    → "Ich bin neu in der Stadt. Wo wohnt man hier am besten?". "Facebook-Gruppe" →
+    "eine Gruppe in sozialen Netzwerken".
+  - >-
+    The summary and the Mori task are in Hebrew in the notebook. The rules are now in
+    simple German (ruleSummary) and the Hebrew explanation is kept as a Hebrew text
+    block. The Mori prompt (one Hebrew prompt in four parts) is split into four German
+    messages, one per part; please check the wording.
+  - >-
+    Warm-up: the notebook has no beginner / intermediate split in this cycle; the six
+    questions and their models are kept as they are. Activity 1 groups ("Gruppe A zieht
+    nach Europa, Gruppe B nach Afrika") are kept as the teacher's example.
+  - >-
+    Vocabulary: nouns now carry their article (die Stadt, das Land, die Wohnung …);
+    "Freunde" → "der Freund / die Freunde". Glosses changed: "werden – יהיה / לעשות
+    בעתיד" → "פועל העזר של העתיד (ich werde … = אני …)"; "Land – מדינה" → "ארץ / מדינה";
+    "nervös – לחוץ" → "לחוץ / עצבני"; "nächste Woche – שבוע הבא" → "בשבוע הבא";
+    "nächstes Jahr – שנה הבאה" → "בשנה הבאה"; "glücklich – שמח" → "שמח / מאושר". "der Umzug"
+    was added (title of the cycle). Please confirm.
+  - >-
+    Times given as ranges are recorded as the upper value (6–7 → 7, 4–5 → 5, 8–9 → 9,
+    2–3 → 3, 7–8 → 8, 3–4 → 4). The Quizlet link lost its funnelUUID tracking
+    parameter. The "Student / Schüler 1/2/3" answer lines are replaced by the answer
+    boxes.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: umzug-unterricht
+    title: 'Unterricht: Umzug'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Umzug
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Futur mit werden
+            description: '*Ich werde nach Berlin ziehen.* Pläne und Vorhersagen'
+          - name: Fragen in einer neuen Stadt
+            description: '*Wo ist …? Wie bezahlt man …? Kann mir jemand … empfehlen?*'
+      - id: quizlet
+        type: externalLink
+        label: Umzug auf Quizlet
+        url: https://quizlet.com/br/1131169038/verlegung-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Vorstellungsrunde
+      - id: intro
+        type: sentenceFrame
+        frame: Ich bin ___. Nächstes Jahr werde ich ___.
+        example: Ich bin Marta. Nächstes Jahr werde ich nach Paris reisen.
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Aufwärmfragen
+      - id: warmup
+        type: discussionQuestions
+        items:
+          - question: Möchtest du umziehen? Wohin?
+            frame: Ja, ich möchte nach … ziehen. / Nein, ich möchte nicht umziehen.
+          - question: Mit wem wirst du umziehen?
+            frame: Ich werde mit meiner Familie / allein umziehen.
+          - question: Wann wirst du umziehen?
+            frame: Ich werde nächstes Jahr / im Juli / in zwei Monaten umziehen.
+          - question: Was wirst du vor dem Umzug tun?
+            frame: Ich werde meine Sachen packen, Geld sparen, die Sprache lernen.
+          - question: Was wird sich nach dem Umzug verbessern? (2 Dinge)
+            frame: Mein Job wird besser sein. Ich werde eine größere Wohnung haben.
+          - question: Warum möchtest du umziehen (oder nicht)?
+            frame: Ich möchte umziehen, weil … / Ich möchte nicht umziehen, weil …
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Aktivitäten
+      - id: act1
+        type: classActivity
+        title: 'Aktivität 1: Wir ziehen um!'
+        skills: [Futur mit werden, Fragen in einer neuen Stadt]
+        minutes: 15
+        steps:
+          - 'Stellt euch vor: Ihr habt euch entschieden, in ein anderes Land zu ziehen.'
+          - 'Lest zusammen die Vorlage. *Ich ziehe …* = Entscheidung, *Ich werde …* = Plan für die Zukunft, *Kannst du mir helfen …?* = Bitte um Hilfe.'
+          - 'Entscheidet in der Gruppe: Wohin zieht ihr? Wie fühlt ihr euch? Was werdet ihr vor dem Umzug tun? Wobei braucht ihr Hilfe?'
+          - Schreibt zusammen eine kurze Nachricht an einen Freund oder eine Freundin.
+          - 'Jede Gruppe liest ihre Nachricht laut vor. Die anderen antworten: Wohin zieht die Gruppe? Was wird sie vor dem Umzug tun?'
+        example: |-
+          *Hey Emma! Ich ziehe nach Portugal. Ich bin sehr aufgeregt.*
+          *Bevor ich gehe, werde ich Portugiesisch lernen und Geld sparen.*
+          *Kannst du mir helfen, eine Wohnung zu finden?*
+      - id: act1-message
+        type: discussionQuestions
+        title: Unsere Nachricht
+        items:
+          - question: Hey ___! Ich ziehe nach ___.
+          - question: Ich bin sehr ___.
+            frame: glücklich / ängstlich / aufgeregt / nervös
+          - question: Bevor ich gehe, werde ich ___.
+          - question: Kannst du mir bei ___ helfen?
+            frame: Kannst du mir beim Packen / bei der Wohnungssuche helfen? / Kannst du mir helfen, … zu …?
+      - id: act2
+        type: classActivity
+        title: 'Aktivität 2: Ich brauche einen Plan'
+        skills: [Futur mit werden]
+        minutes: 16
+        steps:
+          - Schreib einen persönlichen Umzugsplan mit 10 Schritten.
+          - '**Schritt 1** ist dein Leben heute: *Heute …*'
+          - '**Schritt 10** ist dein Traum: *Ich lebe glücklich in …*'
+          - 'Dazwischen: Was wirst du wann tun? Benutze Zeitangaben (*nächsten Monat, in drei Monaten, nächstes Jahr*) und *werden* + Verb. Schreib kurze Sätze.'
+          - 'Lies deinem Partner / deiner Partnerin 3 Schritte vor: Schritt 1, einen Schritt aus der Mitte und Schritt 10.'
+          - 'Der Partner / die Partnerin reagiert kurz: *Das ist ein guter Plan. / Das wird spannend!*'
+        example: |-
+          *1. Heute lebe ich in Tel Aviv.*
+          *2. Nächsten Monat werde ich anfangen, Geld zu sparen.*
+          *3. In drei Monaten werde ich einen Job suchen.*
+          *4. In sechs Monaten werde ich die Sprache lernen.*
+          *5. Nächstes Jahr werde ich nach Madrid ziehen.*
+          *6. Ich werde eine Wohnung finden.*
+          *7. Ich werde neue Leute kennenlernen.*
+          *8. Ich werde in der Stadt arbeiten.*
+          *9. Ich werde mich in meinem neuen Zuhause einleben.*
+          *10. Ich lebe glücklich in meiner neuen Stadt.*
+      - id: act2-plan
+        type: discussionQuestions
+        title: Mein Umzugsplan
+        items:
+          - question: '1. Heute ___.'
+          - question: '2. Nächsten Monat werde ich ___.'
+          - question: '3. In drei Monaten werde ich ___.'
+          - question: '4. ___'
+          - question: '5. ___'
+          - question: '6. ___'
+          - question: '7. ___'
+          - question: '8. ___'
+          - question: '9. ___'
+          - question: '10. Ich lebe glücklich in ___.'
+      - id: act3
+        type: classActivity
+        title: 'Aktivität 3: Kann mir jemand helfen?'
+        skills: [Fragen in einer neuen Stadt]
+        minutes: 22
+        steps:
+          - 'Stell dir vor: Du bist heute in einer neuen Stadt angekommen. Du kennst niemanden und brauchst Hilfe.'
+          - Lest zusammen die Beispiele. Achtet auf kurze Sätze, einen höflichen Ton und eine klare Frage.
+          - 'Schreib eine kurze Nachricht für eine Gruppe in sozialen Netzwerken oder ein Stadtforum: einen Gruß, eine kurze Information über dich, eine klare Frage.'
+          - 'Tauscht die Texte mit einem Partner / einer Partnerin. Prüft: Ist die Nachricht kurz? Ist sie höflich? Ist die Frage klar? Macht einen Verbesserungsvorschlag.'
+          - Einige lesen ihre Nachricht laut vor.
+        example: |-
+          *Hallo! Ich bin gerade nach London gezogen. Kann mir jemand einen guten Supermarkt in der Nähe empfehlen?*
+          *Hallo zusammen! Wie bezahlt man hier das Parken?*
+          *Ich bin neu in der Stadt. Wo wohnt man hier am besten?*
+      - id: act3-starters
+        type: wordBank
+        words:
+          - Hallo!
+          - Hallo zusammen!
+          - Ich bin neu in der Stadt.
+          - Ich bin gerade nach ___ gezogen.
+          - Kann mir jemand ___ empfehlen?
+          - Wo ist …?
+          - Wie bezahlt man hier …?
+      - id: act3-message
+        type: discussionQuestions
+        title: Meine Nachricht
+        items:
+          - question: Hallo! Ich bin neu in ___.
+          - question: Kann mir jemand ___ empfehlen?
+      - id: act4
+        type: classActivity
+        title: 'Aktivität 4: Was werde ich dort tun?'
+        skills: [Futur mit werden]
+        minutes: 22
+        steps:
+          - Wähl eine Stadt in einem anderen Land, in die du ziehen möchtest.
+          - Lest zusammen das Beispiel. Markiert *werden* + Verb und die Zeitangaben (*jeden Morgen, am Wochenende, nach der Arbeit*).
+          - 'Schreib 5–6 Sätze über dein Leben in der neuen Stadt: den Ort, mindestens 4 verschiedene Verben und mindestens 3 Zeitangaben.'
+          - 'Lies deinen Text einem Partner / einer Partnerin vor. Er / Sie stellt eine kurze Frage: *Mit wem wirst du dort arbeiten? Was wirst du am Abend machen?*'
+          - Einige lesen ihren Text in der Klasse vor.
+        example: |-
+          *Ich werde nach Paris ziehen.*
+          *Jeden Morgen werde ich zum Bäcker gehen.*
+          *Ich werde viel Käse essen und Kaffee trinken.*
+          *Am Wochenende werde ich den Eiffelturm besuchen.*
+          *Ich werde mit Franzosen arbeiten und nach der Arbeit mit Freunden etwas unternehmen.*
+      - id: act4-text
+        type: discussionQuestions
+        title: Mein neues Leben
+        items:
+          - question: Ich werde nach ___ ziehen.
+          - question: Jeden Morgen werde ich ___.
+          - question: Am Nachmittag werde ich ___.
+          - question: Am Abend werde ich ___.
+          - question: Am Wochenende werde ich ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Zwei Fertigkeiten in diesem Zyklus: **Futur mit werden** (Aktivitäten 1, 2 und
+          4) und **Fragen in einer neuen Stadt** (Aktivitäten 1 und 3). Das Heft hat
+          keinen Stundenplan für die Auswahl der Aktivitäten (90 Minuten); wähle nach
+          Zeit und Gruppe.
+      - id: n-intro
+        anchor: intro
+        text: 'Gib zuerst dein Beispiel. Schülerbeispiele: *Ich bin David. Nächstes Jahr werde ich in eine andere Stadt ziehen.* / *Ich bin Aya. Nächstes Jahr werde ich Italienisch lernen.*'
+      - id: n-warmup
+        anchor: warmup
+        text: Stell jedem Schüler mindestens zwei Fragen. Die Antworten erscheinen unter jeder Frage.
+      - id: n-act1
+        anchor: act1
+        minutes: 15
+        text: >-
+          Teile die Klasse in zwei große Gruppen (zum Beispiel: Gruppe A zieht nach
+          Europa, Gruppe B zieht nach Afrika) und schreib die Vorlage gut sichtbar an die
+          Tafel. Situation erklären: 2 Minuten. Vorlage gemeinsam lesen und die
+          Futurformen markieren: 1 Minute. Schreiben in Gruppen: 7 Minuten. Vorlesen und
+          Teilen: 5 Minuten. Geh herum, hilf beim Wortschatz und korrigiere sanft die
+          Form von *werden*. Beim Vorlesen hebst du gute Beispiele mit *werden* hervor.
+          Hinweis: *bei* + Dativ (*bei der Wohnungssuche, beim Packen*).
+      - id: n-act2
+        anchor: act2
+        minutes: 16
+        text: >-
+          Aufgabe erklären: 2 Minuten. Schreib an die Tafel: *Schritt 1: Heute …* und
+          *Schritt 10: Ich lebe glücklich in …*. Modell zeigen: 2 Minuten (das Beispiel
+          oben). Betone: kurze Sätze, immer wieder *werden* + Verb. Einzelarbeit: 9
+          Minuten. Hilf bei Zeitangaben, Wortschatz (Job, Wohnung, Sprache, Geld) und bei
+          der Form von *werden*. Teilen in Paaren: 3 Minuten.
+      - id: n-act3
+        anchor: act3
+        minutes: 22
+        text: >-
+          Situation erklären: 3 Minuten; schreib typische Satzanfänge an die Tafel
+          (*Hallo! / Hallo zusammen! / Ich bin neu in der Stadt. / Ich bin gerade nach
+          ___ gezogen.*). Modelle lesen: 2 Minuten. Einzelarbeit: 8 Minuten. Partner-Check:
+          5 Minuten. Vorlesen und Feedback: 4 Minuten. Lobe klare Formulierungen,
+          korrigiere kleine Fehler gemeinsam und schreib eine „beste Version“ an die
+          Tafel.
+      - id: n-act4
+        anchor: act4
+        minutes: 22
+        text: >-
+          Traumstadt wählen: 3 Minuten; schreib die Satzanfänge an die Tafel. Modell
+          lesen: 2 Minuten. Einzelarbeit: 9 Minuten; hilf beim Wortschatz (arbeiten,
+          lernen, essen, gehen, treffen, wohnen) und bei *werden*. Partneraustausch: 4
+          Minuten. Teilen in der Klasse: 4 Minuten. Lobe abwechslungsreiche Verben und gute
+          Zeitangaben.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: umzug-zusammenfassung
+    title: Zusammenfassung
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Was wir heute gelernt haben
+      - id: rules-futur
+        type: ruleSummary
+        skill: Futur mit werden
+        rules:
+          - text: 'Über Pläne und die Zukunft sprechen wir mit **werden** + Infinitiv. Der Infinitiv steht **am Ende** des Satzes.'
+            examples:
+              [
+                Ich werde nach Berlin ziehen.,
+                Ich werde einen neuen Job suchen.,
+                Wir werden nächstes Jahr umziehen.,
+              ]
+          - text: '*werden* steht an **Position 2**. Steht eine Zeitangabe am Anfang, kommt das Subjekt nach *werden*.'
+            examples:
+              [Nächsten Monat werde ich Geld sparen., In einem Jahr werde ich nach Spanien ziehen.]
+          - text: 'Zeitangaben für die Zukunft: *heute, morgen, nächste Woche, nächsten Monat, nächstes Jahr, in zwei Monaten, bald*.'
+          - text: 'Auch das **Präsens** mit einer Zeitangabe spricht über die Zukunft, besonders bei Entscheidungen.'
+            examples: [Ich ziehe nach Portugal., Ich ziehe nächstes Jahr nach Berlin.]
+      - id: werden-table
+        type: table
+        caption: werden im Präsens
+        header: [Person, werden, Beispiel]
+        rows:
+          - [ich, werde, Ich werde Deutsch lernen.]
+          - [du, wirst, Du wirst eine Wohnung finden.]
+          - [er / sie / es, wird, Sie wird in Paris arbeiten.]
+          - [wir, werden, Wir werden nächstes Jahr umziehen.]
+          - [ihr, werdet, Ihr werdet neue Leute kennenlernen.]
+          - [sie / Sie, werden, Sie werden bald umziehen.]
+      - id: futur-he
+        type: text
+        lang: he
+        text: >-
+          בגרמנית מדברים על העתיד בעזרת הפועל werden + פועל בצורת המקור (Infinitiv), והמקור
+          עומד תמיד בסוף המשפט: Ich werde nach Berlin ziehen – אני אעבור לברלין. הפועל werden
+          עומד במקום השני במשפט; אם המשפט מתחיל במילת זמן, הנושא בא אחריו: Nächstes Jahr
+          werde ich … אפשר לדבר על העתיד גם בהווה עם מילת זמן: Ich ziehe nächstes Jahr nach
+          Berlin.
+      - id: rules-fragen
+        type: ruleSummary
+        skill: Fragen in einer neuen Stadt
+        rules:
+          - text: 'In einer neuen Stadt stellen wir **kurze, klare Fragen**. In der W-Frage steht das Verb an **Position 2**, direkt nach dem Fragewort.'
+            examples: [Wo ist der nächste Supermarkt?, Wie bezahlt man hier den Bus?]
+          - text: '**man** = die Leute allgemein (auf Hebräisch: איך משלמים …?).'
+            examples: [Wie findet man hier eine Wohnung?]
+          - text: '*Kann mir jemand … empfehlen?* Das Modalverb *kann* steht an Position 2, der Infinitiv *empfehlen* am Ende.'
+            examples: [Ich bin neu in der Stadt. Kann mir jemand ein gutes Café empfehlen?]
+          - text: 'Zukunft und Frage zusammen:'
+            examples:
+              [
+                Ich werde nächste Woche umziehen. Wo kann ich gut wohnen?,
+                Ich werde nach Paris ziehen. Wie findet man dort eine Wohnung?,
+              ]
+      - id: fragen-examples
+        type: examples
+        items:
+          - { text: Wo ist …?, gloss: איפה נמצא…? }
+          - { text: Wie bezahlt man …?, gloss: איך משלמים…? }
+          - { text: Kann mir jemand … empfehlen?, gloss: מישהו יכול להמליץ לי על…? }
+          - { text: Ich bin neu in der Stadt., gloss: אני חדש / חדשה בעיר. }
+      - id: fragen-he
+        type: text
+        lang: he
+        text: >-
+          המבנים האלה מאפשרים לכם לדבר על תוכניות לעתיד, לשאול שאלות אמיתיות בחיים ולתקשר
+          בביטחון בעיר חדשה. כדאי להשתמש במשפטים קצרים וברורים.
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Wiederhole die zwei Fertigkeiten mit der Gruppe und bitte um ein neues Beispiel für jede Regel.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: umzug-hausaufgaben
+    title: Hausaufgaben mit Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Hausaufgaben mit Mori
+      - id: how
+        type: text
+        text: 'Öffne den Chat mit Mori, kopiere eine Nachricht und schick sie ab. Mori stellt dir Fragen; beantworte alle. Ziel: das Futur mit *werden*, über einen Umzug sprechen und Fragen in einer neuen Stadt stellen.'
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Teil 1: Zukunft und Umzug'
+        message: |-
+          Hallo Mori! Du bist mein Deutschlehrer, Niveau A2. Stell mir bitte kurze, klare Fragen auf Deutsch über einen Umzug, eine nach der anderen:
+          Möchtest du umziehen? Warum oder warum nicht?
+          Wohin wirst du ziehen? Wann genau?
+          Mit wem wirst du umziehen?
+          Was wirst du vor dem Umzug tun?
+          Was wird sich nach dem Umzug verbessern? Nenne zwei Dinge.
+          Am Ende bitte mich, diesen Satz zu ergänzen: In der Zukunft werde ich …
+          Nach jeder Antwort: Wenn ich einen Fehler mache, korrigiere mich freundlich, gib mir einen richtigen Modellsatz und stell gleich die nächste Frage.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Teil 2: Leben in einer neuen Stadt'
+        message: |-
+          Hallo Mori! Stell dir vor, ich bin schon in einer neuen Stadt. Stell mir diese Fragen, eine nach der anderen:
+          Wo ist der nächste Supermarkt?
+          Wie bezahlt man hier den Bus?
+          Wo kann ich hier gut wohnen?
+          Wo kann ich neue Leute kennenlernen?
+          Kannst du mir ein gutes Café empfehlen?
+          Ich möchte kurze, klare Antworten geben. Korrigiere mich freundlich und gib mir einen richtigen Modellsatz.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Teil 3: Mein Mini-Umzugsplan'
+        intro: 'Beispiel: *Heute lebe ich in … Nächsten Monat werde ich … In sechs Monaten werde ich … Nächstes Jahr werde ich nach … ziehen. Ich werde glücklich in meiner neuen Stadt leben.*'
+        message: Hallo Mori! Erstelle bitte mit mir einen 5-Schritte-Plan für meinen Umzug, von heute bis zur neuen Stadt. Hilf mir, Sätze mit Zeitangaben und werden zu bauen, und korrigiere meine Fehler.
+      - id: mori-4
+        type: aiTutorPrompt
+        title: 'Teil 4: Kurz schreiben'
+        intro: 'Beispiel: *Ich werde nächstes Jahr nach Berlin ziehen. Ich werde vor dem Umzug Geld sparen. Ich werde die Sprache lernen. Wo ist der nächste Supermarkt? Wie bezahlt man hier den Bus?*'
+        message: Hallo Mori! Ich schreibe dir jetzt 3 Sätze im Futur über meinen Umzug und 2 praktische Fragen für eine neue Stadt. Bitte korrigiere sie und zeig mir eine bessere Version.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Tipps
+        text: |-
+          Du möchtest mehr Fragen? Schick: **Bitte stell mir mehr Fragen!**
+          Du verstehst eine Erklärung nicht? Schick: **Kannst du es mir auf Hebräisch erklären, aber mit dem Satz auf Deutsch?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: umzug-uebung
+    book: workbook
+    title: 'Übung: Umzug'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Übe die zwei Fertigkeiten des Zyklus. Jede Antwort wird sofort korrigiert, und du kannst es noch einmal versuchen.
+      - id: ex-futur
+        type: activity
+        activity: umzug-futur
+      - id: ex-fragen
+        type: activity
+        activity: umzug-fragen
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: umzug-wortschatz
+    title: Wortschatz
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Wörter zum Umzug
+        glossLang: he
+        link: https://quizlet.com/br/1131169038/verlegung-flash-cards/
+        items: &umzug-words
+          - { term: der Umzug, gloss: מעבר דירה }
+          - { term: umziehen, gloss: לעבור דירה }
+          - { term: die Stadt, gloss: עיר }
+          - { term: das Land, gloss: ארץ / מדינה }
+          - { term: die Wohnung, gloss: דירה }
+          - { term: die Nachbarschaft, gloss: שכונה }
+          - { term: die Arbeit / der Job, gloss: עבודה }
+          - { term: suchen, gloss: לחפש }
+          - { term: finden, gloss: למצוא }
+          - { term: lernen, gloss: ללמוד }
+          - { term: die Sprache, gloss: שפה }
+          - { term: Geld sparen, gloss: לחסוך כסף }
+          - { term: der Plan, gloss: תוכנית }
+          - { term: die Zukunft, gloss: עתיד }
+          - { term: werden, gloss: פועל העזר של העתיד (ich werde … = אני …) }
+          - { term: heute, gloss: היום }
+          - { term: morgen, gloss: מחר }
+          - { term: nächste Woche, gloss: בשבוע הבא }
+          - { term: nächstes Jahr, gloss: בשנה הבאה }
+          - { term: bald, gloss: בקרוב }
+          - { term: glücklich, gloss: שמח / מאושר }
+          - { term: nervös, gloss: לחוץ / עצבני }
+          - { term: aufgeregt, gloss: נרגש }
+          - { term: die Hilfe, gloss: עזרה }
+          - { term: fragen, gloss: לשאול }
+          - { term: empfehlen, gloss: להמליץ }
+          - { term: der Supermarkt, gloss: סופרמרקט }
+          - { term: der Bus, gloss: אוטובוס }
+          - { term: bezahlen, gloss: לשלם }
+          - { term: wohnen, gloss: לגור }
+          - { term: neu, gloss: חדש }
+          - { term: der Freund / die Freunde, gloss: חבר / חברים }
+          - { term: treffen, gloss: לפגוש }
+          - { term: arbeiten, gloss: לעבוד }
+          - { term: gehen, gloss: ללכת }
+          - { term: leben, gloss: לחיות }
+          - { term: das Stadtzentrum, gloss: מרכז העיר }
+
+vocabulary:
+  - slug: umzug
+    title: Umzug
+    items: *umzug-words
+
+activities:
+  - slug: umzug-futur
+    title: 'Futur mit werden: Ich werde umziehen'
+    minutes: 8
+    items:
+      - id: ich-werde
+        type: multipleChoice
+        prompt: Ich ___ nach Berlin ziehen.
+        options:
+          - { text: werde, correct: true }
+          - {
+              text: wird,
+              feedback: '*wird* gehört zu *er / sie / es*. Mit *ich* sagen wir *ich werde*.',
+            }
+          - {
+              text: werden,
+              feedback: '*werden* gehört zu *wir* und *sie / Sie*. Mit *ich* sagen wir *ich werde*.',
+            }
+      - id: wirst-werden
+        type: fillBlank
+        prompt: Ergänze die richtige Form von *werden*.
+        text: Du ___ eine Wohnung finden. Wir ___ nächstes Jahr umziehen.
+        blanks: [[wirst], [werden]]
+        wordBank: [werde, wirst, wird, werden]
+      - id: personen
+        type: matching
+        prompt: Welche Form von *werden* passt?
+        pairs:
+          - [ich, werde]
+          - [du, wirst]
+          - [er / sie / es, wird]
+          - [wir, werden]
+          - [ihr, werdet]
+      - id: zeitangabe-zuerst
+        type: multipleChoice
+        prompt: Welcher Satz ist richtig?
+        options:
+          - { text: Nächstes Jahr werde ich nach Spanien ziehen., correct: true }
+          - {
+              text: Nächstes Jahr ich werde nach Spanien ziehen.,
+              feedback: '*werden* steht an Position 2. Nach *Nächstes Jahr* kommt zuerst *werde*, dann *ich*.',
+            }
+          - {
+              text: Nächstes Jahr werde ich ziehen nach Spanien.,
+              feedback: 'Der Infinitiv steht am Ende: *… nach Spanien ziehen*.',
+            }
+      - id: infinitiv-ende
+        type: trueFalse
+        prompt: 'Im Satz *Ich werde einen neuen Job suchen.* steht der Infinitiv *suchen* am Ende.'
+        answer: true
+        feedback:
+          correct: Richtig! *werden* an Position 2, der Infinitiv am Ende.
+          incorrect: 'Doch: *Ich werde einen neuen Job suchen.* Der Infinitiv *suchen* steht am Ende.'
+      - id: praesens-zukunft
+        type: trueFalse
+        prompt: 'Der Satz *Ich ziehe nächsten Monat nach Madrid.* spricht über die Zukunft.'
+        answer: true
+        feedback:
+          correct: Richtig! Präsens + Zeitangabe (*nächsten Monat*) kann über die Zukunft sprechen.
+          incorrect: 'Das Verb ist im Präsens, aber *nächsten Monat* zeigt die Zukunft. Präsens + Zeitangabe = Zukunft.'
+      - id: bevor-lernen
+        type: fillBlank
+        prompt: 'Ergänze: *werden* + Infinitiv.'
+        text: Bevor ich gehe, ___ ich Portugiesisch ___.
+        blanks: [[werde], [lernen]]
+        wordBank: [werde, wird, lernen, lerne]
+      - id: ordne-sparen
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Nächsten Monat werde ich Geld sparen.
+
+  - slug: umzug-fragen
+    title: 'Fragen in einer neuen Stadt: Wo ist …?'
+    minutes: 8
+    items:
+      - id: einkaufen
+        type: multipleChoice
+        prompt: Du möchtest Lebensmittel kaufen. Was fragst du?
+        options:
+          - { text: Wo ist der nächste Supermarkt?, correct: true }
+          - {
+              text: Wie bezahlt man hier den Bus?,
+              feedback: 'Diese Frage ist über den Bus. Für Lebensmittel fragst du: *Wo ist der nächste Supermarkt?*',
+            }
+          - {
+              text: Wo kann ich neue Leute kennenlernen?,
+              feedback: 'Diese Frage ist über neue Leute. Für Lebensmittel fragst du: *Wo ist der nächste Supermarkt?*',
+            }
+      - id: wie-bezahlt
+        type: fillBlank
+        prompt: Ergänze das Fragewort.
+        text: ___ bezahlt man hier den Bus?
+        blanks: [[Wie]]
+        wordBank: [Wie, Wo, Wer]
+      - id: situationen
+        type: matching
+        prompt: Welche Frage passt zu welcher Situation?
+        pairs:
+          - [Du suchst ein Café., Kann mir jemand ein gutes Café empfehlen?]
+          - [Du willst mit dem Bus fahren., Wie bezahlt man hier den Bus?]
+          - [Du kennst niemanden., Wo kann ich neue Leute kennenlernen?]
+          - [Du suchst eine Wohnung., Wo kann ich hier gut wohnen?]
+      - id: empfehlen
+        type: multipleChoice
+        prompt: Kann mir jemand einen guten Supermarkt ___?
+        options:
+          - { text: empfehlen, correct: true }
+          - { text: empfiehlt, feedback: 'Nach *kann* kommt der Infinitiv am Ende: *empfehlen*.' }
+          - {
+              text: zu empfehlen,
+              feedback: 'Nach *kann* steht der Infinitiv ohne *zu*: *Kann mir jemand … empfehlen?*',
+            }
+      - id: wortstellung
+        type: multipleChoice
+        prompt: Welche Frage ist richtig?
+        options:
+          - { text: Wie bezahlt man hier das Parken?, correct: true }
+          - {
+              text: Wie man bezahlt hier das Parken?,
+              feedback: 'In der W-Frage steht das Verb direkt nach dem Fragewort: *Wie bezahlt man …?*',
+            }
+          - {
+              text: Wie man hier das Parken bezahlt?,
+              feedback: 'In der W-Frage steht das Verb an Position 2: *Wie bezahlt man hier das Parken?*',
+            }
+      - id: gute-nachricht
+        type: trueFalse
+        prompt: 'Eine gute Nachricht in einer Stadtgruppe hat einen Gruß, eine kurze Information über dich und eine klare Frage.'
+        answer: true
+        feedback:
+          correct: 'Richtig! Zum Beispiel: *Hallo! Ich bin neu in der Stadt. Wo ist der nächste Supermarkt?*'
+          incorrect: 'Doch: Gruß + kurze Information + klare Frage. *Hallo! Ich bin neu in der Stadt. Wo ist der nächste Supermarkt?*'
+      - id: neu-in-der-stadt
+        type: fillBlank
+        prompt: Ergänze.
+        text: Hallo zusammen! Ich bin ___ in der Stadt.
+        blanks: [[neu]]
+      - id: ordne-supermarkt
+        type: reorderSentence
+        prompt: Ordne die Wörter.
+        sentence: Wo ist der nächste Supermarkt?

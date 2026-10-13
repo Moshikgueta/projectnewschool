@@ -1,0 +1,108 @@
+# The New School learning platform (newschool-learning-platform/): the full
+# check suite on every pull request and every push to main that touches it.
+# The platform's own .github/ folder is kept for when it moves to its own
+# repository; GitHub only runs workflows from the repository root.
+name: Platform CI
+
+on:
+  pull_request:
+    paths: ['newschool-learning-platform/**', '.github/workflows/platform-ci.yml']
+  push:
+    branches: [main]
+    paths: ['newschool-learning-platform/**', '.github/workflows/platform-ci.yml']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: platform-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: newschool-learning-platform
+
+jobs:
+  checks:
+    name: Lint, types, unit tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: newschool-learning-platform/package.json
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: newschool-learning-platform/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm format:check
+      - run: pnpm check:tokens
+      - run: pnpm content:validate
+      - run: pnpm test
+      - name: Dependency audit (high and critical)
+        run: pnpm audit --prod --audit-level high
+
+  database-and-e2e:
+    name: Database rules, API authorization, build, end-to-end
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      APP_ENV: local
+      NEXT_PUBLIC_SITE_URL: http://localhost:3000
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: newschool-learning-platform/package.json
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: newschool-learning-platform/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+
+      - name: Start local Supabase (migrations + seed)
+        run: pnpm exec supabase start -x studio,imgproxy,vector,logflare,edge-runtime,realtime
+
+      - name: Export local Supabase settings
+        # These are the Supabase CLI's fixed local-development values, not secrets.
+        run: |
+          STATUS=$(pnpm exec supabase status -o json 2>/dev/null)
+          {
+            echo "NEXT_PUBLIC_SUPABASE_URL=$(echo "$STATUS" | jq -r .API_URL)"
+            echo "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=$(echo "$STATUS" | jq -r .PUBLISHABLE_KEY)"
+            echo "SUPABASE_SECRET_KEY=$(echo "$STATUS" | jq -r .SECRET_KEY)"
+            # A throwaway pepper per run: the tests issue their own codes.
+            echo "STUDENT_CODE_PEPPER=$(openssl rand -hex 32)"
+          } >> "$GITHUB_ENV"
+
+      - name: Generated database types are up to date
+        run: |
+          pnpm db:types
+          git diff --exit-code src/server/db.types.ts
+
+      - name: Row Level Security tests (pgTAP)
+        run: pnpm test:db
+
+      - name: API authorization tests
+        run: pnpm test:api
+
+      - name: Content import (CI database; proves imports are repeatable)
+        run: pnpm content:import && pnpm content:import
+
+      - run: pnpm build
+
+      - run: pnpm exec playwright install --with-deps chromium
+      - name: End-to-end tests
+        run: pnpm test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: newschool-learning-platform/playwright-report/
+          retention-days: 7

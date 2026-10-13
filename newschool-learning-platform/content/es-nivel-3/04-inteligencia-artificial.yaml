@@ -1,0 +1,642 @@
+# Cycle "Inteligencia artificial", converted from the Spanish level 3 digital notebook
+# (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Spanish).
+course: es-nivel-3
+slug: inteligencia-artificial
+title: Inteligencia artificial
+goal: Hacer predicciones con el futuro simple y hablar de situaciones imaginarias con el condicional.
+position: 4
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Futuro simple" and "Condicional") are NEW: the
+    notebook has no self-study exercises. They were written from the cycle's two
+    skills, its summary rules, the class examples and its vocabulary. Please check
+    level, wording and every right answer before students see them.
+  - >-
+    Summary, skill 1 (wrong rule): the notebook calls "va a + infinitivo" the "futuro
+    simple". In Spanish, ir a + infinitivo is the periphrastic future (plans); the
+    futuro simple is infinitive + -é, -ás, -á, -emos, -éis, -án (será, cambiará,
+    podrá), with irregular stems (tendrá, podrá, hará, dirá, sabrá). The rule now
+    explains both forms, and a table of the futuro simple was added. The homework
+    instruction "Escribe 3 frases en futuro con va a o será" now asks for futuro
+    simple or ir a + infinitivo. Please confirm.
+  - >-
+    Summary, skill 2: the rule "Si + imperfecto de subjuntivo, condicional simple" is
+    correct and kept. A table of the condicional (regular and irregular) and of the
+    imperfecto de subjuntivo forms used in class (fuera, tuviera, pudiera, hubiera,
+    existiera, enseñara, hicieran) was added, plus the rule that the condicional never
+    goes right after "si".
+  - >-
+    Corrections: "¿Chat GPT podrá…?" → "¿ChatGPT podrá…?"; "chanson francesa" (French
+    word) → "canción francesa"; warm-up question "¿Qué tiene que hacer la tecnología
+    para calificar como IA?" (calque of "qualify as") → "para considerarse IA";
+    "Inteligencia artificial" capitalisation unified; "Si la IA enseñara sola, los
+    estudiantes perderían motivación" → "perderían la motivación" (as in Activity 4).
+  - >-
+    Vocabulary: "Predicción, נבואה" (= prophecy) → "תחזית"; "Android" (the phone
+    system) → "Androide" (humanoid robot), gloss kept; "Debate, דיון" → "דיבייט /
+    ויכוח"; "Condicional, תנאי" → "Condicional (gramática), משפט תנאי";
+    "Inteligencia artificial" → "Inteligencia artificial (IA)". Please confirm.
+  - >-
+    Activity 2 says students have 10 minutes to prepare, but the whole activity is
+    20 minutes and every student then has 2 minutes to present; with a big group it
+    will take longer. Kept as in the source; the teacher note says so.
+  - >-
+    Homework: the "Pregunta de Mori" parts are turned into messages the student sends
+    to Mori (Mori asks the question, the student answers, Mori corrects). The bonus
+    (1-minute audio) is kept as an optional message; the line "Envía tu tarea por
+    correo o compártela directamente en clase" was left out because the platform has
+    the Mori chat; please tell students how to hand in the audio if you want it.
+  - >-
+    The Quizlet link is kept without its tracking parameters (?i=…&x=…). Times given
+    as ranges are recorded as the upper value (Quizlet 5–10 → 10, preguntas 20–30 →
+    30, Actividad 4 20–25 → 25, preparation 8–10 → 10). The "Respuesta de alumno
+    1/2/3" lines are replaced by the answer boxes. The notebook's "Fecha" and
+    "Participantes" fields were left out. Activities 1 and 3 use ChatGPT; no link is
+    given in the source and none was added.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: inteligencia-artificial-clase
+    title: 'Clase: Inteligencia artificial'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Inteligencia artificial
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Futuro simple
+            description: 'Predicciones y acciones futuras: *será, cambiará, podrá, va a cambiar*'
+          - name: Condicional
+            description: 'Situaciones posibles o imaginarias: *Si la IA enseñara sola, los estudiantes perderían la motivación.*'
+      - id: quizlet
+        type: externalLink
+        label: Inteligencia artificial en Quizlet
+        url: https://quizlet.com/br/1073072642/clase-ia-actualizada-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Ronda de introducción
+      - id: intro
+        type: sentenceFrame
+        frame: Soy ___. Creo que en 10 años la inteligencia artificial podrá reemplazar ___.
+        example: Soy Marta. Creo que en 10 años la IA podrá reemplazar a los malos profesores de español (¡pero no a los buenos!).
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Preguntas
+      - id: warmup-1
+        type: discussionQuestions
+        items:
+          - question: ¿Qué tiene que hacer la tecnología para considerarse IA?
+            frame: Para considerarse IA, la tecnología tiene que ___.
+      - id: ia-definition
+        type: callout
+        tone: info
+        title: ¿Qué es la inteligencia artificial?
+        text: |-
+          La definición general de **inteligencia artificial (IA)** es la capacidad de la tecnología para imitar la inteligencia humana. Según la investigación, para lograrlo la IA debe tener estas 3 habilidades:
+          1. **Aprender** cosas nuevas y poder recopilar nueva información.
+          2. **Resolver problemas**, usando lo que aprendió para llegar a conclusiones sobre cómo resolver problemas nuevos.
+          3. **Comprender el lenguaje natural**: puede comprender una solicitud humana hecha en un lenguaje normal y no codificado.
+      - id: warmup-2
+        type: discussionQuestions
+        items:
+          - question: ¿Qué ejemplo de IA usas en tu día a día?
+            frame: En mi día a día uso ___.
+          - question: ¿La IA cambiará tu vida en el futuro? Da un ejemplo.
+            frame: Sí, la IA cambiará ___. Por ejemplo, ___. / No, no cambiará mi vida porque ___.
+          - question: ¿La vida sin IA sería mejor o peor? Explica con un ejemplo.
+            frame: La vida sin IA sería ___ porque ___.
+          - question: ¿Cómo sería el mundo hoy si no existiera la IA?
+            frame: Si no existiera la IA, el mundo ___.
+          - question: ¿Cómo será el mundo con la IA dentro de 10 años?
+            frame: Dentro de 10 años, el mundo ___.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Actividades
+      - id: act1
+        type: classActivity
+        title: 'Actividad 1: ¿ChatGPT podrá escribir una canción de amor?'
+        skills: [Futuro simple, Condicional]
+        minutes: 15
+        steps:
+          - 'Elige **una persona o una mascota** y di dos características sobre ella (*es divertida y un poco perezosa*).'
+          - 'Di qué estilo de canción de amor te gustaría: *rap, balada de rock, pop, canción francesa…* Usa el futuro: *Mi canción será un rap sobre mi perro, que es grande y cariñoso.*'
+          - El profesor elige una o dos propuestas (las más creativas o divertidas) y le pide a ChatGPT una canción corta.
+          - El profesor comparte la pantalla y lee la canción en voz alta.
+          - 'Comenten la canción: *¿La canción refleja bien las características? ¿Qué cambiarías si fueras el compositor?*'
+        example: |-
+          *Mi canción será una balada de rock sobre mi gata, que es elegante y un poco loca.*
+          *Si yo escribiera la canción, usaría menos versos.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Mi canción
+        items:
+          - question: Mi canción será ___ sobre ___, que es ___ y ___.
+          - question: Si yo fuera el compositor, ___.
+            frame: Si yo escribiera la canción, usaría… / cambiaría…
+      - id: act2
+        type: classActivity
+        title: 'Actividad 2: Sobrevivir a una distopía de la IA'
+        skills: [Condicional]
+        minutes: 20
+        steps:
+          - 'Imagina que la IA se apodera del mundo y ustedes son los últimos supervivientes. Deben elegir quién ocupará los roles clave para salvar a la humanidad.'
+          - 'En grupo, hagan una lista de los puestos necesarios: líder, juez, policía, médico, educador, constructor…'
+          - Cada estudiante elige **un rol diferente** y prepara su candidatura (10 minutos) con el **condicional** y **tres argumentos**.
+          - Cada estudiante tiene **2 minutos** para defender su candidatura ante el grupo.
+          - Se vota rol por rol. Si un candidato obtiene la mayoría, gana. Si no, cada estudiante escribe en secreto quién debería ocupar el puesto, y el más votado obtiene el rol.
+        example: |-
+          *Si hubiera una distopía, yo sería el mejor médico porque…*
+          *1. Tendría mucha paciencia.*
+          *2. Podría ayudar a los demás a sobrevivir.*
+          *3. Sería muy organizado en situaciones de crisis.*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Mi candidatura
+        items:
+          - question: Si hubiera una distopía, yo sería el mejor / la mejor ___ porque…
+          - question: 'Argumento 1: ___'
+            frame: Tendría…
+          - question: 'Argumento 2: ___'
+            frame: Podría…
+          - question: 'Argumento 3: ___'
+            frame: Sería…
+      - id: act3
+        type: classActivity
+        title: 'Actividad 3: Historias locas con IA'
+        skills: [Futuro simple, Condicional]
+        minutes: 20
+        steps:
+          - Formen grupos pequeños (2–3 personas). Cada grupo usa ChatGPT en el celular o la computadora.
+          - 'Escriban un primer mensaje para ChatGPT: *Escribe el inicio de una historia de ciencia ficción sobre un futuro donde la IA controla el mundo.*'
+          - 'Pídanle a ChatGPT que continúe la historia con el futuro o el condicional: *Continúa la historia con 5 frases usando el futuro (será, cambiará, viviremos…).* / *Reescribe la historia como si fuera hipotética, usando el condicional (sería, tendría, podría…).*'
+          - Escriban **dos frases originales en futuro** para añadir a la historia y **dos frases originales en condicional** para imaginar alternativas.
+          - Cada grupo lee su mini-historia final (ChatGPT + frases propias). La clase vota la historia más creativa, divertida o convincente.
+      - id: act3-sentences
+        type: discussionQuestions
+        title: Nuestras frases
+        items:
+          - question: 'Futuro 1: ___'
+          - question: 'Futuro 2: ___'
+          - question: 'Condicional 1: ___'
+          - question: 'Condicional 2: ___'
+      - id: act4
+        type: classActivity
+        title: 'Actividad 4: Debate sobre el futuro de los profesores de idiomas frente a la IA'
+        skills: [Futuro simple, Condicional]
+        minutes: 25
+        steps:
+          - 'Tema del debate: *En 10 años nadie necesitará profesores de idiomas porque serán reemplazados por la IA.*'
+          - 'Se forman dos grupos: el grupo A está **a favor** de la afirmación y el grupo B está **en contra**.'
+          - 'Cada grupo decide sus argumentos principales y reparte los roles: un estudiante presenta los argumentos, otro responde a la otra parte y otro resume el caso. Todos deben participar.'
+          - Usen frases en **futuro** y en **condicional** (mira los ejemplos).
+          - Debatan con los turnos de la tabla de abajo.
+          - 'Al final, comenten: *¿Quién fue más convincente? ¿Qué argumentos fueron más lógicos? ¿Cuáles fueron más emocionales o persuasivos?*'
+        example: |-
+          Futuro: *La IA será más rápida que los profesores.*
+          Condicional: *Si la IA enseñara sola, los estudiantes perderían la motivación.*
+      - id: act4-turns
+        type: table
+        caption: Turnos del debate
+        header: [Turno, Grupo, Tiempo máximo]
+        rows:
+          - ['1. Presentación', A (a favor), 3 minutos]
+          - ['2. Presentación', B (en contra), 3 minutos]
+          - ['3. Respuesta', A (a favor), 2 minutos]
+          - ['4. Respuesta', B (en contra), 2 minutos]
+          - ['5. Resumen', A (a favor), 2 minutos]
+          - ['6. Resumen', B (en contra), 2 minutos]
+      - id: act4-arguments
+        type: discussionQuestions
+        title: Nuestros argumentos
+        items:
+          - question: 'Argumento en futuro: ___'
+            frame: En 10 años, la IA será… / los profesores tendrán…
+          - question: 'Argumento en condicional: ___'
+            frame: Si la IA enseñara sola, ___.
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Dos habilidades en este ciclo: **Futuro simple** (ronda de introducción,
+          preguntas y Actividades 1, 3 y 4) y **Condicional** (preguntas y Actividades 1,
+          2, 3 y 4). Elige 2 actividades. Si el grupo es creativo o divertido: Actividad 1
+          (canción con ChatGPT) + Actividad 3 (historias locas). Si el grupo es reflexivo
+          o analítico: Actividad 2 (distopía) + Actividad 4 (debate). En una clase completa
+          de 90 minutos: una actividad corta (canción) + una larga (distopía o debate).
+      - id: n-quizlet
+        anchor: quizlet
+        minutes: 10
+        text: Repasa el vocabulario con Quizlet al principio de la clase.
+      - id: n-intro
+        anchor: intro
+        minutes: 8
+        text: >-
+          Da tu propio ejemplo primero y después pregunta a cada estudiante. Se practica el
+          futuro simple (*podrá*). Anima a los estudiantes a añadir un toque de humor o
+          creatividad.
+      - id: n-warmup
+        anchor: warmup-title
+        minutes: 30
+        text: >-
+          Haz la primera pregunta y después lee con el grupo la definición de IA. Haz al
+          menos dos preguntas a cada estudiante. Las respuestas escritas aquí aparecen
+          debajo de cada pregunta.
+      - id: n-act1
+        anchor: act1
+        minutes: 15
+        text: >-
+          Para el paso 3, usa este modelo de instrucción en ChatGPT: *Por favor, escribe una
+          canción de amor de un párrafo en estilo [rap / soneto / pop / canción de miedo]
+          sobre mi [marido / esposa / mejor amigo / gato / perro]. Tiene estas dos
+          características: [característica 1] y [característica 2].* Ejemplo: *Escribe una
+          canción de amor en estilo pop sobre Keila, mi hermana. Ella tiene nueve años y le
+          gusta hacer TikToks.* Objetivo: el futuro en el paso 1 y el condicional en los
+          comentarios.
+      - id: n-act2
+        anchor: act2
+        minutes: 20
+        text: >-
+          Reduce o amplía la lista de roles según el número de estudiantes. Evalúa la
+          claridad, la creatividad y el uso correcto del condicional. Con 10 minutos de
+          preparación y 2 minutos por candidato, un grupo grande necesitará más de 20
+          minutos.
+      - id: n-act3
+        anchor: act3
+        minutes: 20
+        text: >-
+          Con esta actividad los estudiantes usan directamente el chat, practican pedir
+          instrucciones claras en español y refuerzan la gramática al comparar el texto de
+          la IA con el suyo.
+      - id: n-act4
+        anchor: act4
+        minutes: 25
+        text: >-
+          Preparación en grupo: 10 minutos. Controla el tiempo de cada turno. Al final,
+          decide tú el grupo ganador o déjalo a votación.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: inteligencia-artificial-resumen
+    title: Resumen
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Lo que aprendimos hoy
+      - id: rules-futuro
+        type: ruleSummary
+        skill: Futuro simple
+        rules:
+          - text: 'El **futuro simple** se usa para predicciones y para acciones que ocurrirán en el futuro.'
+            examples:
+              [
+                El mundo con IA será diferente.,
+                El futuro con IA será más fácil para los estudiantes.,
+              ]
+          - text: 'Se forma con el **infinitivo completo** + **-é, -ás, -á, -emos, -éis, -án**. Las terminaciones son iguales para los verbos en -ar, -er e -ir.'
+            examples: ['cambiar → cambiaré, cambiarás, cambiará', 'ser → seré, serás, será']
+          - text: 'Algunos verbos cambian la raíz, pero tienen las mismas terminaciones.'
+            examples:
+              ['tener → tendrá', 'poder → podrá', 'hacer → hará', 'decir → dirá', 'saber → sabrá']
+          - text: 'Para planes e intenciones también usamos **ir a + infinitivo** (*voy a, vas a, va a…*).'
+            examples:
+              [La IA va a cambiar el mundo., En 10 años la IA va a reemplazar algunos trabajos.]
+          - text: 'Expresiones para predicciones:'
+            examples: ['En el futuro…', 'Dentro de 10 años…', 'En 10 años…', 'Creo que la IA será…']
+      - id: futuro-table
+        type: table
+        caption: Futuro simple
+        header: [Persona, cambiar, ser, poder (irregular)]
+        rows:
+          - [yo, cambiaré, seré, podré]
+          - [tú, cambiarás, serás, podrás]
+          - [él / ella / usted, cambiará, será, podrá]
+          - [nosotros / nosotras, cambiaremos, seremos, podremos]
+          - [vosotros / vosotras, cambiaréis, seréis, podréis]
+          - [ellos / ellas / ustedes, cambiarán, serán, podrán]
+      - id: rules-condicional
+        type: ruleSummary
+        skill: Condicional
+        rules:
+          - text: 'El **condicional simple** se usa para situaciones hipotéticas o imaginarias, que pueden ocurrir o no.'
+            examples: [Sería más fácil., Sería peligroso., Podría ayudar., Tendría menos problemas.]
+          - text: 'Se forma con el **infinitivo** + **-ía, -ías, -ía, -íamos, -íais, -ían**. Los verbos irregulares del futuro tienen la misma raíz: *tendría, podría, haría, diría, sabría*.'
+            examples: ['usar → usaría', 'perder → perderían', 'ser → sería']
+          - text: 'Estructura: **Si + imperfecto de subjuntivo, condicional simple**. Después de *si* nunca va el condicional.'
+            examples:
+              - Si hubiera una distopía, yo sería el mejor líder.
+              - Si la IA enseñara sola, los estudiantes perderían la motivación.
+              - Yo tendría más tiempo libre si los robots hicieran todo el trabajo.
+          - text: 'Expresiones para hipótesis:'
+            examples: ['Si yo fuera…', 'Si existiera…', 'Si pudiera…', 'Si tuviera…']
+      - id: condicional-table
+        type: table
+        caption: Condicional simple e imperfecto de subjuntivo
+        header:
+          [
+            Persona,
+            ser (condicional),
+            tener (condicional),
+            ser (imperfecto de subjuntivo),
+            tener (imperfecto de subjuntivo),
+          ]
+        rows:
+          - [yo, sería, tendría, fuera, tuviera]
+          - [tú, serías, tendrías, fueras, tuvieras]
+          - [él / ella / usted, sería, tendría, fuera, tuviera]
+          - [nosotros / nosotras, seríamos, tendríamos, fuéramos, tuviéramos]
+          - [vosotros / vosotras, seríais, tendríais, fuerais, tuvierais]
+          - [ellos / ellas / ustedes, serían, tendrían, fueran, tuvieran]
+      - id: rules-compare
+        type: ruleSummary
+        skill: Futuro o condicional
+        rules:
+          - text: '**Futuro**: algo que creemos que sí pasará.'
+            examples: [La IA va a crear nuevas profesiones., La IA creará nuevas profesiones.]
+          - text: '**Condicional**: algo imaginado o incierto.'
+            examples: [La vida sería más aburrida si no tuviéramos IA.]
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        minutes: 8
+        text: Repasa las reglas con el grupo y pide un ejemplo nuevo para cada una, uno en futuro y otro en condicional.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: inteligencia-artificial-tarea
+    title: Tarea con Mori
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Tarea con Mori
+      - id: how
+        type: text
+        text: Abre el chat con Mori, copia un mensaje y envíalo. Mori te hará preguntas; responde a todas.
+      - id: mori-futuro
+        type: aiTutorPrompt
+        title: 'Parte 1: Futuro simple'
+        intro: 'Ejemplo de Mori: *La IA va a corregir tareas más rápido. Las clases serán más personalizadas. Los profesores van a usar robots como asistentes.*'
+        message: |-
+          Hola Mori, quiero practicar el futuro. Pregúntame: «¿Cómo será el futuro de la enseñanza con la IA dentro de 10 años?».
+          Voy a responder con 3 predicciones en futuro simple (será, cambiará, podrá…) o con ir a + infinitivo (va a…).
+          Corrige mis frases y hazme una pregunta más.
+      - id: mori-condicional
+        type: aiTutorPrompt
+        title: 'Parte 2: Condicional'
+        intro: 'Ejemplo de Mori: *Yo tendría más tiempo libre. Los estudiantes escribirían todo en papel. Las personas no podrían comunicarse tan rápido.*'
+        message: |-
+          Hola Mori, quiero practicar el condicional. Pregúntame: «Imagina que hoy no existieran los teléfonos inteligentes. ¿Cómo sería tu vida?».
+          Voy a responder con 3 frases en condicional (sería, tendría, podría o haría).
+          Corrige mis frases y hazme una pregunta más.
+      - id: mori-bonus
+        type: aiTutorPrompt
+        title: 'Parte 3: Bonus (opcional)'
+        intro: 'Si quieres, primero grábate un audio de 1 minuto con tus respuestas y después escríbelas para Mori.'
+        message: |-
+          Hola Mori, te voy a dar tres respuestas:
+          1. Una predicción en futuro.
+          2. Una hipótesis en condicional.
+          3. Mi opinión personal: ¿La IA reemplazará a los profesores?
+          Corrige mis errores y dame correcciones personalizadas.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consejos
+        text: |-
+          ¿Quieres más preguntas? Envía: **¡Por favor, pregúntame más!**
+          ¿No entiendes una explicación? Envía: **¿Puedes explicármelo en hebreo pero con la oración en español?**
+    teacherNotes:
+      - id: n-homework
+        anchor: null
+        minutes: 5
+        text: Presenta la tarea al final de la clase (5 minutos). Si quieres recibir el audio del bonus, di a los estudiantes cómo enviártelo.
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: inteligencia-artificial-practica
+    book: workbook
+    title: 'Práctica: Inteligencia artificial'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Practica las dos habilidades del ciclo. Cada respuesta se corrige al momento, y puedes intentarlo otra vez.
+      - id: ex-futuro
+        type: activity
+        activity: inteligencia-artificial-futuro
+      - id: ex-condicional
+        type: activity
+        activity: inteligencia-artificial-condicional
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: inteligencia-artificial-vocabulario
+    title: Vocabulario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: Palabras de la inteligencia artificial
+        glossLang: he
+        link: https://quizlet.com/br/1073072642/clase-ia-actualizada-flash-cards/
+        items: &inteligencia-artificial-words
+          - { term: Inteligencia artificial (IA), gloss: בינה מלאכותית }
+          - { term: Definición, gloss: הגדרה }
+          - { term: Habilidad, gloss: יכולת }
+          - { term: Información, gloss: מידע }
+          - { term: Aprender, gloss: ללמוד }
+          - { term: Resolver problemas, gloss: לפתור בעיות }
+          - { term: Lenguaje natural, gloss: שפה טבעית }
+          - { term: Futuro, gloss: עתיד }
+          - { term: Predicción, gloss: תחזית }
+          - { term: Cambio, gloss: שינוי }
+          - { term: Robot, gloss: רובוט }
+          - { term: Androide, gloss: אנדרואיד }
+          - { term: Máquina, gloss: מכונה }
+          - { term: Tecnología, gloss: טכנולוגיה }
+          - { term: Innovación, gloss: חדשנות }
+          - { term: Computadora, gloss: מחשב }
+          - { term: Internet, gloss: אינטרנט }
+          - { term: Aplicación, gloss: אפליקציה }
+          - { term: Creatividad, gloss: יצירתיות }
+          - { term: Canción, gloss: שיר }
+          - { term: Historia, gloss: סיפור }
+          - { term: Debate, gloss: דיבייט / ויכוח }
+          - { term: Argumento, gloss: טיעון }
+          - { term: Opinión, gloss: דעה }
+          - { term: Convincente, gloss: משכנע }
+          - { term: Hipotético, gloss: היפותטי }
+          - { term: Condicional (gramática), gloss: משפט תנאי }
+          - { term: Superviviente, gloss: שורד }
+          - { term: Distopía, gloss: דיסטופיה }
+          - { term: Utopía, gloss: אוטופיה }
+          - { term: Rol, gloss: תפקיד }
+          - { term: Candidatura, gloss: מועמדות }
+          - { term: Voto, gloss: הצבעה }
+          - { term: Elecciones, gloss: בחירות }
+          - { term: Profesor, gloss: מורה }
+          - { term: Estudiante, gloss: תלמיד }
+          - { term: Mundo, gloss: עולם }
+          - { term: Realidad, gloss: מציאות }
+
+vocabulary:
+  - slug: inteligencia-artificial
+    title: Inteligencia artificial
+    items: *inteligencia-artificial-words
+
+activities:
+  - slug: inteligencia-artificial-futuro
+    title: 'Futuro simple: será, cambiará, podrá'
+    minutes: 8
+    items:
+      - id: sera
+        type: multipleChoice
+        prompt: En 10 años la IA ___ más rápida que los profesores.
+        options:
+          - { text: será, correct: true }
+          - {
+              text: sería,
+              feedback: '*Sería* es condicional, para algo imaginado. Para una predicción usamos el futuro: *será*.',
+            }
+          - {
+              text: es,
+              feedback: '*Es* es presente. Con *en 10 años* hablamos del futuro: *será*.',
+            }
+      - id: haran
+        type: fillBlank
+        prompt: Completa con el futuro simple de *hacer*.
+        text: Dentro de 10 años, los robots ___ muchos trabajos.
+        blanks: [[harán]]
+      - id: une-futuro
+        type: matching
+        prompt: Une cada verbo con su forma de futuro para *él / ella*.
+        pairs:
+          - [tener, tendrá]
+          - [poder, podrá]
+          - [hacer, hará]
+          - [cambiar, cambiará]
+          - [ser, será]
+      - id: formacion
+        type: trueFalse
+        prompt: 'El futuro simple se forma con el infinitivo + *-é, -ás, -á, -emos, -éis, -án*: *cambiaré, cambiarás, cambiará*.'
+        answer: true
+        feedback:
+          correct: ¡Correcto! Las terminaciones son las mismas para los verbos en -ar, -er e -ir.
+          incorrect: 'Sí: infinitivo + *-é, -ás, -á, -emos, -éis, -án*. Por ejemplo, *cambiar → cambiaré, cambiará*.'
+      - id: podra
+        type: fillBlank
+        prompt: Completa con el futuro simple de *poder*.
+        text: Creo que en 10 años la IA ___ reemplazar muchos trabajos.
+        blanks: [[podrá]]
+      - id: vamos-a
+        type: multipleChoice
+        prompt: 'Un plan: Mañana nosotros ___ a usar ChatGPT en clase.'
+        options:
+          - { text: vamos, correct: true }
+          - {
+              text: van,
+              feedback: '*Van* es para *ellos / ellas*. Para *nosotros* usamos *vamos a*.',
+            }
+          - { text: voy, feedback: '*Voy* es para *yo*. Para *nosotros* usamos *vamos a*.' }
+      - id: prediccion
+        type: multipleChoice
+        prompt: ¿Qué oración es una predicción en futuro simple?
+        options:
+          - { text: Las clases serán más personalizadas., correct: true }
+          - {
+              text: Las clases son más personalizadas.,
+              feedback: '*Son* es presente. El futuro simple de *ser* es *serán*.',
+            }
+          - {
+              text: Las clases serían más personalizadas.,
+              feedback: '*Serían* es condicional, para algo imaginado. El futuro simple es *serán*.',
+            }
+      - id: ordena-mundo
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: El mundo con IA será diferente.
+
+  - slug: inteligencia-artificial-condicional
+    title: 'Condicional: sería, tendría, podría'
+    minutes: 8
+    items:
+      - id: usaria
+        type: multipleChoice
+        prompt: Si yo escribiera la canción, ___ menos versos.
+        options:
+          - { text: usaría, correct: true }
+          - {
+              text: usaré,
+              feedback: 'Con *si* + imperfecto de subjuntivo (*escribiera*), la otra parte va en condicional: *usaría*.',
+            }
+          - {
+              text: usaba,
+              feedback: '*Usaba* es imperfecto de indicativo. Para una situación imaginaria usamos el condicional: *usaría*.',
+            }
+      - id: seria
+        type: fillBlank
+        prompt: Completa con el condicional de *ser*.
+        text: Si hubiera una distopía, yo ___ el mejor médico.
+        blanks: [[sería]]
+      - id: une-condicional
+        type: matching
+        prompt: Une cada verbo con su forma de condicional para *yo*.
+        pairs:
+          - [tener, tendría]
+          - [poder, podría]
+          - [hacer, haría]
+          - [ser, sería]
+          - [decir, diría]
+      - id: despues-de-si
+        type: trueFalse
+        prompt: 'Después de *si* usamos el condicional: *Si la IA enseñaría sola…*'
+        answer: false
+        feedback:
+          correct: '¡Correcto! Después de *si* va el imperfecto de subjuntivo: *Si la IA enseñara sola…*'
+          incorrect: 'Después de *si* nunca va el condicional. Usamos el imperfecto de subjuntivo: *Si la IA enseñara sola, los estudiantes perderían la motivación.*'
+      - id: ensenara
+        type: multipleChoice
+        prompt: Si la IA ___ sola, los estudiantes perderían la motivación.
+        options:
+          - { text: enseñara, correct: true }
+          - {
+              text: enseñaría,
+              feedback: 'Después de *si* no usamos el condicional. Usamos el imperfecto de subjuntivo: *enseñara*.',
+            }
+          - {
+              text: enseñará,
+              feedback: '*Enseñará* es futuro. Para una situación imaginaria, después de *si* va el imperfecto de subjuntivo: *enseñara*.',
+            }
+      - id: existiera
+        type: fillBlank
+        prompt: Completa con el imperfecto de subjuntivo de *existir*.
+        text: Si no ___ la IA, el mundo sería diferente.
+        blanks: [[existiera, existiese]]
+      - id: imaginado
+        type: multipleChoice
+        prompt: ¿Qué oración habla de algo imaginado, no de una predicción?
+        options:
+          - {
+              text: Yo tendría más tiempo libre si los robots hicieran todo el trabajo.,
+              correct: true,
+            }
+          - {
+              text: La IA va a crear nuevas profesiones.,
+              feedback: '*Va a crear* es futuro: algo que creemos que sí pasará.',
+            }
+          - {
+              text: La IA será más rápida que los profesores.,
+              feedback: '*Será* es futuro: una predicción. Para algo imaginado usamos el condicional (*tendría, sería*).',
+            }
+      - id: ordena-vida
+        type: reorderSentence
+        prompt: Ordena las palabras.
+        sentence: La vida sería más aburrida sin IA.

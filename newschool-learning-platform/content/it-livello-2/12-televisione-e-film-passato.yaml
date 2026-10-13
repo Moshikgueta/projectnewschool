@@ -1,0 +1,726 @@
+# Cycle "Televisione e film: raccontare il passato", converted from the Italian level 2
+# digital notebook (docs/CONTENT-AUDIT.md). DRAFT for teacher review: see `review` below.
+# Blocks without `lang` are in the course language (Italian).
+course: it-livello-2
+slug: televisione-e-film-passato
+title: 'Televisione e film: raccontare il passato'
+goal: Raccontare film e serie del passato con l'imperfetto e il passato prossimo.
+position: 12
+status: published
+
+review:
+  - >-
+    The two workbook exercises ("Imperfetto" and "Passato prossimo") are NEW: the
+    notebook has no self-correcting exercises. They were written from the cycle's
+    summary rules, examples and vocabulary. Please check level, wording and every
+    right answer before students see them.
+  - >-
+    Skills: the notebook lists five abilities. The cycle overview keeps two skills,
+    "Imperfetto" (habits and descriptions in the past) and "Passato prossimo"
+    (specific, finished actions); questions about films and reporting a partner's
+    answers in the third person are practised in the activities.
+  - >-
+    The source summary is in Hebrew. It was rewritten in Italian (student-facing text
+    is Italian); the Hebrew translations of the useful sentences are kept as glosses.
+  - >-
+    Summary: the notebook explains when to use each tense but gives no forms. ADDED: an
+    imperfetto table (guardare, vedere, preferire, essere) and a passato prossimo rule
+    with avere / essere (ho visto, sono andato / andata), agreement after lo / la (l'ho
+    visto / l'ho vista) and mi è piaciuto / mi è piaciuta. Please confirm.
+  - >-
+    Activity 4: the guide and interview questions had stray markdown marks ("## ")
+    from the Google Doc export; they were removed. The teacher instruction "il film
+    migliore o peggiore che abbia mai visto" is kept; the student models use "che ho
+    visto" (colloquial, acceptable at A2).
+  - >-
+    Activity 3 links to the YouTube video "Extra in Italian 01" (allowed host), kept as
+    the activity resource. Please check the link still works.
+  - >-
+    The lesson slides are a gamma.app link, which is not allowed on the platform; the
+    link was left out and a teacher note says so. The Quizlet link is kept without its
+    "?new" parameter. The "Risposta studente 1/2/3" lines are replaced by answer boxes.
+  - >-
+    The notebook has no lesson plan and no activity times, so no minutes are recorded.
+    The teacher note suggests Activity 1 (imperfetto) + Activity 2 or 4 (passato
+    prossimo), with Activity 3 (video) combining both; please confirm.
+  - >-
+    Vocabulary: "L'ambientazione – הרקע, המקום והתקופה שבהם הסיפור מתרחש" shortened to
+    "הרקע (המקום והתקופה של הסיפור)"; "Mi piaceva… – אהבתי את זה בדרך כלל…" →
+    "אהבתי את זה (בדרך כלל) / אהבת / הוא אהב"; "interpretato – גילמתי תפקיד / גילמת
+    תפקיד / הוא גילם תפקיד" → "גילמתי / גילמת / הוא גילם תפקיד" (shorter cards). In
+    the verb rows the pronouns "Io / Tu / Lui" were dropped (ho raccontato / hai
+    raccontato / ha raccontato) to keep the cards short. Please confirm.
+  - >-
+    The "Compiti classici" (written homework) are kept in the homework section as
+    answer boxes before the Mori messages.
+
+sections:
+  # ── in class ─────────────────────────────────────────────────────────────
+  - slug: televisione-e-film-passato-classe
+    title: 'In classe: Televisione e film'
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: 'Televisione e film: raccontare il passato'
+      - id: skills
+        type: cycleOverview
+        skills:
+          - name: Imperfetto
+            description: 'Abitudini e descrizioni nel passato: *guardavo, mi piaceva, era*'
+          - name: Passato prossimo
+            description: 'Azioni specifiche e concluse: *ho visto, sono andato, mi è piaciuto*'
+      - id: quizlet
+        type: externalLink
+        label: 'Televisione e film: raccontare il passato su Quizlet'
+        url: https://quizlet.com/br/1189995838/televisione-e-film-raccontare-il-passato-flash-cards/
+      - id: intro-title
+        type: heading
+        level: 3
+        text: Giro di presentazioni
+      - id: intro
+        type: sentenceFrame
+        prompt: Ogni studente completa le frasi.
+        frame: Io sono ___. Quando ero bambino / bambina, il mio film preferito era ___. L'ultimo film che ho visto è stato ___.
+        example: Io sono Dana. Quando ero bambina, il mio film preferito era *La bella e la bestia*. L'ultimo film che ho visto è stato *Povere creature!*
+      - id: warmup-title
+        type: heading
+        level: 3
+        text: Domande di preparazione
+      - id: warmup-imp-title
+        type: heading
+        level: 4
+        text: Imperfetto
+      - id: warmup-imp
+        type: discussionQuestions
+        items:
+          - question: Quale film guardavi spesso quando eri bambino / bambina?
+            frame: Quando ero bambino guardavo spesso *Toy Story*.
+          - question: Quale programma televisivo guardavi da adolescente?
+            frame: Quando ero adolescente guardavo *I Simpson*.
+          - question: Che genere di film ti piaceva quando eri piccolo / piccola?
+            frame: Mi piacevano i film d'animazione.
+          - question: Guardavi più film o più serie?
+            frame: Guardavo più film, perché non c'erano molte serie online.
+      - id: warmup-pp-title
+        type: heading
+        level: 4
+        text: Passato prossimo
+      - id: warmup-pp
+        type: discussionQuestions
+        items:
+          - question: Qual è stato il primo film che hai visto al cinema?
+            frame: Il primo film che ho visto al cinema è stato *Shrek*.
+          - question: "Qual è stata l'ultima serie che hai guardato?"
+            frame: "L'ultima serie che ho guardato è stata *Friends*."
+          - question: "Con chi hai guardato l'ultimo film o l'ultima serie?"
+            frame: "L'ho guardato con mia sorella."
+          - question: Sei andato / andata al cinema il mese scorso? Che cosa hai visto?
+            frame: Sì, sono andato al cinema e ho visto *Barbie*.
+      - id: activities-title
+        type: heading
+        level: 3
+        text: Attività
+      # Activity 1
+      - id: act1
+        type: classActivity
+        title: 'Attività 1: Quando ero bambino'
+        skills: [Imperfetto]
+        steps:
+          - Scrivi 5 frasi su quello che guardavi quando eri bambino / bambina.
+          - Leggi 2 frasi al gruppo.
+          - Il gruppo fa domande.
+        example: |-
+          *Quando ero bambino guardavo spesso Il re leone.*
+          *Il mio film preferito era Toy Story.*
+          *Mi piaceva perché era divertente.*
+          *Lo guardavo con mio fratello.*
+          *Da bambino preferivo i film d'animazione.*
+      - id: act1-sentences
+        type: discussionQuestions
+        title: Le mie 5 frasi
+        items:
+          - question: Quando ero bambino / bambina, guardavo spesso ___.
+          - question: Il mio film preferito era ___.
+          - question: Mi piaceva questo film perché ___.
+          - question: Guardavo questo film con ___.
+          - question: Da bambino / bambina preferivo ___.
+      - id: act1-questions
+        type: callout
+        tone: info
+        title: Domande per il gruppo
+        text: |-
+          Anche tu guardavi questo film?
+          Ti piace ancora oggi?
+          Lo guardavi in TV o al cinema?
+      # Activity 2
+      - id: act2
+        type: classActivity
+        title: "Attività 2: L'ultimo film che ho visto"
+        skills: [Passato prossimo, Imperfetto]
+        steps:
+          - "Fase 1: scrivi 5 frasi sull'ultimo film o sull'ultima serie che hai visto. Usa le domande guida."
+          - "Fase 2: lavorate in coppia. Uno studente fa le domande dell'intervista e l'altro risponde con le frasi preparate. Poi cambiate ruolo."
+          - 'Fase 3: presenta il tuo compagno al gruppo in terza persona.'
+        example: |-
+          *L'ultimo film che ho visto è stato Encanto.*
+          *L'ho visto a casa con mia sorella.*
+          *Parlava di una famiglia magica.*
+          *La storia era divertente e la musica era bella.*
+          *Mi è piaciuto molto perché era colorato e interessante.*
+      - id: act2-sentences
+        type: discussionQuestions
+        title: Domande guida
+        items:
+          - question: Che cosa hai visto?
+          - question: Dove l'hai visto? / Dove l'hai vista?
+          - question: Con chi l'hai guardato? / Con chi l'hai guardata?
+          - question: Che cosa è successo nella storia?
+          - question: Ti è piaciuto il film? / Ti è piaciuta la serie? Perché?
+      - id: act2-dialogue
+        type: dialogue
+        lines:
+          - { speaker: A, text: "Qual è stato l'ultimo film che hai visto?" }
+          - { speaker: B, text: Ho visto *Titanic* al cinema. }
+          - { speaker: A, text: "Con chi l'hai guardato?" }
+          - { speaker: B, text: "L'ho guardato con mia sorella." }
+          - { speaker: A, text: Che cosa è successo nella storia? }
+          - { speaker: B, text: Una grande nave è partita e poi è affondata. È stato molto triste. }
+      - id: act2-extra
+        type: callout
+        tone: info
+        title: Domande extra e presentazione
+        text: |-
+          **Domande extra:** Chi era il tuo personaggio preferito? Che cosa hai imparato dal film?
+          **Presentazione:** *Il mio compagno ha visto Titanic. L'ha visto al cinema con sua sorella. La storia era molto triste, ma gli è piaciuta molto.*
+      # Activity 3
+      - id: act3
+        type: classActivity
+        title: 'Attività 3: Analizziamo una scena in italiano'
+        skills: [Imperfetto, Passato prossimo]
+        resource:
+          label: Extra in Italian 01 (YouTube)
+          url: https://www.youtube.com/watch?v=maGOTEtbGv4
+        steps:
+          - "Fase 1: l'insegnante presenta il video. Hai mai guardato un video o una serie in italiano? Che cosa hai capito?"
+          - 'Fase 2: guarda la scena una prima volta, senza fermare il video. Scrivi almeno due cose che hai capito.'
+          - 'Fase 3: guarda la scena una seconda volta. Concentrati sui personaggi, sul luogo e sulle azioni.'
+          - 'Fase 4: in coppia, rispondete alle domande guida con frasi complete.'
+          - 'Fase 5: la classe costruisce insieme una breve narrazione della scena.'
+          - 'Fase 6: rispondi alle domande finali.'
+        example: |-
+          *I personaggi erano in casa.*
+          *All'inizio stavano parlando tra loro.*
+          *Poi è arrivato un nuovo personaggio.*
+          *Gli altri erano sorpresi.*
+          *La situazione era un po' strana, ma divertente.*
+          *La scena mi è piaciuta perché era semplice da capire.*
+      - id: act3-focus
+        type: callout
+        tone: info
+        title: Focus grammaticale
+        text: |-
+          **Imperfetto** per descrivere la situazione, i personaggi e l'atmosfera: *I personaggi erano in casa. La scena era divertente. I personaggi parlavano lentamente.*
+          **Passato prossimo** per raccontare le azioni principali: *Un personaggio è arrivato. Gli altri hanno parlato con lui. La situazione è diventata divertente.*
+      - id: act3-first
+        type: discussionQuestions
+        title: 'Prima visione: che cosa hai capito?'
+        items:
+          - question: Ho capito che ___.
+            frame: Ho capito che ci sono alcuni giovani in un appartamento.
+          - question: Ho capito che ___.
+            frame: Ho capito che parlano di una persona nuova.
+      - id: act3-guide
+        type: discussionQuestions
+        title: Seconda visione e lavoro a coppie
+        items:
+          - question: Chi c'era nella scena?
+            frame: Nella scena c'erano ___.
+          - question: Dove erano i personaggi?
+            frame: I personaggi erano ___.
+          - question: Che cosa facevano?
+            frame: All'inizio stavano ___.
+          - question: Che cosa è successo?
+            frame: Poi ___ è arrivato / arrivata.
+          - question: Come hanno reagito i personaggi?
+            frame: Gli altri personaggi erano ___.
+          - question: La scena era normale, strana o divertente?
+            frame: La scena era ___ perché ___.
+      - id: act3-final
+        type: discussionQuestions
+        title: Opinione finale
+        items:
+          - question: Ti è piaciuta la scena? Perché?
+            frame: Sì, mi è piaciuta perché era semplice e divertente.
+          - question: Era più facile o più difficile di un film normale?
+            frame: Secondo me era più facile di un film normale perché i personaggi parlavano in modo chiaro.
+          - question: Quale personaggio ti è sembrato più interessante?
+          - question: Vorresti guardare un'altra scena di questa serie?
+            frame: Vorrei guardare un'altra scena per capire meglio la storia.
+      # Activity 4
+      - id: act4
+        type: classActivity
+        title: 'Attività 4: Il film migliore o peggiore che ho visto'
+        skills: [Passato prossimo, Imperfetto]
+        steps:
+          - 'Fase 1: pensa al film migliore o peggiore che hai visto. Scrivi 4–5 frasi al passato. Usa le domande guida.'
+          - "Fase 2: lavorate in coppia. Uno studente fa le domande dell'intervista e l'altro risponde. Poi cambiate ruolo."
+          - 'Fase 3: presenta il tuo compagno al gruppo in terza persona.'
+        example: |-
+          *Ho visto Avatar al cinema.*
+          *L'ho guardato con i miei amici.*
+          *La storia era lunga, ma gli effetti speciali erano incredibili.*
+          *Mi è piaciuto perché era molto visivo.*
+          *È stato uno dei film più belli che ho visto.*
+      - id: act4-interview
+        type: discussionQuestions
+        title: "Domande per l'intervista"
+        items:
+          - question: Che film hai visto?
+          - question: Dove l'hai visto?
+          - question: Con chi l'hai guardato?
+          - question: Che cosa è successo nella storia?
+          - question: Perché ti è piaciuto o non ti è piaciuto?
+          - question: Secondo te, perché è stato il film migliore o peggiore?
+      - id: act4-present
+        type: callout
+        tone: info
+        title: Presentazione al gruppo
+        text: |-
+          *Il mio compagno ha visto Titanic al cinema con sua sorella.*
+          *La storia era molto triste.*
+          *Secondo lui, è stato uno dei film più emozionanti che ha visto.*
+          *Gli è piaciuto molto perché la storia era intensa e i personaggi erano interessanti.*
+    teacherNotes:
+      - id: n-plan
+        anchor: null
+        text: >-
+          Due abilità in questo ciclo: **Imperfetto** (domande di preparazione 1–4 e
+          Attività 1) e **Passato prossimo** (domande 5–8, Attività 2 e 4). L'Attività 3
+          (video) usa tutti e due i tempi. Scegli 2 o 3 attività secondo il tempo e il
+          gruppo. Il quaderno non indica i tempi.
+      - id: n-slides
+        anchor: null
+        text: >-
+          Il quaderno ha una presentazione della lezione su gamma.app. Questo tipo di
+          link non è permesso nella piattaforma: se vuoi usarla, condividila tu sullo
+          schermo.
+      - id: n-intro
+        anchor: intro
+        text: >-
+          Modello dell'insegnante: «Io sono ___. Quando ero bambino / bambina, il mio
+          film preferito era *La bella e la bestia*. L'ultimo film che ho visto è stato
+          *Povere creature!*» Poi chiedi a ogni studente.
+      - id: n-warmup
+        anchor: warmup-title
+        text: Fai almeno due domande a ogni studente. Le risposte scritte qui compaiono sotto ogni domanda.
+      - id: n-act3
+        anchor: act3
+        text: >-
+          Usa i primi 4–5 minuti della prima puntata di *Extra in Italian* oppure una
+          scena breve in cui vengono presentati i personaggi principali. Per introdurre il
+          video puoi dire: «Oggi guarderemo una breve scena di una serie pensata per
+          studenti di italiano. I dialoghi sono abbastanza chiari e la situazione è
+          leggera e divertente.» Nella Fase 5 scrivi le frasi alla lavagna e aiuta gli
+          studenti a scegliere tra imperfetto e passato prossimo.
+
+  # ── summary ──────────────────────────────────────────────────────────────
+  - slug: televisione-e-film-passato-riepilogo
+    title: Riepilogo
+    phase: during_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Cosa abbiamo imparato oggi
+      - id: intro
+        type: text
+        text: "Per parlare di film e serie nel passato usiamo due tempi: l'**imperfetto** per le abitudini, le descrizioni e lo sfondo, e il **passato prossimo** per le azioni specifiche e concluse."
+      - id: rules-imperfetto
+        type: ruleSummary
+        skill: Imperfetto
+        rules:
+          - text: "Usiamo l'**imperfetto** per quello che succedeva di solito nel passato e per descrivere una situazione, un'età, un periodo o una sensazione."
+            examples:
+              - Quando ero bambino guardavo *Toy Story*.
+              - Da adolescente mi piacevano le commedie.
+              - Il film era divertente.
+              - Guardavo questo film con mio fratello.
+          - text: 'Parole tipiche: *quando ero bambino / bambina, da adolescente, di solito, ogni settimana, spesso, in quel periodo*.'
+          - text: 'Con *piacere*: **mi piaceva** + una cosa, **mi piacevano** + più cose.'
+            examples: [Mi piaceva questo film., Mi piacevano i film d'animazione.]
+      - id: imperfetto-table
+        type: table
+        caption: Imperfetto
+        header: [Persona, guardare, vedere, preferire, essere]
+        rows:
+          - [io, guardavo, vedevo, preferivo, ero]
+          - [tu, guardavi, vedevi, preferivi, eri]
+          - [lui / lei, guardava, vedeva, preferiva, era]
+          - [noi, guardavamo, vedevamo, preferivamo, eravamo]
+          - [voi, guardavate, vedevate, preferivate, eravate]
+          - [loro, guardavano, vedevano, preferivano, erano]
+      - id: rules-pp
+        type: ruleSummary
+        skill: Passato prossimo
+        rules:
+          - text: "Usiamo il **passato prossimo** per un'azione specifica che è successa ed è finita: che cosa ho visto, dove, con chi, che cosa è successo nella storia, se mi è piaciuto."
+            examples:
+              - Ho visto *Titanic*.
+              - "L'ultima serie che ho guardato è stata *Friends*."
+              - Mi è piaciuto molto.
+          - text: 'Si forma con **avere** o **essere** + participio. Con *essere* il participio cambia: *sono andato* (maschile), *sono andata* (femminile).'
+            examples: [Ho guardato una serie., Sono andato al cinema., Sono andata al cinema.]
+          - text: "Con *lo / la* prima del verbo (*l'ho*), il participio si accorda: **l'ho visto** (il film), **l'ho vista** (la serie)."
+            examples: ["L'ho visto con mia sorella.", "L'ho guardata a casa."]
+          - text: '**Mi è piaciuto** + una cosa maschile, **mi è piaciuta** + una cosa femminile.'
+            examples: [Il film mi è piaciuto., La serie mi è piaciuta.]
+      - id: rules-diff
+        type: ruleSummary
+        skill: La differenza
+        rules:
+          - text: "**Imperfetto**: che cosa facevo di solito? Com'era la situazione? **Passato prossimo**: che cosa è successo? Quale azione specifica è finita?"
+            examples:
+              - Quando ero bambino guardavo spesso *Shrek*. Un giorno ho visto *Shrek* al cinema con mio padre.
+          - text: "Nel primo esempio *guardavo spesso* è un'abitudine (imperfetto). *Ho visto* è un'azione successa una volta (passato prossimo)."
+      - id: useful-title
+        type: heading
+        level: 3
+        text: Frasi utili
+      - id: useful
+        type: examples
+        items:
+          - { text: Quando ero bambino guardavo…, gloss: כשהייתי ילד הייתי צופה ב… }
+          - { text: Il mio film preferito era…, gloss: הסרט האהוב עליי היה… }
+          - { text: Mi piaceva perché…, gloss: אהבתי אותו כי… }
+          - { text: "L'ultimo film che ho visto è stato…", gloss: הסרט האחרון שראיתי היה… }
+          - { text: "L'ho visto con…", gloss: ראיתי אותו עם… }
+          - { text: Mi è piaciuto perché…, gloss: אהבתי אותו כי… }
+          - { text: Non mi è piaciuto perché…, gloss: לא אהבתי אותו כי… }
+    teacherNotes:
+      - id: n-summary
+        anchor: null
+        text: Ripassa le due abilità con la classe e chiedi un esempio nuovo per ogni regola.
+
+  # ── after class ──────────────────────────────────────────────────────────
+  - slug: televisione-e-film-passato-compiti
+    title: Compiti
+    phase: after_class
+    blocks:
+      - id: title
+        type: heading
+        level: 2
+        text: Compiti
+      - id: written-title
+        type: heading
+        level: 3
+        text: Compiti scritti
+      - id: hw1
+        type: discussionQuestions
+        title: 'Parte 1: Imperfetto. Completa le frasi con informazioni personali.'
+        items:
+          - question: Quando ero bambino / bambina, guardavo spesso ___.
+          - question: Da adolescente mi piaceva guardare ___.
+          - question: Il mio film preferito era ___.
+          - question: Guardavo questo film / programma con ___.
+          - question: Preferivo i film di ___ perché ___.
+          - question: Quando ero piccolo / piccola, non mi piaceva ___.
+      - id: hw1-model
+        type: callout
+        tone: info
+        title: Modello
+        text: '*Quando ero bambino, guardavo spesso Toy Story. Il mio film preferito era Shrek. Lo guardavo con mio fratello. Mi piaceva perché era divertente.*'
+      - id: hw2
+        type: discussionQuestions
+        title: "Parte 2: Passato prossimo. Rispondi con frasi complete sull'ultimo film o sull'ultima serie che hai visto."
+        items:
+          - question: Che cosa hai visto?
+          - question: Dove l'hai visto / vista?
+          - question: Con chi l'hai guardato / guardata?
+          - question: Che cosa è successo nella storia?
+          - question: Ti è piaciuto / piaciuta? Perché?
+      - id: hw2-model
+        type: callout
+        tone: info
+        title: Modello
+        text: "*L'ultimo film che ho visto è stato Coco. L'ho visto a casa con la mia famiglia. La storia parlava di un ragazzo che amava la musica. Mi è piaciuto molto perché era emozionante. La musica era molto bella.*"
+      - id: hw3
+        type: discussionQuestions
+        title: 'Parte 3: Prima e oggi. Completa le frasi.'
+        items:
+          - question: Quando ero bambino / bambina, mi piaceva ___, ma oggi mi piace ___.
+          - question: Prima guardavo spesso ___, ma oggi guardo di più ___.
+          - question: Da adolescente preferivo ___, ma adesso preferisco ___.
+          - question: Il mio film preferito era ___, ma ora il mio film preferito è ___.
+          - question: Prima guardavo i film con ___, ma oggi li guardo con ___.
+      - id: hw4
+        type: discussionQuestions
+        title: 'Parte 4: Mini testo'
+        items:
+          - question: >-
+              Scrivi 6–8 frasi su un film o una serie importante per te. Usa almeno 3
+              frasi con l'imperfetto e 3 frasi con il passato prossimo. Puoi parlare di:
+              che cosa guardavi da bambino / bambina, qual era il tuo film preferito, con
+              chi lo guardavi, l'ultimo film che hai visto, dove l'hai visto, se ti è
+              piaciuto o no.
+            frame: Quando ero bambino / bambina, guardavo spesso ___. Il mio film preferito era ___. L'ultimo film che ho visto è stato ___.
+      - id: mori-title
+        type: heading
+        level: 3
+        text: Compiti con Mori
+      - id: how
+        type: text
+        text: Apri la chat con Mori, copia un messaggio e invialo. Mori ti farà delle domande; rispondi a tutte.
+      - id: mori-1
+        type: aiTutorPrompt
+        title: 'Parte 1: Imperfetto'
+        message: Mori, fammi 8 domande sui film e sui programmi che guardavo quando ero bambino / bambina. Aiutami a rispondere usando l'imperfetto.
+      - id: mori-2
+        type: aiTutorPrompt
+        title: 'Parte 2: Passato prossimo'
+        message: Mori, chiedimi dell'ultimo film o dell'ultima serie che ho visto. Fammi domande su dove l'ho visto, con chi l'ho guardato e se mi è piaciuto.
+      - id: mori-3
+        type: aiTutorPrompt
+        title: 'Parte 3: Correzione'
+        message: Mori, correggi i miei errori nel passato prossimo e nell'imperfetto. Spiegami brevemente la correzione in modo semplice.
+      - id: mori-4
+        type: aiTutorPrompt
+        title: 'Parte 4: Racconto guidato'
+        message: Mori, aiutami a raccontare una scena di un film usando l'imperfetto e il passato prossimo. Fammi domande una alla volta.
+      - id: mori-5
+        type: aiTutorPrompt
+        title: 'Parte 5: Pratica extra'
+        message: Mori, fammi scegliere tra imperfetto e passato prossimo in 10 frasi sul tema cinema e serie TV. Dopo ogni risposta, dimmi se è corretta.
+      - id: tips
+        type: callout
+        tone: tip
+        title: Consigli
+        text: |-
+          Vuoi altre domande? Scrivi: **Per favore, fammi altre domande!**
+          Non capisci una spiegazione? Scrivi: **Me lo puoi spiegare in ebraico ma con la frase in italiano?**
+
+  # ── workbook: practice on your own ───────────────────────────────────────
+  - slug: televisione-e-film-passato-pratica
+    book: workbook
+    title: 'Pratica: Televisione e film'
+    phase: after_class
+    blocks:
+      - id: intro
+        type: text
+        text: Esercitati sulle due abilità del ciclo. Ogni risposta viene corretta subito e puoi riprovare.
+      - id: ex-imperfetto
+        type: activity
+        activity: televisione-e-film-passato-imperfetto
+      - id: ex-passato-prossimo
+        type: activity
+        activity: televisione-e-film-passato-passato-prossimo
+
+  # ── vocabulary ───────────────────────────────────────────────────────────
+  - slug: televisione-e-film-passato-vocabolario
+    title: Vocabolario
+    phase: review
+    blocks:
+      - id: words
+        type: vocabulary
+        title: 'Televisione e film: passato'
+        glossLang: he
+        link: https://quizlet.com/br/1189995838/televisione-e-film-raccontare-il-passato-flash-cards/
+        items: &televisione-e-film-passato-words
+          - { term: la trama, gloss: העלילה }
+          - { term: il personaggio principale, gloss: הדמות הראשית }
+          - { term: il protagonista, gloss: הגיבור / הדמות המרכזית }
+          - { term: il regista, gloss: הבמאי }
+          - { term: la scena, gloss: סצנה }
+          - { term: "l'ambientazione", gloss: הרקע (המקום והתקופה של הסיפור) }
+          - { term: la colonna sonora, gloss: פס הקול }
+          - { term: i sottotitoli, gloss: כתוביות }
+          - { term: il doppiaggio, gloss: דיבוב }
+          - { term: gli effetti speciali, gloss: אפקטים מיוחדים }
+          - { term: il finale, gloss: הסוף }
+          - { term: il finale alternativo, gloss: סוף חלופי }
+          - { term: il colpo di scena, gloss: תפנית מפתיעה בעלילה }
+          - { term: la recensione, gloss: ביקורת על סרט / סדרה }
+          - { term: il genere cinematografico, gloss: "ז'אנר קולנועי" }
+          - { term: la stagione, gloss: עונה של סדרה }
+          - { term: "l'episodio", gloss: פרק }
+          - { term: la recitazione, gloss: המשחק / יכולת המשחק }
+          - { term: il ruolo, gloss: תפקיד }
+          - { term: il pubblico, gloss: קהל הצופים }
+          - { term: coinvolgente, gloss: סוחף / מרתק }
+          - { term: emozionante, gloss: מרגש }
+          - { term: prevedibile, gloss: צפוי }
+          - { term: scontato, gloss: צפוי מדי / לא מקורי }
+          - {
+              term: ho raccontato / hai raccontato / ha raccontato,
+              gloss: סיפרתי / סיפרת / הוא סיפר,
+            }
+          - {
+              term: raccontavo / raccontavi / raccontava,
+              gloss: הייתי מספר / היית מספר / הוא היה מספר,
+            }
+          - { term: ho descritto / hai descritto / ha descritto, gloss: תיארתי / תיארת / הוא תיאר }
+          - {
+              term: descrivevo / descrivevi / descriveva,
+              gloss: הייתי מתאר / היית מתאר / הוא היה מתאר,
+            }
+          - { term: ho seguito / hai seguito / ha seguito, gloss: עקבתי / עקבת / הוא עקב }
+          - { term: seguivo / seguivi / seguiva, gloss: הייתי עוקב / היית עוקב / הוא היה עוקב }
+          - {
+              term: ho interpretato / hai interpretato / ha interpretato,
+              gloss: גילמתי / גילמת / הוא גילם תפקיד,
+            }
+          - {
+              term: interpretavo / interpretavi / interpretava,
+              gloss: הייתי מגלם / היית מגלם / הוא היה מגלם,
+            }
+          - { term: ho notato / hai notato / ha notato, gloss: שמתי לב / שמת לב / הוא שם לב }
+          - { term: notavo / notavi / notava, gloss: הייתי שם לב / היית שם לב / הוא היה שם לב }
+          - {
+              term: mi è piaciuto / ti è piaciuto / gli è piaciuto,
+              gloss: אהבתי את זה / אהבת את זה / הוא אהב את זה,
+            }
+          - {
+              term: mi piaceva / ti piaceva / gli piaceva,
+              gloss: אהבתי את זה (בדרך כלל) / אהבת / הוא אהב,
+            }
+
+vocabulary:
+  - slug: televisione-e-film-passato
+    title: 'Televisione e film: raccontare il passato'
+    items: *televisione-e-film-passato-words
+
+activities:
+  - slug: televisione-e-film-passato-imperfetto
+    title: 'Imperfetto: guardavo, era, mi piaceva'
+    minutes: 8
+    items:
+      - id: guardavo
+        type: multipleChoice
+        prompt: Quando ero bambino ___ spesso *Toy Story*.
+        options:
+          - { text: guardavo, correct: true }
+          - {
+              text: ho guardato,
+              feedback: "*Quando ero bambino* e *spesso* parlano di un'abitudine: usiamo l'imperfetto, *guardavo*.",
+            }
+          - {
+              text: guardo,
+              feedback: "*Guardo* è presente. Per un'abitudine del passato usiamo *guardavo*.",
+            }
+      - id: era
+        type: fillBlank
+        prompt: Completa con l'imperfetto di *essere*.
+        text: Il mio film preferito ___ *Shrek*.
+        blanks: [[era]]
+      - id: piacevano
+        type: fillBlank
+        prompt: Completa con l'imperfetto di *piacere*.
+        text: Da adolescente mi ___ le commedie.
+        blanks: [[piacevano]]
+      - id: forme
+        type: matching
+        prompt: Unisci ogni verbo alla sua forma di *io* all'imperfetto.
+        pairs:
+          - [guardare, guardavo]
+          - [essere, ero]
+          - [avere, avevo]
+          - [preferire, preferivo]
+          - [raccontare, raccontavo]
+      - id: regola-imperfetto
+        type: trueFalse
+        prompt: "L'imperfetto si usa per le abitudini e le descrizioni nel passato: *Il film era divertente.*"
+        answer: true
+        feedback:
+          correct: "Giusto! *Era* descrive com'era il film."
+          incorrect: "L'imperfetto descrive abitudini e situazioni del passato: *guardavo*, *era*, *mi piaceva*."
+      - id: ogni-sabato
+        type: multipleChoice
+        prompt: Lo ___ con mio fratello ogni sabato.
+        options:
+          - { text: guardavo, correct: true }
+          - {
+              text: ho guardato,
+              feedback: "*Ogni sabato* indica un'abitudine: usiamo l'imperfetto, *guardavo*.",
+            }
+          - {
+              text: guarderò,
+              feedback: "*Guarderò* è futuro. Per un'abitudine del passato usiamo *guardavo*.",
+            }
+      - id: ero
+        type: fillBlank
+        prompt: Completa con l'imperfetto di *essere*.
+        text: Quando ___ piccola, guardavo i cartoni animati.
+        blanks: [[ero, io ero]]
+      - id: ordina-piacevano
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: Mi piacevano i film d'animazione.
+
+  - slug: televisione-e-film-passato-passato-prossimo
+    title: 'Passato prossimo: ho visto, sono andato, mi è piaciuto'
+    minutes: 8
+    items:
+      - id: sono-andato
+        type: multipleChoice
+        prompt: 'Marco: «Ieri ___ al cinema.»'
+        options:
+          - { text: sono andato, correct: true }
+          - {
+              text: ho andato,
+              feedback: '*Andare* forma il passato prossimo con *essere*: *sono andato*.',
+            }
+          - {
+              text: andavo,
+              feedback: "*Ieri* indica un'azione specifica e finita: usiamo il passato prossimo, *sono andato*.",
+            }
+      - id: ho-visto
+        type: fillBlank
+        prompt: Completa con il passato prossimo di *vedere* o *guardare*.
+        text: "L'ultimo film che ___ è stato *Coco*."
+        blanks: [[ho visto, ho guardato]]
+      - id: piaciuta
+        type: multipleChoice
+        prompt: 'Ti è piaciuta la serie? — Sì, mi è ___ molto.'
+        options:
+          - { text: piaciuta, correct: true }
+          - { text: piaciuto, feedback: '*La serie* è femminile: *mi è piaciuta*.' }
+          - {
+              text: piaceva,
+              feedback: 'La domanda è al passato prossimo (*ti è piaciuta*): rispondiamo *mi è piaciuta*.',
+            }
+      - id: andata
+        type: fillBlank
+        prompt: Sara racconta. Completa con il participio di *andare*.
+        text: Sono ___ al cinema con mia sorella.
+        blanks: [[andata]]
+      - id: ho-andato
+        type: trueFalse
+        prompt: 'Con *andare* usiamo *avere*: *Ho andato al cinema.*'
+        answer: false
+        feedback:
+          correct: 'Giusto! *Andare* usa *essere*: *Sono andato / andata al cinema.*'
+          incorrect: '*Andare* usa *essere*, non *avere*: *Sono andato / andata al cinema.*'
+      - id: intervista
+        type: matching
+        prompt: Unisci ogni domanda alla sua risposta.
+        pairs:
+          - [Qual è stato l'ultimo film che hai visto?, Ho visto Titanic.]
+          - [Dove l'hai visto?, L'ho visto al cinema.]
+          - [Con chi l'hai guardato?, L'ho guardato con mia sorella.]
+          - [Ti è piaciuto?, 'Sì, mi è piaciuto molto.']
+          - [Che cosa è successo nella storia?, Una grande nave è partita e poi è affondata.]
+      - id: un-giorno
+        type: multipleChoice
+        prompt: Quando ero bambino guardavo spesso *Shrek*. Un giorno ___ *Shrek* al cinema con mio padre.
+        options:
+          - { text: ho visto, correct: true }
+          - {
+              text: vedevo,
+              feedback: "*Un giorno* indica un'azione specifica, successa una volta: usiamo il passato prossimo, *ho visto*.",
+            }
+          - { text: vedo, feedback: '*Vedo* è presente. Qui raccontiamo il passato: *ho visto*.' }
+      - id: ordina-visto
+        type: reorderSentence
+        prompt: Metti le parole in ordine.
+        sentence: L'ho visto a casa con mia sorella.
