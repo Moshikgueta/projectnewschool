@@ -19,6 +19,8 @@ export type ActivityDetail = {
   cycleId: string;
   cycleTitle: string;
   courseLang: string;
+  /** The course is a pilot (ADR-040). */
+  pilot: boolean;
   phase: Phase;
   scoring: ScoringMode;
   minutes: number | null;
@@ -36,7 +38,7 @@ export async function getActivity(activityId: string): Promise<ActivityDetail | 
     .from('activities')
     .select(
       `id, title, course_id, cycle_id, phase, scoring_mode, est_minutes, instructions,
-       cycle:cycles ( title, course:courses ( level:levels ( language:languages ( code ) ) ) ),
+       cycle:cycles ( title, course:courses ( pilot, level:levels ( language:languages ( code ) ) ) ),
        items:activity_items ( id, type, prompt, data, points, position )`,
     )
     .eq('id', activityId)
@@ -50,6 +52,7 @@ export async function getActivity(activityId: string): Promise<ActivityDetail | 
     cycleId: data.cycle_id,
     cycleTitle: data.cycle?.title ?? '',
     courseLang: data.cycle?.course?.level?.language?.code ?? 'en',
+    pilot: data.cycle?.course?.pilot ?? false,
     phase: data.phase,
     scoring: data.scoring_mode,
     minutes: data.est_minutes,

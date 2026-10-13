@@ -77,6 +77,37 @@ describe('content files', () => {
     expect(problems.map((p) => p.message)).toEqual(['Duplicate term "mother"']);
   });
 
+  it('refuse a published cycle with open review questions, unless the course is a pilot', () => {
+    const open = cycle({ status: 'published', review: ['Is the dialogue natural?'] });
+    expect(run(open).problems).toEqual([
+      expect.objectContaining({
+        path: 'status',
+        message: expect.stringMatching(/^Published with 1 open review question\(s\)/),
+      }),
+    ]);
+    // In review, or published with every question answered: fine.
+    expect(
+      run(cycle({ status: 'in_review', review: ['Is the dialogue natural?'] })).problems,
+    ).toEqual([]);
+    expect(run(cycle({ status: 'published' })).problems).toEqual([]);
+    // A pilot course (owner decision 2026-10-13, ADR-040) publishes them while review goes on.
+    const pilot = validateContent([
+      { file: 'content/en-1/course.yaml', data: { ...course, status: 'published', pilot: true } },
+      { file: 'content/en-1/01.yaml', data: open },
+    ]);
+    expect(pilot.problems).toEqual([]);
+    expect(pilot.courses[0]?.pilot).toBe(true);
+    expect(pilot.cycles[0]?.review).toEqual(['Is the dialogue natural?']);
+  });
+
+  it('read `pilot` as false unless set, and only as a yes/no', () => {
+    expect(run(cycle()).courses[0]?.pilot).toBe(false);
+    const bad = validateContent([
+      { file: 'content/en-1/course.yaml', data: { ...course, pilot: 'yes' } },
+    ]);
+    expect(bad.problems).toEqual([expect.objectContaining({ path: 'pilot' })]);
+  });
+
   it('reject unknown fields, so typos are not silently ignored', () => {
     const problems = run(cycle({ titel: 'Family' })).problems;
     expect(problems[0]?.message).toMatch(/Unrecognized key/);

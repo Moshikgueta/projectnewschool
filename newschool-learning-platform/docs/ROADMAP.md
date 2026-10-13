@@ -271,6 +271,30 @@ Planned scope:
 - Forms for language/level/course/cycle; block editor; activity editor; media upload;
   draft → review → publish; audit trail; group and enrollment management UI expanded.
 
+### Pilot release _(ready locally; waits for the school's accounts)_
+
+Decision of the school owner, 2026-10-13: **open all courses to students right away,
+labelled "Pilot", and fix mistakes as students report them** (ADR-040). Hosting waits for
+the school's own Supabase and Vercel accounts; the launch day is written out step by step
+in [GO-LIVE.md](GO-LIVE.md).
+
+- [x] `pilot` on courses (course.yaml and the course editor); students see a
+      "פיילוט / Pilot" badge and a line inviting reports on the home, notebook, workbook,
+      practice and exercise pages
+- [x] All 18 courses published as pilots and all 320 cycles published by a repeatable
+      script (`pnpm content:publish-pilot`); every `review:` list kept for teachers; the
+      validator refuses open review questions on a published cycle unless its course is a
+      pilot
+- [x] "Report a mistake" on every exercise question and notebook/workbook page
+      (`content_reports`: own-name, visible content only, 10 an hour, length limits);
+      `/manage/reports` (all courses, link to the editor, resolve/reopen) and
+      `/teach/reports` (the teacher's courses)
+- [x] `content:import` can target production from the operator's machine
+      (`APP_ENV=production`, `--production`, `--confirm=<host>`)
+- [x] Tests: 40 pgTAP, 1 API, 2 end-to-end, 20 unit
+- [ ] Launch: [GO-LIVE.md](GO-LIVE.md) on the day the accounts exist
+- [ ] Teachers answer the open `review:` questions course by course; then `pilot: false`
+
 ### Phase 9 — Analytics and mature gamification
 
 - Item difficulty and error-pattern reports; engagement over time (privacy-conscious);
@@ -378,5 +402,7 @@ Docs. Then transfer the repository into the New School organization.
 
 ## Running TODO
 
+- Launch the pilot with [GO-LIVE.md](GO-LIVE.md) once the school's Supabase and Vercel
+  accounts exist.
 - Re-check vendor pricing before committing budgets (figures in DEPLOYMENT.md are estimates).
 - Decide on Supabase Branching vs a shared staging database for previews once migrations churn.

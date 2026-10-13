@@ -13,6 +13,7 @@ import { CourseSwitcher } from '@/ui/CourseSwitcher';
 import { ForwardArrow } from '@/ui/icons';
 import { EmptyState, PageTitle, Section } from '@/ui/Page';
 import { ProgressBar, Stat } from '@/ui/Progress';
+import { PilotNotice } from './PilotNotice';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('learn.dashboard');
@@ -126,6 +127,7 @@ export default async function StudentHome({
         >
           {greeting}
         </PageTitle>
+        <PilotNotice pilot={course.pilot} />
         <div className="flex flex-wrap items-center gap-4">
           <ButtonLink href={continueHref(data.continueItem)}>
             {t('continueCta')}

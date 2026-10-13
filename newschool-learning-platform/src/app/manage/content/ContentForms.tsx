@@ -68,11 +68,13 @@ export function CourseForm({
   title,
   description,
   status,
+  pilot,
 }: {
   courseId: string;
   title: string;
   description: string;
   status: Status;
+  pilot: boolean;
 }) {
   const t = useTranslations('cms.course');
   return (
@@ -96,6 +98,15 @@ export function CourseForm({
             max={2000}
           />
           <StatusField id="course-status" value={status} />
+          <label className="flex min-h-11 items-center gap-3 text-[0.9375rem]">
+            <input
+              type="checkbox"
+              name="pilot"
+              defaultChecked={pilot}
+              className="size-5 accent-primary"
+            />
+            {t('pilot')}
+          </label>
           <Button type="submit" variant="secondary" loading={pending} className="self-start">
             {t('save')}
           </Button>

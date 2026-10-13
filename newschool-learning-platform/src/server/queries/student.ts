@@ -10,6 +10,8 @@ export type MyCourse = {
   languageName: string;
   languageCode: string;
   direction: 'ltr' | 'rtl';
+  /** Published as a pilot (ADR-040). */
+  pilot: boolean;
 };
 
 /**
@@ -24,7 +26,7 @@ export async function listMyCourses(userId: string): Promise<MyCourse[]> {
     .select(
       `group:groups (
          id, name,
-         course:courses ( id, title, level:levels ( title, language:languages ( name, code, direction ) ) )
+         course:courses ( id, title, pilot, level:levels ( title, language:languages ( name, code, direction ) ) )
        )`,
     )
     .eq('student_id', userId)
@@ -45,6 +47,7 @@ export async function listMyCourses(userId: string): Promise<MyCourse[]> {
         languageName: language.name,
         languageCode: language.code,
         direction: language.direction,
+        pilot: course.pilot,
       },
     ];
   });

@@ -5,6 +5,7 @@ import { getPracticeList, type PracticeActivity } from '@/server/queries/activit
 import { Badge, CardLink } from '@/ui/Card';
 import { CourseSwitcher } from '@/ui/CourseSwitcher';
 import { EmptyState, PageTitle, Section } from '@/ui/Page';
+import { PilotNotice } from '../PilotNotice';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('activity.practice');
@@ -72,6 +73,11 @@ export default async function PracticePage({
           />
         ) : null}
       </div>
+      {course ? (
+        <div className="-mt-2 mb-6">
+          <PilotNotice pilot={course.pilot} />
+        </div>
+      ) : null}
       {cycles.length === 0 ? (
         <EmptyState title={t('empty')}>{t('emptyBody')}</EmptyState>
       ) : (

@@ -52,12 +52,15 @@ export async function saveCourse(_prev: ManageState, formData: FormData): Promis
       title: z.string().trim().min(1).max(160),
       description: z.string().trim().max(2000),
       status,
+      pilot: z.boolean(),
     })
     .safeParse({
       courseId: formData.get('courseId'),
       title: formData.get('title'),
       description: formData.get('description') ?? '',
       status: formData.get('status'),
+      // A checkbox: present when ticked (ADR-040).
+      pilot: formData.get('pilot') === 'on',
     });
   if (!parsed.success) return say('invalid');
   const { courseId, ...course } = parsed.data;

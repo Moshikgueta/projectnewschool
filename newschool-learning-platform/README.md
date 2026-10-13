@@ -30,6 +30,7 @@ to run it.
 | [docs/CONTENT-AUDIT.md](docs/CONTENT-AUDIT.md)     | What the existing notebooks contain and what that changes                  |
 | [docs/ROADMAP.md](docs/ROADMAP.md)                 | MVP, phases, decisions needed, Phase 0 checklist, TODO                     |
 | [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)           | GitHub org setup, environments, CI/CD, env vars, backups, costs            |
+| [docs/GO-LIVE.md](docs/GO-LIVE.md)                 | Step by step for launch day: Supabase, Vercel, content import, first users |
 
 ## Architecture overview
 
@@ -103,6 +104,7 @@ Secrets live in Vercel and GitHub Actions secrets only.
 | `pnpm check:tokens`                       | No raw colours, no left/right utilities (brand + RTL) |
 | `pnpm content:validate`                   | Check every file in `content/` (also runs in CI)      |
 | `pnpm content:import`                     | Upsert `content/` into the local database by slug     |
+| `pnpm content:publish-pilot`              | Publish every course in `content/` as a pilot         |
 | `pnpm test:e2e`                           | End-to-end and accessibility tests (Playwright + axe) |
 | `pnpm build`                              | Production build                                      |
 | `pnpm exec supabase migration new <name>` | Create a database migration                           |

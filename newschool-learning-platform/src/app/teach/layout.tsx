@@ -18,6 +18,7 @@ export default async function TeachLayout({ children }: { children: ReactNode })
         { href: '/teach', label: t('teach.nav.groups'), icon: 'groups' },
         { href: '/teach/exercises', label: t('exercises.nav'), icon: 'exercises' },
         { href: '/teach/timetable', label: t('teach.nav.timetable'), icon: 'timetable' },
+        { href: '/teach/reports', label: t('reports.list.nav'), icon: 'reports' },
         { href: '/teach/tools', label: t('staff.nav.tools'), icon: 'tools' },
       ]}
     >

@@ -129,6 +129,18 @@ The pipeline in CONTENT-MODEL.md §6.3 stands, with three refinements:
 | C3  | Shared cycle catalogue across languages (ADR-021)? | **No.** Cycles stay per course. ADR-021 is recorded as rejected.                                                                                                                                                                           |
 | C4  | Pilot course                                       | **English Foundations (L1), owned by New School.** Its files should still move to a school-owned Google account (§6).                                                                                                                      |
 
+## 5a. Pilot release (2026-10-13)
+
+By decision of the school owner, **all 18 converted courses are published to students as a
+pilot** ("open all courses right away, with a 'pilot' label, and fix errors as students
+report them"; ADR-040). Every `course.yaml` now has `status: published` and `pilot: true`,
+and every cycle `status: published`, set by `pnpm content:publish-pilot` rather than by
+hand. **Teacher review continues**: each cycle keeps its `review:` list of open questions
+for the reviewing teacher (never shown to students), and students report mistakes from
+each question and page ("דווח על טעות"). The validator allows open review questions on a
+published cycle only in a pilot course, so ending a course's pilot requires its review to
+be finished first.
+
 ## 6. Ownership warning
 
 The audited notebooks are owned by a **personal Gmail account** and shared with the

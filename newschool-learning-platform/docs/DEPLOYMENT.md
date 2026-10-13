@@ -1,5 +1,7 @@
 # Deployment, environments and operations
 
+> Launch-day steps for the pilot release: [GO-LIVE.md](GO-LIVE.md).
+>
 > Status: **Proposed — nothing is provisioned yet.** Every account below must be created
 > **by and for New School**, never under a personal account, and have **at least two
 > owners**.

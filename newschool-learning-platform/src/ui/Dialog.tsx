@@ -14,22 +14,30 @@ import {
  * Modal dialog: focus is trapped and restored, Escape closes it, and the
  * rest of the page is hidden from assistive technology while it is open.
  */
+const TRIGGERS = {
+  button:
+    'inline-flex min-h-11 items-center rounded-md border border-primary bg-primary-light px-5 font-medium text-primary hover:bg-surface-secondary',
+  /** A quiet text button, for a secondary action next to content. */
+  quiet:
+    'inline-flex min-h-11 items-center px-1 text-sm font-medium text-muted underline-offset-4 hover:text-fg hover:underline',
+} as const;
+
 export function Dialog({
   trigger,
   title,
   closeLabel,
+  triggerStyle = 'button',
   children,
 }: {
   trigger: string;
   title: string;
   closeLabel: string;
+  triggerStyle?: keyof typeof TRIGGERS;
   children: ReactNode;
 }) {
   return (
     <DialogTrigger>
-      <AriaButton className="inline-flex min-h-11 items-center rounded-md border border-primary bg-primary-light px-5 font-medium text-primary hover:bg-surface-secondary">
-        {trigger}
-      </AriaButton>
+      <AriaButton className={TRIGGERS[triggerStyle]}>{trigger}</AriaButton>
       <ModalOverlay
         isDismissable
         className="fixed inset-0 z-50 flex items-end justify-center bg-fg/40 p-4 sm:items-center"

@@ -88,6 +88,7 @@ export default async function ContentCoursePage({
               title={course.title}
               description={course.description}
               status={course.status}
+              pilot={course.pilot}
             />
           </Card>
         </Section>

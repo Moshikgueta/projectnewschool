@@ -6,11 +6,13 @@ import { isAutoGraded } from '@/content/items';
 import { ActivityPlayer } from '@/content/player/ActivityPlayer';
 import { NotebookView } from '@/content/render/NotebookView';
 import { checkAnswer, finishAttempt, startActivity } from '@/server/actions/attempts';
+import { reportMistake } from '@/server/actions/reports';
 import { requireArea } from '@/server/auth/session';
 import { getMyAttempt, type AttemptView } from '@/server/queries/activities';
 import { Button, ButtonLink } from '@/ui/Button';
 import { Badge } from '@/ui/Card';
 import { PageTitle } from '@/ui/Page';
+import { PilotNotice } from '../../PilotNotice';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('activity');
@@ -38,6 +40,7 @@ export default async function AttemptPage({ params }: { params: Promise<{ attemp
         {activity.cycleTitle}
       </ButtonLink>
       <PageTitle subtitle={t(`scoring.${activity.scoring}`)}>{activity.title}</PageTitle>
+      <PilotNotice pilot={activity.pilot} />
       {attempt.status === 'in_progress' ? (
         <ActivityPlayer
           attemptId={attempt.id}
@@ -45,6 +48,7 @@ export default async function AttemptPage({ params }: { params: Promise<{ attemp
           lang={activity.courseLang}
           check={checkAnswer}
           finish={finishAttempt}
+          report={{ action: reportMistake, activityId: activity.id }}
           items={activity.items.map((entry) => ({
             id: entry.rawId,
             item: entry.item,

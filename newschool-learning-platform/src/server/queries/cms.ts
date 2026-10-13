@@ -22,6 +22,7 @@ export type ContentCourse = {
   title: string;
   description: string;
   status: Status;
+  pilot: boolean;
   levelTitle: string;
   languageCode: string;
   cycles: {
@@ -39,7 +40,7 @@ export async function getContentCourse(courseId: string): Promise<ContentCourse 
   const { data, error } = await supabase
     .from('courses')
     .select(
-      `id, slug, title, description, status,
+      `id, slug, title, description, status, pilot,
        level:levels ( title, language:languages ( code ) ),
        cycles ( id, slug, title, communicative_goal, position, status )`,
     )
@@ -53,6 +54,7 @@ export async function getContentCourse(courseId: string): Promise<ContentCourse 
     title: data.title,
     description: data.description,
     status: data.status,
+    pilot: data.pilot,
     levelTitle: data.level?.title ?? '',
     languageCode: data.level?.language?.code ?? 'en',
     cycles: data.cycles

@@ -212,6 +212,22 @@ an assignment with `audience = 'selected'` reaches only its `assignment_recipien
 - `enrollments_select_office`: the office (MFA) reads enrolments, to offer a group's
   students when it assigns.
 
+Pilot release and mistake reports (migration `…2000_pilot_and_content_reports`,
+ADR-040): `courses.pilot` (boolean, default false; read like the rest of the course row).
+`content_reports` (`reporter_id`, `course_id`, `activity_id` + optional `item_id`, or
+`book_section_id`, `message` ≤ 500, `suggested_answer` ≤ 300, `status` open/resolved,
+`created_at`, `resolved_by`, `resolved_at`; composite foreign keys keep each target in
+its course):
+
+| Policy / rule             | Who                                                                                                                                                                                  |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `content_reports_select`  | the reporter (own rows); teachers of the course (`app.teaches_course`); the manager (MFA). Not the office, not other students                                                        |
+| `content_reports_insert`  | `reporter_id = auth.uid()`, `app.is_enrolled_in_course(course_id)`, and the exercise (its question) or page `exists` under the caller's RLS; insert grant on the "what" columns only |
+| `content_reports_resolve` | update by teachers of the course or the manager (MFA); update grant on `status` only                                                                                                 |
+| trigger `…_before_insert` | forces `open` and `created_at = now()`; at most `app.content_reports_per_hour()` (10) per reporter per hour, else `PT429`                                                            |
+| trigger `…_before_update` | sets `resolved_by = auth.uid()` and `resolved_at = now()` on resolving, clears both on reopening; audit trigger records every change                                                 |
+| delete                    | nobody (no grant)                                                                                                                                                                    |
+
 Note the admin column: **admin is not a superset of everything.** Admin manages accounts
 and settings; seeing student learning data requires the pedagogical role (a person can
 hold both). This is least privilege applied to the most powerful account.

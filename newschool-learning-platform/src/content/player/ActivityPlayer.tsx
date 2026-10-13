@@ -8,6 +8,7 @@ import { Button } from '@/ui/Button';
 import { ProgressBar } from '@/ui/Progress';
 import type { PublicItem } from '../items';
 import { isComplete, ItemInput, type Draft } from './ItemInput';
+import { ReportMistake, type ReportAction } from './ReportMistake';
 import type { CheckAction, CheckResult } from './types';
 
 export type PlayerItem = {
@@ -34,6 +35,7 @@ export function ActivityPlayer({
   lang,
   check,
   finish,
+  report,
 }: {
   attemptId: string;
   items: PlayerItem[];
@@ -41,6 +43,8 @@ export function ActivityPlayer({
   lang: string;
   check: CheckAction;
   finish: (formData: FormData) => Promise<void>;
+  /** "Report a mistake" on each question (ADR-040). */
+  report?: { action: ReportAction; activityId: string };
 }) {
   const t = useTranslations('activity');
   const firstOpen = items.findIndex(
@@ -144,13 +148,25 @@ export function ActivityPlayer({
           <FeedbackView feedback={fb} status={status} scored={scored} />
         </div>
 
-        {current.item && !locked ? (
-          <div>
-            <Button type="button" onClick={onCheck} loading={pending}>
-              {scored || current.item.type === 'shortAnswer' || current.item.type === 'reflection'
-                ? t('saveAnswer')
-                : t('check')}
-            </Button>
+        {(current.item && !locked) || report ? (
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            {current.item && !locked ? (
+              <Button type="button" onClick={onCheck} loading={pending}>
+                {scored || current.item.type === 'shortAnswer' || current.item.type === 'reflection'
+                  ? t('saveAnswer')
+                  : t('check')}
+              </Button>
+            ) : (
+              <span />
+            )}
+            {report ? (
+              <ReportMistake
+                key={current.id}
+                action={report.action}
+                activityId={report.activityId}
+                itemId={current.id}
+              />
+            ) : null}
           </div>
         ) : null}
       </section>

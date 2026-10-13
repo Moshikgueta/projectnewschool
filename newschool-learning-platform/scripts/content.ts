@@ -6,10 +6,11 @@
 //                                 --overwrite-app-edits is passed)
 //
 // Import runs against the local database by default. A staging import needs
-// APP_ENV=staging and --confirm=<host of NEXT_PUBLIC_SUPABASE_URL>. It always
-// refuses production: content reaches production through review in the CMS.
-// The secret key is read from the environment (.env.local locally), never
-// from this repository.
+// APP_ENV=staging and --confirm=<host of NEXT_PUBLIC_SUPABASE_URL>; a
+// production import (the pilot release and later fixes, ADR-040) needs
+// APP_ENV=production, --production and --confirm=<host>, run by the operator
+// from their own machine (docs/GO-LIVE.md). The secret key is read from the
+// environment (.env.local locally), never from this repository.
 
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
@@ -17,6 +18,7 @@ import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 import { parseDocument } from 'yaml';
 import { activityPlaceholder, type AuthoredActivity } from '../src/content/activities-file';
 import { validateContent, type CourseFile, type CycleFile } from '../src/content/files';
+import { decideImportTarget, type ImportTarget } from '../src/content/import-target';
 import type { Block } from '../src/content/schema';
 import { planActivityItems, type ActivitySource } from '../src/server/content/activity-writer';
 import type { Database } from '../src/server/db.types';
@@ -104,6 +106,7 @@ async function importCourse(db: Client, c: CourseFile): Promise<string> {
           description: c.description,
           instruction_locale: c.instructionLocale,
           status: c.status,
+          pilot: c.pilot,
         },
         { onConflict: 'slug' },
       )
@@ -331,28 +334,16 @@ async function importCycle(
   }
 }
 
-function target(): { url: string; secret: string } {
-  if (existsSync('.env.local')) process.loadEnvFile('.env.local');
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? '';
-  const secret = process.env.SUPABASE_SECRET_KEY ?? '';
-  if (!url || !secret)
-    throw new Error('NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SECRET_KEY are required');
-
-  const appEnv = process.env.APP_ENV ?? 'local';
-  if (appEnv === 'production')
-    throw new Error('Refusing to import into production. Use the CMS review flow.');
-  const local = /^http:\/\/(127\.0\.0\.1|localhost)(:\d+)?\/?$/.test(url);
-  if (!local) {
-    const confirm = process.argv
-      .find((a) => a.startsWith('--confirm='))
-      ?.slice('--confirm='.length);
-    if (appEnv !== 'staging' || confirm !== new URL(url).host) {
-      throw new Error(
-        `Refusing to import into ${url}. For staging set APP_ENV=staging and pass --confirm=${new URL(url).host}.`,
-      );
-    }
-  }
-  return { url, secret };
+function target(): ImportTarget {
+  // .env.local is for the local database only: a staging or production
+  // import takes its URL and key from the operator's own environment.
+  if (existsSync('.env.local') && !process.env.APP_ENV) process.loadEnvFile('.env.local');
+  return decideImportTarget({
+    url: process.env.NEXT_PUBLIC_SUPABASE_URL ?? '',
+    secret: process.env.SUPABASE_SECRET_KEY ?? '',
+    appEnv: process.env.APP_ENV,
+    argv: process.argv,
+  });
 }
 
 async function main() {
@@ -370,16 +361,21 @@ async function main() {
     process.exit(1);
   }
   console.log(`✓ ${count} file(s): ${courses.length} course(s), ${cycles.length} cycle(s)`);
+  const pilots = new Set(courses.filter((c) => c.pilot).map((c) => c.slug));
   for (const c of cycles) {
-    if (c.review.length) console.log(`  ${c.file}: ${c.review.length} open review question(s)`);
+    if (c.review.length)
+      console.log(
+        `  ${c.file}: ${c.review.length} open review question(s)${c.status === 'published' && pilots.has(c.course) ? ' (published as pilot)' : ''}`,
+      );
   }
   if (command === 'validate') return;
 
-  const { url, secret } = target();
+  const { url, secret, env } = target();
+  if (env !== 'local') console.log(`→ importing into ${env}: ${url}`);
   const db = createClient<Database>(url, secret, { auth: { persistSession: false } });
   for (const course of courses) {
     const courseId = await importCourse(db, course);
-    console.log(`→ course ${course.slug}`);
+    console.log(`→ course ${course.slug} (${course.status}${course.pilot ? ', pilot' : ''})`);
     for (const cycle of cycles
       .filter((c) => c.course === course.slug)
       .sort((a, b) => a.position - b.position)) {

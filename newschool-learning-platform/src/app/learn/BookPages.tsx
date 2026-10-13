@@ -12,6 +12,9 @@ import { Button, ButtonLink } from '@/ui/Button';
 import { Badge, CardLink } from '@/ui/Card';
 import { CourseSwitcher } from '@/ui/CourseSwitcher';
 import { EmptyState, PageTitle, Section } from '@/ui/Page';
+import { reportMistake } from '@/server/actions/reports';
+import { ReportMistake } from '@/content/player/ReportMistake';
+import { PilotNotice } from './PilotNotice';
 
 // The notebook (in class) and the workbook (on your own) are both books of
 // sections, cycle by cycle; these two pages serve both.
@@ -47,6 +50,11 @@ export async function BookListPage({
           />
         ) : null}
       </div>
+      {course ? (
+        <div className="-mt-2 mb-6">
+          <PilotNotice pilot={course.pilot} />
+        </div>
+      ) : null}
       {cycles.length === 0 ? (
         <EmptyState title={tb('empty')}>{t('emptyBody')}</EmptyState>
       ) : (
@@ -112,6 +120,7 @@ export async function BookSectionPage({ kind, sectionId }: { kind: BookKind; sec
       <PageTitle subtitle={t('section.cycle', { title: section.cycleTitle })}>
         {section.title}
       </PageTitle>
+      <PilotNotice pilot={section.pilot} />
       {hasAnswers ? <p className="text-sm text-muted">{t('privateNote')}</p> : null}
       <NotebookView
         view="student"
@@ -123,7 +132,7 @@ export async function BookSectionPage({ kind, sectionId }: { kind: BookKind; sec
         aiTutorUrl={section.aiTutorUrl}
         activities={activities}
       />
-      <footer className="flex items-center gap-3 border-t border-border pt-6">
+      <footer className="flex flex-wrap items-center justify-between gap-3 border-t border-border pt-6">
         {section.status === 'completed' ? (
           <Badge tone="success">{t('section.finished')}</Badge>
         ) : (
@@ -132,6 +141,7 @@ export async function BookSectionPage({ kind, sectionId }: { kind: BookKind; sec
             <Button type="submit">{t('section.finish')}</Button>
           </form>
         )}
+        <ReportMistake action={reportMistake} sectionId={section.id} />
       </footer>
     </article>
   );

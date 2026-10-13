@@ -13,6 +13,7 @@ import {
   ClipboardText,
   Door,
   Exam,
+  Flag,
   Gear,
   House,
   ListChecks,
@@ -41,6 +42,7 @@ export const ICONS = {
   resources: BookBookmark,
   exercises: Exam,
   student: Student,
+  reports: Flag,
 } as const;
 
 export type IconName = keyof typeof ICONS;

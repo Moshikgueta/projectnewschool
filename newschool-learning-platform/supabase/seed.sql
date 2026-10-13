@@ -14,6 +14,8 @@
 --   manager    manager@example.com     pedagogical manager (needs MFA for manager powers)
 --   admin      admin@example.com       admin (needs MFA for admin powers)
 --   office     office@example.com      school office: rooms and timetable (needs MFA)
+--
+--   Spanish L1 is a pilot course (badge + "report a mistake"); French L1 is not.
 
 -- ── accounts ────────────────────────────────────────────────────────────────
 with people (id, email, display_name) as (
@@ -77,6 +79,9 @@ insert into public.courses (id, level_id, slug, title, description, instruction_
    'Français niveau 1 (fixture)', 'Local test course', 'he', 'published', now()),
   ('30000000-0000-4000-8000-000000000003', '20000000-0000-4000-8000-000000000002', 'espanol-nivel-2-draft',
    'Español nivel 2 (draft fixture)', 'Unpublished test course', 'he', 'draft', null);
+-- Spanish L1 is published as a pilot (ADR-040): students see a "Pilot" badge
+-- and can report mistakes. French L1 is a regular published course.
+update public.courses set pilot = true where id = '30000000-0000-4000-8000-000000000001';
 
 insert into public.cycles (id, course_id, slug, title, communicative_goal, position, status) values
   ('40000000-0000-4000-8000-000000000001', '30000000-0000-4000-8000-000000000001', 'presentarse', 'Introducing yourself', 'Greet people and say who you are', 1, 'published'),

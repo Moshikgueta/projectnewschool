@@ -183,6 +183,32 @@ nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Polic
   it) is the same 404 as a missing page (E2E). Its data is read with the teacher's own
   session, so RLS limits it again.
 
+### Pilot release and mistake reports (ADR-040)
+
+- ☑ **A student reports only content they can see, in their own name**: the insert policy
+  on `content_reports` requires `reporter_id = auth.uid()`, an active enrolment in the
+  course, and that the exercise (and its question) or page is visible to them under the
+  content tables' own RLS (published, in a published course; a staff exercise only
+  through homework they were given). Drafts, other courses and draft courses are refused
+  (pgTAP `16_content_reports`, API and E2E tests). Students may set only the columns that
+  say what the report is about; never the reporter, status, dates or resolver (column
+  grants).
+- ☑ **No student reads another student's report or learns who reported**: students read
+  only their own rows, by id or by filtering on someone else's id (pgTAP, API, E2E).
+  Teachers of the course and the pedagogical manager (MFA) read them and see the
+  reporter's name as far as `profiles` RLS already allows; the office and teachers of
+  other courses see none.
+- ☑ Resolving and reopening: teachers of the course and the manager (MFA) only, changing
+  the status column only; who and when are set by the database in the caller's own name;
+  every change is in the audit log; nobody deletes a report.
+- ☑ Abuse limits in the database: message 1–500 characters, suggested answer ≤ 300;
+  at most 10 reports per student per rolling hour (trigger, serialized per student with an
+  advisory lock; `created_at` is always set by the database, so it cannot be back-dated;
+  SQLSTATE `PT429` → HTTP 429 through the API). Reports render as text, never HTML.
+- ☑ `content:import` reaches production only with `APP_ENV=production`, `--production` and
+  `--confirm=<host>`, from the operator's machine with the secret key typed in
+  ([GO-LIVE.md](GO-LIVE.md) §7); `.env.local` is not read when `APP_ENV` is set.
+
 ### Rate limiting — Phases 1 & 4
 
 - ☐ Auth endpoints: Supabase Auth's built-in limits (tightened), plus CAPTCHA
@@ -193,6 +219,7 @@ nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Polic
   the hosting edge's `x-forwarded-for`; the overall cap holds even if it is spoofed.
 - ☑ Per-user limit on answer submissions: 60 checked answers per minute, enforced in
   the grading action (Phase 4).
+- ☑ Mistake reports: 10 per student per hour, enforced in the database (ADR-040).
 
 ### Storage — Phase 3
 

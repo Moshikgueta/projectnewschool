@@ -462,3 +462,93 @@ describe('homework for selected students (ADR-039), through the API', () => {
     for (const s of [tx, a, b]) await s.auth.signOut();
   });
 });
+
+describe('mistake reports (ADR-040), through the API', () => {
+  const secret = process.env.SUPABASE_SECRET_KEY ?? '';
+  const MARK = 'API test report';
+  const cleanup = () =>
+    createClient<Database>(url, secret, { auth: { persistSession: false } })
+      .from('content_reports')
+      .delete()
+      .like('message', `${MARK}%`);
+
+  beforeAll(async () => {
+    expect(secret, 'SUPABASE_SECRET_KEY must be set for this test’s clean-up').not.toBe('');
+    await cleanup();
+  });
+  afterAll(async () => {
+    await cleanup();
+  });
+
+  it('a student reports in their own name; a classmate cannot read it or rewrite it', async () => {
+    const a = await signedIn('student.a@example.com');
+    const b = await signedIn('student.b@example.com');
+    const sent = await b
+      .from('content_reports')
+      .insert({
+        course_id: IDS.courseSpanish,
+        activity_id: '70000000-0000-4000-8000-000000000001',
+        item_id: IDS.itemSpanish,
+        message: `${MARK}: two answers fit`,
+      })
+      .select('id, reporter_id, status')
+      .single();
+    expect(sent.error).toBeNull();
+    expect(sent.data).toMatchObject({ reporter_id: IDS.studentB, status: 'open' });
+    const id = sent.data!.id;
+
+    // Student A, same group: nothing by id, nothing by filtering on B.
+    expect((await a.from('content_reports').select('id').eq('id', id)).data).toEqual([]);
+    expect(
+      (await a.from('content_reports').select('id').eq('reporter_id', IDS.studentB)).data,
+    ).toEqual([]);
+    // Neither student can resolve it or change what it says.
+    const resolved = await b
+      .from('content_reports')
+      .update({ status: 'resolved' })
+      .eq('id', id)
+      .select('id');
+    expect(resolved.data ?? []).toEqual([]);
+    const rewritten = await b.from('content_reports').update({ message: 'changed' }).eq('id', id);
+    expect(rewritten.error?.code).toBe('42501');
+    // Nor send one in someone else's name.
+    const forged = await a.from('content_reports').insert({
+      reporter_id: IDS.studentB,
+      course_id: IDS.courseSpanish,
+      activity_id: '70000000-0000-4000-8000-000000000001',
+      message: `${MARK}: forged`,
+    });
+    expect(forged.error?.code).toBe('42501');
+
+    // Teacher X (teaches the course) reads and resolves it.
+    const tx = await signedIn('teacher.x@example.com');
+    const done = await tx
+      .from('content_reports')
+      .update({ status: 'resolved' })
+      .eq('id', id)
+      .select('status, resolved_by')
+      .single();
+    expect(done.data).toMatchObject({
+      status: 'resolved',
+      resolved_by: '00000000-0000-4000-8000-0000000000b1',
+    });
+    for (const s of [a, b, tx]) await s.auth.signOut();
+  });
+
+  it('refuses the eleventh report in an hour with HTTP 429', async () => {
+    const d = await signedIn('student.d@example.com');
+    const report = (n: number) => ({
+      course_id: IDS.courseSpanish,
+      activity_id: '70000000-0000-4000-8000-000000000001',
+      message: `${MARK}: ${n}`,
+    });
+    const ten = await d
+      .from('content_reports')
+      .insert(Array.from({ length: 10 }, (_, i) => report(i)));
+    expect(ten.error).toBeNull();
+    const eleventh = await d.from('content_reports').insert(report(11));
+    expect(eleventh.error?.code).toBe('PT429');
+    expect(eleventh.status).toBe(429);
+    await d.auth.signOut();
+  });
+});

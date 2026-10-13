@@ -82,6 +82,8 @@ export type SectionData = {
   cycleTitle: string;
   courseLang: string;
   aiTutorUrl: string | null;
+  /** The course is a pilot (ADR-040). */
+  pilot: boolean;
   blocks: (Block | null)[];
 };
 
@@ -90,7 +92,7 @@ async function loadSection(sectionId: string): Promise<SectionData | null> {
   const { data, error } = await supabase
     .from('book_sections')
     .select(
-      'id, title, blocks, course_id, cycle:cycles ( title ), book:books ( kind, course:courses ( ai_tutor_url, level:levels ( language:languages ( code ) ) ) )',
+      'id, title, blocks, course_id, cycle:cycles ( title ), book:books ( kind, course:courses ( ai_tutor_url, pilot, level:levels ( language:languages ( code ) ) ) )',
     )
     .eq('id', sectionId)
     .maybeSingle();
@@ -104,6 +106,7 @@ async function loadSection(sectionId: string): Promise<SectionData | null> {
     cycleTitle: data.cycle?.title ?? '',
     courseLang: data.book?.course?.level?.language?.code ?? 'en',
     aiTutorUrl: data.book?.course?.ai_tutor_url ?? null,
+    pilot: data.book?.course?.pilot ?? false,
     blocks: parseBlocksForRender(data.blocks),
   };
 }

@@ -8,6 +8,7 @@ import { requireArea } from '@/server/auth/session';
 import { getActivity, listMyAttempts } from '@/server/queries/activities';
 import { Button, ButtonLink } from '@/ui/Button';
 import { PageTitle, Section } from '@/ui/Page';
+import { PilotNotice } from '../../PilotNotice';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('activity');
@@ -51,6 +52,7 @@ export default async function ActivityPage({
       >
         {activity.title}
       </PageTitle>
+      <PilotNotice pilot={activity.pilot} />
       <p className="text-fg-secondary">{t(`scoring.${activity.scoring}`)}</p>
       {activity.instructions.length ? (
         <NotebookView

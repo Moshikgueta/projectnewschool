@@ -493,15 +493,100 @@ isOneToOne: false
                   Relationships: [
                     
                   ]
-                },"courses": {
+                },"content_reports": {
                   Row: {
-                    "ai_tutor_url": string | null,"created_at": string,"description": string,"id": string,"instruction_locale": string,"level_id": string,"published_at": string | null,"slug": string,"status": Database["public"]['Enums']["content_status"],"title": string,"updated_at": string
+                    "activity_id": string | null,"book_section_id": string | null,"course_id": string,"created_at": string,"id": string,"item_id": string | null,"message": string,"reporter_id": string,"resolved_at": string | null,"resolved_by": string | null,"status": Database["public"]['Enums']["report_status"],"suggested_answer": string
                   }
                   Insert: {
-                    "ai_tutor_url"?: string | null,"created_at"?: string,"description"?: string,"id"?: string,"instruction_locale"?: string,"level_id": string,"published_at"?: string | null,"slug": string,"status"?: Database["public"]['Enums']["content_status"],"title": string,"updated_at"?: string
+                    "activity_id"?: string | null,"book_section_id"?: string | null,"course_id": string,"created_at"?: string,"id"?: string,"item_id"?: string | null,"message": string,"reporter_id"?: string,"resolved_at"?: string | null,"resolved_by"?: string | null,"status"?: Database["public"]['Enums']["report_status"],"suggested_answer"?: string
                   }
                   Update: {
-                    "ai_tutor_url"?: string | null,"created_at"?: string,"description"?: string,"id"?: string,"instruction_locale"?: string,"level_id"?: string,"published_at"?: string | null,"slug"?: string,"status"?: Database["public"]['Enums']["content_status"],"title"?: string,"updated_at"?: string
+                    "activity_id"?: string | null,"book_section_id"?: string | null,"course_id"?: string,"created_at"?: string,"id"?: string,"item_id"?: string | null,"message"?: string,"reporter_id"?: string,"resolved_at"?: string | null,"resolved_by"?: string | null,"status"?: Database["public"]['Enums']["report_status"],"suggested_answer"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "content_reports_activity_id_course_id_fkey"
+      columns: ["activity_id","course_id"]
+isOneToOne: false
+      referencedRelation: "activities"
+      referencedColumns: ["id","course_id"]
+    },{
+      foreignKeyName: "content_reports_book_section_id_course_id_fkey"
+      columns: ["book_section_id","course_id"]
+isOneToOne: false
+      referencedRelation: "book_sections"
+      referencedColumns: ["id","course_id"]
+    },{
+      foreignKeyName: "content_reports_course_id_fkey"
+      columns: ["course_id"]
+isOneToOne: false
+      referencedRelation: "courses"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "content_reports_item_id_course_id_fkey"
+      columns: ["item_id","course_id"]
+isOneToOne: false
+      referencedRelation: "activity_items"
+      referencedColumns: ["id","course_id"]
+    },{
+      foreignKeyName: "content_reports_reporter_id_fkey"
+      columns: ["reporter_id"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "content_reports_reporter_id_fkey"
+      columns: ["reporter_id"]
+isOneToOne: false
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "content_reports_reporter_id_fkey"
+      columns: ["reporter_id"]
+isOneToOne: false
+      referencedRelation: "task_assignees"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "content_reports_reporter_id_fkey"
+      columns: ["reporter_id"]
+isOneToOne: false
+      referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "content_reports_resolved_by_fkey"
+      columns: ["resolved_by"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "content_reports_resolved_by_fkey"
+      columns: ["resolved_by"]
+isOneToOne: false
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "content_reports_resolved_by_fkey"
+      columns: ["resolved_by"]
+isOneToOne: false
+      referencedRelation: "task_assignees"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "content_reports_resolved_by_fkey"
+      columns: ["resolved_by"]
+isOneToOne: false
+      referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"courses": {
+                  Row: {
+                    "ai_tutor_url": string | null,"created_at": string,"description": string,"id": string,"instruction_locale": string,"level_id": string,"pilot": boolean,"published_at": string | null,"slug": string,"status": Database["public"]['Enums']["content_status"],"title": string,"updated_at": string
+                  }
+                  Insert: {
+                    "ai_tutor_url"?: string | null,"created_at"?: string,"description"?: string,"id"?: string,"instruction_locale"?: string,"level_id": string,"pilot"?: boolean,"published_at"?: string | null,"slug": string,"status"?: Database["public"]['Enums']["content_status"],"title": string,"updated_at"?: string
+                  }
+                  Update: {
+                    "ai_tutor_url"?: string | null,"created_at"?: string,"description"?: string,"id"?: string,"instruction_locale"?: string,"level_id"?: string,"pilot"?: boolean,"published_at"?: string | null,"slug"?: string,"status"?: Database["public"]['Enums']["content_status"],"title"?: string,"updated_at"?: string
                   }
                   Relationships: [
                     {
@@ -1799,7 +1884,7 @@ isOneToOne: false
             [_ in never]: never
           }
           Enums: {
-            "app_role": "student"|"teacher"|"pedagogical_manager"|"admin"|"office","assignment_audience": "group"|"selected","attempt_status": "in_progress"|"submitted","attendance_status": "present"|"late"|"absent"|"excused","book_kind": "notebook"|"workbook","content_status": "draft"|"in_review"|"published"|"archived","enrollment_status": "active"|"paused"|"completed"|"withdrawn","feedback_kind": "student"|"material"|"missing_material","group_cycle_state": "upcoming"|"active"|"completed","group_status": "planned"|"active"|"finished"|"archived","learning_event_type": "login"|"activity_started"|"activity_completed"|"answer_submitted"|"section_opened"|"section_completed"|"vocab_reviewed"|"assignment_completed","learning_phase": "before_class"|"during_class"|"after_class"|"review"|"optional","private_lesson_status": "scheduled"|"done"|"cancelled_early"|"cancelled_late"|"no_show","progress_status": "not_started"|"in_progress"|"completed","scoring_mode": "none"|"practice"|"scored","task_priority": "normal"|"urgent","task_status": "open"|"done","teacher_role": "lead"|"assistant","text_direction": "ltr"|"rtl"
+            "app_role": "student"|"teacher"|"pedagogical_manager"|"admin"|"office","assignment_audience": "group"|"selected","attempt_status": "in_progress"|"submitted","attendance_status": "present"|"late"|"absent"|"excused","book_kind": "notebook"|"workbook","content_status": "draft"|"in_review"|"published"|"archived","enrollment_status": "active"|"paused"|"completed"|"withdrawn","feedback_kind": "student"|"material"|"missing_material","group_cycle_state": "upcoming"|"active"|"completed","group_status": "planned"|"active"|"finished"|"archived","learning_event_type": "login"|"activity_started"|"activity_completed"|"answer_submitted"|"section_opened"|"section_completed"|"vocab_reviewed"|"assignment_completed","learning_phase": "before_class"|"during_class"|"after_class"|"review"|"optional","private_lesson_status": "scheduled"|"done"|"cancelled_early"|"cancelled_late"|"no_show","progress_status": "not_started"|"in_progress"|"completed","report_status": "open"|"resolved","scoring_mode": "none"|"practice"|"scored","task_priority": "normal"|"urgent","task_status": "open"|"done","teacher_role": "lead"|"assistant","text_direction": "ltr"|"rtl"
           }
           CompositeTypes: {
             [_ in never]: never
@@ -1919,7 +2004,7 @@ export const Constants = {
           }
         },"public": {
           Enums: {
-            "app_role": ["student", "teacher", "pedagogical_manager", "admin", "office"],"assignment_audience": ["group", "selected"],"attempt_status": ["in_progress", "submitted"],"attendance_status": ["present", "late", "absent", "excused"],"book_kind": ["notebook", "workbook"],"content_status": ["draft", "in_review", "published", "archived"],"enrollment_status": ["active", "paused", "completed", "withdrawn"],"feedback_kind": ["student", "material", "missing_material"],"group_cycle_state": ["upcoming", "active", "completed"],"group_status": ["planned", "active", "finished", "archived"],"learning_event_type": ["login", "activity_started", "activity_completed", "answer_submitted", "section_opened", "section_completed", "vocab_reviewed", "assignment_completed"],"learning_phase": ["before_class", "during_class", "after_class", "review", "optional"],"private_lesson_status": ["scheduled", "done", "cancelled_early", "cancelled_late", "no_show"],"progress_status": ["not_started", "in_progress", "completed"],"scoring_mode": ["none", "practice", "scored"],"task_priority": ["normal", "urgent"],"task_status": ["open", "done"],"teacher_role": ["lead", "assistant"],"text_direction": ["ltr", "rtl"]
+            "app_role": ["student", "teacher", "pedagogical_manager", "admin", "office"],"assignment_audience": ["group", "selected"],"attempt_status": ["in_progress", "submitted"],"attendance_status": ["present", "late", "absent", "excused"],"book_kind": ["notebook", "workbook"],"content_status": ["draft", "in_review", "published", "archived"],"enrollment_status": ["active", "paused", "completed", "withdrawn"],"feedback_kind": ["student", "material", "missing_material"],"group_cycle_state": ["upcoming", "active", "completed"],"group_status": ["planned", "active", "finished", "archived"],"learning_event_type": ["login", "activity_started", "activity_completed", "answer_submitted", "section_opened", "section_completed", "vocab_reviewed", "assignment_completed"],"learning_phase": ["before_class", "during_class", "after_class", "review", "optional"],"private_lesson_status": ["scheduled", "done", "cancelled_early", "cancelled_late", "no_show"],"progress_status": ["not_started", "in_progress", "completed"],"report_status": ["open", "resolved"],"scoring_mode": ["none", "practice", "scored"],"task_priority": ["normal", "urgent"],"task_status": ["open", "done"],"teacher_role": ["lead", "assistant"],"text_direction": ["ltr", "rtl"]
           }
         }
 } as const

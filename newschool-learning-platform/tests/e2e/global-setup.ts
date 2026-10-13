@@ -246,6 +246,14 @@ export default async function globalSetup() {
   await admin.from('staff_tasks').delete().not('id', 'in', seedIds('d4000000', 1));
   await admin.from('staff_tasks').update({ status: 'open', done_at: null }).eq('status', 'done');
 
+  // Mistake reports sent by earlier runs (the seed has none), and the
+  // Spanish fixture course back to a pilot.
+  await admin.from('content_reports').delete().neq('message', '');
+  await admin
+    .from('courses')
+    .update({ pilot: true })
+    .eq('id', '30000000-0000-4000-8000-000000000001');
+
   // Pages added by the content-editor tests.
   await admin.from('book_sections').delete().like('slug', 'e2e-%');
 

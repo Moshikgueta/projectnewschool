@@ -228,7 +228,8 @@ content/
 
 `pnpm content:validate` (CI) checks every file against the Zod schemas.
 `pnpm content:import --env=staging` upserts by slug (idempotent), uploads media and
-reports changes. Production import is a reviewed, manual step.
+reports changes. Production import is a reviewed, manual step run by the operator
+([GO-LIVE.md](GO-LIVE.md) §7).
 
 **Phase 8 (CMS):** pedagogical managers edit the same block documents in the platform
 (ADR-034). Because the database model and schemas are identical, the CMS is a new
@@ -303,7 +304,8 @@ course is signed off by a teacher.
 
 Course source lives in `content/<course-slug>/`:
 
-- `course.yaml`: slug, title, language, level, instruction language, status, book titles.
+- `course.yaml`: slug, title, language, level, instruction language, status, `pilot`
+  (optional, default false; ADR-040), book titles.
 - One file per cycle (`02-family.yaml`): slug, title, goal, position, status, a
   `review` list of open questions for the reviewing teacher, `sections` (each with
   `slug`, `book`, `phase`, `blocks` and `teacherNotes`) and `vocabulary` sets.
@@ -311,7 +313,9 @@ Course source lives in `content/<course-slug>/`:
 Schemas: `src/content/files.ts` (files) and `src/content/schema.ts` (blocks). Unknown
 fields are errors, so a typo never disappears silently. Cross-checks: teacher-note
 anchors must be block ids of the same section; slugs, cycle positions and vocabulary
-terms are unique; every cycle names a defined course; links must be on the allow-list.
+terms are unique; every cycle names a defined course; links must be on the allow-list;
+a `published` cycle may still have open `review` questions only if its course is
+`pilot: true` (ADR-040).
 
 - `pnpm content:validate`: run in CI. Invalid content fails the build (a unit test
   also validates `content/`).
@@ -320,8 +324,14 @@ terms are unique; every cycle names a defined course; links must be on the allow
   nothing. Sections are never deleted (student answers hang off them); a section
   missing from the file is reported. Words removed from a vocabulary set are removed.
   It runs against the local database by default. Staging needs `APP_ENV=staging` and
-  `--confirm=<supabase host>`. Production is always refused: content reaches
-  production through review in the CMS (Phase 8).
+  `--confirm=<supabase host>`. Production needs `APP_ENV=production`, `--production`
+  and `--confirm=<supabase host>`, run from the operator's machine with the secret key
+  typed in, never stored in the repository (ADR-040, [GO-LIVE.md](GO-LIVE.md) §7);
+  until the pilot release it was always refused.
+- `pnpm content:publish-pilot [--check]`: sets every `course.yaml` to `published` with
+  `pilot: true` and every cycle (and any section marked `in_review`) to `published`,
+  editing only those lines and refusing any edit that would change anything else;
+  `review` lists are kept. Repeatable: a second run changes nothing.
 
 First conversion: **English Foundations 1 · Family** (`content/en-foundations-1/`),
 status `in_review`, with 7 open review questions, plus two draft workbook exercises

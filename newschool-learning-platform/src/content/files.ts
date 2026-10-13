@@ -34,6 +34,12 @@ export const courseFileSchema = z.strictObject({
     .regex(/^[a-z]{2}(-[A-Z]{2})?$/)
     .default('he'),
   status: status.default('draft'),
+  /**
+   * Published as a pilot (school owner, 2026-10-13; ADR-040): students see a
+   * "Pilot" badge and can report mistakes, and its cycles may be published
+   * while teachers' review questions are still open.
+   */
+  pilot: z.boolean().default(false),
   books: z.strictObject({
     notebook: z.string().min(1).max(160),
     workbook: z.string().min(1).max(160).optional(),
@@ -253,8 +259,17 @@ export function validateContent(files: { file: string; data: unknown }[]): {
       });
     courseSlugs.set(c.slug, c.file);
   }
+  const pilots = new Set(courses.filter((c) => c.pilot).map((c) => c.slug));
   const cycleKeys = new Map<string, string>();
   for (const c of cycles) {
+    // Open review questions mean a teacher has not signed the cycle off. Only
+    // a pilot course may show such a cycle to students (ADR-040).
+    if (c.status === 'published' && c.review.length > 0 && !pilots.has(c.course))
+      problems.push({
+        file: c.file,
+        path: 'status',
+        message: `Published with ${c.review.length} open review question(s): answer them and empty \`review\`, or mark the course \`pilot: true\``,
+      });
     if (!courseSlugs.has(c.course))
       problems.push({
         file: c.file,
