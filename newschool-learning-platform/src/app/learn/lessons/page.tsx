@@ -4,6 +4,7 @@ import { requireArea } from '@/server/auth/session';
 import { getMyLessons } from '@/server/queries/lessons';
 import { Badge, Card } from '@/ui/Card';
 import { PageTitle, Section } from '@/ui/Page';
+import { LatestOnly } from '@/ui/Pager';
 import { ProgressBar } from '@/ui/Progress';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -84,6 +85,10 @@ export default async function MyLessonsPage() {
               {data.past.length ? (
                 <Card>
                   <h3 className="mb-2 font-semibold">{t('history')}</h3>
+                  <LatestOnly
+                    shown={data.upcoming.length + data.past.length}
+                    total={data.lessonsTotal}
+                  />
                   <ul className="flex flex-col divide-y divide-border">
                     {data.past.map((l) => (
                       <li

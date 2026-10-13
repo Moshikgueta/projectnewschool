@@ -5,6 +5,7 @@ import { rulesV1, type Recommendation } from '@/domain/recommendations/rules';
 import type { SessionUser } from '@/server/auth/session';
 import type { Database } from '@/server/db.types';
 import { createSupabaseServerClient } from '@/server/supabase/server';
+import { readAll } from './paging';
 import { listMyCourses, type MyCourse } from './student';
 
 export type ContinueItem =
@@ -38,6 +39,9 @@ export type StudentDashboard = {
     cycle: { title: string; percent: number } | null;
   };
 };
+
+/** Latest events read for "recent activity" (five shown) and the last practice. */
+const RECENT_EVENTS = 5;
 
 /** Days a suggestion stays hidden after "Not now". */
 export const SNOOZE_DAYS = 7;
@@ -95,6 +99,7 @@ export async function getStudentDashboard(
     attempts,
     sectionProgress,
     events,
+    weekEvents,
     activeCycles,
     feedback,
     finishedSections,
@@ -143,7 +148,19 @@ export async function getStudentDashboard(
       .eq('course_id', courseId)
       .neq('type', 'login')
       .order('occurred_at', { ascending: false })
-      .limit(50),
+      .limit(RECENT_EVENTS),
+    // Practice days count every event of the week (all pages), not the latest few.
+    readAll('this week', (from, to) =>
+      supabase
+        .from('learning_events')
+        .select('id, occurred_at')
+        .eq('user_id', user.id)
+        .eq('course_id', courseId)
+        .neq('type', 'login')
+        .gte('occurred_at', weekAgo)
+        .order('id')
+        .range(from, to),
+    ),
     supabase
       .from('group_cycles')
       .select('cycle_id, cycle:cycles ( title )')
@@ -317,7 +334,7 @@ export async function getStudentDashboard(
     progress: {
       activitiesCompleted: completedActivityIds.size,
       practiceDays: practiceDaysInLastWeek(
-        events.data.filter((e) => e.occurred_at >= weekAgo).map((e) => e.occurred_at),
+        weekEvents.map((e) => e.occurred_at),
         now,
         user.timezone,
       ),

@@ -4,6 +4,7 @@ import type { SessionUser } from '@/server/auth/session';
 import { listTasks, type Task } from '@/server/queries/staff';
 import { Badge, Card } from '@/ui/Card';
 import { Section } from '@/ui/Page';
+import { LatestOnly } from '@/ui/Pager';
 import { TaskForm } from './TaskForm';
 
 const QUIET_BUTTON =
@@ -21,7 +22,7 @@ export async function TasksPanel({
   user: SessionUser;
   area: 'teach' | 'office' | 'manage';
 }) {
-  const [{ tasks, assignees }, t, format] = await Promise.all([
+  const [{ tasks, doneTotal, assignees }, t, format] = await Promise.all([
     listTasks(user.id, user.displayName),
     getTranslations('staff.tasks'),
     getFormatter(),
@@ -100,7 +101,8 @@ export async function TasksPanel({
             )}
           </Card>
         </Section>
-        <Section id="done-tasks-heading" title={t('done', { count: done.length })}>
+        <Section id="done-tasks-heading" title={t('done', { count: doneTotal })}>
+          <LatestOnly shown={done.length} total={doneTotal} />
           <Card>
             {done.length ? (
               <ul className="flex flex-col divide-y divide-border">{done.map(row)}</ul>

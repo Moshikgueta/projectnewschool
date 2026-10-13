@@ -4,7 +4,8 @@ import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { z } from 'zod';
 import { requireArea } from '@/server/auth/session';
-import { getGroupForManager, listPeopleWithRole } from '@/server/queries/manage';
+import { searchTerm } from '@/domain/paging';
+import { findStudents, getGroupForManager, listPeopleWithRole } from '@/server/queries/manage';
 import { Card } from '@/ui/Card';
 import { PageTitle, Section } from '@/ui/Page';
 import { CyclesForm, DetailsForm, EnrollmentRow, EnrollForm, TeacherForms } from './GroupForms';
@@ -15,24 +16,27 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function ManageGroupPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ groupId: string }>;
+  searchParams: Promise<{ student?: string | string[] }>;
 }) {
   await requireArea('manage');
   const id = z.uuid().safeParse((await params).groupId);
   if (!id.success) notFound();
+  const query = searchTerm((await searchParams).student);
 
-  const [group, teachers, students, t] = await Promise.all([
+  const [group, teachers, t] = await Promise.all([
     getGroupForManager(id.data),
     listPeopleWithRole('teacher'),
-    listPeopleWithRole('student'),
     getTranslations('manage.group'),
   ]);
   if (!group) notFound();
 
-  const activeIds = new Set(
-    group.enrollments.filter((e) => e.status === 'active').map((e) => e.studentId),
-  );
+  const activeIds = group.enrollments.filter((e) => e.status === 'active').map((e) => e.studentId);
+  // The school has thousands of students: the picker offers the first few by
+  // name, and a search narrows them.
+  const candidates = await findStudents(query, activeIds);
   const teacherIds = new Set(group.teachers.map((tch) => tch.id));
 
   return (
@@ -86,10 +90,40 @@ export default async function ManageGroupPage({
                 ))}
               </ul>
             )}
-            <EnrollForm
-              groupId={group.id}
-              candidates={students.filter((s) => !activeIds.has(s.id))}
-            />
+            <form
+              role="search"
+              action={`/manage/groups/${group.id}`}
+              className="flex flex-wrap items-end gap-2"
+            >
+              <label className="flex flex-col gap-1.5 text-[0.9375rem] font-medium">
+                {t('findStudent')}
+                <input
+                  type="search"
+                  name="student"
+                  defaultValue={query}
+                  className="min-h-11 rounded-md border border-border-strong bg-surface px-3 text-base font-normal"
+                />
+              </label>
+              <button
+                type="submit"
+                className="min-h-11 rounded-md border border-border-strong bg-surface px-4 font-medium"
+              >
+                {t('findButton')}
+              </button>
+            </form>
+            {query && candidates.total === 0 ? (
+              <p className="text-sm text-muted">{t('noMatch', { query })}</p>
+            ) : (
+              <EnrollForm groupId={group.id} candidates={candidates.students} />
+            )}
+            {candidates.total > candidates.students.length ? (
+              <p className="text-sm text-muted tabular-nums">
+                {t('candidatesShown', {
+                  shown: candidates.students.length,
+                  total: candidates.total,
+                })}
+              </p>
+            ) : null}
           </div>
         </Card>
       </Section>

@@ -253,6 +253,26 @@ nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Polic
   and the manager with and without MFA, the admin) × all 53 tables and views under the
   old and the new policies in one transaction: 0 differences.
 
+### Complete reads at school scale (migration `…2300_scale_reads`)
+
+- ☑ **No view shows more than its tables.** The group page's summaries
+  (`group_item_first_tries`, `group_student_stats`) are `security_invoker` views: every
+  table underneath is read with the caller's own RLS, so a row summarises only records the
+  caller could already read one by one; they also return nothing unless the caller teaches
+  the group or is the manager with MFA (a student, the office, the admin, a teacher of
+  another group: no rows). `office_students` (security barrier, office and admins with
+  MFA, as before) gained the contact details that both may already read in
+  `student_records`; `package_balances` two columns computed from its own row. Still no
+  functions in `public` and nothing for `anon`. Evidence: `18_scale_reads` (pgTAP: who
+  sees what, and each user's view rows equal the same summary computed by that user from
+  the tables, also on the 10,000-student dataset), `tests/integration/scale-reads.test.ts`
+  (API).
+- ☑ Search text from the URL loses the characters PostgREST's filter syntax gives a
+  meaning to (`, ( ) * % _ \ " :`) and is cut to 80 characters before it reaches a filter
+  (`searchTerm()`, and it is quoted inside `or=`), so it cannot add filters. The page
+  size from the URL is kept between 1 and 100. `FETCH_PAGE_SIZE` (small pages for the
+  end-to-end tests) is ignored in staging and production.
+
 - ☐ Auth endpoints: Supabase Auth's built-in limits (tightened), plus CAPTCHA
   (Cloudflare Turnstile) on login/reset if abuse appears.
 - ☐ App: Vercel WAF rate-limit rules on login/reset paths.

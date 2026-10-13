@@ -1,6 +1,7 @@
 import 'server-only';
 import type { Database } from '@/server/db.types';
 import { createSupabaseServerClient } from '@/server/supabase/server';
+import { readAll } from './paging';
 
 // Staff tools (stage E): feedback, training links, tasks, and the groups the
 // lesson-plan builder can start from. Read with the caller's own session:
@@ -80,23 +81,73 @@ export type Feedback = {
   handledAt: string | null;
 };
 
+/** Feedback pages list at most this many, the latest first, and say how many there are. */
+export const FEEDBACK_SHOWN = 300;
+
+const FEEDBACK_COLUMNS = `id, kind, author_id, subject, verdict, language_code, level, body, created_at, handled_at,
+  author:profiles!staff_feedback_author_id_fkey ( display_name ),
+  student:profiles!staff_feedback_student_id_fkey ( display_name )`;
+
 /**
  * Feedback the caller may read: their own, or (for the manager with MFA)
- * everyone's. Newest first; unhandled before handled when `all`.
+ * everyone's. The latest FEEDBACK_SHOWN, newest first, and how many there
+ * are; `mine` limits it to what the caller wrote.
  */
-export async function listFeedback(): Promise<Feedback[]> {
+export async function listFeedback(
+  options: { authorId?: string; handled?: boolean } = {},
+): Promise<{ feedback: Feedback[]; total: number }> {
   const supabase = await createSupabaseServerClient();
-  const { data, error } = await supabase
+  let query = supabase
     .from('staff_feedback')
-    .select(
-      `id, kind, author_id, subject, verdict, language_code, level, body, created_at, handled_at,
-       author:profiles!staff_feedback_author_id_fkey ( display_name ),
-       student:profiles!staff_feedback_student_id_fkey ( display_name )`,
-    )
+    .select(FEEDBACK_COLUMNS, { count: 'exact' })
     .order('created_at', { ascending: false })
-    .limit(300);
+    .order('id')
+    .limit(FEEDBACK_SHOWN);
+  if (options.authorId) query = query.eq('author_id', options.authorId);
+  if (options.handled !== undefined) {
+    query = options.handled ? query.not('handled_at', 'is', null) : query.is('handled_at', null);
+  }
+  const { data, error, count } = await query;
   if (error) fail('feedback', error);
-  return data.map((f) => ({
+  return { feedback: data.map(toFeedback), total: count ?? data.length };
+}
+
+/**
+ * Every feedback the caller may read that is not handled yet (all pages):
+ * none may drop off the manager's list, and the "missing material" summary
+ * counts them all.
+ */
+export async function listOpenFeedback(): Promise<Feedback[]> {
+  const supabase = await createSupabaseServerClient();
+  const data = await readAll('feedback', (from, to) =>
+    supabase
+      .from('staff_feedback')
+      .select(FEEDBACK_COLUMNS)
+      .is('handled_at', null)
+      .order('created_at', { ascending: false })
+      .order('id')
+      .range(from, to),
+  );
+  return data.map(toFeedback);
+}
+
+type FeedbackRow = {
+  id: string;
+  kind: FeedbackKind;
+  author_id: string;
+  subject: string;
+  verdict: string | null;
+  language_code: string | null;
+  level: number | null;
+  body: string;
+  created_at: string;
+  handled_at: string | null;
+  author: { display_name: string } | null;
+  student: { display_name: string } | null;
+};
+
+function toFeedback(f: FeedbackRow): Feedback {
+  return {
     id: f.id,
     kind: f.kind,
     authorId: f.author_id,
@@ -109,7 +160,7 @@ export async function listFeedback(): Promise<Feedback[]> {
     body: f.body,
     createdAt: f.created_at,
     handledAt: f.handled_at,
-  }));
+  };
 }
 
 export type Resource = {
@@ -150,25 +201,44 @@ export type Task = {
   doneAt: string | null;
 };
 
+/** Done tasks listed, the latest first (open tasks are always all listed). */
+export const DONE_TASKS_SHOWN = 100;
+
 /** Tasks the caller sent or received, with who they are from and for. */
 export async function listTasks(
   userId: string,
   userName: string,
 ): Promise<{
   tasks: Task[];
+  /** How many done tasks there are (the latest DONE_TASKS_SHOWN are listed). */
+  doneTotal: number;
   assignees: { id: string; name: string }[];
 }> {
   const supabase = await createSupabaseServerClient();
-  const [tasks, assignees] = await Promise.all([
+  const columns = 'id, title, note, priority, status, created_by, assignee_id, created_at, done_at';
+  // Every open task (none may drop off the list), and the latest done ones.
+  const [open, done, assignees] = await Promise.all([
+    readAll('tasks', (from, to) =>
+      supabase
+        .from('staff_tasks')
+        .select(columns)
+        .eq('status', 'open')
+        .order('created_at', { ascending: false })
+        .order('id')
+        .range(from, to),
+    ),
     supabase
       .from('staff_tasks')
-      .select('id, title, note, priority, status, created_by, assignee_id, created_at, done_at')
+      .select(columns, { count: 'exact' })
+      .eq('status', 'done')
       .order('created_at', { ascending: false })
-      .limit(300),
+      .order('id')
+      .limit(DONE_TASKS_SHOWN),
     supabase.from('task_assignees').select('id, display_name').order('display_name'),
   ]);
-  if (tasks.error) fail('tasks', tasks.error);
+  if (done.error) fail('tasks', done.error);
   if (assignees.error) fail('task recipients', assignees.error);
+  const tasks = { data: [...open, ...done.data] };
   const managerName = new Map(assignees.data.map((a) => [a.id!, a.display_name ?? '']));
   // Senders' names: the caller's own, or (for a recipient) read through the
   // profiles policy where it allows; otherwise left blank.
@@ -192,6 +262,7 @@ export async function listTasks(
       createdAt: t.created_at,
       doneAt: t.done_at,
     })),
+    doneTotal: done.count ?? done.data.length,
     assignees: assignees.data.map((a) => ({ id: a.id!, name: a.display_name ?? '' })),
   };
 }

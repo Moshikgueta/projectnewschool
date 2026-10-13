@@ -138,6 +138,14 @@ export default async function OfficeStudentPage({
             ) : (
               <Card>
                 <p className="mb-2 text-sm text-muted">{t('cancelHint')}</p>
+                {student.lessonsTotal > student.lessons.length ? (
+                  <p className="mb-2 text-sm text-muted tabular-nums">
+                    {t('lessonsLatest', {
+                      shown: format.number(student.lessons.length),
+                      total: format.number(student.lessonsTotal),
+                    })}
+                  </p>
+                ) : null}
                 <ul className="flex flex-col divide-y divide-border">
                   {[...upcoming, ...past].map((l) => {
                     const cancelled =

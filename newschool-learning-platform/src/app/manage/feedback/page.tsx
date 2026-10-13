@@ -3,9 +3,10 @@ import { getFormatter, getLocale, getTranslations } from 'next-intl/server';
 import { FeedbackBadges } from '@/app/_staff/FeedbackBadges';
 import { markFeedbackHandled } from '@/server/actions/staff';
 import { requireArea } from '@/server/auth/session';
-import { listFeedback } from '@/server/queries/staff';
+import { listFeedback, listOpenFeedback } from '@/server/queries/staff';
 import { Badge, Card } from '@/ui/Card';
 import { EmptyState, PageTitle, Section } from '@/ui/Page';
+import { LatestOnly } from '@/ui/Pager';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getTranslations('staff.feedback'))('manageTitle') };
@@ -16,8 +17,10 @@ const QUIET_BUTTON =
 
 export default async function ManagerFeedbackPage() {
   const user = await requireArea('manage');
-  const [feedback, t, format, locale] = await Promise.all([
-    listFeedback(),
+  // Everything not handled yet, and the latest handled.
+  const [open, handled, t, format, locale] = await Promise.all([
+    listOpenFeedback(),
+    listFeedback({ handled: true }),
     getTranslations('staff.feedback'),
     getFormatter(),
     getLocale(),
@@ -31,8 +34,8 @@ export default async function ManagerFeedbackPage() {
     string,
     { gap: string; language: string | null; level: number | null; count: number }
   >();
-  for (const f of feedback) {
-    if (f.kind !== 'missing_material' || f.handledAt) continue;
+  for (const f of open) {
+    if (f.kind !== 'missing_material') continue;
     const key = `${f.subject}|${f.languageCode ?? ''}|${f.level ?? ''}`;
     const row = missing.get(key) ?? {
       gap: f.subject,
@@ -43,10 +46,7 @@ export default async function ManagerFeedbackPage() {
     row.count++;
     missing.set(key, row);
   }
-  const ordered = [...feedback].sort(
-    (a, b) =>
-      Number(!!a.handledAt) - Number(!!b.handledAt) || b.createdAt.localeCompare(a.createdAt),
-  );
+  const ordered = [...open, ...handled.feedback];
 
   return (
     <div className="flex flex-col gap-8">
@@ -81,6 +81,10 @@ export default async function ManagerFeedbackPage() {
       </Section>
 
       <Section id="all-feedback-heading" title={t('all')}>
+        <LatestOnly
+          shown={open.length + handled.feedback.length}
+          total={open.length + handled.total}
+        />
         {ordered.length === 0 ? (
           <EmptyState title={t('empty')} />
         ) : (

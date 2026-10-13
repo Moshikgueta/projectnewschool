@@ -485,7 +485,11 @@
         "upcoming": "בקרוב",
         "active": "פעיל",
         "completed": "הושלם"
-      }
+      },
+      "findStudent": "חיפוש תלמיד/ה לרישום",
+      "findButton": "חיפוש",
+      "candidatesShown": "מוצגים {shown} הראשונים מתוך {total} תלמידים מתאימים. חפשו לפי שם כדי לצמצם את הרשימה.",
+      "noMatch": "אין תלמיד/ה שמתאימים ל„{query}”."
     },
     "errors": {
       "invalid": "בדקו את הטופס ונסו שוב.",
@@ -507,7 +511,7 @@
     "role": "תפקיד",
     "send": "שליחת הזמנה",
     "sent": "ההזמנה נשלחה אל {email}.",
-    "allAccounts": "כל החשבונות ({count})",
+    "allAccounts": "כל החשבונות",
     "colName": "שם",
     "colRoles": "תפקידים",
     "colCreated": "נוצר",
@@ -524,7 +528,11 @@
       "exists": "כבר קיים חשבון עם הדוא״ל הזה.",
       "sendFailed": "לא הצלחנו לשלוח את ההזמנה.",
       "roleFailed": "לא הצלחנו לשייך את התפקיד, ולכן ההזמנה בוטלה."
-    }
+    },
+    "search": "חיפוש חשבונות",
+    "searchButton": "חיפוש",
+    "pagerLabel": "עמודי רשימת החשבונות",
+    "empty": "לא נמצאו חשבונות."
   },
   "notebook": {
     "blank": "רווח להשלמה",
@@ -808,7 +816,7 @@
     "students": {
       "title": "תלמידים",
       "subtitle": "פרטי קשר, חבילות ושיעורים פרטיים.",
-      "search": "חיפוש לפי שם",
+      "search": "חיפוש לפי שם, טלפון או דוא״ל",
       "searchButton": "חיפוש",
       "nameCol": "שם",
       "phoneCol": "טלפון",
@@ -821,7 +829,8 @@
       "loginEmailHint": "השאירו ריק אם התלמיד/ה ייכנסו עם קוד כניסה.",
       "phone": "טלפון (לא חובה)",
       "contactEmail": "דוא״ל ליצירת קשר (לא חובה)",
-      "create": "הוספה"
+      "create": "הוספה",
+      "pagerLabel": "עמודי רשימת התלמידים"
     },
     "student": {
       "back": "כל התלמידים",
@@ -882,7 +891,8 @@
       "package": "חבילה",
       "packageAuto": "מחבילה (זו שתוקפה נגמר ראשון)",
       "packageNone": "לא מחבילה",
-      "bookButton": "קביעה"
+      "bookButton": "קביעה",
+      "lessonsLatest": "מוצגים {shown} השיעורים האחרונים מתוך {total}."
     }
   },
   "staff": {
@@ -1482,5 +1492,13 @@
       "correctAnswerLabel": "תקן את התשובה של {title}",
       "corrected": "התשובה תוקנה {date}: {reason}"
     }
+  },
+  "paging": {
+    "showing": "מוצגים {first}–{last} מתוך {total}",
+    "none": "אין מה להציג.",
+    "previous": "הקודם",
+    "next": "הבא",
+    "page": "עמוד {page} מתוך {pages}",
+    "latest": "מוצגים {shown} האחרונים מתוך {total}."
   }
 }

@@ -60,6 +60,30 @@ describe('common difficulties', () => {
       },
     ]);
   });
+
+  it('breaks ties the same way every time (as the database view does)', () => {
+    const tries = [
+      // q3 and q2: same rate and students: by question id.
+      t('a', 'q3', false, 'x', 1),
+      t('b', 'q3', false, 'x', 1),
+      t('c', 'q3', true, 'y', 1),
+      t('a', 'q2', false, 'x', 1),
+      t('b', 'q2', false, 'x', 1),
+      t('c', 'q2', true, 'y', 1),
+      // q1: "late" and "early" are each the answer of two students; "early" was given first.
+      t('d', 'q1', false, 'late', 4),
+      t('e', 'q1', false, 'late', 5),
+      t('f', 'q1', false, 'early', 3),
+      t('g', 'q1', false, 'early', 6),
+      t('h', 'q1', true, 'ok', 1),
+      t('i', 'q1', true, 'ok', 1),
+    ];
+    for (const order of [tries, [...tries].reverse()]) {
+      const found = commonDifficulties(order);
+      expect(found.map((d) => d.itemId)).toEqual(['q1', 'q2', 'q3']);
+      expect(found[0]).toMatchObject({ commonWrongAnswer: 'early', commonWrongCount: 2 });
+    }
+  });
 });
 
 describe('assignment progress', () => {
@@ -109,17 +133,10 @@ describe('student summaries', () => {
         { userId: 'a', activityId: 'x' },
         { userId: 'a', activityId: 'old-cycle' },
       ],
-      tries: [
-        { userId: 'a', correct: true },
-        { userId: 'a', correct: false },
-        { userId: 'a', correct: true },
-        { userId: 'a', correct: true },
-        { userId: 'b', correct: false },
-      ],
-      events: [
-        { userId: 'a', at: '2026-10-01T10:00:00Z' },
-        { userId: 'a', at: '2026-10-04T10:00:00Z' },
-      ],
+      totals: new Map([
+        ['a', { answers: 4, correct: 3, lastActiveAt: '2026-10-04T10:00:00Z' }],
+        ['b', { answers: 1, correct: 0, lastActiveAt: null }],
+      ]),
     });
     expect(a).toEqual({
       id: 'a',

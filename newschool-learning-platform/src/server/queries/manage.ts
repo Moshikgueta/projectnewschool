@@ -1,7 +1,9 @@
 import 'server-only';
 import type { Role } from '@/domain/auth/access';
 import type { Database } from '@/server/db.types';
+import { searchTerm } from '@/domain/paging';
 import { createSupabaseServerClient } from '@/server/supabase/server';
+import { readAll } from './paging';
 
 type Enums = Database['public']['Enums'];
 
@@ -48,15 +50,19 @@ export type GroupRow = {
   activeStudents: number;
 };
 
+/** Every group (800 at school scale: read in pages). */
 export async function listGroupsForManager(): Promise<GroupRow[]> {
   const supabase = await createSupabaseServerClient();
-  const { data, error } = await supabase
-    .from('groups')
-    .select(
-      'id, name, status, course:courses ( title ), group_teachers ( teacher:profiles ( display_name ) ), enrollments ( status )',
-    )
-    .order('name');
-  if (error) throw new Error(`Could not load groups: ${error.message}`);
+  const data = await readAll('groups', (from, to) =>
+    supabase
+      .from('groups')
+      .select(
+        'id, name, status, course:courses ( title ), group_teachers ( teacher:profiles ( display_name ) ), enrollments ( status )',
+      )
+      .order('name')
+      .order('id')
+      .range(from, to),
+  );
   return data.map((g) => ({
     id: g.id,
     name: g.name,
@@ -138,15 +144,50 @@ export async function getGroupForManager(groupId: string): Promise<GroupDetail |
   };
 }
 
-/** People holding a role, for the teacher and student pickers. */
+/** Everyone holding a role (all pages), for the teacher picker. */
 export async function listPeopleWithRole(role: Role): Promise<{ id: string; name: string }[]> {
   const supabase = await createSupabaseServerClient();
-  const { data, error } = await supabase
-    .from('user_roles')
-    .select('profile:profiles!user_roles_user_id_fkey ( id, display_name )')
-    .eq('role', role);
-  if (error) throw new Error(`Could not load people: ${error.message}`);
+  const data = await readAll('people', (from, to) =>
+    supabase
+      .from('user_roles')
+      .select('user_id, profile:profiles!user_roles_user_id_fkey ( id, display_name )')
+      .eq('role', role)
+      .order('user_id')
+      .range(from, to),
+  );
   return data
     .flatMap((r) => (r.profile ? [{ id: r.profile.id, name: r.profile.display_name }] : []))
     .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+/** Students offered in the enrol picker at most (the school has thousands: search narrows). */
+export const STUDENT_CHOICES = 50;
+
+/**
+ * Students to enrol: the first STUDENT_CHOICES by name (matching the search,
+ * if any), leaving out those given, and how many match in all.
+ */
+export async function findStudents(
+  query: string,
+  exclude: readonly string[],
+): Promise<{ students: { id: string; name: string }[]; total: number }> {
+  const supabase = await createSupabaseServerClient();
+  const q = searchTerm(query);
+  let request = supabase
+    .from('profiles')
+    .select('id, display_name, user_roles!user_roles_user_id_fkey!inner ( role )', {
+      count: 'exact',
+    })
+    .eq('user_roles.role', 'student');
+  if (q) request = request.ilike('display_name', `%${q}%`);
+  if (exclude.length) request = request.not('id', 'in', `(${exclude.join(',')})`);
+  const { data, error, count } = await request
+    .order('display_name')
+    .order('id')
+    .limit(STUDENT_CHOICES);
+  if (error) throw new Error(`Could not load students: ${error.message}`);
+  return {
+    students: data.map((p) => ({ id: p.id, name: p.display_name })),
+    total: count ?? data.length,
+  };
 }

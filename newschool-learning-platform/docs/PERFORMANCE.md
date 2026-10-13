@@ -3,14 +3,20 @@
 > Status: **measured 2026-10-13 on the local stack.** Spike from ROADMAP "Technical
 > spikes": _RLS performance with helper functions on a seeded 10k-student dataset_ —
 > done. Also the data-volume half of Phase 10's load test; concurrent users are still to
-> do (see [§8](#8-not-covered-and-watch-items)).
+> do (see [§8](#8-not-covered-and-watch-items)). Reads that PostgREST's 1,000-row cap
+> used to cut short are complete since migration `20261013002300_scale_reads`
+> ([§7.4](#74-complete-reads-past-the-1000-row-cap)).
 
 **Result.** At 10,000 students, 27 of the 96 database queries behind the hot pages took
 over 50 ms, the worst 4.9 s (a teacher's group page: 6.5 s end to end). The cause was
 per-row helper calls in Row Level Security policies, not missing indexes. Migration
 `20261013002200_rls_performance` makes each policy compute "what may this user see"
 once per query instead of once per row. After it, **every query is under 50 ms (worst
-40 ms)** and every page under 80 ms end to end through the API. The policies mean exactly
+40 ms)** and every page under 80 ms end to end through the API.
+**No page is cut short at 1,000 rows any more** (§7.4): the group page's summaries are
+computed by the database over every answer (4,377 first answers in the benchmarked
+group, not 1,000), long lists page with totals, and the rest read every page. All 103
+benchmarked queries stay under 50 ms (worst 45 ms). The policies mean exactly
 what they meant before: the pgTAP suite passes unchanged, every benchmarked query returns
 the same rows for the same user, and a check of 14 users × 53 tables and views under the
 old and the new policies (the seven large learner tables over a sample of 300+ students)
@@ -69,15 +75,18 @@ these numbers should be an upper bound for the same data.
   `sub` and `aal`, as PostgREST and the pgTAP helpers do): one warm-up, then the median of
   7 runs of `EXPLAIN (ANALYZE, TIMING OFF, BUFFERS)`, planning plus execution. It also
   records the row count and an order-insensitive checksum of what each query returns.
-  89 page reads (student dashboard, practice, progress, activity, notebook and section,
+  96 page reads (student dashboard, practice, progress, activity, notebook and section,
   vocabulary, my lessons; teacher group overview, student page, group stats, teacher's
-  day, reports; office students, timetable, office day; manager reports) and 7 write-path
-  steps (answering: the student's reads, the rate-limit count, the key read, inserting the
+  day, reports; office students — pages and searches —, timetable, office day; manager
+  reports and groups; admin accounts) and 7 write-path steps (answering: the student's reads, the rate-limit count, the key read, inserting the
   response and updating the attempt; starting: the reads, inserting the attempt and the
   event — writes are rolled back).
 - **`scripts/perf/pages.perf.ts`** — page level: the real query functions with a real
   user's token through Kong and PostgREST, all of a page's queries in parallel as the
-  page does (median of 7).
+  page does (median of 7). It also checks that nothing is cut short: the office list's
+  total is every student, the timetable has every booking, the manager's list every
+  group, and for each of the teacher's groups the common difficulties and answer counts
+  equal those computed by the app's own rule over every first answer, read page by page.
 - **`scripts/perf/regrade.perf.ts`** — the re-check after a key correction on the hot
   question, with the real code: the manager's preview read, the correction insert (its
   trigger) and `src/server/privileged/regrade.ts`; it corrects the key back and checks the
@@ -87,7 +96,9 @@ these numbers should be an upper bound for the same data.
 ## 4. Results: database queries (ms, median of 7)
 
 Bold: 50 ms or more. Rows: what the query returns (capped at 1,000 by PostgREST's
-`max_rows`; see §8).
+`max_rows`). This table is the RLS change of §7.1; the reads changed in §7.4 (group
+overview's first tries and attendance, office lists, timetable…) have their new numbers
+there.
 
 | User    | Query (page: what)                                           | Rows | Before (ms) | After (ms) |
 | ------- | ------------------------------------------------------------ | ---: | ----------: | ---------: |
@@ -245,6 +256,7 @@ jsonb fix, whose key-changed path does the same work.
 
 1. **pgTAP** (`pnpm test:db`): the whole suite (17 files, 379 checks) passes on the
    migrated database, unchanged; so do the API attack tests and the end-to-end suite.
+   (Since §7.4: 18 files; `18_scale_reads` checks the new views.)
 2. **Same rows per user and query**: `pnpm perf:bench --compare before` runs every
    benchmarked query again and compares the row count and an order-insensitive checksum
    of the rows with the saved "before" run. All 96 match. One read (the office day's
@@ -341,25 +353,131 @@ which can make a student's concurrent answer retry), and "re-check again" report
 thousands of changes. It now compares the values regardless of key order. New unit test:
 "is idempotent on state read back from the database".
 
+### 7.4 Complete reads past the 1,000-row cap (migration `20261013002300_scale_reads`)
+
+PostgREST returns at most `max_rows` (1,000) rows per request and says nothing when it
+stops there. At school scale that cut several pages short. Every query in
+`src/server/queries` and `src/server/actions` that can pass 1,000 rows was changed in one
+of three ways; none changes what anyone may read.
+
+**1. Summaries computed by the database.** Two read-only views, `security_invoker` (every
+table underneath is read with the caller's own RLS) and empty for anyone who does not
+teach the group (or is not the manager with MFA):
+
+- `group_item_first_tries` — per group and question: students, wrong, wrong rate and the
+  most common wrong first answer, over each student's first encounter. Same rule as
+  `commonDifficulties()` (which is now the reference the tests compare with; ties are
+  broken the same way in both). The group page asks for the top five; the teacher's
+  exercise page for its questions.
+- `group_student_stats` — per group and student: first-try answers and right answers,
+  latest activity (logins left out), and attendance at the group's classes.
+
+The group page used to read 1,000 of the group's 4,377 first answers (common difficulties
+and accuracy computed on part of them), the latest 200 events for "last active" (a quiet
+student showed "never"), and every attendance mark in the school through an inner-joined
+embed (46 ms at 336,000 marks). Now: the views (16 ms and 10 ms, a few rows each) and the
+marks of its six latest classes by class id (0.8 ms).
+
+**2. Lists that page on screen**, with totals ("Showing 51–100 of 10,004"), URL search
+params (`?q=…&page=…&size=…`, so back, forward and shared links work; size 1–100, default
+50), stable order (name, then id), Hebrew and English, right-to-left and phone layouts
+(`src/ui/Pager.tsx`, helpers in `src/domain/paging.ts`):
+
+- the office's students (was: 200 names, phones of 1,000 of 10,003): searched by name,
+  phone (as typed or as digits) or contact email through `office_students`, which gained
+  the contact details and one lower-case `search_text` (a security barrier view cannot use
+  an index for a search, so one `like` per row keeps a search at 35 ms over 10,004
+  students; `student_records.phone_digits` is a generated column);
+- the admin's accounts (was: 1,000 of 10,169);
+- the manager's "enrol a student" picker (was: 1,000 of 10,004 names in a drop-down): the
+  first 50 matching a name search, with how many match.
+
+**3. Every page read** (`readAll` in `src/server/queries/paging.ts`: `.range()` in a loop,
+ordered by something unique, failing loudly after 1,000 pages) where a page needs all
+rows: the weekly timetable (1,603 bookings: 1,000 + 603, 8 + 7 ms), the booking form's
+groups and teachers, the manager's groups (803), the office day's lessons and the
+packages to follow up — now chosen by the database (`package_balances` gained
+`lessons_left` and `unbooked`) with the students' names embedded (the old page looked
+names up in the first 1,000 students: 505 follow-ups, most of them nameless), a group's
+submitted work and finished pages, a student's first tries, word reviews and attendance,
+a course's words (761 in the largest course), the teacher's day (marks, enrolments,
+homework progress), the notebook's class answers, all open tasks and unhandled feedback,
+and staff exercises. A list deliberately cut to its latest rows says so ("Showing the
+latest 500 of 1,419"): reports (500), feedback (300 handled), done tasks (100), a
+student's private lessons (100 on "My lessons", 200 on the office page). The student
+dashboard's 500 latest first tries (recommendations) stay a deliberate window. Answer
+counts in the exercise editor are counted per question when an exercise has 1,000 answers
+or more.
+
+Database time of the changed reads (ms, median of 7; same data, same machine; before =
+the code before this change):
+
+| User    | Read                                                |     Before (ms) |      Rows before |         After (ms) |       Rows after |
+| ------- | --------------------------------------------------- | --------------: | ---------------: | -----------------: | ---------------: |
+| teacher | group overview: first tries + items → difficulties  |            40.3 |      1,000 (cap) |               16.0 |                5 |
+| teacher | group overview: (new) student totals                |               — |                — |               10.1 |               22 |
+| teacher | group overview: attendance → marks of 6 classes     |            46.2 |              504 |                0.8 |              105 |
+| teacher | group overview: recent events (200 → 10)            |            18.9 |              200 |               13.3 |               10 |
+| teacher | group stats: first tries → first encounters (view)  |             2.7 |              104 |                3.6 |                8 |
+| office  | students (200, no total) → page 1 of 50, with total |            10.9 |              200 |               14.4 |           10,004 |
+| office  | students: page 101 / search by name / by phone      |               — |                — | 23.8 / 35.1 / 35.3 | 10,004 / 339 / 2 |
+| office  | student records (phones)                            |             2.0 |      1,000 (cap) |                  — |                — |
+| office  | timetable entries                                   |             8.5 |      1,000 (cap) |          8.1 + 7.0 |            1,603 |
+| office  | office day: all students / packages / balances      | 3.4 / 2.8 / 4.2 | 1,000 each (cap) |                  — |                — |
+| office  | office day: packages to follow up, with names       |               — |                — |               15.7 |              505 |
+| office  | office day: lessons (200 → every one in the window) |            21.7 |        200 (cut) |               21.3 |              450 |
+| manager | groups (all pages)                                  |               — |                — |               44.8 |              803 |
+| admin   | accounts: page 1 of 50, with total / search         |               — |                — |        40.2 / 25.4 |           10,169 |
+
+All 103 queries: none at or over 50 ms (worst: the manager's groups, 45 ms). The 62
+unchanged queries return the same rows as before (`perf:bench --compare`).
+
+Pages end to end (ms, median of 7, same data and machine):
+
+| User    | Page                       | Before | After |
+| ------- | -------------------------- | -----: | ----: |
+| student | dashboard                  |     52 |    44 |
+| student | progress                   |     36 |    29 |
+| student | vocabulary                 |     21 |    15 |
+| teacher | group overview             |     84 |    66 |
+| teacher | student in group           |     37 |    31 |
+| teacher | group stats (activity)     |     28 |    29 |
+| teacher | teacher's day              |     49 |    51 |
+| office  | students (page 1)          |     23 |    30 |
+| office  | students (search by phone) |      — |    52 |
+| office  | timetable (every booking)  |     20 |    35 |
+| office  | office day                 |     46 |    67 |
+| manager | groups (all 803)           |      — |    58 |
+| admin   | accounts (page 1)          |      — |    45 |
+
+Pages that now read everything are slower than when they read part (the timetable makes
+two requests, the office day reads all 450 lessons of the window and all 505
+follow-ups), and all stay far under the 300 ms budget.
+
+How it is tested: `tests/integration/scale-reads.test.ts` gives group X 1,260 more first
+answers and compares the views with `commonDifficulties()` and per-student counts over
+every row read page by page (and shows that a single read stops at 1,000);
+`supabase/tests/database/18_scale_reads.test.sql` checks who sees what (teacher of
+another group, student, office with and without MFA, admin: nothing; the manager without
+MFA: nothing) and that each user's view rows equal the same summary computed by that user
+from the tables; `src/domain/paging.test.ts` the paging helpers; `tests/e2e/paging.spec.ts`
+the office list (pages, back and forward, search by phone and email), the timetable with
+more bookings than a page, the group page's difficulties and per-question results, and the
+admin list. The end-to-end server reads in pages of 3 rows (`FETCH_PAGE_SIZE=3` in
+`playwright.config.ts`, ignored in staging and production), so the whole suite runs the
+paging on the small seed.
+
 ## 8. Not covered, and watch items
 
 - **Concurrent users.** This measures data volume with one user at a time. Phase 10's
   load test at 10× expected users (many sessions at once, against the hosted plan's
   connection limits) is still to do.
-- **Reads capped at 1,000 rows.** PostgREST returns at most `max_rows` (1,000) rows and
-  the app does not page, so at this scale some pages silently show part of the data: the
-  teacher's group overview reads 1,000 of the group's 4,860 first tries (common
-  difficulties and per-student summaries are computed on a part); the office timetable
-  shows 1,000 of 1,603 weekly bookings; the office students list and office day read 1,000
-  of 10,003 contact records, 1,000 of 10,006 student names and 1,000 of 1,503 packages.
-  Not a security issue and not changed here (it needs paging or narrower queries in
-  `src/server/queries`); it should be fixed before the school has this many groups.
-- **Attendance on the group page** reads every mark in the school once per page (40 ms at
-  336,000 marks), because the embed `session:group_sessions!inner(group_id)` gives
-  Postgres no index-usable filter on `attendance` and the policy's teacher arm is an OR.
-  It grows with the attendance history (about 0.1 ms per 1,000 marks). If it becomes
-  slow: have `getGroupOverview` filter by the group's class ids (`.in('session_id', …)`,
-  primary-key lookups).
+- **Reads capped at 1,000 rows** — fixed (§7.4). New reads that can pass 1,000 rows must
+  page (`readAll`), page on screen with a total, or be computed by the database; a list
+  cut on purpose says so (`LatestOnly`).
+- **Searching the office's students** scans every student (35 ms at 10,004); an index
+  cannot help through the security barrier view. At several times this size, move the
+  search behind a function in the private schema or a dedicated search table.
 - **Memory.** The local stack has 128 MB of shared buffers; the hot pages fit, but a cold
   cache (first request after a restart) is several times slower.
 
@@ -370,7 +488,7 @@ pnpm db:start
 pnpm db:reset                                    # migrations + seed
 pnpm exec tsx scripts/content.ts import content  # the 18 courses (~1 min)
 pnpm perf:seed                                   # school-scale data (~7 min, 2.7 GB)
-pnpm perf:bench --save before                    # 96 queries, ~3 min; perf-results/before.csv
+pnpm perf:bench --save before                    # 103 queries, ~3 min; perf-results/before.csv
 #   …change policies, indexes or queries…
 pnpm perf:bench --compare before                 # times, and exits 1 if any query's rows changed
 pnpm perf:pages                                  # page level through the API
@@ -381,7 +499,7 @@ pnpm db:reset                                    # back to the normal seed
 
 `pnpm perf:bench` options: `--runs N`, `--plans` (saves `EXPLAIN (ANALYZE, BUFFERS)` of
 every query to `perf-results/<name>.plans.txt`), `--now <timestamp>` (fix "now" when
-comparing runs), `--student/--teacher/--office/--manager <email>`. It uses `psql` if
+comparing runs), `--student/--teacher/--office/--manager/--admin <email>`. It uses `psql` if
 installed, otherwise `docker exec` into the local database container, and refuses a
 non-local `DATABASE_URL`. Results go to `perf-results/` (git-ignored). Everything here
 is for the local stack only; never point it at staging or production.

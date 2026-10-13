@@ -1608,13 +1608,13 @@ isOneToOne: true
                   ]
                 },"student_records": {
                   Row: {
-                    "contact_email": string,"created_at": string,"office_note": string,"phone": string,"student_id": string,"updated_at": string
+                    "contact_email": string,"created_at": string,"office_note": string,"phone": string,"phone_digits": string | null,"student_id": string,"updated_at": string
                   }
                   Insert: {
-                    "contact_email"?: string,"created_at"?: string,"office_note"?: string,"phone"?: string,"student_id": string,"updated_at"?: string
+                    "contact_email"?: string,"created_at"?: string,"office_note"?: string,"phone"?: string,"phone_digits"?: never,"student_id": string,"updated_at"?: string
                   }
                   Update: {
-                    "contact_email"?: string,"created_at"?: string,"office_note"?: string,"phone"?: string,"student_id"?: string,"updated_at"?: string
+                    "contact_email"?: string,"created_at"?: string,"office_note"?: string,"phone"?: string,"phone_digits"?: never,"student_id"?: string,"updated_at"?: string
                   }
                   Relationships: [
                     {
@@ -1820,22 +1820,66 @@ isOneToOne: false
                         Relationships: [
                     
                   ]
+                },"group_item_first_tries": {
+                  Row: {
+                    "common_wrong_answer": Json | null,"common_wrong_count": number | null,"group_id": string | null,"item_id": string | null,"students": number | null,"wrong": number | null,"wrong_rate": number | null
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "enrollments_group_id_fkey"
+      columns: ["group_id"]
+isOneToOne: false
+      referencedRelation: "groups"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"group_student_stats": {
+                  Row: {
+                    "answers": number | null,"attended": number | null,"correct": number | null,"counted": number | null,"group_id": string | null,"last_active_at": string | null,"student_id": string | null
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "enrollments_group_id_fkey"
+      columns: ["group_id"]
+isOneToOne: false
+      referencedRelation: "groups"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "enrollments_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
+      referencedRelation: "office_students"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "enrollments_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "enrollments_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
+      referencedRelation: "task_assignees"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "enrollments_student_id_fkey"
+      columns: ["student_id"]
+isOneToOne: false
+      referencedRelation: "teacher_choices"
+      referencedColumns: ["id"]
+    }
+                  ]
                 },"office_students": {
                   Row: {
-                    "created_at": string | null,"display_name": string | null,"id": string | null
+                    "contact_email": string | null,"created_at": string | null,"display_name": string | null,"id": string | null,"phone": string | null,"search_text": string | null
                   }
-                  Insert: {
-                           "created_at"?: string | null,"display_name"?: string | null,"id"?: string | null
-                         }
-                        Update: {
-                           "created_at"?: string | null,"display_name"?: string | null,"id"?: string | null
-                         }
-                        Relationships: [
+                  Relationships: [
                     
                   ]
                 },"package_balances": {
                   Row: {
-                    "booked": number | null,"expires_on": string | null,"lessons": number | null,"package_id": string | null,"paid_at": string | null,"price": number | null,"student_id": string | null,"used": number | null
+                    "booked": number | null,"expires_on": string | null,"lessons": number | null,"lessons_left": number | null,"package_id": string | null,"paid_at": string | null,"price": number | null,"student_id": string | null,"unbooked": number | null,"used": number | null
                   }
                   Relationships: [
                     {

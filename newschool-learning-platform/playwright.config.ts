@@ -31,6 +31,10 @@ export default defineConfig({
   webServer: {
     command: `pnpm start --port ${PORT}`,
     url: `http://localhost:${PORT}/login`,
+    // Lists read in pages (src/server/queries/paging.ts) use pages of 3 rows
+    // here, so the small seed exercises the paging that school-scale data
+    // needs past PostgREST's 1,000-row cap. Ignored in staging and production.
+    env: { FETCH_PAGE_SIZE: '3' },
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,
   },

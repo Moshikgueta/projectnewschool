@@ -4,15 +4,17 @@ import { describeAnswer, feedbackSchema, parseKey, parsePublicItem } from '@/con
 import { parseBlocksForRender } from '@/content/schema';
 import {
   assignmentProgress,
-  commonDifficulties,
+  DIFFICULTY_FROM,
+  MAX_DIFFICULTIES,
+  MIN_STUDENTS,
   studentSummaries,
   type StudentSummary,
 } from '@/domain/teaching/insights';
 import { solutionOf, type Solution } from '@/domain/grading/solution';
-import { attendanceByStudent } from '@/domain/teaching/attendance';
 import type { Database } from '@/server/db.types';
 import { createSupabaseServerClient } from '@/server/supabase/server';
 import { getActivity, type ActivityDetail } from './activities';
+import { readAll } from './paging';
 
 type EventType = Database['public']['Enums']['learning_event_type'];
 type CycleState = Database['public']['Enums']['group_cycle_state'];
@@ -68,6 +70,68 @@ function fail(what: string, error: { message: string }): never {
   throw new Error(`Could not load ${what}: ${error.message}`);
 }
 
+type Client = Awaited<ReturnType<typeof createSupabaseServerClient>>;
+
+/** Latest learning events listed on the group page. */
+const RECENT_EVENTS = 10;
+
+/**
+ * The group's common difficulties: computed by the database over every first
+ * answer of the group's students (view group_item_first_tries, the rule of
+ * commonDifficulties()), then the questions' text, read under RLS like any
+ * question (a question the teacher cannot see is left out).
+ */
+async function groupDifficulties(
+  supabase: Client,
+  groupId: string,
+): Promise<GroupOverview['difficulties']> {
+  const { data: found, error } = await supabase
+    .from('group_item_first_tries')
+    .select('item_id, students, wrong, common_wrong_answer, common_wrong_count')
+    .eq('group_id', groupId)
+    .gte('students', MIN_STUDENTS)
+    .gte('wrong_rate', DIFFICULTY_FROM)
+    .order('wrong_rate', { ascending: false })
+    .order('students', { ascending: false })
+    .order('item_id')
+    .limit(MAX_DIFFICULTIES);
+  if (error) fail('common difficulties', error);
+  if (!found.length) return [];
+  const { data: items, error: itemsError } = await supabase
+    .from('activity_items')
+    .select('id, type, prompt, data, points, activity:activities ( id, title )')
+    .in(
+      'id',
+      found.map((d) => d.item_id!),
+    );
+  if (itemsError) fail('questions', itemsError);
+  const itemInfo = new Map(items.map((i) => [i.id, i]));
+  return found.flatMap((d) => {
+    const info = itemInfo.get(d.item_id!);
+    if (!info?.activity) return [];
+    const item = parsePublicItem({
+      id: info.id,
+      type: info.type,
+      data: info.data,
+      points: Number(info.points),
+    });
+    const first = parseBlocksForRender(info.prompt).find((b) => b?.type === 'text');
+    const commonWrong = (d.common_wrong_count ?? 0) > 1 ? d.common_wrong_answer : null;
+    return [
+      {
+        itemId: info.id,
+        activityId: info.activity.id,
+        activityTitle: info.activity.title,
+        question: first && first.type === 'text' ? inlineToPlainText(first.text) : '',
+        students: d.students ?? 0,
+        wrong: d.wrong ?? 0,
+        commonWrong: item && commonWrong !== null ? describeAnswer(item, commonWrong) : null,
+        commonWrongCount: d.common_wrong_count ?? 0,
+      },
+    ];
+  });
+}
+
 /**
  * Everything the teacher's group page shows. Null unless the caller teaches
  * the group (RLS returns no group otherwise). Learner records are read with
@@ -109,10 +173,10 @@ export async function getGroupOverview(
     assignments,
     attempts,
     sections,
-    tries,
+    stats,
+    difficulties,
     events,
     pastSessions,
-    marks,
   ] = await Promise.all([
     supabase
       .from('cycles')
@@ -131,38 +195,52 @@ export async function getGroupOverview(
       .from('activities')
       .select('id, title, cycle_id, phase, created_at, created_by, status')
       .eq('course_id', courseId)
-      .order('created_at'),
-    supabase
-      .from('assignments')
-      .select(
-        `id, activity_id, book_section_id, vocabulary_set_id, audience, due_at, note, created_at,
+      .order('created_at')
+      .order('id'),
+    readAll('assignments', (from, to) =>
+      supabase
+        .from('assignments')
+        .select(
+          `id, activity_id, book_section_id, vocabulary_set_id, audience, due_at, note, created_at,
            activity:activities ( title ), section:book_sections ( title ), vocabulary:vocabulary_sets ( title ),
            assignment_recipients ( student_id )`,
-      )
-      .eq('group_id', groupId)
-      .order('created_at', { ascending: false }),
-    supabase
-      .from('attempts')
-      .select('user_id, activity_id, assignment_id, submitted_at')
-      .eq('course_id', courseId)
-      .eq('status', 'submitted')
-      .in('user_id', ids),
-    supabase
-      .from('section_progress')
-      .select('user_id, book_section_id')
-      .eq('course_id', courseId)
-      .eq('status', 'completed')
-      .in('user_id', ids),
-    supabase
-      .from('responses')
-      .select(
-        `user_id, item_id, is_correct, answer, created_at,
-           item:activity_items ( type, prompt, data, points, activity:activities ( id, title ) )`,
-      )
-      .eq('course_id', courseId)
-      .eq('try_no', 1)
-      .not('is_correct', 'is', null)
-      .in('user_id', ids),
+        )
+        .eq('group_id', groupId)
+        .order('created_at', { ascending: false })
+        .order('id')
+        .range(from, to),
+    ),
+    readAll('attempts', (from, to) =>
+      supabase
+        .from('attempts')
+        .select('id, user_id, activity_id, assignment_id, submitted_at')
+        .eq('course_id', courseId)
+        .eq('status', 'submitted')
+        .in('user_id', ids)
+        .order('id')
+        .range(from, to),
+    ),
+    readAll('finished sections', (from, to) =>
+      supabase
+        .from('section_progress')
+        .select('user_id, book_section_id')
+        .eq('course_id', courseId)
+        .eq('status', 'completed')
+        .in('user_id', ids)
+        .order('user_id')
+        .order('book_section_id')
+        .range(from, to),
+    ),
+    // Counted by the database over every answer and mark (a few rows back).
+    readAll('student totals', (from, to) =>
+      supabase
+        .from('group_student_stats')
+        .select('student_id, answers, correct, last_active_at, attended, counted')
+        .eq('group_id', groupId)
+        .order('student_id')
+        .range(from, to),
+    ),
+    groupDifficulties(supabase, groupId),
     supabase
       .from('learning_events')
       .select(
@@ -172,7 +250,7 @@ export async function getGroupOverview(
       .neq('type', 'login')
       .in('user_id', ids)
       .order('occurred_at', { ascending: false })
-      .limit(200),
+      .limit(RECENT_EVENTS),
     supabase
       .from('group_sessions')
       .select('id, starts_at')
@@ -180,69 +258,77 @@ export async function getGroupOverview(
       .lt('starts_at', now.toISOString())
       .order('starts_at', { ascending: false })
       .limit(6),
-    supabase
-      .from('attendance')
-      .select('session_id, student_id, status, session:group_sessions!inner ( group_id )')
-      .eq('session.group_id', groupId),
   ]);
   for (const [what, r] of Object.entries({
     cycles,
     groupCycles,
     sessions,
     activities,
-    assignments,
-    attempts,
-    sections,
-    tries,
     events,
     pastSessions,
-    marks,
   })) {
     if (r.error) fail(what, r.error);
   }
+
+  // Marks of the classes listed (by class id: primary-key lookups, not a
+  // scan of the school's attendance).
+  const pastIds = pastSessions.data!.map((s) => s.id);
+  const marks = pastIds.length
+    ? await readAll('attendance', (from, to) =>
+        supabase
+          .from('attendance')
+          .select('session_id, student_id')
+          .in('session_id', pastIds)
+          .order('session_id')
+          .order('student_id')
+          .range(from, to),
+      )
+    : [];
 
   const state = new Map(groupCycles.data!.map((g) => [g.cycle_id, g.state]));
   // Exercises staff wrote (ADR-038) belong to this group only once assigned
   // to it; until then they are only offered in the "assign" list.
   // (A teacher also sees their own drafts; only published ones count here.)
-  const assignedHere = new Set(assignments.data!.map((a) => a.activity_id));
+  const assignedHere = new Set(assignments.map((a) => a.activity_id));
   const published = activities.data!.filter((a) => a.status === 'published');
   const groupActivities = published.filter((a) => a.created_by === null || assignedHere.has(a.id));
   const activeCycleIds = new Set(
     groupCycles.data!.filter((g) => g.state === 'active').map((g) => g.cycle_id),
   );
-  const submitted = attempts.data!.map((a) => ({
+  const submitted = attempts.map((a) => ({
     userId: a.user_id,
     activityId: a.activity_id,
     assignmentId: a.assignment_id,
     at: a.submitted_at ?? '',
   }));
-  const firstTries = tries.data!.map((r) => ({
-    userId: r.user_id,
-    itemId: r.item_id,
-    correct: !!r.is_correct,
-    answer: r.answer,
-    at: r.created_at,
-  }));
+  const statsOf = new Map(stats.map((s) => [s.student_id!, s]));
 
   const summaries = studentSummaries(everyone, {
     activeCycleActivityIds: new Set(
       groupActivities.filter((a) => activeCycleIds.has(a.cycle_id)).map((a) => a.id),
     ),
     submitted,
-    tries: firstTries,
-    events: events.data!.map((e) => ({ userId: e.user_id, at: e.occurred_at })),
+    totals: new Map(
+      stats.map((s) => [
+        s.student_id!,
+        { answers: s.answers ?? 0, correct: s.correct ?? 0, lastActiveAt: s.last_active_at },
+      ]),
+    ),
   });
   const nameOf = new Map(enrolled.map((s) => [s.id, s.name]));
   const markable = enrolled
     .filter((s) => s.status === 'active' || s.status === 'paused')
     .map((s) => s.id);
-  const rates = attendanceByStudent(
-    marks.data!.map((m) => ({ studentId: m.student_id, status: m.status })),
-  );
+  const rateOf = (id: string) => {
+    const s = statsOf.get(id);
+    // Same as attendanceByStudent(): no rate before a mark that counts.
+    return s && (s.counted ?? 0) > 0
+      ? { attended: s.attended ?? 0, counted: s.counted ?? 0 }
+      : null;
+  };
 
   const progress = assignmentProgress(
-    assignments.data!.map((a) => ({
+    assignments.map((a) => ({
       id: a.id,
       createdAt: a.created_at,
       activityId: a.activity_id,
@@ -252,15 +338,13 @@ export async function getGroupOverview(
     })),
     {
       submitted,
-      finishedSections: sections.data!.map((s) => ({
+      finishedSections: sections.map((s) => ({
         userId: s.user_id,
         sectionId: s.book_section_id,
       })),
     },
   );
   const progressOf = new Map(progress.map((p) => [p.assignmentId, p]));
-
-  const itemInfo = new Map(tries.data!.map((r) => [r.item_id, r.item]));
 
   return {
     id: group.id,
@@ -273,15 +357,14 @@ export async function getGroupOverview(
       ...s,
       name: nameOf.get(s.id) ?? '',
       status: enrolled.find((e) => e.id === s.id)?.status ?? 'active',
-      attendance: rates.get(s.id) ?? null,
+      attendance: rateOf(s.id),
     })),
     cycles: cycles.data!.map((c) => ({ id: c.id, title: c.title, state: state.get(c.id) ?? null })),
     upcomingClasses: sessions.data!.map((s) => ({ id: s.id, startsAt: s.starts_at })),
     pastClasses: pastSessions.data!.map((s) => ({
       id: s.id,
       startsAt: s.starts_at,
-      marked: marks.data!.filter((m) => m.session_id === s.id && markable.includes(m.student_id))
-        .length,
+      marked: marks.filter((m) => m.session_id === s.id && markable.includes(m.student_id)).length,
       students: markable.length,
     })),
     activities: groupActivities.map((a) => ({
@@ -296,7 +379,7 @@ export async function getGroupOverview(
       cycleId: a.cycle_id,
       byStaff: a.created_by !== null,
     })),
-    assignments: assignments.data!.map((a) => ({
+    assignments: assignments.map((a) => ({
       id: a.id,
       title: a.activity?.title ?? a.section?.title ?? a.vocabulary?.title ?? '',
       kind: a.activity_id ? 'activity' : a.book_section_id ? 'section' : 'vocabulary',
@@ -315,31 +398,8 @@ export async function getGroupOverview(
     choosable: enrolled
       .filter((s) => s.status === 'active' || s.status === 'paused')
       .map((s) => ({ id: s.id, name: s.name })),
-    difficulties: commonDifficulties(firstTries).flatMap((d) => {
-      const info = itemInfo.get(d.itemId);
-      if (!info?.activity) return [];
-      const item = parsePublicItem({
-        id: d.itemId,
-        type: info.type,
-        data: info.data,
-        points: Number(info.points),
-      });
-      const first = parseBlocksForRender(info.prompt).find((b) => b?.type === 'text');
-      return [
-        {
-          itemId: d.itemId,
-          activityId: info.activity.id,
-          activityTitle: info.activity.title,
-          question: first && first.type === 'text' ? inlineToPlainText(first.text) : '',
-          students: d.students,
-          wrong: d.wrong,
-          commonWrong:
-            item && d.commonWrongAnswer !== null ? describeAnswer(item, d.commonWrongAnswer) : null,
-          commonWrongCount: d.commonWrongCount,
-        },
-      ];
-    }),
-    recent: events.data!.slice(0, 10).map((e) => ({
+    difficulties,
+    recent: events.data!.map((e) => ({
       student: nameOf.get(e.user_id) ?? '',
       type: e.type,
       title: e.activity?.title ?? e.section?.title ?? '',
@@ -373,7 +433,7 @@ export async function getTeacherActivity(
   const supabase = await createSupabaseServerClient();
   const { data: group } = await supabase
     .from('groups')
-    .select('id, name, course_id, group_teachers!inner ( teacher_id ), enrollments ( student_id )')
+    .select('id, name, course_id, group_teachers!inner ( teacher_id )')
     .eq('id', groupId)
     .maybeSingle();
   if (!group) return null;
@@ -381,20 +441,21 @@ export async function getTeacherActivity(
   if (!activity || activity.courseId !== group.course_id) return null;
 
   const itemIds = activity.items.map((i) => i.rawId);
-  const students = group.enrollments.map((e) => e.student_id);
-  const [keys, tries] = await Promise.all([
+  const none = ['00000000-0000-0000-0000-000000000000'];
+  const [keys, results] = await Promise.all([
     supabase.from('activity_item_keys').select('item_id, answer, feedback').in('item_id', itemIds),
+    // First encounter per student of this group, counted by the database
+    // over every answer (view group_item_first_tries).
     supabase
-      .from('responses')
-      .select('user_id, item_id, is_correct, answer, created_at')
-      .in('item_id', itemIds)
-      .eq('try_no', 1)
-      .not('is_correct', 'is', null)
-      .in('user_id', students.length ? students : ['00000000-0000-0000-0000-000000000000']),
+      .from('group_item_first_tries')
+      .select('item_id, students, wrong')
+      .eq('group_id', group.id)
+      .in('item_id', itemIds.length ? itemIds : none),
   ]);
   if (keys.error) fail('answer keys', keys.error);
-  if (tries.error) fail('answers', tries.error);
+  if (results.error) fail('answers', results.error);
   const keyOf = new Map(keys.data.map((k) => [k.item_id, k]));
+  const resultOf = new Map(results.data.map((r) => [r.item_id!, r]));
 
   return {
     groupId: group.id,
@@ -404,13 +465,7 @@ export async function getTeacherActivity(
       const key = keyOf.get(rawId);
       const parsedKey = item ? parseKey(item.type, key?.answer) : null;
       const feedback = feedbackSchema.safeParse(key?.feedback ?? {});
-      // Earliest first try per student.
-      const first = new Map<string, { correct: boolean; at: string }>();
-      for (const r of tries.data.filter((t) => t.item_id === rawId)) {
-        const seen = first.get(r.user_id);
-        if (!seen || r.created_at < seen.at)
-          first.set(r.user_id, { correct: !!r.is_correct, at: r.created_at });
-      }
+      const result = resultOf.get(rawId);
       return {
         id: rawId,
         solution:
@@ -421,8 +476,8 @@ export async function getTeacherActivity(
             : null,
         feedback: feedback.success ? Object.values(feedback.data) : [],
         result: {
-          students: first.size,
-          correct: [...first.values()].filter((f) => f.correct).length,
+          students: result?.students ?? 0,
+          correct: (result?.students ?? 0) - (result?.wrong ?? 0),
         },
       };
     }),

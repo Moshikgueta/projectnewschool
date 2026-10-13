@@ -29,7 +29,12 @@ export type ContentReport = {
   section: { id: string; title: string; kind: Database['public']['Enums']['book_kind'] } | null;
 };
 
-export async function listReports(filter: ReportStatus | 'all'): Promise<ContentReport[]> {
+/** The reports page lists at most this many, the latest first, and says how many there are. */
+export const REPORTS_SHOWN = 500;
+
+export async function listReports(
+  filter: ReportStatus | 'all',
+): Promise<{ reports: ContentReport[]; total: number }> {
   const supabase = await createSupabaseServerClient();
   let query = supabase
     .from('content_reports')
@@ -42,13 +47,15 @@ export async function listReports(filter: ReportStatus | 'all'): Promise<Content
        reporter:profiles!content_reports_reporter_id_fkey ( display_name ),
        resolver:profiles!content_reports_resolved_by_fkey ( display_name ),
        corrections:item_corrections!item_corrections_report_id_fkey ( corrected_at, reason )`,
+      { count: 'exact' },
     )
     .order('created_at', { ascending: false })
-    .limit(500);
+    .order('id')
+    .limit(REPORTS_SHOWN);
   if (filter !== 'all') query = query.eq('status', filter);
-  const { data, error } = await query;
+  const { data, error, count } = await query;
   if (error) throw new Error(`Could not load reports: ${error.message}`);
-  return data.map((r) => ({
+  const reports = data.map((r) => ({
     id: r.id,
     status: r.status,
     message: r.message,
@@ -76,6 +83,7 @@ export async function listReports(filter: ReportStatus | 'all'): Promise<Content
         }
       : null,
   }));
+  return { reports, total: count ?? reports.length };
 }
 
 /** For a teacher: one of their groups per course, to link a report to the teacher's view. */

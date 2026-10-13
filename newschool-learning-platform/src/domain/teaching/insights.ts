@@ -27,10 +27,19 @@ export type Difficulty = {
   commonWrongCount: number;
 };
 
+const byText = (a: string, b: string) => (a < b ? -1 : a > b ? 1 : 0);
+
 /**
  * Questions with the highest first-try error rate in the group. Each student
  * counts once per question: their earliest first try (their first encounter),
- * so practising again does not hide what was hard.
+ * so practising again does not hide what was hard. Ties: more students first,
+ * then by question id; the most common wrong answer is the one most students
+ * gave, then the one given first.
+ *
+ * The group page reads this from the database (view
+ * public.group_item_first_tries, which applies the same rule to every answer,
+ * not to the 1,000 rows a request returns); this is the reference the tests
+ * compare the view with.
  */
 export function commonDifficulties(tries: readonly FirstTry[]): Difficulty[] {
   const first = new Map<string, FirstTry>();
@@ -46,12 +55,23 @@ export function commonDifficulties(tries: readonly FirstTry[]): Difficulty[] {
     .filter(([, list]) => list.length >= MIN_STUDENTS)
     .map(([itemId, list]) => {
       const wrong = list.filter((t) => !t.correct);
-      const counts = new Map<string, { answer: unknown; n: number }>();
+      const counts = new Map<
+        string,
+        { answer: unknown; n: number; firstAt: string; key: string }
+      >();
       for (const t of wrong) {
         const key = JSON.stringify(t.answer);
-        counts.set(key, { answer: t.answer, n: (counts.get(key)?.n ?? 0) + 1 });
+        const seen = counts.get(key);
+        counts.set(key, {
+          answer: t.answer,
+          key,
+          n: (seen?.n ?? 0) + 1,
+          firstAt: seen && seen.firstAt < t.at ? seen.firstAt : t.at,
+        });
       }
-      const common = [...counts.values()].sort((a, b) => b.n - a.n)[0];
+      const common = [...counts.values()].sort(
+        (a, b) => b.n - a.n || byText(a.firstAt, b.firstAt) || byText(a.key, b.key),
+      )[0];
       return {
         itemId,
         students: list.length,
@@ -62,7 +82,7 @@ export function commonDifficulties(tries: readonly FirstTry[]): Difficulty[] {
       };
     })
     .filter((d) => d.rate >= DIFFICULTY_FROM)
-    .sort((a, b) => b.rate - a.rate || b.students - a.students)
+    .sort((a, b) => b.rate - a.rate || b.students - a.students || byText(a.itemId, b.itemId))
     .slice(0, MAX_DIFFICULTIES);
 }
 
@@ -123,13 +143,20 @@ export type StudentSummary = {
   answers: number;
 };
 
+/** Per student, counted by the database (view public.group_student_stats). */
+export type StudentTotals = {
+  /** First-try answers (every attempt) and how many were right. */
+  answers: number;
+  correct: number;
+  lastActiveAt: string | null;
+};
+
 export function studentSummaries(
   students: readonly string[],
   data: {
     activeCycleActivityIds: ReadonlySet<string>;
     submitted: readonly { userId: string; activityId: string }[];
-    tries: readonly { userId: string; correct: boolean }[];
-    events: readonly { userId: string; at: string }[];
+    totals: ReadonlyMap<string, StudentTotals>;
   },
 ): StudentSummary[] {
   return students.map((id) => {
@@ -138,17 +165,15 @@ export function studentSummaries(
         .filter((s) => s.userId === id && data.activeCycleActivityIds.has(s.activityId))
         .map((s) => s.activityId),
     );
-    const mine = data.tries.filter((t) => t.userId === id);
-    const last = data.events
-      .filter((e) => e.userId === id)
-      .reduce<string | null>((max, e) => (!max || e.at > max ? e.at : max), null);
+    const totals = data.totals.get(id);
+    const answers = totals?.answers ?? 0;
     return {
       id,
-      lastActiveAt: last,
+      lastActiveAt: totals?.lastActiveAt ?? null,
       cycleDone: done.size,
       cycleTotal: data.activeCycleActivityIds.size,
-      accuracy: mine.length >= 3 ? mine.filter((t) => t.correct).length / mine.length : null,
-      answers: mine.length,
+      accuracy: answers >= 3 ? (totals?.correct ?? 0) / answers : null,
+      answers,
     };
   });
 }

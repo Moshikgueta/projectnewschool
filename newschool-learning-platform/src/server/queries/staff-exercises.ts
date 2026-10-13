@@ -2,6 +2,7 @@ import 'server-only';
 import type { SessionUser } from '@/server/auth/session';
 import type { Database } from '@/server/db.types';
 import { createSupabaseServerClient } from '@/server/supabase/server';
+import { readAll, readAllByIds } from './paging';
 import { getActivityForEdit, type ActivityForEdit } from './cms';
 
 // Exercises written by teachers and the office (ADR-038), read with the
@@ -25,11 +26,12 @@ export type StaffExerciseSummary = {
   mine: boolean;
 };
 
-/** Ids of the exercises the caller may edit (the database decides). */
+/** Ids of the exercises the caller may edit (the database decides; all pages). */
 async function editableIds(): Promise<string[]> {
   const supabase = await createSupabaseServerClient();
-  const { data, error } = await supabase.from('editable_activities').select('activity_id');
-  if (error) fail('exercises', error);
+  const data = await readAll('exercises', (from, to) =>
+    supabase.from('editable_activities').select('activity_id').order('activity_id').range(from, to),
+  );
   return data.flatMap((r) => (r.activity_id ? [r.activity_id] : []));
 }
 
@@ -44,17 +46,21 @@ export async function listStaffExercises(
   const supabase = await createSupabaseServerClient();
   const ids = await editableIds();
   if (!ids.length) return [];
-  let query = supabase
-    .from('activities')
-    .select(
-      'id, title, status, updated_at, created_by, cycle:cycles ( title, course:courses ( title ) )',
-    )
-    .in('id', ids)
-    .not('created_by', 'is', null)
-    .order('updated_at', { ascending: false });
-  if (area === 'teach') query = query.eq('created_by', user.id);
-  const { data, error } = await query;
-  if (error) fail('exercises', error);
+  // The ids go into the URL a hundred at a time (a manager may edit them all).
+  const rows = await readAllByIds('exercises', ids, (part, from, to) => {
+    let query = supabase
+      .from('activities')
+      .select(
+        'id, title, status, updated_at, created_by, cycle:cycles ( title, course:courses ( title ) )',
+      )
+      .in('id', part)
+      .not('created_by', 'is', null);
+    if (area === 'teach') query = query.eq('created_by', user.id);
+    return query.order('id').range(from, to);
+  });
+  const data = rows.sort(
+    (a, b) => b.updated_at.localeCompare(a.updated_at) || a.id.localeCompare(b.id),
+  );
   return data.map((a) => ({
     id: a.id,
     title: a.title,

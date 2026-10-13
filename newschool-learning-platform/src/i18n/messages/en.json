@@ -485,7 +485,11 @@
         "upcoming": "Upcoming",
         "active": "Active",
         "completed": "Completed"
-      }
+      },
+      "findStudent": "Find a student to enroll",
+      "findButton": "Find",
+      "candidatesShown": "Showing the first {shown} of {total} matching students. Search by name to narrow the list.",
+      "noMatch": "No student matches “{query}”."
     },
     "errors": {
       "invalid": "Check the form and try again.",
@@ -507,7 +511,7 @@
     "role": "Role",
     "send": "Send invitation",
     "sent": "Invitation sent to {email}.",
-    "allAccounts": "All accounts ({count})",
+    "allAccounts": "All accounts",
     "colName": "Name",
     "colRoles": "Roles",
     "colCreated": "Created",
@@ -524,7 +528,11 @@
       "exists": "An account with that email already exists.",
       "sendFailed": "The invitation could not be sent.",
       "roleFailed": "The role could not be assigned, so the invitation was withdrawn."
-    }
+    },
+    "search": "Search accounts",
+    "searchButton": "Search",
+    "pagerLabel": "Pages of the account list",
+    "empty": "No accounts found."
   },
   "notebook": {
     "blank": "blank",
@@ -808,7 +816,7 @@
     "students": {
       "title": "Students",
       "subtitle": "Contact details, packages and private lessons.",
-      "search": "Search by name",
+      "search": "Search by name, phone or email",
       "searchButton": "Search",
       "nameCol": "Name",
       "phoneCol": "Phone",
@@ -821,7 +829,8 @@
       "loginEmailHint": "Leave empty if the student will sign in with an entry code.",
       "phone": "Phone (optional)",
       "contactEmail": "Contact email (optional)",
-      "create": "Add student"
+      "create": "Add student",
+      "pagerLabel": "Pages of the student list"
     },
     "student": {
       "back": "All students",
@@ -882,7 +891,8 @@
       "package": "Package",
       "packageAuto": "From a package (the one expiring first)",
       "packageNone": "Not from a package",
-      "bookButton": "Book"
+      "bookButton": "Book",
+      "lessonsLatest": "Showing the latest {shown} of {total} lessons."
     }
   },
   "staff": {
@@ -1482,5 +1492,13 @@
       "correctAnswerLabel": "Correct the answer of {title}",
       "corrected": "Answer corrected {date}: {reason}"
     }
+  },
+  "paging": {
+    "showing": "Showing {first}–{last} of {total}",
+    "none": "Nothing to show.",
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page {page} of {pages}",
+    "latest": "Showing the latest {shown} of {total}."
   }
 }

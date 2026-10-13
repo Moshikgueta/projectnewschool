@@ -260,6 +260,25 @@ the authored form), and the re-check's counts (`responses_rechecked`, `became_co
 The re-check of past answers writes `responses` (`is_correct`, `score`, `feedback_code`)
 and `attempts` (`state`, `score`) with the secret key, like live grading (ADR-006).
 
+Reads at school scale (migration `…2300_scale_reads`, [PERFORMANCE.md
+§7.4](PERFORMANCE.md#74-complete-reads-past-the-1000-row-cap)). PostgREST returns at
+most 1,000 rows per request, so summaries are computed here and long lists page:
+
+| View / column                                                 | What                                                                                                                                                                                                                                         | Who sees rows                                                                                                                                        |
+| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `group_item_first_tries` (`security_invoker`)                 | per group and question: `students`, `wrong`, `wrong_rate`, `common_wrong_answer`, `common_wrong_count` over each enrolled student's first encounter (earliest `try_no = 1` answer); the rule of `commonDifficulties()`. Filter by `group_id` | the caller's own RLS on `enrollments`, `groups`, `responses`, **and** only groups the caller teaches (`app.taught_group_ids()`) or the manager (MFA) |
+| `group_student_stats` (`security_invoker`)                    | per group and enrolled student: first-try `answers` / `correct` in the course, `last_active_at` (logins left out), `attended` / `counted` at the group's classes                                                                             | as above (also RLS on `learning_events`, `attendance`, `group_sessions`)                                                                             |
+| `office_students` (+ `phone`, `contact_email`, `search_text`) | the office's student list, searchable with one `like` on the lower-case `search_text` (name, phone, phone digits, contact email)                                                                                                             | unchanged: the office and admins (MFA); both read `student_records` anyway                                                                           |
+| `student_records.phone_digits`                                | generated from `phone` (digits only), for searching                                                                                                                                                                                          | wherever the phone is readable                                                                                                                       |
+| `package_balances` (+ `lessons_left`, `unbooked`)             | `lessons − used`, `lessons − used − booked`, so the office day's follow-up list is chosen by the database                                                                                                                                    | unchanged (`security_invoker`)                                                                                                                       |
+
+Like the other views they are select-only for `authenticated`, with nothing for `anon`;
+`18_scale_reads` checks that each user's rows equal the same summary that user computes
+from the tables. In the app, a read that can pass 1,000 rows either pages on screen with a
+total (`src/domain/paging.ts`, `src/ui/Pager.tsx`), reads every page in a loop ordered by
+something unique (`readAll` in `src/server/queries/paging.ts`), or is cut on purpose and
+says so ("Showing the latest 500 of 1,419").
+
 Note the admin column: **admin is not a superset of everything.** Admin manages accounts
 and settings; seeing student learning data requires the pedagogical role (a person can
 hold both). This is least privilege applied to the most powerful account.
@@ -314,12 +333,13 @@ What the migrations do beyond the tables above:
 - **New auth users get a profile automatically** (`app.handle_new_auth_user`), with the
   display name set by the inviting admin.
 
-| Migration                 | Contents                                                            |
-| ------------------------- | ------------------------------------------------------------------- |
-| `…000100_foundation`      | `app` schema, enums, `touch_updated_at`                             |
-| `…000200_identity`        | `profiles`, `user_roles`, new-user trigger                          |
-| `…000300_catalog`         | languages → … → vocabulary, media, keys, teacher notes              |
-| `…000400_delivery`        | groups, teachers, enrollments, active cycles, sessions, assignments |
-| `…000500_learner_records` | attempts, responses, progress, vocabulary state, events, feedback   |
-| `…000600_audit_log`       | audit log, append-only guard, audit triggers, last-admin rule       |
-| `…000700_authorization`   | helper functions, RLS, grants, policies                             |
+| Migration                 | Contents                                                             |
+| ------------------------- | -------------------------------------------------------------------- |
+| `…000100_foundation`      | `app` schema, enums, `touch_updated_at`                              |
+| `…000200_identity`        | `profiles`, `user_roles`, new-user trigger                           |
+| `…000300_catalog`         | languages → … → vocabulary, media, keys, teacher notes               |
+| `…000400_delivery`        | groups, teachers, enrollments, active cycles, sessions, assignments  |
+| `…000500_learner_records` | attempts, responses, progress, vocabulary state, events, feedback    |
+| `…000600_audit_log`       | audit log, append-only guard, audit triggers, last-admin rule        |
+| `…000700_authorization`   | helper functions, RLS, grants, policies                              |
+| `…2300_scale_reads`       | group summary views, searchable office list, package balance columns |

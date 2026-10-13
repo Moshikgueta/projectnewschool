@@ -11,6 +11,7 @@ import {
 } from '@/server/queries/reports';
 import { Badge, Card } from '@/ui/Card';
 import { EmptyState, PageTitle, Section } from '@/ui/Page';
+import { LatestOnly } from '@/ui/Pager';
 
 // Mistake reports (ADR-040), for the pedagogical manager (/manage/reports)
 // and for teachers (/teach/reports). The list is read with the caller's own
@@ -36,7 +37,7 @@ export async function ReportsPage({
   area: 'manage' | 'teach';
   filter: Filter;
 }) {
-  const [reports, groups, t, format] = await Promise.all([
+  const [{ reports, total }, groups, t, format] = await Promise.all([
     listReports(filter satisfies ReportStatus | 'all'),
     area === 'teach' ? myGroupPerCourse(user.id) : Promise.resolve(new Map<string, string>()),
     getTranslations('reports.list'),
@@ -106,6 +107,7 @@ export async function ReportsPage({
           </Link>
         ))}
       </nav>
+      <LatestOnly shown={reports.length} total={total} />
       {courses.length === 0 ? (
         <EmptyState title={t('empty')} />
       ) : (

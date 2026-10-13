@@ -26,11 +26,15 @@ import { getActivity, getPracticeList, listMyAttempts } from '@/server/queries/a
 import { getStudentDashboard } from '@/server/queries/dashboard';
 import { getMyLessons } from '@/server/queries/lessons';
 import { getStudentNotebook, getStudentSection } from '@/server/queries/notebook';
+import { listAccounts } from '@/server/queries/admin';
+import { listGroupsForManager } from '@/server/queries/manage';
 import { getOfficeDay, listOfficeStudents } from '@/server/queries/office';
 import { getProgressPage } from '@/server/queries/progress';
 import { listReports } from '@/server/queries/reports';
 import { getStudentInGroup } from '@/server/queries/teaching-student';
 import { getGroupOverview, getTeacherActivity } from '@/server/queries/teaching';
+import { fetchAllPages } from '@/domain/paging';
+import { commonDifficulties } from '@/domain/teaching/insights';
 import { getTeacherDay } from '@/server/queries/attendance';
 import { getTimetable } from '@/server/queries/timetable';
 import { getVocabularySession } from '@/server/queries/vocabulary';
@@ -50,6 +54,7 @@ const EMAILS = {
   teacher: process.env.PERF_TEACHER ?? 'perf.teacher.1@example.com',
   office: process.env.PERF_OFFICE ?? 'perf.office.1@example.com',
   manager: process.env.PERF_MANAGER ?? 'manager@example.com',
+  admin: process.env.PERF_ADMIN ?? 'admin@example.com',
 };
 
 const opts = { auth: { persistSession: false, autoRefreshToken: false } };
@@ -228,18 +233,100 @@ describe('page load times at school scale (through PostgREST, RLS as the user)',
     );
     await time('teacher day', 'teacher', client, () => getTeacherDay(user.id, TZ));
     await time('reports list', 'teacher', client, () => listReports('all'));
+
+    // Every group they teach: the common difficulties the page shows (from
+    // the database) are those of every first answer, read here page by page
+    // and summarised by the app's own rule.
+    current.client = client;
+    let rows = 0;
+    for (const { group_id: groupId, group: g } of taught ?? []) {
+      const ids = g!.enrollments.map((e) => e.student_id);
+      const all = await fetchAllPages((from, to) =>
+        client
+          .from('responses')
+          .select('id, user_id, item_id, is_correct, answer, created_at')
+          .eq('course_id', g!.course_id)
+          .eq('try_no', 1)
+          .not('is_correct', 'is', null)
+          .in('user_id', ids)
+          .order('id')
+          .range(from, to),
+      );
+      rows += all.length;
+      const expected = commonDifficulties(
+        all.map((r) => ({
+          userId: r.user_id,
+          itemId: r.item_id,
+          correct: !!r.is_correct,
+          answer: r.answer,
+          at: r.created_at,
+        })),
+      );
+      const overview = await getGroupOverview(groupId);
+      expect(
+        overview!.difficulties.map((d) => [d.itemId, d.students, d.wrong, d.commonWrongCount]),
+        groupId,
+      ).toEqual(expected.map((d) => [d.itemId, d.students, d.wrong, d.commonWrongCount]));
+      // Accuracy per student: every first answer counted.
+      for (const st of overview!.students) {
+        expect(st.answers, st.id).toBe(all.filter((r) => r.user_id === st.id).length);
+      }
+    }
+    console.log(`teacher: difficulties of ${taught?.length} groups match ${rows} first answers`);
   });
 
   it('office with MFA', async () => {
     const { client } = await signIn(EMAILS.office, true);
-    await time('office students', 'office', client, () => listOfficeStudents(TZ));
+    const admin = service();
+    const first = { page: 1, size: 50 };
+    await time('office students', 'office', client, () => listOfficeStudents(TZ, '', first));
+    await time('office students (page 101)', 'office', client, () =>
+      listOfficeStudents(TZ, '', { page: 101, size: 50 }),
+    );
+    await time('office students (search name)', 'office', client, () =>
+      listOfficeStudents(TZ, 'Rossi', first),
+    );
+    await time('office students (search phone)', 'office', client, () =>
+      listOfficeStudents(TZ, '0503888', first),
+    );
     await time('timetable', 'office', client, () => getTimetable());
     await time('office day', 'office', client, () => getOfficeDay(TZ));
+
+    // Nothing cut at 1,000 rows: every student is counted, every booking shown.
+    current.client = client;
+    const students = await listOfficeStudents(TZ, '', first);
+    const { count: studentCount } = await admin
+      .from('user_roles')
+      .select('user_id', { count: 'exact', head: true })
+      .eq('role', 'student');
+    expect(students.info.total).toBe(studentCount);
+    expect(students.rows).toHaveLength(50);
+    const { bookings } = await getTimetable();
+    const { count: bookingCount } = await admin
+      .from('room_bookings')
+      .select('id', { count: 'exact', head: true });
+    expect(bookings).toHaveLength(bookingCount!);
+    expect(new Set(bookings.map((b) => b.id)).size).toBe(bookingCount);
+    console.log(`office: ${students.info.total} students; ${bookings.length} bookings`);
   });
 
   it('manager with MFA', async () => {
     const { client } = await signIn(EMAILS.manager, true);
     await time('reports (all)', 'manager', client, () => listReports('all'));
     await time('reports (open)', 'manager', client, () => listReports('open'));
+    await time('groups', 'manager', client, () => listGroupsForManager());
+    current.client = client;
+    const { count: groupCount } = await service()
+      .from('groups')
+      .select('id', { count: 'exact', head: true });
+    expect(await listGroupsForManager()).toHaveLength(groupCount!);
+  });
+
+  it('admin with MFA', async () => {
+    const { client } = await signIn(EMAILS.admin, true);
+    await time('accounts', 'admin', client, () => listAccounts('', { page: 1, size: 50 }));
+    await time('accounts (search)', 'admin', client, () =>
+      listAccounts('teacher', { page: 1, size: 50 }),
+    );
   });
 });

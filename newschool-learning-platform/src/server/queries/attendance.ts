@@ -8,6 +8,7 @@ import {
 } from '@/domain/teaching/attendance';
 import { assignmentProgress } from '@/domain/teaching/insights';
 import { createSupabaseServerClient } from '@/server/supabase/server';
+import { readAll, readAllByIds } from './paging';
 
 // Attendance and the teacher's day (staff room merge, stage C). Everything is
 // read with the teacher's own session, so RLS limits it to their groups, and
@@ -142,7 +143,15 @@ export async function getTeacherDay(
       .in('group_id', groupIds)
       .gte('starts_at', from)
       .lte('starts_at', to),
-    supabase.from('enrollments').select('group_id, student_id, status').in('group_id', groupIds),
+    // Students of all the teacher's groups: several hundred for a teacher with many groups.
+    readAll('enrolments', (from, to) =>
+      supabase
+        .from('enrollments')
+        .select('id, group_id, student_id, status')
+        .in('group_id', groupIds)
+        .order('id')
+        .range(from, to),
+    ),
     supabase
       .from('timetable_entries')
       .select('group_id, room_name, weekday, start_min')
@@ -160,24 +169,27 @@ export async function getTeacherDay(
       .is('vocabulary_set_id', null)
       .order('due_at'),
   ]);
-  for (const r of [sessions, enrolments, rooms, assignments]) {
+  for (const r of [sessions, rooms, assignments]) {
     if (r.error) throw new Error(`Could not load the teacher's day: ${r.error.message}`);
   }
 
   const markable = (groupId: string) =>
     enrolments
-      .data!.filter(
-        (e) => e.group_id === groupId && (e.status === 'active' || e.status === 'paused'),
-      )
+      .filter((e) => e.group_id === groupId && (e.status === 'active' || e.status === 'paused'))
       .map((e) => e.student_id);
   const sessionIds = nonEmpty(sessions.data!.map((s) => s.id));
-  const { data: marks } = await supabase
-    .from('attendance')
-    .select('session_id, student_id')
-    .in('session_id', sessionIds);
+  // Classes × students: passes 1,000 for a teacher with many groups.
+  const marks = await readAll('attendance', (from, to) =>
+    supabase
+      .from('attendance')
+      .select('session_id, student_id')
+      .in('session_id', sessionIds)
+      .order('session_id')
+      .order('student_id')
+      .range(from, to),
+  );
   const markedIn = (sessionId: string, students: string[]) =>
-    (marks ?? []).filter((m) => m.session_id === sessionId && students.includes(m.student_id))
-      .length;
+    marks.filter((m) => m.session_id === sessionId && students.includes(m.student_id)).length;
 
   // The room comes from the weekly timetable: the group's booking on that
   // weekday, the one nearest the class's start if there are several.
@@ -243,26 +255,34 @@ export async function getTeacherDay(
   const recipientsOf = (a: (typeof due)[number]) =>
     a.audience === 'group'
       ? enrolments
-          .data!.filter((e) => e.group_id === a.group_id && e.status === 'active')
+          .filter((e) => e.group_id === a.group_id && e.status === 'active')
           .map((e) => e.student_id)
       : a.assignment_recipients.map((r) => r.student_id);
   const students = nonEmpty([...new Set(due.flatMap(recipientsOf))]);
+  const dueActivities = nonEmpty(due.flatMap((a) => (a.activity_id ? [a.activity_id] : [])));
+  const dueSections = nonEmpty(due.flatMap((a) => (a.book_section_id ? [a.book_section_id] : [])));
   const [attempts, sections] = await Promise.all([
-    supabase
-      .from('attempts')
-      .select('user_id, activity_id, assignment_id, submitted_at')
-      .eq('status', 'submitted')
-      .in('activity_id', nonEmpty(due.flatMap((a) => (a.activity_id ? [a.activity_id] : []))))
-      .in('user_id', students),
-    supabase
-      .from('section_progress')
-      .select('user_id, book_section_id')
-      .eq('status', 'completed')
-      .in(
-        'book_section_id',
-        nonEmpty(due.flatMap((a) => (a.book_section_id ? [a.book_section_id] : []))),
-      )
-      .in('user_id', students),
+    readAllByIds('submitted work', students, (part, from, to) =>
+      supabase
+        .from('attempts')
+        .select('id, user_id, activity_id, assignment_id, submitted_at')
+        .eq('status', 'submitted')
+        .in('activity_id', dueActivities)
+        .in('user_id', part)
+        .order('id')
+        .range(from, to),
+    ),
+    readAllByIds('finished sections', students, (part, from, to) =>
+      supabase
+        .from('section_progress')
+        .select('user_id, book_section_id')
+        .eq('status', 'completed')
+        .in('book_section_id', dueSections)
+        .in('user_id', part)
+        .order('user_id')
+        .order('book_section_id')
+        .range(from, to),
+    ),
   ]);
   const progress = assignmentProgress(
     due.map((a) => ({
@@ -273,13 +293,13 @@ export async function getTeacherDay(
       recipients: recipientsOf(a),
     })),
     {
-      submitted: (attempts.data ?? []).map((a) => ({
+      submitted: attempts.map((a) => ({
         userId: a.user_id,
         activityId: a.activity_id,
         assignmentId: a.assignment_id,
         at: a.submitted_at ?? '',
       })),
-      finishedSections: (sections.data ?? []).map((s) => ({
+      finishedSections: sections.map((s) => ({
         userId: s.user_id,
         sectionId: s.book_section_id,
       })),

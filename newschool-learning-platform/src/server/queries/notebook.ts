@@ -8,6 +8,7 @@ import {
 import type { SessionUser } from '@/server/auth/session';
 import type { Database } from '@/server/db.types';
 import { createSupabaseServerClient } from '@/server/supabase/server';
+import { readAll } from './paging';
 import { listMyCourses, type MyCourse } from './student';
 
 type ProgressStatus = Database['public']['Enums']['progress_status'];
@@ -182,21 +183,27 @@ export async function getTeacherSection(
       .select('blocks')
       .eq('section_id', sectionId)
       .maybeSingle(),
-    supabase
-      .from('block_responses')
-      .select('user_id, block_id, item_index, answer')
-      .eq('section_id', sectionId)
-      .in(
-        'user_id',
-        [...students.keys()].length
-          ? [...students.keys()]
-          : ['00000000-0000-0000-0000-000000000000'],
-      ),
+    // Students × questions on the page: can pass 1,000 in a large group.
+    readAll('answers', (from, to) =>
+      supabase
+        .from('block_responses')
+        .select('user_id, block_id, item_index, answer')
+        .eq('section_id', sectionId)
+        .in(
+          'user_id',
+          [...students.keys()].length
+            ? [...students.keys()]
+            : ['00000000-0000-0000-0000-000000000000'],
+        )
+        .order('user_id')
+        .order('block_id')
+        .order('item_index')
+        .range(from, to),
+    ),
   ]);
-  if (answers.error) throw new Error(`Could not load answers: ${answers.error.message}`);
 
   const groupAnswers: Record<string, { student: string; answer: string }[]> = {};
-  for (const a of answers.data) {
+  for (const a of answers) {
     const key = `${a.block_id}:${a.item_index}`;
     (groupAnswers[key] ??= []).push({ student: students.get(a.user_id) ?? '', answer: a.answer });
   }

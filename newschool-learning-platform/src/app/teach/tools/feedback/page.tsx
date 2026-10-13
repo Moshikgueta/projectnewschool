@@ -6,6 +6,7 @@ import { listFeedback, listMyStudents, listPlannerGroups } from '@/server/querie
 import { ButtonLink } from '@/ui/Button';
 import { Card } from '@/ui/Card';
 import { PageTitle, Section } from '@/ui/Page';
+import { LatestOnly } from '@/ui/Pager';
 import { FeedbackBadges } from '@/app/_staff/FeedbackBadges';
 import { FeedbackForm } from './FeedbackForm';
 
@@ -18,17 +19,15 @@ const QUIET_BUTTON =
 
 export default async function TeacherFeedbackPage() {
   const user = await requireArea('teach');
-  const [students, groups, all, t, tt, format] = await Promise.all([
+  const [students, groups, { feedback: mine, total }, t, tt, format] = await Promise.all([
     listMyStudents(user.id),
     listPlannerGroups(user.id),
-    listFeedback(),
+    // A teacher who is also the manager reads everyone's; this page lists only what they sent.
+    listFeedback({ authorId: user.id }),
     getTranslations('staff.feedback'),
     getTranslations('staff.tools'),
     getFormatter(),
   ]);
-  // A teacher who is also the manager reads everyone's here too; this page
-  // lists only what they sent.
-  const mine = all.filter((f) => f.authorId === user.id);
   const languages = [...new Set(groups.map((g) => g.languageCode.split('-')[0] ?? ''))].filter(
     (c) => /^[a-z]{2,3}$/.test(c),
   );
@@ -46,6 +45,7 @@ export default async function TeacherFeedbackPage() {
           <FeedbackForm students={students} languages={languages} />
         </Card>
         <Section id="my-feedback-heading" title={t('mine')}>
+          <LatestOnly shown={mine.length} total={total} />
           {mine.length === 0 ? (
             <Card>
               <p className="text-fg-secondary">{t('empty')}</p>

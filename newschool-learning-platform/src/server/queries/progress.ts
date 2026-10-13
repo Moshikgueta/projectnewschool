@@ -2,6 +2,7 @@ import 'server-only';
 import { studentProgress, type StudentProgress } from '@/domain/learning/progress';
 import type { SessionUser } from '@/server/auth/session';
 import { createSupabaseServerClient } from '@/server/supabase/server';
+import { readAll } from './paging';
 import { listMyCourses, type MyCourse } from './student';
 
 export type ProgressPage = {
@@ -58,40 +59,44 @@ export async function getProgressPage(
       .select('book_section_id, status')
       .eq('user_id', user.id)
       .eq('course_id', course.courseId),
-    supabase
-      .from('responses')
-      .select('attempt_id, is_correct, created_at, item:activity_items ( activity_id )')
-      .eq('user_id', user.id)
-      .eq('course_id', course.courseId)
-      .eq('try_no', 1)
-      .not('is_correct', 'is', null),
-    supabase
-      .from('learning_events')
-      .select('occurred_at')
-      .eq('user_id', user.id)
-      .gte('occurred_at', since),
+    // Every first try (a student who practises a lot passes 1,000).
+    readAll('first tries', (from, to) =>
+      supabase
+        .from('responses')
+        .select('id, attempt_id, is_correct, created_at, item:activity_items ( activity_id )')
+        .eq('user_id', user.id)
+        .eq('course_id', course.courseId)
+        .eq('try_no', 1)
+        .not('is_correct', 'is', null)
+        .order('id')
+        .range(from, to),
+    ),
+    // The last eight days (all pages: a busy week can pass 1,000 events).
+    readAll('activity', (from, to) =>
+      supabase
+        .from('learning_events')
+        .select('id, occurred_at')
+        .eq('user_id', user.id)
+        .gte('occurred_at', since)
+        .order('id')
+        .range(from, to),
+    ),
     supabase
       .from('vocabulary_items')
       .select('id', { count: 'exact', head: true })
       .eq('course_id', course.courseId),
-    supabase
-      .from('vocab_review_state')
-      .select('box')
-      .eq('user_id', user.id)
-      .eq('course_id', course.courseId),
+    // One row per word reviewed: a course can have more than 1,000 words.
+    readAll('word reviews', (from, to) =>
+      supabase
+        .from('vocab_review_state')
+        .select('vocabulary_item_id, box')
+        .eq('user_id', user.id)
+        .eq('course_id', course.courseId)
+        .order('vocabulary_item_id')
+        .range(from, to),
+    ),
   ]);
-  for (const r of [
-    cycles,
-    groupCycles,
-    activities,
-    skills,
-    sections,
-    attempts,
-    sectionProgress,
-    firstTries,
-    events,
-    reviews,
-  ]) {
+  for (const r of [cycles, groupCycles, activities, skills, sections, attempts, sectionProgress]) {
     if (r.error) throw new Error(`Could not load progress: ${r.error.message}`);
   }
 
@@ -118,7 +123,7 @@ export async function getProgressPage(
     completedSectionIds: new Set(
       sectionProgress.data!.filter((p) => p.status === 'completed').map((p) => p.book_section_id),
     ),
-    firstTries: firstTries.data!.flatMap((r) =>
+    firstTries: firstTries.flatMap((r) =>
       r.item
         ? [
             {
@@ -131,13 +136,13 @@ export async function getProgressPage(
         : [],
     ),
     skills: skills.data!,
-    practisedAt: events.data!.map((e) => e.occurred_at),
+    practisedAt: events.map((e) => e.occurred_at),
   });
 
   return {
     courses,
     course,
     progress,
-    words: { total: words.count ?? 0, strong: reviews.data!.filter((r) => r.box >= 4).length },
+    words: { total: words.count ?? 0, strong: reviews.filter((r) => r.box >= 4).length },
   };
 }

@@ -7,6 +7,7 @@ import {
 } from '@/domain/office/packages';
 import { attendanceByStudent, localDay, type AttendanceStatus } from '@/domain/teaching/attendance';
 import { createSupabaseServerClient } from '@/server/supabase/server';
+import { readAll } from './paging';
 
 // A student's own attendance, packages and private lessons ("My lessons").
 // Everything is read with the student's session and filtered to their own id
@@ -46,7 +47,12 @@ export type MyLessons = {
     teacherName: string;
     status: LessonStatus;
   }[];
+  /** All the student's private lessons; the latest LESSONS_SHOWN are listed. */
+  lessonsTotal: number;
 };
+
+/** Private lessons listed, the latest first. */
+export const LESSONS_SHOWN = 100;
 
 export async function getMyLessons(
   user: { id: string; timezone: string },
@@ -54,10 +60,15 @@ export async function getMyLessons(
 ): Promise<MyLessons> {
   const supabase = await createSupabaseServerClient();
   const [marks, packages, balances, lessons] = await Promise.all([
-    supabase
-      .from('attendance')
-      .select('session_id, status, session:group_sessions ( starts_at, group:groups ( name ) )')
-      .eq('student_id', user.id),
+    // Every mark (the rate counts them all; years of classes pass 1,000).
+    readAll('attendance', (from, to) =>
+      supabase
+        .from('attendance')
+        .select('session_id, status, session:group_sessions ( starts_at, group:groups ( name ) )')
+        .eq('student_id', user.id)
+        .order('session_id')
+        .range(from, to),
+    ),
     supabase
       .from('lesson_packages')
       .select('id, lessons, minutes_per_lesson, starts_on, expires_on, paid_at')
@@ -68,18 +79,19 @@ export async function getMyLessons(
       .from('private_lessons')
       .select(
         'id, starts_at, ends_at, status, teacher:profiles!private_lessons_teacher_id_fkey ( display_name )',
+        { count: 'exact' },
       )
       .eq('student_id', user.id)
       .order('starts_at', { ascending: false })
-      .limit(100),
+      .order('id')
+      .limit(LESSONS_SHOWN),
   ]);
-  if (marks.error) fail('attendance', marks.error);
   if (packages.error) fail('packages', packages.error);
   if (balances.error) fail('package balances', balances.error);
   if (lessons.error) fail('private lessons', lessons.error);
 
   const rate = attendanceByStudent(
-    marks.data.map((m) => ({ studentId: user.id, status: m.status })),
+    marks.map((m) => ({ studentId: user.id, status: m.status })),
   ).get(user.id);
   const counts = new Map(balances.data.map((b) => [b.package_id, b]));
   const today = localDay(now, user.timezone);
@@ -94,7 +106,7 @@ export async function getMyLessons(
   return {
     attendance: {
       rate: rate ?? null,
-      recent: marks.data
+      recent: marks
         .flatMap((m) =>
           m.session
             ? [
@@ -138,5 +150,6 @@ export async function getMyLessons(
       .filter((l) => new Date(l.startsAt) > now && l.status === 'scheduled')
       .reverse(),
     past: lessonRows.filter((l) => new Date(l.startsAt) <= now || l.status !== 'scheduled'),
+    lessonsTotal: lessons.count ?? lessonRows.length,
   };
 }

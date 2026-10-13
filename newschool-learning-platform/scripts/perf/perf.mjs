@@ -11,7 +11,7 @@
 //                     query returned the same rows (count and checksum); exits 1 if not
 //   --plans           also save EXPLAIN (ANALYZE, BUFFERS) of every query
 //   --now ISO         fix "now" (use the same value for runs you compare)
-//   --student/--teacher/--office/--manager EMAIL
+//   --student/--teacher/--office/--manager/--admin EMAIL
 //
 // Uses `psql` with DATABASE_URL (default: the local Supabase database), or, when
 // psql is not installed, `docker exec` into the local Supabase database container.
@@ -100,7 +100,7 @@ function parseCsv(text) {
 
 function bench() {
   const vars = { runs: arg('runs', '7'), plans: flag('plans') ? '1' : '0' };
-  for (const k of ['now', 'student', 'teacher', 'office', 'manager']) {
+  for (const k of ['now', 'student', 'teacher', 'office', 'manager', 'admin']) {
     const val = arg(k);
     if (val) vars[k] = val;
   }

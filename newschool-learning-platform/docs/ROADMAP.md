@@ -315,8 +315,10 @@ in [GO-LIVE.md](GO-LIVE.md).
   in SECURITY.md §5.
 - Load test: the data-volume half is done (10,000 students, 3.2 million answers; every
   hot query under 50 ms, [PERFORMANCE.md](PERFORMANCE.md)); still to do: many concurrent
-  sessions against the hosted plan. Also from that work: pages that read more than
-  PostgREST's 1,000-row cap need paging (PERFORMANCE.md §8).
+  sessions against the hosted plan. Pages that read more than PostgREST's 1,000-row cap
+  are complete since migration `…2300_scale_reads` (PERFORMANCE.md §7.4): summaries
+  computed by the database, the office's students and the admin's accounts paged and
+  searchable, the timetable and other full lists read page by page.
 
 ### Parallel track — Content
 
@@ -412,6 +414,10 @@ Docs. Then transfer the repository into the New School organization.
       ([PERFORMANCE.md](PERFORMANCE.md)): 27 of 96 hot queries were over 50 ms (worst 4.9 s);
       after migration `…2200_rls_performance` (same rules, evaluated once per query) all are
       under 50 ms. Repeatable: `pnpm perf:seed`, `pnpm perf:bench`
+- [x] Reads past PostgREST's 1,000-row cap — done 2026-10-13 (PERFORMANCE.md §7.4): the
+      group page's difficulties, accuracy and attendance from database views over every
+      row; paged, searchable office students and admin accounts; every booking on the
+      timetable; 103 benchmarked queries all under 50 ms
 - [ ] `@supabase/ssr` with HttpOnly cookies and server-only data access
 
 ## Running TODO

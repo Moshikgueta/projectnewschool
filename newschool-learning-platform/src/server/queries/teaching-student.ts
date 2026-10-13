@@ -4,6 +4,7 @@ import { attendanceByStudent, type AttendanceStatus } from '@/domain/teaching/at
 import { assignmentProgress } from '@/domain/teaching/insights';
 import type { Database } from '@/server/db.types';
 import { createSupabaseServerClient } from '@/server/supabase/server';
+import { readAll } from './paging';
 
 type EnrollmentStatus = Database['public']['Enums']['enrollment_status'];
 type AttemptStatus = Database['public']['Enums']['attempt_status'];
@@ -132,19 +133,28 @@ export async function getStudentInGroup(
       .select('book_section_id, status')
       .eq('user_id', studentId)
       .eq('course_id', courseId),
-    supabase
-      .from('responses')
-      .select('attempt_id, is_correct, created_at, item:activity_items ( activity_id )')
-      .eq('user_id', studentId)
-      .eq('course_id', courseId)
-      .eq('try_no', 1)
-      .not('is_correct', 'is', null),
-    supabase
-      .from('learning_events')
-      .select('occurred_at')
-      .eq('user_id', studentId)
-      .eq('course_id', courseId)
-      .gte('occurred_at', since),
+    // Every first try (a student who practises a lot passes 1,000).
+    readAll('first tries', (from, to) =>
+      supabase
+        .from('responses')
+        .select('id, attempt_id, is_correct, created_at, item:activity_items ( activity_id )')
+        .eq('user_id', studentId)
+        .eq('course_id', courseId)
+        .eq('try_no', 1)
+        .not('is_correct', 'is', null)
+        .order('id')
+        .range(from, to),
+    ),
+    readAll('activity', (from, to) =>
+      supabase
+        .from('learning_events')
+        .select('id, occurred_at')
+        .eq('user_id', studentId)
+        .eq('course_id', courseId)
+        .gte('occurred_at', since)
+        .order('id')
+        .range(from, to),
+    ),
     supabase
       .from('learning_events')
       .select('occurred_at')
@@ -181,8 +191,6 @@ export async function getStudentInGroup(
     sections,
     attempts,
     sectionProgress,
-    firstTries,
-    events,
     lastEvent,
     assignments,
     marks,
@@ -228,7 +236,7 @@ export async function getStudentInGroup(
     completedSectionIds: new Set(
       sectionProgress.data!.filter((p) => p.status === 'completed').map((p) => p.book_section_id),
     ),
-    firstTries: firstTries.data!.flatMap((r) =>
+    firstTries: firstTries.flatMap((r) =>
       r.item
         ? [
             {
@@ -241,7 +249,7 @@ export async function getStudentInGroup(
         : [],
     ),
     skills: skills.data!,
-    practisedAt: events.data!.map((e) => e.occurred_at),
+    practisedAt: events.map((e) => e.occurred_at),
   });
 
   const done = new Map(

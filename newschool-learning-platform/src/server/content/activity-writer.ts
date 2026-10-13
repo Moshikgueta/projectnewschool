@@ -49,6 +49,39 @@ async function must<T>(
   return data as NonNullable<T>;
 }
 
+const LIST_LIMIT = 1000; // PostgREST max_rows
+
+/**
+ * How many answers the caller can read per question. One list read when the
+ * exercise has fewer answers than a request returns; otherwise counted by the
+ * database per question (a list would stop at 1,000 rows and miss questions).
+ */
+async function answerCounts(
+  db: Client,
+  ids: string[],
+): Promise<{ item_id: string; answers: number }[]> {
+  if (!ids.length) return [];
+  const listed = await must(
+    'answers',
+    db.from('responses').select('item_id').in('item_id', ids).limit(LIST_LIMIT),
+  );
+  if (listed.length < LIST_LIMIT) {
+    const n = new Map<string, number>();
+    for (const a of listed) n.set(a.item_id, (n.get(a.item_id) ?? 0) + 1);
+    return [...n].map(([item_id, answers]) => ({ item_id, answers }));
+  }
+  return Promise.all(
+    ids.map(async (id) => {
+      const { count, error } = await db
+        .from('responses')
+        .select('item_id', { count: 'exact', head: true })
+        .eq('item_id', id);
+      if (error) throw new Error(`answers: ${error.message}`);
+      return { item_id: id, answers: count ?? 0 };
+    }),
+  );
+}
+
 /** The exercise's items as stored, with keys, and which have answers. */
 export async function loadStoredItems(
   db: Client,
@@ -74,13 +107,7 @@ export async function loadStoredItems(
     ),
     // The answers the caller can read (all of them for the manager and the
     // import's secret key; only their own students' for a teacher)…
-    must(
-      'answers',
-      db
-        .from('responses')
-        .select('item_id')
-        .in('item_id', ids.length ? ids : none),
-    ),
+    answerCounts(db, ids),
     // …and every answer, counted by the database for anyone who may edit
     // the exercise (app.answered_item_ids), so a teacher's editor locks a
     // question another group answered.
@@ -91,7 +118,7 @@ export async function loadStoredItems(
   ]);
   const keyOf = new Map(keys.map((k) => [k.item_id, k]));
   const answered = new Map<string, number>();
-  for (const a of answers) answered.set(a.item_id, (answered.get(a.item_id) ?? 0) + 1);
+  for (const a of answers) if (a.answers > 0) answered.set(a.item_id, a.answers);
   for (const c of counted) {
     if (c.item_id && (c.answers ?? 0) > (answered.get(c.item_id) ?? 0)) {
       answered.set(c.item_id, c.answers ?? 0);
